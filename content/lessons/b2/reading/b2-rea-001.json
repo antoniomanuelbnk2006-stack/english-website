@@ -1,0 +1,1282 @@
+{
+  "id": "b2-rea-001",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "b2-u06",
+  "series": "b2-u06-attention",
+  "skill": "reading",
+  "genre": "article",
+  "title": "Why you can't stop checking your phone",
+  "summary_es": "Cómo están diseñadas las aplicaciones para retener nuestra atención y qué se puede hacer para recuperarla.",
+  "topic": "society",
+  "tags": ["atención", "redes sociales", "diseño persuasivo"],
+  "can_do": ["R-B2-01", "R-B2-06", "R-B2-07"],
+  "grammar_focus": ["b2.linking-contrast-concession"],
+  "vocab_focus": ["willpower", "reward", "notification", "trigger", "on purpose"],
+  "est_minutes": 20,
+  "prediction_prompt": "How many times a day do you think you look at your phone? What makes you pick it up?",
+  "pre_teach": ["willpower", "notification", "slot machine"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Most of us like to believe that we decide how we spend our time.",
+          "tokens": [
+            { "t": "Most", "l": "most", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "like", "l": "like", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "believe", "l": "believe", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "decide", "l": "decide", "p": "VERB", "w": true, "sp": true },
+            { "t": "how", "l": "how", "p": "ADV", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "spend", "l": "spend", "p": "VERB", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "time", "l": "time", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "The evidence, however, suggests otherwise.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "evidence", "l": "evidence", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "however", "l": "however", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "suggests", "l": "suggest", "p": "VERB", "w": true, "sp": true },
+            { "t": "otherwise", "l": "otherwise", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "The average adult now checks a phone around ninety times a day, often without knowing why.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "average", "l": "average", "p": "ADJ", "w": true, "sp": true },
+            { "t": "adult", "l": "adult", "p": "NOUN", "w": true, "sp": true },
+            { "t": "now", "l": "now", "p": "ADV", "w": true, "sp": true },
+            { "t": "checks", "l": "check", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "phone", "l": "phone", "p": "NOUN", "w": true, "sp": true },
+            { "t": "around", "l": "around", "p": "ADP", "w": true, "sp": true },
+            { "t": "ninety", "l": "ninety", "p": "NUM", "w": false, "sp": true },
+            { "t": "times", "l": "time", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "day", "l": "day", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "often", "l": "often", "p": "ADV", "w": true, "sp": true },
+            { "t": "without", "l": "without", "p": "ADP", "w": true, "sp": true },
+            { "t": "knowing", "l": "know", "p": "VERB", "w": true, "sp": true },
+            { "t": "why", "l": "why", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "This is not simply a lack of willpower.",
+          "tokens": [
+            { "t": "This", "l": "this", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "simply", "l": "simply", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "lack", "l": "lack", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "willpower", "l": "willpower", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s5",
+          "text": "It is the result of careful design.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "result", "l": "result", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "careful", "l": "careful", "p": "ADJ", "w": true, "sp": true },
+            { "t": "design", "l": "design", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Many of the most popular apps earn money from advertising, so their income depends on how long we stay.",
+          "tokens": [
+            { "t": "Many", "l": "many", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "most", "l": "most", "p": "ADV", "w": true, "sp": true },
+            { "t": "popular", "l": "popular", "p": "ADJ", "w": true, "sp": true },
+            { "t": "apps", "l": "app", "p": "NOUN", "w": true, "sp": true },
+            { "t": "earn", "l": "earn", "p": "VERB", "w": true, "sp": true },
+            { "t": "money", "l": "money", "p": "NOUN", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "advertising", "l": "advertising", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "their", "l": "their", "p": "PRON", "w": true, "sp": true },
+            { "t": "income", "l": "income", "p": "NOUN", "w": true, "sp": true },
+            { "t": "depends", "l": "depend", "p": "VERB", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "how", "l": "how", "p": "ADV", "w": true, "sp": true },
+            { "t": "long", "l": "long", "p": "ADJ", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "stay", "l": "stay", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "As a result, companies employ teams of specialists whose only task is to keep us scrolling.",
+          "tokens": [
+            { "t": "As", "l": "as", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "result", "l": "result", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "companies", "l": "company", "p": "NOUN", "w": true, "sp": true },
+            { "t": "employ", "l": "employ", "p": "VERB", "w": true, "sp": true },
+            { "t": "teams", "l": "team", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "specialists", "l": "specialist", "p": "NOUN", "w": true, "sp": true },
+            { "t": "whose", "l": "whose", "p": "PRON", "w": true, "sp": true },
+            { "t": "only", "l": "only", "p": "ADV", "w": true, "sp": true },
+            { "t": "task", "l": "task", "p": "VERB", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "keep", "l": "keep", "p": "VERB", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "scrolling", "l": "scroll", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "One of their most effective tools is the unpredictable reward.",
+          "tokens": [
+            { "t": "One", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "their", "l": "their", "p": "PRON", "w": true, "sp": true },
+            { "t": "most", "l": "most", "p": "ADV", "w": true, "sp": true },
+            { "t": "effective", "l": "effective", "p": "ADJ", "w": true, "sp": true },
+            { "t": "tools", "l": "tool", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "unpredictable", "l": "unpredictable", "p": "ADJ", "w": true, "sp": true },
+            { "t": "reward", "l": "reward", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "When we pull down to refresh a page, we never know whether something interesting will appear.",
+          "tokens": [
+            { "t": "When", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "pull", "l": "pull", "p": "VERB", "w": true, "sp": true },
+            { "t": "down", "l": "down", "p": "ADP", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "refresh", "l": "refresh", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "page", "l": "page", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "never", "l": "never", "p": "ADV", "w": true, "sp": true },
+            { "t": "know", "l": "know", "p": "VERB", "w": true, "sp": true },
+            { "t": "whether", "l": "whether", "p": "ADP", "w": true, "sp": true },
+            { "t": "something", "l": "something", "p": "PRON", "w": true, "sp": true },
+            { "t": "interesting", "l": "interesting", "p": "ADJ", "w": true, "sp": true },
+            { "t": "will", "l": "will", "p": "AUX", "w": true, "sp": true },
+            { "t": "appear", "l": "appear", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s5",
+          "text": "Psychologists have known for decades that rewards which arrive at random are far harder to resist than regular ones.",
+          "tokens": [
+            { "t": "Psychologists", "l": "psychologist", "p": "NOUN", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "known", "l": "know", "p": "VERB", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "decades", "l": "decade", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "DET", "w": true, "sp": true },
+            { "t": "rewards", "l": "reward", "p": "NOUN", "w": true, "sp": true },
+            { "t": "which", "l": "which", "p": "PRON", "w": true, "sp": true },
+            { "t": "arrive", "l": "arrive", "p": "VERB", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "random", "l": "random", "p": "ADJ", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "far", "l": "far", "p": "ADV", "w": true, "sp": true },
+            { "t": "harder", "l": "hard", "p": "ADV", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "resist", "l": "resist", "p": "VERB", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "regular", "l": "regular", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ones", "l": "one", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s6",
+          "text": "Slot machines work in exactly the same way.",
+          "tokens": [
+            { "t": "Slot", "l": "slot", "p": "NOUN", "w": true, "sp": true },
+            { "t": "machines", "l": "machine", "p": "NOUN", "w": true, "sp": true },
+            { "t": "work", "l": "work", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "exactly", "l": "exactly", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "same", "l": "same", "p": "ADJ", "w": true, "sp": true },
+            { "t": "way", "l": "way", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s7",
+          "text": "Another tool is the endless feed.",
+          "tokens": [
+            { "t": "Another", "l": "another", "p": "DET", "w": true, "sp": true },
+            { "t": "tool", "l": "tool", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "endless", "l": "endless", "p": "ADJ", "w": true, "sp": true },
+            { "t": "feed", "l": "feed", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s8",
+          "text": "In the past, a newspaper or a television programme came to a natural end, which gave us a moment to decide what to do next.",
+          "tokens": [
+            { "t": "In", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "past", "l": "past", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "newspaper", "l": "newspaper", "p": "NOUN", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "television", "l": "television", "p": "NOUN", "w": true, "sp": true },
+            { "t": "programme", "l": "program", "p": "NOUN", "w": true, "sp": true },
+            { "t": "came", "l": "come", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "natural", "l": "natural", "p": "ADJ", "w": true, "sp": true },
+            { "t": "end", "l": "end", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "which", "l": "which", "p": "PRON", "w": true, "sp": true },
+            { "t": "gave", "l": "give", "p": "VERB", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "moment", "l": "moment", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "decide", "l": "decide", "p": "VERB", "w": true, "sp": true },
+            { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "VERB", "w": true, "sp": true },
+            { "t": "next", "l": "next", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s9",
+          "text": "Today, the next video starts automatically and the page never reaches the bottom, so that moment of decision has disappeared.",
+          "tokens": [
+            { "t": "Today", "l": "today", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "next", "l": "next", "p": "ADJ", "w": true, "sp": true },
+            { "t": "video", "l": "video", "p": "NOUN", "w": true, "sp": true },
+            { "t": "starts", "l": "start", "p": "VERB", "w": true, "sp": true },
+            { "t": "automatically", "l": "automatically", "p": "ADV", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "page", "l": "page", "p": "NOUN", "w": true, "sp": true },
+            { "t": "never", "l": "never", "p": "ADV", "w": true, "sp": true },
+            { "t": "reaches", "l": "reach", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "bottom", "l": "bottom", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "DET", "w": true, "sp": true },
+            { "t": "moment", "l": "moment", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "decision", "l": "decision", "p": "NOUN", "w": true, "sp": true },
+            { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "disappeared", "l": "disappear", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Notifications are another powerful technique.",
+          "tokens": [
+            { "t": "Notifications", "l": "notification", "p": "NOUN", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "another", "l": "another", "p": "DET", "w": true, "sp": true },
+            { "t": "powerful", "l": "powerful", "p": "ADJ", "w": true, "sp": true },
+            { "t": "technique", "l": "technique", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "A red dot or a short sound creates a small feeling of urgency, even when the message itself is trivial.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "red", "l": "red", "p": "ADJ", "w": true, "sp": true },
+            { "t": "dot", "l": "dot", "p": "NOUN", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "short", "l": "short", "p": "ADJ", "w": true, "sp": true },
+            { "t": "sound", "l": "sound", "p": "NOUN", "w": true, "sp": true },
+            { "t": "creates", "l": "create", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "small", "l": "small", "p": "ADJ", "w": true, "sp": true },
+            { "t": "feeling", "l": "feeling", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "urgency", "l": "urgency", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "even", "l": "even", "p": "ADV", "w": true, "sp": true },
+            { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "message", "l": "message", "p": "NOUN", "w": true, "sp": true },
+            { "t": "itself", "l": "itself", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "trivial", "l": "trivial", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "In one experiment, office workers who were interrupted by alerts took an average of twenty-three minutes to return to their original task.",
+          "tokens": [
+            { "t": "In", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "experiment", "l": "experiment", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "office", "l": "office", "p": "NOUN", "w": true, "sp": true },
+            { "t": "workers", "l": "worker", "p": "NOUN", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "interrupted", "l": "interrupt", "p": "VERB", "w": true, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "alerts", "l": "alert", "p": "VERB", "w": true, "sp": true },
+            { "t": "took", "l": "take", "p": "VERB", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "average", "l": "average", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "twenty", "l": "twenty", "p": "NUM", "w": false },
+            { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+            { "t": "three", "l": "three", "p": "NUM", "w": false, "sp": true },
+            { "t": "minutes", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "return", "l": "return", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "their", "l": "their", "p": "PRON", "w": true, "sp": true },
+            { "t": "original", "l": "original", "p": "ADJ", "w": true, "sp": true },
+            { "t": "task", "l": "task", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "What is more, they reported higher levels of stress, although they had completed the same amount of work.",
+          "tokens": [
+            { "t": "What", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "reported", "l": "report", "p": "VERB", "w": true, "sp": true },
+            { "t": "higher", "l": "high", "p": "ADJ", "w": true, "sp": true },
+            { "t": "levels", "l": "level", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "stress", "l": "stress", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "although", "l": "although", "p": "ADP", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "completed", "l": "complete", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "same", "l": "same", "p": "ADJ", "w": true, "sp": true },
+            { "t": "amount", "l": "amount", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "work", "l": "work", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Social approval plays a part as well.",
+          "tokens": [
+            { "t": "Social", "l": "social", "p": "ADJ", "w": true, "sp": true },
+            { "t": "approval", "l": "approval", "p": "NOUN", "w": true, "sp": true },
+            { "t": "plays", "l": "play", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "part", "l": "part", "p": "NOUN", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "ADV", "w": true, "sp": true },
+            { "t": "well", "l": "well", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Every like or comment tells us that other people have noticed us, and humans find this kind of attention extremely hard to ignore.",
+          "tokens": [
+            { "t": "Every", "l": "every", "p": "DET", "w": true, "sp": true },
+            { "t": "like", "l": "like", "p": "ADP", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "comment", "l": "comment", "p": "VERB", "w": true, "sp": true },
+            { "t": "tells", "l": "tell", "p": "VERB", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "other", "l": "other", "p": "ADJ", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "noticed", "l": "notice", "p": "VERB", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "humans", "l": "human", "p": "NOUN", "w": true, "sp": true },
+            { "t": "find", "l": "find", "p": "VERB", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "DET", "w": true, "sp": true },
+            { "t": "kind", "l": "kind", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "attention", "l": "attention", "p": "NOUN", "w": true, "sp": true },
+            { "t": "extremely", "l": "extremely", "p": "ADV", "w": true, "sp": true },
+            { "t": "hard", "l": "hard", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "ignore", "l": "ignore", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Teenagers appear to be especially sensitive to it, which may explain why they spend more time on social media than any other age group.",
+          "tokens": [
+            { "t": "Teenagers", "l": "teenager", "p": "NOUN", "w": true, "sp": true },
+            { "t": "appear", "l": "appear", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "especially", "l": "especially", "p": "ADV", "w": true, "sp": true },
+            { "t": "sensitive", "l": "sensitive", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "which", "l": "which", "p": "PRON", "w": true, "sp": true },
+            { "t": "may", "l": "may", "p": "AUX", "w": true, "sp": true },
+            { "t": "explain", "l": "explain", "p": "VERB", "w": true, "sp": true },
+            { "t": "why", "l": "why", "p": "ADV", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "spend", "l": "spend", "p": "VERB", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADJ", "w": true, "sp": true },
+            { "t": "time", "l": "time", "p": "NOUN", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "social", "l": "social", "p": "ADJ", "w": true, "sp": true },
+            { "t": "media", "l": "medium", "p": "NOUN", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "any", "l": "any", "p": "DET", "w": true, "sp": true },
+            { "t": "other", "l": "other", "p": "ADJ", "w": true, "sp": true },
+            { "t": "age", "l": "age", "p": "NOUN", "w": true, "sp": true },
+            { "t": "group", "l": "group", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "A former engineer at one large company has admitted that the like button was tested in dozens of versions before the most addictive one was chosen.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "former", "l": "former", "p": "ADJ", "w": true, "sp": true },
+            { "t": "engineer", "l": "engineer", "p": "NOUN", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "large", "l": "large", "p": "ADJ", "w": true, "sp": true },
+            { "t": "company", "l": "company", "p": "NOUN", "w": true, "sp": true },
+            { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "admitted", "l": "admit", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "like", "l": "like", "p": "ADP", "w": true, "sp": true },
+            { "t": "button", "l": "button", "p": "NOUN", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "tested", "l": "test", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "dozens", "l": "dozen", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "versions", "l": "version", "p": "NOUN", "w": true, "sp": true },
+            { "t": "before", "l": "before", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "most", "l": "most", "p": "ADV", "w": true, "sp": true },
+            { "t": "addictive", "l": "addictive", "p": "ADJ", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "chosen", "l": "choose", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Not everyone accepts that technology is to blame.",
+          "tokens": [
+            { "t": "Not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "everyone", "l": "everyone", "p": "PRON", "w": true, "sp": true },
+            { "t": "accepts", "l": "accept", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "technology", "l": "technology", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "blame", "l": "blame", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Some researchers point out that every new medium, from the novel to television, was once accused of destroying our ability to concentrate.",
+          "tokens": [
+            { "t": "Some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "researchers", "l": "researcher", "p": "NOUN", "w": true, "sp": true },
+            { "t": "point", "l": "point", "p": "NOUN", "w": true, "sp": true },
+            { "t": "out", "l": "out", "p": "ADP", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true },
+            { "t": "new", "l": "new", "p": "ADJ", "w": true, "sp": true },
+            { "t": "medium", "l": "medium", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "novel", "l": "novel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "television", "l": "television", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "once", "l": "once", "p": "ADV", "w": true, "sp": true },
+            { "t": "accused", "l": "accuse", "p": "VERB", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "destroying", "l": "destroy", "p": "VERB", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "ability", "l": "ability", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "concentrate", "l": "concentrate", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "They argue that people have always looked for distraction, and that phones merely make it easier to find.",
+          "tokens": [
+            { "t": "They", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "argue", "l": "argue", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "always", "l": "always", "p": "ADV", "w": true, "sp": true },
+            { "t": "looked", "l": "look", "p": "VERB", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "distraction", "l": "distraction", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "DET", "w": true, "sp": true },
+            { "t": "phones", "l": "phone", "p": "NOUN", "w": true, "sp": true },
+            { "t": "merely", "l": "merely", "p": "ADV", "w": true, "sp": true },
+            { "t": "make", "l": "make", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "easier", "l": "easy", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "find", "l": "find", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "There is some truth in this.",
+          "tokens": [
+            { "t": "There", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "truth", "l": "truth", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s5",
+          "text": "Nevertheless, earlier forms of entertainment were not redesigned every week on the basis of data about our behaviour.",
+          "tokens": [
+            { "t": "Nevertheless", "l": "nevertheless", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "earlier", "l": "earlier", "p": "ADV", "w": true, "sp": true },
+            { "t": "forms", "l": "form", "p": "VERB", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "entertainment", "l": "entertainment", "p": "NOUN", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "redesigned", "l": "redesign", "p": "VERB", "w": true, "sp": true },
+            { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true },
+            { "t": "week", "l": "week", "p": "NOUN", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "basis", "l": "basis", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "data", "l": "datum", "p": "NOUN", "w": true, "sp": true },
+            { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "behaviour", "l": "behavior", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "So what can be done?",
+          "tokens": [
+            { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "done", "l": "do", "p": "VERB", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Experts tend to agree that relying on self-control alone rarely works.",
+          "tokens": [
+            { "t": "Experts", "l": "expert", "p": "ADJ", "w": true, "sp": true },
+            { "t": "tend", "l": "tend", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "agree", "l": "agree", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "relying", "l": "rely", "p": "VERB", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "self", "l": "self", "p": "NOUN", "w": true },
+            { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+            { "t": "control", "l": "control", "p": "NOUN", "w": true, "sp": true },
+            { "t": "alone", "l": "alone", "p": "ADV", "w": true, "sp": true },
+            { "t": "rarely", "l": "rarely", "p": "ADV", "w": true, "sp": true },
+            { "t": "works", "l": "work", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "It is more effective to change the environment.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADV", "w": true, "sp": true },
+            { "t": "effective", "l": "effective", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "change", "l": "change", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "environment", "l": "environment", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "Turning off all but the most essential notifications removes many of the triggers.",
+          "tokens": [
+            { "t": "Turning", "l": "turn", "p": "VERB", "w": true, "sp": true },
+            { "t": "off", "l": "off", "p": "ADP", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true },
+            { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "most", "l": "most", "p": "ADV", "w": true, "sp": true },
+            { "t": "essential", "l": "essential", "p": "ADJ", "w": true, "sp": true },
+            { "t": "notifications", "l": "notification", "p": "NOUN", "w": true, "sp": true },
+            { "t": "removes", "l": "remove", "p": "VERB", "w": true, "sp": true },
+            { "t": "many", "l": "many", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "triggers", "l": "trigger", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s5",
+          "text": "Keeping the phone in another room while working is surprisingly helpful, since even a silent phone on the desk reduces concentration.",
+          "tokens": [
+            { "t": "Keeping", "l": "keep", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "phone", "l": "phone", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "another", "l": "another", "p": "DET", "w": true, "sp": true },
+            { "t": "room", "l": "room", "p": "NOUN", "w": true, "sp": true },
+            { "t": "while", "l": "while", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "working", "l": "working", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "surprisingly", "l": "surprisingly", "p": "ADV", "w": true, "sp": true },
+            { "t": "helpful", "l": "helpful", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "since", "l": "since", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "even", "l": "even", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "silent", "l": "silent", "p": "ADJ", "w": true, "sp": true },
+            { "t": "phone", "l": "phone", "p": "NOUN", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "desk", "l": "desk", "p": "NOUN", "w": true, "sp": true },
+            { "t": "reduces", "l": "reduce", "p": "VERB", "w": true, "sp": true },
+            { "t": "concentration", "l": "concentration", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s6",
+          "text": "Some people go further and switch their screens to black and white, which makes apps noticeably less attractive.",
+          "tokens": [
+            { "t": "Some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true },
+            { "t": "go", "l": "go", "p": "VERB", "w": true, "sp": true },
+            { "t": "further", "l": "further", "p": "ADJ", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "switch", "l": "switch", "p": "VERB", "w": true, "sp": true },
+            { "t": "their", "l": "their", "p": "PRON", "w": true, "sp": true },
+            { "t": "screens", "l": "screen", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "black", "l": "black", "p": "VERB", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "white", "l": "white", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "which", "l": "which", "p": "PRON", "w": true, "sp": true },
+            { "t": "makes", "l": "make", "p": "VERB", "w": true, "sp": true },
+            { "t": "apps", "l": "app", "p": "NOUN", "w": true, "sp": true },
+            { "t": "noticeably", "l": "noticeably", "p": "ADV", "w": true, "sp": true },
+            { "t": "less", "l": "less", "p": "ADV", "w": true, "sp": true },
+            { "t": "attractive", "l": "attractive", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "None of these measures requires us to give up technology.",
+          "tokens": [
+            { "t": "None", "l": "none", "p": "PRON", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "these", "l": "these", "p": "DET", "w": true, "sp": true },
+            { "t": "measures", "l": "measure", "p": "NOUN", "w": true, "sp": true },
+            { "t": "requires", "l": "require", "p": "VERB", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "give", "l": "give", "p": "VERB", "w": true, "sp": true },
+            { "t": "up", "l": "up", "p": "ADP", "w": true, "sp": true },
+            { "t": "technology", "l": "technology", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "The aim is rather to use it on purpose instead of by habit.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "aim", "l": "aim", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "rather", "l": "rather", "p": "ADV", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "use", "l": "use", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "purpose", "l": "purpose", "p": "NOUN", "w": true, "sp": true },
+            { "t": "instead", "l": "instead", "p": "ADV", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "habit", "l": "habit", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Attention, after all, is limited, and whatever we give it to becomes, in the end, our life.",
+          "tokens": [
+            { "t": "Attention", "l": "attention", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "limited", "l": "limited", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "whatever", "l": "whatever", "p": "DET", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "give", "l": "give", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "becomes", "l": "become", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "end", "l": "end", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "life", "l": "life", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "Conectores de contraste y concesión",
+      "explanation_es": "*However* y *Nevertheless* abren una frase nueva que contradice o matiza la anterior; *although* une las dos ideas dentro de la misma frase; *even when* añade un caso extremo. Fíjate en que *Nevertheless* (p5) responde a la objeción que el autor acaba de aceptar en parte.",
+      "refs": ["p1s2", "p3s2", "p3s4", "p5s5"]
+    },
+    {
+      "title_es": "Which para comentar toda la idea anterior",
+      "explanation_es": "Tras una coma, *which* no se refiere a un nombre, sino a todo lo dicho antes: *…came to a natural end, which gave us a moment…* (lo cual nos daba un momento).",
+      "refs": ["p2s8", "p4s3", "p6s6"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "willpower",
+      "surface": "willpower",
+      "pos": "noun",
+      "def_en": "the ability to control what you do, even when it is difficult",
+      "def_es": "fuerza de voluntad",
+      "ref": "p1s4"
+    },
+    {
+      "lemma": "scroll",
+      "surface": "scrolling",
+      "pos": "verb",
+      "def_en": "to move up or down a page on a screen",
+      "def_es": "deslizar, hacer scroll",
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "reward",
+      "surface": "reward",
+      "pos": "noun",
+      "def_en": "something good that you get for doing something",
+      "def_es": "recompensa",
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "refresh",
+      "surface": "refresh",
+      "pos": "verb",
+      "def_en": "to make a page on a screen show the newest information",
+      "def_es": "actualizar, recargar",
+      "ref": "p2s4"
+    },
+    {
+      "lemma": "slot machine",
+      "surface": "Slot machines",
+      "pos": "phrase",
+      "def_en": "a machine for gambling: you put money in and hope to win more",
+      "def_es": "máquina tragaperras",
+      "ref": "p2s6"
+    },
+    {
+      "lemma": "feed",
+      "surface": "feed",
+      "pos": "noun",
+      "def_en": "the list of new posts that an app shows you, one after another",
+      "def_es": "el «feed», el muro (de una red social)",
+      "ref": "p2s7"
+    },
+    {
+      "lemma": "notification",
+      "surface": "Notifications",
+      "pos": "noun",
+      "def_en": "a message on your phone telling you that something new has happened",
+      "def_es": "notificación",
+      "ref": "p3s1"
+    },
+    {
+      "lemma": "urgency",
+      "surface": "urgency",
+      "pos": "noun",
+      "def_en": "the feeling that something must be done immediately",
+      "def_es": "urgencia",
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "trivial",
+      "surface": "trivial",
+      "pos": "adjective",
+      "def_en": "not important at all",
+      "def_es": "sin importancia, insignificante",
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "alert",
+      "surface": "alerts",
+      "pos": "noun",
+      "def_en": "a sound or message that tells you to look at something",
+      "def_es": "aviso, alerta",
+      "ref": "p3s3"
+    },
+    {
+      "lemma": "addictive",
+      "surface": "addictive",
+      "pos": "adjective",
+      "def_en": "so enjoyable that it is hard to stop doing it",
+      "def_es": "adictivo",
+      "ref": "p4s4"
+    },
+    {
+      "lemma": "be to blame",
+      "surface": "is to blame",
+      "pos": "phrase",
+      "def_en": "to be the cause of something bad",
+      "def_es": "tener la culpa",
+      "ref": "p5s1"
+    },
+    {
+      "lemma": "merely",
+      "surface": "merely",
+      "pos": "adverb",
+      "def_en": "only; just",
+      "def_es": "simplemente, tan solo",
+      "ref": "p5s3"
+    },
+    {
+      "lemma": "self-control",
+      "surface": "self-control",
+      "pos": "noun",
+      "def_en": "the ability to stop yourself from doing things you want to do",
+      "def_es": "autocontrol",
+      "ref": "p6s2"
+    },
+    {
+      "lemma": "trigger",
+      "surface": "triggers",
+      "pos": "noun",
+      "def_en": "something that makes you start doing something",
+      "def_es": "desencadenante, detonante",
+      "ref": "p6s4"
+    },
+    {
+      "lemma": "on purpose",
+      "surface": "on purpose",
+      "pos": "phrase",
+      "def_en": "because you have decided to, not by accident",
+      "def_es": "a propósito, queriendo",
+      "ref": "p7s2"
+    },
+    {
+      "lemma": "app",
+      "surface": "apps",
+      "pos": "noun",
+      "def_en": "a program that you use on a phone or a tablet",
+      "def_es": "aplicación",
+      "ref": "p2s1"
+    },
+    {
+      "lemma": "data",
+      "surface": "data",
+      "pos": "noun",
+      "def_en": "facts and numbers that are collected so that they can be studied",
+      "def_es": "datos",
+      "ref": "p5s5"
+    },
+    {
+      "lemma": "earlier",
+      "surface": "earlier",
+      "pos": "adjective",
+      "def_en": "from a time before now",
+      "def_es": "anterior, de antes",
+      "ref": "p5s5"
+    },
+    {
+      "lemma": "redesign",
+      "surface": "redesigned",
+      "pos": "verb",
+      "def_en": "to design something again in a different way",
+      "def_es": "rediseñar",
+      "ref": "p5s5"
+    },
+    {
+      "lemma": "noticeably",
+      "surface": "noticeably",
+      "pos": "adverb",
+      "def_en": "in a way that is easy to see",
+      "def_es": "notablemente, de forma apreciable",
+      "ref": "p6s6"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "What is the writer's main point?",
+      "options": [
+        { "id": "a", "text": "People today have far less willpower than previous generations did" },
+        { "id": "b", "text": "Phones are built to hold our attention, but we can limit their effect" },
+        {
+          "id": "c",
+          "text": "Technology companies should no longer be allowed to earn money from advertising"
+        },
+        { "id": "d", "text": "Using a phone at work is the main cause of stress" }
+      ],
+      "answer": "b",
+      "evidence": ["p1s5", "p7s2"],
+      "rationale_es": "El texto explica que mirar el móvil es fruto de un diseño (p1) y termina proponiendo usarlo «a propósito y no por costumbre» (p7). No culpa a la falta de voluntad ni pide prohibir la publicidad."
+    },
+    {
+      "id": "q2",
+      "type": "heading_match",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "Match paragraphs 2, 3 and 4 with the best heading. There is one extra heading.",
+      "paragraphs": ["p2", "p3", "p4"],
+      "headings": [
+        { "id": "a", "text": "Small signals, big interruptions" },
+        { "id": "b", "text": "The need to be noticed" },
+        { "id": "c", "text": "How to earn money online" },
+        { "id": "d", "text": "Rewards you cannot predict" }
+      ],
+      "answers": { "p2": "d", "p3": "a", "p4": "b" },
+      "evidence": ["p2", "p3", "p4"],
+      "rationale_es": "P2 trata de las recompensas imprevisibles y del *feed* sin fin; p3, de las notificaciones y las interrupciones; p4, de la aprobación social. Ningún párrafo explica cómo ganar dinero en internet."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "According to paragraph 2, why do app companies want people to stay longer?",
+      "options": [
+        { "id": "a", "text": "Users pay a small amount for each hour" },
+        { "id": "b", "text": "They want to collect more reviews from customers" },
+        { "id": "c", "text": "Longer visits improve the design" },
+        { "id": "d", "text": "They make money by showing adverts" }
+      ],
+      "answer": "d",
+      "evidence": ["p2s1"],
+      "rationale_es": "Ganan dinero con la publicidad, así que sus ingresos dependen de cuánto tiempo nos quedamos."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "vocab_in_context",
+      "prompt": "What does \"trivial\" mean in paragraph 3?",
+      "options": [
+        { "id": "a", "text": "unimportant" },
+        { "id": "b", "text": "urgent" },
+        { "id": "c", "text": "private" },
+        { "id": "d", "text": "unexpected" }
+      ],
+      "answer": "a",
+      "evidence": ["p3s2"],
+      "rationale_es": "*even when* marca un contraste: el aviso crea sensación de urgencia *aunque* el mensaje no la tenga, es decir, aunque sea insignificante."
+    },
+    {
+      "id": "q5",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "The workers who were interrupted finished less work than the others.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["p3s4"],
+      "rationale_es": "Hicieron *the same amount of work*; lo que cambió fue el nivel de estrés."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "Why does the writer mention slot machines?",
+      "options": [
+        { "id": "a", "text": "To suggest that phones should be made illegal" },
+        { "id": "b", "text": "To explain how apps earn their money" },
+        { "id": "c", "text": "To show that gambling uses the same trick" },
+        { "id": "d", "text": "To prove that rewards are always harmful" }
+      ],
+      "answer": "c",
+      "evidence": ["p2s5", "p2s6"],
+      "rationale_es": "Acaba de explicar que las recompensas al azar son las más difíciles de resistir, y añade que las tragaperras funcionan «exactamente igual»: es una comparación, no una propuesta de prohibición."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "attitude_opinion",
+      "prompt": "What is the writer's attitude to the researchers mentioned in paragraph 5?",
+      "options": [
+        { "id": "a", "text": "They are completely wrong about the past" },
+        { "id": "b", "text": "They are partly right but miss a key difference" },
+        { "id": "c", "text": "They are more convincing than the critics of technology" },
+        { "id": "d", "text": "They do not understand history" }
+      ],
+      "answer": "b",
+      "evidence": ["p5s4", "p5s5"],
+      "rationale_es": "*There is some truth in this* les da parte de razón; *Nevertheless* introduce la diferencia que pasan por alto: el entretenimiento de antes no se rediseñaba cada semana con datos."
+    },
+    {
+      "id": "q8",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Most teenagers would like to spend less time on social media.",
+      "answer": "NG",
+      "allow_ng": true,
+      "evidence": ["p4s3"],
+      "rationale_es": "El texto dice que los adolescentes pasan más tiempo que nadie en redes, pero no dice nada de lo que ellos querrían."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Which piece of advice does the writer NOT give?",
+      "options": [
+        { "id": "a", "text": "Keep your phone in a different room" },
+        { "id": "b", "text": "Switch off most notifications" },
+        { "id": "c", "text": "Change the screen to black and white" },
+        { "id": "d", "text": "Delete social media apps completely" }
+      ],
+      "answer": "d",
+      "evidence": ["p6s4", "p6s5", "p6s6", "p7s1"],
+      "rationale_es": "Los otros tres consejos están en el párrafo 6. El autor deja claro que no hace falta renunciar a la tecnología (p7)."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "reference",
+      "prompt": "In paragraph 5, what does \"this\" refer to in \"There is some truth in this\"?",
+      "options": [
+        { "id": "a", "text": "The claim that novels destroyed concentration" },
+        { "id": "b", "text": "The fact that phones are redesigned every week" },
+        { "id": "c", "text": "The view that humans never stopped seeking ways to escape" },
+        { "id": "d", "text": "The belief that every new technology is harmful to society" }
+      ],
+      "answer": "c",
+      "evidence": ["p5s3", "p5s4"],
+      "rationale_es": "*This* recoge el argumento de la frase anterior: siempre hemos buscado distracción y el móvil solo lo pone más fácil."
+    },
+    {
+      "id": "q11",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "vocab_in_context",
+      "prompt": "Complete the summary with one word from the text in each gap.",
+      "text": "Apps keep us hooked with rewards that arrive at {{1}} and with alerts that create a feeling of {{2}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["random"],
+          "max_words": 1
+        },
+        {
+          "n": 2,
+          "accept": ["urgency"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["p2s5", "p3s2"],
+      "rationale_es": "*rewards which arrive at random* (p2) y *a small feeling of urgency* (p3)."
+    },
+    {
+      "id": "q12",
+      "type": "short_answer",
+      "phase": "post",
+      "focus": "detail",
+      "prompt": "On average, how many minutes did interrupted workers need to return to their task?",
+      "accept": ["23", "twenty-three", "twenty three", "23 minutes", "twenty-three minutes"],
+      "max_words": 3,
+      "evidence": ["p3s3"],
+      "rationale_es": "*an average of twenty-three minutes*: veintitrés minutos de media."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 524,
+  "lemmas": [
+    "a", "ability", "about", "accept", "accuse", "addictive", "admit", "adult", "advertising", "after", "age",
+    "agree", "aim", "alert", "all", "alone", "although", "always", "amount", "an", "and", "another", "any",
+    "app", "appear", "approval", "argue", "around", "arrive", "as", "at", "attention", "attractive",
+    "automatically", "average", "basis", "be", "become", "before", "behavior", "believe", "black", "blame",
+    "bottom", "but", "button", "by", "can", "careful", "change", "check", "choose", "come", "comment",
+    "company", "complete", "concentrate", "concentration", "control", "create", "datum", "day", "decade",
+    "decide", "decision", "depend", "design", "desk", "destroy", "disappear", "distraction", "do", "dot",
+    "down", "dozen", "earlier", "earn", "easy", "effective", "employ", "end", "endless", "engineer",
+    "entertainment", "environment", "especially", "essential", "even", "every", "everyone", "evidence",
+    "exactly", "experiment", "expert", "explain", "extremely", "far", "feed", "feeling", "find", "for", "form",
+    "former", "from", "further", "give", "go", "group", "habit", "hard", "have", "helpful", "high", "how",
+    "however", "human", "ignore", "in", "income", "instead", "interesting", "interrupt", "it", "itself",
+    "keep", "kind", "know", "lack", "large", "less", "level", "life", "like", "limited", "long", "look",
+    "machine", "make", "many", "may", "measure", "medium", "merely", "message", "minute", "moment", "money",
+    "more", "most", "natural", "never", "nevertheless", "new", "newspaper", "next", "none", "not", "notice",
+    "noticeably", "notification", "novel", "now", "of", "off", "office", "often", "on", "once", "one", "only",
+    "or", "original", "other", "otherwise", "our", "out", "page", "part", "past", "people", "phone", "play",
+    "point", "popular", "powerful", "program", "psychologist", "pull", "purpose", "random", "rarely", "rather",
+    "reach", "red", "redesign", "reduce", "refresh", "regular", "rely", "remove", "report", "require",
+    "researcher", "resist", "result", "return", "reward", "room", "same", "screen", "scroll", "self",
+    "sensitive", "short", "silent", "simply", "since", "slot", "small", "so", "social", "some", "something",
+    "sound", "specialist", "spend", "start", "stay", "stress", "suggest", "surprisingly", "switch", "take",
+    "task", "team", "technique", "technology", "teenager", "television", "tell", "tend", "test", "than",
+    "that", "the", "their", "there", "these", "they", "this", "time", "to", "today", "tool", "trigger",
+    "trivial", "truth", "turn", "unpredictable", "up", "urgency", "us", "use", "version", "video", "way", "we",
+    "week", "well", "what", "whatever", "when", "whether", "which", "while", "white", "who", "whose", "why",
+    "will", "willpower", "without", "work", "worker", "working"
+  ],
+  "difficulty": 1280,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7311, "A2": 0.8685, "B1": 0.9574, "B2": 0.9768, "C1": 0.9768, "C2": 1 },
+    "off_level_lemmas": [
+      "addictive", "app", "datum", "earlier", "noticeably", "notification", "redesign", "scroll", "urgency",
+      "willpower"
+    ],
+    "avg_sentence_words": 14.6,
+    "flesch_reading_ease": 61.1,
+    "checked_at": "2026-10-08T23:01:44.632Z"
+  }
+}

@@ -1,0 +1,1081 @@
+{
+  "id": "b2-lis-001",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "b2-u09",
+  "series": "b2-u09-four-day-week",
+  "skill": "listening",
+  "genre": "interview",
+  "title": "The four-day week",
+  "summary_es": "Entrevista de pódcast al director de una pequeña empresa de software que pasó a toda su plantilla a la semana de cuatro días.",
+  "topic": "work-tech",
+  "tags": ["trabajo", "productividad", "entrevista", "condicional"],
+  "can_do": ["L-B2-02", "L-B2-05", "L-B2-06"],
+  "grammar_focus": [],
+  "vocab_focus": ["output", "downside", "sceptical", "resign", "walk out the door"],
+  "est_minutes": 18,
+  "prediction_prompt": "A company moves everyone to a four-day week with the same pay. What problems and benefits would you expect?",
+  "pre_teach": ["output", "sceptical", "downside"],
+  "speakers": [
+    { "id": "hannah", "name": "Hannah", "accent": "en-GB", "gender": "female" },
+    { "id": "daniel", "name": "Daniel", "accent": "en-US", "gender": "male" }
+  ],
+  "target_wpm": 155,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "hannah",
+      "text": "Welcome back to Work in Progress. Today we're talking about the four-day week.",
+      "tokens": [
+        { "t": "Welcome", "l": "welcome", "p": "ADJ", "w": true, "sp": true, "s": 0.027, "e": 0.485 },
+        { "t": "back", "l": "back", "p": "ADV", "w": true, "sp": true, "s": 0.485, "e": 0.771 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 0.772, "e": 0.944 },
+        { "t": "Work", "l": "work", "p": "PROPN", "w": false, "sp": true, "s": 0.943, "e": 1.229 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 1.23, "e": 1.402 },
+        { "t": "Progress", "l": "progress", "p": "PROPN", "w": false, "s": 1.402, "e": 1.917 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Today", "l": "today", "p": "NOUN", "w": true, "sp": true, "s": 2.357, "e": 2.646 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "s": 2.646, "e": 2.762 },
+        { "t": "'re", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 2.762, "e": 2.935 },
+        { "t": "talking", "l": "talk", "p": "VERB", "w": true, "sp": true, "s": 2.935, "e": 3.32 },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true, "s": 3.32, "e": 3.609 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 3.609, "e": 3.802 },
+        { "t": "four", "l": "four", "p": "NUM", "w": false, "s": 3.801, "e": 4.021 },
+        { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+        { "t": "day", "l": "day", "p": "NOUN", "w": true, "sp": true, "s": 4.021, "e": 4.186 },
+        { "t": "week", "l": "week", "p": "NOUN", "w": true, "s": 4.186, "e": 4.427 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 4.51
+    },
+    {
+      "id": "s2",
+      "speaker": "hannah",
+      "text": "My guest is Daniel Reyes, who runs a small software company in Denver.",
+      "tokens": [
+        { "t": "My", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 4.785, "e": 4.983 },
+        { "t": "guest", "l": "guest", "p": "NOUN", "w": true, "sp": true, "s": 4.983, "e": 5.379 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 5.379, "e": 5.577 },
+        { "t": "Daniel", "l": "daniel", "p": "PROPN", "w": false, "sp": true, "s": 5.577, "e": 6.039 },
+        { "t": "Reyes", "l": "reyes", "p": "PROPN", "w": false, "s": 6.039, "e": 6.435 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true, "s": 6.875, "e": 7.089 },
+        { "t": "runs", "l": "run", "p": "VERB", "w": true, "sp": true, "s": 7.089, "e": 7.356 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 7.356, "e": 7.463 },
+        { "t": "small", "l": "small", "p": "ADJ", "w": true, "sp": true, "s": 7.463, "e": 7.783 },
+        { "t": "software", "l": "software", "p": "NOUN", "w": true, "sp": true, "s": 7.783, "e": 8.264 },
+        { "t": "company", "l": "company", "p": "NOUN", "w": true, "sp": true, "s": 8.264, "e": 8.691 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 8.691, "e": 8.851 },
+        { "t": "Denver", "l": "denver", "p": "PROPN", "w": false, "s": 8.851, "e": 9.225 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.76,
+      "end": 9.268
+    },
+    {
+      "id": "s3",
+      "speaker": "hannah",
+      "text": "Daniel, you moved your whole team to four days last year. What made you do it?",
+      "tokens": [
+        { "t": "Daniel", "l": "daniel", "p": "PROPN", "w": false, "s": 9.55, "e": 9.947 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 9.947, "e": 10.174 },
+        { "t": "moved", "l": "move", "p": "VERB", "w": true, "sp": true, "s": 10.174, "e": 10.514 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 10.514, "e": 10.798 },
+        { "t": "whole", "l": "whole", "p": "ADJ", "w": true, "sp": true, "s": 10.798, "e": 11.138 },
+        { "t": "team", "l": "team", "p": "NOUN", "w": true, "sp": true, "s": 11.138, "e": 11.422 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 11.421, "e": 11.591 },
+        { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true, "s": 11.592, "e": 11.876 },
+        { "t": "days", "l": "day", "p": "NOUN", "w": true, "sp": true, "s": 11.875, "e": 12.159 },
+        { "t": "last", "l": "last", "p": "ADJ", "w": true, "sp": true, "s": 12.159, "e": 12.443 },
+        { "t": "year", "l": "year", "p": "NOUN", "w": true, "s": 12.442, "e": 12.726 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "What", "l": "what", "p": "PRON", "w": true, "sp": true, "s": 12.726, "e": 13.01 },
+        { "t": "made", "l": "make", "p": "VERB", "w": true, "sp": true, "s": 13.009, "e": 13.293 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 13.293, "e": 13.52 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 13.52, "e": 13.69 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 13.69, "e": 13.86 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.518,
+      "end": 13.916
+    },
+    {
+      "id": "s4",
+      "speaker": "daniel",
+      "text": "Honestly, we were losing people. Three of our best developers had left within six months.",
+      "tokens": [
+        { "t": "Honestly", "l": "honestly", "p": "ADV", "w": true, "s": 14.358, "e": 14.908 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 14.908, "e": 15.091 },
+        { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 15.092, "e": 15.398 },
+        { "t": "losing", "l": "lose", "p": "VERB", "w": true, "sp": true, "s": 15.398, "e": 15.826 },
+        { "t": "people", "l": "people", "p": "NOUN", "w": true, "s": 15.826, "e": 16.254 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Three", "l": "three", "p": "NUM", "w": false, "sp": true, "s": 16.254, "e": 16.621 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 16.621, "e": 16.804 },
+        { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true, "s": 16.804, "e": 17.049 },
+        { "t": "best", "l": "good", "p": "ADJ", "w": true, "sp": true, "s": 17.049, "e": 17.355 },
+        { "t": "developers", "l": "develop", "p": "NOUN", "w": true, "sp": true, "s": 17.354, "e": 18.027 },
+        { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 18.027, "e": 18.272 },
+        { "t": "left", "l": "leave", "p": "VERB", "w": true, "sp": true, "s": 18.272, "e": 18.578 },
+        { "t": "within", "l": "within", "p": "ADP", "w": true, "sp": true, "s": 18.577, "e": 19.005 },
+        { "t": "six", "l": "six", "p": "NUM", "w": false, "sp": true, "s": 19.005, "e": 19.25 },
+        { "t": "months", "l": "month", "p": "NOUN", "w": true, "s": 19.25, "e": 19.678 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 14.316,
+      "end": 19.723
+    },
+    {
+      "id": "s5",
+      "speaker": "daniel",
+      "text": "They weren't going to competitors for more money. They were simply exhausted.",
+      "tokens": [
+        { "t": "They", "l": "they", "p": "PRON", "w": true, "sp": true, "s": 20.016, "e": 20.265 },
+        { "t": "were", "l": "be", "p": "AUX", "w": true, "s": 20.265, "e": 20.492 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 20.492, "e": 20.663 },
+        { "t": "going", "l": "go", "p": "VERB", "w": true, "sp": true, "s": 20.663, "e": 20.962 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 20.962, "e": 21.111 },
+        { "t": "competitors", "l": "competitor", "p": "NOUN", "w": true, "sp": true, "s": 21.112, "e": 21.71 },
+        { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true, "s": 21.709, "e": 21.908 },
+        { "t": "more", "l": "more", "p": "ADJ", "w": true, "sp": true, "s": 21.908, "e": 22.157 },
+        { "t": "money", "l": "money", "p": "NOUN", "w": true, "s": 22.157, "e": 22.456 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "They", "l": "they", "p": "PRON", "w": true, "sp": true, "s": 22.756, "e": 23.032 },
+        { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 23.032, "e": 23.308 },
+        { "t": "simply", "l": "simply", "p": "ADV", "w": true, "sp": true, "s": 23.308, "e": 23.694 },
+        { "t": "exhausted", "l": "exhaust", "p": "VERB", "w": true, "s": 23.694, "e": 24.246 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.973,
+      "end": 24.355
+    },
+    {
+      "id": "s6",
+      "speaker": "hannah",
+      "text": "So it wasn't really about productivity at first?",
+      "tokens": [
+        { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 24.79, "e": 24.965 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 24.965, "e": 25.14 },
+        { "t": "was", "l": "be", "p": "AUX", "w": true, "s": 25.14, "e": 25.344 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 25.344, "e": 25.548 },
+        { "t": "really", "l": "really", "p": "ADV", "w": true, "sp": true, "s": 25.548, "e": 25.956 },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true, "s": 25.957, "e": 26.307 },
+        {
+          "t": "productivity",
+          "l": "productivity",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 26.307,
+          "e": 27.065
+        },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 27.065, "e": 27.24 },
+        { "t": "first", "l": "first", "p": "ADJ", "w": true, "s": 27.24, "e": 27.59 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.755,
+      "end": 27.619
+    },
+    {
+      "id": "s7",
+      "speaker": "daniel",
+      "text": "Not at all. I was just trying to stop people from walking out the door.",
+      "tokens": [
+        { "t": "Not", "l": "not", "p": "PART", "w": true, "sp": true, "s": 28.055, "e": 28.386 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 28.386, "e": 28.634 },
+        { "t": "all", "l": "all", "p": "DET", "w": true, "s": 28.634, "e": 28.965 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 29.105, "e": 29.205 },
+        { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 29.205, "e": 29.404 },
+        { "t": "just", "l": "just", "p": "ADV", "w": true, "sp": true, "s": 29.404, "e": 29.653 },
+        { "t": "trying", "l": "try", "p": "VERB", "w": true, "sp": true, "s": 29.653, "e": 30.002 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 30.002, "e": 30.151 },
+        { "t": "stop", "l": "stop", "p": "VERB", "w": true, "sp": true, "s": 30.151, "e": 30.4 },
+        { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true, "s": 30.401, "e": 30.75 },
+        { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true, "s": 30.749, "e": 30.998 },
+        { "t": "walking", "l": "walk", "p": "VERB", "w": true, "sp": true, "s": 30.999, "e": 31.398 },
+        { "t": "out", "l": "out", "p": "ADP", "w": true, "sp": true, "s": 31.397, "e": 31.596 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 31.597, "e": 31.796 },
+        { "t": "door", "l": "door", "p": "NOUN", "w": true, "s": 31.796, "e": 32.045 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.019,
+      "end": 32.129
+    },
+    {
+      "id": "s8",
+      "speaker": "hannah",
+      "text": "And how did you actually organise it? Did everybody take Friday off?",
+      "tokens": [
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 32.556, "e": 32.768 },
+        { "t": "how", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 32.768, "e": 32.98 },
+        { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 32.98, "e": 33.192 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 33.192, "e": 33.404 },
+        { "t": "actually", "l": "actually", "p": "ADV", "w": true, "sp": true, "s": 33.404, "e": 33.881 },
+        { "t": "organise", "l": "organize", "p": "VERB", "w": true, "sp": true, "s": 33.88, "e": 34.357 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 34.357, "e": 34.516 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Did", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 34.966, "e": 35.203 },
+        { "t": "everybody", "l": "everybody", "p": "PRON", "w": true, "sp": true, "s": 35.203, "e": 35.796 },
+        { "t": "take", "l": "take", "p": "VERB", "w": true, "sp": true, "s": 35.797, "e": 36.094 },
+        { "t": "Friday", "l": "friday", "p": "PROPN", "w": false, "sp": true, "s": 36.093, "e": 36.508 },
+        { "t": "off", "l": "off", "p": "ADP", "w": true, "s": 36.509, "e": 36.746 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.529,
+      "end": 36.804
+    },
+    {
+      "id": "s9",
+      "speaker": "daniel",
+      "text": "That was the original plan, but our clients still needed support on Fridays.",
+      "tokens": [
+        { "t": "That", "l": "that", "p": "PRON", "w": true, "sp": true, "s": 37.245, "e": 37.578 },
+        { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 37.578, "e": 37.845 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 37.845, "e": 38.112 },
+        { "t": "original", "l": "original", "p": "ADJ", "w": true, "sp": true, "s": 38.112, "e": 38.712 },
+        { "t": "plan", "l": "plan", "p": "NOUN", "w": true, "s": 38.712, "e": 39.045 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 39.265, "e": 39.494 },
+        { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true, "s": 39.494, "e": 39.723 },
+        { "t": "clients", "l": "client", "p": "NOUN", "w": true, "sp": true, "s": 39.723, "e": 40.181 },
+        { "t": "still", "l": "still", "p": "ADV", "w": true, "sp": true, "s": 40.182, "e": 40.526 },
+        { "t": "needed", "l": "need", "p": "VERB", "w": true, "sp": true, "s": 40.525, "e": 40.926 },
+        { "t": "support", "l": "support", "p": "NOUN", "w": true, "sp": true, "s": 40.926, "e": 41.384 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 41.385, "e": 41.557 },
+        { "t": "Fridays", "l": "fridays", "p": "PROPN", "w": false, "s": 41.557, "e": 42.015 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 37.204,
+      "end": 42.064
+    },
+    {
+      "id": "s10",
+      "speaker": "daniel",
+      "text": "So half the team takes Monday off and the other half takes Friday.",
+      "tokens": [
+        { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 42.346, "e": 42.519 },
+        { "t": "half", "l": "half", "p": "NOUN", "w": true, "sp": true, "s": 42.519, "e": 42.808 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 42.808, "e": 43.039 },
+        { "t": "team", "l": "team", "p": "NOUN", "w": true, "sp": true, "s": 43.039, "e": 43.328 },
+        { "t": "takes", "l": "take", "p": "VERB", "w": true, "sp": true, "s": 43.327, "e": 43.673 },
+        { "t": "Monday", "l": "monday", "p": "PROPN", "w": false, "sp": true, "s": 43.674, "e": 44.078 },
+        { "t": "off", "l": "off", "p": "ADP", "w": true, "sp": true, "s": 44.078, "e": 44.309 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 44.309, "e": 44.54 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 44.54, "e": 44.771 },
+        { "t": "other", "l": "other", "p": "ADJ", "w": true, "sp": true, "s": 44.771, "e": 45.117 },
+        { "t": "half", "l": "half", "p": "NOUN", "w": true, "sp": true, "s": 45.117, "e": 45.406 },
+        { "t": "takes", "l": "take", "p": "VERB", "w": true, "sp": true, "s": 45.406, "e": 45.752 },
+        { "t": "Friday", "l": "friday", "p": "PROPN", "w": false, "s": 45.752, "e": 46.156 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 42.314,
+      "end": 46.234
+    },
+    {
+      "id": "s11",
+      "speaker": "hannah",
+      "text": "Did you cut salaries?",
+      "tokens": [
+        { "t": "Did", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 46.665, "e": 46.935 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 46.935, "e": 47.205 },
+        { "t": "cut", "l": "cut", "p": "VERB", "w": true, "sp": true, "s": 47.206, "e": 47.476 },
+        { "t": "salaries", "l": "salary", "p": "NOUN", "w": true, "s": 47.476, "e": 48.085 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.634,
+      "end": 48.153
+    },
+    {
+      "id": "s12",
+      "speaker": "daniel",
+      "text": "No. Same pay, fewer hours. If we'd cut pay, nobody would have trusted the experiment.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "INTJ", "w": false, "s": 48.584, "e": 48.782 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Same", "l": "same", "p": "ADJ", "w": true, "sp": true, "s": 48.782, "e": 49.112 },
+        { "t": "pay", "l": "pay", "p": "VERB", "w": true, "s": 49.111, "e": 49.375 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "fewer", "l": "few", "p": "ADJ", "w": true, "sp": true, "s": 49.375, "e": 49.771 },
+        { "t": "hours", "l": "hour", "p": "NOUN", "w": true, "s": 49.771, "e": 50.167 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "If", "l": "if", "p": "SCONJ", "w": true, "sp": true, "s": 50.166, "e": 50.364 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "s": 50.364, "e": 50.529 },
+        { "t": "'d", "l": "would", "p": "AUX", "w": true, "sp": true, "s": 50.529, "e": 50.694 },
+        { "t": "cut", "l": "cut", "p": "VERB", "w": true, "sp": true, "s": 50.694, "e": 50.958 },
+        { "t": "pay", "l": "pay", "p": "VERB", "w": true, "s": 50.957, "e": 51.221 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "nobody", "l": "nobody", "p": "PRON", "w": true, "sp": true, "s": 51.221, "e": 51.682 },
+        { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true, "s": 51.683, "e": 52.079 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 52.078, "e": 52.408 },
+        { "t": "trusted", "l": "trust", "p": "VERB", "w": true, "sp": true, "s": 52.408, "e": 52.935 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 52.935, "e": 53.199 },
+        { "t": "experiment", "l": "experiment", "p": "NOUN", "w": true, "s": 53.199, "e": 53.924 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 48.553,
+      "end": 53.991
+    },
+    {
+      "id": "s13",
+      "speaker": "hannah",
+      "text": "I imagine some people were sceptical.",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 54.419, "e": 54.533 },
+        { "t": "imagine", "l": "imagine", "p": "VERB", "w": true, "sp": true, "s": 54.533, "e": 54.987 },
+        { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true, "s": 54.987, "e": 55.271 },
+        { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true, "s": 55.27, "e": 55.667 },
+        { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 55.668, "e": 55.952 },
+        { "t": "sceptical", "l": "skeptical", "p": "ADJ", "w": true, "s": 55.951, "e": 56.519 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 54.391,
+      "end": 56.716
+    },
+    {
+      "id": "s14",
+      "speaker": "daniel",
+      "text": "My business partner certainly was. She thought we'd get eighty percent of the work done.",
+      "tokens": [
+        { "t": "My", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 57.154, "e": 57.352 },
+        { "t": "business", "l": "business", "p": "NOUN", "w": true, "sp": true, "s": 57.352, "e": 57.945 },
+        { "t": "partner", "l": "partner", "p": "NOUN", "w": true, "sp": true, "s": 57.945, "e": 58.472 },
+        { "t": "certainly", "l": "certainly", "p": "ADV", "w": true, "sp": true, "s": 58.472, "e": 59.131 },
+        { "t": "was", "l": "be", "p": "AUX", "w": true, "s": 59.13, "e": 59.394 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "She", "l": "she", "p": "PRON", "w": true, "sp": true, "s": 59.624, "e": 59.814 },
+        { "t": "thought", "l": "think", "p": "VERB", "w": true, "sp": true, "s": 59.814, "e": 60.194 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "s": 60.195, "e": 60.314 },
+        { "t": "'d", "l": "would", "p": "AUX", "w": true, "sp": true, "s": 60.314, "e": 60.433 },
+        { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true, "s": 60.432, "e": 60.622 },
+        { "t": "eighty", "l": "eighty", "p": "NUM", "w": false, "sp": true, "s": 60.622, "e": 60.955 },
+        { "t": "percent", "l": "percent", "p": "NOUN", "w": true, "sp": true, "s": 60.955, "e": 61.335 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 61.336, "e": 61.479 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 61.478, "e": 61.668 },
+        { "t": "work", "l": "work", "p": "NOUN", "w": true, "sp": true, "s": 61.669, "e": 61.907 },
+        { "t": "done", "l": "do", "p": "VERB", "w": true, "s": 61.906, "e": 62.144 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 57.116,
+      "end": 62.226
+    },
+    {
+      "id": "s15",
+      "speaker": "hannah",
+      "text": "And did you?",
+      "tokens": [
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 62.654, "e": 62.987 },
+        { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 62.987, "e": 63.32 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 63.321, "e": 63.654 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.626,
+      "end": 63.721
+    },
+    {
+      "id": "s16",
+      "speaker": "daniel",
+      "text": "Surprisingly, no. Output stayed almost exactly the same, and in some months it went up.",
+      "tokens": [
+        { "t": "Surprisingly", "l": "surprisingly", "p": "ADV", "w": true, "s": 64.158, "e": 65.025 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "INTJ", "w": false, "s": 65.025, "e": 65.225 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Output", "l": "output", "p": "NOUN", "w": true, "sp": true, "s": 65.225, "e": 65.692 },
+        { "t": "stayed", "l": "stay", "p": "VERB", "w": true, "sp": true, "s": 65.691, "e": 66.158 },
+        { "t": "almost", "l": "almost", "p": "ADV", "w": true, "sp": true, "s": 66.158, "e": 66.625 },
+        { "t": "exactly", "l": "exactly", "p": "ADV", "w": true, "sp": true, "s": 66.625, "e": 67.158 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 67.158, "e": 67.425 },
+        { "t": "same", "l": "same", "p": "ADJ", "w": true, "s": 67.425, "e": 67.758 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 67.758, "e": 68.025 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 68.025, "e": 68.225 },
+        { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true, "s": 68.225, "e": 68.558 },
+        { "t": "months", "l": "month", "p": "NOUN", "w": true, "sp": true, "s": 68.558, "e": 69.025 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 69.025, "e": 69.225 },
+        { "t": "went", "l": "go", "p": "VERB", "w": true, "sp": true, "s": 69.225, "e": 69.558 },
+        { "t": "up", "l": "up", "p": "ADP", "w": true, "s": 69.558, "e": 69.758 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 64.121,
+      "end": 69.853
+    },
+    {
+      "id": "s17",
+      "speaker": "hannah",
+      "text": "How do you explain that?",
+      "tokens": [
+        { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 70.276, "e": 70.524 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 70.524, "e": 70.71 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 70.711, "e": 70.959 },
+        { "t": "explain", "l": "explain", "p": "VERB", "w": true, "sp": true, "s": 70.959, "e": 71.456 },
+        { "t": "that", "l": "that", "p": "SCONJ", "w": true, "s": 71.456, "e": 71.766 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 70.254,
+      "end": 71.819
+    },
+    {
+      "id": "s18",
+      "speaker": "daniel",
+      "text": "Mostly meetings. We used to have about twelve hours of meetings a week per person.",
+      "tokens": [
+        { "t": "Mostly", "l": "mostly", "p": "ADV", "w": true, "sp": true, "s": 72.255, "e": 72.736 },
+        { "t": "meetings", "l": "meeting", "p": "NOUN", "w": true, "s": 72.736, "e": 73.355 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 73.505, "e": 73.671 },
+        { "t": "used", "l": "use", "p": "VERB", "w": true, "sp": true, "s": 73.671, "e": 73.947 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 73.947, "e": 74.113 },
+        { "t": "have", "l": "have", "p": "VERB", "w": true, "sp": true, "s": 74.113, "e": 74.389 },
+        { "t": "about", "l": "about", "p": "ADV", "w": true, "sp": true, "s": 74.389, "e": 74.72 },
+        { "t": "twelve", "l": "twelve", "p": "NUM", "w": false, "sp": true, "s": 74.72, "e": 75.107 },
+        { "t": "hours", "l": "hour", "p": "NOUN", "w": true, "sp": true, "s": 75.107, "e": 75.438 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 75.438, "e": 75.604 },
+        { "t": "meetings", "l": "meeting", "p": "NOUN", "w": true, "sp": true, "s": 75.604, "e": 76.101 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 76.101, "e": 76.211 },
+        { "t": "week", "l": "week", "p": "NOUN", "w": true, "sp": true, "s": 76.211, "e": 76.487 },
+        { "t": "per", "l": "per", "p": "ADP", "w": true, "sp": true, "s": 76.487, "e": 76.708 },
+        { "t": "person", "l": "person", "p": "NOUN", "w": true, "s": 76.708, "e": 77.095 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 72.219,
+      "end": 77.182
+    },
+    {
+      "id": "s19",
+      "speaker": "daniel",
+      "text": "We cut that to four, and suddenly people had time to do their real work.",
+      "tokens": [
+        { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 77.462, "e": 77.642 },
+        { "t": "cut", "l": "cut", "p": "VERB", "w": true, "sp": true, "s": 77.642, "e": 77.882 },
+        { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true, "s": 77.882, "e": 78.182 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 78.182, "e": 78.362 },
+        { "t": "four", "l": "four", "p": "NUM", "w": false, "s": 78.362, "e": 78.662 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 78.842, "e": 79.077 },
+        { "t": "suddenly", "l": "suddenly", "p": "ADV", "w": true, "sp": true, "s": 79.077, "e": 79.606 },
+        { "t": "people", "l": "people", "p": "VERB", "w": true, "sp": true, "s": 79.607, "e": 80.019 },
+        { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 80.018, "e": 80.253 },
+        { "t": "time", "l": "time", "p": "NOUN", "w": true, "sp": true, "s": 80.254, "e": 80.548 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 80.548, "e": 80.724 },
+        { "t": "do", "l": "do", "p": "VERB", "w": true, "sp": true, "s": 80.724, "e": 80.9 },
+        { "t": "their", "l": "their", "p": "PRON", "w": true, "sp": true, "s": 80.901, "e": 81.254 },
+        { "t": "real", "l": "real", "p": "ADJ", "w": true, "sp": true, "s": 81.254, "e": 81.548 },
+        { "t": "work", "l": "work", "p": "NOUN", "w": true, "s": 81.548, "e": 81.842 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 77.432,
+      "end": 81.932
+    },
+    {
+      "id": "s20",
+      "speaker": "hannah",
+      "text": "Were there any downsides?",
+      "tokens": [
+        { "t": "Were", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 82.365, "e": 82.673 },
+        { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true, "s": 82.673, "e": 83.043 },
+        { "t": "any", "l": "any", "p": "DET", "w": true, "sp": true, "s": 83.043, "e": 83.289 },
+        { "t": "downsides", "l": "downside", "p": "NOUN", "w": true, "s": 83.289, "e": 83.905 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 82.332,
+      "end": 83.964
+    },
+    {
+      "id": "s21",
+      "speaker": "daniel",
+      "text": "Sure. The four days are intense, and not everybody likes that.",
+      "tokens": [
+        { "t": "Sure", "l": "sure", "p": "ADJ", "w": true, "s": 84.397, "e": 84.698 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true, "s": 84.698, "e": 84.939 },
+        { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true, "s": 84.938, "e": 85.239 },
+        { "t": "days", "l": "day", "p": "NOUN", "w": true, "sp": true, "s": 85.239, "e": 85.54 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 85.54, "e": 85.781 },
+        { "t": "intense", "l": "intense", "p": "ADJ", "w": true, "s": 85.781, "e": 86.262 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 86.262, "e": 86.503 },
+        { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true, "s": 86.503, "e": 86.744 },
+        { "t": "everybody", "l": "everybody", "p": "PRON", "w": true, "sp": true, "s": 86.743, "e": 87.345 },
+        { "t": "likes", "l": "like", "p": "VERB", "w": true, "sp": true, "s": 87.345, "e": 87.706 },
+        { "t": "that", "l": "that", "p": "SCONJ", "w": true, "s": 87.706, "e": 88.007 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 84.364,
+      "end": 88.045
+    },
+    {
+      "id": "s22",
+      "speaker": "daniel",
+      "text": "One colleague told me she missed the slower afternoons, when you could chat and have ideas.",
+      "tokens": [
+        { "t": "One", "l": "one", "p": "NUM", "w": false, "sp": true, "s": 88.33, "e": 88.57 },
+        { "t": "colleague", "l": "colleague", "p": "NOUN", "w": true, "sp": true, "s": 88.57, "e": 89.169 },
+        { "t": "told", "l": "tell", "p": "VERB", "w": true, "sp": true, "s": 89.168, "e": 89.467 },
+        { "t": "me", "l": "me", "p": "PRON", "w": true, "sp": true, "s": 89.468, "e": 89.648 },
+        { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true, "s": 89.648, "e": 89.888 },
+        { "t": "missed", "l": "miss", "p": "VERB", "w": true, "sp": true, "s": 89.887, "e": 90.306 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 90.306, "e": 90.546 },
+        { "t": "slower", "l": "slow", "p": "ADJ", "w": true, "sp": true, "s": 90.546, "e": 90.965 },
+        { "t": "afternoons", "l": "afternoon", "p": "NOUN", "w": true, "s": 90.965, "e": 91.624 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true, "s": 91.624, "e": 91.923 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 91.923, "e": 92.163 },
+        { "t": "could", "l": "could", "p": "AUX", "w": true, "sp": true, "s": 92.163, "e": 92.522 },
+        { "t": "chat", "l": "chat", "p": "VERB", "w": true, "sp": true, "s": 92.522, "e": 92.821 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 92.822, "e": 93.062 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 93.061, "e": 93.36 },
+        { "t": "ideas", "l": "idea", "p": "NOUN", "w": true, "s": 93.361, "e": 93.72 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 88.295,
+      "end": 93.757
+    },
+    {
+      "id": "s23",
+      "speaker": "hannah",
+      "text": "That's something you rarely hear in discussions about this.",
+      "tokens": [
+        { "t": "That", "l": "that", "p": "PRON", "w": true, "s": 94.187, "e": 94.413 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 94.413, "e": 94.526 },
+        { "t": "something", "l": "something", "p": "PRON", "w": true, "sp": true, "s": 94.526, "e": 95.011 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 95.011, "e": 95.205 },
+        { "t": "rarely", "l": "rarely", "p": "ADV", "w": true, "sp": true, "s": 95.205, "e": 95.544 },
+        { "t": "hear", "l": "hear", "p": "VERB", "w": true, "sp": true, "s": 95.544, "e": 95.786 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 95.787, "e": 95.932 },
+        {
+          "t": "discussions",
+          "l": "discussion",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 95.932,
+          "e": 96.514
+        },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true, "s": 96.514, "e": 96.805 },
+        { "t": "this", "l": "this", "p": "PRON", "w": true, "s": 96.805, "e": 97.047 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 94.157,
+      "end": 97.092
+    },
+    {
+      "id": "s24",
+      "speaker": "daniel",
+      "text": "Exactly. It's a real cost, and we haven't solved it yet.",
+      "tokens": [
+        { "t": "Exactly", "l": "exactly", "p": "ADV", "w": true, "s": 97.522, "e": 98.023 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 98.023, "e": 98.179 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 98.179, "e": 98.336 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 98.336, "e": 98.461 },
+        { "t": "real", "l": "real", "p": "ADJ", "w": true, "sp": true, "s": 98.461, "e": 98.774 },
+        { "t": "cost", "l": "cost", "p": "NOUN", "w": true, "s": 98.774, "e": 99.087 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 99.087, "e": 99.337 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 99.337, "e": 99.525 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "s": 99.525, "e": 99.811 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 99.811, "e": 100.026 },
+        { "t": "solved", "l": "solve", "p": "VERB", "w": true, "sp": true, "s": 100.026, "e": 100.464 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 100.464, "e": 100.652 },
+        { "t": "yet", "l": "yet", "p": "ADV", "w": true, "s": 100.652, "e": 100.902 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 97.492,
+      "end": 100.963
+    },
+    {
+      "id": "s25",
+      "speaker": "hannah",
+      "text": "Interesting. Would you ever go back to five days?",
+      "tokens": [
+        { "t": "Interesting", "l": "interesting", "p": "ADJ", "w": true, "s": 101.388, "e": 102.138 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Would", "l": "would", "p": "AUX", "w": true, "sp": true, "s": 102.288, "e": 102.62 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 102.62, "e": 102.841 },
+        { "t": "ever", "l": "ever", "p": "ADV", "w": true, "sp": true, "s": 102.841, "e": 103.117 },
+        { "t": "go", "l": "go", "p": "VERB", "w": true, "sp": true, "s": 103.117, "e": 103.283 },
+        { "t": "back", "l": "back", "p": "ADV", "w": true, "sp": true, "s": 103.283, "e": 103.559 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 103.559, "e": 103.725 },
+        { "t": "five", "l": "five", "p": "NUM", "w": false, "sp": true, "s": 103.725, "e": 104.001 },
+        { "t": "days", "l": "day", "p": "NOUN", "w": true, "s": 104.002, "e": 104.278 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 101.362,
+      "end": 104.314
+    },
+    {
+      "id": "s26",
+      "speaker": "daniel",
+      "text": "I doubt it. Nobody has resigned since we changed, and applications have tripled.",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 104.743, "e": 104.871 },
+        { "t": "doubt", "l": "doubt", "p": "VERB", "w": true, "sp": true, "s": 104.871, "e": 105.255 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 105.255, "e": 105.447 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Nobody", "l": "nobody", "p": "PRON", "w": true, "sp": true, "s": 105.447, "e": 105.895 },
+        { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 105.895, "e": 106.151 },
+        { "t": "resigned", "l": "resign", "p": "VERB", "w": true, "sp": true, "s": 106.15, "e": 106.726 },
+        { "t": "since", "l": "since", "p": "SCONJ", "w": true, "sp": true, "s": 106.726, "e": 107.11 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 107.11, "e": 107.302 },
+        { "t": "changed", "l": "change", "p": "VERB", "w": true, "s": 107.302, "e": 107.814 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 107.814, "e": 108.07 },
+        {
+          "t": "applications",
+          "l": "application",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 108.07,
+          "e": 108.902
+        },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 108.901, "e": 109.221 },
+        { "t": "tripled", "l": "triple", "p": "VERB", "w": true, "s": 109.221, "e": 109.733 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 104.714,
+      "end": 109.798
+    },
+    {
+      "id": "s27",
+      "speaker": "daniel",
+      "text": "But I wouldn't tell every company to copy us. It depends on what you do.",
+      "tokens": [
+        { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 110.102, "e": 110.341 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 110.341, "e": 110.461 },
+        { "t": "would", "l": "would", "p": "AUX", "w": true, "s": 110.461, "e": 110.797 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 110.797, "e": 110.999 },
+        { "t": "tell", "l": "tell", "p": "VERB", "w": true, "sp": true, "s": 110.999, "e": 111.298 },
+        { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true, "s": 111.298, "e": 111.657 },
+        { "t": "company", "l": "company", "p": "NOUN", "w": true, "sp": true, "s": 111.656, "e": 112.134 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 112.134, "e": 112.313 },
+        { "t": "copy", "l": "copy", "p": "VERB", "w": true, "sp": true, "s": 112.314, "e": 112.613 },
+        { "t": "us", "l": "us", "p": "PRON", "w": true, "s": 112.613, "e": 112.792 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 113.042, "e": 113.229 },
+        { "t": "depends", "l": "depend", "p": "VERB", "w": true, "sp": true, "s": 113.229, "e": 113.727 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 113.727, "e": 113.914 },
+        { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true, "s": 113.914, "e": 114.226 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 114.226, "e": 114.475 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "s": 114.475, "e": 114.662 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 110.048,
+      "end": 114.761
+    },
+    {
+      "id": "s28",
+      "speaker": "hannah",
+      "text": "Daniel Reyes, thank you very much for joining us.",
+      "tokens": [
+        { "t": "Daniel", "l": "daniel", "p": "PROPN", "w": false, "sp": true, "s": 115.196, "e": 115.59 },
+        { "t": "Reyes", "l": "reyes", "p": "PROPN", "w": false, "s": 115.59, "e": 115.928 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "thank", "l": "thank", "p": "VERB", "w": true, "sp": true, "s": 115.927, "e": 116.265 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 116.265, "e": 116.49 },
+        { "t": "very", "l": "very", "p": "ADV", "w": true, "sp": true, "s": 116.49, "e": 116.771 },
+        { "t": "much", "l": "much", "p": "ADJ", "w": true, "sp": true, "s": 116.771, "e": 117.052 },
+        { "t": "for", "l": "for", "p": "SCONJ", "w": true, "sp": true, "s": 117.052, "e": 117.277 },
+        { "t": "joining", "l": "join", "p": "VERB", "w": true, "sp": true, "s": 117.277, "e": 117.727 },
+        { "t": "us", "l": "us", "p": "PRON", "w": true, "s": 117.727, "e": 117.896 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 115.161,
+      "end": 117.931
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s7",
+      "phrase": "Not at all",
+      "type": "flap",
+      "ipa": "/ˌnɑːɾəˈɾɔːl/",
+      "explanation_es": "En inglés americano las dos *t* entre vocales suenan como una *r* suave, y las tres palabras se enlazan: «nárarol»."
+    },
+    {
+      "ref": "s12",
+      "phrase": "would have trusted",
+      "type": "weak_form",
+      "ipa": "/ˈwʊdəv ˈtrʌstɪd/",
+      "explanation_es": "*have* se reduce a /əv/ y se pega a *would*: suena «wúdav». Es fácil oír *would of*."
+    },
+    {
+      "ref": "s14",
+      "phrase": "we'd get",
+      "type": "contraction",
+      "ipa": "/wiːd ˈɡet/",
+      "explanation_es": "*we'd* = *we would*. La *d* casi desaparece delante de la *g*."
+    },
+    {
+      "ref": "s19",
+      "phrase": "had time to do",
+      "type": "weak_form",
+      "ipa": "/həd ˈtaɪm tə ˈduː/",
+      "explanation_es": "*had* y *to* son débiles (/həd/, /tə/): el acento cae en *time* y *do*."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "run",
+      "surface": "runs",
+      "pos": "verb",
+      "def_en": "to be in charge of a business",
+      "def_es": "dirigir (una empresa)",
+      "ref": "s2"
+    },
+    {
+      "lemma": "exhausted",
+      "surface": "exhausted",
+      "pos": "adjective",
+      "def_en": "extremely tired",
+      "def_es": "agotado",
+      "ref": "s5"
+    },
+    {
+      "lemma": "walk out the door",
+      "surface": "walking out the door",
+      "pos": "phrase",
+      "def_en": "to leave a job",
+      "def_es": "marcharse (de la empresa)",
+      "ref": "s7"
+    },
+    {
+      "lemma": "sceptical",
+      "surface": "sceptical",
+      "pos": "adjective",
+      "def_en": "doubting that something is true or will work",
+      "def_es": "escéptico",
+      "ref": "s13",
+      "note_es": "Ortografía británica; en EE. UU.: skeptical."
+    },
+    {
+      "lemma": "output",
+      "surface": "Output",
+      "pos": "noun",
+      "def_en": "the amount of work that a person or a company produces",
+      "def_es": "producción, rendimiento",
+      "ref": "s16"
+    },
+    {
+      "lemma": "downside",
+      "surface": "downsides",
+      "pos": "noun",
+      "def_en": "a disadvantage",
+      "def_es": "inconveniente, pega",
+      "ref": "s20"
+    },
+    {
+      "lemma": "intense",
+      "surface": "intense",
+      "pos": "adjective",
+      "def_en": "needing a lot of effort in a short time",
+      "def_es": "intenso",
+      "ref": "s21"
+    },
+    {
+      "lemma": "resign",
+      "surface": "resigned",
+      "pos": "verb",
+      "def_en": "to say officially that you are leaving your job",
+      "def_es": "dimitir, dejar el trabajo",
+      "ref": "s26"
+    },
+    {
+      "lemma": "triple",
+      "surface": "tripled",
+      "pos": "verb",
+      "def_en": "to become three times as big",
+      "def_es": "triplicarse",
+      "ref": "s26"
+    },
+    {
+      "lemma": "productivity",
+      "surface": "productivity",
+      "pos": "noun",
+      "def_en": "how much work is done in a certain amount of time",
+      "def_es": "productividad",
+      "ref": "s6"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "What is the interview mainly about?",
+      "options": [
+        { "id": "a", "text": "Why software developers now earn less than they used to" },
+        { "id": "b", "text": "How to run meetings online more efficiently" },
+        { "id": "c", "text": "A firm's experience of working fewer days" },
+        { "id": "d", "text": "The best way to find new clients" }
+      ],
+      "answer": "c",
+      "evidence": ["s1", "s3"],
+      "rationale_es": "Hannah lo anuncia al empezar: hablan de la semana de cuatro días y de lo que le pasó a la empresa de Daniel al adoptarla."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "attitude_opinion",
+      "prompt": "How does Daniel feel about the change overall?",
+      "options": [
+        { "id": "a", "text": "Positive, but aware of its limits" },
+        { "id": "b", "text": "Disappointed that the team produced less" },
+        { "id": "c", "text": "Angry with his business partner" },
+        { "id": "d", "text": "Sure that every company should follow his example" }
+      ],
+      "answer": "a",
+      "evidence": ["s16", "s24", "s27"],
+      "rationale_es": "Está contento con los resultados, pero reconoce un coste real que no han resuelto y dice que no se lo recomendaría a todas las empresas."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Why did Daniel first consider a four-day week?",
+      "options": [
+        { "id": "a", "text": "To attract more clients to the company" },
+        { "id": "b", "text": "To keep his staff from leaving" },
+        { "id": "c", "text": "To save money on salaries" },
+        { "id": "d", "text": "To copy what a competitor was doing" }
+      ],
+      "answer": "b",
+      "evidence": ["s4", "s7"],
+      "rationale_es": "Estaban perdiendo gente (*we were losing people*) y él solo quería que dejaran de marcharse."
+    },
+    {
+      "id": "q4",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "The developers who left went to work for competitors.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["s5"],
+      "rationale_es": "*They weren't going to competitors*: no se iban a la competencia, sino que estaban agotados."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "How is the week organised now?",
+      "options": [
+        { "id": "a", "text": "Everyone in the company has the same day off" },
+        { "id": "b", "text": "The office is closed to clients one day a week" },
+        { "id": "c", "text": "People choose a different day each week" },
+        { "id": "d", "text": "The staff are split between two different days off" }
+      ],
+      "answer": "d",
+      "evidence": ["s9", "s10"],
+      "rationale_es": "La mitad libra el lunes y la otra mitad el viernes, porque los clientes seguían necesitando asistencia los viernes."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What happened to salaries?",
+      "options": [
+        { "id": "a", "text": "They were reduced by twenty percent" },
+        { "id": "b", "text": "They did not change" },
+        { "id": "c", "text": "They went up a little" },
+        { "id": "d", "text": "They now depend on results" }
+      ],
+      "answer": "b",
+      "evidence": ["s12"],
+      "rationale_es": "*Same pay, fewer hours*: el mismo sueldo por menos horas."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "Why did Daniel decide not to cut pay?",
+      "options": [
+        { "id": "a", "text": "He feared staff would not believe in the trial" },
+        { "id": "b", "text": "The law in his state did not allow him to do it" },
+        { "id": "c", "text": "His partner refused" },
+        { "id": "d", "text": "Clients would have complained" }
+      ],
+      "answer": "a",
+      "evidence": ["s12"],
+      "rationale_es": "*If we'd cut pay, nobody would have trusted the experiment*: sin el sueldo íntegro, nadie se habría fiado de la prueba."
+    },
+    {
+      "id": "q8",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentences with one number in each gap.",
+      "text": "Before the change, each person spent about {{1}} hours a week in meetings. Now it is {{2}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["twelve", "12"],
+          "max_words": 1
+        },
+        {
+          "n": 2,
+          "accept": ["four", "4"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["s18", "s19"],
+      "rationale_es": "*about twelve hours of meetings a week* y *We cut that to four*."
+    },
+    {
+      "id": "q9",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Daniel's business partner expected the amount of work to fall.",
+      "answer": "T",
+      "allow_ng": true,
+      "evidence": ["s14"],
+      "rationale_es": "Ella pensaba que solo sacarían el ochenta por ciento del trabajo, es decir, que bajaría."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Which disadvantage does Daniel mention?",
+      "options": [
+        { "id": "a", "text": "Clients are less satisfied than before" },
+        { "id": "b", "text": "It is harder to find new staff" },
+        { "id": "c", "text": "The working days feel more intense" },
+        { "id": "d", "text": "Meetings have become much longer" }
+      ],
+      "answer": "c",
+      "evidence": ["s21"],
+      "rationale_es": "*The four days are intense, and not everybody likes that*. Lo de encontrar personal es al revés: las solicitudes se han triplicado."
+    },
+    {
+      "id": "q11",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Daniel is planning to open a second office.",
+      "answer": "NG",
+      "allow_ng": true,
+      "evidence": ["s26"],
+      "rationale_es": "Habla de que nadie ha dimitido y de que hay más solicitudes, pero no menciona ninguna oficina nueva."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "What does Daniel suggest at the end of the interview?",
+      "options": [
+        { "id": "a", "text": "He is thinking of returning to a five-day week" },
+        { "id": "b", "text": "Small firms cannot afford this kind of change" },
+        { "id": "c", "text": "All companies should adopt the model soon" },
+        { "id": "d", "text": "The model may not suit every business" }
+      ],
+      "answer": "d",
+      "evidence": ["s27"],
+      "rationale_es": "*I wouldn't tell every company to copy us. It depends on what you do*: no vale para todas."
+    },
+    {
+      "id": "q13",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s7",
+      "reference": "Not at all. I was just trying to stop people from walking out the door.",
+      "accept_variants": [],
+      "evidence": ["s7"],
+      "rationale_es": "*Not at all* suena como una sola palabra, con las *t* suavizadas."
+    },
+    {
+      "id": "q14",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s12",
+      "reference": "No. Same pay, fewer hours. If we'd cut pay, nobody would have trusted the experiment.",
+      "accept_variants": ["No. Same pay, fewer hours. If we had cut pay, nobody would have trusted the experiment."],
+      "evidence": ["s12"],
+      "rationale_es": "Tercera condicional con dos reducciones: *we'd* (= we had) y *would have* → /ˈwʊdəv/."
+    },
+    {
+      "id": "q15",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s19",
+      "reference": "We cut that to four, and suddenly people had time to do their real work.",
+      "accept_variants": [],
+      "evidence": ["s19"],
+      "rationale_es": "*to*, *and* y *had* son débiles; el ritmo lo marcan *cut*, *four*, *time*, *real work*."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "about", "actually", "afternoon", "all", "almost", "and", "any", "application", "at", "back", "be",
+    "business", "but", "certainly", "change", "chat", "client", "colleague", "company", "competitor", "copy",
+    "cost", "could", "cut", "day", "depend", "develop", "discussion", "do", "door", "doubt", "downside",
+    "ever", "every", "everybody", "exactly", "exhaust", "experiment", "explain", "few", "first", "for", "from",
+    "get", "go", "good", "guest", "half", "have", "hear", "honestly", "hour", "how", "i", "idea", "if",
+    "imagine", "in", "intense", "interesting", "it", "join", "just", "last", "leave", "like", "lose", "make",
+    "me", "meeting", "miss", "money", "month", "more", "mostly", "move", "much", "my", "need", "nobody", "not",
+    "of", "off", "on", "organize", "original", "other", "our", "out", "output", "partner", "pay", "people",
+    "per", "percent", "person", "plan", "productivity", "rarely", "real", "really", "resign", "run", "salary",
+    "same", "she", "simply", "since", "skeptical", "slow", "small", "so", "software", "solve", "some",
+    "something", "stay", "still", "stop", "suddenly", "support", "sure", "surprisingly", "take", "talk",
+    "team", "tell", "thank", "that", "the", "their", "there", "they", "think", "this", "time", "to", "today",
+    "triple", "trust", "try", "up", "us", "use", "very", "walk", "we", "week", "welcome", "what", "when",
+    "who", "whole", "within", "work", "would", "year", "yet", "you", "your"
+  ],
+  "difficulty": 1295,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8562, "A2": 0.9379, "B1": 0.9673, "B2": 0.9869, "C1": 0.9869, "C2": 1 },
+    "off_level_lemmas": ["downside", "productivity", "skeptical", "triple"],
+    "avg_sentence_words": 7.3,
+    "flesch_reading_ease": 81,
+    "checked_at": "2026-10-08T23:03:18.756Z"
+  },
+  "audio": {
+    "src": "audio/b2/b2-lis-001/v1.m4a",
+    "duration_s": 117.931,
+    "wpm": 163,
+    "provider": "kokoro",
+    "voices": { "hannah": "bf_isabella", "daniel": "am_fenrir" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      0.86, 0.87, 0.47, 0.61, 0.54, 0.91, 0.59, 0.63, 0.36, 0.67, 0.82, 0.54, 0.38, 0.25, 0.97, 0.57, 0.51,
+      0.48, 0.44, 0.75, 0.63, 0.61, 0.43, 0.6, 0.67, 0.13, 0.91, 0.6, 0.4, 0.7, 0.39, 0.56, 0.35, 0.71, 1,
+      0.83, 0.73, 0.66, 0.44, 0.5, 0.68, 0.7, 0.44, 0.94, 0.59, 0.69, 0.65, 0.47, 0.97, 0.22, 0.8, 0.68, 0.69,
+      0.46, 0.54, 0.47, 0.34, 0.67, 0.64, 0.65, 0.86, 0.69, 0.45, 0.8, 0.39, 0.17, 0.59, 1, 0.7, 0.64, 0.25,
+      0.82, 0.62, 0.39, 0.5, 0.72, 0.72, 0.56, 0.56, 0.83, 1, 0.55, 0.46, 0.58, 0.83, 0.15, 0.77, 0.61, 0.65,
+      0.68, 0.46, 0.86, 0.4, 0.72, 0.16, 0.93, 0.77, 0.33, 0.22, 0.73, 0.49, 0.44, 0.9, 0.23, 0.9, 0.5, 0.75,
+      0.92, 0.51, 0.47, 0.57, 0.67, 0.56, 0.58, 0.55, 0.04, 0.72, 0.92, 0.97, 0.57, 0.72, 0.88, 0.84, 0.46,
+      0.72, 0.5, 0.37, 0.87, 0.67, 0.18, 0.67, 0.77, 0.53, 0.96, 0.71, 0.58, 0.67, 0.9, 0.51, 0.68, 0.6, 0.47,
+      0.02, 0.73, 0.67, 0.44, 0.03, 0.7, 0.57, 0.31, 0.81, 1, 0.84, 0.55, 0.47, 0.46, 0.5, 0.33, 0.98, 0.63,
+      0.6, 0.76, 0.59, 0.63, 0.55, 0.42, 0.35, 0.84, 0.65, 0.54, 0.33, 0.29, 0.5, 0.67, 0.74, 0.52, 0.76, 0.74,
+      0.49, 0.61, 0.84, 0.47, 0.44, 0.47, 0.7, 0.95, 0.42, 0.55, 0.93, 0.81, 0.3, 1, 0.77, 0.57, 0.57, 0.42,
+      0.52, 0.3, 0.65, 0.91, 0.66, 0.86, 0.49, 0.98, 0.53, 0.2, 1, 0.53, 0.87, 0.76, 0.64, 0.39, 0.52, 0.73,
+      0.56, 0.92, 0.9, 0.52, 0.51, 0.35, 0.89, 0.4, 0.66, 0.14, 0.94, 0.71, 0.71, 0.5, 0.81, 0.25, 0.54, 0.58,
+      0.44, 0.28, 0.68, 0.43, 0.49, 0.76, 0.54, 0.43
+    ]
+  }
+}

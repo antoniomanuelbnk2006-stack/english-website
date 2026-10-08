@@ -1,0 +1,484 @@
+{
+  "id": "a1-lis-001",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "a1-u04",
+  "series": "a1-u04-cafe",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "A coffee and a sandwich",
+  "summary_es": "Lucy pide un café y un sándwich en una cafetería y paga la cuenta.",
+  "topic": "food",
+  "tags": ["cafetería", "precios", "pedir comida"],
+  "can_do": ["L-A1-01", "L-A1-04", "L-A1-05"],
+  "grammar_focus": [],
+  "vocab_focus": ["can I have", "how much", "large", "sandwich"],
+  "est_minutes": 6,
+  "prediction_prompt": "A woman is in a café. What can she say to ask for food?",
+  "pre_teach": ["large"],
+  "speakers": [
+    { "id": "sam", "name": "Sam", "accent": "en-US", "gender": "male" },
+    { "id": "lucy", "name": "Lucy", "accent": "en-GB", "gender": "female" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "sam",
+      "text": "Good morning! What would you like?",
+      "tokens": [
+        { "t": "Good", "l": "good", "p": "ADJ", "w": true, "sp": true, "s": 0.03, "e": 0.294 },
+        { "t": "morning", "l": "morning", "p": "NOUN", "w": true, "s": 0.294, "e": 0.716 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "What", "l": "what", "p": "PRON", "w": true, "sp": true, "s": 0.715, "e": 0.979 },
+        { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true, "s": 0.979, "e": 1.295 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 1.295, "e": 1.506 },
+        { "t": "like", "l": "like", "p": "VERB", "w": true, "s": 1.506, "e": 1.77 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.885,
+      "pause_after_ms": 1100
+    },
+    {
+      "id": "s2",
+      "speaker": "lucy",
+      "text": "Hello. Can I have a coffee, please?",
+      "tokens": [
+        { "t": "Hello", "l": "hello", "p": "INTJ", "w": false, "s": 3.012, "e": 3.505 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 3.505, "e": 3.833 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 3.833, "e": 3.997 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 3.997, "e": 4.408 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 4.408, "e": 4.572 },
+        { "t": "coffee", "l": "coffee", "p": "NOUN", "w": true, "s": 4.572, "e": 5.147 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "please", "l": "please", "p": "INTJ", "w": false, "s": 5.147, "e": 5.722 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 2.985,
+      "end": 5.797,
+      "pause_after_ms": 1100
+    },
+    {
+      "id": "s3",
+      "speaker": "sam",
+      "text": "Of course. Small or large?",
+      "tokens": [
+        { "t": "Of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 6.925, "e": 7.163 },
+        { "t": "course", "l": "course", "p": "NOUN", "w": true, "s": 7.163, "e": 7.717 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Small", "l": "small", "p": "ADJ", "w": true, "sp": true, "s": 7.717, "e": 8.192 },
+        { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true, "s": 8.192, "e": 8.43 },
+        { "t": "large", "l": "large", "p": "ADJ", "w": true, "s": 8.43, "e": 8.905 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.897,
+      "end": 8.972,
+      "pause_after_ms": 1100
+    },
+    {
+      "id": "s4",
+      "speaker": "lucy",
+      "text": "Large, please. With milk.",
+      "tokens": [
+        { "t": "Large", "l": "large", "p": "ADJ", "w": true, "s": 10.1, "e": 10.705 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "please", "l": "please", "p": "INTJ", "w": false, "s": 10.705, "e": 11.411 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "With", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 11.411, "e": 11.915 },
+        { "t": "milk", "l": "milk", "p": "NOUN", "w": true, "s": 11.916, "e": 12.42 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.072,
+      "end": 12.499,
+      "pause_after_ms": 1100
+    },
+    {
+      "id": "s5",
+      "speaker": "sam",
+      "text": "OK. Anything to eat?",
+      "tokens": [
+        { "t": "OK", "l": "ok", "p": "INTJ", "w": false, "s": 13.625, "e": 13.9 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Anything", "l": "anything", "p": "PRON", "w": true, "sp": true, "s": 13.9, "e": 14.724 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 14.724, "e": 14.999 },
+        { "t": "eat", "l": "eat", "p": "VERB", "w": true, "s": 14.999, "e": 15.365 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.599,
+      "end": 15.433,
+      "pause_after_ms": 1100
+    },
+    {
+      "id": "s6",
+      "speaker": "lucy",
+      "text": "Yes. A cheese sandwich, please.",
+      "tokens": [
+        { "t": "Yes", "l": "yes", "p": "INTJ", "w": false, "s": 16.56, "e": 16.931 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true, "s": 16.931, "e": 17.117 },
+        { "t": "cheese", "l": "cheese", "p": "NOUN", "w": true, "sp": true, "s": 17.117, "e": 17.766 },
+        { "t": "sandwich", "l": "sandwich", "p": "NOUN", "w": true, "s": 17.766, "e": 18.601 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "please", "l": "please", "p": "INTJ", "w": false, "s": 18.601, "e": 19.25 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.533,
+      "end": 19.338,
+      "pause_after_ms": 1100
+    },
+    {
+      "id": "s7",
+      "speaker": "sam",
+      "text": "I'm sorry, we don't have cheese today. We have chicken or egg.",
+      "tokens": [
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 20.468, "e": 20.755 },
+        { "t": "sorry", "l": "sorry", "p": "ADJ", "w": true, "s": 20.755, "e": 21.186 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 21.186, "e": 21.402 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "s": 21.402, "e": 21.574 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 21.574, "e": 21.833 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 21.833, "e": 22.192 },
+        { "t": "cheese", "l": "cheese", "p": "VERB", "w": true, "sp": true, "s": 22.192, "e": 22.695 },
+        { "t": "today", "l": "today", "p": "ADV", "w": true, "s": 22.695, "e": 23.126 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 23.126, "e": 23.342 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 23.341, "e": 23.7 },
+        { "t": "chicken", "l": "chicken", "p": "NOUN", "w": true, "sp": true, "s": 23.701, "e": 24.276 },
+        { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true, "s": 24.275, "e": 24.491 },
+        { "t": "egg", "l": "egg", "p": "NOUN", "w": true, "s": 24.491, "e": 24.778 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.438,
+      "end": 24.95,
+      "pause_after_ms": 1100
+    },
+    {
+      "id": "s8",
+      "speaker": "lucy",
+      "text": "Egg, please. How much is it?",
+      "tokens": [
+        { "t": "Egg", "l": "egg", "p": "NOUN", "w": true, "s": 26.072, "e": 26.432 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "please", "l": "please", "p": "INTJ", "w": false, "s": 26.432, "e": 27.062 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 27.062, "e": 27.422 },
+        { "t": "much", "l": "much", "p": "ADJ", "w": true, "sp": true, "s": 27.422, "e": 27.872 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 27.872, "e": 28.142 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 28.142, "e": 28.412 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.05,
+      "end": 28.513,
+      "pause_after_ms": 1100
+    },
+    {
+      "id": "s9",
+      "speaker": "sam",
+      "text": "The coffee is two dollars fifty and the sandwich is four dollars.",
+      "tokens": [
+        { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true, "s": 29.646, "e": 29.952 },
+        { "t": "coffee", "l": "coffee", "p": "NOUN", "w": true, "sp": true, "s": 29.952, "e": 30.488 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 30.489, "e": 30.719 },
+        { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true, "s": 30.719, "e": 31.025 },
+        { "t": "dollars", "l": "dollar", "p": "NOUN", "w": true, "sp": true, "s": 31.025, "e": 31.638 },
+        { "t": "fifty", "l": "fifty", "p": "NUM", "w": false, "sp": true, "s": 31.638, "e": 32.098 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 32.098, "e": 32.404 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 32.404, "e": 32.71 },
+        { "t": "sandwich", "l": "sandwich", "p": "NOUN", "w": true, "sp": true, "s": 32.711, "e": 33.401 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 33.4, "e": 33.63 },
+        { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true, "s": 33.63, "e": 34.013 },
+        { "t": "dollars", "l": "dollar", "p": "NOUN", "w": true, "s": 34.013, "e": 34.626 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 29.613,
+      "end": 34.741,
+      "pause_after_ms": 1100
+    },
+    {
+      "id": "s10",
+      "speaker": "lucy",
+      "text": "So that's six dollars fifty. Here you are.",
+      "tokens": [
+        { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 35.869, "e": 36.096 },
+        { "t": "that", "l": "that", "p": "PRON", "w": true, "s": 36.096, "e": 36.449 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 36.449, "e": 36.626 },
+        { "t": "six", "l": "six", "p": "NUM", "w": false, "sp": true, "s": 36.626, "e": 36.929 },
+        { "t": "dollars", "l": "dollar", "p": "NOUN", "w": true, "sp": true, "s": 36.929, "e": 37.535 },
+        { "t": "fifty", "l": "fifty", "p": "NUM", "w": false, "s": 37.535, "e": 37.989 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Here", "l": "here", "p": "ADV", "w": true, "sp": true, "s": 38.249, "e": 38.645 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 38.645, "e": 38.962 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "s": 38.962, "e": 39.279 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.841,
+      "end": 39.348,
+      "pause_after_ms": 1100
+    },
+    {
+      "id": "s11",
+      "speaker": "sam",
+      "text": "Thank you. Your table is number nine.",
+      "tokens": [
+        { "t": "Thank", "l": "thank", "p": "VERB", "w": true, "sp": true, "s": 40.511, "e": 40.923 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 40.923, "e": 41.197 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 41.197, "e": 41.54 },
+        { "t": "table", "l": "table", "p": "NOUN", "w": true, "sp": true, "s": 41.54, "e": 41.952 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 41.952, "e": 42.158 },
+        { "t": "number", "l": "number", "p": "VERB", "w": true, "sp": true, "s": 42.158, "e": 42.638 },
+        { "t": "nine", "l": "nine", "p": "NUM", "w": false, "s": 42.638, "e": 42.981 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 40.448,
+      "end": 43.113,
+      "pause_after_ms": 1100
+    },
+    {
+      "id": "s12",
+      "speaker": "lucy",
+      "text": "Thanks. Have a nice day!",
+      "tokens": [
+        { "t": "Thanks", "l": "thanks", "p": "NOUN", "w": true, "s": 44.237, "e": 44.885 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 44.885, "e": 45.348 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 45.348, "e": 45.533 },
+        { "t": "nice", "l": "nice", "p": "ADJ", "w": true, "sp": true, "s": 45.534, "e": 45.997 },
+        { "t": "day", "l": "day", "p": "NOUN", "w": true, "s": 45.997, "e": 46.367 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.213,
+      "end": 46.432
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s2",
+      "phrase": "Can I have a",
+      "type": "weak_form",
+      "ipa": "/kənaɪ ˈhævə/",
+      "explanation_es": "*Can* no lleva acento y suena /kən/; *have a* se une y suena como una sola palabra."
+    },
+    {
+      "ref": "s5",
+      "phrase": "Anything to eat",
+      "type": "weak_form",
+      "ipa": "/ˈeniθɪŋ tə ˈiːt/",
+      "explanation_es": "*to* suena muy corto, /tə/, casi «te»."
+    },
+    {
+      "ref": "s8",
+      "phrase": "much is it",
+      "type": "linking",
+      "ipa": "/ˈmʌtʃɪzɪt/",
+      "explanation_es": "Las tres palabras se enlazan: la consonante final se une a la vocal siguiente y suenan como una sola."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "what would you like",
+      "surface": "What would you like",
+      "pos": "phrase",
+      "def_en": "a polite way to ask: what do you want?",
+      "def_es": "¿qué desea?, ¿qué va a tomar?",
+      "ref": "s1"
+    },
+    {
+      "lemma": "can i have",
+      "surface": "Can I have",
+      "pos": "phrase",
+      "def_en": "you say this to ask for food or a drink",
+      "def_es": "¿me pone…?, ¿me da…?",
+      "ref": "s2"
+    },
+    {
+      "lemma": "large",
+      "surface": "large",
+      "pos": "adjective",
+      "def_en": "big",
+      "def_es": "grande",
+      "ref": "s3"
+    },
+    {
+      "lemma": "how much",
+      "surface": "How much",
+      "pos": "phrase",
+      "def_en": "you say this to ask the price",
+      "def_es": "¿cuánto cuesta?",
+      "ref": "s8"
+    },
+    {
+      "lemma": "here you are",
+      "surface": "Here you are",
+      "pos": "phrase",
+      "def_en": "you say this when you give something to a person",
+      "def_es": "aquí tiene",
+      "ref": "s10"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "Where are the people?",
+      "options": [
+        { "id": "a", "text": "In a café" },
+        { "id": "b", "text": "In a supermarket" },
+        { "id": "c", "text": "At a train station" }
+      ],
+      "answer": "a",
+      "evidence": ["s1", "s2"],
+      "rationale_es": "El hombre pregunta qué quiere tomar y la mujer pide un café: están en una cafetería."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What does the woman drink?",
+      "options": [
+        { "id": "a", "text": "Tea" },
+        { "id": "b", "text": "Coffee with milk" },
+        { "id": "c", "text": "Orange juice" }
+      ],
+      "answer": "b",
+      "evidence": ["s2", "s4"],
+      "rationale_es": "Pide *a coffee* y luego dice *With milk*: café con leche."
+    },
+    {
+      "id": "q3",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "The café has cheese sandwiches today.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["s7"],
+      "rationale_es": "*We don't have cheese today*: hoy no tienen queso. Solo hay de pollo o de huevo."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What sandwich does she buy?",
+      "options": [
+        { "id": "a", "text": "Egg" },
+        { "id": "b", "text": "Chicken" },
+        { "id": "c", "text": "Cheese" }
+      ],
+      "answer": "a",
+      "evidence": ["s8"],
+      "rationale_es": "Primero pide queso, pero no hay; entonces dice *Egg, please*: de huevo."
+    },
+    {
+      "id": "q5",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentences with one number in each gap.",
+      "text": "The coffee is {{1}} dollars fifty. Her table is number {{2}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["two", "2"],
+          "max_words": 1
+        },
+        {
+          "n": 2,
+          "accept": ["nine", "9"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["s9", "s11"],
+      "rationale_es": "*The coffee is two dollars fifty* (2,50 $) y *Your table is number nine* (mesa 9)."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "How much does she pay?",
+      "options": [
+        { "id": "a", "text": "$2.50" },
+        { "id": "b", "text": "$4.00" },
+        { "id": "c", "text": "$6.50" }
+      ],
+      "answer": "c",
+      "evidence": ["s9", "s10"],
+      "rationale_es": "El café cuesta 2,50 y el sándwich 4: en total, *six dollars fifty*. Las otras dos cifras son los precios por separado."
+    },
+    {
+      "id": "q7",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s2",
+      "reference": "Hello. Can I have a coffee, please?",
+      "accept_variants": [],
+      "evidence": ["s2"],
+      "rationale_es": "*Can* es débil (/kən/) y *have a* se enlaza."
+    },
+    {
+      "id": "q8",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s8",
+      "reference": "Egg, please. How much is it?",
+      "accept_variants": [],
+      "evidence": ["s8"],
+      "rationale_es": "*much is it* suena como una sola palabra por el enlace entre consonante y vocal."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "and", "anything", "be", "can", "cheese", "chicken", "coffee", "course", "day", "do", "dollar", "eat",
+    "egg", "good", "have", "here", "how", "i", "it", "large", "like", "milk", "morning", "much", "nice", "not",
+    "number", "of", "or", "sandwich", "small", "so", "sorry", "table", "thank", "thanks", "that", "the", "to",
+    "today", "we", "what", "with", "would", "you", "your"
+  ],
+  "difficulty": 678,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 3.5,
+    "flesch_reading_ease": 100.2,
+    "checked_at": "2026-10-08T22:59:13.649Z"
+  },
+  "audio": {
+    "src": "audio/a1/a1-lis-001/v1.m4a",
+    "duration_s": 46.432,
+    "wpm": 105,
+    "provider": "kokoro",
+    "voices": { "sam": "am_puck", "lucy": "bf_emma" },
+    "loudness_lufs": -16.3,
+    "peaks": [
+      1, 0.99, 0.66, 0.46, 0.74, 0.7, 0.5, 0.61, 0.09, 0.04, 0, 0, 0, 0, 0, 0.36, 0.63, 0.55, 0.52, 0.23, 0.51,
+      0.4, 0.43, 0.41, 0.37, 0.23, 0.29, 0.27, 0.35, 0.18, 0, 0, 0, 0, 0, 0.2, 0.53, 0.85, 0.8, 0.29, 0.63,
+      0.65, 0.4, 0.54, 0.44, 0.1, 0.03, 0, 0, 0, 0, 0, 0.33, 0.58, 0.5, 0.43, 0.37, 0.35, 0.38, 0.31, 0.38,
+      0.43, 0.19, 0.09, 0.02, 0, 0, 0, 0, 0, 0.47, 1, 0.83, 0.66, 0.61, 0.5, 0.34, 0.3, 0.23, 0.22, 0, 0, 0, 0,
+      0, 0.25, 0.63, 0.58, 0.69, 0.37, 0.41, 0.29, 0.51, 0.4, 0.44, 0.23, 0.35, 0.31, 0.22, 0.12, 0, 0, 0, 0,
+      0, 0.17, 0.8, 0.56, 0.84, 0.76, 0.53, 0.58, 0.6, 0.35, 0.36, 0.23, 0.43, 0.45, 0.17, 0.68, 0.64, 0.24,
+      0.51, 0.61, 0.31, 0.47, 0.45, 0.39, 0.04, 0, 0, 0, 0, 0, 0.25, 0.68, 0.53, 0.16, 0.43, 0.27, 0.36, 0.47,
+      0.56, 0.34, 0.42, 0.24, 0.17, 0.01, 0, 0, 0, 0, 0, 0.81, 0.96, 1, 0.57, 0.43, 0.27, 0.54, 0.8, 0.51,
+      0.19, 0.47, 0.25, 0.16, 0.14, 0.5, 0.47, 0.5, 0.5, 0.17, 0.26, 0.37, 0.42, 0.58, 0.45, 0.36, 0.11, 0.02,
+      0, 0, 0, 0, 0, 0.38, 0.62, 0.73, 0.34, 0.46, 0.15, 0.53, 0.43, 0.48, 0.2, 0.24, 0.13, 0.07, 0.52, 0.32,
+      0.38, 0.31, 0.14, 0.02, 0, 0, 0, 0, 0, 0.78, 0.78, 0.47, 0.57, 0.43, 0.45, 0.55, 0.48, 0.32, 0.42, 0.45,
+      0.56, 0.45, 0.04, 0, 0, 0, 0, 0, 0.37, 0.6, 0.56, 0.27, 0.5, 0.52, 0.42, 0.32, 0.45, 0.35, 0.23, 0.13
+    ]
+  }
+}

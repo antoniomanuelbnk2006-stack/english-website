@@ -1,0 +1,579 @@
+{
+  "id": "a2-rea-001",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "a2-u01",
+  "series": "a2-u01-weekend",
+  "skill": "reading",
+  "genre": "email",
+  "title": "A weekend in the mountains",
+  "summary_es": "Marta le cuenta a un amigo por correo una excursión a la montaña que empezó con lluvia.",
+  "topic": "travel",
+  "tags": ["correo", "excursión", "pasado simple"],
+  "can_do": ["R-A2-02", "R-A2-04"],
+  "grammar_focus": ["a2.past-simple"],
+  "vocab_focus": ["lake", "umbrella", "owner", "come out"],
+  "est_minutes": 9,
+  "prediction_prompt": "Think about a short trip that did not start well. What happened?",
+  "pre_teach": ["lake", "umbrella", "owner"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Hi Dan,",
+          "tokens": [
+            { "t": "Hi", "l": "hi", "p": "INTJ", "w": false, "sp": true },
+            { "t": "Dan", "l": "dan", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "How are you?",
+          "tokens": [
+            { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "I want to tell you about my weekend.",
+          "tokens": [
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "want", "l": "want", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "tell", "l": "tell", "p": "VERB", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true },
+            { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true },
+            { "t": "weekend", "l": "weekend", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "It was great, but it did not start well.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "great", "l": "great", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "start", "l": "start", "p": "VERB", "w": true, "sp": true },
+            { "t": "well", "l": "well", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "On Saturday morning Julia and I took the bus to the mountains.",
+          "tokens": [
+            { "t": "On", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "Saturday", "l": "saturday", "p": "PROPN", "w": false, "sp": true },
+            { "t": "morning", "l": "morning", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Julia", "l": "julia", "p": "PROPN", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "took", "l": "take", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "bus", "l": "bus", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "mountains", "l": "mountain", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "The bus was late, so we arrived at eleven.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "bus", "l": "bus", "p": "NOUN", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "late", "l": "late", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "arrived", "l": "arrive", "p": "VERB", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "eleven", "l": "eleven", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "We wanted to walk to the lake before lunch.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "wanted", "l": "want", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "walk", "l": "walk", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "lake", "l": "lake", "p": "NOUN", "w": true, "sp": true },
+            { "t": "before", "l": "before", "p": "ADP", "w": true, "sp": true },
+            { "t": "lunch", "l": "lunch", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "But then it started to rain, and we did not have our coats.",
+          "tokens": [
+            { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "then", "l": "then", "p": "ADV", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "started", "l": "start", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "rain", "l": "rain", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "coats", "l": "coat", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "We ran to a small café near the bus stop.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "ran", "l": "run", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "small", "l": "small", "p": "ADJ", "w": true, "sp": true },
+            { "t": "café", "l": "café", "p": "PROPN", "w": false, "sp": true },
+            { "t": "near", "l": "near", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "bus", "l": "bus", "p": "NOUN", "w": true, "sp": true },
+            { "t": "stop", "l": "stop", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "The owner was very kind.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "owner", "l": "owner", "p": "NOUN", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "very", "l": "very", "p": "ADV", "w": true, "sp": true },
+            { "t": "kind", "l": "kind", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "She gave us hot soup and two old umbrellas.",
+          "tokens": [
+            { "t": "She", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "gave", "l": "give", "p": "VERB", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "hot", "l": "hot", "p": "ADJ", "w": true, "sp": true },
+            { "t": "soup", "l": "soup", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true },
+            { "t": "old", "l": "old", "p": "ADJ", "w": true, "sp": true },
+            { "t": "umbrellas", "l": "umbrella", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "We stayed there for an hour and talked to her about the village.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "stayed", "l": "stay", "p": "VERB", "w": true, "sp": true },
+            { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "hour", "l": "hour", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "talked", "l": "talk", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "village", "l": "village", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "After lunch the sun came out, so we walked to the lake.",
+          "tokens": [
+            { "t": "After", "l": "after", "p": "ADP", "w": true, "sp": true },
+            { "t": "lunch", "l": "lunch", "p": "NOUN", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "sun", "l": "sun", "p": "NOUN", "w": true, "sp": true },
+            { "t": "came", "l": "come", "p": "VERB", "w": true, "sp": true },
+            { "t": "out", "l": "out", "p": "ADP", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "walked", "l": "walk", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "lake", "l": "lake", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "It was beautiful and very quiet.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "beautiful", "l": "beautiful", "p": "ADJ", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "very", "l": "very", "p": "ADV", "w": true, "sp": true },
+            { "t": "quiet", "l": "quiet", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "We saw some horses, and I took about fifty photos.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "saw", "l": "see", "p": "VERB", "w": true, "sp": true },
+            { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "horses", "l": "horse", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "took", "l": "take", "p": "VERB", "w": true, "sp": true },
+            { "t": "about", "l": "about", "p": "ADV", "w": true, "sp": true },
+            { "t": "fifty", "l": "fifty", "p": "NUM", "w": false, "sp": true },
+            { "t": "photos", "l": "photo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "In the evening we went back to the café to return the umbrellas.",
+          "tokens": [
+            { "t": "In", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "evening", "l": "evening", "p": "NOUN", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "went", "l": "go", "p": "VERB", "w": true, "sp": true },
+            { "t": "back", "l": "back", "p": "ADV", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "café", "l": "café", "p": "PROPN", "w": false, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "return", "l": "return", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "umbrellas", "l": "umbrella", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "On Sunday we were very tired, so we stayed at home and watched a film.",
+          "tokens": [
+            { "t": "On", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "Sunday", "l": "sunday", "p": "PROPN", "w": false, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "very", "l": "very", "p": "ADV", "w": true, "sp": true },
+            { "t": "tired", "l": "tired", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "stayed", "l": "stay", "p": "VERB", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "home", "l": "home", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "watched", "l": "watch", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "film", "l": "film", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Next time you must come with us!",
+          "tokens": [
+            { "t": "Next", "l": "next", "p": "ADJ", "w": true, "sp": true },
+            { "t": "time", "l": "time", "p": "NOUN", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "must", "l": "must", "p": "AUX", "w": true, "sp": true },
+            { "t": "come", "l": "come", "p": "VERB", "w": true, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true },
+            { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Write soon,",
+          "tokens": [
+            { "t": "Write", "l": "write", "p": "VERB", "w": true, "sp": true },
+            { "t": "soon", "l": "soon", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Marta",
+          "tokens": [
+            { "t": "Marta", "l": "marta", "p": "PROPN", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "Pasado simple: regulares e irregulares",
+      "explanation_es": "Los regulares añaden *-ed*: *wanted*, *started*, *walked*, *stayed*. Los irregulares cambian: *take → took*, *run → ran*, *give → gave*, *see → saw*, *go → went*. En negativa, *did not* + verbo sin cambiar: *did not start*.",
+      "refs": ["p1s4", "p2s1", "p3s1", "p3s3", "p4s3"]
+    },
+    {
+      "title_es": "So: la consecuencia",
+      "explanation_es": "*So* une una causa con su resultado: *The bus was late, so we arrived at eleven* (el autobús llegó tarde, así que…).",
+      "refs": ["p2s2", "p4s1", "p5s1"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "lake",
+      "surface": "lake",
+      "pos": "noun",
+      "def_en": "a lot of water with land all around it",
+      "def_es": "lago",
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "owner",
+      "surface": "owner",
+      "pos": "noun",
+      "def_en": "the person who has a shop, a café or a house",
+      "def_es": "dueño, dueña",
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "umbrella",
+      "surface": "umbrellas",
+      "pos": "noun",
+      "def_en": "a thing you hold over your head when it rains",
+      "def_es": "paraguas",
+      "ref": "p3s3"
+    },
+    {
+      "lemma": "village",
+      "surface": "village",
+      "pos": "noun",
+      "def_en": "a very small town",
+      "def_es": "pueblo",
+      "ref": "p3s4"
+    },
+    {
+      "lemma": "come out",
+      "surface": "came out",
+      "pos": "phrasal_verb",
+      "def_en": "when the sun comes out, you can see it again",
+      "def_es": "salir (el sol)",
+      "ref": "p4s1"
+    },
+    {
+      "lemma": "return",
+      "surface": "return",
+      "pos": "verb",
+      "def_en": "to give something back",
+      "def_es": "devolver",
+      "ref": "p4s4"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "Why is Marta writing to Dan?",
+      "options": [
+        { "id": "a", "text": "To invite him to her birthday" },
+        { "id": "b", "text": "To describe a short trip" },
+        { "id": "c", "text": "To ask him for help" }
+      ],
+      "answer": "b",
+      "evidence": ["p1s3"],
+      "rationale_es": "Lo dice al principio: quiere contarle su fin de semana, que fue una excursión a la montaña."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "How did they travel to the mountains?",
+      "options": [
+        { "id": "a", "text": "By bus" },
+        { "id": "b", "text": "By train" },
+        { "id": "c", "text": "By car" }
+      ],
+      "answer": "a",
+      "evidence": ["p2s1"],
+      "rationale_es": "*Julia and I took the bus*: fueron en autobús."
+    },
+    {
+      "id": "q3",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "They arrived on time.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["p2s2"],
+      "rationale_es": "*The bus was late*: el autobús llegó con retraso, así que no llegaron a su hora."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Why did they go to the café?",
+      "options": [
+        { "id": "a", "text": "They were hungry" },
+        { "id": "b", "text": "They wanted to buy umbrellas" },
+        { "id": "c", "text": "It was raining" }
+      ],
+      "answer": "c",
+      "evidence": ["p2s4", "p3s1"],
+      "rationale_es": "Empezó a llover y no llevaban abrigos, así que corrieron a la cafetería. Los paraguas se los dio la dueña: no fueron a comprarlos."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What did the owner give them?",
+      "options": [
+        { "id": "a", "text": "Coats and a cup of tea" },
+        { "id": "b", "text": "Soup and umbrellas" },
+        { "id": "c", "text": "A map of the lake" }
+      ],
+      "answer": "b",
+      "evidence": ["p3s3"],
+      "rationale_es": "*She gave us hot soup and two old umbrellas*."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "reference",
+      "prompt": "In paragraph 3, who is \"her\" in \"talked to her\"?",
+      "options": [
+        { "id": "a", "text": "Julia, Marta's friend" },
+        { "id": "b", "text": "Marta" },
+        { "id": "c", "text": "The café owner" }
+      ],
+      "answer": "c",
+      "evidence": ["p3s2", "p3s4"],
+      "rationale_es": "*Her* se refiere a la última mujer de la que se habla: *the owner*, que les dio sopa y paraguas."
+    },
+    {
+      "id": "q7",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "They walked to the lake in the afternoon.",
+      "answer": "T",
+      "allow_ng": false,
+      "evidence": ["p4s1"],
+      "rationale_es": "*After lunch the sun came out, so we walked to the lake*: fueron después de comer, por la tarde."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What did they do on Sunday?",
+      "options": [
+        { "id": "a", "text": "They went back to the lake again" },
+        { "id": "b", "text": "They rested and saw a movie" },
+        { "id": "c", "text": "They visited Dan" }
+      ],
+      "answer": "b",
+      "evidence": ["p5s1"],
+      "rationale_es": "Estaban muy cansadas: se quedaron en casa y vieron una película (*film* y *movie* significan lo mismo)."
+    },
+    {
+      "id": "q9",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one word or a number.",
+      "text": "Marta took about {{1}} photos at the lake.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["fifty", "50"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["p4s3"],
+      "rationale_es": "*I took about fifty photos*: unas cincuenta. Ojo con *fifty* (50) y *fifteen* (15)."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 168,
+  "lemmas": [
+    "a", "about", "after", "an", "and", "arrive", "at", "back", "be", "beautiful", "before", "bus", "but",
+    "coat", "come", "do", "evening", "film", "for", "give", "go", "great", "have", "her", "home", "horse",
+    "hot", "hour", "how", "i", "in", "it", "kind", "lake", "late", "lunch", "morning", "mountain", "must",
+    "my", "near", "next", "not", "old", "on", "our", "out", "owner", "photo", "quiet", "rain", "return", "run",
+    "see", "she", "small", "so", "some", "soon", "soup", "start", "stay", "stop", "sun", "take", "talk",
+    "tell", "the", "then", "there", "time", "tired", "to", "umbrella", "us", "very", "village", "walk", "want",
+    "watch", "we", "weekend", "well", "with", "write", "you"
+  ],
+  "difficulty": 864,
+  "qa": {
+    "coverage_by_level": { "A1": 0.9618, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 8.4,
+    "flesch_reading_ease": 95.6,
+    "checked_at": "2026-10-08T22:59:13.649Z"
+  }
+}

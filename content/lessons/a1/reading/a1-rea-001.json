@@ -1,0 +1,407 @@
+{
+  "id": "a1-rea-001",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "a1-u02",
+  "series": "a1-u02-postcards",
+  "skill": "reading",
+  "genre": "email",
+  "title": "A postcard from Italy",
+  "summary_es": "Emma escribe una postal a una amiga desde sus vacaciones en Italia.",
+  "topic": "travel",
+  "tags": ["postal", "vacaciones", "presente simple"],
+  "can_do": ["R-A1-02"],
+  "grammar_focus": ["a1.present-simple"],
+  "vocab_focus": ["beach", "weather", "near", "a lot of"],
+  "est_minutes": 6,
+  "prediction_prompt": "Emma is on holiday. What do people write in a postcard?",
+  "pre_teach": ["beach", "weather"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Hi Anna!",
+          "tokens": [
+            { "t": "Hi", "l": "hi", "p": "INTJ", "w": false, "sp": true },
+            { "t": "Anna", "l": "anna", "p": "PROPN", "w": false },
+            { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "We are in Italy.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "Italy", "l": "italy", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "The hotel is small but nice.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "hotel", "l": "hotel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "small", "l": "small", "p": "ADJ", "w": true, "sp": true },
+            { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "nice", "l": "nice", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "It is near the beach.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "near", "l": "near", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "beach", "l": "beach", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "The weather is hot and sunny.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "weather", "l": "weather", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "hot", "l": "hot", "p": "ADJ", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "sunny", "l": "sunny", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Every morning we swim in the sea.",
+          "tokens": [
+            { "t": "Every", "l": "every", "p": "DET", "w": true, "sp": true },
+            { "t": "morning", "l": "morning", "p": "NOUN", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "swim", "l": "swim", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "sea", "l": "sea", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Then we have lunch in a café.",
+          "tokens": [
+            { "t": "Then", "l": "then", "p": "ADV", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "lunch", "l": "lunch", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "café", "l": "café", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "The pizza here is very good!",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "pizza", "l": "pizza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "here", "l": "here", "p": "ADV", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "very", "l": "very", "p": "ADV", "w": true, "sp": true },
+            { "t": "good", "l": "good", "p": "ADJ", "w": true },
+            { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "My brother Ben does not like the beach.",
+          "tokens": [
+            { "t": "My", "l": "my", "p": "PRON", "w": true, "sp": true },
+            { "t": "brother", "l": "brother", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Ben", "l": "ben", "p": "PROPN", "w": false, "sp": true },
+            { "t": "does", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "like", "l": "like", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "beach", "l": "beach", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "He likes the old town.",
+          "tokens": [
+            { "t": "He", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "likes", "l": "like", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "old", "l": "old", "p": "ADJ", "w": true, "sp": true },
+            { "t": "town", "l": "town", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "He takes a lot of photos.",
+          "tokens": [
+            { "t": "He", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "takes", "l": "take", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "lot", "l": "lot", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "photos", "l": "photo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Tomorrow we go to Rome by train.",
+          "tokens": [
+            { "t": "Tomorrow", "l": "tomorrow", "p": "ADV", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "go", "l": "go", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "Rome", "l": "rome", "p": "PROPN", "w": false, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "train", "l": "train", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "We come home on Sunday.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "come", "l": "come", "p": "VERB", "w": true, "sp": true },
+            { "t": "home", "l": "home", "p": "ADV", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "Sunday", "l": "sunday", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "See you soon!",
+          "tokens": [
+            { "t": "See", "l": "see", "p": "VERB", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "soon", "l": "soon", "p": "ADV", "w": true },
+            { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Love, Emma",
+          "tokens": [
+            { "t": "Love", "l": "love", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Emma", "l": "emma", "p": "PROPN", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "Presente simple: he likes / he does not like",
+      "explanation_es": "Con *he*, *she* e *it* el verbo lleva *-s*: *He likes*, *He takes*. En negativa se usa *does not* y el verbo va sin *-s*: *does not like*.",
+      "refs": ["p3s1", "p3s2", "p3s3"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "beach",
+      "surface": "beach",
+      "pos": "noun",
+      "def_en": "the place next to the sea",
+      "def_es": "playa",
+      "ref": "p1s4"
+    },
+    {
+      "lemma": "near",
+      "surface": "near",
+      "pos": "other",
+      "def_en": "not far from",
+      "def_es": "cerca de",
+      "ref": "p1s4"
+    },
+    {
+      "lemma": "weather",
+      "surface": "weather",
+      "pos": "noun",
+      "def_en": "sun, rain, hot or cold",
+      "def_es": "tiempo (atmosférico)",
+      "ref": "p2s1"
+    },
+    {
+      "lemma": "sunny",
+      "surface": "sunny",
+      "pos": "adjective",
+      "def_en": "with a lot of sun",
+      "def_es": "soleado",
+      "ref": "p2s1"
+    },
+    {
+      "lemma": "a lot of",
+      "surface": "a lot of",
+      "pos": "phrase",
+      "def_en": "many",
+      "def_es": "muchos, muchas",
+      "ref": "p3s3"
+    },
+    {
+      "lemma": "see you soon",
+      "surface": "See you soon",
+      "pos": "phrase",
+      "def_en": "you say this to a friend at the end",
+      "def_es": "hasta pronto",
+      "ref": "p4s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "What is this text?",
+      "options": [
+        { "id": "a", "text": "A postcard from a holiday" },
+        { "id": "b", "text": "A letter about a new job" },
+        { "id": "c", "text": "A menu from a café" }
+      ],
+      "answer": "a",
+      "evidence": ["p1s2", "p4s3"],
+      "rationale_es": "Emma cuenta dónde está y qué hace cada día, y se despide con *See you soon*: es una postal de vacaciones."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Where is the hotel?",
+      "options": [
+        { "id": "a", "text": "In the old town" },
+        { "id": "b", "text": "Near the beach" },
+        { "id": "c", "text": "Next to the station" }
+      ],
+      "answer": "b",
+      "evidence": ["p1s4"],
+      "rationale_es": "*It is near the beach*: el hotel está cerca de la playa. El casco antiguo (*old town*) es lo que le gusta a Ben."
+    },
+    {
+      "id": "q3",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "The weather is cold.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["p2s1"],
+      "rationale_es": "El tiempo es *hot and sunny*: hace calor y sol."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What do they do every morning?",
+      "options": [
+        { "id": "a", "text": "They go swimming" },
+        { "id": "b", "text": "They take photos" },
+        { "id": "c", "text": "They visit a museum" }
+      ],
+      "answer": "a",
+      "evidence": ["p2s2"],
+      "rationale_es": "*Every morning we swim in the sea*: nadan en el mar. Las fotos las hace Ben, y no dice cuándo."
+    },
+    {
+      "id": "q5",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Ben likes the beach.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["p3s1"],
+      "rationale_es": "*Ben does not like the beach*: a Ben no le gusta la playa. Le gusta el casco antiguo."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "How do they go to Rome?",
+      "options": [
+        { "id": "a", "text": "By bus" },
+        { "id": "b", "text": "By plane" },
+        { "id": "c", "text": "By train" }
+      ],
+      "answer": "c",
+      "evidence": ["p4s1"],
+      "rationale_es": "*We go to Rome by train*: van en tren."
+    },
+    {
+      "id": "q7",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one word.",
+      "text": "They come home on {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["Sunday"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["p4s2"],
+      "rationale_es": "*We come home on Sunday*: vuelven a casa el domingo. Los días de la semana van con *on* y con mayúscula."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 79,
+  "lemmas": [
+    "a", "and", "be", "beach", "brother", "but", "by", "come", "do", "every", "go", "good", "have", "he",
+    "here", "home", "hot", "hotel", "in", "it", "like", "lot", "love", "lunch", "morning", "my", "near",
+    "nice", "not", "of", "old", "on", "photo", "pizza", "sea", "see", "small", "soon", "sunny", "swim", "take",
+    "the", "then", "to", "tomorrow", "town", "train", "very", "we", "weather", "you"
+  ],
+  "difficulty": 663,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 5.3,
+    "flesch_reading_ease": 98.7,
+    "checked_at": "2026-10-08T22:58:35.017Z"
+  }
+}

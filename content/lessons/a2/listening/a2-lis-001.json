@@ -1,0 +1,585 @@
+{
+  "id": "a2-lis-001",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "a2-u02",
+  "series": "a2-u02-plans",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "A film on Friday",
+  "summary_es": "Mia llama a Jack para ir al cine el viernes: acuerdan la hora, dónde quedar y quién compra las entradas.",
+  "topic": "daily-life",
+  "tags": ["planes", "horas", "cine"],
+  "can_do": ["L-A2-02", "L-A2-04", "L-A2-06"],
+  "grammar_focus": ["a2.present-continuous-future"],
+  "vocab_focus": ["half past", "quarter to", "shall we", "let's"],
+  "est_minutes": 8,
+  "prediction_prompt": "Two friends want to go to the cinema. What do they need to decide?",
+  "pre_teach": ["half past", "quarter to"],
+  "speakers": [
+    { "id": "mia", "name": "Mia", "accent": "en-GB", "gender": "female" },
+    { "id": "jack", "name": "Jack", "accent": "en-US", "gender": "male" }
+  ],
+  "target_wpm": 120,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "mia",
+      "text": "Hi Jack, it's Mia. Are you free on Friday evening?",
+      "tokens": [
+        { "t": "Hi", "l": "hi", "p": "INTJ", "w": false, "sp": true, "s": 0.03, "e": 0.312 },
+        { "t": "Jack", "l": "jack", "p": "PROPN", "w": false, "s": 0.312, "e": 0.782 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 0.782, "e": 1.017 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 1.017, "e": 1.252 },
+        { "t": "Mia", "l": "mia", "p": "PROPN", "w": false, "s": 1.251, "e": 1.627 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 1.627, "e": 2.003 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 2.003, "e": 2.379 },
+        { "t": "free", "l": "free", "p": "VERB", "w": true, "sp": true, "s": 2.379, "e": 2.849 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 2.849, "e": 3.131 },
+        { "t": "Friday", "l": "friday", "p": "PROPN", "w": false, "sp": true, "s": 3.131, "e": 3.789 },
+        { "t": "evening", "l": "evening", "p": "NOUN", "w": true, "s": 3.788, "e": 4.54 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 4.633
+    },
+    {
+      "id": "s2",
+      "speaker": "jack",
+      "text": "Hi Mia! Yes, I think so. Why?",
+      "tokens": [
+        { "t": "Hi", "l": "hi", "p": "INTJ", "w": false, "sp": true, "s": 5.374, "e": 5.653 },
+        { "t": "Mia", "l": "mia", "p": "PROPN", "w": false, "s": 5.653, "e": 6.025 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Yes", "l": "yes", "p": "INTJ", "w": false, "s": 6.026, "e": 6.398 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 6.398, "e": 6.584 },
+        { "t": "think", "l": "think", "p": "VERB", "w": true, "sp": true, "s": 6.584, "e": 7.142 },
+        { "t": "so", "l": "so", "p": "ADV", "w": true, "s": 7.142, "e": 7.421 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Why", "l": "why", "p": "ADV", "w": true, "s": 7.422, "e": 7.794 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.332,
+      "end": 7.914
+    },
+    {
+      "id": "s3",
+      "speaker": "mia",
+      "text": "There's a new film at the Odeon. Do you want to come?",
+      "tokens": [
+        { "t": "There", "l": "there", "p": "PRON", "w": true, "s": 8.662, "e": 9.061 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 9.061, "e": 9.22 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 9.22, "e": 9.359 },
+        { "t": "new", "l": "new", "p": "ADJ", "w": true, "sp": true, "s": 9.359, "e": 9.638 },
+        { "t": "film", "l": "film", "p": "NOUN", "w": true, "sp": true, "s": 9.638, "e": 9.986 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 9.986, "e": 10.195 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 10.195, "e": 10.474 },
+        { "t": "Odeon", "l": "odeon", "p": "PROPN", "w": false, "s": 10.474, "e": 10.892 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 11.402, "e": 11.59 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 11.59, "e": 11.84 },
+        { "t": "want", "l": "want", "p": "VERB", "w": true, "sp": true, "s": 11.84, "e": 12.153 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 12.152, "e": 12.34 },
+        { "t": "come", "l": "come", "p": "VERB", "w": true, "s": 12.34, "e": 12.653 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.614,
+      "end": 12.741
+    },
+    {
+      "id": "s4",
+      "speaker": "jack",
+      "text": "Sure! What time does it start?",
+      "tokens": [
+        { "t": "Sure", "l": "sure", "p": "ADJ", "w": true, "s": 13.482, "e": 13.815 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "What", "l": "what", "p": "DET", "w": true, "sp": true, "s": 13.815, "e": 14.148 },
+        { "t": "time", "l": "time", "p": "NOUN", "w": true, "sp": true, "s": 14.148, "e": 14.481 },
+        { "t": "does", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 14.48, "e": 14.813 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 14.813, "e": 15.013 },
+        { "t": "start", "l": "start", "p": "VERB", "w": true, "s": 15.013, "e": 15.412 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.441,
+      "end": 15.5
+    },
+    {
+      "id": "s5",
+      "speaker": "mia",
+      "text": "There are two times: half past six and quarter to nine.",
+      "tokens": [
+        { "t": "There", "l": "there", "p": "PRON", "w": true, "sp": true, "s": 16.235, "e": 16.685 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 16.685, "e": 16.985 },
+        { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true, "s": 16.985, "e": 17.285 },
+        { "t": "times", "l": "time", "p": "NOUN", "w": true, "s": 17.285, "e": 17.735 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "half", "l": "half", "p": "NOUN", "w": true, "sp": true, "s": 18.215, "e": 18.639 },
+        { "t": "past", "l": "past", "p": "ADJ", "w": true, "sp": true, "s": 18.639, "e": 19.063 },
+        { "t": "six", "l": "six", "p": "NUM", "w": false, "sp": true, "s": 19.062, "e": 19.401 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 19.401, "e": 19.74 },
+        { "t": "quarter", "l": "quarter", "p": "NOUN", "w": true, "sp": true, "s": 19.74, "e": 20.418 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 20.417, "e": 20.671 },
+        { "t": "nine", "l": "nine", "p": "NUM", "w": false, "s": 20.671, "e": 21.095 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.2,
+      "end": 21.189
+    },
+    {
+      "id": "s6",
+      "speaker": "jack",
+      "text": "I finish work at six, so half past six is too early for me.",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 21.918, "e": 22.09 },
+        { "t": "finish", "l": "finish", "p": "VERB", "w": true, "sp": true, "s": 22.09, "e": 22.693 },
+        { "t": "work", "l": "work", "p": "NOUN", "w": true, "sp": true, "s": 22.694, "e": 23.125 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 23.125, "e": 23.384 },
+        { "t": "six", "l": "six", "p": "NUM", "w": false, "s": 23.383, "e": 23.728 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 23.898, "e": 24.153 },
+        { "t": "half", "l": "half", "p": "NOUN", "w": true, "sp": true, "s": 24.153, "e": 24.579 },
+        { "t": "past", "l": "past", "p": "ADJ", "w": true, "sp": true, "s": 24.579, "e": 25.005 },
+        { "t": "six", "l": "six", "p": "NUM", "w": false, "sp": true, "s": 25.005, "e": 25.346 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 25.345, "e": 25.6 },
+        { "t": "too", "l": "too", "p": "ADV", "w": true, "sp": true, "s": 25.601, "e": 25.942 },
+        { "t": "early", "l": "early", "p": "ADJ", "w": true, "sp": true, "s": 25.941, "e": 26.452 },
+        { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true, "s": 26.452, "e": 26.793 },
+        { "t": "me", "l": "me", "p": "PRON", "w": true, "s": 26.793, "e": 27.048 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.889,
+      "end": 27.114
+    },
+    {
+      "id": "s7",
+      "speaker": "mia",
+      "text": "No problem. Let's go at quarter to nine, then.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "DET", "w": true, "sp": true, "s": 27.841, "e": 28.089 },
+        { "t": "problem", "l": "problem", "p": "NOUN", "w": true, "s": 28.089, "e": 28.749 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Let", "l": "let", "p": "VERB", "w": true, "s": 28.749, "e": 29.046 },
+        { "t": "'s", "l": "us", "p": "PRON", "w": true, "sp": true, "s": 29.046, "e": 29.244 },
+        { "t": "go", "l": "go", "p": "VERB", "w": true, "sp": true, "s": 29.244, "e": 29.492 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 29.491, "e": 29.739 },
+        { "t": "quarter", "l": "quarter", "p": "NOUN", "w": true, "sp": true, "s": 29.739, "e": 30.399 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 30.399, "e": 30.647 },
+        { "t": "nine", "l": "nine", "p": "NUM", "w": false, "s": 30.646, "e": 31.059 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "then", "l": "then", "p": "ADV", "w": true, "s": 31.059, "e": 31.472 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 27.814,
+      "end": 31.732
+    },
+    {
+      "id": "s8",
+      "speaker": "jack",
+      "text": "Great. Shall we eat something first?",
+      "tokens": [
+        { "t": "Great", "l": "great", "p": "ADJ", "w": true, "s": 32.462, "e": 32.846 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Shall", "l": "shall", "p": "AUX", "w": true, "sp": true, "s": 32.846, "e": 33.23 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 33.23, "e": 33.422 },
+        { "t": "eat", "l": "eat", "p": "VERB", "w": true, "sp": true, "s": 33.422, "e": 33.678 },
+        { "t": "something", "l": "something", "p": "PRON", "w": true, "sp": true, "s": 33.678, "e": 34.318 },
+        { "t": "first", "l": "first", "p": "ADJ", "w": true, "s": 34.318, "e": 34.702 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.432,
+      "end": 34.769
+    },
+    {
+      "id": "s9",
+      "speaker": "mia",
+      "text": "Good idea. There's a pizza place next to the cinema.",
+      "tokens": [
+        { "t": "Good", "l": "good", "p": "ADJ", "w": true, "sp": true, "s": 35.502, "e": 36.017 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "s": 36.017, "e": 36.532 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "There", "l": "there", "p": "PRON", "w": true, "s": 36.812, "e": 37.213 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 37.213, "e": 37.373 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 37.373, "e": 37.514 },
+        { "t": "pizza", "l": "pizza", "p": "NOUN", "w": true, "sp": true, "s": 37.514, "e": 37.934 },
+        { "t": "place", "l": "place", "p": "NOUN", "w": true, "sp": true, "s": 37.935, "e": 38.356 },
+        { "t": "next", "l": "next", "p": "ADJ", "w": true, "sp": true, "s": 38.356, "e": 38.708 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 38.709, "e": 38.919 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 38.919, "e": 39.2 },
+        { "t": "cinema", "l": "cinema", "p": "NOUN", "w": true, "s": 39.2, "e": 39.691 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.469,
+      "end": 39.796
+    },
+    {
+      "id": "s10",
+      "speaker": "jack",
+      "text": "Perfect. Let's meet there at half past seven.",
+      "tokens": [
+        { "t": "Perfect", "l": "perfect", "p": "ADJ", "w": true, "s": 40.535, "e": 41.142 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Let", "l": "let", "p": "VERB", "w": true, "s": 41.142, "e": 41.415 },
+        { "t": "'s", "l": "us", "p": "PRON", "w": true, "sp": true, "s": 41.415, "e": 41.597 },
+        { "t": "meet", "l": "meet", "p": "VERB", "w": true, "sp": true, "s": 41.598, "e": 41.978 },
+        { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true, "s": 41.977, "e": 42.432 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 42.433, "e": 42.661 },
+        { "t": "half", "l": "half", "p": "NOUN", "w": true, "sp": true, "s": 42.66, "e": 43.04 },
+        { "t": "past", "l": "past", "p": "ADJ", "w": true, "sp": true, "s": 43.04, "e": 43.42 },
+        { "t": "seven", "l": "seven", "p": "NUM", "w": false, "s": 43.42, "e": 43.875 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 40.496,
+      "end": 43.913
+    },
+    {
+      "id": "s11",
+      "speaker": "mia",
+      "text": "OK. I'll buy the tickets online tonight.",
+      "tokens": [
+        { "t": "OK", "l": "ok", "p": "INTJ", "w": false, "s": 44.659, "e": 44.925 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "s": 44.925, "e": 45.036 },
+        { "t": "'ll", "l": "will", "p": "AUX", "w": true, "sp": true, "s": 45.036, "e": 45.369 },
+        { "t": "buy", "l": "buy", "p": "VERB", "w": true, "sp": true, "s": 45.369, "e": 45.724 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 45.724, "e": 46.079 },
+        { "t": "tickets", "l": "ticket", "p": "NOUN", "w": true, "sp": true, "s": 46.078, "e": 46.788 },
+        { "t": "online", "l": "online", "p": "ADJ", "w": true, "sp": true, "s": 46.788, "e": 47.409 },
+        { "t": "tonight", "l": "tonight", "p": "NOUN", "w": true, "s": 47.409, "e": 48.119 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.613,
+      "end": 48.292
+    },
+    {
+      "id": "s12",
+      "speaker": "jack",
+      "text": "Thanks! How much are they?",
+      "tokens": [
+        { "t": "Thanks", "l": "thanks", "p": "NOUN", "w": true, "s": 49.111, "e": 49.556 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 49.556, "e": 49.81 },
+        { "t": "much", "l": "much", "p": "ADJ", "w": true, "sp": true, "s": 49.811, "e": 50.129 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 50.129, "e": 50.383 },
+        { "t": "they", "l": "they", "p": "PRON", "w": true, "s": 50.383, "e": 50.701 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 48.992,
+      "end": 50.787
+    },
+    {
+      "id": "s13",
+      "speaker": "mia",
+      "text": "Eight pounds each, but you can pay me on Friday.",
+      "tokens": [
+        { "t": "Eight", "l": "eight", "p": "NUM", "w": false, "sp": true, "s": 51.513, "e": 52 },
+        { "t": "pounds", "l": "pound", "p": "NOUN", "w": true, "sp": true, "s": 52, "e": 52.568 },
+        { "t": "each", "l": "each", "p": "DET", "w": true, "s": 52.567, "e": 52.973 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 53.223, "e": 53.492 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 53.492, "e": 53.761 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 53.761, "e": 54.03 },
+        { "t": "pay", "l": "pay", "p": "VERB", "w": true, "sp": true, "s": 54.03, "e": 54.299 },
+        { "t": "me", "l": "me", "p": "PRON", "w": true, "sp": true, "s": 54.299, "e": 54.501 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 54.501, "e": 54.703 },
+        { "t": "Friday", "l": "friday", "p": "PROPN", "w": false, "s": 54.702, "e": 55.173 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 51.487,
+      "end": 55.419
+    },
+    {
+      "id": "s14",
+      "speaker": "jack",
+      "text": "All right. See you on Friday, then!",
+      "tokens": [
+        { "t": "All", "l": "all", "p": "DET", "w": true, "sp": true, "s": 56.161, "e": 56.459 },
+        { "t": "right", "l": "right", "p": "NOUN", "w": true, "s": 56.459, "e": 56.906 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "See", "l": "see", "p": "VERB", "w": true, "sp": true, "s": 56.906, "e": 57.204 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 57.205, "e": 57.503 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 57.503, "e": 57.727 },
+        { "t": "Friday", "l": "friday", "p": "PROPN", "w": false, "s": 57.726, "e": 58.248 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "then", "l": "then", "p": "ADV", "w": true, "s": 58.248, "e": 58.621 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.119,
+      "end": 58.676
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s3",
+      "phrase": "Do you want to come",
+      "type": "reduction",
+      "ipa": "/dʒə ˈwɒnə ˈkʌm/",
+      "explanation_es": "*Do you* se reduce a /dʒə/ y *want to* suena *wanna* cuando se habla con naturalidad."
+    },
+    {
+      "ref": "s4",
+      "phrase": "does it start",
+      "type": "linking",
+      "ipa": "/dəzɪt ˈstɑːt/",
+      "explanation_es": "*does* es débil (/dəz/) y se enlaza con *it*: suenan como una sola palabra."
+    },
+    {
+      "ref": "s10",
+      "phrase": "at half past seven",
+      "type": "weak_form",
+      "ipa": "/ət ˈhɑːf pɑːs ˈsevn/",
+      "explanation_es": "*at* suena /ət/, muy corto, y la *t* de *past* casi desaparece delante de *seven*."
+    },
+    {
+      "ref": "s11",
+      "phrase": "I'll buy",
+      "type": "contraction",
+      "ipa": "/aɪl ˈbaɪ/",
+      "explanation_es": "*I'll* = *I will*. La *ll* es muy suave: es fácil oír solo «I buy»."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "free",
+      "surface": "free",
+      "pos": "adjective",
+      "def_en": "not busy; with time to do something",
+      "def_es": "libre (sin planes)",
+      "ref": "s1"
+    },
+    {
+      "lemma": "half past",
+      "surface": "half past six",
+      "pos": "phrase",
+      "def_en": "thirty minutes after the hour: 6.30",
+      "def_es": "y media (las seis y media)",
+      "ref": "s5"
+    },
+    {
+      "lemma": "quarter to",
+      "surface": "quarter to nine",
+      "pos": "phrase",
+      "def_en": "fifteen minutes before the hour: 8.45",
+      "def_es": "menos cuarto (las nueve menos cuarto)",
+      "ref": "s5"
+    },
+    {
+      "lemma": "shall we",
+      "surface": "Shall we",
+      "pos": "phrase",
+      "def_en": "you say this to suggest doing something together",
+      "def_es": "¿y si…?, ¿qué tal si…?",
+      "ref": "s8"
+    },
+    {
+      "lemma": "pizza place",
+      "surface": "pizza place",
+      "pos": "phrase",
+      "def_en": "a restaurant where you eat pizza",
+      "def_es": "pizzería",
+      "ref": "s9"
+    },
+    {
+      "lemma": "each",
+      "surface": "each",
+      "pos": "other",
+      "def_en": "for one ticket; for one person",
+      "def_es": "cada uno, cada una",
+      "ref": "s13"
+    },
+    {
+      "lemma": "pound",
+      "surface": "pounds",
+      "pos": "noun",
+      "def_en": "the money people use in the UK (£)",
+      "def_es": "libra (moneda)",
+      "ref": "s13"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "What are Mia and Jack planning?",
+      "options": [
+        { "id": "a", "text": "A trip to the cinema" },
+        { "id": "b", "text": "A birthday party for a friend" },
+        { "id": "c", "text": "A day at work" }
+      ],
+      "answer": "a",
+      "evidence": ["s3"],
+      "rationale_es": "Mia propone ir a ver una película nueva al Odeon."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "When does Jack finish work?",
+      "options": [
+        { "id": "a", "text": "At half past six" },
+        { "id": "b", "text": "At six" },
+        { "id": "c", "text": "At quarter to nine" }
+      ],
+      "answer": "b",
+      "evidence": ["s6"],
+      "rationale_es": "*I finish work at six*. Las otras dos horas son las sesiones de la película."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Which film time do they choose?",
+      "options": [
+        { "id": "a", "text": "6.30" },
+        { "id": "b", "text": "7.30" },
+        { "id": "c", "text": "8.45" }
+      ],
+      "answer": "c",
+      "evidence": ["s7"],
+      "rationale_es": "*Let's go at quarter to nine*: las nueve menos cuarto, 8.45. A las 7.30 quedan para cenar, no para la película."
+    },
+    {
+      "id": "q4",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "They are going to eat after the film.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["s8", "s10"],
+      "rationale_es": "Jack propone comer algo *first* (antes) y quedan a las siete y media, antes de la película."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Where will they meet?",
+      "options": [
+        { "id": "a", "text": "At the pizza place" },
+        { "id": "b", "text": "Outside Jack's office" },
+        { "id": "c", "text": "At Mia's house" }
+      ],
+      "answer": "a",
+      "evidence": ["s9", "s10"],
+      "rationale_es": "Mia habla de la pizzería que está junto al cine y Jack dice *Let's meet there*."
+    },
+    {
+      "id": "q6",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one number.",
+      "text": "The tickets cost {{1}} pounds each.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["eight", "8"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["s13"],
+      "rationale_es": "*Eight pounds each*: ocho libras cada una."
+    },
+    {
+      "id": "q7",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Jack will give Mia the money on Friday.",
+      "answer": "T",
+      "allow_ng": false,
+      "evidence": ["s11", "s13"],
+      "rationale_es": "Mia compra las entradas esta noche y le dice *you can pay me on Friday*."
+    },
+    {
+      "id": "q8",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s4",
+      "reference": "Sure! What time does it start?",
+      "accept_variants": [],
+      "evidence": ["s4"],
+      "rationale_es": "*does it* se enlaza y suena /dəzɪt/."
+    },
+    {
+      "id": "q9",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s10",
+      "reference": "Perfect. Let's meet there at half past seven.",
+      "accept_variants": ["Perfect. Let's meet there at 7.30."],
+      "evidence": ["s10"],
+      "rationale_es": "*at* es débil (/ət/) y *half past* pierde la *t*."
+    },
+    {
+      "id": "q10",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s11",
+      "reference": "OK. I'll buy the tickets online tonight.",
+      "accept_variants": ["OK. I will buy the tickets online tonight."],
+      "evidence": ["s11"],
+      "rationale_es": "La contracción *I'll* casi no se oye: fíjate en la /l/."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "all", "and", "at", "be", "but", "buy", "can", "cinema", "come", "do", "each", "early", "eat",
+    "evening", "film", "finish", "first", "for", "free", "go", "good", "great", "half", "how", "i", "idea",
+    "it", "let", "me", "meet", "much", "new", "next", "no", "on", "online", "past", "pay", "perfect", "pizza",
+    "place", "pound", "problem", "quarter", "right", "see", "shall", "so", "something", "start", "sure",
+    "thanks", "the", "then", "there", "they", "think", "ticket", "time", "to", "tonight", "too", "us", "want",
+    "we", "what", "why", "will", "work", "you"
+  ],
+  "difficulty": 894,
+  "qa": {
+    "coverage_by_level": { "A1": 0.9541, "A2": 0.9908, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": ["pound"],
+    "avg_sentence_words": 4.7,
+    "flesch_reading_ease": 102.7,
+    "checked_at": "2026-10-08T22:58:35.017Z"
+  },
+  "audio": {
+    "src": "audio/a2/a2-lis-001/v1.m4a",
+    "duration_s": 58.676,
+    "wpm": 125,
+    "provider": "kokoro",
+    "voices": { "mia": "bf_isabella", "jack": "am_fenrir" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      0.56, 0.67, 0.58, 0.32, 0.39, 0.78, 0.34, 0.05, 0, 0.61, 0.49, 0.44, 0.39, 0.42, 0.54, 0.35, 0.32, 0.25,
+      0.03, 0, 0, 0.02, 0.95, 0.48, 0.45, 0.69, 0.71, 0.57, 0.54, 0.52, 0.7, 0.41, 0.01, 0, 0, 0.59, 0.86,
+      0.52, 0.6, 0.56, 0.43, 0.38, 1, 0.48, 0.13, 0.01, 0.38, 0.68, 0.85, 0.47, 0.45, 0.07, 0, 0, 0, 0.46,
+      0.63, 0.83, 0.57, 0.52, 0.39, 0.74, 0.34, 0.03, 0, 0, 0.84, 0.68, 1, 0.67, 0.37, 0.34, 0.48, 0.01, 0.58,
+      0.65, 0.45, 0.42, 0.68, 0.37, 0.4, 0.53, 0.37, 0.46, 0.44, 0.2, 0.05, 0, 0, 0.43, 0.63, 0.65, 0.57, 0.64,
+      0.62, 0.59, 0.14, 0.13, 0.79, 0.71, 0.84, 0.87, 0.55, 0.32, 0.37, 0.37, 0.57, 0.65, 0.55, 0.37, 0.14, 0,
+      0, 0.27, 0.73, 0.59, 0.54, 0.29, 0.15, 0.69, 0.92, 0.73, 0.53, 0.54, 0.76, 0.46, 0.4, 0.39, 0.18, 0.02,
+      0, 0, 0.1, 0.94, 0.56, 1, 0.32, 0.91, 0.47, 0.69, 0.94, 0.14, 0.01, 0, 0, 1, 1, 0.39, 0.43, 0.17, 0.62,
+      0.67, 0.43, 0.34, 0.55, 0.45, 0.3, 0.52, 0.43, 0.55, 0.52, 0.28, 0.07, 0, 0, 0.05, 0.74, 0.67, 0.53, 0.6,
+      0.58, 0.58, 0.65, 0.67, 0.61, 0.67, 0.27, 0.58, 0.33, 0.09, 0, 0, 0.48, 0.92, 0.39, 0.38, 0.8, 0.68,
+      0.51, 0.46, 0.49, 0.85, 0.54, 0.23, 0.49, 0.36, 0.41, 0.01, 0, 0, 0.49, 0.65, 0.86, 0.74, 0.4, 0.69, 0.4,
+      0.08, 0, 0, 0.16, 0.95, 0.55, 0.53, 1, 0.36, 0.34, 0.48, 0.6, 0.54, 0.58, 0.47, 0.33, 0.4, 0.45, 0.15,
+      0.01, 0, 0, 0.35, 0.65, 0.78, 0.27, 0.31, 0.72, 0.72, 0.62, 0.5, 0.57, 0.12
+    ]
+  }
+}
