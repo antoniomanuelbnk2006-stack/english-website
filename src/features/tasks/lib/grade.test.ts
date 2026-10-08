@@ -178,6 +178,36 @@ describe('grade · varias partes', () => {
   });
 });
 
+describe('grade · dictado', () => {
+  const dictation: Task = {
+    ...base,
+    id: 'q9',
+    type: 'dictation',
+    focus: 'decoding',
+    phase: 'post',
+    segment: 's16',
+    reference: 'How many meteors are we gonna see?',
+    accept_variants: [],
+  };
+
+  it('la nota es la precisión, con las equivalencias del dictado', () => {
+    expect(
+      grade(dictation, { type: 'dictation', text: 'how many meteors are we going to see' }),
+    ).toMatchObject({
+      score: 1,
+      correct: true,
+    });
+    const partial = grade(dictation, { type: 'dictation', text: 'how many meteors we see' });
+    expect(partial.score).toBeCloseTo(5 / 8, 3);
+    expect(partial.correct).toBe(false);
+  });
+
+  it('no se fía de ninguna nota que venga del cliente', () => {
+    const forged = { type: 'dictation', text: 'nothing', accuracy: 1 } as never;
+    expect(grade(dictation, forged).score).toBe(0);
+  });
+});
+
 describe('isAnswered', () => {
   it('exige una respuesta completa antes de dejar comprobar', () => {
     expect(isAnswered(mcq, undefined)).toBe(false);

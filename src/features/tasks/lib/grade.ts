@@ -1,5 +1,9 @@
 import { z } from 'zod';
+import { diagnoseBest } from '@/features/listening/lib/dictation';
 import type { Task } from '@/lib/content/schema';
+
+/** La precisión de un dictado no depende del léxico del usuario (eso solo afecta a la causa). */
+const NO_LEMMAS: ReadonlySet<string> = new Set();
 
 // Corrección de tareas: lógica pura, compartida por el cliente (respuesta inmediata)
 // y el servidor (que vuelve a corregir y no se fía de la nota del cliente).
@@ -14,7 +18,7 @@ export const TaskResponse = z.discriminatedUnion('type', [
   z.object({ type: z.literal('ordering'), order: z.array(z.string().max(4)).max(20) }),
   z.object({ type: z.literal('short_answer'), text: z.string().max(200) }),
   z.object({ type: z.literal('heading_match'), answers: z.record(z.string(), z.string().max(4)) }),
-  z.object({ type: z.literal('dictation'), text: z.string().max(600), accuracy: z.number() }),
+  z.object({ type: z.literal('dictation'), text: z.string().max(600) }),
 ]);
 export type TaskResponse = z.infer<typeof TaskResponse>;
 
@@ -133,10 +137,13 @@ export function grade(task: Task, response: TaskResponse): GradeResult {
     }
 
     case 'dictation': {
-      // La precisión la calcula el dictado diagnóstico (alineación palabra a palabra).
+      // La nota es la precisión del dictado: palabras correctas / palabras de la referencia.
       if (response.type !== 'dictation') return single(false);
-      const score = Math.min(1, Math.max(0, response.accuracy));
-      return { score, correct: score === 1, parts: { answer: score === 1 } };
+      const { accuracy } = diagnoseBest(
+        { reference: task.reference, typed: response.text, knownLemmas: NO_LEMMAS },
+        task.accept_variants,
+      );
+      return { score: accuracy, correct: accuracy === 1, parts: { answer: accuracy === 1 } };
     }
   }
 }
