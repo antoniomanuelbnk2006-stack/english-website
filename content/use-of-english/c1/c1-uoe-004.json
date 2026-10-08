@@ -1,0 +1,74 @@
+{
+  "id": "c1-uoe-004",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "part": "key_word_transformation",
+  "title": "Key word transformations (C1) 1",
+  "summary_es": "Seis frases: oraciones escindidas, «be about to», «wish», «chance of», colocaciones y present perfect continuo.",
+  "est_minutes": 12,
+  "min_words": 3,
+  "max_words": 6,
+  "items": [
+    {
+      "n": 1,
+      "original": "I didn't realise how much she had helped me until she left.",
+      "keyword": "ONLY",
+      "before": "It was",
+      "after": "I realised how much she had helped me.",
+      "parts": [["only when she left", "only after she left", "only after she had left"], ["that"]],
+      "explanation_es": "Oración escindida de énfasis: It was only when/after… that… Destaca el momento."
+    },
+    {
+      "n": 2,
+      "original": "We were on the point of leaving when the phone rang.",
+      "keyword": "ABOUT",
+      "before": "We",
+      "after": "when the phone rang.",
+      "parts": [["were about"], ["to leave"]],
+      "explanation_es": "«Be on the point of -ing» = «be about to + infinitivo»: estar a punto de."
+    },
+    {
+      "n": 3,
+      "original": "It's a pity I didn't take your advice.",
+      "keyword": "TAKEN",
+      "before": "I",
+      "after": "advice.",
+      "parts": [["wish I had", "wish I'd"], ["taken your"]],
+      "explanation_es": "Arrepentimiento sobre el pasado: wish + past perfect."
+    },
+    {
+      "n": 4,
+      "original": "The manager is unlikely to approve the plan.",
+      "keyword": "CHANCE",
+      "before": "There is",
+      "after": "approving the plan.",
+      "parts": [["little chance of", "not much chance of"], ["the manager"]],
+      "explanation_es": "«There is little chance of someone doing something»: tras of, el sujeto y el verbo en -ing."
+    },
+    {
+      "n": 5,
+      "original": "Nobody could have predicted that the company would collapse.",
+      "keyword": "CAME",
+      "before": "The collapse of the company",
+      "after": "to everyone.",
+      "parts": [["came as"], ["a surprise", "a shock", "a complete surprise", "a total surprise"]],
+      "explanation_es": "Colocación: «come as a surprise / a shock to someone»."
+    },
+    {
+      "n": 6,
+      "original": "She started working here ten years ago.",
+      "keyword": "BEEN",
+      "before": "She",
+      "after": "ten years.",
+      "parts": [["has been working", "has been employed"], ["here for"]],
+      "explanation_es": "Acción que empezó en el pasado y continúa: present perfect continuo + for + duración."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

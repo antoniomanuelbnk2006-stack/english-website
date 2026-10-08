@@ -34,6 +34,40 @@ export interface UoeResult {
 /** Respuestas por número de hueco o de frase: texto, o el índice de la opción en la parte 1. */
 export type UoeAnswers = Readonly<Record<number, string | number | undefined>>;
 
+const IRREGULAR_CONTRACTIONS: Record<string, string> = {
+  "can't": 'cannot',
+  "won't": 'will not',
+  "shan't": 'shall not',
+};
+
+/**
+ * Formas completas posibles de una respuesta con contracciones: `I'd` puede ser `I had` o
+ * `I would`, y `'s`, `is` o `has`. Así `wish I'd studied` vale igual que `wish I had studied`.
+ */
+export function expandContractions(text: string): string[] {
+  let variants = [''];
+  for (const word of normalizeAnswer(text).split(' ').filter(Boolean)) {
+    let options: string[];
+    if (IRREGULAR_CONTRACTIONS[word]) options = [IRREGULAR_CONTRACTIONS[word]];
+    else if (word.endsWith("n't")) options = [`${word.slice(0, -3)} not`];
+    else if (word.endsWith("'ve")) options = [`${word.slice(0, -3)} have`];
+    else if (word.endsWith("'ll")) options = [`${word.slice(0, -3)} will`];
+    else if (word.endsWith("'re")) options = [`${word.slice(0, -3)} are`];
+    else if (word.endsWith("'m")) options = [`${word.slice(0, -2)} am`];
+    else if (word.endsWith("'d")) {
+      options = [`${word.slice(0, -2)} had`, `${word.slice(0, -2)} would`];
+    } else if (word.endsWith("'s")) {
+      // También puede ser un posesivo: se conserva tal cual como tercera lectura.
+      options = [`${word.slice(0, -2)} is`, `${word.slice(0, -2)} has`, word];
+    } else options = [word === 'can not' ? 'cannot' : word];
+    variants = variants.flatMap((prefix) =>
+      options.map((option) => (prefix === '' ? option : `${prefix} ${option}`)),
+    );
+    if (variants.length > 64) variants = variants.slice(0, 64);
+  }
+  return variants;
+}
+
 function gradeTransformation(
   given: string,
   item: { keyword: string; parts: readonly [readonly string[], readonly string[]] },
@@ -46,14 +80,18 @@ function gradeTransformation(
   if (words < limits.min || words > limits.max) return { marks: 0, note: 'word_limit' };
   if (!answer.split(' ').includes(item.keyword.toLowerCase())) return { marks: 0, note: 'keyword' };
 
-  const firsts = item.parts[0].map(normalizeAnswer);
-  const seconds = item.parts[1].map(normalizeAnswer);
-  if (firsts.some((first) => seconds.some((second) => answer === `${first} ${second}`))) {
+  // Se comparan las formas completas: con o sin contracción es la misma respuesta.
+  const answers = expandContractions(answer);
+  const firsts = item.parts[0].flatMap(expandContractions);
+  const seconds = item.parts[1].flatMap(expandContractions);
+  const is = (test: (candidate: string) => boolean) => answers.some(test);
+
+  if (firsts.some((first) => seconds.some((second) => is((a) => a === `${first} ${second}`)))) {
     return { marks: 2 };
   }
   // Media respuesta: la primera mitad al principio o la segunda al final.
-  const firstOk = firsts.some((first) => answer === first || answer.startsWith(`${first} `));
-  const secondOk = seconds.some((second) => answer === second || answer.endsWith(` ${second}`));
+  const firstOk = firsts.some((first) => is((a) => a === first || a.startsWith(`${first} `)));
+  const secondOk = seconds.some((second) => is((a) => a === second || a.endsWith(` ${second}`)));
   return { marks: firstOk || secondOk ? 1 : 0 };
 }
 

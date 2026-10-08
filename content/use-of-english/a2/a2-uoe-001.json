@@ -1,0 +1,55 @@
+{
+  "id": "a2-uoe-001",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "part": "mcq_cloze",
+  "title": "The oldest café in town",
+  "summary_es": "Una cafetería de toda la vida. Pasado simple, conectores, cuantificadores y preposiciones de tiempo.",
+  "est_minutes": 5,
+  "text": "The Blue Door is the oldest café in our town. It {{1}} in 1950, and the same family still owns it. People come here {{2}} they love the home-made cakes. The café is very small. There are {{3}} six tables, so you often have to wait. Mrs Reed, the owner, knows {{4}} of her customers by name. She gets up at five o'clock every morning to {{5}} the bread. The café is closed on Mondays, but it is open {{6}} nine to five on the other days.",
+  "gaps": [
+    {
+      "n": 1,
+      "options": ["built", "opened", "lived"],
+      "answer": 1,
+      "explanation_es": "Un negocio «abre»: it opened in 1950. «Built» necesitaría la pasiva (it was built)."
+    },
+    {
+      "n": 2,
+      "options": ["so", "but", "because"],
+      "answer": 2,
+      "explanation_es": "Da la razón: because = porque. «So» introduce la consecuencia, no la causa."
+    },
+    {
+      "n": 3,
+      "options": ["only", "much", "any"],
+      "answer": 0,
+      "explanation_es": "«Only six tables» = solo seis mesas. «Much» es para incontables y «any», para preguntas y negativas."
+    },
+    {
+      "n": 4,
+      "options": ["much", "every", "most"],
+      "answer": 2,
+      "explanation_es": "«Most of her customers» = la mayoría de sus clientes. «Every» no puede ir seguido de of."
+    },
+    {
+      "n": 5,
+      "options": ["do", "make", "have"],
+      "answer": 1,
+      "explanation_es": "La comida se «hace» con make: make bread, make a cake, make dinner."
+    },
+    {
+      "n": 6,
+      "options": ["from", "at", "between"],
+      "answer": 0,
+      "explanation_es": "«From nine to five» = de nueve a cinco. «Between» iría con and: between nine and five."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

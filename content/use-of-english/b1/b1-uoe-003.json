@@ -1,0 +1,55 @@
+{
+  "id": "b1-uoe-003",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "part": "word_formation",
+  "title": "The new sports centre",
+  "summary_es": "La inauguración de un polideportivo. Sufijos básicos: -ive, -ly, -or, -ment y el prefijo un-.",
+  "est_minutes": 6,
+  "text": "Last Saturday I went to the opening of our town's new sports centre. The building is modern and very {{1}}, and there is a huge swimming pool. The staff are {{2}} and always ready to help. I tried the climbing wall for the first time. I was a bit nervous, but the {{3}} explained everything {{4}}. To my {{5}}, I reached the top! The only problem is the price: it is quite expensive, which is {{6}} for students.",
+  "gaps": [
+    {
+      "n": 1,
+      "stem": "ATTRACT",
+      "accept": ["attractive"],
+      "explanation_es": "Tras «very» va un adjetivo: attract → attractive."
+    },
+    {
+      "n": 2,
+      "stem": "FRIEND",
+      "accept": ["friendly"],
+      "explanation_es": "Aunque acaba en -ly, «friendly» es un adjetivo (simpático, amable)."
+    },
+    {
+      "n": 3,
+      "stem": "INSTRUCT",
+      "accept": ["instructor"],
+      "explanation_es": "Hace falta la persona que enseña: instruct → instructor (con -or, no -er)."
+    },
+    {
+      "n": 4,
+      "stem": "CLEAR",
+      "accept": ["clearly"],
+      "explanation_es": "Describe cómo explicó: adverbio de modo, adjetivo + -ly."
+    },
+    {
+      "n": 5,
+      "stem": "AMAZE",
+      "accept": ["amazement"],
+      "explanation_es": "«To my amazement» = para mi asombro. Tras el posesivo va un nombre: verbo + -ment."
+    },
+    {
+      "n": 6,
+      "stem": "FAIR",
+      "accept": ["unfair"],
+      "explanation_es": "El sentido es negativo (es caro para los estudiantes): prefijo un-."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

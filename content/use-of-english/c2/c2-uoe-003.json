@@ -1,0 +1,67 @@
+{
+  "id": "c2-uoe-003",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "part": "word_formation",
+  "title": "The persistence of handwriting",
+  "summary_es": "Por qué la escritura a mano no desaparece. Prefijos pre-, un-, omni- y cambios de raíz.",
+  "est_minutes": 10,
+  "text": "Predictions of the death of handwriting have proved remarkably {{1}}. Although most adults now type far more than they write, the pen has shown a stubborn {{2}} to disappear. Part of the explanation is practical: notes taken by hand appear to be more {{3}} retained than those typed, presumably because the slower pace forces the writer to summarise rather than transcribe. But there is also something less {{4}} at work. A handwritten letter carries an {{5}} of the person who wrote it that no typeface can reproduce, and it is this {{6}} that makes such letters so hard to throw away. Whether the habit will survive another generation of {{7}} screens is uncertain. For now, at least, reports of its {{8}} remain exaggerated.",
+  "gaps": [
+    {
+      "n": 1,
+      "stem": "MATURE",
+      "accept": ["premature"],
+      "explanation_es": "Las predicciones se adelantaron: pre- + mature = prematuro. «Immature» sería inmaduro, que no encaja."
+    },
+    {
+      "n": 2,
+      "stem": "WILLING",
+      "accept": ["unwillingness"],
+      "explanation_es": "Tras el adjetivo «stubborn» va un nombre, y con sentido negativo: un- + willing + -ness."
+    },
+    {
+      "n": 3,
+      "stem": "READY",
+      "accept": ["readily"],
+      "explanation_es": "Adverbio que modifica al participio «retained»: readily = con facilidad. La y pasa a i."
+    },
+    {
+      "n": 4,
+      "stem": "DEFINE",
+      "accept": ["definable"],
+      "explanation_es": "«Something less definable» = algo menos fácil de definir. Verbo + -able (se pierde la e)."
+    },
+    {
+      "n": 5,
+      "stem": "PRINT",
+      "accept": ["imprint"],
+      "explanation_es": "«Carry an imprint of» = llevar la huella de. El artículo «an» ya indica que empieza por vocal."
+    },
+    {
+      "n": 6,
+      "stem": "INTIMATE",
+      "accept": ["intimacy"],
+      "explanation_es": "Tras «this» va un nombre: intimate → intimacy."
+    },
+    {
+      "n": 7,
+      "stem": "PRESENT",
+      "accept": ["omnipresent", "ever-present"],
+      "explanation_es": "Las pantallas están en todas partes: omni- (todo) + present."
+    },
+    {
+      "n": 8,
+      "stem": "EXTINCT",
+      "accept": ["extinction"],
+      "explanation_es": "Tras el posesivo «its» va un nombre: extinct → extinction."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

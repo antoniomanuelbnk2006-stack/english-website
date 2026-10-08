@@ -1,0 +1,74 @@
+{
+  "id": "c2-uoe-004",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "part": "key_word_transformation",
+  "title": "Key word transformations (C2) 1",
+  "summary_es": "Seis frases: inversión negativa, expresiones idiomáticas, «but for», pasiva con infinitivo perfecto y deducción.",
+  "est_minutes": 12,
+  "min_words": 3,
+  "max_words": 8,
+  "items": [
+    {
+      "n": 1,
+      "original": "The minister refused to comment on the rumours under any circumstances.",
+      "keyword": "ACCOUNT",
+      "before": "On",
+      "after": "comment on the rumours.",
+      "parts": [["no account would"], ["the minister"]],
+      "explanation_es": "«On no account» al principio obliga a la inversión: auxiliar + sujeto, como en una pregunta."
+    },
+    {
+      "n": 2,
+      "original": "I never imagined for a moment that she would resign.",
+      "keyword": "CROSSED",
+      "before": "It never",
+      "after": "she would resign.",
+      "parts": [["crossed my"], ["mind that"]],
+      "explanation_es": "«It never crossed my mind that…» = ni se me pasó por la cabeza que…"
+    },
+    {
+      "n": 3,
+      "original": "If the weather hadn't been so bad, the festival would have been a success.",
+      "keyword": "BUT",
+      "before": "The festival would have been a success",
+      "after": "weather.",
+      "parts": [["but for"], ["the bad", "the terrible", "the awful", "the poor"]],
+      "explanation_es": "«But for» + nombre = de no haber sido por. Sustituye a toda la oración con if."
+    },
+    {
+      "n": 4,
+      "original": "People say he was a brilliant pianist in his youth.",
+      "keyword": "REPUTED",
+      "before": "He",
+      "after": "a brilliant pianist in his youth.",
+      "parts": [["is reputed"], ["to have been"]],
+      "explanation_es": "«Be reputed to» + infinitivo perfecto, porque se refiere a un tiempo anterior."
+    },
+    {
+      "n": 5,
+      "original": "I'm sure it wasn't easy for her to admit she was wrong.",
+      "keyword": "CAN'T",
+      "before": "It",
+      "after": "for her to admit she was wrong.",
+      "parts": [["can't have"], ["been easy"]],
+      "explanation_es": "Deducción negativa sobre el pasado: can't + have + participio."
+    },
+    {
+      "n": 6,
+      "original": "The new law will have little effect on small businesses.",
+      "keyword": "DIFFERENCE",
+      "before": "The new law will",
+      "after": "small businesses.",
+      "parts": [["make little", "make very little", "not make much", "make hardly any"], ["difference to"]],
+      "explanation_es": "«Make little difference to» = afectar poco a. Con difference la preposición es to, no on."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

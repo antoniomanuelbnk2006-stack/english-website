@@ -1,0 +1,44 @@
+{
+  "id": "a1-uoe-002",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "part": "open_cloze",
+  "title": "My day",
+  "summary_es": "La rutina de un día. Preposiciones de tiempo y lugar, «be», posesivos y «do».",
+  "est_minutes": 4,
+  "text": "I get up {{1}} seven o'clock. I have breakfast with my brother. He {{2}} fifteen years old. Then we go {{3}} school. In the afternoon I play football with {{4}} friends. In the evening I watch TV, and I go to bed at ten. I {{5}} not go to school on Saturdays.",
+  "gaps": [
+    {
+      "n": 1,
+      "accept": ["at"],
+      "explanation_es": "Con las horas se usa «at»: at seven o'clock."
+    },
+    {
+      "n": 2,
+      "accept": ["is"],
+      "explanation_es": "Con «he» el verbo be es «is». La edad va con be: he is fifteen."
+    },
+    {
+      "n": 3,
+      "accept": ["to"],
+      "explanation_es": "Movimiento hacia un lugar: go to school."
+    },
+    {
+      "n": 4,
+      "accept": ["my", "some"],
+      "explanation_es": "Posesivo de «I»: my friends."
+    },
+    {
+      "n": 5,
+      "accept": ["do"],
+      "explanation_es": "Negativa del presente simple: I do not go (I don't go)."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

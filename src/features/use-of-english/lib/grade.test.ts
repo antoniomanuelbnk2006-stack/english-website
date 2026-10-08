@@ -8,7 +8,7 @@ import {
   toPublicSet,
   WordFormation,
 } from '@/lib/content/uoe-schema';
-import { gradeUoe, sentenceWithGap, splitCloze } from './grade';
+import { expandContractions, gradeUoe, sentenceWithGap, splitCloze } from './grade';
 
 const base = {
   version: 1,
@@ -169,6 +169,42 @@ describe('parte 4 · dos puntos por frase, por mitades', () => {
     const result = gradeUoe(kwt, {});
     expect(result).toMatchObject({ marks: 0, total: 6, score: 0 });
     expect(result.items[0]?.answer).toBe("haven't seen him for");
+  });
+});
+
+describe('contracciones', () => {
+  it('una contracción vale igual que su forma completa, en los dos sentidos', () => {
+    const item = {
+      ...kwt,
+      items: [
+        {
+          n: 1,
+          original: 'I regret not studying harder.',
+          keyword: 'WISH',
+          before: 'I',
+          after: 'harder.',
+          parts: [['wish I'], ['had studied']] as [string[], string[]],
+          explanation_es: 'wish + past perfect.',
+        },
+      ],
+    };
+    expect(gradeUoe(item, { 1: 'wish I had studied' }).marks).toBe(2);
+    expect(gradeUoe(item, { 1: "wish I'd studied" }).marks).toBe(2);
+    // Y al revés: la respuesta modelo con contracción, escrita completa.
+    expect(gradeUoe(kwt, { 1: 'have not seen him for' }).marks).toBe(2);
+    expect(gradeUoe(kwt, { 3: 'did not need to have' }).marks).toBe(2);
+  });
+
+  it('expande cada contracción a sus lecturas posibles', () => {
+    expect(expandContractions("I'd rather")).toEqual(['i had rather', 'i would rather']);
+    expect(expandContractions("can't have")).toEqual(['cannot have']);
+    expect(expandContractions("won't be")).toEqual(['will not be']);
+    expect(expandContractions("she's gone")).toEqual([
+      'she is gone',
+      'she has gone',
+      "she's gone",
+    ]);
+    expect(expandContractions('no contractions here')).toEqual(['no contractions here']);
   });
 });
 

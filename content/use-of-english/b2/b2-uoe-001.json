@@ -1,0 +1,67 @@
+{
+  "id": "b2-uoe-001",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "part": "mcq_cloze",
+  "title": "The return of the night train",
+  "summary_es": "Por qué vuelven los trenes nocturnos en Europa. Colocaciones y verbos con preposición.",
+  "est_minutes": 8,
+  "text": "For most of the last century, sleeper trains were the natural way to cross Europe. Then cheap flights arrived, and one overnight service after another was {{1}} down. In the last few years, however, the night train has {{2}} a remarkable comeback. Passengers who are {{3}} about the environmental cost of flying are happy to spend twelve hours on a journey that a plane could {{4}} in two. Others simply enjoy the experience: you fall asleep in one country and wake up in another, right in the city centre, without having to {{5}} with airport queues. Running these services is far from easy, though. Old carriages are in short {{6}}, and new ones take years to build. Tickets can also be expensive unless you book well in {{7}}. Even so, demand keeps growing, and rail companies are {{8}} on that trend to continue.",
+  "gaps": [
+    {
+      "n": 1,
+      "options": ["put", "closed", "taken", "turned"],
+      "answer": 1,
+      "explanation_es": "«Close down» = cerrar definitivamente un negocio o un servicio. «Turn down» es rechazar y «put down», dejar o humillar."
+    },
+    {
+      "n": 2,
+      "options": ["made", "done", "had", "given"],
+      "answer": 0,
+      "explanation_es": "Colocación fija: «make a comeback» (volver a tener éxito). En inglés los regresos se «hacen» con make, no con do."
+    },
+    {
+      "n": 3,
+      "options": ["interested", "aware", "concerned", "responsible"],
+      "answer": 2,
+      "explanation_es": "«Concerned about» = preocupado por. Las otras piden otra preposición: interested in, aware of, responsible for."
+    },
+    {
+      "n": 4,
+      "options": ["reach", "arrive", "spend", "complete"],
+      "answer": 3,
+      "explanation_es": "Un viaje se «completa» (complete a journey). «Reach» necesita un destino, «arrive» no lleva complemento directo y «spend» va con tiempo o dinero."
+    },
+    {
+      "n": 5,
+      "options": ["face", "deal", "handle", "treat"],
+      "answer": 1,
+      "explanation_es": "El hueco va seguido de «with»: «deal with» = ocuparse de, lidiar con. «Face» y «handle» van sin preposición."
+    },
+    {
+      "n": 6,
+      "options": ["amount", "number", "quantity", "supply"],
+      "answer": 3,
+      "explanation_es": "Expresión fija: «in short supply» = escasear."
+    },
+    {
+      "n": 7,
+      "options": ["advance", "front", "ahead", "early"],
+      "answer": 0,
+      "explanation_es": "«In advance» = con antelación; «well in advance», con mucha antelación. «Ahead» y «early» no llevan «in»."
+    },
+    {
+      "n": 8,
+      "options": ["hoping", "expecting", "counting", "trusting"],
+      "answer": 2,
+      "explanation_es": "«Count on» = contar con que algo ocurra. «Hope» va con for, y «expect» y «trust» no llevan «on»."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

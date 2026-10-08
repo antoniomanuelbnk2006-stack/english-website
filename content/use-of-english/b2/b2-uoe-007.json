@@ -1,0 +1,67 @@
+{
+  "id": "b2-uoe-007",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "part": "word_formation",
+  "title": "The science of a good night's sleep",
+  "summary_es": "Lo que la ciencia dice sobre dormir poco. Nombres en plural, adjetivos negativos, adverbios y un verbo.",
+  "est_minutes": 8,
+  "text": "Scientists have long known that sleep is essential for good health, but recent {{1}} have shown just how much damage a lack of it can do. People who regularly sleep fewer than six hours a night run a much greater risk of heart disease and {{2}}. Their powers of {{3}} suffer too, which makes accidents more likely. {{4}}, many of us still treat sleep as a luxury. We stay up late answering emails and then find it almost {{5}} to get up in the morning. Experts recommend a few simple changes. Keeping the bedroom cool and dark makes a {{6}} difference, and the {{7}} of going to bed at the same time every night is often underestimated. Above all, they say, we should stop feeling guilty about resting: sleep does not make us lazy, it {{8}} us to do everything else better.",
+  "gaps": [
+    {
+      "n": 1,
+      "stem": "DISCOVER",
+      "accept": ["discoveries"],
+      "explanation_es": "Hace falta un nombre en plural porque el verbo es «have shown». Discover → discovery → discoveries (la y cambia a ies)."
+    },
+    {
+      "n": 2,
+      "stem": "DEPRESS",
+      "accept": ["depression"],
+      "explanation_es": "Nombre de enfermedad, coordinado con «heart disease». Verbo + -ion."
+    },
+    {
+      "n": 3,
+      "stem": "CONCENTRATE",
+      "accept": ["concentration"],
+      "explanation_es": "Colocación: «powers of concentration» = capacidad de concentración. Tras «of» va un nombre."
+    },
+    {
+      "n": 4,
+      "stem": "SURPRISE",
+      "accept": ["Surprisingly"],
+      "explanation_es": "Adverbio de frase al principio, seguido de coma: surprise → surprising → surprisingly."
+    },
+    {
+      "n": 5,
+      "stem": "POSSIBLE",
+      "accept": ["impossible"],
+      "explanation_es": "El sentido es negativo (no logramos levantarnos): prefijo im- delante de p."
+    },
+    {
+      "n": 6,
+      "stem": "SIGNIFICANCE",
+      "accept": ["significant"],
+      "explanation_es": "Entre el artículo y el nombre «difference» va un adjetivo: a significant difference."
+    },
+    {
+      "n": 7,
+      "stem": "IMPORTANT",
+      "accept": ["importance"],
+      "explanation_es": "Tras «the» y antes de «of» va un nombre: important → importance."
+    },
+    {
+      "n": 8,
+      "stem": "ABLE",
+      "accept": ["enables"],
+      "explanation_es": "Hace falta un verbo en tercera persona (sujeto «it»): prefijo en- para formar el verbo, y -s. «Enable someone to do something» = permitir."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

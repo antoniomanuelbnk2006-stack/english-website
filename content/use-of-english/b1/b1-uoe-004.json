@@ -1,0 +1,65 @@
+{
+  "id": "b1-uoe-004",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "part": "key_word_transformation",
+  "title": "Sentence transformations 1",
+  "summary_es": "Cinco frases: pasiva, obligación, superlativo, órdenes en estilo indirecto y present perfect.",
+  "est_minutes": 8,
+  "min_words": 2,
+  "max_words": 4,
+  "items": [
+    {
+      "n": 1,
+      "original": "They built this church in 1750.",
+      "keyword": "WAS",
+      "before": "This church",
+      "after": "1750.",
+      "parts": [["was built"], ["in"]],
+      "explanation_es": "Pasiva en pasado: was/were + participio. Lo que recibe la acción pasa a ser el sujeto."
+    },
+    {
+      "n": 2,
+      "original": "It isn't necessary to bring your passport.",
+      "keyword": "HAVE",
+      "before": "You don't",
+      "after": "your passport.",
+      "parts": [["have to"], ["bring"]],
+      "explanation_es": "«Don't have to» = no hace falta. No lo confundas con «mustn't», que es prohibición."
+    },
+    {
+      "n": 3,
+      "original": "Nobody in my class is taller than Marta.",
+      "keyword": "TALLEST",
+      "before": "Marta is",
+      "after": "my class.",
+      "parts": [["the tallest", "the tallest person", "the tallest student", "the tallest girl"], ["in"]],
+      "explanation_es": "Superlativo: the + adjetivo-est + in + grupo o lugar. Se dice «in my class», no «of my class»."
+    },
+    {
+      "n": 4,
+      "original": "\"Don't touch the paintings,\" the guide told us.",
+      "keyword": "NOT",
+      "before": "The guide told us",
+      "after": "the paintings.",
+      "parts": [["not to"], ["touch"]],
+      "explanation_es": "Orden negativa en estilo indirecto: tell + persona + not to + infinitivo."
+    },
+    {
+      "n": 5,
+      "original": "I last went to London in 2019.",
+      "keyword": "SINCE",
+      "before": "I haven't",
+      "after": "2019.",
+      "parts": [["been to"], ["London since"]],
+      "explanation_es": "Present perfect + since + momento de inicio. Con «have been to» se habla de visitas."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

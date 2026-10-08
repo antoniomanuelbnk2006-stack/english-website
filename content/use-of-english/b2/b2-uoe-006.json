@@ -1,0 +1,59 @@
+{
+  "id": "b2-uoe-006",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "part": "open_cloze",
+  "title": "The street that grows its own food",
+  "summary_es": "Una calle que convirtió sus jardines en huertos. Preposiciones, cuantificadores, comparativos y relativos.",
+  "est_minutes": 8,
+  "text": "Ten years ago, the residents of a quiet street in the north of England decided to turn the small patches of grass in front of their houses {{1}} vegetable gardens. Nobody expected the idea to last. {{2}} of the neighbours had ever grown anything before, and the soil was poor. Today, however, the street produces {{3}} much fruit and veg that people regularly leave boxes of it outside their doors for anyone to take. The project has changed more {{4}} just the look of the street. Neighbours {{5}} used to nod politely to each other now spend their weekends working side by side. Children have learned where their food comes {{6}}, and several older residents say they feel far {{7}} lonely than before. Other streets have started copying the idea, and the local council is considering a plan to plant fruit trees in every park, {{8}} would make the whole town greener.",
+  "gaps": [
+    {
+      "n": 1,
+      "accept": ["into"],
+      "explanation_es": "«Turn something into something» = convertir algo en otra cosa."
+    },
+    {
+      "n": 2,
+      "accept": ["None", "Few"],
+      "explanation_es": "«Ever» pide una idea negativa: «none of the neighbours had ever…» (ninguno). «Few» (pocos) también vale."
+    },
+    {
+      "n": 3,
+      "accept": ["so"],
+      "explanation_es": "«So much… that…» = tanto… que… Con nombres incontables se usa so much; con contables, so many."
+    },
+    {
+      "n": 4,
+      "accept": ["than"],
+      "explanation_es": "Comparativo: «more than just…» = algo más que solo…"
+    },
+    {
+      "n": 5,
+      "accept": ["who", "that"],
+      "explanation_es": "Relativo de persona como sujeto: who (o that). Aquí no se puede omitir."
+    },
+    {
+      "n": 6,
+      "accept": ["from"],
+      "explanation_es": "«Come from». En las preguntas indirectas y con relativos, la preposición se queda al final: where their food comes from."
+    },
+    {
+      "n": 7,
+      "accept": ["less"],
+      "explanation_es": "«Far less lonely than before» = mucho menos solos que antes. El «than» de después pide un comparativo."
+    },
+    {
+      "n": 8,
+      "accept": ["which"],
+      "explanation_es": "«Which» tras coma se refiere a toda la idea anterior (lo cual). Después de una coma no se puede usar «that»."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

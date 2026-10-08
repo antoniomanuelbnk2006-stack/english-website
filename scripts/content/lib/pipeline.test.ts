@@ -29,6 +29,30 @@ const LISTENING = 'b1/listening/b1-lis-001.json';
 const READING = 'b1/reading/b1-rea-001.json';
 const NOW = new Date('2026-10-08T12:00:00Z');
 
+/**
+ * La lección de escucha tal como estaba antes de pasar por el audio y publicarse: un borrador
+ * anotado, sin tiempos ni `audio`.
+ */
+function listeningDraft(): Record<string, unknown> & { status: string } {
+  const lesson = load(LISTENING) as Record<string, unknown> & {
+    status: string;
+    segments: (Record<string, unknown> & { tokens: Record<string, unknown>[] })[];
+    provenance: Record<string, unknown>;
+  };
+  lesson.status = 'draft';
+  delete lesson.audio;
+  delete lesson.provenance.reviewed_by;
+  for (const segment of lesson.segments) {
+    delete segment.start;
+    delete segment.end;
+    for (const token of segment.tokens) {
+      delete token.s;
+      delete token.e;
+    }
+  }
+  return lesson;
+}
+
 describe('parseCsv', () => {
   it('lee campos entre comillas, comillas escapadas, BOM y CRLF', () => {
     expect(parseCsv('﻿a,b\r\n"x, y","dice ""hola"""\r\n\r\n1,2')).toEqual([
@@ -284,7 +308,8 @@ describe('perfil del nivel', () => {
 
 describe('annotateLesson', () => {
   it('reproduce la dificultad del ejemplo de la documentación (1095)', () => {
-    expect(annotateLesson(load(LISTENING), lists, NOW).metrics.difficulty).toBe(1095);
+    // Sin audio todavía, la dificultad se calcula con la velocidad objetivo (140 ppm).
+    expect(annotateLesson(listeningDraft(), lists, NOW).metrics.difficulty).toBe(1095);
   });
 
   it('es idempotente: reanotar una lección anotada no cambia nada', () => {
@@ -316,6 +341,11 @@ describe('annotateLesson', () => {
 describe('checkLesson', () => {
   it('da por buenas las lecciones del repositorio', () => {
     expect(checkLesson(load(LISTENING), lists, { relativePath: LISTENING })).toMatchObject({
+      status: 'published',
+      errors: [],
+      warnings: [],
+    });
+    expect(checkLesson(listeningDraft(), lists, { relativePath: LISTENING })).toMatchObject({
       status: 'draft',
       errors: [],
       warnings: [],
@@ -336,7 +366,7 @@ describe('checkLesson', () => {
   });
 
   it('exige el esquema completo a una lección publicada', () => {
-    const lesson = { ...(load(LISTENING) as object), status: 'published' };
+    const lesson = { ...listeningDraft(), status: 'published' };
     const report = checkLesson(lesson, lists, { relativePath: LISTENING });
     // Los errores repetidos por segmento se agrupan para que se vea también el que falta el audio.
     expect(report.errors).toEqual(
@@ -348,7 +378,7 @@ describe('checkLesson', () => {
   });
 
   it('en un borrador los problemas de calidad son avisos; publicado, errores', () => {
-    const draft = load(LISTENING) as { glossary: { lemma: string }[]; status: string };
+    const draft = listeningDraft() as { glossary: { lemma: string }[]; status: string };
     draft.glossary = draft.glossary.filter((entry) => entry.lemma !== 'telescope');
     const asDraft = checkLesson(draft, lists, { relativePath: LISTENING });
     expect(asDraft.errors).toEqual([]);

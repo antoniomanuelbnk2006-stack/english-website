@@ -1,0 +1,59 @@
+{
+  "id": "b2-uoe-002",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "part": "open_cloze",
+  "title": "Learning to cook at forty",
+  "summary_es": "Alguien que aprende a cocinar de adulto. Preposiciones, relativos, tiempos verbales y condicionales.",
+  "est_minutes": 8,
+  "text": "I had never been interested {{1}} cooking. For years I lived on takeaways and whatever my flatmates were kind enough to share. Then, shortly after my fortieth birthday, a friend gave me a cookery course {{2}} a present. I almost didn't go. {{3}} surprised me most on the first evening was how relaxing it felt to chop vegetables after a long day in front of a screen. Our teacher, {{4}} restaurant had closed the year before, was patient and funny, and she never made anyone feel stupid. By the end of the course I {{5}} become confident enough to cook a three-course meal without looking at a recipe. These days I cook almost every evening, and I have even started inviting people round. I'm not saying I will ever {{6}} up takeaways completely, but I no longer depend {{7}} them. If someone had told me this two years ago, I {{8}} not have believed them.",
+  "gaps": [
+    {
+      "n": 1,
+      "accept": ["in"],
+      "explanation_es": "«Interested in» + nombre o -ing. En español decimos «interesado por/en», pero en inglés siempre es in."
+    },
+    {
+      "n": 2,
+      "accept": ["as"],
+      "explanation_es": "«As a present» = como regalo. «As» indica la función que tiene algo."
+    },
+    {
+      "n": 3,
+      "accept": ["What"],
+      "explanation_es": "«What surprised me most was…» = lo que más me sorprendió fue… «What» equivale aquí a «the thing that»."
+    },
+    {
+      "n": 4,
+      "accept": ["whose"],
+      "explanation_es": "«Whose» = cuyo: el restaurante es de la profesora. Va seguido directamente del nombre."
+    },
+    {
+      "n": 5,
+      "accept": ["had"],
+      "explanation_es": "«By the end of…» + past perfect: para entonces ya había ocurrido. Después va el participio «become»."
+    },
+    {
+      "n": 6,
+      "accept": ["give"],
+      "explanation_es": "«Give up» = dejar, renunciar a algo. Tras «will ever» va el infinitivo sin to."
+    },
+    {
+      "n": 7,
+      "accept": ["on", "upon"],
+      "explanation_es": "«Depend on» (más formal: upon). En español es «depender de», y de ahí el error típico «depend of»."
+    },
+    {
+      "n": 8,
+      "accept": ["would", "might", "could"],
+      "explanation_es": "Tercera condicional: if + past perfect, would (o might) + have + participio. Habla de un pasado que no ocurrió."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

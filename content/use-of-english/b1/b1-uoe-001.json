@@ -1,0 +1,55 @@
+{
+  "id": "b1-uoe-001",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "part": "mcq_cloze",
+  "title": "A weekend without my phone",
+  "summary_es": "Un fin de semana sin móvil. Verbos frecuentes, colocaciones y partículas.",
+  "est_minutes": 6,
+  "text": "Last month I decided to {{1}} a whole weekend without my phone. My friends didn't {{2}} me, but I was serious. On Saturday morning I felt strange. I kept {{3}} for my phone in my pocket, and I didn't know what time it was. So I went for a long walk and, for the first time in years, I really {{4}} attention to the streets around my flat. In the afternoon I read a book from beginning to end. By Sunday evening I felt more relaxed {{5}} I had for months. I'm not going to throw my phone away, but now I switch it {{6}} every Sunday.",
+  "gaps": [
+    {
+      "n": 1,
+      "options": ["pass", "spend", "stay", "take"],
+      "answer": 1,
+      "explanation_es": "El tiempo se «gasta» con spend: spend a weekend, spend two hours. «Pasar» no se traduce por pass aquí."
+    },
+    {
+      "n": 2,
+      "options": ["think", "know", "believe", "agree"],
+      "answer": 2,
+      "explanation_es": "«Believe someone» = creer a alguien. «Agree» necesita with, y «think» no lleva una persona como complemento."
+    },
+    {
+      "n": 3,
+      "options": ["looking", "watching", "seeing", "finding"],
+      "answer": 0,
+      "explanation_es": "«Look for» = buscar. Tras «keep» el verbo va en -ing: I kept looking for it."
+    },
+    {
+      "n": 4,
+      "options": ["made", "did", "had", "paid"],
+      "answer": 3,
+      "explanation_es": "Colocación fija: «pay attention to» (prestar atención a). No se usa make ni do."
+    },
+    {
+      "n": 5,
+      "options": ["that", "than", "as", "like"],
+      "answer": 1,
+      "explanation_es": "Comparativo: more relaxed than… «That» es el error típico por el «que» español."
+    },
+    {
+      "n": 6,
+      "options": ["out", "down", "off", "away"],
+      "answer": 2,
+      "explanation_es": "«Switch off» = apagar. Con pronombre, va en medio: switch it off."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "b2-uoe-003",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "part": "word_formation",
+  "title": "Why we forget names",
+  "summary_es": "Por qué se nos olvidan los nombres y cómo evitarlo. Sufijos de nombre, adjetivo y adverbio, y un prefijo negativo.",
+  "est_minutes": 8,
+  "text": "Most people find it {{1}} when they are introduced to someone and, seconds later, cannot remember what the person is called. According to {{2}} who study memory, this has little to do with intelligence. A name is an arbitrary label: unlike a job or a hobby, it has no {{3}} with anything else we know about the person. Our {{4}} to recall it depends on how much attention we paid in the first place, and at that moment we are usually busy thinking about the {{5}} we are making ourselves. {{6}}, there are simple techniques that help. Repeating the name aloud is surprisingly {{7}}, and so is linking it to a visual image. With a little practice, those awkward moments of {{8}} become rare.",
+  "gaps": [
+    {
+      "n": 1,
+      "stem": "EMBARRASS",
+      "accept": ["embarrassing"],
+      "explanation_es": "Tras «find it» va un adjetivo. Es -ing porque describe la situación (lo que produce vergüenza), no cómo se siente la persona (embarrassed). Ojo: doble r y doble s."
+    },
+    {
+      "n": 2,
+      "stem": "PSYCHOLOGY",
+      "accept": ["psychologists"],
+      "explanation_es": "Hace falta la persona, y en plural: «who study» va con un sujeto plural. -ist forma profesiones."
+    },
+    {
+      "n": 3,
+      "stem": "CONNECT",
+      "accept": ["connection"],
+      "explanation_es": "Tras «no» va un nombre: «have no connection with». Verbo + -ion."
+    },
+    {
+      "n": 4,
+      "stem": "ABLE",
+      "accept": ["ability"],
+      "explanation_es": "Tras el posesivo «our» va un nombre: «ability to do something». «Inability» no encaja con el sentido de la frase."
+    },
+    {
+      "n": 5,
+      "stem": "IMPRESS",
+      "accept": ["impression"],
+      "explanation_es": "Colocación: «make an impression». Tras «the» hace falta un nombre."
+    },
+    {
+      "n": 6,
+      "stem": "FORTUNE",
+      "accept": ["Fortunately"],
+      "explanation_es": "Adverbio de frase al principio, seguido de coma. La frase trae una buena noticia, así que no es «unfortunately»."
+    },
+    {
+      "n": 7,
+      "stem": "EFFECT",
+      "accept": ["effective"],
+      "explanation_es": "Tras el adverbio «surprisingly» y el verbo «is» va un adjetivo: effective = eficaz."
+    },
+    {
+      "n": 8,
+      "stem": "CERTAIN",
+      "accept": ["uncertainty"],
+      "explanation_es": "«Moments of» + nombre. Hace falta el sentido negativo: prefijo un- y sufijo -ty."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

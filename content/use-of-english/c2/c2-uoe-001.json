@@ -1,0 +1,67 @@
+{
+  "id": "c2-uoe-001",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "part": "mcq_cloze",
+  "title": "In praise of boredom",
+  "summary_es": "Una defensa del aburrimiento. Matices entre palabras casi sinónimas y expresiones idiomáticas.",
+  "est_minutes": 10,
+  "text": "Boredom has few defenders. We go to extraordinary {{1}} to avoid it, filling every idle moment with a screen, and we regard a bored child as a problem to be {{2}} rather than a normal state of affairs. Yet a growing body of research suggests that this aversion may be {{3}}. Boredom, on this view, is not an absence of stimulation so much as a signal that our current activity has ceased to be meaningful, and as such it {{4}} us to look for something that is. Deprived of that signal, we lose a powerful {{5}} for change. Novelists and composers have long {{6}} to the creative value of empty hours, and experiments now bear them {{7}}: participants set a tedious task subsequently generate more original ideas than those who were kept entertained. None of this is to romanticise tedium, which in its chronic form is closely {{8}} with depression. But the occasional dull afternoon may be precisely what an overstimulated mind requires.",
+  "gaps": [
+    {
+      "n": 1,
+      "options": ["distances", "lengths", "extents", "measures"],
+      "answer": 1,
+      "explanation_es": "«Go to great / extraordinary lengths to do something» = hacer lo indecible por."
+    },
+    {
+      "n": 2,
+      "options": ["healed", "mended", "repaired", "fixed"],
+      "answer": 3,
+      "explanation_es": "Un problema se «arregla» con fix. «Heal» es para heridas, y «mend» y «repair», para objetos."
+    },
+    {
+      "n": 3,
+      "options": ["misplaced", "mislaid", "displaced", "misled"],
+      "answer": 0,
+      "explanation_es": "«Misplaced» se dice de un sentimiento dirigido a lo que no lo merece: misplaced fear, trust, loyalty. «Mislaid» es haber perdido un objeto."
+    },
+    {
+      "n": 4,
+      "options": ["evokes", "invokes", "prompts", "elicits"],
+      "answer": 2,
+      "explanation_es": "«Prompt someone to do something» = impulsar a alguien a hacer algo. Los otros tres no admiten esa estructura."
+    },
+    {
+      "n": 5,
+      "options": ["impulse", "instinct", "momentum", "impetus"],
+      "answer": 3,
+      "explanation_es": "«An impetus for change» = un estímulo para el cambio. «Momentum» es incontable y no admite «a»."
+    },
+    {
+      "n": 6,
+      "options": ["attested", "vouched", "confirmed", "asserted"],
+      "answer": 0,
+      "explanation_es": "«Attest to something» = dar fe de algo. «Vouch» va con for, y «confirm» y «assert» no llevan preposición."
+    },
+    {
+      "n": 7,
+      "options": ["up", "out", "off", "through"],
+      "answer": 1,
+      "explanation_es": "«Bear someone out» = darle la razón, confirmar lo que dice."
+    },
+    {
+      "n": 8,
+      "options": ["related", "attached", "associated", "joined"],
+      "answer": 2,
+      "explanation_es": "«Closely associated with». «Related» y «attached» van con to."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

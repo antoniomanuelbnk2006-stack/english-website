@@ -11,7 +11,7 @@ import {
   PublishedReading,
 } from './schema';
 
-type Listening = z.infer<typeof ListeningDraft>;
+type Listening = z.infer<typeof PublishedListening>;
 type Reading = z.infer<typeof PublishedReading>;
 
 const lessonsDir = path.join(process.cwd(), 'content', 'lessons');
@@ -19,8 +19,9 @@ const readJson = (relative: string): unknown =>
   JSON.parse(readFileSync(path.join(lessonsDir, relative), 'utf8'));
 
 // Las dos lecciones de ejemplo de la documentación sirven de datos de prueba.
-const listening = (): Listening => ListeningDraft.parse(readJson('b1/listening/b1-lis-001.json'));
-// La lectura está publicada (con tokens, lemas e informe de calidad); la escucha es un borrador.
+const listening = (): Listening =>
+  PublishedListening.parse(readJson('b1/listening/b1-lis-001.json'));
+// Las dos están publicadas (con tokens, lemas, informe de calidad y, la escucha, su audio).
 const reading = (): Reading => PublishedReading.parse(readJson('b1/reading/b1-rea-001.json'));
 
 const codes = (lesson: Parameters<typeof checkInvariants>[0], relativePath?: string) =>
@@ -296,7 +297,8 @@ describe('lecciones publicadas', () => {
   });
 
   it('I-11 · una lección marcada como publicada sin anotar no pasa', () => {
-    const lesson = { ...listening(), status: 'published' as const };
+    // El borrador, tal como sale de escribirlo: sin tokens, tiempos, audio ni informe.
+    const lesson = { ...ListeningDraft.parse(listening()), status: 'published' as const };
     expect(codes(lesson)).toEqual(['I-11']);
   });
 });
@@ -324,9 +326,10 @@ describe('I-12 · versión', () => {
   });
 
   it('no afecta a borradores ni a cambios que no tocan texto o tareas', () => {
-    const draftChanged = listening();
+    const draft = () => ({ ...listening(), status: 'draft' as const });
+    const draftChanged = draft();
     draftChanged.segments[0]!.text = 'Hi!';
-    expect(checkVersionBump(listening(), draftChanged)).toEqual([]);
+    expect(checkVersionBump(draft(), draftChanged)).toEqual([]);
 
     const glossaryOnly = published();
     glossaryOnly.glossary[0]!.def_es = '¿qué hay?';

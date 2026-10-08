@@ -1,0 +1,67 @@
+{
+  "id": "b2-uoe-005",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "part": "mcq_cloze",
+  "title": "Working from a café",
+  "summary_es": "Trabajar desde una cafetería: ventajas, quejas y normas no escritas. Expresiones fijas y verbos con preposición.",
+  "est_minutes": 8,
+  "text": "More and more people now choose to work from cafés rather than from home or an office. At first {{1}}, the idea seems odd: cafés are noisy, the wifi is unreliable and the chairs are rarely comfortable. Yet research suggests that a moderate level of background noise can actually {{2}} creativity. There is also a social side. Even if you never {{3}} a word with the people around you, simply being among others who are busy can make it easier to {{4}} on your own work. Not everyone is convinced. Café owners complain that some customers {{5}} a table for hours after buying a single coffee, and several cafés have {{6}} time limits or switched off the wifi at lunchtime. Regular remote workers say the solution is simple: order something every hour or so, {{7}} your voice down during calls and, above all, do not {{8}} it for granted that the table is yours for the day.",
+  "gaps": [
+    {
+      "n": 1,
+      "options": ["sight", "look", "view", "eye"],
+      "answer": 0,
+      "explanation_es": "Expresión fija: «at first sight» = a primera vista."
+    },
+    {
+      "n": 2,
+      "options": ["rise", "boost", "enlarge", "extend"],
+      "answer": 1,
+      "explanation_es": "«Boost» = potenciar, dar un empujón a algo (creativity, sales, confidence). «Rise» no lleva complemento, y «enlarge» y «extend» son para tamaño o duración."
+    },
+    {
+      "n": 3,
+      "options": ["change", "tell", "talk", "exchange"],
+      "answer": 3,
+      "explanation_es": "«Exchange a word with someone» = cruzar una palabra con alguien."
+    },
+    {
+      "n": 4,
+      "options": ["attend", "devote", "concentrate", "pay"],
+      "answer": 2,
+      "explanation_es": "«Concentrate on». Las otras van con to: attend to, devote yourself to, pay attention to."
+    },
+    {
+      "n": 5,
+      "options": ["spend", "last", "occupy", "pass"],
+      "answer": 2,
+      "explanation_es": "Una mesa se «ocupa» (occupy a table). «Spend» y «pass» van con tiempo, y «last» no lleva complemento."
+    },
+    {
+      "n": 6,
+      "options": ["invented", "introduced", "presented", "entered"],
+      "answer": 1,
+      "explanation_es": "«Introduce a rule / a limit» = implantar una norma. Es la colocación habitual para medidas nuevas."
+    },
+    {
+      "n": 7,
+      "options": ["hold", "put", "stay", "keep"],
+      "answer": 3,
+      "explanation_es": "«Keep your voice down» = hablar bajo."
+    },
+    {
+      "n": 8,
+      "options": ["take", "have", "make", "get"],
+      "answer": 0,
+      "explanation_es": "«Take it for granted that…» = dar por hecho que…"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

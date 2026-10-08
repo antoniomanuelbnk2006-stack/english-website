@@ -1,0 +1,74 @@
+{
+  "id": "b2-uoe-004",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "part": "key_word_transformation",
+  "title": "Key word transformations 1",
+  "summary_es": "Seis frases: estilo indirecto, modales de deducción, pasiva, «wish» y «such».",
+  "est_minutes": 10,
+  "min_words": 2,
+  "max_words": 5,
+  "items": [
+    {
+      "n": 1,
+      "original": "I haven't been to the cinema for six months.",
+      "keyword": "LAST",
+      "before": "The",
+      "after": "to the cinema was six months ago.",
+      "parts": [["last time"], ["I went", "that I went"]],
+      "explanation_es": "«I haven't… for six months» = «the last time I went was six months ago». Al fijar un momento pasado, el verbo pasa a past simple."
+    },
+    {
+      "n": 2,
+      "original": "\"You should see a doctor,\" Maria told me.",
+      "keyword": "ADVISED",
+      "before": "Maria",
+      "after": "a doctor.",
+      "parts": [["advised me"], ["to see"]],
+      "explanation_es": "Estilo indirecto de un consejo: advise + persona + to + infinitivo."
+    },
+    {
+      "n": 3,
+      "original": "It's possible that Tom missed the bus.",
+      "keyword": "MIGHT",
+      "before": "Tom",
+      "after": "the bus.",
+      "parts": [["might have"], ["missed"]],
+      "explanation_es": "Posibilidad sobre el pasado: might + have + participio."
+    },
+    {
+      "n": 4,
+      "original": "The exam was so difficult that nobody finished it.",
+      "keyword": "SUCH",
+      "before": "It was",
+      "after": "that nobody finished it.",
+      "parts": [["such a"], ["difficult exam"]],
+      "explanation_es": "So + adjetivo = such + a/an + adjetivo + nombre. Con un nombre contable en singular no se puede omitir el artículo."
+    },
+    {
+      "n": 5,
+      "original": "I regret not studying harder at school.",
+      "keyword": "WISH",
+      "before": "I",
+      "after": "harder at school.",
+      "parts": [["wish I"], ["had studied"]],
+      "explanation_es": "Arrepentimiento sobre el pasado: wish + past perfect."
+    },
+    {
+      "n": 6,
+      "original": "They are building a new bridge across the river.",
+      "keyword": "BEING",
+      "before": "A new bridge",
+      "after": "across the river.",
+      "parts": [["is being"], ["built"]],
+      "explanation_es": "Pasiva del presente continuo: is/are + being + participio."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

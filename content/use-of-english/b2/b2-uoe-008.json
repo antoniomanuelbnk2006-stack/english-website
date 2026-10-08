@@ -1,0 +1,74 @@
+{
+  "id": "b2-uoe-008",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "part": "key_word_transformation",
+  "title": "Key word transformations 2",
+  "summary_es": "Seis frases: «in spite of», «would rather», verbos frasales, present perfect, necesidad y pasiva impersonal.",
+  "est_minutes": 10,
+  "min_words": 2,
+  "max_words": 5,
+  "items": [
+    {
+      "n": 1,
+      "original": "Although it was raining, we went for a walk.",
+      "keyword": "SPITE",
+      "before": "We went for a walk",
+      "after": "the rain.",
+      "parts": [["in spite"], ["of"]],
+      "explanation_es": "Although + oración = in spite of + nombre. Ojo: «in spite of», pero «despite» sin of."
+    },
+    {
+      "n": 2,
+      "original": "I'd prefer you not to tell anyone about this.",
+      "keyword": "RATHER",
+      "before": "I'd",
+      "after": "anyone about this.",
+      "parts": [["rather you"], ["didn't tell", "did not tell"]],
+      "explanation_es": "Would rather + sujeto + pasado: para decir lo que preferimos que haga otra persona, el verbo va en pasado aunque se hable del presente."
+    },
+    {
+      "n": 3,
+      "original": "Could you look after my cat while I'm away?",
+      "keyword": "CARE",
+      "before": "Could you",
+      "after": "my cat while I'm away?",
+      "parts": [["take care"], ["of"]],
+      "explanation_es": "Look after = take care of (cuidar de)."
+    },
+    {
+      "n": 4,
+      "original": "The last time I saw Anna was at her wedding.",
+      "keyword": "SEEN",
+      "before": "I",
+      "after": "her wedding.",
+      "parts": [["haven't seen", "have not seen"], ["Anna since"]],
+      "explanation_es": "«The last time… was» = present perfect negativo + since + el momento."
+    },
+    {
+      "n": 5,
+      "original": "It wasn't necessary for you to bring any food.",
+      "keyword": "NEED",
+      "before": "You",
+      "after": "any food.",
+      "parts": [["didn't need", "did not need"], ["to bring"]],
+      "explanation_es": "Falta de necesidad en el pasado: didn't need to + infinitivo."
+    },
+    {
+      "n": 6,
+      "original": "People say that the castle is haunted.",
+      "keyword": "SAID",
+      "before": "The castle",
+      "after": "haunted.",
+      "parts": [["is said"], ["to be"]],
+      "explanation_es": "Pasiva impersonal: sujeto + is said + to + infinitivo. Muy frecuente en noticias."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}
