@@ -4,8 +4,9 @@ import Link from 'next/link';
 import { buttonVariants } from '@/components/ui/button';
 import { EmptyState } from '@/components/ui/page';
 import { PanelTitle } from '@/components/ui/panel';
-import { CEFR_LEVELS } from '@/features/level/lib/bands';
+import { CEFR_LEVELS, type CefrLevel } from '@/features/level/lib/bands';
 import {
+  ALL_LEVELS,
   LESSON_STATUSES,
   filterLessons,
   filtersToQuery,
@@ -16,7 +17,7 @@ import {
   type LessonStatus,
 } from '@/features/lessons/lib/library';
 import { getProgressByLesson } from '@/features/lessons/server/queries';
-import { getCoverageByLesson } from '@/features/lexicon/server/queries';
+import { getCoverageByLesson, getUserLevel } from '@/features/lexicon/server/queries';
 import { getLessonIndex, unitTitle } from '@/lib/content/index';
 import type { TranslationKey } from '@/lib/i18n';
 import { getT } from '@/lib/i18n/server';
@@ -32,10 +33,12 @@ const STATUS_LABEL: Record<LessonStatus, TranslationKey> = {
 function FilterRow({
   label,
   basePath,
+  defaultLevel,
   options,
 }: {
   label: string;
   basePath: Route;
+  defaultLevel: CefrLevel;
   options: { key: string; text: string; filters: LibraryFilters; active: boolean }[];
 }) {
   return (
@@ -45,7 +48,7 @@ function FilterRow({
         {options.map((option) => (
           <li key={option.key}>
             <Link
-              href={{ pathname: basePath, query: filtersToQuery(option.filters) }}
+              href={{ pathname: basePath, query: filtersToQuery(option.filters, defaultLevel) }}
               aria-current={option.active ? 'true' : undefined}
               className={cn(
                 'flex h-8 items-center rounded-full border px-3 text-sm transition-colors duration-150 pointer-coarse:h-11',
@@ -88,13 +91,19 @@ export async function LessonLibrary({
     );
   }
 
-  const [progress, coverage] = await Promise.all([getProgressByLesson(), getCoverageByLesson(all)]);
+  const [progress, coverage, userLevel] = await Promise.all([
+    getProgressByLesson(),
+    getCoverageByLesson(all),
+    getUserLevel(),
+  ]);
   const statusById = new Map(all.map((lesson) => [lesson.id, statusOf(progress.get(lesson.id))]));
   const topics = [...new Set(all.map((lesson) => lesson.topic))].sort();
   const levels = CEFR_LEVELS.filter((level) => all.some((lesson) => lesson.level === level));
-  const filters = parseFilters(searchParams, topics);
+  // Sin nivel en la URL, se enseña el del usuario; «Todos» lo quita.
+  const filters = parseFilters(searchParams, topics, userLevel);
+  const nothingAtMyLevel = !all.some((lesson) => lesson.level === userLevel);
   const groups = groupByUnit(filterLessons(all, statusById, filters));
-  const hasFilters = Object.keys(filtersToQuery(filters)).length > 0;
+  const hasFilters = Object.keys(filtersToQuery(filters, userLevel)).length > 0;
 
   return (
     <div className="flex flex-col gap-6">
@@ -105,6 +114,7 @@ export async function LessonLibrary({
         <FilterRow
           label={t('library.level')}
           basePath={basePath}
+          defaultLevel={userLevel}
           options={[
             {
               key: 'all',
@@ -123,6 +133,7 @@ export async function LessonLibrary({
         <FilterRow
           label={t('library.status')}
           basePath={basePath}
+          defaultLevel={userLevel}
           options={[
             {
               key: 'all',
@@ -142,6 +153,7 @@ export async function LessonLibrary({
           <FilterRow
             label={t('library.topic')}
             basePath={basePath}
+            defaultLevel={userLevel}
             options={[
               {
                 key: 'all',
@@ -160,7 +172,22 @@ export async function LessonLibrary({
         ) : null}
       </nav>
 
-      {groups.length === 0 ? (
+      {groups.length === 0 && !hasFilters && nothingAtMyLevel ? (
+        <EmptyState
+          icon={emptyIcon}
+          title={t('library.noLevelTitle', { level: userLevel })}
+          action={
+            <Link
+              href={{ pathname: basePath, query: { nivel: ALL_LEVELS } }}
+              className={buttonVariants({ variant: 'secondary' })}
+            >
+              {t('library.seeAllLevels')}
+            </Link>
+          }
+        >
+          {t('library.noLevelBody')}
+        </EmptyState>
+      ) : groups.length === 0 ? (
         <EmptyState
           icon={SearchX}
           title={t('library.emptyTitle')}

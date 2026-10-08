@@ -39,6 +39,7 @@ export const en: Dictionary = {
     journal: 'Journal',
     settings: 'Settings',
     signOut: 'Sign out',
+    useOfEnglish: 'Use of English',
   },
   login: {
     title: 'Sign in to Señal',
@@ -74,6 +75,27 @@ export const en: Dictionary = {
     towards: '{pct}% → {next}',
     estimated: 'Estimated',
     lowConfidence: 'Estimate based on little data',
+    chooseTitle: 'Choose your level',
+    chooseFirst:
+      'First things first: tell us where you are. Your level decides which texts, audio and exercises you see.',
+    chooseAgain: 'You can change it whenever you like: it only changes what you are shown first.',
+    chooseNote:
+      'If you are between two, pick the lower one: it is better to understand almost everything and move up soon. The placement test will come later.',
+    save: 'Save level',
+    content: '{n} items',
+    contentOne: '1 item',
+    descA1:
+      'You are starting out. You understand very basic words and phrases when people speak slowly.',
+    descA2:
+      'You understand frequent sentences and expressions about familiar topics: family, shopping, work, places.',
+    descB1:
+      'You understand the main points of clear speech and of texts on topics you know. You can get by on a trip.',
+    descB2:
+      'You follow conversations and news at normal speed and read articles with viewpoints. This is the B2 First level.',
+    descC1:
+      'You understand long speeches, films and complex texts, and catch what is implied. This is the C1 Advanced level.',
+    descC2:
+      'You understand practically everything you hear and read, nuances included. This is the C2 Proficiency level.',
   },
   today: {
     title: 'Today',
@@ -96,6 +118,12 @@ export const en: Dictionary = {
     journalCta: 'Log listening or reading',
     journalHint: 'A podcast, video or book outside the app',
     levelsTitle: 'Your level',
+    yourLevel: 'Your level: {level}',
+    changeLevel: 'Change level',
+    uoeCta: 'Use of English',
+    uoeHint: 'Exam-format practice',
+    grammarCta: 'Grammar',
+    grammarHint: 'Short notes with a mini practice',
   },
   pending: {
     title: 'Not here yet',
@@ -241,6 +269,9 @@ export const en: Dictionary = {
     noReadingBody: 'Reading lessons will appear here once they are published in content/.',
     noListeningBody:
       'Listening lessons need audio. Generate the first one with the pipeline (pnpm content:tts) and it will appear here.',
+    noLevelTitle: 'Nothing at level {level} here yet',
+    noLevelBody: 'You can browse other levels while content for yours arrives.',
+    seeAllLevels: 'See all levels',
   },
   reading: {
     title: 'Read',
@@ -498,6 +529,7 @@ export const en: Dictionary = {
     emptyBody:
       'Finish a lesson and harvest what you want to remember: the cards will show up here.',
     shortcuts: 'Shortcuts: space shows the answer, 1–4 rate it and R plays the audio.',
+    openExercise: 'Open the exercise',
   },
   vocabulary: {
     subtitle:
@@ -552,5 +584,44 @@ export const en: Dictionary = {
     noLessonsYet: 'There are no published lessons with this structure yet.',
     related: 'Related notes',
     inThisLesson: 'Grammar in this lesson',
+  },
+  uoe: {
+    subtitle: 'Grammar and vocabulary in Cambridge exam format, matched to your level.',
+    emptyTitle: 'No exercises yet',
+    emptyBody: 'Exercises will show up here once they are published in content/use-of-english.',
+    partMcq: 'Part 1 · Multiple-choice cloze',
+    partMcqBody:
+      'A text with gaps and several options per gap. It tests vocabulary: collocations, phrasal verbs and shades of meaning between similar words.',
+    partOpen: 'Part 2 · Open cloze',
+    partOpenBody:
+      'One word per gap, no options. It tests grammar: prepositions, articles, auxiliaries, pronouns and linkers.',
+    partFormation: 'Part 3 · Word formation',
+    partFormationBody:
+      'Change the given word (prefixes, suffixes, plural, negative form) so that it fits the gap.',
+    partTransformation: 'Part 4 · Key word transformations',
+    partTransformationBody:
+      'Rewrite the sentence with the given word, unchanged, so that it means the same.',
+    howMcq: 'Choose the option that best fits each gap.',
+    howOpen: 'Write one word in each gap.',
+    howFormation: 'In each gap, write the correct form of the word in capitals next to it.',
+    howTransformation:
+      'Complete the second sentence so that it means the same as the first, using the given word without changing it.',
+    wordLimit:
+      'Between {min} and {max} words, including the given word. Contractions count as two.',
+    wordCount: '{n} words',
+    wordCountOne: '1 word',
+    sentence: 'Sentence {n}',
+    check: 'Check answers',
+    score: 'Marks: {marks} of {total} ({pct} %)',
+    marksOf: '{marks} of {max} marks',
+    halfRight: 'Half right',
+    blank: '(blank)',
+    noteWordLimit: 'Outside the word limit: in the exam it scores nothing.',
+    noteKeyword: 'The given word is missing or changed: in the exam it scores nothing.',
+    addMissed: 'Add {n} misses to review',
+    backToIndex: 'Back to Use of English',
+    marks: '{n} marks',
+    disclaimer:
+      'Original exercises in the format of the Cambridge English exams (A2 Key, B1 Preliminary, B2 First, C1 Advanced and C2 Proficiency). Señal is not affiliated with Cambridge.',
   },
 };

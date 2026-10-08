@@ -9,6 +9,7 @@ import { parseArgs } from 'node:util';
 import { z } from 'zod';
 import { checkFicha, parseFicha } from '../../src/lib/content/grammar-schema';
 import { LessonMeta } from '../../src/lib/content/schema';
+import { checkUoeSet, UoeSet } from '../../src/lib/content/uoe-schema';
 import { checkLesson } from './lib/check-lesson';
 import { CONTENT_DIR, INDEX_FILE, listLessonFiles, readJson } from './lib/io';
 import { loadWordLists } from './lib/wordlists';
@@ -78,6 +79,42 @@ async function checkGrammar(): Promise<{ count: number; errors: number }> {
     }
   }
   return { count, errors };
+}
+
+/** Ejercicios de Use of English: esquema y reglas (huecos, palabra dada, límite de palabras). */
+function checkUseOfEnglish(): { count: number; published: number; errors: number } {
+  const root = path.join(CONTENT_DIR, 'use-of-english');
+  if (!existsSync(root)) return { count: 0, published: 0, errors: 0 };
+  let count = 0;
+  let published = 0;
+  let errors = 0;
+  for (const level of readdirSync(root).sort()) {
+    for (const file of readdirSync(path.join(root, level)).sort()) {
+      if (!file.endsWith('.json')) continue;
+      count++;
+      const id = file.slice(0, -'.json'.length);
+      const issues: string[] = [];
+      let status = '?';
+      try {
+        const set = UoeSet.parse(JSON.parse(readFileSync(path.join(root, level, file), 'utf8')));
+        status = set.status;
+        if (set.status === 'published') published++;
+        issues.push(...checkUoeSet(set, { id, level }));
+      } catch (error) {
+        issues.push(
+          error instanceof z.ZodError
+            ? error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join(' · ')
+            : error instanceof Error
+              ? error.message
+              : String(error),
+        );
+      }
+      console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (use of english · ${status})`);
+      for (const message of issues) console.log(`    ✗ ${message}`);
+      errors += issues.length;
+    }
+  }
+  return { count, published, errors };
 }
 
 async function main(): Promise<number> {
@@ -150,9 +187,11 @@ async function main(): Promise<number> {
 
   const fichas = await checkGrammar();
   errorCount += fichas.errors;
+  const uoe = checkUseOfEnglish();
+  errorCount += uoe.errors;
 
   console.log(
-    `\n${files.length} lección(es): ${published.length} publicada(s) · ${fichas.count} ficha(s) de gramática · ${errorCount} error(es) · ${warningCount} aviso(s).`,
+    `\n${files.length} lección(es): ${published.length} publicada(s) · ${fichas.count} ficha(s) de gramática · ${uoe.count} ejercicio(s) de Use of English · ${errorCount} error(es) · ${warningCount} aviso(s).`,
   );
   return errorCount > 0 ? 1 : 0;
 }

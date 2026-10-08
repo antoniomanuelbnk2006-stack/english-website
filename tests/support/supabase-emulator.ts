@@ -478,6 +478,9 @@ async function handleTestControl(
     await testDb.db.query('delete from auth.users');
     refreshTokens.clear();
     const id = await testDb.createUser(TEST_EMAIL);
+    // Los tests parten de un usuario que ya eligió nivel (B1); el primer acceso real, no:
+    // ese flujo tiene su propio test, que borra el nivel antes de entrar.
+    await testDb.db.query(`update public.profiles set declared_level = 'B1' where id = $1`, [id]);
     return { status: 200, json: { id, email: TEST_EMAIL } };
   }
   if (url.pathname === '/__test/query') {

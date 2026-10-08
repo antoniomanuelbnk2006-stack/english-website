@@ -1,6 +1,15 @@
-import { BookOpen, Headphones, Layers, NotebookPen, type LucideIcon } from 'lucide-react';
+import {
+  BookOpen,
+  GraduationCap,
+  Headphones,
+  Layers,
+  NotebookPen,
+  PencilRuler,
+  type LucideIcon,
+} from 'lucide-react';
 import type { Metadata, Route } from 'next';
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 import { PageContainer, PageHeader } from '@/components/ui/page';
 import { Panel, PanelTitle } from '@/components/ui/panel';
 import { RingProgress } from '@/components/ui/ring-progress';
@@ -24,6 +33,13 @@ const SHORTCUTS: { href: Route; icon: LucideIcon; title: TranslationKey; hint?: 
     { href: '/leer', icon: BookOpen, title: 'today.readCta', hint: 'today.readHint' },
     // El texto del repaso depende de cuántas tarjetas toquen ahora.
     { href: '/repasar', icon: Layers, title: 'today.reviewCta' },
+    {
+      href: '/use-of-english',
+      icon: GraduationCap,
+      title: 'today.uoeCta',
+      hint: 'today.uoeHint',
+    },
+    { href: '/gramatica', icon: PencilRuler, title: 'today.grammarCta', hint: 'today.grammarHint' },
     { href: '/diario', icon: NotebookPen, title: 'today.journalCta', hint: 'today.journalHint' },
   ];
 
@@ -37,6 +53,9 @@ export default async function TodayPage() {
     getMinutesOn(today),
     getDueCount(),
   ]);
+  // Lo primero es saber el nivel: de él depende lo que se enseña en cada sección.
+  if (!profile.declaredLevel) redirect('/nivel');
+
   const reviewHint =
     due === 0
       ? t('today.reviewNone')
@@ -58,6 +77,15 @@ export default async function TodayPage() {
       <PageHeader
         title={t('today.title')}
         subtitle={<span className="first-letter:uppercase">{dateLabel}</span>}
+        actions={
+          <Link
+            href="/nivel"
+            aria-label={`${t('today.yourLevel', { level: profile.declaredLevel })}. ${t('today.changeLevel')}`}
+            className="hud flex h-11 items-center rounded-full border border-border px-4 text-sm text-muted transition-colors duration-150 hover:border-accent hover:text-accent"
+          >
+            {t('today.yourLevel', { level: profile.declaredLevel })}
+          </Link>
+        }
       />
 
       <Panel className="flex items-center gap-5">

@@ -14,6 +14,7 @@ import { Chip, PanelTitle } from '@/components/ui/panel';
 import { fichaState, type FichaState } from '@/features/grammar/lib/practice';
 import { CEFR_LEVELS } from '@/features/level/lib/bands';
 import { getProgressByLesson } from '@/features/lessons/server/queries';
+import { getUserLevel } from '@/features/lexicon/server/queries';
 import { getGrammarIndex } from '@/lib/content/grammar';
 import type { TranslationKey } from '@/lib/i18n';
 import { getT } from '@/lib/i18n/server';
@@ -45,8 +46,11 @@ export default async function GrammarPage() {
     );
   }
 
-  const progress = await getProgressByLesson();
-  const levels = CEFR_LEVELS.filter((level) => fichas.some((ficha) => ficha.level === level));
+  const [progress, userLevel] = await Promise.all([getProgressByLesson(), getUserLevel()]);
+  // Primero las fichas de tu nivel; después, el resto en orden.
+  const levels = CEFR_LEVELS.filter((level) => fichas.some((ficha) => ficha.level === level)).sort(
+    (a, b) => Number(b === userLevel) - Number(a === userLevel),
+  );
 
   return (
     <PageContainer>

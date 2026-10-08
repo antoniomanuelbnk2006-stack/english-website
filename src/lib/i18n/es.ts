@@ -38,6 +38,7 @@ export const es = {
     journal: 'Diario',
     settings: 'Ajustes',
     signOut: 'Cerrar sesión',
+    useOfEnglish: 'Use of English',
   },
   login: {
     title: 'Entra en Señal',
@@ -73,6 +74,27 @@ export const es = {
     towards: '{pct} % → {next}',
     estimated: 'Estimado',
     lowConfidence: 'Estimación con pocos datos',
+    chooseTitle: 'Elige tu nivel',
+    chooseFirst:
+      'Lo primero: dinos por dónde vas. Según tu nivel verás unos textos, audios y ejercicios u otros.',
+    chooseAgain: 'Puedes cambiarlo cuando quieras: solo cambia lo que se te enseña primero.',
+    chooseNote:
+      'Si dudas entre dos, elige el más bajo: es mejor entender casi todo y subir pronto. El test de nivel llegará más adelante.',
+    save: 'Guardar nivel',
+    content: '{n} contenidos',
+    contentOne: '1 contenido',
+    descA1:
+      'Empiezas de cero o casi. Entiendes palabras y frases muy básicas si te hablan despacio.',
+    descA2:
+      'Entiendes frases y expresiones frecuentes sobre temas cercanos: familia, compras, trabajo, lugares.',
+    descB1:
+      'Entiendes las ideas principales de un habla clara y de textos sobre temas que conoces. Te defiendes en un viaje.',
+    descB2:
+      'Sigues conversaciones y noticias a velocidad normal y lees artículos con puntos de vista. Es el nivel del B2 First.',
+    descC1:
+      'Entiendes discursos largos, películas y textos complejos, y captas lo implícito. Es el nivel del C1 Advanced.',
+    descC2:
+      'Entiendes prácticamente todo lo que oyes y lees, con sus matices. Es el nivel del C2 Proficiency.',
   },
   today: {
     title: 'Hoy',
@@ -95,6 +117,12 @@ export const es = {
     journalCta: 'Registrar escucha o lectura',
     journalHint: 'Podcast, vídeo o libro fuera de la app',
     levelsTitle: 'Tu nivel',
+    yourLevel: 'Tu nivel: {level}',
+    changeLevel: 'Cambiar de nivel',
+    uoeCta: 'Use of English',
+    uoeHint: 'Práctica en formato de examen',
+    grammarCta: 'Gramática',
+    grammarHint: 'Fichas breves con mini-práctica',
   },
   pending: {
     title: 'Todavía no está',
@@ -240,6 +268,9 @@ export const es = {
     noReadingBody: 'Las lecciones de lectura aparecerán aquí cuando se publiquen en content/.',
     noListeningBody:
       'Las lecciones de escucha necesitan audio. Genera el de la primera con el pipeline (pnpm content:tts) y aparecerá aquí.',
+    noLevelTitle: 'Aún no hay nada de nivel {level} aquí',
+    noLevelBody: 'Puedes ver lo que hay de otros niveles mientras llega contenido del tuyo.',
+    seeAllLevels: 'Ver todos los niveles',
   },
   reading: {
     title: 'Leer',
@@ -495,6 +526,7 @@ export const es = {
     emptyBody:
       'Termina una lección y cosecha lo que quieras recordar: las tarjetas aparecerán aquí.',
     shortcuts: 'Atajos: espacio muestra la respuesta, 1–4 valoran y R reproduce el audio.',
+    openExercise: 'Ver el ejercicio',
   },
   vocabulary: {
     subtitle: 'Tu léxico personal: lo que conoces, lo que estás aprendiendo y lo que aún no.',
@@ -548,6 +580,46 @@ export const es = {
     noLessonsYet: 'Todavía no hay lecciones publicadas con esta estructura.',
     related: 'Fichas relacionadas',
     inThisLesson: 'Gramática de esta lección',
+  },
+  uoe: {
+    subtitle: 'Gramática y vocabulario en formato de examen de Cambridge, según tu nivel.',
+    emptyTitle: 'Aún no hay ejercicios',
+    emptyBody: 'Los ejercicios aparecerán aquí cuando se publiquen en content/use-of-english.',
+    partMcq: 'Parte 1 · Elegir la palabra',
+    partMcqBody:
+      'Un texto con huecos y varias opciones por hueco. Mide vocabulario: colocaciones, verbos frasales y matices entre palabras parecidas.',
+    partOpen: 'Parte 2 · Completar el texto',
+    partOpenBody:
+      'Una sola palabra por hueco, sin opciones. Mide gramática: preposiciones, artículos, auxiliares, pronombres y conectores.',
+    partFormation: 'Parte 3 · Formar palabras',
+    partFormationBody:
+      'Cambia la palabra dada (prefijos, sufijos, plural, forma negativa) para que encaje en el hueco.',
+    partTransformation: 'Parte 4 · Transformar frases',
+    partTransformationBody:
+      'Reescribe la frase con la palabra dada, sin cambiarla, de modo que signifique lo mismo.',
+    howMcq: 'Elige la opción que mejor encaja en cada hueco.',
+    howOpen: 'Escribe una sola palabra en cada hueco.',
+    howFormation:
+      'Escribe en cada hueco la forma correcta de la palabra en mayúsculas que lo acompaña.',
+    howTransformation:
+      'Completa la segunda frase para que signifique lo mismo que la primera, usando la palabra dada sin cambiarla.',
+    wordLimit:
+      'Entre {min} y {max} palabras, contando la palabra dada. Las contracciones cuentan como dos.',
+    wordCount: '{n} palabras',
+    wordCountOne: '1 palabra',
+    sentence: 'Frase {n}',
+    check: 'Corregir',
+    score: 'Puntos: {marks} de {total} ({pct} %)',
+    marksOf: '{marks} de {max} puntos',
+    halfRight: 'Media respuesta',
+    blank: '(en blanco)',
+    noteWordLimit: 'Fuera del límite de palabras: en el examen no puntúa.',
+    noteKeyword: 'Falta la palabra dada o está cambiada: en el examen no puntúa.',
+    addMissed: 'Añadir {n} fallos al repaso',
+    backToIndex: 'Volver a Use of English',
+    marks: '{n} puntos',
+    disclaimer:
+      'Ejercicios originales con el formato de los exámenes de Cambridge English (A2 Key, B1 Preliminary, B2 First, C1 Advanced y C2 Proficiency). Señal no está afiliada a Cambridge.',
   },
 };
 

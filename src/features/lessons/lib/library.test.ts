@@ -44,6 +44,31 @@ describe('parseFilters', () => {
   });
 });
 
+describe('filtros con el nivel del usuario por defecto', () => {
+  it('sin nivel en la URL (o con uno que no vale) se filtra por el del usuario', () => {
+    expect(parseFilters({}, topics, 'B2').level).toBe('B2');
+    expect(parseFilters({ nivel: 'Z9' }, topics, 'B2').level).toBe('B2');
+  });
+
+  it('«todos» los enseña todos y otro nivel manda sobre el del usuario', () => {
+    expect(parseFilters({ nivel: 'todos' }, topics, 'B2').level).toBeUndefined();
+    expect(parseFilters({ nivel: 'A2' }, topics, 'B2').level).toBe('A2');
+  });
+
+  it('la URL solo lleva el nivel cuando no es el del usuario', () => {
+    expect(filtersToQuery({ level: 'B2' }, 'B2')).toEqual({});
+    expect(filtersToQuery({ level: 'A2' }, 'B2')).toEqual({ nivel: 'A2' });
+    expect(filtersToQuery({ status: 'done' }, 'B2')).toEqual({ nivel: 'todos', estado: 'done' });
+  });
+
+  it('ida y vuelta: lo que se escribe en la URL se vuelve a leer igual', () => {
+    for (const level of ['A2', 'B2', undefined] as const) {
+      const query = filtersToQuery({ level }, 'B2');
+      expect(parseFilters(query, topics, 'B2').level).toBe(level);
+    }
+  });
+});
+
 describe('filterLessons', () => {
   const ids = (filters: Parameters<typeof filterLessons>[2]) =>
     filterLessons(lessons, status, filters).map((l) => l.id);

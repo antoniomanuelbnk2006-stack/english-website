@@ -1,6 +1,7 @@
 'use client';
 
 import { CircleCheck, CircleX, Layers, PartyPopper, Play, TriangleAlert } from 'lucide-react';
+import type { Route } from 'next';
 import Link from 'next/link';
 import { useEffect, useEffectEvent, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { Button, buttonVariants } from '@/components/ui/button';
@@ -408,6 +409,16 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
     const prompt = splitPrompt(content.front.prompt);
     front = (
       <form onSubmit={check} className="flex flex-col gap-3">
+        {content.front.context ? (
+          <p lang="en" className="reading-md text-muted">
+            {content.front.context}
+          </p>
+        ) : null}
+        {content.front.hint ? (
+          <p lang="en" className="hud text-sm font-medium text-accent">
+            {content.front.hint}
+          </p>
+        ) : null}
         <p lang="en" className="reading-md flex flex-wrap items-baseline gap-x-1.5 gap-y-2">
           <span>{prompt.before}</span>
           <Input
@@ -459,12 +470,19 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
           </span>
         </p>
         <p className="text-sm text-muted">{content.back.rule_es}</p>
-        <Link
-          href={`/gramatica/${content.back.grammar_id}`}
-          className="self-start text-sm text-accent underline underline-offset-4"
-        >
-          {t('review.openFicha')}: <span lang="en">{content.back.title}</span>
-        </Link>
+        {content.back.grammar_id || content.back.uoe_id ? (
+          <Link
+            href={
+              (content.back.grammar_id
+                ? `/gramatica/${content.back.grammar_id}`
+                : `/use-of-english/${content.back.uoe_id}`) as Route
+            }
+            className="self-start text-sm text-accent underline underline-offset-4"
+          >
+            {t(content.back.grammar_id ? 'review.openFicha' : 'review.openExercise')}:{' '}
+            <span lang="en">{content.back.title}</span>
+          </Link>
+        ) : null}
       </>
     );
   }

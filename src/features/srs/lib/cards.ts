@@ -1,5 +1,7 @@
 import { z } from 'zod';
+import { sentenceWithGap } from '@/features/use-of-english/lib/grade';
 import type { Lesson } from '@/lib/content/schema';
+import { fullAnswers, type UoeSet } from '@/lib/content/uoe-schema';
 
 // Contenido de las tarjetas (docs/01-pedagogia/05-vocabulario-y-srs.md §7). Lógica pura.
 // El servidor monta cada tarjeta a partir del contenido de la lección: del cliente solo llega
@@ -53,12 +55,21 @@ export const CardContent = z.discriminatedUnion('kind', [
   }),
   z.object({
     kind: z.literal('grammar'),
-    front: z.object({ prompt: z.string().min(1) }),
+    front: z.object({
+      /** Frase con el hueco marcado con `___`. */
+      prompt: z.string().min(1),
+      /** Frase de partida (transformaciones de Use of English). */
+      context: z.string().optional(),
+      /** Pista: la palabra dada, la raíz o las opciones. */
+      hint: z.string().optional(),
+    }),
     back: z.object({
       answers: z.array(z.string().min(1)).min(1),
       rule_es: z.string().min(1),
-      grammar_id: z.string().min(1),
       title: z.string().min(1),
+      /** De dónde sale: una ficha de gramática o un ejercicio de Use of English. */
+      grammar_id: z.string().min(1).optional(),
+      uoe_id: z.string().min(1).optional(),
     }),
   }),
 ]);
@@ -187,6 +198,78 @@ export function buildGrammarCard(
       title: ficha.title,
     },
   };
+}
+
+/**
+ * Tarjeta de repaso a partir de un hueco o una frase de un ejercicio de Use of English.
+ * En los textos, la tarjeta lleva solo la frase del hueco, con los demás ya rellenos.
+ */
+export function buildUoeCard(set: UoeSet, n: number): NewCard | null {
+  const base = {
+    kind: 'grammar' as const,
+    lemma: null,
+    source_lesson_id: null,
+    source_segment_id: `${set.id}:${n}`,
+  };
+
+  if (set.part === 'key_word_transformation') {
+    const item = set.items.find((candidate) => candidate.n === n);
+    if (!item) return null;
+    return {
+      ...base,
+      front: {
+        prompt: `${item.before} ___ ${item.after}`.trim(),
+        context: item.original,
+        hint: item.keyword,
+      },
+      back: {
+        answers: fullAnswers(item),
+        rule_es: item.explanation_es,
+        title: set.title,
+        uoe_id: set.id,
+      },
+    };
+  }
+
+  if (!set.gaps.some((candidate) => candidate.n === n)) return null;
+  // Los demás huecos de la frase se rellenan con su respuesta modelo.
+  const model = (other: number): string => {
+    if (set.part === 'mcq_cloze') {
+      const found = set.gaps.find((g) => g.n === other);
+      return found?.options[found.answer] ?? '…';
+    }
+    return set.gaps.find((g) => g.n === other)?.accept[0] ?? '…';
+  };
+  const prompt = sentenceWithGap(set.text, n, model);
+
+  const back = (answers: string[], rule: string) => ({
+    answers,
+    rule_es: rule,
+    title: set.title,
+    uoe_id: set.id,
+  });
+
+  if (set.part === 'mcq_cloze') {
+    const found = set.gaps.find((g) => g.n === n);
+    if (!found) return null;
+    return {
+      ...base,
+      front: { prompt, hint: found.options.join(' · ') },
+      back: back([found.options[found.answer] ?? ''], found.explanation_es),
+    };
+  }
+  if (set.part === 'word_formation') {
+    const found = set.gaps.find((g) => g.n === n);
+    if (!found) return null;
+    return {
+      ...base,
+      front: { prompt, hint: found.stem },
+      back: back([...found.accept], found.explanation_es),
+    };
+  }
+  const found = set.gaps.find((g) => g.n === n);
+  if (!found) return null;
+  return { ...base, front: { prompt }, back: back([...found.accept], found.explanation_es) };
 }
 
 /** Parte una frase alrededor de la palabra de la tarjeta, para resaltarla. */

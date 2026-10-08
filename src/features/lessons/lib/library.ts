@@ -22,10 +22,18 @@ type SearchParams = Record<string, string | string[] | undefined>;
 
 const first = (value: string | string[] | undefined) => (Array.isArray(value) ? value[0] : value);
 
-/** Lee los filtros de la URL (`?nivel=B1&estado=new&tema=games`) ignorando valores que no valen. */
+/** Valor de `?nivel=` que pide ver todos los niveles cuando hay un nivel por defecto. */
+export const ALL_LEVELS = 'todos';
+
+/**
+ * Lee los filtros de la URL (`?nivel=B1&estado=new&tema=games`) ignorando valores que no valen.
+ * Con `defaultLevel` (el nivel del usuario), una URL sin `nivel` filtra por ese nivel y
+ * `?nivel=todos` los enseña todos.
+ */
 export function parseFilters(
   searchParams: SearchParams,
   topics: readonly string[],
+  defaultLevel?: CefrLevel,
 ): LibraryFilters {
   const level = first(searchParams.nivel);
   const status = first(searchParams.estado);
@@ -33,7 +41,9 @@ export function parseFilters(
   return {
     level: (CEFR_LEVELS as readonly string[]).includes(level ?? '')
       ? (level as CefrLevel)
-      : undefined,
+      : level === ALL_LEVELS
+        ? undefined
+        : defaultLevel,
     status: (LESSON_STATUSES as readonly string[]).includes(status ?? '')
       ? (status as LessonStatus)
       : undefined,
@@ -41,10 +51,14 @@ export function parseFilters(
   };
 }
 
-/** Parámetros de URL para unos filtros, sin los vacíos. */
-export function filtersToQuery(filters: LibraryFilters): Record<string, string> {
+/** Parámetros de URL para unos filtros, sin los vacíos (ni el nivel, si es el de por defecto). */
+export function filtersToQuery(
+  filters: LibraryFilters,
+  defaultLevel?: CefrLevel,
+): Record<string, string> {
   const query: Record<string, string> = {};
-  if (filters.level) query.nivel = filters.level;
+  if (filters.level && filters.level !== defaultLevel) query.nivel = filters.level;
+  if (!filters.level && defaultLevel) query.nivel = ALL_LEVELS;
   if (filters.status) query.estado = filters.status;
   if (filters.topic) query.tema = filters.topic;
   return query;

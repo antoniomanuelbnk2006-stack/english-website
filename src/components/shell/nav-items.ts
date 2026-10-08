@@ -3,6 +3,7 @@ import {
   BookOpen,
   CalendarDays,
   ChartNoAxesColumn,
+  GraduationCap,
   Headphones,
   Layers,
   NotebookPen,
@@ -32,6 +33,7 @@ export const PRIMARY_NAV: NavItem[] = [
 export const SECONDARY_NAV: NavItem[] = [
   { href: '/vocabulario', label: 'nav.vocabulary', icon: BookA },
   { href: '/gramatica', label: 'nav.grammar', icon: PencilRuler },
+  { href: '/use-of-english', label: 'nav.useOfEnglish', icon: GraduationCap },
   { href: '/escribir', label: 'nav.write', icon: PenLine },
   { href: '/progreso', label: 'nav.progress', icon: ChartNoAxesColumn },
   { href: '/diario', label: 'nav.journal', icon: NotebookPen },
