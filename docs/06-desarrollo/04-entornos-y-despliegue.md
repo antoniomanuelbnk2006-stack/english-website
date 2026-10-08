@@ -1,0 +1,181 @@
+# Entornos, configuración y despliegue
+
+> **Propósito:** montar el proyecto desde cero, configurar cada servicio externo y desplegar.
+> **Relacionado:** [Stack](../04-arquitectura/01-stack.md) · [Seguridad](../04-arquitectura/07-seguridad-y-privacidad.md) · [Roadmap · Fase 0](01-roadmap.md#fase-0--cimientos)
+
+---
+
+## 1. Requisitos en tu ordenador
+
+| Herramienta | Para qué |
+|---|---|
+| Node.js 22 o 24 LTS | Next.js 16 y scripts |
+| pnpm | Paquetes |
+| Docker | Supabase local |
+| ffmpeg | Pipeline de audio |
+| Git + GitHub | Repositorio y CI |
+
+---
+
+## 2. Crear el proyecto
+
+```bash
+pnpm create next-app@latest senal
+#   TypeScript: sí · ESLint: sí · Tailwind: sí · App Router: sí · carpeta src/: sí · alias @/*: sí
+cd senal
+pnpm dlx shadcn@latest init
+pnpm add zod @supabase/supabase-js @supabase/ssr ts-fsrs zustand lucide-react date-fns @date-fns/tz idb-keyval server-only
+pnpm add @anthropic-ai/sdk
+pnpm add -D supabase vitest @vitejs/plugin-react @testing-library/react @testing-library/dom jsdom @playwright/test @axe-core/playwright prettier tsx
+# Pipeline (solo scripts):
+pnpm add -D microsoft-cognitiveservices-speech-sdk @aws-sdk/client-s3 wink-nlp wink-eng-lite-web-model yaml
+```
+
+Después:
+1. Copia `docs/`, `CLAUDE.md` y `.claude/` de este paquete a la raíz del repo.
+2. `create-next-app` ya crea `AGENTS.md` con un bloque gestionado que apunta a la documentación de la versión instalada (`node_modules/next/dist/docs/`); en Next.js 16.3+, `next dev` lo mantiene al día cuando detecta un agente como Claude Code. *Commitéalo* (y no borres ese bloque).
+3. Crea `.env.local` y `.env.pipeline` a partir de `.env.example` (§8).
+
+---
+
+## 3. Supabase
+
+1. Crea el proyecto en [supabase.com](https://supabase.com) en una **región de la UE**. Plan Free.
+2. Local: `pnpm supabase init` → `pnpm supabase start` (Docker) → copia la URL y las claves *publishable*/*secret* locales que imprime.
+3. Migraciones: crea `supabase/migrations/0001_base.sql` con el contenido de [Base de datos §2](../04-arquitectura/03-base-de-datos.md#2-migración-base) → `pnpm supabase db reset` (local).
+4. Vincula y sube: `pnpm supabase link --project-ref <ref>` → `pnpm supabase db push`.
+5. **Auth:**
+   - Activa el proveedor **Email**.
+   - En **Email Templates → Magic Link**, incluye el código: `Tu código de Señal: {{ .Token }}` (así el email trae el OTP de 6 dígitos).
+   - Inicia sesión una vez con tu email para crear tu usuario.
+   - **Desactiva el registro de nuevos usuarios**.
+   - En el código, `signInWithOtp({ email, options: { shouldCreateUser: false } })` como segunda barrera.
+6. **API keys:** usa las claves nuevas **publishable** (`sb_publishable_…`) y **secret** (`sb_secret_…`); las heredadas `anon`/`service_role` se retiran a finales de 2026.
+7. Tipos: `pnpm db:types`.
+
+> **Pausa por inactividad:** los proyectos Free se pausan tras 7 días sin actividad. Los datos no se pierden; se reactiva desde el panel. Si vas a estar fuera, considera exportar tus datos antes.
+
+---
+
+## 4. Cloudflare R2 (audio)
+
+1. Crea el *bucket* `senal-audio` con *location hint* en Europa.
+2. **Acceso público de lectura:**
+   - Con dominio propio en Cloudflare: conecta `audio.tu-dominio.dev` al *bucket* (recomendado).
+   - Sin dominio: habilita el subdominio `r2.dev` (pensado para desarrollo y con límites; suficiente para uso personal).
+3. **CORS** del *bucket*:
+
+```json
+[
+  {
+    "AllowedOrigins": ["https://tu-app.vercel.app", "http://localhost:3000"],
+    "AllowedMethods": ["GET", "HEAD"],
+    "AllowedHeaders": ["Range"],
+    "ExposeHeaders": ["Accept-Ranges", "Content-Range", "Content-Length", "ETag"],
+    "MaxAgeSeconds": 86400
+  }
+]
+```
+
+4. Crea un **token de API** con permisos de lectura/escritura **solo para ese *bucket*** → `R2_ACCESS_KEY_ID` / `R2_SECRET_ACCESS_KEY` en `.env.pipeline`.
+
+---
+
+## 5. Azure AI Speech (TTS)
+
+1. En el portal de Azure crea un recurso **Speech** con plan **Free (F0)** en una región europea (p. ej., West Europe). Normalmente solo se permite un recurso F0 de este tipo por suscripción.
+2. Copia la **clave** y la **región** a `.env.pipeline`.
+3. Límite gratuito: **0,5 M caracteres/mes** de voces neuronales estándar (las voces HD no entran en la capa gratuita). El pipeline lleva la cuenta y avisa al 80 %.
+
+---
+
+## 6. Claude API
+
+1. Crea una clave en la consola de Claude.
+2. Configura un **límite de gasto mensual** en la consola (segunda barrera además del tope de la app).
+3. `ANTHROPIC_API_KEY` en Vercel (para el writing) y en `.env.pipeline` (para generar contenido). Puedes usar **dos claves distintas** para separar costes.
+
+---
+
+## 7. Vercel
+
+1. Importa el repo de GitHub (plan **Hobby**: uso personal y no comercial).
+2. Variables de entorno de producción (§8, solo las de la app).
+3. Región de funciones cercana a tu proyecto de Supabase si tu plan lo permite.
+4. Cada *push* a `main` despliega; cada PR genera una *preview*.
+5. Añade el dominio de producción a `AllowedOrigins` del CORS de R2 y a las *Redirect URLs* de Supabase Auth.
+
+---
+
+## 8. Variables de entorno
+
+`.env.example`:
+
+```bash
+# ── App (Vercel + .env.local) ──────────────────────────────
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
+NEXT_PUBLIC_AUDIO_BASE_URL=https://audio.tu-dominio.dev
+ALLOWED_EMAIL=tu-email@ejemplo.com
+ANTHROPIC_API_KEY=
+AI_WRITING_MODEL=claude-sonnet-5-5
+AI_DAILY_LIMIT=10
+AI_MONTHLY_BUDGET_USD=5
+
+# ── Pipeline (.env.pipeline, SOLO en tu ordenador) ─────────
+SUPABASE_SECRET_KEY=
+AZURE_SPEECH_KEY=
+AZURE_SPEECH_REGION=westeurope
+TTS_PROVIDER=azure
+R2_ACCOUNT_ID=
+R2_ACCESS_KEY_ID=
+R2_SECRET_ACCESS_KEY=
+R2_BUCKET=senal-audio
+AI_GEN_MODEL=claude-sonnet-5-5
+AI_REVIEW_MODEL=claude-opus-5-5
+AI_CHEAP_MODEL=claude-haiku-5-5
+```
+
+---
+
+## 9. Scripts de `package.json`
+
+| Script | Comando |
+|---|---|
+| `dev` | `next dev` |
+| `build` / `start` | `next build` / `next start` |
+| `typecheck` | `tsc --noEmit` |
+| `lint` | `eslint .` |
+| `format` | `prettier --write .` |
+| `test` | `vitest run` |
+| `e2e` | `playwright test` |
+| `db:start` / `db:reset` / `db:push` | `supabase start` / `supabase db reset` / `supabase db push` |
+| `db:types` | `supabase gen types typescript --local > src/lib/supabase/database.types.ts` |
+| `db:backup` | `supabase db dump --data-only -f ../senal-backups/$(date +%F).sql` |
+| `content:*` | `tsx --env-file=.env.pipeline scripts/content/<script>.ts` |
+| `ai:eval` | `tsx --env-file=.env.pipeline scripts/ai/eval.ts` |
+| `studio` | `next dev` (Studio solo existe en desarrollo) |
+
+---
+
+## 10. `.gitignore` (añadidos)
+
+```gitignore
+.env*
+!.env.example
+.audio-cache/
+*.m4a
+*.wav
+content/.batches/
+```
+
+---
+
+## 11. Flujo de despliegue
+
+```
+rama feat/… → PR → CI (check + e2e) → squash merge a main → Vercel despliega producción
+                                         └─ si hay migración: pnpm supabase db push ANTES del merge
+```
+
+Orden con migraciones: **primero** la migración (compatible hacia atrás), **después** el código que la usa.

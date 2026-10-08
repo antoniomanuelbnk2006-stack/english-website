@@ -1,0 +1,80 @@
+# Señal — instrucciones para Claude Code
+
+@AGENTS.md
+
+## Qué es este proyecto
+
+**Señal** es una web app personal (PWA) para aprender inglés de A1 a C2, centrada en **listening** y **reading**. La usa **una sola persona** (el dueño del repo, hispanohablante de España, nivel B1 al empezar). Toda la documentación está en `docs/`; el índice está en `README.md`.
+
+## Antes de escribir código
+
+1. Mira en qué fase estamos en `docs/06-desarrollo/01-roadmap.md` y lee los documentos que cita esa fase.
+2. Next.js 16 tiene cambios importantes respecto a versiones anteriores: **consulta `node_modules/next/dist/docs/`** (ver `AGENTS.md`) antes de usar cualquier API de Next (`proxy.ts`, APIs de petición asíncronas, caché…).
+3. Si una petición contradice `docs/`, **pregunta** antes de seguir. Si cambias una decisión, crea un ADR en `docs/adr/`.
+4. Propón un plan corto antes de cambios grandes y trabaja en pasos pequeños con tests en verde.
+
+## Stack
+
+Next.js 16 (App Router, Turbopack, `proxy.ts`) · React 19.2 · TypeScript estricto · Tailwind CSS v4 + shadcn/ui · Zod v4 · Supabase (Postgres + Auth OTP + RLS, claves publishable/secret, `@supabase/ssr`) · Cloudflare R2 (audio) · Azure AI Speech (TTS, solo en el pipeline) · ts-fsrs (FSRS-6) · Claude API (`claude-sonnet-5-5`, `claude-opus-5-5`, `claude-haiku-5-5`) · Zustand (solo reproductor) · Vitest + Testing Library + Playwright + axe · Vercel Hobby.
+
+## Comandos
+
+| Tarea | Comando |
+|---|---|
+| Desarrollo | `pnpm dev` |
+| Comprobaciones | `pnpm typecheck && pnpm lint && pnpm test` |
+| e2e | `pnpm e2e` (requiere `pnpm db:start`) |
+| BD local | `pnpm db:start`, `pnpm db:reset`, `pnpm db:types` |
+| Contenido | `pnpm content:validate`, `content:annotate`, `content:tts`, `content:audio`, `content:upload`, `content:index`, `content:generate`, `content:review`, `content:run` |
+| Evaluación de prompts | `pnpm ai:eval` (cuesta dinero: solo si se pide) |
+
+## Estructura
+
+- `src/app/` rutas (UI en español: `/hoy`, `/escuchar`, `/leer`, `/repasar`, …). `src/app/studio/` solo en desarrollo.
+- `src/features/<feature>/{components,server,lib}`: `server/actions.ts` (Server Actions), `server/queries.ts` (`server-only`), `lib/` = **lógica pura con tests al lado**.
+- `src/lib/`: `supabase/`, `content/` (esquemas Zod del contenido), `ai/`, `audio/`, `offline/`, `i18n/`, `env.ts`, `dates.ts`.
+- `content/`: lecciones JSON, fichas MDX, drills, bancos de test, especificaciones YAML, listas de palabras. **Fuente de verdad del contenido.**
+- `scripts/content/`: pipeline (se ejecuta en local, nunca en Vercel).
+- `supabase/migrations/`: SQL versionado.
+
+## Reglas estrictas
+
+**NUNCA**
+1. Exponer `ANTHROPIC_API_KEY`, `SUPABASE_SECRET_KEY`, claves de Azure o de R2 al cliente o al repo.
+2. Usar la clave *secret* de Supabase en el código de la app (todo va como el usuario autenticado, con RLS).
+3. Crear una tabla sin `user_id`, RLS y política en la misma migración; editar una migración ya aplicada.
+4. Enviar al cliente la transcripción de una lección de escucha antes de la fase 3 del ciclo.
+5. Calcular XP por clics o por rapidez; solo por tiempo activo.
+6. Llamar a la IA desde el cliente o saltarse los límites diario y mensual.
+7. Meter contenido con derechos de terceros en `content/`; *commitear* audio (`*.m4a`, `*.wav`, `.audio-cache/`).
+8. Usar `any`, colores *hex* en componentes o `new Date().toISOString().slice(0, 10)` para «el día».
+
+**SIEMPRE**
+1. Validar con Zod toda entrada externa (acciones, Route Handlers, contenido, respuestas de IA, variables de entorno).
+2. Server Actions con la forma estándar: `(input: unknown) => Promise<ActionResult<T>>`, Zod → `requireUser()` → lógica → resultado.
+3. Lógica de dominio (Elo, plan diario, dictado, cobertura, SRS, XP, rachas, corrección de tareas) **pura, determinista y con tests** en `lib/`.
+4. Calcular días, rachas y límites en **Europe/Madrid** (`src/lib/dates.ts`).
+5. Server Components por defecto; `'use client'` solo en hojas interactivas.
+6. Textos de interfaz en español vía `src/lib/i18n/es.ts`; contenido en inglés con `lang="en"`.
+7. Accesibilidad: elementos interactivos reales, foco visible, todo usable con teclado.
+8. **Mensajes de commit en inglés** (Conventional Commits): el dueño practica *writing* con ellos.
+
+## Contenido
+
+- Para crear, generar, revisar o publicar lecciones usa la skill **`crear-leccion`** (`.claude/skills/crear-leccion/`).
+- El contrato es `src/lib/content/schema.ts` (= `docs/04-arquitectura/04-modelo-de-contenido.md`).
+- Cambiar una lección publicada ⇒ subir `version`. `pnpm content:validate` antes de cada *commit* de contenido.
+
+## Mapa de documentación
+
+| Necesitas… | Lee |
+|---|---|
+| Visión y alcance | `docs/00-vision/01-vision-y-alcance.md` |
+| Método de listening (ciclo, dictado, causas) | `docs/01-pedagogia/03-listening.md` |
+| Reading, vocabulario/SRS, gramática, evaluación | `docs/01-pedagogia/` |
+| Qué contenido va en cada nivel | `docs/02-curriculo/{A1..C2}.md` |
+| Pantallas, plan diario, gamificación, diseño | `docs/03-producto/` |
+| Stack, carpetas, BD, contenido, audio, IA, seguridad, PWA | `docs/04-arquitectura/` |
+| Pipeline, QA, licencias, prompts, ejemplos | `docs/05-contenido/` |
+| Roadmap, convenciones, testing, despliegue, prompts por fase | `docs/06-desarrollo/` |
+| Decisiones de arquitectura | `docs/adr/` |

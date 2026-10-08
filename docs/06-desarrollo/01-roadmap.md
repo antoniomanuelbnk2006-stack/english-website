@@ -1,0 +1,204 @@
+# Roadmap
+
+> **Propósito:** fases cerradas, cada una con alcance, entregables y criterios de aceptación comprobables. Lo que no esté en la fase actual va a la lista «después».
+> **Relacionado:** [Funcionalidades](../03-producto/01-funcionalidades.md) · [Prompts por fase](05-prompts-por-fase.md) · [Testing](03-testing-y-calidad.md)
+
+**Ritmo supuesto:** 10–15 h/semana de desarrollo. **v1 (fases 0–7): 12–16 semanas.**
+
+> **Importante:** no esperes a la app para estudiar. Tu [plan](../07-tu-plan/01-plan-b1-a-b2.md) empieza el día 1 con recursos externos; cada fase sustituye una parte de ellos.
+
+---
+
+## Vista general
+
+| Fase | Nombre | Duración | Resultado |
+|---|---|---|---|
+| 0 | Cimientos | 1 sem. | Proyecto desplegado, acceso OTP, BD con RLS, CI |
+| 1 | Contenido y lectura | 1–2 sem. | Lecciones de lectura usables + diario de input |
+| 2 | Listening + audio mínimo | 2–3 sem. | Ciclo de escucha completo con dictado diagnóstico |
+| 3 | Vocabulario, SRS y gramática | 2 sem. | **MVP**: uso diario real |
+| 4 | Generación con IA + QA + Studio | 2 sem. | Primer lote de ~40 lecciones B1–B2 |
+| 5 | Nivel, plan diario y progreso | 2 sem. | «Hoy» decide por ti; rating por destreza |
+| 6 | Writing con IA + confirmación | 1–2 sem. | Feedback de writing; pruebas de nivel |
+| 7 | PWA y sin conexión | 1 sem. | Instalable; escuchar en el metro sin cobertura |
+| 8 | Expansión | Continua | *Shadowing*, clásicos, más contenido, mejoras |
+
+---
+
+## Fase 0 · Cimientos
+
+**Alcance:** F-001, F-002 (básico), F-003.
+
+**Entregables**
+- Repo con Next.js 16 (TypeScript estricto, Tailwind v4, shadcn/ui, ESLint + Prettier, Vitest, Playwright).
+- `docs/`, `CLAUDE.md`, `AGENTS.md` y la skill `crear-leccion` en el repo.
+- Supabase local (`supabase start`) y proyecto remoto (región UE); migración `0001_base.sql`; tipos generados.
+- `proxy.ts` con sesión y lista de emails; login por **código OTP**; registro desactivado.
+- `src/lib/env.ts` con validación Zod.
+- Shell: navegación (inferior en móvil, lateral en escritorio), tema oscuro con tokens, fuentes.
+- CI en GitHub Actions; despliegue en Vercel.
+
+**Criterios de aceptación**
+- [ ] `pnpm typecheck && pnpm lint && pnpm test && pnpm build` pasan en local y en CI.
+- [ ] Con tu email recibes un código, entras y ves `/hoy` (vacío). Con otro email no se puede entrar (e2e).
+- [ ] Test de RLS: un segundo usuario de prueba no puede leer filas del primero (local).
+- [ ] Faltar una variable de entorno obligatoria rompe el arranque con un mensaje claro.
+- [ ] Producción desplegada en Vercel con las variables configuradas.
+
+---
+
+## Fase 1 · Contenido y lectura
+
+**Alcance:** F-010, F-012, F-013, F-040, F-043, F-044, F-026, F-085.
+
+**Entregables**
+- `src/lib/content/schema.ts` (esquemas del [modelo de contenido](../04-arquitectura/04-modelo-de-contenido.md)), `loader.ts` y `index.ts`.
+- Scripts `content:validate`, `content:annotate` (tokens, lemas, listas CEFR, cobertura) y `content:index`.
+- Las 2 [lecciones de ejemplo](../05-contenido/ejemplos/README.md) en `content/` (la de lectura publicada sin audio todavía).
+- Motor de tareas: `mcq`, `true_false_ng`, `gap_fill`, `short_answer`, `heading_match`, `matching`, `ordering` (corrección pura + componentes).
+- `/leer` (biblioteca) y `/leer/[id]` (fases 0–3 del ciclo de lectura; cosecha como *stub*).
+- `submitAttempts` + función SQL `apply_lesson_attempts` (sin Elo aún: rating fijo).
+- Diario de input (`/diario`) y registro rápido desde `/hoy`.
+- (Opcional) Importar el CSV del diario que hayas llevado a mano antes de tener la app ([rutina](../07-tu-plan/02-rutina-semanal.md#4-registro-mientras-no-hay-app)).
+
+**Criterios de aceptación**
+- [ ] `content:validate` detecta un ID de evidencia roto y un `answer` inexistente (tests).
+- [ ] Haces `b1-rea-001` de principio a fin; se guardan intentos, nota y ppm.
+- [ ] Corrección de huecos tolerante a mayúsculas, espacios y variantes aceptadas (tests).
+- [ ] Registras 20 min de un podcast en ≤ 2 toques desde el móvil.
+
+---
+
+## Fase 2 · Listening + pipeline mínimo de audio
+
+**Alcance:** F-011, F-020 a F-025, F-045.
+
+**Entregables**
+- Scripts `content:tts` (Azure, caché local, contador de caracteres), `content:audio` (ffmpeg, tiempos, picos) y `content:upload` (R2).
+- `b1-lis-001` publicada con audio y tiempos por palabra.
+- Reproductor (Zustand + `HTMLAudioElement`): segmentos, velocidad, atajos, onda, karaoke.
+- Ciclo de escucha completo (fases 0–7); transcripción no enviada al cliente antes de la fase 3.
+- Dictado: normalización, alineación, propuesta de causa; `listening_diagnostics`.
+- Drills iniciales: formas débiles (banco de 30), reducciones, números.
+- Lectura + audio en las lecciones de lectura.
+
+**Criterios de aceptación**
+- [ ] Tests del dictado con al menos 20 casos dorados (equivalencias *gonna*/*going to*, números, segmentación, palabras desconocidas).
+- [ ] El karaoke no provoca re-render de la transcripción completa (verificado con React DevTools/Profiler).
+- [ ] Toda la lección se completa solo con teclado; `axe` sin violaciones serias.
+- [ ] La transcripción no aparece en la respuesta de red antes de completar la fase 2.
+- [ ] El audio de `b1-lis-001` está entre −17 y −15 LUFS y a 133–147 ppm.
+
+---
+
+## Fase 3 · Vocabulario, SRS y gramática → **MVP**
+
+**Alcance:** F-015, F-041, F-042, F-046, F-048, F-060 a F-065.
+
+**Entregables**
+- Léxico (`lexicon`), *popover* de glosario, marcado de desconocidas, cobertura por texto.
+- SRS con `ts-fsrs` (recalculado en servidor), tarjetas `word`, `chunk`, `audio`, `grammar`; `/repasar` con atajos; límites diarios.
+- Cosecha priorizada al terminar lecciones.
+- 5 fichas de gramática B1 en MDX (las de prioridad «muy alta»).
+
+**Criterios de aceptación**
+- [ ] Tras 7 días de uso real, el SRS programa repasos coherentes (sin avalanchas; respeta 10 nuevas/día).
+- [ ] Tarjeta de audio: reproduce exactamente el segmento y sugiere la valoración según el dictado.
+- [ ] La biblioteca muestra «para ti: NN %» y cambia al marcar palabras.
+- [ ] **Usas Señal a diario** para escucha intensiva, lectura y repaso (sustituye esa parte de los recursos externos).
+
+---
+
+## Fase 4 · Generación con IA, QA y Studio
+
+**Alcance:** F-014, F-143 + producción de contenido.
+
+**Entregables**
+- `content:generate` (Batch + salida estructurada), `content:review` (dos llamadas), `content:run`, perfiles de nivel.
+- `/studio` (solo desarrollo): lista con métricas, reproducción, aprobar/devolver.
+- `pnpm ai:eval` para generación.
+- **Primer lote:** B1 u01–u06 y B2 u01–u03 (~40 lecciones) + biblioteca extensiva inicial (2 series B1).
+
+**Criterios de aceptación**
+- [ ] Un lote de 6 lecciones se genera, revisa y publica con ≤ 15 min de tu tiempo.
+- [ ] ≥ 80 % de las lecciones generadas pasan el QA a la primera.
+- [ ] Coste medio por lección publicada ≤ 0,10 $ (medido con `usage`).
+- [ ] TTS dentro de la capa gratuita del mes (contador).
+
+---
+
+## Fase 5 · Nivel, plan diario y progreso
+
+**Alcance:** F-004, F-028, F-047, F-080 a F-082, F-084, F-120 a F-122.
+
+**Entregables**
+- Test de nivel (sí/no + adaptativos) con su banco generado.
+- Elo por destreza (`lib/elo.ts`) integrado en `submitAttempts`; `rating_history`.
+- Motor del plan diario (`buildDailyPlan`, puro) + `/hoy` con «por qué».
+- `/progreso` (niveles, horas, palabras, «Tu oído»).
+- XP, racha con comodines, misiones y logros.
+- Exportar datos.
+
+**Criterios de aceptación**
+- [ ] Tests del motor del plan: los 6 casos de [Motor del plan §6](../03-producto/03-motor-del-plan-diario.md#6-tests-mínimos).
+- [ ] Tests del Elo: convergencia en simulación (un «alumno» simulado de 1250 acaba en 1250 ± 60 tras 150 ítems).
+- [ ] El plan del día es estable (no cambia al recargar) y se marca solo al completar actividades.
+
+---
+
+## Fase 6 · Writing con IA y pruebas de confirmación
+
+**Alcance:** F-083, F-100 a F-105.
+
+**Entregables**
+- Consignas por nivel; editor; Route Handler con límites; historial; cosecha de errores.
+- `pnpm ai:eval` de writing (conjunto dorado de 15 textos).
+- Bancos de pruebas de confirmación B1 y B2 (Listening y Reading) y flujo de prueba.
+
+**Criterios de aceptación**
+- [ ] El límite diario y el tope mensual cortan las llamadas (tests con el SDK simulado).
+- [ ] El conjunto dorado: recall ≥ 80 %, 0 correcciones en frases limpias.
+- [ ] Una prueba de confirmación completa actualiza el nivel confirmado.
+
+---
+
+## Fase 7 · PWA y sin conexión
+
+**Alcance:** F-027, F-140 a F-142.
+
+**Entregables**
+- Manifiesto, iconos, *service worker* (Serwist para Turbopack o manual), estrategia de caché.
+- Descarga de lecciones, `/offline/[id]`, cola en IndexedDB y sincronización.
+- Media Session API.
+
+**Criterios de aceptación**
+- [ ] En modo avión, una lección descargada se reproduce completa en Android y en iOS (documenta el comportamiento en segundo plano de tu iPhone).
+- [ ] Intentos hechos sin red aparecen en la BD al recuperar la conexión, sin duplicados.
+- [ ] Los botones de auriculares/pantalla de bloqueo saltan de frase.
+
+---
+
+## Fase 8 · Expansión (continua)
+
+Por orden de valor para ti:
+1. Más contenido B2 (u07–u12) y biblioteca extensiva B2.
+2. *Shadowing* con grabación local (F-029).
+3. Optimizador de FSRS con tu historial (F-066).
+4. Paquetes de refuerzo A1–A2 según lo que detecte el test.
+5. C1 (cuando confirmes B2).
+6. Clásicos de dominio público con audio alineado (F-016).
+7. Recordatorio diario por notificación (F-123).
+8. Importar audio propio (F-030).
+9. Speaking con transcripción y evaluación de pronunciación.
+10. (Valorar) app nativa si la PWA no cubre bien la escucha en segundo plano.
+
+---
+
+## Definición de «hecho» (todas las fases)
+
+- Tipos sin errores, sin `any`; lint limpio.
+- Tests de la lógica pura nueva; e2e del flujo principal tocado.
+- Accesible por teclado; sin violaciones serias de `axe`.
+- Probado en móvil (al menos en el simulador de Chrome + tu teléfono al cerrar la fase).
+- Documentación actualizada (y un ADR si se tomó una decisión de arquitectura).
+- Sin errores en consola.
