@@ -139,6 +139,7 @@ export const es = {
     goHome: 'Ir a Hoy',
     saveFailed: 'No se ha podido guardar. Comprueba la conexión y reinténtalo.',
     lessonChanged: 'Esta lección se ha actualizado mientras la hacías. Recarga la página.',
+    signOutHint: 'Si sigue fallando, cierra sesión y vuelve a entrar.',
   },
   cefr: {
     A1: 'A1 · Acceso',

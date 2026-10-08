@@ -140,6 +140,7 @@ export const en: Dictionary = {
     goHome: 'Go to Today',
     saveFailed: "It couldn't be saved. Check your connection and try again.",
     lessonChanged: 'This lesson was updated while you were doing it. Reload the page.',
+    signOutHint: 'If it keeps failing, sign out and sign in again.',
   },
   cefr: {
     A1: 'A1 · Breakthrough',
