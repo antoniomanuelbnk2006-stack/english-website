@@ -315,6 +315,7 @@ export const LessonMeta = z.object({
   unit: UnitId,
   series: z.string(),
   title: z.string(),
+  summary_es: z.string(),            // una línea para la tarjeta de la biblioteca
   topic: Topic,
   genre: z.string(),
   accents: z.array(Accent),          // vacío en lectura sin audio

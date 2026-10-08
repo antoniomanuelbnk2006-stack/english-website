@@ -18,7 +18,10 @@
     "db:push": "supabase db push",
     "db:types": "supabase gen types typescript --linked > src/lib/supabase/database.types.ts",
     "db:types:local": "supabase gen types typescript --local > src/lib/supabase/database.types.ts",
-    "studio": "next dev"
+    "studio": "next dev",
+    "content:validate": "tsx --env-file-if-exists=.env.pipeline scripts/content/validate.ts",
+    "content:annotate": "tsx --env-file-if-exists=.env.pipeline scripts/content/annotate.ts",
+    "content:index": "tsx --env-file-if-exists=.env.pipeline scripts/content/build-index.ts"
   },
   "dependencies": {
     "@date-fns/tz": "^1.5.0",

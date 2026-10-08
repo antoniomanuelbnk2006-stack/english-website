@@ -1,0 +1,1101 @@
+{
+  "id": "b1-lis-001",
+  "version": 1,
+  "status": "draft",
+  "level": "B1",
+  "unit": "b1-u02",
+  "series": "b1-u02-night-sky",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Watching the Orionids",
+  "summary_es": "Maya llama a Leo para proponerle ir a ver la lluvia de estrellas de las Oriónidas lejos de las luces de la ciudad.",
+  "topic": "science-space",
+  "tags": ["planes", "astronomía", "horas", "acento británico"],
+  "can_do": ["L-B1-02", "L-B1-06", "L-B1-07", "L-B1-08"],
+  "grammar_focus": ["b1.future-forms-review"],
+  "vocab_focus": ["meteor shower", "light pollution", "forecast", "get used to", "pick up"],
+  "est_minutes": 14,
+  "prediction_prompt": "Two friends are planning a trip at night. What do you think they need to organise?",
+  "pre_teach": ["meteor shower", "light pollution", "comet"],
+  "speakers": [
+    { "id": "maya", "name": "Maya", "accent": "en-GB", "gender": "female", "voice": "en-GB-SoniaNeural" },
+    { "id": "leo", "name": "Leo", "accent": "en-US", "gender": "male", "voice": "en-US-AndrewNeural" }
+  ],
+  "target_wpm": 140,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "maya",
+      "text": "Hey Leo, have you got a minute? I want to ask you about next week.",
+      "tokens": [
+        { "t": "Hey", "l": "hey", "p": "INTJ", "w": false, "sp": true },
+        { "t": "Leo", "l": "leo", "p": "PROPN", "w": false },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+        { "t": "got", "l": "get", "p": "VERB", "w": true, "sp": true },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+        { "t": "minute", "l": "minute", "p": "NOUN", "w": true },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+        { "t": "want", "l": "want", "p": "VERB", "w": true, "sp": true },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+        { "t": "ask", "l": "ask", "p": "VERB", "w": true, "sp": true },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true },
+        { "t": "next", "l": "next", "p": "ADJ", "w": true, "sp": true },
+        { "t": "week", "l": "week", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s2",
+      "speaker": "leo",
+      "text": "Sure. What's up?",
+      "tokens": [
+        { "t": "Sure", "l": "sure", "p": "ADJ", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "What", "l": "what", "p": "PRON", "w": true },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "up", "l": "up", "p": "ADP", "w": true },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s3",
+      "speaker": "maya",
+      "text": "You know the Orionids, the meteor shower? It's going to be at its best on Tuesday night.",
+      "tokens": [
+        { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true },
+        { "t": "know", "l": "know", "p": "VERB", "w": true, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+        { "t": "Orionids", "l": "orionids", "p": "PROPN", "w": false },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+        { "t": "meteor", "l": "meteor", "p": "NOUN", "w": true, "sp": true },
+        { "t": "shower", "l": "shower", "p": "VERB", "w": true },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "going", "l": "go", "p": "VERB", "w": true, "sp": true },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+        { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+        { "t": "its", "l": "its", "p": "PRON", "w": true, "sp": true },
+        { "t": "best", "l": "good", "p": "ADJ", "w": true, "sp": true },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+        { "t": "Tuesday", "l": "tuesday", "p": "PROPN", "w": false, "sp": true },
+        { "t": "night", "l": "night", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s4",
+      "speaker": "maya",
+      "text": "So I was thinking we could go and watch it together.",
+      "tokens": [
+        { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+        { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "thinking", "l": "think", "p": "VERB", "w": true, "sp": true },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+        { "t": "could", "l": "could", "p": "AUX", "w": true, "sp": true },
+        { "t": "go", "l": "go", "p": "VERB", "w": true, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+        { "t": "watch", "l": "watch", "p": "VERB", "w": true, "sp": true },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+        { "t": "together", "l": "together", "p": "ADV", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s5",
+      "speaker": "leo",
+      "text": "Oh, nice! I've never actually seen a meteor shower.",
+      "tokens": [
+        { "t": "Oh", "l": "oh", "p": "INTJ", "w": false },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "nice", "l": "nice", "p": "ADJ", "w": true },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true },
+        { "t": "'ve", "l": "have", "p": "AUX", "w": true, "sp": true },
+        { "t": "never", "l": "never", "p": "ADV", "w": true, "sp": true },
+        { "t": "actually", "l": "actually", "p": "ADV", "w": true, "sp": true },
+        { "t": "seen", "l": "see", "p": "VERB", "w": true, "sp": true },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+        { "t": "meteor", "l": "meteor", "p": "NOUN", "w": true, "sp": true },
+        { "t": "shower", "l": "shower", "p": "VERB", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s6",
+      "speaker": "leo",
+      "text": "But where do you want to go? You can't see anything from here. There's way too much light.",
+      "tokens": [
+        { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+        { "t": "where", "l": "where", "p": "ADV", "w": true, "sp": true },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+        { "t": "want", "l": "want", "p": "VERB", "w": true, "sp": true },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+        { "t": "go", "l": "go", "p": "VERB", "w": true },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true },
+        { "t": "ca", "l": "can", "p": "AUX", "w": true },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true },
+        { "t": "see", "l": "see", "p": "VERB", "w": true, "sp": true },
+        { "t": "anything", "l": "anything", "p": "PRON", "w": true, "sp": true },
+        { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+        { "t": "here", "l": "here", "p": "ADV", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "There", "l": "there", "p": "PRON", "w": true },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "way", "l": "way", "p": "NOUN", "w": true, "sp": true },
+        { "t": "too", "l": "too", "p": "ADV", "w": true, "sp": true },
+        { "t": "much", "l": "much", "p": "ADV", "w": true, "sp": true },
+        { "t": "light", "l": "light", "p": "ADJ", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s7",
+      "speaker": "maya",
+      "text": "Exactly. That's the problem with the city: light pollution.",
+      "tokens": [
+        { "t": "Exactly", "l": "exactly", "p": "ADV", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "That", "l": "that", "p": "PRON", "w": true },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+        { "t": "problem", "l": "problem", "p": "NOUN", "w": true, "sp": true },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+        { "t": "city", "l": "city", "p": "NOUN", "w": true },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "light", "l": "light", "p": "ADJ", "w": true, "sp": true },
+        { "t": "pollution", "l": "pollution", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s8",
+      "speaker": "maya",
+      "text": "So I found a place about forty minutes away by car.",
+      "tokens": [
+        { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+        { "t": "found", "l": "find", "p": "VERB", "w": true, "sp": true },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+        { "t": "place", "l": "place", "p": "NOUN", "w": true, "sp": true },
+        { "t": "about", "l": "about", "p": "ADV", "w": true, "sp": true },
+        { "t": "forty", "l": "forty", "p": "NUM", "w": false, "sp": true },
+        { "t": "minutes", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+        { "t": "away", "l": "away", "p": "ADV", "w": true, "sp": true },
+        { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+        { "t": "car", "l": "car", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s9",
+      "speaker": "maya",
+      "text": "It's a small hill near a village called Ashford.",
+      "tokens": [
+        { "t": "It", "l": "it", "p": "PRON", "w": true },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+        { "t": "small", "l": "small", "p": "ADJ", "w": true, "sp": true },
+        { "t": "hill", "l": "hill", "p": "NOUN", "w": true, "sp": true },
+        { "t": "near", "l": "near", "p": "ADP", "w": true, "sp": true },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+        { "t": "village", "l": "village", "p": "NOUN", "w": true, "sp": true },
+        { "t": "called", "l": "call", "p": "VERB", "w": true, "sp": true },
+        { "t": "Ashford", "l": "ashford", "p": "PROPN", "w": false },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s10",
+      "speaker": "maya",
+      "text": "There's a car park at the top, and there are almost no lights around.",
+      "tokens": [
+        { "t": "There", "l": "there", "p": "PRON", "w": true },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+        { "t": "car", "l": "car", "p": "NOUN", "w": true, "sp": true },
+        { "t": "park", "l": "park", "p": "NOUN", "w": true, "sp": true },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+        { "t": "top", "l": "top", "p": "ADJ", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+        { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "almost", "l": "almost", "p": "ADV", "w": true, "sp": true },
+        { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true },
+        { "t": "lights", "l": "light", "p": "NOUN", "w": true, "sp": true },
+        { "t": "around", "l": "around", "p": "ADP", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s11",
+      "speaker": "leo",
+      "text": "Forty minutes isn't bad. What time are we talking about?",
+      "tokens": [
+        { "t": "Forty", "l": "forty", "p": "NUM", "w": false, "sp": true },
+        { "t": "minutes", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+        { "t": "is", "l": "be", "p": "AUX", "w": true },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true },
+        { "t": "bad", "l": "bad", "p": "ADJ", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "What", "l": "what", "p": "DET", "w": true, "sp": true },
+        { "t": "time", "l": "time", "p": "NOUN", "w": true, "sp": true },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+        { "t": "talking", "l": "talk", "p": "VERB", "w": true, "sp": true },
+        { "t": "about", "l": "about", "p": "ADP", "w": true },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s12",
+      "speaker": "maya",
+      "text": "Well, the best time is after midnight, around two or three in the morning.",
+      "tokens": [
+        { "t": "Well", "l": "well", "p": "ADV", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+        { "t": "best", "l": "good", "p": "ADJ", "w": true, "sp": true },
+        { "t": "time", "l": "time", "p": "NOUN", "w": true, "sp": true },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true },
+        { "t": "midnight", "l": "midnight", "p": "NOUN", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "around", "l": "around", "p": "ADP", "w": true, "sp": true },
+        { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true },
+        { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+        { "t": "three", "l": "three", "p": "NUM", "w": false, "sp": true },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+        { "t": "morning", "l": "morning", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s13",
+      "speaker": "leo",
+      "text": "Three in the morning? On a Tuesday? I've got work on Wednesday.",
+      "tokens": [
+        { "t": "Three", "l": "three", "p": "NUM", "w": false, "sp": true },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+        { "t": "morning", "l": "morning", "p": "NOUN", "w": true },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "On", "l": "on", "p": "ADP", "w": true, "sp": true },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+        { "t": "Tuesday", "l": "tuesday", "p": "PROPN", "w": false },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true },
+        { "t": "'ve", "l": "have", "p": "AUX", "w": true, "sp": true },
+        { "t": "got", "l": "get", "p": "VERB", "w": true, "sp": true },
+        { "t": "work", "l": "work", "p": "NOUN", "w": true, "sp": true },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+        { "t": "Wednesday", "l": "wednesday", "p": "PROPN", "w": false },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s14",
+      "speaker": "maya",
+      "text": "I know, I know. But we don't have to stay all night.",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+        { "t": "know", "l": "know", "p": "VERB", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+        { "t": "know", "l": "know", "p": "VERB", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+        { "t": "do", "l": "do", "p": "AUX", "w": true },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+        { "t": "stay", "l": "stay", "p": "VERB", "w": true, "sp": true },
+        { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true },
+        { "t": "night", "l": "night", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s15",
+      "speaker": "maya",
+      "text": "We could leave at half eleven, get there before midnight, and come back around two.",
+      "tokens": [
+        { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+        { "t": "could", "l": "could", "p": "AUX", "w": true, "sp": true },
+        { "t": "leave", "l": "leave", "p": "VERB", "w": true, "sp": true },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+        { "t": "half", "l": "half", "p": "NOUN", "w": true, "sp": true },
+        { "t": "eleven", "l": "eleven", "p": "NUM", "w": false },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true },
+        { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true },
+        { "t": "before", "l": "before", "p": "ADP", "w": true, "sp": true },
+        { "t": "midnight", "l": "midnight", "p": "NOUN", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+        { "t": "come", "l": "come", "p": "VERB", "w": true, "sp": true },
+        { "t": "back", "l": "back", "p": "ADV", "w": true, "sp": true },
+        { "t": "around", "l": "around", "p": "ADP", "w": true, "sp": true },
+        { "t": "two", "l": "two", "p": "NUM", "w": false },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s16",
+      "speaker": "leo",
+      "text": "Hmm, OK. That's not so bad. How many meteors are we gonna see? Like, hundreds?",
+      "tokens": [
+        { "t": "Hmm", "l": "hmm", "p": "PROPN", "w": false },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "OK", "l": "ok", "p": "INTJ", "w": false },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "That", "l": "that", "p": "PRON", "w": true },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+        { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+        { "t": "bad", "l": "bad", "p": "ADJ", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true },
+        { "t": "many", "l": "many", "p": "ADJ", "w": true, "sp": true },
+        { "t": "meteors", "l": "meteor", "p": "NOUN", "w": true, "sp": true },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+        { "t": "gonna", "l": "gonna", "p": "AUX", "w": true, "sp": true },
+        { "t": "see", "l": "see", "p": "VERB", "w": true },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Like", "l": "like", "p": "ADP", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "hundreds", "l": "hundred", "p": "NOUN", "w": true },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s17",
+      "speaker": "maya",
+      "text": "No, not hundreds. Maybe fifteen or twenty an hour, if we're lucky.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "DET", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+        { "t": "hundreds", "l": "hundred", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Maybe", "l": "maybe", "p": "ADV", "w": true, "sp": true },
+        { "t": "fifteen", "l": "fifteen", "p": "NUM", "w": false, "sp": true },
+        { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+        { "t": "twenty", "l": "twenty", "p": "NUM", "w": false, "sp": true },
+        { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+        { "t": "hour", "l": "hour", "p": "NOUN", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "if", "l": "if", "p": "SCONJ", "w": true, "sp": true },
+        { "t": "we", "l": "we", "p": "PRON", "w": true },
+        { "t": "'re", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "lucky", "l": "lucky", "p": "ADJ", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s18",
+      "speaker": "maya",
+      "text": "But some of them are really bright. And did you know they come from Halley's Comet?",
+      "tokens": [
+        { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+        { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+        { "t": "them", "l": "them", "p": "PRON", "w": true, "sp": true },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "really", "l": "really", "p": "ADV", "w": true, "sp": true },
+        { "t": "bright", "l": "bright", "p": "ADJ", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+        { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+        { "t": "know", "l": "know", "p": "VERB", "w": true, "sp": true },
+        { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+        { "t": "come", "l": "come", "p": "VERB", "w": true, "sp": true },
+        { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+        { "t": "Halley", "l": "halley", "p": "PROPN", "w": false },
+        { "t": "'s", "l": "'s", "p": "PART", "w": false, "sp": true },
+        { "t": "Comet", "l": "comet", "p": "PROPN", "w": false },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s19",
+      "speaker": "maya",
+      "text": "They're basically tiny bits of dust the comet left behind.",
+      "tokens": [
+        { "t": "They", "l": "they", "p": "PRON", "w": true },
+        { "t": "'re", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "basically", "l": "basically", "p": "ADV", "w": true, "sp": true },
+        { "t": "tiny", "l": "tiny", "p": "ADJ", "w": true, "sp": true },
+        { "t": "bits", "l": "bit", "p": "NOUN", "w": true, "sp": true },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+        { "t": "dust", "l": "dust", "p": "NOUN", "w": true, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+        { "t": "comet", "l": "comet", "p": "NOUN", "w": true, "sp": true },
+        { "t": "left", "l": "leave", "p": "VERB", "w": true, "sp": true },
+        { "t": "behind", "l": "behind", "p": "ADP", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s20",
+      "speaker": "leo",
+      "text": "Wait, seriously? That's pretty cool. What about the weather, though? It's been raining all week.",
+      "tokens": [
+        { "t": "Wait", "l": "wait", "p": "VERB", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "seriously", "l": "seriously", "p": "ADV", "w": true },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "That", "l": "that", "p": "PRON", "w": true },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "pretty", "l": "pretty", "p": "ADV", "w": true, "sp": true },
+        { "t": "cool", "l": "cool", "p": "VERB", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "What", "l": "what", "p": "PRON", "w": true, "sp": true },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+        { "t": "weather", "l": "weather", "p": "NOUN", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "though", "l": "though", "p": "SCONJ", "w": true },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "been", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "raining", "l": "rain", "p": "NOUN", "w": true, "sp": true },
+        { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true },
+        { "t": "week", "l": "week", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s21",
+      "speaker": "maya",
+      "text": "I checked the forecast this morning. Tuesday looks clear, but it's going to be cold, about four degrees.",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+        { "t": "checked", "l": "check", "p": "VERB", "w": true, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+        { "t": "forecast", "l": "forecast", "p": "NOUN", "w": true, "sp": true },
+        { "t": "this", "l": "this", "p": "DET", "w": true, "sp": true },
+        { "t": "morning", "l": "morning", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Tuesday", "l": "tuesday", "p": "NOUN", "w": true, "sp": true },
+        { "t": "looks", "l": "look", "p": "VERB", "w": true, "sp": true },
+        { "t": "clear", "l": "clear", "p": "ADJ", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+        { "t": "it", "l": "it", "p": "PRON", "w": true },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "going", "l": "go", "p": "VERB", "w": true, "sp": true },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+        { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+        { "t": "cold", "l": "cold", "p": "ADJ", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "about", "l": "about", "p": "ADV", "w": true, "sp": true },
+        { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true },
+        { "t": "degrees", "l": "degree", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s22",
+      "speaker": "maya",
+      "text": "So bring a warm jacket and maybe a blanket.",
+      "tokens": [
+        { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true },
+        { "t": "bring", "l": "bring", "p": "VERB", "w": true, "sp": true },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+        { "t": "warm", "l": "warm", "p": "ADJ", "w": true, "sp": true },
+        { "t": "jacket", "l": "jacket", "p": "NOUN", "w": true, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+        { "t": "maybe", "l": "maybe", "p": "ADV", "w": true, "sp": true },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+        { "t": "blanket", "l": "blanket", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s23",
+      "speaker": "leo",
+      "text": "Got it. Should I bring my telescope?",
+      "tokens": [
+        { "t": "Got", "l": "get", "p": "VERB", "w": true, "sp": true },
+        { "t": "it", "l": "it", "p": "PRON", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Should", "l": "should", "p": "AUX", "w": true, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+        { "t": "bring", "l": "bring", "p": "VERB", "w": true, "sp": true },
+        { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true },
+        { "t": "telescope", "l": "telescope", "p": "NOUN", "w": true },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s24",
+      "speaker": "maya",
+      "text": "Actually, no. Meteors move too fast, and a telescope only shows you a tiny part of the sky.",
+      "tokens": [
+        { "t": "Actually", "l": "actually", "p": "ADV", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "INTJ", "w": false },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Meteors", "l": "meteor", "p": "NOUN", "w": true, "sp": true },
+        { "t": "move", "l": "move", "p": "NOUN", "w": true, "sp": true },
+        { "t": "too", "l": "too", "p": "ADV", "w": true, "sp": true },
+        { "t": "fast", "l": "fast", "p": "ADV", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+        { "t": "telescope", "l": "telescope", "p": "NOUN", "w": true, "sp": true },
+        { "t": "only", "l": "only", "p": "ADV", "w": true, "sp": true },
+        { "t": "shows", "l": "show", "p": "VERB", "w": true, "sp": true },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+        { "t": "tiny", "l": "tiny", "p": "ADJ", "w": true, "sp": true },
+        { "t": "part", "l": "part", "p": "NOUN", "w": true, "sp": true },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+        { "t": "sky", "l": "sky", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s25",
+      "speaker": "maya",
+      "text": "Just use your eyes. Oh, and don't look at your phone.",
+      "tokens": [
+        { "t": "Just", "l": "just", "p": "ADV", "w": true, "sp": true },
+        { "t": "use", "l": "use", "p": "VERB", "w": true, "sp": true },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+        { "t": "eyes", "l": "eye", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Oh", "l": "oh", "p": "INTJ", "w": false },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+        { "t": "do", "l": "do", "p": "AUX", "w": true },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true },
+        { "t": "look", "l": "look", "p": "VERB", "w": true, "sp": true },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+        { "t": "phone", "l": "phone", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s26",
+      "speaker": "maya",
+      "text": "It takes about twenty minutes for your eyes to get used to the dark.",
+      "tokens": [
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+        { "t": "takes", "l": "take", "p": "VERB", "w": true, "sp": true },
+        { "t": "about", "l": "about", "p": "ADV", "w": true, "sp": true },
+        { "t": "twenty", "l": "twenty", "p": "NUM", "w": false, "sp": true },
+        { "t": "minutes", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+        { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+        { "t": "eyes", "l": "eye", "p": "NOUN", "w": true, "sp": true },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+        { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true },
+        { "t": "used", "l": "use", "p": "VERB", "w": true, "sp": true },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+        { "t": "dark", "l": "dark", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s27",
+      "speaker": "leo",
+      "text": "Twenty minutes? OK, no phone. I'll make some hot chocolate, then.",
+      "tokens": [
+        { "t": "Twenty", "l": "twenty", "p": "NUM", "w": false, "sp": true },
+        { "t": "minutes", "l": "minute", "p": "NOUN", "w": true },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "OK", "l": "ok", "p": "INTJ", "w": false },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true },
+        { "t": "phone", "l": "phone", "p": "NOUN", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true },
+        { "t": "'ll", "l": "will", "p": "AUX", "w": true, "sp": true },
+        { "t": "make", "l": "make", "p": "VERB", "w": true, "sp": true },
+        { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true },
+        { "t": "hot", "l": "hot", "p": "ADJ", "w": true, "sp": true },
+        { "t": "chocolate", "l": "chocolate", "p": "NOUN", "w": true },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "then", "l": "then", "p": "ADV", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s28",
+      "speaker": "maya",
+      "text": "Perfect. I'll pick you up at half eleven.",
+      "tokens": [
+        { "t": "Perfect", "l": "perfect", "p": "ADJ", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true },
+        { "t": "'ll", "l": "will", "p": "AUX", "w": true, "sp": true },
+        { "t": "pick", "l": "pick", "p": "VERB", "w": true, "sp": true },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+        { "t": "up", "l": "up", "p": "ADP", "w": true, "sp": true },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+        { "t": "half", "l": "half", "p": "NOUN", "w": true, "sp": true },
+        { "t": "eleven", "l": "eleven", "p": "NUM", "w": false },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ]
+    },
+    {
+      "id": "s29",
+      "speaker": "leo",
+      "text": "Great. See you on Tuesday!",
+      "tokens": [
+        { "t": "Great", "l": "great", "p": "ADJ", "w": true },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "See", "l": "see", "p": "VERB", "w": true, "sp": true },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+        { "t": "Tuesday", "l": "tuesday", "p": "PROPN", "w": false },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ]
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s1",
+      "phrase": "have you got a minute",
+      "type": "weak_form",
+      "ipa": "/həvjə ˈɡɒtə ˈmɪnɪt/",
+      "explanation_es": "*have* y *you* se reducen (/həv/, /jə/) y *got a* se enlaza: las cuatro palabras suenan casi como una sola."
+    },
+    {
+      "ref": "s1",
+      "phrase": "want to ask you about",
+      "type": "weak_form",
+      "ipa": "/wɒntə ˈɑːsk juː əˈbaʊt/",
+      "explanation_es": "*to* se pronuncia /tə/ y se pega a *want*; *ask you about* va enlazado."
+    },
+    {
+      "ref": "s13",
+      "phrase": "I've got work",
+      "type": "contraction",
+      "ipa": "/aɪv ˈɡɑːt wɝːk/",
+      "explanation_es": "De *I've* (I have) apenas se oye la /v/ antes de *got*."
+    },
+    {
+      "ref": "s16",
+      "phrase": "are we gonna see",
+      "type": "reduction",
+      "ipa": "/ə wi ˈɡʌnə siː/",
+      "explanation_es": "*going to* → *gonna* en habla informal; *are* casi desaparece (/ə/)."
+    },
+    {
+      "ref": "s20",
+      "phrase": "pretty cool",
+      "type": "flap",
+      "ipa": "/ˈprɪɾi kuːl/",
+      "explanation_es": "Leo es estadounidense: la *t* entre vocales suena como una *r* suave (flap)."
+    },
+    {
+      "ref": "s23",
+      "phrase": "Got it",
+      "type": "flap",
+      "ipa": "/ˈɡɑːɾɪt/",
+      "explanation_es": "Otra vez el flap americano: la *t* de *got* se enlaza con *it* como una *r* suave."
+    },
+    {
+      "ref": "s26",
+      "phrase": "for your eyes",
+      "type": "weak_form",
+      "ipa": "/fə jər ˈaɪz/",
+      "explanation_es": "*for* y *your* son átonas (/fə/, /jə/); en inglés británico la *r* de *your* reaparece para enlazar con *eyes*."
+    },
+    {
+      "ref": "s26",
+      "phrase": "get used to the dark",
+      "type": "elision",
+      "ipa": "/ɡet ˈjuːstə ðə dɑːk/",
+      "explanation_es": "En *used to* la /d/ desaparece: /juːstə/. Significa «acostumbrarse a»."
+    },
+    {
+      "ref": "s28",
+      "phrase": "pick you up at half eleven",
+      "type": "linking",
+      "ipa": "/ˈpɪk jʊ ˈʌp ət hɑːf ɪˈlevn/",
+      "explanation_es": "Consonante + vocal se enlazan (*pick‿you‿up‿at*) y *at* es átona (/ət/)."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "what's up",
+      "surface": "What's up",
+      "pos": "phrase",
+      "def_en": "an informal way to ask what is happening or what someone wants",
+      "def_es": "¿qué pasa?, ¿qué quieres?",
+      "example": "Hey, what's up? You look worried.",
+      "ref": "s2",
+      "note_es": "Informal."
+    },
+    {
+      "lemma": "meteor shower",
+      "surface": "meteor shower",
+      "pos": "phrase",
+      "def_en": "a time when many small lights move quickly across the night sky",
+      "def_es": "lluvia de estrellas (de meteoros)",
+      "example": "We stayed up late to watch the meteor shower.",
+      "ref": "s3"
+    },
+    {
+      "lemma": "way too much",
+      "surface": "way too much",
+      "pos": "phrase",
+      "def_en": "much more than is good or needed",
+      "def_es": "demasiado, muchísimo",
+      "example": "I spent way too much money this weekend.",
+      "ref": "s6",
+      "note_es": "*way* intensifica: muy informal."
+    },
+    {
+      "lemma": "light pollution",
+      "surface": "light pollution",
+      "pos": "phrase",
+      "def_en": "too much artificial light at night, so you cannot see the stars well",
+      "def_es": "contaminación lumínica",
+      "example": "Light pollution makes it hard to see the Milky Way.",
+      "ref": "s7"
+    },
+    {
+      "lemma": "car park",
+      "surface": "car park",
+      "pos": "noun",
+      "def_en": "an area or building where you leave your car",
+      "def_es": "aparcamiento",
+      "example": "The car park was full, so we parked on the street.",
+      "ref": "s10",
+      "note_es": "Inglés británico. En EE. UU.: *parking lot*."
+    },
+    {
+      "lemma": "half eleven",
+      "surface": "half eleven",
+      "pos": "phrase",
+      "def_en": "half past eleven (11:30)",
+      "def_es": "las once y media",
+      "example": "The film starts at half eight.",
+      "ref": "s15",
+      "note_es": "Inglés británico informal. ¡Es 11:30, no 10:30!"
+    },
+    {
+      "lemma": "comet",
+      "surface": "Comet",
+      "pos": "noun",
+      "def_en": "an object in space with a long bright tail of dust and gas",
+      "def_es": "cometa",
+      "example": "You can only see that comet every 76 years.",
+      "ref": "s18"
+    },
+    {
+      "lemma": "dust",
+      "surface": "dust",
+      "pos": "noun",
+      "def_en": "very small dry pieces of earth or other material",
+      "def_es": "polvo",
+      "example": "There was dust all over the old books.",
+      "ref": "s19"
+    },
+    {
+      "lemma": "forecast",
+      "surface": "forecast",
+      "pos": "noun",
+      "def_en": "a description of what the weather will probably be like",
+      "def_es": "previsión (del tiempo)",
+      "example": "The forecast says it will rain tomorrow.",
+      "ref": "s21"
+    },
+    {
+      "lemma": "blanket",
+      "surface": "blanket",
+      "pos": "noun",
+      "def_en": "a large warm cover that you put over yourself",
+      "def_es": "manta",
+      "example": "It was cold, so I took a blanket to the beach.",
+      "ref": "s22"
+    },
+    {
+      "lemma": "telescope",
+      "surface": "telescope",
+      "pos": "noun",
+      "def_en": "an instrument you look through to see things that are far away, like stars",
+      "def_es": "telescopio",
+      "example": "She looked at the moon through her telescope.",
+      "ref": "s23"
+    },
+    {
+      "lemma": "get used to",
+      "surface": "get used to",
+      "pos": "phrase",
+      "def_en": "to become familiar with something so it is no longer strange or difficult",
+      "def_es": "acostumbrarse a",
+      "example": "It took me a month to get used to my new job.",
+      "ref": "s26"
+    },
+    {
+      "lemma": "pick up",
+      "surface": "pick you up",
+      "pos": "phrasal_verb",
+      "def_en": "to go somewhere by car to collect someone",
+      "def_es": "recoger (a alguien)",
+      "example": "Can you pick me up from the station at six?",
+      "ref": "s28"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "Why is Maya calling Leo?",
+      "options": [
+        { "id": "a", "text": "To suggest a night out to see shooting stars" },
+        { "id": "b", "text": "To borrow his telescope" },
+        { "id": "c", "text": "To ask him for a lift to work" },
+        { "id": "d", "text": "To change the plans they made for Tuesday" }
+      ],
+      "answer": "a",
+      "evidence": ["s3", "s4"],
+      "rationale_es": "Maya propone ir a ver la lluvia de estrellas (s3–s4). El telescopio aparece al final, pero es Leo quien lo menciona y Maya le dice que no hace falta."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "attitude_opinion",
+      "prompt": "How does Leo feel about the plan by the end of the conversation?",
+      "options": [
+        { "id": "a", "text": "He thinks it's far too late on a work night and says no." },
+        { "id": "b", "text": "He agrees and offers to make a drink." },
+        { "id": "c", "text": "He wants to go another night." },
+        { "id": "d", "text": "He isn't sure yet." }
+      ],
+      "answer": "b",
+      "evidence": ["s27", "s29"],
+      "rationale_es": "Al principio le preocupa la hora (s13), pero acaba aceptando y se ofrece a preparar chocolate caliente (s27). La opción a describe solo su primera reacción."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "How long does it take to drive to the hill?",
+      "options": [
+        { "id": "a", "text": "14 minutes" },
+        { "id": "b", "text": "24 minutes" },
+        { "id": "c", "text": "40 minutes" },
+        { "id": "d", "text": "4 hours" }
+      ],
+      "answer": "c",
+      "evidence": ["s8", "s11"],
+      "rationale_es": "*forty* lleva el acento en la primera sílaba (FOR-ty); *fourteen*, en la segunda (four-TEEN). Leo lo repite en s11."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "When is the best time to see the meteors?",
+      "options": [
+        { "id": "a", "text": "Before midnight" },
+        { "id": "b", "text": "Around two or three a.m." },
+        { "id": "c", "text": "At half past eleven" },
+        { "id": "d", "text": "Just after the sun goes down" }
+      ],
+      "answer": "b",
+      "evidence": ["s12"],
+      "rationale_es": "Maya dice que lo mejor es después de medianoche, hacia las dos o las tres. Las 11:30 es la hora de salida, no la mejor hora para verlas."
+    },
+    {
+      "id": "q5",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Leo has seen a meteor shower before.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["s5"],
+      "rationale_es": "Leo dice *I've never actually seen a meteor shower*. Ojo: *actually* significa «en realidad», no «actualmente»."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "How many meteors might they see?",
+      "options": [
+        { "id": "a", "text": "Hundreds of them every hour" },
+        { "id": "b", "text": "Around fifty an hour" },
+        { "id": "c", "text": "Fifteen to twenty an hour" },
+        { "id": "d", "text": "Only one or two" }
+      ],
+      "answer": "c",
+      "evidence": ["s17"],
+      "rationale_es": "Leo pregunta si verán cientos y Maya lo niega: *maybe fifteen or twenty an hour*."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "Why does Maya tell Leo not to look at his phone?",
+      "options": [
+        { "id": "a", "text": "So he doesn't wake up anyone in the village" },
+        { "id": "b", "text": "So his eyes can adapt to the lack of light" },
+        { "id": "c", "text": "Because there's no phone signal on the hill" },
+        { "id": "d", "text": "Because the battery will die in the cold" }
+      ],
+      "answer": "b",
+      "evidence": ["s25", "s26"],
+      "rationale_es": "Justo después explica que los ojos tardan unos veinte minutos en acostumbrarse a la oscuridad (s26). El frío se menciona, pero para recomendar ropa de abrigo."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What time will Maya pick Leo up?",
+      "options": [
+        { "id": "a", "text": "10:30" },
+        { "id": "b", "text": "11:00" },
+        { "id": "c", "text": "12:30" },
+        { "id": "d", "text": "11:30" }
+      ],
+      "answer": "d",
+      "evidence": ["s15", "s28"],
+      "rationale_es": "En inglés británico, *half eleven* = *half past eleven* = 11:30. No es 10:30."
+    },
+    {
+      "id": "q9",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Maya thinks Leo should bring his telescope.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["s24"],
+      "rationale_es": "Maya dice *Actually, no*: los meteoros se mueven demasiado rápido y el telescopio solo muestra un trozo pequeño del cielo."
+    },
+    {
+      "id": "q10",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "Maya has been to Ashford before.",
+      "answer": "NG",
+      "allow_ng": true,
+      "evidence": ["s8", "s9"],
+      "rationale_es": "Maya dice que ha encontrado el sitio (*I found a place*), pero no dice si ya ha estado allí. No hay información suficiente."
+    },
+    {
+      "id": "q11",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one word in each gap.",
+      "text": "The Orionids are tiny bits of {{1}} that Halley's {{2}} left behind.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["dust"],
+          "max_words": 1
+        },
+        {
+          "n": 2,
+          "accept": ["comet"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["s18", "s19"],
+      "rationale_es": "Maya explica que vienen del cometa Halley y que son partículas de polvo (*dust*) que dejó a su paso."
+    },
+    {
+      "id": "q12",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s16",
+      "reference": "Hmm, OK. That's not so bad. How many meteors are we gonna see? Like, hundreds?",
+      "accept_variants": ["Hmm, OK. That's not so bad. How many meteors are we going to see? Like, hundreds?"],
+      "evidence": ["s16"],
+      "rationale_es": "Reducción *gonna* y *are* casi inaudible antes de *we*."
+    },
+    {
+      "id": "q13",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s26",
+      "reference": "It takes about twenty minutes for your eyes to get used to the dark.",
+      "accept_variants": [],
+      "evidence": ["s26"],
+      "rationale_es": "Formas débiles de *for* y *your*, y la /d/ que desaparece en *used to*."
+    },
+    {
+      "id": "q14",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s28",
+      "reference": "Perfect. I'll pick you up at half eleven.",
+      "accept_variants": ["Perfect. I will pick you up at half eleven.", "Perfect. I'll pick you up at half past eleven."],
+      "evidence": ["s28"],
+      "rationale_es": "Enlace *pick‿you‿up‿at* y la expresión británica *half eleven*."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "spec": "content/specs/b1/b1-u02-night-sky.yaml",
+    "created_at": "2026-10-08T00:00:00Z"
+  },
+  "lemmas": [
+    "a", "about", "actually", "after", "all", "almost", "an", "and", "anything", "around", "ask", "at", "away",
+    "back", "bad", "basically", "be", "before", "behind", "bit", "blanket", "bright", "bring", "but", "by",
+    "call", "can", "car", "check", "chocolate", "city", "clear", "cold", "come", "comet", "cool", "could",
+    "dark", "degree", "do", "dust", "exactly", "eye", "fast", "find", "for", "forecast", "from", "get", "go",
+    "gonna", "good", "great", "half", "have", "here", "hill", "hot", "hour", "how", "hundred", "i", "if", "in",
+    "it", "its", "jacket", "just", "know", "leave", "light", "like", "look", "lucky", "make", "many", "maybe",
+    "meteor", "midnight", "minute", "morning", "move", "much", "my", "near", "never", "next", "nice", "night",
+    "no", "not", "of", "on", "only", "or", "park", "part", "perfect", "phone", "pick", "place", "pollution",
+    "pretty", "problem", "rain", "really", "see", "seriously", "should", "show", "shower", "sky", "small",
+    "so", "some", "stay", "sure", "take", "talk", "telescope", "that", "the", "them", "then", "there", "they",
+    "think", "this", "though", "time", "tiny", "to", "together", "too", "top", "tuesday", "up", "use",
+    "village", "wait", "want", "warm", "watch", "way", "we", "weather", "week", "well", "what", "where",
+    "will", "with", "work", "you", "your"
+  ],
+  "difficulty": 1095,
+  "qa": {
+    "coverage_by_level": { "A1": 0.9145, "A2": 0.9676, "B1": 0.9823, "B2": 0.9882, "C1": 0.9882, "C2": 1 },
+    "off_level_lemmas": ["meteor", "telescope"],
+    "avg_sentence_words": 6.2,
+    "flesch_reading_ease": 91.9,
+    "checked_at": "2026-10-08T16:05:44.986Z"
+  }
+}

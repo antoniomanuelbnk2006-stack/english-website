@@ -1,0 +1,1032 @@
+{
+  "id": "b1-rea-001",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "b1-u03",
+  "series": "b1-u03-games-communities",
+  "skill": "reading",
+  "genre": "article",
+  "title": "The Second Life of Old Games",
+  "summary_es": "Por qué algunos videojuegos siguen vivos años después gracias a los jugadores que los modifican.",
+  "topic": "games",
+  "tags": ["modding", "comunidades", "empleo"],
+  "can_do": ["R-B1-01", "R-B1-05", "R-B1-06", "R-B1-07"],
+  "grammar_focus": ["b1.relative-clauses-defining", "b1.linkers"],
+  "vocab_focus": ["refuse", "release", "turn into", "keep up with", "trust"],
+  "est_minutes": 15,
+  "prediction_prompt": "Why do you think some people still play games that are ten or fifteen years old?",
+  "pre_teach": ["mod", "modder", "release"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "When a video game company stops updating a game, most players move on.",
+          "tokens": [
+            { "t": "When", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "video", "l": "video", "p": "NOUN", "w": true, "sp": true },
+            { "t": "game", "l": "game", "p": "NOUN", "w": true, "sp": true },
+            { "t": "company", "l": "company", "p": "NOUN", "w": true, "sp": true },
+            { "t": "stops", "l": "stop", "p": "NOUN", "w": true, "sp": true },
+            { "t": "updating", "l": "update", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "game", "l": "game", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "most", "l": "most", "p": "ADJ", "w": true, "sp": true },
+            { "t": "players", "l": "player", "p": "NOUN", "w": true, "sp": true },
+            { "t": "move", "l": "move", "p": "NOUN", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "New games arrive every week, and old ones are quickly forgotten.",
+          "tokens": [
+            { "t": "New", "l": "new", "p": "NOUN", "w": true, "sp": true },
+            { "t": "games", "l": "game", "p": "NOUN", "w": true, "sp": true },
+            { "t": "arrive", "l": "arrive", "p": "VERB", "w": true, "sp": true },
+            { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true },
+            { "t": "week", "l": "week", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "old", "l": "old", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ones", "l": "one", "p": "NOUN", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "quickly", "l": "quickly", "p": "ADV", "w": true, "sp": true },
+            { "t": "forgotten", "l": "forget", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "But some games refuse to die.",
+          "tokens": [
+            { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "games", "l": "game", "p": "NOUN", "w": true, "sp": true },
+            { "t": "refuse", "l": "refuse", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "die", "l": "die", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "Years after their release, they are still played by thousands of people every day.",
+          "tokens": [
+            { "t": "Years", "l": "year", "p": "NOUN", "w": true, "sp": true },
+            { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true },
+            { "t": "their", "l": "their", "p": "PRON", "w": true, "sp": true },
+            { "t": "release", "l": "release", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "still", "l": "still", "p": "ADV", "w": true, "sp": true },
+            { "t": "played", "l": "play", "p": "VERB", "w": true, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "thousands", "l": "thousand", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true },
+            { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true },
+            { "t": "day", "l": "day", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s5",
+          "text": "The reason is usually not the company that made them.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "reason", "l": "reason", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "usually", "l": "usually", "p": "ADV", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "company", "l": "company", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "made", "l": "make", "p": "VERB", "w": true, "sp": true },
+            { "t": "them", "l": "them", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s6",
+          "text": "It is the players themselves.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "players", "l": "player", "p": "NOUN", "w": true, "sp": true },
+            { "t": "themselves", "l": "themself", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "These players are called modders.",
+          "tokens": [
+            { "t": "These", "l": "these", "p": "DET", "w": true, "sp": true },
+            { "t": "players", "l": "player", "p": "NOUN", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "called", "l": "call", "p": "VERB", "w": true, "sp": true },
+            { "t": "modders", "l": "modder", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "A mod, short for modification, is a change that a player makes to a game.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "mod", "l": "mod", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "short", "l": "short", "p": "ADJ", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "modification", "l": "modification", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "change", "l": "change", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "player", "l": "player", "p": "NOUN", "w": true, "sp": true },
+            { "t": "makes", "l": "make", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "game", "l": "game", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Some mods are small: they fix a bug or make the text easier to read.",
+          "tokens": [
+            { "t": "Some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "mods", "l": "mod", "p": "NOUN", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "small", "l": "small", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "fix", "l": "fix", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "bug", "l": "bug", "p": "NOUN", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "make", "l": "make", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "text", "l": "text", "p": "NOUN", "w": true, "sp": true },
+            { "t": "easier", "l": "easy", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "read", "l": "read", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Others are huge, adding new maps, new characters or even a completely new story.",
+          "tokens": [
+            { "t": "Others", "l": "other", "p": "DET", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "huge", "l": "huge", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "adding", "l": "add", "p": "VERB", "w": true, "sp": true },
+            { "t": "new", "l": "new", "p": "ADJ", "w": true, "sp": true },
+            { "t": "maps", "l": "map", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "new", "l": "new", "p": "ADJ", "w": true, "sp": true },
+            { "t": "characters", "l": "character", "p": "NOUN", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "even", "l": "even", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "completely", "l": "completely", "p": "ADV", "w": true, "sp": true },
+            { "t": "new", "l": "new", "p": "ADJ", "w": true, "sp": true },
+            { "t": "story", "l": "story", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s5",
+          "text": "In a few famous cases, a mod became so popular that it turned into a successful game of its own.",
+          "tokens": [
+            { "t": "In", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "few", "l": "few", "p": "ADJ", "w": true, "sp": true },
+            { "t": "famous", "l": "famous", "p": "ADJ", "w": true, "sp": true },
+            { "t": "cases", "l": "case", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "mod", "l": "mod", "p": "NOUN", "w": true, "sp": true },
+            { "t": "became", "l": "become", "p": "VERB", "w": true, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "popular", "l": "popular", "p": "ADJ", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "turned", "l": "turn", "p": "VERB", "w": true, "sp": true },
+            { "t": "into", "l": "into", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "successful", "l": "successful", "p": "ADJ", "w": true, "sp": true },
+            { "t": "game", "l": "game", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "its", "l": "its", "p": "PRON", "w": true, "sp": true },
+            { "t": "own", "l": "own", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Why do people spend hundreds of hours on work that nobody pays them for?",
+          "tokens": [
+            { "t": "Why", "l": "why", "p": "ADV", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "VERB", "w": true, "sp": true },
+            { "t": "spend", "l": "spend", "p": "VERB", "w": true, "sp": true },
+            { "t": "hundreds", "l": "hundred", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "hours", "l": "hour", "p": "NOUN", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "work", "l": "work", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "nobody", "l": "nobody", "p": "PRON", "w": true, "sp": true },
+            { "t": "pays", "l": "pay", "p": "VERB", "w": true, "sp": true },
+            { "t": "them", "l": "them", "p": "PRON", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "When researchers asked modders this question, most of them gave similar answers.",
+          "tokens": [
+            { "t": "When", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "researchers", "l": "researcher", "p": "NOUN", "w": true, "sp": true },
+            { "t": "asked", "l": "ask", "p": "VERB", "w": true, "sp": true },
+            { "t": "modders", "l": "modder", "p": "NOUN", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "DET", "w": true, "sp": true },
+            { "t": "question", "l": "question", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "most", "l": "most", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "them", "l": "them", "p": "PRON", "w": true, "sp": true },
+            { "t": "gave", "l": "give", "p": "VERB", "w": true, "sp": true },
+            { "t": "similar", "l": "similar", "p": "ADJ", "w": true, "sp": true },
+            { "t": "answers", "l": "answer", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "They wanted to learn new skills, they enjoyed solving problems, and they liked being part of a community.",
+          "tokens": [
+            { "t": "They", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "wanted", "l": "want", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "learn", "l": "learn", "p": "VERB", "w": true, "sp": true },
+            { "t": "new", "l": "new", "p": "ADJ", "w": true, "sp": true },
+            { "t": "skills", "l": "skill", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "enjoyed", "l": "enjoy", "p": "VERB", "w": true, "sp": true },
+            { "t": "solving", "l": "solve", "p": "VERB", "w": true, "sp": true },
+            { "t": "problems", "l": "problem", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "liked", "l": "like", "p": "VERB", "w": true, "sp": true },
+            { "t": "being", "l": "being", "p": "AUX", "w": true, "sp": true },
+            { "t": "part", "l": "part", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "community", "l": "community", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Many also said that modding was a way to say thank you to a game they loved.",
+          "tokens": [
+            { "t": "Many", "l": "many", "p": "ADJ", "w": true, "sp": true },
+            { "t": "also", "l": "also", "p": "ADV", "w": true, "sp": true },
+            { "t": "said", "l": "say", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "modding", "l": "mod", "p": "VERB", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "way", "l": "way", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "say", "l": "say", "p": "VERB", "w": true, "sp": true },
+            { "t": "thank", "l": "thank", "p": "VERB", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "game", "l": "game", "p": "NOUN", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "loved", "l": "love", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "For some modders, it is also the start of a career.",
+          "tokens": [
+            { "t": "For", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "modders", "l": "modder", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "also", "l": "also", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "start", "l": "start", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "career", "l": "career", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Building a mod is a lot like building a real product.",
+          "tokens": [
+            { "t": "Building", "l": "building", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "mod", "l": "mod", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "lot", "l": "lot", "p": "NOUN", "w": true, "sp": true },
+            { "t": "like", "l": "like", "p": "ADP", "w": true, "sp": true },
+            { "t": "building", "l": "building", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "real", "l": "real", "p": "ADJ", "w": true, "sp": true },
+            { "t": "product", "l": "product", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "You have to plan your work, write code, test it, listen to feedback and keep up with changes to the game.",
+          "tokens": [
+            { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "plan", "l": "plan", "p": "VERB", "w": true, "sp": true },
+            { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+            { "t": "work", "l": "work", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "write", "l": "write", "p": "VERB", "w": true, "sp": true },
+            { "t": "code", "l": "code", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "test", "l": "test", "p": "NOUN", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "listen", "l": "listen", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "feedback", "l": "feedback", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "keep", "l": "keep", "p": "VERB", "w": true, "sp": true },
+            { "t": "up", "l": "up", "p": "ADP", "w": true, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "changes", "l": "change", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "game", "l": "game", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Several game studios now look at mods when they choose new employees, because a good mod shows what a person can actually do.",
+          "tokens": [
+            { "t": "Several", "l": "several", "p": "DET", "w": true, "sp": true },
+            { "t": "game", "l": "game", "p": "NOUN", "w": true, "sp": true },
+            { "t": "studios", "l": "studio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "now", "l": "now", "p": "ADV", "w": true, "sp": true },
+            { "t": "look", "l": "look", "p": "VERB", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "mods", "l": "mod", "p": "NOUN", "w": true, "sp": true },
+            { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "choose", "l": "choose", "p": "VERB", "w": true, "sp": true },
+            { "t": "new", "l": "new", "p": "ADJ", "w": true, "sp": true },
+            { "t": "employees", "l": "employee", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "because", "l": "because", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "good", "l": "good", "p": "ADJ", "w": true, "sp": true },
+            { "t": "mod", "l": "mod", "p": "NOUN", "w": true, "sp": true },
+            { "t": "shows", "l": "show", "p": "VERB", "w": true, "sp": true },
+            { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "person", "l": "person", "p": "NOUN", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "actually", "l": "actually", "p": "ADV", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "AUX", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Of course, modding is not always simple.",
+          "tokens": [
+            { "t": "Of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "course", "l": "course", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "modding", "l": "mod", "p": "VERB", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "always", "l": "always", "p": "ADV", "w": true, "sp": true },
+            { "t": "simple", "l": "simple", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Some companies do not allow players to change their games, and modders sometimes break the rules without knowing it.",
+          "tokens": [
+            { "t": "Some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "companies", "l": "company", "p": "NOUN", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "allow", "l": "allow", "p": "VERB", "w": true, "sp": true },
+            { "t": "players", "l": "player", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "change", "l": "change", "p": "VERB", "w": true, "sp": true },
+            { "t": "their", "l": "their", "p": "PRON", "w": true, "sp": true },
+            { "t": "games", "l": "game", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "modders", "l": "modder", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sometimes", "l": "sometimes", "p": "ADV", "w": true, "sp": true },
+            { "t": "break", "l": "break", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "rules", "l": "rule", "p": "NOUN", "w": true, "sp": true },
+            { "t": "without", "l": "without", "p": "ADP", "w": true, "sp": true },
+            { "t": "knowing", "l": "know", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Mods can also contain viruses, so players need to download them from websites they trust.",
+          "tokens": [
+            { "t": "Mods", "l": "mod", "p": "NOUN", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "also", "l": "also", "p": "ADV", "w": true, "sp": true },
+            { "t": "contain", "l": "contain", "p": "VERB", "w": true, "sp": true },
+            { "t": "viruses", "l": "virus", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "players", "l": "player", "p": "NOUN", "w": true, "sp": true },
+            { "t": "need", "l": "need", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "download", "l": "download", "p": "VERB", "w": true, "sp": true },
+            { "t": "them", "l": "them", "p": "PRON", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "websites", "l": "website", "p": "NOUN", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "trust", "l": "trust", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Most modding communities have clear rules to protect their members.",
+          "tokens": [
+            { "t": "Most", "l": "most", "p": "ADV", "w": true, "sp": true },
+            { "t": "modding", "l": "mod", "p": "VERB", "w": true, "sp": true },
+            { "t": "communities", "l": "community", "p": "NOUN", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "clear", "l": "clear", "p": "ADJ", "w": true, "sp": true },
+            { "t": "rules", "l": "rule", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "protect", "l": "protect", "p": "VERB", "w": true, "sp": true },
+            { "t": "their", "l": "their", "p": "PRON", "w": true, "sp": true },
+            { "t": "members", "l": "member", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Still, the relationship between companies and modders is getting better.",
+          "tokens": [
+            { "t": "Still", "l": "still", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "relationship", "l": "relationship", "p": "NOUN", "w": true, "sp": true },
+            { "t": "between", "l": "between", "p": "ADP", "w": true, "sp": true },
+            { "t": "companies", "l": "company", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "modders", "l": "modder", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "getting", "l": "get", "p": "VERB", "w": true, "sp": true },
+            { "t": "better", "l": "good", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Some studios now release official tools that make modding easier, and a few even share the money from popular mods with the people who made them.",
+          "tokens": [
+            { "t": "Some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "studios", "l": "studio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "now", "l": "now", "p": "ADV", "w": true, "sp": true },
+            { "t": "release", "l": "release", "p": "VERB", "w": true, "sp": true },
+            { "t": "official", "l": "official", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tools", "l": "tool", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "make", "l": "make", "p": "VERB", "w": true, "sp": true },
+            { "t": "modding", "l": "mod", "p": "VERB", "w": true, "sp": true },
+            { "t": "easier", "l": "easy", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "few", "l": "few", "p": "ADJ", "w": true, "sp": true },
+            { "t": "even", "l": "even", "p": "ADV", "w": true, "sp": true },
+            { "t": "share", "l": "share", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "money", "l": "money", "p": "NOUN", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "popular", "l": "popular", "p": "ADJ", "w": true, "sp": true },
+            { "t": "mods", "l": "mod", "p": "NOUN", "w": true, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "made", "l": "make", "p": "VERB", "w": true, "sp": true },
+            { "t": "them", "l": "them", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "For many players, this is good news.",
+          "tokens": [
+            { "t": "For", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "many", "l": "many", "p": "ADJ", "w": true, "sp": true },
+            { "t": "players", "l": "player", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "this", "l": "this", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "good", "l": "good", "p": "ADJ", "w": true, "sp": true },
+            { "t": "news", "l": "news", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "It means that the games they love will not disappear when the company moves on.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "means", "l": "mean", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "games", "l": "game", "p": "NOUN", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "love", "l": "love", "p": "VERB", "w": true, "sp": true },
+            { "t": "will", "l": "will", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "disappear", "l": "disappear", "p": "VERB", "w": true, "sp": true },
+            { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "company", "l": "company", "p": "NOUN", "w": true, "sp": true },
+            { "t": "moves", "l": "move", "p": "NOUN", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s5",
+          "text": "As one modder put it, a game is finished when people stop playing it, not when the company stops working on it.",
+          "tokens": [
+            { "t": "As", "l": "as", "p": "ADP", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "modder", "l": "modder", "p": "NOUN", "w": true, "sp": true },
+            { "t": "put", "l": "put", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "game", "l": "game", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "finished", "l": "finish", "p": "VERB", "w": true, "sp": true },
+            { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "VERB", "w": true, "sp": true },
+            { "t": "stop", "l": "stop", "p": "VERB", "w": true, "sp": true },
+            { "t": "playing", "l": "play", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "company", "l": "company", "p": "NOUN", "w": true, "sp": true },
+            { "t": "stops", "l": "stop", "p": "NOUN", "w": true, "sp": true },
+            { "t": "working", "l": "work", "p": "VERB", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "Conectores que cambian de dirección",
+      "explanation_es": "*Of course* concede un punto en contra («claro que…, es cierto que…»); *Still* vuelve a la idea principal a pesar de lo anterior («aun así»). Organizan los párrafos 5 y 6.",
+      "refs": ["p5s1", "p6s1"]
+    },
+    {
+      "title_es": "Relativas sin «that»",
+      "explanation_es": "En *websites they trust* y *a game they loved* falta el pronombre relativo: *websites (that) they trust*. Se omite cuando es el objeto del verbo de la relativa.",
+      "refs": ["p5s3", "p3s4"]
+    }
+  ],
+  "with_audio": true,
+  "glossary": [
+    {
+      "lemma": "refuse",
+      "surface": "refuse to die",
+      "pos": "verb",
+      "def_en": "to say or show that you will not do something",
+      "def_es": "negarse a",
+      "example": "My old laptop refused to start this morning.",
+      "ref": "p1s3"
+    },
+    {
+      "lemma": "release",
+      "surface": "release",
+      "pos": "noun",
+      "def_en": "the time when something new is made available to the public",
+      "def_es": "lanzamiento",
+      "example": "The game sold a million copies in the first week after its release.",
+      "ref": "p1s4"
+    },
+    {
+      "lemma": "modder",
+      "surface": "modders",
+      "pos": "noun",
+      "def_en": "a person who makes changes to a video game",
+      "def_es": "persona que crea mods (modificaciones) de videojuegos",
+      "example": "A group of modders translated the game into Spanish.",
+      "ref": "p2s1"
+    },
+    {
+      "lemma": "mod",
+      "surface": "mod",
+      "pos": "noun",
+      "def_en": "a change that a player makes to a video game",
+      "def_es": "mod: modificación de un videojuego hecha por los jugadores",
+      "example": "This mod adds new cars to the game.",
+      "ref": "p2s2",
+      "note_es": "También es verbo (*to mod a game*); *modding* es la actividad."
+    },
+    {
+      "lemma": "modification",
+      "surface": "modification",
+      "pos": "noun",
+      "def_en": "a change made to something to improve it or to make it different",
+      "def_es": "modificación",
+      "example": "With a small modification, the old engine worked again.",
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "bug",
+      "surface": "bug",
+      "pos": "noun",
+      "def_en": "a mistake in a computer program",
+      "def_es": "error (de programación)",
+      "example": "The update fixed a bug that closed the app.",
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "turn into",
+      "surface": "turned into",
+      "pos": "phrasal_verb",
+      "def_en": "to become something different",
+      "def_es": "convertirse en",
+      "example": "The small project turned into a real company.",
+      "ref": "p2s5"
+    },
+    {
+      "lemma": "of its own",
+      "surface": "of its own",
+      "pos": "phrase",
+      "def_en": "separate and independent; belonging only to itself",
+      "def_es": "propio, independiente",
+      "example": "The band now has a studio of its own.",
+      "ref": "p2s5"
+    },
+    {
+      "lemma": "community",
+      "surface": "community",
+      "pos": "noun",
+      "def_en": "a group of people who share an interest or live in the same place",
+      "def_es": "comunidad",
+      "example": "The game has a friendly online community.",
+      "ref": "p3s3"
+    },
+    {
+      "lemma": "feedback",
+      "surface": "feedback",
+      "pos": "noun",
+      "def_en": "comments that tell you how good or useful your work is",
+      "def_es": "comentarios, opiniones (sobre tu trabajo)",
+      "example": "My teacher gave me useful feedback on my essay.",
+      "ref": "p4s3",
+      "note_es": "Incontable: *some feedback*, nunca *a feedback* ni *feedbacks*."
+    },
+    {
+      "lemma": "keep up with",
+      "surface": "keep up with",
+      "pos": "phrasal_verb",
+      "def_en": "to learn about new changes and react to them",
+      "def_es": "estar al día de, seguir el ritmo de",
+      "example": "It's hard to keep up with all the new apps.",
+      "ref": "p4s3"
+    },
+    {
+      "lemma": "employee",
+      "surface": "employees",
+      "pos": "noun",
+      "def_en": "a person who works for a company",
+      "def_es": "empleado, empleada",
+      "example": "The studio has forty employees.",
+      "ref": "p4s4"
+    },
+    {
+      "lemma": "actually",
+      "surface": "actually",
+      "pos": "adverb",
+      "def_en": "really; in fact",
+      "def_es": "realmente, de verdad",
+      "example": "He looks quiet, but he's actually very funny.",
+      "ref": "p4s4",
+      "note_es": "Falso amigo: no significa «actualmente» (eso es *currently*)."
+    },
+    {
+      "lemma": "trust",
+      "surface": "trust",
+      "pos": "verb",
+      "def_en": "to believe that someone or something is honest and safe",
+      "def_es": "confiar en",
+      "example": "Only download apps from shops you trust.",
+      "ref": "p5s3"
+    },
+    {
+      "lemma": "still",
+      "surface": "Still",
+      "pos": "adverb",
+      "def_en": "despite what was just said",
+      "def_es": "aun así",
+      "example": "It was raining. Still, we went for a walk.",
+      "ref": "p6s1",
+      "note_es": "Al principio de frase y con coma no significa «todavía»."
+    },
+    {
+      "lemma": "put it",
+      "surface": "put it",
+      "pos": "phrase",
+      "def_en": "(as someone put it) the way someone said it",
+      "def_es": "como dijo alguien",
+      "example": "As my teacher put it, practice beats talent.",
+      "ref": "p6s5"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "What is the text mainly about?",
+      "options": [
+        { "id": "a", "text": "Why companies stop updating their games" },
+        { "id": "b", "text": "How players keep old games alive by changing them" },
+        { "id": "c", "text": "How to become a professional game designer in a few years" },
+        { "id": "d", "text": "The dangers of downloading mods" }
+      ],
+      "answer": "b",
+      "evidence": ["p1s5", "p1s6", "p2s1"],
+      "rationale_es": "El primer párrafo plantea el fenómeno (juegos que no mueren) y su causa: los propios jugadores. Los peligros y el empleo son partes secundarias."
+    },
+    {
+      "id": "q2",
+      "type": "heading_match",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "Match paragraphs 3, 4 and 5 with the best heading. There is one extra heading.",
+      "paragraphs": ["p3", "p4", "p5"],
+      "headings": [
+        { "id": "a", "text": "Reasons for doing unpaid work" },
+        { "id": "b", "text": "A path to a job" },
+        { "id": "c", "text": "Risks and rules" },
+        { "id": "d", "text": "A new kind of game shop" }
+      ],
+      "answers": { "p3": "a", "p4": "b", "p5": "c" },
+      "evidence": ["p3", "p4", "p5"],
+      "rationale_es": "P3 explica por qué trabajan gratis; P4, cómo puede llevar a un empleo; P5, los problemas y las normas. Nadie habla de una tienda."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "According to paragraph 2, what can a small mod do?",
+      "options": [
+        { "id": "a", "text": "Add a completely new story" },
+        { "id": "b", "text": "Turn into a new game of its own" },
+        { "id": "c", "text": "Create new characters" },
+        { "id": "d", "text": "Correct a problem in the game" }
+      ],
+      "answer": "d",
+      "evidence": ["p2s3"],
+      "rationale_es": "*fix a bug* = arreglar un error. Las historias y personajes nuevos son de los mods grandes (*Others are huge…*)."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "reference",
+      "prompt": "In paragraph 3, who does \"them\" refer to in \"most of them gave similar answers\"?",
+      "options": [
+        { "id": "a", "text": "researchers" },
+        { "id": "b", "text": "modders" },
+        { "id": "c", "text": "games" },
+        { "id": "d", "text": "hours" }
+      ],
+      "answer": "b",
+      "evidence": ["p3s2"],
+      "rationale_es": "Los investigadores preguntan y los *modders* responden: *them* se refiere a los *modders*."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Which reason for modding is NOT mentioned in paragraph 3?",
+      "options": [
+        { "id": "a", "text": "Learning new skills" },
+        { "id": "b", "text": "Being part of a group" },
+        { "id": "c", "text": "Earning money" },
+        { "id": "d", "text": "Thanking a game they love" }
+      ],
+      "answer": "c",
+      "evidence": ["p3s1", "p3s3", "p3s4"],
+      "rationale_es": "El párrafo empieza diciendo que nadie les paga. Las otras tres razones aparecen en p3s3 y p3s4."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "vocab_in_context",
+      "prompt": "In paragraph 4, \"keep up with changes to the game\" means…",
+      "options": [
+        { "id": "a", "text": "write down every change in a notebook" },
+        { "id": "b", "text": "try to stop the company from making changes" },
+        { "id": "c", "text": "stay informed about the changes and adapt" },
+        { "id": "d", "text": "complain about the changes online" }
+      ],
+      "answer": "c",
+      "evidence": ["p4s3"],
+      "rationale_es": "*keep up with* = mantenerse al día y adaptarse. Si el juego cambia, el mod tiene que seguir funcionando."
+    },
+    {
+      "id": "q7",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "All game companies let players change their games.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["p5s2"],
+      "rationale_es": "*Some companies do not allow players to change their games*: no todas lo permiten."
+    },
+    {
+      "id": "q8",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "Most modders are professional programmers.",
+      "answer": "NG",
+      "allow_ng": true,
+      "evidence": ["p4s1"],
+      "rationale_es": "El texto dice que para algunos es el comienzo de una carrera, pero no dice a qué se dedica la mayoría."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "attitude_opinion",
+      "prompt": "What is the writer's attitude towards modding?",
+      "options": [
+        { "id": "a", "text": "Generally positive, with some concerns" },
+        { "id": "b", "text": "Completely negative about it" },
+        { "id": "c", "text": "Neutral and not very interested" },
+        { "id": "d", "text": "Afraid that it will harm the game industry" }
+      ],
+      "answer": "a",
+      "evidence": ["p5s1", "p6s1", "p6s3"],
+      "rationale_es": "Reconoce problemas (*Of course, modding is not always simple*) pero vuelve a lo positivo (*Still…*, *this is good news*)."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "purpose_function",
+      "prompt": "Why does the writer end with the modder's words?",
+      "options": [
+        { "id": "a", "text": "To introduce a new topic for another article" },
+        { "id": "b", "text": "To show that modders are angry" },
+        { "id": "c", "text": "To sum up the main idea of the text" },
+        { "id": "d", "text": "To advertise a particular game" }
+      ],
+      "answer": "c",
+      "evidence": ["p6s5"],
+      "rationale_es": "La cita resume la tesis: un juego vive mientras la gente lo juega, gracias a los jugadores."
+    },
+    {
+      "id": "q11",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "text_structure",
+      "prompt": "Complete with the linking words from the text.",
+      "text": "{{1}}, modding is not always simple. […] {{2}}, the relationship between companies and modders is getting better.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["of course"],
+          "max_words": 2
+        },
+        {
+          "n": 2,
+          "accept": ["still", "however", "even so", "nevertheless"],
+          "max_words": 2
+        }
+      ],
+      "evidence": ["p5s1", "p6s1"],
+      "rationale_es": "*Of course* concede un problema; *Still* (o *However*, *Even so*) vuelve a la idea positiva."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "spec": "content/specs/b1/b1-u03-games-communities.yaml",
+    "created_at": "2026-10-08T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 386,
+  "lemmas": [
+    "a", "actually", "add", "after", "allow", "also", "always", "and", "answer", "arrive", "as", "ask", "at",
+    "be", "because", "become", "being", "between", "break", "bug", "building", "but", "by", "call", "can",
+    "career", "case", "change", "character", "choose", "clear", "code", "community", "company", "completely",
+    "contain", "course", "day", "die", "disappear", "do", "download", "easy", "employee", "enjoy", "even",
+    "every", "famous", "feedback", "few", "finish", "fix", "for", "forget", "from", "game", "get", "give",
+    "good", "have", "hour", "huge", "hundred", "in", "into", "it", "its", "keep", "know", "learn", "like",
+    "listen", "look", "lot", "love", "make", "many", "map", "mean", "member", "mod", "modder", "modification",
+    "money", "most", "move", "need", "new", "news", "nobody", "not", "now", "of", "official", "old", "on",
+    "one", "or", "other", "own", "part", "pay", "people", "person", "plan", "play", "player", "popular",
+    "problem", "product", "protect", "put", "question", "quickly", "read", "real", "reason", "refuse",
+    "relationship", "release", "researcher", "rule", "say", "several", "share", "short", "show", "similar",
+    "simple", "skill", "small", "so", "solve", "some", "sometimes", "spend", "start", "still", "stop", "story",
+    "studio", "successful", "test", "text", "thank", "that", "the", "their", "them", "themself", "these",
+    "they", "this", "thousand", "to", "tool", "trust", "turn", "up", "update", "usually", "video", "virus",
+    "want", "way", "website", "week", "what", "when", "who", "why", "will", "with", "without", "work", "write",
+    "year", "you", "your"
+  ],
+  "difficulty": 1129,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8208, "A2": 0.9065, "B1": 0.9403, "B2": 0.9532, "C1": 0.9532, "C2": 1 },
+    "off_level_lemmas": ["community", "employee", "feedback", "mod", "modder", "modification"],
+    "avg_sentence_words": 13.8,
+    "flesch_reading_ease": 75.6,
+    "checked_at": "2026-10-08T16:02:20.595Z"
+  }
+}
