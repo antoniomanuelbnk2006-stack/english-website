@@ -150,9 +150,11 @@ export function TaskRunner({
           className="flex flex-col gap-2 rounded-control border border-border bg-surface-2 p-3 outline-none"
         >
           <Verdict result={result} />
-          <p className="text-sm text-muted">
-            <InlineText text={task.rationale_es} />
-          </p>
+          {task.rationale_es ? (
+            <p className="text-sm text-muted">
+              <InlineText text={task.rationale_es} />
+            </p>
+          ) : null}
           {onShowEvidence ? (
             <Button
               variant="ghost"

@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { cache } from 'react';
 import type { z } from 'zod';
-import { findLessonMeta } from './index';
+import { CONTENT_ROOT, findLessonMeta } from './index';
 import { Lesson, type PublishedListening, type PublishedReading } from './schema';
 
 export type ListeningLesson = z.infer<typeof PublishedListening>;
@@ -18,7 +18,7 @@ export const loadLesson = cache(async (id: string): Promise<Lesson | null> => {
   const meta = findLessonMeta(id);
   if (!meta) return null;
 
-  const file = path.join(process.cwd(), 'content', meta.path);
+  const file = path.join(CONTENT_ROOT, meta.path);
   const lesson = Lesson.parse(JSON.parse(await readFile(file, 'utf8')));
   if (lesson.status !== 'published') return null;
   return lesson;

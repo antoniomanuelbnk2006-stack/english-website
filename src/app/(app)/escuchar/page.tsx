@@ -1,11 +1,25 @@
+import { Headphones } from 'lucide-react';
 import type { Metadata } from 'next';
-import { PendingPage } from '@/components/shell/pending-page';
+import { PageContainer, PageHeader } from '@/components/ui/page';
+import { LessonLibrary } from '@/features/lessons/components/lesson-library';
 import { getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('nav.listen') };
 }
 
-export default function Page() {
-  return <PendingPage title="nav.listen" body="pending.listen" phase={2} />;
+export default async function ListeningLibraryPage({ searchParams }: PageProps<'/escuchar'>) {
+  const [t, params] = await Promise.all([getT(), searchParams]);
+  return (
+    <PageContainer>
+      <PageHeader title={t('listening.title')} subtitle={t('listening.subtitle')} />
+      <LessonLibrary
+        skill="listening"
+        basePath="/escuchar"
+        searchParams={params}
+        emptyIcon={Headphones}
+        emptyBody="library.noListeningBody"
+      />
+    </PageContainer>
+  );
 }

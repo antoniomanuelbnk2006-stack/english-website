@@ -199,3 +199,21 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Karaoke: el reproductor marca la palabra que suena con un atributo, sin volver a renderizar. */
+[data-w] {
+  border-radius: 3px;
+  transition: background-color 120ms ease-out;
+}
+
+[data-w][data-active] {
+  background-color: var(--karaoke);
+  box-shadow: 0 0 0 2px var(--karaoke);
+}
+
+/* Rasgo de habla conectada marcado en la transcripción. */
+[data-feature] {
+  text-decoration: underline dotted var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
