@@ -1,7 +1,8 @@
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 
-export const CONTENT_DIR = path.join(process.cwd(), 'content');
+/** Raíz del contenido. `CONTENT_DIR` permite apuntar a un contenido de prueba (tests e2e). */
+export const CONTENT_DIR = path.resolve(process.cwd(), process.env.CONTENT_DIR ?? 'content');
 export const LESSONS_DIR = path.join(CONTENT_DIR, 'lessons');
 export const INDEX_FILE = path.join(CONTENT_DIR, 'index.generated.json');
 

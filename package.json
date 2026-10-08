@@ -21,7 +21,10 @@
     "studio": "next dev",
     "content:validate": "tsx --env-file-if-exists=.env.pipeline scripts/content/validate.ts",
     "content:annotate": "tsx --env-file-if-exists=.env.pipeline scripts/content/annotate.ts",
-    "content:index": "tsx --env-file-if-exists=.env.pipeline scripts/content/build-index.ts"
+    "content:index": "tsx --env-file-if-exists=.env.pipeline scripts/content/build-index.ts",
+    "content:tts": "tsx --env-file-if-exists=.env.pipeline scripts/content/tts.ts",
+    "content:audio": "tsx --env-file-if-exists=.env.pipeline scripts/content/audio.ts",
+    "content:upload": "tsx --env-file-if-exists=.env.pipeline scripts/content/upload.ts"
   },
   "dependencies": {
     "@date-fns/tz": "^1.5.0",
