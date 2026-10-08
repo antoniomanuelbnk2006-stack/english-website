@@ -19,9 +19,12 @@ test('el índice lista las fichas por nivel con su estado', async ({ page }) => 
   await signIn(page);
   await page.goto('/gramatica');
 
-  await expect(page.getByRole('heading', { name: 'Nivel B1' })).toBeVisible();
-  const cards = page.getByRole('main').getByRole('listitem');
-  await expect(cards).toHaveCount(5);
+  // Primero las fichas del nivel del usuario (B1); después, las de los demás.
+  await expect(page.getByRole('heading', { name: /^Nivel / }).first()).toHaveText('Nivel B1');
+  const own = page.getByRole('region', { name: 'Nivel B1' });
+  await expect(own.getByRole('listitem')).toHaveCount(5);
+  await expect(page.getByRole('heading', { name: 'Nivel A1' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Nivel C2' })).toBeVisible();
   await expect(page.getByRole('link', { name: /Defining relative clauses/ })).toContainText(
     'Sin ver',
   );

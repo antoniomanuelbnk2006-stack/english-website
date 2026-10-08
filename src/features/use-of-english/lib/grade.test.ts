@@ -199,11 +199,7 @@ describe('contracciones', () => {
     expect(expandContractions("I'd rather")).toEqual(['i had rather', 'i would rather']);
     expect(expandContractions("can't have")).toEqual(['cannot have']);
     expect(expandContractions("won't be")).toEqual(['will not be']);
-    expect(expandContractions("she's gone")).toEqual([
-      'she is gone',
-      'she has gone',
-      "she's gone",
-    ]);
+    expect(expandContractions("she's gone")).toEqual(['she is gone', 'she has gone', "she's gone"]);
     expect(expandContractions('no contractions here')).toEqual(['no contractions here']);
   });
 });
