@@ -50,6 +50,10 @@ Tabla `lexicon` (una fila por lema que la app conoce de ti):
 
 **Promoción implícita a `known`:** una palabra en `new` pasa a `known` si la encuentras en **3 textos/audios distintos sin consultarla** y sin fallarla en un dictado. (Se puede desactivar en ajustes.)
 
+**Del repaso al léxico:** añadir una tarjeta deja la palabra en `learning`; cuando su intervalo llega a **21 días** en estado de repaso pasa a `known` (`source = 'srs'`), y vuelve a `learning` si después se olvida. Marcar una palabra como conocida o ignorada pausa sus tarjetas.
+
+**Antes del test de nivel:** mientras tu léxico esté vacío, una palabra que no esté en él se da por conocida si es gramatical o si su nivel no supera tu nivel declarado (B1 por defecto). Es solo el punto de partida de la cobertura; lo que marques tú siempre manda.
+
 **Siembra inicial:** el test de vocabulario del test de nivel estima tu dominio por bandas de frecuencia; las bandas con ≥ 90 % de aciertos se siembran como `known` (`source = 'placement'`). Corregir una siembra errónea es un toque («no la conozco»).
 
 ---

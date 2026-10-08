@@ -514,9 +514,16 @@ group by user_id, date_trunc('week', logged_on::timestamp)::date, kind;
 | Ratings calculados en TypeScript | La lógica Elo es pura y testeable en `lib/`; la función SQL solo persiste de forma atómica. |
 | Sin tabla de contenido | Ver [ADR-0003](../adr/0003-contenido-como-codigo.md). |
 | `unique nulls not distinct` en tarjetas | Evita duplicar la misma tarjeta (requiere Postgres 15+, disponible en Supabase). |
+| `srs_cards.source_segment_id` va cualificado (`b1-lis-001:s16`, `b1.linkers:p4`) | La unicidad de las tarjetas no incluye la lección y los ids de segmento se repiten entre lecciones. Una palabra tiene **una sola** tarjeta, venga de la lección que venga: eso lo comprueba la aplicación por `lemma` antes de insertar. |
+| El progreso de una ficha de gramática se guarda en `lesson_progress` con el id de la ficha (`b1.linkers`) | Evita una tabla más: `started` = vista; `completed` + `best_score` = practicada o dominada (≥ 0,8). Sus intentos van a `item_attempts` con `skill = 'grammar'`. |
+| `lexicon.seen_count` cuenta encuentros **seguidos sin consultar** | Es lo que necesita la promoción implícita (3 textos distintos): vuelve a 0 al consultar la palabra o fallarla en un dictado. Solo cuenta la primera vez que se completa cada lección. |
 | Funciones con `supabase.rpc()` | O `select * from f(…)`. Nunca `select (f(…)).*`: Postgres ejecutaría la función **una vez por columna** (en `add_activity` sumaría varias veces). |
 
 > Esta migración se ha probado sobre Postgres 17 simulando `auth.uid()` y los roles de Supabase: *trigger* de alta, idempotencia de intentos, acumulación de progreso y actividad, RLS entre dos usuarios, `default auth.uid()`, permisos de `anon`, vistas `security_invoker` y la restricción de tarjetas duplicadas.
+
+### Migración `0002_srs_apply_reviews.sql`
+
+Añade la función `public.apply_reviews(p_reviews jsonb) returns int`, que guarda un lote de repasos en una transacción: por cada uno inserta la fila de `srs_reviews` y, **solo si es nueva**, actualiza el estado FSRS de su tarjeta. Es idempotente por `client_id` y respeta RLS (`security invoker`): reenviar un lote no programa una tarjeta dos veces, y no se puede repasar una tarjeta ajena. El estado nuevo lo calcula el servidor con `ts-fsrs` (`features/srs/lib/scheduler.ts`) a partir del estado guardado y llega ya resuelto, igual que los ratings en `apply_lesson_attempts`. Tests en `tests/db/srs.test.ts`.
 
 ---
 
@@ -527,6 +534,8 @@ pnpm supabase gen types typescript --local > src/lib/supabase/database.types.ts
 ```
 
 Se regeneran tras cada migración (script `db:types`) y se comprueban en CI (si cambian sin commitear, falla).
+
+> Mientras no haya un proyecto de Supabase enlazado, `database.types.ts` es un fichero **provisional escrito a mano** (lleva la palabra `PROVISIONAL` en la cabecera y CI solo avisa). Hay que sustituirlo por el generado con `pnpm db:types` en cuanto exista el proyecto.
 
 ---
 

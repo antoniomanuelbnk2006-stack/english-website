@@ -28,6 +28,14 @@ title: "Present perfect vs past simple"
 summary_es: "Pasado con conexión al presente vs pasado cerrado."
 skills: [reading, listening, writing]
 related: [a2.past-simple, b1.present-perfect-continuous]
+examples:                       # «Ejemplos»: los pinta la app (el audio llegará con el pipeline)
+  - en: "I've just finished the mod. I started it in March."
+    es: "Acabo de terminar el mod. Lo empecé en marzo."
+practice:                       # «Mini-práctica»: exactamente 5 ítems, un hueco (___) cada uno
+  - id: p1
+    prompt: "We ___ (go) to Lisbon last summer."
+    answers: ["went"]            # la primera es la que se enseña al corregir
+    rule_es: "Last summer es un momento terminado: past simple."
 ---
 
 ## En una frase
@@ -36,10 +44,11 @@ related: [a2.past-simple, b1.present-perfect-continuous]
 ## Contraste con el español
 ## Errores típicos
 ## Cómo suena
-## Ejemplos (con audio)
-## Mini-práctica (5 ítems)
-## Dónde aparece (generado: lecciones con este grammar_focus)
 ```
+
+El cuerpo MDX lleva la explicación (esas seis secciones, en ese orden). Los **ejemplos** y la **mini-práctica** van en el *frontmatter* para poder validarlos y para que el servidor corrija la práctica sin enviar las respuestas al navegador; «Dónde aparece» lo genera la app con las lecciones cuyo `grammar_focus` incluye la ficha. `pnpm content:validate` comprueba el esquema, las secciones y que el MDX compile.
+
+Estado de una ficha: **sin ver** → **vista** (al abrirla) → **practicada** (mini-práctica hecha) → **dominada** (4 de 5 o más en el mejor intento). Los ítems fallados pasan al repaso como tarjetas `grammar`.
 
 ---
 

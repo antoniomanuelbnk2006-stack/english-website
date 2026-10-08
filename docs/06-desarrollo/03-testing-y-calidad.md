@@ -68,7 +68,13 @@ describe('diagnose', () => {
 
 ## 3. e2e
 
-**Entorno:** `supabase start` (local) + `pnpm build && pnpm start` con variables de test. El login por OTP se automatiza leyendo el código en el **visor de correo de pruebas** que incluye Supabase en local.
+**Entorno:** un **emulador de Supabase en memoria** (`tests/support/supabase-emulator.ts`: Postgres real con las migraciones del proyecto, más el subconjunto de Auth y PostgREST que usa la app) + `pnpm build && pnpm start` con variables de test. No hace falta Docker. El emulador acepta un código OTP fijo para el email de pruebas y expone `/__test/reset` y `/__test/query` para preparar y comprobar datos. Decisión y límites en [ADR-0011](../adr/0011-e2e-con-emulador-de-supabase.md).
+
+**Contenido:** los e2e no leen `content/` sino `.e2e/content`, una copia que genera `tests/support/build-fixture-content.ts` antes de compilar. En ella la lección de escucha pasa por el pipeline real de audio con un TTS de prueba (tonos con tiempos por palabra; necesita `ffmpeg`), así se prueban el reproductor, el karaoke y las tarjetas de audio.
+
+**Tests de base de datos:** `tests/db/*.test.ts` (Vitest) prueban sobre ese mismo Postgres el *trigger* de alta, RLS tabla por tabla y las funciones SQL.
+
+> El emulador no sustituye a probar contra el proyecto real de Supabase antes de desplegar cambios de esquema o de consultas.
 
 Flujos:
 1. Login con email permitido / rechazo de otro email.

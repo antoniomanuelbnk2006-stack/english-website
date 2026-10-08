@@ -148,6 +148,8 @@ senal/
 3. Pasa al componente cliente la lección **sin la transcripción** si la fase guardada es < 3.
 4. Al completar la fase 2, el cliente llama a `getTranscript(id)` (Server Action), que comprueba la fase en BD y devuelve la transcripción.
 
+> **Dónde está cada cosa en la práctica:** el proxy vive en `src/proxy.ts` (Next 16 lo busca junto a `app/`). El índice de lecciones, las unidades y los niveles de los lemas se leen con `fs` desde `CONTENT_ROOT` (`content/`, o la carpeta que indique la variable `CONTENT_DIR`, que solo usan los tests e2e) y se guardan en memoria: el contenido no cambia mientras el servidor está en marcha.
+>
 > **Ojo con Vercel:** como el contenido se lee con `fs` en tiempo de ejecución, hay que incluirlo en el *bundle* de las funciones: `outputFileTracingIncludes` en `next.config.ts` para `content/**/*.json`. El índice (`index.generated.json`) se importa directamente.
 
 ### 4.2 Responder una lección

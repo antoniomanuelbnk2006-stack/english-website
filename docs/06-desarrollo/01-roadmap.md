@@ -25,6 +25,21 @@
 
 ---
 
+## Estado (8 de octubre de 2026)
+
+Las fases 0–3 están construidas y probadas en local (tests unitarios, de base de datos y e2e en escritorio y móvil). Lo que falta en cada una depende de servicios externos que aún no existen (proyecto de Supabase, claves de Azure y R2, despliegue) o se ha dejado fuera a propósito y se indica aquí. Los criterios de aceptación de más abajo no se marcan hasta comprobarlos en el entorno real.
+
+| Fase | Hecho | Pendiente |
+|---|---|---|
+| 0 | Proyecto, herramientas, acceso por OTP, proxy con CSP, migraciones, shell, i18n, CI | Crear el proyecto de Supabase (UE) y aplicar las migraciones; generar `database.types.ts` (hoy es provisional); desplegar en Vercel; subir el repo a GitHub para que corra el CI |
+| 1 | Modelo de contenido, validación, anotación, índice; motor de tareas; lector y ciclo de lectura; diario y registro rápido; `b1-rea-001` publicada | Tu revisión de `b1-rea-001` (la marqué como revisada por mí, pendiente de la tuya); importar el CSV del diario (opcional) |
+| 2 | `content:tts`, `content:audio`, `content:upload`; reproductor con karaoke; ciclo de escucha de 8 fases; dictado diagnóstico; transcripción retenida hasta la fase 3 | **Audio real de `b1-lis-001`** (necesita las claves de Azure; el proveedor de Azure no se ha podido probar contra el servicio) y publicarla; **drills** (formas débiles, reducciones, números); **lectura + audio**; comprobar el karaoke con el Profiler |
+| 3 | Léxico con estados y promoción implícita; glosario por palabra; marcar desconocidas; resaltado por estado; cobertura «para ti»; SRS con FSRS recalculado en servidor; `/repasar`, `/vocabulario`, `/gramatica`; cosecha priorizada; 5 fichas B1 | Traducción de frase bajo demanda (F-046: necesita IA, va con la fase 4); audio en los ejemplos de gramática y en las tarjetas que salen de textos sin audio; **más lecciones** (hay 2; el MVP pide unas 10); la prueba de 7 días de uso real |
+
+Decisiones tomadas por el camino que no estaban en el diseño original: [ADR-0011](../adr/0011-e2e-con-emulador-de-supabase.md) (tests contra un emulador de Supabase), la migración `0002` (`apply_reviews`), y los detalles anotados en [base de datos §3](../04-arquitectura/03-base-de-datos.md#3-notas-de-diseño), [gramática §2](../01-pedagogia/06-gramatica.md#2-formato-de-una-ficha) y [vocabulario §4](../01-pedagogia/05-vocabulario-y-srs.md#4-tu-léxico-personal).
+
+---
+
 ## Fase 0 · Cimientos
 
 **Alcance:** F-001, F-002 (básico), F-003.

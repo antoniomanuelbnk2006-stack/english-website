@@ -412,7 +412,9 @@ export type ListeningDraftLLM = z.infer<typeof ListeningDraftLLM>;
 
 | Tipo | Ubicación | Esquema (resumen) |
 |---|---|---|
-| Ficha de gramática | `content/grammar/{nivel}/{id}.mdx` | *Frontmatter*: `id`, `level`, `title`, `summary_es`, `skills[]`, `related[]`; cuerpo MDX con secciones fijas ([gramática](../01-pedagogia/06-gramatica.md#2-formato-de-una-ficha)) |
+| Ficha de gramática | `content/grammar/{nivel}/{id}.mdx` | *Frontmatter* (`GrammarMeta` en `src/lib/content/grammar-schema.ts`): `id`, `level`, `title`, `summary_es`, `skills[]`, `related[]`, `examples[]` (`{ en, es }`) y `practice[]` (5 ítems `{ id, prompt con ___, answers[], rule_es }`); cuerpo MDX con secciones fijas ([gramática](../01-pedagogia/06-gramatica.md#2-formato-de-una-ficha)) |
+| Unidades | `content/units.json` | `{ [unitId]: título }`: nombre de cada unidad para agrupar las bibliotecas |
+| Niveles de los lemas | `content/wordlists/levels.generated.json` | `{ A1: [lemas], … }`. Lo genera `pnpm content:index` a partir de las listas con licencia abierta; la app lo usa para saber qué palabras dar por conocidas según tu nivel. No se edita a mano |
 | Consigna de writing | `content/writing/{nivel}/{id}.json` | `id`, `level`, `task_type`, `prompt_en`, `context_es`, `points[]`, `words_min`, `words_max`, `topic` |
 | Drill | `content/drills/{tipo}/{id}.json` | `id`, `type`, `level_min`, `items[]` con `{ text, target, options?, audio_src, start?, end? }` |
 | Ítem de test | `content/placement/*.json`, `content/tests/{nivel}/*.json` | Como una lección mínima (1 clip/texto + 1–2 tareas) con `difficulty` fija |
