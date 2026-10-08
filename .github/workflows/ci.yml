@@ -1,0 +1,49 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: http://127.0.0.1:54321
+      NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ci-placeholder
+      NEXT_PUBLIC_AUDIO_BASE_URL: https://audio.example.invalid
+      ALLOWED_EMAIL: ci@example.invalid
+      ANTHROPIC_API_KEY: ci-placeholder
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm format:check
+      - run: pnpm test -- --coverage
+      - run: pnpm build
+
+  e2e:
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - uses: supabase/setup-cli@v1
+      - run: pnpm install --frozen-lockfile
+      - run: supabase start
+      # Los tipos de la BD deben estar generados y al día. Mientras el fichero sea el
+      # provisional escrito a mano (antes de enlazar un proyecto), no hay con qué compararlo.
+      - name: Tipos de la base de datos al día
+        run: |
+          if grep -q PROVISIONAL src/lib/supabase/database.types.ts; then
+            echo "::warning::database.types.ts sigue siendo provisional: ejecuta pnpm db:types"
+          else
+            pnpm db:types:local && git diff --exit-code src/lib/supabase/database.types.ts
+          fi
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm e2e
