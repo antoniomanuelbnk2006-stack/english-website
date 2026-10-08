@@ -3,8 +3,10 @@
 // La app lo importa para las bibliotecas y el plan diario; nunca se edita a mano.
 import type { z } from 'zod';
 import { Lesson, LessonMeta } from '../../src/lib/content/schema';
-import { INDEX_FILE, listLessonFiles, readJson, writeContent } from './lib/io';
+import path from 'node:path';
+import { CONTENT_DIR, INDEX_FILE, listLessonFiles, readJson, writeContent } from './lib/io';
 import { countWords } from './lib/nlp';
+import { CEFR, REDUCTIONS, levelOf, loadWordLists, type Cefr } from './lib/wordlists';
 
 type Meta = z.infer<typeof LessonMeta>;
 
@@ -67,4 +69,20 @@ index.sort((a, b) => a.id.localeCompare(b.id));
 writeContent(INDEX_FILE, index);
 
 console.log(`index.generated.json: ${index.length} lección(es) publicada(s).`);
+
+// Nivel MCER de cada lema, para que la app sepa qué palabras dar por conocidas según tu nivel
+// (derivado de las listas con licencia abierta; ver content/wordlists/LICENSES.md).
+const lists = loadWordLists();
+const byLevel = Object.fromEntries(CEFR.map((level) => [level, [] as string[]])) as Record<
+  Cefr,
+  string[]
+>;
+for (const lemma of new Set([...lists.levels.keys(), ...lists.ngslRank.keys(), ...REDUCTIONS])) {
+  byLevel[levelOf(lists, lemma, 'NOUN').level].push(lemma);
+}
+for (const level of CEFR) byLevel[level].sort();
+writeContent(path.join(CONTENT_DIR, 'wordlists', 'levels.generated.json'), byLevel);
+console.log(
+  `levels.generated.json: ${CEFR.map((level) => `${level} ${byLevel[level].length}`).join(' · ')} lemas.`,
+);
 if (skipped.length > 0) console.log(`Sin publicar (no entran en el índice): ${skipped.join(', ')}`);
