@@ -1,11 +1,51 @@
 import type { Metadata } from 'next';
-import { PendingPage } from '@/components/shell/pending-page';
+import { Button } from '@/components/ui/button';
+import { PageContainer, PageHeader } from '@/components/ui/page';
+import { Panel, PanelTitle } from '@/components/ui/panel';
+import { signOut } from '@/features/auth/server/actions';
+import { SettingsForm } from '@/features/profile/components/settings-form';
+import { getProfile } from '@/features/profile/server/queries';
 import { getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('nav.settings') };
 }
 
-export default function Page() {
-  return <PendingPage title="nav.settings" body="pending.settings" phase={1} />;
+export default async function SettingsPage() {
+  const [t, profile] = await Promise.all([getT(), getProfile()]);
+
+  return (
+    <PageContainer>
+      <PageHeader title={t('settings.title')} />
+
+      <SettingsForm
+        initial={{
+          dailyGoalMin: profile.dailyGoalMin,
+          interests: profile.interests,
+          uiLocale: profile.uiLocale,
+          theme: profile.settings.theme,
+          readingFontPx: profile.settings.reading_font_px,
+          readerPaper: profile.settings.reader_paper,
+          playbackRate: profile.settings.playback_rate,
+        }}
+      />
+
+      <Panel className="flex flex-col gap-3">
+        <PanelTitle>{t('settings.accountTitle')}</PanelTitle>
+        <p className="text-sm text-muted">{t('settings.signedInAs', { email: profile.email })}</p>
+        <form action={signOut}>
+          <Button type="submit" variant="secondary">
+            {t('nav.signOut')}
+          </Button>
+        </form>
+      </Panel>
+
+      <Panel className="flex flex-col gap-3 text-sm text-muted">
+        <PanelTitle>{t('settings.aboutTitle')}</PanelTitle>
+        <p>{t('settings.aboutContent')}</p>
+        <p>{t('settings.aboutVoices')}</p>
+        <p>{t('settings.aboutWordlists')}</p>
+      </Panel>
+    </PageContainer>
+  );
 }

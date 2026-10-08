@@ -23,6 +23,7 @@ jobs:
       - run: pnpm lint
       - run: pnpm format:check
       - run: pnpm test -- --coverage
+      - run: pnpm content:validate --offline # sin comprobar R2
       - run: pnpm build
 
   e2e:
@@ -46,4 +47,5 @@ jobs:
             pnpm db:types:local && git diff --exit-code src/lib/supabase/database.types.ts
           fi
       - run: pnpm exec playwright install --with-deps chromium
+      # Los e2e usan un emulador de Supabase en memoria (tests/support/supabase-emulator.ts).
       - run: pnpm e2e

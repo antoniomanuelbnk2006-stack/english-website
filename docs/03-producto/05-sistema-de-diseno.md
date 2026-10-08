@@ -51,7 +51,7 @@ Se definen como variables CSS semánticas y se exponen a Tailwind v4 con `@theme
   --bg: #f8fafc;  --surface: #ffffff;  --surface-2: #f1f5f9;  --border: #e2e8f0;
   --text: #0f172a; --text-muted: #475569; --text-subtle: #64748b;
   --accent: #0e7490; --accent-strong: #155e75; --accent-contrast: #ffffff;
-  --electric: #2563eb; --success: #059669; --warning: #b45309; --danger: #dc2626;
+  --electric: #2563eb; --success: #047857; --warning: #b45309; --danger: #b91c1c;
   --karaoke: rgb(14 116 144 / 0.14); --word-unknown: rgb(14 116 144 / 0.5);
   --word-learning: rgb(180 83 9 / 0.5); --focus: #0e7490;
 }
@@ -59,8 +59,9 @@ Se definen como variables CSS semánticas y se exponen a Tailwind v4 con `@theme
 [data-theme="paper"] {       /* solo para el lector y las tarjetas */
   --bg: #f7f4ec;  --surface: #fbf9f3;  --surface-2: #efeadf;  --border: #e2dccd;
   --text: #1f2328; --text-muted: #57534e; --text-subtle: #78716c;
-  --accent: #0e7490; --accent-strong: #155e75; --accent-contrast: #ffffff;
-  --karaoke: rgb(14 116 144 / 0.14); --focus: #0e7490;
+  --accent: #155e75; --accent-strong: #164e63; --accent-contrast: #ffffff;
+  --electric: #2563eb; --success: #047857; --warning: #92400e; --danger: #b91c1c;
+  --karaoke: rgb(14 116 144 / 0.14); --focus: #155e75;
 }
 
 @theme inline {
@@ -90,6 +91,8 @@ Se definen como variables CSS semánticas y se exponen a Tailwind v4 con `@theme
 - En componentes, solo clases semánticas (`bg-surface`, `text-muted`, `border-border`). **Nunca hex sueltos.**
 - El tema se aplica con `data-theme` en `<html>` (por defecto: oscuro; opción «según el sistema»). El lector puede forzar `paper` en su contenedor.
 - Contraste comprobado: texto principal ≥ 7:1 y texto secundario ≥ 4,5:1 en los tres temas; el cian oscuro (#0e7490) se usa en claro porque el cian brillante no alcanza 4,5:1 sobre blanco.
+- Los colores de estado (`accent`, `success`, `warning`, `danger`) también se usan como texto, así que deben llegar a 4,5:1 sobre `bg`, `surface` y `surface-2`. Lo garantiza `src/styles/contrast.test.ts`, que falla si un cambio de token baja de ahí.
+- `--text-subtle` no llega a 4,5:1 sobre los fondos oscuros: solo para iconos, bordes y *placeholders*, nunca para texto.
 
 ---
 

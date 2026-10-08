@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { PageContainer, PageHeader } from '@/components/ui/page';
 import { Panel, PanelTitle } from '@/components/ui/panel';
 import { RingProgress } from '@/components/ui/ring-progress';
+import { QuickLog } from '@/features/journal/components/quick-log';
 import { getMinutesOn } from '@/features/journal/server/queries';
 import { LevelMeter } from '@/features/level/components/level-meter';
 import { getSkillRatings } from '@/features/level/server/queries';
@@ -59,6 +60,12 @@ export default async function TodayPage() {
           <p className="hud mt-1 text-2xl">{t('today.goalProgress', { done, goal })}</p>
           {done >= goal ? <p className="mt-1 text-sm text-success">{t('today.goalMet')}</p> : null}
         </div>
+      </Panel>
+
+      <Panel>
+        <PanelTitle>{t('journal.quickTitle')}</PanelTitle>
+        <p className="mt-2 mb-4 text-sm text-muted">{t('journal.quickHint')}</p>
+        <QuickLog />
       </Panel>
 
       <Panel>

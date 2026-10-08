@@ -31,6 +31,8 @@ export default defineConfig({
     baseURL: `http://localhost:${APP_PORT}`,
     locale: 'es-ES',
     timezoneId: 'Europe/Madrid',
+    // Sin transiciones: axe mide los colores finales y no un fotograma a medio cambiar de tema.
+    contextOptions: { reducedMotion: 'reduce' },
     trace: 'retain-on-failure',
   },
   projects: [
