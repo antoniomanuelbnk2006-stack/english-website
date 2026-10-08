@@ -38,6 +38,8 @@ Las fases 0–3 están construidas y probadas en local (tests unitarios, de base
 
 **Ampliación del 9 de octubre de 2026** (a petición del dueño, [ADR-0012](../adr/0012-use-of-english-y-nivel-declarado.md)): elección de nivel A1–C2 en el primer acceso, con las bibliotecas filtradas por ese nivel; sección **Use of English** con 24 ejercicios originales en formato de examen (A1–C2); 10 lecciones más (una lectura y una escucha por nivel que faltaba); una ficha de gramática por nivel; y **Kokoro** como proveedor de voz local, con el que se ha generado el audio de todas las escuchas mientras no haya claves de Azure. El pendiente de «audio real» de la tabla queda cubierto de forma provisional: las voces son neuronales pero los tiempos por palabra son estimados.
 
+Además, las lecciones de escucha tienen ahora dos modos, a elegir al empezar: **a ciegas** (el ciclo diagnóstico) y **con transcripción** ([ADR-0013](../adr/0013-escucha-con-transcripcion.md)).
+
 Decisiones tomadas por el camino que no estaban en el diseño original: [ADR-0011](../adr/0011-e2e-con-emulador-de-supabase.md) (tests contra un emulador de Supabase), la migración `0002` (`apply_reviews`), y los detalles anotados en [base de datos §3](../04-arquitectura/03-base-de-datos.md#3-notas-de-diseño), [gramática §2](../01-pedagogia/06-gramatica.md#2-formato-de-una-ficha) y [vocabulario §4](../01-pedagogia/05-vocabulario-y-srs.md#4-tu-léxico-personal).
 
 ---

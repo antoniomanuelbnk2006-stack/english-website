@@ -145,8 +145,9 @@ senal/
 ### 4.1 Cargar una lección
 1. `app/(app)/escuchar/[id]/page.tsx` (RSC) → `loadLesson(id)` lee `content/lessons/…/{id}.json` del sistema de archivos y lo valida con Zod (en desarrollo; en producción el contenido ya llega validado por CI).
 2. Consulta `lesson_progress` del usuario (RLS).
-3. Pasa al componente cliente la lección **sin la transcripción** si la fase guardada es < 3.
+3. Pasa al componente cliente la lección **sin la transcripción**: esa página nunca la incluye.
 4. Al completar la fase 2, el cliente llama a `getTranscript(id)` (Server Action), que comprueba la fase en BD y devuelve la transcripción.
+5. Si en la pantalla de preparación el usuario elige el modo «con transcripción», el cliente llama a `openWithTranscript(id)`, que anota `lesson_progress.transcript_first` y devuelve la transcripción ([ADR-0013](../adr/0013-escucha-con-transcripcion.md)). Las dos acciones comparten la regla `transcriptUnlocked`.
 
 > **Dónde está cada cosa en la práctica:** el proxy vive en `src/proxy.ts` (Next 16 lo busca junto a `app/`). El índice de lecciones, las unidades y los niveles de los lemas se leen con `fs` desde `CONTENT_ROOT` (`content/`, o la carpeta que indique la variable `CONTENT_DIR`, que solo usan los tests e2e) y se guardan en memoria: el contenido no cambia mientras el servidor está en marcha.
 >

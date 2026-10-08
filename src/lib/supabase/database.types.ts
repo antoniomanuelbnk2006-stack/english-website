@@ -193,6 +193,7 @@ export type Database = {
           started_at: string;
           status: Database['public']['Enums']['lesson_status'];
           time_spent_s: number;
+          transcript_first: boolean;
           updated_at: string;
           user_id: string;
         };
@@ -210,6 +211,7 @@ export type Database = {
           started_at?: string;
           status?: Database['public']['Enums']['lesson_status'];
           time_spent_s?: number;
+          transcript_first?: boolean;
           updated_at?: string;
           user_id?: string;
         };
@@ -227,6 +229,7 @@ export type Database = {
           started_at?: string;
           status?: Database['public']['Enums']['lesson_status'];
           time_spent_s?: number;
+          transcript_first?: boolean;
           updated_at?: string;
           user_id?: string;
         };

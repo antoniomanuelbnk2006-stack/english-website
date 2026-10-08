@@ -90,6 +90,7 @@ La interfaz está **en español** por defecto (rutas incluidas); el contenido de
 ```
 
 - **Barra de fases** arriba; cada fase tiene su vista (preparar, preguntas, dictado, transcripción, drills, escucha final, cosecha).
+- **Fase 0 — Preparar:** se elige cómo hacer la lección: **a ciegas** (el ciclo de abajo) o **con transcripción** (reproductor y texto con karaoke y glosario desde el principio, sin preguntas ni nota; [ADR-0013](../adr/0013-escucha-con-transcripcion.md)).
 - **Fase 1:** la transcripción **no se envía al cliente** hasta completar la fase 2 (ver [seguridad](../04-arquitectura/07-seguridad-y-privacidad.md) — es para ti mismo, pero así no hay tentación).
 - **Fase 3 — Dictado:**
 

@@ -135,7 +135,7 @@ export async function logInput(input: unknown): Promise<ActionResult<{ id: numbe
 1. Exponer `ANTHROPIC_API_KEY`, `SUPABASE_SECRET_KEY`, claves de Azure o de R2 al cliente o al repo.
 2. Usar la clave *secret* de Supabase en el código de la app.
 3. Crear una tabla sin `user_id`, RLS y política en la misma migración.
-4. Mostrar la transcripción de una lección de escucha antes de la fase 3 (salvo lecciones descargadas, ocultas en la UI).
+4. Mostrar la transcripción de una lección de escucha antes de la fase 3 (salvo lecciones descargadas, ocultas en la UI, y salvo que el usuario elija el modo «con transcripción», que queda anotado: [ADR-0013](../adr/0013-escucha-con-transcripcion.md)).
 5. Calcular XP por clics o por respuestas rápidas.
 6. Llamar a la IA en el cliente o fuera de los límites diario/mensual.
 7. Meter contenido con derechos de terceros en `content/`.

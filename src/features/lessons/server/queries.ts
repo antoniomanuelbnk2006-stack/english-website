@@ -12,10 +12,12 @@ export interface LessonProgress {
   readingWpm: number | null;
   timeSpentS: number;
   completedAt: string | null;
+  /** Se vio la transcripción antes de completar las dos escuchas a ciegas. */
+  transcriptFirst: boolean;
 }
 
 const COLUMNS =
-  'lesson_id, lesson_version, status, phase, score, best_score, reading_wpm, time_spent_s, completed_at';
+  'lesson_id, lesson_version, status, phase, score, best_score, reading_wpm, time_spent_s, completed_at, transcript_first';
 
 /** Progreso del usuario en todas las lecciones que ha empezado, por id de lección. */
 export const getProgressByLesson = cache(async (): Promise<Map<string, LessonProgress>> => {
@@ -36,6 +38,7 @@ export const getProgressByLesson = cache(async (): Promise<Map<string, LessonPro
         readingWpm: row.reading_wpm,
         timeSpentS: row.time_spent_s,
         completedAt: row.completed_at,
+        transcriptFirst: row.transcript_first,
       },
     ]),
   );

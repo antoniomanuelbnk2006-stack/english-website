@@ -159,7 +159,7 @@ Los drills se componen de **frases de tus propias lecciones** (cuando hay coinci
 
 | Situación | Regla |
 |---|---|
-| Primera escucha de una lección | **Nunca** transcripción. |
+| Primera escucha de una lección | **Nunca** transcripción en el ciclo a ciegas. Si prefieres leer mientras escuchas, elige al empezar el modo «con transcripción»: esa lección ya no medirá tu oído ([ADR-0013](../adr/0013-escucha-con-transcripcion.md)). |
 | Tras responder las preguntas | Sí, con karaoke. |
 | Escucha extensiva en la app | Transcripción oculta por defecto; se puede abrir para *una* frase. |
 | Contenido externo (A2–B1) | Subtítulos **en inglés**. |

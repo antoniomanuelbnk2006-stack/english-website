@@ -437,6 +437,24 @@ export const en: Dictionary = {
     transcriptUnavailable: 'The transcript could not be loaded.',
     audioError: 'The audio could not be loaded. Check your connection.',
     playSegment: 'Play this sentence',
+    modeTitle: 'How do you want to listen?',
+    modeBlind: 'Blind',
+    modeBlindBody:
+      'The full cycle: two listens without the text, dictation and a diagnosis of your ear. This is what improves you most.',
+    modeTranscript: 'With transcript',
+    modeTranscriptBody:
+      'You read while you listen, with the glossary at hand and the current word highlighted. It does not measure your ear.',
+    startWithTranscript: 'Listen with the transcript',
+    modeSeenBefore:
+      'You have already opened this lesson with the transcript: the blind cycle no longer measures your ear on it, but it is still good practice.',
+    assistedHint:
+      'Listen and read at the same time. You can jump from sentence to sentence and slow down.',
+    assistedDone: 'I have finished',
+    assistedResult: 'Listening with the transcript',
+    assistedNote:
+      'The time is recorded in your journal. When you want to test yourself, do the blind cycle of another lesson you have not read.',
+    listenAgain: 'Listen again',
+    doBlindCycle: 'Do the blind cycle',
   },
   player: {
     label: 'Player',

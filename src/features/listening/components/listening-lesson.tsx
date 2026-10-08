@@ -15,6 +15,7 @@ import type { Cause } from '@/features/listening/lib/dictation';
 import type { ListeningIntro } from '@/features/listening/lib/views';
 import {
   getTranscript,
+  openWithTranscript,
   saveDiagnostics,
   saveSelfRating,
   type TranscriptPayload,
@@ -66,6 +67,8 @@ export interface ListeningLessonProps {
   playbackRate: number;
   /** Fichas de gramática que existen para las estructuras de esta lección. */
   grammar: { id: string; title: string }[];
+  /** Ya se abrió esta lección con transcripción antes de las dos escuchas a ciegas. */
+  transcriptSeen: boolean;
 }
 
 async function fetchTranscript(lessonId: string): Promise<TranscriptPayload | null> {
@@ -122,6 +125,7 @@ export function ListeningLesson({
   previous,
   playbackRate,
   grammar,
+  transcriptSeen,
 }: ListeningLessonProps) {
   const t = useT();
   const { clock, record, save, saving, error, serverScore } = useLessonSession(intro);
@@ -144,6 +148,10 @@ export function ListeningLesson({
   const [selfFinal, setSelfFinal] = useState(50);
   const [highlight, setHighlight] = useState<string[]>([]);
   const [activeMs, setActiveMs] = useState(0);
+  // Modo «con transcripción» (ADR-0013): fuera del ciclo a ciegas, con el texto a la vista.
+  const [assisted, setAssisted] = useState<'off' | 'on' | 'done'>('off');
+  const [seenBefore, setSeenBefore] = useState(transcriptSeen);
+  const [opening, setOpening] = useState(false);
 
   // Un único elemento de audio para toda la lección.
   useEffect(() => {
@@ -194,6 +202,32 @@ export function ListeningLesson({
   async function advance(next: number) {
     await save({ phase: next, completed: next === PHASE.result });
     goTo(next);
+  }
+
+  /** El usuario elige ver el texto desde el principio: el servidor lo anota y lo entrega. */
+  async function startAssisted() {
+    setOpening(true);
+    setTranscriptError(false);
+    const result = await openWithTranscript({ lessonId: intro.id }).catch(() => null);
+    setOpening(false);
+    if (!result?.ok) {
+      setTranscriptError(true);
+      return;
+    }
+    setTranscript(result.data);
+    loadLexicon(result.data.lexicon);
+    setSeenBefore(true);
+    setAssisted('on');
+    window.scrollTo({ top: 0 });
+  }
+
+  /** Fin de la escucha con texto: se anota el tiempo, sin tocar la fase del ciclo a ciegas. */
+  async function finishAssisted() {
+    player.pause();
+    await save({ phase: PHASE.prepare });
+    setActiveMs(clock.total());
+    setAssisted('done');
+    window.scrollTo({ top: 0 });
   }
 
   function handleChecked(item: CheckedTask) {
@@ -311,8 +345,9 @@ export function ListeningLesson({
   const segmentText = (segmentId: string) =>
     transcript?.segments.find((segment) => segment.id === segmentId)?.text;
 
-  const showPlayer = phase >= PHASE.global && phase <= PHASE.final;
-  const needsTranscript = phase >= PHASE.diagnosis && phase < PHASE.result;
+  const blind = assisted === 'off';
+  const showPlayer = blind ? phase >= PHASE.global && phase <= PHASE.final : assisted === 'on';
+  const needsTranscript = blind && phase >= PHASE.diagnosis && phase < PHASE.result;
 
   return (
     <div className="mx-auto flex w-full max-w-5xl flex-col gap-5 px-4 py-6 sm:px-6 lg:px-8">
@@ -334,11 +369,17 @@ export function ListeningLesson({
             <Chip className="hud">{t('lesson.wpm', { n: Math.round(intro.audio.wpm) })}</Chip>
           </div>
         </div>
-        <PhaseStepper
-          phases={PHASE_LABELS.map((key) => t(key))}
-          current={phase}
-          label={t('lesson.phaseOf', { n: phase + 1, total: PHASE_LABELS.length })}
-        />
+        {blind ? (
+          <PhaseStepper
+            phases={PHASE_LABELS.map((key) => t(key))}
+            current={phase}
+            label={t('lesson.phaseOf', { n: phase + 1, total: PHASE_LABELS.length })}
+          />
+        ) : (
+          <Chip className="self-start border-accent text-accent">
+            {t('listening.modeTranscript')}
+          </Chip>
+        )}
       </header>
 
       {error || transcriptError ? (
@@ -355,6 +396,7 @@ export function ListeningLesson({
               onClick={() => {
                 // En las fases con texto, quitar el error vuelve a pedirlo (ver el efecto).
                 if (phase === PHASE.detail) void finishDetail();
+                else if (phase === PHASE.prepare) void startAssisted();
                 else setTranscriptError(false);
               }}
             >
@@ -364,7 +406,7 @@ export function ListeningLesson({
         </p>
       ) : null}
 
-      {phase === PHASE.prepare ? (
+      {blind && phase === PHASE.prepare ? (
         <Panel className="flex max-w-2xl flex-col gap-5">
           <div>
             <PanelTitle>{unitTitle}</PanelTitle>
@@ -415,14 +457,43 @@ export function ListeningLesson({
               </dl>
             </div>
           ) : null}
-          <Button
-            size="lg"
-            className="self-start"
-            disabled={saving}
-            onClick={() => void advance(PHASE.global)}
-          >
-            {t('listening.startListening')}
-          </Button>
+          <div className="flex flex-col gap-3">
+            <PanelTitle>{t('listening.modeTitle')}</PanelTitle>
+            {seenBefore ? (
+              <p className="text-sm text-warning">{t('listening.modeSeenBefore')}</p>
+            ) : null}
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div className="flex flex-col gap-3 rounded-control border border-border bg-surface-2 p-4">
+                <div>
+                  <h3 className="font-medium">{t('listening.modeBlind')}</h3>
+                  <p className="mt-1 text-sm text-muted">{t('listening.modeBlindBody')}</p>
+                </div>
+                <Button
+                  size="lg"
+                  className="mt-auto"
+                  disabled={saving || opening}
+                  onClick={() => void advance(PHASE.global)}
+                >
+                  {t('listening.startListening')}
+                </Button>
+              </div>
+              <div className="flex flex-col gap-3 rounded-control border border-border bg-surface-2 p-4">
+                <div>
+                  <h3 className="font-medium">{t('listening.modeTranscript')}</h3>
+                  <p className="mt-1 text-sm text-muted">{t('listening.modeTranscriptBody')}</p>
+                </div>
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  className="mt-auto"
+                  disabled={saving || opening}
+                  onClick={() => void startAssisted()}
+                >
+                  {t('listening.startWithTranscript')}
+                </Button>
+              </div>
+            </div>
+          </div>
         </Panel>
       ) : null}
 
@@ -430,7 +501,7 @@ export function ListeningLesson({
         <AudioPlayer peaks={intro.audio.peaks} duration={intro.audio.duration_s} />
       ) : null}
 
-      {phase === PHASE.global ? (
+      {blind && phase === PHASE.global ? (
         <Panel className="flex flex-col gap-4">
           <p className="text-sm text-muted">{t('listening.globalHint')}</p>
           {tasksDone || globalTasks.length === 0 ? (
@@ -471,7 +542,7 @@ export function ListeningLesson({
         </Panel>
       ) : null}
 
-      {phase === PHASE.detail ? (
+      {blind && phase === PHASE.detail ? (
         <Panel className="flex flex-col gap-4">
           <p className="text-sm text-muted">{t('listening.detailHint')}</p>
           {detailTasks.length > 0 ? (
@@ -727,6 +798,50 @@ export function ListeningLesson({
               </Button>
             ) : null}
             <Link href="/escuchar" className={buttonVariants({ variant: 'secondary' })}>
+              {t('lesson.backToLibrary')}
+            </Link>
+          </div>
+        </Panel>
+      ) : null}
+
+      {assisted === 'on' && transcript ? (
+        <Panel className="flex flex-col gap-4">
+          <p className="text-sm text-muted">{t('listening.assistedHint')}</p>
+          <p className="text-sm text-muted">{t('lexicon.helpHint')}</p>
+          <Transcript
+            segments={transcript.segments}
+            speakers={intro.speakers}
+            features={transcript.connectedSpeech}
+            words={{ lexicon: lex, glossary: transcript.glossary }}
+          />
+          <Button
+            size="lg"
+            className="self-start"
+            disabled={saving}
+            onClick={() => void finishAssisted()}
+          >
+            {t('listening.assistedDone')}
+          </Button>
+        </Panel>
+      ) : null}
+
+      {assisted === 'done' && transcript ? (
+        <Panel className="flex flex-col gap-5">
+          <PanelTitle>{t('listening.assistedResult')}</PanelTitle>
+          <dl>
+            <dt className="text-sm text-muted">{t('lesson.timeLabel')}</dt>
+            <dd className="hud text-3xl">{formatClock(activeMs)}</dd>
+          </dl>
+          <p className="text-sm text-muted">{t('listening.assistedNote')}</p>
+          <HarvestPanel skill="listening" lexicon={lex} glossary={transcript.glossary} />
+          <div className="flex flex-wrap gap-2">
+            <Button variant="secondary" onClick={() => setAssisted('on')}>
+              {t('listening.listenAgain')}
+            </Button>
+            <Button variant="outline" onClick={() => setAssisted('off')}>
+              {t('listening.doBlindCycle')}
+            </Button>
+            <Link href="/escuchar" className={buttonVariants({ variant: 'ghost' })}>
               {t('lesson.backToLibrary')}
             </Link>
           </div>

@@ -433,6 +433,23 @@ export const es = {
     transcriptUnavailable: 'No se ha podido cargar la transcripción.',
     audioError: 'No se ha podido cargar el audio. Comprueba la conexión.',
     playSegment: 'Escuchar esta frase',
+    modeTitle: 'Cómo quieres escucharla',
+    modeBlind: 'A ciegas',
+    modeBlindBody:
+      'El ciclo completo: dos escuchas sin texto, dictado y diagnóstico de tu oído. Es lo que más te hace mejorar.',
+    modeTranscript: 'Con transcripción',
+    modeTranscriptBody:
+      'Lees mientras escuchas, con el glosario a mano y la palabra que suena resaltada. No mide tu oído.',
+    startWithTranscript: 'Escuchar con transcripción',
+    modeSeenBefore:
+      'Ya abriste esta lección con transcripción: el ciclo a ciegas ya no mide tu oído con ella, pero sigue siendo buena práctica.',
+    assistedHint: 'Escucha y lee a la vez. Puedes saltar de frase en frase y bajar la velocidad.',
+    assistedDone: 'He terminado',
+    assistedResult: 'Escucha con transcripción',
+    assistedNote:
+      'El tiempo queda anotado en tu diario. Cuando quieras ponerte a prueba, haz el ciclo a ciegas de otra lección que no hayas leído.',
+    listenAgain: 'Volver a escuchar',
+    doBlindCycle: 'Hacer el ciclo a ciegas',
   },
   player: {
     label: 'Reproductor',

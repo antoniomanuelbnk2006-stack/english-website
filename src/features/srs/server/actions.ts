@@ -1,7 +1,7 @@
 'use server';
 
 import { z } from 'zod';
-import { TRANSCRIPT_FROM_PHASE } from '@/features/listening/lib/views';
+import { transcriptUnlocked } from '@/features/listening/lib/views';
 import { buildAudioCard, buildWordCard } from '@/features/srs/lib/cards';
 import { Grade, isMature, review, type CardState } from '@/features/srs/lib/scheduler';
 import { insertCards } from '@/features/srs/server/cards';
@@ -43,15 +43,15 @@ export async function addCards(input: unknown): Promise<ActionResult<{ added: nu
   const lesson = await loadLesson(parsed.data.lessonId);
   if (!lesson) return fail('not_found');
 
-  // Las tarjetas de una lección de escucha llevan su guion: no antes de las dos escuchas.
+  // Las tarjetas de una lección de escucha llevan su guion: solo cuando ya se puede ver.
   if (lesson.skill === 'listening') {
     const { data: progress, error } = await supabase
       .from('lesson_progress')
-      .select('phase')
+      .select('phase, transcript_first')
       .eq('lesson_id', lesson.id)
       .maybeSingle();
     if (error) return fail('internal');
-    if (!progress || progress.phase < TRANSCRIPT_FROM_PHASE) return fail('conflict');
+    if (!transcriptUnlocked(progress)) return fail('conflict');
   }
 
   const cards = parsed.data.items.flatMap((item) => {

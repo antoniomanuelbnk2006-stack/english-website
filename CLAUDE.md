@@ -43,7 +43,7 @@ Next.js 16 (App Router, Turbopack, `proxy.ts`) · React 19.2 · TypeScript estri
 1. Exponer `ANTHROPIC_API_KEY`, `SUPABASE_SECRET_KEY`, claves de Azure o de R2 al cliente o al repo.
 2. Usar la clave *secret* de Supabase en el código de la app (todo va como el usuario autenticado, con RLS).
 3. Crear una tabla sin `user_id`, RLS y política en la misma migración; editar una migración ya aplicada.
-4. Enviar al cliente la transcripción de una lección de escucha antes de la fase 3 del ciclo.
+4. Enviar al cliente la transcripción de una lección de escucha antes de la fase 3 del ciclo, salvo que el usuario elija el modo «con transcripción» y quede anotado en `lesson_progress.transcript_first` ([ADR-0013](docs/adr/0013-escucha-con-transcripcion.md)).
 5. Calcular XP por clics o por rapidez; solo por tiempo activo.
 6. Llamar a la IA desde el cliente o saltarse los límites diario y mensual.
 7. Meter contenido con derechos de terceros en `content/`; *commitear* audio (`*.m4a`, `*.wav`, `.audio-cache/`).

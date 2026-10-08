@@ -34,6 +34,7 @@ export default async function ListeningLessonPage({ params }: PageProps<'/escuch
           : null
       }
       playbackRate={profile.settings.playback_rate}
+      transcriptSeen={progress?.transcriptFirst ?? false}
       grammar={fichasOfLesson(lesson.id)}
     />
   );

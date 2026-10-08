@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { listeningFixture as lesson, SECRET_A, SECRET_B } from './lesson.fixture';
-import { toIntro, toTranscript } from './views';
+import { toIntro, toTranscript, transcriptUnlocked } from './views';
 
 describe('toIntro · lo que llega al navegador antes de la fase 3', () => {
   const intro = toIntro(lesson);
@@ -47,6 +47,26 @@ describe('toIntro · lo que llega al navegador antes de la fase 3', () => {
       { id: 'maya', name: 'Maya', accent: 'en-GB' },
       { id: 'leo', name: 'Leo', accent: 'en-US' },
     ]);
+  });
+});
+
+describe('transcriptUnlocked · cuándo puede salir el guion del servidor', () => {
+  it('nunca sin progreso guardado ni antes de las dos escuchas a ciegas', () => {
+    expect(transcriptUnlocked(null)).toBe(false);
+    expect(transcriptUnlocked(undefined)).toBe(false);
+    for (const phase of [0, 1, 2]) {
+      expect(transcriptUnlocked({ phase, transcript_first: false })).toBe(false);
+    }
+  });
+
+  it('sí a partir de la fase 3 del ciclo', () => {
+    for (const phase of [3, 4, 7]) expect(transcriptUnlocked({ phase })).toBe(true);
+  });
+
+  it('sí cuando el usuario eligió el modo con transcripción, esté en la fase que esté', () => {
+    expect(transcriptUnlocked({ phase: 0, transcript_first: true })).toBe(true);
+    expect(transcriptUnlocked({ phase: 2, transcript_first: true })).toBe(true);
+    expect(transcriptUnlocked({ phase: 1, transcript_first: null })).toBe(false);
   });
 });
 

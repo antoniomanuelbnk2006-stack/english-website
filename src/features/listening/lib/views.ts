@@ -80,3 +80,15 @@ export function toTranscript(lesson: Lesson): ListeningTranscript {
 
 /** Fase del ciclo a partir de la cual el cliente puede recibir la transcripción. */
 export const TRANSCRIPT_FROM_PHASE = 3;
+
+/**
+ * ¿Puede recibir ya el navegador la transcripción? Solo en dos casos: el progreso guardado
+ * ha superado las dos escuchas a ciegas, o el usuario eligió expresamente el modo «con
+ * transcripción» y quedó anotado (ADR-0013).
+ */
+export function transcriptUnlocked(
+  progress: { phase: number; transcript_first?: boolean | null } | null | undefined,
+): boolean {
+  if (!progress) return false;
+  return progress.phase >= TRANSCRIPT_FROM_PHASE || progress.transcript_first === true;
+}

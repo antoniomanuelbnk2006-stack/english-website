@@ -525,6 +525,10 @@ group by user_id, date_trunc('week', logged_on::timestamp)::date, kind;
 
 Añade la función `public.apply_reviews(p_reviews jsonb) returns int`, que guarda un lote de repasos en una transacción: por cada uno inserta la fila de `srs_reviews` y, **solo si es nueva**, actualiza el estado FSRS de su tarjeta. Es idempotente por `client_id` y respeta RLS (`security invoker`): reenviar un lote no programa una tarjeta dos veces, y no se puede repasar una tarjeta ajena. El estado nuevo lo calcula el servidor con `ts-fsrs` (`features/srs/lib/scheduler.ts`) a partir del estado guardado y llega ya resuelto, igual que los ratings en `apply_lesson_attempts`. Tests en `tests/db/srs.test.ts`.
 
+### Migración `0003_transcript_first.sql`
+
+Añade `lesson_progress.transcript_first boolean not null default false`: el usuario eligió ver la transcripción de una lección de escucha antes de completar las dos escuchas a ciegas. Con la marca puesta, el servidor puede entregar la transcripción aunque `phase < 3`, y esa lección no debe contar para el nivel de listening ([ADR-0013](../adr/0013-escucha-con-transcripcion.md)). Tests en `tests/db/transcript-first.test.ts`.
+
 ---
 
 ## 4. Tipos TypeScript

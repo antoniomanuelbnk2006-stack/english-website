@@ -3,8 +3,8 @@
 import { z } from 'zod';
 import { CAUSES } from '@/features/listening/lib/dictation';
 import {
-  TRANSCRIPT_FROM_PHASE,
   toTranscript,
+  transcriptUnlocked,
   type ListeningTranscript,
 } from '@/features/listening/lib/views';
 import type { LexiconSnapshot } from '@/features/lexicon/components/use-lexicon-session';
@@ -23,8 +23,19 @@ export interface TranscriptPayload extends ListeningTranscript {
   lexicon: LexiconSnapshot;
 }
 
+type Lesson = NonNullable<Awaited<ReturnType<typeof loadListeningLesson>>>;
+
+async function buildPayload(lesson: Lesson): Promise<TranscriptPayload> {
+  const [known, lexicon] = await Promise.all([
+    getKnownLemmas(lesson.segments.flatMap((segment) => segment.tokens)),
+    getLexiconSnapshot(lesson),
+  ]);
+  return { ...toTranscript(lesson), knownLemmas: [...known], lexicon };
+}
+
 /**
- * Entrega la transcripción solo si el progreso guardado ya ha superado las dos escuchas.
+ * Entrega la transcripción dentro del ciclo a ciegas: solo si el progreso guardado ya ha
+ * superado las dos escuchas (o si el usuario ya la abrió antes con el modo con transcripción).
  * Así el guion no llega al navegador antes de tiempo, ni siquiera por la pestaña de red.
  */
 export async function getTranscript(input: unknown): Promise<ActionResult<TranscriptPayload>> {
@@ -39,17 +50,49 @@ export async function getTranscript(input: unknown): Promise<ActionResult<Transc
 
   const { data: progress, error } = await session.supabase
     .from('lesson_progress')
-    .select('phase')
+    .select('phase, transcript_first')
     .eq('lesson_id', lesson.id)
     .maybeSingle();
   if (error) return fail('internal');
-  if (!progress || progress.phase < TRANSCRIPT_FROM_PHASE) return fail('conflict');
+  if (!transcriptUnlocked(progress)) return fail('conflict');
 
-  const [known, lexicon] = await Promise.all([
-    getKnownLemmas(lesson.segments.flatMap((segment) => segment.tokens)),
-    getLexiconSnapshot(lesson),
-  ]);
-  return ok({ ...toTranscript(lesson), knownLemmas: [...known], lexicon });
+  return ok(await buildPayload(lesson));
+}
+
+/**
+ * Modo «con transcripción» (ADR-0013): el usuario elige ver el texto desde el principio.
+ * Si aún no había completado las dos escuchas a ciegas, se anota en su progreso que esta
+ * lección ya no mide su oído; solo entonces se entrega la transcripción.
+ */
+export async function openWithTranscript(input: unknown): Promise<ActionResult<TranscriptPayload>> {
+  const parsed = LessonRef.safeParse(input);
+  if (!parsed.success) return fail('invalid_input');
+
+  const session = await requireUser();
+  if (!session.ok) return fail('unauthorized');
+  const { supabase } = session;
+
+  const lesson = await loadListeningLesson(parsed.data.lessonId);
+  if (!lesson) return fail('not_found');
+
+  const { data: progress, error } = await supabase
+    .from('lesson_progress')
+    .select('phase, transcript_first')
+    .eq('lesson_id', lesson.id)
+    .maybeSingle();
+  if (error) return fail('internal');
+
+  if (!transcriptUnlocked(progress)) {
+    const { error: markError } = await supabase
+      .from('lesson_progress')
+      .upsert(
+        { lesson_id: lesson.id, lesson_version: lesson.version, transcript_first: true },
+        { onConflict: 'user_id,lesson_id' },
+      );
+    if (markError) return fail('internal');
+  }
+
+  return ok(await buildPayload(lesson));
 }
 
 const DiagnosticsInput = z.object({
