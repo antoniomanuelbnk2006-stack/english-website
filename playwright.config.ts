@@ -14,7 +14,8 @@ export const E2E = {
 const env = {
   NEXT_PUBLIC_SUPABASE_URL: E2E.emulatorUrl,
   NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: 'e2e-publishable-key',
-  NEXT_PUBLIC_AUDIO_BASE_URL: '/dev-audio',
+  // El audio de prueba (tonos) va en su propia carpeta para no pisar el real.
+  NEXT_PUBLIC_AUDIO_BASE_URL: '/dev-audio/e2e',
   ALLOWED_EMAIL: E2E.email,
   EMULATOR_PORT: String(EMULATOR_PORT),
   // Contenido de prueba: el real más una lección de escucha con audio generado para los tests.

@@ -53,3 +53,18 @@ export function buildSsml({
     `<voice name="${escapeXml(voice)}">${styled}</voice></speak>`
   );
 }
+
+/** Lo inverso de `buildSsml`, para los proveedores que no entienden SSML: texto y velocidad. */
+export function parseSsml(ssml: string): { text: string; rate: number } {
+  const percent = /<prosody[^>]*rate="([+-]?\d+(?:\.\d+)?)%"/.exec(ssml)?.[1];
+  const text = ssml
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim();
+  return { text, rate: 1 + Number(percent ?? 0) / 100 };
+}

@@ -1,3 +1,4 @@
+import { parseSsml } from '../ssml';
 import type { SynthesisResult, TtsProvider, WordEvent } from './types';
 import { encodeWav } from './wav';
 
@@ -6,20 +7,6 @@ import { encodeWav } from './wav';
 // No sirve para contenido real: nadie aprende a escuchar con pitidos.
 
 const SAMPLE_RATE = 24_000;
-
-function parseSsml(ssml: string): { text: string; rate: number } {
-  const percent = /<prosody[^>]*rate="([+-]?\d+(?:\.\d+)?)%"/.exec(ssml)?.[1];
-  const text = ssml
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&apos;/g, "'")
-    .replace(/\s+/g, ' ')
-    .trim();
-  return { text, rate: 1 + Number(percent ?? 0) / 100 };
-}
 
 export const fakeTts: TtsProvider = {
   id: 'fake',

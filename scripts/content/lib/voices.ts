@@ -50,7 +50,7 @@ export function assignVoices(
 
   // Primero las fijadas a mano: tienen prioridad.
   for (const speaker of speakers) {
-    if (!speaker.voice) continue;
+    if (!speaker.voice || provider.knowsVoice?.(speaker.voice) === false) continue;
     if (used.has(speaker.voice)) {
       throw new Error(`${lessonId}: dos hablantes comparten la voz ${speaker.voice}`);
     }

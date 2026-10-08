@@ -18,5 +18,10 @@ export interface TtsProvider {
   /** `fake` es un doble de pruebas (tonos en vez de voz): nunca para contenido real. */
   id: 'azure' | 'kokoro' | 'fake';
   voicesFor(accent: string, gender: 'female' | 'male'): string[];
+  /**
+   * ¿Es una voz de este proveedor? Si una lección fija una voz de otro (p. ej. una de
+   * Azure) y se locuta con este, se ignora y se asigna una propia.
+   */
+  knowsVoice?(voice: string): boolean;
   synthesize(input: { ssml: string; voice: string }): Promise<SynthesisResult>;
 }

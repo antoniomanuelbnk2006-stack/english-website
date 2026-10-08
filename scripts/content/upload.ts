@@ -1,6 +1,7 @@
 // pnpm content:upload --ids b1-lis-001[,…] [--local]
 // Sube el audio final a Cloudflare R2 con caché inmutable (ADR-0004).
 // Con --local lo copia a public/dev-audio/ para probar sin R2 (NEXT_PUBLIC_AUDIO_BASE_URL=/dev-audio).
+// LOCAL_AUDIO_DIR cambia esa carpeta (la usan los tests e2e para no pisar el audio real).
 import { copyFileSync, existsSync, mkdirSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
 import { parseArgs } from 'node:util';
@@ -48,7 +49,12 @@ async function main(): Promise<number> {
     return 2;
   }
   const files = listLessonFiles().filter((file) => ids.has(file.id));
+  if (!values.local && process.env.CONTENT_DIR) {
+    console.error('Con CONTENT_DIR (contenido de prueba) solo se admite --local: no se sube a R2.');
+    return 2;
+  }
   const r2 = values.local ? null : r2Client();
+  const localDir = path.resolve(process.cwd(), process.env.LOCAL_AUDIO_DIR ?? 'public/dev-audio');
   let problems = 0;
 
   for (const { file, id } of files) {
@@ -66,10 +72,10 @@ async function main(): Promise<number> {
     }
 
     if (!r2) {
-      const target = path.join(process.cwd(), 'public', 'dev-audio', src);
+      const target = path.join(localDir, src);
       mkdirSync(path.dirname(target), { recursive: true });
       copyFileSync(localFile, target);
-      console.log(`${id} → public/dev-audio/${src}`);
+      console.log(`${id} → ${path.relative(process.cwd(), target)}`);
       continue;
     }
 

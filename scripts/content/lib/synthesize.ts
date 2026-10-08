@@ -7,6 +7,7 @@ import { INITIAL_RATE, MAX_RATE, MIN_RATE, buildSsml } from './ssml';
 import { buildTimeline, speechRate, withinRateTolerance, type UnitAudio } from './timeline';
 import { createAzureTts } from './tts/azure';
 import { fakeTts } from './tts/fake';
+import { createKokoroTts } from './tts/kokoro';
 import type { SynthesisResult, TtsProvider, WordEvent } from './tts/types';
 import { parseWav, trimSilence } from './tts/wav';
 import { assignVoices, type VoiceRequest } from './voices';
@@ -14,13 +15,19 @@ import { assignVoices, type VoiceRequest } from './voices';
 // Síntesis de una lección con caché local: re-ejecutar no vuelve a gastar caracteres del TTS
 // (docs/05-contenido/01-pipeline.md §3.5).
 
-export const CACHE_DIR = path.join(process.cwd(), '.audio-cache');
+// (Los tests e2e usan su propia carpeta con AUDIO_CACHE_DIR: su audio de prueba no debe
+// mezclarse nunca con el real.)
+export const CACHE_DIR = path.resolve(
+  process.cwd(),
+  process.env.AUDIO_CACHE_DIR ?? '.audio-cache',
+);
 /** Capa gratuita de Azure AI Speech: 0,5 M de caracteres de voces neuronales al mes. */
 export const FREE_CHARS_PER_MONTH = 500_000;
 
 export function getProvider(): TtsProvider {
   const name = process.env.TTS_PROVIDER ?? 'azure';
   if (name === 'azure') return createAzureTts();
+  if (name === 'kokoro') return createKokoroTts();
   if (name === 'fake') {
     // Tonos en vez de voz: solo para el contenido de prueba de los tests, nunca para content/.
     if (!process.env.CONTENT_DIR) {
@@ -28,7 +35,7 @@ export function getProvider(): TtsProvider {
     }
     return fakeTts;
   }
-  throw new Error(`TTS_PROVIDER=${name} no está implementado (valores: azure, fake)`);
+  throw new Error(`TTS_PROVIDER=${name} no está implementado (valores: azure, kokoro)`);
 }
 
 export interface SpokenUnit {
