@@ -1,0 +1,201 @@
+@import 'tailwindcss';
+
+/* Sistema de diseño de Señal: docs/03-producto/05-sistema-de-diseno.md.
+   Este es el único fichero donde se escriben colores; los componentes usan clases semánticas. */
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #070b14; /* espacio profundo */
+  --surface: #0d1422; /* paneles */
+  --surface-2: #131c2e; /* paneles elevados, popovers */
+  --border: #1e2a40;
+  --text: #e6edf7;
+  --text-muted: #93a3bd; /* texto secundario: ≥ 4,5:1 */
+  --text-subtle: #64748b; /* 4,1:1 sobre el fondo: solo iconos, bordes y placeholders, nunca texto */
+  --accent: #22d3ee; /* cian: acción principal, señal */
+  --accent-strong: #06b6d4;
+  --accent-contrast: #04111a; /* texto sobre --accent */
+  --electric: #3b82f6; /* azul eléctrico: secundario, gráficos */
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #f87171;
+  --karaoke: rgb(34 211 238 / 0.18);
+  --word-unknown: rgb(34 211 238 / 0.55);
+  --word-learning: rgb(251 191 36 / 0.6);
+  --focus: #67e8f9;
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --text-subtle: #64748b;
+  --accent: #0e7490;
+  --accent-strong: #155e75;
+  --accent-contrast: #ffffff;
+  --electric: #2563eb;
+  --success: #059669;
+  --warning: #b45309;
+  --danger: #dc2626;
+  --karaoke: rgb(14 116 144 / 0.14);
+  --word-unknown: rgb(14 116 144 / 0.5);
+  --word-learning: rgb(180 83 9 / 0.5);
+  --focus: #0e7490;
+}
+
+/* «Según el sistema»: oscuro salvo que el sistema pida claro. */
+@media (prefers-color-scheme: light) {
+  [data-theme='system'] {
+    color-scheme: light;
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --surface-2: #f1f5f9;
+    --border: #e2e8f0;
+    --text: #0f172a;
+    --text-muted: #475569;
+    --text-subtle: #64748b;
+    --accent: #0e7490;
+    --accent-strong: #155e75;
+    --accent-contrast: #ffffff;
+    --electric: #2563eb;
+    --success: #059669;
+    --warning: #b45309;
+    --danger: #dc2626;
+    --karaoke: rgb(14 116 144 / 0.14);
+    --word-unknown: rgb(14 116 144 / 0.5);
+    --word-learning: rgb(180 83 9 / 0.5);
+    --focus: #0e7490;
+  }
+}
+
+/* Papel: solo para el lector y las tarjetas (se aplica en su contenedor). */
+[data-theme='paper'] {
+  color-scheme: light;
+  --bg: #f7f4ec;
+  --surface: #fbf9f3;
+  --surface-2: #efeadf;
+  --border: #e2dccd;
+  --text: #1f2328;
+  --text-muted: #57534e;
+  --text-subtle: #78716c;
+  --accent: #0e7490;
+  --accent-strong: #155e75;
+  --accent-contrast: #ffffff;
+  --electric: #2563eb;
+  --success: #047857;
+  --warning: #b45309;
+  --danger: #b91c1c;
+  --karaoke: rgb(14 116 144 / 0.14);
+  --word-unknown: rgb(14 116 144 / 0.5);
+  --word-learning: rgb(180 83 9 / 0.5);
+  --focus: #0e7490;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-muted: var(--text-muted);
+  --color-subtle: var(--text-subtle);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-contrast: var(--accent-contrast);
+  --color-electric: var(--electric);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --color-karaoke: var(--karaoke);
+  --color-word-unknown: var(--word-unknown);
+  --color-word-learning: var(--word-learning);
+  --color-focus: var(--focus);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-reading: var(--font-literata), Georgia, serif;
+  --radius-panel: 14px;
+  --radius-control: 10px;
+}
+
+@layer base {
+  html {
+    background-color: var(--bg);
+    color: var(--text);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Foco visible: anillo de 2 px con 2 px de separación (WCAG 2.2 AA). */
+  :focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background-color: var(--karaoke);
+  }
+
+  /* El contenido de aprendizaje va en inglés: sin partición automática de palabras. */
+  [lang='en'] {
+    hyphens: manual;
+  }
+}
+
+/* Lector: 19/32 por defecto y 22/36 en grande; medida de 60–72 caracteres. */
+@utility reading-md {
+  font-family: var(--font-reading);
+  font-size: 1.1875rem;
+  line-height: 2rem;
+  text-wrap: pretty;
+  hyphens: manual;
+}
+
+@utility reading-lg {
+  font-family: var(--font-reading);
+  font-size: 1.375rem;
+  line-height: 2.25rem;
+  text-wrap: pretty;
+  hyphens: manual;
+}
+
+@utility reading-measure {
+  max-width: 68ch;
+}
+
+/* Cifras del HUD: monoespaciadas y alineadas. */
+@utility hud {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* «Brillo» sutil para el elemento activo; la elevación va con bordes, no con sombras. */
+@utility glow {
+  box-shadow:
+    0 0 0 1px var(--accent),
+    0 0 24px -8px var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
