@@ -116,13 +116,18 @@ describe('fichas del repositorio', () => {
       .map((name) => ({ level, id: name.slice(0, -4), file: path.join(root, level, name) })),
   );
 
-  it('están las cinco fichas B1 del MVP', () => {
+  it('hay al menos una ficha por nivel, y las cinco de B1 del MVP', () => {
     expect(files.map((f) => f.id).sort()).toEqual([
+      'a1.present-simple',
+      'a2.past-simple',
       'b1.linkers',
       'b1.passive-present-past',
       'b1.phrasal-verbs-separable',
       'b1.present-perfect-vs-past-simple',
       'b1.relative-clauses-defining',
+      'b2.linking-contrast-concession',
+      'c1.hedging-distancing',
+      'c2.figurative-language',
     ]);
   });
 
