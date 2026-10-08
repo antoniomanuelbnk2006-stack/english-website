@@ -249,6 +249,10 @@ function buildWhere(table: string, url: URL, params: string[]): string {
         return `cast($${params.length}::text as ${type})`;
       });
       clauses.push(`${ident(column)} in (${marks.join(', ') || 'null'})`);
+    } else if (operator === 'like' || operator === 'ilike') {
+      // PostgREST admite «*» como comodín además de «%».
+      params.push(value.replace(/\*/g, '%'));
+      clauses.push(`${ident(column)}::text ${operator} $${params.length}::text`);
     } else if (OPERATORS[operator]) {
       params.push(value);
       clauses.push(
@@ -351,12 +355,20 @@ function buildQuery(method: string, table: string, url: URL, body: unknown, pref
 async function buildRpc(
   name: string,
   body: Record<string, unknown>,
-): Promise<Sql & { isVoid: boolean }> {
-  const found = await testDb.db.query<{ args: string[] | null; types: string[]; ret: string }>(
+): Promise<Sql & { isVoid: boolean; isScalar: boolean }> {
+  const found = await testDb.db.query<{
+    args: string[] | null;
+    types: string[];
+    ret: string;
+    scalar: boolean;
+  }>(
     `select p.proargnames as args,
             array(select format_type(t, null) from unnest(p.proargtypes::oid[]) as t) as types,
-            format_type(p.prorettype, null) as ret
-     from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+            format_type(p.prorettype, null) as ret,
+            (rt.typtype <> 'c' and not p.proretset) as scalar
+     from pg_proc p
+     join pg_namespace n on n.oid = p.pronamespace
+     join pg_type rt on rt.oid = p.prorettype
      where n.nspname = 'public' and p.proname = $1`,
     [name],
   );
@@ -374,7 +386,12 @@ async function buildRpc(
   });
   const call = `public.${ident(name)}(${args.join(', ')})`;
   const isVoid = fn.ret === 'void';
-  return { text: isVoid ? `select ${call}` : asJson(`select * from ${call}`), params, isVoid };
+  if (isVoid) return { text: `select ${call}`, params, isVoid, isScalar: false };
+  // Una función que devuelve un valor suelto (int, text…) responde con ese valor, sin envolver.
+  if (fn.scalar) {
+    return { text: `select to_jsonb(${call})::text as body`, params, isVoid, isScalar: true };
+  }
+  return { text: asJson(`select * from ${call}`), params, isVoid, isScalar: false };
 }
 
 function withSession<T>(req: IncomingMessage, run: (tx: Transaction) => Promise<T>): Promise<T> {
@@ -395,6 +412,7 @@ async function handleRest(
     const sql = await buildRpc(route.slice(4), (body ?? {}) as Record<string, unknown>);
     const result = await withSession(req, (tx) => tx.query<{ body: string }>(sql.text, sql.params));
     if (sql.isVoid) return { status: 204 };
+    if (sql.isScalar) return { status: 200, json: JSON.parse(result.rows[0]?.body ?? 'null') };
     const rows = JSON.parse(result.rows[0]?.body ?? '[]') as unknown[];
     // Una función que devuelve una fila (no un conjunto) responde con un objeto.
     return { status: 200, json: rows.length === 1 ? rows[0] : rows };
@@ -414,7 +432,22 @@ async function handleRest(
   const rows = JSON.parse(result.rows[0]?.body ?? '[]') as unknown[];
   const headers: Record<string, string> = {};
   if (prefer.includes('count=exact')) {
-    headers['Content-Range'] = rows.length > 0 ? `0-${rows.length - 1}/${rows.length}` : `*/0`;
+    // El total no depende de limit/offset: se cuenta aparte, como hace PostgREST.
+    let total = rows.length;
+    if (method === 'GET' || method === 'HEAD') {
+      const countParams: string[] = [];
+      const where = buildWhere(route, url, countParams);
+      const counted = await withSession(req, (tx) =>
+        tx.query<{ n: number }>(
+          `select count(*)::int as n from public.${ident(route)}${where}`,
+          countParams,
+        ),
+      );
+      total = counted.rows[0]?.n ?? 0;
+    }
+    const offset = Number.parseInt(url.searchParams.get('offset') ?? '0', 10);
+    headers['Content-Range'] =
+      rows.length > 0 ? `${offset}-${offset + rows.length - 1}/${total}` : `*/${total}`;
   }
 
   if (method === 'HEAD') return { status: 200, headers };

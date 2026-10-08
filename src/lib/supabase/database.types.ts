@@ -667,6 +667,10 @@ export type Database = {
         };
         Returns: undefined;
       };
+      apply_reviews: {
+        Args: { p_reviews: Json };
+        Returns: number;
+      };
     };
     Enums: {
       card_kind: 'word' | 'chunk' | 'audio' | 'grammar' | 'production';
