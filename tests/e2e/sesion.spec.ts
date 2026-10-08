@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { E2E } from '../../playwright.config';
 import { expectAccessible } from './axe';
 import { queryDatabase, resetDatabase, signIn, trackErrors } from './session';
 
@@ -69,4 +70,28 @@ test('la navegación lleva a cada sección y marca la actual', async ({ page, is
     await nav.getByRole('link', { name: 'Diario' }).click();
   }
   await expect(page).toHaveURL(/\/diario$/);
+});
+
+test('una sesión de un usuario que ya no existe lleva a entrar de nuevo, no a un error', async ({
+  page,
+  request,
+}) => {
+  await signIn(page);
+  await expect(page.getByRole('heading', { level: 1, name: 'Hoy' })).toBeVisible();
+
+  // El usuario se borra y se vuelve a crear (como al reiniciar la demo): la cookie del
+  // navegador sigue siendo un token bien firmado, pero de alguien que ya no existe.
+  await resetDatabase(request);
+
+  await page.goto('/hoy');
+  await expect(page).toHaveURL(/\/login$/);
+  await expect(page.getByRole('heading', { name: 'Algo ha fallado' })).toHaveCount(0);
+
+  // Y se puede volver a entrar con normalidad.
+  await page.getByLabel('Email').fill(E2E.email);
+  await page.getByRole('button', { name: 'Enviar código' }).click();
+  await page.getByLabel('Código de 6 dígitos').fill(E2E.otp);
+  await page.getByRole('button', { name: 'Entrar' }).click();
+  await expect(page).toHaveURL(/\/hoy$/);
+  await expect(page.getByRole('heading', { level: 1, name: 'Hoy' })).toBeVisible();
 });

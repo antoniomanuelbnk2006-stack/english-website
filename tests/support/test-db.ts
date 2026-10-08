@@ -5,6 +5,8 @@ import { PGlite, type Transaction } from '@electric-sql/pglite';
 // Postgres real en memoria (PGlite) con las migraciones del proyecto aplicadas tal cual.
 // Sirve para probar SQL, RLS y funciones sin Docker, y como base del emulador de Supabase
 // de los tests e2e. No sustituye a probar contra el proyecto real antes de desplegar.
+// Con una carpeta de datos (la demo, `pnpm demo`) la base se guarda en disco: al volver a
+// abrirla solo se aplican las migraciones que falten.
 
 /** Lo mínimo de Supabase que las migraciones dan por hecho: roles, esquema auth y auth.uid(). */
 const SUPABASE_SHIM = `
@@ -20,6 +22,15 @@ const SUPABASE_SHIM = `
     select nullif(current_setting('request.jwt.claims', true)::jsonb ->> 'sub', '')::uuid
   $$;
   grant usage on schema auth to anon, authenticated;
+`;
+
+/** Qué se ha aplicado ya a esta base (fuera de `public`: no es una tabla de la app). */
+const MIGRATION_LOG = `
+  create schema if not exists emulator;
+  create table if not exists emulator.migrations (
+    name text primary key,
+    applied_at timestamptz not null default now()
+  );
 `;
 
 /** Permisos que Supabase concede por defecto a sus roles sobre el esquema public. */
@@ -40,15 +51,27 @@ export interface TestDb {
   close: () => Promise<void>;
 }
 
-export async function createTestDb(): Promise<TestDb> {
-  const db = new PGlite();
-  await db.exec(SUPABASE_SHIM);
+/** Sin `dataDir`, en memoria (los tests). Con `dataDir`, los datos se guardan en esa carpeta. */
+export async function createTestDb(dataDir?: string): Promise<TestDb> {
+  const db = new PGlite(dataDir);
+  await db.exec(MIGRATION_LOG);
+  const done = await db.query<{ name: string }>('select name from emulator.migrations');
+  const applied = new Set(done.rows.map((row) => row.name));
+  // Cada paso va en su transacción junto con su anotación: o se aplica entero o no consta.
+  const applyOnce = async (name: string, sql: string) => {
+    if (applied.has(name)) return;
+    await db.transaction(async (tx) => {
+      await tx.exec(sql);
+      await tx.query('insert into emulator.migrations (name) values ($1)', [name]);
+    });
+  };
 
+  await applyOnce('supabase-shim', SUPABASE_SHIM);
   const dir = path.join(process.cwd(), 'supabase', 'migrations');
   for (const file of readdirSync(dir)
     .filter((name) => name.endsWith('.sql'))
     .sort()) {
-    await db.exec(readFileSync(path.join(dir, file), 'utf8'));
+    await applyOnce(file, readFileSync(path.join(dir, file), 'utf8'));
   }
   await db.exec(DEFAULT_GRANTS);
 

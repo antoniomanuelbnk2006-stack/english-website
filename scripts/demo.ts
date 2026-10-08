@@ -1,15 +1,27 @@
-// pnpm demo
-// Arranca Señal para probarla sin cuentas ni claves: la app compilada contra el emulador de
-// Supabase en memoria de los tests (ADR-0011), con el contenido real de content/ y el audio
-// local de public/dev-audio/.
+// pnpm demo            arranca la demo
+// pnpm demo --reset    borra antes los datos guardados y empieza de cero
 //
-// OJO: los datos viven en memoria y se pierden al cerrar. No es un entorno de uso real: para
-// eso hace falta un proyecto de Supabase y un .env.local (docs/06-desarrollo/04-entornos-y-despliegue.md).
+// Arranca Señal para probarla sin cuentas ni claves: la app compilada contra el emulador de
+// Supabase de los tests (ADR-0011), con el contenido real de content/ y el audio local de
+// public/dev-audio/.
+//
+// Los datos (nivel, progreso, repaso, diario) se guardan en .demo-data/ y siguen ahí al
+// volver a arrancar. Aun así no es un entorno de uso real: es un único usuario, en este
+// ordenador y sin copias. Para eso hace falta un proyecto de Supabase y un .env.local
+// (docs/06-desarrollo/04-entornos-y-despliegue.md).
 import { spawn, spawnSync, type ChildProcess } from 'node:child_process';
+import { existsSync, rmSync } from 'node:fs';
+import path from 'node:path';
 
 const APP_PORT = process.env.DEMO_PORT ?? '3000';
 const EMULATOR_PORT = '54399';
 const EMAIL = 'owner@example.invalid';
+const DATA_DIR = path.resolve(process.env.DEMO_DATA_DIR ?? '.demo-data');
+
+if (process.argv.includes('--reset') && existsSync(DATA_DIR)) {
+  rmSync(DATA_DIR, { recursive: true, force: true });
+  console.log(`Datos de la demo borrados (${DATA_DIR}).`);
+}
 
 const env = {
   ...process.env,
@@ -18,6 +30,7 @@ const env = {
   NEXT_PUBLIC_AUDIO_BASE_URL: '/dev-audio',
   ALLOWED_EMAIL: EMAIL,
   EMULATOR_PORT,
+  EMULATOR_DATA_DIR: DATA_DIR,
 };
 
 const next = require.resolve('next/dist/bin/next');
@@ -48,7 +61,8 @@ setTimeout(() => {
       `  Señal (demostración)   http://localhost:${APP_PORT}`,
       `  Email:  ${EMAIL}`,
       '  Código: 123456',
-      '  Los datos se pierden al cerrar (Ctrl+C).',
+      `  Tus datos se guardan en ${path.relative(process.cwd(), DATA_DIR) || DATA_DIR}`,
+      '  (para empezar de cero: pnpm demo --reset). Ctrl+C para cerrar.',
       '──────────────────────────────────────────────────────────',
       '',
     ].join('\n'),

@@ -4,7 +4,12 @@
 // delete y rpc) que usa la app, sobre un Postgres real en memoria con las migraciones del
 // proyecto. Las consultas pasan por RLS como el usuario de la sesión, igual que en producción.
 // Es una herramienta de test: no implementa todo Supabase ni sustituye a probar contra el real.
+//
+// Con EMULATOR_DATA_DIR (la demo, `pnpm demo`) la base de datos se guarda en esa carpeta y
+// las sesiones siguen valiendo tras reiniciar; las rutas de control /__test/ se desactivan
+// para que ningún test pueda borrar esos datos.
 import { createHmac, randomUUID, timingSafeEqual } from 'node:crypto';
+import { existsSync, renameSync } from 'node:fs';
 import http, { type IncomingMessage, type ServerResponse } from 'node:http';
 import type { Transaction } from '@electric-sql/pglite';
 import { createTestDb, type TestDb } from './test-db';
@@ -14,6 +19,9 @@ const TEST_EMAIL = (process.env.ALLOWED_EMAIL ?? 'owner@example.invalid').toLowe
 /** Código OTP que el emulador acepta siempre (no envía correos). */
 const TEST_OTP = '123456';
 const JWT_SECRET = 'emulador-de-supabase-solo-para-tests';
+/** Carpeta donde guardar los datos; sin ella, todo vive en memoria (los tests). */
+const DATA_DIR = process.env.EMULATOR_DATA_DIR || undefined;
+const REFRESH_TTL_S = 60 * 24 * 3600;
 
 class HttpError extends Error {
   constructor(
@@ -34,7 +42,10 @@ function signJwt(payload: Record<string, unknown>): string {
   return `${head}.${body}.${b64url(signature)}`;
 }
 
-function verifyJwt(token: string): { sub: string; email: string } | null {
+function verifyJwt(
+  token: string,
+  use: 'access' | 'refresh' = 'access',
+): { sub: string; email: string } | null {
   const [head, body, signature] = token.split('.');
   if (!head || !body || !signature) return null;
   const expected = createHmac('sha256', JWT_SECRET).update(`${head}.${body}`).digest();
@@ -45,8 +56,11 @@ function verifyJwt(token: string): { sub: string; email: string } | null {
       sub?: string;
       email?: string;
       exp?: number;
+      token_use?: string;
     };
     if (!payload.sub || !payload.email || (payload.exp ?? 0) < Date.now() / 1000) return null;
+    // Un token de renovación no sirve para llamar a la API, ni uno de acceso para renovar.
+    if ((payload.token_use ?? 'access') !== use) return null;
     return { sub: payload.sub, email: payload.email };
   } catch {
     return null;
@@ -61,7 +75,6 @@ let testDb: TestDb;
 /** tabla → columna → tipo SQL (para convertir los filtros de la URL). */
 const columnTypes = new Map<string, Map<string, string>>();
 const primaryKeys = new Map<string, string[]>();
-const refreshTokens = new Map<string, string>(); // refresh token → user id
 
 const ident = (name: string): string => {
   if (!/^[a-z_][a-z0-9_]*$/.test(name)) {
@@ -105,6 +118,14 @@ async function userByEmail(email: string): Promise<{ id: string; email: string }
   return result.rows[0] ?? null;
 }
 
+async function userById(id: string): Promise<{ id: string; email: string } | null> {
+  const result = await testDb.db.query<{ id: string; email: string }>(
+    'select id, email from auth.users where id = $1',
+    [id],
+  );
+  return result.rows[0] ?? null;
+}
+
 function userJson(user: { id: string; email: string }) {
   const now = new Date().toISOString();
   return {
@@ -126,8 +147,15 @@ function userJson(user: { id: string; email: string }) {
 
 function sessionJson(user: { id: string; email: string }) {
   const now = Math.floor(Date.now() / 1000);
-  const refresh = randomUUID();
-  refreshTokens.set(refresh, user.id);
+  // Firmado y sin estado: sigue valiendo aunque el emulador se reinicie (la demo).
+  const refresh = signJwt({
+    sub: user.id,
+    email: user.email,
+    token_use: 'refresh',
+    iat: now,
+    exp: now + REFRESH_TTL_S,
+    jti: randomUUID(),
+  });
   return {
     access_token: signJwt({
       sub: user.id,
@@ -173,25 +201,27 @@ async function handleAuth(
   }
 
   if (route === '/token' && req.method === 'POST') {
-    const userId = refreshTokens.get(String(body.refresh_token ?? ''));
-    const result = userId
-      ? await testDb.db.query<{ id: string; email: string }>(
-          'select id, email from auth.users where id = $1',
-          [userId],
-        )
-      : null;
-    const user = result?.rows[0];
+    const claims = verifyJwt(String(body.refresh_token ?? ''), 'refresh');
+    const user = claims ? await userById(claims.sub) : null;
     if (!user) {
       throw new HttpError(400, { code: 'refresh_token_not_found', msg: 'Invalid Refresh Token' });
     }
-    refreshTokens.delete(String(body.refresh_token));
     return { status: 200, json: sessionJson(user) };
   }
 
   if (route === '/user' && req.method === 'GET') {
     const claims = verifyJwt(bearer(req));
     if (!claims) throw new HttpError(401, { code: 'bad_jwt', msg: 'invalid JWT' });
-    return { status: 200, json: userJson({ id: claims.sub, email: claims.email }) };
+    // Un token bien firmado de un usuario que ya no existe (el emulador se reinició o se
+    // restableció la base de datos) no es una sesión válida: GoTrue responde igual.
+    const user = await userById(claims.sub);
+    if (!user) {
+      throw new HttpError(403, {
+        code: 'user_not_found',
+        msg: 'User from sub claim in JWT does not exist',
+      });
+    }
+    return { status: 200, json: userJson(user) };
   }
 
   if (route === '/logout' && req.method === 'POST') return { status: 204 };
@@ -476,7 +506,6 @@ async function handleTestControl(
   if (url.pathname === '/__test/reset') {
     // Borra y recrea al usuario: todos sus datos desaparecen en cascada.
     await testDb.db.query('delete from auth.users');
-    refreshTokens.clear();
     const id = await testDb.createUser(TEST_EMAIL);
     // Los tests parten de un usuario que ya eligió nivel (B1); el primer acceso real, no:
     // ese flujo tiene su propio test, que borra el nivel antes de entrar.
@@ -530,7 +559,16 @@ function route(req: IncomingMessage, url: URL, body: unknown): Promise<Reply> {
   const object = (body ?? {}) as Record<string, unknown>;
   if (url.pathname.startsWith('/auth/v1')) return handleAuth(req, url, object);
   if (url.pathname.startsWith('/rest/v1/')) return handleRest(req, url, body);
-  if (url.pathname.startsWith('/__test/')) return handleTestControl(url, object);
+  if (url.pathname.startsWith('/__test/')) {
+    // Con datos guardados no hay rutas de control: un test que se conecte por error a la
+    // demo debe fallar, no borrar lo que el usuario lleva hecho.
+    if (DATA_DIR) {
+      throw new HttpError(403, {
+        message: 'rutas de control desactivadas: el emulador guarda datos (demo)',
+      });
+    }
+    return handleTestControl(url, object);
+  }
   if (url.pathname === '/health') return Promise.resolve({ status: 200, json: { ok: true } });
   throw new HttpError(404, { message: `ruta no emulada: ${url.pathname}` });
 }
@@ -573,20 +611,47 @@ async function handle(req: IncomingMessage, res: ServerResponse): Promise<void> 
   res.end(payload);
 }
 
-async function main(): Promise<void> {
-  testDb = await createTestDb();
-  await loadCatalog();
-  await testDb.createUser(TEST_EMAIL);
+/** Abre la base de datos. Si la carpeta guardada no se puede abrir, se aparta y se empieza de cero. */
+async function openDb(): Promise<TestDb> {
+  if (!DATA_DIR) return createTestDb();
+  try {
+    return await createTestDb(DATA_DIR);
+  } catch (error) {
+    if (!existsSync(DATA_DIR)) throw error;
+    const aside = `${DATA_DIR}.rota-${Date.now()}`;
+    renameSync(DATA_DIR, aside);
+    console.error(
+      `[emulador] No se han podido abrir los datos guardados (${String(error)}).\n` +
+        `           Se han apartado en ${aside} y se empieza de cero.`,
+    );
+    return createTestDb(DATA_DIR);
+  }
+}
 
-  http
+async function main(): Promise<void> {
+  testDb = await openDb();
+  await loadCatalog();
+  // Con datos guardados el usuario ya existe: no se toca.
+  if (!(await userByEmail(TEST_EMAIL))) await testDb.createUser(TEST_EMAIL);
+
+  const server = http
     .createServer((req, res) => {
       void handle(req, res);
     })
     .listen(PORT, '127.0.0.1', () => {
       console.log(
-        `Emulador de Supabase en http://127.0.0.1:${PORT} · usuario ${TEST_EMAIL} · código ${TEST_OTP}`,
+        `Emulador de Supabase en http://127.0.0.1:${PORT} · usuario ${TEST_EMAIL} · código ${TEST_OTP}` +
+          (DATA_DIR ? ` · datos en ${DATA_DIR}` : ' · datos en memoria'),
       );
     });
+
+  // Cierre ordenado: la base de datos guardada queda bien cerrada.
+  const shutdown = () => {
+    server.close();
+    void testDb.close().finally(() => process.exit(0));
+  };
+  process.once('SIGINT', shutdown);
+  process.once('SIGTERM', shutdown);
 }
 
 void main();

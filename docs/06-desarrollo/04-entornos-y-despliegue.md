@@ -149,12 +149,22 @@ AI_CHEAP_MODEL=claude-haiku-5-5
 | `format` | `prettier --write .` |
 | `test` | `vitest run` |
 | `e2e` | `playwright test` |
+| `demo` | `tsx scripts/demo.ts`: la app compilada contra el emulador de Supabase, sin cuentas ni claves (ver abajo) |
 | `db:start` / `db:reset` / `db:push` | `supabase start` / `supabase db reset` / `supabase db push` |
 | `db:types` | `supabase gen types typescript --local > src/lib/supabase/database.types.ts` |
 | `db:backup` | `supabase db dump --data-only -f ../senal-backups/$(date +%F).sql` |
 | `content:*` | `tsx --env-file=.env.pipeline scripts/content/<script>.ts` |
 | `ai:eval` | `tsx --env-file=.env.pipeline scripts/ai/eval.ts` |
 | `studio` | `next dev` (Studio solo existe en desarrollo) |
+
+### Demostración local (`pnpm demo`)
+
+Para probar la app sin crear nada en la nube: compila, arranca el emulador de Supabase de los tests ([ADR-0011](../adr/0011-e2e-con-emulador-de-supabase.md)) y sirve la app en `http://localhost:3000` con el contenido real de `content/` y el audio local de `public/dev-audio/`. Se entra con `owner@example.invalid` y el código `123456`.
+
+- Los datos (nivel, progreso, repaso, diario) se guardan en `.demo-data/` y **siguen ahí al volver a arrancar**, igual que la sesión del navegador. `pnpm demo --reset` los borra y empieza de cero.
+- Si la carpeta guardada no se puede abrir, el emulador la aparta (`.demo-data.rota-…`) y arranca vacío en vez de fallar.
+- Con datos guardados, las rutas de control del emulador (`/__test/…`) están desactivadas: un test que se conecte por error a la demo falla, no borra nada. Aun así, **cierra la demo antes de `pnpm e2e`** (usan los mismos puertos).
+- No es un entorno de uso real: un único usuario, en este ordenador y sin copias de seguridad. Para eso están las secciones 3 a 8.
 
 ---
 
@@ -167,6 +177,9 @@ AI_CHEAP_MODEL=claude-haiku-5-5
 *.m4a
 *.wav
 content/.batches/
+/public/dev-audio/
+/.e2e/
+/.demo-data*/
 ```
 
 ---
