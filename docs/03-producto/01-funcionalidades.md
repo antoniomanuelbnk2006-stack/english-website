@@ -27,6 +27,8 @@
 | F-014 | Biblioteca **extensiva** (episodios y relatos largos por capítulos) | S | 4 |
 | F-015 | Fichas de **gramática** (MDX) con audio y mini-práctica | S | 3 |
 | F-016 | Clásicos de dominio público con audio alineado (C1–C2) | C | 8 |
+| F-017 | **Use of English** por nivel con formato de examen de Cambridge (elegir la palabra, completar, formar palabras, transformar frases), corregido en servidor y con fallos al repaso ([ADR-0012](../adr/0012-use-of-english-y-nivel-declarado.md)) | M | 3 |
+| F-018 | **Elegir el nivel** (A1–C2) en el primer acceso; las bibliotecas enseñan primero ese nivel | M | 3 |
 
 ## 3. Listening
 

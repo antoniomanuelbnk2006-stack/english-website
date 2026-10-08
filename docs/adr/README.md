@@ -15,6 +15,7 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0009](0009-nivel-por-destreza-con-elo.md) | Nivel por destreza con rating tipo Elo + pruebas de confirmación | Aceptada |
 | [0010](0010-un-solo-usuario.md) | Un solo usuario, con arquitectura multiusuario «dormida» | Aceptada |
 | [0011](0011-e2e-con-emulador-de-supabase.md) | Tests e2e y de base de datos contra un emulador de Supabase en memoria | Aceptada |
+| [0012](0012-use-of-english-y-nivel-declarado.md) | Sección «Use of English» con formato de examen y nivel elegido por el usuario | Aceptada |
 
 Plantilla:
 

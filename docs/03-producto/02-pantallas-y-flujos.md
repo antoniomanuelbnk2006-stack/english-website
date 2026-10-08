@@ -22,10 +22,12 @@ La interfaz está **en español** por defecto (rutas incluidas); el contenido de
 | `/repasar` | Sesión de repaso SRS | 3 |
 | `/vocabulario` | Tu léxico (buscar, filtrar, editar estado) | 3 |
 | `/gramatica` · `/gramatica/[id]` | Índice y fichas | 3 |
+| `/use-of-english` · `/use-of-english/[id]` | Ejercicios con formato de examen, por nivel y por parte | 3 |
 | `/entrenar/[drill]` | Drills sueltos (formas débiles, números…) | 2 |
 | `/escribir` · `/escribir/[id]` | Consignas y editor con feedback | 6 |
 | `/progreso` | Niveles, horas, gráficas, «Tu oído» | 5 |
-| `/nivel` · `/nivel/test` · `/nivel/confirmar/[skill]` | Test de nivel y pruebas de confirmación | 5–6 |
+| `/nivel` | Elegir el nivel (A1–C2); obligatorio en el primer acceso | 3 |
+| `/nivel/test` · `/nivel/confirmar/[skill]` | Test de nivel y pruebas de confirmación | 5–6 |
 | `/diario` | Diario de input (registrar y ver) | 1 |
 | `/ajustes` | Perfil, objetivos, apariencia, datos | 0–1 |
 | `/studio/*` | Revisión de contenido (**solo en desarrollo**) | 4 |

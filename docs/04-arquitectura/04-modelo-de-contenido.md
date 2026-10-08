@@ -413,6 +413,7 @@ export type ListeningDraftLLM = z.infer<typeof ListeningDraftLLM>;
 | Tipo | Ubicación | Esquema (resumen) |
 |---|---|---|
 | Ficha de gramática | `content/grammar/{nivel}/{id}.mdx` | *Frontmatter* (`GrammarMeta` en `src/lib/content/grammar-schema.ts`): `id`, `level`, `title`, `summary_es`, `skills[]`, `related[]`, `examples[]` (`{ en, es }`) y `practice[]` (5 ítems `{ id, prompt con ___, answers[], rule_es }`); cuerpo MDX con secciones fijas ([gramática](../01-pedagogia/06-gramatica.md#2-formato-de-una-ficha)) |
+| Use of English | `content/use-of-english/{nivel}/{id}.json` | `UoeSet` en `src/lib/content/uoe-schema.ts`: `id` (`b2-uoe-001`), `level`, `part` (`mcq_cloze`, `open_cloze`, `word_formation`, `key_word_transformation`), `title`, `summary_es`; texto con huecos `{{n}}` y `gaps[]`, o `items[]` con `keyword`, `before`, `after` y las dos mitades de la respuesta (`parts`); `explanation_es` en cada hueco ([ADR-0012](../adr/0012-use-of-english-y-nivel-declarado.md)) |
 | Unidades | `content/units.json` | `{ [unitId]: título }`: nombre de cada unidad para agrupar las bibliotecas |
 | Niveles de los lemas | `content/wordlists/levels.generated.json` | `{ A1: [lemas], … }`. Lo genera `pnpm content:index` a partir de las listas con licencia abierta; la app lo usa para saber qué palabras dar por conocidas según tu nivel. No se edita a mano |
 | Consigna de writing | `content/writing/{nivel}/{id}.json` | `id`, `level`, `task_type`, `prompt_en`, `context_es`, `points[]`, `words_min`, `words_max`, `topic` |

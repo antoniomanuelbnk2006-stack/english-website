@@ -37,7 +37,8 @@ content/lessons/b1/listening/b1-lis-001.json      status: draft
 | `pnpm content:review --ids <ids>` | Prueba «solo preguntas» + revisión completa; guarda `qa.reviewer`; marca `reviewed` si pasa | IA (Batch) |
 | `pnpm content:tts --ids <ids>` | Sintetiza segmentos con eventos de palabra; usa caché por *hash* | TTS (capa gratuita) |
 | `pnpm content:audio --ids <ids>` | Une, normaliza, codifica, calcula tiempos finales y picos | 0 |
-| `pnpm content:upload --ids <ids>` | Sube a R2 con cabeceras inmutables | 0 |
+| `pnpm content:upload --ids <ids>` | Sube a R2 con cabeceras inmutables (`--local`: copia a `public/dev-audio/` para probar sin R2) | 0 |
+| `pnpm content:publish --ids <ids>` | Marca como publicadas lecciones ya revisadas (`status` y `provenance.reviewed_by`) | 0 |
 | `pnpm content:validate` | Valida **todo** `content/` (también en CI) | 0 |
 | `pnpm content:index` | Regenera `content/index.generated.json` | 0 |
 | `pnpm content:run --spec <yaml>` | Encadena todo con puntos de control y reanudación | — |
@@ -132,7 +133,8 @@ export interface TtsProvider {
 
 - `azure.ts`: SDK de Azure Speech, evento `wordBoundary` → `WordEvent`.
 - `kokoro.ts`: modelo local (Apache 2.0); si no da tiempos por palabra, alineado forzado posterior.
-- Se elige con `TTS_PROVIDER` en `.env.pipeline`.
+- Se elige con `TTS_PROVIDER` en `.env.pipeline` (`azure` o `kokoro`).
+- **Kokoro ya está implementado** (`tts/kokoro.ts`, paquete `kokoro-js`): corre en local sin claves, con voces en-GB y en-US. Como no da eventos de palabra, los tiempos se **estiman** emparejando las pausas del audio con la puntuación (`tts/estimate-words.ts`); para tiempos exactos hace falta Azure. Admite velocidades de 0,7× a 1,3×: en A1, si aun así va rápido, se alargan las pausas con `pause_after_ms`.
 
 ---
 
