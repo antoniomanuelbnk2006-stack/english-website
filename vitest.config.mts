@@ -14,7 +14,7 @@ export default defineConfig({
   test: {
     // Lógica pura por defecto; los tests de componentes piden jsdom con `// @vitest-environment jsdom`.
     environment: 'node',
-    include: ['src/**/*.test.{ts,tsx}', 'scripts/**/*.test.ts'],
+    include: ['src/**/*.test.{ts,tsx}', 'scripts/**/*.test.ts', 'tests/db/**/*.test.ts'],
     setupFiles: ['./tests/setup.ts'],
     coverage: {
       provider: 'v8',
