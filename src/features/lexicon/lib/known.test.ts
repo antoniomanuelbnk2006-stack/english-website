@@ -62,4 +62,18 @@ describe('knownLemmas y coverage', () => {
     expect(coverage(tokens, new Set())).toBeCloseTo(2 / 6); // solo las gramaticales
     expect(coverage([], new Set())).toBe(1);
   });
+
+  it('con tokens ya agrupados por lema, cada uno pesa las veces que aparece', () => {
+    const grouped = [
+      { l: 'game', p: 'NOUN', w: true, n: 8 },
+      { l: 'modder', p: 'NOUN', w: true, n: 2 },
+      { l: 'the', p: 'DET', w: true, n: 10 },
+      { l: ',', p: 'PUNCT', w: false, n: 30 },
+    ];
+    // 20 contables: «the» (10, gramatical) y «game» (8) conocidos → 18 / 20.
+    expect(coverage(grouped, new Set(['game']))).toBeCloseTo(0.9);
+    // Da lo mismo que contar los tokens uno a uno.
+    const flat = grouped.flatMap(({ n, ...token }) => Array.from({ length: n }, () => token));
+    expect(coverage(flat, new Set(['game']))).toBeCloseTo(0.9);
+  });
 });

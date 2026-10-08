@@ -46,6 +46,8 @@ export interface CountableToken {
   p: string;
   /** ¿Cuenta para la cobertura? (no puntuación, números ni nombres propios). */
   w: boolean;
+  /** Veces que aparece, si los tokens vienen ya agrupados (por defecto, 1). */
+  n?: number;
 }
 
 /** Lemas conocidos entre los tokens contables de un texto. */
@@ -77,8 +79,13 @@ export function knownLemmas(
  * Devuelve 1 si el texto no tiene tokens contables.
  */
 export function coverage(tokens: readonly CountableToken[], known: ReadonlySet<string>): number {
-  const countable = tokens.filter((token) => token.w);
-  if (countable.length === 0) return 1;
-  const hits = countable.filter((token) => known.has(token.l) || FUNCTION_POS.has(token.p)).length;
-  return hits / countable.length;
+  let total = 0;
+  let hits = 0;
+  for (const token of tokens) {
+    if (!token.w) continue;
+    const weight = token.n ?? 1;
+    total += weight;
+    if (known.has(token.l) || FUNCTION_POS.has(token.p)) hits += weight;
+  }
+  return total === 0 ? 1 : hits / total;
 }
