@@ -16,6 +16,7 @@ import {
   type LessonStatus,
 } from '@/features/lessons/lib/library';
 import { getProgressByLesson } from '@/features/lessons/server/queries';
+import { getCoverageByLesson } from '@/features/lexicon/server/queries';
 import { getLessonIndex, unitTitle } from '@/lib/content/index';
 import type { TranslationKey } from '@/lib/i18n';
 import { getT } from '@/lib/i18n/server';
@@ -87,7 +88,7 @@ export async function LessonLibrary({
     );
   }
 
-  const progress = await getProgressByLesson();
+  const [progress, coverage] = await Promise.all([getProgressByLesson(), getCoverageByLesson(all)]);
   const statusById = new Map(all.map((lesson) => [lesson.id, statusOf(progress.get(lesson.id))]));
   const topics = [...new Set(all.map((lesson) => lesson.topic))].sort();
   const levels = CEFR_LEVELS.filter((level) => all.some((lesson) => lesson.level === level));
@@ -192,6 +193,7 @@ export async function LessonLibrary({
                       href={`${basePath}/${lesson.id}` as Route}
                       status={statusById.get(lesson.id) ?? 'new'}
                       bestScore={progress.get(lesson.id)?.bestScore ?? null}
+                      coverage={coverage.get(lesson.id) ?? null}
                       t={t}
                     />
                   </li>

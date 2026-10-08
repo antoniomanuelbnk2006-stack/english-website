@@ -21,12 +21,15 @@ export function LessonCard({
   href,
   status,
   bestScore,
+  coverage,
   t,
 }: {
   lesson: LessonMeta;
   href: Route;
   status: LessonStatus;
   bestScore: number | null;
+  /** Cobertura léxica para el usuario, de 0 a 1. */
+  coverage: number | null;
   t: Translate;
 }) {
   const { icon: StatusIcon, label, className } = STATUS[status];
@@ -65,6 +68,11 @@ export function LessonCard({
           </Chip>
         ))}
         <Chip className="hud">{t('lesson.minutes', { n: lesson.est_minutes })}</Chip>
+        {coverage !== null ? (
+          <Chip className="hud border-accent text-text">
+            {t('lesson.coverage', { pct: Math.floor(coverage * 100) })}
+          </Chip>
+        ) : null}
       </div>
 
       {bestScore !== null ? (

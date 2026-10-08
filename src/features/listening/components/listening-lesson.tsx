@@ -8,6 +8,8 @@ import { InlineText } from '@/components/ui/inline-text';
 import { Chip, Panel, PanelTitle, Skeleton } from '@/components/ui/panel';
 import { PhaseStepper } from '@/components/ui/phase-stepper';
 import { useLessonSession } from '@/features/lessons/components/use-lesson-session';
+import { useLexiconSession } from '@/features/lexicon/components/use-lexicon-session';
+import { recordExposure } from '@/features/lexicon/server/actions';
 import { formatClock, meanScore, toPercent } from '@/features/lessons/lib/summary';
 import type { Cause } from '@/features/listening/lib/dictation';
 import type { ListeningIntro } from '@/features/listening/lib/views';
@@ -17,6 +19,7 @@ import {
   saveSelfRating,
   type TranscriptPayload,
 } from '@/features/listening/server/actions';
+import { HarvestPanel } from '@/features/srs/components/harvest-panel';
 import { TaskRunner, type CheckedTask } from '@/features/tasks/components/task-runner';
 import { audioUrl } from '@/lib/audio/segments';
 import { player, usePlayer } from '@/lib/audio/store';
@@ -61,6 +64,8 @@ export interface ListeningLessonProps {
   initialPhase: number;
   previous: { score: number | null; version: number } | null;
   playbackRate: number;
+  /** Fichas de gramática que existen para las estructuras de esta lección. */
+  grammar: { id: string; title: string }[];
 }
 
 async function fetchTranscript(lessonId: string): Promise<TranscriptPayload | null> {
@@ -116,9 +121,12 @@ export function ListeningLesson({
   initialPhase,
   previous,
   playbackRate,
+  grammar,
 }: ListeningLessonProps) {
   const t = useT();
   const { clock, record, save, saving, error, serverScore } = useLessonSession(intro);
+  const lex = useLexiconSession(intro.id);
+  const loadLexicon = lex.load;
   const playing = usePlayer((state) => state.playing);
 
   const globalTasks = useMemo(() => intro.tasks.filter((x) => x.phase === 'listen_1'), [intro]);
@@ -154,18 +162,23 @@ export function ListeningLesson({
     let cancelled = false;
     void fetchTranscript(intro.id).then((data) => {
       if (cancelled) return;
-      if (data) setTranscript(data);
-      else setTranscriptError(true);
+      if (data) {
+        setTranscript(data);
+        loadLexicon(data.lexicon);
+      } else {
+        setTranscriptError(true);
+      }
     });
     return () => {
       cancelled = true;
     };
-  }, [phase, transcript, transcriptError, intro.id]);
+  }, [phase, transcript, transcriptError, intro.id, loadLexicon]);
 
   async function loadTranscript(): Promise<boolean> {
     const data = await fetchTranscript(intro.id);
     setTranscript(data);
     setTranscriptError(data === null);
+    if (data) loadLexicon(data.lexicon);
     return data !== null;
   }
 
@@ -228,7 +241,16 @@ export function ListeningLesson({
 
   async function finishLesson() {
     void saveSelfRating({ lessonId: intro.id, moment: 'final', value: selfFinal });
-    await advance(PHASE.result);
+    const saved = await save({ phase: PHASE.result, completed: true });
+    // Al completar: lo consultado entra en el léxico y cuenta la promoción implícita.
+    if (saved) {
+      void recordExposure({
+        lessonId: intro.id,
+        lookedUp: [...lex.marked],
+        failed: failedLemmas,
+      });
+    }
+    goTo(PHASE.result);
   }
 
   const dictationContext = useMemo((): DictationContext | null => {
@@ -271,6 +293,23 @@ export function ListeningLesson({
   for (const failure of dictations.flatMap((d) => d.failures)) {
     causeCounts.set(failure.cause, (causeCounts.get(failure.cause) ?? 0) + 1);
   }
+
+  const failures = useMemo(
+    () =>
+      dictations.flatMap((d) =>
+        d.failures.map((failure) => ({ segmentId: d.task.segment, cause: failure.cause })),
+      ),
+    [dictations],
+  );
+  /** Lemas de las palabras falladas en el dictado: rompen su racha de «vista sin consultar». */
+  const failedLemmas = dictations.flatMap((d) => {
+    const lemmas = dictationContext?.lemmas.get(d.task.segment) ?? {};
+    return d.failures.flatMap((failure) =>
+      failure.expected.split(' ').map((word) => lemmas[word] ?? word),
+    );
+  });
+  const segmentText = (segmentId: string) =>
+    transcript?.segments.find((segment) => segment.id === segmentId)?.text;
 
   const showPlayer = phase >= PHASE.global && phase <= PHASE.final;
   const needsTranscript = phase >= PHASE.diagnosis && phase < PHASE.result;
@@ -477,11 +516,13 @@ export function ListeningLesson({
         <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_22rem] xl:items-start">
           <Panel className="flex flex-col gap-4">
             <p className="text-sm text-muted">{t('listening.transcriptHint')}</p>
+            <p className="text-sm text-muted">{t('lexicon.helpHint')}</p>
             <Transcript
               segments={transcript.segments}
               speakers={intro.speakers}
               features={transcript.connectedSpeech}
               highlight={highlight}
+              words={{ lexicon: lex, glossary: transcript.glossary }}
             />
           </Panel>
           <Panel className="flex flex-col gap-4 xl:sticky xl:top-6">
@@ -649,6 +690,33 @@ export function ListeningLesson({
               </ul>
             )}
           </div>
+          {grammar.length > 0 ? (
+            <div>
+              <h3 className="text-sm font-medium">{t('grammar.inThisLesson')}</h3>
+              <ul className="mt-2 flex flex-col gap-1 text-sm">
+                {grammar.map((ficha) => (
+                  <li key={ficha.id}>
+                    <Link
+                      href={`/gramatica/${ficha.id}`}
+                      lang="en"
+                      className="text-accent underline underline-offset-4"
+                    >
+                      {ficha.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+          {transcript ? (
+            <HarvestPanel
+              skill="listening"
+              lexicon={lex}
+              glossary={transcript.glossary}
+              failures={failures}
+              segmentText={segmentText}
+            />
+          ) : null}
           <div className="flex flex-wrap gap-2">
             {error ? (
               <Button

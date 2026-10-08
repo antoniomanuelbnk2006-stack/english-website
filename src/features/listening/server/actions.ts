@@ -7,7 +7,8 @@ import {
   toTranscript,
   type ListeningTranscript,
 } from '@/features/listening/lib/views';
-import { getKnownLemmas } from '@/features/lexicon/server/queries';
+import type { LexiconSnapshot } from '@/features/lexicon/components/use-lexicon-session';
+import { getKnownLemmas, getLexiconSnapshot } from '@/features/lexicon/server/queries';
 import { fail, ok, type ActionResult } from '@/lib/actions';
 import { requireUser } from '@/lib/auth';
 import { loadListeningLesson } from '@/lib/content/loader';
@@ -18,6 +19,8 @@ const LessonRef = z.object({ lessonId: LessonId });
 export interface TranscriptPayload extends ListeningTranscript {
   /** Lemas de la lección que el usuario conoce (para proponer la causa de cada fallo). */
   knownLemmas: string[];
+  /** Niveles, estados y tarjetas de las palabras de la lección (glosario y cosecha). */
+  lexicon: LexiconSnapshot;
 }
 
 /**
@@ -42,8 +45,11 @@ export async function getTranscript(input: unknown): Promise<ActionResult<Transc
   if (error) return fail('internal');
   if (!progress || progress.phase < TRANSCRIPT_FROM_PHASE) return fail('conflict');
 
-  const known = await getKnownLemmas(lesson.segments.flatMap((segment) => segment.tokens));
-  return ok({ ...toTranscript(lesson), knownLemmas: [...known] });
+  const [known, lexicon] = await Promise.all([
+    getKnownLemmas(lesson.segments.flatMap((segment) => segment.tokens)),
+    getLexiconSnapshot(lesson),
+  ]);
+  return ok({ ...toTranscript(lesson), knownLemmas: [...known], lexicon });
 }
 
 const DiagnosticsInput = z.object({

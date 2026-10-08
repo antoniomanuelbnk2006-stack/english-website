@@ -8,8 +8,14 @@ import { InlineText } from '@/components/ui/inline-text';
 import { Chip, Panel, PanelTitle } from '@/components/ui/panel';
 import { PhaseStepper } from '@/components/ui/phase-stepper';
 import { useLessonSession } from '@/features/lessons/components/use-lesson-session';
+import {
+  useLexiconSession,
+  type LexiconSnapshot,
+} from '@/features/lexicon/components/use-lexicon-session';
+import { recordExposure } from '@/features/lexicon/server/actions';
 import { byFocus, formatClock, meanScore, toPercent } from '@/features/lessons/lib/summary';
 import { READING_WPM_TARGET, SKIM_SECONDS } from '@/features/reading/lib/targets';
+import { HarvestPanel } from '@/features/srs/components/harvest-panel';
 import { TaskRunner, type CheckedTask } from '@/features/tasks/components/task-runner';
 import { isPlausibleWpm, wordsPerMinute } from '@/lib/active-time';
 import type { ReadingLesson as ReadingLessonData } from '@/lib/content/loader';
@@ -38,6 +44,10 @@ export interface ReadingLessonProps {
   previous: { score: number | null; version: number } | null;
   fontPx: number;
   paper: boolean;
+  /** Lo que se sabe del usuario sobre las palabras de este texto. */
+  lexicon: LexiconSnapshot;
+  /** Fichas de gramática que existen para las estructuras de esta lección. */
+  grammar: { id: string; title: string }[];
 }
 
 export function ReadingLesson({
@@ -47,9 +57,12 @@ export function ReadingLesson({
   previous,
   fontPx,
   paper,
+  lexicon,
+  grammar,
 }: ReadingLessonProps) {
   const t = useT();
   const { clock, record, save, saving, error, serverScore } = useLessonSession(lesson);
+  const lex = useLexiconSession(lesson.id, lexicon);
 
   const skimTasks = useMemo(() => lesson.tasks.filter((task) => task.phase === 'skim'), [lesson]);
   const readTasks = useMemo(() => lesson.tasks.filter((task) => task.phase === 'read'), [lesson]);
@@ -114,7 +127,11 @@ export function ReadingLesson({
   /** Guarda y avanza. Si el guardado falla, se avanza igual: los intentos quedan en cola. */
   async function advance(next: number, extra: { readingWpm?: number } = {}) {
     const target = resolvePhase(next);
-    await save({ phase: target, completed: target === PHASE.result, ...extra });
+    const saved = await save({ phase: target, completed: target === PHASE.result, ...extra });
+    // Al completar: lo consultado entra en el léxico y cuenta la promoción implícita.
+    if (saved && target === PHASE.result) {
+      void recordExposure({ lessonId: lesson.id, lookedUp: [...lex.marked] });
+    }
     goTo(target);
   }
 
@@ -143,6 +160,9 @@ export function ReadingLesson({
   const inImmersion = phase === PHASE.read;
   const showText = phase >= PHASE.skim;
   const showAside = phase !== PHASE.prepare && phase !== PHASE.read;
+  // Ayudas (glosario) solo al releer; mientras se lee o se responde, solo se puede marcar.
+  const wordMode =
+    phase === PHASE.skim ? null : phase >= PHASE.focus ? ('help' as const) : ('immersion' as const);
 
   const text = (
     <ReaderText
@@ -150,6 +170,7 @@ export function ReadingLesson({
       highlight={evidence}
       fontPx={fontPx}
       className={inImmersion ? 'mx-auto' : undefined}
+      words={wordMode ? { mode: wordMode, lexicon: lex, glossary: lesson.glossary } : undefined}
     />
   );
 
@@ -304,6 +325,11 @@ export function ReadingLesson({
                     {formatClock(readMs)}
                   </p>
                 </div>
+              ) : null}
+
+              {/* Junto al texto: en pantallas estrechas las preguntas están en otra pestaña. */}
+              {wordMode === 'help' ? (
+                <p className="reading-measure mb-4 text-sm text-muted">{t('lexicon.helpHint')}</p>
               ) : null}
 
               {paper ? (
@@ -469,6 +495,27 @@ export function ReadingLesson({
                     ) : scored.length > 0 ? (
                       <p className="text-sm text-success">{t('lesson.allCorrect')}</p>
                     ) : null}
+
+                    {grammar.length > 0 ? (
+                      <div>
+                        <h3 className="text-sm font-medium">{t('grammar.inThisLesson')}</h3>
+                        <ul className="mt-2 flex flex-col gap-1 text-sm">
+                          {grammar.map((ficha) => (
+                            <li key={ficha.id}>
+                              <Link
+                                href={`/gramatica/${ficha.id}`}
+                                lang="en"
+                                className="text-accent underline underline-offset-4"
+                              >
+                                {ficha.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
+
+                    <HarvestPanel skill="reading" lexicon={lex} glossary={lesson.glossary} />
 
                     <div className="flex flex-wrap gap-2">
                       {error ? (

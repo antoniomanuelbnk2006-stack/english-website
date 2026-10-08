@@ -3,6 +3,8 @@
 import { Play } from 'lucide-react';
 import { useEffect, useMemo, useRef } from 'react';
 import { InlineText } from '@/components/ui/inline-text';
+import type { LexiconSession } from '@/features/lexicon/components/use-lexicon-session';
+import { WordLayer, Words } from '@/features/lexicon/components/word-layer';
 import type { ListeningTranscript } from '@/features/listening/lib/views';
 import { wordAt } from '@/lib/audio/segments';
 import { player, usePlayer } from '@/lib/audio/store';
@@ -35,18 +37,21 @@ function featuredTokens(segment: Segment, features: readonly Feature[]): Set<num
 /**
  * Transcripción con karaoke por palabra. La palabra activa se marca con un atributo sobre su
  * nodo (solo cambian dos nodos por paso): la transcripción no vuelve a renderizarse al sonar.
+ * Con `words`, cada palabra abre su glosario y se puede oír en su contexto.
  */
 export function Transcript({
   segments,
   speakers,
   features,
   highlight,
+  words,
 }: {
   segments: readonly Segment[];
   speakers: readonly { id: string; name: string }[];
   features: readonly Feature[];
   /** Ids de segmentos a destacar (donde estaba la respuesta de una pregunta). */
   highlight?: readonly string[];
+  words?: { lexicon: LexiconSession; glossary: ListeningTranscript['glossary'] };
 }) {
   const t = useT();
   const rootRef = useRef<HTMLOListElement>(null);
@@ -99,7 +104,7 @@ export function Transcript({
       ?.scrollIntoView({ block: 'center' });
   }, [firstMarked]);
 
-  return (
+  const list = (
     <ol ref={rootRef} className="flex flex-col gap-4">
       {segments.map((segment, index) => {
         const own = features.filter((feature) => feature.ref === segment.id);
@@ -126,20 +131,27 @@ export function Transcript({
                 {names.get(segment.speaker) ?? segment.speaker}
               </p>
               <p lang="en" className="reading-md">
-                {segment.tokens.map((token, i) => {
-                  const timed = token.s !== undefined;
-                  return (
+                {words ? (
+                  <Words
+                    sentence={segment}
+                    wordProps={(token, i) => ({
+                      'data-w': token.s !== undefined ? '' : undefined,
+                      'data-feature': underlined.has(i) ? '' : undefined,
+                    })}
+                  />
+                ) : (
+                  segment.tokens.map((token, i) => (
                     <span key={i}>
                       <span
-                        data-w={timed ? '' : undefined}
+                        data-w={token.s !== undefined ? '' : undefined}
                         data-feature={underlined.has(i) ? '' : undefined}
                       >
                         {token.t}
                       </span>
                       {token.sp ? ' ' : ''}
                     </span>
-                  );
-                })}
+                  ))
+                )}
               </p>
               {own.length > 0 ? (
                 <ul className="mt-1.5 flex flex-col gap-1 text-sm text-muted">
@@ -160,5 +172,21 @@ export function Transcript({
         );
       })}
     </ol>
+  );
+
+  if (!words) return list;
+  return (
+    <WordLayer
+      mode="help"
+      sentences={segments}
+      glossary={words.glossary}
+      lexicon={words.lexicon}
+      onPlayWord={(token) => {
+        if (token.s !== undefined && token.e !== undefined) player.playRange(token.s, token.e);
+      }}
+      onPlaySentence={(id) => player.playSegment(segments.findIndex((s) => s.id === id))}
+    >
+      {list}
+    </WordLayer>
   );
 }

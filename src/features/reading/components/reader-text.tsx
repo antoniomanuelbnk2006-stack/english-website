@@ -1,6 +1,8 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
+import type { LexiconSession } from '@/features/lexicon/components/use-lexicon-session';
+import { WordLayer, Words } from '@/features/lexicon/components/word-layer';
 import type { ReadingLesson } from '@/lib/content/loader';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
@@ -8,23 +10,31 @@ import { cn } from '@/lib/utils';
 /**
  * Texto de una lección de lectura: tipografía de lectura, medida de 60–72 caracteres y
  * párrafos numerados (las preguntas se refieren a ellos). Es texto real, no imágenes.
+ * Con `words`, cada palabra se puede marcar como desconocida y, en modo «help», abre su glosario.
  */
 export function ReaderText({
   paragraphs,
   highlight,
   fontPx,
   className,
+  words,
 }: {
   paragraphs: ReadingLesson['paragraphs'];
   /** Ids de frases o párrafos a resaltar (evidencia de una pregunta). */
   highlight?: readonly string[];
   fontPx: number;
   className?: string;
+  words?: {
+    mode: 'immersion' | 'help';
+    lexicon: LexiconSession;
+    glossary: ReadingLesson['glossary'];
+  };
 }) {
   const t = useT();
   const rootRef = useRef<HTMLDivElement>(null);
   const marked = new Set(highlight);
   const firstMarked = highlight?.[0];
+  const sentences = useMemo(() => paragraphs.flatMap((p) => p.sentences), [paragraphs]);
 
   // Lleva a la vista la primera frase resaltada.
   useEffect(() => {
@@ -34,7 +44,7 @@ export function ReaderText({
     target?.scrollIntoView({ block: 'center', behavior: reduced ? 'auto' : 'smooth' });
   }, [firstMarked]);
 
-  return (
+  const body = (
     <div
       ref={rootRef}
       lang="en"
@@ -67,11 +77,23 @@ export function ReaderText({
                 marked.has(sentence.id) && 'rounded-sm bg-karaoke box-decoration-clone',
               )}
             >
-              {sentence.text}{' '}
+              {words ? <Words sentence={sentence} /> : sentence.text}{' '}
             </span>
           ))}
         </p>
       ))}
     </div>
+  );
+
+  if (!words) return body;
+  return (
+    <WordLayer
+      mode={words.mode}
+      sentences={sentences}
+      glossary={words.glossary}
+      lexicon={words.lexicon}
+    >
+      {body}
+    </WordLayer>
   );
 }

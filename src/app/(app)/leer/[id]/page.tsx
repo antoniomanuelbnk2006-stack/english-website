@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getLessonProgress } from '@/features/lessons/server/queries';
+import { getLexiconSnapshot } from '@/features/lexicon/server/queries';
 import { getProfile } from '@/features/profile/server/queries';
 import { ReadingLesson } from '@/features/reading/components/reading-lesson';
+import { fichasOfLesson } from '@/lib/content/grammar';
 import { findLessonMeta, unitTitle } from '@/lib/content/index';
 import { loadReadingLesson } from '@/lib/content/loader';
 
@@ -16,7 +18,11 @@ export default async function ReadingLessonPage({ params }: PageProps<'/leer/[id
   const lesson = await loadReadingLesson(id);
   if (!lesson) notFound();
 
-  const [profile, progress] = await Promise.all([getProfile(), getLessonProgress(id)]);
+  const [profile, progress, lexicon] = await Promise.all([
+    getProfile(),
+    getLessonProgress(id),
+    getLexiconSnapshot(lesson),
+  ]);
 
   return (
     <ReadingLesson
@@ -30,6 +36,8 @@ export default async function ReadingLessonPage({ params }: PageProps<'/leer/[id
       }
       fontPx={profile.settings.reading_font_px}
       paper={profile.settings.reader_paper}
+      lexicon={lexicon}
+      grammar={fichasOfLesson(lesson.id)}
     />
   );
 }

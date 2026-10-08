@@ -4,6 +4,7 @@ import { getLessonProgress } from '@/features/lessons/server/queries';
 import { ListeningLesson } from '@/features/listening/components/listening-lesson';
 import { toIntro } from '@/features/listening/lib/views';
 import { getProfile } from '@/features/profile/server/queries';
+import { fichasOfLesson } from '@/lib/content/grammar';
 import { findLessonMeta, unitTitle } from '@/lib/content/index';
 import { loadListeningLesson } from '@/lib/content/loader';
 import { env } from '@/lib/env';
@@ -33,6 +34,7 @@ export default async function ListeningLessonPage({ params }: PageProps<'/escuch
           : null
       }
       playbackRate={profile.settings.playback_rate}
+      grammar={fichasOfLesson(lesson.id)}
     />
   );
 }
