@@ -1,13 +1,16 @@
 // pnpm content:validate [--offline] [--against <ref-de-git>]
-// Valida TODO content/: esquemas Zod, invariantes I-1…I-12, anotaciones al día y calidad determinista.
+// Valida TODO content/: esquemas Zod, invariantes I-1…I-12, anotaciones al día, calidad determinista
+// y las fichas de gramática (frontmatter, secciones y que el MDX compile).
 // Corre también en CI (con --offline, sin comprobar que el audio responde en R2).
 import { execFileSync } from 'node:child_process';
-import { existsSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import path from 'node:path';
 import { parseArgs } from 'node:util';
 import { z } from 'zod';
+import { checkFicha, parseFicha } from '../../src/lib/content/grammar-schema';
 import { LessonMeta } from '../../src/lib/content/schema';
 import { checkLesson } from './lib/check-lesson';
-import { INDEX_FILE, listLessonFiles, readJson } from './lib/io';
+import { CONTENT_DIR, INDEX_FILE, listLessonFiles, readJson } from './lib/io';
 import { loadWordLists } from './lib/wordlists';
 
 /** Contenido de un fichero en otra referencia de git, o `undefined` si allí no existe. */
@@ -36,6 +39,45 @@ async function audioResponds(src: string): Promise<string | null> {
   } catch {
     return `I-11 · no se pudo conectar con ${url}`;
   }
+}
+
+/** Fichas de gramática: frontmatter válido, secciones acordadas y cuerpo MDX que compila. */
+async function checkGrammar(): Promise<{ count: number; errors: number }> {
+  const root = path.join(CONTENT_DIR, 'grammar');
+  if (!existsSync(root)) return { count: 0, errors: 0 };
+  const { compile } = await import('@mdx-js/mdx');
+  const { default: remarkGfm } = await import('remark-gfm');
+
+  let count = 0;
+  let errors = 0;
+  const seen = new Set<string>();
+  for (const level of readdirSync(root).sort()) {
+    for (const file of readdirSync(path.join(root, level)).sort()) {
+      if (!file.endsWith('.mdx')) continue;
+      count++;
+      const id = file.slice(0, -'.mdx'.length);
+      const issues: string[] = [];
+      try {
+        const ficha = parseFicha(readFileSync(path.join(root, level, file), 'utf8'));
+        issues.push(...checkFicha(ficha, { id, level }));
+        if (seen.has(ficha.meta.id)) issues.push(`id repetido: ${ficha.meta.id}`);
+        seen.add(ficha.meta.id);
+        await compile(ficha.body, { remarkPlugins: [remarkGfm] });
+      } catch (error) {
+        issues.push(
+          error instanceof z.ZodError
+            ? error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join(' · ')
+            : error instanceof Error
+              ? error.message
+              : String(error),
+        );
+      }
+      console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (gramática)`);
+      for (const message of issues) console.log(`    ✗ ${message}`);
+      errors += issues.length;
+    }
+  }
+  return { count, errors };
 }
 
 async function main(): Promise<number> {
@@ -106,8 +148,11 @@ async function main(): Promise<number> {
     errorCount++;
   }
 
+  const fichas = await checkGrammar();
+  errorCount += fichas.errors;
+
   console.log(
-    `\n${files.length} lección(es): ${published.length} publicada(s) · ${errorCount} error(es) · ${warningCount} aviso(s).`,
+    `\n${files.length} lección(es): ${published.length} publicada(s) · ${fichas.count} ficha(s) de gramática · ${errorCount} error(es) · ${warningCount} aviso(s).`,
   );
   return errorCount > 0 ? 1 : 0;
 }
