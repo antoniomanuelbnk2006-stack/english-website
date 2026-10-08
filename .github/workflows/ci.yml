@@ -47,5 +47,7 @@ jobs:
             pnpm db:types:local && git diff --exit-code src/lib/supabase/database.types.ts
           fi
       - run: pnpm exec playwright install --with-deps chromium
+      # El contenido de prueba genera su audio con el pipeline real (TTS de pruebas + ffmpeg).
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
       # Los e2e usan un emulador de Supabase en memoria (tests/support/supabase-emulator.ts).
       - run: pnpm e2e

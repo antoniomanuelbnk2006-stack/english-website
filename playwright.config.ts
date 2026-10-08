@@ -17,6 +17,8 @@ const env = {
   NEXT_PUBLIC_AUDIO_BASE_URL: '/dev-audio',
   ALLOWED_EMAIL: E2E.email,
   EMULATOR_PORT: String(EMULATOR_PORT),
+  // Contenido de prueba: el real más una lección de escucha con audio generado para los tests.
+  CONTENT_DIR: '.e2e/content',
 };
 
 export default defineConfig({
@@ -48,10 +50,10 @@ export default defineConfig({
       env,
     },
     {
-      command: `pnpm build && pnpm start -p ${APP_PORT}`,
+      command: `pnpm exec tsx tests/support/build-fixture-content.ts && pnpm build && pnpm start -p ${APP_PORT}`,
       url: `http://localhost:${APP_PORT}/login`,
       reuseExistingServer: !process.env.CI,
-      timeout: 180_000,
+      timeout: 300_000,
       env,
     },
   ],
