@@ -11,6 +11,9 @@ import { player, usePlayer } from '@/lib/audio/store';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
 
+/** Margen, en segundos, al reproducir una palabra suelta. */
+const WORD_PADDING_S = 0.12;
+
 type Segment = ListeningTranscript['segments'][number];
 type Feature = ListeningTranscript['connectedSpeech'][number];
 
@@ -182,7 +185,10 @@ export function Transcript({
       glossary={words.glossary}
       lexicon={words.lexicon}
       onPlayWord={(token) => {
-        if (token.s !== undefined && token.e !== undefined) player.playRange(token.s, token.e);
+        if (token.s === undefined || token.e === undefined) return;
+        // Un pequeño margen a cada lado: una palabra cortada al milímetro suena amputada, y
+        // con voces sin eventos de palabra (Kokoro) los tiempos son aproximados.
+        player.playRange(Math.max(0, token.s - WORD_PADDING_S), token.e + WORD_PADDING_S);
       }}
       onPlaySentence={(id) => player.playSegment(segments.findIndex((s) => s.id === id))}
     >
