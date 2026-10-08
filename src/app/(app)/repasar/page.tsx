@@ -1,11 +1,20 @@
 import type { Metadata } from 'next';
-import { PendingPage } from '@/components/shell/pending-page';
+import { PageContainer, PageHeader } from '@/components/ui/page';
+import { ReviewSession } from '@/features/srs/components/review-session';
+import { getReviewSession } from '@/features/srs/server/queries';
+import { env } from '@/lib/env';
 import { getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('nav.review') };
 }
 
-export default function Page() {
-  return <PendingPage title="nav.review" body="pending.review" phase={3} />;
+export default async function ReviewPage() {
+  const [t, session] = await Promise.all([getT(), getReviewSession()]);
+  return (
+    <PageContainer className="max-w-2xl">
+      <PageHeader title={t('nav.review')} subtitle={t('review.subtitle')} />
+      <ReviewSession session={session} audioBase={env.NEXT_PUBLIC_AUDIO_BASE_URL} />
+    </PageContainer>
+  );
 }

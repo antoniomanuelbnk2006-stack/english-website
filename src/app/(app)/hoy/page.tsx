@@ -9,6 +9,7 @@ import { getMinutesOn } from '@/features/journal/server/queries';
 import { LevelMeter } from '@/features/level/components/level-meter';
 import { getSkillRatings } from '@/features/level/server/queries';
 import { getProfile } from '@/features/profile/server/queries';
+import { getDueCount } from '@/features/srs/server/queries';
 import { APP_TIME_ZONE, todayMadrid } from '@/lib/dates';
 import { intlLocale, type TranslationKey } from '@/lib/i18n';
 import { getLocale, getT } from '@/lib/i18n/server';
@@ -17,23 +18,31 @@ export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('nav.today') };
 }
 
-const SHORTCUTS: { href: Route; icon: LucideIcon; title: TranslationKey; hint: TranslationKey }[] =
+const SHORTCUTS: { href: Route; icon: LucideIcon; title: TranslationKey; hint?: TranslationKey }[] =
   [
     { href: '/escuchar', icon: Headphones, title: 'today.listenCta', hint: 'today.listenHint' },
     { href: '/leer', icon: BookOpen, title: 'today.readCta', hint: 'today.readHint' },
-    { href: '/repasar', icon: Layers, title: 'today.reviewCta', hint: 'today.reviewHint' },
+    // El texto del repaso depende de cuántas tarjetas toquen ahora.
+    { href: '/repasar', icon: Layers, title: 'today.reviewCta' },
     { href: '/diario', icon: NotebookPen, title: 'today.journalCta', hint: 'today.journalHint' },
   ];
 
 export default async function TodayPage() {
   const today = todayMadrid();
-  const [t, locale, profile, ratings, minutes] = await Promise.all([
+  const [t, locale, profile, ratings, minutes, due] = await Promise.all([
     getT(),
     getLocale(),
     getProfile(),
     getSkillRatings(),
     getMinutesOn(today),
+    getDueCount(),
   ]);
+  const reviewHint =
+    due === 0
+      ? t('today.reviewNone')
+      : due === 1
+        ? t('today.reviewDueOne')
+        : t('today.reviewDue', { n: due });
 
   const done = Math.round(minutes);
   const goal = profile.dailyGoalMin;
@@ -85,7 +94,7 @@ export default async function TodayPage() {
                 />
                 <span className="min-w-0">
                   <span className="block font-medium">{t(title)}</span>
-                  <span className="block text-sm text-muted">{t(hint)}</span>
+                  <span className="block text-sm text-muted">{hint ? t(hint) : reviewHint}</span>
                 </span>
               </Link>
             </li>

@@ -12,6 +12,7 @@ import {
   type Diagnosis,
 } from '@/features/listening/lib/dictation';
 import type { DictationTask } from '@/features/listening/lib/views';
+import { DictationDiff } from './dictation-diff';
 import { player, usePlayer } from '@/lib/audio/store';
 import type { TranslationKey } from '@/lib/i18n';
 import { useT } from '@/lib/i18n/client';
@@ -53,42 +54,6 @@ export interface DictationContext {
   features: ReadonlyMap<string, readonly string[]>;
   /** Por segmento: acento del hablante. */
   accents: ReadonlyMap<string, string>;
-}
-
-/** Frase de referencia con cada palabra marcada según cómo se escribió. */
-function Diff({ diagnosis }: { diagnosis: Diagnosis }) {
-  const t = useT();
-  return (
-    <p lang="en" className="reading-md">
-      {diagnosis.words.map((word, index) => (
-        <span key={index}>
-          {word.status === 'ok' ? (
-            word.text
-          ) : word.status === 'typo' ? (
-            <span
-              className="underline decoration-warning decoration-dotted decoration-2 underline-offset-4"
-              title={t('listening.wrote', { typed: word.typed ?? '' })}
-            >
-              {word.text}
-            </span>
-          ) : word.status === 'wrong' ? (
-            <>
-              <del className="text-danger">{word.typed}</del>{' '}
-              <ins className="font-medium text-success no-underline">{word.text}</ins>
-            </>
-          ) : (
-            <span className="font-medium text-danger underline decoration-dashed underline-offset-4">
-              {word.text}
-              <span lang="es" className="sr-only">
-                {' '}
-                ({t('listening.missing')})
-              </span>
-            </span>
-          )}{' '}
-        </span>
-      ))}
-    </p>
-  );
 }
 
 /**
@@ -233,7 +198,7 @@ export function DictationStep({
               ? t('listening.cleanSignal')
               : t('listening.dictationAccuracy', { pct: toPercent(diagnosis.accuracy) })}
           </p>
-          <Diff diagnosis={diagnosis} />
+          <DictationDiff diagnosis={diagnosis} />
           {diagnosis.extra.length > 0 ? (
             <p className="text-sm text-muted">
               {t('listening.extraWords', { words: '' })}
