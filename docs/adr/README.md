@@ -17,6 +17,7 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0011](0011-e2e-con-emulador-de-supabase.md) | Tests e2e y de base de datos contra un emulador de Supabase en memoria | Aceptada |
 | [0012](0012-use-of-english-y-nivel-declarado.md) | Sección «Use of English» con formato de examen y nivel elegido por el usuario | Aceptada |
 | [0013](0013-escucha-con-transcripcion.md) | Modo «con transcripción» en las lecciones de escucha | Aceptada |
+| [0014](0014-writing-revision-sin-ia.md) | Writing: revisión sin IA, respuesta modelo y detalles de la corrección con IA | Aceptada |
 
 Plantilla:
 

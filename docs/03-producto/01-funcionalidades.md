@@ -94,6 +94,7 @@
 | F-103 | Límite diario y tope de gasto mensual | M (si F-102) | 6 |
 | F-104 | Historial y evolución por criterio | S | 6 |
 | F-105 | Errores recurrentes al SRS | S | 6 |
+| F-106 | Revisión sin IA: comprobaciones automáticas, respuesta modelo y autoevaluación ([ADR-0014](../adr/0014-writing-revision-sin-ia.md)) | S | 6 |
 
 ## 8. Motivación
 

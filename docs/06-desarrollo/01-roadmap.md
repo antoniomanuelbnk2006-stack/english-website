@@ -40,6 +40,8 @@ Las fases 0–3 están construidas y probadas en local (tests unitarios, de base
 
 Además, las lecciones de escucha tienen ahora dos modos, a elegir al empezar: **a ciegas** (el ciclo diagnóstico) y **con transcripción** ([ADR-0013](../adr/0013-escucha-con-transcripcion.md)).
 
+**Writing (9 de octubre de 2026, a petición del dueño).** Se ha adelantado la parte de writing de la fase 6 (F-100 a F-106): 22 consignas de A1 a C2 con respuesta modelo; editor con contador, autoguardado local y modo examen; corrección con IA con límite diario y tope mensual; revisión sin IA ([ADR-0014](../adr/0014-writing-revision-sin-ia.md)); reescritura; errores al repaso; e historial con evolución por criterio. **Pendiente de esa fase:** probar la corrección contra la API real (necesita `ANTHROPIC_API_KEY`; hoy está probada con el SDK simulado y con un doble de la API), el conjunto dorado y `pnpm ai:eval`, y las pruebas de confirmación de nivel (F-083). Las fases 4 y 5 siguen sin empezar.
+
 Decisiones tomadas por el camino que no estaban en el diseño original: [ADR-0011](../adr/0011-e2e-con-emulador-de-supabase.md) (tests contra un emulador de Supabase), la migración `0002` (`apply_reviews`), y los detalles anotados en [base de datos §3](../04-arquitectura/03-base-de-datos.md#3-notas-de-diseño), [gramática §2](../01-pedagogia/06-gramatica.md#2-formato-de-una-ficha) y [vocabulario §4](../01-pedagogia/05-vocabulario-y-srs.md#4-tu-léxico-personal).
 
 ---

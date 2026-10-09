@@ -28,7 +28,7 @@ Por eso Señal reserva ~15 % del tiempo a producción (ver [metodología §3](02
 | C1 | Ensayo, propuesta, informe, carta formal, reseña crítica | 220–320 |
 | C2 | Ensayo de opinión con fuentes, artículo, reseña, informe complejo | 280–400 |
 
-Las consignas se generan por nivel y tema y viven en `content/writing/{nivel}/*.json`.
+Las consignas se generan por nivel y tema y viven en `content/writing/{nivel}/*.json`. Cada una lleva expresiones útiles, consejos y una **respuesta modelo** que solo se enseña después de entregar ([ADR-0014](../adr/0014-writing-revision-sin-ia.md)).
 
 ### 2.2 Flujo
 
@@ -39,6 +39,8 @@ Las consignas se generan por nivel y tema y viven en `content/writing/{nivel}/*.
 5. **Reescritura**: corriges tú, con el feedback al lado.
 6. **Cosecha**: los errores recurrentes van al SRS (`grammar`/`chunk`).
 7. **Historial**: evolución de las puntuaciones por criterio.
+
+> **Sin IA también hay revisión.** Si no hay clave de la API, se ha llegado al límite o simplemente no quieres gastar una corrección, en el paso 4 puedes elegir **«Revisar sin IA»**: comprobaciones de forma (longitud, párrafos, conectores…), posibles errores típicos de hispanohablantes, la respuesta modelo y una autoevaluación con la rúbrica. Los pasos 5 a 7 son los mismos. Detalles y límites en [ADR-0014](../adr/0014-writing-revision-sin-ia.md).
 
 ### 2.3 Rúbrica
 

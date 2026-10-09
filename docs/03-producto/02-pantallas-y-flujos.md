@@ -136,8 +136,11 @@ La interfaz está **en español** por defecto (rutas incluidas); el contenido de
 ### 2.6 Vocabulario (`/vocabulario`)
 Tabla filtrable de tu léxico: lema, nivel MCER, estado, veces visto, próxima revisión, fuente. Acciones masivas (marcar como conocidas, ignorar).
 
-### 2.7 Escribir (`/escribir/[id]`)
-Consigna arriba; editor a la izquierda; feedback a la derecha (en móvil, pestañas). Contador de usos del día («2 de 10 correcciones hoy»).
+### 2.7 Escribir (`/escribir`, `/escribir/[id]`, `/escribir/historial`)
+- **Biblioteca (`/escribir`):** consignas del nivel del usuario (filtro por nivel en la URL), writings de la semana y correcciones con IA usadas hoy.
+- **Escribir (`/escribir/[id]`):** consigna arriba, con consejos y expresiones útiles plegados; plan opcional; editor con contador de palabras, autoguardado en el dispositivo y modo examen (cuenta atrás, sin corrector del navegador y sin ayudas). Al entregar se elige «Corregir con IA» o «Revisar sin IA». Contador de usos del día («2 de 10 correcciones con IA hoy»).
+- **Corrección:** el texto entregado (con lo corregido resaltado) y la reescritura a la izquierda; el feedback, la respuesta modelo y los errores para el repaso a la derecha. En móvil, dos pestañas.
+- **Historial (`/escribir/historial`):** evolución de las notas por criterio y todas las entregas; cada una se puede volver a abrir (`/escribir/historial/[id]`) para releerla o reescribirla.
 
 ### 2.8 Progreso (`/progreso`)
 - Nivel por destreza (estimado + confirmado), gráfica de rating en el tiempo.

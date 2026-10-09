@@ -121,6 +121,7 @@ ANTHROPIC_API_KEY=
 AI_WRITING_MODEL=claude-sonnet-5-5
 AI_DAILY_LIMIT=10
 AI_MONTHLY_BUDGET_USD=5
+# ANTHROPIC_BASE_URL=   (solo para tests o un proxy propio)
 
 # ── Pipeline (.env.pipeline, SOLO en tu ordenador) ─────────
 SUPABASE_SECRET_KEY=
@@ -163,7 +164,8 @@ Para probar la app sin crear nada en la nube: compila, arranca el emulador de Su
 
 - Los datos (nivel, progreso, repaso, diario) se guardan en `.demo-data/` y **siguen ahí al volver a arrancar**, igual que la sesión del navegador. `pnpm demo --reset` los borra y empieza de cero.
 - Si la carpeta guardada no se puede abrir, el emulador la aparta (`.demo-data.rota-…`) y arranca vacío en vez de fallar.
-- Con datos guardados, las rutas de control del emulador (`/__test/…`) están desactivadas: un test que se conecte por error a la demo falla, no borra nada. Aun así, **cierra la demo antes de `pnpm e2e`** (usan los mismos puertos).
+- Con datos guardados, las rutas de control del emulador (`/__test/…`) están desactivadas: un test que se conecte por error a la demo falla, no borra nada. Los tests e2e usan otros puertos y otra carpeta de compilación (`.next-e2e`), así que se pueden lanzar con la demo abierta.
+- **Corrección de writing con IA en la demo:** crea `.env.local` con una sola línea, `ANTHROPIC_API_KEY=…`, y vuelve a arrancar. Sin clave, el writing funciona con la revisión sin IA.
 - No es un entorno de uso real: un único usuario, en este ordenador y sin copias de seguridad. Para eso están las secciones 3 a 8.
 
 ---
@@ -180,6 +182,7 @@ content/.batches/
 /public/dev-audio/
 /.e2e/
 /.demo-data*/
+/.next-e2e/
 ```
 
 ---

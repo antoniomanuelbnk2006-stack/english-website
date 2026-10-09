@@ -529,6 +529,10 @@ Añade la función `public.apply_reviews(p_reviews jsonb) returns int`, que guar
 
 Añade `lesson_progress.transcript_first boolean not null default false`: el usuario eligió ver la transcripción de una lección de escucha antes de completar las dos escuchas a ciegas. Con la marca puesta, el servidor puede entregar la transcripción aunque `phase < 3`, y esa lección no debe contar para el nivel de listening ([ADR-0013](../adr/0013-escucha-con-transcripcion.md)). Tests en `tests/db/transcript-first.test.ts`.
 
+### Migración `0004_writing_review.sql`
+
+Añade a `writing_submissions`: `review_kind text` (`'ai'` | `'self'`, por defecto `'ai'`), `active_seconds int`, `exam_mode boolean` y `rewritten_at timestamptz`. Una entrega puede corregirla la IA o revisarla el propio usuario; **solo las de IA cuentan para el límite diario y el tope de gasto**. En las revisiones sin IA, `feedback` guarda la autoevaluación (`{ kind: 'self', scores, points }`) y `model` queda vacío; en un envío a la IA que falla, `feedback` guarda el motivo (`{ error: 'refusal' | 'max_tokens' | 'api' }`) ([ADR-0014](../adr/0014-writing-revision-sin-ia.md)). Tests en `tests/db/writing.test.ts`.
+
 ---
 
 ## 4. Tipos TypeScript
