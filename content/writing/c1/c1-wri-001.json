@@ -1,0 +1,40 @@
+{
+  "id": "c1-wri-001",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "task_type": "essay",
+  "title": "Getting people out of their cars",
+  "topic": "society",
+  "context_es": "Tu clase ha asistido a un debate sobre cómo conseguir que la gente use más el transporte público. Escribes un ensayo, como en la Parte 1 del Writing de C1 Advanced.",
+  "prompt_en": "Your class has attended a panel discussion on what local authorities could do to persuade people to use public transport instead of their cars. You have made the notes below.\n\nWays of encouraging people to use public transport:\n- cheaper fares\n- more frequent and reliable services\n- restrictions on private cars\n\nSome opinions expressed in the discussion:\n\"Nobody will leave the car at home if the bus only comes twice an hour.\"\n\"Free travel sounds great, but who pays for it?\"\n\"People only change their habits when driving becomes inconvenient.\"\n\nWrite an essay discussing two of the ways in your notes. You should explain which way would be more effective, giving reasons to support your opinion. You may make use of the opinions expressed in the discussion, but you should use your own words as far as possible.",
+  "points": [
+    "discuss two of the three ways",
+    "explain which would be more effective",
+    "give reasons to support your opinion"
+  ],
+  "words_min": 220,
+  "words_max": 260,
+  "time_min": 45,
+  "useful_language": [
+    "Of the measures usually proposed, … deserve particular attention.",
+    "… are undoubtedly attractive. However, …",
+    "This is hardly surprising: …",
+    "…, by contrast, address the real reason why …",
+    "Admittedly, …, but …",
+    "On balance, I am convinced that …",
+    "… rather than merely …"
+  ],
+  "tips_es": [
+    "Elige solo dos de las tres ideas y compáralas: el ensayo pide decir cuál es más eficaz y por qué.",
+    "No copies las opiniones del enunciado: reformúlalas con tus palabras.",
+    "A este nivel se espera matizar (*tend to, is likely to, to some extent*) en vez de afirmar en redondo."
+  ],
+  "model_answer": "Persuading drivers to leave their cars at home has become a priority for city councils that want cleaner air and quieter streets. Of the measures usually proposed, lowering fares and improving services deserve particular attention, although, in my view, they are far from equally effective.\n\nCheaper tickets are undoubtedly attractive, and experiments with free travel in several European cities have increased passenger numbers. However, most of the new passengers turn out to be people who previously walked or cycled, while car owners tend to keep driving. This is hardly surprising: for someone who has already paid for a vehicle, insurance and parking, the price of a bus ticket is a minor consideration. Moreover, the money lost in fares often comes out of the budget that pays for the service itself.\n\nFrequency and reliability, by contrast, address the real reason why people cling to their cars, namely convenience. Few commuters are prepared to wait half an hour at a bus stop, or to risk arriving late because a train has been cancelled. When a tram arrives every five minutes and journey times are predictable, public transport stops being a sacrifice and becomes the obvious option. Admittedly, such a network requires considerable investment, but it benefits every passenger rather than merely subsidising those who already use it.\n\nOn balance, I am convinced that better services would be the more effective measure. Low fares may tempt people to try the bus once, but only a service they can rely on will persuade them to give up the car for good.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

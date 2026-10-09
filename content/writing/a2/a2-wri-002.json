@@ -1,0 +1,38 @@
+{
+  "id": "a2-wri-002",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "task_type": "message",
+  "title": "An invitation to the cinema",
+  "topic": "culture",
+  "context_es": "Quieres ir al cine este fin de semana e invitas por mensaje a tu amiga Nora.",
+  "prompt_en": "You want to go to the cinema this weekend. Write a message to your friend Nora.",
+  "points": [
+    "invite Nora and say which film you want to see",
+    "say when and where to meet",
+    "suggest what to do after the film"
+  ],
+  "words_min": 35,
+  "words_max": 60,
+  "time_min": 12,
+  "useful_language": [
+    "Hi Nora,",
+    "Are you free on …?",
+    "Would you like to …?",
+    "Let’s meet at … outside …",
+    "Then we can …",
+    "Let me know!"
+  ],
+  "tips_es": [
+    "Para invitar: *Would you like to* + verbo.",
+    "Para proponer un plan: *Let’s meet at seven.* / *We can have dinner.*"
+  ],
+  "model_answer": "Hi Nora,\n\nAre you free on Friday evening? I want to see the new space film at the Royal Cinema. Would you like to come with me? Let's meet at half past six outside the cinema, because the film starts at seven. Then we can have a pizza near the station.\n\nLet me know!\nIrene",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

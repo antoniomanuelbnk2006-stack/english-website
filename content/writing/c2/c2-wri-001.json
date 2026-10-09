@@ -1,0 +1,41 @@
+{
+  "id": "c2-wri-001",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "task_type": "essay",
+  "title": "Two views of boredom",
+  "topic": "society",
+  "context_es": "Un ensayo a partir de dos textos breves, como en la Parte 1 del Writing de C2 Proficiency: hay que resumirlos, valorarlos y añadir ideas propias.",
+  "prompt_en": "Read the two texts below.\n\nWrite an essay summarising and evaluating the key points from both texts. Use your own words throughout as far as possible, and include your own ideas in your answer.\n\nText 1: In praise of boredom\nWe have come to treat boredom as a failure of planning, something to be eliminated with a screen at the first sign of an empty minute. Yet a mind with nothing to do does not stay idle for long. Left alone, it wanders, rehearses, invents. Many of the ideas we are proudest of arrived uninvited while we were queuing, walking or staring out of a train window. To abolish boredom is to close the workshop in which such ideas are made.\n\nText 2: A signal, not a virtue\nIt has become fashionable to praise boredom, usually among people whose lives contain very little of it. For a child in a classroom that asks nothing of her, or an adult in a job without purpose, boredom is not a doorway to creativity but a signal that something is wrong. Like hunger, it tells us that a need is not being met. The right response is not to celebrate the feeling but to change the circumstances that produce it.",
+  "points": [
+    "summarise the key points of both texts",
+    "evaluate the two views",
+    "include your own ideas"
+  ],
+  "words_min": 280,
+  "words_max": 340,
+  "time_min": 60,
+  "useful_language": [
+    "The two texts offer contrasting views on …",
+    "The first writer contends that …",
+    "There is considerable merit in this claim.",
+    "The second text, by contrast, maintains that …",
+    "This strikes me as an important corrective.",
+    "The two positions are less incompatible than they appear.",
+    "The former …; the latter …",
+    "It follows, in my view, that …"
+  ],
+  "tips_es": [
+    "Resume cada texto en una o dos frases con tus palabras: copiar frases del original resta.",
+    "No basta con resumir: di qué te convence de cada postura, qué pasa por alto y añade una idea tuya.",
+    "Lo que distingue un C2 es la precisión: verbos de opinión variados (*contends, maintains, concedes*) y matices (*to some extent, arguably*)."
+  ],
+  "model_answer": "The two texts offer contrasting views on a feeling most of us instinctively try to avoid. While the first regards boredom as a precious resource that modern life is in danger of destroying, the second treats it as a symptom of circumstances that ought to be changed.\n\nThe first writer contends that an unoccupied mind is anything but inactive. Deprived of external stimulation, it begins to generate its own, and it is in these apparently wasted moments that original thoughts tend to surface. By reaching for a phone whenever we have nothing to do, we deny ourselves that opportunity. There is considerable merit in this claim. Anyone who has solved a problem in the shower, having failed to do so at a desk, will recognise the experience, and it seems plausible that minds which are never left to their own devices lose the habit of wandering productively.\n\nThe second text, by contrast, maintains that such praise is a luxury. For those trapped in monotonous work or unstimulating lessons, boredom is closer to hunger than to inspiration: an indication that a genuine need is going unmet. This strikes me as an important corrective. It would be absurd to tell a teenager stuck in a pointless job that tedium is good for the imagination.\n\nNevertheless, the two positions are less incompatible than they appear, because they are not describing the same thing. The boredom of a free afternoon, which we are at liberty to fill as we please, is quite different from the boredom of confinement, in which no escape is possible. The former invites the mind to play; the latter merely wears it down.\n\nIt follows, in my view, that neither blanket praise nor blanket condemnation is justified. We would do well to tolerate, and even protect, the empty moments over which we have some control, while taking seriously the chronic boredom that signals a life, a school or a workplace in need of reform.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

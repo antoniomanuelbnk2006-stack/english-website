@@ -1,0 +1,39 @@
+{
+  "id": "b1-wri-002",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "task_type": "article",
+  "title": "A hobby worth trying",
+  "topic": "sports",
+  "context_es": "Una revista en inglés para estudiantes busca artículos de sus lectores sobre aficiones.",
+  "prompt_en": "You see this notice in an English-language magazine for students:\n\nA hobby worth trying!\nWhat is your hobby? How did you start? Why should other people try it?\nWrite an article answering these questions and we will publish the best ones.",
+  "points": [
+    "describe your hobby",
+    "explain how you started",
+    "say why other people should try it"
+  ],
+  "words_min": 100,
+  "words_max": 150,
+  "time_min": 25,
+  "useful_language": [
+    "Have you ever wanted to …?",
+    "I first tried it … ago, when …",
+    "What I love most about it is that …",
+    "It’s a great way to …",
+    "You don’t need to …",
+    "If you’re looking for …, give it a try!"
+  ],
+  "tips_es": [
+    "Un artículo necesita título y una primera frase que enganche: una pregunta funciona muy bien.",
+    "Háblale al lector: *you*, preguntas directas y un cierre que anime a probar.",
+    "Un párrafo por pregunta del anuncio."
+  ],
+  "model_answer": "Climbing without mountains\n\nHave you ever wanted to climb but felt afraid of heights? Then indoor climbing might be the hobby for you.\n\nI first tried it two years ago, when a friend invited me to a climbing centre. The walls are only four metres high and there are soft mats on the floor, so you can fall without getting hurt. I was terrible at first, but I enjoyed it so much that I went back the following week.\n\nWhat I love most about it is that every wall is like a puzzle. You have to think before you move, and it feels fantastic when you finally reach the top. It's also a great way to meet people, because climbers always help each other.\n\nYou don't need to be strong or buy expensive equipment. If you're looking for something different, give it a try!",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

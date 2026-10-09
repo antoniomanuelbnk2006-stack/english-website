@@ -1,0 +1,38 @@
+{
+  "id": "a1-wri-002",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "task_type": "message",
+  "title": "A postcard from your holiday",
+  "topic": "travel",
+  "context_es": "Estás de vacaciones junto al mar. Escribes una postal a tu amiga inglesa, Emma.",
+  "prompt_en": "You are on holiday. Write a postcard to your friend Emma.",
+  "points": [
+    "where you are",
+    "what the weather is like",
+    "what you do every day"
+  ],
+  "words_min": 25,
+  "words_max": 50,
+  "time_min": 10,
+  "useful_language": [
+    "Dear Emma,",
+    "I am in … with …",
+    "The weather is sunny / hot / cold.",
+    "Every day we …",
+    "The food is great.",
+    "See you soon!"
+  ],
+  "tips_es": [
+    "Una postal es corta: tres o cuatro frases bastan.",
+    "Para lo que haces estos días, presente simple con *every day* o *in the morning*."
+  ],
+  "model_answer": "Dear Emma,\n\nI am in Cádiz with my family. The weather is hot and sunny. Every day we go to the beach in the morning and we eat fish in a small restaurant. The town is very nice.\n\nSee you soon!\nLove,\nPablo",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

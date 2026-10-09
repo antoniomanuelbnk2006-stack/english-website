@@ -1,0 +1,41 @@
+{
+  "id": "c1-wri-003",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "task_type": "review",
+  "title": "An app or website for learning",
+  "topic": "language",
+  "context_es": "Una revista internacional para estudiantes adultos pide a sus lectores reseñas de aplicaciones o webs con las que hayan aprendido algo.",
+  "prompt_en": "An international magazine for adult learners has asked readers to send in reviews of an app or website they have used to learn something new. Your review should describe what it offers, evaluate its strengths and weaknesses, and say what kind of learner would benefit most from it.\n\nWrite your review.",
+  "points": [
+    "describe what the app or website offers",
+    "evaluate its strengths and weaknesses",
+    "say what kind of learner would benefit most"
+  ],
+  "words_min": 220,
+  "words_max": 260,
+  "time_min": 45,
+  "useful_language": [
+    "I was sceptical when …",
+    "The concept is disarmingly simple.",
+    "What sets … apart is …",
+    "Equally impressive is …",
+    "That said, … is not without its flaws.",
+    "… is on the expensive side.",
+    "All things considered, I would recommend … wholeheartedly to …",
+    "… would be better advised to …"
+  ],
+  "tips_es": [
+    "En C1 una reseña no es una lista de pros y contras: tiene una voz, un punto de vista y una recomendación matizada.",
+    "Equilibra: lo bueno, lo mejorable (*That said…*) y para quién sí y para quién no.",
+    "La aplicación de la respuesta modelo es inventada: puedes reseñar una real o imaginar la tuya."
+  ],
+  "model_answer": "Fifteen minutes that changed my French\n\nAfter two years of grammar books and very little progress, I was sceptical when a colleague recommended Fifteen, an app that promises to get you speaking a foreign language in a quarter of an hour a day. Six months later, I have to admit that my scepticism was misplaced.\n\nThe concept is disarmingly simple. Each day, the app pairs you with a native speaker for a fifteen-minute voice call on a topic of your choice. Afterwards, both of you receive a transcript in which your mistakes are highlighted, together with more natural alternatives. There are no points, cartoon animals or cheerful reminders, which I found refreshing.\n\nWhat sets Fifteen apart is the quality of the feedback. Seeing my own errors in writing, minutes after making them, proved far more memorable than any exercise. Equally impressive is the community: in half a year I have not had a single unpleasant conversation.\n\nThat said, the app is not without its flaws. Absolute beginners are likely to find the calls intimidating, since there is no structured course to fall back on. The subscription is also on the expensive side, and the transcripts occasionally misunderstand strong accents, which can result in corrections that make no sense.\n\nAll things considered, I would recommend Fifteen wholeheartedly to intermediate learners who understand a good deal but freeze when they have to speak. Those who are starting from scratch, however, would be better advised to build a foundation elsewhere first.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

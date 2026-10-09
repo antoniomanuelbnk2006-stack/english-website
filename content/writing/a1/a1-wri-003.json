@@ -1,0 +1,37 @@
+{
+  "id": "a1-wri-003",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "task_type": "message",
+  "title": "A note for your flatmate",
+  "topic": "daily-life",
+  "context_es": "Compartes piso con Sam. Sales esta tarde y le dejas una nota en la cocina.",
+  "prompt_en": "You are going out this afternoon. Write a note to your flatmate Sam.",
+  "points": [
+    "where you are going",
+    "what time you are coming home",
+    "ask Sam to buy something for dinner"
+  ],
+  "words_min": 25,
+  "words_max": 50,
+  "time_min": 10,
+  "useful_language": [
+    "Hi Sam,",
+    "I am going to …",
+    "I am coming home at …",
+    "Can you buy …, please?",
+    "Thanks!"
+  ],
+  "tips_es": [
+    "Para pedir algo con educación: *Can you …, please?*",
+    "Las horas van con *at*: *at seven o’clock*."
+  ],
+  "model_answer": "Hi Sam,\n\nI am going to the gym this afternoon and then to my English class. I am coming home at eight o'clock. Can you buy some bread and tomatoes for dinner, please? We have cheese and eggs.\n\nThanks!\nLucía",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

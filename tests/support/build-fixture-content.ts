@@ -17,6 +17,7 @@ const LISTENING = 'b1-lis-001';
 /** Lo único que ven los tests, por mucho que crezca content/. */
 const LESSONS = new Set(['b1-rea-001', LISTENING]);
 const USE_OF_ENGLISH = new Set(['b2-uoe-001', 'b2-uoe-002', 'b2-uoe-003', 'b2-uoe-004']);
+const WRITING = new Set(['a1-wri-001', 'b1-wri-001', 'b1-wri-004', 'b2-wri-001', 'b2-wri-005']);
 
 const env = {
   ...process.env,
@@ -59,6 +60,7 @@ rmSync(env.LOCAL_AUDIO_DIR, { recursive: true, force: true });
 cpSync(path.join(ROOT, 'content'), FIXTURE_DIR, { recursive: true });
 keepOnly(path.join(FIXTURE_DIR, 'lessons'), LESSONS);
 keepOnly(path.join(FIXTURE_DIR, 'use-of-english'), USE_OF_ENGLISH);
+keepOnly(path.join(FIXTURE_DIR, 'writing'), WRITING);
 
 const file = path.join(FIXTURE_DIR, 'lessons', 'b1', 'listening', `${LISTENING}.json`);
 type Fixture = {

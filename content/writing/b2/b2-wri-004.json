@@ -1,0 +1,41 @@
+{
+  "id": "b2-wri-004",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "task_type": "article",
+  "title": "A skill everyone should learn",
+  "topic": "daily-life",
+  "context_es": "Una revista internacional para jóvenes pide artículos a sus lectores.",
+  "prompt_en": "You see this notice in an international magazine for young people:\n\nArticles wanted: A skill everyone should learn\nWhich practical skill do you think everybody should learn before they are thirty? Why is it so useful? How can people learn it?\n\nThe best articles will be published next month. Write your article.",
+  "points": [
+    "say which skill and why it is useful",
+    "give an example from your own experience",
+    "explain how people can learn it"
+  ],
+  "words_min": 140,
+  "words_max": 190,
+  "time_min": 40,
+  "useful_language": [
+    "Can you … without …?",
+    "I am convinced that …",
+    "To begin with, …",
+    "What is more, …",
+    "I learnt this the hard way.",
+    "Since then, I have never looked back.",
+    "So how can you start?",
+    "Give it a try: …"
+  ],
+  "tips_es": [
+    "Un artículo tiene título, engancha al lector desde la primera línea y le habla de tú (*you*).",
+    "El tono es más personal que el de un ensayo: caben preguntas, ejemplos propios y algo de humor.",
+    "Termina con una frase que se recuerde, no con un resumen."
+  ],
+  "model_answer": "Why everyone should learn to cook\n\nCan you make a proper meal without looking at your phone? If the answer is no, you are not alone. Nevertheless, I am convinced that cooking is the one skill everybody should learn before they are thirty.\n\nTo begin with, cooking saves money. A home-made dinner costs about a third of a restaurant meal, and it is usually much healthier. What is more, it is a wonderful way to relax after a stressful day.\n\nI learnt this the hard way. When I moved out of my parents' house, I could only make toast, and I spent a fortune on ready meals. After a few months, I asked my grandmother to teach me five simple recipes. Since then, I have never looked back.\n\nSo how can you start? You do not need an expensive course. Choose three dishes you love, watch a couple of videos and practise them until you know them by heart. You will make mistakes at first, but that is part of the fun.\n\nGive it a try: your wallet and your friends will thank you.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

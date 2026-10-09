@@ -1,0 +1,41 @@
+{
+  "id": "c2-wri-003",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "task_type": "review",
+  "title": "A book that changed my mind",
+  "topic": "culture",
+  "context_es": "Una web literaria publica una serie titulada «Books that changed my mind» con reseñas de sus lectores.",
+  "prompt_en": "A literary website is running a series called 'Books that changed my mind'. Write a review of a non-fiction book that altered your view of a subject. You should give a brief account of the book's argument, evaluate how convincingly it is made, and explain what effect it had on your own thinking.",
+  "points": [
+    "give a brief account of the book's argument",
+    "evaluate how convincingly it is made",
+    "explain what effect it had on your thinking"
+  ],
+  "words_min": 280,
+  "words_max": 350,
+  "time_min": 60,
+  "useful_language": [
+    "I picked up … in the worst possible spirit.",
+    "The argument is simple to state and uncomfortable to accept.",
+    "…, on this account, is …",
+    "What makes the case convincing is …",
+    "Only in the final chapters does the book falter.",
+    "… are sketched too briefly to carry the weight placed on them.",
+    "Even so, …",
+    "… which is a rarer and more valuable gift."
+  ],
+  "tips_es": [
+    "Reseñar no ficción es evaluar un argumento: enúncialo con justicia antes de decir si convence.",
+    "Sé concreto en la crítica: di qué falla y por qué, no solo que «podría ser mejor».",
+    "El libro de la respuesta modelo es inventado: puedes reseñar uno real o imaginar el tuyo."
+  ],
+  "model_answer": "Late, and all the better for it\n\nI picked up Miriam Calder's 'The Unhurried Mind' in the worst possible spirit: on a delayed train, answering emails on my phone, irritated that a book about slowing down had been recommended to me by someone who knew how much I had to do. I expected a scolding. What I found instead was the most persuasive challenge to my own habits that I have read in a decade.\n\nCalder's argument is simple to state and uncomfortable to accept. The techniques we adopt in order to save time, she claims, do not release us from pressure but raise the amount that others, and we ourselves, expect us to achieve. Clear an inbox efficiently and it fills faster; become known as the colleague who replies within the hour and the hour shrinks to minutes. Efficiency, on this account, is a treadmill whose speed we control only in one direction.\n\nWhat makes the case convincing is the author's refusal to exaggerate. She does not pretend that deadlines can be wished away, nor does she retreat into the fashionable advice to meditate at dawn. Instead, she assembles decades of workplace studies with a historian's patience and lets the pattern emerge. Only in the final chapters does the book falter: the remedies she proposes, such as leaving certain tasks deliberately undone, are sketched too briefly to carry the weight placed on them, and readers without control over their own timetable may find them faintly insulting.\n\nEven so, the book has altered more than my opinions. I used to measure a good day by the length of the list I had crossed off; I now try to ask which two things on it truly mattered, and to let the rest wait. Some of it, I have discovered, never needed doing at all.\n\n'The Unhurried Mind' will not give you more hours. It may, however, change what you believe they are for, which is a rarer and more valuable gift.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}
