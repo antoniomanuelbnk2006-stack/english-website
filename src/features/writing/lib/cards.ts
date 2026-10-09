@@ -103,7 +103,7 @@ export function hintCards(
     prompt += text.slice(cursor, sentence.end);
 
     candidates.push({
-      front: sentence.text,
+      front: prompt,
       back: gap.answer,
       card: {
         kind: 'grammar',

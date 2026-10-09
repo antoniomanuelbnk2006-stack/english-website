@@ -13,7 +13,7 @@ import { splitPrompt } from '@/features/grammar/lib/practice';
 import { formatClock, toPercent } from '@/features/lessons/lib/summary';
 import { DictationDiff } from '@/features/listening/components/dictation-diff';
 import { diagnoseBest, type Diagnosis } from '@/features/listening/lib/dictation';
-import { splitAround, type CardKind } from '@/features/srs/lib/cards';
+import { splitAround, type CardContent, type CardKind } from '@/features/srs/lib/cards';
 import {
   describeInterval,
   gradeForGrammar,
@@ -78,6 +78,15 @@ function isTyping(target: EventTarget | null): boolean {
  * Sesión de repaso: una tarjeta cada vez. El cliente programa cada respuesta con FSRS para
  * enseñar los intervalos y envía las valoraciones por lotes; el servidor vuelve a calcular.
  */
+const hasGap = (prompt: string) => prompt.includes('___');
+
+/** Tarjetas que no se teclean: se mira la respuesta y se valora uno mismo. */
+function isSelfGraded(content: CardContent | undefined): boolean {
+  if (!content) return false;
+  if (content.kind === 'word' || content.kind === 'chunk') return true;
+  return content.kind === 'grammar' && !hasGap(content.front.prompt);
+}
+
 export function ReviewSession({ session, audioBase }: { session: SessionData; audioBase: string }) {
   const t = useT();
   const [queue, setQueue] = useState<ReviewCard[]>(session.cards);
@@ -218,7 +227,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
     if (event.ctrlKey || event.metaKey || event.altKey || !card) return;
     if (isTyping(event.target)) return;
     const key = event.key.toLowerCase();
-    if (key === ' ' && !revealed && (content?.kind === 'word' || content?.kind === 'chunk')) {
+    if (key === ' ' && !revealed && isSelfGraded(content)) {
       event.preventDefault();
       reveal();
     } else if (revealed && ['1', '2', '3', '4'].includes(key)) {
@@ -315,7 +324,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
   const total = done + queue.length;
   const fresh = queue.filter((item) => item.state.state === 0).length;
   const overBudget = session.spentTodayMs + sessionMs >= REVIEW_BUDGET_MS;
-  const isWordCard = content?.kind === 'word' || content?.kind === 'chunk';
+  const selfGraded = isSelfGraded(content);
 
   let front: ReactNode = null;
   let back: ReactNode = null;
@@ -405,12 +414,41 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
         ))}
       </>
     );
+  } else if (content?.kind === 'grammar' && !hasGap(content.front.prompt)) {
+    front = (
+      <div className="flex flex-col gap-3">
+        <p className="text-sm text-muted">{t('review.fixSentence')}</p>
+        <p lang="en" className="reading-lg">
+          {content.front.prompt}
+        </p>
+      </div>
+    );
+    back = (
+      <>
+        <p lang="en" className="font-medium">
+          {content.back.answers[0]}
+        </p>
+        {content.back.writing_id ? (
+          <Link
+            href={`/escribir/historial/${content.back.writing_id}` as Route}
+            className="self-start text-sm text-accent underline underline-offset-4"
+          >
+            {t('review.openWriting')}: <span lang="en">{content.back.title}</span>
+          </Link>
+        ) : null}
+      </>
+    );
   } else if (content?.kind === 'grammar') {
     const prompt = splitPrompt(content.front.prompt);
     front = (
       <form onSubmit={check} className="flex flex-col gap-3">
         {content.front.context ? (
           <p lang="en" className="reading-md text-muted">
+            {content.back.writing_id ? (
+              <span lang="es" className="mr-1.5 text-sm">
+                {t('review.yourSentence')}:
+              </span>
+            ) : null}
             {content.front.context}
           </p>
         ) : null}
@@ -469,7 +507,17 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
             {content.back.answers[0]}
           </span>
         </p>
-        <p className="text-sm text-muted">{content.back.rule_es}</p>
+        <p className="text-sm text-muted">
+          <InlineText text={content.back.rule_es} />
+        </p>
+        {content.back.writing_id && !content.back.grammar_id ? (
+          <Link
+            href={`/escribir/historial/${content.back.writing_id}` as Route}
+            className="self-start text-sm text-accent underline underline-offset-4"
+          >
+            {t('review.openWriting')}: <span lang="en">{content.back.title}</span>
+          </Link>
+        ) : null}
         {content.back.grammar_id || content.back.uoe_id ? (
           <Link
             href={
@@ -549,7 +597,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
           >
             {back}
           </div>
-        ) : isWordCard ? (
+        ) : selfGraded ? (
           <Button size="lg" className="mt-auto self-start" onClick={() => reveal()}>
             {t('review.show')}
           </Button>

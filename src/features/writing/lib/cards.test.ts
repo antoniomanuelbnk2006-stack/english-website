@@ -53,7 +53,7 @@ describe('gapOf', () => {
 describe('hintCards', () => {
   it('hace una tarjeta de gramática con la frase corregida y un hueco', () => {
     const [candidate] = cardsFor('Hi Tom. I think it depends of the weather. See you!');
-    expect(candidate).toMatchObject({ front: 'I think it depends of the weather.', back: 'on' });
+    expect(candidate).toMatchObject({ front: 'I think it depends ___ the weather.', back: 'on' });
     expect(candidate!.card).toEqual({
       kind: 'grammar',
       lemma: null,
