@@ -1,7 +1,10 @@
 import { defineConfig, devices } from '@playwright/test';
 
+// Puertos y carpeta de compilación propios: los tests no chocan con la demo (`pnpm demo`,
+// puertos 3000 y 54399, carpeta .next), que puede seguir abierta mientras corren.
 const APP_PORT = 3100;
-const EMULATOR_PORT = 54399;
+const EMULATOR_PORT = 54398;
+const DIST_DIR = '.next-e2e';
 
 // Los e2e corren contra un emulador de Supabase (tests/support/supabase-emulator.ts):
 // un Postgres real en memoria con las migraciones del proyecto, sin Docker ni cuentas.
@@ -20,6 +23,12 @@ const env = {
   EMULATOR_PORT: String(EMULATOR_PORT),
   // Contenido de prueba: el real más una lección de escucha con audio generado para los tests.
   CONTENT_DIR: '.e2e/content',
+  NEXT_DIST_DIR: DIST_DIR,
+  // La corrección de writing habla con un doble de la API de Claude que sirve el emulador:
+  // los tests nunca llaman a la API real ni gastan dinero.
+  ANTHROPIC_API_KEY: 'e2e-key',
+  ANTHROPIC_BASE_URL: `${E2E.emulatorUrl}/anthropic`,
+  AI_DAILY_LIMIT: '3',
 };
 
 export default defineConfig({
