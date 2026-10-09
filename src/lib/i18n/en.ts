@@ -75,6 +75,7 @@ export const en: Dictionary = {
     towards: '{pct}% → {next}',
     estimated: 'Estimated',
     lowConfidence: 'Estimate based on little data',
+    chosenLabel: 'Chosen level: {level}',
     chooseTitle: 'Choose your level',
     chooseFirst:
       'First things first: tell us where you are. Your level decides which texts, audio and exercises you see.',

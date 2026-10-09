@@ -1,34 +1,25 @@
 import Link from 'next/link';
 import { BottomNav, SidebarNav } from '@/components/shell/app-nav';
 import { Logo } from '@/components/shell/logo';
-import { levelLabel } from '@/features/level/components/level-meter';
 import { SignalBars } from '@/features/level/components/signal-bars';
-import { progressInBand, summarizeRating } from '@/features/level/lib/bands';
-import { getSkillRatings } from '@/features/level/server/queries';
 import { getProfile } from '@/features/profile/server/queries';
 import { getT } from '@/lib/i18n/server';
 
 /** Shell autenticado: barra lateral en escritorio, cabecera y barra inferior en móvil. */
 export default async function AppLayout({ children }: LayoutProps<'/'>) {
   // getProfile comprueba la sesión (y crea el perfil si faltara) antes de pintar nada.
-  const [t, , ratings] = await Promise.all([getT(), getProfile(), getSkillRatings()]);
-  const listening = ratings.listening;
-  const { level } = summarizeRating(listening.rating);
+  const [t, profile] = await Promise.all([getT(), getProfile()]);
+  // El nivel de la cabecera es el que se elige en /nivel; la estimación por destreza va en Hoy.
+  const level = profile.declaredLevel;
 
-  const signal = (
+  const signal = level ? (
     <span className="flex items-center gap-2">
-      <SignalBars
-        level={level}
-        progress={progressInBand(listening.rating)}
-        confirmed={listening.confirmedLevel}
-        label={levelLabel(t, listening)}
-        size="sm"
-      />
+      <SignalBars level={level} progress={0} label={t('level.chosenLabel', { level })} size="sm" />
       <span aria-hidden="true" className="hud text-sm text-muted">
         {level}
       </span>
     </span>
-  );
+  ) : null;
 
   return (
     <div className="min-h-dvh md:pl-60">

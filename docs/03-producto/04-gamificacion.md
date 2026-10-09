@@ -50,6 +50,7 @@ Listening:  ▂▃▅▆░░   (B1 confirmado, barra de B2 llenándose al 63 %
 
 - Barras llenas = niveles confirmados; la barra en curso se rellena con el progreso del rating dentro de la banda.
 - Es el elemento visual central del producto y conecta con el nombre: **más señal, menos ruido**.
+- **En la cabecera**, junto al logo, las barras muestran el **nivel elegido** en `/nivel` ([ADR-0012](../adr/0012-use-of-english-y-nivel-declarado.md)), no la estimación: así coincide siempre con lo que el usuario ha dicho. La estimación por destreza, con su progreso dentro de la banda, se ve en Hoy y en Progreso. Antes de elegir nivel no se muestra nada.
 
 ---
 

@@ -33,6 +33,7 @@ test('en el primer acceso se elige el nivel, y decide lo que se ve primero', asy
   // Sin nivel, «Hoy» lleva a elegirlo.
   await expect(page).toHaveURL(/\/nivel$/);
   await expect(page.getByRole('heading', { level: 1, name: 'Elige tu nivel' })).toBeVisible();
+  await expect(page.getByRole('img', { name: /Nivel elegido/ })).toHaveCount(0);
   const options = page.getByRole('radio');
   await expect(options).toHaveCount(6);
   await expect(page.getByRole('radio', { checked: true })).toHaveCount(0);
@@ -47,6 +48,8 @@ test('en el primer acceso se elige el nivel, y decide lo que se ve primero', asy
   await save.click();
   await expect(page).toHaveURL(/\/hoy$/);
   await expect(page.getByRole('link', { name: /Tu nivel: B2/ })).toBeVisible();
+  // La cabecera enseña el nivel elegido, no la estimación (que arranca en B1).
+  await expect(page.getByRole('img', { name: 'Nivel elegido: B2' })).toBeVisible();
   expect(await queryDatabase(request, 'select declared_level from public.profiles')).toEqual([
     { declared_level: 'B2' },
   ]);
@@ -68,6 +71,7 @@ test('en el primer acceso se elige el nivel, y decide lo que se ve primero', asy
   await page.getByRole('radio', { name: /B1 · Umbral/ }).check();
   await save.click();
   await expect(page.getByRole('link', { name: /Tu nivel: B1/ })).toBeVisible();
+  await expect(page.getByRole('img', { name: 'Nivel elegido: B1' })).toBeVisible();
   await page.goto('/leer');
   await expect(page).toHaveURL(/\/leer$/);
   await expect(page.getByRole('link', { name: /The Second Life of Old Games/ })).toBeVisible();

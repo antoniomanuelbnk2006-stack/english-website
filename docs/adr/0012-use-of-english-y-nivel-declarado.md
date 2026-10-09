@@ -24,7 +24,8 @@ Tras probar el MVP, el dueño pidió tres cosas que el diseño original no conte
 **Nivel elegido.** En el primer acceso, `/hoy` lleva a `/nivel`, donde se elige el nivel (A1–C2) con una descripción de cada uno; se guarda en `profiles.declared_level` y se puede cambiar cuando se quiera. Ese nivel:
 
 - es el filtro **por defecto** de las bibliotecas de escucha, lectura y Use of English (con «Todas» a un toque) y decide qué fichas de gramática salen primero;
-- sigue siendo la base de la cobertura léxica mientras no haya test de nivel.
+- sigue siendo la base de la cobertura léxica mientras no haya test de nivel;
+- es el que muestra el **indicador de la cabecera** (las barras junto al logo). Al principio enseñaba la estimación de escucha, que arranca en B1 para todo el mundo, y contradecía al nivel elegido; el dueño pidió que mostrara este. La estimación por destreza sigue en Hoy y en Progreso.
 
 **Contenido para todos los niveles.** Se publica al menos una lectura, una escucha, una ficha de gramática y ejercicios de Use of English por nivel.
 

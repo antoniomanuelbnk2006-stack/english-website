@@ -74,6 +74,7 @@ export const es = {
     towards: '{pct} % → {next}',
     estimated: 'Estimado',
     lowConfidence: 'Estimación con pocos datos',
+    chosenLabel: 'Nivel elegido: {level}',
     chooseTitle: 'Elige tu nivel',
     chooseFirst:
       'Lo primero: dinos por dónde vas. Según tu nivel verás unos textos, audios y ejercicios u otros.',

@@ -10,7 +10,7 @@ const SIZES = {
 } as const;
 
 export interface SignalBarsProps {
-  /** Nivel estimado por el rating. */
+  /** Nivel que se pinta: el estimado por el rating o, en la cabecera, el elegido. */
   level: CefrLevel;
   /** Progreso hacia el nivel siguiente, de 0 a 1. */
   progress: number;
