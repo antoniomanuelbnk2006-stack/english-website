@@ -1922,20 +1922,28 @@ export const RULES: readonly Rule[] = [
     severity: 'minor',
     pattern: /\b([a-z]+)\s+\1\b/gi,
     find: (m) => {
+      const word = m[1] ?? '';
       if (
         /^(had|that|very|so|really|long|many|no|ha|bye|well|now|there|knock|far|much|more)$/i.test(
-          m[1] ?? '',
+          word,
         )
       ) {
         return null;
       }
-      return { suggestion: m[1] ?? null };
+      // Las cifras dictadas una a una se repiten: «four four seven».
+      if (/^(zero|oh|one|two|three|four|five|six|seven|eight|nine)$/i.test(word)) return null;
+      return { suggestion: word };
     },
     explanation_es: 'La misma palabra aparece dos veces seguidas.',
     card: false,
     examples: {
       bad: ['I went to the the shop.', 'She is is my friend.'],
-      good: ['I went to the shop.', 'He had had enough.', 'It was a very very long day.'],
+      good: [
+        'I went to the shop.',
+        'He had had enough.',
+        'It was a very very long day.',
+        'My number is six one two, four four seven.',
+      ],
     },
   },
   // ── Registro (solo en textos formales) ──
