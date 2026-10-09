@@ -1,0 +1,123 @@
+{
+  "id": "a2-pro-001",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "title": "B or V?",
+  "summary_es": "En español «b» y «v» suenan igual; en inglés son dos sonidos y cambian la palabra.",
+  "focus": "consonants",
+  "sounds": [
+    "b",
+    "v"
+  ],
+  "tip_es": "Para la /v/, apoya los dientes de arriba sobre el labio de abajo y haz vibrar el aire: es una «f» con voz. Para la /b/, junta los dos labios y suéltalos de golpe. Si dices *berry* por *very*, te entenderán otra cosa.",
+  "est_minutes": 6,
+  "items": [
+    {
+      "id": "i1",
+      "text": "very",
+      "ipa": "/ˈveri/",
+      "es": "muy",
+      "confusions": [
+        {
+          "heard": "berry",
+          "tip_es": "Ha oído una /b/. No juntes los labios: apoya los dientes de arriba en el labio de abajo y deja vibrar el aire."
+        },
+        {
+          "heard": "bury",
+          "tip_es": "Ha oído una /b/. No juntes los labios: apoya los dientes de arriba en el labio de abajo y deja vibrar el aire."
+        }
+      ]
+    },
+    {
+      "id": "i2",
+      "text": "berry",
+      "ipa": "/ˈberi/",
+      "es": "baya",
+      "confusions": [
+        {
+          "heard": "very",
+          "tip_es": "Ha oído una /v/. Junta los dos labios y suéltalos de golpe."
+        }
+      ]
+    },
+    {
+      "id": "i3",
+      "text": "vote",
+      "ipa": "/vəʊt/",
+      "es": "votar",
+      "confusions": [
+        {
+          "heard": "boat",
+          "tip_es": "Ha oído una /b/. No juntes los labios: apoya los dientes de arriba en el labio de abajo y deja vibrar el aire."
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "text": "boat",
+      "ipa": "/bəʊt/",
+      "es": "barca",
+      "confusions": [
+        {
+          "heard": "vote",
+          "tip_es": "Ha oído una /v/. Junta los dos labios y suéltalos de golpe."
+        }
+      ]
+    },
+    {
+      "id": "i5",
+      "text": "van",
+      "ipa": "/væn/",
+      "es": "furgoneta",
+      "confusions": [
+        {
+          "heard": "ban",
+          "tip_es": "Ha oído una /b/. No juntes los labios: apoya los dientes de arriba en el labio de abajo y deja vibrar el aire."
+        }
+      ]
+    },
+    {
+      "id": "i6",
+      "text": "vest",
+      "ipa": "/vest/",
+      "es": "chaleco",
+      "confusions": [
+        {
+          "heard": "best",
+          "tip_es": "Ha oído una /b/. No juntes los labios: apoya los dientes de arriba en el labio de abajo y deja vibrar el aire."
+        }
+      ]
+    },
+    {
+      "id": "i7",
+      "text": "best",
+      "ipa": "/best/",
+      "es": "el mejor",
+      "confusions": [
+        {
+          "heard": "vest",
+          "tip_es": "Ha oído una /v/. Junta los dos labios y suéltalos de golpe."
+        }
+      ]
+    },
+    {
+      "id": "i8",
+      "text": "seven",
+      "ipa": "/ˈsevn/",
+      "es": "siete"
+    },
+    {
+      "id": "i9",
+      "text": "I love living in this village.",
+      "ipa": "/aɪ ˈlʌv ˈlɪvɪŋ ɪn ðɪs ˈvɪlɪdʒ/",
+      "es": "Me encanta vivir en este pueblo."
+    },
+    {
+      "id": "i10",
+      "text": "Bob drives a very big van.",
+      "ipa": "/ˈbɒb ˈdraɪvz ə ˈveri ˈbɪɡ ˈvæn/",
+      "es": "Bob conduce una furgoneta muy grande."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "b2-pro-002",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "title": "Price or prize?",
+  "summary_es": "La «s» sorda y la «z» sonora: en español no distinguen palabras, en inglés sí.",
+  "focus": "consonants",
+  "sounds": [
+    "s",
+    "z"
+  ],
+  "tip_es": "La /z/ inglesa es una /s/ con voz: pon la mano en la garganta y nota cómo vibra, como el zumbido de una abeja. No es la «z» española. Distingue palabras: *price* /praɪs/ no es *prize* /praɪz/. Fíjate además en que la vocal dura más delante de /z/.",
+  "est_minutes": 7,
+  "items": [
+    {
+      "id": "i1",
+      "text": "price",
+      "ipa": "/praɪs/",
+      "es": "precio",
+      "confusions": [
+        {
+          "heard": "prize",
+          "tip_es": "Ha oído una /z/. Quita la voz y acorta la vocal: una «s» seca."
+        }
+      ]
+    },
+    {
+      "id": "i2",
+      "text": "prize",
+      "ipa": "/praɪz/",
+      "es": "premio",
+      "confusions": [
+        {
+          "heard": "price",
+          "tip_es": "Ha oído una /s/. Añade voz: debe zumbar, como una abeja, y la vocal de antes se alarga."
+        }
+      ]
+    },
+    {
+      "id": "i3",
+      "text": "ice",
+      "ipa": "/aɪs/",
+      "es": "hielo",
+      "confusions": [
+        {
+          "heard": "eyes",
+          "tip_es": "Ha oído una /z/. Quita la voz y acorta la vocal: una «s» seca."
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "text": "eyes",
+      "ipa": "/aɪz/",
+      "es": "ojos",
+      "confusions": [
+        {
+          "heard": "ice",
+          "tip_es": "Ha oído una /s/. Añade voz: debe zumbar, como una abeja, y la vocal de antes se alarga."
+        }
+      ]
+    },
+    {
+      "id": "i5",
+      "text": "rice",
+      "ipa": "/raɪs/",
+      "es": "arroz",
+      "confusions": [
+        {
+          "heard": "rise",
+          "tip_es": "Ha oído una /z/. Quita la voz y acorta la vocal: una «s» seca."
+        }
+      ]
+    },
+    {
+      "id": "i6",
+      "text": "rise",
+      "ipa": "/raɪz/",
+      "es": "subir",
+      "confusions": [
+        {
+          "heard": "rice",
+          "tip_es": "Ha oído una /s/. Añade voz: debe zumbar, como una abeja, y la vocal de antes se alarga."
+        }
+      ]
+    },
+    {
+      "id": "i7",
+      "text": "bus",
+      "ipa": "/bʌs/",
+      "es": "autobús",
+      "confusions": [
+        {
+          "heard": "buzz",
+          "tip_es": "Ha oído una /z/. Quita la voz y acorta la vocal: una «s» seca."
+        }
+      ]
+    },
+    {
+      "id": "i8",
+      "text": "peas",
+      "ipa": "/piːz/",
+      "es": "guisantes",
+      "confusions": [
+        {
+          "heard": "peace",
+          "tip_es": "Ha oído una /s/. Añade voz: debe zumbar, como una abeja, y la vocal de antes se alarga."
+        },
+        {
+          "heard": "piece",
+          "tip_es": "Ha oído una /s/. Añade voz: debe zumbar, como una abeja, y la vocal de antes se alarga."
+        }
+      ]
+    },
+    {
+      "id": "i9",
+      "text": "She closes her eyes.",
+      "ipa": "/ʃi ˈkləʊzɪz hər ˈaɪz/",
+      "es": "Cierra los ojos."
+    },
+    {
+      "id": "i10",
+      "text": "He always loses his keys.",
+      "ipa": "/hi ˈɔːlweɪz ˈluːzɪz hɪz ˈkiːz/",
+      "es": "Siempre pierde las llaves."
+    }
+  ]
+}

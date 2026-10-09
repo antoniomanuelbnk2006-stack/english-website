@@ -1,0 +1,143 @@
+{
+  "id": "b1-pro-003",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "title": "Bag or back?",
+  "summary_es": "Las consonantes finales: en inglés hay que decirlas, y cambian el significado.",
+  "focus": "endings",
+  "sounds": [
+    "ɡ",
+    "k",
+    "d",
+    "t"
+  ],
+  "tip_es": "En español casi ninguna palabra acaba en /t/, /d/, /k/ o /ɡ/, así que tendemos a comérnoslas o a decirlas todas igual. En inglés el final distingue palabras: *bag* no es *back*. Pronuncia la última consonante hasta el final, y recuerda que la vocal dura un poco más delante de una consonante sonora (*bed*) que delante de una sorda (*bet*).",
+  "est_minutes": 7,
+  "items": [
+    {
+      "id": "i1",
+      "text": "bag",
+      "ipa": "/bæɡ/",
+      "es": "bolsa",
+      "confusions": [
+        {
+          "heard": "back",
+          "tip_es": "El final ha sonado sordo. Haz vibrar la última consonante y alarga un poco la vocal de antes."
+        }
+      ]
+    },
+    {
+      "id": "i2",
+      "text": "back",
+      "ipa": "/bæk/",
+      "es": "espalda; atrás",
+      "confusions": [
+        {
+          "heard": "bag",
+          "tip_es": "El final ha sonado sonoro. Corta la vocal antes y suelta la última consonante seca, sin voz."
+        }
+      ]
+    },
+    {
+      "id": "i3",
+      "text": "bed",
+      "ipa": "/bed/",
+      "es": "cama",
+      "confusions": [
+        {
+          "heard": "bet",
+          "tip_es": "El final ha sonado sordo. Haz vibrar la última consonante y alarga un poco la vocal de antes."
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "text": "bet",
+      "ipa": "/bet/",
+      "es": "apostar",
+      "confusions": [
+        {
+          "heard": "bed",
+          "tip_es": "El final ha sonado sonoro. Corta la vocal antes y suelta la última consonante seca, sin voz."
+        }
+      ]
+    },
+    {
+      "id": "i5",
+      "text": "card",
+      "ipa": "/kɑːd/",
+      "es": "tarjeta",
+      "confusions": [
+        {
+          "heard": "cart",
+          "tip_es": "El final ha sonado sordo. Haz vibrar la última consonante y alarga un poco la vocal de antes."
+        },
+        {
+          "heard": "car",
+          "tip_es": "No se ha oído el final. Añade el sonido pegado a la última consonante, sin meter ninguna vocal."
+        }
+      ]
+    },
+    {
+      "id": "i6",
+      "text": "cold",
+      "ipa": "/kəʊld/",
+      "es": "frío",
+      "confusions": [
+        {
+          "heard": "coal",
+          "tip_es": "No se ha oído el final. Añade el sonido pegado a la última consonante, sin meter ninguna vocal."
+        }
+      ]
+    },
+    {
+      "id": "i7",
+      "text": "world",
+      "ipa": "/wɜːld/",
+      "es": "mundo",
+      "confusions": [
+        {
+          "heard": "word",
+          "tip_es": "Falta la /l/: toca con la lengua detrás de los dientes antes de la /d/."
+        }
+      ]
+    },
+    {
+      "id": "i8",
+      "text": "asked",
+      "ipa": "/ɑːskt/",
+      "es": "preguntó",
+      "confusions": [
+        {
+          "heard": "ask",
+          "tip_es": "No se ha oído el final. Añade el sonido pegado a la última consonante, sin meter ninguna vocal."
+        }
+      ]
+    },
+    {
+      "id": "i9",
+      "text": "months",
+      "ipa": "/mʌnθs/",
+      "es": "meses",
+      "confusions": [
+        {
+          "heard": "month",
+          "tip_es": "No se ha oído el final. Añade el sonido pegado a la última consonante, sin meter ninguna vocal."
+        }
+      ]
+    },
+    {
+      "id": "i10",
+      "text": "I asked for a cold drink.",
+      "ipa": "/aɪ ˈɑːskt fər ə ˈkəʊld ˈdrɪŋk/",
+      "es": "Pedí una bebida fría."
+    },
+    {
+      "id": "i11",
+      "text": "He put the big bag on the bed.",
+      "ipa": "/hi ˈpʊt ðə ˈbɪɡ ˈbæɡ ɒn ðə ˈbed/",
+      "es": "Puso la bolsa grande encima de la cama."
+    }
+  ]
+}

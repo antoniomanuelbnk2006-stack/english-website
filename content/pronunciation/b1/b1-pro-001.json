@@ -1,0 +1,143 @@
+{
+  "id": "b1-pro-001",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "title": "Sh, ch and j",
+  "summary_es": "Cuatro sonidos que el oído español mezcla: «she», «cheese», «job» y «yes».",
+  "focus": "consonants",
+  "sounds": [
+    "ʃ",
+    "tʃ",
+    "dʒ",
+    "j"
+  ],
+  "tip_es": "/ʃ/ (*she*) es el sonido de mandar callar, «shhh», continuo. /tʃ/ (*cheese*) es la «ch» española y empieza con un golpe. /dʒ/ (*job*) es esa misma «ch» pero con voz. Y /j/ (*yes*) es una «i» muy breve, sin golpe: no la confundas con /dʒ/, porque *yet* no es *jet*.",
+  "est_minutes": 7,
+  "items": [
+    {
+      "id": "i1",
+      "text": "shoes",
+      "ipa": "/ʃuːz/",
+      "es": "zapatos",
+      "confusions": [
+        {
+          "heard": "choose",
+          "tip_es": "Ha oído /tʃ/, con golpe. Para /ʃ/ deja salir el aire seguido, como al mandar callar: «shhh»."
+        },
+        {
+          "heard": "chews",
+          "tip_es": "Ha oído /tʃ/, con golpe. Para /ʃ/ deja salir el aire seguido, como al mandar callar: «shhh»."
+        }
+      ]
+    },
+    {
+      "id": "i2",
+      "text": "choose",
+      "ipa": "/tʃuːz/",
+      "es": "elegir",
+      "confusions": [
+        {
+          "heard": "shoes",
+          "tip_es": "Ha oído /ʃ/, sin golpe. Empieza con la lengua pegada al paladar, como la «ch» española."
+        }
+      ]
+    },
+    {
+      "id": "i3",
+      "text": "wash",
+      "ipa": "/wɒʃ/",
+      "es": "lavar",
+      "confusions": [
+        {
+          "heard": "watch",
+          "tip_es": "Ha oído /tʃ/, con golpe. Para /ʃ/ deja salir el aire seguido, como al mandar callar: «shhh»."
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "text": "watch",
+      "ipa": "/wɒtʃ/",
+      "es": "mirar; reloj",
+      "confusions": [
+        {
+          "heard": "wash",
+          "tip_es": "Ha oído /ʃ/, sin golpe. Empieza con la lengua pegada al paladar, como la «ch» española."
+        }
+      ]
+    },
+    {
+      "id": "i5",
+      "text": "share",
+      "ipa": "/ʃeə/",
+      "es": "compartir",
+      "confusions": [
+        {
+          "heard": "chair",
+          "tip_es": "Ha oído /tʃ/, con golpe. Para /ʃ/ deja salir el aire seguido, como al mandar callar: «shhh»."
+        }
+      ]
+    },
+    {
+      "id": "i6",
+      "text": "chair",
+      "ipa": "/tʃeə/",
+      "es": "silla",
+      "confusions": [
+        {
+          "heard": "share",
+          "tip_es": "Ha oído /ʃ/, sin golpe. Empieza con la lengua pegada al paladar, como la «ch» española."
+        }
+      ]
+    },
+    {
+      "id": "i7",
+      "text": "jet",
+      "ipa": "/dʒet/",
+      "es": "avión a reacción",
+      "confusions": [
+        {
+          "heard": "yet",
+          "tip_es": "Ha oído /j/, la «y» suave. Para /dʒ/ empieza con un golpe de la lengua: es una «ch» con voz."
+        }
+      ]
+    },
+    {
+      "id": "i8",
+      "text": "yet",
+      "ipa": "/jet/",
+      "es": "todavía",
+      "confusions": [
+        {
+          "heard": "jet",
+          "tip_es": "Ha oído /dʒ/. La /j/ de *yes* no lleva golpe: es como una «i» muy breve."
+        }
+      ]
+    },
+    {
+      "id": "i9",
+      "text": "juice",
+      "ipa": "/dʒuːs/",
+      "es": "zumo",
+      "confusions": [
+        {
+          "heard": "use",
+          "tip_es": "Ha oído /j/, la «y» suave. Para /dʒ/ empieza con un golpe de la lengua: es una «ch» con voz."
+        }
+      ]
+    },
+    {
+      "id": "i10",
+      "text": "She chose cheap shoes.",
+      "ipa": "/ʃi ˈtʃəʊz ˈtʃiːp ˈʃuːz/",
+      "es": "Eligió unos zapatos baratos."
+    },
+    {
+      "id": "i11",
+      "text": "John enjoys his job in Japan.",
+      "ipa": "/ˈdʒɒn ɪnˈdʒɔɪz hɪz ˈdʒɒb ɪn dʒəˈpæn/",
+      "es": "John disfruta de su trabajo en Japón."
+    }
+  ]
+}

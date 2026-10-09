@@ -1,0 +1,136 @@
+{
+  "id": "a2-pro-003",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "title": "Cat, cut, cart",
+  "summary_es": "Donde el español tiene una sola «a», el inglés tiene tres vocales distintas.",
+  "focus": "vowels",
+  "sounds": [
+    "æ",
+    "ʌ",
+    "ɑː"
+  ],
+  "tip_es": "Tres vocales donde nosotros oímos una «a». *Cat* /æ/: abre mucho la boca y estira los labios, entre «a» y «e». *Cut* /ʌ/: corta y relajada, con la boca poco abierta. *Cart* /ɑː/: larga y desde el fondo de la boca, como cuando el médico te dice «diga aaa».",
+  "est_minutes": 7,
+  "items": [
+    {
+      "id": "i1",
+      "text": "cat",
+      "ipa": "/kæt/",
+      "es": "gato",
+      "confusions": [
+        {
+          "heard": "cut",
+          "tip_es": "Ha sonado a /ʌ/. Abre más la boca y estira los labios hacia los lados: entre «a» y «e»."
+        },
+        {
+          "heard": "cart",
+          "tip_es": "Ha sonado a /ʌ/. Abre más la boca y estira los labios hacia los lados: entre «a» y «e»."
+        }
+      ]
+    },
+    {
+      "id": "i2",
+      "text": "cut",
+      "ipa": "/kʌt/",
+      "es": "cortar",
+      "confusions": [
+        {
+          "heard": "cat",
+          "tip_es": "Ha sonado a /æ/. Abre menos la boca y hazla corta y relajada."
+        }
+      ]
+    },
+    {
+      "id": "i3",
+      "text": "cap",
+      "ipa": "/kæp/",
+      "es": "gorra",
+      "confusions": [
+        {
+          "heard": "cup",
+          "tip_es": "Ha sonado a /ʌ/. Abre más la boca y estira los labios hacia los lados: entre «a» y «e»."
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "text": "cup",
+      "ipa": "/kʌp/",
+      "es": "taza",
+      "confusions": [
+        {
+          "heard": "cap",
+          "tip_es": "Ha sonado a /æ/. Abre menos la boca y hazla corta y relajada."
+        }
+      ]
+    },
+    {
+      "id": "i5",
+      "text": "match",
+      "ipa": "/mætʃ/",
+      "es": "partido; cerilla",
+      "confusions": [
+        {
+          "heard": "much",
+          "tip_es": "Ha sonado a /ʌ/. Abre más la boca y estira los labios hacia los lados: entre «a» y «e»."
+        }
+      ]
+    },
+    {
+      "id": "i6",
+      "text": "much",
+      "ipa": "/mʌtʃ/",
+      "es": "mucho",
+      "confusions": [
+        {
+          "heard": "match",
+          "tip_es": "Ha sonado a /æ/. Abre menos la boca y hazla corta y relajada."
+        }
+      ]
+    },
+    {
+      "id": "i7",
+      "text": "ran",
+      "ipa": "/ræn/",
+      "es": "corrió",
+      "confusions": [
+        {
+          "heard": "run",
+          "tip_es": "Ha sonado a /ʌ/. Abre más la boca y estira los labios hacia los lados: entre «a» y «e»."
+        }
+      ]
+    },
+    {
+      "id": "i8",
+      "text": "run",
+      "ipa": "/rʌn/",
+      "es": "correr",
+      "confusions": [
+        {
+          "heard": "ran",
+          "tip_es": "Ha sonado a /æ/. Abre menos la boca y hazla corta y relajada."
+        }
+      ]
+    },
+    {
+      "id": "i9",
+      "text": "car park",
+      "ipa": "/ˈkɑː pɑːk/",
+      "es": "aparcamiento"
+    },
+    {
+      "id": "i10",
+      "text": "My uncle has a black cat.",
+      "ipa": "/maɪ ˈʌŋkl hæz ə ˈblæk ˈkæt/",
+      "es": "Mi tío tiene un gato negro."
+    },
+    {
+      "id": "i11",
+      "text": "The bus runs on Sundays.",
+      "ipa": "/ðə ˈbʌs ˈrʌnz ɒn ˈsʌndeɪz/",
+      "es": "El autobús funciona los domingos."
+    }
+  ]
+}

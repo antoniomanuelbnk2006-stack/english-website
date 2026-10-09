@@ -1,0 +1,100 @@
+{
+  "id": "a1-pro-003",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "title": "The letter H",
+  "summary_es": "La «h» inglesa: un soplo de aire, no la «j» española. Y las pocas palabras en las que no suena.",
+  "focus": "consonants",
+  "sounds": [
+    "h"
+  ],
+  "tip_es": "La /h/ inglesa es solo aire, como cuando empañas un cristal: no raspa en la garganta como la «j» española. No te la comas (*hair* no es *air*) ni la conviertas en «j». En unas pocas palabras la *h* es muda: *hour* y *honest* empiezan por vocal.",
+  "est_minutes": 6,
+  "items": [
+    {
+      "id": "i1",
+      "text": "house",
+      "ipa": "/haʊs/",
+      "es": "casa"
+    },
+    {
+      "id": "i2",
+      "text": "happy",
+      "ipa": "/ˈhæpi/",
+      "es": "contento"
+    },
+    {
+      "id": "i3",
+      "text": "hello",
+      "ipa": "/həˈləʊ/",
+      "es": "hola"
+    },
+    {
+      "id": "i4",
+      "text": "hair",
+      "ipa": "/heə/",
+      "es": "pelo",
+      "confusions": [
+        {
+          "heard": "air",
+          "tip_es": "No se ha oído la /h/. Suelta un poco de aire antes de la vocal, como al empañar un cristal."
+        }
+      ]
+    },
+    {
+      "id": "i5",
+      "text": "heat",
+      "ipa": "/hiːt/",
+      "es": "calor",
+      "confusions": [
+        {
+          "heard": "eat",
+          "tip_es": "No se ha oído la /h/. Suelta un poco de aire antes de la vocal, como al empañar un cristal."
+        }
+      ]
+    },
+    {
+      "id": "i6",
+      "text": "hold",
+      "ipa": "/həʊld/",
+      "es": "sujetar",
+      "confusions": [
+        {
+          "heard": "old",
+          "tip_es": "No se ha oído la /h/. Suelta un poco de aire antes de la vocal, como al empañar un cristal."
+        }
+      ]
+    },
+    {
+      "id": "i7",
+      "text": "behind",
+      "ipa": "/bɪˈhaɪnd/",
+      "es": "detrás"
+    },
+    {
+      "id": "i8",
+      "text": "hour",
+      "ipa": "/ˈaʊə/",
+      "es": "hora (la h no suena)"
+    },
+    {
+      "id": "i9",
+      "text": "honest",
+      "ipa": "/ˈɒnɪst/",
+      "es": "honrado (la h no suena)"
+    },
+    {
+      "id": "i10",
+      "text": "He has a huge house.",
+      "ipa": "/hi ˈhæz ə ˈhjuːdʒ ˈhaʊs/",
+      "es": "Tiene una casa enorme."
+    },
+    {
+      "id": "i11",
+      "text": "How hot is it in here?",
+      "ipa": "/ˈhaʊ ˈhɒt ɪz ɪt ɪn ˈhɪə/",
+      "es": "¿Cuánto calor hace aquí dentro?"
+    }
+  ]
+}
