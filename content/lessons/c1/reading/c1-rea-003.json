@@ -1,0 +1,1639 @@
+{
+  "id": "c1-rea-003",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "unit": "c1-u05",
+  "series": "c1-u05-persuasion",
+  "skill": "reading",
+  "genre": "essay",
+  "title": "The oldest trick",
+  "summary_es": "Un ensayo sobre la persuasión: las tres vías de Aristóteles, por qué el carácter y la emoción pesan más que la lógica y qué podemos hacer al respecto.",
+  "topic": "language",
+  "tags": ["retórica", "persuasión", "ensayo", "inversión"],
+  "can_do": ["R-C1-01", "R-C1-03", "R-C1-05"],
+  "grammar_focus": ["c1.inversion-negative-adverbials"],
+  "vocab_focus": ["gullible", "appeal to", "readily", "in passing", "remedy", "opt out"],
+  "est_minutes": 28,
+  "prediction_prompt": "Think of the last advertisement that convinced you. Was it an argument that persuaded you, or something else?",
+  "pre_teach": ["rhetoric", "gullible"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Rarely do we notice persuasion while it is happening.",
+          "tokens": [
+            { "t": "Rarely", "l": "rarely", "p": "ADV", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "notice", "l": "notice", "p": "VERB", "w": true, "sp": true },
+            { "t": "persuasion", "l": "persuasion", "p": "NOUN", "w": true, "sp": true },
+            { "t": "while", "l": "while", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "happening", "l": "happen", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "We tend to imagine it as something done to other people, the gullible and the uninformed, by advertisers and politicians.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "tend", "l": "tend", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "imagine", "l": "imagine", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "ADP", "w": true, "sp": true },
+            { "t": "something", "l": "something", "p": "PRON", "w": true, "sp": true },
+            { "t": "done", "l": "do", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "other", "l": "other", "p": "ADJ", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "gullible", "l": "gullible", "p": "ADJ", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "uninformed", "l": "uninformed", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "advertisers", "l": "advertise", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "politicians", "l": "politician", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "We ourselves merely weigh the evidence and reach conclusions.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "ourselves", "l": "ourself", "p": "PRON", "w": true, "sp": true },
+            { "t": "merely", "l": "merely", "p": "ADV", "w": true, "sp": true },
+            { "t": "weigh", "l": "weigh", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "evidence", "l": "evidence", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "reach", "l": "reach", "p": "VERB", "w": true, "sp": true },
+            { "t": "conclusions", "l": "conclusion", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "This flattering picture is, of course, exactly what a skilled persuader would want us to believe.",
+          "tokens": [
+            { "t": "This", "l": "this", "p": "DET", "w": true, "sp": true },
+            { "t": "flattering", "l": "flattering", "p": "ADJ", "w": true, "sp": true },
+            { "t": "picture", "l": "picture", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "course", "l": "course", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "exactly", "l": "exactly", "p": "ADV", "w": true, "sp": true },
+            { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "skilled", "l": "skilled", "p": "ADJ", "w": true, "sp": true },
+            { "t": "persuader", "l": "persuade", "p": "NOUN", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "want", "l": "want", "p": "VERB", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "believe", "l": "believe", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "The systematic study of how minds are changed is at least twenty-four centuries old.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "systematic", "l": "systematic", "p": "ADJ", "w": true, "sp": true },
+            { "t": "study", "l": "study", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "how", "l": "how", "p": "ADV", "w": true, "sp": true },
+            { "t": "minds", "l": "mind", "p": "NOUN", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "changed", "l": "change", "p": "VERB", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "least", "l": "least", "p": "ADV", "w": true, "sp": true },
+            { "t": "twenty", "l": "twenty", "p": "NUM", "w": false },
+            { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+            { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true },
+            { "t": "centuries", "l": "century", "p": "NOUN", "w": true, "sp": true },
+            { "t": "old", "l": "old", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Aristotle, lecturing in Athens, divided the means of persuasion into three.",
+          "tokens": [
+            { "t": "Aristotle", "l": "aristotle", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "lecturing", "l": "lecture", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "Athens", "l": "athens", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "divided", "l": "divide", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "means", "l": "mean", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "persuasion", "l": "persuasion", "p": "NOUN", "w": true, "sp": true },
+            { "t": "into", "l": "into", "p": "ADP", "w": true, "sp": true },
+            { "t": "three", "l": "three", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "A speaker may appeal to reason, offering arguments and proof.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "speaker", "l": "speaker", "p": "NOUN", "w": true, "sp": true },
+            { "t": "may", "l": "may", "p": "AUX", "w": true, "sp": true },
+            { "t": "appeal", "l": "appeal", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "reason", "l": "reason", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "offering", "l": "offer", "p": "NOUN", "w": true, "sp": true },
+            { "t": "arguments", "l": "argument", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "proof", "l": "proof", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "He may appeal to emotion, stirring anger, fear or pity in his audience.",
+          "tokens": [
+            { "t": "He", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "may", "l": "may", "p": "AUX", "w": true, "sp": true },
+            { "t": "appeal", "l": "appeal", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "emotion", "l": "emotion", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "stirring", "l": "stir", "p": "VERB", "w": true, "sp": true },
+            { "t": "anger", "l": "anger", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "fear", "l": "fear", "p": "NOUN", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "pity", "l": "pity", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "his", "l": "his", "p": "PRON", "w": true, "sp": true },
+            { "t": "audience", "l": "audience", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s5",
+          "text": "Or he may rely on character: the impression that he is the kind of person who can be trusted.",
+          "tokens": [
+            { "t": "Or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "he", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "may", "l": "may", "p": "AUX", "w": true, "sp": true },
+            { "t": "rely", "l": "rely", "p": "VERB", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "character", "l": "character", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "impression", "l": "impression", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "he", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "kind", "l": "kind", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "person", "l": "person", "p": "NOUN", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "trusted", "l": "trust", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s6",
+          "text": "The Greek terms for these three, logos, pathos and ethos, have survived in textbooks ever since, which is itself a tribute to how little the essentials have changed.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "Greek", "l": "greek", "p": "PROPN", "w": false, "sp": true },
+            { "t": "terms", "l": "term", "p": "NOUN", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "these", "l": "these", "p": "DET", "w": true, "sp": true },
+            { "t": "three", "l": "three", "p": "NUM", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "logos", "l": "logo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pathos", "l": "pathos", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "ethos", "l": "ethos", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "survived", "l": "survive", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "textbooks", "l": "textbook", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ever", "l": "ever", "p": "ADV", "w": true, "sp": true },
+            { "t": "since", "l": "since", "p": "SCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "which", "l": "which", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "itself", "l": "itself", "p": "PRON", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "tribute", "l": "tribute", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "how", "l": "how", "p": "ADV", "w": true, "sp": true },
+            { "t": "little", "l": "little", "p": "ADJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "essentials", "l": "essential", "p": "NOUN", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "changed", "l": "change", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "What strikes a modern reader is the order of importance Aristotle assigned to them.",
+          "tokens": [
+            { "t": "What", "l": "what", "p": "DET", "w": true, "sp": true },
+            { "t": "strikes", "l": "strike", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "modern", "l": "modern", "p": "ADJ", "w": true, "sp": true },
+            { "t": "reader", "l": "reader", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "order", "l": "order", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "importance", "l": "importance", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Aristotle", "l": "aristotle", "p": "PROPN", "w": false, "sp": true },
+            { "t": "assigned", "l": "assign", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "them", "l": "them", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "We like to think that reason comes first.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "like", "l": "like", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "think", "l": "think", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "reason", "l": "reason", "p": "NOUN", "w": true, "sp": true },
+            { "t": "comes", "l": "come", "p": "VERB", "w": true, "sp": true },
+            { "t": "first", "l": "first", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "He suspected otherwise.",
+          "tokens": [
+            { "t": "He", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "suspected", "l": "suspect", "p": "VERB", "w": true, "sp": true },
+            { "t": "otherwise", "l": "otherwise", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Character, he observed, is very nearly the most powerful of the three, for we believe good people more readily than others, and we do so most of all on questions where certainty is impossible.",
+          "tokens": [
+            { "t": "Character", "l": "character", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "he", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "observed", "l": "observe", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "very", "l": "very", "p": "ADV", "w": true, "sp": true },
+            { "t": "nearly", "l": "nearly", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "most", "l": "most", "p": "ADV", "w": true, "sp": true },
+            { "t": "powerful", "l": "powerful", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "three", "l": "three", "p": "NUM", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "believe", "l": "believe", "p": "VERB", "w": true, "sp": true },
+            { "t": "good", "l": "good", "p": "ADJ", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADV", "w": true, "sp": true },
+            { "t": "readily", "l": "readily", "p": "ADV", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "others", "l": "other", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "most", "l": "most", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "questions", "l": "question", "p": "NOUN", "w": true, "sp": true },
+            { "t": "where", "l": "where", "p": "ADV", "w": true, "sp": true },
+            { "t": "certainty", "l": "certainty", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "impossible", "l": "impossible", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s5",
+          "text": "Not until the twentieth century did psychologists confirm the point experimentally: the same statement is judged more convincing when attributed to a source the listener already respects.",
+          "tokens": [
+            { "t": "Not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "until", "l": "until", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "twentieth", "l": "twentieth", "p": "ADJ", "w": true, "sp": true },
+            { "t": "century", "l": "century", "p": "NOUN", "w": true, "sp": true },
+            { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "psychologists", "l": "psychologist", "p": "NOUN", "w": true, "sp": true },
+            { "t": "confirm", "l": "confirm", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "point", "l": "point", "p": "NOUN", "w": true, "sp": true },
+            { "t": "experimentally", "l": "experimental", "p": "ADV", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "same", "l": "same", "p": "ADJ", "w": true, "sp": true },
+            { "t": "statement", "l": "statement", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "judged", "l": "judge", "p": "VERB", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADV", "w": true, "sp": true },
+            { "t": "convincing", "l": "convince", "p": "ADJ", "w": true, "sp": true },
+            { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "attributed", "l": "attribute", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "source", "l": "source", "p": "NOUN", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "listener", "l": "listener", "p": "NOUN", "w": true, "sp": true },
+            { "t": "already", "l": "already", "p": "ADV", "w": true, "sp": true },
+            { "t": "respects", "l": "respect", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s6",
+          "text": "In one famous study, American students were shown an article about medicine.",
+          "tokens": [
+            { "t": "In", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "famous", "l": "famous", "p": "ADJ", "w": true, "sp": true },
+            { "t": "study", "l": "study", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "American", "l": "american", "p": "PROPN", "w": false, "sp": true },
+            { "t": "students", "l": "student", "p": "NOUN", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "shown", "l": "show", "p": "VERB", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "article", "l": "article", "p": "NOUN", "w": true, "sp": true },
+            { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true },
+            { "t": "medicine", "l": "medicine", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s7",
+          "text": "Half were told that it came from a respected scientific journal, the rest that it came from a popular magazine.",
+          "tokens": [
+            { "t": "Half", "l": "half", "p": "ADV", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "told", "l": "tell", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "came", "l": "come", "p": "VERB", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "respected", "l": "respect", "p": "VERB", "w": true, "sp": true },
+            { "t": "scientific", "l": "scientific", "p": "ADJ", "w": true, "sp": true },
+            { "t": "journal", "l": "journal", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "rest", "l": "rest", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "came", "l": "come", "p": "VERB", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "popular", "l": "popular", "p": "ADJ", "w": true, "sp": true },
+            { "t": "magazine", "l": "magazine", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s8",
+          "text": "The text was identical; the degree of belief was not.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "text", "l": "text", "p": "NOUN", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "identical", "l": "identical", "p": "ADJ", "w": true },
+            { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "degree", "l": "degree", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "belief", "l": "belief", "p": "NOUN", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Consider how this works in an ordinary advertisement.",
+          "tokens": [
+            { "t": "Consider", "l": "consider", "p": "VERB", "w": true, "sp": true },
+            { "t": "how", "l": "how", "p": "ADV", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "PRON", "w": true, "sp": true },
+            { "t": "works", "l": "work", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "ordinary", "l": "ordinary", "p": "ADJ", "w": true, "sp": true },
+            { "t": "advertisement", "l": "advertisement", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "A toothpaste is recommended by a figure in a white coat.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "toothpaste", "l": "toothpaste", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "recommended", "l": "recommend", "p": "VERB", "w": true, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "figure", "l": "figure", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "white", "l": "white", "p": "ADJ", "w": true, "sp": true },
+            { "t": "coat", "l": "coat", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "No argument is offered; none is needed.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "DET", "w": true, "sp": true },
+            { "t": "argument", "l": "argument", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "offered", "l": "offer", "p": "VERB", "w": true },
+            { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "none", "l": "none", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "needed", "l": "need", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "The coat does the work that evidence would otherwise have to do.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "coat", "l": "coat", "p": "NOUN", "w": true, "sp": true },
+            { "t": "does", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "work", "l": "work", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "DET", "w": true, "sp": true },
+            { "t": "evidence", "l": "evidence", "p": "NOUN", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "otherwise", "l": "otherwise", "p": "ADV", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s5",
+          "text": "Nor is the technique confined to commerce.",
+          "tokens": [
+            { "t": "Nor", "l": "nor", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "technique", "l": "technique", "p": "NOUN", "w": true, "sp": true },
+            { "t": "confined", "l": "confine", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "commerce", "l": "commerce", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s6",
+          "text": "A politician who rolls up his sleeves before speaking, or who mentions, in passing, the town where he grew up, is not giving reasons to vote for him.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "politician", "l": "politician", "p": "NOUN", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "rolls", "l": "roll", "p": "NOUN", "w": true, "sp": true },
+            { "t": "up", "l": "up", "p": "ADP", "w": true, "sp": true },
+            { "t": "his", "l": "his", "p": "PRON", "w": true, "sp": true },
+            { "t": "sleeves", "l": "sleeve", "p": "NOUN", "w": true, "sp": true },
+            { "t": "before", "l": "before", "p": "ADP", "w": true, "sp": true },
+            { "t": "speaking", "l": "speak", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "mentions", "l": "mention", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "passing", "l": "pass", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "town", "l": "town", "p": "NOUN", "w": true, "sp": true },
+            { "t": "where", "l": "where", "p": "ADV", "w": true, "sp": true },
+            { "t": "he", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "grew", "l": "grow", "p": "VERB", "w": true, "sp": true },
+            { "t": "up", "l": "up", "p": "ADP", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "giving", "l": "give", "p": "VERB", "w": true, "sp": true },
+            { "t": "reasons", "l": "reason", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "vote", "l": "vote", "p": "VERB", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "him", "l": "him", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s7",
+          "text": "He is constructing a self.",
+          "tokens": [
+            { "t": "He", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "constructing", "l": "construct", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "self", "l": "self", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Emotion operates differently but no less efficiently.",
+          "tokens": [
+            { "t": "Emotion", "l": "emotion", "p": "NOUN", "w": true, "sp": true },
+            { "t": "operates", "l": "operate", "p": "VERB", "w": true, "sp": true },
+            { "t": "differently", "l": "differently", "p": "ADV", "w": true, "sp": true },
+            { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true },
+            { "t": "less", "l": "less", "p": "ADV", "w": true, "sp": true },
+            { "t": "efficiently", "l": "efficient", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Feelings narrow attention.",
+          "tokens": [
+            { "t": "Feelings", "l": "feeling", "p": "NOUN", "w": true, "sp": true },
+            { "t": "narrow", "l": "narrow", "p": "ADJ", "w": true, "sp": true },
+            { "t": "attention", "l": "attention", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "A frightened audience wants a solution, and it is seldom in the mood to compare alternatives.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "frightened", "l": "frightened", "p": "ADJ", "w": true, "sp": true },
+            { "t": "audience", "l": "audience", "p": "NOUN", "w": true, "sp": true },
+            { "t": "wants", "l": "want", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "solution", "l": "solution", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "seldom", "l": "seldom", "p": "ADV", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "mood", "l": "mood", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "compare", "l": "compare", "p": "VERB", "w": true, "sp": true },
+            { "t": "alternatives", "l": "alternative", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "This is why so many appeals follow the same pattern in two steps: first the threat, vividly described, and then, with a certain generosity, the remedy.",
+          "tokens": [
+            { "t": "This", "l": "this", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "why", "l": "why", "p": "ADV", "w": true, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "many", "l": "many", "p": "ADJ", "w": true, "sp": true },
+            { "t": "appeals", "l": "appeal", "p": "NOUN", "w": true, "sp": true },
+            { "t": "follow", "l": "follow", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "same", "l": "same", "p": "ADJ", "w": true, "sp": true },
+            { "t": "pattern", "l": "pattern", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true },
+            { "t": "steps", "l": "step", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "first", "l": "first", "p": "ADJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "threat", "l": "threat", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "vividly", "l": "vividly", "p": "ADV", "w": true, "sp": true },
+            { "t": "described", "l": "describe", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "then", "l": "then", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "certain", "l": "certain", "p": "ADJ", "w": true, "sp": true },
+            { "t": "generosity", "l": "generosity", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "remedy", "l": "remedy", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s5",
+          "text": "Sellers of insurance and of alarm systems have understood this for generations, as have the authors of political speeches.",
+          "tokens": [
+            { "t": "Sellers", "l": "seller", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "insurance", "l": "insurance", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "alarm", "l": "alarm", "p": "NOUN", "w": true, "sp": true },
+            { "t": "systems", "l": "system", "p": "NOUN", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "understood", "l": "understand", "p": "VERB", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "PRON", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "generations", "l": "generation", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "as", "l": "as", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "authors", "l": "author", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "political", "l": "political", "p": "ADJ", "w": true, "sp": true },
+            { "t": "speeches", "l": "speech", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s6",
+          "text": "Only by recognising the pattern can a listener begin to separate the two and ask whether the remedy actually answers the threat.",
+          "tokens": [
+            { "t": "Only", "l": "only", "p": "ADV", "w": true, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "recognising", "l": "recognize", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "pattern", "l": "pattern", "p": "NOUN", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "listener", "l": "listener", "p": "NOUN", "w": true, "sp": true },
+            { "t": "begin", "l": "begin", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "separate", "l": "separate", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "ask", "l": "ask", "p": "VERB", "w": true, "sp": true },
+            { "t": "whether", "l": "whether", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "remedy", "l": "remedy", "p": "NOUN", "w": true, "sp": true },
+            { "t": "actually", "l": "actually", "p": "ADV", "w": true, "sp": true },
+            { "t": "answers", "l": "answer", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "threat", "l": "threat", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "None of this means that reason is powerless.",
+          "tokens": [
+            { "t": "None", "l": "none", "p": "PRON", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "PRON", "w": true, "sp": true },
+            { "t": "means", "l": "mean", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "reason", "l": "reason", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "powerless", "l": "powerless", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Arguments do change minds, particularly over time and particularly when they are repeated by people we like.",
+          "tokens": [
+            { "t": "Arguments", "l": "argument", "p": "NOUN", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "change", "l": "change", "p": "VERB", "w": true, "sp": true },
+            { "t": "minds", "l": "mind", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "particularly", "l": "particularly", "p": "ADV", "w": true, "sp": true },
+            { "t": "over", "l": "over", "p": "ADP", "w": true, "sp": true },
+            { "t": "time", "l": "time", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "particularly", "l": "particularly", "p": "ADV", "w": true, "sp": true },
+            { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "repeated", "l": "repeat", "p": "VERB", "w": true, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "like", "l": "like", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "But logic rarely travels alone.",
+          "tokens": [
+            { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "logic", "l": "logic", "p": "NOUN", "w": true, "sp": true },
+            { "t": "rarely", "l": "rarely", "p": "ADV", "w": true, "sp": true },
+            { "t": "travels", "l": "travel", "p": "VERB", "w": true, "sp": true },
+            { "t": "alone", "l": "alone", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "Even the driest scientific paper persuades partly through its conventions: the cautious phrasing, the list of references, the institutions named beneath the authors.",
+          "tokens": [
+            { "t": "Even", "l": "even", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "driest", "l": "dry", "p": "ADJ", "w": true, "sp": true },
+            { "t": "scientific", "l": "scientific", "p": "ADJ", "w": true, "sp": true },
+            { "t": "paper", "l": "paper", "p": "NOUN", "w": true, "sp": true },
+            { "t": "persuades", "l": "persuade", "p": "VERB", "w": true, "sp": true },
+            { "t": "partly", "l": "partly", "p": "ADV", "w": true, "sp": true },
+            { "t": "through", "l": "thru", "p": "ADP", "w": true, "sp": true },
+            { "t": "its", "l": "its", "p": "PRON", "w": true, "sp": true },
+            { "t": "conventions", "l": "convention", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "cautious", "l": "cautious", "p": "ADJ", "w": true, "sp": true },
+            { "t": "phrasing", "l": "phrase", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "list", "l": "list", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "references", "l": "reference", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "institutions", "l": "institution", "p": "NOUN", "w": true, "sp": true },
+            { "t": "named", "l": "name", "p": "VERB", "w": true, "sp": true },
+            { "t": "beneath", "l": "beneath", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "authors", "l": "author", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s5",
+          "text": "These are signals of character dressed as formalities.",
+          "tokens": [
+            { "t": "These", "l": "these", "p": "DET", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "signals", "l": "signal", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "character", "l": "character", "p": "NOUN", "w": true, "sp": true },
+            { "t": "dressed", "l": "dress", "p": "VERB", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "ADP", "w": true, "sp": true },
+            { "t": "formalities", "l": "formality", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s6",
+          "text": "A reader who would never trust a stranger in the street will trust the same stranger in a footnote.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "reader", "l": "reader", "p": "NOUN", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "never", "l": "never", "p": "ADV", "w": true, "sp": true },
+            { "t": "trust", "l": "trust", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "stranger", "l": "stranger", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "street", "l": "street", "p": "NOUN", "w": true, "sp": true },
+            { "t": "will", "l": "will", "p": "AUX", "w": true, "sp": true },
+            { "t": "trust", "l": "trust", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "same", "l": "same", "p": "ADJ", "w": true, "sp": true },
+            { "t": "stranger", "l": "stranger", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "footnote", "l": "footnote", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "It would be a mistake, however, to conclude that rhetoric is merely a collection of tricks to be exposed.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "mistake", "l": "mistake", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "however", "l": "however", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "conclude", "l": "conclude", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "rhetoric", "l": "rhetoric", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "merely", "l": "merely", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "collection", "l": "collection", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "tricks", "l": "trick", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "exposed", "l": "expose", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Aristotle certainly did not think so.",
+          "tokens": [
+            { "t": "Aristotle", "l": "aristotle", "p": "PROPN", "w": false, "sp": true },
+            { "t": "certainly", "l": "certainly", "p": "ADV", "w": true, "sp": true },
+            { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "think", "l": "think", "p": "VERB", "w": true, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "For him, the art of persuasion was morally neutral, like the art of medicine, which can cure or poison according to the intentions of whoever practises it.",
+          "tokens": [
+            { "t": "For", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "him", "l": "him", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "art", "l": "art", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "persuasion", "l": "persuasion", "p": "NOUN", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "morally", "l": "morally", "p": "ADV", "w": true, "sp": true },
+            { "t": "neutral", "l": "neutral", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "like", "l": "like", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "art", "l": "art", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "medicine", "l": "medicine", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "which", "l": "which", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "cure", "l": "cure", "p": "VERB", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "poison", "l": "poison", "p": "NOUN", "w": true, "sp": true },
+            { "t": "according", "l": "accord", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "intentions", "l": "intention", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "whoever", "l": "whoever", "p": "PRON", "w": true, "sp": true },
+            { "t": "practises", "l": "practice", "p": "NOUN", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s4",
+          "text": "A just cause argued badly will lose to an unjust one argued well; hence the honest have, if anything, a greater duty to master the craft than the dishonest.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "just", "l": "just", "p": "ADV", "w": true, "sp": true },
+            { "t": "cause", "l": "cause", "p": "VERB", "w": true, "sp": true },
+            { "t": "argued", "l": "argue", "p": "VERB", "w": true, "sp": true },
+            { "t": "badly", "l": "badly", "p": "ADV", "w": true, "sp": true },
+            { "t": "will", "l": "will", "p": "AUX", "w": true, "sp": true },
+            { "t": "lose", "l": "lose", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "unjust", "l": "unjust", "p": "ADJ", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "argued", "l": "argue", "p": "VERB", "w": true, "sp": true },
+            { "t": "well", "l": "well", "p": "ADV", "w": true },
+            { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "hence", "l": "hence", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "honest", "l": "honest", "p": "ADJ", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "if", "l": "if", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "anything", "l": "anything", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "greater", "l": "great", "p": "ADJ", "w": true, "sp": true },
+            { "t": "duty", "l": "duty", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "master", "l": "master", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "craft", "l": "craft", "p": "NOUN", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "dishonest", "l": "dishonest", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "sentences": [
+        {
+          "id": "p8s1",
+          "text": "The implication for the rest of us is less comfortable than the flattering picture with which we began.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "implication", "l": "implication", "p": "NOUN", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "rest", "l": "rest", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "less", "l": "less", "p": "ADV", "w": true, "sp": true },
+            { "t": "comfortable", "l": "comfortable", "p": "ADJ", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "flattering", "l": "flattering", "p": "ADJ", "w": true, "sp": true },
+            { "t": "picture", "l": "picture", "p": "NOUN", "w": true, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "which", "l": "which", "p": "PRON", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "began", "l": "begin", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s2",
+          "text": "We cannot opt out of being persuaded, any more than we can opt out of hearing.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "opt", "l": "opt", "p": "VERB", "w": true, "sp": true },
+            { "t": "out", "l": "out", "p": "ADP", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "being", "l": "being", "p": "AUX", "w": true, "sp": true },
+            { "t": "persuaded", "l": "persuade", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "any", "l": "any", "p": "DET", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADJ", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "opt", "l": "opt", "p": "VERB", "w": true, "sp": true },
+            { "t": "out", "l": "out", "p": "ADP", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "hearing", "l": "hearing", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s3",
+          "text": "What we can do is become slower: to notice who is speaking before we attend to what is said, and to notice what we are feeling before we decide what we think.",
+          "tokens": [
+            { "t": "What", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "become", "l": "become", "p": "VERB", "w": true, "sp": true },
+            { "t": "slower", "l": "slow", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "notice", "l": "notice", "p": "VERB", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "speaking", "l": "speak", "p": "VERB", "w": true, "sp": true },
+            { "t": "before", "l": "before", "p": "ADP", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "attend", "l": "attend", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "said", "l": "say", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "notice", "l": "notice", "p": "VERB", "w": true, "sp": true },
+            { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "feeling", "l": "feel", "p": "VERB", "w": true, "sp": true },
+            { "t": "before", "l": "before", "p": "ADP", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "decide", "l": "decide", "p": "VERB", "w": true, "sp": true },
+            { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "think", "l": "think", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s4",
+          "text": "It sounds like very little, and in a sense it is.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "sounds", "l": "sound", "p": "VERB", "w": true, "sp": true },
+            { "t": "like", "l": "like", "p": "ADP", "w": true, "sp": true },
+            { "t": "very", "l": "very", "p": "ADV", "w": true, "sp": true },
+            { "t": "little", "l": "little", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "sense", "l": "sense", "p": "NOUN", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s5",
+          "text": "Under no circumstances will this make us immune.",
+          "tokens": [
+            { "t": "Under", "l": "under", "p": "ADP", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true },
+            { "t": "circumstances", "l": "circumstance", "p": "NOUN", "w": true, "sp": true },
+            { "t": "will", "l": "will", "p": "AUX", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "PRON", "w": true, "sp": true },
+            { "t": "make", "l": "make", "p": "VERB", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "immune", "l": "immune", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s6",
+          "text": "It may, however, make us slightly more expensive to convince, and that, in a crowded marketplace of voices, is no small thing.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "may", "l": "may", "p": "AUX", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "however", "l": "however", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "make", "l": "make", "p": "VERB", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "slightly", "l": "slightly", "p": "ADV", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADV", "w": true, "sp": true },
+            { "t": "expensive", "l": "expensive", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "convince", "l": "convince", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "crowded", "l": "crowded", "p": "ADJ", "w": true, "sp": true },
+            { "t": "marketplace", "l": "marketplace", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "voices", "l": "voice", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true },
+            { "t": "small", "l": "small", "p": "ADJ", "w": true, "sp": true },
+            { "t": "thing", "l": "thing", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "Inversión tras un elemento negativo o restrictivo",
+      "explanation_es": "*Rarely do we notice…*, *Not until the twentieth century did psychologists confirm…*, *Only by recognising the pattern can a listener…*, *Under no circumstances will this…*: cuando la frase empieza así, el auxiliar va delante del sujeto, como en una pregunta. Da énfasis y es propio del registro formal.",
+      "refs": ["p1s1", "p3s5", "p5s6", "p8s5"]
+    },
+    {
+      "title_es": "«Nor» al principio de la frase",
+      "explanation_es": "*Nor is the technique confined to commerce*: *nor* añade una segunda negación y también obliga a invertir.",
+      "refs": ["p4s5"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "gullible",
+      "surface": "gullible",
+      "pos": "adjective",
+      "def_en": "too ready to believe what other people say",
+      "def_es": "crédulo, ingenuo",
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "flattering",
+      "surface": "flattering",
+      "pos": "adjective",
+      "def_en": "making someone seem better than they are",
+      "def_es": "halagador",
+      "ref": "p1s4"
+    },
+    {
+      "lemma": "systematic",
+      "surface": "systematic",
+      "pos": "adjective",
+      "def_en": "done according to a careful plan",
+      "def_es": "sistemático",
+      "ref": "p2s1"
+    },
+    {
+      "lemma": "appeal to",
+      "surface": "appeal to",
+      "pos": "phrasal_verb",
+      "def_en": "to try to persuade someone by using a particular feeling or quality",
+      "def_es": "apelar a",
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "stir",
+      "surface": "stirring",
+      "pos": "verb",
+      "def_en": "to make someone feel a strong emotion",
+      "def_es": "despertar, remover",
+      "ref": "p2s4"
+    },
+    {
+      "lemma": "pity",
+      "surface": "pity",
+      "pos": "noun",
+      "def_en": "a feeling of sadness for someone who is suffering",
+      "def_es": "compasión, lástima",
+      "ref": "p2s4"
+    },
+    {
+      "lemma": "tribute",
+      "surface": "tribute",
+      "pos": "noun",
+      "def_en": "something that shows how good or lasting a thing is",
+      "def_es": "prueba, homenaje",
+      "ref": "p2s6"
+    },
+    {
+      "lemma": "assign",
+      "surface": "assigned",
+      "pos": "verb",
+      "def_en": "to give a particular value or place to something",
+      "def_es": "asignar",
+      "ref": "p3s1"
+    },
+    {
+      "lemma": "readily",
+      "surface": "readily",
+      "pos": "adverb",
+      "def_en": "quickly and without difficulty",
+      "def_es": "de buena gana, fácilmente",
+      "ref": "p3s4"
+    },
+    {
+      "lemma": "attribute",
+      "surface": "attributed",
+      "pos": "verb",
+      "def_en": "to say that something was said or done by a particular person",
+      "def_es": "atribuir",
+      "ref": "p3s5"
+    },
+    {
+      "lemma": "confine",
+      "surface": "confined",
+      "pos": "verb",
+      "def_en": "to keep within certain limits",
+      "def_es": "limitar, restringir",
+      "ref": "p4s5"
+    },
+    {
+      "lemma": "in passing",
+      "surface": "in passing",
+      "pos": "phrase",
+      "def_en": "said quickly while talking about something else",
+      "def_es": "de pasada",
+      "ref": "p4s6"
+    },
+    {
+      "lemma": "narrow",
+      "surface": "narrow",
+      "pos": "verb",
+      "def_en": "to make something smaller or more limited",
+      "def_es": "estrechar",
+      "ref": "p5s2"
+    },
+    {
+      "lemma": "vividly",
+      "surface": "vividly",
+      "pos": "adverb",
+      "def_en": "in a way that produces clear pictures in the mind",
+      "def_es": "vívidamente",
+      "ref": "p5s4"
+    },
+    {
+      "lemma": "remedy",
+      "surface": "remedy",
+      "pos": "noun",
+      "def_en": "a way of dealing with a problem",
+      "def_es": "remedio",
+      "ref": "p5s4"
+    },
+    {
+      "lemma": "convention",
+      "surface": "conventions",
+      "pos": "noun",
+      "def_en": "a usual and accepted way of doing something",
+      "def_es": "convención",
+      "ref": "p6s4"
+    },
+    {
+      "lemma": "formality",
+      "surface": "formalities",
+      "pos": "noun",
+      "def_en": "something done only because it is expected",
+      "def_es": "formalidad",
+      "ref": "p6s5"
+    },
+    {
+      "lemma": "expose",
+      "surface": "exposed",
+      "pos": "verb",
+      "def_en": "to show the truth about something that was hidden",
+      "def_es": "desenmascarar",
+      "ref": "p7s1"
+    },
+    {
+      "lemma": "hence",
+      "surface": "hence",
+      "pos": "adverb",
+      "def_en": "for this reason",
+      "def_es": "de ahí que, por tanto",
+      "ref": "p7s4"
+    },
+    {
+      "lemma": "craft",
+      "surface": "craft",
+      "pos": "noun",
+      "def_en": "a skill that needs practice",
+      "def_es": "oficio, arte",
+      "ref": "p7s4"
+    },
+    {
+      "lemma": "opt out",
+      "surface": "opt out",
+      "pos": "phrasal_verb",
+      "def_en": "to choose not to take part in something",
+      "def_es": "quedarse al margen de, excluirse",
+      "ref": "p8s2"
+    },
+    {
+      "lemma": "immune",
+      "surface": "immune",
+      "pos": "adjective",
+      "def_en": "not able to be affected by something",
+      "def_es": "inmune",
+      "ref": "p8s5"
+    },
+    {
+      "lemma": "marketplace",
+      "surface": "marketplace",
+      "pos": "noun",
+      "def_en": "a place where things compete for attention or buyers",
+      "def_es": "mercado",
+      "ref": "p8s6"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "What is the central argument of the essay?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Persuasion works mainly through logic and careful, patient reasoning with facts"
+        },
+        { "id": "b", "text": "Persuasion leans on character and emotion, and noticing this helps" },
+        { "id": "c", "text": "Rhetoric is a dishonest art that should be banned" },
+        { "id": "d", "text": "Aristotle's ideas are now out of date" }
+      ],
+      "answer": "b",
+      "evidence": ["p8s3"],
+      "rationale_es": "El carácter y la emoción pesan más de lo que creemos; darse cuenta nos hace algo más difíciles de convencer."
+    },
+    {
+      "id": "q2",
+      "type": "heading_match",
+      "phase": "skim",
+      "focus": "text_structure",
+      "prompt": "Match paragraphs 2, 4, 5 and 7 with the best heading. There is one extra heading.",
+      "paragraphs": ["p2", "p4", "p5", "p7"],
+      "headings": [
+        { "id": "a", "text": "Fear first, remedy second" },
+        { "id": "b", "text": "Three routes to belief" },
+        { "id": "c", "text": "A neutral instrument" },
+        { "id": "d", "text": "The white coat" },
+        { "id": "e", "text": "Why facts always win" }
+      ],
+      "answers": { "p2": "b", "p4": "d", "p5": "a", "p7": "c" },
+      "evidence": ["p2", "p4", "p5", "p7"],
+      "rationale_es": "El párrafo 2 presenta las tres vías; el 4, el ejemplo de la bata blanca; el 5, el patrón amenaza-remedio; el 7, la retórica como arte neutral."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "purpose_function",
+      "prompt": "Why does the writer call the picture in paragraph 1 \"flattering\"?",
+      "options": [
+        { "id": "a", "text": "Because it presents us as more rational than we are" },
+        { "id": "b", "text": "Because advertisers constantly praise their loyal customers" },
+        { "id": "c", "text": "Because Aristotle admired his audience" },
+        { "id": "d", "text": "Because it is accurate" }
+      ],
+      "answer": "a",
+      "evidence": ["p1s4"],
+      "rationale_es": "Nos gusta creer que a nosotros no nos persuaden: eso es justo lo que querría un buen persuasor."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Which did Aristotle consider close to the most powerful means of persuasion?",
+      "options": [
+        { "id": "a", "text": "Reason" },
+        { "id": "b", "text": "Emotion" },
+        { "id": "c", "text": "Character" },
+        { "id": "d", "text": "Repetition" }
+      ],
+      "answer": "c",
+      "evidence": ["p3s4"],
+      "rationale_es": "*Character… is very nearly the most powerful of the three*."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "What did experiments in the twentieth century show?",
+      "options": [
+        { "id": "a", "text": "Emotional messages are forgotten quickly" },
+        { "id": "b", "text": "Logical arguments always win in the end" },
+        { "id": "c", "text": "People trust a statement less each time it is repeated to them" },
+        { "id": "d", "text": "Who says something affects how convincing it seems" }
+      ],
+      "answer": "d",
+      "evidence": ["p3s5"],
+      "rationale_es": "La misma frase convence más si se atribuye a una fuente que el oyente ya respeta."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "vocab_in_context",
+      "prompt": "In paragraph 4, \"He is constructing a self\" means the politician is…",
+      "options": [
+        { "id": "a", "text": "building an image of who he is" },
+        { "id": "b", "text": "writing his autobiography" },
+        { "id": "c", "text": "telling lies about his opponents in the campaign" },
+        { "id": "d", "text": "explaining his policies" }
+      ],
+      "answer": "a",
+      "evidence": ["p4s7"],
+      "rationale_es": "No da razones: fabrica una imagen de sí mismo."
+    },
+    {
+      "id": "q7",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "According to the writer, the figure in the white coat presents scientific evidence.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["p4s3"],
+      "rationale_es": "*No argument is offered; none is needed*: la bata hace el trabajo de las pruebas."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "reference",
+      "prompt": "In paragraph 5, \"the two\" refers to…",
+      "options": [
+        { "id": "a", "text": "reason and emotion" },
+        { "id": "b", "text": "the threat and the remedy" },
+        { "id": "c", "text": "the speaker and the audience" },
+        { "id": "d", "text": "fear and anger" }
+      ],
+      "answer": "b",
+      "evidence": ["p5s6"],
+      "rationale_es": "Los dos pasos del patrón: la amenaza y el remedio."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "What does the writer suggest about scientific papers?",
+      "options": [
+        { "id": "a", "text": "They are entirely free of any kind of persuasion" },
+        { "id": "b", "text": "They are deliberately dishonest" },
+        { "id": "c", "text": "Their formal features also signal trustworthiness" },
+        { "id": "d", "text": "Nobody reads their references" }
+      ],
+      "answer": "c",
+      "evidence": ["p6s5"],
+      "rationale_es": "Las convenciones (cautela, referencias, instituciones) transmiten credibilidad."
+    },
+    {
+      "id": "q10",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Aristotle regarded rhetoric as immoral.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["p7s3"],
+      "rationale_es": "La consideraba moralmente neutral, como la medicina."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "Why do honest people have \"a greater duty to master the craft\"?",
+      "options": [
+        { "id": "a", "text": "Because they are naturally poor speakers in public" },
+        { "id": "b", "text": "Since being right is not enough to win people over" },
+        { "id": "c", "text": "Because the dishonest never study rhetoric" },
+        { "id": "d", "text": "Because Aristotle required it of his students" }
+      ],
+      "answer": "b",
+      "evidence": ["p7s4"],
+      "rationale_es": "Una causa justa mal defendida pierde ante una injusta bien defendida."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "attitude_opinion",
+      "prompt": "What does the writer ultimately recommend?",
+      "options": [
+        { "id": "a", "text": "Refusing to listen to advertisements" },
+        { "id": "b", "text": "Trusting only scientists" },
+        { "id": "c", "text": "Studying ancient Greek" },
+        { "id": "d", "text": "Watching the speaker and our own feelings" }
+      ],
+      "answer": "d",
+      "evidence": ["p8s3"],
+      "rationale_es": "Ir más despacio: fijarse en quién habla y en qué sentimos antes de decidir qué pensamos."
+    },
+    {
+      "id": "q13",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Aristotle wrote his work on rhetoric late in his life.",
+      "answer": "NG",
+      "allow_ng": true,
+      "evidence": ["p2s2"],
+      "rationale_es": "Se dice que enseñaba en Atenas, no en qué momento de su vida escribió sobre retórica."
+    },
+    {
+      "id": "q14",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "text_structure",
+      "prompt": "Complete the inverted sentences with one word from the text in each gap.",
+      "text": "{{1}} do we notice persuasion while it is happening. Under no {{2}} will this make us immune.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["rarely"],
+          "max_words": 1
+        },
+        {
+          "n": 2,
+          "accept": ["circumstances"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["p1s1", "p8s5"],
+      "rationale_es": "Dos inversiones: *Rarely do we…* y *Under no circumstances will…*"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 718,
+  "lemmas": [
+    "a", "about", "accord", "actually", "advertise", "advertisement", "alarm", "all", "alone", "already",
+    "alternative", "an", "and", "anger", "answer", "any", "anything", "appeal", "argue", "argument", "art",
+    "article", "as", "ask", "assign", "at", "attend", "attention", "attribute", "audience", "author", "badly",
+    "be", "become", "before", "begin", "being", "belief", "believe", "beneath", "but", "by", "can", "cause",
+    "cautious", "century", "certain", "certainly", "certainty", "change", "character", "circumstance", "coat",
+    "collection", "come", "comfortable", "commerce", "compare", "conclude", "conclusion", "confine", "confirm",
+    "consider", "construct", "convention", "convince", "course", "craft", "crowded", "cure", "decide",
+    "degree", "describe", "differently", "dishonest", "divide", "do", "dress", "dry", "duty", "efficient",
+    "emotion", "essential", "ethos", "even", "ever", "evidence", "exactly", "expensive", "experimental",
+    "expose", "famous", "fear", "feel", "feeling", "figure", "first", "flattering", "follow", "footnote",
+    "for", "formality", "frightened", "from", "generation", "generosity", "give", "good", "great", "grow",
+    "gullible", "half", "happen", "have", "he", "hearing", "hence", "him", "his", "honest", "how", "however",
+    "identical", "if", "imagine", "immune", "implication", "importance", "impossible", "impression", "in",
+    "institution", "insurance", "intention", "into", "it", "its", "itself", "journal", "judge", "just", "kind",
+    "least", "lecture", "less", "like", "list", "listener", "little", "logic", "logo", "lose", "magazine",
+    "make", "many", "marketplace", "master", "may", "mean", "medicine", "mention", "merely", "mind", "mistake",
+    "modern", "mood", "morally", "more", "most", "name", "narrow", "nearly", "need", "neutral", "never", "no",
+    "none", "nor", "not", "notice", "observe", "of", "offer", "old", "on", "only", "operate", "opt", "or",
+    "order", "ordinary", "other", "otherwise", "ourself", "out", "over", "paper", "particularly", "partly",
+    "pass", "pathos", "pattern", "people", "person", "persuade", "persuasion", "phrase", "picture", "pity",
+    "point", "poison", "political", "politician", "popular", "powerful", "powerless", "practice", "proof",
+    "psychologist", "question", "rarely", "reach", "reader", "readily", "reason", "recognize", "recommend",
+    "reference", "rely", "remedy", "repeat", "respect", "rest", "rhetoric", "roll", "same", "say",
+    "scientific", "seldom", "self", "seller", "sense", "separate", "show", "signal", "since", "skilled",
+    "sleeve", "slightly", "slow", "small", "so", "solution", "something", "sound", "source", "speak",
+    "speaker", "speech", "statement", "step", "stir", "stranger", "street", "strike", "student", "study",
+    "survive", "suspect", "system", "systematic", "technique", "tell", "tend", "term", "text", "textbook",
+    "than", "that", "the", "them", "then", "these", "they", "thing", "think", "this", "threat", "thru", "time",
+    "to", "toothpaste", "town", "travel", "tribute", "trick", "trust", "twentieth", "under", "understand",
+    "uninformed", "unjust", "until", "up", "us", "very", "vividly", "voice", "vote", "want", "we", "weigh",
+    "well", "what", "when", "where", "whether", "which", "while", "white", "who", "whoever", "why", "will",
+    "with", "work", "would"
+  ],
+  "difficulty": 1463,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7027, "A2": 0.8307, "B1": 0.9431, "B2": 0.9758, "C1": 0.9801, "C2": 1 },
+    "off_level_lemmas": [
+      "ethos", "flattering", "gullible", "immune", "marketplace", "opt", "powerless", "rhetoric", "tribute",
+      "twentieth", "uninformed", "unjust"
+    ],
+    "avg_sentence_words": 15.3,
+    "flesch_reading_ease": 60,
+    "checked_at": "2026-10-09T10:16:38.494Z"
+  }
+}

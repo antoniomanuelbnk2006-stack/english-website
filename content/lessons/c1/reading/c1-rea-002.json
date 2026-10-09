@@ -1,0 +1,1611 @@
+{
+  "id": "c1-rea-002",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "unit": "c1-u02",
+  "series": "c1-u02-scales",
+  "skill": "reading",
+  "genre": "article",
+  "title": "A sense of scale",
+  "summary_es": "Divulgación científica: por qué no podemos imaginar lo muy grande, lo muy pequeño ni lo muy antiguo, y por qué haberlo medido es una hazaña.",
+  "topic": "science-space",
+  "tags": ["ciencia", "universo", "divulgación", "nominalización"],
+  "can_do": ["R-C1-01", "R-C1-02", "R-C1-03"],
+  "grammar_focus": ["c1.nominalisation", "c1.inverted-conditionals"],
+  "vocab_focus": ["cope with", "fall back on", "out of date", "striking", "owe", "arguably"],
+  "est_minutes": 28,
+  "prediction_prompt": "Can you really imagine a light year, or a billion years? What tricks help us to picture such numbers?",
+  "pre_teach": ["intuition", "molecule"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "There is a peculiar kind of dizziness that comes from thinking seriously about size.",
+          "tokens": [
+            { "t": "There", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "peculiar", "l": "peculiar", "p": "ADJ", "w": true, "sp": true },
+            { "t": "kind", "l": "kind", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "dizziness", "l": "dizziness", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "comes", "l": "come", "p": "VERB", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "thinking", "l": "think", "p": "VERB", "w": true, "sp": true },
+            { "t": "seriously", "l": "seriously", "p": "ADV", "w": true, "sp": true },
+            { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true },
+            { "t": "size", "l": "size", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Not the size of mountains or oceans, which we can at least walk towards, but the size of things that lie entirely outside the range of our senses.",
+          "tokens": [
+            { "t": "Not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "size", "l": "size", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "mountains", "l": "mountain", "p": "NOUN", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "oceans", "l": "ocean", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "which", "l": "which", "p": "PRON", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "least", "l": "least", "p": "ADV", "w": true, "sp": true },
+            { "t": "walk", "l": "walk", "p": "VERB", "w": true, "sp": true },
+            { "t": "towards", "l": "towards", "p": "ADP", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "size", "l": "size", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "things", "l": "thing", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "lie", "l": "lie", "p": "VERB", "w": true, "sp": true },
+            { "t": "entirely", "l": "entirely", "p": "ADV", "w": true, "sp": true },
+            { "t": "outside", "l": "outside", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "range", "l": "range", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "senses", "l": "sense", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Human intuition evolved to cope with objects between, roughly, a grain of sand and a horizon.",
+          "tokens": [
+            { "t": "Human", "l": "human", "p": "ADJ", "w": true, "sp": true },
+            { "t": "intuition", "l": "intuition", "p": "NOUN", "w": true, "sp": true },
+            { "t": "evolved", "l": "evolve", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "cope", "l": "cope", "p": "VERB", "w": true, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "objects", "l": "object", "p": "NOUN", "w": true, "sp": true },
+            { "t": "between", "l": "between", "p": "ADP", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "roughly", "l": "roughly", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "grain", "l": "grain", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "sand", "l": "sand", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "horizon", "l": "horizon", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "Beyond those limits, in either direction, our imagination begins to fail, and we fall back on numbers that we can write down but cannot feel.",
+          "tokens": [
+            { "t": "Beyond", "l": "beyond", "p": "ADP", "w": true, "sp": true },
+            { "t": "those", "l": "those", "p": "DET", "w": true, "sp": true },
+            { "t": "limits", "l": "limit", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "either", "l": "either", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "direction", "l": "direction", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "imagination", "l": "imagination", "p": "NOUN", "w": true, "sp": true },
+            { "t": "begins", "l": "begin", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "fail", "l": "fail", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "fall", "l": "fall", "p": "VERB", "w": true, "sp": true },
+            { "t": "back", "l": "back", "p": "ADV", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "numbers", "l": "number", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "write", "l": "write", "p": "VERB", "w": true, "sp": true },
+            { "t": "down", "l": "down", "p": "ADP", "w": true, "sp": true },
+            { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "feel", "l": "feel", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Consider distance.",
+          "tokens": [
+            { "t": "Consider", "l": "consider", "p": "VERB", "w": true, "sp": true },
+            { "t": "distance", "l": "distance", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Light, the fastest thing there is, could circle the Earth more than seven times in a single second.",
+          "tokens": [
+            { "t": "Light", "l": "light", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "fastest", "l": "fast", "p": "ADJ", "w": true, "sp": true },
+            { "t": "thing", "l": "thing", "p": "NOUN", "w": true, "sp": true },
+            { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "could", "l": "could", "p": "AUX", "w": true, "sp": true },
+            { "t": "circle", "l": "circle", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "Earth", "l": "earth", "p": "PROPN", "w": false, "sp": true },
+            { "t": "more", "l": "more", "p": "ADJ", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "seven", "l": "seven", "p": "NUM", "w": false, "sp": true },
+            { "t": "times", "l": "time", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "single", "l": "single", "p": "ADJ", "w": true, "sp": true },
+            { "t": "second", "l": "second", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Even so, it takes eight minutes to arrive from the Sun, which means that the Sun you see is always slightly out of date.",
+          "tokens": [
+            { "t": "Even", "l": "even", "p": "ADV", "w": true, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "takes", "l": "take", "p": "VERB", "w": true, "sp": true },
+            { "t": "eight", "l": "eight", "p": "NUM", "w": false, "sp": true },
+            { "t": "minutes", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "arrive", "l": "arrive", "p": "VERB", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "Sun", "l": "sun", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "which", "l": "which", "p": "PRON", "w": true, "sp": true },
+            { "t": "means", "l": "mean", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "Sun", "l": "sun", "p": "NOUN", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "see", "l": "see", "p": "VERB", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "always", "l": "always", "p": "ADV", "w": true, "sp": true },
+            { "t": "slightly", "l": "slightly", "p": "ADV", "w": true, "sp": true },
+            { "t": "out", "l": "out", "p": "ADP", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "date", "l": "date", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Jupiter is some forty minutes away at the same speed, and the outermost planet about four hours.",
+          "tokens": [
+            { "t": "Jupiter", "l": "jupiter", "p": "PROPN", "w": false, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "forty", "l": "forty", "p": "NUM", "w": false, "sp": true },
+            { "t": "minutes", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+            { "t": "away", "l": "away", "p": "ADV", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "same", "l": "same", "p": "ADJ", "w": true, "sp": true },
+            { "t": "speed", "l": "speed", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "outermost", "l": "outermost", "p": "ADJ", "w": true, "sp": true },
+            { "t": "planet", "l": "planet", "p": "NOUN", "w": true, "sp": true },
+            { "t": "about", "l": "about", "p": "ADV", "w": true, "sp": true },
+            { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true },
+            { "t": "hours", "l": "hour", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s5",
+          "text": "The light from the next nearest star has been travelling for over four years.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "light", "l": "light", "p": "ADJ", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "next", "l": "next", "p": "ADV", "w": true, "sp": true },
+            { "t": "nearest", "l": "near", "p": "ADJ", "w": true, "sp": true },
+            { "t": "star", "l": "star", "p": "NOUN", "w": true, "sp": true },
+            { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "been", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "travelling", "l": "travel", "p": "VERB", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "over", "l": "over", "p": "ADP", "w": true, "sp": true },
+            { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true },
+            { "t": "years", "l": "year", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s6",
+          "text": "Were that star to vanish tonight, we would go on admiring it, in perfect ignorance, for another four years.",
+          "tokens": [
+            { "t": "Were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "DET", "w": true, "sp": true },
+            { "t": "star", "l": "star", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "vanish", "l": "vanish", "p": "VERB", "w": true, "sp": true },
+            { "t": "tonight", "l": "tonight", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "go", "l": "go", "p": "VERB", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "admiring", "l": "admire", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "perfect", "l": "perfect", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ignorance", "l": "ignorance", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "another", "l": "another", "p": "DET", "w": true, "sp": true },
+            { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true },
+            { "t": "years", "l": "year", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Astronomers have long recognised that statements of this kind, however accurate, tend to slide off the mind.",
+          "tokens": [
+            { "t": "Astronomers", "l": "astronomer", "p": "NOUN", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "long", "l": "long", "p": "ADV", "w": true, "sp": true },
+            { "t": "recognised", "l": "recognize", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "DET", "w": true, "sp": true },
+            { "t": "statements", "l": "statement", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "DET", "w": true, "sp": true },
+            { "t": "kind", "l": "kind", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "however", "l": "however", "p": "ADV", "w": true, "sp": true },
+            { "t": "accurate", "l": "accurate", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "tend", "l": "tend", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "slide", "l": "slide", "p": "VERB", "w": true, "sp": true },
+            { "t": "off", "l": "off", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "mind", "l": "mind", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Their solution has usually been the scale model.",
+          "tokens": [
+            { "t": "Their", "l": "their", "p": "PRON", "w": true, "sp": true },
+            { "t": "solution", "l": "solution", "p": "NOUN", "w": true, "sp": true },
+            { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "usually", "l": "usually", "p": "ADV", "w": true, "sp": true },
+            { "t": "been", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "scale", "l": "scale", "p": "NOUN", "w": true, "sp": true },
+            { "t": "model", "l": "model", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Shrink the Sun to the size of a grapefruit, and the Earth becomes a grain of salt about fifteen metres away.",
+          "tokens": [
+            { "t": "Shrink", "l": "shrink", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "Sun", "l": "sun", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "size", "l": "size", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "grapefruit", "l": "grapefruit", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "Earth", "l": "earth", "p": "PROPN", "w": false, "sp": true },
+            { "t": "becomes", "l": "become", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "grain", "l": "grain", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "salt", "l": "salt", "p": "NOUN", "w": true, "sp": true },
+            { "t": "about", "l": "about", "p": "ADV", "w": true, "sp": true },
+            { "t": "fifteen", "l": "fifteen", "p": "NUM", "w": false, "sp": true },
+            { "t": "metres", "l": "meter", "p": "NOUN", "w": true, "sp": true },
+            { "t": "away", "l": "away", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "On the same scale, the nearest star would be another grapefruit, some four thousand kilometres distant.",
+          "tokens": [
+            { "t": "On", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "same", "l": "same", "p": "ADJ", "w": true, "sp": true },
+            { "t": "scale", "l": "scale", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "nearest", "l": "near", "p": "ADJ", "w": true, "sp": true },
+            { "t": "star", "l": "star", "p": "NOUN", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "another", "l": "another", "p": "DET", "w": true, "sp": true },
+            { "t": "grapefruit", "l": "grapefruit", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true },
+            { "t": "thousand", "l": "thousand", "p": "NUM", "w": false, "sp": true },
+            { "t": "kilometres", "l": "kilometer", "p": "NOUN", "w": true, "sp": true },
+            { "t": "distant", "l": "distant", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s5",
+          "text": "The most striking feature of such a model is not the objects but the gaps between them.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "most", "l": "most", "p": "ADV", "w": true, "sp": true },
+            { "t": "striking", "l": "striking", "p": "ADJ", "w": true, "sp": true },
+            { "t": "feature", "l": "feature", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "such", "l": "such", "p": "ADJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "model", "l": "model", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "objects", "l": "object", "p": "NOUN", "w": true, "sp": true },
+            { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "gaps", "l": "gap", "p": "NOUN", "w": true, "sp": true },
+            { "t": "between", "l": "between", "p": "ADP", "w": true, "sp": true },
+            { "t": "them", "l": "them", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s6",
+          "text": "A model that included the edge of our own galaxy would no longer fit on the planet.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "model", "l": "model", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "included", "l": "include", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "edge", "l": "edge", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "own", "l": "own", "p": "ADJ", "w": true, "sp": true },
+            { "t": "galaxy", "l": "galaxy", "p": "NOUN", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true },
+            { "t": "longer", "l": "long", "p": "ADV", "w": true, "sp": true },
+            { "t": "fit", "l": "fit", "p": "VERB", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "planet", "l": "planet", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s7",
+          "text": "The universe, it turns out, consists overwhelmingly of nothing.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "universe", "l": "universe", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "turns", "l": "turn", "p": "VERB", "w": true, "sp": true },
+            { "t": "out", "l": "out", "p": "ADP", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "consists", "l": "consist", "p": "VERB", "w": true, "sp": true },
+            { "t": "overwhelmingly", "l": "overwhelmingly", "p": "ADV", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "nothing", "l": "nothing", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "The same disorientation awaits us if we travel inwards rather than outwards.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "same", "l": "same", "p": "ADJ", "w": true, "sp": true },
+            { "t": "disorientation", "l": "disorientation", "p": "NOUN", "w": true, "sp": true },
+            { "t": "awaits", "l": "await", "p": "VERB", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "if", "l": "if", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "travel", "l": "travel", "p": "VERB", "w": true, "sp": true },
+            { "t": "inwards", "l": "inwards", "p": "ADV", "w": true, "sp": true },
+            { "t": "rather", "l": "rather", "p": "ADV", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "outwards", "l": "outward", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "A single drop of water contains more molecules than there are stars in our galaxy; indeed, more than there are grains of sand on all the beaches of the world.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "single", "l": "single", "p": "ADJ", "w": true, "sp": true },
+            { "t": "drop", "l": "drop", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "water", "l": "water", "p": "NOUN", "w": true, "sp": true },
+            { "t": "contains", "l": "contain", "p": "VERB", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADJ", "w": true, "sp": true },
+            { "t": "molecules", "l": "molecule", "p": "NOUN", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "stars", "l": "star", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "galaxy", "l": "galaxy", "p": "NOUN", "w": true },
+            { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "indeed", "l": "indeed", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "more", "l": "more", "p": "ADJ", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "grains", "l": "grain", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "sand", "l": "sand", "p": "NOUN", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "beaches", "l": "beach", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "world", "l": "world", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Each of those molecules is, in turn, mostly empty space.",
+          "tokens": [
+            { "t": "Each", "l": "each", "p": "DET", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "those", "l": "those", "p": "DET", "w": true, "sp": true },
+            { "t": "molecules", "l": "molecule", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "turn", "l": "turn", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "mostly", "l": "mostly", "p": "ADV", "w": true, "sp": true },
+            { "t": "empty", "l": "empty", "p": "ADJ", "w": true, "sp": true },
+            { "t": "space", "l": "space", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "If the nucleus of an atom were enlarged to the size of a pea and placed in the centre of a football stadium, its electrons would be circling somewhere among the highest seats.",
+          "tokens": [
+            { "t": "If", "l": "if", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "nucleus", "l": "nucleus", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "atom", "l": "atom", "p": "NOUN", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "enlarged", "l": "enlarged", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "size", "l": "size", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "pea", "l": "pea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "placed", "l": "place", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "centre", "l": "center", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "football", "l": "football", "p": "NOUN", "w": true, "sp": true },
+            { "t": "stadium", "l": "stadium", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "its", "l": "its", "p": "PRON", "w": true, "sp": true },
+            { "t": "electrons", "l": "electron", "p": "NOUN", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "circling", "l": "circle", "p": "VERB", "w": true, "sp": true },
+            { "t": "somewhere", "l": "somewhere", "p": "ADV", "w": true, "sp": true },
+            { "t": "among", "l": "among", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "highest", "l": "high", "p": "ADJ", "w": true, "sp": true },
+            { "t": "seats", "l": "seat", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s5",
+          "text": "Solid matter, including the table on which this page may be resting, owes its solidity not to being full but to the forces that hold all that emptiness in shape.",
+          "tokens": [
+            { "t": "Solid", "l": "solid", "p": "ADJ", "w": true, "sp": true },
+            { "t": "matter", "l": "matter", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "including", "l": "include", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "table", "l": "table", "p": "NOUN", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "which", "l": "which", "p": "PRON", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "DET", "w": true, "sp": true },
+            { "t": "page", "l": "page", "p": "NOUN", "w": true, "sp": true },
+            { "t": "may", "l": "may", "p": "AUX", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "resting", "l": "rest", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "owes", "l": "owe", "p": "VERB", "w": true, "sp": true },
+            { "t": "its", "l": "its", "p": "PRON", "w": true, "sp": true },
+            { "t": "solidity", "l": "solidity", "p": "NOUN", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "ADV", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "being", "l": "being", "p": "AUX", "w": true, "sp": true },
+            { "t": "full", "l": "full", "p": "ADJ", "w": true, "sp": true },
+            { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "forces", "l": "force", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "hold", "l": "hold", "p": "VERB", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "DET", "w": true, "sp": true },
+            { "t": "emptiness", "l": "emptiness", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "shape", "l": "shape", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Time presents an even stiffer challenge.",
+          "tokens": [
+            { "t": "Time", "l": "time", "p": "NOUN", "w": true, "sp": true },
+            { "t": "presents", "l": "present", "p": "VERB", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "even", "l": "even", "p": "ADV", "w": true, "sp": true },
+            { "t": "stiffer", "l": "stiff", "p": "ADJ", "w": true, "sp": true },
+            { "t": "challenge", "l": "challenge", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "The usual device here is to compress the entire history of the Earth into a single year.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "usual", "l": "usual", "p": "ADJ", "w": true, "sp": true },
+            { "t": "device", "l": "device", "p": "NOUN", "w": true, "sp": true },
+            { "t": "here", "l": "here", "p": "ADV", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "compress", "l": "compress", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "entire", "l": "entire", "p": "ADJ", "w": true, "sp": true },
+            { "t": "history", "l": "history", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "Earth", "l": "earth", "p": "PROPN", "w": false, "sp": true },
+            { "t": "into", "l": "into", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "single", "l": "single", "p": "ADJ", "w": true, "sp": true },
+            { "t": "year", "l": "year", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "On this calendar, the planet forms on the first of January.",
+          "tokens": [
+            { "t": "On", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "DET", "w": true, "sp": true },
+            { "t": "calendar", "l": "calendar", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "planet", "l": "planet", "p": "NOUN", "w": true, "sp": true },
+            { "t": "forms", "l": "form", "p": "NOUN", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "first", "l": "first", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "January", "l": "january", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Life appears surprisingly early, perhaps in March, yet remains microscopic until late autumn.",
+          "tokens": [
+            { "t": "Life", "l": "life", "p": "NOUN", "w": true, "sp": true },
+            { "t": "appears", "l": "appear", "p": "VERB", "w": true, "sp": true },
+            { "t": "surprisingly", "l": "surprisingly", "p": "ADV", "w": true, "sp": true },
+            { "t": "early", "l": "early", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "perhaps", "l": "perhaps", "p": "ADV", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "March", "l": "march", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "yet", "l": "yet", "p": "ADV", "w": true, "sp": true },
+            { "t": "remains", "l": "remain", "p": "VERB", "w": true, "sp": true },
+            { "t": "microscopic", "l": "microscopic", "p": "ADJ", "w": true, "sp": true },
+            { "t": "until", "l": "until", "p": "ADP", "w": true, "sp": true },
+            { "t": "late", "l": "late", "p": "ADJ", "w": true, "sp": true },
+            { "t": "autumn", "l": "autumn", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s5",
+          "text": "The dinosaurs arrive in the middle of December and are gone by the twenty-sixth.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "dinosaurs", "l": "dinosaur", "p": "NOUN", "w": true, "sp": true },
+            { "t": "arrive", "l": "arrive", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "middle", "l": "middle", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "December", "l": "december", "p": "PROPN", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "gone", "l": "go", "p": "VERB", "w": true, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "twenty", "l": "twenty", "p": "NUM", "w": false },
+            { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+            { "t": "sixth", "l": "sixth", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s6",
+          "text": "Our own species turns up roughly half an hour before midnight on New Year's Eve.",
+          "tokens": [
+            { "t": "Our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "own", "l": "own", "p": "ADJ", "w": true, "sp": true },
+            { "t": "species", "l": "specie", "p": "NOUN", "w": true, "sp": true },
+            { "t": "turns", "l": "turn", "p": "VERB", "w": true, "sp": true },
+            { "t": "up", "l": "up", "p": "ADP", "w": true, "sp": true },
+            { "t": "roughly", "l": "roughly", "p": "ADV", "w": true, "sp": true },
+            { "t": "half", "l": "half", "p": "NOUN", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "hour", "l": "hour", "p": "NOUN", "w": true, "sp": true },
+            { "t": "before", "l": "before", "p": "ADP", "w": true, "sp": true },
+            { "t": "midnight", "l": "midnight", "p": "NOUN", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "New", "l": "new", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Year", "l": "year", "p": "NOUN", "w": true },
+            { "t": "'s", "l": "'s", "p": "PART", "w": false, "sp": true },
+            { "t": "Eve", "l": "eve", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s7",
+          "text": "The whole of recorded history, with its empires, its cathedrals and its arguments, occupies the final half-minute or so.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "whole", "l": "whole", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "recorded", "l": "record", "p": "VERB", "w": true, "sp": true },
+            { "t": "history", "l": "history", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "its", "l": "its", "p": "PRON", "w": true, "sp": true },
+            { "t": "empires", "l": "empire", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "its", "l": "its", "p": "PRON", "w": true, "sp": true },
+            { "t": "cathedrals", "l": "cathedral", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "its", "l": "its", "p": "PRON", "w": true, "sp": true },
+            { "t": "arguments", "l": "argument", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "occupies", "l": "occupy", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "final", "l": "final", "p": "ADJ", "w": true, "sp": true },
+            { "t": "half", "l": "half", "p": "NOUN", "w": true },
+            { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+            { "t": "minute", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "It would be easy to draw a gloomy conclusion from all this.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "easy", "l": "easy", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "draw", "l": "draw", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "gloomy", "l": "gloomy", "p": "ADJ", "w": true, "sp": true },
+            { "t": "conclusion", "l": "conclusion", "p": "NOUN", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Measured against such scales, a human life is an almost invisibly thin slice of an almost invisibly small place, and some writers have found the thought unbearable.",
+          "tokens": [
+            { "t": "Measured", "l": "measure", "p": "VERB", "w": true, "sp": true },
+            { "t": "against", "l": "against", "p": "ADP", "w": true, "sp": true },
+            { "t": "such", "l": "such", "p": "ADJ", "w": true, "sp": true },
+            { "t": "scales", "l": "scale", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "human", "l": "human", "p": "ADJ", "w": true, "sp": true },
+            { "t": "life", "l": "life", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "almost", "l": "almost", "p": "ADV", "w": true, "sp": true },
+            { "t": "invisibly", "l": "invisibly", "p": "ADV", "w": true, "sp": true },
+            { "t": "thin", "l": "thin", "p": "ADJ", "w": true, "sp": true },
+            { "t": "slice", "l": "slice", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "almost", "l": "almost", "p": "ADV", "w": true, "sp": true },
+            { "t": "invisibly", "l": "invisibly", "p": "ADV", "w": true, "sp": true },
+            { "t": "small", "l": "small", "p": "ADJ", "w": true, "sp": true },
+            { "t": "place", "l": "place", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "writers", "l": "writer", "p": "NOUN", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "found", "l": "find", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "thought", "l": "thought", "p": "NOUN", "w": true, "sp": true },
+            { "t": "unbearable", "l": "unbearable", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "It is, after all, the oldest of human anxieties: that we do not matter.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "oldest", "l": "old", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "human", "l": "human", "p": "ADJ", "w": true, "sp": true },
+            { "t": "anxieties", "l": "anxiety", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "matter", "l": "matter", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "Yet there is another way of looking at it, and it seems to me the more convincing one.",
+          "tokens": [
+            { "t": "Yet", "l": "yet", "p": "ADV", "w": true, "sp": true },
+            { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "another", "l": "another", "p": "DET", "w": true, "sp": true },
+            { "t": "way", "l": "way", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "looking", "l": "look", "p": "VERB", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "seems", "l": "seem", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "me", "l": "me", "p": "PRON", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADV", "w": true, "sp": true },
+            { "t": "convincing", "l": "convince", "p": "ADJ", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "The remarkable fact is not that we are small.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "remarkable", "l": "remarkable", "p": "ADJ", "w": true, "sp": true },
+            { "t": "fact", "l": "fact", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "ADV", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "small", "l": "small", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "It is that a creature so small, and so recently arrived, has managed to work any of this out.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "creature", "l": "creature", "p": "NOUN", "w": true, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "small", "l": "small", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "recently", "l": "recently", "p": "ADV", "w": true, "sp": true },
+            { "t": "arrived", "l": "arrive", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "managed", "l": "manage", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "work", "l": "work", "p": "VERB", "w": true, "sp": true },
+            { "t": "any", "l": "any", "p": "DET", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "DET", "w": true, "sp": true },
+            { "t": "out", "l": "out", "p": "ADP", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Nothing in our evolutionary past required us to know the distance to a star or the age of a rock.",
+          "tokens": [
+            { "t": "Nothing", "l": "nothing", "p": "PRON", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "evolutionary", "l": "evolutionary", "p": "ADJ", "w": true, "sp": true },
+            { "t": "past", "l": "past", "p": "ADJ", "w": true, "sp": true },
+            { "t": "required", "l": "require", "p": "VERB", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "know", "l": "know", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "distance", "l": "distance", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "star", "l": "star", "p": "NOUN", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "age", "l": "age", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "rock", "l": "rock", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s4",
+          "text": "No other animal, as far as we can tell, has ever wondered how old the ground beneath it is.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "DET", "w": true, "sp": true },
+            { "t": "other", "l": "other", "p": "ADJ", "w": true, "sp": true },
+            { "t": "animal", "l": "animal", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "as", "l": "as", "p": "ADV", "w": true, "sp": true },
+            { "t": "far", "l": "far", "p": "ADV", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "tell", "l": "tell", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "ever", "l": "ever", "p": "ADV", "w": true, "sp": true },
+            { "t": "wondered", "l": "wonder", "p": "VERB", "w": true, "sp": true },
+            { "t": "how", "l": "how", "p": "ADV", "w": true, "sp": true },
+            { "t": "old", "l": "old", "p": "ADJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "ground", "l": "ground", "p": "NOUN", "w": true, "sp": true },
+            { "t": "beneath", "l": "beneath", "p": "ADP", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s5",
+          "text": "We discovered these things anyway, using instruments built by hand and reasoning refined over a few dozen generations.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "discovered", "l": "discover", "p": "VERB", "w": true, "sp": true },
+            { "t": "these", "l": "these", "p": "DET", "w": true, "sp": true },
+            { "t": "things", "l": "thing", "p": "NOUN", "w": true, "sp": true },
+            { "t": "anyway", "l": "anyway", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "using", "l": "use", "p": "VERB", "w": true, "sp": true },
+            { "t": "instruments", "l": "instrument", "p": "NOUN", "w": true, "sp": true },
+            { "t": "built", "l": "build", "p": "VERB", "w": true, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "hand", "l": "hand", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "reasoning", "l": "reason", "p": "NOUN", "w": true, "sp": true },
+            { "t": "refined", "l": "refine", "p": "VERB", "w": true, "sp": true },
+            { "t": "over", "l": "over", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "few", "l": "few", "p": "ADJ", "w": true, "sp": true },
+            { "t": "dozen", "l": "dozen", "p": "NOUN", "w": true, "sp": true },
+            { "t": "generations", "l": "generation", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s6",
+          "text": "The measurement of the universe is, among other things, a human achievement, and arguably the least likely one of all.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "measurement", "l": "measurement", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "universe", "l": "universe", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "among", "l": "among", "p": "ADP", "w": true, "sp": true },
+            { "t": "other", "l": "other", "p": "ADJ", "w": true, "sp": true },
+            { "t": "things", "l": "thing", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "human", "l": "human", "p": "ADJ", "w": true, "sp": true },
+            { "t": "achievement", "l": "achievement", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "arguably", "l": "arguably", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "least", "l": "least", "p": "ADV", "w": true, "sp": true },
+            { "t": "likely", "l": "likely", "p": "ADJ", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "sentences": [
+        {
+          "id": "p8s1",
+          "text": "So the dizziness may be worth cultivating rather than avoiding.",
+          "tokens": [
+            { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "dizziness", "l": "dizziness", "p": "NOUN", "w": true, "sp": true },
+            { "t": "may", "l": "may", "p": "AUX", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "worth", "l": "worth", "p": "ADJ", "w": true, "sp": true },
+            { "t": "cultivating", "l": "cultivate", "p": "VERB", "w": true, "sp": true },
+            { "t": "rather", "l": "rather", "p": "ADV", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "avoiding", "l": "avoid", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s2",
+          "text": "It is the feeling of the mind reaching the edge of what it was built for, and then, with some effort, taking one further step.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "feeling", "l": "feeling", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "mind", "l": "mind", "p": "NOUN", "w": true, "sp": true },
+            { "t": "reaching", "l": "reach", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "edge", "l": "edge", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "built", "l": "build", "p": "VERB", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "then", "l": "then", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "effort", "l": "effort", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "taking", "l": "take", "p": "VERB", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "further", "l": "further", "p": "ADJ", "w": true, "sp": true },
+            { "t": "step", "l": "step", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s3",
+          "text": "Few sensations are more characteristic of our species, and none, perhaps, does it greater credit.",
+          "tokens": [
+            { "t": "Few", "l": "few", "p": "DET", "w": true, "sp": true },
+            { "t": "sensations", "l": "sensation", "p": "NOUN", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADV", "w": true, "sp": true },
+            { "t": "characteristic", "l": "characteristic", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "species", "l": "specie", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "none", "l": "none", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "perhaps", "l": "perhaps", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "does", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "greater", "l": "great", "p": "ADJ", "w": true, "sp": true },
+            { "t": "credit", "l": "credit", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "Nominalización",
+      "explanation_es": "*The measurement of the universe*, *the same disorientation*, *its solidity*: convertir verbos y adjetivos en nombres condensa la información y da al texto un tono más abstracto y formal.",
+      "refs": ["p7s6", "p4s1", "p4s5"]
+    },
+    {
+      "title_es": "Condicional invertido: Were… to…",
+      "explanation_es": "*Were that star to vanish tonight* = *If that star vanished tonight*. Sin *if* y con el verbo delante: es formal y muy propio del ensayo.",
+      "refs": ["p2s6"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "peculiar",
+      "surface": "peculiar",
+      "pos": "adjective",
+      "def_en": "strange, in a way that is hard to describe",
+      "def_es": "peculiar, extraño",
+      "ref": "p1s1"
+    },
+    {
+      "lemma": "dizziness",
+      "surface": "dizziness",
+      "pos": "noun",
+      "def_en": "the feeling that everything is spinning around you",
+      "def_es": "vértigo, mareo",
+      "ref": "p1s1"
+    },
+    {
+      "lemma": "intuition",
+      "surface": "intuition",
+      "pos": "noun",
+      "def_en": "the ability to understand something without thinking it through",
+      "def_es": "intuición",
+      "ref": "p1s3"
+    },
+    {
+      "lemma": "cope with",
+      "surface": "cope with",
+      "pos": "phrasal_verb",
+      "def_en": "to deal successfully with something difficult",
+      "def_es": "manejarse con, arreglárselas con",
+      "ref": "p1s3"
+    },
+    {
+      "lemma": "fall back on",
+      "surface": "fall back on",
+      "pos": "phrasal_verb",
+      "def_en": "to use something because nothing better is available",
+      "def_es": "recurrir a",
+      "ref": "p1s4"
+    },
+    {
+      "lemma": "out of date",
+      "surface": "out of date",
+      "pos": "phrase",
+      "def_en": "no longer showing the present situation",
+      "def_es": "desfasado, anticuado",
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "ignorance",
+      "surface": "ignorance",
+      "pos": "noun",
+      "def_en": "the state of not knowing something",
+      "def_es": "ignorancia",
+      "ref": "p2s6"
+    },
+    {
+      "lemma": "slide off",
+      "surface": "slide off",
+      "pos": "phrasal_verb",
+      "def_en": "to move smoothly off a surface without staying on it",
+      "def_es": "resbalar",
+      "ref": "p3s1"
+    },
+    {
+      "lemma": "grapefruit",
+      "surface": "grapefruit",
+      "pos": "noun",
+      "def_en": "a large round yellow fruit, like a big orange",
+      "def_es": "pomelo",
+      "ref": "p3s3"
+    },
+    {
+      "lemma": "striking",
+      "surface": "striking",
+      "pos": "adjective",
+      "def_en": "unusual enough to be noticed immediately",
+      "def_es": "llamativo",
+      "ref": "p3s5"
+    },
+    {
+      "lemma": "overwhelmingly",
+      "surface": "overwhelmingly",
+      "pos": "adverb",
+      "def_en": "almost completely",
+      "def_es": "abrumadoramente",
+      "ref": "p3s7"
+    },
+    {
+      "lemma": "disorientation",
+      "surface": "disorientation",
+      "pos": "noun",
+      "def_en": "the feeling of not knowing where you are",
+      "def_es": "desorientación",
+      "ref": "p4s1"
+    },
+    {
+      "lemma": "molecule",
+      "surface": "molecules",
+      "pos": "noun",
+      "def_en": "the smallest unit of a substance",
+      "def_es": "molécula",
+      "ref": "p4s2"
+    },
+    {
+      "lemma": "nucleus",
+      "surface": "nucleus",
+      "pos": "noun",
+      "def_en": "the central part of an atom",
+      "def_es": "núcleo",
+      "ref": "p4s4"
+    },
+    {
+      "lemma": "owe",
+      "surface": "owes",
+      "pos": "verb",
+      "def_en": "to have something because of something else",
+      "def_es": "deber (algo a algo)",
+      "ref": "p4s5"
+    },
+    {
+      "lemma": "stiff",
+      "surface": "stiffer",
+      "pos": "adjective",
+      "def_en": "here: difficult, severe",
+      "def_es": "duro, exigente",
+      "ref": "p5s1"
+    },
+    {
+      "lemma": "compress",
+      "surface": "compress",
+      "pos": "verb",
+      "def_en": "to press something into a smaller space",
+      "def_es": "comprimir",
+      "ref": "p5s2"
+    },
+    {
+      "lemma": "microscopic",
+      "surface": "microscopic",
+      "pos": "adjective",
+      "def_en": "too small to be seen without a microscope",
+      "def_es": "microscópico",
+      "ref": "p5s4"
+    },
+    {
+      "lemma": "gloomy",
+      "surface": "gloomy",
+      "pos": "adjective",
+      "def_en": "sad and without hope",
+      "def_es": "sombrío, pesimista",
+      "ref": "p6s1"
+    },
+    {
+      "lemma": "unbearable",
+      "surface": "unbearable",
+      "pos": "adjective",
+      "def_en": "too painful or unpleasant to accept",
+      "def_es": "insoportable",
+      "ref": "p6s2"
+    },
+    {
+      "lemma": "refine",
+      "surface": "refined",
+      "pos": "verb",
+      "def_en": "to improve something gradually by small changes",
+      "def_es": "perfeccionar, afinar",
+      "ref": "p7s5"
+    },
+    {
+      "lemma": "arguably",
+      "surface": "arguably",
+      "pos": "adverb",
+      "def_en": "used when giving an opinion you believe can be defended",
+      "def_es": "posiblemente, se podría decir que",
+      "ref": "p7s6"
+    },
+    {
+      "lemma": "cultivate",
+      "surface": "cultivating",
+      "pos": "verb",
+      "def_en": "to try to develop something",
+      "def_es": "cultivar",
+      "ref": "p8s1"
+    },
+    {
+      "lemma": "do someone credit",
+      "surface": "does it greater credit",
+      "pos": "phrase",
+      "def_en": "to give people a reason to admire someone",
+      "def_es": "honrar, hacer honor a",
+      "ref": "p8s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "What is the writer's main purpose?",
+      "options": [
+        { "id": "a", "text": "To argue that human beings are insignificant in every possible sense" },
+        { "id": "b", "text": "To convey extreme scales and present our grasp of them as remarkable" },
+        { "id": "c", "text": "To explain how telescopes work" },
+        { "id": "d", "text": "To criticise science writers" }
+      ],
+      "answer": "b",
+      "evidence": ["p7s6"],
+      "rationale_es": "Intenta hacer sentir las escalas y concluye que haberlas medido es un logro humano."
+    },
+    {
+      "id": "q2",
+      "type": "heading_match",
+      "phase": "skim",
+      "focus": "text_structure",
+      "prompt": "Match paragraphs 2, 4, 5 and 7 with the best heading. There is one extra heading.",
+      "paragraphs": ["p2", "p4", "p5", "p7"],
+      "headings": [
+        { "id": "a", "text": "Deep time on a calendar" },
+        { "id": "b", "text": "The emptiness inside matter" },
+        { "id": "c", "text": "An unlikely achievement" },
+        { "id": "d", "text": "Old light" },
+        { "id": "e", "text": "The limits of telescopes" }
+      ],
+      "answers": { "p2": "d", "p4": "b", "p5": "a", "p7": "c" },
+      "evidence": ["p2", "p4", "p5", "p7"],
+      "rationale_es": "El párrafo 2 trata de la luz que llega con retraso; el 4, del vacío de la materia; el 5, del calendario de la Tierra; el 7, del logro de haberlo medido."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "According to paragraph 1, why do we struggle with very large and very small sizes?",
+      "options": [
+        { "id": "a", "text": "Schools teach mathematics badly in most countries nowadays" },
+        { "id": "b", "text": "Our intuition developed for everyday-sized objects" },
+        { "id": "c", "text": "Numbers are imprecise" },
+        { "id": "d", "text": "Scientists disagree about measurements" }
+      ],
+      "answer": "b",
+      "evidence": ["p1s3"],
+      "rationale_es": "Nuestra intuición evolucionó para objetos entre un grano de arena y el horizonte."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "What point is made by the star that might \"vanish tonight\"?",
+      "options": [
+        { "id": "a", "text": "Stars often disappear without any warning at all" },
+        { "id": "b", "text": "We see distant objects as they were, not as they are" },
+        { "id": "c", "text": "Astronomers make frequent errors" },
+        { "id": "d", "text": "Starlight is unreliable for navigation" }
+      ],
+      "answer": "b",
+      "evidence": ["p2s6"],
+      "rationale_es": "Su luz tarda cuatro años: lo que vemos es el pasado."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "vocab_in_context",
+      "prompt": "In paragraph 3, statements that \"slide off the mind\" are statements that…",
+      "options": [
+        { "id": "a", "text": "are easy to remember" },
+        { "id": "b", "text": "are deliberately misleading and false" },
+        { "id": "c", "text": "fail to make a lasting impression" },
+        { "id": "d", "text": "are too simple" }
+      ],
+      "answer": "c",
+      "evidence": ["p3s1"],
+      "rationale_es": "Son ciertas, pero resbalan: no dejan huella."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What does the writer find most striking about the scale model?",
+      "options": [
+        { "id": "a", "text": "The size of the Sun" },
+        { "id": "b", "text": "The speed of light" },
+        { "id": "c", "text": "The colour of the stars" },
+        { "id": "d", "text": "How far apart everything is" }
+      ],
+      "answer": "d",
+      "evidence": ["p3s5"],
+      "rationale_es": "*Not the objects but the gaps between them*."
+    },
+    {
+      "id": "q7",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "According to the text, a table is solid because its atoms are tightly packed with matter.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["p4s5"],
+      "rationale_es": "Lo debe a las fuerzas que mantienen en su forma todo ese vacío, no a estar llena."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "reference",
+      "prompt": "In paragraph 5, \"this calendar\" refers to…",
+      "options": [
+        { "id": "a", "text": "the calendar used by modern professional astronomers" },
+        { "id": "b", "text": "an ancient calendar" },
+        { "id": "c", "text": "the history of the Earth squeezed into one year" },
+        { "id": "d", "text": "the eras of the dinosaurs" }
+      ],
+      "answer": "c",
+      "evidence": ["p5s3"],
+      "rationale_es": "Remite al recurso de la frase anterior: comprimir toda la historia de la Tierra en un año."
+    },
+    {
+      "id": "q9",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "On the compressed calendar, living things stay extremely small for most of the year.",
+      "answer": "T",
+      "allow_ng": true,
+      "evidence": ["p5s4"],
+      "rationale_es": "La vida aparece hacia marzo y sigue siendo microscópica hasta finales de otoño."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "Why does the writer mention \"its empires, its cathedrals and its arguments\"?",
+      "options": [
+        { "id": "a", "text": "To stress how much human activity fits into a tiny span" },
+        { "id": "b", "text": "To criticise religion" },
+        { "id": "c", "text": "To list the most important events in the history of mankind" },
+        { "id": "d", "text": "To show history is dull" }
+      ],
+      "answer": "a",
+      "evidence": ["p5s7"],
+      "rationale_es": "Todo lo que llamamos historia cabe en el último medio minuto."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "attitude_opinion",
+      "prompt": "How does the writer respond to the \"gloomy conclusion\"?",
+      "options": [
+        { "id": "a", "text": "He fully agrees with it" },
+        { "id": "b", "text": "He ignores it" },
+        { "id": "c", "text": "He finds it frightening" },
+        { "id": "d", "text": "He admits it but prefers a brighter view" }
+      ],
+      "answer": "d",
+      "evidence": ["p6s4"],
+      "rationale_es": "Reconoce que es fácil sacarla, pero le convence más otra lectura."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "purpose_function",
+      "prompt": "What is the function of the final paragraph?",
+      "options": [
+        { "id": "a", "text": "To introduce a completely new and unrelated topic for discussion" },
+        { "id": "b", "text": "To summarise the scale model" },
+        { "id": "c", "text": "To recast the opening dizziness as something positive" },
+        { "id": "d", "text": "To apologise for the numbers" }
+      ],
+      "answer": "c",
+      "evidence": ["p8s1"],
+      "rationale_es": "Vuelve al vértigo del principio y lo convierte en algo que merece la pena cultivar."
+    },
+    {
+      "id": "q13",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "The writer is a professional astronomer.",
+      "answer": "NG",
+      "allow_ng": true,
+      "evidence": ["p3s1"],
+      "rationale_es": "Habla de los astrónomos en tercera persona, pero no dice a qué se dedica."
+    },
+    {
+      "id": "q14",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "vocab_in_context",
+      "prompt": "Complete with one word from the text in each gap.",
+      "text": "Human intuition evolved to {{1}} with objects of everyday size. The measurement of the universe is a human {{2}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["cope"],
+          "max_words": 1
+        },
+        {
+          "n": 2,
+          "accept": ["achievement"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["p1s3", "p7s6"],
+      "rationale_es": "*Cope with* = manejarse con; *achievement* = logro."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 721,
+  "lemmas": [
+    "a", "about", "accurate", "achievement", "admire", "after", "against", "age", "all", "almost", "always",
+    "among", "an", "and", "animal", "another", "anxiety", "any", "anyway", "appear", "arguably", "argument",
+    "arrive", "as", "astronomer", "at", "atom", "autumn", "avoid", "await", "away", "back", "be", "beach",
+    "become", "before", "begin", "being", "beneath", "between", "beyond", "build", "but", "by", "calendar",
+    "can", "cathedral", "center", "challenge", "characteristic", "circle", "come", "compress", "conclusion",
+    "consider", "consist", "contain", "convince", "cope", "could", "creature", "credit", "cultivate", "date",
+    "device", "dinosaur", "direction", "discover", "disorientation", "distance", "distant", "dizziness", "do",
+    "down", "dozen", "draw", "drop", "each", "early", "easy", "edge", "effort", "either", "electron", "empire",
+    "emptiness", "empty", "enlarged", "entire", "entirely", "even", "ever", "evolutionary", "evolve", "fact",
+    "fail", "fall", "far", "fast", "feature", "feel", "feeling", "few", "final", "find", "first", "fit",
+    "football", "for", "force", "form", "from", "full", "further", "galaxy", "gap", "generation", "gloomy",
+    "go", "grain", "grapefruit", "great", "ground", "half", "hand", "have", "here", "high", "history", "hold",
+    "horizon", "hour", "how", "however", "human", "if", "ignorance", "imagination", "in", "include", "indeed",
+    "instrument", "into", "intuition", "invisibly", "inwards", "it", "its", "kilometer", "kind", "know",
+    "late", "least", "lie", "life", "light", "likely", "limit", "long", "look", "manage", "matter", "may",
+    "me", "mean", "measure", "measurement", "meter", "microscopic", "middle", "midnight", "mind", "minute",
+    "model", "molecule", "more", "most", "mostly", "mountain", "near", "new", "next", "no", "none", "not",
+    "nothing", "nucleus", "number", "object", "occupy", "ocean", "of", "off", "old", "on", "or", "other",
+    "our", "out", "outermost", "outside", "outward", "over", "overwhelmingly", "owe", "own", "page", "past",
+    "pea", "peculiar", "perfect", "perhaps", "place", "planet", "present", "range", "rather", "reach",
+    "reason", "recently", "recognize", "record", "refine", "remain", "remarkable", "require", "rest", "rock",
+    "roughly", "salt", "same", "sand", "scale", "seat", "second", "see", "seem", "sensation", "sense",
+    "seriously", "shape", "shrink", "single", "sixth", "size", "slice", "slide", "slightly", "small", "so",
+    "solid", "solidity", "solution", "some", "somewhere", "space", "specie", "speed", "stadium", "star",
+    "statement", "step", "stiff", "striking", "such", "sun", "surprisingly", "table", "take", "tell", "tend",
+    "than", "that", "the", "their", "them", "then", "there", "these", "thin", "thing", "think", "this",
+    "those", "thought", "time", "to", "tonight", "towards", "travel", "turn", "unbearable", "universe",
+    "until", "up", "us", "use", "usual", "usually", "vanish", "walk", "water", "way", "we", "what", "which",
+    "whole", "with", "wonder", "work", "world", "worth", "would", "write", "writer", "year", "yet", "you"
+  ],
+  "difficulty": 1476,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7357, "A2": 0.8743, "B1": 0.9457, "B2": 0.97, "C1": 0.9743, "C2": 1 },
+    "off_level_lemmas": [
+      "arguably", "disorientation", "dizziness", "emptiness", "enlarged", "evolutionary", "galaxy",
+      "invisibly", "inwards", "outermost", "overwhelmingly", "refine", "sixth", "specie"
+    ],
+    "avg_sentence_words": 17.2,
+    "flesch_reading_ease": 66.4,
+    "checked_at": "2026-10-09T10:16:38.494Z"
+  }
+}
