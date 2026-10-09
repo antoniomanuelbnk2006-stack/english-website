@@ -1,0 +1,1013 @@
+{
+  "id": "b1-lis-002",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "b1-u08",
+  "series": "b1-u08-shared-flat",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "A room in a shared flat",
+  "summary_es": "Emma va a ver una habitación en un piso compartido: Ryan le enseña la casa y le explica el alquiler, los gastos y las normas.",
+  "topic": "city-housing",
+  "tags": ["vivienda", "piso compartido", "alquiler", "comparativos"],
+  "can_do": ["L-B1-02", "L-B1-06", "L-B1-07"],
+  "grammar_focus": ["b1.comparison-as-as"],
+  "vocab_focus": ["share", "rent", "bills", "deposit", "take turns", "I'd better"],
+  "est_minutes": 14,
+  "prediction_prompt": "Someone is looking for a room in a shared flat. What questions would you ask before moving in?",
+  "pre_teach": ["rent", "bills", "deposit"],
+  "speakers": [
+    { "id": "ryan", "name": "Ryan", "accent": "en-US", "gender": "male" },
+    { "id": "emma", "name": "Emma", "accent": "en-GB", "gender": "female" }
+  ],
+  "target_wpm": 140,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "ryan",
+      "text": "Hi, you must be Emma. Come in! I'm Ryan.",
+      "tokens": [
+        { "t": "Hi", "l": "hi", "p": "INTJ", "w": false, "s": 0.038, "e": 0.284 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 0.284, "e": 0.612 },
+        { "t": "must", "l": "must", "p": "AUX", "w": true, "sp": true, "s": 0.611, "e": 1.02 },
+        { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 1.021, "e": 1.267 },
+        { "t": "Emma", "l": "emma", "p": "PROPN", "w": false, "s": 1.266, "e": 1.675 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Come", "l": "come", "p": "VERB", "w": true, "sp": true, "s": 1.676, "e": 2.085 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "s": 2.085, "e": 2.331 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 2.331, "e": 2.659 },
+        { "t": "Ryan", "l": "ryan", "p": "PROPN", "w": false, "s": 2.659, "e": 3.068 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 3.112
+    },
+    {
+      "id": "s2",
+      "speaker": "emma",
+      "text": "Hi Ryan. Thanks for letting me see the room today.",
+      "tokens": [
+        { "t": "Hi", "l": "hi", "p": "INTJ", "w": false, "sp": true, "s": 3.559, "e": 3.964 },
+        { "t": "Ryan", "l": "ryan", "p": "PROPN", "w": false, "s": 3.964, "e": 4.639 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Thanks", "l": "thanks", "p": "NOUN", "w": true, "sp": true, "s": 5.049, "e": 5.51 },
+        { "t": "for", "l": "for", "p": "SCONJ", "w": true, "sp": true, "s": 5.51, "e": 5.773 },
+        { "t": "letting", "l": "let", "p": "VERB", "w": true, "sp": true, "s": 5.773, "e": 6.3 },
+        { "t": "me", "l": "me", "p": "PRON", "w": true, "sp": true, "s": 6.3, "e": 6.498 },
+        { "t": "see", "l": "see", "p": "VERB", "w": true, "sp": true, "s": 6.498, "e": 6.761 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 6.761, "e": 7.024 },
+        { "t": "room", "l": "room", "p": "NOUN", "w": true, "sp": true, "s": 7.025, "e": 7.354 },
+        { "t": "today", "l": "today", "p": "NOUN", "w": true, "s": 7.354, "e": 7.749 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.512,
+      "end": 7.867
+    },
+    {
+      "id": "s3",
+      "speaker": "ryan",
+      "text": "No problem. So, this is the living room. We share it with two other people.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "DET", "w": true, "sp": true, "s": 8.295, "e": 8.539 },
+        { "t": "problem", "l": "problem", "p": "NOUN", "w": true, "s": 8.539, "e": 9.19 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "So", "l": "so", "p": "ADV", "w": true, "s": 9.19, "e": 9.434 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "this", "l": "this", "p": "PRON", "w": true, "sp": true, "s": 9.434, "e": 9.841 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 9.841, "e": 10.085 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 10.086, "e": 10.412 },
+        { "t": "living", "l": "living", "p": "ADJ", "w": true, "sp": true, "s": 10.411, "e": 10.981 },
+        { "t": "room", "l": "room", "p": "NOUN", "w": true, "s": 10.981, "e": 11.388 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 11.388, "e": 11.632 },
+        { "t": "share", "l": "share", "p": "VERB", "w": true, "sp": true, "s": 11.632, "e": 12.12 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 12.12, "e": 12.364 },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 12.364, "e": 12.771 },
+        { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true, "s": 12.771, "e": 13.097 },
+        { "t": "other", "l": "other", "p": "ADJ", "w": true, "sp": true, "s": 13.097, "e": 13.585 },
+        { "t": "people", "l": "people", "p": "NOUN", "w": true, "s": 13.585, "e": 14.155 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.267,
+      "end": 14.257
+    },
+    {
+      "id": "s4",
+      "speaker": "emma",
+      "text": "It's bigger than I expected. Who else lives here?",
+      "tokens": [
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 14.684, "e": 14.88 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 14.88, "e": 15.075 },
+        { "t": "bigger", "l": "big", "p": "ADJ", "w": true, "sp": true, "s": 15.075, "e": 15.623 },
+        { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true, "s": 15.623, "e": 16.014 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 16.014, "e": 16.17 },
+        { "t": "expected", "l": "expect", "p": "VERB", "w": true, "s": 16.17, "e": 16.874 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Who", "l": "who", "p": "PRON", "w": true, "sp": true, "s": 17.364, "e": 17.67 },
+        { "t": "else", "l": "else", "p": "ADV", "w": true, "sp": true, "s": 17.67, "e": 18.053 },
+        { "t": "lives", "l": "live", "p": "VERB", "w": true, "sp": true, "s": 18.053, "e": 18.512 },
+        { "t": "here", "l": "here", "p": "ADV", "w": true, "s": 18.512, "e": 18.895 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 14.657,
+      "end": 18.995
+    },
+    {
+      "id": "s5",
+      "speaker": "ryan",
+      "text": "There's Carla, who's a nurse, and Tom. He works from home, so he's here most of the day.",
+      "tokens": [
+        { "t": "There", "l": "there", "p": "PRON", "w": true, "s": 19.432, "e": 19.894 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 19.894, "e": 20.079 },
+        { "t": "Carla", "l": "carla", "p": "PROPN", "w": false, "s": 20.079, "e": 20.564 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "who", "l": "who", "p": "PRON", "w": true, "s": 20.564, "e": 20.855 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 20.855, "e": 21.049 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 21.049, "e": 21.211 },
+        { "t": "nurse", "l": "nurse", "p": "NOUN", "w": true, "s": 21.21, "e": 21.695 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 21.695, "e": 22.018 },
+        { "t": "Tom", "l": "tom", "p": "PROPN", "w": false, "s": 22.019, "e": 22.342 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "He", "l": "he", "p": "PRON", "w": true, "sp": true, "s": 22.342, "e": 22.585 },
+        { "t": "works", "l": "work", "p": "VERB", "w": true, "sp": true, "s": 22.585, "e": 23.07 },
+        { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true, "s": 23.07, "e": 23.474 },
+        { "t": "home", "l": "home", "p": "NOUN", "w": true, "s": 23.474, "e": 23.878 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 23.878, "e": 24.121 },
+        { "t": "he", "l": "he", "p": "PRON", "w": true, "s": 24.12, "e": 24.322 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 24.322, "e": 24.524 },
+        { "t": "here", "l": "here", "p": "ADV", "w": true, "sp": true, "s": 24.525, "e": 24.929 },
+        { "t": "most", "l": "most", "p": "ADJ", "w": true, "sp": true, "s": 24.929, "e": 25.333 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 25.333, "e": 25.576 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 25.575, "e": 25.898 },
+        { "t": "day", "l": "day", "p": "NOUN", "w": true, "s": 25.899, "e": 26.222 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.395,
+      "end": 26.376
+    },
+    {
+      "id": "s6",
+      "speaker": "emma",
+      "text": "Is it noisy during the week?",
+      "tokens": [
+        { "t": "Is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 26.8, "e": 27.058 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 27.058, "e": 27.317 },
+        { "t": "noisy", "l": "noisy", "p": "ADJ", "w": true, "sp": true, "s": 27.319, "e": 27.837 },
+        { "t": "during", "l": "during", "p": "ADP", "w": true, "sp": true, "s": 27.837, "e": 28.442 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 28.442, "e": 28.788 },
+        { "t": "week", "l": "week", "p": "NOUN", "w": true, "s": 28.788, "e": 29.22 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.776,
+      "end": 29.387
+    },
+    {
+      "id": "s7",
+      "speaker": "ryan",
+      "text": "Not really. Carla works nights, so we try to be quiet in the mornings.",
+      "tokens": [
+        { "t": "Not", "l": "not", "p": "PART", "w": true, "sp": true, "s": 29.814, "e": 30.125 },
+        { "t": "really", "l": "really", "p": "ADV", "w": true, "s": 30.125, "e": 30.67 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Carla", "l": "carla", "p": "PROPN", "w": false, "sp": true, "s": 30.67, "e": 31.137 },
+        { "t": "works", "l": "work", "p": "VERB", "w": true, "sp": true, "s": 31.137, "e": 31.604 },
+        { "t": "nights", "l": "night", "p": "NOUN", "w": true, "s": 31.603, "e": 32.148 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 32.148, "e": 32.381 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 32.381, "e": 32.614 },
+        { "t": "try", "l": "try", "p": "VERB", "w": true, "sp": true, "s": 32.615, "e": 32.926 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 32.926, "e": 33.159 },
+        { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 33.159, "e": 33.392 },
+        { "t": "quiet", "l": "quiet", "p": "ADJ", "w": true, "sp": true, "s": 33.393, "e": 33.86 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 33.859, "e": 34.092 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 34.093, "e": 34.404 },
+        { "t": "mornings", "l": "morning", "p": "NOUN", "w": true, "s": 34.404, "e": 35.104 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 29.787,
+      "end": 35.145
+    },
+    {
+      "id": "s8",
+      "speaker": "emma",
+      "text": "That's fine. I'm usually out by eight anyway.",
+      "tokens": [
+        { "t": "That", "l": "that", "p": "PRON", "w": true, "s": 35.577, "e": 35.957 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 35.957, "e": 36.147 },
+        { "t": "fine", "l": "fine", "p": "ADJ", "w": true, "s": 36.147, "e": 36.554 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 36.553, "e": 36.878 },
+        { "t": "usually", "l": "usually", "p": "ADV", "w": true, "sp": true, "s": 36.879, "e": 37.53 },
+        { "t": "out", "l": "out", "p": "ADP", "w": true, "sp": true, "s": 37.53, "e": 37.855 },
+        { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true, "s": 37.855, "e": 38.099 },
+        { "t": "eight", "l": "eight", "p": "NUM", "w": false, "sp": true, "s": 38.099, "e": 38.587 },
+        { "t": "anyway", "l": "anyway", "p": "ADV", "w": true, "s": 38.587, "e": 39.157 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.545,
+      "end": 39.409
+    },
+    {
+      "id": "s9",
+      "speaker": "ryan",
+      "text": "Great. And this is the room. It isn't as big as mine, but it gets a lot of light.",
+      "tokens": [
+        { "t": "Great", "l": "great", "p": "ADJ", "w": true, "s": 39.847, "e": 40.323 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 40.323, "e": 40.64 },
+        { "t": "this", "l": "this", "p": "PRON", "w": true, "sp": true, "s": 40.641, "e": 41.038 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 41.037, "e": 41.275 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 41.275, "e": 41.592 },
+        { "t": "room", "l": "room", "p": "NOUN", "w": true, "s": 41.593, "e": 41.99 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 41.99, "e": 42.228 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "s": 42.228, "e": 42.418 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 42.418, "e": 42.704 },
+        { "t": "as", "l": "as", "p": "ADV", "w": true, "sp": true, "s": 42.704, "e": 42.942 },
+        { "t": "big", "l": "big", "p": "ADJ", "w": true, "sp": true, "s": 42.942, "e": 43.259 },
+        { "t": "as", "l": "as", "p": "ADP", "w": true, "sp": true, "s": 43.259, "e": 43.497 },
+        { "t": "mine", "l": "mine", "p": "PRON", "w": true, "s": 43.498, "e": 43.895 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 43.894, "e": 44.211 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 44.212, "e": 44.45 },
+        { "t": "gets", "l": "get", "p": "VERB", "w": true, "sp": true, "s": 44.45, "e": 44.847 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 44.847, "e": 45.006 },
+        { "t": "lot", "l": "lot", "p": "NOUN", "w": true, "sp": true, "s": 45.005, "e": 45.322 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 45.323, "e": 45.561 },
+        { "t": "light", "l": "light", "p": "ADJ", "w": true, "s": 45.561, "e": 46.037 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 39.809,
+      "end": 46.093
+    },
+    {
+      "id": "s10",
+      "speaker": "emma",
+      "text": "Oh, I like it. Is the furniture included?",
+      "tokens": [
+        { "t": "Oh", "l": "oh", "p": "INTJ", "w": false, "s": 46.54, "e": 46.841 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 46.841, "e": 47.042 },
+        { "t": "like", "l": "like", "p": "VERB", "w": true, "sp": true, "s": 47.041, "e": 47.542 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 47.543, "e": 47.844 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 47.843, "e": 48.144 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 48.144, "e": 48.545 },
+        { "t": "furniture", "l": "furniture", "p": "NOUN", "w": true, "sp": true, "s": 48.545, "e": 49.548 },
+        { "t": "included", "l": "include", "p": "VERB", "w": true, "s": 49.548, "e": 50.45 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.493,
+      "end": 50.604
+    },
+    {
+      "id": "s11",
+      "speaker": "ryan",
+      "text": "The bed and the desk are. You'd have to bring your own chair.",
+      "tokens": [
+        { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true, "s": 51.034, "e": 51.293 },
+        { "t": "bed", "l": "bed", "p": "NOUN", "w": true, "sp": true, "s": 51.293, "e": 51.552 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 51.552, "e": 51.811 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 51.812, "e": 52.071 },
+        { "t": "desk", "l": "desk", "p": "NOUN", "w": true, "sp": true, "s": 52.071, "e": 52.395 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "s": 52.395, "e": 52.654 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "You", "l": "you", "p": "PRON", "w": true, "s": 52.824, "e": 53.026 },
+        { "t": "'d", "l": "would", "p": "AUX", "w": true, "sp": true, "s": 53.026, "e": 53.16 },
+        { "t": "have", "l": "have", "p": "VERB", "w": true, "sp": true, "s": 53.16, "e": 53.44 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 53.44, "e": 53.608 },
+        { "t": "bring", "l": "bring", "p": "VERB", "w": true, "sp": true, "s": 53.608, "e": 53.944 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 53.944, "e": 54.224 },
+        { "t": "own", "l": "own", "p": "ADJ", "w": true, "sp": true, "s": 54.224, "e": 54.448 },
+        { "t": "chair", "l": "chair", "p": "NOUN", "w": true, "s": 54.448, "e": 54.784 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 51.004,
+      "end": 54.927
+    },
+    {
+      "id": "s12",
+      "speaker": "emma",
+      "text": "OK. And how much is the rent?",
+      "tokens": [
+        { "t": "OK", "l": "ok", "p": "INTJ", "w": false, "s": 55.374, "e": 55.67 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 55.67, "e": 56.064 },
+        { "t": "how", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 56.064, "e": 56.458 },
+        { "t": "much", "l": "much", "p": "ADJ", "w": true, "sp": true, "s": 56.458, "e": 56.951 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 56.951, "e": 57.247 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 57.247, "e": 57.641 },
+        { "t": "rent", "l": "rent", "p": "NOUN", "w": true, "s": 57.641, "e": 58.134 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 55.327,
+      "end": 58.33
+    },
+    {
+      "id": "s13",
+      "speaker": "ryan",
+      "text": "It's four hundred and fifty a month, plus bills.",
+      "tokens": [
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 58.762, "e": 58.936 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 58.936, "e": 59.11 },
+        { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true, "s": 59.11, "e": 59.458 },
+        { "t": "hundred", "l": "hundred", "p": "NUM", "w": false, "sp": true, "s": 59.458, "e": 60.015 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 60.014, "e": 60.292 },
+        { "t": "fifty", "l": "fifty", "p": "NUM", "w": false, "sp": true, "s": 60.293, "e": 60.71 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 60.71, "e": 60.849 },
+        { "t": "month", "l": "month", "p": "NOUN", "w": true, "s": 60.849, "e": 61.266 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "plus", "l": "plus", "p": "CCONJ", "w": true, "sp": true, "s": 61.267, "e": 61.615 },
+        { "t": "bills", "l": "bill", "p": "NOUN", "w": true, "s": 61.615, "e": 62.032 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 58.73,
+      "end": 62.186
+    },
+    {
+      "id": "s14",
+      "speaker": "emma",
+      "text": "How much are the bills, more or less?",
+      "tokens": [
+        { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 62.614, "e": 62.932 },
+        { "t": "much", "l": "much", "p": "ADJ", "w": true, "sp": true, "s": 62.932, "e": 63.329 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 63.329, "e": 63.647 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 63.647, "e": 63.965 },
+        { "t": "bills", "l": "bill", "p": "NOUN", "w": true, "s": 63.965, "e": 64.442 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "more", "l": "more", "p": "ADJ", "w": true, "sp": true, "s": 64.441, "e": 64.838 },
+        { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true, "s": 64.838, "e": 65.076 },
+        { "t": "less", "l": "less", "p": "ADJ", "w": true, "s": 65.077, "e": 65.474 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.586,
+      "end": 65.654
+    },
+    {
+      "id": "s15",
+      "speaker": "ryan",
+      "text": "About sixty each. That covers electricity, water and the internet.",
+      "tokens": [
+        { "t": "About", "l": "about", "p": "ADP", "w": true, "sp": true, "s": 66.086, "e": 66.559 },
+        { "t": "sixty", "l": "sixty", "p": "NUM", "w": false, "sp": true, "s": 66.559, "e": 67.032 },
+        { "t": "each", "l": "each", "p": "DET", "w": true, "s": 67.033, "e": 67.428 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "That", "l": "that", "p": "PRON", "w": true, "sp": true, "s": 67.427, "e": 67.822 },
+        { "t": "covers", "l": "cover", "p": "VERB", "w": true, "sp": true, "s": 67.822, "e": 68.374 },
+        { "t": "electricity", "l": "electricity", "p": "NOUN", "w": true, "s": 68.374, "e": 69.321 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "water", "l": "water", "p": "NOUN", "w": true, "sp": true, "s": 69.321, "e": 69.794 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 69.795, "e": 70.111 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 70.11, "e": 70.426 },
+        { "t": "internet", "l": "internet", "p": "NOUN", "w": true, "s": 70.426, "e": 71.136 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 66.054,
+      "end": 71.348
+    },
+    {
+      "id": "s16",
+      "speaker": "emma",
+      "text": "So just over five hundred in total. That's cheaper than my flat now.",
+      "tokens": [
+        { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 71.776, "e": 72.028 },
+        { "t": "just", "l": "just", "p": "ADV", "w": true, "sp": true, "s": 72.028, "e": 72.448 },
+        { "t": "over", "l": "over", "p": "ADP", "w": true, "sp": true, "s": 72.448, "e": 72.868 },
+        { "t": "five", "l": "five", "p": "NUM", "w": false, "sp": true, "s": 72.868, "e": 73.288 },
+        { "t": "hundred", "l": "hundred", "p": "NUM", "w": false, "sp": true, "s": 73.288, "e": 73.96 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 73.96, "e": 74.212 },
+        { "t": "total", "l": "total", "p": "ADJ", "w": true, "s": 74.212, "e": 74.716 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "That", "l": "that", "p": "PRON", "w": true, "s": 75.316, "e": 75.661 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 75.661, "e": 75.834 },
+        { "t": "cheaper", "l": "cheap", "p": "ADJ", "w": true, "sp": true, "s": 75.834, "e": 76.427 },
+        { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true, "s": 76.427, "e": 76.797 },
+        { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 76.797, "e": 77.019 },
+        { "t": "flat", "l": "flat", "p": "ADV", "w": true, "sp": true, "s": 77.019, "e": 77.389 },
+        { "t": "now", "l": "now", "p": "ADV", "w": true, "s": 77.39, "e": 77.686 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 71.748,
+      "end": 77.809
+    },
+    {
+      "id": "s17",
+      "speaker": "ryan",
+      "text": "There's also a deposit of one month's rent. You get it back when you leave.",
+      "tokens": [
+        { "t": "There", "l": "there", "p": "PRON", "w": true, "s": 78.241, "e": 78.692 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 78.692, "e": 78.872 },
+        { "t": "also", "l": "also", "p": "ADV", "w": true, "sp": true, "s": 78.872, "e": 79.266 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 79.266, "e": 79.424 },
+        { "t": "deposit", "l": "deposit", "p": "NOUN", "w": true, "sp": true, "s": 79.424, "e": 80.055 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 80.054, "e": 80.291 },
+        { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true, "s": 80.291, "e": 80.606 },
+        { "t": "month", "l": "month", "p": "NOUN", "w": true, "s": 80.606, "e": 81.057 },
+        { "t": "'s", "l": "'s", "p": "PART", "w": false, "sp": true, "s": 81.057, "e": 81.237 },
+        { "t": "rent", "l": "rent", "p": "NOUN", "w": true, "s": 81.237, "e": 81.631 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 81.861, "e": 82.084 },
+        { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true, "s": 82.084, "e": 82.307 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 82.307, "e": 82.474 },
+        { "t": "back", "l": "back", "p": "ADV", "w": true, "sp": true, "s": 82.475, "e": 82.754 },
+        { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true, "s": 82.754, "e": 83.033 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 83.033, "e": 83.256 },
+        { "t": "leave", "l": "leave", "p": "VERB", "w": true, "s": 83.256, "e": 83.591 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 78.209,
+      "end": 83.832
+    },
+    {
+      "id": "s18",
+      "speaker": "emma",
+      "text": "Of course. Are there any house rules?",
+      "tokens": [
+        { "t": "Of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 84.26, "e": 84.485 },
+        { "t": "course", "l": "course", "p": "NOUN", "w": true, "s": 84.485, "e": 85.01 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 85.01, "e": 85.31 },
+        { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true, "s": 85.31, "e": 85.76 },
+        { "t": "any", "l": "any", "p": "DET", "w": true, "sp": true, "s": 85.76, "e": 86.06 },
+        { "t": "house", "l": "house", "p": "NOUN", "w": true, "sp": true, "s": 86.06, "e": 86.51 },
+        { "t": "rules", "l": "rule", "p": "NOUN", "w": true, "s": 86.51, "e": 86.96 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 84.232,
+      "end": 87.22
+    },
+    {
+      "id": "s19",
+      "speaker": "ryan",
+      "text": "Just a few. We take turns to clean the kitchen and bathroom every week.",
+      "tokens": [
+        { "t": "Just", "l": "just", "p": "ADV", "w": true, "sp": true, "s": 87.665, "e": 88.046 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 88.046, "e": 88.198 },
+        { "t": "few", "l": "few", "p": "NOUN", "w": true, "s": 88.198, "e": 88.503 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 88.503, "e": 88.731 },
+        { "t": "take", "l": "take", "p": "VERB", "w": true, "sp": true, "s": 88.731, "e": 89.112 },
+        { "t": "turns", "l": "turn", "p": "VERB", "w": true, "sp": true, "s": 89.112, "e": 89.569 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 89.569, "e": 89.797 },
+        { "t": "clean", "l": "clean", "p": "VERB", "w": true, "sp": true, "s": 89.797, "e": 90.254 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 90.254, "e": 90.559 },
+        { "t": "kitchen", "l": "kitchen", "p": "NOUN", "w": true, "sp": true, "s": 90.558, "e": 91.167 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 91.168, "e": 91.473 },
+        { "t": "bathroom", "l": "bathroom", "p": "NOUN", "w": true, "sp": true, "s": 91.472, "e": 92.157 },
+        { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true, "s": 92.157, "e": 92.614 },
+        { "t": "week", "l": "week", "p": "NOUN", "w": true, "s": 92.614, "e": 92.995 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 87.62,
+      "end": 93.147
+    },
+    {
+      "id": "s20",
+      "speaker": "emma",
+      "text": "That sounds fair. And what about guests?",
+      "tokens": [
+        { "t": "That", "l": "that", "p": "PRON", "w": true, "sp": true, "s": 93.588, "e": 93.979 },
+        { "t": "sounds", "l": "sound", "p": "VERB", "w": true, "sp": true, "s": 93.979, "e": 94.527 },
+        { "t": "fair", "l": "fair", "p": "ADJ", "w": true, "s": 94.527, "e": 94.918 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 95.308, "e": 95.641 },
+        { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true, "s": 95.641, "e": 96.057 },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true, "s": 96.057, "e": 96.556 },
+        { "t": "guests", "l": "guest", "p": "NOUN", "w": true, "s": 96.556, "e": 97.138 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 93.547,
+      "end": 97.24
+    },
+    {
+      "id": "s21",
+      "speaker": "ryan",
+      "text": "Friends can stay at the weekend, but we ask the others first.",
+      "tokens": [
+        { "t": "Friends", "l": "friend", "p": "NOUN", "w": true, "sp": true, "s": 97.677, "e": 98.227 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 98.227, "e": 98.502 },
+        { "t": "stay", "l": "stay", "p": "VERB", "w": true, "sp": true, "s": 98.502, "e": 98.846 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 98.846, "e": 99.052 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 99.052, "e": 99.327 },
+        { "t": "weekend", "l": "weekend", "p": "NOUN", "w": true, "s": 99.327, "e": 99.877 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 100.017, "e": 100.297 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 100.297, "e": 100.507 },
+        { "t": "ask", "l": "ask", "p": "VERB", "w": true, "sp": true, "s": 100.507, "e": 100.787 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 100.787, "e": 101.067 },
+        { "t": "others", "l": "other", "p": "NOUN", "w": true, "sp": true, "s": 101.067, "e": 101.557 },
+        { "t": "first", "l": "first", "p": "ADJ", "w": true, "s": 101.557, "e": 101.977 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 97.639,
+      "end": 102.058
+    },
+    {
+      "id": "s22",
+      "speaker": "emma",
+      "text": "I'm happy with that. When is the room free?",
+      "tokens": [
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 102.485, "e": 102.685 },
+        { "t": "happy", "l": "happy", "p": "ADJ", "w": true, "sp": true, "s": 102.685, "e": 102.985 },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 102.985, "e": 103.235 },
+        { "t": "that", "l": "that", "p": "DET", "w": true, "s": 103.235, "e": 103.485 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "When", "l": "when", "p": "ADV", "w": true, "sp": true, "s": 103.635, "e": 104.117 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 104.117, "e": 104.406 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 104.406, "e": 104.791 },
+        { "t": "room", "l": "room", "p": "NOUN", "w": true, "sp": true, "s": 104.791, "e": 105.273 },
+        { "t": "free", "l": "free", "p": "ADJ", "w": true, "s": 105.273, "e": 105.755 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 102.458,
+      "end": 105.948
+    },
+    {
+      "id": "s23",
+      "speaker": "ryan",
+      "text": "From the first of next month. Two other people are coming to see it tomorrow, though.",
+      "tokens": [
+        { "t": "From", "l": "from", "p": "ADP", "w": true, "sp": true, "s": 106.376, "e": 106.744 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 106.744, "e": 107.038 },
+        { "t": "first", "l": "first", "p": "ADJ", "w": true, "sp": true, "s": 107.039, "e": 107.481 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 107.48, "e": 107.701 },
+        { "t": "next", "l": "next", "p": "ADJ", "w": true, "sp": true, "s": 107.701, "e": 108.069 },
+        { "t": "month", "l": "month", "p": "NOUN", "w": true, "s": 108.069, "e": 108.511 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Two", "l": "two", "p": "NUM", "w": false, "sp": true, "s": 108.511, "e": 108.805 },
+        { "t": "other", "l": "other", "p": "ADJ", "w": true, "sp": true, "s": 108.805, "e": 109.247 },
+        { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true, "s": 109.247, "e": 109.762 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 109.762, "e": 110.056 },
+        { "t": "coming", "l": "come", "p": "VERB", "w": true, "sp": true, "s": 110.057, "e": 110.572 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 110.572, "e": 110.793 },
+        { "t": "see", "l": "see", "p": "VERB", "w": true, "sp": true, "s": 110.793, "e": 111.087 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 111.087, "e": 111.308 },
+        { "t": "tomorrow", "l": "tomorrow", "p": "NOUN", "w": true, "s": 111.308, "e": 111.971 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "though", "l": "though", "p": "SCONJ", "w": true, "s": 111.971, "e": 112.486 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 106.348,
+      "end": 112.626
+    },
+    {
+      "id": "s24",
+      "speaker": "emma",
+      "text": "Then I'd better decide quickly. Can I tell you tonight?",
+      "tokens": [
+        { "t": "Then", "l": "then", "p": "ADV", "w": true, "sp": true, "s": 113.072, "e": 113.469 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "s": 113.469, "e": 113.575 },
+        { "t": "'d", "l": "would", "p": "AUX", "w": true, "sp": true, "s": 113.575, "e": 113.786 },
+        { "t": "better", "l": "better", "p": "ADV", "w": true, "sp": true, "s": 113.786, "e": 114.341 },
+        { "t": "decide", "l": "decide", "p": "VERB", "w": true, "sp": true, "s": 114.342, "e": 114.897 },
+        { "t": "quickly", "l": "quickly", "p": "ADV", "w": true, "s": 114.897, "e": 115.532 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 116.092, "e": 116.386 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 116.386, "e": 116.533 },
+        { "t": "tell", "l": "tell", "p": "VERB", "w": true, "sp": true, "s": 116.533, "e": 116.9 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 116.9, "e": 117.194 },
+        { "t": "tonight", "l": "tonight", "p": "NOUN", "w": true, "s": 117.194, "e": 117.782 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 113.026,
+      "end": 117.883
+    },
+    {
+      "id": "s25",
+      "speaker": "ryan",
+      "text": "Sure. Send me a message before ten and the room is yours.",
+      "tokens": [
+        { "t": "Sure", "l": "sure", "p": "ADJ", "w": true, "s": 118.321, "e": 118.693 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Send", "l": "send", "p": "VERB", "w": true, "sp": true, "s": 118.693, "e": 119.065 },
+        { "t": "me", "l": "me", "p": "PRON", "w": true, "sp": true, "s": 119.066, "e": 119.289 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 119.289, "e": 119.438 },
+        { "t": "message", "l": "message", "p": "NOUN", "w": true, "sp": true, "s": 119.438, "e": 120.034 },
+        { "t": "before", "l": "before", "p": "ADP", "w": true, "sp": true, "s": 120.034, "e": 120.555 },
+        { "t": "ten", "l": "ten", "p": "NUM", "w": false, "sp": true, "s": 120.555, "e": 120.853 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 120.853, "e": 121.151 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 121.151, "e": 121.449 },
+        { "t": "room", "l": "room", "p": "NOUN", "w": true, "sp": true, "s": 121.448, "e": 121.82 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 121.821, "e": 122.044 },
+        { "t": "yours", "l": "yours", "p": "PRON", "w": true, "s": 122.044, "e": 122.491 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 118.284,
+      "end": 122.543
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s1",
+      "phrase": "you must be Emma",
+      "type": "elision",
+      "ipa": "/ju ˈmʌs bi ˈemə/",
+      "explanation_es": "La *t* de *must* desaparece delante de *be*."
+    },
+    {
+      "ref": "s2",
+      "phrase": "Thanks for letting me",
+      "type": "weak_form",
+      "ipa": "/ˈθæŋks fə ˈletɪŋ mi/",
+      "explanation_es": "*for* es débil: /fə/."
+    },
+    {
+      "ref": "s9",
+      "phrase": "It isn't as big as mine",
+      "type": "weak_form",
+      "ipa": "/ɪt ˈɪznt əz ˈbɪɡ əz ˈmaɪn/",
+      "explanation_es": "Los dos *as* son débiles (/əz/): solo se oye bien *big*."
+    },
+    {
+      "ref": "s11",
+      "phrase": "You'd have to bring",
+      "type": "contraction",
+      "ipa": "/jud ˈhæftə ˈbrɪŋ/",
+      "explanation_es": "*You'd* = *you would*, y *have to* suena /ˈhæftə/."
+    },
+    {
+      "ref": "s13",
+      "phrase": "four hundred and fifty",
+      "type": "weak_form",
+      "ipa": "/ˈfɔː ˈhʌndrəd ən ˈfɪfti/",
+      "explanation_es": "*and* se reduce a /ən/."
+    },
+    {
+      "ref": "s17",
+      "phrase": "a deposit of one month's rent",
+      "type": "weak_form",
+      "ipa": "/ə dɪˈpɒzɪt əv ˈwʌn ˈmʌnθs ˈrent/",
+      "explanation_es": "*of* es débil (/əv/) y se une a *one*."
+    },
+    {
+      "ref": "s24",
+      "phrase": "I'd better decide",
+      "type": "contraction",
+      "ipa": "/aɪd ˈbetə dɪˈsaɪd/",
+      "explanation_es": "*I'd better* = *I had better* («más vale que…»). La *d* apenas se oye."
+    },
+    {
+      "ref": "s25",
+      "phrase": "Send me a message",
+      "type": "assimilation",
+      "ipa": "/ˈsem mi ə ˈmesɪdʒ/",
+      "explanation_es": "La *d* de *send* se funde con la *m* de *me*."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "share",
+      "surface": "share",
+      "pos": "verb",
+      "def_en": "to use something together with other people",
+      "def_es": "compartir",
+      "ref": "s3"
+    },
+    {
+      "lemma": "noisy",
+      "surface": "noisy",
+      "pos": "adjective",
+      "def_en": "making a lot of sound",
+      "def_es": "ruidoso",
+      "ref": "s6"
+    },
+    {
+      "lemma": "furniture",
+      "surface": "furniture",
+      "pos": "noun",
+      "def_en": "things like beds, tables and chairs",
+      "def_es": "muebles",
+      "ref": "s10"
+    },
+    {
+      "lemma": "rent",
+      "surface": "rent",
+      "pos": "noun",
+      "def_en": "the money you pay every month to live in a place",
+      "def_es": "alquiler",
+      "ref": "s12"
+    },
+    {
+      "lemma": "bill",
+      "surface": "bills",
+      "pos": "noun",
+      "def_en": "what you pay for electricity, water, internet and so on",
+      "def_es": "facturas, gastos",
+      "ref": "s13"
+    },
+    {
+      "lemma": "cover",
+      "surface": "covers",
+      "pos": "verb",
+      "def_en": "to include; to be enough to pay for something",
+      "def_es": "cubrir, incluir",
+      "ref": "s15"
+    },
+    {
+      "lemma": "deposit",
+      "surface": "deposit",
+      "pos": "noun",
+      "def_en": "money you pay at the start and get back when you leave",
+      "def_es": "fianza",
+      "ref": "s17"
+    },
+    {
+      "lemma": "take turns",
+      "surface": "take turns",
+      "pos": "phrase",
+      "def_en": "to do something one after the other",
+      "def_es": "turnarse",
+      "ref": "s19"
+    },
+    {
+      "lemma": "fair",
+      "surface": "fair",
+      "pos": "adjective",
+      "def_en": "right and reasonable for everyone",
+      "def_es": "justo",
+      "ref": "s20"
+    },
+    {
+      "lemma": "guest",
+      "surface": "guests",
+      "pos": "noun",
+      "def_en": "a person who comes to stay at your home",
+      "def_es": "invitado",
+      "ref": "s20"
+    },
+    {
+      "lemma": "had better",
+      "surface": "I'd better",
+      "pos": "phrase",
+      "def_en": "it is a good idea for me to do this now",
+      "def_es": "más vale que…",
+      "ref": "s24"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "Why has Emma come to the flat?",
+      "options": [
+        { "id": "a", "text": "To visit a friend" },
+        { "id": "b", "text": "To look at a room she might rent" },
+        { "id": "c", "text": "To fix something in the kitchen" }
+      ],
+      "answer": "b",
+      "evidence": ["s2"],
+      "rationale_es": "Viene a ver una habitación para alquilarla."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "attitude_opinion",
+      "prompt": "How does Emma feel about the flat in general?",
+      "options": [
+        { "id": "a", "text": "She likes it" },
+        { "id": "b", "text": "She thinks it is too expensive" },
+        { "id": "c", "text": "She is not sure about the flatmates" }
+      ],
+      "answer": "a",
+      "evidence": ["s10", "s20"],
+      "rationale_es": "Le gusta la habitación, le parece más barata que su piso y las normas le parecen justas."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "How many people live in the flat at the moment?",
+      "options": [
+        { "id": "a", "text": "2" },
+        { "id": "b", "text": "3" },
+        { "id": "c", "text": "4" }
+      ],
+      "answer": "b",
+      "evidence": ["s3"],
+      "rationale_es": "Ryan y otras dos personas: Carla y Tom. Tres en total."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "Why do they try to be quiet in the mornings?",
+      "options": [
+        { "id": "a", "text": "Because Tom works from home" },
+        { "id": "b", "text": "Because the neighbours complain" },
+        { "id": "c", "text": "Because Carla sleeps then" }
+      ],
+      "answer": "c",
+      "evidence": ["s7"],
+      "rationale_es": "Carla trabaja de noche, así que duerme por la mañana. No lo dice con esas palabras: hay que deducirlo."
+    },
+    {
+      "id": "q5",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "The room Emma sees is bigger than Ryan's room.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["s9"],
+      "rationale_es": "*It isn't as big as mine*: es más pequeña que la de Ryan."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What would Emma need to bring?",
+      "options": [
+        { "id": "a", "text": "A chair" },
+        { "id": "b", "text": "A table" },
+        { "id": "c", "text": "A bed" }
+      ],
+      "answer": "a",
+      "evidence": ["s11"],
+      "rationale_es": "La cama y el escritorio están incluidos; la silla, no."
+    },
+    {
+      "id": "q7",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentence with a number.",
+      "text": "The rent is {{1}} a month, plus bills.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["450", "four hundred and fifty", "four hundred fifty"],
+          "max_words": 4
+        }
+      ],
+      "evidence": ["s13"],
+      "rationale_es": "*Four hundred and fifty*: 450. *Fifty* (50), no *fifteen* (15)."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "About how much would Emma pay each month in total?",
+      "options": [
+        { "id": "a", "text": "About 450" },
+        { "id": "b", "text": "About 460" },
+        { "id": "c", "text": "About 510" }
+      ],
+      "answer": "c",
+      "evidence": ["s15", "s16"],
+      "rationale_es": "450 de alquiler más unos 60 de gastos: *just over five hundred*."
+    },
+    {
+      "id": "q9",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Emma will get the deposit back when she leaves.",
+      "answer": "T",
+      "allow_ng": true,
+      "evidence": ["s17"],
+      "rationale_es": "*You get it back when you leave*."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What is the rule about guests?",
+      "options": [
+        { "id": "a", "text": "No guests are allowed in the flat" },
+        { "id": "b", "text": "Guests can stay whenever they like, any day" },
+        { "id": "c", "text": "Weekend guests are fine if others agree" }
+      ],
+      "answer": "c",
+      "evidence": ["s21"],
+      "rationale_es": "Pueden quedarse el fin de semana, pero preguntando antes a los demás."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "Why does Ryan mention the two other people?",
+      "options": [
+        { "id": "a", "text": "To make Emma decide soon" },
+        { "id": "b", "text": "To tell her the room is already taken" },
+        { "id": "c", "text": "To invite her to meet them tomorrow" }
+      ],
+      "answer": "a",
+      "evidence": ["s23"],
+      "rationale_es": "Le avisa de que hay más interesados: Emma entiende que tiene que darse prisa."
+    },
+    {
+      "id": "q12",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Emma has until ten tonight to say yes.",
+      "answer": "T",
+      "allow_ng": true,
+      "evidence": ["s25"],
+      "rationale_es": "*Send me a message before ten and the room is yours*."
+    },
+    {
+      "id": "q13",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s9",
+      "reference": "Great. And this is the room. It isn't as big as mine, but it gets a lot of light.",
+      "accept_variants": ["Great. And this is the room. It is not as big as mine, but it gets a lot of light."],
+      "evidence": ["s9"],
+      "rationale_es": "Los dos *as* casi no se oyen: /əz ˈbɪɡ əz/."
+    },
+    {
+      "id": "q14",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s11",
+      "reference": "The bed and the desk are. You'd have to bring your own chair.",
+      "accept_variants": ["The bed and the desk are. You would have to bring your own chair."],
+      "evidence": ["s11"],
+      "rationale_es": "*You'd* y *have to* (/ˈhæftə/) van muy reducidos."
+    },
+    {
+      "id": "q15",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s24",
+      "reference": "Then I'd better decide quickly. Can I tell you tonight?",
+      "accept_variants": ["Then I had better decide quickly. Can I tell you tonight?"],
+      "evidence": ["s24"],
+      "rationale_es": "En *I'd better* la *d* apenas se oye."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "about", "also", "and", "any", "anyway", "as", "ask", "at", "back", "bathroom", "be", "bed", "before",
+    "better", "big", "bill", "bring", "but", "by", "can", "chair", "cheap", "clean", "come", "course", "cover",
+    "day", "decide", "deposit", "desk", "during", "each", "electricity", "else", "every", "expect", "fair",
+    "few", "fine", "first", "flat", "for", "free", "friend", "from", "furniture", "get", "great", "guest",
+    "happy", "have", "he", "here", "home", "house", "how", "i", "in", "include", "internet", "it", "just",
+    "kitchen", "leave", "less", "let", "light", "like", "live", "living", "lot", "me", "message", "mine",
+    "month", "more", "morning", "most", "much", "must", "my", "next", "night", "no", "noisy", "not", "now",
+    "nurse", "of", "or", "other", "out", "over", "own", "people", "plus", "problem", "quickly", "quiet",
+    "really", "rent", "room", "rule", "see", "send", "share", "so", "sound", "stay", "sure", "take", "tell",
+    "than", "thanks", "that", "the", "then", "there", "this", "though", "to", "today", "tomorrow", "tonight",
+    "total", "try", "turn", "usually", "water", "we", "week", "weekend", "what", "when", "who", "with", "work",
+    "would", "you", "your", "yours"
+  ],
+  "difficulty": 1072,
+  "qa": {
+    "coverage_by_level": { "A1": 0.9283, "A2": 0.9887, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 5.7,
+    "flesch_reading_ease": 98.7,
+    "checked_at": "2026-10-09T10:03:43.120Z"
+  },
+  "audio": {
+    "src": "audio/b1/b1-lis-002/v1.m4a",
+    "duration_s": 122.543,
+    "wpm": 136,
+    "provider": "kokoro",
+    "voices": { "ryan": "am_puck", "emma": "bf_isabella" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      0.89, 0.92, 0.48, 0.53, 0.49, 0.49, 0.1, 0.55, 0.54, 0.1, 0.65, 0.72, 0.75, 0.73, 0.39, 0.04, 0.8, 0.9,
+      0.53, 0.59, 0.45, 0.5, 0.3, 0.37, 0.63, 0.46, 0.47, 0.32, 0.43, 0.86, 0.52, 0.47, 0.34, 0.21, 0.99, 0.6,
+      0.41, 0.02, 0.77, 1, 0.6, 0.44, 0.39, 0.45, 0.41, 0.72, 0.46, 0.42, 0.38, 0.41, 0.46, 0.36, 0.88, 0.84,
+      0.72, 0.45, 0.35, 0.05, 0.8, 0.71, 0.37, 0.8, 0.55, 0.56, 0.65, 0.52, 0.64, 0.28, 0.23, 0.84, 0.96, 0.38,
+      0.6, 1, 0.58, 0.89, 0.24, 0.01, 0.91, 0.78, 0.69, 0.57, 0.39, 0.61, 0.51, 0.48, 0.48, 0.56, 0.61, 0.48,
+      0.13, 0.74, 0.53, 0.46, 0.52, 0.83, 0.55, 0.41, 0.3, 0.06, 0.91, 0.54, 0.52, 0.66, 0.7, 0.39, 0.43, 0.33,
+      0.9, 0.43, 0.68, 0.81, 0.78, 0.4, 0.01, 0.81, 1, 0.57, 0.56, 0.66, 0.43, 0.26, 0.38, 0.78, 0.67, 0.56,
+      0.54, 0.44, 0.43, 1, 0.94, 0.39, 0.82, 0.65, 0.55, 0.38, 0.68, 0.47, 0.3, 0.4, 0.73, 0.75, 0.49, 0.58,
+      0.54, 0.5, 0.19, 0.75, 0.49, 0.52, 0.51, 0.38, 0.04, 0.8, 0.98, 0.5, 0.55, 0.46, 0.46, 0.57, 0.81, 0.84,
+      0.37, 0.31, 0.01, 0.86, 0.58, 0.65, 0.44, 0.48, 0.37, 0.89, 1, 0.75, 0.85, 0.62, 0.5, 0.59, 0.81, 0.99,
+      0.42, 0.34, 0.06, 0.84, 0.55, 0.39, 0.71, 0.9, 0.75, 0.29, 0.09, 0.96, 0.73, 0.59, 0.49, 0.47, 0.87,
+      0.46, 0.45, 0.38, 0.88, 0.73, 0.27, 0.48, 0.85, 0.96, 0.37, 0.09, 0.7, 0.68, 0.78, 0.48, 0.29, 0.87, 0.5,
+      0.52, 0.4, 0.45, 0.51, 0.37, 0.23, 1, 0.63, 0.73, 0.77, 0.7, 0.17, 0.56, 0.73, 0.58, 0.38, 0.23, 0.89,
+      0.79, 0.35, 0.63, 0.65, 0.44, 0.39, 0.42
+    ]
+  }
+}

@@ -1,0 +1,983 @@
+{
+  "id": "b1-lis-004",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "b1-u07",
+  "series": "b1-u07-sleep",
+  "skill": "listening",
+  "genre": "interview",
+  "title": "Why can't I sleep?",
+  "summary_es": "En un programa de radio, una médica explica por qué dormimos menos que antes y qué pequeños cambios ayudan a dormir mejor.",
+  "topic": "health",
+  "tags": ["salud", "sueño", "hábitos", "used to"],
+  "can_do": ["L-B1-04", "L-B1-05", "L-B1-06", "L-B1-07"],
+  "grammar_focus": ["b1.used-to-would"],
+  "vocab_focus": ["used to", "average", "avoid", "routine", "make a difference"],
+  "est_minutes": 14,
+  "prediction_prompt": "A doctor gives advice about sleeping better. What advice do you expect to hear?",
+  "pre_teach": ["average", "routine"],
+  "speakers": [
+    { "id": "mark", "name": "Mark", "accent": "en-GB", "gender": "male" },
+    { "id": "anna", "name": "Anna", "accent": "en-US", "gender": "female" }
+  ],
+  "target_wpm": 140,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "mark",
+      "text": "Welcome back. Today we're talking about sleep with Doctor Anna Lee.",
+      "tokens": [
+        { "t": "Welcome", "l": "welcome", "p": "ADJ", "w": true, "sp": true, "s": 0.028, "e": 0.736 },
+        { "t": "back", "l": "back", "p": "ADV", "w": true, "s": 0.736, "e": 1.178 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Today", "l": "today", "p": "NOUN", "w": true, "sp": true, "s": 1.588, "e": 2.073 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "s": 2.073, "e": 2.267 },
+        { "t": "'re", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 2.267, "e": 2.558 },
+        { "t": "talking", "l": "talk", "p": "VERB", "w": true, "sp": true, "s": 2.557, "e": 3.203 },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true, "s": 3.203, "e": 3.688 },
+        { "t": "sleep", "l": "sleep", "p": "NOUN", "w": true, "sp": true, "s": 3.688, "e": 4.173 },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 4.172, "e": 4.576 },
+        { "t": "Doctor", "l": "doctor", "p": "NOUN", "w": true, "sp": true, "s": 4.576, "e": 5.141 },
+        { "t": "Anna", "l": "anna", "p": "PROPN", "w": false, "sp": true, "s": 5.141, "e": 5.545 },
+        { "t": "Lee", "l": "lee", "p": "PROPN", "w": false, "s": 5.545, "e": 5.868 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 5.927
+    },
+    {
+      "id": "s2",
+      "speaker": "mark",
+      "text": "Anna, do people sleep less than they used to?",
+      "tokens": [
+        { "t": "Anna", "l": "anna", "p": "PROPN", "w": false, "s": 6.22, "e": 6.679 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 6.859, "e": 7.082 },
+        { "t": "people", "l": "people", "p": "VERB", "w": true, "sp": true, "s": 7.082, "e": 7.604 },
+        { "t": "sleep", "l": "sleep", "p": "NOUN", "w": true, "sp": true, "s": 7.604, "e": 8.05 },
+        { "t": "less", "l": "less", "p": "ADJ", "w": true, "sp": true, "s": 8.05, "e": 8.421 },
+        { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true, "s": 8.421, "e": 8.793 },
+        { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true, "s": 8.793, "e": 9.165 },
+        { "t": "used", "l": "use", "p": "VERB", "w": true, "sp": true, "s": 9.165, "e": 9.537 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "s": 9.537, "e": 9.759 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.177,
+      "end": 9.815
+    },
+    {
+      "id": "s3",
+      "speaker": "anna",
+      "text": "Yes, a little. Fifty years ago, most adults used to sleep about eight hours a night.",
+      "tokens": [
+        { "t": "Yes", "l": "yes", "p": "INTJ", "w": false, "s": 10.258, "e": 10.599 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 10.599, "e": 10.77 },
+        { "t": "little", "l": "little", "p": "NOUN", "w": true, "s": 10.77, "e": 11.367 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Fifty", "l": "fifty", "p": "NUM", "w": false, "sp": true, "s": 11.367, "e": 11.879 },
+        { "t": "years", "l": "year", "p": "NOUN", "w": true, "sp": true, "s": 11.879, "e": 12.391 },
+        { "t": "ago", "l": "ago", "p": "ADV", "w": true, "s": 12.391, "e": 12.732 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "most", "l": "most", "p": "ADJ", "w": true, "sp": true, "s": 12.732, "e": 13.159 },
+        { "t": "adults", "l": "adult", "p": "NOUN", "w": true, "sp": true, "s": 13.158, "e": 13.755 },
+        { "t": "used", "l": "use", "p": "VERB", "w": true, "sp": true, "s": 13.756, "e": 14.183 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 14.182, "e": 14.438 },
+        { "t": "sleep", "l": "sleep", "p": "VERB", "w": true, "sp": true, "s": 14.438, "e": 14.95 },
+        { "t": "about", "l": "about", "p": "ADV", "w": true, "sp": true, "s": 14.95, "e": 15.462 },
+        { "t": "eight", "l": "eight", "p": "NUM", "w": false, "sp": true, "s": 15.462, "e": 15.974 },
+        { "t": "hours", "l": "hour", "p": "NOUN", "w": true, "sp": true, "s": 15.974, "e": 16.486 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 16.486, "e": 16.657 },
+        { "t": "night", "l": "night", "p": "NOUN", "w": true, "s": 16.656, "e": 17.168 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.215,
+      "end": 17.206
+    },
+    {
+      "id": "s4",
+      "speaker": "mark",
+      "text": "And now?",
+      "tokens": [
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 17.631, "e": 18.176 },
+        { "t": "now", "l": "now", "p": "ADV", "w": true, "s": 18.176, "e": 18.721 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.606,
+      "end": 18.768
+    },
+    {
+      "id": "s5",
+      "speaker": "anna",
+      "text": "Now the average is closer to seven, and many people get less than six.",
+      "tokens": [
+        { "t": "Now", "l": "now", "p": "ADV", "w": true, "sp": true, "s": 19.196, "e": 19.508 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 19.508, "e": 19.82 },
+        { "t": "average", "l": "average", "p": "ADJ", "w": true, "sp": true, "s": 19.82, "e": 20.444 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 20.444, "e": 20.678 },
+        { "t": "closer", "l": "close", "p": "ADV", "w": true, "sp": true, "s": 20.678, "e": 21.224 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 21.224, "e": 21.458 },
+        { "t": "seven", "l": "seven", "p": "NUM", "w": false, "s": 21.458, "e": 21.926 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 22.386, "e": 22.671 },
+        { "t": "many", "l": "many", "p": "ADJ", "w": true, "sp": true, "s": 22.671, "e": 23.027 },
+        { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true, "s": 23.027, "e": 23.525 },
+        { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true, "s": 23.525, "e": 23.81 },
+        { "t": "less", "l": "less", "p": "ADJ", "w": true, "sp": true, "s": 23.81, "e": 24.166 },
+        { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true, "s": 24.165, "e": 24.521 },
+        { "t": "six", "l": "six", "p": "NUM", "w": false, "s": 24.521, "e": 24.806 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.168,
+      "end": 24.837
+    },
+    {
+      "id": "s6",
+      "speaker": "mark",
+      "text": "Why has it changed?",
+      "tokens": [
+        { "t": "Why", "l": "why", "p": "ADV", "w": true, "sp": true, "s": 25.259, "e": 25.682 },
+        { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 25.682, "e": 26.105 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 26.105, "e": 26.422 },
+        { "t": "changed", "l": "change", "p": "VERB", "w": true, "s": 26.423, "e": 27.269 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.237,
+      "end": 27.323
+    },
+    {
+      "id": "s7",
+      "speaker": "anna",
+      "text": "There are several reasons, but the biggest one is probably our phones.",
+      "tokens": [
+        { "t": "There", "l": "there", "p": "PRON", "w": true, "sp": true, "s": 27.744, "e": 28.125 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 28.125, "e": 28.379 },
+        { "t": "several", "l": "several", "p": "ADJ", "w": true, "sp": true, "s": 28.379, "e": 28.887 },
+        { "t": "reasons", "l": "reason", "p": "NOUN", "w": true, "s": 28.886, "e": 29.394 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 29.824, "e": 30.079 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 30.079, "e": 30.334 },
+        { "t": "biggest", "l": "big", "p": "ADJ", "w": true, "sp": true, "s": 30.334, "e": 30.844 },
+        { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true, "s": 30.844, "e": 31.099 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 31.098, "e": 31.289 },
+        { "t": "probably", "l": "probably", "p": "ADV", "w": true, "sp": true, "s": 31.29, "e": 31.863 },
+        { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true, "s": 31.863, "e": 32.118 },
+        { "t": "phones", "l": "phone", "p": "NOUN", "w": true, "s": 32.118, "e": 32.564 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 27.723,
+      "end": 32.598
+    },
+    {
+      "id": "s8",
+      "speaker": "mark",
+      "text": "Because of the light from the screen?",
+      "tokens": [
+        { "t": "Because", "l": "because", "p": "SCONJ", "w": true, "sp": true, "s": 33.028, "e": 33.677 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 33.677, "e": 33.92 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 33.92, "e": 34.244 },
+        { "t": "light", "l": "light", "p": "ADJ", "w": true, "sp": true, "s": 34.244, "e": 34.73 },
+        { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true, "s": 34.731, "e": 35.136 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 35.136, "e": 35.46 },
+        { "t": "screen", "l": "screen", "p": "NOUN", "w": true, "s": 35.46, "e": 36.028 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.998,
+      "end": 36.081
+    },
+    {
+      "id": "s9",
+      "speaker": "anna",
+      "text": "Partly, yes. Bright light tells your brain that it's still daytime.",
+      "tokens": [
+        { "t": "Partly", "l": "partly", "p": "ADV", "w": true, "s": 36.504, "e": 37.023 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "yes", "l": "yes", "p": "INTJ", "w": false, "s": 37.023, "e": 37.32 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Bright", "l": "bright", "p": "ADJ", "w": true, "sp": true, "s": 37.32, "e": 37.839 },
+        { "t": "light", "l": "light", "p": "ADV", "w": true, "sp": true, "s": 37.839, "e": 38.284 },
+        { "t": "tells", "l": "tell", "p": "VERB", "w": true, "sp": true, "s": 38.284, "e": 38.729 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 38.729, "e": 39.1 },
+        { "t": "brain", "l": "brain", "p": "NOUN", "w": true, "sp": true, "s": 39.099, "e": 39.544 },
+        { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true, "s": 39.544, "e": 39.915 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 39.915, "e": 40.1 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 40.1, "e": 40.286 },
+        { "t": "still", "l": "still", "p": "ADV", "w": true, "sp": true, "s": 40.286, "e": 40.731 },
+        { "t": "daytime", "l": "daytime", "p": "NOUN", "w": true, "s": 40.731, "e": 41.324 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 36.481,
+      "end": 41.367
+    },
+    {
+      "id": "s10",
+      "speaker": "anna",
+      "text": "But the main problem is that phones keep our minds busy when we should be relaxing.",
+      "tokens": [
+        { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 41.644, "e": 41.924 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 41.924, "e": 42.204 },
+        { "t": "main", "l": "main", "p": "ADJ", "w": true, "sp": true, "s": 42.205, "e": 42.556 },
+        { "t": "problem", "l": "problem", "p": "NOUN", "w": true, "sp": true, "s": 42.556, "e": 43.117 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 43.117, "e": 43.327 },
+        { "t": "that", "l": "that", "p": "DET", "w": true, "sp": true, "s": 43.327, "e": 43.678 },
+        { "t": "phones", "l": "phone", "p": "NOUN", "w": true, "sp": true, "s": 43.677, "e": 44.168 },
+        { "t": "keep", "l": "keep", "p": "VERB", "w": true, "sp": true, "s": 44.168, "e": 44.519 },
+        { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true, "s": 44.519, "e": 44.799 },
+        { "t": "minds", "l": "mind", "p": "NOUN", "w": true, "sp": true, "s": 44.799, "e": 45.22 },
+        { "t": "busy", "l": "busy", "p": "ADJ", "w": true, "sp": true, "s": 45.22, "e": 45.571 },
+        { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true, "s": 45.571, "e": 45.922 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 45.921, "e": 46.131 },
+        { "t": "should", "l": "should", "p": "AUX", "w": true, "sp": true, "s": 46.132, "e": 46.623 },
+        { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 46.623, "e": 46.833 },
+        { "t": "relaxing", "l": "relaxing", "p": "ADJ", "w": true, "s": 46.833, "e": 47.464 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 41.617,
+      "end": 47.494
+    },
+    {
+      "id": "s11",
+      "speaker": "mark",
+      "text": "I used to read in bed. Now I check my messages instead.",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 47.92, "e": 48.094 },
+        { "t": "used", "l": "use", "p": "VERB", "w": true, "sp": true, "s": 48.094, "e": 48.528 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 48.528, "e": 48.788 },
+        { "t": "read", "l": "read", "p": "VERB", "w": true, "sp": true, "s": 48.788, "e": 49.222 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 49.222, "e": 49.482 },
+        { "t": "bed", "l": "bed", "p": "NOUN", "w": true, "s": 49.483, "e": 49.83 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Now", "l": "now", "p": "ADV", "w": true, "sp": true, "s": 50.33, "e": 50.726 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 50.726, "e": 50.924 },
+        { "t": "check", "l": "check", "p": "VERB", "w": true, "sp": true, "s": 50.924, "e": 51.518 },
+        { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 51.519, "e": 51.816 },
+        { "t": "messages", "l": "message", "p": "NOUN", "w": true, "sp": true, "s": 51.816, "e": 52.708 },
+        { "t": "instead", "l": "instead", "p": "ADV", "w": true, "s": 52.708, "e": 53.501 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 47.894,
+      "end": 53.552
+    },
+    {
+      "id": "s12",
+      "speaker": "anna",
+      "text": "You're not the only one! Reading a book is much better for you.",
+      "tokens": [
+        { "t": "You", "l": "you", "p": "PRON", "w": true, "s": 53.983, "e": 54.202 },
+        { "t": "'re", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 54.202, "e": 54.421 },
+        { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true, "s": 54.421, "e": 54.671 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 54.671, "e": 54.921 },
+        { "t": "only", "l": "only", "p": "ADV", "w": true, "sp": true, "s": 54.921, "e": 55.234 },
+        { "t": "one", "l": "one", "p": "NUM", "w": false, "s": 55.233, "e": 55.483 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Reading", "l": "reading", "p": "NOUN", "w": true, "sp": true, "s": 55.943, "e": 56.417 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 56.417, "e": 56.535 },
+        { "t": "book", "l": "book", "p": "NOUN", "w": true, "sp": true, "s": 56.535, "e": 56.831 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 56.831, "e": 57.009 },
+        { "t": "much", "l": "much", "p": "ADV", "w": true, "sp": true, "s": 57.009, "e": 57.305 },
+        { "t": "better", "l": "good", "p": "ADJ", "w": true, "sp": true, "s": 57.305, "e": 57.719 },
+        { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true, "s": 57.719, "e": 57.956 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 57.956, "e": 58.193 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 53.952,
+      "end": 58.247
+    },
+    {
+      "id": "s13",
+      "speaker": "mark",
+      "text": "What about coffee? I drink quite a lot of it.",
+      "tokens": [
+        { "t": "What", "l": "what", "p": "PRON", "w": true, "sp": true, "s": 58.669, "e": 59.025 },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true, "s": 59.025, "e": 59.452 },
+        { "t": "coffee", "l": "coffee", "p": "NOUN", "w": true, "s": 59.451, "e": 59.949 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 60.259, "e": 60.4 },
+        { "t": "drink", "l": "drink", "p": "VERB", "w": true, "sp": true, "s": 60.4, "e": 60.822 },
+        { "t": "quite", "l": "quite", "p": "ADV", "w": true, "sp": true, "s": 60.822, "e": 61.244 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 61.244, "e": 61.385 },
+        { "t": "lot", "l": "lot", "p": "NOUN", "w": true, "sp": true, "s": 61.385, "e": 61.667 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 61.667, "e": 61.878 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 61.878, "e": 62.089 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 58.647,
+      "end": 62.131
+    },
+    {
+      "id": "s14",
+      "speaker": "anna",
+      "text": "Coffee stays in your body for hours. I'd avoid it after two in the afternoon.",
+      "tokens": [
+        { "t": "Coffee", "l": "coffee", "p": "NOUN", "w": true, "sp": true, "s": 62.559, "e": 63.041 },
+        { "t": "stays", "l": "stay", "p": "VERB", "w": true, "sp": true, "s": 63.041, "e": 63.454 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 63.455, "e": 63.662 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 63.661, "e": 64.005 },
+        { "t": "body", "l": "body", "p": "NOUN", "w": true, "sp": true, "s": 64.006, "e": 64.35 },
+        { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true, "s": 64.35, "e": 64.626 },
+        { "t": "hours", "l": "hour", "p": "NOUN", "w": true, "s": 64.626, "e": 65.039 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "s": 65.599, "e": 65.687 },
+        { "t": "'d", "l": "would", "p": "AUX", "w": true, "sp": true, "s": 65.687, "e": 65.863 },
+        { "t": "avoid", "l": "avoid", "p": "VERB", "w": true, "sp": true, "s": 65.863, "e": 66.259 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 66.259, "e": 66.457 },
+        { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true, "s": 66.457, "e": 66.853 },
+        { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true, "s": 66.853, "e": 67.117 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 67.117, "e": 67.315 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 67.315, "e": 67.579 },
+        { "t": "afternoon", "l": "afternoon", "p": "NOUN", "w": true, "s": 67.579, "e": 68.239 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.531,
+      "end": 68.284
+    },
+    {
+      "id": "s15",
+      "speaker": "mark",
+      "text": "Really? I often have one after dinner.",
+      "tokens": [
+        { "t": "Really", "l": "really", "p": "ADV", "w": true, "s": 68.709, "e": 69.389 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 69.669, "e": 69.83 },
+        { "t": "often", "l": "often", "p": "ADV", "w": true, "sp": true, "s": 69.83, "e": 70.312 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 70.312, "e": 70.714 },
+        { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true, "s": 70.713, "e": 71.034 },
+        { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true, "s": 71.035, "e": 71.517 },
+        { "t": "dinner", "l": "dinner", "p": "NOUN", "w": true, "s": 71.517, "e": 72.079 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 68.684,
+      "end": 72.116
+    },
+    {
+      "id": "s16",
+      "speaker": "anna",
+      "text": "Then that could be why you don't sleep well!",
+      "tokens": [
+        { "t": "Then", "l": "then", "p": "ADV", "w": true, "sp": true, "s": 72.544, "e": 72.838 },
+        { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true, "s": 72.838, "e": 73.132 },
+        { "t": "could", "l": "could", "p": "AUX", "w": true, "sp": true, "s": 73.133, "e": 73.486 },
+        { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 73.486, "e": 73.663 },
+        { "t": "why", "l": "why", "p": "ADV", "w": true, "sp": true, "s": 73.662, "e": 73.897 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 73.898, "e": 74.133 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "s": 74.133, "e": 74.274 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 74.274, "e": 74.486 },
+        { "t": "sleep", "l": "sleep", "p": "VERB", "w": true, "sp": true, "s": 74.487, "e": 74.84 },
+        { "t": "well", "l": "well", "p": "ADV", "w": true, "s": 74.84, "e": 75.134 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 72.516,
+      "end": 75.167
+    },
+    {
+      "id": "s17",
+      "speaker": "mark",
+      "text": "Fair enough. What else can we do?",
+      "tokens": [
+        { "t": "Fair", "l": "fair", "p": "ADJ", "w": true, "sp": true, "s": 75.598, "e": 76.036 },
+        { "t": "enough", "l": "enough", "p": "ADV", "w": true, "s": 76.036, "e": 76.649 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "What", "l": "what", "p": "PRON", "w": true, "sp": true, "s": 76.938, "e": 77.331 },
+        { "t": "else", "l": "else", "p": "ADV", "w": true, "sp": true, "s": 77.331, "e": 77.724 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 77.723, "e": 78.037 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 78.037, "e": 78.273 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "s": 78.273, "e": 78.509 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 75.567,
+      "end": 78.57
+    },
+    {
+      "id": "s18",
+      "speaker": "anna",
+      "text": "Go to bed and get up at the same time every day, even at weekends.",
+      "tokens": [
+        { "t": "Go", "l": "go", "p": "VERB", "w": true, "sp": true, "s": 78.999, "e": 79.212 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 79.212, "e": 79.425 },
+        { "t": "bed", "l": "bed", "p": "VERB", "w": true, "sp": true, "s": 79.424, "e": 79.707 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 79.707, "e": 79.99 },
+        { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true, "s": 79.991, "e": 80.274 },
+        { "t": "up", "l": "up", "p": "ADP", "w": true, "sp": true, "s": 80.274, "e": 80.487 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 80.486, "e": 80.699 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 80.699, "e": 80.982 },
+        { "t": "same", "l": "same", "p": "ADJ", "w": true, "sp": true, "s": 80.982, "e": 81.336 },
+        { "t": "time", "l": "time", "p": "NOUN", "w": true, "sp": true, "s": 81.337, "e": 81.691 },
+        { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true, "s": 81.691, "e": 82.116 },
+        { "t": "day", "l": "day", "p": "NOUN", "w": true, "s": 82.116, "e": 82.399 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "even", "l": "even", "p": "ADV", "w": true, "sp": true, "s": 82.839, "e": 83.198 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 83.198, "e": 83.413 },
+        { "t": "weekends", "l": "weekend", "p": "NOUN", "w": true, "s": 83.413, "e": 84.059 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 78.97,
+      "end": 84.093
+    },
+    {
+      "id": "s19",
+      "speaker": "mark",
+      "text": "Even on Sundays? That's the hard part.",
+      "tokens": [
+        { "t": "Even", "l": "even", "p": "ADV", "w": true, "sp": true, "s": 84.522, "e": 85.031 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 85.031, "e": 85.337 },
+        { "t": "Sundays", "l": "sundays", "p": "PROPN", "w": false, "s": 85.337, "e": 86.152 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "That", "l": "that", "p": "PRON", "w": true, "s": 86.512, "e": 86.859 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 86.859, "e": 87.032 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 87.032, "e": 87.329 },
+        { "t": "hard", "l": "hard", "p": "ADJ", "w": true, "sp": true, "s": 87.329, "e": 87.7 },
+        { "t": "part", "l": "part", "p": "NOUN", "w": true, "s": 87.701, "e": 88.072 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 84.493,
+      "end": 88.138
+    },
+    {
+      "id": "s20",
+      "speaker": "anna",
+      "text": "I know, but your body loves routine. After two weeks it becomes much easier.",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 88.565, "e": 88.759 },
+        { "t": "know", "l": "know", "p": "VERB", "w": true, "s": 88.759, "e": 89.245 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 89.405, "e": 89.691 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 89.691, "e": 90.048 },
+        { "t": "body", "l": "body", "p": "NOUN", "w": true, "sp": true, "s": 90.048, "e": 90.405 },
+        { "t": "loves", "l": "love", "p": "VERB", "w": true, "sp": true, "s": 90.405, "e": 90.834 },
+        { "t": "routine", "l": "routine", "p": "ADJ", "w": true, "s": 90.834, "e": 91.405 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "After", "l": "after", "p": "ADP", "w": true, "sp": true, "s": 92.005, "e": 92.4 },
+        { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true, "s": 92.4, "e": 92.664 },
+        { "t": "weeks", "l": "week", "p": "NOUN", "w": true, "sp": true, "s": 92.664, "e": 93.059 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 93.059, "e": 93.257 },
+        { "t": "becomes", "l": "become", "p": "VERB", "w": true, "sp": true, "s": 93.257, "e": 93.784 },
+        { "t": "much", "l": "much", "p": "ADV", "w": true, "sp": true, "s": 93.784, "e": 94.113 },
+        { "t": "easier", "l": "easy", "p": "ADJ", "w": true, "s": 94.114, "e": 94.575 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 88.537,
+      "end": 94.647
+    },
+    {
+      "id": "s21",
+      "speaker": "mark",
+      "text": "And what if I wake up in the middle of the night?",
+      "tokens": [
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 95.08, "e": 95.383 },
+        { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true, "s": 95.383, "e": 95.762 },
+        { "t": "if", "l": "if", "p": "SCONJ", "w": true, "sp": true, "s": 95.761, "e": 95.988 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 95.989, "e": 96.14 },
+        { "t": "wake", "l": "wake", "p": "VERB", "w": true, "sp": true, "s": 96.14, "e": 96.519 },
+        { "t": "up", "l": "up", "p": "ADP", "w": true, "sp": true, "s": 96.519, "e": 96.746 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 96.746, "e": 96.973 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 96.973, "e": 97.276 },
+        { "t": "middle", "l": "middle", "p": "NOUN", "w": true, "sp": true, "s": 97.276, "e": 97.806 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 97.806, "e": 98.033 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 98.033, "e": 98.336 },
+        { "t": "night", "l": "night", "p": "NOUN", "w": true, "s": 98.336, "e": 98.79 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 95.047,
+      "end": 98.833
+    },
+    {
+      "id": "s22",
+      "speaker": "anna",
+      "text": "Don't look at the clock. If you can't sleep after twenty minutes, get up and do something quiet.",
+      "tokens": [
+        { "t": "Do", "l": "do", "p": "AUX", "w": true, "s": 99.261, "e": 99.39 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 99.39, "e": 99.584 },
+        { "t": "look", "l": "look", "p": "VERB", "w": true, "sp": true, "s": 99.584, "e": 99.853 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 99.852, "e": 100.013 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 100.014, "e": 100.229 },
+        { "t": "clock", "l": "clock", "p": "NOUN", "w": true, "s": 100.229, "e": 100.552 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "If", "l": "if", "p": "SCONJ", "w": true, "sp": true, "s": 101.171, "e": 101.351 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 101.351, "e": 101.591 },
+        { "t": "ca", "l": "can", "p": "AUX", "w": true, "s": 101.591, "e": 101.735 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 101.735, "e": 101.951 },
+        { "t": "sleep", "l": "sleep", "p": "VERB", "w": true, "sp": true, "s": 101.951, "e": 102.311 },
+        { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true, "s": 102.311, "e": 102.671 },
+        { "t": "twenty", "l": "twenty", "p": "NUM", "w": false, "sp": true, "s": 102.671, "e": 103.091 },
+        { "t": "minutes", "l": "minute", "p": "NOUN", "w": true, "s": 103.091, "e": 103.571 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true, "s": 103.861, "e": 104.124 },
+        { "t": "up", "l": "up", "p": "ADP", "w": true, "sp": true, "s": 104.124, "e": 104.321 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 104.321, "e": 104.584 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 104.583, "e": 104.78 },
+        { "t": "something", "l": "something", "p": "PRON", "w": true, "sp": true, "s": 104.78, "e": 105.437 },
+        { "t": "quiet", "l": "quiet", "p": "ADJ", "w": true, "s": 105.437, "e": 105.831 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 99.233,
+      "end": 105.874
+    },
+    {
+      "id": "s23",
+      "speaker": "mark",
+      "text": "So no phone, no late coffee and a regular routine.",
+      "tokens": [
+        { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 106.3, "e": 107.038 },
+        { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true, "s": 107.038, "e": 107.776 },
+        { "t": "phone", "l": "phone", "p": "NOUN", "w": true, "s": 107.775, "e": 109.25 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true, "s": 109.57, "e": 109.707 },
+        { "t": "late", "l": "late", "p": "ADJ", "w": true, "sp": true, "s": 109.707, "e": 109.935 },
+        { "t": "coffee", "l": "coffee", "p": "NOUN", "w": true, "sp": true, "s": 109.935, "e": 110.255 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 110.255, "e": 110.438 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 110.438, "e": 110.529 },
+        { "t": "regular", "l": "regular", "p": "ADJ", "w": true, "sp": true, "s": 110.529, "e": 110.894 },
+        { "t": "routine", "l": "routine", "p": "ADJ", "w": true, "s": 110.895, "e": 111.26 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 106.274,
+      "end": 111.307
+    },
+    {
+      "id": "s24",
+      "speaker": "anna",
+      "text": "Exactly. Small changes can make a big difference.",
+      "tokens": [
+        { "t": "Exactly", "l": "exactly", "p": "ADV", "w": true, "s": 111.739, "e": 112.629 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Small", "l": "small", "p": "ADJ", "w": true, "sp": true, "s": 112.979, "e": 113.363 },
+        { "t": "changes", "l": "change", "p": "NOUN", "w": true, "sp": true, "s": 113.363, "e": 113.875 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 113.875, "e": 114.131 },
+        { "t": "make", "l": "make", "p": "VERB", "w": true, "sp": true, "s": 114.131, "e": 114.451 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 114.451, "e": 114.579 },
+        { "t": "big", "l": "big", "p": "ADJ", "w": true, "sp": true, "s": 114.579, "e": 114.835 },
+        { "t": "difference", "l": "difference", "p": "NOUN", "w": true, "s": 114.835, "e": 115.539 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 111.707,
+      "end": 115.578
+    },
+    {
+      "id": "s25",
+      "speaker": "mark",
+      "text": "Doctor Lee, thank you. I'll try it tonight, starting with the coffee.",
+      "tokens": [
+        { "t": "Doctor", "l": "doctor", "p": "NOUN", "w": true, "sp": true, "s": 116.006, "e": 116.589 },
+        { "t": "Lee", "l": "lee", "p": "PROPN", "w": false, "s": 116.589, "e": 116.922 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "thank", "l": "thank", "p": "VERB", "w": true, "sp": true, "s": 116.923, "e": 117.423 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 117.423, "e": 117.756 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "s": 117.756, "e": 117.86 },
+        { "t": "'ll", "l": "will", "p": "AUX", "w": true, "sp": true, "s": 117.86, "e": 118.173 },
+        { "t": "try", "l": "try", "p": "VERB", "w": true, "sp": true, "s": 118.173, "e": 118.506 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 118.506, "e": 118.756 },
+        { "t": "tonight", "l": "tonight", "p": "NOUN", "w": true, "s": 118.756, "e": 119.423 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "starting", "l": "start", "p": "VERB", "w": true, "sp": true, "s": 119.423, "e": 120.173 },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 120.173, "e": 120.59 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 120.589, "e": 120.922 },
+        { "t": "coffee", "l": "coffee", "p": "NOUN", "w": true, "s": 120.923, "e": 121.506 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 115.978,
+      "end": 121.538
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s2",
+      "phrase": "less than they used to",
+      "type": "assimilation",
+      "ipa": "/ˈles ðən ðeɪ ˈjuːstə/",
+      "explanation_es": "*used to* suena /ˈjuːstə/: la *d* no se pronuncia. Y *than* es débil (/ðən/)."
+    },
+    {
+      "ref": "s3",
+      "phrase": "used to sleep about eight hours",
+      "type": "assimilation",
+      "ipa": "/ˈjuːstə ˈsliːp əˈbaʊt ˈeɪt ˈaʊəz/",
+      "explanation_es": "*used to* = /ˈjuːstə/, pegado al verbo."
+    },
+    {
+      "ref": "s10",
+      "phrase": "when we should be relaxing",
+      "type": "weak_form",
+      "ipa": "/wen wi ʃəd bi rɪˈlæksɪŋ/",
+      "explanation_es": "*should* se reduce a /ʃəd/."
+    },
+    {
+      "ref": "s11",
+      "phrase": "I used to read in bed",
+      "type": "assimilation",
+      "ipa": "/aɪ ˈjuːstə ˈriːd ɪn ˈbed/",
+      "explanation_es": "Otra vez /ˈjuːstə/. Es un hábito del pasado que ya no tiene."
+    },
+    {
+      "ref": "s14",
+      "phrase": "I'd avoid it after two",
+      "type": "contraction",
+      "ipa": "/aɪd əˈvɔɪd ɪt ˈɑːftə ˈtuː/",
+      "explanation_es": "*I'd* = *I would*; *avoid it* se enlaza."
+    },
+    {
+      "ref": "s18",
+      "phrase": "get up at the same time",
+      "type": "linking",
+      "ipa": "/ˈɡet ʌp ət ðə ˈseɪm ˈtaɪm/",
+      "explanation_es": "*get up at* se dice seguido y *at* es débil."
+    },
+    {
+      "ref": "s22",
+      "phrase": "If you can't sleep",
+      "type": "elision",
+      "ipa": "/ɪf ju ˈkænt ˈsliːp/",
+      "explanation_es": "En *can't* la *t* casi no suena: la pista es la vocal fuerte, frente a *can* /kən/."
+    },
+    {
+      "ref": "s25",
+      "phrase": "I'll try it tonight",
+      "type": "contraction",
+      "ipa": "/aɪl ˈtraɪ ɪt təˈnaɪt/",
+      "explanation_es": "*I'll* = *I will*; *try it* se une."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "used to",
+      "surface": "used to",
+      "pos": "phrase",
+      "def_en": "did regularly in the past, but not now",
+      "def_es": "solía, antes (hacía)",
+      "ref": "s2"
+    },
+    {
+      "lemma": "average",
+      "surface": "average",
+      "pos": "noun",
+      "def_en": "the usual amount when you look at many people",
+      "def_es": "media, promedio",
+      "ref": "s5"
+    },
+    {
+      "lemma": "screen",
+      "surface": "screen",
+      "pos": "noun",
+      "def_en": "the flat part of a phone or computer that you look at",
+      "def_es": "pantalla",
+      "ref": "s8"
+    },
+    {
+      "lemma": "bright",
+      "surface": "Bright",
+      "pos": "adjective",
+      "def_en": "full of light",
+      "def_es": "brillante, intenso",
+      "ref": "s9"
+    },
+    {
+      "lemma": "brain",
+      "surface": "brain",
+      "pos": "noun",
+      "def_en": "the part of your body inside your head that you think with",
+      "def_es": "cerebro",
+      "ref": "s9"
+    },
+    {
+      "lemma": "daytime",
+      "surface": "daytime",
+      "pos": "noun",
+      "def_en": "the hours when it is light outside",
+      "def_es": "de día",
+      "ref": "s9"
+    },
+    {
+      "lemma": "avoid",
+      "surface": "avoid",
+      "pos": "verb",
+      "def_en": "to try not to do or have something",
+      "def_es": "evitar",
+      "ref": "s14"
+    },
+    {
+      "lemma": "routine",
+      "surface": "routine",
+      "pos": "noun",
+      "def_en": "the usual order in which you do things every day",
+      "def_es": "rutina",
+      "ref": "s20"
+    },
+    {
+      "lemma": "regular",
+      "surface": "regular",
+      "pos": "adjective",
+      "def_en": "happening at the same time every day",
+      "def_es": "regular, fijo",
+      "ref": "s23"
+    },
+    {
+      "lemma": "make a difference",
+      "surface": "make a big difference",
+      "pos": "phrase",
+      "def_en": "to change a situation in an important way",
+      "def_es": "cambiar mucho las cosas",
+      "ref": "s24"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "What is the interview mainly about?",
+      "options": [
+        { "id": "a", "text": "Medicines that help people to sleep at night" },
+        { "id": "b", "text": "Why we sleep badly and how to change it" },
+        { "id": "c", "text": "How many hours children need" }
+      ],
+      "answer": "b",
+      "evidence": ["s24"],
+      "rationale_es": "Explica por qué dormimos menos y da consejos para dormir mejor. De medicinas y de niños no se habla."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "attitude_opinion",
+      "prompt": "What is Mark's attitude at the end?",
+      "options": [
+        { "id": "a", "text": "He doubts the advice will work" },
+        { "id": "b", "text": "He is willing to try the advice" },
+        { "id": "c", "text": "He thinks he sleeps well already" }
+      ],
+      "answer": "b",
+      "evidence": ["s25"],
+      "rationale_es": "*I'll try it tonight, starting with the coffee*: está dispuesto a probar."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "How long did most adults sleep fifty years ago?",
+      "options": [
+        { "id": "a", "text": "About six hours" },
+        { "id": "b", "text": "About seven hours" },
+        { "id": "c", "text": "About eight hours" }
+      ],
+      "answer": "c",
+      "evidence": ["s3"],
+      "rationale_es": "Antes, unas ocho horas; ahora la media se acerca a siete."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "According to Anna, what is the main problem with phones?",
+      "options": [
+        { "id": "a", "text": "The light is bad for our eyes at night" },
+        { "id": "b", "text": "They keep our brains active" },
+        { "id": "c", "text": "They make noise at night" }
+      ],
+      "answer": "b",
+      "evidence": ["s10"],
+      "rationale_es": "La luz influye, pero *the main problem* es que mantienen la mente ocupada."
+    },
+    {
+      "id": "q5",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Mark reads a book in bed every night now.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["s11"],
+      "rationale_es": "*I used to read*: lo hacía antes. Ahora mira los mensajes."
+    },
+    {
+      "id": "q6",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one number.",
+      "text": "Anna would avoid coffee after {{1}} in the afternoon.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["two", "2"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["s14"],
+      "rationale_es": "*I'd avoid it after two in the afternoon*."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "Why does Anna say 'that could be why you don't sleep well'?",
+      "options": [
+        { "id": "a", "text": "Because Mark has coffee late in the day" },
+        { "id": "b", "text": "Because Mark goes to bed too late" },
+        { "id": "c", "text": "Because Mark looks at his phone" }
+      ],
+      "answer": "a",
+      "evidence": ["s15"],
+      "rationale_es": "Mark acaba de decir que suele tomar un café después de cenar."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What does Anna say about weekends?",
+      "options": [
+        { "id": "a", "text": "You can sleep a little longer on those days" },
+        { "id": "b", "text": "You should have a nap" },
+        { "id": "c", "text": "You should keep the same hours" }
+      ],
+      "answer": "c",
+      "evidence": ["s18"],
+      "rationale_es": "Acostarse y levantarse a la misma hora *every day, even at weekends*."
+    },
+    {
+      "id": "q9",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Anna says a regular routine gets easier after about two weeks.",
+      "answer": "T",
+      "allow_ng": true,
+      "evidence": ["s20"],
+      "rationale_es": "*After two weeks it becomes much easier*."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What should you do if you can't get back to sleep?",
+      "options": [
+        { "id": "a", "text": "Look at the clock" },
+        { "id": "b", "text": "Check your phone for a few minutes" },
+        { "id": "c", "text": "Get out of bed for a while" }
+      ],
+      "answer": "c",
+      "evidence": ["s22"],
+      "rationale_es": "Si pasan veinte minutos, levantarse y hacer algo tranquilo."
+    },
+    {
+      "id": "q11",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "Doctor Lee drinks coffee herself.",
+      "answer": "NG",
+      "allow_ng": true,
+      "evidence": ["s14"],
+      "rationale_es": "Habla del café de Mark y da un consejo general, pero no dice si ella lo toma."
+    },
+    {
+      "id": "q12",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Anna thinks people should stop drinking coffee completely.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["s14"],
+      "rationale_es": "Solo recomienda evitarlo a partir de las dos de la tarde."
+    },
+    {
+      "id": "q13",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s11",
+      "reference": "I used to read in bed. Now I check my messages instead.",
+      "accept_variants": [],
+      "evidence": ["s11"],
+      "rationale_es": "*used to* suena /ˈjuːstə/, sin la *d*."
+    },
+    {
+      "id": "q14",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s14",
+      "reference": "Coffee stays in your body for hours. I'd avoid it after two in the afternoon.",
+      "accept_variants": [
+        "Coffee stays in your body for hours. I would avoid it after two in the afternoon.",
+        "Coffee stays in your body for hours. I'd avoid it after 2 in the afternoon."
+      ],
+      "evidence": ["s14"],
+      "rationale_es": "*I'd avoid it* va todo enlazado."
+    },
+    {
+      "id": "q15",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s18",
+      "reference": "Go to bed and get up at the same time every day, even at weekends.",
+      "accept_variants": [],
+      "evidence": ["s18"],
+      "rationale_es": "*get up at* se dice seguido."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "about", "adult", "after", "afternoon", "ago", "and", "at", "average", "avoid", "back", "be",
+    "because", "become", "bed", "big", "body", "book", "brain", "bright", "busy", "but", "can", "change",
+    "check", "clock", "close", "coffee", "could", "day", "daytime", "difference", "dinner", "do", "doctor",
+    "drink", "easy", "else", "enough", "even", "every", "exactly", "fair", "for", "from", "get", "go", "good",
+    "hard", "have", "hour", "i", "if", "in", "instead", "it", "keep", "know", "late", "less", "light",
+    "little", "look", "lot", "love", "main", "make", "many", "message", "middle", "mind", "minute", "most",
+    "much", "my", "night", "no", "not", "now", "of", "often", "on", "only", "our", "part", "partly", "people",
+    "phone", "probably", "problem", "quiet", "quite", "read", "reading", "really", "reason", "regular",
+    "relaxing", "routine", "same", "screen", "several", "should", "sleep", "small", "so", "something", "start",
+    "stay", "still", "talk", "tell", "than", "thank", "that", "the", "then", "there", "they", "time", "to",
+    "today", "tonight", "try", "up", "use", "wake", "we", "week", "weekend", "welcome", "well", "what", "when",
+    "why", "will", "with", "would", "year", "you", "your"
+  ],
+  "difficulty": 1072,
+  "qa": {
+    "coverage_by_level": { "A1": 0.9163, "A2": 0.981, "B1": 0.9962, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": ["daytime"],
+    "avg_sentence_words": 6.9,
+    "flesch_reading_ease": 91.1,
+    "checked_at": "2026-10-09T10:03:18.185Z"
+  },
+  "audio": {
+    "src": "audio/b1/b1-lis-004/v1.m4a",
+    "duration_s": 121.538,
+    "wpm": 134,
+    "provider": "kokoro",
+    "voices": { "mark": "bm_george", "anna": "af_heart" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      0.49, 0.37, 0.09, 0.68, 0.35, 0.38, 0.42, 0.39, 0.44, 0.48, 0.39, 0.24, 0.62, 0.58, 0.45, 0.41, 0.49,
+      0.4, 0.53, 0.1, 0.62, 0.37, 0.44, 0.04, 0.62, 0.38, 0.32, 0.53, 0.55, 0.3, 0.46, 0.41, 0.57, 0.24, 0.51,
+      0.52, 0.37, 0.29, 0.41, 0.73, 0.31, 0.39, 0.37, 0.18, 0.52, 0.33, 0.46, 0.34, 0.28, 0.49, 0.45, 0.36,
+      0.48, 0.21, 0.45, 0.51, 0.49, 0.3, 0.42, 0.55, 0.32, 0.52, 0.47, 0.42, 0.19, 0.64, 0.46, 0.42, 0.67,
+      0.31, 0.42, 0.09, 0.61, 0.51, 0.23, 0.57, 0.38, 0.4, 0.44, 0.43, 0.34, 0.17, 0.48, 0.43, 0.38, 0.55,
+      0.44, 0.51, 0.36, 0.32, 0.04, 0.47, 0.4, 0.29, 0.5, 0.58, 0.37, 0.39, 0.16, 0.51, 0.4, 0.44, 0.41, 0.37,
+      0.44, 0.31, 0.45, 0.4, 0.46, 0.31, 0.38, 0.68, 0.72, 0.41, 0.28, 0.43, 0.47, 0.4, 0.24, 0.44, 0.47, 0.48,
+      0.19, 0.46, 0.34, 0.43, 0.45, 0.4, 0.25, 0.5, 0.46, 0.47, 0.35, 0.75, 0.22, 0.43, 0.4, 0.55, 0.39, 0.37,
+      0.44, 0.4, 0.17, 0.49, 0.47, 0.32, 0.41, 0.47, 0.35, 0.49, 0.43, 0.35, 0.49, 0.51, 0.42, 0.03, 0.48,
+      0.47, 0.48, 0.34, 0.27, 0.48, 0.28, 0.35, 0.4, 0.28, 0.44, 0.38, 0.42, 0.37, 0.66, 0.46, 0.44, 0.4, 0.36,
+      0.5, 0.42, 0.47, 0.46, 0.26, 0.12, 1, 0.36, 0.33, 0.47, 0.38, 0.33, 0.6, 0.38, 0.37, 0.48, 0.47, 0.38,
+      0.39, 0.37, 0.1, 0.53, 0.4, 0.37, 0.51, 0.44, 0.37, 0.72, 0.38, 0.31, 0.52, 0.42, 0.32, 0.35, 0.33, 0.62,
+      0.37, 0.33, 0.49, 0.44, 0.31, 0.55, 0.38, 0.41, 0.28, 0.56, 0.55, 0.19, 0.46, 0.3, 0.35, 0.45, 0.42,
+      0.21, 0.55, 0.51, 0.55, 0.29, 0.47, 0.44, 0.57, 0.51, 0.41, 0.52, 0.27
+    ]
+  }
+}

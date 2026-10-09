@@ -1,0 +1,1019 @@
+{
+  "id": "b1-lis-003",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "b1-u06",
+  "series": "b1-u06-travel-problems",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "My suitcase didn't arrive",
+  "summary_es": "Oliver llama a la aerolínea porque su maleta no llegó: la agente la localiza y le explica qué va a pasar.",
+  "topic": "travel",
+  "tags": ["viajes", "reclamación", "teléfono", "pasados"],
+  "can_do": ["L-B1-01", "L-B1-03", "L-B1-06"],
+  "grammar_focus": ["b1.narrative-tenses"],
+  "vocab_focus": ["suitcase", "report", "deliver", "receipt", "pay back"],
+  "est_minutes": 14,
+  "prediction_prompt": "A passenger phones an airline because his suitcase didn't arrive. What will the airline ask him?",
+  "pre_teach": ["suitcase", "receipt"],
+  "speakers": [
+    { "id": "kim", "name": "Kim", "accent": "en-US", "gender": "female" },
+    { "id": "oliver", "name": "Oliver", "accent": "en-GB", "gender": "male" }
+  ],
+  "target_wpm": 140,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "kim",
+      "text": "Good morning, Sky Air customer service. This is Kim speaking. How can I help?",
+      "tokens": [
+        { "t": "Good", "l": "good", "p": "ADJ", "w": true, "sp": true, "s": 0.03, "e": 0.288 },
+        { "t": "morning", "l": "morning", "p": "NOUN", "w": true, "s": 0.288, "e": 0.7 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Sky", "l": "sky", "p": "NOUN", "w": true, "sp": true, "s": 1.05, "e": 1.375 },
+        { "t": "Air", "l": "air", "p": "PROPN", "w": false, "sp": true, "s": 1.375, "e": 1.7 },
+        { "t": "customer", "l": "customer", "p": "NOUN", "w": true, "sp": true, "s": 1.7, "e": 2.431 },
+        { "t": "service", "l": "service", "p": "NOUN", "w": true, "s": 2.43, "e": 3.08 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "This", "l": "this", "p": "PRON", "w": true, "sp": true, "s": 4.28, "e": 4.659 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 4.659, "e": 4.886 },
+        { "t": "Kim", "l": "kim", "p": "PROPN", "w": false, "sp": true, "s": 4.886, "e": 5.189 },
+        { "t": "speaking", "l": "speak", "p": "VERB", "w": true, "s": 5.189, "e": 5.87 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 6.98, "e": 7.231 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 7.231, "e": 7.482 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 7.481, "e": 7.606 },
+        { "t": "help", "l": "help", "p": "VERB", "w": true, "s": 7.607, "e": 7.92 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 7.968
+    },
+    {
+      "id": "s2",
+      "speaker": "oliver",
+      "text": "Hi. I flew from Lisbon to Manchester last night, and my suitcase didn't arrive.",
+      "tokens": [
+        { "t": "Hi", "l": "hi", "p": "INTJ", "w": false, "s": 8.448, "e": 8.62 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 8.62, "e": 8.735 },
+        { "t": "flew", "l": "fly", "p": "VERB", "w": true, "sp": true, "s": 8.734, "e": 9.02 },
+        { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true, "s": 9.021, "e": 9.307 },
+        { "t": "Lisbon", "l": "lisbon", "p": "PROPN", "w": false, "sp": true, "s": 9.307, "e": 9.708 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 9.708, "e": 9.88 },
+        { "t": "Manchester", "l": "manchester", "p": "PROPN", "w": false, "sp": true, "s": 9.88, "e": 10.51 },
+        { "t": "last", "l": "last", "p": "ADJ", "w": true, "sp": true, "s": 10.51, "e": 10.796 },
+        { "t": "night", "l": "night", "p": "NOUN", "w": true, "s": 10.796, "e": 11.14 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 11.14, "e": 11.369 },
+        { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 11.369, "e": 11.541 },
+        { "t": "suitcase", "l": "suitcase", "p": "NOUN", "w": true, "sp": true, "s": 11.541, "e": 12.056 },
+        { "t": "did", "l": "do", "p": "AUX", "w": true, "s": 12.056, "e": 12.256 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 12.256, "e": 12.457 },
+        { "t": "arrive", "l": "arrive", "p": "VERB", "w": true, "s": 12.457, "e": 12.858 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.368,
+      "end": 13.527
+    },
+    {
+      "id": "s3",
+      "speaker": "kim",
+      "text": "I'm sorry to hear that. Can I have your flight number, please?",
+      "tokens": [
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 13.952, "e": 14.195 },
+        { "t": "sorry", "l": "sorry", "p": "ADJ", "w": true, "sp": true, "s": 14.195, "e": 14.56 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 14.561, "e": 14.744 },
+        { "t": "hear", "l": "hear", "p": "VERB", "w": true, "sp": true, "s": 14.743, "e": 15.047 },
+        { "t": "that", "l": "that", "p": "SCONJ", "w": true, "s": 15.048, "e": 15.352 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 16.552, "e": 16.757 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 16.757, "e": 16.86 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 16.86, "e": 17.117 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 17.117, "e": 17.374 },
+        { "t": "flight", "l": "flight", "p": "NOUN", "w": true, "sp": true, "s": 17.373, "e": 17.732 },
+        { "t": "number", "l": "number", "p": "NOUN", "w": true, "s": 17.733, "e": 18.092 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "please", "l": "please", "p": "INTJ", "w": false, "s": 18.342, "e": 18.942 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.927,
+      "end": 18.987
+    },
+    {
+      "id": "s4",
+      "speaker": "oliver",
+      "text": "Yes, it was SA four one seven. We landed at about half past ten.",
+      "tokens": [
+        { "t": "Yes", "l": "yes", "p": "INTJ", "w": false, "s": 19.476, "e": 19.736 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 19.736, "e": 19.931 },
+        { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 19.931, "e": 20.191 },
+        { "t": "SA", "l": "sa", "p": "PROPN", "w": false, "sp": true, "s": 20.191, "e": 20.386 },
+        { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true, "s": 20.386, "e": 20.711 },
+        { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true, "s": 20.711, "e": 20.971 },
+        { "t": "seven", "l": "seven", "p": "NUM", "w": false, "s": 20.971, "e": 21.361 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 21.361, "e": 21.556 },
+        { "t": "landed", "l": "land", "p": "VERB", "w": true, "sp": true, "s": 21.556, "e": 22.011 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 22.011, "e": 22.206 },
+        { "t": "about", "l": "about", "p": "ADV", "w": true, "sp": true, "s": 22.206, "e": 22.596 },
+        { "t": "half", "l": "half", "p": "NOUN", "w": true, "sp": true, "s": 22.596, "e": 22.921 },
+        { "t": "past", "l": "past", "p": "ADJ", "w": true, "sp": true, "s": 22.921, "e": 23.246 },
+        { "t": "ten", "l": "ten", "p": "NUM", "w": false, "s": 23.246, "e": 23.506 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.387,
+      "end": 24.144
+    },
+    {
+      "id": "s5",
+      "speaker": "kim",
+      "text": "Thank you. And did you report it at the airport?",
+      "tokens": [
+        { "t": "Thank", "l": "thank", "p": "VERB", "w": true, "sp": true, "s": 24.598, "e": 24.982 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 24.982, "e": 25.238 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 26.248, "e": 26.465 },
+        { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 26.465, "e": 26.682 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 26.683, "e": 26.9 },
+        { "t": "report", "l": "report", "p": "VERB", "w": true, "sp": true, "s": 26.9, "e": 27.28 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 27.28, "e": 27.443 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 27.443, "e": 27.606 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 27.606, "e": 27.823 },
+        { "t": "airport", "l": "airport", "p": "NOUN", "w": true, "s": 27.823, "e": 28.258 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.544,
+      "end": 28.307
+    },
+    {
+      "id": "s6",
+      "speaker": "oliver",
+      "text": "I tried to, but the desk had already closed when I got there.",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 28.794, "e": 28.895 },
+        { "t": "tried", "l": "try", "p": "VERB", "w": true, "sp": true, "s": 28.895, "e": 29.199 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "s": 29.199, "e": 29.351 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 29.351, "e": 29.554 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 29.554, "e": 29.757 },
+        { "t": "desk", "l": "desk", "p": "NOUN", "w": true, "sp": true, "s": 29.757, "e": 30.01 },
+        { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 30.01, "e": 30.213 },
+        { "t": "already", "l": "already", "p": "ADV", "w": true, "sp": true, "s": 30.213, "e": 30.618 },
+        { "t": "closed", "l": "close", "p": "VERB", "w": true, "sp": true, "s": 30.618, "e": 30.973 },
+        { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true, "s": 30.973, "e": 31.226 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 31.226, "e": 31.327 },
+        { "t": "got", "l": "get", "p": "VERB", "w": true, "sp": true, "s": 31.327, "e": 31.53 },
+        { "t": "there", "l": "there", "p": "PRON", "w": true, "s": 31.53, "e": 31.834 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.707,
+      "end": 32.552
+    },
+    {
+      "id": "s7",
+      "speaker": "kim",
+      "text": "I see. Don't worry, we can do it now. Can you describe the suitcase?",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 32.999, "e": 33.176 },
+        { "t": "see", "l": "see", "p": "VERB", "w": true, "s": 33.176, "e": 33.529 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Do", "l": "do", "p": "AUX", "w": true, "s": 34.319, "e": 34.459 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 34.459, "e": 34.669 },
+        { "t": "worry", "l": "worry", "p": "VERB", "w": true, "s": 34.669, "e": 35.019 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 35.369, "e": 35.528 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 35.528, "e": 35.74 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 35.74, "e": 35.899 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 35.898, "e": 36.057 },
+        { "t": "now", "l": "now", "p": "ADV", "w": true, "s": 36.057, "e": 36.269 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 37.409, "e": 37.646 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 37.646, "e": 37.883 },
+        { "t": "describe", "l": "describe", "p": "VERB", "w": true, "sp": true, "s": 37.884, "e": 38.418 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 38.418, "e": 38.655 },
+        { "t": "suitcase", "l": "suitcase", "p": "NOUN", "w": true, "s": 38.655, "e": 39.189 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.952,
+      "end": 39.233
+    },
+    {
+      "id": "s8",
+      "speaker": "oliver",
+      "text": "It's dark green, medium size, with a red ribbon on the handle.",
+      "tokens": [
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 39.708, "e": 39.85 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 39.85, "e": 39.993 },
+        { "t": "dark", "l": "dark", "p": "ADJ", "w": true, "sp": true, "s": 39.993, "e": 40.278 },
+        { "t": "green", "l": "green", "p": "ADJ", "w": true, "s": 40.278, "e": 40.62 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "medium", "l": "medium", "p": "NOUN", "w": true, "sp": true, "s": 40.62, "e": 41.019 },
+        { "t": "size", "l": "size", "p": "NOUN", "w": true, "s": 41.019, "e": 41.304 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 41.304, "e": 41.589 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 41.589, "e": 41.703 },
+        { "t": "red", "l": "red", "p": "ADJ", "w": true, "sp": true, "s": 41.703, "e": 41.931 },
+        { "t": "ribbon", "l": "ribbon", "p": "NOUN", "w": true, "sp": true, "s": 41.931, "e": 42.33 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 42.33, "e": 42.501 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 42.501, "e": 42.729 },
+        { "t": "handle", "l": "handle", "p": "NOUN", "w": true, "s": 42.729, "e": 43.128 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 39.633,
+      "end": 43.859
+    },
+    {
+      "id": "s9",
+      "speaker": "kim",
+      "text": "Dark green with a red ribbon. Is your name on it?",
+      "tokens": [
+        { "t": "Dark", "l": "dark", "p": "ADJ", "w": true, "sp": true, "s": 44.302, "e": 44.668 },
+        { "t": "green", "l": "green", "p": "ADJ", "w": true, "sp": true, "s": 44.668, "e": 45.107 },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 45.106, "e": 45.472 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 45.472, "e": 45.618 },
+        { "t": "red", "l": "red", "p": "ADJ", "w": true, "sp": true, "s": 45.618, "e": 45.91 },
+        { "t": "ribbon", "l": "ribbon", "p": "NOUN", "w": true, "s": 45.91, "e": 46.422 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 47.572, "e": 47.741 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 47.741, "e": 48.023 },
+        { "t": "name", "l": "name", "p": "NOUN", "w": true, "sp": true, "s": 48.023, "e": 48.305 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 48.304, "e": 48.473 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 48.473, "e": 48.642 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.259,
+      "end": 48.687
+    },
+    {
+      "id": "s10",
+      "speaker": "oliver",
+      "text": "Yes, there's a label with my name and phone number.",
+      "tokens": [
+        { "t": "Yes", "l": "yes", "p": "INTJ", "w": false, "s": 49.184, "e": 51.044 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "there", "l": "there", "p": "PRON", "w": true, "s": 51.194, "e": 51.29 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 51.29, "e": 51.328 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 51.328, "e": 51.361 },
+        { "t": "label", "l": "label", "p": "NOUN", "w": true, "sp": true, "s": 51.361, "e": 51.462 },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 51.462, "e": 51.547 },
+        { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 51.547, "e": 51.596 },
+        { "t": "name", "l": "name", "p": "NOUN", "w": true, "sp": true, "s": 51.596, "e": 51.681 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 51.679, "e": 51.746 },
+        { "t": "phone", "l": "phone", "p": "NOUN", "w": true, "sp": true, "s": 51.746, "e": 51.846 },
+        { "t": "number", "l": "number", "p": "NOUN", "w": true, "s": 51.847, "e": 51.965 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 49.087,
+      "end": 52.714
+    },
+    {
+      "id": "s11",
+      "speaker": "kim",
+      "text": "Good. Let me check the system. Ah, here it is.",
+      "tokens": [
+        { "t": "Good", "l": "good", "p": "ADJ", "w": true, "s": 53.156, "e": 53.622 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Let", "l": "let", "p": "VERB", "w": true, "sp": true, "s": 53.622, "e": 53.995 },
+        { "t": "me", "l": "me", "p": "PRON", "w": true, "sp": true, "s": 53.995, "e": 54.275 },
+        { "t": "check", "l": "check", "p": "NOUN", "w": true, "sp": true, "s": 54.275, "e": 54.835 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 54.835, "e": 55.208 },
+        { "t": "system", "l": "system", "p": "NOUN", "w": true, "s": 55.208, "e": 55.861 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Ah", "l": "ah", "p": "INTJ", "w": false, "s": 55.86, "e": 56.14 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "here", "l": "here", "p": "ADV", "w": true, "sp": true, "s": 56.14, "e": 56.606 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 56.606, "e": 56.886 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "s": 56.886, "e": 57.166 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 53.114,
+      "end": 57.211
+    },
+    {
+      "id": "s12",
+      "speaker": "oliver",
+      "text": "Have you found it?",
+      "tokens": [
+        { "t": "Have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 57.647, "e": 57.922 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 57.922, "e": 58.142 },
+        { "t": "found", "l": "find", "p": "VERB", "w": true, "sp": true, "s": 58.142, "e": 58.472 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 58.472, "e": 58.637 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 57.611,
+      "end": 58.915
+    },
+    {
+      "id": "s13",
+      "speaker": "kim",
+      "text": "Yes. It seems your bag was put on the wrong plane. It's in Madrid at the moment.",
+      "tokens": [
+        { "t": "Yes", "l": "yes", "p": "INTJ", "w": false, "s": 59.36, "e": 63.4 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 64.75, "e": 64.815 },
+        { "t": "seems", "l": "seem", "p": "VERB", "w": true, "sp": true, "s": 64.815, "e": 64.946 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 64.946, "e": 65.055 },
+        { "t": "bag", "l": "bag", "p": "NOUN", "w": true, "sp": true, "s": 65.055, "e": 65.142 },
+        { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 65.142, "e": 65.229 },
+        { "t": "put", "l": "put", "p": "VERB", "w": true, "sp": true, "s": 65.229, "e": 65.316 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 65.316, "e": 65.381 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 65.382, "e": 65.469 },
+        { "t": "wrong", "l": "wrong", "p": "ADJ", "w": true, "sp": true, "s": 65.469, "e": 65.6 },
+        { "t": "plane", "l": "plane", "p": "NOUN", "w": true, "s": 65.599, "e": 65.73 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 66.13, "e": 66.191 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 66.191, "e": 66.252 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 66.252, "e": 66.325 },
+        { "t": "Madrid", "l": "madrid", "p": "PROPN", "w": false, "sp": true, "s": 66.326, "e": 66.497 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 66.497, "e": 66.57 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 66.571, "e": 66.669 },
+        { "t": "moment", "l": "moment", "p": "NOUN", "w": true, "s": 66.669, "e": 66.84 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 59.315,
+      "end": 66.886
+    },
+    {
+      "id": "s14",
+      "speaker": "oliver",
+      "text": "Madrid? How did that happen?",
+      "tokens": [
+        { "t": "Madrid", "l": "madrid", "p": "PROPN", "w": false, "s": 67.361, "e": 67.734 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 67.734, "e": 67.947 },
+        { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 67.948, "e": 68.161 },
+        { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true, "s": 68.161, "e": 68.428 },
+        { "t": "happen", "l": "happen", "p": "VERB", "w": true, "s": 68.428, "e": 68.801 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 67.286,
+      "end": 69.563
+    },
+    {
+      "id": "s15",
+      "speaker": "kim",
+      "text": "I'm afraid there was a mistake while they were loading the plane in Lisbon.",
+      "tokens": [
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 69.995, "e": 70.291 },
+        { "t": "afraid", "l": "afraid", "p": "ADJ", "w": true, "sp": true, "s": 70.291, "e": 70.809 },
+        { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true, "s": 70.809, "e": 71.253 },
+        { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 71.253, "e": 71.549 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 71.549, "e": 71.697 },
+        { "t": "mistake", "l": "mistake", "p": "NOUN", "w": true, "sp": true, "s": 71.697, "e": 72.289 },
+        { "t": "while", "l": "while", "p": "SCONJ", "w": true, "sp": true, "s": 72.289, "e": 72.733 },
+        { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true, "s": 72.733, "e": 73.103 },
+        { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 73.103, "e": 73.473 },
+        { "t": "loading", "l": "load", "p": "VERB", "w": true, "sp": true, "s": 73.473, "e": 74.065 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 74.065, "e": 74.361 },
+        { "t": "plane", "l": "plane", "p": "NOUN", "w": true, "sp": true, "s": 74.361, "e": 74.805 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 74.805, "e": 75.027 },
+        { "t": "Lisbon", "l": "lisbon", "p": "PROPN", "w": false, "s": 75.027, "e": 75.545 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 69.963,
+      "end": 75.731
+    },
+    {
+      "id": "s16",
+      "speaker": "oliver",
+      "text": "Right. So when will I get it back?",
+      "tokens": [
+        { "t": "Right", "l": "right", "p": "ADV", "w": true, "s": 76.206, "e": 76.528 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 76.528, "e": 76.689 },
+        { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true, "s": 76.689, "e": 76.957 },
+        { "t": "will", "l": "will", "p": "AUX", "w": true, "sp": true, "s": 76.957, "e": 77.225 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 77.225, "e": 77.332 },
+        { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true, "s": 77.332, "e": 77.547 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 77.547, "e": 77.708 },
+        { "t": "back", "l": "back", "p": "ADV", "w": true, "s": 77.708, "e": 77.976 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 76.131,
+      "end": 78.599
+    },
+    {
+      "id": "s17",
+      "speaker": "kim",
+      "text": "It should arrive in Manchester tomorrow afternoon. We'll deliver it to your address.",
+      "tokens": [
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 79.022, "e": 79.24 },
+        { "t": "should", "l": "should", "p": "AUX", "w": true, "sp": true, "s": 79.24, "e": 79.75 },
+        { "t": "arrive", "l": "arrive", "p": "VERB", "w": true, "sp": true, "s": 79.75, "e": 80.26 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 80.26, "e": 80.478 },
+        {
+          "t": "Manchester",
+          "l": "manchester",
+          "p": "PROPN",
+          "w": false,
+          "sp": true,
+          "s": 80.478,
+          "e": 81.279
+        },
+        { "t": "tomorrow", "l": "tomorrow", "p": "NOUN", "w": true, "sp": true, "s": 81.279, "e": 81.934 },
+        { "t": "afternoon", "l": "afternoon", "p": "NOUN", "w": true, "s": 81.934, "e": 82.662 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "We", "l": "we", "p": "PRON", "w": true, "s": 84.152, "e": 84.31 },
+        { "t": "'ll", "l": "will", "p": "AUX", "w": true, "sp": true, "s": 84.31, "e": 84.547 },
+        { "t": "deliver", "l": "deliver", "p": "VERB", "w": true, "sp": true, "s": 84.547, "e": 85.073 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 85.073, "e": 85.27 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 85.27, "e": 85.467 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 85.467, "e": 85.796 },
+        { "t": "address", "l": "address", "p": "VERB", "w": true, "s": 85.796, "e": 86.322 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 78.999,
+      "end": 86.365
+    },
+    {
+      "id": "s18",
+      "speaker": "oliver",
+      "text": "Tomorrow? The problem is that my work clothes are in that bag.",
+      "tokens": [
+        { "t": "Tomorrow", "l": "tomorrow", "p": "ADV", "w": true, "s": 86.858, "e": 87.358 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true, "s": 87.508, "e": 87.695 },
+        { "t": "problem", "l": "problem", "p": "NOUN", "w": true, "sp": true, "s": 87.695, "e": 88.069 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 88.069, "e": 88.209 },
+        { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true, "s": 88.209, "e": 88.442 },
+        { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 88.442, "e": 88.582 },
+        { "t": "work", "l": "work", "p": "NOUN", "w": true, "sp": true, "s": 88.582, "e": 88.817 },
+        { "t": "clothes", "l": "clothes", "p": "NOUN", "w": true, "sp": true, "s": 88.816, "e": 89.189 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 89.189, "e": 89.377 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 89.377, "e": 89.517 },
+        { "t": "that", "l": "that", "p": "DET", "w": true, "sp": true, "s": 89.517, "e": 89.751 },
+        { "t": "bag", "l": "bag", "p": "NOUN", "w": true, "s": 89.751, "e": 89.938 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 86.765,
+      "end": 90.635
+    },
+    {
+      "id": "s19",
+      "speaker": "kim",
+      "text": "I understand. You can spend up to eighty pounds on essential things, and we'll pay you back.",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 91.058, "e": 91.226 },
+        { "t": "understand", "l": "understand", "p": "VERB", "w": true, "s": 91.226, "e": 92.148 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 93.508, "e": 93.767 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 93.767, "e": 94.026 },
+        { "t": "spend", "l": "spend", "p": "VERB", "w": true, "sp": true, "s": 94.027, "e": 94.416 },
+        { "t": "up", "l": "up", "p": "ADP", "w": true, "sp": true, "s": 94.415, "e": 94.609 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 94.61, "e": 94.804 },
+        { "t": "eighty", "l": "eighty", "p": "NUM", "w": false, "sp": true, "s": 94.804, "e": 95.258 },
+        { "t": "pounds", "l": "pound", "p": "NOUN", "w": true, "sp": true, "s": 95.258, "e": 95.712 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 95.712, "e": 95.906 },
+        { "t": "essential", "l": "essential", "p": "ADJ", "w": true, "sp": true, "s": 95.906, "e": 96.554 },
+        { "t": "things", "l": "thing", "p": "NOUN", "w": true, "s": 96.554, "e": 97.008 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 97.888, "e": 98.078 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "s": 98.078, "e": 98.192 },
+        { "t": "'ll", "l": "will", "p": "AUX", "w": true, "sp": true, "s": 98.192, "e": 98.362 },
+        { "t": "pay", "l": "pay", "p": "VERB", "w": true, "sp": true, "s": 98.362, "e": 98.552 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 98.551, "e": 98.741 },
+        { "t": "back", "l": "back", "p": "ADV", "w": true, "s": 98.741, "e": 98.978 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 91.035,
+      "end": 99.043
+    },
+    {
+      "id": "s20",
+      "speaker": "oliver",
+      "text": "OK, that helps. Do I need to keep the receipts?",
+      "tokens": [
+        { "t": "OK", "l": "ok", "p": "INTJ", "w": false, "s": 99.532, "e": 99.709 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true, "s": 99.709, "e": 100.005 },
+        { "t": "helps", "l": "help", "p": "VERB", "w": true, "s": 100.005, "e": 100.36 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 100.36, "e": 100.537 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 100.537, "e": 100.655 },
+        { "t": "need", "l": "need", "p": "VERB", "w": true, "sp": true, "s": 100.655, "e": 100.951 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 100.951, "e": 101.128 },
+        { "t": "keep", "l": "keep", "p": "VERB", "w": true, "sp": true, "s": 101.128, "e": 101.424 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 101.424, "e": 101.66 },
+        { "t": "receipts", "l": "receipt", "p": "NOUN", "w": true, "s": 101.66, "e": 102.192 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 99.443,
+      "end": 102.802
+    },
+    {
+      "id": "s21",
+      "speaker": "kim",
+      "text": "Yes, please. Send them by email with your reference number.",
+      "tokens": [
+        { "t": "Yes", "l": "yes", "p": "INTJ", "w": false, "s": 103.257, "e": 104.377 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "please", "l": "please", "p": "INTJ", "w": false, "s": 105.347, "e": 106.737 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Send", "l": "send", "p": "VERB", "w": true, "sp": true, "s": 107.207, "e": 107.341 },
+        { "t": "them", "l": "them", "p": "PRON", "w": true, "sp": true, "s": 107.341, "e": 107.475 },
+        { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true, "s": 107.474, "e": 107.553 },
+        { "t": "email", "l": "email", "p": "NOUN", "w": true, "sp": true, "s": 107.555, "e": 107.715 },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 107.715, "e": 107.849 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 107.849, "e": 107.983 },
+        { "t": "reference", "l": "reference", "p": "NOUN", "w": true, "sp": true, "s": 107.981, "e": 108.249 },
+        { "t": "number", "l": "number", "p": "NOUN", "w": true, "s": 108.249, "e": 108.436 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 103.202,
+      "end": 108.498
+    },
+    {
+      "id": "s22",
+      "speaker": "oliver",
+      "text": "And what is the reference number?",
+      "tokens": [
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 108.975, "e": 109.168 },
+        { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true, "s": 109.168, "e": 109.409 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 109.409, "e": 109.554 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 109.553, "e": 109.746 },
+        { "t": "reference", "l": "reference", "p": "NOUN", "w": true, "sp": true, "s": 109.746, "e": 110.228 },
+        { "t": "number", "l": "number", "p": "NOUN", "w": true, "s": 110.228, "e": 110.565 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 108.898,
+      "end": 111.155
+    },
+    {
+      "id": "s23",
+      "speaker": "kim",
+      "text": "It's M, A, N, five five two nine. I'll text it to you as well.",
+      "tokens": [
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 111.583, "e": 111.844 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 111.844, "e": 112.106 },
+        { "t": "M", "l": "m", "p": "PROPN", "w": false, "s": 112.106, "e": 112.315 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "A", "l": "a", "p": "DET", "w": true, "s": 112.316, "e": 112.525 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "N", "l": "n", "p": "PROPN", "w": false, "s": 112.525, "e": 112.734 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "five", "l": "five", "p": "NUM", "w": false, "sp": true, "s": 112.734, "e": 113.257 },
+        { "t": "five", "l": "five", "p": "NUM", "w": false, "sp": true, "s": 113.257, "e": 113.78 },
+        { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true, "s": 113.781, "e": 114.2 },
+        { "t": "nine", "l": "nine", "p": "NUM", "w": false, "s": 114.199, "e": 114.722 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "s": 114.723, "e": 114.854 },
+        { "t": "'ll", "l": "will", "p": "AUX", "w": true, "sp": true, "s": 114.854, "e": 115.246 },
+        { "t": "text", "l": "text", "p": "NOUN", "w": true, "sp": true, "s": 115.246, "e": 115.769 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 115.769, "e": 116.083 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 116.083, "e": 116.397 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 116.397, "e": 116.816 },
+        { "t": "as", "l": "as", "p": "ADV", "w": true, "sp": true, "s": 116.816, "e": 117.13 },
+        { "t": "well", "l": "well", "p": "ADV", "w": true, "s": 117.13, "e": 117.653 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 111.555,
+      "end": 117.716
+    },
+    {
+      "id": "s24",
+      "speaker": "oliver",
+      "text": "Thanks. I was quite angry this morning, but you've been really helpful.",
+      "tokens": [
+        { "t": "Thanks", "l": "thanks", "p": "NOUN", "w": true, "s": 118.19, "e": 118.534 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 118.534, "e": 118.632 },
+        { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 118.632, "e": 118.829 },
+        { "t": "quite", "l": "quite", "p": "ADV", "w": true, "sp": true, "s": 118.829, "e": 119.124 },
+        { "t": "angry", "l": "angry", "p": "ADJ", "w": true, "sp": true, "s": 119.123, "e": 119.418 },
+        { "t": "this", "l": "this", "p": "DET", "w": true, "sp": true, "s": 119.418, "e": 119.664 },
+        { "t": "morning", "l": "morning", "p": "NOUN", "w": true, "s": 119.664, "e": 120.057 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 120.057, "e": 120.254 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 120.253, "e": 120.425 },
+        { "t": "'ve", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 120.425, "e": 120.597 },
+        { "t": "been", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 120.597, "e": 120.843 },
+        { "t": "really", "l": "really", "p": "ADV", "w": true, "sp": true, "s": 120.843, "e": 121.187 },
+        { "t": "helpful", "l": "helpful", "p": "ADJ", "w": true, "s": 121.187, "e": 121.58 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 118.116,
+      "end": 122.289
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s2",
+      "phrase": "my suitcase didn't arrive",
+      "type": "linking",
+      "ipa": "/ˈdɪdnt əˈraɪv/",
+      "explanation_es": "La *t* de *didn't* se une a la vocal de *arrive*."
+    },
+    {
+      "ref": "s3",
+      "phrase": "Can I have your flight number",
+      "type": "weak_form",
+      "ipa": "/kən aɪ ˈhæv jə ˈflaɪt ˈnʌmbə/",
+      "explanation_es": "*can* y *your* son débiles: /kən/ y /jə/."
+    },
+    {
+      "ref": "s6",
+      "phrase": "the desk had already closed",
+      "type": "weak_form",
+      "ipa": "/ðə ˈdesk əd ɔːlˈredi ˈkləʊzd/",
+      "explanation_es": "*had* se reduce a /əd/: es fácil no oír el *past perfect*."
+    },
+    {
+      "ref": "s13",
+      "phrase": "was put on the wrong plane",
+      "type": "weak_form",
+      "ipa": "/wəz ˈpʊt ɒn ðə ˈrɒŋ ˈpleɪn/",
+      "explanation_es": "*was* es débil (/wəz/) y *put on* se enlaza."
+    },
+    {
+      "ref": "s16",
+      "phrase": "when will I get it back",
+      "type": "linking",
+      "ipa": "/ˈɡet ɪt ˈbæk/",
+      "explanation_es": "*get it* se une; en inglés americano la *t* suena casi como una «r» suave."
+    },
+    {
+      "ref": "s17",
+      "phrase": "We'll deliver it to",
+      "type": "contraction",
+      "ipa": "/wiːl dɪˈlɪvər ɪt tə/",
+      "explanation_es": "*We'll* = *we will*; *deliver it* se enlaza."
+    },
+    {
+      "ref": "s24",
+      "phrase": "you've been really helpful",
+      "type": "contraction",
+      "ipa": "/juːv bɪn ˈrɪəli ˈhelpfl/",
+      "explanation_es": "*you've* = *you have*, y *been* suena /bɪn/."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "customer service",
+      "surface": "customer service",
+      "pos": "phrase",
+      "def_en": "the part of a company that helps people who buy from it",
+      "def_es": "atención al cliente",
+      "ref": "s1"
+    },
+    {
+      "lemma": "suitcase",
+      "surface": "suitcase",
+      "pos": "noun",
+      "def_en": "a large bag for your clothes when you travel",
+      "def_es": "maleta",
+      "ref": "s2"
+    },
+    {
+      "lemma": "land",
+      "surface": "landed",
+      "pos": "verb",
+      "def_en": "to arrive on the ground in a plane",
+      "def_es": "aterrizar",
+      "ref": "s4"
+    },
+    {
+      "lemma": "report",
+      "surface": "report",
+      "pos": "verb",
+      "def_en": "to tell someone officially about a problem",
+      "def_es": "comunicar, denunciar",
+      "ref": "s5"
+    },
+    {
+      "lemma": "ribbon",
+      "surface": "ribbon",
+      "pos": "noun",
+      "def_en": "a long narrow piece of cloth",
+      "def_es": "cinta, lazo",
+      "ref": "s8"
+    },
+    {
+      "lemma": "handle",
+      "surface": "handle",
+      "pos": "noun",
+      "def_en": "the part of a bag that you hold",
+      "def_es": "asa",
+      "ref": "s8"
+    },
+    {
+      "lemma": "label",
+      "surface": "label",
+      "pos": "noun",
+      "def_en": "a piece of paper on something with information about it",
+      "def_es": "etiqueta",
+      "ref": "s10"
+    },
+    {
+      "lemma": "load",
+      "surface": "loading",
+      "pos": "verb",
+      "def_en": "to put things onto a plane, lorry or ship",
+      "def_es": "cargar",
+      "ref": "s15"
+    },
+    {
+      "lemma": "deliver",
+      "surface": "deliver",
+      "pos": "verb",
+      "def_en": "to take something to a person or place",
+      "def_es": "entregar, llevar a domicilio",
+      "ref": "s17"
+    },
+    {
+      "lemma": "essential",
+      "surface": "essential",
+      "pos": "adjective",
+      "def_en": "completely necessary",
+      "def_es": "imprescindible",
+      "ref": "s19"
+    },
+    {
+      "lemma": "pay back",
+      "surface": "pay you back",
+      "pos": "phrasal_verb",
+      "def_en": "to return money to someone",
+      "def_es": "devolver el dinero",
+      "ref": "s19"
+    },
+    {
+      "lemma": "receipt",
+      "surface": "receipts",
+      "pos": "noun",
+      "def_en": "a piece of paper that shows what you paid",
+      "def_es": "recibo, tique",
+      "ref": "s20"
+    },
+    {
+      "lemma": "reference number",
+      "surface": "reference number",
+      "pos": "phrase",
+      "def_en": "a number that identifies your case",
+      "def_es": "número de referencia",
+      "ref": "s21"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "Why is Oliver calling?",
+      "options": [
+        { "id": "a", "text": "His luggage is missing" },
+        { "id": "b", "text": "His flight was cancelled" },
+        { "id": "c", "text": "He wants to change his ticket" }
+      ],
+      "answer": "a",
+      "evidence": ["s2"],
+      "rationale_es": "Su maleta no llegó con él."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "attitude_opinion",
+      "prompt": "How does Oliver feel at the end of the call?",
+      "options": [
+        { "id": "a", "text": "Still very angry" },
+        { "id": "b", "text": "More satisfied than before" },
+        { "id": "c", "text": "Confused about what to do next" }
+      ],
+      "answer": "b",
+      "evidence": ["s24"],
+      "rationale_es": "Reconoce que estaba enfadado por la mañana, pero agradece la ayuda."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "When did the plane land?",
+      "options": [
+        { "id": "a", "text": "At about 10.30 p.m." },
+        { "id": "b", "text": "At about 10.30 a.m." },
+        { "id": "c", "text": "At about 7.30 p.m." }
+      ],
+      "answer": "a",
+      "evidence": ["s4", "s2"],
+      "rationale_es": "Voló *last night* y aterrizó a las diez y media."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Why didn't Oliver report the problem at the airport?",
+      "options": [
+        { "id": "a", "text": "He didn't know where to go" },
+        { "id": "b", "text": "There was a very long queue there" },
+        { "id": "c", "text": "The desk was no longer open" }
+      ],
+      "answer": "c",
+      "evidence": ["s6"],
+      "rationale_es": "*The desk had already closed when I got there*: ya habían cerrado."
+    },
+    {
+      "id": "q5",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Oliver's suitcase has his contact details on it.",
+      "answer": "T",
+      "allow_ng": true,
+      "evidence": ["s10"],
+      "rationale_es": "Lleva una etiqueta con su nombre y su teléfono."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Where is the suitcase now?",
+      "options": [
+        { "id": "a", "text": "In Lisbon" },
+        { "id": "b", "text": "In Madrid" },
+        { "id": "c", "text": "In Manchester" }
+      ],
+      "answer": "b",
+      "evidence": ["s13"],
+      "rationale_es": "Salió de Lisboa, tenía que llegar a Manchester y está en Madrid."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What went wrong?",
+      "options": [
+        { "id": "a", "text": "Someone took the bag by mistake" },
+        { "id": "b", "text": "The bag was never checked in" },
+        { "id": "c", "text": "It travelled on another flight" }
+      ],
+      "answer": "c",
+      "evidence": ["s13"],
+      "rationale_es": "La subieron a otro avión al cargar en Lisboa."
+    },
+    {
+      "id": "q8",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one number.",
+      "text": "The airline will pay back up to {{1}} pounds.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["eighty", "80"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["s19"],
+      "rationale_es": "*Eighty* (80), con el acento al principio; no *eighteen* (18)."
+    },
+    {
+      "id": "q9",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "Oliver will probably have to buy some clothes today.",
+      "answer": "T",
+      "allow_ng": true,
+      "evidence": ["s18", "s19"],
+      "rationale_es": "Su ropa de trabajo está en la maleta, que no llega hasta mañana: tendrá que comprar algo."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What does Oliver have to send to the airline?",
+      "options": [
+        { "id": "a", "text": "A photo of the suitcase" },
+        { "id": "b", "text": "The receipts for what he buys" },
+        { "id": "c", "text": "A copy of his passport" }
+      ],
+      "answer": "b",
+      "evidence": ["s20", "s21"],
+      "rationale_es": "Los recibos, por correo, con el número de referencia."
+    },
+    {
+      "id": "q11",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the reference number.",
+      "text": "The reference number is MAN {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["5529", "five five two nine"],
+          "max_words": 4
+        }
+      ],
+      "evidence": ["s23"],
+      "rationale_es": "*M, A, N, five five two nine*."
+    },
+    {
+      "id": "q12",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Oliver has to collect the suitcase from the airport.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["s17"],
+      "rationale_es": "Se la llevan a casa: *We'll deliver it to your address*."
+    },
+    {
+      "id": "q13",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s6",
+      "reference": "I tried to, but the desk had already closed when I got there.",
+      "accept_variants": [],
+      "evidence": ["s6"],
+      "rationale_es": "*had* es débil (/əd/): escucha el *past perfect*."
+    },
+    {
+      "id": "q14",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s16",
+      "reference": "Right. So when will I get it back?",
+      "accept_variants": [],
+      "evidence": ["s16"],
+      "rationale_es": "*get it back* suena todo unido."
+    },
+    {
+      "id": "q15",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s24",
+      "reference": "Thanks. I was quite angry this morning, but you've been really helpful.",
+      "accept_variants": ["Thanks. I was quite angry this morning, but you have been really helpful."],
+      "evidence": ["s24"],
+      "rationale_es": "*you've been* suena /juːv bɪn/."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "about", "address", "afraid", "afternoon", "airport", "already", "and", "angry", "arrive", "as", "at",
+    "back", "bag", "be", "but", "by", "can", "check", "close", "clothes", "customer", "dark", "deliver",
+    "describe", "desk", "do", "email", "essential", "find", "flight", "fly", "from", "get", "good", "green",
+    "half", "handle", "happen", "have", "hear", "help", "helpful", "here", "how", "i", "in", "it", "keep",
+    "label", "land", "last", "let", "load", "me", "medium", "mistake", "moment", "morning", "my", "name",
+    "need", "night", "not", "now", "number", "on", "past", "pay", "phone", "plane", "pound", "problem", "put",
+    "quite", "really", "receipt", "red", "reference", "report", "ribbon", "right", "see", "seem", "send",
+    "service", "should", "size", "sky", "so", "sorry", "speak", "spend", "suitcase", "system", "text", "thank",
+    "thanks", "that", "the", "them", "there", "they", "thing", "this", "to", "tomorrow", "try", "understand",
+    "up", "we", "well", "what", "when", "while", "will", "with", "work", "worry", "wrong", "you", "your"
+  ],
+  "difficulty": 1083,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8984, "A2": 0.9688, "B1": 0.9883, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": ["label", "reference"],
+    "avg_sentence_words": 6,
+    "flesch_reading_ease": 96.2,
+    "checked_at": "2026-10-09T10:03:18.185Z"
+  },
+  "audio": {
+    "src": "audio/b1/b1-lis-003/v1.m4a",
+    "duration_s": 122.289,
+    "wpm": 136,
+    "provider": "kokoro",
+    "voices": { "kim": "af_nicole", "oliver": "bm_fable" },
+    "loudness_lufs": -16.6,
+    "peaks": [
+      0.71, 0.28, 0.69, 0.72, 0.69, 0.31, 0.05, 0, 0.57, 0.73, 0.72, 0.3, 0, 0.55, 0.55, 0.23, 0.65, 0.45,
+      0.72, 0.38, 0.5, 0.47, 0.61, 0.43, 0.28, 0.09, 0.01, 0.45, 0.66, 0.47, 0.21, 0, 0.55, 0.71, 0.52, 0.92,
+      0.58, 0.27, 0.65, 0.58, 0.25, 0.52, 0.7, 0.51, 0.38, 0.29, 0.07, 0.01, 0.69, 0.45, 0, 0.78, 0.82, 0.61,
+      0.63, 0.4, 0.51, 0.61, 0.76, 0.69, 0.4, 0.25, 0.16, 0.01, 0.59, 0.53, 0, 0.62, 0.78, 0.91, 0.53, 0.07, 0,
+      0.7, 0.54, 0.5, 0.42, 0.3, 0.81, 0.31, 0.75, 0.45, 0.51, 0.36, 0.24, 0.01, 0.71, 0.49, 0.61, 0.5, 0.77,
+      0.04, 0, 0.56, 0.4, 0.3, 1, 0.84, 0.35, 0.35, 0.29, 0.24, 0.02, 0.01, 0.56, 0.82, 0.48, 0.66, 0, 0.59,
+      0.58, 0.41, 0.23, 0.65, 0.56, 0.21, 0.41, 0.4, 0.6, 0.59, 0.67, 0.13, 0.6, 0.56, 0.06, 0, 0, 0.47, 0.63,
+      0.42, 0.63, 0.28, 0.93, 0.57, 0.68, 0.03, 0.02, 0.44, 0.73, 0.47, 0.51, 0.17, 0, 0.38, 0.58, 0.6, 0.08,
+      0.47, 0.68, 0.62, 0.69, 0.31, 0.47, 0.02, 0.02, 0.54, 0.53, 0.57, 0.67, 0.57, 0.53, 0.54, 0.03, 0, 0,
+      0.67, 0.29, 0.34, 0.44, 0.27, 0.91, 0.41, 0.82, 0.28, 0.62, 0.28, 0.34, 0.01, 0.43, 0.56, 0.41, 0, 0,
+      0.49, 0.62, 0.64, 0.55, 0.48, 0.57, 0.72, 0.23, 0, 0.54, 0.55, 0.18, 0.63, 0.62, 0.3, 0.33, 0.44, 0.23,
+      0.01, 0.5, 0.49, 0.28, 0, 0.24, 0.87, 0.58, 0.14, 0.4, 0.5, 0.67, 0.59, 0.75, 0.75, 0.52, 0.02, 0.03,
+      0.68, 0.49, 0.61, 0.65, 0.7, 0.53, 0.04, 0, 0.39, 0.46, 0.61, 0.44, 0.03, 0.91, 0.53, 0.69, 0.2, 0.26,
+      0.25, 0.13, 0.01
+    ]
+  }
+}

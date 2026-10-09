@@ -1,0 +1,883 @@
+{
+  "id": "b1-rea-002",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "b1-u06",
+  "series": "b1-u06-travel-problems",
+  "skill": "reading",
+  "genre": "blog",
+  "title": "The trip that went wrong",
+  "summary_es": "Un blog de viajes: un vuelo cancelado, once horas de tren nocturno y la comida que acabó siendo lo mejor del viaje.",
+  "topic": "travel",
+  "tags": ["viajes", "imprevistos", "relato", "pasados"],
+  "can_do": ["R-B1-02", "R-B1-03", "R-B1-06", "R-B1-07"],
+  "grammar_focus": ["b1.narrative-tenses"],
+  "vocab_focus": ["cancel", "miserable", "unexpected", "exhausted", "complain"],
+  "est_minutes": 15,
+  "prediction_prompt": "Think of a trip where something went wrong. Was it all bad in the end?",
+  "pre_teach": ["gate", "fog"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Everyone has a travel story that begins with the words \"it all went wrong\".",
+          "tokens": [
+            { "t": "Everyone", "l": "everyone", "p": "PRON", "w": true, "sp": true },
+            { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "travel", "l": "travel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "story", "l": "story", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "begins", "l": "begin", "p": "VERB", "w": true, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "words", "l": "word", "p": "NOUN", "w": true, "sp": true },
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true },
+            { "t": "went", "l": "go", "p": "VERB", "w": true, "sp": true },
+            { "t": "wrong", "l": "wrong", "p": "ADJ", "w": true },
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "This is mine, and I would not change a single minute of it.",
+          "tokens": [
+            { "t": "This", "l": "this", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "mine", "l": "mine", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "change", "l": "change", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "single", "l": "single", "p": "ADJ", "w": true, "sp": true },
+            { "t": "minute", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Last spring, my friend Dani and I decided to spend a long weekend in Porto.",
+          "tokens": [
+            { "t": "Last", "l": "last", "p": "ADJ", "w": true, "sp": true },
+            { "t": "spring", "l": "spring", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true },
+            { "t": "friend", "l": "friend", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Dani", "l": "dani", "p": "PROPN", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "decided", "l": "decide", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "spend", "l": "spend", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "long", "l": "long", "p": "ADJ", "w": true, "sp": true },
+            { "t": "weekend", "l": "weekend", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "Porto", "l": "porto", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "We had booked a cheap flight for Friday morning, and we had planned every hour of the trip.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "booked", "l": "book", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "cheap", "l": "cheap", "p": "ADJ", "w": true, "sp": true },
+            { "t": "flight", "l": "flight", "p": "NOUN", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "Friday", "l": "friday", "p": "PROPN", "w": false, "sp": true },
+            { "t": "morning", "l": "morning", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "planned", "l": "plan", "p": "VERB", "w": true, "sp": true },
+            { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true },
+            { "t": "hour", "l": "hour", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "trip", "l": "trip", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Dani had even made a list of restaurants.",
+          "tokens": [
+            { "t": "Dani", "l": "dani", "p": "PROPN", "w": false, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "even", "l": "even", "p": "ADV", "w": true, "sp": true },
+            { "t": "made", "l": "make", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "list", "l": "list", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "restaurants", "l": "restaurant", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "The problems started before we left.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "problems", "l": "problem", "p": "NOUN", "w": true, "sp": true },
+            { "t": "started", "l": "start", "p": "VERB", "w": true, "sp": true },
+            { "t": "before", "l": "before", "p": "ADP", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "left", "l": "leave", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "While we were waiting at the gate, the airline announced that our flight had been cancelled because of fog.",
+          "tokens": [
+            { "t": "While", "l": "while", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "waiting", "l": "wait", "p": "VERB", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "gate", "l": "gate", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "airline", "l": "airline", "p": "NOUN", "w": true, "sp": true },
+            { "t": "announced", "l": "announce", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "flight", "l": "flight", "p": "NOUN", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "been", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "cancelled", "l": "cancel", "p": "VERB", "w": true, "sp": true },
+            { "t": "because", "l": "because", "p": "ADP", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "fog", "l": "fog", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "The next one was on Saturday evening, which meant losing half of our holiday.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "next", "l": "next", "p": "ADJ", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "Saturday", "l": "saturday", "p": "PROPN", "w": false, "sp": true },
+            { "t": "evening", "l": "evening", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "which", "l": "which", "p": "PRON", "w": true, "sp": true },
+            { "t": "meant", "l": "mean", "p": "VERB", "w": true, "sp": true },
+            { "t": "losing", "l": "lose", "p": "VERB", "w": true, "sp": true },
+            { "t": "half", "l": "half", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "holiday", "l": "holiday", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "We were sitting on the floor, feeling miserable, when Dani had an idea.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "sitting", "l": "sit", "p": "VERB", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "floor", "l": "floor", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "feeling", "l": "feeling", "p": "NOUN", "w": true, "sp": true },
+            { "t": "miserable", "l": "miserable", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "Dani", "l": "dani", "p": "PROPN", "w": false, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "idea", "l": "idea", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s5",
+          "text": "\"What about the train?\" she said.",
+          "tokens": [
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false },
+            { "t": "What", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "train", "l": "train", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false },
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "said", "l": "say", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "It was not a quick solution.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "quick", "l": "quick", "p": "ADJ", "w": true, "sp": true },
+            { "t": "solution", "l": "solution", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "We took a bus back to the city, bought the last two tickets for a night train and spent eleven hours travelling.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "took", "l": "take", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "bus", "l": "bus", "p": "NOUN", "w": true, "sp": true },
+            { "t": "back", "l": "back", "p": "ADV", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "city", "l": "city", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "bought", "l": "buy", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "last", "l": "last", "p": "ADJ", "w": true, "sp": true },
+            { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true },
+            { "t": "tickets", "l": "ticket", "p": "NOUN", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "night", "l": "night", "p": "NOUN", "w": true, "sp": true },
+            { "t": "train", "l": "train", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "spent", "l": "spend", "p": "VERB", "w": true, "sp": true },
+            { "t": "eleven", "l": "eleven", "p": "NUM", "w": false, "sp": true },
+            { "t": "hours", "l": "hour", "p": "NOUN", "w": true, "sp": true },
+            { "t": "travelling", "l": "travel", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "The seats were hard, the heating did not work and neither of us slept much.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "seats", "l": "seat", "p": "NOUN", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "hard", "l": "hard", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "heating", "l": "heating", "p": "NOUN", "w": true, "sp": true },
+            { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "work", "l": "work", "p": "VERB", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "neither", "l": "neither", "p": "DET", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "slept", "l": "sleep", "p": "VERB", "w": true, "sp": true },
+            { "t": "much", "l": "much", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "However, something unexpected happened.",
+          "tokens": [
+            { "t": "However", "l": "however", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "something", "l": "something", "p": "PRON", "w": true, "sp": true },
+            { "t": "unexpected", "l": "unexpected", "p": "ADJ", "w": true, "sp": true },
+            { "t": "happened", "l": "happen", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s5",
+          "text": "We started talking to the family who were sitting opposite us.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "started", "l": "start", "p": "VERB", "w": true, "sp": true },
+            { "t": "talking", "l": "talk", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "family", "l": "family", "p": "NOUN", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "sitting", "l": "sit", "p": "VERB", "w": true, "sp": true },
+            { "t": "opposite", "l": "opposite", "p": "ADJ", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s6",
+          "text": "They were from a small town near Porto, and by the time we arrived they had invited us to lunch.",
+          "tokens": [
+            { "t": "They", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "small", "l": "small", "p": "ADJ", "w": true, "sp": true },
+            { "t": "town", "l": "town", "p": "NOUN", "w": true, "sp": true },
+            { "t": "near", "l": "near", "p": "ADP", "w": true, "sp": true },
+            { "t": "Porto", "l": "porto", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "time", "l": "time", "p": "NOUN", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "arrived", "l": "arrive", "p": "VERB", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "invited", "l": "invite", "p": "VERB", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "lunch", "l": "lunch", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "That lunch was the best meal of the trip.",
+          "tokens": [
+            { "t": "That", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "lunch", "l": "lunch", "p": "NOUN", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "best", "l": "good", "p": "ADJ", "w": true, "sp": true },
+            { "t": "meal", "l": "meal", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "trip", "l": "trip", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "We ate fish that the grandfather had caught that morning, and the children taught us words that we still remember.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "ate", "l": "eat", "p": "VERB", "w": true, "sp": true },
+            { "t": "fish", "l": "fish", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "grandfather", "l": "grandfather", "p": "NOUN", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "caught", "l": "catch", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "morning", "l": "morning", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "children", "l": "child", "p": "NOUN", "w": true, "sp": true },
+            { "t": "taught", "l": "teach", "p": "VERB", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "words", "l": "word", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "still", "l": "still", "p": "ADV", "w": true, "sp": true },
+            { "t": "remember", "l": "remember", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "None of it was on Dani's list.",
+          "tokens": [
+            { "t": "None", "l": "none", "p": "PRON", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "Dani", "l": "dani", "p": "PROPN", "w": false },
+            { "t": "'s", "l": "'s", "p": "PART", "w": false, "sp": true },
+            { "t": "list", "l": "list", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "We saw less of Porto than we had planned, and we came home exhausted.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "saw", "l": "see", "p": "VERB", "w": true, "sp": true },
+            { "t": "less", "l": "less", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "Porto", "l": "porto", "p": "PROPN", "w": false, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "planned", "l": "plan", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "came", "l": "come", "p": "VERB", "w": true, "sp": true },
+            { "t": "home", "l": "home", "p": "ADV", "w": true, "sp": true },
+            { "t": "exhausted", "l": "exhaust", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "But I learned something that weekend.",
+          "tokens": [
+            { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "learned", "l": "learn", "p": "VERB", "w": true, "sp": true },
+            { "t": "something", "l": "something", "p": "PRON", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "DET", "w": true, "sp": true },
+            { "t": "weekend", "l": "weekend", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "When a plan fails, you have two choices: you can complain about what you have lost, or you can look at what is in front of you.",
+          "tokens": [
+            { "t": "When", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "plan", "l": "plan", "p": "NOUN", "w": true, "sp": true },
+            { "t": "fails", "l": "fail", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true },
+            { "t": "choices", "l": "choice", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "complain", "l": "complain", "p": "VERB", "w": true, "sp": true },
+            { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true },
+            { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "lost", "l": "lose", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "look", "l": "look", "p": "VERB", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "front", "l": "front", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "Since then, I have always left one day of every trip completely free.",
+          "tokens": [
+            { "t": "Since", "l": "since", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "then", "l": "then", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "always", "l": "always", "p": "ADV", "w": true, "sp": true },
+            { "t": "left", "l": "leave", "p": "VERB", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "day", "l": "day", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true },
+            { "t": "trip", "l": "trip", "p": "NOUN", "w": true, "sp": true },
+            { "t": "completely", "l": "completely", "p": "ADV", "w": true, "sp": true },
+            { "t": "free", "l": "free", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s5",
+          "text": "You never know who you might meet.",
+          "tokens": [
+            { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "never", "l": "never", "p": "ADV", "w": true, "sp": true },
+            { "t": "know", "l": "know", "p": "VERB", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "might", "l": "might", "p": "AUX", "w": true, "sp": true },
+            { "t": "meet", "l": "meet", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "Past perfect: lo que había pasado antes",
+      "explanation_es": "*We had booked a cheap flight*, *our flight had been cancelled*: *had* + participio sitúa una acción antes de otra del pasado. Sin él, el orden de los hechos se pierde.",
+      "refs": ["p2s2", "p3s2"]
+    },
+    {
+      "title_es": "While + past continuous",
+      "explanation_es": "*While we were waiting at the gate, the airline announced…*: una acción larga (*were waiting*) interrumpida por otra corta (*announced*).",
+      "refs": ["p3s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "book",
+      "surface": "booked",
+      "pos": "verb",
+      "def_en": "to arrange to have a ticket or a room at a later time",
+      "def_es": "reservar",
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "gate",
+      "surface": "gate",
+      "pos": "noun",
+      "def_en": "the place in an airport where you get on your plane",
+      "def_es": "puerta de embarque",
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "announce",
+      "surface": "announced",
+      "pos": "verb",
+      "def_en": "to tell people something officially",
+      "def_es": "anunciar",
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "cancel",
+      "surface": "cancelled",
+      "pos": "verb",
+      "def_en": "to decide that something planned will not happen",
+      "def_es": "cancelar",
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "fog",
+      "surface": "fog",
+      "pos": "noun",
+      "def_en": "thick cloud close to the ground that is difficult to see through",
+      "def_es": "niebla",
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "miserable",
+      "surface": "miserable",
+      "pos": "adjective",
+      "def_en": "very unhappy",
+      "def_es": "muy triste, hundido",
+      "ref": "p3s4"
+    },
+    {
+      "lemma": "solution",
+      "surface": "solution",
+      "pos": "noun",
+      "def_en": "a way to solve a problem",
+      "def_es": "solución",
+      "ref": "p4s1"
+    },
+    {
+      "lemma": "heating",
+      "surface": "heating",
+      "pos": "noun",
+      "def_en": "the system that makes a place warm",
+      "def_es": "calefacción",
+      "ref": "p4s3"
+    },
+    {
+      "lemma": "unexpected",
+      "surface": "unexpected",
+      "pos": "adjective",
+      "def_en": "surprising, because you did not think it would happen",
+      "def_es": "inesperado",
+      "ref": "p4s4"
+    },
+    {
+      "lemma": "by the time",
+      "surface": "by the time",
+      "pos": "phrase",
+      "def_en": "before or when something happened",
+      "def_es": "para cuando",
+      "ref": "p4s6"
+    },
+    {
+      "lemma": "exhausted",
+      "surface": "exhausted",
+      "pos": "adjective",
+      "def_en": "very, very tired",
+      "def_es": "agotado",
+      "ref": "p6s1"
+    },
+    {
+      "lemma": "complain",
+      "surface": "complain",
+      "pos": "verb",
+      "def_en": "to say that you are not happy about something",
+      "def_es": "quejarse",
+      "ref": "p6s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "What is the writer's main message?",
+      "options": [
+        { "id": "a", "text": "Cheap flights are never worth the money" },
+        { "id": "b", "text": "It is better to travel by train than by plane" },
+        { "id": "c", "text": "Problems on a trip can lead to good experiences" },
+        { "id": "d", "text": "You should always plan every hour" }
+      ],
+      "answer": "c",
+      "evidence": ["p6s3"],
+      "rationale_es": "El viaje salió mal, pero de ahí salió lo mejor: la moraleja es mirar lo que tienes delante."
+    },
+    {
+      "id": "q2",
+      "type": "heading_match",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "Match paragraphs 3, 4 and 5 with the best heading. There is one extra heading.",
+      "paragraphs": ["p3", "p4", "p5"],
+      "headings": [
+        { "id": "a", "text": "A meal to remember" },
+        { "id": "b", "text": "Bad news at the airport" },
+        { "id": "c", "text": "Lost luggage" },
+        { "id": "d", "text": "A long night" }
+      ],
+      "answers": { "p3": "b", "p4": "d", "p5": "a" },
+      "evidence": ["p3", "p4", "p5"],
+      "rationale_es": "El párrafo 3 cuenta la cancelación en el aeropuerto; el 4, el viaje nocturno en tren; el 5, la comida. De equipaje perdido no se habla."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Why was the flight cancelled?",
+      "options": [
+        { "id": "a", "text": "There was a strike" },
+        { "id": "b", "text": "The plane had a technical problem" },
+        { "id": "c", "text": "The weather was bad" },
+        { "id": "d", "text": "Too few passengers" }
+      ],
+      "answer": "c",
+      "evidence": ["p3s2"],
+      "rationale_es": "*Because of fog*: por la niebla."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Whose idea was it to take the train?",
+      "options": [
+        { "id": "a", "text": "The writer's" },
+        { "id": "b", "text": "Dani's" },
+        { "id": "c", "text": "The airline's" },
+        { "id": "d", "text": "A family's" }
+      ],
+      "answer": "b",
+      "evidence": ["p3s4"],
+      "rationale_es": "*Dani had an idea. \"What about the train?\" she said.*"
+    },
+    {
+      "id": "q5",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "The train journey was comfortable.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["p4s3"],
+      "rationale_es": "Asientos duros, sin calefacción y casi sin dormir."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "reference",
+      "prompt": "In paragraph 4, who does \"They\" refer to in \"They were from a small town\"?",
+      "options": [
+        { "id": "a", "text": "Dani and the writer" },
+        { "id": "b", "text": "The people working on the train" },
+        { "id": "c", "text": "The family sitting opposite" },
+        { "id": "d", "text": "The other passengers" }
+      ],
+      "answer": "c",
+      "evidence": ["p4s6"],
+      "rationale_es": "*They* recoge a *the family who were sitting opposite us*, de la frase anterior."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "vocab_in_context",
+      "prompt": "In paragraph 3, \"feeling miserable\" means…",
+      "options": [
+        { "id": "a", "text": "feeling very unhappy" },
+        { "id": "b", "text": "feeling extremely tired" },
+        { "id": "c", "text": "feeling hungry" },
+        { "id": "d", "text": "feeling bored" }
+      ],
+      "answer": "a",
+      "evidence": ["p3s4"],
+      "rationale_es": "Acaban de perder medio viaje y están sentadas en el suelo: *miserable* = muy triste (no «miserable» en el sentido español)."
+    },
+    {
+      "id": "q8",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "The writer and Dani paid for the lunch.",
+      "answer": "NG",
+      "allow_ng": true,
+      "evidence": ["p4s6"],
+      "rationale_es": "Las invitaron a comer, pero el texto no dice quién pagó ni si hubo que pagar."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "Why does the writer say \"None of it was on Dani's list\"?",
+      "options": [
+        { "id": "a", "text": "To show that Dani plans badly" },
+        { "id": "b", "text": "To show the best moment was not planned" },
+        { "id": "c", "text": "To complain about the restaurants" },
+        { "id": "d", "text": "To explain why they were hungry" }
+      ],
+      "answer": "b",
+      "evidence": ["p5s3"],
+      "rationale_es": "La lista era de restaurantes planeados; lo mejor fue justo lo que no estaba previsto."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What has the writer done since that trip?",
+      "options": [
+        { "id": "a", "text": "Stopped flying" },
+        { "id": "b", "text": "Travelled only by train" },
+        { "id": "c", "text": "Stopped travelling with Dani altogether" },
+        { "id": "d", "text": "Kept one unplanned day on each trip" }
+      ],
+      "answer": "d",
+      "evidence": ["p6s4"],
+      "rationale_es": "Deja siempre un día libre, sin planes."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "attitude_opinion",
+      "prompt": "How does the writer feel about the trip now?",
+      "options": [
+        { "id": "a", "text": "Glad it happened that way" },
+        { "id": "b", "text": "Still angry with the airline" },
+        { "id": "c", "text": "Sorry they went to Porto" },
+        { "id": "d", "text": "Worried about travelling again" }
+      ],
+      "answer": "a",
+      "evidence": ["p1s2"],
+      "rationale_es": "*I would not change a single minute of it*."
+    },
+    {
+      "id": "q12",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "text_structure",
+      "prompt": "Complete with the linking words from the text.",
+      "text": "The seats were hard and nobody slept much. {{1}}, something unexpected happened. […] {{2}} then, I have always left one day free.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["however"],
+          "max_words": 1
+        },
+        {
+          "n": 2,
+          "accept": ["since"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["p4s4", "p6s4"],
+      "rationale_es": "*However* introduce un contraste con lo anterior; *since then* = «desde entonces»."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 307,
+  "lemmas": [
+    "a", "about", "airline", "all", "always", "an", "and", "announce", "arrive", "at", "back", "be", "because",
+    "before", "begin", "book", "bus", "but", "buy", "by", "can", "cancel", "catch", "change", "cheap", "child",
+    "choice", "city", "come", "complain", "completely", "day", "decide", "do", "eat", "even", "evening",
+    "every", "everyone", "exhaust", "fail", "family", "feeling", "fish", "flight", "floor", "fog", "for",
+    "free", "friend", "from", "front", "gate", "go", "good", "grandfather", "half", "happen", "hard", "have",
+    "heating", "holiday", "home", "hour", "however", "i", "idea", "in", "invite", "it", "know", "last",
+    "learn", "leave", "less", "list", "long", "look", "lose", "lunch", "make", "meal", "mean", "meet", "might",
+    "mine", "minute", "miserable", "morning", "much", "my", "near", "neither", "never", "next", "night",
+    "none", "not", "of", "on", "opposite", "or", "our", "plan", "problem", "quick", "remember", "restaurant",
+    "say", "seat", "see", "she", "since", "single", "sit", "sleep", "small", "solution", "something", "spend",
+    "spring", "start", "still", "story", "take", "talk", "teach", "than", "that", "the", "then", "they",
+    "this", "ticket", "time", "to", "town", "train", "travel", "trip", "unexpected", "us", "wait", "we",
+    "weekend", "what", "when", "which", "while", "who", "with", "word", "work", "would", "wrong", "you"
+  ],
+  "difficulty": 1067,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8976, "A2": 0.9761, "B1": 0.9966, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": ["exhaust"],
+    "avg_sentence_words": 12.3,
+    "flesch_reading_ease": 85,
+    "checked_at": "2026-10-09T10:03:18.185Z"
+  }
+}

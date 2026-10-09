@@ -1,0 +1,904 @@
+{
+  "id": "b1-rea-003",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "b1-u10",
+  "series": "b1-u10-learning",
+  "skill": "reading",
+  "genre": "article",
+  "title": "Learning with your ears",
+  "summary_es": "Un artículo sobre aprender idiomas escuchando y leyendo mucho: por qué funciona, qué material elegir y qué papel tiene la gramática.",
+  "topic": "language",
+  "tags": ["aprender idiomas", "input", "método", "verbo + -ing"],
+  "can_do": ["R-B1-01", "R-B1-04", "R-B1-05", "R-B1-06"],
+  "grammar_focus": ["b1.verb-patterns"],
+  "vocab_focus": ["as long as", "advantage", "give up", "tool", "patience", "realise"],
+  "est_minutes": 15,
+  "prediction_prompt": "How did you learn English at school? Do you think there is a better way?",
+  "pre_teach": ["material", "graded"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Most of us learned languages at school in the same way.",
+          "tokens": [
+            { "t": "Most", "l": "most", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "us", "l": "us", "p": "PRON", "w": true, "sp": true },
+            { "t": "learned", "l": "learn", "p": "VERB", "w": true, "sp": true },
+            { "t": "languages", "l": "language", "p": "NOUN", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "school", "l": "school", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "same", "l": "same", "p": "ADJ", "w": true, "sp": true },
+            { "t": "way", "l": "way", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "We studied grammar rules, did exercises and tried to remember lists of words.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "studied", "l": "study", "p": "VERB", "w": true, "sp": true },
+            { "t": "grammar", "l": "grammar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "rules", "l": "rule", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "exercises", "l": "exercise", "p": "VERB", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "tried", "l": "try", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "remember", "l": "remember", "p": "VERB", "w": true, "sp": true },
+            { "t": "lists", "l": "list", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "words", "l": "word", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "After years of this, many people still find it difficult to follow a simple conversation.",
+          "tokens": [
+            { "t": "After", "l": "after", "p": "ADP", "w": true, "sp": true },
+            { "t": "years", "l": "year", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "many", "l": "many", "p": "ADJ", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true },
+            { "t": "still", "l": "still", "p": "ADV", "w": true, "sp": true },
+            { "t": "find", "l": "find", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "difficult", "l": "difficult", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "follow", "l": "follow", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "simple", "l": "simple", "p": "ADJ", "w": true, "sp": true },
+            { "t": "conversation", "l": "conversation", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "Is there a better way?",
+          "tokens": [
+            { "t": "Is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "better", "l": "good", "p": "ADJ", "w": true, "sp": true },
+            { "t": "way", "l": "way", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "More and more teachers believe there is.",
+          "tokens": [
+            { "t": "More", "l": "more", "p": "ADJ", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADJ", "w": true, "sp": true },
+            { "t": "teachers", "l": "teacher", "p": "NOUN", "w": true, "sp": true },
+            { "t": "believe", "l": "believe", "p": "VERB", "w": true, "sp": true },
+            { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Their idea is simple: we learn a language mainly when we understand it.",
+          "tokens": [
+            { "t": "Their", "l": "their", "p": "PRON", "w": true, "sp": true },
+            { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "simple", "l": "simple", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "learn", "l": "learn", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "language", "l": "language", "p": "NOUN", "w": true, "sp": true },
+            { "t": "mainly", "l": "mainly", "p": "ADV", "w": true, "sp": true },
+            { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "understand", "l": "understand", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "In other words, the most useful thing a learner can do is listen and read a lot, as long as the material is not too difficult.",
+          "tokens": [
+            { "t": "In", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "other", "l": "other", "p": "ADJ", "w": true, "sp": true },
+            { "t": "words", "l": "word", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "most", "l": "most", "p": "ADV", "w": true, "sp": true },
+            { "t": "useful", "l": "useful", "p": "ADJ", "w": true, "sp": true },
+            { "t": "thing", "l": "thing", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "learner", "l": "learner", "p": "NOUN", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "listen", "l": "listen", "p": "VERB", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "read", "l": "read", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "lot", "l": "lot", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "as", "l": "as", "p": "ADV", "w": true, "sp": true },
+            { "t": "long", "l": "long", "p": "ADJ", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "material", "l": "material", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "too", "l": "too", "p": "ADV", "w": true, "sp": true },
+            { "t": "difficult", "l": "difficult", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "This is how children learn their first language.",
+          "tokens": [
+            { "t": "This", "l": "this", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "how", "l": "how", "p": "ADV", "w": true, "sp": true },
+            { "t": "children", "l": "child", "p": "NOUN", "w": true, "sp": true },
+            { "t": "learn", "l": "learn", "p": "VERB", "w": true, "sp": true },
+            { "t": "their", "l": "their", "p": "PRON", "w": true, "sp": true },
+            { "t": "first", "l": "first", "p": "ADJ", "w": true, "sp": true },
+            { "t": "language", "l": "language", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Nobody explains the past tense to a three-year-old.",
+          "tokens": [
+            { "t": "Nobody", "l": "nobody", "p": "PRON", "w": true, "sp": true },
+            { "t": "explains", "l": "explain", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "past", "l": "past", "p": "ADV", "w": true, "sp": true },
+            { "t": "tense", "l": "tense", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "three", "l": "three", "p": "NUM", "w": false },
+            { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+            { "t": "year", "l": "year", "p": "NOUN", "w": true },
+            { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+            { "t": "old", "l": "old", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Children hear thousands of hours of speech, and they slowly begin to understand how the language works.",
+          "tokens": [
+            { "t": "Children", "l": "children", "p": "PROPN", "w": false, "sp": true },
+            { "t": "hear", "l": "hear", "p": "VERB", "w": true, "sp": true },
+            { "t": "thousands", "l": "thousand", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "hours", "l": "hour", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "speech", "l": "speech", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "slowly", "l": "slowly", "p": "ADV", "w": true, "sp": true },
+            { "t": "begin", "l": "begin", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "understand", "l": "understand", "p": "VERB", "w": true, "sp": true },
+            { "t": "how", "l": "how", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "language", "l": "language", "p": "NOUN", "w": true, "sp": true },
+            { "t": "works", "l": "work", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Adults can do something similar, and they have one big advantage: they can choose what to listen to.",
+          "tokens": [
+            { "t": "Adults", "l": "adult", "p": "ADJ", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "something", "l": "something", "p": "PRON", "w": true, "sp": true },
+            { "t": "similar", "l": "similar", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "big", "l": "big", "p": "ADJ", "w": true, "sp": true },
+            { "t": "advantage", "l": "advantage", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "choose", "l": "choose", "p": "VERB", "w": true, "sp": true },
+            { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "listen", "l": "listen", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "The level of the material matters, though.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "level", "l": "level", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "material", "l": "material", "p": "ADJ", "w": true, "sp": true },
+            { "t": "matters", "l": "matter", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "though", "l": "though", "p": "SCONJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "If you understand almost nothing, you will soon get bored and give up.",
+          "tokens": [
+            { "t": "If", "l": "if", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "understand", "l": "understand", "p": "VERB", "w": true, "sp": true },
+            { "t": "almost", "l": "almost", "p": "ADV", "w": true, "sp": true },
+            { "t": "nothing", "l": "nothing", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "will", "l": "will", "p": "AUX", "w": true, "sp": true },
+            { "t": "soon", "l": "soon", "p": "ADV", "w": true, "sp": true },
+            { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true },
+            { "t": "bored", "l": "bore", "p": "VERB", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "give", "l": "give", "p": "VERB", "w": true, "sp": true },
+            { "t": "up", "l": "up", "p": "ADP", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "If you understand everything, you will not learn anything new.",
+          "tokens": [
+            { "t": "If", "l": "if", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "understand", "l": "understand", "p": "VERB", "w": true, "sp": true },
+            { "t": "everything", "l": "everything", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "will", "l": "will", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "learn", "l": "learn", "p": "VERB", "w": true, "sp": true },
+            { "t": "anything", "l": "anything", "p": "PRON", "w": true, "sp": true },
+            { "t": "new", "l": "new", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Experts suggest looking for texts and recordings in which you understand most of the words but still meet a few new ones.",
+          "tokens": [
+            { "t": "Experts", "l": "expert", "p": "ADJ", "w": true, "sp": true },
+            { "t": "suggest", "l": "suggest", "p": "VERB", "w": true, "sp": true },
+            { "t": "looking", "l": "look", "p": "VERB", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "texts", "l": "text", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "recordings", "l": "recording", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "which", "l": "which", "p": "PRON", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "understand", "l": "understand", "p": "VERB", "w": true, "sp": true },
+            { "t": "most", "l": "most", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "words", "l": "word", "p": "NOUN", "w": true, "sp": true },
+            { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "still", "l": "still", "p": "ADV", "w": true, "sp": true },
+            { "t": "meet", "l": "meet", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "few", "l": "few", "p": "ADJ", "w": true, "sp": true },
+            { "t": "new", "l": "new", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ones", "l": "one", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s5",
+          "text": "Podcasts for learners, simple news websites and graded books are good places to start.",
+          "tokens": [
+            { "t": "Podcasts", "l": "podcasts", "p": "PROPN", "w": false, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "learners", "l": "learner", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "simple", "l": "simple", "p": "ADJ", "w": true, "sp": true },
+            { "t": "news", "l": "news", "p": "NOUN", "w": true, "sp": true },
+            { "t": "websites", "l": "website", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "graded", "l": "graded", "p": "ADJ", "w": true, "sp": true },
+            { "t": "books", "l": "book", "p": "NOUN", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "good", "l": "good", "p": "ADJ", "w": true, "sp": true },
+            { "t": "places", "l": "place", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "start", "l": "start", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Does this mean grammar is useless?",
+          "tokens": [
+            { "t": "Does", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "PRON", "w": true, "sp": true },
+            { "t": "mean", "l": "mean", "p": "VERB", "w": true, "sp": true },
+            { "t": "grammar", "l": "grammar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "useless", "l": "useless", "p": "ADJ", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Not at all.",
+          "tokens": [
+            { "t": "Not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "A short explanation can help you notice a structure that you keep hearing.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "short", "l": "short", "p": "ADJ", "w": true, "sp": true },
+            { "t": "explanation", "l": "explanation", "p": "NOUN", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "help", "l": "help", "p": "VERB", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "notice", "l": "notice", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "structure", "l": "structure", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "keep", "l": "keep", "p": "VERB", "w": true, "sp": true },
+            { "t": "hearing", "l": "hearing", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "The difference is that grammar becomes a tool that helps you understand, not the centre of every lesson.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "difference", "l": "difference", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "DET", "w": true, "sp": true },
+            { "t": "grammar", "l": "grammar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "becomes", "l": "become", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "tool", "l": "tool", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "helps", "l": "help", "p": "VERB", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "understand", "l": "understand", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "centre", "l": "center", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true },
+            { "t": "lesson", "l": "lesson", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Of course, this method needs patience.",
+          "tokens": [
+            { "t": "Of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "course", "l": "course", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "this", "l": "this", "p": "DET", "w": true, "sp": true },
+            { "t": "method", "l": "method", "p": "NOUN", "w": true, "sp": true },
+            { "t": "needs", "l": "need", "p": "VERB", "w": true, "sp": true },
+            { "t": "patience", "l": "patience", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "You will not see results after a week.",
+          "tokens": [
+            { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "will", "l": "will", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "see", "l": "see", "p": "VERB", "w": true, "sp": true },
+            { "t": "results", "l": "result", "p": "NOUN", "w": true, "sp": true },
+            { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "week", "l": "week", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "The secret is to choose something you would enjoy in your own language.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "secret", "l": "secret", "p": "ADJ", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "choose", "l": "choose", "p": "VERB", "w": true, "sp": true },
+            { "t": "something", "l": "something", "p": "PRON", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "enjoy", "l": "enjoy", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+            { "t": "own", "l": "own", "p": "ADJ", "w": true, "sp": true },
+            { "t": "language", "l": "language", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "But people who spend half an hour a day listening to things they enjoy often say the same thing after a few months: one day, without knowing exactly when it happened, they realised they could understand.",
+          "tokens": [
+            { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "spend", "l": "spend", "p": "VERB", "w": true, "sp": true },
+            { "t": "half", "l": "half", "p": "ADV", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "hour", "l": "hour", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "day", "l": "day", "p": "NOUN", "w": true, "sp": true },
+            { "t": "listening", "l": "listen", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "things", "l": "thing", "p": "NOUN", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "enjoy", "l": "enjoy", "p": "VERB", "w": true, "sp": true },
+            { "t": "often", "l": "often", "p": "ADV", "w": true, "sp": true },
+            { "t": "say", "l": "say", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "same", "l": "same", "p": "ADJ", "w": true, "sp": true },
+            { "t": "thing", "l": "thing", "p": "NOUN", "w": true, "sp": true },
+            { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "few", "l": "few", "p": "ADJ", "w": true, "sp": true },
+            { "t": "months", "l": "month", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "day", "l": "day", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "without", "l": "without", "p": "ADP", "w": true, "sp": true },
+            { "t": "knowing", "l": "know", "p": "VERB", "w": true, "sp": true },
+            { "t": "exactly", "l": "exactly", "p": "ADV", "w": true, "sp": true },
+            { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "happened", "l": "happen", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "realised", "l": "realize", "p": "VERB", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "could", "l": "could", "p": "AUX", "w": true, "sp": true },
+            { "t": "understand", "l": "understand", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "Verbo + -ing o verbo + to",
+      "explanation_es": "*suggest looking* y *keep hearing* llevan -ing; *tried to remember* y *begin to understand* llevan *to*. No hay regla: cada verbo se aprende con su patrón.",
+      "refs": ["p4s4", "p5s3", "p1s2"]
+    },
+    {
+      "title_es": "«though» al final de la frase",
+      "explanation_es": "*The level of the material matters, though.* Al final de la frase, *though* significa «sin embargo» y suena más coloquial que *however*.",
+      "refs": ["p4s1"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "as long as",
+      "surface": "as long as",
+      "pos": "phrase",
+      "def_en": "only if",
+      "def_es": "siempre que, con tal de que",
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "material",
+      "surface": "material",
+      "pos": "noun",
+      "def_en": "the texts and recordings that you use to learn",
+      "def_es": "material",
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "past tense",
+      "surface": "past tense",
+      "pos": "phrase",
+      "def_en": "the form of a verb used for things that happened before now",
+      "def_es": "el pasado (tiempo verbal)",
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "speech",
+      "surface": "speech",
+      "pos": "noun",
+      "def_en": "spoken language",
+      "def_es": "habla, lengua hablada",
+      "ref": "p3s3"
+    },
+    {
+      "lemma": "advantage",
+      "surface": "advantage",
+      "pos": "noun",
+      "def_en": "something that helps you to do better than others",
+      "def_es": "ventaja",
+      "ref": "p3s4"
+    },
+    {
+      "lemma": "give up",
+      "surface": "give up",
+      "pos": "phrasal_verb",
+      "def_en": "to stop trying to do something",
+      "def_es": "rendirse, dejarlo",
+      "ref": "p4s2"
+    },
+    {
+      "lemma": "recording",
+      "surface": "recordings",
+      "pos": "noun",
+      "def_en": "sounds that have been saved so you can listen to them",
+      "def_es": "grabación",
+      "ref": "p4s4"
+    },
+    {
+      "lemma": "graded",
+      "surface": "graded",
+      "pos": "adjective",
+      "def_en": "written in simple language for learners of a certain level",
+      "def_es": "graduado, adaptado por niveles",
+      "ref": "p4s5"
+    },
+    {
+      "lemma": "useless",
+      "surface": "useless",
+      "pos": "adjective",
+      "def_en": "not useful at all",
+      "def_es": "inútil",
+      "ref": "p5s1"
+    },
+    {
+      "lemma": "structure",
+      "surface": "structure",
+      "pos": "noun",
+      "def_en": "the way words are put together in a sentence",
+      "def_es": "estructura",
+      "ref": "p5s3"
+    },
+    {
+      "lemma": "tool",
+      "surface": "tool",
+      "pos": "noun",
+      "def_en": "something that helps you to do a job",
+      "def_es": "herramienta",
+      "ref": "p5s4"
+    },
+    {
+      "lemma": "patience",
+      "surface": "patience",
+      "pos": "noun",
+      "def_en": "the ability to wait calmly for a long time",
+      "def_es": "paciencia",
+      "ref": "p6s1"
+    },
+    {
+      "lemma": "realise",
+      "surface": "realised",
+      "pos": "verb",
+      "def_en": "to suddenly understand or notice something",
+      "def_es": "darse cuenta",
+      "ref": "p6s4"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "What is the main idea of the article?",
+      "options": [
+        { "id": "a", "text": "Grammar exercises are the fastest way to learn a new language" },
+        { "id": "b", "text": "Children are better at languages than adults" },
+        { "id": "c", "text": "We learn languages mostly by understanding a lot of them" },
+        { "id": "d", "text": "Adults should learn like schoolchildren" }
+      ],
+      "answer": "c",
+      "evidence": ["p2s2"],
+      "rationale_es": "Es la idea del párrafo 2, que el resto del texto desarrolla."
+    },
+    {
+      "id": "q2",
+      "type": "heading_match",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "Match paragraphs 3, 4 and 5 with the best heading. There is one extra heading.",
+      "paragraphs": ["p3", "p4", "p5"],
+      "headings": [
+        { "id": "a", "text": "Choosing the right level" },
+        { "id": "b", "text": "A place for grammar" },
+        { "id": "c", "text": "How we learned as children" },
+        { "id": "d", "text": "The cost of courses" }
+      ],
+      "answers": { "p3": "c", "p4": "a", "p5": "b" },
+      "evidence": ["p3", "p4", "p5"],
+      "rationale_es": "El párrafo 3 habla de cómo aprenden los niños; el 4, del nivel del material; el 5, del papel de la gramática. De precios no se dice nada."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "According to paragraph 1, what is the problem with traditional learning?",
+      "options": [
+        { "id": "a", "text": "It is far too expensive for most ordinary families" },
+        { "id": "b", "text": "Learners often cannot understand people talking" },
+        { "id": "c", "text": "It takes too little time" },
+        { "id": "d", "text": "Teachers do not like it" }
+      ],
+      "answer": "b",
+      "evidence": ["p1s3"],
+      "rationale_es": "Tras años de reglas y listas, a mucha gente le sigue costando seguir una conversación sencilla."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What advantage do adults have over children?",
+      "options": [
+        { "id": "a", "text": "They have much better memories than children" },
+        { "id": "b", "text": "They have more free time" },
+        { "id": "c", "text": "They can pick their own material" },
+        { "id": "d", "text": "They already know grammar" }
+      ],
+      "answer": "c",
+      "evidence": ["p3s4"],
+      "rationale_es": "*They can choose what to listen to*."
+    },
+    {
+      "id": "q5",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Parents usually explain grammar rules to small children.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["p3s2"],
+      "rationale_es": "*Nobody explains the past tense to a three-year-old*."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "vocab_in_context",
+      "prompt": "In paragraph 4, \"give up\" means…",
+      "options": [
+        { "id": "a", "text": "stop trying" },
+        { "id": "b", "text": "start again" },
+        { "id": "c", "text": "ask for help" },
+        { "id": "d", "text": "feel proud" }
+      ],
+      "answer": "a",
+      "evidence": ["p4s2"],
+      "rationale_es": "Si no entiendes casi nada, te aburres y lo dejas: *give up* = rendirse."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What kind of material do experts recommend?",
+      "options": [
+        { "id": "a", "text": "Material where you understand everything" },
+        { "id": "b", "text": "Material that was made only for native speakers" },
+        { "id": "c", "text": "Material with no new words" },
+        { "id": "d", "text": "Material that is mostly, but not completely, clear" }
+      ],
+      "answer": "d",
+      "evidence": ["p4s4"],
+      "rationale_es": "Que entiendas la mayoría, pero aparezca algo nuevo."
+    },
+    {
+      "id": "q8",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "The writer thinks grammar explanations have no value.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["p5s2"],
+      "rationale_es": "*Not at all*: una explicación corta ayuda a fijarse en una estructura."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "reference",
+      "prompt": "In paragraph 2, whose idea is \"Their idea\"?",
+      "options": [
+        { "id": "a", "text": "Some teachers" },
+        { "id": "b", "text": "Schoolchildren" },
+        { "id": "c", "text": "The writer's parents" },
+        { "id": "d", "text": "Grammar books" }
+      ],
+      "answer": "a",
+      "evidence": ["p2s2"],
+      "rationale_es": "*Their* recoge a *more and more teachers*, de la frase anterior."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "What can we infer from the last paragraph?",
+      "options": [
+        { "id": "a", "text": "The method works quickly" },
+        { "id": "b", "text": "Progress is slow and hard to notice at first" },
+        { "id": "c", "text": "Most people give up the method after only a week" },
+        { "id": "d", "text": "Half an hour a day is not enough" }
+      ],
+      "answer": "b",
+      "evidence": ["p6s2", "p6s4"],
+      "rationale_es": "No hay resultados en una semana, y la gente no sabe decir cuándo empezó a entender: el avance es lento y casi invisible."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "attitude_opinion",
+      "prompt": "What is the writer's opinion of this method?",
+      "options": [
+        { "id": "a", "text": "It is useless for adults" },
+        { "id": "b", "text": "It is perfect and has no problems" },
+        { "id": "c", "text": "It is the only way to learn" },
+        { "id": "d", "text": "It is effective but requires time" }
+      ],
+      "answer": "d",
+      "evidence": ["p6s1"],
+      "rationale_es": "Lo defiende, pero reconoce que exige paciencia."
+    },
+    {
+      "id": "q12",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "The writer learned English with this method.",
+      "answer": "NG",
+      "allow_ng": true,
+      "evidence": ["p1s1"],
+      "rationale_es": "Habla en general; en ningún momento cuenta cómo aprendió inglés."
+    },
+    {
+      "id": "q13",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "vocab_in_context",
+      "prompt": "Complete with one word from the text in each gap.",
+      "text": "If the material is too hard, you will get {{1}} and give up. This method needs {{2}}: results take months.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["bored"],
+          "max_words": 1
+        },
+        {
+          "n": 2,
+          "accept": ["patience"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["p4s2", "p6s1"],
+      "rationale_es": "*Get bored* = aburrirse; *patience* = paciencia."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 312,
+  "lemmas": [
+    "a", "adult", "advantage", "after", "all", "almost", "an", "and", "anything", "as", "at", "be", "become",
+    "begin", "believe", "big", "book", "bore", "but", "can", "center", "child", "choose", "conversation",
+    "could", "course", "day", "difference", "difficult", "do", "enjoy", "every", "everything", "exactly",
+    "exercise", "expert", "explain", "explanation", "few", "find", "first", "follow", "for", "get", "give",
+    "good", "graded", "grammar", "half", "happen", "have", "hear", "hearing", "help", "hour", "how", "idea",
+    "if", "in", "it", "keep", "know", "language", "learn", "learner", "lesson", "level", "list", "listen",
+    "long", "look", "lot", "mainly", "many", "material", "matter", "mean", "meet", "method", "month", "more",
+    "most", "need", "new", "news", "nobody", "not", "nothing", "notice", "of", "often", "old", "one", "other",
+    "own", "past", "patience", "people", "place", "read", "realize", "recording", "remember", "result", "rule",
+    "same", "say", "school", "secret", "see", "short", "similar", "simple", "slowly", "something", "soon",
+    "speech", "spend", "start", "still", "structure", "study", "suggest", "teacher", "tense", "text", "that",
+    "the", "their", "there", "they", "thing", "this", "though", "thousand", "to", "too", "tool", "try",
+    "understand", "up", "us", "useful", "useless", "way", "we", "website", "week", "what", "when", "which",
+    "who", "will", "without", "word", "work", "would", "year", "you", "your"
+  ],
+  "difficulty": 1069,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8534, "A2": 0.9772, "B1": 0.9967, "B2": 0.9967, "C1": 0.9967, "C2": 1 },
+    "off_level_lemmas": ["graded"],
+    "avg_sentence_words": 13,
+    "flesch_reading_ease": 75.7,
+    "checked_at": "2026-10-09T10:03:43.120Z"
+  }
+}
