@@ -1,0 +1,341 @@
+{
+  "id": "a1-rea-003",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "a1-u07",
+  "series": "a1-u07-free-time",
+  "skill": "reading",
+  "genre": "forum",
+  "title": "What do you do on Saturdays?",
+  "summary_es": "Tres compañeros de clase cuentan qué les gusta hacer los sábados.",
+  "topic": "daily-life",
+  "tags": ["tiempo libre", "aficiones", "like + -ing"],
+  "can_do": ["R-A1-02"],
+  "grammar_focus": ["a1.like-ing"],
+  "vocab_focus": ["like playing", "free time", "play the guitar"],
+  "est_minutes": 6,
+  "prediction_prompt": "What do you like doing on Saturdays?",
+  "pre_teach": [],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Class question: What do you do on Saturdays?",
+          "tokens": [
+            { "t": "Class", "l": "class", "p": "NOUN", "w": true, "sp": true },
+            { "t": "question", "l": "question", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "What", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "Saturdays", "l": "saturdays", "p": "PROPN", "w": false },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Tom: I like playing football.",
+          "tokens": [
+            { "t": "Tom", "l": "tom", "p": "PROPN", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "like", "l": "like", "p": "VERB", "w": true, "sp": true },
+            { "t": "playing", "l": "play", "p": "VERB", "w": true, "sp": true },
+            { "t": "football", "l": "football", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "I play with my friends in the park every Saturday morning.",
+          "tokens": [
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "play", "l": "play", "p": "VERB", "w": true, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true },
+            { "t": "friends", "l": "friend", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "park", "l": "park", "p": "NOUN", "w": true, "sp": true },
+            { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true },
+            { "t": "Saturday", "l": "saturday", "p": "PROPN", "w": false, "sp": true },
+            { "t": "morning", "l": "morning", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "In the afternoon I watch TV at home.",
+          "tokens": [
+            { "t": "In", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "afternoon", "l": "afternoon", "p": "NOUN", "w": true, "sp": true },
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "watch", "l": "watch", "p": "VERB", "w": true, "sp": true },
+            { "t": "TV", "l": "tv", "p": "PROPN", "w": false, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "home", "l": "home", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Sara: I don't like sport.",
+          "tokens": [
+            { "t": "Sara", "l": "sara", "p": "PROPN", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "do", "l": "do", "p": "AUX", "w": true },
+            { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "like", "l": "like", "p": "VERB", "w": true, "sp": true },
+            { "t": "sport", "l": "sport", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "I like reading books.",
+          "tokens": [
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "like", "l": "like", "p": "VERB", "w": true, "sp": true },
+            { "t": "reading", "l": "reading", "p": "NOUN", "w": true, "sp": true },
+            { "t": "books", "l": "book", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "On Saturdays I make a cake with my sister.",
+          "tokens": [
+            { "t": "On", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "Saturdays", "l": "saturdays", "p": "PROPN", "w": false, "sp": true },
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "make", "l": "make", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "cake", "l": "cake", "p": "NOUN", "w": true, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true },
+            { "t": "sister", "l": "sister", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Then we eat it!",
+          "tokens": [
+            { "t": "Then", "l": "then", "p": "ADV", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "eat", "l": "eat", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Ali: I love music.",
+          "tokens": [
+            { "t": "Ali", "l": "ali", "p": "PROPN", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "love", "l": "love", "p": "VERB", "w": true, "sp": true },
+            { "t": "music", "l": "music", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "I play the guitar in my room.",
+          "tokens": [
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "play", "l": "play", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "guitar", "l": "guitar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true },
+            { "t": "room", "l": "room", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "On Saturday evening I go to the cinema with my brother.",
+          "tokens": [
+            { "t": "On", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "Saturday", "l": "saturday", "p": "PROPN", "w": false, "sp": true },
+            { "t": "evening", "l": "evening", "p": "NOUN", "w": true, "sp": true },
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "go", "l": "go", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "cinema", "l": "cinema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true },
+            { "t": "brother", "l": "brother", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "like + -ing",
+      "explanation_es": "Después de *like*, *love* y *don't like*, el verbo va en -ing: *I like playing football*, *I like reading books*.",
+      "refs": ["p2s1", "p3s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "guitar",
+      "surface": "guitar",
+      "pos": "noun",
+      "def_en": "a thing with six strings that you play to make music",
+      "def_es": "guitarra",
+      "ref": "p4s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "What are the three people writing about?",
+      "options": [
+        { "id": "a", "text": "Their school" },
+        { "id": "b", "text": "Their free time" },
+        { "id": "c", "text": "Their families" }
+      ],
+      "answer": "b",
+      "evidence": ["p1s1"],
+      "rationale_es": "Contestan a la pregunta de la clase: qué hacen los sábados, en su tiempo libre."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Who plays a sport?",
+      "options": [
+        { "id": "a", "text": "Tom" },
+        { "id": "b", "text": "Sara" },
+        { "id": "c", "text": "Ali" }
+      ],
+      "answer": "a",
+      "evidence": ["p2s1"],
+      "rationale_es": "Tom juega al fútbol. A Sara no le gusta el deporte y Ali toca la guitarra."
+    },
+    {
+      "id": "q3",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Sara likes football.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["p3s1"],
+      "rationale_es": "*I don't like sport*: no le gusta el deporte."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What does Sara do with her sister?",
+      "options": [
+        { "id": "a", "text": "She plays football" },
+        { "id": "b", "text": "She reads books" },
+        { "id": "c", "text": "She makes a cake" }
+      ],
+      "answer": "c",
+      "evidence": ["p3s3"],
+      "rationale_es": "*On Saturdays I make a cake with my sister*."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "When does Ali go to the cinema?",
+      "options": [
+        { "id": "a", "text": "On Saturday morning" },
+        { "id": "b", "text": "On Saturday evening" },
+        { "id": "c", "text": "On Sunday afternoon" }
+      ],
+      "answer": "b",
+      "evidence": ["p4s3"],
+      "rationale_es": "*On Saturday evening*: el sábado por la tarde-noche."
+    },
+    {
+      "id": "q6",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Ali plays the guitar in the park.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["p4s2"],
+      "rationale_es": "La toca *in my room*, en su habitación. En el parque juega Tom."
+    },
+    {
+      "id": "q7",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one word from the text.",
+      "text": "Tom plays football with his {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["friends"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["p2s2"],
+      "rationale_es": "*I play with my friends in the park*."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 76,
+  "lemmas": [
+    "a", "afternoon", "at", "book", "brother", "cake", "cinema", "class", "do", "eat", "evening", "every",
+    "football", "friend", "go", "guitar", "home", "i", "in", "it", "like", "love", "make", "morning", "music",
+    "my", "not", "on", "park", "play", "question", "reading", "room", "sister", "sport", "the", "then", "to",
+    "watch", "we", "what", "with", "you"
+  ],
+  "difficulty": 670,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 6.9,
+    "flesch_reading_ease": 86.6,
+    "checked_at": "2026-10-09T09:55:42.074Z"
+  }
+}

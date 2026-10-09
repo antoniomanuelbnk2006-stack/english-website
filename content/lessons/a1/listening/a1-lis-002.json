@@ -1,0 +1,481 @@
+{
+  "id": "a1-lis-002",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "a1-u01",
+  "series": "a1-u01-hello",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "A new student",
+  "summary_es": "Leo llega a su primera clase de inglés y la profesora le pregunta el nombre, de dónde es, la edad y el teléfono.",
+  "topic": "education",
+  "tags": ["presentaciones", "números", "clase"],
+  "can_do": ["L-A1-01", "L-A1-02", "L-A1-04"],
+  "grammar_focus": ["a1.verb-be"],
+  "vocab_focus": ["nice to meet you", "phone number", "room"],
+  "est_minutes": 6,
+  "prediction_prompt": "A new student meets his teacher. What does the teacher ask?",
+  "pre_teach": ["phone number"],
+  "speakers": [
+    { "id": "kate", "name": "Kate", "accent": "en-GB", "gender": "female" },
+    { "id": "leo", "name": "Leo", "accent": "en-US", "gender": "male" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "kate",
+      "text": "Hello! Welcome to the English class. I'm Kate, your teacher.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Hello", "l": "hello", "p": "INTJ", "w": false, "s": 0.046, "e": 0.569 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Welcome", "l": "welcome", "p": "ADJ", "w": true, "sp": true, "s": 0.569, "e": 1.267 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 1.267, "e": 1.529 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 1.528, "e": 1.877 },
+        { "t": "English", "l": "english", "p": "PROPN", "w": false, "sp": true, "s": 1.877, "e": 2.575 },
+        { "t": "class", "l": "class", "p": "NOUN", "w": true, "s": 2.575, "e": 3.098 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 3.098, "e": 3.447 },
+        { "t": "Kate", "l": "kate", "p": "PROPN", "w": false, "s": 3.447, "e": 3.883 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 3.882, "e": 4.318 },
+        { "t": "teacher", "l": "teacher", "p": "NOUN", "w": true, "s": 4.318, "e": 5.016 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 5.101
+    },
+    {
+      "id": "s2",
+      "speaker": "leo",
+      "text": "Hi, Kate. My name is Leo.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Hi", "l": "hi", "p": "INTJ", "w": false, "s": 6.246, "e": 6.515 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Kate", "l": "kate", "p": "PROPN", "w": false, "s": 6.515, "e": 6.963 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "My", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 6.963, "e": 7.232 },
+        { "t": "name", "l": "name", "p": "NOUN", "w": true, "sp": true, "s": 7.231, "e": 7.679 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 7.679, "e": 7.948 },
+        { "t": "Leo", "l": "leo", "p": "PROPN", "w": false, "s": 7.948, "e": 8.306 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.201,
+      "end": 8.463
+    },
+    {
+      "id": "s3",
+      "speaker": "kate",
+      "text": "Nice to meet you, Leo. Where are you from?",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Nice", "l": "nice", "p": "ADJ", "w": true, "sp": true, "s": 9.598, "e": 10.012 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 10.012, "e": 10.26 },
+        { "t": "meet", "l": "meet", "p": "VERB", "w": true, "sp": true, "s": 10.26, "e": 10.674 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 10.674, "e": 11.005 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Leo", "l": "leo", "p": "PROPN", "w": false, "s": 11.005, "e": 11.336 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Where", "l": "where", "p": "ADV", "w": true, "sp": true, "s": 11.336, "e": 11.833 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 11.832, "e": 12.163 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 12.163, "e": 12.494 },
+        { "t": "from", "l": "from", "p": "ADP", "w": true, "s": 12.494, "e": 12.908 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.563,
+      "end": 13.043
+    },
+    {
+      "id": "s4",
+      "speaker": "leo",
+      "text": "I'm from Spain. I'm from Madrid.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 14.183, "e": 14.469 },
+        { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true, "s": 14.469, "e": 14.827 },
+        { "t": "Spain", "l": "spain", "p": "PROPN", "w": false, "s": 14.828, "e": 15.258 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 15.257, "e": 15.543 },
+        { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true, "s": 15.544, "e": 15.902 },
+        { "t": "Madrid", "l": "madrid", "p": "PROPN", "w": false, "s": 15.902, "e": 16.403 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 14.143,
+      "end": 16.56
+    },
+    {
+      "id": "s5",
+      "speaker": "kate",
+      "text": "Great. How old are you?",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Great", "l": "great", "p": "ADJ", "w": true, "s": 17.69, "e": 18.244 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 18.244, "e": 18.613 },
+        { "t": "old", "l": "old", "p": "ADJ", "w": true, "sp": true, "s": 18.613, "e": 18.982 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 18.982, "e": 19.351 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 19.351, "e": 19.72 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.66,
+      "end": 19.895
+    },
+    {
+      "id": "s6",
+      "speaker": "leo",
+      "text": "I'm nineteen.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 21.025, "e": 21.376 },
+        { "t": "nineteen", "l": "nineteen", "p": "NUM", "w": false, "s": 21.376, "e": 22.165 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.995,
+      "end": 22.298
+    },
+    {
+      "id": "s7",
+      "speaker": "kate",
+      "text": "And what's your phone number?",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 23.426, "e": 23.739 },
+        { "t": "what", "l": "what", "p": "PRON", "w": true, "s": 23.739, "e": 24.104 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 24.104, "e": 24.287 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 24.287, "e": 24.678 },
+        { "t": "phone", "l": "phone", "p": "NOUN", "w": true, "sp": true, "s": 24.678, "e": 25.148 },
+        { "t": "number", "l": "number", "p": "NOUN", "w": true, "s": 25.148, "e": 25.696 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.398,
+      "end": 25.828
+    },
+    {
+      "id": "s8",
+      "speaker": "leo",
+      "text": "It's six one two, four four seven, nine three zero.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 26.957, "e": 27.181 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 27.181, "e": 27.405 },
+        { "t": "six", "l": "six", "p": "NUM", "w": false, "sp": true, "s": 27.405, "e": 27.763 },
+        { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true, "s": 27.763, "e": 28.121 },
+        { "t": "two", "l": "two", "p": "NUM", "w": false, "s": 28.122, "e": 28.48 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true, "s": 28.48, "e": 28.928 },
+        { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true, "s": 28.928, "e": 29.376 },
+        { "t": "seven", "l": "seven", "p": "NUM", "w": false, "s": 29.376, "e": 29.914 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "nine", "l": "nine", "p": "NUM", "w": false, "sp": true, "s": 29.914, "e": 30.362 },
+        { "t": "three", "l": "three", "p": "NUM", "w": false, "sp": true, "s": 30.361, "e": 30.899 },
+        { "t": "zero", "l": "zero", "p": "NUM", "w": false, "s": 30.899, "e": 31.347 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.928,
+      "end": 31.454
+    },
+    {
+      "id": "s9",
+      "speaker": "kate",
+      "text": "Thank you. Our class is in room five.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Thank", "l": "thank", "p": "VERB", "w": true, "sp": true, "s": 32.601, "e": 33.098 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 33.098, "e": 33.429 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Our", "l": "our", "p": "PRON", "w": true, "sp": true, "s": 33.429, "e": 33.76 },
+        { "t": "class", "l": "class", "p": "NOUN", "w": true, "sp": true, "s": 33.76, "e": 34.257 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 34.257, "e": 34.505 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 34.505, "e": 34.753 },
+        { "t": "room", "l": "room", "p": "NOUN", "w": true, "sp": true, "s": 34.753, "e": 35.167 },
+        { "t": "five", "l": "five", "p": "NUM", "w": false, "s": 35.167, "e": 35.581 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.554,
+      "end": 35.834
+    },
+    {
+      "id": "s10",
+      "speaker": "leo",
+      "text": "Room five. What time is the class?",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Room", "l": "room", "p": "NOUN", "w": true, "sp": true, "s": 36.959, "e": 37.429 },
+        { "t": "five", "l": "five", "p": "NUM", "w": false, "s": 37.429, "e": 37.899 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "What", "l": "what", "p": "DET", "w": true, "sp": true, "s": 38.039, "e": 38.348 },
+        { "t": "time", "l": "time", "p": "NOUN", "w": true, "sp": true, "s": 38.348, "e": 38.657 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 38.656, "e": 38.841 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 38.842, "e": 39.089 },
+        { "t": "class", "l": "class", "p": "NOUN", "w": true, "s": 39.089, "e": 39.459 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 36.934,
+      "end": 39.506
+    },
+    {
+      "id": "s11",
+      "speaker": "kate",
+      "text": "It's at ten o'clock, on Mondays and Thursdays.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 40.634, "e": 40.823 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 40.823, "e": 41.012 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 41.012, "e": 41.239 },
+        { "t": "ten", "l": "ten", "p": "NUM", "w": false, "sp": true, "s": 41.238, "e": 41.54 },
+        { "t": "o'clock", "l": "o'clock", "p": "ADV", "w": true, "s": 41.54, "e": 42.144 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 42.324, "e": 42.568 },
+        { "t": "Mondays", "l": "mondays", "p": "PROPN", "w": false, "sp": true, "s": 42.568, "e": 43.218 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 43.217, "e": 43.542 },
+        { "t": "Thursdays", "l": "thursdays", "p": "PROPN", "w": false, "s": 43.542, "e": 44.354 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 40.606,
+      "end": 44.554
+    },
+    {
+      "id": "s12",
+      "speaker": "leo",
+      "text": "Thank you, Kate. See you on Monday!",
+      "tokens": [
+        { "t": "Thank", "l": "thank", "p": "VERB", "w": true, "sp": true, "s": 45.692, "e": 46.085 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 46.085, "e": 46.347 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Kate", "l": "kate", "p": "PROPN", "w": false, "s": 46.347, "e": 46.674 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "See", "l": "see", "p": "VERB", "w": true, "sp": true, "s": 46.674, "e": 46.936 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 46.936, "e": 47.198 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 47.197, "e": 47.393 },
+        { "t": "Monday", "l": "monday", "p": "PROPN", "w": false, "s": 47.394, "e": 47.852 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 45.654,
+      "end": 48.039
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s1",
+      "phrase": "I'm Kate",
+      "type": "contraction",
+      "ipa": "/aɪm ˈkeɪt/",
+      "explanation_es": "*I'm* = *I am*. Se dice casi siempre junto, como una sola palabra."
+    },
+    {
+      "ref": "s3",
+      "phrase": "Where are you from",
+      "type": "weak_form",
+      "ipa": "/ˈweər ə jə ˈfrɒm/",
+      "explanation_es": "*are* y *you* son débiles: suenan /ə/ y /jə/, muy cortos."
+    },
+    {
+      "ref": "s7",
+      "phrase": "what's your",
+      "type": "contraction",
+      "ipa": "/ˈwɒts jɔː/",
+      "explanation_es": "*what's* = *what is*. La *s* se pega a *what*."
+    },
+    {
+      "ref": "s11",
+      "phrase": "at ten o'clock",
+      "type": "weak_form",
+      "ipa": "/ət ˈten əˈklɒk/",
+      "explanation_es": "*at* suena /ət/, muy corto, pegado a la hora."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "welcome",
+      "surface": "Welcome",
+      "pos": "other",
+      "def_en": "you say this when a person arrives",
+      "def_es": "bienvenido, bienvenida",
+      "ref": "s1"
+    },
+    {
+      "lemma": "nice to meet you",
+      "surface": "Nice to meet you",
+      "pos": "phrase",
+      "def_en": "you say this when you meet a person for the first time",
+      "def_es": "encantado, encantada",
+      "ref": "s3"
+    },
+    {
+      "lemma": "phone number",
+      "surface": "phone number",
+      "pos": "phrase",
+      "def_en": "the numbers you use to call a person",
+      "def_es": "número de teléfono",
+      "ref": "s7"
+    },
+    {
+      "lemma": "room",
+      "surface": "room",
+      "pos": "noun",
+      "def_en": "a part of a building with walls and a door",
+      "def_es": "aula, sala",
+      "ref": "s9"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "Who is Leo?",
+      "options": [
+        { "id": "a", "text": "A new student" },
+        { "id": "b", "text": "Kate's brother" },
+        { "id": "c", "text": "A teacher" }
+      ],
+      "answer": "a",
+      "evidence": ["s1"],
+      "rationale_es": "Kate le da la bienvenida a la clase y se presenta como su profesora: Leo es un alumno nuevo."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Where is Leo from?",
+      "options": [
+        { "id": "a", "text": "Italy" },
+        { "id": "b", "text": "Spain" },
+        { "id": "c", "text": "England" }
+      ],
+      "answer": "b",
+      "evidence": ["s4"],
+      "rationale_es": "*I'm from Spain. I'm from Madrid.*"
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "How old is Leo?",
+      "options": [
+        { "id": "a", "text": "Nine" },
+        { "id": "b", "text": "Ninety" },
+        { "id": "c", "text": "Nineteen" }
+      ],
+      "answer": "c",
+      "evidence": ["s6"],
+      "rationale_es": "*Nineteen* (19) lleva el acento al final; *ninety* (90), al principio."
+    },
+    {
+      "id": "q4",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "The class is in room four.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["s9"],
+      "rationale_es": "Kate dice *room five*, y Leo lo repite."
+    },
+    {
+      "id": "q5",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the phone number with one number.",
+      "text": "Leo's phone number is 612 447 9{{1}}0.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["3", "three"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["s8"],
+      "rationale_es": "Los tres últimos números son *nine three zero*: 930."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "When is the class?",
+      "options": [
+        { "id": "a", "text": "On Mondays and Thursdays" },
+        { "id": "b", "text": "On Tuesdays and Saturdays" },
+        { "id": "c", "text": "Every day" }
+      ],
+      "answer": "a",
+      "evidence": ["s11"],
+      "rationale_es": "*It's at ten o'clock, on Mondays and Thursdays*: lunes y jueves."
+    },
+    {
+      "id": "q7",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s3",
+      "reference": "Nice to meet you, Leo. Where are you from?",
+      "accept_variants": [],
+      "evidence": ["s3"],
+      "rationale_es": "*are* y *you* casi no se oyen: /ˈweər ə jə ˈfrɒm/."
+    },
+    {
+      "id": "q8",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s7",
+      "reference": "And what's your phone number?",
+      "accept_variants": ["And what is your phone number?"],
+      "evidence": ["s7"],
+      "rationale_es": "La contracción *what's* suena como una sola palabra."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "and", "at", "be", "class", "from", "great", "how", "in", "it", "meet", "my", "name", "nice", "number",
+    "o'clock", "old", "on", "our", "phone", "room", "see", "teacher", "thank", "the", "time", "to", "welcome",
+    "what", "where", "you", "your"
+  ],
+  "difficulty": 676,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 4,
+    "flesch_reading_ease": 104.3,
+    "checked_at": "2026-10-09T09:55:42.074Z"
+  },
+  "audio": {
+    "src": "audio/a1/a1-lis-002/v1.m4a",
+    "duration_s": 48.039,
+    "wpm": 104,
+    "provider": "kokoro",
+    "voices": { "kate": "bf_isabella", "leo": "am_puck" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      0.34, 0.76, 0.54, 0.29, 0.71, 0.53, 0.26, 0.43, 0.5, 0.37, 0.34, 0.33, 0.31, 0.64, 0.01, 0, 0.62, 0.48,
+      0.4, 0.31, 0.37, 0.38, 0.26, 0.29, 0.12, 0.02, 0, 0, 0, 0, 0, 0.78, 0.98, 0.71, 0.53, 0.59, 0.55, 0.42,
+      0.41, 0.3, 0.4, 0.32, 0.01, 0, 0, 0, 0, 0.14, 0.63, 0.61, 0.84, 0.63, 0.58, 0.47, 0.33, 0.22, 0.14, 0.01,
+      0.87, 0.7, 0.74, 0.38, 0.35, 0.28, 0.04, 0.01, 0, 0, 0, 0, 0.22, 0.91, 0.61, 0.4, 0.73, 0.42, 0.55, 0.63,
+      0.53, 0.42, 0.59, 0.34, 0.03, 0, 0, 0, 0, 0, 0.42, 0.61, 0.55, 0.78, 0.53, 1, 0.62, 0.62, 0.41, 0.42,
+      0.11, 0.01, 0, 0, 0, 0, 0, 0.73, 0.71, 0.79, 0.35, 0.38, 0.22, 0.01, 0, 0, 0, 0, 0, 0.69, 0.56, 0.53,
+      0.67, 0.58, 0.16, 0.47, 0.29, 0.5, 0.4, 0.2, 0.06, 0, 0, 0, 0, 0, 0.29, 0.92, 0.72, 0.37, 0.68, 0.61,
+      0.6, 0.4, 0.06, 0.89, 0.45, 0.68, 0.61, 0.72, 0.33, 0.51, 0.64, 0.29, 0.29, 0.24, 0.37, 0.44, 0.22, 0.01,
+      0, 0, 0, 0, 0.25, 0.7, 0.65, 0.5, 0.29, 0.6, 0.68, 0.44, 0.56, 0.63, 0.43, 0.76, 0.33, 0.5, 0.26, 0.15,
+      0.01, 0, 0, 0, 0, 0, 0.17, 0.73, 0.66, 0.79, 0.64, 0.29, 0.66, 0.59, 0.52, 0.4, 0.57, 0.56, 0.17, 0.05,
+      0, 0, 0, 0, 0, 0.81, 0.82, 0.62, 0.41, 0.33, 0.46, 0.4, 0.31, 0.61, 0.6, 0.77, 0.46, 0.33, 0.63, 0.35,
+      0.33, 0.41, 0.15, 0.45, 0.01, 0, 0, 0, 0, 0, 0.81, 0.69, 0.53, 0.71, 0.49, 0.28, 0.63, 0.68, 0.58, 0.57,
+      0.43, 0.04
+    ]
+  }
+}

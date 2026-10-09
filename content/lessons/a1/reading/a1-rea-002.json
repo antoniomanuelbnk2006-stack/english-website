@@ -1,0 +1,414 @@
+{
+  "id": "a1-rea-002",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "a1-u05",
+  "series": "a1-u05-home",
+  "skill": "reading",
+  "genre": "notice",
+  "title": "A flat to rent",
+  "summary_es": "Un anuncio de alquiler: cómo es el piso, qué hay cerca, cuánto cuesta y cuándo se puede ver.",
+  "topic": "city-housing",
+  "tags": ["casa", "barrio", "anuncio"],
+  "can_do": ["R-A1-01", "R-A1-03"],
+  "grammar_focus": ["a1.there-is-are"],
+  "vocab_focus": ["rent", "bedroom", "near", "floor"],
+  "est_minutes": 6,
+  "prediction_prompt": "You want a new flat. What do you want to know about it?",
+  "pre_teach": ["rent"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Flat to rent in Green Street.",
+          "tokens": [
+            { "t": "Flat", "l": "flat", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "rent", "l": "rent", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "Green", "l": "green", "p": "PROPN", "w": false, "sp": true },
+            { "t": "Street", "l": "street", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "The flat is small but nice.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "flat", "l": "flat", "p": "ADJ", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "small", "l": "small", "p": "ADJ", "w": true, "sp": true },
+            { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "nice", "l": "nice", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "It is on the second floor.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "second", "l": "second", "p": "ADJ", "w": true, "sp": true },
+            { "t": "floor", "l": "floor", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "There are two bedrooms and one bathroom.",
+          "tokens": [
+            { "t": "There", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true },
+            { "t": "bedrooms", "l": "bedroom", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "bathroom", "l": "bathroom", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "There is a big kitchen.",
+          "tokens": [
+            { "t": "There", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "big", "l": "big", "p": "ADJ", "w": true, "sp": true },
+            { "t": "kitchen", "l": "kitchen", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s5",
+          "text": "The living room has a sofa and a TV.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "living", "l": "living", "p": "ADJ", "w": true, "sp": true },
+            { "t": "room", "l": "room", "p": "NOUN", "w": true, "sp": true },
+            { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "sofa", "l": "sofa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "TV", "l": "tv", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s6",
+          "text": "There is no garden.",
+          "tokens": [
+            { "t": "There", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true },
+            { "t": "garden", "l": "garden", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "The flat is near the park.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "flat", "l": "flat", "p": "ADJ", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "near", "l": "near", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "park", "l": "park", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "There is a supermarket in the same street.",
+          "tokens": [
+            { "t": "There", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "supermarket", "l": "supermarket", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "same", "l": "same", "p": "ADJ", "w": true, "sp": true },
+            { "t": "street", "l": "street", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "The bus stop is two minutes from the door.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "bus", "l": "bus", "p": "NOUN", "w": true, "sp": true },
+            { "t": "stop", "l": "stop", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true },
+            { "t": "minutes", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "door", "l": "door", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "The school is ten minutes from the flat.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "school", "l": "school", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "ten", "l": "ten", "p": "NUM", "w": false, "sp": true },
+            { "t": "minutes", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "flat", "l": "flat", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s5",
+          "text": "It is a good flat for a small family.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "good", "l": "good", "p": "ADV", "w": true, "sp": true },
+            { "t": "flat", "l": "flat", "p": "ADJ", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "small", "l": "small", "p": "ADJ", "w": true, "sp": true },
+            { "t": "family", "l": "family", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "The rent is 600 dollars a month.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "rent", "l": "rent", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "600", "l": "600", "p": "NUM", "w": false, "sp": true },
+            { "t": "dollars", "l": "dollar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "month", "l": "month", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Call Anna on 555 0142.",
+          "tokens": [
+            { "t": "Call", "l": "call", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Anna", "l": "anna", "p": "PROPN", "w": false, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "555", "l": "555", "p": "NUM", "w": false, "sp": true },
+            { "t": "0142", "l": "0142", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "You can see the flat on Saturday morning.",
+          "tokens": [
+            { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "see", "l": "see", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "flat", "l": "flat", "p": "ADJ", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "Saturday", "l": "saturday", "p": "PROPN", "w": false, "sp": true },
+            { "t": "morning", "l": "morning", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "There is / There are",
+      "explanation_es": "*There is* + singular (*There is a big kitchen*); *There are* + plural (*There are two bedrooms*). Es el «hay» del inglés.",
+      "refs": ["p2s3", "p2s4"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "rent",
+      "surface": "rent",
+      "pos": "verb",
+      "def_en": "to pay money every month to live in a house or flat",
+      "def_es": "alquilar",
+      "ref": "p1s1"
+    },
+    {
+      "lemma": "flat",
+      "surface": "flat",
+      "pos": "noun",
+      "def_en": "a home in a building with other homes",
+      "def_es": "piso",
+      "ref": "p1s1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "What is this text?",
+      "options": [
+        { "id": "a", "text": "A letter to a friend" },
+        { "id": "b", "text": "A notice about a flat" },
+        { "id": "c", "text": "A story about a family" }
+      ],
+      "answer": "b",
+      "evidence": ["p1s1"],
+      "rationale_es": "Es un anuncio: *Flat to rent* (se alquila piso), con el precio y un teléfono."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "How many bedrooms are there?",
+      "options": [
+        { "id": "a", "text": "Two" },
+        { "id": "b", "text": "One" },
+        { "id": "c", "text": "Three" }
+      ],
+      "answer": "a",
+      "evidence": ["p2s3"],
+      "rationale_es": "*There are two bedrooms and one bathroom*: dos dormitorios y un baño."
+    },
+    {
+      "id": "q3",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "The flat has a garden.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["p2s6"],
+      "rationale_es": "*There is no garden*: no hay jardín."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What is near the flat?",
+      "options": [
+        { "id": "a", "text": "A hospital" },
+        { "id": "b", "text": "A cinema" },
+        { "id": "c", "text": "A park" }
+      ],
+      "answer": "c",
+      "evidence": ["p3s1"],
+      "rationale_es": "*The flat is near the park*."
+    },
+    {
+      "id": "q5",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "The supermarket is in Green Street.",
+      "answer": "T",
+      "allow_ng": false,
+      "evidence": ["p3s2"],
+      "rationale_es": "Está *in the same street*: en la misma calle que el piso, Green Street."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "How much is the flat every month?",
+      "options": [
+        { "id": "a", "text": "500 dollars" },
+        { "id": "b", "text": "600 dollars" },
+        { "id": "c", "text": "700 dollars" }
+      ],
+      "answer": "b",
+      "evidence": ["p4s1"],
+      "rationale_es": "*The rent is 600 dollars a month*."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "How can you get more information?",
+      "options": [
+        { "id": "a", "text": "Phone Anna" },
+        { "id": "b", "text": "Visit the school" },
+        { "id": "c", "text": "Write a letter" }
+      ],
+      "answer": "a",
+      "evidence": ["p4s2"],
+      "rationale_es": "*Call Anna on 555 0142*: hay que llamarla."
+    },
+    {
+      "id": "q8",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one word from the text.",
+      "text": "You can see the flat on {{1}} morning.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["Saturday"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["p4s3"],
+      "rationale_es": "*You can see the flat on Saturday morning*."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 103,
+  "lemmas": [
+    "a", "and", "bathroom", "be", "bedroom", "big", "bus", "but", "call", "can", "dollar", "door", "family",
+    "flat", "floor", "for", "from", "garden", "good", "have", "in", "it", "kitchen", "living", "minute",
+    "month", "morning", "near", "nice", "no", "on", "park", "rent", "room", "same", "school", "second", "see",
+    "small", "sofa", "stop", "street", "supermarket", "the", "there", "to", "you"
+  ],
+  "difficulty": 692,
+  "qa": {
+    "coverage_by_level": { "A1": 0.978, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": ["rent"],
+    "avg_sentence_words": 6.9,
+    "flesch_reading_ease": 99.4,
+    "checked_at": "2026-10-09T09:55:42.074Z"
+  }
+}

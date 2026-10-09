@@ -1,0 +1,490 @@
+{
+  "id": "a1-lis-004",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "a1-u06",
+  "series": "a1-u06-shopping",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "A blue T-shirt",
+  "summary_es": "Nina entra en una tienda de ropa: pide una camiseta azul de la talla pequeña y pregunta los precios.",
+  "topic": "money",
+  "tags": ["compras", "ropa", "precios", "colores"],
+  "can_do": ["L-A1-01", "L-A1-04", "L-A1-05"],
+  "grammar_focus": ["a1.demonstratives"],
+  "vocab_focus": ["can I help you", "size", "how much", "expensive"],
+  "est_minutes": 6,
+  "prediction_prompt": "A woman is in a shop. What does she want to buy?",
+  "pre_teach": ["size", "expensive"],
+  "speakers": [
+    { "id": "ben", "name": "Ben", "accent": "en-GB", "gender": "male" },
+    { "id": "nina", "name": "Nina", "accent": "en-US", "gender": "female" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "ben",
+      "text": "Good morning. Can I help you?",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Good", "l": "good", "p": "ADJ", "w": true, "sp": true, "s": 0.142, "e": 0.499 },
+        { "t": "morning", "l": "morning", "p": "NOUN", "w": true, "s": 0.499, "e": 1.07 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 1.071, "e": 1.357 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 1.356, "e": 1.499 },
+        { "t": "help", "l": "help", "p": "VERB", "w": true, "sp": true, "s": 1.499, "e": 1.856 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 1.856, "e": 2.142 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.923
+    },
+    {
+      "id": "s2",
+      "speaker": "nina",
+      "text": "Yes, please. I want a T-shirt.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Yes", "l": "yes", "p": "INTJ", "w": false, "s": 4.046, "e": 4.43 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "please", "l": "please", "p": "INTJ", "w": false, "s": 4.43, "e": 5.101 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 5.101, "e": 5.293 },
+        { "t": "want", "l": "want", "p": "VERB", "w": true, "sp": true, "s": 5.293, "e": 5.773 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 5.773, "e": 5.965 },
+        { "t": "T", "l": "t", "p": "PROPN", "w": false, "s": 5.965, "e": 6.077 },
+        { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+        { "t": "shirt", "l": "shirt", "p": "NOUN", "w": true, "s": 6.077, "e": 6.636 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.023,
+      "end": 6.689
+    },
+    {
+      "id": "s3",
+      "speaker": "ben",
+      "text": "What colour do you want?",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "What", "l": "what", "p": "DET", "w": true, "sp": true, "s": 7.873, "e": 8.244 },
+        { "t": "colour", "l": "color", "p": "NOUN", "w": true, "sp": true, "s": 8.244, "e": 8.763 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 8.763, "e": 8.986 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 8.986, "e": 9.283 },
+        { "t": "want", "l": "want", "p": "VERB", "w": true, "s": 9.282, "e": 9.653 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.789,
+      "end": 10.222
+    },
+    {
+      "id": "s4",
+      "speaker": "nina",
+      "text": "Blue, please. Do you have this one in blue?",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Blue", "l": "blue", "p": "ADJ", "w": true, "s": 11.345, "e": 11.689 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "please", "l": "please", "p": "INTJ", "w": false, "s": 11.689, "e": 12.172 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 12.172, "e": 12.38 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 12.38, "e": 12.655 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 12.655, "e": 13 },
+        { "t": "this", "l": "this", "p": "PRON", "w": true, "sp": true, "s": 13.002, "e": 13.346 },
+        { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true, "s": 13.346, "e": 13.622 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 13.622, "e": 13.829 },
+        { "t": "blue", "l": "blue", "p": "ADJ", "w": true, "s": 13.829, "e": 14.175 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.322,
+      "end": 14.225
+    },
+    {
+      "id": "s5",
+      "speaker": "ben",
+      "text": "Yes, we do. What size are you?",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Yes", "l": "yes", "p": "INTJ", "w": false, "s": 15.439, "e": 15.752 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 15.752, "e": 15.987 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "s": 15.987, "e": 16.222 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "What", "l": "what", "p": "DET", "w": true, "sp": true, "s": 16.221, "e": 16.612 },
+        { "t": "size", "l": "size", "p": "NOUN", "w": true, "sp": true, "s": 16.612, "e": 17.003 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 17.003, "e": 17.316 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 17.316, "e": 17.629 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.325,
+      "end": 18.532
+    },
+    {
+      "id": "s6",
+      "speaker": "nina",
+      "text": "Small, I think.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Small", "l": "small", "p": "ADJ", "w": true, "s": 19.66, "e": 20.131 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 20.131, "e": 20.288 },
+        { "t": "think", "l": "think", "p": "VERB", "w": true, "s": 20.289, "e": 20.76 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.632,
+      "end": 20.811
+    },
+    {
+      "id": "s7",
+      "speaker": "ben",
+      "text": "Here you are. A small blue T-shirt.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Here", "l": "here", "p": "ADV", "w": true, "sp": true, "s": 22.031, "e": 22.436 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 22.436, "e": 22.76 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "s": 22.759, "e": 23.083 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true, "s": 23.083, "e": 23.245 },
+        { "t": "small", "l": "small", "p": "ADV", "w": true, "sp": true, "s": 23.245, "e": 23.73 },
+        { "t": "blue", "l": "blue", "p": "ADJ", "w": true, "sp": true, "s": 23.73, "e": 24.135 },
+        { "t": "T", "l": "t", "p": "PROPN", "w": false, "s": 24.135, "e": 24.229 },
+        { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+        { "t": "shirt", "l": "shirt", "p": "NOUN", "w": true, "s": 24.229, "e": 24.701 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.91,
+      "end": 25.561
+    },
+    {
+      "id": "s8",
+      "speaker": "nina",
+      "text": "Thank you. How much is it?",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Thank", "l": "thank", "p": "VERB", "w": true, "sp": true, "s": 26.709, "e": 27.165 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 27.165, "e": 27.469 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 27.609, "e": 27.873 },
+        { "t": "much", "l": "much", "p": "ADJ", "w": true, "sp": true, "s": 27.873, "e": 28.203 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 28.203, "e": 28.401 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 28.401, "e": 28.599 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.661,
+      "end": 28.649
+    },
+    {
+      "id": "s9",
+      "speaker": "ben",
+      "text": "It's twelve dollars.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 29.813, "e": 30.033 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 30.033, "e": 30.253 },
+        { "t": "twelve", "l": "twelve", "p": "NUM", "w": false, "sp": true, "s": 30.253, "e": 30.869 },
+        { "t": "dollars", "l": "dollar", "p": "NOUN", "w": true, "s": 30.869, "e": 31.573 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 29.749,
+      "end": 32.046
+    },
+    {
+      "id": "s10",
+      "speaker": "nina",
+      "text": "And how much are these black shoes?",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 33.174, "e": 33.439 },
+        { "t": "how", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 33.439, "e": 33.704 },
+        { "t": "much", "l": "much", "p": "ADJ", "w": true, "sp": true, "s": 33.704, "e": 34.035 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 34.036, "e": 34.301 },
+        { "t": "these", "l": "these", "p": "DET", "w": true, "sp": true, "s": 34.301, "e": 34.699 },
+        { "t": "black", "l": "black", "p": "ADJ", "w": true, "sp": true, "s": 34.699, "e": 35.097 },
+        { "t": "shoes", "l": "shoe", "p": "NOUN", "w": true, "s": 35.096, "e": 35.494 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 33.146,
+      "end": 35.524
+    },
+    {
+      "id": "s11",
+      "speaker": "ben",
+      "text": "They are forty dollars.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "They", "l": "they", "p": "PRON", "w": true, "sp": true, "s": 36.706, "e": 37.095 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 37.095, "e": 37.406 },
+        { "t": "forty", "l": "forty", "p": "NUM", "w": false, "sp": true, "s": 37.406, "e": 37.873 },
+        { "t": "dollars", "l": "dollar", "p": "NOUN", "w": true, "s": 37.873, "e": 38.496 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 36.624,
+      "end": 39.094
+    },
+    {
+      "id": "s12",
+      "speaker": "nina",
+      "text": "Oh, that's expensive. Just the T-shirt, please.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Oh", "l": "oh", "p": "INTJ", "w": false, "s": 40.217, "e": 40.469 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "that", "l": "that", "p": "PRON", "w": true, "s": 40.469, "e": 40.861 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 40.861, "e": 41.057 },
+        { "t": "expensive", "l": "expensive", "p": "ADJ", "w": true, "s": 41.057, "e": 41.897 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Just", "l": "just", "p": "ADV", "w": true, "sp": true, "s": 41.896, "e": 42.316 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 42.316, "e": 42.652 },
+        { "t": "T", "l": "t", "p": "PROPN", "w": false, "s": 42.652, "e": 42.75 },
+        { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+        { "t": "shirt", "l": "shirt", "p": "NOUN", "w": true, "s": 42.75, "e": 43.24 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "please", "l": "please", "p": "INTJ", "w": false, "s": 43.239, "e": 43.827 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 40.194,
+      "end": 43.86
+    },
+    {
+      "id": "s13",
+      "speaker": "ben",
+      "text": "OK. That's twelve dollars. Thank you!",
+      "tokens": [
+        { "t": "OK", "l": "ok", "p": "INTJ", "w": false, "s": 44.993, "e": 45.247 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "That", "l": "that", "p": "PRON", "w": true, "s": 45.247, "e": 45.642 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 45.642, "e": 45.839 },
+        { "t": "twelve", "l": "twelve", "p": "NUM", "w": false, "sp": true, "s": 45.839, "e": 46.431 },
+        { "t": "dollars", "l": "dollar", "p": "NOUN", "w": true, "s": 46.431, "e": 47.108 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Thank", "l": "thank", "p": "VERB", "w": true, "sp": true, "s": 47.107, "e": 47.614 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 47.615, "e": 47.953 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.96,
+      "end": 48.786
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s1",
+      "phrase": "Can I help you",
+      "type": "weak_form",
+      "ipa": "/kən aɪ ˈhelp jə/",
+      "explanation_es": "*can* es débil: suena /kən/. Y *you* suena /jə/."
+    },
+    {
+      "ref": "s3",
+      "phrase": "do you want",
+      "type": "reduction",
+      "ipa": "/dʒə ˈwɒnt/",
+      "explanation_es": "*do you* se junta y suena /dʒə/."
+    },
+    {
+      "ref": "s8",
+      "phrase": "How much is it",
+      "type": "linking",
+      "ipa": "/haʊ ˈmʌtʃ ɪz ɪt/",
+      "explanation_es": "*much is it* se dice todo seguido, sin pausas."
+    },
+    {
+      "ref": "s12",
+      "phrase": "that's expensive",
+      "type": "contraction",
+      "ipa": "/ðæts ɪkˈspensɪv/",
+      "explanation_es": "*that's* = *that is*."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "size",
+      "surface": "size",
+      "pos": "noun",
+      "def_en": "how big or small clothes are",
+      "def_es": "talla",
+      "ref": "s5"
+    },
+    {
+      "lemma": "here you are",
+      "surface": "Here you are",
+      "pos": "phrase",
+      "def_en": "you say this when you give something to a person",
+      "def_es": "aquí tienes",
+      "ref": "s7"
+    },
+    {
+      "lemma": "how much",
+      "surface": "How much",
+      "pos": "phrase",
+      "def_en": "you ask this to know the price",
+      "def_es": "¿cuánto cuesta?",
+      "ref": "s8"
+    },
+    {
+      "lemma": "expensive",
+      "surface": "expensive",
+      "pos": "adjective",
+      "def_en": "it costs a lot of money",
+      "def_es": "caro",
+      "ref": "s12"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "Where are the two people?",
+      "options": [
+        { "id": "a", "text": "In a train station" },
+        { "id": "b", "text": "At school" },
+        { "id": "c", "text": "In a clothes shop" }
+      ],
+      "answer": "c",
+      "evidence": ["s2"],
+      "rationale_es": "Ben atiende a Nina, que quiere comprar una camiseta: están en una tienda de ropa."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What colour T-shirt does Nina want?",
+      "options": [
+        { "id": "a", "text": "Blue" },
+        { "id": "b", "text": "Black" },
+        { "id": "c", "text": "Red" }
+      ],
+      "answer": "a",
+      "evidence": ["s4"],
+      "rationale_es": "*Blue, please*. Los zapatos son negros, no la camiseta."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What size does Nina want?",
+      "options": [
+        { "id": "a", "text": "Big" },
+        { "id": "b", "text": "Small" },
+        { "id": "c", "text": "She does not say" }
+      ],
+      "answer": "b",
+      "evidence": ["s6"],
+      "rationale_es": "*Small, I think*."
+    },
+    {
+      "id": "q4",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one number.",
+      "text": "The T-shirt is {{1}} dollars.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["twelve", "12"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["s9"],
+      "rationale_es": "*Twelve dollars*: doce dólares. Cuarenta cuestan los zapatos."
+    },
+    {
+      "id": "q5",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Nina buys the black shoes.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["s12"],
+      "rationale_es": "Le parecen caros y dice *Just the T-shirt, please*."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Why doesn't Nina buy the shoes?",
+      "options": [
+        { "id": "a", "text": "They are too small" },
+        { "id": "b", "text": "They cost a lot of money" },
+        { "id": "c", "text": "She does not like black" }
+      ],
+      "answer": "b",
+      "evidence": ["s12"],
+      "rationale_es": "*That's expensive*: son caros (cuarenta dólares)."
+    },
+    {
+      "id": "q7",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s1",
+      "reference": "Good morning. Can I help you?",
+      "accept_variants": [],
+      "evidence": ["s1"],
+      "rationale_es": "*can* es débil y casi no se oye: /kən aɪ ˈhelp jə/."
+    },
+    {
+      "id": "q8",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s8",
+      "reference": "Thank you. How much is it?",
+      "accept_variants": [],
+      "evidence": ["s8"],
+      "rationale_es": "*much is it* suena todo unido."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "and", "be", "black", "blue", "can", "color", "do", "dollar", "expensive", "good", "have", "help",
+    "here", "how", "i", "in", "it", "just", "morning", "much", "shirt", "shoe", "size", "small", "thank",
+    "that", "the", "these", "they", "think", "this", "want", "we", "what", "you"
+  ],
+  "difficulty": 666,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 3.6,
+    "flesch_reading_ease": 110.2,
+    "checked_at": "2026-10-09T09:55:42.074Z"
+  },
+  "audio": {
+    "src": "audio/a1/a1-lis-004/v1.m4a",
+    "duration_s": 48.786,
+    "wpm": 97,
+    "provider": "kokoro",
+    "voices": { "ben": "bm_fable", "nina": "af_heart" },
+    "loudness_lufs": -16.4,
+    "peaks": [
+      0.7, 0.72, 0.53, 0.36, 0.36, 0.36, 0.46, 0.39, 0.71, 0.15, 0.03, 0.02, 0.02, 0.02, 0.01, 0, 0, 0, 0,
+      0.04, 0.68, 0.61, 0.19, 0.3, 0.24, 0.25, 0.85, 0.43, 0.5, 0.38, 0.37, 0.44, 0.19, 0, 0, 0, 0, 0, 0.16,
+      0.79, 0.33, 0.72, 0.49, 0.27, 0.33, 0.7, 0.12, 0.03, 0.02, 0.02, 0.01, 0, 0, 0, 0, 0.14, 0.55, 0.48,
+      0.29, 0.27, 0.27, 0.02, 0.38, 0.85, 0.71, 0.4, 0.49, 0.26, 0.27, 0.29, 0, 0, 0, 0, 0, 0.11, 1, 0.49,
+      0.25, 0.36, 0.32, 0.47, 0.57, 0.53, 0.37, 0.25, 0.19, 0.02, 0.02, 0.02, 0.02, 0.01, 0, 0, 0, 0, 0.27,
+      0.45, 0.52, 0.48, 0.54, 0.29, 0.02, 0, 0, 0, 0, 0.01, 0.61, 0.62, 0.28, 0.51, 0.29, 0.79, 0.71, 0.32,
+      0.26, 0.44, 0.17, 0.24, 0.22, 0.12, 0.02, 0.01, 0.02, 0.01, 0, 0, 0, 0, 0, 0.07, 0.6, 0.34, 0.27, 0.09,
+      0.55, 0.5, 0.3, 0.45, 0.15, 0, 0, 0, 0, 0, 0.07, 0.79, 0.55, 0.61, 0.41, 0.4, 0.41, 0.25, 0.14, 0.02,
+      0.02, 0.02, 0, 0, 0, 0, 0, 0.58, 0.4, 0.46, 0.34, 0.45, 0.33, 0.22, 0.38, 0.18, 0.27, 0.17, 0.23, 0, 0,
+      0, 0, 0, 0.09, 0.74, 0.68, 0.43, 0.45, 0.25, 0.41, 0.29, 0.4, 0.04, 0.02, 0.02, 0.01, 0, 0, 0, 0, 0.39,
+      0.54, 0.49, 0.61, 0.34, 0.24, 0.25, 0.28, 0.15, 0, 0.39, 0.58, 0.44, 0.28, 0.46, 0.34, 0.27, 0.25, 0.22,
+      0, 0, 0, 0, 0, 0.45, 0.7, 0.46, 0.42, 0.68, 0.72, 0.46, 0.37, 0.39, 0.41, 0.47, 0.51, 0.7, 0.16, 0.15,
+      0.02, 0.02, 0.01, 0.02
+    ]
+  }
+}

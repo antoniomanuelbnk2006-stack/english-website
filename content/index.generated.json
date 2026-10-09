@@ -25,6 +25,79 @@
     "path": "lessons/a1/listening/a1-lis-001.json"
   },
   {
+    "id": "a1-lis-002",
+    "version": 1,
+    "skill": "listening",
+    "level": "A1",
+    "unit": "a1-u01",
+    "series": "a1-u01-hello",
+    "title": "A new student",
+    "summary_es": "Leo llega a su primera clase de inglés y la profesora le pregunta el nombre, de dónde es, la edad y el teléfono.",
+    "topic": "education",
+    "genre": "dialogue",
+    "accents": ["en-GB", "en-US"],
+    "duration_s": 48.039,
+    "word_count": 83,
+    "wpm": 104,
+    "est_minutes": 6,
+    "difficulty": 676,
+    "lemmas": [
+      "and", "at", "be", "class", "from", "great", "how", "in", "it", "meet", "my", "name", "nice", "number",
+      "o'clock", "old", "on", "our", "phone", "room", "see", "teacher", "thank", "the", "time", "to",
+      "welcome", "what", "where", "you", "your"
+    ],
+    "path": "lessons/a1/listening/a1-lis-002.json"
+  },
+  {
+    "id": "a1-lis-003",
+    "version": 1,
+    "skill": "listening",
+    "level": "A1",
+    "unit": "a1-u03",
+    "series": "a1-u03-my-day",
+    "title": "My day",
+    "summary_es": "Emma, una estudiante, cuenta su día: a qué hora se levanta, cómo va al colegio y qué hace por la tarde.",
+    "topic": "daily-life",
+    "genre": "monologue",
+    "accents": ["en-US"],
+    "duration_s": 42.401,
+    "word_count": 76,
+    "wpm": 108,
+    "est_minutes": 6,
+    "difficulty": 682,
+    "lemmas": [
+      "a", "afternoon", "and", "at", "bed", "bread", "breakfast", "bus", "by", "day", "do", "drink", "eat",
+      "evening", "every", "family", "get", "go", "good", "have", "home", "homework", "i", "in", "lunch",
+      "milk", "mother", "my", "night", "o'clock", "school", "start", "student", "the", "then", "to", "up",
+      "watch", "with"
+    ],
+    "path": "lessons/a1/listening/a1-lis-003.json"
+  },
+  {
+    "id": "a1-lis-004",
+    "version": 1,
+    "skill": "listening",
+    "level": "A1",
+    "unit": "a1-u06",
+    "series": "a1-u06-shopping",
+    "title": "A blue T-shirt",
+    "summary_es": "Nina entra en una tienda de ropa: pide una camiseta azul de la talla pequeña y pregunta los precios.",
+    "topic": "money",
+    "genre": "dialogue",
+    "accents": ["en-GB", "en-US"],
+    "duration_s": 48.786,
+    "word_count": 79,
+    "wpm": 97,
+    "est_minutes": 6,
+    "difficulty": 666,
+    "lemmas": [
+      "a", "and", "be", "black", "blue", "can", "color", "do", "dollar", "expensive", "good", "have", "help",
+      "here", "how", "i", "in", "it", "just", "morning", "much", "shirt", "shoe", "size", "small", "thank",
+      "that", "the", "these", "they", "think", "this", "want", "we", "what", "you"
+    ],
+    "path": "lessons/a1/listening/a1-lis-004.json"
+  },
+  {
     "id": "a1-rea-001",
     "version": 1,
     "skill": "reading",
@@ -46,6 +119,52 @@
       "take", "the", "then", "to", "tomorrow", "town", "train", "very", "we", "weather", "you"
     ],
     "path": "lessons/a1/reading/a1-rea-001.json"
+  },
+  {
+    "id": "a1-rea-002",
+    "version": 1,
+    "skill": "reading",
+    "level": "A1",
+    "unit": "a1-u05",
+    "series": "a1-u05-home",
+    "title": "A flat to rent",
+    "summary_es": "Un anuncio de alquiler: cómo es el piso, qué hay cerca, cuánto cuesta y cuándo se puede ver.",
+    "topic": "city-housing",
+    "genre": "notice",
+    "accents": [],
+    "word_count": 103,
+    "est_minutes": 6,
+    "difficulty": 692,
+    "lemmas": [
+      "a", "and", "bathroom", "be", "bedroom", "big", "bus", "but", "call", "can", "dollar", "door", "family",
+      "flat", "floor", "for", "from", "garden", "good", "have", "in", "it", "kitchen", "living", "minute",
+      "month", "morning", "near", "nice", "no", "on", "park", "rent", "room", "same", "school", "second",
+      "see", "small", "sofa", "stop", "street", "supermarket", "the", "there", "to", "you"
+    ],
+    "path": "lessons/a1/reading/a1-rea-002.json"
+  },
+  {
+    "id": "a1-rea-003",
+    "version": 1,
+    "skill": "reading",
+    "level": "A1",
+    "unit": "a1-u07",
+    "series": "a1-u07-free-time",
+    "title": "What do you do on Saturdays?",
+    "summary_es": "Tres compañeros de clase cuentan qué les gusta hacer los sábados.",
+    "topic": "daily-life",
+    "genre": "forum",
+    "accents": [],
+    "word_count": 76,
+    "est_minutes": 6,
+    "difficulty": 670,
+    "lemmas": [
+      "a", "afternoon", "at", "book", "brother", "cake", "cinema", "class", "do", "eat", "evening", "every",
+      "football", "friend", "go", "guitar", "home", "i", "in", "it", "like", "love", "make", "morning",
+      "music", "my", "not", "on", "park", "play", "question", "reading", "room", "sister", "sport", "the",
+      "then", "to", "watch", "we", "what", "with", "you"
+    ],
+    "path": "lessons/a1/reading/a1-rea-003.json"
   },
   {
     "id": "a2-lis-001",

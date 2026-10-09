@@ -1,0 +1,457 @@
+{
+  "id": "a1-lis-003",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "a1-u03",
+  "series": "a1-u03-my-day",
+  "skill": "listening",
+  "genre": "monologue",
+  "title": "My day",
+  "summary_es": "Emma, una estudiante, cuenta su día: a qué hora se levanta, cómo va al colegio y qué hace por la tarde.",
+  "topic": "daily-life",
+  "tags": ["rutina", "horas", "colegio"],
+  "can_do": ["L-A1-01", "L-A1-02", "L-A1-05"],
+  "grammar_focus": ["a1.present-simple"],
+  "vocab_focus": ["get up", "have breakfast", "homework", "go to bed"],
+  "est_minutes": 6,
+  "prediction_prompt": "A student talks about her day. What does she do in the morning?",
+  "pre_teach": ["get up", "homework"],
+  "speakers": [
+    { "id": "emma", "name": "Emma", "accent": "en-US", "gender": "female" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "emma",
+      "text": "Hi, I'm Emma. I'm a student.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Hi", "l": "hi", "p": "INTJ", "w": false, "s": 0.057, "e": 0.407 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 0.407, "e": 0.873 },
+        { "t": "Emma", "l": "emma", "p": "PROPN", "w": false, "s": 0.873, "e": 1.456 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 1.455, "e": 1.921 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 1.922, "e": 2.155 },
+        { "t": "student", "l": "student", "p": "NOUN", "w": true, "s": 2.155, "e": 3.087 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 3.145
+    },
+    {
+      "id": "s2",
+      "speaker": "emma",
+      "text": "I get up at seven o'clock every day.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 4.292, "e": 4.458 },
+        { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true, "s": 4.458, "e": 4.79 },
+        { "t": "up", "l": "up", "p": "ADP", "w": true, "sp": true, "s": 4.79, "e": 5.039 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 5.04, "e": 5.289 },
+        { "t": "seven", "l": "seven", "p": "NUM", "w": false, "sp": true, "s": 5.289, "e": 5.787 },
+        { "t": "o'clock", "l": "o'clock", "p": "ADV", "w": true, "sp": true, "s": 5.787, "e": 6.451 },
+        { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true, "s": 6.451, "e": 6.949 },
+        { "t": "day", "l": "day", "p": "NOUN", "w": true, "s": 6.95, "e": 7.282 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.245,
+      "end": 7.368
+    },
+    {
+      "id": "s3",
+      "speaker": "emma",
+      "text": "I have breakfast with my mother.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 8.515, "e": 8.658 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 8.658, "e": 9.016 },
+        { "t": "breakfast", "l": "breakfast", "p": "VERB", "w": true, "sp": true, "s": 9.016, "e": 9.732 },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 9.732, "e": 10.09 },
+        { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 10.089, "e": 10.304 },
+        { "t": "mother", "l": "mother", "p": "NOUN", "w": true, "s": 10.304, "e": 10.805 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.468,
+      "end": 10.861
+    },
+    {
+      "id": "s4",
+      "speaker": "emma",
+      "text": "I eat bread and I drink milk.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 12.013, "e": 12.207 },
+        { "t": "eat", "l": "eat", "p": "VERB", "w": true, "sp": true, "s": 12.207, "e": 12.595 },
+        { "t": "bread", "l": "bread", "p": "NOUN", "w": true, "sp": true, "s": 12.594, "e": 13.175 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 13.176, "e": 13.564 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 13.563, "e": 13.757 },
+        { "t": "drink", "l": "drink", "p": "VERB", "w": true, "sp": true, "s": 13.757, "e": 14.338 },
+        { "t": "milk", "l": "milk", "p": "NOUN", "w": true, "s": 14.339, "e": 14.823 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.961,
+      "end": 14.91
+    },
+    {
+      "id": "s5",
+      "speaker": "emma",
+      "text": "Then I go to school by bus.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Then", "l": "then", "p": "ADV", "w": true, "sp": true, "s": 16.045, "e": 16.469 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 16.469, "e": 16.639 },
+        { "t": "go", "l": "go", "p": "VERB", "w": true, "sp": true, "s": 16.639, "e": 16.893 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 16.893, "e": 17.147 },
+        { "t": "school", "l": "school", "p": "VERB", "w": true, "sp": true, "s": 17.148, "e": 17.742 },
+        { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true, "s": 17.741, "e": 17.995 },
+        { "t": "bus", "l": "bus", "p": "NOUN", "w": true, "s": 17.996, "e": 18.335 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.01,
+      "end": 18.381
+    },
+    {
+      "id": "s6",
+      "speaker": "emma",
+      "text": "School starts at nine o'clock.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "School", "l": "school", "p": "NOUN", "w": true, "sp": true, "s": 19.528, "e": 20.088 },
+        { "t": "starts", "l": "start", "p": "VERB", "w": true, "sp": true, "s": 20.088, "e": 20.648 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 20.648, "e": 20.888 },
+        { "t": "nine", "l": "nine", "p": "NUM", "w": false, "sp": true, "s": 20.888, "e": 21.288 },
+        { "t": "o'clock", "l": "o'clock", "p": "ADV", "w": true, "s": 21.288, "e": 21.928 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.481,
+      "end": 21.99
+    },
+    {
+      "id": "s7",
+      "speaker": "emma",
+      "text": "I have lunch at school at one.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 23.168, "e": 23.293 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 23.293, "e": 23.605 },
+        { "t": "lunch", "l": "lunch", "p": "VERB", "w": true, "sp": true, "s": 23.604, "e": 23.978 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 23.978, "e": 24.165 },
+        { "t": "school", "l": "school", "p": "NOUN", "w": true, "sp": true, "s": 24.165, "e": 24.601 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 24.602, "e": 24.789 },
+        { "t": "one", "l": "one", "p": "NUM", "w": false, "s": 24.789, "e": 25.038 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.09,
+      "end": 25.096
+    },
+    {
+      "id": "s8",
+      "speaker": "emma",
+      "text": "I go home at four in the afternoon.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 26.244, "e": 26.437 },
+        { "t": "go", "l": "go", "p": "VERB", "w": true, "sp": true, "s": 26.437, "e": 26.726 },
+        { "t": "home", "l": "home", "p": "ADV", "w": true, "sp": true, "s": 26.725, "e": 27.206 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 27.207, "e": 27.496 },
+        { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true, "s": 27.496, "e": 27.977 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 27.977, "e": 28.266 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 28.266, "e": 28.651 },
+        { "t": "afternoon", "l": "afternoon", "p": "NOUN", "w": true, "s": 28.651, "e": 29.614 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.196,
+      "end": 29.663
+    },
+    {
+      "id": "s9",
+      "speaker": "emma",
+      "text": "In the evening I do my homework.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "In", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 30.805, "e": 31.07 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 31.07, "e": 31.424 },
+        { "t": "evening", "l": "evening", "p": "NOUN", "w": true, "sp": true, "s": 31.424, "e": 32.132 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 32.132, "e": 32.309 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 32.308, "e": 32.573 },
+        { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 32.574, "e": 32.839 },
+        { "t": "homework", "l": "homework", "p": "NOUN", "w": true, "s": 32.839, "e": 33.635 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 30.763,
+      "end": 33.69
+    },
+    {
+      "id": "s10",
+      "speaker": "emma",
+      "text": "Then I watch TV with my family.",
+      "pause_after_ms": 1100,
+      "tokens": [
+        { "t": "Then", "l": "then", "p": "ADV", "w": true, "sp": true, "s": 34.846, "e": 35.319 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 35.319, "e": 35.508 },
+        { "t": "watch", "l": "watch", "p": "VERB", "w": true, "sp": true, "s": 35.508, "e": 36.075 },
+        { "t": "TV", "l": "tv", "p": "PROPN", "w": false, "sp": true, "s": 36.075, "e": 36.359 },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 36.358, "e": 36.831 },
+        { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 36.831, "e": 37.115 },
+        { "t": "family", "l": "family", "p": "NOUN", "w": true, "s": 37.114, "e": 37.776 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.79,
+      "end": 37.818
+    },
+    {
+      "id": "s11",
+      "speaker": "emma",
+      "text": "I go to bed at ten. Good night!",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 38.946, "e": 39.106 },
+        { "t": "go", "l": "go", "p": "VERB", "w": true, "sp": true, "s": 39.106, "e": 39.346 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 39.346, "e": 39.586 },
+        { "t": "bed", "l": "bed", "p": "VERB", "w": true, "sp": true, "s": 39.586, "e": 39.906 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 39.906, "e": 40.146 },
+        { "t": "ten", "l": "ten", "p": "NUM", "w": false, "s": 40.146, "e": 40.466 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Good", "l": "good", "p": "ADJ", "w": true, "sp": true, "s": 41.606, "e": 41.942 },
+        { "t": "night", "l": "night", "p": "NOUN", "w": true, "s": 41.942, "e": 42.346 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 38.918,
+      "end": 42.401
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s2",
+      "phrase": "get up at",
+      "type": "linking",
+      "ipa": "/ˈɡet ʌp ət/",
+      "explanation_es": "Las tres palabras se unen: suenan como «gue-ta-pat»."
+    },
+    {
+      "ref": "s4",
+      "phrase": "and I drink",
+      "type": "weak_form",
+      "ipa": "/ən aɪ ˈdrɪŋk/",
+      "explanation_es": "*and* es débil: suena /ən/, casi solo una «n»."
+    },
+    {
+      "ref": "s5",
+      "phrase": "go to school",
+      "type": "weak_form",
+      "ipa": "/ˈɡəʊ tə ˈskuːl/",
+      "explanation_es": "*to* suena /tə/, muy corto."
+    },
+    {
+      "ref": "s8",
+      "phrase": "at four in the afternoon",
+      "type": "weak_form",
+      "ipa": "/ət ˈfɔːr ɪn ði ˌɑːftəˈnuːn/",
+      "explanation_es": "*at* es débil (/ət/) y *four in* se enlazan."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "get up",
+      "surface": "get up",
+      "pos": "phrasal_verb",
+      "def_en": "to leave your bed in the morning",
+      "def_es": "levantarse",
+      "ref": "s2"
+    },
+    {
+      "lemma": "have breakfast",
+      "surface": "have breakfast",
+      "pos": "phrase",
+      "def_en": "to eat in the morning",
+      "def_es": "desayunar",
+      "ref": "s3"
+    },
+    {
+      "lemma": "by bus",
+      "surface": "by bus",
+      "pos": "phrase",
+      "def_en": "in a bus",
+      "def_es": "en autobús",
+      "ref": "s5"
+    },
+    {
+      "lemma": "homework",
+      "surface": "homework",
+      "pos": "noun",
+      "def_en": "work from school that you do at home",
+      "def_es": "deberes",
+      "ref": "s9"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "What is Emma talking about?",
+      "options": [
+        { "id": "a", "text": "Her family" },
+        { "id": "b", "text": "Her day" },
+        { "id": "c", "text": "Her school friends" }
+      ],
+      "answer": "b",
+      "evidence": ["s2"],
+      "rationale_es": "Cuenta lo que hace desde que se levanta hasta que se acuesta: su día."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What time does Emma get up?",
+      "options": [
+        { "id": "a", "text": "At seven" },
+        { "id": "b", "text": "At six" },
+        { "id": "c", "text": "At nine" }
+      ],
+      "answer": "a",
+      "evidence": ["s2"],
+      "rationale_es": "*I get up at seven o'clock*. A las nueve empieza el colegio."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "How does Emma go to school?",
+      "options": [
+        { "id": "a", "text": "By car" },
+        { "id": "b", "text": "On foot" },
+        { "id": "c", "text": "By bus" }
+      ],
+      "answer": "c",
+      "evidence": ["s5"],
+      "rationale_es": "*I go to school by bus*."
+    },
+    {
+      "id": "q4",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Emma has lunch at home.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["s7"],
+      "rationale_es": "Come en el colegio: *I have lunch at school at one*."
+    },
+    {
+      "id": "q5",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one word.",
+      "text": "School starts at {{1}} o'clock.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["nine", "9"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["s6"],
+      "rationale_es": "*School starts at nine o'clock*."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What does Emma do in the evening?",
+      "options": [
+        { "id": "a", "text": "She plays in the park" },
+        { "id": "b", "text": "She does her homework" },
+        { "id": "c", "text": "She goes to the cinema" }
+      ],
+      "answer": "b",
+      "evidence": ["s9"],
+      "rationale_es": "Primero hace los deberes y luego ve la tele."
+    },
+    {
+      "id": "q7",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Emma goes to bed at ten.",
+      "answer": "T",
+      "allow_ng": false,
+      "evidence": ["s11"],
+      "rationale_es": "*I go to bed at ten*."
+    },
+    {
+      "id": "q8",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s2",
+      "reference": "I get up at seven o'clock every day.",
+      "accept_variants": ["I get up at 7 o'clock every day."],
+      "evidence": ["s2"],
+      "rationale_es": "*get up at* se enlaza: escucha cómo se unen las tres palabras."
+    },
+    {
+      "id": "q9",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s5",
+      "reference": "Then I go to school by bus.",
+      "accept_variants": [],
+      "evidence": ["s5"],
+      "rationale_es": "*to* es débil: /tə/."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "afternoon", "and", "at", "bed", "bread", "breakfast", "bus", "by", "day", "do", "drink", "eat",
+    "evening", "every", "family", "get", "go", "good", "have", "home", "homework", "i", "in", "lunch", "milk",
+    "mother", "my", "night", "o'clock", "school", "start", "student", "the", "then", "to", "up", "watch",
+    "with"
+  ],
+  "difficulty": 682,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 5.8,
+    "flesch_reading_ease": 97.4,
+    "checked_at": "2026-10-09T09:55:42.074Z"
+  },
+  "audio": {
+    "src": "audio/a1/a1-lis-003/v1.m4a",
+    "duration_s": 42.401,
+    "wpm": 108,
+    "provider": "kokoro",
+    "voices": { "emma": "af_nicole" },
+    "loudness_lufs": -16.4,
+    "peaks": [
+      0.18, 0.74, 0.37, 0.44, 0.47, 0.54, 0.27, 0.02, 0, 0, 0, 0.28, 0.49, 0.46, 0.84, 0.51, 0.1, 0.44, 0, 0,
+      0, 0, 0, 0, 0.45, 0.61, 0.51, 0.36, 0.35, 0.78, 0.61, 0.43, 0.46, 0.22, 0.23, 0, 0, 0.58, 0.45, 0.6,
+      0.19, 0.04, 0, 0, 0, 0, 0, 0, 0.56, 0.62, 0.52, 0.64, 0.25, 0.14, 0.26, 0.29, 0.12, 0.55, 0.57, 0.33,
+      0.39, 0.03, 0, 0, 0, 0, 0, 0.01, 0.56, 0.62, 0.46, 0.94, 0.55, 0.38, 0.03, 0, 0, 0.11, 0.61, 0.66, 0.52,
+      0.42, 0.28, 0.44, 0.02, 0, 0, 0, 0, 0, 0.18, 0.66, 0.18, 0.27, 0.55, 0.42, 0.38, 0.59, 0.23, 0.02, 0.49,
+      0.67, 0.14, 0.21, 0, 0, 0, 0, 0, 0, 0.16, 0.75, 0.5, 0.2, 0.89, 0.37, 0.25, 0.11, 0.41, 0.52, 0.34, 0.38,
+      0.41, 0.21, 0.24, 0, 0, 0, 0, 0, 0.01, 0.63, 0.36, 0.63, 0.44, 0.3, 0.33, 0.6, 0.19, 0.34, 0.34, 0.04, 0,
+      0, 0, 0, 0, 0, 0.27, 0.7, 0.47, 0.75, 0.48, 0.3, 0.39, 0.62, 0.23, 0.07, 0, 0, 0, 0.34, 0.37, 0.59, 0.8,
+      0.39, 0.14, 0.09, 0, 0, 0, 0, 0, 0, 0.58, 0.36, 0.58, 0.38, 0.27, 0.07, 0.02, 0, 0, 0.44, 0.86, 0.4,
+      0.31, 0.59, 0.46, 0.09, 0.3, 0, 0, 0, 0, 0, 0, 0.54, 0.39, 0.48, 0.38, 0.26, 0.35, 0.4, 0.54, 0.35, 0.5,
+      0.03, 0.03, 0.33, 0.46, 0.58, 0.25, 0.06, 0, 0, 0, 0, 0, 0, 0.26, 0.75, 0.55, 1, 0.46, 0.35, 0.69, 0.53,
+      0.13, 0.03, 0, 0, 0, 0, 0, 0.63, 0.75, 0.53, 0.12, 0.27
+    ]
+  }
+}
