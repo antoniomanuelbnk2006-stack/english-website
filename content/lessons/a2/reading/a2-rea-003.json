@@ -1,0 +1,641 @@
+{
+  "id": "a2-rea-003",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "a2-u08",
+  "series": "a2-u08-stories",
+  "skill": "reading",
+  "genre": "story",
+  "title": "The wrong bag",
+  "summary_es": "Marta viaja sola por primera vez y en el aeropuerto se lleva una maleta que no es la suya.",
+  "topic": "travel",
+  "tags": ["relato", "aeropuerto", "pasado"],
+  "can_do": ["R-A2-04", "R-A2-06"],
+  "grammar_focus": ["a2.past-continuous", "a2.past-simple"],
+  "vocab_focus": ["wrong", "a pair of", "look like", "get lost"],
+  "est_minutes": 10,
+  "prediction_prompt": "A traveller takes the wrong bag at the airport. What do you think happens next?",
+  "pre_teach": ["wrong"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Last summer Marta flew from Madrid to Dublin to visit her cousin.",
+          "tokens": [
+            { "t": "Last", "l": "last", "p": "ADJ", "w": true, "sp": true },
+            { "t": "summer", "l": "summer", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "sp": true },
+            { "t": "flew", "l": "fly", "p": "VERB", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "Madrid", "l": "madrid", "p": "PROPN", "w": false, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "Dublin", "l": "dublin", "p": "PROPN", "w": false, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "visit", "l": "visit", "p": "VERB", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "cousin", "l": "cousin", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "It was her first trip alone, and she was a little nervous.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "first", "l": "first", "p": "ADJ", "w": true, "sp": true },
+            { "t": "trip", "l": "trip", "p": "NOUN", "w": true, "sp": true },
+            { "t": "alone", "l": "alone", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "little", "l": "little", "p": "ADV", "w": true, "sp": true },
+            { "t": "nervous", "l": "nervous", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "When she arrived, she waited for her bag at the airport.",
+          "tokens": [
+            { "t": "When", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "arrived", "l": "arrive", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "waited", "l": "wait", "p": "VERB", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "bag", "l": "bag", "p": "NOUN", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "airport", "l": "airport", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "A lot of people were standing there.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "lot", "l": "lot", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "standing", "l": "stand", "p": "VERB", "w": true, "sp": true },
+            { "t": "there", "l": "there", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "After ten minutes she saw a small blue bag.",
+          "tokens": [
+            { "t": "After", "l": "after", "p": "ADP", "w": true, "sp": true },
+            { "t": "ten", "l": "ten", "p": "NUM", "w": false, "sp": true },
+            { "t": "minutes", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "saw", "l": "see", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "small", "l": "small", "p": "ADV", "w": true, "sp": true },
+            { "t": "blue", "l": "blue", "p": "ADJ", "w": true, "sp": true },
+            { "t": "bag", "l": "bag", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "She took it and went to the bus stop.",
+          "tokens": [
+            { "t": "She", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "took", "l": "take", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "went", "l": "go", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "bus", "l": "bus", "p": "NOUN", "w": true, "sp": true },
+            { "t": "stop", "l": "stop", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "On the bus, she opened the bag to find her phone charger.",
+          "tokens": [
+            { "t": "On", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "bus", "l": "bus", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "opened", "l": "open", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "bag", "l": "bag", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "find", "l": "find", "p": "VERB", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "phone", "l": "phone", "p": "NOUN", "w": true, "sp": true },
+            { "t": "charger", "l": "charger", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "But the clothes inside were not hers!",
+          "tokens": [
+            { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "clothes", "l": "clothes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "inside", "l": "inside", "p": "ADP", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "hers", "l": "hers", "p": "PRON", "w": true },
+            { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "There was a man's jacket and a pair of big brown shoes.",
+          "tokens": [
+            { "t": "There", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "man", "l": "man", "p": "NOUN", "w": true },
+            { "t": "'s", "l": "'s", "p": "PART", "w": false, "sp": true },
+            { "t": "jacket", "l": "jacket", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "pair", "l": "pair", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "big", "l": "big", "p": "ADV", "w": true, "sp": true },
+            { "t": "brown", "l": "brown", "p": "ADJ", "w": true, "sp": true },
+            { "t": "shoes", "l": "shoe", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "She had the wrong bag.",
+          "tokens": [
+            { "t": "She", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "wrong", "l": "wrong", "p": "ADJ", "w": true, "sp": true },
+            { "t": "bag", "l": "bag", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Marta went back to the airport.",
+          "tokens": [
+            { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "sp": true },
+            { "t": "went", "l": "go", "p": "VERB", "w": true, "sp": true },
+            { "t": "back", "l": "back", "p": "ADV", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "airport", "l": "airport", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "A young man was talking to a woman at the information desk.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "young", "l": "young", "p": "ADJ", "w": true, "sp": true },
+            { "t": "man", "l": "man", "p": "NOUN", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "talking", "l": "talk", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "woman", "l": "woman", "p": "NOUN", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "information", "l": "information", "p": "NOUN", "w": true, "sp": true },
+            { "t": "desk", "l": "desk", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "He was holding a blue bag, and it looked just like hers.",
+          "tokens": [
+            { "t": "He", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "holding", "l": "hold", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "blue", "l": "blue", "p": "ADJ", "w": true, "sp": true },
+            { "t": "bag", "l": "bag", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "looked", "l": "look", "p": "VERB", "w": true, "sp": true },
+            { "t": "just", "l": "just", "p": "ADV", "w": true, "sp": true },
+            { "t": "like", "l": "like", "p": "VERB", "w": true, "sp": true },
+            { "t": "hers", "l": "hers", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "\"Excuse me,\" she said.",
+          "tokens": [
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false },
+            { "t": "Excuse", "l": "excuse", "p": "NOUN", "w": true, "sp": true },
+            { "t": "me", "l": "me", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false },
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "said", "l": "say", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s5",
+          "text": "\"I think that is my bag.\"",
+          "tokens": [
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false },
+            { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true },
+            { "t": "think", "l": "think", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true },
+            { "t": "bag", "l": "bag", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false },
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "The man laughed.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "man", "l": "man", "p": "NOUN", "w": true, "sp": true },
+            { "t": "laughed", "l": "laugh", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "His name was Liam and he was from Dublin.",
+          "tokens": [
+            { "t": "His", "l": "his", "p": "PRON", "w": true, "sp": true },
+            { "t": "name", "l": "name", "p": "NOUN", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "Liam", "l": "liam", "p": "PROPN", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "he", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "Dublin", "l": "dublin", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "They changed bags, and Liam showed her where to buy a bus ticket.",
+          "tokens": [
+            { "t": "They", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "changed", "l": "change", "p": "VERB", "w": true, "sp": true },
+            { "t": "bags", "l": "bag", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "Liam", "l": "liam", "p": "PROPN", "w": false, "sp": true },
+            { "t": "showed", "l": "show", "p": "VERB", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "where", "l": "where", "p": "ADV", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "buy", "l": "buy", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "bus", "l": "bus", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ticket", "l": "ticket", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Then he gave her his phone number.",
+          "tokens": [
+            { "t": "Then", "l": "then", "p": "ADV", "w": true, "sp": true },
+            { "t": "he", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "gave", "l": "give", "p": "VERB", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "his", "l": "his", "p": "PRON", "w": true, "sp": true },
+            { "t": "phone", "l": "phone", "p": "NOUN", "w": true, "sp": true },
+            { "t": "number", "l": "number", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s5",
+          "text": "\"Call me if you get lost,\" he said.",
+          "tokens": [
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false },
+            { "t": "Call", "l": "call", "p": "NOUN", "w": true, "sp": true },
+            { "t": "me", "l": "me", "p": "PRON", "w": true, "sp": true },
+            { "t": "if", "l": "if", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true },
+            { "t": "lost", "l": "lose", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false },
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "he", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "said", "l": "say", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Marta did not get lost, but she called him two days later.",
+          "tokens": [
+            { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "sp": true },
+            { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true },
+            { "t": "lost", "l": "lose", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "called", "l": "call", "p": "VERB", "w": true, "sp": true },
+            { "t": "him", "l": "him", "p": "PRON", "w": true, "sp": true },
+            { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true },
+            { "t": "days", "l": "day", "p": "NOUN", "w": true, "sp": true },
+            { "t": "later", "l": "later", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Today they are still good friends.",
+          "tokens": [
+            { "t": "Today", "l": "today", "p": "NOUN", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "still", "l": "still", "p": "ADV", "w": true, "sp": true },
+            { "t": "good", "l": "good", "p": "ADJ", "w": true, "sp": true },
+            { "t": "friends", "l": "friend", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "Lo que estaba pasando y lo que pasó",
+      "explanation_es": "*A lot of people were standing there* y *A young man was talking* (was/were + -ing) describen el fondo de la escena. Lo que pasa en ese momento va en pasado simple: *she saw*, *she took*.",
+      "refs": ["p2s2", "p4s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "nervous",
+      "surface": "nervous",
+      "pos": "adjective",
+      "def_en": "a little afraid about something",
+      "def_es": "nervioso",
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "charger",
+      "surface": "charger",
+      "pos": "noun",
+      "def_en": "a thing you use to put electricity into your phone",
+      "def_es": "cargador",
+      "ref": "p3s1"
+    },
+    {
+      "lemma": "wrong",
+      "surface": "wrong",
+      "pos": "adjective",
+      "def_en": "not the right one",
+      "def_es": "equivocado",
+      "ref": "p3s4"
+    },
+    {
+      "lemma": "information desk",
+      "surface": "information desk",
+      "pos": "phrase",
+      "def_en": "a place where people answer your questions",
+      "def_es": "mostrador de información",
+      "ref": "p4s2"
+    },
+    {
+      "lemma": "look like",
+      "surface": "looked just like",
+      "pos": "phrase",
+      "def_en": "to be almost the same as another thing",
+      "def_es": "ser igual que, parecerse a",
+      "ref": "p4s3"
+    },
+    {
+      "lemma": "get lost",
+      "surface": "get lost",
+      "pos": "phrase",
+      "def_en": "to not know where you are",
+      "def_es": "perderse",
+      "ref": "p5s5"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "What is the story about?",
+      "options": [
+        { "id": "a", "text": "A woman who loses her phone" },
+        { "id": "b", "text": "A mistake at an airport" },
+        { "id": "c", "text": "A holiday in Madrid" }
+      ],
+      "answer": "b",
+      "evidence": ["p3s4"],
+      "rationale_es": "Marta se lleva una maleta equivocada en el aeropuerto."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Why did Marta go to Dublin?",
+      "options": [
+        { "id": "a", "text": "To see a family member" },
+        { "id": "b", "text": "To start a new job" },
+        { "id": "c", "text": "To study English at a school" }
+      ],
+      "answer": "a",
+      "evidence": ["p1s1"],
+      "rationale_es": "*To visit her cousin*: su primo o prima, alguien de la familia."
+    },
+    {
+      "id": "q3",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Marta often travelled alone before this trip.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["p1s2"],
+      "rationale_es": "*It was her first trip alone*."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Where was Marta when she opened the bag?",
+      "options": [
+        { "id": "a", "text": "At the airport" },
+        { "id": "b", "text": "At her cousin's house" },
+        { "id": "c", "text": "On the bus" }
+      ],
+      "answer": "c",
+      "evidence": ["p3s1"],
+      "rationale_es": "*On the bus, she opened the bag*."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "How did Marta know it was the wrong bag?",
+      "options": [
+        { "id": "a", "text": "It was a different colour" },
+        { "id": "b", "text": "It had another person's clothes" },
+        { "id": "c", "text": "It was too heavy" }
+      ],
+      "answer": "b",
+      "evidence": ["p3s2"],
+      "rationale_es": "Dentro había ropa de hombre: una chaqueta y unos zapatos grandes."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "vocab_in_context",
+      "prompt": "In paragraph 4, \"it looked just like hers\" means the two bags were…",
+      "options": [
+        { "id": "a", "text": "almost the same" },
+        { "id": "b", "text": "completely different" },
+        { "id": "c", "text": "both empty" }
+      ],
+      "answer": "a",
+      "evidence": ["p4s3"],
+      "rationale_es": "*Look like* = parecerse a. Las dos maletas eran iguales, por eso se confundió."
+    },
+    {
+      "id": "q7",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Liam was a tourist in Dublin.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["p5s2"],
+      "rationale_es": "*He was from Dublin*: era de allí."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What did Liam give Marta?",
+      "options": [
+        { "id": "a", "text": "A bus ticket" },
+        { "id": "b", "text": "His jacket" },
+        { "id": "c", "text": "His phone number" }
+      ],
+      "answer": "c",
+      "evidence": ["p5s4"],
+      "rationale_es": "Le enseñó dónde comprar el billete, pero lo que le dio fue su número."
+    },
+    {
+      "id": "q9",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Marta got lost in Dublin.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["p6s1"],
+      "rationale_es": "*Marta did not get lost*, pero lo llamó igualmente."
+    },
+    {
+      "id": "q10",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one word from the text.",
+      "text": "Marta called Liam {{1}} days later.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["two", "2"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["p6s1"],
+      "rationale_es": "*She called him two days later*."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 194,
+  "lemmas": [
+    "a", "after", "airport", "alone", "and", "arrive", "at", "back", "bag", "be", "big", "blue", "brown",
+    "bus", "but", "buy", "call", "change", "charger", "clothes", "cousin", "day", "desk", "do", "excuse",
+    "find", "first", "fly", "for", "friend", "from", "get", "give", "go", "good", "have", "he", "her", "hers",
+    "him", "his", "hold", "i", "if", "information", "inside", "it", "jacket", "just", "last", "later", "laugh",
+    "like", "little", "look", "lose", "lot", "man", "me", "minute", "my", "name", "nervous", "not", "number",
+    "of", "on", "open", "pair", "people", "phone", "say", "see", "she", "shoe", "show", "small", "stand",
+    "still", "stop", "summer", "take", "talk", "that", "the", "then", "there", "they", "think", "ticket", "to",
+    "today", "trip", "visit", "wait", "when", "where", "woman", "wrong", "you", "young"
+  ],
+  "difficulty": 871,
+  "qa": {
+    "coverage_by_level": { "A1": 0.9728, "A2": 0.9946, "B1": 0.9946, "B2": 0.9946, "C1": 0.9946, "C2": 1 },
+    "off_level_lemmas": ["charger"],
+    "avg_sentence_words": 8.8,
+    "flesch_reading_ease": 98.1,
+    "checked_at": "2026-10-09T09:58:23.386Z"
+  }
+}

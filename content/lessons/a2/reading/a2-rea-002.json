@@ -1,0 +1,689 @@
+{
+  "id": "a2-rea-002",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "a2-u05",
+  "series": "a2-u05-hostel",
+  "skill": "reading",
+  "genre": "notice",
+  "title": "Welcome to Riverside Hostel",
+  "summary_es": "Las normas de un albergue: horarios de entrada y salida, habitaciones, cocina, silencio por la noche e internet.",
+  "topic": "travel",
+  "tags": ["albergue", "normas", "must", "have to"],
+  "can_do": ["R-A2-01", "R-A2-03"],
+  "grammar_focus": ["a2.modals-obligation"],
+  "vocab_focus": ["check in", "guest", "locker", "staff", "must not"],
+  "est_minutes": 9,
+  "prediction_prompt": "You are staying at a hostel. What rules do you think it has?",
+  "pre_teach": ["hostel", "guest"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Welcome to Riverside Hostel!",
+          "tokens": [
+            { "t": "Welcome", "l": "welcome", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "Riverside", "l": "riverside", "p": "PROPN", "w": false, "sp": true },
+            { "t": "Hostel", "l": "hostel", "p": "PROPN", "w": false },
+            { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "We want all our guests to have a good stay.",
+          "tokens": [
+            { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "want", "l": "want", "p": "VERB", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "guests", "l": "guest", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "good", "l": "good", "p": "ADJ", "w": true, "sp": true },
+            { "t": "stay", "l": "stay", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Please read these rules.",
+          "tokens": [
+            { "t": "Please", "l": "please", "p": "INTJ", "w": false, "sp": true },
+            { "t": "read", "l": "read", "p": "VERB", "w": true, "sp": true },
+            { "t": "these", "l": "these", "p": "DET", "w": true, "sp": true },
+            { "t": "rules", "l": "rule", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "You can check in from two o'clock in the afternoon.",
+          "tokens": [
+            { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "check", "l": "check", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true },
+            { "t": "o'clock", "l": "o'clock", "p": "ADV", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "afternoon", "l": "afternoon", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "On your last day, you must leave your room before eleven in the morning.",
+          "tokens": [
+            { "t": "On", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+            { "t": "last", "l": "last", "p": "ADJ", "w": true, "sp": true },
+            { "t": "day", "l": "day", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "must", "l": "must", "p": "AUX", "w": true, "sp": true },
+            { "t": "leave", "l": "leave", "p": "VERB", "w": true, "sp": true },
+            { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+            { "t": "room", "l": "room", "p": "NOUN", "w": true, "sp": true },
+            { "t": "before", "l": "before", "p": "ADP", "w": true, "sp": true },
+            { "t": "eleven", "l": "eleven", "p": "NUM", "w": false, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "morning", "l": "morning", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "If you want to leave your bags at reception, it costs two dollars a bag.",
+          "tokens": [
+            { "t": "If", "l": "if", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "want", "l": "want", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "leave", "l": "leave", "p": "VERB", "w": true, "sp": true },
+            { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+            { "t": "bags", "l": "bag", "p": "NOUN", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "reception", "l": "reception", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "costs", "l": "cost", "p": "VERB", "w": true, "sp": true },
+            { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true },
+            { "t": "dollars", "l": "dollar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "bag", "l": "bag", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "You must not eat or smoke in the rooms.",
+          "tokens": [
+            { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "must", "l": "must", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "eat", "l": "eat", "p": "VERB", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "smoke", "l": "smoke", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "rooms", "l": "room", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Keep your things in your locker and lock it.",
+          "tokens": [
+            { "t": "Keep", "l": "keep", "p": "VERB", "w": true, "sp": true },
+            { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+            { "t": "things", "l": "thing", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+            { "t": "locker", "l": "locker", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "lock", "l": "lock", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "The hostel does not give you a lock, but you can buy one at reception.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "hostel", "l": "hostel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "does", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "give", "l": "give", "p": "VERB", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "lock", "l": "lock", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "buy", "l": "buy", "p": "VERB", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "reception", "l": "reception", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "You can use the kitchen from seven in the morning to ten at night.",
+          "tokens": [
+            { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "use", "l": "use", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "kitchen", "l": "kitchen", "p": "NOUN", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "seven", "l": "seven", "p": "NUM", "w": false, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "morning", "l": "morning", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "ten", "l": "ten", "p": "NUM", "w": false, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "night", "l": "night", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Please wash your plates and cups after you eat.",
+          "tokens": [
+            { "t": "Please", "l": "please", "p": "INTJ", "w": false, "sp": true },
+            { "t": "wash", "l": "wash", "p": "VERB", "w": true, "sp": true },
+            { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+            { "t": "plates", "l": "plate", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "cups", "l": "cup", "p": "NOUN", "w": true, "sp": true },
+            { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "eat", "l": "eat", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Write your name on your food before you put it in the fridge.",
+          "tokens": [
+            { "t": "Write", "l": "write", "p": "VERB", "w": true, "sp": true },
+            { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+            { "t": "name", "l": "name", "p": "NOUN", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+            { "t": "food", "l": "food", "p": "NOUN", "w": true, "sp": true },
+            { "t": "before", "l": "before", "p": "ADP", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "put", "l": "put", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "fridge", "l": "fridge", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Breakfast is free and we serve it from seven to nine.",
+          "tokens": [
+            { "t": "Breakfast", "l": "breakfast", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "free", "l": "free", "p": "ADJ", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true },
+            { "t": "serve", "l": "serve", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "seven", "l": "seven", "p": "NUM", "w": false, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "nine", "l": "nine", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Many of our guests get up early.",
+          "tokens": [
+            { "t": "Many", "l": "many", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "guests", "l": "guest", "p": "NOUN", "w": true, "sp": true },
+            { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true },
+            { "t": "up", "l": "up", "p": "ADP", "w": true, "sp": true },
+            { "t": "early", "l": "early", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "You have to be quiet after eleven at night.",
+          "tokens": [
+            { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "quiet", "l": "quiet", "p": "ADJ", "w": true, "sp": true },
+            { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true },
+            { "t": "eleven", "l": "eleven", "p": "NUM", "w": false, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "night", "l": "night", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "If you want to talk or listen to music, please use the living room on the ground floor.",
+          "tokens": [
+            { "t": "If", "l": "if", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "want", "l": "want", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "talk", "l": "talk", "p": "VERB", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "listen", "l": "listen", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "music", "l": "music", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "please", "l": "please", "p": "INTJ", "w": false, "sp": true },
+            { "t": "use", "l": "use", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "living", "l": "living", "p": "ADJ", "w": true, "sp": true },
+            { "t": "room", "l": "room", "p": "NOUN", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "ground", "l": "ground", "p": "NOUN", "w": true, "sp": true },
+            { "t": "floor", "l": "floor", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "The internet is free.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "internet", "l": "internet", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "free", "l": "free", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "The password is on the back of your key card.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "password", "l": "password", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "back", "l": "back", "p": "ADV", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+            { "t": "key", "l": "key", "p": "ADJ", "w": true, "sp": true },
+            { "t": "card", "l": "card", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Do you have a question?",
+          "tokens": [
+            { "t": "Do", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "question", "l": "question", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "Our staff are at reception all day and all night.",
+          "tokens": [
+            { "t": "Our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "staff", "l": "staff", "p": "NOUN", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "reception", "l": "reception", "p": "NOUN", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true },
+            { "t": "day", "l": "day", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true },
+            { "t": "night", "l": "night", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "must, must not, have to y can",
+      "explanation_es": "*You must* y *you have to* = es obligatorio. *You must not* = está prohibido. *You can* = está permitido. Son las cuatro formas con las que se escriben las normas.",
+      "refs": ["p2s2", "p3s1", "p5s2", "p4s1"]
+    },
+    {
+      "title_es": "«one» para no repetir",
+      "explanation_es": "En *you can buy one at reception*, *one* sustituye a *a lock*: evita repetir la palabra.",
+      "refs": ["p3s3"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "hostel",
+      "surface": "Hostel",
+      "pos": "noun",
+      "def_en": "a cheap place to stay, where you often share a room",
+      "def_es": "albergue",
+      "ref": "p1s1"
+    },
+    {
+      "lemma": "guest",
+      "surface": "guests",
+      "pos": "noun",
+      "def_en": "a person who is staying at a hotel or hostel",
+      "def_es": "huésped",
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "check in",
+      "surface": "check in",
+      "pos": "phrasal_verb",
+      "def_en": "to arrive at a hotel and get your key",
+      "def_es": "registrarse (al llegar)",
+      "ref": "p2s1"
+    },
+    {
+      "lemma": "reception",
+      "surface": "reception",
+      "pos": "noun",
+      "def_en": "the place in a hotel where you arrive and get your key",
+      "def_es": "recepción",
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "smoke",
+      "surface": "smoke",
+      "pos": "verb",
+      "def_en": "to use a cigarette",
+      "def_es": "fumar",
+      "ref": "p3s1"
+    },
+    {
+      "lemma": "locker",
+      "surface": "locker",
+      "pos": "noun",
+      "def_en": "a small cupboard with a door that you can close with a key",
+      "def_es": "taquilla",
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "lock",
+      "surface": "lock it",
+      "pos": "verb",
+      "def_en": "to close something with a key",
+      "def_es": "cerrar con llave o candado",
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "fridge",
+      "surface": "fridge",
+      "pos": "noun",
+      "def_en": "a cold cupboard in the kitchen for food",
+      "def_es": "nevera",
+      "ref": "p4s3"
+    },
+    {
+      "lemma": "serve",
+      "surface": "serve",
+      "pos": "verb",
+      "def_en": "to give food or drink to people",
+      "def_es": "servir",
+      "ref": "p4s4"
+    },
+    {
+      "lemma": "ground floor",
+      "surface": "ground floor",
+      "pos": "phrase",
+      "def_en": "the part of a building at the same level as the street",
+      "def_es": "planta baja",
+      "ref": "p5s3"
+    },
+    {
+      "lemma": "password",
+      "surface": "password",
+      "pos": "noun",
+      "def_en": "a secret word that you need to use the internet or a computer",
+      "def_es": "contraseña",
+      "ref": "p6s2"
+    },
+    {
+      "lemma": "key card",
+      "surface": "key card",
+      "pos": "phrase",
+      "def_en": "a plastic card that opens the door of your room",
+      "def_es": "tarjeta de la habitación",
+      "ref": "p6s2"
+    },
+    {
+      "lemma": "staff",
+      "surface": "staff",
+      "pos": "noun",
+      "def_en": "the people who work in a place",
+      "def_es": "personal, empleados",
+      "ref": "p6s4"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "Who is this text for?",
+      "options": [
+        { "id": "a", "text": "People who work at the hostel" },
+        { "id": "b", "text": "People who are staying at the hostel" },
+        { "id": "c", "text": "People who want to buy the hostel" }
+      ],
+      "answer": "b",
+      "evidence": ["p1s2"],
+      "rationale_es": "Se dirige a los huéspedes (*our guests*) y les pide que lean las normas."
+    },
+    {
+      "id": "q2",
+      "type": "heading_match",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "Match paragraphs 2, 3, 4 and 5 with the best heading. There is one extra heading.",
+      "paragraphs": ["p2", "p3", "p4", "p5"],
+      "headings": [
+        { "id": "a", "text": "Food and cooking" },
+        { "id": "b", "text": "Night-time" },
+        { "id": "c", "text": "Your room" },
+        { "id": "d", "text": "Coming and going" },
+        { "id": "e", "text": "Prices of the rooms" }
+      ],
+      "answers": { "p2": "d", "p3": "c", "p4": "a", "p5": "b" },
+      "evidence": ["p2", "p3", "p4", "p5"],
+      "rationale_es": "El párrafo 2 habla de llegar y salir; el 3, de la habitación; el 4, de la cocina; el 5, del silencio por la noche. De precios de habitaciones no se dice nada."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What time must guests leave their room on the last day?",
+      "options": [
+        { "id": "a", "text": "Before 11 a.m." },
+        { "id": "b", "text": "Before 12 noon" },
+        { "id": "c", "text": "Before 9 a.m." }
+      ],
+      "answer": "a",
+      "evidence": ["p2s2"],
+      "rationale_es": "*Before eleven in the morning*."
+    },
+    {
+      "id": "q4",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "You can eat in your room.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["p3s1"],
+      "rationale_es": "*You must not eat or smoke in the rooms*: está prohibido."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What can you buy at reception?",
+      "options": [
+        { "id": "a", "text": "Food" },
+        { "id": "b", "text": "A key card" },
+        { "id": "c", "text": "A lock" }
+      ],
+      "answer": "c",
+      "evidence": ["p3s3"],
+      "rationale_es": "El albergue no da candado, *but you can buy one at reception*."
+    },
+    {
+      "id": "q6",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Guests have to pay for breakfast.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["p4s4"],
+      "rationale_es": "*Breakfast is free*: es gratis."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What should you do before you put food in the fridge?",
+      "options": [
+        { "id": "a", "text": "Wash it" },
+        { "id": "b", "text": "Put your name on it" },
+        { "id": "c", "text": "Ask the staff at reception" }
+      ],
+      "answer": "b",
+      "evidence": ["p4s3"],
+      "rationale_es": "*Write your name on your food before you put it in the fridge*."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "reference",
+      "prompt": "In paragraph 3, what does \"one\" mean in \"you can buy one\"?",
+      "options": [
+        { "id": "a", "text": "a lock" },
+        { "id": "b", "text": "a locker" },
+        { "id": "c", "text": "a room" }
+      ],
+      "answer": "a",
+      "evidence": ["p3s3"],
+      "rationale_es": "*One* sustituye a *a lock*, que acaba de nombrarse."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Where can you listen to music late at night?",
+      "options": [
+        { "id": "a", "text": "In your room" },
+        { "id": "b", "text": "In the kitchen downstairs" },
+        { "id": "c", "text": "In the living room" }
+      ],
+      "answer": "c",
+      "evidence": ["p5s3"],
+      "rationale_es": "*Please use the living room on the ground floor*."
+    },
+    {
+      "id": "q10",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one word from the text.",
+      "text": "The internet {{1}} is on the back of your key card.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["password"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["p6s2"],
+      "rationale_es": "*The password is on the back of your key card*."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 200,
+  "lemmas": [
+    "a", "after", "afternoon", "all", "and", "at", "back", "bag", "be", "before", "breakfast", "but", "buy",
+    "can", "card", "check", "cost", "cup", "day", "do", "dollar", "early", "eat", "floor", "food", "free",
+    "fridge", "from", "get", "give", "good", "ground", "guest", "have", "hostel", "if", "in", "internet", "it",
+    "keep", "key", "kitchen", "last", "leave", "listen", "living", "lock", "locker", "many", "morning",
+    "music", "must", "name", "night", "not", "o'clock", "of", "on", "or", "our", "password", "plate", "put",
+    "question", "quiet", "read", "reception", "room", "rule", "serve", "smoke", "staff", "stay", "talk", "the",
+    "these", "thing", "to", "up", "use", "want", "wash", "we", "welcome", "write", "you", "your"
+  ],
+  "difficulty": 902,
+  "qa": {
+    "coverage_by_level": { "A1": 0.9247, "A2": 0.9677, "B1": 0.9946, "B2": 0.9946, "C1": 0.9946, "C2": 1 },
+    "off_level_lemmas": ["hostel", "locker", "password", "reception"],
+    "avg_sentence_words": 10,
+    "flesch_reading_ease": 94.7,
+    "checked_at": "2026-10-09T09:58:45.263Z"
+  }
+}

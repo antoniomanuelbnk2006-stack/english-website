@@ -1,0 +1,614 @@
+{
+  "id": "a2-lis-004",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "a2-u04",
+  "series": "a2-u04-health",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "At the pharmacy",
+  "summary_es": "Tom no se encuentra bien y va a la farmacia: la farmacéutica le da unas pastillas y le explica cómo tomarlas.",
+  "topic": "health",
+  "tags": ["salud", "farmacia", "consejos", "should"],
+  "can_do": ["L-A2-01", "L-A2-02", "L-A2-06"],
+  "grammar_focus": ["a2.modals-obligation"],
+  "vocab_focus": ["headache", "throat", "tablets", "you should", "have to"],
+  "est_minutes": 8,
+  "prediction_prompt": "A man does not feel well and goes to the pharmacy. What will the pharmacist tell him?",
+  "pre_teach": ["headache", "tablets"],
+  "speakers": [
+    { "id": "amy", "name": "Amy", "accent": "en-US", "gender": "female" },
+    { "id": "tom", "name": "Tom", "accent": "en-GB", "gender": "male" }
+  ],
+  "target_wpm": 120,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "amy",
+      "text": "Good morning. How can I help you?",
+      "tokens": [
+        { "t": "Good", "l": "good", "p": "ADJ", "w": true, "sp": true, "s": 0.023, "e": 0.358 },
+        { "t": "morning", "l": "morning", "p": "NOUN", "w": true, "s": 0.358, "e": 0.893 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 1.293, "e": 1.527 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 1.527, "e": 1.761 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 1.76, "e": 1.877 },
+        { "t": "help", "l": "help", "p": "VERB", "w": true, "sp": true, "s": 1.877, "e": 2.169 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 2.169, "e": 2.403 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.454
+    },
+    {
+      "id": "s2",
+      "speaker": "tom",
+      "text": "Hello. I don't feel very well. I have a bad headache.",
+      "tokens": [
+        { "t": "Hello", "l": "hello", "p": "INTJ", "w": false, "s": 3.205, "e": 3.631 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 3.631, "e": 3.773 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "s": 3.773, "e": 3.943 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 3.943, "e": 4.199 },
+        { "t": "feel", "l": "feel", "p": "VERB", "w": true, "sp": true, "s": 4.199, "e": 4.554 },
+        { "t": "very", "l": "very", "p": "ADV", "w": true, "sp": true, "s": 4.554, "e": 4.909 },
+        { "t": "well", "l": "well", "p": "ADV", "w": true, "s": 4.909, "e": 5.264 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 5.263, "e": 5.405 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 5.405, "e": 5.76 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 5.76, "e": 5.902 },
+        { "t": "bad", "l": "bad", "p": "ADJ", "w": true, "sp": true, "s": 5.902, "e": 6.186 },
+        { "t": "headache", "l": "headache", "p": "NOUN", "w": true, "s": 6.186, "e": 6.825 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.154,
+      "end": 7.752
+    },
+    {
+      "id": "s3",
+      "speaker": "amy",
+      "text": "I'm sorry to hear that. Do you have a temperature?",
+      "tokens": [
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 8.481, "e": 8.759 },
+        { "t": "sorry", "l": "sorry", "p": "ADJ", "w": true, "sp": true, "s": 8.759, "e": 9.176 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 9.177, "e": 9.386 },
+        { "t": "hear", "l": "hear", "p": "VERB", "w": true, "sp": true, "s": 9.385, "e": 9.733 },
+        { "t": "that", "l": "that", "p": "SCONJ", "w": true, "s": 9.733, "e": 10.081 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 10.541, "e": 10.696 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 10.696, "e": 10.902 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 10.902, "e": 11.16 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 11.159, "e": 11.262 },
+        { "t": "temperature", "l": "temperature", "p": "NOUN", "w": true, "s": 11.263, "e": 11.881 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.452,
+      "end": 11.923
+    },
+    {
+      "id": "s4",
+      "speaker": "tom",
+      "text": "No, I don't think so. But my throat hurts too.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "DET", "w": true, "s": 12.653, "e": 12.892 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 12.892, "e": 13.052 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "s": 13.052, "e": 13.244 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 13.244, "e": 13.531 },
+        { "t": "think", "l": "think", "p": "VERB", "w": true, "sp": true, "s": 13.531, "e": 14.01 },
+        { "t": "so", "l": "so", "p": "ADV", "w": true, "s": 14.009, "e": 14.248 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 14.248, "e": 14.567 },
+        { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 14.568, "e": 14.807 },
+        { "t": "throat", "l": "throat", "p": "NOUN", "w": true, "sp": true, "s": 14.807, "e": 15.365 },
+        { "t": "hurts", "l": "hurt", "p": "VERB", "w": true, "sp": true, "s": 15.365, "e": 15.844 },
+        { "t": "too", "l": "too", "p": "ADV", "w": true, "s": 15.844, "e": 16.163 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.623,
+      "end": 17.114
+    },
+    {
+      "id": "s5",
+      "speaker": "amy",
+      "text": "When did it start?",
+      "tokens": [
+        { "t": "When", "l": "when", "p": "ADV", "w": true, "sp": true, "s": 17.846, "e": 18.177 },
+        { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 18.177, "e": 18.441 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 18.441, "e": 18.639 },
+        { "t": "start", "l": "start", "p": "VERB", "w": true, "s": 18.639, "e": 19.036 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.814,
+      "end": 19.078
+    },
+    {
+      "id": "s6",
+      "speaker": "tom",
+      "text": "Yesterday evening.",
+      "tokens": [
+        { "t": "Yesterday", "l": "yesterday", "p": "ADV", "w": true, "sp": true, "s": 19.869, "e": 20.752 },
+        { "t": "evening", "l": "evening", "p": "NOUN", "w": true, "s": 20.752, "e": 21.459 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.778,
+      "end": 22.298
+    },
+    {
+      "id": "s7",
+      "speaker": "amy",
+      "text": "I see. It's probably a cold. Take these tablets.",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 23.019, "e": 23.266 },
+        { "t": "see", "l": "see", "p": "VERB", "w": true, "s": 23.266, "e": 23.759 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 24.069, "e": 24.243 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 24.243, "e": 24.417 },
+        { "t": "probably", "l": "probably", "p": "ADV", "w": true, "sp": true, "s": 24.417, "e": 25.043 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 25.042, "e": 25.181 },
+        { "t": "cold", "l": "cold", "p": "NOUN", "w": true, "s": 25.181, "e": 25.529 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Take", "l": "take", "p": "VERB", "w": true, "sp": true, "s": 25.929, "e": 26.311 },
+        { "t": "these", "l": "these", "p": "DET", "w": true, "sp": true, "s": 26.311, "e": 26.769 },
+        { "t": "tablets", "l": "tablet", "p": "NOUN", "w": true, "s": 26.768, "e": 27.379 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.998,
+      "end": 27.412
+    },
+    {
+      "id": "s8",
+      "speaker": "tom",
+      "text": "How many do I have to take?",
+      "tokens": [
+        { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 28.19, "e": 28.474 },
+        { "t": "many", "l": "many", "p": "ADJ", "w": true, "sp": true, "s": 28.474, "e": 28.83 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 28.83, "e": 29.043 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 29.043, "e": 29.185 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 29.186, "e": 29.542 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 29.541, "e": 29.754 },
+        { "t": "take", "l": "take", "p": "VERB", "w": true, "s": 29.754, "e": 30.11 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.112,
+      "end": 31.03
+    },
+    {
+      "id": "s9",
+      "speaker": "amy",
+      "text": "Two a day: one after breakfast and one after dinner.",
+      "tokens": [
+        { "t": "Two", "l": "two", "p": "NUM", "w": false, "sp": true, "s": 31.798, "e": 32.106 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 32.106, "e": 32.26 },
+        { "t": "day", "l": "day", "p": "NOUN", "w": true, "s": 32.26, "e": 32.568 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true, "s": 33.138, "e": 33.409 },
+        { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true, "s": 33.409, "e": 33.816 },
+        { "t": "breakfast", "l": "breakfast", "p": "NOUN", "w": true, "sp": true, "s": 33.816, "e": 34.494 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 34.494, "e": 34.765 },
+        { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true, "s": 34.765, "e": 35.036 },
+        { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true, "s": 35.037, "e": 35.444 },
+        { "t": "dinner", "l": "dinner", "p": "NOUN", "w": true, "s": 35.443, "e": 35.918 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.73,
+      "end": 35.96
+    },
+    {
+      "id": "s10",
+      "speaker": "tom",
+      "text": "OK. Do I have to take them with food?",
+      "tokens": [
+        { "t": "OK", "l": "ok", "p": "INTJ", "w": false, "s": 36.827, "e": 37.039 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 37.039, "e": 37.251 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 37.25, "e": 37.391 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 37.391, "e": 37.744 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 37.744, "e": 37.956 },
+        { "t": "take", "l": "take", "p": "VERB", "w": true, "sp": true, "s": 37.956, "e": 38.309 },
+        { "t": "them", "l": "them", "p": "PRON", "w": true, "sp": true, "s": 38.309, "e": 38.662 },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 38.661, "e": 39.014 },
+        { "t": "food", "l": "food", "p": "NOUN", "w": true, "s": 39.014, "e": 39.367 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 36.66,
+      "end": 40.29
+    },
+    {
+      "id": "s11",
+      "speaker": "amy",
+      "text": "Yes, and you should drink a lot of water.",
+      "tokens": [
+        { "t": "Yes", "l": "yes", "p": "INTJ", "w": false, "s": 41.021, "e": 41.671 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 42.031, "e": 42.222 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 42.222, "e": 42.413 },
+        { "t": "should", "l": "should", "p": "AUX", "w": true, "sp": true, "s": 42.413, "e": 42.747 },
+        { "t": "drink", "l": "drink", "p": "VERB", "w": true, "sp": true, "s": 42.748, "e": 43.035 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 43.034, "e": 43.13 },
+        { "t": "lot", "l": "lot", "p": "NOUN", "w": true, "sp": true, "s": 43.13, "e": 43.321 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 43.321, "e": 43.464 },
+        { "t": "water", "l": "water", "p": "NOUN", "w": true, "s": 43.464, "e": 43.751 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 40.99,
+      "end": 43.796
+    },
+    {
+      "id": "s12",
+      "speaker": "tom",
+      "text": "Can I go to work tomorrow?",
+      "tokens": [
+        { "t": "Can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 44.559, "e": 44.857 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 44.857, "e": 45.006 },
+        { "t": "go", "l": "go", "p": "VERB", "w": true, "sp": true, "s": 45.007, "e": 45.231 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 45.231, "e": 45.455 },
+        { "t": "work", "l": "work", "p": "VERB", "w": true, "sp": true, "s": 45.454, "e": 45.827 },
+        { "t": "tomorrow", "l": "tomorrow", "p": "ADV", "w": true, "s": 45.827, "e": 46.499 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.496,
+      "end": 47.38
+    },
+    {
+      "id": "s13",
+      "speaker": "amy",
+      "text": "You shouldn't. You should stay at home and sleep.",
+      "tokens": [
+        { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 48.11, "e": 48.336 },
+        { "t": "should", "l": "should", "p": "AUX", "w": true, "s": 48.336, "e": 48.712 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "s": 48.712, "e": 48.9 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 49.35, "e": 49.588 },
+        { "t": "should", "l": "should", "p": "AUX", "w": true, "sp": true, "s": 49.588, "e": 50.004 },
+        { "t": "stay", "l": "stay", "p": "VERB", "w": true, "sp": true, "s": 50.004, "e": 50.301 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 50.301, "e": 50.479 },
+        { "t": "home", "l": "home", "p": "NOUN", "w": true, "sp": true, "s": 50.479, "e": 50.776 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 50.776, "e": 51.014 },
+        { "t": "sleep", "l": "sleep", "p": "NOUN", "w": true, "s": 51.014, "e": 51.37 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 48.08,
+      "end": 51.43
+    },
+    {
+      "id": "s14",
+      "speaker": "tom",
+      "text": "All right. How much are the tablets?",
+      "tokens": [
+        { "t": "All", "l": "all", "p": "DET", "w": true, "sp": true, "s": 52.163, "e": 52.477 },
+        { "t": "right", "l": "right", "p": "NOUN", "w": true, "s": 52.477, "e": 52.948 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 52.949, "e": 53.263 },
+        { "t": "much", "l": "much", "p": "ADJ", "w": true, "sp": true, "s": 53.263, "e": 53.656 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 53.656, "e": 53.97 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 53.97, "e": 54.284 },
+        { "t": "tablets", "l": "tablet", "p": "NOUN", "w": true, "s": 54.284, "e": 54.913 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 52.13,
+      "end": 55.757
+    },
+    {
+      "id": "s15",
+      "speaker": "amy",
+      "text": "Six dollars fifty. If you don't feel better in three days, see a doctor.",
+      "tokens": [
+        { "t": "Six", "l": "six", "p": "NUM", "w": false, "sp": true, "s": 56.479, "e": 56.795 },
+        { "t": "dollars", "l": "dollar", "p": "NOUN", "w": true, "sp": true, "s": 56.795, "e": 57.427 },
+        { "t": "fifty", "l": "fifty", "p": "NUM", "w": false, "s": 57.427, "e": 57.901 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "If", "l": "if", "p": "SCONJ", "w": true, "sp": true, "s": 57.901, "e": 58.138 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 58.138, "e": 58.454 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "s": 58.454, "e": 58.644 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 58.644, "e": 58.928 },
+        { "t": "feel", "l": "feel", "p": "VERB", "w": true, "sp": true, "s": 58.928, "e": 59.323 },
+        { "t": "better", "l": "good", "p": "ADJ", "w": true, "sp": true, "s": 59.323, "e": 59.876 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 59.876, "e": 60.113 },
+        { "t": "three", "l": "three", "p": "NUM", "w": false, "sp": true, "s": 60.113, "e": 60.587 },
+        { "t": "days", "l": "day", "p": "NOUN", "w": true, "s": 60.587, "e": 60.982 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "see", "l": "see", "p": "VERB", "w": true, "sp": true, "s": 60.982, "e": 61.298 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 61.298, "e": 61.456 },
+        { "t": "doctor", "l": "doctor", "p": "NOUN", "w": true, "s": 61.456, "e": 62.009 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.457,
+      "end": 62.05
+    },
+    {
+      "id": "s16",
+      "speaker": "tom",
+      "text": "Thank you very much. Goodbye.",
+      "tokens": [
+        { "t": "Thank", "l": "thank", "p": "VERB", "w": true, "sp": true, "s": 62.782, "e": 63.202 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 63.202, "e": 63.482 },
+        { "t": "very", "l": "very", "p": "ADV", "w": true, "sp": true, "s": 63.482, "e": 63.832 },
+        { "t": "much", "l": "much", "p": "ADJ", "w": true, "s": 63.832, "e": 64.182 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Goodbye", "l": "goodbye", "p": "INTJ", "w": false, "s": 64.352, "e": 65.022 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.75,
+      "end": 65.982
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s2",
+      "phrase": "I don't feel very well",
+      "type": "elision",
+      "ipa": "/aɪ ˈdəʊn fiːl ˈveri ˈwel/",
+      "explanation_es": "La *t* de *don't* no suena delante de *feel*."
+    },
+    {
+      "ref": "s3",
+      "phrase": "Do you have a temperature",
+      "type": "reduction",
+      "ipa": "/dʒə ˈhæv ə ˈtemprətʃə/",
+      "explanation_es": "*Do you* se reduce a /dʒə/."
+    },
+    {
+      "ref": "s8",
+      "phrase": "do I have to take",
+      "type": "assimilation",
+      "ipa": "/duː aɪ ˈhæftə ˈteɪk/",
+      "explanation_es": "*have to* suena /ˈhæftə/, como una sola palabra."
+    },
+    {
+      "ref": "s11",
+      "phrase": "a lot of water",
+      "type": "linking",
+      "ipa": "/ə ˈlɒt əv ˈwɔːtə/",
+      "explanation_es": "*lot of* se enlaza y *of* es débil: /ˈlɒtəv/."
+    },
+    {
+      "ref": "s13",
+      "phrase": "You shouldn't",
+      "type": "contraction",
+      "ipa": "/jə ˈʃʊdnt/",
+      "explanation_es": "*shouldn't* = *should not*. Fíjate en la /n/ del final: es lo que la distingue de *should*."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "headache",
+      "surface": "headache",
+      "pos": "noun",
+      "def_en": "a pain in your head",
+      "def_es": "dolor de cabeza",
+      "ref": "s2"
+    },
+    {
+      "lemma": "temperature",
+      "surface": "temperature",
+      "pos": "noun",
+      "def_en": "when your body is hotter than normal because you are ill",
+      "def_es": "fiebre",
+      "ref": "s3"
+    },
+    {
+      "lemma": "throat",
+      "surface": "throat",
+      "pos": "noun",
+      "def_en": "the part inside your neck that you use to eat and speak",
+      "def_es": "garganta",
+      "ref": "s4"
+    },
+    {
+      "lemma": "cold",
+      "surface": "cold",
+      "pos": "noun",
+      "def_en": "a common illness: you cough and your nose runs",
+      "def_es": "resfriado",
+      "ref": "s7"
+    },
+    {
+      "lemma": "tablet",
+      "surface": "tablets",
+      "pos": "noun",
+      "def_en": "small hard pieces of medicine",
+      "def_es": "pastillas",
+      "ref": "s7"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "Where is Tom?",
+      "options": [
+        { "id": "a", "text": "At a doctor's office" },
+        { "id": "b", "text": "At a pharmacy" },
+        { "id": "c", "text": "At work" }
+      ],
+      "answer": "b",
+      "evidence": ["s7"],
+      "rationale_es": "Amy le da unas pastillas y le cobra: es una farmacia. Al médico tendrá que ir si no mejora."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Where does Tom have pain?",
+      "options": [
+        { "id": "a", "text": "Head and throat" },
+        { "id": "b", "text": "Leg and back" },
+        { "id": "c", "text": "A high temperature" }
+      ],
+      "answer": "a",
+      "evidence": ["s2", "s4"],
+      "rationale_es": "Le duelen la cabeza y la garganta. Fiebre no tiene: *No, I don't think so*."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "When did Tom start to feel ill?",
+      "options": [
+        { "id": "a", "text": "This morning" },
+        { "id": "b", "text": "Two days ago" },
+        { "id": "c", "text": "Yesterday evening" }
+      ],
+      "answer": "c",
+      "evidence": ["s6"],
+      "rationale_es": "*Yesterday evening*: ayer por la tarde-noche."
+    },
+    {
+      "id": "q4",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one number.",
+      "text": "Tom has to take {{1}} tablets a day.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["two", "2"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["s9"],
+      "rationale_es": "*Two a day*: una después del desayuno y otra después de la cena."
+    },
+    {
+      "id": "q5",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Tom should take the tablets with food.",
+      "answer": "T",
+      "allow_ng": false,
+      "evidence": ["s10"],
+      "rationale_es": "Tom lo pregunta y Amy contesta *Yes*."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What does Amy tell Tom to do tomorrow?",
+      "options": [
+        { "id": "a", "text": "Go to work" },
+        { "id": "b", "text": "Go to hospital" },
+        { "id": "c", "text": "Stay at home" }
+      ],
+      "answer": "c",
+      "evidence": ["s13"],
+      "rationale_es": "*You shouldn't* (ir a trabajar). *You should stay at home and sleep*."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "How much do the tablets cost?",
+      "options": [
+        { "id": "a", "text": "$5.60" },
+        { "id": "b", "text": "$6.50" },
+        { "id": "c", "text": "$6.15" }
+      ],
+      "answer": "b",
+      "evidence": ["s15"],
+      "rationale_es": "*Six dollars fifty*: 6,50. *Fifty* (50), no *fifteen* (15)."
+    },
+    {
+      "id": "q8",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Amy says Tom must see a doctor today.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["s15"],
+      "rationale_es": "Solo *if you don't feel better in three days*."
+    },
+    {
+      "id": "q9",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s8",
+      "reference": "How many do I have to take?",
+      "accept_variants": [],
+      "evidence": ["s8"],
+      "rationale_es": "*have to* suena /ˈhæftə/."
+    },
+    {
+      "id": "q10",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s11",
+      "reference": "Yes, and you should drink a lot of water.",
+      "accept_variants": [],
+      "evidence": ["s11"],
+      "rationale_es": "*a lot of* se dice todo seguido."
+    },
+    {
+      "id": "q11",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s13",
+      "reference": "You shouldn't. You should stay at home and sleep.",
+      "accept_variants": ["You should not. You should stay at home and sleep."],
+      "evidence": ["s13"],
+      "rationale_es": "La diferencia entre *should* y *shouldn't* es una /n/ muy corta."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "after", "all", "and", "at", "bad", "be", "breakfast", "but", "can", "cold", "day", "dinner", "do",
+    "doctor", "dollar", "drink", "evening", "feel", "food", "go", "good", "have", "headache", "hear", "help",
+    "home", "how", "hurt", "i", "if", "in", "it", "lot", "many", "morning", "much", "my", "no", "not", "of",
+    "probably", "right", "see", "should", "sleep", "so", "sorry", "start", "stay", "tablet", "take",
+    "temperature", "thank", "that", "the", "them", "these", "think", "throat", "to", "tomorrow", "too", "very",
+    "water", "well", "when", "with", "work", "yesterday", "you"
+  ],
+  "difficulty": 897,
+  "qa": {
+    "coverage_by_level": { "A1": 0.9593, "A2": 0.9756, "B1": 0.9919, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": ["tablet", "throat"],
+    "avg_sentence_words": 4.6,
+    "flesch_reading_ease": 98.4,
+    "checked_at": "2026-10-09T09:58:55.888Z"
+  },
+  "audio": {
+    "src": "audio/a2/a2-lis-004/v1.m4a",
+    "duration_s": 65.982,
+    "wpm": 117,
+    "provider": "kokoro",
+    "voices": { "amy": "af_bella", "tom": "bm_fable" },
+    "loudness_lufs": -16.4,
+    "peaks": [
+      0.49, 0.43, 0.22, 0.08, 0.5, 0.5, 0.37, 0.13, 0.1, 0, 0, 0.9, 0.54, 0.53, 0.28, 0.21, 0.25, 0.23, 0.22,
+      0.02, 0.27, 0.38, 0.27, 0.18, 0.12, 0.01, 0.01, 0.01, 0.01, 0, 0.46, 0.53, 0.33, 0.25, 0.22, 0.21, 0.16,
+      0, 0.34, 0.45, 0.3, 0.25, 0.17, 0.09, 0, 0, 0.54, 0.53, 0.32, 0.32, 0.52, 0.13, 0.3, 0.35, 0.42, 0.19,
+      0.41, 0.44, 0.16, 0.01, 0.01, 0.01, 0.01, 0, 0.24, 0.63, 0.4, 0.27, 0.12, 0.15, 0, 0, 0.93, 0.99, 0.36,
+      0.24, 0.25, 0.19, 0.05, 0.02, 0.01, 0.01, 0, 0.36, 0.4, 0.2, 0.08, 0.63, 0.3, 0.46, 0.31, 0.27, 0.12, 0,
+      0.41, 0.35, 0.37, 0.36, 0.16, 0.21, 0, 0, 0.24, 0.64, 0.54, 0.36, 0.36, 0.97, 0.21, 0.08, 0.02, 0.02,
+      0.02, 0, 0, 0.27, 0.39, 0.25, 0.07, 0, 0.52, 0.67, 0.26, 0.31, 0.17, 0.3, 0.39, 0.48, 0.19, 0.24, 0.1, 0,
+      0, 0.39, 0.72, 0.37, 0.21, 0.53, 1, 0.25, 0.19, 0.18, 0.2, 0.11, 0.02, 0.02, 0.01, 0, 0, 0.38, 0.28,
+      0.21, 0.6, 0.54, 0.31, 0.4, 0.27, 0.16, 0.14, 0.05, 0, 0.02, 0.56, 0.54, 0.67, 0.3, 0.76, 0.31, 0.26,
+      0.06, 0.02, 0.01, 0.01, 0, 0.02, 0.33, 0.2, 0.19, 0, 0.56, 0.47, 0.35, 0.51, 0.33, 0.33, 0.17, 0.13, 0,
+      0, 0.02, 0.47, 0.44, 0.31, 0.48, 0.37, 0.35, 0.6, 0.4, 0.17, 0.42, 0.02, 0.01, 0.01, 0, 0, 0.26, 0.34,
+      0.51, 0.32, 0.24, 0.17, 0.05, 0, 0.64, 0.44, 0.35, 0.47, 0.38, 0.27, 0.28, 0.16, 0.17, 0.38, 0.42, 0.14,
+      0.09, 0, 0, 0.5, 0.84, 0.32, 0.31, 0.31, 0.3, 0.22, 0.42, 0.2, 0.02, 0.02, 0.02
+    ]
+  }
+}

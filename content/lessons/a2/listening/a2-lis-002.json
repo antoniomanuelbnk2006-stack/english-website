@@ -1,0 +1,623 @@
+{
+  "id": "a2-lis-002",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "a2-u03",
+  "series": "a2-u03-directions",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "How do I get to the museum?",
+  "summary_es": "Un turista pregunta en la calle cómo llegar al museo y una vecina le indica el camino paso a paso.",
+  "topic": "travel",
+  "tags": ["direcciones", "ciudad", "indicaciones"],
+  "can_do": ["L-A2-03", "L-A2-04", "L-A2-06"],
+  "grammar_focus": ["a2.prepositions-movement"],
+  "vocab_focus": ["straight on", "turn left", "cross", "opposite", "it takes"],
+  "est_minutes": 8,
+  "prediction_prompt": "A tourist asks for directions in the street. Which words do you expect to hear?",
+  "pre_teach": ["straight on", "opposite"],
+  "speakers": [
+    { "id": "dan", "name": "Dan", "accent": "en-US", "gender": "male" },
+    { "id": "rose", "name": "Rose", "accent": "en-GB", "gender": "female" }
+  ],
+  "target_wpm": 120,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "dan",
+      "text": "Excuse me. Can you help me? I'm looking for the City Museum.",
+      "tokens": [
+        { "t": "Excuse", "l": "excuse", "p": "NOUN", "w": true, "sp": true, "s": 0.122, "e": 1.011 },
+        { "t": "me", "l": "me", "p": "PRON", "w": true, "s": 1.011, "e": 1.392 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 1.542, "e": 1.8 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 1.8, "e": 2.058 },
+        { "t": "help", "l": "help", "p": "VERB", "w": true, "sp": true, "s": 2.057, "e": 2.379 },
+        { "t": "me", "l": "me", "p": "PRON", "w": true, "s": 2.379, "e": 2.572 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 3.272, "e": 3.553 },
+        { "t": "looking", "l": "look", "p": "VERB", "w": true, "sp": true, "s": 3.553, "e": 4.116 },
+        { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true, "s": 4.116, "e": 4.397 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 4.397, "e": 4.678 },
+        { "t": "City", "l": "city", "p": "NOUN", "w": true, "sp": true, "s": 4.678, "e": 5.03 },
+        { "t": "Museum", "l": "museum", "p": "PROPN", "w": false, "s": 5.03, "e": 5.522 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 5.715
+    },
+    {
+      "id": "s2",
+      "speaker": "rose",
+      "text": "Yes, of course. It's not far from here.",
+      "tokens": [
+        { "t": "Yes", "l": "yes", "p": "INTJ", "w": false, "s": 6.442, "e": 6.765 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 6.765, "e": 7.007 },
+        { "t": "course", "l": "course", "p": "NOUN", "w": true, "s": 7.008, "e": 7.574 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 7.573, "e": 7.775 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 7.775, "e": 7.977 },
+        { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true, "s": 7.977, "e": 8.3 },
+        { "t": "far", "l": "far", "p": "ADV", "w": true, "sp": true, "s": 8.301, "e": 8.624 },
+        { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true, "s": 8.624, "e": 9.028 },
+        { "t": "here", "l": "here", "p": "ADV", "w": true, "s": 9.028, "e": 9.432 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.415,
+      "end": 9.499
+    },
+    {
+      "id": "s3",
+      "speaker": "dan",
+      "text": "Great. How do I get there?",
+      "tokens": [
+        { "t": "Great", "l": "great", "p": "ADJ", "w": true, "s": 10.271, "e": 10.763 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "How", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 10.763, "e": 11.091 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 11.091, "e": 11.337 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 11.337, "e": 11.501 },
+        { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true, "s": 11.501, "e": 11.829 },
+        { "t": "there", "l": "there", "p": "PRON", "w": true, "s": 11.829, "e": 12.321 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.199,
+      "end": 12.415
+    },
+    {
+      "id": "s4",
+      "speaker": "rose",
+      "text": "Go straight on along this street for about five minutes.",
+      "tokens": [
+        { "t": "Go", "l": "go", "p": "VERB", "w": true, "sp": true, "s": 13.157, "e": 13.364 },
+        { "t": "straight", "l": "straight", "p": "ADJ", "w": true, "sp": true, "s": 13.364, "e": 13.984 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 13.984, "e": 14.191 },
+        { "t": "along", "l": "along", "p": "ADP", "w": true, "sp": true, "s": 14.191, "e": 14.605 },
+        { "t": "this", "l": "this", "p": "DET", "w": true, "sp": true, "s": 14.605, "e": 14.95 },
+        { "t": "street", "l": "street", "p": "NOUN", "w": true, "sp": true, "s": 14.949, "e": 15.432 },
+        { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true, "s": 15.432, "e": 15.708 },
+        { "t": "about", "l": "about", "p": "ADV", "w": true, "sp": true, "s": 15.707, "e": 16.121 },
+        { "t": "five", "l": "five", "p": "NUM", "w": false, "sp": true, "s": 16.121, "e": 16.466 },
+        { "t": "minutes", "l": "minute", "p": "NOUN", "w": true, "s": 16.466, "e": 17.017 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.115,
+      "end": 17.068
+    },
+    {
+      "id": "s5",
+      "speaker": "dan",
+      "text": "OK, straight on.",
+      "tokens": [
+        { "t": "OK", "l": "ok", "p": "INTJ", "w": false, "s": 17.815, "e": 18.145 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "straight", "l": "straight", "p": "ADJ", "w": true, "sp": true, "s": 18.145, "e": 19.135 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "s": 19.135, "e": 19.465 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.768,
+      "end": 19.572
+    },
+    {
+      "id": "s6",
+      "speaker": "rose",
+      "text": "Then turn left at the bank. You'll see a small bridge.",
+      "tokens": [
+        { "t": "Then", "l": "then", "p": "ADV", "w": true, "sp": true, "s": 20.299, "e": 20.66 },
+        { "t": "turn", "l": "turn", "p": "VERB", "w": true, "sp": true, "s": 20.66, "e": 21.021 },
+        { "t": "left", "l": "leave", "p": "VERB", "w": true, "sp": true, "s": 21.021, "e": 21.382 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 21.382, "e": 21.599 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 21.599, "e": 21.888 },
+        { "t": "bank", "l": "bank", "p": "NOUN", "w": true, "s": 21.888, "e": 22.249 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "You", "l": "you", "p": "PRON", "w": true, "s": 22.639, "e": 22.857 },
+        { "t": "'ll", "l": "will", "p": "AUX", "w": true, "sp": true, "s": 22.857, "e": 23.075 },
+        { "t": "see", "l": "see", "p": "VERB", "w": true, "sp": true, "s": 23.075, "e": 23.324 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 23.324, "e": 23.449 },
+        { "t": "small", "l": "small", "p": "ADJ", "w": true, "sp": true, "s": 23.449, "e": 23.823 },
+        { "t": "bridge", "l": "bridge", "p": "NOUN", "w": true, "s": 23.823, "e": 24.259 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.272,
+      "end": 24.374
+    },
+    {
+      "id": "s7",
+      "speaker": "dan",
+      "text": "Turn left at the bank, and then the bridge.",
+      "tokens": [
+        { "t": "Turn", "l": "turn", "p": "VERB", "w": true, "sp": true, "s": 25.122, "e": 25.527 },
+        { "t": "left", "l": "leave", "p": "VERB", "w": true, "sp": true, "s": 25.527, "e": 25.932 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 25.931, "e": 26.174 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 26.174, "e": 26.498 },
+        { "t": "bank", "l": "bank", "p": "NOUN", "w": true, "s": 26.497, "e": 26.902 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 27.292, "e": 27.554 },
+        { "t": "then", "l": "then", "p": "ADV", "w": true, "sp": true, "s": 27.554, "e": 27.882 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 27.882, "e": 28.144 },
+        { "t": "bridge", "l": "bridge", "p": "NOUN", "w": true, "s": 28.144, "e": 28.603 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.074,
+      "end": 28.655
+    },
+    {
+      "id": "s8",
+      "speaker": "rose",
+      "text": "That's right. Cross the bridge, and the museum is on your right.",
+      "tokens": [
+        { "t": "That", "l": "that", "p": "PRON", "w": true, "s": 29.398, "e": 29.729 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 29.729, "e": 29.894 },
+        { "t": "right", "l": "right", "p": "VERB", "w": true, "s": 29.894, "e": 30.319 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Cross", "l": "cross", "p": "VERB", "w": true, "sp": true, "s": 30.318, "e": 30.743 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 30.743, "e": 31.026 },
+        { "t": "bridge", "l": "bridge", "p": "NOUN", "w": true, "s": 31.027, "e": 31.523 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 31.522, "e": 31.805 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 31.805, "e": 32.088 },
+        { "t": "museum", "l": "museum", "p": "NOUN", "w": true, "sp": true, "s": 32.089, "e": 32.585 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 32.584, "e": 32.796 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 32.797, "e": 33.009 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 33.009, "e": 33.363 },
+        { "t": "right", "l": "right", "p": "NOUN", "w": true, "s": 33.363, "e": 33.788 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 29.355,
+      "end": 33.846
+    },
+    {
+      "id": "s9",
+      "speaker": "dan",
+      "text": "Is it next to the library?",
+      "tokens": [
+        { "t": "Is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 34.766, "e": 35.02 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 35.02, "e": 35.274 },
+        { "t": "next", "l": "next", "p": "ADJ", "w": true, "sp": true, "s": 35.274, "e": 35.697 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 35.697, "e": 35.951 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 35.951, "e": 36.289 },
+        { "t": "library", "l": "library", "p": "NOUN", "w": true, "s": 36.289, "e": 36.966 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.546,
+      "end": 37.039
+    },
+    {
+      "id": "s10",
+      "speaker": "rose",
+      "text": "No, it's opposite the library. It's a big white building.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "DET", "w": true, "s": 37.767, "e": 38.023 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 38.023, "e": 38.237 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 38.237, "e": 38.45 },
+        { "t": "opposite", "l": "opposite", "p": "ADJ", "w": true, "sp": true, "s": 38.451, "e": 39.22 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 39.22, "e": 39.562 },
+        { "t": "library", "l": "library", "p": "NOUN", "w": true, "s": 39.562, "e": 40.246 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 40.245, "e": 40.459 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 40.459, "e": 40.672 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 40.672, "e": 40.843 },
+        { "t": "big", "l": "big", "p": "ADV", "w": true, "sp": true, "s": 40.843, "e": 41.185 },
+        { "t": "white", "l": "white", "p": "ADJ", "w": true, "sp": true, "s": 41.185, "e": 41.698 },
+        { "t": "building", "l": "building", "p": "NOUN", "w": true, "s": 41.698, "e": 42.467 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 37.739,
+      "end": 42.559
+    },
+    {
+      "id": "s11",
+      "speaker": "dan",
+      "text": "Thank you. Can I walk, or do I need a bus?",
+      "tokens": [
+        { "t": "Thank", "l": "thank", "p": "VERB", "w": true, "sp": true, "s": 43.304, "e": 43.814 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 43.814, "e": 44.154 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 44.334, "e": 44.676 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 44.676, "e": 44.847 },
+        { "t": "walk", "l": "walk", "p": "VERB", "w": true, "s": 44.847, "e": 45.274 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true, "s": 45.634, "e": 45.888 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 45.888, "e": 46.142 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 46.142, "e": 46.311 },
+        { "t": "need", "l": "need", "p": "VERB", "w": true, "sp": true, "s": 46.312, "e": 46.736 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 46.736, "e": 46.905 },
+        { "t": "bus", "l": "bus", "p": "NOUN", "w": true, "s": 46.905, "e": 47.244 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 43.259,
+      "end": 47.281
+    },
+    {
+      "id": "s12",
+      "speaker": "rose",
+      "text": "You can walk. It takes about ten minutes.",
+      "tokens": [
+        { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 48.008, "e": 48.333 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 48.333, "e": 48.658 },
+        { "t": "walk", "l": "walk", "p": "VERB", "w": true, "s": 48.658, "e": 49.064 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 49.064, "e": 49.308 },
+        { "t": "takes", "l": "take", "p": "VERB", "w": true, "sp": true, "s": 49.308, "e": 49.796 },
+        { "t": "about", "l": "about", "p": "ADV", "w": true, "sp": true, "s": 49.796, "e": 50.284 },
+        { "t": "ten", "l": "ten", "p": "NUM", "w": false, "sp": true, "s": 50.283, "e": 50.608 },
+        { "t": "minutes", "l": "minute", "p": "NOUN", "w": true, "s": 50.608, "e": 51.258 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 47.981,
+      "end": 51.315
+    },
+    {
+      "id": "s13",
+      "speaker": "dan",
+      "text": "Perfect. Is the museum open today?",
+      "tokens": [
+        { "t": "Perfect", "l": "perfect", "p": "ADJ", "w": true, "s": 52.068, "e": 52.898 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 53.098, "e": 53.367 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 53.367, "e": 53.725 },
+        { "t": "museum", "l": "museum", "p": "NOUN", "w": true, "sp": true, "s": 53.725, "e": 54.352 },
+        { "t": "open", "l": "open", "p": "ADJ", "w": true, "sp": true, "s": 54.352, "e": 54.8 },
+        { "t": "today", "l": "today", "p": "NOUN", "w": true, "s": 54.8, "e": 55.338 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 52.015,
+      "end": 55.433
+    },
+    {
+      "id": "s14",
+      "speaker": "rose",
+      "text": "Yes, but it closes at five, so don't be late!",
+      "tokens": [
+        { "t": "Yes", "l": "yes", "p": "INTJ", "w": false, "s": 56.156, "e": 56.47 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 56.47, "e": 56.784 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 56.785, "e": 57.021 },
+        { "t": "closes", "l": "close", "p": "VERB", "w": true, "sp": true, "s": 57.021, "e": 57.571 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 57.571, "e": 57.807 },
+        { "t": "five", "l": "five", "p": "NUM", "w": false, "s": 57.807, "e": 58.2 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 58.2, "e": 58.436 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "s": 58.436, "e": 58.625 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 58.625, "e": 58.908 },
+        { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 58.907, "e": 59.143 },
+        { "t": "late", "l": "late", "p": "ADJ", "w": true, "s": 59.143, "e": 59.536 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.133,
+      "end": 59.592
+    },
+    {
+      "id": "s15",
+      "speaker": "dan",
+      "text": "Thanks a lot. Have a nice day!",
+      "tokens": [
+        { "t": "Thanks", "l": "thanks", "p": "NOUN", "w": true, "sp": true, "s": 60.334, "e": 60.932 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 60.932, "e": 61.103 },
+        { "t": "lot", "l": "lot", "p": "NOUN", "w": true, "s": 61.102, "e": 61.444 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 61.784, "e": 62.19 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 62.19, "e": 62.353 },
+        { "t": "nice", "l": "nice", "p": "ADJ", "w": true, "sp": true, "s": 62.353, "e": 62.759 },
+        { "t": "day", "l": "day", "p": "NOUN", "w": true, "s": 62.759, "e": 63.084 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 60.292,
+      "end": 63.235
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s1",
+      "phrase": "looking for the",
+      "type": "weak_form",
+      "ipa": "/ˈlʊkɪŋ fə ðə/",
+      "explanation_es": "*for* es débil: suena /fə/, muy corto, pegado a *the*."
+    },
+    {
+      "ref": "s4",
+      "phrase": "for about five minutes",
+      "type": "weak_form",
+      "ipa": "/fər əˈbaʊt ˈfaɪv ˈmɪnɪts/",
+      "explanation_es": "*for* suena /fər/ y se enlaza con *about*."
+    },
+    {
+      "ref": "s6",
+      "phrase": "turn left at the bank",
+      "type": "elision",
+      "ipa": "/ˈtɜːn ˈlef ət ðə ˈbæŋk/",
+      "explanation_es": "La *t* de *left* casi desaparece y *at* es débil (/ət/)."
+    },
+    {
+      "ref": "s6",
+      "phrase": "You'll see",
+      "type": "contraction",
+      "ipa": "/juːl ˈsiː/",
+      "explanation_es": "*You'll* = *you will*. La *ll* es muy suave."
+    },
+    {
+      "ref": "s12",
+      "phrase": "It takes about",
+      "type": "linking",
+      "ipa": "/ɪt ˈteɪks əˈbaʊt/",
+      "explanation_es": "*takes about* se dice seguido: la *s* se une a la *a*."
+    },
+    {
+      "ref": "s14",
+      "phrase": "don't be late",
+      "type": "elision",
+      "ipa": "/ˈdəʊm bi ˈleɪt/",
+      "explanation_es": "La *t* de *don't* no suena delante de *be*."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "far",
+      "surface": "far",
+      "pos": "adjective",
+      "def_en": "a long way from a place",
+      "def_es": "lejos",
+      "ref": "s2"
+    },
+    {
+      "lemma": "straight on",
+      "surface": "straight on",
+      "pos": "phrase",
+      "def_en": "in the same direction, without turning",
+      "def_es": "todo recto",
+      "ref": "s4"
+    },
+    {
+      "lemma": "turn left",
+      "surface": "turn left",
+      "pos": "phrase",
+      "def_en": "to change direction and go to the left",
+      "def_es": "girar a la izquierda",
+      "ref": "s6"
+    },
+    {
+      "lemma": "bridge",
+      "surface": "bridge",
+      "pos": "noun",
+      "def_en": "a thing that people use to cross a river or a road",
+      "def_es": "puente",
+      "ref": "s6"
+    },
+    {
+      "lemma": "cross",
+      "surface": "Cross",
+      "pos": "verb",
+      "def_en": "to go from one side to the other side",
+      "def_es": "cruzar",
+      "ref": "s8"
+    },
+    {
+      "lemma": "opposite",
+      "surface": "opposite",
+      "pos": "other",
+      "def_en": "on the other side of the street, in front of",
+      "def_es": "enfrente de",
+      "ref": "s10"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "What does Dan want?",
+      "options": [
+        { "id": "a", "text": "To find a place in the city" },
+        { "id": "b", "text": "To buy a ticket" },
+        { "id": "c", "text": "To meet a friend" }
+      ],
+      "answer": "a",
+      "evidence": ["s1"],
+      "rationale_es": "Busca el museo y pregunta cómo llegar."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Where does Dan have to turn left?",
+      "options": [
+        { "id": "a", "text": "At the library" },
+        { "id": "b", "text": "At the bridge" },
+        { "id": "c", "text": "At the bank" }
+      ],
+      "answer": "c",
+      "evidence": ["s6"],
+      "rationale_es": "*Turn left at the bank*. El puente viene después."
+    },
+    {
+      "id": "q3",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "The museum is next to the library.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["s10"],
+      "rationale_es": "Está *opposite the library*: enfrente, no al lado."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What does the museum look like?",
+      "options": [
+        { "id": "a", "text": "It is small and old" },
+        { "id": "b", "text": "It is big and white" },
+        { "id": "c", "text": "It is tall and grey" }
+      ],
+      "answer": "b",
+      "evidence": ["s10"],
+      "rationale_es": "*It's a big white building*."
+    },
+    {
+      "id": "q5",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one number.",
+      "text": "The walk takes about {{1}} minutes.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["ten", "10"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["s12"],
+      "rationale_es": "Andando son *about ten minutes*. Los cinco minutos son solo el primer tramo."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "How will Dan get to the museum?",
+      "options": [
+        { "id": "a", "text": "By bus" },
+        { "id": "b", "text": "On foot" },
+        { "id": "c", "text": "By taxi" }
+      ],
+      "answer": "b",
+      "evidence": ["s12"],
+      "rationale_es": "Rose le dice *You can walk*: no hace falta autobús."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What time does the museum close?",
+      "options": [
+        { "id": "a", "text": "At five" },
+        { "id": "b", "text": "At four" },
+        { "id": "c", "text": "At six" }
+      ],
+      "answer": "a",
+      "evidence": ["s14"],
+      "rationale_es": "*It closes at five*."
+    },
+    {
+      "id": "q8",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "The museum is closed today.",
+      "answer": "F",
+      "allow_ng": false,
+      "evidence": ["s14"],
+      "rationale_es": "Está abierto, pero cierra a las cinco."
+    },
+    {
+      "id": "q9",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s4",
+      "reference": "Go straight on along this street for about five minutes.",
+      "accept_variants": ["Go straight on along this street for about 5 minutes."],
+      "evidence": ["s4"],
+      "rationale_es": "*for about* se enlaza y *for* es débil."
+    },
+    {
+      "id": "q10",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s6",
+      "reference": "Then turn left at the bank. You'll see a small bridge.",
+      "accept_variants": ["Then turn left at the bank. You will see a small bridge."],
+      "evidence": ["s6"],
+      "rationale_es": "La *t* de *left* se pierde y *You'll* es una contracción."
+    },
+    {
+      "id": "q11",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s12",
+      "reference": "You can walk. It takes about ten minutes.",
+      "accept_variants": ["You can walk. It takes about 10 minutes."],
+      "evidence": ["s12"],
+      "rationale_es": "*takes about* suena unido."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "about", "along", "and", "at", "bank", "be", "big", "bridge", "building", "bus", "but", "can", "city",
+    "close", "course", "cross", "day", "do", "excuse", "far", "for", "from", "get", "go", "great", "have",
+    "help", "here", "how", "i", "it", "late", "leave", "library", "look", "lot", "me", "minute", "museum",
+    "need", "next", "nice", "no", "not", "of", "on", "open", "opposite", "or", "perfect", "right", "see",
+    "small", "so", "straight", "street", "take", "thank", "thanks", "that", "the", "then", "there", "this",
+    "to", "today", "turn", "walk", "white", "will", "you", "your"
+  ],
+  "difficulty": 881,
+  "qa": {
+    "coverage_by_level": { "A1": 0.9449, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 5,
+    "flesch_reading_ease": 103.8,
+    "checked_at": "2026-10-09T09:58:23.386Z"
+  },
+  "audio": {
+    "src": "audio/a2/a2-lis-002/v1.m4a",
+    "duration_s": 63.235,
+    "wpm": 122,
+    "provider": "kokoro",
+    "voices": { "dan": "am_michael", "rose": "bf_emma" },
+    "loudness_lufs": -16.3,
+    "peaks": [
+      0.58, 0.61, 0.26, 0.31, 0.18, 0.14, 0.37, 0.82, 0.65, 0.24, 0, 0.01, 1, 0.7, 0.24, 0.36, 0.27, 0.34,
+      0.16, 0.22, 0.22, 0.02, 0, 0, 0.3, 0.75, 0.42, 0.42, 0.37, 0.62, 0.55, 0.56, 0.52, 0.51, 0.39, 0.21,
+      0.01, 0, 0.02, 0.19, 0.71, 0.14, 0.63, 0.33, 0.37, 0.29, 0.12, 0.01, 0, 0.11, 0.69, 0.44, 0.57, 0.47,
+      0.61, 0.48, 0.33, 0.29, 0.6, 0.54, 0.28, 0.37, 0.29, 0.2, 0.2, 0, 0, 0.07, 0.67, 0.35, 0.37, 0.4, 0.52,
+      0.26, 0.01, 0, 0, 0.7, 0.49, 0.53, 0.66, 0.44, 0.58, 0.38, 0.2, 0.19, 0.49, 0.44, 0.32, 0.43, 0.42, 0.24,
+      0.03, 0, 0, 0.7, 0.58, 0.32, 0.49, 0.26, 0.3, 0.38, 0.06, 0.42, 0.46, 0.29, 0.36, 0.09, 0.19, 0, 0, 0.28,
+      0.78, 0.51, 0.46, 0.19, 0.68, 0.48, 0.51, 0.4, 0.55, 0.57, 0.55, 0.43, 0.44, 0.3, 0.41, 0.2, 0.18, 0, 0,
+      0.32, 0.43, 0.39, 0.45, 0.32, 0.33, 0.47, 0.28, 0.18, 0.05, 0, 0, 0.4, 0.57, 0.44, 0.66, 0.38, 0.54,
+      0.42, 0.37, 0.35, 0.06, 0.55, 0.57, 0.58, 0.42, 0.37, 0.43, 0.37, 0.2, 0.04, 0, 0, 0.12, 0.52, 0.22,
+      0.11, 0.38, 0.32, 0.76, 0.41, 0, 0.4, 0.25, 0.31, 0.23, 0.63, 0.26, 0.14, 0, 0, 0.55, 0.55, 0.42, 0.45,
+      0.59, 0.61, 0.59, 0.58, 0.42, 0.42, 0.33, 0.25, 0.13, 0, 0, 0.03, 0.67, 0.23, 0.04, 0.35, 0.33, 0.25,
+      0.25, 0.54, 0.49, 0.26, 0.32, 0.38, 0.02, 0, 0, 0.69, 0.71, 0.48, 0.55, 0.58, 0.64, 0.46, 0.37, 0.29,
+      0.51, 0.26, 0.37, 0.22, 0.01, 0, 0.02, 0.61, 0.32, 0.38, 0.7, 0.05, 0.54, 0.49, 0.24, 0.3, 0.27, 0.07
+    ]
+  }
+}
