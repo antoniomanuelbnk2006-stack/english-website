@@ -67,9 +67,11 @@ export const CardContent = z.discriminatedUnion('kind', [
       answers: z.array(z.string().min(1)).min(1),
       rule_es: z.string().min(1),
       title: z.string().min(1),
-      /** De dónde sale: una ficha de gramática o un ejercicio de Use of English. */
+      /** De dónde sale: una ficha de gramática, un ejercicio de Use of English o un writing. */
       grammar_id: z.string().min(1).optional(),
       uoe_id: z.string().min(1).optional(),
+      /** Id de la entrega (`writing_submissions.id`) de la que sale el error. */
+      writing_id: z.string().min(1).optional(),
     }),
   }),
 ]);
