@@ -12,6 +12,7 @@ import { createHmac, randomUUID, timingSafeEqual } from 'node:crypto';
 import { existsSync, renameSync } from 'node:fs';
 import http, { type IncomingMessage, type ServerResponse } from 'node:http';
 import type { Transaction } from '@electric-sql/pglite';
+import { createAnthropicStub } from './anthropic-stub';
 import { createTestDb, type TestDb } from './test-db';
 
 const PORT = Number(process.env.EMULATOR_PORT ?? 54399);
@@ -72,6 +73,8 @@ const bearer = (req: IncomingMessage) =>
 
 // ───────────── Estado ─────────────
 let testDb: TestDb;
+/** Doble de la API de Claude (solo en los tests; la demo no lo sirve). */
+const anthropic = createAnthropicStub();
 /** tabla → columna → tipo SQL (para convertir los filtros de la URL). */
 const columnTypes = new Map<string, Map<string, string>>();
 const primaryKeys = new Map<string, string[]>();
@@ -506,6 +509,7 @@ async function handleTestControl(
   if (url.pathname === '/__test/reset') {
     // Borra y recrea al usuario: todos sus datos desaparecen en cascada.
     await testDb.db.query('delete from auth.users');
+    anthropic.reset();
     const id = await testDb.createUser(TEST_EMAIL);
     // Los tests parten de un usuario que ya eligió nivel (B1); el primer acceso real, no:
     // ese flujo tiene su propio test, que borra el nivel antes de entrar.
@@ -559,6 +563,9 @@ function route(req: IncomingMessage, url: URL, body: unknown): Promise<Reply> {
   const object = (body ?? {}) as Record<string, unknown>;
   if (url.pathname.startsWith('/auth/v1')) return handleAuth(req, url, object);
   if (url.pathname.startsWith('/rest/v1/')) return handleRest(req, url, body);
+  if (url.pathname === '/anthropic/v1/messages' && req.method === 'POST' && !DATA_DIR) {
+    return Promise.resolve(anthropic.messages(req, body));
+  }
   if (url.pathname.startsWith('/__test/')) {
     // Con datos guardados no hay rutas de control: un test que se conecte por error a la
     // demo debe fallar, no borrar lo que el usuario lleva hecho.
@@ -566,6 +573,9 @@ function route(req: IncomingMessage, url: URL, body: unknown): Promise<Reply> {
       throw new HttpError(403, {
         message: 'rutas de control desactivadas: el emulador guarda datos (demo)',
       });
+    }
+    if (url.pathname === '/__test/ai') {
+      return Promise.resolve(anthropic.control(req.method, object));
     }
     return handleTestControl(url, object);
   }
