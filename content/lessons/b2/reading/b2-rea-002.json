@@ -1,0 +1,1281 @@
+{
+  "id": "b2-rea-002",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "b2-u05",
+  "series": "b2-u05-future-cities",
+  "skill": "reading",
+  "genre": "article",
+  "title": "The fifteen-minute city",
+  "summary_es": "Qué es la ciudad de los quince minutos, qué ventajas le ven sus defensores y qué objeciones serias plantean sus críticos.",
+  "topic": "city-housing",
+  "tags": ["urbanismo", "movilidad", "argumentación", "concesión"],
+  "can_do": ["R-B2-01", "R-B2-04", "R-B2-06", "R-B2-07"],
+  "grammar_focus": ["b2.mixed-conditionals", "b2.linking-contrast-concession"],
+  "vocab_focus": ["so-called", "resident", "commuter", "objection", "afford", "rather than"],
+  "est_minutes": 20,
+  "prediction_prompt": "Could you reach everything you need in fifteen minutes on foot? Would you like to?",
+  "pre_teach": ["resident", "pedestrian", "commuter"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Imagine being able to reach your office, your children's school, a doctor, a park and a decent supermarket within a quarter of an hour, without ever starting an engine.",
+          "tokens": [
+            { "t": "Imagine", "l": "imagine", "p": "VERB", "w": true, "sp": true },
+            { "t": "being", "l": "being", "p": "AUX", "w": true, "sp": true },
+            { "t": "able", "l": "able", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "reach", "l": "reach", "p": "VERB", "w": true, "sp": true },
+            { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+            { "t": "office", "l": "office", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true },
+            { "t": "children", "l": "child", "p": "NOUN", "w": true },
+            { "t": "'s", "l": "'s", "p": "PART", "w": false, "sp": true },
+            { "t": "school", "l": "school", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "doctor", "l": "doctor", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "park", "l": "park", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "decent", "l": "decent", "p": "ADJ", "w": true, "sp": true },
+            { "t": "supermarket", "l": "supermarket", "p": "NOUN", "w": true, "sp": true },
+            { "t": "within", "l": "within", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "quarter", "l": "quarter", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "hour", "l": "hour", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "without", "l": "without", "p": "ADP", "w": true, "sp": true },
+            { "t": "ever", "l": "ever", "p": "ADV", "w": true, "sp": true },
+            { "t": "starting", "l": "start", "p": "VERB", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "engine", "l": "engine", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "That is the promise of the so-called fifteen-minute city, an idea that has moved in less than a decade from academic papers to the election programmes of mayors around the world.",
+          "tokens": [
+            { "t": "That", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "promise", "l": "promise", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true },
+            { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+            { "t": "called", "l": "call", "p": "VERB", "w": true, "sp": true },
+            { "t": "fifteen", "l": "fifteen", "p": "NUM", "w": false },
+            { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+            { "t": "minute", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+            { "t": "city", "l": "city", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "moved", "l": "move", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "less", "l": "less", "p": "ADJ", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "decade", "l": "decade", "p": "NOUN", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "academic", "l": "academic", "p": "ADJ", "w": true, "sp": true },
+            { "t": "papers", "l": "paper", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "election", "l": "election", "p": "NOUN", "w": true, "sp": true },
+            { "t": "programmes", "l": "program", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "mayors", "l": "mayor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "around", "l": "around", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "world", "l": "world", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "The concept is not complicated.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "concept", "l": "concept", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "complicated", "l": "complicate", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Instead of dividing a city into zones, with housing in one place, offices in another and shopping somewhere else, planners try to mix them.",
+          "tokens": [
+            { "t": "Instead", "l": "instead", "p": "ADV", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "dividing", "l": "divide", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "city", "l": "city", "p": "NOUN", "w": true, "sp": true },
+            { "t": "into", "l": "into", "p": "ADP", "w": true, "sp": true },
+            { "t": "zones", "l": "zone", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "housing", "l": "house", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "place", "l": "place", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "offices", "l": "office", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "another", "l": "another", "p": "DET", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "shopping", "l": "shopping", "p": "NOUN", "w": true, "sp": true },
+            { "t": "somewhere", "l": "somewhere", "p": "ADV", "w": true, "sp": true },
+            { "t": "else", "l": "else", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "planners", "l": "planner", "p": "NOUN", "w": true, "sp": true },
+            { "t": "try", "l": "try", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "mix", "l": "mix", "p": "VERB", "w": true, "sp": true },
+            { "t": "them", "l": "them", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Every neighbourhood should contain most of what its residents need for daily life, and they should be able to reach all of it on foot or by bicycle.",
+          "tokens": [
+            { "t": "Every", "l": "every", "p": "DET", "w": true, "sp": true },
+            { "t": "neighbourhood", "l": "neighborhood", "p": "NOUN", "w": true, "sp": true },
+            { "t": "should", "l": "should", "p": "AUX", "w": true, "sp": true },
+            { "t": "contain", "l": "contain", "p": "VERB", "w": true, "sp": true },
+            { "t": "most", "l": "most", "p": "ADJ", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true },
+            { "t": "its", "l": "its", "p": "PRON", "w": true, "sp": true },
+            { "t": "residents", "l": "resident", "p": "NOUN", "w": true, "sp": true },
+            { "t": "need", "l": "need", "p": "VERB", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "daily", "l": "daily", "p": "ADJ", "w": true, "sp": true },
+            { "t": "life", "l": "life", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "should", "l": "should", "p": "AUX", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "able", "l": "able", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "reach", "l": "reach", "p": "VERB", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "foot", "l": "foot", "p": "NOUN", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "bicycle", "l": "bicycle", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "In a sense, it is a return to the way cities worked before the car reorganised them.",
+          "tokens": [
+            { "t": "In", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "sense", "l": "sense", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "return", "l": "return", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "way", "l": "way", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cities", "l": "city", "p": "NOUN", "w": true, "sp": true },
+            { "t": "worked", "l": "work", "p": "VERB", "w": true, "sp": true },
+            { "t": "before", "l": "before", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "car", "l": "car", "p": "NOUN", "w": true, "sp": true },
+            { "t": "reorganised", "l": "reorganize", "p": "VERB", "w": true, "sp": true },
+            { "t": "them", "l": "them", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Supporters point to obvious benefits.",
+          "tokens": [
+            { "t": "Supporters", "l": "supporter", "p": "NOUN", "w": true, "sp": true },
+            { "t": "point", "l": "point", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "obvious", "l": "obvious", "p": "ADJ", "w": true, "sp": true },
+            { "t": "benefits", "l": "benefit", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Shorter journeys mean less traffic and cleaner air.",
+          "tokens": [
+            { "t": "Shorter", "l": "short", "p": "ADJ", "w": true, "sp": true },
+            { "t": "journeys", "l": "journey", "p": "NOUN", "w": true, "sp": true },
+            { "t": "mean", "l": "mean", "p": "VERB", "w": true, "sp": true },
+            { "t": "less", "l": "less", "p": "ADJ", "w": true, "sp": true },
+            { "t": "traffic", "l": "traffic", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "cleaner", "l": "clean", "p": "ADJ", "w": true, "sp": true },
+            { "t": "air", "l": "air", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "People who walk more tend to be healthier, and streets with more pedestrians are generally safer and better for small businesses.",
+          "tokens": [
+            { "t": "People", "l": "people", "p": "NOUN", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "walk", "l": "walk", "p": "VERB", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADV", "w": true, "sp": true },
+            { "t": "tend", "l": "tend", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "healthier", "l": "healthy", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "streets", "l": "street", "p": "NOUN", "w": true, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADJ", "w": true, "sp": true },
+            { "t": "pedestrians", "l": "pedestrian", "p": "NOUN", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "generally", "l": "generally", "p": "ADV", "w": true, "sp": true },
+            { "t": "safer", "l": "safe", "p": "ADJ", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "better", "l": "good", "p": "ADJ", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "small", "l": "small", "p": "ADJ", "w": true, "sp": true },
+            { "t": "businesses", "l": "business", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "There is also the question of time.",
+          "tokens": [
+            { "t": "There", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "also", "l": "also", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "question", "l": "question", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "time", "l": "time", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s5",
+          "text": "The average commuter in a large European city spends the equivalent of several working weeks every year simply travelling to and from work.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "average", "l": "average", "p": "ADJ", "w": true, "sp": true },
+            { "t": "commuter", "l": "commuter", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "large", "l": "large", "p": "ADJ", "w": true, "sp": true },
+            { "t": "European", "l": "european", "p": "PROPN", "w": false, "sp": true },
+            { "t": "city", "l": "city", "p": "NOUN", "w": true, "sp": true },
+            { "t": "spends", "l": "spend", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "equivalent", "l": "equivalent", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "several", "l": "several", "p": "ADJ", "w": true, "sp": true },
+            { "t": "working", "l": "working", "p": "NOUN", "w": true, "sp": true },
+            { "t": "weeks", "l": "week", "p": "NOUN", "w": true, "sp": true },
+            { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true },
+            { "t": "year", "l": "year", "p": "NOUN", "w": true, "sp": true },
+            { "t": "simply", "l": "simply", "p": "ADV", "w": true, "sp": true },
+            { "t": "travelling", "l": "travel", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "work", "l": "work", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s6",
+          "text": "Had those hours been spent differently, the argument goes, both families and local communities would be stronger.",
+          "tokens": [
+            { "t": "Had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "those", "l": "those", "p": "DET", "w": true, "sp": true },
+            { "t": "hours", "l": "hour", "p": "NOUN", "w": true, "sp": true },
+            { "t": "been", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "spent", "l": "spend", "p": "VERB", "w": true, "sp": true },
+            { "t": "differently", "l": "differently", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "argument", "l": "argument", "p": "NOUN", "w": true, "sp": true },
+            { "t": "goes", "l": "go", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "both", "l": "both", "p": "DET", "w": true, "sp": true },
+            { "t": "families", "l": "family", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "local", "l": "local", "p": "ADJ", "w": true, "sp": true },
+            { "t": "communities", "l": "community", "p": "NOUN", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "stronger", "l": "strong", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Paris is the example most often quoted.",
+          "tokens": [
+            { "t": "Paris", "l": "paris", "p": "PROPN", "w": false, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "example", "l": "example", "p": "NOUN", "w": true, "sp": true },
+            { "t": "most", "l": "most", "p": "ADV", "w": true, "sp": true },
+            { "t": "often", "l": "often", "p": "ADV", "w": true, "sp": true },
+            { "t": "quoted", "l": "quote", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Over the past few years the city has built hundreds of kilometres of cycle lanes, closed streets near schools to traffic and turned parking spaces into gardens.",
+          "tokens": [
+            { "t": "Over", "l": "over", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "past", "l": "past", "p": "ADV", "w": true, "sp": true },
+            { "t": "few", "l": "few", "p": "ADJ", "w": true, "sp": true },
+            { "t": "years", "l": "year", "p": "NOUN", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "city", "l": "city", "p": "NOUN", "w": true, "sp": true },
+            { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "built", "l": "build", "p": "VERB", "w": true, "sp": true },
+            { "t": "hundreds", "l": "hundred", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "kilometres", "l": "kilometer", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "cycle", "l": "cycle", "p": "NOUN", "w": true, "sp": true },
+            { "t": "lanes", "l": "lane", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "closed", "l": "close", "p": "VERB", "w": true, "sp": true },
+            { "t": "streets", "l": "street", "p": "NOUN", "w": true, "sp": true },
+            { "t": "near", "l": "near", "p": "ADP", "w": true, "sp": true },
+            { "t": "schools", "l": "school", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "traffic", "l": "traffic", "p": "VERB", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "turned", "l": "turn", "p": "VERB", "w": true, "sp": true },
+            { "t": "parking", "l": "parking", "p": "NOUN", "w": true, "sp": true },
+            { "t": "spaces", "l": "space", "p": "NOUN", "w": true, "sp": true },
+            { "t": "into", "l": "into", "p": "ADP", "w": true, "sp": true },
+            { "t": "gardens", "l": "garden", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Cycling has grown dramatically as a result.",
+          "tokens": [
+            { "t": "Cycling", "l": "cycling", "p": "NOUN", "w": true, "sp": true },
+            { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "grown", "l": "grow", "p": "VERB", "w": true, "sp": true },
+            { "t": "dramatically", "l": "dramatically", "p": "ADV", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "result", "l": "result", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Other cities, from Melbourne to Bogotá, have adopted similar plans under different names.",
+          "tokens": [
+            { "t": "Other", "l": "other", "p": "ADJ", "w": true, "sp": true },
+            { "t": "cities", "l": "city", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "Melbourne", "l": "melbourne", "p": "PROPN", "w": false, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "Bogotá", "l": "bogotá", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "adopted", "l": "adopt", "p": "VERB", "w": true, "sp": true },
+            { "t": "similar", "l": "similar", "p": "ADJ", "w": true, "sp": true },
+            { "t": "plans", "l": "plan", "p": "NOUN", "w": true, "sp": true },
+            { "t": "under", "l": "under", "p": "ADP", "w": true, "sp": true },
+            { "t": "different", "l": "different", "p": "ADJ", "w": true, "sp": true },
+            { "t": "names", "l": "name", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Nevertheless, the idea has its critics, and not all of their objections are unreasonable.",
+          "tokens": [
+            { "t": "Nevertheless", "l": "nevertheless", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "its", "l": "its", "p": "PRON", "w": true, "sp": true },
+            { "t": "critics", "l": "critic", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "their", "l": "their", "p": "PRON", "w": true, "sp": true },
+            { "t": "objections", "l": "objection", "p": "NOUN", "w": true, "sp": true },
+            { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "unreasonable", "l": "unreasonable", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "The first concerns inequality.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "first", "l": "first", "p": "ADJ", "w": true, "sp": true },
+            { "t": "concerns", "l": "concern", "p": "NOUN", "w": true, "sp": true },
+            { "t": "inequality", "l": "inequality", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Neighbourhoods that become greener and quieter also tend to become more expensive, so the people who were supposed to benefit may be pushed out by rising rents.",
+          "tokens": [
+            { "t": "Neighbourhoods", "l": "neighbourhood", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "become", "l": "become", "p": "VERB", "w": true, "sp": true },
+            { "t": "greener", "l": "green", "p": "ADJ", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "quieter", "l": "quiet", "p": "NOUN", "w": true, "sp": true },
+            { "t": "also", "l": "also", "p": "ADV", "w": true, "sp": true },
+            { "t": "tend", "l": "tend", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "become", "l": "become", "p": "VERB", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADV", "w": true, "sp": true },
+            { "t": "expensive", "l": "expensive", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "supposed", "l": "suppose", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "benefit", "l": "benefit", "p": "VERB", "w": true, "sp": true },
+            { "t": "may", "l": "may", "p": "AUX", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "pushed", "l": "push", "p": "VERB", "w": true, "sp": true },
+            { "t": "out", "l": "out", "p": "ADP", "w": true, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "rising", "l": "rise", "p": "VERB", "w": true, "sp": true },
+            { "t": "rents", "l": "rent", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "A fifteen-minute city that only the wealthy can afford would be a strange kind of progress.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "fifteen", "l": "fifteen", "p": "NUM", "w": false },
+            { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+            { "t": "minute", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+            { "t": "city", "l": "city", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "only", "l": "only", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "wealthy", "l": "wealthy", "p": "ADJ", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "afford", "l": "afford", "p": "VERB", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "strange", "l": "strange", "p": "ADJ", "w": true, "sp": true },
+            { "t": "kind", "l": "kind", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "progress", "l": "progress", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "A second objection is practical.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "second", "l": "second", "p": "ADJ", "w": true, "sp": true },
+            { "t": "objection", "l": "objection", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "practical", "l": "practical", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Many jobs cannot be moved closer to where people live.",
+          "tokens": [
+            { "t": "Many", "l": "many", "p": "ADJ", "w": true, "sp": true },
+            { "t": "jobs", "l": "job", "p": "NOUN", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "moved", "l": "move", "p": "VERB", "w": true, "sp": true },
+            { "t": "closer", "l": "close", "p": "ADV", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "where", "l": "where", "p": "ADV", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "VERB", "w": true, "sp": true },
+            { "t": "live", "l": "live", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Not everyone can work from a desk at home.",
+          "tokens": [
+            { "t": "Not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "everyone", "l": "everyone", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true },
+            { "t": "work", "l": "work", "p": "VERB", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "desk", "l": "desk", "p": "NOUN", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "home", "l": "home", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "A hospital, a factory or an airport serves a whole region, and those who work there will continue to need fast transport across the city.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "hospital", "l": "hospital", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "factory", "l": "factory", "p": "NOUN", "w": true, "sp": true },
+            { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "airport", "l": "airport", "p": "NOUN", "w": true, "sp": true },
+            { "t": "serves", "l": "serve", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "whole", "l": "whole", "p": "ADJ", "w": true, "sp": true },
+            { "t": "region", "l": "region", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "those", "l": "those", "p": "DET", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "work", "l": "work", "p": "NOUN", "w": true, "sp": true },
+            { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "will", "l": "will", "p": "AUX", "w": true, "sp": true },
+            { "t": "continue", "l": "continue", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "need", "l": "need", "p": "VERB", "w": true, "sp": true },
+            { "t": "fast", "l": "fast", "p": "ADV", "w": true, "sp": true },
+            { "t": "transport", "l": "transport", "p": "VERB", "w": true, "sp": true },
+            { "t": "across", "l": "across", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "city", "l": "city", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s5",
+          "text": "Critics argue that money spent on local streets is money not spent on trains and buses.",
+          "tokens": [
+            { "t": "Critics", "l": "critic", "p": "NOUN", "w": true, "sp": true },
+            { "t": "argue", "l": "argue", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "money", "l": "money", "p": "NOUN", "w": true, "sp": true },
+            { "t": "spent", "l": "spend", "p": "VERB", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "local", "l": "local", "p": "ADJ", "w": true, "sp": true },
+            { "t": "streets", "l": "street", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "money", "l": "money", "p": "NOUN", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "spent", "l": "spend", "p": "VERB", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "trains", "l": "train", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "buses", "l": "bus", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "Finally, some residents simply distrust the motives behind the plans.",
+          "tokens": [
+            { "t": "Finally", "l": "finally", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true },
+            { "t": "residents", "l": "resident", "p": "NOUN", "w": true, "sp": true },
+            { "t": "simply", "l": "simply", "p": "ADV", "w": true, "sp": true },
+            { "t": "distrust", "l": "distrust", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "motives", "l": "motive", "p": "NOUN", "w": true, "sp": true },
+            { "t": "behind", "l": "behind", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "plans", "l": "plan", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Whenever a street is closed to cars, a few people see it as an attempt to control where they go, although nothing in the proposals prevents anyone from travelling as far as they wish.",
+          "tokens": [
+            { "t": "Whenever", "l": "whenever", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "street", "l": "street", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "closed", "l": "close", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "cars", "l": "car", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "few", "l": "few", "p": "ADJ", "w": true, "sp": true },
+            { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true },
+            { "t": "see", "l": "see", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "ADP", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "attempt", "l": "attempt", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "control", "l": "control", "p": "VERB", "w": true, "sp": true },
+            { "t": "where", "l": "where", "p": "ADV", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "go", "l": "go", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "although", "l": "although", "p": "ADP", "w": true, "sp": true },
+            { "t": "nothing", "l": "nothing", "p": "PRON", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "proposals", "l": "proposal", "p": "NOUN", "w": true, "sp": true },
+            { "t": "prevents", "l": "prevent", "p": "VERB", "w": true, "sp": true },
+            { "t": "anyone", "l": "anyone", "p": "PRON", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "travelling", "l": "travel", "p": "VERB", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "ADV", "w": true, "sp": true },
+            { "t": "far", "l": "far", "p": "ADV", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "they", "l": "they", "p": "PRON", "w": true, "sp": true },
+            { "t": "wish", "l": "wish", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "sentences": [
+        {
+          "id": "p8s1",
+          "text": "The most reasonable conclusion is probably a modest one.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "most", "l": "most", "p": "ADV", "w": true, "sp": true },
+            { "t": "reasonable", "l": "reasonable", "p": "ADJ", "w": true, "sp": true },
+            { "t": "conclusion", "l": "conclusion", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "probably", "l": "probably", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "modest", "l": "modest", "p": "ADJ", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s2",
+          "text": "The fifteen-minute city is not a miracle, and it cannot be applied in the same way to a medieval centre and to a suburb built for cars.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "fifteen", "l": "fifteen", "p": "NUM", "w": false },
+            { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+            { "t": "minute", "l": "minute", "p": "NOUN", "w": true, "sp": true },
+            { "t": "city", "l": "city", "p": "NOUN", "w": true, "sp": true },
+            { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "miracle", "l": "miracle", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "can", "l": "can", "p": "AUX", "w": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "applied", "l": "apply", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "same", "l": "same", "p": "ADJ", "w": true, "sp": true },
+            { "t": "way", "l": "way", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "medieval", "l": "medieval", "p": "ADJ", "w": true, "sp": true },
+            { "t": "centre", "l": "center", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "suburb", "l": "suburb", "p": "NOUN", "w": true, "sp": true },
+            { "t": "built", "l": "build", "p": "VERB", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "cars", "l": "car", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s3",
+          "text": "But as a direction of travel, rather than a rigid rule, it asks a question worth asking: who, and what, should our streets be for?",
+          "tokens": [
+            { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "direction", "l": "direction", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "travel", "l": "travel", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "rather", "l": "rather", "p": "ADV", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "rigid", "l": "rigid", "p": "ADJ", "w": true, "sp": true },
+            { "t": "rule", "l": "rule", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "asks", "l": "ask", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "question", "l": "question", "p": "NOUN", "w": true, "sp": true },
+            { "t": "worth", "l": "worth", "p": "ADJ", "w": true, "sp": true },
+            { "t": "asking", "l": "ask", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "what", "l": "what", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "should", "l": "should", "p": "AUX", "w": true, "sp": true },
+            { "t": "our", "l": "our", "p": "PRON", "w": true, "sp": true },
+            { "t": "streets", "l": "street", "p": "NOUN", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "Condicional sin «if»: Had… + participio",
+      "explanation_es": "*Had those hours been spent differently* = *If those hours had been spent differently*. Es una inversión formal, frecuente en textos escritos y en el Use of English.",
+      "refs": ["p3s6"]
+    },
+    {
+      "title_es": "Contraste y concesión",
+      "explanation_es": "*Nevertheless* abre la parte crítica del texto; *although* concede un punto dentro de la frase; *rather than* contrapone dos opciones.",
+      "refs": ["p5s1", "p7s2", "p8s3"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "decent",
+      "surface": "decent",
+      "pos": "adjective",
+      "def_en": "good enough; of an acceptable standard",
+      "def_es": "decente, en condiciones",
+      "ref": "p1s1"
+    },
+    {
+      "lemma": "so-called",
+      "surface": "so-called",
+      "pos": "adjective",
+      "def_en": "used to introduce the name that people give to something",
+      "def_es": "el llamado, la llamada",
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "mayor",
+      "surface": "mayors",
+      "pos": "noun",
+      "def_en": "the elected leader of a town or city",
+      "def_es": "alcalde, alcaldesa",
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "zone",
+      "surface": "zones",
+      "pos": "noun",
+      "def_en": "an area that is used for a particular purpose",
+      "def_es": "zona",
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "planner",
+      "surface": "planners",
+      "pos": "noun",
+      "def_en": "a person whose job is to design how a city grows",
+      "def_es": "urbanista",
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "resident",
+      "surface": "residents",
+      "pos": "noun",
+      "def_en": "a person who lives in a place",
+      "def_es": "vecino, residente",
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "pedestrian",
+      "surface": "pedestrians",
+      "pos": "noun",
+      "def_en": "a person who is walking in a street",
+      "def_es": "peatón",
+      "ref": "p3s3"
+    },
+    {
+      "lemma": "commuter",
+      "surface": "commuter",
+      "pos": "noun",
+      "def_en": "a person who travels regularly between home and work",
+      "def_es": "persona que se desplaza a diario al trabajo",
+      "ref": "p3s5"
+    },
+    {
+      "lemma": "equivalent",
+      "surface": "equivalent",
+      "pos": "noun",
+      "def_en": "something that has the same amount or value",
+      "def_es": "el equivalente",
+      "ref": "p3s5"
+    },
+    {
+      "lemma": "quote",
+      "surface": "quoted",
+      "pos": "verb",
+      "def_en": "to mention something as an example",
+      "def_es": "citar",
+      "ref": "p4s1"
+    },
+    {
+      "lemma": "cycle lane",
+      "surface": "cycle lanes",
+      "pos": "phrase",
+      "def_en": "a part of a road for bicycles only",
+      "def_es": "carril bici",
+      "ref": "p4s2"
+    },
+    {
+      "lemma": "dramatically",
+      "surface": "dramatically",
+      "pos": "adverb",
+      "def_en": "suddenly and by a large amount",
+      "def_es": "de forma espectacular",
+      "ref": "p4s3"
+    },
+    {
+      "lemma": "adopt",
+      "surface": "adopted",
+      "pos": "verb",
+      "def_en": "to start to use a plan or an idea",
+      "def_es": "adoptar",
+      "ref": "p4s4"
+    },
+    {
+      "lemma": "objection",
+      "surface": "objections",
+      "pos": "noun",
+      "def_en": "a reason for not agreeing with something",
+      "def_es": "objeción",
+      "ref": "p5s1"
+    },
+    {
+      "lemma": "inequality",
+      "surface": "inequality",
+      "pos": "noun",
+      "def_en": "an unfair difference between groups of people",
+      "def_es": "desigualdad",
+      "ref": "p5s2"
+    },
+    {
+      "lemma": "push out",
+      "surface": "pushed out",
+      "pos": "phrasal_verb",
+      "def_en": "to force someone to leave a place",
+      "def_es": "expulsar, echar",
+      "ref": "p5s3"
+    },
+    {
+      "lemma": "wealthy",
+      "surface": "wealthy",
+      "pos": "adjective",
+      "def_en": "rich",
+      "def_es": "rico, adinerado",
+      "ref": "p5s4"
+    },
+    {
+      "lemma": "afford",
+      "surface": "afford",
+      "pos": "verb",
+      "def_en": "to have enough money to pay for something",
+      "def_es": "permitirse",
+      "ref": "p5s4"
+    },
+    {
+      "lemma": "distrust",
+      "surface": "distrust",
+      "pos": "verb",
+      "def_en": "to not trust",
+      "def_es": "desconfiar de",
+      "ref": "p7s1"
+    },
+    {
+      "lemma": "motive",
+      "surface": "motives",
+      "pos": "noun",
+      "def_en": "a reason for doing something",
+      "def_es": "motivo, intención",
+      "ref": "p7s1"
+    },
+    {
+      "lemma": "proposal",
+      "surface": "proposals",
+      "pos": "noun",
+      "def_en": "a formal plan or suggestion",
+      "def_es": "propuesta",
+      "ref": "p7s2"
+    },
+    {
+      "lemma": "modest",
+      "surface": "modest",
+      "pos": "adjective",
+      "def_en": "not very big or ambitious",
+      "def_es": "modesto",
+      "ref": "p8s1"
+    },
+    {
+      "lemma": "miracle",
+      "surface": "miracle",
+      "pos": "noun",
+      "def_en": "something wonderful that solves every problem",
+      "def_es": "milagro",
+      "ref": "p8s2"
+    },
+    {
+      "lemma": "medieval",
+      "surface": "medieval",
+      "pos": "adjective",
+      "def_en": "from the Middle Ages",
+      "def_es": "medieval",
+      "ref": "p8s2"
+    },
+    {
+      "lemma": "suburb",
+      "surface": "suburb",
+      "pos": "noun",
+      "def_en": "an area on the edge of a city where people live",
+      "def_es": "barrio residencial de las afueras",
+      "ref": "p8s2"
+    },
+    {
+      "lemma": "rigid",
+      "surface": "rigid",
+      "pos": "adjective",
+      "def_en": "strict and impossible to change",
+      "def_es": "rígido",
+      "ref": "p8s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "Which sentence best summarises the article?",
+      "options": [
+        { "id": "a", "text": "The fifteen-minute city has failed wherever it has been tried" },
+        { "id": "b", "text": "The fifteen-minute city is a promising idea with real limits" },
+        { "id": "c", "text": "The fifteen-minute city is mainly about banning cars" },
+        { "id": "d", "text": "The fifteen-minute city only works in Paris" }
+      ],
+      "answer": "b",
+      "evidence": ["p8s2"],
+      "rationale_es": "Presenta ventajas y objeciones, y concluye que es una buena dirección, no una receta."
+    },
+    {
+      "id": "q2",
+      "type": "heading_match",
+      "phase": "skim",
+      "focus": "text_structure",
+      "prompt": "Match paragraphs 3, 5, 6 and 7 with the best heading. There is one extra heading.",
+      "paragraphs": ["p3", "p5", "p6", "p7"],
+      "headings": [
+        { "id": "a", "text": "Who can afford it?" },
+        { "id": "b", "text": "Fears about freedom" },
+        { "id": "c", "text": "The case in favour" },
+        { "id": "d", "text": "Jobs that cannot move" },
+        { "id": "e", "text": "A plan for tourists" }
+      ],
+      "answers": { "p3": "c", "p5": "a", "p6": "d", "p7": "b" },
+      "evidence": ["p3", "p5", "p6", "p7"],
+      "rationale_es": "El párrafo 3 reúne los argumentos a favor; el 5, la desigualdad; el 6, los trabajos que no se pueden acercar; el 7, la desconfianza. De turistas no se habla."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "According to paragraph 2, how do fifteen-minute cities differ from traditional planning?",
+      "options": [
+        { "id": "a", "text": "They separate homes from workplaces more strictly" },
+        { "id": "b", "text": "They combine different uses in the same area" },
+        { "id": "c", "text": "They build more roads" },
+        { "id": "d", "text": "They move shops to the suburbs" }
+      ],
+      "answer": "b",
+      "evidence": ["p2s2"],
+      "rationale_es": "En vez de separar vivienda, oficinas y tiendas por zonas, las mezclan."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "purpose_function",
+      "prompt": "In paragraph 3, \"the argument goes\" shows that the writer is…",
+      "options": [
+        { "id": "a", "text": "reporting what supporters claim" },
+        { "id": "b", "text": "giving a strong personal opinion" },
+        { "id": "c", "text": "correcting a mistake" },
+        { "id": "d", "text": "quoting a law" }
+      ],
+      "answer": "a",
+      "evidence": ["p3s6"],
+      "rationale_es": "Con *the argument goes* el autor atribuye la idea a los defensores, sin hacerla suya."
+    },
+    {
+      "id": "q5",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "In Paris, some space that used to belong to cars is now used for other things.",
+      "answer": "T",
+      "allow_ng": true,
+      "evidence": ["p4s2"],
+      "rationale_es": "Calles cerradas al tráfico y aparcamientos convertidos en jardines."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What is the \"inequality\" objection?",
+      "options": [
+        { "id": "a", "text": "Rich areas will refuse to change" },
+        { "id": "b", "text": "Poor areas have too many cars already" },
+        { "id": "c", "text": "Improvements may push up housing costs for locals" },
+        { "id": "d", "text": "Cyclists pay less tax" }
+      ],
+      "answer": "c",
+      "evidence": ["p5s3"],
+      "rationale_es": "Los barrios mejorados se encarecen y pueden expulsar a quienes debían beneficiarse."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "reference",
+      "prompt": "In paragraph 6, \"those who work there\" refers to people who work…",
+      "options": [
+        { "id": "a", "text": "in local shops" },
+        { "id": "b", "text": "in city planning offices" },
+        { "id": "c", "text": "at home" },
+        { "id": "d", "text": "in places such as hospitals and airports" }
+      ],
+      "answer": "d",
+      "evidence": ["p6s4"],
+      "rationale_es": "*There* recoge *a hospital, a factory or an airport*."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "What does the writer imply about people who distrust the plans?",
+      "options": [
+        { "id": "a", "text": "Their fear is not supported by the actual proposals" },
+        { "id": "b", "text": "They are completely right to be worried about them" },
+        { "id": "c", "text": "They should be forced to cycle" },
+        { "id": "d", "text": "They mostly live in Paris" }
+      ],
+      "answer": "a",
+      "evidence": ["p7s2"],
+      "rationale_es": "El *although* lo deja claro: nada en las propuestas impide a nadie viajar adonde quiera."
+    },
+    {
+      "id": "q9",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "The writer believes the same plan can be used in every type of neighbourhood.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["p8s2"],
+      "rationale_es": "No se puede aplicar igual a un centro medieval que a un barrio pensado para el coche."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "attitude_opinion",
+      "prompt": "What is the writer's overall attitude to the idea?",
+      "options": [
+        { "id": "a", "text": "Enthusiastic and uncritical" },
+        { "id": "b", "text": "Hostile" },
+        { "id": "c", "text": "Cautiously positive" },
+        { "id": "d", "text": "Indifferent" }
+      ],
+      "answer": "c",
+      "evidence": ["p8s3"],
+      "rationale_es": "Reconoce los límites, pero cree que la pregunta que plantea merece la pena."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "purpose_function",
+      "prompt": "Why does the article end with a question?",
+      "options": [
+        { "id": "a", "text": "To show that the writer has no opinion at all on the matter" },
+        { "id": "b", "text": "To suggest the topic is too complex to discuss" },
+        { "id": "c", "text": "To criticise mayors" },
+        { "id": "d", "text": "To invite readers to think about what streets are for" }
+      ],
+      "answer": "d",
+      "evidence": ["p8s3"],
+      "rationale_es": "Cierra dejando al lector la pregunta de fondo: para quién y para qué son las calles."
+    },
+    {
+      "id": "q12",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Most residents of Paris support the changes.",
+      "answer": "NG",
+      "allow_ng": true,
+      "evidence": ["p4s1"],
+      "rationale_es": "El texto cuenta qué se ha hecho en París y que el ciclismo ha crecido, pero no dice qué opinan sus vecinos."
+    },
+    {
+      "id": "q13",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "vocab_in_context",
+      "prompt": "Complete with one word from the text in each gap.",
+      "text": "Greener neighbourhoods {{1}} to become more expensive. The idea is a direction of travel {{2}} than a rigid rule.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["tend"],
+          "max_words": 1
+        },
+        {
+          "n": 2,
+          "accept": ["rather"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["p5s3", "p8s3"],
+      "rationale_es": "*Tend to* = soler; *rather than* = en lugar de, más que."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 506,
+  "lemmas": [
+    "a", "able", "academic", "across", "adopt", "afford", "air", "airport", "all", "also", "although", "an",
+    "and", "another", "anyone", "apply", "argue", "argument", "around", "as", "ask", "at", "attempt",
+    "average", "be", "become", "before", "behind", "being", "benefit", "bicycle", "both", "build", "bus",
+    "business", "but", "by", "call", "can", "car", "center", "child", "city", "clean", "close", "community",
+    "commuter", "complicate", "concept", "concern", "conclusion", "contain", "continue", "control", "critic",
+    "cycle", "cycling", "daily", "decade", "decent", "desk", "different", "differently", "direction",
+    "distrust", "divide", "doctor", "dramatically", "election", "else", "engine", "equivalent", "ever",
+    "every", "everyone", "example", "expensive", "factory", "family", "far", "fast", "few", "finally", "first",
+    "foot", "for", "from", "garden", "generally", "go", "good", "green", "grow", "have", "healthy", "home",
+    "hospital", "hour", "house", "hundred", "idea", "imagine", "in", "inequality", "instead", "into", "it",
+    "its", "job", "journey", "kilometer", "kind", "lane", "large", "less", "life", "live", "local", "many",
+    "may", "mayor", "mean", "medieval", "minute", "miracle", "mix", "modest", "money", "more", "most",
+    "motive", "move", "name", "near", "need", "neighborhood", "neighbourhood", "nevertheless", "not",
+    "nothing", "objection", "obvious", "of", "office", "often", "on", "only", "or", "other", "our", "out",
+    "over", "paper", "park", "parking", "past", "pedestrian", "people", "place", "plan", "planner", "point",
+    "practical", "prevent", "probably", "program", "progress", "promise", "proposal", "push", "quarter",
+    "question", "quiet", "quote", "rather", "reach", "reasonable", "region", "rent", "reorganize", "resident",
+    "result", "return", "rigid", "rise", "rule", "safe", "same", "school", "second", "see", "sense", "serve",
+    "several", "shopping", "short", "should", "similar", "simply", "small", "so", "some", "somewhere", "space",
+    "spend", "start", "strange", "street", "strong", "suburb", "supermarket", "supporter", "suppose", "tend",
+    "than", "that", "the", "their", "them", "there", "they", "those", "time", "to", "traffic", "train",
+    "transport", "travel", "try", "turn", "under", "unreasonable", "walk", "way", "wealthy", "week", "what",
+    "whenever", "where", "who", "whole", "will", "wish", "with", "within", "without", "work", "working",
+    "world", "worth", "would", "year", "your", "zone"
+  ],
+  "difficulty": 1276,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7726, "A2": 0.8753, "B1": 0.9638, "B2": 0.9899, "C1": 0.9899, "C2": 1 },
+    "off_level_lemmas": ["commuter", "distrust", "inequality", "planner", "rigid"],
+    "avg_sentence_words": 16.9,
+    "flesch_reading_ease": 62,
+    "checked_at": "2026-10-09T10:09:29.909Z"
+  }
+}

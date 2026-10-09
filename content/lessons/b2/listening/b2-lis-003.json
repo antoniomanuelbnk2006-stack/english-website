@@ -1,0 +1,1072 @@
+{
+  "id": "b2-lis-003",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "b2-u08",
+  "series": "b2-u08-learning-science",
+  "skill": "listening",
+  "genre": "lecture",
+  "title": "Notes you will actually use",
+  "summary_es": "Una profesora explica por qué apuntarlo todo no funciona y propone tres pasos para tomar apuntes que sirvan.",
+  "topic": "education",
+  "tags": ["apuntes", "aprendizaje", "charla", "consejos"],
+  "can_do": ["L-B2-01", "L-B2-06", "L-B2-07"],
+  "grammar_focus": ["b2.gerund-infinitive-meaning"],
+  "vocab_focus": ["turn out", "process", "skip", "review", "get stuck", "word for word"],
+  "est_minutes": 18,
+  "prediction_prompt": "How do you take notes in a class or a meeting? Do you ever read them again?",
+  "pre_teach": ["lecture", "review"],
+  "speakers": [
+    { "id": "grant", "name": "Professor Grant", "accent": "en-US", "gender": "female" }
+  ],
+  "target_wpm": 155,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "grant",
+      "text": "Good morning, everyone. Today I want to talk about something you do every day: taking notes.",
+      "tokens": [
+        { "t": "Good", "l": "good", "p": "ADJ", "w": true, "sp": true, "s": 0.03, "e": 0.368 },
+        { "t": "morning", "l": "morning", "p": "NOUN", "w": true, "s": 0.368, "e": 0.909 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "everyone", "l": "everyone", "p": "PRON", "w": true, "s": 0.909, "e": 1.518 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Today", "l": "today", "p": "NOUN", "w": true, "sp": true, "s": 1.518, "e": 1.924 },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 1.924, "e": 2.059 },
+        { "t": "want", "l": "want", "p": "VERB", "w": true, "sp": true, "s": 2.059, "e": 2.397 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 2.397, "e": 2.6 },
+        { "t": "talk", "l": "talk", "p": "VERB", "w": true, "sp": true, "s": 2.6, "e": 2.938 },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true, "s": 2.939, "e": 3.345 },
+        { "t": "something", "l": "something", "p": "PRON", "w": true, "sp": true, "s": 3.344, "e": 4.02 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 4.021, "e": 4.292 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 4.291, "e": 4.494 },
+        { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true, "s": 4.494, "e": 4.9 },
+        { "t": "day", "l": "day", "p": "NOUN", "w": true, "s": 4.9, "e": 5.171 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "taking", "l": "take", "p": "VERB", "w": true, "sp": true, "s": 5.171, "e": 5.644 },
+        { "t": "notes", "l": "note", "p": "NOUN", "w": true, "s": 5.644, "e": 6.05 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 6.088
+    },
+    {
+      "id": "s2",
+      "speaker": "grant",
+      "text": "Most of you write down as much as you can, as fast as you can.",
+      "tokens": [
+        { "t": "Most", "l": "most", "p": "ADJ", "w": true, "sp": true, "s": 6.364, "e": 6.654 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 6.654, "e": 6.829 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 6.829, "e": 7.061 },
+        { "t": "write", "l": "write", "p": "VERB", "w": true, "sp": true, "s": 7.061, "e": 7.41 },
+        { "t": "down", "l": "down", "p": "ADP", "w": true, "sp": true, "s": 7.41, "e": 7.7 },
+        { "t": "as", "l": "as", "p": "ADV", "w": true, "sp": true, "s": 7.7, "e": 7.874 },
+        { "t": "much", "l": "much", "p": "ADJ", "w": true, "sp": true, "s": 7.874, "e": 8.165 },
+        { "t": "as", "l": "as", "p": "SCONJ", "w": true, "sp": true, "s": 8.165, "e": 8.339 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 8.339, "e": 8.572 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "s": 8.572, "e": 8.804 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "as", "l": "as", "p": "ADV", "w": true, "sp": true, "s": 9.234, "e": 9.423 },
+        { "t": "fast", "l": "fast", "p": "ADV", "w": true, "sp": true, "s": 9.423, "e": 9.739 },
+        { "t": "as", "l": "as", "p": "SCONJ", "w": true, "sp": true, "s": 9.739, "e": 9.928 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 9.929, "e": 10.182 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "s": 10.181, "e": 10.434 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.338,
+      "end": 10.5
+    },
+    {
+      "id": "s3",
+      "speaker": "grant",
+      "text": "I understand why. It feels productive. But the research suggests it doesn't work very well.",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 10.802, "e": 10.969 },
+        { "t": "understand", "l": "understand", "p": "VERB", "w": true, "sp": true, "s": 10.969, "e": 11.888 },
+        { "t": "why", "l": "why", "p": "ADV", "w": true, "s": 11.888, "e": 12.222 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 12.622, "e": 12.79 },
+        { "t": "feels", "l": "feel", "p": "VERB", "w": true, "sp": true, "s": 12.79, "e": 13.126 },
+        { "t": "productive", "l": "productive", "p": "ADJ", "w": true, "s": 13.126, "e": 13.742 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 14.272, "e": 14.479 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 14.479, "e": 14.686 },
+        { "t": "research", "l": "research", "p": "NOUN", "w": true, "sp": true, "s": 14.686, "e": 15.152 },
+        { "t": "suggests", "l": "suggest", "p": "VERB", "w": true, "sp": true, "s": 15.151, "e": 15.617 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 15.617, "e": 15.772 },
+        { "t": "does", "l": "do", "p": "AUX", "w": true, "s": 15.772, "e": 16.009 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 16.009, "e": 16.186 },
+        { "t": "work", "l": "work", "p": "VERB", "w": true, "sp": true, "s": 16.186, "e": 16.445 },
+        { "t": "very", "l": "very", "p": "ADV", "w": true, "sp": true, "s": 16.445, "e": 16.704 },
+        { "t": "well", "l": "well", "p": "ADV", "w": true, "s": 16.703, "e": 16.962 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.75,
+      "end": 16.992
+    },
+    {
+      "id": "s4",
+      "speaker": "grant",
+      "text": "In one well-known study, students were divided into two groups.",
+      "tokens": [
+        { "t": "In", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 17.269, "e": 17.487 },
+        { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true, "s": 17.487, "e": 17.777 },
+        { "t": "well", "l": "well", "p": "ADV", "w": true, "s": 17.777, "e": 18.1 },
+        { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+        { "t": "known", "l": "know", "p": "VERB", "w": true, "sp": true, "s": 18.1, "e": 18.503 },
+        { "t": "study", "l": "study", "p": "NOUN", "w": true, "s": 18.503, "e": 18.939 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "students", "l": "student", "p": "NOUN", "w": true, "sp": true, "s": 19.339, "e": 19.843 },
+        { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 19.843, "e": 20.123 },
+        { "t": "divided", "l": "divide", "p": "VERB", "w": true, "sp": true, "s": 20.124, "e": 20.572 },
+        { "t": "into", "l": "into", "p": "ADP", "w": true, "sp": true, "s": 20.572, "e": 20.852 },
+        { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true, "s": 20.852, "e": 21.076 },
+        { "t": "groups", "l": "group", "p": "NOUN", "w": true, "s": 21.077, "e": 21.469 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.242,
+      "end": 21.496
+    },
+    {
+      "id": "s5",
+      "speaker": "grant",
+      "text": "The first group typed their notes on laptops. The second wrote by hand.",
+      "tokens": [
+        { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true, "s": 21.772, "e": 21.997 },
+        { "t": "first", "l": "first", "p": "ADJ", "w": true, "sp": true, "s": 21.997, "e": 22.334 },
+        { "t": "group", "l": "group", "p": "NOUN", "w": true, "sp": true, "s": 22.334, "e": 22.671 },
+        { "t": "typed", "l": "type", "p": "VERB", "w": true, "sp": true, "s": 22.672, "e": 23.009 },
+        { "t": "their", "l": "their", "p": "PRON", "w": true, "sp": true, "s": 23.009, "e": 23.346 },
+        { "t": "notes", "l": "note", "p": "NOUN", "w": true, "sp": true, "s": 23.346, "e": 23.683 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 23.684, "e": 23.853 },
+        { "t": "laptops", "l": "laptop", "p": "NOUN", "w": true, "s": 23.852, "e": 24.302 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true, "s": 24.772, "e": 25.026 },
+        { "t": "second", "l": "second", "p": "ADV", "w": true, "sp": true, "s": 25.026, "e": 25.471 },
+        { "t": "wrote", "l": "write", "p": "VERB", "w": true, "sp": true, "s": 25.472, "e": 25.854 },
+        { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true, "s": 25.853, "e": 26.044 },
+        { "t": "hand", "l": "hand", "p": "NOUN", "w": true, "s": 26.044, "e": 26.362 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.746,
+      "end": 26.418
+    },
+    {
+      "id": "s6",
+      "speaker": "grant",
+      "text": "The laptop group recorded far more words. They almost copied the lecture.",
+      "tokens": [
+        { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true, "s": 26.695, "e": 26.957 },
+        { "t": "laptop", "l": "laptop", "p": "NOUN", "w": true, "sp": true, "s": 26.957, "e": 27.416 },
+        { "t": "group", "l": "group", "p": "NOUN", "w": true, "sp": true, "s": 27.417, "e": 27.811 },
+        { "t": "recorded", "l": "record", "p": "VERB", "w": true, "sp": true, "s": 27.81, "e": 28.4 },
+        { "t": "far", "l": "far", "p": "ADV", "w": true, "sp": true, "s": 28.401, "e": 28.663 },
+        { "t": "more", "l": "more", "p": "ADJ", "w": true, "sp": true, "s": 28.663, "e": 28.991 },
+        { "t": "words", "l": "word", "p": "NOUN", "w": true, "s": 28.991, "e": 29.385 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "They", "l": "they", "p": "PRON", "w": true, "sp": true, "s": 29.835, "e": 30.075 },
+        { "t": "almost", "l": "almost", "p": "ADV", "w": true, "sp": true, "s": 30.075, "e": 30.411 },
+        { "t": "copied", "l": "copy", "p": "VERB", "w": true, "sp": true, "s": 30.412, "e": 30.748 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 30.748, "e": 30.94 },
+        { "t": "lecture", "l": "lecture", "p": "NOUN", "w": true, "s": 30.94, "e": 31.325 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.668,
+      "end": 31.365
+    },
+    {
+      "id": "s7",
+      "speaker": "grant",
+      "text": "However, when both groups were tested a week later, the handwriters did better.",
+      "tokens": [
+        { "t": "However", "l": "however", "p": "ADV", "w": true, "s": 31.647, "e": 32.154 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true, "s": 32.154, "e": 32.471 },
+        { "t": "both", "l": "both", "p": "DET", "w": true, "sp": true, "s": 32.471, "e": 32.788 },
+        { "t": "groups", "l": "group", "p": "NOUN", "w": true, "sp": true, "s": 32.788, "e": 33.232 },
+        { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 33.231, "e": 33.548 },
+        { "t": "tested", "l": "test", "p": "VERB", "w": true, "sp": true, "s": 33.548, "e": 33.992 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 33.992, "e": 34.119 },
+        { "t": "week", "l": "week", "p": "NOUN", "w": true, "sp": true, "s": 34.119, "e": 34.436 },
+        { "t": "later", "l": "later", "p": "ADV", "w": true, "s": 34.436, "e": 34.816 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 34.816, "e": 35.07 },
+        { "t": "handwriters", "l": "handwriter", "p": "NOUN", "w": true, "sp": true, "s": 35.069, "e": 35.83 },
+        { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 35.83, "e": 36.084 },
+        { "t": "better", "l": "good", "p": "ADJ", "w": true, "s": 36.083, "e": 36.527 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.615,
+      "end": 36.58
+    },
+    {
+      "id": "s8",
+      "speaker": "grant",
+      "text": "Not on simple facts, where the results were similar, but on questions about ideas.",
+      "tokens": [
+        { "t": "Not", "l": "not", "p": "PART", "w": true, "sp": true, "s": 36.861, "e": 37.157 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 37.157, "e": 37.379 },
+        { "t": "simple", "l": "simple", "p": "ADJ", "w": true, "sp": true, "s": 37.379, "e": 37.897 },
+        { "t": "facts", "l": "fact", "p": "NOUN", "w": true, "s": 37.897, "e": 38.341 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "where", "l": "where", "p": "ADV", "w": true, "sp": true, "s": 38.631, "e": 38.885 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 38.885, "e": 39.054 },
+        { "t": "results", "l": "result", "p": "NOUN", "w": true, "sp": true, "s": 39.054, "e": 39.392 },
+        { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 39.392, "e": 39.603 },
+        { "t": "similar", "l": "similar", "p": "ADJ", "w": true, "s": 39.603, "e": 39.941 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 40.351, "e": 40.616 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 40.616, "e": 40.815 },
+        { "t": "questions", "l": "question", "p": "NOUN", "w": true, "sp": true, "s": 40.814, "e": 41.476 },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true, "s": 41.477, "e": 41.874 },
+        { "t": "ideas", "l": "idea", "p": "NOUN", "w": true, "s": 41.874, "e": 42.271 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 36.83,
+      "end": 42.309
+    },
+    {
+      "id": "s9",
+      "speaker": "grant",
+      "text": "Why? Because writing by hand is slow, and that turns out to be an advantage.",
+      "tokens": [
+        { "t": "Why", "l": "why", "p": "ADV", "w": true, "s": 42.587, "e": 43.007 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Because", "l": "because", "p": "SCONJ", "w": true, "sp": true, "s": 43.207, "e": 43.712 },
+        { "t": "writing", "l": "write", "p": "VERB", "w": true, "sp": true, "s": 43.712, "e": 44.217 },
+        { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true, "s": 44.217, "e": 44.406 },
+        { "t": "hand", "l": "hand", "p": "NOUN", "w": true, "sp": true, "s": 44.406, "e": 44.722 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 44.722, "e": 44.911 },
+        { "t": "slow", "l": "slow", "p": "ADJ", "w": true, "s": 44.911, "e": 45.227 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 45.677, "e": 45.879 },
+        { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true, "s": 45.879, "e": 46.132 },
+        { "t": "turns", "l": "turn", "p": "VERB", "w": true, "sp": true, "s": 46.132, "e": 46.435 },
+        { "t": "out", "l": "out", "p": "ADP", "w": true, "sp": true, "s": 46.435, "e": 46.637 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 46.637, "e": 46.789 },
+        { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 46.789, "e": 46.941 },
+        { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true, "s": 46.94, "e": 47.092 },
+        { "t": "advantage", "l": "advantage", "p": "NOUN", "w": true, "s": 47.092, "e": 47.597 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 42.559,
+      "end": 47.635
+    },
+    {
+      "id": "s10",
+      "speaker": "grant",
+      "text": "You can't write everything, so you're forced to choose what matters.",
+      "tokens": [
+        { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 47.916, "e": 48.117 },
+        { "t": "ca", "l": "can", "p": "AUX", "w": true, "s": 48.117, "e": 48.238 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 48.238, "e": 48.419 },
+        { "t": "write", "l": "write", "p": "VERB", "w": true, "sp": true, "s": 48.419, "e": 48.721 },
+        { "t": "everything", "l": "everything", "p": "VERB", "w": true, "s": 48.721, "e": 49.276 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 49.605, "e": 49.745 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 49.745, "e": 49.909 },
+        { "t": "'re", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 49.909, "e": 50.072 },
+        { "t": "forced", "l": "force", "p": "VERB", "w": true, "sp": true, "s": 50.073, "e": 50.401 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 50.401, "e": 50.541 },
+        { "t": "choose", "l": "choose", "p": "VERB", "w": true, "sp": true, "s": 50.541, "e": 50.867 },
+        { "t": "what", "l": "what", "p": "DET", "w": true, "sp": true, "s": 50.867, "e": 51.102 },
+        { "t": "matters", "l": "matter", "p": "NOUN", "w": true, "s": 51.102, "e": 51.475 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 47.885,
+      "end": 51.514
+    },
+    {
+      "id": "s11",
+      "speaker": "grant",
+      "text": "And choosing means thinking. You process the information instead of just recording it.",
+      "tokens": [
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 51.786, "e": 52.022 },
+        { "t": "choosing", "l": "choose", "p": "VERB", "w": true, "sp": true, "s": 52.022, "e": 52.552 },
+        { "t": "means", "l": "mean", "p": "VERB", "w": true, "sp": true, "s": 52.552, "e": 52.906 },
+        { "t": "thinking", "l": "think", "p": "VERB", "w": true, "s": 52.906, "e": 53.436 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 54.006, "e": 54.216 },
+        { "t": "process", "l": "process", "p": "VERB", "w": true, "sp": true, "s": 54.216, "e": 54.636 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 54.635, "e": 54.845 },
+        {
+          "t": "information",
+          "l": "information",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 54.845,
+          "e": 55.474
+        },
+        { "t": "instead", "l": "instead", "p": "ADV", "w": true, "sp": true, "s": 55.475, "e": 55.895 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 55.894, "e": 56.051 },
+        { "t": "just", "l": "just", "p": "ADV", "w": true, "sp": true, "s": 56.052, "e": 56.314 },
+        { "t": "recording", "l": "record", "p": "VERB", "w": true, "sp": true, "s": 56.314, "e": 56.839 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 56.839, "e": 56.996 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 51.764,
+      "end": 57.044
+    },
+    {
+      "id": "s12",
+      "speaker": "grant",
+      "text": "So my first piece of advice is this: write less, but in your own words.",
+      "tokens": [
+        { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 57.335, "e": 57.503 },
+        { "t": "my", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 57.503, "e": 57.671 },
+        { "t": "first", "l": "first", "p": "ADJ", "w": true, "sp": true, "s": 57.672, "e": 58.009 },
+        { "t": "piece", "l": "piece", "p": "NOUN", "w": true, "sp": true, "s": 58.008, "e": 58.345 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 58.345, "e": 58.513 },
+        { "t": "advice", "l": "advice", "p": "NOUN", "w": true, "sp": true, "s": 58.513, "e": 58.906 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 58.906, "e": 59.074 },
+        { "t": "this", "l": "this", "p": "PRON", "w": true, "s": 59.074, "e": 59.355 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "write", "l": "write", "p": "VERB", "w": true, "sp": true, "s": 59.845, "e": 60.221 },
+        { "t": "less", "l": "less", "p": "ADJ", "w": true, "s": 60.221, "e": 60.535 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 60.725, "e": 60.936 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 60.936, "e": 61.094 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 61.094, "e": 61.358 },
+        { "t": "own", "l": "own", "p": "ADJ", "w": true, "sp": true, "s": 61.358, "e": 61.569 },
+        { "t": "words", "l": "word", "p": "NOUN", "w": true, "s": 61.569, "e": 61.885 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 57.294,
+      "end": 61.918
+    },
+    {
+      "id": "s13",
+      "speaker": "grant",
+      "text": "Second, leave space. I use only the right-hand side of the page during a lecture.",
+      "tokens": [
+        { "t": "Second", "l": "second", "p": "ADJ", "w": true, "s": 62.204, "e": 62.784 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "leave", "l": "leave", "p": "VERB", "w": true, "sp": true, "s": 62.944, "e": 63.359 },
+        { "t": "space", "l": "space", "p": "NOUN", "w": true, "s": 63.359, "e": 63.774 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 64.334, "e": 64.445 },
+        { "t": "use", "l": "use", "p": "VERB", "w": true, "sp": true, "s": 64.445, "e": 64.667 },
+        { "t": "only", "l": "only", "p": "ADV", "w": true, "sp": true, "s": 64.667, "e": 64.944 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 64.944, "e": 65.166 },
+        { "t": "right", "l": "right", "p": "NOUN", "w": true, "s": 65.165, "e": 65.473 },
+        { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+        { "t": "hand", "l": "hand", "p": "NOUN", "w": true, "sp": true, "s": 65.473, "e": 65.719 },
+        { "t": "side", "l": "side", "p": "NOUN", "w": true, "sp": true, "s": 65.72, "e": 65.997 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 65.997, "e": 66.163 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 66.163, "e": 66.385 },
+        { "t": "page", "l": "page", "p": "NOUN", "w": true, "sp": true, "s": 66.385, "e": 66.662 },
+        { "t": "during", "l": "during", "p": "ADP", "w": true, "sp": true, "s": 66.662, "e": 67.05 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 67.05, "e": 67.161 },
+        { "t": "lecture", "l": "lecture", "p": "NOUN", "w": true, "s": 67.161, "e": 67.604 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.168,
+      "end": 67.648
+    },
+    {
+      "id": "s14",
+      "speaker": "grant",
+      "text": "Afterwards, I use the left-hand side to add questions and key words.",
+      "tokens": [
+        { "t": "Afterwards", "l": "afterwards", "p": "ADV", "w": true, "s": 67.922, "e": 68.672 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 68.952, "e": 69.092 },
+        { "t": "use", "l": "use", "p": "VERB", "w": true, "sp": true, "s": 69.092, "e": 69.372 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 69.372, "e": 69.652 },
+        { "t": "left", "l": "left", "p": "NOUN", "w": true, "s": 69.652, "e": 69.967 },
+        { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+        { "t": "hand", "l": "hand", "p": "NOUN", "w": true, "sp": true, "s": 69.967, "e": 70.282 },
+        { "t": "side", "l": "side", "p": "NOUN", "w": true, "sp": true, "s": 70.282, "e": 70.632 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 70.632, "e": 70.842 },
+        { "t": "add", "l": "add", "p": "VERB", "w": true, "sp": true, "s": 70.842, "e": 71.122 },
+        { "t": "questions", "l": "question", "p": "NOUN", "w": true, "sp": true, "s": 71.122, "e": 71.822 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 71.822, "e": 72.102 },
+        { "t": "key", "l": "key", "p": "ADJ", "w": true, "sp": true, "s": 72.102, "e": 72.382 },
+        { "t": "words", "l": "word", "p": "NOUN", "w": true, "s": 72.382, "e": 72.802 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 67.898,
+      "end": 72.84
+    },
+    {
+      "id": "s15",
+      "speaker": "grant",
+      "text": "Third, and this is the step most people skip, review your notes within twenty-four hours.",
+      "tokens": [
+        { "t": "Third", "l": "third", "p": "ADJ", "w": true, "s": 73.212, "e": 73.594 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 73.594, "e": 73.848 },
+        { "t": "this", "l": "this", "p": "PRON", "w": true, "sp": true, "s": 73.848, "e": 74.166 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 74.166, "e": 74.357 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 74.357, "e": 74.611 },
+        { "t": "step", "l": "step", "p": "NOUN", "w": true, "sp": true, "s": 74.611, "e": 74.929 },
+        { "t": "most", "l": "most", "p": "ADJ", "w": true, "sp": true, "s": 74.929, "e": 75.247 },
+        { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true, "s": 75.247, "e": 75.692 },
+        { "t": "skip", "l": "skip", "p": "VERB", "w": true, "s": 75.693, "e": 76.011 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "review", "l": "review", "p": "NOUN", "w": true, "sp": true, "s": 76.011, "e": 76.456 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 76.456, "e": 76.774 },
+        { "t": "notes", "l": "note", "p": "NOUN", "w": true, "sp": true, "s": 76.774, "e": 77.156 },
+        { "t": "within", "l": "within", "p": "ADP", "w": true, "sp": true, "s": 77.155, "e": 77.6 },
+        { "t": "twenty", "l": "twenty", "p": "NUM", "w": false, "s": 77.601, "e": 78.021 },
+        { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+        { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true, "s": 78.021, "e": 78.301 },
+        { "t": "hours", "l": "hour", "p": "NOUN", "w": true, "s": 78.3, "e": 78.682 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 73.09,
+      "end": 78.718
+    },
+    {
+      "id": "s16",
+      "speaker": "grant",
+      "text": "We can forget about half of new information in the first day unless we go back to it.",
+      "tokens": [
+        { "t": "We", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 78.991, "e": 79.173 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 79.173, "e": 79.416 },
+        { "t": "forget", "l": "forget", "p": "VERB", "w": true, "sp": true, "s": 79.416, "e": 79.841 },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true, "s": 79.841, "e": 80.205 },
+        { "t": "half", "l": "half", "p": "NOUN", "w": true, "sp": true, "s": 80.205, "e": 80.509 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 80.509, "e": 80.691 },
+        { "t": "new", "l": "new", "p": "ADJ", "w": true, "sp": true, "s": 80.691, "e": 80.934 },
+        {
+          "t": "information",
+          "l": "information",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 80.934,
+          "e": 81.662
+        },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 81.662, "e": 81.844 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 81.844, "e": 82.087 },
+        { "t": "first", "l": "first", "p": "ADJ", "w": true, "sp": true, "s": 82.087, "e": 82.451 },
+        { "t": "day", "l": "day", "p": "NOUN", "w": true, "sp": true, "s": 82.451, "e": 82.694 },
+        { "t": "unless", "l": "unless", "p": "ADP", "w": true, "sp": true, "s": 82.694, "e": 83.119 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 83.119, "e": 83.301 },
+        { "t": "go", "l": "go", "p": "VERB", "w": true, "sp": true, "s": 83.301, "e": 83.483 },
+        { "t": "back", "l": "back", "p": "ADV", "w": true, "sp": true, "s": 83.483, "e": 83.787 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 83.787, "e": 83.969 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 83.969, "e": 84.151 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 78.968,
+      "end": 84.187
+    },
+    {
+      "id": "s17",
+      "speaker": "grant",
+      "text": "Reviewing doesn't mean reading your notes again and again.",
+      "tokens": [
+        { "t": "Reviewing", "l": "review", "p": "VERB", "w": true, "sp": true, "s": 84.473, "e": 85.028 },
+        { "t": "does", "l": "do", "p": "AUX", "w": true, "s": 85.028, "e": 85.282 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 85.282, "e": 85.472 },
+        { "t": "mean", "l": "mean", "p": "VERB", "w": true, "sp": true, "s": 85.472, "e": 85.75 },
+        { "t": "reading", "l": "reading", "p": "NOUN", "w": true, "sp": true, "s": 85.75, "e": 86.194 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 86.194, "e": 86.472 },
+        { "t": "notes", "l": "note", "p": "NOUN", "w": true, "sp": true, "s": 86.472, "e": 86.805 },
+        { "t": "again", "l": "again", "p": "ADV", "w": true, "sp": true, "s": 86.805, "e": 87.138 },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 87.138, "e": 87.36 },
+        { "t": "again", "l": "again", "p": "ADV", "w": true, "s": 87.36, "e": 87.693 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 84.437,
+      "end": 87.754
+    },
+    {
+      "id": "s18",
+      "speaker": "grant",
+      "text": "Cover the page, and try to explain the main ideas aloud, as if you were teaching a friend.",
+      "tokens": [
+        { "t": "Cover", "l": "cover", "p": "VERB", "w": true, "sp": true, "s": 88.031, "e": 88.411 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 88.411, "e": 88.664 },
+        { "t": "page", "l": "page", "p": "NOUN", "w": true, "s": 88.664, "e": 88.981 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 89.271, "e": 89.543 },
+        { "t": "try", "l": "try", "p": "VERB", "w": true, "sp": true, "s": 89.543, "e": 89.815 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 89.815, "e": 90.019 },
+        { "t": "explain", "l": "explain", "p": "VERB", "w": true, "sp": true, "s": 90.019, "e": 90.563 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 90.563, "e": 90.835 },
+        { "t": "main", "l": "main", "p": "ADJ", "w": true, "sp": true, "s": 90.835, "e": 91.175 },
+        { "t": "ideas", "l": "idea", "p": "NOUN", "w": true, "sp": true, "s": 91.175, "e": 91.583 },
+        { "t": "aloud", "l": "aloud", "p": "ADV", "w": true, "s": 91.583, "e": 91.991 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "as", "l": "as", "p": "SCONJ", "w": true, "sp": true, "s": 92.551, "e": 92.69 },
+        { "t": "if", "l": "if", "p": "SCONJ", "w": true, "sp": true, "s": 92.69, "e": 92.829 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 92.829, "e": 93.014 },
+        { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 93.015, "e": 93.247 },
+        { "t": "teaching", "l": "teach", "p": "VERB", "w": true, "sp": true, "s": 93.246, "e": 93.663 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 93.664, "e": 93.757 },
+        { "t": "friend", "l": "friend", "p": "NOUN", "w": true, "s": 93.756, "e": 94.081 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 88.004,
+      "end": 94.131
+    },
+    {
+      "id": "s19",
+      "speaker": "grant",
+      "text": "If you get stuck, you've found exactly what you need to study.",
+      "tokens": [
+        { "t": "If", "l": "if", "p": "SCONJ", "w": true, "sp": true, "s": 94.404, "e": 94.573 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 94.573, "e": 94.799 },
+        { "t": "get", "l": "get", "p": "VERB", "w": true, "sp": true, "s": 94.799, "e": 95.025 },
+        { "t": "stuck", "l": "stick", "p": "VERB", "w": true, "s": 95.025, "e": 95.364 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "s": 95.754, "e": 95.924 },
+        { "t": "'ve", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 95.924, "e": 96.093 },
+        { "t": "found", "l": "find", "p": "VERB", "w": true, "sp": true, "s": 96.093, "e": 96.383 },
+        { "t": "exactly", "l": "exactly", "p": "ADV", "w": true, "sp": true, "s": 96.383, "e": 96.77 },
+        { "t": "what", "l": "what", "p": "PRON", "w": true, "sp": true, "s": 96.771, "e": 97.013 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 97.013, "e": 97.207 },
+        { "t": "need", "l": "need", "p": "VERB", "w": true, "sp": true, "s": 97.206, "e": 97.448 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 97.448, "e": 97.593 },
+        { "t": "study", "l": "study", "p": "VERB", "w": true, "s": 97.594, "e": 97.884 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 94.381,
+      "end": 97.931
+    },
+    {
+      "id": "s20",
+      "speaker": "grant",
+      "text": "I'm not saying you should throw away your laptops.",
+      "tokens": [
+        { "t": "I'm", "l": "i'm", "p": "PROPN", "w": false, "sp": true, "s": 98.203, "e": 98.417 },
+        { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true, "s": 98.417, "e": 98.631 },
+        { "t": "saying", "l": "say", "p": "VERB", "w": true, "sp": true, "s": 98.63, "e": 99.004 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 99.004, "e": 99.218 },
+        { "t": "should", "l": "should", "p": "AUX", "w": true, "sp": true, "s": 99.218, "e": 99.592 },
+        { "t": "throw", "l": "throw", "p": "VERB", "w": true, "sp": true, "s": 99.591, "e": 99.911 },
+        { "t": "away", "l": "away", "p": "ADV", "w": true, "sp": true, "s": 99.912, "e": 100.179 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 100.179, "e": 100.446 },
+        { "t": "laptops", "l": "laptop", "p": "NOUN", "w": true, "s": 100.446, "e": 100.873 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 98.181,
+      "end": 100.906
+    },
+    {
+      "id": "s21",
+      "speaker": "grant",
+      "text": "If you type, close everything else, and stop yourself from copying sentences word for word.",
+      "tokens": [
+        { "t": "If", "l": "if", "p": "SCONJ", "w": true, "sp": true, "s": 101.185, "e": 101.383 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 101.383, "e": 101.646 },
+        { "t": "type", "l": "type", "p": "VERB", "w": true, "s": 101.646, "e": 101.975 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "close", "l": "close", "p": "ADV", "w": true, "sp": true, "s": 102.245, "e": 102.567 },
+        {
+          "t": "everything",
+          "l": "everything",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 102.567,
+          "e": 103.157
+        },
+        { "t": "else", "l": "else", "p": "ADV", "w": true, "s": 103.157, "e": 103.425 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 103.905, "e": 104.145 },
+        { "t": "stop", "l": "stop", "p": "VERB", "w": true, "sp": true, "s": 104.145, "e": 104.445 },
+        { "t": "yourself", "l": "yourself", "p": "PRON", "w": true, "sp": true, "s": 104.445, "e": 104.985 },
+        { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true, "s": 104.985, "e": 105.285 },
+        { "t": "copying", "l": "copy", "p": "NOUN", "w": true, "sp": true, "s": 105.285, "e": 105.765 },
+        { "t": "sentences", "l": "sentence", "p": "NOUN", "w": true, "sp": true, "s": 105.765, "e": 106.365 },
+        { "t": "word", "l": "word", "p": "NOUN", "w": true, "sp": true, "s": 106.365, "e": 106.665 },
+        { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true, "s": 106.665, "e": 106.905 },
+        { "t": "word", "l": "word", "p": "NOUN", "w": true, "s": 106.905, "e": 107.205 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 101.156,
+      "end": 107.28
+    },
+    {
+      "id": "s22",
+      "speaker": "grant",
+      "text": "To sum up: choose, leave space, and test yourself the next day.",
+      "tokens": [
+        { "t": "To", "l": "to", "p": "PART", "w": true, "sp": true, "s": 107.559, "e": 107.761 },
+        { "t": "sum", "l": "sum", "p": "NOUN", "w": true, "sp": true, "s": 107.761, "e": 108.03 },
+        { "t": "up", "l": "up", "p": "ADP", "w": true, "s": 108.03, "e": 108.232 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "choose", "l": "choose", "p": "VERB", "w": true, "s": 108.232, "e": 108.703 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "leave", "l": "leave", "p": "VERB", "w": true, "sp": true, "s": 108.704, "e": 109.108 },
+        { "t": "space", "l": "space", "p": "NOUN", "w": true, "s": 109.108, "e": 109.512 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 109.512, "e": 109.781 },
+        { "t": "test", "l": "test", "p": "NOUN", "w": true, "sp": true, "s": 109.781, "e": 110.118 },
+        { "t": "yourself", "l": "yourself", "p": "PRON", "w": true, "sp": true, "s": 110.118, "e": 110.724 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 110.724, "e": 110.993 },
+        { "t": "next", "l": "next", "p": "ADJ", "w": true, "sp": true, "s": 110.993, "e": 111.33 },
+        { "t": "day", "l": "day", "p": "NOUN", "w": true, "s": 111.33, "e": 111.599 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 107.53,
+      "end": 111.639
+    },
+    {
+      "id": "s23",
+      "speaker": "grant",
+      "text": "Try it for two weeks, and then tell me whether your notes have become more useful.",
+      "tokens": [
+        { "t": "Try", "l": "try", "p": "VERB", "w": true, "sp": true, "s": 111.913, "e": 112.174 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 112.174, "e": 112.37 },
+        { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true, "s": 112.37, "e": 112.631 },
+        { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true, "s": 112.631, "e": 112.892 },
+        { "t": "weeks", "l": "week", "p": "NOUN", "w": true, "s": 112.892, "e": 113.283 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 113.723, "e": 113.912 },
+        { "t": "then", "l": "then", "p": "ADV", "w": true, "sp": true, "s": 113.912, "e": 114.148 },
+        { "t": "tell", "l": "tell", "p": "VERB", "w": true, "sp": true, "s": 114.148, "e": 114.384 },
+        { "t": "me", "l": "me", "p": "PRON", "w": true, "sp": true, "s": 114.383, "e": 114.525 },
+        { "t": "whether", "l": "whether", "p": "ADP", "w": true, "sp": true, "s": 114.525, "e": 114.902 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 114.902, "e": 115.138 },
+        { "t": "notes", "l": "note", "p": "NOUN", "w": true, "sp": true, "s": 115.138, "e": 115.421 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 115.421, "e": 115.657 },
+        { "t": "become", "l": "become", "p": "VERB", "w": true, "sp": true, "s": 115.657, "e": 115.987 },
+        { "t": "more", "l": "more", "p": "ADV", "w": true, "sp": true, "s": 115.987, "e": 116.223 },
+        { "t": "useful", "l": "useful", "p": "ADJ", "w": true, "s": 116.223, "e": 116.553 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 111.889,
+      "end": 116.593
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s2",
+      "phrase": "as much as you can",
+      "type": "weak_form",
+      "ipa": "/əz ˈmʌtʃ əz jə ˈkæn/",
+      "explanation_es": "Los dos *as* y *you* son débiles: /əz … əz jə/."
+    },
+    {
+      "ref": "s3",
+      "phrase": "it doesn't work very well",
+      "type": "elision",
+      "ipa": "/ɪt ˈdʌzn ˈwɜːk ˈveri ˈwel/",
+      "explanation_es": "La *t* de *doesn't* no suena delante de *work*."
+    },
+    {
+      "ref": "s10",
+      "phrase": "You can't write everything",
+      "type": "elision",
+      "ipa": "/ju ˈkænt ˈraɪt ˈevriθɪŋ/",
+      "explanation_es": "En americano, *can't* se distingue de *can* por la vocal plena /æ/, no por la *t*."
+    },
+    {
+      "ref": "s10",
+      "phrase": "so you're forced to choose",
+      "type": "weak_form",
+      "ipa": "/səʊ jər ˈfɔːst tə ˈtʃuːz/",
+      "explanation_es": "*you're* suena /jər/ y *to* es débil."
+    },
+    {
+      "ref": "s19",
+      "phrase": "you've found exactly what you need to study",
+      "type": "contraction",
+      "ipa": "/juv ˈfaʊnd ɪɡˈzæktli/",
+      "explanation_es": "*you've* = *you have*; *need to* suena /ˈniːtə/."
+    },
+    {
+      "ref": "s20",
+      "phrase": "I'm not saying you should throw away",
+      "type": "weak_form",
+      "ipa": "/aɪm ˈnɒt ˈseɪɪŋ jə ʃəd ˈθrəʊ əˈweɪ/",
+      "explanation_es": "*should* se reduce a /ʃəd/ y *throw away* se enlaza."
+    },
+    {
+      "ref": "s21",
+      "phrase": "word for word",
+      "type": "weak_form",
+      "ipa": "/ˈwɜːd fə ˈwɜːd/",
+      "explanation_es": "*for* es débil: /fə/."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "productive",
+      "surface": "productive",
+      "pos": "adjective",
+      "def_en": "achieving a lot",
+      "def_es": "productivo",
+      "ref": "s3"
+    },
+    {
+      "lemma": "research",
+      "surface": "research",
+      "pos": "noun",
+      "def_en": "careful study to discover new facts",
+      "def_es": "investigación",
+      "ref": "s3"
+    },
+    {
+      "lemma": "divide",
+      "surface": "divided",
+      "pos": "verb",
+      "def_en": "to separate into parts or groups",
+      "def_es": "dividir",
+      "ref": "s4"
+    },
+    {
+      "lemma": "laptop",
+      "surface": "laptops",
+      "pos": "noun",
+      "def_en": "a small computer that you can carry",
+      "def_es": "portátil",
+      "ref": "s5"
+    },
+    {
+      "lemma": "lecture",
+      "surface": "lecture",
+      "pos": "noun",
+      "def_en": "a talk given to students at a university",
+      "def_es": "clase magistral, conferencia",
+      "ref": "s6"
+    },
+    {
+      "lemma": "handwriter",
+      "surface": "handwriters",
+      "pos": "noun",
+      "def_en": "here: the students who wrote by hand",
+      "def_es": "los que escribían a mano",
+      "ref": "s7"
+    },
+    {
+      "lemma": "turn out",
+      "surface": "turns out",
+      "pos": "phrasal_verb",
+      "def_en": "to be discovered to be, in the end",
+      "def_es": "resultar",
+      "ref": "s9"
+    },
+    {
+      "lemma": "process",
+      "surface": "process",
+      "pos": "verb",
+      "def_en": "to think about information in order to understand it",
+      "def_es": "procesar, asimilar",
+      "ref": "s11"
+    },
+    {
+      "lemma": "skip",
+      "surface": "skip",
+      "pos": "verb",
+      "def_en": "to not do something that you should do",
+      "def_es": "saltarse",
+      "ref": "s15"
+    },
+    {
+      "lemma": "review",
+      "surface": "review",
+      "pos": "verb",
+      "def_en": "to look again at something you have studied",
+      "def_es": "repasar",
+      "ref": "s15"
+    },
+    {
+      "lemma": "aloud",
+      "surface": "aloud",
+      "pos": "adverb",
+      "def_en": "in a voice that other people can hear",
+      "def_es": "en voz alta",
+      "ref": "s18"
+    },
+    {
+      "lemma": "get stuck",
+      "surface": "get stuck",
+      "pos": "phrase",
+      "def_en": "to be unable to continue",
+      "def_es": "atascarse",
+      "ref": "s19"
+    },
+    {
+      "lemma": "word for word",
+      "surface": "word for word",
+      "pos": "phrase",
+      "def_en": "using exactly the same words",
+      "def_es": "palabra por palabra",
+      "ref": "s21"
+    },
+    {
+      "lemma": "sum up",
+      "surface": "sum up",
+      "pos": "phrasal_verb",
+      "def_en": "to give the main points again in a few words",
+      "def_es": "resumir",
+      "ref": "s22"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "What is the speaker's main point?",
+      "options": [
+        { "id": "a", "text": "Laptops should be banned from all university lectures" },
+        { "id": "b", "text": "Good notes depend on thinking, not on writing a lot" },
+        { "id": "c", "text": "Students should record lectures" }
+      ],
+      "answer": "b",
+      "evidence": ["s11"],
+      "rationale_es": "Apuntar menos y pensar más: elegir es ya procesar la información."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "attitude_opinion",
+      "prompt": "What is the speaker's attitude to typing notes?",
+      "options": [
+        { "id": "a", "text": "It is always a serious mistake" },
+        { "id": "b", "text": "It is better than handwriting" },
+        { "id": "c", "text": "It is acceptable if done carefully" }
+      ],
+      "answer": "c",
+      "evidence": ["s20"],
+      "rationale_es": "No pide tirar el portátil: pide cerrar todo lo demás y no copiar palabra por palabra."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "In the study, what did the laptop group do?",
+      "options": [
+        { "id": "a", "text": "They wrote down many more words" },
+        { "id": "b", "text": "They asked the teacher more questions" },
+        { "id": "c", "text": "They left the lecture early" }
+      ],
+      "answer": "a",
+      "evidence": ["s6"],
+      "rationale_es": "*Recorded far more words*: casi copiaron la clase."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "On which questions did the handwriters do better?",
+      "options": [
+        { "id": "a", "text": "Questions about dates and names" },
+        { "id": "b", "text": "Questions about simple facts" },
+        { "id": "c", "text": "Questions about ideas" }
+      ],
+      "answer": "c",
+      "evidence": ["s8"],
+      "rationale_es": "En datos sencillos los resultados fueron parecidos; la diferencia estuvo en las ideas."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "Why is slow writing \"an advantage\", according to the speaker?",
+      "options": [
+        { "id": "a", "text": "It keeps students awake during a long lecture" },
+        { "id": "b", "text": "It forces students to select and think" },
+        { "id": "c", "text": "It produces neater notes" }
+      ],
+      "answer": "b",
+      "evidence": ["s10"],
+      "rationale_es": "Como no da tiempo a escribirlo todo, hay que elegir, y elegir obliga a pensar."
+    },
+    {
+      "id": "q6",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentence with one or two words.",
+      "text": "During a lecture, the speaker writes only on the {{1}} side of the page.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["right-hand", "right hand", "right"],
+          "max_words": 2
+        }
+      ],
+      "evidence": ["s13"],
+      "rationale_es": "Usa el lado derecho durante la clase y el izquierdo, después, para preguntas y palabras clave."
+    },
+    {
+      "id": "q7",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentence with a number.",
+      "text": "You should review your notes within {{1}} hours.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["24", "twenty-four", "twenty four"],
+          "max_words": 2
+        }
+      ],
+      "evidence": ["s15"],
+      "rationale_es": "*Within twenty-four hours*."
+    },
+    {
+      "id": "q8",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "According to the speaker, reviewing means rereading your notes several times.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["s17"],
+      "rationale_es": "Dice justo lo contrario: no es releer una y otra vez."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "What should you do when you review?",
+      "options": [
+        { "id": "a", "text": "Copy the notes again more neatly at home" },
+        { "id": "b", "text": "Highlight the key words" },
+        { "id": "c", "text": "Say the key points from memory" }
+      ],
+      "answer": "c",
+      "evidence": ["s18"],
+      "rationale_es": "Tapar la página y explicar las ideas en voz alta, como si se las enseñaras a un amigo."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "vocab_in_context",
+      "prompt": "\"If you get stuck\" means…",
+      "options": [
+        { "id": "a", "text": "if you cannot continue" },
+        { "id": "b", "text": "if you start to get bored" },
+        { "id": "c", "text": "if you finish early" }
+      ],
+      "answer": "a",
+      "evidence": ["s19"],
+      "rationale_es": "*Get stuck* = atascarse. Donde te atascas es justo lo que tienes que estudiar."
+    },
+    {
+      "id": "q11",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "The speaker tells students to stop using laptops.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["s20"],
+      "rationale_es": "*I'm not saying you should throw away your laptops*."
+    },
+    {
+      "id": "q12",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "The speaker carried out the study herself.",
+      "answer": "NG",
+      "allow_ng": true,
+      "evidence": ["s4"],
+      "rationale_es": "Habla de *one well-known study*, pero no dice quién lo hizo."
+    },
+    {
+      "id": "q13",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s10",
+      "reference": "You can't write everything, so you're forced to choose what matters.",
+      "accept_variants": [
+        "You cannot write everything, so you are forced to choose what matters.",
+        "You can't write everything, so you are forced to choose what matters."
+      ],
+      "evidence": ["s10"],
+      "rationale_es": "*can't* y *you're forced to* van muy reducidos."
+    },
+    {
+      "id": "q14",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s19",
+      "reference": "If you get stuck, you've found exactly what you need to study.",
+      "accept_variants": ["If you get stuck, you have found exactly what you need to study."],
+      "evidence": ["s19"],
+      "rationale_es": "*you've* casi no se oye."
+    },
+    {
+      "id": "q15",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s20",
+      "reference": "I'm not saying you should throw away your laptops.",
+      "accept_variants": ["I am not saying you should throw away your laptops."],
+      "evidence": ["s20"],
+      "rationale_es": "*should* es débil y *throw away* se enlaza."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "about", "add", "advantage", "advice", "afterwards", "again", "almost", "aloud", "an", "and", "as",
+    "away", "back", "be", "because", "become", "both", "but", "by", "can", "choose", "close", "copy", "cover",
+    "day", "divide", "do", "down", "during", "else", "every", "everyone", "everything", "exactly", "explain",
+    "fact", "far", "fast", "feel", "find", "first", "for", "force", "forget", "friend", "from", "get", "go",
+    "good", "group", "half", "hand", "handwriter", "have", "hour", "however", "i", "idea", "if", "in",
+    "information", "instead", "into", "it", "just", "key", "know", "laptop", "later", "leave", "lecture",
+    "left", "less", "main", "matter", "me", "mean", "more", "morning", "most", "much", "my", "need", "new",
+    "next", "not", "note", "of", "on", "only", "out", "own", "page", "people", "piece", "process",
+    "productive", "question", "reading", "record", "research", "result", "review", "right", "say", "second",
+    "sentence", "should", "side", "similar", "simple", "skip", "slow", "so", "something", "space", "step",
+    "stick", "stop", "student", "study", "suggest", "sum", "take", "talk", "teach", "tell", "test", "that",
+    "the", "their", "then", "they", "think", "third", "this", "throw", "to", "today", "try", "turn", "type",
+    "understand", "unless", "up", "use", "useful", "very", "want", "we", "week", "well", "what", "when",
+    "where", "whether", "why", "within", "word", "work", "write", "you", "your", "yourself"
+  ],
+  "difficulty": 1285,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8861, "A2": 0.9589, "B1": 0.9842, "B2": 0.9968, "C1": 0.9968, "C2": 1 },
+    "off_level_lemmas": ["handwriter"],
+    "avg_sentence_words": 10.2,
+    "flesch_reading_ease": 84.6,
+    "checked_at": "2026-10-09T10:09:29.909Z"
+  },
+  "audio": {
+    "src": "audio/b2/b2-lis-003/v1.m4a",
+    "duration_s": 116.593,
+    "wpm": 163,
+    "provider": "kokoro",
+    "voices": { "grant": "af_heart" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      0.55, 0.52, 0.42, 0.11, 0.48, 0.82, 0.52, 0.39, 0.6, 0.26, 0.35, 0.3, 0.42, 0.53, 0.55, 0.5, 0.45, 0.22,
+      0.11, 0.97, 0.3, 0.27, 0.6, 0.39, 0.33, 0.14, 0.51, 0.48, 0.1, 0.53, 0.37, 0.52, 0.45, 0.44, 0.43, 0.51,
+      0.45, 0.55, 0.41, 0.32, 0.45, 0.62, 0.32, 0.23, 0.58, 0.46, 0.46, 0.44, 0.37, 0.31, 0.03, 0.63, 0.58,
+      0.43, 0.15, 0.51, 0.43, 0.42, 0.54, 0.36, 0.42, 0.5, 0.48, 0.36, 0.33, 0.48, 0.43, 0.58, 0.42, 0.37, 0.3,
+      0.06, 0.5, 0.49, 0.38, 0.33, 0.48, 0.43, 0.51, 0.48, 0.58, 0.32, 0.19, 0.52, 0.54, 0.49, 0.26, 0.37,
+      0.38, 0.49, 0.52, 0.34, 0.31, 0.09, 0.7, 0.53, 0.4, 0.29, 0.5, 0.46, 0.73, 0.2, 0.46, 0.4, 0.6, 0.3,
+      0.55, 0.41, 0.32, 0.29, 0.01, 0.87, 0.49, 0.31, 0.48, 0.49, 0.42, 0.27, 0.55, 0.36, 0.57, 0.44, 0.19,
+      0.67, 0.39, 0.51, 0.39, 0.21, 0.66, 0.35, 0.46, 0.21, 0.85, 0.57, 0.54, 0.52, 0.31, 0.35, 0.46, 0.63,
+      0.57, 0.9, 0.46, 0.54, 0.39, 0.95, 0.61, 0.29, 0.38, 0.27, 0.48, 0.58, 0.46, 0.46, 0.33, 0.32, 0.2, 0.61,
+      0.47, 0.37, 0.79, 0.34, 0.4, 0.49, 0.44, 0.46, 0.35, 0.28, 0.41, 0.3, 0.5, 0.5, 0.42, 0.49, 0.65, 0.55,
+      0.35, 0.4, 0.52, 0.37, 0.54, 0.73, 0.27, 0.65, 0.62, 0.39, 0.51, 0.43, 0.39, 0.22, 0.54, 0.49, 0.5, 0.32,
+      0.47, 0.52, 0.21, 0.76, 0.61, 0.63, 0.37, 0.23, 0.77, 0.35, 0.41, 0.38, 0.33, 0.26, 0.55, 0.36, 0.47, 1,
+      0.39, 0.6, 0.56, 0.53, 0.47, 0.39, 0.3, 0.34, 0.27, 0.7, 0.56, 0.41, 0.33, 0.48, 0.42, 0.59, 0.43, 0.36,
+      0.55, 0.36, 0.32, 0.28, 0.72, 0.64, 0.44, 0.33, 0.31, 0.36
+    ]
+  }
+}

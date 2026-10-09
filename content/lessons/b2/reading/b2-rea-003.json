@@ -1,0 +1,1294 @@
+{
+  "id": "b2-rea-003",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "b2-u07",
+  "series": "b2-u07-travel",
+  "skill": "reading",
+  "genre": "story",
+  "title": "The last ferry",
+  "summary_es": "Un relato: Ines lleva tres semanas viajando con una lista de cosas que ver, hasta que una isla sin nada que visitar le cambia el ritmo.",
+  "topic": "travel",
+  "tags": ["relato", "viaje", "narrativa", "pasado perfecto"],
+  "can_do": ["R-B2-02", "R-B2-03", "R-B2-06"],
+  "grammar_focus": ["b2.narrative-tenses-full"],
+  "vocab_focus": ["itinerary", "tick off", "barely", "occur to", "in sight", "feel like"],
+  "est_minutes": 20,
+  "prediction_prompt": "Do you plan every day of a trip, or do you prefer to decide as you go?",
+  "pre_teach": ["ferry", "itinerary", "harbour"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "By the time Ines reached the harbour, the last ferry of the day was already untying its ropes.",
+          "tokens": [
+            { "t": "By", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "time", "l": "time", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Ines", "l": "ines", "p": "PROPN", "w": false, "sp": true },
+            { "t": "reached", "l": "reach", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "harbour", "l": "harbor", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "last", "l": "last", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ferry", "l": "ferry", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "day", "l": "day", "p": "NOUN", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "already", "l": "already", "p": "ADV", "w": true, "sp": true },
+            { "t": "untying", "l": "untie", "p": "VERB", "w": true, "sp": true },
+            { "t": "its", "l": "its", "p": "PRON", "w": true, "sp": true },
+            { "t": "ropes", "l": "rope", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "She ran the final hundred metres with her rucksack bouncing against her back, waving one arm, and a man in an orange jacket held the gate open with the expression of someone who had seen this many times before.",
+          "tokens": [
+            { "t": "She", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "ran", "l": "run", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "final", "l": "final", "p": "ADJ", "w": true, "sp": true },
+            { "t": "hundred", "l": "hundred", "p": "NUM", "w": false, "sp": true },
+            { "t": "metres", "l": "meter", "p": "NOUN", "w": true, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "rucksack", "l": "rucksack", "p": "NOUN", "w": true, "sp": true },
+            { "t": "bouncing", "l": "bounce", "p": "VERB", "w": true, "sp": true },
+            { "t": "against", "l": "against", "p": "ADP", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "back", "l": "back", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "waving", "l": "wave", "p": "VERB", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "arm", "l": "arm", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "man", "l": "man", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "orange", "l": "orange", "p": "ADJ", "w": true, "sp": true },
+            { "t": "jacket", "l": "jacket", "p": "NOUN", "w": true, "sp": true },
+            { "t": "held", "l": "hold", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "gate", "l": "gate", "p": "NOUN", "w": true, "sp": true },
+            { "t": "open", "l": "open", "p": "ADJ", "w": true, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "expression", "l": "expression", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "someone", "l": "someone", "p": "PRON", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "seen", "l": "see", "p": "VERB", "w": true, "sp": true },
+            { "t": "this", "l": "this", "p": "DET", "w": true, "sp": true },
+            { "t": "many", "l": "many", "p": "ADJ", "w": true, "sp": true },
+            { "t": "times", "l": "time", "p": "NOUN", "w": true, "sp": true },
+            { "t": "before", "l": "before", "p": "ADP", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "She had not planned to visit the island at all.",
+          "tokens": [
+            { "t": "She", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "planned", "l": "plan", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "visit", "l": "visit", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "island", "l": "island", "p": "NOUN", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "all", "l": "all", "p": "DET", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Ines was not the kind of person who changed her plans.",
+          "tokens": [
+            { "t": "Ines", "l": "in", "p": "ADV", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "kind", "l": "kind", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "person", "l": "person", "p": "NOUN", "w": true, "sp": true },
+            { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true },
+            { "t": "changed", "l": "change", "p": "VERB", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "plans", "l": "plan", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Her itinerary, printed and folded inside her passport, said that she should be in the capital by now, waiting in a queue for a famous museum.",
+          "tokens": [
+            { "t": "Her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "itinerary", "l": "itinerary", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "printed", "l": "print", "p": "VERB", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "folded", "l": "fold", "p": "VERB", "w": true, "sp": true },
+            { "t": "inside", "l": "inside", "p": "ADP", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "passport", "l": "passport", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "said", "l": "say", "p": "VERB", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "should", "l": "should", "p": "AUX", "w": true, "sp": true },
+            { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "capital", "l": "capital", "p": "NOUN", "w": true, "sp": true },
+            { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true },
+            { "t": "now", "l": "now", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "waiting", "l": "wait", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "queue", "l": "queue", "p": "NOUN", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "famous", "l": "famous", "p": "ADJ", "w": true, "sp": true },
+            { "t": "museum", "l": "museum", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "But the night before, in a hostel kitchen, an old woman peeling oranges had told her about a place where there were no cars and the bakery opened only when the baker felt like it.",
+          "tokens": [
+            { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "night", "l": "night", "p": "NOUN", "w": true, "sp": true },
+            { "t": "before", "l": "before", "p": "ADP", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "hostel", "l": "hostel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "kitchen", "l": "kitchen", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "old", "l": "old", "p": "ADJ", "w": true, "sp": true },
+            { "t": "woman", "l": "woman", "p": "NOUN", "w": true, "sp": true },
+            { "t": "peeling", "l": "peel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "oranges", "l": "orange", "p": "NOUN", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "told", "l": "tell", "p": "VERB", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "place", "l": "place", "p": "NOUN", "w": true, "sp": true },
+            { "t": "where", "l": "where", "p": "ADV", "w": true, "sp": true },
+            { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true },
+            { "t": "cars", "l": "car", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "bakery", "l": "bakery", "p": "NOUN", "w": true, "sp": true },
+            { "t": "opened", "l": "open", "p": "VERB", "w": true, "sp": true },
+            { "t": "only", "l": "only", "p": "ADV", "w": true, "sp": true },
+            { "t": "when", "l": "when", "p": "ADV", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "baker", "l": "baker", "p": "NOUN", "w": true, "sp": true },
+            { "t": "felt", "l": "feel", "p": "VERB", "w": true, "sp": true },
+            { "t": "like", "l": "like", "p": "ADP", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s5",
+          "text": "Ines had laughed.",
+          "tokens": [
+            { "t": "Ines", "l": "in", "p": "ADV", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "laughed", "l": "laugh", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s6",
+          "text": "Then she had lain awake thinking about it.",
+          "tokens": [
+            { "t": "Then", "l": "then", "p": "ADV", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "lain", "l": "lain", "p": "NOUN", "w": true, "sp": true },
+            { "t": "awake", "l": "awake", "p": "ADJ", "w": true, "sp": true },
+            { "t": "thinking", "l": "think", "p": "NOUN", "w": true, "sp": true },
+            { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "The crossing took an hour.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "crossing", "l": "crossing", "p": "NOUN", "w": true, "sp": true },
+            { "t": "took", "l": "take", "p": "VERB", "w": true, "sp": true },
+            { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true },
+            { "t": "hour", "l": "hour", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "She stood at the back and watched the mainland shrink until it was no more than a grey line.",
+          "tokens": [
+            { "t": "She", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "stood", "l": "stand", "p": "VERB", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "back", "l": "back", "p": "ADV", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "watched", "l": "watch", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "mainland", "l": "mainland", "p": "NOUN", "w": true, "sp": true },
+            { "t": "shrink", "l": "shrink", "p": "VERB", "w": true, "sp": true },
+            { "t": "until", "l": "until", "p": "ADP", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADJ", "w": true, "sp": true },
+            { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "grey", "l": "gray", "p": "ADJ", "w": true, "sp": true },
+            { "t": "line", "l": "line", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "For three weeks she had been ticking things off a list: cathedrals, viewpoints, dishes she was supposed to try.",
+          "tokens": [
+            { "t": "For", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "three", "l": "three", "p": "NUM", "w": false, "sp": true },
+            { "t": "weeks", "l": "week", "p": "NOUN", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "been", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "ticking", "l": "tick", "p": "VERB", "w": true, "sp": true },
+            { "t": "things", "l": "thing", "p": "NOUN", "w": true, "sp": true },
+            { "t": "off", "l": "off", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "list", "l": "list", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cathedrals", "l": "cathedral", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "viewpoints", "l": "viewpoint", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "dishes", "l": "dish", "p": "NOUN", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "supposed", "l": "suppose", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "try", "l": "try", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "She had hundreds of photographs and could barely remember taking them.",
+          "tokens": [
+            { "t": "She", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "hundreds", "l": "hundred", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "photographs", "l": "photograph", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "could", "l": "could", "p": "AUX", "w": true, "sp": true },
+            { "t": "barely", "l": "barely", "p": "ADV", "w": true, "sp": true },
+            { "t": "remember", "l": "remember", "p": "VERB", "w": true, "sp": true },
+            { "t": "taking", "l": "take", "p": "VERB", "w": true, "sp": true },
+            { "t": "them", "l": "them", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s5",
+          "text": "It occurred to her that she had been travelling the way she worked, efficiently and without looking up.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "occurred", "l": "occur", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "been", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "travelling", "l": "travel", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "way", "l": "way", "p": "NOUN", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "worked", "l": "work", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "efficiently", "l": "efficiently", "p": "ADV", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "without", "l": "without", "p": "ADP", "w": true, "sp": true },
+            { "t": "looking", "l": "look", "p": "VERB", "w": true, "sp": true },
+            { "t": "up", "l": "up", "p": "ADP", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "The island had one street.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "island", "l": "island", "p": "NOUN", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "street", "l": "street", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "It climbed from the harbour past a shop, a church the size of a garage and a café where four men were playing cards as though it were a serious profession.",
+          "tokens": [
+            { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "climbed", "l": "climb", "p": "VERB", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "harbour", "l": "harbor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "past", "l": "past", "p": "ADJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "shop", "l": "shop", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "church", "l": "church", "p": "NOUN", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "size", "l": "size", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "garage", "l": "garage", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "café", "l": "café", "p": "PROPN", "w": false, "sp": true },
+            { "t": "where", "l": "where", "p": "ADV", "w": true, "sp": true },
+            { "t": "four", "l": "four", "p": "NUM", "w": false, "sp": true },
+            { "t": "men", "l": "man", "p": "NOUN", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "playing", "l": "play", "p": "VERB", "w": true, "sp": true },
+            { "t": "cards", "l": "card", "p": "NOUN", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "though", "l": "though", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "serious", "l": "serious", "p": "ADJ", "w": true, "sp": true },
+            { "t": "profession", "l": "profession", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "There was no museum, no monument, nothing that any guidebook would have troubled to mention.",
+          "tokens": [
+            { "t": "There", "l": "there", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true },
+            { "t": "museum", "l": "museum", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true },
+            { "t": "monument", "l": "monument", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "nothing", "l": "nothing", "p": "PRON", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "any", "l": "any", "p": "DET", "w": true, "sp": true },
+            { "t": "guidebook", "l": "guidebook", "p": "NOUN", "w": true, "sp": true },
+            { "t": "would", "l": "would", "p": "AUX", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "troubled", "l": "trouble", "p": "ADJ", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "mention", "l": "mention", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Nobody tried to sell her anything.",
+          "tokens": [
+            { "t": "Nobody", "l": "nobody", "p": "PRON", "w": true, "sp": true },
+            { "t": "tried", "l": "try", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "sell", "l": "sell", "p": "VERB", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "anything", "l": "anything", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s5",
+          "text": "A dog followed her for a while and then lost interest.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "dog", "l": "dog", "p": "NOUN", "w": true, "sp": true },
+            { "t": "followed", "l": "follow", "p": "VERB", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "while", "l": "while", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "then", "l": "then", "p": "ADV", "w": true, "sp": true },
+            { "t": "lost", "l": "lose", "p": "VERB", "w": true, "sp": true },
+            { "t": "interest", "l": "interest", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "She found a room above the café.",
+          "tokens": [
+            { "t": "She", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "found", "l": "find", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "room", "l": "room", "p": "NOUN", "w": true, "sp": true },
+            { "t": "above", "l": "above", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "café", "l": "café", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "The owner, a broad woman called Dora, did not ask how long she was staying; she simply pointed at the key and went back to her soup.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "owner", "l": "owner", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "broad", "l": "broad", "p": "ADJ", "w": true, "sp": true },
+            { "t": "woman", "l": "woman", "p": "NOUN", "w": true, "sp": true },
+            { "t": "called", "l": "call", "p": "VERB", "w": true, "sp": true },
+            { "t": "Dora", "l": "dora", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "ask", "l": "ask", "p": "VERB", "w": true, "sp": true },
+            { "t": "how", "l": "how", "p": "ADV", "w": true, "sp": true },
+            { "t": "long", "l": "long", "p": "ADJ", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "was", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "staying", "l": "stay", "p": "VERB", "w": true },
+            { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "simply", "l": "simply", "p": "ADV", "w": true, "sp": true },
+            { "t": "pointed", "l": "point", "p": "VERB", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "key", "l": "key", "p": "ADJ", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "went", "l": "go", "p": "VERB", "w": true, "sp": true },
+            { "t": "back", "l": "back", "p": "ADV", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "soup", "l": "soup", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "That evening Ines sat on the harbour wall with bread, cheese and a tomato that actually tasted of something.",
+          "tokens": [
+            { "t": "That", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "evening", "l": "evening", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Ines", "l": "ines", "p": "PROPN", "w": false, "sp": true },
+            { "t": "sat", "l": "sit", "p": "VERB", "w": true, "sp": true },
+            { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "harbour", "l": "harbor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "wall", "l": "wall", "p": "NOUN", "w": true, "sp": true },
+            { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true },
+            { "t": "bread", "l": "bread", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cheese", "l": "cheese", "p": "NOUN", "w": true, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "tomato", "l": "tomato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true },
+            { "t": "actually", "l": "actually", "p": "ADV", "w": true, "sp": true },
+            { "t": "tasted", "l": "taste", "p": "VERB", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "something", "l": "something", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "The light went from gold to pink to a blue so deep it seemed to have weight.",
+          "tokens": [
+            { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "light", "l": "light", "p": "ADV", "w": true, "sp": true },
+            { "t": "went", "l": "go", "p": "VERB", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "gold", "l": "gold", "p": "NOUN", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "pink", "l": "pink", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "blue", "l": "blue", "p": "ADJ", "w": true, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "deep", "l": "deep", "p": "ADJ", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "seemed", "l": "seem", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "VERB", "w": true, "sp": true },
+            { "t": "weight", "l": "weight", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s5",
+          "text": "She did not take a single photograph.",
+          "tokens": [
+            { "t": "She", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "take", "l": "take", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "single", "l": "single", "p": "ADJ", "w": true, "sp": true },
+            { "t": "photograph", "l": "photograph", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s6",
+          "text": "Had anyone asked her why, she could not have explained.",
+          "tokens": [
+            { "t": "Had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "anyone", "l": "anyone", "p": "PRON", "w": true, "sp": true },
+            { "t": "asked", "l": "ask", "p": "VERB", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "why", "l": "why", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "could", "l": "could", "p": "AUX", "w": true, "sp": true },
+            { "t": "not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "explained", "l": "explain", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "She meant to stay one night.",
+          "tokens": [
+            { "t": "She", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "meant", "l": "mean", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "stay", "l": "stay", "p": "VERB", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "night", "l": "night", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "On the third morning Dora put a coffee in front of her without being asked, and one of the card players nodded as if she had always been there.",
+          "tokens": [
+            { "t": "On", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "third", "l": "third", "p": "ADJ", "w": true, "sp": true },
+            { "t": "morning", "l": "morning", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Dora", "l": "dora", "p": "PROPN", "w": false, "sp": true },
+            { "t": "put", "l": "put", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "coffee", "l": "coffee", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "front", "l": "front", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "without", "l": "without", "p": "ADP", "w": true, "sp": true },
+            { "t": "being", "l": "being", "p": "AUX", "w": true, "sp": true },
+            { "t": "asked", "l": "ask", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "one", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "card", "l": "card", "p": "NOUN", "w": true, "sp": true },
+            { "t": "players", "l": "player", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nodded", "l": "nod", "p": "VERB", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "if", "l": "if", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "had", "l": "have", "p": "AUX", "w": true, "sp": true },
+            { "t": "always", "l": "always", "p": "ADV", "w": true, "sp": true },
+            { "t": "been", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "there", "l": "there", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "She helped Dora carry boxes from the morning boat, learned the names of two of the card players, and went swimming every afternoon from a rock that nobody else seemed to use.",
+          "tokens": [
+            { "t": "She", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "helped", "l": "help", "p": "VERB", "w": true, "sp": true },
+            { "t": "Dora", "l": "dora", "p": "PROPN", "w": false, "sp": true },
+            { "t": "carry", "l": "carry", "p": "VERB", "w": true, "sp": true },
+            { "t": "boxes", "l": "box", "p": "NOUN", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "morning", "l": "morning", "p": "NOUN", "w": true, "sp": true },
+            { "t": "boat", "l": "boat", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "learned", "l": "learn", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "names", "l": "name", "p": "NOUN", "w": true, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "two", "l": "two", "p": "NUM", "w": false, "sp": true },
+            { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "card", "l": "card", "p": "NOUN", "w": true, "sp": true },
+            { "t": "players", "l": "player", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "went", "l": "go", "p": "VERB", "w": true, "sp": true },
+            { "t": "swimming", "l": "swimming", "p": "NOUN", "w": true, "sp": true },
+            { "t": "every", "l": "every", "p": "DET", "w": true, "sp": true },
+            { "t": "afternoon", "l": "afternoon", "p": "NOUN", "w": true, "sp": true },
+            { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "rock", "l": "rock", "p": "NOUN", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "nobody", "l": "nobody", "p": "PRON", "w": true, "sp": true },
+            { "t": "else", "l": "else", "p": "ADV", "w": true, "sp": true },
+            { "t": "seemed", "l": "seem", "p": "VERB", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "use", "l": "use", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "One evening Ines took out her itinerary, looked at it for a moment, and used it to wipe the table.",
+          "tokens": [
+            { "t": "One", "l": "one", "p": "NUM", "w": false, "sp": true },
+            { "t": "evening", "l": "evening", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Ines", "l": "ines", "p": "PROPN", "w": false, "sp": true },
+            { "t": "took", "l": "take", "p": "VERB", "w": true, "sp": true },
+            { "t": "out", "l": "out", "p": "ADP", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true, "sp": true },
+            { "t": "itinerary", "l": "itinerary", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "looked", "l": "look", "p": "VERB", "w": true, "sp": true },
+            { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "moment", "l": "moment", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "used", "l": "use", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true },
+            { "t": "wipe", "l": "wipe", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "table", "l": "table", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "On the ferry back, five days later, the man in the orange jacket recognised her.",
+          "tokens": [
+            { "t": "On", "l": "on", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "ferry", "l": "ferry", "p": "NOUN", "w": true, "sp": true },
+            { "t": "back", "l": "back", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "five", "l": "five", "p": "NUM", "w": false, "sp": true },
+            { "t": "days", "l": "day", "p": "NOUN", "w": true, "sp": true },
+            { "t": "later", "l": "later", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "man", "l": "man", "p": "NOUN", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "orange", "l": "orange", "p": "ADJ", "w": true, "sp": true },
+            { "t": "jacket", "l": "jacket", "p": "NOUN", "w": true, "sp": true },
+            { "t": "recognised", "l": "recognize", "p": "VERB", "w": true, "sp": true },
+            { "t": "her", "l": "her", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "\"You were in a hurry last time,\" he said.",
+          "tokens": [
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false },
+            { "t": "You", "l": "you", "p": "PRON", "w": true, "sp": true },
+            { "t": "were", "l": "be", "p": "AUX", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "hurry", "l": "hurry", "p": "NOUN", "w": true, "sp": true },
+            { "t": "last", "l": "last", "p": "ADJ", "w": true, "sp": true },
+            { "t": "time", "l": "time", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false },
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "he", "l": "he", "p": "PRON", "w": true, "sp": true },
+            { "t": "said", "l": "say", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "\"Not any more,\" said Ines, and she chose a seat facing the island, so that she could watch it for as long as it remained in sight.",
+          "tokens": [
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false },
+            { "t": "Not", "l": "not", "p": "PART", "w": true, "sp": true },
+            { "t": "any", "l": "any", "p": "DET", "w": true, "sp": true },
+            { "t": "more", "l": "more", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false },
+            { "t": "\"", "l": "\"", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "said", "l": "say", "p": "VERB", "w": true, "sp": true },
+            { "t": "Ines", "l": "ines", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "chose", "l": "choose", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true },
+            { "t": "seat", "l": "seat", "p": "NOUN", "w": true, "sp": true },
+            { "t": "facing", "l": "face", "p": "VERB", "w": true, "sp": true },
+            { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true },
+            { "t": "island", "l": "island", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "so", "l": "so", "p": "ADV", "w": true, "sp": true },
+            { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "she", "l": "she", "p": "PRON", "w": true, "sp": true },
+            { "t": "could", "l": "could", "p": "AUX", "w": true, "sp": true },
+            { "t": "watch", "l": "watch", "p": "VERB", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "ADV", "w": true, "sp": true },
+            { "t": "long", "l": "long", "p": "ADJ", "w": true, "sp": true },
+            { "t": "as", "l": "as", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true },
+            { "t": "remained", "l": "remain", "p": "VERB", "w": true, "sp": true },
+            { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true },
+            { "t": "sight", "l": "sight", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": "El pasado dentro del pasado",
+      "explanation_es": "*She had not planned…*, *an old woman had told her…*, *Ines had laughed*: el *past perfect* cuenta lo que pasó antes del momento del relato, sin tener que ordenar los hechos cronológicamente.",
+      "refs": ["p2s1", "p2s5"]
+    },
+    {
+      "title_es": "Had anyone asked… (sin «if»)",
+      "explanation_es": "*Had anyone asked her why, she could not have explained* = *If anyone had asked her why…* Inversión literaria del tercer condicional.",
+      "refs": ["p5s6"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "harbour",
+      "surface": "harbour",
+      "pos": "noun",
+      "def_en": "a place on the coast where boats can stay safely",
+      "def_es": "puerto",
+      "ref": "p1s1"
+    },
+    {
+      "lemma": "ferry",
+      "surface": "ferry",
+      "pos": "noun",
+      "def_en": "a boat that carries people across a stretch of water",
+      "def_es": "ferri, transbordador",
+      "ref": "p1s1"
+    },
+    {
+      "lemma": "untie",
+      "surface": "untying",
+      "pos": "verb",
+      "def_en": "to undo a knot in a rope",
+      "def_es": "desatar",
+      "ref": "p1s1"
+    },
+    {
+      "lemma": "rope",
+      "surface": "ropes",
+      "pos": "noun",
+      "def_en": "very thick strong string",
+      "def_es": "cuerda, amarra",
+      "ref": "p1s1"
+    },
+    {
+      "lemma": "rucksack",
+      "surface": "rucksack",
+      "pos": "noun",
+      "def_en": "a bag that you carry on your back",
+      "def_es": "mochila",
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "bounce",
+      "surface": "bouncing",
+      "pos": "verb",
+      "def_en": "to move up and down again and again",
+      "def_es": "rebotar, dar saltos",
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "itinerary",
+      "surface": "itinerary",
+      "pos": "noun",
+      "def_en": "a plan of a journey, with the places you will visit",
+      "def_es": "itinerario",
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "hostel",
+      "surface": "hostel",
+      "pos": "noun",
+      "def_en": "a cheap place to stay, where you often share a room",
+      "def_es": "albergue",
+      "ref": "p2s4"
+    },
+    {
+      "lemma": "peel",
+      "surface": "peeling",
+      "pos": "verb",
+      "def_en": "to take the skin off a fruit",
+      "def_es": "pelar",
+      "ref": "p2s4"
+    },
+    {
+      "lemma": "bakery",
+      "surface": "bakery",
+      "pos": "noun",
+      "def_en": "a shop where bread is made and sold",
+      "def_es": "panadería",
+      "ref": "p2s4"
+    },
+    {
+      "lemma": "feel like",
+      "surface": "felt like it",
+      "pos": "phrase",
+      "def_en": "to want to do something",
+      "def_es": "apetecerle a uno",
+      "ref": "p2s4"
+    },
+    {
+      "lemma": "lie awake",
+      "surface": "lain awake",
+      "pos": "phrase",
+      "def_en": "to be in bed without being able to sleep",
+      "def_es": "quedarse despierto en la cama",
+      "ref": "p2s6"
+    },
+    {
+      "lemma": "crossing",
+      "surface": "crossing",
+      "pos": "noun",
+      "def_en": "a journey across water",
+      "def_es": "travesía",
+      "ref": "p3s1"
+    },
+    {
+      "lemma": "mainland",
+      "surface": "mainland",
+      "pos": "noun",
+      "def_en": "the main area of land of a country, not its islands",
+      "def_es": "tierra firme",
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "shrink",
+      "surface": "shrink",
+      "pos": "verb",
+      "def_en": "to become smaller",
+      "def_es": "encoger, hacerse pequeño",
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "tick off",
+      "surface": "ticking things off",
+      "pos": "phrasal_verb",
+      "def_en": "to mark each thing on a list as done",
+      "def_es": "ir tachando",
+      "ref": "p3s3"
+    },
+    {
+      "lemma": "viewpoint",
+      "surface": "viewpoints",
+      "pos": "noun",
+      "def_en": "a place from which you can see a beautiful area",
+      "def_es": "mirador",
+      "ref": "p3s3"
+    },
+    {
+      "lemma": "barely",
+      "surface": "barely",
+      "pos": "adverb",
+      "def_en": "only just; almost not",
+      "def_es": "apenas",
+      "ref": "p3s4"
+    },
+    {
+      "lemma": "occur to",
+      "surface": "occurred to her",
+      "pos": "phrase",
+      "def_en": "to come into your mind suddenly",
+      "def_es": "ocurrírsele (a alguien)",
+      "ref": "p3s5"
+    },
+    {
+      "lemma": "efficiently",
+      "surface": "efficiently",
+      "pos": "adverb",
+      "def_en": "in a quick and organised way",
+      "def_es": "con eficiencia",
+      "ref": "p3s5"
+    },
+    {
+      "lemma": "guidebook",
+      "surface": "guidebook",
+      "pos": "noun",
+      "def_en": "a book with information for tourists",
+      "def_es": "guía de viaje",
+      "ref": "p4s3"
+    },
+    {
+      "lemma": "broad",
+      "surface": "broad",
+      "pos": "adjective",
+      "def_en": "wide",
+      "def_es": "ancho, corpulento",
+      "ref": "p5s2"
+    },
+    {
+      "lemma": "nod",
+      "surface": "nodded",
+      "pos": "verb",
+      "def_en": "to move your head down and up as a greeting",
+      "def_es": "saludar con la cabeza",
+      "ref": "p6s2"
+    },
+    {
+      "lemma": "wipe",
+      "surface": "wipe",
+      "pos": "verb",
+      "def_en": "to clean a surface by rubbing it",
+      "def_es": "limpiar pasando algo",
+      "ref": "p6s4"
+    },
+    {
+      "lemma": "in sight",
+      "surface": "in sight",
+      "pos": "phrase",
+      "def_en": "able to be seen",
+      "def_es": "a la vista",
+      "ref": "p7s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "skim",
+      "focus": "gist",
+      "prompt": "What is the story mainly about?",
+      "options": [
+        { "id": "a", "text": "A tourist who gets lost on an island" },
+        { "id": "b", "text": "A traveller who learns to slow down" },
+        { "id": "c", "text": "A woman who decides to move abroad for good" },
+        { "id": "d", "text": "A holiday ruined by bad planning" }
+      ],
+      "answer": "b",
+      "evidence": ["p3s5"],
+      "rationale_es": "Ines viajaba como trabajaba, tachando una lista; en la isla aprende a parar."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Before the island, how did Ines usually travel?",
+      "options": [
+        { "id": "a", "text": "By following a strict list of things to see" },
+        { "id": "b", "text": "Slowly, without making any kind of plan in advance" },
+        { "id": "c", "text": "Always with a group" },
+        { "id": "d", "text": "Only to islands" }
+      ],
+      "answer": "a",
+      "evidence": ["p3s3"],
+      "rationale_es": "Llevaba tres semanas tachando catedrales, miradores y platos de una lista."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Why did Ines go to the island?",
+      "options": [
+        { "id": "a", "text": "It was on her itinerary" },
+        { "id": "b", "text": "She missed her train to the capital" },
+        { "id": "c", "text": "A stranger had described it to her" },
+        { "id": "d", "text": "A friend of hers lived there" }
+      ],
+      "answer": "c",
+      "evidence": ["p2s4"],
+      "rationale_es": "Una anciana, en la cocina del albergue, le habló del lugar la noche anterior."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "What does \"Then she had lain awake thinking about it\" suggest?",
+      "options": [
+        { "id": "a", "text": "She was worried about how much it would cost" },
+        { "id": "b", "text": "The idea attracted her more than she admitted" },
+        { "id": "c", "text": "The hostel was noisy" },
+        { "id": "d", "text": "She was angry with the old woman" }
+      ],
+      "answer": "b",
+      "evidence": ["p2s6"],
+      "rationale_es": "Se rio, pero no pudo dormir pensando en ello: la idea la había atrapado."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "vocab_in_context",
+      "prompt": "In paragraph 3, \"ticking things off a list\" means…",
+      "options": [
+        { "id": "a", "text": "forgetting the things she wanted to see" },
+        { "id": "b", "text": "adding new places to visit" },
+        { "id": "c", "text": "marking each thing as done" },
+        { "id": "d", "text": "writing a diary" }
+      ],
+      "answer": "c",
+      "evidence": ["p3s3"],
+      "rationale_es": "*Tick off* = ir tachando lo que ya está hecho."
+    },
+    {
+      "id": "q6",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Ines remembered clearly the moment she took each photograph.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["p3s4"],
+      "rationale_es": "*She could barely remember taking them*: apenas recordaba haberlas hecho."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What was the island like?",
+      "options": [
+        { "id": "a", "text": "Full of shops for tourists" },
+        { "id": "b", "text": "Large, with several villages" },
+        { "id": "c", "text": "Modern and expensive" },
+        { "id": "d", "text": "Quiet, with almost nothing to visit" }
+      ],
+      "answer": "d",
+      "evidence": ["p4s3"],
+      "rationale_es": "Una sola calle, una tienda, una iglesia diminuta y un café."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "Why does the writer mention that Ines \"did not take a single photograph\"?",
+      "options": [
+        { "id": "a", "text": "She was living the moment instead of collecting it" },
+        { "id": "b", "text": "Her phone had been broken on the ferry crossing" },
+        { "id": "c", "text": "Photography was not allowed" },
+        { "id": "d", "text": "The light was too poor" }
+      ],
+      "answer": "a",
+      "evidence": ["p5s5"],
+      "rationale_es": "Contrasta con los cientos de fotos que no recordaba haber hecho: ahora mira, no colecciona."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "What does Ines do with her itinerary in paragraph 6?",
+      "options": [
+        { "id": "a", "text": "She follows it again" },
+        { "id": "b", "text": "She gives it to Dora" },
+        { "id": "c", "text": "She throws it into the sea" },
+        { "id": "d", "text": "She treats it as a cloth" }
+      ],
+      "answer": "d",
+      "evidence": ["p6s4"],
+      "rationale_es": "*She used it to wipe the table*."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "inference",
+      "prompt": "What does this action show?",
+      "options": [
+        { "id": "a", "text": "She has stopped caring about her original plan" },
+        { "id": "b", "text": "She is angry with Dora" },
+        { "id": "c", "text": "She has lost her passport" },
+        { "id": "d", "text": "She wants to leave as quickly as she possibly can" }
+      ],
+      "answer": "a",
+      "evidence": ["p6s4"],
+      "rationale_es": "El plan impreso ya solo le sirve de trapo: ha dejado de importarle."
+    },
+    {
+      "id": "q11",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Ines stayed on the island for one night, as she had intended.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["p6s1", "p7s1"],
+      "rationale_es": "Pensaba quedarse una noche y volvió cinco días después."
+    },
+    {
+      "id": "q12",
+      "type": "true_false_ng",
+      "phase": "read",
+      "focus": "detail",
+      "prompt": "Dora had lived on the island all her life.",
+      "answer": "NG",
+      "allow_ng": true,
+      "evidence": ["p5s2"],
+      "rationale_es": "De Dora solo sabemos que lleva el café y alquila la habitación; no se dice de dónde es."
+    },
+    {
+      "id": "q13",
+      "type": "mcq",
+      "phase": "read",
+      "focus": "text_structure",
+      "prompt": "Why does the man in the orange jacket appear at both the beginning and the end?",
+      "options": [
+        { "id": "a", "text": "To show that the ferry is always late" },
+        { "id": "b", "text": "To frame the story and show how Ines has changed" },
+        { "id": "c", "text": "Because he is an old friend of Ines and her family" },
+        { "id": "d", "text": "To explain the timetable" }
+      ],
+      "answer": "b",
+      "evidence": ["p7s2"],
+      "rationale_es": "Abre y cierra el relato: al principio Ines corre; al final, él mismo nota que ya no tiene prisa."
+    },
+    {
+      "id": "q14",
+      "type": "gap_fill",
+      "phase": "post",
+      "focus": "vocab_in_context",
+      "prompt": "Complete with one word from the text in each gap.",
+      "text": "She watched the mainland {{1}} until it was only a grey line. She chose a seat facing the island so she could watch it while it remained in {{2}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["shrink"],
+          "max_words": 1
+        },
+        {
+          "n": 2,
+          "accept": ["sight"],
+          "max_words": 1
+        }
+      ],
+      "evidence": ["p3s2", "p7s3"],
+      "rationale_es": "*Shrink* = hacerse pequeño; *in sight* = a la vista."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 515,
+  "lemmas": [
+    "a", "about", "above", "actually", "afternoon", "against", "all", "already", "always", "an", "and", "any",
+    "anyone", "anything", "arm", "as", "ask", "at", "awake", "back", "baker", "bakery", "barely", "be",
+    "before", "being", "blue", "boat", "bounce", "box", "bread", "broad", "but", "by", "call", "capital",
+    "car", "card", "carry", "cathedral", "change", "cheese", "choose", "church", "climb", "coffee", "could",
+    "crossing", "day", "deep", "dish", "do", "dog", "efficiently", "else", "evening", "every", "explain",
+    "expression", "face", "famous", "feel", "ferry", "final", "find", "fold", "follow", "for", "from", "front",
+    "garage", "gate", "go", "gold", "gray", "guidebook", "harbor", "have", "he", "help", "her", "hold",
+    "hostel", "hour", "how", "hundred", "hurry", "if", "in", "inside", "interest", "island", "it", "itinerary",
+    "its", "jacket", "key", "kind", "kitchen", "lain", "last", "later", "laugh", "learn", "light", "like",
+    "line", "list", "long", "look", "lose", "mainland", "man", "many", "mean", "mention", "meter", "moment",
+    "monument", "more", "morning", "museum", "name", "night", "no", "nobody", "nod", "not", "nothing", "now",
+    "occur", "of", "off", "old", "on", "only", "open", "orange", "out", "owner", "passport", "past", "peel",
+    "person", "photograph", "pink", "place", "plan", "play", "player", "point", "print", "profession", "put",
+    "queue", "reach", "recognize", "remain", "remember", "rock", "room", "rope", "rucksack", "run", "say",
+    "seat", "see", "seem", "sell", "serious", "she", "shop", "should", "shrink", "sight", "simply", "single",
+    "sit", "size", "so", "someone", "something", "soup", "stand", "stay", "street", "suppose", "swimming",
+    "table", "take", "taste", "tell", "than", "that", "the", "them", "then", "there", "thing", "think",
+    "third", "this", "though", "tick", "time", "to", "tomato", "travel", "trouble", "try", "untie", "until",
+    "up", "use", "viewpoint", "visit", "wait", "wall", "watch", "wave", "way", "week", "weight", "when",
+    "where", "while", "who", "why", "wipe", "with", "without", "woman", "work", "would", "you"
+  ],
+  "difficulty": 1277,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8569, "A2": 0.9274, "B1": 0.9778, "B2": 0.9879, "C1": 0.9919, "C2": 1 },
+    "off_level_lemmas": ["efficiently", "itinerary", "lain", "mainland", "rucksack"],
+    "avg_sentence_words": 16.6,
+    "flesch_reading_ease": 80.4,
+    "checked_at": "2026-10-09T10:09:29.909Z"
+  }
+}

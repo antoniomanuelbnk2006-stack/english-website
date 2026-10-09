@@ -1,0 +1,1210 @@
+{
+  "id": "b2-lis-002",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "b2-u02",
+  "series": "b2-u02-space",
+  "skill": "listening",
+  "genre": "interview",
+  "title": "Cleaning up space",
+  "summary_es": "Una ingeniera explica qué es la basura espacial, por qué es peligrosa y cómo piensa su equipo retirar satélites muertos.",
+  "topic": "science-space",
+  "tags": ["espacio", "satélites", "entrevista", "medio ambiente"],
+  "can_do": ["L-B2-01", "L-B2-02", "L-B2-05", "L-B2-06"],
+  "grammar_focus": ["b2.impersonal-passive"],
+  "vocab_focus": ["orbit", "collision", "spacecraft", "burn up", "tend to", "clean up"],
+  "est_minutes": 18,
+  "prediction_prompt": "What do you think \"space junk\" is, and why might it be a problem?",
+  "pre_teach": ["orbit", "satellite", "collision"],
+  "speakers": [
+    { "id": "chris", "name": "Chris", "accent": "en-US", "gender": "male" },
+    { "id": "helen", "name": "Helen", "accent": "en-GB", "gender": "female" }
+  ],
+  "target_wpm": 155,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "chris",
+      "text": "My guest today is Helen Marsh, an engineer who works on removing rubbish from space. Helen, welcome.",
+      "tokens": [
+        { "t": "My", "l": "my", "p": "PRON", "w": true, "sp": true, "s": 0.031, "e": 0.233 },
+        { "t": "guest", "l": "guest", "p": "NOUN", "w": true, "sp": true, "s": 0.233, "e": 0.637 },
+        { "t": "today", "l": "today", "p": "NOUN", "w": true, "sp": true, "s": 0.637, "e": 1.041 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 1.041, "e": 1.243 },
+        { "t": "Helen", "l": "helen", "p": "PROPN", "w": false, "sp": true, "s": 1.243, "e": 1.647 },
+        { "t": "Marsh", "l": "marsh", "p": "PROPN", "w": false, "s": 1.647, "e": 2.051 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "an", "l": "an", "p": "DET", "w": true, "sp": true, "s": 2.051, "e": 2.253 },
+        { "t": "engineer", "l": "engineer", "p": "NOUN", "w": true, "sp": true, "s": 2.253, "e": 2.859 },
+        { "t": "who", "l": "who", "p": "PRON", "w": true, "sp": true, "s": 2.858, "e": 3.127 },
+        { "t": "works", "l": "work", "p": "VERB", "w": true, "sp": true, "s": 3.128, "e": 3.532 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 3.532, "e": 3.734 },
+        { "t": "removing", "l": "remove", "p": "VERB", "w": true, "sp": true, "s": 3.734, "e": 4.34 },
+        { "t": "rubbish", "l": "rubbish", "p": "ADJ", "w": true, "sp": true, "s": 4.339, "e": 4.878 },
+        { "t": "from", "l": "from", "p": "ADP", "w": true, "sp": true, "s": 4.878, "e": 5.215 },
+        { "t": "space", "l": "space", "p": "NOUN", "w": true, "s": 5.215, "e": 5.619 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Helen", "l": "helen", "p": "PROPN", "w": false, "s": 5.619, "e": 6.023 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "welcome", "l": "welcome", "p": "ADJ", "w": true, "s": 6.022, "e": 6.561 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 6.705
+    },
+    {
+      "id": "s2",
+      "speaker": "helen",
+      "text": "Thanks, Chris. It's good to be here.",
+      "tokens": [
+        { "t": "Thanks", "l": "thanks", "p": "NOUN", "w": true, "s": 7.143, "e": 7.534 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Chris", "l": "chris", "p": "PROPN", "w": false, "s": 7.534, "e": 7.869 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 7.869, "e": 8.008 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 8.008, "e": 8.148 },
+        { "t": "good", "l": "good", "p": "ADJ", "w": true, "sp": true, "s": 8.149, "e": 8.428 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 8.428, "e": 8.596 },
+        { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 8.596, "e": 8.764 },
+        { "t": "here", "l": "here", "p": "ADV", "w": true, "s": 8.764, "e": 9.043 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.105,
+      "end": 9.105
+    },
+    {
+      "id": "s3",
+      "speaker": "chris",
+      "text": "Let's start with the basics. What exactly is space junk?",
+      "tokens": [
+        { "t": "Let", "l": "let", "p": "VERB", "w": true, "s": 9.532, "e": 9.74 },
+        { "t": "'s", "l": "us", "p": "PRON", "w": true, "sp": true, "s": 9.74, "e": 9.879 },
+        { "t": "start", "l": "start", "p": "VERB", "w": true, "sp": true, "s": 9.879, "e": 10.226 },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 10.226, "e": 10.515 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 10.515, "e": 10.746 },
+        { "t": "basics", "l": "basic", "p": "NOUN", "w": true, "s": 10.746, "e": 11.151 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "What", "l": "what", "p": "PRON", "w": true, "sp": true, "s": 11.151, "e": 11.44 },
+        { "t": "exactly", "l": "exactly", "p": "ADV", "w": true, "sp": true, "s": 11.44, "e": 11.903 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 11.903, "e": 12.076 },
+        { "t": "space", "l": "space", "p": "VERB", "w": true, "sp": true, "s": 12.076, "e": 12.423 },
+        { "t": "junk", "l": "junk", "p": "NOUN", "w": true, "s": 12.423, "e": 12.712 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.505,
+      "end": 12.862
+    },
+    {
+      "id": "s4",
+      "speaker": "helen",
+      "text": "It's anything in orbit that no longer has a purpose: dead satellites, old rocket parts, even flakes of paint.",
+      "tokens": [
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "s": 13.285, "e": 13.436 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 13.436, "e": 13.588 },
+        { "t": "anything", "l": "anything", "p": "PRON", "w": true, "sp": true, "s": 13.588, "e": 14.133 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 14.133, "e": 14.315 },
+        { "t": "orbit", "l": "orbit", "p": "NOUN", "w": true, "sp": true, "s": 14.315, "e": 14.678 },
+        { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true, "s": 14.678, "e": 14.981 },
+        { "t": "no", "l": "no", "p": "DET", "w": true, "sp": true, "s": 14.981, "e": 15.163 },
+        { "t": "longer", "l": "long", "p": "ADV", "w": true, "sp": true, "s": 15.163, "e": 15.587 },
+        { "t": "has", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 15.587, "e": 15.829 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 15.829, "e": 15.95 },
+        { "t": "purpose", "l": "purpose", "p": "NOUN", "w": true, "s": 15.95, "e": 16.435 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "dead", "l": "dead", "p": "ADJ", "w": true, "sp": true, "s": 16.434, "e": 16.737 },
+        { "t": "satellites", "l": "satellite", "p": "NOUN", "w": true, "s": 16.737, "e": 17.403 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "old", "l": "old", "p": "ADJ", "w": true, "sp": true, "s": 17.403, "e": 17.645 },
+        { "t": "rocket", "l": "rocket", "p": "NOUN", "w": true, "sp": true, "s": 17.646, "e": 18.07 },
+        { "t": "parts", "l": "part", "p": "NOUN", "w": true, "s": 18.07, "e": 18.433 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "even", "l": "even", "p": "ADV", "w": true, "sp": true, "s": 18.433, "e": 18.736 },
+        { "t": "flakes", "l": "flake", "p": "VERB", "w": true, "sp": true, "s": 18.736, "e": 19.16 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 19.16, "e": 19.342 },
+        { "t": "paint", "l": "paint", "p": "VERB", "w": true, "s": 19.342, "e": 19.705 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.262,
+      "end": 19.746
+    },
+    {
+      "id": "s5",
+      "speaker": "chris",
+      "text": "Flakes of paint don't sound very dangerous.",
+      "tokens": [
+        { "t": "Flakes", "l": "flake", "p": "NOUN", "w": true, "sp": true, "s": 20.211, "e": 20.564 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 20.564, "e": 20.715 },
+        { "t": "paint", "l": "paint", "p": "NOUN", "w": true, "sp": true, "s": 20.716, "e": 21.019 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "s": 21.018, "e": 21.139 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 21.139, "e": 21.321 },
+        { "t": "sound", "l": "sound", "p": "NOUN", "w": true, "sp": true, "s": 21.321, "e": 21.624 },
+        { "t": "very", "l": "very", "p": "ADV", "w": true, "sp": true, "s": 21.624, "e": 21.876 },
+        { "t": "dangerous", "l": "dangerous", "p": "ADJ", "w": true, "s": 21.876, "e": 22.381 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.146,
+      "end": 22.426
+    },
+    {
+      "id": "s6",
+      "speaker": "helen",
+      "text": "You'd be surprised. Up there, objects travel at around seven kilometres a second.",
+      "tokens": [
+        { "t": "You", "l": "you", "p": "PRON", "w": true, "s": 22.859, "e": 23.087 },
+        { "t": "'d", "l": "would", "p": "AUX", "w": true, "sp": true, "s": 23.087, "e": 23.239 },
+        { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 23.239, "e": 23.429 },
+        { "t": "surprised", "l": "surprise", "p": "VERB", "w": true, "s": 23.429, "e": 24.062 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Up", "l": "up", "p": "ADP", "w": true, "sp": true, "s": 24.062, "e": 24.252 },
+        { "t": "there", "l": "there", "p": "PRON", "w": true, "s": 24.251, "e": 24.631 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "objects", "l": "object", "p": "NOUN", "w": true, "sp": true, "s": 24.631, "e": 25.137 },
+        { "t": "travel", "l": "travel", "p": "NOUN", "w": true, "sp": true, "s": 25.137, "e": 25.58 },
+        { "t": "at", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 25.581, "e": 25.771 },
+        { "t": "around", "l": "around", "p": "ADP", "w": true, "sp": true, "s": 25.77, "e": 26.213 },
+        { "t": "seven", "l": "seven", "p": "NUM", "w": false, "sp": true, "s": 26.213, "e": 26.593 },
+        { "t": "kilometres", "l": "kilometer", "p": "NOUN", "w": true, "sp": true, "s": 26.593, "e": 27.289 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 27.289, "e": 27.416 },
+        { "t": "second", "l": "second", "p": "NOUN", "w": true, "s": 27.416, "e": 27.859 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.826,
+      "end": 27.908
+    },
+    {
+      "id": "s7",
+      "speaker": "helen",
+      "text": "At that speed, something the size of a coin can destroy a satellite.",
+      "tokens": [
+        { "t": "At", "l": "at", "p": "ADP", "w": true, "sp": true, "s": 28.178, "e": 28.354 },
+        { "t": "that", "l": "that", "p": "DET", "w": true, "sp": true, "s": 28.354, "e": 28.647 },
+        { "t": "speed", "l": "speed", "p": "NOUN", "w": true, "s": 28.647, "e": 28.998 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "something", "l": "something", "p": "PRON", "w": true, "sp": true, "s": 29.148, "e": 29.671 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 29.671, "e": 29.88 },
+        { "t": "size", "l": "size", "p": "NOUN", "w": true, "sp": true, "s": 29.88, "e": 30.141 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 30.141, "e": 30.298 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 30.298, "e": 30.403 },
+        { "t": "coin", "l": "coin", "p": "NOUN", "w": true, "sp": true, "s": 30.402, "e": 30.663 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 30.664, "e": 30.873 },
+        { "t": "destroy", "l": "destroy", "p": "VERB", "w": true, "sp": true, "s": 30.873, "e": 31.291 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 31.291, "e": 31.396 },
+        { "t": "satellite", "l": "satellite", "p": "NOUN", "w": true, "s": 31.395, "e": 31.918 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.158,
+      "end": 31.959
+    },
+    {
+      "id": "s8",
+      "speaker": "chris",
+      "text": "And how much of this stuff is there?",
+      "tokens": [
+        { "t": "And", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 32.384, "e": 32.563 },
+        { "t": "how", "l": "how", "p": "ADV", "w": true, "sp": true, "s": 32.563, "e": 32.742 },
+        { "t": "much", "l": "much", "p": "ADJ", "w": true, "sp": true, "s": 32.742, "e": 32.966 },
+        { "t": "of", "l": "of", "p": "ADP", "w": true, "sp": true, "s": 32.965, "e": 33.099 },
+        { "t": "this", "l": "this", "p": "DET", "w": true, "sp": true, "s": 33.1, "e": 33.324 },
+        { "t": "stuff", "l": "stuff", "p": "NOUN", "w": true, "sp": true, "s": 33.323, "e": 33.591 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 33.592, "e": 33.726 },
+        { "t": "there", "l": "there", "p": "PRON", "w": true, "s": 33.726, "e": 33.994 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.359,
+      "end": 34.123
+    },
+    {
+      "id": "s9",
+      "speaker": "helen",
+      "text": "We're tracking about thirty-five thousand objects larger than a tennis ball.",
+      "tokens": [
+        { "t": "We", "l": "we", "p": "PRON", "w": true, "s": 34.556, "e": 34.686 },
+        { "t": "'re", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 34.686, "e": 34.882 },
+        { "t": "tracking", "l": "track", "p": "VERB", "w": true, "sp": true, "s": 34.882, "e": 35.37 },
+        { "t": "about", "l": "about", "p": "ADV", "w": true, "sp": true, "s": 35.37, "e": 35.696 },
+        { "t": "thirty", "l": "thirty", "p": "NUM", "w": false, "s": 35.696, "e": 36.054 },
+        { "t": "-", "l": "-", "p": "PUNCT", "w": false },
+        { "t": "five", "l": "five", "p": "NUM", "w": false, "sp": true, "s": 36.054, "e": 36.293 },
+        { "t": "thousand", "l": "thousand", "p": "NUM", "w": false, "sp": true, "s": 36.293, "e": 36.781 },
+        { "t": "objects", "l": "object", "p": "NOUN", "w": true, "sp": true, "s": 36.781, "e": 37.215 },
+        { "t": "larger", "l": "large", "p": "ADJ", "w": true, "sp": true, "s": 37.215, "e": 37.595 },
+        { "t": "than", "l": "than", "p": "ADP", "w": true, "sp": true, "s": 37.595, "e": 37.866 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 37.866, "e": 37.975 },
+        { "t": "tennis", "l": "tennis", "p": "NOUN", "w": true, "sp": true, "s": 37.975, "e": 38.355 },
+        { "t": "ball", "l": "ball", "p": "NOUN", "w": true, "s": 38.355, "e": 38.626 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.523,
+      "end": 38.668
+    },
+    {
+      "id": "s10",
+      "speaker": "helen",
+      "text": "But there are probably a million smaller pieces that we simply can't see.",
+      "tokens": [
+        { "t": "But", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 38.945, "e": 39.147 },
+        { "t": "there", "l": "there", "p": "PRON", "w": true, "sp": true, "s": 39.147, "e": 39.45 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 39.45, "e": 39.652 },
+        { "t": "probably", "l": "probably", "p": "ADV", "w": true, "sp": true, "s": 39.653, "e": 40.108 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 40.108, "e": 40.209 },
+        { "t": "million", "l": "million", "p": "NUM", "w": false, "sp": true, "s": 40.209, "e": 40.613 },
+        { "t": "smaller", "l": "small", "p": "ADJ", "w": true, "sp": true, "s": 40.613, "e": 41.017 },
+        { "t": "pieces", "l": "piece", "p": "NOUN", "w": true, "sp": true, "s": 41.017, "e": 41.371 },
+        { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true, "s": 41.371, "e": 41.624 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 41.624, "e": 41.776 },
+        { "t": "simply", "l": "simply", "p": "ADV", "w": true, "sp": true, "s": 41.776, "e": 42.13 },
+        { "t": "ca", "l": "can", "p": "AUX", "w": true, "s": 42.13, "e": 42.251 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 42.251, "e": 42.433 },
+        { "t": "see", "l": "see", "p": "VERB", "w": true, "s": 42.433, "e": 42.635 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 38.918,
+      "end": 42.691
+    },
+    {
+      "id": "s11",
+      "speaker": "chris",
+      "text": "That's alarming. Is it getting worse?",
+      "tokens": [
+        { "t": "That", "l": "that", "p": "PRON", "w": true, "s": 43.129, "e": 43.368 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 43.368, "e": 43.487 },
+        { "t": "alarming", "l": "alarming", "p": "ADJ", "w": true, "s": 43.487, "e": 43.947 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 43.947, "e": 44.1 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 44.1, "e": 44.253 },
+        { "t": "getting", "l": "get", "p": "VERB", "w": true, "sp": true, "s": 44.253, "e": 44.662 },
+        { "t": "worse", "l": "bad", "p": "ADJ", "w": true, "s": 44.662, "e": 44.969 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 43.091,
+      "end": 45.015
+    },
+    {
+      "id": "s12",
+      "speaker": "helen",
+      "text": "Yes, and quickly. Every collision creates more pieces, which then cause more collisions.",
+      "tokens": [
+        { "t": "Yes", "l": "yes", "p": "INTJ", "w": false, "s": 45.457, "e": 45.7 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "and", "l": "and", "p": "CCONJ", "w": true, "sp": true, "s": 45.7, "e": 45.943 },
+        { "t": "quickly", "l": "quickly", "p": "ADV", "w": true, "s": 45.944, "e": 46.431 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Every", "l": "every", "p": "DET", "w": true, "sp": true, "s": 46.43, "e": 46.795 },
+        { "t": "collision", "l": "collision", "p": "NOUN", "w": true, "sp": true, "s": 46.795, "e": 47.403 },
+        { "t": "creates", "l": "create", "p": "VERB", "w": true, "sp": true, "s": 47.403, "e": 47.89 },
+        { "t": "more", "l": "more", "p": "ADJ", "w": true, "sp": true, "s": 47.89, "e": 48.194 },
+        { "t": "pieces", "l": "piece", "p": "NOUN", "w": true, "s": 48.194, "e": 48.62 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "which", "l": "which", "p": "PRON", "w": true, "sp": true, "s": 48.62, "e": 48.985 },
+        { "t": "then", "l": "then", "p": "ADV", "w": true, "sp": true, "s": 48.985, "e": 49.289 },
+        { "t": "cause", "l": "cause", "p": "VERB", "w": true, "sp": true, "s": 49.289, "e": 49.654 },
+        { "t": "more", "l": "more", "p": "ADJ", "w": true, "sp": true, "s": 49.654, "e": 49.958 },
+        { "t": "collisions", "l": "collision", "p": "NOUN", "w": true, "s": 49.958, "e": 50.627 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 45.415,
+      "end": 50.691
+    },
+    {
+      "id": "s13",
+      "speaker": "helen",
+      "text": "If we do nothing, some orbits could become too dangerous to use within a few decades.",
+      "tokens": [
+        { "t": "If", "l": "if", "p": "SCONJ", "w": true, "sp": true, "s": 50.966, "e": 51.12 },
+        { "t": "we", "l": "we", "p": "PRON", "w": true, "sp": true, "s": 51.12, "e": 51.274 },
+        { "t": "do", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 51.273, "e": 51.427 },
+        { "t": "nothing", "l": "nothing", "p": "PRON", "w": true, "s": 51.427, "e": 51.836 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "some", "l": "some", "p": "DET", "w": true, "sp": true, "s": 52.046, "e": 52.312 },
+        { "t": "orbits", "l": "orbit", "p": "VERB", "w": true, "sp": true, "s": 52.312, "e": 52.685 },
+        { "t": "could", "l": "could", "p": "AUX", "w": true, "sp": true, "s": 52.685, "e": 53.005 },
+        { "t": "become", "l": "become", "p": "VERB", "w": true, "sp": true, "s": 53.005, "e": 53.378 },
+        { "t": "too", "l": "too", "p": "ADV", "w": true, "sp": true, "s": 53.378, "e": 53.591 },
+        { "t": "dangerous", "l": "dangerous", "p": "ADJ", "w": true, "sp": true, "s": 53.591, "e": 54.124 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 54.124, "e": 54.284 },
+        { "t": "use", "l": "use", "p": "VERB", "w": true, "sp": true, "s": 54.284, "e": 54.497 },
+        { "t": "within", "l": "within", "p": "ADP", "w": true, "sp": true, "s": 54.497, "e": 54.87 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 54.87, "e": 54.977 },
+        { "t": "few", "l": "few", "p": "ADJ", "w": true, "sp": true, "s": 54.977, "e": 55.19 },
+        { "t": "decades", "l": "decade", "p": "NOUN", "w": true, "s": 55.19, "e": 55.616 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 50.941,
+      "end": 55.658
+    },
+    {
+      "id": "s14",
+      "speaker": "chris",
+      "text": "Why should ordinary people care about that?",
+      "tokens": [
+        { "t": "Why", "l": "why", "p": "ADV", "w": true, "sp": true, "s": 56.092, "e": 56.299 },
+        { "t": "should", "l": "should", "p": "AUX", "w": true, "sp": true, "s": 56.299, "e": 56.662 },
+        { "t": "ordinary", "l": "ordinary", "p": "ADJ", "w": true, "sp": true, "s": 56.662, "e": 57.129 },
+        { "t": "people", "l": "people", "p": "NOUN", "w": true, "sp": true, "s": 57.129, "e": 57.492 },
+        { "t": "care", "l": "care", "p": "NOUN", "w": true, "sp": true, "s": 57.492, "e": 57.751 },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true, "s": 57.752, "e": 58.063 },
+        { "t": "that", "l": "that", "p": "PRON", "w": true, "s": 58.063, "e": 58.322 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.059,
+      "end": 58.373
+    },
+    {
+      "id": "s15",
+      "speaker": "helen",
+      "text": "Because modern life depends on satellites: weather forecasts, navigation, even paying by card.",
+      "tokens": [
+        { "t": "Because", "l": "because", "p": "SCONJ", "w": true, "sp": true, "s": 58.803, "e": 59.315 },
+        { "t": "modern", "l": "modern", "p": "ADJ", "w": true, "sp": true, "s": 59.315, "e": 59.763 },
+        { "t": "life", "l": "life", "p": "NOUN", "w": true, "sp": true, "s": 59.762, "e": 60.082 },
+        { "t": "depends", "l": "depend", "p": "VERB", "w": true, "sp": true, "s": 60.082, "e": 60.594 },
+        { "t": "on", "l": "on", "p": "ADP", "w": true, "sp": true, "s": 60.594, "e": 60.786 },
+        { "t": "satellites", "l": "satellite", "p": "NOUN", "w": true, "s": 60.786, "e": 61.49 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "weather", "l": "weather", "p": "NOUN", "w": true, "sp": true, "s": 61.489, "e": 62.001 },
+        { "t": "forecasts", "l": "forecast", "p": "NOUN", "w": true, "s": 62.001, "e": 62.641 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "navigation", "l": "navigation", "p": "NOUN", "w": true, "s": 62.64, "e": 63.344 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "even", "l": "even", "p": "ADV", "w": true, "sp": true, "s": 63.344, "e": 63.664 },
+        { "t": "paying", "l": "pay", "p": "VERB", "w": true, "sp": true, "s": 63.664, "e": 64.112 },
+        { "t": "by", "l": "by", "p": "ADP", "w": true, "sp": true, "s": 64.111, "e": 64.303 },
+        { "t": "card", "l": "card", "p": "NOUN", "w": true, "s": 64.303, "e": 64.623 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 58.773,
+      "end": 64.665
+    },
+    {
+      "id": "s16",
+      "speaker": "chris",
+      "text": "I hadn't thought about it like that. So what's your team doing about it?",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "sp": true, "s": 65.091, "e": 65.174 },
+        { "t": "had", "l": "have", "p": "AUX", "w": true, "s": 65.174, "e": 65.32 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 65.32, "e": 65.466 },
+        { "t": "thought", "l": "think", "p": "VERB", "w": true, "sp": true, "s": 65.466, "e": 65.799 },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true, "s": 65.799, "e": 66.049 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 66.049, "e": 66.174 },
+        { "t": "like", "l": "like", "p": "VERB", "w": true, "sp": true, "s": 66.174, "e": 66.382 },
+        { "t": "that", "l": "that", "p": "PRON", "w": true, "s": 66.383, "e": 66.591 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 66.731, "e": 66.89 },
+        { "t": "what", "l": "what", "p": "PRON", "w": true, "s": 66.89, "e": 67.138 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 67.138, "e": 67.262 },
+        { "t": "your", "l": "your", "p": "PRON", "w": true, "sp": true, "s": 67.262, "e": 67.528 },
+        { "t": "team", "l": "team", "p": "NOUN", "w": true, "sp": true, "s": 67.528, "e": 67.794 },
+        { "t": "doing", "l": "do", "p": "VERB", "w": true, "sp": true, "s": 67.794, "e": 68.113 },
+        { "t": "about", "l": "about", "p": "ADP", "w": true, "sp": true, "s": 68.113, "e": 68.432 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "s": 68.432, "e": 68.591 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 65.065,
+      "end": 68.895
+    },
+    {
+      "id": "s17",
+      "speaker": "helen",
+      "text": "We're building a spacecraft that can catch a dead satellite with a robotic arm.",
+      "tokens": [
+        { "t": "We", "l": "we", "p": "PRON", "w": true, "s": 69.327, "e": 69.452 },
+        { "t": "'re", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 69.452, "e": 69.639 },
+        { "t": "building", "l": "build", "p": "VERB", "w": true, "sp": true, "s": 69.639, "e": 70.107 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 70.107, "e": 70.211 },
+        { "t": "spacecraft", "l": "spacecraft", "p": "NOUN", "w": true, "sp": true, "s": 70.211, "e": 70.783 },
+        { "t": "that", "l": "that", "p": "PRON", "w": true, "sp": true, "s": 70.784, "e": 71.044 },
+        { "t": "can", "l": "can", "p": "AUX", "w": true, "sp": true, "s": 71.044, "e": 71.252 },
+        { "t": "catch", "l": "catch", "p": "VERB", "w": true, "sp": true, "s": 71.252, "e": 71.564 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 71.564, "e": 71.668 },
+        { "t": "dead", "l": "dead", "p": "ADJ", "w": true, "sp": true, "s": 71.668, "e": 71.928 },
+        { "t": "satellite", "l": "satellite", "p": "NOUN", "w": true, "sp": true, "s": 71.928, "e": 72.448 },
+        { "t": "with", "l": "with", "p": "ADP", "w": true, "sp": true, "s": 72.449, "e": 72.709 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 72.709, "e": 72.813 },
+        { "t": "robotic", "l": "robotic", "p": "ADJ", "w": true, "sp": true, "s": 72.813, "e": 73.229 },
+        { "t": "arm", "l": "arm", "p": "NOUN", "w": true, "s": 73.229, "e": 73.437 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 69.295,
+      "end": 73.479
+    },
+    {
+      "id": "s18",
+      "speaker": "helen",
+      "text": "Then it pulls the satellite down until it burns up in the atmosphere.",
+      "tokens": [
+        { "t": "Then", "l": "then", "p": "ADV", "w": true, "sp": true, "s": 73.755, "e": 74.017 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 74.017, "e": 74.174 },
+        { "t": "pulls", "l": "pull", "p": "VERB", "w": true, "sp": true, "s": 74.174, "e": 74.488 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 74.487, "e": 74.696 },
+        { "t": "satellite", "l": "satellite", "p": "NOUN", "w": true, "sp": true, "s": 74.697, "e": 75.22 },
+        { "t": "down", "l": "down", "p": "ADP", "w": true, "sp": true, "s": 75.22, "e": 75.482 },
+        { "t": "until", "l": "until", "p": "ADP", "w": true, "sp": true, "s": 75.482, "e": 75.796 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 75.795, "e": 75.952 },
+        { "t": "burns", "l": "burn", "p": "VERB", "w": true, "sp": true, "s": 75.952, "e": 76.266 },
+        { "t": "up", "l": "up", "p": "ADP", "w": true, "sp": true, "s": 76.266, "e": 76.423 },
+        { "t": "in", "l": "in", "p": "ADP", "w": true, "sp": true, "s": 76.423, "e": 76.58 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 76.58, "e": 76.789 },
+        { "t": "atmosphere", "l": "atmosphere", "p": "NOUN", "w": true, "s": 76.789, "e": 77.365 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 73.729,
+      "end": 77.412
+    },
+    {
+      "id": "s19",
+      "speaker": "chris",
+      "text": "It sounds like science fiction.",
+      "tokens": [
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 77.837, "e": 77.981 },
+        { "t": "sounds", "l": "sound", "p": "VERB", "w": true, "sp": true, "s": 77.981, "e": 78.317 },
+        { "t": "like", "l": "like", "p": "ADP", "w": true, "sp": true, "s": 78.318, "e": 78.558 },
+        { "t": "science", "l": "science", "p": "NOUN", "w": true, "sp": true, "s": 78.558, "e": 78.943 },
+        { "t": "fiction", "l": "fiction", "p": "NOUN", "w": true, "s": 78.942, "e": 79.327 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 77.812,
+      "end": 79.422
+    },
+    {
+      "id": "s20",
+      "speaker": "helen",
+      "text": "It did ten years ago. Our first test mission is planned for the year after next.",
+      "tokens": [
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 79.846, "e": 80.023 },
+        { "t": "did", "l": "do", "p": "AUX", "w": true, "sp": true, "s": 80.023, "e": 80.259 },
+        { "t": "ten", "l": "ten", "p": "NUM", "w": false, "sp": true, "s": 80.259, "e": 80.495 },
+        { "t": "years", "l": "year", "p": "NOUN", "w": true, "sp": true, "s": 80.496, "e": 80.85 },
+        { "t": "ago", "l": "ago", "p": "ADV", "w": true, "s": 80.85, "e": 81.086 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Our", "l": "our", "p": "PRON", "w": true, "sp": true, "s": 81.576, "e": 81.774 },
+        { "t": "first", "l": "first", "p": "ADJ", "w": true, "sp": true, "s": 81.774, "e": 82.071 },
+        { "t": "test", "l": "test", "p": "NOUN", "w": true, "sp": true, "s": 82.071, "e": 82.318 },
+        { "t": "mission", "l": "mission", "p": "NOUN", "w": true, "sp": true, "s": 82.318, "e": 82.714 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 82.714, "e": 82.862 },
+        { "t": "planned", "l": "plan", "p": "VERB", "w": true, "sp": true, "s": 82.863, "e": 83.259 },
+        { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true, "s": 83.258, "e": 83.456 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 83.456, "e": 83.654 },
+        { "t": "year", "l": "year", "p": "NOUN", "w": true, "sp": true, "s": 83.654, "e": 83.901 },
+        { "t": "after", "l": "after", "p": "ADP", "w": true, "sp": true, "s": 83.902, "e": 84.199 },
+        { "t": "next", "l": "next", "p": "ADJ", "w": true, "s": 84.199, "e": 84.446 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 79.822,
+      "end": 84.489
+    },
+    {
+      "id": "s21",
+      "speaker": "chris",
+      "text": "Who pays for all this? It can't be cheap.",
+      "tokens": [
+        { "t": "Who", "l": "who", "p": "PRON", "w": true, "sp": true, "s": 84.937, "e": 85.14 },
+        { "t": "pays", "l": "pay", "p": "VERB", "w": true, "sp": true, "s": 85.14, "e": 85.394 },
+        { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true, "s": 85.394, "e": 85.597 },
+        { "t": "all", "l": "all", "p": "DET", "w": true, "sp": true, "s": 85.597, "e": 85.8 },
+        { "t": "this", "l": "this", "p": "PRON", "w": true, "s": 85.8, "e": 86.054 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "It", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 86.054, "e": 86.206 },
+        { "t": "ca", "l": "can", "p": "AUX", "w": true, "s": 86.206, "e": 86.328 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "sp": true, "s": 86.328, "e": 86.511 },
+        { "t": "be", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 86.51, "e": 86.662 },
+        { "t": "cheap", "l": "cheap", "p": "ADJ", "w": true, "s": 86.663, "e": 86.968 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 84.889,
+      "end": 87.082
+    },
+    {
+      "id": "s22",
+      "speaker": "helen",
+      "text": "That's the difficult part. Nobody wants to pay for cleaning up somebody else's mess.",
+      "tokens": [
+        { "t": "That", "l": "that", "p": "PRON", "w": true, "s": 87.509, "e": 87.746 },
+        { "t": "'s", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 87.746, "e": 87.864 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 87.864, "e": 88.067 },
+        { "t": "difficult", "l": "difficult", "p": "ADJ", "w": true, "sp": true, "s": 88.067, "e": 88.575 },
+        { "t": "part", "l": "part", "p": "NOUN", "w": true, "s": 88.575, "e": 88.829 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Nobody", "l": "nobody", "p": "PRON", "w": true, "sp": true, "s": 89.309, "e": 89.654 },
+        { "t": "wants", "l": "want", "p": "VERB", "w": true, "sp": true, "s": 89.654, "e": 89.95 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 89.95, "e": 90.098 },
+        { "t": "pay", "l": "pay", "p": "VERB", "w": true, "sp": true, "s": 90.098, "e": 90.295 },
+        { "t": "for", "l": "for", "p": "SCONJ", "w": true, "sp": true, "s": 90.295, "e": 90.492 },
+        { "t": "cleaning", "l": "clean", "p": "VERB", "w": true, "sp": true, "s": 90.492, "e": 90.936 },
+        { "t": "up", "l": "up", "p": "ADP", "w": true, "sp": true, "s": 90.936, "e": 91.084 },
+        { "t": "somebody", "l": "somebody", "p": "PRON", "w": true, "sp": true, "s": 91.084, "e": 91.528 },
+        { "t": "else", "l": "else", "p": "ADV", "w": true, "s": 91.527, "e": 91.757 },
+        { "t": "'s", "l": "'s", "p": "PART", "w": false, "sp": true, "s": 91.757, "e": 91.872 },
+        { "t": "mess", "l": "mess", "p": "NOUN", "w": true, "s": 91.873, "e": 92.119 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 87.482,
+      "end": 92.174
+    },
+    {
+      "id": "s23",
+      "speaker": "helen",
+      "text": "I'd compare it to the oceans. Everyone uses them, but nobody feels responsible for them.",
+      "tokens": [
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "s": 92.451, "e": 92.533 },
+        { "t": "'d", "l": "would", "p": "AUX", "w": true, "sp": true, "s": 92.533, "e": 92.696 },
+        { "t": "compare", "l": "compare", "p": "VERB", "w": true, "sp": true, "s": 92.696, "e": 93.186 },
+        { "t": "it", "l": "it", "p": "PRON", "w": true, "sp": true, "s": 93.186, "e": 93.37 },
+        { "t": "to", "l": "to", "p": "ADP", "w": true, "sp": true, "s": 93.37, "e": 93.554 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 93.554, "e": 93.799 },
+        { "t": "oceans", "l": "ocean", "p": "NOUN", "w": true, "s": 93.799, "e": 94.228 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Everyone", "l": "everyone", "p": "PRON", "w": true, "sp": true, "s": 94.228, "e": 94.78 },
+        { "t": "uses", "l": "use", "p": "VERB", "w": true, "sp": true, "s": 94.78, "e": 95.086 },
+        { "t": "them", "l": "them", "p": "PRON", "w": true, "s": 95.086, "e": 95.392 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 95.392, "e": 95.637 },
+        { "t": "nobody", "l": "nobody", "p": "PRON", "w": true, "sp": true, "s": 95.638, "e": 96.067 },
+        { "t": "feels", "l": "feel", "p": "VERB", "w": true, "sp": true, "s": 96.066, "e": 96.434 },
+        {
+          "t": "responsible",
+          "l": "responsible",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 96.434,
+          "e": 97.169
+        },
+        { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true, "s": 97.169, "e": 97.414 },
+        { "t": "them", "l": "them", "p": "PRON", "w": true, "s": 97.415, "e": 97.721 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 92.424,
+      "end": 97.762
+    },
+    {
+      "id": "s24",
+      "speaker": "chris",
+      "text": "So is the real problem technical or political?",
+      "tokens": [
+        { "t": "So", "l": "so", "p": "ADV", "w": true, "sp": true, "s": 98.195, "e": 98.364 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 98.364, "e": 98.533 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 98.533, "e": 98.758 },
+        { "t": "real", "l": "real", "p": "ADJ", "w": true, "sp": true, "s": 98.758, "e": 99.04 },
+        { "t": "problem", "l": "problem", "p": "NOUN", "w": true, "sp": true, "s": 99.04, "e": 99.49 },
+        { "t": "technical", "l": "technical", "p": "ADJ", "w": true, "sp": true, "s": 99.49, "e": 100.053 },
+        { "t": "or", "l": "or", "p": "CCONJ", "w": true, "sp": true, "s": 100.053, "e": 100.222 },
+        { "t": "political", "l": "political", "p": "ADJ", "w": true, "s": 100.222, "e": 100.785 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 98.162,
+      "end": 100.863
+    },
+    {
+      "id": "s25",
+      "speaker": "helen",
+      "text": "Honestly, I'd say political. The technology is nearly ready, but the international rules aren't.",
+      "tokens": [
+        { "t": "Honestly", "l": "honestly", "p": "ADV", "w": true, "s": 101.289, "e": 101.82 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "I", "l": "i", "p": "PRON", "w": true, "s": 101.82, "e": 101.899 },
+        { "t": "'d", "l": "would", "p": "AUX", "w": true, "sp": true, "s": 101.899, "e": 102.056 },
+        { "t": "say", "l": "say", "p": "VERB", "w": true, "sp": true, "s": 102.056, "e": 102.292 },
+        { "t": "political", "l": "political", "p": "ADJ", "w": true, "s": 102.293, "e": 102.883 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "The", "l": "the", "p": "DET", "w": true, "sp": true, "s": 102.883, "e": 103.119 },
+        {
+          "t": "technology",
+          "l": "technology",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 103.119,
+          "e": 103.768
+        },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 103.768, "e": 103.945 },
+        { "t": "nearly", "l": "nearly", "p": "ADV", "w": true, "sp": true, "s": 103.945, "e": 104.358 },
+        { "t": "ready", "l": "ready", "p": "ADJ", "w": true, "s": 104.359, "e": 104.713 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "but", "l": "but", "p": "CCONJ", "w": true, "sp": true, "s": 104.713, "e": 104.949 },
+        { "t": "the", "l": "the", "p": "DET", "w": true, "sp": true, "s": 104.949, "e": 105.185 },
+        {
+          "t": "international",
+          "l": "international",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 105.185,
+          "e": 106.011
+        },
+        { "t": "rules", "l": "rule", "p": "NOUN", "w": true, "sp": true, "s": 106.012, "e": 106.366 },
+        { "t": "are", "l": "be", "p": "AUX", "w": true, "s": 106.366, "e": 106.572 },
+        { "t": "n't", "l": "not", "p": "PART", "w": true, "s": 106.572, "e": 106.779 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 101.263,
+      "end": 106.831
+    },
+    {
+      "id": "s26",
+      "speaker": "chris",
+      "text": "Are you optimistic?",
+      "tokens": [
+        { "t": "Are", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 107.26, "e": 107.479 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 107.479, "e": 107.698 },
+        { "t": "optimistic", "l": "optimistic", "p": "ADJ", "w": true, "s": 107.698, "e": 108.3 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 107.231,
+      "end": 108.435
+    },
+    {
+      "id": "s27",
+      "speaker": "helen",
+      "text": "Cautiously. Companies have finally realised that a crowded orbit is bad for business.",
+      "tokens": [
+        { "t": "Cautiously", "l": "cautiously", "p": "ADV", "w": true, "s": 108.864, "e": 109.534 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Companies", "l": "company", "p": "NOUN", "w": true, "sp": true, "s": 109.804, "e": 110.342 },
+        { "t": "have", "l": "have", "p": "AUX", "w": true, "sp": true, "s": 110.342, "e": 110.611 },
+        { "t": "finally", "l": "finally", "p": "ADV", "w": true, "sp": true, "s": 110.612, "e": 111.043 },
+        { "t": "realised", "l": "realize", "p": "VERB", "w": true, "sp": true, "s": 111.042, "e": 111.527 },
+        { "t": "that", "l": "that", "p": "SCONJ", "w": true, "sp": true, "s": 111.527, "e": 111.796 },
+        { "t": "a", "l": "a", "p": "DET", "w": true, "sp": true, "s": 111.796, "e": 111.904 },
+        { "t": "crowded", "l": "crowded", "p": "ADJ", "w": true, "sp": true, "s": 111.904, "e": 112.335 },
+        { "t": "orbit", "l": "orbit", "p": "NOUN", "w": true, "sp": true, "s": 112.334, "e": 112.657 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 112.657, "e": 112.819 },
+        { "t": "bad", "l": "bad", "p": "ADJ", "w": true, "sp": true, "s": 112.819, "e": 113.034 },
+        { "t": "for", "l": "for", "p": "ADP", "w": true, "sp": true, "s": 113.034, "e": 113.249 },
+        { "t": "business", "l": "business", "p": "NOUN", "w": true, "s": 113.249, "e": 113.734 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 108.835,
+      "end": 113.771
+    },
+    {
+      "id": "s28",
+      "speaker": "helen",
+      "text": "Once money is involved, things tend to move faster.",
+      "tokens": [
+        { "t": "Once", "l": "once", "p": "ADV", "w": true, "sp": true, "s": 114.054, "e": 114.361 },
+        { "t": "money", "l": "money", "p": "NOUN", "w": true, "sp": true, "s": 114.361, "e": 114.729 },
+        { "t": "is", "l": "be", "p": "AUX", "w": true, "sp": true, "s": 114.728, "e": 114.912 },
+        { "t": "involved", "l": "involved", "p": "ADJ", "w": true, "s": 114.912, "e": 115.464 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "things", "l": "thing", "p": "NOUN", "w": true, "sp": true, "s": 115.634, "e": 115.994 },
+        { "t": "tend", "l": "tend", "p": "VERB", "w": true, "sp": true, "s": 115.994, "e": 116.251 },
+        { "t": "to", "l": "to", "p": "PART", "w": true, "sp": true, "s": 116.252, "e": 116.406 },
+        { "t": "move", "l": "move", "p": "VERB", "w": true, "sp": true, "s": 116.406, "e": 116.663 },
+        { "t": "faster", "l": "fast", "p": "ADV", "w": true, "s": 116.664, "e": 117.024 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 114.021,
+      "end": 117.087
+    },
+    {
+      "id": "s29",
+      "speaker": "chris",
+      "text": "Helen Marsh, thank you very much.",
+      "tokens": [
+        { "t": "Helen", "l": "helen", "p": "PROPN", "w": false, "sp": true, "s": 117.528, "e": 117.843 },
+        { "t": "Marsh", "l": "marsh", "p": "PROPN", "w": false, "s": 117.843, "e": 118.158 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "thank", "l": "thank", "p": "VERB", "w": true, "sp": true, "s": 118.158, "e": 118.473 },
+        { "t": "you", "l": "you", "p": "PRON", "w": true, "sp": true, "s": 118.473, "e": 118.683 },
+        { "t": "very", "l": "very", "p": "ADV", "w": true, "sp": true, "s": 118.683, "e": 118.946 },
+        { "t": "much", "l": "much", "p": "ADJ", "w": true, "s": 118.946, "e": 119.209 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 117.487,
+      "end": 119.264
+    }
+  ],
+  "connected_speech": [
+    {
+      "ref": "s6",
+      "phrase": "You'd be surprised",
+      "type": "contraction",
+      "ipa": "/jud bi səˈpraɪzd/",
+      "explanation_es": "*You'd* = *you would*. La *d* se pega a *be* y casi no se oye."
+    },
+    {
+      "ref": "s6",
+      "phrase": "objects travel at around",
+      "type": "weak_form",
+      "ipa": "/ˈɒbdʒɪkts ˈtrævl ət əˈraʊnd/",
+      "explanation_es": "*at* es débil (/ət/) y se enlaza con *around*."
+    },
+    {
+      "ref": "s10",
+      "phrase": "that we simply can't see",
+      "type": "elision",
+      "ipa": "/ðət wi ˈsɪmpli ˈkɑːn ˈsiː/",
+      "explanation_es": "La *t* de *can't* desaparece delante de *see*: lo negativo se nota en la vocal larga."
+    },
+    {
+      "ref": "s16",
+      "phrase": "I hadn't thought about it",
+      "type": "linking",
+      "ipa": "/aɪ ˈhædn ˈθɔːt əˈbaʊt ɪt/",
+      "explanation_es": "*hadn't* pierde la *t* y *thought about it* se dice seguido."
+    },
+    {
+      "ref": "s16",
+      "phrase": "what's your team doing about it",
+      "type": "linking",
+      "ipa": "/ˈwɒtʃə ˈtiːm ˈduːɪŋ əˈbaʊt ɪt/",
+      "explanation_es": "*what's your* se funde (/ˈwɒtʃə/) y *about it* se enlaza."
+    },
+    {
+      "ref": "s20",
+      "phrase": "is planned for the year after next",
+      "type": "weak_form",
+      "ipa": "/ɪz ˈplænd fə ðə ˈjɪər ˈɑːftə ˈnekst/",
+      "explanation_es": "*for* suena /fə/; *year after* se enlaza con una /r/."
+    },
+    {
+      "ref": "s25",
+      "phrase": "I'd say political",
+      "type": "contraction",
+      "ipa": "/aɪd ˈseɪ pəˈlɪtɪkl/",
+      "explanation_es": "*I'd* = *I would*: sirve para dar una opinión con prudencia."
+    },
+    {
+      "ref": "s28",
+      "phrase": "things tend to move faster",
+      "type": "weak_form",
+      "ipa": "/ˈθɪŋz ˈten tə ˈmuːv ˈfɑːstə/",
+      "explanation_es": "*tend to* pierde la *d* y *to* es débil."
+    }
+  ],
+  "glossary": [
+    {
+      "lemma": "junk",
+      "surface": "junk",
+      "pos": "noun",
+      "def_en": "old things that are no longer useful",
+      "def_es": "basura, chatarra",
+      "ref": "s3"
+    },
+    {
+      "lemma": "orbit",
+      "surface": "orbit",
+      "pos": "noun",
+      "def_en": "the path of an object moving around the Earth",
+      "def_es": "órbita",
+      "ref": "s4"
+    },
+    {
+      "lemma": "purpose",
+      "surface": "purpose",
+      "pos": "noun",
+      "def_en": "the reason why something exists or is used",
+      "def_es": "finalidad, utilidad",
+      "ref": "s4"
+    },
+    {
+      "lemma": "satellite",
+      "surface": "satellites",
+      "pos": "noun",
+      "def_en": "a machine sent into space to move around the Earth",
+      "def_es": "satélite",
+      "ref": "s4"
+    },
+    {
+      "lemma": "rocket",
+      "surface": "rocket",
+      "pos": "noun",
+      "def_en": "a vehicle that travels into space",
+      "def_es": "cohete",
+      "ref": "s4"
+    },
+    {
+      "lemma": "flake",
+      "surface": "flakes",
+      "pos": "noun",
+      "def_en": "a very small thin piece of something",
+      "def_es": "escama, trocito",
+      "ref": "s4"
+    },
+    {
+      "lemma": "track",
+      "surface": "tracking",
+      "pos": "verb",
+      "def_en": "to follow the movement of something",
+      "def_es": "seguir, rastrear",
+      "ref": "s9"
+    },
+    {
+      "lemma": "alarming",
+      "surface": "alarming",
+      "pos": "adjective",
+      "def_en": "making you feel worried",
+      "def_es": "alarmante",
+      "ref": "s11"
+    },
+    {
+      "lemma": "collision",
+      "surface": "collision",
+      "pos": "noun",
+      "def_en": "an accident in which two things hit each other",
+      "def_es": "choque, colisión",
+      "ref": "s12"
+    },
+    {
+      "lemma": "decade",
+      "surface": "decades",
+      "pos": "noun",
+      "def_en": "a period of ten years",
+      "def_es": "década",
+      "ref": "s13"
+    },
+    {
+      "lemma": "forecast",
+      "surface": "forecasts",
+      "pos": "noun",
+      "def_en": "a statement about what the weather will be like",
+      "def_es": "previsión",
+      "ref": "s15"
+    },
+    {
+      "lemma": "navigation",
+      "surface": "navigation",
+      "pos": "noun",
+      "def_en": "finding the way from one place to another",
+      "def_es": "navegación",
+      "ref": "s15"
+    },
+    {
+      "lemma": "spacecraft",
+      "surface": "spacecraft",
+      "pos": "noun",
+      "def_en": "a vehicle that travels in space",
+      "def_es": "nave espacial",
+      "ref": "s17"
+    },
+    {
+      "lemma": "robotic",
+      "surface": "robotic",
+      "pos": "adjective",
+      "def_en": "working like a robot",
+      "def_es": "robótico",
+      "ref": "s17"
+    },
+    {
+      "lemma": "burn up",
+      "surface": "burns up",
+      "pos": "phrasal_verb",
+      "def_en": "to be destroyed completely by heat",
+      "def_es": "desintegrarse, quemarse",
+      "ref": "s18"
+    },
+    {
+      "lemma": "atmosphere",
+      "surface": "atmosphere",
+      "pos": "noun",
+      "def_en": "the gases around the Earth",
+      "def_es": "atmósfera",
+      "ref": "s18"
+    },
+    {
+      "lemma": "mess",
+      "surface": "mess",
+      "pos": "noun",
+      "def_en": "a dirty or untidy state",
+      "def_es": "desorden, porquería",
+      "ref": "s22"
+    },
+    {
+      "lemma": "cautiously",
+      "surface": "Cautiously",
+      "pos": "adverb",
+      "def_en": "carefully, without being too sure",
+      "def_es": "con cautela",
+      "ref": "s27"
+    },
+    {
+      "lemma": "crowded",
+      "surface": "crowded",
+      "pos": "adjective",
+      "def_en": "too full of things or people",
+      "def_es": "abarrotado",
+      "ref": "s27"
+    },
+    {
+      "lemma": "tend to",
+      "surface": "tend to",
+      "pos": "phrase",
+      "def_en": "to usually do something",
+      "def_es": "soler, tender a",
+      "ref": "s28"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "gist",
+      "prompt": "What is the interview mainly about?",
+      "options": [
+        { "id": "a", "text": "The dangers of travelling to space" },
+        { "id": "b", "text": "The problem of rubbish in orbit and what to do about it" },
+        { "id": "c", "text": "How new satellites are designed and built today" }
+      ],
+      "answer": "b",
+      "evidence": ["s1"],
+      "rationale_es": "Explica qué es la basura espacial, por qué empeora y cómo retirarla."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "phase": "listen_1",
+      "focus": "attitude_opinion",
+      "prompt": "How does Helen feel about the future?",
+      "options": [
+        { "id": "a", "text": "Hopeful, but with some caution" },
+        { "id": "b", "text": "Completely confident about everything" },
+        { "id": "c", "text": "Deeply pessimistic" }
+      ],
+      "answer": "a",
+      "evidence": ["s27"],
+      "rationale_es": "A *Are you optimistic?* contesta *Cautiously*: optimista, con cautela."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Why can a tiny object be so dangerous in space?",
+      "options": [
+        { "id": "a", "text": "Because it is extremely hot" },
+        { "id": "b", "text": "Because nobody can see it coming" },
+        { "id": "c", "text": "Because of its enormous speed" }
+      ],
+      "answer": "c",
+      "evidence": ["s6", "s7"],
+      "rationale_es": "A siete kilómetros por segundo, algo del tamaño de una moneda destruye un satélite."
+    },
+    {
+      "id": "q4",
+      "type": "gap_fill",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Complete the sentence with a number.",
+      "text": "Scientists are tracking about {{1}} objects larger than a tennis ball.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["35,000", "35000", "35.000", "thirty-five thousand", "thirty five thousand"],
+          "max_words": 3
+        }
+      ],
+      "evidence": ["s9"],
+      "rationale_es": "*Thirty-five thousand*: 35 000. Las piezas pequeñas, que no se ven, serían un millón."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "Why is the amount of junk growing so fast?",
+      "options": [
+        { "id": "a", "text": "Because more rockets are launched every single year" },
+        { "id": "b", "text": "Because crashes produce pieces that cause further crashes" },
+        { "id": "c", "text": "Because old satellites are abandoned" }
+      ],
+      "answer": "b",
+      "evidence": ["s12"],
+      "rationale_es": "Cada choque crea más fragmentos, que provocan más choques: un círculo vicioso."
+    },
+    {
+      "id": "q6",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Helen says some orbits may become unusable within a few decades.",
+      "answer": "T",
+      "allow_ng": true,
+      "evidence": ["s13"],
+      "rationale_es": "*Too dangerous to use within a few decades*."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "Which of these does Helen NOT mention as depending on satellites?",
+      "options": [
+        { "id": "a", "text": "Weather forecasts" },
+        { "id": "b", "text": "Card payments" },
+        { "id": "c", "text": "Television" }
+      ],
+      "answer": "c",
+      "evidence": ["s15"],
+      "rationale_es": "Menciona la previsión del tiempo, la navegación y los pagos con tarjeta. De la televisión no dice nada."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "How will Helen's spacecraft deal with a dead satellite?",
+      "options": [
+        { "id": "a", "text": "It will grab it and drag it down to burn" },
+        { "id": "b", "text": "It will push it further out into deep space" },
+        { "id": "c", "text": "It will break it into small pieces" }
+      ],
+      "answer": "a",
+      "evidence": ["s17", "s18"],
+      "rationale_es": "Lo atrapa con un brazo robótico y lo baja hasta que se desintegra en la atmósfera."
+    },
+    {
+      "id": "q9",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "detail",
+      "prompt": "The first test mission has already taken place.",
+      "answer": "F",
+      "allow_ng": true,
+      "evidence": ["s20"],
+      "rationale_es": "Está prevista *for the year after next*: dentro de dos años."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "Why does Helen compare space to the oceans?",
+      "options": [
+        { "id": "a", "text": "Both are extremely large and still mostly unexplored" },
+        { "id": "b", "text": "Both are used by everyone but looked after by no one" },
+        { "id": "c", "text": "Both are difficult to reach" }
+      ],
+      "answer": "b",
+      "evidence": ["s23"],
+      "rationale_es": "Todos los usan y nadie se hace responsable: por eso nadie quiere pagar la limpieza."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "phase": "listen_2",
+      "focus": "attitude_opinion",
+      "prompt": "In Helen's opinion, the main obstacle is…",
+      "options": [
+        { "id": "a", "text": "a lack of agreement between countries" },
+        { "id": "b", "text": "a lack of suitable technology at the moment" },
+        { "id": "c", "text": "a lack of trained engineers" }
+      ],
+      "answer": "a",
+      "evidence": ["s25"],
+      "rationale_es": "La tecnología está casi lista; lo que falta son reglas internacionales."
+    },
+    {
+      "id": "q12",
+      "type": "true_false_ng",
+      "phase": "listen_2",
+      "focus": "inference",
+      "prompt": "Helen believes that business interests will help to solve the problem.",
+      "answer": "T",
+      "allow_ng": true,
+      "evidence": ["s28"],
+      "rationale_es": "Las empresas ven que una órbita saturada es mala para el negocio, y con dinero de por medio todo va más rápido."
+    },
+    {
+      "id": "q13",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s6",
+      "reference": "You'd be surprised. Up there, objects travel at around seven kilometres a second.",
+      "accept_variants": [
+        "You would be surprised. Up there, objects travel at around seven kilometres a second.",
+        "You'd be surprised. Up there, objects travel at around 7 kilometres a second."
+      ],
+      "evidence": ["s6"],
+      "rationale_es": "*You'd be* y *at around* van muy unidos."
+    },
+    {
+      "id": "q14",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s16",
+      "reference": "I hadn't thought about it like that. So what's your team doing about it?",
+      "accept_variants": [
+        "I had not thought about it like that. So what is your team doing about it?",
+        "I hadn't thought about it like that. So what is your team doing about it?"
+      ],
+      "evidence": ["s16"],
+      "rationale_es": "*hadn't thought about it* se dice de un tirón."
+    },
+    {
+      "id": "q15",
+      "type": "dictation",
+      "phase": "post",
+      "focus": "decoding",
+      "prompt": "Write exactly what you hear.",
+      "segment": "s20",
+      "reference": "It did ten years ago. Our first test mission is planned for the year after next.",
+      "accept_variants": ["It did 10 years ago. Our first test mission is planned for the year after next."],
+      "evidence": ["s20"],
+      "rationale_es": "*for* es débil y *year after* se enlaza."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-09T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "about", "after", "ago", "alarming", "all", "an", "and", "anything", "arm", "around", "at",
+    "atmosphere", "bad", "ball", "basic", "be", "because", "become", "build", "burn", "business", "but", "by",
+    "can", "card", "care", "catch", "cause", "cautiously", "cheap", "clean", "coin", "collision", "company",
+    "compare", "could", "create", "crowded", "dangerous", "dead", "decade", "depend", "destroy", "difficult",
+    "do", "down", "else", "engineer", "even", "every", "everyone", "exactly", "fast", "feel", "few", "fiction",
+    "finally", "first", "flake", "for", "forecast", "from", "get", "good", "guest", "have", "here", "honestly",
+    "how", "i", "if", "in", "international", "involved", "it", "junk", "kilometer", "large", "let", "life",
+    "like", "long", "mess", "mission", "modern", "money", "more", "move", "much", "my", "navigation", "nearly",
+    "next", "no", "nobody", "not", "nothing", "object", "ocean", "of", "old", "on", "once", "optimistic", "or",
+    "orbit", "ordinary", "our", "paint", "part", "pay", "people", "piece", "plan", "political", "probably",
+    "problem", "pull", "purpose", "quickly", "ready", "real", "realize", "remove", "responsible", "robotic",
+    "rocket", "rubbish", "rule", "satellite", "say", "science", "second", "see", "should", "simply", "size",
+    "small", "so", "some", "somebody", "something", "sound", "space", "spacecraft", "speed", "start", "stuff",
+    "surprise", "team", "technical", "technology", "tend", "tennis", "test", "than", "thank", "thanks", "that",
+    "the", "them", "then", "there", "thing", "think", "this", "to", "today", "too", "track", "travel", "until",
+    "up", "us", "use", "very", "want", "we", "weather", "welcome", "what", "which", "who", "why", "with",
+    "within", "work", "would", "year", "you", "your"
+  ],
+  "difficulty": 1309,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7636, "A2": 0.8939, "B1": 0.9606, "B2": 0.9758, "C1": 0.9758, "C2": 1 },
+    "off_level_lemmas": ["alarming", "cautiously", "collision", "flake", "robotic", "spacecraft"],
+    "avg_sentence_words": 7.8,
+    "flesch_reading_ease": 75.1,
+    "checked_at": "2026-10-09T10:09:29.909Z"
+  },
+  "audio": {
+    "src": "audio/b2/b2-lis-002/v1.m4a",
+    "duration_s": 119.264,
+    "wpm": 165,
+    "provider": "kokoro",
+    "voices": { "chris": "am_puck", "helen": "bf_emma" },
+    "loudness_lufs": -16.3,
+    "peaks": [
+      0.9, 0.67, 0.67, 0.66, 0.47, 0.46, 0.45, 0.54, 0.58, 0.47, 0.19, 0.59, 0.52, 0.12, 0.77, 0.59, 0.51,
+      0.41, 0.14, 1, 1, 0.56, 0.83, 0.87, 0.42, 0.45, 0.56, 0.59, 0.46, 0.48, 0.36, 0.36, 0, 0.59, 0.39, 0.66,
+      0.37, 0.34, 0.38, 0.26, 0.81, 0.82, 0.81, 0.51, 0.52, 0.04, 0.56, 0.47, 0.2, 0.54, 0.59, 0.53, 0.53,
+      0.48, 0.37, 0.36, 0.54, 0.69, 0.66, 0.51, 0.4, 0.43, 0.42, 0.44, 0.11, 0.92, 0.63, 0.66, 0.47, 0.8, 0.62,
+      0.53, 0.42, 0.42, 0.44, 0.35, 0.34, 0.23, 0.77, 0.63, 0.43, 0.44, 0.28, 0.39, 0.35, 0.29, 0.86, 0.71,
+      0.41, 0.81, 0.2, 0.7, 0.47, 0.3, 1, 0.49, 0.49, 0.31, 0.4, 0.53, 0.4, 0.3, 0.52, 0.61, 0.71, 0.71, 0.45,
+      0.55, 0.39, 0.37, 0.42, 0.22, 0.42, 0.9, 0.61, 0.43, 0.56, 0.2, 0.53, 0.55, 0.32, 0.5, 0.23, 0.62, 0.49,
+      0.49, 0.45, 0.37, 0.43, 0.31, 0.15, 0.78, 0.79, 0.54, 0.72, 0.47, 0.36, 0.53, 0.03, 0.78, 0.65, 0.51,
+      0.44, 0.66, 0.49, 0.35, 0.47, 0.34, 0.64, 0.45, 0.53, 0.4, 0.52, 0.51, 0.5, 0.27, 0.36, 1, 0.71, 0.41,
+      0.59, 0.59, 0.35, 0.14, 0.61, 0.48, 0.51, 0.43, 0.39, 0.28, 0.39, 0.82, 0.91, 0.71, 0.34, 0.03, 0.85,
+      0.58, 0.38, 0.63, 0.6, 0.49, 0.53, 0.44, 0.37, 0.2, 0.57, 0.59, 0.67, 0.21, 0.67, 0.53, 0.4, 0.41, 0.4,
+      0.34, 0.34, 0.63, 0.78, 0.93, 0.62, 0.44, 0.39, 0.58, 0.62, 0.46, 0.33, 0.04, 0.62, 0.52, 0.59, 0.46,
+      0.52, 0.54, 0.45, 0.43, 0.99, 0.62, 0.02, 0.5, 0.32, 0.72, 0.56, 0.44, 0.33, 0.45, 0.4, 0.49, 0.32, 0.73,
+      0.46, 0.51, 0.44, 0.4, 0.54, 0.27, 0.69, 0.85, 0.47, 0.51
+    ]
+  }
+}
