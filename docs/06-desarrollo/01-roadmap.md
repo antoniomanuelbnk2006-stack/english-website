@@ -42,6 +42,8 @@ Además, las lecciones de escucha tienen ahora dos modos, a elegir al empezar: *
 
 **Writing (9 de octubre de 2026, a petición del dueño).** Se ha adelantado la parte de writing de la fase 6 (F-100 a F-106): 22 consignas de A1 a C2 con respuesta modelo; editor con contador, autoguardado local y modo examen; corrección con IA con límite diario y tope mensual; revisión sin IA ([ADR-0014](../adr/0014-writing-revision-sin-ia.md)); reescritura; errores al repaso; e historial con evolución por criterio. La corrección con IA se comprobó contra la API real con una llamada (14 s, 0,021 $; ver ADR-0014). **Pendiente de esa fase:** el conjunto dorado y `pnpm ai:eval`, que es lo que mide la calidad del prompt, y las pruebas de confirmación de nivel (F-083). Las fases 4 y 5 siguen sin empezar.
 
+**Más lecciones (9 de octubre de 2026, a petición del dueño).** 30 lecciones nuevas, tres escuchas y dos lecturas por nivel: cada nivel de A1 a C2 tiene ahora **4 escuchas y 3 lecturas** (42 lecciones en total). Son textos originales, pasan `content:validate` y están marcadas como revisadas por Claude, pendientes de la revisión del dueño. El audio es de Kokoro, como el del resto, con tiempos por palabra estimados.
+
 Decisiones tomadas por el camino que no estaban en el diseño original: [ADR-0011](../adr/0011-e2e-con-emulador-de-supabase.md) (tests contra un emulador de Supabase), la migración `0002` (`apply_reviews`), y los detalles anotados en [base de datos §3](../04-arquitectura/03-base-de-datos.md#3-notas-de-diseño), [gramática §2](../01-pedagogia/06-gramatica.md#2-formato-de-una-ficha) y [vocabulario §4](../01-pedagogia/05-vocabulario-y-srs.md#4-tu-léxico-personal).
 
 ---
