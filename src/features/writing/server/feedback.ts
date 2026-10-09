@@ -162,6 +162,19 @@ export async function requestFeedback(
 
 // ───────────── Modelo: la API de Claude ─────────────
 
+/**
+ * Deja en el registro del servidor por qué ha fallado una corrección: sin esto, un modelo mal
+ * escrito o una clave sin saldo solo se verían como «la IA no ha podido». Nunca incluye la
+ * clave ni el texto del usuario: solo el tipo de error, el código HTTP y el mensaje de la API.
+ */
+function logFailure(what: string, error?: unknown): void {
+  const status = (error as { status?: unknown } | undefined)?.status;
+  const detail = error instanceof Error ? `${error.name}: ${error.message}` : '';
+  console.error(
+    `[writing-feedback] ${what}${typeof status === 'number' ? ` (HTTP ${status})` : ''}${detail ? ` · ${detail.slice(0, 500)}` : ''}`,
+  );
+}
+
 /** Lo único del SDK que se usa: así un doble con este método basta para los tests. */
 export interface MessagesClient {
   messages: {
@@ -193,20 +206,25 @@ export function anthropicModel(client: MessagesClient, model: string): FeedbackM
           messages: [{ role: 'user', content: buildWritingUserMessage(task) }],
           output_config: { effort: 'medium', format: { type: format.type, schema: format.schema } },
         });
-      } catch {
+      } catch (error) {
+        logFailure('la llamada ha fallado', error);
         return { ok: false, reason: 'api', usage: null };
       }
 
       const usage: TokenUsage = message.usage;
       if (message.stop_reason === 'refusal') return { ok: false, reason: 'refusal', usage };
       if (message.stop_reason === 'max_tokens') return { ok: false, reason: 'max_tokens', usage };
-      if (message.stop_reason !== 'end_turn') return { ok: false, reason: 'api', usage };
+      if (message.stop_reason !== 'end_turn') {
+        logFailure(`stop_reason inesperado: ${message.stop_reason}`);
+        return { ok: false, reason: 'api', usage };
+      }
 
       const text = message.content.find((block) => block.type === 'text')?.text;
       if (text === undefined) return { ok: false, reason: 'api', usage };
       try {
         return { ok: true, output: format.parse(text), usage };
-      } catch {
+      } catch (error) {
+        logFailure('la respuesta no cumple el esquema', error);
         return { ok: false, reason: 'api', usage };
       }
     },

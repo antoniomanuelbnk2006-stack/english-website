@@ -28,7 +28,10 @@ const env = {
   // los tests nunca llaman a la API real ni gastan dinero.
   ANTHROPIC_API_KEY: 'e2e-key',
   ANTHROPIC_BASE_URL: `${E2E.emulatorUrl}/anthropic`,
+  // Fijos aquí para que un .env.local con otros valores no cambie lo que prueban los tests.
+  AI_WRITING_MODEL: 'claude-sonnet-5-5',
   AI_DAILY_LIMIT: '3',
+  AI_MONTHLY_BUDGET_USD: '5',
 };
 
 export default defineConfig({
