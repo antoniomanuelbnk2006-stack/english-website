@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { sentenceWithGap } from '@/features/use-of-english/lib/grade';
+import { lemmaKey, type DictionaryEntry } from '@/lib/content/dictionary-schema';
 import type { Lesson } from '@/lib/content/schema';
 import { fullAnswers, type UoeSet } from '@/lib/content/uoe-schema';
 
@@ -33,7 +34,8 @@ const WordContent = z.object({
   }),
   back: z.object({
     pos: z.string(),
-    def_en: z.string().min(1),
+    /** Las tarjetas del mazo de palabras solo llevan la traducción. */
+    def_en: z.string().min(1).optional(),
     def_es: z.string().min(1),
     example: z.string().optional(),
     note_es: z.string().optional(),
@@ -172,6 +174,22 @@ export function buildAudioCard(lesson: Lesson, segmentId: string): NewCard | nul
           explanation_es,
         })),
     },
+  };
+}
+
+/**
+ * Tarjeta de una palabra del mazo por nivel: delante, su frase de ejemplo con la palabra
+ * resaltada; detrás, la traducción.
+ */
+export function buildDictionaryCard(entry: DictionaryEntry): NewCard {
+  const key = lemmaKey(entry.lemma);
+  return {
+    kind: kindOfEntry({ lemma: entry.lemma, pos: entry.pos[0] ?? '' }),
+    lemma: key,
+    source_lesson_id: null,
+    source_segment_id: `dict:${key}`,
+    front: { sentence: entry.example, surface: entry.surface },
+    back: { pos: entry.pos.join(', '), def_es: entry.es },
   };
 }
 

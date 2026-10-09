@@ -1,0 +1,160 @@
+import { Circle, CircleCheck, Mic, type LucideIcon } from 'lucide-react';
+import type { Metadata, Route } from 'next';
+import Link from 'next/link';
+import { buttonVariants } from '@/components/ui/button';
+import { EmptyState, PageContainer, PageHeader } from '@/components/ui/page';
+import { Chip, Panel } from '@/components/ui/panel';
+import { CEFR_LEVELS } from '@/features/level/lib/bands';
+import { toPercent } from '@/features/lessons/lib/summary';
+import { getProgressByLesson } from '@/features/lessons/server/queries';
+import { getUserLevel } from '@/features/lexicon/server/queries';
+import { getPronunciationIndex } from '@/lib/content/pronunciation';
+import { getT } from '@/lib/i18n/server';
+import { cn } from '@/lib/utils';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return { title: (await getT())('nav.pronunciation') };
+}
+
+const ALL = 'todos';
+const first = (value: string | string[] | undefined) => (Array.isArray(value) ? value[0] : value);
+
+export default async function PronunciationPage({ searchParams }: PageProps<'/pronunciar'>) {
+  const [params, t, userLevel, progress] = await Promise.all([
+    searchParams,
+    getT(),
+    getUserLevel(),
+    getProgressByLesson(),
+  ]);
+  const all = getPronunciationIndex();
+
+  // Sin nivel en la URL se enseña el del usuario; «Todos» lo quita.
+  const requested = first(params.nivel);
+  const level = CEFR_LEVELS.find((l) => l === requested) ?? (requested === ALL ? null : userLevel);
+  const levels = CEFR_LEVELS.filter((l) => all.some((set) => set.level === l));
+  const visible = level ? all.filter((set) => set.level === level) : all;
+  const done = visible.filter((set) => progress.get(set.id)?.status === 'completed').length;
+
+  const chip = (key: string, text: string, active: boolean, query: Record<string, string>) => (
+    <li key={key}>
+      <Link
+        href={{ pathname: '/pronunciar', query }}
+        aria-current={active ? 'true' : undefined}
+        className={cn(
+          'flex h-8 items-center rounded-full border px-3 text-sm transition-colors duration-150 pointer-coarse:h-11',
+          active
+            ? 'border-accent bg-surface-2 font-medium text-accent'
+            : 'border-border text-muted hover:border-subtle hover:text-text',
+        )}
+      >
+        {text}
+      </Link>
+    </li>
+  );
+
+  return (
+    <PageContainer>
+      <PageHeader
+        title={t('nav.pronunciation')}
+        subtitle={t('pronunciation.subtitle')}
+        actions={
+          <Link href="/pronunciar/libre" className={buttonVariants({ variant: 'secondary' })}>
+            <Mic aria-hidden="true" className="size-4" strokeWidth={1.75} />
+            {t('pronunciation.freeTitle')}
+          </Link>
+        }
+      />
+
+      <Panel className="flex flex-col gap-2 text-sm text-muted">
+        <p>{t('pronunciation.howItWorks')}</p>
+        <p>{t('pronunciation.privacy')}</p>
+      </Panel>
+
+      {all.length === 0 ? (
+        <EmptyState icon={Mic} title={t('pronunciation.emptyTitle')}>
+          {t('pronunciation.emptyBody')}
+        </EmptyState>
+      ) : (
+        <>
+          <nav
+            aria-label={t('library.filtersLabel')}
+            className="flex flex-wrap items-center gap-2 rounded-panel border border-border bg-surface p-3"
+          >
+            <span className="w-14 shrink-0 text-xs text-muted">{t('library.level')}</span>
+            <ul className="flex flex-wrap gap-1.5">
+              {chip('all', t('library.all'), level === null, { nivel: ALL })}
+              {levels.map((l) => chip(l, l, level === l, l === userLevel ? {} : { nivel: l }))}
+            </ul>
+            <span className="hud ml-auto text-xs text-muted">
+              {t('library.seriesProgress', { done, total: visible.length })}
+            </span>
+          </nav>
+
+          {visible.length === 0 ? (
+            <EmptyState
+              icon={Mic}
+              title={t('library.noLevelTitle', { level: level ?? userLevel })}
+              action={
+                <Link
+                  href={{ pathname: '/pronunciar', query: { nivel: ALL } }}
+                  className={buttonVariants({ variant: 'secondary' })}
+                >
+                  {t('library.seeAllLevels')}
+                </Link>
+              }
+            >
+              {t('library.noLevelBody')}
+            </EmptyState>
+          ) : (
+            <ul className="grid gap-3 sm:grid-cols-2">
+              {visible.map((set) => {
+                const own = progress.get(set.id);
+                const finished = own?.status === 'completed';
+                const Icon: LucideIcon = finished ? CircleCheck : Circle;
+                return (
+                  <li key={set.id}>
+                    <Link
+                      href={`/pronunciar/${set.id}` as Route}
+                      className="flex h-full flex-col gap-3 rounded-panel border border-border bg-surface p-4 transition-colors duration-150 hover:border-subtle"
+                    >
+                      <div className="flex items-start justify-between gap-3">
+                        <h2 lang="en" className="text-lg leading-snug font-medium">
+                          {set.title}
+                        </h2>
+                        <span
+                          className={cn(
+                            'flex shrink-0 items-center gap-1.5 text-xs',
+                            finished ? 'text-success' : 'text-muted',
+                          )}
+                        >
+                          <Icon aria-hidden="true" className="size-4" strokeWidth={1.75} />
+                          {t(finished ? 'lesson.statusDone' : 'lesson.statusNew')}
+                        </span>
+                      </div>
+                      <p className="text-sm text-muted">{set.summary_es}</p>
+                      <div className="mt-auto flex flex-wrap items-center gap-1.5">
+                        <Chip className="hud">{set.level}</Chip>
+                        {set.sounds.length > 0 ? (
+                          <Chip className="hud" lang="en">
+                            /{set.sounds.join('/ · /')}/
+                          </Chip>
+                        ) : null}
+                        <Chip className="hud">{t('pronunciation.items', { n: set.items })}</Chip>
+                        <Chip className="hud">{t('lesson.minutes', { n: set.est_minutes })}</Chip>
+                      </div>
+                      {own?.bestScore != null && finished ? (
+                        <p className="hud text-xs text-muted">
+                          {t('lesson.bestScore', { pct: toPercent(own.bestScore) })}
+                        </p>
+                      ) : null}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </>
+      )}
+    </PageContainer>
+  );
+}

@@ -5,7 +5,9 @@ import {
   ChartNoAxesColumn,
   GraduationCap,
   Headphones,
+  Languages,
   Layers,
+  Mic,
   NotebookPen,
   PencilRuler,
   PenLine,
@@ -32,9 +34,11 @@ export const PRIMARY_NAV: NavItem[] = [
 /** Lo que en móvil queda bajo «Más» y en escritorio completa la barra lateral. */
 export const SECONDARY_NAV: NavItem[] = [
   { href: '/vocabulario', label: 'nav.vocabulary', icon: BookA },
+  { href: '/palabras', label: 'nav.words', icon: Languages },
   { href: '/gramatica', label: 'nav.grammar', icon: PencilRuler },
   { href: '/use-of-english', label: 'nav.useOfEnglish', icon: GraduationCap },
   { href: '/escribir', label: 'nav.write', icon: PenLine },
+  { href: '/pronunciar', label: 'nav.pronunciation', icon: Mic },
   { href: '/progreso', label: 'nav.progress', icon: ChartNoAxesColumn },
   { href: '/diario', label: 'nav.journal', icon: NotebookPen },
   { href: '/ajustes', label: 'nav.settings', icon: Settings },

@@ -8,7 +8,15 @@
 // El audio de prueba vive aparte del real: su caché en .e2e/audio-cache y sus ficheros en
 // public/dev-audio/e2e (la app de los tests usa NEXT_PUBLIC_AUDIO_BASE_URL=/dev-audio/e2e).
 import { execFileSync } from 'node:child_process';
-import { cpSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import {
+  cpSync,
+  mkdirSync,
+  readdirSync,
+  readFileSync,
+  rmSync,
+  statSync,
+  writeFileSync,
+} from 'node:fs';
 import path from 'node:path';
 
 const ROOT = process.cwd();
@@ -18,6 +26,22 @@ const LISTENING = 'b1-lis-001';
 const LESSONS = new Set(['b1-rea-001', LISTENING]);
 const USE_OF_ENGLISH = new Set(['b2-uoe-001', 'b2-uoe-002', 'b2-uoe-003', 'b2-uoe-004']);
 const WRITING = new Set(['a1-wri-001', 'b1-wri-001', 'b1-wri-004', 'b2-wri-001', 'b2-wri-005']);
+const PRONUNCIATION = new Set(['a1-pro-001', 'b1-pro-002']);
+
+/** Mazo de palabras de prueba: pequeño y fijo, con y sin frecuencia para probar el orden. */
+const DICTIONARY = {
+  b1: [
+    ['achieve', 'verb', 'lograr, conseguir', 'She worked hard to achieve her goal.', 500],
+    ['advice', 'noun', 'consejo', 'Can you give me some advice?', 900],
+    ['although', 'conjunction', 'aunque', 'Although it rained, we went out.', null],
+    ['attend', 'verb', 'asistir a', 'Did you attend the meeting?', null],
+    ['avoid', 'verb', 'evitar', 'Try to avoid the city centre.', 700],
+  ],
+  b2: [
+    ['absurd', 'adjective', 'absurdo', 'What an absurd idea!', null],
+    ['acid', 'noun', 'ácido', 'Lemon juice contains acid.', null],
+  ],
+} as const;
 
 const env = {
   ...process.env,
@@ -61,6 +85,28 @@ cpSync(path.join(ROOT, 'content'), FIXTURE_DIR, { recursive: true });
 keepOnly(path.join(FIXTURE_DIR, 'lessons'), LESSONS);
 keepOnly(path.join(FIXTURE_DIR, 'use-of-english'), USE_OF_ENGLISH);
 keepOnly(path.join(FIXTURE_DIR, 'writing'), WRITING);
+keepOnly(path.join(FIXTURE_DIR, 'pronunciation'), PRONUNCIATION);
+
+rmSync(path.join(FIXTURE_DIR, 'dictionary'), { recursive: true, force: true });
+mkdirSync(path.join(FIXTURE_DIR, 'dictionary'), { recursive: true });
+for (const [level, words] of Object.entries(DICTIONARY)) {
+  const entries = words.map(([lemma, pos, es, example, rank]) => {
+    // La palabra tal como está en la frase («Although» a principio de frase).
+    const at = example.toLowerCase().indexOf(lemma);
+    return {
+      lemma,
+      pos: [pos],
+      es,
+      example,
+      surface: example.slice(at, at + lemma.length),
+      ...(rank ? { rank } : {}),
+    };
+  });
+  writeFileSync(
+    path.join(FIXTURE_DIR, 'dictionary', `${level}.json`),
+    `${JSON.stringify({ level: level.toUpperCase(), entries }, null, 2)}\n`,
+  );
+}
 
 const file = path.join(FIXTURE_DIR, 'lessons', 'b1', 'listening', `${LISTENING}.json`);
 type Fixture = {

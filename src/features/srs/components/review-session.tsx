@@ -346,11 +346,17 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
     );
     back = (
       <>
-        <p lang="en">{content.back.def_en}</p>
-        <details className="text-muted">
-          <summary className="cursor-pointer py-1 text-sm">{t('review.translation')}</summary>
-          <p className="mt-1">{content.back.def_es}</p>
-        </details>
+        {content.back.def_en ? (
+          <>
+            <p lang="en">{content.back.def_en}</p>
+            <details className="text-muted">
+              <summary className="cursor-pointer py-1 text-sm">{t('review.translation')}</summary>
+              <p className="mt-1">{content.back.def_es}</p>
+            </details>
+          </>
+        ) : (
+          <p>{content.back.def_es}</p>
+        )}
         {content.back.example ? (
           <p lang="en" className="reading-md border-l-2 border-border pl-3 text-muted">
             {content.back.example}

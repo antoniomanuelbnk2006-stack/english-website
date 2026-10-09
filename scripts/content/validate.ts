@@ -7,14 +7,19 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { parseArgs } from 'node:util';
 import { z } from 'zod';
+import { checkDictionaryFile, DictionaryFile, lemmaKey } from '../../src/lib/content/dictionary-schema';
 import { checkFicha, parseFicha } from '../../src/lib/content/grammar-schema';
+import {
+  checkPronunciationSet,
+  PronunciationSet,
+} from '../../src/lib/content/pronunciation-schema';
 import { LessonMeta } from '../../src/lib/content/schema';
 import { reviewText } from '../../src/features/writing/lib/checks';
 import { checkUoeSet, UoeSet } from '../../src/lib/content/uoe-schema';
 import { checkWritingPrompt, WritingPrompt } from '../../src/lib/content/writing-schema';
 import { checkLesson } from './lib/check-lesson';
 import { CONTENT_DIR, INDEX_FILE, listLessonFiles, readJson } from './lib/io';
-import { loadWordLists } from './lib/wordlists';
+import { loadWordLists, type WordLists } from './lib/wordlists';
 
 /** Contenido de un fichero en otra referencia de git, o `undefined` si allí no existe. */
 function atRef(ref: string, repoPath: string): unknown {
@@ -173,6 +178,90 @@ function checkWriting(): { count: number; errors: number } {
   return { count, errors };
 }
 
+const describe = (error: unknown): string =>
+  error instanceof z.ZodError
+    ? error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join(' · ')
+    : error instanceof Error
+      ? error.message
+      : String(error);
+
+/** Ejercicios de pronunciación: esquema, id coherente con el nivel e ítems sin repetir. */
+function checkPronunciation(): { count: number; errors: number } {
+  const root = path.join(CONTENT_DIR, 'pronunciation');
+  if (!existsSync(root)) return { count: 0, errors: 0 };
+  let count = 0;
+  let errors = 0;
+  for (const level of readdirSync(root).sort()) {
+    for (const file of readdirSync(path.join(root, level)).sort()) {
+      if (!file.endsWith('.json')) continue;
+      count++;
+      const id = file.slice(0, -'.json'.length);
+      const issues: string[] = [];
+      let status = '?';
+      try {
+        const set = PronunciationSet.parse(
+          JSON.parse(readFileSync(path.join(root, level, file), 'utf8')),
+        );
+        status = set.status;
+        if (set.id !== id) issues.push(`el id ${set.id} no coincide con el fichero`);
+        if (set.level.toLowerCase() !== level) issues.push(`está en la carpeta de otro nivel`);
+        issues.push(...checkPronunciationSet(set));
+      } catch (error) {
+        issues.push(describe(error));
+      }
+      console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (pronunciación · ${status})`);
+      for (const message of issues) console.log(`    ✗ ${message}`);
+      errors += issues.length;
+    }
+  }
+  return { count, errors };
+}
+
+/**
+ * Mazo de palabras por nivel: esquema, sin repetidas, el ejemplo contiene la palabra y cada
+ * palabra está en las listas abiertas de las que sale el mazo.
+ */
+function checkDictionary(lists: WordLists): { count: number; errors: number } {
+  const root = path.join(CONTENT_DIR, 'dictionary');
+  if (!existsSync(root)) return { count: 0, errors: 0 };
+  let count = 0;
+  let errors = 0;
+  const seen = new Map<string, string>();
+  for (const file of readdirSync(root).sort()) {
+    if (!file.endsWith('.json')) continue;
+    const issues: string[] = [];
+    let size = 0;
+    try {
+      const dictionary = DictionaryFile.parse(
+        JSON.parse(readFileSync(path.join(root, file), 'utf8')),
+      );
+      size = dictionary.entries.length;
+      if (`${dictionary.level.toLowerCase()}.json` !== file) {
+        issues.push(`el nivel ${dictionary.level} no coincide con el fichero`);
+      }
+      issues.push(...checkDictionaryFile(dictionary));
+      for (const entry of dictionary.entries) {
+        const key = lemmaKey(entry.lemma);
+        const other = seen.get(key);
+        if (other) issues.push(`«${entry.lemma}» ya está en ${other}`);
+        seen.set(key, file);
+        // Las listas del pipeline solo guardan palabras sueltas; las expresiones no se comprueban.
+        if (!key.includes(' ') && !lists.levels.has(key)) {
+          issues.push(`«${entry.lemma}» no está en las listas`);
+        }
+      }
+    } catch (error) {
+      issues.push(describe(error));
+    }
+    count += size;
+    console.log(`${issues.length > 0 ? '✗' : '✓'} ${file}  (palabras · ${size})`);
+    for (const message of issues.slice(0, 20)) console.log(`    ✗ ${message}`);
+    if (issues.length > 20) console.log(`    ✗ … y ${issues.length - 20} más`);
+    errors += issues.length;
+  }
+  return { count, errors };
+}
+
 async function main(): Promise<number> {
   const { values } = parseArgs({
     options: {
@@ -247,9 +336,13 @@ async function main(): Promise<number> {
   errorCount += uoe.errors;
   const writing = checkWriting();
   errorCount += writing.errors;
+  const pronunciation = checkPronunciation();
+  errorCount += pronunciation.errors;
+  const dictionary = checkDictionary(lists);
+  errorCount += dictionary.errors;
 
   console.log(
-    `\n${files.length} lección(es): ${published.length} publicada(s) · ${fichas.count} ficha(s) de gramática · ${uoe.count} ejercicio(s) de Use of English · ${writing.count} consigna(s) de writing · ${errorCount} error(es) · ${warningCount} aviso(s).`,
+    `\n${files.length} lección(es): ${published.length} publicada(s) · ${fichas.count} ficha(s) de gramática · ${uoe.count} ejercicio(s) de Use of English · ${writing.count} consigna(s) de writing · ${pronunciation.count} ejercicio(s) de pronunciación · ${dictionary.count} palabra(s) del mazo · ${errorCount} error(es) · ${warningCount} aviso(s).`,
   );
   return errorCount > 0 ? 1 : 0;
 }
