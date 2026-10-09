@@ -21,8 +21,10 @@ export type ClientEnv = z.infer<typeof ClientEnv>;
 
 export const ServerEnv = ClientEnv.extend({
   ALLOWED_EMAIL: z.string().trim().toLowerCase().pipe(z.email()),
-  // Obligatoria desde la fase 6 (feedback de writing); hasta entonces la app arranca sin ella.
+  // Sin ella la app funciona igual, pero el writing solo ofrece la revisión sin IA (ADR-0014).
   ANTHROPIC_API_KEY: z.string().min(1).optional(),
+  // Solo para tests (un doble de la API) o un proxy propio; por defecto, la API de Anthropic.
+  ANTHROPIC_BASE_URL: z.url().optional(),
   AI_WRITING_MODEL: z.string().min(1).default('claude-sonnet-5-5'),
   AI_DAILY_LIMIT: z.coerce.number().int().positive().default(10),
   AI_MONTHLY_BUDGET_USD: z.coerce.number().positive().default(5),

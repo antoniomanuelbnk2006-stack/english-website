@@ -581,15 +581,19 @@ export type Database = {
       };
       writing_submissions: {
         Row: {
+          active_seconds: number;
           cost_usd: number;
           created_at: string;
+          exam_mode: boolean;
           feedback: Json | null;
           id: string;
           input_tokens: number | null;
           model: string | null;
           output_tokens: number | null;
           prompt_id: string | null;
+          review_kind: string;
           rewrite_text: string | null;
+          rewritten_at: string | null;
           status: string;
           target_level: Database['public']['Enums']['cefr'];
           task_type: string;
@@ -598,15 +602,19 @@ export type Database = {
           word_count: number;
         };
         Insert: {
+          active_seconds?: number;
           cost_usd?: number;
           created_at?: string;
+          exam_mode?: boolean;
           feedback?: Json | null;
           id?: string;
           input_tokens?: number | null;
           model?: string | null;
           output_tokens?: number | null;
           prompt_id?: string | null;
+          review_kind?: string;
           rewrite_text?: string | null;
+          rewritten_at?: string | null;
           status?: string;
           target_level: Database['public']['Enums']['cefr'];
           task_type: string;
@@ -615,15 +623,19 @@ export type Database = {
           word_count: number;
         };
         Update: {
+          active_seconds?: number;
           cost_usd?: number;
           created_at?: string;
+          exam_mode?: boolean;
           feedback?: Json | null;
           id?: string;
           input_tokens?: number | null;
           model?: string | null;
           output_tokens?: number | null;
           prompt_id?: string | null;
+          review_kind?: string;
           rewrite_text?: string | null;
+          rewritten_at?: string | null;
           status?: string;
           target_level?: Database['public']['Enums']['cefr'];
           task_type?: string;
