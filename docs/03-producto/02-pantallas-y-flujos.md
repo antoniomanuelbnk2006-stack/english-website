@@ -21,6 +21,8 @@ La interfaz está **en español** por defecto (rutas incluidas); el contenido de
 | `/leer/extensiva/[id]` | Lector extensivo por capítulos | 4 |
 | `/repasar` | Sesión de repaso SRS | 3 |
 | `/vocabulario` | Tu léxico (buscar, filtrar, editar estado) | 3 |
+| `/palabras` · `/palabras/estudiar` | Mazo de palabras por nivel y tandas de estudio | 8 (adelantada) |
+| `/pronunciar` · `/pronunciar/[id]` · `/pronunciar/libre` | Ejercicios de pronunciación y práctica libre | 8 (adelantada) |
 | `/gramatica` · `/gramatica/[id]` | Índice y fichas | 3 |
 | `/use-of-english` · `/use-of-english/[id]` | Ejercicios con formato de examen, por nivel y por parte | 3 |
 | `/entrenar/[drill]` | Drills sueltos (formas débiles, números…) | 2 |
@@ -32,7 +34,7 @@ La interfaz está **en español** por defecto (rutas incluidas); el contenido de
 | `/ajustes` | Perfil, objetivos, apariencia, datos | 0–1 |
 | `/studio/*` | Revisión de contenido (**solo en desarrollo**) | 4 |
 
-**Navegación:** en móvil, barra inferior con 5 entradas: **Hoy · Escuchar · Leer · Repasar · Más** (Más = vocabulario, gramática, escribir, progreso, diario, ajustes). En escritorio, barra lateral con todas.
+**Navegación:** en móvil, barra inferior con 5 entradas: **Hoy · Escuchar · Leer · Repasar · Más** (Más = vocabulario, palabras, gramática, pronunciación, escribir, progreso, diario, ajustes). En escritorio, barra lateral con todas.
 
 ---
 
@@ -135,6 +137,17 @@ La interfaz está **en español** por defecto (rutas incluidas); el contenido de
 
 ### 2.6 Vocabulario (`/vocabulario`)
 Tabla filtrable de tu léxico: lema, nivel MCER, estado, veces visto, próxima revisión, fuente. Acciones masivas (marcar como conocidas, ignorar).
+
+### 2.6 bis Palabras (`/palabras`, `/palabras/estudiar`)
+El vocabulario de cada nivel, con traducción y frase de ejemplo ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)).
+- **Lista:** niveles con su número de palabras (por defecto, el elegido), barra con cuántas conoces y cuántas tienes en repaso, búsqueda en inglés o en español y filtro por estado. En cada palabra: escucharla, practicar su pronunciación, «Al repaso» y «Ya la sé».
+- **Estudiar:** tandas de 12 palabras por aprender, de la más frecuente a la menos. Palabra → «Ver la traducción» → *No la sabía: al repaso* (1) · *La sabía* (2) · *No me interesa* (3). Cada respuesta se guarda al darla.
+
+### 2.6 ter Pronunciación (`/pronunciar`, `/pronunciar/[id]`, `/pronunciar/libre`)
+- **Biblioteca:** ejercicios del nivel del usuario, cada uno sobre un sonido o un problema típico de hispanohablantes, con su mejor nota.
+- **Ejercicio:** explicación de cómo se hace el sonido y, una a una, las palabras y frases: transcripción, traducción, «Escuchar» y «Despacio» (voz del navegador, británica o americana) y «Hablar». El resultado dice si se ha entendido, marca palabra por palabra en las frases, enseña lo que oyó y, si es una confusión típica, el consejo. Se puede repetir o saltar; al terminar, resumen por ítem.
+- **Práctica libre:** lo mismo con cualquier texto; se llega también desde cada palabra del mazo. No se guarda.
+- Sin reconocimiento de voz (Firefox) se explica y se deja escuchar el modelo.
 
 ### 2.7 Escribir (`/escribir`, `/escribir/[id]`, `/escribir/historial`)
 - **Biblioteca (`/escribir`):** consignas del nivel del usuario (filtro por nivel en la URL), writings de la semana y correcciones con IA usadas hoy.

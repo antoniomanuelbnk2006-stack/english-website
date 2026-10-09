@@ -29,3 +29,5 @@ Source: newgeneralservicelist.com (retrieved 2026-10-08).
 ## Ficheros derivados
 
 `levels.generated.json` (lema → nivel) se genera a partir de las tres listas anteriores y se distribuye bajo CC BY-SA 4.0.
+
+`content/dictionary/{nivel}.json` (el mazo de palabras) toma de las listas CEFR-J y Octanove **qué palabras hay en cada nivel y su categoría**, y de la NGSL su posición por frecuencia. Las traducciones al español y las frases de ejemplo son originales de Señal. El conjunto se distribuye bajo CC BY-SA 4.0, citando las tres fuentes; la app las cita al pie de la pantalla «Palabras».

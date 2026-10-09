@@ -72,6 +72,7 @@
 | F-065 | Cobertura por texto («para ti: 96 %») | M | 3 |
 | F-066 | Optimización de parámetros FSRS con tu historial | C | 8 |
 | F-067 | Tarjetas de producción (ES→EN) opcionales | C | 8 |
+| F-068 | Mazo de palabras por nivel (A1–C2) con traducción y ejemplo: explorar, estudiar en tandas y mandar al repaso ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)) | S | 8 (adelantada) |
 
 ## 6. Nivel y plan
 
@@ -95,6 +96,14 @@
 | F-104 | Historial y evolución por criterio | S | 6 |
 | F-105 | Errores recurrentes al SRS | S | 6 |
 | F-106 | Revisión sin IA: comprobaciones automáticas, respuesta modelo y autoevaluación ([ADR-0014](../adr/0014-writing-revision-sin-ia.md)) | S | 6 |
+
+## 7 bis. Speaking
+
+| ID | Funcionalidad | Prioridad | Fase |
+|---|---|---|---|
+| F-110 | Pronunciación con el reconocimiento de voz del navegador: ejercicios por sonido con consejos para las confusiones típicas ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)) | S | 8 (adelantada) |
+| F-111 | Práctica libre de pronunciación con cualquier palabra o frase | S | 8 (adelantada) |
+| F-112 | Evaluación de pronunciación por sonidos (Azure) | C | 8 |
 
 ## 8. Motivación
 

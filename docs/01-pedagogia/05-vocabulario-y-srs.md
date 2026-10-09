@@ -100,6 +100,8 @@ tokens_conocidos = tokens contables cuyo lema está en known, o es palabra grama
 | `grammar` | Frase con hueco o elección (*If I ___ known…*) | Respuesta + regla en una línea + enlace a la ficha | Automática (correcta/incorrecta → Good/Again) |
 | `production` (opcional) | Traducción española + pista | Frase en inglés | Manual. Solo para las ~1.000 palabras más frecuentes |
 
+Las tarjetas `word` y `chunk` que salen del **mazo de palabras** ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)) llevan delante la frase de ejemplo de su entrada, no una frase de lección, y detrás solo la traducción.
+
 ### Valoración automática de tarjetas de audio
 
 | Precisión del dictado | Valoración sugerida |
@@ -113,9 +115,9 @@ Siempre se puede cambiar con un toque antes de pasar a la siguiente.
 
 ### Reglas de diseño de tarjetas
 
-1. **Siempre con contexto**: la frase real donde la encontraste (minería de frases).
+1. **Siempre con contexto**: la frase real donde la encontraste (minería de frases). Las del mazo de palabras usan la frase de ejemplo de la entrada.
 2. **Audio en todas** (de la lección o TTS de la frase).
-3. **Definición en inglés fácil primero**, traducción después (plegada).
+3. **Definición en inglés fácil primero**, traducción después (plegada). Las del mazo de palabras solo tienen traducción.
 4. Una tarjeta = un concepto. Nada de tarjetas con cinco acepciones.
 
 ---
@@ -130,6 +132,10 @@ No todo lo desconocido merece una tarjeta. Prioridad al cosechar:
 4. Palabras raras o técnicas → **solo glosario**, sin tarjeta (salvo que las añadas a mano).
 
 Límite: 5 tarjetas nuevas por lección de escucha y 8 por texto; el resto queda como sugerencia.
+
+### El mazo de palabras
+
+Además de cosechar lo que sale en las lecciones, se puede estudiar directamente el vocabulario de cada nivel ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)): las ~8.650 palabras de las listas de §3, cada una con traducción y frase de ejemplo. El mazo **no memoriza nada por sí mismo**: sirve para decidir qué entra en el SRS. En cada tanda (12 palabras, primero las más frecuentes) dices si ya sabías la palabra (pasa a `known`, `source = 'manual'`), si no (se crea su tarjeta y queda en `learning`) o si no te interesa (`ignored`). Es la manera rápida de poner al día el léxico personal sin esperar al test de nivel.
 
 ---
 

@@ -83,6 +83,13 @@ En la v1 el speaking se limita a lo que **ayuda al listening** y no cuesta diner
 ### 3.2 Lectura en voz alta (v1)
 - Lees un párrafo de un texto ya trabajado; la app te deja escucharte junto al audio de referencia.
 
+### 3.2 bis Pronunciación con el reconocimiento de voz (adelantada)
+A petición del dueño ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)), hay una sección de pronunciación antes que el *shadowing*:
+- **Ejercicios por sonido**, uno por cada problema típico de quien habla español ([errores](09-errores-hispanohablantes.md)): /ɪ/–/iː/, «s» + consonante, /h/, /b/–/v/, *-ed*, las tres «aes», /ʃ/–/tʃ/–/dʒ/, *th*, consonantes finales, sílabas que desaparecen, /s/–/z/, formas débiles, letras mudas, /ɜː/, acento léxico y trabalenguas. Cada uno explica cómo se hace el sonido y mezcla **palabras sueltas** (pares mínimos) y **frases**.
+- Escuchas el modelo (voz del navegador), hablas y el **reconocimiento de voz del navegador** dice qué ha entendido. No puntúa sonidos: comprueba si se te entiende. Cuando lo que oye es la otra palabra del par (*sheep* por *ship*), da el consejo concreto.
+- **Práctica libre** con cualquier palabra o frase.
+- El resultado se guarda para ver tu progreso, pero **no mueve el nivel ni da XP**: el reconocedor se equivoca, sobre todo con palabras muy cortas.
+
 ### 3.3 Respuesta oral con feedback (fase 8+)
 - Respondes oralmente a una pregunta; la transcripción se obtiene con la Web Speech API del navegador o con Azure Speech (capa gratuita con horas limitadas) y pasa por el mismo flujo de feedback que el writing (adaptado al habla).
 - **Evaluación de pronunciación** opcional con Azure (precisión, fluidez, completitud por palabra), dentro de la capa gratuita.

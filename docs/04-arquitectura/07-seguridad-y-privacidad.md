@@ -141,6 +141,7 @@ Aunque el único interesado seas tú:
 - **Exportar y borrar:** desde Ajustes (JSON completo y borrado de la cuenta con cascada).
 - **Sentry (si lo usas):** sin IP ni cuerpos de petición; filtrado de PII activado.
 - **Grabaciones de voz** (*shadowing*): solo en el dispositivo, caducan a los 7 días.
+- **Pronunciación:** el audio del micrófono **no pasa por Señal**. Lo procesa el servicio de reconocimiento de voz del navegador (Google en Chrome, Microsoft en Edge) y la app solo recibe el texto reconocido, del que guarda la mejor hipótesis de cada ítem. El micrófono se abre solo al pulsar «Hablar» y se avisa en la pantalla ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)). `Permissions-Policy` limita el micrófono al propio origen.
 
 ---
 

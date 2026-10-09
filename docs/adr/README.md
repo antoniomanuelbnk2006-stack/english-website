@@ -18,6 +18,7 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0012](0012-use-of-english-y-nivel-declarado.md) | Sección «Use of English» con formato de examen y nivel elegido por el usuario | Aceptada |
 | [0013](0013-escucha-con-transcripcion.md) | Modo «con transcripción» en las lecciones de escucha | Aceptada |
 | [0014](0014-writing-revision-sin-ia.md) | Writing: revisión sin IA, respuesta modelo y detalles de la corrección con IA | Aceptada |
+| [0015](0015-mazo-de-palabras-y-pronunciacion.md) | Mazo de palabras por nivel y pronunciación con el reconocimiento de voz del navegador | Aceptada |
 
 Plantilla:
 
