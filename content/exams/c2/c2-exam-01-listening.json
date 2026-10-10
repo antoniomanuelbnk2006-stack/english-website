@@ -1,0 +1,572 @@
+{
+  "id": "c2-exam-01-listening",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "paper": "listening",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "You will hear three different extracts. For questions 1–6, choose the answer (A, B or C) which fits best according to what you hear. There are two questions for each extract.",
+      "groups": [
+        {
+          "context": "Extract One. You hear a woman talking about learning to restore old furniture.",
+          "recording": {
+            "id": "r01",
+            "speakers": [
+              { "id": "woman", "name": "Woman", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "woman",
+                "text": "I'd love to say there was some romantic reason. A grandfather who was a cabinet-maker, that sort of thing. There wasn't. I spend my working week in litigation, where nothing is ever finished, and every victory is provisional. I wanted, quite simply, to do something that had an end. You take a chair that wobbles, and after a month, it doesn't."
+              },
+              {
+                "speaker": "woman",
+                "text": "People assume it must have taught me patience, and I suppose it has, though I was never short of that. What I didn't expect was to learn when to leave things alone. A beginner wants to make everything perfect, to sand out every mark."
+              },
+              {
+                "speaker": "woman",
+                "text": "My tutor used to say that a scratch made in eighteen twenty has more right to be there than you do. It took me years to see that she wasn't just talking about furniture."
+              }
+            ],
+            "audio": { "src": "audio/exams/c2/c2-exam-01-listening/v1/r01.m4a", "duration_s": 37.392 }
+          },
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "What first attracted the woman to restoring furniture?",
+              "options": [
+                "the contrast it offered with her professional life", "the prospect of earning money from it",
+                "a family connection with the craft"
+              ],
+              "answer": 0,
+              "explanation_es": "En su trabajo de abogada nada se termina nunca; quería hacer algo «that had an end». Lo del abuelo ebanista lo niega expresamente."
+            },
+            {
+              "n": 2,
+              "prompt": "What does she say the work has taught her?",
+              "options": ["to be more patient than she was", "to respect imperfection", "to finish what she starts"],
+              "answer": 1,
+              "explanation_es": "«To learn when to leave things alone»: un arañazo de 1820 tiene más derecho a estar ahí que tú. Paciencia ya tenía."
+            }
+          ]
+        },
+        {
+          "context": "Extract Two. You hear two academics discussing the system by which research papers are reviewed before publication.",
+          "recording": {
+            "id": "r02",
+            "speakers": [
+              { "id": "man", "name": "Man", "accent": "en-GB", "gender": "male" },
+              { "id": "woman", "name": "Woman", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "man",
+                "text": "My real quarrel with peer review isn't that it's slow, though it is, or that we all do it for nothing, though we do. It's that it's conservative by design."
+              },
+              {
+                "speaker": "man",
+                "text": "You send a genuinely odd idea to three established figures in the field, and what do you expect them to say? They're the people whose life's work it contradicts."
+              },
+              {
+                "speaker": "woman",
+                "text": "I don't dispute that for a moment. I've had papers come back with comments that amounted to, this isn't how we do things."
+              },
+              {
+                "speaker": "woman",
+                "text": "But I've yet to hear a proposal for replacing it that doesn't simply swap one set of gatekeepers for another. Open review, public comment, all of that. In practice, it rewards whoever shouts loudest. I'd take a flawed filter over none."
+              }
+            ],
+            "audio": { "src": "audio/exams/c2/c2-exam-01-listening/v1/r02.m4a", "duration_s": 35.198 }
+          },
+          "questions": [
+            {
+              "n": 3,
+              "prompt": "What is the man's principal objection to the system?",
+              "options": [
+                "It delays the publication of important findings.",
+                "It depends on work for which nobody is paid.", "It works against unconventional thinking."
+              ],
+              "answer": 2,
+              "explanation_es": "Lentitud y trabajo gratis los menciona para descartarlos: su queja de fondo es que es «conservative by design» y castiga la idea rara."
+            },
+            {
+              "n": 4,
+              "prompt": "How does the woman respond to his criticism?",
+              "options": [
+                "She accepts it but doubts that any alternative would be an improvement.",
+                "She argues that he has misrepresented how the system works.",
+                "She suggests that the problem is confined to certain fields."
+              ],
+              "answer": 0,
+              "explanation_es": "«I don't dispute that for a moment», pero las alternativas solo cambian unos guardianes por otros: prefiere un filtro defectuoso a ninguno."
+            }
+          ]
+        },
+        {
+          "context": "Extract Three. You hear a man talking about going back to the town where he grew up.",
+          "recording": {
+            "id": "r03",
+            "speakers": [
+              { "id": "man", "name": "Man", "accent": "en-US", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "man",
+                "text": "Everyone tells you it'll have shrunk. The school, the hill you used to dread cycling up. And of course it had, but I'd been warned, so that was almost a disappointment. Nor had it changed as much as I'd feared. The same baker. The same dreadful fountain."
+              },
+              {
+                "speaker": "man",
+                "text": "No, what I wasn't ready for was being a stranger. I walked the length of the high street, where I'd once been unable to go ten yards without being asked about my mother, and not a single person looked up."
+              },
+              {
+                "speaker": "man",
+                "text": "I found I minded far more than I had any right to. I'd left, after all. I'd spent thirty years telling people I couldn't wait to get out. And yet some part of me had evidently assumed that the town would keep my place for me, like a book left open on a table."
+              }
+            ],
+            "audio": { "src": "audio/exams/c2/c2-exam-01-listening/v1/r03.m4a", "duration_s": 38.935 }
+          },
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "What struck the man most on his return?",
+              "options": [
+                "how much smaller everything seemed", "how few people recognised him",
+                "how little the place had altered"
+              ],
+              "answer": 1,
+              "explanation_es": "Que todo pareciera más pequeño ya se lo esperaba. «What I wasn't ready for was being a stranger»: nadie levantó la vista."
+            },
+            {
+              "n": 6,
+              "prompt": "What does he realise about himself?",
+              "options": [
+                "He had exaggerated his dislike of the town.", "He now regrets having left.",
+                "He had expected to be remembered without having earned it."
+              ],
+              "answer": 2,
+              "explanation_es": "Le dolió «far more than I had any right to»: se había ido él, y aun así daba por hecho que el pueblo le guardaría el sitio."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "completion",
+      "rubric": "You will hear a historian called Dr Peter Lang giving a talk about the history of the pencil. For questions 7–15, complete the sentences with a word or short phrase.",
+      "title": "The story of the pencil",
+      "text": "When the black substance was first found, local people took it for a kind of {{7}}.\nIts earliest recorded use was for marking {{8}}.\nFor two centuries, graphite was wrongly believed to be a form of {{9}}.\nGraphite became valuable because it was used in the making of {{10}}.\nThe earliest pencils were sticks of graphite wrapped in {{11}}.\nIn Nuremberg, wooden pencils were first made in quantity by {{12}}.\nA French scientist discovered that powdered graphite could be mixed with {{13}}.\nSome teachers objected to the eraser because they thought it would encourage {{14}}.\nDr Lang says the usual explanation for healthy pencil sales is the growth in {{15}}.",
+      "gaps": [
+        {
+          "n": 7,
+          "accept": ["coal"],
+          "explanation_es": "«They took it at first for a kind of coal, and were puzzled when it refused to burn»."
+        },
+        {
+          "n": 8,
+          "accept": ["sheep"],
+          "explanation_es": "Lo usaban los granjeros «for marking their sheep»."
+        },
+        {
+          "n": 9,
+          "accept": ["lead"],
+          "explanation_es": "Se creyó que era plomo, y por eso se sigue diciendo «pencil lead»."
+        },
+        {
+          "n": 10,
+          "accept": ["cannonballs", "cannon balls", "cannonball"],
+          "explanation_es": "Servía para forrar los moldes «in which cannonballs were cast»; no se valoraba para escribir."
+        },
+        {
+          "n": 11,
+          "accept": ["string"],
+          "explanation_es": "«Simply sticks of graphite wrapped in string». La funda de madera llegó después."
+        },
+        {
+          "n": 12,
+          "accept": ["carpenters"],
+          "explanation_es": "La funda de madera se atribuye a artesanos italianos, pero los primeros en fabricarlos en cantidad fueron «carpenters in the German city of Nuremberg»."
+        },
+        {
+          "n": 13,
+          "accept": ["clay"],
+          "explanation_es": "Mezcló grafito en polvo «with clay» y lo coció en un horno; con más o menos arcilla, el lápiz sale más duro o más blando."
+        },
+        {
+          "n": 14,
+          "accept": ["carelessness"],
+          "explanation_es": "Se opusieron a la goma «on the grounds that it would encourage carelessness»."
+        },
+        {
+          "n": 15,
+          "accept": ["schooling"],
+          "explanation_es": "«The reason usually given is the growth in schooling worldwide», aunque él sospecha que la razón es más simple."
+        }
+      ],
+      "recording": {
+        "id": "r04",
+        "speakers": [
+          { "id": "peter", "name": "Dr Peter Lang", "accent": "en-GB", "gender": "male" }
+        ],
+        "segments": [
+          {
+            "speaker": "peter",
+            "text": "It's customary, when one lectures on the history of an everyday object, to begin by claiming that it changed the world. I shall resist the temptation, and say only that the pencil is a good deal more interesting than it looks.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "peter",
+            "text": "Its story begins not in a workshop, but on a hillside in the north of England, where, in the middle of the sixteenth century, a violent storm uprooted a number of trees. Underneath, local people found a strange black substance. They took it at first for a kind of coal, and were puzzled when it refused to burn."
+          },
+          {
+            "speaker": "peter",
+            "text": "What they did discover was that it left a mark, and its earliest recorded use was by farmers, for marking their sheep.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "peter",
+            "text": "The material was, of course, graphite, though nobody knew that. For two centuries it was believed to be a form of lead, which is why we still speak of pencil lead today.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "peter",
+            "text": "The deposit turned out to be the purest ever found, and it soon became extremely valuable. Not for writing, but because it was ideal for lining the moulds in which cannonballs were cast. The mine was guarded by armed men, and at times it was opened for only a few weeks a year, to keep the price up.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "peter",
+            "text": "The earliest pencils were simply sticks of graphite wrapped in string. The wooden case came later, and is generally credited to Italian craftsmen, though the first to produce them in quantity were carpenters in the German city of Nuremberg.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "peter",
+            "text": "The modern pencil, however, is a French invention, and a product of war. In the seventeen nineties, France was cut off from English graphite by a naval blockade. A scientist in the army, asked to find a substitute, hit on the idea of mixing powdered graphite with clay, and baking it in a kiln."
+          },
+          {
+            "speaker": "peter",
+            "text": "By varying the proportion, he could make the pencil harder or softer, and that, in essence, is how every pencil has been made since.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "peter",
+            "text": "Two refinements remained. The first was the shape. Early pencils were round, and rolled off desks. The six-sided form was introduced to stop them doing so, and happens also to waste less wood."
+          },
+          {
+            "speaker": "peter",
+            "text": "The second was the eraser on the end, an American addition, which many European teachers at the time opposed, on the grounds that it would encourage carelessness.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "peter",
+            "text": "I'm often asked whether the pencil has a future. Sales, perhaps surprisingly, have held up remarkably well. The reason usually given is the growth in schooling worldwide, but I suspect the truth is simpler."
+          },
+          {
+            "speaker": "peter",
+            "text": "A pencil is the only writing instrument that works upside down, under water and in space, and it has never once needed charging. Thank you."
+          }
+        ],
+        "audio": { "src": "audio/exams/c2/c2-exam-01-listening/v1/r04.m4a", "duration_s": 133.334 }
+      }
+    },
+    {
+      "type": "mcq",
+      "rubric": "You will hear a discussion in which two architects, Laura Kemp and Ian Brody, talk about converting old industrial buildings into homes. For questions 16–20, choose the answer (A, B, C or D) which fits best according to what you hear.",
+      "groups": [
+        {
+          "recording": {
+            "id": "r05",
+            "speakers": [
+              { "id": "interviewer", "name": "Interviewer", "accent": "en-US", "gender": "female" },
+              { "id": "laura", "name": "Laura Kemp", "accent": "en-GB", "gender": "female" },
+              { "id": "ian", "name": "Ian Brody", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "interviewer",
+                "text": "With me are the architects Laura Kemp and Ian Brody. Laura, your practice has made its name turning factories into flats. What draws you to it?"
+              },
+              {
+                "speaker": "laura",
+                "text": "It's partly a matter of temperament. I've never been comfortable with the blank sheet. Give me an empty field, and I'm paralysed. Give me a derelict mill with columns in all the wrong places, and I know exactly where to begin. The constraints do half the thinking for you."
+              },
+              {
+                "speaker": "laura",
+                "text": "I know some colleagues regard that as a lack of ambition. I'd call it a preference for conversation over monologue."
+              },
+              { "speaker": "interviewer", "text": "Ian, you've been rather critical of this kind of work." },
+              {
+                "speaker": "ian",
+                "text": "Not of the work, some of which is superb. Of the sentiment that surrounds it. We've persuaded ourselves that keeping a building is always the virtuous choice. But a great many of these structures were put up in a hurry, for machines, with no thought for the people inside."
+              },
+              {
+                "speaker": "ian",
+                "text": "The windows are in the wrong place. The floors are too deep for daylight to reach the middle. You end up with flats that photograph beautifully and are miserable to live in. Nobody says so, because the brickwork is so charming."
+              },
+              {
+                "speaker": "laura",
+                "text": "I wouldn't disagree about the deep floors. That's the hardest problem we face. But I think Ian underrates what people will trade for character. I've had clients choose a flat with a column in the middle of the kitchen over an identical one without, and pay more for it."
+              },
+              { "speaker": "ian", "text": "Which rather proves my point about sentiment." },
+              {
+                "speaker": "laura",
+                "text": "Or about what a home is for. It isn't only a machine for getting daylight onto a worktop."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What about the environmental argument? We're told the greenest building is the one that already exists."
+              },
+              {
+                "speaker": "ian",
+                "text": "As a slogan, it's irresistible, and as a rule of thumb, it's sound. The carbon locked up in an old structure is considerable. But it has hardened into dogma."
+              },
+              {
+                "speaker": "ian",
+                "text": "I've seen conversions where so much had to be stripped out and replaced, and so much energy will be needed to heat the result for the next century, that a well-designed new building would have been the better choice. We ought to do the sums each time, and we mostly don't."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "A final question to you both. Is there a building you wish had not been converted?"
+              },
+              {
+                "speaker": "laura",
+                "text": "A grain silo I worked on early in my career. Twelve concrete cylinders. Magnificent, and completely useless. We cut windows into them, and the moment we did, the thing that had made them extraordinary was gone. I still drive past and wince."
+              },
+              {
+                "speaker": "ian",
+                "text": "That's generous of you. I'd only add that I've made the opposite mistake. I once argued for demolishing a warehouse that a braver architect then turned into something wonderful. So you may take everything I've said today with a degree of caution."
+              }
+            ],
+            "audio": { "src": "audio/exams/c2/c2-exam-01-listening/v1/r05.m4a", "duration_s": 155.813 }
+          },
+          "questions": [
+            {
+              "n": 16,
+              "prompt": "Laura says she prefers working on existing buildings because",
+              "options": [
+                "they make fewer demands on an architect's creativity.",
+                "their limitations give her somewhere to start.",
+                "clients are more willing to take risks with them.",
+                "she feels a duty to preserve industrial history."
+              ],
+              "answer": 1,
+              "explanation_es": "Ante un solar vacío se paraliza; con una fábrica en ruinas sabe por dónde empezar: «The constraints do half the thinking for you». No lo ve como falta de ambición."
+            },
+            {
+              "n": 17,
+              "prompt": "What is Ian's main reservation about converting industrial buildings?",
+              "options": [
+                "The results are often ill-suited to domestic life.",
+                "The cost is rarely justified by the outcome.",
+                "Too little of the original structure usually survives.",
+                "The practice is driven by commercial interests."
+              ],
+              "answer": 0,
+              "explanation_es": "Se hicieron para máquinas: ventanas mal puestas y plantas demasiado profundas. Quedan pisos «that photograph beautifully and are miserable to live in»."
+            },
+            {
+              "n": 18,
+              "prompt": "How does Laura respond to Ian's criticism?",
+              "options": [
+                "She denies that the problems he describes are common.",
+                "She argues that new buildings suffer from the same faults.",
+                "She concedes a practical point while disputing how much it matters to residents.",
+                "She suggests that he has little experience of such projects."
+              ],
+              "answer": 2,
+              "explanation_es": "Le da la razón en lo de las plantas profundas, pero cree que subestima lo que la gente está dispuesta a ceder por el carácter: un hogar no es solo una máquina de dar luz."
+            },
+            {
+              "n": 19,
+              "prompt": "What does Ian say about the claim that reusing buildings is better for the environment?",
+              "options": [
+                "It has been disproved by recent research.",
+                "It overlooks the carbon contained in old materials.",
+                "It is exploited by developers to avoid regulation.",
+                "It is broadly true but applied too uncritically."
+              ],
+              "answer": 3,
+              "explanation_es": "«As a rule of thumb, it's sound… But it has hardened into dogma»: habría que hacer las cuentas cada vez, y casi nunca se hacen."
+            },
+            {
+              "n": 20,
+              "prompt": "In their final remarks, both speakers",
+              "options": [
+                "admit to a professional misjudgement.", "regret decisions made under pressure from clients.",
+                "criticise a project in which the other was involved.",
+                "question whether conversion has a future."
+              ],
+              "answer": 0,
+              "explanation_es": "Ella estropeó un silo al abrirle ventanas; él defendió derribar un almacén que luego otro convirtió en algo magnífico. Los dos reconocen un error propio."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "You will hear five short extracts in which people are talking about taking a long period of leave from their jobs. While you listen, you must complete both tasks.",
+      "recording": {
+        "id": "r06",
+        "speakers": [
+          { "id": "narrator", "name": "Narrator", "accent": "en-GB", "gender": "female" },
+          { "id": "one", "name": "Speaker 1", "accent": "en-GB", "gender": "male" },
+          { "id": "two", "name": "Speaker 2", "accent": "en-GB", "gender": "female" },
+          { "id": "three", "name": "Speaker 3", "accent": "en-US", "gender": "male" },
+          { "id": "four", "name": "Speaker 4", "accent": "en-US", "gender": "female" },
+          { "id": "five", "name": "Speaker 5", "accent": "en-GB", "gender": "male" }
+        ],
+        "segments": [
+          { "speaker": "narrator", "text": "Speaker one.", "pause_after_ms": 900 },
+          {
+            "speaker": "one",
+            "text": "I'd been promising myself for years that I'd write the history of my grandfather's regiment, and I'd got as far as three boxes of photocopies. When the firm introduced unpaid leave, I put in for six months before I could talk myself out of it. People assumed I must be burnt out. I wasn't in the least. I finished the manuscript, all four hundred pages, and I doubt forty people will read it."
+          },
+          {
+            "speaker": "one",
+            "text": "What I hadn't expected was the first Monday back. I'd imagined dread. In fact, I felt something close to gratitude. For the nine o'clock meeting. For somebody else deciding what I'd do before lunch. Six months of total freedom had been rather more of a burden than I'd admitted to anyone.",
+            "pause_after_ms": 2500
+          },
+          { "speaker": "narrator", "text": "Speaker two.", "pause_after_ms": 900 },
+          {
+            "speaker": "two",
+            "text": "My husband was offered two years in Singapore, and the plan had always been that I'd stay behind. Then my head of department mentioned, quite casually, that a research institute there was looking for someone with exactly my background, for a year. I hadn't gone looking for it. It simply fell into my lap, and I'd have been a fool to say no."
+          },
+          {
+            "speaker": "two",
+            "text": "It was a marvellous year. Coming home was harder. I walked back into the same office, the same arguments about the budget, the same broken blind in the meeting room. Everyone asked how it had been, and nobody waited for the answer. I'd changed, and the place hadn't moved an inch. I'm still there, but I can't pretend it doesn't grate.",
+            "pause_after_ms": 2500
+          },
+          { "speaker": "narrator", "text": "Speaker three.", "pause_after_ms": 900 },
+          {
+            "speaker": "three",
+            "text": "It was my doctor who put it bluntly. I'd had what turned out to be nothing more than a warning. A night in hospital, and some tests. But lying there, I couldn't think of a single thing I'd done in ten years except work. So I took a year. Not to rest, exactly, but to work out what I actually wanted. I walked a great deal. I learned to cook."
+          },
+          {
+            "speaker": "three",
+            "text": "And I went back, because I do like the work itself. But something had shifted. The partnership I'd been chasing since my twenties came up within months, and I found I simply didn't care whether I got it. I didn't, as it happens. I slept perfectly well.",
+            "pause_after_ms": 2500
+          },
+          { "speaker": "narrator", "text": "Speaker four.", "pause_after_ms": 900 },
+          {
+            "speaker": "four",
+            "text": "I'd always wondered whether I'd have been happier as a gardener. Not as a hobby. Properly, for a living. So I arranged a year's leave from the law firm, and apprenticed myself to a nursery in the country. I lasted the whole year, and I'm glad I did, because it cured me. It's cold, it's badly paid, and plants, it turns out, are no more grateful than clients."
+          },
+          {
+            "speaker": "four",
+            "text": "I came back to my desk with something I'd never had before, which was a real fondness for it. I'd spent fifteen years suspecting I was in the wrong life. Now I know I'm not. My colleagues think I've gone soft. I actually look forward to Mondays.",
+            "pause_after_ms": 2500
+          },
+          { "speaker": "narrator", "text": "Speaker five.", "pause_after_ms": 900 },
+          {
+            "speaker": "five",
+            "text": "My mother had a fall, and it became obvious that she couldn't manage alone, at least for a while. My sister had done more than her share already, so I asked for six months. I didn't think of it as a break. It was the hardest work I've ever done."
+          },
+          {
+            "speaker": "five",
+            "text": "What astonished me was the return. I'm an accountant in a firm of two hundred. I'd assumed, frankly, that nobody would have registered my absence. There were flowers on my desk. A client had refused to deal with anyone else, and had simply waited. I'd spent twenty years believing I was replaceable, and perhaps I am, but it was oddly moving to find that people had noticed the gap."
+          }
+        ],
+        "audio": { "src": "audio/exams/c2/c2-exam-01-listening/v1/r06.m4a", "duration_s": 186.688 }
+      },
+      "tasks": [
+        {
+          "heading": "TASK ONE. For questions 21–25, choose from the list (A–H) each speaker's reason for taking leave.",
+          "options": [
+            { "id": "A", "text": "to recover from exhaustion" },
+            { "id": "B", "text": "to look after a relative" },
+            { "id": "C", "text": "to complete a personal project" },
+            { "id": "D", "text": "to try out a different occupation" },
+            { "id": "E", "text": "to accompany a partner abroad" },
+            { "id": "F", "text": "to take up an unforeseen opportunity" },
+            { "id": "G", "text": "to get away from a difficult colleague" },
+            { "id": "H", "text": "to reconsider priorities after a health scare" }
+          ],
+          "questions": [
+            {
+              "n": 21,
+              "prompt": "Speaker 1",
+              "answer": "C",
+              "explanation_es": "Quería escribir la historia del regimiento de su abuelo. Agotado no estaba: «I wasn't in the least»."
+            },
+            {
+              "n": 22,
+              "prompt": "Speaker 2",
+              "answer": "F",
+              "explanation_es": "El plan era quedarse cuando su marido se fue a Singapur; el puesto «simply fell into my lap». No fue por acompañarle."
+            },
+            {
+              "n": 23,
+              "prompt": "Speaker 3",
+              "answer": "H",
+              "explanation_es": "Tras un aviso que le llevó una noche al hospital, se tomó un año «to work out what I actually wanted». No era para descansar."
+            },
+            {
+              "n": 24,
+              "prompt": "Speaker 4",
+              "answer": "D",
+              "explanation_es": "Siempre se había preguntado si habría sido más feliz de jardinera, y lo probó un año en un vivero."
+            },
+            {
+              "n": 25,
+              "prompt": "Speaker 5",
+              "answer": "B",
+              "explanation_es": "Su madre se cayó y no podía valerse sola; pidió seis meses para cuidarla."
+            }
+          ]
+        },
+        {
+          "heading": "TASK TWO. For questions 26–30, choose from the list (A–H) how each speaker felt on returning to work.",
+          "options": [
+            { "id": "A", "text": "relieved to have a routine again" },
+            { "id": "B", "text": "cut off from colleagues" },
+            { "id": "C", "text": "frustrated by how little had changed" },
+            { "id": "D", "text": "newly appreciative of the job" },
+            { "id": "E", "text": "determined to leave for good" },
+            { "id": "F", "text": "surprised to have been missed" },
+            { "id": "G", "text": "anxious about having fallen behind" },
+            { "id": "H", "text": "indifferent to former ambitions" }
+          ],
+          "questions": [
+            {
+              "n": 26,
+              "prompt": "Speaker 1",
+              "answer": "A",
+              "explanation_es": "Sintió gratitud por la reunión de las nueve y porque otro decidiera por él: tanta libertad le había pesado."
+            },
+            {
+              "n": 27,
+              "prompt": "Speaker 2",
+              "answer": "C",
+              "explanation_es": "La misma oficina, las mismas discusiones, la misma persiana rota: «the place hadn't moved an inch», y le irrita."
+            },
+            {
+              "n": 28,
+              "prompt": "Speaker 3",
+              "answer": "H",
+              "explanation_es": "El ascenso a socio que perseguía desde los veinte le dio igual: «I simply didn't care whether I got it»."
+            },
+            {
+              "n": 29,
+              "prompt": "Speaker 4",
+              "answer": "D",
+              "explanation_es": "Volvió con «a real fondness» por su despacho: ya sabe que no está en la vida equivocada."
+            },
+            {
+              "n": 30,
+              "prompt": "Speaker 5",
+              "answer": "F",
+              "explanation_es": "Creía que nadie habría notado su ausencia y encontró flores y a un cliente que le había esperado."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

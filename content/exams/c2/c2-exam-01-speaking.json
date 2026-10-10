@@ -1,0 +1,114 @@
+{
+  "id": "c2-exam-01-speaking",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "paper": "speaking",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "kind": "interview",
+      "about_es": "Dos minutos de preguntas personales y de opinión para entrar en materia. Respuestas naturales y desarrolladas, sin sonar a texto preparado.",
+      "turns": [
+        { "examiner": "Good morning. My name is Richard, and this is my colleague. Could you tell us where you are from, and whether you are working or studying at the moment?", "answer_s": 25 },
+        { "examiner": "How good are you at organising your time?", "answer_s": 30 },
+        { "examiner": "What, for you, is the ideal way to spend a day when you have nothing planned?", "answer_s": 30 },
+        { "examiner": "Is there a period of history you would have liked to live in? Why?", "answer_s": 30 }
+      ],
+      "useful_language": [
+        "I'm based in… at present, though I grew up in…",
+        "I'd like to think I'm reasonably…, though my colleagues might disagree.",
+        "Left to my own devices, I tend to…",
+        "If I'm being entirely honest, …",
+        "It's not something I've given much thought to, but…",
+        "I've always been drawn to…"
+      ],
+      "tips_es": [
+        "Es la parte más sencilla: úsala para entrar en calor y sonar natural.",
+        "Evita las respuestas ensayadas; el examinador las reconoce y cambia de pregunta.",
+        "Matiza: «I'd like to think…», «up to a point», «it rather depends on…»."
+      ]
+    },
+    {
+      "kind": "collaborative",
+      "about_es": "Primero comentas durante un minuto un par de fotos; después, en tres minutos, discutes con tu compañero una tarea sobre todas las fotos y tomáis una decisión. A solas, hazlo en voz alta como si negociaras con alguien.",
+      "turns": [
+        {
+          "examiner": "Now, in this part of the test, you're going to do something together. Here are some pictures of people in different situations. First, I'd like you to look at pictures A and C, and talk together about how the people might be feeling. You have about a minute for this.",
+          "visuals": [
+            { "label": "Picture A", "description": "An elderly man on a riverbank at dawn, sitting completely still beside a fishing rod, with mist on the water." },
+            { "label": "Picture C", "description": "A long queue of commuters on a station platform, all looking up at a departures board that shows every train as delayed." }
+          ],
+          "answer_s": 60
+        },
+        {
+          "examiner": "Thank you. Now look at all the pictures. I'd like you to imagine that a magazine is planning an article on the place of patience in modern life. These pictures will be used to illustrate the article. Talk together about the different aspects of patience that the pictures show. Then decide which picture would make the most effective opening image for the article. You have about three minutes for this.",
+          "shown": "An article on the place of patience in modern life: which picture would make the most effective opening image?",
+          "visuals": [
+            { "label": "Picture A", "description": "An elderly man on a riverbank at dawn, sitting completely still beside a fishing rod, with mist on the water." },
+            { "label": "Picture B", "description": "A young child at a kitchen table, frowning with concentration while trying to tie a shoelace, as a parent watches without helping." },
+            { "label": "Picture C", "description": "A long queue of commuters on a station platform, all looking up at a departures board that shows every train as delayed." },
+            { "label": "Picture D", "description": "A restorer in a museum workshop, cleaning a tiny area of a huge old painting with a cotton bud." }
+          ],
+          "answer_s": 180
+        }
+      ],
+      "useful_language": [
+        "He strikes me as someone who is entirely at ease with…",
+        "There's a world of difference between choosing to wait and being made to.",
+        "Would you go along with that?",
+        "I'd take issue with that, actually, because…",
+        "What this one captures, and the others don't, is…",
+        "If the article is to make any impact, it needs…",
+        "On balance, then, I'd plump for…"
+      ],
+      "tips_es": [
+        "En el primer minuto, especula sobre las dos fotos indicadas y nada más.",
+        "En la segunda fase, habla de ideas (elegir esperar o verse obligado, paciencia que se aprende, paciencia como oficio), no de lo que se ve.",
+        "Hay que llegar a una decisión justificada; en el examen, negociándola con tu compañero.",
+        "Aquí las fotos están descritas con palabras; en el examen son fotos reales."
+      ]
+    },
+    {
+      "kind": "long_turn",
+      "about_es": "Hablas dos minutos sin interrupción a partir de una tarjeta con una pregunta y tres ideas que puedes usar o no. Después respondes a una pregunta sobre el tema de tu compañero y, por último, hay una conversación sobre los dos temas.",
+      "turns": [
+        {
+          "examiner": "Now, in this part of the test, you're each going to talk on your own for about two minutes. I'm going to give you a card with a question written on it, and I'd like you to tell us what you think. There are also some ideas on the card for you to use if you like. So, here is your card.",
+          "shown": "How far is it true that people today have too much choice?",
+          "prompts": ["everyday decisions", "careers and relationships", "the effect on happiness"],
+          "prep_s": 10,
+          "answer_s": 120
+        },
+        {
+          "examiner": "Thank you. Now, your partner has been talking about what makes a place feel like home. Do you think a person can feel equally at home in more than one country?",
+          "answer_s": 45
+        },
+        { "examiner": "Now, to finish the test, we're going to talk about choice and belonging in general. Do you think the decisions we make matter less than the circumstances we are born into?", "answer_s": 60 },
+        { "examiner": "Why do some people find it so hard to commit themselves to a decision?", "answer_s": 60 },
+        { "examiner": "To what extent should governments limit the choices available to people for their own good?", "answer_s": 60 },
+        { "examiner": "Is the idea of home becoming less important as people move around more?", "answer_s": 60 }
+      ],
+      "useful_language": [
+        "I'd like to approach this from two angles.",
+        "At the most trivial level, …; at a deeper level, …",
+        "This brings me to…",
+        "There is, of course, a counter-argument, namely that…",
+        "Which is not to say that…",
+        "To draw these threads together, …",
+        "I'd go further than that and say…"
+      ],
+      "tips_es": [
+        "Dos minutos son largos: anuncia una estructura («two angles», «first… then…») y síguela.",
+        "Las tres ideas de la tarjeta son una ayuda, no una obligación; no las recites en orden.",
+        "Cierra con una conclusión, aunque sea de una frase: no dejes que te corte el tiempo a media idea.",
+        "En la conversación final se valora que desarrolles y matices, no que tengas razón."
+      ]
+    }
+  ]
+}

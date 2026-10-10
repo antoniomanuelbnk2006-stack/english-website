@@ -1,0 +1,276 @@
+{
+  "id": "c2-exam-01-reading",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "paper": "reading",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq_cloze",
+      "rubric": "For questions 1–8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "title": "A dying trade?",
+      "text": "It has become something of a commonplace to {{1}} the death of the second-hand bookshop. Rents rise, readers defect to their screens, and every few months another proprietor {{2}} up the shutters for the last time. Yet the obituaries have, on the whole, proved {{3}}. A stubborn few hundred shops survive, and some are positively {{4}}.\n\nWhat sustains them is not, I suspect, the stock itself, most of which could be {{5}} down online in a matter of seconds. It is rather the experience of not knowing what one is looking for. A search engine gives you precisely what you ask for and not a {{6}} more; a shelf, by contrast, places the book you wanted next to the one you had never heard of, and it is the latter that you carry home. Booksellers have long understood that serendipity is their real {{7}} in trade, and the shrewdest among them arrange their shops accordingly, {{8}} disorder to a fine art.",
+      "gaps": [
+        { "n": 1, "options": ["exclaim", "proclaim", "acclaim", "disclaim"], "answer": 1, "explanation_es": "«Proclaim the death of» = anunciar a bombo y platillo la muerte de algo. «Exclaim» no lleva objeto así, «acclaim» es aclamar y «disclaim», negar." },
+        { "n": 2, "options": ["sets", "holds", "puts", "draws"], "answer": 2, "explanation_es": "«Put up the shutters» = echar el cierre, cerrar el negocio para siempre." },
+        { "n": 3, "options": ["premature", "immature", "precocious", "preliminary"], "answer": 0, "explanation_es": "Una necrológica adelantada es «premature». «Immature» y «precocious» se dicen de personas; «preliminary» es «previo», no «antes de tiempo»." },
+        { "n": 4, "options": ["swelling", "mounting", "heightening", "thriving"], "answer": 3, "explanation_es": "Un negocio que prospera «thrives». Los otros tres hablan de algo que aumenta (un número, una tensión), no de algo que florece." },
+        { "n": 5, "options": ["traced", "tracked", "trailed", "pinned"], "answer": 1, "explanation_es": "«Track something down» = dar con algo tras buscarlo. «Pin down» es precisar o concretar." },
+        { "n": 6, "options": ["dot", "spot", "jot", "drop"], "answer": 2, "explanation_es": "«Not a jot more» = ni una pizca más. Expresión fija." },
+        { "n": 7, "options": ["stock", "store", "supply", "share"], "answer": 0, "explanation_es": "«Stock in trade» = lo que alguien tiene para ofrecer, su especialidad. Aquí juega además con las existencias de la librería." },
+        { "n": 8, "options": ["lifting", "hoisting", "advancing", "elevating"], "answer": 3, "explanation_es": "«Elevate (o raise) something to a fine art» = convertir algo en un arte." }
+      ]
+    },
+    {
+      "type": "open_cloze",
+      "rubric": "For questions 9–16, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "title": "The public apology",
+      "text": "Hardly a week goes by {{9}} some public figure being obliged to apologise, and hardly an apology is issued that is not immediately found wanting. The fault, more often than {{10}}, lies in the phrasing. 'I am sorry if anyone was offended' regrets the offence while declining to own {{11}} to having caused it; 'mistakes were made' goes one better, dispensing with a culprit altogether.\n\nIt would be naive to suppose that such formulas are accidental. They are drafted by advisers {{12}} sole concern is to limit legal liability, and who know that an admission, once made, cannot be taken {{13}}. The result is a statement that satisfies the lawyers but persuades {{14}} one else.\n\nWhat is striking is how little it would take to do better. Those apologies that are generally accepted tend to have three things in common: they name the wrong, they accept responsibility for it, and they say what will be done to put matters {{15}}. None of this requires eloquence. It requires only a willingness to be, {{16}} briefly, at a disadvantage.",
+      "gaps": [
+        { "n": 9, "accept": ["without"], "explanation_es": "«Hardly a week goes by without + -ing»: no pasa una semana sin que…" },
+        { "n": 10, "accept": ["not"], "explanation_es": "«More often than not» = la mayoría de las veces." },
+        { "n": 11, "accept": ["up"], "explanation_es": "«Own up to (doing) something» = reconocer, confesar." },
+        { "n": 12, "accept": ["whose"], "explanation_es": "Relativo posesivo: asesores cuya única preocupación es…" },
+        { "n": 13, "accept": ["back"], "explanation_es": "«Take something back» = retirar lo dicho." },
+        { "n": 14, "accept": ["no"], "explanation_es": "«No one else»: convence a los abogados y a nadie más." },
+        { "n": 15, "accept": ["right"], "explanation_es": "«Put matters right» = arreglar las cosas." },
+        { "n": 16, "accept": ["however", "albeit", "even"], "explanation_es": "«However briefly» = por poco tiempo que sea. También cabe «albeit briefly»." }
+      ]
+    },
+    {
+      "type": "word_formation",
+      "rubric": "For questions 17–24, read the text below. Use the word given in capitals to form a word that fits in the gap.",
+      "title": "The lone genius",
+      "text": "The image of the solitary inventor, toiling in obscurity until a flash of {{17}} changes the world, has proved remarkably {{18}}. It is also, according to most historians of science, deeply {{19}}. Almost every major {{20}} turns out, on closer inspection, to have been the work of many hands, and the individual we remember was frequently the one who happened to publish first.\n\nWhy, then, does the myth persist? Partly because it makes for a better story, and partly because it flatters our belief in {{21}} individuals. But the consequences are not {{22}}. Funding bodies reward named 'stars', while the {{23}} labour on which discovery actually depends goes largely {{24}}.",
+      "gaps": [
+        { "n": 17, "stem": "INSPIRE", "accept": ["inspiration"], "explanation_es": "«A flash of inspiration»: sustantivo tras «of»." },
+        { "n": 18, "stem": "ENDURE", "accept": ["enduring"], "explanation_es": "«Prove + adjetivo»: «enduring», duradero. («Endurable» significaría «soportable».)" },
+        { "n": 19, "stem": "LEAD", "accept": ["misleading"], "explanation_es": "Adjetivo con prefijo «mis-»: engañoso." },
+        { "n": 20, "stem": "BREAK", "accept": ["breakthrough"], "explanation_es": "Sustantivo compuesto: «a major breakthrough», un gran avance." },
+        { "n": 21, "stem": "EXCEPT", "accept": ["exceptional"], "explanation_es": "Adjetivo delante de «individuals»: excepcionales." },
+        { "n": 22, "stem": "HARM", "accept": ["harmless"], "explanation_es": "Con «not» delante, el sentido pide «harmless»: las consecuencias no son inofensivas." },
+        { "n": 23, "stem": "COLLABORATE", "accept": ["collaborative"], "explanation_es": "Adjetivo que califica a «labour»: trabajo en colaboración." },
+        { "n": 24, "stem": "ACKNOWLEDGE", "accept": ["unacknowledged"], "explanation_es": "«Go unacknowledged» = quedar sin reconocimiento. Participio con prefijo negativo." }
+      ]
+    },
+    {
+      "type": "key_word_transformation",
+      "rubric": "For questions 25–30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and eight words, including the word given.",
+      "items": [
+        {
+          "n": 25,
+          "original": "I only went to the lecture because my tutor insisted.",
+          "keyword": "INSISTENCE",
+          "before": "Had it not",
+          "after": ", I would not have gone to the lecture.",
+          "parts": [["been for"], ["my tutor's insistence", "the insistence of my tutor"]],
+          "explanation_es": "Condicional con inversión: «Had it not been for + sustantivo» = si no hubiera sido por."
+        },
+        {
+          "n": 26,
+          "original": "It is very unlikely that the proposal will be accepted.",
+          "keyword": "LIKELIHOOD",
+          "before": "There is",
+          "after": "accepted.",
+          "parts": [["little likelihood", "very little likelihood", "not much likelihood"], ["of the proposal being", "that the proposal will be"]],
+          "explanation_es": "«There is little likelihood of something happening» (o «that something will happen»)."
+        },
+        {
+          "n": 27,
+          "original": "She didn't want to be seen to take sides in the dispute, so she said nothing.",
+          "keyword": "FEAR",
+          "before": "She said nothing",
+          "after": "to take sides in the dispute.",
+          "parts": [["for fear"], ["of being seen", "that she would be seen", "that she might be seen", "she would be seen", "she might be seen"]],
+          "explanation_es": "«For fear of + -ing» (o «for fear that…») = por miedo a."
+        },
+        {
+          "n": 28,
+          "original": "The scandal seriously damaged the company's reputation.",
+          "keyword": "DISREPUTE",
+          "before": "The company",
+          "after": "by the scandal.",
+          "parts": [["was brought"], ["into disrepute"]],
+          "explanation_es": "«Bring something into disrepute» = desprestigiar, aquí en pasiva."
+        },
+        {
+          "n": 29,
+          "original": "He is determined to finish the marathon, however long it takes him.",
+          "keyword": "MATTER",
+          "before": "He is determined to finish the marathon,",
+          "after": "him.",
+          "parts": [["no matter how"], ["long it takes", "much time it takes"]],
+          "explanation_es": "«No matter how + adjetivo» = por muy… que."
+        },
+        {
+          "n": 30,
+          "original": "We were about to give up hope when the rescue team arrived.",
+          "keyword": "VERGE",
+          "before": "We were",
+          "after": "hope when the rescue team arrived.",
+          "parts": [["on the verge of"], ["giving up", "abandoning", "losing"]],
+          "explanation_es": "«Be on the verge of + -ing» = estar a punto de."
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "You are going to read an extract from an essay. For questions 31–36, choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "title": "The inventory",
+      "groups": [
+        {
+          "text": "When my mother died, she left a house in which nothing had been thrown away since 1971. I do not say this to suggest eccentricity. She was not a hoarder in the sense the television programmes mean; there were no towers of newspaper, no rooms one could not enter. It was simply that she had never seen any reason to part with a thing that still worked, or that might, or that had once belonged to someone she had loved. The result was a house that was not so much furnished as sedimented.\n\nIt fell to my brother and me to clear it, and we approached the task, I now see, with entirely different theories of what we were doing. For him it was a matter of logistics: so many cubic metres, so many trips to the tip, a firm that would take the furniture. He was not unfeeling. He simply believed, as I think most sensible people do, that objects are objects, and that grief is better served by getting on. I envied him this, and still do.\n\nMy own approach was less a method than a failure of one. I found that I could not put anything in a bag without first establishing what it was, and that establishing what it was meant, in practice, reconstructing the occasion of its arrival. A fish slice was not a fish slice but the fish slice bought in Whitby the summer my father broke his wrist. I would like to claim that this was a form of respect. In truth it felt more like a compulsion, and one that was not obviously directed at my mother at all. I was not remembering her so much as checking that I still could.\n\nWhat surprised me was how little the objects that were meant to matter did so. The jewellery, such as it was, the good china, the photograph albums over which my brother and I had been prepared to be diplomatic: these we divided in an afternoon, almost briskly. They had been designated as significant so long ago that the significance had worn smooth. It was the things nobody had thought to value that undid me. A drawer of rubber bands, sorted by size. A shopping list in her handwriting, tucked into a cookery book as a bookmark and never retrieved, on which the final item, underlined twice, was 'string'.\n\nI have read a good deal since then about what the psychologists call 'continuing bonds', the idea that the bereaved do not, as an earlier generation of theorists supposed, detach themselves from the dead but go on maintaining a relationship with them by other means. It is a humane theory, and I have no quarrel with it. But it does not quite describe what happened in that house. What I felt was not that the objects kept my mother present. It was that each one was a small argument she was still winning: that things should be looked after, that waste was a kind of rudeness, that one never knew. To throw away the rubber bands was to concede that she had been wrong, and I found I was not prepared to concede it.\n\nMy brother, in the end, took them. He did it without comment, on the last afternoon, sweeping the drawer into a carrier bag while I was in another room, and I did not discover until months later that he had not taken the bag to the tip. It sits, he tells me, at the back of his garage. He cannot say why. I have chosen not to press him, partly out of tact, and partly because I suspect the explanation would be shorter than mine and a good deal closer to the truth.",
+          "questions": [
+            {
+              "n": 31,
+              "prompt": "In the first paragraph, the writer is anxious to make clear that the state of his mother's house",
+              "options": [
+                "was worse than it first appeared.",
+                "reflected a principle rather than a disorder.",
+                "was the result of years of neglect.",
+                "concealed how little of real use it contained."
+              ],
+              "answer": 1,
+              "explanation_es": "Insiste en que no era excentricidad ni síndrome de Diógenes: sencillamente no veía motivo para desprenderse de algo que aún servía o que había sido de alguien querido."
+            },
+            {
+              "n": 32,
+              "prompt": "What does the writer say about his brother's attitude in the second paragraph?",
+              "options": [
+                "It struck him at the time as lacking in sensitivity.",
+                "It was a way of avoiding the reality of what had happened.",
+                "It was one he could respect without being able to share.",
+                "It gradually came to resemble his own."
+              ],
+              "answer": 2,
+              "explanation_es": "«He was not unfeeling», pensaba como la gente sensata, y «I envied him this, and still do»: lo respeta, pero no es capaz de hacer lo mismo."
+            },
+            {
+              "n": 33,
+              "prompt": "The writer suggests that his own way of dealing with the objects was",
+              "options": [
+                "a deliberate attempt to honour his mother's memory.",
+                "a means of postponing a task he found distasteful.",
+                "more efficient than it appeared to others.",
+                "less concerned with his mother than with himself."
+              ],
+              "answer": 3,
+              "explanation_es": "Le gustaría llamarlo respeto, pero «it felt more like a compulsion… not obviously directed at my mother at all. I was not remembering her so much as checking that I still could»."
+            },
+            {
+              "n": 34,
+              "prompt": "What point is made about the 'good china' and the photograph albums?",
+              "options": [
+                "Their importance had been dulled by long familiarity.",
+                "Neither brother turned out to want them.",
+                "They proved to be worth less than the family had believed.",
+                "They were the items the writer found most painful to divide."
+              ],
+              "answer": 0,
+              "explanation_es": "«They had been designated as significant so long ago that the significance had worn smooth». Lo que le desarmó fueron las cosas que nadie había valorado."
+            },
+            {
+              "n": 35,
+              "prompt": "How does the writer regard the theory of 'continuing bonds'?",
+              "options": [
+                "as an outdated account that he is glad to see replaced",
+                "as persuasive in general but inadequate to his own case",
+                "as too sentimental to be taken seriously",
+                "as an exact description of what he felt in the house"
+              ],
+              "answer": 1,
+              "explanation_es": "«It is a humane theory, and I have no quarrel with it. But it does not quite describe what happened in that house»."
+            },
+            {
+              "n": 36,
+              "prompt": "What is implied about the writer's brother in the final paragraph?",
+              "options": [
+                "He regretted having cleared the house so quickly.",
+                "He kept the rubber bands to spare the writer's feelings.",
+                "He was affected by the objects in a way he could not account for.",
+                "He had failed to grasp how much the objects meant to the writer."
+              ],
+              "answer": 2,
+              "explanation_es": "No llevó la bolsa al vertedero, la tiene en el garaje y «he cannot say why»: también a él le pudieron, aunque no sepa explicarlo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gapped_text",
+      "rubric": "You are going to read an essay about learning to swim as an adult. Seven paragraphs have been removed from the essay. Choose from the paragraphs A–H the one which fits each gap (37–43). There is one extra paragraph which you do not need to use.",
+      "title": "Out of my depth",
+      "text": "I learned to swim at the age of fifty-one, in a municipal pool in a town I shall not name, under the instruction of a woman less than half my age who addressed me throughout as 'my love'. I mention the age not for effect but because it turned out to be the whole of the difficulty. A child who cannot swim has merely not yet learned. An adult who cannot swim has, by fifty, constructed a life around the fact.\n\n{{37}}\n\nWhat ended this arrangement was not courage but a grandchild. My daughter announced that her son, then four, would be starting lessons, and asked, without malice, whether I would like to take him. I heard myself agree. It was only in the car afterwards that I understood what I had agreed to: sitting on a plastic chair, fully dressed, watching a four-year-old do something I could not.\n\n{{38}}\n\nThere were six of us. I had expected to be the oldest and was, in fact, almost the youngest. There was a retired bus driver, two sisters in their seventies who had promised each other, and a man who had been a merchant seaman for thirty years without, as he put it, ever once getting wet on purpose.\n\n{{39}}\n\nThe instructor's method was to refuse to discuss any of this. She was not interested in why we were afraid. She was interested in whether we could put our faces in the water and blow bubbles, and she regarded the two questions as wholly unconnected. I thought this, at first, a failure of imagination on her part.\n\n{{40}}\n\nProgress, when it came, did not feel like progress. There was no morning on which I woke up able to swim. There was simply a Tuesday in March when I pushed off from the wall, as I had done forty times, and failed to put my feet down.\n\n{{41}}\n\nI would like to report that I now swim with pleasure, and it would be almost true. I swim adequately, twice a week, in the slow lane, and I no longer think about the floor. What I had not anticipated was the effect on everything else.\n\n{{42}}\n\nMy grandson, I should add, swims far better than I do, and has done almost from the start. He finds my technique a source of considerable amusement.\n\n{{43}}",
+      "options": [
+        { "id": "A", "text": "I have since come to think it was the opposite. She understood, as I did not, that fear of this kind is not an opinion and cannot be argued with. It lives in the body, and the body is persuaded only by what it has actually done. Each week she asked us to do one thing slightly more improbable than the last, and each week the body revised its estimate of what was survivable." },
+        { "id": "B", "text": "I let him laugh. He will not remember a time when he could not swim, and so he will never know what it is to learn. That, I have decided, is the one advantage I have over him, and I do not intend to give it up." },
+        { "id": "C", "text": "Mine had been constructed with some ingenuity. I had holidayed in mountains. I had developed, for the benefit of friends with boats, an inner-ear complaint that no doctor had ever been asked to confirm. On the rare occasions when water could not be avoided, I stood in it up to my waist and affected to be admiring the view." },
+        { "id": "D", "text": "The pool itself has since been closed for refurbishment, and the class has moved to a leisure centre on the far side of town. I have not followed it there; the journey is inconvenient, and in any case I feel I have learned as much as I am ever likely to." },
+        { "id": "E", "text": "It was he who taught me the first thing I learned there, which had nothing to do with swimming. I had assumed that my fear was a private absurdity. He described his own, in the changing room, in exactly the terms I would have used: not a fear of drowning, precisely, but of the moment at which the floor is no longer there." },
+        { "id": "F", "text": "For it turns out that a person who has organised half a century around one avoidance has usually organised it around several. Having discovered that the thing I could not do was merely a thing I had not done, I began, with some unease, to go through the others. I have since given a speech. I have driven on a motorway in France. I do not claim these as triumphs. I offer them as evidence." },
+        { "id": "G", "text": "So I telephoned the pool the following morning and enrolled, giving my name with the furtiveness of a man booking an appointment at a clinic. The class, I was told, was called 'Adult Improvers'. I pointed out that I had nothing to improve. There was a pause, and I was transferred to 'Adult Beginners', Tuesdays at seven." },
+        { "id": "H", "text": "I covered perhaps four metres before I realised what was happening, at which point I naturally stopped and swallowed a quantity of water. But the four metres could not be taken back. The sisters applauded. The seaman, who had got there a fortnight before me, nodded in the manner of one professional acknowledging another." }
+      ],
+      "gaps": [
+        { "n": 37, "answer": "C", "explanation_es": "«Mine» es la vida construida alrededor de no saber nadar, de la que habla la frase anterior. Y «this arrangement», en el párrafo siguiente, son esas evasivas." },
+        { "n": 38, "answer": "G", "explanation_es": "«So» presenta la consecuencia de haber entendido a qué se había comprometido: se apunta a clases. «Tuesdays at seven» lleva a «There were six of us»." },
+        { "n": 39, "answer": "E", "explanation_es": "«It was he» es el marinero, el último de la lista. Y «any of this», en el párrafo siguiente, es ese miedo del que hablan en el vestuario." },
+        { "n": 40, "answer": "A", "explanation_es": "«It was the opposite» responde a «a failure of imagination»: la monitora entendía que ese miedo no se discute, se desmonta haciendo." },
+        { "n": 41, "answer": "H", "explanation_es": "Continúa el momento en que no apoyó los pies: los cuatro metros. Reaparecen las hermanas y el marinero." },
+        { "n": 42, "answer": "F", "explanation_es": "«For it turns out…» explica «the effect on everything else»: quien evita una cosa durante medio siglo suele evitar varias." },
+        { "n": 43, "answer": "B", "explanation_es": "«I let him laugh» responde a que al nieto le hace gracia su técnica, y cierra el ensayo con la idea del principio: lo que supone aprender de adulto." }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "You are going to read an article about the history of weather forecasting. For questions 44–53, choose from the sections (A–E). The sections may be chosen more than once.",
+      "title": "A short history of saying what tomorrow will bring",
+      "tasks": [
+        {
+          "heading": "In which section does the writer",
+          "options": [
+            {
+              "id": "A",
+              "text": "For most of recorded history, predicting the weather was the province of proverb. Red skies, restless cattle and aching joints were consulted with a seriousness that it is easy to mock, though several of these sayings have since been shown to rest on sound, if unarticulated, observation. What they could not do was look beyond the horizon. A farmer could read his own sky tolerably well; he had no means of knowing what was gathering three hundred miles to the west, and by the time he could see it, it had arrived."
+            },
+            {
+              "id": "B",
+              "text": "The telegraph changed that almost overnight. Once observations from distant stations could be collected within the hour, it became possible to draw a map of the weather as it stood and to watch systems move across it. The first public forecasts, issued in the 1860s, were greeted with a mixture of gratitude and derision, and their author was attacked in the press whenever a promised gale failed to materialise. That he was right rather more often than chance would allow went largely unremarked; a correct forecast, then as now, is simply the weather, while a wrong one is a scandal."
+            },
+            {
+              "id": "C",
+              "text": "The decisive step was taken not by an observer but by a mathematician, who proposed during the First World War that the atmosphere could be treated as a problem in physics and its future state calculated. His own attempt, done by hand, took six weeks to produce a six-hour forecast, and the result was spectacularly wrong. He published it anyway, with a candour that does him credit, and added the wistful suggestion that a hall of sixty-four thousand human calculators, working in concert, might one day keep pace with the weather itself. He was describing the computer, three decades before it existed."
+            },
+            {
+              "id": "D",
+              "text": "When the machines did arrive, optimism ran high. It was widely assumed that more observations and faster processors would push the horizon of prediction back indefinitely, so that a forecast for next month would eventually be as reliable as one for tomorrow. That hope was dashed in the 1960s by the discovery that minute differences in the starting conditions of a simulation could produce wildly divergent outcomes. The atmosphere, it emerged, was not merely complicated but inherently unstable, and there was a limit – about a fortnight – beyond which no conceivable improvement in technology would allow us to see."
+            },
+            {
+              "id": "E",
+              "text": "Forecasters have responded to this limit not by defying it but by learning to quantify their own ignorance. A modern forecast is not one simulation but dozens, each begun from slightly altered conditions; where the runs agree, confidence is high, and where they scatter, it is not. The '70 per cent chance of rain' that results is frequently misread by the public as vagueness. It is in fact the most honest statement the science can make, and arguably its greatest achievement: a prediction that tells you not only what is likely to happen but how far it deserves to be believed."
+            }
+          ],
+          "questions": [
+            { "n": 44, "prompt": "mention an idea that anticipated a later invention?", "answer": "C", "explanation_es": "La sala de sesenta y cuatro mil calculadores humanos: «He was describing the computer, three decades before it existed»." },
+            { "n": 45, "prompt": "observe that successes attract less notice than failures?", "answer": "B", "explanation_es": "«A correct forecast… is simply the weather, while a wrong one is a scandal»." },
+            { "n": 46, "prompt": "describe a widely held expectation that proved unfounded?", "answer": "D", "explanation_es": "Se daba por hecho que con más datos y máquinas más rápidas se podría predecir el mes siguiente: «That hope was dashed»." },
+            { "n": 47, "prompt": "defend a feature of forecasts that people tend to misunderstand?", "answer": "E", "explanation_es": "El «70 per cent chance of rain» se toma por vaguedad y es «the most honest statement the science can make»." },
+            { "n": 48, "prompt": "concede that traditional beliefs were not without foundation?", "answer": "A", "explanation_es": "Varios refranes «have since been shown to rest on sound, if unarticulated, observation»." },
+            { "n": 49, "prompt": "express admiration for someone's openness about a failure?", "answer": "C", "explanation_es": "El cálculo salió mal y «he published it anyway, with a candour that does him credit»." },
+            { "n": 50, "prompt": "refer to a barrier that better technology can never remove?", "answer": "D", "explanation_es": "Un límite de unas dos semanas «beyond which no conceivable improvement in technology would allow us to see»." },
+            { "n": 51, "prompt": "explain how a means of communication transformed what was possible?", "answer": "B", "explanation_es": "El telégrafo permitió reunir en una hora las observaciones de estaciones lejanas y dibujar el mapa del tiempo." },
+            { "n": 52, "prompt": "point out that people once had no knowledge of conditions elsewhere?", "answer": "A", "explanation_es": "El agricultor leía su propio cielo, pero «had no means of knowing what was gathering three hundred miles to the west»." },
+            { "n": 53, "prompt": "describe a method that turns uncertainty itself into useful information?", "answer": "E", "explanation_es": "Decenas de simulaciones: donde coinciden hay confianza y donde se dispersan, no. Así se cuantifica «their own ignorance»." }
+          ]
+        }
+      ]
+    }
+  ]
+}
