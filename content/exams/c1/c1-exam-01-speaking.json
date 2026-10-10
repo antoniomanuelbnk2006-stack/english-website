@@ -1,0 +1,138 @@
+{
+  "id": "c1-exam-01-speaking",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "paper": "speaking",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "kind": "interview",
+      "about_es": "Preguntas personales y de opinión sobre temas cotidianos. Se espera que desarrolles la respuesta con naturalidad, sin sonar a discurso preparado.",
+      "turns": [
+        { "examiner": "Good morning. My name is Helen, and this is my colleague. First of all, we'd like to know something about you. Where are you from, and what do you do there?", "answer_s": 25 },
+        { "examiner": "What do you enjoy most about the work or studies you are doing at the moment?", "answer_s": 30 },
+        { "examiner": "How important is it to you to have time to yourself?", "answer_s": 30 },
+        { "examiner": "If you could learn a completely new skill, what would it be, and why?", "answer_s": 30 },
+        { "examiner": "Do you think you make the most of your free time?", "answer_s": 30 }
+      ],
+      "useful_language": [
+        "I'm originally from…, but I've been based in… for…",
+        "What I find most rewarding is…",
+        "I'd have to say…",
+        "To be perfectly honest, …",
+        "I suppose it depends on what you mean by…",
+        "Given the chance, I'd love to…"
+      ],
+      "tips_es": [
+        "No memorices respuestas: se nota en la entonación y el examinador pasa a otra pregunta.",
+        "Desarrolla sin que te lo pidan: motivo, ejemplo y, si puedes, un matiz («although…», «having said that…»).",
+        "Aprovecha para enseñar variedad: condicionales, comparaciones, vocabulario preciso."
+      ]
+    },
+    {
+      "kind": "long_turn",
+      "about_es": "Hablas un minuto seguido: eliges dos de tres fotos, las comparas y contestas a las dos preguntas escritas. Después respondes en treinta segundos a una pregunta sobre las fotos de tu compañero.",
+      "turns": [
+        {
+          "examiner": "In this part of the test, I'm going to give you three pictures. I'd like you to talk about two of them on your own for about a minute. Here are your pictures. They show people dealing with a difficult situation. I'd like you to compare two of the pictures, and say what the people might find difficult about these situations, and how they might be feeling.",
+          "shown": "What might the people find difficult about these situations? How might they be feeling?",
+          "visuals": [
+            { "label": "Picture A", "description": "A young woman standing alone on a stage in front of a large audience, holding some notes and about to give a speech." },
+            { "label": "Picture B", "description": "A father in a kitchen early in the morning, trying to make breakfast while holding a crying baby, with two older children arguing at the table." },
+            { "label": "Picture C", "description": "A hiker on a mountain path in thick fog, studying a paper map, with no other people or buildings in sight." }
+          ],
+          "answer_s": 60
+        },
+        {
+          "examiner": "Thank you. Now, here are your partner's pictures. They show people working in different environments. Which of these people do you think gets the most satisfaction from their work, and why?",
+          "visuals": [
+            { "label": "Picture A", "description": "A carpenter alone in a small workshop, carefully finishing a wooden chair by hand." },
+            { "label": "Picture B", "description": "A team of young people in a bright open-plan office, celebrating around a screen that shows rising sales figures." },
+            { "label": "Picture C", "description": "A vet in a rural surgery examining a dog while its elderly owner looks on anxiously." }
+          ],
+          "answer_s": 30
+        }
+      ],
+      "useful_language": [
+        "Both pictures show people under some kind of pressure, but…",
+        "Whereas the woman on the stage has chosen to be there, the father…",
+        "I'd imagine she's feeling…",
+        "He may well be…",
+        "What strikes me about this picture is…",
+        "It's hard to say for certain, but…",
+        "Of the three, I'd say… because…"
+      ],
+      "tips_es": [
+        "Elige dos fotos enseguida y dilo: «I'd like to talk about the first and the third».",
+        "Compara desde la primera frase y especula; describir lo que se ve no puntúa a este nivel.",
+        "Contesta las dos preguntas escritas: es fácil quedarse en la primera.",
+        "Aquí las fotos están descritas con palabras; en el examen son fotos reales."
+      ]
+    },
+    {
+      "kind": "collaborative",
+      "about_es": "Con tu compañero, comentáis durante dos minutos cinco ideas en torno a una pregunta y después tenéis un minuto para llegar a una decisión. Aquí, a solas, recorre las ideas relacionándolas entre sí y decide razonando.",
+      "turns": [
+        {
+          "examiner": "Now, I'd like you to talk about something together for about two minutes. Here are some things that can influence the decisions people make about their careers, and a question for you to discuss. First, you have some time to look at the task. Now, talk to each other about how these things might influence the decisions people make about their careers.",
+          "shown": "How might these things influence the decisions people make about their careers?",
+          "prompts": ["salary", "family expectations", "job security", "the chance to be creative", "where the job is"],
+          "prep_s": 15,
+          "answer_s": 120
+        },
+        {
+          "examiner": "Thank you. Now you have about a minute to decide which of these things has the greatest influence on people at the start of their working lives.",
+          "shown": "Which has the greatest influence on people at the start of their working lives?",
+          "prompts": ["salary", "family expectations", "job security", "the chance to be creative", "where the job is"],
+          "answer_s": 60
+        }
+      ],
+      "useful_language": [
+        "Shall we begin with…?",
+        "That ties in with what you were saying about…",
+        "I take your point, but wouldn't you say that…?",
+        "Up to a point, yes. Then again…",
+        "If we look at it from the point of view of…",
+        "So are we agreed that…?",
+        "I think we'll have to agree to differ on that."
+      ],
+      "tips_es": [
+        "No hace falta tratar las cinco ideas: relaciónalas («salary and security often go together…»).",
+        "Lo que más puntúa es hacer avanzar la conversación: preguntar, matizar y retomar lo que dijo el otro.",
+        "En la decisión, razona hasta el final aunque no haya acuerdo.",
+        "A solas, practica en voz alta las fórmulas de turno como si respondieras a alguien."
+      ]
+    },
+    {
+      "kind": "discussion",
+      "about_es": "Preguntas abstractas relacionadas con el tema de la parte 3. Se esperan respuestas largas y bien hiladas, con ejemplos y matices.",
+      "turns": [
+        { "examiner": "Some people say that a job is simply a way of earning money. What's your view?", "answer_s": 50 },
+        { "examiner": "Do you think young people today have more freedom to choose their careers than their parents did?", "answer_s": 50 },
+        { "examiner": "How far should schools prepare students for the world of work, rather than educate them more broadly?", "answer_s": 50 },
+        { "examiner": "Is it better to stay in one career or to change direction several times in a lifetime? Why?", "answer_s": 50 },
+        { "examiner": "In what ways do you think technology will change the kinds of work people do?", "answer_s": 50 }
+      ],
+      "useful_language": [
+        "I think there's a lot of truth in that, although…",
+        "It rather depends on…",
+        "Broadly speaking, …",
+        "One could argue that…, but in practice…",
+        "To take an obvious example, …",
+        "I've never really thought about it in those terms, but…",
+        "All things considered, …"
+      ],
+      "tips_es": [
+        "Estructura: postura, razón, ejemplo y un matiz o una concesión.",
+        "Evita el «yes/no» inicial tajante; mejor «Up to a point…» o «It depends on…».",
+        "Si te quedas sin ideas, mira el otro lado: «On the other hand, some people would say…»."
+      ]
+    }
+  ]
+}

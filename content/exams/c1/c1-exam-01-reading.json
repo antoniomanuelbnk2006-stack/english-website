@@ -1,0 +1,328 @@
+{
+  "id": "c1-exam-01-reading",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "paper": "reading",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq_cloze",
+      "rubric": "For questions 1–8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "title": "Tiny forests",
+      "text": "In a corner of a car park on the outskirts of the city, behind a low wooden fence, an unusual experiment is {{1}} way. Six hundred young trees have been planted in a space no bigger than a tennis court, so close together that they are forced to {{2}} for light. The technique, {{3}} by a Japanese botanist in the 1970s, produces woodland that grows up to ten times faster than a conventional plantation.\n\nSupporters are {{4}} that these miniature forests offer benefits out of all {{5}} to their size. They absorb rainwater, lower summer temperatures and {{6}} wildlife to neighbourhoods that have little else to offer it. Sceptics point out that a few hundred square metres of trees will hardly make a {{7}} in a city's carbon emissions. That may well be true, but it rather {{8}} the point: for many residents, this is the only woodland they will ever have on their doorstep.",
+      "gaps": [
+        { "n": 1, "options": ["on", "under", "in", "by"], "answer": 1, "explanation_es": "«Be under way» = estar en marcha. «On the way» y «in the way» necesitan el artículo y significan otra cosa." },
+        { "n": 2, "options": ["contest", "rival", "compete", "oppose"], "answer": 2, "explanation_es": "«Compete for something» = competir por algo. Los otros tres verbos llevan objeto directo, sin «for»." },
+        { "n": 3, "options": ["pioneered", "founded", "launched", "grounded"], "answer": 0, "explanation_es": "Una técnica se «pioneers» (se es pionero en ella). Se funda una institución y se lanza un producto o una campaña." },
+        { "n": 4, "options": ["stubborn", "rigid", "resolute", "adamant"], "answer": 3, "explanation_es": "«Be adamant that…» = sostener algo con total firmeza. Los otros adjetivos no admiten una oración con «that» detrás." },
+        { "n": 5, "options": ["relation", "proportion", "comparison", "measure"], "answer": 1, "explanation_es": "«Out of all proportion to» = totalmente desproporcionado respecto a. Expresión fija." },
+        { "n": 6, "options": ["appeal", "tempt", "invite", "attract"], "answer": 3, "explanation_es": "«Attract something to a place». «Appeal» es intransitivo («appeal to someone») y no puede llevar «wildlife» de objeto." },
+        { "n": 7, "options": ["dent", "mark", "hole", "cut"], "answer": 0, "explanation_es": "«Make a dent in something» = reducir algo de forma apreciable. «Make a mark» significa dejar huella, que aquí no encaja." },
+        { "n": 8, "options": ["loses", "fails", "misses", "skips"], "answer": 2, "explanation_es": "«Miss the point» = no entender lo esencial." }
+      ]
+    },
+    {
+      "type": "open_cloze",
+      "rubric": "For questions 9–16, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "title": "The comfort of rereading",
+      "text": "There are people who never read the same book twice, on the grounds {{9}} life is too short and the list of unread classics too long. I am not one of them. {{10}} from a handful of novels that I return to every few years, there are others I must have read a dozen times, one of {{11}} I could now recite almost entirely from memory.\n\nWhat is it that draws some of us back? It can hardly be suspense, {{12}} we know perfectly well what is coming. I suspect the appeal lies precisely in that knowledge. Freed {{13}} the need to find out what happens, we are able to notice how it happens: the sentence that prepares the ground for a betrayal two hundred pages later, the joke we were {{14}} young to understand the first time round.\n\nNor is the book the only thing that has changed. {{15}} goes back to a novel after twenty years is not the person who first opened it, and a story that once seemed to be about love may turn {{16}} to have been about money all along.",
+      "gaps": [
+        { "n": 9, "accept": ["that"], "explanation_es": "«On the grounds that + oración» = con el argumento de que." },
+        { "n": 10, "accept": ["Apart", "Aside"], "explanation_es": "«Apart from» (o «aside from») = aparte de, además de." },
+        { "n": 11, "accept": ["which"], "explanation_es": "Relativo tras preposición referido a cosas: «one of which». «That» no puede ir detrás de una preposición." },
+        { "n": 12, "accept": ["since", "as", "because", "for"], "explanation_es": "Conector de causa: no puede ser el suspense, puesto que ya sabemos lo que viene." },
+        { "n": 13, "accept": ["from", "of"], "explanation_es": "«Freed from (o of) something» = liberados de algo." },
+        { "n": 14, "accept": ["too"], "explanation_es": "«Too + adjetivo + to + infinitivo»: demasiado jóvenes para entenderlo." },
+        { "n": 15, "accept": ["Whoever"], "explanation_es": "Hace falta una sola palabra que sea sujeto de «goes» y de «is»: «Whoever» (= the person who)." },
+        { "n": 16, "accept": ["out"], "explanation_es": "«Turn out to have been» = resultar haber sido." }
+      ]
+    },
+    {
+      "type": "word_formation",
+      "rubric": "For questions 17–24, read the text below. Use the word given in capitals to form a word that fits in the gap.",
+      "title": "Standing in line",
+      "text": "Nobody enjoys queuing, yet the way we feel about it has surprisingly little to do with the {{17}} of the wait. Research suggests that our {{18}} of time is shaped by what we are doing while it passes. An empty five minutes feels {{19}}, whereas the same five minutes spent reading a menu or watching a screen slips by almost {{20}}.\n\nBusinesses have been quick to exploit this. Airports {{21}} make passengers walk a long way to collect their luggage, so that less time is spent standing at the carousel. Theme parks disguise the true extent of a queue by winding it round corners, and offer regular {{22}} about how long remains. What people find truly {{23}}, it turns out, is not waiting but {{24}}: a delay we can neither explain nor predict.",
+      "gaps": [
+        { "n": 17, "stem": "LONG", "accept": ["length"], "explanation_es": "Tras «the» y antes de «of», un sustantivo: «length». Cambia la vocal, como en «strong → strength»." },
+        { "n": 18, "stem": "PERCEIVE", "accept": ["perception"], "explanation_es": "Sustantivo tras el posesivo «our»: «perception»." },
+        { "n": 19, "stem": "END", "accept": ["endless"], "explanation_es": "«Feel + adjetivo»: unos minutos vacíos se hacen interminables, «endless»." },
+        { "n": 20, "stem": "NOTICE", "accept": ["unnoticed"], "explanation_es": "«Slip by unnoticed» = pasar sin que nadie lo note. Participio con prefijo negativo." },
+        { "n": 21, "stem": "DELIBERATE", "accept": ["deliberately"], "explanation_es": "Adverbio que modifica a «make»: lo hacen a propósito." },
+        { "n": 22, "stem": "ASSURE", "accept": ["reassurance", "reassurances", "assurance", "assurances"], "explanation_es": "Sustantivo tras «regular»: «reassurance», algo que tranquiliza. También vale «assurance»." },
+        { "n": 23, "stem": "TOLERATE", "accept": ["intolerable"], "explanation_es": "Adjetivo y negativo: lo que la gente no soporta. «Tolerable» diría lo contrario." },
+        { "n": 24, "stem": "CERTAIN", "accept": ["uncertainty"], "explanation_es": "Sustantivo paralelo a «waiting» y negativo: la incertidumbre, un retraso que no se puede explicar ni prever." }
+      ]
+    },
+    {
+      "type": "key_word_transformation",
+      "rubric": "For questions 25–30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.",
+      "items": [
+        {
+          "n": 25,
+          "original": "I had no idea that the meeting had been cancelled.",
+          "keyword": "UNAWARE",
+          "before": "I",
+          "after": "the cancellation of the meeting.",
+          "parts": [["was unaware", "was completely unaware", "was totally unaware", "was quite unaware"], ["of"]],
+          "explanation_es": "«Be unaware of + sustantivo». La oración con «that» pasa a ser un sustantivo («the cancellation»)."
+        },
+        {
+          "n": 26,
+          "original": "It was only when I got home that I realised my wallet was missing.",
+          "keyword": "UNTIL",
+          "before": "Not",
+          "after": "I realise my wallet was missing.",
+          "parts": [["until I got home", "until I had got home", "until I arrived home", "until I reached home"], ["did"]],
+          "explanation_es": "«Not until…» al principio obliga a invertir en la oración principal: «did I realise»."
+        },
+        {
+          "n": 27,
+          "original": "Nobody told me about the change of plan.",
+          "keyword": "DARK",
+          "before": "I was",
+          "after": "about the change of plan.",
+          "parts": [["kept in", "left in"], ["the dark"]],
+          "explanation_es": "«Keep someone in the dark about something» = no informar a alguien, en pasiva."
+        },
+        {
+          "n": 28,
+          "original": "Sarah regrets not accepting the job in Berlin.",
+          "keyword": "WISHES",
+          "before": "Sarah",
+          "after": "the job in Berlin.",
+          "parts": [["wishes she had", "wishes that she had"], ["accepted", "taken"]],
+          "explanation_es": "Arrepentimiento sobre el pasado: «wish + past perfect»."
+        },
+        {
+          "n": 29,
+          "original": "I'd rather you didn't mention this to anyone else.",
+          "keyword": "KEEP",
+          "before": "I'd like you",
+          "after": "yourself.",
+          "parts": [["to keep this", "to keep it"], ["to"]],
+          "explanation_es": "«Keep something to yourself» = no contárselo a nadie. «Would like someone to do something»."
+        },
+        {
+          "n": 30,
+          "original": "The film was nowhere near as good as I had been led to expect.",
+          "keyword": "LIVE",
+          "before": "The film failed",
+          "after": "my expectations.",
+          "parts": [["to live"], ["up to"]],
+          "explanation_es": "«Live up to expectations» = estar a la altura de lo esperado. «Fail to + infinitivo»."
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "You are going to read an article about finding your way. For questions 31–36, choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "title": "In defence of getting lost",
+      "groups": [
+        {
+          "text": "A few months ago, on the way to a wedding in a part of the country I did not know, my phone died. I had no map, no written directions and, it turned out, no real idea of where I was, despite having driven for two hours under the guidance of a calm synthetic voice. What struck me afterwards was not the inconvenience, which was considerable, but a faint sense of shame. I had crossed four counties without registering a single landmark. I could not have said whether I had been travelling north or west.\n\nI am hardly alone in this. Satellite navigation has become so reliable, and so universal, that the skill it replaces is quietly disappearing, and with remarkably little protest. We lament the decline of handwriting and mental arithmetic, but nobody seems to mourn the ability to find one's way. Perhaps this is because wayfinding never felt like an accomplishment in the first place. It was simply something one did, badly or well, and the people who did it badly are, understandably, delighted to be relieved of the burden.\n\nYet the research on what happens to us when we stop navigating is hard to dismiss. Studies of people who rely on turn-by-turn instructions show that they build far poorer mental pictures of the places they pass through than those who use a paper map or no aid at all. More striking still is the work on the hippocampus, the region of the brain most closely associated with spatial memory. In people who navigate actively it appears to be more developed; in habitual users of automated directions it is less engaged. Researchers are careful not to claim that the phone in your pocket is shrinking your brain. What they do suggest is that a faculty which is never exercised is unlikely to remain in good condition.\n\nIt would be easy to turn this into a sermon, and I would rather not. I have no wish to return to the days of arguments in lay-bys over an upside-down road atlas, and anyone who has tried to find a hospital in an unfamiliar city at night will know that efficient navigation is not a trivial luxury. The technology is not the problem. The problem, if there is one, is the passivity it invites: the habit of treating a journey as a sequence of instructions to be obeyed rather than a landscape to be understood.\n\nWhat is lost, I think, is not so much competence as a particular kind of attention. To find your own way you have to look: at the angle of the light, the slope of the ground, the church tower that was on your left and is now behind you. You form theories and revise them. You are, in a modest sense, engaged in working something out. A person following a blue line on a screen is spared all this, and is also deprived of it.\n\nSince the wedding, I have been conducting a small experiment. On journeys where nothing depends on my arriving on time, I look up the route before I leave and then put the phone away. I have gone wrong more often than I care to admit. I have also, for the first time in years, begun to know where things are in relation to one another, and to feel that the places I pass through are actual places, rather than scenery on either side of a line. It is a minor pleasure, and I would not presume to recommend it to anyone in a hurry. But it has made me wonder how many other small competences we have handed over without noticing, and what, in each case, went with them.",
+          "questions": [
+            {
+              "n": 31,
+              "prompt": "What did the writer find most troubling about the journey described in the first paragraph?",
+              "options": [
+                "the practical difficulties that resulted from the phone failing",
+                "how little attention he had paid to his surroundings",
+                "the fact that he arrived late for an important occasion",
+                "his inability to use the alternatives to satellite navigation"
+              ],
+              "answer": 1,
+              "explanation_es": "Lo que le chocó «was not the inconvenience… but a faint sense of shame»: había cruzado cuatro condados sin fijarse en nada. El texto no dice que llegara tarde."
+            },
+            {
+              "n": 32,
+              "prompt": "In the second paragraph, the writer suggests that the loss of navigational skill has attracted little comment because",
+              "options": [
+                "it has happened more gradually than the loss of other skills.",
+                "those who were good at it are reluctant to complain.",
+                "it was never regarded as something to take pride in.",
+                "the technology that replaced it is so widely trusted."
+              ],
+              "answer": 2,
+              "explanation_es": "«Wayfinding never felt like an accomplishment in the first place». La D es la trampa: la fiabilidad explica por qué desaparece la destreza, no por qué nadie protesta."
+            },
+            {
+              "n": 33,
+              "prompt": "What point does the writer make about the research described in the third paragraph?",
+              "options": [
+                "Its conclusions have been exaggerated by those who carried it out.",
+                "It proves that navigation devices cause physical damage to the brain.",
+                "It applies only to people who never use any form of map.",
+                "It gives grounds for concern even though its claims are cautious."
+              ],
+              "answer": 3,
+              "explanation_es": "Es «hard to dismiss», y a la vez los investigadores «are careful not to claim» que el móvil encoja el cerebro: prudentes, pero preocupantes."
+            },
+            {
+              "n": 34,
+              "prompt": "Why does the writer mention 'arguments in lay-bys over an upside-down road atlas'?",
+              "options": [
+                "to acknowledge that the past was not better in every respect",
+                "to illustrate how much more skilled people used to be",
+                "to suggest that paper maps brought people together",
+                "to explain why he distrusts his own sense of direction"
+              ],
+              "answer": 0,
+              "explanation_es": "No quiere sermonear ni volver a aquello: reconoce que antes también había inconvenientes y que «the technology is not the problem»."
+            },
+            {
+              "n": 35,
+              "prompt": "According to the fifth paragraph, someone who finds their way without a device",
+              "options": [
+                "arrives with a more accurate memory of the route.",
+                "is obliged to observe and reason in a way that others are not.",
+                "gains a sense of achievement that technology cannot offer.",
+                "is more likely to appreciate the beauty of the landscape."
+              ],
+              "answer": 1,
+              "explanation_es": "«You have to look… You form theories and revise them»: hay que observar y razonar. Quien sigue la línea azul «is spared all this, and is also deprived of it»."
+            },
+            {
+              "n": 36,
+              "prompt": "In the final paragraph, the writer's attitude to his experiment is best described as",
+              "options": [
+                "evangelical about its benefits for everyone.",
+                "embarrassed by how badly it has gone.",
+                "modest about its value but intrigued by what it implies.",
+                "doubtful whether he will continue with it."
+              ],
+              "answer": 2,
+              "explanation_es": "Lo llama «a minor pleasure» y no se atreve a recomendarlo, pero le ha hecho preguntarse qué otras pequeñas destrezas hemos cedido sin darnos cuenta."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "You are going to read four extracts in which academics give their views on university lectures. For questions 37–40, choose from the academics A–D. The academics may be chosen more than once.",
+      "title": "Has the lecture had its day?",
+      "tasks": [
+        {
+          "heading": "Which academic",
+          "options": [
+            {
+              "id": "A",
+              "text": "The lecture has survived for eight centuries, and those who predict its demise underestimate what it does. A good lecture is not the transfer of information, which a textbook does better; it is a demonstration of how an expert thinks, performed live, and students learn a great deal from it. That is precisely why recordings disappoint: stripped of the shared room, the same hour becomes a video to be half-watched at double speed. If attendance is falling, I see little reason to blame the students, who are responding sensibly to timetables that expect them to be in three places at once. Fix those, and the lecture theatres will fill up again. I have no doubt that the form will still be with us in a hundred years."
+            },
+            {
+              "id": "B",
+              "text": "The evidence that students retain little from listening passively for an hour is, by now, overwhelming, and it is odd that institutions devoted to evidence should ignore it. Lectures persist because they are cheap, not because they work. Recordings at least allow a student to pause, repeat and return, which makes them, in my view, a genuine improvement on the original rather than a poor substitute. Students have noticed this before their teachers have: staying away from a nine o'clock lecture you can watch at noon is not idleness but good judgement. I expect the traditional lecture to dwindle into a ceremonial occasion within a generation, and I shall not miss it."
+            },
+            {
+              "id": "C",
+              "text": "I have lectured for thirty years and I am under no illusion about how much of it sticks. As a means of getting understanding into heads, the lecture is poor, and the research says so plainly. But I cannot agree with colleagues who think a recording is an adequate replacement, let alone a better one: what little a lecture achieves depends on the presence of other people and the mild social pressure to pay attention. As for empty seats, let us be honest. Some students have good reasons; many more simply prefer to stay in bed, and the availability of recordings gives them an excuse. Whether the lecture survives will depend less on its merits than on university finances, and on that basis I would expect it to last."
+            },
+            {
+              "id": "D",
+              "text": "Lectures can inspire, and anyone who has heard a great one knows how much can be learned in an hour; to judge them only by test scores a week later is to miss what they are for. I would defend them on those grounds. Where I part company with traditionalists is over recordings, which seem to me a perfectly good way of following a course – invaluable for revision, and for students whose first language is not that of the lecturer. The decline in attendance strikes me as a rational response to circumstances: when a course is assessed entirely by an exam based on the slides, turning up is optional by design. Still, I suspect that the live lecture will shrink to a handful of set-piece events, as students and budgets drift elsewhere."
+            }
+          ],
+          "questions": [
+            {
+              "n": 37,
+              "prompt": "takes a similar view to C on how well lectures enable students to learn?",
+              "answer": "B",
+              "explanation_es": "C dice que la clase magistral es «poor» para que se entienda algo, y B, que los estudiantes retienen poco. A y D la defienden."
+            },
+            {
+              "n": 38,
+              "prompt": "expresses a different view from the others on why fewer students attend lectures?",
+              "answer": "C",
+              "explanation_es": "A, B y D ven la ausencia como una decisión sensata; solo C cree que la mayoría «simply prefer to stay in bed»."
+            },
+            {
+              "n": 39,
+              "prompt": "shares A's opinion about whether recorded lectures are a satisfactory alternative to live ones?",
+              "answer": "C",
+              "explanation_es": "Para A las grabaciones «disappoint»; para C no son «an adequate replacement». B las prefiere y a D le parecen perfectamente válidas."
+            },
+            {
+              "n": 40,
+              "prompt": "takes a similar view to B on the long-term prospects for the lecture?",
+              "answer": "D",
+              "explanation_es": "B espera que quede en algo ceremonial y D, que se reduzca a unos pocos actos señalados. A y C creen que durará."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gapped_text",
+      "rubric": "You are going to read a magazine article about a man who records birdsong. Six paragraphs have been removed from the article. Choose from the paragraphs A–G the one which fits each gap (41–46). There is one extra paragraph which you do not need to use.",
+      "title": "Listening to what is left",
+      "text": "At four in the morning, in a beech wood in the west of England, Tom Arkwright sits on a folding stool with headphones over his ears and does not move for two hours. Beside him, a pair of microphones on a low stand point into the darkness. He is waiting for the dawn chorus, as he has done on some four hundred mornings over the past decade.\n\n{{41}}\n\nThe change is already audible to anyone with a point of comparison. Arkwright plays me two recordings made in the same clearing on the same date, eleven years apart. The first is dense, almost chaotic, with a dozen species competing to be heard. The second is recognisably the same place, but thinner, with long gaps in which nothing sings at all.\n\n{{42}}\n\nThose others have begun to take an interest. Two years ago, a team of ecologists approached him with a proposal. Software now exists that can identify individual species in a recording and count them far faster than any human listener. His archive, made with the same equipment in the same locations year after year, was exactly the kind of consistent record they had lacked.\n\n{{43}}\n\nThat reason is hard for him to put into words, and he is visibly uneasy when asked to try. He talks about attention, about the way an hour of listening changes what you are able to hear. Sounds that were a blur on the first morning separate, by the fortieth, into individuals with habits and territories.\n\n{{44}}\n\nIt would be easy to present Arkwright as a man recording an elegy, and he resists the description firmly. Some of his sites, he insists, sound better than they did. A stretch of river where the banks have been left to grow wild now has species he never heard there before.\n\n{{45}}\n\nBy half past six the chorus has faded into ordinary daytime birdsong, and Arkwright begins to pack up. He labels the recording with the date and the temperature, as he always does, and adds a note that a tractor started up at ten past five.\n\n{{46}}",
+      "options": [
+        { "id": "A", "text": "There is a particular song thrush, for instance, that he has recorded in the same oak for six consecutive springs. He knows the phrases it favours and the ones it has dropped. Last year it failed to appear. He does not say what he thinks happened, and I do not ask." },
+        { "id": "B", "text": "He is wary, however, of drawing conclusions from this. One wood on one morning proves nothing, he points out; a cold spring or a passing hawk can silence a clearing as effectively as any long-term decline. It is only when hundreds of recordings are set side by side that a pattern begins to emerge, and that work is for others to do." },
+        { "id": "C", "text": "He apologises for this, as though the interruption were his fault. Then he corrects himself. The tractor, he says, is part of the record too; in fifty years' time someone may want to know what that sounded like as well." },
+        { "id": "D", "text": "Arkwright is not a scientist, and he is the first to say so. A former sound engineer for television, he began recording birdsong as a way of recovering from the noise of his working life. What started as a private pleasure has since become something closer to a mission: an attempt to document, wood by wood, how the countryside sounds before it changes beyond recognition." },
+        { "id": "E", "text": "Arkwright's recordings have since been broadcast on national radio, and he has grown used to being recognised in the village shop. He finds the attention flattering but tiring, and is thinking of giving up the early mornings altogether." },
+        { "id": "F", "text": "Nor does he have much patience with the idea that recordings might console us for what disappears. A sound archive, in his view, is not a substitute for a living wood, any more than a photograph album is a substitute for a family. Its only real use is to show people what they stand to lose while there is still time to do something about it." },
+        { "id": "G", "text": "The collaboration has not been entirely comfortable. The researchers wanted him to switch to automatic recorders, which can be left in a wood for months and collected later. Arkwright tried them and gave up within a season. The data, he concedes, were perfectly adequate. What was missing was the reason he had started in the first place." }
+      ],
+      "gaps": [
+        { "n": 41, "answer": "D", "explanation_es": "Tras la escena inicial hay que presentar quién es y qué pretende. El final de D («before it changes beyond recognition») lo recoge el párrafo siguiente: «The change is already audible»." },
+        { "n": 42, "answer": "B", "explanation_es": "«Drawing conclusions from this» remite a las dos grabaciones comparadas, y «that work is for others to do» enlaza con «Those others have begun to take an interest»." },
+        { "n": 43, "answer": "G", "explanation_es": "«The collaboration» es la propuesta de los ecólogos. G termina en «the reason he had started in the first place», y el párrafo siguiente empieza por «That reason»." },
+        { "n": 44, "answer": "A", "explanation_es": "«For instance» da un ejemplo de esos «individuals with habits and territories»: un zorzal concreto que conoce desde hace seis primaveras." },
+        { "n": 45, "answer": "F", "explanation_es": "«Nor does he…» añade un segundo rechazo al del párrafo anterior (no acepta que lo suyo sea una elegía, ni que las grabaciones consuelen)." },
+        { "n": 46, "answer": "C", "explanation_es": "«He apologises for this» y «the interruption» se refieren al tractor que acaba de anotar." }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "You are going to read an article in which four people talk about working at night. For questions 47–56, choose from the people (A–D). The people may be chosen more than once.",
+      "title": "While the rest of us sleep",
+      "tasks": [
+        {
+          "heading": "Which person",
+          "options": [
+            {
+              "id": "A",
+              "title": "Rosa, baker",
+              "text": "People assume the worst part must be getting up at one in the morning, but after eleven years my body has stopped objecting. What I have never got used to is the effect on everyone else. My partner and I communicate largely by notes left on the kitchen table, and I have missed more birthday dinners than I can count. The work itself I would not change. There is a satisfaction in producing something with your hands that will be gone by lunchtime, and a peculiar intimacy in knowing a town through its bread: who orders what, who has stopped coming. If I resent anything, it is the customers who tell me how lucky I am to finish at nine."
+            },
+            {
+              "id": "B",
+              "title": "Kwame, nurse",
+              "text": "I asked for nights. On a day shift the ward belongs to the consultants, the visitors and the paperwork; at night it belongs to the patients, and you finally have time to sit with someone who is frightened. That is the job as I imagined it when I trained. The cost is physical, and I would be dishonest to deny it. I have never managed to sleep properly during the day, and I have noticed that I am ill more often than colleagues who work normal hours. I tell myself I will move to days when I turn fifty. I told myself the same thing about forty."
+            },
+            {
+              "id": "C",
+              "title": "Elena, air-traffic controller",
+              "text": "Nights are quieter in terms of traffic, which outsiders imagine makes them easier. In fact it is the opposite: when little is happening, staying alert takes real effort, and the consequences of a lapse are the same at four in the morning as at noon. We are monitored closely for fatigue, and rightly so. What I value is the rota. We work in blocks, with several days off between them, so although I am out of step with the world for a week, I then get a stretch of time that people in ordinary jobs never see. My children think of it as normal that I am at the school gate every afternoon for days on end and then vanish."
+            },
+            {
+              "id": "D",
+              "title": "Stefan, museum guard",
+              "text": "I took the job to pay for my studies and assumed I would hate it. Twelve hours alone in a dark building, walking the same route every ninety minutes: it sounded like a punishment. What I had not expected was how much I would come to like the place once the visitors had gone. I have spent more time with certain paintings than anyone alive. I have also, I admit, got through most of a law degree at the security desk, which my employers tolerate as long as the rounds are done. Friends ask whether I am ever scared. Only of the day I qualify and have to work among people again."
+            }
+          ],
+          "questions": [
+            { "n": 47, "prompt": "says that the difficulty of the work is the reverse of what people suppose?", "answer": "C", "explanation_es": "Elena: la gente cree que las noches tranquilas son más fáciles; «In fact it is the opposite», porque cuesta mantenerse alerta." },
+            { "n": 48, "prompt": "keeps postponing a decision to change their working pattern?", "answer": "B", "explanation_es": "Kwame se dice que pasará al turno de día a los cincuenta, y se dijo lo mismo a los cuarenta." },
+            { "n": 49, "prompt": "mentions a benefit of the job for their family life?", "answer": "C", "explanation_es": "Con el sistema de turnos, Elena pasa días seguidos yendo a recoger a sus hijos al colegio." },
+            { "n": 50, "prompt": "has grown fond of something they had expected to dislike?", "answer": "D", "explanation_es": "Stefan daba por hecho que odiaría el trabajo y ha acabado queriendo el museo vacío." },
+            { "n": 51, "prompt": "is irritated by a remark that other people make about the job?", "answer": "A", "explanation_es": "A Rosa le molestan los clientes que le dicen la suerte que tiene de acabar a las nueve." },
+            { "n": 52, "prompt": "chose night work because it lets them do the job as they believe it should be done?", "answer": "B", "explanation_es": "Kwame pidió las noches: es cuando hay tiempo para sentarse con un paciente, «the job as I imagined it when I trained»." },
+            { "n": 53, "prompt": "describes the strain that their hours put on a relationship?", "answer": "A", "explanation_es": "Rosa y su pareja se comunican con notas en la mesa de la cocina." },
+            { "n": 54, "prompt": "uses working time for a purpose unconnected with the job?", "answer": "D", "explanation_es": "Stefan ha sacado casi toda la carrera de Derecho en el puesto de vigilancia." },
+            { "n": 55, "prompt": "acknowledges that the work is harming their health?", "answer": "B", "explanation_es": "Kwame no duerme bien de día y enferma más que los compañeros con horario normal." },
+            { "n": 56, "prompt": "feels that their work gives them an understanding of a community?", "answer": "A", "explanation_es": "Rosa conoce el pueblo por su pan: quién pide qué y quién ha dejado de venir." }
+          ]
+        }
+      ]
+    }
+  ]
+}

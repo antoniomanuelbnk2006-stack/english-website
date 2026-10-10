@@ -1,0 +1,602 @@
+{
+  "id": "c1-exam-01-listening",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "paper": "listening",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "You will hear three different extracts. For questions 1–6, choose the answer (A, B or C) which fits best according to what you hear. There are two questions for each extract.",
+      "groups": [
+        {
+          "context": "Extract One. You hear two colleagues discussing a training course they have just attended.",
+          "recording": {
+            "id": "r01",
+            "speakers": [
+              { "id": "man", "name": "Man", "accent": "en-GB", "gender": "male" },
+              { "id": "woman", "name": "Woman", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "man", "text": "So, was that worth two days of our lives?" },
+              {
+                "speaker": "woman",
+                "text": "Honestly? I thought the trainer knew her stuff. She'd clearly done her homework on how our department works."
+              },
+              {
+                "speaker": "man",
+                "text": "Oh, she was fine. Impressive, even. But did it really need two days? Everything useful could have been said by lunchtime on the first."
+              },
+              {
+                "speaker": "woman",
+                "text": "I can't argue with that. All those group exercises where we wrote things on coloured paper..."
+              },
+              {
+                "speaker": "man",
+                "text": "Exactly. Though I'd expected it to be too basic, and it wasn't. Some of it was quite new to me."
+              },
+              {
+                "speaker": "woman",
+                "text": "Me too. I'm actually itching to have a go at the feedback model she showed us. I've got a meeting with my team on Thursday, and I'm going to use it then, before I forget how it works."
+              },
+              { "speaker": "man", "text": "Won't you need to clear that with Helen?" },
+              {
+                "speaker": "woman",
+                "text": "I doubt she'll even notice. And if it works, she'll be the first to take the credit."
+              }
+            ],
+            "audio": { "src": "audio/exams/c1/c1-exam-01-listening/v1/r01.m4a", "duration_s": 43.967 }
+          },
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "What do the two speakers agree about the course?",
+              "options": [
+                "It was pitched at the wrong level.", "The trainer was poorly prepared.",
+                "It lasted longer than was necessary."
+              ],
+              "answer": 2,
+              "explanation_es": "Él dice que todo lo útil cabía en una mañana y ella contesta «I can't argue with that». La formadora les pareció buena y el nivel, mejor de lo esperado."
+            },
+            {
+              "n": 2,
+              "prompt": "How does the woman feel about using what she learned?",
+              "options": [
+                "keen to try it out straight away", "doubtful that her manager will allow it",
+                "unsure whether she has understood it"
+              ],
+              "answer": 0,
+              "explanation_es": "«I'm actually itching to have a go»: lo va a usar el jueves. De su jefa dice que ni se dará cuenta."
+            }
+          ]
+        },
+        {
+          "context": "Extract Two. You hear part of a radio discussion in which two critics are talking about a new museum building.",
+          "recording": {
+            "id": "r02",
+            "speakers": [
+              { "id": "woman", "name": "Woman", "accent": "en-GB", "gender": "female" },
+              { "id": "man", "name": "Daniel", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "woman", "text": "I know you weren't won over, Daniel." },
+              {
+                "speaker": "man",
+                "text": "It's a spectacular object, I'll give it that. And I've no quarrel with the way it sits beside the old warehouses. That contrast is rather thrilling. My problem starts once you're inside."
+              },
+              {
+                "speaker": "man",
+                "text": "You walk through these soaring, twisting spaces, and then you arrive at a fourteenth-century carving the size of your hand, and you can barely bring yourself to look at it. The building has already used up all your astonishment."
+              },
+              {
+                "speaker": "woman",
+                "text": "But isn't that a risk worth taking? A museum that nobody visits serves no one, and this one has had queues round the block since it opened."
+              },
+              {
+                "speaker": "woman",
+                "text": "A timid building wouldn't have done that. I'd rather have something that overreaches than another polite glass box."
+              },
+              { "speaker": "man", "text": "Even at that price?" },
+              { "speaker": "woman", "text": "The cost is a matter for the city's accountants, not for us." }
+            ],
+            "audio": { "src": "audio/exams/c1/c1-exam-01-listening/v1/r02.m4a", "duration_s": 46.096 }
+          },
+          "questions": [
+            {
+              "n": 3,
+              "prompt": "What is the man's main criticism of the building?",
+              "options": [
+                "It fails to fit in with its surroundings.", "It distracts visitors from what it contains.",
+                "It cost far more than could be justified."
+              ],
+              "answer": 1,
+              "explanation_es": "Cuando llegas a una pieza pequeña, «the building has already used up all your astonishment». El contraste con los almacenes le gusta, y el precio solo lo menciona de pasada."
+            },
+            {
+              "n": 4,
+              "prompt": "The woman suggests that the architect",
+              "options": [
+                "misunderstood what the museum needed.", "has repeated ideas from earlier projects.",
+                "was right to take an ambitious approach."
+              ],
+              "answer": 2,
+              "explanation_es": "«I'd rather have something that overreaches than another polite glass box»: defiende la apuesta arriesgada, que además ha llenado el museo."
+            }
+          ]
+        },
+        {
+          "context": "Extract Three. You hear two friends talking about the man's decision to give up social media.",
+          "recording": {
+            "id": "r03",
+            "speakers": [
+              { "id": "woman", "name": "Woman", "accent": "en-US", "gender": "female" },
+              { "id": "man", "name": "Man", "accent": "en-US", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "woman",
+                "text": "So you've really deleted everything? What brought that on? I know you were worried about what those companies do with your data."
+              },
+              {
+                "speaker": "man",
+                "text": "I was, and I still am, but that's not what tipped me over. I realised I couldn't read a book any more. I'd get to the bottom of a page and reach for my phone without even deciding to. Twenty minutes of anything was beyond me."
+              },
+              { "speaker": "woman", "text": "And has it worked? You must have hours to spare now." },
+              {
+                "speaker": "man",
+                "text": "Less than you'd think. I seem to have filled them with other nonsense. And I can't pretend I don't miss it. I do, especially the silly videos."
+              },
+              {
+                "speaker": "man",
+                "text": "No, what I wasn't prepared for was people taking it personally. Two friends have asked whether they'd done something to offend me. One actually phoned to check I was all right."
+              }
+            ],
+            "audio": { "src": "audio/exams/c1/c1-exam-01-listening/v1/r03.m4a", "duration_s": 39.518 }
+          },
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "Why did the man decide to stop using social media?",
+              "options": [
+                "He felt it was damaging his ability to concentrate.", "He was concerned about his privacy.",
+                "He was upset by other people's comments."
+              ],
+              "answer": 0,
+              "explanation_es": "La privacidad le preocupa, «but that's not what tipped me over»: lo decisivo fue que ya no podía leer un libro ni aguantar veinte minutos con nada."
+            },
+            {
+              "n": 6,
+              "prompt": "What has surprised the man since he stopped?",
+              "options": ["how little he misses it", "how much free time he has gained", "how his friends have reacted"],
+              "answer": 2,
+              "explanation_es": "«What I wasn't prepared for was people taking it personally». Reconoce que lo echa de menos y que no le sobra tanto tiempo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "completion",
+      "rubric": "You will hear a marine biologist called Dr Anika Rao giving a talk about her research on octopuses. For questions 7–14, complete the sentences with a word or short phrase.",
+      "title": "Studying the octopus",
+      "text": "Anika's original research was on a sea plant called {{7}}.\nThe first octopus she got to know took a {{8}} from her.\nAnika believes octopus intelligence is best compared with that of a {{9}}.\nA newly hatched octopus is about the size of a grain of {{10}}.\nAnika mentions octopuses carrying a {{11}} to use as a shelter.\nAnika says the main obstacle to studying octopuses is their short {{12}}.\nHer team now identifies each octopus by the pattern of {{13}} on its skin.\nIn scientific papers, the team uses the word {{14}} rather than 'personality'.",
+      "gaps": [
+        {
+          "n": 7,
+          "accept": ["seagrass", "sea grass"],
+          "explanation_es": "«My doctorate was on seagrass», una planta marina."
+        },
+        {
+          "n": 8,
+          "accept": ["pencil"],
+          "explanation_es": "El pulpo «took the pencil out of my hand». Nunca lo recuperó."
+        },
+        {
+          "n": 9,
+          "accept": ["crow"],
+          "explanation_es": "Rechaza la comparación habitual con el perro: «A better comparison would be with a crow»."
+        },
+        {
+          "n": 10,
+          "accept": ["rice"],
+          "explanation_es": "Sale de un huevo «no bigger than a grain of rice»."
+        },
+        {
+          "n": 11,
+          "accept": ["coconut shell", "coconut"],
+          "explanation_es": "Puede «carry a coconut shell around to use as a shelter». El tarro es lo que abre, no donde se refugia."
+        },
+        {
+          "n": 12,
+          "accept": ["lifespan", "life span", "lives", "life"],
+          "explanation_es": "«The biggest obstacle isn't the cold, or even the depth. It's their lifespan»: viven poco más de un año."
+        },
+        {
+          "n": 13,
+          "accept": ["spots"],
+          "explanation_es": "Las etiquetas se las quitaban; funcionó fotografiar «the pattern of spots», tan individual como una huella dactilar."
+        },
+        {
+          "n": 14,
+          "accept": ["temperament"],
+          "explanation_es": "«In our papers, we call it temperament»."
+        }
+      ],
+      "recording": {
+        "id": "r04",
+        "speakers": [
+          { "id": "anika", "name": "Dr Anika Rao", "accent": "en-GB", "gender": "female" }
+        ],
+        "segments": [
+          {
+            "speaker": "anika",
+            "text": "Good evening. I'm Anika Rao, and for the past twelve years I've studied octopuses off the coast of South Australia. I should say at once that I didn't set out to. My doctorate was on seagrass, which, as you can imagine, makes for less lively conversation at parties.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "anika",
+            "text": "It was while I was counting seagrass plants that I first noticed an octopus watching me from a crack in the rock. It came back the next day, and the next. Eventually, it reached out and took the pencil out of my hand. I never got it back, and I never really went back to my seagrass either.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "anika",
+            "text": "What fascinates me is how these animals solve problems. People often compare their intelligence to that of a dog, but I think that's misleading. A better comparison would be with a crow: an animal that works things out alone, by experiment, rather than by watching its parents.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "anika",
+            "text": "That solitary life is the key. An octopus hatches from an egg no bigger than a grain of rice, and from that moment it's on its own. Nobody teaches it anything. And yet, within months, it can open a jar, or carry a coconut shell around to use as a shelter.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "anika",
+            "text": "Studying them isn't easy. The biggest obstacle isn't the cold, or even the depth. It's their lifespan. Most of the animals I work with live for little more than a year, so just as I'm getting to know an individual, I lose it.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "anika",
+            "text": "They're also remarkably hard to keep track of. We tried attaching small tags, but the octopuses simply pulled them off. What finally worked was photographing the pattern of spots on each animal's skin, which turns out to be as individual as a fingerprint.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "anika",
+            "text": "People ask me whether octopuses have personalities. As a scientist, I'm supposed to be cautious about that word. All I can tell you is that some of them rush out to investigate a camera, and others hide for a week. In our papers, we call it temperament. Among ourselves, we're rather less careful.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "anika",
+            "text": "I'm often asked what worries me most. It isn't fishing, as you might expect. It's the warming of the water, which is already pushing some species further south each year. Thank you."
+          }
+        ],
+        "audio": { "src": "audio/exams/c1/c1-exam-01-listening/v1/r04.m4a", "duration_s": 113.932 }
+      }
+    },
+    {
+      "type": "mcq",
+      "rubric": "You will hear an interview in which a novelist called Grace Okonkwo and her translator, Martin Hale, are talking about literary translation. For questions 15–20, choose the answer (A, B, C or D) which fits best according to what you hear.",
+      "groups": [
+        {
+          "recording": {
+            "id": "r05",
+            "speakers": [
+              { "id": "interviewer", "name": "Interviewer", "accent": "en-US", "gender": "male" },
+              { "id": "grace", "name": "Grace Okonkwo", "accent": "en-GB", "gender": "female" },
+              { "id": "martin", "name": "Martin Hale", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "interviewer",
+                "text": "My guests today are the novelist Grace Okonkwo, and Martin Hale, who has translated three of her books into German. Grace, what's it like to know your work exists in a language you don't speak?"
+              },
+              {
+                "speaker": "grace",
+                "text": "People assume it must be unsettling to hand a book over like that. I actually find it rather liberating. Once it's in German, it's no longer entirely mine, and I'm not answerable for every comma."
+              },
+              {
+                "speaker": "grace",
+                "text": "What does unnerve me is the reviews. A German critic praised the dry wit of my second novel, and I'd thought it was my saddest book."
+              },
+              { "speaker": "interviewer", "text": "Martin, was the wit yours?" },
+              {
+                "speaker": "martin",
+                "text": "I hope not! My job isn't to improve on Grace, though heaven knows translators are tempted. I'd say what happened is that sadness in English often hides behind understatement, and German readers heard the understatement as irony."
+              },
+              {
+                "speaker": "martin",
+                "text": "I could have spelled the emotion out, but then it would have been a different book, and I think a worse one. You have to trust the reader to get there."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "How much do the two of you actually talk while a translation is under way?"
+              },
+              {
+                "speaker": "martin",
+                "text": "Less than people imagine. I send Grace a list of queries. Usually about forty."
+              },
+              {
+                "speaker": "grace",
+                "text": "And they're terrifying. He'll ask, on page ninety, is the door open or closed? And I realise I never decided."
+              },
+              {
+                "speaker": "grace",
+                "text": "A translator is the closest reader a writer will ever have, far closer than any editor, and it's humbling to discover how much you left vague without meaning to."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "Martin, is there anything that simply can't be translated?"
+              },
+              {
+                "speaker": "martin",
+                "text": "Everyone expects me to say jokes or poetry, and they are hard. But you can usually find an equivalent joke. The thing that defeats me is dialect."
+              },
+              {
+                "speaker": "martin",
+                "text": "When a character in Grace's novel speaks in the English of Lagos, that tells an English reader a hundred things about class and education. If I put her into Bavarian dialect, she becomes a Bavarian, which is absurd. So I lose it, and I've never found a solution I'm happy with."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "There's a lot of talk about machines doing this work. Does that worry you?"
+              },
+              {
+                "speaker": "martin",
+                "text": "For instruction manuals, it's already happened, and frankly, good riddance. For novels, I'm less afraid of the machine than of the publisher who decides that a machine's version, tidied up by an underpaid human, is good enough."
+              },
+              {
+                "speaker": "martin",
+                "text": "The danger isn't that the software is brilliant. It's that readers may stop noticing the difference."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "Grace, a last word. Has being translated changed how you write?"
+              },
+              {
+                "speaker": "grace",
+                "text": "I'd love to say no. But I catch myself, now and then, hesitating over a pun and thinking, poor Martin. And then I leave it in."
+              },
+              {
+                "speaker": "grace",
+                "text": "I've decided that the moment I start writing for translation, I'll be writing a kind of airport English that belongs nowhere. The book has to be stubbornly itself. It's Martin's job to suffer."
+              }
+            ],
+            "audio": { "src": "audio/exams/c1/c1-exam-01-listening/v1/r05.m4a", "duration_s": 156.73 }
+          },
+          "questions": [
+            {
+              "n": 15,
+              "prompt": "How does Grace feel about having her books translated?",
+              "options": [
+                "anxious about losing control of them", "relieved of part of the responsibility for them",
+                "frustrated at being unable to judge the result",
+                "indifferent to how they are received abroad"
+              ],
+              "answer": 1,
+              "explanation_es": "«I actually find it rather liberating… I'm not answerable for every comma». Lo que la inquieta son las reseñas, así que indiferente no es."
+            },
+            {
+              "n": 16,
+              "prompt": "What does Martin say about the 'dry wit' found in his translation?",
+              "options": [
+                "It resulted from a deliberate decision to lighten the book.",
+                "It was a mistake that he would now correct.",
+                "It arose from the way a feature of the original was understood.",
+                "It shows that German readers expect humour in fiction."
+              ],
+              "answer": 2,
+              "explanation_es": "La tristeza iba detrás de la contención inglesa («understatement») y los lectores alemanes la oyeron como ironía. No fue una decisión suya ni lo considera un error."
+            },
+            {
+              "n": 17,
+              "prompt": "What does Grace find 'terrifying' about Martin's questions?",
+              "options": [
+                "They expose things she had not thought through.", "They reveal weaknesses in her plots.",
+                "They show how carelessly most people read.", "They take a great deal of time to answer."
+              ],
+              "answer": 0,
+              "explanation_es": "«And I realise I never decided»: descubre cuánto dejó vago sin querer. No habla de fallos de trama."
+            },
+            {
+              "n": 18,
+              "prompt": "According to Martin, what is the hardest thing to translate?",
+              "options": [
+                "humour that depends on wordplay", "the rhythm of poetic language",
+                "references to places unfamiliar abroad",
+                "the social information carried by a way of speaking"
+              ],
+              "answer": 3,
+              "explanation_es": "«The thing that defeats me is dialect»: el habla de Lagos dice cien cosas de clase y educación que se pierden. Para los chistes suele haber un equivalente."
+            },
+            {
+              "n": 19,
+              "prompt": "What is Martin's concern about machine translation of novels?",
+              "options": [
+                "that it will soon match the quality of human work",
+                "that lower standards will come to be accepted",
+                "that translators will refuse to work alongside it",
+                "that it will be used for the wrong kinds of text"
+              ],
+              "answer": 1,
+              "explanation_es": "No teme que el programa sea brillante, sino que el editor lo dé por bueno y «readers may stop noticing the difference»."
+            },
+            {
+              "n": 20,
+              "prompt": "What does Grace say about the effect of translation on her own writing?",
+              "options": [
+                "She has simplified her style to help her translators.",
+                "She now avoids humour that depends on language.",
+                "She consults Martin before she finishes a book.",
+                "She is aware of the temptation to adapt but resists it."
+              ],
+              "answer": 3,
+              "explanation_es": "Duda ante un juego de palabras pensando en Martin, «and then I leave it in»: no quiere escribir un inglés de aeropuerto."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "You will hear five short extracts in which people are talking about doing voluntary work. While you listen, you must complete both tasks.",
+      "recording": {
+        "id": "r06",
+        "speakers": [
+          { "id": "narrator", "name": "Narrator", "accent": "en-GB", "gender": "female" },
+          { "id": "one", "name": "Speaker 1", "accent": "en-GB", "gender": "female" },
+          { "id": "two", "name": "Speaker 2", "accent": "en-US", "gender": "male" },
+          { "id": "three", "name": "Speaker 3", "accent": "en-US", "gender": "female" },
+          { "id": "four", "name": "Speaker 4", "accent": "en-GB", "gender": "male" },
+          { "id": "five", "name": "Speaker 5", "accent": "en-US", "gender": "female" }
+        ],
+        "segments": [
+          { "speaker": "narrator", "text": "Speaker one.", "pause_after_ms": 900 },
+          {
+            "speaker": "one",
+            "text": "When I retired from the bank, I had this picture of myself gardening and reading. That lasted about six weeks. I was climbing the walls. A neighbour mentioned that the food bank needed someone on Tuesdays, and I'd have said yes to almost anything by then."
+          },
+          {
+            "speaker": "one",
+            "text": "I'm slightly ashamed to say I arrived with fixed ideas about the kind of person who'd need free food. Within a month, I'd met nurses, a former teacher, people working two jobs. I still think about how wrong I was. My husband says I've become much better company, though whether that's the volunteering or just getting out of the house, I couldn't say.",
+            "pause_after_ms": 2500
+          },
+          { "speaker": "narrator", "text": "Speaker two.", "pause_after_ms": 900 },
+          {
+            "speaker": "two",
+            "text": "I'll be honest. I signed up to coach at the youth club because my job applications were getting nowhere, and everyone said employers like to see that sort of thing. I wasn't especially interested in children, or in football, come to that."
+          },
+          {
+            "speaker": "two",
+            "text": "What I hadn't bargained for was how much I'd enjoy explaining things. Watching a kid finally understand something he's struggled with for weeks... I'd never felt anything like it in an office. I've now applied to train as a teacher, which would have astonished me a year ago. I can't say it's made me any more confident. I still feel sick before every session. But at least I know where I'm heading.",
+            "pause_after_ms": 2500
+          },
+          { "speaker": "narrator", "text": "Speaker three.", "pause_after_ms": 900 },
+          {
+            "speaker": "three",
+            "text": "Two years ago, I was in hospital for months, and there was a volunteer who came round with a trolley of books every afternoon. She never asked how I was feeling, which was exactly what I needed. When I recovered, there was no question in my mind about what I'd do."
+          },
+          {
+            "speaker": "three",
+            "text": "I've been doing the same round for a year now. People say it must have made me lots of friends, but the patients come and go, and it isn't really about that. What it's done is put things in proportion. I used to lie awake over a rude email from my boss. Now I see what other people are dealing with, and the email looks rather small.",
+            "pause_after_ms": 2500
+          },
+          { "speaker": "narrator", "text": "Speaker four.", "pause_after_ms": 900 },
+          {
+            "speaker": "four",
+            "text": "I've lived in this valley all my life, and it's given me a great deal. So when the river group asked for help clearing the banks, it didn't feel like a choice. More like paying a debt. I can't claim I learned anything. I've been handling a spade since I was six."
+          },
+          {
+            "speaker": "four",
+            "text": "What I didn't see coming was Dmitri. He's a retired engineer from St Petersburg, about as different from me as it's possible to be, and we got put on the same stretch of bank. We argued about everything for six months. Now we have dinner together every Friday, and my wife says she's never known me talk so much.",
+            "pause_after_ms": 2500
+          },
+          { "speaker": "narrator", "text": "Speaker five.", "pause_after_ms": 900 },
+          {
+            "speaker": "five",
+            "text": "I'm an accountant, and I'd reached the point where I wondered whether my skills did anybody any real good. A small theatre company near me was in a mess with its finances, so I offered them an evening a week. I assumed I'd sort out their spreadsheets and remain an outsider. Numbers people usually are."
+          },
+          {
+            "speaker": "five",
+            "text": "Instead, they've rather adopted me. I'm invited to rehearsals. I'm consulted about posters, heaven help them. I moved to this city nine years ago, and never felt it was mine. For the first time, I walk down the high street and people wave. It hasn't done my career any good at all, and I couldn't care less."
+          }
+        ],
+        "audio": { "src": "audio/exams/c1/c1-exam-01-listening/v1/r06.m4a", "duration_s": 184.865 }
+      },
+      "tasks": [
+        {
+          "heading": "TASK ONE. For questions 21–25, choose from the list (A–H) the reason each speaker gives for starting to volunteer.",
+          "options": [
+            { "id": "A", "text": "a wish to put professional skills to good use" },
+            { "id": "B", "text": "pressure from a relative" },
+            { "id": "C", "text": "a sense of obligation to the local area" },
+            { "id": "D", "text": "the need to fill empty time" },
+            { "id": "E", "text": "curiosity about a particular organisation" },
+            { "id": "F", "text": "a desire to meet new people" },
+            { "id": "G", "text": "the experience of having been helped" },
+            { "id": "H", "text": "the hope of improving career prospects" }
+          ],
+          "questions": [
+            {
+              "n": 21,
+              "prompt": "Speaker 1",
+              "answer": "D",
+              "explanation_es": "Tras jubilarse se subía por las paredes: habría dicho que sí a casi cualquier cosa. La vecina solo le dio la idea."
+            },
+            {
+              "n": 22,
+              "prompt": "Speaker 2",
+              "answer": "H",
+              "explanation_es": "Se apuntó porque sus solicitudes de trabajo no iban a ninguna parte y a las empresas les gusta ver eso en el currículum."
+            },
+            {
+              "n": 23,
+              "prompt": "Speaker 3",
+              "answer": "G",
+              "explanation_es": "Una voluntaria la ayudó cuando estuvo ingresada; al recuperarse tuvo claro lo que haría."
+            },
+            {
+              "n": 24,
+              "prompt": "Speaker 4",
+              "answer": "C",
+              "explanation_es": "El valle le ha dado mucho: ayudar al grupo del río fue «more like paying a debt»."
+            },
+            {
+              "n": 25,
+              "prompt": "Speaker 5",
+              "answer": "A",
+              "explanation_es": "Es contable y se preguntaba si sus conocimientos le servían a alguien; se los ofreció a una compañía de teatro."
+            }
+          ]
+        },
+        {
+          "heading": "TASK TWO. For questions 26–30, choose from the list (A–H) what each speaker has gained from volunteering.",
+          "options": [
+            { "id": "A", "text": "greater self-confidence" },
+            { "id": "B", "text": "an unexpected friendship" },
+            { "id": "C", "text": "a clearer idea of what to do next" },
+            { "id": "D", "text": "a more balanced view of their own problems" },
+            { "id": "E", "text": "practical abilities they lacked" },
+            { "id": "F", "text": "a sense of belonging" },
+            { "id": "G", "text": "a better relationship with a family member" },
+            { "id": "H", "text": "respect for people they had misjudged" }
+          ],
+          "questions": [
+            {
+              "n": 26,
+              "prompt": "Speaker 1",
+              "answer": "H",
+              "explanation_es": "Llegó con ideas fijas sobre quién necesita comida gratis y conoció a enfermeras y profesores: «how wrong I was»."
+            },
+            {
+              "n": 27,
+              "prompt": "Speaker 2",
+              "answer": "C",
+              "explanation_es": "Ha solicitado formarse como profesor: «at least I know where I'm heading». Más seguro no se siente."
+            },
+            {
+              "n": 28,
+              "prompt": "Speaker 3",
+              "answer": "D",
+              "explanation_es": "«What it's done is put things in proportion»: el correo grosero del jefe ahora le parece poca cosa. Amigos no ha hecho."
+            },
+            {
+              "n": 29,
+              "prompt": "Speaker 4",
+              "answer": "B",
+              "explanation_es": "Lo que no vio venir fue a Dmitri, tan distinto a él, con quien ahora cena cada viernes. Aprender, no aprendió nada."
+            },
+            {
+              "n": 30,
+              "prompt": "Speaker 5",
+              "answer": "F",
+              "explanation_es": "La han adoptado: por primera vez siente que la ciudad es suya y la gente la saluda por la calle."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
