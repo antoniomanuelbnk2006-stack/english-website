@@ -34,7 +34,10 @@ jobs:
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: pnpm }
+      # La acción instala por defecto un CLI antiguo que no entiende supabase/config.toml:
+      # se fija la misma versión que en package.json.
       - uses: supabase/setup-cli@v1
+        with: { version: 2.120.0 }
       - run: pnpm install --frozen-lockfile
       - run: supabase start
       # Los tipos de la BD deben estar generados y al día. Mientras el fichero sea el
