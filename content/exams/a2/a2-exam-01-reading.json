@@ -1,0 +1,249 @@
+{
+  "id": "a2-exam-01-reading",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "paper": "reading",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "For each question, choose the correct answer (A, B or C).",
+      "groups": [
+        {
+          "text": "LIBRARY\nOpen Monday to Saturday, 9 a.m. – 6 p.m.\nClosed all day Sunday.",
+          "questions": [
+            {
+              "n": 1,
+              "options": [
+                "You can borrow books every day of the week.",
+                "The library is not open on Sundays.",
+                "The library opens later on Saturdays."
+              ],
+              "answer": 1,
+              "explanation_es": "«Closed all day Sunday»: los domingos no abre. De lunes a sábado tiene el mismo horario."
+            }
+          ]
+        },
+        {
+          "text": "Anna,\nYour dentist phoned. Your appointment is now on Thursday at 3, not Tuesday.\nMum",
+          "questions": [
+            {
+              "n": 2,
+              "options": [
+                "Anna must phone the dentist on Tuesday.",
+                "Anna's appointment is on a different day now.",
+                "Anna's mum is going to the dentist on Thursday."
+              ],
+              "answer": 1,
+              "explanation_es": "La cita ha cambiado: «now on Thursday… not Tuesday». Quien llamó fue el dentista, y la cita es de Anna, no de su madre."
+            }
+          ]
+        },
+        {
+          "text": "CITY PARK\nPlease keep dogs on a lead near the children's play area.",
+          "questions": [
+            {
+              "n": 3,
+              "options": [
+                "Dogs cannot come into this park.",
+                "Children must not play with dogs.",
+                "Dogs must not run free near the place where children play."
+              ],
+              "answer": 2,
+              "explanation_es": "«On a lead» = con correa. Los perros pueden entrar, pero atados cerca de la zona de juegos."
+            }
+          ]
+        },
+        {
+          "text": "Hi Tom,\nI can't play tennis tomorrow because I've hurt my arm. Shall we go to the cinema instead?\nBen",
+          "questions": [
+            {
+              "n": 4,
+              "options": [
+                "Ben wants to do something different with Tom.",
+                "Ben wants Tom to play tennis with another person.",
+                "Ben cannot go out tomorrow."
+              ],
+              "answer": 0,
+              "explanation_es": "No puede jugar al tenis y propone ir al cine «instead» (en su lugar): otro plan con Tom."
+            }
+          ]
+        },
+        {
+          "text": "SUNNY CAFÉ\nHalf-price sandwiches after 4 p.m. every day.",
+          "questions": [
+            {
+              "n": 5,
+              "options": [
+                "Sandwiches cost less late in the day.",
+                "You can only buy sandwiches after four o'clock.",
+                "Sandwiches are free with a drink."
+              ],
+              "answer": 0,
+              "explanation_es": "«Half-price… after 4 p.m.»: a partir de las cuatro cuestan la mitad. Se pueden comprar antes, pero al precio normal."
+            }
+          ]
+        },
+        {
+          "text": "STUDENTS\nLost property is kept in the school office.\nAsk Mrs Green if you can't find something.",
+          "questions": [
+            {
+              "n": 6,
+              "options": [
+                "Mrs Green has lost something.",
+                "Students should take things they find to their classroom.",
+                "Students can look for missing things at the office."
+              ],
+              "answer": 2,
+              "explanation_es": "«Lost property» son los objetos perdidos: están en la secretaría y hay que preguntar a la señora Green."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "For each question, choose the correct answer (A, B or C). Read what three young people say about their favourite shop.",
+      "title": "My favourite shop",
+      "tasks": [
+        {
+          "options": [
+            {
+              "id": "A",
+              "title": "Lena",
+              "text": "I love the bookshop near my school. It's very small, and the owner knows all his customers. I go there every Friday after class. I don't always buy something, because books are expensive, but I like looking at the new ones. There's a cat that sleeps in the window, and a table where you can sit and read. Last week the owner gave me a free bookmark."
+            },
+            {
+              "id": "B",
+              "title": "Carlos",
+              "text": "My favourite shop is a big sports shop in the shopping centre. I go with my dad about once a month. It's got three floors, and it sells everything for football and basketball. The prices are quite high, so I usually wait for the sales. The people who work there are friendly, but it's always very busy, and you have to wait a long time to pay."
+            },
+            {
+              "id": "C",
+              "title": "Mei",
+              "text": "There's a music shop in my town that sells old records and second-hand guitars. I discovered it last year, and now I go every Saturday morning with my best friend. Everything is cheap, and the owner lets us play the guitars for as long as we like. It isn't very modern, and it's sometimes cold inside, but I've bought some great things there."
+            }
+          ],
+          "questions": [
+            { "n": 7, "prompt": "Who goes to the shop with someone in their family?", "answer": "B", "explanation_es": "Carlos va «with my dad». Mei va con su mejor amiga, que no es de la familia." },
+            { "n": 8, "prompt": "Who says that things in the shop do not cost much?", "answer": "C", "explanation_es": "Mei: «Everything is cheap». Lena dice que los libros son caros, y Carlos, que los precios son altos." },
+            { "n": 9, "prompt": "Who visits the shop once a week on a school day?", "answer": "A", "explanation_es": "Lena va «every Friday after class». Mei también va cada semana, pero los sábados." },
+            { "n": 10, "prompt": "Who says there are too many people in the shop?", "answer": "B", "explanation_es": "Carlos: «it's always very busy, and you have to wait a long time to pay»." },
+            { "n": 11, "prompt": "Who got something without paying for it?", "answer": "A", "explanation_es": "A Lena el dueño le regaló un marcapáginas: «a free bookmark»." },
+            { "n": 12, "prompt": "Who found the shop not very long ago?", "answer": "C", "explanation_es": "Mei: «I discovered it last year»." },
+            { "n": 13, "prompt": "Who talks about an animal in the shop?", "answer": "A", "explanation_es": "En la librería de Lena hay un gato que duerme en el escaparate." }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "For each question, choose the correct answer (A, B or C).",
+      "title": "A job on Saturdays",
+      "groups": [
+        {
+          "text": "Emily Parker is sixteen and lives in a small town in the north of England. Every Saturday she works at a garden centre, selling plants and helping customers.\n\nEmily started the job last spring. 'I wanted to buy a new phone, and my parents said I had to pay for it myself,' she explains. 'My aunt works at the garden centre, and she told me they needed someone.'\n\nAt first, the work was difficult. Emily didn't know the names of the plants, and she was afraid of giving customers the wrong information. 'I took a book home and studied it every evening for two weeks,' she says. 'Now I can answer most questions.'\n\nShe starts at half past eight and finishes at five, with an hour for lunch. In the morning she waters the plants, and in the afternoon she works in the shop. 'The mornings are the best part,' she says. 'It's quiet, and I'm outside. The afternoons are busy, and my feet hurt by the end of the day.'\n\nEmily bought her phone three months ago, but she hasn't stopped working. 'I thought I would leave when I had enough money,' she says. 'But I like the people there, and I've learned a lot. Next year I want to study biology, so it's useful too.'\n\nHer friends sometimes ask her to go shopping with them on Saturdays. 'I can't, of course,' Emily says. 'But I see them on Sundays, and now I'm the one who can pay for the pizza!'",
+          "questions": [
+            {
+              "n": 14,
+              "prompt": "Why did Emily start working at the garden centre?",
+              "options": ["Her aunt needed help.", "She wanted money to buy something.", "Her parents told her to get a job."],
+              "answer": 1,
+              "explanation_es": "Quería un móvil nuevo y tenía que pagárselo ella. Su tía solo le dijo que buscaban a alguien."
+            },
+            {
+              "n": 15,
+              "prompt": "What did Emily do to get better at her job?",
+              "options": ["She learned about plants at home.", "She asked the customers questions.", "She did a two-week course."],
+              "answer": 0,
+              "explanation_es": "Se llevó un libro a casa y lo estudió todas las tardes durante dos semanas. No fue un curso."
+            },
+            {
+              "n": 16,
+              "prompt": "What does Emily like most about her working day?",
+              "options": ["having lunch with the other workers", "working in the shop", "being outdoors in the morning"],
+              "answer": 2,
+              "explanation_es": "«The mornings are the best part. It's quiet, and I'm outside». Por la tarde hay mucha gente y le duelen los pies."
+            },
+            {
+              "n": 17,
+              "prompt": "Why does Emily still work at the garden centre?",
+              "options": ["She has not bought her phone yet.", "She enjoys it, and it helps with her studies.", "Her friends work there too."],
+              "answer": 1,
+              "explanation_es": "El móvil lo compró hace tres meses. Sigue porque le gusta la gente, ha aprendido mucho y quiere estudiar Biología."
+            },
+            {
+              "n": 18,
+              "prompt": "What does Emily say about her friends?",
+              "options": ["She meets them on a different day.", "They often visit her at work.", "They pay for her pizza."],
+              "answer": 0,
+              "explanation_es": "Los sábados no puede quedar, pero los ve los domingos. La que paga la pizza ahora es ella."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq_cloze",
+      "rubric": "For each question, choose the correct answer (A, B or C).",
+      "title": "Penguins",
+      "text": "Penguins are birds, but they cannot {{19}}. Instead, they are very good swimmers, and they {{20}} most of their lives in the sea. There are about eighteen different {{21}} of penguin. The largest is the emperor penguin, which can be more than one metre {{22}}.\n\nMost penguins live in cold places, but some live on warm islands near South America. They eat fish and other small sea animals. Penguins usually stay with the same partner for many years, and {{23}} parents look after the baby. A young penguin stays with its family {{24}} it is old enough to swim.",
+      "gaps": [
+        { "n": 19, "options": ["fly", "jump", "walk"], "answer": 0, "explanation_es": "Son aves, «but»: lo que no pueden hacer es volar. Andar y saltar sí pueden." },
+        { "n": 20, "options": ["pass", "spend", "take"], "answer": 1, "explanation_es": "«Spend time / your life» = pasar el tiempo o la vida. «Pass» no se usa así." },
+        { "n": 21, "options": ["types", "ways", "parts"], "answer": 0, "explanation_es": "«Types of penguin» = tipos de pingüino." },
+        { "n": 22, "options": ["long", "high", "tall"], "answer": 2, "explanation_es": "Para la altura de personas y animales se usa «tall»: «one metre tall»." },
+        { "n": 23, "options": ["every", "both", "all"], "answer": 1, "explanation_es": "Son dos padres: «both parents». «Every» iría con singular, y «all», con tres o más." },
+        { "n": 24, "options": ["until", "during", "since"], "answer": 0, "explanation_es": "«Until» = hasta que. «During» va con un sustantivo y «since» significa «desde»." }
+      ]
+    },
+    {
+      "type": "open_cloze",
+      "rubric": "For each question, write the correct answer. Write one word for each gap.",
+      "title": "An email from Jack",
+      "text": "Hi Oliver,\n\nHow are you? I'm writing to tell you about my new school. It's much bigger {{25}} my old one, and there {{26}} more than a thousand students! I was a bit nervous on the first day, but everyone is very friendly.\n\nMy favourite subject is art. We have it twice {{27}} week, and the teacher is great. I've made some new friends, and we play basketball together {{28}} lunchtime.\n\nWould you like {{29}} come and visit me next month? You can stay at my house. Write and tell me {{30}} you are free.\n\nJack",
+      "gaps": [
+        { "n": 25, "accept": ["than"], "explanation_es": "Comparativo («bigger») + «than»." },
+        { "n": 26, "accept": ["are"], "explanation_es": "«There are» + plural («a thousand students»)." },
+        { "n": 27, "accept": ["a", "per", "each", "every"], "explanation_es": "«Twice a week» = dos veces por semana." },
+        { "n": 28, "accept": ["at", "every", "each"], "explanation_es": "«At lunchtime» = a la hora de comer." },
+        { "n": 29, "accept": ["to"], "explanation_es": "«Would you like to + infinitivo» para invitar." },
+        { "n": 30, "accept": ["when", "if", "whether"], "explanation_es": "«Tell me when you are free» = dime cuándo estás libre. También vale «if»." }
+      ]
+    },
+    {
+      "type": "writing",
+      "rubric": "Write an email. Write 25 words or more.",
+      "n": 31,
+      "prompt": "You want to go swimming with your English friend Alex on Saturday. Write an email to Alex.\n\nIn your email:\n• ask Alex to come swimming with you\n• say where you want to meet\n• say what Alex needs to bring.",
+      "min_words": 25,
+      "model_answer": "Hi Alex,\nWould you like to come swimming with me on Saturday? Let's meet outside the sports centre at ten o'clock. Don't forget to bring your towel and some money for a drink.\nSee you soon,\nSam",
+      "checklist_es": [
+        "¿Respondes a los tres puntos? Invitar, decir dónde quedar y decir qué tiene que traer.",
+        "¿Tiene saludo («Hi Alex») y despedida («See you soon»)?",
+        "¿Llega a 25 palabras?",
+        "¿Se entiende el mensaje aunque haya algún error?"
+      ]
+    },
+    {
+      "type": "writing",
+      "rubric": "Look at the three pictures. Write the story shown in the pictures. Write 35 words or more. (In the exam these are drawings; here they are described.)",
+      "n": 32,
+      "prompt": "Picture 1: A boy is walking in a park with his dog. There are some ducks on a lake.\n\nPicture 2: The dog is running away from the boy and jumping into the lake.\n\nPicture 3: The boy and the dog are at home. The dog is wet, and the boy is drying it with a towel and laughing.",
+      "min_words": 35,
+      "model_answer": "Last Sunday, Tom went to the park with his dog, Max. Suddenly, Max saw some ducks and ran away. He jumped into the lake! Tom called him, and Max came back, very wet. At home, Tom dried Max with a towel and laughed.",
+      "checklist_es": [
+        "¿Cuentas lo que pasa en las tres viñetas, en orden?",
+        "¿Usas el pasado («went», «saw», «jumped»)?",
+        "¿Unes las frases con «and», «then», «suddenly» o «because»?",
+        "¿Llega a 35 palabras?"
+      ]
+    }
+  ]
+}

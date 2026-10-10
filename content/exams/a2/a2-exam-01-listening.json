@@ -1,0 +1,536 @@
+{
+  "id": "a2-exam-01-listening",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "paper": "listening",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "For each question, choose the correct answer (A, B or C). In the exam the options are pictures; here they are written.",
+      "groups": [
+        {
+          "recording": {
+            "id": "r01",
+            "speakers": [
+              { "id": "girl", "name": "Girl", "accent": "en-GB", "gender": "female" },
+              { "id": "boy", "name": "Boy", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "girl", "text": "Shall we meet at two o'clock, outside the cinema?" },
+              { "speaker": "boy", "text": "I have a piano lesson until two. Can we say half past?" },
+              {
+                "speaker": "girl",
+                "text": "The film starts at three, so that's fine. See you at half past two."
+              }
+            ],
+            "audio": { "src": "audio/exams/a2/a2-exam-01-listening/v1/r01.m4a", "duration_s": 12.077 }
+          },
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "What time will they meet?",
+              "options": ["at 2.00", "at 2.30", "at 3.00"],
+              "answer": 1,
+              "explanation_es": "A las dos él tiene clase de piano y a las tres empieza la película: quedan «at half past two»."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r02",
+            "speakers": [
+              { "id": "customer", "name": "Customer", "accent": "en-GB", "gender": "female" },
+              { "id": "assistant", "name": "Shop assistant", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "customer",
+                "text": "Excuse me, how much is this T-shirt? My friend bought one here for eight pounds."
+              },
+              {
+                "speaker": "assistant",
+                "text": "That was in the sale. They are twelve pounds now. Oh, wait. This one is ten pounds, because it's the last one."
+              },
+              { "speaker": "customer", "text": "Great. I'll take it." }
+            ],
+            "audio": { "src": "audio/exams/a2/a2-exam-01-listening/v1/r02.m4a", "duration_s": 14.092 }
+          },
+          "questions": [
+            {
+              "n": 2,
+              "prompt": "How much is the T-shirt?",
+              "options": ["£10", "£8", "£12"],
+              "answer": 0,
+              "explanation_es": "Ocho libras costaba en rebajas y doce es el precio normal, pero esta es la última y vale diez."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r03",
+            "speakers": [
+              { "id": "man", "name": "Man", "accent": "en-GB", "gender": "male" },
+              { "id": "woman", "name": "Woman", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "man", "text": "Did you go to the beach at the weekend?" },
+              {
+                "speaker": "woman",
+                "text": "No, the weather was terrible. I wanted to visit my sister, but she was ill. So I stayed at home and watched films."
+              }
+            ],
+            "audio": { "src": "audio/exams/a2/a2-exam-01-listening/v1/r03.m4a", "duration_s": 9.779 }
+          },
+          "questions": [
+            {
+              "n": 3,
+              "prompt": "What did the woman do at the weekend?",
+              "options": ["She went to the beach.", "She visited her sister.", "She stayed at home."],
+              "answer": 2,
+              "explanation_es": "Hizo mal tiempo y su hermana estaba enferma: «I stayed at home and watched films»."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r04",
+            "speakers": [
+              { "id": "teacher", "name": "Teacher", "accent": "en-GB", "gender": "female" },
+              { "id": "boy", "name": "Sam", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "teacher", "text": "Is this black bag yours, Sam?" },
+              { "speaker": "boy", "text": "No, mine is blue. It has a green football on the front." },
+              { "speaker": "teacher", "text": "Ah, here it is, under the chair." }
+            ],
+            "audio": { "src": "audio/exams/a2/a2-exam-01-listening/v1/r04.m4a", "duration_s": 9.046 }
+          },
+          "questions": [
+            {
+              "n": 4,
+              "prompt": "Which bag is Sam's?",
+              "options": ["the blue one", "the black one", "the green one"],
+              "answer": 0,
+              "explanation_es": "La negra no es suya: «mine is blue». Lo verde es el balón del dibujo."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r05",
+            "speakers": [
+              { "id": "man", "name": "Man", "accent": "en-US", "gender": "male" },
+              { "id": "woman", "name": "Woman", "accent": "en-US", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "man", "text": "Are you going to the supermarket?" },
+              {
+                "speaker": "woman",
+                "text": "Later. First I need to send this parcel to my brother, so I'm going to the post office. The bank is closed today anyway."
+              }
+            ],
+            "audio": { "src": "audio/exams/a2/a2-exam-01-listening/v1/r05.m4a", "duration_s": 14.568 }
+          },
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "Where is the woman going now?",
+              "options": ["to the supermarket", "to the bank", "to the post office"],
+              "answer": 2,
+              "explanation_es": "Al supermercado irá «later» y el banco está cerrado; primero va a correos a mandar un paquete."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "completion",
+      "rubric": "For each question, write the correct answer in the gap. Write one word or a number or a date or a time. You will hear a man giving information about a swimming club.",
+      "title": "Swimming club",
+      "text": "Place: Greenwood Pool\nDays: Tuesdays and {{6}}\nLessons begin at: {{7}} p.m.\nYou must wear: a swimming {{8}}\nPrice: £ {{9}} a month\nTeacher's name: Mr {{10}}",
+      "gaps": [
+        {
+          "n": 6,
+          "accept": ["Fridays", "Friday"],
+          "explanation_es": "«We meet twice a week, on Tuesdays and Fridays»."
+        },
+        {
+          "n": 7,
+          "accept": ["5.30", "5:30", "half past five", "five thirty"],
+          "explanation_es": "«The lessons begin at half past five»."
+        },
+        {
+          "n": 8,
+          "accept": ["hat", "cap"],
+          "explanation_es": "«You must also wear a swimming hat». Se puede comprar en la piscina por tres libras."
+        },
+        {
+          "n": 9,
+          "accept": ["20", "twenty"],
+          "explanation_es": "«The club costs twenty pounds a month». Las tres libras son del gorro."
+        },
+        {
+          "n": 10,
+          "accept": ["Lakey"],
+          "explanation_es": "Lo deletrea: L-A-K-E-Y."
+        }
+      ],
+      "recording": {
+        "id": "r06",
+        "speakers": [
+          { "id": "man", "name": "Man", "accent": "en-GB", "gender": "male" }
+        ],
+        "segments": [
+          {
+            "speaker": "man",
+            "text": "Good afternoon. I want to tell you about the new swimming club at Greenwood Pool.",
+            "pause_after_ms": 800
+          },
+          {
+            "speaker": "man",
+            "text": "The club is for people aged eleven to sixteen. We meet twice a week, on Tuesdays and Fridays. The lessons begin at half past five, and last for one hour.",
+            "pause_after_ms": 800
+          },
+          {
+            "speaker": "man",
+            "text": "You need to bring a swimming costume and a towel, of course. You must also wear a swimming hat. You can buy one at the pool for three pounds.",
+            "pause_after_ms": 800
+          },
+          {
+            "speaker": "man",
+            "text": "The club costs twenty pounds a month. Your first lesson is free.",
+            "pause_after_ms": 800
+          },
+          {
+            "speaker": "man",
+            "text": "Our teacher's name is Mr Lakey. That's L, A, K, E, Y. He was a swimming champion when he was younger.",
+            "pause_after_ms": 800
+          },
+          { "speaker": "man", "text": "If you want to join, please come to the pool office before Friday." }
+        ],
+        "audio": { "src": "audio/exams/a2/a2-exam-01-listening/v1/r06.m4a", "duration_s": 41.458 }
+      }
+    },
+    {
+      "type": "mcq",
+      "rubric": "For each question, choose the correct answer (A, B or C). You will hear Kate talking to her friend Ben about his birthday party.",
+      "groups": [
+        {
+          "recording": {
+            "id": "r07",
+            "speakers": [
+              { "id": "ben", "name": "Ben", "accent": "en-GB", "gender": "male" },
+              { "id": "kate", "name": "Kate", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "ben", "text": "Hi, Kate. Are you coming to my birthday party?" },
+              { "speaker": "kate", "text": "Of course! When is it? This Saturday?" },
+              {
+                "speaker": "ben",
+                "text": "No, my grandparents are visiting on Saturday. It's on Sunday afternoon."
+              },
+              { "speaker": "kate", "text": "Great. Is it at your house?" },
+              {
+                "speaker": "ben",
+                "text": "My house is too small. We're having it at the bowling centre in town. Do you know it?"
+              },
+              { "speaker": "kate", "text": "Yes, it's next to the station. What time should I come?" },
+              {
+                "speaker": "ben",
+                "text": "We start bowling at three, but come at half past two. We can have a drink first."
+              },
+              { "speaker": "kate", "text": "OK. How many people are coming?" },
+              { "speaker": "ben", "text": "I invited fifteen, but three can't come. So, twelve." },
+              { "speaker": "kate", "text": "What about food? Shall I bring something?" },
+              {
+                "speaker": "ben",
+                "text": "No, there's a café there. We'll have pizza after the game. My mum is making a chocolate cake, too."
+              },
+              { "speaker": "kate", "text": "Lovely. And what would you like for a present?" },
+              {
+                "speaker": "ben",
+                "text": "You don't have to buy anything. But I'd love a book about space. I already have lots of games."
+              },
+              { "speaker": "kate", "text": "OK! See you on Sunday." }
+            ],
+            "audio": { "src": "audio/exams/a2/a2-exam-01-listening/v1/r07.m4a", "duration_s": 59.513 }
+          },
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "When is Ben's party?",
+              "options": ["on Saturday", "on Sunday morning", "on Sunday afternoon"],
+              "answer": 2,
+              "explanation_es": "El sábado vienen sus abuelos: «It's on Sunday afternoon»."
+            },
+            {
+              "n": 12,
+              "prompt": "Where will the party be?",
+              "options": ["at Ben's house", "at a bowling centre", "at the station"],
+              "answer": 1,
+              "explanation_es": "Su casa es muy pequeña; será en la bolera, que está al lado de la estación."
+            },
+            {
+              "n": 13,
+              "prompt": "What time should Kate arrive?",
+              "options": ["at 2.30", "at 3.00", "at 3.30"],
+              "answer": 0,
+              "explanation_es": "Empiezan a jugar a las tres, pero le pide que llegue «at half past two» para tomar algo antes."
+            },
+            {
+              "n": 14,
+              "prompt": "How many people are coming to the party?",
+              "options": ["three", "twelve", "fifteen"],
+              "answer": 1,
+              "explanation_es": "Invitó a quince y tres no pueden ir: «So, twelve»."
+            },
+            {
+              "n": 15,
+              "prompt": "What present would Ben like?",
+              "options": ["a game", "a cake", "a book"],
+              "answer": 2,
+              "explanation_es": "«I'd love a book about space». Juegos ya tiene muchos, y la tarta la hace su madre."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "For each question, choose the correct answer (A, B or C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r08",
+            "speakers": [
+              { "id": "woman", "name": "Mrs Adams", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "woman",
+                "text": "Hello, this is Mrs Adams. I bought a jacket in your shop yesterday, but it's too small. Can I bring it back and get a bigger one?"
+              },
+              { "speaker": "woman", "text": "Tomorrow morning? Thank you very much." }
+            ],
+            "audio": { "src": "audio/exams/a2/a2-exam-01-listening/v1/r08.m4a", "duration_s": 10.109 }
+          },
+          "questions": [
+            {
+              "n": 16,
+              "prompt": "You will hear a woman talking on the phone. Why is she calling?",
+              "options": ["to change something she bought", "to ask when the shop opens", "to order a jacket"],
+              "answer": 0,
+              "explanation_es": "La chaqueta que compró le queda pequeña y quiere cambiarla por una más grande."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r09",
+            "speakers": [
+              { "id": "boy", "name": "Boy", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "boy",
+                "text": "What a day! I got up late, I missed the bus, and then I left my homework at home. My teacher wasn't happy."
+              },
+              {
+                "speaker": "boy",
+                "text": "And now it's raining, and I haven't got a coat. I just want to go to bed."
+              }
+            ],
+            "audio": { "src": "audio/exams/a2/a2-exam-01-listening/v1/r09.m4a", "duration_s": 12.652 }
+          },
+          "questions": [
+            {
+              "n": 17,
+              "prompt": "You will hear a boy talking about his day. How does he feel?",
+              "options": ["happy", "bored", "unhappy"],
+              "answer": 2,
+              "explanation_es": "Todo le ha salido mal: se levantó tarde, perdió el autobús, olvidó los deberes y ahora llueve."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r10",
+            "speakers": [
+              { "id": "teacher", "name": "Teacher", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "teacher",
+                "text": "OK, everyone, listen, please. Close your books, and put your pens down."
+              },
+              {
+                "speaker": "teacher",
+                "text": "Now, look at the picture on the wall, and tell your partner what you can see. You have two minutes."
+              }
+            ],
+            "audio": { "src": "audio/exams/a2/a2-exam-01-listening/v1/r10.m4a", "duration_s": 9.657 }
+          },
+          "questions": [
+            {
+              "n": 18,
+              "prompt": "You will hear a teacher talking to her class. What does she want the students to do?",
+              "options": ["read their books", "talk to another student", "write about a picture"],
+              "answer": 1,
+              "explanation_es": "Tienen que cerrar los libros, dejar los bolígrafos y contarle al compañero lo que ven en el dibujo."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r11",
+            "speakers": [
+              { "id": "boy", "name": "Boy", "accent": "en-US", "gender": "male" },
+              { "id": "girl", "name": "Girl", "accent": "en-US", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "boy", "text": "It's so hot today. Shall we go to the park?" },
+              {
+                "speaker": "girl",
+                "text": "It's too hot for the park. Let's get an ice cream, and then go for a swim at the pool."
+              },
+              { "speaker": "boy", "text": "Good idea. I'll get my things." }
+            ],
+            "audio": { "src": "audio/exams/a2/a2-exam-01-listening/v1/r11.m4a", "duration_s": 11.827 }
+          },
+          "questions": [
+            {
+              "n": 19,
+              "prompt": "You will hear two friends talking. What will they do first?",
+              "options": ["go to the park", "have an ice cream", "go swimming"],
+              "answer": 1,
+              "explanation_es": "Al parque no van. «Let's get an ice cream, and then go for a swim»: primero el helado."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r12",
+            "speakers": [
+              { "id": "man", "name": "Man", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "man",
+                "text": "The hotel was lovely, and the food was fantastic. We swam every day."
+              },
+              {
+                "speaker": "man",
+                "text": "But on the last day, I couldn't find my passport! We looked everywhere. In the end, it was in my wife's bag."
+              }
+            ],
+            "audio": { "src": "audio/exams/a2/a2-exam-01-listening/v1/r12.m4a", "duration_s": 13.135 }
+          },
+          "questions": [
+            {
+              "n": 20,
+              "prompt": "You will hear a man talking about his holiday. What was the problem?",
+              "options": ["He lost something.", "The hotel was bad.", "The weather was bad."],
+              "answer": 0,
+              "explanation_es": "El hotel y la comida estuvieron muy bien; el problema fue que no encontraba el pasaporte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "For each question, choose the correct answer. You will hear Sara talking to her friend Tom about her family. What hobby does each person have now?",
+      "recording": {
+        "id": "r13",
+        "speakers": [
+          { "id": "tom", "name": "Tom", "accent": "en-GB", "gender": "male" },
+          { "id": "sara", "name": "Sara", "accent": "en-GB", "gender": "female" }
+        ],
+        "segments": [
+          {
+            "speaker": "tom",
+            "text": "Sara, your family does lots of things, doesn't it? Does your mum still go running?"
+          },
+          {
+            "speaker": "sara",
+            "text": "Not now. She hurt her leg last year. She has started painting. She paints pictures of our garden."
+          },
+          { "speaker": "tom", "text": "And your dad? Does he like cooking?" },
+          {
+            "speaker": "sara",
+            "text": "He can't cook at all! Dad loves his bike. He rides fifty kilometres every Sunday."
+          },
+          { "speaker": "tom", "text": "What about your brother?" },
+          {
+            "speaker": "sara",
+            "text": "Leo? He goes to the river every weekend with his friends. They catch fish, but they always put them back in the water."
+          },
+          { "speaker": "tom", "text": "And your sister? I think she likes taking photos." },
+          {
+            "speaker": "sara",
+            "text": "She did, but she sold her camera. Now she's in a band. She has a beautiful voice."
+          },
+          { "speaker": "tom", "text": "And your grandfather?" },
+          {
+            "speaker": "sara",
+            "text": "He's seventy-five, but he's outside every day with his plants. He grows tomatoes and flowers. He gives us vegetables every week."
+          }
+        ],
+        "audio": { "src": "audio/exams/a2/a2-exam-01-listening/v1/r13.m4a", "duration_s": 51.171 }
+      },
+      "tasks": [
+        {
+          "options": [
+            { "id": "A", "text": "cooking" },
+            { "id": "B", "text": "cycling" },
+            { "id": "C", "text": "fishing" },
+            { "id": "D", "text": "gardening" },
+            { "id": "E", "text": "painting" },
+            { "id": "F", "text": "photography" },
+            { "id": "G", "text": "running" },
+            { "id": "H", "text": "singing" }
+          ],
+          "questions": [
+            {
+              "n": 21,
+              "prompt": "Sara's mother",
+              "answer": "E",
+              "explanation_es": "Ya no corre porque se hizo daño en la pierna: «She has started painting»."
+            },
+            {
+              "n": 22,
+              "prompt": "Sara's father",
+              "answer": "B",
+              "explanation_es": "No sabe cocinar; «Dad loves his bike» y hace cincuenta kilómetros cada domingo."
+            },
+            {
+              "n": 23,
+              "prompt": "Sara's brother",
+              "answer": "C",
+              "explanation_es": "Va al río con sus amigos: «They catch fish»."
+            },
+            {
+              "n": 24,
+              "prompt": "Sara's sister",
+              "answer": "H",
+              "explanation_es": "Vendió la cámara; ahora está en un grupo y «has a beautiful voice»."
+            },
+            {
+              "n": 25,
+              "prompt": "Sara's grandfather",
+              "answer": "D",
+              "explanation_es": "Está todos los días fuera con sus plantas y cultiva tomates y flores."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "a2-exam-01-speaking",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "paper": "speaking",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "kind": "interview",
+      "about_es": "El examinador te pregunta tu nombre y de dónde eres, y después habla contigo de dos temas del día a día. La última pregunta de cada tema pide una respuesta más larga: tres frases.",
+      "turns": [
+        { "examiner": "Good morning. I'm Paul, and this is Maria. What's your name? And where do you live?", "answer_s": 15 },
+        { "examiner": "Do you work, or are you a student?", "answer_s": 15 },
+        { "examiner": "Now, let's talk about food. What do you usually eat for breakfast?", "answer_s": 20 },
+        { "examiner": "Who cooks in your family?", "answer_s": 20 },
+        { "examiner": "Now, please tell me something about your favourite restaurant.", "answer_s": 30 },
+        { "examiner": "Now, let's talk about free time. What do you like doing in the evenings?", "answer_s": 20 },
+        { "examiner": "How often do you play sports?", "answer_s": 20 },
+        { "examiner": "Now, please tell me something about what you did last weekend.", "answer_s": 30 }
+      ],
+      "useful_language": [
+        "My name's…, and I live in…",
+        "I usually have… for breakfast.",
+        "My mum cooks, but sometimes I…",
+        "My favourite restaurant is… It's near…",
+        "In the evenings I like…",
+        "Last weekend I went to… It was…"
+      ],
+      "tips_es": [
+        "Contesta con frases completas, no con una palabra.",
+        "En «tell me something about…» di tres cosas: qué es, cómo es y por qué te gusta.",
+        "Ojo al tiempo: «last weekend» pide pasado («I went», «I watched»)."
+      ]
+    },
+    {
+      "kind": "collaborative",
+      "about_es": "En el examen ves varios dibujos de un mismo tema y hablas con tu compañero: te gusta o no cada cosa y por qué. Después el examinador os hace preguntas. Aquí, a solas, habla de cada opción.",
+      "turns": [
+        {
+          "examiner": "Now, in this part of the test you are going to talk together. Here are some pictures that show different holidays. Do you like these different holidays? Say why or why not.",
+          "shown": "Do you like these different holidays?",
+          "prompts": ["a beach holiday", "camping in the mountains", "a city break", "a cycling holiday", "a holiday on a boat"],
+          "prep_s": 10,
+          "answer_s": 90
+        },
+        { "examiner": "Do you think camping holidays are fun? Why?", "answer_s": 20 },
+        { "examiner": "Which of these holidays do you like best?", "answer_s": 20 },
+        { "examiner": "Now, do you prefer to go on holiday with friends or with your family? Why?", "answer_s": 25 },
+        { "examiner": "Where would you like to go on holiday in the future? Why?", "answer_s": 25 }
+      ],
+      "useful_language": [
+        "I like… because it's…",
+        "I don't like… because it's too…",
+        "What about you? / Do you like…?",
+        "I think… is more fun than…",
+        "I prefer… to…",
+        "I'd like to go to… because…"
+      ],
+      "tips_es": [
+        "De cada opción, di si te gusta y por qué: «I like beach holidays because I love swimming».",
+        "Usa adjetivos sencillos: «fun», «boring», «relaxing», «expensive», «dangerous».",
+        "En el examen pregunta también a tu compañero: «What about you?».",
+        "«Would you like…?» se contesta con «I'd like to…»."
+      ]
+    }
+  ]
+}
