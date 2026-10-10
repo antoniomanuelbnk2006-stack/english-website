@@ -1,0 +1,687 @@
+{
+  "id": "b2-exam-01-listening",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "paper": "listening",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "You will hear people talking in eight different situations. For questions 1–8, choose the best answer (A, B or C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r01",
+            "speakers": [
+              { "id": "woman", "name": "Woman", "accent": "en-GB", "gender": "female" },
+              { "id": "man", "name": "Man", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "woman", "text": "So, what did you think?" },
+              {
+                "speaker": "man",
+                "text": "Well, I'm glad I saw it, but two and a half hours... I kept looking at my watch."
+              },
+              {
+                "speaker": "woman",
+                "text": "Really? I didn't notice the time at all. I'll tell you what did bother me, though: that final scene. After all that build-up, it just stopped."
+              },
+              {
+                "speaker": "man",
+                "text": "Oh, I rather liked that. It leaves you to decide for yourself. But I have to say, I wasn't expecting much from Daniel Reeves. I've only ever seen him in comedies."
+              },
+              {
+                "speaker": "woman",
+                "text": "Me neither, but he was perfect, wasn't he? I can't imagine anyone else in that part now."
+              },
+              { "speaker": "man", "text": "No, absolutely." }
+            ],
+            "audio": { "src": "audio/exams/b2/b2-exam-01-listening/v1/r01.m4a", "duration_s": 30.576 }
+          },
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "You hear two friends talking about a film they have just seen. What do they agree about?",
+              "options": ["The ending was disappointing.", "The main actor was well chosen.", "The film was too long."],
+              "answer": 1,
+              "explanation_es": "Los dos coinciden en el actor: «he was perfect, wasn't he?» – «No, absolutely». La duración solo le molestó a él, y el final, solo a ella."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r02",
+            "speakers": [
+              { "id": "elena", "name": "Elena", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "elena", "text": "Hi Raj, it's Elena. Sorry to bother you on your day off." },
+              {
+                "speaker": "elena",
+                "text": "Look, about Thursday's meeting with the suppliers. I know we said ten o'clock, and I've got all the figures you sent, thanks. They're exactly what I needed."
+              },
+              {
+                "speaker": "elena",
+                "text": "The thing is, my train's been cancelled, and the next one doesn't get in until half past. Is there any chance we could make it eleven instead? I've already checked, and the room's free."
+              },
+              {
+                "speaker": "elena",
+                "text": "I'm really sorry to mess you around. Give me a ring when you get this."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/b2-exam-01-listening/v1/r02.m4a", "duration_s": 24.977 }
+          },
+          "questions": [
+            {
+              "n": 2,
+              "prompt": "You hear a woman leaving a voicemail message for a colleague. Why is she calling?",
+              "options": ["to change an arrangement", "to apologise for a mistake", "to ask for some information"],
+              "answer": 0,
+              "explanation_es": "Pide pasar la reunión de las diez a las once. Se disculpa, pero por las molestias, no por un error; y las cifras ya las tiene («exactly what I needed»)."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r03",
+            "speakers": [
+              { "id": "man", "name": "Man", "accent": "en-US", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "man",
+                "text": "I started lessons about a year ago. People warned me I'd never fit the practice in, with work and the kids, but actually I get up twenty minutes earlier, and it's become my favourite part of the day."
+              },
+              {
+                "speaker": "man",
+                "text": "And I thought reading music would be a nightmare, but my teacher had me doing it within weeks."
+              },
+              {
+                "speaker": "man",
+                "text": "No, it's when she asks me to play for the other students at the end of term. My hands literally shake. I can play a piece perfectly at home, and then make a complete mess of it with six people watching."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/b2-exam-01-listening/v1/r03.m4a", "duration_s": 30.586 }
+          },
+          "questions": [
+            {
+              "n": 3,
+              "prompt": "You hear a man talking about learning to play the piano as an adult. What does he find most difficult?",
+              "options": ["finding time to practise", "reading music", "playing in front of other people"],
+              "answer": 2,
+              "explanation_es": "Le tiemblan las manos cuando toca delante de los demás alumnos. Lo de practicar lo resolvió madrugando, y leer partituras le costó menos de lo que temía."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r04",
+            "speakers": [
+              { "id": "man", "name": "Man", "accent": "en-GB", "gender": "male" },
+              { "id": "woman", "name": "Woman", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "man",
+                "text": "We're never going to finish this by Friday. Maybe we should ask Mr Evans for an extension."
+              },
+              {
+                "speaker": "woman",
+                "text": "He's already said no to the other group. Look, I think the problem is the way we've split it. You're doing all the research, and I'm sitting around waiting to write it up."
+              },
+              {
+                "speaker": "woman",
+                "text": "Why don't I take the second half of the reading, and we both write our own sections?"
+              },
+              {
+                "speaker": "man",
+                "text": "I suppose that would be quicker. I did wonder whether we'd picked too big a subject."
+              },
+              {
+                "speaker": "woman",
+                "text": "It's a bit late to start again now. No, let's just share it out more sensibly."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/b2-exam-01-listening/v1/r04.m4a", "duration_s": 29.503 }
+          },
+          "questions": [
+            {
+              "n": 4,
+              "prompt": "You hear two students talking about a history project. What does the woman suggest they should do?",
+              "options": ["choose a different topic", "divide the work differently", "ask the teacher for more time"],
+              "answer": 1,
+              "explanation_es": "«The problem is the way we've split it… let's just share it out more sensibly». Pedir más tiempo lo propone él y ella lo descarta; cambiar de tema, también («a bit late to start again»)."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r05",
+            "speakers": [
+              { "id": "presenter", "name": "Presenter", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "presenter",
+                "text": "Now, the new Saturday market in Station Square finally opened last weekend, and I went along to take a look."
+              },
+              {
+                "speaker": "presenter",
+                "text": "There'd been a lot of talk in the local paper that the prices would be sky-high, but I paid less for my vegetables than I do at the supermarket. And it's right next to the bus station, so no problems there."
+              },
+              {
+                "speaker": "presenter",
+                "text": "What really struck me, though, was the range: fresh fish, proper cheese, bread from three different bakeries. You used to have to drive to the city for any of that. If you haven't been yet, it's well worth a visit."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/b2-exam-01-listening/v1/r05.m4a", "duration_s": 28.919 }
+          },
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "You hear a radio presenter talking about a new street market. What does he say about it?",
+              "options": [
+                "It sells things that were hard to find locally before.",
+                "It is more expensive than people expected.", "It is difficult to get to by public transport."
+              ],
+              "answer": 0,
+              "explanation_es": "«You used to have to drive to the city for any of that»: antes eso no se encontraba en el pueblo. Los precios resultaron más bajos de lo que se decía y está junto a la estación de autobuses."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r06",
+            "speakers": [
+              { "id": "man", "name": "Man", "accent": "en-US", "gender": "male" },
+              { "id": "woman", "name": "Woman", "accent": "en-US", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "man", "text": "So how's the new job going? You weren't sure about it, were you?" },
+              {
+                "speaker": "woman",
+                "text": "No, I took it mainly for the salary, to be honest. I thought I'd be bored stiff, sitting in front of spreadsheets all day. But it turns out I love it! I never imagined I'd say that about accounts."
+              },
+              { "speaker": "man", "text": "And the people?" },
+              {
+                "speaker": "woman",
+                "text": "Oh, they're fine. I mean, I don't really know them yet. Everyone's very busy. And they've put me in charge of a small team already, which I thought might scare me, but it's been fine."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/b2-exam-01-listening/v1/r06.m4a", "duration_s": 28.362 }
+          },
+          "questions": [
+            {
+              "n": 6,
+              "prompt": "You hear a woman talking to a friend about her new job. How does she feel about it?",
+              "options": [
+                "relieved that her colleagues are friendly", "worried about the amount of responsibility",
+                "surprised by how much she is enjoying it"
+              ],
+              "answer": 2,
+              "explanation_es": "Creía que se iba a aburrir y resulta que le encanta: «I never imagined I'd say that». A los compañeros aún no los conoce, y la responsabilidad no le ha dado miedo."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r07",
+            "speakers": [
+              { "id": "guest", "name": "Mr Okafor", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "guest",
+                "text": "Hello, yes, this is Mr Okafor, from room two one four. I checked out this morning, and I've just looked at my receipt properly."
+              },
+              {
+                "speaker": "guest",
+                "text": "I'm not ringing about the room itself. It was small, but then I knew that when I booked, and I slept very well, which I didn't expect, being right above the main road."
+              },
+              {
+                "speaker": "guest",
+                "text": "No, it's that I seem to have paid for two breakfasts each day. I was travelling on my own. Could you look into that and refund the difference, please?"
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/b2-exam-01-listening/v1/r07.m4a", "duration_s": 24.831 }
+          },
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "You hear a man phoning a hotel. What is he complaining about?",
+              "options": ["a charge on his bill", "the noise from the street", "the size of his room"],
+              "answer": 0,
+              "explanation_es": "Le han cobrado dos desayunos al día viajando solo. La habitación era pequeña, pero ya lo sabía, y durmió bien a pesar de la calle."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r08",
+            "speakers": [
+              { "id": "teacher", "name": "Teacher", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "teacher",
+                "text": "Right, a couple of things about Friday's trip to the science museum before you go."
+              },
+              {
+                "speaker": "teacher",
+                "text": "Thank you to everyone who's paid. That's all of you now, so well done. The coach leaves at nine, which is the normal start of school, so just come at the usual time."
+              },
+              {
+                "speaker": "teacher",
+                "text": "What I'm still missing is the permission slip from about half of you. I can't take anyone without one, so please, get a parent to sign it tonight, and hand it to me first thing tomorrow."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/b2-exam-01-listening/v1/r08.m4a", "duration_s": 22.753 }
+          },
+          "questions": [
+            {
+              "n": 8,
+              "prompt": "You hear a teacher talking to her class about a school trip. What does she want the students to do?",
+              "options": ["arrive earlier than usual", "pay the remaining money", "bring a signed form"],
+              "answer": 2,
+              "explanation_es": "Le falta la autorización firmada («permission slip») de la mitad de la clase. Todos han pagado ya y hay que llegar a la hora de siempre."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "completion",
+      "rubric": "You will hear a woman called Laura Jensen giving a talk about keeping bees in a city. For questions 9–18, complete the sentences with a word or short phrase.",
+      "title": "Keeping bees in the city",
+      "text": "Before she kept bees, Laura worked in a hospital as a {{9}}.\nShe first became interested in bees thanks to a {{10}} who used to give honey to the staff.\nLaura now looks after a total of {{11}} hives.\nIn the countryside near her city, bees have plenty of food for only about {{12}}.\nBecause of some local trees, Laura's honey has a slight taste of {{13}}.\nLaura's busiest season of the year is {{14}}.\nIn winter, Laura has to make sure that the {{15}} has not knocked her hives over.\nThe most painful place where Laura has been stung is her {{16}}.\nThe book Laura is writing is about the {{17}} of beekeeping in her city.\nThe money from Laura's smallest jars of honey goes to a charity that plants {{18}}.",
+      "gaps": [
+        {
+          "n": 9,
+          "accept": ["pharmacist"],
+          "explanation_es": "«I actually trained as a pharmacist, and I worked in a hospital for nearly ten years»."
+        },
+        {
+          "n": 10,
+          "accept": ["patient"],
+          "explanation_es": "«It was a patient who first got me interested»: un señor mayor que llevaba tarros de miel a las enfermeras."
+        },
+        {
+          "n": 11,
+          "accept": ["fourteen", "14"],
+          "explanation_es": "«I now look after fourteen hives». Los otros números (dos en un hotel, tres en un colegio, siete años) son distractores."
+        },
+        {
+          "n": 12,
+          "accept": ["three weeks", "3 weeks"],
+          "explanation_es": "En el campo, con un solo cultivo, «plenty of food for three weeks and then almost nothing»."
+        },
+        {
+          "n": 13,
+          "accept": ["lime"],
+          "explanation_es": "«A slight flavour of lime», por los tilos («lime trees») de la avenida, no por la fruta."
+        },
+        {
+          "n": 14,
+          "accept": ["spring", "the spring"],
+          "explanation_es": "«Spring is the busiest time», porque es cuando las abejas pueden marcharse."
+        },
+        {
+          "n": 15,
+          "accept": ["wind"],
+          "explanation_es": "En invierno solo comprueba que las colmenas no hayan sido «blown over by the wind»."
+        },
+        {
+          "n": 16,
+          "accept": ["eyelid", "eye lid"],
+          "explanation_es": "«The worst place I've ever been stung was on my eyelid» (el párpado)."
+        },
+        {
+          "n": 17,
+          "accept": ["history"],
+          "explanation_es": "El libro no trata de la miel, sino de «the history of beekeeping in this city»."
+        },
+        {
+          "n": 18,
+          "accept": ["trees"],
+          "explanation_es": "El dinero de los tarros pequeños va a una organización «that plants trees in the city centre»."
+        }
+      ],
+      "recording": {
+        "id": "r09",
+        "speakers": [
+          { "id": "laura", "name": "Laura Jensen", "accent": "en-GB", "gender": "female" }
+        ],
+        "segments": [
+          {
+            "speaker": "laura",
+            "text": "Good evening, everyone. My name's Laura Jensen, and I've been asked to tell you a bit about keeping bees in the middle of a city."
+          },
+          {
+            "speaker": "laura",
+            "text": "I didn't grow up with bees. I actually trained as a pharmacist, and I worked in a hospital for nearly ten years. It was a patient who first got me interested: an elderly man who used to bring in jars of honey for the nurses. One day he invited me to see his hives, and that was it.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "laura",
+            "text": "I got my first bees seven years ago. People imagine you need a big garden, but mine were on the roof of the building where I lived. In fact, I now look after fourteen hives, and every one of them is on a roof: two on a hotel, three on a school, and the rest on office blocks.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "laura",
+            "text": "You might think a city is a poor place for bees, but it's quite the opposite. In the countryside around here, there are huge fields of a single crop, so the bees have plenty of food for three weeks, and then almost nothing."
+          },
+          {
+            "speaker": "laura",
+            "text": "In the city, there are parks and gardens and railway lines, with something in flower from February to November. The honey tastes different, too. Mine has a slight flavour of lime. That's from the lime trees along the main avenue, not the fruit.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "laura",
+            "text": "The work changes with the seasons. Spring is the busiest time, because that's when bees may decide to leave and find a new home, and I have to check every hive once a week to prevent it."
+          },
+          {
+            "speaker": "laura",
+            "text": "In winter, there's very little to do, apart from making sure the hives haven't been blown over by the wind, which is a real danger up on a roof.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "laura",
+            "text": "People always ask whether I get stung. Of course I do, about twenty times a year. It's usually my own fault, for being in a hurry. The worst place I've ever been stung was on my eyelid. I couldn't open my eye for two days.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "laura",
+            "text": "What I didn't expect was how much time I'd spend talking to people rather than to bees. I run workshops for children at the school, and last year I started a course for adults who want to keep bees themselves."
+          },
+          {
+            "speaker": "laura",
+            "text": "I'm also writing a book. Not about honey, but about the history of beekeeping in this city, which goes back further than you'd think. The oldest record I've found is from a monastery, in fourteen twenty.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "laura",
+            "text": "If you'd like to try the honey, I sell it at the Saturday market. And all the money from the smallest jars goes to a charity that plants trees in the city centre. Thank you."
+          }
+        ],
+        "audio": { "src": "audio/exams/b2/b2-exam-01-listening/v1/r09.m4a", "duration_s": 127.513 }
+      }
+    },
+    {
+      "type": "matching",
+      "rubric": "You will hear five short extracts in which people are talking about moving to a new place. For questions 19–23, choose from the list (A–H) what each speaker found most difficult. Use the letters only once. There are three extra letters which you do not need to use.",
+      "recording": {
+        "id": "r10",
+        "speakers": [
+          { "id": "narrator", "name": "Narrator", "accent": "en-GB", "gender": "female" },
+          { "id": "one", "name": "Speaker 1", "accent": "en-GB", "gender": "male" },
+          { "id": "two", "name": "Speaker 2", "accent": "en-GB", "gender": "female" },
+          { "id": "three", "name": "Speaker 3", "accent": "en-GB", "gender": "male" },
+          { "id": "four", "name": "Speaker 4", "accent": "en-US", "gender": "female" },
+          { "id": "five", "name": "Speaker 5", "accent": "en-US", "gender": "male" }
+        ],
+        "segments": [
+          { "speaker": "narrator", "text": "Speaker one.", "pause_after_ms": 900 },
+          {
+            "speaker": "one",
+            "text": "When the company moved me to the capital, everyone warned me about the prices, and yes, a coffee costs twice what it does at home, but my salary went up as well, so I hardly noticed. My flat was sorted out by the firm, too."
+          },
+          {
+            "speaker": "one",
+            "text": "No, what nearly defeated me was the transport. Six underground lines, buses that change their route at weekends... For the first month, I was late for everything. I once spent forty minutes going round in a circle, and ended up exactly where I'd started. I've got the hang of it now, more or less.",
+            "pause_after_ms": 2500
+          },
+          { "speaker": "narrator", "text": "Speaker two.", "pause_after_ms": 900 },
+          {
+            "speaker": "two",
+            "text": "I moved up north for university, and people kept asking how I was coping with the cold and the rain. Honestly, I didn't mind that. I just bought a decent coat. And I'm quite a sociable person, so I had a group of friends by the end of the first week."
+          },
+          {
+            "speaker": "two",
+            "text": "But my mum and my little brother were five hours away by train, and I'd never been apart from them before. Sunday evenings were the worst. I'd phone home, and then feel miserable for the rest of the night.",
+            "pause_after_ms": 2500
+          },
+          { "speaker": "narrator", "text": "Speaker three.", "pause_after_ms": 900 },
+          {
+            "speaker": "three",
+            "text": "We retired to a village by the sea, which had always been our dream. The house was perfect, and after forty years in a city, we loved how quiet everything was. No rush, no traffic."
+          },
+          {
+            "speaker": "three",
+            "text": "What we hadn't thought about was that everyone there had known each other since they were children. People were polite, but it stopped there. It took us two years, and joining the local choir, before anyone invited us round for dinner. Our daughter visits every month, so we were never lonely exactly, but it was harder than we'd imagined.",
+            "pause_after_ms": 2500
+          },
+          { "speaker": "narrator", "text": "Speaker four.", "pause_after_ms": 900 },
+          {
+            "speaker": "four",
+            "text": "I'm from Canada, and I took a job in a small Scottish town. I'd been told that finding a flat would be a nightmare, but I got one in three days. And the weather's no worse than back home."
+          },
+          {
+            "speaker": "four",
+            "text": "The thing I really wasn't prepared for was understanding people. It's the same language, supposedly, but for weeks I had to ask my neighbour to repeat everything three times. In the end, I just smiled and nodded, which got me into trouble. I apparently agreed to look after her dog for a fortnight.",
+            "pause_after_ms": 2500
+          },
+          { "speaker": "narrator", "text": "Speaker five.", "pause_after_ms": 900 },
+          {
+            "speaker": "five",
+            "text": "I grew up on a farm, and moved to the city at twenty-two. I shared a house with some old school friends, so I had company and a cheap room from day one. But nobody had told me how fast everything would be."
+          },
+          {
+            "speaker": "five",
+            "text": "People walk fast, talk fast, eat their lunch standing up. At home, if you went to the shop, you stopped for a chat. Here, if you take more than ten seconds to find your money, the person behind you starts sighing. I've been here six years, and I still find it exhausting."
+          }
+        ],
+        "audio": { "src": "audio/exams/b2/b2-exam-01-listening/v1/r10.m4a", "duration_s": 175.757 }
+      },
+      "tasks": [
+        {
+          "options": [
+            { "id": "A", "text": "making new friends" },
+            { "id": "B", "text": "finding somewhere to live" },
+            { "id": "C", "text": "getting used to the weather" },
+            { "id": "D", "text": "being far from family" },
+            { "id": "E", "text": "the cost of living" },
+            { "id": "F", "text": "finding the way around" },
+            { "id": "G", "text": "the pace of life" },
+            { "id": "H", "text": "the way local people speak" }
+          ],
+          "questions": [
+            {
+              "n": 19,
+              "prompt": "Speaker 1",
+              "answer": "F",
+              "explanation_es": "Lo que casi puede con él es el transporte: llegaba tarde a todo y una vez dio vueltas cuarenta minutos. Los precios (E) y el piso (B) los descarta él mismo."
+            },
+            {
+              "n": 20,
+              "prompt": "Speaker 2",
+              "answer": "D",
+              "explanation_es": "Su madre y su hermano estaban a cinco horas en tren y nunca se había separado de ellos. El frío (C) no le importó y amigos (A) hizo enseguida."
+            },
+            {
+              "n": 21,
+              "prompt": "Speaker 3",
+              "answer": "A",
+              "explanation_es": "Todos se conocían desde niños y tardaron dos años en que alguien los invitara a cenar. La tranquilidad les encantaba (G) y su hija los visita (D)."
+            },
+            {
+              "n": 22,
+              "prompt": "Speaker 4",
+              "answer": "H",
+              "explanation_es": "No entendía a la gente: tenía que pedir a la vecina que lo repitiera todo tres veces. El piso (B) lo encontró en tres días y el tiempo (C) es como en su país."
+            },
+            {
+              "n": 23,
+              "prompt": "Speaker 5",
+              "answer": "G",
+              "explanation_es": "«Nobody had told me how fast everything would be»: el ritmo de la ciudad le sigue agotando. Tenía compañía (A) y habitación barata (B, E) desde el primer día."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "You will hear an interview with a man called Ben Carver, who runs an independent bookshop. For questions 24–30, choose the best answer (A, B or C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r11",
+            "speakers": [
+              { "id": "interviewer", "name": "Interviewer", "accent": "en-GB", "gender": "female" },
+              { "id": "ben", "name": "Ben Carver", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "interviewer",
+                "text": "My guest today is Ben Carver, who opened an independent bookshop five years ago, at a time when many were closing. Ben, what made you do it?"
+              },
+              {
+                "speaker": "ben",
+                "text": "Well, it certainly wasn't a business decision. I'd been a lawyer for twelve years, and I was earning good money, so friends thought I'd gone mad. And it's not that I had some lifelong dream of owning a shop."
+              },
+              {
+                "speaker": "ben",
+                "text": "The truth is, the old bookshop in our town had shut, and I just couldn't stand the idea of living somewhere without one. Somebody had to do it, and nobody else was offering."
+              },
+              { "speaker": "interviewer", "text": "How did the first year go?" },
+              {
+                "speaker": "ben",
+                "text": "Badly! I'd assumed the hard part would be attracting customers, but actually, people came in from day one. They were delighted to have a bookshop again. What I got wrong was the stock."
+              },
+              {
+                "speaker": "ben",
+                "text": "I filled the shelves with the books I thought people ought to read: serious history, literary novels. They sat there for months. It turned out my customers wanted crime, cookery and children's books. I had to swallow my pride and start again."
+              },
+              { "speaker": "interviewer", "text": "Has the internet been a threat?" },
+              {
+                "speaker": "ben",
+                "text": "Everyone expects me to complain about online sellers, and of course I can't compete with them on price. But I've stopped seeing it that way. If you know exactly which book you want, you'll probably order it online, and that's fine."
+              },
+              {
+                "speaker": "ben",
+                "text": "People come to me when they don't know what they want. They say, my father's seventy, he likes sailing and hates fiction. What shall I get him? A website can't answer that. Well, not properly."
+              },
+              { "speaker": "interviewer", "text": "You also hold events at the shop." },
+              {
+                "speaker": "ben",
+                "text": "Yes, we have an author in most months. I'd love to say they make us a fortune, but once you've paid for the wine and stayed open late, you barely cover your costs."
+              },
+              {
+                "speaker": "ben",
+                "text": "Why do I do them? Because the people who come feel the shop belongs to them a little bit. They're the ones who'll walk past a cheaper offer and buy from us instead. That loyalty is worth far more than one evening's takings."
+              },
+              { "speaker": "interviewer", "text": "What's the most difficult part of the job?" },
+              {
+                "speaker": "ben",
+                "text": "People assume it's the long hours, but I worked longer as a lawyer. And I don't mind the paperwork. I'm quite good at that. What I find really hard is sending books back."
+              },
+              {
+                "speaker": "ben",
+                "text": "If a book doesn't sell, after a few months you have to return it to the publisher. Every one feels like a small failure: a book I believed in, that I couldn't find a reader for."
+              },
+              { "speaker": "interviewer", "text": "Do you still read as much as you used to?" },
+              {
+                "speaker": "ben",
+                "text": "More, though differently. I used to read slowly, for pleasure, and I'd finish everything I started. Now I've got forty new titles arriving every week, so I'll read the first fifty pages of a book and decide whether I can recommend it."
+              },
+              {
+                "speaker": "ben",
+                "text": "My wife says I've forgotten how to enjoy a novel. She may be right, but I don't see what else I can do."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "And finally, what would you say to someone thinking of opening a bookshop?"
+              },
+              {
+                "speaker": "ben",
+                "text": "I get asked this a lot, usually by people who love reading. I always say that loving books isn't enough. You need to like people even more, because you'll spend all day talking to them. And don't expect to get rich."
+              },
+              {
+                "speaker": "ben",
+                "text": "But I wouldn't put anyone off. Just spend a few weeks working in a shop first, before you sign anything. I didn't, and I learned everything the expensive way."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/b2-exam-01-listening/v1/r11.m4a", "duration_s": 166.671 }
+          },
+          "questions": [
+            {
+              "n": 24,
+              "prompt": "Why did Ben decide to open a bookshop?",
+              "options": [
+                "He had wanted to own a shop since he was young.",
+                "He disliked the idea of his town having no bookshop.",
+                "He thought it would be a good way to make money."
+              ],
+              "answer": 1,
+              "explanation_es": "«I just couldn't stand the idea of living somewhere without one». Niega las otras dos: no fue una decisión de negocio ni un sueño de toda la vida."
+            },
+            {
+              "n": 25,
+              "prompt": "What mistake did Ben make in his first year?",
+              "options": [
+                "He chose books that did not suit his customers.",
+                "He did not do enough to attract customers.", "He ordered more books than he could sell."
+              ],
+              "answer": 0,
+              "explanation_es": "«What I got wrong was the stock»: llenó la tienda de lo que creía que la gente debía leer y sus clientes querían novela negra, cocina e infantil. Clientes tuvo desde el primer día."
+            },
+            {
+              "n": 26,
+              "prompt": "What does Ben say about online booksellers?",
+              "options": [
+                "They have forced him to reduce his prices.",
+                "They provide a different kind of service from his.",
+                "They are less of a threat than they used to be."
+              ],
+              "answer": 1,
+              "explanation_es": "Quien sabe qué libro quiere lo pide por internet; a él acude quien no lo sabe y necesita consejo. Son servicios distintos. En precio dice que ni compite."
+            },
+            {
+              "n": 27,
+              "prompt": "Why does Ben hold events with authors?",
+              "options": [
+                "to sell a large number of books in one evening",
+                "to get the shop mentioned in the local press", "to make customers feel connected to the shop"
+              ],
+              "answer": 2,
+              "explanation_es": "Apenas cubren gastos; los hace porque quien va «feel the shop belongs to them a little bit» y esa fidelidad vale más que la caja de una noche."
+            },
+            {
+              "n": 28,
+              "prompt": "What does Ben find hardest about his job?",
+              "options": ["working long hours", "dealing with the paperwork", "returning books that have not sold"],
+              "answer": 2,
+              "explanation_es": "«What I find really hard is sending books back»: cada devolución le parece un pequeño fracaso. Las horas eran más de abogado y el papeleo se le da bien."
+            },
+            {
+              "n": 29,
+              "prompt": "How has Ben's reading changed since he opened the shop?",
+              "options": [
+                "He often stops before the end of a book.", "He reads fewer books than he used to.",
+                "He only reads the kinds of books his customers like."
+              ],
+              "answer": 0,
+              "explanation_es": "Antes terminaba todo lo que empezaba; ahora lee las primeras cincuenta páginas y decide si puede recomendarlo. Lee más, no menos."
+            },
+            {
+              "n": 30,
+              "prompt": "What advice does Ben give to people who want to open a bookshop?",
+              "options": [
+                "to choose a town which has no other bookshop",
+                "to get some experience of the work beforehand", "to make sure they have saved enough money"
+              ],
+              "answer": 1,
+              "explanation_es": "«Just spend a few weeks working in a shop first, before you sign anything». Él no lo hizo y lo aprendió todo «the expensive way»."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

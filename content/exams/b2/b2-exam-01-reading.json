@@ -1,0 +1,274 @@
+{
+  "id": "b2-exam-01-reading",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "paper": "reading",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq_cloze",
+      "rubric": "For questions 1–8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+      "title": "Why second-hand is no longer second best",
+      "text": "A generation ago, buying used clothes was something most people did only when money was {{1}}. Today, second-hand fashion is big business, and wearing somebody else's old jacket has become a {{2}} of pride rather than embarrassment.\n\nSeveral things have {{3}} to this change. Websites and apps have made it easy to buy and sell from home, and have {{4}} out the need to spend hours in a dusty shop. At the same time, shoppers have begun to take an {{5}} in how their clothes are made, and many are shocked by the amount of water and energy that goes {{6}} making a single pair of jeans.\n\nThere is, of course, a simpler explanation. Good-quality clothes that would be far beyond most people's {{7}} when new can often be found for a fraction of the price. Whatever the reason, it looks as though second-hand fashion is here to {{8}}.",
+      "gaps": [
+        { "n": 1, "options": ["narrow", "tight", "thin", "close"], "answer": 1, "explanation_es": "«Money is tight» es la colocación fija para «andar justo de dinero». Las otras tres hablan de estrechez física, no de dinero." },
+        { "n": 2, "options": ["root", "base", "source", "origin"], "answer": 2, "explanation_es": "«A source of pride» (motivo de orgullo) es la expresión hecha. «Root» y «origin» hablan de dónde nace algo, y no se combinan con «pride»." },
+        { "n": 3, "options": ["contributed", "resulted", "caused", "produced"], "answer": 0, "explanation_es": "Solo «contribute» lleva «to» con este sentido. «Result» pide «in», y «cause» y «produce» van con objeto directo, sin preposición." },
+        { "n": 4, "options": ["put", "run", "set", "cut"], "answer": 3, "explanation_es": "«Cut out the need» = eliminar la necesidad. «Put out» es apagar, «run out» es agotarse y «set out» es proponerse o exponer." },
+        { "n": 5, "options": ["attention", "interest", "curiosity", "concern"], "answer": 1, "explanation_es": "«Take an interest in» es la colocación. La atención se «presta» (pay attention to), no se «toma»." },
+        { "n": 6, "options": ["onto", "through", "into", "over"], "answer": 2, "explanation_es": "«Go into (making) something» = emplearse en hacer algo: el agua y la energía que «se van en» fabricar unos vaqueros." },
+        { "n": 7, "options": ["funds", "wages", "costs", "means"], "answer": 3, "explanation_es": "«Beyond someone's means» = fuera de sus posibilidades económicas. Es una expresión fija; «funds» y «wages» no se usan así." },
+        { "n": 8, "options": ["stay", "last", "remain", "keep"], "answer": 0, "explanation_es": "«Here to stay» = ha venido para quedarse. Aunque «last» y «remain» significan algo parecido, la frase hecha solo admite «stay»." }
+      ]
+    },
+    {
+      "type": "open_cloze",
+      "rubric": "For questions 9–16, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+      "title": "A library of things",
+      "text": "Most of us own a drill that we have used {{9}} more than two or three times. The same is true of tents, sewing machines and the kind of ladder you need once a year to clean the windows. A new type of library, {{10}} has opened in more than fifty British towns, offers an answer: {{11}} of buying these objects, you simply borrow them.\n\nThe system works in much the same way {{12}} a traditional library. Members pay a small fee, choose what they need from a website and collect it from a local shop. A drill costs a couple of pounds a day, which is far cheaper {{13}} buying one.\n\nNot everyone was convinced at first. Critics doubted {{14}} people would bother to return things on time, but in practice very {{15}} items go missing. According to the organisers, the real difficulty is storage: there is simply not enough room for everything that people would like {{16}} borrow.",
+      "gaps": [
+        { "n": 9, "accept": ["no", "not"], "explanation_es": "«No more than» = como mucho. Es una estructura fija de cantidad." },
+        { "n": 10, "accept": ["which"], "explanation_es": "Oración de relativo explicativa (entre comas) referida a una cosa: solo vale «which». «That» no se usa tras coma." },
+        { "n": 11, "accept": ["instead"], "explanation_es": "«Instead of + -ing» = en lugar de hacer algo." },
+        { "n": 12, "accept": ["as"], "explanation_es": "«The same … as»: la comparación de igualdad con «same» siempre lleva «as», no «than» ni «that»." },
+        { "n": 13, "accept": ["than"], "explanation_es": "Comparativo de superioridad («cheaper») + «than»." },
+        { "n": 14, "accept": ["whether", "if", "that"], "explanation_es": "«Doubt whether/if/that + oración»: dudar de que algo ocurra." },
+        { "n": 15, "accept": ["few"], "explanation_es": "«Very few» + sustantivo contable en plural («items») = muy pocos. «Little» sería para incontables." },
+        { "n": 16, "accept": ["to"], "explanation_es": "«Would like to + infinitivo»." }
+      ]
+    },
+    {
+      "type": "word_formation",
+      "rubric": "For questions 17–24, read the text below. Use the word given in capitals to form a word that fits in the gap.",
+      "title": "A gap year with a purpose",
+      "text": "Every summer, thousands of school leavers set off to spend a few months as volunteers in another country. For many, the {{17}} is obvious: it is a chance to travel, to gain some {{18}} from their parents, and to do something useful at the same time.\n\nNot all projects, however, are as {{19}} as they sound. A {{20}} number of experts argue that {{21}} teenagers who spend two weeks building a school may actually take paid work away from local people. In some cases, the buildings have been so badly made that they had to be pulled down and rebuilt {{22}} after the volunteers left.\n\nThis does not mean that young people should stay at home. The best organisations choose their volunteers {{23}}, give them proper training, and ask local {{24}} what they actually need before anyone gets on a plane.",
+      "gaps": [
+        { "n": 17, "stem": "ATTRACT", "accept": ["attraction"], "explanation_es": "Tras «the» hace falta un sustantivo: «attraction» (el atractivo)." },
+        { "n": 18, "stem": "INDEPENDENT", "accept": ["independence"], "explanation_es": "«Gain some + sustantivo»: «independence». Ojo con la terminación -ence, no -ance." },
+        { "n": 19, "stem": "HELP", "accept": ["helpful"], "explanation_es": "«As + adjetivo + as»: «helpful» (útiles). El sentido es positivo: no todos son tan útiles como parecen." },
+        { "n": 20, "stem": "GROW", "accept": ["growing"], "explanation_es": "«A growing number of» = un número creciente de. Adjetivo en -ing delante del sustantivo." },
+        { "n": 21, "stem": "SKILL", "accept": ["unskilled"], "explanation_es": "Adjetivo y además negativo: son adolescentes sin formación, por eso quitan trabajo a la gente del lugar. «Skilled» diría lo contrario." },
+        { "n": 22, "stem": "IMMEDIATE", "accept": ["immediately"], "explanation_es": "Modifica al verbo «rebuilt»: adverbio en -ly." },
+        { "n": 23, "stem": "CARE", "accept": ["carefully"], "explanation_es": "Adverbio que dice cómo eligen: «carefully». Con «carelessly» la frase diría lo contrario de lo que hacen las mejores organizaciones." },
+        { "n": 24, "stem": "RESIDE", "accept": ["residents"], "explanation_es": "Sustantivo de persona y en plural (después viene «they»): «residents»." }
+      ]
+    },
+    {
+      "type": "key_word_transformation",
+      "rubric": "For questions 25–30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between two and five words, including the word given.",
+      "items": [
+        {
+          "n": 25,
+          "original": "I'm sure it was Peter who left the door unlocked.",
+          "keyword": "MUST",
+          "before": "Peter",
+          "after": "the door unlocked.",
+          "parts": [["must have"], ["left"]],
+          "explanation_es": "Deducción segura sobre el pasado: «must have + participio»."
+        },
+        {
+          "n": 26,
+          "original": "The teacher made us write the essay again.",
+          "keyword": "WERE",
+          "before": "We",
+          "after": "the essay again by the teacher.",
+          "parts": [["were made"], ["to write"]],
+          "explanation_es": "En activa, «make someone do»; en pasiva reaparece el «to»: «be made to do»."
+        },
+        {
+          "n": 27,
+          "original": "I didn't go to the party because I felt ill.",
+          "keyword": "IF",
+          "before": "I would have gone to the party",
+          "after": "ill.",
+          "parts": [["if I had not", "if I hadn't"], ["felt", "been"]],
+          "explanation_es": "Tercer condicional: «would have + participio» con «if + past perfect»."
+        },
+        {
+          "n": 28,
+          "original": "It's not worth asking Jim to help; he's always busy.",
+          "keyword": "POINT",
+          "before": "There is",
+          "after": "Jim to help; he's always busy.",
+          "parts": [["no point", "no point in"], ["asking"]],
+          "explanation_es": "«There is no point (in) + -ing» = no tiene sentido hacer algo."
+        },
+        {
+          "n": 29,
+          "original": "Sara started learning German three years ago.",
+          "keyword": "BEEN",
+          "before": "Sara",
+          "after": "German for three years.",
+          "parts": [["has been"], ["learning", "studying"]],
+          "explanation_es": "Acción que empezó en el pasado y sigue: present perfect continuous con «for»."
+        },
+        {
+          "n": 30,
+          "original": "I can't tolerate this noise any longer.",
+          "keyword": "PUT",
+          "before": "I can't",
+          "after": "this noise any longer.",
+          "parts": [["put up"], ["with"]],
+          "explanation_es": "«Put up with» = tolerate. Verbo frasal de tres partes: no se puede separar."
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "You are going to read an article about a woman who changed her career. For questions 31–36, choose the answer (A, B, C or D) which you think fits best according to the text.",
+      "title": "A different kind of work",
+      "groups": [
+        {
+          "text": "Three years ago, Hannah Whitlock was a project manager at an insurance company, spending her days in meetings and her evenings answering emails. Today she builds wooden boats in a draughty workshop on the Cornish coast.\n\n'People assume I must have hated my old job,' she says, running her hand along the curved side of a half-finished rowing boat. 'I didn't. I was good at it, I liked my colleagues, and the money was excellent. What bothered me was that at the end of each week I couldn't point to anything and say, “I made that.” Everything I produced was a document about a document.'\n\nThe change did not come suddenly. For her fortieth birthday, her sister paid for a weekend course in traditional woodwork, expecting her to come home with a wobbly stool and a funny story. Instead, Hannah came home unable to think about anything else. Within a month she had signed up for evening classes; within a year she had handed in her notice and enrolled on a full-time boatbuilding course, where she was older than most of the tutors.\n\nIt was not an easy year. 'On the first morning we were each given a block of oak and told to make it perfectly flat using only hand tools,' she recalls. 'It took me four days. The eighteen-year-old next to me did it in one. I went back to my rented room every night with aching arms, wondering what on earth I had done.' What stopped her from giving up, she says, was not determination so much as embarrassment: she had told so many people about her plans that going back seemed worse than carrying on.\n\nHer background turned out to be more useful than she had expected. Many talented boatbuilders, she noticed, struggled to run a business: they underestimated how long jobs would take, forgot to send invoices, and were too shy to ask customers for a deposit. Hannah had spent fifteen years planning budgets and persuading difficult clients. When she opened her own workshop, she had orders for the first eighteen months before she had even bought all her tools.\n\nShe is honest about what she has lost. She earns roughly a third of her former salary, and has not had a holiday abroad since she left the company. The workshop is freezing in winter, and the work is physically demanding in a way that, at forty-three, she is beginning to notice. 'I'd be lying if I said I never missed a warm office and a regular pay cheque,' she admits. 'Usually on a wet Tuesday in February.'\n\nAnd yet she has no intention of going back. When a boat is finished, the customer comes to collect it, and there is a small ceremony as it goes into the water for the first time. 'Every single time, I'm convinced it's going to sink,' she laughs. 'It never has. And then the owner rows away in something that didn't exist four months earlier, and that will probably still be around long after I've gone. I never once felt that about a spreadsheet.'",
+          "questions": [
+            {
+              "n": 31,
+              "prompt": "What does Hannah say about her previous job in the second paragraph?",
+              "options": [
+                "She found the people she worked with difficult.",
+                "She felt she was not paid enough for what she did.",
+                "She was dissatisfied with what her work produced.",
+                "She was never particularly successful at it."
+              ],
+              "answer": 2,
+              "explanation_es": "Dice que no podía señalar nada y decir «lo he hecho yo»: todo era «a document about a document». Lo demás lo niega: se le daba bien, le caían bien los compañeros y el sueldo era excelente."
+            },
+            {
+              "n": 32,
+              "prompt": "What do we learn about the weekend course Hannah's sister gave her?",
+              "options": [
+                "Her sister hoped it would lead to a new career.",
+                "It affected Hannah more than her sister had expected.",
+                "Hannah was disappointed by what she made on it.",
+                "It persuaded Hannah to leave her job immediately."
+              ],
+              "answer": 1,
+              "explanation_es": "La hermana esperaba «a wobbly stool and a funny story»; en cambio, Hannah volvió sin poder pensar en otra cosa. No dejó el trabajo enseguida: tardó un año."
+            },
+            {
+              "n": 33,
+              "prompt": "According to Hannah, why did she continue with the boatbuilding course?",
+              "options": [
+                "She did not want to admit to other people that she had failed.",
+                "She was determined to prove she was as good as the younger students.",
+                "She had already spent too much money to stop.",
+                "Her tutors encouraged her to carry on."
+              ],
+              "answer": 0,
+              "explanation_es": "«Not determination so much as embarrassment»: se lo había contado a tanta gente que volver atrás le parecía peor que seguir. La opción B es la trampa: el texto descarta expresamente la determinación."
+            },
+            {
+              "n": 34,
+              "prompt": "What point is made about Hannah's former career in the fifth paragraph?",
+              "options": [
+                "It had allowed her to save enough money to buy her tools.",
+                "It made her customers trust her more than her competitors.",
+                "It meant she finished jobs faster than other boatbuilders.",
+                "It had taught her skills that other boatbuilders often lacked."
+              ],
+              "answer": 3,
+              "explanation_es": "Muchos constructores con talento no sabían llevar un negocio (plazos, facturas, señales); ella llevaba quince años haciendo presupuestos y tratando con clientes."
+            },
+            {
+              "n": 35,
+              "prompt": "What does Hannah suggest by mentioning 'a wet Tuesday in February'?",
+              "options": [
+                "She regrets her decision more and more as time passes.",
+                "The bad weather makes her job impossible in winter.",
+                "She only occasionally wishes she had her old life back.",
+                "Her income is lowest at that time of year."
+              ],
+              "answer": 2,
+              "explanation_es": "Admite que a veces echa de menos la oficina y la nómina, pero lo reduce con humor a un momento muy concreto: es algo ocasional, no un arrepentimiento que crezca."
+            },
+            {
+              "n": 36,
+              "prompt": "What is Hannah's attitude in the final paragraph to the boats she builds?",
+              "options": [
+                "She worries that they are not as safe as they should be.",
+                "She is proud that they are real objects that will last.",
+                "She is sad to see them leave the workshop.",
+                "She is surprised that customers are satisfied with them."
+              ],
+              "answer": 1,
+              "explanation_es": "Lo de que se va a hundir es una broma («It never has»). Lo que destaca es que el barco no existía hace cuatro meses y seguirá ahí cuando ella no esté: algo que nunca sintió con una hoja de cálculo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gapped_text",
+      "rubric": "You are going to read an article about a place where people repair things. Six sentences have been removed from the article. Choose from the sentences A–G the one which fits each gap (37–42). There is one extra sentence which you do not need to use.",
+      "title": "Mending things, one Saturday at a time",
+      "text": "On the first Saturday of every month, the village hall in Thornby fills with the smell of coffee and the sound of small tools. On one table, a retired engineer is taking a toaster apart. On another, a teenager is learning to sew a button back onto a coat. {{37}} Nobody pays anything, although there is a jar by the door for donations.\n\nThe idea is simple. People bring things that are broken – lamps, bicycles, trousers, radios – and volunteers help to fix them. The important word is 'help'. {{38}} The hope is that next time something similar goes wrong, they will have the confidence to deal with it themselves.\n\nThe Thornby café was started four years ago by Priya Nair, a primary school teacher. She had taken a kettle to be repaired and was told that it would be cheaper to buy a new one. {{39}} She put a notice in the village shop asking whether anyone who was good at fixing things would be willing to give up a morning a month. Eleven people replied.\n\nNot everything can be saved. Volunteers reckon that they manage to repair about two thirds of what comes through the door. {{40}} Modern electrical goods are a particular problem, since many are glued shut rather than screwed together, so that they cannot be opened without being damaged.\n\nEven so, the results add up. Priya keeps a record of everything that leaves the hall in working order, and estimates that the café has kept more than three tonnes of material out of the rubbish. {{41}} 'People come in with a broken radio and stay for two hours,' she says. 'Some of our regulars live alone, and I think this is the one morning in the month when they are sure of a proper conversation.'\n\nThe volunteers get something out of it too. Derek Hall, the retired engineer, spent forty years repairing machinery in a factory and found that he missed it badly when he stopped. {{42}} 'It's the look on someone's face when the thing lights up again,' he says. 'You can't buy that.'",
+      "options": [
+        { "id": "A", "text": "The rest is either too badly damaged or was never designed to be repaired in the first place." },
+        { "id": "B", "text": "Now he looks forward to the first Saturday of the month more than any other day." },
+        { "id": "C", "text": "This is the Thornby Repair Café, and it is busier than it has ever been." },
+        { "id": "D", "text": "Unfortunately, fewer and fewer people in the village seem to be interested in learning these skills." },
+        { "id": "E", "text": "The suggestion made her so angry that she decided to do something about it." },
+        { "id": "F", "text": "Owners are expected to sit down beside the volunteer and take part in the repair, rather than simply leaving the object and coming back later." },
+        { "id": "G", "text": "For her, however, the social side matters just as much as the environmental one." }
+      ],
+      "gaps": [
+        { "n": 37, "answer": "C", "explanation_es": "Tras describir la escena hace falta decir qué es ese sitio: «This is the Thornby Repair Café». Después se sigue hablando de cómo funciona («Nobody pays anything»)." },
+        { "n": 38, "answer": "F", "explanation_es": "«The important word is 'help'» se explica con F: el dueño participa en el arreglo. El «they» de la frase siguiente son esos «owners»." },
+        { "n": 39, "answer": "E", "explanation_es": "«The suggestion» remite a lo que le dijeron (que saldría más barato comprar otro), y «do something about it» lleva al cartel que puso en la tienda." },
+        { "n": 40, "answer": "A", "explanation_es": "«About two thirds» pide hablar de «the rest». Y «never designed to be repaired» enlaza con los aparatos pegados en vez de atornillados." },
+        { "n": 41, "answer": "G", "explanation_es": "Después del dato ambiental (tres toneladas), «however» introduce el contraste: el lado social. La cita que sigue habla justo de eso." },
+        { "n": 42, "answer": "B", "explanation_es": "«He missed it badly when he stopped» contrasta con «Now he looks forward to…». El «he» es Derek." }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "You are going to read an article in which four people talk about taking up running. For questions 43–52, choose from the people (A–D). The people may be chosen more than once.",
+      "title": "Why I run",
+      "tasks": [
+        {
+          "heading": "Which person",
+          "options": [
+            {
+              "id": "A",
+              "title": "Marcus",
+              "text": "I started running because my doctor told me to do some exercise, and running was the only sport that didn't require me to join anything or buy much. For the first few weeks I hated every minute and came up with all kinds of excuses not to go out. What changed things was a free app that told me exactly when to run and when to walk. Having a plan meant I no longer had to make decisions, which was the part I found hardest. Two years on, I'm still not fast, and I've accepted that I never will be. I don't enter races and I have no idea what my best time is over any distance. For me, running is simply forty minutes when nobody can ask me for anything."
+            },
+            {
+              "id": "B",
+              "title": "Ingrid",
+              "text": "A colleague persuaded me to sign up for a charity race, and I agreed before I'd really thought about it. I'm extremely competitive, so once I had a date in the diary I trained far too hard and ended up with a knee injury that kept me off my feet for two months. It was a useful lesson. These days I'm much more careful about rest days. What I love most is the numbers: I record every run and compare it with the week before. My family tease me about it, but seeing the line on the graph go in the right direction gives me more satisfaction than almost anything at work."
+            },
+            {
+              "id": "C",
+              "title": "Tomasz",
+              "text": "I'd always thought of running as a lonely activity, so I was surprised to discover that the social side is what keeps me doing it. I joined a club that meets on Tuesday evenings, mainly because I'd just moved to the city and didn't know anyone. Some of the members are serious athletes, and at first I felt I didn't belong there. Nobody else seemed to care how slow I was, though, and within a few months several of them had become close friends. If I'm honest, I still don't enjoy the running itself very much, especially in winter. I enjoy having done it – and I enjoy the coffee afterwards even more."
+            },
+            {
+              "id": "D",
+              "title": "Abena",
+              "text": "I ran a lot at school and was rather good at it, but I stopped completely when I went to university and didn't put on a pair of trainers again for twenty years. Starting again was humbling. In my head I was still the girl who won races; in reality I could barely get to the end of the street. I had to learn to be patient with myself, which doesn't come naturally to me. What helped was running in the early morning, when the streets are empty and there is nobody to compare myself with. I've since done two half-marathons, although the events themselves were less enjoyable than the months of training that led up to them."
+            }
+          ],
+          "questions": [
+            { "n": 43, "prompt": "took up running on medical advice?", "answer": "A", "explanation_es": "Marcus: «my doctor told me to do some exercise»." },
+            { "n": 44, "prompt": "found that their idea of their own ability no longer matched reality?", "answer": "D", "explanation_es": "Abena: en su cabeza seguía siendo la chica que ganaba carreras, pero apenas llegaba al final de la calle." },
+            { "n": 45, "prompt": "admits to getting more pleasure from finishing a run than from the run itself?", "answer": "C", "explanation_es": "Tomasz: «I still don't enjoy the running itself very much… I enjoy having done it»." },
+            { "n": 46, "prompt": "was hurt as a result of doing too much too soon?", "answer": "B", "explanation_es": "Ingrid: «I trained far too hard and ended up with a knee injury»." },
+            { "n": 47, "prompt": "has no interest in measuring their own performance?", "answer": "A", "explanation_es": "Marcus no se apunta a carreras ni sabe cuál es su mejor marca. Ingrid es justo lo contrario." },
+            { "n": 48, "prompt": "initially felt out of place among other runners?", "answer": "C", "explanation_es": "Tomasz: «at first I felt I didn't belong there», porque algunos del club eran atletas serios." },
+            { "n": 49, "prompt": "prefers preparing for an event to taking part in it?", "answer": "D", "explanation_es": "Abena: las carreras «were less enjoyable than the months of training that led up to them»." },
+            { "n": 50, "prompt": "found it helpful not to have to make their own decisions?", "answer": "A", "explanation_es": "Marcus: la aplicación le decía cuándo correr y cuándo andar, y así «I no longer had to make decisions»." },
+            { "n": 51, "prompt": "is made fun of because of a habit connected with running?", "answer": "B", "explanation_es": "Ingrid apunta cada carrera y la compara: «My family tease me about it»." },
+            { "n": 52, "prompt": "took up running partly as a way of meeting people?", "answer": "C", "explanation_es": "Tomasz se apuntó al club «mainly because I'd just moved to the city and didn't know anyone»." }
+          ]
+        }
+      ]
+    }
+  ]
+}

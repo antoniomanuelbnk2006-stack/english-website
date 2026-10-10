@@ -1,0 +1,135 @@
+{
+  "id": "b2-exam-01-speaking",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "paper": "speaking",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "kind": "interview",
+      "about_es": "El examinador te hace preguntas personales: de dónde eres, tus aficiones, tus planes. Respuestas de dos o tres frases, con un motivo o un ejemplo; ni monosílabos ni discursos.",
+      "turns": [
+        { "examiner": "Good morning. My name is Sarah, and this is my colleague, who is just going to listen. First of all, we'd like to know something about you. Where are you from, and what do you like about living there?", "answer_s": 30 },
+        { "examiner": "What do you enjoy doing in your free time?", "answer_s": 25 },
+        { "examiner": "Do you prefer spending time with a big group of friends, or with just one or two people? Why?", "answer_s": 30 },
+        { "examiner": "Tell us about a film or a series you have enjoyed recently.", "answer_s": 30 },
+        { "examiner": "Is there a skill you would like to learn in the future? Why?", "answer_s": 30 }
+      ],
+      "useful_language": [
+        "I'm from…, which is a small town near…",
+        "What I like most about it is…",
+        "I'm really into…",
+        "I'd say I prefer…, mainly because…",
+        "I've always wanted to learn how to…",
+        "It depends, really. If…"
+      ],
+      "tips_es": [
+        "No recites una respuesta aprendida: se nota y el examinador cambia de pregunta.",
+        "Añade siempre un porqué («because…», «mainly because…») o un ejemplo.",
+        "Si no entiendes la pregunta, pide que te la repitan: «Sorry, could you say that again, please?». No baja nota."
+      ]
+    },
+    {
+      "kind": "long_turn",
+      "about_es": "Hablas tú solo durante un minuto: comparas dos fotos y respondes a la pregunta que tienes escrita encima. Después contestas en unos treinta segundos a una pregunta sobre las fotos de tu compañero.",
+      "turns": [
+        {
+          "examiner": "In this part of the test, I'm going to give you two photographs. I'd like you to talk about your photographs on your own for about a minute. Your photographs show people learning in different situations. I'd like you to compare the photographs, and say what you think the people are enjoying about learning in these ways.",
+          "shown": "What are the people enjoying about learning in these ways?",
+          "visuals": [
+            { "label": "Photograph A", "description": "A group of adults in a cooking class. They are standing around a large table, laughing, while a chef shows them how to cut vegetables." },
+            { "label": "Photograph B", "description": "A teenage boy alone at a desk in his bedroom, wearing headphones and following an online lesson on his laptop. He is taking notes." }
+          ],
+          "answer_s": 60
+        },
+        {
+          "examiner": "Thank you. Now, here are your partner's photographs. They show people travelling in different ways. Which of these ways of travelling would you prefer, and why?",
+          "visuals": [
+            { "label": "Photograph A", "description": "A couple cycling along a quiet country road on a sunny day, with bags on the back of their bikes." },
+            { "label": "Photograph B", "description": "A family with two young children in a crowded airport, pulling suitcases and looking up at the departures board." }
+          ],
+          "answer_s": 30
+        }
+      ],
+      "useful_language": [
+        "Both photographs show…, but…",
+        "In the first photo…, whereas in the second one…",
+        "The people in the first picture seem to be…",
+        "It looks as if… / They might be…",
+        "I imagine they're enjoying… because…",
+        "Personally, I'd rather…, because…"
+      ],
+      "tips_es": [
+        "No describas una foto y luego la otra: compáralas desde el principio («whereas», «while», «both»).",
+        "Reserva la mitad del minuto para la pregunta escrita: es lo que más puntúa.",
+        "Especula («might», «seem», «it looks as if»): no se espera que sepas qué pasa de verdad.",
+        "Aquí las fotos están descritas con palabras; en el examen son fotos reales."
+      ]
+    },
+    {
+      "kind": "collaborative",
+      "about_es": "En el examen hablas con tu compañero: comentáis cinco ideas en torno a una pregunta durante dos minutos y luego tenéis un minuto para decidir. Aquí, a solas, recorre las ideas en voz alta comparándolas y llega a una decisión razonada.",
+      "turns": [
+        {
+          "examiner": "Now, I'd like you to talk about something together for about two minutes. Here are some things that towns often do to improve life for the people who live there, and a question for you to discuss. First, you have some time to look at the task. Now, talk to each other about how these things might improve life for people living in a town.",
+          "shown": "How might these things improve life for people living in a town?",
+          "prompts": ["building more cycle lanes", "opening a new library", "creating more parks", "organising free concerts", "improving public transport"],
+          "prep_s": 15,
+          "answer_s": 120
+        },
+        {
+          "examiner": "Thank you. Now you have about a minute to decide which two of these things would be best for young people.",
+          "shown": "Which two would be best for young people?",
+          "prompts": ["building more cycle lanes", "opening a new library", "creating more parks", "organising free concerts", "improving public transport"],
+          "answer_s": 60
+        }
+      ],
+      "useful_language": [
+        "Shall we start with…?",
+        "What do you think about…?",
+        "I see what you mean, but…",
+        "That's a good point. On the other hand…",
+        "Moving on to…",
+        "So, shall we go for… and…?",
+        "I think we both agree that…"
+      ],
+      "tips_es": [
+        "No hace falta hablar de las cinco ideas: mejor tres bien comentadas que cinco de pasada.",
+        "Se valora la interacción: preguntar, reaccionar a lo que dice el otro y hacer avanzar la conversación.",
+        "En el minuto de decisión no es obligatorio ponerse de acuerdo, pero sí intentarlo razonando.",
+        "A solas, practica las fórmulas de turno («What do you think…?», «I see what you mean, but…») como si respondieras a alguien."
+      ]
+    },
+    {
+      "kind": "discussion",
+      "about_es": "Preguntas de opinión sobre el tema de la parte 3, más abstractas. Se esperan respuestas desarrolladas: opinión, razón y ejemplo.",
+      "turns": [
+        { "examiner": "Do you think it is better to live in a small town or in a big city? Why?", "answer_s": 45 },
+        { "examiner": "Some people say that young people today spend too little time outdoors. Do you agree?", "answer_s": 45 },
+        { "examiner": "Who should pay for things like parks and libraries: the government, or the people who use them?", "answer_s": 45 },
+        { "examiner": "How do you think towns and cities will change in the future?", "answer_s": 45 },
+        { "examiner": "Is it important for people to take part in the life of their local community? Why, or why not?", "answer_s": 45 }
+      ],
+      "useful_language": [
+        "That's an interesting question.",
+        "As far as I'm concerned…",
+        "I'd say that…, although…",
+        "It depends on…",
+        "For instance, in my town…",
+        "I'm not sure I agree with that, because…",
+        "On the whole, I think…"
+      ],
+      "tips_es": [
+        "Da tu opinión, justifícala y pon un ejemplo: esa es la estructura que busca el examinador.",
+        "Si te quedas en blanco, gana tiempo con una fórmula («That's an interesting question…», «Let me think…»).",
+        "No hay respuestas correctas: se evalúa cómo lo dices, no lo que opinas."
+      ]
+    }
+  ]
+}
