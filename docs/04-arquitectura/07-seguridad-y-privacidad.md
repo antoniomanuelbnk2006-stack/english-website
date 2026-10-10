@@ -143,6 +143,8 @@ Aunque el único interesado seas tú:
 - **Grabaciones de voz** (*shadowing*): solo en el dispositivo, caducan a los 7 días.
 - **Pronunciación:** el audio del micrófono **no pasa por Señal**. Lo procesa el servicio de reconocimiento de voz del navegador (Google en Chrome, Microsoft en Edge) y la app solo recibe el texto reconocido, del que guarda la mejor hipótesis de cada ítem. El micrófono se abre solo al pulsar «Hablar» y se avisa en la pantalla ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)). `Permissions-Policy` limita el micrófono al propio origen.
 - **Diccionario completo:** al buscar una palabra, el **servidor** de la app la consulta en Wiktionary (Wikimedia). Solo viaja la palabra buscada, sin cookies ni nada que identifique al usuario; el navegador no habla con ningún dominio externo, así que la CSP no cambia. Las respuestas se validan y se reducen a texto plano antes de pintarlas ([ADR-0016](../adr/0016-diccionario-de-consulta-con-wiktionary.md)).
+- **Simulacros de Speaking:** la respuesta se graba con el micrófono para que el usuario se escuche, pero la grabación **no sale del navegador**: vive en memoria (`blob:`) y se borra al salir de la página. Al servidor solo llega la autoevaluación. Las preguntas las dice la voz del propio navegador ([ADR-0017](../adr/0017-simulacros-de-examen.md)).
+- **Simulacros de Reading y Listening:** las respuestas, las explicaciones y los guiones de las grabaciones no viajan al navegador hasta que la prueba se entrega; la prueba en curso de Reading se guarda solo en el almacenamiento local del navegador ([ADR-0017](../adr/0017-simulacros-de-examen.md)).
 
 ---
 

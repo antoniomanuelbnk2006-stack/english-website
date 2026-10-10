@@ -37,6 +37,7 @@ content/lessons/b1/listening/b1-lis-001.json      status: draft
 | `pnpm content:review --ids <ids>` | Prueba «solo preguntas» + revisión completa; guarda `qa.reviewer`; marca `reviewed` si pasa | IA (Batch) |
 | `pnpm content:tts --ids <ids>` | Sintetiza segmentos con eventos de palabra; usa caché por *hash* | TTS (capa gratuita) |
 | `pnpm content:audio --ids <ids>` | Une, normaliza, codifica, calcula tiempos finales y picos | 0 |
+| `pnpm content:exam-audio --ids <ids>` | Locuta las grabaciones de una prueba de Listening de un simulacro (un fichero por grabación) y escribe en la prueba la ruta y la duración; después, `content:upload` como con una lección | TTS (capa gratuita) |
 | `pnpm content:upload --ids <ids>` | Sube a R2 con cabeceras inmutables (`--local`: copia a `public/dev-audio/` para probar sin R2) | 0 |
 | `pnpm content:publish --ids <ids>` | Marca como publicadas lecciones ya revisadas (`status` y `provenance.reviewed_by`) | 0 |
 | `pnpm content:validate` | Valida **todo** `content/` (también en CI) | 0 |

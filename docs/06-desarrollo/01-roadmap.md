@@ -48,6 +48,8 @@ Además, las lecciones de escucha tienen ahora dos modos, a elegir al empezar: *
 
 **Diccionario completo (10 de octubre de 2026, a petición del dueño, [ADR-0016](../adr/0016-diccionario-de-consulta-con-wiktionary.md)).** `/palabras/buscar` consulta cualquier palabra o expresión en Wiktionary en el momento, sin guardar el diccionario ni gastar dinero: traducciones al español, definiciones, pronunciación y envío al repaso. Ese mismo día se añadieron los **consejos automáticos de pronunciación** cuando una palabra no se entiende (ADR-0015).
 
+**Simulacros de examen (10 de octubre de 2026, a petición del dueño, [ADR-0017](../adr/0017-simulacros-de-examen.md)).** Sección «Exámenes» con un simulacro por nivel: A1 (formato A2 Key), A2 Key, B1 Preliminary, B2 First, C1 Advanced y C2 Proficiency. Cada uno tiene Reading (con Use of English en B2–C2), Listening y Speaking con las partes, las preguntas y el tiempo oficial; el Writing remite a «Escribir». Dieciocho pruebas originales en `content/exams/`, con el audio del Listening generado con Kokoro. Pendiente: que el dueño revise el contenido, más simulacros por nivel, y probar el Speaking con micrófono real.
+
 Decisiones tomadas por el camino que no estaban en el diseño original: [ADR-0011](../adr/0011-e2e-con-emulador-de-supabase.md) (tests contra un emulador de Supabase), la migración `0002` (`apply_reviews`), y los detalles anotados en [base de datos §3](../04-arquitectura/03-base-de-datos.md#3-notas-de-diseño), [gramática §2](../01-pedagogia/06-gramatica.md#2-formato-de-una-ficha) y [vocabulario §4](../01-pedagogia/05-vocabulario-y-srs.md#4-tu-léxico-personal).
 
 ---

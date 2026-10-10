@@ -26,6 +26,7 @@ La interfaz está **en español** por defecto (rutas incluidas); el contenido de
 | `/pronunciar` · `/pronunciar/[id]` · `/pronunciar/libre` | Ejercicios de pronunciación y práctica libre | 8 (adelantada) |
 | `/gramatica` · `/gramatica/[id]` | Índice y fichas | 3 |
 | `/use-of-english` · `/use-of-english/[id]` | Ejercicios con formato de examen, por nivel y por parte | 3 |
+| `/examenes` · `/examenes/[id]` · `/examenes/[id]/resultado` | Simulacros de examen de Cambridge: índice por nivel, prueba cronometrada y corrección | 8 (adelantada) |
 | `/entrenar/[drill]` | Drills sueltos (formas débiles, números…) | 2 |
 | `/escribir` · `/escribir/[id]` | Consignas y editor con feedback | 6 |
 | `/progreso` | Niveles, horas, gráficas, «Tu oído» | 5 |
@@ -35,7 +36,7 @@ La interfaz está **en español** por defecto (rutas incluidas); el contenido de
 | `/ajustes` | Perfil, objetivos, apariencia, datos | 0–1 |
 | `/studio/*` | Revisión de contenido (**solo en desarrollo**) | 4 |
 
-**Navegación:** en móvil, barra inferior con 5 entradas: **Hoy · Escuchar · Leer · Repasar · Más** (Más = vocabulario, palabras, gramática, pronunciación, escribir, progreso, diario, ajustes). En escritorio, barra lateral con todas.
+**Navegación:** en móvil, barra inferior con 5 entradas: **Hoy · Escuchar · Leer · Repasar · Más** (Más = vocabulario, palabras, gramática, Use of English, exámenes, pronunciación, escribir, progreso, diario, ajustes). En escritorio, barra lateral con todas.
 
 ---
 
@@ -151,6 +152,14 @@ El vocabulario de cada nivel, con traducción y frase de ejemplo ([ADR-0015](../
 - **Ejercicio:** explicación de cómo se hace el sonido y, una a una, las palabras y frases: transcripción, traducción, «Escuchar» y «Despacio» (voz del navegador, británica o americana) y «Hablar». El resultado dice si se ha entendido, marca palabra por palabra en las frases y enseña lo que oyó. Si no se ha entendido a la primera, debajo sale un cuadro de **Consejos**: hasta tres para una palabra, o uno por palabra fallada en una frase. Se puede repetir o saltar; al terminar, resumen por ítem.
 - **Práctica libre:** lo mismo con cualquier texto; se llega también desde cada palabra del mazo. No se guarda.
 - Sin reconocimiento de voz (Firefox) se explica y se deja escuchar el modelo.
+
+### 2.6 quater Exámenes (`/examenes`, `/examenes/[id]`, `/examenes/[id]/resultado`)
+Simulacros de los exámenes de Cambridge ([ADR-0017](../adr/0017-simulacros-de-examen.md)). No son práctica diaria: cada prueba se hace entera, con su tiempo, y se entrega una sola vez.
+- **Índice (`/examenes`):** el examen del nivel del usuario (A2 Key, B1 Preliminary, B2 First, C1 Advanced o C2 Proficiency; el A1 usa el formato del A2 Key y lo dice) y un selector de nivel. De cada simulacro, sus pruebas con el tiempo oficial, las partes, las preguntas y los puntos, la última nota y la mejor, y el acceso a la corrección. El Writing enseña su tiempo oficial y lleva a «Escribir».
+- **Reading (y Use of English):** pantalla previa con las reglas y las partes; al empezar, reloj con el tiempo oficial que no se para, todas las partes accesibles en cualquier orden con su contador de respuestas, y «Entregar» con confirmación de lo que queda en blanco. A los cinco minutos del final el reloj cambia de color; al llegar a cero se entrega sola. Recargar la página no pierde la prueba.
+- **Listening:** la cinta suena sola (tiempo para leer, cada grabación dos veces, pausas y dos minutos finales de revisión), sin pausa ni rebobinado; la pantalla sigue a la parte que suena y enseña el avance. Solo hay control de volumen.
+- **Speaking:** el examinador pregunta con la voz del navegador (la pregunta se puede ver escrita), cada turno tiene su cuenta atrás y se graba con el micrófono. Las fotos se describen con palabras. Al terminar se escuchan las grabaciones, se ven expresiones útiles y consejos por parte, y el usuario se puntúa de 0 a 5 con los criterios del examen.
+- **Corrección (`/examenes/[id]/resultado`):** puntos totales, por sección (con la nota orientativa en la escala Cambridge y si daría para aprobar) y por parte; cada pregunta con lo respondido, la respuesta correcta y la explicación; los textos con los huecos resueltos y, en Listening, la transcripción. Se puede volver a ver cuando se quiera.
 
 ### 2.7 Escribir (`/escribir`, `/escribir/[id]`, `/escribir/historial`)
 - **Biblioteca (`/escribir`):** consignas del nivel del usuario (filtro por nivel en la URL), writings de la semana y correcciones con IA usadas hoy.

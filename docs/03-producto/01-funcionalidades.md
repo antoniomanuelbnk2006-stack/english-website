@@ -29,6 +29,7 @@
 | F-016 | Clásicos de dominio público con audio alineado (C1–C2) | C | 8 |
 | F-017 | **Use of English** por nivel con formato de examen de Cambridge (elegir la palabra, completar, formar palabras, transformar frases), corregido en servidor y con fallos al repaso ([ADR-0012](../adr/0012-use-of-english-y-nivel-declarado.md)) | M | 3 |
 | F-018 | **Elegir el nivel** (A1–C2) en el primer acceso; las bibliotecas enseñan primero ese nivel | M | 3 |
+| F-019 | **Simulacros de examen de Cambridge** de A1 a C2: Reading (y Use of English), Listening y Speaking con las partes, las preguntas y el tiempo oficial de cada examen, una sola entrega y corrección con nota orientativa en la escala Cambridge ([ADR-0017](../adr/0017-simulacros-de-examen.md)) | S | 8 (adelantada) |
 
 ## 3. Listening
 

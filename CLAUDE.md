@@ -25,7 +25,7 @@ Next.js 16 (App Router, Turbopack, `proxy.ts`) · React 19.2 · TypeScript estri
 | Comprobaciones | `pnpm typecheck && pnpm lint && pnpm test` |
 | e2e | `pnpm e2e` (requiere `pnpm db:start`) |
 | BD local | `pnpm db:start`, `pnpm db:reset`, `pnpm db:types` |
-| Contenido | `pnpm content:validate`, `content:annotate`, `content:tts`, `content:audio`, `content:upload`, `content:index`, `content:generate`, `content:review`, `content:run` |
+| Contenido | `pnpm content:validate`, `content:annotate`, `content:tts`, `content:audio`, `content:exam-audio`, `content:upload`, `content:index`, `content:generate`, `content:review`, `content:run` |
 | Evaluación de prompts | `pnpm ai:eval` (cuesta dinero: solo si se pide) |
 
 ## Estructura
