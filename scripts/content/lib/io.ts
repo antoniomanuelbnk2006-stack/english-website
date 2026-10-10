@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 
 /** Raíz del contenido. `CONTENT_DIR` permite apuntar a un contenido de prueba (tests e2e). */
@@ -32,6 +32,20 @@ export function listLessonFiles(dir = LESSONS_DIR): LessonFile[] {
   };
   walk(dir);
   return files.sort((a, b) => a.relativePath.localeCompare(b.relativePath));
+}
+
+/** Pruebas de los simulacros de examen: `content/exams/{nivel}/{id}.json`. */
+export function listExamFiles(): { file: string; id: string }[] {
+  const root = path.join(CONTENT_DIR, 'exams');
+  if (!existsSync(root)) return [];
+  return readdirSync(root)
+    .sort()
+    .flatMap((level) =>
+      readdirSync(path.join(root, level))
+        .filter((name) => name.endsWith('.json'))
+        .sort()
+        .map((name) => ({ file: path.join(root, level, name), id: name.replace(/\.json$/, '') })),
+    );
 }
 
 export function readJson(file: string): unknown {

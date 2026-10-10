@@ -25,6 +25,7 @@
     "content:index": "tsx --env-file-if-exists=.env.pipeline scripts/content/build-index.ts",
     "content:tts": "tsx --env-file-if-exists=.env.pipeline scripts/content/tts.ts",
     "content:audio": "tsx --env-file-if-exists=.env.pipeline scripts/content/audio.ts",
+    "content:exam-audio": "tsx --env-file-if-exists=.env.pipeline scripts/content/exam-audio.ts",
     "content:upload": "tsx --env-file-if-exists=.env.pipeline scripts/content/upload.ts",
     "content:publish": "tsx --env-file-if-exists=.env.pipeline scripts/content/publish.ts"
   },

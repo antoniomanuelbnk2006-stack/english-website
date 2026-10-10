@@ -15,6 +15,7 @@ import {
 } from '../../src/lib/content/pronunciation-schema';
 import { LessonMeta } from '../../src/lib/content/schema';
 import { reviewText } from '../../src/features/writing/lib/checks';
+import { checkExamPaper, ExamPaper, partRecordings } from '../../src/lib/content/exam-schema';
 import { checkUoeSet, UoeSet } from '../../src/lib/content/uoe-schema';
 import { checkWritingPrompt, WritingPrompt } from '../../src/lib/content/writing-schema';
 import { checkLesson } from './lib/check-lesson';
@@ -186,6 +187,46 @@ const describe = (error: unknown): string =>
       : String(error);
 
 /** Ejercicios de pronunciación: esquema, id coherente con el nivel e ítems sin repetir. */
+/** Simulacros de examen: cada prueba con las partes y preguntas del examen oficial. */
+async function checkExams(offline: boolean): Promise<{ count: number; errors: number }> {
+  const root = path.join(CONTENT_DIR, 'exams');
+  if (!existsSync(root)) return { count: 0, errors: 0 };
+  let count = 0;
+  let errors = 0;
+  for (const level of readdirSync(root).sort()) {
+    for (const file of readdirSync(path.join(root, level)).sort()) {
+      if (!file.endsWith('.json')) continue;
+      count++;
+      const id = file.slice(0, -'.json'.length);
+      const issues: string[] = [];
+      let status = '?';
+      try {
+        const paper = ExamPaper.parse(
+          JSON.parse(readFileSync(path.join(root, level, file), 'utf8')),
+        );
+        status = paper.status;
+        issues.push(...checkExamPaper(paper, { id, level }));
+        if (paper.paper === 'listening' && paper.status === 'published') {
+          for (const recording of paper.parts.flatMap(partRecordings)) {
+            if (!recording.audio) {
+              issues.push(`grabación ${recording.id}: sin audio (pnpm content:exam-audio --ids ${id})`);
+            } else if (!offline) {
+              const problem = await audioResponds(recording.audio.src);
+              if (problem) issues.push(`grabación ${recording.id}: ${problem}`);
+            }
+          }
+        }
+      } catch (error) {
+        issues.push(describe(error));
+      }
+      console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (examen · ${status})`);
+      for (const message of issues) console.log(`    ✗ ${message}`);
+      errors += issues.length;
+    }
+  }
+  return { count, errors };
+}
+
 function checkPronunciation(): { count: number; errors: number } {
   const root = path.join(CONTENT_DIR, 'pronunciation');
   if (!existsSync(root)) return { count: 0, errors: 0 };
@@ -340,9 +381,11 @@ async function main(): Promise<number> {
   errorCount += pronunciation.errors;
   const dictionary = checkDictionary(lists);
   errorCount += dictionary.errors;
+  const exams = await checkExams(values.offline);
+  errorCount += exams.errors;
 
   console.log(
-    `\n${files.length} lección(es): ${published.length} publicada(s) · ${fichas.count} ficha(s) de gramática · ${uoe.count} ejercicio(s) de Use of English · ${writing.count} consigna(s) de writing · ${pronunciation.count} ejercicio(s) de pronunciación · ${dictionary.count} palabra(s) del mazo · ${errorCount} error(es) · ${warningCount} aviso(s).`,
+    `\n${files.length} lección(es): ${published.length} publicada(s) · ${fichas.count} ficha(s) de gramática · ${uoe.count} ejercicio(s) de Use of English · ${writing.count} consigna(s) de writing · ${pronunciation.count} ejercicio(s) de pronunciación · ${dictionary.count} palabra(s) del mazo · ${exams.count} prueba(s) de examen · ${errorCount} error(es) · ${warningCount} aviso(s).`,
   );
   return errorCount > 0 ? 1 : 0;
 }

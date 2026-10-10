@@ -1,12 +1,14 @@
 // pnpm content:upload --ids b1-lis-001[,…] [--local]
-// Sube el audio final a Cloudflare R2 con caché inmutable (ADR-0004).
+// Sube el audio final a Cloudflare R2 con caché inmutable (ADR-0004): el de una lección o, si el
+// id es de una prueba de Listening de un simulacro, el de cada una de sus grabaciones.
 // Con --local lo copia a public/dev-audio/ para probar sin R2 (NEXT_PUBLIC_AUDIO_BASE_URL=/dev-audio).
 // LOCAL_AUDIO_DIR cambia esa carpeta (la usan los tests e2e para no pisar el audio real).
 import { copyFileSync, existsSync, mkdirSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
 import { parseArgs } from 'node:util';
 import { HeadObjectCommand, PutObjectCommand, S3Client } from '@aws-sdk/client-s3';
-import { listLessonFiles, readJson, splitIds } from './lib/io';
+import { ExamPaper, partRecordings } from '../../src/lib/content/exam-schema';
+import { listExamFiles, listLessonFiles, readJson, splitIds } from './lib/io';
 import { CACHE_DIR } from './lib/synthesize';
 
 function r2Client(): { client: S3Client; bucket: string } {
@@ -57,6 +59,8 @@ async function main(): Promise<number> {
   const localDir = path.resolve(process.cwd(), process.env.LOCAL_AUDIO_DIR ?? 'public/dev-audio');
   let problems = 0;
 
+  /** Lo que hay que subir: un audio por lección, o uno por grabación de un simulacro. */
+  const targets: { id: string; src: string }[] = [];
   for (const { file, id } of files) {
     const src = (readJson(file) as { audio?: { src?: string } }).audio?.src;
     if (!src) {
@@ -64,9 +68,25 @@ async function main(): Promise<number> {
       problems++;
       continue;
     }
+    targets.push({ id, src });
+  }
+  for (const { file, id } of listExamFiles().filter((exam) => ids.has(exam.id))) {
+    const paper = ExamPaper.parse(readJson(file));
+    if (paper.paper === 'speaking') continue;
+    for (const recording of paper.parts.flatMap(partRecordings)) {
+      if (!recording.audio) {
+        console.error(`${id} ${recording.id}: sin audio. Ejecuta antes: pnpm content:exam-audio --ids ${id}`);
+        problems++;
+        continue;
+      }
+      targets.push({ id: `${id} ${recording.id}`, src: recording.audio.src });
+    }
+  }
+
+  for (const { id, src } of targets) {
     const localFile = path.join(CACHE_DIR, 'out', src);
     if (!existsSync(localFile)) {
-      console.error(`${id}: no existe ${path.relative(process.cwd(), localFile)}. Ejecuta content:audio.`);
+      console.error(`${id}: no existe ${path.relative(process.cwd(), localFile)}. Vuelve a generar el audio.`);
       problems++;
       continue;
     }
@@ -87,7 +107,7 @@ async function main(): Promise<number> {
     }
     if (existing !== null) {
       // Las URLs son inmutables: un audio distinto necesita otra versión, nunca sobrescribir.
-      console.error(`${id}: ${src} ya existe en R2 con otro contenido. Sube «version» en la lección.`);
+      console.error(`${id}: ${src} ya existe en R2 con otro contenido. Sube «version» en el contenido.`);
       problems++;
       continue;
     }

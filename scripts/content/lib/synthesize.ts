@@ -136,19 +136,23 @@ export interface LessonAudio {
   charsSent: number;
 }
 
-async function synthesizeAt(
-  lesson: LessonDraft,
+/**
+ * Locuta unas unidades sueltas (con la misma caché) a una velocidad fija. La usan las lecciones
+ * y las grabaciones de los simulacros de examen.
+ */
+export async function synthesizeUnits(
+  id: string,
+  units: readonly SpokenUnit[],
   provider: TtsProvider,
   voices: Record<string, string>,
   rate: number,
 ): Promise<{ units: UnitAudio[]; charsSent: number }> {
-  const { units } = spokenUnits(lesson);
   const out: UnitAudio[] = [];
   let charsSent = 0;
 
   for (const unit of units) {
     const voice = voices[unit.speaker];
-    if (!voice) throw new Error(`${lesson.id}: el hablante «${unit.speaker}» no tiene voz`);
+    if (!voice) throw new Error(`${id}: el hablante «${unit.speaker}» no tiene voz`);
     const ssml = buildSsml({ text: unit.text, voice, rate, style: unit.style });
     const result = await synthesizeCached(provider, voice, ssml);
     if (!result.cached) charsSent += ssml.length;
@@ -167,6 +171,15 @@ async function synthesizeAt(
     });
   }
   return { units: out, charsSent };
+}
+
+function synthesizeAt(
+  lesson: LessonDraft,
+  provider: TtsProvider,
+  voices: Record<string, string>,
+  rate: number,
+): Promise<{ units: UnitAudio[]; charsSent: number }> {
+  return synthesizeUnits(lesson.id, spokenUnits(lesson).units, provider, voices, rate);
 }
 
 /** Velocidad objetivo: la de la lección de escucha, o una cómoda para leer en voz alta. */
