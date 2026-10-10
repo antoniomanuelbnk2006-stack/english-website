@@ -19,11 +19,24 @@ const CODE_ERRORS: Partial<Record<ActionError, TranslationKey>> = {
   rate_limited: 'login.errorRateLimited',
 };
 
-export function LoginForm() {
+const FIXED_CODE_ERRORS: Partial<Record<ActionError, TranslationKey>> = {
+  invalid_input: 'login.errorInvalidFixedCode',
+  unauthorized: 'login.errorWrongFixedCode',
+  rate_limited: 'login.errorRateLimited',
+};
+
+/** Cifras del código que llega por correo y de un código fijo (ADR-0020). */
+const EMAIL_CODE_LENGTH = 6;
+const FIXED_CODE_MIN = 4;
+const FIXED_CODE_MAX = 8;
+
+export function LoginForm({ fixedCode = false }: { fixedCode?: boolean }) {
   const t = useT();
   const [email, setEmail] = useState('');
   const [sentTo, setSentTo] = useState<string | null>(null);
   const [code, setCode] = useState('');
+  /** Con código fijo no se pide ningún correo: se pasa directamente a escribirlo. */
+  const [fixed, setFixed] = useState(false);
   const [error, setError] = useState<TranslationKey | null>(null);
   const [pending, startTransition] = useTransition();
 
@@ -33,6 +46,7 @@ export function LoginForm() {
     startTransition(async () => {
       const result = await requestOtp({ email });
       if (result.ok) {
+        setFixed(false);
         setSentTo(result.data.email);
         setCode('');
       } else {
@@ -48,8 +62,23 @@ export function LoginForm() {
     startTransition(async () => {
       // Si el código es correcto, la acción redirige a /hoy y nunca devuelve un resultado.
       const result = await verifyOtp({ email: sentTo, token: code });
-      if (!result.ok) setError(CODE_ERRORS[result.error] ?? 'login.errorInternal');
+      if (!result.ok) {
+        const errors = fixed ? FIXED_CODE_ERRORS : CODE_ERRORS;
+        setError(errors[result.error] ?? 'login.errorInternal');
+      }
     });
+  }
+
+  function enterFixedCode() {
+    const address = email.trim().toLowerCase();
+    if (!/^\S+@\S+\.\S+$/.test(address)) {
+      setError('login.errorInvalidEmail');
+      return;
+    }
+    setError(null);
+    setFixed(true);
+    setSentTo(address);
+    setCode('');
   }
 
   if (sentTo === null) {
@@ -78,6 +107,16 @@ export function LoginForm() {
         <Button type="submit" size="lg" disabled={pending || email.trim() === ''}>
           {pending ? t('login.sending') : t('login.sendCode')}
         </Button>
+        {fixedCode ? (
+          <Button
+            variant="secondary"
+            size="lg"
+            disabled={pending || email.trim() === ''}
+            onClick={enterFixedCode}
+          >
+            {t('login.fixedCodeButton')}
+          </Button>
+        ) : null}
       </form>
     );
   }
@@ -85,28 +124,42 @@ export function LoginForm() {
   return (
     <form onSubmit={handleCode} className="flex flex-col gap-4" noValidate>
       <p className="text-sm text-muted" role="status">
-        {t('login.codeSent', { email: sentTo })}
+        {fixed
+          ? t('login.fixedCodePrompt', { email: sentTo })
+          : t('login.codeSent', { email: sentTo })}
       </p>
       <div className="flex flex-col gap-2">
-        <Label htmlFor="code">{t('login.codeLabel')}</Label>
+        <Label htmlFor="code">{t(fixed ? 'login.fixedCodeLabel' : 'login.codeLabel')}</Label>
         <Input
           id="code"
           name="code"
           inputMode="numeric"
           autoComplete="one-time-code"
-          pattern="\d{6}"
+          pattern={fixed ? `\\d{${FIXED_CODE_MIN},${FIXED_CODE_MAX}}` : '\\d{6}'}
           required
           autoFocus
           className="hud h-14 text-center text-2xl tracking-[0.5em]"
           value={code}
           // Sin maxLength: al pegar «123 456» el navegador cortaría antes de quitar el espacio.
-          onChange={(e) => setCode(e.target.value.replace(/\D/g, '').slice(0, 6))}
+          onChange={(e) =>
+            setCode(
+              e.target.value
+                .replace(/\D/g, '')
+                .slice(0, fixed ? FIXED_CODE_MAX : EMAIL_CODE_LENGTH),
+            )
+          }
           aria-invalid={error ? true : undefined}
           aria-describedby={error ? 'code-error' : undefined}
         />
         <FieldError id="code-error">{error ? t(error) : null}</FieldError>
       </div>
-      <Button type="submit" size="lg" disabled={pending || code.length !== 6}>
+      <Button
+        type="submit"
+        size="lg"
+        disabled={
+          pending || (fixed ? code.length < FIXED_CODE_MIN : code.length !== EMAIL_CODE_LENGTH)
+        }
+      >
         {pending ? t('login.verifying') : t('login.verify')}
       </Button>
       <Button

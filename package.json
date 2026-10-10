@@ -20,6 +20,7 @@
     "db:types": "supabase gen types typescript --linked > src/lib/supabase/database.types.ts",
     "db:types:local": "supabase gen types typescript --local > src/lib/supabase/database.types.ts",
     "studio": "next dev",
+    "auth:set-code": "tsx --env-file-if-exists=.env.pipeline scripts/auth/set-login-code.ts",
     "content:validate": "tsx --env-file-if-exists=.env.pipeline scripts/content/validate.ts",
     "content:annotate": "tsx --env-file-if-exists=.env.pipeline scripts/content/annotate.ts",
     "content:index": "tsx --env-file-if-exists=.env.pipeline scripts/content/build-index.ts",

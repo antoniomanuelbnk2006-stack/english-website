@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Logo } from '@/components/shell/logo';
 import { LoginForm } from '@/features/auth/components/login-form';
 import { LINK_ERROR } from '@/features/auth/lib/confirm';
+import { env } from '@/lib/env';
 import { getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -29,7 +30,7 @@ export default async function LoginPage({ searchParams }: PageProps<'/login'>) {
             {t('login.errorLink')}
           </p>
         ) : null}
-        <LoginForm />
+        <LoginForm fixedCode={Boolean(env.LOGIN_CODE_PEPPER)} />
       </div>
     </main>
   );

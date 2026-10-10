@@ -13,6 +13,8 @@ export const E2E = {
   otp: '123456',
   /** Código con el que el emulador da por bueno el enlace del correo. */
   authCode: 'e2e-auth-code-0001',
+  /** Código fijo de acceso que acepta el emulador (ADR-0020). */
+  fixedCode: '654321',
   emulatorUrl: `http://127.0.0.1:${EMULATOR_PORT}`,
 };
 
@@ -22,6 +24,8 @@ const env = {
   // El audio de prueba (tonos) va en su propia carpeta para no pisar el real.
   NEXT_PUBLIC_AUDIO_BASE_URL: '/dev-audio/e2e',
   ALLOWED_EMAIL: E2E.email,
+  // Activa el acceso con código fijo; el emulador deriva la misma contraseña con este secreto.
+  LOGIN_CODE_PEPPER: 'secreto-solo-para-los-tests-e2e-0123456789',
   EMULATOR_PORT: String(EMULATOR_PORT),
   // Contenido de prueba: el real más una lección de escucha con audio generado para los tests.
   CONTENT_DIR: '.e2e/content',

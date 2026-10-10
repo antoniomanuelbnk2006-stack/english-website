@@ -48,6 +48,17 @@ describe('parseEnv', () => {
     );
   });
 
+  it('el secreto del código fijo es opcional, pero no puede ser corto', () => {
+    expect(parseEnv(ServerEnv, valid).LOGIN_CODE_PEPPER).toBeUndefined();
+    const pepper = 'x'.repeat(32);
+    expect(parseEnv(ServerEnv, { ...valid, LOGIN_CODE_PEPPER: pepper }).LOGIN_CODE_PEPPER).toBe(
+      pepper,
+    );
+    expect(() => parseEnv(ServerEnv, { ...valid, LOGIN_CODE_PEPPER: 'corto' })).toThrow(
+      /LOGIN_CODE_PEPPER/,
+    );
+  });
+
   it('rechaza valores con formato incorrecto', () => {
     expect(() =>
       parseEnv(ServerEnv, { ...valid, NEXT_PUBLIC_SUPABASE_URL: 'no-es-una-url' }),

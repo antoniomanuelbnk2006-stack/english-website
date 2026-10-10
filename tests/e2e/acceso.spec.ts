@@ -148,3 +148,62 @@ test.describe('acceso con el enlace del correo', () => {
     await expect(page).toHaveURL(/\/login$/);
   });
 });
+
+// Código fijo (ADR-0020): se entra sin pedir ningún correo. En los tests está activado y el
+// emulador acepta el código de `E2E.fixedCode`.
+test.describe('acceso con código fijo', () => {
+  test.beforeEach(async ({ request, page }) => {
+    await resetDatabase(request);
+    await page.goto('/login');
+  });
+
+  test('entra con el email y el código, sin pasar por el correo', async ({ page }) => {
+    await page.getByLabel('Email').fill(E2E.email);
+    await page.getByRole('button', { name: 'Tengo un código fijo' }).click();
+    await expect(page.getByRole('status')).toHaveText(
+      `Escribe tu código fijo para entrar como ${E2E.email}.`,
+    );
+    const code = page.getByLabel('Código fijo');
+    await expect(code).toBeFocused();
+    await expectAccessible(page);
+
+    await code.fill(E2E.fixedCode);
+    await page.getByRole('button', { name: 'Entrar' }).click();
+    await expect(page).toHaveURL(/\/(hoy|nivel)$/);
+    await page.goto('/leer');
+    await expect(page).toHaveURL(/\/leer$/);
+  });
+
+  test('un código equivocado, o el bueno con otro email, no entra', async ({ page }) => {
+    // Hace falta un email con buena pinta para pasar al código.
+    await page.getByLabel('Email').fill('no-es-un-email');
+    await page.getByRole('button', { name: 'Tengo un código fijo' }).click();
+    await expect(page.locator('form').getByRole('alert')).toHaveText('Ese email no parece válido.');
+
+    await page.getByLabel('Email').fill(E2E.email);
+    await page.getByRole('button', { name: 'Tengo un código fijo' }).click();
+    const code = page.getByLabel('Código fijo');
+    const enter = page.getByRole('button', { name: 'Entrar' });
+
+    // De 4 a 8 cifras; lo que no sea una cifra se descarta.
+    await code.fill('12a');
+    await expect(code).toHaveValue('12');
+    await expect(enter).toBeDisabled();
+    await code.fill('1234567890');
+    await expect(code).toHaveValue('12345678');
+
+    await code.fill('000000');
+    await enter.click();
+    await expect(page.locator('form').getByRole('alert')).toHaveText('El código no es correcto.');
+    await expect(page).toHaveURL(/\/login$/);
+
+    await page.getByRole('button', { name: 'Usar otro email' }).click();
+    await page.getByLabel('Email').fill('otra@persona.com');
+    await page.getByRole('button', { name: 'Tengo un código fijo' }).click();
+    await page.getByLabel('Código fijo').fill(E2E.fixedCode);
+    await page.getByRole('button', { name: 'Entrar' }).click();
+    await expect(page.locator('form').getByRole('alert')).toHaveText('El código no es correcto.');
+    await page.goto('/hoy');
+    await expect(page).toHaveURL(/\/login$/);
+  });
+});

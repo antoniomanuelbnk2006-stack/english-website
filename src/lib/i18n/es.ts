@@ -60,6 +60,11 @@ export const es = {
     errorInvalidEmail: 'Ese email no parece válido.',
     errorInvalidCode: 'El código tiene 6 dígitos.',
     errorWrongCode: 'El código no es correcto o ha caducado. Pide uno nuevo.',
+    fixedCodeButton: 'Tengo un código fijo',
+    fixedCodePrompt: 'Escribe tu código fijo para entrar como {email}.',
+    fixedCodeLabel: 'Código fijo',
+    errorInvalidFixedCode: 'El código fijo tiene entre 4 y 8 cifras.',
+    errorWrongFixedCode: 'El código no es correcto.',
     errorLink:
       'Ese enlace no es válido o ha caducado. Pide otro correo y abre el enlace en este mismo navegador.',
     errorRateLimited: 'Demasiados intentos. Espera un minuto y vuelve a probar.',

@@ -61,6 +61,11 @@ export const en: Dictionary = {
     errorInvalidEmail: "That email doesn't look right.",
     errorInvalidCode: 'The code has 6 digits.',
     errorWrongCode: 'That code is wrong or has expired. Ask for a new one.',
+    fixedCodeButton: 'I have a fixed code',
+    fixedCodePrompt: 'Type your fixed code to sign in as {email}.',
+    fixedCodeLabel: 'Fixed code',
+    errorInvalidFixedCode: 'The fixed code has between 4 and 8 digits.',
+    errorWrongFixedCode: 'That code is not correct.',
     errorLink:
       'That link is not valid or has expired. Ask for another email and open the link in this same browser.',
     errorRateLimited: 'Too many attempts. Wait a minute and try again.',

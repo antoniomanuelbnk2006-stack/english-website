@@ -21,6 +21,9 @@ export type ClientEnv = z.infer<typeof ClientEnv>;
 
 export const ServerEnv = ClientEnv.extend({
   ALLOWED_EMAIL: z.string().trim().toLowerCase().pipe(z.email()),
+  // Secreto con el que se deriva la contraseña del código fijo de acceso (ADR-0020). Sin él,
+  // solo se entra con el correo.
+  LOGIN_CODE_PEPPER: z.string().min(32).optional(),
   // Sin ella la app funciona igual, pero el writing solo ofrece la revisión sin IA (ADR-0014).
   ANTHROPIC_API_KEY: z.string().min(1).optional(),
   // Solo para tests (un doble de la API) o un proxy propio; por defecto, la API de Anthropic.
