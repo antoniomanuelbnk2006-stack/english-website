@@ -1,61 +1,41 @@
-// pnpm content:upload --ids b1-lis-001[,…] [--local]
-// Sube el audio final a Cloudflare R2 con caché inmutable (ADR-0004): el de una lección o, si el
-// id es de una prueba de Listening de un simulacro, el de cada una de sus grabaciones.
-// Con --local lo copia a public/dev-audio/ para probar sin R2 (NEXT_PUBLIC_AUDIO_BASE_URL=/dev-audio).
+// pnpm content:upload --ids b1-lis-001[,…] [--local | --supabase]
+// Sube el audio final con caché de un año: el de una lección o, si el id es de una prueba de
+// Listening de un simulacro, el de cada una de sus grabaciones.
+//   (sin opción)  a Cloudflare R2 (ADR-0004)
+//   --supabase    al Storage del proyecto de Supabase (ADR-0019)
+//   --local       lo copia a public/dev-audio/ para probar (NEXT_PUBLIC_AUDIO_BASE_URL=/dev-audio)
 // LOCAL_AUDIO_DIR cambia esa carpeta (la usan los tests e2e para no pisar el audio real).
 import { copyFileSync, existsSync, mkdirSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
 import { parseArgs } from 'node:util';
-import { HeadObjectCommand, PutObjectCommand, S3Client } from '@aws-sdk/client-s3';
 import { ExamPaper, partRecordings } from '../../src/lib/content/exam-schema';
+import { r2Store, supabaseStore, type AudioStore } from './lib/audio-stores';
 import { listExamFiles, listLessonFiles, readJson, splitIds } from './lib/io';
 import { CACHE_DIR } from './lib/synthesize';
 
-function r2Client(): { client: S3Client; bucket: string } {
-  const { R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET } = process.env;
-  if (!R2_ACCOUNT_ID || !R2_ACCESS_KEY_ID || !R2_SECRET_ACCESS_KEY || !R2_BUCKET) {
-    throw new Error(
-      'Faltan R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY o R2_BUCKET en .env.pipeline ' +
-        '(docs/06-desarrollo/04-entornos-y-despliegue.md §4). Para probar sin R2: --local.',
-    );
-  }
-  return {
-    bucket: R2_BUCKET,
-    client: new S3Client({
-      region: 'auto',
-      endpoint: `https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
-      credentials: { accessKeyId: R2_ACCESS_KEY_ID, secretAccessKey: R2_SECRET_ACCESS_KEY },
-    }),
-  };
-}
-
-/** Tamaño del objeto en R2, o `null` si no existe. */
-async function remoteSize(client: S3Client, bucket: string, key: string): Promise<number | null> {
-  try {
-    const head = await client.send(new HeadObjectCommand({ Bucket: bucket, Key: key }));
-    return head.ContentLength ?? 0;
-  } catch (error) {
-    const status = (error as { $metadata?: { httpStatusCode?: number } }).$metadata?.httpStatusCode;
-    if (status === 404) return null;
-    throw error;
-  }
-}
-
 async function main(): Promise<number> {
   const { values } = parseArgs({
-    options: { ids: { type: 'string', multiple: true }, local: { type: 'boolean', default: false } },
+    options: {
+      ids: { type: 'string', multiple: true },
+      local: { type: 'boolean', default: false },
+      supabase: { type: 'boolean', default: false },
+    },
   });
   const ids = new Set(splitIds(values.ids));
   if (ids.size === 0) {
-    console.error('Uso: pnpm content:upload --ids <id>[,<id>…] [--local]');
+    console.error('Uso: pnpm content:upload --ids <id>[,<id>…] [--local | --supabase]');
     return 2;
   }
   const files = listLessonFiles().filter((file) => ids.has(file.id));
   if (!values.local && process.env.CONTENT_DIR) {
-    console.error('Con CONTENT_DIR (contenido de prueba) solo se admite --local: no se sube a R2.');
+    console.error('Con CONTENT_DIR (contenido de prueba) solo se admite --local: no se sube a ningún sitio.');
     return 2;
   }
-  const r2 = values.local ? null : r2Client();
+  const store: AudioStore | null = values.local
+    ? null
+    : values.supabase
+      ? await supabaseStore()
+      : r2Store();
   const localDir = path.resolve(process.cwd(), process.env.LOCAL_AUDIO_DIR ?? 'public/dev-audio');
   let problems = 0;
 
@@ -91,7 +71,7 @@ async function main(): Promise<number> {
       continue;
     }
 
-    if (!r2) {
+    if (!store) {
       const target = path.join(localDir, src);
       mkdirSync(path.dirname(target), { recursive: true });
       copyFileSync(localFile, target);
@@ -100,27 +80,19 @@ async function main(): Promise<number> {
     }
 
     const size = statSync(localFile).size;
-    const existing = await remoteSize(r2.client, r2.bucket, src);
+    const existing = await store.size(src);
     if (existing === size) {
       console.log(`${id}: ${src} ya está subido.`);
       continue;
     }
     if (existing !== null) {
       // Las URLs son inmutables: un audio distinto necesita otra versión, nunca sobrescribir.
-      console.error(`${id}: ${src} ya existe en R2 con otro contenido. Sube «version» en el contenido.`);
+      console.error(`${id}: ${src} ya existe en ${store.label} con otro contenido. Sube «version» en el contenido.`);
       problems++;
       continue;
     }
-    await r2.client.send(
-      new PutObjectCommand({
-        Bucket: r2.bucket,
-        Key: src,
-        Body: readFileSync(localFile),
-        ContentType: 'audio/mp4',
-        CacheControl: 'public, max-age=31536000, immutable',
-      }),
-    );
-    console.log(`${id} → r2://${r2.bucket}/${src} (${(size / 1024).toFixed(0)} KB)`);
+    await store.put(src, readFileSync(localFile));
+    console.log(`${id} → ${store.label}/${src} (${(size / 1024).toFixed(0)} KB)`);
   }
   return problems > 0 ? 1 : 0;
 }
