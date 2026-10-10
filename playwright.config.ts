@@ -50,6 +50,11 @@ export default defineConfig({
     timezoneId: 'Europe/Madrid',
     // Sin transiciones: axe mide los colores finales y no un fotograma a medio cambiar de tema.
     contextOptions: { reducedMotion: 'reduce' },
+    // Micrófono de mentira (un tono) y permiso concedido: el simulador de Speaking graba de
+    // verdad sin pedir nada ni depender del equipo donde corren los tests.
+    launchOptions: {
+      args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream'],
+    },
     trace: 'retain-on-failure',
   },
   projects: [

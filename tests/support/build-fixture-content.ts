@@ -27,6 +27,8 @@ const LESSONS = new Set(['b1-rea-001', LISTENING]);
 const USE_OF_ENGLISH = new Set(['b2-uoe-001', 'b2-uoe-002', 'b2-uoe-003', 'b2-uoe-004']);
 const WRITING = new Set(['a1-wri-001', 'b1-wri-001', 'b1-wri-004', 'b2-wri-001', 'b2-wri-005']);
 const PRONUNCIATION = new Set(['a1-pro-001', 'b1-pro-002']);
+const EXAM_LISTENING = 'b2-exam-01-listening';
+const EXAMS = new Set(['b2-exam-01-reading', EXAM_LISTENING, 'b2-exam-01-speaking']);
 
 /** Mazo de palabras de prueba: pequeño y fijo, con y sin frecuencia para probar el orden. */
 const DICTIONARY = {
@@ -86,6 +88,7 @@ keepOnly(path.join(FIXTURE_DIR, 'lessons'), LESSONS);
 keepOnly(path.join(FIXTURE_DIR, 'use-of-english'), USE_OF_ENGLISH);
 keepOnly(path.join(FIXTURE_DIR, 'writing'), WRITING);
 keepOnly(path.join(FIXTURE_DIR, 'pronunciation'), PRONUNCIATION);
+keepOnly(path.join(FIXTURE_DIR, 'exams'), EXAMS);
 
 rmSync(path.join(FIXTURE_DIR, 'dictionary'), { recursive: true, force: true });
 mkdirSync(path.join(FIXTURE_DIR, 'dictionary'), { recursive: true });
@@ -129,6 +132,15 @@ lesson.audio.provider = 'azure';
 writeFileSync(file, `${JSON.stringify(lesson, null, 2)}\n`);
 
 script('annotate', ['--ids', LISTENING]);
+
+// El Listening del simulacro pasa por su propio pipeline, también con tonos en vez de voz.
+script('exam-audio', ['--ids', EXAM_LISTENING]);
+script('upload', ['--ids', EXAM_LISTENING, '--local']);
+const examFile = path.join(FIXTURE_DIR, 'exams', 'b2', `${EXAM_LISTENING}.json`);
+const exam = JSON.parse(readFileSync(examFile, 'utf8')) as { status: string };
+exam.status = 'published';
+writeFileSync(examFile, `${JSON.stringify(exam, null, 2)}\n`);
+
 script('build-index');
 script('validate', ['--offline']);
 console.log('\nContenido de prueba listo en .e2e/content');
