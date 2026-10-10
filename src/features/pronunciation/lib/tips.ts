@@ -576,21 +576,49 @@ function evidence(word: string, heardText: string): Tip[] {
   const add = (id: string, text: string) => found.push({ id, text_es: text });
   if (!heard || heard === word) return found;
 
-  if (/^s[bcdfgklmnpqtvw]/.test(word) && (heardWords.length > 1 || /^[aeiou]/.test(heard))) {
+  // Cada pista exige que el resto de la palabra se parezca: si se oyó algo que no tiene nada
+  // que ver, no señala ningún sonido en concreto.
+  const loose = (text: string) => skeleton(text).replace(/[rl]/g, '');
+
+  if (
+    /^s[bcdfgklmnpqtvw]/.test(word) &&
+    (heardWords.length > 1 || /^[aeiou]/.test(heard)) &&
+    // Basta con que se reconozca el arranque de la palabra: el final puede haberse perdido.
+    skeleton(heard).includes(skeleton(word).slice(1, 3))
+  ) {
     add('s-cluster', TEXT.sCluster);
   }
   if (
     word.includes('th') &&
     !heard.includes('th') &&
     (['s', 't', 'd', 'f', 'z', 'v'].some((letter) => word.replace('th', letter) === heard) ||
-      (word.startsWith('th') && /^[stdfzv]/.test(heard)))
+      (word.startsWith('th') &&
+        /^[stdfzv]/.test(heard) &&
+        loose(word.slice(2)) === loose(heard.slice(1))))
   ) {
     add('th', TH_VOICED.has(word) ? TEXT.thVoiced : TEXT.thVoiceless);
   }
-  if (word.includes('v') && !heard.includes('v') && heard.includes('b')) add('v', TEXT.v);
-  if (word.includes('b') && !heard.includes('b') && heard.includes('v')) add('b', TEXT.b);
-  if (word.startsWith('h') && !SILENT_H.has(word) && /^[aeiou]/.test(heard)) add('h', TEXT.h);
-  if (word.startsWith('w') && /^(g|b)/.test(heard)) add('w', TEXT.w);
+  if (word.includes('v') && skeleton(word).replace(/v/g, 'b') === skeleton(heard)) {
+    add('v', TEXT.v);
+  }
+  if (word.includes('b') && skeleton(word).replace(/b/g, 'v') === skeleton(heard)) {
+    add('b', TEXT.b);
+  }
+  if (
+    word.startsWith('h') &&
+    !SILENT_H.has(word) &&
+    /^[aeiou]/.test(heard) &&
+    loose(word.slice(1)) === loose(heard)
+  ) {
+    add('h', TEXT.h);
+  }
+  if (
+    word.startsWith('w') &&
+    /^(g|b)/.test(heard) &&
+    loose(word.slice(1)) === loose(heard.replace(/^(gu|g|b)/, ''))
+  ) {
+    add('w', TEXT.w);
+  }
   if (word.startsWith('j') && heard === `y${word.slice(1)}`) add('j', TEXT.j);
   if (word.startsWith('y') && heard === `j${word.slice(1)}`) add('y', TEXT.y);
 
@@ -604,10 +632,17 @@ function evidence(word: string, heardText: string): Tip[] {
     add('ch', TEXT.ch);
   }
 
+  // El final se compara también con la última palabra oída: «a stop» por *stopped*.
+  const tail = heardWords.at(-1) ?? heard;
   const ending = edEnding(word);
-  if (ending && [word.slice(0, -2), word.slice(0, -1), word.slice(0, -3)].includes(heard)) {
+  const stems = [word.slice(0, -2), word.slice(0, -1), word.slice(0, -3)];
+  if (ending && (stems.includes(heard) || stems.includes(tail))) {
     add('ed', TEXT[ending]);
-  } else if (/[^aeiou]$/.test(word) && word.length > 2 && heard === word.slice(0, -1)) {
+  } else if (
+    /[^aeiou]$/.test(word) &&
+    word.length > 2 &&
+    [heard, tail].includes(word.slice(0, -1))
+  ) {
     add('final-missing', TEXT.finalMissing);
   }
 
@@ -634,7 +669,6 @@ function evidence(word: string, heardText: string): Tip[] {
   if (/me?$/.test(word) && heard === word.replace(/m(e?)$/, 'n$1')) add('final-m', TEXT.finalM);
 
   // La vocal /ɜː/ (*work*) frente a las que se le parecen (*walk*): solo cambian la vocal y la r o la l.
-  const loose = (text: string) => skeleton(text).replace(/[rl]/g, '');
   const erVowel = FEATURES.find((feature) => feature.id === 'er')?.text(word);
   if (erVowel && loose(word) === loose(heard)) add('er', TEXT.er);
   else if (/al[kl]|aw|au/.test(word) && loose(word) === loose(heard)) add('aw', TEXT.aw);
@@ -671,10 +705,18 @@ export function wordTips(word: string, heard = '', limit = MAX_WORD_TIPS): Tip[]
   // Una palabra con trampa conocida explica el fallo mejor que cualquier regla general.
   const known = KNOWN[target];
   if (known) push({ id: 'known', text_es: known });
-  for (const tip of evidence(target, heard)) push(tip);
-  for (const feature of FEATURES) {
-    const text = feature.text(target);
-    if (text) push({ id: feature.id, text_es: text });
+
+  // Si lo que se oyó señala un fallo concreto, lo demás se ha entendido: no hace falta
+  // adivinar más. El aviso genérico de «cambia la vocal» no cuenta como concreto.
+  const clues = evidence(target, heard);
+  const specific = clues.filter((tip) => tip.id !== 'vowel');
+  for (const tip of specific) push(tip);
+  if (specific.length === 0) {
+    if (!known) for (const tip of clues) push(tip);
+    for (const feature of FEATURES) {
+      const text = feature.text(target);
+      if (text) push({ id: feature.id, text_es: text });
+    }
   }
   if (tips.length === 0) push({ id: 'generic-word', text_es: TEXT.genericWord });
   return tips.slice(0, limit);

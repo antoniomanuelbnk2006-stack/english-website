@@ -137,8 +137,7 @@ describe('wordTips: por lo que se oyó en su lugar', () => {
     expect(first('pool', 'pull')?.id).toBe('long-u');
     expect(first('work', 'walk')?.id).toBe('er');
     expect(first('bird', 'bed')?.id).toBe('er');
-    // Lo que se oyó va delante de lo que deja prever la ortografía.
-    expect(ids('walk', 'work')).toEqual(['aw', 'silent-l', 'w']);
+    expect(ids('walk', 'work')).toEqual(['aw']);
     expect(first('bat', 'boat')?.id).toBe('vowel');
   });
 
@@ -160,6 +159,22 @@ describe('wordTips: por lo que se oyó en su lugar', () => {
   it('una vocal de más delante de s + consonante', () => {
     expect(first('school', 'a school')?.id).toBe('s-cluster');
     expect(first('stop', 'is top')?.id).toBe('s-cluster');
+    // Dos fallos a la vez: la «e» delante y el final que no se oye.
+    expect(ids('stopped', 'a stop')).toEqual(['s-cluster', 'ed']);
+  });
+
+  it('si lo que se oyó señala el fallo, no se añaden suposiciones sobre lo demás', () => {
+    // Ha entendido «work»: ni la vocal ni la *w* estaban mal, solo falta el final.
+    expect(ids('worked', 'work')).toEqual(['ed']);
+    expect(ids('very', 'berry')).toEqual(['v']);
+    expect(ids('school', 'a school')).toEqual(['s-cluster']);
+    // Si no señala nada concreto, se recurre a la ortografía.
+    expect(ids('worked', 'banana')).toEqual(['ed', 'er', 'w']);
+  });
+
+  it('en una palabra con trampa conocida no se añade el aviso genérico de la vocal', () => {
+    expect(ids('comfortable', 'come for table')).toEqual(['known', 'long-word']);
+    expect(ids('bat', 'boat')).toEqual(['vowel', 'generic-word'].slice(0, 1));
   });
 
   it('finales que no se oyen o que suenan sordos o sonoros', () => {
@@ -171,6 +186,18 @@ describe('wordTips: por lo que se oyó en su lugar', () => {
     expect(first('back', 'bag')?.id).toBe('final-voiceless');
     expect(first('bed', 'bet')?.id).toBe('final-voiced');
     expect(first('time', 'tine')?.id).toBe('final-m');
+  });
+
+  it('oír algo que no tiene nada que ver no señala ningún sonido', () => {
+    for (const [word, said] of [
+      ['very', 'banana'],
+      ['think', 'table'],
+      ['house', 'apple'],
+      ['wood', 'banana'],
+      ['school', 'the big table'],
+    ] as const) {
+      expect(ids(word, said), word).toEqual(ids(word));
+    }
   });
 
   it('oír lo mismo o no oír nada no señala ninguna regla', () => {
