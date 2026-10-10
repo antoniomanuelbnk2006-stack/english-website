@@ -45,7 +45,7 @@ test('con sesión, /login lleva a Hoy; al cerrar sesión se vuelve al acceso', a
 test('un código incorrecto no abre sesión', async ({ page }) => {
   await page.goto('/login');
   await page.getByLabel('Email').fill('owner@example.invalid');
-  await page.getByRole('button', { name: 'Enviar código' }).click();
+  await page.getByRole('button', { name: 'Enviarme el correo' }).click();
   await page.getByLabel('Código de 6 dígitos').fill('000000');
   await page.getByRole('button', { name: 'Entrar' }).click();
   await expect(page.locator('form').getByRole('alert')).toHaveText(
@@ -89,7 +89,7 @@ test('una sesión de un usuario que ya no existe lleva a entrar de nuevo, no a u
 
   // Y se puede volver a entrar con normalidad.
   await page.getByLabel('Email').fill(E2E.email);
-  await page.getByRole('button', { name: 'Enviar código' }).click();
+  await page.getByRole('button', { name: 'Enviarme el correo' }).click();
   await page.getByLabel('Código de 6 dígitos').fill(E2E.otp);
   await page.getByRole('button', { name: 'Entrar' }).click();
   await expect(page).toHaveURL(/\/hoy$/);

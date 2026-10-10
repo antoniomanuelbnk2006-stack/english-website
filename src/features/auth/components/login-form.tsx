@@ -10,7 +10,8 @@ import type { TranslationKey } from '@/lib/i18n';
 
 const EMAIL_ERRORS: Partial<Record<ActionError, TranslationKey>> = {
   invalid_input: 'login.errorInvalidEmail',
-  rate_limited: 'login.errorRateLimited',
+  // Aquí el límite es el de correos enviados, que no se levanta en un minuto.
+  rate_limited: 'login.errorEmailRateLimited',
 };
 
 const CODE_ERRORS: Partial<Record<ActionError, TranslationKey>> = {
@@ -40,8 +41,7 @@ export function LoginForm({ fixedCode = false }: { fixedCode?: boolean }) {
   const [error, setError] = useState<TranslationKey | null>(null);
   const [pending, startTransition] = useTransition();
 
-  function handleEmail(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+  function requestEmail() {
     setError(null);
     startTransition(async () => {
       const result = await requestOtp({ email });
@@ -81,9 +81,17 @@ export function LoginForm({ fixedCode = false }: { fixedCode?: boolean }) {
     setCode('');
   }
 
+  function handleStart(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    // Con código fijo, lo principal (y lo que hace Intro) es pasar a escribirlo: el correo queda
+    // como respaldo (ADR-0021).
+    if (fixedCode) enterFixedCode();
+    else requestEmail();
+  }
+
   if (sentTo === null) {
     return (
-      <form onSubmit={handleEmail} className="flex flex-col gap-4" noValidate>
+      <form onSubmit={handleStart} className="flex flex-col gap-4" noValidate>
         <div className="flex flex-col gap-2">
           <Label htmlFor="email">{t('login.emailLabel')}</Label>
           <Input
@@ -104,19 +112,25 @@ export function LoginForm({ fixedCode = false }: { fixedCode?: boolean }) {
           />
           <FieldError id="email-error">{error ? t(error) : null}</FieldError>
         </div>
-        <Button type="submit" size="lg" disabled={pending || email.trim() === ''}>
-          {pending ? t('login.sending') : t('login.sendCode')}
-        </Button>
         {fixedCode ? (
-          <Button
-            variant="secondary"
-            size="lg"
-            disabled={pending || email.trim() === ''}
-            onClick={enterFixedCode}
-          >
-            {t('login.fixedCodeButton')}
+          <>
+            <Button type="submit" size="lg" disabled={pending || email.trim() === ''}>
+              {t('login.fixedCodeButton')}
+            </Button>
+            <Button
+              variant="secondary"
+              size="lg"
+              disabled={pending || email.trim() === ''}
+              onClick={requestEmail}
+            >
+              {pending ? t('login.sending') : t('login.sendEmail')}
+            </Button>
+          </>
+        ) : (
+          <Button type="submit" size="lg" disabled={pending || email.trim() === ''}>
+            {pending ? t('login.sending') : t('login.sendEmail')}
           </Button>
-        ) : null}
+        )}
       </form>
     );
   }

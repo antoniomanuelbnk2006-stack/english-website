@@ -59,6 +59,15 @@ describe('parseEnv', () => {
     );
   });
 
+  it('la dirección de la web es opcional y tiene que ser http o https', () => {
+    expect(parseEnv(ServerEnv, valid).SITE_URL).toBeUndefined();
+    const site = 'https://senal.example.dev';
+    expect(parseEnv(ServerEnv, { ...valid, SITE_URL: site }).SITE_URL).toBe(site);
+    for (const wrong of ['senal.example.dev', 'ftp://senal.example.dev']) {
+      expect(() => parseEnv(ServerEnv, { ...valid, SITE_URL: wrong })).toThrow(/SITE_URL/);
+    }
+  });
+
   it('rechaza valores con formato incorrecto', () => {
     expect(() =>
       parseEnv(ServerEnv, { ...valid, NEXT_PUBLIC_SUPABASE_URL: 'no-es-una-url' }),

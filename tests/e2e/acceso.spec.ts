@@ -32,6 +32,30 @@ test.describe('sin sesión', () => {
     expect(csp).toContain(`frame-ancestors 'none'`);
     expect(response.headers()['x-powered-by']).toBeUndefined();
   });
+
+  // La web tiene una sola dirección (ADR-0021). La petición llega con el nombre de otra, como
+  // la dirección propia que Vercel deja a cada despliegue antiguo.
+  test('lo que llega por otra dirección se redirige; lo local y la buena, no', async ({
+    request,
+  }) => {
+    const old = { host: 'senal-abc123-equipo.vercel.app' };
+    for (const path of ['/login', '/leer/b2-r-001?fase=2', '/api/ai/writing-feedback']) {
+      const response = await request.get(path, { headers: old, maxRedirects: 0 });
+      expect(response.status()).toBe(307);
+      // Fuera de Vercel, Next cree que su dirección es la del servidor y escribe como relativa
+      // una redirección a ella: aquí se ve la ruta. El destino completo lo cubren los tests de
+      // `canonicalUrl`.
+      expect([path, `${E2E.appUrl}${path}`]).toContain(response.headers().location);
+    }
+
+    const direct = await request.get('/login', { maxRedirects: 0 });
+    expect(direct.status()).toBe(200);
+    // El mismo servidor por 127.0.0.1: una dirección local nunca se redirige.
+    const local = await request.get(`${E2E.appUrl.replace('localhost', '127.0.0.1')}/login`, {
+      maxRedirects: 0,
+    });
+    expect(local.status()).toBe(200);
+  });
 });
 
 test.describe('pantalla de acceso', () => {
@@ -52,14 +76,14 @@ test.describe('pantalla de acceso', () => {
 
   test('avisa si el email no es válido', async ({ page }) => {
     await page.getByLabel('Email').fill('no-es-un-email');
-    await page.getByRole('button', { name: 'Enviar código' }).click();
+    await page.getByRole('button', { name: 'Enviarme el correo' }).click();
     await expect(page.locator('form').getByRole('alert')).toHaveText('Ese email no parece válido.');
     await expect(page.getByLabel('Email')).toHaveAttribute('aria-invalid', 'true');
   });
 
   test('un email sin acceso recibe la misma respuesta y no puede entrar', async ({ page }) => {
     await page.getByLabel('Email').fill('otra@persona.com');
-    await page.getByRole('button', { name: 'Enviar código' }).click();
+    await page.getByRole('button', { name: 'Enviarme el correo' }).click();
 
     // No se revela si el email tiene acceso: se pasa igualmente al paso del código.
     await expect(page.getByRole('status')).toContainText('Si otra@persona.com tiene acceso');
@@ -75,7 +99,7 @@ test.describe('pantalla de acceso', () => {
 
   test('el código admite pegar con espacios y solo conserva 6 dígitos', async ({ page }) => {
     await page.getByLabel('Email').fill('otra@persona.com');
-    await page.getByRole('button', { name: 'Enviar código' }).click();
+    await page.getByRole('button', { name: 'Enviarme el correo' }).click();
     const code = page.getByLabel('Código de 6 dígitos');
     await code.fill('123 456');
     await expect(code).toHaveValue('123456');
@@ -87,8 +111,9 @@ test.describe('pantalla de acceso', () => {
   test('se puede completar solo con teclado y volver a cambiar el email', async ({ page }) => {
     await expect(page.getByLabel('Email')).toBeFocused();
     await page.keyboard.type('otra@persona.com');
+    // Con código fijo activado, como en los tests, Intro pasa a escribirlo (ADR-0021).
     await page.keyboard.press('Enter');
-    await expect(page.getByLabel('Código de 6 dígitos')).toBeFocused();
+    await expect(page.getByLabel('Código fijo')).toBeFocused();
     await page.getByRole('button', { name: 'Usar otro email' }).click();
     await expect(page.getByLabel('Email')).toHaveValue('otra@persona.com');
   });
@@ -104,7 +129,7 @@ test.describe('acceso con el enlace del correo', () => {
   test('abre sesión en el navegador que pidió el correo', async ({ page }) => {
     await page.goto('/login');
     await page.getByLabel('Email').fill(E2E.email);
-    await page.getByRole('button', { name: 'Enviar código' }).click();
+    await page.getByRole('button', { name: 'Enviarme el correo' }).click();
     await expect(page.getByRole('status')).toContainText(
       'o abre el enlace que trae en este mismo navegador',
     );
@@ -132,7 +157,7 @@ test.describe('acceso con el enlace del correo', () => {
 
     // Pedido en un navegador y abierto en otro: tampoco entra.
     await page.getByLabel('Email').fill(E2E.email);
-    await page.getByRole('button', { name: 'Enviar código' }).click();
+    await page.getByRole('button', { name: 'Enviarme el correo' }).click();
     await expect(page.getByRole('status')).toBeVisible();
     const other = await (await browser.newContext()).newPage();
     await other.goto(`/auth/confirm?code=${E2E.authCode}`);
@@ -157,9 +182,22 @@ test.describe('acceso con código fijo', () => {
     await page.goto('/login');
   });
 
+  test('el código fijo va por delante y el correo queda como respaldo', async ({ page }) => {
+    await expect(page.getByText('Escribe tu email y entra con tu código fijo.')).toBeVisible();
+    const buttons = page.locator('form').getByRole('button');
+    await expect(buttons).toHaveText(['Entrar con mi código fijo', 'Enviarme el correo']);
+    await expect(buttons.first()).toHaveAttribute('type', 'submit');
+    await expectAccessible(page);
+
+    // El correo sigue ahí: lleva al paso de siempre.
+    await page.getByLabel('Email').fill(E2E.email);
+    await buttons.last().click();
+    await expect(page.getByLabel('Código de 6 dígitos')).toBeFocused();
+  });
+
   test('entra con el email y el código, sin pasar por el correo', async ({ page }) => {
     await page.getByLabel('Email').fill(E2E.email);
-    await page.getByRole('button', { name: 'Tengo un código fijo' }).click();
+    await page.getByRole('button', { name: 'Entrar con mi código fijo' }).click();
     await expect(page.getByRole('status')).toHaveText(
       `Escribe tu código fijo para entrar como ${E2E.email}.`,
     );
@@ -177,11 +215,11 @@ test.describe('acceso con código fijo', () => {
   test('un código equivocado, o el bueno con otro email, no entra', async ({ page }) => {
     // Hace falta un email con buena pinta para pasar al código.
     await page.getByLabel('Email').fill('no-es-un-email');
-    await page.getByRole('button', { name: 'Tengo un código fijo' }).click();
+    await page.getByRole('button', { name: 'Entrar con mi código fijo' }).click();
     await expect(page.locator('form').getByRole('alert')).toHaveText('Ese email no parece válido.');
 
     await page.getByLabel('Email').fill(E2E.email);
-    await page.getByRole('button', { name: 'Tengo un código fijo' }).click();
+    await page.getByRole('button', { name: 'Entrar con mi código fijo' }).click();
     const code = page.getByLabel('Código fijo');
     const enter = page.getByRole('button', { name: 'Entrar' });
 
@@ -199,7 +237,7 @@ test.describe('acceso con código fijo', () => {
 
     await page.getByRole('button', { name: 'Usar otro email' }).click();
     await page.getByLabel('Email').fill('otra@persona.com');
-    await page.getByRole('button', { name: 'Tengo un código fijo' }).click();
+    await page.getByRole('button', { name: 'Entrar con mi código fijo' }).click();
     await page.getByLabel('Código fijo').fill(E2E.fixedCode);
     await page.getByRole('button', { name: 'Entrar' }).click();
     await expect(page.locator('form').getByRole('alert')).toHaveText('El código no es correcto.');

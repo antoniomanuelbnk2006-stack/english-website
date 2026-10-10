@@ -1,9 +1,19 @@
-import type { NextRequest } from 'next/server';
+import { NextResponse, type NextRequest } from 'next/server';
 import { buildCsp } from '@/lib/csp';
 import { env } from '@/lib/env';
+import { canonicalUrl } from '@/lib/site-url';
 import { updateSession } from '@/lib/supabase/proxy';
 
 export async function proxy(request: NextRequest) {
+  // La web tiene una sola dirección (ADR-0021): lo que llega por otra se manda allí antes de
+  // nada. Se mira la cabecera y no `nextUrl`, que fuera de Vercel no lleva el nombre pedido.
+  const canonical = canonicalUrl(
+    request.headers.get('x-forwarded-host') ?? request.headers.get('host'),
+    `${request.nextUrl.pathname}${request.nextUrl.search}`,
+    env.SITE_URL,
+  );
+  if (canonical) return NextResponse.redirect(canonical, 307);
+
   const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
   const csp = buildCsp({
     nonce,

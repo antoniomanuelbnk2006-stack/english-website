@@ -22,7 +22,7 @@ export async function queryDatabase<T = Record<string, unknown>>(
 export async function signIn(page: Page): Promise<void> {
   await page.goto('/login');
   await page.getByLabel('Email').fill(E2E.email);
-  await page.getByRole('button', { name: 'Enviar código' }).click();
+  await page.getByRole('button', { name: 'Enviarme el correo' }).click();
   await page.getByLabel('Código de 6 dígitos').fill(E2E.otp);
   await page.getByRole('button', { name: 'Entrar' }).click();
   await expect(page).toHaveURL(/\/hoy$/);

@@ -17,7 +17,7 @@ const setLevel = (request: APIRequestContext, level: string | null) =>
 async function logIn(page: Page) {
   await page.goto('/login');
   await page.getByLabel('Email').fill(E2E.email);
-  await page.getByRole('button', { name: 'Enviar código' }).click();
+  await page.getByRole('button', { name: 'Enviarme el correo' }).click();
   await page.getByLabel('Código de 6 dígitos').fill(E2E.otp);
   await page.getByRole('button', { name: 'Entrar' }).click();
 }

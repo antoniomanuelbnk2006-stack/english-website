@@ -47,9 +47,11 @@ export const en: Dictionary = {
   login: {
     title: 'Sign in to Señal',
     subtitle: 'We send you an email with a code and a link to sign in. No passwords.',
+    subtitleFixedCode:
+      'Type your email and sign in with your fixed code. If you forget it, we can email you a way in.',
     emailLabel: 'Email',
     emailPlaceholder: 'you@example.com',
-    sendCode: 'Send code',
+    sendEmail: 'Send me the email',
     sending: 'Sending…',
     codeTitle: 'Enter the code',
     codeSent:
@@ -61,7 +63,7 @@ export const en: Dictionary = {
     errorInvalidEmail: "That email doesn't look right.",
     errorInvalidCode: 'The code has 6 digits.',
     errorWrongCode: 'That code is wrong or has expired. Ask for a new one.',
-    fixedCodeButton: 'I have a fixed code',
+    fixedCodeButton: 'Sign in with my fixed code',
     fixedCodePrompt: 'Type your fixed code to sign in as {email}.',
     fixedCodeLabel: 'Fixed code',
     errorInvalidFixedCode: 'The fixed code has between 4 and 8 digits.',
@@ -69,6 +71,7 @@ export const en: Dictionary = {
     errorLink:
       'That link is not valid or has expired. Ask for another email and open the link in this same browser.',
     errorRateLimited: 'Too many attempts. Wait a minute and try again.',
+    errorEmailRateLimited: 'Too many emails requested. Wait a while before asking for another.',
     errorInternal: "We couldn't reach the server. Please try again.",
   },
   skills: {

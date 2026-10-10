@@ -46,9 +46,11 @@ export const es = {
   login: {
     title: 'Entra en Señal',
     subtitle: 'Te enviamos un correo con un código y un enlace para entrar. Sin contraseñas.',
+    subtitleFixedCode:
+      'Escribe tu email y entra con tu código fijo. Si no lo recuerdas, te enviamos un correo para entrar.',
     emailLabel: 'Email',
     emailPlaceholder: 'tu-email@ejemplo.com',
-    sendCode: 'Enviar código',
+    sendEmail: 'Enviarme el correo',
     sending: 'Enviando…',
     codeTitle: 'Escribe el código',
     codeSent:
@@ -60,7 +62,7 @@ export const es = {
     errorInvalidEmail: 'Ese email no parece válido.',
     errorInvalidCode: 'El código tiene 6 dígitos.',
     errorWrongCode: 'El código no es correcto o ha caducado. Pide uno nuevo.',
-    fixedCodeButton: 'Tengo un código fijo',
+    fixedCodeButton: 'Entrar con mi código fijo',
     fixedCodePrompt: 'Escribe tu código fijo para entrar como {email}.',
     fixedCodeLabel: 'Código fijo',
     errorInvalidFixedCode: 'El código fijo tiene entre 4 y 8 cifras.',
@@ -68,6 +70,7 @@ export const es = {
     errorLink:
       'Ese enlace no es válido o ha caducado. Pide otro correo y abre el enlace en este mismo navegador.',
     errorRateLimited: 'Demasiados intentos. Espera un minuto y vuelve a probar.',
+    errorEmailRateLimited: 'Se han pedido demasiados correos. Espera un rato antes de pedir otro.',
     errorInternal: 'No hemos podido conectar con el servidor. Inténtalo de nuevo.',
   },
   skills: {

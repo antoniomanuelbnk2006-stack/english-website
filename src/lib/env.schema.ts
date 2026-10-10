@@ -21,6 +21,9 @@ export type ClientEnv = z.infer<typeof ClientEnv>;
 
 export const ServerEnv = ClientEnv.extend({
   ALLOWED_EMAIL: z.string().trim().toLowerCase().pipe(z.email()),
+  // La dirección de la web desplegada. Con ella, lo que llega por otro nombre (un despliegue
+  // antiguo de Vercel, un alias) se redirige allí (ADR-0021). Sin ella no se redirige nada.
+  SITE_URL: z.url({ protocol: /^https?$/ }).optional(),
   // Secreto con el que se deriva la contraseña del código fijo de acceso (ADR-0020). Sin él,
   // solo se entra con el correo.
   LOGIN_CODE_PEPPER: z.string().min(32).optional(),

@@ -16,6 +16,8 @@ export const E2E = {
   /** Código fijo de acceso que acepta el emulador (ADR-0020). */
   fixedCode: '654321',
   emulatorUrl: `http://127.0.0.1:${EMULATOR_PORT}`,
+  /** La dirección de la web en los tests (ADR-0021). */
+  appUrl: `http://localhost:${APP_PORT}`,
 };
 
 const env = {
@@ -24,6 +26,8 @@ const env = {
   // El audio de prueba (tonos) va en su propia carpeta para no pisar el real.
   NEXT_PUBLIC_AUDIO_BASE_URL: '/dev-audio/e2e',
   ALLOWED_EMAIL: E2E.email,
+  // La web tiene una sola dirección: lo que llega por otro nombre se redirige a esta.
+  SITE_URL: E2E.appUrl,
   // Activa el acceso con código fijo; el emulador deriva la misma contraseña con este secreto.
   LOGIN_CODE_PEPPER: 'secreto-solo-para-los-tests-e2e-0123456789',
   EMULATOR_PORT: String(EMULATOR_PORT),
@@ -51,7 +55,7 @@ export default defineConfig({
   retries: process.env.CI ? 1 : 0,
   reporter: process.env.CI ? 'github' : 'list',
   use: {
-    baseURL: `http://localhost:${APP_PORT}`,
+    baseURL: E2E.appUrl,
     locale: 'es-ES',
     timezoneId: 'Europe/Madrid',
     // Sin transiciones: axe mide los colores finales y no un fotograma a medio cambiar de tema.
@@ -77,7 +81,7 @@ export default defineConfig({
     },
     {
       command: `pnpm exec tsx tests/support/build-fixture-content.ts && pnpm build && pnpm start -p ${APP_PORT}`,
-      url: `http://localhost:${APP_PORT}/login`,
+      url: `${E2E.appUrl}/login`,
       reuseExistingServer: !process.env.CI,
       timeout: 300_000,
       env,
