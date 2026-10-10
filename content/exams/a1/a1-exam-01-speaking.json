@@ -1,0 +1,72 @@
+{
+  "id": "a1-exam-01-speaking",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "paper": "speaking",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "kind": "interview",
+      "about_es": "Preguntas muy sencillas sobre ti: tu nombre, tu edad, dónde vives, tu familia y lo que te gusta. Contesta con una frase completa.",
+      "turns": [
+        { "examiner": "Hello. What's your name?", "answer_s": 10 },
+        { "examiner": "How old are you?", "answer_s": 10 },
+        { "examiner": "Where are you from?", "answer_s": 15 },
+        { "examiner": "Now, let's talk about your family. How many people are there in your family?", "answer_s": 20 },
+        { "examiner": "Have you got any brothers or sisters?", "answer_s": 20 },
+        { "examiner": "Now, let's talk about your day. What time do you get up?", "answer_s": 15 },
+        { "examiner": "What do you eat for lunch?", "answer_s": 20 },
+        { "examiner": "Please tell me something about your house or flat.", "answer_s": 30 }
+      ],
+      "useful_language": [
+        "My name is…",
+        "I am… years old.",
+        "I am from… / I live in…",
+        "There are… people in my family.",
+        "I have got one brother. His name is…",
+        "I get up at seven o'clock.",
+        "My flat is small. It has got…"
+      ],
+      "tips_es": [
+        "Frases completas: no «seven», sino «I get up at seven o'clock».",
+        "Con «Have you got…?» se contesta «Yes, I have» o «No, I haven't», y después se añade algo.",
+        "Si no entiendes: «Sorry, can you repeat, please?»."
+      ]
+    },
+    {
+      "kind": "collaborative",
+      "about_es": "Ves varios dibujos de un tema y dices si te gusta cada cosa y por qué. Después el examinador te hace unas preguntas. En el examen se hace con un compañero.",
+      "turns": [
+        {
+          "examiner": "Now, here are some pictures that show different hobbies. Do you like these hobbies? Say why or why not.",
+          "shown": "Do you like these hobbies?",
+          "prompts": ["playing football", "reading books", "cooking", "listening to music", "swimming"],
+          "prep_s": 10,
+          "answer_s": 75
+        },
+        { "examiner": "Do you think reading is boring? Why?", "answer_s": 20 },
+        { "examiner": "Which of these hobbies do you like best?", "answer_s": 20 },
+        { "examiner": "What do you do on Saturdays?", "answer_s": 25 }
+      ],
+      "useful_language": [
+        "I like… because it is fun.",
+        "I don't like… because it is boring.",
+        "I love… / I hate…",
+        "My favourite hobby is…",
+        "I play football with my friends.",
+        "What about you?"
+      ],
+      "tips_es": [
+        "De cada dibujo, una frase: «I like swimming because it is fun».",
+        "Después de «like», «love» y «hate», el verbo va en -ing: «I like reading».",
+        "Usa adjetivos fáciles: «fun», «boring», «easy», «difficult», «good»."
+      ]
+    }
+  ]
+}

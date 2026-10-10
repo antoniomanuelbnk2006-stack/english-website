@@ -1,0 +1,474 @@
+{
+  "id": "a1-exam-01-listening",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "paper": "listening",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "For each question, choose the correct answer (A, B or C). In the exam the options are pictures; here they are written.",
+      "groups": [
+        {
+          "recording": {
+            "id": "r01",
+            "speakers": [
+              { "id": "woman", "name": "Woman", "accent": "en-GB", "gender": "female" },
+              { "id": "man", "name": "Man", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "woman", "text": "Would you like a coffee?" },
+              { "speaker": "man", "text": "No, thank you. I don't drink coffee. Can I have a tea, please?" },
+              { "speaker": "woman", "text": "Of course." }
+            ],
+            "audio": { "src": "audio/exams/a1/a1-exam-01-listening/v1/r01.m4a", "duration_s": 8.468 }
+          },
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "What does the man want to drink?",
+              "options": ["coffee", "tea", "water"],
+              "answer": 1,
+              "explanation_es": "No toma café: «Can I have a tea, please?»."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r02",
+            "speakers": [
+              { "id": "boy", "name": "Boy", "accent": "en-GB", "gender": "male" },
+              { "id": "girl", "name": "Lily", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "boy", "text": "What's your phone number, Lily?" },
+              { "speaker": "girl", "text": "It's five, five, five. Oh, one, four, three." },
+              { "speaker": "boy", "text": "Oh, one, three, four?" },
+              { "speaker": "girl", "text": "No. Oh, one, four, three." }
+            ],
+            "audio": { "src": "audio/exams/a1/a1-exam-01-listening/v1/r02.m4a", "duration_s": 11.45 }
+          },
+          "questions": [
+            {
+              "n": 2,
+              "prompt": "What is Lily's phone number?",
+              "options": ["555 0143", "555 0134", "555 0314"],
+              "answer": 0,
+              "explanation_es": "El chico lo repite mal (0134) y ella lo corrige: «Oh, one, four, three»."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r03",
+            "speakers": [
+              { "id": "girl", "name": "Girl", "accent": "en-GB", "gender": "female" },
+              { "id": "dad", "name": "Dad", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "girl", "text": "Dad, where is the cat? She isn't on my bed." },
+              { "speaker": "dad", "text": "Is she in the garden?" },
+              { "speaker": "girl", "text": "No. Oh, look! She's under the table." }
+            ],
+            "audio": { "src": "audio/exams/a1/a1-exam-01-listening/v1/r03.m4a", "duration_s": 8.521 }
+          },
+          "questions": [
+            {
+              "n": 3,
+              "prompt": "Where is the cat?",
+              "options": ["on the bed", "in the garden", "under the table"],
+              "answer": 2,
+              "explanation_es": "No está en la cama ni en el jardín: «She's under the table»."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r04",
+            "speakers": [
+              { "id": "boy", "name": "Boy", "accent": "en-GB", "gender": "male" },
+              { "id": "girl", "name": "Girl", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "boy", "text": "Is your party on Saturday?" },
+              { "speaker": "girl", "text": "No, it's on Sunday. On Saturday I visit my grandmother." }
+            ],
+            "audio": { "src": "audio/exams/a1/a1-exam-01-listening/v1/r04.m4a", "duration_s": 7.127 }
+          },
+          "questions": [
+            {
+              "n": 4,
+              "prompt": "What day is the party?",
+              "options": ["on Saturday", "on Sunday", "on Friday"],
+              "answer": 1,
+              "explanation_es": "El sábado va a ver a su abuela: la fiesta es «on Sunday»."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r05",
+            "speakers": [
+              { "id": "man", "name": "Shop assistant", "accent": "en-GB", "gender": "male" },
+              { "id": "woman", "name": "Woman", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "man", "text": "Good morning. Can I help you?" },
+              { "speaker": "woman", "text": "Yes, please. Have you got any bananas?" },
+              { "speaker": "man", "text": "Sorry, no bananas today. But the apples are very good." },
+              { "speaker": "woman", "text": "OK. Six apples, please." }
+            ],
+            "audio": { "src": "audio/exams/a1/a1-exam-01-listening/v1/r05.m4a", "duration_s": 13.535 }
+          },
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "What does the woman buy?",
+              "options": ["apples", "bananas", "oranges"],
+              "answer": 0,
+              "explanation_es": "Quería plátanos, pero no hay: se lleva seis manzanas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "completion",
+      "rubric": "For each question, write the correct answer in the gap. Write one word or a number or a time. You will hear a teacher giving information about an English class.",
+      "title": "English class",
+      "text": "Teacher: Mrs {{6}}\nDays: Mondays and {{7}}\nStarts at: {{8}} p.m.\nRoom number: {{9}}\nPrice of the book: £ {{10}}",
+      "gaps": [
+        {
+          "n": 6,
+          "accept": ["Bell"],
+          "explanation_es": "Lo deletrea: B, E, doble L."
+        },
+        {
+          "n": 7,
+          "accept": ["Thursdays", "Thursday"],
+          "explanation_es": "«The class is on Mondays and Thursdays»."
+        },
+        {
+          "n": 8,
+          "accept": ["6", "six", "6.00", "6:00"],
+          "explanation_es": "«It starts at six o'clock in the evening»."
+        },
+        {
+          "n": 9,
+          "accept": ["9", "nine"],
+          "explanation_es": "«We are in room nine»."
+        },
+        {
+          "n": 10,
+          "accept": ["12", "twelve"],
+          "explanation_es": "«The book for this class costs twelve pounds»."
+        }
+      ],
+      "recording": {
+        "id": "r06",
+        "speakers": [
+          { "id": "teacher", "name": "Mrs Bell", "accent": "en-GB", "gender": "female" }
+        ],
+        "segments": [
+          { "speaker": "teacher", "text": "Hello. Welcome to the English class.", "pause_after_ms": 800 },
+          {
+            "speaker": "teacher",
+            "text": "My name is Mrs Bell. That's B, E, double L.",
+            "pause_after_ms": 800
+          },
+          {
+            "speaker": "teacher",
+            "text": "The class is on Mondays and Thursdays. It starts at six o'clock in the evening.",
+            "pause_after_ms": 800
+          },
+          {
+            "speaker": "teacher",
+            "text": "We are in room nine. Please bring a notebook and a pen.",
+            "pause_after_ms": 800
+          },
+          {
+            "speaker": "teacher",
+            "text": "The book for this class costs twelve pounds. You can buy it in the school shop.",
+            "pause_after_ms": 800
+          },
+          { "speaker": "teacher", "text": "See you on Monday!" }
+        ],
+        "audio": { "src": "audio/exams/a1/a1-exam-01-listening/v1/r06.m4a", "duration_s": 23.688 }
+      }
+    },
+    {
+      "type": "mcq",
+      "rubric": "For each question, choose the correct answer (A, B or C). You will hear Anna talking to her friend Mark about his new flat.",
+      "groups": [
+        {
+          "recording": {
+            "id": "r07",
+            "speakers": [
+              { "id": "anna", "name": "Anna", "accent": "en-GB", "gender": "female" },
+              { "id": "mark", "name": "Mark", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "anna", "text": "Hi, Mark. Do you like your new flat?" },
+              { "speaker": "mark", "text": "Yes, I do. It's small, but it's very nice." },
+              { "speaker": "anna", "text": "How many rooms are there?" },
+              {
+                "speaker": "mark",
+                "text": "There is a bedroom, a living room, a kitchen and a bathroom. Four rooms."
+              },
+              { "speaker": "anna", "text": "Is it near your work?" },
+              { "speaker": "mark", "text": "No, it isn't. But it's near the station. I go to work by train." },
+              { "speaker": "anna", "text": "Is there a garden?" },
+              {
+                "speaker": "mark",
+                "text": "No, but there is a big park in my street. I run there every morning."
+              },
+              { "speaker": "anna", "text": "How much is it?" },
+              { "speaker": "mark", "text": "It's five hundred pounds a month." },
+              { "speaker": "anna", "text": "That's good. Do you live alone?" },
+              { "speaker": "mark", "text": "No, I live with my brother, Jack. He is a student." }
+            ],
+            "audio": { "src": "audio/exams/a1/a1-exam-01-listening/v1/r07.m4a", "duration_s": 43.07 }
+          },
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "How many rooms are there in Mark's flat?",
+              "options": ["three", "four", "five"],
+              "answer": 1,
+              "explanation_es": "Dormitorio, salón, cocina y baño: «Four rooms»."
+            },
+            {
+              "n": 12,
+              "prompt": "What is near Mark's flat?",
+              "options": ["his work", "a school", "the station"],
+              "answer": 2,
+              "explanation_es": "No está cerca del trabajo, «but it's near the station»."
+            },
+            {
+              "n": 13,
+              "prompt": "Where does Mark run?",
+              "options": ["in a park", "in his garden", "at the station"],
+              "answer": 0,
+              "explanation_es": "No tiene jardín, pero hay un parque grande en su calle y corre allí."
+            },
+            {
+              "n": 14,
+              "prompt": "How much is the flat every month?",
+              "options": ["£400", "£500", "£900"],
+              "answer": 1,
+              "explanation_es": "«It's five hundred pounds a month»."
+            },
+            {
+              "n": 15,
+              "prompt": "Who lives with Mark?",
+              "options": ["his brother", "his friend", "his sister"],
+              "answer": 0,
+              "explanation_es": "«I live with my brother, Jack»."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "For each question, choose the correct answer (A, B or C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r08",
+            "speakers": [
+              { "id": "man", "name": "Man", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "man",
+                "text": "Excuse me. I like this jacket, but it is too big. Have you got a small one?"
+              }
+            ],
+            "audio": { "src": "audio/exams/a1/a1-exam-01-listening/v1/r08.m4a", "duration_s": 5.575 }
+          },
+          "questions": [
+            {
+              "n": 16,
+              "prompt": "You will hear a man in a shop. What does he want?",
+              "options": ["a different size", "a different colour", "a cheaper jacket"],
+              "answer": 0,
+              "explanation_es": "La chaqueta le queda grande y pide una pequeña: otra talla."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r09",
+            "speakers": [
+              { "id": "girl", "name": "Girl", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "girl",
+                "text": "Hi, Mum. I'm on the bus. I'm going home from school. I'm very hungry! What's for dinner?"
+              }
+            ],
+            "audio": { "src": "audio/exams/a1/a1-exam-01-listening/v1/r09.m4a", "duration_s": 4.992 }
+          },
+          "questions": [
+            {
+              "n": 17,
+              "prompt": "You will hear a girl talking on the phone. Where is she now?",
+              "options": ["at school", "at home", "on a bus"],
+              "answer": 2,
+              "explanation_es": "«I'm on the bus»: va del colegio a casa, pero ahora está en el autobús."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r10",
+            "speakers": [
+              { "id": "woman", "name": "Woman", "accent": "en-GB", "gender": "female" },
+              { "id": "man", "name": "Man", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "woman", "text": "Excuse me, what time is the train to London?" },
+              { "speaker": "man", "text": "It's at ten fifteen. Platform two." },
+              { "speaker": "woman", "text": "Ten fifteen. Thank you." }
+            ],
+            "audio": { "src": "audio/exams/a1/a1-exam-01-listening/v1/r10.m4a", "duration_s": 9.131 }
+          },
+          "questions": [
+            {
+              "n": 18,
+              "prompt": "You will hear a woman at a station. What time is her train?",
+              "options": ["at 10.15", "at 10.50", "at 2.15"],
+              "answer": 0,
+              "explanation_es": "«Ten fifteen» son las 10.15 («fifteen», no «fifty»). El dos es el andén."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r11",
+            "speakers": [
+              { "id": "boy", "name": "Boy", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "boy",
+                "text": "My sister Emma works in a hospital. She helps the doctors, and she looks after people who are ill. She is a nurse. She loves her job."
+              }
+            ],
+            "audio": { "src": "audio/exams/a1/a1-exam-01-listening/v1/r11.m4a", "duration_s": 9.652 }
+          },
+          "questions": [
+            {
+              "n": 19,
+              "prompt": "You will hear a boy talking about his sister. What is her job?",
+              "options": ["a doctor", "a nurse", "a teacher"],
+              "answer": 1,
+              "explanation_es": "Ayuda a los médicos, pero ella «is a nurse» (enfermera)."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r12",
+            "speakers": [
+              { "id": "teacher", "name": "Teacher", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "teacher",
+                "text": "Tomorrow we are going to the park for our art class. You don't need your books."
+              },
+              {
+                "speaker": "teacher",
+                "text": "Please bring your pencils and some paper. And a hat. It's going to be sunny!"
+              }
+            ],
+            "audio": { "src": "audio/exams/a1/a1-exam-01-listening/v1/r12.m4a", "duration_s": 9.838 }
+          },
+          "questions": [
+            {
+              "n": 20,
+              "prompt": "You will hear a teacher talking to her class. What do the students need tomorrow?",
+              "options": ["their books", "an umbrella", "pencils and paper"],
+              "answer": 2,
+              "explanation_es": "Los libros no hacen falta; hay que llevar lápices, papel y una gorra, porque hará sol."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "For each question, choose the correct answer. You will hear Lucy talking to her dad about a family picnic. What food or drink will each person bring?",
+      "recording": {
+        "id": "r13",
+        "speakers": [
+          { "id": "dad", "name": "Dad", "accent": "en-GB", "gender": "male" },
+          { "id": "lucy", "name": "Lucy", "accent": "en-GB", "gender": "female" }
+        ],
+        "segments": [
+          { "speaker": "dad", "text": "Lucy, the picnic is on Sunday. What is everybody bringing?" },
+          { "speaker": "lucy", "text": "Mum is making a big salad." },
+          { "speaker": "dad", "text": "Good. And your brother Tom?" },
+          { "speaker": "lucy", "text": "Tom is bringing bread. He works in a bakery, so it's easy for him." },
+          { "speaker": "dad", "text": "And Grandma? Is she making a cake?" },
+          { "speaker": "lucy", "text": "No, not this time. She is cooking a chicken." },
+          { "speaker": "dad", "text": "Lovely. What about Uncle Bill?" },
+          { "speaker": "lucy", "text": "He has apple trees in his garden, so he is bringing apples." },
+          { "speaker": "dad", "text": "And you, Lucy? Water?" },
+          { "speaker": "lucy", "text": "We have water at home. I am going to buy some orange juice." }
+        ],
+        "audio": { "src": "audio/exams/a1/a1-exam-01-listening/v1/r13.m4a", "duration_s": 38.317 }
+      },
+      "tasks": [
+        {
+          "options": [
+            { "id": "A", "text": "apples" },
+            { "id": "B", "text": "bread" },
+            { "id": "C", "text": "cake" },
+            { "id": "D", "text": "cheese" },
+            { "id": "E", "text": "chicken" },
+            { "id": "F", "text": "juice" },
+            { "id": "G", "text": "salad" },
+            { "id": "H", "text": "water" }
+          ],
+          "questions": [
+            { "n": 21, "prompt": "Mum", "answer": "G", "explanation_es": "«Mum is making a big salad»." },
+            {
+              "n": 22,
+              "prompt": "Tom",
+              "answer": "B",
+              "explanation_es": "Tom trabaja en una panadería y lleva pan."
+            },
+            {
+              "n": 23,
+              "prompt": "Grandma",
+              "answer": "E",
+              "explanation_es": "Esta vez no hace tarta: «She is cooking a chicken»."
+            },
+            {
+              "n": 24,
+              "prompt": "Uncle Bill",
+              "answer": "A",
+              "explanation_es": "Tiene manzanos en el jardín y lleva manzanas."
+            },
+            {
+              "n": 25,
+              "prompt": "Lucy",
+              "answer": "F",
+              "explanation_es": "Agua ya hay en casa; ella va a comprar zumo de naranja."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

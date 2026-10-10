@@ -1,0 +1,225 @@
+{
+  "id": "a1-exam-01-reading",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "paper": "reading",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "For each question, choose the correct answer (A, B or C).",
+      "groups": [
+        {
+          "text": "GREEN'S SHOP\nOpen 9–5\nMonday to Friday",
+          "questions": [
+            {
+              "n": 1,
+              "options": ["The shop is open on Sunday.", "The shop is open five days a week.", "The shop opens at five o'clock."],
+              "answer": 1,
+              "explanation_es": "De lunes a viernes son cinco días. Abre a las nueve y cierra a las cinco."
+            }
+          ]
+        },
+        {
+          "text": "Please do not eat or drink in the classroom.",
+          "questions": [
+            {
+              "n": 2,
+              "options": ["You can have lunch here.", "You cannot have food in this room.", "You can buy drinks here."],
+              "answer": 1,
+              "explanation_es": "«Do not eat or drink»: en el aula no se puede comer ni beber."
+            }
+          ]
+        },
+        {
+          "text": "Mum,\nI am at Tom's house. Home at 6.\nLucy",
+          "questions": [
+            {
+              "n": 3,
+              "options": ["Lucy is with a friend now.", "Tom is at Lucy's house.", "Lucy's mum is at Tom's house."],
+              "answer": 0,
+              "explanation_es": "Lucy está en casa de Tom y vuelve a las seis."
+            }
+          ]
+        },
+        {
+          "text": "BUS STOP\nBus 12 to the city centre\nEvery 10 minutes",
+          "questions": [
+            {
+              "n": 4,
+              "options": ["The bus goes to the centre.", "The bus costs ten pounds.", "There are twelve buses."],
+              "answer": 0,
+              "explanation_es": "El 12 es el número del autobús y pasa cada diez minutos. Va al centro."
+            }
+          ]
+        },
+        {
+          "text": "FOR SALE\nSmall red bike. £20.\nPhone Anna: 555 0199",
+          "questions": [
+            {
+              "n": 5,
+              "options": ["Anna wants to buy a bike.", "Anna is selling a bike.", "The bike is big."],
+              "answer": 1,
+              "explanation_es": "«For sale» = se vende. La bici es pequeña y es Anna quien la vende."
+            }
+          ]
+        },
+        {
+          "text": "SWIMMING POOL\nClosed today.\nOpen again tomorrow at 8 a.m.",
+          "questions": [
+            {
+              "n": 6,
+              "options": ["You can swim here today.", "You cannot swim here tomorrow.", "You can swim here tomorrow morning."],
+              "answer": 2,
+              "explanation_es": "Hoy está cerrada; abre mañana a las ocho de la mañana."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "For each question, choose the correct answer (A, B or C). Read what three children say about their pets.",
+      "title": "My pet",
+      "tasks": [
+        {
+          "options": [
+            {
+              "id": "A",
+              "title": "Nora",
+              "text": "I have a cat. Her name is Luna. She is black and white, and she is two years old. Luna sleeps on my bed every night. She likes fish and milk. She does not like water! In the morning she wakes me up at six o'clock."
+            },
+            {
+              "id": "B",
+              "title": "Pablo",
+              "text": "My pet is a dog. His name is Rocky, and he is very big. He is brown. Every day after school, I take Rocky to the park, and we play with a ball. He eats a lot! He sleeps in the garden, in a small house."
+            },
+            {
+              "id": "C",
+              "title": "Yuki",
+              "text": "I have two small fish. They are orange. They live in the kitchen. I give them food every morning before school. They are not noisy, and they are easy to look after. My little brother likes watching them."
+            }
+          ],
+          "questions": [
+            { "n": 7, "prompt": "Whose pet is black and white?", "answer": "A", "explanation_es": "La gata de Nora: «She is black and white»." },
+            { "n": 8, "prompt": "Who goes outside with their pet every day?", "answer": "B", "explanation_es": "Pablo lleva a Rocky al parque todos los días después del colegio." },
+            { "n": 9, "prompt": "Who has more than one pet?", "answer": "C", "explanation_es": "Yuki tiene dos peces." },
+            { "n": 10, "prompt": "Whose pet sleeps in the same room as them?", "answer": "A", "explanation_es": "Luna duerme en la cama de Nora. El perro de Pablo duerme en el jardín." },
+            { "n": 11, "prompt": "Whose pet is big?", "answer": "B", "explanation_es": "Rocky «is very big». Los peces de Yuki son pequeños." },
+            { "n": 12, "prompt": "Who gives their pet food before school?", "answer": "C", "explanation_es": "Yuki: «I give them food every morning before school»." },
+            { "n": 13, "prompt": "Whose pet gets up early?", "answer": "A", "explanation_es": "La gata despierta a Nora a las seis de la mañana." }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "For each question, choose the correct answer (A, B or C).",
+      "title": "Daniel's week",
+      "groups": [
+        {
+          "text": "Daniel is twenty-three years old. He is from Spain, but now he lives in London. He works in a hotel near the river.\n\nDaniel starts work at seven o'clock in the morning. He goes to work by bus, because the hotel is far from his flat. He finishes at three o'clock. After work, he has lunch in a small café with his friend Mia.\n\nOn Monday and Wednesday evenings, Daniel has English classes. His teacher is very nice, and there are ten students in the class. On Fridays, he plays football in the park.\n\nDaniel does not work at the weekend. On Saturdays he cleans his flat and goes shopping. On Sundays he phones his family in Spain. He misses them, but he likes his life in London.",
+          "questions": [
+            {
+              "n": 14,
+              "prompt": "Where does Daniel work?",
+              "options": ["in a café", "in a hotel", "in a school"],
+              "answer": 1,
+              "explanation_es": "«He works in a hotel near the river». En la cafetería come, no trabaja."
+            },
+            {
+              "n": 15,
+              "prompt": "How does Daniel go to work?",
+              "options": ["by bus", "by train", "on foot"],
+              "answer": 0,
+              "explanation_es": "Va en autobús porque el hotel está lejos de su piso."
+            },
+            {
+              "n": 16,
+              "prompt": "When does Daniel have English classes?",
+              "options": ["every day", "on Fridays", "two evenings a week"],
+              "answer": 2,
+              "explanation_es": "Los lunes y los miércoles por la tarde: dos tardes a la semana. Los viernes juega al fútbol."
+            },
+            {
+              "n": 17,
+              "prompt": "What does Daniel do on Saturdays?",
+              "options": ["He plays football.", "He goes shopping.", "He works at the hotel."],
+              "answer": 1,
+              "explanation_es": "Los sábados limpia el piso y va de compras. No trabaja el fin de semana."
+            },
+            {
+              "n": 18,
+              "prompt": "Who does Daniel talk to on Sundays?",
+              "options": ["his teacher", "his friend Mia", "his family"],
+              "answer": 2,
+              "explanation_es": "«On Sundays he phones his family in Spain»."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq_cloze",
+      "rubric": "For each question, choose the correct answer (A, B or C).",
+      "title": "My town",
+      "text": "I live in a small town near the sea. There {{19}} a big park in the centre, and there are two schools. My house is {{20}} to the park. In summer, many people {{21}} to my town, because the beach is beautiful. I like my town, {{22}} it is very quiet in winter. There is a market {{23}} Saturdays. My mother {{24}} fruit and vegetables there.",
+      "gaps": [
+        { "n": 19, "options": ["are", "is", "be"], "answer": 1, "explanation_es": "«There is» + singular («a big park»)." },
+        { "n": 20, "options": ["next", "front", "between"], "answer": 0, "explanation_es": "«Next to» = al lado de." },
+        { "n": 21, "options": ["comes", "coming", "come"], "answer": 2, "explanation_es": "Sujeto en plural («many people»): «come», sin -s." },
+        { "n": 22, "options": ["because", "but", "or"], "answer": 1, "explanation_es": "Hay contraste: me gusta, pero es muy tranquilo en invierno." },
+        { "n": 23, "options": ["in", "at", "on"], "answer": 2, "explanation_es": "Con los días de la semana se usa «on»." },
+        { "n": 24, "options": ["buy", "buys", "buying"], "answer": 1, "explanation_es": "Tercera persona del singular («my mother»): verbo con -s." }
+      ]
+    },
+    {
+      "type": "open_cloze",
+      "rubric": "For each question, write the correct answer. Write one word for each gap.",
+      "title": "A message from Peter",
+      "text": "Hi Marta,\n\nMy name {{25}} Peter. I am twelve years old, and I live {{26}} Manchester with my mum, my dad and my sister. I {{27}} got a dog. His name is Ben.\n\nI like football, and I play {{28}} Saturdays with my friends. I {{29}} not like tennis.\n\n{{30}} do you like doing at the weekend?\n\nWrite soon,\nPeter",
+      "gaps": [
+        { "n": 25, "accept": ["is"], "explanation_es": "«My name is…»." },
+        { "n": 26, "accept": ["in"], "explanation_es": "«Live in» + ciudad." },
+        { "n": 27, "accept": ["have"], "explanation_es": "«I have got» = tengo." },
+        { "n": 28, "accept": ["on", "every"], "explanation_es": "«On Saturdays» = los sábados." },
+        { "n": 29, "accept": ["do"], "explanation_es": "Negación en presente: «I do not like»." },
+        { "n": 30, "accept": ["What"], "explanation_es": "«What do you like doing…?» = ¿qué te gusta hacer?" }
+      ]
+    },
+    {
+      "type": "writing",
+      "rubric": "Write a message. Write 25 words or more.",
+      "n": 31,
+      "prompt": "You want to play football with your friend Sam on Saturday. Write a message to Sam.\n\nSay:\n• where you want to play\n• what time\n• what Sam can bring.",
+      "min_words": 25,
+      "model_answer": "Hi Sam,\nDo you want to play football on Saturday? We can play in the park near my house. Let's meet at four o'clock. Please bring your ball.\nBye,\nAlex",
+      "checklist_es": [
+        "¿Dices las tres cosas? Dónde, a qué hora y qué puede traer.",
+        "¿Tiene saludo («Hi Sam») y despedida («Bye»)?",
+        "¿Llega a 25 palabras?",
+        "¿Se entiende el mensaje aunque haya algún error?"
+      ]
+    },
+    {
+      "type": "writing",
+      "rubric": "Look at the three pictures. Write the story shown in the pictures. Write 35 words or more. (In the exam these are drawings; here they are described.)",
+      "n": 32,
+      "prompt": "Picture 1: A girl is in her kitchen. She is making a cake.\n\nPicture 2: The girl is reading a book in the living room. There is smoke in the kitchen.\n\nPicture 3: The girl is in a shop. She is buying a cake.",
+      "min_words": 35,
+      "model_answer": "Anna wanted to make a cake for her mum's birthday. She put it in the oven. Then she read her book, and she forgot the cake. The cake was black! So Anna went to a shop and bought a cake.",
+      "checklist_es": [
+        "¿Cuentas lo que pasa en los tres dibujos, en orden?",
+        "¿Usas frases cortas y claras?",
+        "¿Unes las frases con «and», «then» o «so»?",
+        "¿Llega a 35 palabras?"
+      ]
+    }
+  ]
+}
