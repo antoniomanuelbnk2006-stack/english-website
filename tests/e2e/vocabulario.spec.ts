@@ -302,11 +302,15 @@ test('cosecha al terminar, sesión de repaso con FSRS y tabla de vocabulario', a
   await page.goto('/hoy');
   await expect(page.getByRole('link', { name: /Repaso/ })).toContainText('Nada pendiente ahora');
 
-  // Vocabulario: lo cosechado está «en repaso», con su próximo repaso.
+  // Vocabulario: lo cosechado está «en repaso», con su próximo repaso. El día es el de Madrid
+  // también en el servidor, que va en UTC: las 23:30 UTC del 10 de enero son ya el 11. Si el
+  // servidor y el navegador escribieran días distintos, React lo anotaría como error.
+  await queryDatabase(request, `update public.srs_cards set due = '2027-01-10T23:30:00Z'`);
   await page.goto('/vocabulario');
   const table = page.getByRole('region', { name: 'Tabla de vocabulario' });
   await expect(table.getByRole('row')).toHaveCount(9);
   await expect(table.getByRole('row', { name: /feedback/ })).toContainText('En repaso');
+  await expect(table.getByRole('row', { name: /feedback/ })).toContainText('11 ene');
   await expect(table.getByRole('row', { name: /feedback/ })).toContainText('B2');
   await expectAccessible(page);
 

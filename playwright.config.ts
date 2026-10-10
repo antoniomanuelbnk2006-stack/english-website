@@ -31,6 +31,9 @@ const env = {
   // Activa el acceso con código fijo; el emulador deriva la misma contraseña con este secreto.
   LOGIN_CODE_PEPPER: 'secreto-solo-para-los-tests-e2e-0123456789',
   EMULATOR_PORT: String(EMULATOR_PORT),
+  // Como en producción: el servidor va en UTC y el navegador en Madrid (`timezoneId`). Una
+  // fecha escrita con la zona del proceso sale distinta en cada lado y el test lo nota.
+  TZ: 'UTC',
   // Contenido de prueba: el real más una lección de escucha con audio generado para los tests.
   CONTENT_DIR: '.e2e/content',
   NEXT_DIST_DIR: DIST_DIR,

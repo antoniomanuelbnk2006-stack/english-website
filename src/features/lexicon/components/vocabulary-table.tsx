@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Chip } from '@/components/ui/panel';
 import { setLexemeStatus } from '@/features/lexicon/server/actions';
 import type { LexiconEntry } from '@/features/lexicon/server/queries';
+import { APP_TIME_ZONE } from '@/lib/dates';
 import type { TranslationKey } from '@/lib/i18n';
 import { useIntlLocale, useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
@@ -46,7 +47,12 @@ export function VocabularyTable({ entries }: { entries: LexiconEntry[] }) {
   const visible = entries.map((entry) => entry.lemma);
   const chosen = visible.filter((lemma) => selected.has(lemma));
   const allChosen = chosen.length === visible.length && visible.length > 0;
-  const date = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'short' });
+  // Con la zona fijada: el servidor (UTC) y el navegador tienen que escribir el mismo día.
+  const date = new Intl.DateTimeFormat(locale, {
+    day: 'numeric',
+    month: 'short',
+    timeZone: APP_TIME_ZONE,
+  });
 
   const toggle = (lemma: string) =>
     setSelected((current) => {
