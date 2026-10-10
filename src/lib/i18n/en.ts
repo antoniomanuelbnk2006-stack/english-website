@@ -46,14 +46,14 @@ export const en: Dictionary = {
   },
   login: {
     title: 'Sign in to Señal',
-    subtitle: 'We send a 6-digit code to your email. No passwords.',
+    subtitle: 'We send you an email with a code and a link to sign in. No passwords.',
     emailLabel: 'Email',
     emailPlaceholder: 'you@example.com',
     sendCode: 'Send code',
     sending: 'Sending…',
     codeTitle: 'Enter the code',
     codeSent:
-      'If {email} has access, it has just received a 6-digit code. Nothing yet? Check the address is spelt correctly and look in your spam folder.',
+      'If {email} has access, it has just received an email. Type its 6-digit code here or open the link it contains in this same browser. Nothing yet? Check the address is spelt correctly and look in your spam folder.',
     codeLabel: '6-digit code',
     verify: 'Sign in',
     verifying: 'Checking…',
@@ -61,6 +61,8 @@ export const en: Dictionary = {
     errorInvalidEmail: "That email doesn't look right.",
     errorInvalidCode: 'The code has 6 digits.',
     errorWrongCode: 'That code is wrong or has expired. Ask for a new one.',
+    errorLink:
+      'That link is not valid or has expired. Ask for another email and open the link in this same browser.',
     errorRateLimited: 'Too many attempts. Wait a minute and try again.',
     errorInternal: "We couldn't reach the server. Please try again.",
   },

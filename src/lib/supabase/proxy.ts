@@ -1,5 +1,6 @@
 import { createServerClient } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
+import { CONFIRM_PATH } from '@/features/auth/lib/confirm';
 import { env } from '@/lib/env';
 import type { Database } from './database.types';
 
@@ -44,7 +45,8 @@ export async function updateSession(
   const isLogin = pathname === LOGIN;
 
   if (allowed && !isLogin) return response;
-  if (!allowed && isLogin) return response;
+  // Sin sesión solo se ven la pantalla de acceso y la llegada desde el enlace del correo.
+  if (!allowed && (isLogin || pathname === CONFIRM_PATH)) return response;
 
   if (!allowed && pathname.startsWith('/api/')) {
     return withSessionCookies(

@@ -20,6 +20,10 @@ const PORT = Number(process.env.EMULATOR_PORT ?? 54399);
 const TEST_EMAIL = (process.env.ALLOWED_EMAIL ?? 'owner@example.invalid').toLowerCase();
 /** Código OTP que el emulador acepta siempre (no envía correos). */
 const TEST_OTP = '123456';
+/** Código con el que «vuelve» el enlace del correo en los tests (flujo PKCE). */
+const TEST_AUTH_CODE = 'e2e-auth-code-0001';
+/** Email que ha pedido el correo de acceso y aún no ha canjeado su enlace. */
+let pendingLink: string | null = null;
 const JWT_SECRET = 'emulador-de-supabase-solo-para-tests';
 /** Carpeta donde guardar los datos; sin ella, todo vive en memoria (los tests). */
 const DATA_DIR = process.env.EMULATOR_DATA_DIR || undefined;
@@ -193,7 +197,23 @@ async function handleAuth(
     if (!user) {
       throw new HttpError(422, { code: 'otp_disabled', msg: 'Signups not allowed for otp' });
     }
+    pendingLink = user.email;
     return { status: 200, json: {} };
+  }
+
+  // El enlace del correo: Supabase vuelve con un código y la app lo canjea junto con la mitad
+  // que guardó el navegador al pedir el correo. El enlace vale una sola vez.
+  if (
+    route === '/token' &&
+    req.method === 'POST' &&
+    url.searchParams.get('grant_type') === 'pkce'
+  ) {
+    const user = pendingLink ? await userByEmail(pendingLink) : null;
+    if (!user || body.auth_code !== TEST_AUTH_CODE || !body.code_verifier) {
+      throw new HttpError(400, { code: 'flow_state_not_found', msg: 'invalid flow state' });
+    }
+    pendingLink = null;
+    return { status: 200, json: sessionJson(user) };
   }
 
   if (route === '/verify' && req.method === 'POST') {

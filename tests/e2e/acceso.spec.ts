@@ -1,5 +1,7 @@
 import { expect, test } from '@playwright/test';
+import { E2E } from '../../playwright.config';
 import { expectAccessible } from './axe';
+import { resetDatabase } from './session';
 
 // Flujos de acceso que no necesitan una sesión real (ni un Supabase detrás).
 
@@ -89,5 +91,60 @@ test.describe('pantalla de acceso', () => {
     await expect(page.getByLabel('Código de 6 dígitos')).toBeFocused();
     await page.getByRole('button', { name: 'Usar otro email' }).click();
     await expect(page.getByLabel('Email')).toHaveValue('otra@persona.com');
+  });
+});
+
+// El correo de acceso puede traer un enlace en vez del código (ADR-0018): Supabase lo comprueba
+// y vuelve a /auth/confirm con un código de un solo uso.
+test.describe('acceso con el enlace del correo', () => {
+  test.beforeEach(async ({ request }) => {
+    await resetDatabase(request);
+  });
+
+  test('abre sesión en el navegador que pidió el correo', async ({ page }) => {
+    await page.goto('/login');
+    await page.getByLabel('Email').fill(E2E.email);
+    await page.getByRole('button', { name: 'Enviar código' }).click();
+    await expect(page.getByRole('status')).toContainText(
+      'o abre el enlace que trae en este mismo navegador',
+    );
+
+    await page.goto(`/auth/confirm?code=${E2E.authCode}`);
+    await expect(page).toHaveURL(/\/(hoy|nivel)$/);
+    // La sesión es de verdad: las pantallas privadas ya no mandan al acceso.
+    await page.goto('/leer');
+    await expect(page).toHaveURL(/\/leer$/);
+  });
+
+  test('en otro navegador, o con un enlace que no vale, vuelve al acceso y lo explica', async ({
+    page,
+    browser,
+  }) => {
+    // Sin haber pedido el correo desde aquí no hay con qué canjear el enlace.
+    await page.goto(`/auth/confirm?code=${E2E.authCode}`);
+    await expect(page).toHaveURL(/\/login\?error=enlace$/);
+    // (Next tiene su propio `role="alert"` para anunciar las navegaciones.)
+    await expect(page.getByRole('alert').filter({ hasText: 'Ese enlace' })).toHaveText(
+      'Ese enlace no es válido o ha caducado. Pide otro correo y abre el enlace en este mismo navegador.',
+    );
+    await expect(page.getByLabel('Email')).toBeVisible();
+    await expectAccessible(page);
+
+    // Pedido en un navegador y abierto en otro: tampoco entra.
+    await page.getByLabel('Email').fill(E2E.email);
+    await page.getByRole('button', { name: 'Enviar código' }).click();
+    await expect(page.getByRole('status')).toBeVisible();
+    const other = await (await browser.newContext()).newPage();
+    await other.goto(`/auth/confirm?code=${E2E.authCode}`);
+    await expect(other).toHaveURL(/\/login\?error=enlace$/);
+    await other.context().close();
+
+    // Un código que no es el del enlace, o ninguno.
+    for (const query of ['?code=otro-codigo-cualquiera', '?code=%3Cscript%3E', '']) {
+      await page.goto(`/auth/confirm${query}`);
+      await expect(page).toHaveURL(/\/login\?error=enlace$/);
+    }
+    await page.goto('/hoy');
+    await expect(page).toHaveURL(/\/login$/);
   });
 });

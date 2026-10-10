@@ -1,7 +1,9 @@
 'use server';
 
+import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { z } from 'zod';
+import { confirmUrl } from '@/features/auth/lib/confirm';
 import { fail, ok, type ActionResult } from '@/lib/actions';
 import { env } from '@/lib/env';
 import { createClient } from '@/lib/supabase/server';
@@ -17,7 +19,8 @@ function isRateLimited(error: { status?: number }): boolean {
 }
 
 /**
- * Pide un código de 6 dígitos. La respuesta es la misma tenga o no acceso el email,
+ * Pide el correo de acceso, que trae un código de 6 dígitos, un enlace o las dos cosas según
+ * la plantilla de Supabase (ADR-0018). La respuesta es la misma tenga o no acceso el email,
  * para no revelar cuál es el permitido.
  */
 export async function requestOtp(input: unknown): Promise<ActionResult<{ email: string }>> {
@@ -31,8 +34,12 @@ export async function requestOtp(input: unknown): Promise<ActionResult<{ email: 
   const supabase = await createClient();
   const { error } = await supabase.auth.signInWithOtp({
     email,
-    // Segunda barrera: nunca se crean usuarios desde la app (el registro está desactivado).
-    options: { shouldCreateUser: false },
+    options: {
+      // Segunda barrera: nunca se crean usuarios desde la app (el registro está desactivado).
+      shouldCreateUser: false,
+      // El enlace del correo vuelve a esta misma web (src/app/auth/confirm/route.ts).
+      emailRedirectTo: confirmUrl((await headers()).get('origin')),
+    },
   });
   if (error) return fail(isRateLimited(error) ? 'rate_limited' : 'internal');
 

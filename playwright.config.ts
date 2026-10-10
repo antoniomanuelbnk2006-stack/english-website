@@ -11,6 +11,8 @@ const DIST_DIR = '.next-e2e';
 export const E2E = {
   email: 'owner@example.invalid',
   otp: '123456',
+  /** Código con el que el emulador da por bueno el enlace del correo. */
+  authCode: 'e2e-auth-code-0001',
   emulatorUrl: `http://127.0.0.1:${EMULATOR_PORT}`,
 };
 

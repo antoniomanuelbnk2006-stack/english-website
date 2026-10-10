@@ -45,14 +45,14 @@ export const es = {
   },
   login: {
     title: 'Entra en Señal',
-    subtitle: 'Te enviamos un código de 6 dígitos a tu email. Sin contraseñas.',
+    subtitle: 'Te enviamos un correo con un código y un enlace para entrar. Sin contraseñas.',
     emailLabel: 'Email',
     emailPlaceholder: 'tu-email@ejemplo.com',
     sendCode: 'Enviar código',
     sending: 'Enviando…',
     codeTitle: 'Escribe el código',
     codeSent:
-      'Si {email} tiene acceso, acaba de recibir un código de 6 dígitos. ¿No llega? Comprueba que el email esté bien escrito y mira en la carpeta de spam.',
+      'Si {email} tiene acceso, acaba de recibir un correo. Escribe aquí su código de 6 dígitos o abre el enlace que trae en este mismo navegador. ¿No llega? Comprueba que el email esté bien escrito y mira en la carpeta de spam.',
     codeLabel: 'Código de 6 dígitos',
     verify: 'Entrar',
     verifying: 'Comprobando…',
@@ -60,6 +60,8 @@ export const es = {
     errorInvalidEmail: 'Ese email no parece válido.',
     errorInvalidCode: 'El código tiene 6 dígitos.',
     errorWrongCode: 'El código no es correcto o ha caducado. Pide uno nuevo.',
+    errorLink:
+      'Ese enlace no es válido o ha caducado. Pide otro correo y abre el enlace en este mismo navegador.',
     errorRateLimited: 'Demasiados intentos. Espera un minuto y vuelve a probar.',
     errorInternal: 'No hemos podido conectar con el servidor. Inténtalo de nuevo.',
   },
