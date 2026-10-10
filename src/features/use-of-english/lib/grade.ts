@@ -68,7 +68,8 @@ export function expandContractions(text: string): string[] {
   return variants;
 }
 
-function gradeTransformation(
+/** Nota de una transformación: 2 si es completa, 1 si solo una mitad, 0 si rompe las reglas. */
+export function gradeTransformation(
   given: string,
   item: { keyword: string; parts: readonly [readonly string[], readonly string[]] },
   limits: { min: number; max: number },
