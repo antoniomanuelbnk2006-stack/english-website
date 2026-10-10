@@ -46,9 +46,12 @@ Después:
 4. Vincula y sube: `pnpm supabase link --project-ref <ref>` → `pnpm supabase db push`.
 5. **Auth:**
    - Activa el proveedor **Email**.
-   - En **Email Templates → Magic Link**, incluye el código: `Tu código de Señal: {{ .Token }}` (así el email trae el OTP de 6 dígitos).
-   - Inicia sesión una vez con tu email para crear tu usuario.
+   - **Longitud del código: 6** (`otp_length`; los proyectos nuevos vienen con 8).
+   - En **Email Templates → Magic Link**, incluye el código: `Tu código de Señal: {{ .Token }}` (así el email trae el OTP de 6 dígitos). **En el plan Free esto solo se puede hacer con un SMTP propio**; sin él, el correo trae un enlace, que la app también acepta ([ADR-0018](../adr/0018-acceso-con-enlace-del-correo.md)).
+   - **Redirect URLs:** añade `https://<tu-dominio>/auth/confirm` (y `http://localhost:3000/auth/confirm`), que es adonde vuelve ese enlace, y pon tu dominio como *Site URL*.
+   - Crea tu usuario en **Authentication → Users → Add user** (la app nunca crea usuarios).
    - **Desactiva el registro de nuevos usuarios**.
+   - Sin SMTP propio, Supabase solo envía correos a las direcciones de los miembros de la organización, y como mucho dos por hora: el email permitido tiene que ser el de tu cuenta de Supabase.
    - En el código, `signInWithOtp({ email, options: { shouldCreateUser: false } })` como segunda barrera.
 6. **API keys:** usa las claves nuevas **publishable** (`sb_publishable_…`) y **secret** (`sb_secret_…`); las heredadas `anon`/`service_role` se retiran a finales de 2026.
 7. Tipos: `pnpm db:types`.
@@ -101,7 +104,7 @@ Después:
 
 1. Importa el repo de GitHub (plan **Hobby**: uso personal y no comercial).
 2. Variables de entorno de producción (§8, solo las de la app).
-3. Región de funciones cercana a tu proyecto de Supabase si tu plan lo permite.
+3. Región de funciones cercana a tu proyecto de Supabase: está fijada en `vercel.json` (`cdg1`, París, junto al proyecto de Supabase en `eu-west-3`).
 4. Cada *push* a `main` despliega; cada PR genera una *preview*.
 5. Añade el dominio de producción a `AllowedOrigins` del CORS de R2 y a las *Redirect URLs* de Supabase Auth.
 

@@ -20,7 +20,7 @@
 
 ## 2. Autenticación: un solo usuario
 
-1. **Supabase Auth con email + código OTP de 6 dígitos** (no enlace mágico: en iOS el enlace se abre en Safari y no en la PWA instalada; el código se teclea dentro de la app).
+1. **Supabase Auth con email + código OTP de 6 dígitos**, que se teclea dentro de la app. Se prefiere al enlace mágico porque en iOS el enlace se abre en Safari y no en la PWA instalada. Aun así la app **acepta también el enlace** del correo ([ADR-0018](../adr/0018-acceso-con-enlace-del-correo.md)): el plan gratuito de Supabase no deja editar la plantilla para que traiga el código si no se configura un SMTP propio. El enlace solo abre sesión en el navegador que pidió el correo.
 2. **Registro desactivado** en Supabase (*Authentication → Sign In / Providers → Allow new users to sign up*: off). Tu usuario se crea una vez, a mano o con el primer OTP antes de desactivarlo.
 3. **Lista de emails permitidos** (`ALLOWED_EMAIL`) comprobada en `proxy.ts` **y** en cada Server Action/Route Handler (defensa en profundidad).
 4. Sesión en **cookies HttpOnly** gestionadas por `@supabase/ssr`; el *token* se refresca en `proxy.ts`.
