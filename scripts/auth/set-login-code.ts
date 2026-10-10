@@ -9,11 +9,31 @@ import { randomBytes } from 'node:crypto';
 import { parseArgs } from 'node:util';
 import { codePassword, FixedCode } from '../../src/features/auth/lib/fixed-code';
 
+// No hay `--on`: el código no se guarda, así que para volver a activarlo hay que escribirlo.
+const USAGE = [
+  'Uso: pnpm auth:set-code <código de 4 a 8 cifras> [--email tu@correo]   lo pone o lo cambia',
+  '     pnpm auth:set-code --off [--email tu@correo]                      lo quita',
+  'Para volver a activarlo después de quitarlo, escribe el código otra vez: pnpm auth:set-code <código>',
+].join('\n');
+
+function readArgs() {
+  try {
+    return parseArgs({
+      allowPositionals: true,
+      options: { email: { type: 'string' }, off: { type: 'boolean', default: false } },
+    });
+  } catch {
+    return null;
+  }
+}
+
 async function main(): Promise<number> {
-  const { values, positionals } = parseArgs({
-    allowPositionals: true,
-    options: { email: { type: 'string' }, off: { type: 'boolean', default: false } },
-  });
+  const args = readArgs();
+  if (!args) {
+    console.error(USAGE);
+    return 2;
+  }
+  const { values, positionals } = args;
   const { SUPABASE_URL, SUPABASE_SECRET_KEY, LOGIN_CODE_PEPPER } = process.env;
   const email = (values.email ?? process.env.ALLOWED_EMAIL ?? '').trim().toLowerCase();
   if (!SUPABASE_URL || !SUPABASE_SECRET_KEY) {
@@ -32,7 +52,7 @@ async function main(): Promise<number> {
   } else {
     const code = FixedCode.safeParse(positionals[0]);
     if (!code.success) {
-      console.error('Uso: pnpm auth:set-code <código de 4 a 8 cifras> [--email tu@correo]');
+      console.error(USAGE);
       return 2;
     }
     if (!LOGIN_CODE_PEPPER || LOGIN_CODE_PEPPER.length < 32) {
@@ -68,7 +88,7 @@ async function main(): Promise<number> {
   }
   console.log(
     values.off
-      ? `Código fijo desactivado para ${email}.`
+      ? `Código fijo desactivado para ${email}. Ya no se puede entrar con él: para volver a ponerlo, pnpm auth:set-code <código>.`
       : `Código fijo cambiado para ${email}. Vale desde ahora.`,
   );
   return 0;

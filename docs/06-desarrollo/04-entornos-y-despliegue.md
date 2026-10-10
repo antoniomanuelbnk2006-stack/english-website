@@ -52,7 +52,7 @@ Después:
    - Crea tu usuario en **Authentication → Users → Add user** (la app nunca crea usuarios).
    - **Desactiva el registro de nuevos usuarios**.
    - Sin SMTP propio, Supabase solo envía correos a las direcciones de los miembros de la organización, y como mucho dos por hora: el email permitido tiene que ser el de tu cuenta de Supabase.
-   - **Código fijo (opcional, [ADR-0020](../adr/0020-codigo-fijo-de-acceso.md)):** genera un secreto largo, ponlo como `LOGIN_CODE_PEPPER` en Vercel y en `.env.pipeline`, y ejecuta `pnpm auth:set-code <código>`. Para quitarlo, `pnpm auth:set-code --off`. Elige un código que no sea obvio: el email no es un secreto.
+   - **Código fijo (opcional, [ADR-0020](../adr/0020-codigo-fijo-de-acceso.md)):** genera un secreto largo, ponlo como `LOGIN_CODE_PEPPER` en Vercel y en `.env.pipeline`, y ejecuta `pnpm auth:set-code <código>`. Para quitarlo, `pnpm auth:set-code --off`; no hay `--on`: como el código no se guarda, para volver a activarlo se escribe otra vez (`pnpm auth:set-code <código>`). Elige un código que no sea obvio: el email no es un secreto.
    - En el código, `signInWithOtp({ email, options: { shouldCreateUser: false } })` como segunda barrera.
 6. **API keys:** usa las claves nuevas **publishable** (`sb_publishable_…`) y **secret** (`sb_secret_…`); las heredadas `anon`/`service_role` se retiran a finales de 2026.
 7. Tipos: `pnpm db:types`.
