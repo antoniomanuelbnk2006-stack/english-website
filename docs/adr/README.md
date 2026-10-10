@@ -19,6 +19,7 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0013](0013-escucha-con-transcripcion.md) | Modo «con transcripción» en las lecciones de escucha | Aceptada |
 | [0014](0014-writing-revision-sin-ia.md) | Writing: revisión sin IA, respuesta modelo y detalles de la corrección con IA | Aceptada |
 | [0015](0015-mazo-de-palabras-y-pronunciacion.md) | Mazo de palabras por nivel y pronunciación con el reconocimiento de voz del navegador | Aceptada |
+| [0016](0016-diccionario-de-consulta-con-wiktionary.md) | Diccionario completo de consulta con Wiktionary | Aceptada |
 
 Plantilla:
 

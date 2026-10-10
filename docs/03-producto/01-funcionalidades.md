@@ -73,6 +73,7 @@
 | F-066 | Optimización de parámetros FSRS con tu historial | C | 8 |
 | F-067 | Tarjetas de producción (ES→EN) opcionales | C | 8 |
 | F-068 | Mazo de palabras por nivel (A1–C2) con traducción y ejemplo: explorar, estudiar en tandas y mandar al repaso ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)) | S | 8 (adelantada) |
+| F-069 | Diccionario completo de consulta: cualquier palabra o expresión, con traducción, definiciones y pronunciación, consultada en Wiktionary ([ADR-0016](../adr/0016-diccionario-de-consulta-con-wiktionary.md)) | S | 8 (adelantada) |
 
 ## 6. Nivel y plan
 

@@ -28,6 +28,8 @@ const env = {
   // los tests nunca llaman a la API real ni gastan dinero.
   ANTHROPIC_API_KEY: 'e2e-key',
   ANTHROPIC_BASE_URL: `${E2E.emulatorUrl}/anthropic`,
+  // El buscador de palabras habla con un doble de Wiktionary que sirve el emulador.
+  DICTIONARY_API_URL: `${E2E.emulatorUrl}/wiktionary`,
   // Fijos aquí para que un .env.local con otros valores no cambie lo que prueban los tests.
   AI_WRITING_MODEL: 'claude-sonnet-5-5',
   AI_DAILY_LIMIT: '3',

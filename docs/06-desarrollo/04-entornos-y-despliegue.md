@@ -122,6 +122,7 @@ AI_WRITING_MODEL=claude-sonnet-5-5
 AI_DAILY_LIMIT=10
 AI_MONTHLY_BUDGET_USD=5
 # ANTHROPIC_BASE_URL=   (solo para tests o un proxy propio)
+# DICTIONARY_API_URL=   (solo para tests; por defecto, https://en.wiktionary.org)
 
 # ── Pipeline (.env.pipeline, SOLO en tu ordenador) ─────────
 SUPABASE_SECRET_KEY=

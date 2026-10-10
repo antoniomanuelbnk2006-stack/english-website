@@ -22,6 +22,7 @@ La interfaz está **en español** por defecto (rutas incluidas); el contenido de
 | `/repasar` | Sesión de repaso SRS | 3 |
 | `/vocabulario` | Tu léxico (buscar, filtrar, editar estado) | 3 |
 | `/palabras` · `/palabras/estudiar` | Mazo de palabras por nivel y tandas de estudio | 8 (adelantada) |
+| `/palabras/buscar` | Diccionario completo de consulta (Wiktionary) | 8 (adelantada) |
 | `/pronunciar` · `/pronunciar/[id]` · `/pronunciar/libre` | Ejercicios de pronunciación y práctica libre | 8 (adelantada) |
 | `/gramatica` · `/gramatica/[id]` | Índice y fichas | 3 |
 | `/use-of-english` · `/use-of-english/[id]` | Ejercicios con formato de examen, por nivel y por parte | 3 |
@@ -142,6 +143,8 @@ Tabla filtrable de tu léxico: lema, nivel MCER, estado, veces visto, próxima r
 El vocabulario de cada nivel, con traducción y frase de ejemplo ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)).
 - **Lista:** niveles con su número de palabras (por defecto, el elegido), barra con cuántas conoces y cuántas tienes en repaso, búsqueda en inglés o en español y filtro por estado. En cada palabra: escucharla, practicar su pronunciación, «Al repaso» y «Ya la sé».
 - **Estudiar:** tandas de 12 palabras por aprender, de la más frecuente a la menos. Palabra → «Ver la traducción» → *No la sabía: al repaso* (1) · *La sabía* (2) · *No me interesa* (3). Cada respuesta se guarda al darla.
+
+- **Diccionario completo (`/palabras/buscar`):** para lo que no está en el mazo. Se escribe cualquier palabra o expresión y la app la consulta en Wiktionary ([ADR-0016](../adr/0016-diccionario-de-consulta-con-wiktionary.md)): pronunciación, nivel si lo tiene, traducciones al español por acepción, definiciones en inglés con ejemplo y enlace a la fuente. Desde ahí se manda al repaso, se da por sabida o se practica su pronunciación. Si es una forma de otra palabra (*went*), enlaza a la base (*go*). Si no existe, sugiere parecidas; si el servicio no responde, lo dice.
 
 ### 2.6 ter Pronunciación (`/pronunciar`, `/pronunciar/[id]`, `/pronunciar/libre`)
 - **Biblioteca:** ejercicios del nivel del usuario, cada uno sobre un sonido o un problema típico de hispanohablantes, con su mejor nota.

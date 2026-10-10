@@ -709,6 +709,31 @@ export const es = {
     allDoneBody:
       'Todas las palabras de este nivel están ya en el repaso o las has dado por conocidas.',
     shortcuts: 'Atajos: con la traducción a la vista, 1, 2 y 3 eligen la respuesta.',
+    lookupTitle: 'Diccionario completo',
+    lookupSubtitle:
+      'Busca cualquier palabra o expresión en inglés, esté o no en el mazo. Los datos vienen de Wiktionary, un diccionario libre.',
+    lookupLabel: 'Palabra o expresión en inglés',
+    lookupPlaceholder: 'serendipity, give up…',
+    lookupTry: 'Prueba con:',
+    lookupLink: '¿No está en el mazo? Búscala en el diccionario completo',
+    lookupFor: 'Buscar «{word}» en el diccionario completo',
+    lookupInvalid:
+      'Escribe una palabra o una expresión en inglés: solo letras, espacios y guiones.',
+    lookupLevel: 'Nivel {level}',
+    lookupNoLevel: 'Fuera de las listas por nivel',
+    lookupInDeck: 'En tu mazo de {level}',
+    lookupBase: 'Es una forma de otra palabra. Mira su significado en',
+    lookupTranslations: 'Traducción al español',
+    lookupNoTranslation:
+      'Wiktionary no trae traducción al español de esta palabra. Abajo tienes sus definiciones en inglés.',
+    lookupDefinitions: 'Definiciones en inglés',
+    lookupSource: 'Fuente: Wiktionary (CC BY-SA 4.0). Ver la entrada completa',
+    lookupNotFoundTitle: 'No encuentro «{word}»',
+    lookupNotFoundBody: 'Comprueba cómo se escribe. Wiktionary no la tiene como palabra inglesa.',
+    lookupSuggestions: '¿Quizá buscabas…?',
+    lookupUnavailableTitle: 'El diccionario no responde',
+    lookupUnavailableBody:
+      'Wiktionary no ha contestado. Comprueba la conexión a internet y vuelve a intentarlo en un momento.',
   },
   pronunciation: {
     subtitle: 'Di palabras y frases en voz alta y comprueba si se te entiende.',

@@ -26,6 +26,11 @@ export const ServerEnv = ClientEnv.extend({
   // Solo para tests (un doble de la API) o un proxy propio; por defecto, la API de Anthropic.
   ANTHROPIC_BASE_URL: z.url().optional(),
   AI_WRITING_MODEL: z.string().min(1).default('claude-sonnet-5-5'),
+  // Solo para tests (un doble de Wiktionary); por defecto, https://en.wiktionary.org (ADR-0016).
+  DICTIONARY_API_URL: z
+    .url()
+    .transform((v) => v.replace(/\/+$/, ''))
+    .optional(),
   AI_DAILY_LIMIT: z.coerce.number().int().positive().default(10),
   AI_MONTHLY_BUDGET_USD: z.coerce.number().positive().default(5),
 });

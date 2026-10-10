@@ -13,6 +13,7 @@ import { existsSync, renameSync } from 'node:fs';
 import http, { type IncomingMessage, type ServerResponse } from 'node:http';
 import type { Transaction } from '@electric-sql/pglite';
 import { createAnthropicStub } from './anthropic-stub';
+import { wiktionaryStub } from './wiktionary-stub';
 import { createTestDb, type TestDb } from './test-db';
 
 const PORT = Number(process.env.EMULATOR_PORT ?? 54399);
@@ -565,6 +566,10 @@ function route(req: IncomingMessage, url: URL, body: unknown): Promise<Reply> {
   if (url.pathname.startsWith('/rest/v1/')) return handleRest(req, url, body);
   if (url.pathname === '/anthropic/v1/messages' && req.method === 'POST' && !DATA_DIR) {
     return Promise.resolve(anthropic.messages(req, body));
+  }
+  // El diccionario de consulta de los tests: nunca se llama al Wiktionary real.
+  if (url.pathname.startsWith('/wiktionary/') && req.method === 'GET' && !DATA_DIR) {
+    return Promise.resolve(wiktionaryStub(url));
   }
   if (url.pathname.startsWith('/__test/')) {
     // Con datos guardados no hay rutas de control: un test que se conecte por error a la

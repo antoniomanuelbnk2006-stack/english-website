@@ -168,6 +168,19 @@ export default async function WordsPage({ searchParams }: PageProps<'/palabras'>
             </Button>
           </form>
 
+          <Link
+            href={
+              params.query
+                ? { pathname: '/palabras/buscar', query: { q: params.query } }
+                : '/palabras/buscar'
+            }
+            className="-mt-3 self-start rounded-control text-sm text-accent hover:underline"
+          >
+            {params.query
+              ? t('dictionary.lookupFor', { word: params.query })
+              : t('dictionary.lookupLink')}
+          </Link>
+
           <nav aria-label={t('dictionary.stateLabel')}>
             <ul className="flex flex-wrap gap-1.5">
               {STATE_FILTERS.map((state) => (

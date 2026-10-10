@@ -46,6 +46,8 @@ Además, las lecciones de escucha tienen ahora dos modos, a elegir al empezar: *
 
 **Palabras y pronunciación (9 de octubre de 2026, a petición del dueño, [ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)).** Dos secciones nuevas, adelantadas de la fase 8: **Palabras**, el vocabulario de cada nivel (unas 8.650 palabras de A1 a C2) con traducción y ejemplo, para explorarlo, estudiarlo en tandas y mandar al repaso lo que no se sepa; y **Pronunciación**, 17 ejercicios por sonido y práctica libre, en los que el reconocimiento de voz del navegador dice si se te entiende. **Pendiente:** probar la pronunciación con un micrófono real (los tests usan un reconocedor de prueba), tu revisión de las traducciones y, si algún día hay cuenta de Azure, la evaluación por sonidos (F-112).
 
+**Diccionario completo (10 de octubre de 2026, a petición del dueño, [ADR-0016](../adr/0016-diccionario-de-consulta-con-wiktionary.md)).** `/palabras/buscar` consulta cualquier palabra o expresión en Wiktionary en el momento, sin guardar el diccionario ni gastar dinero: traducciones al español, definiciones, pronunciación y envío al repaso. Ese mismo día se añadieron los **consejos automáticos de pronunciación** cuando una palabra no se entiende (ADR-0015).
+
 Decisiones tomadas por el camino que no estaban en el diseño original: [ADR-0011](../adr/0011-e2e-con-emulador-de-supabase.md) (tests contra un emulador de Supabase), la migración `0002` (`apply_reviews`), y los detalles anotados en [base de datos §3](../04-arquitectura/03-base-de-datos.md#3-notas-de-diseño), [gramática §2](../01-pedagogia/06-gramatica.md#2-formato-de-una-ficha) y [vocabulario §4](../01-pedagogia/05-vocabulario-y-srs.md#4-tu-léxico-personal).
 
 ---
