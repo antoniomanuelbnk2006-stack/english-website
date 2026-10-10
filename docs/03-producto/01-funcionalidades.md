@@ -104,6 +104,7 @@
 | F-110 | Pronunciación con el reconocimiento de voz del navegador: ejercicios por sonido con consejos para las confusiones típicas ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)) | S | 8 (adelantada) |
 | F-111 | Práctica libre de pronunciación con cualquier palabra o frase | S | 8 (adelantada) |
 | F-112 | Evaluación de pronunciación por sonidos (Azure) | C | 8 |
+| F-113 | Consejos automáticos de pronunciación cuando una palabra o frase no se entiende | S | 8 (adelantada) |
 
 ## 8. Motivación
 

@@ -13,6 +13,7 @@ import {
   type ListenError,
   type ListenHandle,
 } from '@/features/pronunciation/lib/recognition';
+import { buildTips } from '@/features/pronunciation/lib/tips';
 import type { Accent } from '@/features/pronunciation/lib/voices';
 import type { TranslationKey } from '@/lib/i18n';
 import { useT } from '@/lib/i18n/client';
@@ -100,6 +101,7 @@ export function PracticeCard({
     const { assessment } = phase;
     const { icon: Icon, className } = VERDICT[assessment.verdict];
     const understood = assessment.words.filter((word) => word.status === 'ok').length;
+    const tips = buildTips(text, assessment);
     const message =
       assessment.verdict === 'good'
         ? t('pronunciation.verdictGood')
@@ -141,10 +143,33 @@ export function PracticeCard({
             {t('pronunciation.heard')} <span lang="en">«{assessment.heard}»</span>
           </p>
         ) : null}
-        {assessment.confusion ? (
-          <p className="max-w-prose rounded-control border border-border bg-surface-2 px-3 py-2 text-sm">
-            <InlineText text={assessment.confusion.tip_es} />
-          </p>
+        {tips.length > 0 ? (
+          <section
+            aria-label={t('pronunciation.tipsTitle')}
+            className="mt-1 w-full max-w-prose rounded-control border border-border bg-surface-2 px-4 py-3 text-left"
+          >
+            <p
+              aria-hidden="true"
+              className="text-xs font-medium tracking-widest text-muted uppercase"
+            >
+              {t('pronunciation.tipsTitle')}
+            </p>
+            <ul className="mt-2 flex flex-col gap-2 text-sm">
+              {tips.map((tip) => (
+                <li key={`${tip.id}-${tip.word ?? ''}`}>
+                  {tip.word ? (
+                    <>
+                      <strong lang="en" className="font-semibold text-text">
+                        {tip.word}
+                      </strong>
+                      {': '}
+                    </>
+                  ) : null}
+                  <InlineText text={tip.text_es} />
+                </li>
+              ))}
+            </ul>
+          </section>
         ) : null}
       </div>
     );

@@ -47,6 +47,14 @@ Cifras, contracciones (*I'm* / *I am*), homófonos (*two* / *too*) y grafías am
 
 **Ejercicios.** `content/pronunciation/{nivel}/{id}.json`: cada uno trabaja un problema típico de quien habla español ([errores](../01-pedagogia/09-errores-hispanohablantes.md)) con palabras y frases, su transcripción y una explicación de cómo se hace el sonido. Los pares mínimos llevan la **confusión esperada**: si al decir *ship* el reconocedor oye *sheep*, se enseña el consejo concreto («hazla corta»). Además hay **práctica libre** con cualquier texto, a la que se llega también desde cada palabra del mazo.
 
+**Consejos cuando no se entiende** (añadido el 10 de octubre de 2026, a petición del dueño). Al principio solo había consejo si el ejercicio preveía esa confusión concreta. Ahora, cada vez que una palabra o una frase no se entiende a la primera, la app da **consejos automáticos**, también en la práctica libre (`src/features/pronunciation/lib/tips.ts`, lógica pura). Salen de tres sitios, por este orden:
+
+1. una lista de unas 90 **palabras con trampa** frecuentes (*comfortable*, *Wednesday*, *island*…), con su transcripción y cómo suenan de verdad;
+2. **lo que se oyó en su lugar**: si por *ship* oye *sheep*, el problema es la vocal; si por *very* oye *berry*, la *v*; si por *worked* oye *work*, el final;
+3. **cómo se escribe la palabra**: letras mudas, *s* + consonante, *-ed* (con su sonido /t/, /d/ o /ɪd/), *th* sorda o sonora, *h*, *v*, *sh*, terminaciones débiles (*-tion*, *-ture*, *-ous*, *-able*), la vocal /ɜː/, la *e* final muda y los finales con varias consonantes.
+
+Con una palabra salen hasta tres consejos. En una frase sale uno por cada palabra fallada (hasta tres), con la palabra delante, y si lo que se pierde son palabras gramaticales, el de las formas débiles. La confusión prevista por el ejercicio, cuando la hay, sigue mandando y va sola. No analizan el audio: son los fallos **más probables** en quien habla español, no un diagnóstico. Las reglas son conservadoras con la ortografía (llevan sus listas de excepciones) y un test las pasa por las 8.642 palabras del mazo.
+
 **El modelo.** La voz del navegador (síntesis del sistema), en británico o americano y a velocidad normal o lenta. No hay ficheros de audio para esto.
 
 **Qué se guarda.** El mejor intento de cada ítem en `item_attempts` (`skill = 'speaking'`) y el progreso del ejercicio en `lesson_progress`, como en Use of English. **No mueve el nivel estimado ni da XP**: la nota la pone un reconocedor que se equivoca, y solo sirve para ver cómo vas.

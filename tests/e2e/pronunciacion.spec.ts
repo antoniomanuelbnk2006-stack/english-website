@@ -74,10 +74,12 @@ test('un ejercicio: se entiende, se confunde, se corrige y se guarda', async ({
   await expect(page.getByText('/ʃɪp/')).toBeVisible();
   await expectAccessible(page);
 
-  // 1) «ship», entendida a la primera.
+  // 1) «ship», entendida a la primera: sin consejos.
+  const tips = page.getByRole('region', { name: 'Consejos' });
   await hear(page, ['ship']);
   await page.getByRole('button', { name: 'Hablar' }).click();
   await expect(page.getByText('Se te entiende perfectamente.')).toBeVisible();
+  await expect(tips).toHaveCount(0);
   await page.getByRole('button', { name: 'Siguiente' }).click();
 
   // 2) «sheep» dicho corto: oye «ship» y da el consejo de esa confusión.
@@ -86,17 +88,19 @@ test('un ejercicio: se entiende, se confunde, se corrige y se guarda', async ({
   await page.getByRole('button', { name: 'Hablar' }).click();
   await expect(page.getByText('No lo ha entendido.')).toBeVisible();
   await expect(page.getByText('«ship»', { exact: true })).toBeVisible();
-  await expect(page.getByText(/Ha sonado corta/)).toBeVisible();
+  await expect(tips.getByRole('listitem')).toHaveText([/Ha sonado corta/]);
   await expectAccessible(page);
 
   // Segundo intento: lo entiende, pero la primera hipótesis sigue siendo la otra palabra.
   await hear(page, ['ship', 'sheep']);
   await page.getByRole('button', { name: 'Otra vez' }).click();
   await expect(page.getByText('Te ha entendido, pero con dudas.')).toBeVisible();
+  await expect(tips).toContainText('Ha sonado corta');
   // Tercero: limpio.
   await hear(page, ['sheep']);
   await page.getByRole('button', { name: 'Otra vez' }).click();
   await expect(page.getByText('Se te entiende perfectamente.')).toBeVisible();
+  await expect(tips).toHaveCount(0);
   await page.getByRole('button', { name: 'Siguiente' }).click();
 
   // 3) Sin hablar: lo dice y deja reintentar.
@@ -114,6 +118,10 @@ test('un ejercicio: se entiende, se confunde, se corrige y se guarda', async ({
   await page.getByRole('button', { name: 'Hablar' }).click();
   await expect(page.getByText('Casi: ha entendido 4 de 5 palabras.')).toBeVisible();
   await expect(page.getByText('«please eat this green beans»', { exact: true })).toBeVisible();
+  // En una frase, el consejo nombra la palabra que ha fallado.
+  await expect(tips.getByRole('listitem')).toHaveText([
+    'these: La vocal es /iː/, larga y tensa: sonríe y alárgala.',
+  ]);
   await expectAccessible(page);
 
   await page.getByRole('button', { name: 'Terminar' }).click();
@@ -166,6 +174,27 @@ test('práctica libre: desde una palabra del mazo o escribiendo', async ({ page 
   await hear(page, ['advice']);
   await page.getByRole('button', { name: 'Hablar' }).click();
   await expect(page.getByText('Se te entiende perfectamente.')).toBeVisible();
+
+  // Sin ejercicio de por medio, los consejos salen de la palabra y de lo que se oyó en su lugar.
+  const tips = page.getByRole('region', { name: 'Consejos' });
+  await page.getByLabel('Palabra o frase en inglés').fill('very');
+  await page.getByRole('button', { name: 'Practicar' }).click();
+  await hear(page, ['berry']);
+  await page.getByRole('button', { name: 'Hablar' }).click();
+  await expect(page.getByText('No lo ha entendido.')).toBeVisible();
+  await expect(tips.getByRole('listitem').first()).toContainText('La v no es una «b»');
+  await expectAccessible(page);
+  await hear(page, ['very']);
+  await page.getByRole('button', { name: 'Otra vez' }).click();
+  await expect(page.getByText('Se te entiende perfectamente.')).toBeVisible();
+  await expect(tips).toHaveCount(0);
+
+  // Una palabra con trampa conocida dice cómo suena de verdad.
+  await page.getByLabel('Palabra o frase en inglés').fill('comfortable');
+  await page.getByRole('button', { name: 'Practicar' }).click();
+  await hear(page, ['come for table']);
+  await page.getByRole('button', { name: 'Hablar' }).click();
+  await expect(tips.getByRole('listitem').first()).toContainText('Tres sílabas, no cuatro');
 
   // Y se puede escribir cualquier otra cosa; el acento elegido se recuerda.
   await page.getByLabel('Palabra o frase en inglés').fill("I'd like a cup of tea.");

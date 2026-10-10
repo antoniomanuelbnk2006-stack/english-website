@@ -145,7 +145,7 @@ El vocabulario de cada nivel, con traducción y frase de ejemplo ([ADR-0015](../
 
 ### 2.6 ter Pronunciación (`/pronunciar`, `/pronunciar/[id]`, `/pronunciar/libre`)
 - **Biblioteca:** ejercicios del nivel del usuario, cada uno sobre un sonido o un problema típico de hispanohablantes, con su mejor nota.
-- **Ejercicio:** explicación de cómo se hace el sonido y, una a una, las palabras y frases: transcripción, traducción, «Escuchar» y «Despacio» (voz del navegador, británica o americana) y «Hablar». El resultado dice si se ha entendido, marca palabra por palabra en las frases, enseña lo que oyó y, si es una confusión típica, el consejo. Se puede repetir o saltar; al terminar, resumen por ítem.
+- **Ejercicio:** explicación de cómo se hace el sonido y, una a una, las palabras y frases: transcripción, traducción, «Escuchar» y «Despacio» (voz del navegador, británica o americana) y «Hablar». El resultado dice si se ha entendido, marca palabra por palabra en las frases y enseña lo que oyó. Si no se ha entendido a la primera, debajo sale un cuadro de **Consejos**: hasta tres para una palabra, o uno por palabra fallada en una frase. Se puede repetir o saltar; al terminar, resumen por ítem.
 - **Práctica libre:** lo mismo con cualquier texto; se llega también desde cada palabra del mazo. No se guarda.
 - Sin reconocimiento de voz (Firefox) se explica y se deja escuchar el modelo.
 

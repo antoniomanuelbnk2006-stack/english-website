@@ -713,7 +713,7 @@ export const es = {
   pronunciation: {
     subtitle: 'Di palabras y frases en voz alta y comprueba si se te entiende.',
     howItWorks:
-      'Escucha el modelo, pulsa «Hablar» y di la palabra o la frase. El reconocimiento de voz del navegador te enseña qué ha entendido: si entiende lo que querías decir, se te entiende. No es un juez perfecto: con palabras muy cortas a veces falla aunque lo digas bien.',
+      'Escucha el modelo, pulsa «Hablar» y di la palabra o la frase. El reconocimiento de voz del navegador te enseña qué ha entendido y, si algo no se entiende, te da consejos para decirlo mejor. No es un juez perfecto: con palabras muy cortas a veces falla aunque lo digas bien.',
     privacy:
       'Tu voz la procesa el servicio de reconocimiento de tu navegador (Google en Chrome, Microsoft en Edge). Señal no la recibe ni la guarda.',
     unsupported:
@@ -745,6 +745,7 @@ export const es = {
     verdictClose: 'Casi: ha entendido {ok} de {total} palabras.',
     verdictRetry: 'No lo ha entendido.',
     heard: 'Ha oído:',
+    tipsTitle: 'Consejos',
     word_ok: 'entendida',
     word_wrong: 'ha oído otra palabra',
     word_missing: 'no la ha oído',

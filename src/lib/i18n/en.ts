@@ -716,7 +716,7 @@ export const en: Dictionary = {
   pronunciation: {
     subtitle: 'Say words and sentences out loud and check whether you are understood.',
     howItWorks:
-      'Listen to the model, press “Speak” and say the word or sentence. The browser’s speech recognition shows what it understood: if it understands what you meant, you are understood. It is not a perfect judge: very short words sometimes fail even when you say them well.',
+      'Listen to the model, press “Speak” and say the word or sentence. The browser’s speech recognition shows what it understood and, when something is not understood, gives you tips to say it better. It is not a perfect judge: very short words sometimes fail even when you say them well.',
     privacy:
       'Your voice is processed by your browser’s recognition service (Google in Chrome, Microsoft in Edge). Señal neither receives nor stores it.',
     unsupported:
@@ -748,6 +748,7 @@ export const en: Dictionary = {
     verdictClose: 'Almost: it understood {ok} of {total} words.',
     verdictRetry: 'It did not understand.',
     heard: 'It heard:',
+    tipsTitle: 'Tips',
     word_ok: 'understood',
     word_wrong: 'heard another word',
     word_missing: 'not heard',

@@ -87,6 +87,7 @@ En la v1 el speaking se limita a lo que **ayuda al listening** y no cuesta diner
 A petición del dueño ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)), hay una sección de pronunciación antes que el *shadowing*:
 - **Ejercicios por sonido**, uno por cada problema típico de quien habla español ([errores](09-errores-hispanohablantes.md)): /ɪ/–/iː/, «s» + consonante, /h/, /b/–/v/, *-ed*, las tres «aes», /ʃ/–/tʃ/–/dʒ/, *th*, consonantes finales, sílabas que desaparecen, /s/–/z/, formas débiles, letras mudas, /ɜː/, acento léxico y trabalenguas. Cada uno explica cómo se hace el sonido y mezcla **palabras sueltas** (pares mínimos) y **frases**.
 - Escuchas el modelo (voz del navegador), hablas y el **reconocimiento de voz del navegador** dice qué ha entendido. No puntúa sonidos: comprueba si se te entiende. Cuando lo que oye es la otra palabra del par (*sheep* por *ship*), da el consejo concreto.
+- **Consejos cuando no se entiende**, en cualquier palabra o frase: primero según lo que se oyó en su lugar (una vocal por otra, una *b* por una *v*, un final que no suena) y después según cómo se escribe (letras mudas, *s* + consonante, *-ed*, *th*…), más unas 90 palabras con trampa con su transcripción. Son los fallos más probables de un hispanohablante, no un análisis del audio.
 - **Práctica libre** con cualquier palabra o frase.
 - El resultado se guarda para ver tu progreso, pero **no mueve el nivel ni da XP**: el reconocedor se equivoca, sobre todo con palabras muy cortas.
 
