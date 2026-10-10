@@ -110,6 +110,7 @@ Después:
 3. Región de funciones cercana a tu proyecto de Supabase: está fijada en `vercel.json` (`cdg1`, París, junto al proyecto de Supabase en `eu-west-3`).
 4. Cada *push* a `main` despliega; cada PR genera una *preview*.
 5. Añade el dominio de producción a `AllowedOrigins` del CORS de R2 y a las *Redirect URLs* de Supabase Auth.
+6. **Una sola dirección ([ADR-0021](../adr/0021-una-sola-direccion-y-codigo-fijo-primero.md)):** pon la dirección pública de la web como `SITE_URL` en las variables de producción. Vercel deja a cada despliegue una dirección propia, congelada en esa versión; con `SITE_URL`, todas redirigen a la buena. Si cambias de dominio, cámbiala también, y abre la web después: un valor equivocado manda toda la web a otro sitio.
 
 ---
 
@@ -123,6 +124,9 @@ NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
 NEXT_PUBLIC_AUDIO_BASE_URL=https://audio.tu-dominio.dev
 ALLOWED_EMAIL=tu-email@ejemplo.com
+# En producción: la dirección pública de la web. Lo que llegue por otro nombre (un despliegue
+# antiguo de Vercel, un alias) se redirige a ella (ADR-0021). En local se deja sin poner.
+# SITE_URL=https://tu-dominio.dev
 # Opcional: activa el acceso con código fijo (ADR-0020). 32 caracteres al azar o más;
 # el mismo valor en .env.pipeline para `pnpm auth:set-code`.
 # LOGIN_CODE_PEPPER=

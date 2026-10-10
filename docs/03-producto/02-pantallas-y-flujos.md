@@ -11,7 +11,7 @@ La interfaz está **en español** por defecto (rutas incluidas); el contenido de
 
 | Ruta | Pantalla | Fase |
 |---|---|---|
-| `/login` | Acceso con email + código | 0 |
+| `/login` | Acceso con email + código (el fijo, si está activado, o el del correo) | 0 |
 | `/hoy` | Plan del día y resumen (inicio) | 1 (básico) → 5 (plan) |
 | `/escuchar` | Biblioteca de escucha | 2 |
 | `/escuchar/[id]` | Lección de escucha (ciclo completo) | 2 |

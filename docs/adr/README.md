@@ -24,6 +24,7 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0018](0018-acceso-con-enlace-del-correo.md) | Acceso también con el enlace del correo (el plan gratuito de Supabase no deja editar la plantilla) | Aceptada |
 | [0019](0019-audio-en-supabase-storage.md) | El audio, en el Storage del proyecto de Supabase (R2 sigue soportado) | Aceptada |
 | [0020](0020-codigo-fijo-de-acceso.md) | Código fijo de acceso opcional (la contraseña de Supabase, derivada con un secreto del servidor) | Aceptada |
+| [0021](0021-una-sola-direccion-y-codigo-fijo-primero.md) | Una sola dirección para la web (`SITE_URL`) y, con código fijo, el código por delante del correo | Aceptada |
 
 Plantilla:
 

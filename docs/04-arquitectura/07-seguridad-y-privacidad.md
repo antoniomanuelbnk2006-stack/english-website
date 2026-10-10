@@ -25,6 +25,7 @@
 3. **Lista de emails permitidos** (`ALLOWED_EMAIL`) comprobada en `proxy.ts` **y** en cada Server Action/Route Handler (defensa en profundidad).
 4. Sesión en **cookies HttpOnly** gestionadas por `@supabase/ssr`; el *token* se refresca en `proxy.ts`.
 5. **Código fijo opcional** ([ADR-0020](../adr/0020-codigo-fijo-de-acceso.md)): si el servidor tiene `LOGIN_CODE_PEPPER`, se puede entrar con un código de 4 a 8 cifras sin pasar por el correo. El código no se guarda: es la contraseña de Supabase, derivada con ese secreto. La seguridad del acceso pasa a ser la del código que se elija.
+6. **Una sola dirección** ([ADR-0021](../adr/0021-una-sola-direccion-y-codigo-fijo-primero.md)): con `SITE_URL`, `proxy.ts` redirige a la dirección de la web lo que llegue por otro nombre, antes de mirar la sesión. Así nadie acaba, sin saberlo, en un despliegue antiguo con el código y las variables de entonces.
 
 ```ts
 // src/lib/supabase/proxy.ts (resumen)

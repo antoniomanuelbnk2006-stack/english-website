@@ -13,7 +13,7 @@ Con el plan gratuito de Supabase, entrar depende de un correo que trae un enlace
 
 - El código (de 4 a 8 cifras) **no se guarda en ningún sitio**: ni en el repositorio, ni en una variable de entorno, ni en la base de datos. Con un secreto del servidor, `LOGIN_CODE_PEPPER`, se convierte en una contraseña larga (`HMAC-SHA256(secreto, email + código)`), y esa es la contraseña del usuario en Supabase.
 - Al escribir un código, la acción del servidor calcula esa contraseña y prueba `signInWithPassword`. Si no vale y el código tiene 6 cifras, prueba el código del correo, como antes.
-- En la pantalla de acceso aparece el botón «Tengo un código fijo», que pasa a escribir el código **sin pedir ningún correo**. Solo se ve si el servidor tiene `LOGIN_CODE_PEPPER`; sin él, todo funciona como antes.
+- En la pantalla de acceso aparece el botón «Tengo un código fijo», que pasa a escribir el código **sin pedir ningún correo**. Solo se ve si el servidor tiene `LOGIN_CODE_PEPPER`; sin él, todo funciona como antes. (Desde el [ADR-0021](0021-una-sola-direccion-y-codigo-fijo-primero.md) es el botón principal y se llama «Entrar con mi código fijo».)
 - El código se pone, se cambia o se quita con `pnpm auth:set-code <código>` (o `--off`), que cambia la contraseña con la clave *secret* del proyecto desde `.env.pipeline`.
 - El acceso por correo sigue funcionando igual: es la vía de recuperación si se olvida el código.
 - El email permitido se sigue comprobando antes de todo y en cada petición.
