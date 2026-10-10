@@ -62,6 +62,8 @@ Después:
 
 ## 4. Cloudflare R2 (audio)
 
+> **Hoy el audio no está en R2, sino en el Storage del proyecto de Supabase** ([ADR-0019](../adr/0019-audio-en-supabase-storage.md)): `pnpm content:upload --ids <ids> --supabase` con `SUPABASE_URL` y `SUPABASE_SECRET_KEY` en `.env.pipeline`, y `NEXT_PUBLIC_AUDIO_BASE_URL=https://<ref>.supabase.co/storage/v1/object/public/senal-audio`. No hace falta configurar CORS ni dominio. Lo que sigue vale si algún día se pasa a R2.
+
 1. Crea el *bucket* `senal-audio` con *location hint* en Europa.
 2. **Acceso público de lectura:**
    - Con dominio propio en Cloudflare: conecta `audio.tu-dominio.dev` al *bucket* (recomendado).
@@ -136,6 +138,9 @@ R2_ACCOUNT_ID=
 R2_ACCESS_KEY_ID=
 R2_SECRET_ACCESS_KEY=
 R2_BUCKET=senal-audio
+# Audio en el Storage de Supabase (pnpm content:upload --supabase, ADR-0019):
+SUPABASE_URL=
+SUPABASE_AUDIO_BUCKET=senal-audio
 AI_GEN_MODEL=claude-sonnet-5-5
 AI_REVIEW_MODEL=claude-opus-5-5
 AI_CHEAP_MODEL=claude-haiku-5-5

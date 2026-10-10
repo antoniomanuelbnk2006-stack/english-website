@@ -22,6 +22,7 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0016](0016-diccionario-de-consulta-con-wiktionary.md) | Diccionario completo de consulta con Wiktionary | Aceptada |
 | [0017](0017-simulacros-de-examen.md) | Simulacros de examen de Cambridge con formato y tiempo oficiales | Aceptada |
 | [0018](0018-acceso-con-enlace-del-correo.md) | Acceso también con el enlace del correo (el plan gratuito de Supabase no deja editar la plantilla) | Aceptada |
+| [0019](0019-audio-en-supabase-storage.md) | El audio, en el Storage del proyecto de Supabase (R2 sigue soportado) | Aceptada |
 
 Plantilla:
 
