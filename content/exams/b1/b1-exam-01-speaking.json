@@ -1,0 +1,119 @@
+{
+  "id": "b1-exam-01-speaking",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "paper": "speaking",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "kind": "interview",
+      "about_es": "Preguntas sencillas sobre ti: tu nombre, dónde vives, tu día a día, tus gustos. Contesta con una o dos frases completas.",
+      "turns": [
+        { "examiner": "Good morning. I'm Anna, and this is my colleague. What's your name, and where do you live?", "answer_s": 15 },
+        { "examiner": "Do you work, or are you a student? Tell us something about it.", "answer_s": 25 },
+        { "examiner": "What do you usually do at the weekend?", "answer_s": 25 },
+        { "examiner": "Tell us about the people you live with.", "answer_s": 25 },
+        { "examiner": "What did you do last summer?", "answer_s": 25 }
+      ],
+      "useful_language": [
+        "My name's…, and I live in…",
+        "I'm a student. I'm studying…",
+        "At the weekend I usually…",
+        "I live with my…, who…",
+        "Last summer I went to…, and I…",
+        "I really enjoy… because…"
+      ],
+      "tips_es": [
+        "Frases completas: no «Madrid», sino «I live in Madrid, in a flat near the centre».",
+        "Fíjate en el tiempo verbal de la pregunta: «usually» pide presente y «last summer», pasado.",
+        "Si no entiendes, pide que lo repitan: «Could you repeat that, please?»."
+      ]
+    },
+    {
+      "kind": "long_turn",
+      "about_es": "Describes tú solo una fotografía durante un minuto: quién sale, dónde están, qué hacen, cómo van vestidos y qué crees que sienten.",
+      "turns": [
+        {
+          "examiner": "Now I'd like you to talk on your own about something. I'm going to give you a photograph, and I'd like you to talk about it. Your photograph shows people having a meal. Please tell us what you can see in the photograph.",
+          "visuals": [
+            {
+              "label": "Photograph",
+              "description": "A family of five is having lunch in a garden on a sunny day. A grandmother is serving salad, two children are laughing, and a man is cutting bread. There is a dog under the table, and behind them there is a small house with red flowers by the door."
+            }
+          ],
+          "answer_s": 60
+        }
+      ],
+      "useful_language": [
+        "In this photo I can see…",
+        "On the left / On the right / In the middle…",
+        "In the background there is…",
+        "She's wearing… / He's holding…",
+        "They look happy because…",
+        "I think they are… / Maybe it's…"
+      ],
+      "tips_es": [
+        "Usa el presente continuo para lo que hacen («is serving», «are laughing») y «there is / there are» para lo que hay.",
+        "Sitúa las cosas en la foto: «on the left», «behind them», «in the background».",
+        "Si no sabes una palabra, descríbela: «the thing you use to…».",
+        "Aquí la foto está descrita con palabras; en el examen es una foto real."
+      ]
+    },
+    {
+      "kind": "collaborative",
+      "about_es": "En el examen hablas con tu compañero sobre una situación con varios dibujos: comentáis cada opción y elegís la mejor. Aquí, a solas, comenta las opciones en voz alta y decide.",
+      "turns": [
+        {
+          "examiner": "Now, in this part of the test you're going to talk about something together for about two minutes. I'm going to describe a situation to you. A friend of yours is moving to a new flat next month, and you want to give her a present for her new home. Here are some things you could give her. Talk together about the different presents you could give, and say which would be best.",
+          "shown": "Which present would be best for a friend who is moving to a new flat?",
+          "prompts": ["a plant", "a lamp", "a cookery book", "a painting", "some cups", "a clock"],
+          "prep_s": 10,
+          "answer_s": 120
+        }
+      ],
+      "useful_language": [
+        "What about…?",
+        "I think… would be a good idea, because…",
+        "Do you agree?",
+        "Yes, but… / I'm not sure about that.",
+        "…is more useful than…",
+        "So, shall we choose…?"
+      ],
+      "tips_es": [
+        "Di algo de varias opciones antes de decidir: a favor y en contra.",
+        "Usa comparativos: «more useful than», «cheaper than», «not as nice as».",
+        "En el examen pregunta a tu compañero («What do you think?») y responde a lo que dice.",
+        "Termina con una decisión clara: «I'd choose… because…»."
+      ]
+    },
+    {
+      "kind": "discussion",
+      "about_es": "Preguntas de opinión relacionadas con el tema de la parte 3. Se esperan respuestas algo más largas, con un motivo.",
+      "turns": [
+        { "examiner": "Do you like giving presents? Why, or why not?", "answer_s": 30 },
+        { "examiner": "What is the best present you have ever received?", "answer_s": 30 },
+        { "examiner": "Is it better to buy a present or to make one yourself? Why?", "answer_s": 30 },
+        { "examiner": "Would you prefer to live in a flat in the city or a house in the country?", "answer_s": 30 }
+      ],
+      "useful_language": [
+        "I think… because…",
+        "In my opinion…",
+        "For example, last year…",
+        "I'd prefer to… because…",
+        "It depends. If…",
+        "I'm not sure, but…"
+      ],
+      "tips_es": [
+        "Opinión + porqué + ejemplo: con eso llenas los treinta segundos.",
+        "«I'd prefer to…» y «I'd rather…» sirven para hablar de lo que elegirías.",
+        "No pasa nada por pensar un momento: «Let me think…»."
+      ]
+    }
+  ]
+}

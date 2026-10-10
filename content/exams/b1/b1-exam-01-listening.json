@@ -1,0 +1,618 @@
+{
+  "id": "b1-exam-01-listening",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "paper": "listening",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "For each question, choose the correct answer (A, B or C). In the exam the options are pictures; here they are written.",
+      "groups": [
+        {
+          "recording": {
+            "id": "r01",
+            "speakers": [
+              { "id": "girl", "name": "Girl", "accent": "en-GB", "gender": "female" },
+              { "id": "boy", "name": "Boy", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "girl", "text": "I'm going to Emma's party on Saturday. Shall I make a cake?" },
+              {
+                "speaker": "boy",
+                "text": "I think her mum's already made one. She asked me to bring some drinks."
+              },
+              {
+                "speaker": "girl",
+                "text": "Oh, OK. Then I'll bring my speaker and put together a playlist. Nobody else will think of the music."
+              }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r01.m4a", "duration_s": 14.35 }
+          },
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "What will the girl take to the party?",
+              "options": ["a cake", "some drinks", "some music"],
+              "answer": 2,
+              "explanation_es": "La tarta ya la ha hecho la madre de Emma y las bebidas las lleva él; ella llevará el altavoz y una lista de canciones."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r02",
+            "speakers": [
+              { "id": "mark", "name": "Mark", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "mark", "text": "Hi, it's Mark. I've got the tickets for tonight." },
+              {
+                "speaker": "mark",
+                "text": "I thought the film was at quarter to seven, but that's when the doors open. It actually begins at quarter past."
+              },
+              {
+                "speaker": "mark",
+                "text": "Let's meet outside at seven, so we're not in a hurry. See you later."
+              }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r02.m4a", "duration_s": 14.681 }
+          },
+          "questions": [
+            {
+              "n": 2,
+              "prompt": "What time does the film start?",
+              "options": ["at 6.45", "at 7.00", "at 7.15"],
+              "answer": 2,
+              "explanation_es": "A las siete menos cuarto abren las puertas y a las siete quedan fuera; la película empieza «at quarter past» (7.15)."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r03",
+            "speakers": [
+              { "id": "woman", "name": "Woman", "accent": "en-GB", "gender": "female" },
+              { "id": "man", "name": "Man", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "woman", "text": "You're soaking wet! Where's your umbrella?" },
+              {
+                "speaker": "man",
+                "text": "I wish I knew. I had it when I got off the bus, I'm sure of that."
+              },
+              { "speaker": "woman", "text": "Maybe it's at the office." },
+              {
+                "speaker": "man",
+                "text": "No, I didn't go in today. Oh! I stopped for a coffee on the way here. I put it under the table. It must still be there."
+              }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r03.m4a", "duration_s": 16.675 }
+          },
+          "questions": [
+            {
+              "n": 3,
+              "prompt": "Where did the man leave his umbrella?",
+              "options": ["on the bus", "in a café", "at the office"],
+              "answer": 1,
+              "explanation_es": "Lo tenía al bajar del autobús y hoy no ha ido a la oficina; lo dejó debajo de la mesa cuando paró a tomar un café."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r04",
+            "speakers": [
+              { "id": "mum", "name": "Mum", "accent": "en-GB", "gender": "female" },
+              { "id": "boy", "name": "Boy", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "mum",
+                "text": "The holiday centre has lots of activities. You liked horse riding last year, didn't you?"
+              },
+              { "speaker": "boy", "text": "It was OK, but I've done it now. What else is there?" },
+              { "speaker": "mum", "text": "Sailing, and there's a climbing wall." },
+              {
+                "speaker": "boy",
+                "text": "I'd love to go sailing, but it says you have to be sixteen. So I'll put my name down for climbing."
+              }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r04.m4a", "duration_s": 17.007 }
+          },
+          "questions": [
+            {
+              "n": 4,
+              "prompt": "Which activity is the boy going to do?",
+              "options": ["climbing", "sailing", "horse riding"],
+              "answer": 0,
+              "explanation_es": "Montar a caballo ya lo hizo, y para la vela hay que tener dieciséis años, así que se apunta a escalada."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r05",
+            "speakers": [
+              { "id": "presenter", "name": "Presenter", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "presenter",
+                "text": "And now, the weather for tomorrow. It'll be a wet start to the day, with heavy rain across the whole area until about eleven."
+              },
+              {
+                "speaker": "presenter",
+                "text": "After lunch, the clouds will move away, and we can expect several hours of sunshine. Enjoy it while you can, because strong winds are on the way for the evening."
+              }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r05.m4a", "duration_s": 15.587 }
+          },
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "What will the weather be like tomorrow afternoon?",
+              "options": ["sunny", "rainy", "windy"],
+              "answer": 0,
+              "explanation_es": "Lluvia por la mañana, sol «after lunch» y viento por la tarde-noche. La pregunta es por la tarde."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r06",
+            "speakers": [
+              { "id": "man", "name": "Man", "accent": "en-US", "gender": "male" },
+              { "id": "woman", "name": "Woman", "accent": "en-US", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "man", "text": "I'm going to the shop. Do we need anything?" },
+              {
+                "speaker": "woman",
+                "text": "Let me look. There's plenty of milk, and I bought bread yesterday. Oh, I used the last eggs for the cake this morning. Could you get half a dozen?"
+              },
+              { "speaker": "man", "text": "Sure." }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r06.m4a", "duration_s": 12.192 }
+          },
+          "questions": [
+            {
+              "n": 6,
+              "prompt": "What does the woman ask the man to buy?",
+              "options": ["some milk", "some bread", "some eggs"],
+              "answer": 2,
+              "explanation_es": "Leche hay de sobra y el pan lo compró ayer; gastó los últimos huevos en la tarta y le pide media docena."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r07",
+            "speakers": [
+              { "id": "girl", "name": "Girl", "accent": "en-GB", "gender": "female" },
+              { "id": "dad", "name": "Dad", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "girl", "text": "Dad, are we driving to the airport on Friday?" },
+              {
+                "speaker": "dad",
+                "text": "No, parking there costs a fortune for two weeks. I was going to book a taxi, but with five of us and all the bags, we'd need two."
+              },
+              { "speaker": "dad", "text": "So we'll take the train. There's one that leaves at six." },
+              { "speaker": "girl", "text": "Six in the morning?" },
+              { "speaker": "dad", "text": "I'm afraid so." }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r07.m4a", "duration_s": 18.201 }
+          },
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "How will the family travel to the airport?",
+              "options": ["by taxi", "by train", "by car"],
+              "answer": 1,
+              "explanation_es": "El aparcamiento es carísimo y harían falta dos taxis, así que irán en tren."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "For each question, choose the correct answer (A, B or C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r08",
+            "speakers": [
+              { "id": "woman", "name": "Woman", "accent": "en-GB", "gender": "female" },
+              { "id": "man", "name": "Man", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "woman", "text": "Have you been to that new café by the station?" },
+              {
+                "speaker": "man",
+                "text": "Yes, twice. The sandwiches are great, aren't they? And so cheap for what you get."
+              },
+              {
+                "speaker": "woman",
+                "text": "I thought they were quite expensive, actually. But the people who work there are lovely. They remembered my name the second time."
+              },
+              {
+                "speaker": "man",
+                "text": "Yes, they're really nice. It's a shame about the music, though. I could hardly hear my friend speak."
+              },
+              { "speaker": "woman", "text": "Really? It was quiet when I went." }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r08.m4a", "duration_s": 23.575 }
+          },
+          "questions": [
+            {
+              "n": 8,
+              "prompt": "You will hear two friends talking about a new café. What do they agree about?",
+              "options": ["The food is good value.", "The staff are friendly.", "It is too noisy."],
+              "answer": 1,
+              "explanation_es": "Los dos dicen que el personal es encantador. A ella la comida le pareció cara, y el ruido solo lo notó él."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r09",
+            "speakers": [
+              { "id": "girl", "name": "Girl", "accent": "en-GB", "gender": "female" },
+              { "id": "boy", "name": "Boy", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "girl", "text": "How was the trip to the science museum?" },
+              {
+                "speaker": "boy",
+                "text": "Well, you know I'm not really into science, so I wasn't looking forward to it. And the coach took three hours, which wasn't great, but we played cards."
+              },
+              {
+                "speaker": "boy",
+                "text": "Then we got there and... it was brilliant! You could do all these experiments yourself. I didn't expect to like it at all."
+              }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r09.m4a", "duration_s": 19.502 }
+          },
+          "questions": [
+            {
+              "n": 9,
+              "prompt": "You will hear a boy telling a friend about a school trip. How did he feel about it?",
+              "options": ["bored by the museum", "annoyed about the journey", "surprised that he enjoyed it"],
+              "answer": 2,
+              "explanation_es": "No le apetecía nada y resultó «brilliant»: no esperaba que le gustara. El viaje fue largo, pero jugaron a las cartas."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r10",
+            "speakers": [
+              { "id": "man", "name": "Man", "accent": "en-US", "gender": "male" },
+              { "id": "woman", "name": "Woman", "accent": "en-US", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "man", "text": "So, are you happy in the new place?" },
+              {
+                "speaker": "woman",
+                "text": "Very. It's smaller than my old flat, to be honest, and I only look out onto a car park."
+              },
+              {
+                "speaker": "woman",
+                "text": "But I can walk to work in ten minutes, and there's a market on the corner. After two years of sitting on a bus every morning, that's what matters to me."
+              }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r10.m4a", "duration_s": 16.019 }
+          },
+          "questions": [
+            {
+              "n": 10,
+              "prompt": "You will hear a woman talking to a friend about her new flat. What does she like most about it?",
+              "options": ["the size of the rooms", "the view", "where it is"],
+              "answer": 2,
+              "explanation_es": "Es más pequeño y da a un aparcamiento, pero va andando al trabajo en diez minutos: lo que le importa es dónde está."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r11",
+            "speakers": [
+              { "id": "boy", "name": "Boy", "accent": "en-GB", "gender": "male" },
+              { "id": "girl", "name": "Girl", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "boy", "text": "Bad luck on Saturday. Three–nil!" },
+              {
+                "speaker": "girl",
+                "text": "It wasn't bad luck. Everyone keeps saying that, but we just stood there and watched. Nobody ran, nobody wanted the ball."
+              },
+              { "speaker": "boy", "text": "They're a strong team, though." },
+              {
+                "speaker": "girl",
+                "text": "Not really. We beat them easily last year. No, we were lazy, and we got what we deserved."
+              }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r11.m4a", "duration_s": 17.618 }
+          },
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "You will hear two friends talking about a football match. What does the girl think about her team?",
+              "options": ["They were unlucky.", "They did not try hard enough.", "The other team was much better."],
+              "answer": 1,
+              "explanation_es": "Niega que fuera mala suerte y que el rival sea fuerte: «we were lazy», nadie corrió ni quiso el balón."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r12",
+            "speakers": [
+              { "id": "woman", "name": "Woman", "accent": "en-GB", "gender": "female" },
+              { "id": "man", "name": "Man", "accent": "en-GB", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "woman", "text": "I didn't know you cycled to work." },
+              {
+                "speaker": "man",
+                "text": "I started last month. Everyone thinks it's for the exercise, and yes, I do feel healthier."
+              },
+              {
+                "speaker": "man",
+                "text": "But really, I was just tired of sitting in my car for forty minutes every morning, not moving. On the bike it takes fifteen. It's cheaper too, of course, but that wasn't the reason."
+              }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r12.m4a", "duration_s": 20.044 }
+          },
+          "questions": [
+            {
+              "n": 12,
+              "prompt": "You will hear a man talking to a colleague about cycling to work. Why did he start?",
+              "options": ["to get fit", "to save money", "to avoid the traffic"],
+              "answer": 2,
+              "explanation_es": "Estaba harto de pasar cuarenta minutos parado en el coche. Se encuentra mejor y es más barato, pero dice que esa no fue la razón."
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r13",
+            "speakers": [
+              { "id": "girl", "name": "Girl", "accent": "en-US", "gender": "female" },
+              { "id": "boy", "name": "Boy", "accent": "en-US", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "girl", "text": "Have you finished that book I lent you?" },
+              {
+                "speaker": "boy",
+                "text": "Nearly. I almost gave up after the first fifty pages, because nothing happens. But then it gets really exciting."
+              },
+              { "speaker": "girl", "text": "I know! And the people in it feel so real, don't they?" },
+              {
+                "speaker": "boy",
+                "text": "Yes, especially the grandmother. Don't tell me how it ends. I've got twenty pages left."
+              }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r13.m4a", "duration_s": 20.379 }
+          },
+          "questions": [
+            {
+              "n": 13,
+              "prompt": "You will hear two friends talking about a book. What does the boy say about it?",
+              "options": ["The beginning is slow.", "The characters are not realistic.", "The ending is disappointing."],
+              "answer": 0,
+              "explanation_es": "Casi lo deja en las primeras cincuenta páginas «because nothing happens». Los personajes le parecen reales y el final aún no lo ha leído."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "completion",
+      "rubric": "For each question, write the correct answer in the gap. Write one or two words or a number or a date or a time. You will hear a woman called Helen giving information about a summer drama course.",
+      "title": "Summer drama course",
+      "text": "Place: Riverside Theatre\nThe course starts on: {{14}} July\nClasses finish each day at: {{15}} p.m.\nType of play this year: a {{16}}\nStudents must bring: comfortable clothes and a {{17}}\nNumber of guests each student can invite: {{18}}\nGet a form from: the {{19}} or the website",
+      "gaps": [
+        {
+          "n": 14,
+          "accept": ["15", "15th", "fifteenth", "the 15th", "the fifteenth"],
+          "explanation_es": "«Starting on the fifteenth of July»."
+        },
+        {
+          "n": 15,
+          "accept": ["4", "four", "4.00", "4:00"],
+          "explanation_es": "Empiezan a las nueve y media y «we finish at four in the afternoon»."
+        },
+        {
+          "n": 16,
+          "accept": ["comedy"],
+          "explanation_es": "«This year we'll be working on a comedy», titulada «The Wrong Suitcase»."
+        },
+        {
+          "n": 17,
+          "accept": ["packed lunch", "lunch"],
+          "explanation_es": "Hay que llevar «a packed lunch» porque la cafetería estará cerrada. Las bebidas son gratis."
+        },
+        {
+          "n": 18,
+          "accept": ["3", "three"],
+          "explanation_es": "«Each student can invite three guests». El siete es la hora de la función."
+        },
+        {
+          "n": 19,
+          "accept": ["library"],
+          "explanation_es": "El formulario se recoge «from the library or from our website»."
+        }
+      ],
+      "recording": {
+        "id": "r14",
+        "speakers": [
+          { "id": "helen", "name": "Helen", "accent": "en-GB", "gender": "female" }
+        ],
+        "segments": [
+          {
+            "speaker": "helen",
+            "text": "Hello, everyone. I'm Helen, and I'm here to tell you about this year's summer drama course at the Riverside Theatre.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "helen",
+            "text": "The course is for young people aged thirteen to seventeen, and it runs for two weeks, starting on the fifteenth of July. We meet every day from Monday to Friday. Classes start at half past nine, and we finish at four in the afternoon.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "helen",
+            "text": "This year we'll be working on a comedy. It's called The Wrong Suitcase, and it was written specially for us by a local writer. Everyone will have a part, so don't worry if you've never acted before.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "helen",
+            "text": "You don't need to bring much. We'll give you a copy of the play on the first day. Please wear comfortable clothes, and bring a packed lunch, because the theatre café will be closed. Drinks are free.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "helen",
+            "text": "On the last Friday, we'll perform the play for your families and friends. The show starts at seven o'clock in the evening, and each student can invite three guests.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "helen",
+            "text": "The course costs eighty-five pounds. If you'd like to come, you need to fill in a form, which you can get from the library or from our website. Please return it by the end of May, as there are only thirty places.",
+            "pause_after_ms": 700
+          },
+          {
+            "speaker": "helen",
+            "text": "If you have any questions, you can call me on oh one nine six, five five five, oh one four two. Thank you."
+          }
+        ],
+        "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r14.m4a", "duration_s": 70.387 }
+      }
+    },
+    {
+      "type": "mcq",
+      "rubric": "For each question, choose the correct answer (A, B or C). You will hear an interview with a young woman called Maya Torres, who works as a tour guide.",
+      "groups": [
+        {
+          "recording": {
+            "id": "r15",
+            "speakers": [
+              { "id": "interviewer", "name": "Interviewer", "accent": "en-GB", "gender": "male" },
+              { "id": "maya", "name": "Maya Torres", "accent": "en-GB", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "interviewer",
+                "text": "Today I'm talking to Maya Torres, who works as a tour guide. Maya, how did you get the job?"
+              },
+              {
+                "speaker": "maya",
+                "text": "By accident, really. I was studying history at university, and I needed to earn some money in the summer."
+              },
+              {
+                "speaker": "maya",
+                "text": "A friend of mine was working for a tour company, and she told me they were looking for people who spoke English and Spanish. I'd never thought of being a guide before."
+              },
+              { "speaker": "interviewer", "text": "What was your first tour like?" },
+              {
+                "speaker": "maya",
+                "text": "Terrible! I'd learned all the dates and names, so I wasn't worried about forgetting things. But I talked much too fast, because I was nervous, and I finished the whole tour in forty minutes instead of ninety."
+              },
+              { "speaker": "maya", "text": "The tourists were very kind about it, but I was so embarrassed." },
+              { "speaker": "interviewer", "text": "What do visitors enjoy most?" },
+              {
+                "speaker": "maya",
+                "text": "You might think it's the cathedral or the castle, and of course they take a lot of photos there. But what people really remember are the stories about ordinary people who lived here. The baker who hid money in his bread, that kind of thing. Nobody remembers the dates."
+              },
+              { "speaker": "interviewer", "text": "Is there anything you don't like about the job?" },
+              {
+                "speaker": "maya",
+                "text": "I don't mind the walking, and I've got used to working at weekends. The hard thing is the weather."
+              },
+              {
+                "speaker": "maya",
+                "text": "When it's pouring with rain, and you've got twenty people who've paid for a tour, you can't cancel. You just have to smile and carry on, with water running down your neck."
+              },
+              { "speaker": "interviewer", "text": "Have you ever had a strange question?" },
+              {
+                "speaker": "maya",
+                "text": "All the time! Last week a man asked me what time the castle was built. Not what year. What time!"
+              },
+              {
+                "speaker": "maya",
+                "text": "But my favourite was a little girl who asked if the statue in the square came alive at night. I told her I wasn't sure, and that she should come back and check."
+              },
+              { "speaker": "interviewer", "text": "And what are your plans for the future?" },
+              {
+                "speaker": "maya",
+                "text": "Well, I finish university next year. My parents would like me to become a teacher, and I did think about it."
+              },
+              {
+                "speaker": "maya",
+                "text": "But I've decided I'd like to start my own company, doing tours for small groups. Maybe by bike. I'll need to save some money first, so I'll carry on with this job for a while."
+              }
+            ],
+            "audio": { "src": "audio/exams/b1/b1-exam-01-listening/v1/r15.m4a", "duration_s": 110.355 }
+          },
+          "questions": [
+            {
+              "n": 20,
+              "prompt": "Why did Maya become a tour guide?",
+              "options": [
+                "She needed a summer job.", "She had always wanted to be one.",
+                "One of her teachers suggested it."
+              ],
+              "answer": 0,
+              "explanation_es": "Necesitaba ganar dinero en verano y una amiga le habló de la empresa. Nunca había pensado en ser guía."
+            },
+            {
+              "n": 21,
+              "prompt": "What went wrong on Maya's first tour?",
+              "options": [
+                "She forgot some of the information.", "She spoke too quickly.",
+                "The tourists complained about her."
+              ],
+              "answer": 1,
+              "explanation_es": "Habló tan deprisa por los nervios que acabó en cuarenta minutos en vez de noventa. No olvidó nada y los turistas fueron amables."
+            },
+            {
+              "n": 22,
+              "prompt": "According to Maya, what do visitors like best?",
+              "options": ["the famous buildings", "taking photographs", "stories about people's lives"],
+              "answer": 2,
+              "explanation_es": "Lo que recuerdan son las historias de la gente corriente, como el panadero que escondía dinero en el pan."
+            },
+            {
+              "n": 23,
+              "prompt": "What does Maya find difficult about her job?",
+              "options": ["being outside in bad weather", "working at weekends", "walking long distances"],
+              "answer": 0,
+              "explanation_es": "«The hard thing is the weather»: con lluvia no se puede cancelar. Andar no le importa y a los fines de semana se ha acostumbrado."
+            },
+            {
+              "n": 24,
+              "prompt": "What did a little girl want to know?",
+              "options": ["when the castle was built", "whether a statue moved at night", "where the square was"],
+              "answer": 1,
+              "explanation_es": "La niña preguntó si la estatua de la plaza cobraba vida por la noche. Lo del castillo lo preguntó un señor."
+            },
+            {
+              "n": 25,
+              "prompt": "What does Maya want to do in the future?",
+              "options": ["become a teacher", "travel to other countries", "run her own tour business"],
+              "answer": 2,
+              "explanation_es": "Sus padres querrían que fuera profesora, pero ha decidido montar su propia empresa de visitas para grupos pequeños."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

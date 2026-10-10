@@ -1,0 +1,245 @@
+{
+  "id": "b1-exam-01-reading",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "paper": "reading",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-10T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "For questions 1–5, look at the text in each question. What does it say? Choose the correct answer (A, B or C).",
+      "groups": [
+        {
+          "text": "SWIMMING POOL\nChildren under 10 must be with an adult at all times.\nNo entry to the pool 30 minutes before closing.",
+          "questions": [
+            {
+              "n": 1,
+              "options": [
+                "Children under ten may swim alone if an adult is in the building.",
+                "The pool closes thirty minutes earlier for children.",
+                "You cannot get into the pool during the last half hour it is open."
+              ],
+              "answer": 2,
+              "explanation_es": "«No entry… 30 minutes before closing»: en la última media hora no se puede entrar. Los menores de diez tienen que ir acompañados siempre, no basta con que haya un adulto en el edificio."
+            }
+          ]
+        },
+        {
+          "text": "Hi Dan, I've left my keys at your flat – they're probably on the kitchen table. Could you bring them to college tomorrow? If not, I'll come round after football. Thanks! Leo",
+          "questions": [
+            {
+              "n": 2,
+              "options": [
+                "Leo wants Dan to check whether his keys are at the flat.",
+                "Leo would like Dan to take the keys to college.",
+                "Leo is going to collect his keys before football."
+              ],
+              "answer": 1,
+              "explanation_es": "«Could you bring them to college tomorrow?» es lo que pide. Ir a por ellas es solo el plan B, y sería después del fútbol, no antes."
+            }
+          ]
+        },
+        {
+          "text": "CLOSING DOWN SALE\nEverything half price until Saturday.\nSorry – we cannot give refunds on sale items.",
+          "questions": [
+            {
+              "n": 3,
+              "options": [
+                "You can get your money back until Saturday.",
+                "Only some items cost half the usual price.",
+                "Things bought in the sale cannot be returned for money."
+              ],
+              "answer": 2,
+              "explanation_es": "«We cannot give refunds on sale items»: lo de rebajas no se devuelve. Y es «everything» lo que está a mitad de precio, no solo algunas cosas."
+            }
+          ]
+        },
+        {
+          "text": "To: All students\nFrom: Mrs Patel\n\nThe school trip to the castle has been moved from Friday to the following Monday because of the weather forecast. If you can no longer come, tell me by Wednesday and I will return your money.",
+          "questions": [
+            {
+              "n": 4,
+              "options": [
+                "Students who cannot go on the new date should let Mrs Patel know.",
+                "The trip has been cancelled because of bad weather.",
+                "Students must pay for the trip by Wednesday."
+              ],
+              "answer": 0,
+              "explanation_es": "La excursión no se cancela, se pasa al lunes. Quien ya no pueda ir tiene que avisar antes del miércoles para que le devuelvan el dinero."
+            }
+          ]
+        },
+        {
+          "text": "FRESH ORANGE JUICE\nKeep in a fridge after opening and use within three days.\nShake well before use.",
+          "questions": [
+            {
+              "n": 5,
+              "options": [
+                "Once it is open, you should finish this in the next three days.",
+                "You should not open this until you are ready to drink all of it.",
+                "You must shake this three times a day."
+              ],
+              "answer": 0,
+              "explanation_es": "«Use within three days» después de abrirlo. Hay que agitarlo antes de usarlo, no tres veces al día."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "For questions 6–10, the people below all want to do a course. On the opposite side there are descriptions of eight courses. Decide which course would be the most suitable for each person.",
+      "title": "Courses near you",
+      "tasks": [
+        {
+          "options": [
+            { "id": "A", "title": "Evening Chef", "text": "A ten-week cookery course on Tuesday evenings for people who want to cook like professionals. You will learn classic French dishes that take time and care to prepare. Please bring your own knives." },
+            { "id": "B", "title": "Better Pictures", "text": "For people who already know how to use their camera. Each week you take photos at home, and the teacher discusses them with the class and suggests how to improve them. You need your own digital camera." },
+            { "id": "C", "title": "Teen Strings", "text": "Guitar lessons for 13- to 17-year-olds, in groups of six. Classes are on Mondays and Thursdays from 4.30 to 5.30 p.m. At the end of term, students give a concert for their families and friends." },
+            { "id": "D", "title": "Brushes in the Park", "text": "Join our small group every Wednesday morning for eight weeks and learn to paint landscapes in the open air. Paints, brushes and paper are all included in the price. No experience is necessary." },
+            { "id": "E", "title": "Photography from Zero", "text": "Never used a real camera? This course explains everything from the very beginning, in six easy lessons. Cameras are available to borrow, and there is no homework between classes." },
+            { "id": "F", "title": "Quick and Fresh", "text": "Learn to prepare tasty, healthy dishes in under thirty minutes. Our classes take place on Saturday mornings in a modern kitchen, and all the ingredients are provided. Suitable for complete beginners." },
+            { "id": "G", "title": "Studio Art Weekend", "text": "An intensive two-day painting course in our city-centre studio. Learn to paint from photographs with an experienced artist. Please bring your own materials. Lunch is included on both days." },
+            { "id": "H", "title": "Italiano Subito", "text": "Learn the Italian you need for a holiday: ordering food, asking the way, booking a room. There are thirty short video lessons, which you can watch on your phone whenever and wherever you like." }
+          ],
+          "questions": [
+            { "n": 6, "prompt": "Marta works full-time and can only study at weekends. She wants to learn to cook healthy meals quickly, as she doesn't have much time in the evenings.", "answer": "F", "explanation_es": "«Quick and Fresh»: platos sanos en menos de media hora y los sábados por la mañana. «Evening Chef» es entre semana y de platos lentos." },
+            { "n": 7, "prompt": "Jakub has just retired and would like to learn to paint outdoors. He wants a course that lasts several weeks and includes materials, as he doesn't own any.", "answer": "D", "explanation_es": "«Brushes in the Park»: al aire libre, ocho semanas y con el material incluido. «Studio Art Weekend» es dentro, dura dos días y hay que llevar el material." },
+            { "n": 8, "prompt": "Aisha wants to improve her photography. She already has a good camera and knows the basics, and she'd like a teacher to comment on her own pictures.", "answer": "B", "explanation_es": "«Better Pictures»: para quien ya sabe usar la cámara, y el profesor comenta las fotos de cada uno. «Photography from Zero» es para empezar de cero." },
+            { "n": 9, "prompt": "Oliver is fifteen and loves music. He wants to learn the guitar with other teenagers, and his parents want the classes to be after school on weekdays.", "answer": "C", "explanation_es": "«Teen Strings»: guitarra para chicos de 13 a 17 años, en grupo, lunes y jueves por la tarde." },
+            { "n": 10, "prompt": "Sofia is going to Italy next summer and wants to learn some basic Italian. She travels a lot for work, so she needs a course she can follow online at any time.", "answer": "H", "explanation_es": "«Italiano Subito»: italiano para viajar, en vídeos que se ven en el móvil cuando y donde se quiera." }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "For questions 11–15, read the text and choose the correct answer (A, B, C or D).",
+      "title": "The bike doctor",
+      "groups": [
+        {
+          "text": "Seventeen-year-old Callum Reid talks about his bicycle repair business.\n\nI started fixing bikes when I was twelve, mainly because mine kept breaking and my parents were tired of paying the shop to repair it. My grandfather showed me the basics, and after that I learned most things from videos online. I never planned to make money from it. That only happened when a neighbour saw me working in the garden and asked if I could look at her daughter's bike.\n\nFor the first year, I only did repairs for people who lived in my street. Then my sister made me a simple website, and suddenly I was getting messages from people on the other side of town. I had to start saying no to some of them, which I found really hard. I hate disappointing people, but I also had homework to do.\n\nPeople often ask me whether the work is difficult. Honestly, most repairs are quite simple once you understand how a bike works. What I find much harder is deciding how much to charge. At the beginning, I asked for almost nothing, because I felt embarrassed about taking money from adults. My mum finally sat me down and explained that my time was worth something too.\n\nThe best part is not the money, although it's nice to be able to buy my own things. It's when a customer comes back to collect a bike that hasn't worked for years and rides it away down the road. Last month an eighty-year-old man brought me the bike he'd had as a teenager. Seeing his face when he got on it again was something I'll never forget.\n\nI'm not sure whether I'll do this as a job when I'm older. My teachers think I should study engineering at university, and I probably will. But I don't want to stop completely. Whatever happens, I'd like to keep one afternoon a week for my workshop – even if I'm the only customer.",
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "Why did Callum first start repairing bikes?",
+              "options": [
+                "His grandfather needed help in his shop.",
+                "He wanted to save his family money.",
+                "A neighbour asked him to do it.",
+                "He hoped to earn some money."
+              ],
+              "answer": 1,
+              "explanation_es": "Su bici se rompía y sus padres estaban hartos de pagar al taller. La vecina vino después, y dice claramente que no pensaba ganar dinero."
+            },
+            {
+              "n": 12,
+              "prompt": "What problem did Callum have after his website was made?",
+              "options": [
+                "He could not accept all the work he was offered.",
+                "He did not know how to reply to the messages.",
+                "His marks at school got worse.",
+                "His customers lived too far away to visit him."
+              ],
+              "answer": 0,
+              "explanation_es": "«I had to start saying no to some of them»: le llegaban más encargos de los que podía hacer. No dice que sus notas bajaran, solo que tenía deberes."
+            },
+            {
+              "n": 13,
+              "prompt": "What does Callum say about the price of his work?",
+              "options": [
+                "Adults often refused to pay what he asked.",
+                "He still thinks that he charges too much.",
+                "He was uncomfortable about asking for money at first.",
+                "His mother decides how much he should charge."
+              ],
+              "answer": 2,
+              "explanation_es": "Al principio pedía casi nada porque le daba vergüenza cobrar a adultos. Su madre le explicó que su tiempo vale, pero no es ella quien pone los precios."
+            },
+            {
+              "n": 14,
+              "prompt": "What does Callum enjoy most about his business?",
+              "options": [
+                "being able to buy things for himself",
+                "working on very old bicycles",
+                "learning something new from each repair",
+                "seeing how pleased his customers are"
+              ],
+              "answer": 3,
+              "explanation_es": "«The best part is not the money»: es ver al cliente irse pedaleando en una bici que llevaba años parada, como el señor de ochenta años."
+            },
+            {
+              "n": 15,
+              "prompt": "What might Callum say about his future?",
+              "options": [
+                "I've decided to open my own bike shop instead of going to university.",
+                "I'll probably go to university, but I want bikes to stay part of my life.",
+                "I'm going to stop repairing bikes so that I can concentrate on my exams.",
+                "My teachers want me to carry on with the business when I leave school."
+              ],
+              "answer": 1,
+              "explanation_es": "Probablemente estudiará ingeniería, pero no quiere dejarlo del todo: le gustaría guardar una tarde a la semana para el taller."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gapped_text",
+      "rubric": "For questions 16–20, five sentences have been removed from the text below. Choose the correct sentence (A–H) for each gap. There are three extra sentences which you do not need to use.",
+      "title": "A home on the water",
+      "text": "Two years ago, Nina Brandt sold her flat in the city and bought a narrow boat on a canal. Her friends thought she was crazy. {{16}} 'I was paying a lot of money for a place I only slept in,' she says. 'I wanted something different.'\n\nLife on a boat is not always comfortable. The boat is only two metres wide, so Nina had to give away most of her furniture and nearly all her books. {{17}} She says she doesn't miss any of them now.\n\nWinter is the most difficult season. The boat is heated by a small fire that burns wood, and it goes out during the night. {{18}} 'You learn to get dressed very fast,' she laughs.\n\nThere are also things she has to do that she never thought about in a flat. Every two weeks she has to move the boat to fill it up with water. {{19}} It takes a whole morning, but she has started to enjoy it.\n\nWhat surprised her most was the other people. In her old building, she hardly knew her neighbours. {{20}} They help each other with repairs, share meals and look after each other's boats when someone is away. 'I came here to be alone,' Nina says, 'and I've never had so many friends.'",
+      "options": [
+        { "id": "A", "text": "This means travelling slowly to the nearest village, about an hour away." },
+        { "id": "B", "text": "That is why she spends the coldest months in a hotel." },
+        { "id": "C", "text": "But Nina had been unhappy in her flat for a long time." },
+        { "id": "D", "text": "On the canal, everybody knows everybody." },
+        { "id": "E", "text": "Fortunately, the boat has a large modern kitchen." },
+        { "id": "F", "text": "At first, this was the hardest part of her new life." },
+        { "id": "G", "text": "She has decided to move back to the city next year." },
+        { "id": "H", "text": "When she wakes up on a January morning, it can be only three degrees inside." }
+      ],
+      "gaps": [
+        { "n": 16, "answer": "C", "explanation_es": "«But» contrasta con lo que pensaban sus amigos, y la cita que sigue explica por qué estaba descontenta con el piso." },
+        { "n": 17, "answer": "F", "explanation_es": "«This» es regalar los muebles y los libros. Encaja con lo que viene después: ahora ya no los echa de menos." },
+        { "n": 18, "answer": "H", "explanation_es": "El fuego se apaga de noche, así que por la mañana hace mucho frío dentro; por eso se viste tan deprisa." },
+        { "n": 19, "answer": "A", "explanation_es": "«This means» explica qué supone mover el barco para cargar agua, y «It takes a whole morning» sigue hablando de ese viaje." },
+        { "n": 20, "answer": "D", "explanation_es": "Contrasta con el edificio donde apenas conocía a los vecinos. El «They» de la frase siguiente es esa gente del canal." }
+      ]
+    },
+    {
+      "type": "mcq_cloze",
+      "rubric": "For questions 21–26, read the text below and choose the correct word for each space (A, B, C or D).",
+      "title": "The kite festival",
+      "text": "Every August, thousands of visitors {{21}} to the small seaside town of Marlow Bay for its famous kite festival. The event {{22}} place on the beach and lasts for three days. People of all ages come to fly kites of every shape and colour, and some of them have {{23}} months making their own.\n\nThe festival began thirty years ago, when a local teacher {{24}} his students to build kites for a science project. Today it is one of the most popular events in the region. Entrance is free, but visitors are {{25}} to arrive early, because the car parks fill up quickly. If the weather is bad, the organisers may {{26}} the start until the afternoon.",
+      "gaps": [
+        { "n": 21, "options": ["visit", "arrive", "travel", "reach"], "answer": 2, "explanation_es": "Solo «travel» lleva «to» delante del lugar. «Visit» y «reach» van sin preposición, y «arrive» lleva «in» o «at»." },
+        { "n": 22, "options": ["has", "takes", "makes", "gets"], "answer": 1, "explanation_es": "«Take place» = celebrarse, tener lugar." },
+        { "n": 23, "options": ["spent", "passed", "used", "taken"], "answer": 0, "explanation_es": "«Spend time + -ing»: pasar un tiempo haciendo algo. «Pass» no se usa así." },
+        { "n": 24, "options": ["said", "suggested", "explained", "asked"], "answer": 3, "explanation_es": "«Ask someone to do something». «Say», «suggest» y «explain» no admiten persona + «to» + infinitivo." },
+        { "n": 25, "options": ["suggested", "advised", "informed", "explained"], "answer": 1, "explanation_es": "«Be advised to do something» = se recomienda. De nuevo, «suggest» no va con «to» + infinitivo." },
+        { "n": 26, "options": ["cancel", "stop", "delay", "wait"], "answer": 2, "explanation_es": "«Delay something until…» = retrasar algo hasta. Si se cancelara, no habría «until the afternoon»." }
+      ]
+    },
+    {
+      "type": "open_cloze",
+      "rubric": "For questions 27–32, read the text below and write the correct word in each space. Write one word in each space.",
+      "title": "A new member of the family",
+      "text": "Hi Sam,\n\nThanks for your message. I'm sorry I haven't written {{27}} so long, but I've been really busy with exams.\n\nGuess what? My parents have finally agreed {{28}} let me get a dog! We're going to choose one from the animal centre {{29}} Saturday. I've wanted a dog ever {{30}} I was about six, so I'm very excited.\n\nThere are lots of things to buy before then. I've already got a bed and some toys, but I still need to find a lead. Do you know {{31}} I could get a good one? You know much more about dogs {{32}} I do!\n\nWrite soon,\nKim",
+      "gaps": [
+        { "n": 27, "accept": ["for"], "explanation_es": "«For so long»: duración con «for»." },
+        { "n": 28, "accept": ["to"], "explanation_es": "«Agree to do something»." },
+        { "n": 29, "accept": ["on", "this", "next"], "explanation_es": "Con los días de la semana, «on». También valen «this» o «next Saturday»." },
+        { "n": 30, "accept": ["since"], "explanation_es": "«Ever since + momento del pasado» con present perfect («I've wanted»)." },
+        { "n": 31, "accept": ["where"], "explanation_es": "Pregunta indirecta por el lugar: «Do you know where I could get…?»." },
+        { "n": 32, "accept": ["than"], "explanation_es": "Comparativo («much more… than I do»)." }
+      ]
+    }
+  ]
+}
