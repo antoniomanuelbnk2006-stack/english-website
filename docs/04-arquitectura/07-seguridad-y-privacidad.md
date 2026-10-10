@@ -24,6 +24,7 @@
 2. **Registro desactivado** en Supabase (*Authentication → Sign In / Providers → Allow new users to sign up*: off). Tu usuario se crea una vez, a mano o con el primer OTP antes de desactivarlo.
 3. **Lista de emails permitidos** (`ALLOWED_EMAIL`) comprobada en `proxy.ts` **y** en cada Server Action/Route Handler (defensa en profundidad).
 4. Sesión en **cookies HttpOnly** gestionadas por `@supabase/ssr`; el *token* se refresca en `proxy.ts`.
+5. **Código fijo opcional** ([ADR-0020](../adr/0020-codigo-fijo-de-acceso.md)): si el servidor tiene `LOGIN_CODE_PEPPER`, se puede entrar con un código de 4 a 8 cifras sin pasar por el correo. El código no se guarda: es la contraseña de Supabase, derivada con ese secreto. La seguridad del acceso pasa a ser la del código que se elija.
 
 ```ts
 // src/lib/supabase/proxy.ts (resumen)
