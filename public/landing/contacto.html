@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto · Señal</title>
+<meta name="description" content="Solicita información sobre el plan de estudios de Señal y resuelve tus dudas.">
+<meta name="theme-color" content="#070b14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Ir al contenido principal</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Señal</a>
+    <button class="menu-btn" type="button" aria-label="Abrir el menú" aria-expanded="false"><span></span></button>
+    <ul class="links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="contenido">
+  <section>
+    <div class="form-card fade">
+      <h1 class="tilt" style="font-size:clamp(1.6rem,3.4vw,2.6rem);max-width:none">Solicita información</h1>
+      <p class="lead" style="margin-top:12px">Completa el formulario y un experto en Señal te contactará para ayudarte a elegir el plan de estudios perfecto para tu nivel actual.</p>
+      <form id="solicitud">
+        <div class="row">
+          <div><label for="nombre">Nombre *</label><input id="nombre" name="nombre" type="text" autocomplete="given-name" required></div>
+          <div><label for="apellidos">Apellidos *</label><input id="apellidos" name="apellidos" type="text" autocomplete="family-name" required></div>
+        </div>
+        <div><label for="correo">Correo electrónico *</label><input id="correo" name="correo" type="email" autocomplete="email" required></div>
+        <fieldset>
+          <legend>Nivel de inglés actual *</legend>
+          <div class="radios">
+            <label><input type="radio" name="nivel" value="A1" required> A1</label>
+            <label><input type="radio" name="nivel" value="A2"> A2</label>
+            <label><input type="radio" name="nivel" value="B1"> B1</label>
+            <label><input type="radio" name="nivel" value="B2"> B2</label>
+            <label><input type="radio" name="nivel" value="C1"> C1</label>
+            <label><input type="radio" name="nivel" value="C2"> C2</label>
+          </div>
+        </fieldset>
+        <div><label for="mensaje">Mensaje *</label><textarea id="mensaje" name="mensaje" required></textarea></div>
+        <button class="btn btn-primary btn-block" type="submit">Solicitar información</button>
+        <p class="form-note" id="nota" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="band center">
+    <h2 class="tilt">Preguntas frecuentes</h2>
+    <div class="faq">
+      <div><h4>¿Cómo funciona el autoestudio personalizado?</h4><p>Señal adapta cada lección a tu nivel actual, desde A1 hasta C2, asegurando que el contenido sea relevante y desafiante para tu progreso.</p></div>
+      <div><h4>¿Las herramientas de audio son suficientes?</h4><p>Las lecciones incluyen audio de alta calidad y textos con preguntas para que practiques la escucha y la comprensión lectora en un entorno real.</p></div>
+      <div><h4>¿Qué incluye el plan de gramática?</h4><p>Contamos con ejercicios interactivos y textos explicativos que te ayudan a dominar las estructuras gramaticales clave para comunicarte con fluidez.</p></div>
+      <div><h4>¿Puedo acceder a las herramientas en cualquier momento?</h4><p>Sí. Como plataforma de enseñanza remota, puedes acceder a tus lecciones y herramientas de audio y gramática desde cualquier dispositivo.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div>
+    <a class="logo" href="index.html"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Señal</a>
+    <p style="margin-top:12px;max-width:44ch">Plataforma de enseñanza remota diseñada para el autoestudio de inglés con herramientas completas desde A1 hasta C2.</p>
+  </div>
+  <ul>
+    <li><a href="mailto:hola@senal-english.com">hola@senal-english.com</a></li>
+    <li><a href="tel:+34912345678">+34 912 345 678</a></li>
+    <li>Av. de la Innovación 42, 28001 Madrid, España</li>
+  </ul>
+  <p class="copy">© 2026 Señal. Todos los derechos reservados.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

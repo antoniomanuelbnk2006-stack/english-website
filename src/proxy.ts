@@ -34,7 +34,8 @@ export async function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Todo salvo estáticos de Next, iconos, manifiesto, service worker, audio local e imágenes.
-    '/((?!_next/static|_next/image|favicon.ico|icons/|manifest.webmanifest|serwist/|dev-audio/|.*\\.(?:png|svg|jpg|webp|ico)$).*)',
+    // Todo salvo estáticos de Next, iconos, manifiesto, service worker, audio local, la página de
+    // presentación (public/landing, sin datos) e imágenes.
+    '/((?!_next/static|_next/image|favicon.ico|icons/|manifest.webmanifest|serwist/|dev-audio/|landing/|.*\\.(?:png|svg|jpg|webp|ico)$).*)',
   ],
 };

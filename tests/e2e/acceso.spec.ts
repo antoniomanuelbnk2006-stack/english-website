@@ -14,6 +14,13 @@ test.describe('sin sesión', () => {
     });
   }
 
+  test('la página de presentación se ve sin sesión, con sus ficheros', async ({ request }) => {
+    for (const path of ['index.html', 'nosotros.html', 'contacto.html', 'styles.css', 'app.js']) {
+      const response = await request.get(`/landing/${path}`, { maxRedirects: 0 });
+      expect(response.status(), path).toBe(200);
+    }
+  });
+
   test('las rutas de API responden 401 en vez de redirigir', async ({ request }) => {
     const response = await request.get('/api/ai/writing-feedback', { maxRedirects: 0 });
     expect(response.status()).toBe(401);
