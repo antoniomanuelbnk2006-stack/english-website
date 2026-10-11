@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Geist, Geist_Mono, Literata } from 'next/font/google';
+import { Fraunces, Geist_Mono, Literata, Wix_Madefor_Text } from 'next/font/google';
 import { cookies } from 'next/headers';
 import { getDictionary } from '@/lib/i18n';
 import { I18nProvider } from '@/lib/i18n/client';
@@ -7,7 +7,8 @@ import { getLocale } from '@/lib/i18n/server';
 import { DEFAULT_THEME, THEME_COOKIE, isTheme } from '@/lib/theme';
 import '@/styles/globals.css';
 
-const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
+const madefor = Wix_Madefor_Text({ variable: '--font-madefor', subsets: ['latin'] });
+const fraunces = Fraunces({ variable: '--font-fraunces', subsets: ['latin'], display: 'swap' });
 const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin'] });
 const literata = Literata({ variable: '--font-literata', subsets: ['latin'], display: 'swap' });
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#070b14',
+  themeColor: '#fcf9f2',
   colorScheme: 'dark light',
 };
 
@@ -32,7 +33,7 @@ export default async function RootLayout({ children }: LayoutProps<'/'>) {
     <html
       lang={locale}
       data-theme={theme}
-      className={`${geistSans.variable} ${geistMono.variable} ${literata.variable} h-full antialiased`}
+      className={`${madefor.variable} ${fraunces.variable} ${geistMono.variable} ${literata.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-bg text-text">
         <I18nProvider locale={locale} dictionary={getDictionary(locale)}>

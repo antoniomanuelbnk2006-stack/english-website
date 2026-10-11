@@ -1,22 +1,23 @@
 /* Estilos de la presentación de Señal. Tokens = tema oscuro de la app (src/styles/globals.css).
    Estructura y animaciones = las de la página de Wix (Tilt In, Arc In, zoom con el scroll). */
 :root {
-  --bg: #070b14;
-  --surface: #0d1422;
-  --surface-2: #131c2e;
-  --border: #1e2a40;
-  --text: #e6edf7;
-  --text-muted: #93a3bd;
-  --accent: #22d3ee;
-  --accent-strong: #06b6d4;
-  --accent-contrast: #04111a;
-  --focus: #67e8f9;
-  --danger: #f87171;
+  --bg: #fcf9f2;
+  --surface: #f2f0ea;
+  --surface-2: #e8e5dc;
+  --border: #c2c5c5;
+  --text: #2c3e50;
+  --text-muted: #55606b;
+  --accent: #1f6b42;
+  --accent-strong: #17562f;
+  --accent-contrast: #ffffff;
+  --focus: #17562f;
+  --danger: #b91c1c;
   --radius: 27px;
   --radius-sm: 12px;
   --pad: clamp(16px, 2.5vw, 36px);
   --section: clamp(48px, 6.25vw, 89px);
-  --font-sans: 'Geist', system-ui, sans-serif;
+  --font-sans: 'Wix Madefor Text', system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
   --font-mono: 'Geist Mono', ui-monospace, monospace;
 }
 * { box-sizing: border-box; margin: 0; }
@@ -61,7 +62,7 @@ a { color: inherit; }
 .btn-outline { background: transparent; color: var(--accent); }
 .btn-block { width: 100%; border-radius: 12px; }
 
-h1, h2, h3, h4 { letter-spacing: -.02em; line-height: 1.05; }
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spacing: -.01em; line-height: 1.05; }
 h1 { font-size: clamp(2rem, 5.6vw, 5rem); max-width: 14ch; }
 h2 { font-size: clamp(1.8rem, 4.4vw, 3.9rem); }
 h3 { font-size: clamp(1.5rem, 3.1vw, 2.8rem); line-height: 1.1; }
@@ -75,7 +76,7 @@ section { padding: var(--section) var(--pad); }
 
 .hero { position: relative; overflow: hidden; margin: 0 var(--pad); border-radius: var(--radius); min-height: min(668px, 80vh); padding: clamp(24px, 3.1vw, 44px); display: flex; align-items: center; isolation: isolate; }
 .hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
-.hero::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgb(7 11 20 / .94) 0%, rgb(7 11 20 / .78) 45%, rgb(7 11 20 / .25) 100%); }
+.hero::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgb(252 249 242 / .95) 0%, rgb(252 249 242 / .8) 45%, rgb(252 249 242 / .1) 100%); }
 .hero-copy { max-width: 720px; display: grid; gap: 22px; }
 .hero h1 em { font-style: normal; color: var(--accent); }
 .cta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 12px; }
@@ -83,7 +84,7 @@ section { padding: var(--section) var(--pad); }
 .grid { display: grid; gap: 23px 19px; margin-top: 48px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: clamp(20px, 2.4vw, 35px); display: grid; gap: 14px; align-content: start; transition: border-color .3s ease, box-shadow .3s ease; }
 .card:hover { border-color: var(--accent); box-shadow: 0 18px 40px -26px rgb(34 211 238 / .5); }
-.badge { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 14px; background: rgb(34 211 238 / .12); color: var(--accent); font: 600 1.25rem var(--font-mono); }
+.badge { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 14px; background: rgb(31 107 66 / .12); color: var(--accent); font: 600 1.25rem var(--font-mono); }
 .card .btn { margin-top: 10px; }
 
 .tools .grid { gap: 33px; }
@@ -149,7 +150,7 @@ fieldset { border: 0; padding: 0; min-width: 0; }
   .method img { order: -1; aspect-ratio: 16 / 11; }
   .foot, .foot ul { text-align: center; }
   .hero { min-height: 0; }
-  .hero::after { background: rgb(7 11 20 / .82); }
+  .hero::after { background: rgb(252 249 242 / .86); }
   .cta .btn { width: 100%; }
 }
 @media (max-width: 1023px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

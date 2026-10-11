@@ -17,7 +17,10 @@ export function Panel({ className, ...props }: ComponentProps<'section'>) {
 export function PanelTitle({ className, ...props }: ComponentProps<'h2'>) {
   return (
     <h2
-      className={cn('text-xs font-medium tracking-widest text-muted uppercase', className)}
+      className={cn(
+        'font-sans text-xs font-medium tracking-widest text-muted uppercase',
+        className,
+      )}
       {...props}
     />
   );

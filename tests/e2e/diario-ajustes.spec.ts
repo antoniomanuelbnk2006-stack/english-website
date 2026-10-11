@@ -116,12 +116,12 @@ test.describe('ajustes', () => {
     await page.getByLabel('Objetivo diario (minutos)').fill('60');
     await page.getByRole('checkbox', { name: 'Ciencia y espacio' }).check();
     await page.getByRole('checkbox', { name: 'Videojuegos' }).check();
-    await page.getByLabel('Tema', { exact: true }).selectOption('light');
+    await page.getByLabel('Tema', { exact: true }).selectOption('dark');
     await page.getByLabel('Tamaño de letra del lector').fill('22');
     await page.getByLabel('Fondo de papel en el lector').check();
     await page.getByRole('button', { name: 'Guardar' }).click();
     await expect(page.getByText('Ajustes guardados.')).toBeVisible();
-    await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+    await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
     await expectAccessible(page);
 
     const [profile] = await queryDatabase<{
@@ -134,7 +134,7 @@ test.describe('ajustes', () => {
     expect(profile?.interests.sort()).toEqual(['games', 'science-space']);
     expect(profile?.settings).toEqual({
       fsrs_params: [0.4, 1.2],
-      theme: 'light',
+      theme: 'dark',
       reading_font_px: 22,
       reader_paper: true,
       playback_rate: 1,

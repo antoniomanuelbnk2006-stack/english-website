@@ -1,6 +1,6 @@
 export const THEMES = ['dark', 'light', 'system'] as const;
 export type Theme = (typeof THEMES)[number];
-export const DEFAULT_THEME: Theme = 'dark';
+export const DEFAULT_THEME: Theme = 'light';
 export const THEME_COOKIE = 'senal_theme';
 
 export function isTheme(value: unknown): value is Theme {

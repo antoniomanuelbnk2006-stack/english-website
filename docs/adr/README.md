@@ -26,6 +26,7 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0020](0020-codigo-fijo-de-acceso.md) | Código fijo de acceso opcional (la contraseña de Supabase, derivada con un secreto del servidor) | Aceptada |
 | [0021](0021-una-sola-direccion-y-codigo-fijo-primero.md) | Una sola dirección para la web (`SITE_URL`) y, con código fijo, el código por delante del correo | Aceptada |
 | [0022](0022-diseno-de-la-presentacion-en-toda-la-web.md) | La presentación de Señal como portada pública y su lenguaje visual (pastillas, esquinas grandes, entradas animadas) en toda la app | Aceptada |
+| [0023](0023-paleta-y-tipografia-de-la-presentacion.md) | Paleta (crema, azul marino, verde) y tipografía (Fraunces, Wix Madefor Text) de la presentación en toda la web | Aceptada |
 
 Plantilla:
 

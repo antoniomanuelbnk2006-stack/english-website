@@ -3,6 +3,8 @@
 > **Propósito:** identidad visual, tokens, tipografía, componentes clave y reglas de accesibilidad. Estética: **oscura, limpia, sci-fi, con acentos cian y azul eléctrico** — pero al servicio de leer y escuchar durante mucho rato.
 > **Relacionado:** [Pantallas](02-pantallas-y-flujos.md) · [PWA, rendimiento y accesibilidad](../04-arquitectura/08-pwa-rendimiento-accesibilidad.md)
 
+> **Actualización (ADR-0023):** la paleta y la tipografía de este documento se sustituyeron el 11 de octubre de 2026 por las de la presentación: tema **claro por defecto** (crema `#fcf9f2`, azul marino `#2c3e50`, verde `#1f6b42`), un oscuro derivado del azul marino con verde aclarado (`#5cbf88`), títulos en **Fraunces** y texto en **Wix Madefor Text**. El bloque de código de abajo conserva la paleta cian original solo como referencia histórica; los valores vigentes están en `src/styles/globals.css`.
+
 ---
 
 ## 1. Concepto
@@ -100,7 +102,8 @@ Se definen como variables CSS semánticas y se exponen a Tailwind v4 con `@theme
 
 | Uso | Fuente | Licencia | Carga |
 |---|---|---|---|
-| Interfaz | **Geist Sans** | OFL | `next/font/google`, variable |
+| Títulos | **Fraunces** | OFL | `next/font/google`, variable (ADR-0023) |
+| Interfaz | **Wix Madefor Text** | OFL | `next/font/google` (ADR-0023; antes Geist Sans) |
 | Datos, tiempos, contadores (HUD) | **Geist Mono** | OFL | `next/font/google` |
 | Lectura larga (lector, transcripción, tarjetas) | **Literata** | OFL | `next/font/google`, variable, `display: swap` |
 

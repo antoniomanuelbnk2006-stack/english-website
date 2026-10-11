@@ -5,97 +5,99 @@
 
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
+/* Oscuro: el azul marino de la marca, con el verde aclarado para que se lea sobre fondo oscuro. */
 :root,
 [data-theme='dark'] {
   color-scheme: dark;
-  --bg: #070b14; /* espacio profundo */
-  --surface: #0d1422; /* paneles */
-  --surface-2: #131c2e; /* paneles elevados, popovers */
-  --border: #1e2a40;
-  --text: #e6edf7;
-  --text-muted: #93a3bd; /* texto secundario: ≥ 4,5:1 */
-  --text-subtle: #64748b; /* 4,1:1 sobre el fondo: solo iconos, bordes y placeholders, nunca texto */
-  --accent: #22d3ee; /* cian: acción principal, señal */
-  --accent-strong: #06b6d4;
-  --accent-contrast: #04111a; /* texto sobre --accent */
-  --electric: #3b82f6; /* azul eléctrico: secundario, gráficos */
-  --success: #34d399;
-  --warning: #fbbf24;
-  --danger: #f87171;
-  --karaoke: rgb(34 211 238 / 0.18);
-  --word-unknown: rgb(34 211 238 / 0.55);
-  --word-learning: rgb(251 191 36 / 0.6);
-  --focus: #67e8f9;
+  --bg: #16212b; /* azul marino profundo */
+  --surface: #1e2b37; /* paneles */
+  --surface-2: #273645; /* paneles elevados, popovers */
+  --border: #36495b;
+  --text: #fcf9f2;
+  --text-muted: #b4bec8; /* texto secundario: ≥ 4,5:1 */
+  --text-subtle: #8a97a4; /* solo iconos, bordes y placeholders, nunca texto */
+  --accent: #5cbf88; /* verde: acción principal, señal */
+  --accent-strong: #4aab76;
+  --accent-contrast: #0e1a13; /* texto sobre --accent */
+  --electric: #76abe9; /* azul: secundario, gráficos */
+  --success: #6fc277;
+  --warning: #f5a623;
+  --danger: #f28b82;
+  --karaoke: rgb(92 191 136 / 0.2);
+  --word-unknown: rgb(92 191 136 / 0.55);
+  --word-learning: rgb(245 166 35 / 0.6);
+  --focus: #8fe0b3;
 }
 
+/* Claro (por defecto): la paleta de la presentación — crema, azul marino y verde. */
 [data-theme='light'] {
   color-scheme: light;
-  --bg: #f8fafc;
-  --surface: #ffffff;
-  --surface-2: #f1f5f9;
-  --border: #e2e8f0;
-  --text: #0f172a;
-  --text-muted: #475569;
-  --text-subtle: #64748b;
-  --accent: #0e7490;
-  --accent-strong: #155e75;
+  --bg: #fcf9f2;
+  --surface: #f2f0ea;
+  --surface-2: #e8e5dc;
+  --border: #c2c5c5;
+  --text: #2c3e50;
+  --text-muted: #55606b;
+  --text-subtle: #69727b;
+  --accent: #1f6b42;
+  --accent-strong: #17562f;
   --accent-contrast: #ffffff;
-  --electric: #2563eb;
-  --success: #047857;
-  --warning: #b45309;
+  --electric: #2f6db5;
+  --success: #2a7030;
+  --warning: #8a5200;
   --danger: #b91c1c;
-  --karaoke: rgb(14 116 144 / 0.14);
-  --word-unknown: rgb(14 116 144 / 0.5);
-  --word-learning: rgb(180 83 9 / 0.5);
-  --focus: #0e7490;
+  --karaoke: rgb(31 107 66 / 0.14);
+  --word-unknown: rgb(31 107 66 / 0.5);
+  --word-learning: rgb(138 82 0 / 0.5);
+  --focus: #17562f;
 }
 
 /* «Según el sistema»: oscuro salvo que el sistema pida claro. */
 @media (prefers-color-scheme: light) {
   [data-theme='system'] {
     color-scheme: light;
-    --bg: #f8fafc;
-    --surface: #ffffff;
-    --surface-2: #f1f5f9;
-    --border: #e2e8f0;
-    --text: #0f172a;
-    --text-muted: #475569;
-    --text-subtle: #64748b;
-    --accent: #0e7490;
-    --accent-strong: #155e75;
+    --bg: #fcf9f2;
+    --surface: #f2f0ea;
+    --surface-2: #e8e5dc;
+    --border: #c2c5c5;
+    --text: #2c3e50;
+    --text-muted: #55606b;
+    --text-subtle: #69727b;
+    --accent: #1f6b42;
+    --accent-strong: #17562f;
     --accent-contrast: #ffffff;
-    --electric: #2563eb;
-    --success: #047857;
-    --warning: #b45309;
+    --electric: #2f6db5;
+    --success: #2a7030;
+    --warning: #8a5200;
     --danger: #b91c1c;
-    --karaoke: rgb(14 116 144 / 0.14);
-    --word-unknown: rgb(14 116 144 / 0.5);
-    --word-learning: rgb(180 83 9 / 0.5);
-    --focus: #0e7490;
+    --karaoke: rgb(31 107 66 / 0.14);
+    --word-unknown: rgb(31 107 66 / 0.5);
+    --word-learning: rgb(138 82 0 / 0.5);
+    --focus: #17562f;
   }
 }
 
 /* Papel: solo para el lector y las tarjetas (se aplica en su contenedor). */
 [data-theme='paper'] {
   color-scheme: light;
-  --bg: #f7f4ec;
-  --surface: #fbf9f3;
-  --surface-2: #efeadf;
-  --border: #e2dccd;
-  --text: #1f2328;
-  --text-muted: #57534e;
-  --text-subtle: #78716c;
-  --accent: #155e75;
-  --accent-strong: #164e63;
+  --bg: #f5f1e6;
+  --surface: #fbf8ef;
+  --surface-2: #ece7d9;
+  --border: #d9d2bf;
+  --text: #2c3e50;
+  --text-muted: #55606b;
+  --text-subtle: #6d7680;
+  --accent: #1f6b42;
+  --accent-strong: #17562f;
   --accent-contrast: #ffffff;
-  --electric: #2563eb;
-  --success: #047857;
-  --warning: #92400e;
+  --electric: #2f6db5;
+  --success: #2a7030;
+  --warning: #8a5200;
   --danger: #b91c1c;
-  --karaoke: rgb(14 116 144 / 0.14);
-  --word-unknown: rgb(14 116 144 / 0.5);
-  --word-learning: rgb(180 83 9 / 0.5);
-  --focus: #155e75;
+  --karaoke: rgb(31 107 66 / 0.14);
+  --word-unknown: rgb(31 107 66 / 0.5);
+  --word-learning: rgb(138 82 0 / 0.5);
+  --focus: #17562f;
   background-color: var(--bg);
   color: var(--text);
 }
@@ -119,7 +121,8 @@
   --color-word-unknown: var(--word-unknown);
   --color-word-learning: var(--word-learning);
   --color-focus: var(--focus);
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-madefor), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
   --font-reading: var(--font-literata), Georgia, serif;
   --radius-panel: 24px;
@@ -131,6 +134,16 @@
     background-color: var(--bg);
     color: var(--text);
     -webkit-text-size-adjust: 100%;
+  }
+
+  /* Títulos en Fraunces, como la presentación; el resto, en Wix Madefor Text. */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
   }
 
   body {
