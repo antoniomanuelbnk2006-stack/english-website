@@ -32,6 +32,23 @@ test.describe('sin sesión', () => {
     await expect(page).toHaveURL(/\/login$/);
   });
 
+  // «Explorar A1…C2» abre el cuestionario de ese nivel (Use of English) y las secciones de la app
+  // cuelgan de la presentación; sin sesión, el acceso las intercepta.
+  test('la presentación enlaza el cuestionario de cada nivel y las secciones', async ({ page }) => {
+    await page.goto('/landing/index.html');
+    for (const level of ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']) {
+      await expect(page.getByRole('link', { name: `Explorar ${level}` })).toHaveAttribute(
+        'href',
+        `/use-of-english?nivel=${level}`,
+      );
+    }
+    for (const href of ['/escuchar', '/leer', '/vocabulario', '/escribir', '/pronunciar']) {
+      await expect(page.locator(`#secciones a[href="${href}"]`)).toHaveCount(1);
+    }
+    await page.getByRole('link', { name: 'Explorar B2' }).click();
+    await expect(page).toHaveURL(/\/login$/);
+  });
+
   test('las rutas de API responden 401 en vez de redirigir', async ({ request }) => {
     const response = await request.get('/api/ai/writing-feedback', { maxRedirects: 0 });
     expect(response.status()).toBe(401);
