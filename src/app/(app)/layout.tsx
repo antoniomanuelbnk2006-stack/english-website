@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { BottomNav, TopNav } from '@/components/shell/app-nav';
 import { Logo } from '@/components/shell/logo';
 import { SignalBars } from '@/features/level/components/signal-bars';
@@ -33,9 +32,9 @@ export default async function AppLayout({ children }: LayoutProps<'/'>) {
       <TopNav signal={signal} />
 
       <header className="sticky top-0 z-20 flex h-14 items-center justify-between border-b border-border bg-bg/90 px-4 backdrop-blur md:hidden">
-        <Link href="/hoy" className="rounded-control">
+        <a href="/landing/index.html" aria-label={t('app.name')} className="rounded-control">
           <Logo />
-        </Link>
+        </a>
         {signal}
       </header>
 

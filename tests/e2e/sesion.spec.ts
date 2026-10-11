@@ -54,6 +54,12 @@ test('un código incorrecto no abre sesión', async ({ page }) => {
 
 test('la navegación lleva a cada sección y marca la actual', async ({ page }) => {
   await signIn(page);
+
+  // El logotipo lleva a la presentación y desde ahí «Entrar» vuelve a la app, ya con sesión.
+  await page.getByRole('link', { name: 'Señal' }).first().click();
+  await expect(page).toHaveURL(/\/landing\/index\.html$/);
+  await page.getByRole('link', { name: 'Entrar', exact: true }).first().click();
+  await expect(page).toHaveURL(/\/hoy$/);
   const nav = page.getByRole('navigation', { name: 'Navegación principal' });
 
   await nav.getByRole('link', { name: 'Leer' }).click();

@@ -101,9 +101,10 @@ export function TopNav({ signal }: { signal: ReactNode }) {
   const moreActive = SECONDARY_NAV.some((item) => isActivePath(pathname, item.href));
   return (
     <header className="sticky top-0 z-20 hidden h-20 items-center justify-between gap-4 bg-bg px-8 md:flex">
-      <Link href="/hoy" aria-label={t('app.name')} className="rounded-full">
+      {/* La presentación es un fichero estático: enlace normal, no una ruta de la app. */}
+      <a href="/landing/index.html" aria-label={t('app.name')} className="rounded-full">
         <Logo />
-      </Link>
+      </a>
       <nav aria-label={t('nav.main')}>
         <ul className="flex items-center gap-1">
           {PRIMARY_NAV.map((item) => (
