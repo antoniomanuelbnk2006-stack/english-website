@@ -122,6 +122,40 @@ fieldset { border: 0; padding: 0; min-width: 0; }
   @keyframes zoom { from { transform: scale(.8); } to { transform: scale(1); } }
 }
 
+/* Escritorio (≥ 1024 px): como en Wix, todo escala con el ancho de la ventana. Las medidas son las
+   de la página original expresadas en % del ancho útil (1425 px a 1440). */
+@media (min-width: 1024px) {
+  :root { --pad: 2.53vw; --section: 6.25vw; --radius: 1.875vw; }
+  body { font-size: 1.25vw; }
+  h1 { font-size: 5.625vw; }
+  h2 { font-size: 4.375vw; }
+  h3 { font-size: 3.125vw; }
+  h4 { font-size: 1.875vw; }
+  .lead { font-size: 1.406vw; }
+  .center .lead { margin-top: 1.3vw; }
+  .nav .wrap { min-height: 5.55vw; }
+  .logo img { width: 8vw; height: auto; }
+  .links a { padding: .25vw .83vw; }
+  .btn { min-height: 3.1vw; padding: 0 1.875vw; font-size: 1.25vw; }
+  .nav-cta { min-height: 2.8vw; padding: 0 1.5vw; }
+  .hero-wrap { padding-bottom: 3.1vw; }
+  .hero { min-height: 46.9vw; padding: 3.1vw; }
+  .hero-copy { max-width: 50.2vw; gap: 1.9vw; }
+  .cta { gap: 1.1vw; margin-top: 1.3vw; }
+  .grid { gap: 1.6vw 1.33vw; margin-top: 3.4vw; }
+  .tools .grid { gap: 2.3vw; }
+  .card { padding: 2.45vw; gap: 1vw; border-radius: var(--radius); }
+  .card img { width: 3.9vw; height: 3.8vw; margin-bottom: .85vw; }
+  .card .btn { margin-top: .9vw; }
+  .tool h4 { margin: 1.9vw 0 .9vw; }
+  .paras { gap: 2.5vw; }
+  .cta-strip { padding-block: 4.7vw; }
+  .about-img { margin-top: 2.8vw; }
+  .form-card { max-width: 47vw; padding: 3.1vw; }
+  .foot { padding: 2.5vw var(--pad); gap: 1.7vw; }
+  .foot .copy { font-size: 1.094vw; }
+}
+
 @media (max-width: 1023px) {
   .nav .wrap > nav { margin-inline: 0; }
   .nav-cta { margin-left: auto; }
