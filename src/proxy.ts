@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from 'next/server';
 import { buildCsp } from '@/lib/csp';
 import { env } from '@/lib/env';
 import { canonicalUrl } from '@/lib/site-url';
-import { updateSession } from '@/lib/supabase/proxy';
+import { LANDING_HOME, updateSession } from '@/lib/supabase/proxy';
 
 export async function proxy(request: NextRequest) {
   // La web tiene una sola dirección (ADR-0021): lo que llega por otra se manda allí antes de
@@ -28,7 +28,9 @@ export async function proxy(request: NextRequest) {
   requestHeaders.set('Content-Security-Policy', csp);
 
   const response = await updateSession(request, requestHeaders);
-  response.headers.set('Content-Security-Policy', csp);
+  // La portada pública es HTML estático con su fuente y sus fotos de fuera: sin la CSP de la app.
+  const isLanding = response.headers.get('x-middleware-rewrite')?.endsWith(LANDING_HOME);
+  if (!isLanding) response.headers.set('Content-Security-Policy', csp);
   return response;
 }
 

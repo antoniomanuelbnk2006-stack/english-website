@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 // Componentes base al estilo shadcn/ui (Radix + cva), adaptados a los tokens de Señal:
 // aquí `accent` es el cian de la acción principal y `muted` un color de texto.
 export const buttonVariants = cva(
-  'inline-flex shrink-0 items-center justify-center gap-2 rounded-control text-sm font-medium whitespace-nowrap transition-colors duration-150 ease-out select-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:size-5 [&_svg]:shrink-0',
+  'inline-flex shrink-0 items-center justify-center gap-2 rounded-full text-sm font-medium whitespace-nowrap underline-offset-4 transition-[color,background-color,border-color,transform] duration-300 ease-out select-none hover:-translate-y-0.5 hover:underline motion-reduce:hover:translate-y-0 disabled:pointer-events-none disabled:opacity-50 [&_svg]:size-5 [&_svg]:shrink-0',
   {
     variants: {
       variant: {
@@ -18,9 +18,9 @@ export const buttonVariants = cva(
       },
       size: {
         // 44 px de alto por defecto: la app se usa en movimiento.
-        md: 'h-11 px-4',
-        lg: 'h-12 px-6 text-base',
-        sm: 'h-9 px-3 pointer-coarse:h-11',
+        md: 'h-11 px-5',
+        lg: 'h-12 px-7 text-base',
+        sm: 'h-9 px-4 pointer-coarse:h-11',
         icon: 'size-11',
       },
     },

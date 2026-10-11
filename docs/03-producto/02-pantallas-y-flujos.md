@@ -11,6 +11,7 @@ La interfaz está **en español** por defecto (rutas incluidas); el contenido de
 
 | Ruta | Pantalla | Fase |
 |---|---|---|
+| `/` | Sin sesión: presentación pública de Señal (`public/landing`, [ADR-0022](../adr/0022-diseno-de-la-presentacion-en-toda-la-web.md)); con sesión, a `/hoy` | 0 |
 | `/login` | Acceso con email + código (el fijo, si está activado, o el del correo) | 0 |
 | `/hoy` | Plan del día y resumen (inicio) | 1 (básico) → 5 (plan) |
 | `/escuchar` | Biblioteca de escucha | 2 |

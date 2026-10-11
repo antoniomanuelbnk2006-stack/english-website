@@ -9,19 +9,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/landing/styles.css">
 </head>
 <body>
 <a class="skip" href="#contenido">Ir al contenido principal</a>
 <header class="nav">
   <div class="wrap">
-    <a class="logo" href="index.html"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Señal</a>
-    <button class="menu-btn" type="button" aria-label="Abrir el menú" aria-expanded="false"><span></span></button>
+    <a class="logo" href="/landing/index.html"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Señal</a>
+    <nav aria-label="Principal">
     <ul class="links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="nosotros.html" aria-current="page">Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="/landing/index.html">Inicio</a></li>
+      <li><a href="/landing/nosotros.html" aria-current="page">Nosotros</a></li>
+      <li><a href="/landing/contacto.html">Contacto</a></li>
     </ul>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="/login">Entrar</a>
+    <button class="menu-btn" type="button" aria-label="Abrir el menú" aria-expanded="false"><span></span></button>
   </div>
 </header>
 
@@ -37,7 +40,7 @@
       <div>
         <h2 class="tilt">Metodología de aprendizaje</h2>
         <p class="lead" style="margin-top:20px">Nuestra metodología combina la enseñanza por niveles con herramientas interactivas para un autoestudio efectivo. Desde A1 hasta C2, cada lección está diseñada para potenciar tu fluidez y confianza comunicativa.</p>
-        <div class="cta"><a class="btn btn-primary" href="contacto.html">Solicitar información</a></div>
+        <div class="cta"><a class="btn btn-primary" href="/landing/contacto.html">Solicitar información</a></div>
       </div>
       <img class="zoom" src="https://static.wixstatic.com/media/1c2b0f_b8d1baca908d4ce39bb37769a9852a96~mv2.jpg/v1/fill/w_960,h_1200,al_c,q_85/metodologia.jpg" alt="" width="960" height="1200" loading="lazy">
     </div>
@@ -46,7 +49,7 @@
 
 <footer class="foot">
   <div>
-    <a class="logo" href="index.html"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Señal</a>
+    <a class="logo" href="/landing/index.html"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Señal</a>
     <p style="margin-top:12px;max-width:44ch">Plataforma de enseñanza remota diseñada para el autoestudio de inglés con herramientas completas desde A1 hasta C2.</p>
   </div>
   <ul>
@@ -56,6 +59,6 @@
   </ul>
   <p class="copy">© 2026 Señal. Todos los derechos reservados.</p>
 </footer>
-<script src="app.js"></script>
+<script src="/landing/app.js"></script>
 </body>
 </html>

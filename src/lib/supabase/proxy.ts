@@ -6,6 +6,8 @@ import type { Database } from './database.types';
 
 const HOME = '/hoy';
 const LOGIN = '/login';
+/** Portada pública (ADR-0022): lo que ve en «/» quien no ha entrado. */
+export const LANDING_HOME = '/landing/index.html';
 
 /**
  * Refresca la sesión de Supabase y deja pasar solo al email permitido.
@@ -45,6 +47,9 @@ export async function updateSession(
   const isLogin = pathname === LOGIN;
 
   if (allowed && !isLogin) return response;
+  if (!allowed && pathname === '/') {
+    return withSessionCookies(response, NextResponse.rewrite(new URL(LANDING_HOME, request.url)));
+  }
   // Sin sesión solo se ven la pantalla de acceso y la llegada desde el enlace del correo.
   if (!allowed && (isLogin || pathname === CONFIRM_PATH)) return response;
 

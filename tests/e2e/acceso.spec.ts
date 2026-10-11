@@ -6,7 +6,7 @@ import { resetDatabase } from './session';
 // Flujos de acceso que no necesitan una sesión real (ni un Supabase detrás).
 
 test.describe('sin sesión', () => {
-  for (const path of ['/', '/hoy', '/leer', '/escuchar', '/repasar', '/ajustes']) {
+  for (const path of ['/hoy', '/leer', '/escuchar', '/repasar', '/ajustes']) {
     test(`${path} redirige al acceso`, async ({ page }) => {
       await page.goto(path);
       await expect(page).toHaveURL(/\/login$/);
@@ -19,6 +19,17 @@ test.describe('sin sesión', () => {
       const response = await request.get(`/landing/${path}`, { maxRedirects: 0 });
       expect(response.status(), path).toBe(200);
     }
+  });
+
+  // ADR-0022: quien no ha entrado ve la presentación en «/», con su camino al acceso.
+  test('la portada enseña la presentación y lleva al acceso', async ({ page }) => {
+    await page.goto('/');
+    await expect(page).toHaveURL(/\/$/);
+    await expect(
+      page.getByRole('heading', { level: 1, name: 'Domina el inglés con Señal' }),
+    ).toBeVisible();
+    await page.getByRole('link', { name: 'Entrar', exact: true }).first().click();
+    await expect(page).toHaveURL(/\/login$/);
   });
 
   test('las rutas de API responden 401 en vez de redirigir', async ({ request }) => {

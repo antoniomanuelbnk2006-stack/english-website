@@ -82,7 +82,7 @@ Se definen como variables CSS semánticas y se exponen a Tailwind v4 con `@theme
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
   --font-reading: var(--font-literata), Georgia, serif;
-  --radius-panel: 14px;
+  --radius-panel: 24px;
   --radius-control: 10px;
 }
 ```
@@ -122,7 +122,8 @@ Se definen como variables CSS semánticas y se exponen a Tailwind v4 con `@theme
 ## 4. Espaciado, forma y elevación
 
 - Escala de espaciado de Tailwind (múltiplos de 4 px). Márgenes de pantalla: 16 px en móvil, 24–32 px en escritorio.
-- Radios: paneles 14 px, controles 10 px, *chips* totalmente redondeados.
+- Radios: paneles 24 px, controles de formulario 10 px; botones y *chips* totalmente redondeados ([ADR-0022](../adr/0022-diseno-de-la-presentacion-en-toda-la-web.md)).
+- Movimiento: el hover de los botones los subraya y los sube 2 px; el título de cada pantalla entra inclinándose y los paneles giran hacia delante al entrar en pantalla (solo con *scroll-driven animations*). Todo se anula con `prefers-reduced-motion`.
 - Elevación con **bordes y luminosidad**, no con sombras (en oscuro las sombras no se ven): `surface` → `surface-2` + borde.
 - «Brillo» sutil en elementos activos: `box-shadow: 0 0 0 1px var(--accent), 0 0 24px -8px var(--accent)`.
 

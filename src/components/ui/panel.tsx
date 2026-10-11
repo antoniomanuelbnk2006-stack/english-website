@@ -5,7 +5,10 @@ import { cn } from '@/lib/utils';
 export function Panel({ className, ...props }: ComponentProps<'section'>) {
   return (
     <section
-      className={cn('rounded-panel border border-border bg-surface p-4 sm:p-5', className)}
+      className={cn(
+        'entrance-arc rounded-panel border border-border bg-surface p-4 sm:p-5',
+        className,
+      )}
       {...props}
     />
   );
