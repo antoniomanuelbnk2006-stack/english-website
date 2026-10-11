@@ -4,33 +4,14 @@ import { Ellipsis, LogOut } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Dialog } from 'radix-ui';
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import { signOut } from '@/features/auth/server/actions';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
-import { PRIMARY_NAV, SECONDARY_NAV, isActivePath, type NavItem } from './nav-items';
+import { Logo } from './logo';
+import { PRIMARY_NAV, SECONDARY_NAV, isActivePath } from './nav-items';
 
 const ICON_STROKE = 1.75;
-
-function SidebarLink({ item, active }: { item: NavItem; active: boolean }) {
-  const t = useT();
-  const Icon = item.icon;
-  return (
-    <Link
-      href={item.href}
-      aria-current={active ? 'page' : undefined}
-      className={cn(
-        'flex h-11 items-center gap-3 rounded-control px-3 text-sm transition-colors duration-150',
-        active
-          ? 'bg-surface-2 font-medium text-accent'
-          : 'text-muted hover:bg-surface-2 hover:text-text',
-      )}
-    >
-      <Icon aria-hidden="true" className="size-5" strokeWidth={ICON_STROKE} />
-      {t(item.label)}
-    </Link>
-  );
-}
 
 function SignOutButton({ className }: { className?: string }) {
   const t = useT();
@@ -50,41 +31,111 @@ function SignOutButton({ className }: { className?: string }) {
   );
 }
 
-/** Barra lateral (escritorio): todas las secciones. */
-export function SidebarNav() {
+const tabClasses =
+  'flex h-full min-w-0 flex-1 flex-col items-center justify-center gap-1 text-[11px] leading-none transition-colors duration-150';
+
+/** «Más»: el resto de secciones y cerrar sesión. Hoja inferior en móvil y panel en escritorio. */
+function MoreMenu({
+  triggerClassName,
+  active,
+  children,
+}: {
+  triggerClassName: string;
+  active: boolean;
+  children: ReactNode;
+}) {
   const t = useT();
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
   return (
-    <nav aria-label={t('nav.main')} className="flex min-h-0 flex-1 flex-col gap-6 overflow-y-auto">
-      <ul className="flex flex-col gap-1">
-        {PRIMARY_NAV.map((item) => (
-          <li key={item.href}>
-            <SidebarLink item={item} active={isActivePath(pathname, item.href)} />
-          </li>
-        ))}
-      </ul>
-      <ul className="flex flex-col gap-1 border-t border-border pt-4">
-        {SECONDARY_NAV.map((item) => (
-          <li key={item.href}>
-            <SidebarLink item={item} active={isActivePath(pathname, item.href)} />
-          </li>
-        ))}
-      </ul>
-      <div className="mt-auto border-t border-border pt-4">
-        <SignOutButton />
-      </div>
-    </nav>
+    <Dialog.Root open={open} onOpenChange={setOpen}>
+      <Dialog.Trigger
+        className={cn(triggerClassName, active ? 'font-medium text-accent' : 'text-muted')}
+      >
+        {children}
+      </Dialog.Trigger>
+      <Dialog.Portal>
+        <Dialog.Overlay className="fixed inset-0 z-40 bg-bg/70" />
+        <Dialog.Content
+          aria-describedby={undefined}
+          className="fixed inset-x-0 bottom-0 z-50 rounded-t-panel border-t border-border-strong bg-surface p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] md:inset-x-auto md:top-20 md:right-8 md:bottom-auto md:w-80 md:rounded-panel md:border md:pb-4"
+        >
+          <Dialog.Title className="px-3 pb-2 text-xs font-medium tracking-widest text-muted uppercase">
+            {t('nav.moreTitle')}
+          </Dialog.Title>
+          <ul className="flex flex-col gap-1">
+            {SECONDARY_NAV.map((item) => {
+              const isActive = isActivePath(pathname, item.href);
+              const Icon = item.icon;
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    aria-current={isActive ? 'page' : undefined}
+                    onClick={() => setOpen(false)}
+                    className={cn(
+                      'flex h-12 items-center gap-3 rounded-full px-4 text-base',
+                      isActive ? 'bg-surface-2 font-medium text-accent' : 'text-text',
+                    )}
+                  >
+                    <Icon aria-hidden="true" className="size-5" strokeWidth={ICON_STROKE} />
+                    {t(item.label)}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+          <div className="mt-2 border-t border-border pt-2">
+            <SignOutButton className="h-12 text-base" />
+          </div>
+        </Dialog.Content>
+      </Dialog.Portal>
+    </Dialog.Root>
   );
 }
 
-const tabClasses =
-  'flex h-full min-w-0 flex-1 flex-col items-center justify-center gap-1 text-[11px] leading-none transition-colors duration-150';
+/** Cabecera de escritorio, como la de la presentación: logotipo, secciones y «Más». */
+export function TopNav({ signal }: { signal: ReactNode }) {
+  const t = useT();
+  const pathname = usePathname();
+  const moreActive = SECONDARY_NAV.some((item) => isActivePath(pathname, item.href));
+  return (
+    <header className="sticky top-0 z-20 hidden h-20 items-center justify-between gap-4 bg-bg px-8 md:flex">
+      <Link href="/hoy" aria-label={t('app.name')} className="rounded-full">
+        <Logo />
+      </Link>
+      <nav aria-label={t('nav.main')}>
+        <ul className="flex items-center gap-1">
+          {PRIMARY_NAV.map((item) => (
+            <li key={item.href}>
+              <Link
+                href={item.href}
+                aria-current={isActivePath(pathname, item.href) ? 'page' : undefined}
+                className="block rounded-full px-4 py-2 text-base underline-offset-8 hover:underline aria-[current=page]:underline"
+              >
+                {t(item.label)}
+              </Link>
+            </li>
+          ))}
+          <li>
+            <MoreMenu
+              active={moreActive}
+              triggerClassName="inline-flex items-center gap-2 rounded-full px-4 py-2 text-base underline-offset-8 hover:underline"
+            >
+              {t('nav.more')}
+            </MoreMenu>
+          </li>
+        </ul>
+      </nav>
+      {signal}
+    </header>
+  );
+}
 
 /** Barra inferior (móvil): Hoy · Escuchar · Leer · Repasar · Más. */
 export function BottomNav() {
   const t = useT();
   const pathname = usePathname();
-  const [moreOpen, setMoreOpen] = useState(false);
   const moreActive = SECONDARY_NAV.some((item) => isActivePath(pathname, item.href));
 
   return (
@@ -110,50 +161,10 @@ export function BottomNav() {
           );
         })}
         <li className="flex min-w-0 flex-1">
-          <Dialog.Root open={moreOpen} onOpenChange={setMoreOpen}>
-            <Dialog.Trigger
-              className={cn(tabClasses, moreActive ? 'font-medium text-accent' : 'text-muted')}
-            >
-              <Ellipsis aria-hidden="true" className="size-5" strokeWidth={ICON_STROKE} />
-              <span className="truncate">{t('nav.more')}</span>
-            </Dialog.Trigger>
-            <Dialog.Portal>
-              <Dialog.Overlay className="fixed inset-0 z-40 bg-bg/70" />
-              <Dialog.Content
-                aria-describedby={undefined}
-                className="fixed inset-x-0 bottom-0 z-50 rounded-t-panel border-t border-border bg-surface p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]"
-              >
-                <Dialog.Title className="px-3 pb-2 text-xs font-medium tracking-widest text-muted uppercase">
-                  {t('nav.moreTitle')}
-                </Dialog.Title>
-                <ul className="flex flex-col gap-1">
-                  {SECONDARY_NAV.map((item) => {
-                    const active = isActivePath(pathname, item.href);
-                    const Icon = item.icon;
-                    return (
-                      <li key={item.href}>
-                        <Link
-                          href={item.href}
-                          aria-current={active ? 'page' : undefined}
-                          onClick={() => setMoreOpen(false)}
-                          className={cn(
-                            'flex h-12 items-center gap-3 rounded-control px-3 text-base',
-                            active ? 'bg-surface-2 font-medium text-accent' : 'text-text',
-                          )}
-                        >
-                          <Icon aria-hidden="true" className="size-5" strokeWidth={ICON_STROKE} />
-                          {t(item.label)}
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-                <div className="mt-2 border-t border-border pt-2">
-                  <SignOutButton className="h-12 text-base" />
-                </div>
-              </Dialog.Content>
-            </Dialog.Portal>
-          </Dialog.Root>
+          <MoreMenu active={moreActive} triggerClassName={tabClasses}>
+            <Ellipsis aria-hidden="true" className="size-5" strokeWidth={ICON_STROKE} />
+            <span className="truncate">{t('nav.more')}</span>
+          </MoreMenu>
         </li>
       </ul>
     </nav>

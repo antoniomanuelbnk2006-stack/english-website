@@ -18,7 +18,6 @@ const partTab = (page: Page, n: number) =>
 
 test('el índice enseña el examen de cada nivel con su formato y su tiempo oficial', async ({
   page,
-  isMobile,
 }) => {
   const errors = trackErrors(page);
   await signIn(page);
@@ -68,9 +67,9 @@ test('el índice enseña el examen de cada nivel con su formato y su tiempo ofic
   await page.getByRole('link', { name: 'A1', exact: true }).click();
   await expect(page.getByText(/Cambridge no tiene examen de A1 para adultos/)).toBeVisible();
 
-  // Está en el menú (en móvil, bajo «Más»).
+  // Está en el menú, bajo «Más».
   await page.goto('/hoy');
-  if (isMobile) await page.getByRole('button', { name: 'Más' }).click();
+  await page.getByRole('button', { name: 'Más' }).click();
   await page.getByRole('link', { name: 'Exámenes' }).click();
   await expect(page).toHaveURL(/\/examenes$/);
   expect(errors).toEqual([]);

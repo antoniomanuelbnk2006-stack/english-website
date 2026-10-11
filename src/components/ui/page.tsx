@@ -13,12 +13,16 @@ export function PageHeader({
   actions?: ReactNode;
 }) {
   return (
-    <header className="flex flex-wrap items-end justify-between gap-3">
+    <header className="flex flex-col items-center gap-3 pt-2 text-center">
       <div className="min-w-0">
-        <h1 className="entrance-tilt text-3xl font-semibold tracking-tight sm:text-4xl">{title}</h1>
-        {subtitle ? <p className="mt-1 text-sm text-muted">{subtitle}</p> : null}
+        <h1 className="entrance-tilt text-4xl leading-none font-bold tracking-tight sm:text-5xl lg:text-6xl">
+          {title}
+        </h1>
+        {subtitle ? <p className="mt-3 text-base text-muted">{subtitle}</p> : null}
       </div>
-      {actions ? <div className="flex items-center gap-2">{actions}</div> : null}
+      {actions ? (
+        <div className="flex flex-wrap items-center justify-center gap-2">{actions}</div>
+      ) : null}
     </header>
   );
 }

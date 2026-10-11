@@ -26,15 +26,12 @@ test('con el email permitido y el código se entra y se ve Hoy', async ({ page, 
   expect(errors).toEqual([]);
 });
 
-test('con sesión, /login lleva a Hoy; al cerrar sesión se vuelve al acceso', async ({
-  page,
-  isMobile,
-}) => {
+test('con sesión, /login lleva a Hoy; al cerrar sesión se vuelve al acceso', async ({ page }) => {
   await signIn(page);
   await page.goto('/login');
   await expect(page).toHaveURL(/\/hoy$/);
 
-  if (isMobile) await page.getByRole('button', { name: 'Más' }).click();
+  await page.getByRole('button', { name: 'Más' }).click();
   await page.getByRole('button', { name: 'Cerrar sesión' }).click();
   await expect(page).toHaveURL(/\/login$/);
 
@@ -55,7 +52,7 @@ test('un código incorrecto no abre sesión', async ({ page }) => {
   await expect(page).toHaveURL(/\/login$/);
 });
 
-test('la navegación lleva a cada sección y marca la actual', async ({ page, isMobile }) => {
+test('la navegación lleva a cada sección y marca la actual', async ({ page }) => {
   await signIn(page);
   const nav = page.getByRole('navigation', { name: 'Navegación principal' });
 
@@ -63,12 +60,8 @@ test('la navegación lleva a cada sección y marca la actual', async ({ page, is
   await expect(page).toHaveURL(/\/leer$/);
   await expect(nav.getByRole('link', { name: 'Leer' })).toHaveAttribute('aria-current', 'page');
 
-  if (isMobile) {
-    await nav.getByRole('button', { name: 'Más' }).click();
-    await page.getByRole('dialog').getByRole('link', { name: 'Diario' }).click();
-  } else {
-    await nav.getByRole('link', { name: 'Diario' }).click();
-  }
+  await nav.getByRole('button', { name: 'Más' }).click();
+  await page.getByRole('dialog').getByRole('link', { name: 'Diario' }).click();
   await expect(page).toHaveURL(/\/diario$/);
 });
 

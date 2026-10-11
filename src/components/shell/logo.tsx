@@ -1,16 +1,16 @@
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
-/** Marca: cuatro barras de señal crecientes y el nombre. */
+/** Marca: el logotipo de la presentación (onda y nombre). */
 export function Logo({ className }: { className?: string }) {
   return (
-    <span className={cn('inline-flex items-end gap-2.5', className)}>
-      <span aria-hidden="true" className="inline-flex h-6 items-end gap-[3px]">
-        <span className="h-[35%] w-[5px] rounded-[2px] bg-accent/45" />
-        <span className="h-[55%] w-[5px] rounded-[2px] bg-accent/65" />
-        <span className="h-[78%] w-[5px] rounded-[2px] bg-accent/85" />
-        <span className="h-full w-[5px] rounded-[2px] bg-accent" />
-      </span>
-      <span className="text-xl leading-none font-semibold tracking-tight">Señal</span>
-    </span>
+    <Image
+      src="/landing/logo.png"
+      alt="Señal"
+      width={114}
+      height={35}
+      priority
+      className={cn('h-9 w-auto dark:brightness-0 dark:invert', className)}
+    />
   );
 }

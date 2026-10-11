@@ -13,6 +13,7 @@
   --surface: #1e2b37; /* paneles */
   --surface-2: #273645; /* paneles elevados, popovers */
   --border: #36495b;
+  --border-strong: #6b7f92;
   --text: #fcf9f2;
   --text-muted: #b4bec8; /* texto secundario: ≥ 4,5:1 */
   --text-subtle: #8a97a4; /* solo iconos, bordes y placeholders, nunca texto */
@@ -36,6 +37,7 @@
   --surface: #f2f0ea;
   --surface-2: #e8e5dc;
   --border: #c2c5c5;
+  --border-strong: #2c3e50; /* el borde azul marino de las tarjetas de la presentación */
   --text: #2c3e50;
   --text-muted: #55606b;
   --text-subtle: #69727b;
@@ -60,6 +62,7 @@
     --surface: #f2f0ea;
     --surface-2: #e8e5dc;
     --border: #c2c5c5;
+    --border-strong: #2c3e50;
     --text: #2c3e50;
     --text-muted: #55606b;
     --text-subtle: #69727b;
@@ -84,6 +87,7 @@
   --surface: #fbf8ef;
   --surface-2: #ece7d9;
   --border: #d9d2bf;
+  --border-strong: #2c3e50;
   --text: #2c3e50;
   --text-muted: #55606b;
   --text-subtle: #6d7680;
@@ -107,6 +111,7 @@
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
   --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
   --color-text: var(--text);
   --color-muted: var(--text-muted);
   --color-subtle: var(--text-subtle);
@@ -127,6 +132,14 @@
   --font-reading: var(--font-literata), Georgia, serif;
   --radius-panel: 24px;
   --radius-control: 10px;
+}
+
+/* Escritorio: como la presentación, todo escala con el ancho de la ventana (el rem crece con ella;
+   por debajo de 1440 px se queda en 16 px). */
+@media (min-width: 1024px) {
+  html {
+    font-size: max(16px, 1.111vw);
+  }
 }
 
 @layer base {
