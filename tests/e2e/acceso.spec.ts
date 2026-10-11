@@ -26,7 +26,7 @@ test.describe('sin sesión', () => {
     await page.goto('/');
     await expect(page).toHaveURL(/\/$/);
     await expect(
-      page.getByRole('heading', { level: 1, name: 'Domina el inglés con Señal' }),
+      page.getByRole('heading', { level: 1, name: 'Domina el Inglés con Señal' }),
     ).toBeVisible();
     await page.getByRole('link', { name: 'Entrar', exact: true }).first().click();
     await expect(page).toHaveURL(/\/login$/);
