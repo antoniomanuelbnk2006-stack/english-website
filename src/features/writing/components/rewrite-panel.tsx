@@ -42,7 +42,7 @@ export function RewritePanel({
 
   return (
     <section aria-labelledby={`${id}-title`} className="flex flex-col gap-3">
-      <h2 id={`${id}-title`} className="text-body-lg font-medium">
+      <h2 id={`${id}-title`} className="text-subheading">
         {t('writing.rewriteTitle')}
       </h2>
       <p className="text-body-sm text-muted">{t('writing.rewriteHint')}</p>

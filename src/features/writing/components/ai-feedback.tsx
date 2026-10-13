@@ -36,12 +36,16 @@ export function AiFeedback({
       </div>
 
       <section aria-labelledby="writing-scores" className="flex flex-col gap-3">
-        <PanelTitle id="writing-scores">{t('writing.scoresTitle')}</PanelTitle>
+        <PanelTitle id="writing-scores" className="text-body-lg font-medium">
+          {t('writing.scoresTitle')}
+        </PanelTitle>
         <ScoreBars scores={feedback.scores} />
       </section>
 
       <section aria-labelledby="writing-corrections" className="flex flex-col gap-3">
-        <PanelTitle id="writing-corrections">{t('writing.correctionsTitle')}</PanelTitle>
+        <PanelTitle id="writing-corrections" className="text-body-lg font-medium">
+          {t('writing.correctionsTitle')}
+        </PanelTitle>
         {feedback.corrections.length === 0 ? (
           <p className="text-body-sm text-muted">{t('writing.noCorrections')}</p>
         ) : (
@@ -103,7 +107,9 @@ export function AiFeedback({
 
       {feedback.upgrades.length > 0 ? (
         <section aria-labelledby="writing-upgrades" className="flex flex-col gap-3">
-          <PanelTitle id="writing-upgrades">{t('writing.upgradesTitle')}</PanelTitle>
+          <PanelTitle id="writing-upgrades" className="text-body-lg font-medium">
+            {t('writing.upgradesTitle')}
+          </PanelTitle>
           <ul className="flex flex-col gap-3">
             {feedback.upgrades.map((upgrade, index) => (
               <li key={index} className="flex flex-col gap-1 text-body-sm">
@@ -132,7 +138,9 @@ export function AiFeedback({
             strokeWidth={1.75}
           />
           <div className="flex flex-col gap-1">
-            <PanelTitle id="writing-focus">{t('writing.focusTitle')}</PanelTitle>
+            <PanelTitle id="writing-focus" className="text-body-lg font-medium">
+              {t('writing.focusTitle')}
+            </PanelTitle>
             <p>
               <InlineText text={feedback.focus_next_es} />
             </p>

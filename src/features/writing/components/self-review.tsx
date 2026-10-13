@@ -162,7 +162,9 @@ export function SelfReview({
       <p className="text-body-sm text-muted">{t('writing.selfIntro')}</p>
 
       <section aria-labelledby={`${formId}-form`} className="flex flex-col gap-3">
-        <PanelTitle id={`${formId}-form`}>{t('writing.formTitle')}</PanelTitle>
+        <PanelTitle id={`${formId}-form`} className="text-body-lg font-medium">
+          {t('writing.formTitle')}
+        </PanelTitle>
         <ul className="flex flex-col gap-2">
           {review.checks.map((check) => {
             const Icon = check.ok ? CircleCheck : TriangleAlert;
@@ -189,7 +191,9 @@ export function SelfReview({
       </section>
 
       <section aria-labelledby={`${formId}-hints`} className="flex flex-col gap-3">
-        <PanelTitle id={`${formId}-hints`}>{t('writing.hintsTitle')}</PanelTitle>
+        <PanelTitle id={`${formId}-hints`} className="text-body-lg font-medium">
+          {t('writing.hintsTitle')}
+        </PanelTitle>
         {errors.length === 0 ? (
           <p className="text-body-sm text-muted">{t('writing.noHints')}</p>
         ) : (
@@ -208,7 +212,9 @@ export function SelfReview({
 
       {toCheck.length > 0 ? (
         <section aria-labelledby={`${formId}-checks`} className="flex flex-col gap-3">
-          <PanelTitle id={`${formId}-checks`}>{t('writing.checksTitle')}</PanelTitle>
+          <PanelTitle id={`${formId}-checks`} className="text-body-lg font-medium">
+            {t('writing.checksTitle')}
+          </PanelTitle>
           <ul className="flex flex-col gap-4">
             {toCheck.map((hint) => (
               <HintItem
@@ -222,7 +228,9 @@ export function SelfReview({
       ) : null}
 
       <section aria-labelledby={`${formId}-self`} className="flex flex-col gap-4">
-        <PanelTitle id={`${formId}-self`}>{t('writing.selfScoreTitle')}</PanelTitle>
+        <PanelTitle id={`${formId}-self`} className="text-body-lg font-medium">
+          {t('writing.selfScoreTitle')}
+        </PanelTitle>
 
         {points.length > 0 ? (
           <fieldset className="flex flex-col gap-1">

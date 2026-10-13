@@ -94,7 +94,7 @@ export function SubmissionReview({
         <div className="grid items-start gap-6 lg:grid-cols-2">
           <Tabs.Content value="text" forceMount className={column}>
             <Panel className="flex flex-col gap-3">
-              <h2 className="text-body-lg font-medium">{t('writing.yourText')}</h2>
+              <h2 className="text-subheading">{t('writing.yourText')}</h2>
               <MarkedText text={text} spans={spans} />
             </Panel>
             <Panel>
@@ -104,7 +104,7 @@ export function SubmissionReview({
 
           <Tabs.Content value="feedback" forceMount className={column}>
             <Panel className="flex flex-col gap-4">
-              <h2 className="text-body-lg font-medium">
+              <h2 className="text-subheading">
                 {t(result.kind === 'ai' ? 'writing.resultAi' : 'writing.resultSelf')}
               </h2>
               {result.kind === 'ai' ? (
