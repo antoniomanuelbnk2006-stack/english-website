@@ -4,6 +4,9 @@ import type { NextConfig } from 'next';
 const securityHeaders = [
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   { key: 'X-Content-Type-Options', value: 'nosniff' },
+  // Lo mismo que `frame-ancestors 'none'` de las dos CSP, para los navegadores que no la entienden
+  // y para lo que se sirve sin CSP (estáticos de Next, audio local).
+  { key: 'X-Frame-Options', value: 'DENY' },
   { key: 'Permissions-Policy', value: 'camera=(), geolocation=(), microphone=(self)' },
 ];
 

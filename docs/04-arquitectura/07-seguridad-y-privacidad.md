@@ -22,7 +22,7 @@
 
 1. **Supabase Auth con email + código OTP de 6 dígitos**, que se teclea dentro de la app. Se prefiere al enlace mágico porque en iOS el enlace se abre en Safari y no en la PWA instalada. Aun así la app **acepta también el enlace** del correo ([ADR-0018](../adr/0018-acceso-con-enlace-del-correo.md)): el plan gratuito de Supabase no deja editar la plantilla para que traiga el código si no se configura un SMTP propio. El enlace solo abre sesión en el navegador que pidió el correo.
 2. **Registro desactivado** en Supabase (*Authentication → Sign In / Providers → Allow new users to sign up*: off). Tu usuario se crea una vez, a mano o con el primer OTP antes de desactivarlo.
-3. **Lista de emails permitidos** (`ALLOWED_EMAIL`) comprobada en `proxy.ts` **y** en cada Server Action/Route Handler (defensa en profundidad).
+3. **Lista de emails permitidos** (`ALLOWED_EMAIL`) comprobada en `proxy.ts` **y** en cada pantalla privada, Server Action y Route Handler (defensa en profundidad). Cada página de `src/app/(app)` empieza por `await getSessionOrRedirect()`, antes de leer contenido o llamar a nadie: el `matcher` del proxy puede dejar huecos y el layout no se vuelve a ejecutar al navegar entre pantallas hermanas. `src/app/session-checks.test.ts` lee el código y falla si una pantalla, una acción o un Route Handler nuevo se olvida.
 4. Sesión en **cookies `HttpOnly` y `Secure`** gestionadas por `@supabase/ssr`; el *token* se refresca en `proxy.ts`. La librería las deja legibles desde JavaScript por defecto (su cliente de navegador las necesita); como esta app solo habla con Supabase desde el servidor, `src/lib/supabase/cookies.ts` las cierra en los dos clientes. Los navegadores aceptan `Secure` en `http://localhost`, que es como corren el desarrollo, la demo y los tests.
 5. **Código fijo opcional** ([ADR-0020](../adr/0020-codigo-fijo-de-acceso.md)): si el servidor tiene `LOGIN_CODE_PEPPER`, se puede entrar con un código de 4 a 8 cifras sin pasar por el correo. El código no se guarda: es la contraseña de Supabase, derivada con ese secreto. La seguridad del acceso pasa a ser la del código que se elija.
 6. **Una sola dirección** ([ADR-0021](../adr/0021-una-sola-direccion-y-codigo-fijo-primero.md)): con `SITE_URL`, `proxy.ts` redirige a la dirección de la web lo que llegue por otro nombre, antes de mirar la sesión. Así nadie acaba, sin saberlo, en un despliegue antiguo con el código y las variables de entonces.
@@ -77,9 +77,11 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon.ico|icons/|manifest.webmanifest|serwist/|.*\\.(?:png|svg|jpg|webp|ico)$).*)'],
+  matcher: ['/((?!_next/static|_next/image|favicon.ico|icons/|manifest.webmanifest|serwist/|dev-audio/|landing/).*)'],
 };
 ```
+
+Las excepciones del `matcher` son carpetas y ficheros concretos, **nunca extensiones**: una regla como «todo lo que acabe en `.png`» deja fuera del proxy a `/leer/lo-que-sea.png`, que es una pantalla privada.
 
 Sigue la guía oficial de Supabase para Next.js con `proxy.ts` y comprueba los detalles con la versión instalada.
 
@@ -87,7 +89,8 @@ Sigue la guía oficial de Supabase para Next.js con `proxy.ts` y comprueba los d
 
 ## 3. Autorización y datos
 
-- **RLS en todas las tablas** con `user_id = (select auth.uid())` ([Base de datos](03-base-de-datos.md#2-migración-base)).
+- **RLS en todas las tablas** con `user_id = (select auth.uid())` ([Base de datos](03-base-de-datos.md#2-migración-base)), con **una política por operación** y solo las que la app usa: los historiales solo admiten añadir y nada se borra salvo el diario ([ADR-0025](../adr/0025-politicas-rls-por-operacion.md)).
+- **El bucket de audio** es público para leer, pero solo admite `audio/mp4` y hasta 20 MB (`AUDIO_BUCKET_LIMITS` en `scripts/content/lib/audio-stores.ts`), y no tiene políticas de escritura: solo se sube con la clave *secret*, desde el pipeline.
 - La app **no usa la clave *secret*** de Supabase en ningún punto: todas las consultas van como el usuario autenticado. La clave *secret* solo existe en tu máquina para scripts puntuales (*seed*, copias).
 - Funciones SQL con `security invoker` y `search_path` vacío.
 - **Lo que no debe poder cambiar ni quien tenga la sesión** (los intentos de acceso y el uso de la IA) va en tablas que el usuario solo puede leer, `login_attempts` y `ai_usage`. Las escriben cuatro funciones `security definer` hechas para que llamarlas a mano no sirva de nada: solo saben sumar, y cerrar una reserva de la IA exige un resguardo que no sale del servidor ([ADR-0024](../adr/0024-bloqueo-de-acceso-y-registro-de-la-ia.md)). Así los límites de la IA aguantan aunque alguien entre en la cuenta, y siguen sin hacer falta claves *secret* en la app.
@@ -122,6 +125,7 @@ En `next.config.ts` (`headers()`) y, para la CSP con *nonce*, en `proxy.ts` sigu
 | `Content-Security-Policy` | `default-src 'self'; script-src 'self' 'nonce-{n}' 'strict-dynamic'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob: {AUDIO_ORIGIN}; connect-src 'self' {SUPABASE_URL} {AUDIO_ORIGIN}; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'` |
 | `Referrer-Policy` | `strict-origin-when-cross-origin` |
 | `X-Content-Type-Options` | `nosniff` |
+| `X-Frame-Options` | `DENY` (lo mismo que `frame-ancestors 'none'`, para navegadores antiguos y para lo que se sirve sin CSP) |
 | `Permissions-Policy` | `camera=(), geolocation=(), microphone=(self)` |
 | `Strict-Transport-Security` | La pone Vercel; en dominio propio, `max-age=63072000; includeSubDomains` |
 
@@ -158,7 +162,8 @@ Aunque el único interesado seas tú:
 
 - `pnpm-lock.yaml` versionado; actualizaciones semanales con Renovate o Dependabot (agrupadas).
 - **Next.js publica versiones de seguridad programadas**: suscríbete a su blog/avisos y actualiza el mismo día.
-- `pnpm audit` en CI (no bloqueante para avisos bajos; bloqueante para críticos).
+- `pnpm audit --prod --audit-level high` en CI: un aviso alto o crítico en lo que se despliega para el CI. Las herramientas de desarrollo no llegan a producción y quedan para Dependabot.
+- `.github/dependabot.yml`: PR semanales agrupadas (producción y desarrollo por separado; los saltos de versión mayor, sueltos) y las acciones de GitHub. Los **avisos** de seguridad se activan aparte, en *Settings → Code security*.
 
 ---
 

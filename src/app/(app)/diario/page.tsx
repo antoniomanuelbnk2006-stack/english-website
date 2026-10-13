@@ -13,6 +13,7 @@ import {
   type InputKind,
 } from '@/features/journal/lib/journal';
 import { getRecentEntries } from '@/features/journal/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { todayMadrid } from '@/lib/dates';
 import { intlLocale, type Translate, type TranslationKey } from '@/lib/i18n';
 import { getLocale, getT } from '@/lib/i18n/server';
@@ -34,6 +35,7 @@ function duration(t: Translate, minutes: number): string {
 }
 
 export default async function JournalPage() {
+  await getSessionOrRedirect();
   const [t, locale, entries] = await Promise.all([getT(), getLocale(), getRecentEntries()]);
   const today = todayMadrid();
   const week = weekTotals(entries, today);

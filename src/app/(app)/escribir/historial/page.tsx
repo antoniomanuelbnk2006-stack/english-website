@@ -8,6 +8,7 @@ import { EvolutionChart } from '@/features/writing/components/evolution-chart';
 import { criterionSeries, recentAverages, weakestCriterion } from '@/features/writing/lib/history';
 import { CRITERIA, overallScore } from '@/features/writing/lib/schema';
 import { getSubmissions } from '@/features/writing/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { findWritingPrompt } from '@/lib/content/writing';
 import { WritingTaskType } from '@/lib/content/writing-schema';
 import { intlLocale } from '@/lib/i18n';
@@ -18,6 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function WritingHistoryPage() {
+  await getSessionOrRedirect();
   const [t, locale, submissions] = await Promise.all([getT(), getLocale(), getSubmissions()]);
   const formatDay = new Intl.DateTimeFormat(intlLocale(locale), {
     day: 'numeric',

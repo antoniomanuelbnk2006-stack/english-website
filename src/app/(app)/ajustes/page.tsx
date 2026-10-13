@@ -5,6 +5,7 @@ import { Panel, PanelTitle } from '@/components/ui/panel';
 import { signOut } from '@/features/auth/server/actions';
 import { SettingsForm } from '@/features/profile/components/settings-form';
 import { getProfile } from '@/features/profile/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -12,6 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function SettingsPage() {
+  await getSessionOrRedirect();
   const [t, profile] = await Promise.all([getT(), getProfile()]);
 
   return (

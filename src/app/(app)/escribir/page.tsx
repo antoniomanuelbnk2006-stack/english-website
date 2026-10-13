@@ -12,6 +12,7 @@ import {
   getSubmissions,
   getSubmissionsByPrompt,
 } from '@/features/writing/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { getWritingIndex } from '@/lib/content/writing';
 import { todayMadrid } from '@/lib/dates';
 import { getT } from '@/lib/i18n/server';
@@ -25,6 +26,7 @@ const ALL = 'todos';
 const first = (value: string | string[] | undefined) => (Array.isArray(value) ? value[0] : value);
 
 export default async function WritingPage({ searchParams }: PageProps<'/escribir'>) {
+  await getSessionOrRedirect();
   const [params, t, userLevel, submissions, byPrompt, ai] = await Promise.all([
     searchParams,
     getT(),

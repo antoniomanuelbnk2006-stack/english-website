@@ -17,6 +17,7 @@ import { CEFR_LEVELS } from '@/features/level/lib/bands';
 import { toPercent } from '@/features/lessons/lib/summary';
 import { getProgressByLesson } from '@/features/lessons/server/queries';
 import { getUserLevel } from '@/features/lexicon/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import {
   EXAM_FORMATS,
   EXAM_PAPERS,
@@ -42,6 +43,7 @@ const ICON: Record<ExamPaperKind, LucideIcon> = {
 const first = (value: string | string[] | undefined) => (Array.isArray(value) ? value[0] : value);
 
 export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>) {
+  await getSessionOrRedirect();
   const [params, t, userLevel, progress] = await Promise.all([
     searchParams,
     getT(),

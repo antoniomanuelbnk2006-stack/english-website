@@ -6,6 +6,7 @@ import { EmptyState, PageContainer, PageHeader } from '@/components/ui/page';
 import { StudySession } from '@/features/dictionary/components/study-session';
 import { parseBrowseParams, pickStudyBatch } from '@/features/dictionary/lib/browse';
 import { getLexiconMap, getUserLevel } from '@/features/lexicon/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { getDictionary } from '@/lib/content/dictionary';
 import { getT } from '@/lib/i18n/server';
 
@@ -14,6 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function StudyWordsPage({ searchParams }: PageProps<'/palabras/estudiar'>) {
+  await getSessionOrRedirect();
   const [raw, t, userLevel, statuses] = await Promise.all([
     searchParams,
     getT(),

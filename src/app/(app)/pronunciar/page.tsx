@@ -8,6 +8,7 @@ import { CEFR_LEVELS } from '@/features/level/lib/bands';
 import { toPercent } from '@/features/lessons/lib/summary';
 import { getProgressByLesson } from '@/features/lessons/server/queries';
 import { getUserLevel } from '@/features/lexicon/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { getPronunciationIndex } from '@/lib/content/pronunciation';
 import { getT } from '@/lib/i18n/server';
 import { cn } from '@/lib/utils';
@@ -20,6 +21,7 @@ const ALL = 'todos';
 const first = (value: string | string[] | undefined) => (Array.isArray(value) ? value[0] : value);
 
 export default async function PronunciationPage({ searchParams }: PageProps<'/pronunciar'>) {
+  await getSessionOrRedirect();
   const [params, t, userLevel, progress] = await Promise.all([
     searchParams,
     getT(),

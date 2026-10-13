@@ -4,6 +4,7 @@ import { getLessonProgress } from '@/features/lessons/server/queries';
 import { getLexiconSnapshot } from '@/features/lexicon/server/queries';
 import { getProfile } from '@/features/profile/server/queries';
 import { ReadingLesson } from '@/features/reading/components/reading-lesson';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { fichasOfLesson } from '@/lib/content/grammar';
 import { findLessonMeta, unitTitle } from '@/lib/content/index';
 import { loadReadingLesson } from '@/lib/content/loader';
@@ -14,6 +15,7 @@ export async function generateMetadata({ params }: PageProps<'/leer/[id]'>): Pro
 }
 
 export default async function ReadingLessonPage({ params }: PageProps<'/leer/[id]'>) {
+  await getSessionOrRedirect();
   const { id } = await params;
   const lesson = await loadReadingLesson(id);
   if (!lesson) notFound();

@@ -19,6 +19,7 @@ import { LevelMeter } from '@/features/level/components/level-meter';
 import { getSkillRatings } from '@/features/level/server/queries';
 import { getProfile } from '@/features/profile/server/queries';
 import { getDueCount } from '@/features/srs/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { APP_TIME_ZONE, todayMadrid } from '@/lib/dates';
 import { intlLocale, type TranslationKey } from '@/lib/i18n';
 import { getLocale, getT } from '@/lib/i18n/server';
@@ -44,6 +45,7 @@ const SHORTCUTS: { href: Route; icon: LucideIcon; title: TranslationKey; hint?: 
   ];
 
 export default async function TodayPage() {
+  await getSessionOrRedirect();
   const today = todayMadrid();
   const [t, locale, profile, ratings, minutes, due] = await Promise.all([
     getT(),

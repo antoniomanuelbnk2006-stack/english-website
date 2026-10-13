@@ -128,6 +128,32 @@ test.describe('sin sesión', () => {
     expect(response.headers()['x-powered-by']).toBeUndefined();
   });
 
+  // El proxy solo se salta carpetas y ficheros concretos, nunca extensiones: una ruta privada
+  // que «parece» una imagen pasa por él como las demás (redirige y lleva la CSP).
+  test('una ruta privada que acaba en .png o .svg también pasa por el proxy', async ({
+    request,
+  }) => {
+    for (const path of ['/leer/b2-r-001.png', '/escribir/x.svg', '/hoy.ico', '/cualquiera.jpg']) {
+      const response = await request.get(path, { maxRedirects: 0 });
+      expect(response.status(), path).toBe(307);
+      expect(response.headers().location, path).toMatch(/\/login$/);
+      expect(response.headers()['content-security-policy'], path).toMatch(/'nonce-/);
+    }
+    // Los estáticos de verdad siguen saliendo sin sesión.
+    for (const path of ['/landing/logo.png', '/favicon.ico']) {
+      expect((await request.get(path, { maxRedirects: 0 })).status(), path).toBe(200);
+    }
+  });
+
+  test('ninguna respuesta se deja incrustar en otra web', async ({ request }) => {
+    const paths = ['/', '/login', '/hoy', '/landing/index.html', '/landing/app.js', '/favicon.ico'];
+    for (const path of paths) {
+      const response = await request.get(path, { maxRedirects: 0 });
+      expect(response.headers()['x-frame-options'], path).toBe('DENY');
+      expect(response.headers()['x-content-type-options'], path).toBe('nosniff');
+    }
+  });
+
   // La web tiene una sola dirección (ADR-0021). La petición llega con el nombre de otra, como
   // la dirección propia que Vercel deja a cada despliegue antiguo.
   test('lo que llega por otra dirección se redirige; lo local y la buena, no', async ({

@@ -60,6 +60,30 @@ export function supabasePublicBase(projectUrl: string, bucket: string): string {
   return `${projectUrl.replace(/\/+$/, '')}/storage/v1/object/public/${bucket}`;
 }
 
+/**
+ * Lo que admite el bucket de audio: solo `audio/mp4` (lo que genera el pipeline) y con un tope
+ * de tamaño. Storage rechaza cualquier otra cosa antes de guardarla, la suba quien la suba. La
+ * grabación más larga ronda los 2 MB; 20 MB dejan margen de sobra.
+ */
+export const AUDIO_BUCKET_LIMITS = {
+  file_size_limit: 20 * 1024 * 1024,
+  allowed_mime_types: ['audio/mp4'],
+};
+
+/** ¿Le faltan al bucket esos límites (o tiene otros)? */
+export function bucketNeedsLimits(bucket: unknown): boolean {
+  const { file_size_limit: size, allowed_mime_types: types } = (bucket ?? {}) as {
+    file_size_limit?: unknown;
+    allowed_mime_types?: unknown;
+  };
+  return (
+    size !== AUDIO_BUCKET_LIMITS.file_size_limit ||
+    !Array.isArray(types) ||
+    types.length !== AUDIO_BUCKET_LIMITS.allowed_mime_types.length ||
+    types.some((type, index) => type !== AUDIO_BUCKET_LIMITS.allowed_mime_types[index])
+  );
+}
+
 /** Storage responde «no existe» con un 400 o un 404 según la ruta: se mira también el cuerpo. */
 function isNotFound(status: number, body: unknown): boolean {
   if (status === 404) return true;
@@ -70,7 +94,8 @@ function isNotFound(status: number, body: unknown): boolean {
 
 /**
  * El Storage del proyecto de Supabase, con la clave *secret* (solo en este script, nunca en la
- * app). Crea el bucket público si no existe.
+ * app). Crea el bucket público si no existe y, exista o no, lo deja con sus límites de tamaño
+ * y de tipo de fichero (`AUDIO_BUCKET_LIMITS`).
  */
 export async function supabaseStore(env: NodeJS.ProcessEnv = process.env): Promise<AudioStore> {
   const { SUPABASE_URL, SUPABASE_SECRET_KEY } = env;
@@ -105,11 +130,20 @@ export async function supabaseStore(env: NodeJS.ProcessEnv = process.env): Promi
     if ((found.body as { public?: boolean } | null)?.public === false) {
       throw new Error(`El bucket «${bucket}» existe pero no es público: la app no podría leer el audio.`);
     }
+    if (bucketNeedsLimits(found.body)) {
+      const updated = await call(`${api}/bucket/${bucket}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ public: true, ...AUDIO_BUCKET_LIMITS }),
+      });
+      if (!updated.ok) fail('no se pudieron poner los límites del bucket', updated);
+      console.log(`Bucket «${bucket}»: límites de tamaño y de tipo de fichero actualizados.`);
+    }
   } else if (isNotFound(found.status, found.body)) {
     const created = await call(`${api}/bucket`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id: bucket, name: bucket, public: true }),
+      body: JSON.stringify({ id: bucket, name: bucket, public: true, ...AUDIO_BUCKET_LIMITS }),
     });
     if (!created.ok) fail('no se pudo crear el bucket', created);
     console.log(`Bucket público «${bucket}» creado.`);

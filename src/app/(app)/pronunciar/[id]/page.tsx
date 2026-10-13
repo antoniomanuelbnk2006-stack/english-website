@@ -8,6 +8,7 @@ import { Chip, Panel, PanelTitle } from '@/components/ui/panel';
 import { toPercent } from '@/features/lessons/lib/summary';
 import { getLessonProgress } from '@/features/lessons/server/queries';
 import { PronunciationTrainer } from '@/features/pronunciation/components/pronunciation-trainer';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { findPronunciationSet } from '@/lib/content/pronunciation';
 import { getT } from '@/lib/i18n/server';
 
@@ -19,6 +20,7 @@ export async function generateMetadata({
 }
 
 export default async function PronunciationSetPage({ params }: PageProps<'/pronunciar/[id]'>) {
+  await getSessionOrRedirect();
   const { id } = await params;
   const set = findPronunciationSet(id);
   if (!set) notFound();

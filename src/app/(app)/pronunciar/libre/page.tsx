@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { PageContainer } from '@/components/ui/page';
 import { FreePractice } from '@/features/pronunciation/components/free-practice';
 import { cleanFreeText } from '@/features/pronunciation/lib/free-text';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -15,6 +16,7 @@ const first = (value: string | string[] | undefined) => (Array.isArray(value) ? 
 export default async function FreePronunciationPage({
   searchParams,
 }: PageProps<'/pronunciar/libre'>) {
+  await getSessionOrRedirect();
   const [params, t] = await Promise.all([searchParams, getT()]);
   // `?texto=` llega desde el mazo de palabras; el texto solo se pinta, nunca se ejecuta.
   const initial = cleanFreeText(first(params.texto) ?? '');

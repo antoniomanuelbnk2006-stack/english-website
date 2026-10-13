@@ -20,6 +20,7 @@ import {
 } from '@/features/dictionary/lib/browse';
 import { CEFR_LEVELS } from '@/features/level/lib/bands';
 import { getLexiconMap, getUserLevel } from '@/features/lexicon/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { dictionarySizes, getDictionary } from '@/lib/content/dictionary';
 import { lemmaKey } from '@/lib/content/dictionary-schema';
 import type { TranslationKey } from '@/lib/i18n';
@@ -46,6 +47,7 @@ const chipClass = (active: boolean) =>
   );
 
 export default async function WordsPage({ searchParams }: PageProps<'/palabras'>) {
+  await getSessionOrRedirect();
   const [raw, t, userLevel, statuses] = await Promise.all([
     searchParams,
     getT(),

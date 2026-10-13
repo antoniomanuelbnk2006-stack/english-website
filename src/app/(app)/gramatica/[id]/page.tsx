@@ -8,6 +8,7 @@ import { Chip, Panel, PanelTitle } from '@/components/ui/panel';
 import { MarkSeen } from '@/features/grammar/components/mark-seen';
 import { fichaComponents } from '@/features/grammar/components/mdx';
 import { Practice } from '@/features/grammar/components/practice';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { compileFicha, findFicha, lessonsWithGrammar } from '@/lib/content/grammar';
 import type { TranslationKey } from '@/lib/i18n';
 import { getT } from '@/lib/i18n/server';
@@ -20,6 +21,7 @@ export async function generateMetadata({
 }
 
 export default async function FichaPage({ params }: PageProps<'/gramatica/[id]'>) {
+  await getSessionOrRedirect();
   const { id } = await params;
   const ficha = findFicha(id);
   const Content = ficha ? await compileFicha(id) : null;

@@ -8,6 +8,7 @@ import { CEFR_LEVELS } from '@/features/level/lib/bands';
 import { toPercent } from '@/features/lessons/lib/summary';
 import { getProgressByLesson } from '@/features/lessons/server/queries';
 import { getUserLevel } from '@/features/lexicon/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { getUoeIndex } from '@/lib/content/uoe';
 import { UOE_PARTS, type UoePart } from '@/lib/content/uoe-schema';
 import type { TranslationKey } from '@/lib/i18n';
@@ -29,6 +30,7 @@ const ALL = 'todos';
 const first = (value: string | string[] | undefined) => (Array.isArray(value) ? value[0] : value);
 
 export default async function UseOfEnglishPage({ searchParams }: PageProps<'/use-of-english'>) {
+  await getSessionOrRedirect();
   const [params, t, userLevel, progress] = await Promise.all([
     searchParams,
     getT(),

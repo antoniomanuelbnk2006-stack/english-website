@@ -511,6 +511,7 @@ group by user_id, date_trunc('week', logged_on::timestamp)::date, kind;
 | `lesson_id` es `text` sin FK | Las lecciones viven en el repo, no en la BD. `lesson_version` permite detectar que una lección cambió después de hacerla. |
 | `client_id` + `unique` en intentos y repasos | Reintentos de la cola sin conexión **idempotentes**. |
 | `(select auth.uid())` en políticas | Patrón recomendado por Supabase: se evalúa una vez por consulta, no por fila. |
+| Una política por operación | Desde la migración 0007 ya no hay políticas `for all` (las del listado de arriba son las de la migración base): cada tabla tiene solo las operaciones que la app usa. Los historiales solo admiten añadir y nada se borra salvo el diario ([ADR-0025](../adr/0025-politicas-rls-por-operacion.md)). |
 | `security invoker` en funciones de negocio | Las funciones respetan RLS. Son `security definer` solo `handle_new_user` (debe escribir al crear el usuario) y las cuatro que escriben en las tablas de solo lectura, `login_attempt_*` y `ai_usage_*` ([ADR-0024](../adr/0024-bloqueo-de-acceso-y-registro-de-la-ia.md)). |
 | `set search_path = ''` | Evita secuestro de `search_path` en funciones. |
 | Ratings calculados en TypeScript | La lógica Elo es pura y testeable en `lib/`; la función SQL solo persiste de forma atómica. |
@@ -542,6 +543,19 @@ Añade `login_attempts` (una fila por usuario: `attempts`, `last_attempt_at`, `l
 ### Migración `0006_ai_usage.sql`
 
 Añade `ai_usage`, el registro del uso de la IA: una fila por llamada, con lo apartado (`reserved_usd`), lo cobrado (`cost_usd`), los tokens y el resultado (`status`, `reason`). El usuario solo puede leerla. `ai_usage_reserve(...) returns jsonb` comprueba el límite diario y el tope mensual y aparta el gasto máximo de una llamada dentro de un cerrojo por usuario; devuelve `{ status: 'ok', id, token }`, `{ status: 'daily_limit' }` o `{ status: 'monthly_budget' }`. `ai_usage_settle(...) returns boolean` cierra la reserva con el coste real, y solo con el `token` que devolvió la reserva. La migración copia los envíos a la IA que ya había en `writing_submissions`, y la vista `v_ai_spend_month` pasa a leer de `ai_usage` ([ADR-0024](../adr/0024-bloqueo-de-acceso-y-registro-de-la-ia.md)). Tests en `tests/db/ai-usage.test.ts`.
+
+### Migración `0007_policies_per_operation.sql`
+
+Sustituye la política `for all` de cada tabla por una política por operación, y solo las que la app usa ([ADR-0025](../adr/0025-politicas-rls-por-operacion.md)):
+
+| Tablas | Operaciones |
+|---|---|
+| `profiles`, `skill_ratings`, `lesson_progress`, `lexicon`, `srs_cards`, `writing_submissions`, `activity_days` | leer, crear, cambiar |
+| `input_log` | leer, crear, cambiar, borrar |
+| `item_attempts`, `srs_reviews`, `rating_history`, `listening_diagnostics` | leer, crear |
+| `daily_plans`, `placement_results`, `achievements` (sin uso todavía) | leer |
+
+Una operación sin política no da error: un `update` o un `delete` no tocan ninguna fila (un `insert` sí se rechaza). Si una pantalla nueva «no guarda» sin quejarse, lo primero es mirar si esa tabla tiene política para esa operación. Tests en `tests/db/policies.test.ts`, que además falla si una tabla nueva no declara qué operaciones admite.
 
 ---
 
@@ -575,5 +589,5 @@ La capa gratuita no ofrece restauración a un punto en el tiempo. Dos medidas:
 
 - Una migración = un cambio coherente; nombre `NNNN_descripcion.sql`.
 - Nunca editar una migración ya aplicada en producción: crear otra.
-- Toda tabla nueva: `user_id`, RLS activado y política en la **misma** migración.
+- Toda tabla nueva: `user_id`, RLS activado y sus políticas en la **misma** migración: una por operación y solo las que hagan falta, nunca `for all` ([ADR-0025](../adr/0025-politicas-rls-por-operacion.md)).
 - Probar en local (`supabase db reset`) antes de `supabase db push`.

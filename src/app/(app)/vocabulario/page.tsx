@@ -12,6 +12,7 @@ import {
   getLexiconPage,
   LEXICON_PAGE_SIZE,
 } from '@/features/lexicon/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import type { TranslationKey } from '@/lib/i18n';
 import { getT } from '@/lib/i18n/server';
 
@@ -30,6 +31,7 @@ const STATUS_LABEL: Record<LexemeStatus, TranslationKey> = {
 const first = (value: string | string[] | undefined) => (Array.isArray(value) ? value[0] : value);
 
 export default async function VocabularyPage({ searchParams }: PageProps<'/vocabulario'>) {
+  await getSessionOrRedirect();
   const params = await searchParams;
   const t = await getT();
 

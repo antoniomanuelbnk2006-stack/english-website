@@ -7,6 +7,7 @@ import { Chip } from '@/components/ui/panel';
 import { toPercent } from '@/features/lessons/lib/summary';
 import { getLessonProgress } from '@/features/lessons/server/queries';
 import { UoeRunner } from '@/features/use-of-english/components/uoe-runner';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { findUoeSet } from '@/lib/content/uoe';
 import { toPublicSet, type UoePart } from '@/lib/content/uoe-schema';
 import type { TranslationKey } from '@/lib/i18n';
@@ -27,6 +28,7 @@ const PART_TITLE: Record<UoePart, TranslationKey> = {
 };
 
 export default async function UoeSetPage({ params }: PageProps<'/use-of-english/[id]'>) {
+  await getSessionOrRedirect();
   const { id } = await params;
   const set = findUoeSet(id);
   if (!set) notFound();

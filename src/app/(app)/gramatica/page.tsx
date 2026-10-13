@@ -15,6 +15,7 @@ import { fichaState, type FichaState } from '@/features/grammar/lib/practice';
 import { CEFR_LEVELS } from '@/features/level/lib/bands';
 import { getProgressByLesson } from '@/features/lessons/server/queries';
 import { getUserLevel } from '@/features/lexicon/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { getGrammarIndex } from '@/lib/content/grammar';
 import type { TranslationKey } from '@/lib/i18n';
 import { getT } from '@/lib/i18n/server';
@@ -32,6 +33,7 @@ const STATE: Record<FichaState, { icon: LucideIcon; label: TranslationKey; class
 };
 
 export default async function GrammarPage() {
+  await getSessionOrRedirect();
   const t = await getT();
   const fichas = getGrammarIndex();
 

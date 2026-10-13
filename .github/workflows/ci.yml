@@ -19,6 +19,9 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: pnpm }
       - run: pnpm install --frozen-lockfile
+      # Avisos de seguridad conocidos en lo que se despliega: uno alto o crítico para el CI. Las
+      # herramientas de desarrollo no llegan a producción; de esas se ocupa Dependabot.
+      - run: pnpm audit --prod --audit-level high
       - run: pnpm typecheck
       - run: pnpm lint
       - run: pnpm format:check

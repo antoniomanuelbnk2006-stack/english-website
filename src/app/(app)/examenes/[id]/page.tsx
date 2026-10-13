@@ -8,6 +8,7 @@ import { PaperRunner } from '@/features/exams/components/paper-runner';
 import { SpeakingRunner } from '@/features/exams/components/speaking-runner';
 import { toPercent } from '@/features/lessons/lib/summary';
 import { getLessonProgress } from '@/features/lessons/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { EXAM_FORMATS } from '@/lib/content/exam-formats';
 import { parsePaperId, toPublicPaper } from '@/lib/content/exam-schema';
 import { findExamPaper } from '@/lib/content/exams';
@@ -23,6 +24,7 @@ export async function generateMetadata({ params }: PageProps<'/examenes/[id]'>):
 }
 
 export default async function ExamPaperPage({ params }: PageProps<'/examenes/[id]'>) {
+  await getSessionOrRedirect();
   const { id } = await params;
   const paper = findExamPaper(id);
   if (!paper) notFound();

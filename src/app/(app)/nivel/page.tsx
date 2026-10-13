@@ -3,6 +3,7 @@ import { PageContainer, PageHeader } from '@/components/ui/page';
 import { LevelPicker } from '@/features/level/components/level-picker';
 import { CEFR_LEVELS, type CefrLevel } from '@/features/level/lib/bands';
 import { getProfile } from '@/features/profile/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { getGrammarIndex } from '@/lib/content/grammar';
 import { getLessonIndex } from '@/lib/content/index';
 import { getUoeIndex } from '@/lib/content/uoe';
@@ -17,6 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
  * decide qué se le enseña primero en cada sección y qué palabras se dan por conocidas.
  */
 export default async function LevelPage() {
+  await getSessionOrRedirect();
   const [t, profile] = await Promise.all([getT(), getProfile()]);
 
   const counts = Object.fromEntries(CEFR_LEVELS.map((level) => [level, 0])) as Record<

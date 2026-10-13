@@ -8,6 +8,7 @@ import { Chip } from '@/components/ui/panel';
 import { ResultReview } from '@/features/exams/components/result-review';
 import { gradeExamPaper } from '@/features/exams/lib/grade';
 import { getLastSitting } from '@/features/exams/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { APP_TIME_ZONE } from '@/lib/dates';
 import { EXAM_FORMATS } from '@/lib/content/exam-formats';
 import { parsePaperId } from '@/lib/content/exam-schema';
@@ -20,6 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function ExamResultPage({ params }: PageProps<'/examenes/[id]/resultado'>) {
+  await getSessionOrRedirect();
   const { id } = await params;
   const paper = findExamPaper(id);
   if (!paper) notFound();

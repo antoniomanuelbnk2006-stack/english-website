@@ -13,6 +13,7 @@ import {
 import { reviewText } from '@/features/writing/lib/checks';
 import { cardCandidates, toOffer } from '@/features/writing/server/cards';
 import { getSubmission } from '@/features/writing/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { getGrammarIndex } from '@/lib/content/grammar';
 import { findWritingPrompt } from '@/lib/content/writing';
 import { WritingTaskType } from '@/lib/content/writing-schema';
@@ -26,6 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function WritingSubmissionPage({
   params,
 }: PageProps<'/escribir/historial/[id]'>) {
+  await getSessionOrRedirect();
   const { id } = await params;
   if (!z.uuid().safeParse(id).success) notFound();
 

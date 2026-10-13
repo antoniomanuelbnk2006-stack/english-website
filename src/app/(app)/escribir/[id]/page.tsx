@@ -6,6 +6,7 @@ import { PageContainer } from '@/components/ui/page';
 import { Chip } from '@/components/ui/panel';
 import { WritingStudio } from '@/features/writing/components/writing-studio';
 import { getAiStatus, getSubmissionsByPrompt } from '@/features/writing/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { getGrammarIndex } from '@/lib/content/grammar';
 import { findWritingPrompt } from '@/lib/content/writing';
 import { toPublicPrompt } from '@/lib/content/writing-schema';
@@ -17,6 +18,7 @@ export async function generateMetadata({ params }: PageProps<'/escribir/[id]'>):
 }
 
 export default async function WritingPromptPage({ params }: PageProps<'/escribir/[id]'>) {
+  await getSessionOrRedirect();
   const { id } = await params;
   const prompt = findWritingPrompt(id);
   if (!prompt) notFound();

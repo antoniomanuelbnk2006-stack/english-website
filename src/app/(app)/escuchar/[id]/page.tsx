@@ -4,6 +4,7 @@ import { getLessonProgress } from '@/features/lessons/server/queries';
 import { ListeningLesson } from '@/features/listening/components/listening-lesson';
 import { toIntro } from '@/features/listening/lib/views';
 import { getProfile } from '@/features/profile/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { fichasOfLesson } from '@/lib/content/grammar';
 import { findLessonMeta, unitTitle } from '@/lib/content/index';
 import { loadListeningLesson } from '@/lib/content/loader';
@@ -15,6 +16,7 @@ export async function generateMetadata({ params }: PageProps<'/escuchar/[id]'>):
 }
 
 export default async function ListeningLessonPage({ params }: PageProps<'/escuchar/[id]'>) {
+  await getSessionOrRedirect();
   const { id } = await params;
   const lesson = await loadListeningLesson(id);
   if (!lesson) notFound();

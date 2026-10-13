@@ -16,6 +16,7 @@ import {
 } from '@/features/dictionary/lib/wiktionary';
 import { lookupWord } from '@/features/dictionary/server/lookup';
 import { getLexiconStatus } from '@/features/lexicon/server/queries';
+import { getSessionOrRedirect } from '@/lib/auth';
 import { findDictionaryEntry } from '@/lib/content/dictionary';
 import { lemmaKey, type DictionaryPos } from '@/lib/content/dictionary-schema';
 import { levelOfLemma } from '@/lib/content/levels';
@@ -158,6 +159,7 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
 }
 
 export default async function LookupPage({ searchParams }: PageProps<'/palabras/buscar'>) {
+  await getSessionOrRedirect();
   const [params, t] = await Promise.all([searchParams, getT()]);
   const raw = (first(params.q) ?? '').trim();
   const term = LookupTerm.safeParse(raw);
