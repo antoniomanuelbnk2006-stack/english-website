@@ -94,11 +94,119 @@ h1, h2, h3 { font-family: var(--font-display); font-stretch: 112%; font-weight: 
 .section-head { display: grid; gap: 16px; }
 .grid { display: grid; gap: 16px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 48px; text-align: left; }
 
-/* Portada: el titular a un lado y la foto al otro. */
-.hero { display: grid; gap: 48px; align-items: center; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
 .hero-copy { display: grid; gap: 24px; justify-items: start; }
-.hero-img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+
+/* ---------------------------------------------------------------------------------------------
+   Portada: acercamiento al portátil (pages/portada.md, «Hero»).
+   Por defecto (sin JavaScript, con movimiento reducido o si no cabe en la ventana) es una portada
+   quieta: el titular y, debajo, la escena; mide una pantalla o lo que haga falta, sin recortar.
+   Cuando cabe, app.js pone .is-ready: el contenedor se hace alto (.zoom-hero), el escenario se
+   queda clavado en una pantalla (.zoom-stage) con el titular encima y, al hacer scroll, la escena
+   (.zoom-scene) se acerca a la pantalla del portátil hasta que la copia de «Hoy» que lleva dentro
+   ocupa la ventana; entonces se cambia por .zoom-app.
+   --------------------------------------------------------------------------------------------- */
+.zoom-hero { --bar: 0px; --wall: linear-gradient(color-mix(in srgb, var(--canvas) 70%, black), var(--canvas) 70%); position: relative; margin-top: calc(-1 * var(--nav-height)); }
+/* En el móvil la barra del navegador tapa el final de 100vh: la mesa sube lo que mide la barra. */
+@supports (height: 1lvh) { .zoom-hero { --bar: calc(100lvh - 100svh); } }
+.zoom-hero.is-ready { height: 320vh; } /* más alto = acercamiento más lento */
+.zoom-stage { position: relative; display: flex; flex-direction: column; min-height: 100vh; overflow: hidden; background: var(--wall); }
+.is-ready .zoom-stage { position: sticky; top: 0; display: block; height: 100vh; min-height: 0; background: var(--canvas); }
+
+/* Escena: sala de estudio de noche, monocroma. Todo se mide con --lw (ancho del portátil), que
+   app.js encoge con --fit cuando el titular no le deja sitio. */
+.zoom-scene { --lw: calc(min(max(240px, 30vw), 44vh, 460px) * var(--fit, 1)); position: relative; flex: 1; min-height: calc(var(--lw) * 1.2 + 16px + var(--bar)); transform-origin: 0 0; }
+.is-ready .zoom-scene { position: absolute; inset: 0; min-height: 0; background: var(--wall); }
+.scene-floor { position: absolute; inset: auto 0 0; height: calc(var(--lw) * .1 + var(--bar)); background: color-mix(in srgb, var(--surface) 70%, var(--canvas)); }
+
+.scene-window { position: absolute; left: max(4vw, 50% - var(--lw) * 1.75); bottom: calc(var(--lw) * .62 + var(--bar)); width: calc(var(--lw) * .78); aspect-ratio: 3 / 4; overflow: hidden; border: calc(var(--lw) * .02) solid var(--surface-2); border-radius: 4px; background: linear-gradient(color-mix(in srgb, var(--canvas) 45%, black), color-mix(in srgb, var(--surface) 70%, var(--canvas))); }
+.scene-window::before, .scene-window::after { content: ''; position: absolute; z-index: 1; background: var(--surface-2); }
+.scene-window::before { inset: 0 auto 0 50%; width: calc(var(--lw) * .015); translate: -50% 0; }
+.scene-window::after { inset: 46% 0 auto; height: calc(var(--lw) * .015); }
+.scene-moon { position: absolute; top: 12%; right: 16%; width: 13%; aspect-ratio: 1; border-radius: 50%; background: color-mix(in srgb, var(--text) 85%, transparent); }
+.scene-city { position: absolute; inset: auto 0 0; height: 46%; background-color: var(--surface); background-image: radial-gradient(color-mix(in srgb, var(--muted) 40%, transparent) 1px, transparent 1.6px); background-size: 9px 11px; clip-path: polygon(0 40%, 14% 40%, 14% 18%, 27% 18%, 27% 52%, 38% 52%, 38% 6%, 52% 6%, 52% 34%, 63% 34%, 63% 24%, 78% 24%, 78% 46%, 88% 46%, 88% 12%, 100% 12%, 100% 100%, 0 100%); }
+
+.scene-desk { position: absolute; left: 50%; bottom: calc(var(--lw) * .06 + var(--bar)); width: calc(var(--lw) * 2.3); translate: -50% 0; }
+.desk-top { height: calc(var(--lw) * .045); border-radius: 4px; background: var(--surface-2); }
+.desk-legs { display: flex; justify-content: space-between; padding-inline: calc(var(--lw) * .12); }
+.desk-legs span { width: calc(var(--lw) * .035); height: calc(var(--lw) * .36); background: color-mix(in srgb, var(--surface-2) 75%, black); }
+
+.scene-books { position: absolute; bottom: 100%; left: 7%; display: grid; justify-items: start; }
+.scene-books span { height: calc(var(--lw) * .05); border-radius: 2px; background: var(--surface-2); }
+.scene-books span:nth-child(1) { width: calc(var(--lw) * .34); margin-left: calc(var(--lw) * .03); background: color-mix(in srgb, var(--border) 45%, var(--surface)); }
+.scene-books span:nth-child(2) { width: calc(var(--lw) * .4); }
+.scene-books span:nth-child(3) { width: calc(var(--lw) * .37); background: color-mix(in srgb, var(--border) 30%, var(--surface)); }
+.scene-mug { position: absolute; bottom: 100%; left: 27%; width: calc(var(--lw) * .07); height: calc(var(--lw) * .09); border-radius: 2px 2px 6px 6px; background: color-mix(in srgb, var(--border) 50%, var(--surface)); }
+.scene-mug::after { content: ''; position: absolute; top: 22%; right: -42%; width: 45%; height: 45%; border: calc(var(--lw) * .01) solid color-mix(in srgb, var(--border) 50%, var(--surface)); border-left: 0; border-radius: 0 50% 50% 0; }
+
+.scene-lamp { position: absolute; bottom: 100%; right: 8%; width: calc(var(--lw) * .3); height: calc(var(--lw) * .62); }
+.lamp-light { position: absolute; top: 18%; right: 40%; width: calc(var(--lw) * 1.6); aspect-ratio: 1; translate: 50% -50%; border-radius: 50%; background: radial-gradient(color-mix(in srgb, var(--text) 9%, transparent), transparent 62%); pointer-events: none; }
+.lamp-arm { position: absolute; inset: auto 0 0; height: 100%; background: linear-gradient(var(--surface-2), var(--surface-2)) 70% 100% / calc(var(--lw) * .02) 70% no-repeat, linear-gradient(var(--surface-2), var(--surface-2)) 50% 100% / 70% calc(var(--lw) * .025) no-repeat; }
+.lamp-arm::after { content: ''; position: absolute; top: 18%; left: 32%; width: calc(var(--lw) * .02); height: 24%; background: var(--surface-2); rotate: -38deg; transform-origin: bottom; }
+.lamp-head { position: absolute; top: 10%; left: 4%; width: calc(var(--lw) * .14); height: calc(var(--lw) * .07); border-radius: 50% 50% 4px 4px / 100% 100% 4px 4px; background: color-mix(in srgb, var(--border) 60%, var(--surface)); rotate: -18deg; }
+
+/* Portátil: tapa con bisel, pantalla y base. El brillo cobalto es un degradado, no una sombra. */
+.laptop { position: absolute; left: 50%; bottom: 100%; width: var(--lw); translate: -50% 0; }
+.laptop-glow { position: absolute; inset: -40% -35% 0; background: radial-gradient(color-mix(in srgb, var(--accent) 22%, transparent), transparent 62%); pointer-events: none; }
+.laptop-lid { position: relative; padding: calc(var(--lw) * .022) calc(var(--lw) * .022) calc(var(--lw) * .032); border: 1px solid color-mix(in srgb, var(--border) 45%, transparent); border-bottom: 0; border-radius: calc(var(--lw) * .03) calc(var(--lw) * .03) 4px 4px; background: color-mix(in srgb, var(--surface) 55%, black); }
+.laptop-screen { position: relative; aspect-ratio: 16 / 10; overflow: hidden; border-radius: 2px; background: var(--canvas); }
+.laptop-glare { position: absolute; inset: 0; background: linear-gradient(115deg, color-mix(in srgb, var(--text) 7%, transparent) 0 32%, transparent 32.5%); pointer-events: none; }
+.laptop-base { height: calc(var(--lw) * .028); margin-inline: calc(var(--lw) * -.07); border-radius: 0 0 calc(var(--lw) * .04) calc(var(--lw) * .04); background: linear-gradient(var(--muted), var(--border)); }
+
+@media (max-height: 720px) { .scene-window { display: none; } } /* no se mete detrás del titular */
+
+/* Copia de la pantalla «Hoy» dentro del portátil: tamaño de la ventana, encogida por app.js. */
+.zoom-mini { position: absolute; left: 50%; top: 50%; width: 100vw; height: 100vh; translate: -50% -50%; transform-origin: center; pointer-events: none; }
+
+/* El titular: encima de la escena con el acercamiento; si no, en su sitio, antes que ella. */
+.zoom-copy { order: -1; position: relative; z-index: 5; justify-items: center; padding: calc(var(--nav-height) + 6vh) var(--gutter) 0; text-align: center; }
+.is-ready .zoom-copy { position: absolute; inset: 0 0 auto; }
+.zoom-copy .lead { margin-inline: auto; }
+.zoom-copy .cta { justify-content: center; }
+.zoom-hint { position: absolute; bottom: calc(3vh + var(--bar)); left: 50%; z-index: 5; translate: -50% 0; color: var(--muted); font-size: 0.75rem; line-height: 1.33; letter-spacing: .08em; text-transform: uppercase; }
+.zoom-hero:not(.is-ready) .zoom-hint { display: none; }
+
+/* La app a pantalla completa: aparece cuando la copia del portátil ya ocupa la ventana. */
+.zoom-app { position: absolute; inset: 0; z-index: 6; opacity: 0; visibility: hidden; }
+.zoom-app.is-on { visibility: visible; }
+
+/* --- La pantalla «Hoy» (se usa dos veces: dentro del portátil y a tamaño real) --- */
+.rep { display: flex; flex-direction: column; width: 100%; height: 100%; overflow: hidden; background: var(--canvas); color: var(--text); text-align: left; }
+.rep-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: var(--nav-height); padding-inline: 32px; }
+.rep-nav img { width: auto; height: 28px; filter: brightness(0) invert(1); }
+.rep-links { display: flex; gap: 4px; color: var(--muted); font-size: 0.875rem; }
+.rep-links span { padding: 10px 16px; border-radius: 40px; }
+.rep-links .is-on { background: var(--surface-2); color: var(--accent-text); font-weight: 420; }
+.rep-level { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 0.875rem; }
+.rep-bars { display: flex; align-items: end; gap: 2px; height: 14px; }
+.rep-bars i { width: 3px; border-radius: 1px; background: var(--surface-2); }
+.rep-bars i:nth-child(1) { height: 30%; background: var(--accent); }
+.rep-bars i:nth-child(2) { height: 45%; background: var(--accent); }
+.rep-bars i:nth-child(3) { height: 60%; background: var(--accent); }
+.rep-bars i:nth-child(4) { height: 80%; }
+.rep-bars i:nth-child(5) { height: 100%; }
+.rep-body { display: grid; gap: 24px; align-content: start; width: 100%; max-width: calc(1200px + 2 * var(--gutter)); margin-inline: auto; padding: 32px var(--gutter); }
+.rep-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.rep-title { font: 480 2rem/1.15 var(--font-display); font-stretch: 112%; }
+.rep-date { margin-top: 6px; color: var(--muted); }
+.rep-pill { padding: 10px 20px; border: 1px solid var(--border-soft); border-radius: 32px; font-size: 0.875rem; white-space: nowrap; }
+.rep-card { padding: 32px; border-radius: 12px; background: var(--surface); }
+.rep-goal { display: flex; align-items: center; gap: 24px; }
+.rep-ring { width: 96px; flex: none; rotate: -90deg; }
+.rep-ring circle { fill: none; stroke: var(--surface-2); stroke-width: 7; }
+.rep-ring .rep-ring-fill { stroke: var(--accent); stroke-linecap: round; stroke-dasharray: 100; stroke-dashoffset: 56; }
+.rep-ring text { rotate: 90deg; transform-origin: 50px 50px; fill: var(--text); font: 400 22px var(--font-sans); text-anchor: middle; }
+.rep-sub { font: 480 1.3125rem/1.35 var(--font-display); font-stretch: 112%; }
+.rep-big { margin-top: 4px; font-size: 1.75rem; line-height: 1.2; }
+.rep-note { margin: 8px 0 24px; color: var(--muted); font-size: 0.875rem; }
+.rep-plan { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.rep-item { display: flex; align-items: center; gap: 16px; padding: 18px 16px; border-radius: 12px; background: var(--surface-2); }
+.rep-item svg { width: 20px; height: 20px; flex: none; fill: none; stroke: var(--text); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.rep-item b { display: block; font-weight: 420; }
+.rep-item span { color: var(--muted); font-size: 0.875rem; }
+/* Al cambiar a la app real, el anillo se rellena: así se nota que ya no es la del portátil. */
+.zoom-app.is-live .rep-ring-fill { animation: rep-ring 900ms cubic-bezier(.2, .8, .2, 1); }
+@keyframes rep-ring { from { stroke-dashoffset: 100; } }
 
 /* Tarjeta: la superficie de contenido. La elevación es el salto de fondo, sin borde ni sombra. */
 .card { display: flex; flex-direction: column; gap: 12px; padding: 24px; border-radius: 12px; background: var(--surface); }
@@ -111,6 +219,8 @@ h1, h2, h3 { font-family: var(--font-display); font-stretch: 112%; font-weight: 
 
 .panel { padding: 24px; border-radius: 12px; background: var(--surface); }
 .split { display: grid; gap: 48px; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); align-items: start; }
+.split-lead { display: grid; gap: 32px; }
+.split-lead img { width: 100%; aspect-ratio: 4 / 3; border-radius: 12px; object-fit: cover; }
 .paras { display: grid; gap: 24px; color: var(--muted); }
 .cta-strip { display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: center; justify-content: space-between; }
 .cta-strip h2 { max-width: 28ch; }
@@ -163,9 +273,9 @@ fieldset { min-width: 0; padding: 0; border: 0; }
   .is-open .links { opacity: 1; pointer-events: auto; }
   .links a { font-size: 1.125rem; }
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .hero, .split, .method, .foot .wrap { grid-template-columns: 1fr; }
-  .hero { gap: 32px; }
+  .split, .method, .foot .wrap { grid-template-columns: 1fr; }
   .split, .method { gap: 32px; }
+  .rep-links { display: none; }
   .method img { order: -1; aspect-ratio: 16 / 11; }
   .foot .about { justify-items: center; margin-inline: auto; }
   .foot .wrap, .foot ul { text-align: center; }
@@ -173,6 +283,27 @@ fieldset { min-width: 0; padding: 0; border: 0; }
 @media (max-width: 640px) {
   .grid, .row { grid-template-columns: 1fr; }
   .cta .btn { width: 100%; }
+  .rep-plan { grid-template-columns: 1fr; }
+  .rep-card { padding: 24px; }
+  .rep-nav { padding-inline: var(--gutter); }
+  .zoom-copy { padding-top: calc(var(--nav-height) + 3vh); }
+}
+/* En vertical (móvil, tablet de pie) un portátil recortaría la app: la escena se acerca a un
+   móvil o tablet sobre la mesa. app.js le da a su pantalla la forma de la ventana. */
+@media (orientation: portrait) {
+  .zoom-scene { --lw: calc(clamp(140px, 22vh, 240px) * var(--fit, 1)); min-height: calc(var(--lw) * 1.25 + 16px + var(--bar)); }
+  .scene-window { display: none; }
+  .scene-desk { width: min(calc(var(--lw) * 1.8), 100vw - 2 * var(--gutter)); }
+  /* Patas con un mínimo: el aviso de «desliza» cabe entre ellas aunque el aparato sea pequeño. */
+  .desk-legs span { height: max(calc(var(--lw) * .22), 3vh + 24px); }
+  .laptop { width: calc(var(--lw) * .44); }
+  .laptop-lid { padding: calc(var(--lw) * .02); border-bottom: 1px solid color-mix(in srgb, var(--border) 45%, transparent); border-radius: calc(var(--lw) * .06); }
+  .laptop-screen { aspect-ratio: 9 / 19.5; border-radius: calc(var(--lw) * .045); }
+  .laptop-base { display: none; }
+}
+/* En una tablet de pie el aparato puede ser más grande: hay sitio de sobra bajo el titular. */
+@media (orientation: portrait) and (min-width: 641px) {
+  .zoom-scene { --lw: calc(clamp(200px, 34vh, 420px) * var(--fit, 1)); }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }

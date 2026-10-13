@@ -29,16 +29,81 @@
 </header>
 
 <main id="contenido">
-  <section class="section hero">
-    <div class="hero-copy">
-      <h1 class="display">Domina el Inglés con Señal</h1>
-      <p class="lead">Plan de estudios personalizado para autoestudio desde A1 hasta C2. Lecciones de audio, textos interactivos y herramientas gramaticales diseñadas para tu éxito.</p>
-      <div class="cta">
-        <a class="btn btn-primary btn-lg" href="/landing/contacto.html">Regístrate Ahora</a>
-        <a class="btn btn-ghost btn-lg" href="/landing/nosotros.html">Saber Más</a>
+  <!-- Portada con acercamiento al portátil (design-system/senal/pages/portada.md, «Hero»).
+       Al hacer scroll la escena se acerca a la pantalla del portátil hasta que la pantalla ocupa
+       la ventana y se cambia por la pantalla «Hoy» de la app. Lo mueve /landing/app.js. -->
+  <section class="zoom-hero" aria-labelledby="titulo-portada">
+    <div class="zoom-stage">
+
+      <!-- Escena: sala de estudio de noche (solo decoración) -->
+      <div class="zoom-scene" aria-hidden="true">
+        <div class="scene-window">
+          <span class="scene-moon"></span>
+          <span class="scene-city"></span>
+        </div>
+        <div class="scene-floor"></div>
+        <div class="scene-desk">
+          <div class="scene-lamp"><span class="lamp-light"></span><span class="lamp-arm"></span><span class="lamp-head"></span></div>
+          <div class="scene-books"><span></span><span></span><span></span></div>
+          <div class="scene-mug"></div>
+          <div class="laptop">
+            <span class="laptop-glow"></span>
+            <div class="laptop-lid">
+              <div class="laptop-screen">
+                <div class="zoom-mini"><!-- app.js pone aquí una copia de la pantalla «Hoy» --></div>
+                <span class="laptop-glare"></span>
+              </div>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+          <div class="desk-top"></div>
+          <div class="desk-legs"><span></span><span></span></div>
+        </div>
       </div>
+
+      <div class="zoom-copy hero-copy">
+        <h1 class="display" id="titulo-portada">Domina el Inglés con Señal</h1>
+        <p class="lead">Plan de estudios personalizado para autoestudio desde A1 hasta C2. Lecciones de audio, textos interactivos y herramientas gramaticales diseñadas para tu éxito.</p>
+        <div class="cta">
+          <a class="btn btn-primary btn-lg" href="/landing/contacto.html">Regístrate Ahora</a>
+          <a class="btn btn-ghost btn-lg" href="/landing/nosotros.html">Saber Más</a>
+        </div>
+      </div>
+      <p class="zoom-hint" aria-hidden="true">Desliza para entrar</p>
+
+      <!-- La pantalla «Hoy» a tamaño real. Es una imagen de la app hecha con HTML: no se usa. -->
+      <div class="zoom-app" aria-hidden="true" inert></div>
+
+      <template id="pantalla-hoy">
+        <div class="rep">
+          <div class="rep-nav">
+            <img src="/landing/logo.png" alt="" width="114" height="35">
+            <div class="rep-links"><span class="is-on">Hoy</span><span>Escuchar</span><span>Leer</span><span>Repasar</span><span>Más</span></div>
+            <div class="rep-level"><span class="rep-bars"><i></i><i></i><i></i><i></i><i></i></span>B1</div>
+          </div>
+          <div class="rep-body">
+            <div class="rep-head">
+              <div><p class="rep-title">Hoy</p><p class="rep-date">martes, 14 de octubre</p></div>
+              <span class="rep-pill">Tu nivel: B1</span>
+            </div>
+            <div class="rep-card rep-goal">
+              <svg class="rep-ring" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44"/><circle class="rep-ring-fill" cx="50" cy="50" r="44" pathLength="100"/><text x="50" y="57">20</text></svg>
+              <div><p class="rep-sub">Objetivo 45 min</p><p class="rep-big">20 de 45 min</p></div>
+            </div>
+            <div class="rep-card">
+              <p class="rep-sub">Plan de hoy</p>
+              <p class="rep-note">Lo que toca hoy, en el orden en que conviene hacerlo.</p>
+              <div class="rep-plan">
+                <div class="rep-item"><svg viewBox="0 0 24 24"><path d="M3 14v-2a9 9 0 0 1 18 0v2M3 14h3v6H3zM18 14h3v6h-3z"/></svg><div><b>Escucha intensiva</b><span>Ciclo completo con dictado diagnóstico</span></div></div>
+                <div class="rep-item"><svg viewBox="0 0 24 24"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg><div><b>Lectura</b><span>Texto con preguntas y velocidad lectora</span></div></div>
+                <div class="rep-item"><svg viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5zM2 13l10 5 10-5"/></svg><div><b>Repaso</b><span>12 tarjetas pendientes</span></div></div>
+                <div class="rep-item"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5zM6 12v5c3 2 9 2 12 0v-5"/></svg><div><b>Use of English</b><span>Práctica en formato de examen</span></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
     </div>
-    <img class="hero-img" src="https://static.wixstatic.com/media/1c2b0f_6f12e3241bf84371b9f789c57824a7b9~mv2.jpg/v1/fill/w_1600,h_1200,al_c,q_85/escritorio.jpg" alt="" width="1600" height="1200" fetchpriority="high">
   </section>
 
   <section id="niveles" class="section center">
@@ -88,7 +153,10 @@
 
   <section class="section">
     <div class="panel split">
-      <h2 class="heading-lg">Flexibilidad y Éxito</h2>
+      <div class="split-lead">
+        <h2 class="heading-lg">Flexibilidad y Éxito</h2>
+        <img src="https://static.wixstatic.com/media/1c2b0f_6f12e3241bf84371b9f789c57824a7b9~mv2.jpg/v1/fill/w_1600,h_1200,al_c,q_85/escritorio.jpg" alt="" width="1600" height="1200" loading="lazy">
+      </div>
       <div class="paras">
         <p>Plan de estudios personalizado que adapta tu ritmo de aprendizaje desde A1 hasta C2, garantizando un progreso constante y realista.</p>
         <p>Acceso total a lecciones de audio y textos con preguntas interactivas, para practicar la escucha y la comprensión lectora en cualquier momento.</p>
