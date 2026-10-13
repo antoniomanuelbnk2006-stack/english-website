@@ -31,7 +31,7 @@
     "content:publish": "tsx --env-file-if-exists=.env.pipeline scripts/content/publish.ts"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.132.0",
+    "@anthropic-ai/sdk": "^0.133.0",
     "@date-fns/tz": "^1.5.0",
     "@mdx-js/mdx": "^3.1.1",
     "@supabase/ssr": "^0.12.7",
@@ -39,7 +39,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.4.0",
-    "lucide-react": "^1.52.0",
+    "lucide-react": "^1.55.0",
     "next": "16.4.0",
     "radix-ui": "^1.7.0",
     "react": "19.3.0",
