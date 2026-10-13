@@ -13,6 +13,38 @@
 3. Si una petición contradice `docs/`, **pregunta** antes de seguir. Si cambias una decisión, crea un ADR en `docs/adr/`.
 4. Propón un plan corto antes de cambios grandes y trabaja en pasos pequeños con tests en verde.
 
+## Diseño: cómo trabajan juntos MASTER.md y UI UX Pro Max
+
+Hay **una sola fuente de verdad visual**: `design-system/senal/MASTER.md`, implementada en `src/styles/globals.css`.
+UI UX Pro Max se usa como **consultor de UX**, nunca como generador de estilo.
+
+### Antes de crear o cambiar cualquier pantalla
+1. Lee `design-system/senal/MASTER.md`.
+2. Si existe `design-system/senal/pages/<pantalla>.md`, léelo: sus reglas mandan sobre MASTER.
+3. Si la pantalla toca algo de UX que MASTER no cubre (tablas, modales, drag & drop, gráficos…), consulta la skill (si está instalada en `.claude/skills/ui-ux-pro-max/`):
+   ```bash
+   python3 .claude/skills/ui-ux-pro-max/scripts/search.py "<tema>" --domain ux
+   python3 .claude/skills/ui-ux-pro-max/scripts/search.py "<tema>" --stack nextjs
+   python3 .claude/skills/ui-ux-pro-max/scripts/search.py "<gráfico>" --domain chart
+   ```
+   Aplica la regla con los tokens de Señal. Si es una regla general útil, añádela a la sección 7 de MASTER.md.
+4. Construye con las clases y tokens de `src/styles/globals.css`. Ningún hex suelto en componentes.
+5. Pasa el checklist de la sección 9 de MASTER.md antes de dar la pantalla por terminada.
+
+### Prohibido con UI UX Pro Max
+- **No** ejecutes `--design-system` ni `--persist`: proponen otro estilo (claymorphism, Baloo, Comic Neue…) y sobrescribirían MASTER.md.
+- **No** uses las búsquedas `--domain style`, `color` o `typography` para decidir el aspecto. El aspecto ya está decidido.
+- Si una recomendación de la skill choca con MASTER.md, gana MASTER.md.
+
+### Pantalla nueva sin override
+Si una pantalla necesita reglas propias, crea `design-system/senal/pages/<pantalla>.md` con **solo** lo que se aparta de MASTER (ver los existentes como ejemplo).
+
+### En este repo
+- Fuentes vía `next/font` (ya en `src/app/layout.tsx`). Iconos: `lucide-react`, 20 px, `aria-hidden` si son decorativos.
+- Anchos y ritmo: `PageContainer` (`page` = 1.200 px, `exercise` = columna de 680 px) y `PageSections` (72 px entre secciones), en `src/components/ui/page.tsx`.
+- La portada (`public/landing`) es HTML estático: repite los tokens en `public/landing/styles.css` y sirve las fuentes desde `/landing/fonts`. Si cambias un token en `globals.css`, cámbialo también allí (`src/styles/contrast.test.ts` falla si no coinciden).
+- Los temas claro y «papel» son paletas derivadas (`design-system/senal/pages/ajustes.md`): cualquier token nuevo tiene que existir en todos los temas.
+
 ## Stack
 
 Next.js 16 (App Router, Turbopack, `proxy.ts`) · React 19.2 · TypeScript estricto · Tailwind CSS v4 + shadcn/ui · Zod v4 · Supabase (Postgres + Auth OTP + RLS, claves publishable/secret, `@supabase/ssr`) · Cloudflare R2 (audio) · Azure AI Speech (TTS, solo en el pipeline) · ts-fsrs (FSRS-6) · Claude API (`claude-sonnet-5-5`, `claude-opus-5-5`, `claude-haiku-5-5`) · Zustand (solo reproductor) · Vitest + Testing Library + Playwright + axe · Vercel Hobby.
@@ -73,7 +105,8 @@ Next.js 16 (App Router, Turbopack, `proxy.ts`) · React 19.2 · TypeScript estri
 | Método de listening (ciclo, dictado, causas) | `docs/01-pedagogia/03-listening.md` |
 | Reading, vocabulario/SRS, gramática, evaluación | `docs/01-pedagogia/` |
 | Qué contenido va en cada nivel | `docs/02-curriculo/{A1..C2}.md` |
-| Pantallas, plan diario, gamificación, diseño | `docs/03-producto/` |
+| Diseño visual (fuente de verdad) y lo propio de cada pantalla | `design-system/senal/MASTER.md`, `design-system/senal/pages/` |
+| Pantallas, plan diario, gamificación, cómo se aplica el diseño | `docs/03-producto/` |
 | Stack, carpetas, BD, contenido, audio, IA, seguridad, PWA | `docs/04-arquitectura/` |
 | Pipeline, QA, licencias, prompts, ejemplos | `docs/05-contenido/` |
 | Roadmap, convenciones, testing, despliegue, prompts por fase | `docs/06-desarrollo/` |

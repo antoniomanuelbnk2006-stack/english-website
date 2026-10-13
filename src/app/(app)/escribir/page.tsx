@@ -50,10 +50,10 @@ export default async function WritingPage({ searchParams }: PageProps<'/escribir
         href={{ pathname: '/escribir', query }}
         aria-current={active ? 'true' : undefined}
         className={cn(
-          'flex h-8 items-center rounded-full border px-3 text-sm transition-colors duration-150 pointer-coarse:h-11',
+          'flex h-8 items-center rounded-full border px-3 text-body-sm transition-colors duration-150 pointer-coarse:h-11',
           active
-            ? 'border-accent bg-surface-2 font-medium text-accent'
-            : 'border-border text-muted hover:border-subtle hover:text-text',
+            ? 'border-accent bg-surface-2 font-medium text-accent-text'
+            : 'border-transparent bg-surface-2 text-muted hover:border-border hover:text-text',
         )}
       >
         {text}
@@ -80,7 +80,7 @@ export default async function WritingPage({ searchParams }: PageProps<'/escribir
         </EmptyState>
       ) : (
         <>
-          <p className="hud flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted">
+          <p className="tabular-nums flex flex-wrap gap-x-4 gap-y-1 text-body-sm text-muted">
             <span>{t('writing.weekGoal', { done: thisWeek, target: WEEKLY_TARGET })}</span>
             <span>
               {ai.enabled
@@ -89,11 +89,8 @@ export default async function WritingPage({ searchParams }: PageProps<'/escribir
             </span>
           </p>
 
-          <nav
-            aria-label={t('library.filtersLabel')}
-            className="flex flex-wrap items-center gap-2 rounded-panel border border-border bg-surface p-3"
-          >
-            <span className="w-14 shrink-0 text-xs text-muted">{t('library.level')}</span>
+          <nav aria-label={t('library.filtersLabel')} className="flex flex-wrap items-center gap-2">
+            <span className="w-14 shrink-0 text-caption text-muted">{t('library.level')}</span>
             <ul className="flex flex-wrap gap-1.5">
               {chip('all', t('library.all'), level === null, { nivel: ALL })}
               {levels.map((l) => chip(l, l, level === l, l === userLevel ? {} : { nivel: l }))}
@@ -116,7 +113,7 @@ export default async function WritingPage({ searchParams }: PageProps<'/escribir
               {t('library.noLevelBody')}
             </EmptyState>
           ) : (
-            <ul className="grid gap-3 sm:grid-cols-2">
+            <ul className="grid gap-4 sm:grid-cols-2">
               {visible.map((prompt) => {
                 const own = byPrompt.get(prompt.id);
                 const Icon: LucideIcon = own ? CircleCheck : Circle;
@@ -124,15 +121,15 @@ export default async function WritingPage({ searchParams }: PageProps<'/escribir
                   <li key={prompt.id}>
                     <Link
                       href={`/escribir/${prompt.id}` as Route}
-                      className="flex h-full flex-col gap-3 rounded-panel border border-border bg-surface p-4 transition-colors duration-150 hover:border-accent"
+                      className="card flex h-full flex-col gap-3 border border-transparent transition-colors duration-150 hover:border-border"
                     >
                       <div className="flex items-start justify-between gap-3">
-                        <h2 lang="en" className="text-lg leading-snug font-medium">
+                        <h2 lang="en" className="text-body-lg leading-snug font-medium">
                           {prompt.title}
                         </h2>
                         <span
                           className={cn(
-                            'flex shrink-0 items-center gap-1.5 text-xs',
+                            'flex shrink-0 items-center gap-1.5 text-caption',
                             own ? 'text-success' : 'text-muted',
                           )}
                         >
@@ -144,14 +141,16 @@ export default async function WritingPage({ searchParams }: PageProps<'/escribir
                             : t('lesson.statusNew')}
                         </span>
                       </div>
-                      <p className="text-sm text-muted">{prompt.context_es}</p>
+                      <p className="text-body-sm text-muted">{prompt.context_es}</p>
                       <div className="mt-auto flex flex-wrap items-center gap-1.5">
-                        <Chip className="hud">{prompt.level}</Chip>
+                        <Chip className="tabular-nums">{prompt.level}</Chip>
                         <Chip>{t(`writing.types.${prompt.task_type}`)}</Chip>
-                        <Chip className="hud">
+                        <Chip className="tabular-nums">
                           {t('writing.words', { min: prompt.words_min, max: prompt.words_max })}
                         </Chip>
-                        <Chip className="hud">{t('lesson.minutes', { n: prompt.time_min })}</Chip>
+                        <Chip className="tabular-nums">
+                          {t('lesson.minutes', { n: prompt.time_min })}
+                        </Chip>
                       </div>
                     </Link>
                   </li>
@@ -160,7 +159,7 @@ export default async function WritingPage({ searchParams }: PageProps<'/escribir
             </ul>
           )}
 
-          <p className="text-xs text-muted">{t('writing.disclaimer')}</p>
+          <p className="text-caption text-muted">{t('writing.disclaimer')}</p>
         </>
       )}
     </PageContainer>

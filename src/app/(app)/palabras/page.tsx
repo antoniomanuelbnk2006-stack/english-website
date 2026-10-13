@@ -40,10 +40,10 @@ const STATE_LABEL: Record<StateFilter, TranslationKey> = {
 
 const chipClass = (active: boolean) =>
   cn(
-    'flex h-8 items-center rounded-full border px-3 text-sm transition-colors duration-150 pointer-coarse:h-11',
+    'flex h-8 items-center rounded-full border px-3 text-body-sm transition-colors duration-150 pointer-coarse:h-11',
     active
-      ? 'border-accent bg-surface-2 font-medium text-accent'
-      : 'border-border text-muted hover:border-subtle hover:text-text',
+      ? 'border-accent bg-surface-2 font-medium text-accent-text'
+      : 'border-transparent bg-surface-2 text-muted hover:border-border hover:text-text',
   );
 
 export default async function WordsPage({ searchParams }: PageProps<'/palabras'>) {
@@ -85,11 +85,8 @@ export default async function WordsPage({ searchParams }: PageProps<'/palabras'>
         }
       />
 
-      <nav
-        aria-label={t('library.filtersLabel')}
-        className="flex flex-wrap items-center gap-2 rounded-panel border border-border bg-surface p-3"
-      >
-        <span className="w-14 shrink-0 text-xs text-muted">{t('library.level')}</span>
+      <nav aria-label={t('library.filtersLabel')} className="flex flex-wrap items-center gap-2">
+        <span className="w-14 shrink-0 text-caption text-muted">{t('library.level')}</span>
         <ul className="flex flex-wrap gap-1.5">
           {CEFR_LEVELS.map((level) => (
             <li key={level}>
@@ -99,7 +96,7 @@ export default async function WordsPage({ searchParams }: PageProps<'/palabras'>
                 className={chipClass(level === params.level)}
               >
                 {level}
-                <span className="hud ml-1.5 text-xs opacity-70">{sizes[level]}</span>
+                <span className="tabular-nums ml-1.5 text-caption opacity-70">{sizes[level]}</span>
               </Link>
             </li>
           ))}
@@ -121,19 +118,19 @@ export default async function WordsPage({ searchParams }: PageProps<'/palabras'>
                 total: summary.total,
                 level: params.level,
               })}
-              className="flex h-2 overflow-hidden rounded-full bg-border"
+              className="flex h-2 overflow-hidden rounded-full bg-surface-2"
             >
               <span className="bg-success" style={{ width: `${share(summary.known)}%` }} />
               <span className="bg-accent" style={{ width: `${share(summary.learning)}%` }} />
             </div>
-            <dl className="hud flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted">
+            <dl className="tabular-nums flex flex-wrap gap-x-5 gap-y-1 text-body-sm text-muted">
               <div className="flex gap-1.5">
                 <dt>{t('dictionary.stateKnown')}</dt>
                 <dd className="text-success">{summary.known}</dd>
               </div>
               <div className="flex gap-1.5">
                 <dt>{t('dictionary.stateLearning')}</dt>
-                <dd className="text-accent">{summary.learning}</dd>
+                <dd className="text-accent-text">{summary.learning}</dd>
               </div>
               <div className="flex gap-1.5">
                 <dt>{t('dictionary.stateTodo')}</dt>
@@ -176,7 +173,7 @@ export default async function WordsPage({ searchParams }: PageProps<'/palabras'>
                 ? { pathname: '/palabras/buscar', query: { q: params.query } }
                 : '/palabras/buscar'
             }
-            className="-mt-3 self-start rounded-control text-sm text-accent hover:underline"
+            className="-mt-3 self-start rounded-structure text-body-sm text-accent-text hover:underline"
           >
             {params.query
               ? t('dictionary.lookupFor', { word: params.query })
@@ -232,7 +229,7 @@ export default async function WordsPage({ searchParams }: PageProps<'/palabras'>
                 aria-label={t('vocabulary.pagination')}
                 className="flex flex-wrap items-center justify-between gap-3"
               >
-                <span className="hud text-sm text-muted">
+                <span className="tabular-nums text-body-sm text-muted">
                   {t('vocabulary.pageOf', {
                     page: result.page,
                     pages: result.pages,
@@ -263,7 +260,7 @@ export default async function WordsPage({ searchParams }: PageProps<'/palabras'>
         </>
       )}
 
-      <p className="text-xs text-muted">{t('dictionary.attribution')}</p>
+      <p className="text-caption text-muted">{t('dictionary.attribution')}</p>
     </PageContainer>
   );
 }

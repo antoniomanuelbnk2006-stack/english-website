@@ -25,10 +25,11 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0019](0019-audio-en-supabase-storage.md) | El audio, en el Storage del proyecto de Supabase (R2 sigue soportado) | Aceptada |
 | [0020](0020-codigo-fijo-de-acceso.md) | Código fijo de acceso opcional (la contraseña de Supabase, derivada con un secreto del servidor) | Aceptada |
 | [0021](0021-una-sola-direccion-y-codigo-fijo-primero.md) | Una sola dirección para la web (`SITE_URL`) y, con código fijo, el código por delante del correo | Aceptada |
-| [0022](0022-diseno-de-la-presentacion-en-toda-la-web.md) | La presentación de Señal como portada pública y su lenguaje visual (pastillas, esquinas grandes, entradas animadas) en toda la app | Aceptada |
-| [0023](0023-paleta-y-tipografia-de-la-presentacion.md) | Paleta (crema, azul marino, verde) y tipografía (Fraunces, Wix Madefor Text) de la presentación en toda la web | Aceptada |
+| [0022](0022-diseno-de-la-presentacion-en-toda-la-web.md) | La presentación de Señal como portada pública y su lenguaje visual (pastillas, esquinas grandes, entradas animadas) en toda la app | Aceptada (el lenguaje visual, sustituido por ADR-0027) |
+| [0023](0023-paleta-y-tipografia-de-la-presentacion.md) | Paleta (crema, azul marino, verde) y tipografía (Fraunces, Wix Madefor Text) de la presentación en toda la web | Sustituida por ADR-0027 |
 | [0024](0024-bloqueo-de-acceso-y-registro-de-la-ia.md) | Bloqueo por intentos de acceso y registro del uso de la IA en tablas que la sesión solo puede leer | Aceptada |
 | [0025](0025-politicas-rls-por-operacion.md) | Políticas RLS por operación, y solo las que cada tabla necesita | Aceptada |
+| [0027](0027-sistema-de-diseno-master.md) | Sistema de diseño «MASTER» en toda la web: oscuro, monocromo, un único acento cobalto, Inter y Archivo | Aceptada |
 
 Plantilla:
 

@@ -36,35 +36,35 @@ export default async function ExamPaperPage({ params }: PageProps<'/examenes/[id
   const back = { pathname: '/examenes', query: { nivel: paper.level } } as const;
 
   return (
-    <PageContainer className="max-w-6xl">
+    <PageContainer>
       <header className="flex flex-col gap-3">
         <Link
           href={back}
-          className="flex items-center gap-1.5 self-start rounded-control text-sm text-muted hover:text-text"
+          className="flex items-center gap-1.5 self-start rounded-structure text-body-sm text-muted hover:text-text"
         >
           <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
           {t('exams.backToIndex')}
         </Link>
-        <h1 lang="en" className="text-2xl font-semibold tracking-tight sm:text-3xl">
+        <h1 lang="en" className="text-heading-sm sm:text-heading">
           {format.exam} · {own.title}
         </h1>
         <div className="flex flex-wrap items-center gap-1.5">
-          <Chip className="hud">{paper.level}</Chip>
-          <Chip className="hud">{t('exams.test', { n: test })}</Chip>
-          <Chip className="hud">
+          <Chip className="tabular-nums">{paper.level}</Chip>
+          <Chip className="tabular-nums">{t('exams.test', { n: test })}</Chip>
+          <Chip className="tabular-nums">
             {t(paper.paper === 'listening' ? 'exams.aboutMinutes' : 'lesson.minutes', {
               n: own.minutes,
             })}
           </Chip>
           {progress?.bestScore != null ? (
-            <Chip className="hud">
+            <Chip className="tabular-nums">
               {t('lesson.bestScore', { pct: toPercent(progress.bestScore) })}
             </Chip>
           ) : null}
           {progress?.status === 'completed' && paper.paper !== 'speaking' ? (
             <Link
               href={`/examenes/${paper.id}/resultado` as Route}
-              className="rounded-control text-sm text-accent hover:underline"
+              className="rounded-structure text-body-sm text-accent-text hover:underline"
             >
               {t('exams.seeResult')}
             </Link>

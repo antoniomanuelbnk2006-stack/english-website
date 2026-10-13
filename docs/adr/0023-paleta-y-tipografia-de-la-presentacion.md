@@ -1,6 +1,6 @@
 # ADR-0023 · Paleta y tipografía de la presentación en toda la web
 
-- **Estado:** Aceptada (sustituye la paleta cian y la tipografía Geist del sistema de diseño original)
+- **Estado:** Sustituida por [ADR-0027](0027-sistema-de-diseno-master.md) (en su día sustituyó la paleta cian y la tipografía Geist del sistema de diseño original)
 - **Fecha:** 2026-10-11
 
 ## Contexto

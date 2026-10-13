@@ -27,7 +27,7 @@ export default async function StudyWordsPage({ searchParams }: PageProps<'/palab
   const batch = pickStudyBatch(getDictionary(level), statuses);
 
   return (
-    <PageContainer className="max-w-2xl">
+    <PageContainer width="exercise">
       <PageHeader
         title={t('dictionary.studyTitle')}
         subtitle={t('dictionary.studySubtitle', { level })}

@@ -1,50 +1,32 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-/** Panel tipo HUD: la elevación se marca con borde y luminosidad, no con sombra. */
+/** Tarjeta: la superficie de contenido de MASTER (`.card`). La elevación es el salto de fondo. */
 export function Panel({ className, ...props }: ComponentProps<'section'>) {
-  return (
-    <section
-      className={cn(
-        'entrance-arc rounded-panel border border-border-strong bg-surface p-4 sm:p-5',
-        className,
-      )}
-      {...props}
-    />
-  );
+  return <section className={cn('card', className)} {...props} />;
 }
 
+/** Título de una tarjeta o de una sección: el subtítulo de MASTER (21 px, Archivo). */
 export function PanelTitle({ className, ...props }: ComponentProps<'h2'>) {
+  return <h2 className={cn('text-subheading', className)} {...props} />;
+}
+
+/**
+ * Rótulo de un bloque dentro de una tarjeta que ya tiene título (o que agrupa varios bloques):
+ * sigue siendo un encabezado, pero con el tamaño de una etiqueta.
+ */
+export function PanelLabel({ className, ...props }: ComponentProps<'h2'>) {
   return (
-    <h2
-      className={cn(
-        'font-sans text-xs font-medium tracking-widest text-muted uppercase',
-        className,
-      )}
-      {...props}
-    />
+    <h2 className={cn('font-sans text-body-sm font-medium text-muted', className)} {...props} />
   );
 }
 
-/** Etiqueta redondeada para metadatos (nivel, acento, duración…). */
+/** Etiqueta para metadatos (nivel, acento, duración…): el `.tag` de MASTER. */
 export function Chip({ className, ...props }: ComponentProps<'span'>) {
-  return (
-    <span
-      className={cn(
-        'inline-flex h-6 items-center rounded-full border border-border bg-surface-2 px-2.5 text-xs text-muted',
-        className,
-      )}
-      {...props}
-    />
-  );
+  return <span className={cn('tag', className)} {...props} />;
 }
 
+/** Placeholder de carga estable: mismo tamaño que el contenido final y sin parpadeo. */
 export function Skeleton({ className, ...props }: ComponentProps<'div'>) {
-  return (
-    <div
-      aria-hidden="true"
-      className={cn('animate-pulse rounded-control bg-surface-2', className)}
-      {...props}
-    />
-  );
+  return <div aria-hidden="true" className={cn('skeleton', className)} {...props} />;
 }

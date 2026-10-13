@@ -1,0 +1,11 @@
+Fuentes de la presentación de Señal, servidas desde la propia web.
+
+- inter-latin.woff2: Inter (subconjunto latino, variable).
+  Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)
+- archivo-latin.woff2: Archivo (subconjunto latino, variable de peso y anchura).
+  Copyright 2020 The Archivo Project Authors (https://github.com/Omnibus-Type/Archivo)
+
+Las dos se distribuyen con la SIL Open Font License, versión 1.1:
+https://openfontlicense.org/open-font-license-official-text/
+
+Son los mismos ficheros que `next/font` descarga para la app (src/app/layout.tsx).

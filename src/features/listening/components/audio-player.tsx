@@ -106,10 +106,7 @@ export function AudioPlayer({
   });
 
   return (
-    <section
-      aria-label={t('player.label')}
-      className="flex flex-col gap-3 rounded-panel border border-border bg-surface p-4"
-    >
+    <section aria-label={t('player.label')} className="card flex flex-col gap-3">
       <div className="flex items-center gap-3">
         <div
           ref={sliderRef}
@@ -121,7 +118,7 @@ export function AudioPlayer({
           aria-valuenow={0}
           onPointerDown={seekFromPointer}
           onKeyDown={seekFromKey}
-          className="h-14 min-w-0 flex-1 cursor-pointer rounded-control"
+          className="h-14 min-w-0 flex-1 cursor-pointer rounded-structure"
         >
           <svg
             viewBox={`0 0 ${bars.length} 100`}
@@ -135,7 +132,7 @@ export function AudioPlayer({
             </g>
           </svg>
         </div>
-        <p className="hud shrink-0 text-sm text-muted">
+        <p className="tabular-nums shrink-0 text-body-sm text-muted">
           <span ref={timeRef}>0:00</span> / {formatClock(duration * 1000)}
         </p>
       </div>
@@ -154,8 +151,9 @@ export function AudioPlayer({
             <RotateCcw aria-hidden="true" strokeWidth={1.75} />
           </Button>
           <Button
+            variant="secondary"
             size="icon"
-            className="size-12 rounded-full"
+            className="size-12"
             disabled={status === 'error'}
             aria-label={playing ? t('player.pause') : t('player.play')}
             onClick={() => player.toggle()}
@@ -187,7 +185,7 @@ export function AudioPlayer({
           </Button>
           <output
             aria-label={t('player.rate', { rate: rate.toFixed(2) })}
-            className="hud w-14 text-center text-sm"
+            className="tabular-nums w-14 text-center text-body-sm"
           >
             {rate.toFixed(2)}×
           </output>
@@ -203,7 +201,7 @@ export function AudioPlayer({
       </div>
 
       {status === 'error' ? (
-        <p role="alert" className="text-sm text-danger">
+        <p role="alert" className="text-body-sm text-error">
           {t('listening.audioError')}
         </p>
       ) : null}

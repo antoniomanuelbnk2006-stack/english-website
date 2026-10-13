@@ -13,9 +13,9 @@ export function ScoreBars({ scores }: { scores: Scores }) {
     <ul className="grid gap-x-6 gap-y-4 sm:grid-cols-2">
       {CRITERIA.map((criterion) => (
         <li key={criterion} className="flex flex-col gap-1.5">
-          <span className="flex items-baseline justify-between gap-2 text-sm">
+          <span className="flex items-baseline justify-between gap-2 text-body-sm">
             <span className="font-medium">{t(`writing.criteria.${criterion}`)}</span>
-            <span className="hud text-muted">
+            <span className="tabular-nums text-muted">
               {t('writing.scoreOf', { score: scores[criterion] })}
             </span>
           </span>
@@ -25,12 +25,12 @@ export function ScoreBars({ scores }: { scores: Scores }) {
                 key={step}
                 className={cn(
                   'h-1.5 flex-1 rounded-full',
-                  step <= scores[criterion] ? 'bg-accent' : 'bg-border',
+                  step <= scores[criterion] ? 'bg-accent' : 'bg-surface-2',
                 )}
               />
             ))}
           </span>
-          <span className="text-xs text-muted">{t(`writing.criteriaHelp.${criterion}`)}</span>
+          <span className="text-caption text-muted">{t(`writing.criteriaHelp.${criterion}`)}</span>
         </li>
       ))}
     </ul>

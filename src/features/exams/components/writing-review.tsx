@@ -32,11 +32,11 @@ export function WritingReview({ paperId, n }: { paperId: string; n: number }) {
     }
   }, [raw, n]);
 
-  if (text === '') return <p className="text-sm text-muted">{t('exams.writingMissing')}</p>;
+  if (text === '') return <p className="text-body-sm text-muted">{t('exams.writingMissing')}</p>;
   return (
     <div className="flex flex-col gap-1">
-      <h4 className="text-sm font-medium text-muted">{t('exams.writingYours')}</h4>
-      <p lang="en" className="reading-md whitespace-pre-line">
+      <h4 className="text-body-sm font-medium text-muted">{t('exams.writingYours')}</h4>
+      <p lang="en" className="prose-reading whitespace-pre-line">
         {text}
       </p>
     </div>

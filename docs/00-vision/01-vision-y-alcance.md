@@ -50,7 +50,7 @@ Tú: desarrollador frontend/mobile hispanohablante, B1, con el objetivo inmediat
 
 - **Contexto de uso:** móvil para escuchar (trayectos, paseos) y repasar; escritorio para leer, escribir y estudiar gramática.
 - **Temas que te enganchan** (se usan para elegir contenido): espacio y astronomía, videojuegos y *modding*, producción musical, tecnología y desarrollo, viajes.
-- **Estética:** interfaz oscura, limpia, de inspiración sci-fi, con acentos cian/azul eléctrico. Ver [Sistema de diseño](../03-producto/05-sistema-de-diseno.md).
+- **Estética:** interfaz oscura y monocroma, silenciosa, con un único acento cobalto. Ver [Sistema de diseño](../03-producto/05-sistema-de-diseno.md).
 
 ---
 

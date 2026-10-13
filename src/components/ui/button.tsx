@@ -1,35 +1,49 @@
-import { cva, type VariantProps } from 'class-variance-authority';
 import { Slot } from 'radix-ui';
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-// Componentes base al estilo shadcn/ui (Radix + cva), adaptados a los tokens de Señal:
-// aquí `accent` es el cian de la acción principal y `muted` un color de texto.
-export const buttonVariants = cva(
-  'inline-flex shrink-0 items-center justify-center gap-2 rounded-full text-sm font-medium whitespace-nowrap underline-offset-4 transition-[color,background-color,border-color,transform] duration-300 ease-out select-none hover:-translate-y-0.5 hover:underline motion-reduce:hover:translate-y-0 disabled:pointer-events-none disabled:opacity-50 [&_svg]:size-5 [&_svg]:shrink-0',
-  {
-    variants: {
-      variant: {
-        primary: 'bg-accent text-accent-contrast hover:bg-accent-strong',
-        secondary: 'border border-border bg-surface-2 text-text hover:border-subtle',
-        ghost: 'text-muted hover:bg-surface-2 hover:text-text',
-        outline: 'border border-accent text-accent hover:bg-karaoke',
-        danger: 'border border-danger text-danger hover:bg-surface-2',
-      },
-      size: {
-        // 44 px de alto por defecto: la app se usa en movimiento.
-        md: 'h-11 px-5',
-        lg: 'h-12 px-7 text-base',
-        sm: 'h-9 px-4 pointer-coarse:h-11',
-        icon: 'size-11',
-      },
-    },
-    defaultVariants: { variant: 'primary', size: 'md' },
-  },
-);
+// Botones de Señal (design-system/senal/MASTER.md §5). El aspecto sale de las clases `.btn` de
+// globals.css; aquí solo se elige cuál:
+//   primary    acción principal, cobalto. Una por pantalla.
+//   secondary  acción secundaria, rellena en surface-2.
+//   ghost      acción terciaria, con el borde fino.
+//   danger     terciaria que borra o descarta: borde y texto de error, nunca relleno.
+// `outline` se conserva por compatibilidad con lo que ya lo usaba: es una secundaria.
 
-export type ButtonProps = ComponentProps<'button'> &
-  VariantProps<typeof buttonVariants> & { asChild?: boolean };
+type Variant = 'primary' | 'secondary' | 'ghost' | 'outline' | 'danger';
+type Size = 'md' | 'lg' | 'sm' | 'icon';
+
+const VARIANT: Record<Variant, string> = {
+  primary: 'btn-primary',
+  secondary: 'btn-secondary',
+  ghost: 'btn-ghost',
+  outline: 'btn-secondary',
+  danger: 'btn-ghost border-error text-error',
+};
+
+const SIZE: Record<Size, string> = {
+  // 44 px de alto por defecto: la app se usa en movimiento.
+  md: '',
+  lg: 'min-h-12 px-7 text-body',
+  // Más bajo solo con ratón; en táctil vuelve a los 44 px.
+  sm: 'min-h-9 px-4 pointer-coarse:min-h-11',
+  icon: 'size-11 p-0',
+};
+
+export interface ButtonVariantProps {
+  variant?: Variant | null;
+  size?: Size | null;
+}
+
+export function buttonVariants({ variant, size }: ButtonVariantProps = {}): string {
+  const v = variant ?? 'primary';
+  const s = size ?? 'md';
+  // Solo icono y sin relleno: el botón de icono de MASTER, de 44 × 44.
+  if (s === 'icon' && v === 'ghost') return 'btn-icon';
+  return cn('btn', VARIANT[v], SIZE[s]);
+}
+
+export type ButtonProps = ComponentProps<'button'> & ButtonVariantProps & { asChild?: boolean };
 
 export function Button({
   className,

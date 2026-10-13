@@ -20,14 +20,14 @@ const LETTERS = ['A', 'B', 'C', 'D'];
 
 const inlineField = cn(
   fieldClasses,
-  'mx-1 inline-block h-9 w-32 px-2 align-baseline text-base pointer-coarse:h-11',
+  'mx-1 inline-block h-9 w-32 px-2 align-baseline text-body pointer-coarse:h-11',
 );
 
 const paragraphs = (text: string) => text.split(/\n{2,}/).filter((piece) => piece.trim() !== '');
 
 function GapNumber({ n }: { n: number }) {
   return (
-    <span lang="es" className="hud text-xs text-muted">
+    <span lang="es" className="tabular-nums text-caption text-muted">
       ({n})
     </span>
   );
@@ -38,7 +38,7 @@ function GappedProse({ text, field }: { text: string; field: (n: number) => Reac
   return (
     <>
       {paragraphs(text).map((paragraph, index) => (
-        <p key={index} lang="en" className="reading-md leading-[2.75rem]">
+        <p key={index} lang="en" className="prose-reading leading-[2.75rem]">
           {splitCloze(paragraph).map((piece, pieceIndex) =>
             typeof piece === 'string' ? (
               <span key={pieceIndex}>{piece}</span>
@@ -59,7 +59,7 @@ function Prose({ text }: { text: string }) {
   return (
     <>
       {paragraphs(text).map((paragraph, index) => (
-        <p key={index} lang="en" className="reading-md whitespace-pre-line">
+        <p key={index} lang="en" className="prose-reading whitespace-pre-line">
           {paragraph}
         </p>
       ))}
@@ -69,9 +69,9 @@ function Prose({ text }: { text: string }) {
 
 function TextBox({ title, children }: { title?: string; children: ReactNode }) {
   return (
-    <div className="flex flex-col gap-3 rounded-panel border border-border bg-surface p-4 sm:p-5">
+    <div className="card flex flex-col gap-3">
       {title ? (
-        <h3 lang="en" className="text-lg font-medium">
+        <h3 lang="en" className="text-body-lg font-medium">
           {title}
         </h3>
       ) : null}
@@ -90,7 +90,7 @@ function ChoiceQuestion({
   return (
     <fieldset className="flex flex-col gap-2">
       <legend className="mb-2 flex gap-2">
-        <span className="hud shrink-0 text-sm text-muted">{question.n}.</span>
+        <span className="tabular-nums shrink-0 text-body-sm text-muted">{question.n}.</span>
         <span lang="en" className="font-medium">
           {question.prompt ?? <span lang="es">{t('exams.chooseMeaning')}</span>}
         </span>
@@ -98,10 +98,7 @@ function ChoiceQuestion({
       {question.options.map((option, index) => (
         <label
           key={index}
-          className={cn(
-            'flex cursor-pointer items-start gap-3 rounded-control border px-3 py-2 transition-colors duration-150',
-            chosen === index ? 'border-accent bg-surface-2' : 'border-border hover:border-subtle',
-          )}
+          className={cn('option cursor-pointer items-start', chosen === index && 'border-accent')}
         >
           <input
             type="radio"
@@ -110,7 +107,7 @@ function ChoiceQuestion({
             onChange={() => onAnswer(question.n, index)}
             className="mt-1 size-4 shrink-0 accent-accent"
           />
-          <span aria-hidden="true" className="hud mt-0.5 text-xs text-muted">
+          <span aria-hidden="true" className="tabular-nums mt-0.5 text-caption text-muted">
             {LETTERS[index]}
           </span>
           <span lang="en" className="min-w-0 flex-1">
@@ -190,7 +187,7 @@ export function PartView({
       if (single?.text) {
         return (
           <div className="grid gap-5 xl:grid-cols-2">
-            <div className="xl:max-h-[75vh] xl:overflow-y-auto xl:pr-1">
+            <div className="xl:sticky xl:top-52 xl:max-h-[calc(100dvh-14rem)] xl:self-start xl:overflow-y-auto xl:pr-1">
               <TextBox title={part.title}>
                 <Prose text={single.text} />
               </TextBox>
@@ -208,7 +205,7 @@ export function PartView({
           {part.groups.map((group, index) => (
             <div key={index} className="flex flex-col gap-4">
               {group.context ? (
-                <p lang="en" className="text-sm text-muted">
+                <p lang="en" className="text-body-sm text-muted">
                   {group.context}
                 </p>
               ) : null}
@@ -272,7 +269,7 @@ export function PartView({
             field={(n) => (
               <>
                 <TextGap n={n} wide {...common} />
-                <span className="hud text-sm font-medium text-accent">
+                <span className="tabular-nums text-body-sm font-medium text-accent-text">
                   {part.gaps.find((gap) => gap.n === n)?.stem}
                 </span>
               </>
@@ -286,7 +283,7 @@ export function PartView({
         <TextBox title={part.title}>
           {part.text.split('\n').map((line, index) =>
             line.trim() === '' ? null : (
-              <p key={index} lang="en" className="reading-md leading-[2.75rem]">
+              <p key={index} lang="en" className="prose-reading leading-[2.75rem]">
                 {splitCloze(line).map((piece, pieceIndex) =>
                   typeof piece === 'string' ? (
                     <span key={pieceIndex}>{piece}</span>
@@ -307,23 +304,23 @@ export function PartView({
       const [min, max] = format.words ?? [2, 5];
       return (
         <div className="flex flex-col gap-4">
-          <p className="hud text-sm text-muted">{t('uoe.wordLimit', { min, max })}</p>
+          <p className="tabular-nums text-body-sm text-muted">{t('uoe.wordLimit', { min, max })}</p>
           <ol className="flex flex-col gap-6">
             {part.items.map((item) => {
               const value = String(answers[item.n] ?? '');
               const words = value.trim() === '' ? 0 : countExamWords(value);
               return (
                 <li key={item.n} className="flex flex-col gap-2">
-                  <p lang="en" className="reading-md">
-                    <span lang="es" className="hud mr-2 text-sm text-muted">
+                  <p lang="en" className="prose-reading">
+                    <span lang="es" className="tabular-nums mr-2 text-body-sm text-muted">
                       {item.n}.
                     </span>
                     {item.original}
                   </p>
-                  <p lang="en" className="hud text-sm font-medium tracking-wide text-accent">
+                  <p lang="en" className="text-body-sm font-medium text-accent-text tabular-nums">
                     {item.keyword}
                   </p>
-                  <p lang="en" className="reading-md leading-[2.75rem]">
+                  <p lang="en" className="prose-reading leading-[2.75rem]">
                     {item.before}
                     <input
                       type="text"
@@ -339,7 +336,12 @@ export function PartView({
                     />
                     {item.after}
                   </p>
-                  <p className={cn('hud text-xs', words > max ? 'text-danger' : 'text-muted')}>
+                  <p
+                    className={cn(
+                      'tabular-nums text-caption',
+                      words > max ? 'text-error' : 'text-muted',
+                    )}
+                  >
                     {words === 1 ? t('uoe.wordCountOne') : t('uoe.wordCount', { n: words })}
                   </p>
                 </li>
@@ -361,19 +363,21 @@ export function PartView({
               field={(n) => <LetterSelect n={n} ids={ids} inline {...common} />}
             />
           </TextBox>
-          <div className="flex flex-col gap-3 xl:sticky xl:top-24 xl:max-h-[75vh] xl:self-start xl:overflow-y-auto xl:pr-1">
-            <h3 className="text-sm font-medium text-muted">{t('exams.optionsTitle')}</h3>
+          <div className="flex flex-col gap-3 xl:sticky xl:top-52 xl:max-h-[calc(100dvh-14rem)] xl:self-start xl:overflow-y-auto xl:pr-1">
+            <h3 className="text-body-sm font-medium text-muted">{t('exams.optionsTitle')}</h3>
             <ul className="flex flex-col gap-2">
               {part.options.map((option) => (
                 <li
                   key={option.id}
                   className={cn(
-                    'flex gap-3 rounded-control border border-border px-3 py-2',
+                    'flex gap-3 rounded-card bg-surface-2 px-3 py-2',
                     used.has(option.id) && 'opacity-55',
                   )}
                 >
-                  <span className="hud shrink-0 text-sm font-medium text-accent">{option.id}</span>
-                  <span lang="en" className="reading-md whitespace-pre-line">
+                  <span className="tabular-nums shrink-0 text-body-sm font-medium text-accent-text">
+                    {option.id}
+                  </span>
+                  <span lang="en" className="prose-reading whitespace-pre-line">
                     {option.text}
                   </span>
                 </li>
@@ -395,7 +399,9 @@ export function PartView({
               <ol className="flex flex-col gap-3">
                 {task.questions.map((question) => (
                   <li key={question.n} className="flex items-start gap-3">
-                    <span className="hud mt-2 w-7 shrink-0 text-sm text-muted">{question.n}.</span>
+                    <span className="tabular-nums mt-2 w-7 shrink-0 text-body-sm text-muted">
+                      {question.n}.
+                    </span>
                     <span lang="en" className="mt-1.5 min-w-0 flex-1">
                       {question.prompt}
                     </span>
@@ -411,7 +417,9 @@ export function PartView({
                     <li key={option.id}>
                       <TextBox>
                         <h4 className="flex items-baseline gap-2">
-                          <span className="hud font-medium text-accent">{option.id}</span>
+                          <span className="tabular-nums font-medium text-accent-text">
+                            {option.id}
+                          </span>
                           {option.title ? (
                             <span lang="en" className="font-medium">
                               {option.title}
@@ -423,7 +431,9 @@ export function PartView({
                     </li>
                   ) : (
                     <li key={option.id} className="flex gap-3">
-                      <span className="hud shrink-0 font-medium text-accent">{option.id}</span>
+                      <span className="tabular-nums shrink-0 font-medium text-accent-text">
+                        {option.id}
+                      </span>
                       <span lang="en">{option.text}</span>
                     </li>
                   ),
@@ -439,10 +449,10 @@ export function PartView({
                 ) : null}
                 {long ? (
                   <div className="grid gap-5 xl:grid-cols-2">
-                    <div className="xl:sticky xl:top-24 xl:self-start">{questions}</div>
+                    <div className="xl:sticky xl:top-52 xl:self-start">{questions}</div>
                     <div>
                       {part.title ? (
-                        <h3 lang="en" className="mb-3 text-lg font-medium">
+                        <h3 lang="en" className="mb-3 text-body-lg font-medium">
                           {part.title}
                         </h3>
                       ) : null}
@@ -451,9 +461,7 @@ export function PartView({
                   </div>
                 ) : (
                   <div className="grid gap-5 md:grid-cols-2">
-                    <div className="rounded-panel border border-border bg-surface p-4">
-                      {options}
-                    </div>
+                    <div className="card">{options}</div>
                     {questions}
                   </div>
                 )}
@@ -480,10 +488,15 @@ export function PartView({
             value={value}
             onChange={(event) => onAnswer(part.n, event.target.value)}
           />
-          <p className={cn('hud text-xs', words < part.min_words ? 'text-muted' : 'text-success')}>
+          <p
+            className={cn(
+              'tabular-nums text-caption',
+              words < part.min_words ? 'text-muted' : 'text-success',
+            )}
+          >
             {t('exams.writingWords', { n: words, min: part.min_words })}
           </p>
-          <p className="text-sm text-muted">{t('exams.writingNote')}</p>
+          <p className="text-body-sm text-muted">{t('exams.writingNote')}</p>
         </div>
       );
     }

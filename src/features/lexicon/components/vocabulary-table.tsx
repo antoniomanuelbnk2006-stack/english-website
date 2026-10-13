@@ -19,9 +19,9 @@ const STATUS_LABEL = {
 } as const satisfies Record<string, TranslationKey>;
 
 const STATUS_CLASS = {
-  new: 'border-warning text-warning',
-  learning: 'border-accent text-accent',
-  known: 'border-success text-success',
+  new: 'text-warning',
+  learning: 'text-accent-text',
+  known: 'text-success',
   ignored: '',
 } as const;
 
@@ -82,7 +82,7 @@ export function VocabularyTable({ entries }: { entries: LexiconEntry[] }) {
         aria-label={t('vocabulary.bulkLabel')}
         className="flex flex-wrap items-center gap-2"
       >
-        <span className="hud text-sm text-muted" aria-live="polite">
+        <span className="tabular-nums text-body-sm text-muted" aria-live="polite">
           {t('vocabulary.selected', { n: chosen.length })}
         </span>
         <Button
@@ -111,7 +111,7 @@ export function VocabularyTable({ entries }: { entries: LexiconEntry[] }) {
         </Button>
       </div>
       {failed ? (
-        <p role="alert" className="text-sm text-danger">
+        <p role="alert" className="text-body-sm text-error">
           {t('errors.saveFailed')}
         </p>
       ) : null}
@@ -120,10 +120,10 @@ export function VocabularyTable({ entries }: { entries: LexiconEntry[] }) {
         role="region"
         aria-label={t('vocabulary.tableLabel')}
         tabIndex={0}
-        className="overflow-x-auto rounded-panel border border-border bg-surface"
+        className="overflow-x-auto rounded-card bg-surface"
       >
-        <table className="w-full min-w-[40rem] text-left text-sm">
-          <thead className="border-b border-border text-xs text-muted">
+        <table className="w-full min-w-[40rem] text-left text-body-sm">
+          <thead className="border-b border-border text-caption text-muted">
             <tr>
               <th scope="col" className="w-11 p-0">
                 <label className="grid size-11 cursor-pointer place-items-center">
@@ -176,15 +176,17 @@ export function VocabularyTable({ entries }: { entries: LexiconEntry[] }) {
                 <th scope="row" lang="en" className="px-2 py-2 font-medium">
                   {entry.lemma}
                 </th>
-                <td className="hud px-2 py-2 text-muted">{entry.cefr ?? '—'}</td>
+                <td className="tabular-nums px-2 py-2 text-muted">{entry.cefr ?? '—'}</td>
                 <td className="px-2 py-2">
                   <Chip className={cn(STATUS_CLASS[entry.status])}>
                     {t(STATUS_LABEL[entry.status])}
                   </Chip>
                 </td>
-                <td className="hud px-2 py-2 text-right text-muted">{entry.seenCount}</td>
-                <td className="hud px-2 py-2 text-right text-muted">{entry.lookupCount}</td>
-                <td className="hud px-2 py-2 text-muted">
+                <td className="tabular-nums px-2 py-2 text-right text-muted">{entry.seenCount}</td>
+                <td className="tabular-nums px-2 py-2 text-right text-muted">
+                  {entry.lookupCount}
+                </td>
+                <td className="tabular-nums px-2 py-2 text-muted">
                   {entry.nextReview ? date.format(new Date(entry.nextReview)) : '—'}
                 </td>
                 <td className="px-2 py-2 pr-4 text-muted">{t(SOURCE_LABEL[entry.source])}</td>

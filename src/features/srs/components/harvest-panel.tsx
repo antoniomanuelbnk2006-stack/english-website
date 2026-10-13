@@ -101,10 +101,10 @@ export function HarvestPanel({
   return (
     <section aria-labelledby="harvest-title" className="flex flex-col gap-3">
       <div>
-        <h3 id="harvest-title" className="text-sm font-medium">
+        <h3 id="harvest-title" className="text-body-sm font-medium">
           {t('harvest.title')}
         </h3>
-        <p className="mt-1 text-sm text-muted">{t('harvest.hint', { n: limit })}</p>
+        <p className="mt-1 text-body-sm text-muted">{t('harvest.hint', { n: limit })}</p>
       </div>
 
       {candidates.length > 0 ? (
@@ -117,7 +117,7 @@ export function HarvestPanel({
               <li key={candidate.key}>
                 <label
                   htmlFor={id}
-                  className="flex min-h-11 cursor-pointer items-start gap-3 rounded-control px-2 py-2 hover:bg-surface-2"
+                  className="flex min-h-11 cursor-pointer items-start gap-3 rounded-card px-2 py-2 hover:bg-surface-2"
                 >
                   <input
                     id={id}
@@ -127,7 +127,7 @@ export function HarvestPanel({
                     onChange={() => toggle(candidate.key)}
                     className="mt-1 size-4 shrink-0 accent-accent"
                   />
-                  <span className="flex min-w-0 flex-1 flex-col gap-0.5 text-sm">
+                  <span className="flex min-w-0 flex-1 flex-col gap-0.5 text-body-sm">
                     {candidate.kind === 'audio' ? (
                       <>
                         <span className="font-medium">{t('harvest.audioCard')}</span>
@@ -155,12 +155,12 @@ export function HarvestPanel({
       ) : null}
 
       {added > 0 ? (
-        <p role="status" className="text-sm text-success">
+        <p role="status" className="text-body-sm text-success">
           {added === 1 ? t('harvest.addedOne') : t('harvest.added', { n: added })}
         </p>
       ) : null}
       {lexicon.failed ? (
-        <p role="alert" className="text-sm text-danger">
+        <p role="alert" className="text-body-sm text-error">
           {t('errors.saveFailed')}
         </p>
       ) : null}

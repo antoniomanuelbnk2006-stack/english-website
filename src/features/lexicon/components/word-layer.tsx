@@ -260,26 +260,29 @@ export function WordLayer({
             sideOffset={8}
             collisionPadding={12}
             aria-label={t('lexicon.glossaryOf', { word: lemma })}
-            className="z-50 flex w-[min(22rem,calc(100vw-1.5rem))] flex-col gap-3 rounded-panel border border-border bg-surface p-4 text-sm shadow-lg"
+            className="z-50 flex w-[min(22rem,calc(100vw-1.5rem))] flex-col gap-3 rounded-card border border-border bg-surface-2 p-4 text-body-sm"
           >
             {active ? (
               <>
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
-                    <p lang="en" className="reading-md text-lg font-medium text-accent">
+                    <p
+                      lang="en"
+                      className="prose-reading text-body-lg font-medium text-accent-text"
+                    >
                       {active.entry?.lemma ?? active.token.l}
                     </p>
                     <div className="mt-1 flex flex-wrap items-center gap-1.5">
                       {active.entry && POS_LABEL[active.entry.pos] ? (
                         <Chip>{t(POS_LABEL[active.entry.pos] ?? 'lexicon.posPhrase')}</Chip>
                       ) : null}
-                      {level ? <Chip className="hud">{level}</Chip> : null}
+                      {level ? <Chip className="tabular-nums">{level}</Chip> : null}
                       {status ? <Chip>{t(STATUS_LABEL[status])}</Chip> : null}
                     </div>
                   </div>
                   <Popover.Close
                     aria-label={t('common.close')}
-                    className="grid size-11 shrink-0 place-items-center rounded-control text-muted hover:bg-surface-2 hover:text-text"
+                    className="btn-icon -mt-2 -mr-2 hover:bg-surface"
                   >
                     <X aria-hidden="true" className="size-4" strokeWidth={2} />
                   </Popover.Close>
@@ -290,7 +293,10 @@ export function WordLayer({
                     <p lang="en">{active.entry.def_en}</p>
                     <p className="text-muted">{active.entry.def_es}</p>
                     {active.entry.example ? (
-                      <p lang="en" className="reading-md border-l-2 border-border pl-3 text-muted">
+                      <p
+                        lang="en"
+                        className="prose-reading border-l-2 border-border pl-3 text-muted"
+                      >
                         {active.entry.example}
                       </p>
                     ) : null}
@@ -304,13 +310,13 @@ export function WordLayer({
 
                 {onPlayWord && active.token.s !== undefined ? (
                   <div className="flex flex-wrap gap-2">
-                    <Button variant="secondary" size="sm" onClick={() => onPlayWord(active.token)}>
+                    <Button variant="ghost" size="sm" onClick={() => onPlayWord(active.token)}>
                       <Play aria-hidden="true" strokeWidth={2} />
                       {t('lexicon.playWord')}
                     </Button>
                     {onPlaySentence ? (
                       <Button
-                        variant="secondary"
+                        variant="ghost"
                         size="sm"
                         onClick={() => onPlaySentence(active.sentence.id)}
                       >
@@ -324,6 +330,7 @@ export function WordLayer({
                 <div className="flex flex-wrap gap-2 border-t border-border pt-3">
                   {active.entry ? (
                     <Button
+                      variant="ghost"
                       size="sm"
                       disabled={busy || hasCard}
                       onClick={() =>
@@ -337,7 +344,7 @@ export function WordLayer({
                     </Button>
                   ) : null}
                   <Button
-                    variant="secondary"
+                    variant="ghost"
                     size="sm"
                     disabled={busy || status === 'known'}
                     onClick={() => void run(() => lexicon.setStatus(lemma, 'known'))}
@@ -346,7 +353,7 @@ export function WordLayer({
                     {t('lexicon.iKnowIt')}
                   </Button>
                   <Button
-                    variant="secondary"
+                    variant="ghost"
                     size="sm"
                     disabled={busy || status === 'new' || status === 'learning'}
                     onClick={() => void run(() => lexicon.setStatus(lemma, 'new'))}
@@ -356,7 +363,7 @@ export function WordLayer({
                   </Button>
                 </div>
                 {lexicon.failed ? (
-                  <p role="alert" className="text-danger">
+                  <p role="alert" className="text-error">
                     {t('errors.saveFailed')}
                   </p>
                 ) : null}

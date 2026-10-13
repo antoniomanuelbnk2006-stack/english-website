@@ -36,7 +36,7 @@ const ERROR_TEXT: Record<ListenError, TranslationKey> = {
 const VERDICT = {
   good: { icon: CircleCheck, className: 'text-success' },
   close: { icon: CircleDashed, className: 'text-warning' },
-  retry: { icon: CircleAlert, className: 'text-danger' },
+  retry: { icon: CircleAlert, className: 'text-error' },
 } as const;
 
 const noop = () => () => {};
@@ -61,6 +61,7 @@ export function PracticeCard({
   confusions = [],
   accent,
   onAssessed,
+  assessed = false,
 }: {
   text: string;
   ipa?: string;
@@ -68,6 +69,8 @@ export function PracticeCard({
   confusions?: readonly Confusion[];
   accent: Accent;
   onAssessed?: (assessment: Assessment) => void;
+  /** Ya hay un intento valorado: «Hablar» deja de ser la acción principal de la pantalla. */
+  assessed?: boolean;
 }) {
   const t = useT();
   const support = useRecognitionSupport();
@@ -94,9 +97,9 @@ export function PracticeCard({
 
   let feedback = null;
   if (phase.kind === 'listening') {
-    feedback = <p className="text-sm text-accent">{t('pronunciation.listening')}</p>;
+    feedback = <p className="text-body-sm text-accent-text">{t('pronunciation.listening')}</p>;
   } else if (phase.kind === 'error') {
-    feedback = <p className="text-sm text-danger">{t(ERROR_TEXT[phase.error])}</p>;
+    feedback = <p className="text-body-sm text-error">{t(ERROR_TEXT[phase.error])}</p>;
   } else if (phase.kind === 'result') {
     const { assessment } = phase;
     const { icon: Icon, className } = VERDICT[assessment.verdict];
@@ -122,14 +125,14 @@ export function PracticeCard({
           {message}
         </p>
         {assessment.words.length > 1 ? (
-          <p lang="en" className="reading-md flex flex-wrap justify-center gap-x-1.5">
+          <p lang="en" className="prose-reading flex flex-wrap justify-center gap-x-1.5">
             {assessment.words.map((word, index) => (
               <span
                 key={`${word.text}-${index}`}
                 className={cn(
                   word.status === 'ok' && 'text-success',
-                  word.status === 'wrong' && 'text-danger underline decoration-dotted',
-                  word.status === 'missing' && 'text-subtle line-through',
+                  word.status === 'wrong' && 'text-error underline decoration-dotted',
+                  word.status === 'missing' && 'text-muted line-through',
                 )}
               >
                 {word.text}
@@ -139,22 +142,19 @@ export function PracticeCard({
           </p>
         ) : null}
         {assessment.verdict !== 'good' && assessment.heard ? (
-          <p className="text-sm text-muted">
+          <p className="text-body-sm text-muted">
             {t('pronunciation.heard')} <span lang="en">«{assessment.heard}»</span>
           </p>
         ) : null}
         {tips.length > 0 ? (
           <section
             aria-label={t('pronunciation.tipsTitle')}
-            className="mt-1 w-full max-w-prose rounded-control border border-border bg-surface-2 px-4 py-3 text-left"
+            className="mt-1 w-full max-w-prose rounded-card bg-surface-2 px-4 py-3 text-left"
           >
-            <p
-              aria-hidden="true"
-              className="text-xs font-medium tracking-widest text-muted uppercase"
-            >
+            <p aria-hidden="true" className="text-body-sm font-medium text-muted">
               {t('pronunciation.tipsTitle')}
             </p>
-            <ul className="mt-2 flex flex-col gap-2 text-sm">
+            <ul className="mt-2 flex flex-col gap-2 text-body-sm">
               {tips.map((tip) => (
                 <li key={`${tip.id}-${tip.word ?? ''}`}>
                   {tip.word ? (
@@ -182,17 +182,17 @@ export function PracticeCard({
           lang="en"
           className={cn(
             'font-semibold tracking-tight',
-            isSentence ? 'text-xl sm:text-2xl' : 'text-3xl sm:text-4xl',
+            isSentence ? 'text-subheading sm:text-heading-sm' : 'text-heading-lg',
           )}
         >
           {text}
         </p>
         {ipa ? (
-          <p lang="en" className="hud text-muted">
+          <p lang="en" className="tabular-nums text-muted">
             {ipa}
           </p>
         ) : null}
-        {es ? <p className="text-sm text-muted">{es}</p> : null}
+        {es ? <p className="text-body-sm text-muted">{es}</p> : null}
       </div>
 
       <div className="flex flex-wrap items-center justify-center gap-2">
@@ -222,7 +222,10 @@ export function PracticeCard({
               {t('pronunciation.stop')}
             </Button>
           ) : (
-            <Button onClick={start}>
+            <Button
+              variant={phase.kind === 'idle' && !assessed ? 'primary' : 'secondary'}
+              onClick={start}
+            >
               <Mic aria-hidden="true" className="size-5" strokeWidth={1.75} />
               {t(phase.kind === 'idle' ? 'pronunciation.speak' : 'pronunciation.speakAgain')}
             </Button>
@@ -234,7 +237,7 @@ export function PracticeCard({
         {feedback}
       </div>
       {support === 'no' ? (
-        <p className="max-w-prose text-sm text-muted">{t('pronunciation.unsupported')}</p>
+        <p className="max-w-prose text-body-sm text-muted">{t('pronunciation.unsupported')}</p>
       ) : null}
     </Panel>
   );

@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { InlineText } from '@/components/ui/inline-text';
-import { Chip, Panel, PanelTitle } from '@/components/ui/panel';
+import { PageContainer } from '@/components/ui/page';
+import { Chip, Panel, PanelLabel, PanelTitle } from '@/components/ui/panel';
 import { PhaseStepper } from '@/components/ui/phase-stepper';
 import { useLessonSession } from '@/features/lessons/components/use-lesson-session';
 import {
@@ -175,23 +176,24 @@ export function ReadingLesson({
   );
 
   return (
-    <div className="mx-auto flex w-full max-w-7xl flex-col gap-5 px-4 py-6 sm:px-6 lg:px-8">
+    // Preparar es una columna; en cuanto hay texto, convive con el panel de preguntas.
+    <PageContainer width={phase === PHASE.prepare ? 'exercise' : 'page'}>
       <header className="flex flex-col gap-3">
         <Link
           href="/leer"
-          className="flex items-center gap-1.5 self-start rounded-control text-sm text-muted hover:text-text"
+          className="flex items-center gap-1.5 self-start rounded-structure text-body-sm text-muted hover:text-text"
         >
           <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
           {t('lesson.back')}
         </Link>
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <h1 lang="en" className="text-2xl font-semibold tracking-tight sm:text-3xl">
+          <h1 lang="en" className="text-heading-sm sm:text-heading">
             {lesson.title}
           </h1>
           <div className="flex flex-wrap items-center gap-2">
-            <Chip className="hud">{lesson.level}</Chip>
+            <Chip className="tabular-nums">{lesson.level}</Chip>
             <Chip>{t(`genres.${lesson.genre}`)}</Chip>
-            <Chip className="hud">{t('lesson.words', { n: lesson.word_count })}</Chip>
+            <Chip className="tabular-nums">{t('lesson.words', { n: lesson.word_count })}</Chip>
           </div>
         </div>
         <PhaseStepper
@@ -202,48 +204,45 @@ export function ReadingLesson({
       </header>
 
       {error ? (
-        <p
-          role="alert"
-          className="flex items-center gap-2 rounded-control border border-danger px-3 py-2 text-sm text-danger"
-        >
+        <p role="alert" data-tone="error" className="feedback items-center text-error">
           <TriangleAlert aria-hidden="true" className="size-4 shrink-0" strokeWidth={1.75} />
           {t(error)}
         </p>
       ) : null}
 
       {phase === PHASE.prepare ? (
-        <Panel className="flex max-w-2xl flex-col gap-5">
+        <Panel className="flex flex-col gap-6">
           <div>
-            <PanelTitle>{unitTitle}</PanelTitle>
+            <PanelLabel>{unitTitle}</PanelLabel>
             <p className="mt-2">{lesson.summary_es}</p>
           </div>
           {previous?.score != null ? (
-            <p className="text-sm text-muted">
+            <p className="text-body-sm text-muted">
               {t('lesson.lastResult', { pct: toPercent(previous.score) })}
               {previous.version !== lesson.version ? ` ${t('lesson.newVersion')}` : ''}
             </p>
           ) : null}
           {lesson.prediction_prompt ? (
             <div>
-              <PanelTitle>{t('reading.beforeReading')}</PanelTitle>
-              <p lang="en" className="reading-md mt-2">
+              <PanelLabel>{t('reading.beforeReading')}</PanelLabel>
+              <p lang="en" className="prose-reading mt-2">
                 {lesson.prediction_prompt}
               </p>
             </div>
           ) : null}
           {lesson.pre_teach.length > 0 ? (
             <div>
-              <PanelTitle>{t('reading.keyWords')}</PanelTitle>
+              <PanelLabel>{t('reading.keyWords')}</PanelLabel>
               <dl className="mt-2 flex flex-col gap-2">
                 {lesson.pre_teach.map((word) => {
                   const entry = lesson.glossary.find((g) => g.lemma === word);
                   return (
                     <div key={word}>
-                      <dt lang="en" className="font-medium text-accent">
+                      <dt lang="en" className="font-medium text-accent-text">
                         {word}
                       </dt>
                       {entry ? (
-                        <dd className="text-sm text-muted">
+                        <dd className="text-body-sm text-muted">
                           <span lang="en">{entry.def_en}</span> — {entry.def_es}
                         </dd>
                       ) : null}
@@ -266,17 +265,19 @@ export function ReadingLesson({
 
       {phase === PHASE.skim ? (
         // Encima de los dos paneles: en móvil se ve tanto con el texto como con las preguntas.
-        <div className="flex max-w-2xl flex-col gap-2">
-          <p className="text-sm text-muted">
+        <div className="flex max-w-exercise flex-col gap-2">
+          <p className="text-body-sm text-muted">
             {skimLeft > 0 ? t('reading.skimHint', { s: SKIM_SECONDS }) : t('reading.skimTimeUp')}
           </p>
-          <div className="h-1.5 overflow-hidden rounded-full bg-border" aria-hidden="true">
+          <div className="progress" aria-hidden="true">
             <div
-              className="h-full rounded-full bg-accent transition-[width] duration-1000 ease-linear"
+              className="duration-1000 ease-linear"
               style={{ width: `${(skimLeft / SKIM_SECONDS) * 100}%` }}
             />
           </div>
-          <p className="hud text-xs text-muted">{t('reading.skimTimeLeft', { s: skimLeft })}</p>
+          <p className="tabular-nums text-caption text-muted">
+            {t('reading.skimTimeLeft', { s: skimLeft })}
+          </p>
         </div>
       ) : null}
 
@@ -287,7 +288,7 @@ export function ReadingLesson({
             <div
               role="group"
               aria-label={`${t('reading.textTab')} / ${t('reading.questionsTab')}`}
-              className="grid grid-cols-2 gap-1 rounded-control border border-border bg-surface p-1 xl:hidden"
+              className="grid grid-cols-2 gap-1 rounded-pill bg-surface p-1 xl:hidden"
             >
               {(['text', 'tasks'] as const).map((name) => (
                 <button
@@ -296,8 +297,8 @@ export function ReadingLesson({
                   aria-pressed={pane === name}
                   onClick={() => setPane(name)}
                   className={cn(
-                    'h-9 rounded-[7px] text-sm transition-colors duration-150',
-                    pane === name ? 'bg-surface-2 font-medium text-accent' : 'text-muted',
+                    'min-h-11 rounded-pill text-body-sm transition-colors duration-150',
+                    pane === name ? 'bg-surface-2 font-medium text-accent-text' : 'text-muted',
                   )}
                 >
                   {t(name === 'text' ? 'reading.textTab' : 'reading.questionsTab')}
@@ -318,8 +319,8 @@ export function ReadingLesson({
             >
               {inImmersion ? (
                 <div className="mx-auto mb-5 flex max-w-[68ch] flex-col gap-3">
-                  <p className="text-sm text-muted">{t('reading.readHint')}</p>
-                  <p className="hud flex items-center gap-2 text-sm text-muted">
+                  <p className="text-body-sm text-muted">{t('reading.readHint')}</p>
+                  <p className="tabular-nums flex items-center gap-2 text-body-sm text-muted">
                     <Timer aria-hidden="true" className="size-4" strokeWidth={1.75} />
                     <span className="sr-only">{t('reading.readingTime')}: </span>
                     {formatClock(readMs)}
@@ -329,11 +330,11 @@ export function ReadingLesson({
 
               {/* Junto al texto: en pantallas estrechas las preguntas están en otra pestaña. */}
               {wordMode === 'help' ? (
-                <p className="reading-measure mb-4 text-sm text-muted">{t('lexicon.helpHint')}</p>
+                <p className="mb-4 max-w-[68ch] text-body-sm text-muted">{t('lexicon.helpHint')}</p>
               ) : null}
 
               {paper ? (
-                <div data-theme="paper" className="rounded-panel p-5 sm:p-8">
+                <div data-theme="paper" className="rounded-card p-5 sm:p-8">
                   {text}
                 </div>
               ) : (
@@ -351,7 +352,7 @@ export function ReadingLesson({
 
             {showAside ? (
               <aside
-                className={cn('min-w-0 xl:sticky xl:top-6', pane !== 'tasks' && 'hidden xl:block')}
+                className={cn('min-w-0 xl:sticky xl:top-24', pane !== 'tasks' && 'hidden xl:block')}
               >
                 {phase === PHASE.skim ? (
                   <Panel className="flex flex-col gap-4">
@@ -368,7 +369,7 @@ export function ReadingLesson({
 
                 {phase === PHASE.questions ? (
                   <Panel className="flex flex-col gap-4">
-                    <p className="text-sm text-muted">{t('reading.questionsHint')}</p>
+                    <p className="text-body-sm text-muted">{t('reading.questionsHint')}</p>
                     <TaskRunner
                       tasks={readTasks}
                       onChecked={handleChecked}
@@ -382,11 +383,11 @@ export function ReadingLesson({
 
                 {phase === PHASE.focus ? (
                   <Panel className="flex flex-col gap-5">
-                    <p className="text-sm text-muted">{t('reading.focusHint')}</p>
+                    <p className="text-body-sm text-muted">{t('reading.focusHint')}</p>
                     {lesson.language_focus.map((focus) => (
                       <div key={focus.title_es} className="flex flex-col gap-2">
                         <h3 className="font-medium">{focus.title_es}</h3>
-                        <p className="text-sm text-muted">
+                        <p className="text-body-sm text-muted">
                           <InlineText text={focus.explanation_es} />
                         </p>
                         <Button
@@ -426,19 +427,19 @@ export function ReadingLesson({
 
                     <dl className="grid grid-cols-2 gap-4">
                       <div>
-                        <dt className="text-sm text-muted">{t('lesson.scoreLabel')}</dt>
-                        <dd className="hud text-3xl">
+                        <dt className="text-body-sm text-muted">{t('lesson.scoreLabel')}</dt>
+                        <dd className="tabular-nums text-heading">
                           {finalScore === null ? '—' : `${toPercent(finalScore)} %`}
                         </dd>
                       </div>
                       <div>
-                        <dt className="text-sm text-muted">{t('reading.speedLabel')}</dt>
-                        <dd className="hud text-3xl">
+                        <dt className="text-body-sm text-muted">{t('reading.speedLabel')}</dt>
+                        <dd className="tabular-nums text-heading">
                           {wpm === null ? '—' : t('lesson.wpm', { n: wpm })}
                         </dd>
                       </div>
                     </dl>
-                    <p className="text-sm text-muted">
+                    <p className="text-body-sm text-muted">
                       {wpm === null
                         ? t('reading.speedUnknown')
                         : t('reading.speedTarget', {
@@ -447,19 +448,20 @@ export function ReadingLesson({
                             max: target.max,
                           })}
                       {' · '}
-                      {t('lesson.timeLabel')}: <span className="hud">{formatClock(activeMs)}</span>
+                      {t('lesson.timeLabel')}:{' '}
+                      <span className="tabular-nums">{formatClock(activeMs)}</span>
                     </p>
 
                     {scored.length > 0 ? (
                       <div>
-                        <h3 className="text-sm font-medium">{t('lesson.byFocus')}</h3>
-                        <ul className="mt-2 flex flex-col gap-1.5 text-sm">
+                        <h3 className="text-body-sm font-medium">{t('lesson.byFocus')}</h3>
+                        <ul className="mt-2 flex flex-col gap-1.5 text-body-sm">
                           {byFocus(scored).map((group) => (
                             <li key={group.focus} className="flex justify-between gap-3">
                               <span className="text-muted">
                                 {t(`focus.${group.focus}` as TranslationKey)}
                               </span>
-                              <span className="hud">
+                              <span className="tabular-nums">
                                 {t('lesson.focusScore', { hits: group.hits, total: group.total })}
                               </span>
                             </li>
@@ -470,10 +472,10 @@ export function ReadingLesson({
 
                     {missed.length > 0 ? (
                       <div>
-                        <h3 className="text-sm font-medium">{t('lesson.missedTitle')}</h3>
+                        <h3 className="text-body-sm font-medium">{t('lesson.missedTitle')}</h3>
                         <ul className="mt-2 flex flex-col gap-3">
                           {missed.map(({ task }) => (
-                            <li key={task.id} className="flex flex-col gap-1 text-sm">
+                            <li key={task.id} className="flex flex-col gap-1 text-body-sm">
                               <span lang="en" className="font-medium">
                                 {task.prompt}
                               </span>
@@ -493,19 +495,19 @@ export function ReadingLesson({
                         </ul>
                       </div>
                     ) : scored.length > 0 ? (
-                      <p className="text-sm text-success">{t('lesson.allCorrect')}</p>
+                      <p className="text-body-sm text-success">{t('lesson.allCorrect')}</p>
                     ) : null}
 
                     {grammar.length > 0 ? (
                       <div>
-                        <h3 className="text-sm font-medium">{t('grammar.inThisLesson')}</h3>
-                        <ul className="mt-2 flex flex-col gap-1 text-sm">
+                        <h3 className="text-body-sm font-medium">{t('grammar.inThisLesson')}</h3>
+                        <ul className="mt-2 flex flex-col gap-1 text-body-sm">
                           {grammar.map((ficha) => (
                             <li key={ficha.id}>
                               <Link
                                 href={`/gramatica/${ficha.id}`}
                                 lang="en"
-                                className="text-accent underline underline-offset-4"
+                                className="text-accent-text underline underline-offset-4"
                               >
                                 {ficha.title}
                               </Link>
@@ -537,6 +539,6 @@ export function ReadingLesson({
           </div>
         </>
       ) : null}
-    </div>
+    </PageContainer>
   );
 }

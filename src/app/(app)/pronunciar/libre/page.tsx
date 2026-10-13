@@ -22,19 +22,17 @@ export default async function FreePronunciationPage({
   const initial = cleanFreeText(first(params.texto) ?? '');
 
   return (
-    <PageContainer className="max-w-2xl">
+    <PageContainer width="exercise">
       <header className="flex flex-col gap-3">
         <Link
           href="/pronunciar"
-          className="flex items-center gap-1.5 self-start rounded-control text-sm text-muted hover:text-text"
+          className="flex items-center gap-1.5 self-start rounded-structure text-body-sm text-muted hover:text-text"
         >
           <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
           {t('pronunciation.backToList')}
         </Link>
-        <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          {t('pronunciation.freeTitle')}
-        </h1>
-        <p className="text-sm text-muted">{t('pronunciation.freeSubtitle')}</p>
+        <h1 className="text-heading-sm sm:text-heading">{t('pronunciation.freeTitle')}</h1>
+        <p className="text-body-sm text-muted">{t('pronunciation.freeSubtitle')}</p>
       </header>
 
       <FreePractice key={initial} initial={initial} />

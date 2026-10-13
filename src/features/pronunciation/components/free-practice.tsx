@@ -47,9 +47,9 @@ export function FreePractice({ initial }: { initial: string }) {
       {text ? (
         <PracticeCard key={`${text}-${accent}`} text={text} accent={accent} />
       ) : (
-        <p className="text-sm text-muted">{t('pronunciation.freeHint')}</p>
+        <p className="text-body-sm text-muted">{t('pronunciation.freeHint')}</p>
       )}
-      <p className="text-xs text-muted">{t('pronunciation.privacy')}</p>
+      <p className="text-caption text-muted">{t('pronunciation.privacy')}</p>
     </div>
   );
 }

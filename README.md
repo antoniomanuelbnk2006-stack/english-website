@@ -76,7 +76,7 @@ senal/
 - [Pantallas y flujos](docs/03-producto/02-pantallas-y-flujos.md) — rutas, *wireframes*, flujos, atajos.
 - [Motor del plan diario](docs/03-producto/03-motor-del-plan-diario.md) — algoritmo de «Hoy».
 - [Gamificación sana](docs/03-producto/04-gamificacion.md) — XP, racha, barras de señal, logros.
-- [Sistema de diseño](docs/03-producto/05-sistema-de-diseno.md) — tokens, tipografía, componentes, accesibilidad.
+- [Sistema de diseño](docs/03-producto/05-sistema-de-diseno.md) — cómo se aplica el diseño, componentes, accesibilidad. La fuente de verdad visual es [`design-system/senal/MASTER.md`](design-system/senal/MASTER.md).
 
 ### 04 · Arquitectura
 - [Stack](docs/04-arquitectura/01-stack.md) · [Arquitectura y carpetas](docs/04-arquitectura/02-arquitectura-y-carpetas.md) · [Base de datos](docs/04-arquitectura/03-base-de-datos.md) · [Modelo de contenido](docs/04-arquitectura/04-modelo-de-contenido.md) · [Audio y reproductor](docs/04-arquitectura/05-audio-y-reproductor.md) · [IA](docs/04-arquitectura/06-ia.md) · [Seguridad y privacidad](docs/04-arquitectura/07-seguridad-y-privacidad.md) · [PWA, rendimiento y accesibilidad](docs/04-arquitectura/08-pwa-rendimiento-accesibilidad.md)

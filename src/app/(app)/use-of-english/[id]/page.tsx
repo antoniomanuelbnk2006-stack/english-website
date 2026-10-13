@@ -36,23 +36,21 @@ export default async function UoeSetPage({ params }: PageProps<'/use-of-english/
   const [t, progress] = await Promise.all([getT(), getLessonProgress(set.id)]);
 
   return (
-    <PageContainer className="max-w-3xl">
+    <PageContainer width="exercise">
       <header className="flex flex-col gap-3">
         <Link
           href="/use-of-english"
-          className="flex items-center gap-1.5 self-start rounded-control text-sm text-muted hover:text-text"
+          className="flex items-center gap-1.5 self-start rounded-structure text-body-sm text-muted hover:text-text"
         >
           <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
           {t('uoe.backToIndex')}
         </Link>
-        <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          {t(PART_TITLE[set.part])}
-        </h1>
+        <h1 className="text-heading-sm sm:text-heading">{t(PART_TITLE[set.part])}</h1>
         <div className="flex flex-wrap items-center gap-1.5">
-          <Chip className="hud">{set.level}</Chip>
-          <Chip className="hud">{t('lesson.minutes', { n: set.est_minutes })}</Chip>
+          <Chip className="tabular-nums">{set.level}</Chip>
+          <Chip className="tabular-nums">{t('lesson.minutes', { n: set.est_minutes })}</Chip>
           {progress?.bestScore != null ? (
-            <Chip className="hud">
+            <Chip className="tabular-nums">
               {t('lesson.bestScore', { pct: toPercent(progress.bestScore) })}
             </Chip>
           ) : null}

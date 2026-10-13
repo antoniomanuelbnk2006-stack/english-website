@@ -44,7 +44,7 @@ function Verdict({ result }: { result: GradeResult }) {
     );
   }
   return (
-    <p className="flex items-center gap-2 font-medium text-danger">
+    <p className="flex items-center gap-2 font-medium text-error">
       <CircleX aria-hidden="true" className="size-5" strokeWidth={2} />
       {t('tasks.incorrect')}
     </p>
@@ -121,13 +121,13 @@ export function TaskRunner({
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>
       <div className="flex items-center justify-between gap-3">
-        <p className="hud text-xs text-muted">
+        <p className="tabular-nums text-caption text-muted">
           {t('tasks.questionOf', { n: index + 1, total: tasks.length })}
         </p>
         <Chip>{t(`focus.${task.focus}`)}</Chip>
       </div>
 
-      <h3 id={promptId} lang="en" className="text-lg leading-snug font-medium">
+      <h3 id={promptId} lang="en" className="text-body-lg leading-snug font-medium">
         {task.prompt}
       </h3>
 
@@ -147,11 +147,12 @@ export function TaskRunner({
           ref={feedbackRef}
           tabIndex={-1}
           role="status"
-          className="flex flex-col gap-2 rounded-control border border-border bg-surface-2 p-3 outline-none"
+          data-tone={result.correct ? 'success' : result.score > 0 ? 'warning' : 'error'}
+          className="feedback flex-col items-stretch gap-2 outline-none"
         >
           <Verdict result={result} />
           {task.rationale_es ? (
-            <p className="text-sm text-muted">
+            <p className="text-body-sm text-muted">
               <InlineText text={task.rationale_es} />
             </p>
           ) : null}

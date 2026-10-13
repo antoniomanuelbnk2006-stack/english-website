@@ -63,6 +63,8 @@ test.describe('sin sesión', () => {
         expect.arrayContaining([
           `default-src 'self'`,
           `script-src 'self'`,
+          `style-src 'self'`,
+          `font-src 'self'`,
           `frame-ancestors 'none'`,
           `object-src 'none'`,
           `base-uri 'self'`,
@@ -72,7 +74,7 @@ test.describe('sin sesión', () => {
     }
 
     // Con la CSP puesta, cada página sigue cargando lo suyo: ni un aviso de CSP en consola, su
-    // script se ejecuta y los estilos escritos en el propio HTML se aplican.
+    // script se ejecuta y su hoja de estilos y sus fuentes (servidas desde aquí) se aplican.
     const blocked: string[] = [];
     page.on('console', (message) => {
       if (/content security policy/i.test(message.text())) blocked.push(message.text());
@@ -81,7 +83,12 @@ test.describe('sin sesión', () => {
       await page.goto(path, { waitUntil: 'load' });
       await expect(page.locator('html')).toHaveClass(/\bjs\b/);
     }
-    await expect(page.locator('main h1')).toHaveCSS('max-width', 'none');
+    await expect(page.locator('main h1')).toHaveCSS('font-family', /Archivo/);
+    const fontLoaded = await page.evaluate(async () => {
+      await document.fonts.ready;
+      return document.fonts.check('1rem Archivo');
+    });
+    expect(fontLoaded).toBe(true);
     expect(blocked).toEqual([]);
   });
 

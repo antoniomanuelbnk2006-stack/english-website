@@ -28,7 +28,7 @@ export function EvolutionChart({
       role="img"
       aria-label={label}
       viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-      className="h-14 w-full max-w-xs text-accent"
+      className="h-14 w-full max-w-xs text-accent-text"
     >
       <line
         x1={PAD}

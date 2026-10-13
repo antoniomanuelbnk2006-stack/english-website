@@ -30,13 +30,13 @@ export default async function LevelPage() {
   }
 
   return (
-    <PageContainer className="max-w-2xl">
+    <PageContainer width="exercise">
       <PageHeader
         title={t('level.chooseTitle')}
         subtitle={profile.declaredLevel ? t('level.chooseAgain') : t('level.chooseFirst')}
       />
       <LevelPicker current={profile.declaredLevel} counts={counts} />
-      <p className="text-sm text-muted">{t('level.chooseNote')}</p>
+      <p className="text-body-sm text-muted">{t('level.chooseNote')}</p>
     </PageContainer>
   );
 }

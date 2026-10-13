@@ -1,27 +1,6 @@
-// Entrada de elementos al verse (Tilt In, Arc In, fundidos) y menú móvil. Sin dependencias.
+// Menú móvil y formulario de contacto. Sin dependencias.
+// La clase deja constancia de que el script se ha ejecutado (lo comprueban los tests de la CSP).
 document.documentElement.classList.add('js');
-
-const targets = document.querySelectorAll('.fade, .tilt, .arc');
-const reveal = (el) => el.classList.add('in');
-if (!('IntersectionObserver' in window)) targets.forEach(reveal);
-else {
-  const io = new IntersectionObserver(
-    (entries) => {
-      for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        reveal(entry.target);
-        io.unobserve(entry.target);
-      }
-    },
-    { threshold: 0.15 },
-  );
-  targets.forEach((el) => io.observe(el));
-}
-
-// Las tarjetas de una misma fila se escalonan 100 ms cada una, como en Wix.
-document.querySelectorAll('.stagger').forEach((group) => {
-  [...group.children].forEach((child, i) => child.style.setProperty('--d', `${(i + 1) * 0.1}s`));
-});
 
 const nav = document.querySelector('.nav');
 const button = document.querySelector('.menu-btn');

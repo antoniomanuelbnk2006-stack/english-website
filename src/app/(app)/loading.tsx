@@ -5,13 +5,13 @@ import { Skeleton } from '@/components/ui/panel';
 export default function AppLoading() {
   return (
     <PageContainer>
-      <div className="flex flex-col gap-2">
-        <Skeleton className="h-10 w-40" />
-        <Skeleton className="h-4 w-56" />
+      <div className="flex flex-col gap-2" aria-busy="true">
+        <Skeleton className="h-9 w-40" />
+        <Skeleton className="h-6 w-56" />
       </div>
-      <Skeleton className="h-32 rounded-panel" />
-      <Skeleton className="h-56 rounded-panel" />
-      <Skeleton className="h-40 rounded-panel" />
+      <Skeleton className="h-32" />
+      <Skeleton className="h-56" />
+      <Skeleton className="h-40" />
     </PageContainer>
   );
 }

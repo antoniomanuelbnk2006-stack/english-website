@@ -130,17 +130,17 @@ export function ListeningTape({
 
   return (
     <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-      <p role="status" className="flex min-w-0 items-center gap-2 text-sm font-medium">
+      <p role="status" className="flex min-w-0 items-center gap-2 text-body-sm font-medium">
         <Volume2
           aria-hidden="true"
           className={
-            step.kind === 'play' ? 'size-4 shrink-0 text-accent' : 'size-4 shrink-0 text-muted'
+            step.kind === 'play' ? 'size-4 shrink-0 text-accent-text' : 'size-4 shrink-0 text-muted'
           }
           strokeWidth={2}
         />
         {status}
       </p>
-      <span className="hud text-sm text-muted">
+      <span className="tabular-nums text-body-sm text-muted">
         {step.kind === 'play' ? null : formatClock(left * 1000)}
       </span>
       <div
@@ -149,17 +149,17 @@ export function ListeningTape({
         aria-valuemin={0}
         aria-valuemax={100}
         aria-valuenow={total === 0 ? 0 : Math.round(((total - remaining) / total) * 100)}
-        className="h-1.5 min-w-24 flex-1 overflow-hidden rounded-full bg-surface-2"
+        className="progress min-w-24 flex-1"
       >
         <div
-          className="h-full bg-accent transition-[width] duration-500"
+          className="duration-500"
           style={{ width: `${total === 0 ? 0 : ((total - remaining) / total) * 100}%` }}
         />
       </div>
-      <span className="hud text-sm text-muted">
+      <span className="tabular-nums text-body-sm text-muted">
         {t('exams.timeLeft', { time: formatClock(remaining * 1000) })}
       </span>
-      <label className="flex items-center gap-2 text-xs text-muted">
+      <label className="flex items-center gap-2 text-caption text-muted">
         {t('exams.volume')}
         <input
           type="range"

@@ -64,8 +64,8 @@ export function LevelPicker({
             <label
               key={option}
               className={cn(
-                'flex cursor-pointer items-start gap-4 rounded-panel border bg-surface p-4 transition-colors duration-150',
-                checked ? 'glow border-accent' : 'border-border hover:border-subtle',
+                'option cursor-pointer items-start gap-4 bg-surface p-4',
+                checked && 'border-accent',
               )}
             >
               <input
@@ -79,13 +79,13 @@ export function LevelPicker({
               <span className="flex min-w-0 flex-1 flex-col gap-1">
                 <span className="flex flex-wrap items-baseline justify-between gap-x-3">
                   <span className="font-medium">{t(`cefr.${option}` as TranslationKey)}</span>
-                  <span className="hud text-xs text-muted">
+                  <span className="tabular-nums text-caption text-muted">
                     {counts[option] === 1
                       ? t('level.contentOne')
                       : t('level.content', { n: counts[option] })}
                   </span>
                 </span>
-                <span className="text-sm text-muted">{t(DESCRIPTION[option])}</span>
+                <span className="text-body-sm text-muted">{t(DESCRIPTION[option])}</span>
               </span>
             </label>
           );
@@ -93,7 +93,7 @@ export function LevelPicker({
       </fieldset>
 
       {failed ? (
-        <p role="alert" className="text-sm text-danger">
+        <p role="alert" className="text-body-sm text-error">
           {t('errors.saveFailed')}
         </p>
       ) : null}

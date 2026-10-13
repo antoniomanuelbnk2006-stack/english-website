@@ -1,6 +1,6 @@
 # ADR-0022 · El diseño de la presentación, en toda la web
 
-- **Estado:** Aceptada
+- **Estado:** Aceptada en lo que toca a la portada pública; su lenguaje visual (pastillas verdes, esquinas grandes, entradas animadas) lo sustituye [ADR-0027](0027-sistema-de-diseno-master.md)
 - **Fecha:** 2026-10-11
 
 ## Contexto

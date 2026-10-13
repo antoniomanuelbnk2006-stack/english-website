@@ -269,14 +269,14 @@ export function SpeakingRunner({
     );
     return (
       <Panel className="flex flex-col gap-4">
-        <p className="flex items-center gap-2 text-lg font-medium">
-          <Mic aria-hidden="true" className="size-5 text-accent" strokeWidth={1.75} />
+        <p className="flex items-center gap-2 text-body-lg font-medium">
+          <Mic aria-hidden="true" className="size-5 text-accent-text" strokeWidth={1.75} />
           {t('exams.speakingIntroTime', {
             official: format.minutes,
             min: Math.round(seconds / 60),
           })}
         </p>
-        <ul className="flex list-disc flex-col gap-1.5 pl-5 text-sm text-muted">
+        <ul className="flex list-disc flex-col gap-1.5 pl-5 text-body-sm text-muted">
           {(
             [
               'exams.speakingRuleVoice',
@@ -289,17 +289,17 @@ export function SpeakingRunner({
           ))}
           {speaks ? null : <li className="text-warning">{t('exams.speakingNoVoice')}</li>}
         </ul>
-        <ol className="flex flex-col divide-y divide-border rounded-control border border-border">
+        <ol className="flex flex-col divide-y divide-border rounded-card bg-surface-2">
           {format.parts.map((part, partIndex) => (
-            <li key={partIndex} className="flex flex-col gap-1 px-3 py-2 text-sm">
+            <li key={partIndex} className="flex flex-col gap-1 px-3 py-2 text-body-sm">
               <span className="flex flex-wrap items-baseline gap-x-3">
-                <span className="hud w-16 shrink-0 text-muted">
+                <span className="tabular-nums w-16 shrink-0 text-muted">
                   {t('exams.part', { n: partIndex + 1 })}
                 </span>
                 <span lang="en" className="min-w-0 flex-1 font-medium">
                   {part.name}
                 </span>
-                <span className="hud text-xs text-muted">
+                <span className="tabular-nums text-caption text-muted">
                   {t('lesson.minutes', { n: part.minutes })}
                 </span>
               </span>
@@ -323,16 +323,16 @@ export function SpeakingRunner({
     return (
       <div className="flex flex-col gap-4">
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-          <h2 className="text-xl font-semibold tracking-tight">
+          <h2 className="text-subheading">
             {t('exams.part', { n: part + 1 })}
             <span lang="en" className="ml-2 font-normal text-muted">
               {format.parts[part]?.name}
             </span>
           </h2>
-          <span className="hud text-sm text-muted">
+          <span className="tabular-nums text-body-sm text-muted">
             {t('exams.turn', { n: index + 1, total: turns.length })}
           </span>
-          <span className="ml-auto flex items-center gap-1.5 text-xs text-muted">
+          <span className="ml-auto flex items-center gap-1.5 text-caption text-muted">
             {micOk ? (
               <Mic aria-hidden="true" className="size-4 text-success" strokeWidth={2} />
             ) : (
@@ -343,24 +343,27 @@ export function SpeakingRunner({
         </div>
 
         <Panel className="flex flex-col gap-4">
-          <p role="status" className="flex items-center gap-2 text-sm font-medium">
+          <p role="status" className="flex items-center gap-2 text-body-sm font-medium">
             {phase === 'examiner' ? (
               <>
-                <Volume2 aria-hidden="true" className="size-4 text-accent" strokeWidth={2} />
+                <Volume2 aria-hidden="true" className="size-4 text-accent-text" strokeWidth={2} />
                 {t('exams.examinerSpeaking')}
               </>
             ) : phase === 'prep' ? (
               t('exams.lookAtTask')
             ) : (
               <>
-                <span aria-hidden="true" className="size-2.5 rounded-full bg-danger" />
+                <span aria-hidden="true" className="size-2.5 rounded-full bg-error" />
                 {t('exams.yourTurn')}
               </>
             )}
             {left !== null ? (
               <span
                 role="timer"
-                className={cn('hud ml-auto text-lg', left <= 10_000 ? 'text-warning' : 'text-text')}
+                className={cn(
+                  'tabular-nums ml-auto text-body-lg',
+                  left <= 10_000 ? 'text-warning' : 'text-text',
+                )}
               >
                 {formatClock(left)}
               </span>
@@ -368,7 +371,7 @@ export function SpeakingRunner({
           </p>
 
           {showText ? (
-            <p lang="en" className="reading-md">
+            <p lang="en" className="prose-reading">
               {turn.examiner}
             </p>
           ) : (
@@ -381,7 +384,7 @@ export function SpeakingRunner({
           {turn.shown ? (
             <p
               lang="en"
-              className="rounded-control border border-accent bg-surface-2 px-4 py-3 font-medium"
+              className="rounded-card border border-accent bg-surface-2 px-4 py-3 font-medium"
             >
               {turn.shown}
             </p>
@@ -391,9 +394,9 @@ export function SpeakingRunner({
               {turn.visuals.map((visual) => (
                 <li
                   key={visual.label}
-                  className="flex flex-col gap-1 rounded-control border border-border bg-surface-2 px-4 py-3"
+                  className="flex flex-col gap-1 rounded-card bg-surface-2 px-4 py-3"
                 >
-                  <span lang="en" className="hud text-xs text-accent">
+                  <span lang="en" className="tabular-nums text-caption text-accent-text">
                     {visual.label}
                   </span>
                   <span lang="en">{visual.description}</span>
@@ -404,11 +407,7 @@ export function SpeakingRunner({
           {turn.prompts ? (
             <ul className="flex flex-wrap gap-2">
               {turn.prompts.map((prompt) => (
-                <li
-                  key={prompt}
-                  lang="en"
-                  className="rounded-full border border-border bg-surface-2 px-3 py-1.5 text-sm"
-                >
+                <li key={prompt} lang="en" className="tag min-h-8 px-3 text-body-sm text-text">
                   {prompt}
                 </li>
               ))}
@@ -434,8 +433,8 @@ export function SpeakingRunner({
   return (
     <div className="flex flex-col gap-6">
       {stage === 'saved' && result ? (
-        <Panel role="status" className="flex flex-col gap-2 border-accent">
-          <p className="hud text-2xl">
+        <Panel role="status" className="flex flex-col gap-2 border border-accent">
+          <p className="tabular-nums text-heading-sm">
             {t('exams.speakingScore', { marks: result.marks, total: result.total })}
           </p>
           {result.band ? (
@@ -444,7 +443,7 @@ export function SpeakingRunner({
               {t(BAND_LABEL[result.band])}
             </p>
           ) : null}
-          <p className="text-sm text-muted">{t('exams.speakingSelfNote')}</p>
+          <p className="text-body-sm text-muted">{t('exams.speakingSelfNote')}</p>
           <Link
             href="/examenes"
             className={cn(buttonVariants({ variant: 'secondary' }), 'self-start')}
@@ -455,10 +454,12 @@ export function SpeakingRunner({
       ) : null}
 
       <section aria-labelledby="speaking-listen" className="flex flex-col gap-4">
-        <h2 id="speaking-listen" className="text-xl font-semibold tracking-tight">
+        <h2 id="speaking-listen" className="text-subheading">
           {t('exams.listenBack')}
         </h2>
-        {micOk === false ? <p className="text-sm text-warning">{t('exams.noRecordings')}</p> : null}
+        {micOk === false ? (
+          <p className="text-body-sm text-warning">{t('exams.noRecordings')}</p>
+        ) : null}
         {parts.map((part, partIndex) => (
           <Panel key={partIndex} className="flex flex-col gap-4">
             <h3 className="font-medium">
@@ -473,7 +474,7 @@ export function SpeakingRunner({
                   <li key={turnIndex} className="flex flex-col gap-2">
                     <p lang="en">{turn.examiner}</p>
                     {turn.shown ? (
-                      <p lang="en" className="text-sm font-medium">
+                      <p lang="en" className="text-body-sm font-medium">
                         {turn.shown}
                       </p>
                     ) : null}
@@ -485,26 +486,22 @@ export function SpeakingRunner({
                         className="h-10 w-full max-w-md"
                       />
                     ) : (
-                      <p className="text-xs text-muted">{t('exams.noClip')}</p>
+                      <p className="text-caption text-muted">{t('exams.noClip')}</p>
                     )}
                   </li>
                 ) : null,
               )}
             </ol>
             <div className="flex flex-col gap-2 border-t border-border pt-3">
-              <h4 className="text-sm font-medium text-muted">{t('exams.usefulLanguage')}</h4>
+              <h4 className="text-body-sm font-medium text-muted">{t('exams.usefulLanguage')}</h4>
               <ul className="flex flex-wrap gap-2">
                 {part.useful_language.map((phrase) => (
-                  <li
-                    key={phrase}
-                    lang="en"
-                    className="rounded-full border border-border px-3 py-1 text-sm"
-                  >
+                  <li key={phrase} lang="en" className="tag min-h-8 px-3 text-body-sm text-text">
                     {phrase}
                   </li>
                 ))}
               </ul>
-              <ul className="flex list-disc flex-col gap-1 pl-5 text-sm text-muted">
+              <ul className="flex list-disc flex-col gap-1 pl-5 text-body-sm text-muted">
                 {part.tips_es.map((tip) => (
                   <li key={tip}>{tip}</li>
                 ))}
@@ -517,24 +514,22 @@ export function SpeakingRunner({
       {stage === 'review' ? (
         <section aria-labelledby="speaking-assess" className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
-            <h2 id="speaking-assess" className="text-xl font-semibold tracking-tight">
+            <h2 id="speaking-assess" className="text-subheading">
               {t('exams.selfAssess')}
             </h2>
-            <p className="text-sm text-muted">{t('exams.selfAssessBody')}</p>
+            <p className="text-body-sm text-muted">{t('exams.selfAssessBody')}</p>
           </div>
           {format.criteria.map(({ key }) => (
             <fieldset key={key} className="flex flex-col gap-2">
               <legend className="font-medium">{t(CRITERION[key].name)}</legend>
-              <p className="text-sm text-muted">{t(CRITERION[key].hint)}</p>
+              <p className="text-body-sm text-muted">{t(CRITERION[key].hint)}</p>
               <div className="flex flex-wrap gap-2">
                 {BANDS.map((band) => (
                   <label
                     key={band}
                     className={cn(
-                      'flex size-11 cursor-pointer items-center justify-center rounded-control border transition-colors duration-150',
-                      ratings[key] === band
-                        ? 'border-accent bg-surface-2 font-medium text-accent'
-                        : 'border-border hover:border-subtle',
+                      'option size-11 cursor-pointer justify-center p-0',
+                      ratings[key] === band && 'border-accent font-medium text-accent-text',
                     )}
                   >
                     <input
@@ -544,15 +539,15 @@ export function SpeakingRunner({
                       checked={ratings[key] === band}
                       onChange={() => setRatings((current) => ({ ...current, [key]: band }))}
                     />
-                    <span className="hud">{band}</span>
+                    <span className="tabular-nums">{band}</span>
                   </label>
                 ))}
               </div>
             </fieldset>
           ))}
-          <p className="text-xs text-muted">{t('exams.bandLegend')}</p>
+          <p className="text-caption text-muted">{t('exams.bandLegend')}</p>
           {failed ? (
-            <p role="alert" className="text-sm text-danger">
+            <p role="alert" className="text-body-sm text-error">
               {t('errors.saveFailed')}
             </p>
           ) : null}

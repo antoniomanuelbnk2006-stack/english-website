@@ -35,21 +35,23 @@ export function LevelMeter({ rating, t }: { rating: SkillRating; t: Translate })
       <div className="min-w-0 flex-1">
         <div className="flex items-baseline justify-between gap-3">
           <span className="truncate font-medium">{t(`skills.${rating.skill}`)}</span>
-          <span className={cn('hud text-sm', lowConfidence ? 'text-muted' : 'text-text')}>
+          <span
+            className={cn('tabular-nums text-body-sm', lowConfidence ? 'text-muted' : 'text-text')}
+          >
             {level}
             {next ? (
               <span className="text-muted"> · {t('level.towards', { pct: percent, next })}</span>
             ) : null}
           </span>
         </div>
-        <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-border" aria-hidden="true">
+        <div className="progress mt-2" aria-hidden="true">
           <div
-            className={cn('h-full rounded-full', lowConfidence ? 'bg-accent/45' : 'bg-accent')}
+            className={cn(lowConfidence && 'bg-accent/45')}
             style={{ width: `${next ? percent : 100}%` }}
           />
         </div>
         {lowConfidence ? (
-          <p className="mt-1.5 flex items-center gap-1.5 text-xs text-muted">
+          <p className="mt-1.5 flex items-center gap-1.5 text-caption text-muted">
             <TrendingUp aria-hidden="true" className="size-3.5" strokeWidth={1.75} />
             {t('level.lowConfidence')}
           </p>

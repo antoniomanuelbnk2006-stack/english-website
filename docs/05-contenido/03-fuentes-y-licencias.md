@@ -20,7 +20,7 @@
 | Project Gutenberg | Textos clásicos (C1–C2) | Dominio público (verificar caso a caso) | Usar solo obras de autores fallecidos hace > 70 años; citar la fuente |
 | LibriVox | Audiolibros de dominio público | Grabaciones de dominio público | Citar la fuente y el lector cuando se conozca |
 | Material de NASA | Audio, transcripciones e imágenes sobre el espacio | En general sin copyright en EE. UU. (salvo material de terceros marcado) | Reconocer a NASA; no implicar respaldo; ojo con material marcado como de terceros |
-| Fuentes Geist, Geist Mono, Literata | Tipografía | SIL Open Font License | Ninguna especial al usarlas en la web |
+| Fuentes Inter y Archivo | Tipografía | SIL Open Font License | Ninguna especial al usarlas en la web; la portada las sirve desde `public/landing/fonts`, con su aviso de licencia |
 | lucide-react | Iconos | ISC | Mantener la licencia en dependencias |
 | Voces de Azure AI Speech | Audio sintético | Términos de Microsoft | Uso conforme a sus términos; la app indica «voz sintética» en las lecciones TTS |
 

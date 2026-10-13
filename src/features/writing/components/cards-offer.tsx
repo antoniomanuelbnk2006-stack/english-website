@@ -38,11 +38,11 @@ export function CardsOffer({
   return (
     <section aria-labelledby={`${id}-title`} className="flex flex-col gap-3">
       <PanelTitle id={`${id}-title`}>{t('writing.cardsTitle')}</PanelTitle>
-      <p className="text-sm text-muted">{t('writing.cardsHint')}</p>
+      <p className="text-body-sm text-muted">{t('writing.cardsHint')}</p>
       <ul className="flex flex-col">
         {cards.map((card, index) => (
           <li key={index}>
-            <label className="flex min-h-11 cursor-pointer items-start gap-3 rounded-control px-2 py-2 hover:bg-surface-2">
+            <label className="flex min-h-11 cursor-pointer items-start gap-3 rounded-card px-2 py-2 hover:bg-surface-2">
               <input
                 type="checkbox"
                 checked={chosen[index] ?? false}
@@ -54,7 +54,7 @@ export function CardsOffer({
                 }
                 className="mt-1 size-4 shrink-0 accent-accent"
               />
-              <span lang="en" className="flex min-w-0 flex-1 flex-col gap-0.5 text-sm">
+              <span lang="en" className="flex min-w-0 flex-1 flex-col gap-0.5 text-body-sm">
                 <span>{card.front}</span>
                 <span className="font-medium text-success">{card.back}</span>
               </span>
@@ -78,13 +78,13 @@ export function CardsOffer({
             {t('harvest.goReview')}
           </Link>
         )}
-        <p role="status" className="text-sm">
+        <p role="status" className="text-body-sm">
           {added !== null ? (
             <span className="text-success">
               {added === 1 ? t('harvest.addedOne') : t('harvest.added', { n: added })}
             </span>
           ) : failed ? (
-            <span className="text-danger">{t('errors.saveFailed')}</span>
+            <span className="text-error">{t('errors.saveFailed')}</span>
           ) : null}
         </p>
       </div>

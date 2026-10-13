@@ -44,7 +44,7 @@ export function SpeakButton({
       size={size}
       aria-label={children ? undefined : label}
       title={children ? undefined : label}
-      className={cn(speaking && 'text-accent', className)}
+      className={cn(speaking && 'text-accent-text', className)}
       onClick={() => {
         setSpeaking(true);
         speakText(text, { accent, rate, onEnd: () => setSpeaking(false) });

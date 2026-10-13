@@ -31,13 +31,13 @@ const LETTERS = ['A', 'B', 'C', 'D'];
 
 const inlineField = cn(
   fieldClasses,
-  'mx-1 inline-block h-9 w-32 px-2 align-baseline text-base pointer-coarse:h-11',
+  'mx-1 inline-block h-9 w-32 px-2 align-baseline text-body pointer-coarse:h-11',
 );
 
 function Mark({ item }: { item: UoeItemResult }) {
   const t = useT();
   const Icon = item.correct ? CircleCheck : item.marks > 0 ? TriangleAlert : CircleX;
-  const color = item.correct ? 'text-success' : item.marks > 0 ? 'text-warning' : 'text-danger';
+  const color = item.correct ? 'text-success' : item.marks > 0 ? 'text-warning' : 'text-error';
   const label = item.correct
     ? t('tasks.correct')
     : item.marks > 0
@@ -132,11 +132,11 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
 
   return (
     <form onSubmit={(event) => void submit(event)} className="flex flex-col gap-5">
-      <p className="text-sm text-muted">{t(INSTRUCTIONS[set.part])}</p>
+      <p className="text-body-sm text-muted">{t(INSTRUCTIONS[set.part])}</p>
 
       {set.part === 'key_word_transformation' ? (
         <>
-          <p className="hud text-sm text-muted">
+          <p className="tabular-nums text-body-sm text-muted">
             {t('uoe.wordLimit', { min: set.min_words, max: set.max_words })}
           </p>
           <ol className="flex flex-col gap-6">
@@ -146,16 +146,16 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
               const outcome = byNumber.get(item.n);
               return (
                 <li key={item.n} className="flex flex-col gap-2">
-                  <p lang="en" className="reading-md">
-                    <span lang="es" className="hud mr-2 text-sm text-muted">
+                  <p lang="en" className="prose-reading">
+                    <span lang="es" className="tabular-nums mr-2 text-body-sm text-muted">
                       {item.n}.
                     </span>
                     {item.original}
                   </p>
-                  <p lang="en" className="hud text-sm font-medium tracking-wide text-accent">
+                  <p lang="en" className="text-body-sm font-medium text-accent-text tabular-nums">
                     {item.keyword}
                   </p>
-                  <p lang="en" className="reading-md leading-[2.75rem]">
+                  <p lang="en" className="prose-reading leading-[2.75rem]">
                     {item.before}
                     <input
                       type="text"
@@ -175,8 +175,8 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
                   {!locked ? (
                     <p
                       className={cn(
-                        'hud text-xs',
-                        words > set.max_words ? 'text-danger' : 'text-muted',
+                        'tabular-nums text-caption',
+                        words > set.max_words ? 'text-error' : 'text-muted',
                       )}
                     >
                       {words === 1 ? t('uoe.wordCountOne') : t('uoe.wordCount', { n: words })}
@@ -189,10 +189,10 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
         </>
       ) : (
         <Panel>
-          <h2 lang="en" className="mb-3 text-lg font-medium">
+          <h2 lang="en" className="mb-3 text-body-lg font-medium">
             {set.title}
           </h2>
-          <p lang="en" className="reading-md leading-[2.75rem]">
+          <p lang="en" className="prose-reading leading-[2.75rem]">
             {splitCloze(set.text).map((piece, index) => {
               if (typeof piece === 'string') return <span key={index}>{piece}</span>;
               const outcome = byNumber.get(piece);
@@ -204,7 +204,7 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
                 const chosen = answers[piece];
                 return (
                   <span key={index} className="whitespace-nowrap">
-                    <span lang="es" className="hud text-xs text-muted">
+                    <span lang="es" className="tabular-nums text-caption text-muted">
                       ({piece})
                     </span>
                     <select
@@ -235,7 +235,7 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
                   : undefined;
               return (
                 <span key={index} className="whitespace-nowrap">
-                  <span lang="es" className="hud text-xs text-muted">
+                  <span lang="es" className="tabular-nums text-caption text-muted">
                     ({piece})
                   </span>
                   <input
@@ -252,7 +252,9 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
                     onChange={(event) => update(piece, event.target.value)}
                   />
                   {stem ? (
-                    <span className="hud text-sm font-medium text-accent">{stem}</span>
+                    <span className="tabular-nums text-body-sm font-medium text-accent-text">
+                      {stem}
+                    </span>
                   ) : null}
                 </span>
               );
@@ -262,7 +264,7 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
       )}
 
       {failed ? (
-        <p role="alert" className="text-sm text-danger">
+        <p role="alert" className="text-body-sm text-error">
           {t('errors.saveFailed')}
         </p>
       ) : null}
@@ -272,9 +274,9 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
           ref={resultRef}
           tabIndex={-1}
           role="status"
-          className="flex flex-col gap-4 rounded-panel border border-border bg-surface p-4 outline-none sm:p-5"
+          className="card flex flex-col gap-4 outline-none"
         >
-          <p className="hud text-2xl">
+          <p className="tabular-nums text-heading-sm">
             {t('uoe.score', {
               marks: result.marks,
               total: result.total,
@@ -283,12 +285,12 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
           </p>
           <ol className="flex flex-col gap-3">
             {result.items.map((item) => (
-              <li key={item.n} className="flex flex-col gap-1 text-sm">
+              <li key={item.n} className="flex flex-col gap-1 text-body-sm">
                 <span className="flex flex-wrap items-baseline gap-x-2">
-                  <span className="hud text-muted">{item.n}.</span>
+                  <span className="tabular-nums text-muted">{item.n}.</span>
                   <Mark item={item} />
                   {item.max > 1 ? (
-                    <span className="hud text-muted">
+                    <span className="tabular-nums text-muted">
                       {t('uoe.marksOf', { marks: item.marks, max: item.max })}
                     </span>
                   ) : null}
@@ -322,7 +324,7 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
           </ol>
 
           {added !== null ? (
-            <p className="text-sm text-success">
+            <p className="text-body-sm text-success">
               {added === 1 ? t('harvest.addedOne') : t('harvest.added', { n: added })}
             </p>
           ) : null}
@@ -335,7 +337,7 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
               </Button>
             ) : null}
             {added ? (
-              <Link href="/repasar" className={buttonVariants({ variant: 'outline' })}>
+              <Link href="/repasar" className={buttonVariants({ variant: 'secondary' })}>
                 {t('harvest.goReview')}
               </Link>
             ) : null}

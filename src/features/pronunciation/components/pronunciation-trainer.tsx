@@ -108,7 +108,7 @@ export function PronunciationTrainer({
     return (
       <Panel className="flex flex-col gap-4">
         <PanelTitle>{t('pronunciation.resultTitle')}</PanelTitle>
-        <p role="status" className="text-lg">
+        <p role="status" className="text-body-lg">
           {t('pronunciation.resultBody', {
             ok: understood,
             total: items.length,
@@ -123,10 +123,10 @@ export function PronunciationTrainer({
                 <span lang="en">{entry.text}</span>
                 <span
                   className={cn(
-                    'hud text-sm',
+                    'tabular-nums text-body-sm',
                     !own && 'text-muted',
                     own?.understood && 'text-success',
-                    own && !own.understood && (almost(own) ? 'text-warning' : 'text-danger'),
+                    own && !own.understood && (almost(own) ? 'text-warning' : 'text-error'),
                   )}
                 >
                   {!own
@@ -165,7 +165,7 @@ export function PronunciationTrainer({
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="hud text-sm text-muted" aria-live="polite">
+        <p className="tabular-nums text-body-sm text-muted" aria-live="polite">
           {t('pronunciation.itemOf', { n: index + 1, total: items.length })}
         </p>
         <AccentPicker />
@@ -179,7 +179,7 @@ export function PronunciationTrainer({
               key={entry.id}
               className={cn(
                 'h-1.5 flex-1 rounded-full',
-                own?.understood ? 'bg-success' : own ? 'bg-warning' : 'bg-border',
+                own?.understood ? 'bg-success' : own ? 'bg-warning' : 'bg-surface-2',
                 position === index && 'outline-2 outline-offset-2 outline-accent',
               )}
             />
@@ -196,6 +196,7 @@ export function PronunciationTrainer({
         confusions={item.confusions}
         accent={accent}
         onAssessed={(assessment) => record(item.id, assessment)}
+        assessed={Boolean(best[item.id])}
       />
 
       <div className="flex flex-wrap items-center justify-between gap-2">
@@ -207,7 +208,11 @@ export function PronunciationTrainer({
           {t('pronunciation.previous')}
         </Button>
         {last ? (
-          <Button disabled={saving || attempted === 0} onClick={() => void finish()}>
+          <Button
+            variant={best[item.id] ? 'primary' : 'secondary'}
+            disabled={saving || attempted === 0}
+            onClick={() => void finish()}
+          >
             {t('pronunciation.finish')}
           </Button>
         ) : (
@@ -221,11 +226,11 @@ export function PronunciationTrainer({
       </div>
 
       {failed ? (
-        <p role="alert" className="text-sm text-danger">
+        <p role="alert" className="text-body-sm text-error">
           {t('errors.saveFailed')}
         </p>
       ) : null}
-      <p className="text-xs text-muted">{t('pronunciation.privacy')}</p>
+      <p className="text-caption text-muted">{t('pronunciation.privacy')}</p>
     </div>
   );
 }

@@ -52,7 +52,7 @@ export function SignalBars({
             key={name}
             aria-hidden="true"
             className={cn(
-              'relative overflow-hidden rounded-[2px] bg-border',
+              'relative overflow-hidden rounded-structure bg-surface-2',
               HEIGHTS[index],
               reached && (index <= confirmedIndex ? 'bg-accent' : 'bg-accent/55'),
             )}

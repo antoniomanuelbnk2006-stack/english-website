@@ -26,16 +26,17 @@ export function PhaseStepper({
             key={name}
             aria-current={active ? 'step' : undefined}
             className={cn(
-              'flex h-7 shrink-0 items-center gap-1.5 rounded-full border px-2.5 text-xs whitespace-nowrap',
-              // Sin opacidad en las fases futuras: el texto atenuado dejaría de cumplir 4,5:1.
-              active ? 'border-accent font-medium text-accent' : 'border-border text-muted',
-              !active && !done && 'border-dashed',
+              'tag h-7 shrink-0',
+              // La fase actual, en cobalto de texto; las que faltan, sin relleno. Nunca con
+              // opacidad: el texto atenuado dejaría de cumplir 4,5:1.
+              active && 'font-medium text-accent-text',
+              !active && !done && 'bg-transparent',
             )}
           >
             {done ? (
               <Check aria-hidden="true" className="size-3.5 text-success" strokeWidth={2.25} />
             ) : (
-              <span aria-hidden="true" className="hud">
+              <span aria-hidden="true" className="tabular-nums">
                 {index + 1}
               </span>
             )}

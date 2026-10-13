@@ -25,8 +25,8 @@ export interface WordView {
 }
 
 const BADGE = {
-  learning: { label: 'dictionary.badgeLearning', className: 'border-accent text-accent' },
-  known: { label: 'dictionary.badgeKnown', className: 'border-success text-success' },
+  learning: { label: 'dictionary.badgeLearning', className: 'text-accent-text' },
+  known: { label: 'dictionary.badgeKnown', className: 'text-success' },
   ignored: { label: 'dictionary.badgeIgnored', className: '' },
 } as const;
 
@@ -46,7 +46,7 @@ export function Example({
       {parts ? (
         <>
           {parts.before}
-          <strong className="font-semibold text-accent">{parts.match}</strong>
+          <strong className="font-semibold text-accent-text">{parts.match}</strong>
           {parts.after}
         </>
       ) : (
@@ -87,13 +87,13 @@ function WordRow({ word }: { word: WordView }) {
   const badge = state === 'todo' ? null : BADGE[state];
 
   return (
-    <li className="flex flex-col gap-3 rounded-panel border border-border bg-surface p-4 sm:flex-row sm:items-start sm:justify-between">
+    <li className="flex flex-col gap-3 rounded-card bg-surface p-4 sm:flex-row sm:items-start sm:justify-between">
       <div className="min-w-0">
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-          <span lang="en" className="text-lg leading-snug font-medium">
+          <span lang="en" className="text-body-lg leading-snug font-medium">
             {word.lemma}
           </span>
-          <span className="text-xs text-muted">
+          <span className="text-caption text-muted">
             {word.pos.map((pos) => t(`pos.${pos}`)).join(' · ')}
           </span>
           {badge ? <Chip className={badge.className}>{t(badge.label)}</Chip> : null}
@@ -102,10 +102,10 @@ function WordRow({ word }: { word: WordView }) {
         <Example
           sentence={word.example}
           surface={word.surface}
-          className="mt-1 text-sm text-muted"
+          className="mt-1 text-body-sm text-muted"
         />
         {failed ? (
-          <p role="alert" className="mt-1 text-sm text-danger">
+          <p role="alert" className="mt-1 text-body-sm text-error">
             {t('errors.saveFailed')}
           </p>
         ) : null}

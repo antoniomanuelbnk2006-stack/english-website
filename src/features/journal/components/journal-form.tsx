@@ -50,7 +50,7 @@ export function JournalForm() {
   return (
     <form onSubmit={handleSubmit} className="grid gap-4 sm:grid-cols-2" noValidate>
       <fieldset className="flex flex-col gap-2 sm:col-span-2">
-        <legend className="mb-2 text-sm font-medium">{t('journal.kindLabel')}</legend>
+        <legend className="mb-2 text-body-sm font-medium">{t('journal.kindLabel')}</legend>
         <div className="flex flex-wrap gap-4">
           {(
             [
@@ -83,7 +83,7 @@ export function JournalForm() {
           min={1}
           max={600}
           required
-          className="hud"
+          className="tabular-nums"
         />
       </div>
 
@@ -133,7 +133,7 @@ export function JournalForm() {
             inputMode="numeric"
             min={0}
             max={500000}
-            className="hud"
+            className="tabular-nums"
           />
         </div>
       ) : null}

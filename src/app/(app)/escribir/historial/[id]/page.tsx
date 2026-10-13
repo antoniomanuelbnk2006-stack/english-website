@@ -74,31 +74,29 @@ export default async function WritingSubmissionPage({
   }).format(new Date(submission.createdAt));
 
   return (
-    <PageContainer className="max-w-6xl">
+    <PageContainer>
       <header className="flex flex-col gap-3">
         <Link
           href="/escribir/historial"
-          className="flex items-center gap-1.5 self-start rounded-control text-sm text-muted hover:text-text"
+          className="flex items-center gap-1.5 self-start rounded-structure text-body-sm text-muted hover:text-text"
         >
           <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
           {t('writing.backToHistory')}
         </Link>
         {prompt ? (
-          <h1 lang="en" className="text-2xl font-semibold tracking-tight sm:text-3xl">
+          <h1 lang="en" className="text-heading-sm sm:text-heading">
             {prompt.title}
           </h1>
         ) : (
-          <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-            {t('writing.deletedPrompt')}
-          </h1>
+          <h1 className="text-heading-sm sm:text-heading">{t('writing.deletedPrompt')}</h1>
         )}
         <div className="flex flex-wrap items-center gap-1.5">
-          <Chip className="hud">
+          <Chip className="tabular-nums">
             <time dateTime={submission.createdAt}>{day}</time>
           </Chip>
-          <Chip className="hud">{submission.level}</Chip>
+          <Chip className="tabular-nums">{submission.level}</Chip>
           {taskType.success ? <Chip>{t(`writing.types.${taskType.data}`)}</Chip> : null}
-          <Chip className="hud">
+          <Chip className="tabular-nums">
             {submission.wordCount === 1
               ? t('writing.wordCountOne')
               : t('writing.wordCount', { n: submission.wordCount })}

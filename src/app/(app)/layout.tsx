@@ -14,7 +14,7 @@ export default async function AppLayout({ children }: LayoutProps<'/'>) {
   const signal = level ? (
     <span className="flex items-center gap-2">
       <SignalBars level={level} progress={0} label={t('level.chosenLabel', { level })} size="sm" />
-      <span aria-hidden="true" className="hud text-sm text-muted">
+      <span aria-hidden="true" className="text-body-sm text-muted tabular-nums">
         {level}
       </span>
     </span>
@@ -24,15 +24,15 @@ export default async function AppLayout({ children }: LayoutProps<'/'>) {
     <div className="min-h-dvh">
       <a
         href="#contenido"
-        className="sr-only z-50 rounded-control bg-accent px-4 py-2 text-accent-contrast focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+        className="btn btn-primary sr-only z-50 focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
       >
         {t('nav.skipToContent')}
       </a>
 
       <TopNav signal={signal} />
 
-      <header className="sticky top-0 z-20 flex h-14 items-center justify-between border-b border-border bg-bg/90 px-4 backdrop-blur md:hidden">
-        <a href="/landing/index.html" aria-label={t('app.name')} className="rounded-control">
+      <header className="sticky top-0 z-20 flex h-14 items-center justify-between bg-canvas/90 px-4 backdrop-blur md:hidden">
+        <a href="/landing/index.html" aria-label={t('app.name')} className="rounded-structure">
           <Logo />
         </a>
         {signal}

@@ -60,8 +60,8 @@ export function QuickLog() {
     <div className="flex flex-col gap-3">
       {rows.map(({ kind, icon: Icon, label }) => (
         <div key={kind} className="flex flex-wrap items-center gap-2">
-          <span className="flex w-24 shrink-0 items-center gap-2 text-sm font-medium">
-            <Icon aria-hidden="true" className="size-5 text-accent" strokeWidth={1.75} />
+          <span className="flex w-24 shrink-0 items-center gap-2 text-body-sm font-medium">
+            <Icon aria-hidden="true" className="size-5 text-accent-text" strokeWidth={1.75} />
             {label}
           </span>
           <div className="flex flex-wrap gap-2">
@@ -69,7 +69,7 @@ export function QuickLog() {
               <Button
                 key={minutes}
                 variant="secondary"
-                className="hud min-w-16"
+                className="tabular-nums min-w-16"
                 disabled={pending}
                 aria-label={t('journal.logMinutes', { n: minutes, kind: kindLabel(kind) })}
                 onClick={() => log(kind, minutes)}
@@ -80,7 +80,10 @@ export function QuickLog() {
           </div>
         </div>
       ))}
-      <p role="status" className="flex min-h-9 flex-wrap items-center gap-2 text-sm text-muted">
+      <p
+        role="status"
+        className="flex min-h-9 flex-wrap items-center gap-2 text-body-sm text-muted"
+      >
         {message}
         {last ? (
           <Button variant="ghost" size="sm" disabled={pending} onClick={undo}>

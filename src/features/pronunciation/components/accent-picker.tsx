@@ -24,17 +24,17 @@ export function AccentPicker() {
   return (
     <fieldset className="flex flex-wrap items-center gap-2">
       <legend className="sr-only">{t('pronunciation.accent')}</legend>
-      <span aria-hidden="true" className="text-xs text-muted">
+      <span aria-hidden="true" className="text-caption text-muted">
         {t('pronunciation.accent')}
       </span>
       {ACCENTS.map((option) => (
         <label
           key={option}
           className={cn(
-            'flex h-8 cursor-pointer items-center rounded-full border px-3 text-sm transition-colors duration-150 pointer-coarse:h-11 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent',
+            'flex h-8 cursor-pointer items-center rounded-full border px-3 text-body-sm transition-colors duration-150 pointer-coarse:h-11 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent',
             option === accent
-              ? 'border-accent bg-surface-2 font-medium text-accent'
-              : 'border-border text-muted hover:border-subtle hover:text-text',
+              ? 'border-accent bg-surface-2 font-medium text-accent-text'
+              : 'border-transparent bg-surface-2 text-muted hover:border-border hover:text-text',
           )}
         >
           <input

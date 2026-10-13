@@ -1,155 +1,180 @@
 @import 'tailwindcss';
 
-/* Sistema de diseño de Señal: docs/03-producto/05-sistema-de-diseno.md.
-   Este es el único fichero donde se escriben colores; los componentes usan clases semánticas. */
+/* Sistema de diseño de Señal. La fuente de verdad es design-system/senal/MASTER.md y este fichero
+   es su implementación: el único sitio donde se escriben colores. Los componentes usan los tokens
+   y las clases de aquí, nunca un hex suelto. */
 
-@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+/* ───────────── Color (MASTER §2) ───────────── */
 
-/* Oscuro: el azul marino de la marca, con el verde aclarado para que se lea sobre fondo oscuro. */
+/* Oscuro, el tema de Señal: la paleta de MASTER tal cual. */
 :root,
 [data-theme='dark'] {
   color-scheme: dark;
-  --bg: #16212b; /* azul marino profundo */
-  --surface: #1e2b37; /* paneles */
-  --surface-2: #273645; /* paneles elevados, popovers */
-  --border: #36495b;
-  --border-strong: #6b7f92;
-  --text: #fcf9f2;
-  --text-muted: #b4bec8; /* texto secundario: ≥ 4,5:1 */
-  --text-subtle: #8a97a4; /* solo iconos, bordes y placeholders, nunca texto */
-  --accent: #5cbf88; /* verde: acción principal, señal */
-  --accent-strong: #4aab76;
-  --accent-contrast: #0e1a13; /* texto sobre --accent */
-  --electric: #76abe9; /* azul: secundario, gráficos */
-  --success: #6fc277;
-  --warning: #f5a623;
-  --danger: #f28b82;
-  --karaoke: rgb(92 191 136 / 0.2);
-  --word-unknown: rgb(92 191 136 / 0.55);
-  --word-learning: rgb(245 166 35 / 0.6);
-  --focus: #8fe0b3;
+  --canvas: #171721; /* fondo de página (nivel 0) */
+  --surface: #1e1e2a; /* tarjetas, paneles (nivel 1) */
+  --surface-2: #272735; /* botón secundario, input relleno, tags, pista de progreso (nivel 2) */
+  --border: #70707d; /* divisores, hover de opciones */
+  --border-soft: #e2e3ed; /* bordes finos, ghost buttons, inputs */
+  --text: #ededf3;
+  --muted: #c3c3cc; /* texto secundario, ayudas, placeholders */
+  --accent: #5266eb; /* RELLENO: botón principal, barra de progreso, foco. Nunca como texto */
+  --accent-hover: #4557d9; /* el relleno al pasar el ratón */
+  --accent-text: #8b98ff; /* cobalto COMO TEXTO: enlaces, nav activo, palabra resaltada */
+  --on-accent: #ffffff;
+  --success: #6cbf95;
+  --error: #e07575;
+  --warning: #d8ad5a;
+  --logo-filter: brightness(0) invert(1); /* el logotipo, en un solo tono claro */
 }
 
-/* Claro (por defecto): la paleta de la presentación — crema, azul marino y verde. */
+/* Claro y «papel» no están en MASTER (que es oscuro): existen porque Ajustes deja elegirlos. Son el
+   mismo sistema —mismo cobalto, misma tipografía y mismas formas— con los niveles invertidos. */
 [data-theme='light'] {
   color-scheme: light;
-  --bg: #fcf9f2;
-  --surface: #f2f0ea;
-  --surface-2: #e8e5dc;
-  --border: #c2c5c5;
-  --border-strong: #2c3e50; /* el borde azul marino de las tarjetas de la presentación */
-  --text: #2c3e50;
-  --text-muted: #55606b;
-  --text-subtle: #69727b;
-  --accent: #1f6b42;
-  --accent-strong: #17562f;
-  --accent-contrast: #ffffff;
-  --electric: #2f6db5;
-  --success: #2a7030;
-  --warning: #8a5200;
-  --danger: #b91c1c;
-  --karaoke: rgb(31 107 66 / 0.14);
-  --word-unknown: rgb(31 107 66 / 0.5);
-  --word-learning: rgb(138 82 0 / 0.5);
-  --focus: #17562f;
+  --canvas: #f5f5f9;
+  --surface: #ffffff;
+  --surface-2: #e9e9f1;
+  --border: #7a7a8a;
+  --border-soft: #2c2c3a;
+  --text: #171721;
+  --muted: #4b4b5a;
+  --accent: #5266eb;
+  --accent-hover: #4557d9;
+  --accent-text: #3447c8;
+  --on-accent: #ffffff;
+  --success: #17603b;
+  --error: #a52c2c;
+  --warning: #6f4a00;
+  --logo-filter: brightness(0);
 }
 
 /* «Según el sistema»: oscuro salvo que el sistema pida claro. */
 @media (prefers-color-scheme: light) {
   [data-theme='system'] {
     color-scheme: light;
-    --bg: #fcf9f2;
-    --surface: #f2f0ea;
-    --surface-2: #e8e5dc;
-    --border: #c2c5c5;
-    --border-strong: #2c3e50;
-    --text: #2c3e50;
-    --text-muted: #55606b;
-    --text-subtle: #69727b;
-    --accent: #1f6b42;
-    --accent-strong: #17562f;
-    --accent-contrast: #ffffff;
-    --electric: #2f6db5;
-    --success: #2a7030;
-    --warning: #8a5200;
-    --danger: #b91c1c;
-    --karaoke: rgb(31 107 66 / 0.14);
-    --word-unknown: rgb(31 107 66 / 0.5);
-    --word-learning: rgb(138 82 0 / 0.5);
-    --focus: #17562f;
+    --canvas: #f5f5f9;
+    --surface: #ffffff;
+    --surface-2: #e9e9f1;
+    --border: #7a7a8a;
+    --border-soft: #2c2c3a;
+    --text: #171721;
+    --muted: #4b4b5a;
+    --accent: #5266eb;
+    --accent-hover: #4557d9;
+    --accent-text: #3447c8;
+    --on-accent: #ffffff;
+    --success: #17603b;
+    --error: #a52c2c;
+    --warning: #6f4a00;
+    --logo-filter: brightness(0);
   }
 }
 
-/* Papel: solo para el lector y las tarjetas (se aplica en su contenedor). */
+/* Papel: solo para el texto del lector (se aplica en su contenedor). */
 [data-theme='paper'] {
   color-scheme: light;
-  --bg: #f5f1e6;
-  --surface: #fbf8ef;
-  --surface-2: #ece7d9;
-  --border: #d9d2bf;
-  --border-strong: #2c3e50;
-  --text: #2c3e50;
-  --text-muted: #55606b;
-  --text-subtle: #6d7680;
-  --accent: #1f6b42;
-  --accent-strong: #17562f;
-  --accent-contrast: #ffffff;
-  --electric: #2f6db5;
-  --success: #2a7030;
-  --warning: #8a5200;
-  --danger: #b91c1c;
-  --karaoke: rgb(31 107 66 / 0.14);
-  --word-unknown: rgb(31 107 66 / 0.5);
-  --word-learning: rgb(138 82 0 / 0.5);
-  --focus: #17562f;
-  background-color: var(--bg);
+  --canvas: #f3efe4;
+  --surface: #faf7ee;
+  --surface-2: #e9e4d6;
+  --border: #827c6e;
+  --border-soft: #2c2c3a;
+  --text: #171721;
+  --muted: #4b4b5a;
+  --accent: #5266eb;
+  --accent-hover: #4557d9;
+  --accent-text: #3447c8;
+  --on-accent: #ffffff;
+  --success: #17603b;
+  --error: #a52c2c;
+  --warning: #6f4a00;
+  --logo-filter: brightness(0);
+  background-color: var(--canvas);
   color: var(--text);
 }
 
 @theme inline {
-  --color-bg: var(--bg);
+  /* Solo existen los colores de MASTER: la paleta por defecto de Tailwind queda fuera. */
+  --color-*: initial;
+  --color-canvas: var(--canvas);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
   --color-border: var(--border);
-  --color-border-strong: var(--border-strong);
+  --color-border-soft: var(--border-soft);
   --color-text: var(--text);
-  --color-muted: var(--text-muted);
-  --color-subtle: var(--text-subtle);
+  --color-muted: var(--muted);
   --color-accent: var(--accent);
-  --color-accent-strong: var(--accent-strong);
-  --color-accent-contrast: var(--accent-contrast);
-  --color-electric: var(--electric);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-text: var(--accent-text);
+  --color-on-accent: var(--on-accent);
   --color-success: var(--success);
+  --color-error: var(--error);
   --color-warning: var(--warning);
-  --color-danger: var(--danger);
-  --color-karaoke: var(--karaoke);
-  --color-word-unknown: var(--word-unknown);
-  --color-word-learning: var(--word-learning);
-  --color-focus: var(--focus);
-  --font-sans: var(--font-madefor), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-fraunces), Georgia, serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
-  --font-reading: var(--font-literata), Georgia, serif;
-  --radius-panel: 24px;
-  --radius-control: 10px;
-}
 
-/* Escritorio: como la presentación, todo escala con el ancho de la ventana (el rem crece con ella;
-   por debajo de 1440 px se queda en 16 px). */
-@media (min-width: 1024px) {
-  html {
-    font-size: max(16px, 1.111vw);
-  }
+  /* Tipografía (MASTER §3): Inter para el cuerpo y Archivo para los titulares. */
+  --font-*: initial;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-archivo), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Pesos: 360 / 400 / 420 / 480. No hay `font-bold`. */
+  --font-weight-*: initial;
+  --font-weight-light: 360;
+  --font-weight-normal: 400;
+  --font-weight-medium: 420;
+  --font-weight-semibold: 480;
+
+  /* Escala: la de MASTER y ninguna más. */
+  --text-*: initial;
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1.33;
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.4;
+  --text-body: 1rem;
+  --text-body--line-height: 1.5;
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.5;
+  --text-subheading: 1.3125rem;
+  --text-subheading--line-height: 1.35;
+  --text-heading-sm: 1.75rem;
+  --text-heading-sm--line-height: 1.2;
+  --text-heading: 2rem;
+  --text-heading--line-height: 1.15;
+  --text-heading-lg: clamp(2rem, 1.47rem + 1.7vw, 2.625rem); /* 32 → 42 px */
+  --text-heading-lg--line-height: 1.15;
+  --text-display: clamp(2.5rem, 1.6rem + 2.9vw, 4.0625rem); /* 40 → 65 px */
+  --text-display--line-height: 1.1;
+  --text-display--font-weight: 530;
+
+  /* Forma (MASTER §4): tarjeta 12, controles 32, nav y tags 40, estructura 4. */
+  --radius-*: initial;
+  --radius-card: 12px;
+  --radius-pill: 32px;
+  --radius-nav: 40px;
+  --radius-structure: 4px;
+
+  /* Layout: contenedor de página y columna de las pantallas de ejercicio. */
+  --container-page: 75rem; /* 1200 px */
+  --container-exercise: 42.5rem; /* 680 px */
+
+  /* Sin sombras: la elevación sale del salto canvas → surface → surface-2. */
+  --shadow-*: initial;
+  --drop-shadow-*: initial;
 }
 
 @layer base {
   html {
-    background-color: var(--bg);
+    background-color: var(--canvas);
     color: var(--text);
     -webkit-text-size-adjust: 100%;
   }
 
-  /* Títulos en Fraunces, como la presentación; el resto, en Wix Madefor Text. */
+  body {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  /* Titulares en Archivo ensanchado, nunca por encima de 530. */
   h1,
   h2,
   h3,
@@ -157,22 +182,19 @@
   h5,
   h6 {
     font-family: var(--font-display);
+    font-stretch: 112%;
+    font-weight: 480;
+    text-wrap: balance;
   }
 
-  body {
-    font-family: var(--font-sans);
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  /* Foco visible: anillo de 2 px con 2 px de separación (WCAG 2.2 AA). */
+  /* Foco visible en todo control: 2 px de cobalto con 2 px de separación. */
   :focus-visible {
-    outline: 2px solid var(--focus);
+    outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
 
   ::selection {
-    background-color: var(--karaoke);
+    background-color: color-mix(in srgb, var(--accent) 35%, transparent);
   }
 
   /* El contenido de aprendizaje va en inglés: sin partición automática de palabras. */
@@ -181,39 +203,320 @@
   }
 }
 
-/* Lector: 19/32 por defecto y 22/36 en grande; medida de 60–72 caracteres. */
-@utility reading-md {
-  font-family: var(--font-reading);
-  font-size: 1.1875rem;
-  line-height: 2rem;
-  text-wrap: pretty;
-  hyphens: manual;
+/* ───────────── Componentes (MASTER §5) ───────────── */
+
+@layer components {
+  /* Superficie de contenido. */
+  .card {
+    border-radius: 12px;
+    background-color: var(--surface);
+    padding: 24px;
+  }
+
+  @media (min-width: 640px) {
+    .card {
+      padding: 32px;
+    }
+  }
+
+  /* Botones: píldoras de 44 px. Las transiciones, solo de color, borde y opacidad. */
+  .btn {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 20px;
+    border: 1px solid transparent;
+    border-radius: 32px;
+    font-size: 0.875rem;
+    font-weight: 420;
+    line-height: 1.4;
+    white-space: nowrap;
+    user-select: none;
+    transition:
+      color 150ms ease-out,
+      background-color 150ms ease-out,
+      border-color 150ms ease-out,
+      opacity 150ms ease-out;
+  }
+
+  .btn:disabled,
+  .btn[aria-disabled='true'] {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .btn svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  /* Acción principal: cobalto. Una por pantalla. */
+  .btn-primary {
+    background-color: var(--accent);
+    color: var(--on-accent);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--accent-hover);
+  }
+
+  /* Acción secundaria: rellena en surface-2. */
+  .btn-secondary {
+    background-color: var(--surface-2);
+    color: var(--text);
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--border);
+  }
+
+  /* Acción terciaria: solo el borde fino. */
+  .btn-ghost {
+    border-color: var(--border-soft);
+    color: var(--text);
+  }
+
+  .btn-ghost:hover {
+    background-color: var(--surface-2);
+  }
+
+  /* Solo icono, 44 × 44. Lleva siempre `aria-label`. */
+  .btn-icon {
+    display: inline-grid;
+    flex-shrink: 0;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 32px;
+    color: var(--muted);
+    transition:
+      color 150ms ease-out,
+      background-color 150ms ease-out,
+      opacity 150ms ease-out;
+  }
+
+  .btn-icon:hover {
+    background-color: var(--surface-2);
+    color: var(--text);
+  }
+
+  .btn-icon:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .btn-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Campos: píldora; el de varias líneas (writings), caja de 12 px. */
+  .input {
+    width: 100%;
+    min-height: 44px;
+    padding: 0 16px;
+    border: 1px solid var(--border-soft);
+    border-radius: 32px;
+    background-color: var(--surface-2);
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.5;
+    transition:
+      border-color 150ms ease-out,
+      opacity 150ms ease-out;
+  }
+
+  textarea.input {
+    min-height: 96px;
+    padding: 12px 16px;
+    border-radius: 12px;
+  }
+
+  select.input {
+    padding-right: 32px;
+  }
+
+  .input::placeholder {
+    color: var(--muted);
+  }
+
+  .input:disabled {
+    opacity: 0.5;
+  }
+
+  .input[aria-invalid='true'] {
+    border-color: var(--error);
+  }
+
+  /* Respuesta de test. Estados: `aria-pressed` (o su control marcado) y `data-state`. */
+  .option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 16px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: var(--surface-2);
+    color: var(--text);
+    text-align: left;
+    transition:
+      border-color 150ms ease-out,
+      background-color 150ms ease-out,
+      opacity 150ms ease-out;
+  }
+
+  .option:hover {
+    border-color: var(--border);
+  }
+
+  /* Bloqueada (su control está deshabilitado) o estática: no responde al ratón. Con `:where`
+     para que no pese más que los estados de abajo. */
+  .option:where(.is-static, :has(input:disabled)):hover {
+    border-color: transparent;
+  }
+
+  .option[aria-pressed='true'],
+  .option:has(:checked) {
+    border-color: var(--accent);
+  }
+
+  .option[data-state='correct'] {
+    border-color: var(--success);
+    background-color: color-mix(in srgb, var(--success) 12%, transparent);
+  }
+
+  .option[data-state='wrong'] {
+    border-color: var(--error);
+    background-color: color-mix(in srgb, var(--error) 12%, transparent);
+  }
+
+  /* Banda de corrección bajo el ejercicio: icono + texto, con el color al 12 %. */
+  .feedback {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background-color: var(--surface-2);
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  .feedback[data-tone='success'] {
+    background-color: color-mix(in srgb, var(--success) 12%, transparent);
+  }
+
+  .feedback[data-tone='error'] {
+    background-color: color-mix(in srgb, var(--error) 12%, transparent);
+  }
+
+  .feedback[data-tone='warning'] {
+    background-color: color-mix(in srgb, var(--warning) 12%, transparent);
+  }
+
+  /* Barra de progreso de sesión: pista surface-2 y relleno cobalto que anima su ancho. */
+  .progress {
+    display: block;
+    width: 100%;
+    height: 6px;
+    overflow: hidden;
+    border-radius: 32px;
+    background-color: var(--surface-2);
+  }
+
+  .progress > * {
+    display: block;
+    height: 100%;
+    border-radius: 32px;
+    background-color: var(--accent);
+    transition: width 300ms ease-out;
+  }
+
+  /* Nivel CEFR, destreza, tema. */
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 24px;
+    padding: 0 10px;
+    border-radius: 40px;
+    background-color: var(--surface-2);
+    color: var(--muted);
+    font-size: 0.75rem;
+    line-height: 1.33;
+    white-space: nowrap;
+  }
+
+  /* Enlace de navegación; el activo se marca con `aria-current="page"`. */
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 16px;
+    border-radius: 40px;
+    color: var(--muted);
+    font-size: 0.875rem;
+    line-height: 1.4;
+    transition:
+      color 150ms ease-out,
+      background-color 150ms ease-out;
+  }
+
+  .nav-link:hover {
+    color: var(--text);
+  }
+
+  .nav-link[aria-current='page'],
+  .nav-link[data-active='true'] {
+    background-color: var(--surface-2);
+    color: var(--accent-text);
+    font-weight: 420;
+  }
+
+  /* Placeholder de carga estable: sin parpadeo. */
+  .skeleton {
+    border-radius: 12px;
+    background-color: var(--surface-2);
+  }
+
+  /* Texto largo de lectura: 19 px, interlineado 1,7 y 68 caracteres por línea como mucho. */
+  .prose-reading {
+    max-width: 68ch;
+    font-size: 1.1875rem;
+    line-height: 1.7;
+    text-wrap: pretty;
+    hyphens: manual;
+  }
+
+  /* Contenedor de página con 72 px de ritmo vertical. */
+  .section {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 72px 16px;
+  }
+
+  @media (min-width: 640px) {
+    .section {
+      padding-inline: 24px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section {
+      padding-inline: 32px;
+    }
+  }
 }
 
-@utility reading-lg {
-  font-family: var(--font-reading);
-  font-size: 1.375rem;
-  line-height: 2.25rem;
-  text-wrap: pretty;
-  hyphens: manual;
-}
-
-@utility reading-measure {
-  max-width: 68ch;
-}
-
-/* Cifras del HUD: monoespaciadas y alineadas. */
-@utility hud {
-  font-family: var(--font-mono);
-  font-variant-numeric: tabular-nums;
-}
-
-/* «Brillo» sutil para el elemento activo; la elevación va con bordes, no con sombras. */
-@utility glow {
-  box-shadow:
-    0 0 0 1px var(--accent),
-    0 0 24px -8px var(--accent);
-}
+/* ───────────── Movimiento (MASTER §6) ───────────── */
 
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -226,79 +529,21 @@
   }
 }
 
-/* Entradas de la presentación (ADR-0022). El título se inclina al cargar; los paneles giran hacia
-   delante al entrar en pantalla, ligados al scroll (sin soporte, no se animan). */
-@keyframes entrance-tilt-fade {
-  from {
-    opacity: 0;
-  }
-}
-
-@keyframes entrance-tilt-rotate {
-  from {
-    transform: perspective(800px) translateZ(-100px) rotateX(-90deg) translateZ(100px);
-  }
-}
-
-@keyframes entrance-tilt-clip {
-  from {
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  to {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-}
-
-@keyframes entrance-arc-fade {
-  from {
-    opacity: 0;
-  }
-}
-
-@keyframes entrance-arc-rotate {
-  from {
-    transform: perspective(800px) translateZ(-450px) rotateX(-80deg) translateZ(450px);
-  }
-}
-
-.entrance-tilt {
-  animation:
-    entrance-tilt-fade 240ms cubic-bezier(0.215, 0.61, 0.355, 1) backwards,
-    entrance-tilt-rotate 1200ms cubic-bezier(0.215, 0.61, 0.355, 1) backwards,
-    entrance-tilt-clip 960ms cubic-bezier(0.215, 0.61, 0.355, 1) backwards;
-}
-
-@supports (animation-timeline: view()) {
-  .entrance-arc {
-    animation:
-      entrance-arc-fade linear both,
-      entrance-arc-rotate linear both;
-    animation-timeline: view(), view();
-    animation-range: entry 0% entry 60%;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .entrance-tilt,
-  .entrance-arc {
-    animation: none !important;
-  }
-}
+/* ───────────── Texto de estudio ───────────── */
 
 /* Karaoke: el reproductor marca la palabra que suena con un atributo, sin volver a renderizar. */
 [data-w] {
-  border-radius: 3px;
-  transition: background-color 120ms ease-out;
+  border-radius: 4px;
+  transition: background-color 150ms ease-out;
 }
 
 [data-w][data-active] {
-  background-color: var(--karaoke);
-  box-shadow: 0 0 0 2px var(--karaoke);
+  background-color: color-mix(in srgb, var(--accent) 35%, transparent);
 }
 
 /* Rasgo de habla conectada marcado en la transcripción. */
 [data-feature] {
-  text-decoration: underline dotted var(--accent);
+  text-decoration: underline dotted var(--accent-text);
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
 }
@@ -306,7 +551,7 @@
 /* Palabras tocables del lector y de la transcripción: botones que se leen como texto. */
 [data-word] {
   display: inline;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
   touch-action: manipulation;
 }
@@ -332,7 +577,7 @@
 }
 
 [data-word][data-lex='learning'] {
-  text-decoration: underline solid var(--accent);
+  text-decoration: underline solid var(--accent-text);
   text-decoration-thickness: 1px;
   text-underline-offset: 5px;
 }

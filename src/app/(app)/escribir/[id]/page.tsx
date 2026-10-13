@@ -28,29 +28,29 @@ export default async function WritingPromptPage({ params }: PageProps<'/escribir
   const fichas = Object.fromEntries(getGrammarIndex().map((ficha) => [ficha.id, ficha.title]));
 
   return (
-    <PageContainer className="max-w-6xl">
+    <PageContainer>
       <header className="flex flex-col gap-3">
         <Link
           href="/escribir"
-          className="flex items-center gap-1.5 self-start rounded-control text-sm text-muted hover:text-text"
+          className="flex items-center gap-1.5 self-start rounded-structure text-body-sm text-muted hover:text-text"
         >
           <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
           {t('writing.backToIndex')}
         </Link>
-        <h1 lang="en" className="text-2xl font-semibold tracking-tight sm:text-3xl">
+        <h1 lang="en" className="text-heading-sm sm:text-heading">
           {prompt.title}
         </h1>
         <div className="flex flex-wrap items-center gap-1.5">
-          <Chip className="hud">{prompt.level}</Chip>
+          <Chip className="tabular-nums">{prompt.level}</Chip>
           <Chip>{t(`writing.types.${prompt.task_type}`)}</Chip>
-          <Chip className="hud">
+          <Chip className="tabular-nums">
             {t('writing.words', { min: prompt.words_min, max: prompt.words_max })}
           </Chip>
-          <Chip className="hud">{t('lesson.minutes', { n: prompt.time_min })}</Chip>
+          <Chip className="tabular-nums">{t('lesson.minutes', { n: prompt.time_min })}</Chip>
           {own ? (
             <Link
               href="/escribir/historial"
-              className="text-sm text-accent underline underline-offset-4"
+              className="text-body-sm text-accent-text underline underline-offset-4"
             >
               {own.count === 1
                 ? t('writing.timesDoneOne')

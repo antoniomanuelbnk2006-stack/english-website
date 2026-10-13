@@ -45,24 +45,24 @@ export default async function ExamResultPage({ params }: PageProps<'/examenes/[i
   }).format(new Date(sitting.at));
 
   return (
-    <PageContainer className="max-w-3xl">
+    <PageContainer width="exercise">
       <header className="flex flex-col gap-3">
         <Link
           href={{ pathname: '/examenes', query: { nivel: paper.level } }}
-          className="flex items-center gap-1.5 self-start rounded-control text-sm text-muted hover:text-text"
+          className="flex items-center gap-1.5 self-start rounded-structure text-body-sm text-muted hover:text-text"
         >
           <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
           {t('exams.backToIndex')}
         </Link>
-        <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          {t('exams.resultTitle')}
-        </h1>
+        <h1 className="text-heading-sm sm:text-heading">{t('exams.resultTitle')}</h1>
         <p lang="en" className="text-muted">
           {format.exam} · {format[paper.paper].title}
         </p>
         <div className="flex flex-wrap items-center gap-1.5">
-          <Chip className="hud">{paper.level}</Chip>
-          <Chip className="hud">{t('exams.test', { n: parsePaperId(paper.id)?.test ?? 1 })}</Chip>
+          <Chip className="tabular-nums">{paper.level}</Chip>
+          <Chip className="tabular-nums">
+            {t('exams.test', { n: parsePaperId(paper.id)?.test ?? 1 })}
+          </Chip>
           <Chip>{when}</Chip>
         </div>
       </header>

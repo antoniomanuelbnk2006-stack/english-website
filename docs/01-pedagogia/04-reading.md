@@ -134,9 +134,9 @@ Un libro graduado de nivel B1 tiene típicamente entre 10.000 y 25.000 palabras.
 | Decisión | Detalle |
 |---|---|
 | Medida de línea | 60–72 caracteres; tamaño de letra ajustable (16–24 px). |
-| Tipografía | Serifa de lectura larga para el cuerpo (Literata), sans para la interfaz. Ver [diseño](../03-producto/05-sistema-de-diseno.md). |
+| Tipografía | La de la interfaz (Inter), a 19 px y con interlineado 1,7 para leer mucho rato. Ver [diseño](../03-producto/05-sistema-de-diseno.md). |
 | Tema | Oscuro por defecto con contraste suavizado; tema «papel» claro para leer de día. |
-| Resaltado léxico (opcional) | Desconocidas con subrayado cian tenue; en aprendizaje, ámbar. Desactivado en la fase 2 para no condicionar. |
+| Resaltado léxico (opcional) | Desconocidas con subrayado punteado en ámbar; en aprendizaje, una línea fina en cobalto. Desactivado en la fase 2 para no condicionar. |
 | Toque/clic | Glosario contextual; pulsación larga = marcar desconocida. |
 | Accesibilidad | Navegación por teclado, lectores de pantalla (texto real, no imágenes), foco visible. |
 

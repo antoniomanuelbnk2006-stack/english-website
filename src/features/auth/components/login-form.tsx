@@ -156,7 +156,7 @@ export function LoginForm({ fixedCode = false }: { fixedCode?: boolean }) {
 
   return (
     <form onSubmit={handleCode} className="flex flex-col gap-4" noValidate>
-      <p className="text-sm text-muted" role="status">
+      <p className="text-body-sm text-muted" role="status">
         {fixed
           ? t('login.fixedCodePrompt', { email: sentTo })
           : t('login.codeSent', { email: sentTo })}
@@ -171,7 +171,7 @@ export function LoginForm({ fixedCode = false }: { fixedCode?: boolean }) {
           pattern={fixed ? `\\d{${FIXED_CODE_MIN},${FIXED_CODE_MAX}}` : '\\d{6}'}
           required
           autoFocus
-          className="hud h-14 text-center text-2xl tracking-[0.5em]"
+          className="tabular-nums h-14 text-center text-heading-sm tracking-[0.5em]"
           value={code}
           // Sin maxLength: al pegar «123 456» el navegador cortaría antes de quitar el espacio.
           onChange={(e) =>

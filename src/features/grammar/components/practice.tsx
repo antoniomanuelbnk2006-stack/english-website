@@ -76,8 +76,11 @@ export function Practice({
           const outcome = byItem.get(item.id);
           return (
             <li key={item.id} className="flex flex-col gap-1.5">
-              <p lang="en" className="reading-md flex flex-wrap items-baseline gap-x-1.5 gap-y-2">
-                <span lang="es" className="hud text-sm text-muted">
+              <p
+                lang="en"
+                className="prose-reading flex flex-wrap items-baseline gap-x-1.5 gap-y-2"
+              >
+                <span lang="es" className="tabular-nums text-body-sm text-muted">
                   {index + 1}.
                 </span>
                 <span>{prompt.before}</span>
@@ -101,8 +104,8 @@ export function Practice({
               {outcome ? (
                 <p
                   className={cn(
-                    'flex items-start gap-2 text-sm',
-                    outcome.correct ? 'text-success' : 'text-danger',
+                    'flex items-start gap-2 text-body-sm',
+                    outcome.correct ? 'text-success' : 'text-error',
                   )}
                 >
                   {outcome.correct ? (
@@ -130,7 +133,7 @@ export function Practice({
       </ol>
 
       {failed ? (
-        <p role="alert" className="text-sm text-danger">
+        <p role="alert" className="text-body-sm text-error">
           {t('errors.saveFailed')}
         </p>
       ) : null}
@@ -140,7 +143,7 @@ export function Practice({
           ref={resultRef}
           tabIndex={-1}
           role="status"
-          className="flex flex-col gap-3 rounded-control border border-border bg-surface-2 p-3 outline-none"
+          className="feedback flex-col items-stretch gap-3 text-body outline-none"
         >
           <p className="font-medium">
             {t('grammar.practiceScore', {
@@ -150,18 +153,18 @@ export function Practice({
             })}
           </p>
           {result.cardsAdded > 0 ? (
-            <p className="text-sm text-muted">
+            <p className="text-body-sm text-muted">
               {result.cardsAdded === 1
                 ? t('grammar.cardsAddedOne')
                 : t('grammar.cardsAdded', { n: result.cardsAdded })}
             </p>
           ) : null}
           <div className="flex flex-wrap gap-2">
-            <Button variant="secondary" onClick={reset}>
+            <Button variant="ghost" onClick={reset}>
               {t('grammar.practiceAgain')}
             </Button>
             {result.cardsAdded > 0 ? (
-              <Link href="/repasar" className={buttonVariants({ variant: 'outline' })}>
+              <Link href="/repasar" className={buttonVariants({ variant: 'ghost' })}>
                 {t('harvest.goReview')}
               </Link>
             ) : null}

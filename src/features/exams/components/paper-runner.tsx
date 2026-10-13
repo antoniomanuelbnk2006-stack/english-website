@@ -222,17 +222,21 @@ export function PaperRunner({
     return (
       <div className="flex flex-col gap-5">
         <Panel className="flex flex-col gap-4">
-          <p className="flex items-center gap-2 text-lg font-medium">
+          <p className="flex items-center gap-2 text-body-lg font-medium">
             {listening ? (
-              <Headphones aria-hidden="true" className="size-5 text-accent" strokeWidth={1.75} />
+              <Headphones
+                aria-hidden="true"
+                className="size-5 text-accent-text"
+                strokeWidth={1.75}
+              />
             ) : (
-              <Clock aria-hidden="true" className="size-5 text-accent" strokeWidth={1.75} />
+              <Clock aria-hidden="true" className="size-5 text-accent-text" strokeWidth={1.75} />
             )}
             {listening
               ? t('exams.introListeningTime', { min: Math.round(seconds / 60) })
               : t('exams.introTime', { min: format.minutes })}
           </p>
-          <ul className="flex list-disc flex-col gap-1.5 pl-5 text-sm text-muted">
+          <ul className="flex list-disc flex-col gap-1.5 pl-5 text-body-sm text-muted">
             {(listening
               ? ([
                   'exams.ruleTape',
@@ -250,19 +254,19 @@ export function PaperRunner({
               <li key={key}>{t(key)}</li>
             ))}
           </ul>
-          <ol className="flex flex-col divide-y divide-border rounded-control border border-border">
+          <ol className="flex flex-col divide-y divide-border rounded-card bg-surface-2">
             {format.parts.map((part, index) => (
               <li
                 key={index}
-                className="flex flex-wrap items-baseline gap-x-3 gap-y-1 px-3 py-2 text-sm"
+                className="flex flex-wrap items-baseline gap-x-3 gap-y-1 px-3 py-2 text-body-sm"
               >
-                <span className="hud w-16 shrink-0 text-muted">
+                <span className="tabular-nums w-16 shrink-0 text-muted">
                   {t('exams.part', { n: index + 1 })}
                 </span>
                 <span lang="en" className="min-w-0 flex-1 font-medium">
                   {part.name}
                 </span>
-                <span className="hud text-xs text-muted">
+                <span className="tabular-nums text-caption text-muted">
                   {part.type === 'writing'
                     ? t('exams.unscored')
                     : t('exams.partMarks', {
@@ -274,7 +278,7 @@ export function PaperRunner({
             ))}
           </ol>
           {listening && !hasAudio ? (
-            <p role="alert" className="text-sm text-warning">
+            <p role="alert" className="text-body-sm text-warning">
               {t('exams.noAudio')}
             </p>
           ) : null}
@@ -299,7 +303,7 @@ export function PaperRunner({
     <div className="flex flex-col gap-5">
       <div
         ref={topRef}
-        className="sticky top-14 z-10 -mx-4 flex scroll-mt-16 flex-col gap-3 border-b border-border bg-bg/95 px-4 py-3 backdrop-blur sm:-mx-6 sm:px-6 md:top-0 md:scroll-mt-2 lg:-mx-8 lg:px-8"
+        className="sticky top-14 z-10 -mx-4 flex scroll-mt-16 flex-col gap-3 border-b border-border bg-canvas/90 px-4 py-3 backdrop-blur sm:-mx-6 sm:px-6 md:top-18 md:scroll-mt-20 lg:-mx-8 lg:px-8"
       >
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
           {listening ? (
@@ -318,7 +322,7 @@ export function PaperRunner({
                 />
               </div>
             ) : (
-              <p role="alert" className="min-w-0 flex-1 text-sm text-danger">
+              <p role="alert" className="min-w-0 flex-1 text-body-sm text-error">
                 {t('exams.audioError')}
               </p>
             )
@@ -327,7 +331,7 @@ export function PaperRunner({
               role="timer"
               aria-label={t('exams.timeLeftLabel')}
               className={cn(
-                'hud flex items-center gap-2 text-lg',
+                'tabular-nums flex items-center gap-2 text-body-lg',
                 remaining !== null && remaining <= 5 * 60_000 ? 'text-warning' : 'text-text',
               )}
             >
@@ -335,7 +339,7 @@ export function PaperRunner({
               {formatClock(remaining ?? 0)}
             </p>
           )}
-          <span className="hud text-sm text-muted">
+          <span className="tabular-nums text-body-sm text-muted">
             {t('exams.answered', { done: answered, total: scored.length })}
           </span>
           <Button
@@ -360,14 +364,19 @@ export function PaperRunner({
                     aria-current={index === current ? 'true' : undefined}
                     onClick={() => goTo(index)}
                     className={cn(
-                      'flex h-9 items-center gap-2 rounded-full border px-3 text-sm transition-colors duration-150 pointer-coarse:h-11',
+                      'flex h-9 items-center gap-2 rounded-full border px-3 text-body-sm transition-colors duration-150 pointer-coarse:h-11',
                       index === current
-                        ? 'border-accent bg-surface-2 font-medium text-accent'
-                        : 'border-border text-muted hover:border-subtle hover:text-text',
+                        ? 'border-accent bg-surface-2 font-medium text-accent-text'
+                        : 'border-transparent bg-surface-2 text-muted hover:border-border hover:text-text',
                     )}
                   >
                     {t('exams.part', { n: index + 1 })}
-                    <span className={cn('hud text-xs', done === own.length && 'text-success')}>
+                    <span
+                      className={cn(
+                        'tabular-nums text-caption',
+                        done === own.length && 'text-success',
+                      )}
+                    >
                       {done}/{own.length}
                     </span>
                   </button>
@@ -379,12 +388,12 @@ export function PaperRunner({
       </div>
 
       {timeUp ? (
-        <p role="status" className="text-sm font-medium text-warning">
+        <p role="status" className="text-body-sm font-medium text-warning">
           {t(listening ? 'exams.tapeOver' : 'exams.timeOver')}
         </p>
       ) : null}
       {failed ? (
-        <div role="alert" className="flex flex-wrap items-center gap-3 text-sm text-danger">
+        <div role="alert" className="flex flex-wrap items-center gap-3 text-body-sm text-error">
           {t('errors.saveFailed')}
           <Button variant="secondary" disabled={busy} onClick={() => void submit(false)}>
             {t('exams.retry')}
@@ -396,12 +405,12 @@ export function PaperRunner({
         <Panel
           role="alertdialog"
           aria-labelledby="exam-confirm"
-          className="flex flex-col gap-3 border-accent"
+          className="flex flex-col gap-3 border border-accent"
         >
-          <h2 id="exam-confirm" className="text-lg font-medium">
+          <h2 id="exam-confirm" className="text-body-lg font-medium">
             {t('exams.confirmTitle')}
           </h2>
-          <p className="text-sm text-muted">
+          <p className="text-body-sm text-muted">
             {answered < scored.length
               ? t('exams.confirmMissing', { n: scored.length - answered })
               : t('exams.confirmAll')}{' '}
@@ -421,13 +430,13 @@ export function PaperRunner({
       {part && partFormat ? (
         <section aria-labelledby="exam-part" className="flex flex-col gap-4">
           <header className="flex flex-col gap-1">
-            <h2 id="exam-part" className="text-xl font-semibold tracking-tight">
+            <h2 id="exam-part" className="text-subheading">
               {t('exams.part', { n: current + 1 })}
               <span lang="en" className="ml-2 font-normal text-muted">
                 {partFormat.name}
               </span>
             </h2>
-            <p lang="en" className="text-sm text-muted">
+            <p lang="en" className="text-body-sm text-muted">
               {part.rubric}
             </p>
           </header>

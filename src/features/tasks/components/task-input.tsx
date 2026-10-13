@@ -28,7 +28,7 @@ function MarkIcon({ mark }: { mark: Mark }) {
   const t = useT();
   if (mark === 'correct') {
     return (
-      <span className="flex shrink-0 items-center gap-1 text-xs text-success">
+      <span className="flex shrink-0 items-center gap-1 text-caption text-success">
         <CircleCheck aria-hidden="true" className="size-4" strokeWidth={2} />
         <span className="sr-only">{t('tasks.correctAnswer')}</span>
       </span>
@@ -36,7 +36,7 @@ function MarkIcon({ mark }: { mark: Mark }) {
   }
   if (mark === 'wrong') {
     return (
-      <span className="flex shrink-0 items-center gap-1 text-xs text-danger">
+      <span className="flex shrink-0 items-center gap-1 text-caption text-error">
         <CircleX aria-hidden="true" className="size-4" strokeWidth={2} />
         <span className="sr-only">{t('tasks.yourAnswer')}</span>
       </span>
@@ -47,11 +47,13 @@ function MarkIcon({ mark }: { mark: Mark }) {
 
 const optionClasses = (selected: boolean, mark: Mark, locked: boolean) =>
   cn(
-    'flex min-h-11 items-center gap-3 rounded-control border px-3 py-2 transition-colors duration-150',
-    !locked && 'cursor-pointer hover:border-subtle',
-    selected ? 'border-accent bg-surface-2' : 'border-border',
-    mark === 'correct' && 'border-success',
-    mark === 'wrong' && 'border-danger',
+    'option',
+    // Bloqueada o estática (una fila de «ordenar»): se ve igual, pero no responde al ratón.
+    locked ? 'is-static' : 'cursor-pointer',
+    selected && 'border-accent',
+    // Acierto y fallo: borde y fondo al 12 %, además del icono y el texto que los acompañan.
+    mark === 'correct' && 'border-success bg-success/12',
+    mark === 'wrong' && 'border-error bg-error/12',
   );
 
 function ChoiceGroup({
@@ -90,7 +92,7 @@ function ChoiceGroup({
               className="size-4 shrink-0 accent-accent"
             />
             {option.letter === false ? null : (
-              <span aria-hidden="true" className="hud text-xs text-muted uppercase">
+              <span aria-hidden="true" className="tabular-nums text-caption text-muted uppercase">
                 {option.id}
               </span>
             )}
@@ -135,7 +137,7 @@ function PairRows({
         return (
           <li key={row.id} className="flex flex-col gap-1.5">
             <div className="flex items-center justify-between gap-3">
-              <label htmlFor={fieldId} className="text-sm font-medium">
+              <label htmlFor={fieldId} className="text-body-sm font-medium">
                 {row.label}
               </label>
               <MarkIcon mark={mark} />
@@ -158,7 +160,7 @@ function PairRows({
               ))}
             </Select>
             {mark === 'wrong' ? (
-              <p className="text-sm text-muted">
+              <p className="text-body-sm text-muted">
                 {t('tasks.correctAnswer')}: <span lang="en">{textOf(answers[row.id])}</span>
               </p>
             ) : null}
@@ -269,7 +271,7 @@ export function TaskInput({ task, value, onChange, result, name, labelledBy }: T
             <MarkIcon mark={mark} />
           </div>
           {mark === 'wrong' ? (
-            <p className="text-sm text-muted">
+            <p className="text-body-sm text-muted">
               {t('tasks.acceptedAnswers', { answers: '' })}
               <span lang="en">{task.accept.join(' · ')}</span>
             </p>
@@ -312,7 +314,7 @@ export function TaskInput({ task, value, onChange, result, name, labelledBy }: T
             })}
           </p>
           {missed.length > 0 ? (
-            <ul className="flex flex-col gap-1 text-sm text-muted">
+            <ul className="flex flex-col gap-1 text-body-sm text-muted">
               {missed.map((gap) => (
                 <li key={gap.n}>
                   {t('tasks.gap', { n: gap.n })} — {t('tasks.acceptedAnswers', { answers: '' })}
@@ -387,7 +389,7 @@ export function TaskInput({ task, value, onChange, result, name, labelledBy }: T
               const mark: Mark = result ? (result.parts[id] ? 'correct' : 'wrong') : null;
               return (
                 <li key={id} className={optionClasses(false, mark, true)}>
-                  <span aria-hidden="true" className="hud text-xs text-muted">
+                  <span aria-hidden="true" className="tabular-nums text-caption text-muted">
                     {index + 1}
                   </span>
                   <span lang="en" className="min-w-0 flex-1">
@@ -421,7 +423,7 @@ export function TaskInput({ task, value, onChange, result, name, labelledBy }: T
             })}
           </ol>
           {result && !result.correct ? (
-            <div className="text-sm text-muted">
+            <div className="text-body-sm text-muted">
               <p>{t('tasks.correctAnswer')}:</p>
               <ol lang="en" className="mt-1 list-decimal pl-5">
                 {task.correct_order.map((id) => (

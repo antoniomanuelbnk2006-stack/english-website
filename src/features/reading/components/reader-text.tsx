@@ -48,7 +48,7 @@ export function ReaderText({
     <div
       ref={rootRef}
       lang="en"
-      className={cn('reading-md reading-measure flex flex-col gap-5', className)}
+      className={cn('prose-reading flex flex-col gap-5', className)}
       style={{ fontSize: `${fontPx}px`, lineHeight: 1.7 }}
     >
       {paragraphs.map((paragraph, index) => (
@@ -57,13 +57,13 @@ export function ReaderText({
           data-ref={paragraph.id}
           className={cn(
             'relative pl-7 transition-colors duration-200',
-            marked.has(paragraph.id) && 'rounded-control bg-karaoke',
+            marked.has(paragraph.id) && 'rounded-card bg-accent/25',
           )}
         >
           <span
             lang="es"
             title={t('reading.paragraphNumber', { n: index + 1 })}
-            className="hud absolute top-[0.35em] left-0 text-xs text-muted select-none"
+            className="tabular-nums absolute top-[0.35em] left-0 text-caption text-muted select-none"
           >
             <span aria-hidden="true">{index + 1}</span>
             <span className="sr-only">{t('reading.paragraphNumber', { n: index + 1 })}. </span>
@@ -74,7 +74,7 @@ export function ReaderText({
               data-ref={sentence.id}
               className={cn(
                 'transition-colors duration-200',
-                marked.has(sentence.id) && 'rounded-sm bg-karaoke box-decoration-clone',
+                marked.has(sentence.id) && 'rounded-structure bg-accent/25 box-decoration-clone',
               )}
             >
               {words ? <Words sentence={sentence} /> : sentence.text}{' '}

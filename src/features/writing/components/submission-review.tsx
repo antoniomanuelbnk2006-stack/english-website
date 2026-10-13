@@ -38,7 +38,7 @@ export interface SubmissionReviewProps {
 }
 
 const tab =
-  'h-10 rounded-control text-sm font-medium text-muted transition-colors duration-150 data-[state=active]:bg-surface-2 data-[state=active]:text-accent';
+  'min-h-11 rounded-pill text-body-sm font-medium text-muted transition-colors duration-150 data-[state=active]:bg-surface-2 data-[state=active]:text-accent-text';
 // En pantallas anchas las dos columnas se ven a la vez; en el móvil, la de la pestaña activa.
 const column =
   'flex min-w-0 flex-col gap-6 data-[state=inactive]:hidden lg:data-[state=inactive]:flex';
@@ -75,17 +75,14 @@ export function SubmissionReview({
   return (
     <div className="flex flex-col gap-6">
       {notSaved ? (
-        <p
-          role="alert"
-          className="flex items-start gap-2 rounded-control border border-warning px-3 py-2 text-sm"
-        >
+        <p role="alert" data-tone="warning" className="feedback">
           <TriangleAlert aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-warning" />
           {t('writing.notSaved')}
         </p>
       ) : null}
 
       <Tabs.Root defaultValue="feedback" className="flex flex-col gap-4">
-        <Tabs.List className="grid grid-cols-2 gap-1 rounded-control border border-border p-1 lg:hidden">
+        <Tabs.List className="grid grid-cols-2 gap-1 rounded-pill bg-surface p-1 lg:hidden">
           <Tabs.Trigger value="text" className={tab}>
             {t('writing.tabText')}
           </Tabs.Trigger>
@@ -97,7 +94,7 @@ export function SubmissionReview({
         <div className="grid items-start gap-6 lg:grid-cols-2">
           <Tabs.Content value="text" forceMount className={column}>
             <Panel className="flex flex-col gap-3">
-              <h2 className="text-lg font-medium">{t('writing.yourText')}</h2>
+              <h2 className="text-body-lg font-medium">{t('writing.yourText')}</h2>
               <MarkedText text={text} spans={spans} />
             </Panel>
             <Panel>
@@ -107,7 +104,7 @@ export function SubmissionReview({
 
           <Tabs.Content value="feedback" forceMount className={column}>
             <Panel className="flex flex-col gap-4">
-              <h2 className="text-lg font-medium">
+              <h2 className="text-body-lg font-medium">
                 {t(result.kind === 'ai' ? 'writing.resultAi' : 'writing.resultSelf')}
               </h2>
               {result.kind === 'ai' ? (
@@ -126,11 +123,11 @@ export function SubmissionReview({
             {modelAnswer ? (
               <Panel>
                 <details>
-                  <summary className="cursor-pointer text-lg font-medium">
+                  <summary className="cursor-pointer text-body-lg font-medium">
                     {t('writing.modelTitle')}
                   </summary>
-                  <p className="mt-2 text-sm text-muted">{t('writing.modelHint')}</p>
-                  <p lang="en" className="reading-md mt-3 whitespace-pre-wrap">
+                  <p className="mt-2 text-body-sm text-muted">{t('writing.modelHint')}</p>
+                  <p lang="en" className="prose-reading mt-3 whitespace-pre-wrap">
                     {modelAnswer}
                   </p>
                 </details>

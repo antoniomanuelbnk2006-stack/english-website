@@ -28,29 +28,29 @@ export default async function PronunciationSetPage({ params }: PageProps<'/pronu
   const [t, progress] = await Promise.all([getT(), getLessonProgress(set.id)]);
 
   return (
-    <PageContainer className="max-w-2xl">
+    <PageContainer width="exercise">
       <header className="flex flex-col gap-3">
         <Link
           href="/pronunciar"
-          className="flex items-center gap-1.5 self-start rounded-control text-sm text-muted hover:text-text"
+          className="flex items-center gap-1.5 self-start rounded-structure text-body-sm text-muted hover:text-text"
         >
           <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
           {t('pronunciation.backToList')}
         </Link>
-        <h1 lang="en" className="text-2xl font-semibold tracking-tight sm:text-3xl">
+        <h1 lang="en" className="text-heading-sm sm:text-heading">
           {set.title}
         </h1>
-        <p className="text-sm text-muted">{set.summary_es}</p>
+        <p className="text-body-sm text-muted">{set.summary_es}</p>
         <div className="flex flex-wrap items-center gap-1.5">
-          <Chip className="hud">{set.level}</Chip>
+          <Chip className="tabular-nums">{set.level}</Chip>
           {set.sounds.length > 0 ? (
-            <Chip className="hud" lang="en">
+            <Chip className="tabular-nums" lang="en">
               /{set.sounds.join('/ · /')}/
             </Chip>
           ) : null}
-          <Chip className="hud">{t('lesson.minutes', { n: set.est_minutes })}</Chip>
+          <Chip className="tabular-nums">{t('lesson.minutes', { n: set.est_minutes })}</Chip>
           {progress?.status === 'completed' && progress.bestScore != null ? (
-            <Chip className="hud">
+            <Chip className="tabular-nums">
               {t('lesson.bestScore', { pct: toPercent(progress.bestScore) })}
             </Chip>
           ) : null}
@@ -59,7 +59,7 @@ export default async function PronunciationSetPage({ params }: PageProps<'/pronu
 
       <Panel className="flex flex-col gap-2">
         <PanelTitle>{t('pronunciation.tipTitle')}</PanelTitle>
-        <p className="text-sm">
+        <p className="text-body-sm">
           <InlineText text={set.tip_es} />
         </p>
       </Panel>

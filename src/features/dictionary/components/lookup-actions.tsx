@@ -86,7 +86,7 @@ export function LookupActions({ word, state: initial }: { word: string; state: W
         )}
       </div>
       {failed ? (
-        <p role="alert" className="text-sm text-danger">
+        <p role="alert" className="text-body-sm text-error">
           {t('errors.saveFailed')}
         </p>
       ) : null}

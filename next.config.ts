@@ -12,13 +12,13 @@ const securityHeaders = [
 
 // CSP fija de la portada pública (public/landing): HTML estático, sin nonce. Comparte origen con
 // la app, así que solo admite lo que esas páginas cargan de verdad (su script, su hoja de
-// estilos, las fuentes de Google y las fotos de Wix) y no se deja incrustar en otra web.
+// estilos, sus fuentes —servidas desde aquí— y las fotos de Wix) y no se deja incrustar en otra web.
 const landingCsp = [
   `default-src 'self'`,
   `script-src 'self'`,
-  // Las páginas llevan algunos estilos en el propio HTML (`style="…"`).
-  `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`,
-  `font-src 'self' https://fonts.gstatic.com`,
+  // Sin estilos en el propio HTML: todo sale de /landing/styles.css.
+  `style-src 'self'`,
+  `font-src 'self'`,
   `img-src 'self' data: https://static.wixstatic.com`,
   `connect-src 'self'`,
   `object-src 'none'`,

@@ -117,23 +117,23 @@ export function Transcript({
             key={segment.id}
             data-segment={segment.id}
             className={cn(
-              'flex gap-3 rounded-control p-2 transition-colors duration-200',
-              marked.has(segment.id) && 'bg-karaoke',
+              'flex gap-3 rounded-card p-2 transition-colors duration-200',
+              marked.has(segment.id) && 'bg-accent/25',
             )}
           >
             <button
               type="button"
               aria-label={`${t('listening.playSegment')} (${index + 1})`}
               onClick={() => player.playSegment(index)}
-              className="mt-1 grid size-11 shrink-0 place-items-center rounded-full border border-border text-muted transition-colors duration-150 hover:border-accent hover:text-accent"
+              className="btn-icon mt-1"
             >
               <Play aria-hidden="true" className="size-4" strokeWidth={2} />
             </button>
             <div className="min-w-0 flex-1">
-              <p className="hud text-xs text-muted">
+              <p className="tabular-nums text-caption text-muted">
                 {names.get(segment.speaker) ?? segment.speaker}
               </p>
-              <p lang="en" className="reading-md">
+              <p lang="en" className="prose-reading">
                 {words ? (
                   <Words
                     sentence={segment}
@@ -157,13 +157,13 @@ export function Transcript({
                 )}
               </p>
               {own.length > 0 ? (
-                <ul className="mt-1.5 flex flex-col gap-1 text-sm text-muted">
+                <ul className="mt-1.5 flex flex-col gap-1 text-body-sm text-muted">
                   {own.map((feature) => (
                     <li key={feature.phrase}>
                       <span lang="en" className="font-medium text-text">
                         {feature.phrase}
                       </span>
-                      {feature.ipa ? <span className="hud"> {feature.ipa}</span> : null}
+                      {feature.ipa ? <span className="tabular-nums"> {feature.ipa}</span> : null}
                       {' — '}
                       <InlineText text={feature.explanation_es} />
                     </li>

@@ -6,7 +6,7 @@ import { useEffect, useId, useRef, useState } from 'react';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { InlineText } from '@/components/ui/inline-text';
 import { Input, Label, Textarea } from '@/components/ui/input';
-import { Panel, PanelTitle } from '@/components/ui/panel';
+import { Panel, PanelLabel } from '@/components/ui/panel';
 import { formatClock } from '@/features/lessons/lib/summary';
 import {
   SubmissionReview,
@@ -261,190 +261,203 @@ export function WritingStudio({
         : { text: t('writing.lengthOk'), tone: 'text-success' };
 
   return (
-    <div className="flex flex-col gap-5">
-      <Panel className="flex flex-col gap-4">
-        <div className="flex flex-col gap-1.5">
-          <PanelTitle>{t('writing.situation')}</PanelTitle>
-          <p>{prompt.context_es}</p>
-        </div>
-        <div className="flex flex-col gap-1.5">
-          <PanelTitle>{t('writing.task')}</PanelTitle>
-          <p lang="en" className="reading-md whitespace-pre-line">
-            {prompt.prompt_en}
-          </p>
-        </div>
-        {pointsInTask ? null : (
+    // La consigna a un lado y el texto al otro, como después la corrección.
+    <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
+      <div className="flex min-w-0 flex-col gap-6">
+        <Panel className="flex flex-col gap-6">
           <div className="flex flex-col gap-1.5">
-            <PanelTitle>{t('writing.pointsTitle')}</PanelTitle>
-            <ul lang="en" className="list-disc pl-5">
-              {prompt.points.map((point) => (
-                <li key={point}>{point}</li>
-              ))}
-            </ul>
+            <PanelLabel>{t('writing.situation')}</PanelLabel>
+            <p>{prompt.context_es}</p>
           </div>
-        )}
-      </Panel>
+          <div className="flex flex-col gap-1.5">
+            <PanelLabel>{t('writing.task')}</PanelLabel>
+            <p lang="en" className="prose-reading whitespace-pre-line">
+              {prompt.prompt_en}
+            </p>
+          </div>
+          {pointsInTask ? null : (
+            <div className="flex flex-col gap-1.5">
+              <PanelLabel>{t('writing.pointsTitle')}</PanelLabel>
+              <ul lang="en" className="list-disc pl-5">
+                {prompt.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </Panel>
 
-      {exam ? (
-        <p className="text-sm text-muted">{t('writing.helpHiddenExam')}</p>
-      ) : (
-        <details className="rounded-panel border border-border bg-surface p-4">
-          <summary className="cursor-pointer font-medium">
-            {t('writing.tipsTitle')} · {t('writing.usefulTitle')}
-          </summary>
-          <div className="mt-3 grid gap-4 sm:grid-cols-2">
-            <div className="flex flex-col gap-1.5">
-              <PanelTitle>{t('writing.tipsTitle')}</PanelTitle>
-              <ul className="list-disc pl-5 text-sm">
-                {prompt.tips_es.map((tip) => (
-                  <li key={tip}>
-                    <InlineText text={tip} />
-                  </li>
-                ))}
-              </ul>
+        {exam ? (
+          <p className="text-body-sm text-muted">{t('writing.helpHiddenExam')}</p>
+        ) : (
+          <details className="rounded-card bg-surface px-6 py-4 sm:px-8">
+            <summary className="cursor-pointer font-medium">
+              {t('writing.tipsTitle')} · {t('writing.usefulTitle')}
+            </summary>
+            <div className="mt-3 grid gap-4 sm:grid-cols-2">
+              <div className="flex flex-col gap-1.5">
+                <PanelLabel>{t('writing.tipsTitle')}</PanelLabel>
+                <ul className="list-disc pl-5 text-body-sm">
+                  {prompt.tips_es.map((tip) => (
+                    <li key={tip}>
+                      <InlineText text={tip} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <PanelLabel>{t('writing.usefulTitle')}</PanelLabel>
+                <ul lang="en" className="list-disc pl-5 text-body-sm">
+                  {prompt.useful_language.map((phrase) => (
+                    <li key={phrase}>{phrase}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <div className="flex flex-col gap-1.5">
-              <PanelTitle>{t('writing.usefulTitle')}</PanelTitle>
-              <ul lang="en" className="list-disc pl-5 text-sm">
-                {prompt.useful_language.map((phrase) => (
-                  <li key={phrase}>{phrase}</li>
-                ))}
-              </ul>
-            </div>
+          </details>
+        )}
+
+        <details className="rounded-card bg-surface px-6 py-4 sm:px-8">
+          <summary className="cursor-pointer font-medium">{t('writing.planTitle')}</summary>
+          <p className="mt-2 text-body-sm text-muted">{t('writing.planHint')}</p>
+          <div className="mt-3 flex flex-col gap-2">
+            {draft.plan.map((idea, index) => (
+              <Input
+                key={index}
+                lang="en"
+                aria-label={t('writing.planIdea', { n: index + 1 })}
+                placeholder={t('writing.planIdea', { n: index + 1 })}
+                value={idea}
+                maxLength={200}
+                onChange={(event) =>
+                  change({
+                    ...draft,
+                    plan: draft.plan.map((value, i) => (i === index ? event.target.value : value)),
+                  })
+                }
+              />
+            ))}
           </div>
         </details>
-      )}
+      </div>
 
-      <details className="rounded-panel border border-border bg-surface p-4">
-        <summary className="cursor-pointer font-medium">{t('writing.planTitle')}</summary>
-        <p className="mt-2 text-sm text-muted">{t('writing.planHint')}</p>
-        <div className="mt-3 flex flex-col gap-2">
-          {draft.plan.map((idea, index) => (
-            <Input
-              key={index}
-              lang="en"
-              aria-label={t('writing.planIdea', { n: index + 1 })}
-              placeholder={t('writing.planIdea', { n: index + 1 })}
-              value={idea}
-              maxLength={200}
-              onChange={(event) =>
-                change({
-                  ...draft,
-                  plan: draft.plan.map((value, i) => (i === index ? event.target.value : value)),
-                })
-              }
-            />
-          ))}
-        </div>
-      </details>
+      <div className="flex min-w-0 flex-col gap-6">
+        <div className="flex flex-col gap-2">
+          <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
+            <Label htmlFor={`${id}-text`}>{t('writing.editorLabel')}</Label>
+            <label className="flex min-h-11 cursor-pointer items-center gap-2 text-body-sm">
+              <input
+                type="checkbox"
+                checked={exam !== null}
+                onChange={(event) => toggleExam(event.target.checked)}
+                className="size-4 shrink-0 accent-accent"
+              />
+              <span>
+                {t('writing.examMode')}{' '}
+                <span className="text-muted">
+                  ({t('writing.examModeHint', { min: prompt.time_min })})
+                </span>
+              </span>
+            </label>
+          </div>
 
-      <div className="flex flex-col gap-2">
-        <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
-          <Label htmlFor={`${id}-text`}>{t('writing.editorLabel')}</Label>
-          <label className="flex min-h-11 cursor-pointer items-center gap-2 text-sm">
-            <input
-              type="checkbox"
-              checked={exam !== null}
-              onChange={(event) => toggleExam(event.target.checked)}
-              className="size-4 shrink-0 accent-accent"
-            />
+          {remaining !== null ? (
+            <p
+              className={cn(
+                'tabular-nums text-body-sm',
+                remaining === 0 ? 'text-warning' : 'text-muted',
+              )}
+            >
+              {t('writing.timeLeft', { time: formatClock(remaining) })}
+            </p>
+          ) : null}
+          {remaining === 0 ? (
+            <p role="alert" className="text-body-sm text-warning">
+              {t('writing.timeUp')}
+            </p>
+          ) : null}
+
+          {restored ? (
+            <p className="flex flex-wrap items-center gap-2 text-body-sm text-muted">
+              {t('writing.draftRestored')}
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => {
+                  forgetDraft();
+                  setEdited({ text: '', plan: EMPTY_PLAN });
+                }}
+              >
+                {t('writing.discardDraft')}
+              </Button>
+            </p>
+          ) : null}
+
+          <Textarea
+            id={`${id}-text`}
+            lang="en"
+            rows={14}
+            maxLength={MAX_CHARS}
+            spellCheck={exam === null}
+            autoCapitalize="sentences"
+            placeholder={t('writing.editorPlaceholder')}
+            aria-describedby={`${id}-count`}
+            value={draft.text}
+            onChange={(event) => change({ ...draft, text: event.target.value })}
+            className="prose-reading"
+          />
+          <p
+            id={`${id}-count`}
+            className="tabular-nums flex flex-wrap gap-x-3 gap-y-1 text-body-sm"
+          >
             <span>
-              {t('writing.examMode')}{' '}
+              {words === 1 ? t('writing.wordCountOne') : t('writing.wordCount', { n: words })}
               <span className="text-muted">
-                ({t('writing.examModeHint', { min: prompt.time_min })})
+                {' '}
+                / {t('writing.words', { min: prompt.words_min, max: prompt.words_max })}
               </span>
             </span>
-          </label>
+            {words > 0 ? <span className={lengthStatus.tone}>{lengthStatus.text}</span> : null}
+            {draftSaved ? <span className="text-muted">{t('writing.draftSaved')}</span> : null}
+          </p>
         </div>
 
-        {remaining !== null ? (
-          <p className={cn('hud text-sm', remaining === 0 ? 'text-warning' : 'text-muted')}>
-            {t('writing.timeLeft', { time: formatClock(remaining) })}
-          </p>
-        ) : null}
-        {remaining === 0 ? (
-          <p role="alert" className="text-sm text-warning">
-            {t('writing.timeUp')}
+        {error ? (
+          <p role="alert" className="text-body-sm text-error">
+            {error}
           </p>
         ) : null}
 
-        {restored ? (
-          <p className="flex flex-wrap items-center gap-2 text-sm text-muted">
-            {t('writing.draftRestored')}
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => {
-                forgetDraft();
-                setEdited({ text: '', plan: EMPTY_PLAN });
-              }}
-            >
-              {t('writing.discardDraft')}
+        <div className="flex flex-wrap items-center gap-3">
+          {aiAvailable ? (
+            <Button size="lg" disabled={busy !== null} onClick={() => void submit('ai')}>
+              {busy === 'ai' ? t('writing.submittingAi') : t('writing.submitAi')}
             </Button>
-          </p>
-        ) : null}
-
-        <Textarea
-          id={`${id}-text`}
-          lang="en"
-          rows={14}
-          maxLength={MAX_CHARS}
-          spellCheck={exam === null}
-          autoCapitalize="sentences"
-          placeholder={t('writing.editorPlaceholder')}
-          aria-describedby={`${id}-count`}
-          value={draft.text}
-          onChange={(event) => change({ ...draft, text: event.target.value })}
-          className="reading-md"
-        />
-        <p id={`${id}-count`} className="hud flex flex-wrap gap-x-3 gap-y-1 text-sm">
-          <span>
-            {words === 1 ? t('writing.wordCountOne') : t('writing.wordCount', { n: words })}
-            <span className="text-muted">
-              {' '}
-              / {t('writing.words', { min: prompt.words_min, max: prompt.words_max })}
-            </span>
-          </span>
-          {words > 0 ? <span className={lengthStatus.tone}>{lengthStatus.text}</span> : null}
-          {draftSaved ? <span className="text-muted">{t('writing.draftSaved')}</span> : null}
-        </p>
-      </div>
-
-      {error ? (
-        <p role="alert" className="text-sm text-danger">
-          {error}
-        </p>
-      ) : null}
-
-      <div className="flex flex-wrap items-center gap-3">
-        {aiAvailable ? (
-          <Button size="lg" disabled={busy !== null} onClick={() => void submit('ai')}>
-            {busy === 'ai' ? t('writing.submittingAi') : t('writing.submitAi')}
+          ) : null}
+          <Button
+            size="lg"
+            variant={aiAvailable ? 'secondary' : 'primary'}
+            disabled={busy !== null}
+            onClick={() => void submit('self')}
+          >
+            {busy === 'self' ? t('writing.submitting') : t('writing.submitSelf')}
           </Button>
-        ) : null}
-        <Button
-          size="lg"
-          variant={aiAvailable ? 'secondary' : 'primary'}
-          disabled={busy !== null}
-          onClick={() => void submit('self')}
-        >
-          {busy === 'self' ? t('writing.submitting') : t('writing.submitSelf')}
-        </Button>
-        {ai.enabled ? (
-          <span className="hud text-xs text-muted">
-            {t('writing.aiToday', { used: ai.usedToday, limit: ai.dailyLimit })}
-          </span>
-        ) : null}
-      </div>
+          {ai.enabled ? (
+            <span className="tabular-nums text-caption text-muted">
+              {t('writing.aiToday', { used: ai.usedToday, limit: ai.dailyLimit })}
+            </span>
+          ) : null}
+        </div>
 
-      <p role="status" className="text-sm text-muted">
-        {busy === 'ai' ? t('writing.submittingAi') : null}
-        {busy === null && !ai.enabled ? t('writing.aiOffBody') : null}
-        {busy === null && ai.enabled && !ai.budgetLeft ? t('writing.aiBudget') : null}
-        {busy === null && ai.enabled && ai.budgetLeft && ai.usedToday >= ai.dailyLimit
-          ? t('writing.errorDaily', { limit: ai.dailyLimit })
-          : null}
-      </p>
+        <p role="status" className="text-body-sm text-muted">
+          {busy === 'ai' ? t('writing.submittingAi') : null}
+          {busy === null && !ai.enabled ? t('writing.aiOffBody') : null}
+          {busy === null && ai.enabled && !ai.budgetLeft ? t('writing.aiBudget') : null}
+          {busy === null && ai.enabled && ai.budgetLeft && ai.usedToday >= ai.dailyLimit
+            ? t('writing.errorDaily', { limit: ai.dailyLimit })
+            : null}
+        </p>
+      </div>
     </div>
   );
 }

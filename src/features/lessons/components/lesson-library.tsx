@@ -2,7 +2,7 @@ import { SearchX, type LucideIcon } from 'lucide-react';
 import type { Route } from 'next';
 import Link from 'next/link';
 import { buttonVariants } from '@/components/ui/button';
-import { EmptyState } from '@/components/ui/page';
+import { EmptyState, PageSections } from '@/components/ui/page';
 import { PanelTitle } from '@/components/ui/panel';
 import { CEFR_LEVELS, type CefrLevel } from '@/features/level/lib/bands';
 import {
@@ -43,7 +43,7 @@ function FilterRow({
 }) {
   return (
     <div className="flex flex-wrap items-center gap-2">
-      <span className="w-14 shrink-0 text-xs text-muted">{label}</span>
+      <span className="w-14 shrink-0 text-caption text-muted">{label}</span>
       <ul className="flex flex-wrap gap-1.5">
         {options.map((option) => (
           <li key={option.key}>
@@ -51,10 +51,10 @@ function FilterRow({
               href={{ pathname: basePath, query: filtersToQuery(option.filters, defaultLevel) }}
               aria-current={option.active ? 'true' : undefined}
               className={cn(
-                'flex h-8 items-center rounded-full border px-3 text-sm transition-colors duration-150 pointer-coarse:h-11',
+                'flex h-8 items-center rounded-full border px-3 text-body-sm transition-colors duration-150 pointer-coarse:h-11',
                 option.active
-                  ? 'border-accent bg-surface-2 font-medium text-accent'
-                  : 'border-border text-muted hover:border-subtle hover:text-text',
+                  ? 'border-accent bg-surface-2 font-medium text-accent-text'
+                  : 'border-transparent bg-surface-2 text-muted hover:border-border hover:text-text',
               )}
             >
               {option.text}
@@ -106,11 +106,8 @@ export async function LessonLibrary({
   const hasFilters = Object.keys(filtersToQuery(filters, userLevel)).length > 0;
 
   return (
-    <div className="flex flex-col gap-6">
-      <nav
-        aria-label={t('library.filtersLabel')}
-        className="flex flex-col gap-2 rounded-panel border border-border bg-surface p-3"
-      >
+    <div className="flex flex-col gap-8">
+      <nav aria-label={t('library.filtersLabel')} className="flex flex-col gap-2">
         <FilterRow
           label={t('library.level')}
           basePath={basePath}
@@ -202,33 +199,35 @@ export async function LessonLibrary({
           {t('library.emptyBody')}
         </EmptyState>
       ) : (
-        groups.map((group) => {
-          const done = group.lessons.filter((l) => statusById.get(l.id) === 'done').length;
-          return (
-            <section key={group.unit} aria-labelledby={`unit-${group.unit}`}>
-              <div className="mb-3 flex items-baseline justify-between gap-3">
-                <PanelTitle id={`unit-${group.unit}`}>{unitTitle(group.unit)}</PanelTitle>
-                <span className="hud text-xs text-muted">
-                  {t('library.seriesProgress', { done, total: group.lessons.length })}
-                </span>
-              </div>
-              <ul className="grid gap-3 sm:grid-cols-2">
-                {group.lessons.map((lesson) => (
-                  <li key={lesson.id}>
-                    <LessonCard
-                      lesson={lesson}
-                      href={`${basePath}/${lesson.id}` as Route}
-                      status={statusById.get(lesson.id) ?? 'new'}
-                      bestScore={progress.get(lesson.id)?.bestScore ?? null}
-                      coverage={coverage.get(lesson.id) ?? null}
-                      t={t}
-                    />
-                  </li>
-                ))}
-              </ul>
-            </section>
-          );
-        })
+        <PageSections>
+          {groups.map((group) => {
+            const done = group.lessons.filter((l) => statusById.get(l.id) === 'done').length;
+            return (
+              <section key={group.unit} aria-labelledby={`unit-${group.unit}`}>
+                <div className="mb-6 flex items-baseline justify-between gap-3">
+                  <PanelTitle id={`unit-${group.unit}`}>{unitTitle(group.unit)}</PanelTitle>
+                  <span className="tabular-nums text-caption text-muted">
+                    {t('library.seriesProgress', { done, total: group.lessons.length })}
+                  </span>
+                </div>
+                <ul className="grid gap-4 sm:grid-cols-2">
+                  {group.lessons.map((lesson) => (
+                    <li key={lesson.id}>
+                      <LessonCard
+                        lesson={lesson}
+                        href={`${basePath}/${lesson.id}` as Route}
+                        status={statusById.get(lesson.id) ?? 'new'}
+                        bestScore={progress.get(lesson.id)?.bestScore ?? null}
+                        coverage={coverage.get(lesson.id) ?? null}
+                        t={t}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            );
+          })}
+        </PageSections>
       )}
     </div>
   );

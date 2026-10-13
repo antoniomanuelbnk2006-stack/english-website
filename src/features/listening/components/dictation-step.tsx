@@ -151,7 +151,7 @@ export function DictationStep({
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="hud text-xs text-muted">
+        <p className="tabular-nums text-caption text-muted">
           {t('listening.sentenceOf', { n: index + 1, total: tasks.length })}
         </p>
         <Button variant="outline" onClick={play}>
@@ -170,7 +170,7 @@ export function DictationStep({
           autoCorrect="off"
           autoComplete="off"
           spellCheck={false}
-          className="reading-md"
+          className="prose-reading"
           placeholder={t('listening.dictationPlaceholder')}
           disabled={diagnosis !== null}
           value={typed}
@@ -183,11 +183,12 @@ export function DictationStep({
           ref={feedbackRef}
           tabIndex={-1}
           role="status"
-          className="flex flex-col gap-3 rounded-control border border-border bg-surface-2 p-3 outline-none"
+          data-tone={diagnosis.accuracy === 1 ? 'success' : undefined}
+          className="feedback flex-col items-stretch gap-3 outline-none"
         >
           <p
             className={cn(
-              'hud flex items-center gap-2 text-sm',
+              'tabular-nums flex items-center gap-2 text-body-sm',
               diagnosis.accuracy === 1 ? 'text-success' : 'text-text',
             )}
           >
@@ -200,7 +201,7 @@ export function DictationStep({
           </p>
           <DictationDiff diagnosis={diagnosis} />
           {diagnosis.extra.length > 0 ? (
-            <p className="text-sm text-muted">
+            <p className="text-body-sm text-muted">
               {t('listening.extraWords', { words: '' })}
               <span lang="en">{diagnosis.extra.join(', ')}</span>
             </p>

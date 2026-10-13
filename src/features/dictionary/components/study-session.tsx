@@ -94,8 +94,8 @@ export function StudySession({
     return (
       <Panel className="flex flex-col items-center gap-3 py-10 text-center">
         <CircleCheck aria-hidden="true" className="size-8 text-success" strokeWidth={1.75} />
-        <h2 className="text-lg font-medium">{t('dictionary.doneTitle')}</h2>
-        <p className="text-sm text-muted" role="status">
+        <h2 className="text-body-lg font-medium">{t('dictionary.doneTitle')}</h2>
+        <p className="text-body-sm text-muted" role="status">
           {t('dictionary.doneBody', { review: counts.review, known: counts.known })}
         </p>
         <div className="mt-2 flex flex-wrap justify-center gap-2">
@@ -120,29 +120,31 @@ export function StudySession({
 
   return (
     <div className="flex flex-col gap-4">
-      <p className="hud text-sm text-muted" aria-live="polite">
+      <p className="tabular-nums text-body-sm text-muted" aria-live="polite">
         {t('dictionary.cardOf', { n: index + 1, total: words.length })} · {level}
       </p>
 
       <Panel className="flex flex-col gap-4 py-8 sm:py-10">
         <div className="flex flex-col items-center gap-2 text-center">
           <div className="flex items-center gap-1">
-            <h2 lang="en" className="text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h2 lang="en" className="text-heading-lg">
               {word.lemma}
             </h2>
             <SpeakButton text={word.lemma} label={t('dictionary.listen', { word: word.lemma })} />
           </div>
-          <p className="text-sm text-muted">{word.pos.map((pos) => t(`pos.${pos}`)).join(' · ')}</p>
+          <p className="text-body-sm text-muted">
+            {word.pos.map((pos) => t(`pos.${pos}`)).join(' · ')}
+          </p>
         </div>
 
         {revealed ? (
           <div className="flex flex-col items-center gap-3 border-t border-border pt-4 text-center">
-            <p className="text-xl">{word.es}</p>
+            <p className="text-subheading">{word.es}</p>
             <div className="flex items-center gap-1">
               <Example
                 sentence={word.example}
                 surface={word.surface}
-                className="reading-md text-muted"
+                className="prose-reading text-muted"
               />
               <SpeakButton
                 text={word.example}
@@ -152,7 +154,7 @@ export function StudySession({
             </div>
           </div>
         ) : (
-          <p className="text-center text-sm text-muted">{t('dictionary.doYouKnow')}</p>
+          <p className="text-center text-body-sm text-muted">{t('dictionary.doYouKnow')}</p>
         )}
       </Panel>
 
@@ -175,11 +177,11 @@ export function StudySession({
       )}
 
       {failed ? (
-        <p role="alert" className="text-sm text-danger">
+        <p role="alert" className="text-body-sm text-error">
           {t('errors.saveFailed')}
         </p>
       ) : null}
-      <p className="hidden text-xs text-muted sm:block">{t('dictionary.shortcuts')}</p>
+      <p className="hidden text-caption text-muted sm:block">{t('dictionary.shortcuts')}</p>
     </div>
   );
 }

@@ -145,7 +145,7 @@ test.describe('ajustes', () => {
     await expect(page.getByRole('img', { name: 'Minutos de hoy: 0 de 60' })).toBeVisible();
     await page.goto('/leer/b1-rea-001');
     await page.getByRole('button', { name: 'Empezar el vistazo' }).click();
-    const text = page.locator('[lang="en"].reading-md').first();
+    const text = page.locator('[lang="en"].prose-reading').first();
     await expect(text).toHaveCSS('font-size', '22px');
     await expect(page.locator('[data-theme="paper"]')).toBeVisible();
     await expectAccessible(page);

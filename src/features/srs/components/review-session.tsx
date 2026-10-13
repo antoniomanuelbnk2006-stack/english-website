@@ -261,10 +261,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
   }, []);
 
   const saveError = saveFailed ? (
-    <p
-      role="alert"
-      className="flex flex-wrap items-center gap-2 rounded-control border border-danger px-3 py-2 text-sm text-danger"
-    >
+    <p role="alert" data-tone="error" className="feedback flex-wrap items-center text-error">
       <TriangleAlert aria-hidden="true" className="size-4 shrink-0" strokeWidth={1.75} />
       {t('errors.saveFailed')}
       <Button variant="ghost" size="sm" onClick={() => void flush()}>
@@ -332,11 +329,11 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
   if (content?.kind === 'word' || content?.kind === 'chunk') {
     const parts = splitAround(content.front.sentence, content.front.surface);
     front = (
-      <p lang="en" className="reading-lg">
+      <p lang="en" className="text-subheading">
         {parts ? (
           <>
             {parts.before}
-            <strong className="font-semibold text-accent">{parts.match}</strong>
+            <strong className="font-semibold text-accent-text">{parts.match}</strong>
             {parts.after}
           </>
         ) : (
@@ -350,7 +347,9 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
           <>
             <p lang="en">{content.back.def_en}</p>
             <details className="text-muted">
-              <summary className="cursor-pointer py-1 text-sm">{t('review.translation')}</summary>
+              <summary className="cursor-pointer py-1 text-body-sm">
+                {t('review.translation')}
+              </summary>
               <p className="mt-1">{content.back.def_es}</p>
             </details>
           </>
@@ -358,11 +357,13 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
           <p>{content.back.def_es}</p>
         )}
         {content.back.example ? (
-          <p lang="en" className="reading-md border-l-2 border-border pl-3 text-muted">
+          <p lang="en" className="prose-reading border-l-2 border-border pl-3 text-muted">
             {content.back.example}
           </p>
         ) : null}
-        {content.back.note_es ? <p className="text-sm text-muted">{content.back.note_es}</p> : null}
+        {content.back.note_es ? (
+          <p className="text-body-sm text-muted">{content.back.note_es}</p>
+        ) : null}
       </>
     );
   } else if (content?.kind === 'audio') {
@@ -399,21 +400,21 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
         {diagnosis ? (
           <>
             <DictationDiff diagnosis={diagnosis} />
-            <p className="hud text-sm text-muted">
+            <p className="tabular-nums text-body-sm text-muted">
               {t('listening.dictationAccuracy', { pct: toPercent(diagnosis.accuracy) })}
             </p>
           </>
         ) : (
-          <p lang="en" className="reading-md">
+          <p lang="en" className="prose-reading">
             {content.back.text}
           </p>
         )}
         {content.back.features.map((feature) => (
-          <p key={feature.phrase} className="text-sm text-muted">
+          <p key={feature.phrase} className="text-body-sm text-muted">
             <span lang="en" className="font-medium text-text">
               {feature.phrase}
             </span>
-            {feature.ipa ? <span className="hud"> {feature.ipa}</span> : null}
+            {feature.ipa ? <span className="tabular-nums"> {feature.ipa}</span> : null}
             {' — '}
             <InlineText text={feature.explanation_es} />
           </p>
@@ -423,8 +424,8 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
   } else if (content?.kind === 'grammar' && !hasGap(content.front.prompt)) {
     front = (
       <div className="flex flex-col gap-3">
-        <p className="text-sm text-muted">{t('review.fixSentence')}</p>
-        <p lang="en" className="reading-lg">
+        <p className="text-body-sm text-muted">{t('review.fixSentence')}</p>
+        <p lang="en" className="text-subheading">
           {content.front.prompt}
         </p>
       </div>
@@ -437,7 +438,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
         {content.back.writing_id ? (
           <Link
             href={`/escribir/historial/${content.back.writing_id}` as Route}
-            className="self-start text-sm text-accent underline underline-offset-4"
+            className="self-start text-body-sm text-accent-text underline underline-offset-4"
           >
             {t('review.openWriting')}: <span lang="en">{content.back.title}</span>
           </Link>
@@ -449,9 +450,9 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
     front = (
       <form onSubmit={check} className="flex flex-col gap-3">
         {content.front.context ? (
-          <p lang="en" className="reading-md text-muted">
+          <p lang="en" className="prose-reading text-muted">
             {content.back.writing_id ? (
-              <span lang="es" className="mr-1.5 text-sm">
+              <span lang="es" className="mr-1.5 text-body-sm">
                 {t('review.yourSentence')}:
               </span>
             ) : null}
@@ -459,11 +460,11 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
           </p>
         ) : null}
         {content.front.hint ? (
-          <p lang="en" className="hud text-sm font-medium text-accent">
+          <p lang="en" className="tabular-nums text-body-sm font-medium text-accent-text">
             {content.front.hint}
           </p>
         ) : null}
-        <p lang="en" className="reading-md flex flex-wrap items-baseline gap-x-1.5 gap-y-2">
+        <p lang="en" className="prose-reading flex flex-wrap items-baseline gap-x-1.5 gap-y-2">
           <span>{prompt.before}</span>
           <Input
             lang="en"
@@ -496,7 +497,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
           <p
             className={cn(
               'flex items-center gap-2 font-medium',
-              grammarCorrect ? 'text-success' : 'text-danger',
+              grammarCorrect ? 'text-success' : 'text-error',
             )}
           >
             {grammarCorrect ? (
@@ -513,13 +514,13 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
             {content.back.answers[0]}
           </span>
         </p>
-        <p className="text-sm text-muted">
+        <p className="text-body-sm text-muted">
           <InlineText text={content.back.rule_es} />
         </p>
         {content.back.writing_id && !content.back.grammar_id ? (
           <Link
             href={`/escribir/historial/${content.back.writing_id}` as Route}
-            className="self-start text-sm text-accent underline underline-offset-4"
+            className="self-start text-body-sm text-accent-text underline underline-offset-4"
           >
             {t('review.openWriting')}: <span lang="en">{content.back.title}</span>
           </Link>
@@ -531,7 +532,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
                 ? `/gramatica/${content.back.grammar_id}`
                 : `/use-of-english/${content.back.uoe_id}`) as Route
             }
-            className="self-start text-sm text-accent underline underline-offset-4"
+            className="self-start text-body-sm text-accent-text underline underline-offset-4"
           >
             {t(content.back.grammar_id ? 'review.openFicha' : 'review.openExercise')}:{' '}
             <span lang="en">{content.back.title}</span>
@@ -550,14 +551,11 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
           aria-valuemin={0}
           aria-valuemax={total}
           aria-valuenow={done}
-          className="h-1.5 overflow-hidden rounded-full bg-border"
+          className="progress"
         >
-          <div
-            className="h-full rounded-full bg-accent transition-[width] duration-200 ease-out"
-            style={{ width: `${total === 0 ? 0 : (done / total) * 100}%` }}
-          />
+          <div style={{ width: `${total === 0 ? 0 : (done / total) * 100}%` }} />
         </div>
-        <p className="hud flex flex-wrap gap-x-4 text-xs text-muted">
+        <p className="tabular-nums flex flex-wrap gap-x-4 text-caption text-muted">
           <span>{t('review.progress', { done, total })}</span>
           <span>{t('review.newLeft', { n: fresh })}</span>
           <span>{t('review.dueLeft', { n: queue.length - fresh })}</span>
@@ -567,9 +565,9 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
       {saveError}
 
       {overBudget && !budgetDismissed && !revealed ? (
-        <Panel className="flex flex-col gap-3 border-warning">
+        <Panel className="flex flex-col gap-3 border border-warning">
           <p className="font-medium">{t('review.budgetTitle')}</p>
-          <p className="text-sm text-muted">{t('review.budgetBody')}</p>
+          <p className="text-body-sm text-muted">{t('review.budgetBody')}</p>
           <div className="flex flex-wrap gap-2">
             <Button variant="secondary" onClick={stop}>
               {t('review.stopForToday')}
@@ -628,12 +626,12 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
                 onClick={() => rate(grade)}
               >
                 <span>
-                  <span aria-hidden="true" className="hud mr-1.5 text-xs opacity-70">
+                  <span aria-hidden="true" className="tabular-nums mr-1.5 text-caption">
                     {grade}
                   </span>
                   {t(GRADE_LABEL[grade])}
                 </span>
-                <span className="hud text-xs font-normal opacity-80">
+                <span className="tabular-nums text-caption font-normal">
                   {t(INTERVAL_LABEL[interval.unit], { n: interval.n })}
                   {isSuggested ? ` · ${t('review.suggested')}` : ''}
                 </span>
@@ -644,7 +642,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
       ) : null}
 
       <div className="flex items-center justify-between gap-3">
-        <p className="hidden text-xs text-muted pointer-fine:block">{t('review.shortcuts')}</p>
+        <p className="hidden text-caption text-muted pointer-fine:block">{t('review.shortcuts')}</p>
         <Button variant="ghost" size="sm" className="ml-auto" onClick={stop}>
           {t('review.stop')}
         </Button>

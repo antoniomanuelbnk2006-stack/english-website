@@ -36,7 +36,7 @@ export function RingProgress({
           r={radius}
           fill="none"
           strokeWidth={stroke}
-          className="stroke-border"
+          className="stroke-surface-2"
         />
         <circle
           cx={size / 2}
@@ -49,7 +49,7 @@ export function RingProgress({
           strokeDashoffset={circumference * (1 - ratio)}
           transform={`rotate(-90 ${size / 2} ${size / 2})`}
           className={cn(
-            'transition-[stroke-dashoffset] duration-200 ease-out',
+            'transition-[stroke-dashoffset] duration-300 ease-out',
             ratio >= 1 ? 'stroke-success' : 'stroke-accent',
           )}
         />

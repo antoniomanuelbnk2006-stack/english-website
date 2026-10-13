@@ -6,13 +6,7 @@ import { cn } from '@/lib/utils';
 
 export const fichaComponents = (tableLabel: string) => ({
   h2: ({ className, ...props }: ComponentProps<'h2'>) => (
-    <h2
-      className={cn(
-        'mt-8 mb-3 text-xs font-medium tracking-widest text-muted uppercase first:mt-0',
-        className,
-      )}
-      {...props}
-    />
+    <h2 className={cn('mt-8 mb-3 text-subheading first:mt-0', className)} {...props} />
   ),
   p: ({ className, ...props }: ComponentProps<'p'>) => (
     <p className={cn('my-3 leading-relaxed', className)} {...props} />
@@ -27,10 +21,10 @@ export const fichaComponents = (tableLabel: string) => ({
     <li className={cn('leading-relaxed', className)} {...props} />
   ),
   em: ({ className, ...props }: ComponentProps<'em'>) => (
-    <em lang="en" className={cn('font-reading text-[1.05em]', className)} {...props} />
+    <em lang="en" className={cn('text-text', className)} {...props} />
   ),
   strong: ({ className, ...props }: ComponentProps<'strong'>) => (
-    <strong className={cn('font-semibold text-accent', className)} {...props} />
+    <strong className={cn('font-semibold text-accent-text', className)} {...props} />
   ),
   table: ({ className, ...props }: ComponentProps<'table'>) => (
     // Las tablas anchas se desplazan dentro de su caja, no la página entera.
@@ -38,14 +32,14 @@ export const fichaComponents = (tableLabel: string) => ({
       role="region"
       aria-label={tableLabel}
       tabIndex={0}
-      className="my-4 overflow-x-auto rounded-control border border-border"
+      className="my-4 overflow-x-auto rounded-card bg-surface-2"
     >
-      <table className={cn('w-full min-w-[30rem] text-left text-sm', className)} {...props} />
+      <table className={cn('w-full min-w-[30rem] text-left text-body-sm', className)} {...props} />
     </div>
   ),
   th: ({ className, ...props }: ComponentProps<'th'>) => (
     <th
-      className={cn('border-b border-border bg-surface-2 px-3 py-2 font-medium', className)}
+      className={cn('border-b border-border px-3 py-2 font-medium text-muted', className)}
       {...props}
     />
   ),

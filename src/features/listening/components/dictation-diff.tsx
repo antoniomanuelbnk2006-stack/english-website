@@ -7,7 +7,7 @@ import { useT } from '@/lib/i18n/client';
 export function DictationDiff({ diagnosis }: { diagnosis: Diagnosis }) {
   const t = useT();
   return (
-    <p lang="en" className="reading-md">
+    <p lang="en" className="prose-reading">
       {diagnosis.words.map((word, index) => (
         <span key={index}>
           {word.status === 'ok' ? (
@@ -21,11 +21,11 @@ export function DictationDiff({ diagnosis }: { diagnosis: Diagnosis }) {
             </span>
           ) : word.status === 'wrong' ? (
             <>
-              <del className="text-danger">{word.typed}</del>{' '}
+              <del className="text-error">{word.typed}</del>{' '}
               <ins className="font-medium text-success no-underline">{word.text}</ins>
             </>
           ) : (
-            <span className="font-medium text-danger underline decoration-dashed underline-offset-4">
+            <span className="font-medium text-error underline decoration-dashed underline-offset-4">
               {word.text}
               <span lang="es" className="sr-only">
                 {' '}

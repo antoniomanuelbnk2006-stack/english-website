@@ -15,7 +15,7 @@
 | Lenguaje | TypeScript | 5.x, `strict` | Tipos de extremo a extremo con Zod y tipos generados de Supabase | — |
 | Estilos | **Tailwind CSS v4** + **shadcn/ui** | v4 (configuración en CSS) | Tokens semánticos con `@theme inline`; componentes accesibles (Radix) | — |
 | Iconos | lucide-react | — | Coherentes, ligeros | — |
-| Fuentes | `next/font` | Geist, Geist Mono, Literata (OFL) | Sin peticiones a terceros en tiempo de ejecución | — |
+| Fuentes | `next/font` | Inter y Archivo (OFL) | Sin peticiones a terceros en tiempo de ejecución | — |
 | Validación | **Zod** | v4 | Esquemas de contenido, entradas de acciones, variables de entorno, salidas de IA | — |
 | BD + Auth | **Supabase** | Postgres + Auth (OTP por email) + RLS | Capa gratuita suficiente, RLS, CLI con migraciones y tipos | [0002](../adr/0002-supabase-db-auth.md) |
 | Cliente Supabase | `@supabase/supabase-js` + `@supabase/ssr` | Claves **publishable / secret** (las `anon`/`service_role` heredadas se retiran a finales de 2026) | Sesión por cookies en App Router | [0002](../adr/0002-supabase-db-auth.md) |

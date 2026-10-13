@@ -76,11 +76,11 @@ export default async function VocabularyPage({ searchParams }: PageProps<'/vocab
         </EmptyState>
       ) : (
         <>
-          <dl className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <dl className="grid grid-cols-2 gap-4 sm:grid-cols-4">
             {STATUSES.map((s) => (
-              <div key={s} className="rounded-panel border border-border bg-surface p-3">
-                <dt className="text-xs text-muted">{t(STATUS_LABEL[s])}</dt>
-                <dd className="hud text-2xl">{counts[s]}</dd>
+              <div key={s} className="rounded-card bg-surface p-4">
+                <dt className="text-caption text-muted">{t(STATUS_LABEL[s])}</dt>
+                <dd className="tabular-nums text-heading-sm">{counts[s]}</dd>
               </div>
             ))}
           </dl>
@@ -89,7 +89,7 @@ export default async function VocabularyPage({ searchParams }: PageProps<'/vocab
             action="/vocabulario"
             role="search"
             aria-label={t('library.filtersLabel')}
-            className="grid gap-3 rounded-panel border border-border bg-surface p-3 sm:grid-cols-[minmax(0,1fr)_10rem_8rem_auto] sm:items-end"
+            className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_10rem_8rem_auto] sm:items-end"
           >
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="vocab-q">{t('vocabulary.search')}</Label>
@@ -151,7 +151,7 @@ export default async function VocabularyPage({ searchParams }: PageProps<'/vocab
                 aria-label={t('vocabulary.pagination')}
                 className="flex items-center justify-between gap-3"
               >
-                <p className="hud text-sm text-muted">
+                <p className="tabular-nums text-body-sm text-muted">
                   {t('vocabulary.pageOf', { page, pages, total })}
                 </p>
                 <div className="flex gap-2">

@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { InlineText } from '@/components/ui/inline-text';
-import { Chip, Panel, PanelTitle, Skeleton } from '@/components/ui/panel';
+import { PageContainer } from '@/components/ui/page';
+import { Chip, Panel, PanelLabel, PanelTitle, Skeleton } from '@/components/ui/panel';
 import { PhaseStepper } from '@/components/ui/phase-stepper';
 import { useLessonSession } from '@/features/lessons/components/use-lesson-session';
 import { useLexiconSession } from '@/features/lexicon/components/use-lexicon-session';
@@ -95,7 +96,7 @@ function SelfRating({
   const t = useT();
   return (
     <div className="flex flex-col gap-2">
-      <label htmlFor={id} className="text-sm font-medium">
+      <label htmlFor={id} className="text-body-sm font-medium">
         {label}
       </label>
       <div className="flex items-center gap-3">
@@ -109,7 +110,7 @@ function SelfRating({
           onChange={(event) => onChange(Number(event.target.value))}
           className="h-11 w-full max-w-xs accent-accent"
         />
-        <output htmlFor={id} className="hud w-14 text-sm">
+        <output htmlFor={id} className="tabular-nums w-14 text-body-sm">
           {t('listening.selfRatingValue', { n: value })}
         </output>
       </div>
@@ -350,23 +351,26 @@ export function ListeningLesson({
   const needsTranscript = blind && phase >= PHASE.diagnosis && phase < PHASE.result;
 
   return (
-    <div className="mx-auto flex w-full max-w-5xl flex-col gap-5 px-4 py-6 sm:px-6 lg:px-8">
+    // Una columna, salvo al repasar con el texto: ahí conviven la transcripción y las preguntas.
+    <PageContainer width={blind && phase === PHASE.transcript ? 'page' : 'exercise'}>
       <header className="flex flex-col gap-3">
         <Link
           href="/escuchar"
-          className="flex items-center gap-1.5 self-start rounded-control text-sm text-muted hover:text-text"
+          className="flex items-center gap-1.5 self-start rounded-structure text-body-sm text-muted hover:text-text"
         >
           <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
           {t('lesson.back')}
         </Link>
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <h1 lang="en" className="text-2xl font-semibold tracking-tight sm:text-3xl">
+          <h1 lang="en" className="text-heading-sm sm:text-heading">
             {intro.title}
           </h1>
           <div className="flex flex-wrap items-center gap-2">
-            <Chip className="hud">{intro.level}</Chip>
-            <Chip className="hud">{formatClock(intro.audio.duration_s * 1000)}</Chip>
-            <Chip className="hud">{t('lesson.wpm', { n: Math.round(intro.audio.wpm) })}</Chip>
+            <Chip className="tabular-nums">{intro.level}</Chip>
+            <Chip className="tabular-nums">{formatClock(intro.audio.duration_s * 1000)}</Chip>
+            <Chip className="tabular-nums">
+              {t('lesson.wpm', { n: Math.round(intro.audio.wpm) })}
+            </Chip>
           </div>
         </div>
         {blind ? (
@@ -376,17 +380,12 @@ export function ListeningLesson({
             label={t('lesson.phaseOf', { n: phase + 1, total: PHASE_LABELS.length })}
           />
         ) : (
-          <Chip className="self-start border-accent text-accent">
-            {t('listening.modeTranscript')}
-          </Chip>
+          <Chip className="self-start text-accent-text">{t('listening.modeTranscript')}</Chip>
         )}
       </header>
 
       {error || transcriptError ? (
-        <p
-          role="alert"
-          className="flex flex-wrap items-center gap-2 rounded-control border border-danger px-3 py-2 text-sm text-danger"
-        >
+        <p role="alert" data-tone="error" className="feedback flex-wrap items-center text-error">
           <TriangleAlert aria-hidden="true" className="size-4 shrink-0" strokeWidth={1.75} />
           {error ? t(error) : t('listening.transcriptUnavailable')}
           {transcriptError ? (
@@ -407,24 +406,24 @@ export function ListeningLesson({
       ) : null}
 
       {blind && phase === PHASE.prepare ? (
-        <Panel className="flex max-w-2xl flex-col gap-5">
+        <Panel className="flex flex-col gap-6">
           <div>
-            <PanelTitle>{unitTitle}</PanelTitle>
+            <PanelLabel>{unitTitle}</PanelLabel>
             <p className="mt-2">{intro.summary_es}</p>
           </div>
           {previous?.score != null ? (
-            <p className="text-sm text-muted">
+            <p className="text-body-sm text-muted">
               {t('lesson.lastResult', { pct: toPercent(previous.score) })}
               {previous.version !== intro.version ? ` ${t('lesson.newVersion')}` : ''}
             </p>
           ) : null}
           <div>
-            <PanelTitle>{t('listening.speakers')}</PanelTitle>
+            <PanelLabel>{t('listening.speakers')}</PanelLabel>
             <ul className="mt-2 flex flex-wrap gap-2">
               {intro.speakers.map((speaker) => (
                 <li key={speaker.id}>
                   <Chip>
-                    {speaker.name} · <span className="hud ml-1">{speaker.accent}</span>
+                    {speaker.name} · <span className="tabular-nums ml-1">{speaker.accent}</span>
                   </Chip>
                 </li>
               ))}
@@ -432,23 +431,23 @@ export function ListeningLesson({
           </div>
           {intro.prediction_prompt ? (
             <div>
-              <PanelTitle>{t('listening.beforeListening')}</PanelTitle>
-              <p lang="en" className="reading-md mt-2">
+              <PanelLabel>{t('listening.beforeListening')}</PanelLabel>
+              <p lang="en" className="prose-reading mt-2">
                 {intro.prediction_prompt}
               </p>
             </div>
           ) : null}
           {intro.preTeach.length > 0 ? (
             <div>
-              <PanelTitle>{t('listening.keyWords')}</PanelTitle>
+              <PanelLabel>{t('listening.keyWords')}</PanelLabel>
               <dl className="mt-2 flex flex-col gap-2">
                 {intro.preTeach.map((entry) => (
                   <div key={entry.word}>
-                    <dt lang="en" className="font-medium text-accent">
+                    <dt lang="en" className="font-medium text-accent-text">
                       {entry.word}
                     </dt>
                     {entry.def_en ? (
-                      <dd className="text-sm text-muted">
+                      <dd className="text-body-sm text-muted">
                         <span lang="en">{entry.def_en}</span> — {entry.def_es}
                       </dd>
                     ) : null}
@@ -458,15 +457,15 @@ export function ListeningLesson({
             </div>
           ) : null}
           <div className="flex flex-col gap-3">
-            <PanelTitle>{t('listening.modeTitle')}</PanelTitle>
+            <PanelLabel>{t('listening.modeTitle')}</PanelLabel>
             {seenBefore ? (
-              <p className="text-sm text-warning">{t('listening.modeSeenBefore')}</p>
+              <p className="text-body-sm text-warning">{t('listening.modeSeenBefore')}</p>
             ) : null}
             <div className="grid gap-3 sm:grid-cols-2">
-              <div className="flex flex-col gap-3 rounded-control border border-border bg-surface-2 p-4">
+              <div className="flex flex-col gap-3 rounded-card bg-surface-2 p-4">
                 <div>
                   <h3 className="font-medium">{t('listening.modeBlind')}</h3>
-                  <p className="mt-1 text-sm text-muted">{t('listening.modeBlindBody')}</p>
+                  <p className="mt-1 text-body-sm text-muted">{t('listening.modeBlindBody')}</p>
                 </div>
                 <Button
                   size="lg"
@@ -477,14 +476,16 @@ export function ListeningLesson({
                   {t('listening.startListening')}
                 </Button>
               </div>
-              <div className="flex flex-col gap-3 rounded-control border border-border bg-surface-2 p-4">
+              <div className="flex flex-col gap-3 rounded-card bg-surface-2 p-4">
                 <div>
                   <h3 className="font-medium">{t('listening.modeTranscript')}</h3>
-                  <p className="mt-1 text-sm text-muted">{t('listening.modeTranscriptBody')}</p>
+                  <p className="mt-1 text-body-sm text-muted">
+                    {t('listening.modeTranscriptBody')}
+                  </p>
                 </div>
                 <Button
                   size="lg"
-                  variant="secondary"
+                  variant="ghost"
                   className="mt-auto"
                   disabled={saving || opening}
                   onClick={() => void startAssisted()}
@@ -503,7 +504,7 @@ export function ListeningLesson({
 
       {blind && phase === PHASE.global ? (
         <Panel className="flex flex-col gap-4">
-          <p className="text-sm text-muted">{t('listening.globalHint')}</p>
+          <p className="text-body-sm text-muted">{t('listening.globalHint')}</p>
           {tasksDone || globalTasks.length === 0 ? (
             <>
               <SelfRating
@@ -544,7 +545,7 @@ export function ListeningLesson({
 
       {blind && phase === PHASE.detail ? (
         <Panel className="flex flex-col gap-4">
-          <p className="text-sm text-muted">{t('listening.detailHint')}</p>
+          <p className="text-body-sm text-muted">{t('listening.detailHint')}</p>
           {detailTasks.length > 0 ? (
             <TaskRunner
               tasks={detailTasks}
@@ -567,12 +568,12 @@ export function ListeningLesson({
       ) : null}
 
       {needsTranscript && !transcript && !transcriptError ? (
-        <Skeleton className="h-64 rounded-panel" />
+        <Skeleton className="h-64 rounded-card" />
       ) : null}
 
       {phase === PHASE.diagnosis && transcript && dictationContext ? (
         <Panel className="flex flex-col gap-4">
-          <p className="text-sm text-muted">{t('listening.diagnosisHint')}</p>
+          <p className="text-body-sm text-muted">{t('listening.diagnosisHint')}</p>
           <DictationStep
             tasks={transcript.dictations}
             context={dictationContext}
@@ -586,8 +587,8 @@ export function ListeningLesson({
       {phase === PHASE.transcript && transcript ? (
         <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_22rem] xl:items-start">
           <Panel className="flex flex-col gap-4">
-            <p className="text-sm text-muted">{t('listening.transcriptHint')}</p>
-            <p className="text-sm text-muted">{t('lexicon.helpHint')}</p>
+            <p className="text-body-sm text-muted">{t('listening.transcriptHint')}</p>
+            <p className="text-body-sm text-muted">{t('lexicon.helpHint')}</p>
             <Transcript
               segments={transcript.segments}
               speakers={intro.speakers}
@@ -596,13 +597,13 @@ export function ListeningLesson({
               words={{ lexicon: lex, glossary: transcript.glossary }}
             />
           </Panel>
-          <Panel className="flex flex-col gap-4 xl:sticky xl:top-6">
+          <Panel className="flex flex-col gap-4 xl:sticky xl:top-24">
             {checked.length > 0 ? (
               <>
                 <PanelTitle>{t('listening.reviewQuestions')}</PanelTitle>
                 <ul className="flex flex-col gap-4">
                   {checked.map(({ task, result }) => (
-                    <li key={task.id} className="flex flex-col gap-1 text-sm">
+                    <li key={task.id} className="flex flex-col gap-1 text-body-sm">
                       <span className="flex items-start gap-2">
                         {result.correct ? (
                           <CircleCheck
@@ -613,7 +614,7 @@ export function ListeningLesson({
                         ) : (
                           <CircleX
                             aria-label={t('tasks.incorrect')}
-                            className="mt-0.5 size-4 shrink-0 text-danger"
+                            className="mt-0.5 size-4 shrink-0 text-error"
                             strokeWidth={2}
                           />
                         )}
@@ -650,7 +651,7 @@ export function ListeningLesson({
 
       {phase === PHASE.training && transcript ? (
         <Panel className="flex flex-col gap-5">
-          <p className="text-sm text-muted">
+          <p className="text-body-sm text-muted">
             {failed.length > 0 ? t('listening.trainingHint') : t('listening.trainingNone')}
           </p>
           {failed.map(({ task }) => {
@@ -662,15 +663,15 @@ export function ListeningLesson({
             };
             return (
               <div key={task.id} className="flex flex-col gap-2 border-t border-border pt-4">
-                <p lang="en" className="reading-md">
+                <p lang="en" className="prose-reading">
                   {task.reference}
                 </p>
                 {features.map((feature) => (
-                  <p key={feature.phrase} className="text-sm text-muted">
+                  <p key={feature.phrase} className="text-body-sm text-muted">
                     <span lang="en" className="font-medium text-text">
                       {feature.phrase}
                     </span>
-                    {feature.ipa ? <span className="hud"> {feature.ipa}</span> : null}
+                    {feature.ipa ? <span className="tabular-nums"> {feature.ipa}</span> : null}
                     {' — '}
                     <InlineText text={feature.explanation_es} />
                   </p>
@@ -702,7 +703,7 @@ export function ListeningLesson({
 
       {phase === PHASE.final ? (
         <Panel className="flex flex-col gap-4">
-          <p className="text-sm text-muted">{t('listening.finalHint')}</p>
+          <p className="text-body-sm text-muted">{t('listening.finalHint')}</p>
           <SelfRating
             id="self-final"
             label={t('listening.selfRatingFinal')}
@@ -732,30 +733,32 @@ export function ListeningLesson({
               ] as const
             ).map(([label, value]) => (
               <div key={label}>
-                <dt className="text-sm text-muted">{t(label)}</dt>
-                <dd className="hud text-3xl">{value === null ? '—' : `${toPercent(value)} %`}</dd>
+                <dt className="text-body-sm text-muted">{t(label)}</dt>
+                <dd className="tabular-nums text-heading">
+                  {value === null ? '—' : `${toPercent(value)} %`}
+                </dd>
               </div>
             ))}
             <div>
-              <dt className="text-sm text-muted">{t('lesson.timeLabel')}</dt>
-              <dd className="hud text-3xl">{formatClock(activeMs)}</dd>
+              <dt className="text-body-sm text-muted">{t('lesson.timeLabel')}</dt>
+              <dd className="tabular-nums text-heading">{formatClock(activeMs)}</dd>
             </div>
           </dl>
-          <p className="hud text-sm text-muted">
+          <p className="tabular-nums text-body-sm text-muted">
             {t('listening.improvement', { before: selfInitial, after: selfFinal })}
           </p>
           <div>
-            <h3 className="text-sm font-medium">{t('listening.yourEar')}</h3>
+            <h3 className="text-body-sm font-medium">{t('listening.yourEar')}</h3>
             {causeCounts.size === 0 ? (
-              <p className="mt-2 text-sm text-success">{t('listening.noFailures')}</p>
+              <p className="mt-2 text-body-sm text-success">{t('listening.noFailures')}</p>
             ) : (
-              <ul className="mt-2 flex flex-col gap-1.5 text-sm">
+              <ul className="mt-2 flex flex-col gap-1.5 text-body-sm">
                 {[...causeCounts.entries()]
                   .sort((a, b) => b[1] - a[1])
                   .map(([cause, count]) => (
                     <li key={cause} className="flex justify-between gap-3">
                       <span className="text-muted">{t(CAUSE_LABEL[cause])}</span>
-                      <span className="hud">{count}</span>
+                      <span className="tabular-nums">{count}</span>
                     </li>
                   ))}
               </ul>
@@ -763,14 +766,14 @@ export function ListeningLesson({
           </div>
           {grammar.length > 0 ? (
             <div>
-              <h3 className="text-sm font-medium">{t('grammar.inThisLesson')}</h3>
-              <ul className="mt-2 flex flex-col gap-1 text-sm">
+              <h3 className="text-body-sm font-medium">{t('grammar.inThisLesson')}</h3>
+              <ul className="mt-2 flex flex-col gap-1 text-body-sm">
                 {grammar.map((ficha) => (
                   <li key={ficha.id}>
                     <Link
                       href={`/gramatica/${ficha.id}`}
                       lang="en"
-                      className="text-accent underline underline-offset-4"
+                      className="text-accent-text underline underline-offset-4"
                     >
                       {ficha.title}
                     </Link>
@@ -806,8 +809,8 @@ export function ListeningLesson({
 
       {assisted === 'on' && transcript ? (
         <Panel className="flex flex-col gap-4">
-          <p className="text-sm text-muted">{t('listening.assistedHint')}</p>
-          <p className="text-sm text-muted">{t('lexicon.helpHint')}</p>
+          <p className="text-body-sm text-muted">{t('listening.assistedHint')}</p>
+          <p className="text-body-sm text-muted">{t('lexicon.helpHint')}</p>
           <Transcript
             segments={transcript.segments}
             speakers={intro.speakers}
@@ -829,10 +832,10 @@ export function ListeningLesson({
         <Panel className="flex flex-col gap-5">
           <PanelTitle>{t('listening.assistedResult')}</PanelTitle>
           <dl>
-            <dt className="text-sm text-muted">{t('lesson.timeLabel')}</dt>
-            <dd className="hud text-3xl">{formatClock(activeMs)}</dd>
+            <dt className="text-body-sm text-muted">{t('lesson.timeLabel')}</dt>
+            <dd className="tabular-nums text-heading">{formatClock(activeMs)}</dd>
           </dl>
-          <p className="text-sm text-muted">{t('listening.assistedNote')}</p>
+          <p className="text-body-sm text-muted">{t('listening.assistedNote')}</p>
           <HarvestPanel skill="listening" lexicon={lex} glossary={transcript.glossary} />
           <div className="flex flex-wrap gap-2">
             <Button variant="secondary" onClick={() => setAssisted('on')}>
@@ -847,6 +850,6 @@ export function ListeningLesson({
           </div>
         </Panel>
       ) : null}
-    </div>
+    </PageContainer>
   );
 }

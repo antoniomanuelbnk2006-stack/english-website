@@ -10,7 +10,7 @@ import {
 import type { Metadata, Route } from 'next';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
-import { PageContainer, PageHeader } from '@/components/ui/page';
+import { PageContainer, PageHeader, PageSections } from '@/components/ui/page';
 import { Panel, PanelTitle } from '@/components/ui/panel';
 import { RingProgress } from '@/components/ui/ring-progress';
 import { QuickLog } from '@/features/journal/components/quick-log';
@@ -83,62 +83,70 @@ export default async function TodayPage() {
           <Link
             href="/nivel"
             aria-label={`${t('today.yourLevel', { level: profile.declaredLevel })}. ${t('today.changeLevel')}`}
-            className="hud flex h-11 items-center rounded-full border border-border px-4 text-sm text-muted transition-colors duration-150 hover:border-accent hover:text-accent"
+            className="btn btn-ghost tabular-nums"
           >
             {t('today.yourLevel', { level: profile.declaredLevel })}
           </Link>
         }
       />
 
-      <Panel className="flex items-center gap-5">
-        <RingProgress value={done} max={goal} label={t('today.goalRing', { done, goal })}>
-          <span className="hud text-xl font-medium">{done}</span>
-        </RingProgress>
-        <div className="min-w-0">
-          <PanelTitle>{t('today.goal', { min: goal })}</PanelTitle>
-          <p className="hud mt-1 text-2xl">{t('today.goalProgress', { done, goal })}</p>
-          {done >= goal ? <p className="mt-1 text-sm text-success">{t('today.goalMet')}</p> : null}
-        </div>
-      </Panel>
+      <PageSections>
+        <Panel className="flex items-center gap-5">
+          <RingProgress value={done} max={goal} label={t('today.goalRing', { done, goal })}>
+            <span className="tabular-nums text-subheading font-medium">{done}</span>
+          </RingProgress>
+          <div className="min-w-0">
+            <PanelTitle>{t('today.goal', { min: goal })}</PanelTitle>
+            <p className="tabular-nums mt-1 text-heading-sm">
+              {t('today.goalProgress', { done, goal })}
+            </p>
+            {done >= goal ? (
+              <p className="mt-1 text-body-sm text-success">{t('today.goalMet')}</p>
+            ) : null}
+          </div>
+        </Panel>
 
-      <Panel>
-        <PanelTitle>{t('journal.quickTitle')}</PanelTitle>
-        <p className="mt-2 mb-4 text-sm text-muted">{t('journal.quickHint')}</p>
-        <QuickLog />
-      </Panel>
+        <Panel>
+          <PanelTitle>{t('journal.quickTitle')}</PanelTitle>
+          <p className="mt-2 mb-4 text-body-sm text-muted">{t('journal.quickHint')}</p>
+          <QuickLog />
+        </Panel>
 
-      <Panel>
-        <PanelTitle>{t('today.planTitle')}</PanelTitle>
-        <p className="mt-2 text-sm text-muted">{t('today.planPending')}</p>
-        <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-          {SHORTCUTS.map(({ href, icon: Icon, title, hint }) => (
-            <li key={href}>
-              <Link
-                href={href}
-                className="flex h-full items-center gap-3 rounded-control border border-border bg-surface-2 p-3 transition-colors duration-150 hover:border-accent"
-              >
-                <Icon
-                  aria-hidden="true"
-                  className="size-5 shrink-0 text-accent"
-                  strokeWidth={1.75}
-                />
-                <span className="min-w-0">
-                  <span className="block font-medium">{t(title)}</span>
-                  <span className="block text-sm text-muted">{hint ? t(hint) : reviewHint}</span>
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </Panel>
+        <Panel>
+          <PanelTitle>{t('today.planTitle')}</PanelTitle>
+          <p className="mt-2 text-body-sm text-muted">{t('today.planPending')}</p>
+          <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+            {SHORTCUTS.map(({ href, icon: Icon, title, hint }) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className="flex h-full items-center gap-3 rounded-card border border-transparent bg-surface-2 p-4 transition-colors duration-150 hover:border-border"
+                >
+                  <Icon
+                    aria-hidden="true"
+                    className="size-5 shrink-0 text-accent-text"
+                    strokeWidth={1.75}
+                  />
+                  <span className="min-w-0">
+                    <span className="block font-medium">{t(title)}</span>
+                    <span className="block text-body-sm text-muted">
+                      {hint ? t(hint) : reviewHint}
+                    </span>
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Panel>
 
-      <Panel>
-        <PanelTitle>{t('today.levelsTitle')}</PanelTitle>
-        <div className="mt-4 flex flex-col gap-5">
-          <LevelMeter rating={ratings.listening} t={t} />
-          <LevelMeter rating={ratings.reading} t={t} />
-        </div>
-      </Panel>
+        <Panel>
+          <PanelTitle>{t('today.levelsTitle')}</PanelTitle>
+          <div className="mt-6 flex flex-col gap-6">
+            <LevelMeter rating={ratings.listening} t={t} />
+            <LevelMeter rating={ratings.reading} t={t} />
+          </div>
+        </Panel>
+      </PageSections>
     </PageContainer>
   );
 }

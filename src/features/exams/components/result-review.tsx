@@ -19,7 +19,7 @@ const paragraphs = (text: string) => text.split(/\n{2,}/).filter((piece) => piec
 
 function Mark({ item, t }: { item: ExamItemResult; t: Translate }) {
   const Icon = item.correct ? CircleCheck : item.marks > 0 ? TriangleAlert : CircleX;
-  const color = item.correct ? 'text-success' : item.marks > 0 ? 'text-warning' : 'text-danger';
+  const color = item.correct ? 'text-success' : item.marks > 0 ? 'text-warning' : 'text-error';
   const label = item.correct
     ? t('tasks.correct')
     : item.marks > 0
@@ -38,13 +38,13 @@ function Solved({ text, fill }: { text: string; fill: (n: number) => string }) {
   return (
     <>
       {paragraphs(text).map((paragraph, index) => (
-        <p key={index} lang="en" className="reading-md whitespace-pre-line">
+        <p key={index} lang="en" className="prose-reading whitespace-pre-line">
           {splitCloze(paragraph).map((piece, pieceIndex) =>
             typeof piece === 'string' ? (
               <span key={pieceIndex}>{piece}</span>
             ) : (
-              <strong key={pieceIndex} className="font-medium text-accent">
-                <span className="hud text-xs">({piece})</span> {fill(piece)}
+              <strong key={pieceIndex} className="font-medium text-accent-text">
+                <span className="tabular-nums text-caption">({piece})</span> {fill(piece)}
               </strong>
             ),
           )}
@@ -56,8 +56,8 @@ function Solved({ text, fill }: { text: string; fill: (n: number) => string }) {
 
 function Fold({ summary, children }: { summary: string; children: ReactNode }) {
   return (
-    <details className="rounded-control border border-border">
-      <summary className="cursor-pointer px-3 py-2 text-sm font-medium text-muted hover:text-text">
+    <details className="rounded-card bg-surface-2">
+      <summary className="cursor-pointer px-3 py-2 text-body-sm font-medium text-muted hover:text-text">
         {summary}
       </summary>
       <div className="flex flex-col gap-3 border-t border-border px-3 py-3">{children}</div>
@@ -71,9 +71,11 @@ function Transcript({ recording }: { recording: ExamRecording }) {
   return (
     <div className="flex flex-col gap-2">
       {recording.segments.map((segment, index) => (
-        <p key={index} lang="en" className="reading-md">
+        <p key={index} lang="en" className="prose-reading">
           {several ? (
-            <span className="hud mr-2 text-xs text-muted">{names.get(segment.speaker)}</span>
+            <span className="tabular-nums mr-2 text-caption text-muted">
+              {names.get(segment.speaker)}
+            </span>
           ) : null}
           {segment.text}
         </p>
@@ -91,7 +93,9 @@ function Material({ part, t }: { part: ExamPart; t: Translate }) {
         {recordings.map((recording, index) => (
           <div key={recording.id} className="flex flex-col gap-2">
             {recordings.length > 1 ? (
-              <h5 className="hud text-xs text-muted">{t('exams.recording', { n: index + 1 })}</h5>
+              <h5 className="tabular-nums text-caption text-muted">
+                {t('exams.recording', { n: index + 1 })}
+              </h5>
             ) : null}
             <Transcript recording={recording} />
           </div>
@@ -109,7 +113,7 @@ function Material({ part, t }: { part: ExamPart; t: Translate }) {
               {texts.map((text, index) => (
                 <div key={index} className="flex flex-col gap-3">
                   {paragraphs(text).map((paragraph, paragraphIndex) => (
-                    <p key={paragraphIndex} lang="en" className="reading-md whitespace-pre-line">
+                    <p key={paragraphIndex} lang="en" className="prose-reading whitespace-pre-line">
                       {paragraph}
                     </p>
                   ))}
@@ -179,11 +183,11 @@ function Material({ part, t }: { part: ExamPart; t: Translate }) {
                 task.options.map((option) => (
                   <div key={option.id} className="flex flex-col gap-2">
                     <h5 className="flex items-baseline gap-2">
-                      <span className="hud font-medium text-accent">{option.id}</span>
+                      <span className="tabular-nums font-medium text-accent-text">{option.id}</span>
                       {option.title ? <span lang="en">{option.title}</span> : null}
                     </h5>
                     {paragraphs(option.text).map((paragraph, index) => (
-                      <p key={index} lang="en" className="reading-md">
+                      <p key={index} lang="en" className="prose-reading">
                         {paragraph}
                       </p>
                     ))}
@@ -243,7 +247,7 @@ export function ResultReview({
   return (
     <div className="flex flex-col gap-6">
       <Panel className="flex flex-col gap-4">
-        <p className="hud text-2xl">
+        <p className="tabular-nums text-heading-sm">
           {t('uoe.score', {
             marks: result.marks,
             total: result.total,
@@ -257,18 +261,18 @@ export function ResultReview({
                 <span lang="en" className="font-medium">
                   {t(SECTION_LABEL[section.section])}
                 </span>
-                <span className="hud text-sm text-muted">
+                <span className="tabular-nums text-body-sm text-muted">
                   {t('exams.marksOf', { marks: section.marks, total: section.total })}
                 </span>
                 {section.scale !== null ? (
-                  <span className="hud text-sm">
+                  <span className="tabular-nums text-body-sm">
                     {t('exams.scaleLine', { scale: section.scale })}
                   </span>
                 ) : null}
               </span>
               <span
                 className={cn(
-                  'text-sm font-medium',
+                  'text-body-sm font-medium',
                   section.passed ? 'text-success' : 'text-warning',
                 )}
               >
@@ -279,7 +283,7 @@ export function ResultReview({
             </li>
           ))}
         </ul>
-        <p className="text-xs text-muted">
+        <p className="text-caption text-muted">
           {format.pass !== null
             ? t('exams.scaleNote', { exam: format.exam, pass: format.pass })
             : t('exams.plainNote')}
@@ -293,14 +297,14 @@ export function ResultReview({
           <section key={index} aria-labelledby={`part-${index}`} className="flex flex-col gap-3">
             <h2
               id={`part-${index}`}
-              className="flex flex-wrap items-baseline gap-x-3 text-lg font-semibold"
+              className="flex flex-wrap items-baseline gap-x-3 text-body-lg font-semibold"
             >
               {t('exams.part', { n: index + 1 })}
               <span lang="en" className="font-normal text-muted">
                 {name}
               </span>
               {graded ? (
-                <span className="hud ml-auto text-sm text-muted">
+                <span className="tabular-nums ml-auto text-body-sm text-muted">
                   {t('exams.marksOf', { marks: graded.marks, total: graded.total })}
                 </span>
               ) : null}
@@ -308,17 +312,17 @@ export function ResultReview({
 
             {part.type === 'writing' ? (
               <div className="flex flex-col gap-3">
-                <p lang="en" className="reading-md whitespace-pre-line">
+                <p lang="en" className="prose-reading whitespace-pre-line">
                   {part.prompt}
                 </p>
                 <WritingReview paperId={paper.id} n={part.n} />
                 <div className="flex flex-col gap-1">
-                  <h4 className="text-sm font-medium text-muted">{t('exams.writingModel')}</h4>
-                  <p lang="en" className="reading-md whitespace-pre-line">
+                  <h4 className="text-body-sm font-medium text-muted">{t('exams.writingModel')}</h4>
+                  <p lang="en" className="prose-reading whitespace-pre-line">
                     {part.model_answer}
                   </p>
                 </div>
-                <ul className="flex list-disc flex-col gap-1 pl-5 text-sm text-muted">
+                <ul className="flex list-disc flex-col gap-1 pl-5 text-body-sm text-muted">
                   {part.checklist_es.map((line) => (
                     <li key={line}>{line}</li>
                   ))}
@@ -331,12 +335,12 @@ export function ResultReview({
                   {graded?.items.map((item) => {
                     const prompt = promptOf(part, item.n);
                     return (
-                      <li key={item.n} className="flex flex-col gap-1 text-sm">
+                      <li key={item.n} className="flex flex-col gap-1 text-body-sm">
                         <span className="flex flex-wrap items-baseline gap-x-2">
-                          <span className="hud text-muted">{item.n}.</span>
+                          <span className="tabular-nums text-muted">{item.n}.</span>
                           <Mark item={item} t={t} />
                           {item.max > 1 ? (
-                            <span className="hud text-muted">
+                            <span className="tabular-nums text-muted">
                               {t('uoe.marksOf', { marks: item.marks, max: item.max })}
                             </span>
                           ) : null}

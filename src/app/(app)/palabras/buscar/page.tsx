@@ -31,8 +31,8 @@ const first = (value: string | string[] | undefined) => (Array.isArray(value) ? 
 const TRY = ['serendipity', 'give up', 'comfortable', 'nevertheless'];
 
 const BADGE = {
-  learning: { label: 'dictionary.badgeLearning', className: 'border-accent text-accent' },
-  known: { label: 'dictionary.badgeKnown', className: 'border-success text-success' },
+  learning: { label: 'dictionary.badgeLearning', className: 'text-accent-text' },
+  known: { label: 'dictionary.badgeKnown', className: 'text-success' },
   ignored: { label: 'dictionary.badgeIgnored', className: '' },
 } as const;
 
@@ -61,16 +61,16 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
       <Panel className="flex flex-col gap-4">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div className="min-w-0">
-            <h2 lang="en" className="text-3xl font-semibold tracking-tight">
+            <h2 lang="en" className="text-heading">
               {entry.word}
             </h2>
             <div className="mt-2 flex flex-wrap items-center gap-1.5">
               {entry.ipa ? (
-                <span lang="en" className="hud text-muted">
+                <span lang="en" className="tabular-nums text-muted">
                   {entry.ipa}
                 </span>
               ) : null}
-              <Chip className="hud">
+              <Chip className="tabular-nums">
                 {level ? t('dictionary.lookupLevel', { level }) : t('dictionary.lookupNoLevel')}
               </Chip>
               {badge ? <Chip className={badge.className}>{t(badge.label)}</Chip> : null}
@@ -80,12 +80,12 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
         </div>
 
         {base ? (
-          <p className="text-sm">
+          <p className="text-body-sm">
             {t('dictionary.lookupBase')}{' '}
             <Link
               href={lookupHref(base)}
               lang="en"
-              className="rounded-control font-medium text-accent hover:underline"
+              className="rounded-structure font-medium text-accent-text hover:underline"
             >
               {base}
             </Link>
@@ -93,15 +93,15 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
         ) : null}
 
         {curated ? (
-          <div className="rounded-control border border-border bg-surface-2 px-4 py-3">
-            <p className="text-xs font-medium tracking-widest text-muted uppercase">
+          <div className="rounded-card bg-surface-2 px-4 py-3">
+            <p className="text-body-sm font-medium text-muted">
               {t('dictionary.lookupInDeck', { level: curated.level })}
             </p>
-            <p className="mt-1 text-lg">{curated.entry.es}</p>
+            <p className="mt-1 text-body-lg">{curated.entry.es}</p>
             <Example
               sentence={curated.entry.example}
               surface={curated.entry.surface}
-              className="mt-1 text-sm text-muted"
+              className="mt-1 text-body-sm text-muted"
             />
           </div>
         ) : null}
@@ -110,14 +110,14 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
       <Panel className="flex flex-col gap-3">
         <PanelTitle>{t('dictionary.lookupTranslations')}</PanelTitle>
         {entry.translations.length === 0 ? (
-          <p className="text-sm text-muted">{t('dictionary.lookupNoTranslation')}</p>
+          <p className="text-body-sm text-muted">{t('dictionary.lookupNoTranslation')}</p>
         ) : (
           <ul className="flex flex-col gap-2">
             {entry.translations.map((translation, index) => (
               <li key={`${translation.gloss}-${index}`}>
-                <span className="text-lg">{translation.terms.join(', ')}</span>
+                <span className="text-body-lg">{translation.terms.join(', ')}</span>
                 {translation.gloss ? (
-                  <span lang="en" className="ml-2 text-sm text-muted">
+                  <span lang="en" className="ml-2 text-body-sm text-muted">
                     ({translation.gloss})
                   </span>
                 ) : null}
@@ -131,13 +131,13 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
         <PanelTitle>{t('dictionary.lookupDefinitions')}</PanelTitle>
         {entry.groups.map((group) => (
           <section key={group.pos} aria-label={posLabel(t, group.pos)}>
-            <p className="text-sm font-medium text-accent">{posLabel(t, group.pos)}</p>
+            <p className="text-body-sm font-medium text-accent-text">{posLabel(t, group.pos)}</p>
             <ol className="mt-1 ml-5 flex list-decimal flex-col gap-1.5" lang="en">
               {group.senses.map((sense, index) => (
                 <li key={index}>
                   {sense.text}
                   {sense.example ? (
-                    <span className="block text-sm text-muted">{sense.example}</span>
+                    <span className="block text-body-sm text-muted">{sense.example}</span>
                   ) : null}
                 </li>
               ))}
@@ -148,7 +148,7 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
           href={`https://en.wiktionary.org/wiki/${encodeURIComponent(entry.word.replace(/ /g, '_'))}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1.5 self-start rounded-control text-xs text-muted hover:text-text"
+          className="flex items-center gap-1.5 self-start rounded-structure text-caption text-muted hover:text-text"
         >
           {t('dictionary.lookupSource')}
           <ExternalLink aria-hidden="true" className="size-3.5" strokeWidth={1.75} />
@@ -166,19 +166,17 @@ export default async function LookupPage({ searchParams }: PageProps<'/palabras/
   const result = term.success ? await lookupWord(term.data) : null;
 
   return (
-    <PageContainer className="max-w-3xl">
+    <PageContainer width="exercise">
       <header className="flex flex-col gap-3">
         <Link
           href="/palabras"
-          className="flex items-center gap-1.5 self-start rounded-control text-sm text-muted hover:text-text"
+          className="flex items-center gap-1.5 self-start rounded-structure text-body-sm text-muted hover:text-text"
         >
           <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
           {t('nav.words')}
         </Link>
-        <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          {t('dictionary.lookupTitle')}
-        </h1>
-        <p className="text-sm text-muted">{t('dictionary.lookupSubtitle')}</p>
+        <h1 className="text-heading-sm sm:text-heading">{t('dictionary.lookupTitle')}</h1>
+        <p className="text-body-sm text-muted">{t('dictionary.lookupSubtitle')}</p>
       </header>
 
       <form
@@ -206,21 +204,21 @@ export default async function LookupPage({ searchParams }: PageProps<'/palabras/
       </form>
 
       {raw === '' ? (
-        <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted">
+        <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-body-sm text-muted">
           {t('dictionary.lookupTry')}
           {TRY.map((word) => (
             <Link
               key={word}
               href={lookupHref(word)}
               lang="en"
-              className="rounded-control text-accent hover:underline"
+              className="rounded-structure text-accent-text hover:underline"
             >
               {word}
             </Link>
           ))}
         </p>
       ) : !term.success ? (
-        <p role="alert" className="text-sm text-danger">
+        <p role="alert" className="text-body-sm text-error">
           {t('dictionary.lookupInvalid')}
         </p>
       ) : result?.status === 'found' ? (
@@ -236,7 +234,7 @@ export default async function LookupPage({ searchParams }: PageProps<'/palabras/
                   key={word}
                   href={lookupHref(word)}
                   lang="en"
-                  className="rounded-control text-accent hover:underline"
+                  className="rounded-structure text-accent-text hover:underline"
                 >
                   {word}
                 </Link>

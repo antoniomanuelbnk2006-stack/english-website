@@ -42,10 +42,10 @@ export function RewritePanel({
 
   return (
     <section aria-labelledby={`${id}-title`} className="flex flex-col gap-3">
-      <h2 id={`${id}-title`} className="text-lg font-medium">
+      <h2 id={`${id}-title`} className="text-body-lg font-medium">
         {t('writing.rewriteTitle')}
       </h2>
-      <p className="text-sm text-muted">{t('writing.rewriteHint')}</p>
+      <p className="text-body-sm text-muted">{t('writing.rewriteHint')}</p>
       <div className="flex flex-col gap-1.5">
         <Label htmlFor={`${id}-text`}>{t('writing.rewriteLabel')}</Label>
         <Textarea
@@ -58,9 +58,9 @@ export function RewritePanel({
             setText(event.target.value);
             setSavedWords(null);
           }}
-          className="reading-md"
+          className="prose-reading"
         />
-        <p className="hud text-xs text-muted">
+        <p className="tabular-nums text-caption text-muted">
           {words === 1 ? t('writing.wordCountOne') : t('writing.wordCount', { n: words })}
         </p>
       </div>
@@ -68,11 +68,11 @@ export function RewritePanel({
         <Button disabled={state === 'saving' || invalid} onClick={() => void save()}>
           {state === 'saving' ? t('common.saving') : t('writing.saveRewrite')}
         </Button>
-        <p role="status" className="text-sm">
+        <p role="status" className="text-body-sm">
           {savedWords !== null ? (
             <span className="text-success">{t('writing.rewriteSaved', { n: savedWords })}</span>
           ) : state === 'failed' ? (
-            <span className="text-danger">{t('errors.saveFailed')}</span>
+            <span className="text-error">{t('errors.saveFailed')}</span>
           ) : null}
         </p>
       </div>

@@ -69,17 +69,17 @@ function describeCheck(t: Translate, check: FormCheck): string {
 function HintItem({ hint, number, ficha }: { hint: Hint; number?: number; ficha?: string }) {
   const t = useT();
   return (
-    <li className="flex gap-3 text-sm">
-      <span aria-hidden="true" className="hud w-5 shrink-0 text-accent">
+    <li className="flex gap-3 text-body-sm">
+      <span aria-hidden="true" className="tabular-nums w-5 shrink-0 text-accent-text">
         {number ?? '·'}
       </span>
       <div className="flex min-w-0 flex-col gap-1.5">
-        <p lang="en" className="flex flex-wrap items-baseline gap-x-2 text-base">
+        <p lang="en" className="flex flex-wrap items-baseline gap-x-2 text-body">
           {hint.suggestion === null ? (
             <span className="font-medium">{hint.match}</span>
           ) : (
             <>
-              <del className="text-danger">{hint.match}</del>
+              <del className="text-error">{hint.match}</del>
               <ArrowRight aria-hidden="true" className="size-4 self-center text-muted" />
               <span lang="es" className="sr-only">
                 {t('writing.suggestion')}:
@@ -97,7 +97,7 @@ function HintItem({ hint, number, ficha }: { hint: Hint; number?: number; ficha?
         {ficha ? (
           <Link
             href={`/gramatica/${hint.grammar_ref}` as Route}
-            className="self-start text-accent underline underline-offset-4"
+            className="self-start text-accent-text underline underline-offset-4"
           >
             {t('writing.openFicha')}: <span lang="en">{ficha}</span>
           </Link>
@@ -159,7 +159,7 @@ export function SelfReview({
 
   return (
     <div className="flex flex-col gap-6">
-      <p className="text-sm text-muted">{t('writing.selfIntro')}</p>
+      <p className="text-body-sm text-muted">{t('writing.selfIntro')}</p>
 
       <section aria-labelledby={`${formId}-form`} className="flex flex-col gap-3">
         <PanelTitle id={`${formId}-form`}>{t('writing.formTitle')}</PanelTitle>
@@ -167,7 +167,7 @@ export function SelfReview({
           {review.checks.map((check) => {
             const Icon = check.ok ? CircleCheck : TriangleAlert;
             return (
-              <li key={check.id} className="flex items-start gap-2 text-sm">
+              <li key={check.id} className="flex items-start gap-2 text-body-sm">
                 <Icon
                   aria-hidden="true"
                   className={cn(
@@ -191,7 +191,7 @@ export function SelfReview({
       <section aria-labelledby={`${formId}-hints`} className="flex flex-col gap-3">
         <PanelTitle id={`${formId}-hints`}>{t('writing.hintsTitle')}</PanelTitle>
         {errors.length === 0 ? (
-          <p className="text-sm text-muted">{t('writing.noHints')}</p>
+          <p className="text-body-sm text-muted">{t('writing.noHints')}</p>
         ) : (
           <ol className="flex flex-col gap-4">
             {errors.map((hint, index) => (
@@ -226,12 +226,12 @@ export function SelfReview({
 
         {points.length > 0 ? (
           <fieldset className="flex flex-col gap-1">
-            <legend className="text-sm font-medium">{t('writing.pointsCheckTitle')}</legend>
-            <p className="mb-1 text-xs text-muted">{t('writing.pointsCheckHint')}</p>
+            <legend className="text-body-sm font-medium">{t('writing.pointsCheckTitle')}</legend>
+            <p className="mb-1 text-caption text-muted">{t('writing.pointsCheckHint')}</p>
             {points.map((point, index) => (
               <label
                 key={point}
-                className="flex min-h-11 cursor-pointer items-start gap-3 rounded-control px-2 py-2 hover:bg-surface-2"
+                className="flex min-h-11 cursor-pointer items-start gap-3 rounded-card px-2 py-2 hover:bg-surface-2"
               >
                 <input
                   type="checkbox"
@@ -244,7 +244,7 @@ export function SelfReview({
                   }}
                   className="mt-1 size-4 shrink-0 accent-accent"
                 />
-                <span lang="en" className="text-sm">
+                <span lang="en" className="text-body-sm">
                   {point}
                 </span>
               </label>
@@ -252,7 +252,7 @@ export function SelfReview({
           </fieldset>
         ) : null}
 
-        <p className="text-sm text-muted">{t('writing.selfScoreHint')}</p>
+        <p className="text-body-sm text-muted">{t('writing.selfScoreHint')}</p>
         <div className="grid gap-3 sm:grid-cols-2">
           {CRITERIA.map((criterion) => (
             <div key={criterion} className="flex flex-col gap-1">
@@ -269,7 +269,9 @@ export function SelfReview({
                   </option>
                 ))}
               </Select>
-              <span className="text-xs text-muted">{t(`writing.criteriaHelp.${criterion}`)}</span>
+              <span className="text-caption text-muted">
+                {t(`writing.criteriaHelp.${criterion}`)}
+              </span>
             </div>
           ))}
         </div>
@@ -278,11 +280,11 @@ export function SelfReview({
           <Button variant="secondary" disabled={state === 'saving'} onClick={() => void save()}>
             {state === 'saving' ? t('common.saving') : t('writing.saveAssessment')}
           </Button>
-          <p role="status" className="text-sm">
+          <p role="status" className="text-body-sm">
             {state === 'saved' ? (
               <span className="text-success">{t('writing.assessmentSaved')}</span>
             ) : state === 'failed' ? (
-              <span className="text-danger">{t('errors.saveFailed')}</span>
+              <span className="text-error">{t('errors.saveFailed')}</span>
             ) : null}
           </p>
         </div>

@@ -28,10 +28,10 @@ export function AiFeedback({
       <div className="flex flex-col gap-3">
         <p>{feedback.overall_es}</p>
         <div className="flex flex-wrap gap-1.5">
-          <Chip className="hud">
+          <Chip className="tabular-nums">
             {t('writing.estimatedLevel', { level: feedback.estimated_level })}
           </Chip>
-          <Chip className="hud">{t('writing.targetLevel', { level: targetLevel })}</Chip>
+          <Chip className="tabular-nums">{t('writing.targetLevel', { level: targetLevel })}</Chip>
         </div>
       </div>
 
@@ -43,19 +43,19 @@ export function AiFeedback({
       <section aria-labelledby="writing-corrections" className="flex flex-col gap-3">
         <PanelTitle id="writing-corrections">{t('writing.correctionsTitle')}</PanelTitle>
         {feedback.corrections.length === 0 ? (
-          <p className="text-sm text-muted">{t('writing.noCorrections')}</p>
+          <p className="text-body-sm text-muted">{t('writing.noCorrections')}</p>
         ) : (
           <ol className="flex flex-col gap-4">
             {feedback.corrections.map((correction, index) => {
               const ficha = fichas[correction.grammar_ref];
               return (
-                <li key={index} className="flex gap-3 text-sm">
-                  <span aria-hidden="true" className="hud w-5 shrink-0 text-accent">
+                <li key={index} className="flex gap-3 text-body-sm">
+                  <span aria-hidden="true" className="tabular-nums w-5 shrink-0 text-accent-text">
                     {index + 1}
                   </span>
                   <div className="flex min-w-0 flex-col gap-1.5">
-                    <p lang="en" className="flex flex-wrap items-baseline gap-x-2 text-base">
-                      <del className="text-danger">{correction.original}</del>
+                    <p lang="en" className="flex flex-wrap items-baseline gap-x-2 text-body">
+                      <del className="text-error">{correction.original}</del>
                       <ArrowRight aria-hidden="true" className="size-4 self-center text-muted" />
                       <ins className="font-medium text-success no-underline">
                         {correction.corrected}
@@ -63,11 +63,7 @@ export function AiFeedback({
                     </p>
                     <p className="flex flex-wrap gap-1.5">
                       <Chip>{t(`writing.kinds.${correction.type}`)}</Chip>
-                      <Chip
-                        className={cn(
-                          correction.severity === 'major' && 'border-warning text-text',
-                        )}
-                      >
+                      <Chip className={cn(correction.severity === 'major' && 'text-warning')}>
                         {t(
                           correction.severity === 'major'
                             ? 'writing.severityMajor'
@@ -81,7 +77,7 @@ export function AiFeedback({
                     {ficha ? (
                       <Link
                         href={`/gramatica/${correction.grammar_ref}` as Route}
-                        className="self-start text-accent underline underline-offset-4"
+                        className="self-start text-accent-text underline underline-offset-4"
                       >
                         {t('writing.openFicha')}: <span lang="en">{ficha}</span>
                       </Link>
@@ -95,11 +91,11 @@ export function AiFeedback({
       </section>
 
       {feedback.corrections.length > 0 ? (
-        <details className="rounded-control border border-border px-3 py-2">
-          <summary className="cursor-pointer py-1 text-sm font-medium">
+        <details className="rounded-card bg-surface-2 px-3 py-2">
+          <summary className="cursor-pointer py-1 text-body-sm font-medium">
             {t('writing.correctedTitle')}
           </summary>
-          <p lang="en" className="reading-md mt-2 whitespace-pre-wrap">
+          <p lang="en" className="prose-reading mt-2 whitespace-pre-wrap">
             {feedback.corrected_text}
           </p>
         </details>
@@ -110,11 +106,11 @@ export function AiFeedback({
           <PanelTitle id="writing-upgrades">{t('writing.upgradesTitle')}</PanelTitle>
           <ul className="flex flex-col gap-3">
             {feedback.upgrades.map((upgrade, index) => (
-              <li key={index} className="flex flex-col gap-1 text-sm">
-                <p lang="en" className="flex flex-wrap items-baseline gap-x-2 text-base">
+              <li key={index} className="flex flex-col gap-1 text-body-sm">
+                <p lang="en" className="flex flex-wrap items-baseline gap-x-2 text-body">
                   <span className="text-muted">{upgrade.from}</span>
                   <ArrowRight aria-hidden="true" className="size-4 self-center text-muted" />
-                  <span className="font-medium text-accent">{upgrade.to}</span>
+                  <span className="font-medium text-accent-text">{upgrade.to}</span>
                 </p>
                 <p className="text-muted">
                   <InlineText text={upgrade.why_es} />
@@ -128,9 +124,13 @@ export function AiFeedback({
       {feedback.focus_next_es ? (
         <section
           aria-labelledby="writing-focus"
-          className="flex gap-3 rounded-control border border-accent p-3"
+          className="flex gap-3 rounded-card border border-accent p-3"
         >
-          <Target aria-hidden="true" className="size-5 shrink-0 text-accent" strokeWidth={1.75} />
+          <Target
+            aria-hidden="true"
+            className="size-5 shrink-0 text-accent-text"
+            strokeWidth={1.75}
+          />
           <div className="flex flex-col gap-1">
             <PanelTitle id="writing-focus">{t('writing.focusTitle')}</PanelTitle>
             <p>

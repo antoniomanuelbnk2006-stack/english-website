@@ -14,7 +14,7 @@ export default async function ReviewPage() {
   await getSessionOrRedirect();
   const [t, session] = await Promise.all([getT(), getReviewSession()]);
   return (
-    <PageContainer className="max-w-2xl">
+    <PageContainer width="exercise">
       <PageHeader title={t('nav.review')} subtitle={t('review.subtitle')} />
       <ReviewSession session={session} audioBase={env.NEXT_PUBLIC_AUDIO_BASE_URL} />
     </PageContainer>

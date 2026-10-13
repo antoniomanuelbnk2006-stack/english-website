@@ -60,11 +60,8 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
     <PageContainer>
       <PageHeader title={t('nav.exams')} subtitle={t('exams.subtitle')} />
 
-      <nav
-        aria-label={t('library.filtersLabel')}
-        className="flex flex-wrap items-center gap-2 rounded-panel border border-border bg-surface p-3"
-      >
-        <span className="w-14 shrink-0 text-xs text-muted">{t('library.level')}</span>
+      <nav aria-label={t('library.filtersLabel')} className="flex flex-wrap items-center gap-2">
+        <span className="w-14 shrink-0 text-caption text-muted">{t('library.level')}</span>
         <ul className="flex flex-wrap gap-1.5">
           {CEFR_LEVELS.map((l) => (
             <li key={l}>
@@ -72,10 +69,10 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
                 href={{ pathname: '/examenes', query: l === userLevel ? {} : { nivel: l } }}
                 aria-current={l === level ? 'true' : undefined}
                 className={cn(
-                  'flex h-8 items-center rounded-full border px-3 text-sm transition-colors duration-150 pointer-coarse:h-11',
+                  'flex h-8 items-center rounded-full border px-3 text-body-sm transition-colors duration-150 pointer-coarse:h-11',
                   l === level
-                    ? 'border-accent bg-surface-2 font-medium text-accent'
-                    : 'border-border text-muted hover:border-subtle hover:text-text',
+                    ? 'border-accent bg-surface-2 font-medium text-accent-text'
+                    : 'border-transparent bg-surface-2 text-muted hover:border-border hover:text-text',
                 )}
               >
                 {l}
@@ -85,12 +82,12 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
         </ul>
       </nav>
 
-      <section aria-labelledby="exam-name" className="flex flex-col gap-4">
+      <section aria-labelledby="exam-name" className="flex flex-col gap-6">
         <div className="flex flex-col gap-1">
-          <h2 id="exam-name" lang="en" className="text-2xl font-semibold tracking-tight">
+          <h2 id="exam-name" lang="en" className="text-heading-sm">
             {format.exam}
           </h2>
-          <p className="text-sm text-muted">
+          <p className="text-body-sm text-muted">
             {format.official
               ? t('exams.officialNote', { pass: format.pass ?? 0 })
               : t('exams.unofficialNote')}
@@ -104,7 +101,7 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
         ) : (
           tests.map((test) => (
             <Panel key={test.test} className="flex flex-col gap-4">
-              <h3 className="text-lg font-medium">{t('exams.test', { n: test.test })}</h3>
+              <h3 className="text-body-lg font-medium">{t('exams.test', { n: test.test })}</h3>
               <ul className="flex flex-col divide-y divide-border">
                 {EXAM_PAPERS.map((kind) => {
                   const id = test.papers[kind];
@@ -120,31 +117,33 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
                     >
                       <Icon
                         aria-hidden="true"
-                        className="size-6 shrink-0 text-accent"
+                        className="size-6 shrink-0 text-accent-text"
                         strokeWidth={1.5}
                       />
                       <div className="flex min-w-48 flex-1 flex-col gap-1.5">
                         <span lang="en" className="font-medium">
                           {paper.title}
                         </span>
-                        <span className="text-sm text-muted">{t(PAPER_HINT[kind])}</span>
+                        <span className="text-body-sm text-muted">{t(PAPER_HINT[kind])}</span>
                         <span className="flex flex-wrap gap-1.5">
-                          <Chip className="hud">
+                          <Chip className="tabular-nums">
                             {t(kind === 'listening' ? 'exams.aboutMinutes' : 'lesson.minutes', {
                               n: paper.minutes,
                             })}
                           </Chip>
-                          <Chip className="hud">{t('exams.parts', { n: paper.parts.length })}</Chip>
+                          <Chip className="tabular-nums">
+                            {t('exams.parts', { n: paper.parts.length })}
+                          </Chip>
                           {kind === 'speaking' ? (
-                            <Chip className="hud">
+                            <Chip className="tabular-nums">
                               {t('uoe.marks', { n: speakingMarks(format) })}
                             </Chip>
                           ) : (
                             <>
-                              <Chip className="hud">
+                              <Chip className="tabular-nums">
                                 {t('exams.questions', { n: paperQuestions(format[kind].parts) })}
                               </Chip>
-                              <Chip className="hud">
+                              <Chip className="tabular-nums">
                                 {t('uoe.marks', { n: paperMarks(format[kind].parts) })}
                               </Chip>
                             </>
@@ -153,7 +152,7 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
                       </div>
                       <div className="flex flex-col items-start gap-2 sm:items-end">
                         {done && own.score != null ? (
-                          <span className="flex items-center gap-1.5 text-sm text-success">
+                          <span className="flex items-center gap-1.5 text-body-sm text-success">
                             <CircleCheck aria-hidden="true" className="size-4" strokeWidth={1.75} />
                             {t('exams.lastScore', { pct: toPercent(own.score) })}
                             {own.bestScore != null && own.bestScore > own.score ? (
@@ -175,7 +174,7 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
                           <Link
                             href={`/examenes/${id}` as Route}
                             aria-label={`${t(done ? 'lesson.repeat' : 'lesson.start')}: ${paper.title}`}
-                            className={buttonVariants({ variant: done ? 'secondary' : 'primary' })}
+                            className={buttonVariants({ variant: 'secondary' })}
                           >
                             {t(done ? 'lesson.repeat' : 'lesson.start')}
                           </Link>
@@ -191,14 +190,20 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
 
         {format.writing ? (
           <Panel className="flex flex-wrap items-center gap-x-4 gap-y-3">
-            <PenLine aria-hidden="true" className="size-6 shrink-0 text-accent" strokeWidth={1.5} />
+            <PenLine
+              aria-hidden="true"
+              className="size-6 shrink-0 text-accent-text"
+              strokeWidth={1.5}
+            />
             <div className="flex min-w-48 flex-1 flex-col gap-1.5">
               <span lang="en" className="font-medium">
                 {format.writing.title}
               </span>
-              <span className="text-sm text-muted">{t('exams.writingElsewhere')}</span>
+              <span className="text-body-sm text-muted">{t('exams.writingElsewhere')}</span>
               <span className="flex flex-wrap gap-1.5">
-                <Chip className="hud">{t('lesson.minutes', { n: format.writing.minutes })}</Chip>
+                <Chip className="tabular-nums">
+                  {t('lesson.minutes', { n: format.writing.minutes })}
+                </Chip>
                 <Chip lang="en">{format.writing.tasks}</Chip>
               </span>
             </div>
@@ -212,7 +217,7 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
         ) : null}
       </section>
 
-      <p className="text-xs text-muted">{t('exams.disclaimer')}</p>
+      <p className="text-caption text-muted">{t('exams.disclaimer')}</p>
     </PageContainer>
   );
 }

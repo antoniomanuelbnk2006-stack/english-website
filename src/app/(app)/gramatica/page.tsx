@@ -9,7 +9,7 @@ import {
 import type { Metadata } from 'next';
 import type { Route } from 'next';
 import Link from 'next/link';
-import { EmptyState, PageContainer, PageHeader } from '@/components/ui/page';
+import { EmptyState, PageContainer, PageHeader, PageSections } from '@/components/ui/page';
 import { Chip, PanelTitle } from '@/components/ui/panel';
 import { fichaState, type FichaState } from '@/features/grammar/lib/practice';
 import { CEFR_LEVELS } from '@/features/level/lib/bands';
@@ -57,47 +57,56 @@ export default async function GrammarPage() {
   return (
     <PageContainer>
       <PageHeader title={t('nav.grammar')} subtitle={t('grammar.subtitle')} />
-      {levels.map((level) => (
-        <section key={level} aria-labelledby={`grammar-${level}`}>
-          <PanelTitle id={`grammar-${level}`} className="mb-3">
-            {t('grammar.levelTitle', { level })}
-          </PanelTitle>
-          <ul className="grid gap-3 sm:grid-cols-2">
-            {fichas
-              .filter((ficha) => ficha.level === level)
-              .map((ficha) => {
-                const { icon: Icon, label, className } = STATE[fichaState(progress.get(ficha.id))];
-                return (
-                  <li key={ficha.id}>
-                    <Link
-                      href={`/gramatica/${ficha.id}` as Route}
-                      className="flex h-full flex-col gap-3 rounded-panel border border-border bg-surface p-4 transition-colors duration-150 hover:border-accent"
-                    >
-                      <div className="flex items-start justify-between gap-3">
-                        <h3 lang="en" className="text-lg leading-snug font-medium">
-                          {ficha.title}
-                        </h3>
-                        <span
-                          className={cn('flex shrink-0 items-center gap-1.5 text-xs', className)}
-                        >
-                          <Icon aria-hidden="true" className="size-4" strokeWidth={1.75} />
-                          {t(label)}
-                        </span>
-                      </div>
-                      <p className="text-sm text-muted">{ficha.summary_es}</p>
-                      <div className="mt-auto flex flex-wrap gap-1.5">
-                        <Chip className="hud">{ficha.level}</Chip>
-                        {ficha.skills.map((skill) => (
-                          <Chip key={skill}>{t(`skills.${skill}` as TranslationKey)}</Chip>
-                        ))}
-                      </div>
-                    </Link>
-                  </li>
-                );
-              })}
-          </ul>
-        </section>
-      ))}
+      <PageSections>
+        {levels.map((level) => (
+          <section key={level} aria-labelledby={`grammar-${level}`}>
+            <PanelTitle id={`grammar-${level}`} className="mb-6">
+              {t('grammar.levelTitle', { level })}
+            </PanelTitle>
+            <ul className="grid gap-4 sm:grid-cols-2">
+              {fichas
+                .filter((ficha) => ficha.level === level)
+                .map((ficha) => {
+                  const {
+                    icon: Icon,
+                    label,
+                    className,
+                  } = STATE[fichaState(progress.get(ficha.id))];
+                  return (
+                    <li key={ficha.id}>
+                      <Link
+                        href={`/gramatica/${ficha.id}` as Route}
+                        className="card flex h-full flex-col gap-3 border border-transparent transition-colors duration-150 hover:border-border"
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <h3 lang="en" className="text-body-lg leading-snug font-medium">
+                            {ficha.title}
+                          </h3>
+                          <span
+                            className={cn(
+                              'flex shrink-0 items-center gap-1.5 text-caption',
+                              className,
+                            )}
+                          >
+                            <Icon aria-hidden="true" className="size-4" strokeWidth={1.75} />
+                            {t(label)}
+                          </span>
+                        </div>
+                        <p className="text-body-sm text-muted">{ficha.summary_es}</p>
+                        <div className="mt-auto flex flex-wrap gap-1.5">
+                          <Chip className="tabular-nums">{ficha.level}</Chip>
+                          {ficha.skills.map((skill) => (
+                            <Chip key={skill}>{t(`skills.${skill}` as TranslationKey)}</Chip>
+                          ))}
+                        </div>
+                      </Link>
+                    </li>
+                  );
+                })}
+            </ul>
+          </section>
+        ))}
+      </PageSections>
     </PageContainer>
   );
 }

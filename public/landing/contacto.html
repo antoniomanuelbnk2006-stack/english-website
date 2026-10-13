@@ -5,14 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contacto · Señal</title>
 <meta name="description" content="Solicita información sobre el plan de estudios de Señal y resuelve tus dudas.">
-<meta name="theme-color" content="#fcf9f2">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Wix+Madefor+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#171721">
+<link rel="preload" href="/landing/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/landing/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/landing/styles.css">
 </head>
 <body>
-<a class="skip" href="#contenido">Ir al contenido principal</a>
+<a class="skip btn btn-primary" href="#contenido">Ir al contenido principal</a>
 <header class="nav">
   <div class="wrap">
     <a class="logo" href="/landing/index.html"><img src="/landing/logo.png" alt="Señal" width="114" height="35"></a>
@@ -24,16 +23,16 @@
       <li><a href="/landing/contacto.html" aria-current="page">Contacto</a></li>
     </ul>
     </nav>
-    <a class="btn btn-outline nav-cta" href="/login">Entrar</a>
+    <a class="btn btn-ghost nav-cta" href="/login">Entrar</a>
     <button class="menu-btn" type="button" aria-label="Abrir el menú" aria-expanded="false"><span></span></button>
   </div>
 </header>
 
 <main id="contenido">
-  <section>
-    <div class="form-card fade">
-      <h1 class="tilt" style="font-size:clamp(1.6rem,3.4vw,2.6rem);max-width:none">Solicita información</h1>
-      <p class="lead" style="margin-top:12px">Completa el formulario y un experto en Señal te contactará para ayudarte a elegir el plan de estudios perfecto para tu nivel actual.</p>
+  <section class="section">
+    <div class="panel form-card">
+      <h1 class="heading-sm">Solicita información</h1>
+      <p class="lead">Completa el formulario y un experto en Señal te contactará para ayudarte a elegir el plan de estudios perfecto para tu nivel actual.</p>
       <form id="solicitud">
         <div class="row">
           <div><label for="nombre">Nombre *</label><input id="nombre" name="nombre" type="text" autocomplete="given-name" required></div>
@@ -52,34 +51,36 @@
           </div>
         </fieldset>
         <div><label for="mensaje">Mensaje *</label><textarea id="mensaje" name="mensaje" required></textarea></div>
-        <button class="btn btn-primary btn-block" type="submit">Solicitar información</button>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Solicitar información</button>
         <p class="form-note" id="nota" role="status"></p>
       </form>
     </div>
   </section>
 
-  <section class="band center">
-    <h2 class="tilt">Preguntas Frecuentes</h2>
+  <section class="section center">
+    <h2 class="heading-lg">Preguntas Frecuentes</h2>
     <div class="faq">
-      <div><h4>¿Cómo funciona el autoestudio personalizado?</h4><p>Señal adapta cada lección a tu nivel actual, desde A1 hasta C2, asegurando que el contenido sea relevante y desafiante para tu progreso.</p></div>
-      <div><h4>¿Las herramientas de audio son suficientes?</h4><p>Las lecciones incluyen audio de alta calidad y textos con preguntas para que practiques la escucha y la comprensión lectora en un entorno real.</p></div>
-      <div><h4>¿Qué incluye el plan de gramática?</h4><p>Contamos con ejercicios interactivos y textos explicativos que te ayudan a dominar las estructuras gramaticales clave para comunicarte con fluidez.</p></div>
-      <div><h4>¿Puedo acceder a las herramientas en cualquier momento?</h4><p>Sí. Como plataforma de enseñanza remota, puedes acceder a tus lecciones y herramientas de audio y gramática desde cualquier dispositivo.</p></div>
+      <div><h3 class="subheading">¿Cómo funciona el autoestudio personalizado?</h3><p>Señal adapta cada lección a tu nivel actual, desde A1 hasta C2, asegurando que el contenido sea relevante y desafiante para tu progreso.</p></div>
+      <div><h3 class="subheading">¿Las herramientas de audio son suficientes?</h3><p>Las lecciones incluyen audio de alta calidad y textos con preguntas para que practiques la escucha y la comprensión lectora en un entorno real.</p></div>
+      <div><h3 class="subheading">¿Qué incluye el plan de gramática?</h3><p>Contamos con ejercicios interactivos y textos explicativos que te ayudan a dominar las estructuras gramaticales clave para comunicarte con fluidez.</p></div>
+      <div><h3 class="subheading">¿Puedo acceder a las herramientas en cualquier momento?</h3><p>Sí. Como plataforma de enseñanza remota, puedes acceder a tus lecciones y herramientas de audio y gramática desde cualquier dispositivo.</p></div>
     </div>
   </section>
 </main>
 
 <footer class="foot">
-  <div>
-    <a class="logo" href="/landing/index.html"><img src="/landing/logo.png" alt="Señal" width="114" height="35"></a>
-    <p style="margin-top:12px;max-width:44ch">Plataforma de enseñanza remota diseñada para el autoestudio de inglés con herramientas completas desde A1 hasta C2.</p>
+  <div class="wrap">
+    <div class="about">
+      <a class="logo" href="/landing/index.html"><img src="/landing/logo.png" alt="Señal" width="114" height="35"></a>
+      <p>Plataforma de enseñanza remota diseñada para el autoestudio de inglés con herramientas completas desde A1 hasta C2.</p>
+    </div>
+    <ul>
+      <li><a href="mailto:antoniomanuelbnk2006@gmail.com">antoniomanuelbnk2006@gmail.com</a></li>
+      <li><a href="tel:+34681974131">+34 681 974 131</a></li>
+      <li>41805 Sevilla, España</li>
+    </ul>
+    <p class="copy">© 2026 Señal. Todos los derechos reservados.</p>
   </div>
-  <ul>
-    <li><a href="mailto:antoniomanuelbnk2006@gmail.com">antoniomanuelbnk2006@gmail.com</a></li>
-    <li><a href="tel:+34681974131">+34 681 974 131</a></li>
-    <li>41805 Sevilla, España</li>
-  </ul>
-  <p class="copy">© 2026 Señal. Todos los derechos reservados.</p>
 </footer>
 <script src="/landing/app.js"></script>
 </body>

@@ -36,22 +36,22 @@ export default async function FichaPage({ params }: PageProps<'/gramatica/[id]'>
   });
 
   return (
-    <PageContainer className="max-w-3xl">
+    <PageContainer width="exercise">
       <MarkSeen grammarId={meta.id} />
       <header className="flex flex-col gap-3">
         <Link
           href="/gramatica"
-          className="flex items-center gap-1.5 self-start rounded-control text-sm text-muted hover:text-text"
+          className="flex items-center gap-1.5 self-start rounded-structure text-body-sm text-muted hover:text-text"
         >
           <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
           {t('grammar.back')}
         </Link>
-        <h1 lang="en" className="text-2xl font-semibold tracking-tight sm:text-3xl">
+        <h1 lang="en" className="text-heading-sm sm:text-heading">
           {meta.title}
         </h1>
         <p className="text-muted">{meta.summary_es}</p>
         <div className="flex flex-wrap gap-1.5">
-          <Chip className="hud">{meta.level}</Chip>
+          <Chip className="tabular-nums">{meta.level}</Chip>
           {meta.skills.map((skill) => (
             <Chip key={skill}>{t(`skills.${skill}` as TranslationKey)}</Chip>
           ))}
@@ -67,10 +67,10 @@ export default async function FichaPage({ params }: PageProps<'/gramatica/[id]'>
         <ul className="flex flex-col gap-3">
           {meta.examples.map((example) => (
             <li key={example.en} className="flex flex-col gap-0.5">
-              <span lang="en" className="reading-md">
+              <span lang="en" className="prose-reading">
                 {example.en}
               </span>
-              <span className="text-sm text-muted">{example.es}</span>
+              <span className="text-body-sm text-muted">{example.es}</span>
             </li>
           ))}
         </ul>
@@ -79,7 +79,7 @@ export default async function FichaPage({ params }: PageProps<'/gramatica/[id]'>
       <Panel className="flex flex-col gap-4">
         <div>
           <PanelTitle>{t('grammar.practice')}</PanelTitle>
-          <p className="mt-2 text-sm text-muted">{t('grammar.practiceHint')}</p>
+          <p className="mt-2 text-body-sm text-muted">{t('grammar.practiceHint')}</p>
         </div>
         <Practice
           grammarId={meta.id}
@@ -91,7 +91,7 @@ export default async function FichaPage({ params }: PageProps<'/gramatica/[id]'>
       <Panel className="flex flex-col gap-3">
         <PanelTitle>{t('grammar.whereItAppears')}</PanelTitle>
         {lessons.length === 0 ? (
-          <p className="text-sm text-muted">{t('grammar.noLessonsYet')}</p>
+          <p className="text-body-sm text-muted">{t('grammar.noLessonsYet')}</p>
         ) : (
           <ul className="flex flex-col gap-1.5">
             {lessons.map((lesson) => (
@@ -100,11 +100,11 @@ export default async function FichaPage({ params }: PageProps<'/gramatica/[id]'>
                   href={
                     `${lesson.skill === 'listening' ? '/escuchar' : '/leer'}/${lesson.id}` as Route
                   }
-                  className="text-accent underline underline-offset-4"
+                  className="text-accent-text underline underline-offset-4"
                 >
                   <span lang="en">{lesson.title}</span>
                 </Link>{' '}
-                <span className="text-sm text-muted">
+                <span className="text-body-sm text-muted">
                   · {t(`skills.${lesson.skill}` as TranslationKey)} · {lesson.level}
                 </span>
               </li>
@@ -120,7 +120,7 @@ export default async function FichaPage({ params }: PageProps<'/gramatica/[id]'>
                   <Link
                     href={`/gramatica/${other.id}` as Route}
                     lang="en"
-                    className="text-accent underline underline-offset-4"
+                    className="text-accent-text underline underline-offset-4"
                   >
                     {other.title}
                   </Link>

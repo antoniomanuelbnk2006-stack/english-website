@@ -10,7 +10,8 @@ export function Logo({ className }: { className?: string }) {
       width={114}
       height={35}
       priority
-      className={cn('h-9 w-auto dark:brightness-0 dark:invert', className)}
+      // MASTER es monocromo: el logotipo va en un solo tono, claro u oscuro según el tema.
+      className={cn('h-8 w-auto [filter:var(--logo-filter)]', className)}
     />
   );
 }
