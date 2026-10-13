@@ -39,7 +39,7 @@ jobs:
         with: { node-version: 22, cache: pnpm }
       # La acción instala por defecto un CLI antiguo que no entiende supabase/config.toml:
       # se fija la misma versión que en package.json.
-      - uses: supabase/setup-cli@v1
+      - uses: supabase/setup-cli@v3
         with: { version: 2.120.0 }
       - run: pnpm install --frozen-lockfile
       - run: supabase start
