@@ -24,7 +24,8 @@ export const ServerEnv = ClientEnv.extend({
   // La dirección de la web desplegada. Con ella, lo que llega por otro nombre (un despliegue
   // antiguo de Vercel, un alias) se redirige allí (ADR-0021). Sin ella no se redirige nada.
   SITE_URL: z.url({ protocol: /^https?$/ }).optional(),
-  // Secreto con el que se deriva la contraseña del código fijo de acceso (ADR-0020). Sin él,
+  // Secreto con el que se deriva la contraseña de acceso (ADR-0026; el nombre viene del código
+  // fijo que hubo antes, ADR-0020, y se conserva para no cambiar la variable en Vercel). Sin él,
   // solo se entra con el correo.
   LOGIN_CODE_PEPPER: z.string().min(32).optional(),
   // Sin ella la app funciona igual, pero el writing solo ofrece la revisión sin IA (ADR-0014).

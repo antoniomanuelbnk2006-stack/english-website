@@ -13,8 +13,8 @@ export const E2E = {
   otp: '123456',
   /** Código con el que el emulador da por bueno el enlace del correo. */
   authCode: 'e2e-auth-code-0001',
-  /** Código fijo de acceso que acepta el emulador (ADR-0020). */
-  fixedCode: '654321',
+  /** Contraseña de acceso que acepta el emulador (ADR-0026). */
+  password: 'contrasena-de-pruebas-e2e',
   emulatorUrl: `http://127.0.0.1:${EMULATOR_PORT}`,
   /** La dirección de la web en los tests (ADR-0021). */
   appUrl: `http://localhost:${APP_PORT}`,
@@ -28,8 +28,9 @@ const env = {
   ALLOWED_EMAIL: E2E.email,
   // La web tiene una sola dirección: lo que llega por otro nombre se redirige a esta.
   SITE_URL: E2E.appUrl,
-  // Activa el acceso con código fijo; el emulador deriva la misma contraseña con este secreto.
+  // Activa el acceso con contraseña; el emulador deriva la misma con este secreto.
   LOGIN_CODE_PEPPER: 'secreto-solo-para-los-tests-e2e-0123456789',
+  EMULATOR_PASSWORD: E2E.password,
   EMULATOR_PORT: String(EMULATOR_PORT),
   // Como en producción: el servidor va en UTC y el navegador en Madrid (`timezoneId`). Una
   // fecha escrita con la zona del proceso sale distinta en cada lado y el test lo nota.

@@ -15,14 +15,14 @@ import type { Transaction } from '@electric-sql/pglite';
 import { createAnthropicStub } from './anthropic-stub';
 import { wiktionaryStub } from './wiktionary-stub';
 import { createTestDb, type TestDb } from './test-db';
-import { codePassword } from '../../src/features/auth/lib/fixed-code';
+import { derivedPassword } from '../../src/features/auth/lib/password';
 
 const PORT = Number(process.env.EMULATOR_PORT ?? 54399);
 const TEST_EMAIL = (process.env.ALLOWED_EMAIL ?? 'owner@example.invalid').toLowerCase();
 /** Código OTP que el emulador acepta siempre (no envía correos). */
 const TEST_OTP = '123456';
-/** Código fijo de acceso en los tests (ADR-0020): solo vale si hay secreto configurado. */
-const TEST_FIXED_CODE = '654321';
+/** Contraseña de acceso en los tests (ADR-0026): solo vale si hay secreto configurado. */
+const TEST_PASSWORD = process.env.EMULATOR_PASSWORD || 'contrasena-de-pruebas-e2e';
 const LOGIN_CODE_PEPPER = process.env.LOGIN_CODE_PEPPER || undefined;
 /** Código con el que «vuelve» el enlace del correo en los tests (flujo PKCE). */
 const TEST_AUTH_CODE = 'e2e-auth-code-0001';
@@ -205,7 +205,7 @@ async function handleAuth(
     return { status: 200, json: {} };
   }
 
-  // El código fijo es una contraseña: la que la app deriva de él con su secreto.
+  // A Supabase no llega la contraseña que se escribe, sino la que la app deriva con su secreto.
   if (
     route === '/token' &&
     req.method === 'POST' &&
@@ -214,7 +214,7 @@ async function handleAuth(
     const user = await userByEmail(String(body.email ?? ''));
     const expected =
       user && LOGIN_CODE_PEPPER
-        ? codePassword(LOGIN_CODE_PEPPER, user.email, TEST_FIXED_CODE)
+        ? derivedPassword(LOGIN_CODE_PEPPER, user.email, TEST_PASSWORD)
         : null;
     if (!user || expected === null || body.password !== expected) {
       throw new HttpError(400, { code: 'invalid_credentials', msg: 'Invalid login credentials' });

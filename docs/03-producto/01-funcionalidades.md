@@ -11,7 +11,7 @@
 
 | ID | Funcionalidad | Prioridad | Fase |
 |---|---|---|---|
-| F-001 | Acceso con email + código OTP, o con el enlace del mismo correo ([ADR-0018](../adr/0018-acceso-con-enlace-del-correo.md)); y, si se activa, con un código fijo ([ADR-0020](../adr/0020-codigo-fijo-de-acceso.md)); sin registro público, solo tu email permitido | M | 0 |
+| F-001 | Acceso con email + código OTP, o con el enlace del mismo correo ([ADR-0018](../adr/0018-acceso-con-enlace-del-correo.md)); y, si se activa, con una contraseña ([ADR-0026](../adr/0026-contrasena-en-vez-de-codigo-fijo.md)); sin registro público, solo tu email permitido | M | 0 |
 | F-002 | Perfil y ajustes: objetivo diario (min), intereses, tema (oscuro/claro/papel), tamaño de letra, velocidad por defecto, idioma de la interfaz (es/en) | M | 0–1 |
 | F-003 | Shell de la app: navegación inferior en móvil, lateral en escritorio | M | 0 |
 | F-004 | Exportar todos tus datos (JSON) y borrar cuenta | S | 5 |

@@ -52,7 +52,7 @@ Después:
    - Crea tu usuario en **Authentication → Users → Add user** (la app nunca crea usuarios).
    - **Desactiva el registro de nuevos usuarios**.
    - Sin SMTP propio, Supabase solo envía correos a las direcciones de los miembros de la organización, y como mucho dos por hora: el email permitido tiene que ser el de tu cuenta de Supabase.
-   - **Código fijo (opcional, [ADR-0020](../adr/0020-codigo-fijo-de-acceso.md)):** genera un secreto largo, ponlo como `LOGIN_CODE_PEPPER` en Vercel y en `.env.pipeline`, y ejecuta `pnpm auth:set-code <código>`. Para quitarlo, `pnpm auth:set-code --off`; no hay `--on`: como el código no se guarda, para volver a activarlo se escribe otra vez (`pnpm auth:set-code <código>`). Elige un código que no sea obvio: el email no es un secreto.
+   - **Contraseña (opcional, [ADR-0026](../adr/0026-contrasena-en-vez-de-codigo-fijo.md)):** genera un secreto largo, ponlo como `LOGIN_CODE_PEPPER` en Vercel y en `.env.pipeline`, y ejecuta `pnpm auth:set-password`: te pide la contraseña (12 caracteres o más) sin mostrarla. Con `--generate` crea una al azar y te la enseña una vez. No la pases como argumento: quedaría en el historial del terminal. Para quitarla, `pnpm auth:set-password --off`; no hay `--on`: como no se guarda, para volver a activarla se pone otra vez.
    - En el código, `signInWithOtp({ email, options: { shouldCreateUser: false } })` como segunda barrera.
 6. **API keys:** usa las claves nuevas **publishable** (`sb_publishable_…`) y **secret** (`sb_secret_…`); las heredadas `anon`/`service_role` se retiran a finales de 2026.
 7. Tipos: `pnpm db:types`.
@@ -127,8 +127,8 @@ ALLOWED_EMAIL=tu-email@ejemplo.com
 # En producción: la dirección pública de la web. Lo que llegue por otro nombre (un despliegue
 # antiguo de Vercel, un alias) se redirige a ella (ADR-0021). En local se deja sin poner.
 # SITE_URL=https://tu-dominio.dev
-# Opcional: activa el acceso con código fijo (ADR-0020). 32 caracteres al azar o más;
-# el mismo valor en .env.pipeline para `pnpm auth:set-code`.
+# Opcional: activa el acceso con contraseña (ADR-0026). 32 caracteres al azar o más;
+# el mismo valor en .env.pipeline para `pnpm auth:set-password`.
 # LOGIN_CODE_PEPPER=
 ANTHROPIC_API_KEY=
 AI_WRITING_MODEL=claude-sonnet-5-5

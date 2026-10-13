@@ -1,6 +1,6 @@
 # ADR-0020 · Código fijo de acceso (opcional)
 
-- **Estado:** Aceptada
+- **Estado:** Sustituida por [ADR-0026](0026-contrasena-en-vez-de-codigo-fijo.md)
 - **Fecha:** 2026-10-10
 
 ## Contexto

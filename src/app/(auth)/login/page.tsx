@@ -13,8 +13,8 @@ export default async function LoginPage({ searchParams }: PageProps<'/login'>) {
   const [t, params] = await Promise.all([getT(), searchParams]);
   // Se llega con este aviso cuando el enlace del correo no ha servido (ADR-0018).
   const linkFailed = params.error === LINK_ERROR;
-  // Con código fijo (ADR-0020) lo principal es escribirlo; el correo queda como respaldo.
-  const fixedCode = Boolean(env.LOGIN_CODE_PEPPER);
+  // Con contraseña (ADR-0026) lo principal es escribirla; el correo queda como respaldo.
+  const withPassword = Boolean(env.LOGIN_CODE_PEPPER);
 
   return (
     <main className="grid min-h-dvh place-items-center px-4 py-10">
@@ -26,7 +26,7 @@ export default async function LoginPage({ searchParams }: PageProps<'/login'>) {
         <div className="flex flex-col gap-2">
           <h1 className="text-heading-sm">{t('login.title')}</h1>
           <p className="text-body-sm text-muted">
-            {t(fixedCode ? 'login.subtitleFixedCode' : 'login.subtitle')}
+            {t(withPassword ? 'login.subtitlePassword' : 'login.subtitle')}
           </p>
         </div>
         {linkFailed ? (
@@ -34,7 +34,7 @@ export default async function LoginPage({ searchParams }: PageProps<'/login'>) {
             {t('login.errorLink')}
           </p>
         ) : null}
-        <LoginForm fixedCode={fixedCode} />
+        <LoginForm withPassword={withPassword} />
       </div>
     </main>
   );

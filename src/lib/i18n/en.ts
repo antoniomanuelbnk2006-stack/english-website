@@ -47,8 +47,8 @@ export const en: Dictionary = {
   login: {
     title: 'Sign in to Señal',
     subtitle: 'We send you an email with a code and a link to sign in. No passwords.',
-    subtitleFixedCode:
-      'Type your email and sign in with your fixed code. If you forget it, we can email you a way in.',
+    subtitlePassword:
+      'Type your email and sign in with your password. If you forget it, we can email you a way in.',
     emailLabel: 'Email',
     emailPlaceholder: 'you@example.com',
     sendEmail: 'Send me the email',
@@ -63,18 +63,18 @@ export const en: Dictionary = {
     errorInvalidEmail: "That email doesn't look right.",
     errorInvalidCode: 'The code has 6 digits.',
     errorWrongCode: 'That code is wrong or has expired. Ask for a new one.',
-    fixedCodeButton: 'Sign in with my fixed code',
-    fixedCodePrompt: 'Type your fixed code to sign in as {email}.',
-    fixedCodeLabel: 'Fixed code',
-    errorInvalidFixedCode: 'The fixed code has between 4 and 8 digits.',
-    errorWrongFixedCode: 'That code is not correct.',
+    passwordButton: 'Sign in with my password',
+    passwordPrompt: 'Type your password to sign in as {email}.',
+    passwordLabel: 'Password',
+    errorInvalidPassword: 'The password has 12 characters or more.',
+    errorWrongPassword: 'That password is not correct.',
     errorLink:
       'That link is not valid or has expired. Ask for another email and open the link in this same browser.',
     errorRateLimited: 'Too many attempts. Wait a minute and try again.',
     errorLockedMinutes:
-      'Too many attempts. For security, no more codes can be tried for the next {n} min. Meanwhile you can sign in with the link in the email.',
+      'Too many attempts. For security, you cannot try again for the next {n} min. Meanwhile you can sign in with the link in the email.',
     errorLockedHours:
-      'Too many attempts. For security, no more codes can be tried for the next {n} h. Meanwhile you can sign in with the link in the email.',
+      'Too many attempts. For security, you cannot try again for the next {n} h. Meanwhile you can sign in with the link in the email.',
     errorEmailRateLimited: 'Too many emails requested. Wait a while before asking for another.',
     errorInternal: "We couldn't reach the server. Please try again.",
   },

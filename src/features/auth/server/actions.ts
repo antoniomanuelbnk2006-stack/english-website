@@ -4,16 +4,17 @@ import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { z } from 'zod';
 import { confirmUrl } from '@/features/auth/lib/confirm';
-import { codePassword } from '@/features/auth/lib/fixed-code';
+import { derivedPassword, Password } from '@/features/auth/lib/password';
 import { fail, ok, type ActionResult } from '@/lib/actions';
 import { env } from '@/lib/env';
-import { createClient } from '@/lib/supabase/server';
+import { createClient, type SupabaseServerClient } from '@/lib/supabase/server';
 
 const Email = z.string().trim().toLowerCase().pipe(z.email().max(254));
 
 const RequestOtpInput = z.object({ email: Email });
-// El código del correo tiene 6 cifras; el fijo, de 4 a 8 (ADR-0020).
-const VerifyOtpInput = z.object({ email: Email, token: z.string().regex(/^\d{4,8}$/) });
+/** El código que llega por correo tiene 6 cifras. */
+const VerifyOtpInput = z.object({ email: Email, token: z.string().regex(/^\d{6}$/) });
+const PasswordInput = z.object({ email: Email, password: Password });
 
 /** 429 de Supabase Auth: demasiadas peticiones de código o de verificación. */
 function isRateLimited(error: { status?: number }): boolean {
@@ -24,7 +25,32 @@ function isRateLimited(error: { status?: number }): boolean {
 const LoginGate = z.object({ allowed: z.boolean(), retry_after_s: z.number().int().min(0) });
 
 /** Si el acceso está cerrado por intentos fallidos, cuántos segundos faltan para reabrirse. */
-export type VerifyOtpResult = ActionResult<never> & { retryAfterSeconds?: number };
+export type SignInResult = ActionResult<never> & { retryAfterSeconds?: number };
+
+/**
+ * Anota un intento de acceso antes de probar nada (ADR-0024): tras varios seguidos sin acertar,
+ * la base de datos deja de admitir más durante un rato. Devuelve el motivo para no seguir, o
+ * `null` si se puede probar. Si el intento no se puede anotar, tampoco se prueba: un fallo aquí
+ * no puede convertirse en intentos sin límite.
+ */
+async function refuseAttempt(
+  supabase: SupabaseServerClient,
+  email: string,
+): Promise<SignInResult | null> {
+  const begun = await supabase.rpc('login_attempt_begin', { p_email: email });
+  const gate = LoginGate.safeParse(begun.data);
+  if (begun.error || !gate.success) return fail('internal');
+  if (!gate.data.allowed) {
+    return { ...fail('rate_limited'), retryAfterSeconds: gate.data.retry_after_s };
+  }
+  return null;
+}
+
+/** Ha entrado: la cuenta de intentos vuelve a cero (solo se puede con sesión) y se va a /hoy. */
+async function enter(supabase: SupabaseServerClient): Promise<never> {
+  await supabase.rpc('login_attempt_clear');
+  redirect('/hoy');
+}
 
 /**
  * Pide el correo de acceso, que trae un código de 6 dígitos, un enlace o las dos cosas según
@@ -54,11 +80,8 @@ export async function requestOtp(input: unknown): Promise<ActionResult<{ email: 
   return ok({ email });
 }
 
-/**
- * Comprueba el código y, si es correcto, abre sesión y entra en /hoy. Vale el código fijo (si
- * está configurado) o el de 6 cifras del correo.
- */
-export async function verifyOtp(input: unknown): Promise<VerifyOtpResult> {
+/** Comprueba el código de 6 cifras del correo y, si es correcto, abre sesión y entra en /hoy. */
+export async function verifyOtp(input: unknown): Promise<SignInResult> {
   const parsed = VerifyOtpInput.safeParse(input);
   if (!parsed.success) return fail('invalid_input');
   const { email, token } = parsed.data;
@@ -66,37 +89,39 @@ export async function verifyOtp(input: unknown): Promise<VerifyOtpResult> {
   if (email !== env.ALLOWED_EMAIL) return fail('unauthorized');
 
   const supabase = await createClient();
+  const refused = await refuseAttempt(supabase, email);
+  if (refused) return refused;
 
-  // Cada intento se anota antes de probar el código (ADR-0024): tras varios seguidos sin
-  // acertar, la base de datos deja de admitir más durante un rato. Si no se puede anotar, no
-  // se prueba nada: un fallo aquí no puede convertirse en intentos sin límite.
-  const begun = await supabase.rpc('login_attempt_begin', { p_email: email });
-  const gate = LoginGate.safeParse(begun.data);
-  if (begun.error || !gate.success) return fail('internal');
-  if (!gate.data.allowed) {
-    return { ...fail('rate_limited'), retryAfterSeconds: gate.data.retry_after_s };
-  }
+  const { error } = await supabase.auth.verifyOtp({ email, token, type: 'email' });
+  if (error) return fail(isRateLimited(error) ? 'rate_limited' : 'unauthorized');
 
-  // Código fijo: es la contraseña del usuario en Supabase, derivada con un secreto del servidor.
-  let signedIn = false;
-  if (env.LOGIN_CODE_PEPPER) {
-    const { error } = await supabase.auth.signInWithPassword({
-      email,
-      password: codePassword(env.LOGIN_CODE_PEPPER, email, token),
-    });
-    if (error && isRateLimited(error)) return fail('rate_limited');
-    signedIn = !error;
-  }
+  return enter(supabase);
+}
 
-  if (!signedIn) {
-    if (token.length !== 6) return fail('unauthorized');
-    const { error } = await supabase.auth.verifyOtp({ email, token, type: 'email' });
-    if (error) return fail(isRateLimited(error) ? 'rate_limited' : 'unauthorized');
-  }
+/**
+ * Entra con la contraseña (ADR-0026). Lo que se manda a Supabase no es lo que escribe el
+ * usuario, sino la contraseña derivada de ello con el secreto del servidor: sin ese secreto no
+ * se puede probar nada directamente contra Supabase.
+ */
+export async function signInWithPassword(input: unknown): Promise<SignInResult> {
+  const parsed = PasswordInput.safeParse(input);
+  if (!parsed.success) return fail('invalid_input');
+  const { email, password } = parsed.data;
 
-  // Ha entrado: la cuenta de intentos vuelve a cero (solo se puede con sesión).
-  await supabase.rpc('login_attempt_clear');
-  redirect('/hoy');
+  // Sin secreto en el servidor no hay acceso con contraseña: solo el del correo.
+  if (email !== env.ALLOWED_EMAIL || !env.LOGIN_CODE_PEPPER) return fail('unauthorized');
+
+  const supabase = await createClient();
+  const refused = await refuseAttempt(supabase, email);
+  if (refused) return refused;
+
+  const { error } = await supabase.auth.signInWithPassword({
+    email,
+    password: derivedPassword(env.LOGIN_CODE_PEPPER, email, password),
+  });
+  if (error) return fail(isRateLimited(error) ? 'rate_limited' : 'unauthorized');
+
+  return enter(supabase);
 }
 
 export async function signOut(): Promise<never> {

@@ -239,9 +239,9 @@ test.describe('pantalla de acceso', () => {
   test('se puede completar solo con teclado y volver a cambiar el email', async ({ page }) => {
     await expect(page.getByLabel('Email')).toBeFocused();
     await page.keyboard.type('otra@persona.com');
-    // Con código fijo activado, como en los tests, Intro pasa a escribirlo (ADR-0021).
+    // Con contraseña activada, como en los tests, Intro pasa a escribirla (ADR-0021).
     await page.keyboard.press('Enter');
-    await expect(page.getByLabel('Código fijo')).toBeFocused();
+    await expect(page.getByLabel('Contraseña')).toBeFocused();
     await page.getByRole('button', { name: 'Usar otro email' }).click();
     await expect(page.getByLabel('Email')).toHaveValue('otra@persona.com');
   });
@@ -302,18 +302,18 @@ test.describe('acceso con el enlace del correo', () => {
   });
 });
 
-// Código fijo (ADR-0020): se entra sin pedir ningún correo. En los tests está activado y el
-// emulador acepta el código de `E2E.fixedCode`.
-test.describe('acceso con código fijo', () => {
+// Contraseña (ADR-0026): se entra sin pedir ningún correo. En los tests está activada y el
+// emulador acepta la de `E2E.password`.
+test.describe('acceso con contraseña', () => {
   test.beforeEach(async ({ request, page }) => {
     await resetDatabase(request);
     await page.goto('/login');
   });
 
-  test('el código fijo va por delante y el correo queda como respaldo', async ({ page }) => {
-    await expect(page.getByText('Escribe tu email y entra con tu código fijo.')).toBeVisible();
+  test('la contraseña va por delante y el correo queda como respaldo', async ({ page }) => {
+    await expect(page.getByText('Escribe tu email y entra con tu contraseña.')).toBeVisible();
     const buttons = page.locator('form').getByRole('button');
-    await expect(buttons).toHaveText(['Entrar con mi código fijo', 'Enviarme el correo']);
+    await expect(buttons).toHaveText(['Entrar con mi contraseña', 'Enviarme el correo']);
     await expect(buttons.first()).toHaveAttribute('type', 'submit');
     await expectAccessible(page);
 
@@ -323,59 +323,71 @@ test.describe('acceso con código fijo', () => {
     await expect(page.getByLabel('Código de 6 dígitos')).toBeFocused();
   });
 
-  test('entra con el email y el código, sin pasar por el correo', async ({ page }) => {
+  test('entra con el email y la contraseña, sin pasar por el correo', async ({ page }) => {
     await page.getByLabel('Email').fill(E2E.email);
-    await page.getByRole('button', { name: 'Entrar con mi código fijo' }).click();
+    await page.getByRole('button', { name: 'Entrar con mi contraseña' }).click();
     await expect(page.getByRole('status')).toHaveText(
-      `Escribe tu código fijo para entrar como ${E2E.email}.`,
+      `Escribe tu contraseña para entrar como ${E2E.email}.`,
     );
-    const code = page.getByLabel('Código fijo');
-    await expect(code).toBeFocused();
+    const password = page.getByLabel('Contraseña');
+    await expect(password).toBeFocused();
+    // No se ve al escribir, y el gestor de contraseñas del navegador tiene lo que necesita:
+    // el campo de contraseña y, en el mismo formulario, de quién es.
+    await expect(password).toHaveAttribute('type', 'password');
+    await expect(password).toHaveAttribute('autocomplete', 'current-password');
+    await expect(page.locator('form input[autocomplete="username"]')).toHaveValue(E2E.email);
     await expectAccessible(page);
 
-    await code.fill(E2E.fixedCode);
+    await password.fill(E2E.password);
     await page.getByRole('button', { name: 'Entrar' }).click();
     await expect(page).toHaveURL(/\/(hoy|nivel)$/);
     await page.goto('/leer');
     await expect(page).toHaveURL(/\/leer$/);
   });
 
-  test('un código equivocado, o el bueno con otro email, no entra', async ({ page }) => {
-    // Hace falta un email con buena pinta para pasar al código.
+  test('una contraseña corta, equivocada, o la buena con otro email, no entra', async ({
+    page,
+    request,
+  }) => {
+    // Hace falta un email con buena pinta para pasar a la contraseña.
     await page.getByLabel('Email').fill('no-es-un-email');
-    await page.getByRole('button', { name: 'Entrar con mi código fijo' }).click();
+    await page.getByRole('button', { name: 'Entrar con mi contraseña' }).click();
     await expect(page.locator('form').getByRole('alert')).toHaveText('Ese email no parece válido.');
 
     await page.getByLabel('Email').fill(E2E.email);
-    await page.getByRole('button', { name: 'Entrar con mi código fijo' }).click();
-    const code = page.getByLabel('Código fijo');
+    await page.getByRole('button', { name: 'Entrar con mi contraseña' }).click();
+    const password = page.getByLabel('Contraseña');
     const enter = page.getByRole('button', { name: 'Entrar' });
-
-    // De 4 a 8 cifras; lo que no sea una cifra se descarta.
-    await code.fill('12a');
-    await expect(code).toHaveValue('12');
+    const alert = page.locator('form').getByRole('alert');
     await expect(enter).toBeDisabled();
-    await code.fill('1234567890');
-    await expect(code).toHaveValue('12345678');
 
-    await code.fill('000000');
+    // Menos de 12 caracteres no puede ser la buena: ni se envía ni cuenta como intento. Un
+    // código de los de antes (de 4 a 8 cifras) ya no vale para nada.
+    for (const short of ['corta', '654321', '12345678901']) {
+      await password.fill(short);
+      await enter.click();
+      await expect(alert).toHaveText('La contraseña tiene 12 caracteres o más.');
+    }
+    expect(await queryDatabase(request, 'select attempts from public.login_attempts')).toEqual([]);
+
+    await password.fill('no-es-la-contrasena');
     await enter.click();
-    await expect(page.locator('form').getByRole('alert')).toHaveText('El código no es correcto.');
+    await expect(alert).toHaveText('La contraseña no es correcta.');
     await expect(page).toHaveURL(/\/login$/);
 
     await page.getByRole('button', { name: 'Usar otro email' }).click();
     await page.getByLabel('Email').fill('otra@persona.com');
-    await page.getByRole('button', { name: 'Entrar con mi código fijo' }).click();
-    await page.getByLabel('Código fijo').fill(E2E.fixedCode);
+    await page.getByRole('button', { name: 'Entrar con mi contraseña' }).click();
+    await page.getByLabel('Contraseña').fill(E2E.password);
     await page.getByRole('button', { name: 'Entrar' }).click();
-    await expect(page.locator('form').getByRole('alert')).toHaveText('El código no es correcto.');
+    await expect(alert).toHaveText('La contraseña no es correcta.');
     await page.goto('/hoy');
     await expect(page).toHaveURL(/\/login$/);
   });
 });
 
-// Bloqueo por intentos (ADR-0024): la app cuenta cada código que se prueba y, tras cinco
-// seguidos sin acertar, deja de admitir más durante un rato.
+// Bloqueo por intentos (ADR-0024): la app cuenta cada contraseña o código que se prueba y,
+// tras cinco seguidos sin acertar, deja de admitir más durante un rato.
 test.describe('bloqueo por intentos fallidos', () => {
   const attempts = (request: Parameters<typeof queryDatabase>[0]) =>
     queryDatabase<{ attempts: number; locked: boolean }>(
@@ -388,51 +400,59 @@ test.describe('bloqueo por intentos fallidos', () => {
     await resetDatabase(request);
     await page.goto('/login');
     await page.getByLabel('Email').fill(E2E.email);
-    await page.getByRole('button', { name: 'Entrar con mi código fijo' }).click();
+    await page.getByRole('button', { name: 'Entrar con mi contraseña' }).click();
   });
 
   test('entrar pone la cuenta a cero', async ({ page, request }) => {
-    const code = page.getByLabel('Código fijo');
-    await code.fill('000000');
+    const password = page.getByLabel('Contraseña');
+    await password.fill('no-es-la-contrasena');
     await page.getByRole('button', { name: 'Entrar' }).click();
-    await expect(page.locator('form').getByRole('alert')).toHaveText('El código no es correcto.');
+    await expect(page.locator('form').getByRole('alert')).toHaveText(
+      'La contraseña no es correcta.',
+    );
     expect(await attempts(request)).toEqual([{ attempts: 1, locked: false }]);
 
-    await code.fill(E2E.fixedCode);
+    await password.fill(E2E.password);
     await page.getByRole('button', { name: 'Entrar' }).click();
     await expect(page).toHaveURL(/\/(hoy|nivel)$/);
     expect(await attempts(request)).toEqual([]);
   });
 
-  test('cinco códigos fallidos cierran el acceso con código; el enlace del correo lo reabre', async ({
+  test('cinco intentos fallidos cierran el acceso; el enlace del correo lo reabre', async ({
     page,
     request,
   }) => {
-    const code = page.getByLabel('Código fijo');
+    const password = page.getByLabel('Contraseña');
     const alert = page.locator('form').getByRole('alert');
+    const locked =
+      'Demasiados intentos. Por seguridad no se puede volver a probar hasta dentro de 1 min. Mientras tanto puedes entrar con el enlace del correo.';
 
     for (let n = 1; n <= 5; n++) {
-      await code.fill(`00000${n}`);
+      await password.fill(`contrasena-mala-0${n}`);
       await page.getByRole('button', { name: 'Entrar' }).click();
-      await expect(alert).toHaveText('El código no es correcto.');
+      await expect(alert).toHaveText('La contraseña no es correcta.');
       await expect.poll(async () => (await attempts(request))[0]?.attempts).toBe(n);
     }
     expect(await attempts(request)).toEqual([{ attempts: 5, locked: true }]);
 
-    // Cerrado también para el código bueno, y sin gastar otro intento.
-    await code.fill(E2E.fixedCode);
+    // Cerrado también para la contraseña buena, y sin gastar otro intento.
+    await password.fill(E2E.password);
     await page.getByRole('button', { name: 'Entrar' }).click();
-    await expect(alert).toHaveText(
-      'Demasiados intentos. Por seguridad no se pueden probar más códigos hasta dentro de 1 min. Mientras tanto puedes entrar con el enlace del correo.',
-    );
+    await expect(alert).toHaveText(locked);
     await expect(page).toHaveURL(/\/login$/);
     await expectAccessible(page);
     expect(await attempts(request)).toEqual([{ attempts: 5, locked: true }]);
 
-    // El enlace del correo no pasa por el código: entra y levanta el bloqueo.
+    // Y para el código de 6 cifras del correo, que pasa por la misma cuenta.
     await page.getByRole('button', { name: 'Usar otro email' }).click();
     await page.getByRole('button', { name: 'Enviarme el correo' }).click();
     await expect(page.getByRole('status')).toBeVisible();
+    await page.getByLabel('Código de 6 dígitos').fill(E2E.otp);
+    await page.getByRole('button', { name: 'Entrar' }).click();
+    await expect(alert).toHaveText(locked);
+    expect(await attempts(request)).toEqual([{ attempts: 5, locked: true }]);
+
+    // El enlace de ese mismo correo no pasa por la cuenta: entra y levanta el bloqueo.
     await page.goto(`/auth/confirm?code=${E2E.authCode}`);
     await expect(page).toHaveURL(/\/(hoy|nivel)$/);
     expect(await attempts(request)).toEqual([]);

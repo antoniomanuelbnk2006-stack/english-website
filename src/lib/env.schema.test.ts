@@ -48,7 +48,7 @@ describe('parseEnv', () => {
     );
   });
 
-  it('el secreto del código fijo es opcional, pero no puede ser corto', () => {
+  it('el secreto de la contraseña de acceso es opcional, pero no puede ser corto', () => {
     expect(parseEnv(ServerEnv, valid).LOGIN_CODE_PEPPER).toBeUndefined();
     const pepper = 'x'.repeat(32);
     expect(parseEnv(ServerEnv, { ...valid, LOGIN_CODE_PEPPER: pepper }).LOGIN_CODE_PEPPER).toBe(

@@ -46,8 +46,8 @@ export const es = {
   login: {
     title: 'Entra en Señal',
     subtitle: 'Te enviamos un correo con un código y un enlace para entrar. Sin contraseñas.',
-    subtitleFixedCode:
-      'Escribe tu email y entra con tu código fijo. Si no lo recuerdas, te enviamos un correo para entrar.',
+    subtitlePassword:
+      'Escribe tu email y entra con tu contraseña. Si no la recuerdas, te enviamos un correo para entrar.',
     emailLabel: 'Email',
     emailPlaceholder: 'tu-email@ejemplo.com',
     sendEmail: 'Enviarme el correo',
@@ -62,18 +62,18 @@ export const es = {
     errorInvalidEmail: 'Ese email no parece válido.',
     errorInvalidCode: 'El código tiene 6 dígitos.',
     errorWrongCode: 'El código no es correcto o ha caducado. Pide uno nuevo.',
-    fixedCodeButton: 'Entrar con mi código fijo',
-    fixedCodePrompt: 'Escribe tu código fijo para entrar como {email}.',
-    fixedCodeLabel: 'Código fijo',
-    errorInvalidFixedCode: 'El código fijo tiene entre 4 y 8 cifras.',
-    errorWrongFixedCode: 'El código no es correcto.',
+    passwordButton: 'Entrar con mi contraseña',
+    passwordPrompt: 'Escribe tu contraseña para entrar como {email}.',
+    passwordLabel: 'Contraseña',
+    errorInvalidPassword: 'La contraseña tiene 12 caracteres o más.',
+    errorWrongPassword: 'La contraseña no es correcta.',
     errorLink:
       'Ese enlace no es válido o ha caducado. Pide otro correo y abre el enlace en este mismo navegador.',
     errorRateLimited: 'Demasiados intentos. Espera un minuto y vuelve a probar.',
     errorLockedMinutes:
-      'Demasiados intentos. Por seguridad no se pueden probar más códigos hasta dentro de {n} min. Mientras tanto puedes entrar con el enlace del correo.',
+      'Demasiados intentos. Por seguridad no se puede volver a probar hasta dentro de {n} min. Mientras tanto puedes entrar con el enlace del correo.',
     errorLockedHours:
-      'Demasiados intentos. Por seguridad no se pueden probar más códigos hasta dentro de {n} h. Mientras tanto puedes entrar con el enlace del correo.',
+      'Demasiados intentos. Por seguridad no se puede volver a probar hasta dentro de {n} h. Mientras tanto puedes entrar con el enlace del correo.',
     errorEmailRateLimited: 'Se han pedido demasiados correos. Espera un rato antes de pedir otro.',
     errorInternal: 'No hemos podido conectar con el servidor. Inténtalo de nuevo.',
   },
