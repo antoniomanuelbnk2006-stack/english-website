@@ -5,6 +5,9 @@
 // LOGIN_CODE_PEPPER, en la contraseña del usuario en Supabase Auth. Este script la cambia con la
 // clave *secret* del proyecto. Lee de .env.pipeline: SUPABASE_URL, SUPABASE_SECRET_KEY,
 // LOGIN_CODE_PEPPER y, si no se pasa --email, ALLOWED_EMAIL.
+//
+// De paso pone a cero la cuenta de intentos fallidos (ADR-0024): si el acceso con código está
+// bloqueado, volver a poner el código lo reabre.
 import { randomBytes } from 'node:crypto';
 import { parseArgs } from 'node:util';
 import { codePassword, FixedCode } from '../../src/features/auth/lib/fixed-code';
@@ -62,7 +65,8 @@ async function main(): Promise<number> {
     password = codePassword(LOGIN_CODE_PEPPER, email, code.data);
   }
 
-  const api = `${SUPABASE_URL.replace(/\/+$/, '')}/auth/v1/admin/users`;
+  const project = SUPABASE_URL.replace(/\/+$/, '');
+  const api = `${project}/auth/v1/admin/users`;
   const headers = {
     apikey: SUPABASE_SECRET_KEY,
     Authorization: `Bearer ${SUPABASE_SECRET_KEY}`,
@@ -86,6 +90,20 @@ async function main(): Promise<number> {
     const detail = (await update.text()).slice(0, 200);
     throw new Error(`No se pudo cambiar (HTTP ${update.status}): ${detail}`);
   }
+
+  // Poner un código levanta también el bloqueo por intentos fallidos (ADR-0024): es la forma
+  // de reabrir el acceso desde tu ordenador si alguien lo ha dejado cerrado probando códigos.
+  const unlock = await fetch(`${project}/rest/v1/login_attempts?user_id=eq.${user.id}`, {
+    method: 'DELETE',
+    headers,
+  });
+  if (!unlock.ok) {
+    console.warn(
+      `Aviso: no se pudo poner a cero la cuenta de intentos (HTTP ${unlock.status}). ` +
+        '¿Está aplicada la migración 0005?',
+    );
+  }
+
   console.log(
     values.off
       ? `Código fijo desactivado para ${email}. Ya no se puede entrar con él: para volver a ponerlo, pnpm auth:set-code <código>.`

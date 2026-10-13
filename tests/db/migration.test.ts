@@ -39,6 +39,8 @@ const TABLES = [
   'writing_submissions',
   'placement_results',
   'achievements',
+  'login_attempts',
+  'ai_usage',
 ];
 
 beforeAll(async () => {

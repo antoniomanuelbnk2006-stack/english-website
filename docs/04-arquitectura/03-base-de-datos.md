@@ -22,11 +22,13 @@ auth.users (Supabase)
    ├──* activity_days            minutos/XP por día (rachas)
    ├──* daily_plans              plan del día generado
    ├──* writing_submissions      writings + feedback IA + coste
+   ├──* ai_usage                 uso de la IA por llamada (solo lectura; de aquí salen los límites)
+   ├──1 login_attempts           intentos de acceso seguidos y bloqueo (solo lectura)
    ├──* placement_results        test de nivel y pruebas de confirmación
    └──* achievements             logros
 ```
 
-Todas las tablas llevan `user_id` (o `id` en `profiles`) y **RLS activado**: aunque sea una app de un usuario, abrirla en el futuro no exigiría rehacer nada.
+Todas las tablas llevan `user_id` (o `id` en `profiles`) y **RLS activado**: aunque sea una app de un usuario, abrirla en el futuro no exigiría rehacer nada. Dos de ellas, `ai_usage` y `login_attempts`, el usuario **solo las puede leer**: guardan lo que no debe poder cambiar quien tenga su sesión ([ADR-0024](../adr/0024-bloqueo-de-acceso-y-registro-de-la-ia.md)).
 
 ---
 
@@ -509,7 +511,7 @@ group by user_id, date_trunc('week', logged_on::timestamp)::date, kind;
 | `lesson_id` es `text` sin FK | Las lecciones viven en el repo, no en la BD. `lesson_version` permite detectar que una lección cambió después de hacerla. |
 | `client_id` + `unique` en intentos y repasos | Reintentos de la cola sin conexión **idempotentes**. |
 | `(select auth.uid())` en políticas | Patrón recomendado por Supabase: se evalúa una vez por consulta, no por fila. |
-| `security invoker` en funciones de negocio | Las funciones respetan RLS; solo `handle_new_user` es `security definer` (debe escribir al crear el usuario). |
+| `security invoker` en funciones de negocio | Las funciones respetan RLS. Son `security definer` solo `handle_new_user` (debe escribir al crear el usuario) y las cuatro que escriben en las tablas de solo lectura, `login_attempt_*` y `ai_usage_*` ([ADR-0024](../adr/0024-bloqueo-de-acceso-y-registro-de-la-ia.md)). |
 | `set search_path = ''` | Evita secuestro de `search_path` en funciones. |
 | Ratings calculados en TypeScript | La lógica Elo es pura y testeable en `lib/`; la función SQL solo persiste de forma atómica. |
 | Sin tabla de contenido | Ver [ADR-0003](../adr/0003-contenido-como-codigo.md). |
@@ -531,7 +533,15 @@ Añade `lesson_progress.transcript_first boolean not null default false`: el usu
 
 ### Migración `0004_writing_review.sql`
 
-Añade a `writing_submissions`: `review_kind text` (`'ai'` | `'self'`, por defecto `'ai'`), `active_seconds int`, `exam_mode boolean` y `rewritten_at timestamptz`. Una entrega puede corregirla la IA o revisarla el propio usuario; **solo las de IA cuentan para el límite diario y el tope de gasto**. En las revisiones sin IA, `feedback` guarda la autoevaluación (`{ kind: 'self', scores, points }`) y `model` queda vacío; en un envío a la IA que falla, `feedback` guarda el motivo (`{ error: 'refusal' | 'max_tokens' | 'api' }`) ([ADR-0014](../adr/0014-writing-revision-sin-ia.md)). Tests en `tests/db/writing.test.ts`.
+Añade a `writing_submissions`: `review_kind text` (`'ai'` | `'self'`, por defecto `'ai'`), `active_seconds int`, `exam_mode boolean` y `rewritten_at timestamptz`. Una entrega puede corregirla la IA o revisarla el propio usuario; **solo las de IA cuentan para el límite diario y el tope de gasto**. En las revisiones sin IA, `feedback` guarda la autoevaluación (`{ kind: 'self', scores, points }`) y `model` queda vacío; en un envío a la IA que falla, `feedback` guarda el motivo (`{ error: 'refusal' | 'max_tokens' | 'api' }`) ([ADR-0014](../adr/0014-writing-revision-sin-ia.md)). Tests en `tests/db/writing.test.ts`. Desde la migración 0006, los límites ya no se cuentan aquí, sino en `ai_usage`.
+
+### Migración `0005_login_attempts.sql`
+
+Añade `login_attempts` (una fila por usuario: `attempts`, `last_attempt_at`, `locked_until`) y dos funciones `security definer`. `login_attempt_begin(p_email) returns jsonb` la llama la app sin sesión antes de probar un código: suma un intento y responde `{ allowed, retry_after_s }`; desde el quinto seguido, cada intento cierra el acceso 1, 2, 4… minutos, hasta 24 horas. `login_attempt_clear()` borra la fila y solo se puede llamar con sesión. El usuario lee su fila, pero no hay política ni permiso para escribirla ([ADR-0024](../adr/0024-bloqueo-de-acceso-y-registro-de-la-ia.md)). Tests en `tests/db/login-attempts.test.ts`.
+
+### Migración `0006_ai_usage.sql`
+
+Añade `ai_usage`, el registro del uso de la IA: una fila por llamada, con lo apartado (`reserved_usd`), lo cobrado (`cost_usd`), los tokens y el resultado (`status`, `reason`). El usuario solo puede leerla. `ai_usage_reserve(...) returns jsonb` comprueba el límite diario y el tope mensual y aparta el gasto máximo de una llamada dentro de un cerrojo por usuario; devuelve `{ status: 'ok', id, token }`, `{ status: 'daily_limit' }` o `{ status: 'monthly_budget' }`. `ai_usage_settle(...) returns boolean` cierra la reserva con el coste real, y solo con el `token` que devolvió la reserva. La migración copia los envíos a la IA que ya había en `writing_submissions`, y la vista `v_ai_spend_month` pasa a leer de `ai_usage` ([ADR-0024](../adr/0024-bloqueo-de-acceso-y-registro-de-la-ia.md)). Tests en `tests/db/ai-usage.test.ts`.
 
 ---
 

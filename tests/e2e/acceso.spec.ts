@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { E2E } from '../../playwright.config';
 import { expectAccessible } from './axe';
-import { resetDatabase } from './session';
+import { queryDatabase, resetDatabase } from './session';
 
 // Flujos de acceso que no necesitan una sesión real (ni un Supabase detrás).
 
@@ -47,6 +47,66 @@ test.describe('sin sesión', () => {
     }
     await page.getByRole('link', { name: 'Explorar B2' }).click();
     await expect(page).toHaveURL(/\/login$/);
+  });
+
+  // La presentación comparte origen con la app: lleva su propia CSP, fija (next.config.ts).
+  test('la presentación lleva una CSP fija, sin marcos ni scripts de fuera, y no se rompe con ella', async ({
+    page,
+    request,
+  }) => {
+    const pages = ['/', '/landing/index.html', '/landing/nosotros.html', '/landing/contacto.html'];
+    for (const path of pages) {
+      const response = await request.get(path, { maxRedirects: 0 });
+      expect(response.status(), path).toBe(200);
+      const directives = (response.headers()['content-security-policy'] ?? '').split('; ');
+      expect(directives, path).toEqual(
+        expect.arrayContaining([
+          `default-src 'self'`,
+          `script-src 'self'`,
+          `frame-ancestors 'none'`,
+          `object-src 'none'`,
+          `base-uri 'self'`,
+          `form-action 'self'`,
+        ]),
+      );
+    }
+
+    // Con la CSP puesta, cada página sigue cargando lo suyo: ni un aviso de CSP en consola, su
+    // script se ejecuta y los estilos escritos en el propio HTML se aplican.
+    const blocked: string[] = [];
+    page.on('console', (message) => {
+      if (/content security policy/i.test(message.text())) blocked.push(message.text());
+    });
+    for (const path of pages) {
+      await page.goto(path, { waitUntil: 'load' });
+      await expect(page.locator('html')).toHaveClass(/\bjs\b/);
+    }
+    await expect(page.locator('main h1')).toHaveCSS('max-width', 'none');
+    expect(blocked).toEqual([]);
+  });
+
+  // El formulario de contacto no tiene servidor: prepara un correo a la dirección del pie.
+  test('el formulario de contacto escribe a la dirección que enseña la página', async ({
+    page,
+    request,
+  }) => {
+    await page.goto('/landing/contacto.html');
+    const address = await page.locator('.foot a[href^="mailto:"]').getAttribute('href');
+    expect(address).toMatch(/^mailto:[^@\s]+@[^@\s]+$/);
+
+    await page.getByLabel('Nombre *').fill('Ana');
+    await page.getByLabel('Apellidos *').fill('García');
+    await page.getByLabel('Correo electrónico *').fill('ana@example.test');
+    await page.getByLabel('B1').check();
+    await page.getByLabel('Mensaje *').fill('Hola.');
+    await page.getByRole('button', { name: 'Solicitar información' }).click();
+    await expect(page.locator('#nota')).toHaveText(
+      'Se abrirá tu programa de correo con el mensaje preparado.',
+    );
+
+    // Y en el script no queda ninguna dirección escrita a mano.
+    const script = await (await request.get('/landing/app.js')).text();
+    expect(script).not.toMatch(/mailto:[\w.-]+@/);
   });
 
   test('las rutas de API responden 401 en vez de redirigir', async ({ request }) => {
@@ -278,5 +338,70 @@ test.describe('acceso con código fijo', () => {
     await expect(page.locator('form').getByRole('alert')).toHaveText('El código no es correcto.');
     await page.goto('/hoy');
     await expect(page).toHaveURL(/\/login$/);
+  });
+});
+
+// Bloqueo por intentos (ADR-0024): la app cuenta cada código que se prueba y, tras cinco
+// seguidos sin acertar, deja de admitir más durante un rato.
+test.describe('bloqueo por intentos fallidos', () => {
+  const attempts = (request: Parameters<typeof queryDatabase>[0]) =>
+    queryDatabase<{ attempts: number; locked: boolean }>(
+      request,
+      `select attempts, coalesce(locked_until > now(), false) as locked
+       from public.login_attempts`,
+    );
+
+  test.beforeEach(async ({ request, page }) => {
+    await resetDatabase(request);
+    await page.goto('/login');
+    await page.getByLabel('Email').fill(E2E.email);
+    await page.getByRole('button', { name: 'Entrar con mi código fijo' }).click();
+  });
+
+  test('entrar pone la cuenta a cero', async ({ page, request }) => {
+    const code = page.getByLabel('Código fijo');
+    await code.fill('000000');
+    await page.getByRole('button', { name: 'Entrar' }).click();
+    await expect(page.locator('form').getByRole('alert')).toHaveText('El código no es correcto.');
+    expect(await attempts(request)).toEqual([{ attempts: 1, locked: false }]);
+
+    await code.fill(E2E.fixedCode);
+    await page.getByRole('button', { name: 'Entrar' }).click();
+    await expect(page).toHaveURL(/\/(hoy|nivel)$/);
+    expect(await attempts(request)).toEqual([]);
+  });
+
+  test('cinco códigos fallidos cierran el acceso con código; el enlace del correo lo reabre', async ({
+    page,
+    request,
+  }) => {
+    const code = page.getByLabel('Código fijo');
+    const alert = page.locator('form').getByRole('alert');
+
+    for (let n = 1; n <= 5; n++) {
+      await code.fill(`00000${n}`);
+      await page.getByRole('button', { name: 'Entrar' }).click();
+      await expect(alert).toHaveText('El código no es correcto.');
+      await expect.poll(async () => (await attempts(request))[0]?.attempts).toBe(n);
+    }
+    expect(await attempts(request)).toEqual([{ attempts: 5, locked: true }]);
+
+    // Cerrado también para el código bueno, y sin gastar otro intento.
+    await code.fill(E2E.fixedCode);
+    await page.getByRole('button', { name: 'Entrar' }).click();
+    await expect(alert).toHaveText(
+      'Demasiados intentos. Por seguridad no se pueden probar más códigos hasta dentro de 1 min. Mientras tanto puedes entrar con el enlace del correo.',
+    );
+    await expect(page).toHaveURL(/\/login$/);
+    await expectAccessible(page);
+    expect(await attempts(request)).toEqual([{ attempts: 5, locked: true }]);
+
+    // El enlace del correo no pasa por el código: entra y levanta el bloqueo.
+    await page.getByRole('button', { name: 'Usar otro email' }).click();
+    await page.getByRole('button', { name: 'Enviarme el correo' }).click();
+    await expect(page.getByRole('status')).toBeVisible();
+    await page.goto(`/auth/confirm?code=${E2E.authCode}`);
+    await expect(page).toHaveURL(/\/(hoy|nivel)$/);
+    expect(await attempts(request)).toEqual([]);
   });
 });

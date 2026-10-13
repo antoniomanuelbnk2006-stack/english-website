@@ -71,6 +71,10 @@ export const en: Dictionary = {
     errorLink:
       'That link is not valid or has expired. Ask for another email and open the link in this same browser.',
     errorRateLimited: 'Too many attempts. Wait a minute and try again.',
+    errorLockedMinutes:
+      'Too many attempts. For security, no more codes can be tried for the next {n} min. Meanwhile you can sign in with the link in the email.',
+    errorLockedHours:
+      'Too many attempts. For security, no more codes can be tried for the next {n} h. Meanwhile you can sign in with the link in the email.',
     errorEmailRateLimited: 'Too many emails requested. Wait a while before asking for another.',
     errorInternal: "We couldn't reach the server. Please try again.",
   },

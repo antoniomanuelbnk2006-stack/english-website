@@ -23,9 +23,10 @@
 1. **Supabase Auth con email + código OTP de 6 dígitos**, que se teclea dentro de la app. Se prefiere al enlace mágico porque en iOS el enlace se abre en Safari y no en la PWA instalada. Aun así la app **acepta también el enlace** del correo ([ADR-0018](../adr/0018-acceso-con-enlace-del-correo.md)): el plan gratuito de Supabase no deja editar la plantilla para que traiga el código si no se configura un SMTP propio. El enlace solo abre sesión en el navegador que pidió el correo.
 2. **Registro desactivado** en Supabase (*Authentication → Sign In / Providers → Allow new users to sign up*: off). Tu usuario se crea una vez, a mano o con el primer OTP antes de desactivarlo.
 3. **Lista de emails permitidos** (`ALLOWED_EMAIL`) comprobada en `proxy.ts` **y** en cada Server Action/Route Handler (defensa en profundidad).
-4. Sesión en **cookies HttpOnly** gestionadas por `@supabase/ssr`; el *token* se refresca en `proxy.ts`.
+4. Sesión en **cookies `HttpOnly` y `Secure`** gestionadas por `@supabase/ssr`; el *token* se refresca en `proxy.ts`. La librería las deja legibles desde JavaScript por defecto (su cliente de navegador las necesita); como esta app solo habla con Supabase desde el servidor, `src/lib/supabase/cookies.ts` las cierra en los dos clientes. Los navegadores aceptan `Secure` en `http://localhost`, que es como corren el desarrollo, la demo y los tests.
 5. **Código fijo opcional** ([ADR-0020](../adr/0020-codigo-fijo-de-acceso.md)): si el servidor tiene `LOGIN_CODE_PEPPER`, se puede entrar con un código de 4 a 8 cifras sin pasar por el correo. El código no se guarda: es la contraseña de Supabase, derivada con ese secreto. La seguridad del acceso pasa a ser la del código que se elija.
 6. **Una sola dirección** ([ADR-0021](../adr/0021-una-sola-direccion-y-codigo-fijo-primero.md)): con `SITE_URL`, `proxy.ts` redirige a la dirección de la web lo que llegue por otro nombre, antes de mirar la sesión. Así nadie acaba, sin saberlo, en un despliegue antiguo con el código y las variables de entonces.
+7. **Bloqueo por intentos** ([ADR-0024](../adr/0024-bloqueo-de-acceso-y-registro-de-la-ia.md)): la app anota cada código que se prueba antes de probarlo. Tras cinco seguidos sin acertar, el acceso con código se cierra 1, 2, 4… minutos, hasta 24 horas; entrar pone la cuenta a cero. El enlace del correo no pasa por el bloqueo y lo levanta, y `pnpm auth:set-code` también. No depende del límite por IP de Supabase, que solo ve la IP del servidor de la app.
 
 ```ts
 // src/lib/supabase/proxy.ts (resumen)
@@ -89,6 +90,7 @@ Sigue la guía oficial de Supabase para Next.js con `proxy.ts` y comprueba los d
 - **RLS en todas las tablas** con `user_id = (select auth.uid())` ([Base de datos](03-base-de-datos.md#2-migración-base)).
 - La app **no usa la clave *secret*** de Supabase en ningún punto: todas las consultas van como el usuario autenticado. La clave *secret* solo existe en tu máquina para scripts puntuales (*seed*, copias).
 - Funciones SQL con `security invoker` y `search_path` vacío.
+- **Lo que no debe poder cambiar ni quien tenga la sesión** (los intentos de acceso y el uso de la IA) va en tablas que el usuario solo puede leer, `login_attempts` y `ai_usage`. Las escriben cuatro funciones `security definer` hechas para que llamarlas a mano no sirva de nada: solo saben sumar, y cerrar una reserva de la IA exige un resguardo que no sale del servidor ([ADR-0024](../adr/0024-bloqueo-de-acceso-y-registro-de-la-ia.md)). Así los límites de la IA aguantan aunque alguien entre en la cuenta, y siguen sin hacer falta claves *secret* en la app.
 - Las Server Actions validan su entrada con Zod y comprueban sesión y email.
 
 ---
@@ -122,6 +124,8 @@ En `next.config.ts` (`headers()`) y, para la CSP con *nonce*, en `proxy.ts` sigu
 | `X-Content-Type-Options` | `nosniff` |
 | `Permissions-Policy` | `camera=(), geolocation=(), microphone=(self)` |
 | `Strict-Transport-Security` | La pone Vercel; en dominio propio, `max-age=63072000; includeSubDomains` |
+
+**La portada pública** (`/` sin sesión y `/landing/*`) es HTML estático y no puede llevar la CSP con *nonce* de la app. Lleva la suya, fija, desde `next.config.ts`: `default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://static.wixstatic.com; connect-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'`. Comparte origen con la app, así que solo admite lo que esas páginas cargan de verdad. Si la portada estrena un origen nuevo (otra fuente, un vídeo, una analítica), hay que añadirlo ahí.
 
 **CORS de R2:** permitir `GET` y `HEAD` solo desde el origen de la app y exponer `Accept-Ranges`, `Content-Range` y `Content-Length` (necesario para el audio con peticiones por rango y su caché en el *service worker*; ver [PWA](08-pwa-rendimiento-accesibilidad.md#3-audio-sin-conexión)).
 

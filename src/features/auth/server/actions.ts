@@ -20,6 +20,12 @@ function isRateLimited(error: { status?: number }): boolean {
   return error.status === 429;
 }
 
+/** Lo que responde `login_attempt_begin` (supabase/migrations/0005_login_attempts.sql). */
+const LoginGate = z.object({ allowed: z.boolean(), retry_after_s: z.number().int().min(0) });
+
+/** Si el acceso está cerrado por intentos fallidos, cuántos segundos faltan para reabrirse. */
+export type VerifyOtpResult = ActionResult<never> & { retryAfterSeconds?: number };
+
 /**
  * Pide el correo de acceso, que trae un código de 6 dígitos, un enlace o las dos cosas según
  * la plantilla de Supabase (ADR-0018). La respuesta es la misma tenga o no acceso el email,
@@ -52,7 +58,7 @@ export async function requestOtp(input: unknown): Promise<ActionResult<{ email: 
  * Comprueba el código y, si es correcto, abre sesión y entra en /hoy. Vale el código fijo (si
  * está configurado) o el de 6 cifras del correo.
  */
-export async function verifyOtp(input: unknown): Promise<ActionResult<never>> {
+export async function verifyOtp(input: unknown): Promise<VerifyOtpResult> {
   const parsed = VerifyOtpInput.safeParse(input);
   if (!parsed.success) return fail('invalid_input');
   const { email, token } = parsed.data;
@@ -60,6 +66,16 @@ export async function verifyOtp(input: unknown): Promise<ActionResult<never>> {
   if (email !== env.ALLOWED_EMAIL) return fail('unauthorized');
 
   const supabase = await createClient();
+
+  // Cada intento se anota antes de probar el código (ADR-0024): tras varios seguidos sin
+  // acertar, la base de datos deja de admitir más durante un rato. Si no se puede anotar, no
+  // se prueba nada: un fallo aquí no puede convertirse en intentos sin límite.
+  const begun = await supabase.rpc('login_attempt_begin', { p_email: email });
+  const gate = LoginGate.safeParse(begun.data);
+  if (begun.error || !gate.success) return fail('internal');
+  if (!gate.data.allowed) {
+    return { ...fail('rate_limited'), retryAfterSeconds: gate.data.retry_after_s };
+  }
 
   // Código fijo: es la contraseña del usuario en Supabase, derivada con un secreto del servidor.
   let signedIn = false;
@@ -78,6 +94,8 @@ export async function verifyOtp(input: unknown): Promise<ActionResult<never>> {
     if (error) return fail(isRateLimited(error) ? 'rate_limited' : 'unauthorized');
   }
 
+  // Ha entrado: la cuenta de intentos vuelve a cero (solo se puede con sesión).
+  await supabase.rpc('login_attempt_clear');
   redirect('/hoy');
 }
 

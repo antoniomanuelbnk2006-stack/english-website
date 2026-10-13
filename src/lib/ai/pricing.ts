@@ -43,3 +43,17 @@ export function costUsd(model: string, usage: TokenUsage): number {
   const dollars = (input * price.input + usage.output_tokens * price.output) / 1_000_000;
   return Math.round(dollars * 100_000) / 100_000;
 }
+
+/** El inglés ronda los cuatro caracteres por token: con dos, la entrada se estima por lo alto. */
+const CHARS_PER_TOKEN = 2;
+
+/**
+ * Lo máximo que puede costar una llamada antes de hacerla: la salida entera y la entrada
+ * estimada por lo alto. Es lo que se aparta en `ai_usage` hasta saber el coste real (ADR-0024).
+ */
+export function maxCostUsd(model: string, inputChars: number, maxOutputTokens: number): number {
+  return costUsd(model, {
+    input_tokens: Math.ceil(inputChars / CHARS_PER_TOKEN),
+    output_tokens: maxOutputTokens,
+  });
+}

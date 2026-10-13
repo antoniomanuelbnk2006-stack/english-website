@@ -1,18 +1,13 @@
 import 'server-only';
 import type Anthropic from '@anthropic-ai/sdk';
 import { zodOutputFormat } from '@anthropic-ai/sdk/helpers/zod';
-import {
-  checkLimits,
-  type Attempt,
-  type FailureReason,
-  usageFrom,
-} from '@/features/writing/lib/limits';
+import type { FailureReason } from '@/features/writing/lib/limits';
 import {
   normalizeFeedback,
   type WritingFeedback,
   WritingFeedbackOutput,
 } from '@/features/writing/lib/schema';
-import { costUsd, type TokenUsage } from '@/lib/ai/pricing';
+import { costUsd, maxCostUsd, type TokenUsage } from '@/lib/ai/pricing';
 import {
   buildWritingUserMessage,
   describeTask,
@@ -49,10 +44,40 @@ export interface NewSubmission {
   activeSeconds: number;
 }
 
+/** Lo que hace falta para pedir sitio a una llamada: cuánto puede costar y qué límites hay. */
+export interface ReserveRequest {
+  model: string;
+  /** Lo máximo que puede costar la llamada: se aparta hasta saber el coste real. */
+  reserveUsd: number;
+  limits: { daily: number; monthlyUsd: number };
+  /** Principio del día y del mes en curso (hora de Madrid). */
+  dayStart: Date;
+  monthStart: Date;
+}
+
+/** El resguardo de una reserva: sin él no se puede cerrar. No sale del servidor. */
+export interface Reservation {
+  id: string;
+  token: string;
+}
+
+export type ReserveResult =
+  | { ok: true; reservation: Reservation }
+  | { ok: false; error: 'daily_limit' | 'monthly_budget' | 'db' };
+
 export interface FeedbackStore {
-  /** Envíos a la IA desde que empezó el mes (en Madrid). `null` si falla la base de datos. */
-  attemptsSince(since: Date): Promise<Attempt[] | null>;
-  /** Crea la fila en estado `pending` y devuelve su id. */
+  /**
+   * Comprueba el límite diario y el tope mensual y, si caben, aparta el gasto de una llamada.
+   * Todo en una sola operación del registro `ai_usage` (ADR-0024): dos peticiones a la vez no
+   * pueden pasar las dos por el último hueco.
+   */
+  reserve(request: ReserveRequest): Promise<ReserveResult>;
+  /** Cierra la reserva con lo que la llamada ha costado de verdad. `false` si no se ha podido. */
+  settle(
+    reservation: Reservation,
+    data: { outcome: 'done' | FailureReason; usage: TokenUsage | null; costUsd: number },
+  ): Promise<boolean>;
+  /** Crea la entrega en estado `pending` y devuelve su id. */
   create(submission: NewSubmission): Promise<string | null>;
   finish(
     id: string,
@@ -98,8 +123,8 @@ const ERROR_OF: Record<FailureReason, FeedbackError> = {
 };
 
 /**
- * Pide la corrección de un texto: comprueba los límites, registra el envío, llama al modelo,
- * ajusta la respuesta y la guarda con su coste.
+ * Pide la corrección de un texto: reserva sitio dentro de los límites, registra la entrega,
+ * llama al modelo, ajusta la respuesta y la guarda con su coste.
  */
 export async function requestFeedback(
   deps: FeedbackDeps,
@@ -108,16 +133,26 @@ export async function requestFeedback(
   const { store, model, limits, now } = deps;
   const { prompt, text } = input;
 
-  const attempts = await store.attemptsSince(startOfMonthMadrid(now));
-  if (!attempts) return { ok: false, error: 'db' };
-  const state = checkLimits({
-    ...usageFrom(attempts, startOfTodayMadrid(now)),
-    dailyLimit: limits.daily,
-    monthlyBudgetUsd: limits.monthlyUsd,
-  });
-  if (state !== 'ok') return { ok: false, error: state };
+  const task: WritingTask = {
+    taskType: prompt.task_type,
+    targetLevel: prompt.level,
+    instructions: describeTask(prompt),
+    text,
+    grammarIds: deps.grammarIds,
+  };
 
-  // El envío se registra antes de llamar: si la llamada se cuelga, ya cuenta para el límite.
+  // La reserva se hace antes de llamar: si la llamada se cuelga, ya cuenta para los límites.
+  const inputChars = WRITING_SYSTEM_PROMPT.length + buildWritingUserMessage(task).length;
+  const reserved = await store.reserve({
+    model: model.id,
+    reserveUsd: maxCostUsd(model.id, inputChars, MAX_TOKENS),
+    limits,
+    dayStart: startOfTodayMadrid(now),
+    monthStart: startOfMonthMadrid(now),
+  });
+  if (!reserved.ok) return { ok: false, error: reserved.error };
+  const { reservation } = reserved;
+
   const id = await store.create({
     promptId: prompt.id,
     taskType: prompt.task_type,
@@ -128,25 +163,24 @@ export async function requestFeedback(
     examMode: input.examMode,
     activeSeconds: input.activeSeconds,
   });
-  if (!id) return { ok: false, error: 'db' };
+  if (!id) {
+    // No se ha llegado a llamar: la reserva se cierra sin coste, como un fallo cualquiera.
+    await store.settle(reservation, { outcome: 'api', usage: null, costUsd: 0 });
+    return { ok: false, error: 'db' };
+  }
 
-  const reply = await model.assess({
-    taskType: prompt.task_type,
-    targetLevel: prompt.level,
-    instructions: describeTask(prompt),
-    text,
-    grammarIds: deps.grammarIds,
-  });
+  const reply = await model.assess(task);
 
   if (!reply.ok) {
-    await store.fail(id, {
-      reason: reply.reason,
-      usage: reply.usage,
-      costUsd: reply.usage ? costUsd(model.id, reply.usage) : 0,
-    });
+    const cost = reply.usage ? costUsd(model.id, reply.usage) : 0;
+    await store.settle(reservation, { outcome: reply.reason, usage: reply.usage, costUsd: cost });
+    await store.fail(id, { reason: reply.reason, usage: reply.usage, costUsd: cost });
     return { ok: false, error: ERROR_OF[reply.reason] };
   }
 
+  const cost = costUsd(model.id, reply.usage);
+  // Si no se pudiera cerrar, la reserva sigue contando por su importe máximo: nunca de menos.
+  await store.settle(reservation, { outcome: 'done', usage: reply.usage, costUsd: cost });
   const feedback = normalizeFeedback(reply.output, text, {
     targetLevel: prompt.level,
     grammarIds: new Set(deps.grammarIds),
@@ -154,7 +188,7 @@ export async function requestFeedback(
   const saved = await store.finish(id, {
     feedback: { ...feedback, prompt_version: WRITING_PROMPT_VERSION },
     usage: reply.usage,
-    costUsd: costUsd(model.id, reply.usage),
+    costUsd: cost,
   });
   // Si no se ha podido guardar, la corrección ya está pagada: se entrega igualmente.
   return { ok: true, id, feedback, saved };

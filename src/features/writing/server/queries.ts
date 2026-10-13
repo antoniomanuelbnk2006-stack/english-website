@@ -8,7 +8,7 @@ import {
   type Scores,
   type StoredFeedback,
 } from '@/features/writing/lib/schema';
-import { supabaseStore } from '@/features/writing/server/store';
+import { attemptsSince } from '@/features/writing/server/store';
 import { getSessionOrRedirect } from '@/lib/auth';
 import { startOfMonthMadrid, startOfTodayMadrid } from '@/lib/dates';
 import { env } from '@/lib/env';
@@ -29,7 +29,7 @@ export const getAiStatus = cache(async (): Promise<AiStatus> => {
 
   const { supabase } = await getSessionOrRedirect();
   const now = new Date();
-  const attempts = await supabaseStore(supabase).attemptsSince(startOfMonthMadrid(now));
+  const attempts = await attemptsSince(supabase, startOfMonthMadrid(now));
   if (!attempts) throw new Error('No se pudo leer el uso de la corrección con IA');
   const usage = usageFrom(attempts, startOfTodayMadrid(now));
   const state = checkLimits({

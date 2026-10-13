@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { costUsd, priceOf } from './pricing';
+import { costUsd, maxCostUsd, priceOf } from './pricing';
 import {
   asData,
   buildWritingUserMessage,
@@ -42,6 +42,23 @@ describe('costUsd', () => {
   it('redondea a cinco decimales', () => {
     expect(costUsd('claude-haiku-5-5', { input_tokens: 1, output_tokens: 1 })).toBe(0);
     expect(costUsd('claude-sonnet-5-5', { input_tokens: 333, output_tokens: 777 })).toBe(0.00844);
+  });
+});
+
+describe('maxCostUsd', () => {
+  it('aparta la salida entera y la entrada a un token por cada dos caracteres', () => {
+    // 6.000 caracteres → 3.000 tokens de entrada (0,006 $) + 8.000 de salida (0,08 $).
+    expect(maxCostUsd('claude-sonnet-5-5', 6000, 8000)).toBe(0.086);
+    expect(maxCostUsd('claude-sonnet-5-5', 6001, 8000)).toBe(
+      costUsd('claude-sonnet-5-5', { input_tokens: 3001, output_tokens: 8000 }),
+    );
+  });
+
+  it('nunca es menos de lo que cuesta una llamada corriente con esa entrada', () => {
+    // 2,5k tokens de entrada son unos 10.000 caracteres.
+    expect(maxCostUsd('claude-sonnet-5-5', 10_000, 8000)).toBeGreaterThan(
+      costUsd('claude-sonnet-5-5', { input_tokens: 2500, output_tokens: 2000 }),
+    );
   });
 });
 

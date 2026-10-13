@@ -27,5 +27,8 @@ export async function GET(request: NextRequest) {
     await supabase.auth.signOut();
     return to('/login', LINK_ERROR);
   }
+  // Entrar con el enlace levanta el bloqueo por códigos fallidos (ADR-0024): es la vía de
+  // recuperación cuando el acceso con código está cerrado.
+  await supabase.rpc('login_attempt_clear');
   return to('/hoy');
 }

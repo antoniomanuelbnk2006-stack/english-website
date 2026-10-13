@@ -70,6 +70,10 @@ export const es = {
     errorLink:
       'Ese enlace no es válido o ha caducado. Pide otro correo y abre el enlace en este mismo navegador.',
     errorRateLimited: 'Demasiados intentos. Espera un minuto y vuelve a probar.',
+    errorLockedMinutes:
+      'Demasiados intentos. Por seguridad no se pueden probar más códigos hasta dentro de {n} min. Mientras tanto puedes entrar con el enlace del correo.',
+    errorLockedHours:
+      'Demasiados intentos. Por seguridad no se pueden probar más códigos hasta dentro de {n} h. Mientras tanto puedes entrar con el enlace del correo.',
     errorEmailRateLimited: 'Se han pedido demasiados correos. Espera un rato antes de pedir otro.',
     errorInternal: 'No hemos podido conectar con el servidor. Inténtalo de nuevo.',
   },

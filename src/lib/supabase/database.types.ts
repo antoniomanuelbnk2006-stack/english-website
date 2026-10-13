@@ -1,5 +1,5 @@
-// PROVISIONAL: escrito a mano a partir de supabase/migrations/0001_base.sql porque todavía
-// no hay un proyecto de Supabase enlazado. En cuanto lo haya, regenera este fichero con
+// PROVISIONAL: escrito a mano a partir de supabase/migrations/ (hasta la 0006). Cuando el
+// proyecto enlazado tenga aplicadas todas las migraciones, regenera este fichero con
 // `pnpm db:types` (sobrescribe todo; no lo edites a mano después).
 
 export type Json = string | number | boolean | null | { [key: string]: Json | undefined } | Json[];
@@ -49,6 +49,51 @@ export type Database = {
           goal_met?: boolean;
           user_id?: string;
           xp?: number;
+        };
+        Relationships: [];
+      };
+      ai_usage: {
+        Row: {
+          cost_usd: number;
+          created_at: string;
+          id: string;
+          input_tokens: number | null;
+          model: string;
+          output_tokens: number | null;
+          reason: string | null;
+          reserved_usd: number;
+          settle_hash: string | null;
+          settled_at: string | null;
+          status: string;
+          user_id: string;
+        };
+        Insert: {
+          cost_usd?: number;
+          created_at?: string;
+          id?: string;
+          input_tokens?: number | null;
+          model: string;
+          output_tokens?: number | null;
+          reason?: string | null;
+          reserved_usd: number;
+          settle_hash?: string | null;
+          settled_at?: string | null;
+          status?: string;
+          user_id: string;
+        };
+        Update: {
+          cost_usd?: number;
+          created_at?: string;
+          id?: string;
+          input_tokens?: number | null;
+          model?: string;
+          output_tokens?: number | null;
+          reason?: string | null;
+          reserved_usd?: number;
+          settle_hash?: string | null;
+          settled_at?: string | null;
+          status?: string;
+          user_id?: string;
         };
         Relationships: [];
       };
@@ -309,6 +354,27 @@ export type Database = {
           playback_rate?: number;
           segment_id?: string;
           typed?: string | null;
+          user_id?: string;
+        };
+        Relationships: [];
+      };
+      login_attempts: {
+        Row: {
+          attempts: number;
+          last_attempt_at: string | null;
+          locked_until: string | null;
+          user_id: string;
+        };
+        Insert: {
+          attempts?: number;
+          last_attempt_at?: string | null;
+          locked_until?: string | null;
+          user_id: string;
+        };
+        Update: {
+          attempts?: number;
+          last_attempt_at?: string | null;
+          locked_until?: string | null;
           user_id?: string;
         };
         Relationships: [];
@@ -672,6 +738,28 @@ export type Database = {
         Args: { p_day: string; p_seconds: number; p_xp: number };
         Returns: Database['public']['Tables']['activity_days']['Row'];
       };
+      ai_usage_reserve: {
+        Args: {
+          p_daily_limit: number;
+          p_day_start: string;
+          p_model: string;
+          p_month_start: string;
+          p_monthly_budget_usd: number;
+          p_reserve_usd: number;
+        };
+        Returns: Json;
+      };
+      ai_usage_settle: {
+        Args: {
+          p_cost_usd: number;
+          p_id: string;
+          p_input_tokens: number;
+          p_outcome: string;
+          p_output_tokens: number;
+          p_token: string;
+        };
+        Returns: boolean;
+      };
       apply_lesson_attempts: {
         Args: {
           p_attempts: Json;
@@ -685,6 +773,14 @@ export type Database = {
       apply_reviews: {
         Args: { p_reviews: Json };
         Returns: number;
+      };
+      login_attempt_begin: {
+        Args: { p_email: string };
+        Returns: Json;
+      };
+      login_attempt_clear: {
+        Args: never;
+        Returns: undefined;
       };
     };
     Enums: {

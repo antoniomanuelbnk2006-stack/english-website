@@ -28,7 +28,8 @@ export async function proxy(request: NextRequest) {
   requestHeaders.set('Content-Security-Policy', csp);
 
   const response = await updateSession(request, requestHeaders);
-  // La portada pública es HTML estático con su fuente y sus fotos de fuera: sin la CSP de la app.
+  // La portada pública es HTML estático con su fuente y sus fotos de fuera: no lleva la CSP de
+  // la app, sino la suya, que es fija y sale de next.config.ts.
   const isLanding = response.headers.get('x-middleware-rewrite')?.endsWith(LANDING_HOME);
   if (!isLanding) response.headers.set('Content-Security-Policy', csp);
   return response;

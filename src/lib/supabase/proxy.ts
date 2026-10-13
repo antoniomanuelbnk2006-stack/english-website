@@ -2,6 +2,7 @@ import { createServerClient } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
 import { CONFIRM_PATH } from '@/features/auth/lib/confirm';
 import { env } from '@/lib/env';
+import { SESSION_COOKIE_OPTIONS } from './cookies';
 import type { Database } from './database.types';
 
 const HOME = '/hoy';
@@ -23,6 +24,7 @@ export async function updateSession(
     env.NEXT_PUBLIC_SUPABASE_URL,
     env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
     {
+      cookieOptions: SESSION_COOKIE_OPTIONS,
       cookies: {
         getAll: () => request.cookies.getAll(),
         setAll: (toSet, headers) => {

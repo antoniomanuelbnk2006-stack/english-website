@@ -3,10 +3,11 @@
 import { useState, useTransition, type FormEvent } from 'react';
 import { Button } from '@/components/ui/button';
 import { FieldError, Input, Label } from '@/components/ui/input';
+import { lockWait } from '@/features/auth/lib/lockout';
 import { requestOtp, verifyOtp } from '@/features/auth/server/actions';
 import type { ActionError } from '@/lib/actions';
 import { useT } from '@/lib/i18n/client';
-import type { TranslationKey } from '@/lib/i18n';
+import type { TranslationKey, TranslationVars } from '@/lib/i18n';
 
 const EMAIL_ERRORS: Partial<Record<ActionError, TranslationKey>> = {
   invalid_input: 'login.errorInvalidEmail',
@@ -31,6 +32,20 @@ const EMAIL_CODE_LENGTH = 6;
 const FIXED_CODE_MIN = 4;
 const FIXED_CODE_MAX = 8;
 
+interface FormError {
+  key: TranslationKey;
+  vars?: TranslationVars;
+}
+
+/** El aviso de acceso cerrado por intentos fallidos (ADR-0024), con lo que falta. */
+function lockedError(retryAfterSeconds: number): FormError {
+  const wait = lockWait(retryAfterSeconds);
+  return {
+    key: wait.unit === 'hours' ? 'login.errorLockedHours' : 'login.errorLockedMinutes',
+    vars: { n: wait.n },
+  };
+}
+
 export function LoginForm({ fixedCode = false }: { fixedCode?: boolean }) {
   const t = useT();
   const [email, setEmail] = useState('');
@@ -38,7 +53,7 @@ export function LoginForm({ fixedCode = false }: { fixedCode?: boolean }) {
   const [code, setCode] = useState('');
   /** Con código fijo no se pide ningún correo: se pasa directamente a escribirlo. */
   const [fixed, setFixed] = useState(false);
-  const [error, setError] = useState<TranslationKey | null>(null);
+  const [error, setError] = useState<FormError | null>(null);
   const [pending, startTransition] = useTransition();
 
   function requestEmail() {
@@ -50,7 +65,7 @@ export function LoginForm({ fixedCode = false }: { fixedCode?: boolean }) {
         setSentTo(result.data.email);
         setCode('');
       } else {
-        setError(EMAIL_ERRORS[result.error] ?? 'login.errorInternal');
+        setError({ key: EMAIL_ERRORS[result.error] ?? 'login.errorInternal' });
       }
     });
   }
@@ -64,7 +79,11 @@ export function LoginForm({ fixedCode = false }: { fixedCode?: boolean }) {
       const result = await verifyOtp({ email: sentTo, token: code });
       if (!result.ok) {
         const errors = fixed ? FIXED_CODE_ERRORS : CODE_ERRORS;
-        setError(errors[result.error] ?? 'login.errorInternal');
+        setError(
+          result.retryAfterSeconds === undefined
+            ? { key: errors[result.error] ?? 'login.errorInternal' }
+            : lockedError(result.retryAfterSeconds),
+        );
       }
     });
   }
@@ -72,7 +91,7 @@ export function LoginForm({ fixedCode = false }: { fixedCode?: boolean }) {
   function enterFixedCode() {
     const address = email.trim().toLowerCase();
     if (!/^\S+@\S+\.\S+$/.test(address)) {
-      setError('login.errorInvalidEmail');
+      setError({ key: 'login.errorInvalidEmail' });
       return;
     }
     setError(null);
@@ -110,7 +129,7 @@ export function LoginForm({ fixedCode = false }: { fixedCode?: boolean }) {
             aria-invalid={error ? true : undefined}
             aria-describedby={error ? 'email-error' : undefined}
           />
-          <FieldError id="email-error">{error ? t(error) : null}</FieldError>
+          <FieldError id="email-error">{error ? t(error.key, error.vars) : null}</FieldError>
         </div>
         {fixedCode ? (
           <>
@@ -165,7 +184,7 @@ export function LoginForm({ fixedCode = false }: { fixedCode?: boolean }) {
           aria-invalid={error ? true : undefined}
           aria-describedby={error ? 'code-error' : undefined}
         />
-        <FieldError id="code-error">{error ? t(error) : null}</FieldError>
+        <FieldError id="code-error">{error ? t(error.key, error.vars) : null}</FieldError>
       </div>
       <Button
         type="submit"

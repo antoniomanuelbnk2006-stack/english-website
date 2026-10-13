@@ -356,6 +356,25 @@ test('corrección con IA: feedback ajustado, coste guardado y errores recurrente
       second_ref: '',
     },
   ]);
+  // Y en el registro de uso (ADR-0024), la reserva cerrada con lo que costó de verdad.
+  expect(
+    await queryDatabase(
+      request,
+      `select status, model, input_tokens, output_tokens, cost_usd::float as cost,
+              reserved_usd > cost_usd as reserved_more, settle_hash is null as closed
+       from public.ai_usage`,
+    ),
+  ).toEqual([
+    {
+      status: 'done',
+      model: 'claude-sonnet-5-5',
+      input_tokens: 2500,
+      output_tokens: 2000,
+      cost: 0.025,
+      reserved_more: true,
+      closed: true,
+    },
+  ]);
 
   // Lo que recibió la API: la clave del servidor, el prompt del sistema y el texto como datos.
   const [call] = await aiRequests(request);
@@ -403,12 +422,12 @@ test('el límite diario y el tope mensual cortan la corrección con IA', async (
   request,
 }) => {
   await signIn(page);
+  // Llamadas que ya constan en el registro de uso (las escribe el «superusuario» del test).
   const insert = (n: number, cost: number) =>
     queryDatabase(
       request,
-      `insert into public.writing_submissions
-         (user_id, prompt_id, task_type, target_level, text, word_count, status, review_kind, model, cost_usd)
-       select u.id, 'b2-wri-001', 'essay', 'B2', 'An old submission.', 3, 'pending', 'ai', 'claude-sonnet-5-5', $2
+      `insert into public.ai_usage (user_id, model, status, reserved_usd, cost_usd)
+       select u.id, 'claude-sonnet-5-5', 'done', $2, $2
        from auth.users u, generate_series(1, $1)`,
       [n, cost],
     );
@@ -431,7 +450,7 @@ test('el límite diario y el tope mensual cortan la corrección con IA', async (
   expect(await aiRequests(request)).toEqual([]);
 
   // Tope mensual: una sola corrección, pero con el gasto del mes ya en 5 $.
-  await queryDatabase(request, 'delete from public.writing_submissions');
+  await queryDatabase(request, 'delete from public.ai_usage');
   await insert(1, 5);
   await page.reload();
   await expect(page.getByText('1 de 3 correcciones con IA hoy')).toBeVisible();
@@ -442,9 +461,59 @@ test('el límite diario y el tope mensual cortan la corrección con IA', async (
     body: { error: 'monthly_budget' },
   });
   expect(await aiRequests(request)).toEqual([]);
+  // Lo que se corta no deja rastro: ni entrega ni reserva.
   expect(
-    await queryDatabase(request, 'select count(*)::int as n from public.writing_submissions'),
-  ).toEqual([{ n: 1 }]);
+    await queryDatabase(
+      request,
+      `select (select count(*)::int from public.ai_usage) as usage,
+              (select count(*)::int from public.writing_submissions) as submissions`,
+    ),
+  ).toEqual([{ usage: 1, submissions: 0 }]);
+});
+
+// ADR-0024: el uso de la IA consta en un registro que la sesión del usuario solo puede leer.
+// Antes se contaban las entregas, y quien tuviera la sesión podía borrarlas para seguir gastando.
+test('borrar las entregas no devuelve correcciones: el uso consta en un registro aparte', async ({
+  page,
+  request,
+}) => {
+  await signIn(page);
+  await page.goto('/escribir/b2-wri-001');
+  await setAi(request, 'ok');
+  for (let n = 0; n < 3; n++) {
+    expect((await postFeedback(page, { promptId: 'b2-wri-001', text: ESSAY })).status).toBe(200);
+  }
+
+  await queryDatabase(request, 'delete from public.writing_submissions');
+  expect(await postFeedback(page, { promptId: 'b2-wri-001', text: ESSAY })).toEqual({
+    status: 429,
+    body: { error: 'daily_limit' },
+  });
+  expect(await aiRequests(request)).toHaveLength(3);
+  await page.reload();
+  await expect(page.getByText('3 de 3 correcciones con IA hoy')).toBeVisible();
+
+  // Con la sesión del usuario, por la API, el registro no se puede cambiar ni borrar.
+  // (La sesión va en una cookie, a veces partida en trozos: `…-auth-token.0`, `.1`…)
+  const session = (await page.context().cookies())
+    .filter((cookie) => /-auth-token(\.\d+)?$/.test(cookie.name))
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map((cookie) => cookie.value)
+    .join('');
+  const { access_token: token } = JSON.parse(
+    Buffer.from(session.replace(/^base64-/, ''), 'base64url').toString('utf8'),
+  ) as { access_token: string };
+  const headers = { Authorization: `Bearer ${token}`, Prefer: 'return=representation' };
+  const api = `${E2E.emulatorUrl}/rest/v1/ai_usage`;
+  const seen = await request.get(`${api}?select=status`, { headers });
+  expect(await seen.json()).toHaveLength(3);
+  const patched = await request.patch(api, { headers, data: { cost_usd: 0, status: 'error' } });
+  expect(await patched.json()).toEqual([]);
+  const deleted = await request.delete(api, { headers });
+  expect(await deleted.json()).toEqual([]);
+  expect(
+    await queryDatabase(request, `select status, cost_usd::float as cost from public.ai_usage`),
+  ).toEqual(Array.from({ length: 3 }, () => ({ status: 'done', cost: 0.025 })));
 });
 
 test('si la IA se niega, se corta o falla, el texto no se pierde y se explica qué ha pasado', async ({
@@ -487,6 +556,18 @@ test('si la IA se niega, se corta o falla, el texto no se pierde y se explica qu
   await expect(page.getByText('1 de 3 correcciones con IA hoy')).toBeVisible();
   expect((await attempts())[2]).toEqual({ status: 'error', reason: 'api', cost: 0 });
   await expect(editor(page)).toHaveValue(ESSAY);
+
+  // Lo mismo consta en el registro de uso, que es de donde salen los límites.
+  expect(
+    await queryDatabase(
+      request,
+      `select status, reason, cost_usd::float as cost from public.ai_usage order by created_at`,
+    ),
+  ).toEqual([
+    { status: 'error', reason: 'refusal', cost: 0.025 },
+    { status: 'error', reason: 'max_tokens', cost: 0.085 },
+    { status: 'error', reason: 'api', cost: 0 },
+  ]);
 
   // Los envíos fallidos no aparecen en el historial.
   await page.goto('/escribir/historial');

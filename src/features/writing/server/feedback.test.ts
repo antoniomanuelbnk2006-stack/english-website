@@ -1,8 +1,8 @@
 import type Anthropic from '@anthropic-ai/sdk';
 import { describe, expect, it, vi } from 'vitest';
 import { feedbackErrorOf } from '@/features/writing/lib/api';
-import type { Attempt } from '@/features/writing/lib/limits';
-import { usageFrom } from '@/features/writing/lib/limits';
+import type { Attempt, FailureReason } from '@/features/writing/lib/limits';
+import { checkLimits, usageFrom } from '@/features/writing/lib/limits';
 import type { WritingFeedbackOutput } from '@/features/writing/lib/schema';
 import { WRITING_SYSTEM_PROMPT } from '@/lib/ai/prompts/writing';
 import type { WritingPrompt } from '@/lib/content/writing-schema';
@@ -80,10 +80,53 @@ interface Row {
   costUsd: number;
 }
 
-function memoryStore(attempts: Attempt[] | null = []) {
+/** Una fila del registro de uso (`ai_usage`). */
+interface Usage {
+  id: string;
+  status: 'pending' | 'done' | 'error';
+  reason: FailureReason | null;
+  reservedUsd: number;
+  costUsd: number;
+}
+
+/**
+ * Doble del almacén. `previous` son las llamadas que ya constan en el registro (`null`: la
+ * base de datos falla). Los límites los aplica con las reglas de `lib/limits`, que son las
+ * mismas que sigue `ai_usage_reserve` en la base de datos.
+ */
+function memoryStore(previous: Attempt[] | null = []) {
   const rows: Row[] = [];
+  const ledger: Usage[] = [];
   const store: FeedbackStore = {
-    attemptsSince: vi.fn(async () => attempts),
+    reserve: vi.fn<FeedbackStore['reserve']>(async (request) => {
+      if (!previous) return { ok: false, error: 'db' };
+      const month = previous.filter((attempt) => new Date(attempt.createdAt) >= request.monthStart);
+      const state = checkLimits({
+        ...usageFrom(month, request.dayStart),
+        dailyLimit: request.limits.daily,
+        monthlyBudgetUsd: request.limits.monthlyUsd,
+      });
+      if (state !== 'ok') return { ok: false, error: state };
+      const id = `use-${ledger.length + 1}`;
+      ledger.push({
+        id,
+        status: 'pending',
+        reason: null,
+        reservedUsd: request.reserveUsd,
+        costUsd: 0,
+      });
+      return { ok: true, reservation: { id, token: `token-${id}` } };
+    }),
+    settle: vi.fn(async (reservation, data) => {
+      const usage = ledger.find((u) => u.id === reservation.id && u.status === 'pending');
+      if (!usage || reservation.token !== `token-${usage.id}`) return false;
+      Object.assign(
+        usage,
+        data.outcome === 'done' ? { status: 'done' } : { status: 'error', reason: data.outcome },
+        { costUsd: data.costUsd },
+      );
+      return true;
+    }),
     create: vi.fn(async (submission) => {
       const id = `row-${rows.length + 1}`;
       rows.push({
@@ -110,7 +153,7 @@ function memoryStore(attempts: Attempt[] | null = []) {
       });
     }),
   };
-  return { store, rows };
+  return { store, rows, ledger };
 }
 
 const model = (reply: ModelReply): FeedbackModel & { assess: ReturnType<typeof vi.fn> } => ({
@@ -137,7 +180,7 @@ const attempt = (over: Partial<Attempt> = {}): Attempt => ({
 
 describe('requestFeedback', () => {
   it('corrige, ajusta la respuesta y la guarda con su coste y la versión del prompt', async () => {
-    const { store, rows } = memoryStore();
+    const { store, rows, ledger } = memoryStore();
     const m = model({ ok: true, output: OUTPUT, usage: USAGE });
     const result = await requestFeedback(deps(store, m), INPUT);
 
@@ -160,6 +203,36 @@ describe('requestFeedback', () => {
         costUsd: 0.025,
       },
     ]);
+    // En el registro de uso, la reserva queda cerrada con lo que costó de verdad.
+    expect(ledger).toEqual([
+      {
+        id: 'use-1',
+        status: 'done',
+        reason: null,
+        reservedUsd: expect.any(Number),
+        costUsd: 0.025,
+      },
+    ]);
+  });
+
+  it('antes de llamar aparta lo máximo que puede costar: la salida entera y la entrada', async () => {
+    const { store, ledger } = memoryStore();
+    const m = model({ ok: true, output: OUTPUT, usage: USAGE });
+    await requestFeedback(deps(store, m), INPUT);
+    // 8.000 tokens de salida con Sonnet son 0,08 $; la entrada añade unos céntimos.
+    expect(ledger[0]!.reservedUsd).toBeGreaterThan(0.08);
+    expect(ledger[0]!.reservedUsd).toBeLessThan(0.1);
+    expect(vi.mocked(store.reserve).mock.invocationCallOrder[0]).toBeLessThan(
+      m.assess.mock.invocationCallOrder[0]!,
+    );
+
+    // Un texto más largo aparta más.
+    const long = memoryStore();
+    await requestFeedback(deps(long.store, model({ ok: true, output: OUTPUT, usage: USAGE })), {
+      ...INPUT,
+      text: TEXT.repeat(50),
+    });
+    expect(long.ledger[0]!.reservedUsd).toBeGreaterThan(ledger[0]!.reservedUsd);
   });
 
   it('manda al modelo la consigna del repositorio y las fichas de gramática', async () => {
@@ -178,7 +251,7 @@ describe('requestFeedback', () => {
 
   it('el límite diario corta antes de llamar y sin registrar nada', async () => {
     const today = Array.from({ length: 10 }, () => attempt());
-    const { store, rows } = memoryStore(today);
+    const { store, rows, ledger } = memoryStore(today);
     const m = model({ ok: true, output: OUTPUT, usage: USAGE });
     expect(await requestFeedback(deps(store, m), INPUT)).toEqual({
       ok: false,
@@ -186,6 +259,7 @@ describe('requestFeedback', () => {
     });
     expect(m.assess).not.toHaveBeenCalled();
     expect(rows).toEqual([]);
+    expect(ledger).toEqual([]);
   });
 
   it('con nueve correcciones hoy, la décima todavía pasa', async () => {
@@ -213,7 +287,7 @@ describe('requestFeedback', () => {
   it('el tope mensual corta antes de llamar', async () => {
     // 200 correcciones de 0,025 $ a lo largo del mes: 5 $ justos.
     const month = Array.from({ length: 200 }, () => attempt({ createdAt: '2026-10-02T08:00:00Z' }));
-    const { store, rows } = memoryStore(month);
+    const { store, rows, ledger } = memoryStore(month);
     const m = model({ ok: true, output: OUTPUT, usage: USAGE });
     expect(await requestFeedback(deps(store, m), INPUT)).toEqual({
       ok: false,
@@ -221,17 +295,25 @@ describe('requestFeedback', () => {
     });
     expect(m.assess).not.toHaveBeenCalled();
     expect(rows).toEqual([]);
+    expect(ledger).toEqual([]);
   });
 
-  it('el mes se pide desde su primer día en Madrid', async () => {
+  it('los límites se piden para el día y el mes de Madrid', async () => {
     const { store } = memoryStore();
     await requestFeedback(deps(store, model({ ok: true, output: OUTPUT, usage: USAGE })), INPUT);
-    // El 1 de octubre a las 00:00 de Madrid (UTC+2) son las 22:00 UTC del 30 de septiembre.
-    expect(store.attemptsSince).toHaveBeenCalledWith(new Date('2026-09-30T22:00:00Z'));
+    // El 9 de octubre a las 00:00 de Madrid (UTC+2) son las 22:00 UTC del día 8, y el 1 de
+    // octubre, las 22:00 UTC del 30 de septiembre.
+    expect(store.reserve).toHaveBeenCalledWith({
+      model: 'claude-sonnet-5-5',
+      reserveUsd: expect.any(Number),
+      limits: { daily: 10, monthlyUsd: 5 },
+      dayStart: new Date('2026-10-08T22:00:00Z'),
+      monthStart: new Date('2026-09-30T22:00:00Z'),
+    });
   });
 
   it('si el modelo se niega, queda como error con su coste y no se entrega nada', async () => {
-    const { store, rows } = memoryStore();
+    const { store, rows, ledger } = memoryStore();
     const usage = { input_tokens: 2500, output_tokens: 20 };
     const result = await requestFeedback(
       deps(store, model({ ok: false, reason: 'refusal', usage })),
@@ -243,10 +325,11 @@ describe('requestFeedback', () => {
       feedback: { error: 'refusal' },
       costUsd: 0.0052,
     });
+    expect(ledger[0]).toMatchObject({ status: 'error', reason: 'refusal', costUsd: 0.0052 });
   });
 
   it('si la respuesta se corta por max_tokens, error controlado', async () => {
-    const { store, rows } = memoryStore();
+    const { store, rows, ledger } = memoryStore();
     const usage = { input_tokens: 2500, output_tokens: 8000 };
     const result = await requestFeedback(
       deps(store, model({ ok: false, reason: 'max_tokens', usage })),
@@ -258,39 +341,60 @@ describe('requestFeedback', () => {
       feedback: { error: 'max_tokens' },
       costUsd: 0.085,
     });
+    expect(ledger[0]).toMatchObject({ status: 'error', reason: 'max_tokens', costUsd: 0.085 });
   });
 
   it('si la API falla, queda como error sin coste', async () => {
-    const { store, rows } = memoryStore();
+    const { store, rows, ledger } = memoryStore();
     const result = await requestFeedback(
       deps(store, model({ ok: false, reason: 'api', usage: null })),
       INPUT,
     );
     expect(result).toEqual({ ok: false, error: 'ai_failed' });
     expect(rows[0]).toMatchObject({ status: 'error', feedback: { error: 'api' }, costUsd: 0 });
+    // Un fallo de la API gasta un intento (queda como error), pero no dinero.
+    expect(ledger[0]).toMatchObject({ status: 'error', reason: 'api', costUsd: 0 });
   });
 
-  it('si falla la base de datos al leer el uso o al registrar, no se llama al modelo', async () => {
+  it('si falla la base de datos al reservar o al registrar, no se llama al modelo', async () => {
     const m = model({ ok: true, output: OUTPUT, usage: USAGE });
     expect(await requestFeedback(deps(memoryStore(null).store, m), INPUT)).toEqual({
       ok: false,
       error: 'db',
     });
 
-    const { store } = memoryStore();
+    const { store, ledger } = memoryStore();
     store.create = vi.fn(async () => null);
     expect(await requestFeedback(deps(store, m), INPUT)).toEqual({ ok: false, error: 'db' });
     expect(m.assess).not.toHaveBeenCalled();
+    // La reserva no se queda abierta: se cierra sin coste.
+    expect(ledger).toEqual([
+      { id: 'use-1', status: 'error', reason: 'api', reservedUsd: expect.any(Number), costUsd: 0 },
+    ]);
   });
 
   it('si no se puede guardar la corrección, se entrega igualmente (ya está pagada)', async () => {
-    const { store } = memoryStore();
+    const { store, ledger } = memoryStore();
     store.finish = vi.fn(async () => false);
     const result = await requestFeedback(
       deps(store, model({ ok: true, output: OUTPUT, usage: USAGE })),
       INPUT,
     );
     expect(result).toMatchObject({ ok: true, saved: false });
+    // El gasto sí consta, aunque la entrega no se haya guardado.
+    expect(ledger[0]).toMatchObject({ status: 'done', costUsd: 0.025 });
+  });
+
+  it('si no se puede cerrar la reserva, sigue contando por su importe máximo', async () => {
+    const { store, ledger } = memoryStore();
+    store.settle = vi.fn(async () => false);
+    const result = await requestFeedback(
+      deps(store, model({ ok: true, output: OUTPUT, usage: USAGE })),
+      INPUT,
+    );
+    expect(result).toMatchObject({ ok: true, saved: true });
+    expect(ledger[0]).toMatchObject({ status: 'pending', costUsd: 0 });
+    expect(ledger[0]!.reservedUsd).toBeGreaterThan(0.08);
   });
 });
 

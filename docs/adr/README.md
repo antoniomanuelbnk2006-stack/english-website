@@ -27,6 +27,7 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0021](0021-una-sola-direccion-y-codigo-fijo-primero.md) | Una sola dirección para la web (`SITE_URL`) y, con código fijo, el código por delante del correo | Aceptada |
 | [0022](0022-diseno-de-la-presentacion-en-toda-la-web.md) | La presentación de Señal como portada pública y su lenguaje visual (pastillas, esquinas grandes, entradas animadas) en toda la app | Aceptada |
 | [0023](0023-paleta-y-tipografia-de-la-presentacion.md) | Paleta (crema, azul marino, verde) y tipografía (Fraunces, Wix Madefor Text) de la presentación en toda la web | Aceptada |
+| [0024](0024-bloqueo-de-acceso-y-registro-de-la-ia.md) | Bloqueo por intentos de acceso y registro del uso de la IA en tablas que la sesión solo puede leer | Aceptada |
 
 Plantilla:
 

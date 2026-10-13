@@ -26,6 +26,48 @@ test('con el email permitido y el código se entra y se ve Hoy', async ({ page, 
   expect(errors).toEqual([]);
 });
 
+test('las cookies de la sesión no se pueden leer desde la página ni viajan sin cifrar', async ({
+  page,
+}) => {
+  await signIn(page);
+  const session = (await page.context().cookies()).filter((cookie) =>
+    cookie.name.includes('-auth-token'),
+  );
+  expect(session.length).toBeGreaterThan(0);
+  for (const cookie of session) {
+    expect(cookie, cookie.name).toMatchObject({ httpOnly: true, secure: true, sameSite: 'Lax' });
+  }
+  expect(await page.evaluate(() => document.cookie)).not.toContain('auth-token');
+
+  // Y siguen sirviendo para lo que son: la sesión aguanta una recarga.
+  await page.reload();
+  await expect(page).toHaveURL(/\/hoy$/);
+});
+
+// La presentación tiene una CSP fija (next.config.ts) y la app la suya, con nonce (src/proxy.ts).
+// Cada respuesta lleva una sola: la de la presentación no se cuela en las pantallas de la app.
+test('con sesión, la app lleva su CSP con nonce y la presentación la suya', async ({ page }) => {
+  await signIn(page);
+  const cspOf = async (path: string) => {
+    const response = await page.request.get(path, { maxRedirects: 0 });
+    return response
+      .headersArray()
+      .filter((header) => header.name.toLowerCase() === 'content-security-policy')
+      .map((header) => header.value);
+  };
+
+  // «/» con sesión solo redirige a /hoy, y esa respuesta ya es de la app.
+  for (const path of ['/', '/hoy', '/escribir']) {
+    const csp = await cspOf(path);
+    expect(csp, path).toHaveLength(1);
+    expect(csp[0], path).toMatch(/script-src 'self' 'nonce-[A-Za-z0-9+/=]+' 'strict-dynamic'/);
+  }
+  const landing = await cspOf('/landing/index.html');
+  expect(landing).toHaveLength(1);
+  expect(landing[0]).toContain(`script-src 'self';`);
+  expect(landing[0]).toContain(`frame-ancestors 'none'`);
+});
+
 test('con sesión, /login lleva a Hoy; al cerrar sesión se vuelve al acceso', async ({ page }) => {
   await signIn(page);
   await page.goto('/login');

@@ -35,9 +35,11 @@ if (nav && button) {
   document.addEventListener('keydown', (e) => e.key === 'Escape' && toggle(false));
 }
 
-// El formulario no tiene servidor: prepara un correo con lo escrito.
+// El formulario no tiene servidor: prepara un correo con lo escrito, dirigido a la dirección de
+// contacto que la propia página enseña en el pie (así solo está escrita en un sitio).
 const form = document.querySelector('#solicitud');
-if (form) {
+const contact = document.querySelector('.foot a[href^="mailto:"]');
+if (form && contact) {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     const data = new FormData(form);
@@ -50,6 +52,7 @@ if (form) {
     ].join('\n');
     const note = document.querySelector('#nota');
     if (note) note.textContent = 'Se abrirá tu programa de correo con el mensaje preparado.';
-    window.location.href = `mailto:hola@senal-english.com?subject=${encodeURIComponent('Solicitud de información')}&body=${encodeURIComponent(body)}`;
+    const address = contact.getAttribute('href').split('?')[0];
+    window.location.href = `${address}?subject=${encodeURIComponent('Solicitud de información')}&body=${encodeURIComponent(body)}`;
   });
 }
