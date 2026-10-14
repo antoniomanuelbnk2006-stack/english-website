@@ -354,7 +354,8 @@ if (form && contact) {
           label.textContent = when;
           const text = document.createElement('span');
           text.textContent = what;
-          item.append(label, text);
+          // El espacio no se ve (es una rejilla), pero así un lector de pantalla no junta las palabras.
+          item.append(label, ' ', text);
           return item;
         }),
       );

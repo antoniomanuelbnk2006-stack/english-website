@@ -142,7 +142,7 @@ test('sin acercamiento, «Crea tu plan» va en su sitio y lleva paso a paso al r
   );
   // Los 20 minutos, repartidos sin perder ninguno; en japonés A1, una parte para la escritura.
   await expect(summary.getByRole('heading', { name: 'Tus 20 minutos' })).toBeVisible();
-  await expect(said('reparto').locator('li').first()).toContainText('Kana y kanji');
+  await expect(said('reparto').locator('li').first()).toHaveText('4 min Kana y kanji');
   const total = await said('reparto')
     .locator('.plan-when')
     .allTextContents()
