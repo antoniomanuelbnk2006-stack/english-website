@@ -58,6 +58,7 @@
         <tbody>
           <tr><th scope="row"><code>sb-…-auth-token</code></th><td>Mantiene tu sesión iniciada después de entrar. Solo existe si entras en la app.</td><td>Si aceptas las de preferencias, hasta que cierras sesión (como máximo, 400 días). Si no, hasta que cierras el navegador.</td></tr>
           <tr><th scope="row"><code>sb-…-code-verifier</code></th><td>Comprueba que el enlace de acceso que te llega por correo se abre en el mismo navegador que lo pidió. Solo existe si pides ese correo.</td><td>Hasta que entras con el enlace; como máximo, 400 días.</td></tr>
+          <tr><th scope="row"><code>senal_next</code></th><td>Solo si pides el correo porque has olvidado la contraseña: recuerda que, al entrar con él, hay que llevarte a Ajustes para poner una nueva.</td><td>Hasta que entras; como máximo, 1 hora.</td></tr>
           <tr><th scope="row"><code>senal_consent</code></th><td>Recuerda lo que has decidido sobre las cookies, para no preguntártelo en cada visita.</td><td>6 meses. Después se vuelve a preguntar.</td></tr>
         </tbody>
       </table>

@@ -117,7 +117,7 @@ test('al rechazar no se guardan preferencias: el tema y el idioma salen del perf
   await page.goto('/ajustes');
   await page.getByLabel('Tema', { exact: true }).selectOption('light');
   await page.getByLabel('Idioma de la interfaz').selectOption('en');
-  await page.getByRole('button', { name: 'Guardar' }).click();
+  await page.getByRole('button', { name: 'Guardar', exact: true }).click();
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   expect(await cookie(page, 'senal_theme')).toBeUndefined();
@@ -148,7 +148,7 @@ test('sin decidir tampoco se guardan, y el aviso sigue ahí', async ({ page }) =
 
   await page.goto('/ajustes');
   await page.getByLabel('Tema', { exact: true }).selectOption('light');
-  await page.getByRole('button', { name: 'Guardar' }).click();
+  await page.getByRole('button', { name: 'Guardar', exact: true }).click();
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
   expect(await cookie(page, 'senal_theme')).toBeUndefined();
   expect(await cookie(page, 'senal_locale')).toBeUndefined();
@@ -175,7 +175,7 @@ test('al aceptar se guardan, y al cambiar de opinión en Ajustes se borran', asy
 
   await page.goto('/ajustes');
   await page.getByLabel('Tema', { exact: true }).selectOption('light');
-  await page.getByRole('button', { name: 'Guardar' }).click();
+  await page.getByRole('button', { name: 'Guardar', exact: true }).click();
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
   expect(await cookie(page, 'senal_theme')).toBe('light');
   expect(await cookie(page, 'senal_locale')).toBe('es');
@@ -270,6 +270,7 @@ test('la política de cookies es pública, dice lo que hay y deja cambiar la dec
   for (const name of [
     'sb-…-auth-token',
     'sb-…-code-verifier',
+    'senal_next',
     'senal_consent',
     'senal_theme',
     'senal_locale',

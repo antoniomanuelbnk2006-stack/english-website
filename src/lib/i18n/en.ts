@@ -59,6 +59,29 @@ export const en: Dictionary = {
     savedNecessary: 'Done: only necessary cookies are used.',
     savedAll: 'Done: preference cookies are used too.',
   },
+  passwordSettings: {
+    title: 'Password',
+    withoutCurrent:
+      'You have just signed in with the email, so you can set a new password without typing the old one. It must be 12 characters or longer.',
+    withCurrent:
+      'To change it, type your current one. If you do not remember it, sign out and sign in with the email: for 10 minutes you can set a new one without it. It must be 12 characters or longer.',
+    currentLabel: 'Current password',
+    newLabel: 'New password',
+    confirmLabel: 'Repeat the new password',
+    save: 'Save the password',
+    saving: 'Saving…',
+    saved: 'Password saved. Next time you can sign in with it.',
+    errorShort: 'The new password must be 12 characters or longer.',
+    errorMismatch: 'The two new passwords do not match.',
+    errorCurrentMissing: 'Type your current password.',
+    errorCurrentRequired:
+      'More than 10 minutes have passed since you signed in with the email. Type your current password, or sign out and sign in with the email again.',
+    errorWrongCurrent: 'The current password is not correct.',
+    errorSame: 'That is already your password. Type a different one.',
+    errorLocked:
+      'Too many failed attempts. Wait a while, or sign out and sign in with the email to set it without the current one.',
+    errorInternal: 'It could not be saved. Try again.',
+  },
   login: {
     title: 'Sign in to Señal',
     subtitle: 'We send you an email with a code and a link to sign in. No passwords.',
@@ -82,6 +105,9 @@ export const en: Dictionary = {
     privacyAccept: 'I have read and accept the',
     privacyLink: 'privacy policy',
     errorPrivacy: 'To sign in, accept the privacy policy.',
+    forgotPassword: 'Forgotten your password?',
+    forgotSent:
+      'When you sign in with that email you will go to Settings, where you can set a new password without the old one.',
     passwordPrompt: 'Type your password to sign in as {email}.',
     passwordLabel: 'Password',
     errorInvalidPassword: 'The password has 12 characters or more.',

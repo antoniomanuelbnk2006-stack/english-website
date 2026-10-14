@@ -58,6 +58,29 @@ export const es = {
     savedNecessary: 'Hecho: solo se usan las cookies necesarias.',
     savedAll: 'Hecho: también se usan las cookies de preferencias.',
   },
+  passwordSettings: {
+    title: 'Contraseña',
+    withoutCurrent:
+      'Has entrado con el correo hace un momento, así que puedes poner una contraseña nueva sin escribir la anterior. Tiene que tener 12 caracteres o más.',
+    withCurrent:
+      'Para cambiarla, escribe la actual. Si no la recuerdas, sal y entra con el correo: durante 10 minutos podrás poner una nueva sin ella. Tiene que tener 12 caracteres o más.',
+    currentLabel: 'Contraseña actual',
+    newLabel: 'Contraseña nueva',
+    confirmLabel: 'Repite la contraseña nueva',
+    save: 'Guardar la contraseña',
+    saving: 'Guardando…',
+    saved: 'Contraseña guardada. La próxima vez puedes entrar con ella.',
+    errorShort: 'La contraseña nueva tiene que tener 12 caracteres o más.',
+    errorMismatch: 'Las dos contraseñas nuevas no coinciden.',
+    errorCurrentMissing: 'Escribe tu contraseña actual.',
+    errorCurrentRequired:
+      'Han pasado más de 10 minutos desde que entraste con el correo. Escribe tu contraseña actual, o sal y vuelve a entrar con el correo.',
+    errorWrongCurrent: 'La contraseña actual no es correcta.',
+    errorSame: 'Esa ya es tu contraseña. Escribe una distinta.',
+    errorLocked:
+      'Demasiados intentos fallidos. Espera un rato, o sal y entra con el correo para ponerla sin la actual.',
+    errorInternal: 'No se ha podido guardar. Inténtalo de nuevo.',
+  },
   login: {
     title: 'Entra en Señal',
     subtitle: 'Te enviamos un correo con un código y un enlace para entrar. Sin contraseñas.',
@@ -81,6 +104,9 @@ export const es = {
     privacyAccept: 'He leído y acepto la',
     privacyLink: 'política de privacidad',
     errorPrivacy: 'Para entrar, acepta la política de privacidad.',
+    forgotPassword: '¿Has olvidado la contraseña?',
+    forgotSent:
+      'Al entrar con ese correo irás a Ajustes, donde podrás poner una contraseña nueva sin la anterior.',
     passwordPrompt: 'Escribe tu contraseña para entrar como {email}.',
     passwordLabel: 'Contraseña',
     errorInvalidPassword: 'La contraseña tiene 12 caracteres o más.',

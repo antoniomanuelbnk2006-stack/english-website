@@ -28,6 +28,14 @@ const LOGIN_CODE_PEPPER = process.env.LOGIN_CODE_PEPPER || undefined;
 const TEST_AUTH_CODE = 'e2e-auth-code-0001';
 /** Email que ha pedido el correo de acceso y aún no ha canjeado su enlace. */
 let pendingLink: string | null = null;
+/**
+ * Contraseñas cambiadas desde la app (ADR-0031), por usuario: lo que Supabase recibe, ya derivado.
+ * Sin entrada, vale la de los tests. Viven en memoria: al reiniciar el emulador vuelve la de siempre.
+ */
+const passwords = new Map<string, string>();
+/** Cómo se ha entrado en una sesión: el `amr` de los tokens de Supabase. */
+type Amr = { method: string; timestamp: number }[];
+const amrFor = (method: string): Amr => [{ method, timestamp: Math.floor(Date.now() / 1000) }];
 const JWT_SECRET = 'emulador-de-supabase-solo-para-tests';
 /** Carpeta donde guardar los datos; sin ella, todo vive en memoria (los tests). */
 const DATA_DIR = process.env.EMULATOR_DATA_DIR || undefined;
@@ -55,7 +63,7 @@ function signJwt(payload: Record<string, unknown>): string {
 function verifyJwt(
   token: string,
   use: 'access' | 'refresh' = 'access',
-): { sub: string; email: string } | null {
+): { sub: string; email: string; amr?: Amr } | null {
   const [head, body, signature] = token.split('.');
   if (!head || !body || !signature) return null;
   const expected = createHmac('sha256', JWT_SECRET).update(`${head}.${body}`).digest();
@@ -67,11 +75,12 @@ function verifyJwt(
       email?: string;
       exp?: number;
       token_use?: string;
+      amr?: Amr;
     };
     if (!payload.sub || !payload.email || (payload.exp ?? 0) < Date.now() / 1000) return null;
     // Un token de renovación no sirve para llamar a la API, ni uno de acceso para renovar.
     if ((payload.token_use ?? 'access') !== use) return null;
-    return { sub: payload.sub, email: payload.email };
+    return { sub: payload.sub, email: payload.email, amr: payload.amr };
   } catch {
     return null;
   }
@@ -157,7 +166,8 @@ function userJson(user: { id: string; email: string }) {
   };
 }
 
-function sessionJson(user: { id: string; email: string }) {
+/** Una sesión nueva. `amr` dice cómo se entró; al renovarla se conserva el de la sesión. */
+function sessionJson(user: { id: string; email: string }, amr: Amr) {
   const now = Math.floor(Date.now() / 1000);
   // Firmado y sin estado: sigue valiendo aunque el emulador se reinicie (la demo).
   const refresh = signJwt({
@@ -167,6 +177,7 @@ function sessionJson(user: { id: string; email: string }) {
     iat: now,
     exp: now + REFRESH_TTL_S,
     jti: randomUUID(),
+    amr,
   });
   return {
     access_token: signJwt({
@@ -178,6 +189,7 @@ function sessionJson(user: { id: string; email: string }) {
       exp: now + 3600,
       session_id: randomUUID(),
       is_anonymous: false,
+      amr,
     }),
     token_type: 'bearer',
     expires_in: 3600,
@@ -188,6 +200,13 @@ function sessionJson(user: { id: string; email: string }) {
 }
 
 // ───────────── GoTrue ─────────────
+/** La contraseña de un usuario tal como la tiene Supabase: la cambiada o, si no, la de los tests. */
+function passwordOf(user: { id: string; email: string }): string | null {
+  const changed = passwords.get(user.id);
+  if (changed) return changed;
+  return LOGIN_CODE_PEPPER ? derivedPassword(LOGIN_CODE_PEPPER, user.email, TEST_PASSWORD) : null;
+}
+
 async function handleAuth(
   req: IncomingMessage,
   url: URL,
@@ -212,14 +231,11 @@ async function handleAuth(
     url.searchParams.get('grant_type') === 'password'
   ) {
     const user = await userByEmail(String(body.email ?? ''));
-    const expected =
-      user && LOGIN_CODE_PEPPER
-        ? derivedPassword(LOGIN_CODE_PEPPER, user.email, TEST_PASSWORD)
-        : null;
+    const expected = user ? passwordOf(user) : null;
     if (!user || expected === null || body.password !== expected) {
       throw new HttpError(400, { code: 'invalid_credentials', msg: 'Invalid login credentials' });
     }
-    return { status: 200, json: sessionJson(user) };
+    return { status: 200, json: sessionJson(user, amrFor('password')) };
   }
 
   // El enlace del correo: Supabase vuelve con un código y la app lo canjea junto con la mitad
@@ -234,7 +250,7 @@ async function handleAuth(
       throw new HttpError(400, { code: 'flow_state_not_found', msg: 'invalid flow state' });
     }
     pendingLink = null;
-    return { status: 200, json: sessionJson(user) };
+    return { status: 200, json: sessionJson(user, amrFor('magiclink')) };
   }
 
   if (route === '/verify' && req.method === 'POST') {
@@ -242,7 +258,7 @@ async function handleAuth(
     if (!user || body.token !== TEST_OTP) {
       throw new HttpError(403, { code: 'otp_expired', msg: 'Token has expired or is invalid' });
     }
-    return { status: 200, json: sessionJson(user) };
+    return { status: 200, json: sessionJson(user, amrFor('otp')) };
   }
 
   if (route === '/token' && req.method === 'POST') {
@@ -251,7 +267,7 @@ async function handleAuth(
     if (!user) {
       throw new HttpError(400, { code: 'refresh_token_not_found', msg: 'Invalid Refresh Token' });
     }
-    return { status: 200, json: sessionJson(user) };
+    return { status: 200, json: sessionJson(user, claims?.amr ?? []) };
   }
 
   if (route === '/user' && req.method === 'GET') {
@@ -265,6 +281,31 @@ async function handleAuth(
         code: 'user_not_found',
         msg: 'User from sub claim in JWT does not exist',
       });
+    }
+    return { status: 200, json: userJson(user) };
+  }
+
+  // Cambiar la contraseña con la sesión (ADR-0031). Como GoTrue, no admite la misma que ya tiene.
+  if (route === '/user' && req.method === 'PUT') {
+    const claims = verifyJwt(bearer(req));
+    if (!claims) throw new HttpError(401, { code: 'bad_jwt', msg: 'invalid JWT' });
+    const user = await userById(claims.sub);
+    if (!user) {
+      throw new HttpError(403, {
+        code: 'user_not_found',
+        msg: 'User from sub claim in JWT does not exist',
+      });
+    }
+    if (typeof body.password === 'string') {
+      if (body.password === passwordOf(user)) {
+        // `error_code`: así lo lee supabase-js cuando la respuesta no dice la versión de la API.
+        throw new HttpError(422, {
+          code: 'same_password',
+          error_code: 'same_password',
+          msg: 'New password should be different from the old password.',
+        });
+      }
+      passwords.set(user.id, body.password);
     }
     return { status: 200, json: userJson(user) };
   }
@@ -552,6 +593,7 @@ async function handleTestControl(
     // Borra y recrea al usuario: todos sus datos desaparecen en cascada.
     await testDb.db.query('delete from auth.users');
     anthropic.reset();
+    passwords.clear();
     const id = await testDb.createUser(TEST_EMAIL);
     // Los tests parten de un usuario que ya eligió nivel (B1); el primer acceso real, no:
     // ese flujo tiene su propio test, que borra el nivel antes de entrar.

@@ -55,6 +55,8 @@ export function LoginForm({ withPassword = false }: { withPassword?: boolean }) 
   const [secret, setSecret] = useState('');
   /** Con contraseña no se pide ningún correo: se pasa directamente a escribirla. */
   const [typingPassword, setTypingPassword] = useState(false);
+  /** El correo se ha pedido por haber olvidado la contraseña (ADR-0031). */
+  const [forgot, setForgot] = useState(false);
   const [error, setError] = useState<FormError | null>(null);
   /** La política de privacidad se acepta en cada acceso (ADR-0030): la casilla empieza sin marcar. */
   const [privacy, setPrivacy] = useState(false);
@@ -86,6 +88,24 @@ export function LoginForm({ withPassword = false }: { withPassword?: boolean }) 
       const result = await requestOtp({ email, privacy });
       if (result.ok) {
         setTypingPassword(false);
+        setForgot(false);
+        setSentTo(result.data.email);
+        setCode('');
+      } else {
+        setError({ key: EMAIL_ERRORS[result.error] ?? 'login.errorInternal' });
+      }
+    });
+  }
+
+  /** Pide el correo de siempre; al entrar con él se va a Ajustes a poner una nueva (ADR-0031). */
+  function forgotPassword() {
+    if (!sentTo) return;
+    setError(null);
+    startTransition(async () => {
+      const result = await requestOtp({ email: sentTo, privacy, forgotPassword: true });
+      if (result.ok) {
+        setTypingPassword(false);
+        setForgot(true);
         setSentTo(result.data.email);
         setCode('');
       } else {
@@ -260,6 +280,9 @@ export function LoginForm({ withPassword = false }: { withPassword?: boolean }) 
         <Button type="submit" size="lg" disabled={pending || secret === ''}>
           {pending ? t('login.verifying') : t('login.verify')}
         </Button>
+        <Button variant="ghost" disabled={pending} onClick={forgotPassword}>
+          {t('login.forgotPassword')}
+        </Button>
         {changeEmail}
       </form>
     );
@@ -269,6 +292,7 @@ export function LoginForm({ withPassword = false }: { withPassword?: boolean }) 
     <form onSubmit={handleCode} className="flex flex-col gap-4" noValidate>
       <p className="text-body-sm text-muted" role="status">
         {t('login.codeSent', { email: sentTo })}
+        {forgot ? ` ${t('login.forgotSent')}` : null}
       </p>
       <div className="flex flex-col gap-2">
         <Label htmlFor="code">{t('login.codeLabel')}</Label>

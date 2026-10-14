@@ -5,6 +5,12 @@ import { redirect } from 'next/navigation';
 import { z } from 'zod';
 import { confirmUrl } from '@/features/auth/lib/confirm';
 import { derivedPassword, Password } from '@/features/auth/lib/password';
+import { isRateLimited, refuseAttempt, type SignInResult } from '@/features/auth/server/attempts';
+import {
+  PASSWORD_SETTINGS,
+  rememberNextStep,
+  takeNextStep,
+} from '@/features/auth/server/next-step';
 import { fail, ok, type ActionResult } from '@/lib/actions';
 import { env } from '@/lib/env';
 import { createClient, type SupabaseServerClient } from '@/lib/supabase/server';
@@ -14,7 +20,12 @@ const Email = z.string().trim().toLowerCase().pipe(z.email().max(254));
 /** Para entrar hay que aceptar la política de privacidad, cada vez (ADR-0030). */
 const PrivacyAccepted = z.literal(true);
 
-const RequestOtpInput = z.object({ email: Email, privacy: PrivacyAccepted });
+const RequestOtpInput = z.object({
+  email: Email,
+  privacy: PrivacyAccepted,
+  /** Se pide el correo porque se ha olvidado la contraseña: al entrar, a Ajustes (ADR-0031). */
+  forgotPassword: z.boolean().optional(),
+});
 /** El código que llega por correo tiene 6 cifras. */
 const VerifyOtpInput = z.object({
   email: Email,
@@ -23,40 +34,16 @@ const VerifyOtpInput = z.object({
 });
 const PasswordInput = z.object({ email: Email, password: Password, privacy: PrivacyAccepted });
 
-/** 429 de Supabase Auth: demasiadas peticiones de código o de verificación. */
-function isRateLimited(error: { status?: number }): boolean {
-  return error.status === 429;
-}
-
-/** Lo que responde `login_attempt_begin` (supabase/migrations/0005_login_attempts.sql). */
-const LoginGate = z.object({ allowed: z.boolean(), retry_after_s: z.number().int().min(0) });
-
-/** Si el acceso está cerrado por intentos fallidos, cuántos segundos faltan para reabrirse. */
-export type SignInResult = ActionResult<never> & { retryAfterSeconds?: number };
-
 /**
- * Anota un intento de acceso antes de probar nada (ADR-0024): tras varios seguidos sin acertar,
- * la base de datos deja de admitir más durante un rato. Devuelve el motivo para no seguir, o
- * `null` si se puede probar. Si el intento no se puede anotar, tampoco se prueba: un fallo aquí
- * no puede convertirse en intentos sin límite.
+ * Ha entrado: la cuenta de intentos vuelve a cero (solo se puede con sesión) y se va a /hoy. Si
+ * ha entrado con el correo que pidió por haber olvidado la contraseña, a ponerla (ADR-0031).
  */
-async function refuseAttempt(
-  supabase: SupabaseServerClient,
-  email: string,
-): Promise<SignInResult | null> {
-  const begun = await supabase.rpc('login_attempt_begin', { p_email: email });
-  const gate = LoginGate.safeParse(begun.data);
-  if (begun.error || !gate.success) return fail('internal');
-  if (!gate.data.allowed) {
-    return { ...fail('rate_limited'), retryAfterSeconds: gate.data.retry_after_s };
-  }
-  return null;
-}
-
-/** Ha entrado: la cuenta de intentos vuelve a cero (solo se puede con sesión) y se va a /hoy. */
-async function enter(supabase: SupabaseServerClient): Promise<never> {
+async function enter(supabase: SupabaseServerClient, viaEmail: boolean): Promise<never> {
   await supabase.rpc('login_attempt_clear');
-  redirect('/hoy');
+  const next = viaEmail ? await takeNextStep() : null;
+  redirect(
+    next === 'password' ? `${PASSWORD_SETTINGS.pathname}#${PASSWORD_SETTINGS.hash}` : '/hoy',
+  );
 }
 
 /**
@@ -67,7 +54,10 @@ async function enter(supabase: SupabaseServerClient): Promise<never> {
 export async function requestOtp(input: unknown): Promise<ActionResult<{ email: string }>> {
   const parsed = RequestOtpInput.safeParse(input);
   if (!parsed.success) return fail('invalid_input');
-  const { email } = parsed.data;
+  const { email, forgotPassword = false } = parsed.data;
+
+  // Antes de mirar el email: así la respuesta es la misma tenga acceso o no.
+  await rememberNextStep(forgotPassword);
 
   // Primera barrera: solo el email permitido llega a Supabase.
   if (email !== env.ALLOWED_EMAIL) return ok({ email });
@@ -102,7 +92,7 @@ export async function verifyOtp(input: unknown): Promise<SignInResult> {
   const { error } = await supabase.auth.verifyOtp({ email, token, type: 'email' });
   if (error) return fail(isRateLimited(error) ? 'rate_limited' : 'unauthorized');
 
-  return enter(supabase);
+  return enter(supabase, true);
 }
 
 /**
@@ -128,7 +118,7 @@ export async function signInWithPassword(input: unknown): Promise<SignInResult> 
   });
   if (error) return fail(isRateLimited(error) ? 'rate_limited' : 'unauthorized');
 
-  return enter(supabase);
+  return enter(supabase, false);
 }
 
 export async function signOut(): Promise<never> {

@@ -1,6 +1,6 @@
 # ADR-0026 · Contraseña de verdad en vez del código fijo
 
-- **Estado:** Aceptada (sustituye a [ADR-0020](0020-codigo-fijo-de-acceso.md))
+- **Estado:** Aceptada (sustituye a [ADR-0020](0020-codigo-fijo-de-acceso.md); desde el [ADR-0031](0031-contrasena-desde-la-web.md) también se pone y se cambia en Ajustes, y el comando queda como vía de emergencia)
 - **Fecha:** 2026-10-13
 
 ## Contexto

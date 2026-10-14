@@ -3,12 +3,16 @@ import { cookies } from 'next/headers';
 import { Button } from '@/components/ui/button';
 import { PageContainer, PageHeader, PageSections } from '@/components/ui/page';
 import { Panel, PanelTitle } from '@/components/ui/panel';
+import { PasswordSettings } from '@/features/auth/components/password-settings';
+import { PASSWORD_SECTION_ID } from '@/features/auth/lib/password-rules';
 import { signOut } from '@/features/auth/server/actions';
+import { passwordChangeNeedsCurrent } from '@/features/auth/server/queries';
 import { ConsentSettings } from '@/features/consent/components/consent-settings';
 import { SettingsForm } from '@/features/profile/components/settings-form';
 import { getProfile } from '@/features/profile/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
 import { CONSENT_COOKIE, COOKIE_POLICY_URL, PRIVACY_POLICY_URL, parseConsent } from '@/lib/consent';
+import { env } from '@/lib/env';
 import { getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -17,7 +21,14 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function SettingsPage() {
   await getSessionOrRedirect();
-  const [t, profile, cookieStore] = await Promise.all([getT(), getProfile(), cookies()]);
+  // La contraseña solo existe si el servidor tiene su secreto (ADR-0026).
+  const withPassword = Boolean(env.LOGIN_CODE_PEPPER);
+  const [t, profile, cookieStore, needsCurrent] = await Promise.all([
+    getT(),
+    getProfile(),
+    cookies(),
+    passwordChangeNeedsCurrent(),
+  ]);
   const consent = parseConsent(cookieStore.get(CONSENT_COOKIE)?.value);
 
   return (
@@ -48,6 +59,13 @@ export default async function SettingsPage() {
             </Button>
           </form>
         </Panel>
+
+        {withPassword ? (
+          <Panel id={PASSWORD_SECTION_ID} className="flex scroll-mt-24 flex-col gap-3">
+            <PanelTitle>{t('passwordSettings.title')}</PanelTitle>
+            <PasswordSettings email={profile.email} needsCurrent={needsCurrent} />
+          </Panel>
+        ) : null}
 
         <Panel className="flex flex-col gap-3">
           <PanelTitle>{t('consent.title')}</PanelTitle>

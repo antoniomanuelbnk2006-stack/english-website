@@ -119,7 +119,7 @@ test.describe('ajustes', () => {
     await page.getByLabel('Tema', { exact: true }).selectOption('dark');
     await page.getByLabel('Tamaño de letra del lector').fill('22');
     await page.getByLabel('Fondo de papel en el lector').check();
-    await page.getByRole('button', { name: 'Guardar' }).click();
+    await page.getByRole('button', { name: 'Guardar', exact: true }).click();
     await expect(page.getByText('Ajustes guardados.')).toBeVisible();
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
     await expectAccessible(page);
@@ -153,7 +153,7 @@ test.describe('ajustes', () => {
     // Interfaz en inglés.
     await page.goto('/ajustes');
     await page.getByLabel('Idioma de la interfaz').selectOption('en');
-    await page.getByRole('button', { name: 'Guardar' }).click();
+    await page.getByRole('button', { name: 'Guardar', exact: true }).click();
     await expect(page.locator('html')).toHaveAttribute('lang', 'en');
     await expect(page.getByRole('heading', { level: 1, name: 'Settings' })).toBeVisible();
     await page.goto('/hoy');
@@ -169,7 +169,7 @@ test.describe('ajustes', () => {
     await signIn(page);
     await page.goto('/ajustes');
     await page.getByLabel('Objetivo diario (minutos)').fill('5');
-    await page.getByRole('button', { name: 'Guardar' }).click();
+    await page.getByRole('button', { name: 'Guardar', exact: true }).click();
     await expect(page.getByRole('alert').filter({ hasText: 'fuera de rango' })).toBeVisible();
     expect(await queryDatabase(request, 'select daily_goal_min from public.profiles')).toEqual([
       { daily_goal_min: 45 },
