@@ -192,10 +192,14 @@ h1, h2, h3 { font-family: var(--font-display); font-stretch: 112%; font-weight: 
 .plan-count { color: var(--muted); font-size: 0.875rem; }
 .plan-progress { height: 6px; overflow: hidden; border-radius: 6px; background: var(--surface-2); }
 .plan-progress span { display: block; width: 0; height: 100%; border-radius: inherit; background: var(--accent); transition: width 300ms ease-out; }
-.plan[data-step='1'] .plan-progress span { width: 25%; }
-.plan[data-step='2'] .plan-progress span { width: 50%; }
-.plan[data-step='3'] .plan-progress span { width: 75%; }
-.plan[data-step='4'] .plan-progress span, .plan[data-step='5'] .plan-progress span { width: 100%; }
+.plan[data-progress='20'] .plan-progress span { width: 20%; }
+.plan[data-progress='25'] .plan-progress span { width: 25%; }
+.plan[data-progress='40'] .plan-progress span { width: 40%; }
+.plan[data-progress='50'] .plan-progress span { width: 50%; }
+.plan[data-progress='60'] .plan-progress span { width: 60%; }
+.plan[data-progress='75'] .plan-progress span { width: 75%; }
+.plan[data-progress='80'] .plan-progress span { width: 80%; }
+.plan[data-progress='100'] .plan-progress span { width: 100%; }
 .plan-step { min-width: 0; margin: 0; padding: 0; border: 0; }
 .plan-step legend { margin-bottom: 16px; padding: 0; }
 .plan-options { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
@@ -214,11 +218,37 @@ h1, h2, h3 { font-family: var(--font-display); font-stretch: 112%; font-weight: 
 .plan-error { min-height: 1.4em; margin-top: -8px; color: var(--error); font-size: 0.875rem; line-height: 1.4; }
 .plan-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .plan-actions .btn-primary { margin-left: auto; }
+/* «Tu plan»: la meta y el plazo arriba; debajo, los minutos, la semana y por dónde empezar. */
 .plan-summary { display: grid; gap: 16px; }
 .plan-summary:focus { outline: none; }
-.plan-list > div { display: flex; justify-content: space-between; gap: 16px; padding-block: 12px; border-top: 1px solid var(--surface-2); }
-.plan-list dt { color: var(--muted); }
-.plan-list dd { margin: 0; font-weight: 420; text-align: right; }
+.plan-intro { display: grid; gap: 4px; }
+.plan-answers { color: var(--muted); font-size: 0.875rem; line-height: 1.4; }
+.plan-goal { font: 480 1.3125rem/1.35 var(--font-display); font-stretch: 112%; }
+.plan-deadline { padding: 12px 16px; border-left: 2px solid var(--accent); border-radius: 0 12px 12px 0; background: var(--surface); }
+.plan-blocks { display: grid; gap: 12px; margin-top: 8px; }
+.plan-block { display: grid; gap: 12px; align-content: start; padding: 20px; border-radius: 12px; background: var(--surface); }
+.plan-block h4 { font-weight: 420; }
+.plan-bar { display: flex; gap: 2px; height: 8px; overflow: hidden; border-radius: 8px; }
+.plan-bar span, .plan-split li::before { background: var(--accent); }
+.plan-bar span:nth-child(2), .plan-split li:nth-child(2)::before { background: color-mix(in srgb, var(--accent) 75%, var(--surface)); }
+.plan-bar span:nth-child(3), .plan-split li:nth-child(3)::before { background: color-mix(in srgb, var(--accent) 55%, var(--surface)); }
+.plan-bar span:nth-child(4), .plan-split li:nth-child(4)::before { background: color-mix(in srgb, var(--accent) 40%, var(--surface)); }
+.plan-bar span:nth-child(5), .plan-split li:nth-child(5)::before { background: color-mix(in srgb, var(--accent) 28%, var(--surface)); }
+.plan-bar span:nth-child(6), .plan-split li:nth-child(6)::before { background: color-mix(in srgb, var(--accent) 18%, var(--surface)); }
+.plan-split { display: grid; gap: 6px; font-size: 0.875rem; }
+.plan-split li { display: grid; grid-template-columns: 10px 4.5rem 1fr; align-items: center; gap: 10px; }
+.plan-split li::before { content: ''; width: 10px; height: 10px; border-radius: 3px; }
+.plan-split .plan-when { color: var(--text); font-variant-numeric: tabular-nums; }
+.plan-split, .plan-rows { margin: 0; padding: 0; list-style: none; }
+.plan-rows { display: grid; gap: 10px; font-size: 0.875rem; line-height: 1.4; }
+.plan-rows li { display: grid; gap: 2px; }
+.plan-when { color: var(--muted); }
+.plan-source { color: var(--muted); font-size: 0.75rem; line-height: 1.33; }
+@media (min-width: 640px) {
+  .plan-blocks { grid-template-columns: 1fr 1fr; }
+  .plan-block-wide { grid-column: 1 / -1; }
+  .plan-rows li { grid-template-columns: 8.5rem 1fr; gap: 12px; }
+}
 
 
 /* Tarjeta: la superficie de contenido. La elevación es el salto de fondo, sin borde ni sombra. */

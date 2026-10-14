@@ -119,6 +119,17 @@
               </div>
             </fieldset>
 
+            <fieldset class="plan-step" data-when="examen">
+              <legend class="subheading">¿Cuándo es tu examen?</legend>
+              <div class="plan-options">
+                <label class="choice"><input type="radio" name="fecha" value="3"><span class="choice-name">En menos de 3 meses</span></label>
+                <label class="choice"><input type="radio" name="fecha" value="6"><span class="choice-name">Entre 3 y 6 meses</span></label>
+                <label class="choice"><input type="radio" name="fecha" value="12"><span class="choice-name">Entre 6 meses y un año</span></label>
+                <label class="choice"><input type="radio" name="fecha" value="24"><span class="choice-name">Dentro de más de un año</span></label>
+                <label class="choice"><input type="radio" name="fecha" value="0"><span class="choice-name">Aún no lo sé</span></label>
+              </div>
+            </fieldset>
+
             <fieldset class="plan-step">
               <legend class="subheading">¿Cuánto tiempo al día?</legend>
               <div class="plan-options plan-minutes">
@@ -131,14 +142,30 @@
             </fieldset>
 
             <div class="plan-summary" tabindex="-1" hidden>
-              <h3 class="subheading">Tu plan</h3>
-              <dl class="plan-list">
-                <div><dt>Idioma</dt><dd data-out="idioma"></dd></div>
-                <div><dt>Nivel</dt><dd data-out="nivel"></dd></div>
-                <div><dt>Para</dt><dd data-out="objetivo"></dd></div>
-                <div><dt>Cada día</dt><dd data-out="minutos"></dd></div>
-              </dl>
+              <div class="plan-intro">
+                <h3 class="subheading" data-out="titulo">Tu plan</h3>
+                <p class="plan-answers" data-out="respuestas"></p>
+              </div>
+              <p class="plan-goal" data-out="meta"></p>
+              <p class="muted" data-out="plazo"></p>
+              <p class="plan-deadline" data-out="fecha" hidden></p>
+              <div class="plan-blocks">
+                <section class="plan-block">
+                  <h4 data-out="minutos-titulo">Tus minutos</h4>
+                  <div class="plan-bar" data-out="barra" aria-hidden="true"></div>
+                  <ul class="plan-split" data-out="reparto"></ul>
+                </section>
+                <section class="plan-block">
+                  <h4>Tu semana</h4>
+                  <ul class="plan-rows" data-out="semana"></ul>
+                </section>
+                <section class="plan-block plan-block-wide">
+                  <h4>Por dónde empiezas</h4>
+                  <ol class="plan-rows" data-out="pasos"></ol>
+                </section>
+              </div>
               <p class="muted" data-out="nota"></p>
+              <p class="plan-source">El plazo es orientativo: sale de las horas de estudio que se suelen dar para cada nivel y cada examen.</p>
               <div class="plan-actions">
                 <button class="btn btn-ghost" type="button" data-plan="cambiar">Cambiar respuestas</button>
                 <a class="btn btn-primary" href="/login">Empezar a estudiar</a>

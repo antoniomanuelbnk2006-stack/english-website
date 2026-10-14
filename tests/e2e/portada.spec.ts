@@ -110,36 +110,103 @@ test('sin acercamiento, «Crea tu plan» va en su sitio y lleva paso a paso al r
     .check();
   await plan(page).getByRole('button', { name: 'Siguiente' }).click();
   await expect(step(page)).toHaveText('Paso 3 de 4');
-  // El examen oficial es el del idioma elegido.
+  // El examen oficial es el del idioma elegido, y elegirlo añade una pregunta: cuándo es.
   const examGoal = plan(page).getByRole('radio', { name: /Aprobar el examen oficial/ });
   await expect(examGoal).toHaveAccessibleName(/JLPT/);
   await examGoal.check();
+  await expect(step(page)).toHaveText('Paso 3 de 5');
   await plan(page).getByRole('button', { name: 'Siguiente' }).click();
 
-  await expect(step(page)).toHaveText('Paso 4 de 4');
+  await expect(step(page)).toHaveText('Paso 4 de 5');
+  await plan(page).getByRole('radio', { name: 'En menos de 3 meses' }).check();
+  await plan(page).getByRole('button', { name: 'Siguiente' }).click();
+  await expect(step(page)).toHaveText('Paso 5 de 5');
   await plan(page).getByRole('radio', { name: '20 min' }).check();
   await plan(page).getByRole('button', { name: 'Ver mi plan' }).click();
 
+  // El plan sale de las respuestas: meta, plazo, minutos, semana y por dónde empezar.
   await expect(step(page)).toHaveText('Listo');
   const summary = plan(page).locator('.plan-summary');
   await expect(summary).toBeFocused();
-  await expect(summary.getByRole('heading', { name: 'Tu plan' })).toBeVisible();
-  await expect(summary.locator('dd')).toHaveText([
-    'Japonés',
-    'Empiezo de cero (A1)',
-    'Aprobar el JLPT',
-    '20 minutos',
+  await expect(summary.getByRole('heading', { name: 'Tu plan de japonés' })).toBeVisible();
+  const said = (name: string) => summary.locator(`[data-out="${name}"]`);
+  await expect(said('respuestas')).toHaveText(
+    'Japonés · Empiezo de cero (A1) · Aprobar el examen oficial · 20 min al día',
+  );
+  await expect(said('meta')).toHaveText('Tu meta: el JLPT N5, que equivale a un A1.');
+  await expect(said('plazo')).toHaveText(
+    'Suele llevar entre 325 y 575 horas de estudio. Con 20 min al día, de lunes a sábado, son unos 3–5,5 años.',
+  );
+  await expect(said('fecha')).toHaveText(
+    'Para tu examen, en menos de 3 meses, no da tiempo ni con dos horas al día: mejor una convocatoria más adelante.',
+  );
+  // Los 20 minutos, repartidos sin perder ninguno; en japonés A1, una parte para la escritura.
+  await expect(summary.getByRole('heading', { name: 'Tus 20 minutos' })).toBeVisible();
+  await expect(said('reparto').locator('li').first()).toContainText('Kana y kanji');
+  const total = await said('reparto')
+    .locator('.plan-when')
+    .allTextContents()
+    .then((all) => all.reduce((sum, text) => sum + parseInt(text, 10), 0));
+  expect(total).toBe(20);
+  await expect(said('semana').locator('li').nth(1)).toContainText(
+    'Un simulacro del JLPT N5, por partes',
+  );
+  await expect(said('pasos').locator('li')).toContainText([
+    'Hiragana y katakana',
+    'Saludos, números y tus primeras 100 palabras',
+    'Tu primer simulacro del JLPT N5',
   ]);
-  await expect(summary).toContainText('Estamos preparando las lecciones de japonés.');
+  await expect(said('nota')).toHaveText(
+    'Estamos preparando las lecciones de japonés. De momento, en Señal están las de inglés.',
+  );
   await expect(summary.getByRole('link', { name: 'Empezar a estudiar' })).toHaveAttribute(
     'href',
     '/login',
   );
   await expectAccessible(page);
 
-  // Y se puede empezar de nuevo.
+  // Otro plan: inglés desde el B1 para un examen dentro de unos meses, con poco tiempo al día.
   await summary.getByRole('button', { name: 'Cambiar respuestas' }).click();
-  await expect(step(page)).toHaveText('Paso 1 de 4');
+  await expect(step(page)).toHaveText('Paso 1 de 5');
+  await plan(page)
+    .getByRole('radio', { name: /English/ })
+    .check();
+  await plan(page).getByRole('button', { name: 'Siguiente' }).click();
+  await plan(page)
+    .getByRole('radio', { name: /Me defiendo/ })
+    .check();
+  await plan(page).getByRole('button', { name: 'Siguiente' }).click();
+  await plan(page).getByRole('button', { name: 'Siguiente' }).click();
+  await plan(page).getByRole('radio', { name: 'Entre 6 meses y un año' }).check();
+  await plan(page).getByRole('button', { name: 'Siguiente' }).click();
+  await plan(page).getByRole('radio', { name: '30 min' }).check();
+  await plan(page).getByRole('button', { name: 'Ver mi plan' }).click();
+  await expect(said('meta')).toHaveText('Tu meta: el B1 Preliminary.');
+  await expect(said('plazo')).toHaveText(
+    'Suele llevar entre 170 y 200 horas de estudio. Con 30 min al día, de lunes a sábado, son unos 13–15 meses.',
+  );
+  await expect(said('fecha')).toHaveText(
+    'Para tu examen, en 6 meses–1 año, no llegas con 30 min al día: necesitarías unos 55 min al día.',
+  );
+  await expect(said('nota')).toContainText('ya están en Señal');
+
+  // Sin examen no hay pregunta de fecha ni aviso del plazo; con «No lo sé», primero la prueba.
+  await summary.getByRole('button', { name: 'Cambiar respuestas' }).click();
+  await plan(page).getByRole('button', { name: 'Siguiente' }).click();
+  await plan(page)
+    .getByRole('radio', { name: /No lo sé/ })
+    .check();
+  await plan(page).getByRole('button', { name: 'Siguiente' }).click();
+  await plan(page)
+    .getByRole('radio', { name: /Viajar/ })
+    .check();
+  await expect(step(page)).toHaveText('Paso 3 de 4');
+  await plan(page).getByRole('button', { name: 'Siguiente' }).click();
+  await expect(step(page)).toHaveText('Paso 4 de 4');
+  await plan(page).getByRole('button', { name: 'Ver mi plan' }).click();
+  await expect(said('meta')).toHaveText('Tu meta saldrá de la prueba de nivel.');
+  await expect(said('fecha')).toBeHidden();
+  await expect(said('pasos').locator('li').first()).toContainText('La prueba de nivel');
   expect(errors).toEqual([]);
 });
 

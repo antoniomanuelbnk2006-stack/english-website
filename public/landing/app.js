@@ -221,15 +221,17 @@ if (form && contact) {
   }
 }
 
-// Portada: «Crea tu plan», la pantalla final del acercamiento (portada.md). Cuatro preguntas, una
-// por paso: el idioma, el nivel, para qué y cuánto tiempo al día; después, el resumen. Por ahora no
-// se guarda nada: el resumen lleva a entrar en Señal. Sin JavaScript se ven todas a la vez. Va antes
-// que el acercamiento, que copia esta pantalla en el portátil tal como queda al empezar.
+// Portada: «Crea tu plan», la pantalla final del acercamiento (portada.md). Una pregunta por paso
+// (el idioma, el nivel, para qué, cuándo es el examen si es para eso, y cuánto tiempo al día) y,
+// al final, un plan hecho con las respuestas: la meta, el plazo, el reparto de los minutos, la
+// semana y por dónde empezar. Por ahora no se guarda nada: el plan lleva a entrar en Señal. Sin
+// JavaScript se ven todas las preguntas a la vez. Va antes que el acercamiento, que copia esta
+// pantalla en el portátil tal como queda al empezar.
 {
   const form = document.querySelector('#plan');
 
   if (form) {
-    const steps = [...form.querySelectorAll('.plan-step')];
+    const all = [...form.querySelectorAll('.plan-step')];
     const summary = form.querySelector('.plan-summary');
     const count = form.querySelector('#plan-paso');
     const error = form.querySelector('#plan-error');
@@ -240,76 +242,301 @@ if (form && contact) {
     const out = (name) => form.querySelector(`[data-out="${name}"]`);
     const picked = (name) => form.querySelector(`input[name="${name}"]:checked`);
 
-    // El examen oficial de cada idioma, para la opción «Aprobar el examen oficial» y el resumen.
-    const EXAMS = {
-      en: ['Cambridge English', 'Aprobar un examen de Cambridge'],
-      es: ['DELE', 'Aprobar el DELE'],
-      fr: ['DELF y DALF', 'Aprobar el DELF o el DALF'],
-      zh: ['HSK', 'Aprobar el HSK'],
-      ja: ['JLPT', 'Aprobar el JLPT'],
+    // --- Lo que sabe el plan de cada idioma ---
+
+    const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+    // Horas de estudio acumuladas para llegar a cada nivel, desde cero (orientativas): las guías de
+    // Cambridge para inglés, francés y español; las del JLPT para quien no sabe kanji, y las que se
+    // suelen dar para el HSK a quien no habla una lengua de Asia oriental.
+    const HOURS = {
+      cefr: { A1: [90, 100], A2: [180, 200], B1: [350, 400], B2: [500, 600], C1: [700, 800], C2: [1000, 1200] },
+      zh: { A1: [120, 200], A2: [250, 400], B1: [500, 800], B2: [900, 1400], C1: [1500, 2200], C2: [2200, 3000] },
+      ja: { A1: [325, 575], A2: [575, 1000], B1: [950, 1700], B2: [1600, 2600], C1: [3000, 4800], C2: [3000, 4800] },
+    };
+    const LANGUAGES = {
+      en: { name: 'inglés', hours: HOURS.cefr, exams: { A1: 'A2 Key', A2: 'A2 Key', B1: 'B1 Preliminary', B2: 'B2 First', C1: 'C1 Advanced', C2: 'C2 Proficiency' }, examLabel: 'Cambridge English' },
+      es: { name: 'español', hours: HOURS.cefr, exams: { A1: 'DELE A1', A2: 'DELE A2', B1: 'DELE B1', B2: 'DELE B2', C1: 'DELE C1', C2: 'DELE C2' }, examLabel: 'DELE' },
+      fr: { name: 'francés', hours: HOURS.cefr, exams: { A1: 'DELF A1', A2: 'DELF A2', B1: 'DELF B1', B2: 'DELF B2', C1: 'DALF C1', C2: 'DALF C2' }, examLabel: 'DELF y DALF' },
+      zh: { name: 'chino', hours: HOURS.zh, exams: { A1: 'HSK 1', A2: 'HSK 2', B1: 'HSK 3', B2: 'HSK 4', C1: 'HSK 5', C2: 'HSK 6' }, examLabel: 'HSK', equivalent: true },
+      ja: { name: 'japonés', hours: HOURS.ja, exams: { A1: 'JLPT N5', A2: 'JLPT N4', B1: 'JLPT N3', B2: 'JLPT N2', C1: 'JLPT N1', C2: 'JLPT N1' }, examLabel: 'JLPT', equivalent: true },
     };
 
-    let current = 0;
-    const show = (index) => {
-      current = index;
-      steps.forEach((step, i) => {
-        step.hidden = i !== index;
-      });
-      const done = index >= steps.length;
+    // En qué se van los minutos de cada día, según para qué se aprende (en %).
+    const SPLITS = {
+      viajar: [['Escuchar', 35], ['Hablar', 25], ['Vocabulario', 20], ['Repaso', 20]],
+      trabajo: [['Escuchar', 25], ['Leer', 20], ['Escribir', 20], ['Vocabulario', 15], ['Repaso', 20]],
+      estudios: [['Leer', 30], ['Escribir', 25], ['Escuchar', 20], ['Vocabulario', 10], ['Repaso', 15]],
+      examen: [['Escuchar', 25], ['Leer', 25], ['Gramática', 20], ['Escribir', 15], ['Repaso', 15]],
+      gusto: [['Escuchar', 40], ['Leer', 30], ['Vocabulario', 15], ['Repaso', 15]],
+    };
+    // Chino y japonés empiezan por su escritura: se lleva una parte del tiempo en A1.
+    const SCRIPT = { zh: 'Caracteres', ja: 'Kana y kanji' };
+    const SATURDAY = {
+      viajar: 'Practica en voz alta lo de la semana, como si estuvieras de viaje',
+      trabajo: 'Escribe un correo o prepara una reunión en {lengua}',
+      estudios: 'Lee un texto largo y resúmelo',
+      examen: 'Un simulacro del {examen}, por partes',
+      gusto: 'Un capítulo de una serie o un podcast en {lengua}',
+    };
+    const FOCUS = {
+      viajar: 'Situaciones de viaje: transporte, alojamiento y restaurantes',
+      trabajo: 'Reuniones, correos y llamadas',
+      estudios: 'Textos académicos y apuntes',
+      examen: 'El formato del {examen}, parte por parte',
+      gusto: 'Series y podcasts de tu nivel',
+    };
+    const START = {
+      ja: ['Hiragana y katakana', 'Saludos, números y tus primeras 100 palabras', 'Tus primeros kanji'],
+      zh: ['El pinyin y los cuatro tonos', 'Saludos, números y tus primeros 100 caracteres', 'Frases completas sobre tu día'],
+      other: ['Los sonidos del idioma y los saludos', 'Las 300 palabras más frecuentes', 'Entender conversaciones lentas'],
+    };
+    // «¿Cuándo es tu examen?»: cuántos meses quedan, más o menos.
+    const DATES = { 3: ['en menos de 3 meses', 2], 6: ['en 3–6 meses', 4.5], 12: ['en 6 meses–1 año', 9], 24: ['en más de un año', 18] };
+    const DAYS = 6; // días de estudio a la semana: de lunes a sábado
+    const WEEKS_PER_MONTH = 4.345;
+
+    // --- Cálculos ---
+
+    const number = (n) => n.toLocaleString('es-ES', { maximumFractionDigits: 1 });
+    const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key]);
+
+    /** Horas para llegar a `level` desde el nivel anterior (o desde cero en A1). */
+    const hoursFor = (language, level) => {
+      const target = language.hours[level];
+      const index = LEVELS.indexOf(level);
+      if (index === 0) return target;
+      const before = language.hours[LEVELS[index - 1]];
+      return [Math.max(10, target[0] - before[0]), Math.max(10, target[1] - before[1])];
+    };
+
+    /** «unas 6–8 semanas», «unos 10–12 meses», «unos 3–5,5 años». */
+    const duration = (lowWeeks, highWeeks) => {
+      const say = (a, b, one, many, article) =>
+        a === b
+          ? a === 1
+            ? `${article === 'unas' ? 'una' : 'un'} ${one}`
+            : `${article} ${number(a)} ${many}`
+          : `${article} ${number(a)}–${number(b)} ${many}`;
+      if (highWeeks < 9) {
+        return say(Math.max(1, Math.round(lowWeeks)), Math.max(1, Math.round(highWeeks)), 'semana', 'semanas', 'unas');
+      }
+      const lowMonths = lowWeeks / WEEKS_PER_MONTH;
+      const highMonths = highWeeks / WEEKS_PER_MONTH;
+      if (highMonths < 24) {
+        return say(Math.max(1, Math.round(lowMonths)), Math.round(highMonths), 'mes', 'meses', 'unos');
+      }
+      const half = (months) => Math.max(0.5, Math.round((months / 12) * 2) / 2);
+      return say(half(lowMonths), half(highMonths), 'año', 'años', 'unos');
+    };
+
+    /** Reparte los minutos según los porcentajes, sin perder ninguno por redondear. */
+    const share = (minutes, parts) => {
+      const raw = parts.map(([label, pct]) => [label, (minutes * pct) / 100]);
+      const result = raw.map(([label, value]) => [label, Math.floor(value)]);
+      let left = minutes - result.reduce((sum, [, value]) => sum + value, 0);
+      const order = raw
+        .map(([, value], i) => [value - Math.floor(value), i])
+        .sort((a, b) => b[0] - a[0]);
+      for (const [, i] of order) {
+        if (left <= 0) break;
+        result[i][1] += 1;
+        left -= 1;
+      }
+      return result.filter(([, value]) => value > 0);
+    };
+
+    const list = (target, rows) => {
+      target.replaceChildren(
+        ...rows.map(([when, what]) => {
+          const item = document.createElement('li');
+          const label = document.createElement('span');
+          label.className = 'plan-when';
+          label.textContent = when;
+          const text = document.createElement('span');
+          text.textContent = what;
+          item.append(label, text);
+          return item;
+        }),
+      );
+    };
+
+    const build = () => {
+      const languageInput = picked('idioma');
+      const levelInput = picked('nivel');
+      const goalInput = picked('objetivo');
+      const minutes = Number(picked('minutos').value);
+      const code = languageInput.value;
+      const language = LANGUAGES[code];
+      const goal = goalInput.value;
+      const level = LEVELS.includes(levelInput.value) ? levelInput.value : null;
+      const examName = level ? language.exams[level] : language.examLabel;
+      const values = { lengua: language.name, examen: examName };
+
+      out('titulo').textContent = `Tu plan de ${language.name}`;
+      out('respuestas').textContent = [
+        languageInput.dataset.summary,
+        levelInput.dataset.summary,
+        goalInput.dataset.summary,
+        `${minutes} min al día`,
+      ].join(' · ');
+
+      // La meta y el plazo.
+      const deadline = out('fecha');
+      deadline.hidden = true;
+      if (!level) {
+        out('meta').textContent = 'Tu meta saldrá de la prueba de nivel.';
+        out('plazo').textContent = 'Cuando sepas tu nivel, el plan te dirá cuánto tiempo te llevará el siguiente.';
+      } else {
+        if (goal === 'examen') {
+          out('meta').textContent =
+            code === 'en' && level === 'A1'
+              ? 'Tu meta: el A1 y, después, el A2 Key, el primer examen de Cambridge para adultos.'
+              : `Tu meta: el ${examName}${language.equivalent ? `, que equivale a un ${level}` : ''}.`;
+        } else {
+          out('meta').textContent = `Tu meta: llegar al ${level}.`;
+        }
+        const [low, high] = hoursFor(language, level);
+        const perWeek = (minutes * DAYS) / 60;
+        out('plazo').textContent =
+          `Suele llevar entre ${number(low)} y ${number(high)} horas de estudio. ` +
+          `Con ${minutes} min al día, de lunes a sábado, son ${duration(low / perWeek, high / perWeek)}.`;
+
+        const date = goal === 'examen' ? DATES[picked('fecha')?.value] : undefined;
+        if (date) {
+          const [when, months] = date;
+          const days = months * WEEKS_PER_MONTH * DAYS;
+          const needLow = (low * 60) / days;
+          const needHigh = (high * 60) / days;
+          const five = (n) => Math.ceil(n / 5) * 5;
+          deadline.textContent =
+            minutes >= needHigh
+              ? `Para tu examen, ${when}, llegas a tiempo.`
+              : minutes >= needLow
+                ? `Para tu examen, ${when}, llegas justo: no te saltes días.`
+                : needLow > 120
+                  ? `Para tu examen, ${when}, no da tiempo ni con dos horas al día: mejor una convocatoria más adelante.`
+                  : `Para tu examen, ${when}, no llegas con ${minutes} min al día: necesitarías unos ${five(needHigh)} min al día.`;
+          deadline.hidden = false;
+        }
+      }
+
+      // Los minutos de cada día.
+      let parts = SPLITS[goal];
+      if (SCRIPT[code] && (level === 'A1' || !level)) {
+        parts = [[SCRIPT[code], 20], ...parts.map(([label, pct]) => [label, pct * 0.8])];
+      }
+      const split = share(minutes, parts);
+      out('minutos-titulo').textContent = `Tus ${minutes} minutos`;
+      const bar = out('barra');
+      bar.replaceChildren(
+        ...split.map(([, value]) => {
+          const segment = document.createElement('span');
+          segment.style.flexGrow = String(value);
+          return segment;
+        }),
+      );
+      list(
+        out('reparto'),
+        split.map(([label, value]) => [`${value} min`, label]),
+      );
+
+      // La semana.
+      list(out('semana'), [
+        ['De lunes a viernes', `Tu rutina de ${minutes} minutos`],
+        ['Sábado', fill(SATURDAY[goal], values)],
+        ['Domingo', `Descanso, o algo en ${language.name} que te guste`],
+      ]);
+
+      // Por dónde empezar.
+      const start = START[code] ?? START.other;
+      const steps = !level
+        ? [
+            ['Primero', 'La prueba de nivel: con el resultado se ajusta el plan'],
+            ['Primer mes', fill(FOCUS[goal], values)],
+            ['Tercer mes', goal === 'examen' ? 'Tu primer simulacro del examen' : 'Textos y audios de tu nivel'],
+          ]
+        : level === 'A1'
+          ? [
+              ['Semanas 1 y 2', start[0]],
+              ['Primer mes', start[1]],
+              ['Tercer mes', goal === 'examen' ? `Tu primer simulacro del ${examName}` : start[2]],
+            ]
+          : [
+              ['Semanas 1 y 2', 'Un diagnóstico: escucha y lectura de tu nivel para ver qué se te escapa'],
+              ['Primer mes', fill(FOCUS[goal], values)],
+              ['Tercer mes', goal === 'examen' ? `Tu primer simulacro completo del ${examName}` : `Textos y audios del ${level}`],
+            ];
+      list(out('pasos'), steps);
+
+      out('nota').textContent =
+        code === 'en'
+          ? 'Las lecciones, los repasos y los simulacros de Cambridge de inglés ya están en Señal.'
+          : `Estamos preparando las lecciones de ${language.name}. De momento, en Señal están las de inglés.`;
+    };
+
+    // --- Los pasos ---
+
+    // La pregunta del examen solo cuenta si se aprende para aprobarlo.
+    const active = () =>
+      all.filter((step) => !step.dataset.when || picked('objetivo')?.value === step.dataset.when);
+
+    let current = all[0];
+    const show = (target) => {
+      current = target;
+      const steps = active();
+      const done = target === summary;
+      const index = done ? steps.length : steps.indexOf(target);
+      for (const step of all) step.hidden = step !== target;
       summary.hidden = !done;
       actions.hidden = done;
       back.hidden = index === 0;
       next.textContent = index === steps.length - 1 ? 'Ver mi plan' : 'Siguiente';
       count.textContent = done ? 'Listo' : `Paso ${index + 1} de ${steps.length}`;
-      form.dataset.step = String(index + 1);
+      form.dataset.progress = String(Math.round(((done ? steps.length : index + 1) / steps.length) * 100));
       error.textContent = '';
     };
     // Al cambiar de paso, el foco va a la respuesta elegida o a la primera: así se sigue con el
     // teclado sin volver a buscar dónde estaba.
     const focus = () => {
-      if (current >= steps.length) summary.focus();
-      else (steps[current].querySelector('input:checked') ?? steps[current].querySelector('input'))?.focus();
-    };
-
-    const fill = () => {
-      const language = picked('idioma');
-      const goal = picked('objetivo');
-      out('idioma').textContent = language.dataset.summary;
-      out('nivel').textContent = picked('nivel').dataset.summary;
-      out('objetivo').textContent =
-        goal.value === 'examen' ? EXAMS[language.value][1] : goal.dataset.summary;
-      out('minutos').textContent = `${picked('minutos').value} minutos`;
-      out('nota').textContent =
-        language.value === 'en'
-          ? 'Las lecciones, los repasos y los simulacros de Cambridge de inglés ya están en Señal.'
-          : `Estamos preparando las lecciones de ${language.dataset.summary.toLowerCase()}. De momento, en Señal están las de inglés.`;
+      if (current === summary) summary.focus();
+      else (current.querySelector('input:checked') ?? current.querySelector('input'))?.focus();
     };
 
     form.addEventListener('change', (event) => {
       error.textContent = '';
-      if (event.target.name === 'idioma') exam.textContent = EXAMS[event.target.value][0];
+      if (event.target.name === 'idioma') exam.textContent = LANGUAGES[event.target.value].examLabel;
+      // Elegir el examen añade una pregunta (o quitarlo la quita): el «Paso 3 de 5» cambia ya.
+      if (event.target.name === 'objetivo') show(current);
     });
     form.addEventListener('submit', (event) => {
       event.preventDefault();
-      if (!steps[current]?.querySelector('input:checked')) {
+      if (current === summary) return;
+      if (!current.querySelector('input:checked')) {
         error.textContent = 'Elige una opción para seguir.';
-        steps[current]?.querySelector('input')?.focus();
+        current.querySelector('input')?.focus();
         return;
       }
-      if (current === steps.length - 1) fill();
-      show(current + 1);
+      const steps = active();
+      const index = steps.indexOf(current);
+      if (index === steps.length - 1) {
+        build();
+        show(summary);
+      } else {
+        show(steps[index + 1]);
+      }
       focus();
     });
     back.addEventListener('click', () => {
-      show(current - 1);
+      const steps = active();
+      show(steps[steps.indexOf(current) - 1]);
       focus();
     });
     form.querySelector('[data-plan="cambiar"]').addEventListener('click', () => {
-      show(0);
+      show(all[0]);
       focus();
     });
 
-    show(0);
+    show(all[0]);
   }
 }
 

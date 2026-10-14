@@ -59,11 +59,29 @@ Lo que aparece al terminar el acercamiento. Lo pidió el dueño al ampliar Seña
 (ADR-0032): quien llega elige qué idioma quiere aprender y, más adelante, entrará en la zona de
 estudio de ese idioma, con sus tareas y su examen.
 
-- **Cuatro preguntas, una por paso:** el idioma (cada uno con su nombre en su idioma y su examen
+- **Las preguntas, una por paso:** el idioma (cada uno con su nombre en su idioma y su examen
   oficial: Cambridge, DELE, DELF, HSK, JLPT), el nivel (de «Empiezo de cero» a «Casi como un
   nativo», o «No lo sé»), para qué (viajar, trabajo, estudios, aprobar el examen oficial —que dice
-  cuál según el idioma— o por gusto) y cuántos minutos al día. Después, «Tu plan»: el resumen.
-- **Por ahora no se guarda nada.** El resumen lleva a entrar en Señal (`/login`). Para cualquier
+  cuál según el idioma— o por gusto), **cuándo es el examen** (solo si es para aprobarlo: entonces
+  son cinco pasos y el contador cambia en el momento) y cuántos minutos al día.
+- **«Tu plan»** no repite las respuestas: las convierte en un plan (`app.js`, todo calculado en el
+  navegador con tablas fijas):
+  - **La meta:** el siguiente nivel o, si es para el examen, el examen de ese nivel (JLPT N5, HSK 1,
+    DELE B1, B2 First…), con su equivalencia cuando el nombre no la dice. Con «No lo sé», la prueba
+    de nivel.
+  - **El plazo, orientativo:** las horas de estudio que se suelen dar para pasar de un nivel al
+    siguiente (guías de Cambridge para inglés, francés y español; las del JLPT para quien no sabe
+    kanji; las habituales del HSK para quien no habla una lengua de Asia oriental), contando 6
+    días de estudio a la semana. Lo dice la propia página.
+  - **Si llega a tiempo al examen** según la fecha elegida: a tiempo, justo, cuántos minutos al día
+    harían falta, o que no da tiempo ni con dos horas.
+  - **Los minutos de cada día,** repartidos según para qué se aprende (sin perder ninguno al
+    redondear), con una barra en tonos del cobalto; en chino y japonés A1, una parte para la
+    escritura.
+  - **La semana** (lunes a viernes la rutina, el sábado lo propio del objetivo —un simulacro si es
+    para el examen—, el domingo libre) y **por dónde empezar** (semanas 1 y 2, primer mes, tercer
+    mes: kana en japonés, pinyin y tonos en chino, sonidos y palabras frecuentes en los demás).
+- **Por ahora no se guarda nada.** El plan lleva a entrar en Señal (`/login`). Para cualquier
   idioma que no sea el inglés dice que sus lecciones están en preparación. Cuando exista la zona de
   estudio de cada idioma, llevará allí.
 - **Opciones:** tarjetas en `surface-2` con la radio invisible encima (se pulsa toda la tarjeta y
