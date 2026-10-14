@@ -1,17 +1,18 @@
 import type { Metadata } from 'next';
+import { LanguageLinks } from '@/components/shell/language-links';
 import { Logo } from '@/components/shell/logo';
 import { LoginForm } from '@/features/auth/components/login-form';
 import { LINK_ERROR } from '@/features/auth/lib/confirm';
 import { COOKIE_POLICY_URL } from '@/lib/consent';
 import { env } from '@/lib/env';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('login.title') };
 }
 
 export default async function LoginPage({ searchParams }: PageProps<'/login'>) {
-  const [t, params] = await Promise.all([getT(), searchParams]);
+  const [t, locale, params] = await Promise.all([getT(), getLocale(), searchParams]);
   // Se llega con este aviso cuando el enlace del correo no ha servido (ADR-0018).
   const linkFailed = params.error === LINK_ERROR;
   // Con contraseña (ADR-0026) lo principal es escribirla; el correo queda como respaldo.
@@ -36,11 +37,14 @@ export default async function LoginPage({ searchParams }: PageProps<'/login'>) {
           </p>
         ) : null}
         <LoginForm withPassword={withPassword} />
-        <p className="text-caption text-muted">
-          <a href={COOKIE_POLICY_URL} className="underline underline-offset-4 hover:text-text">
-            {t('consent.policy')}
-          </a>
-        </p>
+        <div className="flex flex-col gap-1">
+          <p className="text-caption text-muted">
+            <a href={COOKIE_POLICY_URL} className="underline underline-offset-4 hover:text-text">
+              {t('consent.policy')}
+            </a>
+          </p>
+          <LanguageLinks path="/login" current={locale} label={t('common.language')} />
+        </div>
       </div>
     </main>
   );

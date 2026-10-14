@@ -1,6 +1,6 @@
 import type { Dictionary } from './es';
 
-// Interface in English (immersion mode, recommended from B2). Same keys as `es.ts`.
+// Interface in English (ADR-0032). Same keys as `es.ts`.
 export const en: Dictionary = {
   app: {
     name: 'Señal',
@@ -21,6 +21,7 @@ export const en: Dictionary = {
     minutes: '{n} min',
     optional: 'optional',
     syntheticVoice: 'Synthetic voice',
+    language: 'Language',
   },
   nav: {
     main: 'Main navigation',
@@ -425,8 +426,6 @@ export const en: Dictionary = {
     fontSample: 'Some games refuse to die.',
     paperLabel: 'Paper background in the reader',
     localeLabel: 'Interface language',
-    localeEs: 'Español',
-    localeEn: 'English (immersion, recommended from B2)',
     accountTitle: 'Account',
     signedInAs: 'You are signed in as {email}.',
     aboutTitle: 'About',

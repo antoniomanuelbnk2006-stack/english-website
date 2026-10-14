@@ -23,9 +23,12 @@ export async function acceptPrivacy(page: Page): Promise<void> {
   await page.getByRole('checkbox', { name: /acepto la política de privacidad/ }).check();
 }
 
-/** Entra con el email permitido y el código que acepta el emulador. */
-export async function signIn(page: Page): Promise<void> {
-  await page.goto('/login');
+/**
+ * Entra con el email permitido y el código que acepta el emulador. Los textos que busca son los
+ * del español: con el navegador en otro idioma, pásale `/login?lang=es` (ADR-0032).
+ */
+export async function signIn(page: Page, loginPath = '/login'): Promise<void> {
+  await page.goto(loginPath);
   await page.getByLabel('Email').fill(E2E.email);
   await acceptPrivacy(page);
   await page.getByRole('button', { name: 'Enviarme el correo' }).click();

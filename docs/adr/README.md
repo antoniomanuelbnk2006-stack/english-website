@@ -35,6 +35,7 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0029](0029-politica-de-privacidad-y-datos-de-contacto.md) | Política de privacidad, casilla obligatoria para aceptarla en el formulario de contacto y solo nombre y correo en el pie | Aceptada |
 | [0030](0030-sesion-recordada-solo-con-cookies-aceptadas.md) | La sesión solo se recuerda al cerrar el navegador con las cookies aceptadas, y la política de privacidad se acepta en cada acceso | Aceptada |
 | [0031](0031-contrasena-desde-la-web.md) | La contraseña se pone y se cambia en Ajustes; sin la actual, solo justo después de entrar con el correo; «¿Has olvidado la contraseña?» lleva hasta ahí | Aceptada |
+| [0032](0032-cinco-idiomas-para-todo-el-publico.md) | Cinco idiomas (español, inglés, francés, chino y japonés), para todo el público, por fases; la interfaz, en el idioma del navegador | Aceptada |
 
 Plantilla:
 

@@ -3,6 +3,7 @@ import { cache } from 'react';
 import { DEFAULT_RATING } from '@/features/level/lib/bands';
 import { parseSettings, type ProfileSettings } from '@/features/profile/lib/settings';
 import { getSessionOrRedirect } from '@/lib/auth';
+import { DEFAULT_LOCALE, isLocale, type Locale } from '@/lib/i18n';
 import type { Enums, Tables } from '@/lib/supabase/database.types';
 
 const SKILLS: Enums<'skill'>[] = [
@@ -18,7 +19,7 @@ export interface Profile {
   id: string;
   email: string;
   displayName: string | null;
-  uiLocale: 'es' | 'en';
+  uiLocale: Locale;
   dailyGoalMin: number;
   streakMinMinutes: number;
   interests: string[];
@@ -31,7 +32,7 @@ function toProfile(row: Tables<'profiles'>, email: string): Profile {
     id: row.id,
     email,
     displayName: row.display_name,
-    uiLocale: row.ui_locale === 'en' ? 'en' : 'es',
+    uiLocale: isLocale(row.ui_locale) ? row.ui_locale : DEFAULT_LOCALE,
     dailyGoalMin: row.daily_goal_min,
     streakMinMinutes: row.streak_min_minutes,
     interests: row.interests,

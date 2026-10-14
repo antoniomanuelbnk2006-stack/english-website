@@ -3,7 +3,7 @@ import { Archivo, Inter } from 'next/font/google';
 import { cookies } from 'next/headers';
 import { CookieBanner } from '@/features/consent/components/cookie-banner';
 import { CONSENT_COOKIE, parseConsent } from '@/lib/consent';
-import { getDictionary } from '@/lib/i18n';
+import { getDictionary, htmlLang } from '@/lib/i18n';
 import { I18nProvider } from '@/lib/i18n/client';
 import { getUiPreferences } from '@/lib/preferences';
 import '@/styles/globals.css';
@@ -38,7 +38,7 @@ export default async function RootLayout({ children }: LayoutProps<'/'>) {
 
   return (
     <html
-      lang={locale}
+      lang={htmlLang(locale)}
       data-theme={theme}
       className={`${inter.variable} ${archivo.variable} h-full antialiased`}
     >

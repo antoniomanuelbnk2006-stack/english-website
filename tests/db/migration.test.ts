@@ -80,6 +80,27 @@ describe('alta de usuario', () => {
   });
 });
 
+// ADR-0032: el perfil admite los cinco idiomas de interfaz, y solo esos.
+describe('idioma de la interfaz', () => {
+  it.each(['es', 'en', 'fr', 'zh', 'ja'])('admite %s', async (locale) => {
+    await t.asUser(ana, (tx) =>
+      tx.query('update public.profiles set ui_locale = $1 where id = $2', [locale, ana]),
+    );
+    const row = await t.asUser(ana, (tx) =>
+      tx.query<{ ui_locale: string }>('select ui_locale from public.profiles'),
+    );
+    expect(row.rows[0]?.ui_locale).toBe(locale);
+  });
+
+  it('rechaza cualquier otro', async () => {
+    await expect(
+      t.asUser(ana, (tx) =>
+        tx.query("update public.profiles set ui_locale = 'de' where id = $1", [ana]),
+      ),
+    ).rejects.toThrow(/profiles_ui_locale_check/);
+  });
+});
+
 describe('RLS', () => {
   it('todas las tablas tienen RLS activado y al menos una política', async () => {
     const result = await t.db.query<{ relname: string; rls: boolean; policies: number }>(

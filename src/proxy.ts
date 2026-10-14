@@ -1,6 +1,8 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { buildCsp } from '@/lib/csp';
 import { env } from '@/lib/env';
+import { isLocale } from '@/lib/i18n';
+import { LOCALE_REQUEST_HEADER } from '@/lib/i18n/request';
 import { canonicalUrl } from '@/lib/site-url';
 import { LANDING_HOME, updateSession } from '@/lib/supabase/proxy';
 
@@ -26,6 +28,11 @@ export async function proxy(request: NextRequest) {
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set('x-nonce', nonce);
   requestHeaders.set('Content-Security-Policy', csp);
+  // El idioma elegido en la dirección (`?lang=fr`, ADR-0032). La cabecera solo la pone el proxy:
+  // la que llegue de fuera se descarta.
+  requestHeaders.delete(LOCALE_REQUEST_HEADER);
+  const lang = request.nextUrl.searchParams.get('lang');
+  if (isLocale(lang)) requestHeaders.set(LOCALE_REQUEST_HEADER, lang);
 
   const response = await updateSession(request, requestHeaders);
   // La portada pública es HTML estático con su fuente y sus fotos de fuera: no lleva la CSP de

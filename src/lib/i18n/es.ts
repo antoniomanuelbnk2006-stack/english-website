@@ -1,4 +1,5 @@
-// Textos de la interfaz en español de España (fuente de verdad). `en.ts` debe tener las mismas claves.
+// Textos de la interfaz en español de España (fuente de verdad). `en.ts`, `fr.ts`, `zh.ts` y `ja.ts`
+// deben tener las mismas claves (ADR-0032).
 // Tono: cercano, directo y honesto, tuteando (docs/03-producto/05-sistema-de-diseno.md §9).
 export const es = {
   app: {
@@ -20,6 +21,7 @@ export const es = {
     minutes: '{n} min',
     optional: 'opcional',
     syntheticVoice: 'Voz sintética',
+    language: 'Idioma',
   },
   nav: {
     main: 'Navegación principal',
@@ -422,8 +424,6 @@ export const es = {
     fontSample: 'Some games refuse to die.',
     paperLabel: 'Fondo de papel en el lector',
     localeLabel: 'Idioma de la interfaz',
-    localeEs: 'Español',
-    localeEn: 'English (inmersión, recomendado desde B2)',
     accountTitle: 'Cuenta',
     signedInAs: 'Has entrado como {email}.',
     aboutTitle: 'Acerca de',

@@ -15,7 +15,7 @@ import {
   type InterestTopic,
 } from '@/features/profile/lib/settings';
 import { updateSettings } from '@/features/profile/server/actions';
-import type { Locale } from '@/lib/i18n';
+import { LOCALES, LOCALE_NAMES, htmlLang, type Locale } from '@/lib/i18n';
 import { useT } from '@/lib/i18n/client';
 import type { Theme } from '@/lib/theme';
 import { cn } from '@/lib/utils';
@@ -166,8 +166,11 @@ export function SettingsForm({ initial }: { initial: SettingsValues }) {
                 value={values.uiLocale}
                 onChange={(event) => set('uiLocale', event.target.value as Locale)}
               >
-                <option value="es">{t('settings.localeEs')}</option>
-                <option value="en">{t('settings.localeEn')}</option>
+                {LOCALES.map((locale) => (
+                  <option key={locale} value={locale} lang={htmlLang(locale)}>
+                    {LOCALE_NAMES[locale]}
+                  </option>
+                ))}
               </Select>
             </div>
           </div>

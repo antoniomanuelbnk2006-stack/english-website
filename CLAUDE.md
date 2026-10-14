@@ -6,6 +6,8 @@
 
 **Señal** es una web app personal (PWA) para aprender inglés de A1 a C2, centrada en **listening** y **reading**. La usa **una sola persona** (el dueño del repo, hispanohablante de España, nivel B1 al empezar). Toda la documentación está en `docs/`; el índice está en `README.md`.
 
+**Hacia dónde va ([ADR-0032](docs/adr/0032-cinco-idiomas-para-todo-el-publico.md)):** cinco idiomas para practicar (español, inglés, francés, chino y japonés), para todo el público, por fases. La interfaz ya está en los cinco (`src/lib/i18n`): todo texto nuevo va en los cinco diccionarios. Lo que tenga coste, al final.
+
 ## Antes de escribir código
 
 1. Mira en qué fase estamos en `docs/06-desarrollo/01-roadmap.md` y lee los documentos que cita esa fase.
@@ -87,7 +89,7 @@ Next.js 16 (App Router, Turbopack, `proxy.ts`) · React 19.2 · TypeScript estri
 3. Lógica de dominio (Elo, plan diario, dictado, cobertura, SRS, XP, rachas, corrección de tareas) **pura, determinista y con tests** en `lib/`.
 4. Calcular días, rachas y límites en **Europe/Madrid** (`src/lib/dates.ts`).
 5. Server Components por defecto; `'use client'` solo en hojas interactivas.
-6. Textos de interfaz en español vía `src/lib/i18n/es.ts`; contenido en inglés con `lang="en"`.
+6. Textos de interfaz vía `src/lib/i18n/es.ts` y, con las mismas claves, `en.ts`, `fr.ts`, `zh.ts` y `ja.ts` (ADR-0032); contenido en inglés con `lang="en"`.
 7. Accesibilidad: elementos interactivos reales, foco visible, todo usable con teclado.
 8. **Mensajes de commit en inglés** (Conventional Commits): el dueño practica *writing* con ellos.
 9. Las cookies las decide quien visita la web ([ADR-0028](docs/adr/0028-consentimiento-de-cookies.md)). Lo nuevo que se guarde en el navegador (cookie o almacenamiento local) se clasifica en `src/lib/consent.ts`: una preferencia solo se guarda si `preferencesAllowed()`. Y se añade a la política, `public/landing/cookies.html`.
