@@ -1,3 +1,4 @@
+import { preferencesAllowed } from '@/features/consent/lib/browser';
 import { ACCENTS, DEFAULT_ACCENT, pickVoice, type Accent } from './voices';
 
 // Audio modelo con la voz del navegador (solo en el cliente). No hay ficheros de audio: una
@@ -10,8 +11,15 @@ export function canSpeak(): boolean {
   return typeof window !== 'undefined' && 'speechSynthesis' in window;
 }
 
-/** Acento elegido para el audio modelo y el reconocimiento (se recuerda en este navegador). */
+/** El acento elegido en esta visita, cuando no se puede guardar en el navegador. */
+let visitAccent: Accent | null = null;
+
+/**
+ * Acento elegido para el audio modelo y el reconocimiento. Se recuerda en este navegador solo
+ * con las cookies de preferencias aceptadas (ADR-0028); si no, vale para esta visita.
+ */
 export function storedAccent(): Accent {
+  if (visitAccent) return visitAccent;
   try {
     const value = window.localStorage.getItem(ACCENT_KEY);
     return ACCENTS.find((accent) => accent === value) ?? DEFAULT_ACCENT;
@@ -21,8 +29,9 @@ export function storedAccent(): Accent {
 }
 
 export function storeAccent(accent: Accent): void {
+  visitAccent = accent;
   try {
-    window.localStorage.setItem(ACCENT_KEY, accent);
+    if (preferencesAllowed()) window.localStorage.setItem(ACCENT_KEY, accent);
   } catch {
     // Sin almacenamiento (modo privado estricto), el acento vale para esta visita.
   }

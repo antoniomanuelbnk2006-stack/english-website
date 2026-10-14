@@ -1,11 +1,14 @@
 import type { Metadata } from 'next';
+import { cookies } from 'next/headers';
 import { Button } from '@/components/ui/button';
 import { PageContainer, PageHeader, PageSections } from '@/components/ui/page';
 import { Panel, PanelTitle } from '@/components/ui/panel';
 import { signOut } from '@/features/auth/server/actions';
+import { ConsentSettings } from '@/features/consent/components/consent-settings';
 import { SettingsForm } from '@/features/profile/components/settings-form';
 import { getProfile } from '@/features/profile/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
+import { CONSENT_COOKIE, COOKIE_POLICY_URL, parseConsent } from '@/lib/consent';
 import { getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -14,7 +17,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function SettingsPage() {
   await getSessionOrRedirect();
-  const [t, profile] = await Promise.all([getT(), getProfile()]);
+  const [t, profile, cookieStore] = await Promise.all([getT(), getProfile(), cookies()]);
+  const consent = parseConsent(cookieStore.get(CONSENT_COOKIE)?.value);
 
   return (
     <PageContainer>
@@ -43,6 +47,17 @@ export default async function SettingsPage() {
               {t('nav.signOut')}
             </Button>
           </form>
+        </Panel>
+
+        <Panel className="flex flex-col gap-3">
+          <PanelTitle>{t('consent.title')}</PanelTitle>
+          <p className="text-body-sm text-muted">
+            {t('consent.settingsBody')}{' '}
+            <a href={COOKIE_POLICY_URL} className="text-accent-text underline underline-offset-4">
+              {t('consent.policy')}
+            </a>
+          </p>
+          <ConsentSettings initial={consent} />
         </Panel>
 
         <Panel className="flex flex-col gap-3 text-body-sm text-muted">

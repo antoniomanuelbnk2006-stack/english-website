@@ -480,6 +480,52 @@
     font-weight: 420;
   }
 
+  /* Aviso de cookies (ADR-0028): capa flotante en surface-2, con el borde de los divisores. No
+     tapa la página: mientras está abierto, la página gana por abajo el sitio que él ocupa
+     (`.cookie-banner-space`), así que todo se puede subir por encima de él. */
+  .cookie-banner {
+    position: fixed;
+    inset-inline: 16px;
+    bottom: 24px;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 680px;
+    margin-inline: auto;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background-color: var(--surface-2);
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  .cookie-banner .btn-ghost:hover {
+    background-color: var(--surface);
+  }
+
+  .cookie-banner-space {
+    height: 224px;
+  }
+
+  @media (min-width: 640px) {
+    .cookie-banner {
+      padding: 24px;
+    }
+
+    .cookie-banner-space {
+      height: 168px;
+    }
+  }
+
+  /* En el móvil, por encima de la barra de navegación de la app. */
+  @media (max-width: 767px) {
+    body:has([data-bottom-nav]) .cookie-banner {
+      bottom: calc(64px + env(safe-area-inset-bottom) + 12px);
+    }
+  }
+
   /* Placeholder de carga estable: sin parpadeo. */
   .skeleton {
     border-radius: 12px;

@@ -44,6 +44,20 @@ export const en: Dictionary = {
     useOfEnglish: 'Use of English',
     exams: 'Exams',
   },
+  consent: {
+    title: 'Cookies',
+    body: 'Señal uses necessary cookies so you can sign in and, if you accept, preference cookies: theme, language and accent. No analytics or advertising.',
+    more: 'More information',
+    reject: 'Reject',
+    accept: 'Accept',
+    policy: 'Cookie policy',
+    settingsBody:
+      'Necessary cookies (your session and this choice) are always on. Preference cookies remember your theme, language and accent in this browser; without them, theme and language come from your profile.',
+    onlyNecessary: 'Necessary only',
+    withPreferences: 'Necessary and preferences',
+    savedNecessary: 'Done: only necessary cookies are used.',
+    savedAll: 'Done: preference cookies are used too.',
+  },
   login: {
     title: 'Sign in to Señal',
     subtitle: 'We send you an email with a code and a link to sign in. No passwords.',

@@ -70,6 +70,7 @@ Las clases de MASTER §5 (`.card`, `.btn`, `.input`, `.option`, `.feedback`, `.p
 | `PhaseStepper` | Fases del ciclo | Lista ordenada de `.tag` |
 | `RingProgress` | Minutos del día | Valor también en texto |
 | `ReviewSession` | Tarjeta de repaso y sus cuatro notas | La nota sugerida es la acción cobalto |
+| `CookieBanner` | Aceptar o rechazar las cookies de preferencias ([ADR-0028](../adr/0028-consentimiento-de-cookies.md)) | Capa flotante en `surface-2` (`.cookie-banner`); no bloquea; «Rechazar» y «Aceptar» son el mismo botón con borde, ninguno cobalto. La portada lleva el suyo, igual, en `public/landing` |
 
 ---
 

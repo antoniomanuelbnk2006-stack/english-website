@@ -131,6 +131,8 @@ export function BottomNav() {
   return (
     <nav
       aria-label={t('nav.main')}
+      // El aviso de cookies se coloca por encima de esta barra (globals.css, `.cookie-banner`).
+      data-bottom-nav=""
       className="fixed inset-x-0 bottom-0 z-30 border-t border-surface-2 bg-surface pb-[env(safe-area-inset-bottom)] md:hidden"
     >
       <ul className="flex h-16 items-stretch">

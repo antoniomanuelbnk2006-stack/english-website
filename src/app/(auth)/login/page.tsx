@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Logo } from '@/components/shell/logo';
 import { LoginForm } from '@/features/auth/components/login-form';
 import { LINK_ERROR } from '@/features/auth/lib/confirm';
+import { COOKIE_POLICY_URL } from '@/lib/consent';
 import { env } from '@/lib/env';
 import { getT } from '@/lib/i18n/server';
 
@@ -35,6 +36,11 @@ export default async function LoginPage({ searchParams }: PageProps<'/login'>) {
           </p>
         ) : null}
         <LoginForm withPassword={withPassword} />
+        <p className="text-caption text-muted">
+          <a href={COOKIE_POLICY_URL} className="underline underline-offset-4 hover:text-text">
+            {t('consent.policy')}
+          </a>
+        </p>
       </div>
     </main>
   );

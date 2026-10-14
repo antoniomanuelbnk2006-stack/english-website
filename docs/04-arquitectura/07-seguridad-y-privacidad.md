@@ -147,6 +147,8 @@ En la fase 1 de una lección de escucha, el cliente **no recibe** la transcripci
 
 Aunque el único interesado seas tú:
 - **Minimización:** solo se guarda lo necesario para el aprendizaje. Sin analítica de terceros por defecto.
+- **Cookies:** las decide quien visita la web ([ADR-0028](../adr/0028-consentimiento-de-cookies.md)). Las necesarias (la sesión, la propia decisión y lo que está a medias) van siempre; las de preferencias (`senal_theme`, `senal_locale` y el acento, en almacenamiento local) solo si se aceptan, y sin ellas el tema y el idioma salen del perfil. El aviso no bloquea y «Rechazar» pesa lo mismo que «Aceptar». La decisión se cambia en Ajustes, en el pie de la portada y en la política, `/landing/cookies.html`, que hay que actualizar cada vez que la web guarde algo nuevo en el navegador. Las fotos de Wix y el audio de Supabase se piden sin credenciales: no hay cookies de terceros.
+- **Política de privacidad y condiciones de uso:** no hay. Si la web se abre a más gente, hacen falta antes.
 - **Ubicación:** proyecto de Supabase en **región de la UE**; R2 con *location hint* en Europa; región de funciones de Vercel cercana a Supabase si tu plan lo permite (menos latencia).
 - **Exportar y borrar:** desde Ajustes (JSON completo y borrado de la cuenta con cascada).
 - **Sentry (si lo usas):** sin IP ni cuerpos de petición; filtrado de PII activado.

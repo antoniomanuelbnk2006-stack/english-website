@@ -90,6 +90,7 @@ Next.js 16 (App Router, Turbopack, `proxy.ts`) · React 19.2 · TypeScript estri
 6. Textos de interfaz en español vía `src/lib/i18n/es.ts`; contenido en inglés con `lang="en"`.
 7. Accesibilidad: elementos interactivos reales, foco visible, todo usable con teclado.
 8. **Mensajes de commit en inglés** (Conventional Commits): el dueño practica *writing* con ellos.
+9. Las cookies las decide quien visita la web ([ADR-0028](docs/adr/0028-consentimiento-de-cookies.md)). Lo nuevo que se guarde en el navegador (cookie o almacenamiento local) se clasifica en `src/lib/consent.ts`: una preferencia solo se guarda si `preferencesAllowed()`. Y se añade a la política, `public/landing/cookies.html`.
 
 ## Contenido
 

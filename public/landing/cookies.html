@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de cookies · Señal</title>
+<meta name="description" content="Qué guarda Señal en tu navegador, para qué sirve cada cosa y cómo aceptarlo o rechazarlo.">
+<meta name="theme-color" content="#171721">
+<link rel="preload" href="/landing/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/landing/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/landing/styles.css">
+</head>
+<body>
+<a class="skip btn btn-primary" href="#contenido">Ir al contenido principal</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="/landing/index.html"><img src="/landing/logo.png" alt="Señal" width="114" height="35"></a>
+    <nav aria-label="Principal">
+    <ul class="links">
+      <li><a href="/landing/index.html">Inicio</a></li>
+      <li><a href="/landing/index.html#secciones">Estudiar</a></li>
+      <li><a href="/landing/nosotros.html">Nosotros</a></li>
+      <li><a href="/landing/contacto.html">Contacto</a></li>
+    </ul>
+    </nav>
+    <a class="btn btn-ghost nav-cta" href="/login">Entrar</a>
+    <button class="menu-btn" type="button" aria-label="Abrir el menú" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main id="contenido">
+  <!-- Lo que dice esta página tiene que coincidir con src/lib/consent.ts (ADR-0028). -->
+  <article class="section legal-text">
+    <h1 class="heading-lg">Política de cookies</h1>
+    <p class="lead">Qué guarda Señal en tu navegador, para qué sirve cada cosa y cómo decides tú.</p>
+    <p class="muted">Última actualización: 14 de octubre de 2026.</p>
+
+    <h2 class="subheading">Lo esencial</h2>
+    <ul class="bullets">
+      <li>Señal solo usa cookies propias. No hay cookies de análisis ni de publicidad, y no se comparte nada con terceros.</li>
+      <li>Las <strong>necesarias</strong> van siempre, porque sin ellas no se puede entrar. Las de <strong>preferencias</strong> solo se guardan si las aceptas.</li>
+      <li>Rechazarlas no te quita nada: la web funciona igual. Y puedes cambiar de opinión cuando quieras, aquí mismo.</li>
+    </ul>
+
+    <div class="panel cookie-choice">
+      <p><strong>Tu decisión:</strong> <span data-cookie-state>para verla hace falta JavaScript.</span></p>
+      <div class="cookie-actions">
+        <button class="btn btn-secondary" type="button" data-cookie-choice="necessary">Solo las necesarias</button>
+        <button class="btn btn-secondary" type="button" data-cookie-choice="all">Necesarias y de preferencias</button>
+      </div>
+    </div>
+
+    <h2 class="subheading">Cookies necesarias</h2>
+    <p>Van siempre. Son las que hacen falta para dar el servicio que pides.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Nombre</th><th scope="col">Para qué sirve</th><th scope="col">Cuánto dura</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><code>sb-…-auth-token</code></th><td>Mantiene tu sesión iniciada después de entrar. Solo existe si entras en la app.</td><td>Hasta que cierras sesión; como máximo, 400 días.</td></tr>
+          <tr><th scope="row"><code>sb-…-code-verifier</code></th><td>Comprueba que el enlace de acceso que te llega por correo se abre en el mismo navegador que lo pidió. Solo existe si pides ese correo.</td><td>Hasta que entras con el enlace; como máximo, 400 días.</td></tr>
+          <tr><th scope="row"><code>senal_consent</code></th><td>Recuerda lo que has decidido sobre las cookies, para no preguntártelo en cada visita.</td><td>6 meses. Después se vuelve a preguntar.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Mientras usas la app, el navegador guarda además lo que tienes a medias, para que no lo pierdas: el borrador del texto que estás escribiendo y el examen que has empezado, que se borran al entregarlos o al descartarlos, y los textos del Writing de un simulacro, que se borran al cerrar la pestaña. No son cookies: están en el almacenamiento del navegador y no salen de él.</p>
+
+    <h2 class="subheading">Cookies de preferencias</h2>
+    <p>Solo si las aceptas. Recuerdan en este navegador cómo te gusta ver Señal.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Nombre</th><th scope="col">Para qué sirve</th><th scope="col">Cuánto dura</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><code>senal_theme</code></th><td>El tema que eliges en Ajustes: oscuro, claro o según el sistema.</td><td>1 año.</td></tr>
+          <tr><th scope="row"><code>senal_locale</code></th><td>El idioma de la interfaz que eliges en Ajustes.</td><td>1 año.</td></tr>
+          <tr><th scope="row"><code>senal:accent</code></th><td>El acento, británico o americano, que eliges al practicar la pronunciación. No es una cookie: se guarda en el almacenamiento local del navegador.</td><td>Hasta que lo cambias o rechazas estas cookies.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Si las rechazas, se borran las que hubiera. El tema y el idioma se toman entonces de tu perfil cada vez que entras, y el acento vuelve al británico en cada visita.</p>
+
+    <h2 class="subheading">Lo que no hay</h2>
+    <ul class="bullets">
+      <li>Ninguna herramienta de medición de visitas, ni píxeles de redes sociales, ni publicidad.</li>
+      <li>Las fotos de la portada se descargan de los servidores de Wix y el audio de las lecciones, de los de Supabase. Tu navegador se conecta a ellos para bajar esos archivos, pero Señal los pide sin cookies: ni las envía ni las guarda.</li>
+    </ul>
+
+    <h2 class="subheading">Cómo borrarlas desde el navegador</h2>
+    <p>Además de los botones de esta página, cualquier navegador deja ver y borrar las cookies de un sitio desde su configuración de privacidad. Si borras <code>senal_consent</code>, Señal volverá a preguntarte; si borras la de la sesión, tendrás que volver a entrar.</p>
+
+    <h2 class="subheading">Contacto</h2>
+    <p>Para cualquier duda sobre esta política, escribe a <a href="mailto:antoniomanuelbnk2006@gmail.com">antoniomanuelbnk2006@gmail.com</a>.</p>
+  </article>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="about">
+      <a class="logo" href="/landing/index.html"><img src="/landing/logo.png" alt="Señal" width="114" height="35"></a>
+      <p>Plataforma de enseñanza remota diseñada para el autoestudio de inglés con herramientas completas desde A1 hasta C2.</p>
+    </div>
+    <ul>
+      <li><a href="mailto:antoniomanuelbnk2006@gmail.com">antoniomanuelbnk2006@gmail.com</a></li>
+      <li><a href="tel:+34681974131">+34 681 974 131</a></li>
+      <li>41805 Sevilla, España</li>
+    </ul>
+    <p class="legal"><a href="/landing/cookies.html" aria-current="page">Política de cookies</a><button type="button" data-cookies>Configurar cookies</button></p>
+    <p class="copy">© 2026 Señal. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<script src="/landing/app.js"></script>
+</body>
+</html>

@@ -64,6 +64,23 @@ export default defineConfig({
     timezoneId: 'Europe/Madrid',
     // Sin transiciones: axe mide los colores finales y no un fotograma a medio cambiar de tema.
     contextOptions: { reducedMotion: 'reduce' },
+    // Los tests arrancan con las cookies ya aceptadas, para que el aviso (ADR-0028) no se cruce
+    // en cada pantalla. Los suyos (cookies.spec.ts) empiezan como una visita nueva.
+    storageState: {
+      cookies: [
+        {
+          name: 'senal_consent',
+          value: 'v1.all',
+          domain: 'localhost',
+          path: '/',
+          expires: -1,
+          httpOnly: false,
+          secure: false,
+          sameSite: 'Lax',
+        },
+      ],
+      origins: [],
+    },
     // Micrófono de mentira (un tono) y permiso concedido: el simulador de Speaking graba de
     // verdad sin pedir nada ni depender del equipo donde corren los tests.
     launchOptions: {

@@ -255,11 +255,41 @@ fieldset { min-width: 0; padding: 0; border: 0; }
 .foot .about { display: grid; gap: 16px; justify-items: start; max-width: 44ch; }
 .foot ul { display: grid; gap: 8px; align-content: start; text-align: right; }
 .foot a:hover { color: var(--text); }
+.foot .legal { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0 24px; justify-content: center; font-size: 0.75rem; line-height: 1.33; }
+.foot .legal > * { display: inline-flex; align-items: center; min-height: 44px; }
+.foot .legal button { padding: 0; border: 0; background: none; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; }
+.foot .legal button:hover { color: var(--text); }
 .foot .copy { grid-column: 1 / -1; font-size: 0.75rem; line-height: 1.33; text-align: center; }
+
+/* Textos legales: una columna de lectura, como las pantallas de ejercicio de la app. */
+.legal-text { max-width: calc(680px + 2 * var(--gutter)); }
+.legal-text > * + * { margin-top: 16px; }
+.legal-text h2 { margin-top: 48px; }
+.legal-text a { color: var(--accent-text); text-underline-offset: 4px; }
+.legal-text code { font: inherit; color: var(--text); overflow-wrap: anywhere; }
+.bullets { display: grid; gap: 8px; padding-left: 20px; list-style: disc; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.875rem; line-height: 1.4; text-align: left; }
+th, td { padding: 12px 16px 12px 0; border-top: 1px solid var(--surface-2); vertical-align: top; }
+thead th { border-top: 0; color: var(--muted); font-weight: 400; }
+tbody th { font-weight: 420; white-space: nowrap; }
+td { color: var(--muted); }
+.cookie-choice { display: grid; gap: 16px; margin-top: 32px; }
+.cookie-choice [aria-pressed='true'] { border-color: var(--accent); color: var(--accent-text); }
+
+/* Aviso de cookies: capa flotante en surface-2 con el borde de MASTER. No tapa la página ni
+   impide usarla. «Rechazar» y «Aceptar» pesan lo mismo: ninguna es la acción cobalto. */
+.cookie-banner { position: fixed; inset: auto var(--gutter) 24px; z-index: 40; display: grid; gap: 16px; max-width: 680px; margin-inline: auto; padding: 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-2); font-size: 0.875rem; line-height: 1.4; }
+.cookie-banner a { color: var(--accent-text); text-underline-offset: 4px; }
+.cookie-banner .btn-ghost:hover { background: var(--surface); }
+.cookie-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.has-cookie-banner { padding-bottom: 224px; }
 
 @media (min-width: 640px) {
   :root { --gutter: 24px; }
   .card, .panel { padding: 32px; }
+  .cookie-banner { padding: 24px; }
+  .has-cookie-banner { padding-bottom: 168px; }
 }
 @media (min-width: 1024px) {
   :root { --gutter: 32px; }

@@ -36,6 +36,113 @@ if (form && contact) {
   });
 }
 
+// Aviso de cookies (ADR-0028). Escribe la misma cookie que la app (src/lib/consent.ts), así que
+// la decisión vale para toda la web. Las necesarias van siempre; aquí se aceptan o se rechazan
+// las de preferencias. Si cambia algo aquí, cambia también en ese fichero (un test lo vigila).
+{
+  const NAME = 'senal_consent';
+  const VERSION = 'v1';
+  const MAX_AGE = 15724800; // seis meses, en segundos
+  const PREFERENCE_COOKIES = ['senal_theme', 'senal_locale'];
+  const PREFERENCE_STORAGE = ['senal:accent'];
+  const CHOICES = { necessary: 'solo las necesarias', all: 'necesarias y de preferencias' };
+  const attributes = `Path=/; SameSite=Lax${window.location.protocol === 'https:' ? '; Secure' : ''}`;
+
+  const read = () => {
+    for (const pair of document.cookie.split(';')) {
+      const [name, value = ''] = pair.trim().split('=');
+      const parts = value.split('.');
+      if (name === NAME && parts.length === 2 && parts[0] === VERSION && parts[1] in CHOICES) {
+        return parts[1];
+      }
+    }
+    return null;
+  };
+
+  const save = (choice) => {
+    document.cookie = `${NAME}=${VERSION}.${choice}; Max-Age=${MAX_AGE}; ${attributes}`;
+    if (choice === 'all') return;
+    // Rechazar deshace lo que se hubiera aceptado antes.
+    for (const name of PREFERENCE_COOKIES) document.cookie = `${name}=; Max-Age=0; ${attributes}`;
+    try {
+      for (const key of PREFERENCE_STORAGE) window.localStorage.removeItem(key);
+    } catch {
+      // Sin almacenamiento (modo privado estricto) no había nada que borrar.
+    }
+  };
+
+  // En la página de la política: la decisión actual y los botones para cambiarla.
+  const state = document.querySelector('[data-cookie-state]');
+  const options = document.querySelectorAll('[data-cookie-choice]');
+  const show = () => {
+    const choice = read();
+    if (state) state.textContent = choice ? `${CHOICES[choice]}.` : 'todavía no has elegido.';
+    for (const option of options) {
+      option.setAttribute('aria-pressed', String(option.dataset.cookieChoice === choice));
+    }
+  };
+
+  let banner = null;
+  const close = () => {
+    banner?.remove();
+    banner = null;
+    document.body.classList.remove('has-cookie-banner');
+  };
+  const decide = (choice) => {
+    save(choice);
+    close();
+    show();
+  };
+
+  const open = () => {
+    if (banner) return banner;
+    banner = document.createElement('section');
+    banner.className = 'cookie-banner';
+    banner.setAttribute('aria-label', 'Cookies');
+
+    const text = document.createElement('p');
+    text.append(
+      'Señal usa cookies necesarias para que puedas entrar y, si aceptas, de preferencias: tema, idioma y acento. No hay análisis ni publicidad. ',
+    );
+    const more = document.createElement('a');
+    more.href = '/landing/cookies.html';
+    more.textContent = 'Más información';
+    text.append(more);
+
+    // «Rechazar» y «Aceptar» pesan lo mismo: mismo botón, uno al lado del otro.
+    const actions = document.createElement('div');
+    actions.className = 'cookie-actions';
+    for (const [choice, label] of [
+      ['necessary', 'Rechazar'],
+      ['all', 'Aceptar'],
+    ]) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'btn btn-ghost';
+      button.textContent = label;
+      button.addEventListener('click', () => decide(choice));
+      actions.append(button);
+    }
+
+    banner.append(text, actions);
+    document.body.append(banner);
+    // La página gana por abajo el sitio del aviso: todo se puede subir por encima de él.
+    document.body.classList.add('has-cookie-banner');
+    return banner;
+  };
+
+  for (const option of options) {
+    option.addEventListener('click', () => decide(option.dataset.cookieChoice));
+  }
+  // «Configurar cookies», en el pie: vuelve a abrir el aviso y lleva el foco a sus botones.
+  for (const trigger of document.querySelectorAll('[data-cookies]')) {
+    trigger.addEventListener('click', () => open().querySelector('button').focus());
+  }
+
+  show();
+  if (read() === null) open();
+}
+
 // Portada: acercamiento al portátil con el scroll (design-system/senal/pages/portada.md, «Hero»).
 // La escena se acerca a la pantalla del portátil hasta que la copia de «Hoy» que lleva dentro
 // ocupa la ventana; en ese momento se cambia por la misma pantalla a tamaño real, que se ve nítida.

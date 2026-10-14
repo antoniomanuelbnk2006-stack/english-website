@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from 'next';
 import { Archivo, Inter } from 'next/font/google';
 import { cookies } from 'next/headers';
+import { CookieBanner } from '@/features/consent/components/cookie-banner';
+import { CONSENT_COOKIE, parseConsent } from '@/lib/consent';
 import { getDictionary } from '@/lib/i18n';
 import { I18nProvider } from '@/lib/i18n/client';
-import { getLocale } from '@/lib/i18n/server';
-import { DEFAULT_THEME, THEME_COOKIE, isTheme } from '@/lib/theme';
+import { getUiPreferences } from '@/lib/preferences';
 import '@/styles/globals.css';
 
 // MASTER §3: Inter (variable) para el cuerpo y Archivo para los titulares, con su eje de anchura
@@ -31,9 +32,9 @@ export const viewport: Viewport = {
 
 export default async function RootLayout({ children }: LayoutProps<'/'>) {
   // Leer cookies hace dinámicas todas las páginas, que es lo que exige la CSP con nonce.
-  const [locale, cookieStore] = await Promise.all([getLocale(), cookies()]);
-  const themeCookie = cookieStore.get(THEME_COOKIE)?.value;
-  const theme = isTheme(themeCookie) ? themeCookie : DEFAULT_THEME;
+  const [{ theme, locale }, cookieStore] = await Promise.all([getUiPreferences(), cookies()]);
+  // Mientras no haya decisión sobre las cookies, se pregunta (ADR-0028).
+  const undecided = parseConsent(cookieStore.get(CONSENT_COOKIE)?.value) === null;
 
   return (
     <html
@@ -44,6 +45,7 @@ export default async function RootLayout({ children }: LayoutProps<'/'>) {
       <body className="min-h-full bg-canvas text-text">
         <I18nProvider locale={locale} dictionary={getDictionary(locale)}>
           {children}
+          {undecided ? <CookieBanner /> : null}
         </I18nProvider>
       </body>
     </html>

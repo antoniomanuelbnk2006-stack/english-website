@@ -43,6 +43,20 @@ export const es = {
     useOfEnglish: 'Use of English',
     exams: 'Exámenes',
   },
+  consent: {
+    title: 'Cookies',
+    body: 'Señal usa cookies necesarias para que puedas entrar y, si aceptas, de preferencias: tema, idioma y acento. No hay análisis ni publicidad.',
+    more: 'Más información',
+    reject: 'Rechazar',
+    accept: 'Aceptar',
+    policy: 'Política de cookies',
+    settingsBody:
+      'Las cookies necesarias (tu sesión y esta decisión) van siempre. Las de preferencias recuerdan en este navegador el tema, el idioma y el acento; sin ellas, el tema y el idioma salen de tu perfil.',
+    onlyNecessary: 'Solo las necesarias',
+    withPreferences: 'Necesarias y de preferencias',
+    savedNecessary: 'Hecho: solo se usan las cookies necesarias.',
+    savedAll: 'Hecho: también se usan las cookies de preferencias.',
+  },
   login: {
     title: 'Entra en Señal',
     subtitle: 'Te enviamos un correo con un código y un enlace para entrar. Sin contraseñas.',
