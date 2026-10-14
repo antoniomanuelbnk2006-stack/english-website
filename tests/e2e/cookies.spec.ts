@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 import { expectAccessible } from './axe';
-import { resetDatabase, signIn, trackErrors } from './session';
+import { acceptPrivacy, resetDatabase, signIn, trackErrors } from './session';
 
 // Consentimiento de cookies (ADR-0028). El resto de tests arranca con las cookies aceptadas
 // (playwright.config.ts); estos empiezan como una visita nueva: sin ninguna decisión.
@@ -18,6 +18,32 @@ async function cookie(page: Page, name: string): Promise<string | undefined> {
 
 const storedAccent = (page: Page) =>
   page.evaluate(() => window.localStorage.getItem('senal:accent'));
+
+/**
+ * ¿Se recuerda la sesión al cerrar el navegador? (ADR-0030). `true` si sus cookies caducan dentro
+ * de casi 400 días; `false` si no tienen caducidad y el navegador las borra al cerrarse.
+ */
+async function sessionRemembered(page: Page): Promise<boolean> {
+  const session = (await page.context().cookies()).filter((item) =>
+    /^sb-.+-auth-token(\.\d+)?$/.test(item.name),
+  );
+  expect(session.length).toBeGreaterThan(0);
+  const inAYear = Date.now() / 1000 + 365 * 24 * 60 * 60;
+  if (session.every((item) => item.expires > inAYear)) return true;
+  expect(session.every((item) => item.expires === -1)).toBe(true);
+  return false;
+}
+
+/** Cerrar el navegador y volver a abrirlo: solo quedan las cookies que tienen caducidad. */
+async function restartBrowser(page: Page): Promise<void> {
+  const context = page.context();
+  const kept = (await context.cookies()).filter((item) => item.expires !== -1);
+  await context.clearCookies();
+  await context.addCookies(kept);
+}
+
+const privacy = (page: Page) =>
+  page.getByRole('checkbox', { name: /acepto la política de privacidad/ });
 
 /** El aviso flota entero dentro de la pantalla y, en el móvil, por encima de la barra de la app. */
 async function expectFloating(page: Page): Promise<void> {
@@ -52,6 +78,7 @@ test('el aviso deja rechazar o aceptar con el mismo peso y no impide usar la pá
   expect(await page.context().cookies()).toEqual([]);
   await page.setViewportSize({ width: 360, height: 640 });
   await page.getByLabel('Email').fill('alguien@example.com');
+  await acceptPrivacy(page);
   await page.getByRole('button', { name: 'Entrar con mi contraseña' }).click();
   await expect(page.getByLabel('Contraseña')).toBeVisible();
   await expectFloating(page);
@@ -75,6 +102,8 @@ test('al rechazar no se guardan preferencias: el tema y el idioma salen del perf
 
   await signIn(page);
   await expect(banner(page)).toBeHidden();
+  // La sesión no se recuerda: dura lo que el navegador abierto.
+  expect(await sessionRemembered(page)).toBe(false);
 
   // El acento elegido vale para la visita, pero no se guarda en el navegador.
   await page.goto('/pronunciar/libre?texto=hello');
@@ -99,6 +128,16 @@ test('al rechazar no se guardan preferencias: el tema y el idioma salen del perf
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
   await expectAccessible(page);
 
+  // Al cerrar el navegador y volver, hay que entrar otra vez y volver a aceptar la privacidad.
+  // La decisión sobre las cookies sí se recuerda: no se vuelve a preguntar.
+  await restartBrowser(page);
+  await page.goto('/hoy');
+  await expect(page).toHaveURL(/\/login$/);
+  await expect(privacy(page)).not.toBeChecked();
+  await expect(banner(page)).toBeHidden();
+  await signIn(page);
+  await expect(page.getByRole('heading', { level: 1, name: 'Today' })).toBeVisible();
+
   expect(errors).toEqual([]);
 });
 
@@ -114,6 +153,11 @@ test('sin decidir tampoco se guardan, y el aviso sigue ahí', async ({ page }) =
   expect(await cookie(page, 'senal_theme')).toBeUndefined();
   expect(await cookie(page, 'senal_locale')).toBeUndefined();
   await expect(banner(page)).toBeVisible();
+
+  // Sin decidir, la sesión tampoco se recuerda. Al aceptar desde el aviso, pasa a recordarse.
+  expect(await sessionRemembered(page)).toBe(false);
+  await banner(page).getByRole('button', { name: 'Aceptar' }).click();
+  await expect.poll(() => sessionRemembered(page)).toBe(true);
 });
 
 test('al aceptar se guardan, y al cambiar de opinión en Ajustes se borran', async ({ page }) => {
@@ -124,6 +168,7 @@ test('al aceptar se guardan, y al cambiar de opinión en Ajustes se borran', asy
   expect(await cookie(page, 'senal_consent')).toBe('v1.all');
 
   await signIn(page);
+  expect(await sessionRemembered(page)).toBe(true);
   await page.goto('/pronunciar/libre?texto=hello');
   await page.getByText('Americano', { exact: true }).click();
   expect(await storedAccent(page)).toBe('en-US');
@@ -153,6 +198,8 @@ test('al aceptar se guardan, y al cambiar de opinión en Ajustes se borran', asy
   expect(await cookie(page, 'senal_theme')).toBeUndefined();
   expect(await cookie(page, 'senal_locale')).toBeUndefined();
   expect(await storedAccent(page)).toBeNull();
+  // La sesión abierta deja de recordarse en el momento, sin esperar a que se renueve.
+  await expect.poll(() => sessionRemembered(page)).toBe(false);
   // El tema no se pierde: sigue saliendo del perfil.
   await page.reload();
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
@@ -165,6 +212,12 @@ test('al aceptar se guardan, y al cambiar de opinión en Ajustes se borran', asy
     .click();
   await expect(page.getByText('Hecho: también se usan las cookies de preferencias.')).toBeVisible();
   expect(await cookie(page, 'senal_consent')).toBe('v1.all');
+
+  // Y vuelve a recordarse: al cerrar el navegador y volver, sigue dentro.
+  await expect.poll(() => sessionRemembered(page)).toBe(true);
+  await restartBrowser(page);
+  await page.goto('/hoy');
+  await expect(page).toHaveURL(/\/hoy$/);
 
   expect(errors).toEqual([]);
 });

@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { E2E } from '../../playwright.config';
 import { expectAccessible } from './axe';
-import { queryDatabase, resetDatabase } from './session';
+import { acceptPrivacy, queryDatabase, resetDatabase } from './session';
 
 // Flujos de acceso que no necesitan una sesión real (ni un Supabase detrás).
 
@@ -15,7 +15,15 @@ test.describe('sin sesión', () => {
   }
 
   test('la página de presentación se ve sin sesión, con sus ficheros', async ({ request }) => {
-    for (const path of ['index.html', 'nosotros.html', 'contacto.html', 'styles.css', 'app.js']) {
+    for (const path of [
+      'index.html',
+      'nosotros.html',
+      'contacto.html',
+      'cookies.html',
+      'privacidad.html',
+      'styles.css',
+      'app.js',
+    ]) {
       const response = await request.get(`/landing/${path}`, { maxRedirects: 0 });
       expect(response.status(), path).toBe(200);
     }
@@ -54,7 +62,13 @@ test.describe('sin sesión', () => {
     page,
     request,
   }) => {
-    const pages = ['/', '/landing/index.html', '/landing/nosotros.html', '/landing/contacto.html'];
+    const pages = [
+      '/',
+      '/landing/index.html',
+      '/landing/nosotros.html',
+      '/landing/contacto.html',
+      '/landing/privacidad.html',
+    ];
     for (const path of pages) {
       const response = await request.get(path, { maxRedirects: 0 });
       expect(response.status(), path).toBe(200);
@@ -106,6 +120,22 @@ test.describe('sin sesión', () => {
     await page.getByLabel('Correo electrónico *').fill('ana@example.test');
     await page.getByLabel('B1').check();
     await page.getByLabel('Mensaje *').fill('Hola.');
+
+    // ADR-0029: sin aceptar la política de privacidad no se envía. La casilla empieza sin marcar.
+    const accept = page.getByRole('checkbox', {
+      name: /He leído y acepto la política de privacidad/,
+    });
+    await expect(accept).not.toBeChecked();
+    await expect(
+      page.getByRole('link', { name: 'política de privacidad' }).first(),
+    ).toHaveAttribute('href', '/landing/privacidad.html');
+    await page.getByRole('button', { name: 'Solicitar información' }).click();
+    await expect(page.locator('#nota')).toHaveText('');
+    expect(await accept.evaluate((input: HTMLInputElement) => input.validity.valueMissing)).toBe(
+      true,
+    );
+
+    await accept.check();
     await page.getByRole('button', { name: 'Solicitar información' }).click();
     await expect(page.locator('#nota')).toHaveText(
       'Se abrirá tu programa de correo con el mensaje preparado.',
@@ -114,6 +144,52 @@ test.describe('sin sesión', () => {
     // Y en el script no queda ninguna dirección escrita a mano.
     const script = await (await request.get('/landing/app.js')).text();
     expect(script).not.toMatch(/mailto:[\w.-]+@/);
+  });
+
+  // ADR-0029: el pie enseña solo el nombre y el correo del responsable, y enlaza las dos políticas.
+  test('el pie de cada página pública lleva el nombre y el correo, sin teléfono ni dirección', async ({
+    page,
+  }) => {
+    for (const path of [
+      '/',
+      '/landing/nosotros.html',
+      '/landing/contacto.html',
+      '/landing/cookies.html',
+      '/landing/privacidad.html',
+    ]) {
+      await page.goto(path);
+      const foot = page.locator('footer');
+      await expect(foot.getByText('Antonio Manuel Garces', { exact: true }), path).toBeVisible();
+      await expect(foot.locator('a[href^="mailto:"]'), path).toHaveCount(1);
+      await expect(foot.locator('a[href^="tel:"]'), path).toHaveCount(0);
+      await expect(foot, path).not.toContainText('Sevilla');
+      for (const [name, href] of [
+        ['Política de privacidad', '/landing/privacidad.html'],
+        ['Política de cookies', '/landing/cookies.html'],
+      ] as const) {
+        await expect(foot.getByRole('link', { name }), path).toHaveAttribute('href', href);
+      }
+    }
+  });
+
+  test('la política de privacidad es pública, dice quién es el responsable y se enlaza desde el acceso', async ({
+    page,
+  }) => {
+    await page.goto('/landing/privacidad.html');
+    await expect(
+      page.getByRole('heading', { level: 1, name: 'Política de privacidad' }),
+    ).toBeVisible();
+    await expect(
+      page.getByRole('heading', { level: 2, name: 'Quién es el responsable' }),
+    ).toBeVisible();
+    await expect(page.locator('main')).toContainText('Antonio Manuel Garces');
+    await expectAccessible(page);
+
+    await page.goto('/login');
+    await expect(page.getByRole('link', { name: 'Política de privacidad' })).toHaveAttribute(
+      'href',
+      '/landing/privacidad.html',
+    );
   });
 
   test('las rutas de API responden 401 en vez de redirigir', async ({ request }) => {
@@ -204,6 +280,7 @@ test.describe('pantalla de acceso', () => {
 
   test('avisa si el email no es válido', async ({ page }) => {
     await page.getByLabel('Email').fill('no-es-un-email');
+    await acceptPrivacy(page);
     await page.getByRole('button', { name: 'Enviarme el correo' }).click();
     await expect(page.locator('form').getByRole('alert')).toHaveText('Ese email no parece válido.');
     await expect(page.getByLabel('Email')).toHaveAttribute('aria-invalid', 'true');
@@ -211,6 +288,7 @@ test.describe('pantalla de acceso', () => {
 
   test('un email sin acceso recibe la misma respuesta y no puede entrar', async ({ page }) => {
     await page.getByLabel('Email').fill('otra@persona.com');
+    await acceptPrivacy(page);
     await page.getByRole('button', { name: 'Enviarme el correo' }).click();
 
     // No se revela si el email tiene acceso: se pasa igualmente al paso del código.
@@ -227,6 +305,7 @@ test.describe('pantalla de acceso', () => {
 
   test('el código admite pegar con espacios y solo conserva 6 dígitos', async ({ page }) => {
     await page.getByLabel('Email').fill('otra@persona.com');
+    await acceptPrivacy(page);
     await page.getByRole('button', { name: 'Enviarme el correo' }).click();
     const code = page.getByLabel('Código de 6 dígitos');
     await code.fill('123 456');
@@ -236,10 +315,42 @@ test.describe('pantalla de acceso', () => {
     await expect(page.getByRole('button', { name: 'Entrar' })).toBeEnabled();
   });
 
+  // ADR-0030: la política de privacidad se acepta en cada acceso; la casilla empieza sin marcar.
+  test('sin aceptar la política de privacidad no se puede entrar', async ({ page }) => {
+    const privacy = page.getByRole('checkbox', { name: /acepto la política de privacidad/ });
+    await expect(privacy).not.toBeChecked();
+    await expect(page.getByRole('link', { name: 'política de privacidad' })).toHaveAttribute(
+      'href',
+      '/landing/privacidad.html',
+    );
+    await page.getByLabel('Email').fill(E2E.email);
+    for (const name of ['Entrar con mi contraseña', 'Enviarme el correo']) {
+      await page.getByRole('button', { name }).click();
+      await expect(page.locator('form').getByRole('alert')).toHaveText(
+        'Para entrar, acepta la política de privacidad.',
+      );
+      await expect(privacy).toHaveAttribute('aria-invalid', 'true');
+      await expect(page.getByLabel('Contraseña')).toHaveCount(0);
+      await expect(page.getByLabel('Código de 6 dígitos')).toHaveCount(0);
+    }
+
+    await privacy.check();
+    await expect(page.locator('form').getByRole('alert')).toHaveCount(0);
+    await page.getByRole('button', { name: 'Entrar con mi contraseña' }).click();
+    await expect(page.getByLabel('Contraseña')).toBeVisible();
+  });
+
   test('se puede completar solo con teclado y volver a cambiar el email', async ({ page }) => {
     await expect(page.getByLabel('Email')).toBeFocused();
     await page.keyboard.type('otra@persona.com');
+    // La casilla de la privacidad va justo después del email.
+    await page.keyboard.press('Tab');
+    await expect(
+      page.getByRole('checkbox', { name: /acepto la política de privacidad/ }),
+    ).toBeFocused();
+    await page.keyboard.press('Space');
     // Con contraseña activada, como en los tests, Intro pasa a escribirla (ADR-0021).
+    await page.keyboard.press('Shift+Tab');
     await page.keyboard.press('Enter');
     await expect(page.getByLabel('Contraseña')).toBeFocused();
     await page.getByRole('button', { name: 'Usar otro email' }).click();
@@ -257,6 +368,7 @@ test.describe('acceso con el enlace del correo', () => {
   test('abre sesión en el navegador que pidió el correo', async ({ page }) => {
     await page.goto('/login');
     await page.getByLabel('Email').fill(E2E.email);
+    await acceptPrivacy(page);
     await page.getByRole('button', { name: 'Enviarme el correo' }).click();
     await expect(page.getByRole('status')).toContainText(
       'o abre el enlace que trae en este mismo navegador',
@@ -285,6 +397,7 @@ test.describe('acceso con el enlace del correo', () => {
 
     // Pedido en un navegador y abierto en otro: tampoco entra.
     await page.getByLabel('Email').fill(E2E.email);
+    await acceptPrivacy(page);
     await page.getByRole('button', { name: 'Enviarme el correo' }).click();
     await expect(page.getByRole('status')).toBeVisible();
     const other = await (await browser.newContext()).newPage();
@@ -319,12 +432,14 @@ test.describe('acceso con contraseña', () => {
 
     // El correo sigue ahí: lleva al paso de siempre.
     await page.getByLabel('Email').fill(E2E.email);
+    await acceptPrivacy(page);
     await buttons.last().click();
     await expect(page.getByLabel('Código de 6 dígitos')).toBeFocused();
   });
 
   test('entra con el email y la contraseña, sin pasar por el correo', async ({ page }) => {
     await page.getByLabel('Email').fill(E2E.email);
+    await acceptPrivacy(page);
     await page.getByRole('button', { name: 'Entrar con mi contraseña' }).click();
     await expect(page.getByRole('status')).toHaveText(
       `Escribe tu contraseña para entrar como ${E2E.email}.`,
@@ -351,10 +466,12 @@ test.describe('acceso con contraseña', () => {
   }) => {
     // Hace falta un email con buena pinta para pasar a la contraseña.
     await page.getByLabel('Email').fill('no-es-un-email');
+    await acceptPrivacy(page);
     await page.getByRole('button', { name: 'Entrar con mi contraseña' }).click();
     await expect(page.locator('form').getByRole('alert')).toHaveText('Ese email no parece válido.');
 
     await page.getByLabel('Email').fill(E2E.email);
+    await acceptPrivacy(page);
     await page.getByRole('button', { name: 'Entrar con mi contraseña' }).click();
     const password = page.getByLabel('Contraseña');
     const enter = page.getByRole('button', { name: 'Entrar' });
@@ -377,6 +494,7 @@ test.describe('acceso con contraseña', () => {
 
     await page.getByRole('button', { name: 'Usar otro email' }).click();
     await page.getByLabel('Email').fill('otra@persona.com');
+    await acceptPrivacy(page);
     await page.getByRole('button', { name: 'Entrar con mi contraseña' }).click();
     await page.getByLabel('Contraseña').fill(E2E.password);
     await page.getByRole('button', { name: 'Entrar' }).click();
@@ -400,6 +518,7 @@ test.describe('bloqueo por intentos fallidos', () => {
     await resetDatabase(request);
     await page.goto('/login');
     await page.getByLabel('Email').fill(E2E.email);
+    await acceptPrivacy(page);
     await page.getByRole('button', { name: 'Entrar con mi contraseña' }).click();
   });
 

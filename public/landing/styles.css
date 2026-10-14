@@ -245,6 +245,12 @@ fieldset { min-width: 0; padding: 0; border: 0; }
 .radios label:has(:checked) { border-color: var(--accent); color: var(--accent-text); font-weight: 420; }
 .radios input { width: 16px; height: 16px; accent-color: var(--accent); }
 .form-note { min-height: 1.4em; margin-top: -8px; color: var(--muted); font-size: 0.875rem; line-height: 1.4; }
+/* Aceptar la política de privacidad: casilla sin marcar, obligatoria para enviar (ADR-0029). */
+.check { display: flex; gap: 12px; align-items: flex-start; }
+.check input { flex: none; width: 20px; height: 20px; margin: 12px 0 0; accent-color: var(--accent); cursor: pointer; }
+.check label { margin: 0; padding-block: 10px; font-weight: 400; cursor: pointer; }
+.check a, .form-legal a { color: var(--accent-text); text-underline-offset: 4px; }
+.form-legal { margin-top: -8px; color: var(--muted); font-size: 0.75rem; line-height: 1.33; }
 
 .faq { display: grid; max-width: 680px; margin: 48px auto 0; text-align: left; }
 .faq > div { padding-block: 24px; border-top: 1px solid var(--surface-2); }

@@ -1,6 +1,6 @@
 # ADR-0028 · Consentimiento de cookies: las necesarias siempre, las de preferencias solo si se aceptan
 
-- **Estado:** Aceptada
+- **Estado:** Aceptada (cuánto dura la sesión, modificado por [ADR-0030](0030-sesion-recordada-solo-con-cookies-aceptadas.md): solo se recuerda con las cookies aceptadas)
 - **Fecha:** 2026-10-14
 
 ## Contexto

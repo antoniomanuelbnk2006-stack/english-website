@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { saveConsent } from '@/features/consent/lib/browser';
+import { applyConsentToSession } from '@/features/consent/server/actions';
 import { COOKIE_POLICY_URL, type Consent } from '@/lib/consent';
 import { useT } from '@/lib/i18n/client';
 
@@ -20,8 +21,9 @@ export function CookieBanner() {
   function decide(choice: Consent) {
     saveConsent(choice);
     setOpen(false);
-    // El servidor vuelve a pintar con la decisión ya tomada (y sin las cookies que se hayan borrado).
-    router.refresh();
+    // Si hay sesión, pasa a recordarse o no según la decisión (ADR-0030). Después el servidor
+    // vuelve a pintar con la decisión ya tomada (y sin las cookies que se hayan borrado).
+    void applyConsentToSession().finally(() => router.refresh());
   }
 
   return (

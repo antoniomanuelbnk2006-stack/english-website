@@ -1,7 +1,7 @@
 import { expect, test, type APIRequestContext, type Page } from '@playwright/test';
 import { E2E } from '../../playwright.config';
 import { expectAccessible } from './axe';
-import { queryDatabase, resetDatabase, signIn, trackErrors } from './session';
+import { acceptPrivacy, queryDatabase, resetDatabase, signIn, trackErrors } from './session';
 
 // Elegir el nivel (A1–C2) y los ejercicios de Use of English con formato de examen.
 // El contenido de prueba solo tiene lecciones B1 y ejercicios B2: así se ve también qué pasa
@@ -17,6 +17,7 @@ const setLevel = (request: APIRequestContext, level: string | null) =>
 async function logIn(page: Page) {
   await page.goto('/login');
   await page.getByLabel('Email').fill(E2E.email);
+  await acceptPrivacy(page);
   await page.getByRole('button', { name: 'Enviarme el correo' }).click();
   await page.getByLabel('Código de 6 dígitos').fill(E2E.otp);
   await page.getByRole('button', { name: 'Entrar' }).click();

@@ -8,7 +8,7 @@ import { ConsentSettings } from '@/features/consent/components/consent-settings'
 import { SettingsForm } from '@/features/profile/components/settings-form';
 import { getProfile } from '@/features/profile/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
-import { CONSENT_COOKIE, COOKIE_POLICY_URL, parseConsent } from '@/lib/consent';
+import { CONSENT_COOKIE, COOKIE_POLICY_URL, PRIVACY_POLICY_URL, parseConsent } from '@/lib/consent';
 import { getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -65,6 +65,11 @@ export default async function SettingsPage() {
           <p>{t('settings.aboutContent')}</p>
           <p>{t('settings.aboutVoices')}</p>
           <p>{t('settings.aboutWordlists')}</p>
+          <p>
+            <a href={PRIVACY_POLICY_URL} className="text-accent-text underline underline-offset-4">
+              {t('consent.privacy')}
+            </a>
+          </p>
         </Panel>
       </PageSections>
     </PageContainer>

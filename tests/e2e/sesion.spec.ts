@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { E2E } from '../../playwright.config';
 import { expectAccessible } from './axe';
-import { queryDatabase, resetDatabase, signIn, trackErrors } from './session';
+import { acceptPrivacy, queryDatabase, resetDatabase, signIn, trackErrors } from './session';
 
 test.beforeEach(async ({ request }) => {
   await resetDatabase(request);
@@ -84,6 +84,7 @@ test('con sesión, /login lleva a Hoy; al cerrar sesión se vuelve al acceso', a
 test('un código incorrecto no abre sesión', async ({ page }) => {
   await page.goto('/login');
   await page.getByLabel('Email').fill('owner@example.invalid');
+  await acceptPrivacy(page);
   await page.getByRole('button', { name: 'Enviarme el correo' }).click();
   await page.getByLabel('Código de 6 dígitos').fill('000000');
   await page.getByRole('button', { name: 'Entrar' }).click();
@@ -130,6 +131,7 @@ test('una sesión de un usuario que ya no existe lleva a entrar de nuevo, no a u
 
   // Y se puede volver a entrar con normalidad.
   await page.getByLabel('Email').fill(E2E.email);
+  await acceptPrivacy(page);
   await page.getByRole('button', { name: 'Enviarme el correo' }).click();
   await page.getByLabel('Código de 6 dígitos').fill(E2E.otp);
   await page.getByRole('button', { name: 'Entrar' }).click();

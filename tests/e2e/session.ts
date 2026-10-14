@@ -18,10 +18,16 @@ export async function queryDatabase<T = Record<string, unknown>>(
   return (await response.json()) as T[];
 }
 
+/** Marca la casilla de la política de privacidad, que hay que aceptar en cada acceso (ADR-0030). */
+export async function acceptPrivacy(page: Page): Promise<void> {
+  await page.getByRole('checkbox', { name: /acepto la política de privacidad/ }).check();
+}
+
 /** Entra con el email permitido y el código que acepta el emulador. */
 export async function signIn(page: Page): Promise<void> {
   await page.goto('/login');
   await page.getByLabel('Email').fill(E2E.email);
+  await acceptPrivacy(page);
   await page.getByRole('button', { name: 'Enviarme el correo' }).click();
   await page.getByLabel('Código de 6 dígitos').fill(E2E.otp);
   await page.getByRole('button', { name: 'Entrar' }).click();

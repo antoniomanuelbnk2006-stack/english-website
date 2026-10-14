@@ -7,6 +7,7 @@ import { lockWait } from '@/features/auth/lib/lockout';
 import { PASSWORD_MAX_LENGTH, PASSWORD_MIN_LENGTH } from '@/features/auth/lib/password-rules';
 import { requestOtp, signInWithPassword, verifyOtp } from '@/features/auth/server/actions';
 import type { ActionError } from '@/lib/actions';
+import { PRIVACY_POLICY_URL } from '@/lib/consent';
 import { useT } from '@/lib/i18n/client';
 import type { TranslationKey, TranslationVars } from '@/lib/i18n';
 
@@ -55,6 +56,9 @@ export function LoginForm({ withPassword = false }: { withPassword?: boolean }) 
   /** Con contraseña no se pide ningún correo: se pasa directamente a escribirla. */
   const [typingPassword, setTypingPassword] = useState(false);
   const [error, setError] = useState<FormError | null>(null);
+  /** La política de privacidad se acepta en cada acceso (ADR-0030): la casilla empieza sin marcar. */
+  const [privacy, setPrivacy] = useState(false);
+  const [privacyMissing, setPrivacyMissing] = useState(false);
   const [pending, startTransition] = useTransition();
 
   /** Lo que devuelve una acción de acceso cuando no entra (si entra, redirige y no devuelve). */
@@ -69,10 +73,17 @@ export function LoginForm({ withPassword = false }: { withPassword?: boolean }) 
     );
   }
 
+  /** Sin aceptar la política de privacidad no se entra: se avisa junto a la casilla. */
+  function privacyAccepted(): boolean {
+    setPrivacyMissing(!privacy);
+    return privacy;
+  }
+
   function requestEmail() {
     setError(null);
+    if (!privacyAccepted()) return;
     startTransition(async () => {
-      const result = await requestOtp({ email });
+      const result = await requestOtp({ email, privacy });
       if (result.ok) {
         setTypingPassword(false);
         setSentTo(result.data.email);
@@ -88,7 +99,7 @@ export function LoginForm({ withPassword = false }: { withPassword?: boolean }) 
     if (!sentTo) return;
     setError(null);
     startTransition(async () => {
-      const result = await verifyOtp({ email: sentTo, token: code });
+      const result = await verifyOtp({ email: sentTo, token: code, privacy });
       if (!result.ok) showFailure(result, CODE_ERRORS);
     });
   }
@@ -103,7 +114,7 @@ export function LoginForm({ withPassword = false }: { withPassword?: boolean }) 
     }
     setError(null);
     startTransition(async () => {
-      const result = await signInWithPassword({ email: sentTo, password: secret });
+      const result = await signInWithPassword({ email: sentTo, password: secret, privacy });
       if (!result.ok) showFailure(result, PASSWORD_ERRORS);
     });
   }
@@ -115,6 +126,7 @@ export function LoginForm({ withPassword = false }: { withPassword?: boolean }) 
       return;
     }
     setError(null);
+    if (!privacyAccepted()) return;
     setTypingPassword(true);
     setSentTo(address);
     setSecret('');
@@ -165,6 +177,34 @@ export function LoginForm({ withPassword = false }: { withPassword?: boolean }) 
             aria-describedby={error ? 'email-error' : undefined}
           />
           <FieldError id="email-error">{error ? t(error.key, error.vars) : null}</FieldError>
+        </div>
+        <div className="flex flex-col gap-2">
+          <label className="flex min-h-11 cursor-pointer items-center gap-3 text-body-sm">
+            <input
+              type="checkbox"
+              name="privacy"
+              className="size-4 shrink-0 accent-accent"
+              checked={privacy}
+              onChange={(e) => {
+                setPrivacy(e.target.checked);
+                setPrivacyMissing(false);
+              }}
+              aria-invalid={privacyMissing ? true : undefined}
+              aria-describedby={privacyMissing ? 'privacy-error' : undefined}
+            />
+            <span>
+              {t('login.privacyAccept')}{' '}
+              <a
+                href={PRIVACY_POLICY_URL}
+                className="text-accent-text underline underline-offset-4"
+              >
+                {t('login.privacyLink')}
+              </a>
+            </span>
+          </label>
+          <FieldError id="privacy-error">
+            {privacyMissing ? t('login.errorPrivacy') : null}
+          </FieldError>
         </div>
         {withPassword ? (
           <>

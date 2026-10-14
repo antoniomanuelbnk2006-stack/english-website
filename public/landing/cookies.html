@@ -39,7 +39,7 @@
     <ul class="bullets">
       <li>Señal solo usa cookies propias. No hay cookies de análisis ni de publicidad, y no se comparte nada con terceros.</li>
       <li>Las <strong>necesarias</strong> van siempre, porque sin ellas no se puede entrar. Las de <strong>preferencias</strong> solo se guardan si las aceptas.</li>
-      <li>Rechazarlas no te quita nada: la web funciona igual. Y puedes cambiar de opinión cuando quieras, aquí mismo.</li>
+      <li>Rechazarlas no te quita ninguna función. Lo único que cambia es que la sesión dura hasta que cierras el navegador: al volver tendrás que entrar otra vez. Y puedes cambiar de opinión cuando quieras, aquí mismo.</li>
     </ul>
 
     <div class="panel cookie-choice">
@@ -56,7 +56,7 @@
       <table>
         <thead><tr><th scope="col">Nombre</th><th scope="col">Para qué sirve</th><th scope="col">Cuánto dura</th></tr></thead>
         <tbody>
-          <tr><th scope="row"><code>sb-…-auth-token</code></th><td>Mantiene tu sesión iniciada después de entrar. Solo existe si entras en la app.</td><td>Hasta que cierras sesión; como máximo, 400 días.</td></tr>
+          <tr><th scope="row"><code>sb-…-auth-token</code></th><td>Mantiene tu sesión iniciada después de entrar. Solo existe si entras en la app.</td><td>Si aceptas las de preferencias, hasta que cierras sesión (como máximo, 400 días). Si no, hasta que cierras el navegador.</td></tr>
           <tr><th scope="row"><code>sb-…-code-verifier</code></th><td>Comprueba que el enlace de acceso que te llega por correo se abre en el mismo navegador que lo pidió. Solo existe si pides ese correo.</td><td>Hasta que entras con el enlace; como máximo, 400 días.</td></tr>
           <tr><th scope="row"><code>senal_consent</code></th><td>Recuerda lo que has decidido sobre las cookies, para no preguntártelo en cada visita.</td><td>6 meses. Después se vuelve a preguntar.</td></tr>
         </tbody>
@@ -65,7 +65,7 @@
     <p>Mientras usas la app, el navegador guarda además lo que tienes a medias, para que no lo pierdas: el borrador del texto que estás escribiendo y el examen que has empezado, que se borran al entregarlos o al descartarlos, y los textos del Writing de un simulacro, que se borran al cerrar la pestaña. No son cookies: están en el almacenamiento del navegador y no salen de él.</p>
 
     <h2 class="subheading">Cookies de preferencias</h2>
-    <p>Solo si las aceptas. Recuerdan en este navegador cómo te gusta ver Señal.</p>
+    <p>Solo si las aceptas. Recuerdan en este navegador tu sesión y cómo te gusta ver Señal.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th scope="col">Nombre</th><th scope="col">Para qué sirve</th><th scope="col">Cuánto dura</th></tr></thead>
@@ -76,7 +76,7 @@
         </tbody>
       </table>
     </div>
-    <p>Si las rechazas, se borran las que hubiera. El tema y el idioma se toman entonces de tu perfil cada vez que entras, y el acento vuelve al británico en cada visita.</p>
+    <p>Si las rechazas, se borran las que hubiera y la cookie de la sesión pasa a durar solo hasta que cierres el navegador: al volver tendrás que entrar de nuevo y aceptar otra vez la política de privacidad. El tema y el idioma se toman de tu perfil cada vez que entras, y el acento vuelve al británico en cada visita.</p>
 
     <h2 class="subheading">Lo que no hay</h2>
     <ul class="bullets">
@@ -88,7 +88,7 @@
     <p>Además de los botones de esta página, cualquier navegador deja ver y borrar las cookies de un sitio desde su configuración de privacidad. Si borras <code>senal_consent</code>, Señal volverá a preguntarte; si borras la de la sesión, tendrás que volver a entrar.</p>
 
     <h2 class="subheading">Contacto</h2>
-    <p>Para cualquier duda sobre esta política, escribe a <a href="mailto:antoniomanuelbnk2006@gmail.com">antoniomanuelbnk2006@gmail.com</a>.</p>
+    <p>Para cualquier duda sobre esta política, escribe a <a href="mailto:antoniomanuelbnk2006@gmail.com">antoniomanuelbnk2006@gmail.com</a>. Lo demás sobre tus datos está en la <a href="/landing/privacidad.html">política de privacidad</a>.</p>
   </article>
 </main>
 
@@ -99,11 +99,10 @@
       <p>Plataforma de enseñanza remota diseñada para el autoestudio de inglés con herramientas completas desde A1 hasta C2.</p>
     </div>
     <ul>
+      <li>Antonio Manuel Garces</li>
       <li><a href="mailto:antoniomanuelbnk2006@gmail.com">antoniomanuelbnk2006@gmail.com</a></li>
-      <li><a href="tel:+34681974131">+34 681 974 131</a></li>
-      <li>41805 Sevilla, España</li>
     </ul>
-    <p class="legal"><a href="/landing/cookies.html" aria-current="page">Política de cookies</a><button type="button" data-cookies>Configurar cookies</button></p>
+    <p class="legal"><a href="/landing/privacidad.html">Política de privacidad</a><a href="/landing/cookies.html" aria-current="page">Política de cookies</a><button type="button" data-cookies>Configurar cookies</button></p>
     <p class="copy">© 2026 Señal. Todos los derechos reservados.</p>
   </div>
 </footer>

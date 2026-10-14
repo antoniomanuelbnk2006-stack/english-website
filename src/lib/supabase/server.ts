@@ -1,8 +1,9 @@
 import 'server-only';
 import { createServerClient } from '@supabase/ssr';
 import { cookies } from 'next/headers';
+import { CONSENT_COOKIE, parseConsent, remembersSession } from '@/lib/consent';
 import { env } from '@/lib/env';
-import { SESSION_COOKIE_OPTIONS } from './cookies';
+import { SESSION_COOKIE_OPTIONS, sessionCookieOptions } from './cookies';
 import type { Database } from './database.types';
 
 /**
@@ -12,6 +13,8 @@ import type { Database } from './database.types';
  */
 export async function createClient() {
   const cookieStore = await cookies();
+  // La sesión solo se recuerda con las cookies aceptadas (ADR-0030).
+  const remember = remembersSession(parseConsent(cookieStore.get(CONSENT_COOKIE)?.value));
 
   return createServerClient<Database>(
     env.NEXT_PUBLIC_SUPABASE_URL,
@@ -22,7 +25,9 @@ export async function createClient() {
         getAll: () => cookieStore.getAll(),
         setAll: (toSet) => {
           try {
-            toSet.forEach(({ name, value, options }) => cookieStore.set(name, value, options));
+            toSet.forEach(({ name, value, options }) =>
+              cookieStore.set(name, value, sessionCookieOptions(options, remember)),
+            );
           } catch {
             // En un Server Component no se pueden escribir cookies: las refresca src/proxy.ts.
           }

@@ -1,8 +1,9 @@
 import { createServerClient } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
 import { CONFIRM_PATH } from '@/features/auth/lib/confirm';
+import { CONSENT_COOKIE, parseConsent, remembersSession } from '@/lib/consent';
 import { env } from '@/lib/env';
-import { SESSION_COOKIE_OPTIONS } from './cookies';
+import { SESSION_COOKIE_OPTIONS, sessionCookieOptions } from './cookies';
 import type { Database } from './database.types';
 
 const HOME = '/hoy';
@@ -19,6 +20,8 @@ export async function updateSession(
   requestHeaders: Headers,
 ): Promise<NextResponse> {
   let response = NextResponse.next({ request: { headers: requestHeaders } });
+  // La sesión solo se recuerda con las cookies aceptadas (ADR-0030).
+  const remember = remembersSession(parseConsent(request.cookies.get(CONSENT_COOKIE)?.value));
 
   const supabase = createServerClient<Database>(
     env.NEXT_PUBLIC_SUPABASE_URL,
@@ -31,7 +34,9 @@ export async function updateSession(
           toSet.forEach(({ name, value }) => request.cookies.set(name, value));
           requestHeaders.set('cookie', request.cookies.toString());
           response = NextResponse.next({ request: { headers: requestHeaders } });
-          toSet.forEach(({ name, value, options }) => response.cookies.set(name, value, options));
+          toSet.forEach(({ name, value, options }) =>
+            response.cookies.set(name, value, sessionCookieOptions(options, remember)),
+          );
           // Una respuesta que escribe cookies de sesión no debe cachearse en ningún intermediario.
           Object.entries(headers).forEach(([key, value]) => response.headers.set(key, value));
         },

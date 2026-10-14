@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { saveConsent } from '@/features/consent/lib/browser';
+import { applyConsentToSession } from '@/features/consent/server/actions';
 import type { Consent } from '@/lib/consent';
 import type { TranslationKey } from '@/lib/i18n';
 import { useT } from '@/lib/i18n/client';
@@ -34,7 +35,8 @@ export function ConsentSettings({ initial }: { initial: Consent | null }) {
                 saveConsent(option.choice);
                 setConsent(option.choice);
                 setSaved(option.saved);
-                router.refresh();
+                // La sesión pasa a recordarse o no según la decisión (ADR-0030).
+                void applyConsentToSession().finally(() => router.refresh());
               }}
               className={cn(
                 'flex min-h-11 items-center rounded-full border px-4 text-body-sm transition-colors duration-150',

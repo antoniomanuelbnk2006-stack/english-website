@@ -13,6 +13,9 @@ export const CONSENT_COOKIE = 'senal_consent';
 /** Dónde se explica qué cookies hay: una página de la portada, pública. */
 export const COOKIE_POLICY_URL = '/landing/cookies.html';
 
+/** La política de privacidad, también en la portada (ADR-0029). */
+export const PRIVACY_POLICY_URL = '/landing/privacidad.html';
+
 /** Sube cuando cambia lo que se pide (una categoría nueva): la decisión anterior deja de valer. */
 export const CONSENT_VERSION = 1;
 
@@ -42,6 +45,14 @@ export function serializeConsent(choice: Consent): string {
 
 /** Sin decisión no se guarda nada opcional: hace falta haber aceptado. */
 export function allowsPreferences(consent: Consent | null): boolean {
+  return consent === 'all';
+}
+
+/**
+ * ¿Se recuerda la sesión al cerrar el navegador? Solo con las cookies aceptadas (ADR-0030): si se
+ * rechazan, o no se ha decidido, al volver hay que entrar otra vez y aceptar la privacidad.
+ */
+export function remembersSession(consent: Consent | null): boolean {
   return consent === 'all';
 }
 

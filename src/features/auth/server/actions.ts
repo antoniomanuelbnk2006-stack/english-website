@@ -11,10 +11,17 @@ import { createClient, type SupabaseServerClient } from '@/lib/supabase/server';
 
 const Email = z.string().trim().toLowerCase().pipe(z.email().max(254));
 
-const RequestOtpInput = z.object({ email: Email });
+/** Para entrar hay que aceptar la política de privacidad, cada vez (ADR-0030). */
+const PrivacyAccepted = z.literal(true);
+
+const RequestOtpInput = z.object({ email: Email, privacy: PrivacyAccepted });
 /** El código que llega por correo tiene 6 cifras. */
-const VerifyOtpInput = z.object({ email: Email, token: z.string().regex(/^\d{6}$/) });
-const PasswordInput = z.object({ email: Email, password: Password });
+const VerifyOtpInput = z.object({
+  email: Email,
+  token: z.string().regex(/^\d{6}$/),
+  privacy: PrivacyAccepted,
+});
+const PasswordInput = z.object({ email: Email, password: Password, privacy: PrivacyAccepted });
 
 /** 429 de Supabase Auth: demasiadas peticiones de código o de verificación. */
 function isRateLimited(error: { status?: number }): boolean {

@@ -31,7 +31,9 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0025](0025-politicas-rls-por-operacion.md) | Políticas RLS por operación, y solo las que cada tabla necesita | Aceptada |
 | [0026](0026-contrasena-en-vez-de-codigo-fijo.md) | Contraseña de 12 caracteres o más en vez del código fijo, con el mismo mecanismo (derivada con el secreto del servidor) | Aceptada |
 | [0027](0027-sistema-de-diseno-master.md) | Sistema de diseño «MASTER» en toda la web: oscuro, monocromo, un único acento cobalto, Inter y Archivo | Aceptada |
-| [0028](0028-consentimiento-de-cookies.md) | Consentimiento de cookies: las necesarias siempre; las de preferencias (tema, idioma, acento), solo si el usuario las acepta | Aceptada |
+| [0028](0028-consentimiento-de-cookies.md) | Consentimiento de cookies: las necesarias siempre; las de preferencias (tema, idioma, acento), solo si el usuario las acepta | Aceptada (la duración de la sesión, modificada por ADR-0030) |
+| [0029](0029-politica-de-privacidad-y-datos-de-contacto.md) | Política de privacidad, casilla obligatoria para aceptarla en el formulario de contacto y solo nombre y correo en el pie | Aceptada |
+| [0030](0030-sesion-recordada-solo-con-cookies-aceptadas.md) | La sesión solo se recuerda al cerrar el navegador con las cookies aceptadas, y la política de privacidad se acepta en cada acceso | Aceptada |
 
 Plantilla:
 

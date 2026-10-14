@@ -102,7 +102,7 @@ if (form && contact) {
 
     const text = document.createElement('p');
     text.append(
-      'Señal usa cookies necesarias para que puedas entrar y, si aceptas, de preferencias: tema, idioma y acento. No hay análisis ni publicidad. ',
+      'Señal usa cookies necesarias para que puedas entrar y, si aceptas, para recordar tu sesión y tus preferencias: tema, idioma y acento. No hay análisis ni publicidad. ',
     );
     const more = document.createElement('a');
     more.href = '/landing/cookies.html';
