@@ -1,5 +1,6 @@
 'use client';
 
+import { ExternalLink } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState, useTransition, type ChangeEvent } from 'react';
 import { Button, buttonVariants } from '@/components/ui/button';
@@ -7,6 +8,7 @@ import { FieldError, Label, Textarea } from '@/components/ui/input';
 import {
   MAX_THEME_CHARS,
   SAFE_MODE_PARAM,
+  THEME_CATALOG_URL,
   checkThemeCss,
   type ThemeProblem,
 } from '@/features/theme/lib/custom-css';
@@ -166,6 +168,18 @@ export function CustomTheme({ saved, safeMode }: { saved: string; safeMode: bool
             </Button>
           ))}
         </div>
+        <p className="text-body-sm text-muted">
+          {t('customTheme.catalogHint')}{' '}
+          <a
+            href={THEME_CATALOG_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-accent-text underline underline-offset-4"
+          >
+            {t('customTheme.catalogLink')}
+            <ExternalLink aria-hidden="true" className="size-3.5" strokeWidth={1.75} />
+          </a>
+        </p>
       </div>
 
       {/* El botón nativo saldría en el idioma del navegador: se esconde y hace de botón su

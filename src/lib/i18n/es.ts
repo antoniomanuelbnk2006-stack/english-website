@@ -94,6 +94,8 @@ export const es = {
     exampleSepia: 'Sepia',
     exampleContrast: 'Alto contraste',
     exampleNeon: 'Neón',
+    catalogHint: '¿Quieres más? En el catálogo hay temas listos para descargar y subir aquí.',
+    catalogLink: 'Ver el catálogo de temas',
     fileLabel: 'Subir un archivo .css',
     cssLabel: 'CSS del tema',
     preview: 'Probar sin guardar',

@@ -8,6 +8,9 @@ export const MAX_THEME_CHARS = 50_000;
 
 /** Con `?sin-tema` en la dirección, la página se pinta sin el tema (para poder quitarlo). */
 export const SAFE_MODE_PARAM = 'sin-tema';
+
+/** La web aparte con temas listos para descargar (repositorio `temas-senal`). */
+export const THEME_CATALOG_URL = 'https://temas-senal.vercel.app';
 /** Cabecera con la que el proxy avisa al renderizado de que es el modo seguro. */
 export const SAFE_MODE_HEADER = 'x-senal-sin-tema';
 

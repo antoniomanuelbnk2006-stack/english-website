@@ -39,6 +39,8 @@ que se pinta encima de cualquiera de los temas. No forma parte del diseño: es d
   de la pantalla sigue siendo el «Guardar» de los ajustes.
 - El botón de subir archivo es la etiqueta del campo con aspecto de botón terciario: el nativo
   sale en el idioma del navegador, no en el de la app.
+- Bajo los ejemplos, un enlace al catálogo de temas (web aparte), en `accent-text` y con el
+  icono de enlace externo: se abre en otra pestaña, como el del diccionario.
 
 ## Controles nativos
 

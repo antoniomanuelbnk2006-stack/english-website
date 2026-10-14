@@ -34,4 +34,5 @@ El dueño preguntó si Señal podía tener algo como Vencord: que cada uno cambi
 - Es CSS que solo ve quien lo escribe, en su propia sesión. Lo peor que puede hacer es dejarse la app ilegible, y para eso está el modo seguro.
 - La política de privacidad dice que los ajustes incluyen el CSS del tema.
 - Cada página con sesión hace una consulta más a `profiles` (una por petición, con `cache`).
+- Hay un catálogo de temas en una web aparte, `https://temas-senal.vercel.app` (repositorio `temas-senal`): capturas, características y descarga de cada `.css`. El apartado lo enlaza, en otra pestaña (`THEME_CATALOG_URL`). Los temas de esa web son originales: sin nombres de marcas o franquicias, personajes ni imágenes de terceros.
 - `tests/e2e/tema.spec.ts` prueba el ciclo entero (probar, guardar, verlo en Hoy, conservarlo al guardar otros ajustes, modo seguro, quitarlo), la subida de un archivo y el rechazo de `<` y `@import`; `src/features/theme/lib/custom-css.test.ts`, la comprobación.

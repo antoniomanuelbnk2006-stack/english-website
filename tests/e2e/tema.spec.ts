@@ -29,6 +29,10 @@ test('se prueba, se guarda para toda la app y se quita', async ({ page, request 
   const panel = page.locator('#tema');
   await expect(panel.getByRole('heading', { name: 'Tema personalizado' })).toBeVisible();
   await expect(panel.getByRole('button', { name: 'Quitar tema' })).toHaveCount(0);
+  // El catálogo de temas, en otra pestaña.
+  const catalog = panel.getByRole('link', { name: 'Ver el catálogo de temas' });
+  await expect(catalog).toHaveAttribute('href', 'https://temas-senal.vercel.app');
+  await expect(catalog).toHaveAttribute('target', '_blank');
   const original = await canvas(page);
   expect(original).not.toBe(SEPIA_CANVAS);
 

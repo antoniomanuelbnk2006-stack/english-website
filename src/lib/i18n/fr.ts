@@ -95,6 +95,9 @@ export const fr: Dictionary = {
     exampleSepia: 'Sépia',
     exampleContrast: 'Contraste élevé',
     exampleNeon: 'Néon',
+    catalogHint:
+      'Envie d’autres thèmes ? Le catalogue en propose, prêts à télécharger et à importer ici.',
+    catalogLink: 'Voir le catalogue de thèmes (en espagnol)',
     fileLabel: 'Importer un fichier .css',
     cssLabel: 'CSS du thème',
     preview: 'Essayer sans enregistrer',

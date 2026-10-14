@@ -94,6 +94,8 @@ export const en: Dictionary = {
     exampleSepia: 'Sepia',
     exampleContrast: 'High contrast',
     exampleNeon: 'Neon',
+    catalogHint: 'Want more? The catalogue has themes ready to download and upload here.',
+    catalogLink: 'See the theme catalogue (in Spanish)',
     fileLabel: 'Upload a .css file',
     cssLabel: 'Theme CSS',
     preview: 'Try without saving',

@@ -91,6 +91,8 @@ export const zh: Dictionary = {
     exampleSepia: '复古棕',
     exampleContrast: '高对比度',
     exampleNeon: '霓虹',
+    catalogHint: '想要更多？主题目录里有可以下载并在这里上传的主题。',
+    catalogLink: '查看主题目录（西班牙语）',
     fileLabel: '上传 .css 文件',
     cssLabel: '主题 CSS',
     preview: '试用（不保存）',

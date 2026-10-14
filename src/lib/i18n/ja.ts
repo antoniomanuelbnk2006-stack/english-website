@@ -94,6 +94,9 @@ export const ja: Dictionary = {
     exampleSepia: 'セピア',
     exampleContrast: 'ハイコントラスト',
     exampleNeon: 'ネオン',
+    catalogHint:
+      'もっと欲しいですか？カタログには、ダウンロードしてここにアップロードできるテーマがあります。',
+    catalogLink: 'テーマカタログを見る（スペイン語）',
     fileLabel: '.css ファイルをアップロード',
     cssLabel: 'テーマの CSS',
     preview: '保存せずに試す',
