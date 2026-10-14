@@ -1,4 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
+import { expectAccessible } from './axe';
+import { trackErrors } from './session';
 
 // El titular de la portada: la palabra se escribe y se borra, un idioma tras otro
 // (design-system/senal/pages/portada.md, «Titular: la palabra que se escribe»).
@@ -9,12 +11,12 @@ const caret = (page: Page) => page.locator('.typed-caret');
 const heading = (page: Page) =>
   page.getByRole('heading', { level: 1, name: 'Domina el Inglés con Señal' });
 
-/** Avanza el reloj de 60 en 60 ms hasta que la palabra sea `text`; devuelve lo que ha tardado. */
+/** Avanza el reloj de 30 en 30 ms hasta que la palabra sea `text`; devuelve lo que ha tardado. */
 async function until(page: Page, text: string, limit: number): Promise<number> {
   let elapsed = 0;
   while ((await word(page).textContent()) !== text && elapsed < limit) {
-    await page.clock.runFor(60);
-    elapsed += 60;
+    await page.clock.runFor(30);
+    elapsed += 30;
   }
   await expect(word(page)).toHaveText(text);
   return elapsed;
@@ -23,33 +25,39 @@ async function until(page: Page, text: string, limit: number): Promise<number> {
 test.describe('con movimiento', () => {
   test.use({ contextOptions: { reducedMotion: 'no-preference' } });
 
-  test('la palabra se escribe en 2–3 s, se queda 5 s y se borra para dar paso a la siguiente', async ({
+  test('la palabra se escribe en 1 s, se queda 1,5 s y se borra en 1 s para dar paso a la siguiente', async ({
     page,
   }) => {
-    await page.clock.install();
+    // Con el reloj parado desde antes de cargar, solo avanza cuando lo pide el test: las medidas
+    // son exactas, también la primera.
+    const start = new Date('2026-10-14T10:00:00');
+    await page.clock.install({ time: start });
+    await page.clock.pauseAt(new Date(start.getTime() + 1000));
     await page.goto('/');
     await expect(word(page)).toHaveText('Inglés');
     await expect(caret(page)).toBeVisible();
     const height = (await heading(page).boundingBox())!.height;
 
-    await page.clock.runFor(4800);
-    await expect(word(page)).toHaveText('Inglés');
-
+    // Cada fase, medida en pasos de 30 ms del reloj (de ahí el margen).
+    let current = 'Inglés';
     for (const next of ['Español', 'Francés', 'Chino', 'Japonés', 'Inglés']) {
-      // Se borra la que hay…
-      await until(page, '', 3000);
-      // …y se escribe la siguiente, letra a letra.
-      const typing = await until(page, next, 4000);
-      expect(typing, next).toBeGreaterThanOrEqual(2000);
-      expect(typing, next).toBeLessThanOrEqual(3060);
+      // Entera y quieta 1,5 s…
+      const hold = await until(page, current.slice(0, -1), 3000);
+      expect(hold, current).toBeGreaterThanOrEqual(1470);
+      expect(hold, current).toBeLessThanOrEqual(1530);
+      // …se borra en 1 s…
+      const erasing = await until(page, '', 2000);
+      expect(erasing, current).toBeGreaterThanOrEqual(970);
+      expect(erasing, current).toBeLessThanOrEqual(1030);
+      // …y la siguiente se escribe en 1 s, sea cual sea su longitud.
+      const typing = await until(page, next, 2000);
+      expect(typing, next).toBeGreaterThanOrEqual(970);
+      expect(typing, next).toBeLessThanOrEqual(1030);
 
       // El titular no cambia de alto con ninguna palabra: nada de abajo se mueve.
       await expect(heading(page)).toBeVisible();
       expect((await heading(page).boundingBox())!.height, next).toBeCloseTo(height, 0);
-
-      // Entera, se queda quieta 5 s.
-      await page.clock.runFor(4800);
-      await expect(word(page)).toHaveText(next);
+      current = next;
     }
   });
 });
@@ -61,4 +69,117 @@ test('con movimiento reducido se queda «Inglés», sin cursor', async ({ page }
   await expect(word(page)).toHaveText('Inglés');
   await expect(caret(page)).toBeHidden();
   await expect(heading(page)).toBeVisible();
+});
+
+// «Crea tu plan»: la pantalla final del acercamiento (portada.md). Cuatro preguntas y un resumen.
+const plan = (page: Page) => page.getByRole('form', { name: 'Crea tu plan' });
+const step = (page: Page) => page.locator('#plan-paso');
+
+test('sin acercamiento, «Crea tu plan» va en su sitio y lleva paso a paso al resumen', async ({
+  page,
+}) => {
+  const errors = trackErrors(page);
+  await page.goto('/');
+  await expect(plan(page)).toBeVisible();
+  await expect(step(page)).toHaveText('Paso 1 de 4');
+  await expectAccessible(page);
+
+  // Sin elegir no se avanza.
+  await plan(page).getByRole('button', { name: 'Siguiente' }).click();
+  await expect(plan(page).getByRole('alert')).toHaveText('Elige una opción para seguir.');
+  await expect(step(page)).toHaveText('Paso 1 de 4');
+
+  await plan(page)
+    .getByRole('radio', { name: /日本語/ })
+    .check();
+  await expect(plan(page).getByRole('alert')).toHaveText('');
+  await plan(page).getByRole('button', { name: 'Siguiente' }).click();
+  await expect(step(page)).toHaveText('Paso 2 de 4');
+  // El foco pasa a la primera respuesta del paso nuevo.
+  await expect(plan(page).getByRole('radio', { name: /Empiezo de cero/ })).toBeFocused();
+
+  // Se puede volver atrás y lo elegido sigue elegido.
+  await plan(page).getByRole('button', { name: 'Atrás' }).click();
+  await expect(step(page)).toHaveText('Paso 1 de 4');
+  await expect(plan(page).getByRole('radio', { name: /日本語/ })).toBeChecked();
+  await expect(plan(page).getByRole('radio', { name: /日本語/ })).toBeFocused();
+  await plan(page).getByRole('button', { name: 'Siguiente' }).click();
+
+  await plan(page)
+    .getByRole('radio', { name: /Empiezo de cero/ })
+    .check();
+  await plan(page).getByRole('button', { name: 'Siguiente' }).click();
+  await expect(step(page)).toHaveText('Paso 3 de 4');
+  // El examen oficial es el del idioma elegido.
+  const examGoal = plan(page).getByRole('radio', { name: /Aprobar el examen oficial/ });
+  await expect(examGoal).toHaveAccessibleName(/JLPT/);
+  await examGoal.check();
+  await plan(page).getByRole('button', { name: 'Siguiente' }).click();
+
+  await expect(step(page)).toHaveText('Paso 4 de 4');
+  await plan(page).getByRole('radio', { name: '20 min' }).check();
+  await plan(page).getByRole('button', { name: 'Ver mi plan' }).click();
+
+  await expect(step(page)).toHaveText('Listo');
+  const summary = plan(page).locator('.plan-summary');
+  await expect(summary).toBeFocused();
+  await expect(summary.getByRole('heading', { name: 'Tu plan' })).toBeVisible();
+  await expect(summary.locator('dd')).toHaveText([
+    'Japonés',
+    'Empiezo de cero (A1)',
+    'Aprobar el JLPT',
+    '20 minutos',
+  ]);
+  await expect(summary).toContainText('Estamos preparando las lecciones de japonés.');
+  await expect(summary.getByRole('link', { name: 'Empezar a estudiar' })).toHaveAttribute(
+    'href',
+    '/login',
+  );
+  await expectAccessible(page);
+
+  // Y se puede empezar de nuevo.
+  await summary.getByRole('button', { name: 'Cambiar respuestas' }).click();
+  await expect(step(page)).toHaveText('Paso 1 de 4');
+  expect(errors).toEqual([]);
+});
+
+test.describe('con el acercamiento', () => {
+  test.use({ contextOptions: { reducedMotion: 'no-preference' } });
+
+  test('«Crea tu plan» aparece al final y se puede usar; la copia del portátil, no', async ({
+    page,
+  }) => {
+    const errors = trackErrors(page);
+    await page.goto('/');
+    await expect(page.locator('.zoom-hero')).toHaveClass(/is-ready/);
+    const app = page.locator('.zoom-app');
+    await expect(app).not.toHaveClass(/is-live/);
+
+    // La copia del portátil enseña el primer paso, sin ids repetidos y sin poder tocarse.
+    const mini = page.locator('.zoom-mini');
+    await expect(mini).toHaveAttribute('inert', '');
+    await expect(mini.getByText('¿Qué idioma quieres aprender?')).toHaveCount(1);
+    await expect(mini.locator('[id]')).toHaveCount(0);
+
+    // Al final del acercamiento está a la vista y responde.
+    await page.evaluate(() => {
+      const hero = document.querySelector<HTMLElement>('.zoom-hero')!;
+      window.scrollTo(0, hero.offsetTop + (hero.offsetHeight - window.innerHeight) * 0.9);
+    });
+    await expect(app).toHaveClass(/is-live/);
+    await page.getByRole('radio', { name: /Français/ }).click();
+    await expect(page.getByRole('radio', { name: /Français/ })).toBeChecked();
+    // El examen del paso 3 ya es el del francés.
+    await expect(page.locator('.zoom-app [data-exam]')).toHaveText('DELF y DALF');
+
+    // Con el teclado se llega antes de verla: desde el último botón del titular, el tabulador
+    // entra en el formulario y el recorrido avanza solo hasta que se ve.
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await expect(app).not.toHaveClass(/is-live/);
+    await page.getByRole('link', { name: 'Saber Más' }).focus();
+    await page.keyboard.press('Tab');
+    await expect(page.getByRole('radio', { name: /Français/ })).toBeFocused();
+    await expect(app).toHaveClass(/is-live/);
+    expect(errors).toEqual([]);
+  });
 });

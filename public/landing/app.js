@@ -156,9 +156,9 @@ if (form && contact) {
 
   if (slot && word && heading) {
     const WORDS = slot.dataset.words.split(' ');
-    const TYPE_MS = 420; // por letra: cada palabra tarda entre 2 y 3 s en escribirse
-    const HOLD_MS = 5000; // la palabra entera, quieta
-    const DELETE_MS = 120; // borrar va más deprisa
+    const TYPE_MS = 1000; // escribir cada palabra, sea larga o corta: del hueco a entera
+    const HOLD_MS = 1500; // la palabra entera, quieta
+    const DELETE_MS = 1000; // borrarla: de la primera letra que se va al hueco
     const caret = document.createElement('span');
     caret.className = 'typed-caret';
     caret.setAttribute('aria-hidden', 'true');
@@ -185,17 +185,18 @@ if (form && contact) {
     };
     const type = (text, letters) => {
       word.textContent = text.slice(0, letters);
-      if (letters < text.length) later(() => type(text, letters + 1), TYPE_MS);
+      if (letters < text.length) later(() => type(text, letters + 1), TYPE_MS / text.length);
       else later(erase, HOLD_MS);
     };
     const erase = () => {
-      const text = word.textContent;
+      const text = word.textContent.slice(0, -1);
+      word.textContent = text;
       if (text.length > 0) {
-        word.textContent = text.slice(0, -1);
-        later(erase, DELETE_MS);
+        later(erase, DELETE_MS / Math.max(1, WORDS[index].length - 1));
       } else {
+        // En cuanto se queda en blanco empieza la siguiente: de ahí a entera, TYPE_MS justos.
         index = (index + 1) % WORDS.length;
-        later(() => type(WORDS[index], 1), TYPE_MS);
+        later(() => type(WORDS[index], 1), TYPE_MS / WORDS[index].length);
       }
     };
 
@@ -220,6 +221,98 @@ if (form && contact) {
   }
 }
 
+// Portada: «Crea tu plan», la pantalla final del acercamiento (portada.md). Cuatro preguntas, una
+// por paso: el idioma, el nivel, para qué y cuánto tiempo al día; después, el resumen. Por ahora no
+// se guarda nada: el resumen lleva a entrar en Señal. Sin JavaScript se ven todas a la vez. Va antes
+// que el acercamiento, que copia esta pantalla en el portátil tal como queda al empezar.
+{
+  const form = document.querySelector('#plan');
+
+  if (form) {
+    const steps = [...form.querySelectorAll('.plan-step')];
+    const summary = form.querySelector('.plan-summary');
+    const count = form.querySelector('#plan-paso');
+    const error = form.querySelector('#plan-error');
+    const actions = form.querySelector('[data-plan="pasos"]');
+    const back = form.querySelector('[data-plan="atras"]');
+    const next = actions.querySelector('[type="submit"]');
+    const exam = form.querySelector('[data-exam]');
+    const out = (name) => form.querySelector(`[data-out="${name}"]`);
+    const picked = (name) => form.querySelector(`input[name="${name}"]:checked`);
+
+    // El examen oficial de cada idioma, para la opción «Aprobar el examen oficial» y el resumen.
+    const EXAMS = {
+      en: ['Cambridge English', 'Aprobar un examen de Cambridge'],
+      es: ['DELE', 'Aprobar el DELE'],
+      fr: ['DELF y DALF', 'Aprobar el DELF o el DALF'],
+      zh: ['HSK', 'Aprobar el HSK'],
+      ja: ['JLPT', 'Aprobar el JLPT'],
+    };
+
+    let current = 0;
+    const show = (index) => {
+      current = index;
+      steps.forEach((step, i) => {
+        step.hidden = i !== index;
+      });
+      const done = index >= steps.length;
+      summary.hidden = !done;
+      actions.hidden = done;
+      back.hidden = index === 0;
+      next.textContent = index === steps.length - 1 ? 'Ver mi plan' : 'Siguiente';
+      count.textContent = done ? 'Listo' : `Paso ${index + 1} de ${steps.length}`;
+      form.dataset.step = String(index + 1);
+      error.textContent = '';
+    };
+    // Al cambiar de paso, el foco va a la respuesta elegida o a la primera: así se sigue con el
+    // teclado sin volver a buscar dónde estaba.
+    const focus = () => {
+      if (current >= steps.length) summary.focus();
+      else (steps[current].querySelector('input:checked') ?? steps[current].querySelector('input'))?.focus();
+    };
+
+    const fill = () => {
+      const language = picked('idioma');
+      const goal = picked('objetivo');
+      out('idioma').textContent = language.dataset.summary;
+      out('nivel').textContent = picked('nivel').dataset.summary;
+      out('objetivo').textContent =
+        goal.value === 'examen' ? EXAMS[language.value][1] : goal.dataset.summary;
+      out('minutos').textContent = `${picked('minutos').value} minutos`;
+      out('nota').textContent =
+        language.value === 'en'
+          ? 'Las lecciones, los repasos y los simulacros de Cambridge de inglés ya están en Señal.'
+          : `Estamos preparando las lecciones de ${language.dataset.summary.toLowerCase()}. De momento, en Señal están las de inglés.`;
+    };
+
+    form.addEventListener('change', (event) => {
+      error.textContent = '';
+      if (event.target.name === 'idioma') exam.textContent = EXAMS[event.target.value][0];
+    });
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!steps[current]?.querySelector('input:checked')) {
+        error.textContent = 'Elige una opción para seguir.';
+        steps[current]?.querySelector('input')?.focus();
+        return;
+      }
+      if (current === steps.length - 1) fill();
+      show(current + 1);
+      focus();
+    });
+    back.addEventListener('click', () => {
+      show(current - 1);
+      focus();
+    });
+    form.querySelector('[data-plan="cambiar"]').addEventListener('click', () => {
+      show(0);
+      focus();
+    });
+
+    show(0);
+  }
+}
+
 // Portada: acercamiento al portátil con el scroll (design-system/senal/pages/portada.md, «Hero»).
 // La escena se acerca a la pantalla del portátil hasta que la copia de «Hoy» que lleva dentro
 // ocupa la ventana; en ese momento se cambia por la misma pantalla a tamaño real, que se ve nítida.
@@ -227,10 +320,10 @@ if (form && contact) {
 // atributos style="…", pero sí esto.
 {
   const hero = document.querySelector('.zoom-hero');
-  const template = document.querySelector('#pantalla-hoy');
+  const app = hero?.querySelector('.zoom-app');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-  if (hero && template) {
+  if (hero && app) {
     const stage = hero.querySelector('.zoom-stage');
     const scene = hero.querySelector('.zoom-scene');
     const desk = hero.querySelector('.scene-desk');
@@ -240,20 +333,17 @@ if (form && contact) {
     const glare = hero.querySelector('.laptop-glare');
     const copy = hero.querySelector('.zoom-copy');
     const hint = hero.querySelector('.zoom-hint');
-    const app = hero.querySelector('.zoom-app');
 
-    // La misma pantalla dos veces: en el portátil y a tamaño real. Con la fecha de hoy en Madrid.
-    const today = new Intl.DateTimeFormat('es-ES', {
-      weekday: 'long',
-      day: 'numeric',
-      month: 'long',
-      timeZone: 'Europe/Madrid',
-    }).format(new Date());
-    for (const target of [mini, app]) {
-      const clone = template.content.cloneNode(true);
-      const date = clone.querySelector('.rep-date');
-      if (date) date.textContent = today;
-      target.append(clone);
+    // En el portátil va una copia de «Crea tu plan», como una imagen: sin ids ni nombres (no pueden
+    // repetirse en la página) y en un contenedor `inert`, así que no se puede tocar.
+    const replica = app.querySelector('.app-screen')?.cloneNode(true);
+    if (replica) {
+      for (const el of [replica, ...replica.querySelectorAll('*')]) {
+        for (const attr of ['id', 'for', 'name', 'role', 'aria-live', 'aria-labelledby']) {
+          el.removeAttribute(attr);
+        }
+      }
+      mini.append(replica);
     }
 
     const ZOOM_END = 0.72; // parte del recorrido que dura el acercamiento; el resto, la app quieta
@@ -381,6 +471,15 @@ if (form && contact) {
       current = target = progress();
       render(current);
     };
+
+    // Con el teclado o un lector de pantalla se puede llegar a «Crea tu plan» antes de que se vea:
+    // entonces se avanza el recorrido hasta el final del acercamiento, donde ya se ve entera.
+    app.addEventListener('focusin', () => {
+      if (!geo || app.classList.contains('is-live')) return;
+      const r = hero.getBoundingClientRect();
+      const top = window.scrollY + r.top + (ZOOM_END + 0.05) * (r.height - window.innerHeight);
+      window.scrollTo({ top, behavior: 'instant' });
+    });
 
     layout();
     window.addEventListener('scroll', onScroll, { passive: true });

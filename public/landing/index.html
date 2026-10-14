@@ -31,7 +31,7 @@
 <main id="contenido">
   <!-- Portada con acercamiento al portátil (design-system/senal/pages/portada.md, «Hero»).
        Al hacer scroll la escena se acerca a la pantalla del portátil hasta que la pantalla ocupa
-       la ventana y se cambia por la pantalla «Hoy» de la app. Lo mueve /landing/app.js. -->
+       la ventana y se cambia por «Crea tu plan», un formulario de verdad. Lo mueve /landing/app.js. -->
   <section class="zoom-hero" aria-labelledby="titulo-portada">
     <div class="zoom-stage">
 
@@ -50,7 +50,7 @@
             <span class="laptop-glow"></span>
             <div class="laptop-lid">
               <div class="laptop-screen">
-                <div class="zoom-mini"><!-- app.js pone aquí una copia de la pantalla «Hoy» --></div>
+                <div class="zoom-mini" inert><!-- app.js pone aquí una copia de «Crea tu plan» --></div>
                 <span class="laptop-glare"></span>
               </div>
             </div>
@@ -71,38 +71,88 @@
       </div>
       <p class="zoom-hint" aria-hidden="true">Desliza para entrar</p>
 
-      <!-- La pantalla «Hoy» a tamaño real. Es una imagen de la app hecha con HTML: no se usa. -->
-      <div class="zoom-app" aria-hidden="true" inert></div>
+      <!-- La pantalla final del acercamiento: «Crea tu plan» (portada.md). Un formulario de verdad,
+           por pasos; dentro del portátil va una copia que hace app.js. Sin acercamiento va aquí, en
+           su sitio, después de la escena, y sin JavaScript se ven las cuatro preguntas a la vez. -->
+      <div class="zoom-app">
+        <div class="app-screen">
+          <div class="app-bar" aria-hidden="true"><img src="/landing/logo.png" alt="" width="114" height="35"></div>
+          <form class="plan" id="plan" action="/login" method="get" aria-labelledby="plan-titulo" novalidate>
+            <div class="plan-head">
+              <h2 class="plan-title" id="plan-titulo">Crea tu plan</h2>
+              <p class="plan-count" id="plan-paso" aria-live="polite">4 preguntas</p>
+            </div>
+            <div class="plan-progress" aria-hidden="true"><span></span></div>
 
-      <template id="pantalla-hoy">
-        <div class="rep">
-          <div class="rep-nav">
-            <img src="/landing/logo.png" alt="" width="114" height="35">
-            <div class="rep-links"><span class="is-on">Hoy</span><span>Escuchar</span><span>Leer</span><span>Repasar</span><span>Más</span></div>
-            <div class="rep-level"><span class="rep-bars"><i></i><i></i><i></i><i></i><i></i></span>B1</div>
-          </div>
-          <div class="rep-body">
-            <div class="rep-head">
-              <div><p class="rep-title">Hoy</p><p class="rep-date">martes, 14 de octubre</p></div>
-              <span class="rep-pill">Tu nivel: B1</span>
-            </div>
-            <div class="rep-card rep-goal">
-              <svg class="rep-ring" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44"/><circle class="rep-ring-fill" cx="50" cy="50" r="44" pathLength="100"/><text x="50" y="57">20</text></svg>
-              <div><p class="rep-sub">Objetivo 45 min</p><p class="rep-big">20 de 45 min</p></div>
-            </div>
-            <div class="rep-card">
-              <p class="rep-sub">Plan de hoy</p>
-              <p class="rep-note">Lo que toca hoy, en el orden en que conviene hacerlo.</p>
-              <div class="rep-plan">
-                <div class="rep-item"><svg viewBox="0 0 24 24"><path d="M3 14v-2a9 9 0 0 1 18 0v2M3 14h3v6H3zM18 14h3v6h-3z"/></svg><div><b>Escucha intensiva</b><span>Ciclo completo con dictado diagnóstico</span></div></div>
-                <div class="rep-item"><svg viewBox="0 0 24 24"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg><div><b>Lectura</b><span>Texto con preguntas y velocidad lectora</span></div></div>
-                <div class="rep-item"><svg viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5zM2 13l10 5 10-5"/></svg><div><b>Repaso</b><span>12 tarjetas pendientes</span></div></div>
-                <div class="rep-item"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5zM6 12v5c3 2 9 2 12 0v-5"/></svg><div><b>Use of English</b><span>Práctica en formato de examen</span></div></div>
+            <fieldset class="plan-step">
+              <legend class="subheading">¿Qué idioma quieres aprender?</legend>
+              <div class="plan-options plan-languages">
+                <label class="choice"><input type="radio" name="idioma" value="en" data-summary="Inglés"><span class="choice-name" lang="en">English</span><span class="choice-sub">Inglés</span><span class="choice-sub">Cambridge</span></label>
+                <label class="choice"><input type="radio" name="idioma" value="es" data-summary="Español"><span class="choice-name" lang="es">Español</span><span class="choice-sub">Español</span><span class="choice-sub">DELE</span></label>
+                <label class="choice"><input type="radio" name="idioma" value="fr" data-summary="Francés"><span class="choice-name" lang="fr">Français</span><span class="choice-sub">Francés</span><span class="choice-sub">DELF</span></label>
+                <label class="choice"><input type="radio" name="idioma" value="zh" data-summary="Chino"><span class="choice-name" lang="zh-CN">中文</span><span class="choice-sub">Chino</span><span class="choice-sub">HSK</span></label>
+                <label class="choice"><input type="radio" name="idioma" value="ja" data-summary="Japonés"><span class="choice-name" lang="ja">日本語</span><span class="choice-sub">Japonés</span><span class="choice-sub">JLPT</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="plan-step">
+              <legend class="subheading">¿Qué nivel tienes ahora?</legend>
+              <div class="plan-options">
+                <label class="choice"><input type="radio" name="nivel" value="A1" data-summary="Empiezo de cero (A1)"><span class="choice-name">Empiezo de cero</span><span class="choice-sub">A1</span></label>
+                <label class="choice"><input type="radio" name="nivel" value="A2" data-summary="Sé lo básico (A2)"><span class="choice-name">Sé lo básico</span><span class="choice-sub">A2</span></label>
+                <label class="choice"><input type="radio" name="nivel" value="B1" data-summary="Me defiendo (B1)"><span class="choice-name">Me defiendo</span><span class="choice-sub">B1</span></label>
+                <label class="choice"><input type="radio" name="nivel" value="B2" data-summary="Lo hablo bien (B2)"><span class="choice-name">Lo hablo bien</span><span class="choice-sub">B2</span></label>
+                <label class="choice"><input type="radio" name="nivel" value="C1" data-summary="Avanzado (C1)"><span class="choice-name">Avanzado</span><span class="choice-sub">C1</span></label>
+                <label class="choice"><input type="radio" name="nivel" value="C2" data-summary="Casi como un nativo (C2)"><span class="choice-name">Casi como un nativo</span><span class="choice-sub">C2</span></label>
+                <label class="choice"><input type="radio" name="nivel" value="prueba" data-summary="Lo sabrás con una prueba de nivel"><span class="choice-name">No lo sé</span><span class="choice-sub">Te haremos una prueba</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="plan-step">
+              <legend class="subheading">¿Para qué lo quieres?</legend>
+              <div class="plan-options">
+                <label class="choice"><input type="radio" name="objetivo" value="viajar" data-summary="Viajar"><span class="choice-name">Viajar</span><span class="choice-sub">Desenvolverte fuera</span></label>
+                <label class="choice"><input type="radio" name="objetivo" value="trabajo" data-summary="El trabajo"><span class="choice-name">Trabajo</span><span class="choice-sub">Reuniones, correos, entrevistas</span></label>
+                <label class="choice"><input type="radio" name="objetivo" value="estudios" data-summary="Los estudios"><span class="choice-name">Estudios</span><span class="choice-sub">Clases y textos académicos</span></label>
+                <label class="choice"><input type="radio" name="objetivo" value="examen" data-summary="Aprobar el examen oficial"><span class="choice-name">Aprobar el examen oficial</span><span class="choice-sub" data-exam>Cambridge, DELE, DELF, HSK o JLPT</span></label>
+                <label class="choice"><input type="radio" name="objetivo" value="gusto" data-summary="Por gusto"><span class="choice-name">Por gusto</span><span class="choice-sub">Series, música, cultura</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="plan-step">
+              <legend class="subheading">¿Cuánto tiempo al día?</legend>
+              <div class="plan-options plan-minutes">
+                <label class="choice"><input type="radio" name="minutos" value="10"><span class="choice-name">10 min</span></label>
+                <label class="choice"><input type="radio" name="minutos" value="20"><span class="choice-name">20 min</span></label>
+                <label class="choice"><input type="radio" name="minutos" value="30"><span class="choice-name">30 min</span></label>
+                <label class="choice"><input type="radio" name="minutos" value="45"><span class="choice-name">45 min</span></label>
+                <label class="choice"><input type="radio" name="minutos" value="60"><span class="choice-name">60 min</span></label>
+              </div>
+            </fieldset>
+
+            <div class="plan-summary" tabindex="-1" hidden>
+              <h3 class="subheading">Tu plan</h3>
+              <dl class="plan-list">
+                <div><dt>Idioma</dt><dd data-out="idioma"></dd></div>
+                <div><dt>Nivel</dt><dd data-out="nivel"></dd></div>
+                <div><dt>Para</dt><dd data-out="objetivo"></dd></div>
+                <div><dt>Cada día</dt><dd data-out="minutos"></dd></div>
+              </dl>
+              <p class="muted" data-out="nota"></p>
+              <div class="plan-actions">
+                <button class="btn btn-ghost" type="button" data-plan="cambiar">Cambiar respuestas</button>
+                <a class="btn btn-primary" href="/login">Empezar a estudiar</a>
               </div>
             </div>
-          </div>
+
+            <p class="plan-error" id="plan-error" role="alert"></p>
+            <div class="plan-actions" data-plan="pasos">
+              <button class="btn btn-ghost" type="button" data-plan="atras" hidden>Atrás</button>
+              <button class="btn btn-primary" type="submit">Empezar a estudiar</button>
+            </div>
+          </form>
         </div>
-      </template>
+      </div>
     </div>
   </section>
 
