@@ -36,6 +36,7 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0030](0030-sesion-recordada-solo-con-cookies-aceptadas.md) | La sesión solo se recuerda al cerrar el navegador con las cookies aceptadas, y la política de privacidad se acepta en cada acceso | Aceptada |
 | [0031](0031-contrasena-desde-la-web.md) | La contraseña se pone y se cambia en Ajustes; sin la actual, solo justo después de entrar con el correo; «¿Has olvidado la contraseña?» lleva hasta ahí | Aceptada |
 | [0032](0032-cinco-idiomas-para-todo-el-publico.md) | Cinco idiomas (español, inglés, francés, chino y japonés), para todo el público, por fases; la interfaz, en el idioma del navegador | Aceptada |
+| [0033](0033-tema-personalizado-con-css.md) | Tema personalizado: CSS propio guardado en el perfil que cambia toda la app; solo CSS y nada de fuera; `?sin-tema` lo desactiva | Aceptada |
 
 Plantilla:
 

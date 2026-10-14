@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
+import { EXAMPLE_THEMES } from '@/features/theme/lib/examples';
 
 // Contraste WCAG de los tokens de color en cada tema (design-system/senal/MASTER.md §2 y §7:
 // texto ≥ 4,5:1; foco y bordes que señalan un estado ≥ 3:1). El tema oscuro es la paleta de
@@ -53,12 +54,18 @@ const THEMES = {
   papel: tokens(`[data-theme='paper'] {`),
 };
 
+// Los ejemplos del tema personalizado (ADR-0033) se ofrecen tal cual: cumplen lo mismo, y dan
+// todos los colores para no mezclarse con los del tema que haya elegido cada uno.
+const EXAMPLES = Object.fromEntries(
+  EXAMPLE_THEMES.map((example) => [`de ejemplo ${example.id}`, tokens(':root', example.css)]),
+);
+
 const BACKGROUNDS = ['canvas', 'surface', 'surface-2'];
 /** Colores que se usan como texto sobre cualquiera de los fondos. */
 const TEXT_COLORS = ['text', 'muted', 'accent-text', 'success', 'warning', 'error'];
 const FEEDBACK = ['success', 'warning', 'error'];
 
-describe.each(Object.entries(THEMES))('tema %s', (_name, theme) => {
+describe.each(Object.entries({ ...THEMES, ...EXAMPLES }))('tema %s', (_name, theme) => {
   const color = (token: string): Rgb => {
     const value = theme[token];
     if (!value) throw new Error(`falta el token --${token}`);

@@ -83,6 +83,42 @@ export const fr: Dictionary = {
       'Trop de tentatives échouées. Attends un peu, ou déconnecte-toi et reconnecte-toi avec l’e-mail pour le changer sans l’actuel.',
     errorInternal: 'Impossible d’enregistrer. Réessaie.',
   },
+  customTheme: {
+    title: 'Thème personnalisé',
+    intro:
+      'Change l’apparence de toute l’app avec ton propre CSS : importe un fichier .css ou écris-le ici. Il est enregistré dans ton profil, il te suit donc sur tous tes appareils.',
+    safeHint:
+      'Si un thème rend l’app inutilisable, ouvre cette adresse : le thème n’y est pas appliqué et tu peux le retirer.',
+    safeMode:
+      'Mode sans échec : ton thème est enregistré, mais il n’est pas appliqué sur cette page.',
+    examples: 'Exemples pour commencer',
+    exampleSepia: 'Sépia',
+    exampleContrast: 'Contraste élevé',
+    exampleNeon: 'Néon',
+    fileLabel: 'Importer un fichier .css',
+    cssLabel: 'CSS du thème',
+    preview: 'Essayer sans enregistrer',
+    stopPreview: 'Arrêter l’essai',
+    previewOn: 'Aperçu : voilà à quoi ça ressemblerait. Ce n’est pas encore enregistré.',
+    save: 'Enregistrer le thème',
+    saving: 'Enregistrement…',
+    remove: 'Retirer le thème',
+    saved: 'Thème enregistré : il s’affiche déjà dans toute l’app.',
+    removed: 'Thème retiré : le design habituel revient.',
+    errorTooLong: 'Le thème est trop long : 50 000 caractères au maximum.',
+    errorMarkup:
+      'Le CSS ne peut pas contenir « < » : un thème, c’est seulement du CSS, pas du HTML.',
+    errorImport: 'Les @import ne sont pas autorisés : mets tout le CSS dans le fichier.',
+    errorScript: 'Il y a quelque chose qui n’est pas du CSS de style (javascript:, expression()…).',
+    errorFile: 'Impossible de lire ce fichier.',
+    errorInternal: 'Impossible d’enregistrer. Réessaie.',
+    guideTitle: 'Comment créer un thème',
+    guideBody:
+      'Le plus simple est de changer les variables de couleur, utilisées dans toute l’app. Écris-les dans :root, [data-theme] pour qu’elles s’appliquent avec n’importe quel thème (sombre, clair ou celui du système). Tu peux aussi modifier des composants, comme .card ou .btn.',
+    guideLimits:
+      'Les polices doivent être installées sur ton système et les images, dans le CSS lui-même (data:) : l’app ne charge rien depuis d’autres sites.',
+    guideVariables: 'Variables',
+  },
   login: {
     title: 'Connecte-toi à Señal',
     subtitle:

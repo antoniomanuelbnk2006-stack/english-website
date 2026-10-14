@@ -135,6 +135,8 @@ En `next.config.ts` (`headers()`) y, para la CSP con *nonce*, en `proxy.ts` sigu
 
 **CSRF:** las Server Actions comprueban el origen por diseño; el Route Handler de IA exige sesión y comprueba la cabecera `Origin`.
 
+**Tema personalizado** ([ADR-0033](../adr/0033-tema-personalizado-con-css.md)): cada uno puede guardar su propio CSS, que el layout pinta en un `<style>` solo para su sesión. Por eso `style-src` tiene que seguir admitiendo `'unsafe-inline'`. `checkThemeCss` lo comprueba en el navegador y otra vez en el servidor: sin `<` (no puede cerrar la etiqueta), sin `@import`, sin `javascript:`/`expression(`/`-moz-binding`/`behavior:` y como mucho 50.000 caracteres. Lo que de verdad impide que cargue o mande algo fuera es la CSP: `img-src` y `font-src` no admiten otros orígenes. Si algún día se abren, hay que revisar esto. `?sin-tema` desactiva el tema en cualquier página.
+
 ---
 
 ## 6. La transcripción «escondida»

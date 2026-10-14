@@ -27,6 +27,19 @@ cobalto, misma tipografía y mismas formas, con los niveles de fondo invertidos.
   muestra de Ajustes).
 - El logotipo es de un solo tono: claro sobre fondo oscuro y oscuro sobre fondo claro.
 
+## Tema personalizado
+
+Ajustes deja además pegar o subir un CSS propio ([ADR-0033](../../../docs/adr/0033-tema-personalizado-con-css.md)),
+que se pinta encima de cualquiera de los temas. No forma parte del diseño: es de quien lo escribe.
+
+- Los tres ejemplos (Sepia, Alto contraste y Neón) sí se ofrecen desde la app, así que dan todos
+  los colores y `src/styles/contrast.test.ts` les exige lo mismo que a los temas de arriba.
+- La API estable para un tema son las variables de la tabla; las clases pueden cambiar.
+- Las acciones del apartado son terciarias (borde) salvo «Guardar tema», secundaria: el cobalto
+  de la pantalla sigue siendo el «Guardar» de los ajustes.
+- El botón de subir archivo es la etiqueta del campo con aspecto de botón terciario: el nativo
+  sale en el idioma del navegador, no en el de la app.
+
 ## Controles nativos
 
 Las casillas, los botones de opción y los deslizadores son los del navegador, teñidos con el

@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server';
+import { SAFE_MODE_HEADER, SAFE_MODE_PARAM } from '@/features/theme/lib/custom-css';
 import { buildCsp } from '@/lib/csp';
 import { env } from '@/lib/env';
 import { isLocale } from '@/lib/i18n';
@@ -33,6 +34,9 @@ export async function proxy(request: NextRequest) {
   requestHeaders.delete(LOCALE_REQUEST_HEADER);
   const lang = request.nextUrl.searchParams.get('lang');
   if (isLocale(lang)) requestHeaders.set(LOCALE_REQUEST_HEADER, lang);
+  // Modo seguro del tema personalizado (`?sin-tema`, ADR-0033): la página se pinta sin él.
+  requestHeaders.delete(SAFE_MODE_HEADER);
+  if (request.nextUrl.searchParams.has(SAFE_MODE_PARAM)) requestHeaders.set(SAFE_MODE_HEADER, '1');
 
   const response = await updateSession(request, requestHeaders);
   // La portada pública es HTML estático con su fuente y sus fotos de fuera: no lleva la CSP de

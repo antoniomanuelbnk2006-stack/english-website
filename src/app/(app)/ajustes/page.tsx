@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { cookies } from 'next/headers';
+import { cookies, headers } from 'next/headers';
 import { Button } from '@/components/ui/button';
 import { PageContainer, PageHeader, PageSections } from '@/components/ui/page';
 import { Panel, PanelTitle } from '@/components/ui/panel';
@@ -10,6 +10,9 @@ import { passwordChangeNeedsCurrent } from '@/features/auth/server/queries';
 import { ConsentSettings } from '@/features/consent/components/consent-settings';
 import { SettingsForm } from '@/features/profile/components/settings-form';
 import { getProfile } from '@/features/profile/server/queries';
+import { CustomTheme } from '@/features/theme/components/custom-theme';
+import { SAFE_MODE_HEADER } from '@/features/theme/lib/custom-css';
+import { getCustomThemeCss } from '@/features/theme/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
 import { CONSENT_COOKIE, COOKIE_POLICY_URL, PRIVACY_POLICY_URL, parseConsent } from '@/lib/consent';
 import { env } from '@/lib/env';
@@ -23,11 +26,13 @@ export default async function SettingsPage() {
   await getSessionOrRedirect();
   // La contraseña solo existe si el servidor tiene su secreto (ADR-0026).
   const withPassword = Boolean(env.LOGIN_CODE_PEPPER);
-  const [t, profile, cookieStore, needsCurrent] = await Promise.all([
+  const [t, profile, cookieStore, needsCurrent, requestHeaders, customCss] = await Promise.all([
     getT(),
     getProfile(),
     cookies(),
     passwordChangeNeedsCurrent(),
+    headers(),
+    getCustomThemeCss(),
   ]);
   const consent = parseConsent(cookieStore.get(CONSENT_COOKIE)?.value);
 
@@ -47,6 +52,11 @@ export default async function SettingsPage() {
             playbackRate: profile.settings.playback_rate,
           }}
         />
+
+        <Panel id="tema" className="flex scroll-mt-24 flex-col gap-3">
+          <PanelTitle>{t('customTheme.title')}</PanelTitle>
+          <CustomTheme saved={customCss ?? ''} safeMode={requestHeaders.has(SAFE_MODE_HEADER)} />
+        </Panel>
 
         <Panel className="flex flex-col gap-3">
           <PanelTitle>{t('settings.accountTitle')}</PanelTitle>
