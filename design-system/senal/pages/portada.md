@@ -26,7 +26,7 @@ y nunca se ven a la vez (las separa toda la página). «Entrar», «Saber Más»
 
 ## Hero: acercamiento al portátil
 
-Es la única excepción a MASTER §6 (movimiento) en toda la web. La portada empieza con una escena
+Es, junto con el titular que se escribe (abajo), la única excepción a MASTER §6 (movimiento) en toda la web. La portada empieza con una escena
 de una sala de estudio de noche: ventana, flexo, libros y un portátil sobre la mesa. Al hacer
 scroll, la escena se acerca a la pantalla del portátil hasta que esta ocupa la ventana y se
 cambia por la pantalla «Hoy» de la app.
@@ -52,6 +52,26 @@ cambia por la pantalla «Hoy» de la app.
 - **CSP:** sin `style="…"` en el HTML. `app.js` solo toca propiedades del CSSOM, que la CSP admite.
 - **Movimiento reducido, sin JavaScript o si no cabe:** la portada se queda quieta, con el titular
   y, debajo, la escena. Mide una pantalla si cabe; si no, sigue hacia abajo.
+
+## Titular: la palabra que se escribe
+
+La palabra del titular («Domina el **Inglés** con Señal») se escribe y se borra, un idioma tras
+otro: Inglés, Español, Francés, Chino, Japonés y vuelta a empezar. Es la otra excepción a MASTER §6;
+la pidió el dueño al ampliar Señal a cinco idiomas (ADR-0032).
+
+- **Ritmo:** 420 ms por letra (cada palabra tarda entre 2,1 y 2,9 s en escribirse), 5 s entera y
+  quieta, y se borra a 120 ms por letra. Empieza con «Inglés» ya escrito, como en el HTML.
+- **Cursor:** una barra fina de cobalto (`accent`), quieta: no parpadea. Solo aparece con la
+  animación en marcha.
+- **Sin saltos:** `app.js` mide el titular con cada palabra y le da el alto de la que más ocupa.
+  Así no cambia de líneas al escribirse ni mueve lo de abajo, y el acercamiento al portátil, que
+  mide el titular, cuenta con su alto definitivo. Por eso este bloque va antes que el del
+  acercamiento. En el móvil, con una palabra corta, queda una línea libre debajo.
+- **Lectores de pantalla:** leen siempre «Domina el Inglés con Señal». La palabra animada va con
+  `aria-hidden` y la fija, con `.sr-only`.
+- **Movimiento reducido o sin JavaScript:** «Inglés», quieto y sin cursor.
+- **Pendiente de decidir:** la animación no se detiene sola. WCAG 2.2.2 pide poder pausar lo que se
+  mueve más de 5 s; se puede cumplir con un botón de pausa o parando tras una vuelta.
 
 ## Fotografías
 

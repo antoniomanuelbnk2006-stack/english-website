@@ -143,6 +143,83 @@ if (form && contact) {
   if (read() === null) open();
 }
 
+// Portada: la palabra del titular se escribe y se borra, un idioma tras otro (portada.md,
+// «Titular: la palabra que se escribe»). Los lectores de pantalla leen siempre «Domina el
+// Inglés con Señal»: la palabra animada va oculta para ellos y la fija, oculta a la vista.
+// Con movimiento reducido o sin JavaScript se queda «Inglés». Va antes que el acercamiento:
+// este mide el titular, y el titular tiene que tener ya su alto definitivo.
+{
+  const slot = document.querySelector('.typed');
+  const word = slot?.querySelector('.typed-word');
+  const heading = slot?.closest('h1');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  if (slot && word && heading) {
+    const WORDS = slot.dataset.words.split(' ');
+    const TYPE_MS = 420; // por letra: cada palabra tarda entre 2 y 3 s en escribirse
+    const HOLD_MS = 5000; // la palabra entera, quieta
+    const DELETE_MS = 120; // borrar va más deprisa
+    const caret = document.createElement('span');
+    caret.className = 'typed-caret';
+    caret.setAttribute('aria-hidden', 'true');
+    slot.append(caret);
+
+    // El titular guarda el alto que tiene con la palabra que más ocupa: así no cambia de
+    // líneas mientras se escribe, ni mueve lo que hay debajo.
+    const reserve = () => {
+      const shown = word.textContent;
+      heading.style.minHeight = '';
+      let tallest = 0;
+      for (const text of WORDS) {
+        word.textContent = text;
+        tallest = Math.max(tallest, heading.getBoundingClientRect().height);
+      }
+      word.textContent = shown;
+      heading.style.minHeight = `${tallest}px`;
+    };
+
+    let index = 0;
+    let timer = 0;
+    const later = (step, ms) => {
+      timer = window.setTimeout(step, ms);
+    };
+    const type = (text, letters) => {
+      word.textContent = text.slice(0, letters);
+      if (letters < text.length) later(() => type(text, letters + 1), TYPE_MS);
+      else later(erase, HOLD_MS);
+    };
+    const erase = () => {
+      const text = word.textContent;
+      if (text.length > 0) {
+        word.textContent = text.slice(0, -1);
+        later(erase, DELETE_MS);
+      } else {
+        index = (index + 1) % WORDS.length;
+        later(() => type(WORDS[index], 1), TYPE_MS);
+      }
+    };
+
+    // Empieza con «Inglés» ya escrito, como lo pinta el HTML.
+    const start = () => {
+      window.clearTimeout(timer);
+      index = 0;
+      word.textContent = WORDS[0];
+      slot.classList.toggle('is-on', !reduced.matches);
+      if (!reduced.matches) later(erase, HOLD_MS);
+    };
+
+    // Se mide con el cursor puesto, que también ocupa.
+    const restart = () => {
+      start();
+      reserve();
+    };
+    restart();
+    window.addEventListener('resize', reserve);
+    reduced.addEventListener('change', restart);
+    document.fonts?.ready.then(reserve);
+  }
+}
+
 // Portada: acercamiento al portátil con el scroll (design-system/senal/pages/portada.md, «Hero»).
 // La escena se acerca a la pantalla del portátil hasta que la copia de «Hoy» que lleva dentro
 // ocupa la ventana; en ese momento se cambia por la misma pantalla a tamaño real, que se ve nítida.
