@@ -1,0 +1,364 @@
+{
+  "id": "es-a1-lis-006",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u06",
+  "series": "es-a1-u06-llamada",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Una llamada de teléfono",
+  "summary_es": {
+    "en": "Laura calls Javier and invites him to the park on Saturday.",
+    "fr": "Laura appelle Javier et l’invite au parc samedi.",
+    "zh": "Laura 给 Javier 打电话，邀请他周六去公园。",
+    "ja": "ラウラはハビエルに電話をして、土曜日に公園へ誘います。"
+  },
+  "topic": "daily-life",
+  "tags": ["teléfono", "invitar", "hora"],
+  "can_do": ["L-A1-02"],
+  "grammar_focus": ["es.a1.numeros-y-hora"],
+  "vocab_focus": ["sábado", "parque", "hora", "hermana"],
+  "est_minutes": 4,
+  "prediction_prompt": "Una amiga llama para invitar a alguien. ¿Qué le dice?",
+  "pre_teach": ["puerta", "y media"],
+  "speakers": [
+    { "id": "laura", "name": "Laura", "accent": "es-ES", "gender": "female" },
+    { "id": "javier", "name": "Javier", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "laura",
+      "text": "Hola, Javier. ¿Qué haces el sábado?",
+      "tokens": [
+        { "t": "Hola", "l": "hola", "p": "INTJ", "w": false, "s": 0.01, "e": 0.421 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Javier", "l": "javier", "p": "PROPN", "w": false, "s": 0.421, "e": 0.996 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 0.996, "e": 1.325 },
+        { "t": "haces", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 1.325, "e": 1.818 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 1.818, "e": 2.065 },
+        { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "s": 2.065, "e": 2.64 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.714
+    },
+    {
+      "id": "s2",
+      "speaker": "javier",
+      "text": "Nada. ¿Y tú?",
+      "tokens": [
+        { "t": "Nada", "l": "algo", "p": "PRON", "w": true, "s": 3.424, "e": 4.014 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 4.314, "e": 4.494 },
+        { "t": "tú", "l": "tú", "p": "PRON", "w": true, "s": 4.494, "e": 4.764 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.414,
+      "end": 4.871
+    },
+    {
+      "id": "s3",
+      "speaker": "laura",
+      "text": "Voy al parque con mi hermana.",
+      "tokens": [
+        { "t": "Voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 5.581, "e": 5.849 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 5.849, "e": 6.05 },
+        { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "sp": true, "s": 6.049, "e": 6.517 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 6.518, "e": 6.786 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 6.785, "e": 6.986 },
+        { "t": "hermana", "l": "hermana", "p": "NOUN", "w": true, "s": 6.986, "e": 7.521 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.571,
+      "end": 7.58
+    },
+    {
+      "id": "s4",
+      "speaker": "laura",
+      "text": "¿Quieres venir?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Quieres", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 8.09, "e": 8.593 },
+        { "t": "venir", "l": "venir", "p": "VERB", "w": true, "s": 8.593, "e": 8.97 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.08,
+      "end": 9.083
+    },
+    {
+      "id": "s5",
+      "speaker": "javier",
+      "text": "Sí, me gusta el parque.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 9.803, "e": 10.253 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 10.513, "e": 10.732 },
+        { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true, "s": 10.732, "e": 11.171 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.171, "e": 11.39 },
+        { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "s": 11.391, "e": 11.903 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.783,
+      "end": 11.972
+    },
+    {
+      "id": "s6",
+      "speaker": "javier",
+      "text": "¿A qué hora?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 12.482, "e": 12.604 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 12.604, "e": 12.848 },
+        { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "s": 12.847, "e": 13.152 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.472,
+      "end": 13.25
+    },
+    {
+      "id": "s7",
+      "speaker": "laura",
+      "text": "A las cuatro y media.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 13.96, "e": 14.125 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 14.125, "e": 14.455 },
+        { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "sp": true, "s": 14.454, "e": 15.031 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 15.031, "e": 15.196 },
+        { "t": "media", "l": "medio", "p": "ADJ", "w": true, "s": 15.196, "e": 15.69 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.95,
+      "end": 15.766
+    },
+    {
+      "id": "s8",
+      "speaker": "javier",
+      "text": "Muy bien. ¿Dónde?",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 16.476, "e": 16.849 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 16.849, "e": 17.316 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Dónde", "l": "dónde", "p": "ADV", "w": true, "s": 17.556, "e": 18.056 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.466,
+      "end": 18.167
+    },
+    {
+      "id": "s9",
+      "speaker": "laura",
+      "text": "En la puerta del parque.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 18.877, "e": 19.071 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 19.071, "e": 19.265 },
+        { "t": "puerta", "l": "puerta", "p": "NOUN", "w": true, "sp": true, "s": 19.265, "e": 19.717 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 19.717, "e": 19.975 },
+        { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "s": 19.975, "e": 20.427 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.867,
+      "end": 20.494
+    },
+    {
+      "id": "s10",
+      "speaker": "javier",
+      "text": "Sí. Hasta el sábado.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 21.204, "e": 21.614 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 21.814, "e": 22.185 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 22.185, "e": 22.371 },
+        { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "s": 22.371, "e": 22.804 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.194,
+      "end": 22.923
+    },
+    {
+      "id": "s11",
+      "speaker": "laura",
+      "text": "Hasta luego. Un abrazo.",
+      "tokens": [
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 23.633, "e": 24.143 },
+        { "t": "luego", "l": "luego", "p": "ADV", "w": true, "s": 24.143, "e": 24.653 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 24.903, "e": 25.164 },
+        { "t": "abrazo", "l": "abrazo", "p": "NOUN", "w": true, "s": 25.164, "e": 25.773 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.623,
+      "end": 25.878
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "y media",
+      "surface": "y media",
+      "pos": "phrase",
+      "def_en": "treinta minutos después de la hora",
+      "def_es": { "en": "half past", "fr": "et demie", "zh": "半", "ja": "半" },
+      "ref": "s7"
+    },
+    {
+      "lemma": "puerta",
+      "surface": "puerta",
+      "pos": "noun",
+      "def_en": "lugar por donde se entra",
+      "def_es": { "en": "door, gate", "fr": "porte", "zh": "门", "ja": "入口" },
+      "ref": "s9"
+    },
+    {
+      "lemma": "abrazo",
+      "surface": "abrazo",
+      "pos": "noun",
+      "def_en": "despedida cariñosa",
+      "def_es": {
+        "en": "hug (a friendly goodbye)",
+        "fr": "une accolade (formule d’adieu)",
+        "zh": "拥抱（亲切的告别语）",
+        "ja": "ハグ（親しい別れの言葉）"
+      },
+      "ref": "s11"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Por qué llama Laura?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "She asks *¿Quieres venir?*: she invites him." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para comprar pan en una tienda" },
+        { "id": "b", "text": "Para invitar a Javier" },
+        { "id": "c", "text": "Para hablar de la escuela nueva" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Con quién va Laura al parque?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "*Con mi hermana*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Con su madre y su padre" },
+        { "id": "b", "text": "Con su amigo Javier" },
+        { "id": "c", "text": "Con su hermana" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "A Javier no le gusta el parque.",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "*Me gusta el parque*." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿A qué hora quedan?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "*A las cuatro y media*: half past four." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "A las cuatro y media" },
+        { "id": "b", "text": "A las cinco y media de la tarde" },
+        { "id": "c", "text": "A las ocho de la mañana" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "*En la puerta del parque*." },
+      "type": "gap_fill",
+      "text": "Quedan en la {{1}} del parque.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["puerta"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué dice Javier al final?",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "*Hasta el sábado*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Buenas noches a todos" },
+        { "id": "b", "text": "Hasta el sábado" },
+        { "id": "c", "text": "Mucho gusto, Laura" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abrazo", "algo", "bien", "con", "de", "dónde", "el", "en", "gustar", "hacer", "hasta", "hermana",
+    "hora", "ir", "luego", "medio", "mi", "muy", "parque", "puerta", "querer", "qué", "sábado", "tú", "un",
+    "venir", "y", "yo"
+  ],
+  "difficulty": 681,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 2.9,
+    "flesch_reading_ease": 110,
+    "checked_at": "2026-10-18T21:38:33.650Z"
+  },
+  "audio": {
+    "src": "audio/a1/es-a1-lis-006/v1.m4a",
+    "duration_s": 25.878,
+    "wpm": 107,
+    "provider": "piper",
+    "voices": { "laura": "sharvard-f", "javier": "sharvard-m" },
+    "loudness_lufs": -16,
+    "peaks": [
+      0.63, 1, 0.26, 0.5, 0.53, 0.36, 0.56, 0.45, 0.07, 0.01, 0, 0.77, 0.99, 0.83, 0.84, 0.72, 0.71, 0.59,
+      0.52, 0.76, 1, 0.67, 0.55, 0.25, 0.12, 0, 0, 0, 0, 0, 0, 0.16, 0.56, 0.86, 1, 0.76, 0.46, 0.04, 0, 0, 1,
+      0.88, 0.93, 0.68, 0.06, 0, 0, 0, 0, 0, 0, 0.22, 0.63, 0.89, 1, 0.92, 0.8, 0.82, 0.84, 0.3, 0.81, 0.38,
+      0.82, 0.47, 0.7, 0.71, 0.67, 0.67, 0.28, 0.12, 0.01, 0, 0, 0, 0.01, 0.73, 0.92, 1, 0.32, 0.73, 0.5, 0.45,
+      0.36, 0.04, 0.01, 0, 0, 0, 0, 0, 0.07, 0.46, 0.53, 0.59, 0.42, 0.04, 0, 0.23, 0.36, 0.4, 0.68, 0.75,
+      0.22, 0.81, 0.67, 0.4, 1, 0.19, 0.07, 0.14, 0.07, 0, 0, 0, 0, 0.89, 1, 0.18, 0.91, 0.78, 0.51, 0.2, 0.02,
+      0, 0, 0, 0, 0, 0, 0.43, 0.44, 0.63, 0.5, 0.16, 0.98, 1, 0.23, 0.5, 0.52, 0.33, 0.33, 0.48, 0.4, 0.15,
+      0.22, 0.09, 0, 0, 0, 0, 0, 0, 0.17, 0.36, 1, 0.93, 0.89, 0.82, 0.85, 0.39, 0.09, 0, 0.13, 0.71, 1, 0.78,
+      0.37, 0.06, 0.01, 0, 0, 0, 0, 0, 0, 0.52, 0.98, 1, 0.56, 0.64, 0.28, 0.74, 0.82, 0.75, 0.41, 0.91, 0.42,
+      0.37, 0.27, 0.12, 0, 0, 0, 0, 0, 0, 0.23, 0.5, 1, 0.98, 0.11, 0, 0.87, 0.74, 0.24, 1, 0.4, 0.86, 0.87,
+      0.61, 0.2, 0.08, 0.01, 0, 0, 0, 0, 0, 0, 0.97, 0.75, 0.68, 0.88, 0.98, 1, 0.94, 0.38, 0.4, 0.17, 0, 0.03,
+      0.48, 0.79, 1, 0.76, 0.95, 0.07, 0.14, 0.23, 0.08
+    ]
+  }
+}

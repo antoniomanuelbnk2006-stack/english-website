@@ -1,0 +1,1028 @@
+{
+  "id": "es-b2-rea-004",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u02",
+  "series": "es-b2-u02-publicidad",
+  "skill": "reading",
+  "genre": "article",
+  "title": "El poder de la publicidad",
+  "summary_es": {
+    "en": "An article on how advertising works, how social media changed it and how to be a more conscious consumer.",
+    "fr": "Un article sur le fonctionnement de la publicité, la façon dont les réseaux l’ont changée et comment consommer plus consciemment.",
+    "zh": "一篇文章，谈广告如何运作、社交媒体如何改变了它，以及如何做更有意识的消费者。",
+    "ja": "広告の仕組み、SNSがそれをどう変えたか、より意識的な消費者になる方法についての記事です。"
+  },
+  "topic": "media",
+  "tags": ["publicidad", "consumo", "redes sociales"],
+  "can_do": ["R-B2-01"],
+  "grammar_focus": ["es.b2.pasiva-y-se"],
+  "vocab_focus": ["anuncio", "consumidor", "seguidor", "persuasión"],
+  "est_minutes": 14,
+  "prediction_prompt": "¿Crees que la publicidad influye en lo que compras?",
+  "pre_teach": ["seguidor", "persuasión"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Cada día vemos, sin darnos cuenta, cientos de anuncios: en la televisión, en las redes sociales, en las paradas de autobús e incluso en los vídeos que nos gustan.",
+          "tokens": [
+            { "t": "Cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "vemos", "l": "ver", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "darnos", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cuenta", "l": "contar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cientos", "l": "ciento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "anuncios", "l": "anuncio", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "televisión", "l": "televisión", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "redes", "l": "red", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sociales", "l": "social", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "paradas", "l": "parar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "autobús", "l": "autobús", "p": "NOUN", "w": true, "sp": true },
+            { "t": "e", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "incluso", "l": "incluso", "p": "ADV", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vídeos", "l": "vídeo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "gustan", "l": "gustar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "La publicidad es tan habitual que casi nunca nos preguntamos cómo funciona ni qué efecto tiene en nuestras decisiones.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "publicidad", "l": "publicidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true },
+            { "t": "habitual", "l": "habitual", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "preguntamos", "l": "preguntar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true },
+            { "t": "funciona", "l": "funcionar", "p": "VERB", "w": true, "sp": true },
+            { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "efecto", "l": "efecto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "nuestras", "l": "nuestro", "p": "DET", "w": true, "sp": true },
+            { "t": "decisiones", "l": "decisión", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Los publicistas saben que una persona no compra un producto solo porque lo necesita, sino porque le provoca una emoción.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "publicistas", "l": "publicista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "saben", "l": "saber", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "persona", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "compra", "l": "comprar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "producto", "l": "producto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "necesita", "l": "necesitar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "provoca", "l": "provocar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "emoción", "l": "emoción", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Por eso, muchos anuncios no hablan de las características técnicas de un coche, sino de libertad, de aventura o de éxito.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "eso", "l": "esto", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "anuncios", "l": "anuncio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "hablan", "l": "hablar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "características", "l": "característica", "p": "NOUN", "w": true, "sp": true },
+            { "t": "técnicas", "l": "técnico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "coche", "l": "coche", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "libertad", "l": "libertad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "aventura", "l": "aventura", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "éxito", "l": "éxito", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Un perfume, por ejemplo, nunca se anuncia como una mezcla de sustancias, sino como una promesa de seducción.",
+          "tokens": [
+            { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "perfume", "l": "perfume", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "ejemplo", "l": "ejemplo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "anuncia", "l": "anunciar", "p": "VERB", "w": true, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "mezcla", "l": "mezclar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "sustancias", "l": "sustancia", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "promesa", "l": "promesa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "seducción", "l": "seducción", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Lo que se vende, en realidad, es una imagen de uno mismo.",
+          "tokens": [
+            { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "vende", "l": "vender", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "realidad", "l": "realidad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "imagen", "l": "imagen", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "uno", "l": "uno", "p": "NUM", "w": false, "sp": true },
+            { "t": "mismo", "l": "mismo", "p": "DET", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Las redes sociales han transformado este mecanismo.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "redes", "l": "red", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sociales", "l": "social", "p": "ADJ", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "transformado", "l": "transformar", "p": "VERB", "w": true, "sp": true },
+            { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "mecanismo", "l": "mecanismo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Antes, el anunciante pagaba a una cadena de televisión por emitir un mensaje que veía todo el mundo.",
+          "tokens": [
+            { "t": "Antes", "l": "antes", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "anunciante", "l": "anunciante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pagaba", "l": "pagar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cadena", "l": "cadena", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "televisión", "l": "televisión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "emitir", "l": "emitir", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "mensaje", "l": "mensaje", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "veía", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mundo", "l": "mundo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Hoy, los algoritmos analizan lo que buscamos, lo que compramos y lo que leemos, y nos muestran anuncios a medida.",
+          "tokens": [
+            { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "algoritmos", "l": "algoritmo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "analizan", "l": "analizar", "p": "VERB", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "buscamos", "l": "buscar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "compramos", "l": "comprar", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "leemos", "l": "leer", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "muestran", "l": "mostrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "anuncios", "l": "anuncio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "medida", "l": "medida", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Es una forma de publicidad más eficaz y, también, más difícil de detectar.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "forma", "l": "forma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "publicidad", "l": "publicidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "eficaz", "l": "eficaz", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "difícil", "l": "difícil", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "detectar", "l": "detectar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Una de las técnicas más extendidas es la de los llamados «influencers».",
+          "tokens": [
+            { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "técnicas", "l": "técnico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "extendidas", "l": "extender", "p": "VERB", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "llamados", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+            { "t": "influencers", "l": "influencer", "p": "NOUN", "w": true },
+            { "t": "»", "l": "»", "p": "PUNCT", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Se trata de personas con muchos seguidores que recomiendan productos como si fueran amigos.",
+          "tokens": [
+            { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "trata", "l": "tratar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "seguidores", "l": "seguidor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "recomiendan", "l": "recomendar", "p": "VERB", "w": true, "sp": true },
+            { "t": "productos", "l": "producto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "fueran", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Como no parece un anuncio, la gente confía más en ellos.",
+          "tokens": [
+            { "t": "Como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "anuncio", "l": "anunciar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "confía", "l": "confiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "ellos", "l": "ellos", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Sin embargo, muchas veces cobran por esas recomendaciones, y no siempre lo dicen con claridad.",
+          "tokens": [
+            { "t": "Sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "embargo", "l": "embargo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cobran", "l": "cobrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "esas", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "recomendaciones", "l": "recomendación", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "dicen", "l": "decir", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "claridad", "l": "claridad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "La publicidad también influye en lo que consideramos normal.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "publicidad", "l": "publicidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "influye", "l": "influir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "consideramos", "l": "considerar", "p": "VERB", "w": true, "sp": true },
+            { "t": "normal", "l": "normal", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Durante décadas, los anuncios mostraron a las mujeres limpiando la casa y a los hombres conduciendo coches, y esas imágenes reforzaron ideas anticuadas.",
+          "tokens": [
+            { "t": "Durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "décadas", "l": "década", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "anuncios", "l": "anuncio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "mostraron", "l": "mostrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mujeres", "l": "mujer", "p": "NOUN", "w": true, "sp": true },
+            { "t": "limpiando", "l": "limpiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "hombres", "l": "hombre", "p": "NOUN", "w": true, "sp": true },
+            { "t": "conduciendo", "l": "conducir", "p": "VERB", "w": true, "sp": true },
+            { "t": "coches", "l": "coche", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "esas", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "imágenes", "l": "imagen", "p": "NOUN", "w": true, "sp": true },
+            { "t": "reforzaron", "l": "reforzar", "p": "VERB", "w": true, "sp": true },
+            { "t": "ideas", "l": "idea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "anticuadas", "l": "anticuado", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Hoy muchas marcas intentan cambiar ese mensaje, aunque algunos críticos dudan de que lo hagan por convicción y no por interés comercial.",
+          "tokens": [
+            { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "marcas", "l": "marcar", "p": "VERB", "w": true, "sp": true },
+            { "t": "intentan", "l": "intentar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cambiar", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "mensaje", "l": "mensaje", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "críticos", "l": "crítico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "dudan", "l": "dudar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "hagan", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "convicción", "l": "convicción", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "interés", "l": "interés", "p": "NOUN", "w": true, "sp": true },
+            { "t": "comercial", "l": "comercial", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "La legislación intenta proteger al consumidor.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "legislación", "l": "legislación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "intenta", "l": "intentar", "p": "VERB", "w": true, "sp": true },
+            { "t": "proteger", "l": "proteger", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "consumidor", "l": "consumidor", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "En muchos países, los anuncios no pueden engañar, ni dirigirse a los niños de una manera agresiva, ni prometer resultados imposibles.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "países", "l": "país", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "anuncios", "l": "anuncio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "engañar", "l": "engañar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "dirigirse", "l": "dirigir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "niños", "l": "niño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "manera", "l": "manera", "p": "NOUN", "w": true, "sp": true },
+            { "t": "agresiva", "l": "agresivo", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "prometer", "l": "prometer", "p": "VERB", "w": true, "sp": true },
+            { "t": "resultados", "l": "resultado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "imposibles", "l": "imposible", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Pero la ley siempre llega más tarde que la tecnología, y los reguladores tienen dificultades para controlar un mercado que cambia cada mes.",
+          "tokens": [
+            { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ley", "l": "ley", "p": "NOUN", "w": true, "sp": true },
+            { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true },
+            { "t": "llega", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tecnología", "l": "tecnología", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "reguladores", "l": "regulador", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "dificultades", "l": "dificultad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "controlar", "l": "controlar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "mercado", "l": "mercado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "cambia", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "mes", "l": "mes", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "¿Significa esto que debemos desconfiar de toda la publicidad?",
+          "tokens": [
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Significa", "l": "significar", "p": "VERB", "w": true, "sp": true },
+            { "t": "esto", "l": "esto", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "debemos", "l": "deber", "p": "VERB", "w": true, "sp": true },
+            { "t": "desconfiar", "l": "desconfiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "toda", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "publicidad", "l": "publicidad", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "No necesariamente.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "necesariamente", "l": "necesariamente", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Un buen anuncio puede informar, divertir e incluso emocionar.",
+          "tokens": [
+            { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "anuncio", "l": "anunciar", "p": "VERB", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "informar", "l": "informar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "divertir", "l": "divertir", "p": "VERB", "w": true, "sp": true },
+            { "t": "e", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "incluso", "l": "incluso", "p": "ADV", "w": true, "sp": true },
+            { "t": "emocionar", "l": "emocionar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s4",
+          "text": "Hay, además, campañas que ayudan a la sociedad, como las que invitan a no conducir después de beber o a reciclar.",
+          "tokens": [
+            { "t": "Hay", "l": "haber", "p": "AUX", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "campañas", "l": "campaña", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "ayudan", "l": "ayudar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sociedad", "l": "sociedad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "invitan", "l": "invitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "conducir", "l": "conducir", "p": "VERB", "w": true, "sp": true },
+            { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "beber", "l": "beber", "p": "VERB", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "reciclar", "l": "reciclar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s5",
+          "text": "El problema aparece cuando se aprovecha de nuestras inseguridades para vendernos algo que no necesitamos.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "aparece", "l": "aparecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "aprovecha", "l": "aprovechar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "nuestras", "l": "nuestro", "p": "DET", "w": true, "sp": true },
+            { "t": "inseguridades", "l": "inseguridad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "vendernos", "l": "vender", "p": "VERB", "w": true, "sp": true },
+            { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "necesitamos", "l": "necesitar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s6",
+          "text": "Reconocer esa diferencia es el primer paso para ser consumidores más libres.",
+          "tokens": [
+            { "t": "Reconocer", "l": "reconocer", "p": "VERB", "w": true, "sp": true },
+            { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "diferencia", "l": "diferencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "paso", "l": "pasar", "p": "VERB", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "consumidores", "l": "consumidor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "libres", "l": "libre", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "sentences": [
+        {
+          "id": "p8s1",
+          "text": "Existen hábitos sencillos que ayudan.",
+          "tokens": [
+            { "t": "Existen", "l": "existir", "p": "VERB", "w": true, "sp": true },
+            { "t": "hábitos", "l": "hábito", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sencillos", "l": "sencillo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "ayudan", "l": "ayudar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s2",
+          "text": "Esperar veinticuatro horas antes de una compra no urgente, comparar precios en varias tiendas, leer opiniones de usuarios reales y preguntarse si de verdad queremos algo, o si nos han convencido de que lo queremos, son maneras de tomar decisiones más conscientes.",
+          "tokens": [
+            { "t": "Esperar", "l": "esperar", "p": "VERB", "w": true, "sp": true },
+            { "t": "veinticuatro", "l": "veinticuatro", "p": "NUM", "w": false, "sp": true },
+            { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "compra", "l": "comprar", "p": "VERB", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "urgente", "l": "urgente", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "comparar", "l": "comparar", "p": "VERB", "w": true, "sp": true },
+            { "t": "precios", "l": "precio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "varias", "l": "varios", "p": "DET", "w": true, "sp": true },
+            { "t": "tiendas", "l": "tienda", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "leer", "l": "leer", "p": "VERB", "w": true, "sp": true },
+            { "t": "opiniones", "l": "opinión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "usuarios", "l": "usuario", "p": "NOUN", "w": true, "sp": true },
+            { "t": "reales", "l": "real", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "preguntarse", "l": "preguntar", "p": "VERB", "w": true, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "verdad", "l": "verdad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "queremos", "l": "querer", "p": "VERB", "w": true, "sp": true },
+            { "t": "algo", "l": "algo", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "convencido", "l": "convencer", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "queremos", "l": "querer", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "maneras", "l": "manera", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "tomar", "l": "tomar", "p": "VERB", "w": true, "sp": true },
+            { "t": "decisiones", "l": "decisión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "conscientes", "l": "consciente", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "sentences": [
+        {
+          "id": "p9s1",
+          "text": "En definitiva, la publicidad no es mala en sí misma, pero conviene mirarla con ojo crítico.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "definitiva", "l": "definitivo", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "publicidad", "l": "publicidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "mala", "l": "malo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "sp": true },
+            { "t": "misma", "l": "mismo", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "conviene", "l": "convenir", "p": "VERB", "w": true, "sp": true },
+            { "t": "mirarla", "l": "mirar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "ojo", "l": "ojo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "crítico", "l": "crítico", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p9s2",
+          "text": "Si aprendemos a distinguir la información de la persuasión, seremos menos vulnerables y más dueños de nuestro dinero.",
+          "tokens": [
+            { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "aprendemos", "l": "aprender", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "distinguir", "l": "distinguir", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "información", "l": "información", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "persuasión", "l": "persuasión", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "seremos", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "vulnerables", "l": "vulnerable", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "dueños", "l": "dueño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "nuestro", "l": "nuestro", "p": "DET", "w": true, "sp": true },
+            { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p9s3",
+          "text": "Y quizá, con el tiempo, nos demos cuenta de que muchas de las cosas que más nos gustan no salen en ningún anuncio.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "quizá", "l": "quizá", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "demos", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cuenta", "l": "contar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cosas", "l": "cosa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "gustan", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "salen", "l": "salir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "ningún", "l": "ningún", "p": "DET", "w": true, "sp": true },
+            { "t": "anuncio", "l": "anunciar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Impersonal se in explanations",
+        "fr": "Le se impersonnel dans les explications",
+        "zh": "说明中的无人称 se",
+        "ja": "説明の中の不定人称 se"
+      },
+      "explanation_es": {
+        "en": "Explanatory texts often hide the agent with *se*: *Lo que se vende es una imagen*, *cuando se aprovecha de nuestras inseguridades*."
+      },
+      "refs": ["p2s4", "p7s5"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "seguidor",
+      "surface": "seguidores",
+      "pos": "noun",
+      "def_en": "persona que sigue a otra en las redes sociales",
+      "def_es": { "en": "follower", "fr": "abonné", "zh": "关注者", "ja": "フォロワー" },
+      "ref": "p4s2"
+    },
+    {
+      "lemma": "persuasión",
+      "surface": "persuasión",
+      "pos": "noun",
+      "def_en": "acción de convencer a alguien",
+      "def_es": { "en": "persuasion", "fr": "persuasion", "zh": "说服", "ja": "説得" },
+      "ref": "p9s2"
+    },
+    {
+      "lemma": "anunciante",
+      "surface": "anunciante",
+      "pos": "noun",
+      "def_en": "empresa que paga un anuncio",
+      "def_es": { "en": "advertiser", "fr": "annonceur", "zh": "广告商", "ja": "広告主" },
+      "ref": "p3s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Qué defiende el autor?",
+      "evidence": ["p9s1"],
+      "rationale_es": { "en": "He argues for a critical eye, not a ban." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Hay que prohibir todos los anuncios que usan redes sociales" },
+        { "id": "b", "text": "Hay que ver los anuncios con ojo crítico" },
+        { "id": "c", "text": "La publicidad solo sirve para engañar a las personas más jóvenes" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Por qué compramos algo, según los publicistas?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "Because the product evokes an emotion." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Por su precio, que suele ser más bajo que el de otros" },
+        { "id": "b", "text": "Por su utilidad práctica en la vida diaria" },
+        { "id": "c", "text": "Por la emoción que nos provoca" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Los anuncios actuales son más fáciles de detectar que los antiguos.",
+      "evidence": ["p3s4"],
+      "rationale_es": { "en": "Targeted ads are more effective and harder to detect." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Por qué confía la gente en los «influencers»?",
+      "evidence": ["p4s3"],
+      "rationale_es": { "en": "Because the recommendation does not look like an advert." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque no parecen anuncios" },
+        { "id": "b", "text": "Porque son expertos en los productos" },
+        { "id": "c", "text": "Porque nunca cobran por recomendar" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Qué se deduce de que «la ley siempre llega más tarde que la tecnología»?",
+      "evidence": ["p6s3"],
+      "rationale_es": { "en": "Regulators struggle to keep up with the market." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que las leyes actuales son demasiado estrictas para las empresas" },
+        { "id": "b", "text": "Que las normas van por detrás del mercado" },
+        { "id": "c", "text": "Que la tecnología no necesita ninguna norma de control" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "read",
+      "prompt": "¿Cómo ve el autor la publicidad en general?",
+      "evidence": ["p9s1"],
+      "rationale_es": { "en": "It is not bad in itself; it depends on how it is used." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Peligrosa y siempre manipuladora de los consumidores" },
+        { "id": "b", "text": "Inútil y cada vez menos eficaz con el público joven" },
+        { "id": "c", "text": "Ni buena ni mala, depende de su uso" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p8s2"],
+      "rationale_es": { "en": "*Veinticuatro horas*." },
+      "type": "gap_fill",
+      "text": "Un hábito útil es esperar {{1}} horas antes de una compra no urgente.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["veinticuatro", "24"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 505,
+  "lemmas": [
+    "a", "además", "agresivo", "algo", "algoritmo", "algún", "amigo", "analizar", "antes", "anticuado",
+    "anunciante", "anunciar", "anuncio", "aparecer", "aprender", "aprovechar", "aunque", "autobús", "aventura",
+    "ayudar", "beber", "bueno", "buscar", "cada", "cadena", "cambiar", "campaña", "característica", "casa",
+    "casi", "ciento", "claridad", "cobrar", "coche", "comer", "comercial", "comparar", "comprar", "con",
+    "conducir", "confiar", "consciente", "considerar", "consumidor", "contar", "controlar", "convencer",
+    "convenir", "convicción", "cosa", "crítico", "cuando", "cómo", "dar", "de", "deber", "decir", "decisión",
+    "definitivo", "desconfiar", "después", "detectar", "diferencia", "dificultad", "difícil", "dinero",
+    "dirigir", "distinguir", "divertir", "dudar", "dueño", "durante", "década", "día", "efecto", "eficaz",
+    "ejemplo", "el", "ellos", "embargo", "emitir", "emocionar", "emoción", "en", "engañar", "ese", "esperar",
+    "este", "esto", "existir", "extender", "forma", "funcionar", "gente", "gustar", "haber", "habitual",
+    "hablar", "hacer", "hombre", "hora", "hoy", "hábito", "idea", "imagen", "imposible", "incluso",
+    "influencer", "influir", "información", "informar", "inseguridad", "intentar", "interés", "invitar",
+    "leer", "legislación", "ley", "libertad", "libre", "limpiar", "llamarse", "llegar", "malo", "manera",
+    "marcar", "mecanismo", "medida", "menos", "mensaje", "mercado", "mes", "mezclar", "mirar", "mismo",
+    "mostrar", "mucho", "mujer", "mundo", "más", "necesariamente", "necesitar", "ni", "ningún", "niño", "no",
+    "normal", "nosotros", "nuestro", "nunca", "o", "ojo", "opinión", "pagar", "para", "parar", "parecer",
+    "pasar", "país", "perfume", "pero", "persona", "persuasión", "poder", "por", "porque", "precio",
+    "preguntar", "problema", "producto", "promesa", "prometer", "proteger", "provocar", "publicidad",
+    "publicista", "que", "querer", "quizá", "qué", "real", "realidad", "reciclar", "recomendación",
+    "recomendar", "reconocer", "red", "reforzar", "regulador", "resultado", "saber", "salir", "se",
+    "seducción", "seguidor", "sencillo", "ser", "si", "siempre", "significar", "sin", "sino", "social",
+    "sociedad", "solo", "sustancia", "también", "tan", "tarde", "tecnología", "televisión", "tener", "tiempo",
+    "tienda", "todo", "tomar", "transformar", "tratar", "técnico", "un", "urgente", "usuario", "varios",
+    "vender", "ver", "verdad", "vez", "vulnerable", "vídeo", "y", "él", "éxito"
+  ],
+  "difficulty": 1263,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6148, "A2": 0.7146, "B1": 0.9082, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 16.3,
+    "flesch_reading_ease": 67.4,
+    "checked_at": "2026-10-18T21:59:59.854Z"
+  }
+}

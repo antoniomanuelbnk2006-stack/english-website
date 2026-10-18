@@ -1,0 +1,371 @@
+{
+  "id": "es-a1-lis-005",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u04",
+  "series": "es-a1-u04-supermercado",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "En el supermercado",
+  "summary_es": {
+    "en": "Elena asks for apples, bread and cheese and pays at the shop.",
+    "fr": "Elena demande des pommes, du pain et du fromage et paie dans le magasin.",
+    "zh": "Elena 要了苹果、面包和奶酪，然后付款。",
+    "ja": "エレナはりんご、パン、チーズを頼んで支払います。"
+  },
+  "topic": "food",
+  "tags": ["compras", "precios", "supermercado"],
+  "can_do": ["L-A1-02"],
+  "grammar_focus": ["es.a1.numeros-y-hora"],
+  "vocab_focus": ["manzana", "pan", "queso", "euro"],
+  "est_minutes": 4,
+  "prediction_prompt": "Una persona compra comida. ¿Qué pregunta?",
+  "pre_teach": ["en total", "manzana"],
+  "speakers": [
+    { "id": "elena", "name": "Elena", "accent": "es-ES", "gender": "female" },
+    { "id": "pedro", "name": "Pedro", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "elena",
+      "text": "Buenos días. ¿Hay manzanas?",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.506 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 0.506, "e": 0.86 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 1.09, "e": 1.385 },
+        { "t": "manzanas", "l": "manzana", "p": "NOUN", "w": true, "s": 1.385, "e": 2.05 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.111
+    },
+    {
+      "id": "s2",
+      "speaker": "pedro",
+      "text": "Sí, están aquí. Son muy buenas.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 2.821, "e": 3.211 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "están", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 3.391, "e": 3.778 },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "s": 3.778, "e": 4.101 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 4.411, "e": 4.688 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 4.688, "e": 4.965 },
+        { "t": "buenas", "l": "bueno", "p": "ADJ", "w": true, "s": 4.966, "e": 5.451 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 2.811,
+      "end": 5.495
+    },
+    {
+      "id": "s3",
+      "speaker": "elena",
+      "text": "¿Cuánto cuestan?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuánto", "l": "cuánto", "p": "PRON", "w": true, "sp": true, "s": 6.205, "e": 6.686 },
+        { "t": "cuestan", "l": "costar", "p": "VERB", "w": true, "s": 6.686, "e": 7.235 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.195,
+      "end": 7.302
+    },
+    {
+      "id": "s4",
+      "speaker": "pedro",
+      "text": "Cuestan dos euros.",
+      "tokens": [
+        { "t": "Cuestan", "l": "costar", "p": "VERB", "w": true, "sp": true, "s": 8.032, "e": 8.552 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 8.552, "e": 8.812 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "s": 8.812, "e": 9.202 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.002,
+      "end": 9.254
+    },
+    {
+      "id": "s5",
+      "speaker": "elena",
+      "text": "Quiero manzanas, pan y leche.",
+      "tokens": [
+        { "t": "Quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 9.974, "e": 10.394 },
+        { "t": "manzanas", "l": "manzana", "p": "NOUN", "w": true, "s": 10.394, "e": 10.934 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pan", "l": "pan", "p": "NOUN", "w": true, "sp": true, "s": 11.074, "e": 11.361 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 11.361, "e": 11.504 },
+        { "t": "leche", "l": "leche", "p": "NOUN", "w": true, "s": 11.504, "e": 11.934 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.954,
+      "end": 11.979
+    },
+    {
+      "id": "s6",
+      "speaker": "pedro",
+      "text": "Muy bien. ¿Algo más?",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 12.689, "e": 13.009 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 13.009, "e": 13.409 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 13.649, "e": 14.021 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "s": 14.021, "e": 14.319 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.679,
+      "end": 14.363
+    },
+    {
+      "id": "s7",
+      "speaker": "elena",
+      "text": "¿Hay queso?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 15.073, "e": 15.321 },
+        { "t": "queso", "l": "queso", "p": "NOUN", "w": true, "s": 15.321, "e": 15.693 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.063,
+      "end": 15.754
+    },
+    {
+      "id": "s8",
+      "speaker": "pedro",
+      "text": "Sí, el queso está allí.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 16.464, "e": 16.834 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 17.014, "e": 17.185 },
+        { "t": "queso", "l": "queso", "p": "NOUN", "w": true, "sp": true, "s": 17.185, "e": 17.526 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 17.526, "e": 17.81 },
+        { "t": "allí", "l": "allí", "p": "ADV", "w": true, "s": 17.81, "e": 18.094 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.454,
+      "end": 18.2
+    },
+    {
+      "id": "s9",
+      "speaker": "elena",
+      "text": "Un queso, por favor.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 18.9, "e": 19.11 },
+        { "t": "queso", "l": "queso", "p": "NOUN", "w": true, "s": 19.11, "e": 19.53 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 19.53, "e": 19.81 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 19.81, "e": 20.23 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.9,
+      "end": 20.344
+    },
+    {
+      "id": "s10",
+      "speaker": "pedro",
+      "text": "Son siete euros en total.",
+      "tokens": [
+        { "t": "Son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 21.064, "e": 21.31 },
+        { "t": "siete", "l": "siete", "p": "NUM", "w": false, "sp": true, "s": 21.31, "e": 21.68 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "sp": true, "s": 21.68, "e": 22.05 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 22.05, "e": 22.235 },
+        { "t": "total", "l": "total", "p": "NOUN", "w": true, "s": 22.234, "e": 22.604 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.044,
+      "end": 22.653
+    },
+    {
+      "id": "s11",
+      "speaker": "elena",
+      "text": "Aquí tiene. Gracias.",
+      "tokens": [
+        { "t": "Aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 23.363, "e": 23.718 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "s": 23.718, "e": 24.143 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 24.393, "e": 25.123 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.353,
+      "end": 25.168
+    },
+    {
+      "id": "s12",
+      "speaker": "pedro",
+      "text": "De nada. Hasta luego.",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 25.878, "e": 26.069 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 26.069, "e": 26.388 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 26.698, "e": 27.053 },
+        { "t": "luego", "l": "luego", "p": "ADV", "w": true, "s": 27.053, "e": 27.408 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.868,
+      "end": 27.523
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "en total",
+      "surface": "en total",
+      "pos": "phrase",
+      "def_en": "todo junto",
+      "def_es": { "en": "in total, altogether", "fr": "au total", "zh": "一共", "ja": "合計で" },
+      "ref": "s10"
+    },
+    {
+      "lemma": "manzana",
+      "surface": "manzanas",
+      "pos": "noun",
+      "def_en": "fruta redonda, roja o verde",
+      "def_es": { "en": "apple", "fr": "pomme", "zh": "苹果", "ja": "りんご" },
+      "ref": "s1"
+    },
+    {
+      "lemma": "algo más",
+      "surface": "Algo más",
+      "pos": "phrase",
+      "def_en": "otra cosa",
+      "def_es": { "en": "anything else", "fr": "autre chose", "zh": "还要别的吗", "ja": "他に何か" },
+      "ref": "s6"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Dónde están?",
+      "evidence": ["s1", "s10"],
+      "rationale_es": { "en": "She asks for apples, bread and cheese and pays: it is a food shop." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En una escuela" },
+        { "id": "b", "text": "En una tienda de comida" },
+        { "id": "c", "text": "En un parque" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuánto cuestan las manzanas?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "*Cuestan dos euros*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Siete euros" },
+        { "id": "b", "text": "Un euro" },
+        { "id": "c", "text": "Dos euros" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Elena quiere leche.",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "She wants apples, bread and milk." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Dónde está el queso?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "*El queso está allí*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Allí" },
+        { "id": "b", "text": "Aquí" },
+        { "id": "c", "text": "En casa" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con un número.",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "*Son siete euros en total*." },
+      "type": "gap_fill",
+      "text": "Elena paga {{1}} euros.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["siete", "7"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué dice Pedro al final?",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "He says *De nada. Hasta luego*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Buenas noches" },
+        { "id": "b", "text": "De nada" },
+        { "id": "c", "text": "Mucho gusto" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "algo", "allí", "aquí", "bien", "bueno", "costar", "cuánto", "de", "día", "el", "en", "estar", "euro",
+    "favor", "haber", "hasta", "leche", "luego", "manzana", "muy", "más", "pan", "por", "querer", "queso",
+    "ser", "tener", "total", "un", "y"
+  ],
+  "difficulty": 673,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 2.8,
+    "flesch_reading_ease": 104.4,
+    "checked_at": "2026-10-18T21:38:33.650Z"
+  },
+  "audio": {
+    "src": "audio/a1/es-a1-lis-005/v1.m4a",
+    "duration_s": 27.523,
+    "wpm": 102,
+    "provider": "piper",
+    "voices": { "elena": "sharvard-f", "pedro": "sharvard-m" },
+    "loudness_lufs": -16.3,
+    "peaks": [
+      1, 0.96, 0.83, 0.84, 0.85, 0.3, 0.16, 0.17, 0, 0.81, 1, 0.95, 0.88, 0.82, 0.79, 0.36, 0.23, 0.22, 0.01,
+      0, 0, 0, 0, 0, 0.25, 0.55, 0.67, 0.44, 0.03, 0.26, 0.26, 0.5, 1, 0.68, 0.27, 0.26, 0.01, 0, 0.3, 0.96,
+      0.9, 0.8, 0.97, 0.56, 1, 0.37, 0.18, 0.09, 0, 0, 0, 0, 0, 0, 1, 0.89, 0.71, 0.62, 0.57, 0.5, 0.23, 0.2,
+      0.12, 0.04, 0, 0, 0, 0, 0, 0.02, 1, 0.96, 0.67, 0.53, 0.81, 0.8, 0.41, 0.25, 0.22, 0.08, 0.04, 0, 0, 0,
+      0, 0, 0.08, 0.81, 1, 0.7, 0.8, 0.26, 0.53, 0.51, 0.47, 0.29, 0.59, 0.53, 0.42, 0.36, 0.29, 0.39, 0.38,
+      0.17, 0.05, 0, 0, 0, 0, 0, 0.26, 0.4, 0.86, 0.82, 1, 0.78, 0.29, 0.03, 0, 1, 0.61, 0.61, 0.7, 0.58, 0.12,
+      0, 0, 0, 0, 0, 0, 1, 0.87, 0.85, 0.61, 0.66, 0.28, 0.01, 0, 0, 0, 0, 0, 0.19, 0.45, 0.57, 0.31, 0.01,
+      0.41, 0.36, 0.54, 0.5, 0.63, 0.18, 1, 0.72, 0.31, 0.11, 0.02, 0, 0, 0, 0, 0, 0.42, 0.96, 0.88, 1, 0.69,
+      0.51, 0.03, 0.82, 0.12, 0.99, 0.47, 0.42, 0.06, 0.01, 0, 0, 0, 0, 0, 0.16, 0.55, 0.87, 0.5, 1, 0.84,
+      0.91, 0.64, 0.64, 0.36, 0.39, 0.52, 0.81, 0.34, 0.05, 0, 0, 0, 0, 0, 0.66, 0.87, 0.63, 0.63, 1, 0.91,
+      0.55, 0.16, 0, 0.13, 1, 0.55, 0.22, 0.35, 0.19, 0.21, 0.05, 0, 0, 0, 0, 0, 0.16, 0.64, 0.61, 1, 0.36,
+      0.04, 0, 0.61, 0.86, 0.3, 1, 0.72, 0.5, 0.16, 0.03
+    ]
+  }
+}

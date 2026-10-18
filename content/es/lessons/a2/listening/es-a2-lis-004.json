@@ -1,0 +1,460 @@
+{
+  "id": "es-a2-lis-004",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u07",
+  "series": "es-a2-u07-restaurante",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Una cena en el restaurante",
+  "summary_es": {
+    "en": "Two friends order dinner, ask for the bill and pay.",
+    "fr": "Deux amis commandent le dîner, demandent l’addition et paient.",
+    "zh": "两个朋友点晚餐，要账单，然后付款。",
+    "ja": "二人の友だちが夕食を注文し、会計をお願いして支払います。"
+  },
+  "topic": "food",
+  "tags": ["restaurante", "pedir", "cuenta"],
+  "can_do": ["L-A2-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["carta", "primero", "postre", "cuenta"],
+  "est_minutes": 6,
+  "prediction_prompt": "Dos personas cenan en un restaurante. ¿Qué piden?",
+  "pre_teach": ["carta", "cuenta"],
+  "speakers": [
+    { "id": "alvaro", "name": "Álvaro", "accent": "es-ES", "gender": "male" },
+    { "id": "lucia", "name": "Lucía", "accent": "es-ES", "gender": "female" },
+    { "id": "javier", "name": "Javier", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 110,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "alvaro",
+      "text": "Buenas noches. ¿Tienen reserva?",
+      "tokens": [
+        { "t": "Buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.02, "e": 0.465 },
+        { "t": "noches", "l": "noche", "p": "NOUN", "w": true, "s": 0.465, "e": 0.91 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Tienen", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 1.45, "e": 1.828 },
+        { "t": "reserva", "l": "reservar", "p": "VERB", "w": true, "s": 1.828, "e": 2.26 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.339
+    },
+    {
+      "id": "s2",
+      "speaker": "lucia",
+      "text": "Sí, a nombre de Lucía Pérez.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 3.059, "e": 3.3 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 3.3, "e": 3.461 },
+        { "t": "nombre", "l": "nombre", "p": "NOUN", "w": true, "sp": true, "s": 3.461, "e": 4.024 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 4.023, "e": 4.264 },
+        { "t": "Lucía", "l": "lucía", "p": "PROPN", "w": false, "sp": true, "s": 4.265, "e": 4.747 },
+        { "t": "Pérez", "l": "pérez", "p": "PROPN", "w": false, "s": 4.747, "e": 5.229 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.039,
+      "end": 5.31
+    },
+    {
+      "id": "s3",
+      "speaker": "alvaro",
+      "text": "Muy bien. Pasen por aquí, por favor.",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 6.041, "e": 6.305 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 6.305, "e": 6.634 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Pasen", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 6.634, "e": 7.029 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 7.029, "e": 7.293 },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "s": 7.293, "e": 7.622 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 7.622, "e": 7.886 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 7.886, "e": 8.281 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.01,
+      "end": 8.377
+    },
+    {
+      "id": "s4",
+      "speaker": "alvaro",
+      "text": "Aquí tienen la carta. ¿Quieren algo de beber?",
+      "tokens": [
+        { "t": "Aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 8.877, "e": 9.148 },
+        { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 9.148, "e": 9.528 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 9.528, "e": 9.691 },
+        { "t": "carta", "l": "carta", "p": "NOUN", "w": true, "s": 9.691, "e": 10.017 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Quieren", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 10.477, "e": 10.848 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 10.848, "e": 11.08 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 11.08, "e": 11.219 },
+        { "t": "beber", "l": "beber", "p": "VERB", "w": true, "s": 11.219, "e": 11.497 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.877,
+      "end": 11.596
+    },
+    {
+      "id": "s5",
+      "speaker": "lucia",
+      "text": "Yo quiero agua con gas, por favor.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 12.306, "e": 12.509 },
+        { "t": "quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 12.509, "e": 12.982 },
+        { "t": "agua", "l": "agua", "p": "NOUN", "w": true, "sp": true, "s": 12.982, "e": 13.32 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 13.32, "e": 13.59 },
+        { "t": "gas", "l": "gas", "p": "NOUN", "w": true, "s": 13.59, "e": 13.86 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 13.86, "e": 14.13 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 14.131, "e": 14.536 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.296,
+      "end": 14.648
+    },
+    {
+      "id": "s6",
+      "speaker": "javier",
+      "text": "Para mí, una cerveza.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 15.358, "e": 15.658 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "s": 15.658, "e": 15.838 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 16.008, "e": 16.278 },
+        { "t": "cerveza", "l": "cerveza", "p": "NOUN", "w": true, "s": 16.278, "e": 16.818 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.348,
+      "end": 16.891
+    },
+    {
+      "id": "s7",
+      "speaker": "alvaro",
+      "text": "¿Ya saben qué van a pedir?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 17.621, "e": 17.757 },
+        { "t": "saben", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 17.757, "e": 18.028 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 18.028, "e": 18.209 },
+        { "t": "van", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 18.209, "e": 18.39 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 18.389, "e": 18.479 },
+        { "t": "pedir", "l": "pedir", "p": "VERB", "w": true, "s": 18.48, "e": 18.751 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.591,
+      "end": 18.844
+    },
+    {
+      "id": "s8",
+      "speaker": "lucia",
+      "text": "Sí. De primero, una ensalada y, de segundo, pescado.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 19.554, "e": 19.825 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 19.825, "e": 20.096 },
+        { "t": "primero", "l": "primero", "p": "NUM", "w": false, "s": 20.097, "e": 20.82 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 20.82, "e": 21.182 },
+        { "t": "ensalada", "l": "ensalada", "p": "NOUN", "w": true, "sp": true, "s": 21.182, "e": 21.996 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "s": 21.995, "e": 22.176 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 22.176, "e": 22.447 },
+        { "t": "segundo", "l": "segundo", "p": "NUM", "w": false, "s": 22.447, "e": 23.17 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pescado", "l": "pescado", "p": "NOUN", "w": true, "s": 23.171, "e": 23.894 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.544,
+      "end": 23.954
+    },
+    {
+      "id": "s9",
+      "speaker": "javier",
+      "text": "Yo quiero sopa y después carne con patatas.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 24.674, "e": 24.886 },
+        { "t": "quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 24.886, "e": 25.381 },
+        { "t": "sopa", "l": "sopa", "p": "NOUN", "w": true, "sp": true, "s": 25.381, "e": 25.734 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 25.734, "e": 25.875 },
+        { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true, "s": 25.876, "e": 26.442 },
+        { "t": "carne", "l": "carne", "p": "NOUN", "w": true, "sp": true, "s": 26.441, "e": 26.865 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 26.866, "e": 27.149 },
+        { "t": "patatas", "l": "patata", "p": "NOUN", "w": true, "s": 27.148, "e": 27.714 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.654,
+      "end": 27.77
+    },
+    {
+      "id": "s10",
+      "speaker": "alvaro",
+      "text": "Muy bien. ¿Y de postre?",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 28.503, "e": 28.681 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 28.681, "e": 28.903 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 29.433, "e": 29.566 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 29.566, "e": 29.766 },
+        { "t": "postre", "l": "postre", "p": "NOUN", "w": true, "s": 29.766, "e": 30.233 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.47,
+      "end": 30.317
+    },
+    {
+      "id": "s11",
+      "speaker": "lucia",
+      "text": "Después pedimos el postre, gracias.",
+      "tokens": [
+        { "t": "Después", "l": "después", "p": "ADV", "w": true, "sp": true, "s": 31.027, "e": 31.578 },
+        { "t": "pedimos", "l": "pedir", "p": "VERB", "w": true, "sp": true, "s": 31.578, "e": 32.129 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 32.129, "e": 32.336 },
+        { "t": "postre", "l": "postre", "p": "NOUN", "w": true, "s": 32.335, "e": 32.817 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 32.957, "e": 33.737 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.017,
+      "end": 33.783
+    },
+    {
+      "id": "s12",
+      "speaker": "javier",
+      "text": "Perdone, ¿nos trae la cuenta, por favor?",
+      "tokens": [
+        { "t": "Perdone", "l": "perdonar", "p": "VERB", "w": true, "s": 34.493, "e": 35.053 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 35.223, "e": 35.467 },
+        { "t": "trae", "l": "traer", "p": "VERB", "w": true, "sp": true, "s": 35.467, "e": 35.772 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 35.772, "e": 35.955 },
+        { "t": "cuenta", "l": "contar", "p": "VERB", "w": true, "s": 35.956, "e": 36.383 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 36.613, "e": 36.849 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 36.849, "e": 37.203 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.483,
+      "end": 37.309
+    },
+    {
+      "id": "s13",
+      "speaker": "alvaro",
+      "text": "Claro. Son treinta y cinco euros.",
+      "tokens": [
+        { "t": "Claro", "l": "claro", "p": "ADJ", "w": true, "s": 38.019, "e": 38.399 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 38.899, "e": 39.161 },
+        { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true, "s": 39.161, "e": 39.684 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 39.684, "e": 39.815 },
+        { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true, "s": 39.814, "e": 40.206 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "s": 40.207, "e": 40.599 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 38.009,
+      "end": 40.67
+    },
+    {
+      "id": "s14",
+      "speaker": "javier",
+      "text": "Aquí tiene. Todo estaba muy rico.",
+      "tokens": [
+        { "t": "Aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 41.38, "e": 41.762 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "s": 41.762, "e": 42.22 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 42.54, "e": 42.902 },
+        { "t": "estaba", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 42.902, "e": 43.409 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 43.409, "e": 43.699 },
+        { "t": "rico", "l": "rico", "p": "ADJ", "w": true, "s": 43.698, "e": 44.06 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 41.37,
+      "end": 44.152
+    },
+    {
+      "id": "s15",
+      "speaker": "alvaro",
+      "text": "Gracias a ustedes. Buenas noches.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 44.883, "e": 45.412 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 45.412, "e": 45.544 },
+        { "t": "ustedes", "l": "usted", "p": "PRON", "w": true, "s": 45.544, "e": 46.073 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 46.643, "e": 47.093 },
+        { "t": "noches", "l": "noche", "p": "NOUN", "w": true, "s": 47.093, "e": 47.543 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.852,
+      "end": 47.605
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "carta",
+      "surface": "carta",
+      "pos": "noun",
+      "def_en": "lista de comidas y bebidas de un restaurante",
+      "def_es": { "en": "menu", "fr": "carte", "zh": "菜单", "ja": "メニュー" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "cuenta",
+      "surface": "cuenta",
+      "pos": "noun",
+      "def_en": "papel con el precio de lo que has comido",
+      "def_es": { "en": "bill", "fr": "addition", "zh": "账单", "ja": "会計" },
+      "ref": "s12"
+    },
+    {
+      "lemma": "reserva",
+      "surface": "reserva",
+      "pos": "noun",
+      "def_en": "mesa o habitación pedida antes",
+      "def_es": { "en": "reservation", "fr": "réservation", "zh": "预订", "ja": "予約" },
+      "ref": "s1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Dónde ocurre la conversación?",
+      "evidence": ["s1", "s4"],
+      "rationale_es": { "en": "They have a reservation and receive the menu: it is a restaurant." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En una tienda de ropa en el centro" },
+        { "id": "b", "text": "En un restaurante con mesa reservada" },
+        { "id": "c", "text": "En un hotel junto a la playa" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué bebe Javier?",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "*Para mí, una cerveza*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Agua con gas" },
+        { "id": "b", "text": "Un café con leche" },
+        { "id": "c", "text": "Una cerveza" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué pide Lucía de segundo?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "Lucía orders fish; Javier orders meat." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Pescado" },
+        { "id": "b", "text": "Carne con patatas" },
+        { "id": "c", "text": "Sopa" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Piden el postre al mismo tiempo que la comida.",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "Lucía says they will order dessert later." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con un número.",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "*Treinta y cinco euros*." },
+      "type": "gap_fill",
+      "text": "La cuenta es de {{1}} euros.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["treinta y cinco", "35"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "post",
+      "prompt": "¿Qué opinan los clientes de la cena?",
+      "evidence": ["s14"],
+      "rationale_es": { "en": "Javier says everything was very tasty." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que fue muy cara" },
+        { "id": "b", "text": "Que fue buena" },
+        { "id": "c", "text": "Que fue demasiado lenta" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "agua", "algo", "aquí", "beber", "bien", "bueno", "carne", "carta", "cerveza", "claro", "con",
+    "contar", "de", "después", "el", "ensalada", "estar", "euro", "favor", "gas", "ir", "muy", "noche",
+    "nombre", "nosotros", "para", "pasar", "patata", "pedir", "perdonar", "pescado", "por", "postre", "querer",
+    "qué", "reservar", "rico", "saber", "ser", "sopa", "tener", "todo", "traer", "un", "usted", "y", "ya",
+    "yo"
+  ],
+  "difficulty": 873,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8193, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 4,
+    "flesch_reading_ease": 98.2,
+    "checked_at": "2026-10-18T21:44:18.647Z"
+  },
+  "audio": {
+    "src": "audio/a2/es-a2-lis-004/v1.m4a",
+    "duration_s": 47.605,
+    "wpm": 117,
+    "provider": "piper",
+    "voices": { "alvaro": "davefx-m", "lucia": "sharvard-f", "javier": "sharvard-m" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      1, 0.94, 0.77, 0.32, 0.16, 0.01, 0, 0.87, 0.94, 0.77, 1, 0.34, 0, 0, 0, 0.51, 0.73, 0.53, 0.62, 0.75, 1,
+      0.83, 0.82, 0.86, 0.9, 0.34, 0.06, 0, 0, 0, 1, 0.99, 0.41, 0.01, 0, 1, 0.81, 0.9, 0.92, 0.93, 0.98, 0.43,
+      0.01, 0, 0.59, 0.87, 0.99, 0.78, 1, 0.97, 0.21, 0, 0.16, 1, 0.99, 0.78, 0.79, 0.81, 0.03, 0, 0, 0, 1,
+      0.59, 0.96, 0.95, 0.84, 0.52, 0.75, 0.34, 0.81, 0.63, 0.43, 0.04, 0, 0, 0, 1, 0.8, 0.41, 0.44, 0.59,
+      0.46, 0.5, 0.2, 0.01, 0, 0, 0.26, 1, 1, 0.99, 0.98, 0.91, 0.63, 0, 0, 0, 0.46, 1, 1, 0.03, 0.58, 0.5,
+      0.52, 0.55, 0.47, 0.82, 0.73, 0.63, 1, 0.57, 0.45, 0.71, 0.6, 0.48, 0.54, 0.64, 0.55, 0.58, 0.14, 0, 0,
+      0, 0.08, 1, 0.58, 0.57, 0.5, 0.58, 0.4, 0.18, 0.65, 0.77, 0.5, 0.41, 0.45, 0.39, 0.15, 0.1, 0, 0, 0,
+      0.75, 1, 0.58, 0.01, 0, 0.73, 0.97, 1, 0.71, 0.68, 0, 0, 0, 0.5, 0.49, 0.56, 0.55, 0.64, 0.68, 0.45,
+      0.53, 0.47, 0.31, 1, 0.92, 0.22, 0.15, 0.06, 0, 0, 0.33, 0.6, 0.65, 0.46, 0.3, 0.35, 0.8, 1, 0.6, 0.5,
+      0.44, 0.54, 0.54, 0.53, 0.41, 0.01, 0, 0, 0.55, 1, 0.3, 0.01, 0.01, 0.98, 1, 0.98, 0.97, 0.52, 0.83,
+      0.92, 0.25, 0.11, 0, 0, 0, 1, 0.9, 0.71, 0.87, 0.63, 0.01, 0.95, 1, 0.56, 0.84, 0.82, 0.83, 0.48, 0.2,
+      0.06, 0, 0, 0, 1, 0.94, 0.82, 0.67, 0.84, 0.32, 0.1, 0, 0, 1, 0.95, 0.63, 0.38, 0.14
+    ]
+  }
+}

@@ -233,7 +233,7 @@
             { "t": "modo", "l": "modo", "p": "NOUN", "w": true },
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "estarían", "l": "estar", "p": "AUX", "w": true, "sp": true },
-            { "t": "abandonados", "l": "abandonado", "p": "ADJ", "w": true },
+            { "t": "abandonados", "l": "abandonar", "p": "VERB", "w": true },
             { "t": ".", "l": ".", "p": "PUNCT", "w": false }
           ]
         },
@@ -745,7 +745,7 @@
             { "t": "Creo", "l": "creer", "p": "VERB", "w": true, "sp": true },
             { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
             { "t": "deberíamos", "l": "deber", "p": "VERB", "w": true, "sp": true },
-            { "t": "preguntarnos", "l": "preguntarse", "p": "VERB", "w": true },
+            { "t": "preguntarnos", "l": "preguntar", "p": "VERB", "w": true },
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true },
             { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
@@ -997,7 +997,7 @@
   },
   "word_count": 523,
   "lemmas": [
-    "a", "abandonado", "abrir", "actuar", "además", "afueras", "ahora", "algún", "allí", "alojamiento",
+    "a", "abandonar", "abrir", "actuar", "además", "afueras", "ahora", "algún", "allí", "alojamiento",
     "alquilar", "alquiler", "alternativo", "antelación", "antes", "autobús", "ayudar", "ayuntamiento", "año",
     "barrio", "beneficiar", "bueno", "cabo", "cada", "calle", "camarero", "casa", "caso", "causar", "cenar",
     "centro", "cerrar", "cierto", "ciudad", "claro", "cobrar", "cocinero", "comer", "comercio", "comprar",
@@ -1013,7 +1013,7 @@
     "multiplicar", "mundo", "museo", "muy", "más", "negocio", "no", "noche", "nuestro", "nuevo", "número", "o",
     "obligar", "océano", "oportunidad", "otoño", "otro", "para", "parar", "parte", "pasar", "país", "pequeño",
     "permitir", "pero", "persona", "piso", "poder", "popular", "por", "porque", "precio", "preferir",
-    "preguntarse", "presión", "primavera", "problema", "producto", "prohibir", "promocionar", "propietario",
+    "preguntar", "presión", "primavera", "problema", "producto", "prohibir", "promocionar", "propietario",
     "que", "quejarse", "quien", "razonable", "recibir", "reconocer", "recordar", "recuerdo", "reducir",
     "región", "repartir", "reservar", "residente", "respetar", "responsable", "restaurante", "resultado",
     "riqueza", "ruido", "ruta", "se", "semana", "ser", "si", "siempre", "sin", "sino", "sitio", "sobre",
@@ -1024,10 +1024,10 @@
   ],
   "difficulty": 1266,
   "qa": {
-    "coverage_by_level": { "A1": 0.6304, "A2": 0.677, "B1": 0.784, "B2": 1, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.6304, "A2": 0.7315, "B1": 0.8366, "B2": 1, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 16.9,
     "flesch_reading_ease": 63.8,
-    "checked_at": "2026-10-18T20:39:00.045Z"
+    "checked_at": "2026-10-18T22:29:03.857Z"
   }
 }

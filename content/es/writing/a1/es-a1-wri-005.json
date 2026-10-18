@@ -1,0 +1,52 @@
+{
+  "id": "es-a1-wri-005",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "task_type": "message",
+  "title": "Mi mejor amigo",
+  "topic": "relationships",
+  "context_es": {
+    "en": "A new classmate asks you about your best friend. You write a short message.",
+    "fr": "Un nouveau camarade te demande qui est ton meilleur ami. Tu écris un court message.",
+    "zh": "一位新同学问你最好的朋友是谁。你写一条简短的消息。",
+    "ja": "新しいクラスメートに親友のことを聞かれました。短いメッセージを書きます。"
+  },
+  "prompt_en": "Un compañero nuevo te pregunta por tu mejor amigo. Escribe un mensaje corto.",
+  "points": [
+    "cómo se llama",
+    "cuántos años tiene",
+    "qué le gusta"
+  ],
+  "words_min": 25,
+  "words_max": 50,
+  "time_min": 8,
+  "useful_language": [
+    "Mi amigo se llama …",
+    "Tiene … años",
+    "Le gusta …",
+    "Vive en …",
+    "Es muy simpático"
+  ],
+  "tips_es": [
+    {
+      "en": "Say the age with *tener*: *Tiene veinte años*.",
+      "fr": "Dites l’âge avec *tener* : *Tiene veinte años*.",
+      "zh": "年龄用 *tener* 说：*Tiene veinte años*。",
+      "ja": "年齢は *tener* で言います：*Tiene veinte años*。"
+    },
+    {
+      "en": "Use *le gusta* + infinitive for what he or she likes: *Le gusta leer*.",
+      "fr": "Utilisez *le gusta* + infinitif pour ce qu’il ou elle aime : *Le gusta leer*.",
+      "zh": "用 *le gusta* + 动词原形说他（她）喜欢什么：*Le gusta leer*。",
+      "ja": "好きなことは *le gusta* + 不定詞で：*Le gusta leer*。"
+    }
+  ],
+  "model_answer": "Hola, Pablo:\n\nMi mejor amiga se llama Sara. Tiene veinte años y vive cerca de mi casa. Es muy simpática. Le gusta leer y jugar al tenis.\n\nUn abrazo,\nLeo",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "es-a2-wri-005",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "task_type": "message",
+  "title": "Cambiar un plan",
+  "topic": "daily-life",
+  "context_es": {
+    "en": "You cannot go to a dinner with a friend. You write a message to change the plan.",
+    "fr": "Tu ne peux pas aller à un dîner avec un ami. Tu écris un message pour changer le programme.",
+    "zh": "你不能去和朋友的晚饭。你写一条消息来改变计划。",
+    "ja": "友だちとの夕食に行けなくなりました。予定を変えるメッセージを書きます。"
+  },
+  "prompt_en": "No puedes ir a una cena con un amigo. Escribe un mensaje para cambiar el plan.",
+  "points": [
+    "por qué no puedes ir",
+    "qué otro día propones",
+    "qué vais a hacer ese día"
+  ],
+  "words_min": 35,
+  "words_max": 70,
+  "time_min": 10,
+  "useful_language": [
+    "Lo siento, pero …",
+    "No puedo porque …",
+    "¿Qué tal el …?",
+    "Podemos ir a …",
+    "Voy a …",
+    "Hasta pronto"
+  ],
+  "tips_es": [
+    {
+      "en": "Apologise first, then give your reason with *porque*: *Lo siento, pero no puedo porque tengo que trabajar*.",
+      "fr": "Excusez-vous d’abord, puis donnez la raison avec *porque* : *Lo siento, pero no puedo porque tengo que trabajar*.",
+      "zh": "先道歉，再用 *porque* 说明理由：*Lo siento, pero no puedo porque tengo que trabajar*。",
+      "ja": "まず謝り、*porque* で理由を述べます：*Lo siento, pero no puedo porque tengo que trabajar*。"
+    },
+    {
+      "en": "Propose a new plan with *¿Qué tal el jueves?* and use *ir a* + infinitive: *Vamos a cenar*.",
+      "fr": "Proposez un nouveau plan avec *¿Qué tal el jueves ?* et *ir a* + infinitif : *Vamos a cenar*.",
+      "zh": "用 *¿Qué tal el jueves?* 提出新计划，并使用 *ir a* + 动词原形：*Vamos a cenar*。",
+      "ja": "*¿Qué tal el jueves?* で新しい予定を提案し、*ir a* + 不定詞を使います：*Vamos a cenar*。"
+    }
+  ],
+  "model_answer": "Hola, Álvaro:\n\nLo siento, pero mañana no puedo ir a cenar porque tengo que trabajar hasta tarde. ¿Qué tal el jueves? Podemos ir a un restaurante cerca de tu casa. Voy a llegar a las ocho.\n\nUn beso,\nMarta",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

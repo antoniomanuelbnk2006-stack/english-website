@@ -1,0 +1,569 @@
+{
+  "id": "es-b1-lis-004",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u06",
+  "series": "es-b1-u06-consulta",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "En la consulta de la doctora",
+  "summary_es": {
+    "en": "A patient with a sore throat visits the doctor, who gives him advice and a prescription.",
+    "fr": "Un patient qui a mal à la gorge consulte la doctoresse, qui lui donne des conseils et une ordonnance.",
+    "zh": "一位喉咙痛的病人去看医生，医生给了他建议和处方。",
+    "ja": "喉が痛い患者が医師を訪ね、助言と処方を受けます。"
+  },
+  "topic": "daily-life",
+  "tags": ["salud", "consulta", "consejos"],
+  "can_do": ["L-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["garganta", "fiebre", "receta", "descansar"],
+  "est_minutes": 8,
+  "prediction_prompt": "Estás enfermo. ¿Qué le dices al médico y qué te recomienda?",
+  "pre_teach": ["antibiótico", "contagiar"],
+  "speakers": [
+    { "id": "isabel", "name": "Doctora Ruiz", "accent": "es-ES", "gender": "female" },
+    { "id": "raul", "name": "Raúl", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "isabel",
+      "text": "Buenos días, Raúl. Siéntese, por favor. ¿Qué le pasa?",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.401 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 0.401, "e": 0.68 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Raúl", "l": "raúl", "p": "PROPN", "w": false, "s": 0.82, "e": 1.24 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Siéntese", "l": "sentarse", "p": "VERB", "w": true, "s": 1.49, "e": 2.24 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 2.41, "e": 2.686 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 2.686, "e": 3.1 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 3.39, "e": 3.62 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 3.62, "e": 3.793 },
+        { "t": "pasa", "l": "pasar", "p": "VERB", "w": true, "s": 3.793, "e": 4.081 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 4.143
+    },
+    {
+      "id": "s2",
+      "speaker": "raul",
+      "text": "Buenos días, doctora. Desde hace una semana me duele mucho la garganta.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 4.553, "e": 5.061 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 5.061, "e": 5.424 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "doctora", "l": "doctor", "p": "NOUN", "w": true, "s": 5.593, "e": 6.223 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 6.513, "e": 6.872 },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 6.872, "e": 7.171 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 7.171, "e": 7.41 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true, "s": 7.41, "e": 7.829 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 7.829, "e": 8.008 },
+        { "t": "duele", "l": "doler", "p": "VERB", "w": true, "sp": true, "s": 8.008, "e": 8.367 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 8.367, "e": 8.726 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.725, "e": 8.904 },
+        { "t": "garganta", "l": "garganta", "p": "NOUN", "w": true, "s": 8.905, "e": 9.443 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.543,
+      "end": 9.564
+    },
+    {
+      "id": "s3",
+      "speaker": "isabel",
+      "text": "¿Tiene fiebre?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 9.974, "e": 10.357 },
+        { "t": "fiebre", "l": "fiebre", "p": "NOUN", "w": true, "s": 10.357, "e": 10.804 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.964,
+      "end": 10.862
+    },
+    {
+      "id": "s4",
+      "speaker": "raul",
+      "text": "Ayer tuve treinta y ocho grados por la tarde, pero hoy me siento un poco mejor.",
+      "tokens": [
+        { "t": "Ayer", "l": "ayer", "p": "ADV", "w": true, "sp": true, "s": 11.282, "e": 11.646 },
+        { "t": "tuve", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 11.646, "e": 12.01 },
+        { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true, "s": 12.011, "e": 12.594 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 12.594, "e": 12.74 },
+        { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true, "s": 12.74, "e": 13.104 },
+        { "t": "grados", "l": "grado", "p": "NOUN", "w": true, "sp": true, "s": 13.104, "e": 13.614 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 13.614, "e": 13.906 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 13.906, "e": 14.125 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "s": 14.125, "e": 14.562 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 14.852, "e": 15.135 },
+        { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 15.135, "e": 15.362 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 15.362, "e": 15.532 },
+        { "t": "siento", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 15.532, "e": 15.929 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 15.929, "e": 16.099 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 16.099, "e": 16.382 },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "s": 16.382, "e": 16.722 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.262,
+      "end": 16.818
+    },
+    {
+      "id": "s5",
+      "speaker": "isabel",
+      "text": "¿Y tose mucho?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 17.228, "e": 17.365 },
+        { "t": "tose", "l": "toser", "p": "VERB", "w": true, "sp": true, "s": 17.365, "e": 17.707 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "s": 17.707, "e": 18.118 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.218,
+      "end": 18.153
+    },
+    {
+      "id": "s6",
+      "speaker": "raul",
+      "text": "Sí, sobre todo por la noche, y casi no puedo dormir.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 18.563, "e": 18.913 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 19.093, "e": 19.468 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 19.468, "e": 19.781 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 19.781, "e": 20.031 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 20.031, "e": 20.219 },
+        { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "s": 20.218, "e": 20.593 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 20.843, "e": 20.967 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 20.967, "e": 21.278 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 21.278, "e": 21.465 },
+        { "t": "puedo", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 21.465, "e": 21.838 },
+        { "t": "dormir", "l": "dormir", "p": "VERB", "w": true, "s": 21.838, "e": 22.273 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.553,
+      "end": 22.399
+    },
+    {
+      "id": "s7",
+      "speaker": "isabel",
+      "text": "Voy a mirarle la garganta. Abra la boca, por favor.",
+      "tokens": [
+        { "t": "Voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 22.809, "e": 23.072 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 23.072, "e": 23.204 },
+        { "t": "mirarle", "l": "mirar", "p": "VERB", "w": true, "sp": true, "s": 23.204, "e": 23.73 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 23.73, "e": 23.927 },
+        { "t": "garganta", "l": "garganta", "p": "NOUN", "w": true, "s": 23.927, "e": 24.519 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Abra", "l": "abrir", "p": "VERB", "w": true, "sp": true, "s": 24.759, "e": 25.078 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 25.078, "e": 25.27 },
+        { "t": "boca", "l": "boca", "p": "NOUN", "w": true, "s": 25.27, "e": 25.589 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 25.729, "e": 25.993 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 25.993, "e": 26.389 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.799,
+      "end": 26.522
+    },
+    {
+      "id": "s8",
+      "speaker": "isabel",
+      "text": "La tiene muy roja. Parece una infección.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 26.782, "e": 26.985 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 26.985, "e": 27.392 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 27.392, "e": 27.663 },
+        { "t": "roja", "l": "rojo", "p": "ADJ", "w": true, "s": 27.663, "e": 28.002 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 28.252, "e": 28.792 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 28.792, "e": 29.101 },
+        { "t": "infección", "l": "infección", "p": "NOUN", "w": true, "s": 29.101, "e": 29.872 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.772,
+      "end": 29.955
+    },
+    {
+      "id": "s9",
+      "speaker": "raul",
+      "text": "¿Es grave, doctora?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 30.365, "e": 30.568 },
+        { "t": "grave", "l": "grave", "p": "ADJ", "w": true, "s": 30.568, "e": 30.975 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "doctora", "l": "doctor", "p": "NOUN", "w": true, "s": 31.145, "e": 31.835 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 30.355,
+      "end": 31.913
+    },
+    {
+      "id": "s10",
+      "speaker": "isabel",
+      "text": "No, pero debe descansar y beber mucha agua.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "s": 32.313, "e": 32.563 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 32.723, "e": 33.052 },
+        { "t": "debe", "l": "deber", "p": "VERB", "w": true, "sp": true, "s": 33.052, "e": 33.381 },
+        { "t": "descansar", "l": "descansar", "p": "VERB", "w": true, "sp": true, "s": 33.382, "e": 34.041 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 34.041, "e": 34.173 },
+        { "t": "beber", "l": "beber", "p": "VERB", "w": true, "sp": true, "s": 34.173, "e": 34.568 },
+        { "t": "mucha", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 34.568, "e": 34.963 },
+        { "t": "agua", "l": "agua", "p": "NOUN", "w": true, "s": 34.964, "e": 35.293 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.313,
+      "end": 35.368
+    },
+    {
+      "id": "s11",
+      "speaker": "isabel",
+      "text": "Le voy a recetar un antibiótico. Tómelo cada ocho horas durante una semana.",
+      "tokens": [
+        { "t": "Le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 35.628, "e": 35.83 },
+        { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 35.83, "e": 36.099 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 36.098, "e": 36.232 },
+        { "t": "recetar", "l": "recetar", "p": "VERB", "w": true, "sp": true, "s": 36.233, "e": 36.771 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 36.77, "e": 36.972 },
+        { "t": "antibiótico", "l": "antibiótico", "p": "NOUN", "w": true, "s": 36.972, "e": 37.778 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Tómelo", "l": "tomar", "p": "VERB", "w": true, "sp": true, "s": 38.038, "e": 38.461 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 38.461, "e": 38.763 },
+        { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true, "s": 38.764, "e": 39.066 },
+        { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 39.066, "e": 39.429 },
+        { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 39.429, "e": 39.913 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 39.913, "e": 40.155 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "s": 40.155, "e": 40.578 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.618,
+      "end": 40.647
+    },
+    {
+      "id": "s12",
+      "speaker": "raul",
+      "text": "¿Puedo ir a trabajar mañana?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Puedo", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 41.057, "e": 41.448 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 41.448, "e": 41.644 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 41.644, "e": 41.774 },
+        { "t": "trabajar", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 41.774, "e": 42.361 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "s": 42.361, "e": 42.817 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 41.047,
+      "end": 42.942
+    },
+    {
+      "id": "s13",
+      "speaker": "isabel",
+      "text": "Le recomiendo que se quede en casa dos días más.",
+      "tokens": [
+        { "t": "Le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 43.352, "e": 43.534 },
+        { "t": "recomiendo", "l": "recomendar", "p": "VERB", "w": true, "sp": true, "s": 43.534, "e": 44.201 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 44.201, "e": 44.444 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 44.443, "e": 44.625 },
+        { "t": "quede", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 44.625, "e": 44.989 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 44.989, "e": 45.171 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true, "s": 45.171, "e": 45.474 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 45.474, "e": 45.717 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 45.716, "e": 46.019 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "s": 46.02, "e": 46.263 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 43.342,
+      "end": 46.318
+    },
+    {
+      "id": "s14",
+      "speaker": "isabel",
+      "text": "Si va a la oficina, puede contagiar a sus compañeros.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 46.588, "e": 46.804 },
+        { "t": "va", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 46.804, "e": 47.02 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 47.02, "e": 47.164 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 47.163, "e": 47.379 },
+        { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true, "s": 47.379, "e": 47.954 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 47.955, "e": 48.387 },
+        { "t": "contagiar", "l": "contagiar", "p": "VERB", "w": true, "sp": true, "s": 48.386, "e": 49.105 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 49.105, "e": 49.249 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 49.249, "e": 49.537 },
+        { "t": "compañeros", "l": "compañero", "p": "NOUN", "w": true, "s": 49.537, "e": 50.328 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.568,
+      "end": 50.407
+    },
+    {
+      "id": "s15",
+      "speaker": "raul",
+      "text": "De acuerdo. ¿Tengo que volver a la consulta?",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 50.817, "e": 51.024 },
+        { "t": "acuerdo", "l": "acuerdo", "p": "NOUN", "w": true, "s": 51.024, "e": 51.577 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 51.867, "e": 52.229 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 52.229, "e": 52.47 },
+        { "t": "volver", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 52.47, "e": 52.892 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 52.892, "e": 53.013 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 53.013, "e": 53.194 },
+        { "t": "consulta", "l": "consulta", "p": "NOUN", "w": true, "s": 53.194, "e": 53.737 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 50.807,
+      "end": 53.82
+    },
+    {
+      "id": "s16",
+      "speaker": "isabel",
+      "text": "Solo si no mejora en cuatro días. Entonces le haremos unos análisis.",
+      "tokens": [
+        { "t": "Solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 54.24, "e": 54.596 },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 54.596, "e": 54.81 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 54.81, "e": 55.024 },
+        { "t": "mejora", "l": "mejorar", "p": "VERB", "w": true, "sp": true, "s": 55.023, "e": 55.521 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 55.522, "e": 55.736 },
+        { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "sp": true, "s": 55.735, "e": 56.233 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 56.234, "e": 56.59 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true, "s": 56.81, "e": 57.509 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 57.509, "e": 57.742 },
+        { "t": "haremos", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 57.742, "e": 58.363 },
+        { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true, "s": 58.363, "e": 58.751 },
+        { "t": "análisis", "l": "análisis", "p": "NOUN", "w": true, "s": 58.751, "e": 59.45 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 54.22,
+      "end": 59.512
+    },
+    {
+      "id": "s17",
+      "speaker": "raul",
+      "text": "Muy bien. Muchas gracias por todo.",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 59.932, "e": 60.283 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 60.283, "e": 60.722 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 60.982, "e": 61.457 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 61.457, "e": 62 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 62.001, "e": 62.273 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "s": 62.272, "e": 62.612 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 59.912,
+      "end": 62.69
+    },
+    {
+      "id": "s18",
+      "speaker": "isabel",
+      "text": "De nada. Que se mejore pronto.",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 63.1, "e": 63.314 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 63.314, "e": 63.67 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 63.91, "e": 64.167 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 64.167, "e": 64.36 },
+        { "t": "mejore", "l": "mejorar", "p": "VERB", "w": true, "sp": true, "s": 64.36, "e": 64.81 },
+        { "t": "pronto", "l": "pronto", "p": "ADV", "w": true, "s": 64.81, "e": 65.26 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 63.09,
+      "end": 65.321
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "antibiótico",
+      "surface": "antibiótico",
+      "pos": "noun",
+      "def_en": "medicina contra las infecciones",
+      "def_es": { "en": "antibiotic", "fr": "antibiotique", "zh": "抗生素", "ja": "抗生物質" },
+      "ref": "s11"
+    },
+    {
+      "lemma": "contagiar",
+      "surface": "contagiar",
+      "pos": "verb",
+      "def_en": "pasar una enfermedad a otra persona",
+      "def_es": { "en": "to infect", "fr": "contaminer", "zh": "传染", "ja": "うつす" },
+      "ref": "s14"
+    },
+    {
+      "lemma": "análisis",
+      "surface": "análisis",
+      "pos": "noun",
+      "def_en": "prueba médica de sangre u otras muestras",
+      "def_es": { "en": "test, analysis", "fr": "analyse", "zh": "检查", "ja": "検査" },
+      "ref": "s16"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué le pasa a Raúl?",
+      "evidence": ["s2", "s8"],
+      "rationale_es": { "en": "His throat hurts and the doctor says it looks like an infection." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Se ha roto un brazo en el trabajo" },
+        { "id": "b", "text": "Está enfermo de la garganta" },
+        { "id": "c", "text": "Tiene un problema de estómago" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Desde cuándo le duele la garganta?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "For a week." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Desde ayer por la tarde" },
+        { "id": "b", "text": "Desde hace un mes" },
+        { "id": "c", "text": "Desde hace una semana" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Raúl duerme bien por la noche.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "He can hardly sleep." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cómo debe tomar el antibiótico?",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "Every eight hours for a week." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tres veces al día, una semana" },
+        { "id": "b", "text": "Una vez al día durante un mes entero" },
+        { "id": "c", "text": "Solo cuando tenga fiebre por la noche" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Por qué le pide la doctora que no vaya a la oficina?",
+      "evidence": ["s14"],
+      "rationale_es": { "en": "He could infect his colleagues." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque ha perdido su trabajo" },
+        { "id": "b", "text": "Para no contagiar a otras personas" },
+        { "id": "c", "text": "Porque necesita hacer ejercicio en casa" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Cómo es la actitud de la doctora?",
+      "evidence": ["s10", "s18"],
+      "rationale_es": { "en": "She reassures him and gives clear instructions." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Nerviosa y rápida" },
+        { "id": "b", "text": "Seria y poco amable" },
+        { "id": "c", "text": "Tranquila y clara" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s16"],
+      "rationale_es": { "en": "*Unos análisis*: tests." },
+      "type": "gap_fill",
+      "text": "Si no mejora en cuatro días, le harán unos {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["análisis"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abrir", "acuerdo", "agua", "algo", "antibiótico", "análisis", "ayer", "beber", "bien", "boca",
+    "bueno", "cada", "casa", "casi", "compañero", "consulta", "contagiar", "de", "deber", "descansar", "desde",
+    "doctor", "doler", "dormir", "durante", "día", "el", "en", "entonces", "favor", "fiebre", "garganta",
+    "grado", "grave", "hacer", "hora", "hoy", "infección", "ir", "mañana", "mejor", "mejorar", "mirar",
+    "mucho", "muy", "más", "no", "noche", "oficina", "parecer", "pasar", "pero", "poco", "poder", "por",
+    "pronto", "que", "quedar", "qué", "recetar", "recomendar", "rojo", "se", "semana", "sentarse", "sentir",
+    "ser", "si", "sobre", "solo", "su", "tarde", "tener", "todo", "tomar", "toser", "trabajar", "un", "volver",
+    "y", "yo", "él"
+  ],
+  "difficulty": 1076,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7552, "A2": 0.9161, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 5.4,
+    "flesch_reading_ease": 91.3,
+    "checked_at": "2026-10-18T21:50:39.313Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-004/v1.m4a",
+    "duration_s": 65.321,
+    "wpm": 139,
+    "provider": "piper",
+    "voices": { "isabel": "sharvard-f", "raul": "sharvard-m" },
+    "loudness_lufs": -16,
+    "peaks": [
+      1, 0.81, 0.69, 0.82, 0.24, 0.4, 0.87, 1, 0.63, 0.78, 0.79, 0.13, 1, 0.98, 0.57, 0.04, 0.17, 1, 0.66,
+      0.44, 0.41, 0.33, 0.22, 0.14, 0.65, 0.96, 0.97, 1, 0.75, 0.76, 0.64, 0.92, 0.93, 0.68, 0.24, 0.01, 1,
+      0.93, 0.68, 0.37, 0, 0.66, 0.99, 0.78, 0.88, 0.72, 0.43, 0.3, 0.51, 0.95, 0.6, 0.76, 1, 0.48, 0.58, 0.75,
+      0.59, 0.87, 0.54, 0.74, 0.63, 0.34, 0, 0.66, 1, 0.68, 0.35, 0, 0.58, 0.55, 0.99, 0.66, 1, 0.8, 0.51,
+      0.47, 0.37, 0.78, 0.61, 0.76, 0.86, 0.3, 0.01, 0.19, 1, 0.82, 0.82, 0.91, 0.57, 0.37, 0.05, 0.78, 1,
+      0.63, 0.72, 0.68, 0.5, 0.03, 0.79, 0.91, 0.55, 1, 0.16, 0.97, 1, 0.89, 0.63, 0.43, 0.36, 0.36, 0, 0.48,
+      1, 0.82, 0.35, 0.39, 0.38, 0.01, 0.65, 0.72, 0.94, 0.89, 0.68, 0.77, 1, 0.83, 0.96, 0.67, 0.69, 0.26,
+      0.2, 0.85, 0.91, 0.76, 1, 0.68, 0.49, 0.81, 0.26, 0.67, 0.91, 0.88, 0.81, 0.79, 0.69, 1, 0.94, 0.5, 0.44,
+      0.08, 0.27, 1, 0.46, 0.83, 0.8, 0.66, 0.47, 0.17, 0, 0.77, 0.66, 0.57, 0.59, 0.41, 0.52, 1, 0.63, 0.62,
+      0.48, 0.21, 0.01, 0.46, 1, 0.75, 0.32, 0.67, 0.48, 0.79, 0.85, 0.69, 0.62, 0.46, 0.62, 0.43, 0.09, 0.02,
+      0.18, 0.89, 1, 0.19, 1, 0.59, 0.84, 0.82, 0.89, 0.45, 0.65, 0.2, 0, 0.47, 0.82, 0.53, 0.41, 0.5, 1, 0.6,
+      0.26, 0.15, 0.51, 0.84, 1, 0.51, 0.77, 0.9, 0.73, 0.56, 0.7, 0.44, 0.21, 0, 0.89, 1, 0.81, 0.05, 0.6,
+      0.5, 1, 0.43, 0.52, 0.44, 0.04, 0.21, 1, 0.77, 0.2, 0.73, 0.52, 1, 0.49, 0.36
+    ]
+  }
+}

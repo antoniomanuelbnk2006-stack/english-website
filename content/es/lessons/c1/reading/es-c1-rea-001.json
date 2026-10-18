@@ -541,7 +541,7 @@
             { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
             { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
             { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
-            { "t": "base", "l": "base", "p": "NOUN", "w": true, "sp": true },
+            { "t": "base", "l": "basar", "p": "VERB", "w": true, "sp": true },
             { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
             { "t": "cualquier", "l": "cualquier", "p": "ADJ", "w": true, "sp": true },
             { "t": "sociedad", "l": "sociedad", "p": "NOUN", "w": true, "sp": true },
@@ -1275,7 +1275,7 @@
   "lemmas": [
     "a", "aceptar", "actitud", "además", "advertir", "afectar", "agobio", "ahí", "alarmante", "alerta",
     "alfabetización", "algo", "algoritmo", "algún", "allí", "alumno", "amigo", "ansiedad", "antes", "aparecer",
-    "apenas", "asunto", "así", "atención", "aunque", "año", "añorar", "base", "bastar", "bien", "burbuja",
+    "apenas", "asunto", "así", "atención", "aunque", "año", "añorar", "basar", "bastar", "bien", "burbuja",
     "cada", "calidad", "calma", "cambiar", "cansancio", "capacidad", "casi", "ciencia", "cierto", "cifra",
     "ciudadano", "claridad", "clic", "comentar", "comer", "compartir", "competencia", "competir", "complejo",
     "completo", "comprender", "comprensible", "comprobar", "con", "confesar", "confiar", "confundir",
@@ -1309,10 +1309,10 @@
   ],
   "difficulty": 1462,
   "qa": {
-    "coverage_by_level": { "A1": 0.5916, "A2": 0.6336, "B1": 0.7315, "B2": 0.7678, "C1": 0.9986, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5916, "A2": 0.6811, "B1": 0.8378, "B2": 0.8699, "C1": 0.9986, "C2": 1 },
     "off_level_lemmas": ["construir"],
     "avg_sentence_words": 19.6,
     "flesch_reading_ease": 65.2,
-    "checked_at": "2026-10-18T20:45:49.048Z"
+    "checked_at": "2026-10-18T22:29:03.857Z"
   }
 }

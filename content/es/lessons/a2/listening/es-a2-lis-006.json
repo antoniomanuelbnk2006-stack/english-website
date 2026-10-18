@@ -1,0 +1,363 @@
+{
+  "id": "es-a2-lis-006",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u02",
+  "series": "es-a2-u02-mensaje-de-voz",
+  "skill": "listening",
+  "genre": "voicemail",
+  "title": "Un mensaje de voz",
+  "summary_es": {
+    "en": "Marta leaves a voice message to change the plan and suggests dinner on Thursday.",
+    "fr": "Marta laisse un message vocal pour changer le programme et propose un dîner jeudi.",
+    "zh": "Marta 留下语音留言，改变计划，并提议周四一起吃晚饭。",
+    "ja": "マルタは予定を変えるために留守電を残し、木曜日の夕食を提案します。"
+  },
+  "topic": "daily-life",
+  "tags": ["planes", "mensaje", "cambiar"],
+  "can_do": ["L-A2-01"],
+  "grammar_focus": ["es.a2.ir-a-infinitivo"],
+  "vocab_focus": ["trabajar", "jueves", "cenar", "restaurante"],
+  "est_minutes": 5,
+  "prediction_prompt": "No puedes ir a una cita. ¿Qué dices en un mensaje de voz?",
+  "pre_teach": ["libre", "cenar"],
+  "speakers": [
+    { "id": "marta", "name": "Marta", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 120,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "marta",
+      "text": "Hola, Álvaro. Soy Marta.",
+      "tokens": [
+        { "t": "Hola", "l": "hola", "p": "INTJ", "w": false, "s": 0.01, "e": 0.39 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Álvaro", "l": "álvaro", "p": "PROPN", "w": false, "s": 0.59, "e": 1.18 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Soy", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 1.45, "e": 1.846 },
+        { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "s": 1.846, "e": 2.44 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.563
+    },
+    {
+      "id": "s2",
+      "speaker": "marta",
+      "text": "Te llamo porque mañana no puedo ir al cine.",
+      "tokens": [
+        { "t": "Te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 3.073, "e": 3.272 },
+        { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true, "s": 3.272, "e": 3.67 },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 3.67, "e": 4.134 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 4.133, "e": 4.597 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 4.597, "e": 4.796 },
+        { "t": "puedo", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 4.796, "e": 5.194 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 5.194, "e": 5.393 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 5.393, "e": 5.592 },
+        { "t": "cine", "l": "cine", "p": "NOUN", "w": true, "s": 5.592, "e": 5.923 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.063,
+      "end": 6.007
+    },
+    {
+      "id": "s3",
+      "speaker": "marta",
+      "text": "Tengo que trabajar hasta las siete.",
+      "tokens": [
+        { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 6.517, "e": 6.87 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 6.87, "e": 7.105 },
+        { "t": "trabajar", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 7.106, "e": 7.636 },
+        { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 7.635, "e": 7.988 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 7.988, "e": 8.223 },
+        { "t": "siete", "l": "siete", "p": "NUM", "w": false, "s": 8.224, "e": 8.577 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.507,
+      "end": 8.652
+    },
+    {
+      "id": "s4",
+      "speaker": "marta",
+      "text": "Lo siento mucho. Me apetece mucho ver la película.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 9.162, "e": 9.381 },
+        { "t": "siento", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 9.381, "e": 9.893 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "s": 9.893, "e": 10.332 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 10.582, "e": 10.789 },
+        { "t": "apetece", "l": "apetecer", "p": "VERB", "w": true, "sp": true, "s": 10.789, "e": 11.342 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 11.342, "e": 11.757 },
+        { "t": "ver", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 11.757, "e": 12.033 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 12.033, "e": 12.24 },
+        { "t": "película", "l": "película", "p": "NOUN", "w": true, "s": 12.24, "e": 12.862 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.152,
+      "end": 12.96
+    },
+    {
+      "id": "s5",
+      "speaker": "marta",
+      "text": "Pero el jueves estoy libre.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 13.47, "e": 13.776 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 13.776, "e": 13.959 },
+        { "t": "jueves", "l": "jueves", "p": "NOUN", "w": true, "sp": true, "s": 13.959, "e": 14.387 },
+        { "t": "estoy", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 14.387, "e": 14.754 },
+        { "t": "libre", "l": "libre", "p": "ADJ", "w": true, "s": 14.753, "e": 15.12 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.46,
+      "end": 15.184
+    },
+    {
+      "id": "s6",
+      "speaker": "marta",
+      "text": "Podemos ir a cenar, si quieres.",
+      "tokens": [
+        { "t": "Podemos", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 15.694, "e": 16.241 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 16.241, "e": 16.446 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 16.447, "e": 16.584 },
+        { "t": "cenar", "l": "cenar", "p": "VERB", "w": true, "s": 16.583, "e": 16.994 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 17.244, "e": 17.492 },
+        { "t": "quieres", "l": "querer", "p": "VERB", "w": true, "s": 17.492, "e": 18.154 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.684,
+      "end": 18.199
+    },
+    {
+      "id": "s7",
+      "speaker": "marta",
+      "text": "Conozco un restaurante muy bueno cerca de tu casa.",
+      "tokens": [
+        { "t": "Conozco", "l": "conocer", "p": "VERB", "w": true, "sp": true, "s": 18.709, "e": 19.227 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 19.227, "e": 19.421 },
+        { "t": "restaurante", "l": "restaurante", "p": "NOUN", "w": true, "sp": true, "s": 19.422, "e": 20.2 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 20.199, "e": 20.458 },
+        { "t": "bueno", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 20.459, "e": 20.848 },
+        { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "sp": true, "s": 20.847, "e": 21.236 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 21.236, "e": 21.43 },
+        { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true, "s": 21.431, "e": 21.625 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 21.625, "e": 21.949 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.699,
+      "end": 22.013
+    },
+    {
+      "id": "s8",
+      "speaker": "marta",
+      "text": "Llámame cuando oigas este mensaje.",
+      "tokens": [
+        { "t": "Llámame", "l": "llamar", "p": "VERB", "w": true, "sp": true, "s": 22.523, "e": 23.078 },
+        { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 23.078, "e": 23.564 },
+        { "t": "oigas", "l": "oír", "p": "VERB", "w": true, "sp": true, "s": 23.564, "e": 23.98 },
+        { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true, "s": 23.981, "e": 24.328 },
+        { "t": "mensaje", "l": "mensaje", "p": "NOUN", "w": true, "s": 24.328, "e": 24.883 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.513,
+      "end": 24.969
+    },
+    {
+      "id": "s9",
+      "speaker": "marta",
+      "text": "Si no contestas, te escribo esta noche.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 25.489, "e": 25.716 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 25.716, "e": 25.943 },
+        { "t": "contestas", "l": "contestar", "p": "VERB", "w": true, "s": 25.942, "e": 26.697 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 26.697, "e": 26.924 },
+        { "t": "escribo", "l": "escribir", "p": "VERB", "w": true, "sp": true, "s": 26.924, "e": 27.528 },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 27.528, "e": 27.906 },
+        { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "s": 27.906, "e": 28.359 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.469,
+      "end": 28.43
+    },
+    {
+      "id": "s10",
+      "speaker": "marta",
+      "text": "Un beso y hasta pronto.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 28.94, "e": 29.157 },
+        { "t": "beso", "l": "beso", "p": "NOUN", "w": true, "sp": true, "s": 29.157, "e": 29.518 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 29.517, "e": 29.661 },
+        { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 29.662, "e": 30.095 },
+        { "t": "pronto", "l": "pronto", "p": "ADV", "w": true, "s": 30.095, "e": 30.6 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.93,
+      "end": 30.655
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "libre",
+      "surface": "libre",
+      "pos": "adjective",
+      "def_en": "sin nada que hacer",
+      "def_es": { "en": "free", "fr": "libre", "zh": "有空的", "ja": "空いている" },
+      "ref": "s5"
+    },
+    {
+      "lemma": "apetecer",
+      "surface": "apetece",
+      "pos": "verb",
+      "def_en": "tener ganas de algo",
+      "def_es": { "en": "to feel like", "fr": "avoir envie de", "zh": "想要", "ja": "〜したい気分だ" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "contestar",
+      "surface": "contestas",
+      "pos": "verb",
+      "def_en": "responder a una llamada o a un mensaje",
+      "def_es": { "en": "to answer", "fr": "répondre", "zh": "回答", "ja": "答える" },
+      "ref": "s9"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Por qué deja Marta el mensaje?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "She cannot go to the cinema tomorrow and proposes another plan." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque quiere comprar un regalo para su madre" },
+        { "id": "b", "text": "Porque tiene que cambiar su plan" },
+        { "id": "c", "text": "Porque está enferma desde ayer por la tarde" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué no puede ir mañana?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "She has to work until seven." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque va a viajar a otra ciudad" },
+        { "id": "b", "text": "Porque no tiene dinero para el cine" },
+        { "id": "c", "text": "Porque tiene trabajo hasta tarde" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Marta propone ir a cenar el jueves.",
+      "evidence": ["s5", "s6"],
+      "rationale_es": { "en": "She is free on Thursday and suggests dinner." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Dónde está el restaurante?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "It is near Álvaro’s house." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cerca de casa de Álvaro" },
+        { "id": "b", "text": "En el centro de la ciudad de Madrid" },
+        { "id": "c", "text": "Junto al cine de la calle Mayor" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "*Esta noche*." },
+      "type": "gap_fill",
+      "text": "Marta dice: «Si no contestas, te escribo esta {{1}}».",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["noche"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "post",
+      "prompt": "¿Cómo se siente Marta?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "She says she is very sorry." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Muy enfadada con su amigo" },
+        { "id": "b", "text": "Con pena por no poder ir" },
+        { "id": "c", "text": "Aburrida de la película" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "apetecer", "beso", "bueno", "casa", "cenar", "cerca", "cine", "conocer", "contestar", "cuando", "de",
+    "el", "escribir", "estar", "este", "hasta", "ir", "jueves", "libre", "llamar", "llamarse", "mañana",
+    "mensaje", "mucho", "muy", "no", "noche", "oír", "película", "pero", "poder", "porque", "pronto", "que",
+    "querer", "restaurante", "sentir", "ser", "si", "tener", "trabajar", "tu", "tú", "un", "ver", "y", "yo",
+    "él"
+  ],
+  "difficulty": 888,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8033, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 5.4,
+    "flesch_reading_ease": 89.6,
+    "checked_at": "2026-10-18T21:44:18.647Z"
+  },
+  "audio": {
+    "src": "audio/a2/es-a2-lis-006/v1.m4a",
+    "duration_s": 30.655,
+    "wpm": 127,
+    "provider": "piper",
+    "voices": { "marta": "sharvard-f" },
+    "loudness_lufs": -16,
+    "peaks": [
+      0.99, 1, 0.76, 0.03, 0.95, 0.86, 0.9, 0.8, 0.35, 0.04, 0, 0.22, 0.49, 1, 0.62, 0.88, 0.32, 0.29, 0.31,
+      0.06, 0, 0, 0, 0.01, 0.75, 0.9, 1, 0.99, 0.47, 0.76, 0.62, 0.66, 0.64, 0.82, 0.75, 0.68, 0.77, 0.23,
+      0.73, 0.83, 0.9, 0.87, 0.41, 0.62, 0.55, 0.33, 0.06, 0, 0, 0, 0.01, 0.62, 0.93, 1, 0.58, 0.7, 0.74, 0.58,
+      0.7, 0.67, 0.54, 0.77, 0.61, 0.53, 0.47, 0.31, 0.33, 0.05, 0, 0, 0, 0.3, 0.52, 0.41, 1, 0.69, 0.78, 0.47,
+      0.26, 0.28, 0.18, 0.01, 0.06, 0.62, 0.86, 0.95, 0.62, 0.84, 0.53, 0.62, 0.51, 0.66, 0.65, 0.7, 1, 0.68,
+      0.61, 0.46, 0.3, 0.28, 0.26, 0.02, 0, 0, 0, 0.71, 1, 0.54, 0.69, 0.8, 0.97, 0.43, 0.6, 0.87, 0.94, 0.6,
+      0.36, 0.19, 0.11, 0, 0, 0, 0.11, 1, 0.77, 0.86, 0.79, 0.64, 0.75, 0.15, 0.38, 0.59, 0.56, 0.06, 0.01,
+      0.47, 0.67, 0.53, 0.62, 0.23, 0.15, 0.18, 0.06, 0, 0, 0, 0.92, 0.79, 0.68, 0.23, 0.54, 0.58, 0.86, 0.51,
+      0.87, 0.86, 0.71, 1, 0.72, 0.58, 0.71, 0.64, 0.32, 0.71, 0.43, 0.6, 0.69, 0.36, 0.52, 0.53, 0.57, 0.26,
+      0.02, 0, 0, 0, 0.33, 1, 0.94, 0.6, 0.42, 0.84, 0.36, 0.51, 0.51, 0.84, 0.46, 0.54, 0.57, 0.45, 0.44,
+      0.51, 0.38, 0.15, 0.17, 0.01, 0, 0, 0, 0.21, 0.57, 0.55, 0.74, 0.7, 0.5, 0.63, 0.46, 0.61, 0.39, 0.6,
+      0.49, 0.35, 0.67, 1, 0.97, 0.61, 0.88, 0.65, 0.48, 0.41, 0.42, 0.21, 0.05, 0, 0, 0, 0.39, 0.74, 1, 0.72,
+      0.62, 0.46, 0.64, 0.36, 0.76, 0.41, 0.42, 0.21, 0.28, 0.14
+    ]
+  }
+}

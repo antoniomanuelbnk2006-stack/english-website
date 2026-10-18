@@ -1,0 +1,317 @@
+{
+  "id": "es-a1-rea-009",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u05",
+  "series": "es-a1-u05-ciudad",
+  "skill": "reading",
+  "genre": "blog",
+  "title": "Mi ciudad",
+  "summary_es": {
+    "en": "A short text about a small, quiet city and what there is in the centre.",
+    "fr": "Un court texte sur une petite ville tranquille et ce qu’il y a au centre.",
+    "zh": "一篇短文，介绍一座安静的小城市和市中心有什么。",
+    "ja": "小さくて静かな町と、その中心にあるものを紹介する短い文です。"
+  },
+  "topic": "city-housing",
+  "tags": ["ciudad", "hay", "lugares"],
+  "can_do": ["R-A1-01"],
+  "grammar_focus": ["es.a1.tener-y-hay"],
+  "vocab_focus": ["ciudad", "centro", "parque", "librería"],
+  "est_minutes": 4,
+  "prediction_prompt": "¿Qué hay en tu ciudad?",
+  "pre_teach": ["centro", "librería"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Vivo en una ciudad pequeña.",
+          "tokens": [
+            { "t": "Vivo", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Se llama Toledo.",
+          "tokens": [
+            { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "llama", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "Toledo", "l": "toledo", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Está cerca de Madrid.",
+          "tokens": [
+            { "t": "Está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Madrid", "l": "madrid", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "En el centro hay un parque.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "centro", "l": "centro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "parque", "l": "parque", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Hay una tienda y una librería.",
+          "tokens": [
+            { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "tienda", "l": "tienda", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "librería", "l": "librería", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "También hay dos restaurantes buenos.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "restaurantes", "l": "restaurante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "buenos", "l": "bueno", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "No hay un hospital.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "hospital", "l": "hospital", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s5",
+          "text": "Hay una escuela nueva.",
+          "tokens": [
+            { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "escuela", "l": "escuela", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nueva", "l": "nuevo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Mi ciudad es bonita y tranquila.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "bonita", "l": "bonito", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "tranquila", "l": "tranquilo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Me gusta mucho.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Y a ti, ¿te gusta tu ciudad?",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "ti", "l": "tú", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true },
+            { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": { "en": "Hay: there is, there are", "fr": "Hay : il y a", "zh": "hay：有", "ja": "hay：〜がある" },
+      "explanation_es": {
+        "en": "*Hay* means *there is* and *there are*: *Hay un parque*, *Hay dos restaurantes*. In the negative: *No hay un hospital*."
+      },
+      "refs": ["p2s2", "p2s4"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "centro",
+      "surface": "centro",
+      "pos": "noun",
+      "def_en": "la parte de la ciudad con más tiendas y gente",
+      "def_es": { "en": "centre", "fr": "centre", "zh": "市中心", "ja": "中心街" },
+      "ref": "p2s1"
+    },
+    {
+      "lemma": "librería",
+      "surface": "librería",
+      "pos": "noun",
+      "def_en": "tienda donde se venden libros",
+      "def_es": { "en": "bookshop", "fr": "librairie", "zh": "书店", "ja": "本屋" },
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "bonito",
+      "surface": "bonita",
+      "pos": "adjective",
+      "def_en": "agradable de ver",
+      "def_es": { "en": "pretty, nice", "fr": "joli", "zh": "漂亮的", "ja": "きれいな" },
+      "ref": "p3s1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿De qué habla el texto?",
+      "evidence": ["p1s1"],
+      "rationale_es": { "en": "It describes the author’s small city." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De una persona muy simpática" },
+        { "id": "b", "text": "De una ciudad" },
+        { "id": "c", "text": "De una comida de Madrid" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cómo se llama la ciudad?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "*Se llama Toledo*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Madrid" },
+        { "id": "b", "text": "Sevilla" },
+        { "id": "c", "text": "Toledo" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "La ciudad está cerca de Madrid.",
+      "evidence": ["p1s3"],
+      "rationale_es": { "en": "*Está cerca de Madrid*." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué hay en el centro?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "*En el centro hay un parque*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un parque" },
+        { "id": "b", "text": "Un hospital" },
+        { "id": "c", "text": "Una playa" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Hay un hospital en la ciudad.",
+      "evidence": ["p2s4"],
+      "rationale_es": { "en": "*No hay un hospital*." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p3s1"],
+      "rationale_es": { "en": "*Bonita y tranquila*." },
+      "type": "gap_fill",
+      "text": "La ciudad es bonita y {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["tranquila"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 53,
+  "lemmas": [
+    "a", "bonito", "bueno", "centro", "cerca", "ciudad", "de", "el", "en", "escuela", "estar", "gustar",
+    "haber", "hospital", "librería", "llamarse", "mi", "mucho", "no", "nuevo", "parque", "pequeño",
+    "restaurante", "se", "ser", "también", "tienda", "tranquilo", "tu", "tú", "un", "vivir", "y", "yo"
+  ],
+  "difficulty": 661,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 4.8,
+    "flesch_reading_ease": 97.8,
+    "checked_at": "2026-10-18T21:38:33.650Z"
+  }
+}

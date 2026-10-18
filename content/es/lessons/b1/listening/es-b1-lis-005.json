@@ -1,0 +1,682 @@
+{
+  "id": "es-b1-lis-005",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u07",
+  "series": "es-b1-u07-escritor",
+  "skill": "listening",
+  "genre": "interview",
+  "title": "Una entrevista a un escritor",
+  "summary_es": {
+    "en": "A novelist explains how he started writing, his daily routine and advice for new writers.",
+    "fr": "Un romancier explique comment il a commencé à écrire, sa routine quotidienne et ses conseils pour les nouveaux écrivains.",
+    "zh": "一位小说家讲述他如何开始写作、日常安排，以及给新作家的建议。",
+    "ja": "小説家が、書き始めたきっかけ、毎日の習慣、新人作家への助言を語ります。"
+  },
+  "topic": "culture",
+  "tags": ["literatura", "entrevista", "pasado"],
+  "can_do": ["L-B1-01"],
+  "grammar_focus": ["es.b1.imperfecto-vs-indefinido"],
+  "vocab_focus": ["novela", "editorial", "borrador", "constancia"],
+  "est_minutes": 9,
+  "prediction_prompt": "¿Qué crees que hace un escritor en un día normal?",
+  "pre_teach": ["borrador", "a escondidas"],
+  "speakers": [
+    { "id": "pilar", "name": "Pilar", "accent": "es-ES", "gender": "female" },
+    { "id": "tomas", "name": "Tomás", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "pilar",
+      "text": "Buenas tardes y bienvenidos a «Hablemos de libros».",
+      "tokens": [
+        { "t": "Buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.5 },
+        { "t": "tardes", "l": "tarde", "p": "NOUN", "w": true, "sp": true, "s": 0.5, "e": 0.99 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 0.99, "e": 1.13 },
+        { "t": "bienvenidos", "l": "bienvenido", "p": "ADJ", "w": true, "sp": true, "s": 1.13, "e": 1.97 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 1.97, "e": 2.11 },
+        { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+        { "t": "Hablemos", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 2.11, "e": 2.74 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 2.74, "e": 2.95 },
+        { "t": "libros", "l": "libro", "p": "NOUN", "w": true, "s": 2.95, "e": 3.44 },
+        { "t": "»", "l": "»", "p": "PUNCT", "w": false },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 3.524
+    },
+    {
+      "id": "s2",
+      "speaker": "pilar",
+      "text": "Hoy nos acompaña Tomás Vega, autor de la novela más vendida del año.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 3.784, "e": 4.071 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 4.071, "e": 4.358 },
+        { "t": "acompaña", "l": "acompañar", "p": "VERB", "w": true, "sp": true, "s": 4.358, "e": 5.004 },
+        { "t": "Tomás", "l": "tomás", "p": "PROPN", "w": false, "sp": true, "s": 5.004, "e": 5.435 },
+        { "t": "Vega", "l": "vega", "p": "PROPN", "w": false, "s": 5.435, "e": 5.794 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "autor", "l": "autor", "p": "NOUN", "w": true, "sp": true, "s": 5.794, "e": 6.225 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 6.225, "e": 6.44 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 6.44, "e": 6.655 },
+        { "t": "novela", "l": "novela", "p": "NOUN", "w": true, "sp": true, "s": 6.656, "e": 7.159 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 7.158, "e": 7.445 },
+        { "t": "vendida", "l": "vender", "p": "VERB", "w": true, "sp": true, "s": 7.445, "e": 8.019 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 8.02, "e": 8.307 },
+        { "t": "año", "l": "año", "p": "NOUN", "w": true, "s": 8.307, "e": 8.594 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.774,
+      "end": 8.699
+    },
+    {
+      "id": "s3",
+      "speaker": "tomas",
+      "text": "Muchas gracias, Pilar. Es un placer estar aquí.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 9.126, "e": 9.593 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 9.593, "e": 10.126 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Pilar", "l": "pilar", "p": "PROPN", "w": false, "s": 10.366, "e": 10.726 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 11.246, "e": 11.422 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 11.422, "e": 11.598 },
+        { "t": "placer", "l": "placer", "p": "NOUN", "w": true, "sp": true, "s": 11.599, "e": 12.01 },
+        { "t": "estar", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 12.01, "e": 12.363 },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "s": 12.362, "e": 12.656 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.099,
+      "end": 12.771
+    },
+    {
+      "id": "s4",
+      "speaker": "pilar",
+      "text": "Tomás, ¿cuándo empezaste a escribir?",
+      "tokens": [
+        { "t": "Tomás", "l": "tomás", "p": "PROPN", "w": false, "s": 13.181, "e": 13.601 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "cuándo", "l": "cuándo", "p": "ADV", "w": true, "sp": true, "s": 13.601, "e": 14.091 },
+        { "t": "empezaste", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 14.091, "e": 14.791 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 14.791, "e": 14.931 },
+        { "t": "escribir", "l": "escribir", "p": "VERB", "w": true, "s": 14.931, "e": 15.561 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.171,
+      "end": 15.682
+    },
+    {
+      "id": "s5",
+      "speaker": "tomas",
+      "text": "De niño. Mi abuelo me contaba historias cada noche y yo quería inventar las mías.",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 16.092, "e": 16.291 },
+        { "t": "niño", "l": "niño", "p": "NOUN", "w": true, "s": 16.291, "e": 16.622 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 17.242, "e": 17.422 },
+        { "t": "abuelo", "l": "abuelo", "p": "NOUN", "w": true, "sp": true, "s": 17.422, "e": 17.841 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 17.841, "e": 18.021 },
+        { "t": "contaba", "l": "contar", "p": "VERB", "w": true, "sp": true, "s": 18.02, "e": 18.499 },
+        { "t": "historias", "l": "historia", "p": "NOUN", "w": true, "sp": true, "s": 18.499, "e": 19.098 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 19.098, "e": 19.397 },
+        { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "sp": true, "s": 19.397, "e": 19.756 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 19.756, "e": 19.876 },
+        { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 19.876, "e": 20.056 },
+        { "t": "quería", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 20.055, "e": 20.474 },
+        { "t": "inventar", "l": "inventar", "p": "VERB", "w": true, "sp": true, "s": 20.475, "e": 21.014 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 21.013, "e": 21.252 },
+        { "t": "mías", "l": "mío", "p": "PRON", "w": true, "s": 21.253, "e": 21.552 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.082,
+      "end": 21.633
+    },
+    {
+      "id": "s6",
+      "speaker": "pilar",
+      "text": "¿Y siempre quisiste ser escritor?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 22.043, "e": 22.194 },
+        { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true, "s": 22.194, "e": 22.799 },
+        { "t": "quisiste", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 22.799, "e": 23.48 },
+        { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 23.48, "e": 23.783 },
+        { "t": "escritor", "l": "escritor", "p": "NOUN", "w": true, "s": 23.782, "e": 24.463 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.033,
+      "end": 24.586
+    },
+    {
+      "id": "s7",
+      "speaker": "tomas",
+      "text": "No. Al principio estudié ingeniería, porque mis padres pensaban que era una profesión más segura.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "s": 24.986, "e": 25.266 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 25.656, "e": 25.849 },
+        { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "sp": true, "s": 25.849, "e": 26.493 },
+        { "t": "estudié", "l": "estudiar", "p": "VERB", "w": true, "sp": true, "s": 26.493, "e": 27.008 },
+        { "t": "ingeniería", "l": "ingeniería", "p": "NOUN", "w": true, "s": 27.008, "e": 27.716 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 27.906, "e": 28.318 },
+        { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 28.318, "e": 28.553 },
+        { "t": "padres", "l": "padre", "p": "NOUN", "w": true, "sp": true, "s": 28.553, "e": 28.965 },
+        { "t": "pensaban", "l": "pensar", "p": "VERB", "w": true, "sp": true, "s": 28.965, "e": 29.495 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 29.495, "e": 29.73 },
+        { "t": "era", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 29.73, "e": 29.965 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 29.965, "e": 30.2 },
+        { "t": "profesión", "l": "profesión", "p": "NOUN", "w": true, "sp": true, "s": 30.2, "e": 30.788 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 30.789, "e": 31.024 },
+        { "t": "segura", "l": "seguro", "p": "ADJ", "w": true, "s": 31.024, "e": 31.436 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.986,
+      "end": 31.543
+    },
+    {
+      "id": "s8",
+      "speaker": "tomas",
+      "text": "Trabajé diez años en una empresa, pero por las noches escribía a escondidas.",
+      "tokens": [
+        { "t": "Trabajé", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 31.803, "e": 32.312 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true, "s": 32.312, "e": 32.63 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 32.63, "e": 32.948 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 32.948, "e": 33.139 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 33.139, "e": 33.394 },
+        { "t": "empresa", "l": "empresa", "p": "NOUN", "w": true, "s": 33.394, "e": 33.903 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 34.263, "e": 34.569 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 34.569, "e": 34.814 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 34.814, "e": 35.059 },
+        { "t": "noches", "l": "noche", "p": "NOUN", "w": true, "sp": true, "s": 35.058, "e": 35.486 },
+        { "t": "escribía", "l": "escribir", "p": "VERB", "w": true, "sp": true, "s": 35.487, "e": 36.038 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 36.038, "e": 36.16 },
+        { "t": "escondidas", "l": "esconder", "p": "VERB", "w": true, "s": 36.16, "e": 36.833 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.793,
+      "end": 36.901
+    },
+    {
+      "id": "s9",
+      "speaker": "pilar",
+      "text": "¿Cuándo tomaste la decisión de dejar tu trabajo?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuándo", "l": "cuándo", "p": "ADV", "w": true, "sp": true, "s": 37.311, "e": 37.814 },
+        { "t": "tomaste", "l": "tomar", "p": "VERB", "w": true, "sp": true, "s": 37.814, "e": 38.389 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 38.39, "e": 38.606 },
+        { "t": "decisión", "l": "decisión", "p": "NOUN", "w": true, "sp": true, "s": 38.605, "e": 39.252 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 39.253, "e": 39.469 },
+        { "t": "dejar", "l": "dejar", "p": "VERB", "w": true, "sp": true, "s": 39.468, "e": 39.899 },
+        { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true, "s": 39.9, "e": 40.116 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "s": 40.116, "e": 40.691 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 37.301,
+      "end": 40.744
+    },
+    {
+      "id": "s10",
+      "speaker": "tomas",
+      "text": "Cuando terminé mi primera novela. Nadie quería publicarla.",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 41.144, "e": 41.602 },
+        { "t": "terminé", "l": "terminar", "p": "VERB", "w": true, "sp": true, "s": 41.602, "e": 42.126 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 42.126, "e": 42.322 },
+        { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 42.322, "e": 42.846 },
+        { "t": "novela", "l": "novela", "p": "NOUN", "w": true, "s": 42.846, "e": 43.304 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Nadie", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 43.754, "e": 44.114 },
+        { "t": "quería", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 44.114, "e": 44.534 },
+        { "t": "publicarla", "l": "publicar", "p": "VERB", "w": true, "s": 44.534, "e": 45.194 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 41.144,
+      "end": 45.285
+    },
+    {
+      "id": "s11",
+      "speaker": "tomas",
+      "text": "Estuve casi dos años recibiendo respuestas negativas.",
+      "tokens": [
+        { "t": "Estuve", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 45.565, "e": 46.075 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 46.075, "e": 46.439 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 46.439, "e": 46.73 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 46.73, "e": 47.094 },
+        { "t": "recibiendo", "l": "recibir", "p": "VERB", "w": true, "sp": true, "s": 47.094, "e": 47.895 },
+        { "t": "respuestas", "l": "respuesta", "p": "NOUN", "w": true, "sp": true, "s": 47.896, "e": 48.697 },
+        { "t": "negativas", "l": "negativo", "p": "ADJ", "w": true, "s": 48.697, "e": 49.425 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 45.535,
+      "end": 49.49
+    },
+    {
+      "id": "s12",
+      "speaker": "pilar",
+      "text": "¿No pensaste en rendirte?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 49.9, "e": 50.128 },
+        { "t": "pensaste", "l": "pensar", "p": "VERB", "w": true, "sp": true, "s": 50.128, "e": 50.811 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 50.81, "e": 51.038 },
+        { "t": "rendirte", "l": "rendirse", "p": "VERB", "w": true, "s": 51.038, "e": 51.721 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 49.89,
+      "end": 51.798
+    },
+    {
+      "id": "s13",
+      "speaker": "tomas",
+      "text": "Muchas veces. Pero mi mujer me animaba a seguir, y al final una editorial pequeña se interesó.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 52.23, "e": 52.758 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "s": 52.758, "e": 53.21 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 53.84, "e": 54.139 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 54.139, "e": 54.318 },
+        { "t": "mujer", "l": "mujer", "p": "NOUN", "w": true, "sp": true, "s": 54.318, "e": 54.676 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 54.676, "e": 54.855 },
+        { "t": "animaba", "l": "animar", "p": "VERB", "w": true, "sp": true, "s": 54.855, "e": 55.333 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 55.333, "e": 55.452 },
+        { "t": "seguir", "l": "seguir", "p": "VERB", "w": true, "s": 55.452, "e": 55.87 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 56.41, "e": 56.541 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 56.541, "e": 56.737 },
+        { "t": "final", "l": "final", "p": "NOUN", "w": true, "sp": true, "s": 56.737, "e": 57.129 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 57.129, "e": 57.39 },
+        { "t": "editorial", "l": "editorial", "p": "NOUN", "w": true, "sp": true, "s": 57.39, "e": 58.043 },
+        { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true, "sp": true, "s": 58.043, "e": 58.566 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 58.566, "e": 58.762 },
+        { "t": "interesó", "l": "interesar", "p": "VERB", "w": true, "s": 58.762, "e": 59.35 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 52.198,
+      "end": 59.42
+    },
+    {
+      "id": "s14",
+      "speaker": "pilar",
+      "text": "¿Cómo es un día normal de trabajo para ti?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 59.83, "e": 60.181 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 60.181, "e": 60.392 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 60.392, "e": 60.603 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 60.603, "e": 60.884 },
+        { "t": "normal", "l": "normal", "p": "ADJ", "w": true, "sp": true, "s": 60.884, "e": 61.376 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 61.375, "e": 61.586 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 61.586, "e": 62.148 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 62.148, "e": 62.499 },
+        { "t": "ti", "l": "tú", "p": "PRON", "w": true, "s": 62.499, "e": 62.71 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 59.82,
+      "end": 62.812
+    },
+    {
+      "id": "s15",
+      "speaker": "tomas",
+      "text": "Me levanto a las seis, preparo un café y escribo hasta mediodía, sin teléfono ni internet.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 63.222, "e": 63.422 },
+        { "t": "levanto", "l": "levantarse", "p": "VERB", "w": true, "sp": true, "s": 63.422, "e": 63.956 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 63.956, "e": 64.089 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 64.089, "e": 64.356 },
+        { "t": "seis", "l": "seis", "p": "NUM", "w": false, "s": 64.356, "e": 64.69 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "preparo", "l": "preparar", "p": "VERB", "w": true, "sp": true, "s": 64.69, "e": 65.224 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 65.223, "e": 65.423 },
+        { "t": "café", "l": "café", "p": "NOUN", "w": true, "sp": true, "s": 65.423, "e": 65.757 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 65.757, "e": 65.89 },
+        { "t": "escribo", "l": "escribir", "p": "VERB", "w": true, "sp": true, "s": 65.89, "e": 66.424 },
+        { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 66.424, "e": 66.824 },
+        { "t": "mediodía", "l": "mediodía", "p": "NOUN", "w": true, "s": 66.824, "e": 67.424 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 67.424, "e": 67.691 },
+        { "t": "teléfono", "l": "teléfono", "p": "NOUN", "w": true, "sp": true, "s": 67.691, "e": 68.291 },
+        { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true, "s": 68.292, "e": 68.492 },
+        { "t": "internet", "l": "internet", "p": "NOUN", "w": true, "s": 68.492, "e": 69.092 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 63.212,
+      "end": 69.168
+    },
+    {
+      "id": "s16",
+      "speaker": "tomas",
+      "text": "Por la tarde leo, paseo o respondo correos. Escribir cansa más de lo que parece.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 69.448, "e": 69.712 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 69.712, "e": 69.91 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true, "s": 69.909, "e": 70.304 },
+        { "t": "leo", "l": "leer", "p": "VERB", "w": true, "s": 70.304, "e": 70.568 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "paseo", "l": "pasear", "p": "VERB", "w": true, "sp": true, "s": 70.798, "e": 71.261 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 71.261, "e": 71.415 },
+        { "t": "respondo", "l": "responder", "p": "VERB", "w": true, "sp": true, "s": 71.416, "e": 72.111 },
+        { "t": "correos", "l": "correo", "p": "NOUN", "w": true, "s": 72.11, "e": 72.728 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Escribir", "l": "escribir", "p": "VERB", "w": true, "sp": true, "s": 73.248, "e": 73.776 },
+        { "t": "cansa", "l": "cansar", "p": "VERB", "w": true, "sp": true, "s": 73.776, "e": 74.128 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 74.127, "e": 74.361 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 74.362, "e": 74.538 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 74.537, "e": 74.713 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 74.713, "e": 74.947 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "s": 74.948, "e": 75.358 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 69.418,
+      "end": 75.447
+    },
+    {
+      "id": "s17",
+      "speaker": "pilar",
+      "text": "¿Qué consejo darías a quien quiere escribir?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 75.857, "e": 76.126 },
+        { "t": "consejo", "l": "consejo", "p": "NOUN", "w": true, "sp": true, "s": 76.126, "e": 76.664 },
+        { "t": "darías", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 76.664, "e": 77.134 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 77.134, "e": 77.268 },
+        { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true, "s": 77.268, "e": 77.671 },
+        { "t": "quiere", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 77.672, "e": 78.142 },
+        { "t": "escribir", "l": "escribir", "p": "VERB", "w": true, "s": 78.142, "e": 78.747 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 75.847,
+      "end": 78.9
+    },
+    {
+      "id": "s18",
+      "speaker": "tomas",
+      "text": "Que lea mucho y que escriba todos los días, aunque sea poco.",
+      "tokens": [
+        { "t": "Que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 79.3, "e": 79.557 },
+        { "t": "lea", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 79.557, "e": 79.814 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 79.813, "e": 80.198 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 80.199, "e": 80.327 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 80.327, "e": 80.584 },
+        { "t": "escriba", "l": "escribir", "p": "VERB", "w": true, "sp": true, "s": 80.584, "e": 81.097 },
+        { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 81.097, "e": 81.482 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 81.482, "e": 81.739 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 81.739, "e": 82.06 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true, "s": 82.25, "e": 82.701 },
+        { "t": "sea", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 82.701, "e": 82.959 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "s": 82.958, "e": 83.28 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 79.3,
+      "end": 83.354
+    },
+    {
+      "id": "s19",
+      "speaker": "tomas",
+      "text": "La constancia es más importante que el talento.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 83.636, "e": 83.833 },
+        { "t": "constancia", "l": "constancia", "p": "NOUN", "w": true, "sp": true, "s": 83.833, "e": 84.554 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 84.553, "e": 84.75 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 84.75, "e": 85.012 },
+        { "t": "importante", "l": "importante", "p": "ADJ", "w": true, "sp": true, "s": 85.012, "e": 85.733 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 85.733, "e": 85.995 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 85.995, "e": 86.192 },
+        { "t": "talento", "l": "talento", "p": "NOUN", "w": true, "s": 86.192, "e": 86.716 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 83.604,
+      "end": 86.799
+    },
+    {
+      "id": "s20",
+      "speaker": "tomas",
+      "text": "Y que no tenga miedo a los errores: el primer borrador siempre es malo.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 87.081, "e": 87.21 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 87.21, "e": 87.468 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 87.468, "e": 87.662 },
+        { "t": "tenga", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 87.662, "e": 88.049 },
+        { "t": "miedo", "l": "miedo", "p": "NOUN", "w": true, "sp": true, "s": 88.05, "e": 88.437 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 88.437, "e": 88.566 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 88.566, "e": 88.824 },
+        { "t": "errores", "l": "error", "p": "NOUN", "w": true, "s": 88.824, "e": 89.341 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 89.631, "e": 89.814 },
+        { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 89.814, "e": 90.242 },
+        { "t": "borrador", "l": "borrador", "p": "NOUN", "w": true, "sp": true, "s": 90.242, "e": 90.792 },
+        { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true, "s": 90.793, "e": 91.282 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 91.282, "e": 91.465 },
+        { "t": "malo", "l": "malo", "p": "ADJ", "w": true, "s": 91.465, "e": 91.771 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 87.049,
+      "end": 91.851
+    },
+    {
+      "id": "s21",
+      "speaker": "pilar",
+      "text": "Gracias, Tomás. Ha sido un placer hablar contigo.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 92.261, "e": 92.921 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Tomás", "l": "tomás", "p": "PROPN", "w": false, "s": 92.921, "e": 93.416 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 93.417, "e": 93.665 },
+        { "t": "sido", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 93.664, "e": 94.077 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 94.077, "e": 94.325 },
+        { "t": "placer", "l": "placer", "p": "NOUN", "w": true, "sp": true, "s": 94.325, "e": 94.903 },
+        { "t": "hablar", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 94.903, "e": 95.481 },
+        { "t": "contigo", "l": "tú", "p": "PRON", "w": true, "s": 95.481, "e": 96.141 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 92.251,
+      "end": 96.25
+    },
+    {
+      "id": "s22",
+      "speaker": "tomas",
+      "text": "Gracias a vosotros por invitarme.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 96.679, "e": 97.207 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 97.207, "e": 97.339 },
+        { "t": "vosotros", "l": "vosotros", "p": "PRON", "w": true, "sp": true, "s": 97.34, "e": 97.935 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 97.934, "e": 98.198 },
+        { "t": "invitarme", "l": "invitar", "p": "VERB", "w": true, "s": 98.198, "e": 98.859 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 96.65,
+      "end": 98.939
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "borrador",
+      "surface": "borrador",
+      "pos": "noun",
+      "def_en": "primera versión de un texto, sin terminar",
+      "def_es": { "en": "draft", "fr": "brouillon", "zh": "草稿", "ja": "下書き" },
+      "ref": "s20"
+    },
+    {
+      "lemma": "rendirse",
+      "surface": "rendirte",
+      "pos": "verb",
+      "def_en": "dejar de intentar algo difícil",
+      "def_es": { "en": "to give up", "fr": "abandonner", "zh": "放弃", "ja": "あきらめる" },
+      "ref": "s12"
+    },
+    {
+      "lemma": "a escondidas",
+      "surface": "a escondidas",
+      "pos": "phrase",
+      "def_en": "sin que los demás lo vean",
+      "def_es": { "en": "in secret", "fr": "en cachette", "zh": "偷偷地", "ja": "こっそり" },
+      "ref": "s8"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿De qué hablan principalmente?",
+      "evidence": ["s4", "s10"],
+      "rationale_es": { "en": "The interview follows his path to becoming a writer." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De los premios de los libros extranjeros" },
+        { "id": "b", "text": "De cómo llegó un hombre a ser escritor" },
+        { "id": "c", "text": "De cómo se vende un libro por internet" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué estudió Tomás al principio?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "He studied engineering." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Literatura" },
+        { "id": "b", "text": "Medicina" },
+        { "id": "c", "text": "Ingeniería" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Una editorial grande publicó enseguida su primera novela.",
+      "evidence": ["s10", "s13"],
+      "rationale_es": { "en": "Nobody wanted to publish it; a small publisher finally did." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cómo es su mañana de trabajo?",
+      "evidence": ["s15"],
+      "rationale_es": { "en": "He writes until noon with no phone or internet." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Trabaja en silencio hasta la hora de comer" },
+        { "id": "b", "text": "Responde correos y mensajes desde el amanecer" },
+        { "id": "c", "text": "Lee los periódicos y llama a su editor por teléfono" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué ayudó a Tomás a no rendirse?",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "His wife encouraged him." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "El dinero de su antigua empresa" },
+        { "id": "b", "text": "El apoyo de su esposa" },
+        { "id": "c", "text": "Los consejos de su abuelo" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Qué opina Tomás del talento?",
+      "evidence": ["s19"],
+      "rationale_es": { "en": "He says perseverance matters more than talent." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que es lo único que necesita un escritor" },
+        { "id": "b", "text": "Que no existe en la literatura" },
+        { "id": "c", "text": "Que importa menos que la constancia" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s20"],
+      "rationale_es": { "en": "*El primer borrador siempre es malo*." },
+      "type": "gap_fill",
+      "text": "Tomás dice que el primer {{1}} siempre es malo.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["borrador"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abuelo", "acompañar", "algo", "animar", "aquí", "aunque", "autor", "año", "bienvenido", "borrador",
+    "bueno", "cada", "café", "cansar", "casi", "consejo", "constancia", "contar", "correo", "cuando", "cuándo",
+    "cómo", "dar", "de", "decisión", "dejar", "día", "editorial", "el", "empezar", "empresa", "en", "error",
+    "esconder", "escribir", "escritor", "estar", "estudiar", "final", "haber", "hablar", "hasta", "historia",
+    "hoy", "importante", "ingeniería", "interesar", "internet", "inventar", "invitar", "leer", "levantarse",
+    "libro", "malo", "mediodía", "mi", "miedo", "mucho", "mujer", "más", "mío", "negativo", "ni", "niño", "no",
+    "noche", "normal", "nosotros", "novela", "o", "padre", "para", "parecer", "pasear", "pensar", "pequeño",
+    "pero", "placer", "poco", "por", "porque", "preparar", "principio", "profesión", "publicar", "que",
+    "querer", "quien", "qué", "recibir", "rendirse", "responder", "respuesta", "se", "seguir", "seguro", "ser",
+    "siempre", "sin", "talento", "tarde", "teléfono", "tener", "terminar", "todo", "tomar", "trabajar", "tu",
+    "tú", "un", "vender", "vez", "vosotros", "y", "yo", "él"
+  ],
+  "difficulty": 1067,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7246, "A2": 0.8164, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 7.6,
+    "flesch_reading_ease": 79.6,
+    "checked_at": "2026-10-18T21:50:39.313Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-005/v1.m4a",
+    "duration_s": 98.939,
+    "wpm": 133,
+    "provider": "piper",
+    "voices": { "pilar": "sharvard-f", "tomas": "davefx-m" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.92, 0.83, 0.67, 0.95, 0.97, 0.89, 0.49, 0.12, 0.81, 0.68, 0.77, 0.71, 1, 0.6, 0.79, 0.76, 0.86,
+      0.58, 0.78, 0.37, 0.01, 1, 0.95, 0.43, 0.81, 0.04, 0.91, 0.98, 1, 0.82, 0.28, 0.78, 1, 0.63, 0.5, 0.42,
+      0.25, 0, 1, 0.31, 0.7, 1, 0.64, 1, 0.78, 0.96, 0.71, 0.97, 0.91, 1, 0.25, 0.13, 0.68, 1, 0.62, 0.96,
+      0.81, 0.54, 0.42, 1, 0.53, 0.94, 0.92, 0.74, 0.85, 0.67, 0.83, 0.96, 0.99, 0.9, 0.94, 0.91, 0.97, 1,
+      0.55, 0.25, 1, 0.96, 0.76, 0.66, 0.81, 0.44, 0.92, 0.9, 0.72, 0.97, 0.81, 0.47, 0.14, 1, 0.94, 0.58,
+      0.95, 0.64, 0.65, 0.69, 0.73, 0.22, 0.87, 1, 0.9, 0.68, 0.96, 0.43, 0.03, 1, 0.99, 0.93, 0.93, 0.4, 1,
+      0.97, 0.95, 0.76, 0.99, 0.8, 0.8, 0.89, 0.34, 0, 1, 0.97, 0.82, 0.53, 0.32, 0.92, 1, 0.44, 0.08, 0.98,
+      0.84, 1, 0.97, 0.98, 0.85, 0.49, 0.98, 1, 0.95, 0.99, 0.92, 0.9, 0.48, 0.03, 0.85, 0.56, 0.88, 0.69,
+      0.74, 1, 0.49, 0.11, 1, 0.97, 0.96, 0.95, 0.99, 0.9, 0.88, 0.9, 0.84, 0.85, 0.96, 0.92, 0.56, 0.63, 0.33,
+      1, 0.96, 0.87, 0.96, 0.9, 0.93, 0.93, 0.66, 0.08, 1, 0.88, 0.99, 0.9, 0.86, 0.95, 0.01, 1, 0.75, 0.78,
+      0.8, 0.92, 0.74, 0.42, 0.04, 1, 0.95, 0.85, 0.95, 0.92, 0.55, 0.87, 0.53, 0.94, 0.82, 0.27, 1, 0.96,
+      0.96, 0.92, 0.91, 0.95, 0.82, 0.2, 1, 0.98, 0.97, 0.92, 0.87, 0.61, 0.89, 1, 0.81, 0.99, 0.98, 0.73,
+      0.42, 1, 0.73, 0.58, 0.76, 1, 0.55, 0.57, 0.55, 0.26, 0.16, 1, 0.98, 0.86, 0.83, 0.72, 0.84
+    ]
+  }
+}

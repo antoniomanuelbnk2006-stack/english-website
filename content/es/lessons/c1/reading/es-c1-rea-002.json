@@ -182,7 +182,7 @@
             { "t": "veces", "l": "vez", "p": "NOUN", "w": true },
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
-            { "t": "abandono", "l": "abandono", "p": "NOUN", "w": true, "sp": true },
+            { "t": "abandono", "l": "abandonar", "p": "VERB", "w": true, "sp": true },
             { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
             { "t": "produce", "l": "producir", "p": "VERB", "w": true, "sp": true },
             { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
@@ -1264,7 +1264,7 @@
   },
   "word_count": 731,
   "lemmas": [
-    "a", "abandono", "abrir", "abuelo", "abundar", "acumular", "además", "administración", "algo", "algún",
+    "a", "abandonar", "abrir", "abuelo", "abundar", "acumular", "además", "administración", "algo", "algún",
     "aliado", "ambiguo", "anciano", "animal", "antes", "antiguo", "apenas", "aplicación", "apoyar", "archivo",
     "asociar", "atractivo", "atraso", "bastar", "biodiversidad", "cada", "calcular", "calle", "cambiar",
     "campaña", "canción", "cantar", "casa", "casi", "caso", "catalán", "causar", "cerca", "cercano",
@@ -1300,10 +1300,10 @@
   ],
   "difficulty": 1465,
   "qa": {
-    "coverage_by_level": { "A1": 0.5795, "A2": 0.61, "B1": 0.6971, "B2": 0.7732, "C1": 0.9986, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5795, "A2": 0.6639, "B1": 0.8091, "B2": 0.8437, "C1": 0.9986, "C2": 1 },
     "off_level_lemmas": ["tampoco"],
     "avg_sentence_words": 20.3,
     "flesch_reading_ease": 61.1,
-    "checked_at": "2026-10-18T20:45:49.048Z"
+    "checked_at": "2026-10-18T22:29:03.857Z"
   }
 }

@@ -1,0 +1,52 @@
+{
+  "id": "es-a1-wri-006",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "task_type": "message",
+  "title": "Una invitación al parque",
+  "topic": "daily-life",
+  "context_es": {
+    "en": "You want to invite a friend to the park on Saturday. You write a short message.",
+    "fr": "Tu veux inviter un ami au parc samedi. Tu écris un court message.",
+    "zh": "你想邀请朋友周六去公园。你写一条简短的消息。",
+    "ja": "友だちを土曜日に公園へ誘いたいです。短いメッセージを書きます。"
+  },
+  "prompt_en": "Quieres invitar a un amigo al parque el sábado. Escribe un mensaje corto.",
+  "points": [
+    "qué día vais al parque",
+    "a qué hora",
+    "dónde quedáis"
+  ],
+  "words_min": 25,
+  "words_max": 50,
+  "time_min": 8,
+  "useful_language": [
+    "¿Quieres venir al parque?",
+    "El sábado",
+    "A las … ",
+    "En la puerta",
+    "Hasta luego"
+  ],
+  "tips_es": [
+    {
+      "en": "Say the time with *a las* + number: *a las cuatro y media*.",
+      "fr": "Dites l’heure avec *a las* + nombre : *a las cuatro y media*.",
+      "zh": "用 *a las* + 数字说时间：*a las cuatro y media*。",
+      "ja": "時刻は *a las* + 数字で：*a las cuatro y media*。"
+    },
+    {
+      "en": "Ask with *¿Quieres…?* and finish with a greeting such as *Hasta luego*.",
+      "fr": "Demandez avec *¿Quieres… ?* et terminez par une formule comme *Hasta luego*.",
+      "zh": "用 *¿Quieres…?* 提问，并以 *Hasta luego* 之类的问候语结尾。",
+      "ja": "*¿Quieres…?* でたずね、*Hasta luego* のようなあいさつで終えます。"
+    }
+  ],
+  "model_answer": "Hola, Javier:\n\n¿Quieres venir al parque el sábado? Voy con mi hermana. Quedamos a las cuatro y media en la puerta del parque.\n\nHasta luego,\nLaura",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

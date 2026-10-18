@@ -1,0 +1,756 @@
+{
+  "id": "es-b1-rea-005",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u07",
+  "series": "es-b1-u07-festival",
+  "skill": "reading",
+  "genre": "story",
+  "title": "Tres días de festival",
+  "summary_es": {
+    "en": "A woman remembers the music festival in her city and the surprises it gave her.",
+    "fr": "Une femme se souvient du festival de musique de sa ville et des surprises qu’il lui a réservées.",
+    "zh": "一位女士回忆她所在城市的音乐节，以及它带来的惊喜。",
+    "ja": "女性が、町の音楽祭と、そこで経験した思いがけないことを思い出します。"
+  },
+  "topic": "culture",
+  "tags": ["música", "festival", "recuerdos"],
+  "can_do": ["R-B1-01"],
+  "grammar_focus": ["es.b1.imperfecto-vs-indefinido"],
+  "vocab_focus": ["escenario", "cantante", "aplaudir", "vergüenza"],
+  "est_minutes": 12,
+  "prediction_prompt": "¿Has ido a un festival o a un concierto? ¿Cómo fue?",
+  "pre_teach": ["escenario", "vergüenza"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "El verano pasado se celebró un festival de música en mi ciudad.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "verano", "l": "verano", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "celebró", "l": "celebrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "festival", "l": "festival", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "música", "l": "música", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Durante tres días, la plaza principal estuvo llena de gente de todas las edades.",
+          "tokens": [
+            { "t": "Durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true },
+            { "t": "días", "l": "día", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "plaza", "l": "plaza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "principal", "l": "principal", "p": "ADJ", "w": true, "sp": true },
+            { "t": "estuvo", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "llena", "l": "llenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "todas", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "edades", "l": "edad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Yo no pensaba ir, porque no me gustan las multitudes, pero mi hermana me convenció.",
+          "tokens": [
+            { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "pensaba", "l": "pensar", "p": "VERB", "w": true, "sp": true },
+            { "t": "ir", "l": "ir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "gustan", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "multitudes", "l": "multitud", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "hermana", "l": "hermana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "convenció", "l": "convencer", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "Me dijo que no podía perderme algo así.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "dijo", "l": "decir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "podía", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "perderme", "l": "perder", "p": "VERB", "w": true, "sp": true },
+            { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "así", "l": "así", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s5",
+          "text": "Era la primera vez que iba a un festival tan grande.",
+          "tokens": [
+            { "t": "Era", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "iba", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "festival", "l": "festival", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true },
+            { "t": "grande", "l": "grande", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "El primer día llegamos tarde y no encontramos sitio cerca del escenario.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "llegamos", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "encontramos", "l": "encontrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "sitio", "l": "sitio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "escenario", "l": "escenario", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Un grupo de jóvenes cantaba canciones antiguas y todo el mundo las repetía a coro.",
+          "tokens": [
+            { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "grupo", "l": "grupo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "jóvenes", "l": "joven", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cantaba", "l": "cantar", "p": "VERB", "w": true, "sp": true },
+            { "t": "canciones", "l": "canción", "p": "NOUN", "w": true, "sp": true },
+            { "t": "antiguas", "l": "antiguo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mundo", "l": "mundo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "repetía", "l": "repetir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "coro", "l": "coro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Aunque no conocía la letra, me puse a seguir la música con las manos.",
+          "tokens": [
+            { "t": "Aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "conocía", "l": "conocer", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "letra", "l": "letra", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "puse", "l": "poner", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "seguir", "l": "seguir", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "música", "l": "música", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "manos", "l": "mano", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Poco a poco, empecé a disfrutar.",
+          "tokens": [
+            { "t": "Poco", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "poco", "l": "poco", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "empecé", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "disfrutar", "l": "disfrutar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "El segundo día actuó una cantante muy famosa.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "segundo", "l": "segundo", "p": "NUM", "w": false, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "actuó", "l": "actuar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cantante", "l": "cantante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "famosa", "l": "famoso", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Había tanta gente que casi no se podía caminar.",
+          "tokens": [
+            { "t": "Había", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "tanta", "l": "tanto", "p": "ADV", "w": true, "sp": true },
+            { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "podía", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "caminar", "l": "caminar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Mientras ella cantaba, empezó a llover, pero nadie se fue.",
+          "tokens": [
+            { "t": "Mientras", "l": "mientras", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "ella", "l": "ella", "p": "PRON", "w": true, "sp": true },
+            { "t": "cantaba", "l": "cantar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "empezó", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "llover", "l": "llover", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "fue", "l": "ser", "p": "AUX", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Todos seguimos bailando bajo la lluvia.",
+          "tokens": [
+            { "t": "Todos", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "seguimos", "l": "seguir", "p": "VERB", "w": true, "sp": true },
+            { "t": "bailando", "l": "bailar", "p": "VERB", "w": true, "sp": true },
+            { "t": "bajo", "l": "bajo", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "lluvia", "l": "lluvia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s5",
+          "text": "Mi hermana hacía fotos con el móvil y yo me reía sin parar.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "hermana", "l": "hermana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "hacía", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "fotos", "l": "foto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "móvil", "l": "móvil", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "reía", "l": "reír", "p": "VERB", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "parar", "l": "parar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s6",
+          "text": "Yo estaba mojada de la cabeza a los pies, pero nunca me había sentido tan feliz.",
+          "tokens": [
+            { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "estaba", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "mojada", "l": "mojado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cabeza", "l": "cabeza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pies", "l": "pie", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "sentido", "l": "sentir", "p": "VERB", "w": true, "sp": true },
+            { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true },
+            { "t": "feliz", "l": "feliz", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Al día siguiente, la ciudad parecía otra.",
+          "tokens": [
+            { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "siguiente", "l": "siguiente", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "parecía", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "otra", "l": "otro", "p": "DET", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Las calles estaban limpias y los bares seguían abiertos hasta muy tarde.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "calles", "l": "calle", "p": "NOUN", "w": true, "sp": true },
+            { "t": "estaban", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "limpias", "l": "limpiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "bares", "l": "bar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "seguían", "l": "seguir", "p": "VERB", "w": true, "sp": true },
+            { "t": "abiertos", "l": "abrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Conocí a muchos turistas que habían venido solo por el festival, y charlé con ellos en inglés.",
+          "tokens": [
+            { "t": "Conocí", "l": "conocer", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "turistas", "l": "turista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "habían", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "venido", "l": "venir", "p": "VERB", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "festival", "l": "festival", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "charlé", "l": "charlar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "ellos", "l": "ellos", "p": "PRON", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "inglés", "l": "inglés", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Uno de ellos me enseñó una canción de su país.",
+          "tokens": [
+            { "t": "Uno", "l": "uno", "p": "NUM", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "ellos", "l": "ellos", "p": "PRON", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "enseñó", "l": "enseñar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "canción", "l": "canción", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "país", "l": "país", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "El último día, un músico me invitó a subir al escenario.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "último", "l": "último", "p": "ADJ", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "músico", "l": "músico", "p": "NOUN", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "invitó", "l": "invitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "subir", "l": "subir", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "escenario", "l": "escenario", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Me dio mucha vergüenza, pero acepté.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "dio", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucha", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "vergüenza", "l": "vergüenza", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "acepté", "l": "aceptar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Toqué la pandereta durante una canción y la gente aplaudió.",
+          "tokens": [
+            { "t": "Toqué", "l": "tocar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pandereta", "l": "pandereta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "canción", "l": "canción", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "aplaudió", "l": "aplaudir", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Fue una de las experiencias más divertidas de mi vida.",
+          "tokens": [
+            { "t": "Fue", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "experiencias", "l": "experiencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "divertidas", "l": "divertido", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "vida", "l": "vida", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Cuando volví a casa, estaba cansada, pero feliz.",
+          "tokens": [
+            { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "volví", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "estaba", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "cansada", "l": "cansado", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "feliz", "l": "feliz", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Había descubierto que las multitudes no son tan malas si compartes la música con otras personas.",
+          "tokens": [
+            { "t": "Había", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "descubierto", "l": "descubrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "multitudes", "l": "multitud", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true },
+            { "t": "malas", "l": "malo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "compartes", "l": "compartir", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "música", "l": "música", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "otras", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "El año que viene pienso volver, y esta vez voy a llegar temprano.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "viene", "l": "venir", "p": "VERB", "w": true, "sp": true },
+            { "t": "pienso", "l": "pensar", "p": "VERB", "w": true, "sp": true },
+            { "t": "volver", "l": "volver", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "llegar", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "temprano", "l": "temprano", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "Mi hermana ya me ha dicho que reservará las entradas con tiempo.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "hermana", "l": "hermana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "dicho", "l": "decir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "reservará", "l": "reservar", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "entradas", "l": "entrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s5",
+          "text": "Todavía escucho esas canciones cuando necesito recordar aquellos días.",
+          "tokens": [
+            { "t": "Todavía", "l": "todavía", "p": "ADV", "w": true, "sp": true },
+            { "t": "escucho", "l": "escuchar", "p": "VERB", "w": true, "sp": true },
+            { "t": "esas", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "canciones", "l": "canción", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "necesito", "l": "necesitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "recordar", "l": "recordar", "p": "VERB", "w": true, "sp": true },
+            { "t": "aquellos", "l": "aquel", "p": "DET", "w": true, "sp": true },
+            { "t": "días", "l": "día", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Narrating: pluperfect and imperfecto",
+        "fr": "Raconter : plus-que-parfait et imperfecto",
+        "zh": "叙述：过去完成时与 imperfecto",
+        "ja": "語り：過去完了と線過去"
+      },
+      "explanation_es": {
+        "en": "The *pluscuamperfecto* (*había descubierto*, *habían venido*) tells what had happened before another moment in the past. The *imperfecto* describes the scene (*había tanta gente*, *la ciudad parecía otra*)."
+      },
+      "refs": ["p6s2", "p3s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "escenario",
+      "surface": "escenario",
+      "pos": "noun",
+      "def_en": "lugar elevado donde actúan los artistas",
+      "def_es": { "en": "stage", "fr": "scène", "zh": "舞台", "ja": "ステージ" },
+      "ref": "p2s1"
+    },
+    {
+      "lemma": "vergüenza",
+      "surface": "vergüenza",
+      "pos": "noun",
+      "def_en": "sentimiento de timidez o de haber hecho algo mal",
+      "def_es": { "en": "embarrassment, shame", "fr": "honte, gêne", "zh": "羞愧", "ja": "恥ずかしさ" },
+      "ref": "p5s2"
+    },
+    {
+      "lemma": "pandereta",
+      "surface": "pandereta",
+      "pos": "noun",
+      "def_en": "instrumento musical redondo con sonajas",
+      "def_es": { "en": "tambourine", "fr": "tambourin", "zh": "手鼓", "ja": "タンバリン" },
+      "ref": "p5s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿De qué trata el texto?",
+      "evidence": ["p5s4"],
+      "rationale_es": { "en": "She tells how a festival she did not want to attend turned out to be a great experience." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De los problemas de organizar un concierto grande" },
+        { "id": "b", "text": "De un festival que acabó gustándole mucho" },
+        { "id": "c", "text": "De la historia de un grupo de música famoso" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Por qué fue la autora al festival?",
+      "evidence": ["p1s3"],
+      "rationale_es": { "en": "Her sister convinced her." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque era una fan de la cantante" },
+        { "id": "b", "text": "Porque tenía entradas gratis" },
+        { "id": "c", "text": "Porque su hermana la convenció" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Cuando empezó a llover, mucha gente se marchó.",
+      "evidence": ["p3s3"],
+      "rationale_es": { "en": "It rained but nobody left." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué hizo en el escenario el último día?",
+      "evidence": ["p5s3"],
+      "rationale_es": { "en": "She played the tambourine." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tocó un instrumento" },
+        { "id": "b", "text": "Cantó una canción con el grupo" },
+        { "id": "c", "text": "Bailó con los músicos del grupo" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Qué cambió en la autora después del festival?",
+      "evidence": ["p6s2"],
+      "rationale_es": { "en": "She discovered crowds are not so bad when you share the music." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Decidió dejar su trabajo para ser música" },
+        { "id": "b", "text": "Ya no le molesta tanto la gente" },
+        { "id": "c", "text": "Quiere evitar los festivales el próximo año" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "read",
+      "prompt": "¿Qué actitud tiene la autora hacia el futuro?",
+      "evidence": ["p6s3"],
+      "rationale_es": { "en": "She plans to return next year." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Teme que el festival desaparezca" },
+        { "id": "b", "text": "No está segura de querer volver" },
+        { "id": "c", "text": "Piensa repetir la experiencia" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p5s1"],
+      "rationale_es": { "en": "*Subir al escenario*." },
+      "type": "gap_fill",
+      "text": "El último día, un músico la invitó a subir al {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["escenario"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 310,
+  "lemmas": [
+    "a", "abrir", "aceptar", "actuar", "algo", "antiguo", "aplaudir", "aquel", "así", "aunque", "año",
+    "bailar", "bajo", "bar", "cabeza", "calle", "caminar", "canción", "cansado", "cantante", "cantar", "casa",
+    "casi", "celebrar", "cerca", "charlar", "ciudad", "compartir", "con", "conocer", "convencer", "coro",
+    "cuando", "dar", "de", "decir", "descubrir", "disfrutar", "divertido", "durante", "día", "edad", "el",
+    "ella", "ellos", "empezar", "en", "encontrar", "enseñar", "entrar", "escenario", "escuchar", "ese",
+    "estar", "este", "experiencia", "famoso", "feliz", "festival", "foto", "gente", "grande", "grupo",
+    "gustar", "haber", "hacer", "hasta", "hermana", "inglés", "invitar", "ir", "joven", "letra", "limpiar",
+    "llegar", "llenar", "llover", "lluvia", "malo", "mano", "mi", "mientras", "mojado", "mucho", "multitud",
+    "mundo", "muy", "más", "móvil", "música", "músico", "necesitar", "no", "nunca", "otro", "pandereta",
+    "parar", "parecer", "pasado", "país", "pensar", "perder", "pero", "persona", "pie", "plaza", "poco",
+    "poder", "poner", "por", "porque", "principal", "que", "recordar", "repetir", "reservar", "reír", "se",
+    "seguir", "sentir", "ser", "si", "siguiente", "sin", "sitio", "solo", "su", "subir", "tan", "tanto",
+    "tarde", "temprano", "tiempo", "tocar", "todavía", "todo", "turista", "un", "venir", "verano", "vergüenza",
+    "vez", "vida", "volver", "y", "ya", "yo", "último"
+  ],
+  "difficulty": 1058,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6426, "A2": 0.8295, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 11.1,
+    "flesch_reading_ease": 80.2,
+    "checked_at": "2026-10-18T21:50:39.313Z"
+  }
+}

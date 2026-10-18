@@ -1,0 +1,53 @@
+{
+  "id": "es-b2-wri-006",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "task_type": "essay",
+  "title": "¿Debe prohibirse la publicidad a los niños?",
+  "topic": "media",
+  "context_es": {
+    "en": "In a class debate, you must write an argumentative essay on whether advertising aimed at children should be banned.",
+    "fr": "Dans un débat de classe, vous devez rédiger un essai argumentatif sur l’interdiction éventuelle de la publicité destinée aux enfants.",
+    "zh": "在课堂辩论中，你要写一篇议论文，讨论是否应该禁止面向儿童的广告。",
+    "ja": "授業のディベートで、子ども向け広告を禁止すべきかどうかについて論述エッセイを書きます。"
+  },
+  "prompt_en": "En un debate de clase tienes que escribir un ensayo argumentativo: ¿debe prohibirse la publicidad dirigida a los niños? Presenta ventajas y desventajas y defiende tu postura.",
+  "points": [
+    "presenta el tema y tu opinión",
+    "da dos argumentos y reconoce un argumento contrario",
+    "propón una solución o una conclusión"
+  ],
+  "words_min": 160,
+  "words_max": 250,
+  "time_min": 40,
+  "useful_language": [
+    "En mi opinión, …",
+    "Por un lado … por otro lado …",
+    "Si bien es cierto que …",
+    "Un argumento a favor es …",
+    "Por consiguiente, …",
+    "En conclusión, …"
+  ],
+  "tips_es": [
+    {
+      "en": "Show nuance: *si bien es cierto que… no hay que olvidar que…* introduces a concession before your own position.",
+      "fr": "Montrez la nuance : *si bien es cierto que… no hay que olvidar que…* introduit une concession avant votre position.",
+      "zh": "展现细致：*si bien es cierto que… no hay que olvidar que…* 在表明自己立场前先作让步。",
+      "ja": "ニュアンスを示します：*si bien es cierto que… no hay que olvidar que…* で、自分の立場の前に譲歩を述べます。"
+    },
+    {
+      "en": "Link ideas with connectors: *además, sin embargo, por consiguiente, en definitiva*.",
+      "fr": "Reliez les idées avec des connecteurs : *además, sin embargo, por consiguiente, en definitiva*.",
+      "zh": "用连接词串联观点：*además, sin embargo, por consiguiente, en definitiva*。",
+      "ja": "接続表現で考えをつなぎます：*además, sin embargo, por consiguiente, en definitiva*。"
+    }
+  ],
+  "model_answer": "En mi opinión, la publicidad dirigida a los niños debería limitarse de forma estricta, aunque no creo que sea necesario prohibirla por completo.\n\nPor un lado, los niños no tienen aún la capacidad de distinguir entre información y persuasión. Un anuncio de dibujos animados que presenta un cereal como si fuera mágico puede convencerles fácilmente, y son ellos quienes después presionan a sus padres para comprarlo. Además, gran parte de los productos anunciados, como las bebidas azucaradas o la comida rápida, afectan negativamente a su salud.\n\nPor otro lado, si bien es cierto que la publicidad puede resultar perjudicial, también financia muchos programas infantiles y permite que existan canales gratuitos de calidad. Prohibirla sin ofrecer otra manera de pagar esos contenidos podría empobrecer la oferta para las familias que no pueden permitirse servicios de pago.\n\nPor consiguiente, la solución más razonable es regular el contenido y los horarios: prohibir los anuncios de productos poco saludables en franjas infantiles y exigir que los mensajes sean claros y no engañosos. Al mismo tiempo, los colegios deberían enseñar a los alumnos a analizar los anuncios con espíritu crítico.\n\nEn conclusión, proteger a los niños no significa esconder la publicidad, sino darles las herramientas para entenderla.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

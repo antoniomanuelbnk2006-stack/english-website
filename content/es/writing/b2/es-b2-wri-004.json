@@ -1,0 +1,53 @@
+{
+  "id": "es-b2-wri-004",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "task_type": "email",
+  "title": "Una queja formal",
+  "topic": "daily-life",
+  "context_es": {
+    "en": "A company delivered a damaged product and ignored your calls. You write a formal complaint by email.",
+    "fr": "Une entreprise vous a livré un produit abîmé et n’a pas répondu à vos appels. Vous écrivez une réclamation formelle par e-mail.",
+    "zh": "一家公司送来了损坏的商品，还不接你的电话。你写一封正式的投诉邮件。",
+    "ja": "会社が破損した商品を届け、電話にも応じませんでした。正式な苦情のメールを書きます。"
+  },
+  "prompt_en": "Una empresa te entregó un producto en mal estado y no respondió a tus llamadas. Escribe un correo formal de reclamación.",
+  "points": [
+    "qué compraste y qué problema hay",
+    "qué pasó cuando intentaste resolverlo",
+    "qué solución exiges y en qué plazo"
+  ],
+  "words_min": 140,
+  "words_max": 250,
+  "time_min": 35,
+  "useful_language": [
+    "Me dirijo a ustedes para …",
+    "Hace … compré …",
+    "A pesar de que …",
+    "Les ruego que …",
+    "En caso contrario, …",
+    "Atentamente,"
+  ],
+  "tips_es": [
+    {
+      "en": "Keep a formal register (*ustedes, les ruego que…*) and state facts with dates and amounts.",
+      "fr": "Gardez un registre formel (*ustedes, les ruego que…*) et exposez les faits avec des dates et des montants.",
+      "zh": "保持正式语体（*ustedes, les ruego que…*），并用日期和金额陈述事实。",
+      "ja": "丁寧な文体（*ustedes, les ruego que…*）を保ち、日付と金額で事実を述べます。"
+    },
+    {
+      "en": "Set a deadline and a consequence: *Les ruego que me devuelvan el dinero en un plazo de diez días; en caso contrario, presentaré una reclamación oficial*.",
+      "fr": "Fixez un délai et une conséquence : *Les ruego que me devuelvan el dinero en un plazo de diez días ; en caso contrario, presentaré una reclamación oficial*.",
+      "zh": "设定期限和后果：*Les ruego que me devuelvan el dinero en un plazo de diez días; en caso contrario, presentaré una reclamación oficial*。",
+      "ja": "期限と結果を示します：*Les ruego que me devuelvan el dinero en un plazo de diez días; en caso contrario, presentaré una reclamación oficial*。"
+    }
+  ],
+  "model_answer": "Asunto: reclamación por un pedido en mal estado\n\nEstimados señores:\n\nMe dirijo a ustedes para presentar una reclamación sobre el pedido número 48215, que compré en su tienda en línea el pasado 3 de marzo. Se trataba de una lavadora que, según la descripción de su página web, debía llegar en perfecto estado en un plazo de cinco días.\n\nSin embargo, el paquete llegó con diez días de retraso, y la máquina tenía un golpe visible en la puerta y no funcionaba. Hice varias fotografías, que adjunto a este correo. Además, llamé en tres ocasiones a su servicio de atención al cliente y, a pesar de que me prometieron que alguien se pondría en contacto conmigo, nadie lo hizo.\n\nPor todo ello, les ruego que me devuelvan el importe completo, que asciende a 389 euros, o que me envíen una máquina nueva en un plazo máximo de diez días. En caso contrario, me veré obligado a presentar una reclamación oficial ante la oficina de consumo.\n\nQuedo a la espera de su respuesta.\n\nAtentamente,\nDaniel Ortega",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

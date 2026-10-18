@@ -1,0 +1,505 @@
+{
+  "id": "es-a2-rea-005",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u06",
+  "series": "es-a2-u06-barrio",
+  "skill": "reading",
+  "genre": "blog",
+  "title": "Mi barrio nuevo",
+  "summary_es": {
+    "en": "A woman compares her new neighbourhood with the old one and talks about her daily life.",
+    "fr": "Une femme compare son nouveau quartier avec l’ancien et parle de sa vie quotidienne.",
+    "zh": "一位女士比较她的新街区和旧街区，谈起日常生活。",
+    "ja": "女性が新しい地区と前の地区を比べ、毎日の暮らしを話します。"
+  },
+  "topic": "city-housing",
+  "tags": ["barrio", "comparar", "ciudad"],
+  "can_do": ["R-A2-01"],
+  "grammar_focus": ["es.a2.comparativos"],
+  "vocab_focus": ["piso", "barrio", "metro", "tranquilo"],
+  "est_minutes": 9,
+  "prediction_prompt": "¿Cómo es tu barrio? ¿Qué hay cerca de tu casa?",
+  "pre_teach": ["luminoso", "balcón"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Hace dos meses vivo en un barrio nuevo.",
+          "tokens": [
+            { "t": "Hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "meses", "l": "mes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "vivo", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Mi piso es más pequeño que mi casa antigua, pero es más luminoso.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "piso", "l": "piso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "pequeño", "l": "pequeño", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "antigua", "l": "antiguo", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "luminoso", "l": "luminoso", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Tiene una cocina moderna y un balcón con flores.",
+          "tokens": [
+            { "t": "Tiene", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cocina", "l": "cocina", "p": "NOUN", "w": true, "sp": true },
+            { "t": "moderna", "l": "moderno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "balcón", "l": "balcón", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "flores", "l": "flor", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "Desde el balcón veo un parque grande.",
+          "tokens": [
+            { "t": "Desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "balcón", "l": "balcón", "p": "NOUN", "w": true, "sp": true },
+            { "t": "veo", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "sp": true },
+            { "t": "grande", "l": "grande", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "En mi calle hay una panadería, una farmacia y un supermercado.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "calle", "l": "calle", "p": "NOUN", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "panadería", "l": "panadería", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "farmacia", "l": "farmacia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "supermercado", "l": "supermercado", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "La panadería está al lado de mi edificio.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "panadería", "l": "panadería", "p": "NOUN", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "lado", "l": "lado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "edificio", "l": "edificio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Cada mañana compro pan allí.",
+          "tokens": [
+            { "t": "Cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "compro", "l": "comprar", "p": "VERB", "w": true, "sp": true },
+            { "t": "pan", "l": "pan", "p": "NOUN", "w": true, "sp": true },
+            { "t": "allí", "l": "allí", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "El señor de la tienda es muy amable.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "señor", "l": "señor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tienda", "l": "tienda", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "amable", "l": "amable", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "El metro está a diez minutos andando.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "metro", "l": "metro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true },
+            { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "andando", "l": "andar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Por eso es fácil llegar al trabajo.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "fácil", "l": "fácil", "p": "ADJ", "w": true, "sp": true },
+            { "t": "llegar", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Mi oficina está en el centro, lejos de casa.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "centro", "l": "centro", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "lejos", "l": "lejos", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Salgo a las ocho y llego a las nueve menos cuarto.",
+          "tokens": [
+            { "t": "Salgo", "l": "salir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "llego", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "nueve", "l": "nueve", "p": "NUM", "w": false, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "cuarto", "l": "cuarto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Mi barrio es más tranquilo que el centro.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "tranquilo", "l": "tranquilo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "centro", "l": "centro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Los fines de semana paseo por el parque.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fines", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "paseo", "l": "pasear", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "parque", "l": "parque", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Allí leo un libro y descanso.",
+          "tokens": [
+            { "t": "Allí", "l": "allí", "p": "ADV", "w": true, "sp": true },
+            { "t": "leo", "l": "leer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "libro", "l": "libro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "descanso", "l": "descansar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Hay menos ruido y menos coches.",
+          "tokens": [
+            { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "ruido", "l": "ruido", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "coches", "l": "coche", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s5",
+          "text": "Pero por las noches no hay muchos bares.",
+          "tokens": [
+            { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "noches", "l": "noche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "bares", "l": "bar", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s6",
+          "text": "A veces me siento un poco sola.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "siento", "l": "sentir", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "sola", "l": "soler", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s7",
+          "text": "Quiero conocer a mis vecinos y hacer amigos.",
+          "tokens": [
+            { "t": "Quiero", "l": "querer", "p": "VERB", "w": true, "sp": true },
+            { "t": "conocer", "l": "conocer", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Comparing: más … que, menos … que",
+        "fr": "Comparer : más … que, menos … que",
+        "zh": "比较：más … que, menos … que",
+        "ja": "比べる：más … que, menos … que"
+      },
+      "explanation_es": {
+        "en": "To compare use *más* or *menos* + adjective + *que*: *más pequeño que*, *más tranquilo que*. For quantity use *más/menos* + noun: *menos ruido*."
+      },
+      "refs": ["p1s2", "p4s1"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "luminoso",
+      "surface": "luminoso",
+      "pos": "adjective",
+      "def_en": "con mucha luz",
+      "def_es": { "en": "bright, full of light", "fr": "lumineux", "zh": "明亮的", "ja": "明るい" },
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "balcón",
+      "surface": "balcón",
+      "pos": "noun",
+      "def_en": "espacio abierto fuera de una ventana",
+      "def_es": { "en": "balcony", "fr": "balcon", "zh": "阳台", "ja": "バルコニー" },
+      "ref": "p1s3"
+    },
+    {
+      "lemma": "vecino",
+      "surface": "vecinos",
+      "pos": "noun",
+      "def_en": "persona que vive cerca de ti",
+      "def_es": { "en": "neighbour", "fr": "voisin", "zh": "邻居", "ja": "隣人" },
+      "ref": "p4s7"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Qué cuenta la autora?",
+      "evidence": ["p1s1"],
+      "rationale_es": { "en": "She describes her new neighbourhood and her daily life there." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cómo encontró trabajo en su ciudad" },
+        { "id": "b", "text": "Cómo es la vida en su nuevo barrio" },
+        { "id": "c", "text": "Cómo es su viaje al extranjero" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué ve desde el balcón?",
+      "evidence": ["p1s4"],
+      "rationale_es": { "en": "She sees a big park." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una calle con bares" },
+        { "id": "b", "text": "El mar y la playa" },
+        { "id": "c", "text": "Un parque grande" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Su piso nuevo es más grande que su casa antigua.",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "The new flat is smaller than the old house." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Dónde está la panadería?",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "The bakery is next to her building." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Junto a su edificio" },
+        { "id": "b", "text": "En el centro de la ciudad" },
+        { "id": "c", "text": "Cerca de su oficina" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Cómo se siente a veces en el barrio?",
+      "evidence": ["p4s6"],
+      "rationale_es": { "en": "She sometimes feels a bit lonely." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Muy cansada" },
+        { "id": "b", "text": "Sin compañía" },
+        { "id": "c", "text": "Muy contenta" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "La autora llega al trabajo a las nueve menos cuarto.",
+      "evidence": ["p3s4"],
+      "rationale_es": { "en": "She arrives at quarter to nine." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p4s4"],
+      "rationale_es": { "en": "*Menos ruido y menos coches*." },
+      "type": "gap_fill",
+      "text": "En su barrio hay menos {{1}} y menos coches.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["ruido"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 154,
+  "lemmas": [
+    "a", "allí", "amable", "amigo", "andar", "antiguo", "balcón", "bar", "barrio", "cada", "calle", "casa",
+    "centro", "coche", "cocina", "comprar", "con", "conocer", "cuarto", "de", "descansar", "desde", "edificio",
+    "el", "en", "estar", "esto", "farmacia", "fin", "flor", "fácil", "grande", "haber", "hacer", "lado",
+    "leer", "lejos", "libro", "llegar", "luminoso", "mañana", "menos", "mes", "metro", "mi", "minuto",
+    "moderno", "mucho", "muy", "más", "no", "noche", "nuevo", "oficina", "pan", "panadería", "parque",
+    "pasear", "pequeño", "pero", "piso", "poco", "por", "que", "querer", "ruido", "salir", "semana", "sentir",
+    "ser", "señor", "soler", "supermercado", "tener", "tienda", "trabajar", "tranquilo", "un", "vecino", "ver",
+    "vez", "vivir", "y", "yo"
+  ],
+  "difficulty": 862,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 8.1,
+    "flesch_reading_ease": 92.6,
+    "checked_at": "2026-10-18T21:44:18.647Z"
+  }
+}

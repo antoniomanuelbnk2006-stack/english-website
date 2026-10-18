@@ -1,0 +1,329 @@
+{
+  "id": "es-a1-rea-008",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u04",
+  "series": "es-a1-u04-mercado",
+  "skill": "reading",
+  "genre": "blog",
+  "title": "Compras en la tienda",
+  "summary_es": {
+    "en": "A girl goes to a small shop with her mother and they buy food for lunch.",
+    "fr": "Une fille va dans un petit magasin avec sa mère et elles achètent à manger pour le déjeuner.",
+    "zh": "一个女孩和妈妈去一家小店，买午饭的食物。",
+    "ja": "女の子が母親と小さな店へ行き、昼ごはんの食べ物を買います。"
+  },
+  "topic": "food",
+  "tags": ["tienda", "comprar", "precios"],
+  "can_do": ["R-A1-01"],
+  "grammar_focus": ["es.a1.numeros-y-hora"],
+  "vocab_focus": ["tienda", "manzana", "queso", "euro"],
+  "est_minutes": 4,
+  "prediction_prompt": "¿Qué compras en una tienda de comida?",
+  "pre_teach": ["ensalada", "luego"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Hoy voy a la tienda con mi madre.",
+          "tokens": [
+            { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tienda", "l": "tienda", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "madre", "l": "madre", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Es una tienda pequeña.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "tienda", "l": "tienda", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Necesitamos manzanas y pan.",
+          "tokens": [
+            { "t": "Necesitamos", "l": "necesitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "manzanas", "l": "manzana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "pan", "l": "pan", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "También necesitamos leche.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "necesitamos", "l": "necesitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "leche", "l": "leche", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Las manzanas cuestan dos euros.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "manzanas", "l": "manzana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cuestan", "l": "costar", "p": "VERB", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "euros", "l": "euro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "La leche cuesta un euro.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "leche", "l": "leche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cuesta", "l": "costar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "euro", "l": "euro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Mi madre compra queso.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "madre", "l": "madre", "p": "NOUN", "w": true, "sp": true },
+            { "t": "compra", "l": "comprar", "p": "VERB", "w": true, "sp": true },
+            { "t": "queso", "l": "queso", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "El queso es muy bueno.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "queso", "l": "queso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "bueno", "l": "bueno", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Son diez euros en total.",
+          "tokens": [
+            { "t": "Son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true },
+            { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "total", "l": "total", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Luego vamos a casa.",
+          "tokens": [
+            { "t": "Luego", "l": "luego", "p": "ADV", "w": true, "sp": true },
+            { "t": "vamos", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Hacemos una ensalada.",
+          "tokens": [
+            { "t": "Hacemos", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "ensalada", "l": "ensalada", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Mi padre come con nosotros.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "padre", "l": "padre", "p": "NOUN", "w": true, "sp": true },
+            { "t": "come", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "nosotros", "l": "nosotros", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Prices with costar",
+        "fr": "Les prix avec costar",
+        "zh": "用 costar 说价格",
+        "ja": "costar で値段を言う"
+      },
+      "explanation_es": {
+        "en": "To say a price we use *costar*: *La leche cuesta un euro*, *Las manzanas cuestan dos euros*. The verb agrees with the thing: one thing, *cuesta*; many things, *cuestan*."
+      },
+      "refs": ["p2s2", "p2s1"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "ensalada",
+      "surface": "ensalada",
+      "pos": "noun",
+      "def_en": "comida de verduras crudas",
+      "def_es": { "en": "salad", "fr": "salade", "zh": "沙拉", "ja": "サラダ" },
+      "ref": "p3s3"
+    },
+    {
+      "lemma": "luego",
+      "surface": "Luego",
+      "pos": "adverb",
+      "def_en": "después",
+      "def_es": { "en": "then, later", "fr": "ensuite", "zh": "然后", "ja": "そのあと" },
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "en total",
+      "surface": "en total",
+      "pos": "phrase",
+      "def_en": "todo junto",
+      "def_es": { "en": "in total", "fr": "au total", "zh": "一共", "ja": "合計で" },
+      "ref": "p3s1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Adónde va la autora?",
+      "evidence": ["p1s1"],
+      "rationale_es": { "en": "*Hoy voy a la tienda con mi madre*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "A la escuela de su hermano" },
+        { "id": "b", "text": "A la tienda" },
+        { "id": "c", "text": "Al hospital de la ciudad" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuánto cuestan las manzanas?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "*Las manzanas cuestan dos euros*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un euro" },
+        { "id": "b", "text": "Diez euros" },
+        { "id": "c", "text": "Dos euros" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "La leche cuesta dos euros.",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "The milk costs one euro." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué compra la madre?",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "*Mi madre compra queso*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Queso" },
+        { "id": "b", "text": "Pan y leche" },
+        { "id": "c", "text": "Manzanas y pan" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Su padre come con ellas.",
+      "evidence": ["p3s4"],
+      "rationale_es": { "en": "*Mi padre come con nosotros*." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con un número.",
+      "evidence": ["p3s1"],
+      "rationale_es": { "en": "*Son diez euros en total*." },
+      "type": "gap_fill",
+      "text": "Son {{1}} euros en total.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["diez", "10"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 55,
+  "lemmas": [
+    "a", "bueno", "casa", "comer", "comprar", "con", "costar", "el", "en", "ensalada", "euro", "hacer", "hoy",
+    "ir", "leche", "luego", "madre", "manzana", "mi", "muy", "necesitar", "nosotros", "padre", "pan",
+    "pequeño", "queso", "ser", "también", "tienda", "total", "un", "y"
+  ],
+  "difficulty": 660,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 4.6,
+    "flesch_reading_ease": 93.1,
+    "checked_at": "2026-10-18T21:38:33.650Z"
+  }
+}

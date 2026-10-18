@@ -1,0 +1,337 @@
+{
+  "id": "es-a1-lis-008",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u03",
+  "series": "es-a1-u03-clase",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "En clase de español",
+  "summary_es": {
+    "en": "A teacher asks a student to open the book and write a few words.",
+    "fr": "Un professeur demande à un élève d’ouvrir le livre et d’écrire quelques mots.",
+    "zh": "老师请一个学生翻开书，写几个词。",
+    "ja": "先生が生徒に、本を開いて数語を書くように言います。"
+  },
+  "topic": "education",
+  "tags": ["clase", "instrucciones", "escuela"],
+  "can_do": ["L-A1-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["libro", "escribir", "nombre", "profesor"],
+  "est_minutes": 4,
+  "prediction_prompt": "En una clase, ¿qué dice el profesor?",
+  "pre_teach": ["página", "repetir"],
+  "speakers": [
+    { "id": "sara", "name": "Sara", "accent": "es-ES", "gender": "female" },
+    { "id": "diego", "name": "Diego", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "sara",
+      "text": "Buenos días, Diego. Abre el libro, por favor.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.465 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 0.465, "e": 0.79 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Diego", "l": "diego", "p": "PROPN", "w": false, "s": 0.98, "e": 1.48 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Abre", "l": "abrir", "p": "VERB", "w": true, "sp": true, "s": 1.77, "e": 2.066 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 2.066, "e": 2.244 },
+        { "t": "libro", "l": "libro", "p": "NOUN", "w": true, "s": 2.244, "e": 2.6 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 2.75, "e": 3.034 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 3.034, "e": 3.46 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 3.631
+    },
+    {
+      "id": "s2",
+      "speaker": "diego",
+      "text": "Buenos días, profesora. ¿En qué página?",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 4.331, "e": 4.875 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 4.875, "e": 5.264 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "profesora", "l": "profesor", "p": "NOUN", "w": true, "s": 5.264, "e": 6.042 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 6.042, "e": 6.275 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 6.275, "e": 6.586 },
+        { "t": "página", "l": "página", "p": "NOUN", "w": true, "s": 6.587, "e": 7.131 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.331,
+      "end": 7.21
+    },
+    {
+      "id": "s3",
+      "speaker": "sara",
+      "text": "En la página cuatro.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 7.92, "e": 8.138 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.138, "e": 8.356 },
+        { "t": "página", "l": "página", "p": "NOUN", "w": true, "sp": true, "s": 8.355, "e": 8.863 },
+        { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "s": 8.863, "e": 9.371 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.91,
+      "end": 9.414
+    },
+    {
+      "id": "s4",
+      "speaker": "diego",
+      "text": "Aquí está. ¿Leo?",
+      "tokens": [
+        { "t": "Aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 10.114, "e": 10.469 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "s": 10.469, "e": 10.824 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Leo", "l": "leo", "p": "PROPN", "w": false, "s": 11.374, "e": 11.674 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.114,
+      "end": 11.716
+    },
+    {
+      "id": "s5",
+      "speaker": "sara",
+      "text": "Sí, lee aquí.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 12.426, "e": 12.726 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "lee", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 12.726, "e": 13.126 },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "s": 13.126, "e": 13.626 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.416,
+      "end": 13.716
+    },
+    {
+      "id": "s6",
+      "speaker": "diego",
+      "text": "Me llamo Diego y vivo en Madrid.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 14.436, "e": 14.609 },
+        { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true, "s": 14.609, "e": 14.956 },
+        { "t": "Diego", "l": "diego", "p": "PROPN", "w": false, "sp": true, "s": 14.956, "e": 15.303 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 15.303, "e": 15.419 },
+        { "t": "vivo", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 15.419, "e": 15.708 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 15.708, "e": 15.881 },
+        { "t": "Madrid", "l": "madrid", "p": "PROPN", "w": false, "s": 15.881, "e": 16.286 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 14.416,
+      "end": 16.377
+    },
+    {
+      "id": "s7",
+      "speaker": "sara",
+      "text": "Muy bien. Ahora escribe tu nombre.",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 17.087, "e": 17.394 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 17.394, "e": 17.777 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 18.047, "e": 18.43 },
+        { "t": "escribe", "l": "escribir", "p": "VERB", "w": true, "sp": true, "s": 18.43, "e": 18.94 },
+        { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true, "s": 18.94, "e": 19.131 },
+        { "t": "nombre", "l": "nombre", "p": "NOUN", "w": true, "s": 19.131, "e": 19.577 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.077,
+      "end": 19.65
+    },
+    {
+      "id": "s8",
+      "speaker": "diego",
+      "text": "¿Aquí?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Aquí", "l": "aquí", "p": "ADV", "w": true, "s": 20.35, "e": 20.68 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.35,
+      "end": 20.769
+    },
+    {
+      "id": "s9",
+      "speaker": "sara",
+      "text": "Sí, aquí. Muy bien, Diego.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 21.489, "e": 21.785 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "s": 21.785, "e": 22.278 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 22.279, "e": 22.674 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 22.673, "e": 23.166 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Diego", "l": "diego", "p": "PROPN", "w": false, "s": 23.167, "e": 23.759 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.469,
+      "end": 23.851
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "página",
+      "surface": "página",
+      "pos": "noun",
+      "def_en": "cada hoja de un libro",
+      "def_es": { "en": "page", "fr": "page", "zh": "页", "ja": "ページ" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "ahora",
+      "surface": "Ahora",
+      "pos": "adverb",
+      "def_en": "en este momento",
+      "def_es": { "en": "now", "fr": "maintenant", "zh": "现在", "ja": "今" },
+      "ref": "s7"
+    },
+    {
+      "lemma": "abrir",
+      "surface": "Abre",
+      "pos": "verb",
+      "def_en": "quitar lo que cierra un libro, una puerta...",
+      "def_es": { "en": "to open", "fr": "ouvrir", "zh": "打开", "ja": "開ける" },
+      "ref": "s1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Dónde están?",
+      "evidence": ["s1", "s7"],
+      "rationale_es": { "en": "The teacher gives instructions about the book and writing: it is a class." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En un restaurante" },
+        { "id": "b", "text": "En una clase" },
+        { "id": "c", "text": "En un tren" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿En qué página están?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "*En la página cuatro*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En la página diez" },
+        { "id": "b", "text": "En la página dos" },
+        { "id": "c", "text": "En la cuatro" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Diego vive en Madrid.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "He reads *vivo en Madrid*." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué escribe Diego?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "*Escribe tu nombre*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Su nombre" },
+        { "id": "b", "text": "Su casa nueva" },
+        { "id": "c", "text": "Su libro de español" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "*Vivo en Madrid*." },
+      "type": "gap_fill",
+      "text": "Diego dice que vive en {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["Madrid"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Cómo termina la clase de hoy?",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "The teacher says *Muy bien, Diego*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Con una pregunta nueva" },
+        { "id": "b", "text": "Con un “muy bien”" },
+        { "id": "c", "text": "Con una tarea larga" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "abrir", "ahora", "aquí", "bien", "bueno", "día", "el", "en", "escribir", "estar", "favor", "leer",
+    "libro", "llamarse", "muy", "nombre", "por", "profesor", "página", "qué", "tu", "vivir", "y", "yo"
+  ],
+  "difficulty": 682,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 3.1,
+    "flesch_reading_ease": 97.7,
+    "checked_at": "2026-10-18T21:38:41.090Z"
+  },
+  "audio": {
+    "src": "audio/a1/es-a1-lis-008/v1.m4a",
+    "duration_s": 23.851,
+    "wpm": 108,
+    "provider": "piper",
+    "voices": { "sara": "sharvard-f", "diego": "davefx-m" },
+    "loudness_lufs": -16,
+    "peaks": [
+      0.77, 0.86, 1, 0.4, 0.67, 0.83, 0.61, 0.39, 0.01, 0.21, 0.84, 0.77, 0.18, 0.32, 0.16, 0.03, 0, 0.49,
+      0.84, 1, 0.97, 0.56, 0.46, 0.49, 0.56, 0.55, 0.07, 0.2, 0.73, 0.12, 0.45, 0.54, 0.37, 0.39, 0.13, 0.03,
+      0.01, 0, 0, 0, 0, 0, 0, 0.26, 1, 0.85, 0.5, 0.88, 0.93, 0.44, 0.25, 0.77, 0.74, 0.78, 0.33, 0.78, 0.58,
+      0.4, 0.02, 0, 0, 0, 0, 0.01, 0.66, 0.34, 0.98, 0.97, 1, 0.66, 0.4, 0.35, 0.01, 0, 0, 0, 0, 0, 0, 0.51,
+      0.53, 0.89, 0.92, 0.73, 1, 0.19, 0.69, 0.78, 0.31, 0.96, 0.99, 0.3, 0.16, 0.23, 0.06, 0, 0, 0, 0, 0, 0,
+      0.1, 0.77, 1, 0.85, 0.25, 0.09, 0.93, 0.63, 0.02, 0, 0, 0, 0, 0.3, 1, 0.54, 0.08, 0, 0, 0, 0, 0, 0, 0.01,
+      0.39, 0.64, 0.59, 0.63, 0.02, 0.9, 0.88, 1, 0.92, 0.45, 0.34, 0.26, 0.05, 0, 0, 0, 0, 0, 0, 0, 0.61,
+      0.99, 0.98, 1, 0.55, 0.45, 0.93, 0.9, 0.74, 0.66, 0.38, 0.76, 0.54, 0.86, 0.81, 0.55, 0.25, 0.23, 0.24,
+      0.02, 0, 0, 0, 0, 0, 0, 0.13, 0.7, 1, 0.56, 0.89, 0.77, 0.47, 0.29, 0.02, 0, 0.38, 0.72, 0.65, 0.7, 0.64,
+      0.4, 0.35, 0.59, 1, 0.22, 0.51, 0.58, 0.57, 0.39, 0.29, 0.16, 0.02, 0, 0, 0, 0, 0, 0, 0.33, 0.99, 1,
+      0.49, 0.03, 0, 0, 0, 0, 0, 0, 0, 0.63, 0.74, 1, 0.8, 0.59, 0.03, 0.75, 0.54, 0.22, 0.03, 0, 0.38, 0.67,
+      0.61, 1, 0.76, 0.69, 0.05, 0.89, 0.94, 0.42, 0.36, 0.19, 0.04
+    ]
+  }
+}

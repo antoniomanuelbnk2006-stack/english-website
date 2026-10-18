@@ -1,0 +1,333 @@
+{
+  "id": "es-a1-rea-010",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u06",
+  "series": "es-a1-u06-playa",
+  "skill": "reading",
+  "genre": "blog",
+  "title": "Un día en la playa",
+  "summary_es": {
+    "en": "Two friends take the train to the beach and spend the day there.",
+    "fr": "Deux amies prennent le train pour aller à la plage et y passent la journée.",
+    "zh": "两个朋友坐火车去海边，在那里待了一天。",
+    "ja": "二人の友だちが電車で海へ行き、一日を過ごします。"
+  },
+  "topic": "travel",
+  "tags": ["viaje", "tren", "playa"],
+  "can_do": ["R-A1-01"],
+  "grammar_focus": ["es.a1.presente-regulares"],
+  "vocab_focus": ["playa", "tren", "viaje", "bocadillo"],
+  "est_minutes": 4,
+  "prediction_prompt": "¿Te gusta ir a la playa? ¿Con quién vas?",
+  "pre_teach": ["playa", "viaje"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "El sábado voy a la playa.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "playa", "l": "playa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Voy con mi amiga Marta.",
+          "tokens": [
+            { "t": "Voy", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "amiga", "l": "amigo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Marta", "l": "marta", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Salimos de casa a las ocho.",
+          "tokens": [
+            { "t": "Salimos", "l": "salir", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Viajamos en tren.",
+          "tokens": [
+            { "t": "Viajamos", "l": "viajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "tren", "l": "tren", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "El viaje dura dos horas.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "dura", "l": "durar", "p": "VERB", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "horas", "l": "hora", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "En el tren leo un libro.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tren", "l": "tren", "p": "NOUN", "w": true, "sp": true },
+            { "t": "leo", "l": "leer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "libro", "l": "libro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Marta mira por la ventana.",
+          "tokens": [
+            { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "sp": true },
+            { "t": "mira", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ventana", "l": "ventana", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "En la playa hace sol y calor.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "playa", "l": "playa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "sol", "l": "sol", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "calor", "l": "calor", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Comemos bocadillos de queso.",
+          "tokens": [
+            { "t": "Comemos", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "bocadillos", "l": "bocadillo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "queso", "l": "queso", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Bebemos mucha agua.",
+          "tokens": [
+            { "t": "Bebemos", "l": "beber", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucha", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "agua", "l": "agua", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Volvemos a casa por la tarde.",
+          "tokens": [
+            { "t": "Volvemos", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s5",
+          "text": "Estamos muy cansadas.",
+          "tokens": [
+            { "t": "Estamos", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "cansadas", "l": "cansado", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Present tense: we form",
+        "fr": "Présent : la forme nous",
+        "zh": "现在时：nosotros 变位",
+        "ja": "現在形：nosotros の形"
+      },
+      "explanation_es": {
+        "en": "With *nosotros* the verb ends in *-amos*, *-emos* or *-imos*: *salimos*, *comemos*, *bebemos*, *volvemos*."
+      },
+      "refs": ["p1s3", "p3s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "playa",
+      "surface": "playa",
+      "pos": "noun",
+      "def_en": "lugar con arena junto al mar",
+      "def_es": { "en": "beach", "fr": "plage", "zh": "海滩", "ja": "ビーチ" },
+      "ref": "p1s1"
+    },
+    {
+      "lemma": "viaje",
+      "surface": "viaje",
+      "pos": "noun",
+      "def_en": "ir de un lugar a otro, lejos",
+      "def_es": { "en": "trip, journey", "fr": "voyage", "zh": "旅行", "ja": "旅" },
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "durar",
+      "surface": "dura",
+      "pos": "verb",
+      "def_en": "ocupar un tiempo",
+      "def_es": { "en": "to last", "fr": "durer", "zh": "持续", "ja": "続く" },
+      "ref": "p2s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Qué hacen las amigas el sábado?",
+      "evidence": ["p1s1"],
+      "rationale_es": { "en": "*El sábado voy a la playa con mi amiga*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Estudian en casa" },
+        { "id": "b", "text": "Van a la playa" },
+        { "id": "c", "text": "Trabajan en una tienda" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cómo viajan?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "*Viajamos en tren*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En coche" },
+        { "id": "b", "text": "En autobús" },
+        { "id": "c", "text": "En tren" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuánto dura el viaje?",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "*El viaje dura dos horas*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Dos horas" },
+        { "id": "b", "text": "Una hora" },
+        { "id": "c", "text": "Diez horas" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "En el tren Marta lee un libro.",
+      "evidence": ["p2s3", "p2s4"],
+      "rationale_es": { "en": "The author reads the book; Marta looks out of the window." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "En la playa hace sol.",
+      "evidence": ["p3s1"],
+      "rationale_es": { "en": "*Hace sol y calor*." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "*Comemos bocadillos de queso*." },
+      "type": "gap_fill",
+      "text": "Comen {{1}} de queso.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["bocadillos"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 59,
+  "lemmas": [
+    "a", "agua", "amigo", "beber", "bocadillo", "calor", "cansado", "casa", "comer", "con", "de", "durar",
+    "el", "en", "estar", "hacer", "hora", "ir", "leer", "libro", "mi", "mucho", "muy", "playa", "por", "queso",
+    "salir", "sol", "sábado", "tarde", "tren", "un", "ventana", "ver", "viajar", "volver", "y"
+  ],
+  "difficulty": 662,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 4.9,
+    "flesch_reading_ease": 99.1,
+    "checked_at": "2026-10-18T21:38:33.650Z"
+  }
+}

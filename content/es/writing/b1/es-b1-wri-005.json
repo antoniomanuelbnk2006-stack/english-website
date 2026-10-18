@@ -1,0 +1,53 @@
+{
+  "id": "es-b1-wri-005",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "task_type": "email",
+  "title": "Información sobre un curso",
+  "topic": "education",
+  "context_es": {
+    "en": "You want to sign up for a language course. You write an email to the school to ask for information.",
+    "fr": "Vous voulez vous inscrire à un cours de langue. Vous écrivez un e-mail à l’école pour demander des informations.",
+    "zh": "你想报名参加语言课程。你给学校写一封电子邮件询问信息。",
+    "ja": "語学コースに申し込みたいです。学校に情報を問い合わせるメールを書きます。"
+  },
+  "prompt_en": "Quieres apuntarte a un curso de idiomas. Escribe un correo a la escuela para pedir información.",
+  "points": [
+    "qué curso te interesa y por qué",
+    "qué quieres saber (horario, precio, nivel)",
+    "cuándo puedes empezar"
+  ],
+  "words_min": 100,
+  "words_max": 150,
+  "time_min": 25,
+  "useful_language": [
+    "Estimados señores:",
+    "Me gustaría saber …",
+    "¿Podrían decirme …?",
+    "Estoy interesado en …",
+    "Puedo empezar en …",
+    "Atentamente,"
+  ],
+  "tips_es": [
+    {
+      "en": "For polite requests use the conditional: *Me gustaría saber…*, *¿Podrían enviarme…?*",
+      "fr": "Pour les demandes polies, utilisez le conditionnel : *Me gustaría saber…*, *¿Podrían enviarme… ?*",
+      "zh": "礼貌地提出请求时用条件式：*Me gustaría saber…*，*¿Podrían enviarme…?*",
+      "ja": "丁寧な依頼には条件法を使います：*Me gustaría saber…*、*¿Podrían enviarme…?*"
+    },
+    {
+      "en": "Organise the email in short paragraphs: why you write, your questions and a polite goodbye.",
+      "fr": "Organisez l’e-mail en paragraphes courts : pourquoi vous écrivez, vos questions et une formule de politesse.",
+      "zh": "把邮件分成几个短段落：写信的原因、你的问题和礼貌的结束语。",
+      "ja": "メールは短い段落に分けます：用件、質問、丁寧な結び。"
+    }
+  ],
+  "model_answer": "Estimados señores:\n\nMe llamo Laura Sánchez y quiero apuntarme a un curso de inglés. Estoy interesada en el curso de nivel intermedio porque necesito mejorar mi inglés para el trabajo.\n\nMe gustaría saber cuándo son las clases, cuánto cuesta el curso y cuántas personas hay en cada grupo. Además, ¿podrían decirme si hay una prueba de nivel antes de empezar? También me gustaría saber si las clases son presenciales o por internet, y si el material está incluido en el precio.\n\nPuedo empezar a partir del mes que viene y prefiero las clases de tarde, después del trabajo.\n\nQuedo a la espera de su respuesta.\nAtentamente,\nLaura Sánchez",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

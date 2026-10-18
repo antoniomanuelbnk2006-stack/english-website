@@ -1,0 +1,53 @@
+{
+  "id": "es-b1-wri-006",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "task_type": "article",
+  "title": "Mi deporte favorito",
+  "topic": "sports",
+  "context_es": {
+    "en": "The school magazine publishes articles about sport. You write about the sport you like best.",
+    "fr": "Le journal de l’école publie des articles sur le sport. Vous écrivez sur le sport que vous préférez.",
+    "zh": "学校杂志刊登关于体育的文章。你写一篇关于你最喜欢的运动的文章。",
+    "ja": "学校の雑誌がスポーツについての記事を載せます。いちばん好きなスポーツについて書きます。"
+  },
+  "prompt_en": "La revista de tu escuela publica artículos sobre deporte. Escribe un artículo sobre el deporte que más te gusta.",
+  "points": [
+    "qué deporte es y cuándo empezaste",
+    "por qué te gusta y qué beneficios tiene",
+    "a quién se lo recomiendas"
+  ],
+  "words_min": 100,
+  "words_max": 150,
+  "time_min": 25,
+  "useful_language": [
+    "Mi deporte favorito es …",
+    "Empecé a practicarlo cuando …",
+    "Lo que más me gusta es …",
+    "Además, es bueno para …",
+    "Se lo recomiendo a …",
+    "En resumen, …"
+  ],
+  "tips_es": [
+    {
+      "en": "Mix the *indefinido* (*empecé a nadar a los ocho años*) with the present for what you do now.",
+      "fr": "Mêlez l’*indefinido* (*empecé a nadar a los ocho años*) et le présent pour ce que vous faites maintenant.",
+      "zh": "把 *indefinido*（*empecé a nadar a los ocho años*）和现在时（说现在做的事）结合起来。",
+      "ja": "*indefinido*（*empecé a nadar a los ocho años*）と、今していることの現在形を組み合わせます。"
+    },
+    {
+      "en": "Give your article a title and finish with a clear recommendation.",
+      "fr": "Donnez un titre à votre article et terminez par une recommandation claire.",
+      "zh": "给文章起个标题，并以明确的推荐作结。",
+      "ja": "記事にタイトルを付け、はっきりしたおすすめで終えます。"
+    }
+  ],
+  "model_answer": "Nadar, mucho más que un deporte\n\nMi deporte favorito es la natación. Empecé a nadar a los ocho años, cuando mis padres me apuntaron a un curso en la piscina del barrio, y desde entonces no he dejado de hacerlo.\n\nLo que más me gusta es la sensación de calma que tengo dentro del agua. Además, es un deporte muy completo: trabaja todo el cuerpo, ayuda a dormir mejor y es perfecto para quien tiene dolores de espalda.\n\nHoy nado tres veces por semana antes de ir a clase. Se lo recomiendo a quien quiera empezar a hacer deporte, porque no hace falta ser un experto. En resumen, es una actividad sana, barata y muy relajante.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

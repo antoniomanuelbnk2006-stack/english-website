@@ -1,0 +1,608 @@
+{
+  "id": "es-b1-lis-006",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u01",
+  "series": "es-b1-u01-noticias",
+  "skill": "listening",
+  "genre": "news",
+  "title": "Noticias de las seis",
+  "summary_es": {
+    "en": "A news bulletin: a new park, train delays because of a strike, sport and the weather.",
+    "fr": "Un bulletin d’informations : un nouveau parc, des retards de train à cause d’une grève, le sport et la météo.",
+    "zh": "新闻简报：一座新公园、因罢工导致的火车延误、体育和天气。",
+    "ja": "ニュース：新しい公園、ストによる電車の遅れ、スポーツ、天気予報。"
+  },
+  "topic": "society",
+  "tags": ["noticias", "ciudad", "tiempo"],
+  "can_do": ["L-B1-02"],
+  "grammar_focus": ["es.b1.futuro-simple"],
+  "vocab_focus": ["ayuntamiento", "huelga", "retraso", "previsión"],
+  "est_minutes": 7,
+  "prediction_prompt": "En un boletín de noticias, ¿qué temas suelen aparecer?",
+  "pre_teach": ["huelga", "carril bici"],
+  "speakers": [
+    { "id": "santiago", "name": "Santiago", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "santiago",
+      "text": "Buenas tardes. Estas son las noticias de las seis.",
+      "tokens": [
+        { "t": "Buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.02, "e": 0.6 },
+        { "t": "tardes", "l": "tarde", "p": "NOUN", "w": true, "s": 0.6, "e": 1.18 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Estas", "l": "este", "p": "DET", "w": true, "sp": true, "s": 1.39, "e": 1.8 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 1.8, "e": 2.073 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 2.073, "e": 2.346 },
+        { "t": "noticias", "l": "noticia", "p": "NOUN", "w": true, "sp": true, "s": 2.346, "e": 2.961 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 2.961, "e": 3.166 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 3.165, "e": 3.438 },
+        { "t": "seis", "l": "seis", "p": "NUM", "w": false, "s": 3.439, "e": 3.78 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 3.83
+    },
+    {
+      "id": "s2",
+      "speaker": "santiago",
+      "text": "El ayuntamiento ha anunciado que el próximo lunes se abrirá un nuevo parque en el barrio de San Roque.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 4.09, "e": 4.292 },
+        {
+          "t": "ayuntamiento",
+          "l": "ayuntamiento",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 4.292,
+          "e": 5.169
+        },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 5.169, "e": 5.371 },
+        { "t": "anunciado", "l": "anunciar", "p": "VERB", "w": true, "sp": true, "s": 5.372, "e": 6.047 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 6.046, "e": 6.316 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 6.316, "e": 6.518 },
+        { "t": "próximo", "l": "próximo", "p": "ADJ", "w": true, "sp": true, "s": 6.518, "e": 7.058 },
+        { "t": "lunes", "l": "lunes", "p": "NOUN", "w": true, "sp": true, "s": 7.058, "e": 7.463 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 7.463, "e": 7.665 },
+        { "t": "abrirá", "l": "abrir", "p": "VERB", "w": true, "sp": true, "s": 7.665, "e": 8.137 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 8.137, "e": 8.339 },
+        { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 8.339, "e": 8.744 },
+        { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "sp": true, "s": 8.744, "e": 9.216 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 9.216, "e": 9.418 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 9.419, "e": 9.621 },
+        { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "sp": true, "s": 9.621, "e": 10.093 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 10.093, "e": 10.295 },
+        { "t": "San", "l": "san", "p": "PROPN", "w": false, "sp": true, "s": 10.295, "e": 10.565 },
+        { "t": "Roque", "l": "roque", "p": "PROPN", "w": false, "s": 10.565, "e": 10.97 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.08,
+      "end": 11.061
+    },
+    {
+      "id": "s3",
+      "speaker": "santiago",
+      "text": "El parque tendrá una zona de juegos para niños, un carril bici y más de doscientos árboles.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.321, "e": 11.548 },
+        { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "sp": true, "s": 11.548, "e": 12.078 },
+        { "t": "tendrá", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 12.078, "e": 12.608 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 12.607, "e": 12.91 },
+        { "t": "zona", "l": "zona", "p": "NOUN", "w": true, "sp": true, "s": 12.91, "e": 13.288 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 13.288, "e": 13.515 },
+        { "t": "juegos", "l": "juego", "p": "NOUN", "w": true, "sp": true, "s": 13.515, "e": 14.045 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 14.045, "e": 14.423 },
+        { "t": "niños", "l": "niño", "p": "NOUN", "w": true, "s": 14.423, "e": 14.877 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 14.877, "e": 15.104 },
+        { "t": "carril", "l": "carril", "p": "NOUN", "w": true, "sp": true, "s": 15.104, "e": 15.634 },
+        { "t": "bici", "l": "bici", "p": "NOUN", "w": true, "sp": true, "s": 15.634, "e": 16.012 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 16.012, "e": 16.163 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 16.164, "e": 16.467 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 16.466, "e": 16.693 },
+        { "t": "doscientos", "l": "doscientos", "p": "ADJ", "w": true, "sp": true, "s": 16.693, "e": 17.525 },
+        { "t": "árboles", "l": "árbol", "p": "NOUN", "w": true, "s": 17.526, "e": 18.131 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.311,
+      "end": 18.189
+    },
+    {
+      "id": "s4",
+      "speaker": "santiago",
+      "text": "Según el alcalde, las obras han durado catorce meses y han costado cuatro millones de euros.",
+      "tokens": [
+        { "t": "Según", "l": "según", "p": "ADP", "w": true, "sp": true, "s": 18.449, "e": 18.897 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 18.897, "e": 19.121 },
+        { "t": "alcalde", "l": "alcalde", "p": "NOUN", "w": true, "s": 19.121, "e": 19.719 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 20.009, "e": 20.317 },
+        { "t": "obras", "l": "obra", "p": "NOUN", "w": true, "sp": true, "s": 20.317, "e": 20.779 },
+        { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 20.779, "e": 21.087 },
+        { "t": "durado", "l": "durar", "p": "VERB", "w": true, "sp": true, "s": 21.087, "e": 21.626 },
+        { "t": "catorce", "l": "catorce", "p": "NUM", "w": false, "sp": true, "s": 21.627, "e": 22.243 },
+        { "t": "meses", "l": "mes", "p": "NOUN", "w": true, "sp": true, "s": 22.243, "e": 22.705 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 22.705, "e": 22.859 },
+        { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 22.859, "e": 23.167 },
+        { "t": "costado", "l": "costar", "p": "VERB", "w": true, "sp": true, "s": 23.167, "e": 23.783 },
+        { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "sp": true, "s": 23.783, "e": 24.322 },
+        { "t": "millones", "l": "millón", "p": "NOUN", "w": true, "sp": true, "s": 24.323, "e": 25.016 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 25.016, "e": 25.247 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "s": 25.247, "e": 25.709 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.439,
+      "end": 25.763
+    },
+    {
+      "id": "s5",
+      "speaker": "santiago",
+      "text": "Los vecinos esperan que el parque ayude a reducir el ruido y la contaminación de la zona.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 26.023, "e": 26.317 },
+        { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "sp": true, "s": 26.317, "e": 26.906 },
+        { "t": "esperan", "l": "esperar", "p": "VERB", "w": true, "sp": true, "s": 26.906, "e": 27.495 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 27.495, "e": 27.789 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 27.789, "e": 28.01 },
+        { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "sp": true, "s": 28.01, "e": 28.525 },
+        { "t": "ayude", "l": "ayudar", "p": "VERB", "w": true, "sp": true, "s": 28.525, "e": 28.967 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 28.967, "e": 29.114 },
+        { "t": "reducir", "l": "reducir", "p": "VERB", "w": true, "sp": true, "s": 29.114, "e": 29.703 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 29.703, "e": 29.924 },
+        { "t": "ruido", "l": "ruido", "p": "NOUN", "w": true, "sp": true, "s": 29.924, "e": 30.366 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 30.365, "e": 30.512 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 30.512, "e": 30.733 },
+        {
+          "t": "contaminación",
+          "l": "contaminación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 30.733,
+          "e": 31.763
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 31.763, "e": 31.984 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 31.984, "e": 32.205 },
+        { "t": "zona", "l": "zona", "p": "NOUN", "w": true, "s": 32.205, "e": 32.573 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.013,
+      "end": 32.691
+    },
+    {
+      "id": "s6",
+      "speaker": "santiago",
+      "text": "En otro orden de cosas, la compañía ferroviaria informa de que mañana habrá retrasos en varias líneas.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 32.951, "e": 33.161 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 33.161, "e": 33.511 },
+        { "t": "orden", "l": "orden", "p": "NOUN", "w": true, "sp": true, "s": 33.511, "e": 33.931 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 33.931, "e": 34.141 },
+        { "t": "cosas", "l": "cosa", "p": "NOUN", "w": true, "s": 34.141, "e": 34.561 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 34.781, "e": 35.002 },
+        { "t": "compañía", "l": "compañía", "p": "NOUN", "w": true, "sp": true, "s": 35.002, "e": 35.664 },
+        {
+          "t": "ferroviaria",
+          "l": "ferroviario",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 35.664,
+          "e": 36.547
+        },
+        { "t": "informa", "l": "informar", "p": "VERB", "w": true, "sp": true, "s": 36.547, "e": 37.136 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 37.136, "e": 37.357 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 37.357, "e": 37.651 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 37.651, "e": 38.166 },
+        { "t": "habrá", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 38.166, "e": 38.608 },
+        { "t": "retrasos", "l": "retraso", "p": "NOUN", "w": true, "sp": true, "s": 38.608, "e": 39.27 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 39.27, "e": 39.491 },
+        { "t": "varias", "l": "varios", "p": "DET", "w": true, "sp": true, "s": 39.491, "e": 40.006 },
+        { "t": "líneas", "l": "línea", "p": "NOUN", "w": true, "s": 40.006, "e": 40.521 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.941,
+      "end": 40.58
+    },
+    {
+      "id": "s7",
+      "speaker": "santiago",
+      "text": "La causa es una huelga de trabajadores que reclaman mejores salarios.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 40.85, "e": 41.073 },
+        { "t": "causa", "l": "causar", "p": "VERB", "w": true, "sp": true, "s": 41.073, "e": 41.519 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 41.519, "e": 41.742 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 41.742, "e": 42.039 },
+        { "t": "huelga", "l": "huelga", "p": "NOUN", "w": true, "sp": true, "s": 42.04, "e": 42.56 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 42.56, "e": 42.783 },
+        {
+          "t": "trabajadores",
+          "l": "trabajador",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 42.783,
+          "e": 43.75
+        },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 43.75, "e": 44.047 },
+        { "t": "reclaman", "l": "reclamar", "p": "VERB", "w": true, "sp": true, "s": 44.047, "e": 44.716 },
+        { "t": "mejores", "l": "mejorar", "p": "VERB", "w": true, "sp": true, "s": 44.716, "e": 45.311 },
+        { "t": "salarios", "l": "salario", "p": "NOUN", "w": true, "s": 45.311, "e": 45.98 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 40.83,
+      "end": 46.034
+    },
+    {
+      "id": "s8",
+      "speaker": "santiago",
+      "text": "Se recomienda a los viajeros consultar la página web antes de salir de casa.",
+      "tokens": [
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 46.294, "e": 46.506 },
+        { "t": "recomienda", "l": "recomendar", "p": "VERB", "w": true, "sp": true, "s": 46.506, "e": 47.285 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 47.285, "e": 47.427 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 47.427, "e": 47.71 },
+        { "t": "viajeros", "l": "viajero", "p": "NOUN", "w": true, "sp": true, "s": 47.71, "e": 48.347 },
+        { "t": "consultar", "l": "consultar", "p": "VERB", "w": true, "sp": true, "s": 48.347, "e": 49.055 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 49.055, "e": 49.267 },
+        { "t": "página", "l": "página", "p": "NOUN", "w": true, "sp": true, "s": 49.267, "e": 49.763 },
+        { "t": "web", "l": "web", "p": "NOUN", "w": true, "sp": true, "s": 49.763, "e": 50.046 },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true, "s": 50.046, "e": 50.471 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 50.471, "e": 50.683 },
+        { "t": "salir", "l": "salir", "p": "VERB", "w": true, "sp": true, "s": 50.683, "e": 51.108 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 51.108, "e": 51.32 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 51.32, "e": 51.674 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.284,
+      "end": 51.757
+    },
+    {
+      "id": "s9",
+      "speaker": "santiago",
+      "text": "Pasamos ahora a la información deportiva.",
+      "tokens": [
+        { "t": "Pasamos", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 52.017, "e": 52.593 },
+        { "t": "ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 52.593, "e": 53.025 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 53.024, "e": 53.168 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 53.168, "e": 53.384 },
+        {
+          "t": "información",
+          "l": "información",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 53.384,
+          "e": 54.247
+        },
+        { "t": "deportiva", "l": "deportivo", "p": "ADJ", "w": true, "s": 54.247, "e": 54.967 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 52.007,
+      "end": 55.058
+    },
+    {
+      "id": "s10",
+      "speaker": "santiago",
+      "text": "El equipo local ganó ayer por dos goles a uno y es líder de la clasificación.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 55.318, "e": 55.549 },
+        { "t": "equipo", "l": "equipo", "p": "NOUN", "w": true, "sp": true, "s": 55.549, "e": 56.087 },
+        { "t": "local", "l": "local", "p": "ADJ", "w": true, "sp": true, "s": 56.087, "e": 56.548 },
+        { "t": "ganó", "l": "ganar", "p": "VERB", "w": true, "sp": true, "s": 56.548, "e": 56.932 },
+        { "t": "ayer", "l": "ayer", "p": "ADV", "w": true, "sp": true, "s": 56.933, "e": 57.317 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 57.317, "e": 57.625 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 57.624, "e": 57.932 },
+        { "t": "goles", "l": "gol", "p": "NOUN", "w": true, "sp": true, "s": 57.932, "e": 58.393 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 58.393, "e": 58.547 },
+        { "t": "uno", "l": "uno", "p": "NUM", "w": false, "sp": true, "s": 58.547, "e": 58.855 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 58.855, "e": 59.009 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 59.008, "e": 59.239 },
+        { "t": "líder", "l": "líder", "p": "NOUN", "w": true, "sp": true, "s": 59.239, "e": 59.7 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 59.7, "e": 59.931 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 59.931, "e": 60.162 },
+        { "t": "clasificación", "l": "clasificación", "p": "NOUN", "w": true, "s": 60.162, "e": 61.238 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 55.308,
+      "end": 61.356
+    },
+    {
+      "id": "s11",
+      "speaker": "santiago",
+      "text": "El entrenador dijo que el partido había sido muy difícil, pero que sus jugadores no se rindieron.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 61.616, "e": 61.831 },
+        { "t": "entrenador", "l": "entrenador", "p": "NOUN", "w": true, "sp": true, "s": 61.831, "e": 62.618 },
+        { "t": "dijo", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 62.618, "e": 62.976 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 62.976, "e": 63.262 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 63.262, "e": 63.477 },
+        { "t": "partido", "l": "partido", "p": "NOUN", "w": true, "sp": true, "s": 63.477, "e": 64.05 },
+        { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 64.05, "e": 64.479 },
+        { "t": "sido", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 64.479, "e": 64.837 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 64.837, "e": 65.123 },
+        { "t": "difícil", "l": "difícil", "p": "ADJ", "w": true, "s": 65.123, "e": 65.696 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 65.846, "e": 66.175 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 66.175, "e": 66.439 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 66.439, "e": 66.703 },
+        { "t": "jugadores", "l": "jugador", "p": "NOUN", "w": true, "sp": true, "s": 66.703, "e": 67.362 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 67.362, "e": 67.56 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 67.559, "e": 67.757 },
+        { "t": "rindieron", "l": "rendirse", "p": "VERB", "w": true, "s": 67.757, "e": 68.416 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 61.606,
+      "end": 68.509
+    },
+    {
+      "id": "s12",
+      "speaker": "santiago",
+      "text": "Y para terminar, el tiempo. Mañana habrá nubes por la mañana y lluvia por la tarde.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 68.769, "e": 68.915 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 68.915, "e": 69.281 },
+        { "t": "terminar", "l": "terminar", "p": "VERB", "w": true, "s": 69.281, "e": 69.939 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 70.159, "e": 70.408 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "s": 70.408, "e": 70.989 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 71.309, "e": 71.796 },
+        { "t": "habrá", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 71.796, "e": 72.214 },
+        { "t": "nubes", "l": "nube", "p": "NOUN", "w": true, "sp": true, "s": 72.214, "e": 72.632 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 72.632, "e": 72.911 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 72.911, "e": 73.12 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 73.12, "e": 73.607 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 73.607, "e": 73.746 },
+        { "t": "lluvia", "l": "lluvia", "p": "NOUN", "w": true, "sp": true, "s": 73.746, "e": 74.233 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 74.234, "e": 74.513 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 74.512, "e": 74.721 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "s": 74.721, "e": 75.139 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 68.759,
+      "end": 75.255
+    },
+    {
+      "id": "s13",
+      "speaker": "santiago",
+      "text": "Las temperaturas bajarán unos cinco grados, así que no olvide su paraguas.",
+      "tokens": [
+        { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 75.515, "e": 75.798 },
+        {
+          "t": "temperaturas",
+          "l": "temperatura",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 75.798,
+          "e": 76.717
+        },
+        { "t": "bajarán", "l": "bajar", "p": "VERB", "w": true, "sp": true, "s": 76.717, "e": 77.283 },
+        { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true, "s": 77.282, "e": 77.635 },
+        { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true, "s": 77.636, "e": 78.06 },
+        { "t": "grados", "l": "grado", "p": "NOUN", "w": true, "s": 78.06, "e": 78.555 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "así", "l": "así", "p": "ADV", "w": true, "sp": true, "s": 78.735, "e": 79.023 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 79.023, "e": 79.311 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 79.311, "e": 79.527 },
+        { "t": "olvide", "l": "olvidar", "p": "VERB", "w": true, "sp": true, "s": 79.527, "e": 80.031 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 80.031, "e": 80.247 },
+        { "t": "paraguas", "l": "paraguas", "p": "NOUN", "w": true, "s": 80.247, "e": 80.895 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 75.505,
+      "end": 80.955
+    },
+    {
+      "id": "s14",
+      "speaker": "santiago",
+      "text": "Estas han sido las noticias. Muchas gracias por su atención.",
+      "tokens": [
+        { "t": "Estas", "l": "este", "p": "DET", "w": true, "sp": true, "s": 81.215, "e": 81.652 },
+        { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 81.652, "e": 81.943 },
+        { "t": "sido", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 81.944, "e": 82.308 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 82.308, "e": 82.599 },
+        { "t": "noticias", "l": "noticia", "p": "NOUN", "w": true, "s": 82.599, "e": 83.255 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 83.485, "e": 84.034 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 84.034, "e": 84.661 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 84.661, "e": 84.975 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 84.974, "e": 85.209 },
+        { "t": "atención", "l": "atención", "p": "NOUN", "w": true, "s": 85.21, "e": 85.915 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 81.205,
+      "end": 86.041
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "huelga",
+      "surface": "huelga",
+      "pos": "noun",
+      "def_en": "parada del trabajo para pedir algo",
+      "def_es": { "en": "strike", "fr": "grève", "zh": "罢工", "ja": "ストライキ" },
+      "ref": "s7"
+    },
+    {
+      "lemma": "alcalde",
+      "surface": "alcalde",
+      "pos": "noun",
+      "def_en": "persona que dirige el ayuntamiento",
+      "def_es": { "en": "mayor", "fr": "maire", "zh": "市长", "ja": "市長" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "paraguas",
+      "surface": "paraguas",
+      "pos": "noun",
+      "def_en": "objeto para protegerse de la lluvia",
+      "def_es": { "en": "umbrella", "fr": "parapluie", "zh": "雨伞", "ja": "傘" },
+      "ref": "s13"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué tipo de texto es?",
+      "evidence": ["s1", "s14"],
+      "rationale_es": { "en": "It opens and closes like a news bulletin." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un anuncio de una tienda de ropa" },
+        { "id": "b", "text": "Un boletín de noticias de la radio" },
+        { "id": "c", "text": "Una charla sobre el medio ambiente" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuándo se abrirá el nuevo parque?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "Next Monday." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Mañana por la tarde" },
+        { "id": "b", "text": "Dentro de un año" },
+        { "id": "c", "text": "El próximo lunes" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Las obras del parque duraron menos de un año.",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "They lasted fourteen months." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué habrá retrasos en los trenes?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "Because of a workers’ strike." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Por una huelga de trabajadores" },
+        { "id": "b", "text": "Por el mal tiempo en el norte" },
+        { "id": "c", "text": "Por obras en las estaciones" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Por qué aconseja el locutor llevar paraguas?",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "Rain is forecast for the afternoon." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque hará mucho sol" },
+        { "id": "b", "text": "Porque lloverá por la tarde" },
+        { "id": "c", "text": "Porque habrá viento fuerte" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Cómo es el tono del locutor?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "He reports facts in a neutral, informative way." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Alarmista y emocionado" },
+        { "id": "b", "text": "Humorístico y personal" },
+        { "id": "c", "text": "Neutro e informativo" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "*Por dos goles a uno*." },
+      "type": "gap_fill",
+      "text": "El equipo local ganó ayer por dos goles a {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["uno", "1"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abrir", "ahora", "alcalde", "antes", "anunciar", "así", "atención", "ayer", "ayudar", "ayuntamiento",
+    "bajar", "barrio", "bici", "bueno", "carril", "casa", "causar", "clasificación", "compañía", "consultar",
+    "contaminación", "cosa", "costar", "de", "decir", "deportivo", "difícil", "doscientos", "durar", "el",
+    "en", "entrenador", "equipo", "esperar", "este", "euro", "ferroviario", "ganar", "gol", "grado", "haber",
+    "huelga", "información", "informar", "juego", "jugador", "lluvia", "local", "lunes", "líder", "línea",
+    "mañana", "mejorar", "mes", "millón", "mucho", "muy", "más", "niño", "no", "noticia", "nube", "nuevo",
+    "obra", "olvidar", "orden", "otro", "para", "paraguas", "parque", "partido", "pasar", "pero", "por",
+    "próximo", "página", "que", "reclamar", "recomendar", "reducir", "rendirse", "retraso", "ruido", "salario",
+    "salir", "se", "según", "ser", "su", "tarde", "temperatura", "tener", "terminar", "tiempo", "trabajador",
+    "un", "varios", "vecino", "viajero", "web", "y", "zona", "árbol"
+  ],
+  "difficulty": 1073,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6383, "A2": 0.75, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 11.6,
+    "flesch_reading_ease": 79.9,
+    "checked_at": "2026-10-18T21:50:39.313Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-006/v1.m4a",
+    "duration_s": 86.041,
+    "wpm": 137,
+    "provider": "piper",
+    "voices": { "santiago": "sharvard-m" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      1, 0.76, 0.19, 0.67, 1, 0.78, 0.78, 0.66, 0.62, 0.49, 0.16, 0.56, 0.54, 0.73, 0.39, 0.46, 0.67, 0.66,
+      0.44, 0.75, 0.48, 0.39, 0.48, 0.7, 0.63, 0.59, 0.53, 1, 0.6, 0.58, 0.12, 0.51, 1, 0.53, 0.68, 0.69, 0.46,
+      0.67, 0.58, 0.43, 0.38, 0.45, 0.81, 0.54, 0.28, 0.56, 0.4, 0.6, 0.65, 0.28, 0.06, 0.36, 0.7, 0.94, 1,
+      0.24, 0.47, 0.65, 0.61, 0.78, 0.96, 0.66, 0.74, 0.24, 0.71, 0.44, 0.72, 0.9, 0.61, 0.6, 0.56, 0.09, 0.34,
+      0.54, 0.51, 0.46, 0.33, 0.73, 0.49, 1, 0.71, 0.78, 0.68, 0.48, 0.66, 0.77, 0.51, 0.47, 0.72, 0.57, 0.44,
+      0.29, 0.64, 0.96, 0.66, 0.67, 0.13, 0.84, 0.67, 0.72, 0.42, 0.91, 0.42, 0.91, 0.65, 0.58, 0.84, 1, 0.64,
+      0.45, 0.94, 0.78, 0.28, 0.15, 0.93, 1, 0.46, 0.57, 0.75, 0.58, 0.57, 0.63, 0.41, 0.75, 0.46, 0.59, 0.65,
+      0.11, 0.05, 0.72, 0.79, 0.71, 0.71, 0.81, 0.52, 0.87, 1, 0.97, 0.87, 0.69, 0.86, 0.77, 0.92, 0.68, 0.11,
+      1, 0.79, 0.94, 0.73, 0.57, 0.63, 0.53, 0.35, 0.11, 0.45, 0.57, 1, 0.99, 0.77, 0.58, 0.7, 0.77, 0.43,
+      0.46, 0.44, 0.62, 0.62, 0.6, 0.35, 0.7, 0.4, 0.45, 0.79, 0.76, 0.91, 0.9, 0.73, 0.74, 1, 0.59, 0.8, 0.67,
+      0.66, 0.63, 0.56, 0.38, 0.82, 0.72, 0.75, 0.55, 0.2, 0.66, 1, 0.62, 0.77, 0.56, 0.69, 0.3, 0.23, 0.74,
+      0.88, 0.97, 0.81, 0.74, 0.84, 0.5, 0.89, 0.87, 1, 0.1, 0.72, 0.86, 0.82, 0.83, 0.91, 0.9, 0.66, 0.93,
+      0.93, 0.46, 0.68, 0.58, 0.78, 0.99, 1, 0.11, 1, 0.9, 0.73, 0.96, 0.71, 0.21, 0.15, 0.69, 1, 0.84, 0.5,
+      0.78, 0.48, 0.37
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "es-c1-wri-003",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "task_type": "report",
+  "title": "Informe sobre hábitos de lectura",
+  "topic": "culture",
+  "context_es": {
+    "en": "The head of a school library asks you for a short report on students’ reading habits, with data from a survey and recommendations.",
+    "fr": "La responsable d’une bibliothèque scolaire vous demande un court rapport sur les habitudes de lecture des élèves, avec les données d’une enquête et des recommandations.",
+    "zh": "学校图书馆馆长请你就学生阅读习惯写一份简短报告，包含问卷数据和建议。",
+    "ja": "学校図書館の責任者から、アンケート結果と提言を含む、生徒の読書習慣についての短い報告書を頼まれました。"
+  },
+  "prompt_en": "La responsable de la biblioteca de tu escuela te pide un informe breve sobre los hábitos de lectura de los alumnos, a partir de una encuesta. Describe los resultados, analiza las causas y formula recomendaciones.",
+  "points": [
+    "resume los datos principales de la encuesta",
+    "analiza dos posibles causas",
+    "propone tres medidas concretas"
+  ],
+  "words_min": 220,
+  "words_max": 320,
+  "time_min": 60,
+  "useful_language": [
+    "El objetivo de este informe es …",
+    "Según los datos de la encuesta, …",
+    "Cabe destacar que …",
+    "Esto podría deberse a …",
+    "Se recomienda que …",
+    "En conclusión, …"
+  ],
+  "tips_es": [
+    {
+      "en": "A report is objective and structured: introduction, findings, analysis and recommendations. Use headings and impersonal forms (*se observa que…*).",
+      "fr": "Un rapport est objectif et structuré : introduction, résultats, analyse et recommandations. Utilisez des titres et des formes impersonnelles (*se observa que…*).",
+      "zh": "报告要客观且有结构：引言、发现、分析和建议。使用小标题和无人称表达（*se observa que…*）。",
+      "ja": "報告書は客観的で構成がはっきりしたものに：導入・結果・分析・提言。見出しと不定人称（*se observa que…*）を使います。"
+    },
+    {
+      "en": "Use connectors to build the analysis: *no obstante, por consiguiente, asimismo, en definitiva*.",
+      "fr": "Utilisez des connecteurs pour construire l’analyse : *no obstante, por consiguiente, asimismo, en definitiva*.",
+      "zh": "用连接词构建分析：*no obstante, por consiguiente, asimismo, en definitiva*。",
+      "ja": "接続表現で分析を組み立てます：*no obstante, por consiguiente, asimismo, en definitiva*。"
+    }
+  ],
+  "model_answer": "Informe sobre los hábitos de lectura del alumnado\n\nObjetivo\nEl objetivo de este informe es describir cómo leen los alumnos del centro y proponer medidas para fomentar la lectura. Los datos proceden de una encuesta realizada a 240 estudiantes de entre doce y dieciocho años.\n\nResultados\nSegún los datos de la encuesta, el 62 % de los alumnos lee menos de una hora a la semana fuera de las lecturas obligatorias. Cabe destacar que el 71 % afirma que le gustaría leer más, pero que no encuentra tiempo. Asimismo, los títulos más solicitados son novelas de aventuras y de misterio; la poesía y el ensayo apenas se piden.\n\nAnálisis\nEsta situación podría deberse, en primer lugar, a la competencia de las pantallas, que ocupan buena parte del tiempo libre. En segundo lugar, muchos alumnos perciben la lectura escolar como una obligación y no como un placer. No obstante, el interés declarado indica que existe un terreno favorable. Conviene recordar, además, que los alumnos que más leen suelen hacerlo porque sus propios amigos les recomiendan libros.\n\nRecomendaciones\nSe recomienda que la biblioteca organice clubes de lectura voluntarios, de periodicidad quincenal; que se dedique un tiempo semanal de lectura silenciosa en cada clase; y que los alumnos puedan proponer títulos para la compra de nuevos libros.\n\nEn conclusión, el problema no es la falta de interés, sino la falta de espacios y de tiempo para leer con libertad.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

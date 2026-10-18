@@ -1,0 +1,53 @@
+{
+  "id": "es-b2-wri-005",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "task_type": "article",
+  "title": "Por qué hacerse voluntario",
+  "topic": "society",
+  "context_es": {
+    "en": "A local magazine asks readers to write about volunteering. You write an article to encourage others.",
+    "fr": "Un magazine local demande à ses lecteurs d’écrire sur le bénévolat. Vous écrivez un article pour encourager les autres.",
+    "zh": "一本本地杂志请读者写关于志愿服务的文章。你写一篇文章鼓励别人。",
+    "ja": "地域の雑誌が、読者にボランティアについて書いてほしいと呼びかけています。人を励ます記事を書きます。"
+  },
+  "prompt_en": "Una revista local pide a los lectores que escriban sobre el voluntariado. Escribe un artículo para animar a otras personas a participar.",
+  "points": [
+    "qué es el voluntariado y qué ejemplos conoces",
+    "qué ventajas tiene para quien lo hace",
+    "cómo puede empezar alguien con poco tiempo"
+  ],
+  "words_min": 150,
+  "words_max": 250,
+  "time_min": 35,
+  "useful_language": [
+    "Cada vez más personas …",
+    "Una de las principales ventajas es …",
+    "No hace falta ser … para …",
+    "Quien se anima …",
+    "Si dispones de …, …",
+    "En definitiva, …"
+  ],
+  "tips_es": [
+    {
+      "en": "Start with an engaging idea or a figure, give two or three reasons with examples, and close with an invitation.",
+      "fr": "Commencez par une idée ou un chiffre accrocheur, donnez deux ou trois raisons avec des exemples et terminez par une invitation.",
+      "zh": "以吸引人的想法或数字开头，用例子给出两三个理由，最后发出邀请。",
+      "ja": "印象的な考えや数字で始め、例を添えて理由を二つ三つ挙げ、誘いの言葉で締めくくります。"
+    },
+    {
+      "en": "Use relative clauses to add information: *las personas que dedican unas horas*, *una asociación donde siempre hace falta ayuda*.",
+      "fr": "Utilisez des relatives pour ajouter des informations : *las personas que dedican unas horas*, *una asociación donde siempre hace falta ayuda*.",
+      "zh": "用关系从句补充信息：*las personas que dedican unas horas*，*una asociación donde siempre hace falta ayuda*。",
+      "ja": "関係節で情報を補います：*las personas que dedican unas horas*、*una asociación donde siempre hace falta ayuda*。"
+    }
+  ],
+  "model_answer": "Ayudar también te ayuda\n\nCada vez más personas dedican parte de su tiempo libre a ayudar a los demás. Unas lo hacen en un banco de alimentos, otras en una protectora de animales y otras en una asociación que enseña español a los inmigrantes. El voluntariado no consiste en hacer grandes gestos, sino en sumar pequeños esfuerzos que, juntos, cambian la vida de muchas personas.\n\nUna de las principales ventajas es que quien se anima aprende más de lo que imagina. Conoce a gente con otras historias, desarrolla habilidades como la paciencia o el trabajo en equipo y descubre que sus problemas, a veces, son más pequeños de lo que parecían. Además, muchos voluntarios aseguran que se sienten más útiles y más conectados con su barrio.\n\nNo hace falta ser un experto ni tener mucho tiempo. Si dispones de dos horas a la semana, puedes colaborar en una asociación cercana, donde siempre hace falta ayuda. Y si ni siquiera eso es posible, puedes donar objetos que ya no uses o compartir las campañas en las redes sociales.\n\nEn definitiva, dar un poco de tu tiempo no te hace más pobre, sino más rico. Pruébalo una vez y comprobarás por qué tantos voluntarios repiten.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

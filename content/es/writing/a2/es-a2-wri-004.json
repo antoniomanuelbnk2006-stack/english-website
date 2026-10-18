@@ -1,0 +1,53 @@
+{
+  "id": "es-a2-wri-004",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "task_type": "email",
+  "title": "Reservar una habitación",
+  "topic": "travel",
+  "context_es": {
+    "en": "You want to book a room in a small hotel for the weekend. You write an email to the hotel.",
+    "fr": "Tu veux réserver une chambre dans un petit hôtel pour le week-end. Tu écris un e-mail à l’hôtel.",
+    "zh": "你想为周末在一家小酒店订一间房。你给酒店写一封电子邮件。",
+    "ja": "週末に小さなホテルの部屋を予約したいです。ホテルにメールを書きます。"
+  },
+  "prompt_en": "Quieres reservar una habitación en un hotel pequeño para el fin de semana. Escribe un correo al hotel.",
+  "points": [
+    "qué días quieres la habitación",
+    "cuántas personas sois",
+    "qué quieres preguntar (precio, desayuno, aparcamiento)"
+  ],
+  "words_min": 40,
+  "words_max": 80,
+  "time_min": 12,
+  "useful_language": [
+    "Buenos días:",
+    "Quiero reservar …",
+    "Del … al …",
+    "Somos dos personas",
+    "¿Cuánto cuesta …?",
+    "Muchas gracias. Un saludo,"
+  ],
+  "tips_es": [
+    {
+      "en": "Start with a polite greeting and say clearly what you want: *Quiero reservar una habitación doble*.",
+      "fr": "Commencez par une salutation polie et dites clairement ce que vous voulez : *Quiero reservar una habitación doble*.",
+      "zh": "先礼貌地问候，再清楚说明你的需求：*Quiero reservar una habitación doble*。",
+      "ja": "丁寧なあいさつから始め、希望をはっきり伝えます：*Quiero reservar una habitación doble*。"
+    },
+    {
+      "en": "Give the dates with *del … al …* and finish by thanking: *Muchas gracias*.",
+      "fr": "Donnez les dates avec *del … al …* et terminez par un remerciement : *Muchas gracias*.",
+      "zh": "用 *del … al …* 写日期，并以感谢结尾：*Muchas gracias*。",
+      "ja": "日付は *del … al …* で書き、お礼で締めくくります：*Muchas gracias*。"
+    }
+  ],
+  "model_answer": "Buenos días:\n\nQuiero reservar una habitación doble del viernes 10 al domingo 12 de mayo. Somos dos personas y llegamos el viernes por la tarde. ¿Cuánto cuesta una noche? ¿El desayuno está incluido? Además, ¿hay aparcamiento?\n\nMuchas gracias.\nUn saludo,\nPablo García",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

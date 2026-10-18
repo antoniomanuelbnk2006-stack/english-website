@@ -1,0 +1,357 @@
+{
+  "id": "es-a1-lis-007",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u06",
+  "series": "es-a1-u06-estacion",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "En la estación de tren",
+  "summary_es": {
+    "en": "Carla buys a train ticket for tomorrow morning.",
+    "fr": "Carla achète un billet de train pour demain matin.",
+    "zh": "Carla 买了一张明天早上的火车票。",
+    "ja": "カルラは明日の朝の電車の切符を買います。"
+  },
+  "topic": "travel",
+  "tags": ["tren", "billete", "precio"],
+  "can_do": ["L-A1-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["tren", "billete", "mañana", "euro"],
+  "est_minutes": 4,
+  "prediction_prompt": "En la estación, ¿qué dice una persona para comprar un billete?",
+  "pre_teach": ["billete", "andén"],
+  "speakers": [
+    { "id": "carla", "name": "Carla", "accent": "es-ES", "gender": "female" },
+    { "id": "luis", "name": "Luis", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "luis",
+      "text": "Buenos días. ¿Qué quiere?",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0, "e": 0.513 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 0.513, "e": 0.88 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 1.41, "e": 1.599 },
+        { "t": "quiere", "l": "querer", "p": "VERB", "w": true, "s": 1.599, "e": 1.93 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.01
+    },
+    {
+      "id": "s2",
+      "speaker": "carla",
+      "text": "Un billete para Sevilla, por favor.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 2.72, "e": 2.924 },
+        { "t": "billete", "l": "billete", "p": "NOUN", "w": true, "sp": true, "s": 2.924, "e": 3.468 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 3.467, "e": 3.807 },
+        { "t": "Sevilla", "l": "sevilla", "p": "PROPN", "w": false, "s": 3.807, "e": 4.351 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 4.351, "e": 4.623 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 4.622, "e": 5.03 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 2.71,
+      "end": 5.141
+    },
+    {
+      "id": "s3",
+      "speaker": "luis",
+      "text": "¿Para hoy o para mañana?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 5.851, "e": 6.068 },
+        { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 6.068, "e": 6.242 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 6.242, "e": 6.329 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 6.329, "e": 6.546 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "s": 6.547, "e": 6.851 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.841,
+      "end": 6.952
+    },
+    {
+      "id": "s4",
+      "speaker": "carla",
+      "text": "Para mañana, por la mañana.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 7.662, "e": 8.012 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "s": 8.012, "e": 8.502 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 8.502, "e": 8.782 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.782, "e": 8.992 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "s": 8.992, "e": 9.482 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.652,
+      "end": 9.561
+    },
+    {
+      "id": "s5",
+      "speaker": "luis",
+      "text": "El tren sale a las nueve.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 10.301, "e": 10.501 },
+        { "t": "tren", "l": "tren", "p": "NOUN", "w": true, "sp": true, "s": 10.501, "e": 10.835 },
+        { "t": "sale", "l": "salir", "p": "VERB", "w": true, "sp": true, "s": 10.835, "e": 11.169 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 11.169, "e": 11.303 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.303, "e": 11.57 },
+        { "t": "nueve", "l": "nueve", "p": "NUM", "w": false, "s": 11.57, "e": 11.971 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.261,
+      "end": 12.05
+    },
+    {
+      "id": "s6",
+      "speaker": "carla",
+      "text": "Muy bien. ¿Cuánto cuesta?",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 12.76, "e": 13.058 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 13.058, "e": 13.43 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuánto", "l": "cuánto", "p": "PRON", "w": true, "sp": true, "s": 13.7, "e": 14.255 },
+        { "t": "cuesta", "l": "costar", "p": "VERB", "w": true, "s": 14.255, "e": 14.81 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.75,
+      "end": 14.866
+    },
+    {
+      "id": "s7",
+      "speaker": "luis",
+      "text": "Son veinte euros.",
+      "tokens": [
+        { "t": "Son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 15.566, "e": 15.87 },
+        { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true, "s": 15.87, "e": 16.401 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "s": 16.401, "e": 16.856 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.566,
+      "end": 16.925
+    },
+    {
+      "id": "s8",
+      "speaker": "carla",
+      "text": "Aquí tiene. ¿De qué andén sale?",
+      "tokens": [
+        { "t": "Aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 17.635, "e": 18.035 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "s": 18.035, "e": 18.515 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 18.765, "e": 18.982 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 18.982, "e": 19.271 },
+        { "t": "andén", "l": "andén", "p": "NOUN", "w": true, "sp": true, "s": 19.271, "e": 19.704 },
+        { "t": "sale", "l": "salir", "p": "VERB", "w": true, "s": 19.704, "e": 20.065 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.625,
+      "end": 20.163
+    },
+    {
+      "id": "s9",
+      "speaker": "luis",
+      "text": "Del andén tres.",
+      "tokens": [
+        { "t": "Del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 20.893, "e": 21.168 },
+        { "t": "andén", "l": "andén", "p": "NOUN", "w": true, "sp": true, "s": 21.168, "e": 21.58 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "s": 21.58, "e": 21.923 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.863,
+      "end": 21.998
+    },
+    {
+      "id": "s10",
+      "speaker": "carla",
+      "text": "Gracias. Adiós.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 22.708, "e": 23.468 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Adiós", "l": "adiós", "p": "INTJ", "w": false, "s": 23.688, "e": 24.388 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.698,
+      "end": 24.46
+    },
+    {
+      "id": "s11",
+      "speaker": "luis",
+      "text": "Buen viaje.",
+      "tokens": [
+        { "t": "Buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 25.192, "e": 25.483 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "s": 25.483, "e": 25.832 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.16,
+      "end": 25.921
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "billete",
+      "surface": "billete",
+      "pos": "noun",
+      "def_en": "papel para viajar en tren o autobús",
+      "def_es": { "en": "ticket", "fr": "billet", "zh": "车票", "ja": "切符" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "andén",
+      "surface": "andén",
+      "pos": "noun",
+      "def_en": "lugar de la estación donde espera el tren",
+      "def_es": { "en": "platform", "fr": "quai", "zh": "站台", "ja": "ホーム" },
+      "ref": "s8"
+    },
+    {
+      "lemma": "buen viaje",
+      "surface": "Buen viaje",
+      "pos": "phrase",
+      "def_en": "lo que se dice a alguien que va a viajar",
+      "def_es": { "en": "have a good trip", "fr": "bon voyage", "zh": "一路平安", "ja": "良い旅を" },
+      "ref": "s11"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué compra Carla?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "*Un billete para Sevilla*: a train ticket." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una tortilla de patata grande" },
+        { "id": "b", "text": "Un billete de tren" },
+        { "id": "c", "text": "Un libro de español nuevo" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Para cuándo es el billete?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "*Para mañana, por la mañana*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para hoy" },
+        { "id": "b", "text": "Para el domingo" },
+        { "id": "c", "text": "Para mañana" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿A qué hora sale el tren?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "*El tren sale a las nueve*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "A las nueve" },
+        { "id": "b", "text": "A las tres de la tarde" },
+        { "id": "c", "text": "A las ocho y media" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con un número.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "*Son veinte euros*." },
+      "type": "gap_fill",
+      "text": "El billete cuesta {{1}} euros.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["veinte", "20"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "El tren sale del andén tres.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "*Del andén tres*." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué dice Luis al final?",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "*Buen viaje*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Buen provecho" },
+        { "id": "b", "text": "Buen viaje" },
+        { "id": "c", "text": "Buenas noches" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "andén", "aquí", "bien", "billete", "bueno", "costar", "cuánto", "de", "día", "el", "euro", "favor",
+    "hoy", "mañana", "muy", "o", "para", "por", "querer", "qué", "salir", "ser", "tener", "tren", "un",
+    "viajar"
+  ],
+  "difficulty": 679,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 3.1,
+    "flesch_reading_ease": 102,
+    "checked_at": "2026-10-18T21:38:33.650Z"
+  },
+  "audio": {
+    "src": "audio/a1/es-a1-lis-007/v1.m4a",
+    "duration_s": 25.921,
+    "wpm": 106,
+    "provider": "piper",
+    "voices": { "carla": "sharvard-f", "luis": "davefx-m" },
+    "loudness_lufs": -16,
+    "peaks": [
+      0.97, 1, 0.87, 0.82, 0.7, 0.27, 0.12, 0.2, 0.05, 0.01, 0.01, 0, 0.01, 1, 0.27, 0.81, 0.82, 0.45, 0.01, 0,
+      0, 0, 0, 0, 0, 0.52, 0.82, 0.7, 0.94, 0.96, 1, 0.84, 0.79, 0.67, 0.67, 0.53, 0.54, 0.77, 0.74, 0.02,
+      0.85, 0.15, 0.58, 0.6, 0.47, 0.42, 0.04, 0.01, 0, 0, 0, 0, 0, 0, 1, 0.77, 0.81, 0.66, 0.93, 0.7, 0.49,
+      0.71, 0.45, 0.16, 0.01, 0, 0, 0, 0, 0, 0.16, 0.84, 1, 0.65, 0.74, 0.83, 0.96, 0.8, 0.47, 0.36, 0.92, 0.9,
+      0.76, 0.74, 0.69, 0.59, 0.38, 0.27, 0.02, 0, 0, 0, 0, 0, 0, 0.98, 0.96, 0.16, 1, 0.96, 0.28, 0.98, 0.96,
+      0.97, 0.99, 1, 0.87, 0.31, 0.48, 0.55, 0.36, 0.02, 0, 0, 0, 0, 0, 0, 0.67, 0.94, 0.67, 1, 0.89, 0.41,
+      0.05, 0, 0.08, 1, 0.81, 0.67, 0.7, 0.57, 0.7, 0.45, 0, 0.3, 0.18, 0.04, 0, 0, 0, 0, 0, 0, 0.98, 1, 0.46,
+      1, 0.77, 0.3, 0.93, 0.8, 0.35, 0.3, 0.11, 0.07, 0.03, 0, 0, 0, 0, 0, 0, 0.84, 0.52, 0.78, 0.83, 0.42, 1,
+      0.73, 0.5, 0.11, 0, 0.14, 0.88, 0.73, 0.86, 1, 0.99, 0.73, 0.74, 0.73, 0.7, 0.65, 0.27, 0.13, 0.01, 0, 0,
+      0, 0, 0, 0, 0.96, 1, 1, 0.53, 0.55, 0.87, 0.63, 0.51, 0.17, 0.16, 0.02, 0, 0, 0, 0, 0, 0, 0.44, 1, 0.12,
+      0.18, 0.33, 0.18, 0.15, 0.13, 0, 0.72, 0.52, 1, 0.86, 0.58, 0.29, 0.11, 0.02, 0, 0, 0, 0, 0, 0, 0.92, 1,
+      0.82, 0.94, 0.59, 0.48, 0.08
+    ]
+  }
+}

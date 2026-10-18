@@ -1,0 +1,767 @@
+{
+  "id": "es-b1-rea-004",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u06",
+  "series": "es-b1-u06-comer-bien",
+  "skill": "reading",
+  "genre": "story",
+  "title": "Cómo cambié mis hábitos",
+  "summary_es": {
+    "en": "A man tells how a doctor’s advice led him to walk more, eat better and start doing sport.",
+    "fr": "Un homme raconte comment le conseil d’un médecin l’a poussé à marcher plus, mieux manger et faire du sport.",
+    "zh": "一位男士讲述医生的建议如何让他多走路、吃得更好并开始运动。",
+    "ja": "男性が、医師の助言をきっかけに、歩く量を増やし、食事を改善し、運動を始めた経緯を語ります。"
+  },
+  "topic": "sports",
+  "tags": ["salud", "deporte", "hábitos"],
+  "can_do": ["R-B1-01"],
+  "grammar_focus": ["es.b1.imperfecto-vs-indefinido"],
+  "vocab_focus": ["espalda", "gimnasio", "dieta", "hábito"],
+  "est_minutes": 12,
+  "prediction_prompt": "¿Haces deporte? ¿Qué hábitos tuyos te gustaría cambiar?",
+  "pre_teach": ["espalda", "gimnasio"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Hace unos años casi nunca hacía deporte y comía muy mal.",
+          "tokens": [
+            { "t": "Hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true },
+            { "t": "hacía", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "deporte", "l": "deporte", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "comía", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "mal", "l": "mal", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Trabajaba muchas horas, llegaba cansado a casa y cenaba lo primero que encontraba.",
+          "tokens": [
+            { "t": "Trabajaba", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "horas", "l": "hora", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "llegaba", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cansado", "l": "cansado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "cenaba", "l": "cenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "primero", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "encontraba", "l": "encontrar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Pensaba que no tenía tiempo para cuidarme.",
+          "tokens": [
+            { "t": "Pensaba", "l": "pensar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "tenía", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "cuidarme", "l": "cuidar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "Un día fui al médico por un dolor de espalda y me dio un consejo que cambió mi vida.",
+          "tokens": [
+            { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "fui", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "médico", "l": "médico", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "dolor", "l": "dolor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "espalda", "l": "espalda", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "dio", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "consejo", "l": "consejo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "cambió", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "vida", "l": "vida", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Me dijo que debía caminar al menos media hora al día y comer más verduras.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "dijo", "l": "decir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "debía", "l": "deber", "p": "VERB", "w": true, "sp": true },
+            { "t": "caminar", "l": "caminar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "media", "l": "medio", "p": "ADJ", "w": true, "sp": true },
+            { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "comer", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "verduras", "l": "verdura", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Al principio me pareció muy difícil.",
+          "tokens": [
+            { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "pareció", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "difícil", "l": "difícil", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Sin embargo, decidí intentarlo durante un mes.",
+          "tokens": [
+            { "t": "Sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "embargo", "l": "embargo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "decidí", "l": "decidir", "p": "VERB", "w": true, "sp": true },
+            { "t": "intentarlo", "l": "intentar", "p": "VERB", "w": true, "sp": true },
+            { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "mes", "l": "mes", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Al principio solo caminaba veinte minutos.",
+          "tokens": [
+            { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "caminaba", "l": "caminar", "p": "VERB", "w": true, "sp": true },
+            { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true },
+            { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s5",
+          "text": "Empecé a ir al trabajo andando y a subir por las escaleras en lugar de usar el ascensor.",
+          "tokens": [
+            { "t": "Empecé", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "andando", "l": "andar", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "subir", "l": "subir", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "escaleras", "l": "escalera", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "lugar", "l": "lugar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "usar", "l": "usar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ascensor", "l": "ascensor", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "También cambié mi forma de comer.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "cambié", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "forma", "l": "forma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "comer", "l": "comer", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Dejé de tomar refrescos y empecé a beber agua.",
+          "tokens": [
+            { "t": "Dejé", "l": "dejar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "tomar", "l": "tomar", "p": "VERB", "w": true, "sp": true },
+            { "t": "refrescos", "l": "refresco", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "empecé", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "beber", "l": "beber", "p": "VERB", "w": true, "sp": true },
+            { "t": "agua", "l": "agua", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Por la noche cenaba una ensalada o una sopa, y los fines de semana cocinaba platos nuevos con mis amigos.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cenaba", "l": "cenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "ensalada", "l": "ensalada", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "sopa", "l": "sopa", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fines", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cocinaba", "l": "cocinar", "p": "VERB", "w": true, "sp": true },
+            { "t": "platos", "l": "plato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nuevos", "l": "nuevo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Poco a poco descubrí que la comida sana también puede ser muy rica.",
+          "tokens": [
+            { "t": "Poco", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "descubrí", "l": "descubrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "comida", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "sana", "l": "sano", "p": "ADJ", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "rica", "l": "rico", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s5",
+          "text": "Mis amigos me preguntaban cómo lo hacía, y yo les contaba que no era un secreto.",
+          "tokens": [
+            { "t": "Mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "preguntaban", "l": "preguntar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "hacía", "l": "hacer", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "les", "l": "ellos", "p": "PRON", "w": true, "sp": true },
+            { "t": "contaba", "l": "contar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "era", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "secreto", "l": "secreto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s6",
+          "text": "Solo hacía falta constancia.",
+          "tokens": [
+            { "t": "Solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "hacía", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "falta", "l": "falta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "constancia", "l": "constancia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s7",
+          "text": "Cuando llovía, ponía música en casa y bailaba durante un rato.",
+          "tokens": [
+            { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "llovía", "l": "llover", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "ponía", "l": "poner", "p": "VERB", "w": true, "sp": true },
+            { "t": "música", "l": "música", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "bailaba", "l": "bailar", "p": "VERB", "w": true, "sp": true },
+            { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "rato", "l": "rato", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Después de tres meses me sentía mucho mejor.",
+          "tokens": [
+            { "t": "Después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true },
+            { "t": "meses", "l": "mes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "sentía", "l": "sentir", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Tenía más energía, dormía mejor y ya no me dolía la espalda.",
+          "tokens": [
+            { "t": "Tenía", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "energía", "l": "energía", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "dormía", "l": "dormir", "p": "VERB", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "dolía", "l": "doler", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "espalda", "l": "espalda", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Además, había perdido cinco kilos sin hacer ninguna dieta especial.",
+          "tokens": [
+            { "t": "Además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "perdido", "l": "perder", "p": "VERB", "w": true, "sp": true },
+            { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true },
+            { "t": "kilos", "l": "kilo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "ninguna", "l": "ningún", "p": "DET", "w": true, "sp": true },
+            { "t": "dieta", "l": "dieta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "especial", "l": "especial", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Entonces me apunté a un gimnasio cerca de mi casa.",
+          "tokens": [
+            { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "apunté", "l": "apuntarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "gimnasio", "l": "gimnasio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Hoy hago deporte tres veces por semana.",
+          "tokens": [
+            { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "hago", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "deporte", "l": "deporte", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true },
+            { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Corro por el parque, nado en la piscina o juego al fútbol con mis compañeros de trabajo.",
+          "tokens": [
+            { "t": "Corro", "l": "correr", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "parque", "l": "parque", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "nado", "l": "nadar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "piscina", "l": "piscina", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "juego", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "fútbol", "l": "fútbol", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "compañeros", "l": "compañero", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "No soy un deportista profesional, pero disfruto mucho.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "soy", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "deportista", "l": "deportista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "profesional", "l": "profesional", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "disfruto", "l": "disfrutar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Lo más importante, para mí, es que he aprendido a escuchar a mi cuerpo.",
+          "tokens": [
+            { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "importante", "l": "importante", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "mí", "l": "yo", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "he", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "aprendido", "l": "aprender", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "escuchar", "l": "escuchar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "cuerpo", "l": "cuerpo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Si quieres empezar, mi consejo es que no te pongas objetivos imposibles.",
+          "tokens": [
+            { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "quieres", "l": "querer", "p": "VERB", "w": true, "sp": true },
+            { "t": "empezar", "l": "empezar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "consejo", "l": "consejo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true },
+            { "t": "pongas", "l": "poner", "p": "VERB", "w": true, "sp": true },
+            { "t": "objetivos", "l": "objetivo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "imposibles", "l": "imposible", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Es mejor cambiar un hábito cada vez que cambiarlo todo de una vez.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true },
+            { "t": "cambiar", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "hábito", "l": "hábito", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "cambiarlo", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Y, sobre todo, busca una actividad que te guste, porque así será más fácil mantenerla.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "busca", "l": "buscar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "actividad", "l": "actividad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true },
+            { "t": "guste", "l": "gustar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "así", "l": "así", "p": "ADV", "w": true, "sp": true },
+            { "t": "será", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "fácil", "l": "fácil", "p": "ADJ", "w": true, "sp": true },
+            { "t": "mantenerla", "l": "mantener", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "Los cambios pequeños, si se repiten cada día, acaban siendo grandes.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cambios", "l": "cambio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pequeños", "l": "pequeño", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "repiten", "l": "repetir", "p": "VERB", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "acaban", "l": "acabar", "p": "VERB", "w": true, "sp": true },
+            { "t": "siendo", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "grandes", "l": "grande", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Past habits and changes: imperfecto and indefinido",
+        "fr": "Habitudes passées et changements : imperfecto et indefinido",
+        "zh": "过去的习惯与变化：imperfecto 与 indefinido",
+        "ja": "過去の習慣と変化：線過去と点過去"
+      },
+      "explanation_es": {
+        "en": "The *imperfecto* describes old habits (*cenaba lo primero que encontraba*, *llegaba cansado*) and the *indefinido* marks the moment of change (*fui al médico*, *decidí intentarlo*, *me apunté*)."
+      },
+      "refs": ["p1s2", "p2s3"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "espalda",
+      "surface": "espalda",
+      "pos": "noun",
+      "def_en": "parte de atrás del cuerpo",
+      "def_es": { "en": "back", "fr": "dos", "zh": "背部", "ja": "背中" },
+      "ref": "p1s4"
+    },
+    {
+      "lemma": "gimnasio",
+      "surface": "gimnasio",
+      "pos": "noun",
+      "def_en": "lugar donde se hace ejercicio",
+      "def_es": { "en": "gym", "fr": "salle de sport", "zh": "健身房", "ja": "ジム" },
+      "ref": "p4s4"
+    },
+    {
+      "lemma": "apuntarse",
+      "surface": "apunté",
+      "pos": "verb",
+      "def_en": "inscribirse en una actividad",
+      "def_es": { "en": "to sign up", "fr": "s’inscrire", "zh": "报名", "ja": "申し込む" },
+      "ref": "p4s4"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Cuál es la idea principal del texto?",
+      "evidence": ["p6s4"],
+      "rationale_es": { "en": "The author shows how small daily changes improved his health." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Los médicos recomiendan operaciones de espalda" },
+        { "id": "b", "text": "Los cambios pequeños mejoran la salud" },
+        { "id": "c", "text": "El deporte profesional es el único bueno" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué le aconsejó el médico?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "The doctor advised walking at least half an hour a day and eating more vegetables." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Dejar de trabajar durante dos semanas" },
+        { "id": "b", "text": "Tomar pastillas para el dolor cada día" },
+        { "id": "c", "text": "Pasear media hora y tomar más verduras" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Al principio, el autor pensó que el consejo era fácil de seguir.",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "At first it seemed very difficult." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué cambió en su comida?",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "He stopped drinking soft drinks and started drinking water." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tomó agua en lugar de bebidas dulces" },
+        { "id": "b", "text": "Comió solo una vez al día para perder peso rápidamente" },
+        { "id": "c", "text": "Dejó de cocinar con sus amigos los fines de semana" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Qué se deduce de la frase «he aprendido a escuchar a mi cuerpo»?",
+      "evidence": ["p5s4"],
+      "rationale_es": { "en": "It means he now pays attention to how his body feels." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que ya no necesita ir al médico nunca más" },
+        { "id": "b", "text": "Que atiende a cómo se siente" },
+        { "id": "c", "text": "Que ha dejado de hacer ejercicio fuerte en casa" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "read",
+      "prompt": "¿Qué recomienda el autor a quien quiere empezar?",
+      "evidence": ["p6s1"],
+      "rationale_es": { "en": "He recommends not setting impossible goals." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Entrenar todos los días sin descanso" },
+        { "id": "b", "text": "Comprar mucho material deportivo" },
+        { "id": "c", "text": "Empezar con metas realistas" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p5s1"],
+      "rationale_es": { "en": "*Tres veces por semana*." },
+      "type": "gap_fill",
+      "text": "Hoy hace deporte tres veces por {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["semana"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 318,
+  "lemmas": [
+    "a", "acabar", "actividad", "además", "agua", "amigo", "andar", "aprender", "apuntarse", "ascensor", "así",
+    "año", "bailar", "beber", "buscar", "cada", "cambiar", "cambio", "caminar", "cansado", "casa", "casi",
+    "cenar", "cerca", "cocinar", "comer", "compañero", "con", "consejo", "constancia", "contar", "correr",
+    "cuando", "cuerpo", "cuidar", "cómo", "dar", "de", "deber", "decidir", "decir", "dejar", "deporte",
+    "deportista", "descubrir", "después", "dieta", "difícil", "disfrutar", "doler", "dolor", "dormir",
+    "durante", "día", "el", "ellos", "embargo", "empezar", "en", "encontrar", "energía", "ensalada",
+    "entonces", "escalera", "escuchar", "espalda", "especial", "falta", "fin", "forma", "fácil", "fútbol",
+    "gimnasio", "grande", "gustar", "haber", "hacer", "hora", "hoy", "hábito", "importante", "imposible",
+    "intentar", "ir", "jugar", "kilo", "llegar", "llover", "lugar", "mal", "mantener", "medio", "mejor",
+    "menos", "mes", "mi", "minuto", "mucho", "muy", "más", "médico", "música", "nadar", "ningún", "no",
+    "noche", "nuevo", "nunca", "o", "objetivo", "para", "parecer", "parque", "pensar", "pequeño", "perder",
+    "pero", "piscina", "plato", "poco", "poder", "poner", "por", "porque", "preguntar", "principio",
+    "profesional", "que", "querer", "rato", "refresco", "repetir", "rico", "sano", "se", "secreto", "semana",
+    "sentir", "ser", "si", "sin", "sobre", "solo", "sopa", "subir", "también", "tener", "tiempo", "todo",
+    "tomar", "trabajar", "tú", "un", "usar", "verdura", "vez", "vida", "y", "ya", "yo", "él"
+  ],
+  "difficulty": 1060,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6581, "A2": 0.8243, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 11.4,
+    "flesch_reading_ease": 79.8,
+    "checked_at": "2026-10-18T21:50:39.313Z"
+  }
+}

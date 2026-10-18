@@ -1,0 +1,1021 @@
+{
+  "id": "es-b2-rea-003",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u04",
+  "series": "es-b2-u04-sin-coches",
+  "skill": "reading",
+  "genre": "opinion",
+  "title": "Ciudades sin coches",
+  "summary_es": {
+    "en": "An opinion piece on what happens when a city limits traffic, who benefits and who loses.",
+    "fr": "Un texte d’opinion sur ce qui se passe quand une ville limite la circulation, qui y gagne et qui y perd.",
+    "zh": "一篇评论文章，谈一座城市限制交通后会发生什么、谁受益、谁受损。",
+    "ja": "都市が交通を制限するとどうなるか、誰が得をして誰が損をするかを論じた意見文です。"
+  },
+  "topic": "environment",
+  "tags": ["ciudades", "tráfico", "medio ambiente"],
+  "can_do": ["R-B2-01"],
+  "grammar_focus": ["es.b2.condicional-y-si"],
+  "vocab_focus": ["peatón", "emisión", "periferia", "aparcar"],
+  "est_minutes": 14,
+  "prediction_prompt": "¿Te gustaría vivir en una ciudad sin coches? ¿Qué ventajas y problemas habría?",
+  "pre_teach": ["peatón", "periferia"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Hace unos años, la idea de una ciudad sin coches parecía una fantasía.",
+          "tokens": [
+            { "t": "Hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "coches", "l": "coche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "parecía", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "fantasía", "l": "fantasía", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Hoy, en cambio, cada vez más alcaldes la consideran una prioridad.",
+          "tokens": [
+            { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "cambio", "l": "cambiar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "alcaldes", "l": "alcalde", "p": "NOUN", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "consideran", "l": "considerar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "prioridad", "l": "prioridad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Desde Pontevedra hasta Oslo, varias ciudades han limitado el tráfico en el centro y han convertido las calles en espacios para peatones y bicicletas.",
+          "tokens": [
+            { "t": "Desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "Pontevedra", "l": "pontevedra", "p": "PROPN", "w": false, "sp": true },
+            { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true },
+            { "t": "Oslo", "l": "oslo", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "varias", "l": "varios", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "limitado", "l": "limitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tráfico", "l": "tráfico", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "centro", "l": "centro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "convertido", "l": "convertirse", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "calles", "l": "calle", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "espacios", "l": "espacio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "peatones", "l": "peatón", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "bicicletas", "l": "bicicleta", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "Los resultados, según los datos, son sorprendentes.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "resultados", "l": "resultado", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "según", "l": "según", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "datos", "l": "dato", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "sorprendentes", "l": "sorprendente", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Pontevedra, una ciudad gallega de ochenta mil habitantes, prohibió los coches en su casco antiguo hace más de veinte años.",
+          "tokens": [
+            { "t": "Pontevedra", "l": "pontevedra", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "gallega", "l": "gallego", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "ochenta", "l": "ochenta", "p": "NUM", "w": false, "sp": true },
+            { "t": "mil", "l": "mil", "p": "NUM", "w": false, "sp": true },
+            { "t": "habitantes", "l": "habitante", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "prohibió", "l": "prohibir", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "coches", "l": "coche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "casco", "l": "casco", "p": "NOUN", "w": true, "sp": true },
+            { "t": "antiguo", "l": "antiguo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Desde entonces, el número de accidentes ha bajado casi a cero, y las emisiones de dióxido de carbono se han reducido a la mitad.",
+          "tokens": [
+            { "t": "Desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "entonces", "l": "entonces", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "número", "l": "número", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "accidentes", "l": "accidente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "bajado", "l": "bajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "cero", "l": "cero", "p": "NUM", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "emisiones", "l": "emisión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "dióxido", "l": "dióxido", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "carbono", "l": "carbono", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "reducido", "l": "reducir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mitad", "l": "mitad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Los comercios, que al principio temían perder clientes, comprobaron que la gente paseaba más y compraba más.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "comercios", "l": "comercio", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "temían", "l": "temer", "p": "VERB", "w": true, "sp": true },
+            { "t": "perder", "l": "perder", "p": "VERB", "w": true, "sp": true },
+            { "t": "clientes", "l": "cliente", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "comprobaron", "l": "comprobar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "paseaba", "l": "pasear", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "compraba", "l": "comprar", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Copenhague ofrece otro ejemplo.",
+          "tokens": [
+            { "t": "Copenhague", "l": "copenhague", "p": "PROPN", "w": false, "sp": true },
+            { "t": "ofrece", "l": "ofrecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "ejemplo", "l": "ejemplo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Más de la mitad de sus habitantes va al trabajo o a clase en bicicleta, incluso en invierno.",
+          "tokens": [
+            { "t": "Más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mitad", "l": "mitad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "habitantes", "l": "habitante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "va", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "clase", "l": "clase", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "bicicleta", "l": "bicicleta", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "incluso", "l": "incluso", "p": "ADV", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "invierno", "l": "invierno", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "La ciudad lleva décadas invirtiendo en carriles protegidos y en semáforos pensados para ciclistas, y esa constancia ha dado resultados.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "lleva", "l": "llevar", "p": "VERB", "w": true, "sp": true },
+            { "t": "décadas", "l": "década", "p": "NOUN", "w": true, "sp": true },
+            { "t": "invirtiendo", "l": "invertir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "carriles", "l": "carril", "p": "NOUN", "w": true, "sp": true },
+            { "t": "protegidos", "l": "proteger", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "semáforos", "l": "semáforo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pensados", "l": "pensar", "p": "VERB", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "ciclistas", "l": "ciclista", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "constancia", "l": "constancia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "dado", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "resultados", "l": "resultado", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Los beneficios para la salud son evidentes.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "beneficios", "l": "beneficio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "salud", "l": "salud", "p": "NOUN", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "evidentes", "l": "evidente", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Respirar aire más limpio reduce las enfermedades respiratorias, y caminar a diario ayuda a prevenir problemas de corazón.",
+          "tokens": [
+            { "t": "Respirar", "l": "respirar", "p": "VERB", "w": true, "sp": true },
+            { "t": "aire", "l": "aire", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "limpio", "l": "limpiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "reduce", "l": "reducir", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "enfermedades", "l": "enfermedad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "respiratorias", "l": "respiratorio", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "caminar", "l": "caminar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "diario", "l": "diario", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ayuda", "l": "ayudar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "prevenir", "l": "prevenir", "p": "VERB", "w": true, "sp": true },
+            { "t": "problemas", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "corazón", "l": "corazón", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Además, el silencio permite que los niños jueguen en la calle sin peligro, algo que durante décadas parecía imposible.",
+          "tokens": [
+            { "t": "Además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "silencio", "l": "silencio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "permite", "l": "permitir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "niños", "l": "niño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "jueguen", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "calle", "l": "calle", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "peligro", "l": "peligro", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "décadas", "l": "década", "p": "NOUN", "w": true, "sp": true },
+            { "t": "parecía", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "imposible", "l": "imposible", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Estudios recientes sugieren, además, que los niños que viven en calles tranquilas tienen más amigos y se sienten más seguros.",
+          "tokens": [
+            { "t": "Estudios", "l": "estudio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "recientes", "l": "reciente", "p": "ADJ", "w": true, "sp": true },
+            { "t": "sugieren", "l": "sugerir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "niños", "l": "niño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "viven", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "calles", "l": "calle", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tranquilas", "l": "tranquilo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "sienten", "l": "sentir", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "seguros", "l": "seguro", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Sin embargo, la transformación no está libre de conflictos.",
+          "tokens": [
+            { "t": "Sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "embargo", "l": "embargo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "transformación", "l": "transformación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "libre", "l": "libre", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "conflictos", "l": "conflicto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Muchos conductores se quejan de que no pueden aparcar cerca de su casa o de su trabajo.",
+          "tokens": [
+            { "t": "Muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "conductores", "l": "conductor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "quejan", "l": "quejarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "aparcar", "l": "aparcar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Los comerciantes de las afueras, que dependen de los clientes en coche, temen perder ingresos.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "comerciantes", "l": "comerciante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "afueras", "l": "afueras", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "dependen", "l": "depender", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "clientes", "l": "cliente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "coche", "l": "coche", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "temen", "l": "temer", "p": "VERB", "w": true, "sp": true },
+            { "t": "perder", "l": "perder", "p": "VERB", "w": true, "sp": true },
+            { "t": "ingresos", "l": "ingreso", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Y no todas las ciudades tienen un transporte público lo bastante bueno para sustituir al automóvil.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "todas", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "transporte", "l": "transporte", "p": "NOUN", "w": true, "sp": true },
+            { "t": "público", "l": "público", "p": "ADJ", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "bastante", "l": "bastante", "p": "ADV", "w": true, "sp": true },
+            { "t": "bueno", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "sustituir", "l": "sustituir", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "automóvil", "l": "automóvil", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Los expertos coinciden en que el éxito depende de ofrecer alternativas antes de prohibir nada.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "expertos", "l": "experto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "coinciden", "l": "coincidir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "éxito", "l": "éxito", "p": "NOUN", "w": true, "sp": true },
+            { "t": "depende", "l": "depender", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "ofrecer", "l": "ofrecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "alternativas", "l": "alternativo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "prohibir", "l": "prohibir", "p": "VERB", "w": true, "sp": true },
+            { "t": "nada", "l": "algo", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Si el autobús es rápido, el metro llega a todos los barrios y hay carriles bici seguros, la gente cambia de hábitos de forma natural.",
+          "tokens": [
+            { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "autobús", "l": "autobús", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "rápido", "l": "rápido", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "metro", "l": "metro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "llega", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "barrios", "l": "barrio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "carriles", "l": "carril", "p": "NOUN", "w": true, "sp": true },
+            { "t": "bici", "l": "bici", "p": "NOUN", "w": true, "sp": true },
+            { "t": "seguros", "l": "seguro", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cambia", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "hábitos", "l": "hábito", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "forma", "l": "forma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "natural", "l": "natural", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "En cambio, si se prohíbe sin ofrecer soluciones, se genera rechazo y la medida fracasa.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "cambio", "l": "cambiar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "prohíbe", "l": "prohibir", "p": "VERB", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "ofrecer", "l": "ofrecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "soluciones", "l": "solución", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "genera", "l": "generar", "p": "VERB", "w": true, "sp": true },
+            { "t": "rechazo", "l": "rechazo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "medida", "l": "medida", "p": "NOUN", "w": true, "sp": true },
+            { "t": "fracasa", "l": "fracasar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "También hay un debate sobre la justicia social.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "debate", "l": "debate", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "justicia", "l": "justicia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "social", "l": "social", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Las zonas de bajas emisiones suelen estar en barrios céntricos, donde viven personas con más ingresos, mientras que los residentes de la periferia necesitan el coche para llegar a sus trabajos.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "zonas", "l": "zona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "bajas", "l": "bajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "emisiones", "l": "emisión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "suelen", "l": "soler", "p": "VERB", "w": true, "sp": true },
+            { "t": "estar", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "barrios", "l": "barrio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "céntricos", "l": "céntrico", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "viven", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "ingresos", "l": "ingreso", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "mientras", "l": "mientras", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "residentes", "l": "residente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "periferia", "l": "periferia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "necesitan", "l": "necesitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "coche", "l": "coche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "llegar", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "trabajos", "l": "trabajo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Por eso, algunos urbanistas piden que las medidas vayan acompañadas de ayudas y de mejoras del transporte en los barrios más alejados.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "eso", "l": "esto", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "urbanistas", "l": "urbanista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "piden", "l": "pedir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "medidas", "l": "medida", "p": "NOUN", "w": true, "sp": true },
+            { "t": "vayan", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "acompañadas", "l": "acompañar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "ayudas", "l": "ayudar", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "mejoras", "l": "mejorar", "p": "VERB", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "transporte", "l": "transporte", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "barrios", "l": "barrio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "alejados", "l": "alejado", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "sentences": [
+        {
+          "id": "p8s1",
+          "text": "Personalmente, creo que el modelo merece la pena, siempre que se aplique con paciencia.",
+          "tokens": [
+            { "t": "Personalmente", "l": "personalmente", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "creo", "l": "creer", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "modelo", "l": "modelo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "merece", "l": "merecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pena", "l": "pena", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "aplique", "l": "aplicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "paciencia", "l": "paciencia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s2",
+          "text": "Una ciudad se parece más a un organismo vivo que a una máquina, y los cambios bruscos rara vez funcionan.",
+          "tokens": [
+            { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "organismo", "l": "organismo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "vivo", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "máquina", "l": "máquina", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cambios", "l": "cambio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "bruscos", "l": "brusco", "p": "ADJ", "w": true, "sp": true },
+            { "t": "rara", "l": "raro", "p": "ADJ", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "funcionan", "l": "funcionar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s3",
+          "text": "Cualquier cambio de este tamaño necesita tiempo para que la gente se acostumbre.",
+          "tokens": [
+            { "t": "Cualquier", "l": "cualquier", "p": "ADJ", "w": true, "sp": true },
+            { "t": "cambio", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "tamaño", "l": "tamaño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "necesita", "l": "necesitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "acostumbre", "l": "acostumbrarse", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s4",
+          "text": "Pero si se avanza paso a paso, escuchando a los vecinos, el resultado puede ser una ciudad más sana, más tranquila y más humana.",
+          "tokens": [
+            { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "avanza", "l": "avanzar", "p": "VERB", "w": true, "sp": true },
+            { "t": "paso", "l": "pasar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "paso", "l": "pasar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "escuchando", "l": "escuchar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "resultado", "l": "resultado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "sana", "l": "sano", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "tranquila", "l": "tranquilo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "humana", "l": "humano", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "sentences": [
+        {
+          "id": "p9s1",
+          "text": "Quizá dentro de veinte años nos parezca extraño que alguna vez las plazas estuvieran llenas de coches aparcados.",
+          "tokens": [
+            { "t": "Quizá", "l": "quizá", "p": "ADV", "w": true, "sp": true },
+            { "t": "dentro", "l": "dentro", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "parezca", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "extraño", "l": "extraño", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "alguna", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "plazas", "l": "plaza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "estuvieran", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "llenas", "l": "llenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "coches", "l": "coche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "aparcados", "l": "aparcar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p9s2",
+          "text": "Del mismo modo que hoy nos sorprende que se fumara en los hospitales, mañana nos sorprenderá que dejáramos tanto espacio público para los vehículos privados.",
+          "tokens": [
+            { "t": "Del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "sp": true },
+            { "t": "modo", "l": "modo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "sorprende", "l": "sorprender", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "fumara", "l": "fumar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "hospitales", "l": "hospital", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "sorprenderá", "l": "sorprender", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "dejáramos", "l": "dejar", "p": "VERB", "w": true, "sp": true },
+            { "t": "tanto", "l": "tanto", "p": "ADV", "w": true, "sp": true },
+            { "t": "espacio", "l": "espacio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "público", "l": "público", "p": "ADJ", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vehículos", "l": "vehículo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "privados", "l": "privado", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Concessive and conditional nuances: siempre que, si bien",
+        "fr": "Nuances concessives et conditionnelles : siempre que, si bien",
+        "zh": "让步与条件的细微差别：siempre que, si bien",
+        "ja": "譲歩・条件のニュアンス：siempre que, si bien"
+      },
+      "explanation_es": {
+        "en": "*Siempre que* + subjunctive sets a condition (*siempre que se aplique con paciencia*). The imperfect subjunctive after *nos parezca / sorprenda que* imagines a future judgement (*nos sorprenderá que dejáramos…*)."
+      },
+      "refs": ["p8s1", "p9s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "peatón",
+      "surface": "peatones",
+      "pos": "noun",
+      "def_en": "persona que va a pie por la calle",
+      "def_es": { "en": "pedestrian", "fr": "piéton", "zh": "行人", "ja": "歩行者" },
+      "ref": "p1s3"
+    },
+    {
+      "lemma": "periferia",
+      "surface": "periferia",
+      "pos": "noun",
+      "def_en": "zona que rodea el centro de una ciudad",
+      "def_es": { "en": "outskirts, periphery", "fr": "périphérie", "zh": "郊区", "ja": "郊外" },
+      "ref": "p7s2"
+    },
+    {
+      "lemma": "aparcar",
+      "surface": "aparcar",
+      "pos": "verb",
+      "def_en": "dejar el coche en un lugar",
+      "def_es": { "en": "to park", "fr": "se garer", "zh": "停车", "ja": "駐車する" },
+      "ref": "p5s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Cuál es la idea central del texto?",
+      "evidence": ["p6s1", "p8s1"],
+      "rationale_es": { "en": "The author defends the model if it comes with alternatives and is applied patiently." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Los coches deben prohibirse en todas las ciudades del mundo inmediatamente" },
+        {
+          "id": "b",
+          "text": "Limitar los coches mejora las ciudades si se hace con alternativas y paciencia"
+        },
+        {
+          "id": "c",
+          "text": "Las ciudades sin coches fracasan siempre porque los comercios pierden clientes"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué ocurrió en Pontevedra tras prohibir los coches en el casco antiguo?",
+      "evidence": ["p2s2", "p2s2"],
+      "rationale_es": { "en": "Accidents dropped to almost zero and emissions were halved." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Se cerraron la mayoría de los comercios" },
+        { "id": "b", "text": "Aumentó el número de visitantes extranjeros" },
+        { "id": "c", "text": "Hubo menos accidentes y se contaminó menos" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Los comerciantes de Pontevedra perdieron clientes tras la prohibición.",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "They found that people walked more and bought more." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Por qué temen perder ingresos los comerciantes de las afueras?",
+      "evidence": ["p5s3"],
+      "rationale_es": { "en": "They depend on customers who come by car." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque la mayoría de su público viene conduciendo" },
+        { "id": "b", "text": "Porque no tienen publicidad suficiente para atraer a gente nueva" },
+        { "id": "c", "text": "Porque los alquileres de sus locales han subido muchísimo" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Qué se deduce del debate sobre la justicia social?",
+      "evidence": ["p7s2"],
+      "rationale_es": { "en": "People on the outskirts rely on the car to get to work, so they may be hit hardest." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que los vecinos del centro están en contra de las medidas" },
+        { "id": "b", "text": "Que las medidas pueden perjudicar más a quienes viven lejos del centro" },
+        { "id": "c", "text": "Que los urbanistas no creen en las zonas de bajas emisiones" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "read",
+      "prompt": "¿Qué actitud adopta el autor al final?",
+      "evidence": ["p8s4"],
+      "rationale_es": { "en": "He is hopeful but stresses gradual change and listening to residents." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Crítica y desconfiada" },
+        { "id": "b", "text": "Indiferente" },
+        { "id": "c", "text": "Optimista, pero prudente" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "*En bicicleta*." },
+      "type": "gap_fill",
+      "text": "Más de la mitad de los habitantes de Copenhague va al trabajo en {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["bicicleta"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 509,
+  "lemmas": [
+    "a", "accidente", "acompañar", "acostumbrarse", "además", "afueras", "aire", "alcalde", "alejado", "algo",
+    "algún", "alternativo", "amigo", "antes", "antiguo", "aparcar", "aplicar", "autobús", "automóvil",
+    "avanzar", "ayudar", "año", "bajar", "barrio", "bastante", "beneficio", "bici", "bicicleta", "brusco",
+    "bueno", "cada", "calle", "cambiar", "cambio", "caminar", "carbono", "carril", "casa", "casco", "casi",
+    "centro", "cerca", "ciclista", "ciudad", "clase", "cliente", "coche", "coincidir", "comerciante",
+    "comercio", "comprar", "comprobar", "con", "conductor", "conflicto", "considerar", "constancia",
+    "convertirse", "corazón", "creer", "cualquier", "céntrico", "dar", "dato", "de", "debate", "dejar",
+    "dentro", "depender", "desde", "diario", "dióxido", "donde", "durante", "década", "ejemplo", "el",
+    "embargo", "emisión", "en", "enfermedad", "entonces", "escuchar", "ese", "espacio", "estar", "este",
+    "esto", "estudio", "evidente", "experto", "extraño", "fantasía", "forma", "fracasar", "fumar", "funcionar",
+    "gallego", "generar", "gente", "haber", "habitante", "hacer", "hasta", "hospital", "hoy", "humano",
+    "hábito", "idea", "imposible", "incluso", "ingreso", "invertir", "invierno", "ir", "jugar", "justicia",
+    "libre", "limitar", "limpiar", "llegar", "llenar", "llevar", "mañana", "medida", "mejorar", "merecer",
+    "metro", "mientras", "mismo", "mitad", "modelo", "modo", "mucho", "máquina", "más", "natural", "necesitar",
+    "niño", "no", "nosotros", "número", "o", "ofrecer", "organismo", "otro", "paciencia", "para", "parecer",
+    "pasar", "pasear", "peatón", "pedir", "peligro", "pena", "pensar", "perder", "periferia", "permitir",
+    "pero", "persona", "personalmente", "plaza", "poder", "por", "prevenir", "principio", "prioridad",
+    "privado", "problema", "prohibir", "proteger", "público", "que", "quejarse", "quizá", "raro", "rechazo",
+    "reciente", "reducir", "residente", "respirar", "respiratorio", "resultado", "rápido", "salud", "sano",
+    "se", "seguro", "según", "semáforo", "sentir", "ser", "si", "siempre", "silencio", "sin", "sobre",
+    "social", "soler", "solución", "sorprendente", "sorprender", "su", "sugerir", "sustituir", "tamaño",
+    "también", "tanto", "temer", "tener", "tiempo", "todo", "trabajar", "trabajo", "tranquilo",
+    "transformación", "transporte", "tráfico", "un", "urbanista", "varios", "vecino", "vehículo", "vez",
+    "vivir", "y", "zona", "él", "éxito"
+  ],
+  "difficulty": 1266,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6, "A2": 0.71, "B1": 0.868, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 17,
+    "flesch_reading_ease": 67.6,
+    "checked_at": "2026-10-18T21:59:42.142Z"
+  }
+}

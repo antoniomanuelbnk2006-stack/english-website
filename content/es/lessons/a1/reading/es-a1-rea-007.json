@@ -1,0 +1,339 @@
+{
+  "id": "es-a1-rea-007",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u02",
+  "series": "es-a1-u02-amigo",
+  "skill": "reading",
+  "genre": "blog",
+  "title": "Mi amigo Daniel",
+  "summary_es": {
+    "en": "A boy describes his best friend and what they do on Saturdays.",
+    "fr": "Un garçon décrit son meilleur ami et ce qu’ils font le samedi.",
+    "zh": "一个男孩介绍他最好的朋友，以及他们周六做什么。",
+    "ja": "男の子が親友のことと、土曜日にすることを紹介します。"
+  },
+  "topic": "relationships",
+  "tags": ["amigos", "descripción", "tener"],
+  "can_do": ["R-A1-01"],
+  "grammar_focus": ["es.a1.tener-y-hay"],
+  "vocab_focus": ["amigo", "simpático", "tenis", "restaurante"],
+  "est_minutes": 4,
+  "prediction_prompt": "¿Cómo es tu mejor amigo o tu mejor amiga?",
+  "pre_teach": ["simpático", "tenis"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Mi amigo se llama Daniel.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "amigo", "l": "amigo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "llama", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "Daniel", "l": "daniel", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Es muy simpático.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "simpático", "l": "simpático", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Tiene veinte años.",
+          "tokens": [
+            { "t": "Tiene", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "Vive cerca de mi casa.",
+          "tokens": [
+            { "t": "Vive", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Daniel es bueno y tranquilo.",
+          "tokens": [
+            { "t": "Daniel", "l": "daniel", "p": "PROPN", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "bueno", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "tranquilo", "l": "tranquilo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Le gusta leer.",
+          "tokens": [
+            { "t": "Le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "leer", "l": "leer", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Le gusta mucho el tenis.",
+          "tokens": [
+            { "t": "Le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tenis", "l": "tenis", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Estudia medicina en la ciudad.",
+          "tokens": [
+            { "t": "Estudia", "l": "estudiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "medicina", "l": "medicina", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Los sábados jugamos al tenis.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sábados", "l": "sábado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "jugamos", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "tenis", "l": "tenis", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Después comemos en un restaurante.",
+          "tokens": [
+            { "t": "Después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "comemos", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "restaurante", "l": "restaurante", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Daniel come tortilla.",
+          "tokens": [
+            { "t": "Daniel", "l": "daniel", "p": "PROPN", "w": false, "sp": true },
+            { "t": "come", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "tortilla", "l": "tortilla", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Yo como ensalada.",
+          "tokens": [
+            { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "ensalada", "l": "ensalada", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s5",
+          "text": "Es un buen amigo.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "amigo", "l": "amigo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Tener: age and things you have",
+        "fr": "Tener : l’âge et ce qu’on a",
+        "zh": "tener：年龄和拥有的东西",
+        "ja": "tener：年齢と持っているもの"
+      },
+      "explanation_es": {
+        "en": "In Spanish we say age with *tener*: *Tiene veinte años* (He is twenty). *Tener* also means to have."
+      },
+      "refs": ["p1s3"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "simpático",
+      "surface": "simpático",
+      "pos": "adjective",
+      "def_en": "una persona agradable",
+      "def_es": { "en": "nice, friendly", "fr": "sympathique", "zh": "亲切的", "ja": "感じのいい" },
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "tenis",
+      "surface": "tenis",
+      "pos": "noun",
+      "def_en": "deporte con raqueta y pelota",
+      "def_es": { "en": "tennis", "fr": "tennis", "zh": "网球", "ja": "テニス" },
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "tortilla",
+      "surface": "tortilla",
+      "pos": "noun",
+      "def_en": "comida de huevo y patata",
+      "def_es": { "en": "Spanish omelette", "fr": "tortilla espagnole", "zh": "西班牙土豆蛋饼", "ja": "スペイン風オムレツ" },
+      "ref": "p3s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿De qué habla el texto?",
+      "evidence": ["p1s1"],
+      "rationale_es": { "en": "The text describes the author’s best friend, Daniel." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De una escuela nueva en Madrid" },
+        { "id": "b", "text": "De un amigo" },
+        { "id": "c", "text": "De un viaje largo en tren" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Dónde vive Daniel?",
+      "evidence": ["p1s4"],
+      "rationale_es": { "en": "*Vive cerca de mi casa*: he lives near the author." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En otra ciudad, lejos" },
+        { "id": "b", "text": "En una casa de Madrid" },
+        { "id": "c", "text": "Cerca del autor" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Daniel tiene diez años.",
+      "evidence": ["p1s3"],
+      "rationale_es": { "en": "*Tiene veinte años*: he is twenty." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué le gusta a Daniel?",
+      "evidence": ["p2s2", "p2s3"],
+      "rationale_es": { "en": "*Le gusta leer* and *le gusta mucho el tenis*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Leer y el tenis" },
+        { "id": "b", "text": "Viajar y comer paella" },
+        { "id": "c", "text": "Escribir libros en inglés" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué hacen los sábados?",
+      "evidence": ["p3s1"],
+      "rationale_es": { "en": "*Los sábados jugamos al tenis*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Van a la playa en tren" },
+        { "id": "b", "text": "Juegan al tenis" },
+        { "id": "c", "text": "Leen libros en casa" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "*Comemos en un restaurante*." },
+      "type": "gap_fill",
+      "text": "Después de jugar, comen en un {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["restaurante"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 54,
+  "lemmas": [
+    "a", "amigo", "año", "bueno", "casa", "cerca", "ciudad", "comer", "de", "después", "el", "en", "ensalada",
+    "estudiar", "gustar", "jugar", "leer", "llamarse", "medicina", "mi", "mucho", "muy", "restaurante", "se",
+    "ser", "simpático", "sábado", "tener", "tenis", "tortilla", "tranquilo", "un", "vivir", "y", "yo", "él"
+  ],
+  "difficulty": 659,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 4.2,
+    "flesch_reading_ease": 88.2,
+    "checked_at": "2026-10-18T21:38:33.650Z"
+  }
+}

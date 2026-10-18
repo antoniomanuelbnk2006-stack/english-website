@@ -91,7 +91,7 @@
             { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
             { "t": "detenemos", "l": "detener", "p": "VERB", "w": true, "sp": true },
             { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
-            { "t": "preguntarnos", "l": "preguntarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "preguntarnos", "l": "preguntar", "p": "VERB", "w": true, "sp": true },
             { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
             { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
             { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
@@ -578,7 +578,7 @@
             { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
             { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
             { "t": "simple", "l": "simple", "p": "ADJ", "w": true, "sp": true },
-            { "t": "retraso", "l": "retrasar", "p": "VERB", "w": true },
+            { "t": "retraso", "l": "retraso", "p": "NOUN", "w": true },
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true },
             { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
@@ -1586,12 +1586,12 @@
     "objeción", "objetar", "observar", "obsesión", "ocio", "ofrecer", "ojo", "optimizar", "ordenar", "origen",
     "otro", "paciencia", "pagar", "paisaje", "para", "paradoja", "parecer", "parte", "pasado", "pasear",
     "paso", "pausa", "pausado", "pensar", "pequeño", "pereza", "permanente", "permitir", "pero", "pertenecer",
-    "peso", "poco", "poder", "política", "poner", "por", "posible", "precio", "preguntarse", "premiar",
-    "previo", "prisa", "privilegio", "probablemente", "producir", "productor", "proeza", "progreso", "propio",
+    "peso", "poco", "poder", "política", "poner", "por", "posible", "precio", "preguntar", "premiar", "previo",
+    "prisa", "privilegio", "probablemente", "producir", "productor", "proeza", "progreso", "propio",
     "protesta", "punto", "que", "quien", "quizá", "qué", "rapidez", "raro", "razón", "realmente", "reciente",
     "reconocer", "recordar", "recuperar", "recurso", "reflexión", "regresar", "reivindicar", "relación",
     "relativamente", "reloj", "rentabilizar", "renunciar", "repartir", "resistencia", "resolver", "responder",
-    "respuesta", "retener", "retrasar", "revolución", "ritmo", "rumbo", "rápido", "sabiduría", "sabor", "sano",
+    "respuesta", "retener", "retraso", "revolución", "ritmo", "rumbo", "rápido", "sabiduría", "sabor", "sano",
     "se", "semana", "semejante", "sensación", "separar", "ser", "serio", "signo", "silencio", "simple",
     "simplemente", "sin", "sino", "sobre", "soler", "solo", "sospechoso", "sostener", "su", "subversivo",
     "suceder", "superficial", "surgir", "síntoma", "sólido", "taller", "también", "tampoco", "tan", "tardar",
@@ -1602,10 +1602,10 @@
   ],
   "difficulty": 1655,
   "qa": {
-    "coverage_by_level": { "A1": 0.5779, "A2": 0.6101, "B1": 0.6896, "B2": 0.754, "C1": 0.8228, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5779, "A2": 0.6638, "B1": 0.7691, "B2": 0.8292, "C1": 0.8614, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 21.2,
     "flesch_reading_ease": 62.8,
-    "checked_at": "2026-10-18T20:56:21.156Z"
+    "checked_at": "2026-10-18T22:29:03.857Z"
   }
 }

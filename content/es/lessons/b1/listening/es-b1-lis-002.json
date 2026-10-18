@@ -305,7 +305,7 @@
         { "t": "sitio", "l": "sitio", "p": "NOUN", "w": true, "sp": true, "s": 67.249, "e": 67.587 },
         { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 67.587, "e": 67.812 },
         { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 67.812, "e": 67.981 },
-        { "t": "camino", "l": "camino", "p": "NOUN", "w": true, "s": 67.981, "e": 68.375 },
+        { "t": "camino", "l": "caminar", "p": "VERB", "w": true, "s": 67.981, "e": 68.375 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
       ],
       "start": 62.539,
@@ -471,7 +471,7 @@
   },
   "lemmas": [
     "a", "acabar", "activo", "acuerdo", "adónde", "agosto", "algo", "algún", "allí", "alojamiento", "apetecer",
-    "aunque", "barato", "bastante", "buscar", "calor", "camino", "caro", "cerca", "coche", "como", "con",
+    "aunque", "barato", "bastante", "buscar", "calor", "caminar", "caro", "cerca", "coche", "como", "con",
     "conocer", "convencer", "cosa", "costa", "de", "decidir", "descansar", "después", "el", "en", "encontrar",
     "entonces", "estar", "este", "esto", "genial", "gente", "gustar", "haber", "hacer", "hotel", "idea",
     "interior", "ir", "llover", "malo", "mejor", "mirar", "mismo", "montaña", "mucho", "muchísimo", "muy",
@@ -483,11 +483,11 @@
   ],
   "difficulty": 1067,
   "qa": {
-    "coverage_by_level": { "A1": 0.641, "A2": 0.7372, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.641, "A2": 0.7949, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 7,
     "flesch_reading_ease": 84.2,
-    "checked_at": "2026-10-18T20:27:53.977Z"
+    "checked_at": "2026-10-18T22:29:03.857Z"
   },
   "audio": {
     "src": "audio/b1/es-b1-lis-002/v1.m4a",

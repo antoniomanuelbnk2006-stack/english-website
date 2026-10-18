@@ -1,0 +1,53 @@
+{
+  "id": "es-c2-wri-003",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "task_type": "essay",
+  "title": "Elogio de la duda",
+  "topic": "society",
+  "context_es": {
+    "en": "A philosophy magazine invites readers to defend an unpopular idea. You argue that doubt is a virtue.",
+    "fr": "Une revue de philosophie invite ses lecteurs à défendre une idée impopulaire. Vous soutenez que le doute est une vertu.",
+    "zh": "一本哲学杂志邀请读者为一个不太受欢迎的观点辩护。你论证“怀疑是一种美德”。",
+    "ja": "哲学雑誌が、読者に人気のない考えを擁護するよう呼びかけています。「疑うことは美徳だ」と論じます。"
+  },
+  "prompt_en": "Una revista de filosofía invita a los lectores a defender una idea impopular. Escribe un ensayo en el que sostengas que la duda es una virtud, anticipa las objeciones y responde a ellas.",
+  "points": [
+    "formula tu tesis de manera provocadora pero clara",
+    "desarrolla al menos dos argumentos con ejemplos",
+    "anticipa una objeción y respóndela"
+  ],
+  "words_min": 280,
+  "words_max": 400,
+  "time_min": 75,
+  "useful_language": [
+    "Cabría sostener que …",
+    "Lejos de ser …, …",
+    "Se objetará que …",
+    "Ahora bien, …",
+    "No es que …, sino que …",
+    "A fin de cuentas, …"
+  ],
+  "tips_es": [
+    {
+      "en": "At C2 the argument must be tight: thesis, evidence, objection, reply, conclusion. Make each paragraph do one job.",
+      "fr": "Au niveau C2, l’argumentation doit être serrée : thèse, preuves, objection, réponse, conclusion. Que chaque paragraphe ait une fonction.",
+      "zh": "C2 水平的论证必须严谨：论点、证据、反驳、回应、结论。每个段落只承担一项任务。",
+      "ja": "C2 では論証が緊密であるべきです：主張、根拠、反論、再反論、結論。各段落に一つの役割を持たせます。"
+    },
+    {
+      "en": "Vary your register and syntax: combine long periods with short, direct sentences, and use one or two well-chosen idioms.",
+      "fr": "Variez le registre et la syntaxe : combinez de longues périodes et des phrases courtes et directes, avec une ou deux locutions bien choisies.",
+      "zh": "变换语体和句法：长句与简短直接的句子结合，并使用一两个恰当的习语。",
+      "ja": "文体と構文に変化を：長い文と短く直接的な文を組み合わせ、よく選んだ慣用句を一つか二つ使います。"
+    }
+  ],
+  "model_answer": "Cabría sostener que la duda, lejos de ser una debilidad, es la más inteligente de nuestras virtudes. Vivimos en una época que premia la seguridad: el político que no vacila, el experto que lo sabe todo, el comentarista que sentencia en tres líneas. Sin embargo, casi todo lo que conocemos hoy nació de alguien que se atrevió a dudar de lo que parecía evidente. Basta recordar que muchas de las grandes injusticias de la historia se cometieron desde la certeza absoluta de quien no admitía réplica.\n\nEn primer lugar, dudar protege del error más peligroso, que es el que no sabemos que cometemos. Quien está plenamente convencido no revisa sus creencias; quien duda las pone a prueba y, con frecuencia, descubre que se sostenían sobre supuestos frágiles. La ciencia avanza precisamente porque sus hipótesis nacen para ser cuestionadas.\n\nEn segundo lugar, la duda hace posible la convivencia. Si admitimos que podemos equivocarnos, escuchamos con más atención a quien piensa distinto y estamos dispuestos a corregirnos. No es que el dudoso renuncie a sus ideas, sino que las defiende con la humildad de saber que no son definitivas.\n\nSe objetará que la duda paraliza: quien duda de todo no hace nada. Ahora bien, esa objeción confunde la duda con la indecisión. La primera es un método para decidir mejor; la segunda, una forma de huir de la decisión. Se puede dudar y actuar, de la misma manera que un médico, ante un diagnóstico incierto, solicita nuevas pruebas y, mientras tanto, empieza un tratamiento prudente.\n\nA fin de cuentas, quizá la mejor prueba de inteligencia no sea tener respuestas, sino conservar la capacidad de hacer preguntas incómodas. Quien duda con rigor no está en las nubes: está dando en el clavo de lo que realmente significa pensar.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

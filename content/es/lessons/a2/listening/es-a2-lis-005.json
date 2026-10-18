@@ -1,0 +1,420 @@
+{
+  "id": "es-a2-lis-005",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u05",
+  "series": "es-a2-u05-hotel",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Reservar una habitación",
+  "summary_es": {
+    "en": "A man calls a hotel to book a double room for two nights.",
+    "fr": "Un homme appelle un hôtel pour réserver une chambre double pour deux nuits.",
+    "zh": "一位男士打电话给酒店，预订两晚的双人房。",
+    "ja": "男性がホテルに電話して、二泊のツインルームを予約します。"
+  },
+  "topic": "travel",
+  "tags": ["hotel", "reserva", "fechas"],
+  "can_do": ["L-A2-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["habitación", "noche", "desayuno", "precio"],
+  "est_minutes": 6,
+  "prediction_prompt": "Quieres reservar una habitación de hotel. ¿Qué información das?",
+  "pre_teach": ["doble", "aparcamiento"],
+  "speakers": [
+    { "id": "pablo", "name": "Pablo", "accent": "es-ES", "gender": "male" },
+    { "id": "carmen", "name": "Carmen", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 110,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "pablo",
+      "text": "Buenos días. Quiero reservar una habitación.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.413 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 0.413, "e": 0.701 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 1.17, "e": 1.506 },
+        { "t": "reservar", "l": "reservar", "p": "VERB", "w": true, "sp": true, "s": 1.506, "e": 1.939 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 1.939, "e": 2.131 },
+        { "t": "habitación", "l": "habitación", "p": "NOUN", "w": true, "s": 2.131, "e": 2.66 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.719
+    },
+    {
+      "id": "s2",
+      "speaker": "carmen",
+      "text": "Claro. ¿Para qué fechas?",
+      "tokens": [
+        { "t": "Claro", "l": "claro", "p": "ADJ", "w": true, "s": 3.429, "e": 3.769 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 4.009, "e": 4.337 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 4.337, "e": 4.6 },
+        { "t": "fechas", "l": "fecha", "p": "NOUN", "w": true, "s": 4.6, "e": 5.059 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.419,
+      "end": 5.135
+    },
+    {
+      "id": "s3",
+      "speaker": "pablo",
+      "text": "Del diez al doce de mayo.",
+      "tokens": [
+        { "t": "Del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 5.865, "e": 6.047 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true, "s": 6.047, "e": 6.275 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 6.275, "e": 6.412 },
+        { "t": "doce", "l": "doce", "p": "NUM", "w": false, "sp": true, "s": 6.412, "e": 6.64 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 6.64, "e": 6.777 },
+        { "t": "mayo", "l": "mayo", "p": "NOUN", "w": true, "s": 6.777, "e": 7.005 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.835,
+      "end": 7.075
+    },
+    {
+      "id": "s4",
+      "speaker": "carmen",
+      "text": "Son dos noches. ¿Habitación individual o doble?",
+      "tokens": [
+        { "t": "Son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 7.795, "e": 8.078 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 8.078, "e": 8.361 },
+        { "t": "noches", "l": "noche", "p": "NOUN", "w": true, "s": 8.36, "e": 8.855 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Habitación", "l": "habitación", "p": "NOUN", "w": true, "sp": true, "s": 9.095, "e": 9.737 },
+        { "t": "individual", "l": "individual", "p": "ADJ", "w": true, "sp": true, "s": 9.737, "e": 10.379 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 10.378, "e": 10.495 },
+        { "t": "doble", "l": "doble", "p": "ADJ", "w": true, "s": 10.495, "e": 10.845 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.775,
+      "end": 10.925
+    },
+    {
+      "id": "s5",
+      "speaker": "pablo",
+      "text": "Doble, por favor. Somos dos personas.",
+      "tokens": [
+        { "t": "Doble", "l": "doble", "p": "ADJ", "w": true, "s": 11.625, "e": 12.021 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 12.021, "e": 12.285 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 12.285, "e": 12.681 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Somos", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 12.681, "e": 13.077 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 13.077, "e": 13.341 },
+        { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "s": 13.341, "e": 13.935 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.625,
+      "end": 14.007
+    },
+    {
+      "id": "s6",
+      "speaker": "carmen",
+      "text": "Tenemos una habitación con vistas al mar.",
+      "tokens": [
+        { "t": "Tenemos", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 14.717, "e": 15.162 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 15.162, "e": 15.384 },
+        { "t": "habitación", "l": "habitación", "p": "NOUN", "w": true, "sp": true, "s": 15.384, "e": 15.996 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 15.996, "e": 16.218 },
+        { "t": "vistas", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 16.218, "e": 16.607 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 16.608, "e": 16.775 },
+        { "t": "mar", "l": "mar", "p": "NOUN", "w": true, "s": 16.775, "e": 16.997 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 14.707,
+      "end": 17.121
+    },
+    {
+      "id": "s7",
+      "speaker": "pablo",
+      "text": "¿Cuánto cuesta por noche?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuánto", "l": "cuánto", "p": "PRON", "w": true, "sp": true, "s": 17.821, "e": 18.101 },
+        { "t": "cuesta", "l": "costar", "p": "VERB", "w": true, "sp": true, "s": 18.101, "e": 18.381 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 18.381, "e": 18.541 },
+        { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "s": 18.541, "e": 18.781 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.821,
+      "end": 18.862
+    },
+    {
+      "id": "s8",
+      "speaker": "carmen",
+      "text": "Cuesta setenta euros con desayuno.",
+      "tokens": [
+        { "t": "Cuesta", "l": "costar", "p": "VERB", "w": true, "sp": true, "s": 19.572, "e": 19.998 },
+        { "t": "setenta", "l": "setenta", "p": "NUM", "w": false, "sp": true, "s": 19.998, "e": 20.485 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "sp": true, "s": 20.485, "e": 20.85 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 20.851, "e": 21.095 },
+        { "t": "desayuno", "l": "desayunar", "p": "VERB", "w": true, "s": 21.094, "e": 21.642 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.562,
+      "end": 21.701
+    },
+    {
+      "id": "s9",
+      "speaker": "pablo",
+      "text": "Me parece bien. ¿Hay aparcamiento?",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 22.431, "e": 22.591 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 22.591, "e": 22.964 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 22.964, "e": 23.231 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 23.651, "e": 23.849 },
+        { "t": "aparcamiento", "l": "aparcamiento", "p": "NOUN", "w": true, "s": 23.849, "e": 24.491 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.401,
+      "end": 24.556
+    },
+    {
+      "id": "s10",
+      "speaker": "carmen",
+      "text": "Sí, hay un aparcamiento gratis.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 25.276, "e": 25.495 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 25.495, "e": 25.787 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 25.787, "e": 26.006 },
+        {
+          "t": "aparcamiento",
+          "l": "aparcamiento",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 26.006,
+          "e": 26.955
+        },
+        { "t": "gratis", "l": "gratis", "p": "ADV", "w": true, "s": 26.955, "e": 27.466 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.256,
+      "end": 27.534
+    },
+    {
+      "id": "s11",
+      "speaker": "pablo",
+      "text": "Perfecto. Mi nombre es Pablo García.",
+      "tokens": [
+        { "t": "Perfecto", "l": "perfecto", "p": "ADJ", "w": true, "s": 28.234, "e": 28.764 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 29.274, "e": 29.43 },
+        { "t": "nombre", "l": "nombre", "p": "NOUN", "w": true, "sp": true, "s": 29.43, "e": 29.793 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 29.793, "e": 29.949 },
+        { "t": "Pablo", "l": "pablo", "p": "PROPN", "w": false, "sp": true, "s": 29.949, "e": 30.261 },
+        { "t": "García", "l": "garcía", "p": "PROPN", "w": false, "s": 30.261, "e": 30.624 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.234,
+      "end": 30.71
+    },
+    {
+      "id": "s12",
+      "speaker": "carmen",
+      "text": "Muchas gracias, señor García. Ya está todo listo.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 31.42, "e": 31.956 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 31.956, "e": 32.569 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "señor", "l": "señor", "p": "NOUN", "w": true, "sp": true, "s": 32.569, "e": 33.029 },
+        { "t": "García", "l": "garcía", "p": "PROPN", "w": false, "s": 33.029, "e": 33.565 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 33.565, "e": 33.795 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 33.794, "e": 34.177 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 34.177, "e": 34.56 },
+        { "t": "listo", "l": "listo", "p": "ADJ", "w": true, "s": 34.56, "e": 35.02 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.41,
+      "end": 35.081
+    },
+    {
+      "id": "s13",
+      "speaker": "pablo",
+      "text": "Gracias. Hasta el diez de mayo.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 35.814, "e": 36.374 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 36.874, "e": 37.179 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 37.179, "e": 37.332 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true, "s": 37.332, "e": 37.587 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 37.587, "e": 37.74 },
+        { "t": "mayo", "l": "mayo", "p": "NOUN", "w": true, "s": 37.739, "e": 37.994 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.781,
+      "end": 38.07
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "doble",
+      "surface": "doble",
+      "pos": "adjective",
+      "def_en": "para dos personas",
+      "def_es": { "en": "double", "fr": "double", "zh": "双人的", "ja": "ダブルの" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "aparcamiento",
+      "surface": "aparcamiento",
+      "pos": "noun",
+      "def_en": "lugar donde dejas el coche",
+      "def_es": { "en": "car park", "fr": "parking", "zh": "停车场", "ja": "駐車場" },
+      "ref": "s9"
+    },
+    {
+      "lemma": "individual",
+      "surface": "individual",
+      "pos": "adjective",
+      "def_en": "para una sola persona",
+      "def_es": { "en": "single", "fr": "individuel", "zh": "单人的", "ja": "シングルの" },
+      "ref": "s4"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Para qué llama Pablo?",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "He wants to book a room." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para cancelar un vuelo de avión" },
+        { "id": "b", "text": "Para reservar un cuarto de hotel" },
+        { "id": "c", "text": "Para pedir información de un museo" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuántas noches se quedan?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "*Son dos noches*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tres" },
+        { "id": "b", "text": "Una" },
+        { "id": "c", "text": "Dos" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué tipo de habitación eligen?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "A double room for two people." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una habitación para dos" },
+        { "id": "b", "text": "Una habitación para una persona" },
+        { "id": "c", "text": "Dos habitaciones separadas" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "El desayuno no está incluido en el precio.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "The price includes breakfast." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con un número.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "*Setenta euros*." },
+      "type": "gap_fill",
+      "text": "La habitación cuesta {{1}} euros por noche.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["setenta", "70"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "post",
+      "prompt": "¿Qué ventaja tiene el hotel para quien viaja en coche?",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "There is free parking." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tiene un taller de coches" },
+        { "id": "b", "text": "Tiene sitio gratis para dejarlo" },
+        { "id": "c", "text": "Tiene un servicio de taxi" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "aparcamiento", "bien", "bueno", "claro", "con", "costar", "cuánto", "de", "desayunar", "doble",
+    "día", "el", "estar", "euro", "favor", "fecha", "gratis", "haber", "habitación", "hasta", "individual",
+    "listo", "mar", "mayo", "mi", "mucho", "noche", "nombre", "o", "para", "parecer", "perfecto", "persona",
+    "por", "querer", "qué", "reservar", "ser", "señor", "tener", "todo", "un", "ver", "ya", "yo"
+  ],
+  "difficulty": 875,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7302, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 3.6,
+    "flesch_reading_ease": 85.6,
+    "checked_at": "2026-10-18T21:44:18.647Z"
+  },
+  "audio": {
+    "src": "audio/a2/es-a2-lis-005/v1.m4a",
+    "duration_s": 38.07,
+    "wpm": 118,
+    "provider": "piper",
+    "voices": { "pablo": "davefx-m", "carmen": "sharvard-f" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.8, 0.61, 0.25, 0.19, 0, 0, 0.99, 1, 0.68, 0.79, 0.99, 0.96, 0.83, 0.43, 0.6, 0.19, 0, 0, 0, 0, 0.53,
+      1, 0.53, 0, 0.97, 1, 0.71, 0.73, 0.63, 0.24, 0.22, 0.03, 0, 0, 0, 0.01, 0.99, 0.97, 1, 0.87, 0.52, 0.74,
+      0.55, 0.07, 0, 0, 0, 0, 0.39, 0.73, 1, 0.54, 0.45, 0.17, 0.12, 0.01, 0.65, 0.66, 0.93, 1, 0.69, 0.4,
+      0.55, 0.76, 0.81, 0.77, 0.3, 0.1, 0, 0, 0, 0, 1, 0.89, 0.83, 0.84, 0.82, 0.18, 0, 0, 1, 0.99, 0.91, 0.8,
+      0.5, 0.23, 0.14, 0.01, 0, 0, 0, 0.54, 0.85, 0.96, 0.84, 0.91, 1, 0.66, 0.62, 0.86, 0.6, 0.63, 0.68, 0.69,
+      0.54, 0.67, 0.05, 0, 0, 0, 0, 0.9, 0.61, 0.81, 1, 0.74, 0.31, 0.36, 0, 0, 0, 0, 0.68, 0.75, 0.84, 0.44,
+      0.63, 0.91, 0.9, 1, 0.69, 0.7, 0.69, 0.75, 0.41, 0.14, 0, 0, 0, 0, 0.91, 0.99, 1, 0.95, 0.59, 0.14, 0, 0,
+      1, 0.96, 0.94, 0.78, 0.28, 0.16, 0, 0, 0, 0, 0.41, 0.55, 0.34, 0.95, 0.68, 1, 0.82, 0.69, 0.54, 0.69,
+      0.69, 0.56, 0.33, 0.19, 0.05, 0, 0, 0, 0.03, 0.95, 1, 0.17, 0.15, 0, 0, 0.42, 0.97, 0.9, 1, 0.55, 0.95,
+      0.55, 0.77, 0.36, 0.03, 0, 0, 0, 0, 0.51, 0.68, 0.56, 1, 0.63, 0.62, 0.25, 0.48, 0.69, 0.73, 0.62, 0.25,
+      0.36, 0.05, 0.24, 0.98, 0.83, 0.69, 0.58, 1, 0.58, 0.73, 0.22, 0, 0, 0, 0, 0.93, 1, 0.36, 0.19, 0.15,
+      0.01, 0, 0.32, 1, 1, 0.97, 0.72, 0.8, 0.54, 0.23
+    ]
+  }
+}

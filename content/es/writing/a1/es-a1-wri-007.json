@@ -1,0 +1,52 @@
+{
+  "id": "es-a1-wri-007",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "task_type": "message",
+  "title": "Mi ciudad",
+  "topic": "city-housing",
+  "context_es": {
+    "en": "A friend from another country asks about your city. You write a short message.",
+    "fr": "Un ami d’un autre pays te demande comment est ta ville. Tu écris un court message.",
+    "zh": "外国的朋友问你的城市怎么样。你写一条简短的消息。",
+    "ja": "外国の友だちにあなたの町のことを聞かれました。短いメッセージを書きます。"
+  },
+  "prompt_en": "Un amigo de otro país te pregunta por tu ciudad. Escribe un mensaje corto.",
+  "points": [
+    "cómo se llama y cómo es",
+    "qué hay en el centro",
+    "si te gusta"
+  ],
+  "words_min": 25,
+  "words_max": 50,
+  "time_min": 8,
+  "useful_language": [
+    "Vivo en …",
+    "Mi ciudad es …",
+    "Hay …",
+    "No hay …",
+    "Me gusta mucho"
+  ],
+  "tips_es": [
+    {
+      "en": "Use *hay* for what exists: *Hay un parque y dos restaurantes*.",
+      "fr": "Utilisez *hay* pour ce qui existe : *Hay un parque y dos restaurantes*.",
+      "zh": "用 *hay* 说明有什么：*Hay un parque y dos restaurantes*。",
+      "ja": "あるものは *hay* で：*Hay un parque y dos restaurantes*。"
+    },
+    {
+      "en": "Use *es* + adjective to describe the city: *Es pequeña y tranquila*.",
+      "fr": "Utilisez *es* + adjectif pour décrire la ville : *Es pequeña y tranquila*.",
+      "zh": "用 *es* + 形容词描写城市：*Es pequeña y tranquila*。",
+      "ja": "町の描写は *es* + 形容詞で：*Es pequeña y tranquila*。"
+    }
+  ],
+  "model_answer": "Hola, Tom:\n\nVivo en Toledo. Es una ciudad pequeña y tranquila. En el centro hay un parque, una librería y dos restaurantes. No hay un hospital. Me gusta mucho mi ciudad.\n\nUn abrazo,\nAna",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

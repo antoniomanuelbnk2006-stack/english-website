@@ -1,0 +1,53 @@
+{
+  "id": "es-c1-wri-004",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "task_type": "review",
+  "title": "Reseña de una exposición",
+  "topic": "culture",
+  "context_es": {
+    "en": "A cultural magazine asks readers for reviews of recent exhibitions. You review one you have visited.",
+    "fr": "Un magazine culturel demande à ses lecteurs des critiques d’expositions récentes. Vous écrivez celle d’une exposition que vous avez visitée.",
+    "zh": "一本文化杂志请读者评论近期的展览。你评论你参观过的一个展览。",
+    "ja": "文化雑誌が、最近の展覧会についての読者のレビューを募集しています。訪れた展覧会のレビューを書きます。"
+  },
+  "prompt_en": "Una revista cultural pide a sus lectores reseñas de exposiciones recientes. Escribe la reseña de una exposición que hayas visitado, con una valoración razonada.",
+  "points": [
+    "presenta la exposición y su tema",
+    "valora lo mejor y lo peor con argumentos",
+    "concluye con una recomendación matizada"
+  ],
+  "words_min": 220,
+  "words_max": 320,
+  "time_min": 60,
+  "useful_language": [
+    "La muestra, que reúne …, propone …",
+    "Lo más logrado es …",
+    "Se echa en falta …",
+    "Aunque …, …",
+    "A mi juicio, …",
+    "Sin duda, merece la pena …"
+  ],
+  "tips_es": [
+    {
+      "en": "A review needs a clear verdict supported by reasons. Mix description and evaluation, and use adjectives that are precise (*sugerente, desigual, innovador*).",
+      "fr": "Une critique a besoin d’un verdict clair appuyé sur des raisons. Mêlez description et évaluation, avec des adjectifs précis (*sugerente, desigual, innovador*).",
+      "zh": "评论需要有理有据的明确判断。把描述和评价结合起来，并使用准确的形容词（*sugerente, desigual, innovador*）。",
+      "ja": "レビューには理由に支えられた明確な評価が必要です。描写と評価を組み合わせ、的確な形容詞（*sugerente, desigual, innovador*）を使います。"
+    },
+    {
+      "en": "Use concession to be fair: *Aunque el recorrido resulta algo largo, la selección de obras compensa el esfuerzo*.",
+      "fr": "Utilisez la concession pour rester équitable : *Aunque el recorrido resulta algo largo, la selección de obras compensa el esfuerzo*.",
+      "zh": "用让步表达公允：*Aunque el recorrido resulta algo largo, la selección de obras compensa el esfuerzo*。",
+      "ja": "公平さのために譲歩を使います：*Aunque el recorrido resulta algo largo, la selección de obras compensa el esfuerzo*。"
+    }
+  ],
+  "model_answer": "La mirada de la ciudad: una exposición que invita a pararse\n\nLa muestra, que reúne más de ochenta fotografías de calles, plazas y barrios tomadas entre 1950 y la actualidad, propone un recorrido por la transformación de una ciudad a través de los ojos de quienes la habitaron. El comisario ha optado por un montaje sencillo, casi sin textos, para que sean las imágenes las que hablen.\n\nLo más logrado es la selección. Las fotografías antiguas, sobre todo las de los mercados y las fiestas populares, transmiten una vitalidad que conmueve, y su comparación con vistas actuales de los mismos lugares provoca una reflexión silenciosa sobre lo que se pierde y lo que se gana con el tiempo. Asimismo, la iluminación, tenue y cálida, favorece la contemplación. También la música ambiental, apenas perceptible, acompaña sin molestar y ayuda a que el visitante avance con calma.\n\nNo obstante, el recorrido resulta algo largo y se echa en falta una guía más clara que ordene las salas. Aunque la ausencia de explicaciones tiene su encanto, algunos visitantes necesitarían más contexto para entender, por ejemplo, por qué se han elegido ciertos autores y no otros.\n\nA mi juicio, se trata de una exposición sugerente y honesta, que no pretende deslumbrar, sino invitar a mirar con calma. Sin duda, merece la pena visitarla con tiempo y sin prisas, preferiblemente entre semana, cuando las salas están casi vacías.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

@@ -16,6 +16,9 @@ export default defineConfig({
     environment: 'node',
     include: ['src/**/*.test.{ts,tsx}', 'scripts/**/*.test.ts', 'tests/db/**/*.test.ts'],
     setupFiles: ['./tests/setup.ts'],
+    // Los tests de base de datos arrancan un Postgres en memoria por archivo; con muchos
+    // archivos en paralelo el arranque pasa de los 10 s por defecto aunque nada falle.
+    hookTimeout: 60_000,
     coverage: {
       provider: 'v8',
       include: ['src/features/*/lib/**', 'src/lib/**'],

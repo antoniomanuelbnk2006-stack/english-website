@@ -1,0 +1,53 @@
+{
+  "id": "es-b1-wri-007",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "task_type": "story",
+  "title": "Un viaje que salió mal",
+  "topic": "travel",
+  "context_es": {
+    "en": "A travel blog collects stories about trips that did not go as planned. You send yours.",
+    "fr": "Un blog de voyage recueille des histoires de voyages qui ne se sont pas passés comme prévu. Vous envoyez la vôtre.",
+    "zh": "一个旅行博客征集“计划外”的旅行故事。你投稿一篇。",
+    "ja": "旅行ブログが、予定どおりにいかなかった旅の話を募集しています。あなたも投稿します。"
+  },
+  "prompt_en": "Un blog de viajes busca historias de viajes que no salieron como se esperaba. Cuenta qué pasó, cómo te sentías y cómo terminó.",
+  "points": [
+    "adónde ibas y con quién",
+    "qué problema hubo",
+    "cómo lo resolviste y cómo terminó"
+  ],
+  "words_min": 100,
+  "words_max": 150,
+  "time_min": 25,
+  "useful_language": [
+    "Era …",
+    "Íbamos a …",
+    "De repente, …",
+    "Por suerte, …",
+    "Al final, …",
+    "Desde entonces, …"
+  ],
+  "tips_es": [
+    {
+      "en": "Use the *imperfecto* for the plan and the situation (*íbamos a…*, *llovía*) and the *indefinido* for what happened.",
+      "fr": "Utilisez l’*imperfecto* pour le projet et la situation (*íbamos a…*, *llovía*) et l’*indefinido* pour ce qui s’est passé.",
+      "zh": "用 *imperfecto* 说计划和情况（*íbamos a…*, *llovía*），用 *indefinido* 说发生了什么。",
+      "ja": "計画や状況は *imperfecto*（*íbamos a…*, *llovía*）、起きたことは *indefinido* で書きます。"
+    },
+    {
+      "en": "Link the events with *de repente, por suerte, al final* to keep the story moving.",
+      "fr": "Reliez les événements avec *de repente, por suerte, al final* pour faire avancer l’histoire.",
+      "zh": "用 *de repente, por suerte, al final* 连接事件，让故事向前推进。",
+      "ja": "*de repente, por suerte, al final* で出来事をつなぎ、話を進めます。"
+    }
+  ],
+  "model_answer": "El verano pasado íbamos a pasar una semana en la costa con unos amigos. Habíamos reservado un apartamento cerca de la playa y estábamos muy ilusionados.\n\nSin embargo, cuando llegamos a la dirección, el apartamento no existía. Era un solar vacío. Llamamos varias veces al propietario, pero nadie contestaba y ya era de noche.\n\nPor suerte, una vecina nos vio desde su ventana y nos ofreció una habitación para esa noche. Al día siguiente, encontramos un hotel pequeño y barato, y la semana fue estupenda.\n\nAl final, el viaje salió mejor de lo que esperábamos. Desde entonces, siempre compruebo las reservas con mucho cuidado y hablo con el dueño antes de salir.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

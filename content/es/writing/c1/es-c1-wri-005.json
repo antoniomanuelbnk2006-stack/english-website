@@ -1,0 +1,53 @@
+{
+  "id": "es-c1-wri-005",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "task_type": "email",
+  "title": "Una carta al director",
+  "topic": "society",
+  "context_es": {
+    "en": "A local newspaper published an article you disagree with. You write a formal email to the editor to give your view.",
+    "fr": "Un journal local a publié un article avec lequel vous n’êtes pas d’accord. Vous écrivez un e-mail formel à la rédaction pour donner votre avis.",
+    "zh": "当地报纸刊登了一篇你不同意的文章。你给主编写一封正式邮件表达你的看法。",
+    "ja": "地元紙に、賛成できない記事が載りました。編集長に意見を伝える正式なメールを書きます。"
+  },
+  "prompt_en": "Un periódico local publicó un artículo sobre prohibir los coches en el centro de la ciudad, con el que no estás de acuerdo. Escribe un correo formal al director para exponer tu postura y proponer una alternativa.",
+  "points": [
+    "refiérete al artículo y resume su tesis",
+    "expón tus objeciones con argumentos",
+    "propón una alternativa y cierra con cortesía"
+  ],
+  "words_min": 220,
+  "words_max": 320,
+  "time_min": 60,
+  "useful_language": [
+    "Me dirijo a usted con motivo de …",
+    "Si bien coincido con … , discrepo de …",
+    "En primer lugar, … ; en segundo lugar, …",
+    "Por ello, propongo que …",
+    "Le agradecería que …",
+    "Atentamente,"
+  ],
+  "tips_es": [
+    {
+      "en": "In a formal letter, acknowledge what you agree with before stating your objections. It makes your argument more persuasive.",
+      "fr": "Dans une lettre formelle, reconnaissez d’abord ce avec quoi vous êtes d’accord avant d’énoncer vos objections. Votre argumentation sera plus persuasive.",
+      "zh": "在正式信件中，先承认你同意的部分，再提出异议。这会让论证更有说服力。",
+      "ja": "正式な手紙では、賛成できる点を認めてから異論を述べます。そのほうが説得力が増します。"
+    },
+    {
+      "en": "Close politely and ask for something concrete: *Le agradecería que publicara estas consideraciones*.",
+      "fr": "Terminez poliment en demandant quelque chose de concret : *Le agradecería que publicara estas consideraciones*.",
+      "zh": "礼貌地结尾，并提出具体请求：*Le agradecería que publicara estas consideraciones*。",
+      "ja": "丁寧に結び、具体的なお願いをします：*Le agradecería que publicara estas consideraciones*。"
+    }
+  ],
+  "model_answer": "Asunto: respuesta al artículo «Un centro sin coches»\n\nEstimado señor director:\n\nMe dirijo a usted con motivo del artículo publicado el pasado domingo, en el que se defiende la prohibición total del tráfico en el centro de la ciudad. Si bien coincido con el autor en que debemos reducir la contaminación y el ruido, discrepo de la solución que propone.\n\nEn primer lugar, una prohibición inmediata perjudicaría a las personas mayores y a quienes tienen movilidad reducida, que dependen del coche para llegar a servicios esenciales como el centro de salud. En segundo lugar, muchos pequeños comercios, que ya sufren la competencia de las grandes superficies, podrían perder a una parte de su clientela si el acceso resulta incómodo.\n\nAdemás, la experiencia de otras ciudades demuestra que la participación de los vecinos resulta decisiva. En varias localidades, las medidas se aprobaron tras consultas públicas y reuniones con los comerciantes, lo que redujo la oposición y facilitó su aplicación.\n\nPor ello, propongo un enfoque gradual: ampliar las zonas peatonales sábados y domingos, mejorar el transporte público con más frecuencia y precios reducidos, y crear aparcamientos disuasorios en la periferia con conexión directa al centro. Una vez comprobados los resultados, el ayuntamiento podría decidir si conviene dar un paso más.\n\nLe agradecería que publicara estas consideraciones, ya que creo que el debate merece voces diversas.\n\nAtentamente,\nMarta Gómez Rivas",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

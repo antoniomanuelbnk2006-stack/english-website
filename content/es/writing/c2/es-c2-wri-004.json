@@ -1,0 +1,53 @@
+{
+  "id": "es-c2-wri-004",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "task_type": "review",
+  "title": "Reseña de una novela traducida",
+  "topic": "culture",
+  "context_es": {
+    "en": "A literary supplement asks for reviews of translated novels. You review one, paying attention to the quality of the translation.",
+    "fr": "Un supplément littéraire demande des critiques de romans traduits. Vous écrivez la critique d’un roman en prêtant attention à la qualité de la traduction.",
+    "zh": "一份文学副刊征集翻译小说的评论。你评论一部小说，并特别留意译文的质量。",
+    "ja": "文芸付録が翻訳小説のレビューを求めています。翻訳の質にも注意を払いながら一作を評します。"
+  },
+  "prompt_en": "Un suplemento literario pide reseñas de novelas traducidas. Reseña una novela, prestando atención no solo a la historia, sino también a la calidad de la traducción.",
+  "points": [
+    "resume el argumento sin desvelar el final",
+    "valora el estilo y el trabajo del traductor",
+    "emite un juicio matizado y recomienda o no la lectura"
+  ],
+  "words_min": 280,
+  "words_max": 400,
+  "time_min": 75,
+  "useful_language": [
+    "La novela, escrita originalmente en …, narra …",
+    "El traductor logra …",
+    "Se echa en falta …",
+    "Lejos de resultar …, …",
+    "Cabe preguntarse si …",
+    "En suma, …"
+  ],
+  "tips_es": [
+    {
+      "en": "Judge the translation by what the reader feels: rhythm, naturalness, humour that works. You do not need the original to say if the Spanish reads well.",
+      "fr": "Jugez la traduction à ce que ressent le lecteur : rythme, naturel, humour qui fonctionne. Pas besoin de l’original pour dire si l’espagnol se lit bien.",
+      "zh": "从读者的感受评价译文：节奏、自然度、幽默是否奏效。不必对照原文，也能判断西班牙语读起来是否顺畅。",
+      "ja": "読者の感じ方で翻訳を評価します：リズム、自然さ、ユーモアが機能しているか。原文がなくても、スペイン語が自然に読めるかは判断できます。"
+    },
+    {
+      "en": "Close with a nuanced verdict and a specific recommendation (who should read it and why).",
+      "fr": "Terminez par un verdict nuancé et une recommandation précise (qui devrait le lire et pourquoi).",
+      "zh": "以有细微差别的评价和具体推荐收尾（谁该读、为什么）。",
+      "ja": "ニュアンスのある評価と具体的なおすすめ（誰がなぜ読むべきか）で締めくくります。"
+    }
+  ],
+  "model_answer": "«Las casas del invierno», la novela de la escritora noruega Ingrid Solheim, llega a nuestras librerías en una traducción que merece comentario aparte. La obra, escrita originalmente en noruego, narra la historia de tres generaciones de mujeres que viven en un pueblo aislado, y lo hace con una prosa sobria, casi áspera, que evita cualquier adorno.\n\nEl principal acierto de la traducción es precisamente haber respetado esa aspereza. Es fácil, al pasar un texto a otra lengua, suavizarlo para que suene más agradable; el traductor, en cambio, ha mantenido la sequedad de las frases cortas y los silencios que las separan. Gracias a ello, la tensión emocional de los diálogos llega al lector español casi intacta. Esa decisión, que exige mucha confianza en el propio criterio, es probablemente la más difícil de todas las que toma un traductor. Asimismo, los pasajes de humor negro, que podrían haberse perdido, funcionan con naturalidad.\n\nNo todo es perfecto. En algunos capítulos se echa en falta una mayor atención al vocabulario de la vida rural: ciertas expresiones, traducidas de forma literal, resultan extrañas y obligan a releer. Cabe preguntarse si no habría sido preferible optar por equivalentes más propios del campo castellano, aunque ello hubiese alejado algo el texto del original.\n\nEn cuanto a la historia, lejos de resultar lineal, avanza mediante saltos en el tiempo que exigen un lector atento. El final, que no desvelaré, deja abiertas algunas preguntas, y es justamente ahí donde la novela gana profundidad.\n\nEn suma, se trata de una lectura exigente pero gratificante, y de una traducción que demuestra que el buen traductor es aquel que se hace oír sin que se le note. La recomiendo a quienes disfrutan con la literatura nórdica y no temen a los libros que piden calma.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

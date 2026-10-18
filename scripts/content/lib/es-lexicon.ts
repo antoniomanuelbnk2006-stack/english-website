@@ -655,7 +655,7 @@ const PLURAL_OF: Record<string, string> = {
 };
 
 /** Nombres de pila de uso común en los textos: no cuentan como palabras del nivel. */
-const NAMES = `ana beatriz carlos gonzalo ismael luis marta pablo leo carla daniel juan lucía sofía carmen javier elena miguel
+const NAMES = `ana einstein newton ámsterdam copenhague pontevedra rafael oslo beatriz carlos gonzalo ismael luis marta pablo leo carla daniel juan lucía sofía carmen javier elena miguel
   laura david paula andrés diego irene sara jorge pedro maría josé tomás emma lucy
   madrid sevilla valencia barcelona españa méxico colombia argentina chile perú lima bogotá
   granada bilbao córdoba málaga toledo zaragoza salamanca europa américa`.split(/\s+/);
