@@ -10,6 +10,7 @@ import { wordAt } from '@/lib/audio/segments';
 import { player, usePlayer } from '@/lib/audio/store';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
+import { useContentLang } from '@/components/content-language';
 
 /** Margen, en segundos, al reproducir una palabra suelta. */
 const WORD_PADDING_S = 0.12;
@@ -57,6 +58,7 @@ export function Transcript({
   words?: { lexicon: LexiconSession; glossary: ListeningTranscript['glossary'] };
 }) {
   const t = useT();
+  const lang = useContentLang();
   const rootRef = useRef<HTMLOListElement>(null);
   const segmentIndex = usePlayer((state) => state.segmentIndex);
   const playing = usePlayer((state) => state.playing);
@@ -133,7 +135,7 @@ export function Transcript({
               <p className="tabular-nums text-caption text-muted">
                 {names.get(segment.speaker) ?? segment.speaker}
               </p>
-              <p lang="en" className="prose-reading">
+              <p lang={lang} className="prose-reading">
                 {words ? (
                   <Words
                     sentence={segment}
@@ -160,7 +162,7 @@ export function Transcript({
                 <ul className="mt-1.5 flex flex-col gap-1 text-body-sm text-muted">
                   {own.map((feature) => (
                     <li key={feature.phrase}>
-                      <span lang="en" className="font-medium text-text">
+                      <span lang={lang} className="font-medium text-text">
                         {feature.phrase}
                       </span>
                       {feature.ipa ? <span className="tabular-nums"> {feature.ipa}</span> : null}

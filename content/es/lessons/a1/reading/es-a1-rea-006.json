@@ -1,0 +1,359 @@
+{
+  "id": "es-a1-rea-006",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u06",
+  "series": "es-a1-u06-viaje",
+  "skill": "reading",
+  "genre": "blog",
+  "title": "Un fin de semana en Valencia",
+  "summary_es": {
+    "en": "Lucía tells about her weekend trip to Valencia with her friend Elena.",
+    "fr": "Lucía raconte son week-end à Valence avec son amie Elena.",
+    "zh": "Lucía 讲述了她和朋友 Elena 周末去巴伦西亚的旅行。",
+    "ja": "ルシアは友だちのエレナとバレンシアへ行く週末旅行について話します。"
+  },
+  "topic": "travel",
+  "tags": ["viaje", "planes", "ir a"],
+  "can_do": ["R-A1-02"],
+  "grammar_focus": ["es.a1.presente-regulares"],
+  "vocab_focus": ["viajar", "tren", "playa", "restaurante"],
+  "est_minutes": 6,
+  "prediction_prompt": "¿Qué haces tú en un viaje de fin de semana?",
+  "pre_teach": ["viajar", "paella"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Me llamo Lucía.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "Lucía", "l": "lucía", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Este fin de semana voy a Valencia.",
+          "tokens": [
+            { "t": "Este", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "fin", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "Valencia", "l": "valencia", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Voy con mi amiga Elena.",
+          "tokens": [
+            { "t": "Voy", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "amiga", "l": "amigo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Elena", "l": "elena", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Salimos a las ocho.",
+          "tokens": [
+            { "t": "Salimos", "l": "salir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Viajamos en tren.",
+          "tokens": [
+            { "t": "Viajamos", "l": "viajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "tren", "l": "tren", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "El viaje dura dos horas.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "dura", "l": "durar", "p": "VERB", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "horas", "l": "hora", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Hace sol y calor.",
+          "tokens": [
+            { "t": "Hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "sol", "l": "sol", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "calor", "l": "calor", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "En Valencia visitamos la playa.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "Valencia", "l": "valencia", "p": "PROPN", "w": false, "sp": true },
+            { "t": "visitamos", "l": "visitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "playa", "l": "playa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Paseamos por el centro.",
+          "tokens": [
+            { "t": "Paseamos", "l": "pasear", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "centro", "l": "centro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Comemos paella en un restaurante.",
+          "tokens": [
+            { "t": "Comemos", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "paella", "l": "paella", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "restaurante", "l": "restaurante", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "El domingo volvemos a casa.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "domingo", "l": "domingo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "volvemos", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Me gusta la ciudad.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Estoy muy contenta.",
+          "tokens": [
+            { "t": "Estoy", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "contenta", "l": "contento", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "The present for plans: voy, comemos",
+        "fr": "Le présent pour les projets : voy, comemos",
+        "zh": "用现在时表示计划：voy, comemos",
+        "ja": "予定を表す現在形：voy, comemos"
+      },
+      "explanation_es": {
+        "en": "Spanish often uses the present tense for near plans: *Este fin de semana voy a Valencia* (this weekend I am going to Valencia)."
+      },
+      "refs": ["p1s2", "p4s1"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "viajar",
+      "surface": "Viajamos",
+      "pos": "verb",
+      "def_en": "ir a otro lugar, lejos de casa",
+      "def_es": { "en": "to travel", "fr": "voyager", "zh": "旅行", "ja": "旅行する" },
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "paella",
+      "surface": "paella",
+      "pos": "noun",
+      "def_en": "plato español de arroz",
+      "def_es": { "en": "paella (Spanish rice dish)", "fr": "paella", "zh": "西班牙海鲜饭", "ja": "パエリア" },
+      "ref": "p3s4"
+    },
+    {
+      "lemma": "visitar",
+      "surface": "visitamos",
+      "pos": "verb",
+      "def_en": "ir a ver un lugar o a una persona",
+      "def_es": { "en": "to visit", "fr": "visiter", "zh": "参观", "ja": "訪れる" },
+      "ref": "p3s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Qué cuenta Lucía?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "She tells where she is going this weekend and what they do there." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un viaje corto" },
+        { "id": "b", "text": "Su día de trabajo en la oficina" },
+        { "id": "c", "text": "Su casa nueva y su barrio" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Con quién viaja Lucía?",
+      "evidence": ["p1s3"],
+      "rationale_es": { "en": "*Voy con mi amiga*: she travels with a friend." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Con su hermana" },
+        { "id": "b", "text": "Con su amiga" },
+        { "id": "c", "text": "Con sus padres" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cómo viajan?",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "*Viajamos en tren*: they go by train." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En autobús" },
+        { "id": "b", "text": "En coche" },
+        { "id": "c", "text": "En tren" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "El viaje dura dos horas.",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "*El viaje dura dos horas*." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué comen en Valencia?",
+      "evidence": ["p3s4"],
+      "rationale_es": { "en": "*Comemos paella en un restaurante*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Paella" },
+        { "id": "b", "text": "Tortilla" },
+        { "id": "c", "text": "Pizza" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Vuelven a casa el sábado.",
+      "evidence": ["p4s1"],
+      "rationale_es": { "en": "*El domingo volvemos a casa*: they come back on Sunday." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p4s3"],
+      "rationale_es": { "en": "*Estoy muy contenta*: Lucía is a woman, so the adjective ends in *-a*." },
+      "type": "gap_fill",
+      "text": "Lucía está muy {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["contenta"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 57,
+  "lemmas": [
+    "a", "amigo", "calor", "casa", "centro", "ciudad", "comer", "con", "contento", "de", "domingo", "durar",
+    "el", "en", "estar", "este", "fin", "gustar", "hacer", "hora", "ir", "llamarse", "mi", "muy", "paella",
+    "pasear", "playa", "por", "restaurante", "salir", "semana", "sol", "tren", "un", "viajar", "visitar",
+    "volver", "y", "yo"
+  ],
+  "difficulty": 660,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 4.4,
+    "flesch_reading_ease": 90.8,
+    "checked_at": "2026-10-18T18:56:19.881Z"
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "id": "es-a1-lis-004",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u05",
+  "series": "es-a1-u05-casa",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "¿Dónde está?",
+  "summary_es": {
+    "en": "Daniel asks Carla where the supermarket, the bakery and the park are.",
+    "fr": "Daniel demande à Carla où sont le supermarché, la boulangerie et le parc.",
+    "zh": "Daniel 向 Carla 询问超市、面包店和公园在哪里。",
+    "ja": "ダニエルはカルラにスーパー、パン屋、公園の場所を聞きます。"
+  },
+  "topic": "city-housing",
+  "tags": ["direcciones", "barrio", "estar"],
+  "can_do": ["L-A1-02"],
+  "grammar_focus": ["es.a1.ser-estar"],
+  "vocab_focus": ["supermercado", "panadería", "cerca", "lejos"],
+  "est_minutes": 5,
+  "prediction_prompt": "Una persona busca un lugar en el barrio. ¿Qué pregunta?",
+  "pre_teach": ["supermercado", "panadería"],
+  "speakers": [
+    { "id": "daniel", "name": "Daniel", "accent": "es-ES", "gender": "male" },
+    { "id": "carla", "name": "Carla", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "daniel",
+      "text": "Perdona, ¿dónde está el supermercado?",
+      "tokens": [
+        { "t": "Perdona", "l": "perdonar", "p": "VERB", "w": true, "s": 0.01, "e": 0.51 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "dónde", "l": "dónde", "p": "ADV", "w": true, "sp": true, "s": 0.66, "e": 1.031 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 1.031, "e": 1.34 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 1.34, "e": 1.526 },
+        { "t": "supermercado", "l": "supermercado", "p": "NOUN", "w": true, "s": 1.526, "e": 2.33 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.408
+    },
+    {
+      "id": "s2",
+      "speaker": "carla",
+      "text": "Está en la calle Mayor.",
+      "tokens": [
+        { "t": "Está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 3.118, "e": 3.451 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 3.451, "e": 3.651 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 3.65, "e": 3.85 },
+        { "t": "calle", "l": "calle", "p": "NOUN", "w": true, "sp": true, "s": 3.85, "e": 4.249 },
+        { "t": "Mayor", "l": "mayor", "p": "PROPN", "w": false, "s": 4.249, "e": 4.648 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.108,
+      "end": 4.791
+    },
+    {
+      "id": "s3",
+      "speaker": "daniel",
+      "text": "¿Está lejos?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 5.501, "e": 5.91 },
+        { "t": "lejos", "l": "lejos", "p": "ADV", "w": true, "s": 5.91, "e": 6.401 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.491,
+      "end": 6.467
+    },
+    {
+      "id": "s4",
+      "speaker": "carla",
+      "text": "No, está muy cerca.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "s": 7.177, "e": 7.447 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 7.447, "e": 7.897 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 7.897, "e": 8.257 },
+        { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "s": 8.257, "e": 8.797 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.167,
+      "end": 8.917
+    },
+    {
+      "id": "s5",
+      "speaker": "daniel",
+      "text": "¿Y la panadería?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 9.627, "e": 9.768 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 9.768, "e": 9.98 },
+        { "t": "panadería", "l": "panadería", "p": "NOUN", "w": true, "s": 9.98, "e": 10.687 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.617,
+      "end": 10.829
+    },
+    {
+      "id": "s6",
+      "speaker": "carla",
+      "text": "Está al lado del supermercado.",
+      "tokens": [
+        { "t": "Está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 11.539, "e": 11.862 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 11.862, "e": 12.056 },
+        { "t": "lado", "l": "lado", "p": "NOUN", "w": true, "sp": true, "s": 12.056, "e": 12.379 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 12.38, "e": 12.639 },
+        { "t": "supermercado", "l": "supermercado", "p": "NOUN", "w": true, "s": 12.638, "e": 13.479 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.529,
+      "end": 13.544
+    },
+    {
+      "id": "s7",
+      "speaker": "daniel",
+      "text": "¿Y el parque?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 14.254, "e": 14.389 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 14.389, "e": 14.592 },
+        { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "s": 14.592, "e": 15.065 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 14.244,
+      "end": 15.15
+    },
+    {
+      "id": "s8",
+      "speaker": "carla",
+      "text": "El parque está allí.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 15.86, "e": 16.048 },
+        { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "sp": true, "s": 16.048, "e": 16.486 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 16.485, "e": 16.798 },
+        { "t": "allí", "l": "allí", "p": "ADV", "w": true, "s": 16.798, "e": 17.111 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.85,
+      "end": 17.19
+    },
+    {
+      "id": "s9",
+      "speaker": "daniel",
+      "text": "Muy bien. Voy a la panadería. Muchas gracias.",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 17.9, "e": 18.269 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 18.269, "e": 18.73 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 18.98, "e": 19.273 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 19.273, "e": 19.419 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 19.419, "e": 19.638 },
+        { "t": "panadería", "l": "panadería", "p": "NOUN", "w": true, "s": 19.638, "e": 20.37 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 20.73, "e": 21.332 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 21.332, "e": 22.02 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.89,
+      "end": 22.074
+    },
+    {
+      "id": "s10",
+      "speaker": "carla",
+      "text": "De nada. ¡Hasta luego!",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 22.784, "e": 22.987 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 22.987, "e": 23.325 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 23.574, "e": 23.984 },
+        { "t": "luego", "l": "luego", "p": "ADV", "w": true, "s": 23.984, "e": 24.394 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.774,
+      "end": 24.465
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "supermercado",
+      "surface": "supermercado",
+      "pos": "noun",
+      "def_en": "tienda grande donde compras comida",
+      "def_es": { "en": "supermarket", "fr": "supermarché", "zh": "超市", "ja": "スーパー" },
+      "ref": "s1"
+    },
+    {
+      "lemma": "al lado de",
+      "surface": "al lado del",
+      "pos": "phrase",
+      "def_en": "junto a algo",
+      "def_es": { "en": "next to", "fr": "à côté de", "zh": "在……旁边", "ja": "〜のそばに" },
+      "ref": "s6"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué pregunta Daniel?",
+      "evidence": ["s1", "s5", "s7"],
+      "rationale_es": { "en": "He asks where the supermarket, the bakery and the park are." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Qué hora es" },
+        { "id": "b", "text": "Dónde están unos lugares" },
+        { "id": "c", "text": "Cómo se llama Carla" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Dónde está el supermercado?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "*Está en la calle Mayor*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En la calle Mayor" },
+        { "id": "b", "text": "En una calle del centro de la ciudad" },
+        { "id": "c", "text": "En el parque" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "El supermercado está lejos.",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "Carla says *No, está muy cerca*: it is very near." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Dónde está la panadería?",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "*Está al lado del supermercado*: next to the supermarket." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Lejos del supermercado, en otro barrio" },
+        { "id": "b", "text": "Dentro del parque grande" },
+        { "id": "c", "text": "Al lado del supermercado" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "*El parque está allí*: *allí* means \"over there\"." },
+      "type": "gap_fill",
+      "text": "El parque está {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["allí", "alli"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Adónde va Daniel al final?",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "*Voy a la panadería*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Al parque" },
+        { "id": "b", "text": "A la panadería" },
+        { "id": "c", "text": "Al supermercado" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "algo", "allí", "bien", "calle", "cerca", "de", "dónde", "el", "en", "estar", "hasta", "ir", "lado",
+    "lejos", "luego", "mucho", "muy", "no", "panadería", "parque", "perdonar", "supermercado", "y"
+  ],
+  "difficulty": 678,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 3.3,
+    "flesch_reading_ease": 90.4,
+    "checked_at": "2026-10-18T18:55:58.581Z"
+  },
+  "audio": {
+    "src": "audio/a1/es-a1-lis-004/v1.m4a",
+    "duration_s": 24.465,
+    "wpm": 105,
+    "provider": "piper",
+    "voices": { "daniel": "sharvard-m", "carla": "sharvard-f" },
+    "loudness_lufs": -15.7,
+    "peaks": [
+      0.82, 0.44, 1, 0.52, 0.43, 0.03, 0.21, 0.74, 0.81, 0.49, 0.5, 0.23, 0.89, 0.95, 0.39, 0.52, 0.37, 0.42,
+      0.34, 0.21, 0.86, 0.67, 0.12, 0.02, 0, 0, 0, 0, 0, 0, 0.45, 0.45, 0.15, 0.81, 0.66, 0.59, 1, 0.45, 0.95,
+      0.63, 0.89, 0.55, 0.43, 0.34, 0.37, 0.34, 0.03, 0, 0, 0, 0, 0, 0, 0.06, 0.43, 0.18, 0.97, 1, 0.65, 0.11,
+      0.15, 0.11, 0.05, 0.01, 0, 0, 0, 0, 0, 0, 0.54, 0.89, 0.75, 0.33, 0.24, 0.65, 0.48, 1, 0.58, 0.79, 0.19,
+      0.78, 0.72, 0.05, 0.32, 0.3, 0.09, 0.01, 0, 0, 0, 0, 0, 0, 0.65, 0.73, 1, 0.91, 0.85, 0.6, 0.47, 0.47,
+      0.58, 0.42, 0.22, 0.01, 0, 0, 0, 0, 0, 0, 0, 0.52, 0.55, 0.17, 0.85, 0.82, 0.86, 0.98, 1, 0.92, 0.5,
+      0.39, 0.35, 0.82, 0.48, 0.44, 0.35, 0.68, 0.49, 0.27, 0.07, 0, 0, 0, 0, 0, 0, 0.14, 0.6, 0.88, 0.59, 0.4,
+      1, 0.2, 0.14, 0.2, 0.01, 0, 0, 0, 0, 0, 0, 0.23, 0.58, 0.43, 1, 0.91, 0.72, 0.72, 0.57, 0.56, 0.75, 0.51,
+      0.37, 0.2, 0.02, 0, 0, 0, 0, 0, 0, 0.28, 0.47, 0.77, 0.76, 0.67, 1, 0.83, 0.45, 0.07, 0.02, 0, 0.12,
+      0.94, 1, 0.88, 0.99, 0.94, 0.42, 0.75, 0.6, 0.35, 0.33, 0.34, 0.17, 0.16, 0.02, 0, 0, 0.3, 0.55, 0.63,
+      0.36, 0.73, 0.31, 0.64, 1, 0.06, 0.28, 0.19, 0.14, 0.11, 0.05, 0, 0, 0, 0, 0, 0, 0.28, 0.83, 0.97, 1,
+      0.47, 0.19, 0.01, 0, 0.92, 0.91, 0.76, 1, 0.87, 0.8, 0.69, 0.38, 0.08
+    ]
+  }
+}

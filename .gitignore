@@ -45,3 +45,6 @@ content/.batches/
 
 # datos de la demo local (pnpm demo)
 /.demo-data*/
+
+# Piper (TTS local del español) y sus voces: se descargan, no se versionan
+.piper/

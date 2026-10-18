@@ -8,6 +8,7 @@ import { buildTimeline, speechRate, withinRateTolerance, type UnitAudio } from '
 import { createAzureTts } from './tts/azure';
 import { fakeTts } from './tts/fake';
 import { createKokoroTts } from './tts/kokoro';
+import { createPiperTts } from './tts/piper';
 import type { SynthesisResult, TtsProvider, WordEvent } from './tts/types';
 import { parseWav, trimSilence } from './tts/wav';
 import { assignVoices, type VoiceRequest } from './voices';
@@ -28,6 +29,7 @@ export function getProvider(): TtsProvider {
   const name = process.env.TTS_PROVIDER ?? 'azure';
   if (name === 'azure') return createAzureTts();
   if (name === 'kokoro') return createKokoroTts();
+  if (name === 'piper') return createPiperTts();
   if (name === 'fake') {
     // Tonos en vez de voz: solo para el contenido de prueba de los tests, nunca para content/.
     if (!process.env.CONTENT_DIR) {
@@ -35,7 +37,7 @@ export function getProvider(): TtsProvider {
     }
     return fakeTts;
   }
-  throw new Error(`TTS_PROVIDER=${name} no está implementado (valores: azure, kokoro)`);
+  throw new Error(`TTS_PROVIDER=${name} no está implementado (valores: azure, kokoro, piper)`);
 }
 
 export interface SpokenUnit {

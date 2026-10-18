@@ -1,0 +1,359 @@
+{
+  "id": "es-a1-rea-004",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u04",
+  "series": "es-a1-u04-cafeteria",
+  "skill": "reading",
+  "genre": "notice",
+  "title": "El menú de hoy",
+  "summary_es": {
+    "en": "The menu of a café with drinks, food and prices.",
+    "fr": "La carte d’un café avec boissons, plats et prix.",
+    "zh": "一家咖啡馆的菜单：饮品、食物和价格。",
+    "ja": "カフェのメニュー：飲み物、食べ物、値段。"
+  },
+  "topic": "food",
+  "tags": ["menú", "precios", "números"],
+  "can_do": ["R-A1-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["café", "queso", "tortilla", "euro"],
+  "est_minutes": 5,
+  "prediction_prompt": "¿Qué hay en el menú de una cafetería?",
+  "pre_teach": ["bocadillo", "gratis"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Café Sol.",
+          "tokens": [
+            { "t": "Café", "l": "café", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Sol", "l": "sol", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Menú de hoy.",
+          "tokens": [
+            { "t": "Menú", "l": "menú", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "hoy", "l": "hoy", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Todos los días, de ocho a nueve.",
+          "tokens": [
+            { "t": "Todos", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "días", "l": "día", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "nueve", "l": "nueve", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Para beber:",
+          "tokens": [
+            { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "beber", "l": "beber", "p": "VERB", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Café con leche, dos euros.",
+          "tokens": [
+            { "t": "Café", "l": "café", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "leche", "l": "leche", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "euros", "l": "euro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Té, un euro y medio.",
+          "tokens": [
+            { "t": "Té", "l": "té", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "euro", "l": "euro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "medio", "l": "medio", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Agua, un euro.",
+          "tokens": [
+            { "t": "Agua", "l": "agua", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "euro", "l": "euro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Para comer:",
+          "tokens": [
+            { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "comer", "l": "comer", "p": "VERB", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Bocadillo de queso, tres euros.",
+          "tokens": [
+            { "t": "Bocadillo", "l": "bocadillo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "queso", "l": "queso", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true },
+            { "t": "euros", "l": "euro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Tortilla de patatas, cuatro euros.",
+          "tokens": [
+            { "t": "Tortilla", "l": "tortilla", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "patatas", "l": "patata", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "sp": true },
+            { "t": "euros", "l": "euro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Ensalada, cinco euros.",
+          "tokens": [
+            { "t": "Ensalada", "l": "ensalada", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true },
+            { "t": "euros", "l": "euro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Hoy el postre es gratis.",
+          "tokens": [
+            { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "postre", "l": "postre", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "gratis", "l": "gratis", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Buen provecho.",
+          "tokens": [
+            { "t": "Buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "provecho", "l": "provecho", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Gracias por venir.",
+          "tokens": [
+            { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "venir", "l": "venir", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "bocadillo",
+      "surface": "Bocadillo",
+      "pos": "noun",
+      "def_en": "pan con queso, jamón u otra comida dentro",
+      "def_es": {
+        "en": "sandwich (in a bread roll)",
+        "fr": "sandwich (dans un petit pain)",
+        "zh": "三明治（法棍面包）",
+        "ja": "サンドイッチ（パンに挟んだもの）"
+      },
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "gratis",
+      "surface": "gratis",
+      "pos": "adverb",
+      "def_en": "sin pagar nada",
+      "def_es": { "en": "free (of charge)", "fr": "gratuit", "zh": "免费", "ja": "無料で" },
+      "ref": "p4s1"
+    },
+    {
+      "lemma": "postre",
+      "surface": "postre",
+      "pos": "noun",
+      "def_en": "lo último que se come en una comida",
+      "def_es": { "en": "dessert", "fr": "dessert", "zh": "甜点", "ja": "デザート" },
+      "ref": "p4s1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Qué es este texto?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "It says *Menú de hoy* and lists drinks, food and prices." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un menú" },
+        { "id": "b", "text": "Una carta a un amigo" },
+        { "id": "c", "text": "Un mensaje de trabajo" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuánto cuesta el café con leche?",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "*Café con leche, dos euros*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un euro" },
+        { "id": "b", "text": "Dos euros" },
+        { "id": "c", "text": "Tres euros" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "El té cuesta un euro y medio.",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "*Té, un euro y medio*: a euro and a half." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué lleva el bocadillo?",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "*Bocadillo de queso*: it has cheese." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Queso" },
+        { "id": "b", "text": "Jamón" },
+        { "id": "c", "text": "Tomate" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué plato es el más caro?",
+      "evidence": ["p3s4"],
+      "rationale_es": { "en": "The salad costs five euros; the sandwich costs three and the omelette four." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La tortilla" },
+        { "id": "b", "text": "El bocadillo" },
+        { "id": "c", "text": "La ensalada" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Hoy el postre es gratis.",
+      "evidence": ["p4s1"],
+      "rationale_es": { "en": "*Hoy el postre es gratis*." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p2s4"],
+      "rationale_es": { "en": "*Agua, un euro*: one euro." },
+      "type": "gap_fill",
+      "text": "El agua cuesta {{1}} euro.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["un", "1"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 52,
+  "lemmas": [
+    "a", "agua", "beber", "bocadillo", "bueno", "café", "comer", "con", "de", "día", "el", "ensalada", "euro",
+    "gratis", "hoy", "leche", "medio", "menú", "para", "patata", "por", "postre", "provecho", "queso", "ser",
+    "sol", "todo", "tortilla", "té", "un", "venir", "y"
+  ],
+  "difficulty": 657,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 3.7,
+    "flesch_reading_ease": 98.1,
+    "checked_at": "2026-10-18T18:56:19.881Z"
+  }
+}

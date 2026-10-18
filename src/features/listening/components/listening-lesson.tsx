@@ -35,6 +35,7 @@ import {
   type DictationResult,
 } from './dictation-step';
 import { Transcript } from './transcript';
+import { useContentLang } from '@/components/content-language';
 
 const PHASE = {
   prepare: 0,
@@ -129,6 +130,7 @@ export function ListeningLesson({
   transcriptSeen,
 }: ListeningLessonProps) {
   const t = useT();
+  const lang = useContentLang();
   const { clock, record, save, saving, error, serverScore } = useLessonSession(intro);
   const lex = useLexiconSession(intro.id);
   const loadLexicon = lex.load;
@@ -362,7 +364,7 @@ export function ListeningLesson({
           {t('lesson.back')}
         </Link>
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <h1 lang="en" className="text-heading-sm sm:text-heading">
+          <h1 lang={lang} className="text-heading-sm sm:text-heading">
             {intro.title}
           </h1>
           <div className="flex flex-wrap items-center gap-2">
@@ -432,7 +434,7 @@ export function ListeningLesson({
           {intro.prediction_prompt ? (
             <div>
               <PanelLabel>{t('listening.beforeListening')}</PanelLabel>
-              <p lang="en" className="prose-reading mt-2">
+              <p lang={lang} className="prose-reading mt-2">
                 {intro.prediction_prompt}
               </p>
             </div>
@@ -443,12 +445,12 @@ export function ListeningLesson({
               <dl className="mt-2 flex flex-col gap-2">
                 {intro.preTeach.map((entry) => (
                   <div key={entry.word}>
-                    <dt lang="en" className="font-medium text-accent-text">
+                    <dt lang={lang} className="font-medium text-accent-text">
                       {entry.word}
                     </dt>
                     {entry.def_en ? (
                       <dd className="text-body-sm text-muted">
-                        <span lang="en">{entry.def_en}</span> — {entry.def_es}
+                        <span lang={lang}>{entry.def_en}</span> — {entry.def_es}
                       </dd>
                     ) : null}
                   </div>
@@ -618,7 +620,7 @@ export function ListeningLesson({
                             strokeWidth={2}
                           />
                         )}
-                        <span lang="en" className="font-medium">
+                        <span lang={lang} className="font-medium">
                           {task.prompt}
                         </span>
                       </span>
@@ -663,12 +665,12 @@ export function ListeningLesson({
             };
             return (
               <div key={task.id} className="flex flex-col gap-2 border-t border-border pt-4">
-                <p lang="en" className="prose-reading">
+                <p lang={lang} className="prose-reading">
                   {task.reference}
                 </p>
                 {features.map((feature) => (
                   <p key={feature.phrase} className="text-body-sm text-muted">
-                    <span lang="en" className="font-medium text-text">
+                    <span lang={lang} className="font-medium text-text">
                       {feature.phrase}
                     </span>
                     {feature.ipa ? <span className="tabular-nums"> {feature.ipa}</span> : null}
@@ -772,7 +774,7 @@ export function ListeningLesson({
                   <li key={ficha.id}>
                     <Link
                       href={`/gramatica/${ficha.id}`}
-                      lang="en"
+                      lang={lang}
                       className="text-accent-text underline underline-offset-4"
                     >
                       {ficha.title}

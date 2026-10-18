@@ -1,19 +1,13 @@
 import { LessonDraft } from '../../../src/lib/content/schema';
 import {
   coverageByLevel,
-  fleschReadingEase,
   lessonDifficulty,
   offLevelLemmas,
   type LeveledToken,
 } from './metrics';
-import {
-  countSentences,
-  countWords,
-  detokenize,
-  normalizeText,
-  tokenize,
-  type TokenT,
-} from './nlp';
+import { packOfLesson, type LanguagePack } from './language-pack';
+import { unknownWords } from './nlp-es';
+import { countSentences, countWords, detokenize, normalizeText, type TokenT } from './nlp';
 import { checkProfile, checkTasks, type LessonMetrics, type QaIssue } from './qa';
 import { CEFR, levelOf, type Cefr, type WordLists } from './wordlists';
 
@@ -67,9 +61,11 @@ export function lessonLemmas(lesson: LessonDraft): Set<string> {
 export function measure(
   lesson: LessonDraft,
   tokensByUnit: TokenT[][],
-  lists: WordLists,
+  englishLists: WordLists,
   wpm?: number,
 ): Annotated['metrics'] & { lemmas: string[] } {
+  const pack = packOfLesson(lesson.id, englishLists);
+  const lists = pack.lists;
   const all = tokensByUnit.flat();
   const leveled: LeveledToken[] = all
     .filter((token) => token.w)
@@ -80,7 +76,7 @@ export function measure(
   const own = lessonLemmas(lesson);
 
   const lemmasIn = (text: string) =>
-    new Set([...wordsOf(text), ...tokenize(text, lists, own).map((token) => token.l)]);
+    new Set([...wordsOf(text), ...pack.tokenize(text, own).map((token) => token.l)]);
   // Un lema fuera de nivel está cubierto si aparece en el glosario o en las palabras previas.
   const preTaught = new Set(lesson.pre_teach.flatMap((word) => [...lemmasIn(word)]));
   const glossed = new Set(preTaught);
@@ -128,15 +124,30 @@ export function measure(
     unglossedLemmas: offLevel.filter((lemma) => !glossed.has(lemma)),
     avgSentenceWords,
     wordCount,
-    flesch: fleschReadingEase(words, sentences),
+    flesch: pack.flesch(words, sentences),
     difficulty,
     lemmaCount: lemmas.length,
     lemmas,
   };
 }
 
+/** Las formas que el léxico del idioma no conoce (solo pasa en idiomas sin lematizador). */
+export function lexiconIssues(tokens: readonly TokenT[], language: string): QaIssue[] {
+  // En inglés, wink etiqueta con «X» lo extranjero (nombres, citas): no es un fallo del léxico.
+  const unknown = language === 'en' ? [] : unknownWords(tokens);
+  return unknown.length === 0
+    ? []
+    : [
+        {
+          check: 'lexicon',
+          message: `palabras que el léxico no conoce: ${unknown.join(', ')} (añádelas al mazo o a es-lexicon.ts)`,
+        },
+      ];
+}
+
 export function annotateLesson(input: unknown, lists: WordLists, now: Date): Annotated {
   const draft = LessonDraft.parse(input);
+  const pack: LanguagePack = packOfLesson(draft.id, lists);
   // Se anota sobre una copia del JSON original para no perder campos que el borrador no conoce
   // (audio, tiempos, informe del revisor).
   const raw = structuredClone(input) as Json;
@@ -145,7 +156,7 @@ export function annotateLesson(input: unknown, lists: WordLists, now: Date): Ann
 
   const tokensByUnit = units.map((unit) => {
     const text = String(unit.text);
-    const tokens = tokenize(text, lists, own);
+    const tokens = pack.tokenize(text, own);
     if (squash(detokenize(tokens)) !== squash(text)) {
       throw new Error(`${draft.id} · ${String(unit.id)}: los tokens no reconstruyen el texto`);
     }
@@ -178,5 +189,13 @@ export function annotateLesson(input: unknown, lists: WordLists, now: Date): Ann
   raw.difficulty = metrics.difficulty;
   raw.qa = qa;
 
-  return { lesson: raw, metrics, issues: [...checkProfile(draft, metrics), ...checkTasks(draft)] };
+  return {
+    lesson: raw,
+    metrics,
+    issues: [
+      ...lexiconIssues(tokensByUnit.flat(), pack.language),
+      ...checkProfile(draft, metrics),
+      ...checkTasks(draft),
+    ],
+  };
 }

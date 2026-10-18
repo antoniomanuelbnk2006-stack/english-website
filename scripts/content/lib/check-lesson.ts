@@ -5,8 +5,9 @@ import {
   type InvariantIssue,
 } from '../../../src/lib/content/invariants';
 import { Lesson, LessonDraft } from '../../../src/lib/content/schema';
-import { lessonLemmas, measure } from './annotate-lesson';
-import { detokenize, normalizeText, tokenize, type TokenT } from './nlp';
+import { lessonLemmas, lexiconIssues, measure } from './annotate-lesson';
+import { packOfLesson } from './language-pack';
+import { detokenize, normalizeText, type TokenT } from './nlp';
 import { checkProfile, checkTasks, type QaIssue } from './qa';
 import type { WordLists } from './wordlists';
 
@@ -102,9 +103,10 @@ export function checkLesson(input: unknown, lists: WordLists, options: CheckOpti
   const raw = input as Record<string, unknown>;
   const stored = storedTokens(raw, lesson.skill);
   const own = lessonLemmas(lesson);
+  const pack = packOfLesson(lesson.id, lists);
   if (stored) {
     for (const unit of stored) {
-      const fresh = tokenize(unit.text, lists, own);
+      const fresh = pack.tokenize(unit.text, own);
       const same =
         squash(detokenize(unit.tokens)) === squash(unit.text) &&
         fresh.length === unit.tokens.length &&
@@ -127,10 +129,14 @@ export function checkLesson(input: unknown, lists: WordLists, options: CheckOpti
     : (lesson.skill === 'listening'
         ? lesson.segments.map((s) => s.text)
         : lesson.paragraphs.flatMap((p) => p.sentences.map((s) => s.text))
-      ).map((text) => tokenize(text, lists, own));
+      ).map((text) => pack.tokenize(text, own));
   const audio = raw.audio as { wpm?: number } | undefined;
   const metrics = measure(lesson, tokensByUnit, lists, audio?.wpm);
-  const quality = [...checkProfile(lesson, metrics), ...checkTasks(lesson)].map(formatQa);
+  const quality = [
+    ...lexiconIssues(tokensByUnit.flat(), pack.language),
+    ...checkProfile(lesson, metrics),
+    ...checkTasks(lesson),
+  ].map(formatQa);
   (lesson.status === 'draft' ? report.warnings : report.errors).push(...quality);
 
   return report;

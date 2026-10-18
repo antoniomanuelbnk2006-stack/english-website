@@ -1,0 +1,331 @@
+{
+  "id": "es-a1-rea-003",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u03",
+  "series": "es-a1-u03-dia",
+  "skill": "reading",
+  "genre": "blog",
+  "title": "Un día normal",
+  "summary_es": {
+    "en": "Carla describes her day, from getting up to going to bed.",
+    "fr": "Carla décrit sa journée, du lever au coucher.",
+    "zh": "Carla 讲述了她从起床到睡觉的一天。",
+    "ja": "カルラは起きてから寝るまでの一日を話します。"
+  },
+  "topic": "daily-life",
+  "tags": ["rutina", "horas", "presente"],
+  "can_do": ["R-A1-02"],
+  "grammar_focus": ["es.a1.presente-regulares"],
+  "vocab_focus": ["levantarse", "desayunar", "cenar", "acostarse"],
+  "est_minutes": 6,
+  "prediction_prompt": "¿Qué haces tú por la mañana?",
+  "pre_teach": ["levantarse", "acostarse"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Me llamo Carla.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "Carla", "l": "carla", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Me levanto a las siete.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "levanto", "l": "levantarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "siete", "l": "siete", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Desayuno café y pan.",
+          "tokens": [
+            { "t": "Desayuno", "l": "desayunar", "p": "VERB", "w": true, "sp": true },
+            { "t": "café", "l": "café", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "pan", "l": "pan", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "A las ocho voy al trabajo en autobús.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "autobús", "l": "autobús", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Trabajo en una oficina.",
+          "tokens": [
+            { "t": "Trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Como a las dos con mis compañeros.",
+          "tokens": [
+            { "t": "Como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "compañeros", "l": "compañero", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Por la tarde estudio inglés.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true },
+            { "t": "estudio", "l": "estudiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "inglés", "l": "inglés", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Por la noche ceno en casa.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ceno", "l": "cenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Después veo una película.",
+          "tokens": [
+            { "t": "Después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "veo", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "película", "l": "película", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "A las once me acuesto.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "once", "l": "once", "p": "NUM", "w": false, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "acuesto", "l": "acostarse", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Telling the time: a las siete",
+        "fr": "Dire l’heure : a las siete",
+        "zh": "说时间：a las siete",
+        "ja": "時刻の言い方：a las siete"
+      },
+      "explanation_es": {
+        "en": "To say at what time something happens, use *a las* + the hour: *a las siete*, *a las ocho*. For one o’clock it is *a la una*."
+      },
+      "refs": ["p1s2", "p4s3"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "levantarse",
+      "surface": "levanto",
+      "pos": "verb",
+      "def_en": "salir de la cama",
+      "def_es": { "en": "to get up", "fr": "se lever", "zh": "起床", "ja": "起きる" },
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "acostarse",
+      "surface": "acuesto",
+      "pos": "verb",
+      "def_en": "ir a la cama para dormir",
+      "def_es": { "en": "to go to bed", "fr": "se coucher", "zh": "上床睡觉", "ja": "寝る" },
+      "ref": "p4s3"
+    },
+    {
+      "lemma": "autobús",
+      "surface": "autobús",
+      "pos": "noun",
+      "def_en": "vehículo grande que lleva a muchas personas",
+      "def_es": { "en": "bus", "fr": "bus", "zh": "公共汽车", "ja": "バス" },
+      "ref": "p2s1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Qué cuenta Carla?",
+      "evidence": ["p1s2", "p4s3"],
+      "rationale_es": { "en": "She goes through her day in order, from *me levanto* to *me acuesto*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Su rutina de cada día" },
+        { "id": "b", "text": "Un viaje a otra ciudad" },
+        { "id": "c", "text": "Cómo es su casa" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿A qué hora se levanta?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "*Me levanto a las siete*. At eight she goes to work." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "A las seis" },
+        { "id": "b", "text": "A las siete" },
+        { "id": "c", "text": "A las ocho" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Carla va al trabajo en coche.",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "*Voy al trabajo en autobús*: she goes by bus." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Con quién come?",
+      "evidence": ["p3s1"],
+      "rationale_es": { "en": "*Como a las dos con mis compañeros*: she has lunch with her colleagues." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Con su familia en casa" },
+        { "id": "b", "text": "Con sus compañeros" },
+        { "id": "c", "text": "Con su hermana" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué hace por la tarde?",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "*Por la tarde estudio inglés*. The film and dinner are at night." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Estudia inglés" },
+        { "id": "b", "text": "Ve una película" },
+        { "id": "c", "text": "Cena en casa" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Carla cena en un restaurante.",
+      "evidence": ["p4s1"],
+      "rationale_es": { "en": "*Por la noche ceno en casa*: she has dinner at home." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p4s3"],
+      "rationale_es": { "en": "*Me acuesto* (yo) becomes *se acuesta* (ella)." },
+      "type": "gap_fill",
+      "text": "A las once Carla se {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["acuesta"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 51,
+  "lemmas": [
+    "a", "acostarse", "autobús", "café", "casa", "cenar", "comer", "compañero", "con", "desayunar", "después",
+    "el", "en", "estudiar", "inglés", "ir", "levantarse", "llamarse", "mi", "noche", "oficina", "pan",
+    "película", "por", "tarde", "trabajar", "un", "ver", "y", "yo"
+  ],
+  "difficulty": 662,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 5.1,
+    "flesch_reading_ease": 94.6,
+    "checked_at": "2026-10-18T18:56:19.881Z"
+  }
+}

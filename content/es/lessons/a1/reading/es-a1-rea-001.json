@@ -1,0 +1,369 @@
+{
+  "id": "es-a1-rea-001",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u01",
+  "series": "es-a1-u01-presentaciones",
+  "skill": "reading",
+  "genre": "email",
+  "title": "Un mensaje para Leo",
+  "summary_es": {
+    "en": "Marta introduces herself in a message to her new classmate.",
+    "fr": "Marta se présente dans un message à son nouveau camarade.",
+    "zh": "Marta 在给新同学的消息里介绍了自己。",
+    "ja": "マルタは新しいクラスメートへのメッセージで自己紹介をします。"
+  },
+  "topic": "daily-life",
+  "tags": ["presentación", "correo", "presente"],
+  "can_do": ["R-A1-02"],
+  "grammar_focus": ["es.a1.presente-regulares"],
+  "vocab_focus": ["librería", "trabajo", "tenis", "saludo"],
+  "est_minutes": 6,
+  "prediction_prompt": "¿Qué cuenta una persona cuando se presenta?",
+  "pre_teach": ["librería", "saludo"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Hola, Leo:",
+          "tokens": [
+            { "t": "Hola", "l": "hola", "p": "INTJ", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Leo", "l": "leo", "p": "PROPN", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Me llamo Marta.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "Marta", "l": "marta", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Soy de Sevilla, en España.",
+          "tokens": [
+            { "t": "Soy", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Sevilla", "l": "sevilla", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "España", "l": "españa", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "Tengo veinticuatro años.",
+          "tokens": [
+            { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "veinticuatro", "l": "veinticuatro", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Trabajo en una librería pequeña.",
+          "tokens": [
+            { "t": "Trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "librería", "l": "librería", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Me gusta mucho mi trabajo.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Vivo con mi hermana Lucía.",
+          "tokens": [
+            { "t": "Vivo", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "hermana", "l": "hermana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Lucía", "l": "lucía", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Los sábados juego al tenis con mis amigos.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sábados", "l": "sábado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "juego", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "tenis", "l": "tenis", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Los domingos leo un libro en casa.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "domingos", "l": "domingo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "leo", "l": "leer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "libro", "l": "libro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "¿Y tú?",
+          "tokens": [
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "tú", "l": "tú", "p": "PRON", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "¿De dónde eres?",
+          "tokens": [
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "dónde", "l": "dónde", "p": "ADV", "w": true, "sp": true },
+            { "t": "eres", "l": "ser", "p": "AUX", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "¿Qué te gusta hacer?",
+          "tokens": [
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true },
+            { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Un saludo,",
+          "tokens": [
+            { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "saludo", "l": "saludo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s5",
+          "text": "Marta",
+          "tokens": [
+            { "t": "Marta", "l": "marta", "p": "PROPN", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Present tense: yo trabajo, yo vivo",
+        "fr": "Présent : yo trabajo, yo vivo",
+        "zh": "现在时：yo trabajo, yo vivo",
+        "ja": "現在形：yo trabajo, yo vivo"
+      },
+      "explanation_es": { "en": "With *yo* the verb ends in *-o*: *trabajo*, *vivo*, *leo*. The pronoun is usually left out." },
+      "refs": ["p2s1", "p2s3"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "librería",
+      "surface": "librería",
+      "pos": "noun",
+      "def_en": "tienda donde se venden libros",
+      "def_es": { "en": "bookshop", "fr": "librairie", "zh": "书店", "ja": "本屋" },
+      "ref": "p2s1"
+    },
+    {
+      "lemma": "saludo",
+      "surface": "saludo",
+      "pos": "noun",
+      "def_en": "palabra para despedirse o saludar",
+      "def_es": { "en": "greeting; regards", "fr": "salutation", "zh": "问候", "ja": "あいさつ" },
+      "ref": "p4s4"
+    },
+    {
+      "lemma": "jugar al tenis",
+      "surface": "juego al tenis",
+      "pos": "phrase",
+      "def_en": "hacer el deporte del tenis",
+      "def_es": { "en": "to play tennis", "fr": "jouer au tennis", "zh": "打网球", "ja": "テニスをする" },
+      "ref": "p3s1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Qué es este texto?",
+      "evidence": ["p1s1", "p4s4"],
+      "rationale_es": {
+        "en": "It starts with *Hola, Leo* and ends with *Un saludo*: it is a message in which Marta introduces herself."
+      },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un mensaje personal" },
+        { "id": "b", "text": "Un menú de restaurante" },
+        { "id": "c", "text": "Un anuncio de trabajo" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿De dónde es Marta?",
+      "evidence": ["p1s3"],
+      "rationale_es": { "en": "*Soy de Sevilla, en España*: Marta is from Seville." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De Madrid" },
+        { "id": "b", "text": "De Sevilla" },
+        { "id": "c", "text": "De Valencia" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Marta trabaja en una tienda de ropa.",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "She works in a *librería* (a bookshop), not a clothes shop." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Con quién vive Marta?",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "*Vivo con mi hermana Lucía*: she lives with her sister." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Con su madre" },
+        { "id": "b", "text": "Con sus amigos" },
+        { "id": "c", "text": "Con su hermana" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué hace Marta los sábados?",
+      "evidence": ["p3s1"],
+      "rationale_es": {
+        "en": "*Los sábados juego al tenis con mis amigos*: on Saturdays she plays tennis. The book is for Sundays."
+      },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Juega al tenis" },
+        { "id": "b", "text": "Lee un libro en casa" },
+        { "id": "c", "text": "Trabaja en una librería" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Marta tiene veinticuatro años.",
+      "evidence": ["p1s4"],
+      "rationale_es": { "en": "*Tengo veinticuatro años*: she is twenty-four." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "*Los domingos leo un libro*: in the third person, *yo leo* becomes *ella lee*." },
+      "type": "gap_fill",
+      "text": "Los domingos Marta {{1}} un libro en casa.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["lee"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 55,
+  "lemmas": [
+    "a", "amigo", "año", "casa", "con", "de", "domingo", "dónde", "el", "en", "gustar", "hacer", "hermana",
+    "jugar", "leer", "librería", "libro", "llamarse", "mi", "mucho", "pequeño", "qué", "saludo", "ser",
+    "sábado", "tener", "tenis", "trabajar", "tú", "un", "vivir", "y", "yo"
+  ],
+  "difficulty": 658,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 3.9,
+    "flesch_reading_ease": 90.5,
+    "checked_at": "2026-10-18T18:56:19.881Z"
+  }
+}

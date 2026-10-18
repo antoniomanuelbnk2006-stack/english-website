@@ -55,7 +55,7 @@ const LEVEL_CENTER: Record<Cefr, number> = {
 };
 const MEAN_WPM: Record<Cefr, number> = { A1: 100, A2: 115, B1: 135, B2: 155, C1: 175, C2: 195 };
 const MEAN_SENTENCE_WORDS: Record<Cefr, number> = { A1: 7, A2: 10, B1: 14, B2: 18, C1: 22, C2: 25 };
-const STANDARD_ACCENTS = new Set(['en-US', 'en-GB']);
+const STANDARD_ACCENTS = new Set(['en-US', 'en-GB', 'es-ES']);
 
 export type DifficultyInput = {
   level: Cefr;

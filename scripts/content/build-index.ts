@@ -39,7 +39,8 @@ for (const { file, contentPath, id, language } of listLessonFiles()) {
     unit: lesson.unit,
     series: lesson.series,
     title: lesson.title,
-    summary_es: lesson.summary_es,
+    // El valor tal cual está en el archivo: el parseado lleva las traducciones en una clase.
+    summary_es: (raw as { summary_es?: unknown }).summary_es,
     topic: lesson.topic,
     genre: lesson.genre,
     est_minutes: lesson.est_minutes,
@@ -68,6 +69,9 @@ for (const { file, contentPath, id, language } of listLessonFiles()) {
           },
     ),
   );
+  // La ayuda se guarda como está en el archivo: la validada lleva las traducciones en una clase.
+  const entry = index.at(-1);
+  if (entry) entry.summary_es = (raw as { summary_es: Meta['summary_es'] }).summary_es;
 }
 
 index.sort((a, b) => a.id.localeCompare(b.id));

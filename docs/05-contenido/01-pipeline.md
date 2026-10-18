@@ -61,6 +61,8 @@ Una por unidad/serie. Formato en [Cómo leer el currículo §6](../02-curriculo/
 - Si una lección falla la validación, se registra el error y el resto del lote sigue.
 
 ### 3.3 Anotación
+
+> **Idiomas.** La anotación depende del idioma de la lección (el de su id, ADR-0035): `scripts/content/lib/language-pack.ts` da, para cada idioma, el tokenizador, las listas de niveles, la legibilidad y las palabras vacías. El inglés usa `wink-nlp` y las listas abiertas; el **español** usa un léxico generado (`es-lexicon.ts`: forma → lema y categoría, a partir del mazo `content/es/dictionary` con sus terminaciones y unas tablas de verbos irregulares y palabras gramaticales), `nlp-es.ts` (tokenizador) y la legibilidad de Fernández Huerta. No adivina: una forma que el léxico no conoce sale con categoría `X` y la calidad falla con «palabras que el léxico no conoce»; se arregla añadiendo la palabra al mazo (o la forma irregular a `es-lexicon.ts`). Los niveles de las palabras de español salen del propio mazo.
 1. **Tokenización y lemas** (wink-nlp): por segmento o por frase. Nombres propios, números y puntuación → `w = false`.
 2. **Nivel de cada lema:** CEFR-J (A1–B2) → Octanove (C1–C2) → estimación por frecuencia (NGSL). Ver [Vocabulario](../01-pedagogia/05-vocabulario-y-srs.md#3-niveles-de-las-palabras-fuentes-con-licencia-abierta).
 3. **Cobertura por nivel** (`qa.coverage_by_level`) y **lemas fuera de nivel** (`qa.off_level_lemmas`).
@@ -134,7 +136,8 @@ export interface TtsProvider {
 
 - `azure.ts`: SDK de Azure Speech, evento `wordBoundary` → `WordEvent`.
 - `kokoro.ts`: modelo local (Apache 2.0); si no da tiempos por palabra, alineado forzado posterior.
-- Se elige con `TTS_PROVIDER` en `.env.pipeline` (`azure` o `kokoro`).
+- Se elige con `TTS_PROVIDER` en `.env.pipeline` (`azure`, `kokoro` o `piper`).
+- **Piper** (`tts/piper.ts`, MIT) da la voz del **español**, porque Kokoro solo tiene inglés. Corre en local sin claves; necesita Piper y sus voces en `.piper/` (`PIPER_DIR` para cambiarlo): `.piper/piper/piper.exe` (release de `rhasspy/piper`) y `.piper/voices/*.onnx` con su `.onnx.json`. Voces: `sharvard-f` y `sharvard-m` (los dos hablantes del modelo Sharvard) y `davefx-m`. Licencias en `content/wordlists/LICENSES.md`. Sin tiempos por palabra: se estiman como en Kokoro.
 - **Kokoro ya está implementado** (`tts/kokoro.ts`, paquete `kokoro-js`): corre en local sin claves, con voces en-GB y en-US. Como no da eventos de palabra, los tiempos se **estiman** emparejando las pausas del audio con la puntuación (`tts/estimate-words.ts`); para tiempos exactos hace falta Azure. Admite velocidades de 0,7× a 1,3×: en A1, si aun así va rápido, se alargan las pausas con `pause_after_ms`.
 
 ---

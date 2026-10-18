@@ -24,6 +24,7 @@ import { useT } from '@/lib/i18n/client';
 import type { TranslationKey } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
 import { ReaderText } from './reader-text';
+import { useContentLang } from '@/components/content-language';
 
 const PHASE = { prepare: 0, skim: 1, read: 2, questions: 3, focus: 4, result: 5 } as const;
 
@@ -62,6 +63,7 @@ export function ReadingLesson({
   grammar,
 }: ReadingLessonProps) {
   const t = useT();
+  const lang = useContentLang();
   const { clock, record, save, saving, error, serverScore } = useLessonSession(lesson);
   const lex = useLexiconSession(lesson.id, lexicon);
 
@@ -187,7 +189,7 @@ export function ReadingLesson({
           {t('lesson.back')}
         </Link>
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <h1 lang="en" className="text-heading-sm sm:text-heading">
+          <h1 lang={lang} className="text-heading-sm sm:text-heading">
             {lesson.title}
           </h1>
           <div className="flex flex-wrap items-center gap-2">
@@ -225,7 +227,7 @@ export function ReadingLesson({
           {lesson.prediction_prompt ? (
             <div>
               <PanelLabel>{t('reading.beforeReading')}</PanelLabel>
-              <p lang="en" className="prose-reading mt-2">
+              <p lang={lang} className="prose-reading mt-2">
                 {lesson.prediction_prompt}
               </p>
             </div>
@@ -238,12 +240,12 @@ export function ReadingLesson({
                   const entry = lesson.glossary.find((g) => g.lemma === word);
                   return (
                     <div key={word}>
-                      <dt lang="en" className="font-medium text-accent-text">
+                      <dt lang={lang} className="font-medium text-accent-text">
                         {word}
                       </dt>
                       {entry ? (
                         <dd className="text-body-sm text-muted">
-                          <span lang="en">{entry.def_en}</span> — {entry.def_es}
+                          <span lang={lang}>{entry.def_en}</span> — {entry.def_es}
                         </dd>
                       ) : null}
                     </div>
@@ -476,7 +478,7 @@ export function ReadingLesson({
                         <ul className="mt-2 flex flex-col gap-3">
                           {missed.map(({ task }) => (
                             <li key={task.id} className="flex flex-col gap-1 text-body-sm">
-                              <span lang="en" className="font-medium">
+                              <span lang={lang} className="font-medium">
                                 {task.prompt}
                               </span>
                               <span className="text-muted">
@@ -506,7 +508,7 @@ export function ReadingLesson({
                             <li key={ficha.id}>
                               <Link
                                 href={`/gramatica/${ficha.id}`}
-                                lang="en"
+                                lang={lang}
                                 className="text-accent-text underline underline-offset-4"
                               >
                                 {ficha.title}

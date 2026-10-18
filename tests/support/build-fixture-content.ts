@@ -31,6 +31,8 @@ const EXAM_LISTENING = 'b2-exam-01-listening';
 const EXAMS = new Set(['b2-exam-01-reading', EXAM_LISTENING, 'b2-exam-01-speaking']);
 /** La única ficha de español: la que permite elegir el idioma que se practica. */
 const SPANISH_FICHA = 'es.a1.ser-estar';
+const SPANISH_READING = 'es-a1-rea-001';
+const SPANISH_LISTENING = 'es-a1-lis-001';
 
 /** Mazo de palabras de prueba: pequeño y fijo, con y sin frecuencia para probar el orden. */
 const DICTIONARY = {
@@ -113,6 +115,23 @@ for (const [level, words] of Object.entries(DICTIONARY)) {
   );
 }
 
+// Un segundo idioma (ADR-0036): con una ficha de español ya se puede elegir qué se practica. Va
+// con el formato de los idiomas nuevos: ayudas por idioma de interfaz y cuerpo en inglés.
+// El contenido real de español (content/es) no entra entero en los tests: una ficha de prueba,
+// una consigna, el mazo y dos lecciones (una lectura y una escucha), así que añadir contenido
+// real no cambia lo que ven. La escucha se locuta aquí con tonos, como la de inglés.
+rmSync(path.join(FIXTURE_DIR, 'es'), { recursive: true, force: true });
+for (const file of [
+  'writing/a1/es-a1-wri-001.json',
+  'dictionary/a1.json',
+  'units.json',
+  `lessons/a1/reading/${SPANISH_READING}.json`,
+  `lessons/a1/listening/${SPANISH_LISTENING}.json`,
+]) {
+  mkdirSync(path.dirname(path.join(FIXTURE_DIR, 'es', file)), { recursive: true });
+  cpSync(path.join(ROOT, 'content', 'es', file), path.join(FIXTURE_DIR, 'es', file));
+}
+
 const file = path.join(FIXTURE_DIR, 'lessons', 'b1', 'listening', `${LISTENING}.json`);
 type Fixture = {
   status: string;
@@ -121,9 +140,9 @@ type Fixture = {
 };
 const read = () => JSON.parse(readFileSync(file, 'utf8')) as Fixture;
 
-script('tts', ['--ids', LISTENING]);
-script('audio', ['--ids', LISTENING]);
-script('upload', ['--ids', LISTENING, '--local']);
+script('tts', ['--ids', `${LISTENING},${SPANISH_LISTENING}`]);
+script('audio', ['--ids', `${LISTENING},${SPANISH_LISTENING}`]);
+script('upload', ['--ids', `${LISTENING},${SPANISH_LISTENING}`, '--local']);
 
 // La lección de prueba se «publica» aquí. El audio son tonos, pero el esquema solo admite
 // proveedores reales, así que en este contenido de prueba (y solo en él) se etiqueta como azure.
@@ -133,7 +152,19 @@ lesson.provenance.reviewed_by = 'fixture de tests e2e';
 lesson.audio.provider = 'azure';
 writeFileSync(file, `${JSON.stringify(lesson, null, 2)}\n`);
 
-script('annotate', ['--ids', LISTENING]);
+const spanishFile = path.join(
+  FIXTURE_DIR,
+  'es',
+  'lessons',
+  'a1',
+  'listening',
+  `${SPANISH_LISTENING}.json`,
+);
+const spanish = JSON.parse(readFileSync(spanishFile, 'utf8')) as Fixture;
+spanish.audio.provider = 'azure';
+writeFileSync(spanishFile, `${JSON.stringify(spanish, null, 2)}\n`);
+
+script('annotate', ['--ids', `${LISTENING},${SPANISH_LISTENING}`]);
 
 // El Listening del simulacro pasa por su propio pipeline, también con tonos en vez de voz.
 script('exam-audio', ['--ids', EXAM_LISTENING]);
@@ -143,15 +174,6 @@ const exam = JSON.parse(readFileSync(examFile, 'utf8')) as { status: string };
 exam.status = 'published';
 writeFileSync(examFile, `${JSON.stringify(exam, null, 2)}\n`);
 
-// Un segundo idioma (ADR-0036): con una ficha de español ya se puede elegir qué se practica. Va
-// con el formato de los idiomas nuevos: ayudas por idioma de interfaz y cuerpo en inglés.
-// El contenido real de español (content/es) no entra entero en los tests: una ficha de prueba, una
-// consigna y el mazo, así que añadir contenido real no cambia lo que ven.
-rmSync(path.join(FIXTURE_DIR, 'es'), { recursive: true, force: true });
-for (const file of ['writing/a1/es-a1-wri-001.json', 'dictionary/a1.json']) {
-  mkdirSync(path.dirname(path.join(FIXTURE_DIR, 'es', file)), { recursive: true });
-  cpSync(path.join(ROOT, 'content', 'es', file), path.join(FIXTURE_DIR, 'es', file));
-}
 const spanishDir = path.join(FIXTURE_DIR, 'es', 'grammar', 'a1');
 mkdirSync(spanishDir, { recursive: true });
 writeFileSync(

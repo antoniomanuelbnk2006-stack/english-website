@@ -7,6 +7,8 @@ import { DASH_PREFIX, DOT_PREFIX } from './language';
 // ───────────── Enumeraciones ─────────────
 export const Cefr = z.enum(['A1', 'A2', 'B1', 'B2', 'C1', 'C2']);
 export const Accent = z.enum([
+  'es-ES',
+  'es-MX',
   'en-US',
   'en-GB',
   'en-AU',
@@ -320,7 +322,7 @@ export const AudioInfo = z.object({
   src: z.string().min(1), // 'audio/b1/b1-lis-001/v1.m4a'
   duration_s: z.number().positive(),
   wpm: z.number().positive(),
-  provider: z.enum(['azure', 'kokoro', 'human', 'public-domain']),
+  provider: z.enum(['azure', 'kokoro', 'piper', 'human', 'public-domain']),
   voices: z.record(z.string(), z.string()), // speaker id → voz
   loudness_lufs: z.number().optional(),
   peaks: z.array(z.number().min(0).max(1)).max(400),

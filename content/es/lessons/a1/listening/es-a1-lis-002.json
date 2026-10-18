@@ -1,0 +1,341 @@
+{
+  "id": "es-a1-lis-002",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u01",
+  "series": "es-a1-u01-presentaciones",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Me presento",
+  "summary_es": {
+    "en": "Marta and Leo meet and say where they are from and what they do.",
+    "fr": "Marta et Leo font connaissance et disent d’où ils viennent et ce qu’ils font.",
+    "zh": "Marta 和 Leo 互相认识，说了自己来自哪里、做什么工作。",
+    "ja": "マルタとレオは自己紹介をして、出身と仕事を話します。"
+  },
+  "topic": "daily-life",
+  "tags": ["presentación", "ser", "presente"],
+  "can_do": ["L-A1-02"],
+  "grammar_focus": ["es.a1.ser-estar"],
+  "vocab_focus": ["llamarse", "trabajar", "estudiar", "gusto"],
+  "est_minutes": 5,
+  "prediction_prompt": "Dos personas se conocen. ¿Qué preguntas se hacen?",
+  "pre_teach": ["mucho gusto"],
+  "speakers": [
+    { "id": "marta", "name": "Marta", "accent": "es-ES", "gender": "female" },
+    { "id": "leo", "name": "Leo", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "marta",
+      "text": "Hola, me llamo Marta. ¿Y tú?",
+      "tokens": [
+        { "t": "Hola", "l": "hola", "p": "INTJ", "w": false, "s": 0.01, "e": 0.41 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 0.67, "e": 0.914 },
+        { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true, "s": 0.914, "e": 1.402 },
+        { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "s": 1.402, "e": 1.89 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 2.19, "e": 2.406 },
+        { "t": "tú", "l": "tú", "p": "PRON", "w": true, "s": 2.406, "e": 2.73 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.783
+    },
+    {
+      "id": "s2",
+      "speaker": "leo",
+      "text": "Hola, Marta. Yo me llamo Leo.",
+      "tokens": [
+        { "t": "Hola", "l": "hola", "p": "INTJ", "w": false, "s": 3.515, "e": 3.941 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "s": 3.941, "e": 4.452 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 4.452, "e": 4.708 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 4.708, "e": 4.964 },
+        { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true, "s": 4.963, "e": 5.474 },
+        { "t": "Leo", "l": "leo", "p": "PROPN", "w": false, "s": 5.474, "e": 5.815 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.483,
+      "end": 5.889
+    },
+    {
+      "id": "s3",
+      "speaker": "marta",
+      "text": "¿De dónde eres, Leo?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 6.589, "e": 6.837 },
+        { "t": "dónde", "l": "dónde", "p": "ADV", "w": true, "sp": true, "s": 6.837, "e": 7.334 },
+        { "t": "eres", "l": "ser", "p": "AUX", "w": true, "s": 7.334, "e": 7.748 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Leo", "l": "leo", "p": "PROPN", "w": false, "s": 7.748, "e": 8.079 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.589,
+      "end": 8.172
+    },
+    {
+      "id": "s4",
+      "speaker": "leo",
+      "text": "Soy de Valencia. ¿Y tú?",
+      "tokens": [
+        { "t": "Soy", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 8.872, "e": 9.1 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 9.1, "e": 9.271 },
+        { "t": "Valencia", "l": "valencia", "p": "PROPN", "w": false, "s": 9.27, "e": 9.782 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 10.332, "e": 10.5 },
+        { "t": "tú", "l": "tú", "p": "PRON", "w": true, "s": 10.5, "e": 10.752 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.872,
+      "end": 10.856
+    },
+    {
+      "id": "s5",
+      "speaker": "marta",
+      "text": "Yo soy de Sevilla.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 11.566, "e": 11.789 },
+        { "t": "soy", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 11.789, "e": 12.087 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 12.087, "e": 12.31 },
+        { "t": "Sevilla", "l": "sevilla", "p": "PROPN", "w": false, "s": 12.31, "e": 12.906 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.556,
+      "end": 12.976
+    },
+    {
+      "id": "s6",
+      "speaker": "leo",
+      "text": "¿Trabajas o estudias?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Trabajas", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 13.716, "e": 14.301 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 14.301, "e": 14.431 },
+        { "t": "estudias", "l": "estudiar", "p": "VERB", "w": true, "s": 14.431, "e": 15.016 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.676,
+      "end": 15.091
+    },
+    {
+      "id": "s7",
+      "speaker": "marta",
+      "text": "Trabajo en una librería. ¿Y tú?",
+      "tokens": [
+        { "t": "Trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 15.801, "e": 16.314 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 16.314, "e": 16.507 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 16.507, "e": 16.764 },
+        { "t": "librería", "l": "librería", "p": "NOUN", "w": true, "s": 16.764, "e": 17.342 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 17.601, "e": 17.785 },
+        { "t": "tú", "l": "tú", "p": "PRON", "w": true, "s": 17.785, "e": 18.061 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.791,
+      "end": 18.122
+    },
+    {
+      "id": "s8",
+      "speaker": "leo",
+      "text": "Yo estudio medicina.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 18.852, "e": 19.032 },
+        { "t": "estudio", "l": "estudiar", "p": "VERB", "w": true, "sp": true, "s": 19.032, "e": 19.512 },
+        { "t": "medicina", "l": "medicina", "p": "NOUN", "w": true, "s": 19.512, "e": 20.052 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.822,
+      "end": 20.129
+    },
+    {
+      "id": "s9",
+      "speaker": "marta",
+      "text": "¡Qué bien! Mucho gusto.",
+      "tokens": [
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 20.839, "e": 21.092 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 21.092, "e": 21.409 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 21.649, "e": 22.139 },
+        { "t": "gusto", "l": "gustar", "p": "VERB", "w": true, "s": 22.139, "e": 22.629 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.829,
+      "end": 22.703
+    },
+    {
+      "id": "s10",
+      "speaker": "leo",
+      "text": "Mucho gusto, Marta.",
+      "tokens": [
+        { "t": "Mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 23.429, "e": 23.832 },
+        { "t": "gusto", "l": "gustar", "p": "VERB", "w": true, "s": 23.832, "e": 24.235 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "s": 24.236, "e": 24.639 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.403,
+      "end": 24.702
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "mucho gusto",
+      "surface": "Mucho gusto",
+      "pos": "phrase",
+      "def_en": "lo que se dice al conocer a alguien",
+      "def_es": { "en": "nice to meet you", "fr": "enchanté", "zh": "很高兴认识你", "ja": "はじめまして" },
+      "ref": "s9"
+    },
+    {
+      "lemma": "medicina",
+      "surface": "medicina",
+      "pos": "noun",
+      "def_en": "la carrera de los médicos",
+      "def_es": { "en": "medicine (as a degree)", "fr": "médecine (études)", "zh": "医学", "ja": "医学" },
+      "ref": "s8"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué hacen Marta y Leo?",
+      "evidence": ["s1", "s2"],
+      "rationale_es": { "en": "They say their names, where they are from and what they do: they introduce themselves." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Se presentan" },
+        { "id": "b", "text": "Piden comida" },
+        { "id": "c", "text": "Buscan una casa" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿De dónde es Leo?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "*Soy de Valencia*. Marta is the one from Seville." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De Sevilla" },
+        { "id": "b", "text": "De Valencia" },
+        { "id": "c", "text": "De Madrid" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Marta es de Sevilla.",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "*Yo soy de Sevilla*." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué estudia Leo?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "*Yo estudio medicina*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Medicina" },
+        { "id": "b", "text": "Inglés" },
+        { "id": "c", "text": "Tenis y libros" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Dónde trabaja Marta?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "*Trabajo en una librería*: she works in a bookshop." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En una oficina de correos" },
+        { "id": "b", "text": "En un hospital" },
+        { "id": "c", "text": "En una librería" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "*Una librería* is a shop that sells books." },
+      "type": "gap_fill",
+      "text": "Marta trabaja en una {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["librería"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "bien", "de", "dónde", "en", "estudiar", "gustar", "librería", "llamarse", "medicina", "mucho", "o", "qué",
+    "ser", "trabajar", "tú", "un", "y", "yo"
+  ],
+  "difficulty": 681,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 2.9,
+    "flesch_reading_ease": 97.5,
+    "checked_at": "2026-10-18T18:55:58.581Z"
+  },
+  "audio": {
+    "src": "audio/a1/es-a1-lis-002/v1.m4a",
+    "duration_s": 24.702,
+    "wpm": 107,
+    "provider": "piper",
+    "voices": { "marta": "sharvard-f", "leo": "davefx-m" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      0.8, 0.71, 1, 0.46, 0.02, 0, 0.18, 0.47, 0.46, 0.88, 0.68, 0.56, 0.39, 0.6, 0.59, 0.06, 0.32, 0.23, 0.06,
+      0.01, 0, 0.76, 0.77, 1, 0.86, 0.83, 0.23, 0, 0, 0, 0, 0, 0, 0, 0.99, 0.97, 1, 0.45, 0.97, 0.95, 0.3,
+      0.55, 0.04, 0, 0, 0, 0.16, 1, 0.62, 0.9, 0.79, 0.89, 0.58, 0.68, 0.53, 0.5, 0.16, 0, 0, 0, 0, 0, 0, 0,
+      0.46, 1, 0.82, 0.94, 0.95, 0.99, 1, 0.98, 0.3, 0.18, 0.16, 0.69, 0.72, 0.56, 0.17, 0.01, 0, 0, 0, 0, 0,
+      0, 0.91, 1, 0.94, 0.91, 0.91, 0.51, 0.18, 0.22, 0.31, 0.03, 0, 0, 0, 0, 0.88, 1, 0.52, 0.82, 0.15, 0.01,
+      0, 0, 0, 0, 0, 0, 0.23, 0.9, 1, 0.56, 0.75, 0.83, 0.51, 0.41, 0.57, 0.27, 0.21, 0.25, 0.14, 0.06, 0, 0,
+      0, 0, 0, 0, 0.01, 1, 0.94, 0.94, 0.98, 0.27, 0.7, 0.31, 0.44, 0.49, 0.82, 0.58, 0.14, 0.12, 0.02, 0, 0,
+      0, 0, 0, 0, 0.38, 0.73, 1, 0.9, 0.26, 0.43, 0.47, 0.51, 0.52, 0.62, 0.6, 0.6, 0.38, 0.32, 0.3, 0.09, 0,
+      0, 0.95, 0.1, 1, 0.83, 0.11, 0, 0, 0, 0, 0, 0, 0.01, 1, 0.96, 0.54, 0.55, 0.71, 0.65, 0.52, 0.5, 0.47,
+      0.58, 0.56, 0.35, 0.02, 0, 0, 0, 0, 0, 0, 0.69, 0.97, 0.67, 1, 0.61, 0.33, 0.03, 0, 0.38, 0.47, 0.54, 1,
+      0.95, 0.44, 0.22, 0, 0.24, 0.16, 0.02, 0, 0, 0, 0, 0, 0, 0.22, 0.96, 0.53, 0.91, 1, 0.74, 0.1, 0.69,
+      0.96, 1, 0.24, 0.41, 0.17
+    ]
+  }
+}

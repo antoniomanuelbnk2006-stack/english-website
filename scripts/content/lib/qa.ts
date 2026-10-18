@@ -1,5 +1,7 @@
 import type { LessonDraft, RawLesson } from '../../../src/lib/content/schema';
 import { referenceTexts } from '../../../src/lib/content/invariants';
+import { languageOfId } from '../../../src/lib/content/language';
+import { textRules, type TextRules } from './language-pack';
 import { LEVEL_PROFILE } from './metrics';
 import { CEFR, type Cefr } from './wordlists';
 
@@ -17,7 +19,8 @@ export interface QaIssue {
     | 'option-length'
     | 'literal-copy'
     | 'focus-mix'
-    | 'dictation';
+    | 'dictation'
+    | 'lexicon';
   message: string;
 }
 
@@ -85,50 +88,35 @@ export function checkProfile(lesson: AnyLesson, metrics: LessonMetrics): QaIssue
   return issues;
 }
 
-const STOPWORDS = new Set(
-  `a an the and or but if so of to in on at by for from with about into over after before up down
-   out off as than then that this these those it its he she they them his her their we you i me my
-   your our us is are was were be been being am do does did done have has had will would can could
-   should may might must not no yes there here what which who whom when where why how all any some
-   more most very just only also too each every`.split(/\s+/),
-);
-
-/** Números y horas se repiten por fuerza: «forty minutes» no se puede parafrasear. */
-const NUMBER_WORDS = new Set(
-  `one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen
-   seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred hundreds
-   thousand thousands million half quarter first second third a.m. p.m. am pm o'clock noon midnight`.split(
-    /\s+/,
-  ),
-);
-
-const isContentWord = (word: string) =>
-  word.length > 2 && !STOPWORDS.has(word) && !NUMBER_WORDS.has(word) && !/\d/.test(word);
+const isContentWord = (word: string, rules: TextRules) =>
+  word.length > 2 && !rules.stopwords.has(word) && !rules.numberWords.has(word) && !/\d/.test(word);
 
 /** Palabras de contenido en minúsculas; la mayúscula inicial delata los nombres propios. */
-function contentWords(text: string, skipProperNouns: boolean): string[] {
+function contentWords(text: string, skipProperNouns: boolean, rules: TextRules): string[] {
   const words = text.match(/[\p{L}\p{N}'’-]+/gu) ?? [];
   return words
     .filter((word, index) => !(skipProperNouns && index > 0 && /^\p{Lu}/u.test(word)))
     .map((word) => word.toLowerCase().replace(/[’']s$/, ''))
-    .filter(isContentWord);
+    .filter((word) => isContentWord(word, rules));
 }
 
-/** Raíz muy aproximada: basta para ver si «changes» y «changed» repiten la misma palabra. */
-const stem = (word: string) => word.replace(/(?:ing|ed|es|s|ly)$/, '');
-
 /** Fracción de las palabras de contenido de `option` que ya están, tal cual, en la evidencia. */
-export function literalOverlap(option: string, evidence: string): number | null {
-  const optionWords = contentWords(option, true);
+export function literalOverlap(
+  option: string,
+  evidence: string,
+  rules: TextRules = textRules('en'),
+): number | null {
+  const optionWords = contentWords(option, true, rules);
   if (optionWords.length < 3) return null;
-  const evidenceStems = new Set(contentWords(evidence, false).map(stem));
-  const repeated = optionWords.filter((word) => evidenceStems.has(stem(word))).length;
+  const evidenceStems = new Set(contentWords(evidence, false, rules).map(rules.stem));
+  const repeated = optionWords.filter((word) => evidenceStems.has(rules.stem(word))).length;
   return repeated / optionWords.length;
 }
 
 /** Capa 3 · las tareas miden comprensión y no suerte. */
 export function checkTasks(lesson: AnyLesson): QaIssue[] {
   const issues: QaIssue[] = [];
+  const rules = textRules(languageOfId(lesson.id));
   const texts = referenceTexts(lesson);
   const mcqs = lesson.tasks.filter((task) => task.type === 'mcq');
 
@@ -168,7 +156,7 @@ export function checkTasks(lesson: AnyLesson): QaIssue[] {
     const correct = task.options.find((o) => o.id === task.answer);
     if (!correct) continue;
     const evidence = task.evidence.map((ref) => texts.get(ref) ?? '').join(' ');
-    const overlap = literalOverlap(correct.text, evidence);
+    const overlap = literalOverlap(correct.text, evidence, rules);
     if (overlap !== null && overlap >= 0.6) {
       issues.push({
         check: 'literal-copy',

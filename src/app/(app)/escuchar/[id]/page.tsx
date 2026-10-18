@@ -10,6 +10,8 @@ import { findLessonMeta, unitTitle } from '@/lib/content/index';
 import { loadListeningLesson } from '@/lib/content/loader';
 import { getLocale } from '@/lib/i18n/server';
 import { env } from '@/lib/env';
+import { ContentLanguage } from '@/components/content-language';
+import { languageOfId } from '@/lib/content/language';
 
 export async function generateMetadata({ params }: PageProps<'/escuchar/[id]'>): Promise<Metadata> {
   const { id } = await params;
@@ -25,20 +27,22 @@ export default async function ListeningLessonPage({ params }: PageProps<'/escuch
   const [profile, progress] = await Promise.all([getProfile(), getLessonProgress(id)]);
 
   return (
-    <ListeningLesson
-      // Solo sale del servidor lo que se puede ver antes de la fase 3: el guion se pide después.
-      intro={toIntro(lesson)}
-      unitTitle={unitTitle(lesson.unit, await getLocale())}
-      audioBase={env.NEXT_PUBLIC_AUDIO_BASE_URL}
-      initialPhase={progress?.status === 'started' ? progress.phase : 0}
-      previous={
-        progress?.status === 'completed'
-          ? { score: progress.score, version: progress.lessonVersion }
-          : null
-      }
-      playbackRate={profile.settings.playback_rate}
-      transcriptSeen={progress?.transcriptFirst ?? false}
-      grammar={fichasOfLesson(lesson.id)}
-    />
+    <ContentLanguage language={languageOfId(lesson.id)}>
+      <ListeningLesson
+        // Solo sale del servidor lo que se puede ver antes de la fase 3: el guion se pide después.
+        intro={toIntro(lesson)}
+        unitTitle={unitTitle(lesson.unit, await getLocale())}
+        audioBase={env.NEXT_PUBLIC_AUDIO_BASE_URL}
+        initialPhase={progress?.status === 'started' ? progress.phase : 0}
+        previous={
+          progress?.status === 'completed'
+            ? { score: progress.score, version: progress.lessonVersion }
+            : null
+        }
+        playbackRate={profile.settings.playback_rate}
+        transcriptSeen={progress?.transcriptFirst ?? false}
+        grammar={fichasOfLesson(lesson.id)}
+      />
+    </ContentLanguage>
   );
 }

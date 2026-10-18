@@ -16,7 +16,7 @@ export interface SynthesisResult {
 
 export interface TtsProvider {
   /** `fake` es un doble de pruebas (tonos en vez de voz): nunca para contenido real. */
-  id: 'azure' | 'kokoro' | 'fake';
+  id: 'azure' | 'kokoro' | 'piper' | 'fake';
   voicesFor(accent: string, gender: 'female' | 'male'): string[];
   /**
    * ¿Es una voz de este proveedor? Si una lección fija una voz de otro (p. ej. una de

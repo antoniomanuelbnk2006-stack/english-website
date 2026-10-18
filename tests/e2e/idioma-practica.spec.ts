@@ -103,7 +103,7 @@ test('en el primer acceso se elige el idioma antes que el nivel', async ({ page,
   const levels = page.getByRole('group', { name: 'Elige tu nivel' });
   // Lo que hay de cada nivel cambia con el idioma: de español solo hay una ficha de A1.
   await languages.getByRole('radio', { name: 'Español' }).check();
-  await expect(levels.getByText('1 contenido', { exact: true })).toBeVisible();
+  await expect(levels.getByText('3 contenidos', { exact: true })).toBeVisible();
   await levels.getByRole('radio', { name: /A1/ }).check();
   await expectAccessible(page);
   await page.getByRole('button', { name: 'Guardar nivel' }).click();
@@ -242,6 +242,43 @@ test('el mazo de español: sus palabras, con su idioma y la traducción en ingl�
   ).toHaveCount(0);
   await expectAccessible(page);
   expect(errors).toEqual([]);
+});
+
+test('una lectura y una escucha en español: su idioma en pantalla y sus hablantes', async ({
+  page,
+  request,
+}) => {
+  const errors = trackErrors(page);
+  await practiceSpanish(request);
+  await signIn(page);
+
+  // Las bibliotecas solo enseñan lo de español.
+  await page.goto('/leer');
+  await expect(page.getByRole('link', { name: /The Second Life of Old Games/ })).toHaveCount(0);
+  await page.getByRole('link', { name: /Un mensaje para Leo/ }).click();
+  await expect(page).toHaveURL(/\/leer\/es-a1-rea-001$/);
+  await expect(
+    page.getByRole('heading', { level: 1, name: 'Un mensaje para Leo' }),
+  ).toHaveAttribute('lang', 'es');
+  await page.getByRole('button', { name: 'Empezar el vistazo' }).click();
+  await expect(
+    page.locator('[lang="es"]').filter({ hasText: 'Soy de Sevilla, en España.' }).first(),
+  ).toBeVisible();
+  await expect(page.locator('[lang="en"]').filter({ hasText: 'Soy de Sevilla' })).toHaveCount(0);
+  await expectAccessible(page);
+
+  // La escucha: hablantes de España, no de los acentos del inglés.
+  await page.goto('/escuchar');
+  await expect(page.getByRole('link', { name: /Un café y un bocadillo/ })).toContainText('es-ES');
+  await page.getByRole('link', { name: /Un café y un bocadillo/ }).click();
+  await expect(page).toHaveURL(/\/escuchar\/es-a1-lis-001$/);
+  await expect(
+    page.getByRole('heading', { level: 1, name: 'Un café y un bocadillo' }),
+  ).toHaveAttribute('lang', 'es');
+  await expect(page.getByText('Ana · es-ES')).toBeVisible();
+  await expect(page.getByText('Luis · es-ES')).toBeVisible();
+  await expectAccessible(page);
+  expect(errors.filter((message) => !message.includes('404'))).toEqual([]);
 });
 
 test('no se puede elegir un idioma sin contenido', async ({ page, request }) => {

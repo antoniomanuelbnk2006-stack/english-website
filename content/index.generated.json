@@ -1520,5 +1520,281 @@
       "write", "you", "young"
     ],
     "path": "lessons/c2/reading/c2-rea-003.json"
+  },
+  {
+    "id": "es-a1-lis-001",
+    "version": 1,
+    "skill": "listening",
+    "level": "A1",
+    "unit": "es-a1-u04",
+    "series": "es-a1-u04-cafeteria",
+    "title": "Un café y un bocadillo",
+    "summary_es": {
+      "en": "Luis orders a coffee and a sandwich in a café and pays.",
+      "fr": "Luis commande un café et un sandwich dans un café et paie.",
+      "zh": "Luis 在咖啡馆点了咖啡和三明治，然后付款。",
+      "ja": "ルイスはカフェでコーヒーとサンドイッチを注文して支払います。"
+    },
+    "topic": "food",
+    "genre": "dialogue",
+    "accents": ["es-ES"],
+    "duration_s": 24.014,
+    "word_count": 42,
+    "wpm": 105,
+    "est_minutes": 5,
+    "difficulty": 678,
+    "lemmas": [
+      "algo", "aquí", "bien", "bocadillo", "bueno", "café", "con", "de", "día", "euro", "favor", "hasta",
+      "leche", "llevar", "luego", "muy", "más", "o", "para", "por", "provecho", "querer", "queso", "qué",
+      "ser", "tener", "tomar", "un"
+    ],
+    "path": "es/lessons/a1/listening/es-a1-lis-001.json"
+  },
+  {
+    "id": "es-a1-lis-002",
+    "version": 1,
+    "skill": "listening",
+    "level": "A1",
+    "unit": "es-a1-u01",
+    "series": "es-a1-u01-presentaciones",
+    "title": "Me presento",
+    "summary_es": {
+      "en": "Marta and Leo meet and say where they are from and what they do.",
+      "fr": "Marta et Leo font connaissance et disent d’où ils viennent et ce qu’ils font.",
+      "zh": "Marta 和 Leo 互相认识，说了自己来自哪里、做什么工作。",
+      "ja": "マルタとレオは自己紹介をして、出身と仕事を話します。"
+    },
+    "topic": "daily-life",
+    "genre": "dialogue",
+    "accents": ["es-ES"],
+    "duration_s": 24.702,
+    "word_count": 44,
+    "wpm": 107,
+    "est_minutes": 5,
+    "difficulty": 681,
+    "lemmas": [
+      "bien", "de", "dónde", "en", "estudiar", "gustar", "librería", "llamarse", "medicina", "mucho", "o",
+      "qué", "ser", "trabajar", "tú", "un", "y", "yo"
+    ],
+    "path": "es/lessons/a1/listening/es-a1-lis-002.json"
+  },
+  {
+    "id": "es-a1-lis-003",
+    "version": 1,
+    "skill": "listening",
+    "level": "A1",
+    "unit": "es-a1-u03",
+    "series": "es-a1-u03-dia",
+    "title": "Mi día",
+    "summary_es": {
+      "en": "Carla tells what she does every day, hour by hour.",
+      "fr": "Carla raconte ce qu’elle fait chaque jour, heure par heure.",
+      "zh": "Carla 按钟点讲述她每天做的事情。",
+      "ja": "カルラは毎日していることを時間ごとに話します。"
+    },
+    "topic": "daily-life",
+    "genre": "monologue",
+    "accents": ["es-ES"],
+    "duration_s": 19.701,
+    "word_count": 43,
+    "wpm": 131,
+    "est_minutes": 5,
+    "difficulty": 710,
+    "lemmas": [
+      "a", "acostarse", "café", "cenar", "comer", "compañero", "con", "desayunar", "el", "estudiar", "familia",
+      "inglés", "ir", "levantarse", "llamarse", "mi", "pan", "por", "tarde", "trabajar", "y", "yo"
+    ],
+    "path": "es/lessons/a1/listening/es-a1-lis-003.json"
+  },
+  {
+    "id": "es-a1-lis-004",
+    "version": 1,
+    "skill": "listening",
+    "level": "A1",
+    "unit": "es-a1-u05",
+    "series": "es-a1-u05-casa",
+    "title": "¿Dónde está?",
+    "summary_es": {
+      "en": "Daniel asks Carla where the supermarket, the bakery and the park are.",
+      "fr": "Daniel demande à Carla où sont le supermarché, la boulangerie et le parc.",
+      "zh": "Daniel 向 Carla 询问超市、面包店和公园在哪里。",
+      "ja": "ダニエルはカルラにスーパー、パン屋、公園の場所を聞きます。"
+    },
+    "topic": "city-housing",
+    "genre": "dialogue",
+    "accents": ["es-ES"],
+    "duration_s": 24.465,
+    "word_count": 43,
+    "wpm": 105,
+    "est_minutes": 5,
+    "difficulty": 678,
+    "lemmas": [
+      "a", "algo", "allí", "bien", "calle", "cerca", "de", "dónde", "el", "en", "estar", "hasta", "ir", "lado",
+      "lejos", "luego", "mucho", "muy", "no", "panadería", "parque", "perdonar", "supermercado", "y"
+    ],
+    "path": "es/lessons/a1/listening/es-a1-lis-004.json"
+  },
+  {
+    "id": "es-a1-rea-001",
+    "version": 1,
+    "skill": "reading",
+    "level": "A1",
+    "unit": "es-a1-u01",
+    "series": "es-a1-u01-presentaciones",
+    "title": "Un mensaje para Leo",
+    "summary_es": {
+      "en": "Marta introduces herself in a message to her new classmate.",
+      "fr": "Marta se présente dans un message à son nouveau camarade.",
+      "zh": "Marta 在给新同学的消息里介绍了自己。",
+      "ja": "マルタは新しいクラスメートへのメッセージで自己紹介をします。"
+    },
+    "topic": "daily-life",
+    "genre": "email",
+    "accents": [],
+    "word_count": 55,
+    "est_minutes": 6,
+    "difficulty": 658,
+    "lemmas": [
+      "a", "amigo", "año", "casa", "con", "de", "domingo", "dónde", "el", "en", "gustar", "hacer", "hermana",
+      "jugar", "leer", "librería", "libro", "llamarse", "mi", "mucho", "pequeño", "qué", "saludo", "ser",
+      "sábado", "tener", "tenis", "trabajar", "tú", "un", "vivir", "y", "yo"
+    ],
+    "path": "es/lessons/a1/reading/es-a1-rea-001.json"
+  },
+  {
+    "id": "es-a1-rea-002",
+    "version": 1,
+    "skill": "reading",
+    "level": "A1",
+    "unit": "es-a1-u02",
+    "series": "es-a1-u02-familia",
+    "title": "Mi familia",
+    "summary_es": {
+      "en": "Pablo talks about his parents, his sister and his pets.",
+      "fr": "Pablo parle de ses parents, de sa sœur et de ses animaux.",
+      "zh": "Pablo 介绍了他的父母、妹妹和宠物。",
+      "ja": "パブロは両親、妹、ペットについて話します。"
+    },
+    "topic": "relationships",
+    "genre": "blog",
+    "accents": [],
+    "word_count": 62,
+    "est_minutes": 6,
+    "difficulty": 663,
+    "lemmas": [
+      "año", "casa", "de", "dormir", "el", "en", "escuela", "estudiar", "familia", "gato", "grande", "hermana",
+      "hospital", "inglés", "llamarse", "madre", "mi", "mucho", "muy", "médico", "padre", "pequeño", "perro",
+      "profesor", "se", "ser", "simpático", "tener", "trabajar", "un", "y", "yo"
+    ],
+    "path": "es/lessons/a1/reading/es-a1-rea-002.json"
+  },
+  {
+    "id": "es-a1-rea-003",
+    "version": 1,
+    "skill": "reading",
+    "level": "A1",
+    "unit": "es-a1-u03",
+    "series": "es-a1-u03-dia",
+    "title": "Un día normal",
+    "summary_es": {
+      "en": "Carla describes her day, from getting up to going to bed.",
+      "fr": "Carla décrit sa journée, du lever au coucher.",
+      "zh": "Carla 讲述了她从起床到睡觉的一天。",
+      "ja": "カルラは起きてから寝るまでの一日を話します。"
+    },
+    "topic": "daily-life",
+    "genre": "blog",
+    "accents": [],
+    "word_count": 51,
+    "est_minutes": 6,
+    "difficulty": 662,
+    "lemmas": [
+      "a", "acostarse", "autobús", "café", "casa", "cenar", "comer", "compañero", "con", "desayunar",
+      "después", "el", "en", "estudiar", "inglés", "ir", "levantarse", "llamarse", "mi", "noche", "oficina",
+      "pan", "película", "por", "tarde", "trabajar", "un", "ver", "y", "yo"
+    ],
+    "path": "es/lessons/a1/reading/es-a1-rea-003.json"
+  },
+  {
+    "id": "es-a1-rea-004",
+    "version": 1,
+    "skill": "reading",
+    "level": "A1",
+    "unit": "es-a1-u04",
+    "series": "es-a1-u04-cafeteria",
+    "title": "El menú de hoy",
+    "summary_es": {
+      "en": "The menu of a café with drinks, food and prices.",
+      "fr": "La carte d’un café avec boissons, plats et prix.",
+      "zh": "一家咖啡馆的菜单：饮品、食物和价格。",
+      "ja": "カフェのメニュー：飲み物、食べ物、値段。"
+    },
+    "topic": "food",
+    "genre": "notice",
+    "accents": [],
+    "word_count": 52,
+    "est_minutes": 5,
+    "difficulty": 657,
+    "lemmas": [
+      "a", "agua", "beber", "bocadillo", "bueno", "café", "comer", "con", "de", "día", "el", "ensalada",
+      "euro", "gratis", "hoy", "leche", "medio", "menú", "para", "patata", "por", "postre", "provecho",
+      "queso", "ser", "sol", "todo", "tortilla", "té", "un", "venir", "y"
+    ],
+    "path": "es/lessons/a1/reading/es-a1-rea-004.json"
+  },
+  {
+    "id": "es-a1-rea-005",
+    "version": 1,
+    "skill": "reading",
+    "level": "A1",
+    "unit": "es-a1-u05",
+    "series": "es-a1-u05-casa",
+    "title": "Mi casa nueva",
+    "summary_es": {
+      "en": "Carla writes to a friend about her new house and neighbourhood.",
+      "fr": "Carla écrit à un ami pour parler de sa nouvelle maison et de son quartier.",
+      "zh": "Carla 给朋友写信，介绍她的新家和街区。",
+      "ja": "カルラは友だちに新しい家と近所のことを書きます。"
+    },
+    "topic": "city-housing",
+    "genre": "email",
+    "accents": [],
+    "word_count": 56,
+    "est_minutes": 6,
+    "difficulty": 662,
+    "lemmas": [
+      "a", "abrazo", "barrio", "bonito", "casa", "cerca", "cocina", "de", "el", "estar", "grande", "gustar",
+      "haber", "habitación", "lado", "mi", "muy", "nuevo", "panadería", "parque", "pequeño", "pero", "porque",
+      "salón", "ser", "supermercado", "sábado", "también", "tener", "tranquilo", "un", "venir", "y", "yo"
+    ],
+    "path": "es/lessons/a1/reading/es-a1-rea-005.json"
+  },
+  {
+    "id": "es-a1-rea-006",
+    "version": 1,
+    "skill": "reading",
+    "level": "A1",
+    "unit": "es-a1-u06",
+    "series": "es-a1-u06-viaje",
+    "title": "Un fin de semana en Valencia",
+    "summary_es": {
+      "en": "Lucía tells about her weekend trip to Valencia with her friend Elena.",
+      "fr": "Lucía raconte son week-end à Valence avec son amie Elena.",
+      "zh": "Lucía 讲述了她和朋友 Elena 周末去巴伦西亚的旅行。",
+      "ja": "ルシアは友だちのエレナとバレンシアへ行く週末旅行について話します。"
+    },
+    "topic": "travel",
+    "genre": "blog",
+    "accents": [],
+    "word_count": 57,
+    "est_minutes": 6,
+    "difficulty": 660,
+    "lemmas": [
+      "a", "amigo", "calor", "casa", "centro", "ciudad", "comer", "con", "contento", "de", "domingo", "durar",
+      "el", "en", "estar", "este", "fin", "gustar", "hacer", "hora", "ir", "llamarse", "mi", "muy", "paella",
+      "pasear", "playa", "por", "restaurante", "salir", "semana", "sol", "tren", "un", "viajar", "visitar",
+      "volver", "y", "yo"
+    ],
+    "path": "es/lessons/a1/reading/es-a1-rea-006.json"
   }
 ]

@@ -1,0 +1,351 @@
+{
+  "id": "es-a1-lis-001",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u04",
+  "series": "es-a1-u04-cafeteria",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Un café y un bocadillo",
+  "summary_es": {
+    "en": "Luis orders a coffee and a sandwich in a café and pays.",
+    "fr": "Luis commande un café et un sandwich dans un café et paie.",
+    "zh": "Luis 在咖啡馆点了咖啡和三明治，然后付款。",
+    "ja": "ルイスはカフェでコーヒーとサンドイッチを注文して支払います。"
+  },
+  "topic": "food",
+  "tags": ["cafetería", "pedir", "precios"],
+  "can_do": ["L-A1-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["café", "bocadillo", "queso", "euros"],
+  "est_minutes": 5,
+  "prediction_prompt": "Una persona está en una cafetería. ¿Qué puede decir para pedir?",
+  "pre_teach": ["bocadillo", "llevar"],
+  "speakers": [
+    { "id": "ana", "name": "Ana", "accent": "es-ES", "gender": "female" },
+    { "id": "luis", "name": "Luis", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "ana",
+      "text": "Buenos días. ¿Qué quiere?",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.593 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 0.593, "e": 1.01 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 1.25, "e": 1.483 },
+        { "t": "quiere", "l": "querer", "p": "VERB", "w": true, "s": 1.483, "e": 1.89 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.97
+    },
+    {
+      "id": "s2",
+      "speaker": "luis",
+      "text": "Buenos días. Un café con leche, por favor.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 2.68, "e": 3.188 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 3.188, "e": 3.551 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 3.55, "e": 3.768 },
+        { "t": "café", "l": "café", "p": "NOUN", "w": true, "sp": true, "s": 3.768, "e": 4.131 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 4.13, "e": 4.42 },
+        { "t": "leche", "l": "leche", "p": "NOUN", "w": true, "s": 4.42, "e": 4.855 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 4.855, "e": 5.145 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 5.145, "e": 5.58 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 2.67,
+      "end": 5.693
+    },
+    {
+      "id": "s3",
+      "speaker": "ana",
+      "text": "¿Algo más?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 6.403, "e": 6.82 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "s": 6.82, "e": 7.153 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.393,
+      "end": 7.201
+    },
+    {
+      "id": "s4",
+      "speaker": "luis",
+      "text": "Sí, un bocadillo de queso.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 7.901, "e": 8.191 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 8.351, "e": 8.531 },
+        { "t": "bocadillo", "l": "bocadillo", "p": "NOUN", "w": true, "sp": true, "s": 8.531, "e": 9.131 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 9.131, "e": 9.311 },
+        { "t": "queso", "l": "queso", "p": "NOUN", "w": true, "s": 9.311, "e": 9.671 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.901,
+      "end": 9.751
+    },
+    {
+      "id": "s5",
+      "speaker": "ana",
+      "text": "¿Para tomar aquí o para llevar?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 10.461, "e": 10.774 },
+        { "t": "tomar", "l": "tomar", "p": "VERB", "w": true, "sp": true, "s": 10.774, "e": 11.15 },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 11.15, "e": 11.463 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 11.464, "e": 11.589 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 11.589, "e": 11.902 },
+        { "t": "llevar", "l": "llevar", "p": "VERB", "w": true, "s": 11.902, "e": 12.341 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.451,
+      "end": 12.419
+    },
+    {
+      "id": "s6",
+      "speaker": "luis",
+      "text": "Para tomar aquí.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 13.119, "e": 13.369 },
+        { "t": "tomar", "l": "tomar", "p": "VERB", "w": true, "sp": true, "s": 13.369, "e": 13.669 },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "s": 13.669, "e": 13.919 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.119,
+      "end": 14.002
+    },
+    {
+      "id": "s7",
+      "speaker": "ana",
+      "text": "Muy bien. Son cinco euros.",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 14.712, "e": 15.014 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 15.014, "e": 15.392 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 15.692, "e": 16.067 },
+        { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true, "s": 16.067, "e": 16.63 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "s": 16.63, "e": 17.193 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 14.702,
+      "end": 17.253
+    },
+    {
+      "id": "s8",
+      "speaker": "luis",
+      "text": "Aquí tiene. Gracias.",
+      "tokens": [
+        { "t": "Aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 17.953, "e": 18.23 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "s": 18.23, "e": 18.563 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 19.063, "e": 19.783 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.953,
+      "end": 20.038
+    },
+    {
+      "id": "s9",
+      "speaker": "ana",
+      "text": "De nada. ¡Buen provecho!",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 20.738, "e": 20.959 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 20.959, "e": 21.328 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 21.568, "e": 21.907 },
+        { "t": "provecho", "l": "provecho", "p": "NOUN", "w": true, "s": 21.907, "e": 22.518 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.738,
+      "end": 22.576
+    },
+    {
+      "id": "s10",
+      "speaker": "luis",
+      "text": "Hasta luego.",
+      "tokens": [
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 23.276, "e": 23.611 },
+        { "t": "luego", "l": "luego", "p": "ADV", "w": true, "s": 23.611, "e": 23.946 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.276,
+      "end": 24.014
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "bocadillo",
+      "surface": "bocadillo",
+      "pos": "noun",
+      "def_en": "pan con queso, jamón u otra comida dentro",
+      "def_es": {
+        "en": "sandwich (in a bread roll)",
+        "fr": "sandwich (dans un petit pain)",
+        "zh": "三明治（面包卷）",
+        "ja": "サンドイッチ（パンに挟んだもの）"
+      },
+      "ref": "s4"
+    },
+    {
+      "lemma": "para llevar",
+      "surface": "para llevar",
+      "pos": "phrase",
+      "def_en": "comida que te llevas a otro lugar",
+      "def_es": { "en": "to take away", "fr": "à emporter", "zh": "外带", "ja": "テイクアウト" },
+      "ref": "s5"
+    },
+    {
+      "lemma": "buen provecho",
+      "surface": "Buen provecho",
+      "pos": "phrase",
+      "def_en": "lo que se dice a alguien que va a comer",
+      "def_es": { "en": "enjoy your meal", "fr": "bon appétit", "zh": "祝你好胃口", "ja": "どうぞ召し上がれ" },
+      "ref": "s9"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Dónde están las personas?",
+      "evidence": ["s1", "s4"],
+      "rationale_es": {
+        "en": "The woman asks *¿Qué quiere?* and the man orders a coffee and a sandwich: they are in a café."
+      },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En una tienda de ropa" },
+        { "id": "b", "text": "En una cafetería" },
+        { "id": "c", "text": "En un parque" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué bebe Luis?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "*Un café con leche, por favor*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un té" },
+        { "id": "b", "text": "Un café con leche" },
+        { "id": "c", "text": "Un agua" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Luis quiere un bocadillo de jamón.",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "He says *un bocadillo de queso*: it is cheese, not ham." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Dónde toma Luis el bocadillo?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "*Para tomar aquí*: he eats it in the café." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Aquí" },
+        { "id": "b", "text": "En casa" },
+        { "id": "c", "text": "En el parque" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con un número.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "*Son cinco euros*: the total is five euros." },
+      "type": "gap_fill",
+      "text": "Luis paga {{1}} euros.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["cinco", "5"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué dice Ana al final?",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "Ana says *¡Buen provecho!*; Luis says *Hasta luego*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Buen provecho" },
+        { "id": "b", "text": "Buenas noches" },
+        { "id": "c", "text": "Hasta mañana" }
+      ],
+      "answer": "a"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "algo", "aquí", "bien", "bocadillo", "bueno", "café", "con", "de", "día", "euro", "favor", "hasta",
+    "leche", "llevar", "luego", "muy", "más", "o", "para", "por", "provecho", "querer", "queso", "qué", "ser",
+    "tener", "tomar", "un"
+  ],
+  "difficulty": 678,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 2.8,
+    "flesch_reading_ease": 99.7,
+    "checked_at": "2026-10-18T18:55:58.581Z"
+  },
+  "audio": {
+    "src": "audio/a1/es-a1-lis-001/v1.m4a",
+    "duration_s": 24.014,
+    "wpm": 105,
+    "provider": "piper",
+    "voices": { "ana": "sharvard-f", "luis": "davefx-m" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.88, 0.82, 0.23, 0.6, 0.49, 0.52, 0.11, 0.16, 0.16, 0.04, 0, 0.77, 1, 0.39, 0.79, 0.54, 0.34, 0.21,
+      0.02, 0, 0, 0, 0, 0, 0, 0.08, 1, 0.98, 0.68, 0.57, 0.47, 0.32, 0.21, 0.16, 0.07, 0, 0.01, 0, 0, 0, 0.71,
+      0.54, 0.93, 1, 0.95, 0.79, 0.79, 0.71, 0.85, 0.63, 0.63, 0.25, 0.8, 0.58, 0.19, 0.02, 0, 0, 0, 0, 0, 0,
+      0.01, 1, 0.71, 0.93, 0.64, 0.53, 0.43, 0.48, 0.14, 0, 0, 0, 0, 0, 0, 0.14, 1, 0.94, 0.29, 0.01, 0.48,
+      0.46, 0.83, 0.29, 0.91, 0.87, 0.86, 0.68, 0.92, 0.7, 0.79, 0.73, 0.26, 0.21, 0.01, 0, 0, 0, 0, 0, 0,
+      0.68, 0.69, 0.79, 0.72, 0.64, 0.65, 0.89, 0.73, 0.11, 0.67, 1, 0.69, 0.66, 0.74, 0.58, 0.6, 0.69, 0.64,
+      0.44, 0.03, 0, 0, 0, 0, 0, 0, 0, 1, 0.79, 0.86, 0.98, 0.97, 0.66, 0.3, 0.32, 0.04, 0, 0, 0, 0, 0, 0,
+      0.01, 0.6, 1, 0.62, 0.79, 0.75, 0.5, 0.31, 0.02, 0, 0.05, 0.37, 0.54, 1, 0.73, 0.7, 0.7, 0.48, 0.88,
+      0.83, 0.71, 0.46, 0.34, 0.24, 0.11, 0.09, 0.01, 0, 0, 0, 0, 0, 0, 0.89, 0.73, 0.24, 1, 0.46, 0.31, 0.11,
+      0, 0, 0, 0, 0.97, 1, 0.39, 0.53, 0.27, 0.16, 0.22, 0.16, 0.01, 0.01, 0.01, 0, 0, 0, 0, 0, 0, 0.44, 0.94,
+      0.96, 1, 0.66, 0.39, 0.03, 0, 0.19, 0.94, 1, 0.6, 0.8, 0.75, 0.66, 0.74, 0.28, 0.21, 0.05, 0, 0, 0, 0, 0,
+      0, 0.35, 0.28, 1, 0.83, 0.64, 0.56, 0.25, 0.08
+    ]
+  }
+}

@@ -17,6 +17,7 @@ import { player, usePlayer } from '@/lib/audio/store';
 import type { TranslationKey } from '@/lib/i18n';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
+import { useContentLang } from '@/components/content-language';
 
 export const CAUSE_LABEL: Record<Cause, TranslationKey> = {
   unknown_word: 'listening.causeUnknownWord',
@@ -74,6 +75,7 @@ export function DictationStep({
   busy: boolean;
 }) {
   const t = useT();
+  const lang = useContentLang();
   const rate = usePlayer((state) => state.rate);
   const [index, setIndex] = useState(0);
   const [typed, setTyped] = useState('');
@@ -164,7 +166,7 @@ export function DictationStep({
         <Label htmlFor="dictation-input">{t('listening.dictationLabel')}</Label>
         <Textarea
           id="dictation-input"
-          lang="en"
+          lang={lang}
           rows={3}
           autoCapitalize="none"
           autoCorrect="off"
@@ -203,7 +205,7 @@ export function DictationStep({
           {diagnosis.extra.length > 0 ? (
             <p className="text-body-sm text-muted">
               {t('listening.extraWords', { words: '' })}
-              <span lang="en">{diagnosis.extra.join(', ')}</span>
+              <span lang={lang}>{diagnosis.extra.join(', ')}</span>
             </p>
           ) : null}
 

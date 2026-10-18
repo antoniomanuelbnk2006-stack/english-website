@@ -4,7 +4,8 @@
 import { parseArgs } from 'node:util';
 import { LessonDraft } from '../../src/lib/content/schema';
 import { listLessonFiles, readJson, splitIds } from './lib/io';
-import { countWords, tokenize } from './lib/nlp';
+import { packOfLesson } from './lib/language-pack';
+import { countWords } from './lib/nlp';
 import {
   FREE_CHARS_PER_MONTH,
   charsUsedThisMonth,
@@ -41,7 +42,8 @@ async function main(): Promise<number> {
       continue;
     }
     const { units } = spokenUnits(lesson);
-    const words = units.reduce((sum, unit) => sum + countWords(tokenize(unit.text, lists)), 0);
+    const pack = packOfLesson(lesson.id, lists);
+    const words = units.reduce((sum, unit) => sum + countWords(pack.tokenize(unit.text)), 0);
     const audio = await synthesizeLesson(lesson, provider, words);
     const target = targetWpm(lesson);
     const ok = withinRateTolerance(audio.wpm, target);

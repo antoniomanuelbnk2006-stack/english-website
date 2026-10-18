@@ -9,6 +9,8 @@ import { fichasOfLesson } from '@/lib/content/grammar';
 import { findLessonMeta, unitTitle } from '@/lib/content/index';
 import { loadReadingLesson } from '@/lib/content/loader';
 import { getLocale } from '@/lib/i18n/server';
+import { ContentLanguage } from '@/components/content-language';
+import { languageOfId } from '@/lib/content/language';
 
 export async function generateMetadata({ params }: PageProps<'/leer/[id]'>): Promise<Metadata> {
   const { id } = await params;
@@ -28,19 +30,21 @@ export default async function ReadingLessonPage({ params }: PageProps<'/leer/[id
   ]);
 
   return (
-    <ReadingLesson
-      lesson={lesson}
-      unitTitle={unitTitle(lesson.unit, await getLocale())}
-      initialPhase={progress?.status === 'started' ? progress.phase : 0}
-      previous={
-        progress?.status === 'completed'
-          ? { score: progress.score, version: progress.lessonVersion }
-          : null
-      }
-      fontPx={profile.settings.reading_font_px}
-      paper={profile.settings.reader_paper}
-      lexicon={lexicon}
-      grammar={fichasOfLesson(lesson.id)}
-    />
+    <ContentLanguage language={languageOfId(lesson.id)}>
+      <ReadingLesson
+        lesson={lesson}
+        unitTitle={unitTitle(lesson.unit, await getLocale())}
+        initialPhase={progress?.status === 'started' ? progress.phase : 0}
+        previous={
+          progress?.status === 'completed'
+            ? { score: progress.score, version: progress.lessonVersion }
+            : null
+        }
+        fontPx={profile.settings.reading_font_px}
+        paper={profile.settings.reader_paper}
+        lexicon={lexicon}
+        grammar={fichasOfLesson(lesson.id)}
+      />
+    </ContentLanguage>
   );
 }

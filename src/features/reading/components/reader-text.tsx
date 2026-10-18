@@ -6,6 +6,7 @@ import { WordLayer, Words } from '@/features/lexicon/components/word-layer';
 import type { ReadingLesson } from '@/lib/content/loader';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
+import { useContentLang } from '@/components/content-language';
 
 /**
  * Texto de una lección de lectura: tipografía de lectura, medida de 60–72 caracteres y
@@ -31,6 +32,7 @@ export function ReaderText({
   };
 }) {
   const t = useT();
+  const lang = useContentLang();
   const rootRef = useRef<HTMLDivElement>(null);
   const marked = new Set(highlight);
   const firstMarked = highlight?.[0];
@@ -47,7 +49,7 @@ export function ReaderText({
   const body = (
     <div
       ref={rootRef}
-      lang="en"
+      lang={lang}
       className={cn('prose-reading flex flex-col gap-5', className)}
       style={{ fontSize: `${fontPx}px`, lineHeight: 1.7 }}
     >

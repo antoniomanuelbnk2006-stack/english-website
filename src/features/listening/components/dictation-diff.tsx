@@ -2,12 +2,14 @@
 
 import type { Diagnosis } from '@/features/listening/lib/dictation';
 import { useT } from '@/lib/i18n/client';
+import { useContentLang } from '@/components/content-language';
 
 /** Frase de referencia con cada palabra marcada según cómo se escribió. */
 export function DictationDiff({ diagnosis }: { diagnosis: Diagnosis }) {
   const t = useT();
+  const lang = useContentLang();
   return (
-    <p lang="en" className="prose-reading">
+    <p lang={lang} className="prose-reading">
       {diagnosis.words.map((word, index) => (
         <span key={index}>
           {word.status === 'ok' ? (

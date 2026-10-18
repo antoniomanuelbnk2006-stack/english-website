@@ -7,7 +7,14 @@ import path from 'node:path';
 export const CEFR = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
 export type Cefr = (typeof CEFR)[number];
 
-export type LevelSource = 'function' | 'reduction' | 'cefrj' | 'octanove' | 'ngsl' | 'estimated';
+export type LevelSource =
+  | 'function'
+  | 'reduction'
+  | 'cefrj'
+  | 'octanove'
+  | 'ngsl'
+  | 'deck'
+  | 'estimated';
 
 export interface LemmaLevel {
   level: Cefr;

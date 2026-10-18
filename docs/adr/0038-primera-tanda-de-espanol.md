@@ -1,4 +1,4 @@
-# ADR-0038 · La primera tanda de español (A1)
+# ADR-0038 · Español A1: el pipeline, las lecciones y el audio
 
 - **Estado:** Aceptada (cuarto paso de la base para practicar varios idiomas; sigue a [ADR-0037](0037-datos-por-idioma.md))
 - **Fecha:** 2026-10-18
@@ -9,18 +9,14 @@ Con la base hecha (ADR-0034 a 0037) faltaba que hubiera contenido de otro idioma
 
 ## Decisión
 
-1. **Una primera tanda que no necesita análisis de lengua:** en `content/es/`:
-   - **4 fichas de gramática** (`es.a1.ser-estar`, `presente-regulares`, `articulos-genero`, `gustar`), cada una con 3 ejemplos y 5 ítems de práctica;
-   - **124 palabras** de A1 (`dictionary/a1.json`);
-   - **4 consignas de writing** (`es-a1-wri-001` a `004`), con su respuesta modelo.
-   Las ayudas (resumen, traducciones, reglas, consejos) están en inglés, francés, chino y japonés.
-2. **El cuerpo de las fichas está en inglés** (`body_locale: en`): es la lengua de apoyo común y, con ADR-0034, cada idioma de interfaz que no tenga su versión (`<id>.<idioma>.mdx`) ve esa. Las versiones en francés, chino, japonés y español de los cuerpos quedan por escribir.
-3. **Las lecturas y escuchas de español quedan fuera de esta tanda.** Hacerlas bien exige un lematizador, listas de niveles y métricas de legibilidad de español. Hacerlas «a mano» daría una cobertura léxica y unas palabras «para ti» poco fiables.
-4. **Los niveles de las palabras de español salen del propio mazo** hasta que haya listas abiertas: `pnpm content:index` escribe `content/es/wordlists/levels.generated.json` con las palabras de cada `dictionary/<nivel>.json`. `levelOfLemma(lema, idioma)` lee ese archivo; sin él, el idioma no da nivel a ninguna palabra.
-5. **La revisión de un writing sin IA solo mira lo que no depende de la lengua** en otros idiomas: longitud, párrafos y frases largas. El saludo, la despedida, los conectores, las palabras comodín y los errores típicos son listas de inglés y no se aplican a un texto en español.
-6. **La corrección con IA conoce el idioma que se escribe:** el examinador, las tarjetas y el público son del idioma practicado (`writingSystemPrompt(interfaz, idioma)`; el texto con inglés no cambia). La versión del prompt lo apunta (`writing@1:es`).
-7. **El idioma del contenido se marca donde se muestra.** Los textos que se aprenden llevaban `lang="en"` fijo: ahora lo toman del idioma del contenido (`contentLang(id)` en el servidor; `ContentLanguage` y `useContentLang()` en los componentes de cliente). La voz del navegador (`SpeakButton`) habla en el idioma de la pantalla (`es-ES`…).
-8. **El validador comprueba cada mazo en su idioma:** `pnpm content:validate` recorre `content/<idioma>/dictionary/`; la comprobación contra las listas abiertas solo se hace en inglés.
+1. **El pipeline de lecciones se hace por idioma** (`language-pack.ts`): tokenizador, listas de niveles, legibilidad, palabras vacías de las comprobaciones de tareas y voz. El del inglés no cambia.
+2. **Español sin modelo de lengua externo.** No hay un lematizador de español libre y ligero en el proyecto. El léxico (`es-lexicon.ts`) se genera: las palabras de contenido salen del mazo (`content/es/dictionary/*.json`) con sus terminaciones regulares; lo irregular (verbos, plurales) y las palabras gramaticales están en tablas. Es determinista y no adivina: lo que no conoce sale con categoría `X` y la calidad lo marca (`[lexicon]`), de modo que ampliar contenido es ampliar el mazo. Los niveles de las palabras son los del mazo, y la legibilidad, la de Fernández Huerta.
+3. **Contenido de esta tanda** (`content/es/`, todo escrito por Claude): 4 fichas de gramática, 6 lecturas, 4 escuchas (3 diálogos y 1 monólogo), 4 consignas de writing y 194 palabras de A1. Las ayudas cortas (resumen, glosario, traducciones, reglas de las fichas, consejos) van en inglés, francés, chino y japonés; las **explicaciones de las tareas** (`rationale_es`) y de «lengua en foco» solo en inglés, y el cuerpo de las fichas solo en inglés (`body_locale: en`). Quien tenga otra interfaz ve esas en inglés (ADR-0034).
+4. **Audio con Piper** (MIT, local, sin claves): voces `sharvard-f/-m` (CC BY 3.0: hay que citar el corpus, en `LICENSES.md`) y `davefx-m` (CC0). Piper y las voces viven en `.piper/`, fuera de git. Sin tiempos por palabra: se estiman como con Kokoro. Los diálogos usan una voz femenina y otra masculina de España (`es-ES`). Las escuchas de español no llevan dictado (el diagnóstico de errores del dictado es de inglés).
+5. **Los niveles de las palabras de español salen del propio mazo:** `pnpm content:index` escribe `content/es/wordlists/levels.generated.json`. `levelOfLemma(lema, idioma)` lo lee; un idioma sin archivo no da nivel a ninguna palabra.
+6. **La revisión de un writing sin IA solo mira lo que no depende de la lengua** (longitud, párrafos, frases largas) en otros idiomas. La corrección con IA conoce el idioma que se escribe (`writingSystemPrompt(interfaz, idioma)`; versión `writing@1:es`).
+7. **El idioma del contenido se marca donde se muestra:** `contentLang(id)` en el servidor y `ContentLanguage` / `useContentLang()` en los componentes de cliente. La voz del navegador (`SpeakButton`) habla en el idioma de la pantalla.
+8. **El validador comprueba cada mazo en su idioma** y la anotación de cada lección con el pack de su idioma.
 
 ## Alternativas consideradas
 
@@ -30,8 +26,9 @@ Con la base hecha (ADR-0034 a 0037) faltaba que hubiera contenido de otro idioma
 
 ## Consecuencias
 
-- Quien elija practicar español ve fichas, mazo y writings; en Lectura, Escucha, Use of English, Pronunciación y Exámenes ve que aún no hay nada.
-- **La búsqueda de palabras sigue siendo de inglés** (Wiktionary en inglés y su traducción); desde `Palabras → Buscar`, una palabra que no esté en el mazo de español no se podrá consultar.
-- **La pronunciación**, con acentos del inglés (`en-GB`, `en-US`) y reconocimiento de voz en inglés, es de inglés.
-- Todo el contenido nuevo es de IA, sin revisión de un hablante nativo: el campo `provenance` lo dice y debe revisarlo el dueño antes de darlo por bueno.
-- Siguiente trabajo, en orden: lematizador y listas de español (para lecturas), cuerpos de las fichas por idioma, más palabras y consignas, y audio.
+- Quien elija practicar español ve fichas, lecturas, escuchas, mazo y writings; en Use of English, Pronunciación y Exámenes ve que aún no hay nada.
+- **Ampliar español es ampliar el mazo y escribir lecciones**: no hace falta tocar el pipeline mientras el vocabulario salga del mazo.
+- **La búsqueda de palabras sigue siendo de inglés** (Wiktionary en inglés y su traducción).
+- **La pronunciación** (acentos `en-GB` y `en-US`, reconocimiento de voz en inglés) es de inglés.
+- **Sin revisión de un nativo.** `provenance` lo dice y debe revisarlo el dueño antes de darlo por bueno. Las voces de Piper son buenas, pero son sintéticas y con tiempos por palabra estimados.
+- Falta, en orden: A2 y niveles superiores, los cuerpos y explicaciones en francés, chino y japonés, y el dictado de español.
