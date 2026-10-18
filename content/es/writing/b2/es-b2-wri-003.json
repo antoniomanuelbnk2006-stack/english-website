@@ -1,0 +1,53 @@
+{
+  "id": "es-b2-wri-003",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "task_type": "report",
+  "title": "Un informe sobre el reciclaje",
+  "topic": "environment",
+  "context_es": {
+    "en": "The student council asks you for a short report on recycling at your school, with a recommendation.",
+    "fr": "Le conseil des élèves vous demande un court rapport sur le recyclage dans votre école, avec une recommandation.",
+    "zh": "学生会请你就学校的垃圾分类写一份简短报告，并提出建议。",
+    "ja": "生徒会から、学校のリサイクルについて提言付きの短い報告書を頼まれました。"
+  },
+  "prompt_en": "El consejo de estudiantes te pide un informe breve sobre el reciclaje en tu escuela. Describe la situación, señala los problemas y propone soluciones.",
+  "points": [
+    "cómo se recicla ahora",
+    "qué problemas hay",
+    "qué medidas propones"
+  ],
+  "words_min": 140,
+  "words_max": 230,
+  "time_min": 40,
+  "useful_language": [
+    "El objetivo de este informe es …",
+    "Actualmente, …",
+    "Entre los problemas, …",
+    "Se recomienda que …",
+    "Sería conveniente …",
+    "En resumen, …"
+  ],
+  "tips_es": [
+    {
+      "en": "A report is formal and organised: use short headings or sections (*Situación actual*, *Problemas*, *Propuestas*).",
+      "fr": "Un rapport est formel et organisé : utilisez de courts titres (*Situación actual*, *Problemas*, *Propuestas*).",
+      "zh": "报告要正式、有条理：使用简短的小标题（*Situación actual*, *Problemas*, *Propuestas*）。",
+      "ja": "報告書は形式的で整理されたものに：短い見出し（*Situación actual*, *Problemas*, *Propuestas*）を使います。"
+    },
+    {
+      "en": "Use impersonal *se* and the subjunctive for recommendations: *Se recomienda que los alumnos separen los envases.*",
+      "fr": "Utilisez le *se* impersonnel et le subjonctif pour les recommandations : *Se recomienda que los alumnos separen los envases.*",
+      "zh": "提建议时用无人称 *se* 和虚拟式：*Se recomienda que los alumnos separen los envases.*",
+      "ja": "提案には不定人称の *se* と接続法を使います：*Se recomienda que los alumnos separen los envases.*"
+    }
+  ],
+  "model_answer": "Informe sobre el reciclaje en la escuela\n\nEl objetivo de este informe es describir cómo se recicla en nuestro centro y proponer mejoras.\n\nSituación actual\nActualmente, hay contenedores de papel en todas las aulas y un contenedor amarillo en el patio. Sin embargo, no se recicla el vidrio ni los residuos de la cafetería.\n\nProblemas\nEntre los problemas, destaca la falta de información: muchos alumnos no saben qué debe ir en cada contenedor. Además, algunos cubos están siempre llenos porque nadie los vacía con regularidad.\n\nPropuestas\nSe recomienda que cada clase nombre a un responsable que revise los cubos cada semana. Sería conveniente colocar carteles claros con ejemplos, y que el ayuntamiento instale un contenedor de vidrio cerca de la entrada. También se podría organizar una campaña con premios para la clase que más recicle.\n\nEn resumen, con medidas sencillas y la participación de todos, nuestra escuela podría reducir mucho su basura.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

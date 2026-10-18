@@ -1,0 +1,53 @@
+{
+  "id": "es-a2-wri-001",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "task_type": "email",
+  "title": "Una invitación de cumpleaños",
+  "topic": "relationships",
+  "context_es": {
+    "en": "It is your birthday next Saturday. You write an email to a friend, Laura, to invite her to your party.",
+    "fr": "Ton anniversaire est samedi prochain. Tu écris un e-mail à ton amie Laura pour l’inviter à ta fête.",
+    "zh": "下周六是你的生日。你给朋友 Laura 写一封电子邮件，邀请她来参加聚会。",
+    "ja": "来週の土曜日はあなたの誕生日です。友だちのラウラをパーティーに招待するメールを書きます。"
+  },
+  "prompt_en": "El sábado es tu cumpleaños y vas a hacer una fiesta en casa. Escribe un correo a tu amiga Laura para invitarla.",
+  "points": [
+    "cuándo y dónde es la fiesta",
+    "qué vais a hacer",
+    "qué tiene que traer Laura"
+  ],
+  "words_min": 45,
+  "words_max": 80,
+  "time_min": 12,
+  "useful_language": [
+    "Hola, Laura:",
+    "Voy a hacer una fiesta",
+    "Vamos a + infinitivo",
+    "¿Puedes traer …?",
+    "Tienes que venir",
+    "Un abrazo,"
+  ],
+  "tips_es": [
+    {
+      "en": "Use *voy a* + infinitive for your plans and *vamos a* for what you will do together.",
+      "fr": "Utilisez *voy a* + infinitif pour vos projets et *vamos a* pour ce que vous ferez ensemble.",
+      "zh": "用 *voy a* + 动词原形说你的计划，用 *vamos a* 说你们一起要做的事。",
+      "ja": "自分の予定には *voy a* + 不定詞、みんなですることには *vamos a* を使います。"
+    },
+    {
+      "en": "Start with *Hola, Laura:* and finish with a short goodbye and your name.",
+      "fr": "Commencez par *Hola, Laura :* et terminez par un court au revoir et votre prénom.",
+      "zh": "以 *Hola, Laura:* 开头，以简短的告别和你的名字结尾。",
+      "ja": "*Hola, Laura:* で始め、短い結びの言葉と名前で終えます。"
+    }
+  ],
+  "model_answer": "Hola, Laura:\n\nEl sábado es mi cumpleaños y voy a hacer una fiesta en mi casa. Empieza a las seis de la tarde. Vamos a comer pizza, escuchar música y jugar con unos amigos.\n\n¿Puedes traer un refresco? Mi casa está en la calle Mayor, número cinco. ¡Tienes que venir!\n\nUn abrazo,\nDaniel",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

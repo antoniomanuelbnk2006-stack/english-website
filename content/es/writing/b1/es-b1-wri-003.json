@@ -1,0 +1,53 @@
+{
+  "id": "es-b1-wri-003",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "task_type": "article",
+  "title": "Móviles en clase",
+  "topic": "education",
+  "context_es": {
+    "en": "The school newspaper asks students for their opinion: should mobile phones be allowed in class? You write an article.",
+    "fr": "Le journal de l’école demande l’avis des élèves : faut-il autoriser les portables en classe ? Vous écrivez un article.",
+    "zh": "校报向同学们征求意见：课堂上应该允许使用手机吗？你写一篇文章。",
+    "ja": "学校新聞が生徒の意見を募集しています。授業中の携帯電話を許可すべきでしょうか。記事を書きます。"
+  },
+  "prompt_en": "El periódico de tu escuela pregunta si se deben permitir los móviles en clase. Escribe un artículo con tu opinión.",
+  "points": [
+    "cuál es tu opinión",
+    "dos razones o ventajas y un problema",
+    "qué propones"
+  ],
+  "words_min": 100,
+  "words_max": 150,
+  "time_min": 25,
+  "useful_language": [
+    "En mi opinión, …",
+    "Por un lado, … Por otro lado, …",
+    "Sin embargo, …",
+    "Creo que …",
+    "No creo que …",
+    "Por eso propongo que …"
+  ],
+  "tips_es": [
+    {
+      "en": "Use the subjunctive after doubt and advice: *No creo que sea buena idea*, *Propongo que los alumnos usen el móvil solo para trabajar*.",
+      "fr": "Utilisez le subjonctif après un doute ou un conseil : *No creo que sea buena idea*, *Propongo que los alumnos usen el móvil solo para trabajar*.",
+      "zh": "表示怀疑或建议时用虚拟式：*No creo que sea buena idea*，*Propongo que los alumnos usen el móvil solo para trabajar*。",
+      "ja": "疑いや提案のあとは接続法：*No creo que sea buena idea*、*Propongo que los alumnos usen el móvil solo para trabajar*。"
+    },
+    {
+      "en": "Organise the text in three parts: your opinion, your reasons, and your proposal.",
+      "fr": "Organisez le texte en trois parties : votre opinion, vos raisons et votre proposition.",
+      "zh": "文章分三部分：你的观点、理由和建议。",
+      "ja": "意見・理由・提案の三つに分けて書きます。"
+    }
+  ],
+  "model_answer": "Móviles en clase: ¿sí o no?\n\nEn mi opinión, los móviles pueden ser muy útiles en clase si se usan bien. Por un lado, permiten buscar información rápidamente y trabajar con aplicaciones para aprender idiomas. Por otro lado, ayudan a los alumnos a organizarse, por ejemplo con el calendario.\n\nSin embargo, también hay un problema importante: muchos estudiantes se distraen con los mensajes y las redes sociales. No creo que sea buena idea dejar el móvil libre durante toda la clase.\n\nPor eso propongo que los profesores decidan cuándo se puede usar. Si el móvil sirve para trabajar, es una herramienta excelente; si no, es mejor que esté guardado en la mochila.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

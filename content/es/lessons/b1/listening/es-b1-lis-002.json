@@ -1,0 +1,515 @@
+{
+  "id": "es-b1-lis-002",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u04",
+  "series": "es-b1-u04-vacaciones",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Elegir el destino de las vacaciones",
+  "summary_es": {
+    "en": "A couple compare the beach and the mountains and decide where to go on holiday.",
+    "fr": "Un couple compare la plage et la montagne et décide où partir en vacances.",
+    "zh": "一对伴侣比较海滩和山区，决定去哪里度假。",
+    "ja": "二人が海と山を比べて、休暇の行き先を決めます。"
+  },
+  "topic": "travel",
+  "tags": ["vacaciones", "destinos", "decidir"],
+  "can_do": ["L-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["playa", "montaña", "reservar", "alojamiento"],
+  "est_minutes": 10,
+  "prediction_prompt": "Dos personas quieren cosas diferentes para sus vacaciones. ¿Cómo se ponen de acuerdo?",
+  "pre_teach": ["senderismo", "alojamiento"],
+  "speakers": [
+    { "id": "sofia", "name": "Sofía", "accent": "es-ES", "gender": "female" },
+    { "id": "jorge", "name": "Jorge", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "sofia",
+      "text": "Jorge, tenemos que decidir ya adónde vamos de vacaciones. Se acaba el plazo para reservar.",
+      "tokens": [
+        { "t": "Jorge", "l": "jorge", "p": "PROPN", "w": false, "s": 0.03, "e": 0.61 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "tenemos", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 0.77, "e": 1.364 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 1.364, "e": 1.661 },
+        { "t": "decidir", "l": "decidir", "p": "VERB", "w": true, "sp": true, "s": 1.66, "e": 2.254 },
+        { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 2.254, "e": 2.477 },
+        { "t": "adónde", "l": "adónde", "p": "ADV", "w": true, "sp": true, "s": 2.477, "e": 2.996 },
+        { "t": "vamos", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 2.996, "e": 3.441 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 3.441, "e": 3.664 },
+        { "t": "vacaciones", "l": "vacaciones", "p": "NOUN", "w": true, "s": 3.664, "e": 4.48 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 4.71, "e": 4.929 },
+        { "t": "acaba", "l": "acabar", "p": "VERB", "w": true, "sp": true, "s": 4.929, "e": 5.368 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 5.368, "e": 5.587 },
+        { "t": "plazo", "l": "plazo", "p": "NOUN", "w": true, "sp": true, "s": 5.588, "e": 6.027 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 6.026, "e": 6.392 },
+        { "t": "reservar", "l": "reservar", "p": "VERB", "w": true, "s": 6.392, "e": 7.05 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 7.207
+    },
+    {
+      "id": "s2",
+      "speaker": "jorge",
+      "text": "Tienes razón. A mí me apetece mucho ir a la playa. Necesito descansar después de tanto trabajo.",
+      "tokens": [
+        { "t": "Tienes", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 7.637, "e": 8.159 },
+        { "t": "razón", "l": "razón", "p": "NOUN", "w": true, "s": 8.159, "e": 8.607 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 9.027, "e": 9.155 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 9.155, "e": 9.348 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 9.348, "e": 9.541 },
+        { "t": "apetece", "l": "apetecer", "p": "VERB", "w": true, "sp": true, "s": 9.54, "e": 10.053 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 10.054, "e": 10.439 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 10.439, "e": 10.632 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 10.631, "e": 10.759 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 10.76, "e": 10.953 },
+        { "t": "playa", "l": "playa", "p": "NOUN", "w": true, "s": 10.952, "e": 11.337 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Necesito", "l": "necesitar", "p": "VERB", "w": true, "sp": true, "s": 11.817, "e": 12.443 },
+        { "t": "descansar", "l": "descansar", "p": "VERB", "w": true, "sp": true, "s": 12.443, "e": 13.138 },
+        { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true, "s": 13.138, "e": 13.694 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 13.695, "e": 13.904 },
+        { "t": "tanto", "l": "tanto", "p": "ADV", "w": true, "sp": true, "s": 13.903, "e": 14.32 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "s": 14.321, "e": 14.877 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.607,
+      "end": 14.974
+    },
+    {
+      "id": "s3",
+      "speaker": "sofia",
+      "text": "Yo prefiero algo más activo. Me gustaría hacer senderismo en la montaña y conocer pueblos pequeños.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 15.384, "e": 15.626 },
+        { "t": "prefiero", "l": "preferir", "p": "VERB", "w": true, "sp": true, "s": 15.626, "e": 16.352 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 16.353, "e": 16.757 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 16.756, "e": 17.079 },
+        { "t": "activo", "l": "activo", "p": "ADJ", "w": true, "s": 17.079, "e": 17.644 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 17.884, "e": 18.121 },
+        { "t": "gustaría", "l": "gustar", "p": "VERB", "w": true, "sp": true, "s": 18.121, "e": 18.832 },
+        { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 18.832, "e": 19.306 },
+        { "t": "senderismo", "l": "senderismo", "p": "NOUN", "w": true, "sp": true, "s": 19.306, "e": 20.175 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 20.175, "e": 20.412 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 20.412, "e": 20.649 },
+        { "t": "montaña", "l": "montaña", "p": "NOUN", "w": true, "sp": true, "s": 20.649, "e": 21.281 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 21.281, "e": 21.439 },
+        { "t": "conocer", "l": "conocer", "p": "VERB", "w": true, "sp": true, "s": 21.439, "e": 22.071 },
+        { "t": "pueblos", "l": "pueblo", "p": "NOUN", "w": true, "sp": true, "s": 22.071, "e": 22.703 },
+        { "t": "pequeños", "l": "pequeño", "p": "ADJ", "w": true, "s": 22.703, "e": 23.414 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.374,
+      "end": 23.51
+    },
+    {
+      "id": "s4",
+      "speaker": "jorge",
+      "text": "Pero en agosto hace muchísimo calor en el interior. En la costa se está mejor.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 23.91, "e": 24.223 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 24.223, "e": 24.411 },
+        { "t": "agosto", "l": "agosto", "p": "NOUN", "w": true, "sp": true, "s": 24.41, "e": 24.848 },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 24.848, "e": 25.161 },
+        { "t": "muchísimo", "l": "muchísimo", "p": "ADV", "w": true, "sp": true, "s": 25.161, "e": 25.786 },
+        { "t": "calor", "l": "calor", "p": "NOUN", "w": true, "sp": true, "s": 25.786, "e": 26.161 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 26.162, "e": 26.35 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 26.349, "e": 26.537 },
+        { "t": "interior", "l": "interior", "p": "NOUN", "w": true, "s": 26.537, "e": 27.1 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 27.61, "e": 27.795 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 27.795, "e": 27.98 },
+        { "t": "costa", "l": "costa", "p": "NOUN", "w": true, "sp": true, "s": 27.979, "e": 28.348 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 28.348, "e": 28.533 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 28.533, "e": 28.841 },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "s": 28.841, "e": 29.21 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.91,
+      "end": 29.336
+    },
+    {
+      "id": "s5",
+      "speaker": "sofia",
+      "text": "Es verdad. Entonces, ¿qué tal una zona con las dos cosas? En Asturias hay playas preciosas y montañas muy cerca.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 29.746, "e": 30.006 },
+        { "t": "verdad", "l": "verdad", "p": "NOUN", "w": true, "s": 30.006, "e": 30.613 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true, "s": 30.614, "e": 31.395 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 31.394, "e": 31.741 },
+        { "t": "tal", "l": "tal", "p": "ADV", "w": true, "sp": true, "s": 31.741, "e": 32.088 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 32.089, "e": 32.436 },
+        { "t": "zona", "l": "zona", "p": "NOUN", "w": true, "sp": true, "s": 32.436, "e": 32.87 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 32.869, "e": 33.216 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 33.216, "e": 33.563 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 33.563, "e": 33.91 },
+        { "t": "cosas", "l": "cosa", "p": "NOUN", "w": true, "s": 33.91, "e": 34.431 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 34.431, "e": 34.691 },
+        { "t": "Asturias", "l": "asturias", "p": "PROPN", "w": false, "sp": true, "s": 34.691, "e": 35.472 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 35.472, "e": 35.819 },
+        { "t": "playas", "l": "playa", "p": "NOUN", "w": true, "sp": true, "s": 35.819, "e": 36.426 },
+        { "t": "preciosas", "l": "precioso", "p": "ADJ", "w": true, "sp": true, "s": 36.426, "e": 37.294 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 37.294, "e": 37.468 },
+        { "t": "montañas", "l": "montaña", "p": "NOUN", "w": true, "sp": true, "s": 37.468, "e": 38.249 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 38.248, "e": 38.595 },
+        { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "s": 38.595, "e": 39.116 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 29.736,
+      "end": 39.196
+    },
+    {
+      "id": "s6",
+      "speaker": "jorge",
+      "text": "No es mala idea. Aunque allí llueve bastante, ¿no?",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 39.606, "e": 39.833 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 39.833, "e": 40.06 },
+        { "t": "mala", "l": "malo", "p": "ADJ", "w": true, "sp": true, "s": 40.059, "e": 40.437 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "s": 40.437, "e": 40.815 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true, "s": 40.815, "e": 41.344 },
+        { "t": "allí", "l": "allí", "p": "ADV", "w": true, "sp": true, "s": 41.343, "e": 41.721 },
+        { "t": "llueve", "l": "llover", "p": "VERB", "w": true, "sp": true, "s": 41.721, "e": 42.25 },
+        { "t": "bastante", "l": "bastante", "p": "ADV", "w": true, "s": 42.25, "e": 42.93 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "s": 42.929, "e": 43.156 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 39.596,
+      "end": 43.229
+    },
+    {
+      "id": "s7",
+      "speaker": "sofia",
+      "text": "A veces, pero eso significa que todo está verde, y no hay tanta gente como en el Mediterráneo.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 43.639, "e": 43.794 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "s": 43.794, "e": 44.259 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 44.409, "e": 44.741 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 44.741, "e": 45.007 },
+        { "t": "significa", "l": "significar", "p": "VERB", "w": true, "sp": true, "s": 45.007, "e": 45.671 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 45.671, "e": 45.937 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 45.936, "e": 46.268 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 46.268, "e": 46.6 },
+        { "t": "verde", "l": "verde", "p": "ADJ", "w": true, "s": 46.601, "e": 46.999 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 47.279, "e": 47.417 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 47.417, "e": 47.624 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 47.625, "e": 47.901 },
+        { "t": "tanta", "l": "tanto", "p": "ADV", "w": true, "sp": true, "s": 47.901, "e": 48.316 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 48.316, "e": 48.731 },
+        { "t": "como", "l": "como", "p": "SCONJ", "w": true, "sp": true, "s": 48.73, "e": 49.076 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 49.076, "e": 49.283 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 49.283, "e": 49.49 },
+        { "t": "Mediterráneo", "l": "mediterráneo", "p": "PROPN", "w": false, "s": 49.491, "e": 50.389 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 43.629,
+      "end": 50.479
+    },
+    {
+      "id": "s8",
+      "speaker": "jorge",
+      "text": "Vale, me has convencido. Si encontramos un hotel barato, reservamos esta misma noche.",
+      "tokens": [
+        { "t": "Vale", "l": "vale", "p": "INTJ", "w": false, "s": 50.879, "e": 51.22 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 51.22, "e": 51.425 },
+        { "t": "has", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 51.424, "e": 51.697 },
+        { "t": "convencido", "l": "convencer", "p": "VERB", "w": true, "s": 51.697, "e": 52.447 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 52.447, "e": 52.652 },
+        { "t": "encontramos", "l": "encontrar", "p": "VERB", "w": true, "sp": true, "s": 52.651, "e": 53.469 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 53.469, "e": 53.674 },
+        { "t": "hotel", "l": "hotel", "p": "NOUN", "w": true, "sp": true, "s": 53.674, "e": 54.083 },
+        { "t": "barato", "l": "barato", "p": "ADJ", "w": true, "s": 54.083, "e": 54.56 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "reservamos", "l": "reservar", "p": "VERB", "w": true, "sp": true, "s": 54.56, "e": 55.31 },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 55.31, "e": 55.651 },
+        { "t": "misma", "l": "mismo", "p": "DET", "w": true, "sp": true, "s": 55.651, "e": 56.06 },
+        { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "s": 56.06, "e": 56.469 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 50.879,
+      "end": 56.553
+    },
+    {
+      "id": "s9",
+      "speaker": "sofia",
+      "text": "Perfecto. Yo busco alojamientos y tú miras los vuelos y los trenes.",
+      "tokens": [
+        { "t": "Perfecto", "l": "perfecto", "p": "ADJ", "w": true, "s": 56.953, "e": 57.763 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 58.053, "e": 58.264 },
+        { "t": "busco", "l": "buscar", "p": "VERB", "w": true, "sp": true, "s": 58.264, "e": 58.686 },
+        {
+          "t": "alojamientos",
+          "l": "alojamiento",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 58.686,
+          "e": 59.601
+        },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 59.601, "e": 59.742 },
+        { "t": "tú", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 59.741, "e": 59.952 },
+        { "t": "miras", "l": "mirar", "p": "VERB", "w": true, "sp": true, "s": 59.952, "e": 60.374 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 60.375, "e": 60.656 },
+        { "t": "vuelos", "l": "vuelo", "p": "NOUN", "w": true, "sp": true, "s": 60.656, "e": 61.148 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 61.148, "e": 61.289 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 61.289, "e": 61.57 },
+        { "t": "trenes", "l": "tren", "p": "NOUN", "w": true, "s": 61.571, "e": 62.063 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.953,
+      "end": 62.139
+    },
+    {
+      "id": "s10",
+      "speaker": "jorge",
+      "text": "De acuerdo. Si es muy caro volar, podemos ir en coche y parar en algún sitio por el camino.",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 62.585, "e": 62.749 },
+        { "t": "acuerdo", "l": "acuerdo", "p": "NOUN", "w": true, "s": 62.749, "e": 63.185 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 63.645, "e": 63.819 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 63.819, "e": 63.993 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 63.994, "e": 64.226 },
+        { "t": "caro", "l": "caro", "p": "ADJ", "w": true, "sp": true, "s": 64.226, "e": 64.516 },
+        { "t": "volar", "l": "volar", "p": "VERB", "w": true, "s": 64.516, "e": 64.865 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "podemos", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 65.165, "e": 65.616 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 65.616, "e": 65.785 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 65.784, "e": 65.953 },
+        { "t": "coche", "l": "coche", "p": "NOUN", "w": true, "sp": true, "s": 65.953, "e": 66.291 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 66.291, "e": 66.404 },
+        { "t": "parar", "l": "parar", "p": "VERB", "w": true, "sp": true, "s": 66.404, "e": 66.742 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 66.742, "e": 66.911 },
+        { "t": "algún", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 66.911, "e": 67.249 },
+        { "t": "sitio", "l": "sitio", "p": "NOUN", "w": true, "sp": true, "s": 67.249, "e": 67.587 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 67.587, "e": 67.812 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 67.812, "e": 67.981 },
+        { "t": "camino", "l": "camino", "p": "NOUN", "w": true, "s": 67.981, "e": 68.375 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.539,
+      "end": 68.463
+    },
+    {
+      "id": "s11",
+      "speaker": "sofia",
+      "text": "Me parece genial. Será nuestro mejor viaje.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 68.873, "e": 69.106 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 69.106, "e": 69.65 },
+        { "t": "genial", "l": "genial", "p": "ADJ", "w": true, "s": 69.649, "e": 70.193 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Será", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 70.463, "e": 70.853 },
+        { "t": "nuestro", "l": "nuestro", "p": "DET", "w": true, "sp": true, "s": 70.853, "e": 71.477 },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true, "s": 71.477, "e": 71.945 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "s": 71.945, "e": 72.413 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 68.863,
+      "end": 72.459
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "senderismo",
+      "surface": "senderismo",
+      "pos": "noun",
+      "def_en": "actividad de caminar por la montaña por caminos señalados",
+      "def_es": { "en": "hiking", "fr": "randonnée", "zh": "徒步旅行", "ja": "ハイキング" },
+      "ref": "s3"
+    },
+    {
+      "lemma": "alojamiento",
+      "surface": "alojamientos",
+      "pos": "noun",
+      "def_en": "lugar donde duermes cuando viajas",
+      "def_es": { "en": "accommodation", "fr": "hébergement", "zh": "住宿", "ja": "宿泊先" },
+      "ref": "s9"
+    },
+    {
+      "lemma": "apetecer",
+      "surface": "apetece",
+      "pos": "verb",
+      "def_en": "tener ganas de algo",
+      "def_es": { "en": "to feel like", "fr": "avoir envie de", "zh": "想要", "ja": "〜したい気がする" },
+      "ref": "s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué hacen Sofía y Jorge?",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "They have to decide where to go on holiday and finally agree on Asturias." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Compran los billetes de avión para un viaje largo" },
+        { "id": "b", "text": "Eligen el destino de sus vacaciones" },
+        { "id": "c", "text": "Cuentan cómo fue su último viaje en familia" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué prefiere hacer Jorge?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "Jorge wants the beach and needs to rest; hiking is Sofía’s idea." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Hacer senderismo por la montaña" },
+        { "id": "b", "text": "Visitar muchas ciudades históricas" },
+        { "id": "c", "text": "Descansar en la playa" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué no quiere Jorge ir al interior en agosto?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "*En agosto hace muchísimo calor en el interior*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque las temperaturas son muy altas" },
+        { "id": "b", "text": "Porque llueve todos los días del mes" },
+        { "id": "c", "text": "Porque hay demasiados turistas en agosto" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "En Asturias llueve poco.",
+      "evidence": ["s6", "s7"],
+      "rationale_es": { "en": "Jorge says it rains quite a lot and Sofía agrees (*todo está verde*)." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué ventaja ve Sofía en que llueva?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "She says everything is green and there are fewer people than on the Mediterranean." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Los hoteles son más baratos en esa época" },
+        { "id": "b", "text": "Hay más verde y menos turistas" },
+        { "id": "c", "text": "Hace menos calor y no hay mosquitos en la costa" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "*Si encontramos un hotel barato, reservamos esta misma noche*." },
+      "type": "gap_fill",
+      "text": "Si encuentran un hotel {{1}}, reservan esta noche.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["barato"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué hará Jorge?",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "Sofía looks for accommodation and Jorge checks flights and trains." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Escoger el sitio donde dormir" },
+        { "id": "b", "text": "Llamar al hotel para preguntar precios" },
+        { "id": "c", "text": "Mirar cómo viajar hasta allí" }
+      ],
+      "answer": "c"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "acabar", "activo", "acuerdo", "adónde", "agosto", "algo", "algún", "allí", "alojamiento", "apetecer",
+    "aunque", "barato", "bastante", "buscar", "calor", "camino", "caro", "cerca", "coche", "como", "con",
+    "conocer", "convencer", "cosa", "costa", "de", "decidir", "descansar", "después", "el", "en", "encontrar",
+    "entonces", "estar", "este", "esto", "genial", "gente", "gustar", "haber", "hacer", "hotel", "idea",
+    "interior", "ir", "llover", "malo", "mejor", "mirar", "mismo", "montaña", "mucho", "muchísimo", "muy",
+    "más", "necesitar", "no", "noche", "nuestro", "para", "parar", "parecer", "pequeño", "perfecto", "pero",
+    "playa", "plazo", "poder", "por", "precioso", "preferir", "pueblo", "que", "qué", "razón", "reservar",
+    "se", "senderismo", "ser", "si", "significar", "sitio", "tal", "tanto", "tener", "todo", "trabajar",
+    "tren", "tú", "un", "vacaciones", "verdad", "verde", "vez", "viajar", "volar", "vuelo", "y", "ya", "yo",
+    "zona"
+  ],
+  "difficulty": 1067,
+  "qa": {
+    "coverage_by_level": { "A1": 0.641, "A2": 0.7372, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 7,
+    "flesch_reading_ease": 84.2,
+    "checked_at": "2026-10-18T20:27:53.977Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-002/v1.m4a",
+    "duration_s": 72.459,
+    "wpm": 133,
+    "provider": "piper",
+    "voices": { "sofia": "sharvard-f", "jorge": "davefx-m" },
+    "loudness_lufs": -16,
+    "peaks": [
+      0.78, 0.64, 0.76, 0.8, 0.63, 0.67, 0.62, 0.92, 0.63, 1, 0.83, 0.82, 0.61, 0.49, 0.15, 0.34, 0.76, 1,
+      0.97, 0.89, 0.72, 0.55, 0.49, 0.44, 0, 1, 0.99, 0.86, 0.18, 0.79, 0.93, 0.98, 1, 0.76, 0.91, 0.83, 0.6,
+      0.25, 0, 0.86, 0.92, 0.82, 0.96, 0.92, 0.85, 0.8, 1, 0.77, 0.76, 0.18, 0.18, 1, 0.71, 0.9, 0.99, 0.51,
+      0.6, 0.37, 0.22, 0.68, 0.54, 0.73, 0.79, 0.8, 0.78, 0.78, 0.77, 0.8, 0.9, 0.6, 0.77, 0.57, 1, 0.95, 0.73,
+      0.73, 0.44, 0.07, 0, 1, 0.87, 0.92, 0.91, 0.87, 0.94, 0.95, 0.9, 0.47, 0.67, 0.63, 0.01, 0.87, 0.99,
+      0.99, 1, 0.98, 0.38, 0.01, 0.56, 1, 0.57, 0.05, 0.76, 0.82, 0.42, 0.64, 1, 0.83, 0.83, 0.61, 0.69, 0.5,
+      0.44, 0.15, 0.39, 0.52, 1, 0.82, 0.8, 0.87, 0.68, 0.75, 0.68, 0.51, 0.5, 0.84, 0.71, 0.51, 0.46, 0.2, 0,
+      0.94, 0.99, 1, 0.69, 0, 0.87, 0.98, 0.92, 1, 0.97, 0.45, 0.49, 0.01, 0.83, 0.85, 0.59, 0.75, 0.95, 0.48,
+      0.58, 0.84, 0.87, 0.89, 0.99, 0.66, 0.41, 1, 0.77, 0.64, 0.7, 0.67, 0.6, 0.57, 0.57, 0.58, 0.32, 0.03, 1,
+      0.92, 0.9, 0.61, 0.28, 0, 1, 0.59, 0.95, 0.59, 0.99, 0.97, 0.76, 0.86, 0.83, 0.76, 0.72, 0.83, 0.6, 0.05,
+      1, 0.67, 0.29, 0.21, 1, 0.6, 0.74, 0.41, 0.55, 0.52, 0.5, 0.81, 0.64, 0.69, 0.32, 0.5, 0.31, 0.15, 0, 1,
+      0.57, 0.27, 0.24, 1, 0.98, 0.95, 0.94, 0.51, 0.9, 0.95, 0.9, 0.87, 1, 0.63, 0.7, 0.88, 0.48, 0.63, 0.16,
+      0, 0.62, 1, 0.43, 0.41, 0.26, 0.58, 1, 0.76, 0.74, 0.94, 0.94, 0.16
+    ]
+  }
+}

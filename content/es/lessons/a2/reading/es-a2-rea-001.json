@@ -1,0 +1,540 @@
+{
+  "id": "es-a2-rea-001",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u01",
+  "series": "es-a2-u01-fin-de-semana",
+  "skill": "reading",
+  "genre": "blog",
+  "title": "El fin de semana de Paula",
+  "summary_es": {
+    "en": "Paula tells what she did last weekend with her friend Lucía.",
+    "fr": "Paula raconte ce qu’elle a fait le week-end dernier avec son amie Lucía.",
+    "zh": "Paula 讲述了上个周末她和朋友 Lucía 做的事情。",
+    "ja": "パウラは先週末に友だちのルシアとしたことを話します。"
+  },
+  "topic": "daily-life",
+  "tags": ["pasado", "fin de semana", "indefinido"],
+  "can_do": ["R-A2-01"],
+  "grammar_focus": ["es.a2.preterito-indefinido"],
+  "vocab_focus": ["museo", "regalo", "cumpleaños", "limpiar"],
+  "est_minutes": 9,
+  "prediction_prompt": "¿Qué hiciste tú el fin de semana pasado?",
+  "pre_teach": ["cumpleaños", "antiguo"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "El fin de semana pasado fue muy bonito.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fin", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "bonito", "l": "bonito", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "El sábado me levanté tarde y desayuné con calma.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "levanté", "l": "levantarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "desayuné", "l": "desayunar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "calma", "l": "calma", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Después llamé a mi amiga Lucía.",
+          "tokens": [
+            { "t": "Después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "llamé", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "amiga", "l": "amigo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Lucía", "l": "lucía", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "Ella quería ir a la playa, pero hacía frío.",
+          "tokens": [
+            { "t": "Ella", "l": "ella", "p": "PRON", "w": true, "sp": true },
+            { "t": "quería", "l": "querer", "p": "VERB", "w": true, "sp": true },
+            { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "playa", "l": "playa", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "hacía", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "frío", "l": "frío", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s5",
+          "text": "Hacía sol, pero el viento era muy frío.",
+          "tokens": [
+            { "t": "Hacía", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "sol", "l": "sol", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "viento", "l": "viento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "era", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "frío", "l": "frío", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Entonces fuimos al centro en autobús.",
+          "tokens": [
+            { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true },
+            { "t": "fuimos", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "centro", "l": "centro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "autobús", "l": "autobús", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Visitamos un museo pequeño y vimos cuadros muy antiguos.",
+          "tokens": [
+            { "t": "Visitamos", "l": "visitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "museo", "l": "museo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pequeño", "l": "pequeño", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "vimos", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "cuadros", "l": "cuadro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "antiguos", "l": "antiguo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "A las dos comimos en un restaurante italiano.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "comimos", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "restaurante", "l": "restaurante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "italiano", "l": "italiano", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Yo pedí una pizza y Lucía pidió pasta.",
+          "tokens": [
+            { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "pedí", "l": "pedir", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pizza", "l": "pizza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "Lucía", "l": "lucía", "p": "PROPN", "w": false, "sp": true },
+            { "t": "pidió", "l": "pedir", "p": "VERB", "w": true, "sp": true },
+            { "t": "pasta", "l": "pasta", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s5",
+          "text": "Todo estaba muy rico.",
+          "tokens": [
+            { "t": "Todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "estaba", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "rico", "l": "rico", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s6",
+          "text": "Allí había mucha gente, pero todo estaba muy tranquilo.",
+          "tokens": [
+            { "t": "Allí", "l": "allí", "p": "ADV", "w": true, "sp": true },
+            { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "mucha", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "gente", "l": "gente", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "estaba", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "tranquilo", "l": "tranquilo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Por la tarde compramos unos regalos para su hermano.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true },
+            { "t": "compramos", "l": "comprar", "p": "VERB", "w": true, "sp": true },
+            { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "regalos", "l": "regalo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "hermano", "l": "hermano", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Su cumpleaños es el martes.",
+          "tokens": [
+            { "t": "Su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "cumpleaños", "l": "cumpleaños", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "martes", "l": "martes", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Su hermano cumple quince años y le gusta el deporte.",
+          "tokens": [
+            { "t": "Su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "hermano", "l": "hermano", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cumple", "l": "cumplir", "p": "VERB", "w": true, "sp": true },
+            { "t": "quince", "l": "quince", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "deporte", "l": "deporte", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Luego volvimos a casa andando.",
+          "tokens": [
+            { "t": "Luego", "l": "luego", "p": "ADV", "w": true, "sp": true },
+            { "t": "volvimos", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "andando", "l": "andar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s5",
+          "text": "Por la noche cené con mis padres y vimos una película.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cené", "l": "cenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "padres", "l": "padre", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "vimos", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "película", "l": "película", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "El domingo no salí de casa.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "domingo", "l": "domingo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "salí", "l": "salir", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Limpié mi habitación, leí un libro y escuché música.",
+          "tokens": [
+            { "t": "Limpié", "l": "limpiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "habitación", "l": "habitación", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "leí", "l": "leer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "libro", "l": "libro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "escuché", "l": "escuchar", "p": "VERB", "w": true, "sp": true },
+            { "t": "música", "l": "música", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Fue un fin de semana tranquilo, pero muy agradable.",
+          "tokens": [
+            { "t": "Fue", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "fin", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tranquilo", "l": "tranquilo", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "agradable", "l": "agradable", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Me gusta pasar los domingos así, sin prisa.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "pasar", "l": "pasar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "domingos", "l": "domingo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "así", "l": "así", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "prisa", "l": "prisa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s5",
+          "text": "¿Y tú?",
+          "tokens": [
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "tú", "l": "tú", "p": "PRON", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s6",
+          "text": "¿Qué hiciste el sábado?",
+          "tokens": [
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "hiciste", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "The simple past: fui, comimos, pidió",
+        "fr": "Le passé simple : fui, comimos, pidió",
+        "zh": "简单过去时：fui, comimos, pidió",
+        "ja": "点過去：fui, comimos, pidió"
+      },
+      "explanation_es": {
+        "en": "We use the *pretérito indefinido* for finished actions in the past: *me levanté*, *visitamos*, *vimos*. Some very common verbs are irregular: *ir → fuimos*, *ver → vimos*, *pedir → pidió*."
+      },
+      "refs": ["p1s2", "p2s2", "p2s4"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "cumpleaños",
+      "surface": "cumpleaños",
+      "pos": "noun",
+      "def_en": "el día en que alguien nació, cada año",
+      "def_es": { "en": "birthday", "fr": "anniversaire", "zh": "生日", "ja": "誕生日" },
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "antiguo",
+      "surface": "antiguos",
+      "pos": "adjective",
+      "def_en": "muy viejo; de hace mucho tiempo",
+      "def_es": { "en": "ancient, very old", "fr": "ancien", "zh": "古老的", "ja": "古い" },
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "andar",
+      "surface": "andando",
+      "pos": "verb",
+      "def_en": "ir a pie, sin coche ni autobús",
+      "def_es": { "en": "to walk", "fr": "marcher", "zh": "步行", "ja": "歩く" },
+      "ref": "p3s4"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Qué cuenta Paula en el texto?",
+      "evidence": ["p1s1", "p4s1"],
+      "rationale_es": { "en": "She tells what she did on Saturday and Sunday: it is a story about the past weekend." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cómo es su trabajo cada día" },
+        { "id": "b", "text": "Qué hizo el sábado y el domingo" },
+        { "id": "c", "text": "Qué va a hacer en las próximas vacaciones" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Por qué no fueron a la playa?",
+      "evidence": ["p1s4"],
+      "rationale_es": { "en": "Lucía wanted to go to the beach, *pero hacía frío*: it was cold." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque hacía frío" },
+        { "id": "b", "text": "Porque estaba cerrada" },
+        { "id": "c", "text": "Porque Lucía estaba enferma" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cómo fueron al centro?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "*Fuimos al centro en autobús*. They only walked on the way back (*volvimos andando*)." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Andando" },
+        { "id": "b", "text": "En autobús" },
+        { "id": "c", "text": "En tren" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Comieron en un restaurante japonés.",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "The restaurant was *italiano*, and they had pizza and pasta." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Para quién compraron los regalos?",
+      "evidence": ["p3s1"],
+      "rationale_es": { "en": "*Unos regalos para su hermano*: *su* refers to Lucía. His birthday is on Tuesday." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para el hermano de Lucía" },
+        { "id": "b", "text": "Para los padres de Paula" },
+        { "id": "c", "text": "Para ellas mismas" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "El domingo Paula salió con sus amigos.",
+      "evidence": ["p4s1"],
+      "rationale_es": { "en": "*El domingo no salí de casa*: she stayed at home and cleaned, read and listened to music." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p2s4"],
+      "rationale_es": { "en": "*Pedir* is irregular in the third person of the past: *pidió*." },
+      "type": "gap_fill",
+      "text": "En el restaurante, Lucía {{1}} pasta.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["pidió"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 162,
+  "lemmas": [
+    "a", "agradable", "allí", "amigo", "andar", "antiguo", "así", "autobús", "año", "bonito", "calma", "casa",
+    "cenar", "centro", "comer", "comprar", "con", "cuadro", "cumpleaños", "cumplir", "de", "deporte",
+    "desayunar", "después", "domingo", "el", "ella", "en", "entonces", "escuchar", "estar", "fin", "frío",
+    "gente", "gustar", "haber", "habitación", "hacer", "hermano", "ir", "italiano", "leer", "levantarse",
+    "libro", "limpiar", "llamarse", "luego", "martes", "mi", "mucho", "museo", "muy", "música", "no", "noche",
+    "padre", "para", "pasado", "pasar", "pasta", "pedir", "película", "pequeño", "pero", "pizza", "playa",
+    "por", "prisa", "querer", "qué", "regalo", "restaurante", "rico", "salir", "semana", "ser", "sin", "sol",
+    "su", "sábado", "tarde", "todo", "tranquilo", "tú", "un", "ver", "viento", "visitar", "volver", "y", "yo",
+    "él"
+  ],
+  "difficulty": 860,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8165, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 7.4,
+    "flesch_reading_ease": 84.1,
+    "checked_at": "2026-10-18T20:19:32.613Z"
+  }
+}

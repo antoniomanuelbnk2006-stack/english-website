@@ -484,6 +484,126 @@ const IRREGULAR: Record<string, Irregular> = {
     gerund: 'acostando',
     participle: 'acostado acostada acostados acostadas',
   },
+  sentir: {
+    present: 'siento sientes siente sentimos sentís sienten',
+    preterite: 'sentí sentiste sintió sentimos sentisteis sintieron',
+    gerund: 'sintiendo',
+    participle: 'sentido',
+    imperative: 'siente',
+  },
+  doler: {
+    present: 'duelo dueles duele dolemos doléis duelen',
+    gerund: 'doliendo',
+    participle: 'dolido',
+  },
+  creer: {
+    present: 'creo crees cree creemos creéis creen',
+    preterite: 'creí creíste creyó creímos creísteis creyeron',
+    gerund: 'creyendo',
+    participle: 'creído',
+  },
+  seguir: {
+    present: 'sigo sigues sigue seguimos seguís siguen',
+    preterite: 'seguí seguiste siguió seguimos seguisteis siguieron',
+    gerund: 'siguiendo',
+    participle: 'seguido',
+    imperative: 'sigue',
+  },
+  mover: {
+    present: 'muevo mueves mueve movemos movéis mueven',
+    gerund: 'moviendo',
+    participle: 'movido',
+  },
+  contar: {
+    present: 'cuento cuentas cuenta contamos contáis cuentan',
+    gerund: 'contando',
+    participle: 'contado',
+  },
+  perder: {
+    present: 'pierdo pierdes pierde perdemos perdéis pierden',
+    gerund: 'perdiendo',
+    participle: 'perdido',
+  },
+  servir: {
+    present: 'sirvo sirves sirve servimos servís sirven',
+    preterite: 'serví serviste sirvió servimos servisteis sirvieron',
+    gerund: 'sirviendo',
+    participle: 'servido',
+  },
+  conseguir: {
+    present: 'consigo consigues consigue conseguimos conseguís consiguen',
+    preterite: 'conseguí conseguiste consiguió conseguimos conseguisteis consiguieron',
+    gerund: 'consiguiendo',
+    participle: 'conseguido',
+  },
+  repetir: {
+    present: 'repito repites repite repetimos repetís repiten',
+    preterite: 'repetí repetiste repitió repetimos repetisteis repitieron',
+    gerund: 'repitiendo',
+    participle: 'repetido',
+  },
+  morir: {
+    present: 'muero mueres muere morimos morís mueren',
+    preterite: 'morí moriste murió morimos moristeis murieron',
+    gerund: 'muriendo',
+    participle: 'muerto muerta muertos muertas',
+  },
+  caer: {
+    present: 'caigo caes cae caemos caéis caen',
+    preterite: 'caí caíste cayó caímos caísteis cayeron',
+    gerund: 'cayendo',
+    participle: 'caído',
+  },
+  mostrar: {
+    present: 'muestro muestras muestra mostramos mostráis muestran',
+    gerund: 'mostrando',
+    participle: 'mostrado',
+  },
+  sentarse: {
+    present: 'siento sientas sienta sentamos sentáis sientan',
+    gerund: 'sentando',
+    participle: 'sentado',
+  },
+  mentir: {
+    present: 'miento mientes miente mentimos mentís mienten',
+    preterite: 'mentí mentiste mintió mentimos mentisteis mintieron',
+    gerund: 'mintiendo',
+    participle: 'mentido',
+  },
+  elegir: {
+    present: 'elijo eliges elige elegimos elegís eligen',
+    preterite: 'elegí elegiste eligió elegimos elegisteis eligieron',
+    gerund: 'eligiendo',
+    participle: 'elegido',
+  },
+  traducir: {
+    present: 'traduzco traduces traduce traducimos traducís traducen',
+    preterite: 'traduje tradujiste tradujo tradujimos tradujisteis tradujeron',
+    gerund: 'traduciendo',
+    participle: 'traducido',
+  },
+  construir: {
+    present: 'construyo construyes construye construimos construís construyen',
+    preterite: 'construí construiste construyó construimos construisteis construyeron',
+    gerund: 'construyendo',
+    participle: 'construido',
+  },
+  parecer: {
+    present: 'parezco pareces parece parecemos parecéis parecen',
+    gerund: 'pareciendo',
+    participle: 'parecido',
+  },
+  ofrecer: {
+    present: 'ofrezco ofreces ofrece ofrecemos ofrecéis ofrecen',
+    gerund: 'ofreciendo',
+    participle: 'ofrecido',
+  },
+  conducir: {
+    present: 'conduzco conduces conduce conducimos conducís conducen',
+    preterite: 'conduje condujiste condujo condujimos condujisteis condujeron',
+    gerund: 'conduciendo',
+    participle: 'conducido',
+  },
   recordar: {
     present: 'recuerdo recuerdas recuerda recordamos recordáis recuerdan',
     preterite: 'recordé recordaste recordó recordamos recordasteis recordaron',
@@ -513,6 +633,7 @@ const FEMININE_PAIR = new Set([
   'perro',
   'estudiante',
   'señor',
+  'doctor',
   'trabajador',
   'español',
   'cantante',
@@ -534,7 +655,7 @@ const PLURAL_OF: Record<string, string> = {
 };
 
 /** Nombres de pila de uso común en los textos: no cuentan como palabras del nivel. */
-const NAMES = `ana luis marta pablo leo carla daniel juan lucía sofía carmen javier elena miguel
+const NAMES = `ana beatriz carlos gonzalo ismael luis marta pablo leo carla daniel juan lucía sofía carmen javier elena miguel
   laura david paula andrés diego irene sara jorge pedro maría josé tomás emma lucy
   madrid sevilla valencia barcelona españa méxico colombia argentina chile perú lima bogotá
   granada bilbao córdoba málaga toledo zaragoza salamanca europa américa`.split(/\s+/);
@@ -590,46 +711,166 @@ function adjectiveForms(lemma: string): string[] {
   return forms;
 }
 
-function regularVerbForms(inf: string): string[] {
-  const reflexive = inf.endsWith('se');
-  const base = reflexive ? inf.slice(0, -2) : inf;
-  const stem = base.slice(0, -2);
-  const kind = base.slice(-2);
-  const forms: string[] = [base];
-  if (kind === 'ar') {
-    forms.push(`${stem}ando`, `${stem}ado`, `${stem}ada`, `${stem}ados`, `${stem}adas`);
-    forms.push(...['o', 'as', 'a', 'amos', 'áis', 'an'].map((e) => `${stem}${e}`));
-    forms.push(...['é', 'aste', 'ó', 'amos', 'asteis', 'aron'].map((e) => `${stem}${e}`));
-    forms.push(...['aba', 'abas', 'aba', 'ábamos', 'abais', 'aban'].map((e) => `${stem}${e}`));
-    forms.push(`${stem}a`, `${stem}e`, `${stem}ad`, `${stem}en`);
-  } else if (kind === 'er') {
-    forms.push(`${stem}iendo`, `${stem}ido`, `${stem}ida`, `${stem}idos`, `${stem}idas`);
-    forms.push(...['o', 'es', 'e', 'emos', 'éis', 'en'].map((e) => `${stem}${e}`));
-    forms.push(...['í', 'iste', 'ió', 'imos', 'isteis', 'ieron'].map((e) => `${stem}${e}`));
-    forms.push(...['ía', 'ías', 'ía', 'íamos', 'íais', 'ían'].map((e) => `${stem}${e}`));
-    forms.push(`${stem}a`, `${stem}ed`, `${stem}an`);
-  } else if (kind === 'ir') {
-    forms.push(`${stem}iendo`, `${stem}ido`, `${stem}ida`, `${stem}idos`, `${stem}idas`);
-    forms.push(...['o', 'es', 'e', 'imos', 'ís', 'en'].map((e) => `${stem}${e}`));
-    forms.push(...['í', 'iste', 'ió', 'imos', 'isteis', 'ieron'].map((e) => `${stem}${e}`));
-    forms.push(...['ía', 'ías', 'ía', 'íamos', 'íais', 'ían'].map((e) => `${stem}${e}`));
-    forms.push(`${stem}a`, `${stem}id`, `${stem}an`);
-  }
-  return forms;
+// ───────────── Verbos: todos los tiempos a partir de unas pocas formas ─────────────
+interface VerbParts {
+  present: string[];
+  preterite: string[];
+  imperfect: string[];
+  gerund: string;
+  participle: string[];
 }
 
-function irregularForms(entry: Irregular): string[] {
-  return [
-    entry.present,
-    entry.preterite ?? '',
-    entry.imperfect ?? '',
-    entry.gerund,
-    entry.participle,
-    entry.imperative ?? '',
-  ]
-    .join(' ')
-    .split(/\s+/)
-    .filter(Boolean);
+const split = (text: string | undefined): string[] => (text ?? '').split(/\s+/).filter(Boolean);
+
+/** Raíces irregulares del futuro y el condicional. */
+const FUTURE_STEM: Record<string, string> = {
+  tener: 'tendr',
+  venir: 'vendr',
+  poner: 'pondr',
+  salir: 'saldr',
+  poder: 'podr',
+  querer: 'querr',
+  saber: 'sabr',
+  haber: 'habr',
+  hacer: 'har',
+  decir: 'dir',
+  valer: 'valdr',
+};
+
+/** Subjuntivo de presente de los que no salen de la forma «yo». */
+const SUBJUNCTIVE: Record<string, string> = {
+  ser: 'sea seas sea seamos seáis sean',
+  estar: 'esté estés esté estemos estéis estén',
+  ir: 'vaya vayas vaya vayamos vayáis vayan',
+  saber: 'sepa sepas sepa sepamos sepáis sepan',
+  dar: 'dé des dé demos deis den',
+  haber: 'haya hayas haya hayamos hayáis hayan',
+};
+
+const CLITICS = ['me', 'te', 'se', 'lo', 'la', 'le', 'nos', 'os', 'los', 'las', 'les'];
+
+/** Acentúa la última vocal (habla → hablá, comie → comié) para «habláramos», «comiéramos». */
+function accentLast(stem: string): string {
+  return stem.replace(/[aeiou](?=[^aeiou]*$)/, (v) => 'áéíóú'['aeiou'.indexOf(v)] ?? v);
+}
+
+/** Delante de «e»: g → gu, c → qu, z → c (llegar → llegué, buscar → busqué, empezar → empecé). */
+function softenBeforeE(stem: string): string {
+  if (stem.endsWith('g')) return `${stem}u`;
+  if (stem.endsWith('c')) return `${stem.slice(0, -1)}qu`;
+  if (stem.endsWith('z')) return `${stem.slice(0, -1)}c`;
+  return stem;
+}
+
+function regularParts(base: string): VerbParts {
+  const stem = base.slice(0, -2);
+  const kind = base.slice(-2);
+  const withEndings = (endings: string[], from = stem) => endings.map((e) => `${from}${e}`);
+  if (kind === 'ar') {
+    const present = withEndings(['o', 'as', 'a', 'amos', 'áis', 'an']);
+    const preterite = withEndings(['é', 'aste', 'ó', 'amos', 'asteis', 'aron']);
+    preterite[0] = `${softenBeforeE(stem)}é`;
+    return {
+      present,
+      preterite,
+      imperfect: withEndings(['aba', 'abas', 'aba', 'ábamos', 'abais', 'aban']),
+      gerund: `${stem}ando`,
+      participle: withEndings(['ado', 'ada', 'ados', 'adas']),
+    };
+  }
+  const present = withEndings(
+    kind === 'er' ? ['o', 'es', 'e', 'emos', 'éis', 'en'] : ['o', 'es', 'e', 'imos', 'ís', 'en'],
+  );
+  // coger → cojo, vencer → venzo, seguir → sigo
+  if (/g$/.test(stem)) present[0] = `${stem.slice(0, -1)}jo`;
+  else if (/[^aeiouáéíóú]c$/.test(stem)) present[0] = `${stem.slice(0, -1)}zo`;
+  else if (/gu$/.test(stem)) present[0] = `${stem.slice(0, -1)}o`;
+  return {
+    present,
+    preterite: withEndings(['í', 'iste', 'ió', 'imos', 'isteis', 'ieron']),
+    imperfect: withEndings(['ía', 'ías', 'ía', 'íamos', 'íais', 'ían']),
+    gerund: `${stem}iendo`,
+    participle: withEndings(['ido', 'ida', 'idos', 'idas']),
+  };
+}
+
+function partsOf(base: string, entry: Irregular): VerbParts {
+  const regular = regularParts(base);
+  const participle = split(entry.participle);
+  return {
+    present: split(entry.present),
+    preterite: entry.preterite ? split(entry.preterite) : regular.preterite,
+    imperfect: entry.imperfect ? split(entry.imperfect) : regular.imperfect,
+    gerund: entry.gerund,
+    participle:
+      participle.length === 1 && participle[0]?.endsWith('o')
+        ? [0, 1, 2, 3].map((i) => `${participle[0]?.slice(0, -1)}${['o', 'a', 'os', 'as'][i]}`)
+        : participle,
+  };
+}
+
+/** Todas las formas de un verbo: tiempos simples, subjuntivos, futuro, condicional y formas con pronombre. */
+function verbForms(inf: string, entry?: Irregular): string[] {
+  const reflexive = inf.endsWith('se');
+  const base = reflexive ? inf.slice(0, -2) : inf;
+  const parts = entry ? partsOf(base, entry) : regularParts(base);
+  const { present, preterite } = parts;
+  const ar = base.endsWith('ar');
+
+  // Subjuntivo de presente: de la forma «yo»; en los que cambian la vocal, «nosotros» y «vosotros»
+  // vuelven a la raíz (pensemos) o la cambian (pidamos, durmamos).
+  let subjunctive = split(SUBJUNCTIVE[base]);
+  if (subjunctive.length === 0 && present[0]) {
+    const yoStem = present[0].replace(/o$/, '');
+    const plural = (present[3] ?? '').replace(/(amos|emos|imos)$/, '');
+    const changed =
+      yoStem !== plural &&
+      ([/ie/, /ue/, /i/].some((re, i) => yoStem.replace(re, ['e', 'o', 'e'][i] ?? '') === plural) ||
+        yoStem.replace(/ue/, 'u') === plural);
+    const nosotros = changed
+      ? base.endsWith('ir')
+        ? (preterite[5] ?? '').replace(/(ieron|eron)$/, '')
+        : plural
+      : yoStem;
+    const fix = (stem: string) => (ar ? softenBeforeE(stem) : stem);
+    const endings = ar
+      ? ['e', 'es', 'e', 'emos', 'éis', 'en']
+      : ['a', 'as', 'a', 'amos', 'áis', 'an'];
+    subjunctive = endings.map((e, i) => `${fix(i === 3 || i === 4 ? nosotros : yoStem)}${e}`);
+  }
+
+  const forms = new Set<string>([base, parts.gerund, ...parts.participle]);
+  for (const list of [present, preterite, parts.imperfect, subjunctive]) {
+    for (const form of list) forms.add(form);
+  }
+  // Subjuntivo de imperfecto: de la tercera persona del plural del indefinido.
+  const third = preterite[5] ?? '';
+  if (third.endsWith('ron')) {
+    const stem = third.slice(0, -3);
+    for (const k of ['ra', 'se']) {
+      for (const form of [
+        `${stem}${k}`,
+        `${stem}${k === 'ra' ? 'ras' : 'ses'}`,
+        `${accentLast(stem)}${k}mos`,
+        `${stem}${k === 'ra' ? 'rais' : 'seis'}`,
+        `${stem}${k === 'ra' ? 'ran' : 'sen'}`,
+      ]) {
+        forms.add(form);
+      }
+    }
+  }
+  // Futuro y condicional.
+  const root = FUTURE_STEM[base] ?? base;
+  for (const e of ['é', 'ás', 'á', 'emos', 'éis', 'án', 'ía', 'ías', 'íamos', 'íais', 'ían']) {
+    forms.add(`${root}${e}`);
+  }
+  // Imperativo.
+  if (entry?.imperative) for (const form of split(entry.imperative)) forms.add(form);
+  if (present[2]) forms.add(present[2]);
+  forms.add(`${base.slice(0, -1)}d`);
+  // Infinitivo con pronombre: ayudarme, dárselo no (acento), verla…
+  for (const clitic of CLITICS) forms.add(`${base}${clitic}`);
+  return [...forms].filter(Boolean);
 }
 
 // ───────────── Construcción del léxico ─────────────
@@ -668,7 +909,7 @@ export function buildSpanishLexicon(contentRoot = path.join(process.cwd(), 'cont
     for (const form of forms.split(' ')) add(form, { lemma, pos });
   }
   for (const [lemma, entry] of Object.entries(IRREGULAR)) {
-    for (const form of irregularForms(entry)) add(form, { lemma, pos: entry.pos ?? 'VERB' });
+    for (const form of verbForms(lemma, entry)) add(form, { lemma, pos: entry.pos ?? 'VERB' });
     add(lemma, { lemma, pos: entry.pos ?? 'VERB' });
   }
   // Los nombres propios que más salen: se marcan como tales aunque abran la frase.
@@ -682,13 +923,22 @@ export function buildSpanishLexicon(contentRoot = path.join(process.cwd(), 'cont
     if (upos === 'VERB' || upos === 'AUX') {
       // «llamarse»: las formas salen de «llamar», con el lema reflexivo.
       add(lemmaKey, { lemma: lemmaKey, pos: upos });
-      for (const form of regularVerbForms(lemmaKey)) add(form, { lemma: lemmaKey, pos: upos });
+      for (const form of verbForms(lemmaKey)) add(form, { lemma: lemmaKey, pos: upos });
     } else if (upos === 'NOUN') {
       for (const form of nounForms(lemmaKey)) add(form, { lemma: lemmaKey, pos: upos });
     } else if (upos === 'ADJ') {
       for (const form of adjectiveForms(lemmaKey)) add(form, { lemma: lemmaKey, pos: upos });
     } else {
       add(lemmaKey, { lemma: lemmaKey, pos: upos });
+    }
+  }
+  // Formas sueltas que no salen de ninguna regla (irregulares, apócopes…): forma → lema|CATEGORÍA.
+  const formas = path.join(contentRoot, 'es', 'wordlists', 'formas.json');
+  if (existsSync(formas)) {
+    const extra = JSON.parse(readFileSync(formas, 'utf8')) as Record<string, string>;
+    for (const [form, value] of Object.entries(extra)) {
+      const [lemma, pos] = value.split('|');
+      if (lemma && pos) add(form, { lemma: lemma.toLowerCase(), pos: pos as Upos });
     }
   }
   return lexicon;

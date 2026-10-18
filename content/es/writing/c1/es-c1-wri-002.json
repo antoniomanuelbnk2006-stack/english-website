@@ -1,0 +1,53 @@
+{
+  "id": "es-c1-wri-002",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "task_type": "proposal",
+  "title": "Una propuesta de huerto comunitario",
+  "topic": "city-housing",
+  "context_es": {
+    "en": "The neighbours’ association wants to turn an empty plot into a community garden. You write a proposal addressed to the city council.",
+    "fr": "L’association de quartier veut transformer un terrain vague en potager collectif. Vous rédigez une proposition destinée à la mairie.",
+    "zh": "居民协会希望把一块空地改造成社区菜园。你写一份提交给市政府的提案。",
+    "ja": "住民会が空き地を共同菜園にしたいと考えています。市役所宛ての提案書を書きます。"
+  },
+  "prompt_en": "La asociación de vecinos de tu barrio quiere convertir un solar vacío en un huerto comunitario. Redacta una propuesta dirigida al ayuntamiento: describe la situación, justifica el proyecto y detalla qué necesitáis.",
+  "points": [
+    "la situación actual del solar",
+    "los beneficios para el barrio",
+    "qué pedís al ayuntamiento y qué os comprometéis a hacer"
+  ],
+  "words_min": 220,
+  "words_max": 320,
+  "time_min": 60,
+  "useful_language": [
+    "Nos dirigimos a ustedes para …",
+    "El objetivo de esta propuesta es …",
+    "Con el fin de que …",
+    "En primer lugar … / Asimismo …",
+    "Nos comprometemos a …",
+    "Quedamos a su disposición."
+  ],
+  "tips_es": [
+    {
+      "en": "A proposal is formal and persuasive: use *usted/ustedes*, organised paragraphs and clear requests (*Solicitamos que…* + subjunctive).",
+      "fr": "Une proposition est formelle et persuasive : *usted/ustedes*, paragraphes organisés et demandes claires (*Solicitamos que…* + subjonctif).",
+      "zh": "提案要正式且有说服力：使用 *usted/ustedes*、有条理的段落和明确的请求（*Solicitamos que…* + 虚拟式）。",
+      "ja": "提案書は形式的で説得力が必要です：*usted/ustedes*、整理された段落、明確な依頼（*Solicitamos que…* + 接続法）。"
+    },
+    {
+      "en": "Show what the community will do too: a proposal is stronger when it offers commitments and not only requests.",
+      "fr": "Montrez aussi ce que la communauté fera : une proposition est plus solide avec des engagements, pas seulement des demandes.",
+      "zh": "也要说明社区自己将做什么：既有请求又有承诺，提案更有力。",
+      "ja": "地域が何をするかも示します。依頼だけでなく約束もあると、提案は強くなります。"
+    }
+  ],
+  "model_answer": "Asunto: propuesta para crear un huerto comunitario en el solar de la calle del Olmo\n\nEstimados señores:\n\nNos dirigimos a ustedes en nombre de la Asociación de Vecinos del Barrio Nuevo con el fin de presentarles un proyecto que, a nuestro juicio, beneficiaría a toda la comunidad.\n\nSituación actual\nDesde hace más de seis años, el solar de la calle del Olmo permanece abandonado. Aunque pertenece al ayuntamiento, se ha convertido en un lugar sucio y poco seguro, donde se acumulan residuos y los vecinos prefieren no pasar de noche.\n\nBeneficios del proyecto\nProponemos transformarlo en un huerto comunitario. En primer lugar, recuperaríamos un espacio que hoy no se utiliza. Asimismo, el huerto ofrecería a los vecinos, y en especial a las personas mayores, un lugar donde reunirse, cultivar verduras y compartir sus conocimientos con los más jóvenes. Además, el verde mejoraría el aspecto de la calle y daría vida a una zona que hoy parece olvidada. Por último, serviría de recurso educativo para el colegio del barrio.\n\nQué solicitamos\nSolicitamos que el ayuntamiento nos ceda el uso del terreno durante cinco años, que instale una toma de agua y que nos facilite tierra y herramientas básicas.\n\nNuestro compromiso\nNos comprometemos a mantener el huerto limpio, a organizar turnos de trabajo y a presentar cada año un informe sobre su uso.\n\nQuedamos a su disposición para ampliar cualquier información.\n\nAtentamente,\nLa junta directiva",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

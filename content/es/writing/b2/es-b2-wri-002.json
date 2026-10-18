@@ -1,0 +1,53 @@
+{
+  "id": "es-b2-wri-002",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "task_type": "review",
+  "title": "Una película o una serie",
+  "topic": "culture",
+  "context_es": {
+    "en": "A cultural website publishes readers’ reviews. You review a film or series you have seen recently.",
+    "fr": "Un site culturel publie les critiques de ses lecteurs. Vous écrivez la critique d’un film ou d’une série récents.",
+    "zh": "一个文化网站刊登读者的评论。你为最近看过的一部电影或剧集写评论。",
+    "ja": "文化サイトが読者のレビューを掲載しています。最近見た映画またはシリーズのレビューを書きます。"
+  },
+  "prompt_en": "Un sitio web de cultura publica críticas de los lectores. Escribe una reseña de una película o una serie que hayas visto hace poco.",
+  "points": [
+    "de qué trata, sin contar el final",
+    "qué te gustó y qué no",
+    "a quién se la recomiendas y por qué"
+  ],
+  "words_min": 140,
+  "words_max": 230,
+  "time_min": 40,
+  "useful_language": [
+    "Trata de …",
+    "Lo que más me gustó fue …",
+    "Sin embargo, …",
+    "Aunque …, …",
+    "Se la recomiendo a …",
+    "En definitiva, …"
+  ],
+  "tips_es": [
+    {
+      "en": "Describe the plot in the present tense and give your reasons with *porque, ya que, gracias a*.",
+      "fr": "Décrivez l’intrigue au présent et justifiez avec *porque, ya que, gracias a*.",
+      "zh": "用现在时描述情节，并用 *porque, ya que, gracias a* 说明理由。",
+      "ja": "あらすじは現在形で書き、*porque, ya que, gracias a* で理由を述べます。"
+    },
+    {
+      "en": "Avoid spoilers: do not reveal the ending. Give a balanced judgement, with at least one criticism.",
+      "fr": "Évitez les spoilers : ne révélez pas la fin. Donnez un avis équilibré, avec au moins une critique.",
+      "zh": "避免剧透，不要透露结局。评价要平衡，至少包含一条批评。",
+      "ja": "結末は明かさないこと。バランスのとれた評価にし、少なくとも一つは批判も書きます。"
+    }
+  ],
+  "model_answer": "La semana pasada vi una serie española que me recomendó una amiga: «El pueblo de las sombras». Trata de una periodista que vuelve al pueblo donde nació para investigar la desaparición de una vecina, ocurrida hace veinte años.\n\nLo que más me gustó fue el ambiente. Las imágenes del campo, la música y el silencio de las calles crean una atmósfera de misterio muy lograda. Además, los actores son excelentes, sobre todo la protagonista, que transmite miedo y valentía al mismo tiempo.\n\nSin embargo, la serie tiene algunos defectos. El ritmo es lento en los primeros capítulos y algunos personajes secundarios no están bien desarrollados. Aunque la historia se vuelve más intensa hacia la mitad, hay detalles que no llegan a explicarse.\n\nSe la recomiendo a quienes disfruten con las historias de misterio y no tengan prisa. En definitiva, es una serie sencilla pero atractiva, que merece la pena ver hasta el final.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

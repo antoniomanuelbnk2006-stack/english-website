@@ -1,0 +1,53 @@
+{
+  "id": "es-b1-wri-002",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "task_type": "story",
+  "title": "Un día inolvidable",
+  "topic": "daily-life",
+  "context_es": {
+    "en": "A language magazine is collecting short stories about unforgettable days. You send yours.",
+    "fr": "Un magazine de langues recueille de courtes histoires sur des journées inoubliables. Vous envoyez la vôtre.",
+    "zh": "一本语言杂志正在征集关于难忘一天的小故事。你投稿一篇。",
+    "ja": "語学雑誌が「忘れられない一日」の短い物語を募集しています。あなたも投稿します。"
+  },
+  "prompt_en": "Una revista busca historias sobre un día inolvidable. Cuenta qué pasó ese día, cómo te sentías y por qué lo recuerdas.",
+  "points": [
+    "cuándo y dónde ocurrió",
+    "qué pasó primero y qué pasó después",
+    "cómo te sentías y por qué lo recuerdas"
+  ],
+  "words_min": 100,
+  "words_max": 150,
+  "time_min": 25,
+  "useful_language": [
+    "Era un día …",
+    "Estaba …",
+    "De repente, …",
+    "Mientras …, …",
+    "Al final, …",
+    "Nunca olvidaré …"
+  ],
+  "tips_es": [
+    {
+      "en": "Set the scene with the *imperfecto* (*hacía sol, yo estaba nerviosa*) and tell the events with the *indefinido* (*sonó el teléfono, salí corriendo*).",
+      "fr": "Plantez le décor à l’*imperfecto* (*hacía sol*) et racontez les événements à l’*indefinido* (*sonó el teléfono*).",
+      "zh": "用 *imperfecto* 铺垫背景（*hacía sol*），用 *indefinido* 讲述事件（*sonó el teléfono*）。",
+      "ja": "場面は *imperfecto*（*hacía sol*）、出来事は *indefinido*（*sonó el teléfono*）で。"
+    },
+    {
+      "en": "Link the events with *primero, después, de repente, al final* so the reader can follow the story.",
+      "fr": "Reliez les événements avec *primero, después, de repente, al final* pour que le lecteur suive l’histoire.",
+      "zh": "用 *primero, después, de repente, al final* 连接事件，让读者容易跟上。",
+      "ja": "*primero, después, de repente, al final* で出来事をつなぎ、読み手が流れを追えるようにします。"
+    }
+  ],
+  "model_answer": "Nunca olvidaré el día en que conocí a mi mejor amigo. Era un sábado de octubre y hacía mucho frío. Yo acababa de mudarme a Madrid y no conocía a nadie, así que estaba un poco triste.\n\nPor la tarde salí a pasear sin rumbo. De repente empezó a llover y entré en una librería pequeña para esperar. Mientras miraba los libros, un chico me preguntó si buscaba algo en especial. Hablamos durante una hora sobre nuestros autores favoritos.\n\nAl final, él me invitó a un café y desde entonces somos inseparables. Lo recuerdo siempre porque aquel día cambió mi vida y me enseñó que, a veces, la lluvia trae buenas noticias.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

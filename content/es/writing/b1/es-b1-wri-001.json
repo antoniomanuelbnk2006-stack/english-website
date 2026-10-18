@@ -1,0 +1,53 @@
+{
+  "id": "es-b1-wri-001",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "task_type": "email",
+  "title": "Una queja por un viaje",
+  "topic": "travel",
+  "context_es": {
+    "en": "You booked a weekend trip, but the hotel was not what the website promised. You write an email to the agency.",
+    "fr": "Vous avez réservé un week-end, mais l’hôtel n’était pas celui promis sur le site. Vous écrivez un e-mail à l’agence.",
+    "zh": "你预订了一次周末旅行，但酒店和网站上承诺的不一样。你给旅行社写一封电子邮件。",
+    "ja": "週末旅行を予約しましたが、ホテルがサイトの説明と違いました。旅行会社にメールを書きます。"
+  },
+  "prompt_en": "Reservaste un fin de semana en una ciudad, pero el hotel no era como decía la página web. Escribe un correo a la agencia para explicar el problema y pedir una solución.",
+  "points": [
+    "qué reservaste y cuándo",
+    "qué problemas hubo en el hotel",
+    "qué solución quieres"
+  ],
+  "words_min": 100,
+  "words_max": 150,
+  "time_min": 25,
+  "useful_language": [
+    "Les escribo para …",
+    "Reservé … por internet",
+    "Cuando llegamos, …",
+    "Además, …",
+    "Por eso, les pido que …",
+    "Espero su respuesta. Un saludo,"
+  ],
+  "tips_es": [
+    {
+      "en": "Use the *indefinido* for what happened (*llegamos, estaba*) and the *imperfecto* for how things were (*la habitación era pequeña*).",
+      "fr": "Utilisez l’*indefinido* pour ce qui s’est passé (*llegamos*) et l’*imperfecto* pour décrire (*la habitación era pequeña*).",
+      "zh": "用 *indefinido* 讲发生的事（*llegamos*），用 *imperfecto* 描述情况（*la habitación era pequeña*）。",
+      "ja": "起きたことは *indefinido*（*llegamos*）、状況の描写は *imperfecto*（*la habitación era pequeña*）。"
+    },
+    {
+      "en": "To ask for a solution politely, use *Les pido que* + subjunctive: *Les pido que me devuelvan el dinero.*",
+      "fr": "Pour demander poliment une solution : *Les pido que* + subjonctif : *Les pido que me devuelvan el dinero.*",
+      "zh": "礼貌地要求解决办法，用 *Les pido que* + 虚拟式：*Les pido que me devuelvan el dinero.*",
+      "ja": "丁寧に解決を求めるには *Les pido que* + 接続法：*Les pido que me devuelvan el dinero.*"
+    }
+  ],
+  "model_answer": "Estimados señores:\n\nLes escribo para explicar un problema con mi reserva. El mes pasado reservé por internet un fin de semana en un hotel del centro de Sevilla. Según la página web, la habitación era grande y tenía vistas a la catedral.\n\nCuando llegamos, el hotel estaba lejos del centro y la habitación era pequeña y muy ruidosa. Además, el aire acondicionado no funcionaba y tuvimos mucho calor. Hablé con el recepcionista, pero no nos ofreció ninguna solución. Habíamos pagado más de doscientos euros por dos noches y no recibimos lo prometido.\n\nPor eso, les pido que me devuelvan una parte del dinero. Espero su respuesta.\n\nUn saludo,\nElena Ruiz",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

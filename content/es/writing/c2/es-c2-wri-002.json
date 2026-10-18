@@ -1,0 +1,53 @@
+{
+  "id": "es-c2-wri-002",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "task_type": "article",
+  "title": "Elogio de los viajes lentos",
+  "topic": "travel",
+  "context_es": {
+    "en": "A travel magazine asks for a reflective article for its summer issue on slow travel.",
+    "fr": "Un magazine de voyage demande un article de réflexion pour son numéro d’été sur le voyage lent.",
+    "zh": "一本旅行杂志的夏季刊约稿，要求写一篇关于慢旅行的思考性文章。",
+    "ja": "旅行雑誌が夏号のために、スロートラベルについての考察記事を依頼しています。"
+  },
+  "prompt_en": "Una revista de viajes te encarga un artículo de opinión para su número de verano: elogia el viaje lento, matiza sus límites y propón cómo practicarlo sin renunciar a descubrir.",
+  "points": [
+    "abre con una imagen o una anécdota que despierte interés",
+    "defiende el viaje lento con ejemplos concretos",
+    "reconoce sus límites y propón una vía práctica"
+  ],
+  "words_min": 280,
+  "words_max": 400,
+  "time_min": 70,
+  "useful_language": [
+    "Hay quien …",
+    "Con todo, …",
+    "No se trata de …, sino de …",
+    "De ahí que …",
+    "Quizá la clave esté en …",
+    "Al fin y al cabo, …"
+  ],
+  "tips_es": [
+    {
+      "en": "A good article opens with an image or an anecdote, argues with concrete examples and closes with an idea that echoes the opening.",
+      "fr": "Un bon article s’ouvre sur une image ou une anecdote, argumente avec des exemples concrets et se ferme sur une idée qui rappelle l’ouverture.",
+      "zh": "好文章以画面或轶事开头，用具体例子论证，并以呼应开头的想法收尾。",
+      "ja": "よい記事は、イメージやエピソードで始まり、具体例で論じ、冒頭に呼応する考えで締めくくります。"
+    },
+    {
+      "en": "Vary sentence length and use connectors that show your stance (*con todo, de ahí que, al fin y al cabo*).",
+      "fr": "Variez la longueur des phrases et utilisez des connecteurs qui montrent votre position (*con todo, de ahí que, al fin y al cabo*).",
+      "zh": "变换句子长度，并使用表明立场的连接词（*con todo, de ahí que, al fin y al cabo*）。",
+      "ja": "文の長さに変化をつけ、立場を示す接続表現（*con todo, de ahí que, al fin y al cabo*）を使います。"
+    }
+  ],
+  "model_answer": "Hay quien cuenta los países como quien colecciona sellos: cuarenta en cinco años, tres capitales en un fin de semana, una fotografía frente a cada monumento y la sensación vaga de no haber visto nada. Yo confieso que fui uno de ellos, hasta que una tarde de lluvia en un pueblo de Portugal me obligó a refugiarme en una pastelería y a conversar, durante horas, con la mujer que la atendía.\n\nAquella tarde comprendí que viajar despacio no consiste en recorrer menos kilómetros, sino en dejar que el lugar nos alcance. Quien se queda una semana en una ciudad pequeña aprende los horarios del mercado, descubre qué bar frecuentan los vecinos y acaba reconociendo las caras de la calle. Esa familiaridad, imposible de lograr con un itinerario apretado, es la verdadera recompensa del viaje. Es entonces cuando el viajero deja de ser un espectador y empieza, aunque sea de manera modesta, a pertenecer al lugar que visita.\n\nCon todo, conviene reconocer que la lentitud tiene límites. No todos disponen de semanas libres, y los vuelos baratos que tanto criticamos han permitido a muchas personas conocer lugares que de otro modo nunca habrían visto. De ahí que no se trate de condenar a nadie, sino de preguntarse qué queremos llevarnos de cada viaje.\n\nQuizá la clave esté en un pequeño cambio de criterio: elegir menos destinos y mirar más. Alojarse en un barrio y no en una zona turística, viajar en tren cuando sea posible, dejar sin programar al menos una tarde de cada jornada. El azar, que los itinerarios tienden a eliminar, es casi siempre el mejor guía.\n\nAl fin y al cabo, el mundo no se agota por ir deprisa; se agota por mirarlo mal. Y mirar bien requiere, ante todo, tiempo.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

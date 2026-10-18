@@ -1,0 +1,53 @@
+{
+  "id": "es-a2-wri-002",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "task_type": "message",
+  "title": "Mi fin de semana",
+  "topic": "daily-life",
+  "context_es": {
+    "en": "A friend asks you what you did last weekend. You answer with a message.",
+    "fr": "Une amie te demande ce que tu as fait le week-end dernier. Tu réponds par un message.",
+    "zh": "朋友问你上个周末做了什么。你用一条消息回答。",
+    "ja": "友だちに先週末に何をしたか聞かれました。メッセージで答えます。"
+  },
+  "prompt_en": "Una amiga te pregunta qué hiciste el fin de semana pasado. Escríbele un mensaje y cuéntaselo.",
+  "points": [
+    "qué hiciste el sábado",
+    "qué hiciste el domingo",
+    "cómo fue el fin de semana"
+  ],
+  "words_min": 40,
+  "words_max": 75,
+  "time_min": 12,
+  "useful_language": [
+    "El sábado fui …",
+    "Por la mañana / Por la tarde",
+    "Después …",
+    "Luego …",
+    "Fue un fin de semana …",
+    "¿Y tú, qué hiciste?"
+  ],
+  "tips_es": [
+    {
+      "en": "Use the *indefinido* for what you did: *fui, compré, vi, cenamos*.",
+      "fr": "Utilisez l’*indefinido* pour ce que vous avez fait : *fui, compré, vi, cenamos*.",
+      "zh": "用 *indefinido* 讲做过的事：*fui, compré, vi, cenamos*。",
+      "ja": "したことは *indefinido* で書きます：*fui, compré, vi, cenamos*。"
+    },
+    {
+      "en": "Put the events in order with *primero, después, luego, por la noche*.",
+      "fr": "Mettez les événements dans l’ordre avec *primero, después, luego, por la noche*.",
+      "zh": "用 *primero, después, luego, por la noche* 按顺序写。",
+      "ja": "*primero, después, luego, por la noche* で出来事を順番に並べます。"
+    }
+  ],
+  "model_answer": "Hola, Marta:\n\nEl sábado fue un día genial. Por la mañana fui al mercado con mi madre y compré fruta. Por la tarde vi una película con mis amigos y después cenamos en un restaurante italiano.\n\nEl domingo descansé en casa y escuché música. ¿Y tú, qué hiciste?\n\nUn beso,\nCarlos",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

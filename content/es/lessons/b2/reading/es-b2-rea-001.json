@@ -1,0 +1,1033 @@
+{
+  "id": "es-b2-rea-001",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u01",
+  "series": "es-b2-u01-turismo",
+  "skill": "reading",
+  "genre": "opinion",
+  "title": "Ciudades llenas de turistas",
+  "summary_es": {
+    "en": "A traveller reflects on how mass tourism changes the cities it visits and what could be done about it.",
+    "fr": "Un voyageur réfléchit à la façon dont le tourisme de masse transforme les villes et à ce que l’on peut faire.",
+    "zh": "一位旅行者思考大众旅游如何改变城市，以及可以怎么做。",
+    "ja": "旅行者が、大衆観光が都市をどう変えるのか、何ができるのかを考えます。"
+  },
+  "topic": "society",
+  "tags": ["turismo", "ciudades", "sociedad"],
+  "can_do": ["R-B2-01"],
+  "grammar_focus": ["es.b2.condicional-y-si"],
+  "vocab_focus": ["alquiler", "propietario", "ayuntamiento", "tasa"],
+  "est_minutes": 14,
+  "prediction_prompt": "¿Crees que el turismo es bueno o malo para las ciudades famosas? ¿Por qué?",
+  "pre_teach": ["ayuntamiento", "tasa"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "En los últimos veinte años, el número de viajeros en el mundo se ha multiplicado.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "últimos", "l": "último", "p": "ADJ", "w": true, "sp": true },
+            { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "número", "l": "número", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "viajeros", "l": "viajero", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mundo", "l": "mundo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "multiplicado", "l": "multiplicar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Hoy una persona puede cruzar el océano por menos de lo que cuesta una cena en un buen restaurante.",
+          "tokens": [
+            { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "persona", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "cruzar", "l": "cruzar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "océano", "l": "océano", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "cuesta", "l": "costar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cena", "l": "cenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "restaurante", "l": "restaurante", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Las ciudades más famosas, como Barcelona, Venecia o Lisboa, reciben cada año muchos más visitantes que habitantes tienen.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "famosas", "l": "famoso", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "Barcelona", "l": "barcelona", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Venecia", "l": "venecia", "p": "PROPN", "w": false, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "Lisboa", "l": "lisboa", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "reciben", "l": "recibir", "p": "VERB", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "visitantes", "l": "visitante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "habitantes", "l": "habitante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tienen", "l": "tener", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "Para algunos, esto es una oportunidad económica excelente; para otros, se ha convertido en un problema difícil de soportar.",
+          "tokens": [
+            { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "algunos", "l": "algún", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "esto", "l": "esto", "p": "PRON", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "oportunidad", "l": "oportunidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "económica", "l": "económico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "excelente", "l": "excelente", "p": "ADJ", "w": true },
+            { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "otros", "l": "otro", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "convertido", "l": "convertirse", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "difícil", "l": "difícil", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "soportar", "l": "soportar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Los defensores del turismo recuerdan que genera empleo y riqueza.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "defensores", "l": "defensor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "turismo", "l": "turismo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "recuerdan", "l": "recordar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "genera", "l": "generar", "p": "VERB", "w": true, "sp": true },
+            { "t": "empleo", "l": "empleo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "riqueza", "l": "riqueza", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Gracias a los viajeros, abren restaurantes, hoteles y tiendas, y muchas familias pueden mantenerse.",
+          "tokens": [
+            { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "viajeros", "l": "viajero", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "abren", "l": "abrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "restaurantes", "l": "restaurante", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "hoteles", "l": "hotel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "tiendas", "l": "tienda", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "familias", "l": "familia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "mantenerse", "l": "mantener", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Los hoteles contratan a camareros, guías y cocineros, y los pequeños negocios venden productos de la zona a miles de visitantes cada semana.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "hoteles", "l": "hotel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "contratan", "l": "contratar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "camareros", "l": "camarero", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "guías", "l": "guía", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "cocineros", "l": "cocinero", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pequeños", "l": "pequeño", "p": "ADJ", "w": true, "sp": true },
+            { "t": "negocios", "l": "negocio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "venden", "l": "vender", "p": "VERB", "w": true, "sp": true },
+            { "t": "productos", "l": "producto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "zona", "l": "zona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "miles", "l": "miles", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "visitantes", "l": "visitante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Además, el dinero de los visitantes permite conservar monumentos y museos que, de otro modo, estarían abandonados.",
+          "tokens": [
+            { "t": "Además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "visitantes", "l": "visitante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "permite", "l": "permitir", "p": "VERB", "w": true, "sp": true },
+            { "t": "conservar", "l": "conservar", "p": "VERB", "w": true, "sp": true },
+            { "t": "monumentos", "l": "monumento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "museos", "l": "museo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "modo", "l": "modo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "estarían", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "abandonados", "l": "abandonado", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s5",
+          "text": "Si no hubiera turismo, dicen, muchas zonas del país estarían mucho más vacías.",
+          "tokens": [
+            { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "hubiera", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "turismo", "l": "turismo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "dicen", "l": "decir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "zonas", "l": "zona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "país", "l": "país", "p": "NOUN", "w": true, "sp": true },
+            { "t": "estarían", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "vacías", "l": "vacío", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Sin embargo, los vecinos de los centros históricos cuentan otra historia.",
+          "tokens": [
+            { "t": "Sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "embargo", "l": "embargo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "centros", "l": "centro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "históricos", "l": "histórico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "cuentan", "l": "contar", "p": "VERB", "w": true, "sp": true },
+            { "t": "otra", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "historia", "l": "historia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Los alquileres suben sin parar porque los propietarios prefieren alquilar sus pisos a turistas durante unos días antes que a familias durante años.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "alquileres", "l": "alquiler", "p": "NOUN", "w": true, "sp": true },
+            { "t": "suben", "l": "subir", "p": "VERB", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "parar", "l": "parar", "p": "VERB", "w": true, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "propietarios", "l": "propietario", "p": "NOUN", "w": true, "sp": true },
+            { "t": "prefieren", "l": "preferir", "p": "VERB", "w": true, "sp": true },
+            { "t": "alquilar", "l": "alquilar", "p": "VERB", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "pisos", "l": "piso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "turistas", "l": "turista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "días", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "familias", "l": "familia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Muchos residentes se ven obligados a marcharse a las afueras, y los comercios de toda la vida cierran para dejar su sitio a tiendas de recuerdos.",
+          "tokens": [
+            { "t": "Muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "residentes", "l": "residente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "ven", "l": "venir", "p": "VERB", "w": true, "sp": true },
+            { "t": "obligados", "l": "obligar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "marcharse", "l": "marcharse", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "afueras", "l": "afueras", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "comercios", "l": "comercio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "toda", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vida", "l": "vida", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cierran", "l": "cerrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "dejar", "l": "dejar", "p": "VERB", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "sitio", "l": "sitio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "tiendas", "l": "tienda", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "recuerdos", "l": "recuerdo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Además, los fines de semana las calles se llenan de maletas y de grupos que hacen ruido hasta la madrugada.",
+          "tokens": [
+            { "t": "Además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fines", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "calles", "l": "calle", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "llenan", "l": "llenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "maletas", "l": "maleta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "grupos", "l": "grupo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "hacen", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "ruido", "l": "ruido", "p": "NOUN", "w": true, "sp": true },
+            { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "madrugada", "l": "madrugada", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Un caso muy conocido es el de Venecia, donde viven menos de cincuenta mil personas en el centro histórico y llegan millones de visitantes al año.",
+          "tokens": [
+            { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "caso", "l": "caso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "conocido", "l": "conocer", "p": "VERB", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Venecia", "l": "venecia", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "viven", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cincuenta", "l": "cincuenta", "p": "NUM", "w": false, "sp": true },
+            { "t": "mil", "l": "mil", "p": "NUM", "w": false, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "centro", "l": "centro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "histórico", "l": "histórico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "llegan", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "millones", "l": "millón", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "visitantes", "l": "visitante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "año", "l": "año", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Los vecinos se quejan de que ya no pueden hacer la compra en su barrio, porque los supermercados de siempre han desaparecido.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "quejan", "l": "quejarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "compra", "l": "comprar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "supermercados", "l": "supermercado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "desaparecido", "l": "desaparecer", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Muchos jóvenes se marchan porque no encuentran una casa a un precio razonable.",
+          "tokens": [
+            { "t": "Muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "jóvenes", "l": "joven", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "marchan", "l": "marcharse", "p": "VERB", "w": true, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "encuentran", "l": "encontrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "precio", "l": "precio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "razonable", "l": "razonable", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Varios ayuntamientos han empezado a actuar.",
+          "tokens": [
+            { "t": "Varios", "l": "varios", "p": "DET", "w": true, "sp": true },
+            { "t": "ayuntamientos", "l": "ayuntamiento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "empezado", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "actuar", "l": "actuar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Algunos limitan el número de pisos turísticos; otros cobran una tasa a quienes pasan la noche en la ciudad, o prohíben los autobuses grandes en las calles estrechas.",
+          "tokens": [
+            { "t": "Algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "limitan", "l": "limitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "número", "l": "número", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "pisos", "l": "piso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "turísticos", "l": "turístico", "p": "ADJ", "w": true },
+            { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "otros", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "cobran", "l": "cobrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "tasa", "l": "tasa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "quienes", "l": "quien", "p": "PRON", "w": true, "sp": true },
+            { "t": "pasan", "l": "pasar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "prohíben", "l": "prohibir", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "autobuses", "l": "autobús", "p": "NOUN", "w": true, "sp": true },
+            { "t": "grandes", "l": "grande", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "calles", "l": "calle", "p": "NOUN", "w": true, "sp": true },
+            { "t": "estrechas", "l": "estrecho", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "En ciertas ciudades, incluso se exige reservar con antelación para visitar los lugares más populares.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "ciertas", "l": "cierto", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "incluso", "l": "incluso", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "exige", "l": "exigir", "p": "VERB", "w": true, "sp": true },
+            { "t": "reservar", "l": "reservar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "antelación", "l": "antelación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "visitar", "l": "visitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "lugares", "l": "lugar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "populares", "l": "popular", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Los resultados, por ahora, son desiguales, y no todos los expertos creen que estas medidas sean suficientes.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "resultados", "l": "resultado", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "ahora", "l": "ahora", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "desiguales", "l": "desigual", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "expertos", "l": "experto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "creen", "l": "creer", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "estas", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "medidas", "l": "medida", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sean", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "suficientes", "l": "suficiente", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Algunos especialistas sugieren que el problema no es el turismo en sí, sino su concentración.",
+          "tokens": [
+            { "t": "Algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "especialistas", "l": "especialista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sugieren", "l": "sugerir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "turismo", "l": "turismo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "sí", "l": "sí", "p": "INTJ", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "concentración", "l": "concentración", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Si los viajeros visitaran más lugares pequeños y menos conocidos, la presión sobre las grandes ciudades se reduciría y otras regiones se beneficiarían.",
+          "tokens": [
+            { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "viajeros", "l": "viajero", "p": "NOUN", "w": true, "sp": true },
+            { "t": "visitaran", "l": "visitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "lugares", "l": "lugar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pequeños", "l": "pequeño", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "conocidos", "l": "conocer", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "presión", "l": "presión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "grandes", "l": "grande", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "reduciría", "l": "reducir", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "otras", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "regiones", "l": "región", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "beneficiarían", "l": "beneficiar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Para lograrlo, harían falta mejores transportes y una información más clara para el viajero.",
+          "tokens": [
+            { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "lograrlo", "l": "lograr", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "harían", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "falta", "l": "falta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "mejores", "l": "mejorar", "p": "VERB", "w": true, "sp": true },
+            { "t": "transportes", "l": "transporte", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "información", "l": "información", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "clara", "l": "claro", "p": "ADJ", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "viajero", "l": "viajero", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "También ayudaría que los turistas viajaran fuera de temporada, en otoño o en primavera.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "ayudaría", "l": "ayudar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "turistas", "l": "turista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "viajaran", "l": "viajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "fuera", "l": "fuera", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "temporada", "l": "temporada", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "otoño", "l": "otoño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "primavera", "l": "primavera", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s5",
+          "text": "Algunas ciudades ya promocionan rutas alternativas para repartir mejor a los visitantes.",
+          "tokens": [
+            { "t": "Algunas", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "promocionan", "l": "promocionar", "p": "VERB", "w": true, "sp": true },
+            { "t": "rutas", "l": "ruta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "alternativas", "l": "alternativo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "repartir", "l": "repartir", "p": "VERB", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "visitantes", "l": "visitante", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "Como viajero, reconozco que a menudo formo parte del problema.",
+          "tokens": [
+            { "t": "Como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "viajero", "l": "viajero", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "reconozco", "l": "reconocer", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "menudo", "l": "menudo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "formo", "l": "formar", "p": "VERB", "w": true, "sp": true },
+            { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "problema", "l": "problema", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Me encanta descubrir ciudades nuevas, pero ya no puedo ignorar el efecto que causa mi visita.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "encanta", "l": "encantar", "p": "VERB", "w": true, "sp": true },
+            { "t": "descubrir", "l": "descubrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nuevas", "l": "nuevo", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "puedo", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "ignorar", "l": "ignorar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "efecto", "l": "efecto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "causa", "l": "causar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "visita", "l": "visitar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Creo que deberíamos preguntarnos, antes de reservar, si nuestro viaje beneficia a quienes viven allí.",
+          "tokens": [
+            { "t": "Creo", "l": "creer", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "deberíamos", "l": "deber", "p": "VERB", "w": true, "sp": true },
+            { "t": "preguntarnos", "l": "preguntarse", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "reservar", "l": "reservar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "nuestro", "l": "nuestro", "p": "DET", "w": true, "sp": true },
+            { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "beneficia", "l": "beneficiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "quienes", "l": "quien", "p": "PRON", "w": true, "sp": true },
+            { "t": "viven", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "allí", "l": "allí", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s4",
+          "text": "Por ejemplo, podemos elegir alojamientos pequeños, comer en restaurantes del barrio y evitar los momentos de más gente.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "ejemplo", "l": "ejemplo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "podemos", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "elegir", "l": "elegir", "p": "VERB", "w": true, "sp": true },
+            { "t": "alojamientos", "l": "alojamiento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pequeños", "l": "pequeño", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "comer", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "restaurantes", "l": "restaurante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "evitar", "l": "evitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "momentos", "l": "momento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "gente", "l": "gente", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s5",
+          "text": "El turismo responsable no consiste en viajar menos, sino en viajar con más conciencia y respeto.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "turismo", "l": "turismo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "responsable", "l": "responsable", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "consiste", "l": "consistir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "viajar", "l": "viajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "viajar", "l": "viajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "conciencia", "l": "conciencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "respeto", "l": "respetar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s6",
+          "text": "Al fin y al cabo, la ciudad que visitamos es la casa de otras personas.",
+          "tokens": [
+            { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "fin", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "cabo", "l": "cabo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "visitamos", "l": "visitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "otras", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Hypotheses: si + imperfect subjunctive, conditional",
+        "fr": "Hypothèses : si + subjonctif imparfait, conditionnel",
+        "zh": "假设：si + 虚拟式过去时，条件式",
+        "ja": "仮定：si + 接続法過去、条件法"
+      },
+      "explanation_es": {
+        "en": "To imagine a situation that is unlikely or unreal, Spanish uses *si* + imperfect subjunctive in one clause and the conditional in the other: *si no hubiera turismo, muchas zonas estarían vacías*."
+      },
+      "refs": ["p2s5", "p6s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "ayuntamiento",
+      "surface": "ayuntamientos",
+      "pos": "noun",
+      "def_en": "institución que gobierna una ciudad o un pueblo",
+      "def_es": { "en": "city council, town hall", "fr": "mairie, conseil municipal", "zh": "市政府", "ja": "市役所" },
+      "ref": "p5s1"
+    },
+    {
+      "lemma": "tasa",
+      "surface": "tasa",
+      "pos": "noun",
+      "def_en": "dinero que se paga por usar un servicio público",
+      "def_es": { "en": "fee, tax", "fr": "taxe", "zh": "税费", "ja": "手数料、税" },
+      "ref": "p5s2"
+    },
+    {
+      "lemma": "propietario",
+      "surface": "propietarios",
+      "pos": "noun",
+      "def_en": "persona que tiene una casa o un negocio",
+      "def_es": { "en": "owner", "fr": "propriétaire", "zh": "所有者", "ja": "所有者" },
+      "ref": "p3s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Cuál es la idea principal del texto?",
+      "evidence": ["p7s5"],
+      "rationale_es": { "en": "The author weighs advantages and problems and ends by defending responsible tourism." },
+      "type": "mcq",
+      "options": [
+        {
+          "id": "a",
+          "text": "Los turistas son los únicos culpables de que los pisos de las ciudades sean tan caros"
+        },
+        { "id": "b", "text": "El turismo trae ventajas y problemas, y exige viajar con más responsabilidad" },
+        { "id": "c", "text": "Las ciudades pequeñas ya no reciben ningún tipo de visitantes desde hace años" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Según quienes defienden el turismo, ¿qué permite el dinero de los visitantes?",
+      "evidence": ["p2s4"],
+      "rationale_es": { "en": "Visitors’ money *permite conservar monumentos y museos*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Construir nuevos aeropuertos en las afueras" },
+        { "id": "b", "text": "Bajar los precios de los pisos del centro" },
+        { "id": "c", "text": "Cuidar los edificios antiguos y los museos" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Los propietarios prefieren alquilar a familias durante muchos años.",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "They prefer short tourist rentals to long family rentals." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué medida toman algunos ayuntamientos?",
+      "evidence": ["p5s2"],
+      "rationale_es": { "en": "Some councils *cobran una tasa* to those who spend the night." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Hacer pagar una cantidad a los visitantes que duermen allí" },
+        { "id": "b", "text": "Cerrar los museos más visitados durante el verano" },
+        { "id": "c", "text": "Prohibir la entrada a todos los extranjeros que lleguen en autobús" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Qué se deduce de la frase «los resultados, por ahora, son desiguales»?",
+      "evidence": ["p5s4"],
+      "rationale_es": { "en": "*Desiguales* means uneven: some places see improvements, others do not." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Todas las medidas han fracasado y se han retirado" },
+        { "id": "b", "text": "Funcionan en unos lugares y en otros no" },
+        { "id": "c", "text": "Nadie ha comprobado todavía los resultados de ellas" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "read",
+      "prompt": "¿Qué actitud muestra el autor hacia sí mismo en el último párrafo?",
+      "evidence": ["p7s1"],
+      "rationale_es": { "en": "He admits: *reconozco que a menudo formo parte del problema*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Piensa que no tiene ninguna responsabilidad" },
+        { "id": "b", "text": "Se siente orgulloso de viajar tanto" },
+        { "id": "c", "text": "Reconoce que también contribuye al problema" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p6s4"],
+      "rationale_es": { "en": "*Fuera de temporada*: in the low season." },
+      "type": "gap_fill",
+      "text": "Ayudaría que los turistas viajaran fuera de {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["temporada"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 523,
+  "lemmas": [
+    "a", "abandonado", "abrir", "actuar", "además", "afueras", "ahora", "algún", "allí", "alojamiento",
+    "alquilar", "alquiler", "alternativo", "antelación", "antes", "autobús", "ayudar", "ayuntamiento", "año",
+    "barrio", "beneficiar", "bueno", "cabo", "cada", "calle", "camarero", "casa", "caso", "causar", "cenar",
+    "centro", "cerrar", "cierto", "ciudad", "claro", "cobrar", "cocinero", "comer", "comercio", "comprar",
+    "con", "concentración", "conciencia", "conocer", "conservar", "consistir", "contar", "contratar",
+    "convertirse", "costar", "creer", "cruzar", "de", "deber", "decir", "defensor", "dejar", "desaparecer",
+    "descubrir", "desigual", "difícil", "dinero", "donde", "durante", "día", "económico", "efecto", "ejemplo",
+    "el", "elegir", "embargo", "empezar", "empleo", "en", "encantar", "encontrar", "especialista", "estar",
+    "este", "esto", "estrecho", "evitar", "excelente", "exigir", "experto", "falta", "familia", "famoso",
+    "fin", "formar", "fuera", "generar", "gente", "grande", "grupo", "guía", "haber", "habitante", "hacer",
+    "hasta", "historia", "histórico", "hotel", "hoy", "ignorar", "incluso", "información", "joven", "limitar",
+    "llegar", "llenar", "lograr", "lugar", "madrugada", "maleta", "mantener", "marcharse", "medida", "mejor",
+    "mejorar", "menos", "menudo", "mi", "miles", "millón", "modo", "momento", "monumento", "mucho",
+    "multiplicar", "mundo", "museo", "muy", "más", "negocio", "no", "noche", "nuestro", "nuevo", "número", "o",
+    "obligar", "océano", "oportunidad", "otoño", "otro", "para", "parar", "parte", "pasar", "país", "pequeño",
+    "permitir", "pero", "persona", "piso", "poder", "popular", "por", "porque", "precio", "preferir",
+    "preguntarse", "presión", "primavera", "problema", "producto", "prohibir", "promocionar", "propietario",
+    "que", "quejarse", "quien", "razonable", "recibir", "reconocer", "recordar", "recuerdo", "reducir",
+    "región", "repartir", "reservar", "residente", "respetar", "responsable", "restaurante", "resultado",
+    "riqueza", "ruido", "ruta", "se", "semana", "ser", "si", "siempre", "sin", "sino", "sitio", "sobre",
+    "soportar", "su", "subir", "suficiente", "sugerir", "supermercado", "también", "tasa", "temporada",
+    "tener", "tienda", "todo", "transporte", "turismo", "turista", "turístico", "un", "vacío", "varios",
+    "vecino", "vender", "venir", "viajar", "viajero", "vida", "visitante", "visitar", "vivir", "y", "ya", "yo",
+    "zona", "él", "último"
+  ],
+  "difficulty": 1266,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6304, "A2": 0.677, "B1": 0.784, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 16.9,
+    "flesch_reading_ease": 63.8,
+    "checked_at": "2026-10-18T20:39:00.045Z"
+  }
+}

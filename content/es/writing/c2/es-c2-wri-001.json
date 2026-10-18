@@ -1,0 +1,53 @@
+{
+  "id": "es-c2-wri-001",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "task_type": "essay",
+  "title": "Leer en la era digital",
+  "topic": "culture",
+  "context_es": {
+    "en": "A cultural supplement publishes essays on reading today. You contribute a reflective essay with a clear thesis.",
+    "fr": "Un supplément culturel publie des essais sur la lecture aujourd’hui. Vous proposez un essai réflexif avec une thèse claire.",
+    "zh": "一份文化副刊刊登关于当今阅读的随笔。你投稿一篇有明确论点的思辨性文章。",
+    "ja": "文化面の特集が、現代の読書についてのエッセイを募集しています。明確な主張を持つ思索的なエッセイを書きます。"
+  },
+  "prompt_en": "Un suplemento cultural publica ensayos sobre la lectura hoy. Escribe un ensayo reflexivo con una tesis clara: ¿qué ocurre con la lectura profunda en la era digital y qué podemos hacer para preservarla?",
+  "points": [
+    "plantea una tesis clara desde el principio",
+    "desarrolla dos argumentos con matices y contraargumentos",
+    "cierra con una idea que invite a la reflexión"
+  ],
+  "words_min": 280,
+  "words_max": 400,
+  "time_min": 70,
+  "useful_language": [
+    "Cabría sostener que …",
+    "Lejos de …, …",
+    "No es que …, sino que …",
+    "Lo que está en juego es …",
+    "Si bien es cierto que …, conviene no olvidar que …",
+    "En última instancia, …"
+  ],
+  "tips_es": [
+    {
+      "en": "At C2 the register must be precise and varied: use cleft sentences (*lo que está en juego es…*) and hedging (*quizá, cabría pensar que…*).",
+      "fr": "Au niveau C2, le registre doit être précis et varié : utilisez des phrases clivées (*lo que está en juego es…*) et des atténuations (*quizá, cabría pensar que…*).",
+      "zh": "C2 水平要求语域精确多样：使用分裂句（*lo que está en juego es…*）和委婉表达（*quizá, cabría pensar que…*）。",
+      "ja": "C2 では語調を的確かつ多様に：分裂文（*lo que está en juego es…*）や婉曲表現（*quizá, cabría pensar que…*）を使います。"
+    },
+    {
+      "en": "Anticipate the objection and answer it: a strong thesis essay does not ignore the best argument against its position.",
+      "fr": "Anticipez l’objection et répondez-y : un bon essai ne fait pas l’impasse sur le meilleur argument contraire.",
+      "zh": "预先提出反对意见并回应：好的论点文章不会回避对立方最有力的论据。",
+      "ja": "反論を先回りして取り上げ、答えること。よい論述は、反対側の最も強い論拠を無視しません。"
+    }
+  ],
+  "model_answer": "Cabría sostener que nunca se había leído tanto como ahora y que, sin embargo, nunca se había leído tan poco. La paradoja es solo aparente: hoy consumimos textos breves, fragmentarios y urgentes a lo largo de todo el día, pero cada vez nos cuesta más sumergirnos en un libro durante una hora.\n\nLo que está en juego no es la desaparición de la lectura, sino la erosión de un tipo particular de atención. Leer una novela o un ensayo exige sostener un hilo, tolerar la ambigüedad y aceptar que el sentido no llega de inmediato. Lejos de ser una habilidad natural, es un hábito que se adquiere con paciencia y que, como todo hábito, se pierde cuando deja de practicarse. Quien lo olvida, tarde o temprano, lo advierte con cierta inquietud: las frases se le escurren y el pensamiento pierde profundidad.\n\nSería injusto, no obstante, culpar sin matices a la tecnología. Si bien es cierto que las pantallas fomentan la dispersión, también han democratizado el acceso a obras que antes eran inalcanzables, y han creado comunidades de lectores impensables hace unas décadas. No es que el medio digital sea enemigo de la lectura, sino que su diseño suele premiar el clic antes que la comprensión.\n\nPor eso, la solución no pasa por la nostalgia, sino por la intención. Convendría reservar cada día un espacio sin interrupciones, elegir el libro antes que la notificación y enseñar a los más jóvenes que aburrirse unos minutos con un texto difícil forma parte del aprendizaje.\n\nEn última instancia, quizá lo decisivo no sea el soporte, sino la decisión de entregar a una página nuestra atención completa. Quien lo consigue descubre que leer despacio no es perder el tiempo, sino ganar un modo de estar en el mundo.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

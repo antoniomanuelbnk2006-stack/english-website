@@ -1,0 +1,418 @@
+{
+  "id": "es-a2-lis-001",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u02",
+  "series": "es-a2-u02-planes",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Planes para el sábado",
+  "summary_es": {
+    "en": "Daniel invites Carla to the cinema and they arrange where to meet.",
+    "fr": "Daniel invite Carla au cinéma et ils fixent où se retrouver.",
+    "zh": "Daniel 邀请 Carla 去看电影，两人约好见面地点。",
+    "ja": "ダニエルはカルラを映画に誘い、二人は待ち合わせ場所を決めます。"
+  },
+  "topic": "daily-life",
+  "tags": ["planes", "cine", "quedar"],
+  "can_do": ["L-A2-01"],
+  "grammar_focus": ["es.a2.ir-a-infinitivo"],
+  "vocab_focus": ["plan", "cine", "quedar", "plaza"],
+  "est_minutes": 7,
+  "prediction_prompt": "Dos amigos hacen planes. ¿Qué preguntas se hacen?",
+  "pre_teach": ["quedar", "plaza"],
+  "speakers": [
+    { "id": "daniel", "name": "Daniel", "accent": "es-ES", "gender": "male" },
+    { "id": "carla", "name": "Carla", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 115,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "daniel",
+      "text": "Hola, Carla. ¿Qué vas a hacer el sábado?",
+      "tokens": [
+        { "t": "Hola", "l": "hola", "p": "INTJ", "w": false, "s": 0, "e": 0.36 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Carla", "l": "carla", "p": "PROPN", "w": false, "s": 0.54, "e": 0.88 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 1.22, "e": 1.442 },
+        { "t": "vas", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 1.442, "e": 1.664 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 1.663, "e": 1.774 },
+        { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 1.774, "e": 2.106 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 2.106, "e": 2.272 },
+        { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "s": 2.272, "e": 2.66 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.715
+    },
+    {
+      "id": "s2",
+      "speaker": "carla",
+      "text": "Todavía no lo sé. ¿Tienes algún plan?",
+      "tokens": [
+        { "t": "Todavía", "l": "todavía", "p": "ADV", "w": true, "sp": true, "s": 3.425, "e": 3.976 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 3.976, "e": 4.182 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 4.182, "e": 4.388 },
+        { "t": "sé", "l": "ser", "p": "AUX", "w": true, "s": 4.389, "e": 4.595 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Tienes", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 4.835, "e": 5.306 },
+        { "t": "algún", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 5.306, "e": 5.709 },
+        { "t": "plan", "l": "plan", "p": "NOUN", "w": true, "s": 5.709, "e": 6.045 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.415,
+      "end": 6.146
+    },
+    {
+      "id": "s3",
+      "speaker": "daniel",
+      "text": "Sí, voy a ir al cine con unos amigos. ¿Quieres venir?",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 6.866, "e": 7.286 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 7.426, "e": 7.676 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 7.676, "e": 7.801 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 7.801, "e": 7.988 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 7.988, "e": 8.175 },
+        { "t": "cine", "l": "cine", "p": "NOUN", "w": true, "sp": true, "s": 8.175, "e": 8.487 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 8.487, "e": 8.737 },
+        { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true, "s": 8.737, "e": 9.049 },
+        { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true, "s": 9.049, "e": 9.486 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Quieres", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 9.716, "e": 10.156 },
+        { "t": "venir", "l": "venir", "p": "VERB", "w": true, "s": 10.156, "e": 10.486 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.846,
+      "end": 10.589
+    },
+    {
+      "id": "s4",
+      "speaker": "carla",
+      "text": "Me encanta la idea, pero tengo que estudiar por la mañana.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 11.299, "e": 11.511 },
+        { "t": "encanta", "l": "encantar", "p": "VERB", "w": true, "sp": true, "s": 11.511, "e": 12.075 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 12.075, "e": 12.287 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "s": 12.286, "e": 12.639 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 12.799, "e": 13.092 },
+        { "t": "tengo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 13.092, "e": 13.444 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 13.445, "e": 13.68 },
+        { "t": "estudiar", "l": "estudiar", "p": "VERB", "w": true, "sp": true, "s": 13.679, "e": 14.207 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 14.207, "e": 14.442 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 14.442, "e": 14.618 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "s": 14.618, "e": 15.029 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.289,
+      "end": 15.131
+    },
+    {
+      "id": "s5",
+      "speaker": "daniel",
+      "text": "No hay problema. La película empieza a las siete.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 15.841, "e": 16.068 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 16.068, "e": 16.371 },
+        { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "s": 16.37, "e": 17.051 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 17.391, "e": 17.578 },
+        { "t": "película", "l": "película", "p": "NOUN", "w": true, "sp": true, "s": 17.578, "e": 18.138 },
+        { "t": "empieza", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 18.137, "e": 18.635 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 18.635, "e": 18.759 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 18.759, "e": 19.008 },
+        { "t": "siete", "l": "siete", "p": "NUM", "w": false, "s": 19.008, "e": 19.381 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.831,
+      "end": 19.474
+    },
+    {
+      "id": "s6",
+      "speaker": "carla",
+      "text": "Entonces puedo ir. ¿Dónde quedamos?",
+      "tokens": [
+        { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true, "s": 20.184, "e": 20.899 },
+        { "t": "puedo", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 20.899, "e": 21.376 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "s": 21.376, "e": 21.614 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Dónde", "l": "dónde", "p": "ADV", "w": true, "sp": true, "s": 21.874, "e": 22.326 },
+        { "t": "quedamos", "l": "quedar", "p": "VERB", "w": true, "s": 22.326, "e": 23.004 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.174,
+      "end": 23.061
+    },
+    {
+      "id": "s7",
+      "speaker": "daniel",
+      "text": "Podemos quedar en la plaza, a las seis y media.",
+      "tokens": [
+        { "t": "Podemos", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 23.771, "e": 24.287 },
+        { "t": "quedar", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 24.287, "e": 24.738 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 24.738, "e": 24.931 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 24.931, "e": 25.124 },
+        { "t": "plaza", "l": "plaza", "p": "NOUN", "w": true, "s": 25.124, "e": 25.511 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 25.811, "e": 25.968 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 25.968, "e": 26.282 },
+        { "t": "seis", "l": "seis", "p": "NUM", "w": false, "sp": true, "s": 26.282, "e": 26.674 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 26.674, "e": 26.831 },
+        { "t": "media", "l": "medio", "p": "ADJ", "w": true, "s": 26.83, "e": 27.301 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.761,
+      "end": 27.369
+    },
+    {
+      "id": "s8",
+      "speaker": "carla",
+      "text": "Perfecto. ¿Vamos a cenar después?",
+      "tokens": [
+        { "t": "Perfecto", "l": "perfecto", "p": "ADJ", "w": true, "s": 28.079, "e": 28.849 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Vamos", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 29.109, "e": 29.605 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 29.605, "e": 29.77 },
+        { "t": "cenar", "l": "cenar", "p": "VERB", "w": true, "sp": true, "s": 29.771, "e": 30.267 },
+        { "t": "después", "l": "después", "p": "ADV", "w": true, "s": 30.267, "e": 30.929 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.069,
+      "end": 30.975
+    },
+    {
+      "id": "s9",
+      "speaker": "daniel",
+      "text": "Buena idea. Hay un restaurante nuevo cerca del cine.",
+      "tokens": [
+        { "t": "Buena", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 31.685, "e": 32.132 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "s": 32.132, "e": 32.505 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 32.775, "e": 33.038 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 33.038, "e": 33.235 },
+        {
+          "t": "restaurante",
+          "l": "restaurante",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 33.235,
+          "e": 34.024
+        },
+        { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 34.024, "e": 34.419 },
+        { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "sp": true, "s": 34.419, "e": 34.814 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 34.813, "e": 35.076 },
+        { "t": "cine", "l": "cine", "p": "NOUN", "w": true, "s": 35.076, "e": 35.405 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.675,
+      "end": 35.456
+    },
+    {
+      "id": "s10",
+      "speaker": "carla",
+      "text": "Genial. Entonces nos vemos el sábado.",
+      "tokens": [
+        { "t": "Genial", "l": "genial", "p": "ADJ", "w": true, "s": 36.166, "e": 36.796 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true, "s": 37.036, "e": 37.685 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 37.685, "e": 37.973 },
+        { "t": "vemos", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 37.973, "e": 38.405 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 38.405, "e": 38.621 },
+        { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "s": 38.622, "e": 39.126 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 36.156,
+      "end": 39.192
+    },
+    {
+      "id": "s11",
+      "speaker": "daniel",
+      "text": "Hasta el sábado. ¡Adiós!",
+      "tokens": [
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 39.902, "e": 40.255 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 40.255, "e": 40.431 },
+        { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "s": 40.431, "e": 40.842 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Adiós", "l": "adiós", "p": "INTJ", "w": false, "s": 41.112, "e": 41.792 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 39.892,
+      "end": 41.853
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "quedar",
+      "surface": "quedamos",
+      "pos": "verb",
+      "def_en": "decidir dónde y cuándo ver a alguien",
+      "def_es": { "en": "to arrange to meet", "fr": "se donner rendez-vous", "zh": "约好见面", "ja": "待ち合わせる" },
+      "ref": "s6"
+    },
+    {
+      "lemma": "plaza",
+      "surface": "plaza",
+      "pos": "noun",
+      "def_en": "espacio abierto en una ciudad, sin coches",
+      "def_es": { "en": "square", "fr": "place", "zh": "广场", "ja": "広場" },
+      "ref": "s7"
+    },
+    {
+      "lemma": "genial",
+      "surface": "Genial",
+      "pos": "adjective",
+      "def_en": "muy bueno, estupendo",
+      "def_es": { "en": "great", "fr": "génial", "zh": "太棒了", "ja": "素晴らしい" },
+      "ref": "s10"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué hacen Daniel y Carla?",
+      "evidence": ["s1", "s6"],
+      "rationale_es": { "en": "They talk about what to do on Saturday and arrange where to meet." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Compran entradas" },
+        { "id": "b", "text": "Organizan un plan" },
+        { "id": "c", "text": "Buscan un restaurante" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué plan tiene Daniel para el sábado?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "*Voy a ir al cine con unos amigos*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Ir de compras" },
+        { "id": "b", "text": "Estudiar en casa" },
+        { "id": "c", "text": "Ir al cine" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué no puede Carla por la mañana?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "*Tengo que estudiar por la mañana*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque está enferma" },
+        { "id": "b", "text": "Porque trabaja" },
+        { "id": "c", "text": "Porque tiene que estudiar" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "La película empieza a las siete.",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "*La película empieza a las siete*." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "*Podemos quedar en la plaza, a las seis y media*." },
+      "type": "gap_fill",
+      "text": "Quedan en la {{1}} a las seis y media.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["plaza"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué van a hacer después de la película?",
+      "evidence": ["s8"],
+      "rationale_es": {
+        "en": "Carla asks *¿Vamos a cenar después?* and Daniel agrees: there is a new restaurant near the cinema."
+      },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Ir a cenar" },
+        { "id": "b", "text": "Volver a casa" },
+        { "id": "c", "text": "Ir a bailar" }
+      ],
+      "answer": "a"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "algún", "amigo", "bueno", "cenar", "cerca", "cine", "con", "de", "después", "dónde", "el", "empezar",
+    "en", "encantar", "entonces", "estudiar", "genial", "haber", "hacer", "hasta", "idea", "ir", "mañana",
+    "medio", "no", "nosotros", "nuevo", "película", "perfecto", "pero", "plan", "plaza", "poder", "por",
+    "problema", "que", "quedar", "querer", "qué", "restaurante", "ser", "sábado", "tener", "todavía", "un",
+    "venir", "ver", "y", "yo", "él"
+  ],
+  "difficulty": 881,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7975, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 4.3,
+    "flesch_reading_ease": 93.8,
+    "checked_at": "2026-10-18T20:19:32.613Z"
+  },
+  "audio": {
+    "src": "audio/a2/es-a2-lis-001/v1.m4a",
+    "duration_s": 41.853,
+    "wpm": 122,
+    "provider": "piper",
+    "voices": { "daniel": "sharvard-m", "carla": "sharvard-f" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      0.83, 0.78, 0.04, 1, 0.23, 0.05, 0.01, 0.54, 1, 0.73, 0.57, 0.48, 0.29, 0.74, 0.27, 0.04, 0, 0, 0, 0.75,
+      0.88, 1, 0.87, 0.83, 0.41, 0.35, 0.1, 0.31, 1, 0.62, 0.52, 0.37, 0.33, 0.41, 0.14, 0.01, 0, 0, 0, 0.36,
+      0.81, 0.75, 0.2, 1, 0.71, 0.76, 0.59, 0.74, 0.62, 0.64, 0.84, 0.53, 0.46, 0.15, 0.06, 0.11, 1, 0.62,
+      0.68, 0.45, 0.07, 0, 0, 0, 0.29, 0.77, 0.82, 0.66, 1, 0.48, 0.5, 0.76, 0.32, 0.77, 0.78, 0.71, 0.66, 0.6,
+      0.43, 0.78, 0.67, 0.79, 0.72, 0.61, 0.5, 0.28, 0.08, 0, 0, 0, 0.11, 0.46, 1, 0.99, 0.6, 0.51, 0.38, 0.13,
+      0.01, 0.14, 1, 0.81, 0.71, 0.43, 0.65, 0.4, 0.54, 0.55, 0.8, 0.52, 0.3, 0.05, 0, 0, 0, 0.46, 0.52, 1,
+      0.97, 0.62, 0.85, 0.89, 0.44, 0.31, 0.02, 0.8, 0.99, 1, 0.88, 0.41, 0.19, 0.15, 0.01, 0, 0, 0, 0.71, 0.8,
+      0.64, 0.39, 0.43, 0.72, 0.56, 0.55, 1, 0.4, 0.19, 0, 0.8, 0.61, 0.46, 0.5, 0.11, 0.49, 0.38, 0.12, 0.16,
+      0, 0, 0, 0.01, 0.98, 1, 0.41, 0.4, 0.25, 0.08, 1, 0.64, 0.28, 0.46, 0.37, 0.54, 0.4, 0.39, 0.42, 0.28,
+      0.1, 0, 0, 0, 0.14, 1, 0.55, 0.4, 0.67, 0.32, 0.12, 1, 0.55, 0.58, 0.66, 0.77, 0.8, 0.7, 0.65, 0.55,
+      0.88, 0.42, 0.54, 0.3, 0.46, 0.11, 0.03, 0, 0, 0, 0.78, 0.95, 1, 0.75, 0.02, 0.52, 0.72, 1, 0.91, 0.67,
+      0.89, 0.86, 0.55, 0.5, 0.97, 0.99, 0.5, 0.12, 0, 0, 0, 0.7, 1, 0.96, 0.48, 0.59, 0.39, 0.05, 0.76, 1,
+      0.57, 0.4, 0.06
+    ]
+  }
+}

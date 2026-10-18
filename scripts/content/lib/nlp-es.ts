@@ -12,7 +12,8 @@ const UNCOUNTABLE_POS = new Set<string>(['PUNCT', 'NUM', 'PROPN', 'SYM', 'INTJ',
 const SENTENCE_END = new Set(['.', '!', '?', '…', '¿', '¡']);
 
 /** «Como» es el verbo (yo como) o la conjunción (tan alto como tú): se decide por la palabra anterior. */
-const COMO_CONJUNCTION_AFTER = new Set(['tan', 'tanto', 'tanta', 'tantos', 'tantas', 'así', 'igual', 'tal']);
+const STREET_WORDS = new Set(['calle', 'avenida', 'plaza', 'paseo', 'camino', 'ronda', 'travesía']);
+const COMO_CONJUNCTION_AFTER =new Set(['tan', 'tanto', 'tanta', 'tantos', 'tantas', 'así', 'igual', 'tal']);
 
 export function tokenizeEs(
   rawText: string,
@@ -45,6 +46,9 @@ export function tokenizeEs(
           !COMO_CONJUNCTION_AFTER.has(wordBefore);
         lemma = verb ? 'comer' : 'como';
         pos = verb ? 'VERB' : 'SCONJ';
+      } else if (/^\p{Lu}/u.test(surface) && !sentenceStart && STREET_WORDS.has(previousWord)) {
+        // «la calle Mayor», «la plaza Real»: el nombre de la calle no cuenta como vocabulario.
+        pos = 'PROPN';
       } else if (
         /^\p{Lu}/u.test(surface) &&
         SPANISH_NAMES.has(lower) &&

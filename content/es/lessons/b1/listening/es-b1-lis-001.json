@@ -1,0 +1,587 @@
+{
+  "id": "es-b1-lis-001",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u02",
+  "series": "es-b1-u02-entrevista",
+  "skill": "listening",
+  "genre": "interview",
+  "title": "Una entrevista de trabajo",
+  "summary_es": {
+    "en": "A candidate answers questions about his experience, his strengths and when he could start.",
+    "fr": "Un candidat répond à des questions sur son expérience, ses points forts et sa date de début possible.",
+    "zh": "一位应聘者回答关于他的经历、优点和何时能入职的问题。",
+    "ja": "応募者が、経験や強み、いつから働けるかについての質問に答えます。"
+  },
+  "topic": "work-tech",
+  "tags": ["trabajo", "entrevista", "condicional"],
+  "can_do": ["L-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["experiencia", "equipo", "punto fuerte", "incorporarse"],
+  "est_minutes": 10,
+  "prediction_prompt": "En una entrevista de trabajo, ¿qué preguntas hacen siempre?",
+  "pre_teach": ["punto fuerte", "incorporarse"],
+  "speakers": [
+    { "id": "ortega", "name": "Sra. Ortega", "accent": "es-ES", "gender": "female" },
+    { "id": "alvaro", "name": "Álvaro", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "ortega",
+      "text": "Buenos días, Álvaro. Siéntate, por favor. Gracias por venir.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.563 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 0.563, "e": 0.958 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Álvaro", "l": "álvaro", "p": "PROPN", "w": false, "s": 0.957, "e": 1.51 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Siéntate", "l": "sentarse", "p": "VERB", "w": true, "s": 1.51, "e": 2.22 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 2.22, "e": 2.536 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 2.536, "e": 3.01 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 3.009, "e": 3.64 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 3.641, "e": 3.957 },
+        { "t": "venir", "l": "venir", "p": "VERB", "w": true, "s": 3.956, "e": 4.43 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 4.534
+    },
+    {
+      "id": "s2",
+      "speaker": "alvaro",
+      "text": "Buenos días. Gracias a usted por recibirme.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 4.944, "e": 5.487 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 5.487, "e": 5.875 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 6.104, "e": 6.629 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 6.629, "e": 6.76 },
+        { "t": "usted", "l": "usted", "p": "PRON", "w": true, "sp": true, "s": 6.761, "e": 7.155 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 7.155, "e": 7.418 },
+        { "t": "recibirme", "l": "recibir", "p": "VERB", "w": true, "s": 7.417, "e": 8.074 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.934,
+      "end": 8.161
+    },
+    {
+      "id": "s3",
+      "speaker": "ortega",
+      "text": "Vamos a empezar. ¿Puedes hablarme un poco de tu experiencia?",
+      "tokens": [
+        { "t": "Vamos", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 8.561, "e": 8.947 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 8.947, "e": 9.076 },
+        { "t": "empezar", "l": "empezar", "p": "VERB", "w": true, "s": 9.076, "e": 9.591 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Puedes", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 9.871, "e": 10.278 },
+        { "t": "hablarme", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 10.278, "e": 10.801 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 10.801, "e": 10.975 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 10.975, "e": 11.265 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 11.265, "e": 11.439 },
+        { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true, "s": 11.44, "e": 11.614 },
+        { "t": "experiencia", "l": "experiencia", "p": "NOUN", "w": true, "s": 11.614, "e": 12.311 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.561,
+      "end": 12.396
+    },
+    {
+      "id": "s4",
+      "speaker": "alvaro",
+      "text": "Claro. Trabajé tres años en una empresa de informática, donde me encargaba de atender a los clientes.",
+      "tokens": [
+        { "t": "Claro", "l": "claro", "p": "ADJ", "w": true, "s": 12.806, "e": 13.156 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Trabajé", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 13.416, "e": 13.918 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 13.918, "e": 14.232 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 14.231, "e": 14.545 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 14.545, "e": 14.733 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 14.733, "e": 14.984 },
+        { "t": "empresa", "l": "empresa", "p": "NOUN", "w": true, "sp": true, "s": 14.984, "e": 15.486 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 15.485, "e": 15.673 },
+        { "t": "informática", "l": "informática", "p": "NOUN", "w": true, "s": 15.674, "e": 16.427 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true, "s": 16.586, "e": 16.935 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 16.935, "e": 17.11 },
+        { "t": "encargaba", "l": "encargarse", "p": "VERB", "w": true, "sp": true, "s": 17.11, "e": 17.692 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 17.692, "e": 17.867 },
+        { "t": "atender", "l": "atender", "p": "VERB", "w": true, "sp": true, "s": 17.867, "e": 18.333 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 18.333, "e": 18.449 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 18.449, "e": 18.682 },
+        { "t": "clientes", "l": "cliente", "p": "NOUN", "w": true, "s": 18.682, "e": 19.206 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.796,
+      "end": 19.265
+    },
+    {
+      "id": "s5",
+      "speaker": "ortega",
+      "text": "¿Y por qué quieres cambiar de trabajo?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 19.675, "e": 19.794 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 19.794, "e": 20.032 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 20.032, "e": 20.27 },
+        { "t": "quieres", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 20.27, "e": 20.746 },
+        { "t": "cambiar", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 20.745, "e": 21.221 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 21.221, "e": 21.399 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "s": 21.399, "e": 21.875 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.665,
+      "end": 21.919
+    },
+    {
+      "id": "s6",
+      "speaker": "alvaro",
+      "text": "Porque me gustaría aprender cosas nuevas y trabajar en un equipo más grande.",
+      "tokens": [
+        { "t": "Porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 22.329, "e": 22.73 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 22.73, "e": 22.902 },
+        { "t": "gustaría", "l": "gustar", "p": "VERB", "w": true, "sp": true, "s": 22.901, "e": 23.416 },
+        { "t": "aprender", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 23.417, "e": 23.932 },
+        { "t": "cosas", "l": "cosa", "p": "NOUN", "w": true, "sp": true, "s": 23.932, "e": 24.275 },
+        { "t": "nuevas", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 24.275, "e": 24.676 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 24.676, "e": 24.79 },
+        { "t": "trabajar", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 24.79, "e": 25.305 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 25.305, "e": 25.477 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 25.477, "e": 25.649 },
+        { "t": "equipo", "l": "equipo", "p": "NOUN", "w": true, "sp": true, "s": 25.649, "e": 26.05 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 26.049, "e": 26.278 },
+        { "t": "grande", "l": "grande", "p": "ADJ", "w": true, "s": 26.278, "e": 26.679 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.319,
+      "end": 26.814
+    },
+    {
+      "id": "s7",
+      "speaker": "alvaro",
+      "text": "En mi empresa anterior casi no tenía oportunidades de crecer.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 27.074, "e": 27.253 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 27.253, "e": 27.432 },
+        { "t": "empresa", "l": "empresa", "p": "NOUN", "w": true, "sp": true, "s": 27.431, "e": 27.907 },
+        { "t": "anterior", "l": "anterior", "p": "ADJ", "w": true, "sp": true, "s": 27.907, "e": 28.443 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 28.443, "e": 28.741 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 28.74, "e": 28.919 },
+        { "t": "tenía", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 28.919, "e": 29.276 },
+        {
+          "t": "oportunidades",
+          "l": "oportunidad",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 29.276,
+          "e": 30.109
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 30.109, "e": 30.288 },
+        { "t": "crecer", "l": "crecer", "p": "VERB", "w": true, "s": 30.287, "e": 30.704 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 27.064,
+      "end": 30.809
+    },
+    {
+      "id": "s8",
+      "speaker": "ortega",
+      "text": "Entiendo. ¿Cuáles dirías que son tus mayores puntos fuertes?",
+      "tokens": [
+        { "t": "Entiendo", "l": "entender", "p": "VERB", "w": true, "s": 31.219, "e": 31.819 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuáles", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 32.109, "e": 32.546 },
+        { "t": "dirías", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 32.546, "e": 32.983 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 32.983, "e": 33.233 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 33.233, "e": 33.483 },
+        { "t": "tus", "l": "tu", "p": "DET", "w": true, "sp": true, "s": 33.483, "e": 33.733 },
+        { "t": "mayores", "l": "mayor", "p": "ADJ", "w": true, "sp": true, "s": 33.733, "e": 34.233 },
+        { "t": "puntos", "l": "punto", "p": "NOUN", "w": true, "sp": true, "s": 34.232, "e": 34.669 },
+        { "t": "fuertes", "l": "fuerte", "p": "ADJ", "w": true, "s": 34.669, "e": 35.169 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.209,
+      "end": 35.224
+    },
+    {
+      "id": "s9",
+      "speaker": "alvaro",
+      "text": "Soy muy organizado y me gusta resolver problemas. Además, hablo inglés con bastante fluidez.",
+      "tokens": [
+        { "t": "Soy", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 35.644, "e": 35.914 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 35.914, "e": 36.184 },
+        { "t": "organizado", "l": "organizado", "p": "ADJ", "w": true, "sp": true, "s": 36.184, "e": 36.927 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 36.927, "e": 37.062 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 37.063, "e": 37.266 },
+        { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true, "s": 37.265, "e": 37.67 },
+        { "t": "resolver", "l": "resolver", "p": "VERB", "w": true, "sp": true, "s": 37.671, "e": 38.279 },
+        { "t": "problemas", "l": "problema", "p": "NOUN", "w": true, "s": 38.278, "e": 38.954 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Además", "l": "además", "p": "ADV", "w": true, "s": 39.194, "e": 39.804 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "hablo", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 40.004, "e": 40.36 },
+        { "t": "inglés", "l": "inglés", "p": "ADJ", "w": true, "sp": true, "s": 40.36, "e": 40.776 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 40.776, "e": 41.014 },
+        { "t": "bastante", "l": "bastante", "p": "ADV", "w": true, "sp": true, "s": 41.014, "e": 41.549 },
+        { "t": "fluidez", "l": "fluidez", "p": "NOUN", "w": true, "s": 41.549, "e": 42.024 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.624,
+      "end": 42.133
+    },
+    {
+      "id": "s10",
+      "speaker": "ortega",
+      "text": "Perfecto. Y, ¿tienes algún punto débil?",
+      "tokens": [
+        { "t": "Perfecto", "l": "perfecto", "p": "ADJ", "w": true, "s": 42.543, "e": 43.193 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "s": 43.193, "e": 43.337 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "tienes", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 43.337, "e": 43.843 },
+        { "t": "algún", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 43.843, "e": 44.276 },
+        { "t": "punto", "l": "punto", "p": "NOUN", "w": true, "sp": true, "s": 44.276, "e": 44.709 },
+        { "t": "débil", "l": "débil", "p": "ADJ", "w": true, "s": 44.71, "e": 45.143 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 42.533,
+      "end": 45.245
+    },
+    {
+      "id": "s11",
+      "speaker": "alvaro",
+      "text": "A veces me cuesta decir que no cuando mis compañeros me piden ayuda, y por eso termino trabajando más horas.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 45.655, "e": 45.774 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 45.774, "e": 46.131 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 46.131, "e": 46.31 },
+        { "t": "cuesta", "l": "costar", "p": "VERB", "w": true, "sp": true, "s": 46.31, "e": 46.727 },
+        { "t": "decir", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 46.727, "e": 47.084 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 47.084, "e": 47.322 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 47.323, "e": 47.502 },
+        { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 47.501, "e": 47.918 },
+        { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 47.918, "e": 48.156 },
+        { "t": "compañeros", "l": "compañero", "p": "NOUN", "w": true, "sp": true, "s": 48.156, "e": 48.811 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 48.812, "e": 48.991 },
+        { "t": "piden", "l": "pedir", "p": "VERB", "w": true, "sp": true, "s": 48.99, "e": 49.347 },
+        { "t": "ayuda", "l": "ayudar", "p": "VERB", "w": true, "s": 49.348, "e": 49.705 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 49.925, "e": 50.053 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 50.053, "e": 50.308 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 50.308, "e": 50.563 },
+        { "t": "termino", "l": "terminar", "p": "VERB", "w": true, "sp": true, "s": 50.563, "e": 51.074 },
+        { "t": "trabajando", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 51.074, "e": 51.776 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 51.777, "e": 52.032 },
+        { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "s": 52.032, "e": 52.415 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 45.645,
+      "end": 52.495
+    },
+    {
+      "id": "s12",
+      "speaker": "ortega",
+      "text": "Es bueno saberlo. Ahora, ¿cuándo podrías empezar si te elegimos?",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 52.905, "e": 53.109 },
+        { "t": "bueno", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 53.109, "e": 53.517 },
+        { "t": "saberlo", "l": "saber", "p": "VERB", "w": true, "s": 53.517, "e": 54.061 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "s": 54.062, "e": 54.47 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "cuándo", "l": "cuándo", "p": "ADV", "w": true, "sp": true, "s": 54.47, "e": 54.946 },
+        { "t": "podrías", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 54.946, "e": 55.49 },
+        { "t": "empezar", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 55.49, "e": 56.034 },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 56.035, "e": 56.239 },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 56.239, "e": 56.443 },
+        { "t": "elegimos", "l": "elegir", "p": "VERB", "w": true, "s": 56.443, "e": 57.055 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 52.895,
+      "end": 57.141
+    },
+    {
+      "id": "s13",
+      "speaker": "alvaro",
+      "text": "Podría incorporarme dentro de dos semanas, después de avisar en mi empresa actual.",
+      "tokens": [
+        { "t": "Podría", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 57.551, "e": 57.988 },
+        {
+          "t": "incorporarme",
+          "l": "incorporarse",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 57.988,
+          "e": 58.8
+        },
+        { "t": "dentro", "l": "dentro", "p": "ADV", "w": true, "sp": true, "s": 58.8, "e": 59.237 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 59.238, "e": 59.425 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 59.425, "e": 59.675 },
+        { "t": "semanas", "l": "semana", "p": "NOUN", "w": true, "s": 59.675, "e": 60.175 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true, "s": 60.175, "e": 60.675 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 60.674, "e": 60.861 },
+        { "t": "avisar", "l": "avisar", "p": "VERB", "w": true, "sp": true, "s": 60.862, "e": 61.299 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 61.299, "e": 61.486 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 61.487, "e": 61.674 },
+        { "t": "empresa", "l": "empresa", "p": "NOUN", "w": true, "sp": true, "s": 61.674, "e": 62.174 },
+        { "t": "actual", "l": "actual", "p": "ADJ", "w": true, "s": 62.174, "e": 62.611 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 57.541,
+      "end": 62.668
+    },
+    {
+      "id": "s14",
+      "speaker": "ortega",
+      "text": "Muy bien. Hablaremos con los demás candidatos y te llamaremos esta semana.",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 63.078, "e": 63.349 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 63.349, "e": 63.688 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hablaremos", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 63.958, "e": 64.64 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 64.64, "e": 64.888 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 64.888, "e": 65.136 },
+        { "t": "demás", "l": "demás", "p": "PRON", "w": true, "sp": true, "s": 65.137, "e": 65.509 },
+        { "t": "candidatos", "l": "candidato", "p": "NOUN", "w": true, "sp": true, "s": 65.509, "e": 66.191 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 66.191, "e": 66.315 },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 66.315, "e": 66.501 },
+        { "t": "llamaremos", "l": "llamarse", "p": "VERB", "w": true, "sp": true, "s": 66.501, "e": 67.183 },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 67.184, "e": 67.494 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "s": 67.494, "e": 67.928 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 63.068,
+      "end": 68.005
+    },
+    {
+      "id": "s15",
+      "speaker": "alvaro",
+      "text": "Muchas gracias. Espero su llamada.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 68.415, "e": 68.942 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 68.942, "e": 69.545 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Espero", "l": "esperar", "p": "VERB", "w": true, "sp": true, "s": 69.785, "e": 70.224 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 70.224, "e": 70.412 },
+        { "t": "llamada", "l": "llamarse", "p": "VERB", "w": true, "s": 70.413, "e": 70.915 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 68.405,
+      "end": 71.023
+    },
+    {
+      "id": "s16",
+      "speaker": "ortega",
+      "text": "Gracias a ti. Hasta pronto, Álvaro.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 71.433, "e": 72.058 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 72.058, "e": 72.214 },
+        { "t": "ti", "l": "tú", "p": "PRON", "w": true, "s": 72.215, "e": 72.45 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 72.449, "e": 72.918 },
+        { "t": "pronto", "l": "pronto", "p": "ADV", "w": true, "s": 72.918, "e": 73.465 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Álvaro", "l": "álvaro", "p": "PROPN", "w": false, "s": 73.466, "e": 74.013 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 71.423,
+      "end": 74.055
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "punto fuerte",
+      "surface": "puntos fuertes",
+      "pos": "phrase",
+      "def_en": "cosa que haces muy bien",
+      "def_es": { "en": "strength", "fr": "point fort", "zh": "优点", "ja": "強み" },
+      "ref": "s8"
+    },
+    {
+      "lemma": "incorporarse",
+      "surface": "incorporarme",
+      "pos": "verb",
+      "def_en": "empezar a trabajar en un nuevo lugar",
+      "def_es": { "en": "to join, to start (a job)", "fr": "prendre ses fonctions", "zh": "入职", "ja": "着任する" },
+      "ref": "s13"
+    },
+    {
+      "lemma": "fluidez",
+      "surface": "fluidez",
+      "pos": "noun",
+      "def_en": "capacidad de hablar sin pararse",
+      "def_es": { "en": "fluency", "fr": "aisance, fluidité", "zh": "流利", "ja": "流暢さ" },
+      "ref": "s9"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué tipo de conversación es?",
+      "evidence": ["s3", "s5"],
+      "rationale_es": {
+        "en": "She asks about his experience, why he wants to change jobs and his strengths: it is a job interview."
+      },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una charla informal entre dos amigos de la universidad" },
+        { "id": "b", "text": "Una entrevista para un puesto de trabajo" },
+        { "id": "c", "text": "Una clase de informática para principiantes" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Dónde trabajaba Álvaro antes?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "*Trabajé tres años en una empresa de informática*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En una escuela de idiomas del centro" },
+        { "id": "b", "text": "En un hospital muy grande de la ciudad" },
+        { "id": "c", "text": "En una empresa de informática" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué quiere cambiar de trabajo?",
+      "evidence": ["s6"],
+      "rationale_es": {
+        "en": "He wants to learn new things and work in a bigger team: *casi no tenía oportunidades de crecer*."
+      },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque busca más posibilidades de desarrollo" },
+        { "id": "b", "text": "Porque cobraba poco en su trabajo anterior" },
+        { "id": "c", "text": "Porque no se llevaba bien con sus compañeros" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Álvaro habla inglés con bastante fluidez.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "*Hablo inglés con bastante fluidez*." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué punto débil reconoce Álvaro?",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "*Me cuesta decir que no*: he finds it hard to refuse, and ends up working more hours." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Llega siempre tarde a las reuniones del equipo" },
+        { "id": "b", "text": "Le cuesta decir que no" },
+        { "id": "c", "text": "No sabe trabajar en grupo con otras personas" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "*Podría incorporarme dentro de dos semanas*." },
+      "type": "gap_fill",
+      "text": "Álvaro podría incorporarse dentro de dos {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["semanas"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué va a pasar ahora?",
+      "evidence": ["s14"],
+      "rationale_es": { "en": "*Te llamaremos esta semana*: they will call him this week." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Va a empezar a trabajar mañana mismo" },
+        { "id": "b", "text": "Tiene que hacer otro examen escrito" },
+        { "id": "c", "text": "Le van a llamar esta semana" }
+      ],
+      "answer": "c"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "actual", "además", "ahora", "algún", "anterior", "aprender", "atender", "avisar", "ayudar", "año",
+    "bastante", "bien", "bueno", "cambiar", "candidato", "casi", "claro", "cliente", "compañero", "con",
+    "cosa", "costar", "crecer", "cuando", "cuándo", "de", "decir", "demás", "dentro", "después", "donde",
+    "débil", "día", "el", "elegir", "empezar", "empresa", "en", "encargarse", "entender", "equipo", "esperar",
+    "este", "esto", "experiencia", "favor", "fluidez", "fuerte", "grande", "gustar", "hablar", "hasta", "hora",
+    "incorporarse", "informática", "inglés", "ir", "llamarse", "mayor", "mi", "mucho", "muy", "más", "no",
+    "nuevo", "oportunidad", "organizado", "pedir", "perfecto", "poco", "poder", "por", "porque", "problema",
+    "pronto", "punto", "que", "querer", "qué", "recibir", "resolver", "saber", "semana", "sentarse", "ser",
+    "si", "su", "tener", "terminar", "trabajar", "tu", "tú", "un", "usted", "venir", "vez", "y", "yo"
+  ],
+  "difficulty": 1072,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7, "A2": 0.775, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 6,
+    "flesch_reading_ease": 78.6,
+    "checked_at": "2026-10-18T20:27:53.977Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-001/v1.m4a",
+    "duration_s": 74.055,
+    "wpm": 136,
+    "provider": "piper",
+    "voices": { "ortega": "sharvard-f", "alvaro": "sharvard-m" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.85, 0.72, 0.66, 0.25, 0.91, 1, 0.95, 0.99, 0.52, 0.78, 1, 0.57, 0.6, 0.38, 0.01, 1, 0.63, 0.41,
+      0.07, 1, 0.36, 0.42, 0.56, 0.5, 0.43, 0.05, 0.89, 1, 0.69, 0.53, 0.04, 1, 0.63, 0.72, 0.73, 0.69, 0.31,
+      0.42, 0.19, 0.02, 1, 0.87, 1, 0.61, 0.51, 0.49, 0.27, 0.52, 0.38, 0.54, 0.57, 0.36, 0.32, 0.35, 0.61,
+      0.68, 0.56, 0.35, 0.43, 0.46, 0.14, 0.07, 0.36, 0.72, 0.6, 1, 0.68, 0.74, 0.86, 0.19, 0, 0.74, 0.52,
+      0.53, 0.69, 0.46, 0.7, 0.4, 0.62, 0.27, 0.83, 1, 0.74, 0.76, 0.58, 0.09, 0.51, 0.54, 0.75, 0.99, 0.87, 1,
+      0.81, 0.73, 0.8, 0.41, 0.81, 0.47, 0.56, 0, 0.72, 1, 0.13, 1, 0.65, 0.61, 0.45, 0.54, 0.88, 0.75, 0.71,
+      0.67, 0.15, 0.02, 0.35, 1, 0.81, 0.76, 0.66, 0.5, 0.68, 0.44, 0.69, 0.5, 0.38, 0.06, 0.95, 0.67, 1, 0.67,
+      0.77, 0.6, 0.91, 0.59, 0.41, 0.05, 0.87, 1, 0.44, 0.13, 1, 0.77, 0.7, 0.86, 0.79, 0.15, 0.67, 1, 0.55,
+      0.94, 0.39, 0.6, 0.61, 0.71, 0.33, 0.69, 0.63, 0.72, 0.69, 0.46, 0.39, 0.66, 0.58, 0.58, 0.62, 0.84,
+      0.86, 0.78, 0.22, 0.01, 0.58, 1, 0.76, 0.2, 0.68, 0.78, 1, 0.72, 0.87, 0.56, 0.79, 0.72, 0.38, 0.23,
+      0.02, 0.73, 0.67, 0.34, 1, 0.89, 0.49, 0.59, 0.55, 0.81, 0.41, 0.48, 0.82, 0.79, 0.5, 0.63, 0.66, 0.66,
+      0, 1, 0.81, 0.39, 1, 0.96, 0.52, 0.63, 0.63, 0.74, 0.81, 0.61, 0.61, 0.68, 0.64, 0.71, 0.58, 0.09, 0.29,
+      0.67, 1, 0.35, 0.1, 0.39, 1, 0.86, 0.59, 0.01, 1, 0.77, 0.42, 0.27, 0.65, 1, 0.74, 0.81, 0.49
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "es-b2-wri-001",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "task_type": "essay",
+  "title": "¿Teletrabajo o oficina?",
+  "topic": "work-tech",
+  "context_es": {
+    "en": "Your course asks for an essay on remote work versus the office. You give your opinion and weigh both sides.",
+    "fr": "Votre cours demande un essai sur le télétravail et le bureau. Vous donnez votre avis en pesant les deux options.",
+    "zh": "课程要求你写一篇关于远程办公与办公室办公的议论文。你要表达观点并权衡两方面。",
+    "ja": "授業で、在宅勤務とオフィス勤務についてのエッセイが課されました。両方の面を比べながら意見を述べます。"
+  },
+  "prompt_en": "Escribe un ensayo sobre el teletrabajo: ¿es mejor trabajar desde casa o en la oficina? Presenta ventajas y desventajas y defiende tu opinión.",
+  "points": [
+    "ventajas del teletrabajo",
+    "desventajas o riesgos",
+    "tu opinión y una propuesta"
+  ],
+  "words_min": 140,
+  "words_max": 240,
+  "time_min": 40,
+  "useful_language": [
+    "En primer lugar, …",
+    "Por una parte … por otra parte …",
+    "Sin embargo, …",
+    "A mi juicio, …",
+    "Si pudiera elegir, …",
+    "En conclusión, …"
+  ],
+  "tips_es": [
+    {
+      "en": "Use the conditional for opinions about hypothetical situations: *Si pudiera elegir, trabajaría tres días en casa.*",
+      "fr": "Utilisez le conditionnel pour les opinions sur des situations hypothétiques : *Si pudiera elegir, trabajaría tres días en casa.*",
+      "zh": "对假设情况发表看法时用条件式：*Si pudiera elegir, trabajaría tres días en casa.*",
+      "ja": "仮定の状況についての意見には条件法を使います：*Si pudiera elegir, trabajaría tres días en casa.*"
+    },
+    {
+      "en": "Structure the essay in four parts: introduction, advantages, disadvantages and conclusion with your opinion.",
+      "fr": "Structurez l’essai en quatre parties : introduction, avantages, inconvénients et conclusion avec votre opinion.",
+      "zh": "文章分四部分：引言、优点、缺点，以及带有你观点的结论。",
+      "ja": "導入・利点・欠点・意見を含む結論の四部構成にします。"
+    }
+  ],
+  "model_answer": "Desde que muchas empresas descubrieron que sus empleados podían trabajar desde casa, el debate sobre el teletrabajo no ha dejado de crecer. En mi opinión, ninguna de las dos opciones es perfecta.\n\nEn primer lugar, trabajar en casa tiene ventajas claras. Se ahorra el tiempo de transporte, se gana flexibilidad y mucha gente puede cuidar mejor de su familia. Además, las empresas reducen los gastos de alquiler.\n\nSin embargo, también hay riesgos. Algunos trabajadores se sienten solos y pierden el contacto con sus compañeros. Por otra parte, resulta difícil separar la vida personal del trabajo, y muchas personas acaban trabajando más horas que antes.\n\nA mi juicio, lo ideal sería combinar las dos formas. Si pudiera elegir, trabajaría tres días en casa y dos en la oficina, para reunirme con el equipo y mantener las relaciones. En conclusión, el éxito depende de que cada empresa escuche a su plantilla y organice el trabajo con sentido común.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

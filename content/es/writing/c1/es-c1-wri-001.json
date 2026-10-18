@@ -1,0 +1,53 @@
+{
+  "id": "es-c1-wri-001",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "task_type": "essay",
+  "title": "¿Puede la tecnología mejorar la educación?",
+  "topic": "education",
+  "context_es": {
+    "en": "A university magazine invites students to write an argumentative essay on technology in education.",
+    "fr": "Une revue universitaire invite les étudiants à écrire un essai argumentatif sur la technologie dans l’éducation.",
+    "zh": "一本大学杂志邀请学生撰写关于教育中科技作用的议论文。",
+    "ja": "大学の雑誌が、教育におけるテクノロジーについての論述エッセイを学生に募集しています。"
+  },
+  "prompt_en": "Una revista universitaria te invita a escribir un ensayo argumentativo: ¿puede la tecnología mejorar de verdad la educación? Plantea el debate, defiende una postura matizada y concluye con una propuesta.",
+  "points": [
+    "presenta el debate con una idea clara",
+    "analiza ventajas y limitaciones con ejemplos",
+    "defiende tu postura y propón una medida concreta"
+  ],
+  "words_min": 220,
+  "words_max": 320,
+  "time_min": 60,
+  "useful_language": [
+    "Cabe preguntarse si …",
+    "Si bien …, …",
+    "A pesar de que …",
+    "No obstante, …",
+    "Por consiguiente, …",
+    "Con el fin de que …"
+  ],
+  "tips_es": [
+    {
+      "en": "Use concessive connectors to show nuance: *si bien…, aunque…, a pesar de que…*; remember the indicative for facts and the subjunctive for hypotheses.",
+      "fr": "Utilisez des connecteurs concessifs pour nuancer : *si bien…, aunque…, a pesar de que…* ; indicatif pour les faits, subjonctif pour les hypothèses.",
+      "zh": "用让步连接词表达细微差别：*si bien…, aunque…, a pesar de que…*；事实用直陈式，假设用虚拟式。",
+      "ja": "譲歩の接続詞で微妙な差を示します：*si bien…, aunque…, a pesar de que…*。事実は直説法、仮定は接続法。"
+    },
+    {
+      "en": "Close with a concrete proposal that uses *para que* + subjunctive, not just a general conclusion.",
+      "fr": "Terminez par une proposition concrète avec *para que* + subjonctif, et pas seulement une conclusion générale.",
+      "zh": "结尾要有具体建议，并使用 *para que* + 虚拟式，而不只是笼统的结论。",
+      "ja": "一般的な結論だけでなく、*para que* + 接続法を使った具体的な提案で締めくくります。"
+    }
+  ],
+  "model_answer": "Cabe preguntarse si la tecnología, que ha entrado en las aulas con tanta rapidez, está mejorando realmente la educación o solo la está haciendo más vistosa. La respuesta, a mi juicio, depende menos de las herramientas que del uso que se haga de ellas.\n\nEs innegable que las pantallas ofrecen ventajas. Permiten acceder a recursos que hace unos años habrían sido impensables, como bibliotecas digitales, conferencias de expertos o simuladores científicos. Además, facilitan que cada alumno avance a su propio ritmo, algo muy difícil en un grupo de treinta personas.\n\nSin embargo, conviene no idealizar estas posibilidades. A pesar de que los estudiantes pasan muchas horas conectados, numerosos estudios indican que la comprensión lectora y la capacidad de concentración no mejoran, e incluso empeoran, cuando la tecnología sustituye a la atención del profesor. Por muy atractiva que sea una aplicación, no reemplaza la conversación ni la guía de un buen docente. Un profesor atento percibe dudas y desánimos que ningún programa es capaz de detectar.\n\nPor consiguiente, la cuestión no es cuánta tecnología utilizamos, sino con qué objetivo. Es, por tanto, un asunto de criterio pedagógico más que de presupuesto. Propongo que los centros definan con claridad para qué se emplea cada herramienta y que formen a los profesores con el fin de que puedan evaluar su eficacia. Así, aunque la tecnología no resuelva por sí sola los problemas educativos, podrá convertirse en una aliada valiosa.",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

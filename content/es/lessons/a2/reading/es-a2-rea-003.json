@@ -1,0 +1,519 @@
+{
+  "id": "es-a2-rea-003",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u04",
+  "series": "es-a2-u04-salud",
+  "skill": "reading",
+  "genre": "story",
+  "title": "Una visita al médico",
+  "summary_es": {
+    "en": "A man tells how he went to the doctor because he was ill.",
+    "fr": "Un homme raconte comment il est allé chez le médecin parce qu’il était malade.",
+    "zh": "一个男人讲述他生病后去看医生的经过。",
+    "ja": "病気になって医者に行った男性が、そのときのことを話します。"
+  },
+  "topic": "health",
+  "tags": ["salud", "médico", "pasado"],
+  "can_do": ["R-A2-01"],
+  "grammar_focus": ["es.a2.preterito-indefinido"],
+  "vocab_focus": ["fiebre", "garganta", "cita", "pastilla"],
+  "est_minutes": 9,
+  "prediction_prompt": "¿Qué le pasa a una persona que va al médico?",
+  "pre_teach": ["resfriado", "fiebre"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Ayer me desperté con dolor de cabeza y de garganta.",
+          "tokens": [
+            { "t": "Ayer", "l": "ayer", "p": "ADV", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "desperté", "l": "despertarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "dolor", "l": "dolor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cabeza", "l": "cabeza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "garganta", "l": "garganta", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "También tenía mucho frío y me sentía cansado.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "tenía", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "frío", "l": "frío", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "sentía", "l": "sentir", "p": "VERB", "w": true, "sp": true },
+            { "t": "cansado", "l": "cansado", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Por eso llamé al centro de salud y pedí una cita.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true },
+            { "t": "llamé", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "centro", "l": "centro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "salud", "l": "salud", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "pedí", "l": "pedir", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cita", "l": "cita", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "Por la mañana no pude desayunar nada.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "pude", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "desayunar", "l": "desayunar", "p": "VERB", "w": true, "sp": true },
+            { "t": "nada", "l": "algo", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s5",
+          "text": "La recepcionista me dio hora para las cinco de la tarde.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "recepcionista", "l": "recepcionista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "dio", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Cuando llegué, había poca gente en la sala.",
+          "tokens": [
+            { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "llegué", "l": "llegar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "poca", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sala", "l": "sala", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Esperé diez minutos y entonces entré en la consulta.",
+          "tokens": [
+            { "t": "Esperé", "l": "esperar", "p": "VERB", "w": true, "sp": true },
+            { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true },
+            { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true },
+            { "t": "entré", "l": "entrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "consulta", "l": "consulta", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "La doctora se llama Elena y es muy amable.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "doctora", "l": "doctor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "llama", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "Elena", "l": "elena", "p": "PROPN", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "amable", "l": "amable", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Había unas revistas, pero no tenía ganas de leer.",
+          "tokens": [
+            { "t": "Había", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "unas", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "revistas", "l": "revista", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "tenía", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "ganas", "l": "ganas", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "leer", "l": "leer", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s5",
+          "text": "Me hizo muchas preguntas sobre mis síntomas.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "hizo", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "preguntas", "l": "pregunta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "síntomas", "l": "síntoma", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Me miró la garganta y me tomó la temperatura.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "miró", "l": "mirar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "garganta", "l": "garganta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "tomó", "l": "tomar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "temperatura", "l": "temperatura", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Tenía treinta y ocho grados de fiebre.",
+          "tokens": [
+            { "t": "Tenía", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "grados", "l": "grado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "fiebre", "l": "fiebre", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Dijo que no era nada grave: solo un resfriado.",
+          "tokens": [
+            { "t": "Dijo", "l": "decir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "era", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "nada", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "grave", "l": "grave", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "resfriado", "l": "resfriado", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Me recetó unas pastillas y me recomendó descansar.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "recetó", "l": "recetar", "p": "VERB", "w": true, "sp": true },
+            { "t": "unas", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pastillas", "l": "pastilla", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "recomendó", "l": "recomendar", "p": "VERB", "w": true, "sp": true },
+            { "t": "descansar", "l": "descansar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s5",
+          "text": "Me dijo que todo iba a salir bien.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "dijo", "l": "decir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "iba", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "salir", "l": "salir", "p": "VERB", "w": true, "sp": true },
+            { "t": "bien", "l": "bien", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Tengo que tomar una pastilla cada ocho horas.",
+          "tokens": [
+            { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "tomar", "l": "tomar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pastilla", "l": "pastilla", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "horas", "l": "hora", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "También debo beber mucha agua y comer fruta.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "debo", "l": "deber", "p": "VERB", "w": true, "sp": true },
+            { "t": "beber", "l": "beber", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucha", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "agua", "l": "agua", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "comer", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "fruta", "l": "fruta", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "No puedo ir a trabajar hasta el lunes.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "puedo", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "trabajar", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "lunes", "l": "lunes", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Hoy me siento un poco mejor, pero todavía estoy en la cama.",
+          "tokens": [
+            { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "siento", "l": "sentir", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "todavía", "l": "todavía", "p": "ADV", "w": true, "sp": true },
+            { "t": "estoy", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cama", "l": "cama", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Past: indefinido and imperfecto",
+        "fr": "Passé : indefinido et imperfecto",
+        "zh": "过去时：indefinido 与 imperfecto",
+        "ja": "過去：点過去と線過去"
+      },
+      "explanation_es": {
+        "en": "The *indefinido* tells what happened (*llamé*, *esperé*, *entré*). The *imperfecto* describes how things were (*tenía frío*, *me sentía cansado*, *había poca gente*)."
+      },
+      "refs": ["p1s3", "p1s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "resfriado",
+      "surface": "resfriado",
+      "pos": "noun",
+      "def_en": "enfermedad leve con tos y mocos",
+      "def_es": { "en": "cold (illness)", "fr": "rhume", "zh": "感冒", "ja": "風邪" },
+      "ref": "p3s3"
+    },
+    {
+      "lemma": "fiebre",
+      "surface": "fiebre",
+      "pos": "noun",
+      "def_en": "temperatura alta del cuerpo",
+      "def_es": { "en": "fever", "fr": "fièvre", "zh": "发烧", "ja": "熱" },
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "recetar",
+      "surface": "recetó",
+      "pos": "verb",
+      "def_en": "escribir qué medicina debe tomar el enfermo",
+      "def_es": { "en": "to prescribe", "fr": "prescrire", "zh": "开药方", "ja": "処方する" },
+      "ref": "p3s4"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Qué cuenta el texto?",
+      "evidence": ["p1s3", "p2s3"],
+      "rationale_es": { "en": "It tells how he felt ill, called the health centre and saw the doctor." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una visita al médico" },
+        { "id": "b", "text": "Un viaje en tren" },
+        { "id": "c", "text": "Una fiesta con amigos" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuándo era la cita?",
+      "evidence": ["p1s5"],
+      "rationale_es": { "en": "*Me dio hora para las cinco de la tarde*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "A las cinco de la tarde" },
+        { "id": "b", "text": "A las cinco de la mañana" },
+        { "id": "c", "text": "A las seis de la tarde" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Había mucha gente en la sala de espera.",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "*Había poca gente*: there were few people." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuántos grados de fiebre tenía?",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "*Treinta y ocho grados de fiebre*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Treinta y siete" },
+        { "id": "b", "text": "Treinta y ocho" },
+        { "id": "c", "text": "Treinta y nueve" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Cómo se siente el paciente con la doctora?",
+      "evidence": ["p2s3", "p2s5"],
+      "rationale_es": { "en": "He says she is *muy amable* and asked many questions: he felt well looked after." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Se siente mal atendido" },
+        { "id": "b", "text": "Se siente bien atendido" },
+        { "id": "c", "text": "Tiene miedo de ella" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Puede volver al trabajo mañana.",
+      "evidence": ["p4s3"],
+      "rationale_es": { "en": "*No puedo ir a trabajar hasta el lunes*: he has to rest until Monday." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p4s1"],
+      "rationale_es": { "en": "*Una pastilla cada ocho horas*: one pill every eight hours." },
+      "type": "gap_fill",
+      "text": "Tiene que tomar una pastilla cada {{1}} horas.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["ocho", "8"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 166,
+  "lemmas": [
+    "a", "agua", "algo", "amable", "ayer", "beber", "bien", "cabeza", "cada", "cama", "cansado", "centro",
+    "cita", "comer", "con", "consulta", "cuando", "dar", "de", "deber", "decir", "desayunar", "descansar",
+    "despertarse", "doctor", "dolor", "el", "en", "entonces", "entrar", "esperar", "estar", "esto", "fiebre",
+    "fruta", "frío", "ganas", "garganta", "gente", "grado", "grave", "haber", "hacer", "hasta", "hora", "hoy",
+    "ir", "leer", "llamarse", "llegar", "lunes", "mañana", "mejor", "mi", "minuto", "mirar", "mucho", "muy",
+    "no", "para", "pastilla", "pedir", "pero", "poco", "poder", "por", "pregunta", "que", "recepcionista",
+    "recetar", "recomendar", "resfriado", "revista", "sala", "salir", "salud", "se", "sentir", "ser", "sobre",
+    "solo", "síntoma", "también", "tarde", "temperatura", "tener", "todavía", "todo", "tomar", "trabajar",
+    "un", "y", "yo"
+  ],
+  "difficulty": 865,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 8.7,
+    "flesch_reading_ease": 86.2,
+    "checked_at": "2026-10-18T20:19:32.613Z"
+  }
+}

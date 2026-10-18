@@ -1,0 +1,415 @@
+{
+  "id": "es-a2-lis-003",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u04",
+  "series": "es-a2-u04-salud",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Pedir una cita médica",
+  "summary_es": {
+    "en": "A patient phones the health centre to get an appointment.",
+    "fr": "Un patient téléphone au centre de santé pour obtenir un rendez-vous.",
+    "zh": "一位病人打电话给社区医院预约就诊。",
+    "ja": "患者が保健センターに電話して予約を取ります。"
+  },
+  "topic": "health",
+  "tags": ["salud", "cita", "teléfono"],
+  "can_do": ["L-A2-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["cita", "fiebre", "tos", "garganta"],
+  "est_minutes": 7,
+  "prediction_prompt": "Una persona está enferma y llama por teléfono. ¿Qué dice?",
+  "pre_teach": ["cita", "tos"],
+  "speakers": [
+    { "id": "recepcionista", "name": "Marta", "accent": "es-ES", "gender": "female" },
+    { "id": "paciente", "name": "Luis", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 115,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "recepcionista",
+      "text": "Centro de salud Buenavista, buenos días.",
+      "tokens": [
+        { "t": "Centro", "l": "centro", "p": "NOUN", "w": true, "sp": true, "s": 0.08, "e": 0.552 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 0.552, "e": 0.754 },
+        { "t": "salud", "l": "salud", "p": "NOUN", "w": true, "sp": true, "s": 0.754, "e": 1.159 },
+        { "t": "Buenavista", "l": "buenavista", "p": "PROPN", "w": false, "s": 1.159, "e": 1.901 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 1.901, "e": 2.373 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 2.373, "e": 2.71 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.758
+    },
+    {
+      "id": "s2",
+      "speaker": "paciente",
+      "text": "Buenos días. Quiero pedir una cita con el médico.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 3.468, "e": 3.999 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 3.999, "e": 4.378 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 4.608, "e": 5.018 },
+        { "t": "pedir", "l": "pedir", "p": "VERB", "w": true, "sp": true, "s": 5.018, "e": 5.37 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 5.37, "e": 5.604 },
+        { "t": "cita", "l": "cita", "p": "NOUN", "w": true, "sp": true, "s": 5.604, "e": 5.897 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 5.897, "e": 6.131 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 6.132, "e": 6.308 },
+        { "t": "médico", "l": "médico", "p": "NOUN", "w": true, "s": 6.308, "e": 6.718 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.458,
+      "end": 6.799
+    },
+    {
+      "id": "s3",
+      "speaker": "recepcionista",
+      "text": "¿Cuál es el problema?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuál", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 7.509, "e": 7.837 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 7.837, "e": 8.034 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.033, "e": 8.23 },
+        { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "s": 8.23, "e": 8.82 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.499,
+      "end": 8.904
+    },
+    {
+      "id": "s4",
+      "speaker": "paciente",
+      "text": "Tengo tos y me duele mucho la garganta desde ayer.",
+      "tokens": [
+        { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 9.614, "e": 9.979 },
+        { "t": "tos", "l": "tos", "p": "NOUN", "w": true, "sp": true, "s": 9.979, "e": 10.222 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 10.222, "e": 10.344 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 10.344, "e": 10.526 },
+        { "t": "duele", "l": "doler", "p": "VERB", "w": true, "sp": true, "s": 10.526, "e": 10.891 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 10.891, "e": 11.256 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.256, "e": 11.438 },
+        { "t": "garganta", "l": "garganta", "p": "NOUN", "w": true, "sp": true, "s": 11.438, "e": 11.985 },
+        { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 11.985, "e": 12.35 },
+        { "t": "ayer", "l": "ayer", "p": "ADV", "w": true, "s": 12.35, "e": 12.654 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.604,
+      "end": 12.734
+    },
+    {
+      "id": "s5",
+      "speaker": "recepcionista",
+      "text": "¿Tiene fiebre?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 13.444, "e": 13.809 },
+        { "t": "fiebre", "l": "fiebre", "p": "NOUN", "w": true, "s": 13.809, "e": 14.234 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.434,
+      "end": 14.311
+    },
+    {
+      "id": "s6",
+      "speaker": "paciente",
+      "text": "Sí, ayer tenía treinta y ocho grados.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 15.031, "e": 15.471 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ayer", "l": "ayer", "p": "ADV", "w": true, "sp": true, "s": 15.631, "e": 15.984 },
+        { "t": "tenía", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 15.984, "e": 16.408 },
+        { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true, "s": 16.408, "e": 16.973 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 16.973, "e": 17.114 },
+        { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true, "s": 17.114, "e": 17.467 },
+        { "t": "grados", "l": "grado", "p": "NOUN", "w": true, "s": 17.467, "e": 17.961 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.011,
+      "end": 18.016
+    },
+    {
+      "id": "s7",
+      "speaker": "recepcionista",
+      "text": "Entiendo. Hay una cita mañana a las diez.",
+      "tokens": [
+        { "t": "Entiendo", "l": "entender", "p": "VERB", "w": true, "s": 18.726, "e": 19.356 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 19.626, "e": 19.875 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 19.875, "e": 20.124 },
+        { "t": "cita", "l": "cita", "p": "NOUN", "w": true, "sp": true, "s": 20.124, "e": 20.435 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 20.435, "e": 20.871 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 20.871, "e": 20.996 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 20.996, "e": 21.245 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "s": 21.245, "e": 21.556 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.716,
+      "end": 21.622
+    },
+    {
+      "id": "s8",
+      "speaker": "paciente",
+      "text": "Mañana trabajo por la mañana. ¿Tiene una hora por la tarde?",
+      "tokens": [
+        { "t": "Mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 22.332, "e": 22.793 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 22.793, "e": 23.32 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 23.32, "e": 23.583 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 23.583, "e": 23.781 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "s": 23.781, "e": 24.242 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 24.582, "e": 24.921 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 24.921, "e": 25.147 },
+        { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 25.146, "e": 25.428 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 25.428, "e": 25.654 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 25.654, "e": 25.823 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "s": 25.823, "e": 26.162 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.322,
+      "end": 26.299
+    },
+    {
+      "id": "s9",
+      "speaker": "recepcionista",
+      "text": "Sí, a las cuatro y cuarto.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 27.009, "e": 28.749 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 28.889, "e": 28.902 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 28.902, "e": 28.927 },
+        { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "sp": true, "s": 28.927, "e": 28.972 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 28.972, "e": 28.985 },
+        { "t": "cuarto", "l": "cuarto", "p": "NOUN", "w": true, "s": 28.984, "e": 29.029 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.999,
+      "end": 29.1
+    },
+    {
+      "id": "s10",
+      "speaker": "paciente",
+      "text": "Perfecto, muchas gracias.",
+      "tokens": [
+        { "t": "Perfecto", "l": "perfecto", "p": "ADJ", "w": true, "s": 29.81, "e": 30.52 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 30.7, "e": 31.255 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 31.255, "e": 31.89 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 29.8,
+      "end": 31.927
+    },
+    {
+      "id": "s11",
+      "speaker": "recepcionista",
+      "text": "Su nombre, por favor.",
+      "tokens": [
+        { "t": "Su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 32.637, "e": 32.838 },
+        { "t": "nombre", "l": "nombre", "p": "NOUN", "w": true, "s": 32.838, "e": 33.307 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 33.487, "e": 33.755 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 33.755, "e": 34.157 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.627,
+      "end": 34.286
+    },
+    {
+      "id": "s12",
+      "speaker": "paciente",
+      "text": "Me llamo Luis García.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 34.996, "e": 35.213 },
+        { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true, "s": 35.213, "e": 35.647 },
+        { "t": "Luis", "l": "luis", "p": "PROPN", "w": false, "sp": true, "s": 35.647, "e": 36.009 },
+        { "t": "García", "l": "garcía", "p": "PROPN", "w": false, "s": 36.009, "e": 36.516 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.986,
+      "end": 36.641
+    },
+    {
+      "id": "s13",
+      "speaker": "recepcionista",
+      "text": "Muy bien, señor García. Hasta mañana.",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 37.351, "e": 37.67 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 37.67, "e": 38.069 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "señor", "l": "señor", "p": "NOUN", "w": true, "sp": true, "s": 38.068, "e": 38.546 },
+        { "t": "García", "l": "garcía", "p": "PROPN", "w": false, "s": 38.547, "e": 39.105 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 39.105, "e": 39.583 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "s": 39.583, "e": 40.141 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 37.341,
+      "end": 40.203
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "cita",
+      "surface": "cita",
+      "pos": "noun",
+      "def_en": "hora fijada para ver a un médico u otra persona",
+      "def_es": { "en": "appointment", "fr": "rendez-vous", "zh": "预约", "ja": "予約" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "tos",
+      "surface": "tos",
+      "pos": "noun",
+      "def_en": "ruido que sale de la garganta cuando estás enfermo",
+      "def_es": { "en": "cough", "fr": "toux", "zh": "咳嗽", "ja": "咳" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "doler",
+      "surface": "duele",
+      "pos": "verb",
+      "def_en": "sentir dolor en una parte del cuerpo",
+      "def_es": { "en": "to hurt", "fr": "faire mal", "zh": "疼", "ja": "痛む" },
+      "ref": "s4"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Para qué llama Luis?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "He says *Quiero pedir una cita con el médico*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para cambiar de trabajo en otra empresa" },
+        { "id": "b", "text": "Para reservar hora con un doctor" },
+        { "id": "c", "text": "Para comprar medicinas en la farmacia" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué le duele a Luis?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "*Tengo tos y me duele mucho la garganta*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La cabeza" },
+        { "id": "b", "text": "La espalda" },
+        { "id": "c", "text": "La garganta" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Luis tenía fiebre ayer.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "*Ayer tenía treinta y ocho grados*: thirty-eight degrees is a fever." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué no acepta la cita de las diez?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "*Mañana trabajo por la mañana*: he asks for an afternoon appointment." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque tiene otra cita a esa hora" },
+        { "id": "b", "text": "Porque prefiere ir otro día de la semana" },
+        { "id": "c", "text": "Porque trabaja por la mañana" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con un número.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "*A las cuatro y cuarto*: quarter past four." },
+      "type": "gap_fill",
+      "text": "La cita es a las {{1}} y cuarto.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["cuatro", "4"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Cómo se llama el paciente?",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "*Me llamo Luis García*. Buenavista is the name of the health centre." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Marta García" },
+        { "id": "b", "text": "Luis García" },
+        { "id": "c", "text": "Luis Buenavista" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "ayer", "bien", "bueno", "centro", "cita", "con", "cuarto", "de", "desde", "doler", "día", "el",
+    "entender", "favor", "fiebre", "garganta", "grado", "haber", "hasta", "hora", "llamarse", "mañana",
+    "mucho", "muy", "médico", "nombre", "pedir", "perfecto", "por", "problema", "querer", "qué", "salud",
+    "ser", "señor", "su", "tarde", "tener", "tos", "trabajar", "un", "y", "yo"
+  ],
+  "difficulty": 876,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7681, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 4.7,
+    "flesch_reading_ease": 93.3,
+    "checked_at": "2026-10-18T20:19:32.613Z"
+  },
+  "audio": {
+    "src": "audio/a2/es-a2-lis-003/v1.m4a",
+    "duration_s": 40.203,
+    "wpm": 119,
+    "provider": "piper",
+    "voices": { "recepcionista": "sharvard-f", "paciente": "sharvard-m" },
+    "loudness_lufs": -15.9,
+    "peaks": [
+      0.62, 0.68, 0.61, 0.57, 0.61, 0.61, 1, 0.8, 0.68, 0.7, 0.35, 0.77, 0.63, 0.3, 0.3, 0.15, 0.09, 0, 0, 0,
+      0.23, 1, 0.58, 0.73, 0.46, 0.11, 0.07, 0.34, 1, 0.95, 0.6, 1, 0.87, 0.59, 0.71, 0.53, 0.45, 0.62, 0.32,
+      0.17, 0.05, 0, 0, 0, 0.04, 1, 0.59, 0.42, 0.46, 0.45, 0.43, 0.36, 0.17, 0, 0, 0, 0, 1, 0.73, 0.83, 0.76,
+      0.13, 0.44, 0.46, 0.52, 0.6, 0.71, 0.5, 0.57, 0.72, 0.54, 0.5, 0.4, 0.59, 0.44, 0.39, 0, 0, 0, 0, 1,
+      0.94, 0.88, 0.93, 0.43, 0.03, 0, 0, 0, 0.24, 0.61, 0.65, 0.11, 0.57, 1, 0.79, 0.62, 0.63, 0.87, 0.71,
+      0.64, 0.55, 0.73, 0.45, 0.94, 0.91, 0.09, 0.06, 0, 0, 0, 0.48, 0.63, 1, 0.49, 0.26, 0, 0.79, 1, 0.85,
+      0.62, 0.75, 0.68, 0.66, 0.77, 0.94, 0.3, 0.36, 0.05, 0, 0, 0, 0, 0.44, 0.94, 0.78, 0.69, 0.99, 1, 0.55,
+      0.61, 0.6, 0.63, 0.5, 0.18, 0.02, 0.42, 0.88, 0.71, 1, 0.9, 0.7, 0.5, 0.77, 0.89, 0.09, 0.04, 0, 0, 0, 0,
+      0.39, 0.55, 0.4, 0.94, 0.57, 0.86, 1, 0.57, 0.3, 0.84, 0.79, 0.18, 0.12, 0, 0, 0, 0.06, 0.96, 0.87, 0.14,
+      0.57, 0.08, 0.34, 0.7, 0.62, 0.69, 1, 0.25, 0.18, 0.11, 0, 0, 0, 0.19, 0.52, 0.83, 0.79, 0.73, 0.3, 0.88,
+      1, 0.95, 0.4, 0.02, 0, 0, 0, 0.12, 0.4, 0.61, 0.94, 0.59, 0.8, 0.32, 1, 0.32, 0.32, 0.02, 0, 0, 0, 0.14,
+      0.94, 1, 0.77, 0.23, 0.46, 0.94, 0.9, 0.86, 0.4, 0.41, 0.04, 0.81, 0.77, 1, 0.82, 0.85, 0.27
+    ]
+  }
+}

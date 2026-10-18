@@ -1,0 +1,53 @@
+{
+  "id": "es-a2-wri-003",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "task_type": "article",
+  "title": "Mi barrio",
+  "topic": "city-housing",
+  "context_es": {
+    "en": "The school magazine is publishing short texts about where students live. You write one about your neighbourhood.",
+    "fr": "Le journal de l’école publie de courts textes sur le quartier des élèves. Tu écris un texte sur ton quartier.",
+    "zh": "学校杂志要登几篇学生介绍自己居住街区的短文。你写一篇关于你所在街区的文章。",
+    "ja": "学校の雑誌が、生徒の住む地区についての短い文章を載せます。あなたは自分の地区について書きます。"
+  },
+  "prompt_en": "La revista de tu escuela publica textos cortos sobre los barrios. Escribe un artículo sobre tu barrio.",
+  "points": [
+    "cómo es tu barrio",
+    "qué hay en él",
+    "qué te gusta y qué vas a hacer pronto"
+  ],
+  "words_min": 50,
+  "words_max": 80,
+  "time_min": 15,
+  "useful_language": [
+    "Vivo en un barrio …",
+    "En mi barrio hay …",
+    "Cerca de mi casa hay …",
+    "Lo que más me gusta es …",
+    "Pronto vamos a …",
+    "Es un barrio muy …"
+  ],
+  "tips_es": [
+    {
+      "en": "Use *hay* to say what exists: *hay un parque*; and *es / está* to describe it.",
+      "fr": "Utilisez *hay* pour dire ce qui existe : *hay un parque* ; et *es / está* pour le décrire.",
+      "zh": "用 *hay* 说明有什么：*hay un parque*；用 *es / está* 来描述。",
+      "ja": "あるものは *hay*（*hay un parque*）、描写には *es / está* を使います。"
+    },
+    {
+      "en": "Give your article a title and write two short paragraphs.",
+      "fr": "Donnez un titre à votre article et écrivez deux courts paragraphes.",
+      "zh": "给文章起个标题，写两个短段落。",
+      "ja": "記事にタイトルを付けて、短い段落を2つ書きます。"
+    }
+  ],
+  "model_answer": "Mi barrio\n\nVivo en un barrio pequeño y muy tranquilo, cerca del centro de la ciudad. En mi barrio hay un parque con muchos árboles, una panadería y un supermercado. También hay una biblioteca donde leo todos los sábados.\n\nLo que más me gusta es que los vecinos son muy amables. En verano vamos a organizar una fiesta en la calle. ¡Va a ser genial!",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}
