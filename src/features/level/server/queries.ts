@@ -1,6 +1,7 @@
 import 'server-only';
 import { cache } from 'react';
 import { DEFAULT_RATING, type CefrLevel } from '@/features/level/lib/bands';
+import { getPracticeLanguage } from '@/features/profile/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
 import type { Enums } from '@/lib/supabase/database.types';
 
@@ -22,12 +23,13 @@ const fallback = (skill: Skill): SkillRating => ({
   updatedAt: null,
 });
 
-/** Rating por destreza. Las destrezas sin fila todavía devuelven el valor inicial. */
+/** Rating por destreza del idioma que practica. Las que no tienen fila devuelven el valor inicial. */
 export const getSkillRatings = cache(async (): Promise<Record<Skill, SkillRating>> => {
   const { supabase } = await getSessionOrRedirect();
   const { data, error } = await supabase
     .from('skill_ratings')
-    .select('skill, rating, items_count, confirmed_level, updated_at');
+    .select('skill, rating, items_count, confirmed_level, updated_at')
+    .eq('language', await getPracticeLanguage());
   if (error) throw new Error(`No se pudieron leer los ratings: ${error.message}`);
 
   const ratings: Record<Skill, SkillRating> = {

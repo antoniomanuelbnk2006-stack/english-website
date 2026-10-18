@@ -5,6 +5,7 @@ import { useState, useTransition, type FormEvent } from 'react';
 import { Button } from '@/components/ui/button';
 import { CEFR_LEVELS, type CefrLevel } from '@/features/level/lib/bands';
 import { setDeclaredLevel } from '@/features/level/server/actions';
+import type { PracticeLanguage } from '@/lib/content/language';
 import type { TranslationKey } from '@/lib/i18n';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
@@ -20,19 +21,28 @@ const DESCRIPTION: Record<CefrLevel, TranslationKey> = {
 
 /**
  * Elegir el nivel: un grupo de opciones con lo que se entiende en cada uno. Lo que haya
- * publicado de ese nivel es lo primero que se ve en cada sección.
+ * publicado de ese nivel es lo primero que se ve en cada sección. Si hay contenido de más de un
+ * idioma, antes se elige cuál se practica (ADR-0036).
  */
 export function LevelPicker({
   current,
-  counts,
+  currentLanguage,
+  languages,
 }: {
   current: CefrLevel | null;
-  /** Cuánto contenido hay publicado de cada nivel. */
-  counts: Record<CefrLevel, number>;
+  currentLanguage: PracticeLanguage;
+  /** Los idiomas con contenido: su nombre y cuánto hay publicado de cada nivel. */
+  languages: readonly {
+    value: PracticeLanguage;
+    name: string;
+    counts: Record<CefrLevel, number>;
+  }[];
 }) {
   const t = useT();
   const router = useRouter();
   const [level, setLevel] = useState<CefrLevel | null>(current);
+  const [language, setLanguage] = useState(currentLanguage);
+  const counts = (languages.find((option) => option.value === language) ?? languages[0])?.counts;
   const [saving, setSaving] = useState(false);
   const [failed, setFailed] = useState(false);
   const [navigating, startTransition] = useTransition();
@@ -42,7 +52,9 @@ export function LevelPicker({
     if (!level) return;
     setSaving(true);
     setFailed(false);
-    const result = await setDeclaredLevel({ level }).catch(() => null);
+    // El idioma solo se manda si había donde elegir.
+    const choice = languages.length > 1 ? { level, language } : { level };
+    const result = await setDeclaredLevel(choice).catch(() => null);
     setSaving(false);
     if (!result?.ok) {
       setFailed(true);
@@ -56,6 +68,34 @@ export function LevelPicker({
 
   return (
     <form onSubmit={(event) => void submit(event)} className="flex flex-col gap-4">
+      {languages.length > 1 ? (
+        <fieldset className="flex flex-col gap-2">
+          <legend className="mb-2 font-medium">{t('level.languageLegend')}</legend>
+          {languages.map((option) => {
+            const checked = language === option.value;
+            return (
+              <label
+                key={option.value}
+                className={cn(
+                  'option cursor-pointer items-center gap-4 bg-surface p-4',
+                  checked && 'border-accent',
+                )}
+              >
+                <input
+                  type="radio"
+                  name="language"
+                  value={option.value}
+                  checked={checked}
+                  onChange={() => setLanguage(option.value)}
+                  className="size-4 shrink-0 accent-accent"
+                />
+                <span className="font-medium">{option.name}</span>
+              </label>
+            );
+          })}
+        </fieldset>
+      ) : null}
+
       <fieldset className="flex flex-col gap-2">
         <legend className="sr-only">{t('level.chooseTitle')}</legend>
         {CEFR_LEVELS.map((option) => {
@@ -80,9 +120,9 @@ export function LevelPicker({
                 <span className="flex flex-wrap items-baseline justify-between gap-x-3">
                   <span className="font-medium">{t(`cefr.${option}` as TranslationKey)}</span>
                   <span className="tabular-nums text-caption text-muted">
-                    {counts[option] === 1
+                    {counts?.[option] === 1
                       ? t('level.contentOne')
-                      : t('level.content', { n: counts[option] })}
+                      : t('level.content', { n: counts?.[option] ?? 0 })}
                   </span>
                 </span>
                 <span className="text-body-sm text-muted">{t(DESCRIPTION[option])}</span>

@@ -10,8 +10,10 @@ import {
   WikitextResponse,
   type LookupResult,
 } from '@/features/dictionary/lib/wiktionary';
+import { getPracticeLanguage } from '@/features/profile/server/queries';
 import { getDictionary } from '@/lib/content/dictionary';
 import { env } from '@/lib/env';
+import { getLocale } from '@/lib/i18n/server';
 
 // Consulta a Wiktionary (ADR-0016). La hace el servidor, nunca el navegador: sin claves, sin
 // coste y sin guardar el diccionario. Solo sale la palabra buscada.
@@ -62,8 +64,9 @@ async function wikitextOf(title: string): Promise<string | null> {
 /** Palabras parecidas: las del mazo que empiezan igual y lo que sugiere Wiktionary. */
 async function suggest(term: string): Promise<string[]> {
   const prefix = term.toLowerCase().slice(0, Math.max(3, term.length - 2));
+  const [locale, language] = await Promise.all([getLocale(), getPracticeLanguage()]);
   const fromDeck = (['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const)
-    .flatMap((level) => getDictionary(level))
+    .flatMap((level) => getDictionary(level, locale, language))
     .filter((entry) => entry.lemma.toLowerCase().startsWith(prefix))
     .map((entry) => entry.lemma)
     .slice(0, 4);

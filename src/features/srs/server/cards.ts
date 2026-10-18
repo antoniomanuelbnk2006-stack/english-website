@@ -2,18 +2,21 @@ import 'server-only';
 import type { NewCard } from '@/features/srs/lib/cards';
 import { newCardState } from '@/features/srs/lib/scheduler';
 import { levelOfLemma } from '@/lib/content/levels';
+import type { PracticeLanguage } from '@/lib/content/language';
 import type { Json } from '@/lib/supabase/database.types';
 import type { SupabaseServerClient } from '@/lib/supabase/server';
 
 const toJson = (value: unknown): Json => JSON.parse(JSON.stringify(value)) as Json;
 
 /**
- * Inserta las tarjetas que aún no existan y deja sus palabras como «aprendiendo» en el
- * léxico. Devuelve cuántas se han creado. Devuelve `null` si falla la base de datos.
+ * Inserta las tarjetas de `language` que aún no existan y deja sus palabras como «aprendiendo»
+ * en el léxico de ese idioma. Devuelve cuántas se han creado. Devuelve `null` si falla la base de
+ * datos.
  */
 export async function insertCards(
   supabase: SupabaseServerClient,
   cards: readonly NewCard[],
+  language: PracticeLanguage,
 ): Promise<{ added: number } | null> {
   if (cards.length === 0) return { added: 0 };
 
@@ -21,9 +24,17 @@ export async function insertCards(
   const sources = cards.map((card) => card.source_segment_id);
   const [byLemma, bySource] = await Promise.all([
     lemmas.length > 0
-      ? supabase.from('srs_cards').select('kind, lemma').in('lemma', lemmas)
+      ? supabase
+          .from('srs_cards')
+          .select('kind, lemma')
+          .eq('language', language)
+          .in('lemma', lemmas)
       : Promise.resolve({ data: [], error: null }),
-    supabase.from('srs_cards').select('kind, source_segment_id').in('source_segment_id', sources),
+    supabase
+      .from('srs_cards')
+      .select('kind, source_segment_id')
+      .eq('language', language)
+      .in('source_segment_id', sources),
   ]);
   if (byLemma.error || bySource.error) return null;
 
@@ -42,6 +53,7 @@ export async function insertCards(
   const now = new Date();
   const { error } = await supabase.from('srs_cards').insert(
     fresh.map((card) => ({
+      language,
       kind: card.kind,
       lemma: card.lemma,
       front: toJson(card.front),
@@ -57,12 +69,13 @@ export async function insertCards(
   if (learning.length > 0) {
     const { error: lexiconError } = await supabase.from('lexicon').upsert(
       learning.map((lemma) => ({
+        language,
         lemma,
         status: 'learning' as const,
         source: 'srs' as const,
-        cefr: levelOfLemma(lemma) ?? null,
+        cefr: levelOfLemma(lemma, language) ?? null,
       })),
-      { onConflict: 'user_id,lemma' },
+      { onConflict: 'user_id,language,lemma' },
     );
     if (lexiconError) return null;
   }

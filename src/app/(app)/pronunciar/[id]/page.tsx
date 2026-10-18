@@ -10,19 +10,19 @@ import { getLessonProgress } from '@/features/lessons/server/queries';
 import { PronunciationTrainer } from '@/features/pronunciation/components/pronunciation-trainer';
 import { getSessionOrRedirect } from '@/lib/auth';
 import { findPronunciationSet } from '@/lib/content/pronunciation';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
 
 export async function generateMetadata({
   params,
 }: PageProps<'/pronunciar/[id]'>): Promise<Metadata> {
   const { id } = await params;
-  return { title: findPronunciationSet(id)?.title };
+  return { title: findPronunciationSet(id, await getLocale())?.title };
 }
 
 export default async function PronunciationSetPage({ params }: PageProps<'/pronunciar/[id]'>) {
   await getSessionOrRedirect();
   const { id } = await params;
-  const set = findPronunciationSet(id);
+  const set = findPronunciationSet(id, await getLocale());
   if (!set) notFound();
 
   const [t, progress] = await Promise.all([getT(), getLessonProgress(set.id)]);

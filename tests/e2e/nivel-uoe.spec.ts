@@ -11,8 +11,17 @@ test.beforeEach(async ({ request }) => {
   await resetDatabase(request);
 });
 
+// El nivel es por idioma (ADR-0037): estos tests son de inglés. Con `null` es el primer acceso.
 const setLevel = (request: APIRequestContext, level: string | null) =>
-  queryDatabase(request, 'update public.profiles set declared_level = $1', [level]);
+  level === null
+    ? queryDatabase(request, 'delete from public.language_levels')
+    : queryDatabase(
+        request,
+        `insert into public.language_levels (user_id, language, declared_level)
+         select id, 'en', $1 from public.profiles
+         on conflict (user_id, language) do update set declared_level = excluded.declared_level`,
+        [level],
+      );
 
 async function logIn(page: Page) {
   await page.goto('/login');
@@ -35,9 +44,16 @@ test('en el primer acceso se elige el nivel, y decide lo que se ve primero', asy
   await expect(page).toHaveURL(/\/nivel$/);
   await expect(page.getByRole('heading', { level: 1, name: 'Elige tu nivel' })).toBeVisible();
   await expect(page.getByRole('img', { name: /Nivel elegido/ })).toHaveCount(0);
-  const options = page.getByRole('radio');
+  // El contenido de prueba tiene inglés y español: antes del nivel se elige el idioma, que
+  // empieza en inglés (ADR-0036).
+  const languages = page.getByRole('group', { name: '¿Qué idioma quieres practicar?' });
+  await expect(languages.getByRole('radio')).toHaveCount(2);
+  await expect(languages.getByRole('radio', { name: 'Inglés' })).toBeChecked();
+  await expect(languages.getByRole('radio', { name: 'Español' })).not.toBeChecked();
+  const levels = page.getByRole('group', { name: 'Elige tu nivel' });
+  const options = levels.getByRole('radio');
   await expect(options).toHaveCount(6);
-  await expect(page.getByRole('radio', { checked: true })).toHaveCount(0);
+  await expect(levels.getByRole('radio', { checked: true })).toHaveCount(0);
   const save = page.getByRole('button', { name: 'Guardar nivel' });
   await expect(save).toBeDisabled();
   // Cada nivel dice qué se entiende en él y cuánto contenido hay.
@@ -51,9 +67,9 @@ test('en el primer acceso se elige el nivel, y decide lo que se ve primero', asy
   await expect(page.getByRole('link', { name: /Tu nivel: B2/ })).toBeVisible();
   // La cabecera enseña el nivel elegido, no la estimación (que arranca en B1).
   await expect(page.getByRole('img', { name: 'Nivel elegido: B2' })).toBeVisible();
-  expect(await queryDatabase(request, 'select declared_level from public.profiles')).toEqual([
-    { declared_level: 'B2' },
-  ]);
+  expect(
+    await queryDatabase(request, 'select language, declared_level from public.language_levels'),
+  ).toEqual([{ language: 'en', declared_level: 'B2' }]);
 
   // Las bibliotecas enseñan primero el nivel elegido; si no hay nada, lo dicen.
   await page.goto('/leer');

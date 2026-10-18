@@ -1,6 +1,8 @@
 // Contrato de datos del contenido. Copia literal de docs/04-arquitectura/04-modelo-de-contenido.md §2:
 // si cambia uno, cambia el otro.
 import { z } from 'zod';
+import { helpText, type Localized } from './help';
+import { DASH_PREFIX, DOT_PREFIX } from './language';
 
 // ───────────── Enumeraciones ─────────────
 export const Cefr = z.enum(['A1', 'A2', 'B1', 'B2', 'C1', 'C2']);
@@ -102,10 +104,11 @@ export const GlossaryPos = z.enum([
 ]);
 
 // ───────────── Identificadores ─────────────
-export const LessonId = z.string().regex(/^(a1|a2|b1|b2|c1|c2)-(lis|rea)-\d{3}$/);
-export const UnitId = z.string().regex(/^(a1|a2|b1|b2|c1|c2)-u\d{2}$/);
+// Los ids llevan delante el idioma, salvo los de inglés (ver ./language.ts): `es-a1-rea-001`.
+export const LessonId = z.string().regex(new RegExp(`^${DASH_PREFIX}(a1|a2|b1|b2|c1|c2)-(lis|rea)-\\d{3}$`));
+export const UnitId = z.string().regex(new RegExp(`^${DASH_PREFIX}(a1|a2|b1|b2|c1|c2)-u\\d{2}$`));
 export const CanDoId = z.string().regex(/^[LRWS]-(A1|A2|B1|B2|C1|C2)-\d{2}$/);
-export const GrammarId = z.string().regex(/^(a1|a2|b1|b2|c1|c2)\.[a-z0-9-]+$/);
+export const GrammarId = z.string().regex(new RegExp(`^${DOT_PREFIX}(a1|a2|b1|b2|c1|c2)\\.[a-z0-9-]+$`));
 export const SegmentId = z.string().regex(/^s\d{1,3}$/); // s1, s2…
 export const ParagraphId = z.string().regex(/^p\d{1,2}$/); // p1, p2…
 export const SentenceId = z.string().regex(/^p\d{1,2}s\d{1,2}$/); // p1s1 = párrafo 1, frase 1
@@ -118,11 +121,11 @@ export const GlossaryEntry = z.object({
   surface: z.string().min(1), // tal como aparece en el texto
   pos: GlossaryPos,
   def_en: z.string().min(1), // definición en inglés sencillo (≤ nivel de la lección)
-  def_es: z.string().min(1), // traducción o explicación breve
+  def_es: helpText(), // traducción o explicación breve (ayuda: ver ./help.ts)
   example: z.string().optional(), // otra frase de ejemplo
   cefr: Cefr.optional(),
   ref: z.string().min(1), // segmento o frase donde aparece
-  note_es: z.string().optional(), // p. ej. «inglés británico; en EE. UU.: parking lot»
+  note_es: helpText().optional(), // p. ej. «inglés británico; en EE. UU.: parking lot»
 });
 
 export const ConnectedSpeechFeature = z.object({
@@ -130,7 +133,7 @@ export const ConnectedSpeechFeature = z.object({
   phrase: z.string().min(1), // fragmento literal del texto
   type: ConnectedSpeechType,
   ipa: z.string().optional(),
-  explanation_es: z.string().min(1),
+  explanation_es: helpText(),
 });
 
 export const Speaker = z.object({
@@ -151,7 +154,7 @@ const TaskBase = z.object({
   phase: Phase,
   prompt: z.string().min(1), // enunciado (en true_false_ng, la afirmación)
   evidence: z.array(z.string()).min(1), // segmentos/frases/párrafos con la respuesta
-  rationale_es: z.string().min(1), // por qué es correcta y dónde está la trampa
+  rationale_es: helpText(), // por qué es correcta y dónde está la trampa
   difficulty_offset: z.number().optional(), // ajuste manual sobre la dificultad calculada
 });
 
@@ -223,7 +226,9 @@ export const Task = z.discriminatedUnion('type', [
   DictationTask,
   HeadingMatchTask,
 ]);
-export type Task = z.infer<typeof Task>;
+export type RawTask = z.infer<typeof Task>;
+/** Una tarea con sus ayudas resueltas al idioma de la interfaz (ver ./help.ts). */
+export type Task = Localized<RawTask>;
 
 // ───────────── Borrador ─────────────
 const Provenance = z.object({
@@ -245,7 +250,7 @@ const DraftBase = z.object({
   unit: UnitId,
   series: z.string().min(1),
   title: z.string().min(1),
-  summary_es: z.string().min(1),
+  summary_es: helpText(),
   topic: Topic,
   tags: z.array(z.string()).default([]),
   can_do: z.array(CanDoId).min(1),
@@ -288,8 +293,8 @@ export const ReadingDraft = DraftBase.extend({
   language_focus: z
     .array(
       z.object({
-        title_es: z.string().min(1),
-        explanation_es: z.string().min(1),
+        title_es: helpText(),
+        explanation_es: helpText(),
         refs: z.array(z.string()).min(1),
       }),
     )
@@ -378,7 +383,9 @@ export const PublishedReading = ReadingDraft.extend({
 });
 
 export const Lesson = z.discriminatedUnion('skill', [PublishedListening, PublishedReading]);
-export type Lesson = z.infer<typeof Lesson>;
+export type RawLesson = z.infer<typeof Lesson>;
+/** Una lección con sus ayudas resueltas al idioma de la interfaz (ver ./help.ts). */
+export type Lesson = Localized<RawLesson>;
 
 // ───────────── Índice (content/index.generated.json) ─────────────
 export const LessonMeta = z.object({
@@ -389,7 +396,7 @@ export const LessonMeta = z.object({
   unit: UnitId,
   series: z.string(),
   title: z.string(),
-  summary_es: z.string(), // una línea para la tarjeta de la biblioteca
+  summary_es: helpText(z.string()), // una línea para la tarjeta de la biblioteca
   topic: Topic,
   genre: z.string(),
   accents: z.array(Accent), // vacío en lectura sin audio
@@ -401,4 +408,5 @@ export const LessonMeta = z.object({
   lemmas: z.array(z.string()),
   path: z.string(), // ruta relativa del JSON
 });
-export type LessonMeta = z.infer<typeof LessonMeta>;
+export type RawLessonMeta = z.infer<typeof LessonMeta>;
+export type LessonMeta = Localized<RawLessonMeta>;

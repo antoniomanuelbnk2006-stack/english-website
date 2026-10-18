@@ -176,6 +176,7 @@ export const ja: Dictionary = {
     lowConfidence: 'データが少ない推定',
     chosenLabel: '選んだレベル：{level}',
     chooseTitle: 'レベルを選ぶ',
+    languageLegend: 'どの言語を練習しますか？',
     chooseFirst:
       'まず、今のレベルを教えてください。レベルに応じて、表示される文章、音声、練習が変わります。',
     chooseAgain: 'いつでも変更できます。変わるのは、最初に表示される内容だけです。',
@@ -459,6 +460,9 @@ export const ja: Dictionary = {
     fontSample: 'Some games refuse to die.',
     paperLabel: 'リーダーで紙の背景を使う',
     localeLabel: 'インターフェースの言語',
+    practiceLabel: '練習する言語',
+    practiceHint:
+      '各セクションには、この言語の教材だけが表示されます。説明はインターフェースの言語のままです。',
     accountTitle: 'アカウント',
     signedInAs: '{email} としてログインしています。',
     aboutTitle: 'このアプリについて',

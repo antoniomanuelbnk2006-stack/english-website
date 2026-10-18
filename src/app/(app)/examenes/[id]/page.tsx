@@ -13,11 +13,11 @@ import { EXAM_FORMATS } from '@/lib/content/exam-formats';
 import { parsePaperId, toPublicPaper } from '@/lib/content/exam-schema';
 import { findExamPaper } from '@/lib/content/exams';
 import { env } from '@/lib/env';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
 
 export async function generateMetadata({ params }: PageProps<'/examenes/[id]'>): Promise<Metadata> {
   const { id } = await params;
-  const paper = findExamPaper(id);
+  const paper = findExamPaper(id, await getLocale());
   if (!paper) return {};
   const format = EXAM_FORMATS[paper.level];
   return { title: `${format.exam} · ${format[paper.paper].title}` };
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps<'/examenes/[id]'>):
 export default async function ExamPaperPage({ params }: PageProps<'/examenes/[id]'>) {
   await getSessionOrRedirect();
   const { id } = await params;
-  const paper = findExamPaper(id);
+  const paper = findExamPaper(id, await getLocale());
   if (!paper) notFound();
 
   const [t, progress] = await Promise.all([getT(), getLessonProgress(paper.id)]);

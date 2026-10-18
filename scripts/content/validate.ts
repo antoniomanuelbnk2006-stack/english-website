@@ -8,7 +8,12 @@ import path from 'node:path';
 import { parseArgs } from 'node:util';
 import { z } from 'zod';
 import { checkDictionaryFile, DictionaryFile, lemmaKey } from '../../src/lib/content/dictionary-schema';
-import { checkFicha, parseFicha } from '../../src/lib/content/grammar-schema';
+import {
+  checkFicha,
+  checkFichaBody,
+  fichaVariant,
+  parseFicha,
+} from '../../src/lib/content/grammar-schema';
 import {
   checkPronunciationSet,
   PronunciationSet,
@@ -19,6 +24,8 @@ import { checkExamPaper, ExamPaper, partRecordings } from '../../src/lib/content
 import { checkUoeSet, UoeSet } from '../../src/lib/content/uoe-schema';
 import { checkWritingPrompt, WritingPrompt } from '../../src/lib/content/writing-schema';
 import { checkLesson } from './lib/check-lesson';
+import { assertLanguage, BASE_LANGUAGE, languageOfId } from '../../src/lib/content/language';
+import { contentDirs, listLevelFiles } from '../../src/lib/content/language-dirs';
 import { CONTENT_DIR, INDEX_FILE, listLessonFiles, readJson } from './lib/io';
 import { loadWordLists, type WordLists } from './lib/wordlists';
 
@@ -52,38 +59,59 @@ async function audioResponds(src: string): Promise<string | null> {
 
 /** Fichas de gramática: frontmatter válido, secciones acordadas y cuerpo MDX que compila. */
 async function checkGrammar(): Promise<{ count: number; errors: number }> {
-  const root = path.join(CONTENT_DIR, 'grammar');
-  if (!existsSync(root)) return { count: 0, errors: 0 };
   const { compile } = await import('@mdx-js/mdx');
   const { default: remarkGfm } = await import('remark-gfm');
 
   let count = 0;
   let errors = 0;
   const seen = new Set<string>();
-  for (const level of readdirSync(root).sort()) {
-    for (const file of readdirSync(path.join(root, level)).sort()) {
-      if (!file.endsWith('.mdx')) continue;
-      count++;
-      const id = file.slice(0, -'.mdx'.length);
+  const variantsOf = new Map<string, string[]>();
+  for (const { language, level, id, path: filePath } of listLevelFiles(CONTENT_DIR, 'grammar', '.mdx')) {
+    // La versión de una ficha en otro idioma de interfaz: solo el cuerpo, con sus secciones.
+    const variant = fichaVariant(id);
+    if (variant) {
       const issues: string[] = [];
+      variantsOf.set(variant.id, [...(variantsOf.get(variant.id) ?? []), variant.locale]);
       try {
-        const ficha = parseFicha(readFileSync(path.join(root, level, file), 'utf8'));
-        issues.push(...checkFicha(ficha, { id, level }));
-        if (seen.has(ficha.meta.id)) issues.push(`id repetido: ${ficha.meta.id}`);
-        seen.add(ficha.meta.id);
-        await compile(ficha.body, { remarkPlugins: [remarkGfm] });
+        assertLanguage(variant.id, language, filePath);
+        const body = readFileSync(filePath, 'utf8');
+        issues.push(...checkFichaBody(body, variant.locale));
+        await compile(body, { remarkPlugins: [remarkGfm] });
       } catch (error) {
-        issues.push(
-          error instanceof z.ZodError
-            ? error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join(' · ')
-            : error instanceof Error
-              ? error.message
-              : String(error),
-        );
+        issues.push(error instanceof Error ? error.message : String(error));
       }
-      console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (gramática)`);
+      console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (gramática · ${variant.locale})`);
       for (const message of issues) console.log(`    ✗ ${message}`);
       errors += issues.length;
+      continue;
+    }
+    count++;
+    const issues: string[] = [];
+    try {
+      assertLanguage(id, language, filePath);
+      const ficha = parseFicha(readFileSync(filePath, 'utf8'));
+      issues.push(...checkFicha(ficha, { id, level }));
+      if (seen.has(ficha.meta.id)) issues.push(`id repetido: ${ficha.meta.id}`);
+      seen.add(ficha.meta.id);
+      await compile(ficha.body, { remarkPlugins: [remarkGfm] });
+    } catch (error) {
+      issues.push(
+        error instanceof z.ZodError
+          ? error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join(' · ')
+          : error instanceof Error
+            ? error.message
+            : String(error),
+      );
+    }
+    console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (gramática)`);
+    for (const message of issues) console.log(`    ✗ ${message}`);
+    errors += issues.length;
+  }
+  for (const [id, locales] of variantsOf) {
+    if (!seen.has(id)) {
+      console.log(`✗ ${id}  (gramática)
+    ✗ hay versiones en ${locales.join(', ')}, pero no la ficha`);
+      errors++;
     }
   }
   return { count, errors };
@@ -91,36 +119,31 @@ async function checkGrammar(): Promise<{ count: number; errors: number }> {
 
 /** Ejercicios de Use of English: esquema y reglas (huecos, palabra dada, límite de palabras). */
 function checkUseOfEnglish(): { count: number; published: number; errors: number } {
-  const root = path.join(CONTENT_DIR, 'use-of-english');
-  if (!existsSync(root)) return { count: 0, published: 0, errors: 0 };
   let count = 0;
   let published = 0;
   let errors = 0;
-  for (const level of readdirSync(root).sort()) {
-    for (const file of readdirSync(path.join(root, level)).sort()) {
-      if (!file.endsWith('.json')) continue;
-      count++;
-      const id = file.slice(0, -'.json'.length);
-      const issues: string[] = [];
-      let status = '?';
-      try {
-        const set = UoeSet.parse(JSON.parse(readFileSync(path.join(root, level, file), 'utf8')));
-        status = set.status;
-        if (set.status === 'published') published++;
-        issues.push(...checkUoeSet(set, { id, level }));
-      } catch (error) {
-        issues.push(
-          error instanceof z.ZodError
-            ? error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join(' · ')
-            : error instanceof Error
-              ? error.message
-              : String(error),
-        );
-      }
-      console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (use of english · ${status})`);
-      for (const message of issues) console.log(`    ✗ ${message}`);
-      errors += issues.length;
+  for (const { language, level, id, path: filePath } of listLevelFiles(CONTENT_DIR, 'use-of-english', '.json')) {
+    count++;
+    const issues: string[] = [];
+    let status = '?';
+    try {
+      assertLanguage(id, language, filePath);
+      const set = UoeSet.parse(JSON.parse(readFileSync(filePath, 'utf8')));
+      status = set.status;
+      if (set.status === 'published') published++;
+      issues.push(...checkUoeSet(set, { id, level }));
+    } catch (error) {
+      issues.push(
+        error instanceof z.ZodError
+          ? error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join(' · ')
+          : error instanceof Error
+            ? error.message
+            : String(error),
+      );
     }
+    console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (use of english · ${status})`);
+    for (const message of issues) console.log(`    ✗ ${message}`);
+    errors += issues.length;
   }
   return { count, published, errors };
 }
@@ -130,51 +153,47 @@ function checkUseOfEnglish(): { count: number; published: number; errors: number
  * automática que se le hace al usuario (si no la pasa, o está mal o la revisión se equivoca).
  */
 function checkWriting(): { count: number; errors: number } {
-  const root = path.join(CONTENT_DIR, 'writing');
-  if (!existsSync(root)) return { count: 0, errors: 0 };
   let count = 0;
   let errors = 0;
-  for (const level of readdirSync(root).sort()) {
-    for (const file of readdirSync(path.join(root, level)).sort()) {
-      if (!file.endsWith('.json')) continue;
-      count++;
-      const id = file.slice(0, -'.json'.length);
-      const issues: string[] = [];
-      let status = '?';
-      try {
-        const prompt = WritingPrompt.parse(
-          JSON.parse(readFileSync(path.join(root, level, file), 'utf8')),
-        );
-        status = prompt.status;
-        issues.push(...checkWritingPrompt(prompt, { id, level }));
-        const review = reviewText(prompt.model_answer, {
-          level: prompt.level,
-          taskType: prompt.task_type,
-          wordsMin: prompt.words_min,
-          wordsMax: prompt.words_max,
-        });
-        for (const hint of review.hints) {
-          if (hint.severity === 'check') continue;
-          issues.push(`respuesta modelo: «${hint.match}» (${hint.rule})`);
-        }
-        for (const check of review.checks) {
-          if (!check.ok && check.id !== 'length') {
-            issues.push(`respuesta modelo: no pasa la comprobación «${check.id}»`);
-          }
-        }
-      } catch (error) {
-        issues.push(
-          error instanceof z.ZodError
-            ? error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join(' · ')
-            : error instanceof Error
-              ? error.message
-              : String(error),
-        );
+  for (const { language, level, id, path: filePath } of listLevelFiles(CONTENT_DIR, 'writing', '.json')) {
+    count++;
+    const issues: string[] = [];
+    let status = '?';
+    try {
+      assertLanguage(id, language, filePath);
+      const prompt = WritingPrompt.parse(
+        JSON.parse(readFileSync(filePath, 'utf8')),
+      );
+      status = prompt.status;
+      issues.push(...checkWritingPrompt(prompt, { id, level }));
+      const review = reviewText(prompt.model_answer, {
+        language,
+        level: prompt.level,
+        taskType: prompt.task_type,
+        wordsMin: prompt.words_min,
+        wordsMax: prompt.words_max,
+      });
+      for (const hint of review.hints) {
+        if (hint.severity === 'check') continue;
+        issues.push(`respuesta modelo: «${hint.match}» (${hint.rule})`);
       }
-      console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (writing · ${status})`);
-      for (const message of issues) console.log(`    ✗ ${message}`);
-      errors += issues.length;
+      for (const check of review.checks) {
+        if (!check.ok && check.id !== 'length') {
+          issues.push(`respuesta modelo: no pasa la comprobación «${check.id}»`);
+        }
+      }
+    } catch (error) {
+      issues.push(
+        error instanceof z.ZodError
+          ? error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join(' · ')
+          : error instanceof Error
+            ? error.message
+            : String(error),
+      );
     }
+    console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (writing · ${status})`);
+    for (const message of issues) console.log(`    ✗ ${message}`);
+    errors += issues.length;
   }
   return { count, errors };
 }
@@ -189,116 +208,106 @@ const describe = (error: unknown): string =>
 /** Ejercicios de pronunciación: esquema, id coherente con el nivel e ítems sin repetir. */
 /** Simulacros de examen: cada prueba con las partes y preguntas del examen oficial. */
 async function checkExams(offline: boolean): Promise<{ count: number; errors: number }> {
-  const root = path.join(CONTENT_DIR, 'exams');
-  if (!existsSync(root)) return { count: 0, errors: 0 };
   let count = 0;
   let errors = 0;
-  for (const level of readdirSync(root).sort()) {
-    for (const file of readdirSync(path.join(root, level)).sort()) {
-      if (!file.endsWith('.json')) continue;
-      count++;
-      const id = file.slice(0, -'.json'.length);
-      const issues: string[] = [];
-      let status = '?';
-      try {
-        const paper = ExamPaper.parse(
-          JSON.parse(readFileSync(path.join(root, level, file), 'utf8')),
-        );
-        status = paper.status;
-        issues.push(...checkExamPaper(paper, { id, level }));
-        if (paper.paper === 'listening' && paper.status === 'published') {
-          for (const recording of paper.parts.flatMap(partRecordings)) {
-            if (!recording.audio) {
-              issues.push(`grabación ${recording.id}: sin audio (pnpm content:exam-audio --ids ${id})`);
-            } else if (!offline) {
-              const problem = await audioResponds(recording.audio.src);
-              if (problem) issues.push(`grabación ${recording.id}: ${problem}`);
-            }
-          }
-        }
-      } catch (error) {
-        issues.push(describe(error));
-      }
-      console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (examen · ${status})`);
-      for (const message of issues) console.log(`    ✗ ${message}`);
-      errors += issues.length;
-    }
-  }
-  return { count, errors };
-}
-
-function checkPronunciation(): { count: number; errors: number } {
-  const root = path.join(CONTENT_DIR, 'pronunciation');
-  if (!existsSync(root)) return { count: 0, errors: 0 };
-  let count = 0;
-  let errors = 0;
-  for (const level of readdirSync(root).sort()) {
-    for (const file of readdirSync(path.join(root, level)).sort()) {
-      if (!file.endsWith('.json')) continue;
-      count++;
-      const id = file.slice(0, -'.json'.length);
-      const issues: string[] = [];
-      let status = '?';
-      try {
-        const set = PronunciationSet.parse(
-          JSON.parse(readFileSync(path.join(root, level, file), 'utf8')),
-        );
-        status = set.status;
-        if (set.id !== id) issues.push(`el id ${set.id} no coincide con el fichero`);
-        if (set.level.toLowerCase() !== level) issues.push(`está en la carpeta de otro nivel`);
-        issues.push(...checkPronunciationSet(set));
-      } catch (error) {
-        issues.push(describe(error));
-      }
-      console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (pronunciación · ${status})`);
-      for (const message of issues) console.log(`    ✗ ${message}`);
-      errors += issues.length;
-    }
-  }
-  return { count, errors };
-}
-
-/**
- * Mazo de palabras por nivel: esquema, sin repetidas, el ejemplo contiene la palabra y cada
- * palabra está en las listas abiertas de las que sale el mazo.
- */
-function checkDictionary(lists: WordLists): { count: number; errors: number } {
-  const root = path.join(CONTENT_DIR, 'dictionary');
-  if (!existsSync(root)) return { count: 0, errors: 0 };
-  let count = 0;
-  let errors = 0;
-  const seen = new Map<string, string>();
-  for (const file of readdirSync(root).sort()) {
-    if (!file.endsWith('.json')) continue;
+  for (const { language, level, id, path: filePath } of listLevelFiles(CONTENT_DIR, 'exams', '.json')) {
+    count++;
     const issues: string[] = [];
-    let size = 0;
+    let status = '?';
     try {
-      const dictionary = DictionaryFile.parse(
-        JSON.parse(readFileSync(path.join(root, file), 'utf8')),
+      assertLanguage(id, language, filePath);
+      const paper = ExamPaper.parse(
+        JSON.parse(readFileSync(filePath, 'utf8')),
       );
-      size = dictionary.entries.length;
-      if (`${dictionary.level.toLowerCase()}.json` !== file) {
-        issues.push(`el nivel ${dictionary.level} no coincide con el fichero`);
-      }
-      issues.push(...checkDictionaryFile(dictionary));
-      for (const entry of dictionary.entries) {
-        const key = lemmaKey(entry.lemma);
-        const other = seen.get(key);
-        if (other) issues.push(`«${entry.lemma}» ya está en ${other}`);
-        seen.set(key, file);
-        // Las listas del pipeline solo guardan palabras sueltas; las expresiones no se comprueban.
-        if (!key.includes(' ') && !lists.levels.has(key)) {
-          issues.push(`«${entry.lemma}» no está en las listas`);
+      status = paper.status;
+      issues.push(...checkExamPaper(paper, { id, level }));
+      if (paper.paper === 'listening' && paper.status === 'published') {
+        for (const recording of paper.parts.flatMap(partRecordings)) {
+          if (!recording.audio) {
+            issues.push(`grabación ${recording.id}: sin audio (pnpm content:exam-audio --ids ${id})`);
+          } else if (!offline) {
+            const problem = await audioResponds(recording.audio.src);
+            if (problem) issues.push(`grabación ${recording.id}: ${problem}`);
+          }
         }
       }
     } catch (error) {
       issues.push(describe(error));
     }
-    count += size;
-    console.log(`${issues.length > 0 ? '✗' : '✓'} ${file}  (palabras · ${size})`);
-    for (const message of issues.slice(0, 20)) console.log(`    ✗ ${message}`);
-    if (issues.length > 20) console.log(`    ✗ … y ${issues.length - 20} más`);
+    console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (examen · ${status})`);
+    for (const message of issues) console.log(`    ✗ ${message}`);
     errors += issues.length;
+  }
+  return { count, errors };
+}
+
+function checkPronunciation(): { count: number; errors: number } {
+  let count = 0;
+  let errors = 0;
+  for (const { language, level, id, path: filePath } of listLevelFiles(CONTENT_DIR, 'pronunciation', '.json')) {
+    count++;
+    const issues: string[] = [];
+    let status = '?';
+    try {
+      assertLanguage(id, language, filePath);
+      const set = PronunciationSet.parse(
+        JSON.parse(readFileSync(filePath, 'utf8')),
+      );
+      status = set.status;
+      if (set.id !== id) issues.push(`el id ${set.id} no coincide con el fichero`);
+      if (set.level.toLowerCase() !== level) issues.push(`está en la carpeta de otro nivel`);
+      issues.push(...checkPronunciationSet(set));
+    } catch (error) {
+      issues.push(describe(error));
+    }
+    console.log(`${issues.length > 0 ? '✗' : '✓'} ${id}  (pronunciación · ${status})`);
+    for (const message of issues) console.log(`    ✗ ${message}`);
+    errors += issues.length;
+  }
+  return { count, errors };
+}
+
+/**
+ * Mazo de palabras por idioma y nivel: esquema, sin repetidas, el ejemplo contiene la palabra y,
+ * en inglés, cada palabra está en las listas abiertas de las que sale el mazo. Los demás idiomas
+ * aún no tienen listas abiertas: sus niveles salen del propio mazo (build-index).
+ */
+function checkDictionary(lists: WordLists): { count: number; errors: number } {
+  let count = 0;
+  let errors = 0;
+  for (const { language, dir } of contentDirs(CONTENT_DIR, 'dictionary')) {
+    const seen = new Map<string, string>();
+    for (const file of readdirSync(dir).sort()) {
+      if (!file.endsWith('.json')) continue;
+      const label = language === BASE_LANGUAGE ? file : `${language}/${file}`;
+      const issues: string[] = [];
+      let size = 0;
+      try {
+        const dictionary = DictionaryFile.parse(JSON.parse(readFileSync(path.join(dir, file), 'utf8')));
+        size = dictionary.entries.length;
+        if (`${dictionary.level.toLowerCase()}.json` !== file) {
+          issues.push(`el nivel ${dictionary.level} no coincide con el fichero`);
+        }
+        issues.push(...checkDictionaryFile(dictionary));
+        for (const entry of dictionary.entries) {
+          const key = lemmaKey(entry.lemma);
+          const other = seen.get(key);
+          if (other) issues.push(`«${entry.lemma}» ya está en ${other}`);
+          seen.set(key, file);
+          // Las listas del pipeline solo guardan palabras sueltas; las expresiones no se comprueban.
+          if (language === BASE_LANGUAGE && !key.includes(' ') && !lists.levels.has(key)) {
+            issues.push(`«${entry.lemma}» no está en las listas`);
+          }
+        }
+      } catch (error) {
+        issues.push(describe(error));
+      }
+      count += size;
+      console.log(`${issues.length > 0 ? '✗' : '✓'} ${label}  (palabras · ${size})`);
+      for (const message of issues.slice(0, 20)) console.log(`    ✗ ${message}`);
+      if (issues.length > 20) console.log(`    ✗ … y ${issues.length - 20} más`);
+      errors += issues.length;
+    }
   }
   return { count, errors };
 }
@@ -317,7 +326,7 @@ async function main(): Promise<number> {
   let warningCount = 0;
   const published: string[] = [];
 
-  for (const { file, relativePath, id } of files) {
+  for (const { file, relativePath, contentPath, id, language } of files) {
     let input: unknown;
     try {
       input = readJson(file);
@@ -328,9 +337,12 @@ async function main(): Promise<number> {
     }
 
     const previous = values.against
-      ? atRef(values.against, `content/lessons/${relativePath}`)
+      ? atRef(values.against, `content/${contentPath}`)
       : undefined;
     const report = checkLesson(input, lists, { relativePath, previous });
+    if (languageOfId(id) !== language) {
+      report.errors.push(`el id «${id}» no es de la carpeta de ${language} (ADR-0035)`);
+    }
 
     if (report.status === 'published' && report.errors.length === 0) {
       published.push(id);

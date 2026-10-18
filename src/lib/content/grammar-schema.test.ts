@@ -1,7 +1,16 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { checkFicha, GRAMMAR_SECTIONS, parseFicha } from './grammar-schema';
+import {
+  checkFicha,
+  checkFichaBody,
+  fichaVariant,
+  GrammarExample,
+  GRAMMAR_SECTIONS,
+  GRAMMAR_SECTIONS_BY_LOCALE,
+  parseFicha,
+} from './grammar-schema';
+import { localize } from './help';
 
 const practice = (n: number) =>
   Array.from(
@@ -87,7 +96,9 @@ describe('checkFicha', () => {
       parseFicha(ficha({ sections: ['En una frase', 'Forma', 'Uso'] })),
       expected,
     );
-    expect(issues.join()).toMatch(/faltan secciones: Contraste con el español, Errores típicos/);
+    expect(issues.join()).toMatch(
+      /faltan secciones \(es\): Contraste con el español, Errores típicos/,
+    );
   });
 
   it('avisa si las secciones están desordenadas', () => {
@@ -138,5 +149,45 @@ describe('fichas del repositorio', () => {
     for (const item of parsed.meta.practice) {
       expect(item.prompt.toLowerCase()).not.toContain(` ${item.answers[0]?.toLowerCase()} `);
     }
+  });
+});
+
+describe('ejemplos de las fichas (ADR-0034)', () => {
+  it('las fichas de inglés los tienen en «en» y «es», y se leen como frase y traducción', () => {
+    expect(GrammarExample.parse({ en: 'I work.', es: 'Trabajo.' })).toEqual({
+      text: 'I work.',
+      translation: 'Trabajo.',
+    });
+  });
+
+  it('el contenido nuevo trae la traducción por idioma de interfaz', () => {
+    const example = GrammarExample.parse({ text: 'Soy de Madrid.', translation: { en: 'I am from Madrid.', fr: 'Je suis de Madrid.' } });
+    expect(localize(example, 'fr').translation).toBe('Je suis de Madrid.');
+    expect(localize(example, 'zh').translation).toBe('I am from Madrid.');
+  });
+
+  it('no mezcla las dos formas', () => {
+    expect(GrammarExample.safeParse({ text: 'x', es: 'y' }).success).toBe(false);
+  });
+});
+
+describe('fichas en varios idiomas de interfaz', () => {
+  it('reconoce las versiones en otro idioma por el nombre del archivo', () => {
+    expect(fichaVariant('es.a1.ser-estar.fr')).toEqual({ id: 'es.a1.ser-estar', locale: 'fr' });
+    expect(fichaVariant('a1.present-simple.ja')).toEqual({ id: 'a1.present-simple', locale: 'ja' });
+    expect(fichaVariant('a1.present-simple')).toBeNull();
+    expect(fichaVariant('es.a1.ser-estar')).toBeNull();
+  });
+
+  it('cada cuerpo se revisa con las secciones de su idioma', () => {
+    const english = GRAMMAR_SECTIONS_BY_LOCALE.en.map((title) => `## ${title}\n\nTexto.\n`).join('\n');
+    expect(checkFichaBody(english, 'en')).toEqual([]);
+    expect(checkFichaBody(english, 'es')[0]).toMatch(/^faltan secciones \(es\)/);
+    for (const sections of Object.values(GRAMMAR_SECTIONS_BY_LOCALE)) expect(sections).toHaveLength(6);
+  });
+
+  it('las fichas de hoy tienen el cuerpo en español', () => {
+    const file = path.join(process.cwd(), 'content', 'grammar', 'a1', 'a1.present-simple.mdx');
+    expect(parseFicha(readFileSync(file, 'utf8')).meta.body_locale).toBe('es');
   });
 });

@@ -15,6 +15,8 @@ import { EXAM_FORMATS, SPEAKING_CRITERIA, type ExamSection } from '@/lib/content
 import { ExamPaperId } from '@/lib/content/exam-schema';
 import { findExamPaper } from '@/lib/content/exams';
 import type { Json } from '@/lib/supabase/database.types';
+import { getLocale } from '@/lib/i18n/server';
+import { languageOfId } from '@/lib/content/language';
 
 const toJson = (value: unknown): Json => JSON.parse(JSON.stringify(value)) as Json;
 
@@ -68,7 +70,7 @@ export async function submitExamPaper(
   if (!session.ok) return fail('unauthorized');
   const { supabase } = session;
 
-  const paper = findExamPaper(paperId);
+  const paper = findExamPaper(paperId, await getLocale());
   if (!paper || paper.paper === 'speaking') return fail('not_found');
   if (paper.version !== version) return fail('conflict');
 
@@ -77,9 +79,11 @@ export async function submitExamPaper(
   // Entregar en blanco no es un intento: no hay nada que guardar.
   if (result.answered === 0) return fail('invalid_input');
 
+  const language = languageOfId(paper.id);
   const { data: ratings, error: ratingError } = await supabase
     .from('skill_ratings')
-    .select('skill, rating');
+    .select('skill, rating')
+    .eq('language', language);
   if (ratingError) return fail('internal');
   const ratingOf = new Map(ratings.map((row) => [row.skill as string, row.rating]));
 
@@ -109,6 +113,7 @@ export async function submitExamPaper(
 
   const { error } = await supabase.rpc('apply_lesson_attempts', {
     p_lesson_id: paper.id,
+    p_language: language,
     p_lesson_version: paper.version,
     p_attempts: toJson(rows),
     p_ratings: {},
@@ -148,22 +153,25 @@ export async function saveSpeakingExam(
   if (!session.ok) return fail('unauthorized');
   const { supabase } = session;
 
-  const paper = findExamPaper(paperId);
+  const paper = findExamPaper(paperId, await getLocale());
   if (!paper || paper.paper !== 'speaking') return fail('not_found');
   if (paper.version !== version) return fail('conflict');
 
   const result = gradeSpeaking(EXAM_FORMATS[paper.level], parsed.data.ratings as SpeakingRatings);
   if (!result) return fail('invalid_input');
 
+  const language = languageOfId(paper.id);
   const { data: ratingRow, error: ratingError } = await supabase
     .from('skill_ratings')
     .select('rating')
+    .eq('language', language)
     .eq('skill', 'speaking')
     .maybeSingle();
   if (ratingError) return fail('internal');
 
   const { error } = await supabase.rpc('apply_lesson_attempts', {
     p_lesson_id: paper.id,
+    p_language: language,
     p_lesson_version: paper.version,
     p_attempts: toJson(
       result.criteria.map((criterion) => ({

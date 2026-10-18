@@ -169,6 +169,7 @@ export const zh: Dictionary = {
     lowConfidence: '数据较少的估计',
     chosenLabel: '所选水平：{level}',
     chooseTitle: '选择你的水平',
+    languageLegend: '你想练习哪种语言？',
     chooseFirst: '首先，告诉我们你现在的水平。根据水平不同，你会看到不同的文章、音频和练习。',
     chooseAgain: '你随时可以更改：改变的只是优先展示给你的内容。',
     chooseNote:
@@ -444,6 +445,8 @@ export const zh: Dictionary = {
     fontSample: 'Some games refuse to die.',
     paperLabel: '阅读器使用纸张背景',
     localeLabel: '界面语言',
+    practiceLabel: '你练习的语言',
+    practiceHint: '每个板块只显示这种语言的内容。讲解仍使用界面语言。',
     accountTitle: '账户',
     signedInAs: '你已以 {email} 的身份登录。',
     aboutTitle: '关于',

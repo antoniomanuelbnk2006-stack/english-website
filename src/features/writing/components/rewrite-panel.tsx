@@ -7,6 +7,7 @@ import { MAX_CHARS, MIN_CHARS } from '@/features/writing/lib/input';
 import { saveRewrite } from '@/features/writing/server/actions';
 import { countWords } from '@/lib/content/writing-schema';
 import { useT } from '@/lib/i18n/client';
+import { useContentLang } from '@/components/content-language';
 
 /** La reescritura: el usuario corrige su propio texto con el feedback delante. */
 export function RewritePanel({
@@ -20,6 +21,7 @@ export function RewritePanel({
   saved: string | null;
 }) {
   const t = useT();
+  const lang = useContentLang();
   const id = useId();
   const [text, setText] = useState(saved ?? original);
   const [state, setState] = useState<'idle' | 'saving' | 'failed'>('idle');
@@ -50,7 +52,7 @@ export function RewritePanel({
         <Label htmlFor={`${id}-text`}>{t('writing.rewriteLabel')}</Label>
         <Textarea
           id={`${id}-text`}
-          lang="en"
+          lang={lang}
           rows={12}
           maxLength={MAX_CHARS}
           value={text}

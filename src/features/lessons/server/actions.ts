@@ -7,6 +7,7 @@ import { requireUser } from '@/lib/auth';
 import { loadLesson } from '@/lib/content/loader';
 import { todayMadrid } from '@/lib/dates';
 import type { Json } from '@/lib/supabase/database.types';
+import { languageOfId } from '@/lib/content/language';
 
 /** Los objetos tipados del dominio son JSON válido; así lo ve también el cliente de Supabase. */
 const toJson = (value: unknown): Json => JSON.parse(JSON.stringify(value)) as Json;
@@ -35,9 +36,11 @@ export async function submitAttempts(input: unknown): Promise<ActionResult<Submi
   // La lección cambió mientras se hacía: los ids de tarea podrían no significar lo mismo.
   if (lesson.version !== lessonVersion) return fail('conflict');
 
+  const language = languageOfId(lesson.id);
   const { data: ratingRow, error: ratingError } = await supabase
     .from('skill_ratings')
     .select('rating')
+    .eq('language', language)
     .eq('skill', lesson.skill)
     .maybeSingle();
   if (ratingError) return fail('internal');
@@ -62,6 +65,7 @@ export async function submitAttempts(input: unknown): Promise<ActionResult<Submi
 
   const { error: applyError } = await supabase.rpc('apply_lesson_attempts', {
     p_lesson_id: lesson.id,
+    p_language: language,
     p_lesson_version: lesson.version,
     p_attempts: toJson(rows),
     // El rating no se mueve todavía: el Elo por destreza llega en la fase 5 del roadmap.

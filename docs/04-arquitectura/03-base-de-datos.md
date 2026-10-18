@@ -11,7 +11,8 @@
 auth.users (Supabase)
    │ 1
    ├──1 profiles                 objetivos, intereses, ajustes
-   ├──* skill_ratings            rating Elo por destreza + nivel confirmado
+   ├──* language_levels          nivel declarado, uno por idioma que practica (0009)
+   ├──* skill_ratings            rating Elo por destreza + nivel confirmado (por idioma, 0009)
    ├──* rating_history           instantáneas para gráficas
    ├──* lesson_progress          estado por lección (fase, nota, ppm…)
    ├──* item_attempts            cada respuesta (base del Elo y de las estadísticas)
@@ -516,6 +517,7 @@ group by user_id, date_trunc('week', logged_on::timestamp)::date, kind;
 | `set search_path = ''` | Evita secuestro de `search_path` en funciones. |
 | Ratings calculados en TypeScript | La lógica Elo es pura y testeable en `lib/`; la función SQL solo persiste de forma atómica. |
 | Sin tabla de contenido | Ver [ADR-0003](../adr/0003-contenido-como-codigo.md). |
+| Los datos que dependen de la lengua llevan `language` (migración 0009, [ADR-0037](../adr/0037-datos-por-idioma.md)) | `skill_ratings` (clave `user_id, language, skill`), `rating_history`, `lexicon` (`user_id, language, lemma`) y `srs_cards` (la unicidad incluye `language`): una palabra como «come» puede estar en dos idiomas. El nivel declarado va en `language_levels`. Lo ligado a un contenido (`lesson_progress`, `item_attempts`, `writing_submissions`…) no lleva columna: el idioma sale del prefijo del id. `profiles.declared_level` queda sin uso desde 0009. |
 | `unique nulls not distinct` en tarjetas | Evita duplicar la misma tarjeta (requiere Postgres 15+, disponible en Supabase). |
 | `srs_cards.source_segment_id` va cualificado (`b1-lis-001:s16`, `b1.linkers:p4`) | La unicidad de las tarjetas no incluye la lección y los ids de segmento se repiten entre lecciones. Una palabra tiene **una sola** tarjeta, venga de la lección que venga: eso lo comprueba la aplicación por `lemma` antes de insertar. |
 | El progreso de una ficha de gramática se guarda en `lesson_progress` con el id de la ficha (`b1.linkers`) | Evita una tabla más: `started` = vista; `completed` + `best_score` = practicada o dominada (≥ 0,8). Sus intentos van a `item_attempts` con `skill = 'grammar'`. |
@@ -550,7 +552,7 @@ Sustituye la política `for all` de cada tabla por una política por operación,
 
 | Tablas | Operaciones |
 |---|---|
-| `profiles`, `skill_ratings`, `lesson_progress`, `lexicon`, `srs_cards`, `writing_submissions`, `activity_days` | leer, crear, cambiar |
+| `profiles`, `language_levels`, `skill_ratings`, `lesson_progress`, `lexicon`, `srs_cards`, `writing_submissions`, `activity_days` | leer, crear, cambiar |
 | `input_log` | leer, crear, cambiar, borrar |
 | `item_attempts`, `srs_reviews`, `rating_history`, `listening_diagnostics` | leer, crear |
 | `daily_plans`, `placement_results`, `achievements` (sin uso todavía) | leer |

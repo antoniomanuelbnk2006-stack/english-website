@@ -8,23 +8,29 @@ import {
   type LexemeStatus,
 } from '@/features/lexicon/lib/known';
 import type { LexiconSnapshot } from '@/features/lexicon/components/use-lexicon-session';
-import { getProfile } from '@/features/profile/server/queries';
+import { getPracticeLanguage, getProfile } from '@/features/profile/server/queries';
 import { getExistingCardKeys } from '@/features/srs/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
 import type { LessonMeta } from '@/lib/content/index';
+import { languageOfId, type PracticeLanguage } from '@/lib/content/language';
 import { levelOfLemma } from '@/lib/content/levels';
 import { lessonTokenCounts } from '@/lib/content/tokens';
 import type { Enums } from '@/lib/supabase/database.types';
 
-/** Estado en el léxico personal de los lemas indicados (los que no estén, no aparecen). */
+/**
+ * Estado en el léxico personal de los lemas indicados (los que no estén, no aparecen). El léxico
+ * es el del idioma pedido o, si no se dice, el del que practica (ADR-0037).
+ */
 export async function getLexiconStatus(
   lemmas: readonly string[],
+  language?: PracticeLanguage,
 ): Promise<Map<string, LexemeStatus>> {
   if (lemmas.length === 0) return new Map();
   const { supabase } = await getSessionOrRedirect();
   const { data, error } = await supabase
     .from('lexicon')
     .select('lemma, status')
+    .eq('language', language ?? (await getPracticeLanguage()))
     .in('lemma', [...new Set(lemmas)]);
   if (error) throw new Error(`No se pudo leer el léxico: ${error.message}`);
   return new Map(data.map((row) => [row.lemma, row.status]));
@@ -38,10 +44,14 @@ export async function getUserLevel(): Promise<CefrLevel> {
 /** Lemas de un texto que el usuario conoce, según su léxico y su nivel. */
 export async function getKnownLemmas(tokens: readonly CountableToken[]): Promise<Set<string>> {
   const lemmas = [...new Set(tokens.filter((token) => token.w).map((token) => token.l))];
-  const [status, userLevel] = await Promise.all([getLexiconStatus(lemmas), getUserLevel()]);
+  const [status, userLevel, language] = await Promise.all([
+    getLexiconStatus(lemmas),
+    getUserLevel(),
+    getPracticeLanguage(),
+  ]);
   return knownLemmas(tokens, {
     statusOf: (lemma) => status.get(lemma),
-    levelOf: levelOfLemma,
+    levelOf: (lemma) => levelOfLemma(lemma, language),
     userLevel,
   });
 }
@@ -54,11 +64,13 @@ const PAGE = 1000;
  */
 export const getLexiconMap = cache(async (): Promise<Map<string, LexemeStatus>> => {
   const { supabase } = await getSessionOrRedirect();
+  const language = await getPracticeLanguage();
   const all = new Map<string, LexemeStatus>();
   for (let from = 0; ; from += PAGE) {
     const { data, error } = await supabase
       .from('lexicon')
       .select('lemma, status')
+      .eq('language', language)
       .order('lemma')
       .range(from, from + PAGE - 1);
     if (error) throw new Error(`No se pudo leer el léxico: ${error.message}`);
@@ -93,11 +105,13 @@ export async function getLexiconPage(
   filter: LexiconFilter,
 ): Promise<{ entries: LexiconEntry[]; total: number }> {
   const { supabase } = await getSessionOrRedirect();
+  const language = await getPracticeLanguage();
   const from = (filter.page - 1) * LEXICON_PAGE_SIZE;
 
   let query = supabase
     .from('lexicon')
     .select('lemma, status, source, cefr, seen_count, lookup_count', { count: 'exact' })
+    .eq('language', language)
     .order('updated_at', { ascending: false })
     .order('lemma')
     .range(from, from + LEXICON_PAGE_SIZE - 1);
@@ -116,6 +130,7 @@ export async function getLexiconPage(
     const { data: cards, error: cardsError } = await supabase
       .from('srs_cards')
       .select('lemma, due')
+      .eq('language', language)
       .eq('suspended', false)
       .in('lemma', lemmas);
     if (cardsError) throw new Error(`No se pudieron leer las tarjetas: ${cardsError.message}`);
@@ -155,8 +170,9 @@ export async function getLexiconSnapshot(lesson: {
 }): Promise<LexiconSnapshot> {
   const glossaryLemmas = lesson.glossary.map((entry) => entry.lemma);
   const lemmas = [...new Set([...lesson.lemmas, ...glossaryLemmas])];
+  const language = languageOfId(lesson.id);
   const [statuses, userLevel, cardKeys] = await Promise.all([
-    getLexiconStatus(lemmas),
+    getLexiconStatus(lemmas, language),
     getUserLevel(),
     getExistingCardKeys(lesson.id, glossaryLemmas),
   ]);
@@ -164,7 +180,7 @@ export async function getLexiconSnapshot(lesson: {
     userLevel,
     levels: Object.fromEntries(
       lemmas.flatMap((lemma) => {
-        const level = levelOfLemma(lemma);
+        const level = levelOfLemma(lemma, language);
         return level ? [[lemma, level]] : [];
       }),
     ),
@@ -180,10 +196,14 @@ export async function getLexiconSnapshot(lesson: {
 export async function getCoverageByLesson(
   lessons: readonly Pick<LessonMeta, 'id' | 'version' | 'path'>[],
 ): Promise<Map<string, number>> {
-  const [lexicon, userLevel] = await Promise.all([getLexiconMap(), getUserLevel()]);
+  const [lexicon, userLevel, language] = await Promise.all([
+    getLexiconMap(),
+    getUserLevel(),
+    getPracticeLanguage(),
+  ]);
   const context = {
     statusOf: (lemma: string) => lexicon.get(lemma),
-    levelOf: levelOfLemma,
+    levelOf: (lemma: string) => levelOfLemma(lemma, language),
     userLevel,
   };
   return new Map(

@@ -9,6 +9,7 @@ import { ScoreBars } from '@/features/writing/components/score-bars';
 import type { Level, WritingFeedback } from '@/features/writing/lib/schema';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
+import { useContentLang } from '@/components/content-language';
 
 /** La corrección de la IA: valoración, rúbrica, correcciones, mejoras y foco. */
 export function AiFeedback({
@@ -22,6 +23,7 @@ export function AiFeedback({
   fichas: Record<string, string>;
 }) {
   const t = useT();
+  const lang = useContentLang();
 
   return (
     <div className="flex flex-col gap-6">
@@ -58,7 +60,7 @@ export function AiFeedback({
                     {index + 1}
                   </span>
                   <div className="flex min-w-0 flex-col gap-1.5">
-                    <p lang="en" className="flex flex-wrap items-baseline gap-x-2 text-body">
+                    <p lang={lang} className="flex flex-wrap items-baseline gap-x-2 text-body">
                       <del className="text-error">{correction.original}</del>
                       <ArrowRight aria-hidden="true" className="size-4 self-center text-muted" />
                       <ins className="font-medium text-success no-underline">
@@ -83,7 +85,7 @@ export function AiFeedback({
                         href={`/gramatica/${correction.grammar_ref}` as Route}
                         className="self-start text-accent-text underline underline-offset-4"
                       >
-                        {t('writing.openFicha')}: <span lang="en">{ficha}</span>
+                        {t('writing.openFicha')}: <span lang={lang}>{ficha}</span>
                       </Link>
                     ) : null}
                   </div>
@@ -99,7 +101,7 @@ export function AiFeedback({
           <summary className="cursor-pointer py-1 text-body-sm font-medium">
             {t('writing.correctedTitle')}
           </summary>
-          <p lang="en" className="prose-reading mt-2 whitespace-pre-wrap">
+          <p lang={lang} className="prose-reading mt-2 whitespace-pre-wrap">
             {feedback.corrected_text}
           </p>
         </details>
@@ -113,7 +115,7 @@ export function AiFeedback({
           <ul className="flex flex-col gap-3">
             {feedback.upgrades.map((upgrade, index) => (
               <li key={index} className="flex flex-col gap-1 text-body-sm">
-                <p lang="en" className="flex flex-wrap items-baseline gap-x-2 text-body">
+                <p lang={lang} className="flex flex-wrap items-baseline gap-x-2 text-body">
                   <span className="text-muted">{upgrade.from}</span>
                   <ArrowRight aria-hidden="true" className="size-4 self-center text-muted" />
                   <span className="font-medium text-accent-text">{upgrade.to}</span>

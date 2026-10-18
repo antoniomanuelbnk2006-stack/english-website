@@ -1,27 +1,26 @@
 import 'server-only';
-import { existsSync, readdirSync, readFileSync } from 'node:fs';
-import path from 'node:path';
+import { readFileSync } from 'node:fs';
+import type { Locale } from '@/lib/i18n';
+import { localize } from './help';
+import { assertLanguage, inLanguage, type PracticeLanguage } from './language';
+import { listLevelFiles } from './language-dirs';
 import { CONTENT_ROOT } from './index';
-import { PronunciationSet } from './pronunciation-schema';
+import { PronunciationSet, type RawPronunciationSet } from './pronunciation-schema';
 
 // Ejercicios de pronunciación publicados. El contenido no cambia mientras el servidor está en
 // marcha: se lee una vez y se guarda en memoria.
 
-const ROOT = path.join(CONTENT_ROOT, 'pronunciation');
+// Se guardan tal cual (con las ayudas sin resolver); cada acceso las resuelve al idioma pedido.
+let sets: Map<string, RawPronunciationSet> | null = null;
 
-let sets: Map<string, PronunciationSet> | null = null;
-
-function loadAll(): Map<string, PronunciationSet> {
+function loadAll(): Map<string, RawPronunciationSet> {
   if (sets) return sets;
-  const all = new Map<string, PronunciationSet>();
-  if (existsSync(ROOT)) {
-    for (const level of readdirSync(ROOT)) {
-      const dir = path.join(ROOT, level);
-      for (const file of readdirSync(dir).filter((name) => name.endsWith('.json'))) {
-        const set = PronunciationSet.parse(JSON.parse(readFileSync(path.join(dir, file), 'utf8')));
-        if (set.status === 'published') all.set(set.id, set);
-      }
-    }
+  const all = new Map<string, RawPronunciationSet>();
+  // Todos los idiomas: `content/pronunciation/` y `content/<idioma>/pronunciation/` (ADR-0035).
+  for (const file of listLevelFiles(CONTENT_ROOT, 'pronunciation', '.json')) {
+    const set = PronunciationSet.parse(JSON.parse(readFileSync(file.path, 'utf8')));
+    assertLanguage(set.id, file.language, file.path);
+    if (set.status === 'published') all.set(set.id, set);
   }
   sets = all;
   return all;
@@ -32,9 +31,13 @@ export type PronunciationMeta = Pick<
   'id' | 'level' | 'title' | 'summary_es' | 'focus' | 'sounds' | 'est_minutes'
 > & { items: number };
 
-/** Índice de los ejercicios publicados, por id (que ordena por nivel). */
-export function getPronunciationIndex(): PronunciationMeta[] {
-  return [...loadAll().values()]
+/** Índice de los ejercicios publicados, por id (que ordena por nivel), con las ayudas en `locale`. */
+export function getPronunciationIndex(
+  locale: Locale,
+  language: PracticeLanguage,
+): PronunciationMeta[] {
+  return inLanguage([...loadAll().values()], language)
+    .map((set) => localize(set, locale))
     .map(({ id, level, title, summary_es, focus, sounds, est_minutes, items }) => ({
       id,
       level,
@@ -48,6 +51,7 @@ export function getPronunciationIndex(): PronunciationMeta[] {
     .sort((a, b) => a.id.localeCompare(b.id));
 }
 
-export function findPronunciationSet(id: string): PronunciationSet | null {
-  return loadAll().get(id) ?? null;
+export function findPronunciationSet(id: string, locale: Locale): PronunciationSet | null {
+  const set = loadAll().get(id);
+  return set ? localize(set, locale) : null;
 }

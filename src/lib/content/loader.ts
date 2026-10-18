@@ -3,16 +3,19 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { cache } from 'react';
 import type { z } from 'zod';
+import { getLocale } from '@/lib/i18n/server';
+import { localize, type Localized } from './help';
 import { CONTENT_ROOT, findLessonMeta } from './index';
 import { Lesson, type PublishedListening, type PublishedReading } from './schema';
 
-export type ListeningLesson = z.infer<typeof PublishedListening>;
-export type ReadingLesson = z.infer<typeof PublishedReading>;
+export type ListeningLesson = Localized<z.infer<typeof PublishedListening>>;
+export type ReadingLesson = Localized<z.infer<typeof PublishedReading>>;
 
 /**
  * Lee una lección publicada de `content/` (contenido como código, ADR-0003).
  * Solo se cargan rutas que salen del índice generado, nunca de la URL.
- * Devuelve `null` si el id no corresponde a una lección publicada.
+ * Devuelve `null` si el id no corresponde a una lección publicada. Las ayudas salen ya en el
+ * idioma de la interfaz (ADR-0034).
  */
 export const loadLesson = cache(async (id: string): Promise<Lesson | null> => {
   const meta = findLessonMeta(id);
@@ -21,7 +24,7 @@ export const loadLesson = cache(async (id: string): Promise<Lesson | null> => {
   const file = path.join(CONTENT_ROOT, meta.path);
   const lesson = Lesson.parse(JSON.parse(await readFile(file, 'utf8')));
   if (lesson.status !== 'published') return null;
-  return lesson;
+  return localize(lesson, await getLocale());
 });
 
 export async function loadReadingLesson(id: string): Promise<ReadingLesson | null> {

@@ -29,6 +29,7 @@ import {
 import { getExamTests } from '@/lib/content/exams';
 import { getT } from '@/lib/i18n/server';
 import { cn } from '@/lib/utils';
+import { getPracticeLanguage } from '@/features/profile/server/queries';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('nav.exams') };
@@ -54,7 +55,7 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
   // Sin nivel en la URL se enseña el examen del nivel del usuario.
   const level = CEFR_LEVELS.find((l) => l === first(params.nivel)) ?? userLevel;
   const format = EXAM_FORMATS[level];
-  const tests = getExamTests().filter((test) => test.level === level);
+  const tests = getExamTests(await getPracticeLanguage()).filter((test) => test.level === level);
 
   return (
     <PageContainer>

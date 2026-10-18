@@ -1,5 +1,8 @@
 import type { z } from 'zod';
-import type { Lesson, LessonDraft, Task, Token } from './schema';
+import { helpLabel } from './help';
+import { languageOfId, withoutLanguage } from './language';
+// Las comprobaciones miran los archivos tal cual, con las ayudas sin resolver.
+import type { LessonDraft, RawLesson as Lesson, RawTask as Task, Token } from './schema';
 
 // Invariantes del contenido que el esquema Zod no puede expresar
 // (docs/04-arquitectura/04-modelo-de-contenido.md §3). Lógica pura: no lee disco ni red.
@@ -201,7 +204,7 @@ export function checkInvariants(
   const kind = lesson.skill === 'listening' ? 'lis' : 'rea';
 
   // I-1 · id, fichero, carpeta, nivel y destreza coherentes.
-  if (!lesson.id.startsWith(`${level}-${kind}-`)) {
+  if (!withoutLanguage(lesson.id).startsWith(`${level}-${kind}-`)) {
     issues.push({
       code: 'I-1',
       message: `el id «${lesson.id}» no corresponde a level ${lesson.level} y skill ${lesson.skill}`,
@@ -216,7 +219,13 @@ export function checkInvariants(
       });
     }
   }
-  if (!lesson.unit.startsWith(`${level}-`)) {
+  if (languageOfId(lesson.unit) !== languageOfId(lesson.id)) {
+    issues.push({
+      code: 'I-1',
+      message: `la unidad ${lesson.unit} es de otro idioma que la lección`,
+    });
+  }
+  if (!withoutLanguage(lesson.unit).startsWith(`${level}-`)) {
     issues.push({
       code: 'I-1',
       message: `la unidad «${lesson.unit}» no es del nivel ${lesson.level}`,
@@ -295,7 +304,7 @@ export function checkInvariants(
         if (!exists(ref)) {
           issues.push({
             code: 'I-3',
-            message: `language_focus «${focus.title_es}»: ref «${ref}» no existe`,
+            message: `language_focus «${helpLabel(focus.title_es)}»: ref «${ref}» no existe`,
           });
         }
       }

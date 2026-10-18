@@ -1,0 +1,53 @@
+{
+  "id": "es-a1-wri-002",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "task_type": "message",
+  "title": "Mi familia",
+  "topic": "relationships",
+  "context_es": {
+    "en": "You have a new pen pal who is learning your language. He asks about your family, so you write him a short message.",
+    "fr": "Vous avez un nouveau correspondant qui apprend votre langue. Il vous demande de parler de votre famille ; vous lui écrivez un court message.",
+    "zh": "你有一位新笔友，他在学你的语言。他问起你的家人，你给他写了一条简短的消息。",
+    "ja": "あなたには、あなたの言語を勉強している新しいペンフレンドがいます。家族について聞かれたので、短いメッセージを書きます。"
+  },
+  "prompt_en": "Tienes un amigo por correspondencia que se llama Pablo. Escríbele un mensaje y háblale de tu familia.",
+  "points": [
+    "cuántas personas hay en tu familia",
+    "cómo se llaman y cuántos años tienen",
+    "qué hacen o a qué se dedican"
+  ],
+  "words_min": 25,
+  "words_max": 50,
+  "time_min": 10,
+  "useful_language": [
+    "Hola, Pablo:",
+    "En mi familia somos …",
+    "Mi madre / mi padre se llama …",
+    "Tiene … años.",
+    "Mi hermano estudia / trabaja en …",
+    "Un saludo,"
+  ],
+  "tips_es": [
+    {
+      "en": "For each person use *se llama… / tiene… años / trabaja en…*: it keeps the message clear.",
+      "fr": "Pour chaque personne, utilisez *se llama… / tiene… años / trabaja en…* : le message reste clair.",
+      "zh": "每个人都用 *se llama… / tiene… años / trabaja en…*，这样信息就很清楚。",
+      "ja": "一人ずつ *se llama… / tiene… años / trabaja en…* を使うと、わかりやすい文になります。"
+    },
+    {
+      "en": "Remember the agreement: *mi hermana* (feminine) but *mi hermano* (masculine).",
+      "fr": "N’oubliez pas l’accord : *mi hermana* (féminin) mais *mi hermano* (masculin).",
+      "zh": "注意性的一致：*mi hermana*（阴性）和 *mi hermano*（阳性）。",
+      "ja": "性の一致に注意：*mi hermana*（女性）と *mi hermano*（男性）。"
+    }
+  ],
+  "model_answer": "Hola, Pablo:\n\nEn mi familia somos cuatro. Mi padre se llama Juan y trabaja en un hospital. Mi madre se llama Ana y es profesora. Mi hermano Luis tiene diez años y estudia en la escuela.\n\nUn saludo,\nMarta",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

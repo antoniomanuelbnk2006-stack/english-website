@@ -1,21 +1,33 @@
-import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import type { PracticeLanguage } from '../../../src/lib/content/language';
+import { contentDirs, listLevelFiles } from '../../../src/lib/content/language-dirs';
 
 /** Raíz del contenido. `CONTENT_DIR` permite apuntar a un contenido de prueba (tests e2e). */
 export const CONTENT_DIR = path.resolve(process.cwd(), process.env.CONTENT_DIR ?? 'content');
-export const LESSONS_DIR = path.join(CONTENT_DIR, 'lessons');
 export const INDEX_FILE = path.join(CONTENT_DIR, 'index.generated.json');
 
 export interface LessonFile {
   /** Ruta absoluta. */
   file: string;
-  /** Ruta relativa a content/lessons con «/»: «b1/listening/b1-lis-001.json». */
+  /** Idioma de la lección: el de su carpeta (ADR-0035). */
+  language: PracticeLanguage;
+  /** Ruta relativa a la carpeta de lecciones de su idioma, con «/»: «b1/listening/b1-lis-001.json». */
   relativePath: string;
+  /** Ruta relativa a `content/`, con «/»: «lessons/b1/…» o «es/lessons/a1/…». */
+  contentPath: string;
   /** Id que sugiere el nombre del fichero. */
   id: string;
 }
 
-export function listLessonFiles(dir = LESSONS_DIR): LessonFile[] {
+/** Las lecciones de todos los idiomas: primero las de inglés, y en cada idioma por ruta. */
+export function listLessonFiles(): LessonFile[] {
+  return contentDirs(CONTENT_DIR, 'lessons').flatMap(({ language, dir }) =>
+    lessonFilesIn(dir, language),
+  );
+}
+
+function lessonFilesIn(dir: string, language: PracticeLanguage): LessonFile[] {
   const files: LessonFile[] = [];
   const walk = (current: string) => {
     for (const entry of readdirSync(current, { withFileTypes: true })) {
@@ -24,7 +36,9 @@ export function listLessonFiles(dir = LESSONS_DIR): LessonFile[] {
       else if (entry.name.endsWith('.json')) {
         files.push({
           file: full,
+          language,
           relativePath: path.relative(dir, full).split(path.sep).join('/'),
+          contentPath: path.relative(CONTENT_DIR, full).split(path.sep).join('/'),
           id: entry.name.replace(/\.json$/, ''),
         });
       }
@@ -34,18 +48,13 @@ export function listLessonFiles(dir = LESSONS_DIR): LessonFile[] {
   return files.sort((a, b) => a.relativePath.localeCompare(b.relativePath));
 }
 
-/** Pruebas de los simulacros de examen: `content/exams/{nivel}/{id}.json`. */
-export function listExamFiles(): { file: string; id: string }[] {
-  const root = path.join(CONTENT_DIR, 'exams');
-  if (!existsSync(root)) return [];
-  return readdirSync(root)
-    .sort()
-    .flatMap((level) =>
-      readdirSync(path.join(root, level))
-        .filter((name) => name.endsWith('.json'))
-        .sort()
-        .map((name) => ({ file: path.join(root, level, name), id: name.replace(/\.json$/, '') })),
-    );
+/** Pruebas de los simulacros de examen de todos los idiomas: `[<idioma>/]exams/{nivel}/{id}.json`. */
+export function listExamFiles(): { file: string; id: string; language: PracticeLanguage }[] {
+  return listLevelFiles(CONTENT_DIR, 'exams', '.json').map(({ path: file, id, language }) => ({
+    file,
+    id,
+    language,
+  }));
 }
 
 export function readJson(file: string): unknown {

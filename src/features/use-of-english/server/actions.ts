@@ -10,6 +10,8 @@ import { requireUser } from '@/lib/auth';
 import { findUoeSet } from '@/lib/content/uoe';
 import { UoeId } from '@/lib/content/uoe-schema';
 import type { Json } from '@/lib/supabase/database.types';
+import { getLocale } from '@/lib/i18n/server';
+import { languageOfId } from '@/lib/content/language';
 
 const toJson = (value: unknown): Json => JSON.parse(JSON.stringify(value)) as Json;
 
@@ -46,15 +48,17 @@ export async function submitUoe(input: unknown): Promise<ActionResult<UoeResult>
   if (!session.ok) return fail('unauthorized');
   const { supabase } = session;
 
-  const set = findUoeSet(setId);
+  const set = findUoeSet(setId, await getLocale());
   if (!set) return fail('not_found');
   if (set.version !== version) return fail('conflict');
 
   const result = gradeUoe(set, Object.fromEntries(answers.map((a) => [a.n, a.value])));
 
+  const language = languageOfId(set.id);
   const { data: ratingRow, error: ratingError } = await supabase
     .from('skill_ratings')
     .select('rating')
+    .eq('language', language)
     .eq('skill', 'grammar')
     .maybeSingle();
   if (ratingError) return fail('internal');
@@ -84,6 +88,7 @@ export async function submitUoe(input: unknown): Promise<ActionResult<UoeResult>
 
   const { error } = await supabase.rpc('apply_lesson_attempts', {
     p_lesson_id: set.id,
+    p_language: language,
     p_lesson_version: set.version,
     p_attempts: toJson(rows),
     p_ratings: {},
@@ -115,7 +120,7 @@ export async function addUoeCards(input: unknown): Promise<ActionResult<{ added:
   const session = await requireUser();
   if (!session.ok) return fail('unauthorized');
 
-  const set = findUoeSet(parsed.data.setId);
+  const set = findUoeSet(parsed.data.setId, await getLocale());
   if (!set) return fail('not_found');
 
   const cards = [...new Set(parsed.data.items)].flatMap((n) => {
@@ -124,7 +129,7 @@ export async function addUoeCards(input: unknown): Promise<ActionResult<{ added:
   });
   if (cards.length === 0) return fail('invalid_input');
 
-  const result = await insertCards(session.supabase, cards);
+  const result = await insertCards(session.supabase, cards, languageOfId(set.id));
   if (!result) return fail('internal');
   return ok(result);
 }

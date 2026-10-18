@@ -1,4 +1,4 @@
-import type { Lesson, LessonDraft } from '../../../src/lib/content/schema';
+import type { LessonDraft, RawLesson } from '../../../src/lib/content/schema';
 import { referenceTexts } from '../../../src/lib/content/invariants';
 import { LEVEL_PROFILE } from './metrics';
 import { CEFR, type Cefr } from './wordlists';
@@ -21,7 +21,7 @@ export interface QaIssue {
   message: string;
 }
 
-type AnyLesson = LessonDraft | Lesson;
+type AnyLesson = LessonDraft | RawLesson;
 
 export interface LessonMetrics {
   /** Fracción de tokens contables de nivel ≤ el de la lección. */

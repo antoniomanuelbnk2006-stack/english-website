@@ -7,6 +7,8 @@ import { requireUser } from '@/lib/auth';
 import { findPronunciationSet } from '@/lib/content/pronunciation';
 import { PronunciationId } from '@/lib/content/pronunciation-schema';
 import type { Json } from '@/lib/supabase/database.types';
+import { getLocale } from '@/lib/i18n/server';
+import { languageOfId } from '@/lib/content/language';
 
 const toJson = (value: unknown): Json => JSON.parse(JSON.stringify(value)) as Json;
 
@@ -44,7 +46,7 @@ export async function savePronunciation(input: unknown): Promise<ActionResult<{ 
   if (!session.ok) return fail('unauthorized');
   const { supabase } = session;
 
-  const set = findPronunciationSet(setId);
+  const set = findPronunciationSet(setId, await getLocale());
   if (!set) return fail('not_found');
   if (set.version !== version) return fail('conflict');
 
@@ -54,9 +56,11 @@ export async function savePronunciation(input: unknown): Promise<ActionResult<{ 
   );
   if (valid.length === 0) return fail('invalid_input');
 
+  const language = languageOfId(set.id);
   const { data: ratingRow, error: ratingError } = await supabase
     .from('skill_ratings')
     .select('rating')
+    .eq('language', language)
     .eq('skill', 'speaking')
     .maybeSingle();
   if (ratingError) return fail('internal');
@@ -67,6 +71,7 @@ export async function savePronunciation(input: unknown): Promise<ActionResult<{ 
 
   const { error } = await supabase.rpc('apply_lesson_attempts', {
     p_lesson_id: set.id,
+    p_language: language,
     p_lesson_version: set.version,
     p_attempts: toJson(
       valid.map((result) => ({

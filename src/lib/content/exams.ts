@@ -1,28 +1,27 @@
 import 'server-only';
-import { existsSync, readdirSync, readFileSync } from 'node:fs';
-import path from 'node:path';
+import { readFileSync } from 'node:fs';
+import type { Locale } from '@/lib/i18n';
 import { EXAM_PAPERS, type ExamLevel, type ExamPaperKind } from './exam-formats';
-import { ExamPaper, parsePaperId } from './exam-schema';
+import { ExamPaper, parsePaperId, type RawExamPaper } from './exam-schema';
+import { localize } from './help';
+import { assertLanguage, inLanguage, type PracticeLanguage } from './language';
+import { listLevelFiles } from './language-dirs';
 import { CONTENT_ROOT } from './index';
 
 // Simulacros de examen publicados. El contenido no cambia mientras el servidor está en marcha:
 // se lee una vez y se guarda en memoria.
 
-const ROOT = path.join(CONTENT_ROOT, 'exams');
+// Se guardan tal cual (con las ayudas sin resolver); cada acceso las resuelve al idioma pedido.
+let papers: Map<string, RawExamPaper> | null = null;
 
-let papers: Map<string, ExamPaper> | null = null;
-
-function loadAll(): Map<string, ExamPaper> {
+function loadAll(): Map<string, RawExamPaper> {
   if (papers) return papers;
-  const all = new Map<string, ExamPaper>();
-  if (existsSync(ROOT)) {
-    for (const level of readdirSync(ROOT)) {
-      const dir = path.join(ROOT, level);
-      for (const file of readdirSync(dir).filter((name) => name.endsWith('.json'))) {
-        const paper = ExamPaper.parse(JSON.parse(readFileSync(path.join(dir, file), 'utf8')));
-        if (paper.status === 'published') all.set(paper.id, paper);
-      }
-    }
+  const all = new Map<string, RawExamPaper>();
+  // Todos los idiomas: `content/exams/` y `content/<idioma>/exams/` (ADR-0035).
+  for (const file of listLevelFiles(CONTENT_ROOT, 'exams', '.json')) {
+    const paper = ExamPaper.parse(JSON.parse(readFileSync(file.path, 'utf8')));
+    assertLanguage(paper.id, file.language, file.path);
+    if (paper.status === 'published') all.set(paper.id, paper);
   }
   papers = all;
   return all;
@@ -37,9 +36,9 @@ export interface ExamTest {
 }
 
 /** Los simulacros publicados, por nivel y número, con las pruebas que tiene cada uno. */
-export function getExamTests(): ExamTest[] {
+export function getExamTests(language: PracticeLanguage): ExamTest[] {
   const tests = new Map<string, ExamTest>();
-  for (const paper of loadAll().values()) {
+  for (const paper of inLanguage([...loadAll().values()], language)) {
     const parsed = parsePaperId(paper.id);
     if (!parsed) continue;
     const key = `${paper.level}:${parsed.test}`;
@@ -57,6 +56,7 @@ export function getExamTests(): ExamTest[] {
     .sort((a, b) => a.level.localeCompare(b.level) || a.test - b.test);
 }
 
-export function findExamPaper(id: string): ExamPaper | null {
-  return loadAll().get(id) ?? null;
+export function findExamPaper(id: string, locale: Locale): ExamPaper | null {
+  const paper = loadAll().get(id);
+  return paper ? localize(paper, locale) : null;
 }

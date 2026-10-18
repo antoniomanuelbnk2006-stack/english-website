@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { BASE_LANGUAGE, PRACTICE_LANGUAGES } from '@/lib/content/language';
 import { THEMES } from '@/lib/theme';
 
 export const READING_FONT_MIN = 16;
@@ -17,6 +18,8 @@ export const ProfileSettings = z.object({
   playback_rate: z.number().min(PLAYBACK_RATE_MIN).max(PLAYBACK_RATE_MAX).catch(1),
   /** Una palabra vista en 3 textos sin consultarla pasa a conocida. */
   implicit_promotion: z.boolean().catch(true),
+  /** El idioma que practica (ADR-0036): cada sección enseña solo el contenido de ese idioma. */
+  practice_language: z.enum(PRACTICE_LANGUAGES).catch(BASE_LANGUAGE),
 });
 export type ProfileSettings = z.infer<typeof ProfileSettings>;
 
@@ -26,6 +29,7 @@ export const DEFAULT_SETTINGS: ProfileSettings = {
   reader_paper: false,
   playback_rate: 1,
   implicit_promotion: true,
+  practice_language: BASE_LANGUAGE,
 };
 
 /** Lee el jsonb de la BD sin fallar nunca: lo que falte o no valga toma su valor por defecto. */

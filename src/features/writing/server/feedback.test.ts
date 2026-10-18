@@ -4,7 +4,7 @@ import { feedbackErrorOf } from '@/features/writing/lib/api';
 import type { Attempt, FailureReason } from '@/features/writing/lib/limits';
 import { checkLimits, usageFrom } from '@/features/writing/lib/limits';
 import type { WritingFeedbackOutput } from '@/features/writing/lib/schema';
-import { WRITING_SYSTEM_PROMPT } from '@/lib/ai/prompts/writing';
+import { WRITING_SYSTEM_PROMPT, writingSystemPrompt } from '@/lib/ai/prompts/writing';
 import type { WritingPrompt } from '@/lib/content/writing-schema';
 import { isSameOrigin } from '@/lib/http';
 import {
@@ -168,7 +168,13 @@ const deps = (store: FeedbackStore, m: FeedbackModel): FeedbackDeps => ({
   grammarIds: ['a1.present-simple'],
   now: NOW,
 });
-const INPUT = { prompt: PROMPT, text: TEXT, examMode: false, activeSeconds: 600 };
+const INPUT = {
+  prompt: PROMPT,
+  text: TEXT,
+  examMode: false,
+  activeSeconds: 600,
+  locale: 'es' as const,
+};
 
 const attempt = (over: Partial<Attempt> = {}): Attempt => ({
   createdAt: '2026-10-09T08:00:00Z',
@@ -245,8 +251,18 @@ describe('requestFeedback', () => {
       instructions: expect.stringContaining('Is it better to learn in a classroom'),
       text: TEXT,
       grammarIds: ['a1.present-simple'],
+      locale: 'es',
+      language: 'en',
     });
     expect(m.assess.mock.calls[0]![0].instructions).toContain('Length: 140–190 words.');
+  });
+
+  it('con la interfaz en otro idioma, se lo pasa al modelo y lo apunta en la versión', async () => {
+    const { store, rows } = memoryStore();
+    const m = model({ ok: true, output: OUTPUT, usage: USAGE });
+    await requestFeedback(deps(store, m), { ...INPUT, locale: 'fr' });
+    expect(m.assess.mock.calls[0]![0]).toMatchObject({ locale: 'fr' });
+    expect(rows[0]!.feedback).toMatchObject({ prompt_version: 'writing@1+fr' });
   });
 
   it('el límite diario corta antes de llamar y sin registrar nada', async () => {
@@ -466,6 +482,7 @@ const TASK = {
   instructions: 'Write an essay.',
   text: TEXT,
   grammarIds: ['a1.present-simple'],
+  locale: 'es' as const,
 };
 
 describe('anthropicModel (SDK simulado)', () => {
@@ -531,6 +548,14 @@ describe('anthropicModel (SDK simulado)', () => {
       reason: 'api',
       usage: null,
     });
+  });
+
+  it('con la interfaz en otro idioma, usa el prompt del sistema de ese idioma', async () => {
+    const { client, create } = sdk(message());
+    await anthropicModel(client, 'm').assess({ ...TASK, locale: 'ja' });
+    expect(create.mock.calls[0]![0].system).toEqual([
+      { type: 'text', text: writingSystemPrompt('ja'), cache_control: { type: 'ephemeral' } },
+    ]);
   });
 
   it('acepta los valores de lista con otra caja en vez de perder la corrección', async () => {

@@ -25,6 +25,7 @@ const attempt = (n: number, itemId: string, score: number) => ({
 
 const TABLES = [
   'profiles',
+  'language_levels',
   'skill_ratings',
   'rating_history',
   'lesson_progress',

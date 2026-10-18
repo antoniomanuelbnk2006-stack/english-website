@@ -15,6 +15,7 @@ import {
   type InterestTopic,
 } from '@/features/profile/lib/settings';
 import { updateSettings } from '@/features/profile/server/actions';
+import type { PracticeLanguage } from '@/lib/content/language';
 import { LOCALES, LOCALE_NAMES, htmlLang, type Locale } from '@/lib/i18n';
 import { useT } from '@/lib/i18n/client';
 import type { Theme } from '@/lib/theme';
@@ -24,13 +25,21 @@ export interface SettingsValues {
   dailyGoalMin: number;
   interests: string[];
   uiLocale: Locale;
+  practiceLanguage: PracticeLanguage;
   theme: Theme;
   readingFontPx: number;
   readerPaper: boolean;
   playbackRate: number;
 }
 
-export function SettingsForm({ initial }: { initial: SettingsValues }) {
+export function SettingsForm({
+  initial,
+  practiceLanguages,
+}: {
+  initial: SettingsValues;
+  /** Los idiomas con contenido, con su nombre en el de la interfaz. */
+  practiceLanguages: readonly { value: PracticeLanguage; name: string }[];
+}) {
   const t = useT();
   const router = useRouter();
   const [values, setValues] = useState(initial);
@@ -73,6 +82,31 @@ export function SettingsForm({ initial }: { initial: SettingsValues }) {
       <PageSections>
         <Panel className="flex flex-col gap-6">
           <PanelTitle>{t('settings.studyTitle')}</PanelTitle>
+
+          {/* Mientras solo haya contenido de un idioma, no hay nada que elegir (ADR-0036). */}
+          {practiceLanguages.length > 1 ? (
+            <div className="flex flex-col gap-2">
+              <Label htmlFor="settings-practice">{t('settings.practiceLabel')}</Label>
+              <Select
+                id="settings-practice"
+                className="max-w-64"
+                aria-describedby="settings-practice-hint"
+                value={values.practiceLanguage}
+                onChange={(event) =>
+                  set('practiceLanguage', event.target.value as PracticeLanguage)
+                }
+              >
+                {practiceLanguages.map(({ value, name }) => (
+                  <option key={value} value={value}>
+                    {name}
+                  </option>
+                ))}
+              </Select>
+              <p id="settings-practice-hint" className="text-body-sm text-muted">
+                {t('settings.practiceHint')}
+              </p>
+            </div>
+          ) : null}
 
           <div className="flex flex-col gap-2">
             <Label htmlFor="settings-goal">{t('settings.goalLabel')}</Label>

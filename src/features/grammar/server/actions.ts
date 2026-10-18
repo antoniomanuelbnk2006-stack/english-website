@@ -10,6 +10,8 @@ import { requireUser } from '@/lib/auth';
 import { findFicha } from '@/lib/content/grammar';
 import { GrammarId } from '@/lib/content/schema';
 import type { Json } from '@/lib/supabase/database.types';
+import { getLocale } from '@/lib/i18n/server';
+import { languageOfId } from '@/lib/content/language';
 
 const toJson = (value: unknown): Json => JSON.parse(JSON.stringify(value)) as Json;
 
@@ -25,7 +27,7 @@ export async function markFichaSeen(input: unknown): Promise<ActionResult<null>>
 
   const session = await requireUser();
   if (!session.ok) return fail('unauthorized');
-  if (!findFicha(parsed.data.grammarId)) return fail('not_found');
+  if (!findFicha(parsed.data.grammarId, await getLocale())) return fail('not_found');
 
   const { error } = await session.supabase
     .from('lesson_progress')
@@ -72,7 +74,7 @@ export async function submitPractice(input: unknown): Promise<ActionResult<Pract
   if (!session.ok) return fail('unauthorized');
   const { supabase } = session;
 
-  const ficha = findFicha(grammarId);
+  const ficha = findFicha(grammarId, await getLocale());
   if (!ficha) return fail('not_found');
   const { meta } = ficha;
 
@@ -81,9 +83,11 @@ export async function submitPractice(input: unknown): Promise<ActionResult<Pract
     new Map(answers.map((answer) => [answer.itemId, answer.text])),
   );
 
+  const language = languageOfId(meta.id);
   const { data: ratingRow, error: ratingError } = await supabase
     .from('skill_ratings')
     .select('rating')
+    .eq('language', language)
     .eq('skill', 'grammar')
     .maybeSingle();
   if (ratingError) return fail('internal');
@@ -111,6 +115,7 @@ export async function submitPractice(input: unknown): Promise<ActionResult<Pract
 
   const { error: applyError } = await supabase.rpc('apply_lesson_attempts', {
     p_lesson_id: meta.id,
+    p_language: language,
     p_lesson_version: 1,
     p_attempts: toJson(rows),
     p_ratings: {},
@@ -122,7 +127,7 @@ export async function submitPractice(input: unknown): Promise<ActionResult<Pract
   const cards = meta.practice
     .filter((item) => failed.includes(item.id))
     .map((item) => buildGrammarCard(meta, item));
-  const inserted = await insertCards(supabase, cards);
+  const inserted = await insertCards(supabase, cards, languageOfId(meta.id));
   if (!inserted) return fail('internal');
 
   return ok({ items: results, score, cardsAdded: inserted.added });

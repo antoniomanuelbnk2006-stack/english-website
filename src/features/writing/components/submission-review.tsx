@@ -14,6 +14,7 @@ import { locate } from '@/features/writing/lib/highlight';
 import type { Level, Scores, WritingFeedback } from '@/features/writing/lib/schema';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
+import { useContentLang } from '@/components/content-language';
 
 export type ReviewResult =
   | { kind: 'ai'; feedback: WritingFeedback }
@@ -61,6 +62,7 @@ export function SubmissionReview({
   footer,
 }: SubmissionReviewProps) {
   const t = useT();
+  const lang = useContentLang();
 
   const spans =
     result.kind === 'ai'
@@ -127,7 +129,7 @@ export function SubmissionReview({
                     {t('writing.modelTitle')}
                   </summary>
                   <p className="mt-2 text-body-sm text-muted">{t('writing.modelHint')}</p>
-                  <p lang="en" className="prose-reading mt-3 whitespace-pre-wrap">
+                  <p lang={lang} className="prose-reading mt-3 whitespace-pre-wrap">
                     {modelAnswer}
                   </p>
                 </details>

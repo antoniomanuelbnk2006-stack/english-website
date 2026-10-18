@@ -10,6 +10,8 @@ import {
 import { getSessionOrRedirect } from '@/lib/auth';
 import { startOfTodayMadrid } from '@/lib/dates';
 import type { Tables } from '@/lib/supabase/database.types';
+import { getPracticeLanguage } from '@/features/profile/server/queries';
+import { languageOfId } from '@/lib/content/language';
 
 export interface ReviewCard {
   id: string;
@@ -83,12 +85,15 @@ function toReviewCard(row: CardRow): ReviewCard[] {
 /** Lo que toca repasar ahora: vencidas (máx. 200) y las nuevas que quedan hoy. */
 export async function getReviewSession(): Promise<ReviewSession> {
   const { supabase } = await getSessionOrRedirect();
+  // Se repasa lo del idioma que se practica (ADR-0037).
+  const language = await getPracticeLanguage();
   const now = new Date();
 
   const [due, fresh, today, total] = await Promise.all([
     supabase
       .from('srs_cards')
       .select(CARD_COLUMNS)
+      .eq('language', language)
       .eq('suspended', false)
       .neq('state', 0)
       .lte('due', now.toISOString())
@@ -97,6 +102,7 @@ export async function getReviewSession(): Promise<ReviewSession> {
     supabase
       .from('srs_cards')
       .select(CARD_COLUMNS)
+      .eq('language', language)
       .eq('suspended', false)
       .eq('state', 0)
       .order('created_at')
@@ -105,7 +111,11 @@ export async function getReviewSession(): Promise<ReviewSession> {
       .from('srs_reviews')
       .select('state, duration_ms')
       .gte('review', startOfTodayMadrid().toISOString()),
-    supabase.from('srs_cards').select('id', { count: 'exact', head: true }).eq('suspended', false),
+    supabase
+      .from('srs_cards')
+      .select('id', { count: 'exact', head: true })
+      .eq('language', language)
+      .eq('suspended', false),
   ]);
   const error = due.error ?? fresh.error ?? today.error ?? total.error;
   if (error) throw new Error(`No se pudo preparar el repaso: ${error.message}`);
@@ -161,6 +171,7 @@ export async function getExistingCardKeys(lessonId: string, lemmas: readonly str
     const { data: byLemma, error: lemmaError } = await supabase
       .from('srs_cards')
       .select('kind, lemma')
+      .eq('language', languageOfId(lessonId))
       .in('lemma', [...new Set(lemmas)]);
     if (lemmaError) throw new Error(`No se pudieron leer las tarjetas: ${lemmaError.message}`);
     for (const card of byLemma) if (card.lemma) keys.add(`${card.kind}:${card.lemma}`);

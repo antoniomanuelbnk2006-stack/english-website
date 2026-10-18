@@ -189,7 +189,7 @@ export function buildDictionaryCard(entry: DictionaryEntry): NewCard {
     source_lesson_id: null,
     source_segment_id: `dict:${key}`,
     front: { sentence: entry.example, surface: entry.surface },
-    back: { pos: entry.pos.join(', '), def_es: entry.es },
+    back: { pos: entry.pos.join(', '), def_es: entry.translation },
   };
 }
 

@@ -14,6 +14,7 @@ import { saveSelfAssessment } from '@/features/writing/server/actions';
 import type { Translate } from '@/lib/i18n';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
+import { useContentLang } from '@/components/content-language';
 
 const SCORE_OPTIONS = Array.from({ length: MAX_SCORE + 1 }, (_, index) => index);
 
@@ -68,13 +69,14 @@ function describeCheck(t: Translate, check: FormCheck): string {
 
 function HintItem({ hint, number, ficha }: { hint: Hint; number?: number; ficha?: string }) {
   const t = useT();
+  const lang = useContentLang();
   return (
     <li className="flex gap-3 text-body-sm">
       <span aria-hidden="true" className="tabular-nums w-5 shrink-0 text-accent-text">
         {number ?? '·'}
       </span>
       <div className="flex min-w-0 flex-col gap-1.5">
-        <p lang="en" className="flex flex-wrap items-baseline gap-x-2 text-body">
+        <p lang={lang} className="flex flex-wrap items-baseline gap-x-2 text-body">
           {hint.suggestion === null ? (
             <span className="font-medium">{hint.match}</span>
           ) : (
@@ -99,7 +101,7 @@ function HintItem({ hint, number, ficha }: { hint: Hint; number?: number; ficha?
             href={`/gramatica/${hint.grammar_ref}` as Route}
             className="self-start text-accent-text underline underline-offset-4"
           >
-            {t('writing.openFicha')}: <span lang="en">{ficha}</span>
+            {t('writing.openFicha')}: <span lang={lang}>{ficha}</span>
           </Link>
         ) : null}
       </div>
@@ -126,6 +128,7 @@ export function SelfReview({
   fichas: Record<string, string>;
 }) {
   const t = useT();
+  const lang = useContentLang();
   const formId = useId();
   const [covered, setCovered] = useState<boolean[]>(() =>
     points.map((_, index) => initial.points[index] ?? false),
@@ -252,7 +255,7 @@ export function SelfReview({
                   }}
                   className="mt-1 size-4 shrink-0 accent-accent"
                 />
-                <span lang="en" className="text-body-sm">
+                <span lang={lang} className="text-body-sm">
                   {point}
                 </span>
               </label>

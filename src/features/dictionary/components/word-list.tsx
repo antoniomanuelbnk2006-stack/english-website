@@ -14,11 +14,13 @@ import { splitAround } from '@/features/srs/lib/cards';
 import { lemmaKey, type DictionaryPos } from '@/lib/content/dictionary-schema';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
+import { useContentLang } from '@/components/content-language';
 
 export interface WordView {
   lemma: string;
   pos: DictionaryPos[];
-  es: string;
+  /** Traducción, en el idioma de la interfaz. */
+  translation: string;
   example: string;
   surface: string;
   state: WordState;
@@ -40,9 +42,10 @@ export function Example({
   surface: string;
   className?: string;
 }) {
+  const lang = useContentLang();
   const parts = splitAround(sentence, surface);
   return (
-    <p lang="en" className={className}>
+    <p lang={lang} className={className}>
       {parts ? (
         <>
           {parts.before}
@@ -58,6 +61,7 @@ export function Example({
 
 function WordRow({ word }: { word: WordView }) {
   const t = useT();
+  const lang = useContentLang();
   const router = useRouter();
   // El cambio se enseña al momento; cuando el servidor devuelve el estado real, manda ese.
   const [override, setOverride] = useState<{ from: WordState; to: WordState } | null>(null);
@@ -90,7 +94,7 @@ function WordRow({ word }: { word: WordView }) {
     <li className="flex flex-col gap-3 rounded-card bg-surface p-4 sm:flex-row sm:items-start sm:justify-between">
       <div className="min-w-0">
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-          <span lang="en" className="text-body-lg leading-snug font-medium">
+          <span lang={lang} className="text-body-lg leading-snug font-medium">
             {word.lemma}
           </span>
           <span className="text-caption text-muted">
@@ -98,7 +102,7 @@ function WordRow({ word }: { word: WordView }) {
           </span>
           {badge ? <Chip className={badge.className}>{t(badge.label)}</Chip> : null}
         </div>
-        <p className="mt-0.5">{word.es}</p>
+        <p className="mt-0.5">{word.translation}</p>
         <Example
           sentence={word.example}
           surface={word.surface}

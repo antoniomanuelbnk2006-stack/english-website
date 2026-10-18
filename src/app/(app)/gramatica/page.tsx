@@ -18,8 +18,10 @@ import { getUserLevel } from '@/features/lexicon/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
 import { getGrammarIndex } from '@/lib/content/grammar';
 import type { TranslationKey } from '@/lib/i18n';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
 import { cn } from '@/lib/utils';
+import { getPracticeLanguage } from '@/features/profile/server/queries';
+import { contentLang } from '@/lib/content/language';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('nav.grammar') };
@@ -35,7 +37,7 @@ const STATE: Record<FichaState, { icon: LucideIcon; label: TranslationKey; class
 export default async function GrammarPage() {
   await getSessionOrRedirect();
   const t = await getT();
-  const fichas = getGrammarIndex();
+  const fichas = getGrammarIndex(await getLocale(), await getPracticeLanguage());
 
   if (fichas.length === 0) {
     return (
@@ -79,7 +81,10 @@ export default async function GrammarPage() {
                         className="card flex h-full flex-col gap-3 border border-transparent transition-colors duration-150 hover:border-border"
                       >
                         <div className="flex items-start justify-between gap-3">
-                          <h3 lang="en" className="text-body-lg leading-snug font-medium">
+                          <h3
+                            lang={contentLang(ficha.id)}
+                            className="text-body-lg leading-snug font-medium"
+                          >
                             {ficha.title}
                           </h3>
                           <span

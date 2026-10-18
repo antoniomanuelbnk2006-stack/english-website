@@ -4,6 +4,7 @@ import { describe, expect, it } from 'vitest';
 import { canonicalWords } from '@/features/pronunciation/lib/assess';
 import { buildDictionaryCard, CardContent } from '@/features/srs/lib/cards';
 import { checkDictionaryFile, DictionaryFile, lemmaKey } from './dictionary-schema';
+import { localize } from './help';
 import { checkPronunciationSet, PronunciationSet } from './pronunciation-schema';
 
 const CONTENT = path.join(process.cwd(), 'content');
@@ -12,7 +13,7 @@ const read = (file: string): unknown => JSON.parse(readFileSync(file, 'utf8'));
 const entry = {
   lemma: 'abandon',
   pos: ['verb' as const],
-  es: 'abandonar',
+  translation: 'abandonar',
   example: 'They had to abandon the car.',
   surface: 'abandon',
 };
@@ -140,5 +141,30 @@ describe('ejercicios de pronunciación publicados', () => {
         ).not.toBe(target);
       }
     }
+  });
+});
+
+describe('traducciones del mazo (ADR-0034)', () => {
+  const base = { lemma: 'gato', pos: ['noun'], example: 'El gato duerme.', surface: 'gato' };
+
+  it('el mazo de inglés tiene la traducción en «es» y se lee como «translation»', () => {
+    const file = DictionaryFile.parse({
+      level: 'A1',
+      entries: [{ ...base, lemma: 'cat', example: 'The cat sleeps.', surface: 'cat', es: 'gato' }],
+    });
+    expect(file.entries[0]?.translation).toBe('gato');
+  });
+
+  it('el contenido nuevo trae una traducción por idioma de interfaz', () => {
+    const file = DictionaryFile.parse({
+      level: 'A1',
+      entries: [{ ...base, translation: { en: 'cat', fr: 'chat' } }],
+    });
+    expect(localize(file.entries[0], 'fr')?.translation).toBe('chat');
+    expect(localize(file.entries[0], 'ja')?.translation).toBe('cat');
+  });
+
+  it('sin traducción no vale', () => {
+    expect(DictionaryFile.safeParse({ level: 'A1', entries: [base] }).success).toBe(false);
   });
 });

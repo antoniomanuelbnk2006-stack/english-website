@@ -175,6 +175,7 @@ export const en: Dictionary = {
     lowConfidence: 'Estimate based on little data',
     chosenLabel: 'Chosen level: {level}',
     chooseTitle: 'Choose your level',
+    languageLegend: 'Which language do you want to practise?',
     chooseFirst:
       'First things first: tell us where you are. Your level decides which texts, audio and exercises you see.',
     chooseAgain: 'You can change it whenever you like: it only changes what you are shown first.',
@@ -462,6 +463,9 @@ export const en: Dictionary = {
     fontSample: 'Some games refuse to die.',
     paperLabel: 'Paper background in the reader',
     localeLabel: 'Interface language',
+    practiceLabel: 'Language you practise',
+    practiceHint:
+      'Each section shows only content in this language. Explanations stay in the interface language.',
     accountTitle: 'Account',
     signedInAs: 'You are signed in as {email}.',
     aboutTitle: 'About',

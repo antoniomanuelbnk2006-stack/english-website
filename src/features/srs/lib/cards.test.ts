@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { listeningFixture, SECRET_B } from '@/features/listening/lib/lesson.fixture';
+import { localize } from '@/lib/content/help';
 import { PublishedReading } from '@/lib/content/schema';
 import {
   buildAudioCard,
@@ -13,10 +14,13 @@ import {
   splitAround,
 } from './cards';
 
-const reading = PublishedReading.parse(
-  JSON.parse(
-    readFileSync(path.join(process.cwd(), 'content/lessons/b1/reading/b1-rea-001.json'), 'utf8'),
+const reading = localize(
+  PublishedReading.parse(
+    JSON.parse(
+      readFileSync(path.join(process.cwd(), 'content/lessons/b1/reading/b1-rea-001.json'), 'utf8'),
+    ),
   ),
+  'es',
 );
 
 describe('kindOfEntry', () => {

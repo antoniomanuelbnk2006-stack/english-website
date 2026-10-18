@@ -19,6 +19,8 @@ import { findWritingPrompt } from '@/lib/content/writing';
 import { WritingTaskType } from '@/lib/content/writing-schema';
 import { intlLocale } from '@/lib/i18n';
 import { getLocale, getT } from '@/lib/i18n/server';
+import { contentLang, languageOfId } from '@/lib/content/language';
+import { ContentLanguage } from '@/components/content-language';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('writing.historyTitle') };
@@ -36,9 +38,17 @@ export default async function WritingSubmissionPage({
   const { feedback } = submission;
 
   const [t, locale] = await Promise.all([getT(), getLocale()]);
-  const prompt = submission.promptId ? findWritingPrompt(submission.promptId) : null;
+  const prompt = submission.promptId
+    ? findWritingPrompt(submission.promptId, await getLocale())
+    : null;
   const taskType = WritingTaskType.safeParse(submission.taskType);
-  const fichas = Object.fromEntries(getGrammarIndex().map((ficha) => [ficha.id, ficha.title]));
+  const fichas = Object.fromEntries(
+    // Las fichas del idioma de la consigna; sin consigna, las de inglés, como antes.
+    getGrammarIndex(locale, languageOfId(submission.promptId ?? '')).map((ficha) => [
+      ficha.id,
+      ficha.title,
+    ]),
+  );
 
   // La revisión sin IA no se guarda: se recalcula del texto, que es determinista. Si la
   // consigna ya no existe, se revisa con los datos que quedaron en la entrega.
@@ -48,6 +58,7 @@ export default async function WritingSubmissionPage({
       : {
           kind: 'self',
           review: reviewText(submission.text, {
+            language: languageOfId(submission.promptId ?? ''),
             level: submission.level,
             taskType: taskType.success ? taskType.data : 'message',
             wordsMin: prompt?.words_min ?? 0,
@@ -84,7 +95,7 @@ export default async function WritingSubmissionPage({
           {t('writing.backToHistory')}
         </Link>
         {prompt ? (
-          <h1 lang="en" className="text-heading-sm sm:text-heading">
+          <h1 lang={contentLang(prompt.id)} className="text-heading-sm sm:text-heading">
             {prompt.title}
           </h1>
         ) : (
@@ -105,27 +116,29 @@ export default async function WritingSubmissionPage({
         </div>
       </header>
 
-      <SubmissionReview
-        submissionId={submission.id}
-        text={submission.text}
-        targetLevel={submission.level}
-        points={prompt?.points ?? []}
-        result={result}
-        modelAnswer={prompt?.model_answer ?? null}
-        cards={cards}
-        rewriteText={submission.rewriteText}
-        fichas={fichas}
-        footer={
-          prompt ? (
-            <Link
-              href={`/escribir/${prompt.id}` as Route}
-              className={buttonVariants({ variant: 'secondary' })}
-            >
-              {t('writing.redo')}
-            </Link>
-          ) : null
-        }
-      />
+      <ContentLanguage language={languageOfId(submission.promptId ?? '')}>
+        <SubmissionReview
+          submissionId={submission.id}
+          text={submission.text}
+          targetLevel={submission.level}
+          points={prompt?.points ?? []}
+          result={result}
+          modelAnswer={prompt?.model_answer ?? null}
+          cards={cards}
+          rewriteText={submission.rewriteText}
+          fichas={fichas}
+          footer={
+            prompt ? (
+              <Link
+                href={`/escribir/${prompt.id}` as Route}
+                className={buttonVariants({ variant: 'secondary' })}
+              >
+                {t('writing.redo')}
+              </Link>
+            ) : null
+          }
+        />
+      </ContentLanguage>
     </PageContainer>
   );
 }

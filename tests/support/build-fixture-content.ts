@@ -29,6 +29,8 @@ const WRITING = new Set(['a1-wri-001', 'b1-wri-001', 'b1-wri-004', 'b2-wri-001',
 const PRONUNCIATION = new Set(['a1-pro-001', 'b1-pro-002']);
 const EXAM_LISTENING = 'b2-exam-01-listening';
 const EXAMS = new Set(['b2-exam-01-reading', EXAM_LISTENING, 'b2-exam-01-speaking']);
+/** La única ficha de español: la que permite elegir el idioma que se practica. */
+const SPANISH_FICHA = 'es.a1.ser-estar';
 
 /** Mazo de palabras de prueba: pequeño y fijo, con y sin frecuencia para probar el orden. */
 const DICTIONARY = {
@@ -140,6 +142,78 @@ const examFile = path.join(FIXTURE_DIR, 'exams', 'b2', `${EXAM_LISTENING}.json`)
 const exam = JSON.parse(readFileSync(examFile, 'utf8')) as { status: string };
 exam.status = 'published';
 writeFileSync(examFile, `${JSON.stringify(exam, null, 2)}\n`);
+
+// Un segundo idioma (ADR-0036): con una ficha de español ya se puede elegir qué se practica. Va
+// con el formato de los idiomas nuevos: ayudas por idioma de interfaz y cuerpo en inglés.
+// El contenido real de español (content/es) no entra entero en los tests: una ficha de prueba, una
+// consigna y el mazo, así que añadir contenido real no cambia lo que ven.
+rmSync(path.join(FIXTURE_DIR, 'es'), { recursive: true, force: true });
+for (const file of ['writing/a1/es-a1-wri-001.json', 'dictionary/a1.json']) {
+  mkdirSync(path.dirname(path.join(FIXTURE_DIR, 'es', file)), { recursive: true });
+  cpSync(path.join(ROOT, 'content', 'es', file), path.join(FIXTURE_DIR, 'es', file));
+}
+const spanishDir = path.join(FIXTURE_DIR, 'es', 'grammar', 'a1');
+mkdirSync(spanishDir, { recursive: true });
+writeFileSync(
+  path.join(spanishDir, `${SPANISH_FICHA}.mdx`),
+  `---
+id: ${SPANISH_FICHA}
+level: A1
+title: "Ser y estar"
+summary_es:
+  en: "Two verbs for 'to be': ser for what something is, estar for where and how it is."
+  fr: "Deux verbes pour « être » : ser pour ce qu’est une chose, estar pour où et comment elle est."
+body_locale: en
+skills: [reading]
+related: []
+examples:
+  - text: "Soy de Madrid."
+    translation:
+      en: "I am from Madrid."
+      fr: "Je suis de Madrid."
+  - text: "Estoy en casa."
+    translation:
+      en: "I am at home."
+practice:
+${[
+  ['Yo ___ de Sevilla.', 'soy', 'Where you are from: ser.'],
+  ['Ana ___ en el parque.', 'está', 'Where someone is: estar.'],
+  ['Nosotros ___ estudiantes.', 'somos', 'What someone is: ser.'],
+  ['¿Cómo ___ tú hoy?', 'estás', 'How someone feels: estar.'],
+  ['La casa ___ grande.', 'es', 'What something is like: ser.'],
+]
+  .map(
+    ([prompt, answer, rule], i) =>
+      `  - id: p${i + 1}\n    prompt: "${prompt}"\n    answers: ["${answer}"]\n    rule_es:\n      en: "${rule}"`,
+  )
+  .join('\n')}
+---
+
+## In one sentence
+
+Spanish has two verbs for *to be*: **ser** for what something is, **estar** for where and how it is.
+
+## Form
+
+*Ser*: soy, eres, es, somos, sois, son. *Estar*: estoy, estás, está, estamos, estáis, están.
+
+## Use
+
+*Ser* for origin, jobs and descriptions; *estar* for places and moods.
+
+## Contrast with English
+
+English uses one verb, *to be*, for both.
+
+## Common mistakes
+
+*Soy en casa* → *Estoy en casa*.
+
+## How it sounds
+
+*Está* carries the stress on the last syllable.
+`,
+);
 
 script('build-index');
 script('validate', ['--offline']);

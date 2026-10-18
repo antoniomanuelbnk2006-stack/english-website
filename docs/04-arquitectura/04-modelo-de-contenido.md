@@ -14,14 +14,19 @@
 
 Ficheros: `content/lessons/{nivel}/{listening|reading}/{id}.json`. El estado (`draft` → `reviewed` → `published`) está dentro del JSON; la app solo muestra `published`.
 
+**Por idioma (ADR-0035).** El inglés está en la raíz de `content/` y sus ids no llevan prefijo. Cada otro idioma tiene su carpeta con la misma estructura (`content/es/lessons/a1/reading/es-a1-rea-001.json`, `content/es/units.json`…) y sus ids llevan el idioma delante: `es-a1-rea-001`, `es-a1-u01`, `es.a1.ser-estar`. Un archivo tiene que estar en la carpeta del idioma de su id; los cargadores, el índice y `pnpm content:validate` lo comprueban.
+
 ---
 
 ## 2. Esquemas (Zod v4)
 
 `src/lib/content/schema.ts`:
 
+Los campos `*_es` son **ayudas** (traducciones, explicaciones, resúmenes…), no lo que se aprende. Con `helpText()` (`src/lib/content/help.ts`, ADR-0034) cada uno admite una cadena —el contenido de inglés, con las ayudas en español— o un objeto con una ayuda por idioma de interfaz (`{ en, es?, fr?, zh?, ja? }`, el inglés obligatorio). Los cargadores las resuelven al idioma de la interfaz antes de que lleguen a las pantallas; los tipos que usan las pantallas son los ya resueltos (`Localized<…>`) y los de los archivos llevan delante `Raw`.
+
 ```ts
 import { z } from 'zod';
+import { helpText, type Localized } from './help';
 
 // ───────────── Enumeraciones ─────────────
 export const Cefr = z.enum(['A1', 'A2', 'B1', 'B2', 'C1', 'C2']);
@@ -72,11 +77,11 @@ export const GlossaryEntry = z.object({
   surface: z.string().min(1),         // tal como aparece en el texto
   pos: GlossaryPos,
   def_en: z.string().min(1),          // definición en inglés sencillo (≤ nivel de la lección)
-  def_es: z.string().min(1),          // traducción o explicación breve
+  def_es: helpText(),                 // traducción o explicación breve (ayuda)
   example: z.string().optional(),     // otra frase de ejemplo
   cefr: Cefr.optional(),
   ref: z.string().min(1),             // segmento o frase donde aparece
-  note_es: z.string().optional(),     // p. ej. «inglés británico; en EE. UU.: parking lot»
+  note_es: helpText().optional(),     // p. ej. «inglés británico; en EE. UU.: parking lot»
 });
 
 export const ConnectedSpeechFeature = z.object({
@@ -84,7 +89,7 @@ export const ConnectedSpeechFeature = z.object({
   phrase: z.string().min(1),          // fragmento literal del texto
   type: ConnectedSpeechType,
   ipa: z.string().optional(),
-  explanation_es: z.string().min(1),
+  explanation_es: helpText(),
 });
 
 export const Speaker = z.object({
@@ -105,7 +110,7 @@ const TaskBase = z.object({
   phase: Phase,
   prompt: z.string().min(1),               // enunciado (en true_false_ng, la afirmación)
   evidence: z.array(z.string()).min(1),    // segmentos/frases/párrafos con la respuesta
-  rationale_es: z.string().min(1),         // por qué es correcta y dónde está la trampa
+  rationale_es: helpText(),                // por qué es correcta y dónde está la trampa
   difficulty_offset: z.number().optional(),// ajuste manual sobre la dificultad calculada
 });
 
@@ -166,7 +171,8 @@ export const Task = z.discriminatedUnion('type', [
   McqTask, MultiSelectTask, TrueFalseTask, GapFillTask, MatchingTask,
   OrderingTask, ShortAnswerTask, DictationTask, HeadingMatchTask,
 ]);
-export type Task = z.infer<typeof Task>;
+export type RawTask = z.infer<typeof Task>;
+export type Task = Localized<RawTask>;
 
 // ───────────── Borrador ─────────────
 const Provenance = z.object({
@@ -188,7 +194,7 @@ const DraftBase = z.object({
   unit: UnitId,
   series: z.string().min(1),
   title: z.string().min(1),
-  summary_es: z.string().min(1),
+  summary_es: helpText(),
   topic: Topic,
   tags: z.array(z.string()).default([]),
   can_do: z.array(CanDoId).min(1),
@@ -226,8 +232,8 @@ export const ReadingDraft = DraftBase.extend({
   genre: ReadingGenre,
   paragraphs: z.array(DraftParagraph).min(1),
   language_focus: z.array(z.object({
-    title_es: z.string().min(1),
-    explanation_es: z.string().min(1),
+    title_es: helpText(),
+    explanation_es: helpText(),
     refs: z.array(z.string()).min(1),
   })).default([]),
   with_audio: z.boolean().default(true),
@@ -304,7 +310,8 @@ export const PublishedReading = ReadingDraft.extend({
 });
 
 export const Lesson = z.discriminatedUnion('skill', [PublishedListening, PublishedReading]);
-export type Lesson = z.infer<typeof Lesson>;
+export type RawLesson = z.infer<typeof Lesson>;
+export type Lesson = Localized<RawLesson>;
 
 // ───────────── Índice (content/index.generated.json) ─────────────
 export const LessonMeta = z.object({
@@ -315,7 +322,7 @@ export const LessonMeta = z.object({
   unit: UnitId,
   series: z.string(),
   title: z.string(),
-  summary_es: z.string(),            // una línea para la tarjeta de la biblioteca
+  summary_es: helpText(z.string()),  // una línea para la tarjeta de la biblioteca
   topic: Topic,
   genre: z.string(),
   accents: z.array(Accent),          // vacío en lectura sin audio
@@ -327,7 +334,8 @@ export const LessonMeta = z.object({
   lemmas: z.array(z.string()),
   path: z.string(),                  // ruta relativa del JSON
 });
-export type LessonMeta = z.infer<typeof LessonMeta>;
+export type RawLessonMeta = z.infer<typeof LessonMeta>;
+export type LessonMeta = Localized<RawLessonMeta>;
 ```
 
 ---
@@ -412,12 +420,12 @@ export type ListeningDraftLLM = z.infer<typeof ListeningDraftLLM>;
 
 | Tipo | Ubicación | Esquema (resumen) |
 |---|---|---|
-| Ficha de gramática | `content/grammar/{nivel}/{id}.mdx` | *Frontmatter* (`GrammarMeta` en `src/lib/content/grammar-schema.ts`): `id`, `level`, `title`, `summary_es`, `skills[]`, `related[]`, `examples[]` (`{ en, es }`) y `practice[]` (5 ítems `{ id, prompt con ___, answers[], rule_es }`); cuerpo MDX con secciones fijas ([gramática](../01-pedagogia/06-gramatica.md#2-formato-de-una-ficha)) |
+| Ficha de gramática | `content/grammar/{nivel}/{id}.mdx` | *Frontmatter* (`GrammarMeta` en `src/lib/content/grammar-schema.ts`): `id`, `level`, `title`, `summary_es`, `skills[]`, `related[]`, `examples[]` (`{ en, es }` en las de inglés; en el contenido nuevo `{ text, translation }`, con la traducción por idioma de interfaz; las dos se leen como `text` y `translation`), `practice[]` (5 ítems `{ id, prompt con ___, answers[], rule_es }`) y `body_locale` (idioma del cuerpo, `es` por defecto); cuerpo MDX con secciones fijas en el idioma del cuerpo ([gramática](../01-pedagogia/06-gramatica.md#2-formato-de-una-ficha), `GRAMMAR_SECTIONS_BY_LOCALE`). Las versiones del cuerpo en otros idiomas de interfaz van al lado, en `{id}.{idioma}.mdx`, solo con el cuerpo (ADR-0034) |
 | Use of English | `content/use-of-english/{nivel}/{id}.json` | `UoeSet` en `src/lib/content/uoe-schema.ts`: `id` (`b2-uoe-001`), `level`, `part` (`mcq_cloze`, `open_cloze`, `word_formation`, `key_word_transformation`), `title`, `summary_es`; texto con huecos `{{n}}` y `gaps[]`, o `items[]` con `keyword`, `before`, `after` y las dos mitades de la respuesta (`parts`); `explanation_es` en cada hueco ([ADR-0012](../adr/0012-use-of-english-y-nivel-declarado.md)) |
 | Unidades | `content/units.json` | `{ [unitId]: título }`: nombre de cada unidad para agrupar las bibliotecas |
 | Niveles de los lemas | `content/wordlists/levels.generated.json` | `{ A1: [lemas], … }`. Lo genera `pnpm content:index` a partir de las listas con licencia abierta; la app lo usa para saber qué palabras dar por conocidas según tu nivel. No se edita a mano |
 | Consigna de writing | `content/writing/{nivel}/{id}.json` (`b2-wri-001`) | `id`, `version`, `status`, `level`, `task_type`, `title`, `topic`, `context_es`, `prompt_en`, `points[]`, `words_min`, `words_max`, `time_min`, `useful_language[]`, `tips_es[]`, `model_answer`, `provenance`. Esquema en `src/lib/content/writing-schema.ts`. La longitud y los tipos de texto permitidos dependen del nivel, y la respuesta modelo tiene que cumplir la longitud y pasar la revisión automática ([ADR-0014](../adr/0014-writing-revision-sin-ia.md)) |
-| Mazo de palabras | `content/dictionary/{nivel}.json` (`b2.json`) | `DictionaryFile` en `src/lib/content/dictionary-schema.ts`: `level` y `entries[]` en orden alfabético, cada una con `lemma`, `pos[]`, `es` (traducción; acepciones separadas por `;`), `example`, `surface` (la palabra tal como sale en el ejemplo) y `rank` (posición en la NGSL, opcional). Los lemas y su nivel salen de `content/wordlists`; traducción y ejemplo son originales ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)) |
+| Mazo de palabras | `content/dictionary/{nivel}.json` (`b2.json`) | `DictionaryFile` en `src/lib/content/dictionary-schema.ts`: `level` y `entries[]` en orden alfabético, cada una con `lemma`, `pos[]`, `es` (traducción; acepciones separadas por `;`; en el contenido nuevo, `translation`, que admite una por idioma de interfaz, ADR-0034), `example`, `surface` (la palabra tal como sale en el ejemplo) y `rank` (posición en la NGSL, opcional). Los lemas y su nivel salen de `content/wordlists`; traducción y ejemplo son originales ([ADR-0015](../adr/0015-mazo-de-palabras-y-pronunciacion.md)) |
 | Ejercicio de pronunciación | `content/pronunciation/{nivel}/{id}.json` (`a1-pro-001`) | `PronunciationSet` en `src/lib/content/pronunciation-schema.ts`: `id`, `version`, `status`, `level`, `title`, `summary_es`, `focus`, `sounds[]` (AFI), `tip_es` (cómo se hace el sonido), `est_minutes` e `items[]` (4–16) con `id`, `text`, `ipa`, `es` y `confusions[]` (`{ heard, tip_es }`: lo que el reconocedor suele oír cuando sale mal, y el consejo) |
 | Prueba de simulacro de examen | `content/exams/{nivel}/{id}.json` (`b2-exam-01-reading`, `…-listening`, `…-speaking`) | `ExamPaper` en `src/lib/content/exam-schema.ts`: `id`, `version`, `status`, `level`, `paper` y `parts[]`. En Reading y Listening cada parte tiene `type` (`mcq`, `mcq_cloze`, `open_cloze`, `word_formation`, `key_word_transformation`, `gapped_text`, `matching`, `completion`, `writing`), `rubric` y sus preguntas, numeradas de corrido como en el cuadernillo, con `explanation_es`; las de Listening llevan `recording` (`speakers[]`, `segments[]` y, tras el pipeline, `audio { src, duration_s }`). En Speaking, cada parte tiene `kind`, `about_es`, `turns[]` (`examiner`, `shown`, `visuals[]`, `prompts[]`, `prep_s`, `answer_s`), `useful_language[]` y `tips_es[]`. Las partes, el número de preguntas y de opciones tienen que ser los del examen oficial (`src/lib/content/exam-formats.ts`); el validador lo comprueba ([ADR-0017](../adr/0017-simulacros-de-examen.md)) |
 | Drill | `content/drills/{tipo}/{id}.json` | `id`, `type`, `level_min`, `items[]` con `{ text, target, options?, audio_src, start?, end? }` |

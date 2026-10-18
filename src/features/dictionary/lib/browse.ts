@@ -62,7 +62,7 @@ export function matchesQuery(entry: DictionaryEntry, query: string): boolean {
   const needle = fold(query.trim());
   if (!needle) return true;
   if (fold(entry.lemma).startsWith(needle)) return true;
-  return fold(entry.es)
+  return fold(entry.translation)
     .split(/[^a-zñ]+/)
     .some((word) => word.startsWith(needle));
 }

@@ -1,11 +1,15 @@
 import { z } from 'zod';
+import { helpText, type Localized } from './help';
+import { DASH_PREFIX, withoutLanguage } from './language';
 import { Cefr } from './schema';
 
 // Ejercicios de pronunciación (ADR-0015): `content/pronunciation/{nivel}/{id}.json`. Cada uno
 // trabaja un sonido o un problema típico de quien habla español, con palabras y frases para decir
 // en voz alta.
 
-export const PronunciationId = z.string().regex(/^(a1|a2|b1|b2|c1|c2)-pro-\d{3}$/);
+export const PronunciationId = z
+  .string()
+  .regex(new RegExp(`^${DASH_PREFIX}(a1|a2|b1|b2|c1|c2)-pro-\\d{3}$`));
 
 export const PRONUNCIATION_FOCUS = [
   'vowels',
@@ -21,7 +25,7 @@ export type PronunciationFocus = (typeof PRONUNCIATION_FOCUS)[number];
 /** Lo que el reconocimiento suele oír cuando el sonido sale mal, y qué hacer para corregirlo. */
 const Confusion = z.object({
   heard: z.string().min(1).max(60),
-  tip_es: z.string().min(1).max(240),
+  tip_es: helpText(z.string().min(1).max(240)),
 });
 
 export const PronunciationItem = z.object({
@@ -32,7 +36,8 @@ export const PronunciationItem = z.object({
   es: z.string().min(1).max(160).optional(),
   confusions: z.array(Confusion).max(4).default([]),
 });
-export type PronunciationItem = z.infer<typeof PronunciationItem>;
+export type RawPronunciationItem = z.infer<typeof PronunciationItem>;
+export type PronunciationItem = Localized<RawPronunciationItem>;
 
 export const PronunciationSet = z.object({
   id: PronunciationId,
@@ -40,21 +45,22 @@ export const PronunciationSet = z.object({
   status: z.enum(['draft', 'published']),
   level: Cefr,
   title: z.string().min(1).max(80),
-  summary_es: z.string().min(1).max(240),
+  summary_es: helpText(z.string().min(1).max(240)),
   focus: z.enum(PRONUNCIATION_FOCUS),
   /** Sonidos que se trabajan, en AFI: `ɪ`, `iː`. */
   sounds: z.array(z.string().min(1).max(8)).max(6).default([]),
   /** Cómo se hace el sonido, explicado para quien habla español. */
-  tip_es: z.string().min(1).max(600),
+  tip_es: helpText(z.string().min(1).max(600)),
   est_minutes: z.number().int().positive().max(30),
   items: z.array(PronunciationItem).min(4).max(16),
 });
-export type PronunciationSet = z.infer<typeof PronunciationSet>;
+export type RawPronunciationSet = z.infer<typeof PronunciationSet>;
+export type PronunciationSet = Localized<RawPronunciationSet>;
 
 /** Reglas que el esquema no expresa. Devuelve los problemas encontrados (vacío = correcto). */
-export function checkPronunciationSet(set: PronunciationSet): string[] {
+export function checkPronunciationSet(set: RawPronunciationSet): string[] {
   const problems: string[] = [];
-  if (!set.id.startsWith(`${set.level.toLowerCase()}-`)) {
+  if (!withoutLanguage(set.id).startsWith(`${set.level.toLowerCase()}-`)) {
     problems.push(`el id ${set.id} no corresponde al nivel ${set.level}`);
   }
   const ids = new Set<string>();

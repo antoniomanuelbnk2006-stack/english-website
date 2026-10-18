@@ -11,27 +11,32 @@ import { Practice } from '@/features/grammar/components/practice';
 import { getSessionOrRedirect } from '@/lib/auth';
 import { compileFicha, findFicha, lessonsWithGrammar } from '@/lib/content/grammar';
 import type { TranslationKey } from '@/lib/i18n';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
+import { contentLang, languageOfId } from '@/lib/content/language';
+import { ContentLanguage } from '@/components/content-language';
 
 export async function generateMetadata({
   params,
 }: PageProps<'/gramatica/[id]'>): Promise<Metadata> {
   const { id } = await params;
-  return { title: findFicha(id)?.meta.title };
+  return { title: findFicha(id, await getLocale())?.meta.title };
 }
 
 export default async function FichaPage({ params }: PageProps<'/gramatica/[id]'>) {
   await getSessionOrRedirect();
   const { id } = await params;
-  const ficha = findFicha(id);
-  const Content = ficha ? await compileFicha(id) : null;
+  const locale = await getLocale();
+  const ficha = findFicha(id, locale);
+  const Content = ficha ? await compileFicha(id, locale) : null;
   if (!ficha || !Content) notFound();
 
   const t = await getT();
   const { meta } = ficha;
+  // Las fichas de inglés llevan su inglés en cursiva; las de otros idiomas, el suyo.
+  const lang = contentLang(meta.id);
   const lessons = lessonsWithGrammar(meta.id);
   const related = meta.related.flatMap((other) => {
-    const found = findFicha(other);
+    const found = findFicha(other, locale);
     return found ? [found.meta] : [];
   });
 
@@ -46,7 +51,7 @@ export default async function FichaPage({ params }: PageProps<'/gramatica/[id]'>
           <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
           {t('grammar.back')}
         </Link>
-        <h1 lang="en" className="text-heading-sm sm:text-heading">
+        <h1 lang={lang} className="text-heading-sm sm:text-heading">
           {meta.title}
         </h1>
         <p className="text-muted">{meta.summary_es}</p>
@@ -59,18 +64,18 @@ export default async function FichaPage({ params }: PageProps<'/gramatica/[id]'>
       </header>
 
       <Panel>
-        <Content components={fichaComponents(t('grammar.tableLabel'))} />
+        <Content components={fichaComponents(t('grammar.tableLabel'), lang)} />
       </Panel>
 
       <Panel className="flex flex-col gap-3">
         <PanelTitle>{t('grammar.examples')}</PanelTitle>
         <ul className="flex flex-col gap-3">
           {meta.examples.map((example) => (
-            <li key={example.en} className="flex flex-col gap-0.5">
-              <span lang="en" className="prose-reading">
-                {example.en}
+            <li key={example.text} className="flex flex-col gap-0.5">
+              <span lang={lang} className="prose-reading">
+                {example.text}
               </span>
-              <span className="text-body-sm text-muted">{example.es}</span>
+              <span className="text-body-sm text-muted">{example.translation}</span>
             </li>
           ))}
         </ul>
@@ -81,11 +86,13 @@ export default async function FichaPage({ params }: PageProps<'/gramatica/[id]'>
           <PanelTitle>{t('grammar.practice')}</PanelTitle>
           <p className="mt-2 text-body-sm text-muted">{t('grammar.practiceHint')}</p>
         </div>
-        <Practice
-          grammarId={meta.id}
-          // Las respuestas se quedan en el servidor: aquí solo viajan los enunciados.
-          items={meta.practice.map(({ id: itemId, prompt }) => ({ id: itemId, prompt }))}
-        />
+        <ContentLanguage language={languageOfId(meta.id)}>
+          <Practice
+            grammarId={meta.id}
+            // Las respuestas se quedan en el servidor: aquí solo viajan los enunciados.
+            items={meta.practice.map(({ id: itemId, prompt }) => ({ id: itemId, prompt }))}
+          />
+        </ContentLanguage>
       </Panel>
 
       <Panel className="flex flex-col gap-3">
@@ -102,7 +109,7 @@ export default async function FichaPage({ params }: PageProps<'/gramatica/[id]'>
                   }
                   className="text-accent-text underline underline-offset-4"
                 >
-                  <span lang="en">{lesson.title}</span>
+                  <span lang={lang}>{lesson.title}</span>
                 </Link>{' '}
                 <span className="text-body-sm text-muted">
                   · {t(`skills.${lesson.skill}` as TranslationKey)} · {lesson.level}
@@ -119,7 +126,7 @@ export default async function FichaPage({ params }: PageProps<'/gramatica/[id]'>
                 <li key={other.id}>
                   <Link
                     href={`/gramatica/${other.id}` as Route}
-                    lang="en"
+                    lang={lang}
                     className="text-accent-text underline underline-offset-4"
                   >
                     {other.title}

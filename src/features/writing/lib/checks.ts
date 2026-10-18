@@ -1,3 +1,4 @@
+import { BASE_LANGUAGE, type PracticeLanguage } from '@/lib/content/language';
 import { countWords, splitParagraphs, type WritingTaskType } from '@/lib/content/writing-schema';
 import { RULES, type CorrectionType, type Rule } from './rules';
 
@@ -81,7 +82,12 @@ export function applyRule(rule: Rule, text: string): Hint[] {
 }
 
 /** Posibles errores del texto, en orden de aparición y sin solaparse. */
-export function findHints(text: string, options: { formal: boolean }): Hint[] {
+export function findHints(
+  text: string,
+  options: { formal: boolean; language?: PracticeLanguage },
+): Hint[] {
+  // Las reglas son de inglés (errores típicos de quien lo aprende): en otro idioma no aplican.
+  if ((options.language ?? BASE_LANGUAGE) !== BASE_LANGUAGE) return [];
   const found = RULES.filter((rule) => options.formal || !rule.formalOnly).flatMap((rule) =>
     applyRule(rule, text),
   );
@@ -306,6 +312,8 @@ function countHeadings(text: string): number {
 }
 
 export interface FormInput {
+  /** Idioma del texto; inglés si no se dice. */
+  language?: PracticeLanguage;
   level: Level;
   taskType: WritingTaskType;
   wordsMin: number;
@@ -324,6 +332,9 @@ export function checkForm(text: string, task: FormInput): FormCheck[] {
     max: task.wordsMax,
   });
 
+  // Saludo, despedida, conectores y palabras repetidas se comprueban con listas de inglés: en otro
+  // idioma solo valen las comprobaciones que no dependen de la lengua (longitud, párrafos, frases).
+  const english = (task.language ?? BASE_LANGUAGE) === BASE_LANGUAGE;
   const letter = task.taskType === 'email' || task.taskType === 'message';
   const sectioned = task.taskType === 'report' || task.taskType === 'proposal';
   const paragraphs = splitParagraphs(text);
@@ -335,22 +346,22 @@ export function checkForm(text: string, task: FormInput): FormCheck[] {
     checks.push({ id: 'paragraphs', ok: body.length >= expected, count: body.length, expected });
   }
 
-  if (letter) {
+  if (letter && english) {
     checks.push({ id: 'greeting', ok: GREETING.test(text) });
     checks.push({ id: 'closing', ok: CLOSING.test(paragraphs.slice(-3).join('\n')) });
   }
-  if (sectioned) {
+  if (sectioned && english) {
     const count = countHeadings(text);
     checks.push({ id: 'headings', ok: count >= 3, count, expected: 3 });
   }
 
-  const wanted = expectedLinkers(task.taskType, task.level);
+  const wanted = english ? expectedLinkers(task.taskType, task.level) : 0;
   if (wanted > 0) {
     const found = linkersIn(text, task.level);
     checks.push({ id: 'linkers', ok: found.length >= wanted, found, expected: wanted });
   }
 
-  if (atLeast(task.level, 'A2')) {
+  if (english && atLeast(task.level, 'A2')) {
     const overused = overusedWords(text);
     checks.push({ id: 'overused', ok: overused.length === 0, words: overused });
   }
@@ -377,6 +388,6 @@ export function reviewText(text: string, task: FormInput): SelfReview {
   return {
     words: countWords(text),
     checks: checkForm(text, task),
-    hints: findHints(text, { formal: isFormal(task.taskType) }),
+    hints: findHints(text, { formal: isFormal(task.taskType), language: task.language }),
   };
 }

@@ -37,6 +37,11 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0031](0031-contrasena-desde-la-web.md) | La contraseña se pone y se cambia en Ajustes; sin la actual, solo justo después de entrar con el correo; «¿Has olvidado la contraseña?» lleva hasta ahí | Aceptada |
 | [0032](0032-cinco-idiomas-para-todo-el-publico.md) | Cinco idiomas (español, inglés, francés, chino y japonés), para todo el público, por fases; la interfaz, en el idioma del navegador | Aceptada |
 | [0033](0033-tema-personalizado-con-css.md) | Tema personalizado: CSS propio guardado en el perfil que cambia toda la app; solo CSS y nada de fuera; `?sin-tema` lo desactiva | Aceptada |
+| [0034](0034-ayudas-del-contenido-por-idioma.md) | Las ayudas del contenido (traducciones, explicaciones, consejos…) en el idioma de la interfaz: texto o uno por idioma, resueltas al cargar; el inglés, igual | Aceptada |
+| [0035](0035-contenido-por-idioma.md) | El contenido de cada idioma, en su carpeta (`content/es/…`) y con el idioma delante del id (`es-a1-rea-001`); el inglés, donde estaba | Aceptada |
+| [0036](0036-idioma-que-practicas.md) | El idioma que practicas: en `profiles.settings`, solo entre los que tienen contenido; cada sección enseña solo ese idioma y el selector aparece cuando hay más de uno | Aceptada |
+| [0037](0037-datos-por-idioma.md) | Los datos del usuario, por idioma: nivel declarado, niveles por destreza, léxico y tarjetas llevan `language` (migración 0009); lo ligado a un contenido lo deduce de su id | Aceptada |
+| [0038](0038-primera-tanda-de-espanol.md) | La primera tanda de español A1 (4 fichas, 124 palabras, 4 consignas, ayudas en 4 idiomas); sin lecturas hasta tener un lematizador y listas de español | Aceptada |
 
 Plantilla:
 

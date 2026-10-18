@@ -138,6 +138,8 @@ test.describe('ajustes', () => {
       reading_font_px: 22,
       reader_paper: true,
       playback_rate: 1,
+      // El idioma que se practica también es un ajuste (ADR-0036).
+      practice_language: 'en',
     });
 
     // El objetivo nuevo se ve en Hoy y el lector usa la letra y el papel elegidos.

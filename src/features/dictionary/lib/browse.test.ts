@@ -13,10 +13,10 @@ import {
   toQuery,
 } from './browse';
 
-const entry = (lemma: string, es: string, rank?: number): DictionaryEntry => ({
+const entry = (lemma: string, translation: string, rank?: number): DictionaryEntry => ({
   lemma,
   pos: ['noun'],
-  es,
+  translation,
   example: `This is ${lemma}.`,
   surface: lemma,
   ...(rank ? { rank } : {}),

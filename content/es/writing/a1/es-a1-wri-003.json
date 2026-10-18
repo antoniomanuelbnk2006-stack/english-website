@@ -1,0 +1,53 @@
+{
+  "id": "es-a1-wri-003",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "task_type": "message",
+  "title": "Un día normal",
+  "topic": "daily-life",
+  "context_es": {
+    "en": "A friend who lives far away asks what a normal day is like for you. You answer with a short message.",
+    "fr": "Un ami qui habite loin vous demande à quoi ressemble une journée normale pour vous. Vous répondez par un court message.",
+    "zh": "一位住在远方的朋友问你平常的一天是什么样的。你用一条简短的消息回答。",
+    "ja": "遠くに住む友だちに、普段の一日はどんな感じか聞かれました。短いメッセージで答えます。"
+  },
+  "prompt_en": "Una amiga te pregunta cómo es un día normal para ti. Escríbele un mensaje y cuéntaselo.",
+  "points": [
+    "a qué hora te levantas y qué desayunas",
+    "dónde trabajas o estudias",
+    "qué haces por la tarde o por la noche"
+  ],
+  "words_min": 25,
+  "words_max": 50,
+  "time_min": 10,
+  "useful_language": [
+    "Hola, Carla:",
+    "Me levanto a las …",
+    "Desayuno …",
+    "Por la mañana / Por la tarde / Por la noche",
+    "Después …",
+    "Un abrazo,"
+  ],
+  "tips_es": [
+    {
+      "en": "Put the actions in order and use time words: *por la mañana, después, por la noche*.",
+      "fr": "Mettez les actions dans l’ordre et utilisez des mots de temps : *por la mañana, después, por la noche*.",
+      "zh": "按先后顺序写动作，并用时间词：*por la mañana, después, por la noche*。",
+      "ja": "行動を順番に並べ、時を表す言葉を使います：*por la mañana, después, por la noche*。"
+    },
+    {
+      "en": "The time uses *a las*: *a las siete, a las ocho y media*.",
+      "fr": "L’heure se dit avec *a las* : *a las siete, a las ocho y media*.",
+      "zh": "时间用 *a las*：*a las siete, a las ocho y media*。",
+      "ja": "時刻は *a las* で表します：*a las siete, a las ocho y media*。"
+    }
+  ],
+  "model_answer": "Hola, Carla:\n\nMe levanto a las siete y desayuno café con pan. Por la mañana trabajo en una tienda. Como a las dos con mis compañeros. Por la tarde estudio inglés y por la noche veo una película.\n\nUn abrazo,\nMarta",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

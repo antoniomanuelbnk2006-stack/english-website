@@ -10,22 +10,29 @@ import { getSessionOrRedirect } from '@/lib/auth';
 import { getGrammarIndex } from '@/lib/content/grammar';
 import { findWritingPrompt } from '@/lib/content/writing';
 import { toPublicPrompt } from '@/lib/content/writing-schema';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
+import { contentLang, languageOfId } from '@/lib/content/language';
+import { ContentLanguage } from '@/components/content-language';
 
 export async function generateMetadata({ params }: PageProps<'/escribir/[id]'>): Promise<Metadata> {
   const { id } = await params;
-  return { title: findWritingPrompt(id)?.title };
+  return { title: findWritingPrompt(id, await getLocale())?.title };
 }
 
 export default async function WritingPromptPage({ params }: PageProps<'/escribir/[id]'>) {
   await getSessionOrRedirect();
   const { id } = await params;
-  const prompt = findWritingPrompt(id);
+  const prompt = findWritingPrompt(id, await getLocale());
   if (!prompt) notFound();
 
   const [t, ai, byPrompt] = await Promise.all([getT(), getAiStatus(), getSubmissionsByPrompt()]);
   const own = byPrompt.get(prompt.id);
-  const fichas = Object.fromEntries(getGrammarIndex().map((ficha) => [ficha.id, ficha.title]));
+  const fichas = Object.fromEntries(
+    getGrammarIndex(await getLocale(), languageOfId(prompt.id)).map((ficha) => [
+      ficha.id,
+      ficha.title,
+    ]),
+  );
 
   return (
     <PageContainer>
@@ -37,7 +44,7 @@ export default async function WritingPromptPage({ params }: PageProps<'/escribir
           <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
           {t('writing.backToIndex')}
         </Link>
-        <h1 lang="en" className="text-heading-sm sm:text-heading">
+        <h1 lang={contentLang(prompt.id)} className="text-heading-sm sm:text-heading">
           {prompt.title}
         </h1>
         <div className="flex flex-wrap items-center gap-1.5">
@@ -61,7 +68,9 @@ export default async function WritingPromptPage({ params }: PageProps<'/escribir
       </header>
 
       {/* La respuesta modelo no viaja con la consigna: solo sale del servidor al entregar. */}
-      <WritingStudio prompt={toPublicPrompt(prompt)} ai={ai} fichas={fichas} />
+      <ContentLanguage language={languageOfId(prompt.id)}>
+        <WritingStudio prompt={toPublicPrompt(prompt)} ai={ai} fichas={fichas} />
+      </ContentLanguage>
     </PageContainer>
   );
 }

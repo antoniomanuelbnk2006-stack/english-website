@@ -8,6 +8,8 @@ import { levelOfLemma } from '@/lib/content/levels';
 import { loadLesson } from '@/lib/content/loader';
 import { LessonId } from '@/lib/content/schema';
 import { parseSettings } from '@/features/profile/lib/settings';
+import { getPracticeLanguage } from '@/features/profile/server/queries';
+import { languageOfId } from '@/lib/content/language';
 
 const Lemma = z.string().trim().toLowerCase().min(1).max(80);
 
@@ -31,23 +33,27 @@ export async function setLexemeStatus(input: unknown): Promise<ActionResult<{ up
   const session = await requireUser();
   if (!session.ok) return fail('unauthorized');
   const { supabase } = session;
+  // Las palabras son del idioma que se practica (ADR-0037).
+  const language = await getPracticeLanguage();
 
   const { data: cards, error: cardsError } = await supabase
     .from('srs_cards')
     .select('id, lemma')
+    .eq('language', language)
     .in('lemma', lemmas);
   if (cardsError) return fail('internal');
   const withCard = new Set(cards.flatMap((card) => (card.lemma ? [card.lemma] : [])));
 
   const { error } = await supabase.from('lexicon').upsert(
     lemmas.map((lemma) => ({
+      language,
       lemma,
       // Una palabra «desconocida» que ya tiene tarjeta sigue en repaso.
       status: status === 'new' && withCard.has(lemma) ? ('learning' as const) : status,
       source: 'manual' as const,
-      cefr: levelOfLemma(lemma) ?? null,
+      cefr: levelOfLemma(lemma, language) ?? null,
     })),
-    { onConflict: 'user_id,lemma' },
+    { onConflict: 'user_id,language,lemma' },
   );
   if (error) return fail('internal');
 
@@ -89,6 +95,7 @@ export async function recordExposure(
 
   const lesson = await loadLesson(parsed.data.lessonId);
   if (!lesson) return fail('not_found');
+  const language = languageOfId(lesson.id);
 
   const { data: progress, error: progressError } = await supabase
     .from('lesson_progress')
@@ -108,6 +115,7 @@ export async function recordExposure(
   const { data: rows, error: rowsError } = await supabase
     .from('lexicon')
     .select('lemma, status, source, seen_count, lookup_count')
+    .eq('language', language)
     .in('lemma', [...lessonLemmas]);
   if (rowsError) return fail('internal');
 
@@ -130,13 +138,14 @@ export async function recordExposure(
   if (changes.length > 0) {
     const { error } = await supabase.from('lexicon').upsert(
       changes.map((change) => ({
+        language,
         lemma: change.lemma,
         status: change.status,
         source: change.source ?? sourceOf.get(change.lemma) ?? ('lesson' as const),
         seen_count: change.seen_count,
         lookup_count: change.lookup_count,
       })),
-      { onConflict: 'user_id,lemma' },
+      { onConflict: 'user_id,language,lemma' },
     );
     if (error) return fail('internal');
   }
@@ -146,13 +155,14 @@ export async function recordExposure(
   if (fresh.length > 0) {
     const { error } = await supabase.from('lexicon').upsert(
       fresh.map((lemma) => ({
+        language,
         lemma,
         status: 'new' as const,
         source: 'lesson' as const,
-        cefr: levelOfLemma(lemma) ?? null,
+        cefr: levelOfLemma(lemma, language) ?? null,
         lookup_count: 1,
       })),
-      { onConflict: 'user_id,lemma', ignoreDuplicates: true },
+      { onConflict: 'user_id,language,lemma', ignoreDuplicates: true },
     );
     if (error) return fail('internal');
   }

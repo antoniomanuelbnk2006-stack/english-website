@@ -4,6 +4,10 @@
 import type { z } from 'zod';
 import { Lesson, LessonMeta } from '../../src/lib/content/schema';
 import path from 'node:path';
+import { existsSync, mkdirSync, readdirSync, readFileSync } from 'node:fs';
+import { DictionaryFile, lemmaKey } from '../../src/lib/content/dictionary-schema';
+import { assertLanguage, PREFIXED_LANGUAGES } from '../../src/lib/content/language';
+import { languageRoot } from '../../src/lib/content/language-dirs';
 import { CONTENT_DIR, INDEX_FILE, listLessonFiles, readJson, writeContent } from './lib/io';
 import { countWords } from './lib/nlp';
 import { CEFR, REDUCTIONS, levelOf, loadWordLists, type Cefr } from './lib/wordlists';
@@ -13,7 +17,7 @@ type Meta = z.infer<typeof LessonMeta>;
 const index: Meta[] = [];
 const skipped: string[] = [];
 
-for (const { file, relativePath, id } of listLessonFiles()) {
+for (const { file, contentPath, id, language } of listLessonFiles()) {
   const raw = readJson(file) as { status?: string };
   if (raw.status !== 'published') {
     skipped.push(`${id} (${raw.status ?? 'sin estado'})`);
@@ -25,6 +29,7 @@ for (const { file, relativePath, id } of listLessonFiles()) {
     process.exit(1);
   }
   const lesson = parsed.data;
+  assertLanguage(lesson.id, language, contentPath);
 
   const base = {
     id: lesson.id,
@@ -40,7 +45,7 @@ for (const { file, relativePath, id } of listLessonFiles()) {
     est_minutes: lesson.est_minutes,
     difficulty: lesson.difficulty,
     lemmas: lesson.lemmas,
-    path: `lessons/${relativePath}`,
+    path: contentPath,
   };
 
   index.push(
@@ -85,4 +90,24 @@ writeContent(path.join(CONTENT_DIR, 'wordlists', 'levels.generated.json'), byLev
 console.log(
   `levels.generated.json: ${CEFR.map((level) => `${level} ${byLevel[level].length}`).join(' · ')} lemas.`,
 );
+// Los demás idiomas no tienen listas abiertas de niveles: de momento, el nivel de una palabra es
+// el del mazo en el que está (content/<idioma>/dictionary/<nivel>.json).
+for (const language of PREFIXED_LANGUAGES) {
+  const dir = path.join(languageRoot(CONTENT_DIR, language), 'dictionary');
+  if (!existsSync(dir)) continue;
+  const levels = Object.fromEntries(CEFR.map((level) => [level, [] as string[]])) as Record<
+    Cefr,
+    string[]
+  >;
+  for (const file of readdirSync(dir).filter((name) => name.endsWith('.json'))) {
+    const deck = DictionaryFile.parse(JSON.parse(readFileSync(path.join(dir, file), 'utf8')));
+    for (const entry of deck.entries) levels[deck.level].push(lemmaKey(entry.lemma));
+  }
+  for (const level of CEFR) levels[level] = [...new Set(levels[level])].sort();
+  mkdirSync(path.join(languageRoot(CONTENT_DIR, language), 'wordlists'), { recursive: true });
+  writeContent(path.join(languageRoot(CONTENT_DIR, language), 'wordlists', 'levels.generated.json'), levels);
+  console.log(
+    `${language}/wordlists/levels.generated.json: ${CEFR.map((level) => `${level} ${levels[level].length}`).join(' · ')} lemas.`,
+  );
+}
 if (skipped.length > 0) console.log(`Sin publicar (no entran en el índice): ${skipped.join(', ')}`);

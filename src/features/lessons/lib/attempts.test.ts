@@ -1,16 +1,20 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
+import { localize } from '@/lib/content/help';
 import { PublishedReading } from '@/lib/content/schema';
 import { SubmitAttemptsInput, lessonScore, prepareAttempts } from './attempts';
 
-const lesson = PublishedReading.parse(
-  JSON.parse(
-    readFileSync(
-      path.join(process.cwd(), 'content', 'lessons', 'b1', 'reading', 'b1-rea-001.json'),
-      'utf8',
+const lesson = localize(
+  PublishedReading.parse(
+    JSON.parse(
+      readFileSync(
+        path.join(process.cwd(), 'content', 'lessons', 'b1', 'reading', 'b1-rea-001.json'),
+        'utf8',
+      ),
     ),
   ),
+  'es',
 );
 
 const uuid = (n: number) => `00000000-0000-4000-8000-${String(n).padStart(12, '0')}`;

@@ -10,6 +10,7 @@ import { submitPractice, type PracticeResult } from '@/features/grammar/server/a
 import { toPercent } from '@/features/lessons/lib/summary';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
+import { useContentLang } from '@/components/content-language';
 
 /**
  * Mini-práctica de una ficha: cinco huecos. La corrige el servidor (las respuestas no viajan
@@ -23,6 +24,7 @@ export function Practice({
   items: { id: string; prompt: string }[];
 }) {
   const t = useT();
+  const lang = useContentLang();
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [result, setResult] = useState<PracticeResult | null>(null);
   const [busy, setBusy] = useState(false);
@@ -77,7 +79,7 @@ export function Practice({
           return (
             <li key={item.id} className="flex flex-col gap-1.5">
               <p
-                lang="en"
+                lang={lang}
                 className="prose-reading flex flex-wrap items-baseline gap-x-1.5 gap-y-2"
               >
                 <span lang="es" className="tabular-nums text-body-sm text-muted">
@@ -86,7 +88,7 @@ export function Practice({
                 <span>{prompt.before}</span>
                 <Input
                   aria-label={t('tasks.gap', { n: index + 1 })}
-                  lang="en"
+                  lang={lang}
                   autoCapitalize="none"
                   autoCorrect="off"
                   spellCheck={false}
@@ -119,7 +121,7 @@ export function Practice({
                       {outcome.correct ? '' : ': '}
                     </span>
                     {outcome.correct ? null : (
-                      <span lang="en" className="font-medium">
+                      <span lang={lang} className="font-medium">
                         {outcome.answer}
                       </span>
                     )}

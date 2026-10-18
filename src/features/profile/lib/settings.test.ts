@@ -39,6 +39,12 @@ describe('parseSettings', () => {
     expect(parsed.reader_paper).toBe(true);
   });
 
+  it('el idioma que se practica empieza en inglés y no admite uno que no exista', () => {
+    expect(DEFAULT_SETTINGS.practice_language).toBe('en');
+    expect(parseSettings({ practice_language: 'es' }).practice_language).toBe('es');
+    expect(parseSettings({ practice_language: 'klingon' }).practice_language).toBe('en');
+  });
+
   it('ignora claves desconocidas (p. ej. fsrs_params se guarda aparte)', () => {
     expect(parseSettings({ fsrs_params: [1, 2, 3] })).toEqual(DEFAULT_SETTINGS);
   });

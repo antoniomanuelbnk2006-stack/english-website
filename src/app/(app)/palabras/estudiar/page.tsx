@@ -8,7 +8,9 @@ import { parseBrowseParams, pickStudyBatch } from '@/features/dictionary/lib/bro
 import { getLexiconMap, getUserLevel } from '@/features/lexicon/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
 import { getDictionary } from '@/lib/content/dictionary';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
+import { getPracticeLanguage } from '@/features/profile/server/queries';
+import { ContentLanguage } from '@/components/content-language';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('dictionary.studyTitle') };
@@ -24,7 +26,8 @@ export default async function StudyWordsPage({ searchParams }: PageProps<'/palab
   ]);
   const { level } = parseBrowseParams(raw, userLevel);
   const query: Record<string, string> = level === userLevel ? {} : { nivel: level };
-  const batch = pickStudyBatch(getDictionary(level), statuses);
+  const language = await getPracticeLanguage();
+  const batch = pickStudyBatch(getDictionary(level, await getLocale(), language), statuses);
 
   return (
     <PageContainer width="exercise">
@@ -49,19 +52,21 @@ export default async function StudyWordsPage({ searchParams }: PageProps<'/palab
           {t('dictionary.allDoneBody')}
         </EmptyState>
       ) : (
-        <StudySession
-          // Una tanda nueva es una sesión nueva: se vuelve a empezar por la primera tarjeta.
-          key={batch.map((entry) => entry.lemma).join('|')}
-          level={level}
-          query={query}
-          words={batch.map(({ lemma, pos, es, example, surface }) => ({
-            lemma,
-            pos,
-            es,
-            example,
-            surface,
-          }))}
-        />
+        <ContentLanguage language={language}>
+          <StudySession
+            // Una tanda nueva es una sesión nueva: se vuelve a empezar por la primera tarjeta.
+            key={batch.map((entry) => entry.lemma).join('|')}
+            level={level}
+            query={query}
+            words={batch.map(({ lemma, pos, translation, example, surface }) => ({
+              lemma,
+              pos,
+              translation,
+              example,
+              surface,
+            }))}
+          />
+        </ContentLanguage>
       )}
     </PageContainer>
   );

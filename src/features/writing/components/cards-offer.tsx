@@ -7,6 +7,7 @@ import { Button, buttonVariants } from '@/components/ui/button';
 import { PanelTitle } from '@/components/ui/panel';
 import { addWritingCards } from '@/features/writing/server/actions';
 import { useT } from '@/lib/i18n/client';
+import { useContentLang } from '@/components/content-language';
 
 /** Errores de una entrega que se pueden pasar al repaso. El usuario elige cuáles. */
 export function CardsOffer({
@@ -17,6 +18,7 @@ export function CardsOffer({
   cards: readonly { front: string; back: string }[];
 }) {
   const t = useT();
+  const lang = useContentLang();
   const id = useId();
   const [chosen, setChosen] = useState<boolean[]>(() => cards.map(() => true));
   const [busy, setBusy] = useState(false);
@@ -54,7 +56,7 @@ export function CardsOffer({
                 }
                 className="mt-1 size-4 shrink-0 accent-accent"
               />
-              <span lang="en" className="flex min-w-0 flex-1 flex-col gap-0.5 text-body-sm">
+              <span lang={lang} className="flex min-w-0 flex-1 flex-col gap-0.5 text-body-sm">
                 <span>{card.front}</span>
                 <span className="font-medium text-success">{card.back}</span>
               </span>

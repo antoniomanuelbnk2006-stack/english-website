@@ -1,10 +1,12 @@
 import type { z } from 'zod';
+import type { Localized } from '@/lib/content/help';
 import type { PublishedListening, Task } from '@/lib/content/schema';
 
 // Qué parte de una lección de escucha puede ver el cliente en cada momento. Lógica pura.
 // Regla estricta: la transcripción no sale del servidor antes de la fase 3 del ciclo.
 
-type Lesson = z.infer<typeof PublishedListening>;
+// La lección ya viene con las ayudas en el idioma de la interfaz.
+type Lesson = Localized<z.infer<typeof PublishedListening>>;
 
 export type ListeningTask = Exclude<Task, { type: 'dictation' }>;
 export type DictationTask = Extract<Task, { type: 'dictation' }>;

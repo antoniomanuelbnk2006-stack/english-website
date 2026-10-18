@@ -1,0 +1,53 @@
+{
+  "id": "es-a1-wri-001",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "task_type": "message",
+  "title": "Un mensaje a un compañero nuevo",
+  "topic": "daily-life",
+  "context_es": {
+    "en": "You are starting a Spanish course online. Your teacher asks you to write a short message in the group chat to introduce yourself to a new classmate, Leo.",
+    "fr": "Vous commencez un cours d’espagnol en ligne. Votre professeure vous demande d’écrire un court message dans le chat du groupe pour vous présenter à un nouveau camarade, Leo.",
+    "zh": "你在线上开始学西班牙语。老师请你在小组聊天里写一条简短的消息，向新同学 Leo 介绍自己。",
+    "ja": "あなたはオンラインでスペイン語の授業を始めます。先生に、新しいクラスメートの Leo に自己紹介する短いメッセージをグループチャットに書くよう言われました。"
+  },
+  "prompt_en": "Estás en un curso de español por internet. Escribe un mensaje a tu compañero Leo. Cuéntale algo sobre ti.",
+  "points": [
+    "cómo te llamas y de dónde eres",
+    "a qué te dedicas o qué estudias",
+    "qué te gusta hacer en tu tiempo libre"
+  ],
+  "words_min": 25,
+  "words_max": 50,
+  "time_min": 10,
+  "useful_language": [
+    "Hola, Leo:",
+    "Me llamo …",
+    "Soy de …",
+    "Trabajo en … / Estudio …",
+    "En mi tiempo libre me gusta …",
+    "¡Hasta pronto!"
+  ],
+  "tips_es": [
+    {
+      "en": "Start with a greeting (*Hola, Leo:*) and end with a short goodbye and your name.",
+      "fr": "Commencez par une salutation (*Hola, Leo :*) et terminez par un court au revoir et votre prénom.",
+      "zh": "以问候开头（*Hola, Leo:*），以简短的告别和你的名字结尾。",
+      "ja": "あいさつ（*Hola, Leo:*）で始め、短い別れの言葉と名前で終えましょう。"
+    },
+    {
+      "en": "Use short sentences in the present: *Soy…, Vivo…, Trabajo…, Me gusta…*",
+      "fr": "Faites des phrases courtes au présent : *Soy…, Vivo…, Trabajo…, Me gusta…*",
+      "zh": "用现在时写短句：*Soy…, Vivo…, Trabajo…, Me gusta…*",
+      "ja": "現在形の短い文で書きます：*Soy…, Vivo…, Trabajo…, Me gusta…*"
+    }
+  ],
+  "model_answer": "Hola, Leo:\n\nMe llamo Marta y soy de Sevilla, en España. Tengo veinticuatro años. Trabajo en una librería pequeña. En mi tiempo libre me gusta leer y jugar al tenis con mis amigos.\n\n¡Hasta pronto!\nMarta",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

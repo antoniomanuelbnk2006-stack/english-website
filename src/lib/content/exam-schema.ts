@@ -6,6 +6,8 @@ import {
   type ExamPaperKind,
   type PartFormat,
 } from './exam-formats';
+import { helpText, type Localized } from './help';
+import { DASH_PREFIX, withoutLanguage } from './language';
 import { Cefr, Speaker } from './schema';
 import { countExamWords, fullAnswers, gapNumbers } from './uoe-schema';
 
@@ -16,11 +18,11 @@ import { countExamWords, fullAnswers, gapNumbers } from './uoe-schema';
 
 export const ExamPaperId = z
   .string()
-  .regex(/^(a1|a2|b1|b2|c1|c2)-exam-\d{2}-(reading|listening|speaking)$/);
+  .regex(new RegExp(`^${DASH_PREFIX}(a1|a2|b1|b2|c1|c2)-exam-\\d{2}-(reading|listening|speaking)$`));
 
 /** Letra de una opción en las partes de emparejar y de texto con huecos. */
 const Letter = z.string().regex(/^[A-H]$/);
-const Explanation = z.string().min(1);
+const Explanation = helpText();
 /** Las instrucciones de la parte, en inglés, como en el cuadernillo. */
 const Rubric = z.string().min(1);
 const QuestionNumber = z.number().int().positive().max(60);
@@ -40,7 +42,8 @@ export const ExamRecording = z.object({
     .min(1),
   audio: z.object({ src: z.string().min(1), duration_s: z.number().positive() }).optional(),
 });
-export type ExamRecording = z.infer<typeof ExamRecording>;
+export type RawExamRecording = z.infer<typeof ExamRecording>;
+export type ExamRecording = Localized<RawExamRecording>;
 
 const Choice = z.object({
   n: QuestionNumber,
@@ -212,7 +215,7 @@ const WritingPart = z.object({
   prompt: z.string().min(1),
   min_words: z.number().int().positive(),
   model_answer: z.string().min(1),
-  checklist_es: z.array(z.string().min(1)).min(2),
+  checklist_es: z.array(helpText()).min(2),
 });
 
 export const ExamPart = z.discriminatedUnion('type', [
@@ -226,7 +229,8 @@ export const ExamPart = z.discriminatedUnion('type', [
   CompletionPart,
   WritingPart,
 ]);
-export type ExamPart = z.infer<typeof ExamPart>;
+export type RawExamPart = z.infer<typeof ExamPart>;
+export type ExamPart = Localized<RawExamPart>;
 
 const PaperBase = z.object({
   id: ExamPaperId,
@@ -245,7 +249,8 @@ export const QuestionPaper = PaperBase.extend({
   paper: z.enum(['reading', 'listening']),
   parts: z.array(ExamPart).min(1),
 });
-export type QuestionPaper = z.infer<typeof QuestionPaper>;
+export type RawQuestionPaper = z.infer<typeof QuestionPaper>;
+export type QuestionPaper = Localized<RawQuestionPaper>;
 
 // ───────────── Speaking ─────────────
 
@@ -271,36 +276,41 @@ const SpeakingTurn = z.object({
 const SpeakingPart = z.object({
   kind: z.enum(SPEAKING_KINDS),
   /** Qué pasa en esta parte y qué se valora, en español. */
-  about_es: z.string().min(1),
+  about_es: helpText(),
   turns: z.array(SpeakingTurn).min(1),
   /** Expresiones útiles para esta parte; se enseñan al terminar. */
   useful_language: z.array(z.string().min(1)).min(3),
-  tips_es: z.array(z.string().min(1)).min(1),
+  tips_es: z.array(helpText()).min(1),
 });
-export type SpeakingPart = z.infer<typeof SpeakingPart>;
+export type RawSpeakingPart = z.infer<typeof SpeakingPart>;
+export type SpeakingPart = Localized<RawSpeakingPart>;
 
 export const SpeakingPaper = PaperBase.extend({
   paper: z.literal('speaking'),
   parts: z.array(SpeakingPart).min(1),
 });
-export type SpeakingPaper = z.infer<typeof SpeakingPaper>;
+export type RawSpeakingPaper = z.infer<typeof SpeakingPaper>;
+export type SpeakingPaper = Localized<RawSpeakingPaper>;
 
 export const ExamPaper = z.discriminatedUnion('paper', [
   QuestionPaper.extend({ paper: z.literal('reading') }),
   QuestionPaper.extend({ paper: z.literal('listening') }),
   SpeakingPaper,
 ]);
-export type ExamPaper = z.infer<typeof ExamPaper>;
+export type RawExamPaper = z.infer<typeof ExamPaper>;
+export type ExamPaper = Localized<RawExamPaper>;
 
-/** `b2-exam-01-reading` → nivel, número de simulacro y prueba. */
+/** `b2-exam-01-reading` (o `es-b2-exam-01-reading`) → nivel, número de simulacro y prueba. */
 export function parsePaperId(id: string): { level: string; test: number; paper: ExamPaperKind } | null {
-  const match = /^(a1|a2|b1|b2|c1|c2)-exam-(\d{2})-(reading|listening|speaking)$/.exec(id);
+  const match = /^(a1|a2|b1|b2|c1|c2)-exam-(\d{2})-(reading|listening|speaking)$/.exec(
+    withoutLanguage(id),
+  );
   if (!match?.[1] || !match[2] || !match[3]) return null;
   return { level: match[1], test: Number(match[2]), paper: match[3] as ExamPaperKind };
 }
 
 /** Números de pregunta de una parte, en orden. */
-export function partNumbers(part: ExamPart): number[] {
+export function partNumbers(part: RawExamPart): number[] {
   switch (part.type) {
     case 'mcq':
       return part.groups.flatMap((group) => group.questions.map((question) => question.n));
@@ -316,7 +326,7 @@ export function partNumbers(part: ExamPart): number[] {
 }
 
 /** Las grabaciones de una parte del Listening, en el orden en que suenan. */
-export function partRecordings(part: ExamPart): ExamRecording[] {
+export function partRecordings(part: RawExamPart): RawExamRecording[] {
   if (part.type === 'mcq') return part.groups.flatMap((group) => group.recording ?? []);
   if (part.type === 'matching') return part.recording ? [part.recording] : [];
   if (part.type === 'completion') return [part.recording];
@@ -332,7 +342,12 @@ function checkLetters(ids: readonly string[], where: string, issues: string[]): 
   }
 }
 
-function checkPart(part: ExamPart, format: PartFormat, where: string, listening: boolean): string[] {
+function checkPart(
+  part: RawExamPart,
+  format: PartFormat,
+  where: string,
+  listening: boolean,
+): string[] {
   const issues: string[] = [];
   const say = (text: string) => issues.push(`${where}: ${text}`);
 
@@ -477,7 +492,10 @@ function checkPart(part: ExamPart, format: PartFormat, where: string, listening:
 }
 
 /** Comprobaciones que el esquema no puede expresar. Devuelve los problemas encontrados. */
-export function checkExamPaper(paper: ExamPaper, expected: { id: string; level: string }): string[] {
+export function checkExamPaper(
+  paper: RawExamPaper,
+  expected: { id: string; level: string },
+): string[] {
   const issues: string[] = [];
   if (paper.id !== expected.id) issues.push(`el id «${paper.id}» no coincide con el fichero`);
   if (paper.level.toLowerCase() !== expected.level) {

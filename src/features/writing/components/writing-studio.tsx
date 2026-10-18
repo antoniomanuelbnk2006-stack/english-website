@@ -31,6 +31,7 @@ import type { Translate } from '@/lib/i18n';
 import { useT } from '@/lib/i18n/client';
 import { useActiveClock } from '@/lib/use-active-clock';
 import { cn } from '@/lib/utils';
+import { useContentLang } from '@/components/content-language';
 
 /** Tras dejar de teclear este tiempo, el borrador se guarda en el dispositivo. */
 const AUTOSAVE_MS = 600;
@@ -75,6 +76,7 @@ export function WritingStudio({
   fichas: Record<string, string>;
 }) {
   const t = useT();
+  const lang = useContentLang();
   const router = useRouter();
   const id = useId();
   const clock = useActiveClock();
@@ -271,14 +273,14 @@ export function WritingStudio({
           </div>
           <div className="flex flex-col gap-1.5">
             <PanelLabel>{t('writing.task')}</PanelLabel>
-            <p lang="en" className="prose-reading whitespace-pre-line">
+            <p lang={lang} className="prose-reading whitespace-pre-line">
               {prompt.prompt_en}
             </p>
           </div>
           {pointsInTask ? null : (
             <div className="flex flex-col gap-1.5">
               <PanelLabel>{t('writing.pointsTitle')}</PanelLabel>
-              <ul lang="en" className="list-disc pl-5">
+              <ul lang={lang} className="list-disc pl-5">
                 {prompt.points.map((point) => (
                   <li key={point}>{point}</li>
                 ))}
@@ -307,7 +309,7 @@ export function WritingStudio({
               </div>
               <div className="flex flex-col gap-1.5">
                 <PanelLabel>{t('writing.usefulTitle')}</PanelLabel>
-                <ul lang="en" className="list-disc pl-5 text-body-sm">
+                <ul lang={lang} className="list-disc pl-5 text-body-sm">
                   {prompt.useful_language.map((phrase) => (
                     <li key={phrase}>{phrase}</li>
                   ))}
@@ -324,7 +326,7 @@ export function WritingStudio({
             {draft.plan.map((idea, index) => (
               <Input
                 key={index}
-                lang="en"
+                lang={lang}
                 aria-label={t('writing.planIdea', { n: index + 1 })}
                 placeholder={t('writing.planIdea', { n: index + 1 })}
                 value={idea}
@@ -395,7 +397,7 @@ export function WritingStudio({
 
           <Textarea
             id={`${id}-text`}
-            lang="en"
+            lang={lang}
             rows={14}
             maxLength={MAX_CHARS}
             spellCheck={exam === null}

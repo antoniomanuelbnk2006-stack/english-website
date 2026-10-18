@@ -2,9 +2,10 @@ import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 // Cómo se pinta el cuerpo MDX de una ficha de gramática. Por convención, en las fichas todo
-// el inglés va en cursiva: por eso `em` lleva `lang="en"` (y la negrita de dentro lo hereda).
+// el idioma que se aprende va en cursiva: por eso `em` lleva su `lang` (y la negrita de dentro lo
+// hereda). Es el inglés en las fichas de inglés y el de la ficha en las demás.
 
-export const fichaComponents = (tableLabel: string) => ({
+export const fichaComponents = (tableLabel: string, lang = 'en') => ({
   h2: ({ className, ...props }: ComponentProps<'h2'>) => (
     <h2 className={cn('mt-8 mb-3 text-subheading first:mt-0', className)} {...props} />
   ),
@@ -21,7 +22,7 @@ export const fichaComponents = (tableLabel: string) => ({
     <li className={cn('leading-relaxed', className)} {...props} />
   ),
   em: ({ className, ...props }: ComponentProps<'em'>) => (
-    <em lang="en" className={cn('text-text', className)} {...props} />
+    <em lang={lang} className={cn('text-text', className)} {...props} />
   ),
   strong: ({ className, ...props }: ComponentProps<'strong'>) => (
     <strong className={cn('font-semibold text-accent-text', className)} {...props} />

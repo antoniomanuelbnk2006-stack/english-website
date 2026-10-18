@@ -12,6 +12,8 @@ import {
 import { fail, ok, type ActionResult } from '@/lib/actions';
 import { requireUser } from '@/lib/auth';
 import { CONSENT_COOKIE, allowsPreferences, parseConsent } from '@/lib/consent';
+import { LANGUAGES_WITH_CONTENT } from '@/lib/content/index';
+import { PRACTICE_LANGUAGES } from '@/lib/content/language';
 import { LOCALES, LOCALE_COOKIE } from '@/lib/i18n';
 import type { Json } from '@/lib/supabase/database.types';
 import { PREFERENCE_COOKIE_MAX_AGE, THEMES, THEME_COOKIE } from '@/lib/theme';
@@ -20,6 +22,7 @@ const UpdateSettings = z.object({
   dailyGoalMin: z.number().int().min(10).max(240),
   interests: z.array(z.enum(INTEREST_TOPICS)).max(INTEREST_TOPICS.length),
   uiLocale: z.enum(LOCALES),
+  practiceLanguage: z.enum(PRACTICE_LANGUAGES),
   theme: z.enum(THEMES),
   readingFontPx: z.number().int().min(READING_FONT_MIN).max(READING_FONT_MAX),
   readerPaper: z.boolean(),
@@ -28,7 +31,10 @@ const UpdateSettings = z.object({
 
 export async function updateSettings(input: unknown): Promise<ActionResult<null>> {
   const parsed = UpdateSettings.safeParse(input);
-  if (!parsed.success) return fail('invalid_input');
+  // Solo se puede practicar un idioma que tenga contenido.
+  if (!parsed.success || !LANGUAGES_WITH_CONTENT.includes(parsed.data.practiceLanguage)) {
+    return fail('invalid_input');
+  }
   const settings = parsed.data;
 
   const session = await requireUser();
@@ -54,6 +60,7 @@ export async function updateSettings(input: unknown): Promise<ActionResult<null>
     reading_font_px: settings.readingFontPx,
     reader_paper: settings.readerPaper,
     playback_rate: Number(settings.playbackRate.toFixed(2)),
+    practice_language: settings.practiceLanguage,
   };
 
   const { error } = await supabase

@@ -175,6 +175,7 @@ export const es = {
     lowConfidence: 'Estimación con pocos datos',
     chosenLabel: 'Nivel elegido: {level}',
     chooseTitle: 'Elige tu nivel',
+    languageLegend: '¿Qué idioma quieres practicar?',
     chooseFirst:
       'Lo primero: dinos por dónde vas. Según tu nivel verás unos textos, audios y ejercicios u otros.',
     chooseAgain: 'Puedes cambiarlo cuando quieras: solo cambia lo que se te enseña primero.',
@@ -460,6 +461,9 @@ export const es = {
     fontSample: 'Some games refuse to die.',
     paperLabel: 'Fondo de papel en el lector',
     localeLabel: 'Idioma de la interfaz',
+    practiceLabel: 'Idioma que practicas',
+    practiceHint:
+      'Cada sección enseña solo el contenido de este idioma. Las explicaciones siguen en el idioma de la interfaz.',
     accountTitle: 'Cuenta',
     signedInAs: 'Has entrado como {email}.',
     aboutTitle: 'Acerca de',

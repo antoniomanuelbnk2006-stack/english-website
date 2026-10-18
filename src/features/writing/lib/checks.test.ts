@@ -166,6 +166,25 @@ describe('reviewText', () => {
     ]);
   });
 
+  it('en otro idioma solo valen las comprobaciones que no dependen de la lengua', () => {
+    const message: FormInput = {
+      language: 'es',
+      level: 'A1',
+      taskType: 'message',
+      wordsMin: 25,
+      wordsMax: 50,
+    };
+    const text = 'Hola Leo, me llamo Marta y soy de Sevilla. Trabajo en una librería.';
+    const review = reviewText(text, message);
+    // Sin saludo, despedida, conectores ni palabras repetidas: son listas de inglés.
+    expect(review.checks.map((check) => check.id)).toEqual(['length']);
+    // Y las reglas de errores típicos del inglés no se aplican a un texto en español.
+    expect(review.hints).toEqual([]);
+    expect(
+      reviewText('I am agree.', { ...message, language: 'en' }).hints.map((hint) => hint.rule),
+    ).toEqual(['be-agree']);
+  });
+
   it('solo ensayo, informe y propuesta se revisan como texto formal', () => {
     expect(isFormal('essay')).toBe(true);
     expect(isFormal('report')).toBe(true);

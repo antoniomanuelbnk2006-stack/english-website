@@ -8,6 +8,7 @@ import { getSessionOrRedirect } from '@/lib/auth';
 import { fichasOfLesson } from '@/lib/content/grammar';
 import { findLessonMeta, unitTitle } from '@/lib/content/index';
 import { loadReadingLesson } from '@/lib/content/loader';
+import { getLocale } from '@/lib/i18n/server';
 
 export async function generateMetadata({ params }: PageProps<'/leer/[id]'>): Promise<Metadata> {
   const { id } = await params;
@@ -29,7 +30,7 @@ export default async function ReadingLessonPage({ params }: PageProps<'/leer/[id
   return (
     <ReadingLesson
       lesson={lesson}
-      unitTitle={unitTitle(lesson.unit)}
+      unitTitle={unitTitle(lesson.unit, await getLocale())}
       initialPhase={progress?.status === 'started' ? progress.phase : 0}
       previous={
         progress?.status === 'completed'

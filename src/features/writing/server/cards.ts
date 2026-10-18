@@ -4,6 +4,8 @@ import { findHints, isFormal } from '@/features/writing/lib/checks';
 import type { StoredFeedback } from '@/features/writing/lib/schema';
 import { findWritingPrompt } from '@/lib/content/writing';
 import { WritingTaskType } from '@/lib/content/writing-schema';
+import { FALLBACK_LOCALE } from '@/lib/i18n';
+import { languageOfId } from '@/lib/content/language';
 
 /**
  * Tarjetas de repaso que se pueden sacar de una entrega. Se calculan siempre en el servidor a
@@ -16,7 +18,10 @@ export function cardCandidates(submission: {
   taskType: string;
   feedback: StoredFeedback | null;
 }): CardCandidate[] {
-  const prompt = submission.promptId ? findWritingPrompt(submission.promptId) : null;
+  // Solo hace falta el título de la consigna, que no depende del idioma de la interfaz.
+  const prompt = submission.promptId
+    ? findWritingPrompt(submission.promptId, FALLBACK_LOCALE)
+    : null;
   const source = { submissionId: submission.id, title: prompt?.title ?? submission.taskType };
 
   if (submission.feedback?.kind === 'ai') {
@@ -24,7 +29,8 @@ export function cardCandidates(submission: {
   }
   const taskType = WritingTaskType.safeParse(submission.taskType);
   const formal = taskType.success && isFormal(taskType.data);
-  return hintCards(submission.text, findHints(submission.text, { formal }), source);
+  const language = languageOfId(submission.promptId ?? '');
+  return hintCards(submission.text, findHints(submission.text, { formal, language }), source);
 }
 
 /** Lo que se enseña de cada tarjeta propuesta. */

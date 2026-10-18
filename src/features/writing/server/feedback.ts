@@ -11,12 +11,14 @@ import { costUsd, maxCostUsd, type TokenUsage } from '@/lib/ai/pricing';
 import {
   buildWritingUserMessage,
   describeTask,
-  WRITING_PROMPT_VERSION,
-  WRITING_SYSTEM_PROMPT,
+  writingPromptVersion,
+  writingSystemPrompt,
   type WritingTask,
 } from '@/lib/ai/prompts/writing';
 import { countWords, type WritingPrompt } from '@/lib/content/writing-schema';
+import { languageOfId } from '@/lib/content/language';
 import { startOfMonthMadrid, startOfTodayMadrid } from '@/lib/dates';
+import type { Locale } from '@/lib/i18n';
 
 // Corrección de un writing con la IA (docs/04-arquitectura/06-ia.md §3). La lógica no sabe
 // nada de Supabase ni del SDK: recibe un almacén y un modelo, y así se prueba con dobles.
@@ -114,6 +116,8 @@ export interface FeedbackInput {
   text: string;
   examMode: boolean;
   activeSeconds: number;
+  /** Idioma de la interfaz: el de las explicaciones de la corrección (ADR-0034). */
+  locale: Locale;
 }
 
 const ERROR_OF: Record<FailureReason, FeedbackError> = {
@@ -131,7 +135,8 @@ export async function requestFeedback(
   input: FeedbackInput,
 ): Promise<FeedbackResult> {
   const { store, model, limits, now } = deps;
-  const { prompt, text } = input;
+  const { prompt, text, locale } = input;
+  const language = languageOfId(prompt.id);
 
   const task: WritingTask = {
     taskType: prompt.task_type,
@@ -139,10 +144,13 @@ export async function requestFeedback(
     instructions: describeTask(prompt),
     text,
     grammarIds: deps.grammarIds,
+    locale,
+    language,
   };
 
   // La reserva se hace antes de llamar: si la llamada se cuelga, ya cuenta para los límites.
-  const inputChars = WRITING_SYSTEM_PROMPT.length + buildWritingUserMessage(task).length;
+  const inputChars =
+    writingSystemPrompt(locale, language).length + buildWritingUserMessage(task).length;
   const reserved = await store.reserve({
     model: model.id,
     reserveUsd: maxCostUsd(model.id, inputChars, MAX_TOKENS),
@@ -186,7 +194,7 @@ export async function requestFeedback(
     grammarIds: new Set(deps.grammarIds),
   });
   const saved = await store.finish(id, {
-    feedback: { ...feedback, prompt_version: WRITING_PROMPT_VERSION },
+    feedback: { ...feedback, prompt_version: writingPromptVersion(locale, language) },
     usage: reply.usage,
     costUsd: cost,
   });
@@ -233,9 +241,13 @@ export function anthropicModel(client: MessagesClient, model: string): FeedbackM
         message = await client.messages.create({
           model,
           max_tokens: MAX_TOKENS,
-          // Prefijo estable y cacheable: el prompt del sistema no cambia entre peticiones.
+          // Prefijo estable y cacheable: el prompt del sistema solo cambia con el idioma.
           system: [
-            { type: 'text', text: WRITING_SYSTEM_PROMPT, cache_control: { type: 'ephemeral' } },
+            {
+              type: 'text',
+              text: writingSystemPrompt(task.locale, task.language),
+              cache_control: { type: 'ephemeral' },
+            },
           ],
           messages: [{ role: 'user', content: buildWritingUserMessage(task) }],
           output_config: { effort: 'medium', format: { type: format.type, schema: format.schema } },

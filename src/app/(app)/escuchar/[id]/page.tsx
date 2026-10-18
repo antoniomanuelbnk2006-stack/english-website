@@ -8,6 +8,7 @@ import { getSessionOrRedirect } from '@/lib/auth';
 import { fichasOfLesson } from '@/lib/content/grammar';
 import { findLessonMeta, unitTitle } from '@/lib/content/index';
 import { loadListeningLesson } from '@/lib/content/loader';
+import { getLocale } from '@/lib/i18n/server';
 import { env } from '@/lib/env';
 
 export async function generateMetadata({ params }: PageProps<'/escuchar/[id]'>): Promise<Metadata> {
@@ -27,7 +28,7 @@ export default async function ListeningLessonPage({ params }: PageProps<'/escuch
     <ListeningLesson
       // Solo sale del servidor lo que se puede ver antes de la fase 3: el guion se pide después.
       intro={toIntro(lesson)}
-      unitTitle={unitTitle(lesson.unit)}
+      unitTitle={unitTitle(lesson.unit, await getLocale())}
       audioBase={env.NEXT_PUBLIC_AUDIO_BASE_URL}
       initialPhase={progress?.status === 'started' ? progress.phase : 0}
       previous={

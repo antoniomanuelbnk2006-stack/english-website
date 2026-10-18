@@ -24,8 +24,10 @@ import { getSessionOrRedirect } from '@/lib/auth';
 import { dictionarySizes, getDictionary } from '@/lib/content/dictionary';
 import { lemmaKey } from '@/lib/content/dictionary-schema';
 import type { TranslationKey } from '@/lib/i18n';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
 import { cn } from '@/lib/utils';
+import { getPracticeLanguage } from '@/features/profile/server/queries';
+import { ContentLanguage } from '@/components/content-language';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('nav.words') };
@@ -55,8 +57,9 @@ export default async function WordsPage({ searchParams }: PageProps<'/palabras'>
     getLexiconMap(),
   ]);
   const params = parseBrowseParams(raw, userLevel);
-  const sizes = dictionarySizes();
-  const entries = getDictionary(params.level);
+  const language = await getPracticeLanguage();
+  const sizes = dictionarySizes(language);
+  const entries = getDictionary(params.level, await getLocale(), language);
   const summary = summarize(entries, statuses);
   const result = paginate(filterEntries(entries, statuses, params), params.page);
 
@@ -96,7 +99,7 @@ export default async function WordsPage({ searchParams }: PageProps<'/palabras'>
                 className={chipClass(level === params.level)}
               >
                 {level}
-                <span className="tabular-nums ml-1.5 text-caption opacity-70">{sizes[level]}</span>
+                <span className="tabular-nums ml-1.5 text-caption font-normal">{sizes[level]}</span>
               </Link>
             </li>
           ))}
@@ -213,17 +216,19 @@ export default async function WordsPage({ searchParams }: PageProps<'/palabras'>
             </EmptyState>
           ) : (
             <>
-              <WordList
-                label={t('dictionary.listLabel', { level: params.level })}
-                words={result.items.map((entry) => ({
-                  lemma: entry.lemma,
-                  pos: entry.pos,
-                  es: entry.es,
-                  example: entry.example,
-                  surface: entry.surface,
-                  state: stateOf(statuses.get(lemmaKey(entry.lemma))),
-                }))}
-              />
+              <ContentLanguage language={language}>
+                <WordList
+                  label={t('dictionary.listLabel', { level: params.level })}
+                  words={result.items.map((entry) => ({
+                    lemma: entry.lemma,
+                    pos: entry.pos,
+                    translation: entry.translation,
+                    example: entry.example,
+                    surface: entry.surface,
+                    state: stateOf(statuses.get(lemmaKey(entry.lemma))),
+                  }))}
+                />
+              </ContentLanguage>
 
               <nav
                 aria-label={t('vocabulary.pagination')}

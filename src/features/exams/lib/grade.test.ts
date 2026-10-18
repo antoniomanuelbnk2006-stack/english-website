@@ -2,6 +2,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { EXAM_FORMATS } from '@/lib/content/exam-formats';
+import { localize } from '@/lib/content/help';
 import {
   checkExamPaper,
   ExamPaper,
@@ -16,8 +17,10 @@ const ROOT = path.join(process.cwd(), 'content', 'exams');
 
 function load(id: string): QuestionPaper {
   const level = id.slice(0, 2);
-  const paper = ExamPaper.parse(
-    JSON.parse(readFileSync(path.join(ROOT, level, `${id}.json`), 'utf8')),
+  // Como en la app: las ayudas, resueltas al idioma de la interfaz.
+  const paper = localize(
+    ExamPaper.parse(JSON.parse(readFileSync(path.join(ROOT, level, `${id}.json`), 'utf8'))),
+    'es',
   );
   if (paper.paper === 'speaking') throw new Error('no es una prueba con preguntas');
   return paper;
@@ -165,10 +168,11 @@ describe('simulacros publicados', () => {
   });
 
   it.each(files)('$id cumple el formato oficial y se corrige entero', ({ level, id }) => {
-    const paper = ExamPaper.parse(
+    const raw = ExamPaper.parse(
       JSON.parse(readFileSync(path.join(ROOT, level, `${id}.json`), 'utf8')),
     );
-    expect(checkExamPaper(paper, { id, level })).toEqual([]);
+    expect(checkExamPaper(raw, { id, level })).toEqual([]);
+    const paper = localize(raw, 'es');
     if (paper.paper === 'speaking') return;
 
     // La clave de respuestas da la nota máxima, que es la del examen de verdad.

@@ -13,11 +13,13 @@ import { setLexemeStatus } from '@/features/lexicon/server/actions';
 import { SpeakButton } from '@/features/pronunciation/components/speak-button';
 import { lemmaKey, type DictionaryPos } from '@/lib/content/dictionary-schema';
 import { useT } from '@/lib/i18n/client';
+import { useContentLang } from '@/components/content-language';
 
 export interface StudyWord {
   lemma: string;
   pos: DictionaryPos[];
-  es: string;
+  /** Traducción, en el idioma de la interfaz. */
+  translation: string;
   example: string;
   surface: string;
 }
@@ -40,6 +42,7 @@ export function StudySession({
   query: Record<string, string>;
 }) {
   const t = useT();
+  const lang = useContentLang();
   const router = useRouter();
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
@@ -127,7 +130,7 @@ export function StudySession({
       <Panel className="flex flex-col gap-4 py-8 sm:py-10">
         <div className="flex flex-col items-center gap-2 text-center">
           <div className="flex items-center gap-1">
-            <h2 lang="en" className="text-heading-lg">
+            <h2 lang={lang} className="text-heading-lg">
               {word.lemma}
             </h2>
             <SpeakButton text={word.lemma} label={t('dictionary.listen', { word: word.lemma })} />
@@ -139,7 +142,7 @@ export function StudySession({
 
         {revealed ? (
           <div className="flex flex-col items-center gap-3 border-t border-border pt-4 text-center">
-            <p className="text-subheading">{word.es}</p>
+            <p className="text-subheading">{word.translation}</p>
             <div className="flex items-center gap-1">
               <Example
                 sentence={word.example}

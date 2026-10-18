@@ -9,14 +9,16 @@ import { signOut } from '@/features/auth/server/actions';
 import { passwordChangeNeedsCurrent } from '@/features/auth/server/queries';
 import { ConsentSettings } from '@/features/consent/components/consent-settings';
 import { SettingsForm } from '@/features/profile/components/settings-form';
-import { getProfile } from '@/features/profile/server/queries';
+import { getPracticeLanguage, getProfile } from '@/features/profile/server/queries';
 import { CustomTheme } from '@/features/theme/components/custom-theme';
 import { SAFE_MODE_HEADER } from '@/features/theme/lib/custom-css';
 import { getCustomThemeCss } from '@/features/theme/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
 import { CONSENT_COOKIE, COOKIE_POLICY_URL, PRIVACY_POLICY_URL, parseConsent } from '@/lib/consent';
+import { LANGUAGES_WITH_CONTENT } from '@/lib/content/index';
+import { languageName } from '@/lib/content/language';
 import { env } from '@/lib/env';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('nav.settings') };
@@ -26,14 +28,17 @@ export default async function SettingsPage() {
   await getSessionOrRedirect();
   // La contraseña solo existe si el servidor tiene su secreto (ADR-0026).
   const withPassword = Boolean(env.LOGIN_CODE_PEPPER);
-  const [t, profile, cookieStore, needsCurrent, requestHeaders, customCss] = await Promise.all([
-    getT(),
-    getProfile(),
-    cookies(),
-    passwordChangeNeedsCurrent(),
-    headers(),
-    getCustomThemeCss(),
-  ]);
+  const [t, profile, cookieStore, needsCurrent, requestHeaders, customCss, locale, practice] =
+    await Promise.all([
+      getT(),
+      getProfile(),
+      cookies(),
+      passwordChangeNeedsCurrent(),
+      headers(),
+      getCustomThemeCss(),
+      getLocale(),
+      getPracticeLanguage(),
+    ]);
   const consent = parseConsent(cookieStore.get(CONSENT_COOKIE)?.value);
 
   return (
@@ -46,11 +51,17 @@ export default async function SettingsPage() {
             dailyGoalMin: profile.dailyGoalMin,
             interests: profile.interests,
             uiLocale: profile.uiLocale,
+            practiceLanguage: practice,
             theme: profile.settings.theme,
             readingFontPx: profile.settings.reading_font_px,
             readerPaper: profile.settings.reader_paper,
             playbackRate: profile.settings.playback_rate,
           }}
+          // Los nombres, en el servidor: así no dependen del navegador (ADR-0036).
+          practiceLanguages={LANGUAGES_WITH_CONTENT.map((value) => ({
+            value,
+            name: languageName(value, locale),
+          }))}
         />
 
         <Panel id="tema" className="flex scroll-mt-24 flex-col gap-3">

@@ -15,6 +15,8 @@ import { requireUser } from '@/lib/auth';
 import { findWritingPrompt } from '@/lib/content/writing';
 import { countWords } from '@/lib/content/writing-schema';
 import type { Json } from '@/lib/supabase/database.types';
+import { getLocale } from '@/lib/i18n/server';
+import { languageOfId } from '@/lib/content/language';
 
 const toJson = (value: unknown): Json => JSON.parse(JSON.stringify(value)) as Json;
 
@@ -39,7 +41,7 @@ export async function submitSelfReview(input: unknown): Promise<ActionResult<Sel
   const session = await requireUser();
   if (!session.ok) return fail('unauthorized');
 
-  const prompt = findWritingPrompt(promptId);
+  const prompt = findWritingPrompt(promptId, await getLocale());
   if (!prompt) return fail('not_found');
 
   const assessment: SelfAssessment = { kind: 'self', scores: null, points: [] };
@@ -62,6 +64,7 @@ export async function submitSelfReview(input: unknown): Promise<ActionResult<Sel
   if (error || !data) return fail('internal');
 
   const review = reviewText(text, {
+    language: languageOfId(prompt.id),
     level: prompt.level,
     taskType: prompt.task_type,
     wordsMin: prompt.words_min,
@@ -149,7 +152,7 @@ export async function addWritingCards(input: unknown): Promise<ActionResult<{ ad
   });
   if (cards.length === 0) return fail('invalid_input');
 
-  const result = await insertCards(session.supabase, cards);
+  const result = await insertCards(session.supabase, cards, languageOfId(data.prompt_id ?? ''));
   if (!result) return fail('internal');
   return ok(result);
 }

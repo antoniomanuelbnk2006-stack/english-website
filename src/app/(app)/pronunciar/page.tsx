@@ -10,8 +10,9 @@ import { getProgressByLesson } from '@/features/lessons/server/queries';
 import { getUserLevel } from '@/features/lexicon/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
 import { getPronunciationIndex } from '@/lib/content/pronunciation';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
 import { cn } from '@/lib/utils';
+import { getPracticeLanguage } from '@/features/profile/server/queries';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('nav.pronunciation') };
@@ -28,7 +29,7 @@ export default async function PronunciationPage({ searchParams }: PageProps<'/pr
     getUserLevel(),
     getProgressByLesson(),
   ]);
-  const all = getPronunciationIndex();
+  const all = getPronunciationIndex(await getLocale(), await getPracticeLanguage());
 
   // Sin nivel en la URL se enseña el del usuario; «Todos» lo quita.
   const requested = first(params.nivel);

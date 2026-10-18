@@ -12,6 +12,8 @@ import { levelOfLemma } from '@/lib/content/levels';
 import { loadLesson } from '@/lib/content/loader';
 import { LessonId, SegmentId } from '@/lib/content/schema';
 import type { Json } from '@/lib/supabase/database.types';
+import { languageOfId } from '@/lib/content/language';
+import type { PracticeLanguage } from '@/lib/content/language';
 
 const toJson = (value: unknown): Json => JSON.parse(JSON.stringify(value)) as Json;
 
@@ -63,7 +65,7 @@ export async function addCards(input: unknown): Promise<ActionResult<{ added: nu
   });
   if (cards.length === 0) return fail('invalid_input');
 
-  const result = await insertCards(supabase, cards);
+  const result = await insertCards(supabase, cards, languageOfId(lesson.id));
   if (!result) return fail('internal');
   return ok(result);
 }
@@ -106,7 +108,7 @@ export async function submitReviews(input: unknown): Promise<ActionResult<{ appl
     supabase
       .from('srs_cards')
       .select(
-        'id, lemma, due, stability, difficulty, elapsed_days, scheduled_days, learning_steps, reps, lapses, state, last_review',
+        'id, lemma, language, due, stability, difficulty, elapsed_days, scheduled_days, learning_steps, reps, lapses, state, last_review',
       )
       .in('id', cardIds),
     supabase
@@ -121,6 +123,7 @@ export async function submitReviews(input: unknown): Promise<ActionResult<{ appl
 
   const states = new Map<string, CardState>(cards.data.map((row) => [row.id, toCardState(row)]));
   const lemmaOf = new Map(cards.data.map((row) => [row.id, row.lemma]));
+  const languageOf = new Map(cards.data.map((row) => [row.id, row.language as PracticeLanguage]));
   const already = new Set(seen.data.map((row) => row.client_id));
   const now = Date.now() + CLOCK_SKEW_MS;
 
@@ -155,27 +158,31 @@ export async function submitReviews(input: unknown): Promise<ActionResult<{ appl
   // El léxico sigue al repaso: una tarjeta que llega a intervalos largos da la palabra por
   // conocida; si después se olvida, vuelve a «aprendiendo».
   const touched = new Set(reviews.map((r) => r.cardId));
-  const known: string[] = [];
-  const learning: string[] = [];
+  // Cada palabra, en el léxico del idioma de su tarjeta.
+  const updates = new Map<
+    string,
+    { status: 'known' | 'learning'; language: PracticeLanguage; lemmas: Set<string> }
+  >();
   for (const cardId of touched) {
     const lemma = lemmaOf.get(cardId);
+    const language = languageOf.get(cardId);
     const state = states.get(cardId);
-    if (!lemma || !state) continue;
-    (isMature(state) ? known : learning).push(lemma);
+    if (!lemma || !language || !state) continue;
+    const status = isMature(state) ? 'known' : 'learning';
+    const group = updates.get(`${status}:${language}`) ?? { status, language, lemmas: new Set() };
+    group.lemmas.add(lemma);
+    updates.set(`${status}:${language}`, group);
   }
-  for (const [status, lemmas] of [
-    ['known', known],
-    ['learning', learning],
-  ] as const) {
-    if (lemmas.length === 0) continue;
+  for (const { status, language, lemmas } of updates.values()) {
     const { error: lexiconError } = await supabase.from('lexicon').upsert(
-      [...new Set(lemmas)].map((lemma) => ({
+      [...lemmas].map((lemma) => ({
+        language,
         lemma,
         status,
         source: 'srs' as const,
-        cefr: levelOfLemma(lemma) ?? null,
+        cefr: levelOfLemma(lemma, language) ?? null,
       })),
-      { onConflict: 'user_id,lemma' },
+      { onConflict: 'user_id,language,lemma' },
     );
     if (lexiconError) return fail('internal');
   }

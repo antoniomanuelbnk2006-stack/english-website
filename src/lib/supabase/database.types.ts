@@ -223,6 +223,27 @@ export type Database = {
         };
         Relationships: [];
       };
+      language_levels: {
+        Row: {
+          declared_level: Database['public']['Enums']['cefr'];
+          language: string;
+          updated_at: string;
+          user_id: string;
+        };
+        Insert: {
+          declared_level: Database['public']['Enums']['cefr'];
+          language: string;
+          updated_at?: string;
+          user_id?: string;
+        };
+        Update: {
+          declared_level?: Database['public']['Enums']['cefr'];
+          language?: string;
+          updated_at?: string;
+          user_id?: string;
+        };
+        Relationships: [];
+      };
       lesson_progress: {
         Row: {
           attempts: number;
@@ -282,6 +303,7 @@ export type Database = {
       };
       lexicon: {
         Row: {
+          language: string;
           cefr: Database['public']['Enums']['cefr'] | null;
           first_seen_at: string;
           lemma: string;
@@ -293,6 +315,7 @@ export type Database = {
           user_id: string;
         };
         Insert: {
+          language?: string;
           cefr?: Database['public']['Enums']['cefr'] | null;
           first_seen_at?: string;
           lemma: string;
@@ -304,6 +327,7 @@ export type Database = {
           user_id?: string;
         };
         Update: {
+          language?: string;
           cefr?: Database['public']['Enums']['cefr'] | null;
           first_seen_at?: string;
           lemma?: string;
@@ -462,6 +486,7 @@ export type Database = {
       };
       rating_history: {
         Row: {
+          language: string;
           id: number;
           rating: number;
           recorded_at: string;
@@ -469,6 +494,7 @@ export type Database = {
           user_id: string;
         };
         Insert: {
+          language?: string;
           id?: never;
           rating: number;
           recorded_at?: string;
@@ -476,6 +502,7 @@ export type Database = {
           user_id?: string;
         };
         Update: {
+          language?: string;
           id?: never;
           rating?: number;
           recorded_at?: string;
@@ -486,6 +513,7 @@ export type Database = {
       };
       skill_ratings: {
         Row: {
+          language: string;
           confirmed_at: string | null;
           confirmed_level: Database['public']['Enums']['cefr'] | null;
           items_count: number;
@@ -495,6 +523,7 @@ export type Database = {
           user_id: string;
         };
         Insert: {
+          language?: string;
           confirmed_at?: string | null;
           confirmed_level?: Database['public']['Enums']['cefr'] | null;
           items_count?: number;
@@ -504,6 +533,7 @@ export type Database = {
           user_id?: string;
         };
         Update: {
+          language?: string;
           confirmed_at?: string | null;
           confirmed_level?: Database['public']['Enums']['cefr'] | null;
           items_count?: number;
@@ -516,6 +546,7 @@ export type Database = {
       };
       srs_cards: {
         Row: {
+          language: string;
           back: Json;
           created_at: string;
           difficulty: number;
@@ -538,6 +569,7 @@ export type Database = {
           user_id: string;
         };
         Insert: {
+          language?: string;
           back: Json;
           created_at?: string;
           difficulty?: number;
@@ -560,6 +592,7 @@ export type Database = {
           user_id?: string;
         };
         Update: {
+          language?: string;
           back?: Json;
           created_at?: string;
           difficulty?: number;
@@ -764,6 +797,7 @@ export type Database = {
         Args: {
           p_attempts: Json;
           p_lesson_id: string;
+          p_language?: string;
           p_lesson_version: number;
           p_progress: Json;
           p_ratings: Json;

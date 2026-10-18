@@ -1,12 +1,16 @@
+'use client';
+
 import { segment, type Span } from '@/features/writing/lib/highlight';
+import { useContentLang } from '@/components/content-language';
 
 /**
  * Un texto en inglés con los tramos corregidos resaltados y numerados (el número enlaza, a la
  * vista, con la lista de correcciones). Conserva los saltos de párrafo tal como se escribieron.
  */
 export function MarkedText({ text, spans }: { text: string; spans: readonly (Span | null)[] }) {
+  const lang = useContentLang();
   return (
-    <p lang="en" className="prose-reading whitespace-pre-wrap">
+    <p lang={lang} className="prose-reading whitespace-pre-wrap">
       {segment(text, spans).map((piece, position) =>
         piece.index === null ? (
           piece.text

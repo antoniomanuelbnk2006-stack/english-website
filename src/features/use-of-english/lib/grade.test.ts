@@ -8,6 +8,7 @@ import {
   toPublicSet,
   WordFormation,
 } from '@/lib/content/uoe-schema';
+import { localize } from '@/lib/content/help';
 import { expandContractions, gradeUoe, sentenceWithGap, splitCloze } from './grade';
 
 const base = {
@@ -19,85 +20,102 @@ const base = {
   provenance: { origin: 'ai', created_at: '2026-10-09T00:00:00Z' },
 } as const;
 
-const mcq = McqCloze.parse({
-  ...base,
-  id: 'b2-uoe-901',
-  level: 'B2',
-  part: 'mcq_cloze',
-  text: 'She {{1}} a decision. It {{2}} out well. He {{3}} part. They {{4}} up.',
-  gaps: [
-    { n: 1, options: ['did', 'made', 'had', 'put'], answer: 1, explanation_es: 'make a decision.' },
-    { n: 2, options: ['turned', 'went', 'came', 'ran'], answer: 0, explanation_es: 'turn out.' },
-    { n: 3, options: ['had', 'made', 'took', 'got'], answer: 2, explanation_es: 'take part.' },
-    { n: 4, options: ['gave', 'let', 'set', 'took'], answer: 0, explanation_es: 'give up.' },
-  ],
-});
+const mcq = localize(
+  McqCloze.parse({
+    ...base,
+    id: 'b2-uoe-901',
+    level: 'B2',
+    part: 'mcq_cloze',
+    text: 'She {{1}} a decision. It {{2}} out well. He {{3}} part. They {{4}} up.',
+    gaps: [
+      {
+        n: 1,
+        options: ['did', 'made', 'had', 'put'],
+        answer: 1,
+        explanation_es: 'make a decision.',
+      },
+      { n: 2, options: ['turned', 'went', 'came', 'ran'], answer: 0, explanation_es: 'turn out.' },
+      { n: 3, options: ['had', 'made', 'took', 'got'], answer: 2, explanation_es: 'take part.' },
+      { n: 4, options: ['gave', 'let', 'set', 'took'], answer: 0, explanation_es: 'give up.' },
+    ],
+  }),
+  'es',
+);
 
-const open = OpenCloze.parse({
-  ...base,
-  id: 'b2-uoe-902',
-  level: 'B2',
-  part: 'open_cloze',
-  text: 'I have lived here {{1}} 2019. {{2}} it rained, we went out. One {{3}} them. As {{4}} as.',
-  gaps: [
-    { n: 1, accept: ['since'], explanation_es: 'Punto de partida.' },
-    { n: 2, accept: ['Although', 'Though'], explanation_es: 'Concesión.' },
-    { n: 3, accept: ['of'], explanation_es: 'one of.' },
-    { n: 4, accept: ['soon', 'long'], explanation_es: 'as soon as / as long as.' },
-  ],
-});
+const open = localize(
+  OpenCloze.parse({
+    ...base,
+    id: 'b2-uoe-902',
+    level: 'B2',
+    part: 'open_cloze',
+    text: 'I have lived here {{1}} 2019. {{2}} it rained, we went out. One {{3}} them. As {{4}} as.',
+    gaps: [
+      { n: 1, accept: ['since'], explanation_es: 'Punto de partida.' },
+      { n: 2, accept: ['Although', 'Though'], explanation_es: 'Concesión.' },
+      { n: 3, accept: ['of'], explanation_es: 'one of.' },
+      { n: 4, accept: ['soon', 'long'], explanation_es: 'as soon as / as long as.' },
+    ],
+  }),
+  'es',
+);
 
-const formation = WordFormation.parse({
-  ...base,
-  id: 'b2-uoe-903',
-  level: 'B2',
-  part: 'word_formation',
-  text: 'A very {{1}} place. Her {{2}} was clear. It was {{3}}. An {{4}} man.',
-  gaps: [
-    { n: 1, stem: 'ATTRACT', accept: ['attractive'], explanation_es: 'Adjetivo.' },
-    { n: 2, stem: 'DISAPPOINT', accept: ['disappointment'], explanation_es: 'Nombre.' },
-    { n: 3, stem: 'BELIEVE', accept: ['unbelievable'], explanation_es: 'Prefijo negativo.' },
-    { n: 4, stem: 'HONEST', accept: ['dishonest'], explanation_es: 'Prefijo.' },
-  ],
-});
+const formation = localize(
+  WordFormation.parse({
+    ...base,
+    id: 'b2-uoe-903',
+    level: 'B2',
+    part: 'word_formation',
+    text: 'A very {{1}} place. Her {{2}} was clear. It was {{3}}. An {{4}} man.',
+    gaps: [
+      { n: 1, stem: 'ATTRACT', accept: ['attractive'], explanation_es: 'Adjetivo.' },
+      { n: 2, stem: 'DISAPPOINT', accept: ['disappointment'], explanation_es: 'Nombre.' },
+      { n: 3, stem: 'BELIEVE', accept: ['unbelievable'], explanation_es: 'Prefijo negativo.' },
+      { n: 4, stem: 'HONEST', accept: ['dishonest'], explanation_es: 'Prefijo.' },
+    ],
+  }),
+  'es',
+);
 
-const kwt = KeyWordTransformation.parse({
-  ...base,
-  id: 'b2-uoe-904',
-  level: 'B2',
-  part: 'key_word_transformation',
-  min_words: 2,
-  max_words: 5,
-  items: [
-    {
-      n: 1,
-      original: 'I last saw him ten years ago.',
-      keyword: 'FOR',
-      before: 'I',
-      after: 'ten years.',
-      parts: [["haven't seen", 'have not seen'], ['him for']],
-      explanation_es: 'Present perfect + for.',
-    },
-    {
-      n: 2,
-      original: 'The film was so boring that we left early.',
-      keyword: 'SUCH',
-      before: 'It was',
-      after: 'we left early.',
-      parts: [['such a boring film'], ['that']],
-      explanation_es: 'such + a + adjetivo + nombre + that.',
-    },
-    {
-      n: 3,
-      original: "It wasn't necessary for you to wait.",
-      keyword: 'NEED',
-      before: 'You',
-      after: 'waited.',
-      parts: [["didn't need", 'did not need'], ['to have']],
-      explanation_es: 'Necesidad en pasado.',
-    },
-  ],
-});
+const kwt = localize(
+  KeyWordTransformation.parse({
+    ...base,
+    id: 'b2-uoe-904',
+    level: 'B2',
+    part: 'key_word_transformation',
+    min_words: 2,
+    max_words: 5,
+    items: [
+      {
+        n: 1,
+        original: 'I last saw him ten years ago.',
+        keyword: 'FOR',
+        before: 'I',
+        after: 'ten years.',
+        parts: [["haven't seen", 'have not seen'], ['him for']],
+        explanation_es: 'Present perfect + for.',
+      },
+      {
+        n: 2,
+        original: 'The film was so boring that we left early.',
+        keyword: 'SUCH',
+        before: 'It was',
+        after: 'we left early.',
+        parts: [['such a boring film'], ['that']],
+        explanation_es: 'such + a + adjetivo + nombre + that.',
+      },
+      {
+        n: 3,
+        original: "It wasn't necessary for you to wait.",
+        keyword: 'NEED',
+        before: 'You',
+        after: 'waited.',
+        parts: [["didn't need", 'did not need'], ['to have']],
+        explanation_es: 'Necesidad en pasado.',
+      },
+    ],
+  }),
+  'es',
+);
 
 describe('partes 1 a 3 · un punto por hueco', () => {
   it('parte 1: cuenta las opciones elegidas por su índice', () => {

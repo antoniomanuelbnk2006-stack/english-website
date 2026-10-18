@@ -597,7 +597,11 @@ async function handleTestControl(
     const id = await testDb.createUser(TEST_EMAIL);
     // Los tests parten de un usuario que ya eligió nivel (B1); el primer acceso real, no:
     // ese flujo tiene su propio test, que borra el nivel antes de entrar.
-    await testDb.db.query(`update public.profiles set declared_level = 'B1' where id = $1`, [id]);
+    // El nivel es por idioma (ADR-0037): el de inglés.
+    await testDb.db.query(
+      `insert into public.language_levels (user_id, language, declared_level) values ($1, 'en', 'B1')`,
+      [id],
+    );
     return { status: 200, json: { id, email: TEST_EMAIL } };
   }
   if (url.pathname === '/__test/query') {

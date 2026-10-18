@@ -9,12 +9,14 @@ import { SubmissionInput } from '@/features/writing/lib/input';
 import { cardCandidates, toOffer } from '@/features/writing/server/cards';
 import { anthropicModel, requestFeedback } from '@/features/writing/server/feedback';
 import { supabaseStore } from '@/features/writing/server/store';
-import { WRITING_PROMPT_VERSION } from '@/lib/ai/prompts/writing';
+import { writingPromptVersion } from '@/lib/ai/prompts/writing';
 import { requireUser } from '@/lib/auth';
 import { getGrammarIndex } from '@/lib/content/grammar';
 import { findWritingPrompt } from '@/lib/content/writing';
 import { env } from '@/lib/env';
 import { isSameOrigin } from '@/lib/http';
+import { getLocale } from '@/lib/i18n/server';
+import { languageOfId } from '@/lib/content/language';
 
 // Corrección de un writing con la IA: la única llamada en vivo a la API de Claude
 // (docs/04-arquitectura/06-ia.md §3, ADR-0007). La clave no sale nunca del servidor.
@@ -50,7 +52,8 @@ export async function POST(request: Request) {
   const { promptId, text, examMode, activeSeconds } = parsed.data;
 
   // La consigna sale del contenido del repo, no del navegador.
-  const prompt = findWritingPrompt(promptId);
+  const locale = await getLocale();
+  const prompt = findWritingPrompt(promptId, locale);
   if (!prompt) return refuse('not_found');
 
   const result = await requestFeedback(
@@ -58,10 +61,11 @@ export async function POST(request: Request) {
       store: supabaseStore(session.supabase),
       model: anthropicModel(getClient(env.ANTHROPIC_API_KEY), env.AI_WRITING_MODEL),
       limits: { daily: env.AI_DAILY_LIMIT, monthlyUsd: env.AI_MONTHLY_BUDGET_USD },
-      grammarIds: getGrammarIndex().map((ficha) => ficha.id),
+      grammarIds: getGrammarIndex(locale, languageOfId(prompt.id)).map((ficha) => ficha.id),
       now: new Date(),
     },
-    { prompt, text, examMode, activeSeconds },
+    // La corrección se explica en el idioma de la interfaz (ADR-0034).
+    { prompt, text, examMode, activeSeconds, locale },
   );
   if (!result.ok) return refuse(result.error);
 
@@ -70,7 +74,11 @@ export async function POST(request: Request) {
     text,
     promptId: prompt.id,
     taskType: prompt.task_type,
-    feedback: { kind: 'ai', feedback: result.feedback, promptVersion: WRITING_PROMPT_VERSION },
+    feedback: {
+      kind: 'ai',
+      feedback: result.feedback,
+      promptVersion: writingPromptVersion(locale, languageOfId(prompt.id)),
+    },
   });
   const body: WritingFeedbackResponse = {
     id: result.id,

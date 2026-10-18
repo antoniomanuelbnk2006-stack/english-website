@@ -14,6 +14,7 @@ const READ = ['SELECT'];
 /** Qué puede hacer el usuario con sus filas en cada tabla. Una tabla nueva tiene que constar aquí. */
 const EXPECTED: Record<string, string[]> = {
   profiles: RWU,
+  language_levels: RWU,
   skill_ratings: RWU,
   lesson_progress: RWU,
   lexicon: RWU,
@@ -71,6 +72,7 @@ beforeAll(async () => {
     ],
   );
   await asAna(`select public.add_activity('2026-10-13', 600, 100)`);
+  await asAna(`insert into public.language_levels (language, declared_level) values ('en', 'B1')`);
   await asAna(
     `insert into public.lexicon (lemma, status, source) values ('forecast', 'learning', 'srs')`,
   );
@@ -231,7 +233,7 @@ describe('lo que la app sigue pudiendo hacer', () => {
     const upsert = () =>
       asAna<{ status: string }>(
         `insert into public.lexicon (lemma, status, source) values ('forecast', 'known', 'manual')
-         on conflict (user_id, lemma) do update set status = excluded.status returning status`,
+         on conflict (user_id, language, lemma) do update set status = excluded.status returning status`,
       );
     expect(await upsert()).toEqual([{ status: 'known' }]);
 

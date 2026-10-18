@@ -16,12 +16,13 @@ import {
 } from '@/features/dictionary/lib/wiktionary';
 import { lookupWord } from '@/features/dictionary/server/lookup';
 import { getLexiconStatus } from '@/features/lexicon/server/queries';
+import { getPracticeLanguage } from '@/features/profile/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
 import { findDictionaryEntry } from '@/lib/content/dictionary';
 import { lemmaKey, type DictionaryPos } from '@/lib/content/dictionary-schema';
 import { levelOfLemma } from '@/lib/content/levels';
 import type { Translate } from '@/lib/i18n';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('dictionary.lookupTitle') };
@@ -52,8 +53,9 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
   const status = (await getLexiconStatus([key])).get(key);
   const state = stateOf(status);
   const badge = state === 'todo' ? null : BADGE[state];
-  const level = levelOfLemma(key);
-  const curated = findDictionaryEntry(entry.word);
+  const language = await getPracticeLanguage();
+  const level = levelOfLemma(key, language);
+  const curated = findDictionaryEntry(entry.word, await getLocale(), language);
   const base = baseWord(entry);
 
   return (
@@ -97,7 +99,7 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
             <p className="text-body-sm font-medium text-muted">
               {t('dictionary.lookupInDeck', { level: curated.level })}
             </p>
-            <p className="mt-1 text-body-lg">{curated.entry.es}</p>
+            <p className="mt-1 text-body-lg">{curated.entry.translation}</p>
             <Example
               sentence={curated.entry.example}
               surface={curated.entry.surface}

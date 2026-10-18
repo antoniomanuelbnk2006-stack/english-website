@@ -1,4 +1,5 @@
 import { preferencesAllowed } from '@/features/consent/lib/browser';
+import type { PracticeLanguage } from '@/lib/content/language';
 import { ACCENTS, DEFAULT_ACCENT, pickVoice, type Accent } from './voices';
 
 // Audio modelo con la voz del navegador (solo en el cliente). No hay ficheros de audio: una
@@ -47,17 +48,42 @@ export function subscribeAccent(onChange: () => void): () => void {
   };
 }
 
-/** Dice un texto en inglés con la voz del navegador. Devuelve `false` si no hay síntesis. */
+/** La voz de cada idioma que no es inglés (el inglés tiene acentos: `voices.ts`). */
+const SPEECH_LANG: Record<Exclude<PracticeLanguage, 'en'>, string> = {
+  es: 'es-ES',
+  fr: 'fr-FR',
+  zh: 'zh-CN',
+  ja: 'ja-JP',
+};
+
+/** Una voz del navegador de ese idioma: la del mismo país si la hay, y si no, cualquiera. */
+function pickVoiceFor(
+  voices: SpeechSynthesisVoice[],
+  tag: string,
+): SpeechSynthesisVoice | undefined {
+  const same = (voice: SpeechSynthesisVoice) => voice.lang.replace('_', '-').toLowerCase();
+  return (
+    voices.find((voice) => same(voice) === tag.toLowerCase()) ??
+    voices.find((voice) => same(voice).startsWith(`${tag.slice(0, 2).toLowerCase()}-`))
+  );
+}
+
+/**
+ * Dice un texto con la voz del navegador: en inglés (con el acento elegido) o, con `language`, en
+ * ese idioma. Devuelve `false` si no hay síntesis.
+ */
 export function speakText(
   text: string,
-  options: { accent?: Accent; rate?: number; onEnd?: () => void } = {},
+  options: { accent?: Accent; language?: PracticeLanguage; rate?: number; onEnd?: () => void } = {},
 ): boolean {
   if (!canSpeak()) return false;
+  const other = options.language && options.language !== 'en' ? options.language : null;
   const accent = options.accent ?? storedAccent();
   const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = accent;
+  utterance.lang = other ? SPEECH_LANG[other] : accent;
   utterance.rate = options.rate ?? 0.92;
-  const voice = pickVoice(window.speechSynthesis.getVoices(), accent);
+  const voices = window.speechSynthesis.getVoices();
+  const voice = other ? pickVoiceFor(voices, SPEECH_LANG[other]) : pickVoice(voices, accent);
   if (voice) utterance.voice = voice;
   if (options.onEnd) {
     utterance.onend = options.onEnd;

@@ -13,6 +13,7 @@ import { findWritingPrompt } from '@/lib/content/writing';
 import { WritingTaskType } from '@/lib/content/writing-schema';
 import { intlLocale } from '@/lib/i18n';
 import { getLocale, getT } from '@/lib/i18n/server';
+import { contentLang } from '@/lib/content/language';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('writing.historyTitle') };
@@ -108,7 +109,9 @@ export default async function WritingHistoryPage() {
             <PanelTitle id="writing-entries">{t('writing.entriesTitle')}</PanelTitle>
             <ul className="flex flex-col gap-4">
               {submissions.map((submission) => {
-                const prompt = submission.promptId ? findWritingPrompt(submission.promptId) : null;
+                const prompt = submission.promptId
+                  ? findWritingPrompt(submission.promptId, locale)
+                  : null;
                 const type = WritingTaskType.safeParse(submission.taskType);
                 return (
                   <li key={submission.id}>
@@ -118,7 +121,10 @@ export default async function WritingHistoryPage() {
                     >
                       <span className="flex flex-wrap items-baseline justify-between gap-x-3">
                         {prompt ? (
-                          <span lang="en" className="text-body-lg leading-snug font-medium">
+                          <span
+                            lang={contentLang(prompt.id)}
+                            className="text-body-lg leading-snug font-medium"
+                          >
                             {prompt.title}
                           </span>
                         ) : (

@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function ExamResultPage({ params }: PageProps<'/examenes/[id]/resultado'>) {
   await getSessionOrRedirect();
   const { id } = await params;
-  const paper = findExamPaper(id);
+  const paper = findExamPaper(id, await getLocale());
   if (!paper) notFound();
   // El Speaking se autoevalúa en su propia pantalla: no tiene corrección que reconstruir.
   if (paper.paper === 'speaking') redirect(`/examenes/${paper.id}` as Route);

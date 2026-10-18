@@ -1,0 +1,53 @@
+{
+  "id": "es-a1-wri-004",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "task_type": "message",
+  "title": "Mi casa y mi ciudad",
+  "topic": "city-housing",
+  "context_es": {
+    "en": "A friend is coming to visit you for the first time. Before the trip, you write a message describing where you live.",
+    "fr": "Un ami vient vous rendre visite pour la première fois. Avant le voyage, vous lui écrivez un message pour décrire l’endroit où vous habitez.",
+    "zh": "一位朋友第一次来看你。出发前，你写了一条消息，介绍你住的地方。",
+    "ja": "友だちが初めてあなたを訪ねてきます。旅行の前に、住んでいる場所を説明するメッセージを書きます。"
+  },
+  "prompt_en": "Un amigo va a visitarte por primera vez. Escríbele un mensaje y descríbele tu casa y tu ciudad.",
+  "points": [
+    "dónde vives y cómo es tu casa",
+    "qué hay cerca de tu casa",
+    "qué te gusta de tu ciudad"
+  ],
+  "words_min": 25,
+  "words_max": 50,
+  "time_min": 10,
+  "useful_language": [
+    "Hola, Daniel:",
+    "Vivo en …",
+    "Mi casa es … y tiene …",
+    "Cerca de mi casa hay …",
+    "Me gusta mi ciudad porque …",
+    "¡Te espero!"
+  ],
+  "tips_es": [
+    {
+      "en": "Use *hay* to say what exists (*Hay un parque*) and *está* to say where it is (*El parque está cerca*).",
+      "fr": "Utilisez *hay* pour dire ce qui existe (*Hay un parque*) et *está* pour dire où c’est (*El parque está cerca*).",
+      "zh": "用 *hay* 说明“有什么”（*Hay un parque*），用 *está* 说明“在哪里”（*El parque está cerca*）。",
+      "ja": "「何があるか」は *hay*（*Hay un parque*）、「どこにあるか」は *está*（*El parque está cerca*）で表します。"
+    },
+    {
+      "en": "Adjectives agree: *una casa pequeña, un piso pequeño*.",
+      "fr": "Les adjectifs s’accordent : *una casa pequeña, un piso pequeño*.",
+      "zh": "形容词要一致：*una casa pequeña, un piso pequeño*。",
+      "ja": "形容詞は性を合わせます：*una casa pequeña, un piso pequeño*。"
+    }
+  ],
+  "model_answer": "Hola, Daniel:\n\nVivo en Valencia, en un piso pequeño pero bonito. Tiene dos habitaciones y una cocina grande. Cerca de mi casa hay un parque y una panadería. Me gusta mi ciudad porque es tranquila.\n\n¡Te espero!\nMarta",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

@@ -18,11 +18,13 @@ import {
 } from '@/features/lessons/lib/library';
 import { getProgressByLesson } from '@/features/lessons/server/queries';
 import { getCoverageByLesson, getUserLevel } from '@/features/lexicon/server/queries';
+import { localize } from '@/lib/content/help';
 import { getLessonIndex, unitTitle } from '@/lib/content/index';
 import type { TranslationKey } from '@/lib/i18n';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
 import { cn } from '@/lib/utils';
 import { LessonCard } from './lesson-card';
+import { getPracticeLanguage } from '@/features/profile/server/queries';
 
 const STATUS_LABEL: Record<LessonStatus, TranslationKey> = {
   new: 'lesson.statusNew',
@@ -80,8 +82,11 @@ export async function LessonLibrary({
   emptyIcon: LucideIcon;
   emptyBody: TranslationKey;
 }) {
-  const t = await getT();
-  const all = getLessonIndex().filter((lesson) => lesson.skill === skill);
+  const [t, locale, language] = await Promise.all([getT(), getLocale(), getPracticeLanguage()]);
+  const all = localize(
+    getLessonIndex(language).filter((lesson) => lesson.skill === skill),
+    locale,
+  );
 
   if (all.length === 0) {
     return (
@@ -205,7 +210,7 @@ export async function LessonLibrary({
             return (
               <section key={group.unit} aria-labelledby={`unit-${group.unit}`}>
                 <div className="mb-6 flex items-baseline justify-between gap-3">
-                  <PanelTitle id={`unit-${group.unit}`}>{unitTitle(group.unit)}</PanelTitle>
+                  <PanelTitle id={`unit-${group.unit}`}>{unitTitle(group.unit, locale)}</PanelTitle>
                   <span className="tabular-nums text-caption text-muted">
                     {t('library.seriesProgress', { done, total: group.lessons.length })}
                   </span>

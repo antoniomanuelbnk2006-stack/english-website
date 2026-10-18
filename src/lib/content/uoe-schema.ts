@@ -1,11 +1,13 @@
 import { z } from 'zod';
+import { helpText, type Localized } from './help';
+import { DASH_PREFIX, withoutLanguage } from './language';
 import { Cefr } from './schema';
 
 // Use of English: ejercicios con el formato de los exámenes de Cambridge, por nivel
 // (docs/adr/0012-use-of-english.md). Viven en `content/use-of-english/{nivel}/{id}.json`.
 // Textos originales: nada copiado de exámenes reales.
 
-export const UoeId = z.string().regex(/^(a1|a2|b1|b2|c1|c2)-uoe-\d{3}$/);
+export const UoeId = z.string().regex(new RegExp(`^${DASH_PREFIX}(a1|a2|b1|b2|c1|c2)-uoe-\\d{3}$`));
 
 export const UOE_PARTS = [
   'mcq_cloze',
@@ -23,7 +25,7 @@ const Base = z.object({
   /** Título del texto (en inglés) o del ejercicio. */
   title: z.string().min(1),
   /** Una línea en español para la tarjeta del índice. */
-  summary_es: z.string().min(1),
+  summary_es: helpText(),
   est_minutes: z.number().int().positive(),
   provenance: z.object({
     origin: z.enum(['human', 'ai']),
@@ -35,7 +37,7 @@ const Base = z.object({
 
 /** Texto con los huecos marcados `{{1}}`, `{{2}}`… */
 const ClozeText = z.string().min(1);
-const Explanation = z.string().min(1);
+const Explanation = helpText();
 
 /** Parte 1 · Elegir la palabra que encaja (léxico, colocaciones, verbos frasales). */
 export const McqCloze = Base.extend({
@@ -126,8 +128,10 @@ export const UoeSet = z.discriminatedUnion('part', [
   WordFormation,
   KeyWordTransformation,
 ]);
-export type UoeSet = z.infer<typeof UoeSet>;
-export type KwtSet = z.infer<typeof KeyWordTransformation>;
+export type RawUoeSet = z.infer<typeof UoeSet>;
+export type UoeSet = Localized<RawUoeSet>;
+export type RawKwtSet = z.infer<typeof KeyWordTransformation>;
+export type KwtSet = Localized<RawKwtSet>;
 
 const normalize = (text: string) =>
   text
@@ -159,13 +163,13 @@ export function gapNumbers(text: string): number[] {
 }
 
 /** Comprobaciones que el esquema no puede expresar. Devuelve los problemas encontrados. */
-export function checkUoeSet(set: UoeSet, expected: { id: string; level: string }): string[] {
+export function checkUoeSet(set: RawUoeSet, expected: { id: string; level: string }): string[] {
   const issues: string[] = [];
   if (set.id !== expected.id) issues.push(`el id «${set.id}» no coincide con el fichero`);
   if (set.level.toLowerCase() !== expected.level) {
     issues.push(`el nivel ${set.level} no coincide con la carpeta ${expected.level}`);
   }
-  if (!set.id.startsWith(`${set.level.toLowerCase()}-`)) {
+  if (!withoutLanguage(set.id).startsWith(`${set.level.toLowerCase()}-`)) {
     issues.push(`el id debe empezar por «${set.level.toLowerCase()}-»`);
   }
 

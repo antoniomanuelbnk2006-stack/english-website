@@ -1,11 +1,13 @@
 import { z } from 'zod';
+import { helpText, type Localized } from './help';
+import { DASH_PREFIX, withoutLanguage } from './language';
 import { Cefr, Topic } from './schema';
 
 // Consignas de writing por nivel (docs/01-pedagogia/07-writing-y-speaking.md §2).
 // Viven en `content/writing/{nivel}/{id}.json`. Textos originales, con el formato de las
 // tareas de los exámenes pero sin copiar ninguna.
 
-export const WritingId = z.string().regex(/^(a1|a2|b1|b2|c1|c2)-wri-\d{3}$/);
+export const WritingId = z.string().regex(new RegExp(`^${DASH_PREFIX}(a1|a2|b1|b2|c1|c2)-wri-\\d{3}$`));
 
 export const WRITING_TASK_TYPES = [
   'message',
@@ -52,7 +54,7 @@ export const WritingPrompt = z.object({
   title: z.string().min(1),
   topic: Topic,
   /** La situación, en español: quién escribe, a quién y para qué. */
-  context_es: z.string().min(1),
+  context_es: helpText(),
   /** La consigna, en inglés, tal como aparecería en un examen. */
   prompt_en: z.string().min(1),
   /** Lo que el texto tiene que cubrir. */
@@ -64,7 +66,7 @@ export const WritingPrompt = z.object({
   /** Expresiones que encajan en este tipo de texto. */
   useful_language: z.array(z.string().min(1)).min(3).max(10),
   /** Consejos de formato y registro, en español. */
-  tips_es: z.array(z.string().min(1)).min(1).max(4),
+  tips_es: z.array(helpText()).min(1).max(4),
   /** Una respuesta posible. Solo se enseña después de entregar la tuya. */
   model_answer: z.string().min(1),
   provenance: z.object({
@@ -74,7 +76,8 @@ export const WritingPrompt = z.object({
     reviewed_by: z.string().optional(),
   }),
 });
-export type WritingPrompt = z.infer<typeof WritingPrompt>;
+export type RawWritingPrompt = z.infer<typeof WritingPrompt>;
+export type WritingPrompt = Localized<RawWritingPrompt>;
 
 /** Lo que ve el navegador antes de entregar: todo menos la respuesta modelo. */
 export type PublicWritingPrompt = Omit<WritingPrompt, 'model_answer' | 'provenance' | 'status'>;
@@ -116,7 +119,7 @@ export function splitParagraphs(text: string): string[] {
 
 /** Comprobaciones que el esquema no puede expresar. Devuelve los problemas encontrados. */
 export function checkWritingPrompt(
-  prompt: WritingPrompt,
+  prompt: RawWritingPrompt,
   expected: { id: string; level: string },
 ): string[] {
   const issues: string[] = [];
@@ -125,7 +128,9 @@ export function checkWritingPrompt(
   if (level !== expected.level) {
     issues.push(`el nivel ${prompt.level} no coincide con la carpeta ${expected.level}`);
   }
-  if (!prompt.id.startsWith(`${level}-`)) issues.push(`el id debe empezar por «${level}-»`);
+  if (!withoutLanguage(prompt.id).startsWith(`${level}-`)) {
+    issues.push(`el id debe empezar por «${level}-»`);
+  }
 
   if (!WRITING_TYPES_BY_LEVEL[prompt.level].includes(prompt.task_type)) {
     issues.push(`el tipo «${prompt.task_type}» no se trabaja en ${prompt.level}`);

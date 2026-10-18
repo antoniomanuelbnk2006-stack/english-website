@@ -11,13 +11,13 @@ import { getSessionOrRedirect } from '@/lib/auth';
 import { findUoeSet } from '@/lib/content/uoe';
 import { toPublicSet, type UoePart } from '@/lib/content/uoe-schema';
 import type { TranslationKey } from '@/lib/i18n';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
 
 export async function generateMetadata({
   params,
 }: PageProps<'/use-of-english/[id]'>): Promise<Metadata> {
   const { id } = await params;
-  return { title: findUoeSet(id)?.title };
+  return { title: findUoeSet(id, await getLocale())?.title };
 }
 
 const PART_TITLE: Record<UoePart, TranslationKey> = {
@@ -30,7 +30,7 @@ const PART_TITLE: Record<UoePart, TranslationKey> = {
 export default async function UoeSetPage({ params }: PageProps<'/use-of-english/[id]'>) {
   await getSessionOrRedirect();
   const { id } = await params;
-  const set = findUoeSet(id);
+  const set = findUoeSet(id, await getLocale());
   if (!set) notFound();
 
   const [t, progress] = await Promise.all([getT(), getLessonProgress(set.id)]);

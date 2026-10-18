@@ -12,8 +12,9 @@ import { getSessionOrRedirect } from '@/lib/auth';
 import { getUoeIndex } from '@/lib/content/uoe';
 import { UOE_PARTS, type UoePart } from '@/lib/content/uoe-schema';
 import type { TranslationKey } from '@/lib/i18n';
-import { getT } from '@/lib/i18n/server';
+import { getLocale, getT } from '@/lib/i18n/server';
 import { cn } from '@/lib/utils';
+import { getPracticeLanguage } from '@/features/profile/server/queries';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('nav.useOfEnglish') };
@@ -37,7 +38,7 @@ export default async function UseOfEnglishPage({ searchParams }: PageProps<'/use
     getUserLevel(),
     getProgressByLesson(),
   ]);
-  const all = getUoeIndex();
+  const all = getUoeIndex(await getLocale(), await getPracticeLanguage());
 
   // Sin nivel en la URL se enseña el del usuario; «Todos» lo quita.
   const requested = first(params.nivel);
