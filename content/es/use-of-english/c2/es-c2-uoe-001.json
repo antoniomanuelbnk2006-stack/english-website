@@ -1,0 +1,90 @@
+{
+  "id": "es-c2-uoe-001",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "part": "mcq_cloze",
+  "title": "Del anonimato a la fama",
+  "summary_es": {
+    "en": "Collocations and idioms with four options.",
+    "fr": "Collocations et expressions avec quatre options.",
+    "zh": "四选一的搭配与习语。",
+    "ja": "4択のコロケーションと慣用句。"
+  },
+  "est_minutes": 9,
+  "text": "Después de años {{1}} en el anonimato, el escritor {{2}} a la fama con una novela que {{3}} las listas de ventas. Aunque él {{4}} la atención, la crítica lo {{5}} como una de las voces más originales de su generación, y los lectores {{6}} sus libros con devoción.",
+  "gaps": [
+    {
+      "n": 1,
+      "options": [
+        "sumido",
+        "sumergido",
+        "sumado",
+        "surgido"
+      ],
+      "answer": 0,
+      "explanation_es": "“Sumido en” = plunged in (a state): sumido en el anonimato."
+    },
+    {
+      "n": 2,
+      "options": [
+        "saltó",
+        "subió",
+        "salió",
+        "sobró"
+      ],
+      "answer": 0,
+      "explanation_es": "“Saltar a la fama” = to shoot to fame."
+    },
+    {
+      "n": 3,
+      "options": [
+        "encabezó",
+        "encaminó",
+        "enganchó",
+        "encarnó"
+      ],
+      "answer": 0,
+      "explanation_es": "To top the lists: encabezar."
+    },
+    {
+      "n": 4,
+      "options": [
+        "rehúya",
+        "rehaga",
+        "renuncie",
+        "reciba"
+      ],
+      "answer": 0,
+      "explanation_es": "“Rehuir” = to avoid; subjunctive after aunque."
+    },
+    {
+      "n": 5,
+      "options": [
+        "consagró",
+        "conservó",
+        "consoló",
+        "conformó"
+      ],
+      "answer": 0,
+      "explanation_es": "“Consagrar” = to establish as a master."
+    },
+    {
+      "n": 6,
+      "options": [
+        "devoran",
+        "devuelven",
+        "deciden",
+        "derriban"
+      ],
+      "answer": 0,
+      "explanation_es": "“Devorar un libro” = to devour a book."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

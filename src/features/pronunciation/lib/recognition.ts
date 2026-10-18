@@ -1,5 +1,4 @@
 import type { Alternative } from './assess';
-import type { Accent } from './voices';
 
 // Reconocimiento de voz del navegador (Web Speech API), solo en el cliente. Chrome y Edge lo
 // tienen; Firefox no. El audio lo procesa el servicio del propio navegador (ADR-0015): Señal no
@@ -68,7 +67,8 @@ export interface ListenHandle {
  * probable. Siempre termina llamando a `onResult` o a `onError`, una sola vez.
  */
 export function listenOnce(options: {
-  accent: Accent;
+  /** Etiqueta del idioma que se espera oír: `en-GB`, `en-US`, `es-ES`… */
+  lang: string;
   onResult: (alternatives: Alternative[]) => void;
   onError: (error: ListenError) => void;
 }): ListenHandle | null {
@@ -76,7 +76,7 @@ export function listenOnce(options: {
   if (!Constructor) return null;
 
   const recognition = new Constructor();
-  recognition.lang = options.accent;
+  recognition.lang = options.lang;
   recognition.continuous = false;
   recognition.interimResults = false;
   recognition.maxAlternatives = 5;

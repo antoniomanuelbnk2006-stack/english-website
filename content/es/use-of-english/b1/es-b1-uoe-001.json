@@ -1,0 +1,84 @@
+{
+  "id": "es-b1-uoe-001",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "part": "mcq_cloze",
+  "title": "Consejos del médico",
+  "summary_es": {
+    "en": "Present subjunctive after recommend, want, hope and es importante que.",
+    "fr": "Subjonctif présent après recommander, vouloir, espérer et es importante que.",
+    "zh": "在 recommendar、querer、esperar 和 es importante que 之后用现在虚拟式。",
+    "ja": "recomendar・querer・esperar・es importante que のあとの接続法現在。"
+  },
+  "est_minutes": 6,
+  "text": "Mi médico me recomienda que {{1}} más verduras y que {{2}} deporte. También quiere que {{3}} menos tiempo sentado. Espero que {{4}} su consejo. Es importante que {{5}} bien y que {{6}} suficiente agua.",
+  "gaps": [
+    {
+      "n": 1,
+      "options": [
+        "coma",
+        "como",
+        "comeré"
+      ],
+      "answer": 0,
+      "explanation_es": "After recomendar que, the present subjunctive: coma (not como)."
+    },
+    {
+      "n": 2,
+      "options": [
+        "haga",
+        "hago",
+        "hacer"
+      ],
+      "answer": 0,
+      "explanation_es": "Hacer: haga (from hago)."
+    },
+    {
+      "n": 3,
+      "options": [
+        "pase",
+        "paso",
+        "pasaré"
+      ],
+      "answer": 0,
+      "explanation_es": "Querer que + subjunctive: pase."
+    },
+    {
+      "n": 4,
+      "options": [
+        "siga",
+        "sigo",
+        "seguir"
+      ],
+      "answer": 0,
+      "explanation_es": "Esperar que + subjunctive: siga (from sigo)."
+    },
+    {
+      "n": 5,
+      "options": [
+        "duerma",
+        "duermo",
+        "dormir"
+      ],
+      "answer": 0,
+      "explanation_es": "Es importante que + subjunctive: duerma."
+    },
+    {
+      "n": 6,
+      "options": [
+        "beba",
+        "bebo",
+        "beber"
+      ],
+      "answer": 0,
+      "explanation_es": "Same structure: que beba."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

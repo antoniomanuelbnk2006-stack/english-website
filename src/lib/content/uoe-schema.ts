@@ -82,7 +82,7 @@ export const WordFormation = Base.extend({
       z.object({
         n: z.number().int().positive(),
         /** La palabra dada, en mayúsculas. */
-        stem: z.string().regex(/^[A-Z]+$/),
+        stem: z.string().regex(/^[A-ZÁÉÍÓÚÜÑ]+$/),
         accept: z.array(z.string().min(1)).min(1),
         explanation_es: Explanation,
       }),
@@ -106,7 +106,7 @@ export const KeyWordTransformation = Base.extend({
         n: z.number().int().positive(),
         original: z.string().min(1),
         /** La palabra dada, en mayúsculas. */
-        keyword: z.string().regex(/^[A-Z']+$/),
+        keyword: z.string().regex(/^[A-ZÁÉÍÓÚÜÑ']+$/),
         /** Lo que va antes y después del hueco en la segunda frase. */
         before: z.string(),
         after: z.string(),

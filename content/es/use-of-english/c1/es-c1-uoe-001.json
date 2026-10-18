@@ -1,0 +1,81 @@
+{
+  "id": "es-c1-uoe-001",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "part": "open_cloze",
+  "title": "La memoria no es una grabadora",
+  "summary_es": {
+    "en": "Comparatives, relative structures and fixed expressions in a formal text.",
+    "fr": "Comparatifs, relatives et expressions figées dans un texte formel.",
+    "zh": "正式文本中的比较结构、关系结构和固定表达。",
+    "ja": "改まった文の比較構文・関係節・定型表現。"
+  },
+  "est_minutes": 8,
+  "text": "La memoria no funciona {{1}} una grabadora: {{2}} que recordamos cambia cada vez {{3}} lo evocamos. Pese {{4}} lo que muchos creen, los recuerdos más vívidos no son necesariamente los más fieles; {{5}} contrario, suelen ser aquellos {{6}} los que más hemos hablado. {{7}} más nos emocionan, {{8}} se transforman.",
+  "gaps": [
+    {
+      "n": 1,
+      "accept": [
+        "como"
+      ],
+      "explanation_es": "Comparison: no funciona como una grabadora."
+    },
+    {
+      "n": 2,
+      "accept": [
+        "lo"
+      ],
+      "explanation_es": "“Lo que” = what: lo que recordamos."
+    },
+    {
+      "n": 3,
+      "accept": [
+        "que"
+      ],
+      "explanation_es": "“Cada vez que” = every time that."
+    },
+    {
+      "n": 4,
+      "accept": [
+        "a"
+      ],
+      "explanation_es": "“Pese a” = despite."
+    },
+    {
+      "n": 5,
+      "accept": [
+        "al"
+      ],
+      "explanation_es": "“Al contrario” = on the contrary."
+    },
+    {
+      "n": 6,
+      "accept": [
+        "sobre",
+        "de"
+      ],
+      "explanation_es": "Hablar sobre/de algo: aquellos sobre los que hemos hablado."
+    },
+    {
+      "n": 7,
+      "accept": [
+        "cuanto"
+      ],
+      "explanation_es": "“Cuanto más… más…” = the more… the more…"
+    },
+    {
+      "n": 8,
+      "accept": [
+        "más"
+      ],
+      "explanation_es": "Second part of the comparative correlation: más se transforman."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

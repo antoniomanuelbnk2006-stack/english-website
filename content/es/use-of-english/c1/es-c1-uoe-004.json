@@ -1,0 +1,89 @@
+{
+  "id": "es-c1-uoe-004",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "part": "key_word_transformation",
+  "title": "Transformaciones",
+  "summary_es": {
+    "en": "Rewrite each sentence using the capital word, in three to six words.",
+    "fr": "Réécrivez chaque phrase avec le mot en majuscules, en trois à six mots.",
+    "zh": "用大写词改写每个句子，答案为三至六个词。",
+    "ja": "大文字の語で各文を書き換えます（3〜6語）。"
+  },
+  "est_minutes": 12,
+  "min_words": 3,
+  "max_words": 6,
+  "items": [
+    {
+      "n": 1,
+      "original": "Es poco probable que ganen el partido.",
+      "keyword": "APENAS",
+      "before": "",
+      "after": "de ganar el partido.",
+      "parts": [
+        [
+          "Tienen"
+        ],
+        [
+          "apenas posibilidades"
+        ]
+      ],
+      "explanation_es": "“Apenas” + noun = hardly any."
+    },
+    {
+      "n": 2,
+      "original": "Aunque lo intentó, no lo consiguió.",
+      "keyword": "VANO",
+      "before": "Lo intentó",
+      "after": ".",
+      "parts": [
+        [
+          "pero fue"
+        ],
+        [
+          "en vano"
+        ]
+      ],
+      "explanation_es": "“En vano” = in vain."
+    },
+    {
+      "n": 3,
+      "original": "Cuanto más estudia, más aprende.",
+      "keyword": "MEDIDA",
+      "before": "",
+      "after": ", aprende más.",
+      "parts": [
+        [
+          "A medida"
+        ],
+        [
+          "que estudia"
+        ]
+      ],
+      "explanation_es": "“A medida que” = as (progressively)."
+    },
+    {
+      "n": 4,
+      "original": "Nadie quiso asumir la responsabilidad.",
+      "keyword": "HACERSE",
+      "before": "Nadie",
+      "after": "de la responsabilidad.",
+      "parts": [
+        [
+          "quiso"
+        ],
+        [
+          "hacerse cargo"
+        ]
+      ],
+      "explanation_es": "“Hacerse cargo de” = to take charge of."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

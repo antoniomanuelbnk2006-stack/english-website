@@ -998,8 +998,9 @@ export const es = {
     emptyBody: 'Mientras tanto puedes usar la práctica libre.',
     items: '{n} para decir',
     freeTitle: 'Práctica libre',
-    freeSubtitle: 'Escribe cualquier palabra o frase en inglés y practica cómo se dice.',
-    freeLabel: 'Palabra o frase en inglés',
+    freeSubtitle:
+      'Escribe cualquier palabra o frase en el idioma que practicas y trabaja cómo se dice.',
+    freeLabel: 'Palabra o frase',
     freePlaceholder: 'comfortable',
     freeButton: 'Practicar',
     freeHint: 'Escribe arriba lo que quieras practicar.',

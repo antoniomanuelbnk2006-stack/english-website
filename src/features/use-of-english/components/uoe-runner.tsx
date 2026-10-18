@@ -15,6 +15,7 @@ import {
 import { addUoeCards, submitUoe } from '@/features/use-of-english/server/actions';
 import { countExamWords, type PublicUoeSet } from '@/lib/content/uoe-schema';
 import type { TranslationKey } from '@/lib/i18n';
+import { useContentLang } from '@/components/content-language';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
 
@@ -57,6 +58,7 @@ function Mark({ item }: { item: UoeItemResult }) {
  */
 export function UoeRunner({ set }: { set: PublicUoeSet }) {
   const t = useT();
+  const lang = useContentLang();
   const [answers, setAnswers] = useState<Record<number, string | number>>({});
   const [result, setResult] = useState<UoeResult | null>(null);
   const [busy, setBusy] = useState(false);
@@ -146,20 +148,20 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
               const outcome = byNumber.get(item.n);
               return (
                 <li key={item.n} className="flex flex-col gap-2">
-                  <p lang="en" className="prose-reading">
+                  <p lang={lang} className="prose-reading">
                     <span lang="es" className="tabular-nums mr-2 text-body-sm text-muted">
                       {item.n}.
                     </span>
                     {item.original}
                   </p>
-                  <p lang="en" className="text-body-sm font-medium text-accent-text tabular-nums">
+                  <p lang={lang} className="text-body-sm font-medium text-accent-text tabular-nums">
                     {item.keyword}
                   </p>
-                  <p lang="en" className="prose-reading leading-[2.75rem]">
+                  <p lang={lang} className="prose-reading leading-[2.75rem]">
                     {item.before}
                     <input
                       type="text"
-                      lang="en"
+                      lang={lang}
                       aria-label={t('uoe.sentence', { n: item.n })}
                       autoCapitalize="none"
                       autoCorrect="off"
@@ -189,10 +191,10 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
         </>
       ) : (
         <Panel>
-          <h2 lang="en" className="mb-3 text-body-lg font-medium">
+          <h2 lang={lang} className="mb-3 text-body-lg font-medium">
             {set.title}
           </h2>
-          <p lang="en" className="prose-reading leading-[2.75rem]">
+          <p lang={lang} className="prose-reading leading-[2.75rem]">
             {splitCloze(set.text).map((piece, index) => {
               if (typeof piece === 'string') return <span key={index}>{piece}</span>;
               const outcome = byNumber.get(piece);
@@ -208,7 +210,7 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
                       ({piece})
                     </span>
                     <select
-                      lang="en"
+                      lang={lang}
                       aria-label={label}
                       className={cn(inlineField, 'w-auto pr-7')}
                       value={typeof chosen === 'number' ? String(chosen) : ''}
@@ -240,7 +242,7 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
                   </span>
                   <input
                     type="text"
-                    lang="en"
+                    lang={lang}
                     aria-label={label}
                     autoCapitalize="none"
                     autoCorrect="off"
@@ -301,7 +303,7 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
                     {item.given === '' ? (
                       t('uoe.blank')
                     ) : (
-                      <span lang="en" className="text-text">
+                      <span lang={lang} className="text-text">
                         {item.given}
                       </span>
                     )}
@@ -309,7 +311,7 @@ export function UoeRunner({ set }: { set: PublicUoeSet }) {
                 ) : null}
                 <span>
                   {t('tasks.correctAnswer')}:{' '}
-                  <span lang="en" className="font-medium">
+                  <span lang={lang} className="font-medium">
                     {item.answer}
                   </span>
                 </span>

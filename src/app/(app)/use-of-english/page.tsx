@@ -9,6 +9,7 @@ import { toPercent } from '@/features/lessons/lib/summary';
 import { getProgressByLesson } from '@/features/lessons/server/queries';
 import { getUserLevel } from '@/features/lexicon/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
+import { contentLang } from '@/lib/content/language';
 import { getUoeIndex } from '@/lib/content/uoe';
 import { UOE_PARTS, type UoePart } from '@/lib/content/uoe-schema';
 import type { TranslationKey } from '@/lib/i18n';
@@ -120,7 +121,10 @@ export default async function UseOfEnglishPage({ searchParams }: PageProps<'/use
                               className="card flex h-full flex-col gap-3 border border-transparent transition-colors duration-150 hover:border-border"
                             >
                               <div className="flex items-start justify-between gap-3">
-                                <h3 lang="en" className="text-body-lg leading-snug font-medium">
+                                <h3
+                                  lang={contentLang(set.id)}
+                                  className="text-body-lg leading-snug font-medium"
+                                >
                                   {set.title}
                                 </h3>
                                 <span

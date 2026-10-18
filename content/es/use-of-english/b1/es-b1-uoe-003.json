@@ -1,0 +1,74 @@
+{
+  "id": "es-b1-uoe-003",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "part": "word_formation",
+  "title": "La vida en el pueblo",
+  "summary_es": {
+    "en": "Build nouns, adverbs and adjectives from the word given.",
+    "fr": "Formez noms, adverbes et adjectifs à partir du mot donné.",
+    "zh": "用给出的词构成名词、副词和形容词。",
+    "ja": "与えられた語から名詞・副詞・形容詞を作ります。"
+  },
+  "est_minutes": 7,
+  "text": "Muchas personas sueñan con vivir en el campo en busca de más {{1}}. Sin embargo, la decisión no se toma {{2}}. Los pueblos pequeños suelen ofrecer poca {{3}} cultural y pocas {{4}} de trabajo. Además, las {{5}} de transporte son a menudo escasas. Por eso, conviene ser {{6}} antes de decidir.",
+  "gaps": [
+    {
+      "n": 1,
+      "stem": "TRANQUILO",
+      "accept": [
+        "tranquilidad"
+      ],
+      "explanation_es": "Adjective → noun with -dad: tranquilo → tranquilidad."
+    },
+    {
+      "n": 2,
+      "stem": "FÁCIL",
+      "accept": [
+        "fácilmente"
+      ],
+      "explanation_es": "Adjective → adverb with -mente (the accent stays): fácilmente."
+    },
+    {
+      "n": 3,
+      "stem": "ACTIVO",
+      "accept": [
+        "actividad"
+      ],
+      "explanation_es": "activo → actividad (-dad)."
+    },
+    {
+      "n": 4,
+      "stem": "POSIBLE",
+      "accept": [
+        "posibilidades"
+      ],
+      "explanation_es": "Plural noun: posible → posibilidades."
+    },
+    {
+      "n": 5,
+      "stem": "CONECTAR",
+      "accept": [
+        "conexiones"
+      ],
+      "explanation_es": "Verb → noun with -ión (plural): conexiones."
+    },
+    {
+      "n": 6,
+      "stem": "CUIDAR",
+      "accept": [
+        "cuidadoso",
+        "cuidadosa",
+        "cuidadosos"
+      ],
+      "explanation_es": "Verb/noun → adjective with -oso: cuidadoso."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

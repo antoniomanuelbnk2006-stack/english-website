@@ -1,0 +1,82 @@
+{
+  "id": "es-b2-uoe-002",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "part": "open_cloze",
+  "title": "Dormir bien",
+  "summary_es": {
+    "en": "Connectors, relative pronouns and prepositions in an article.",
+    "fr": "Connecteurs, relatifs et prépositions dans un article.",
+    "zh": "文章中的连接词、关系代词和介词。",
+    "ja": "記事中の接続詞・関係詞・前置詞。"
+  },
+  "est_minutes": 8,
+  "text": "Dormir bien es esencial {{1}} la salud y, {{2}} embargo, muchas personas no {{3}} hacen. Según un estudio {{4}} se publicó el año pasado, los adultos duermen menos horas {{5}} hace veinte años. Los expertos recomiendan acostarse {{6}} la misma hora todos los días, {{7}} cuando sea fin de semana, y evitar las pantallas {{8}} menos una hora antes de dormir.",
+  "gaps": [
+    {
+      "n": 1,
+      "accept": [
+        "para"
+      ],
+      "explanation_es": "Esencial para la salud."
+    },
+    {
+      "n": 2,
+      "accept": [
+        "sin"
+      ],
+      "explanation_es": "“Sin embargo” = however."
+    },
+    {
+      "n": 3,
+      "accept": [
+        "lo"
+      ],
+      "explanation_es": "The pronoun “lo” replaces “dormir bien”: no lo hacen."
+    },
+    {
+      "n": 4,
+      "accept": [
+        "que"
+      ],
+      "explanation_es": "Relative pronoun: un estudio que se publicó."
+    },
+    {
+      "n": 5,
+      "accept": [
+        "que"
+      ],
+      "explanation_es": "Comparative: menos horas que hace veinte años."
+    },
+    {
+      "n": 6,
+      "accept": [
+        "a"
+      ],
+      "explanation_es": "“A la misma hora” = at the same time."
+    },
+    {
+      "n": 7,
+      "accept": [
+        "incluso",
+        "aun",
+        "hasta"
+      ],
+      "explanation_es": "“Incluso cuando” = even when."
+    },
+    {
+      "n": 8,
+      "accept": [
+        "al"
+      ],
+      "explanation_es": "“Al menos” = at least."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

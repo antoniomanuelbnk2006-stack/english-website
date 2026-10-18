@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
+import { useContentLang, useContentLanguage } from '@/components/content-language';
 import { Button } from '@/components/ui/button';
 import { Input, Label } from '@/components/ui/input';
 import { AccentPicker, useAccent } from '@/features/pronunciation/components/accent-picker';
@@ -12,6 +13,8 @@ import { useT } from '@/lib/i18n/client';
 export function FreePractice({ initial }: { initial: string }) {
   const t = useT();
   const accent = useAccent();
+  const language = useContentLanguage();
+  const lang = useContentLang();
   const [draft, setDraft] = useState(initial);
   const [text, setText] = useState(initial);
 
@@ -27,7 +30,7 @@ export function FreePractice({ initial }: { initial: string }) {
           <Label htmlFor="free-text">{t('pronunciation.freeLabel')}</Label>
           <Input
             id="free-text"
-            lang="en"
+            lang={lang}
             autoCapitalize="none"
             autoComplete="off"
             spellCheck={false}
@@ -42,7 +45,7 @@ export function FreePractice({ initial }: { initial: string }) {
         </Button>
       </form>
 
-      <AccentPicker />
+      {language === 'en' ? <AccentPicker /> : null}
 
       {text ? (
         <PracticeCard key={`${text}-${accent}`} text={text} accent={accent} />

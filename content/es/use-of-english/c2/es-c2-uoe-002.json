@@ -1,0 +1,82 @@
+{
+  "id": "es-c2-uoe-002",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "part": "open_cloze",
+  "title": "No hay mal que por bien no venga",
+  "summary_es": {
+    "en": "Abstract connectors and structures in a reflective text.",
+    "fr": "Connecteurs abstraits et structures dans un texte réflexif.",
+    "zh": "反思性文本中的抽象连接词与结构。",
+    "ja": "考察的な文の抽象的な接続表現と構文。"
+  },
+  "est_minutes": 9,
+  "text": "No hay mal {{1}} por bien no venga, dice el refrán, {{2}} quizá sea cierto en {{3}} medida en que aprendamos de lo ocurrido. De ahí {{4}} convenga analizar cada error sin buscar culpables, {{5}} tratar de entender sus causas. {{6}} todo, conviene recordar que no se trata de justificar lo injustificable, {{7}} de evitar que se repita. {{8}} es el objetivo.",
+  "gaps": [
+    {
+      "n": 1,
+      "accept": [
+        "que"
+      ],
+      "explanation_es": "Relative pronoun in the proverb: mal que por bien no venga."
+    },
+    {
+      "n": 2,
+      "accept": [
+        "y"
+      ],
+      "explanation_es": "Simple addition: y quizá sea cierto."
+    },
+    {
+      "n": 3,
+      "accept": [
+        "la"
+      ],
+      "explanation_es": "“En la medida en que” = insofar as."
+    },
+    {
+      "n": 4,
+      "accept": [
+        "que"
+      ],
+      "explanation_es": "“De ahí que” + subjunctive = hence."
+    },
+    {
+      "n": 5,
+      "accept": [
+        "sino"
+      ],
+      "explanation_es": "“No… sino…” corrects: sin buscar culpables, sino tratar de entender."
+    },
+    {
+      "n": 6,
+      "accept": [
+        "sobre",
+        "ante"
+      ],
+      "explanation_es": "“Sobre todo / ante todo” = above all."
+    },
+    {
+      "n": 7,
+      "accept": [
+        "sino"
+      ],
+      "explanation_es": "“No se trata de… sino de…”"
+    },
+    {
+      "n": 8,
+      "accept": [
+        "ese",
+        "este"
+      ],
+      "explanation_es": "Demonstrative pointing back to the idea: ese es el objetivo."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

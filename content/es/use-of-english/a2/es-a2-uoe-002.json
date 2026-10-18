@@ -1,0 +1,84 @@
+{
+  "id": "es-a2-uoe-002",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "part": "mcq_cloze",
+  "title": "Por o para",
+  "summary_es": {
+    "en": "Choosing between por, para and en in everyday sentences.",
+    "fr": "Choisir entre por, para et en dans des phrases de la vie courante.",
+    "zh": "在日常句子中选择 por、para 和 en。",
+    "ja": "日常の文で por・para・en を選びます。"
+  },
+  "est_minutes": 5,
+  "text": "Este regalo es {{1}} mi hermana. Lo compré {{2}} veinte euros. Voy a Madrid {{3}} tren y salgo {{4}} la mañana. Estudio español {{5}} viajar. Gracias {{6}} tu ayuda.",
+  "gaps": [
+    {
+      "n": 1,
+      "options": [
+        "para",
+        "por",
+        "en"
+      ],
+      "answer": 0,
+      "explanation_es": "“Para” + person = the recipient: para mi hermana."
+    },
+    {
+      "n": 2,
+      "options": [
+        "por",
+        "para",
+        "en"
+      ],
+      "answer": 0,
+      "explanation_es": "“Por” + price = in exchange for: por veinte euros."
+    },
+    {
+      "n": 3,
+      "options": [
+        "en",
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "explanation_es": "Means of transport: en tren."
+    },
+    {
+      "n": 4,
+      "options": [
+        "por",
+        "en",
+        "para"
+      ],
+      "answer": 0,
+      "explanation_es": "Parts of the day: por la mañana."
+    },
+    {
+      "n": 5,
+      "options": [
+        "para",
+        "por",
+        "a"
+      ],
+      "answer": 0,
+      "explanation_es": "“Para” + infinitive = purpose: para viajar."
+    },
+    {
+      "n": 6,
+      "options": [
+        "por",
+        "para",
+        "con"
+      ],
+      "answer": 0,
+      "explanation_es": "Thanking for something: gracias por tu ayuda."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

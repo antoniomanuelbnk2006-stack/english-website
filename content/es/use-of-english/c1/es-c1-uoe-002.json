@@ -1,0 +1,88 @@
+{
+  "id": "es-c1-uoe-002",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "part": "word_formation",
+  "title": "Ciudades sostenibles",
+  "summary_es": {
+    "en": "Derive nouns and adjectives from verbs and adjectives in a formal text.",
+    "fr": "Dérivez noms et adjectifs à partir de verbes et d’adjectifs dans un texte formel.",
+    "zh": "在正式文本中由动词和形容词派生名词和形容词。",
+    "ja": "改まった文で動詞・形容詞から名詞・形容詞を作ります。"
+  },
+  "est_minutes": 9,
+  "text": "Las ciudades actuales se enfrentan al reto de la {{1}}. El {{2}} desordenado provoca la {{3}} del aire y la {{4}} de zonas verdes. Los expertos reclaman una mayor {{5}} ciudadana y una planificación más {{6}}. {{7}} se reciben quejas por la falta de {{8}} en las decisiones públicas.",
+  "gaps": [
+    {
+      "n": 1,
+      "stem": "SOSTENIBLE",
+      "accept": [
+        "sostenibilidad"
+      ],
+      "explanation_es": "Adjective → noun with -dad."
+    },
+    {
+      "n": 2,
+      "stem": "CRECER",
+      "accept": [
+        "crecimiento"
+      ],
+      "explanation_es": "Verb → noun with -miento."
+    },
+    {
+      "n": 3,
+      "stem": "CONTAMINAR",
+      "accept": [
+        "contaminación"
+      ],
+      "explanation_es": "Verb → noun with -ción."
+    },
+    {
+      "n": 4,
+      "stem": "DESAPARECER",
+      "accept": [
+        "desaparición"
+      ],
+      "explanation_es": "Verb → noun: desaparecer → desaparición."
+    },
+    {
+      "n": 5,
+      "stem": "PARTICIPAR",
+      "accept": [
+        "participación"
+      ],
+      "explanation_es": "Verb → noun with -ción."
+    },
+    {
+      "n": 6,
+      "stem": "INTEGRAR",
+      "accept": [
+        "integrada"
+      ],
+      "explanation_es": "Verb → past participle used as an adjective: integrada."
+    },
+    {
+      "n": 7,
+      "stem": "CONSTANTE",
+      "accept": [
+        "constantemente"
+      ],
+      "explanation_es": "Adjective → adverb: constantemente."
+    },
+    {
+      "n": 8,
+      "stem": "TRANSPARENTE",
+      "accept": [
+        "transparencia"
+      ],
+      "explanation_es": "Adjective → noun: transparente → transparencia."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

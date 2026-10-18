@@ -44,9 +44,21 @@ test('se elige en Ajustes y cada sección enseña solo ese idioma', async ({ pag
   await expect(page.getByText('I am from Madrid.')).toBeVisible();
   await expectAccessible(page);
 
-  // Del resto aún no hay nada en español, y cada sección lo dice.
-  await page.goto('/use-of-english');
-  await expect(page.getByRole('heading', { name: 'Aún no hay ejercicios' })).toBeVisible();
+  // Use of English y Pronunciación también tienen ejercicios en español, sin los de inglés.
+  await page.goto('/use-of-english?nivel=todos');
+  await expect(page.getByRole('link', { name: /Me presento/ })).toBeVisible();
+  await expect(page.getByRole('link', { name: /My family/ })).toHaveCount(0);
+  await page.getByRole('link', { name: /Me presento/ }).click();
+  await expect(page).toHaveURL(/\/use-of-english\/es-a1-uoe-001$/);
+  await expect(page.locator('[lang="es"]', { hasText: 'Hola,' }).first()).toBeVisible();
+  await page.goto('/pronunciar?nivel=todos');
+  await expect(page.getByRole('link', { name: /R and RR/ })).toBeVisible();
+  await page.getByRole('link', { name: /R and RR/ }).click();
+  await expect(page).toHaveURL(/\/pronunciar\/es-a1-pro-002$/);
+  await expect(page.locator('p[lang="es"]', { hasText: 'pero' }).first()).toBeVisible();
+  // El acento británico/americano es solo del inglés.
+  await expect(page.getByText('Acento')).toHaveCount(0);
+
   await page.goto('/escribir?nivel=A1');
   await expect(page.getByRole('link', { name: /Un mensaje a un compañero nuevo/ })).toBeVisible();
   await expect(page.getByRole('link', { name: /A friend is visiting your city/ })).toHaveCount(0);
@@ -101,9 +113,9 @@ test('en el primer acceso se elige el idioma antes que el nivel', async ({ page,
 
   const languages = page.getByRole('group', { name: '¿Qué idioma quieres practicar?' });
   const levels = page.getByRole('group', { name: 'Elige tu nivel' });
-  // Lo que hay de cada nivel cambia con el idioma: de español solo hay una ficha de A1.
+  // Lo que hay de cada nivel cambia con el idioma: de español hay en A1 una ficha, una lectura, una escucha y un ejercicio de Use of English.
   await languages.getByRole('radio', { name: 'Español' }).check();
-  await expect(levels.getByText('3 contenidos', { exact: true })).toBeVisible();
+  await expect(levels.getByText('4 contenidos', { exact: true })).toBeVisible();
   await levels.getByRole('radio', { name: /A1/ }).check();
   await expectAccessible(page);
   await page.getByRole('button', { name: 'Guardar nivel' }).click();

@@ -1,0 +1,88 @@
+{
+  "id": "es-c2-uoe-003",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "part": "word_formation",
+  "title": "Una crisis económica",
+  "summary_es": {
+    "en": "Formal derivations in a text about economic crisis.",
+    "fr": "Dérivations formelles dans un texte sur la crise économique.",
+    "zh": "关于经济危机的文本中的正式派生。",
+    "ja": "経済危機についての文の改まった語形成。"
+  },
+  "est_minutes": 10,
+  "text": "La {{1}} de los mercados volvió a ponerse de manifiesto cuando una decisión {{2}} de los bancos centrales provocó una fuerte {{3}} en las bolsas. La {{4}} sobre el futuro paralizó la inversión, y las medidas adoptadas agravaron la {{5}} entre regiones. En cuanto a la {{6}} del sistema, los analistas ya no se atreven a hacer previsiones, y la {{7}} de los más débiles es cada vez mayor. Todo ello obliga a repensar, con {{8}}, el modelo.",
+  "gaps": [
+    {
+      "n": 1,
+      "stem": "INESTABLE",
+      "accept": [
+        "inestabilidad"
+      ],
+      "explanation_es": "Adjective → noun with -dad."
+    },
+    {
+      "n": 2,
+      "stem": "ARBITRARIO",
+      "accept": [
+        "arbitraria"
+      ],
+      "explanation_es": "Adjective agreeing with “decisión”: arbitraria."
+    },
+    {
+      "n": 3,
+      "stem": "CAER",
+      "accept": [
+        "caída"
+      ],
+      "explanation_es": "Verb → noun: caer → caída."
+    },
+    {
+      "n": 4,
+      "stem": "INCIERTO",
+      "accept": [
+        "incertidumbre"
+      ],
+      "explanation_es": "Adjective → noun with -umbre: incertidumbre."
+    },
+    {
+      "n": 5,
+      "stem": "DESIGUAL",
+      "accept": [
+        "desigualdad"
+      ],
+      "explanation_es": "Adjective → noun with -dad."
+    },
+    {
+      "n": 6,
+      "stem": "ESTABLE",
+      "accept": [
+        "estabilidad"
+      ],
+      "explanation_es": "Adjective → noun with -idad."
+    },
+    {
+      "n": 7,
+      "stem": "VULNERABLE",
+      "accept": [
+        "vulnerabilidad"
+      ],
+      "explanation_es": "Adjective → noun with -idad."
+    },
+    {
+      "n": 8,
+      "stem": "URGENTE",
+      "accept": [
+        "urgencia"
+      ],
+      "explanation_es": "Adjective → noun with -encia."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

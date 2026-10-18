@@ -1,0 +1,84 @@
+{
+  "id": "es-a2-uoe-001",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "part": "mcq_cloze",
+  "title": "Un día en casa de la abuela",
+  "summary_es": {
+    "en": "Past tenses: indefinido for events, imperfecto for what was happening.",
+    "fr": "Passés : indefinido pour les événements, imperfecto pour ce qui se passait.",
+    "zh": "过去时：indefinido 表示事件，imperfecto 表示进行中的情况。",
+    "ja": "過去形：出来事は点過去、進行中のことは線過去。"
+  },
+  "est_minutes": 5,
+  "text": "Ayer {{1}} a casa de mi abuela. Cuando {{2}}, mi abuela {{3}} la comida. De repente, {{4}} el teléfono. Mientras ella {{5}}, yo {{6}} la mesa.",
+  "gaps": [
+    {
+      "n": 1,
+      "options": [
+        "fui",
+        "iba",
+        "voy"
+      ],
+      "answer": 0,
+      "explanation_es": "“Ayer” marks a finished action: fui (indefinido)."
+    },
+    {
+      "n": 2,
+      "options": [
+        "llegué",
+        "llegaba",
+        "llego"
+      ],
+      "answer": 0,
+      "explanation_es": "“Cuando llegué” is the moment of arrival, a finished event."
+    },
+    {
+      "n": 3,
+      "options": [
+        "preparaba",
+        "preparó",
+        "prepara"
+      ],
+      "answer": 0,
+      "explanation_es": "An action in progress when I arrived: preparaba (imperfecto)."
+    },
+    {
+      "n": 4,
+      "options": [
+        "sonó",
+        "sonaba",
+        "suena"
+      ],
+      "answer": 0,
+      "explanation_es": "“De repente” introduces a sudden event: sonó (indefinido)."
+    },
+    {
+      "n": 5,
+      "options": [
+        "hablaba",
+        "habló",
+        "habla"
+      ],
+      "answer": 0,
+      "explanation_es": "“Mientras” + imperfecto: two actions happening at the same time."
+    },
+    {
+      "n": 6,
+      "options": [
+        "ponía",
+        "puse",
+        "pondré"
+      ],
+      "answer": 0,
+      "explanation_es": "Second simultaneous action: ponía la mesa (imperfecto)."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

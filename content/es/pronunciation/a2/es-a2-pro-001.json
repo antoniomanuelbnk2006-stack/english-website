@@ -1,0 +1,89 @@
+{
+  "id": "es-a2-pro-001",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "title": "Stress and the written accent",
+  "summary_es": {
+    "en": "Where the stress falls can change the word: papa and papá are different.",
+    "fr": "La place de l’accent peut changer le mot : papa et papá sont différents.",
+    "zh": "重音位置会改变词义：papa 与 papá 不同。",
+    "ja": "アクセントの位置で語が変わります：papa と papá は別の語です。"
+  },
+  "focus": "stress",
+  "sounds": [],
+  "tip_es": "In Spanish, words ending in a vowel, “n” or “s” are stressed on the next-to-last syllable; the rest are stressed on the last one. A written accent marks the exceptions. Stress can change the meaning, so say the stressed syllable louder and longer.",
+  "est_minutes": 6,
+  "items": [
+    {
+      "id": "i1",
+      "text": "teléfono",
+      "ipa": "/teˈle.fo.no/",
+      "confusions": []
+    },
+    {
+      "id": "i2",
+      "text": "café",
+      "ipa": "/kaˈfe/",
+      "confusions": []
+    },
+    {
+      "id": "i3",
+      "text": "canción",
+      "ipa": "/kanˈθjon/",
+      "confusions": []
+    },
+    {
+      "id": "i4",
+      "text": "árbol",
+      "ipa": "/ˈaɾ.βol/",
+      "confusions": []
+    },
+    {
+      "id": "i5",
+      "text": "fácil",
+      "ipa": "/ˈfa.θil/",
+      "confusions": []
+    },
+    {
+      "id": "i6",
+      "text": "papá",
+      "ipa": "/paˈpa/",
+      "confusions": [
+        {
+          "heard": "papa",
+          "tip_es": "It heard “papa” (potato). The stress goes on the last syllable: pa-PÁ."
+        }
+      ]
+    },
+    {
+      "id": "i7",
+      "text": "papa",
+      "ipa": "/ˈpa.pa/",
+      "confusions": [
+        {
+          "heard": "papá",
+          "tip_es": "It heard “papá”. Here the stress goes on the first syllable: PA-pa."
+        }
+      ]
+    },
+    {
+      "id": "i8",
+      "text": "examen",
+      "ipa": "/ekˈsa.men/",
+      "confusions": []
+    },
+    {
+      "id": "i9",
+      "text": "lápiz",
+      "ipa": "/ˈla.piθ/",
+      "confusions": []
+    },
+    {
+      "id": "i10",
+      "text": "estación",
+      "ipa": "/es.taˈθjon/",
+      "confusions": []
+    }
+  ]
+}

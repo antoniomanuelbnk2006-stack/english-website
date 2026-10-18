@@ -1,9 +1,11 @@
 import { ArrowLeft } from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { ContentLanguage } from '@/components/content-language';
 import { PageContainer } from '@/components/ui/page';
 import { FreePractice } from '@/features/pronunciation/components/free-practice';
 import { cleanFreeText } from '@/features/pronunciation/lib/free-text';
+import { getPracticeLanguage } from '@/features/profile/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
 import { getT } from '@/lib/i18n/server';
 
@@ -20,22 +22,25 @@ export default async function FreePronunciationPage({
   const [params, t] = await Promise.all([searchParams, getT()]);
   // `?texto=` llega desde el mazo de palabras; el texto solo se pinta, nunca se ejecuta.
   const initial = cleanFreeText(first(params.texto) ?? '');
+  const language = await getPracticeLanguage();
 
   return (
-    <PageContainer width="exercise">
-      <header className="flex flex-col gap-3">
-        <Link
-          href="/pronunciar"
-          className="flex items-center gap-1.5 self-start rounded-structure text-body-sm text-muted hover:text-text"
-        >
-          <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
-          {t('pronunciation.backToList')}
-        </Link>
-        <h1 className="text-heading-sm sm:text-heading">{t('pronunciation.freeTitle')}</h1>
-        <p className="text-body-sm text-muted">{t('pronunciation.freeSubtitle')}</p>
-      </header>
+    <ContentLanguage language={language}>
+      <PageContainer width="exercise">
+        <header className="flex flex-col gap-3">
+          <Link
+            href="/pronunciar"
+            className="flex items-center gap-1.5 self-start rounded-structure text-body-sm text-muted hover:text-text"
+          >
+            <ArrowLeft aria-hidden="true" className="size-4" strokeWidth={1.75} />
+            {t('pronunciation.backToList')}
+          </Link>
+          <h1 className="text-heading-sm sm:text-heading">{t('pronunciation.freeTitle')}</h1>
+          <p className="text-body-sm text-muted">{t('pronunciation.freeSubtitle')}</p>
+        </header>
 
-      <FreePractice key={initial} initial={initial} />
-    </PageContainer>
+        <FreePractice key={initial} initial={initial} />
+      </PageContainer>
+    </ContentLanguage>
   );
 }

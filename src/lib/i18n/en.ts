@@ -999,8 +999,9 @@ export const en: Dictionary = {
     emptyBody: 'Meanwhile you can use free practice.',
     items: '{n} to say',
     freeTitle: 'Free practice',
-    freeSubtitle: 'Type any English word or sentence and practise how to say it.',
-    freeLabel: 'English word or sentence',
+    freeSubtitle:
+      'Type any word or sentence in the language you are practising and work on how to say it.',
+    freeLabel: 'Word or sentence',
     freePlaceholder: 'comfortable',
     freeButton: 'Practise',
     freeHint: 'Type above what you want to practise.',

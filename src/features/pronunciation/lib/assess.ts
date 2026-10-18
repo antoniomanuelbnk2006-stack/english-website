@@ -2,6 +2,8 @@
 // Lógica pura. No mide sonidos: mide si un reconocedor entrenado con hablantes nativos entiende
 // cada palabra, que es una buena aproximación a «se me entiende» (ADR-0015).
 
+import type { PracticeLanguage } from '@/lib/content/language';
+
 /** Una de las hipótesis que devuelve el reconocedor, de más a menos probable. */
 export interface Alternative {
   transcript: string;
@@ -146,8 +148,72 @@ for (const group of SAME_SOUND) {
   for (const word of group) CANONICAL.set(word, group[0] ?? word);
 }
 
+/** Cifras en letra, en español (el reconocedor suele devolver «5» por «cinco»). */
+const DIGITS_ES: Record<string, string> = {
+  '0': 'cero',
+  '1': 'uno',
+  '2': 'dos',
+  '3': 'tres',
+  '4': 'cuatro',
+  '5': 'cinco',
+  '6': 'seis',
+  '7': 'siete',
+  '8': 'ocho',
+  '9': 'nueve',
+  '10': 'diez',
+  '11': 'once',
+  '12': 'doce',
+  '13': 'trece',
+  '14': 'catorce',
+  '15': 'quince',
+  '16': 'dieciséis',
+  '17': 'diecisiete',
+  '18': 'dieciocho',
+  '19': 'diecinueve',
+  '20': 'veinte',
+  '30': 'treinta',
+  '40': 'cuarenta',
+  '50': 'cincuenta',
+  '60': 'sesenta',
+  '70': 'setenta',
+  '80': 'ochenta',
+  '90': 'noventa',
+  '100': 'cien',
+};
+
+/** Palabras del español que suenan igual: valen como la misma (b/v, h muda, ll/y, c/z fuera de España). */
+const SAME_SOUND_ES: string[][] = [
+  ['hola', 'ola'],
+  ['ay', 'hay', 'ahí'],
+  ['vaca', 'baca'],
+  ['vello', 'bello'],
+  ['tubo', 'tuvo'],
+  ['botar', 'votar'],
+  ['rallar', 'rayar'],
+  ['hecho', 'echo'],
+  ['asta', 'hasta'],
+  ['honda', 'onda'],
+  ['hierba', 'yerba'],
+  ['haya', 'halla', 'aya'],
+  ['casa', 'caza'],
+  ['cocer', 'coser'],
+  ['sabia', 'savia'],
+];
+const CANONICAL_ES = new Map<string, string>();
+for (const group of SAME_SOUND_ES) {
+  for (const word of group) CANONICAL_ES.set(word, group[0] ?? word);
+}
+
 /** Texto en palabras sueltas: minúsculas, sin puntuación, con los guiones como espacios. */
-function tokens(text: string): string[] {
+function tokens(text: string, language: PracticeLanguage = 'en'): string[] {
+  if (language === 'es') {
+    // Las tildes cuentan: el reconocedor las escribe y el acento cambia palabras (habló / hablo).
+    return text
+      .toLowerCase()
+      .replace(/[^a-záéíóúñü0-9 ]+/g, ' ')
+      .split(/\s+/)
+      .filter(Boolean);
+  }
   return text
     .toLowerCase()
     .replace(/[‘’ʼ]/g, "'")
@@ -158,7 +224,11 @@ function tokens(text: string): string[] {
 }
 
 /** Forma canónica de una palabra: cifras en letra, contracciones desplegadas y homófonos unidos. */
-function canonical(word: string): string[] {
+function canonical(word: string, language: PracticeLanguage = 'en'): string[] {
+  if (language === 'es') {
+    const spelled = DIGITS_ES[word] ?? word;
+    return [CANONICAL_ES.get(spelled) ?? spelled];
+  }
   const same = (part: string) => CANONICAL.get(part) ?? part;
   const spelled = DIGITS[word] ?? word;
   const whole = CONTRACTIONS[spelled];
@@ -172,8 +242,8 @@ function canonical(word: string): string[] {
 }
 
 /** Palabras canónicas de un texto: lo que se compara. */
-export function canonicalWords(text: string): string[] {
-  return tokens(text).flatMap(canonical);
+export function canonicalWords(text: string, language: PracticeLanguage = 'en'): string[] {
+  return tokens(text, language).flatMap((word) => canonical(word, language));
 }
 
 type Step = 'match' | 'substitute' | 'delete' | 'insert';
@@ -233,13 +303,18 @@ interface Scored {
   score: number;
 }
 
-function scoreAgainst(target: string, transcript: string): Scored {
+function scoreAgainst(target: string, transcript: string, language: PracticeLanguage): Scored {
   // Cada palabra escrita puede ser varias canónicas («don't» → do + not): vale si valen todas.
-  const display = target.split(/\s+/).filter((word) => tokens(word).length > 0);
-  const groups = display.map((word) => tokens(word).flatMap(canonical));
-  const heardWords = canonicalWords(transcript);
+  const display = target.split(/\s+/).filter((word) => tokens(word, language).length > 0);
+  const groups = display.map((word) =>
+    tokens(word, language).flatMap((part) => canonical(part, language)),
+  );
+  const heardWords = canonicalWords(transcript, language);
   // «sea shells» y «seashells» son lo mismo dicho: si solo cambian los espacios, está bien.
-  if (display.length > 0 && tokens(target).join('') === tokens(transcript).join('')) {
+  if (
+    display.length > 0 &&
+    tokens(target, language).join('') === tokens(transcript, language).join('')
+  ) {
     return { words: display.map((text) => ({ text, status: 'ok' })), score: 1 };
   }
   const aligned = align(groups.flat(), heardWords);
@@ -270,12 +345,13 @@ export function assess(
   target: string,
   alternatives: readonly Alternative[],
   confusions: readonly Confusion[] = [],
+  language: PracticeLanguage = 'en',
 ): Assessment {
   const heard = alternatives[0]?.transcript.trim() ?? '';
-  let best: Scored = scoreAgainst(target, heard);
+  let best: Scored = scoreAgainst(target, heard, language);
   let bestIndex = 0;
   alternatives.forEach((alternative, index) => {
-    const scored = scoreAgainst(target, alternative.transcript);
+    const scored = scoreAgainst(target, alternative.transcript, language);
     if (scored.score > best.score) {
       best = scored;
       bestIndex = index;
@@ -284,10 +360,10 @@ export function assess(
 
   // Lo que más le sonó contiene una confusión típica: aunque haya entendido la palabra, algo
   // ha sonado de más o distinto («a school» por «school»), así que no cuenta como perfecto.
-  const top = canonicalWords(heard).join(' ');
+  const top = canonicalWords(heard, language).join(' ');
   const confusion =
     confusions.find((candidate) => {
-      const wanted = canonicalWords(candidate.heard).join(' ');
+      const wanted = canonicalWords(candidate.heard, language).join(' ');
       return wanted !== '' && ` ${top} `.includes(` ${wanted} `);
     }) ?? null;
 

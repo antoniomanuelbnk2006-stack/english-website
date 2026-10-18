@@ -1,0 +1,92 @@
+{
+  "id": "es-a2-pro-004",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "title": "Z and C: the Spanish “th”",
+  "summary_es": {
+    "en": "In most of Spain z and c (before e, i) are /θ/, different from s.",
+    "fr": "Dans la plupart de l’Espagne, z et c (devant e, i) sont /θ/, différent de s.",
+    "zh": "在西班牙大部分地区，z 和 c（e、i 前）读 /θ/，与 s 不同。",
+    "ja": "スペインの大部分では z と c（e・i の前）は /θ/ で、s とは別の音です。"
+  },
+  "focus": "consonants",
+  "sounds": [
+    "θ",
+    "s"
+  ],
+  "tip_es": "In most of Spain, “z” and “c” before “e” or “i” are /θ/: put the tip of your tongue lightly between your teeth, as in English “think”. “s” is /s/. The difference changes words: casa (house), caza (hunt). In Latin America and the south of Spain, both are /s/.",
+  "est_minutes": 6,
+  "items": [
+    {
+      "id": "i1",
+      "text": "zapato",
+      "ipa": "/θaˈpa.to/",
+      "confusions": []
+    },
+    {
+      "id": "i2",
+      "text": "cielo",
+      "ipa": "/ˈθje.lo/",
+      "confusions": []
+    },
+    {
+      "id": "i3",
+      "text": "cine",
+      "ipa": "/ˈθi.ne/",
+      "confusions": []
+    },
+    {
+      "id": "i4",
+      "text": "gracias",
+      "ipa": "/ˈgɾa.θjas/",
+      "confusions": []
+    },
+    {
+      "id": "i5",
+      "text": "zona",
+      "ipa": "/ˈθo.na/",
+      "confusions": []
+    },
+    {
+      "id": "i6",
+      "text": "azul",
+      "ipa": "/aˈθul/",
+      "confusions": []
+    },
+    {
+      "id": "i7",
+      "text": "lápiz",
+      "ipa": "/ˈla.piθ/",
+      "confusions": []
+    },
+    {
+      "id": "i8",
+      "text": "casa",
+      "ipa": "/ˈka.sa/",
+      "confusions": [
+        {
+          "heard": "caza",
+          "tip_es": "It heard the “z” of caza. For casa, keep the tongue behind the teeth and use a normal “s”."
+        }
+      ]
+    },
+    {
+      "id": "i9",
+      "text": "caza",
+      "ipa": "/ˈka.θa/",
+      "confusions": [
+        {
+          "heard": "casa",
+          "tip_es": "It heard an “s”. For caza, put the tip of the tongue lightly between the teeth."
+        }
+      ]
+    },
+    {
+      "id": "i10",
+      "text": "vez",
+      "ipa": "/beθ/",
+      "confusions": []
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "es-b2-uoe-001",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "part": "mcq_cloze",
+  "title": "La jornada laboral",
+  "summary_es": {
+    "en": "Vocabulary in context: four options per gap.",
+    "fr": "Vocabulaire en contexte : quatre options par trou.",
+    "zh": "语境中的词汇：每个空四个选项。",
+    "ja": "文脈の中の語彙：各空欄に4つの選択肢。"
+  },
+  "est_minutes": 7,
+  "text": "La {{1}} de la empresa decidió {{2}} la jornada laboral. Los empleados {{3}} la medida con alegría, aunque algunos {{4}} que no sería suficiente. Con el tiempo, el {{5}} aumentó y las bajas {{6}}.",
+  "gaps": [
+    {
+      "n": 1,
+      "options": [
+        "dirección",
+        "directo",
+        "director",
+        "dirigir"
+      ],
+      "answer": 0,
+      "explanation_es": "A noun meaning management: la dirección de la empresa."
+    },
+    {
+      "n": 2,
+      "options": [
+        "reducir",
+        "reducción",
+        "reducido",
+        "reductor"
+      ],
+      "answer": 0,
+      "explanation_es": "After decidir, an infinitive: reducir."
+    },
+    {
+      "n": 3,
+      "options": [
+        "recibieron",
+        "recogieron",
+        "perdieron",
+        "tomaron"
+      ],
+      "answer": 0,
+      "explanation_es": "Recibir una medida = to welcome a measure."
+    },
+    {
+      "n": 4,
+      "options": [
+        "temían",
+        "tenían",
+        "teñían",
+        "temieran"
+      ],
+      "answer": 0,
+      "explanation_es": "Temer que + indicative/conditional: temían que no sería suficiente."
+    },
+    {
+      "n": 5,
+      "options": [
+        "rendimiento",
+        "rendido",
+        "rendir",
+        "rendición"
+      ],
+      "answer": 0,
+      "explanation_es": "Noun for performance/output: el rendimiento."
+    },
+    {
+      "n": 6,
+      "options": [
+        "disminuyeron",
+        "aumentaron",
+        "persistieron",
+        "empezaron"
+      ],
+      "answer": 0,
+      "explanation_es": "Absences fell: disminuyeron (the opposite of aumentó)."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

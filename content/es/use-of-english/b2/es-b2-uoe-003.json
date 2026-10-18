@@ -1,0 +1,72 @@
+{
+  "id": "es-b2-uoe-003",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "part": "word_formation",
+  "title": "El móvil y los jóvenes",
+  "summary_es": {
+    "en": "Derive the right word: nouns, adjectives and an adverb.",
+    "fr": "Dérivez le bon mot : noms, adjectifs et un adverbe.",
+    "zh": "派生出合适的词：名词、形容词和副词。",
+    "ja": "適切な語を作ります：名詞・形容詞・副詞。"
+  },
+  "est_minutes": 8,
+  "text": "El uso del móvil se ha convertido en una necesidad {{1}}. Sin embargo, los {{2}} advierten del peligro de la {{3}}. Muchos jóvenes sienten {{4}} si no pueden mirar sus mensajes. La solución pasa por una {{5}} adecuada y por usar la tecnología {{6}}.",
+  "gaps": [
+    {
+      "n": 1,
+      "stem": "DÍA",
+      "accept": [
+        "diaria"
+      ],
+      "explanation_es": "Noun → adjective: día → diario/diaria (agrees with necesidad)."
+    },
+    {
+      "n": 2,
+      "stem": "EXPERTO",
+      "accept": [
+        "expertos"
+      ],
+      "explanation_es": "Plural noun: los expertos."
+    },
+    {
+      "n": 3,
+      "stem": "DEPENDER",
+      "accept": [
+        "dependencia"
+      ],
+      "explanation_es": "Verb → noun: depender → dependencia."
+    },
+    {
+      "n": 4,
+      "stem": "ANSIOSO",
+      "accept": [
+        "ansiedad"
+      ],
+      "explanation_es": "Adjective → noun: ansioso → ansiedad."
+    },
+    {
+      "n": 5,
+      "stem": "EDUCAR",
+      "accept": [
+        "educación"
+      ],
+      "explanation_es": "Verb → noun with -ción: educación."
+    },
+    {
+      "n": 6,
+      "stem": "CONSCIENTE",
+      "accept": [
+        "conscientemente"
+      ],
+      "explanation_es": "Adjective → adverb: conscientemente."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}

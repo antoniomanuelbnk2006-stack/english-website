@@ -2,6 +2,7 @@
 
 import { CircleAlert, CircleCheck, CircleDashed, Mic, Square } from 'lucide-react';
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
+import { useContentLang, useContentLanguage } from '@/components/content-language';
 import { Button } from '@/components/ui/button';
 import { InlineText } from '@/components/ui/inline-text';
 import { Panel } from '@/components/ui/panel';
@@ -14,6 +15,7 @@ import {
   type ListenHandle,
 } from '@/features/pronunciation/lib/recognition';
 import { buildTips } from '@/features/pronunciation/lib/tips';
+import { SPEECH_LANG } from '@/features/pronunciation/lib/speech';
 import type { Accent } from '@/features/pronunciation/lib/voices';
 import type { TranslationKey } from '@/lib/i18n';
 import { useT } from '@/lib/i18n/client';
@@ -73,6 +75,8 @@ export function PracticeCard({
   assessed?: boolean;
 }) {
   const t = useT();
+  const language = useContentLanguage();
+  const lang = useContentLang();
   const support = useRecognitionSupport();
   const [phase, setPhase] = useState<Phase>({ kind: 'idle' });
   const handle = useRef<ListenHandle | null>(null);
@@ -84,9 +88,9 @@ export function PracticeCard({
     window.speechSynthesis?.cancel();
     setPhase({ kind: 'listening' });
     handle.current = listenOnce({
-      accent,
+      lang: language === 'en' ? accent : SPEECH_LANG[language],
       onResult: (alternatives) => {
-        const assessment = assess(text, alternatives, confusions);
+        const assessment = assess(text, alternatives, confusions, language);
         setPhase({ kind: 'result', assessment });
         onAssessed?.(assessment);
       },
@@ -104,7 +108,8 @@ export function PracticeCard({
     const { assessment } = phase;
     const { icon: Icon, className } = VERDICT[assessment.verdict];
     const understood = assessment.words.filter((word) => word.status === 'ok').length;
-    const tips = buildTips(text, assessment);
+    // Los consejos de letras mudas y sonidos son de inglés; en otros idiomas solo valen los del ejercicio.
+    const tips = language === 'en' ? buildTips(text, assessment) : [];
     const message =
       assessment.verdict === 'good'
         ? t('pronunciation.verdictGood')
@@ -125,7 +130,7 @@ export function PracticeCard({
           {message}
         </p>
         {assessment.words.length > 1 ? (
-          <p lang="en" className="prose-reading flex flex-wrap justify-center gap-x-1.5">
+          <p lang={lang} className="prose-reading flex flex-wrap justify-center gap-x-1.5">
             {assessment.words.map((word, index) => (
               <span
                 key={`${word.text}-${index}`}
@@ -143,7 +148,7 @@ export function PracticeCard({
         ) : null}
         {assessment.verdict !== 'good' && assessment.heard ? (
           <p className="text-body-sm text-muted">
-            {t('pronunciation.heard')} <span lang="en">«{assessment.heard}»</span>
+            {t('pronunciation.heard')} <span lang={lang}>«{assessment.heard}»</span>
           </p>
         ) : null}
         {tips.length > 0 ? (
@@ -159,7 +164,7 @@ export function PracticeCard({
                 <li key={`${tip.id}-${tip.word ?? ''}`}>
                   {tip.word ? (
                     <>
-                      <strong lang="en" className="font-semibold text-text">
+                      <strong lang={lang} className="font-semibold text-text">
                         {tip.word}
                       </strong>
                       {': '}
@@ -179,7 +184,7 @@ export function PracticeCard({
     <Panel className="flex flex-col items-center gap-5 py-8 text-center">
       <div className="flex flex-col items-center gap-1.5">
         <p
-          lang="en"
+          lang={lang}
           className={cn(
             'font-semibold tracking-tight',
             isSentence ? 'text-subheading sm:text-heading-sm' : 'text-heading-lg',
@@ -188,7 +193,7 @@ export function PracticeCard({
           {text}
         </p>
         {ipa ? (
-          <p lang="en" className="tabular-nums text-muted">
+          <p lang={lang} className="tabular-nums text-muted">
             {ipa}
           </p>
         ) : null}

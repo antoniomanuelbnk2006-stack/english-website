@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useRef, useState } from 'react';
+import { useContentLanguage } from '@/components/content-language';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { Panel, PanelTitle } from '@/components/ui/panel';
 import { toPercent } from '@/features/lessons/lib/summary';
@@ -51,6 +52,7 @@ export function PronunciationTrainer({
   const t = useT();
   const router = useRouter();
   const accent = useAccent();
+  const language = useContentLanguage();
   const [index, setIndex] = useState(0);
   const [best, setBest] = useState<Record<string, Best>>({});
   const [finished, setFinished] = useState<{ score: number } | null>(null);
@@ -168,7 +170,7 @@ export function PronunciationTrainer({
         <p className="tabular-nums text-body-sm text-muted" aria-live="polite">
           {t('pronunciation.itemOf', { n: index + 1, total: items.length })}
         </p>
-        <AccentPicker />
+        {language === 'en' ? <AccentPicker /> : null}
       </div>
 
       <ol aria-hidden="true" className="flex gap-1">

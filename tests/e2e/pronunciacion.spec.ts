@@ -170,14 +170,14 @@ test('práctica libre: desde una palabra del mazo o escribiendo', async ({ page 
   await page.getByRole('link', { name: 'Practicar la pronunciación de «advice»' }).click();
   await expect(page).toHaveURL(/\/pronunciar\/libre\?texto=advice$/);
   await expect(page.getByRole('heading', { level: 1, name: 'Práctica libre' })).toBeVisible();
-  await expect(page.getByLabel('Palabra o frase en inglés')).toHaveValue('advice');
+  await expect(page.getByLabel('Palabra o frase')).toHaveValue('advice');
   await hear(page, ['advice']);
   await page.getByRole('button', { name: 'Hablar' }).click();
   await expect(page.getByText('Se te entiende perfectamente.')).toBeVisible();
 
   // Sin ejercicio de por medio, los consejos salen de la palabra y de lo que se oyó en su lugar.
   const tips = page.getByRole('region', { name: 'Consejos' });
-  await page.getByLabel('Palabra o frase en inglés').fill('very');
+  await page.getByLabel('Palabra o frase').fill('very');
   await page.getByRole('button', { name: 'Practicar' }).click();
   await hear(page, ['berry']);
   await page.getByRole('button', { name: 'Hablar' }).click();
@@ -190,14 +190,14 @@ test('práctica libre: desde una palabra del mazo o escribiendo', async ({ page 
   await expect(tips).toHaveCount(0);
 
   // Una palabra con trampa conocida dice cómo suena de verdad.
-  await page.getByLabel('Palabra o frase en inglés').fill('comfortable');
+  await page.getByLabel('Palabra o frase').fill('comfortable');
   await page.getByRole('button', { name: 'Practicar' }).click();
   await hear(page, ['come for table']);
   await page.getByRole('button', { name: 'Hablar' }).click();
   await expect(tips.getByRole('listitem').first()).toContainText('Tres sílabas, no cuatro');
 
   // Y se puede escribir cualquier otra cosa; el acento elegido se recuerda.
-  await page.getByLabel('Palabra o frase en inglés').fill("I'd like a cup of tea.");
+  await page.getByLabel('Palabra o frase').fill("I'd like a cup of tea.");
   await page.getByRole('button', { name: 'Practicar' }).click();
   await page.getByText('Americano', { exact: true }).click();
   await expect(page.getByRole('radio', { name: 'Americano' })).toBeChecked();

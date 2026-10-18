@@ -1,0 +1,102 @@
+{
+  "id": "es-a1-pro-002",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "title": "R and RR",
+  "summary_es": {
+    "en": "One tap for “r”, a roll for “rr”: pero is not perro.",
+    "fr": "Un battement pour « r », un roulement pour « rr » : pero n’est pas perro.",
+    "zh": "“r”是轻弹，“rr”是颤音：pero 不是 perro。",
+    "ja": "「r」は一度はじく音、「rr」は震わせる音：pero と perro は別の語です。"
+  },
+  "focus": "consonants",
+  "sounds": [
+    "ɾ",
+    "r"
+  ],
+  "tip_es": "A single “r” between vowels is one quick tap of the tip of the tongue against the ridge behind your upper teeth (like the “tt” in American “butter”). “rr”, and “r” at the start of a word, is a roll: let the tongue vibrate two or three times. It changes the word: pero (but), perro (dog).",
+  "est_minutes": 6,
+  "items": [
+    {
+      "id": "i1",
+      "text": "pero",
+      "ipa": "/ˈpe.ɾo/",
+      "confusions": [
+        {
+          "heard": "perro",
+          "tip_es": "It heard a rolled “rr”. A single “r” between vowels is one quick tap of the tongue, with no vibration."
+        }
+      ]
+    },
+    {
+      "id": "i2",
+      "text": "perro",
+      "ipa": "/ˈpe.ro/",
+      "confusions": [
+        {
+          "heard": "pero",
+          "tip_es": "It heard a single “r”. For “rr”, let the tip of the tongue vibrate two or three times."
+        }
+      ]
+    },
+    {
+      "id": "i3",
+      "text": "caro",
+      "ipa": "/ˈka.ɾo/",
+      "confusions": [
+        {
+          "heard": "carro",
+          "tip_es": "It heard “rr”. Make just one quick tap of the tongue."
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "text": "carro",
+      "ipa": "/ˈka.ro/",
+      "confusions": [
+        {
+          "heard": "caro",
+          "tip_es": "It heard a single “r”. Make the tongue vibrate."
+        }
+      ]
+    },
+    {
+      "id": "i5",
+      "text": "ratón",
+      "ipa": "/raˈton/",
+      "confusions": []
+    },
+    {
+      "id": "i6",
+      "text": "rosa",
+      "ipa": "/ˈro.sa/",
+      "confusions": []
+    },
+    {
+      "id": "i7",
+      "text": "tren",
+      "ipa": "/tɾen/",
+      "confusions": []
+    },
+    {
+      "id": "i8",
+      "text": "arriba",
+      "ipa": "/aˈri.βa/",
+      "confusions": []
+    },
+    {
+      "id": "i9",
+      "text": "ahora",
+      "ipa": "/aˈo.ɾa/",
+      "confusions": []
+    },
+    {
+      "id": "i10",
+      "text": "rápido",
+      "ipa": "/ˈra.pi.ðo/",
+      "confusions": []
+    }
+  ]
+}

@@ -49,7 +49,7 @@ export function subscribeAccent(onChange: () => void): () => void {
 }
 
 /** La voz de cada idioma que no es inglés (el inglés tiene acentos: `voices.ts`). */
-const SPEECH_LANG: Record<Exclude<PracticeLanguage, 'en'>, string> = {
+export const SPEECH_LANG: Record<Exclude<PracticeLanguage, 'en'>, string> = {
   es: 'es-ES',
   fr: 'fr-FR',
   zh: 'zh-CN',

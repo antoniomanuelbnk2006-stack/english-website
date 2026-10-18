@@ -1016,8 +1016,9 @@ export const fr: Dictionary = {
     emptyBody: 'En attendant, tu peux utiliser la pratique libre.',
     items: '{n} à dire',
     freeTitle: 'Pratique libre',
-    freeSubtitle: 'Écris n’importe quel mot ou phrase en anglais et entraîne-toi à le dire.',
-    freeLabel: 'Mot ou phrase en anglais',
+    freeSubtitle:
+      'Écris n’importe quel mot ou phrase dans la langue que tu pratiques et entraîne-toi à le dire.',
+    freeLabel: 'Mot ou phrase',
     freePlaceholder: 'comfortable',
     freeButton: 'S’entraîner',
     freeHint: 'Écris ci-dessus ce que tu veux pratiquer.',

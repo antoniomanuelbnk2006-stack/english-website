@@ -1,0 +1,84 @@
+{
+  "id": "es-b2-pro-001",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "title": "When stress changes the verb",
+  "summary_es": {
+    "en": "hablo, habló: the stressed syllable tells the tense apart.",
+    "fr": "hablo, habló : la syllabe accentuée distingue le temps.",
+    "zh": "hablo 与 habló：重读音节区分时态。",
+    "ja": "hablo と habló：強勢の位置で時制を区別します。"
+  },
+  "focus": "stress",
+  "sounds": [],
+  "tip_es": "In many verbs only the stress tells the present from the past or the subjunctive: hablo (HA-blo, I speak) and habló (ha-BLÓ, he spoke); canto and cantó; termino, terminó and término. The speech recogniser writes the accent it hears, so a wrong stress is detected.",
+  "est_minutes": 7,
+  "items": [
+    {
+      "id": "i1",
+      "text": "Yo hablo con ella todos los días",
+      "confusions": []
+    },
+    {
+      "id": "i2",
+      "text": "Ayer habló con ella por teléfono",
+      "confusions": []
+    },
+    {
+      "id": "i3",
+      "text": "canto",
+      "ipa": "/ˈkan.to/",
+      "confusions": [
+        {
+          "heard": "cantó",
+          "tip_es": "It heard “cantó”, stressed on the last syllable. Here the stress goes on the first: CAN-to."
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "text": "cantó",
+      "ipa": "/kanˈto/",
+      "confusions": [
+        {
+          "heard": "canto",
+          "tip_es": "It heard “canto”. For the past tense the stress goes on the last syllable: can-TÓ."
+        }
+      ]
+    },
+    {
+      "id": "i5",
+      "text": "termino",
+      "ipa": "/teɾˈmi.no/",
+      "confusions": []
+    },
+    {
+      "id": "i6",
+      "text": "terminó",
+      "ipa": "/teɾ.miˈno/",
+      "confusions": []
+    },
+    {
+      "id": "i7",
+      "text": "término",
+      "ipa": "/ˈteɾ.mi.no/",
+      "confusions": []
+    },
+    {
+      "id": "i8",
+      "text": "Mañana practico con mi amigo",
+      "confusions": []
+    },
+    {
+      "id": "i9",
+      "text": "Él practicó el piano durante años",
+      "confusions": []
+    },
+    {
+      "id": "i10",
+      "text": "Es un ejercicio muy práctico",
+      "confusions": []
+    }
+  ]
+}

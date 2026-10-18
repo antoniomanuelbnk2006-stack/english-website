@@ -129,4 +129,49 @@ describe('assess: una frase', () => {
       ).verdict,
     ).toBe('good');
   });
+
+  describe('español', () => {
+    it('entiende una frase con tildes y signos de puntuación', () => {
+      expect(
+        assess('¿Dónde está el hospital?', heard('dónde está el hospital'), [], 'es').verdict,
+      ).toBe('good');
+    });
+
+    it('la tilde cambia la palabra: hablo no es habló', () => {
+      const result = assess(
+        'Ayer habló conmigo en casa.',
+        heard('ayer hablo conmigo en casa'),
+        [],
+        'es',
+      );
+      expect(result.words[1]).toMatchObject({ text: 'habló', status: 'wrong', heard: 'hablo' });
+      expect(result.verdict).toBe('close');
+    });
+
+    it('una cifra vale por su nombre', () => {
+      expect(assess('Tengo cinco hermanos.', heard('tengo 5 hermanos'), [], 'es').verdict).toBe(
+        'good',
+      );
+    });
+
+    it('los homófonos no cuentan como error (hola / ola)', () => {
+      expect(assess('Hola, amigo.', heard('ola amigo'), [], 'es').verdict).toBe('good');
+    });
+
+    it('detecta la confusión típica del ejercicio (pero por perro)', () => {
+      const result = assess(
+        'perro',
+        heard('pero'),
+        [{ heard: 'pero', tip_es: 'Haz vibrar la lengua.' }],
+        'es',
+      );
+      expect(result.verdict).toBe('retry');
+      expect(result.confusion?.tip_es).toBe('Haz vibrar la lengua.');
+    });
+
+    it('conserva la ñ: año no es ano', () => {
+      const result = assess('año', heard('ano'), [], 'es');
+      expect(result.words[0]?.status).toBe('wrong');
+    });
+  });
 });

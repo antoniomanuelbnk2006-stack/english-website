@@ -1,0 +1,88 @@
+{
+  "id": "es-a2-pro-002",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "title": "Ñ, LL and CH",
+  "summary_es": {
+    "en": "Three sounds that exist only in Spanish letters: ñ, ll and ch.",
+    "fr": "Trois sons propres aux lettres espagnoles : ñ, ll et ch.",
+    "zh": "三个西班牙语特有的字母发音：ñ、ll、ch。",
+    "ja": "スペイン語特有の3つの音：ñ、ll、ch。"
+  },
+  "focus": "consonants",
+  "sounds": [
+    "ɲ",
+    "ʎ",
+    "tʃ"
+  ],
+  "tip_es": "“ñ” is /ɲ/, like “ny” in “canyon”: año, mañana. It is not the same as “n”: año (year) is not ano. “ll” is /ʎ/ or /ʝ/ (like English “y” in many regions): calle, lluvia. “ch” is /tʃ/, as in English “church”.",
+  "est_minutes": 6,
+  "items": [
+    {
+      "id": "i1",
+      "text": "niño",
+      "ipa": "/ˈni.ɲo/",
+      "confusions": []
+    },
+    {
+      "id": "i2",
+      "text": "mañana",
+      "ipa": "/maˈɲa.na/",
+      "confusions": []
+    },
+    {
+      "id": "i3",
+      "text": "año",
+      "ipa": "/ˈa.ɲo/",
+      "confusions": [
+        {
+          "heard": "ano",
+          "tip_es": "It heard a plain “n”. “ñ” is “ny”: the tongue touches the palate and air goes through the nose."
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "text": "español",
+      "ipa": "/es.paˈɲol/",
+      "confusions": []
+    },
+    {
+      "id": "i5",
+      "text": "calle",
+      "ipa": "/ˈka.ʎe/",
+      "confusions": []
+    },
+    {
+      "id": "i6",
+      "text": "lluvia",
+      "ipa": "/ˈʎu.βja/",
+      "confusions": []
+    },
+    {
+      "id": "i7",
+      "text": "llamar",
+      "ipa": "/ʎaˈmaɾ/",
+      "confusions": []
+    },
+    {
+      "id": "i8",
+      "text": "noche",
+      "ipa": "/ˈno.tʃe/",
+      "confusions": []
+    },
+    {
+      "id": "i9",
+      "text": "chico",
+      "ipa": "/ˈtʃi.ko/",
+      "confusions": []
+    },
+    {
+      "id": "i10",
+      "text": "mucho",
+      "ipa": "/ˈmu.tʃo/",
+      "confusions": []
+    }
+  ]
+}

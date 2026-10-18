@@ -1,0 +1,66 @@
+{
+  "id": "es-a2-uoe-003",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "part": "open_cloze",
+  "title": "Una carta a una amiga",
+  "summary_es": {
+    "en": "Fill each gap with one word: prepositions, article and pronouns.",
+    "fr": "Complétez chaque trou avec un mot : prépositions, article et pronoms.",
+    "zh": "每个空填一个词：介词、冠词和代词。",
+    "ja": "各空欄に1語：前置詞・冠詞・代名詞。"
+  },
+  "est_minutes": 6,
+  "text": "Querida Ana: ¿Qué tal estás? Yo estoy muy contenta {{1}} vivir aquí. Mi casa está {{2}} el centro, {{3}} de un parque. Tengo {{4}} vecino muy simpático que se llama Pablo; {{5}} conozco desde hace un mes. ¿Cuándo vienes {{6}} verme? Un abrazo.",
+  "gaps": [
+    {
+      "n": 1,
+      "accept": [
+        "de"
+      ],
+      "explanation_es": "Estar contento de + infinitive: contenta de vivir aquí."
+    },
+    {
+      "n": 2,
+      "accept": [
+        "en"
+      ],
+      "explanation_es": "Location in a place: en el centro."
+    },
+    {
+      "n": 3,
+      "accept": [
+        "cerca"
+      ],
+      "explanation_es": "“Cerca de” = near: cerca de un parque."
+    },
+    {
+      "n": 4,
+      "accept": [
+        "un"
+      ],
+      "explanation_es": "Masculine singular indefinite article: un vecino."
+    },
+    {
+      "n": 5,
+      "accept": [
+        "lo"
+      ],
+      "explanation_es": "The direct object pronoun for Pablo (him): lo conozco."
+    },
+    {
+      "n": 6,
+      "accept": [
+        "a"
+      ],
+      "explanation_es": "Venir a + infinitive: vienes a verme."
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  }
+}
