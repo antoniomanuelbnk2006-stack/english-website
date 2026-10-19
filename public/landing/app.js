@@ -44,7 +44,7 @@ if (form && contact) {
   const VERSION = 'v1';
   const MAX_AGE = 15724800; // seis meses, en segundos
   const PREFERENCE_COOKIES = ['senal_theme', 'senal_locale'];
-  const PREFERENCE_STORAGE = ['senal:accent'];
+  const PREFERENCE_STORAGE = ['senal:accent', 'senal:plan'];
   const CHOICES = { necessary: 'solo las necesarias', all: 'necesarias y de preferencias' };
   const attributes = `Path=/; SameSite=Lax${window.location.protocol === 'https:' ? '; Secure' : ''}`;
 
@@ -92,6 +92,8 @@ if (form && contact) {
     save(choice);
     close();
     show();
+    // «Crea tu plan» se guarda en cuanto se aceptan las preferencias, aunque ya estuviera a medias.
+    document.dispatchEvent(new CustomEvent('senal:consent', { detail: choice }));
   };
 
   const open = () => {
@@ -102,7 +104,7 @@ if (form && contact) {
 
     const text = document.createElement('p');
     text.append(
-      'Señal usa cookies necesarias para que puedas entrar y, si aceptas, para recordar tu sesión y tus preferencias: tema, idioma y acento. No hay análisis ni publicidad. ',
+      'Señal usa cookies necesarias para que puedas entrar y, si aceptas, para recordar tu sesión y tus preferencias: tema, idioma, acento y tu plan. No hay análisis ni publicidad. ',
     );
     const more = document.createElement('a');
     more.href = '/landing/cookies.html';
@@ -224,9 +226,11 @@ if (form && contact) {
 // Portada: «Crea tu plan», la pantalla final del acercamiento (portada.md). Una pregunta por paso
 // (el idioma, el nivel, para qué, cuándo es el examen si es para eso, y cuánto tiempo al día) y,
 // al final, un plan hecho con las respuestas: la meta, el plazo, el reparto de los minutos, la
-// semana y por dónde empezar. Por ahora no se guarda nada: el plan lleva a entrar en Señal. Sin
-// JavaScript se ven todas las preguntas a la vez. Va antes que el acercamiento, que copia esta
-// pantalla en el portátil tal como queda al empezar.
+// semana y por dónde empezar. El plan lleva a entrar en Señal. Con las cookies de preferencias
+// aceptadas, las respuestas se recuerdan en este navegador (`senal:plan`): al volver, la pantalla
+// sale donde se dejó —la pregunta por la que se iba o el plan ya hecho— y no en la primera
+// pregunta. Sin JavaScript se ven todas las preguntas a la vez. Va antes que el acercamiento, que
+// copia esta pantalla en el portátil tal como queda al empezar (ya con lo recordado).
 {
   const form = document.querySelector('#plan');
 
@@ -495,6 +499,7 @@ if (form && contact) {
       count.textContent = done ? 'Listo' : `Paso ${index + 1} de ${steps.length}`;
       form.dataset.progress = String(Math.round(((done ? steps.length : index + 1) / steps.length) * 100));
       error.textContent = '';
+      remember();
     };
     // Al cambiar de paso, el foco va a la respuesta elegida o a la primera: así se sigue con el
     // teclado sin volver a buscar dónde estaba.
@@ -503,11 +508,68 @@ if (form && contact) {
       else (current.querySelector('input:checked') ?? current.querySelector('input'))?.focus();
     };
 
+    // --- Lo que se recuerda (solo con las cookies de preferencias aceptadas) ---
+
+    const STORE = 'senal:plan';
+    const NAMES = ['idioma', 'nivel', 'objetivo', 'fecha', 'minutos'];
+    const allowed = () =>
+      document.cookie.split(';').some((pair) => pair.trim() === 'senal_consent=v1.all');
+    const remember = () => {
+      if (!allowed()) return;
+      const answers = {};
+      for (const name of NAMES) {
+        const input = picked(name);
+        if (input) answers[name] = input.value;
+      }
+      const step = current === summary ? 'resumen' : active().indexOf(current);
+      try {
+        window.localStorage.setItem(STORE, JSON.stringify({ answers, step }));
+      } catch {
+        // Sin almacenamiento (modo privado estricto) no se recuerda: se empieza por la primera.
+      }
+    };
+    // Vuelve a marcar las respuestas guardadas y enseña el paso donde se dejó. Solo se salta a una
+    // pregunta si las anteriores tienen respuesta; si algo no cuadra, se empieza por la primera.
+    const restore = () => {
+      if (!allowed()) return false;
+      let saved = null;
+      try {
+        saved = JSON.parse(window.localStorage.getItem(STORE) ?? 'null');
+      } catch {
+        return false;
+      }
+      if (!saved || typeof saved !== 'object' || typeof saved.answers !== 'object') return false;
+      for (const name of NAMES) {
+        const value = saved.answers?.[name];
+        const input = [...form.querySelectorAll(`input[name="${name}"]`)].find((el) => el.value === value);
+        if (input) input.checked = true;
+      }
+      const language = picked('idioma');
+      if (language) exam.textContent = LANGUAGES[language.value].examLabel;
+      const steps = active();
+      const answered = (list) => list.every((step) => step.querySelector('input:checked'));
+      if (saved.step === 'resumen' && answered(steps)) {
+        build();
+        show(summary);
+        return true;
+      }
+      const index = Number(saved.step);
+      if (Number.isInteger(index) && index > 0 && index < steps.length && answered(steps.slice(0, index))) {
+        show(steps[index]);
+        return true;
+      }
+      return false;
+    };
+
     form.addEventListener('change', (event) => {
       error.textContent = '';
       if (event.target.name === 'idioma') exam.textContent = LANGUAGES[event.target.value].examLabel;
       // Elegir el examen añade una pregunta (o quitarlo la quita): el «Paso 3 de 5» cambia ya.
       if (event.target.name === 'objetivo') show(current);
+      remember();
+    });
+    document.addEventListener('senal:consent', (event) => {
+      if (event.detail === 'all') remember();
     });
     form.addEventListener('submit', (event) => {
       event.preventDefault();
@@ -537,7 +599,7 @@ if (form && contact) {
       focus();
     });
 
-    show(all[0]);
+    if (!restore()) show(all[0]);
   }
 }
 

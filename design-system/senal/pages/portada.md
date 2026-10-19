@@ -81,7 +81,11 @@ estudio de ese idioma, con sus tareas y su examen.
   - **La semana** (lunes a viernes la rutina, el sábado lo propio del objetivo —un simulacro si es
     para el examen—, el domingo libre) y **por dónde empezar** (semanas 1 y 2, primer mes, tercer
     mes: kana en japonés, pinyin y tonos en chino, sonidos y palabras frecuentes en los demás).
-- **Por ahora no se guarda nada.** El plan lleva a entrar en Señal (`/login`). Para cualquier
+- **Se recuerda con las cookies de preferencias aceptadas.** Las respuestas y el paso se guardan
+  en este navegador (`senal:plan`, en `localStorage`): al volver, el acercamiento acaba donde se
+  dejó —la pregunta por la que se iba o el plan ya hecho— y no en la primera pregunta. Sin aceptar
+  (o al rechazar) no se guarda nada y se empieza siempre por el idioma. El plan lleva a entrar en
+  Señal (`/login`). Para cualquier
   idioma que no sea el inglés dice que sus lecciones están en preparación. Cuando exista la zona de
   estudio de cada idioma, llevará allí.
 - **Opciones:** tarjetas en `surface-2` con la radio invisible encima (se pulsa toda la tarjeta y

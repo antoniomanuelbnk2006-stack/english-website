@@ -47,7 +47,7 @@ export const es = {
   },
   consent: {
     title: 'Cookies',
-    body: 'Señal usa cookies necesarias para que puedas entrar y, si aceptas, para recordar tu sesión y tus preferencias: tema, idioma y acento. No hay análisis ni publicidad.',
+    body: 'Señal usa cookies necesarias para que puedas entrar y, si aceptas, para recordar tu sesión y tus preferencias: tema, idioma, acento y tu plan. No hay análisis ni publicidad.',
     more: 'Más información',
     reject: 'Rechazar',
     accept: 'Aceptar',

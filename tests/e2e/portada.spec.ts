@@ -75,6 +75,71 @@ test('con movimiento reducido se queda «Inglés», sin cursor', async ({ page }
 const plan = (page: Page) => page.getByRole('form', { name: 'Crea tu plan' });
 const step = (page: Page) => page.locator('#plan-paso');
 
+// Con las cookies de preferencias aceptadas, el plan se recuerda (`senal:plan`): al volver, la
+// pantalla sale donde se dejó. Sin ellas, o al rechazarlas, empieza siempre por el idioma.
+test.describe('sin decidir sobre las cookies', () => {
+  // Los demás tests llevan las cookies ya aceptadas (playwright.config.ts); este empieza sin decidir.
+  test.use({ storageState: { cookies: [], origins: [] } });
+
+  test('con las preferencias aceptadas, «Crea tu plan» sigue donde se dejó', async ({ page }) => {
+    const errors = trackErrors(page);
+    const banner = page.getByRole('region', { name: 'Cookies' });
+    const next = () => plan(page).getByRole('button', { name: 'Siguiente' }).click();
+    const saved = () => page.evaluate(() => window.localStorage.getItem('senal:plan'));
+
+    // Sin decidir todavía, no se recuerda nada.
+    await page.goto('/');
+    await plan(page)
+      .getByRole('radio', { name: /日本語/ })
+      .check();
+    await next();
+    await page.reload();
+    await expect(step(page)).toHaveText('Paso 1 de 4');
+    expect(await saved()).toBeNull();
+
+    // Al aceptar, lo que ya estaba elegido se guarda, y cada paso también.
+    await plan(page)
+      .getByRole('radio', { name: /日本語/ })
+      .check();
+    await banner.getByRole('button', { name: 'Aceptar' }).click();
+    await next();
+    await plan(page)
+      .getByRole('radio', { name: /Empiezo de cero/ })
+      .check();
+    await next();
+    await expect(step(page)).toHaveText('Paso 3 de 4');
+
+    // Al volver, la pregunta por la que se iba, con lo anterior respondido.
+    await page.reload();
+    await expect(step(page)).toHaveText('Paso 3 de 4');
+    await plan(page).getByRole('button', { name: 'Atrás' }).click();
+    await expect(plan(page).getByRole('radio', { name: /Empiezo de cero/ })).toBeChecked();
+    await next();
+    await plan(page)
+      .getByRole('radio', { name: /Por gusto/ })
+      .check();
+    await next();
+    await plan(page).getByRole('radio', { name: '20 min' }).check();
+    await plan(page).getByRole('button', { name: 'Ver mi plan' }).click();
+    await expect(step(page)).toHaveText('Listo');
+
+    // Con el plan hecho, se vuelve directamente al plan.
+    await page.reload();
+    await expect(step(page)).toHaveText('Listo');
+    await expect(plan(page).getByRole('heading', { name: 'Tu plan de japonés' })).toBeVisible();
+    await expectAccessible(page);
+
+    // Al rechazar las preferencias se olvida, y se empieza otra vez por el idioma.
+    await page.getByRole('button', { name: 'Configurar cookies' }).click();
+    await banner.getByRole('button', { name: 'Rechazar' }).click();
+    expect(await saved()).toBeNull();
+    await page.reload();
+    await expect(step(page)).toHaveText('Paso 1 de 4');
+    await expect(plan(page).getByRole('radio', { name: /日本語/ })).not.toBeChecked();
+    expect(errors).toEqual([]);
+  });
+});
+
 test('sin acercamiento, «Crea tu plan» va en su sitio y lleva paso a paso al resumen', async ({
   page,
 }) => {

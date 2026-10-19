@@ -29,8 +29,11 @@ export type Consent = (typeof CONSENT_CHOICES)[number];
 /** Cookies de preferencias (las de src/lib/theme.ts y src/lib/i18n; un test vigila que coincidan). */
 export const PREFERENCE_COOKIES = ['senal_theme', 'senal_locale'] as const;
 
-/** Claves de `localStorage` que son preferencias (el acento de src/features/pronunciation). */
-export const PREFERENCE_STORAGE_KEYS = ['senal:accent'] as const;
+/**
+ * Claves de `localStorage` que son preferencias: el acento de src/features/pronunciation y las
+ * respuestas de «Crea tu plan» de la portada (public/landing/app.js).
+ */
+export const PREFERENCE_STORAGE_KEYS = ['senal:accent', 'senal:plan'] as const;
 
 /** La decisión guardada en la cookie, o `null` si no hay ninguna que valga para esta versión. */
 export function parseConsent(value: string | null | undefined): Consent | null {

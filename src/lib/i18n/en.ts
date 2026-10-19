@@ -47,7 +47,7 @@ export const en: Dictionary = {
   },
   consent: {
     title: 'Cookies',
-    body: 'Señal uses necessary cookies so you can sign in and, if you accept, to remember your session and your preferences: theme, language and accent. No analytics or advertising.',
+    body: 'Señal uses necessary cookies so you can sign in and, if you accept, to remember your session and your preferences: theme, language, accent and your plan. No analytics or advertising.',
     more: 'More information',
     reject: 'Reject',
     accept: 'Accept',

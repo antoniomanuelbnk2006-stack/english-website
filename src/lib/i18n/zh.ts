@@ -47,7 +47,7 @@ export const zh: Dictionary = {
   },
   consent: {
     title: 'Cookie',
-    body: 'Señal 使用必要的 Cookie 让你能够登录；如果你同意，还会用 Cookie 记住你的登录状态和偏好：主题、语言和口音。没有统计分析，也没有广告。',
+    body: 'Señal 使用必要的 Cookie 让你能够登录；如果你同意，还会用 Cookie 记住你的登录状态和偏好：主题、语言、口音和你的学习计划。没有统计分析，也没有广告。',
     more: '了解更多',
     reject: '拒绝',
     accept: '接受',

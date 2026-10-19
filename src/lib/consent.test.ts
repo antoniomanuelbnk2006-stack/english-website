@@ -98,12 +98,13 @@ describe('lo que cuenta como preferencia', () => {
     expect([...PREFERENCE_COOKIES].sort()).toEqual([LOCALE_COOKIE, THEME_COOKIE].sort());
   });
 
-  it('y el acento que recuerda la práctica de pronunciación', () => {
-    const speech = readFileSync(
-      path.join(process.cwd(), 'src', 'features', 'pronunciation', 'lib', 'speech.ts'),
-      'utf8',
-    );
-    for (const key of PREFERENCE_STORAGE_KEYS) expect(speech).toContain(`'${key}'`);
+  it('y el acento de la pronunciación y el plan de la portada, cada uno en su sitio', () => {
+    const read = (...parts: string[]) => readFileSync(path.join(process.cwd(), ...parts), 'utf8');
+    const where: Record<(typeof PREFERENCE_STORAGE_KEYS)[number], string> = {
+      'senal:accent': read('src', 'features', 'pronunciation', 'lib', 'speech.ts'),
+      'senal:plan': read('public', 'landing', 'app.js'),
+    };
+    for (const key of PREFERENCE_STORAGE_KEYS) expect(where[key]).toContain(`'${key}'`);
   });
 });
 
