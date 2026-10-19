@@ -985,6 +985,15 @@ export const es = {
     allDoneBody:
       'Todas las palabras de este nivel están ya en el repaso o las has dado por conocidas.',
     shortcuts: 'Atajos: con la traducción a la vista, 1, 2 y 3 eligen la respuesta.',
+    lookupSubtitleEs:
+      'Busca cualquier palabra o expresión en español, esté o no en el mazo. Los significados vienen en inglés, de Wiktionary, un diccionario libre.',
+    lookupLabelEs: 'Palabra o expresión en español',
+    lookupPlaceholderEs: 'madrugar, echar de menos…',
+    lookupInvalidEs:
+      'Escribe una palabra o una expresión en español: solo letras, espacios y guiones.',
+    lookupNotFoundBodyEs:
+      'Comprueba cómo se escribe, con sus tildes. Wiktionary no la tiene como palabra española.',
+    lookupMeaningsEs: 'Significados (en inglés)',
     lookupTitle: 'Diccionario completo',
     lookupSubtitle:
       'Busca cualquier palabra o expresión en inglés, esté o no en el mazo. Los datos vienen de Wiktionary, un diccionario libre.',

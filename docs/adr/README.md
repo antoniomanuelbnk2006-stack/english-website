@@ -44,6 +44,7 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0038](0038-primera-tanda-de-espanol.md) | Español de A1 a C2: el pipeline de lecciones por idioma (léxico generado, sin modelo externo), 113 lecciones con voz de Piper, 25 fichas, 33 consignas y 2 760 palabras | Aceptada |
 | [0039](0039-pronunciacion-y-use-of-english-por-idioma.md) | Pronunciación y Use of English en otros idiomas: voz y reconocimiento por idioma, tildes que cuentan, 21 + 20 ejercicios de español | Aceptada |
 | [0040](0040-examenes-de-espanol.md) | Simulacros de examen de español con el formato del DELE: `examFormat(nivel, idioma)`, criterios orales del DELE y 18 pruebas con audio | Aceptada |
+| [0041](0041-dictado-y-diccionario-de-espanol.md) | Dictado y diccionario completo en español: diagnóstico con reglas por idioma (tildes, números, horas), dictados en las 77 escuchas y Wiktionary en su sección «Spanish» | Aceptada |
 
 Plantilla:
 

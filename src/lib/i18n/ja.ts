@@ -968,6 +968,14 @@ export const ja: Dictionary = {
     allDoneTitle: '{level} で学ぶものはもうありません',
     allDoneBody: 'このレベルの単語は、すべて復習中か、知っている単語になっています。',
     shortcuts: 'ショートカット：訳が表示されているとき、1、2、3 で答えを選べます。',
+    lookupSubtitleEs:
+      '単語カードにあってもなくても、どんなスペイン語の単語や表現でも検索できます。意味は英語で、自由な辞書 Wiktionary によるものです。',
+    lookupLabelEs: 'スペイン語の単語・表現',
+    lookupPlaceholderEs: 'madrugar, echar de menos…',
+    lookupInvalidEs: 'スペイン語の単語か表現を入力してください（文字、スペース、ハイフンのみ）。',
+    lookupNotFoundBodyEs:
+      'アクセント記号も含めてつづりを確認してください。Wiktionary にはスペイン語の単語として載っていません。',
+    lookupMeaningsEs: '意味（英語）',
     lookupTitle: '辞書',
     lookupSubtitle:
       '単語カードにあってもなくても、どんな英単語や表現でも検索できます。データは自由な辞書 Wiktionary によるものです。',

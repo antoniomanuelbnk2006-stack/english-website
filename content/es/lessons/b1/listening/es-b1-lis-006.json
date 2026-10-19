@@ -422,7 +422,32 @@
       "end": 86.041
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s7",
+      "phrase": "causa es",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «causa» and the one at the start of «es» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s13",
+      "phrase": "no olvide",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «no» and the one at the start of «olvide» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s14",
+      "phrase": "Estas han",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «s» of «Estas» joins the vowel of «han» (the h is silent), so you hear «Esta san»."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "huelga",
@@ -552,6 +577,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "«causa es» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "La causa es una huelga de trabajadores que reclaman mejores salarios.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "«no olvide» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s13",
+      "reference": "Las temperaturas bajarán unos cinco grados, así que no olvide su paraguas.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s14"],
+      "rationale_es": {
+        "en": "In «Estas han» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s14",
+      "reference": "Estas han sido las noticias. Muchas gracias por su atención.",
+      "accept_variants": []
     }
   ],
   "provenance": {

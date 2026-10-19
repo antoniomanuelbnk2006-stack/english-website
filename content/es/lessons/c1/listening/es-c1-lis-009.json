@@ -1140,7 +1140,32 @@
       "end": 222.664
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s10",
+      "phrase": "de aquel",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «de» and the one at the start of «aquel» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s23",
+      "phrase": "cuesta el",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «cuesta» and the one at the start of «el» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s35",
+      "phrase": "si alquila",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «si» and the one at the start of «alquila» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "masificación",
@@ -1285,6 +1310,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "«de aquel» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s10",
+      "reference": "Tengo cientos de fotos de aquel viaje, pero casi ninguna historia que contar.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s23"],
+      "rationale_es": { "en": "«cuesta el» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s23",
+      "reference": "A veces cuesta el doble y tarda un día entero.",
+      "accept_variants": []
+    },
+    {
+      "id": "q11",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s35"],
+      "rationale_es": { "en": "«si alquila» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s35",
+      "reference": "Por otro, si alquila un piso turístico, contribuye a que suban los precios para los residentes.",
+      "accept_variants": []
     }
   ],
   "provenance": {

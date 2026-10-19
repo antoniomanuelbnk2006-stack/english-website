@@ -238,7 +238,32 @@
       "end": 39.655
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s2",
+      "phrase": "Busco una",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Busco» and the one at the start of «una» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s5",
+      "phrase": "probadores están",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «s» of «probadores» joins the vowel of «están», so you hear «probadore sestán»."
+      }
+    },
+    {
+      "ref": "s9",
+      "phrase": "pero hoy",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «pero» and the one at the start of «hoy» merge into one syllable (the h is silent), so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "talla",
@@ -353,6 +378,44 @@
         { "id": "c", "text": "Con el móvil" }
       ],
       "answer": "a"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "«Busco una» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s2",
+      "reference": "Busco una chaqueta para el invierno.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s5"],
+      "rationale_es": {
+        "en": "In «probadores están» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s5",
+      "reference": "Claro. Los probadores están al fondo.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "«pero hoy» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s9",
+      "reference": "Cuesta sesenta euros, pero hoy tiene un descuento de diez euros.",
+      "accept_variants": []
     }
   ],
   "provenance": {

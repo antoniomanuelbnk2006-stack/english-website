@@ -1,5 +1,9 @@
 // Dictado diagnóstico (docs/01-pedagogia/03-listening.md §4): normaliza con equivalencias,
 // alinea palabra a palabra y propone por qué se escapó cada fallo. Lógica pura.
+// Las equivalencias dependen del idioma: en inglés, contracciones, reducciones y ortografía
+// británica o estadounidense; en español, números y horas dichos con palabras y las tildes, que
+// son ortografía y no oído (ADR-0041).
+import type { PracticeLanguage } from '@/lib/content/language';
 
 export const CAUSES = [
   'unknown_word',
@@ -26,6 +30,8 @@ export interface DiagnoseInput {
   accent?: string;
   /** La misma frase se acertó en la escalera de velocidad a 0,75×. */
   passedAtSlowSpeed?: boolean;
+  /** Idioma del dictado (inglés si no se dice). */
+  language?: PracticeLanguage;
 }
 
 export type WordStatus = 'ok' | 'typo' | 'wrong' | 'missing';
@@ -118,6 +124,49 @@ const NUMBER_WORDS = new Map<string, number>([
   ...TENS.map((word, index) => [word, (index + 2) * 10] as const),
 ]);
 
+// Español: «veintitrés», «treinta y cinco», «las once y media»…
+const fold = (word: string) => word.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+const ES_UNITS = [
+  'cero',
+  'uno',
+  'dos',
+  'tres',
+  'cuatro',
+  'cinco',
+  'seis',
+  'siete',
+  'ocho',
+  'nueve',
+  'diez',
+  'once',
+  'doce',
+  'trece',
+  'catorce',
+  'quince',
+  'dieciseis',
+  'diecisiete',
+  'dieciocho',
+  'diecinueve',
+  'veinte',
+  'veintiuno',
+  'veintidos',
+  'veintitres',
+  'veinticuatro',
+  'veinticinco',
+  'veintiseis',
+  'veintisiete',
+  'veintiocho',
+  'veintinueve',
+];
+const ES_TENS = ['treinta', 'cuarenta', 'cincuenta', 'sesenta', 'setenta', 'ochenta', 'noventa'];
+const ES_NUMBER_WORDS = new Map<string, number>([
+  ...ES_UNITS.map((word, value) => [word, value] as const),
+  ...ES_TENS.map((word, index) => [word, (index + 3) * 10] as const),
+  ['veintiun', 21],
+  ['veintiuna', 21],
+  ['cien', 100],
+]);
+
 /** Ortografía británica → estadounidense (las dos son correctas en un dictado). */
 const UK_TO_US: Record<string, string> = {
   grey: 'gray',
@@ -179,9 +228,17 @@ function restoreApostrophes(typed: readonly string[], reference: readonly string
 }
 
 /** Expande una palabra a sus tokens canónicos (sin mirar a las vecinas). */
-function expandWord(word: string): string[] {
+function expandWord(word: string, language: PracticeLanguage): string[] {
   const time = /^(\d{1,2})[:.](\d{2})$/.exec(word);
   if (time) return [String(Number(time[1])), time[2] ?? ''];
+
+  if (language === 'es') {
+    // «un» y «una» no están: casi siempre son artículos, no números.
+    const number = ES_NUMBER_WORDS.get(fold(word));
+    if (number !== undefined) return [String(number)];
+    if (/^\d+$/.test(word)) return [String(Number(word))];
+    return [word.replace(/\./g, '')];
+  }
 
   if (REDUCTIONS[word]) return REDUCTIONS[word];
   if (CONTRACTIONS[word]) return CONTRACTIONS[word];
@@ -209,10 +266,14 @@ interface CanonicalToken {
  * Tokens canónicos de un texto, recordando de qué palabra original viene cada uno.
  * `groups[i]` son las palabras de la palabra original `i` («open-source» son dos).
  */
-function canonicalize(groups: readonly (readonly string[])[]): CanonicalToken[] {
+function canonicalize(
+  groups: readonly (readonly string[])[],
+  language: PracticeLanguage,
+): CanonicalToken[] {
   let tokens: CanonicalToken[] = groups.flatMap((words, origin) =>
-    words.flatMap((word) => expandWord(word).map((value) => ({ value, origin }))),
+    words.flatMap((word) => expandWord(word, language).map((value) => ({ value, origin }))),
   );
+  if (language === 'es') return canonicalizeSpanish(tokens);
 
   // «twenty one» → 21.
   const merged: CanonicalToken[] = [];
@@ -267,6 +328,53 @@ function canonicalize(groups: readonly (readonly string[])[]): CanonicalToken[] 
   return out;
 }
 
+/** Español: «treinta y cinco» → 35; «once y media» → 11 30; «seis y cuarto» → 6 15; «ocho menos cuarto» → 7 45. */
+function canonicalizeSpanish(tokens: readonly CanonicalToken[]): CanonicalToken[] {
+  const isNumber = (t: CanonicalToken | undefined) => t !== undefined && /^\d+$/.test(t.value);
+  const isHour = (t: CanonicalToken | undefined) =>
+    isNumber(t) && Number(t?.value) >= 1 && Number(t?.value) <= 12;
+  const out: CanonicalToken[] = [];
+  for (let i = 0; i < tokens.length; i++) {
+    const token = tokens[i];
+    if (!token) continue;
+    const next = tokens[i + 1];
+    const after = tokens[i + 2];
+    const tens = Number(token.value);
+    if (
+      isNumber(token) &&
+      tens >= 30 &&
+      tens % 10 === 0 &&
+      tens < 100 &&
+      next?.value === 'y' &&
+      isNumber(after) &&
+      Number(after?.value) >= 1 &&
+      Number(after?.value) <= 9 &&
+      after
+    ) {
+      out.push({ value: String(tens + Number(after.value)), origin: token.origin });
+      i += 2;
+    } else if (
+      isHour(token) &&
+      next?.value === 'y' &&
+      (after?.value === 'media' || after?.value === 'cuarto') &&
+      after
+    ) {
+      out.push(token, { value: after.value === 'media' ? '30' : '15', origin: after.origin });
+      i += 2;
+    } else if (isHour(token) && next?.value === 'menos' && after?.value === 'cuarto' && after) {
+      const hour = Number(token.value) === 1 ? 12 : Number(token.value) - 1;
+      out.push(
+        { value: String(hour), origin: token.origin },
+        { value: '45', origin: after.origin },
+      );
+      i += 2;
+    } else {
+      out.push({ ...token });
+    }
+  }
+  return out;
+}
+
 // ───────────── Alineación ─────────────
 
 function editDistance(a: string, b: string): number {
@@ -291,14 +399,18 @@ const sameToken = (expected: string, typed: string) =>
   AMBIGUOUS[expected]?.includes(typed) ||
   AMBIGUOUS[typed]?.includes(expected);
 
-/** Error ortográfico leve: una letra de diferencia en palabras de cinco letras o más. */
-const isTypo = (expected: string, typed: string) =>
-  expected.length >= 5 && /^\p{L}+$/u.test(expected) && editDistance(expected, typed) === 1;
+/**
+ * Error ortográfico leve: una letra de diferencia en palabras de cinco letras o más. En español,
+ * además, una tilde de más o de menos: es ortografía, no oído («esta» por «está»).
+ */
+const isTypo = (expected: string, typed: string, language: PracticeLanguage) =>
+  (language === 'es' && expected !== typed && fold(expected) === fold(typed)) ||
+  (expected.length >= 5 && /^\p{L}+$/u.test(expected) && editDistance(expected, typed) === 1);
 
 /** Coste de sustituir: menor si las palabras se parecen (lo normal cuando se oye mal). */
-function substitutionCost(expected: string, typed: string): number {
+function substitutionCost(expected: string, typed: string, language: PracticeLanguage): number {
   if (sameToken(expected, typed)) return 0;
-  if (isTypo(expected, typed)) return 0.2;
+  if (isTypo(expected, typed, language)) return 0.2;
   const distance = editDistance(expected, typed);
   return distance / Math.max(expected.length, typed.length) <= 0.5 ? 0.7 : 1;
 }
@@ -309,7 +421,11 @@ type Op =
   | { type: 'ins'; typed: number };
 
 /** Alineación global (Needleman–Wunsch) entre tokens de la referencia y tokens escritos. */
-function align(reference: readonly string[], typed: readonly string[]): Op[] {
+function align(
+  reference: readonly string[],
+  typed: readonly string[],
+  language: PracticeLanguage,
+): Op[] {
   const rows = reference.length + 1;
   const cols = typed.length + 1;
   const cost: number[][] = Array.from({ length: rows }, () => new Array<number>(cols).fill(0));
@@ -319,7 +435,8 @@ function align(reference: readonly string[], typed: readonly string[]): Op[] {
   const at = (i: number, j: number) => cost[i]?.[j] ?? Infinity;
   for (let i = 1; i < rows; i++) {
     for (let j = 1; j < cols; j++) {
-      const sub = at(i - 1, j - 1) + substitutionCost(reference[i - 1] ?? '', typed[j - 1] ?? '');
+      const sub =
+        at(i - 1, j - 1) + substitutionCost(reference[i - 1] ?? '', typed[j - 1] ?? '', language);
       (cost[i] as number[])[j] = Math.min(sub, at(i - 1, j) + 1, at(i, j - 1) + 1);
     }
   }
@@ -330,10 +447,14 @@ function align(reference: readonly string[], typed: readonly string[]): Op[] {
   while (i > 0 || j > 0) {
     const expected = reference[i - 1] ?? '';
     const written = typed[j - 1] ?? '';
-    if (i > 0 && j > 0 && at(i, j) === at(i - 1, j - 1) + substitutionCost(expected, written)) {
+    if (
+      i > 0 &&
+      j > 0 &&
+      at(i, j) === at(i - 1, j - 1) + substitutionCost(expected, written, language)
+    ) {
       const type = sameToken(expected, written)
         ? 'match'
-        : isTypo(expected, written)
+        : isTypo(expected, written, language)
           ? 'typo'
           : 'sub';
       ops.push({ type, ref: i - 1, typed: j - 1 });
@@ -403,8 +524,14 @@ const IRREGULAR: Record<string, string> = {
 };
 
 /** Formas base posibles de una palabra cuando no viene su lema anotado. */
-function baseForms(word: string): string[] {
+function baseForms(word: string, language: PracticeLanguage): string[] {
   const forms = [word];
+  if (language === 'es') {
+    // Sin lema anotado, solo el plural: las lecciones de español traen sus lemas.
+    if (word.endsWith('es')) forms.push(word.slice(0, -2));
+    if (word.endsWith('s')) forms.push(word.slice(0, -1));
+    return forms;
+  }
   if (IRREGULAR[word]) forms.push(IRREGULAR[word]);
   if (word.endsWith('ies')) forms.push(`${word.slice(0, -3)}y`);
   if (word.endsWith('es')) forms.push(word.slice(0, -2));
@@ -419,7 +546,7 @@ function baseForms(word: string): string[] {
   return forms;
 }
 
-const STANDARD_ACCENTS = new Set(['en-US', 'en-GB']);
+const STANDARD_ACCENTS = new Set(['en-US', 'en-GB', 'es-ES']);
 const letters = (words: readonly string[]) => words.join('').replace(/[^\p{L}\p{N}]/gu, '');
 
 /** ¿Se oyeron los sonidos pero se cortaron las palabras por otro sitio? */
@@ -435,18 +562,21 @@ function isRecut(expected: readonly string[], written: readonly string[]): boole
 // ───────────── Diagnóstico ─────────────
 
 export function diagnose(input: DiagnoseInput): Diagnosis {
+  const language = input.language ?? 'en';
   const originals = input.reference.trim().split(/\s+/).filter(Boolean);
   // Cada «palabra» de la referencia (con su puntuación) se normaliza por separado para saber
   // de cuál viene cada token canónico.
   const referenceWords = originals.map(rawWords);
-  const refs = canonicalize(referenceWords);
+  const refs = canonicalize(referenceWords, language);
   const typedTokens = canonicalize(
     restoreApostrophes(rawWords(input.typed), referenceWords.flat()).map((word) => [word]),
+    language,
   );
 
   const ops = align(
     refs.map((t) => t.value),
     typedTokens.map((t) => t.value),
+    language,
   );
 
   // Estado de cada palabra original: la peor de las de sus tokens.
@@ -510,7 +640,7 @@ export function diagnose(input: DiagnoseInput): Diagnosis {
     if (/^\d+$/.test(token)) return true; // un número no es vocabulario
     const lemma = input.lemmas?.[token];
     if (lemma && input.knownLemmas.has(lemma)) return true;
-    return baseForms(token).some((form) => input.knownLemmas.has(form));
+    return baseForms(token, language).some((form) => input.knownLemmas.has(form));
   };
 
   const features = input.features ?? [];

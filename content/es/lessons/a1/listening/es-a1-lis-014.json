@@ -174,7 +174,22 @@
       "end": 23.421
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s3",
+      "phrase": "Estoy en",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Estoy» and the one at the start of «en» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s8",
+      "phrase": "con el",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «n» of «con» joins the vowel of «el», so you hear «co nel»." }
+    }
+  ],
   "glossary": [
     {
       "lemma": "lo siento",
@@ -289,6 +304,32 @@
         { "id": "c", "text": "Con un adiós largo" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "«Estoy en» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s3",
+      "reference": "Estoy en la oficina ahora.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": {
+        "en": "In «con el» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "Vamos con el perro.",
+      "accept_variants": []
     }
   ],
   "provenance": {

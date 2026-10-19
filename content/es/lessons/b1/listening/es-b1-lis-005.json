@@ -496,7 +496,28 @@
       "end": 98.939
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s3",
+      "phrase": "Es un",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «Es» joins the vowel of «un», so you hear «E sun»." }
+    },
+    {
+      "ref": "s14",
+      "phrase": "es un",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «es» joins the vowel of «un», so you hear «e sun»." }
+    },
+    {
+      "ref": "s21",
+      "phrase": "sido un",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «sido» and the one at the start of «un» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "borrador",
@@ -626,6 +647,46 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s3"],
+      "rationale_es": {
+        "en": "In «Es un» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s3",
+      "reference": "Muchas gracias, Pilar. Es un placer estar aquí.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s14"],
+      "rationale_es": {
+        "en": "In «es un» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s14",
+      "reference": "¿Cómo es un día normal de trabajo para ti?",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s21"],
+      "rationale_es": { "en": "«sido un» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s21",
+      "reference": "Gracias, Tomás. Ha sido un placer hablar contigo.",
+      "accept_variants": []
     }
   ],
   "provenance": {

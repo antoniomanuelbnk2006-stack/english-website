@@ -152,7 +152,24 @@
       "end": 19.701
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s4",
+      "phrase": "voy al",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «voy» and the one at the start of «al» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s7",
+      "phrase": "Ceno a",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Ceno» and the one at the start of «a» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "levantarse",
@@ -259,6 +276,30 @@
         { "id": "c", "text": "Ve la tele en casa" }
       ],
       "answer": "a"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "«voy al» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s4",
+      "reference": "A las ocho voy al trabajo.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "«Ceno a» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "Ceno a las nueve con mi familia.",
+      "accept_variants": []
     }
   ],
   "provenance": {

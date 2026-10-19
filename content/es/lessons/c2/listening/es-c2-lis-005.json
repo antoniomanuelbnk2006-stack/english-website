@@ -890,7 +890,32 @@
       "end": 150.14
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s6",
+      "phrase": "consideraba una",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «consideraba» and the one at the start of «una» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s18",
+      "phrase": "de estudios",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «de» and the one at the start of «estudios» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s29",
+      "phrase": "no es",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «no» and the one at the start of «es» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "llevar la contraria",
@@ -1020,6 +1045,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "«consideraba una» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s6",
+      "reference": "La belleza se consideraba una propiedad objetiva, ligada a la proporción y a la armonía.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s18"],
+      "rationale_es": { "en": "«de estudios» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s18",
+      "reference": "Las preferencias culturales se reparten de forma bastante previsible según el nivel de estudios y los ingresos familiares.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s29"],
+      "rationale_es": { "en": "«no es» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s29",
+      "reference": "El canon no es un monumento; es un acuerdo provisional.",
+      "accept_variants": []
     }
   ],
   "provenance": {

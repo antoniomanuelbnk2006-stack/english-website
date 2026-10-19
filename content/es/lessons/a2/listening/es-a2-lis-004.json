@@ -296,7 +296,26 @@
       "end": 47.605
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s7",
+      "phrase": "van a",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «n» of «van» joins the vowel of «a», so you hear «va na»." }
+    },
+    {
+      "ref": "s11",
+      "phrase": "pedimos el",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «pedimos» joins the vowel of «el», so you hear «pedimo sel»." }
+    },
+    {
+      "ref": "s15",
+      "phrase": "Gracias a",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «Gracias» joins the vowel of «a», so you hear «Gracia sa»." }
+    }
+  ],
   "glossary": [
     {
       "lemma": "carta",
@@ -411,6 +430,48 @@
         { "id": "c", "text": "Que fue demasiado lenta" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": {
+        "en": "In «van a» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "¿Ya saben qué van a pedir?",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s11"],
+      "rationale_es": {
+        "en": "In «pedimos el» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s11",
+      "reference": "Después pedimos el postre, gracias.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s15"],
+      "rationale_es": {
+        "en": "In «Gracias a» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s15",
+      "reference": "Gracias a ustedes. Buenas noches.",
+      "accept_variants": []
     }
   ],
   "provenance": {

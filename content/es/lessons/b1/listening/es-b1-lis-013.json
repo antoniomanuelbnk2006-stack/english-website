@@ -376,7 +376,32 @@
       "end": 72.806
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s4",
+      "phrase": "se habían",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «se» and the one at the start of «habían» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s11",
+      "phrase": "porque el",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «porque» and the one at the start of «el» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s15",
+      "phrase": "que estés",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «que» and the one at the start of «estés» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "entrada",
@@ -491,6 +516,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "«se habían» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s4",
+      "reference": "Pues ayer miré la página web y las entradas se habían agotado.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "«porque el» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s11",
+      "reference": "Yo invito, porque el mes pasado me ayudaste con la mudanza.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s15"],
+      "rationale_es": { "en": "«que estés» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s15",
+      "reference": "Espero que estés bien y que podamos vernos pronto.",
+      "accept_variants": []
     }
   ],
   "provenance": {

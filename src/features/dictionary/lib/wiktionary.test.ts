@@ -302,3 +302,75 @@ describe('posKey', () => {
     expect(posKey('Phrase')).toBeNull();
   });
 });
+
+describe('palabras españolas (ADR-0041)', () => {
+  const response = DefinitionResponse.parse({
+    en: [{ partOfSpeech: 'Noun', language: 'English', definitions: [{ definition: 'A thing.' }] }],
+    es: [
+      {
+        partOfSpeech: 'Noun',
+        language: 'Spanish',
+        definitions: [
+          {
+            definition: '<a href="/wiki/house">house</a>',
+            examples: ['Mi <b>casa</b> es tu casa.'],
+          },
+          { definition: 'home' },
+        ],
+      },
+      { partOfSpeech: 'Verb', language: 'Ladino', definitions: [{ definition: 'to marry' }] },
+    ],
+  });
+
+  it('lee la sección del idioma que se practica, con los significados en inglés', () => {
+    expect(parseDefinitions(response, 'es')).toEqual([
+      {
+        pos: 'Noun',
+        senses: [{ text: 'house', example: 'Mi casa es tu casa.' }, { text: 'home' }],
+      },
+    ]);
+    // Sin decir el idioma, sigue siendo inglés.
+    expect(parseDefinitions(response)[0]?.senses[0]?.text).toBe('A thing.');
+  });
+
+  it('saca la pronunciación de la plantilla del idioma', () => {
+    expect(parseIpa('{{IPA|es|/ˈkasa/}}', 'es')).toBe('/ˈkasa/');
+    expect(parseIpa('{{IPA|es|/ˈkasa/}}')).toBeNull();
+  });
+
+  it('reconoce las formas de una palabra española', () => {
+    const entryOf = (word: string, text: string): LookupEntry => ({
+      word,
+      ipa: null,
+      groups: [{ pos: 'Verb', senses: [{ text }] }],
+      translations: [],
+    });
+    expect(baseWord(entryOf('casas', 'plural of casa'), 'es')).toBe('casa');
+    expect(
+      baseWord(entryOf('hablé', 'first-person singular preterite indicative of hablar'), 'es'),
+    ).toBe('hablar');
+    expect(baseWord(entryOf('buena', 'feminine singular of bueno'), 'es')).toBe('bueno');
+    expect(
+      baseWord(
+        entryOf('come', 'inflection of comer: third-person singular present indicative'),
+        'es',
+      ),
+    ).toBe('comer');
+    expect(baseWord(entryOf('casa', 'house'), 'es')).toBeNull();
+  });
+
+  it('la tarjeta lleva los significados como traducción, sin aviso de que falta', () => {
+    const card = buildLookupCard(
+      {
+        word: 'casa',
+        ipa: null,
+        groups: parseDefinitions(response, 'es'),
+        translations: [],
+      },
+      'es',
+    );
+    expect(card.front).toEqual({ sentence: 'Mi casa es tu casa.', surface: 'casa' });
+    expect(card.back).toEqual({ pos: 'noun', def_es: 'house; home' });
+    expect(CardContent.parse({ kind: card.kind, front: card.front, back: card.back })).toBeTruthy();
+  });
+});

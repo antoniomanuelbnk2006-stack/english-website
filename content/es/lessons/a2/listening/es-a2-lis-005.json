@@ -257,7 +257,30 @@
       "end": 38.07
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s3",
+      "phrase": "diez al",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «z» of «diez» joins the vowel of «al», so you hear «die zal»." }
+    },
+    {
+      "ref": "s8",
+      "phrase": "setenta euros",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «setenta» and the one at the start of «euros» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s12",
+      "phrase": "Ya está",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Ya» and the one at the start of «está» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "doble",
@@ -372,6 +395,44 @@
         { "id": "c", "text": "Tiene un servicio de taxi" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s3"],
+      "rationale_es": {
+        "en": "In «diez al» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s3",
+      "reference": "Del diez al doce de mayo.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«setenta euros» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "Cuesta setenta euros con desayuno.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "«Ya está» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s12",
+      "reference": "Muchas gracias, señor García. Ya está todo listo.",
+      "accept_variants": []
     }
   ],
   "provenance": {

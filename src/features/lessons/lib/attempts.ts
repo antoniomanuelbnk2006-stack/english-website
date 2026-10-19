@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { itemDifficulty } from '@/features/level/lib/item-difficulty';
 import { TaskResponse, grade } from '@/features/tasks/lib/grade';
+import { languageOfId } from '@/lib/content/language';
 import { LessonId, TaskId, type Lesson } from '@/lib/content/schema';
 
 // Preparación de los intentos de una lección para guardarlos. Lógica pura: el servidor vuelve
@@ -87,7 +88,7 @@ export function prepareAttempts(
       }),
       rating_before: ratingBefore,
       // La nota es la del servidor, no la que diga el cliente.
-      score: grade(task, attempt.response).score,
+      score: grade(task, attempt.response, languageOfId(lesson.id)).score,
       response: attempt.response,
       duration_ms: attempt.durationMs ?? null,
       client_id: attempt.clientId,

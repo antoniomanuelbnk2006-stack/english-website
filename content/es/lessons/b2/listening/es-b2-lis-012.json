@@ -791,7 +791,32 @@
       "end": 131.551
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s8",
+      "phrase": "da un",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «da» and the one at the start of «un» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s22",
+      "phrase": "de una",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «de» and the one at the start of «una» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s38",
+      "phrase": "Necesito un",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Necesito» and the one at the start of «un» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "reparo",
@@ -921,6 +946,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«da un» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "Me da un poco de reparo.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s22"],
+      "rationale_es": { "en": "«de una» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s22",
+      "reference": "Era de una señora que se mudaba, y me la dejó a mitad de precio.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s38"],
+      "rationale_es": { "en": "«Necesito un» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s38",
+      "reference": "Necesito un portátil para el trabajo y uno nuevo es carísimo.",
+      "accept_variants": []
     }
   ],
   "provenance": {

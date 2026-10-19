@@ -1045,7 +1045,32 @@
       "end": 225.921
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s6",
+      "phrase": "parece una",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «parece» and the one at the start of «una» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s20",
+      "phrase": "cuando el",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «cuando» and the one at the start of «el» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s34",
+      "phrase": "Aunque el",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Aunque» and the one at the start of «el» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "rendimiento",
@@ -1175,6 +1200,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "«parece una» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s6",
+      "reference": "Entiendo la preocupación, pero la prohibición total me parece una respuesta pobre.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s20"],
+      "rationale_es": { "en": "«cuando el» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s20",
+      "reference": "Y, cuando el profesor lo pida para una actividad concreta, que se pueda sacar con permiso.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s34"],
+      "rationale_es": { "en": "«Aunque el» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s34",
+      "reference": "Aunque el contexto cultural es distinto, la experiencia merece atención.",
+      "accept_variants": []
     }
   ],
   "provenance": {

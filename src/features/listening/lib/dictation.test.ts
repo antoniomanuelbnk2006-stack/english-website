@@ -380,3 +380,33 @@ describe('diagnoseBest', () => {
     expect(diagnoseBest(input)).toEqual(diagnose(input));
   });
 });
+
+describe('dictado en español', () => {
+  const es = (reference: string, typed: string) =>
+    diagnose({ reference, typed, knownLemmas: new Set(), language: 'es' });
+
+  it('una tilde de más o de menos es ortografía, no oído', () => {
+    const result = es('¿Dónde está la estación?', 'donde esta la estacion');
+    expect(result.accuracy).toBe(1);
+    expect(result.words.map((word) => word.status)).toEqual(['typo', 'typo', 'ok', 'typo']);
+  });
+
+  it('los números y las horas valen con cifras o con palabras', () => {
+    expect(es('Tengo treinta y cinco años.', 'Tengo 35 años.').accuracy).toBe(1);
+    expect(es('El tren sale a las 11:30.', 'El tren sale a las once y media.').accuracy).toBe(1);
+    expect(es('Quedamos a las ocho menos cuarto.', 'Quedamos a las 7:45.').accuracy).toBe(1);
+    expect(es('Son veintitrés euros.', 'Son 23 euros.').accuracy).toBe(1);
+  });
+
+  it('una palabra distinta sigue siendo un fallo, y no se aplican reglas de inglés', () => {
+    const result = es('Vamos a la playa.', 'Vamos a la casa.');
+    expect(result.accuracy).toBeLessThan(1);
+    expect(result.errors).toHaveLength(1);
+    // «centre» → «center» es solo del inglés.
+    expect(es('Vivo en el centre.', 'Vivo en el center.').accuracy).toBeLessThan(1);
+  });
+
+  it('«un» y «una» se quedan como palabras', () => {
+    expect(es('Quiero un café.', 'Quiero 1 café.').accuracy).toBeLessThan(1);
+  });
+});

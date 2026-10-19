@@ -176,7 +176,24 @@
       "end": 23.851
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s1",
+      "phrase": "Abre el",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Abre» and the one at the start of «el» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s7",
+      "phrase": "Ahora escribe",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Ahora» and the one at the start of «escribe» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "página",
@@ -291,6 +308,30 @@
         { "id": "c", "text": "Con una tarea larga" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "«Abre el» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s1",
+      "reference": "Buenos días, Diego. Abre el libro, por favor.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "«Ahora escribe» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "Muy bien. Ahora escribe tu nombre.",
+      "accept_variants": []
     }
   ],
   "provenance": {

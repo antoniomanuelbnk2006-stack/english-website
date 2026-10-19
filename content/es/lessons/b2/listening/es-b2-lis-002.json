@@ -691,7 +691,30 @@
       "end": 158.234
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s5",
+      "phrase": "los empleados",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «los» joins the vowel of «empleados», so you hear «lo sempleados»." }
+    },
+    {
+      "ref": "s12",
+      "phrase": "lo han",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «lo» and the one at the start of «han» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s21",
+      "phrase": "que hace",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «que» and the one at the start of «hace» merge into one syllable (the h is silent), so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "jornada",
@@ -821,6 +844,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s5"],
+      "rationale_es": {
+        "en": "In «los empleados» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s5",
+      "reference": "Si los empleados descansaran más, trabajarían con más energía y cometerían menos errores.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "«lo han» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s12",
+      "reference": "Interesante. ¿Qué dicen los datos de los países que ya lo han probado?",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s21"],
+      "rationale_es": { "en": "«que hace» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s21",
+      "reference": "Entonces, ¿ambos coincidís en que hace falta más flexibilidad?",
+      "accept_variants": []
     }
   ],
   "provenance": {

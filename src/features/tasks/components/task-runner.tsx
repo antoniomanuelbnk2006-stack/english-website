@@ -2,6 +2,7 @@
 
 import { CircleCheck, CircleDashed, CircleX, MapPin } from 'lucide-react';
 import { useEffect, useId, useRef, useState, type FormEvent } from 'react';
+import { useContentLanguage } from '@/components/content-language';
 import { Button } from '@/components/ui/button';
 import { InlineText } from '@/components/ui/inline-text';
 import { Chip } from '@/components/ui/panel';
@@ -73,6 +74,7 @@ export function TaskRunner({
   busy?: boolean;
 }) {
   const t = useT();
+  const language = useContentLanguage();
   const uid = useId();
   const [index, setIndex] = useState(0);
   const task = tasks[index];
@@ -102,7 +104,7 @@ export function TaskRunner({
 
     if (result === null) {
       if (!response || !isAnswered(task, response)) return;
-      const graded = grade(task, response);
+      const graded = grade(task, response, language);
       setResult(graded);
       onChecked({ task, response, result: graded, durationMs: Date.now() - startedAt.current });
       return;

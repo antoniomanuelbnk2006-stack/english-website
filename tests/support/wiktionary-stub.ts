@@ -78,6 +78,34 @@ const DEFINITIONS: Record<string, unknown> = {
       { partOfSpeech: 'Symbol', language: 'Translingual', definitions: [definition('A code.')] },
     ],
   },
+  // Palabras españolas (ADR-0041): su sección `es` trae los significados en inglés.
+  madrugar: {
+    es: [
+      {
+        partOfSpeech: 'Verb',
+        language: 'Spanish',
+        definitions: [
+          definition(
+            'to <a href="/wiki/get_up">get up</a> early',
+            'Mañana tengo que <b>madrugar</b> para coger el tren.',
+          ),
+        ],
+      },
+    ],
+  },
+  madrugué: {
+    es: [
+      {
+        partOfSpeech: 'Verb',
+        language: 'Spanish',
+        definitions: [
+          definition(
+            'first-person singular preterite indicative of <a href="/wiki/madrugar">madrugar</a>',
+          ),
+        ],
+      },
+    ],
+  },
   // Existe, pero no como palabra inglesa.
   confortable: {
     fr: [
@@ -144,6 +172,13 @@ const WIKITEXT: Record<string, string> = {
 {{trans-top|a small device}}
 * French: {{t+|fr|bidule|m}}
 {{trans-bottom}}
+`,
+  madrugar: `==Spanish==
+===Pronunciation===
+* {{IPA|es|/madɾuˈɡaɾ/}}
+
+===Verb===
+# to get up early
 `,
   advice: `==English==
 ===Pronunciation===

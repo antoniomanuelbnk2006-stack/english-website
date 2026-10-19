@@ -724,7 +724,32 @@
       "end": 144.45
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s8",
+      "phrase": "se habla",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «se» and the one at the start of «habla» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s15",
+      "phrase": "conviven estas",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «n» of «conviven» joins the vowel of «estas», so you hear «convive nestas»."
+      }
+    },
+    {
+      "ref": "s23",
+      "phrase": "Hoy en",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Hoy» and the one at the start of «en» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "cooficial",
@@ -854,6 +879,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«se habla» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "El gallego se habla en Galicia, en el noroeste del país.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s15"],
+      "rationale_es": {
+        "en": "In «conviven estas» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s15",
+      "reference": "¿Y cómo conviven estas lenguas con el castellano?",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s23"],
+      "rationale_es": { "en": "«Hoy en» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s23",
+      "reference": "Hoy en día, estas lenguas tienen periódicos, cadenas de televisión y una literatura muy rica.",
+      "accept_variants": []
     }
   ],
   "provenance": {

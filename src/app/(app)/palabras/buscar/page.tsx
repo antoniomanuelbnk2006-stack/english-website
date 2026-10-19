@@ -21,7 +21,8 @@ import { getSessionOrRedirect } from '@/lib/auth';
 import { findDictionaryEntry } from '@/lib/content/dictionary';
 import { lemmaKey, type DictionaryPos } from '@/lib/content/dictionary-schema';
 import { levelOfLemma } from '@/lib/content/levels';
-import type { Translate } from '@/lib/i18n';
+import type { PracticeLanguage } from '@/lib/content/language';
+import { htmlLang, type Translate } from '@/lib/i18n';
 import { getLocale, getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -29,13 +30,29 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const first = (value: string | string[] | undefined) => (Array.isArray(value) ? value[0] : value);
-const TRY = ['serendipity', 'give up', 'comfortable', 'nevertheless'];
+const TRY: Partial<Record<PracticeLanguage, string[]>> = {
+  en: ['serendipity', 'give up', 'comfortable', 'nevertheless'],
+  es: ['madrugar', 'echar de menos', 'sobremesa', 'aprovechar'],
+};
 
 const BADGE = {
   learning: { label: 'dictionary.badgeLearning', className: 'text-accent-text' },
   known: { label: 'dictionary.badgeKnown', className: 'text-success' },
   ignored: { label: 'dictionary.badgeIgnored', className: '' },
 } as const;
+
+/** Textos que cambian con el idioma que se practica (inglés o español). */
+const forLanguage = (language: PracticeLanguage) =>
+  ({
+    subtitle: language === 'es' ? 'dictionary.lookupSubtitleEs' : 'dictionary.lookupSubtitle',
+    label: language === 'es' ? 'dictionary.lookupLabelEs' : 'dictionary.lookupLabel',
+    placeholder:
+      language === 'es' ? 'dictionary.lookupPlaceholderEs' : 'dictionary.lookupPlaceholder',
+    invalid: language === 'es' ? 'dictionary.lookupInvalidEs' : 'dictionary.lookupInvalid',
+    notFound:
+      language === 'es' ? 'dictionary.lookupNotFoundBodyEs' : 'dictionary.lookupNotFoundBody',
+    definitions: language === 'es' ? 'dictionary.lookupMeaningsEs' : 'dictionary.lookupDefinitions',
+  }) as const;
 
 const lookupHref = (word: string) => ({
   pathname: '/palabras/buscar' as const,
@@ -48,27 +65,35 @@ function posLabel(t: Translate, pos: string) {
   return key ? t(`pos.${key as DictionaryPos}`) : pos.toLowerCase();
 }
 
-async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
+async function Result({
+  entry,
+  t,
+  language,
+}: {
+  entry: LookupEntry;
+  t: Translate;
+  language: PracticeLanguage;
+}) {
   const key = lemmaKey(entry.word);
   const status = (await getLexiconStatus([key])).get(key);
   const state = stateOf(status);
   const badge = state === 'todo' ? null : BADGE[state];
-  const language = await getPracticeLanguage();
+  const lang = htmlLang(language);
   const level = levelOfLemma(key, language);
   const curated = findDictionaryEntry(entry.word, await getLocale(), language);
-  const base = baseWord(entry);
+  const base = baseWord(entry, language);
 
   return (
     <>
       <Panel className="flex flex-col gap-4">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div className="min-w-0">
-            <h2 lang="en" className="text-heading">
+            <h2 lang={lang} className="text-heading">
               {entry.word}
             </h2>
             <div className="mt-2 flex flex-wrap items-center gap-1.5">
               {entry.ipa ? (
-                <span lang="en" className="tabular-nums text-muted">
+                <span lang={lang} className="tabular-nums text-muted">
                   {entry.ipa}
                 </span>
               ) : null}
@@ -86,7 +111,7 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
             {t('dictionary.lookupBase')}{' '}
             <Link
               href={lookupHref(base)}
-              lang="en"
+              lang={lang}
               className="rounded-structure font-medium text-accent-text hover:underline"
             >
               {base}
@@ -109,28 +134,31 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
         ) : null}
       </Panel>
 
-      <Panel className="flex flex-col gap-3">
-        <PanelTitle>{t('dictionary.lookupTranslations')}</PanelTitle>
-        {entry.translations.length === 0 ? (
-          <p className="text-body-sm text-muted">{t('dictionary.lookupNoTranslation')}</p>
-        ) : (
-          <ul className="flex flex-col gap-2">
-            {entry.translations.map((translation, index) => (
-              <li key={`${translation.gloss}-${index}`}>
-                <span className="text-body-lg">{translation.terms.join(', ')}</span>
-                {translation.gloss ? (
-                  <span lang="en" className="ml-2 text-body-sm text-muted">
-                    ({translation.gloss})
-                  </span>
-                ) : null}
-              </li>
-            ))}
-          </ul>
-        )}
-      </Panel>
+      {/* En español no hay traducciones aparte: los significados (en inglés) ya lo son. */}
+      {language === 'en' ? (
+        <Panel className="flex flex-col gap-3">
+          <PanelTitle>{t('dictionary.lookupTranslations')}</PanelTitle>
+          {entry.translations.length === 0 ? (
+            <p className="text-body-sm text-muted">{t('dictionary.lookupNoTranslation')}</p>
+          ) : (
+            <ul className="flex flex-col gap-2">
+              {entry.translations.map((translation, index) => (
+                <li key={`${translation.gloss}-${index}`}>
+                  <span className="text-body-lg">{translation.terms.join(', ')}</span>
+                  {translation.gloss ? (
+                    <span lang="en" className="ml-2 text-body-sm text-muted">
+                      ({translation.gloss})
+                    </span>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          )}
+        </Panel>
+      ) : null}
 
       <Panel className="flex flex-col gap-4">
-        <PanelTitle>{t('dictionary.lookupDefinitions')}</PanelTitle>
+        <PanelTitle>{t(forLanguage(language).definitions)}</PanelTitle>
         {entry.groups.map((group) => (
           <section key={group.pos} aria-label={posLabel(t, group.pos)}>
             <p className="text-body-sm font-medium text-accent-text">{posLabel(t, group.pos)}</p>
@@ -139,7 +167,9 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
                 <li key={index}>
                   {sense.text}
                   {sense.example ? (
-                    <span className="block text-body-sm text-muted">{sense.example}</span>
+                    <span lang={lang} className="block text-body-sm text-muted">
+                      {sense.example}
+                    </span>
                   ) : null}
                 </li>
               ))}
@@ -147,7 +177,7 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
           </section>
         ))}
         <a
-          href={`https://en.wiktionary.org/wiki/${encodeURIComponent(entry.word.replace(/ /g, '_'))}`}
+          href={`https://en.wiktionary.org/wiki/${encodeURIComponent(entry.word.replace(/ /g, '_'))}${language === 'es' ? '#Spanish' : ''}`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1.5 self-start rounded-structure text-caption text-muted hover:text-text"
@@ -162,10 +192,12 @@ async function Result({ entry, t }: { entry: LookupEntry; t: Translate }) {
 
 export default async function LookupPage({ searchParams }: PageProps<'/palabras/buscar'>) {
   await getSessionOrRedirect();
-  const [params, t] = await Promise.all([searchParams, getT()]);
+  const [params, t, language] = await Promise.all([searchParams, getT(), getPracticeLanguage()]);
   const raw = (first(params.q) ?? '').trim();
   const term = LookupTerm.safeParse(raw);
-  const result = term.success ? await lookupWord(term.data) : null;
+  const result = term.success ? await lookupWord(term.data, language) : null;
+  const texts = forLanguage(language);
+  const lang = htmlLang(language);
 
   return (
     <PageContainer width="exercise">
@@ -178,7 +210,7 @@ export default async function LookupPage({ searchParams }: PageProps<'/palabras/
           {t('nav.words')}
         </Link>
         <h1 className="text-heading-sm sm:text-heading">{t('dictionary.lookupTitle')}</h1>
-        <p className="text-body-sm text-muted">{t('dictionary.lookupSubtitle')}</p>
+        <p className="text-body-sm text-muted">{t(texts.subtitle)}</p>
       </header>
 
       <form
@@ -188,17 +220,17 @@ export default async function LookupPage({ searchParams }: PageProps<'/palabras/
         className="flex flex-wrap items-end gap-2"
       >
         <div className="flex min-w-0 flex-1 flex-col gap-1.5">
-          <Label htmlFor="lookup-q">{t('dictionary.lookupLabel')}</Label>
+          <Label htmlFor="lookup-q">{t(texts.label)}</Label>
           <Input
             id="lookup-q"
             name="q"
             type="search"
-            lang="en"
+            lang={lang}
             autoCapitalize="none"
             autoComplete="off"
             spellCheck={false}
             maxLength={60}
-            placeholder={t('dictionary.lookupPlaceholder')}
+            placeholder={t(texts.placeholder)}
             defaultValue={raw}
           />
         </div>
@@ -208,11 +240,11 @@ export default async function LookupPage({ searchParams }: PageProps<'/palabras/
       {raw === '' ? (
         <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-body-sm text-muted">
           {t('dictionary.lookupTry')}
-          {TRY.map((word) => (
+          {(TRY[language] ?? TRY.en ?? []).map((word) => (
             <Link
               key={word}
               href={lookupHref(word)}
-              lang="en"
+              lang={lang}
               className="rounded-structure text-accent-text hover:underline"
             >
               {word}
@@ -221,13 +253,13 @@ export default async function LookupPage({ searchParams }: PageProps<'/palabras/
         </p>
       ) : !term.success ? (
         <p role="alert" className="text-body-sm text-error">
-          {t('dictionary.lookupInvalid')}
+          {t(texts.invalid)}
         </p>
       ) : result?.status === 'found' ? (
-        <Result entry={result.entry} t={t} />
+        <Result entry={result.entry} t={t} language={language} />
       ) : result?.status === 'not_found' ? (
         <EmptyState icon={SearchX} title={t('dictionary.lookupNotFoundTitle', { word: raw })}>
-          <p>{t('dictionary.lookupNotFoundBody')}</p>
+          <p>{t(texts.notFound)}</p>
           {result.suggestions.length > 0 ? (
             <p className="mt-3 flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
               {t('dictionary.lookupSuggestions')}
@@ -235,7 +267,7 @@ export default async function LookupPage({ searchParams }: PageProps<'/palabras/
                 <Link
                   key={word}
                   href={lookupHref(word)}
-                  lang="en"
+                  lang={lang}
                   className="rounded-structure text-accent-text hover:underline"
                 >
                   {word}

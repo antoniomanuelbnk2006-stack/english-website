@@ -440,7 +440,32 @@
       "end": 72.649
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s8",
+      "phrase": "Puede esperar",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Puede» and the one at the start of «esperar» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s15",
+      "phrase": "daré un",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «daré» and the one at the start of «un» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s18",
+      "phrase": "hay uno",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «hay» and the one at the start of «uno» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "avería",
@@ -555,6 +580,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«Puede esperar» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "Puede esperar al tren o cambiar el billete para mañana sin pagar nada.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s15"],
+      "rationale_es": { "en": "«daré un» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s15",
+      "reference": "Le daré un justificante por si lo necesita en su trabajo.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s18"],
+      "rationale_es": { "en": "«hay uno» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s18",
+      "reference": "Sí, hay uno a las seis menos diez, pero está casi lleno.",
+      "accept_variants": []
     }
   ],
   "provenance": {

@@ -752,7 +752,30 @@
       "end": 134.605
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s9",
+      "phrase": "compra un",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «compra» and the one at the start of «un» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s19",
+      "phrase": "solo es",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «solo» and the one at the start of «es» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s29",
+      "phrase": "pedimos una",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «pedimos» joins the vowel of «una», so you hear «pedimo suna»." }
+    }
+  ],
   "glossary": [
     {
       "lemma": "insoportable",
@@ -882,6 +905,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "«compra un» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s9",
+      "reference": "Sin embargo, una persona que compra un sofá no se lo lleva en autobús.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s19"],
+      "rationale_es": { "en": "«solo es» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s19",
+      "reference": "Y no solo es el aire.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s29"],
+      "rationale_es": {
+        "en": "In «pedimos una» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s29",
+      "reference": "¿Y si pedimos una reunión con la concejala?",
+      "accept_variants": []
     }
   ],
   "provenance": {

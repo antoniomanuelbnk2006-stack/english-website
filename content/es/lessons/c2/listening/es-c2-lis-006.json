@@ -889,7 +889,32 @@
       "end": 147.512
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s7",
+      "phrase": "Para una",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Para» and the one at the start of «una» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s18",
+      "phrase": "curioso es",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «curioso» and the one at the start of «es» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s32",
+      "phrase": "que hay",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «que» and the one at the start of «hay» merge into one syllable (the h is silent), so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "idealizar",
@@ -1017,6 +1042,42 @@
         { "id": "c", "text": "Entre la música del pasado y el cine actual" }
       ],
       "answer": "a"
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "«Para una» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "Para una productora, apostar por algo que el público ya conoce reduce enormemente el riesgo.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s18"],
+      "rationale_es": { "en": "«curioso es» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s18",
+      "reference": "Lo curioso es que la nostalgia ya no se limita a lo vivido.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s32"],
+      "rationale_es": { "en": "«que hay» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s32",
+      "reference": "Es decir, que hay una nostalgia creativa y una nostalgia perezosa.",
+      "accept_variants": []
     }
   ],
   "provenance": {

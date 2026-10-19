@@ -197,7 +197,24 @@
       "end": 25.878
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s3",
+      "phrase": "Voy al",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Voy» and the one at the start of «al» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s10",
+      "phrase": "Hasta el",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Hasta» and the one at the start of «el» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "y media",
@@ -317,6 +334,30 @@
         { "id": "c", "text": "Mucho gusto, Laura" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "«Voy al» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s3",
+      "reference": "Voy al parque con mi hermana.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "«Hasta el» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s10",
+      "reference": "Sí. Hasta el sábado.",
+      "accept_variants": []
     }
   ],
   "provenance": {

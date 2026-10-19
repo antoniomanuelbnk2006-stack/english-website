@@ -1098,7 +1098,32 @@
       "end": 227.995
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s6",
+      "phrase": "muy activas",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «muy» and the one at the start of «activas» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s21",
+      "phrase": "para entrenar",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «para» and the one at the start of «entrenar» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s30",
+      "phrase": "de un",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «de» and the one at the start of «un» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "consolidar",
@@ -1228,6 +1253,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "«muy activas» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s6",
+      "reference": "Incluso cuando dormimos, hay zonas muy activas que consolidan lo aprendido durante el día.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s21"],
+      "rationale_es": { "en": "«para entrenar» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s21",
+      "reference": "¿Qué opina de las aplicaciones para entrenar la memoria?",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s30"],
+      "rationale_es": { "en": "«de un» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s30",
+      "reference": "Y no subestimes el valor de un buen paseo: mucha gente resuelve problemas mientras camina.",
+      "accept_variants": []
     }
   ],
   "provenance": {

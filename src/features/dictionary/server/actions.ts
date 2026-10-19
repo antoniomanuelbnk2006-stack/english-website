@@ -97,10 +97,10 @@ export async function addLookupWord(input: unknown): Promise<ActionResult<{ adde
   if (curated) {
     card = buildDictionaryCard(curated.entry);
   } else {
-    const found = await lookupWord(parsed.data.word);
+    const found = await lookupWord(parsed.data.word, language);
     if (found.status === 'not_found') return fail('not_found');
     if (found.status === 'unavailable') return fail('internal');
-    card = buildLookupCard(found.entry);
+    card = buildLookupCard(found.entry, language);
   }
 
   const result = await sendToReview(session.supabase, [card], language);

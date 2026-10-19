@@ -12,6 +12,7 @@ import {
 } from '@/features/dictionary/lib/wiktionary';
 import { getPracticeLanguage } from '@/features/profile/server/queries';
 import { getDictionary } from '@/lib/content/dictionary';
+import type { PracticeLanguage } from '@/lib/content/language';
 import { env } from '@/lib/env';
 import { getLocale } from '@/lib/i18n/server';
 
@@ -81,12 +82,18 @@ async function suggest(term: string): Promise<string[]> {
 }
 
 /**
- * Busca una palabra o expresión inglesa en Wiktionary. Los títulos distinguen mayúsculas, así
- * que se prueba como se ha escrito, en minúsculas y con mayúscula inicial. Las traducciones y
- * la pronunciación son un extra: si esa segunda petición falla, se devuelven las definiciones.
+ * Busca una palabra o expresión del idioma que se practica en Wiktionary (el inglés, también
+ * para el español: sus entradas españolas traen los significados en inglés). Los títulos
+ * distinguen mayúsculas, así que se prueba como se ha escrito, en minúsculas y con mayúscula
+ * inicial. Las traducciones y la pronunciación son un extra: si esa segunda petición falla, se
+ * devuelven las definiciones. En español no hay traducciones aparte: los significados lo son.
  */
-export async function lookupWord(term: string): Promise<LookupResult> {
-  const hit = cache.get(term);
+export async function lookupWord(
+  term: string,
+  language: PracticeLanguage = 'en',
+): Promise<LookupResult> {
+  const cacheKey = `${language}:${term}`;
+  const hit = cache.get(cacheKey);
   if (hit && Date.now() - hit.at < CACHE_TTL_MS) return hit.result;
 
   const lower = term.toLowerCase();
@@ -100,22 +107,25 @@ export async function lookupWord(term: string): Promise<LookupResult> {
       // No se guarda: puede ser un corte momentáneo.
       return { status: 'unavailable' };
     }
-    const groups = parseDefinitions(definitions.data);
-    if (groups.length === 0) continue; // existe, pero no como palabra inglesa
+    const groups = parseDefinitions(definitions.data, language);
+    if (groups.length === 0) continue; // existe, pero no como palabra de ese idioma
 
     const wikitext = await wikitextOf(title);
     const subpage =
-      wikitext && needsTranslationSubpage(wikitext)
+      language === 'en' && wikitext && needsTranslationSubpage(wikitext)
         ? await wikitextOf(`${title}/translations`)
         : null;
     result = {
       status: 'found',
       entry: {
         word: title,
-        ipa: wikitext ? parseIpa(wikitext) : null,
+        ipa: wikitext ? parseIpa(wikitext, language) : null,
         groups,
         // La subpágina guarda las de la categoría principal: van delante.
-        translations: [...parseSpanish(subpage ?? ''), ...parseSpanish(wikitext ?? '')].slice(0, 8),
+        translations:
+          language === 'en'
+            ? [...parseSpanish(subpage ?? ''), ...parseSpanish(wikitext ?? '')].slice(0, 8)
+            : [],
       },
     };
     break;
@@ -126,6 +136,6 @@ export async function lookupWord(term: string): Promise<LookupResult> {
     const oldest = cache.keys().next().value;
     if (oldest !== undefined) cache.delete(oldest);
   }
-  cache.set(term, { at: Date.now(), result });
+  cache.set(cacheKey, { at: Date.now(), result });
   return result;
 }

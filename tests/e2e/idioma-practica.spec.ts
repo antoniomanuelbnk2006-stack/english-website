@@ -306,6 +306,60 @@ test('una lectura y una escucha en español: su idioma en pantalla y sus hablant
   expect(errors.filter((message) => !message.includes('404'))).toEqual([]);
 });
 
+test('el diccionario completo busca palabras españolas y trae sus significados en inglés', async ({
+  page,
+  request,
+}) => {
+  const errors = trackErrors(page);
+  await practiceSpanish(request);
+  await signIn(page);
+  await page.goto('/palabras/buscar');
+  await expect(page.getByText('Busca cualquier palabra o expresión en español')).toBeVisible();
+  await expect(page.getByRole('link', { name: 'madrugar' })).toHaveAttribute('lang', 'es');
+
+  await page.getByLabel('Palabra o expresión en español').fill('madrugué');
+  await page.getByRole('button', { name: 'Buscar' }).click();
+  // Una forma de otra palabra: remite a ella.
+  await page.getByRole('link', { name: 'madrugar', exact: true }).click();
+  await expect(page).toHaveURL(/q=madrugar$/);
+  await expect(page.getByRole('heading', { level: 2, name: 'madrugar' })).toHaveAttribute(
+    'lang',
+    'es',
+  );
+  await expect(page.getByText('/madɾuˈɡaɾ/')).toBeVisible();
+  await expect(page.getByText('Significados (en inglés)')).toBeVisible();
+  await expect(page.getByText('to get up early')).toBeVisible();
+  await expect(page.getByText('Mañana tengo que madrugar para coger el tren.')).toHaveAttribute(
+    'lang',
+    'es',
+  );
+  // En español no hay «traducción al español»: los significados ya lo son.
+  await expect(page.getByText('Traducción al español')).toHaveCount(0);
+  await expect(page.getByRole('link', { name: /Fuente: Wiktionary/ })).toHaveAttribute(
+    'href',
+    'https://en.wiktionary.org/wiki/madrugar#Spanish',
+  );
+  await expectAccessible(page);
+
+  await page.getByRole('button', { name: 'Mandar «madrugar» al repaso' }).click();
+  await expect(page.getByText('En repaso', { exact: true })).toBeVisible();
+  expect(
+    await queryDatabase(
+      request,
+      `select language, lemma, front->>'sentence' as sentence, back->>'def_es' as def_es
+       from public.srs_cards`,
+    ),
+  ).toEqual([
+    {
+      language: 'es',
+      lemma: 'madrugar',
+      sentence: 'Mañana tengo que madrugar para coger el tren.',
+      def_es: 'to get up early',
+    },
+  ]);
+  expect(errors).toEqual([]);
+});
+
 test('no se puede elegir un idioma sin contenido', async ({ page, request }) => {
   // Si en la base de datos hay uno que no tiene contenido, se practica inglés.
   await queryDatabase(

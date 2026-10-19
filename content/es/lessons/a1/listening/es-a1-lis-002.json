@@ -188,7 +188,24 @@
       "end": 24.702
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s7",
+      "phrase": "Trabajo en",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Trabajo» and the one at the start of «en» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s8",
+      "phrase": "Yo estudio",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Yo» and the one at the start of «estudio» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "mucho gusto",
@@ -295,6 +312,30 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "«Trabajo en» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "Trabajo en una librería. ¿Y tú?",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«Yo estudio» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "Yo estudio medicina.",
+      "accept_variants": []
     }
   ],
   "provenance": {

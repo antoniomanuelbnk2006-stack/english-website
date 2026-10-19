@@ -257,7 +257,28 @@
       "end": 36.837
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s2",
+      "phrase": "voy a",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «voy» and the one at the start of «a» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s7",
+      "phrase": "vas a",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «vas» joins the vowel of «a», so you hear «va sa»." }
+    },
+    {
+      "ref": "s11",
+      "phrase": "Entonces el",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «Entonces» joins the vowel of «el», so you hear «Entonce sel»." }
+    }
+  ],
   "glossary": [
     {
       "lemma": "quedarse",
@@ -372,6 +393,46 @@
         { "id": "c", "text": "El viernes" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "«voy a» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s2",
+      "reference": "El sábado voy a ir al museo con mi hermana.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": {
+        "en": "In «vas a» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "¿No vas a salir?",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s11"],
+      "rationale_es": {
+        "en": "In «Entonces el» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s11",
+      "reference": "Entonces el lunes nos contamos todo.",
+      "accept_variants": []
     }
   ],
   "provenance": {

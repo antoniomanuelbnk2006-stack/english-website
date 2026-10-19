@@ -17,7 +17,7 @@ import { player, usePlayer } from '@/lib/audio/store';
 import type { TranslationKey } from '@/lib/i18n';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
-import { useContentLang } from '@/components/content-language';
+import { useContentLang, useContentLanguage } from '@/components/content-language';
 
 export const CAUSE_LABEL: Record<Cause, TranslationKey> = {
   unknown_word: 'listening.causeUnknownWord',
@@ -76,6 +76,7 @@ export function DictationStep({
 }) {
   const t = useT();
   const lang = useContentLang();
+  const language = useContentLanguage();
   const rate = usePlayer((state) => state.rate);
   const [index, setIndex] = useState(0);
   const [typed, setTyped] = useState('');
@@ -115,6 +116,7 @@ export function DictationStep({
           lemmas: context.lemmas.get(task.segment),
           features: context.features.get(task.segment),
           accent: context.accents.get(task.segment),
+          language,
         },
         task.accept_variants,
       );

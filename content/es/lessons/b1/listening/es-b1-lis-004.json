@@ -386,7 +386,28 @@
       "end": 65.321
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s7",
+      "phrase": "Voy a",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Voy» and the one at the start of «a» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s12",
+      "phrase": "ir a",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «r» of «ir» joins the vowel of «a», so you hear «i ra»." }
+    },
+    {
+      "ref": "s15",
+      "phrase": "volver a",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «r» of «volver» joins the vowel of «a», so you hear «volve ra»." }
+    }
+  ],
   "glossary": [
     {
       "lemma": "antibiótico",
@@ -516,6 +537,46 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "«Voy a» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "Voy a mirarle la garganta. Abra la boca, por favor.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s12"],
+      "rationale_es": {
+        "en": "In «ir a» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s12",
+      "reference": "¿Puedo ir a trabajar mañana?",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s15"],
+      "rationale_es": {
+        "en": "In «volver a» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s15",
+      "reference": "De acuerdo. ¿Tengo que volver a la consulta?",
+      "accept_variants": []
     }
   ],
   "provenance": {

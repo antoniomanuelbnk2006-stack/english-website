@@ -425,7 +425,30 @@
       "end": 86.263
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s5",
+      "phrase": "menos a",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «menos» joins the vowel of «a», so you hear «meno sa»." }
+    },
+    {
+      "ref": "s8",
+      "phrase": "Tomaba apuntes",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Tomaba» and the one at the start of «apuntes» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s14",
+      "phrase": "Pero hablé",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Pero» and the one at the start of «hablé» merge into one syllable (the h is silent), so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "apuntes",
@@ -540,6 +563,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s5"],
+      "rationale_es": {
+        "en": "In «menos a» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s5",
+      "reference": "Echaba de menos a mi familia y a mis amigos del pueblo.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«Tomaba apuntes» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "Tomaba apuntes sin parar, pero después no entendía mis propias notas.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s14"],
+      "rationale_es": { "en": "«Pero hablé» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s14",
+      "reference": "Pero hablé con una tutora, que me ayudó a organizar mejor mi tiempo.",
+      "accept_variants": []
     }
   ],
   "provenance": {

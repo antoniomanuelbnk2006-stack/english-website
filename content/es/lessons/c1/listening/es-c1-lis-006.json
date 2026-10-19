@@ -1192,7 +1192,32 @@
       "end": 220.746
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s11",
+      "phrase": "con algoritmos",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «n» of «con» joins the vowel of «algoritmos», so you hear «co nalgoritmos»."
+      }
+    },
+    {
+      "ref": "s25",
+      "phrase": "Eso hace",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Eso» and the one at the start of «hace» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s42",
+      "phrase": "pido es",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «pido» and the one at the start of «es» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "bulo",
@@ -1337,6 +1362,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s11"],
+      "rationale_es": {
+        "en": "In «con algoritmos» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s11",
+      "reference": "Las plataformas funcionan con algoritmos que premian lo que genera más reacciones.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s25"],
+      "rationale_es": { "en": "«Eso hace» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s25",
+      "reference": "Eso hace que la gente prefiera informarse por otras vías menos fiables.",
+      "accept_variants": []
+    },
+    {
+      "id": "q11",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s42"],
+      "rationale_es": { "en": "«pido es» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s42",
+      "reference": "Lo que pido es transparencia, no censura.",
+      "accept_variants": []
     }
   ],
   "provenance": {

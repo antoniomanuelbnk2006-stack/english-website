@@ -411,7 +411,32 @@
       "end": 80.488
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s2",
+      "phrase": "Hoy os",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Hoy» and the one at the start of «os» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s11",
+      "phrase": "la experiencia",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «la» and the one at the start of «experiencia» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s14",
+      "phrase": "porque hace",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «porque» and the one at the start of «hace» merge into one syllable (the h is silent), so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "taller",
@@ -526,6 +551,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "«Hoy os» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s2",
+      "reference": "Hoy os propongo un fin de semana largo en Sevilla.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "«la experiencia» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s11",
+      "reference": "Las entradas cuestan unos veinte euros, pero la experiencia es inolvidable.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s14"],
+      "rationale_es": { "en": "«porque hace» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s14",
+      "reference": "Un último consejo: evitad viajar en agosto, porque hace muchísimo calor.",
+      "accept_variants": []
     }
   ],
   "provenance": {

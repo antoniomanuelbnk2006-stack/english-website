@@ -497,7 +497,30 @@
       "end": 72.845
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s4",
+      "phrase": "que el",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «que» and the one at the start of «el» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s13",
+      "phrase": "es el",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «es» joins the vowel of «el», so you hear «e sel»." }
+    },
+    {
+      "ref": "s23",
+      "phrase": "sabemos exactamente",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «s» of «sabemos» joins the vowel of «exactamente», so you hear «sabemo sexactamente»."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "integral",
@@ -612,6 +635,46 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "«que el» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s4",
+      "reference": "Beatriz, mucha gente dice que el desayuno es la comida más importante.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s13"],
+      "rationale_es": {
+        "en": "In «es el» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s13",
+      "reference": "¿Cuál es el error más común?",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s23"],
+      "rationale_es": {
+        "en": "In «sabemos exactamente» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s23",
+      "reference": "Cuando preparamos nuestra comida, sabemos exactamente lo que comemos.",
+      "accept_variants": []
     }
   ],
   "provenance": {

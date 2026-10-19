@@ -1106,7 +1106,32 @@
       "end": 242.315
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s6",
+      "phrase": "necesita entre",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «necesita» and the one at the start of «entre» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s17",
+      "phrase": "Pero el",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Pero» and the one at the start of «el» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s27",
+      "phrase": "tumbado hasta",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «tumbado» and the one at the start of «hasta» merge into one syllable (the h is silent), so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "insomnio",
@@ -1236,6 +1261,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "«necesita entre» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s6",
+      "reference": "La mayoría necesita entre siete y nueve horas. Hay pequeñas diferencias entre personas.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s17"],
+      "rationale_es": { "en": "«Pero el» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s17",
+      "reference": "Pero el mayor problema no es la luz, sino el contenido.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s27"],
+      "rationale_es": { "en": "«tumbado hasta» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s27",
+      "reference": "Curioso. Mucha gente cree que lo mejor es quedarse tumbado hasta que llegue el sueño.",
+      "accept_variants": []
     }
   ],
   "provenance": {

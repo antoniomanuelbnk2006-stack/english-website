@@ -330,7 +330,32 @@
       "end": 72.459
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s6",
+      "phrase": "No es",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «No» and the one at the start of «es» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s8",
+      "phrase": "me has",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «me» and the one at the start of «has» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s9",
+      "phrase": "busco alojamientos",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «busco» and the one at the start of «alojamientos» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "senderismo",
@@ -460,6 +485,42 @@
         { "id": "c", "text": "Mirar cómo viajar hasta allí" }
       ],
       "answer": "c"
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "«No es» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s6",
+      "reference": "No es mala idea. Aunque allí llueve bastante, ¿no?",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«me has» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "Vale, me has convencido. Si encontramos un hotel barato, reservamos esta misma noche.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "«busco alojamientos» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s9",
+      "reference": "Perfecto. Yo busco alojamientos y tú miras los vuelos y los trenes.",
+      "accept_variants": []
     }
   ],
   "provenance": {

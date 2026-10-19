@@ -196,7 +196,24 @@
       "end": 25.554
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s3",
+      "phrase": "Hoy hay",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Hoy» and the one at the start of «hay» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s4",
+      "phrase": "gusta el",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «gusta» and the one at the start of «el» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "aquí tiene",
@@ -311,6 +328,30 @@
         { "id": "c", "text": "Buen viaje" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "«Hoy hay» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s3",
+      "reference": "Aquí tiene. Hoy hay pan nuevo.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "«gusta el» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s4",
+      "reference": "¡Qué bien! Me gusta el pan.",
+      "accept_variants": []
     }
   ],
   "provenance": {

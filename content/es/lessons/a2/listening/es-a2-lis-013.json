@@ -232,7 +232,30 @@
       "end": 35.243
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s2",
+      "phrase": "por esta",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «r» of «por» joins the vowel of «esta», so you hear «po resta»." }
+    },
+    {
+      "ref": "s5",
+      "phrase": "Verá una",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Verá» and the one at the start of «una» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s9",
+      "phrase": "está abierto",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «está» and the one at the start of «abierto» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "todo recto",
@@ -347,6 +370,44 @@
         { "id": "c", "text": "Que descanse esta noche" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s2"],
+      "rationale_es": {
+        "en": "In «por esta» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s2",
+      "reference": "Sí, está cerca. Siga todo recto por esta calle.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "«Verá una» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s5",
+      "reference": "Sí. Verá una iglesia grande.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "«está abierto» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s9",
+      "reference": "¿Y está abierto ahora?",
+      "accept_variants": []
     }
   ],
   "provenance": {

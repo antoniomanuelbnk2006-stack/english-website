@@ -989,6 +989,14 @@ export const en: Dictionary = {
     allDoneTitle: 'Nothing left to study in {level}',
     allDoneBody: 'Every word of this level is already in review or marked as known.',
     shortcuts: 'Shortcuts: once the translation is showing, 1, 2 and 3 pick the answer.',
+    lookupSubtitleEs:
+      'Look up any Spanish word or expression, whether or not it is in the deck. Meanings come in English, from Wiktionary, a free dictionary.',
+    lookupLabelEs: 'Spanish word or expression',
+    lookupPlaceholderEs: 'madrugar, echar de menos…',
+    lookupInvalidEs: 'Type a Spanish word or expression: only letters, spaces and hyphens.',
+    lookupNotFoundBodyEs:
+      'Check the spelling, accents included. Wiktionary does not have it as a Spanish word.',
+    lookupMeaningsEs: 'Meanings (in English)',
     lookupTitle: 'Full dictionary',
     lookupSubtitle:
       'Look up any English word or expression, whether or not it is in the deck. The data comes from Wiktionary, a free dictionary.',

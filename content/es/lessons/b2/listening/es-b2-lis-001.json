@@ -642,7 +642,30 @@
       "end": 142.963
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s4",
+      "phrase": "Es el",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «Es» joins the vowel of «el», so you hear «E sel»." }
+    },
+    {
+      "ref": "s13",
+      "phrase": "Le enviaremos",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Le» and the one at the start of «enviaremos» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s20",
+      "phrase": "guardo ahora",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «guardo» and the one at the start of «ahora» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "pedido",
@@ -772,6 +795,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s4"],
+      "rationale_es": {
+        "en": "In «Es el» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s4",
+      "reference": "Sí, un momento. Es el ocho, cuatro, siete, dos, uno.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "«Le enviaremos» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s13",
+      "reference": "Por supuesto. Le enviaremos un mensaje la víspera, y el repartidor llamará antes de llegar.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s20"],
+      "rationale_es": { "en": "«guardo ahora» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s20",
+      "reference": "Lo guardo ahora mismo. Gracias por avisarme.",
+      "accept_variants": []
     }
   ],
   "provenance": {

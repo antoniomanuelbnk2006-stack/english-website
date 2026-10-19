@@ -182,7 +182,24 @@
       "end": 24.014
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s5",
+      "phrase": "aquí o",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «aquí» and the one at the start of «o» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s7",
+      "phrase": "cinco euros",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «cinco» and the one at the start of «euros» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "bocadillo",
@@ -304,6 +321,30 @@
         { "id": "c", "text": "Hasta mañana" }
       ],
       "answer": "a"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "«aquí o» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s5",
+      "reference": "¿Para tomar aquí o para llevar?",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "«cinco euros» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "Muy bien. Son cinco euros.",
+      "accept_variants": []
     }
   ],
   "provenance": {

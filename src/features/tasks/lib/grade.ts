@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { diagnoseBest } from '@/features/listening/lib/dictation';
+import type { PracticeLanguage } from '@/lib/content/language';
 import type { Task } from '@/lib/content/schema';
 
 /** La precisión de un dictado no depende del léxico del usuario (eso solo afecta a la causa). */
@@ -66,9 +67,14 @@ const single = (correct: boolean): GradeResult => ({
 });
 
 /**
- * Corrige una respuesta. Si la respuesta es de otro tipo de tarea, la nota es 0.
+ * Corrige una respuesta. Si la respuesta es de otro tipo de tarea, la nota es 0. El idioma
+ * cambia las equivalencias del dictado (inglés si no se dice).
  */
-export function grade(task: Task, response: TaskResponse): GradeResult {
+export function grade(
+  task: Task,
+  response: TaskResponse,
+  language: PracticeLanguage = 'en',
+): GradeResult {
   if (task.type !== response.type) return single(false);
 
   switch (task.type) {
@@ -140,7 +146,7 @@ export function grade(task: Task, response: TaskResponse): GradeResult {
       // La nota es la precisión del dictado: palabras correctas / palabras de la referencia.
       if (response.type !== 'dictation') return single(false);
       const { accuracy } = diagnoseBest(
-        { reference: task.reference, typed: response.text, knownLemmas: NO_LEMMAS },
+        { reference: task.reference, typed: response.text, knownLemmas: NO_LEMMAS, language },
         task.accept_variants,
       );
       return { score: accuracy, correct: accuracy === 1, parts: { answer: accuracy === 1 } };

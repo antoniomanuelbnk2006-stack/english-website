@@ -1146,7 +1146,30 @@
       "end": 213.801
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s7",
+      "phrase": "confunda éxito",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «confunda» and the one at the start of «éxito» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s21",
+      "phrase": "Añadiría un",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Añadiría» and the one at the start of «un» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s34",
+      "phrase": "las escuelas",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «las» joins the vowel of «escuelas», so you hear «la sescuelas»." }
+    }
+  ],
   "glossary": [
     {
       "lemma": "mecenazgo",
@@ -1276,6 +1299,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "«confunda éxito» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "Que se confunda éxito con cantidad.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s21"],
+      "rationale_es": { "en": "«Añadiría un» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s21",
+      "reference": "Añadiría un tercer aspecto: la participación.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s34"],
+      "rationale_es": {
+        "en": "In «las escuelas» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s34",
+      "reference": "Y las escuelas deberían colaborar más, con visitas que partan de preguntas y no de listas de datos.",
+      "accept_variants": []
     }
   ],
   "provenance": {

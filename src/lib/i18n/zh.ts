@@ -921,6 +921,13 @@ export const zh: Dictionary = {
     allDoneTitle: '{level} 已经没有要学的了',
     allDoneBody: '这个水平的所有单词都已在复习中，或已被你标记为会了。',
     shortcuts: '快捷键：显示翻译后，按 1、2、3 选择答案。',
+    lookupSubtitleEs:
+      '搜索任何西班牙语单词或表达，无论它是否在词卡中。释义为英语，来自自由词典 Wiktionary。',
+    lookupLabelEs: '西班牙语单词或表达',
+    lookupPlaceholderEs: 'madrugar, echar de menos…',
+    lookupInvalidEs: '请输入西班牙语单词或表达：只能包含字母、空格和连字符。',
+    lookupNotFoundBodyEs: '请检查拼写，包括重音符号。Wiktionary 中没有这个西班牙语单词。',
+    lookupMeaningsEs: '释义（英语）',
     lookupTitle: '完整词典',
     lookupSubtitle: '搜索任何英语单词或表达，无论它是否在词卡中。数据来自自由词典 Wiktionary。',
     lookupLabel: '英语单词或表达',

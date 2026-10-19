@@ -4,6 +4,7 @@ import { CircleCheck, CircleX, Layers, PartyPopper, Play, TriangleAlert } from '
 import type { Route } from 'next';
 import Link from 'next/link';
 import { useEffect, useEffectEvent, useRef, useState, type FormEvent, type ReactNode } from 'react';
+import { useContentLang, useContentLanguage } from '@/components/content-language';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { InlineText } from '@/components/ui/inline-text';
 import { Input, Label, Textarea } from '@/components/ui/input';
@@ -88,6 +89,8 @@ function isSelfGraded(content: CardContent | undefined): boolean {
 }
 
 export function ReviewSession({ session, audioBase }: { session: SessionData; audioBase: string }) {
+  const language = useContentLanguage();
+  const lang = useContentLang();
   const t = useT();
   const [queue, setQueue] = useState<ReviewCard[]>(session.cards);
   const [done, setDone] = useState(0);
@@ -166,7 +169,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
     if (!content || revealed) return;
     if (content.kind === 'audio') {
       const result = diagnoseBest(
-        { reference: content.back.text, typed: answer, knownLemmas: NO_LEMMAS },
+        { reference: content.back.text, typed: answer, knownLemmas: NO_LEMMAS, language },
         content.back.variants,
       );
       setDiagnosis(result);
@@ -329,7 +332,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
   if (content?.kind === 'word' || content?.kind === 'chunk') {
     const parts = splitAround(content.front.sentence, content.front.surface);
     front = (
-      <p lang="en" className="text-subheading">
+      <p lang={lang} className="text-subheading">
         {parts ? (
           <>
             {parts.before}
@@ -345,7 +348,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
       <>
         {content.back.def_en ? (
           <>
-            <p lang="en">{content.back.def_en}</p>
+            <p lang={lang}>{content.back.def_en}</p>
             <details className="text-muted">
               <summary className="cursor-pointer py-1 text-body-sm">
                 {t('review.translation')}
@@ -357,7 +360,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
           <p>{content.back.def_es}</p>
         )}
         {content.back.example ? (
-          <p lang="en" className="prose-reading border-l-2 border-border pl-3 text-muted">
+          <p lang={lang} className="prose-reading border-l-2 border-border pl-3 text-muted">
             {content.back.example}
           </p>
         ) : null}
@@ -372,7 +375,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
         <Label htmlFor="review-dictation">{t('listening.dictationLabel')}</Label>
         <Textarea
           id="review-dictation"
-          lang="en"
+          lang={lang}
           autoCapitalize="none"
           autoCorrect="off"
           spellCheck={false}
@@ -405,13 +408,13 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
             </p>
           </>
         ) : (
-          <p lang="en" className="prose-reading">
+          <p lang={lang} className="prose-reading">
             {content.back.text}
           </p>
         )}
         {content.back.features.map((feature) => (
           <p key={feature.phrase} className="text-body-sm text-muted">
-            <span lang="en" className="font-medium text-text">
+            <span lang={lang} className="font-medium text-text">
               {feature.phrase}
             </span>
             {feature.ipa ? <span className="tabular-nums"> {feature.ipa}</span> : null}
@@ -425,14 +428,14 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
     front = (
       <div className="flex flex-col gap-3">
         <p className="text-body-sm text-muted">{t('review.fixSentence')}</p>
-        <p lang="en" className="text-subheading">
+        <p lang={lang} className="text-subheading">
           {content.front.prompt}
         </p>
       </div>
     );
     back = (
       <>
-        <p lang="en" className="font-medium">
+        <p lang={lang} className="font-medium">
           {content.back.answers[0]}
         </p>
         {content.back.writing_id ? (
@@ -440,7 +443,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
             href={`/escribir/historial/${content.back.writing_id}` as Route}
             className="self-start text-body-sm text-accent-text underline underline-offset-4"
           >
-            {t('review.openWriting')}: <span lang="en">{content.back.title}</span>
+            {t('review.openWriting')}: <span lang={lang}>{content.back.title}</span>
           </Link>
         ) : null}
       </>
@@ -450,7 +453,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
     front = (
       <form onSubmit={check} className="flex flex-col gap-3">
         {content.front.context ? (
-          <p lang="en" className="prose-reading text-muted">
+          <p lang={lang} className="prose-reading text-muted">
             {content.back.writing_id ? (
               <span lang="es" className="mr-1.5 text-body-sm">
                 {t('review.yourSentence')}:
@@ -460,14 +463,14 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
           </p>
         ) : null}
         {content.front.hint ? (
-          <p lang="en" className="tabular-nums text-body-sm font-medium text-accent-text">
+          <p lang={lang} className="tabular-nums text-body-sm font-medium text-accent-text">
             {content.front.hint}
           </p>
         ) : null}
-        <p lang="en" className="prose-reading flex flex-wrap items-baseline gap-x-1.5 gap-y-2">
+        <p lang={lang} className="prose-reading flex flex-wrap items-baseline gap-x-1.5 gap-y-2">
           <span>{prompt.before}</span>
           <Input
-            lang="en"
+            lang={lang}
             aria-label={t('tasks.answerLabel')}
             autoCapitalize="none"
             autoCorrect="off"
@@ -510,7 +513,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
         ) : null}
         <p>
           {t('tasks.correctAnswer')}:{' '}
-          <span lang="en" className="font-medium">
+          <span lang={lang} className="font-medium">
             {content.back.answers[0]}
           </span>
         </p>
@@ -522,7 +525,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
             href={`/escribir/historial/${content.back.writing_id}` as Route}
             className="self-start text-body-sm text-accent-text underline underline-offset-4"
           >
-            {t('review.openWriting')}: <span lang="en">{content.back.title}</span>
+            {t('review.openWriting')}: <span lang={lang}>{content.back.title}</span>
           </Link>
         ) : null}
         {content.back.grammar_id || content.back.uoe_id ? (
@@ -535,7 +538,7 @@ export function ReviewSession({ session, audioBase }: { session: SessionData; au
             className="self-start text-body-sm text-accent-text underline underline-offset-4"
           >
             {t(content.back.grammar_id ? 'review.openFicha' : 'review.openExercise')}:{' '}
-            <span lang="en">{content.back.title}</span>
+            <span lang={lang}>{content.back.title}</span>
           </Link>
         ) : null}
       </>

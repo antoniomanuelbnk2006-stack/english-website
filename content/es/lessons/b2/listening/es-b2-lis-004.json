@@ -702,7 +702,32 @@
       "end": 144.665
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s3",
+      "phrase": "funciona exactamente",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «funciona» and the one at the start of «exactamente» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s12",
+      "phrase": "Lo único",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Lo» and the one at the start of «único» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s20",
+      "phrase": "colaborar alguien",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «r» of «colaborar» joins the vowel of «alguien», so you hear «colabora ralguien»."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "banco de alimentos",
@@ -832,6 +857,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "«funciona exactamente» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s3",
+      "reference": "Para quien no lo sepa, ¿cómo funciona exactamente un banco de alimentos?",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "«Lo único» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s12",
+      "reference": "No. Lo único imprescindible son las ganas de ayudar y un poco de constancia.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s20"],
+      "rationale_es": {
+        "en": "In «colaborar alguien» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s20",
+      "reference": "¿Cómo puede colaborar alguien que no tenga tiempo?",
+      "accept_variants": []
     }
   ],
   "provenance": {

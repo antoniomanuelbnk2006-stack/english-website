@@ -975,7 +975,32 @@
       "end": 155.193
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s8",
+      "phrase": "no es",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «no» and the one at the start of «es» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s21",
+      "phrase": "si estamos",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «si» and the one at the start of «estamos» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s33",
+      "phrase": "Para hojear",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Para» and the one at the start of «hojear» merge into one syllable (the h is silent), so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "soporte",
@@ -1105,6 +1130,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«no es» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "La diferencia no es enorme, pero es constante.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s21"],
+      "rationale_es": { "en": "«si estamos» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s21",
+      "reference": "Con un libro, la mano sabe si estamos al principio o al final.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s33"],
+      "rationale_es": { "en": "«Para hojear» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s33",
+      "reference": "Para hojear o consultar algo rápido, la pantalla va muy bien.",
+      "accept_variants": []
     }
   ],
   "provenance": {

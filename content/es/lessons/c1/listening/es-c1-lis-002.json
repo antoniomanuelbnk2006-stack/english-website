@@ -1087,7 +1087,32 @@
       "end": 239.239
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s4",
+      "phrase": "cemento ocuparon",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «cemento» and the one at the start of «ocuparon» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s17",
+      "phrase": "Otra estrategia",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Otra» and the one at the start of «estrategia» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s30",
+      "phrase": "presión inmobiliaria",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «n» of «presión» joins the vowel of «inmobiliaria», so you hear «presió ninmobiliaria»."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "solar",
@@ -1217,6 +1242,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "«cemento ocuparon» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s4",
+      "reference": "El asfalto y el cemento ocuparon casi todo el espacio disponible.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s17"],
+      "rationale_es": { "en": "«Otra estrategia» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s17",
+      "reference": "Otra estrategia consiste en aprovechar espacios que ya existen: tejados, fachadas y solares abandonados.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s30"],
+      "rationale_es": {
+        "en": "In «presión inmobiliaria» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s30",
+      "reference": "Naturalmente, hay obstáculos. La falta de presupuesto, la presión inmobiliaria y el mantenimiento son los principales.",
+      "accept_variants": []
     }
   ],
   "provenance": {

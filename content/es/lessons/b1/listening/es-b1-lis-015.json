@@ -458,7 +458,32 @@
       "end": 79.194
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s3",
+      "phrase": "película en",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «película» and the one at the start of «en» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s12",
+      "phrase": "cuentan historias",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «n» of «cuentan» joins the vowel of «historias» (the h is silent), so you hear «cuenta nistorias»."
+      }
+    },
+    {
+      "ref": "s17",
+      "phrase": "si hacemos",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «si» and the one at the start of «hacemos» merge into one syllable (the h is silent), so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "palomitas",
@@ -573,6 +598,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "«película en» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s3",
+      "reference": "Para mí, ver una película en una pantalla grande es una experiencia especial.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s12"],
+      "rationale_es": {
+        "en": "In «cuentan historias» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s12",
+      "reference": "A mí me gustan las series porque cuentan historias largas.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s17"],
+      "rationale_es": { "en": "«si hacemos» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s17",
+      "reference": "¿Y si hacemos un plan mixto?",
+      "accept_variants": []
     }
   ],
   "provenance": {

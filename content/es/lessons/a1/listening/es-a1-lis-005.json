@@ -209,7 +209,24 @@
       "end": 27.523
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s8",
+      "phrase": "queso está",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «queso» and the one at the start of «está» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s10",
+      "phrase": "siete euros",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «siete» and the one at the start of «euros» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "en total",
@@ -324,6 +341,30 @@
         { "id": "c", "text": "Mucho gusto" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«queso está» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "Sí, el queso está allí.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "«siete euros» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s10",
+      "reference": "Son siete euros en total.",
+      "accept_variants": []
     }
   ],
   "provenance": {

@@ -673,7 +673,32 @@
       "end": 138.078
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s8",
+      "phrase": "sentado en",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «sentado» and the one at the start of «en» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s17",
+      "phrase": "me empujaba",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «me» and the one at the start of «empujaba» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s25",
+      "phrase": "que había",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «que» and the one at the start of «había» merge into one syllable (the h is silent), so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "orilla",
@@ -803,6 +828,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«sentado en» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "El primer día me vio sentado en la arena y no me preguntó nada.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s17"],
+      "rationale_es": { "en": "«me empujaba» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s17",
+      "reference": "Ella nunca me empujaba ni me obligaba; tenía una paciencia infinita.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s25"],
+      "rationale_es": { "en": "«que había» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s25",
+      "reference": "Nadie se creía que había aprendido en tan poco tiempo.",
+      "accept_variants": []
     }
   ],
   "provenance": {

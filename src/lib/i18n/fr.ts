@@ -1005,6 +1005,15 @@ export const fr: Dictionary = {
     allDoneTitle: 'Plus rien à étudier en {level}',
     allDoneBody: 'Tous les mots de ce niveau sont déjà en révision ou marqués comme connus.',
     shortcuts: 'Raccourcis : avec la traduction affichée, 1, 2 et 3 choisissent la réponse.',
+    lookupSubtitleEs:
+      'Cherche n’importe quel mot ou expression en espagnol, qu’il soit dans le paquet ou non. Les sens sont donnés en anglais, d’après Wiktionary, un dictionnaire libre.',
+    lookupLabelEs: 'Mot ou expression en espagnol',
+    lookupPlaceholderEs: 'madrugar, echar de menos…',
+    lookupInvalidEs:
+      'Écris un mot ou une expression en espagnol : seulement des lettres, des espaces et des tirets.',
+    lookupNotFoundBodyEs:
+      'Vérifie l’orthographe, accents compris. Wiktionary ne l’a pas comme mot espagnol.',
+    lookupMeaningsEs: 'Sens (en anglais)',
     lookupTitle: 'Dictionnaire complet',
     lookupSubtitle:
       'Cherche n’importe quel mot ou expression en anglais, qu’il soit dans le paquet ou non. Les données viennent de Wiktionary, un dictionnaire libre.',

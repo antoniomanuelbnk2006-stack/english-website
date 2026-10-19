@@ -614,7 +614,32 @@
       "end": 140.235
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s9",
+      "phrase": "Era una",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Era» and the one at the start of «una» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s15",
+      "phrase": "plantea un",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «plantea» and the one at the start of «un» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s19",
+      "phrase": "ayuda a",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «ayuda» and the one at the start of «a» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "cacao",
@@ -744,6 +769,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "«Era una» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s9",
+      "reference": "Durante décadas, solo la nobleza podía permitirse tomar chocolate caliente. Era una bebida de lujo.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s15"],
+      "rationale_es": { "en": "«plantea un» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s15",
+      "reference": "Esto plantea un problema serio: muchos agricultores cobran muy poco por su trabajo.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s19"],
+      "rationale_es": { "en": "«ayuda a» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s19",
+      "reference": "Conocerla nos ayuda a disfrutar más del sabor y a elegir con más conciencia.",
+      "accept_variants": []
     }
   ],
   "provenance": {

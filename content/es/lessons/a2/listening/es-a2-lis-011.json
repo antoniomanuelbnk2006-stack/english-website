@@ -176,7 +176,30 @@
       "end": 29.665
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s3",
+      "phrase": "nueva hora",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «nueva» and the one at the start of «hora» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s5",
+      "phrase": "pueden esperar",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «n» of «pueden» joins the vowel of «esperar», so you hear «puede nesperar»."
+      }
+    },
+    {
+      "ref": "s7",
+      "phrase": "billetes en",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «billetes» joins the vowel of «en», so you hear «billete sen»." }
+    }
+  ],
   "glossary": [
     {
       "lemma": "retraso",
@@ -291,6 +314,46 @@
         { "id": "c", "text": "En el tren mismo, antes de salir" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "«nueva hora» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s3",
+      "reference": "La nueva hora de salida es a las seis y cuarto.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s5"],
+      "rationale_es": {
+        "en": "In «pueden esperar» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s5",
+      "reference": "Los viajeros pueden esperar en el bar de la estación.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": {
+        "en": "In «billetes en» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "Pueden comprar billetes en las máquinas del centro.",
+      "accept_variants": []
     }
   ],
   "provenance": {

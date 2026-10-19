@@ -246,7 +246,32 @@
       "end": 43.378
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s2",
+      "phrase": "a hacer",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «a» and the one at the start of «hacer» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s6",
+      "phrase": "escribo hoy",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «escribo» and the one at the start of «hoy» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s8",
+      "phrase": "comprarle un",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «comprarle» and the one at the start of «un» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "sorpresa",
@@ -361,6 +386,42 @@
         { "id": "c", "text": "Que no haya pastel" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "«a hacer» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s2",
+      "reference": "Ya lo sé. Vamos a hacer una fiesta sorpresa.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "«escribo hoy» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s6",
+      "reference": "Yo les escribo hoy un mensaje.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«comprarle un» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "Podemos comprarle un libro de cocina. Le encanta cocinar.",
+      "accept_variants": []
     }
   ],
   "provenance": {

@@ -891,7 +891,32 @@
       "end": 149.383
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s8",
+      "phrase": "durante un",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «durante» and the one at the start of «un» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s19",
+      "phrase": "La explicación",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «La» and the one at the start of «explicación» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s28",
+      "phrase": "Pero un",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Pero» and the one at the start of «un» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "apagón",
@@ -1021,6 +1046,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«durante un» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "Creo que fue durante un apagón, hace un par de años.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s19"],
+      "rationale_es": { "en": "«La explicación» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s19",
+      "reference": "La explicación parece ser que la mente, cuando no recibe estímulos externos, empieza a buscarlos dentro.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s28"],
+      "rationale_es": { "en": "«Pero un» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s28",
+      "reference": "Pero un niño que nunca se aburre tampoco aprende a inventar sus propios juegos.",
+      "accept_variants": []
     }
   ],
   "provenance": {

@@ -398,7 +398,30 @@
       "end": 76.046
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s3",
+      "phrase": "preocupa a",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «preocupa» and the one at the start of «a» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s9",
+      "phrase": "se ha",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «se» and the one at the start of «ha» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s16",
+      "phrase": "El entrenador",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «l» of «El» joins the vowel of «entrenador», so you hear «E lentrenador»." }
+    }
+  ],
   "glossary": [
     {
       "lemma": "embalse",
@@ -513,6 +536,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "«preocupa a» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s3",
+      "reference": "La sequía preocupa a los agricultores del sur.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "«se ha» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s9",
+      "reference": "Hoy se ha inaugurado un nuevo parque en el barrio de San Roque.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s16"],
+      "rationale_es": {
+        "en": "In «El entrenador» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s16",
+      "reference": "El entrenador pidió calma, porque todavía quedan muchos partidos.",
+      "accept_variants": []
     }
   ],
   "provenance": {

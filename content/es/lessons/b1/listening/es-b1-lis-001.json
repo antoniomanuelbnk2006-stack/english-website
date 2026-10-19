@@ -399,7 +399,32 @@
       "end": 74.055
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s3",
+      "phrase": "hablarme un",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «hablarme» and the one at the start of «un» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s12",
+      "phrase": "podrías empezar",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «s» of «podrías» joins the vowel of «empezar», so you hear «podría sempezar»."
+      }
+    },
+    {
+      "ref": "s14",
+      "phrase": "llamaremos esta",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «s» of «llamaremos» joins the vowel of «esta», so you hear «llamaremo sesta»."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "punto fuerte",
@@ -533,6 +558,46 @@
         { "id": "c", "text": "Le van a llamar esta semana" }
       ],
       "answer": "c"
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "«hablarme un» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s3",
+      "reference": "Vamos a empezar. ¿Puedes hablarme un poco de tu experiencia?",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s12"],
+      "rationale_es": {
+        "en": "In «podrías empezar» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s12",
+      "reference": "Es bueno saberlo. Ahora, ¿cuándo podrías empezar si te elegimos?",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s14"],
+      "rationale_es": {
+        "en": "In «llamaremos esta» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s14",
+      "reference": "Muy bien. Hablaremos con los demás candidatos y te llamaremos esta semana.",
+      "accept_variants": []
     }
   ],
   "provenance": {

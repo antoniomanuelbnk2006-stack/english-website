@@ -192,7 +192,32 @@
       "end": 31.787
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s1",
+      "phrase": "trabajo en",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «trabajo» and the one at the start of «en» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s6",
+      "phrase": "voy al",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «voy» and the one at the start of «al» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s8",
+      "phrase": "Me acuesto",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Me» and the one at the start of «acuesto» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "despertarse",
@@ -307,6 +332,42 @@
         { "id": "c", "text": "Sola" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "«trabajo en» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s1",
+      "reference": "Me llamo Sofía y trabajo en una oficina.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "«voy al» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s6",
+      "reference": "Por la tarde, a veces voy al gimnasio.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«Me acuesto» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "Me acuesto a las once y media y duermo muy bien.",
+      "accept_variants": []
     }
   ],
   "provenance": {

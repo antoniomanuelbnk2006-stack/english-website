@@ -198,7 +198,30 @@
       "end": 30.655
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s3",
+      "phrase": "trabajar hasta",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «r» of «trabajar» joins the vowel of «hasta» (the h is silent), so you hear «trabaja rasta»."
+      }
+    },
+    {
+      "ref": "s6",
+      "phrase": "Podemos ir",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «Podemos» joins the vowel of «ir», so you hear «Podemo sir»." }
+    },
+    {
+      "ref": "s8",
+      "phrase": "cuando oigas",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «cuando» and the one at the start of «oigas» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "libre",
@@ -313,6 +336,46 @@
         { "id": "c", "text": "Aburrida de la película" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s3"],
+      "rationale_es": {
+        "en": "In «trabajar hasta» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s3",
+      "reference": "Tengo que trabajar hasta las siete.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s6"],
+      "rationale_es": {
+        "en": "In «Podemos ir» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s6",
+      "reference": "Podemos ir a cenar, si quieres.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«cuando oigas» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "Llámame cuando oigas este mensaje.",
+      "accept_variants": []
     }
   ],
   "provenance": {

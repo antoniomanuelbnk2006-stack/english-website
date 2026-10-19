@@ -609,7 +609,28 @@
       "end": 137.856
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s4",
+      "phrase": "hasta el",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «hasta» and the one at the start of «el» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s13",
+      "phrase": "presentar una",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «r» of «presentar» joins the vowel of «una», so you hear «presenta runa»." }
+    },
+    {
+      "ref": "s21",
+      "phrase": "gracias a",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «gracias» joins the vowel of «a», so you hear «gracia sa»." }
+    }
+  ],
   "glossary": [
     {
       "lemma": "requisito",
@@ -739,6 +760,46 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "«hasta el» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s4",
+      "reference": "Es cierto. Además, el equipo de diseño no nos envió las pantallas hasta el miércoles.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s13"],
+      "rationale_es": {
+        "en": "In «presentar una» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s13",
+      "reference": "Si acepta, podremos presentar una versión funcional el miércoles que viene.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s21"],
+      "rationale_es": {
+        "en": "In «gracias a» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s21",
+      "reference": "Sí. Y gracias a los dos por vuestra sinceridad. Sin ella, no podríamos mejorar.",
+      "accept_variants": []
     }
   ],
   "provenance": {

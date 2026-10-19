@@ -1071,7 +1071,30 @@
       "end": 170.289
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s7",
+      "phrase": "libros eran",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «s» of «libros» joins the vowel of «eran», so you hear «libro seran»." }
+    },
+    {
+      "ref": "s20",
+      "phrase": "que había",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «que» and the one at the start of «había» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s33",
+      "phrase": "la información",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «la» and the one at the start of «información» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "copista",
@@ -1201,6 +1224,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": {
+        "en": "In «libros eran» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "Los libros eran objetos de lujo, reservados a monasterios, universidades y grandes fortunas.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s20"],
+      "rationale_es": { "en": "«que había» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s20",
+      "reference": "Los contemporáneos se quejaban de que había demasiados libros y de que nadie podía leerlo todo.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s33"],
+      "rationale_es": { "en": "«la información» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s33",
+      "reference": "Las tecnologías de la información no son buenas ni malas por sí mismas.",
+      "accept_variants": []
     }
   ],
   "provenance": {

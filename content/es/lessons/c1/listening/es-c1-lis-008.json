@@ -1130,7 +1130,32 @@
       "end": 201.924
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s6",
+      "phrase": "viviendo en",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «viviendo» and the one at the start of «en» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s23",
+      "phrase": "la ironía",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «la» and the one at the start of «ironía» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s37",
+      "phrase": "Esa estructura",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Esa» and the one at the start of «estructura» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "juego de palabras",
@@ -1275,6 +1300,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "«viviendo en» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s6",
+      "reference": "Pueden pasar años viviendo en otro país y hablando con soltura.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s23"],
+      "rationale_es": { "en": "«la ironía» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s23",
+      "reference": "En algunos países, la ironía es constante, incluso en el trabajo.",
+      "accept_variants": []
+    },
+    {
+      "id": "q11",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s37"],
+      "rationale_es": { "en": "«Esa estructura» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s37",
+      "reference": "Esa estructura parece universal; lo que cambia es qué consideramos inesperado.",
+      "accept_variants": []
     }
   ],
   "provenance": {

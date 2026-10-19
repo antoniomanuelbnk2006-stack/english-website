@@ -195,7 +195,22 @@
       "end": 25.921
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s5",
+      "phrase": "sale a",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «sale» and the one at the start of «a» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s9",
+      "phrase": "Del andén",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «l» of «Del» joins the vowel of «andén», so you hear «De landén»." }
+    }
+  ],
   "glossary": [
     {
       "lemma": "billete",
@@ -310,6 +325,32 @@
         { "id": "c", "text": "Buenas noches" }
       ],
       "answer": "b"
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "«sale a» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s5",
+      "reference": "El tren sale a las nueve.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s9"],
+      "rationale_es": {
+        "en": "In «Del andén» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s9",
+      "reference": "Del andén tres.",
+      "accept_variants": []
     }
   ],
   "provenance": {

@@ -454,7 +454,28 @@
       "end": 70.187
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s9",
+      "phrase": "deja en",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «deja» and the one at the start of «en» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s17",
+      "phrase": "también un",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «n» of «también» joins the vowel of «un», so you hear «tambié nun»." }
+    },
+    {
+      "ref": "s21",
+      "phrase": "En ese",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «n» of «En» joins the vowel of «ese», so you hear «E nese»." }
+    }
+  ],
   "glossary": [
     {
       "lemma": "amueblado",
@@ -569,6 +590,46 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q7",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "«deja en» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s9",
+      "reference": "El dueño las deja en el piso.",
+      "accept_variants": []
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s17"],
+      "rationale_es": {
+        "en": "In «también un» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s17",
+      "reference": "Sí, y también un pequeño balcón con vistas al parque.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s21"],
+      "rationale_es": {
+        "en": "In «En ese» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s21",
+      "reference": "En ese caso me interesa.",
+      "accept_variants": []
     }
   ],
   "provenance": {

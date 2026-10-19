@@ -1105,7 +1105,32 @@
       "end": 229.261
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s7",
+      "phrase": "textos escritos",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «s» of «textos» joins the vowel of «escritos», so you hear «texto sescritos»."
+      }
+    },
+    {
+      "ref": "s16",
+      "phrase": "una huella",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «una» and the one at the start of «huella» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s27",
+      "phrase": "como una",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «como» and the one at the start of «una» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "glosa",
@@ -1237,6 +1262,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": {
+        "en": "In «textos escritos» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "Los primeros textos escritos en castellano son anotaciones al margen de manuscritos latinos, conocidas como glosas.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s16"],
+      "rationale_es": { "en": "«una huella» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s16",
+      "reference": "Las lenguas indígenas dejaron una huella profunda.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s27"],
+      "rationale_es": { "en": "«como una» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s27",
+      "reference": "Algunos lo ven como una amenaza para la pureza del idioma; otros, como una prueba de su vitalidad.",
+      "accept_variants": []
     }
   ],
   "provenance": {

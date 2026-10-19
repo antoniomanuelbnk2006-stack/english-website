@@ -1056,7 +1056,32 @@
       "end": 235.996
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s5",
+      "phrase": "Este esquema",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Este» and the one at the start of «esquema» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s16",
+      "phrase": "de un",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «de» and the one at the start of «un» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s31",
+      "phrase": "colaboración entre",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Linking: the final «n» of «colaboración» joins the vowel of «entre», so you hear «colaboració nentre»."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "excedente",
@@ -1186,6 +1211,44 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "«Este esquema» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s5",
+      "reference": "Este esquema tenía una premisa implícita: que los recursos eran inagotables.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s16"],
+      "rationale_es": { "en": "«de un» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s16",
+      "reference": "Los móviles contienen metales valiosos, pero menos de un quince por ciento se recicla correctamente.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s31"],
+      "rationale_es": {
+        "en": "In «colaboración entre» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s31",
+      "reference": "Y, en tercer lugar, depende de la colaboración entre consumidores, empresas y administraciones.",
+      "accept_variants": []
     }
   ],
   "provenance": {

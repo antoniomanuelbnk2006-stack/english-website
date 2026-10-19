@@ -1150,7 +1150,32 @@
       "end": 220.591
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s5",
+      "phrase": "se ha",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «se» and the one at the start of «ha» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s29",
+      "phrase": "de equipo",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «de» and the one at the start of «equipo» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s42",
+      "phrase": "imagina el",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «imagina» and the one at the start of «el» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "conciliar",
@@ -1295,6 +1320,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "«se ha» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s5",
+      "reference": "Lo que se ha impuesto es un modelo mixto.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s29"],
+      "rationale_es": { "en": "«de equipo» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s29",
+      "reference": "En cambio, las tareas creativas y de equipo funcionan peor a distancia.",
+      "accept_variants": []
+    },
+    {
+      "id": "q11",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s42"],
+      "rationale_es": { "en": "«imagina el» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s42",
+      "reference": "Para terminar, ¿cómo imagina el trabajo dentro de diez años?",
+      "accept_variants": []
     }
   ],
   "provenance": {

@@ -724,7 +724,32 @@
       "end": 132.734
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s7",
+      "phrase": "me había",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «me» and the one at the start of «había» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s19",
+      "phrase": "levanto a",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «levanto» and the one at the start of «a» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s31",
+      "phrase": "forme antes",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «forme» and the one at the start of «antes» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "despido",
@@ -854,6 +879,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "«me había» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "Siempre me había gustado hacer pan en casa.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s19"],
+      "rationale_es": { "en": "«levanto a» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s19",
+      "reference": "Me levanto a las cuatro de la mañana seis días a la semana.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s31"],
+      "rationale_es": { "en": "«forme antes» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s31",
+      "reference": "Que se forme antes de empezar y que no lo haga solo.",
+      "accept_variants": []
     }
   ],
   "provenance": {

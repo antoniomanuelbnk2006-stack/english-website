@@ -1114,7 +1114,28 @@
       "end": 234.688
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s7",
+      "phrase": "producir algo",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «r» of «producir» joins the vowel of «algo», so you hear «produci ralgo»." }
+    },
+    {
+      "ref": "s19",
+      "phrase": "que el",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «que» and the one at the start of «el» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s31",
+      "phrase": "En eso",
+      "type": "linking",
+      "explanation_es": { "en": "Linking: the final «n» of «En» joins the vowel of «eso», so you hear «E neso»." }
+    }
+  ],
   "glossary": [
     {
       "lemma": "discrepar",
@@ -1246,6 +1267,46 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q8",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s7"],
+      "rationale_es": {
+        "en": "In «producir algo» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s7",
+      "reference": "Como la capacidad de producir algo nuevo y valioso.",
+      "accept_variants": []
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s19"],
+      "rationale_es": { "en": "«que el» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s19",
+      "reference": "Sin embargo, no descarto que el público acabe valorando otras cosas.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s31"],
+      "rationale_es": {
+        "en": "In «En eso» the final consonant moves on to the next word: keep the word boundary where it belongs."
+      },
+      "type": "dictation",
+      "segment": "s31",
+      "reference": "En eso coincido plenamente. Hacen falta normas claras sobre qué datos pueden utilizarse y con qué condiciones.",
+      "accept_variants": []
     }
   ],
   "provenance": {

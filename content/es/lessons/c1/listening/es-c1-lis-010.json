@@ -1119,7 +1119,32 @@
       "end": 212.715
     }
   ],
-  "connected_speech": [],
+  "connected_speech": [
+    {
+      "ref": "s8",
+      "phrase": "que hay",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «que» and the one at the start of «hay» merge into one syllable (the h is silent), so the two words run together."
+      }
+    },
+    {
+      "ref": "s25",
+      "phrase": "Cuando esos",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «Cuando» and the one at the start of «esos» merge into one syllable, so the two words run together."
+      }
+    },
+    {
+      "ref": "s37",
+      "phrase": "empezado a",
+      "type": "linking",
+      "explanation_es": {
+        "en": "Sinalefa: the vowel at the end of «empezado» and the one at the start of «a» merge into one syllable, so the two words run together."
+      }
+    }
+  ],
   "glossary": [
     {
       "lemma": "ganadero",
@@ -1264,6 +1289,42 @@
           "max_words": 1
         }
       ]
+    },
+    {
+      "id": "q9",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "«que hay» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s8",
+      "reference": "Hoy, gracias a las leyes de protección, se calcula que hay más de trescientas manadas.",
+      "accept_variants": []
+    },
+    {
+      "id": "q10",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s25"],
+      "rationale_es": { "en": "«Cuando esos» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s25",
+      "reference": "Cuando esos animales se multiplican demasiado, destrozan cultivos y provocan accidentes de tráfico.",
+      "accept_variants": []
+    },
+    {
+      "id": "q11",
+      "focus": "decoding",
+      "phase": "post",
+      "prompt": "Escribe exactamente lo que oyes.",
+      "evidence": ["s37"],
+      "rationale_es": { "en": "«empezado a» sounds like one word (sinalefa): write the two words apart." },
+      "type": "dictation",
+      "segment": "s37",
+      "reference": "Algunas comarcas han empezado a probar un modelo distinto.",
+      "accept_variants": []
     }
   ],
   "provenance": {
