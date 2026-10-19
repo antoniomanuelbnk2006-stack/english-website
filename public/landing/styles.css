@@ -383,3 +383,48 @@ td { color: var(--muted); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Copia de «Hoy» que enseña el portátil a quien ya usa Señal (cookies aceptadas). */
+.rep { display: flex; flex-direction: column; width: 100%; height: 100%; overflow: hidden; background: var(--canvas); color: var(--text); text-align: left; }
+.rep-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: var(--nav-height); padding-inline: 32px; }
+.rep-nav img { width: auto; height: 28px; filter: brightness(0) invert(1); }
+.rep-links { display: flex; gap: 4px; color: var(--muted); font-size: 0.875rem; }
+.rep-links span { padding: 10px 16px; border-radius: 40px; }
+.rep-links .is-on { background: var(--surface-2); color: var(--accent-text); font-weight: 420; }
+.rep-level { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 0.875rem; }
+.rep-bars { display: flex; align-items: end; gap: 2px; height: 14px; }
+.rep-bars i { width: 3px; border-radius: 1px; background: var(--surface-2); }
+.rep-bars i:nth-child(1) { height: 30%; background: var(--accent); }
+.rep-bars i:nth-child(2) { height: 45%; background: var(--accent); }
+.rep-bars i:nth-child(3) { height: 60%; background: var(--accent); }
+.rep-bars i:nth-child(4) { height: 80%; }
+.rep-bars i:nth-child(5) { height: 100%; }
+.rep-body { display: grid; gap: 24px; align-content: start; width: 100%; max-width: calc(1200px + 2 * var(--gutter)); margin-inline: auto; padding: 32px var(--gutter); }
+.rep-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.rep-title { font: 480 2rem/1.15 var(--font-display); font-stretch: 112%; }
+.rep-date { margin-top: 6px; color: var(--muted); }
+.rep-pill { padding: 10px 20px; border: 1px solid var(--border-soft); border-radius: 32px; font-size: 0.875rem; white-space: nowrap; }
+.rep-card { padding: 32px; border-radius: 12px; background: var(--surface); }
+.rep-goal { display: flex; align-items: center; gap: 24px; }
+.rep-ring { width: 96px; flex: none; rotate: -90deg; }
+.rep-ring circle { fill: none; stroke: var(--surface-2); stroke-width: 7; }
+.rep-ring .rep-ring-fill { stroke: var(--accent); stroke-linecap: round; stroke-dasharray: 100; stroke-dashoffset: 56; }
+.rep-ring text { rotate: 90deg; transform-origin: 50px 50px; fill: var(--text); font: 400 22px var(--font-sans); text-anchor: middle; }
+.rep-sub { font: 480 1.3125rem/1.35 var(--font-display); font-stretch: 112%; }
+.rep-big { margin-top: 4px; font-size: 1.75rem; line-height: 1.2; }
+.rep-note { margin: 8px 0 24px; color: var(--muted); font-size: 0.875rem; }
+.rep-plan { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.rep-item { display: flex; align-items: center; gap: 16px; padding: 18px 16px; border-radius: 12px; background: var(--surface-2); }
+.rep-item svg { width: 20px; height: 20px; flex: none; fill: none; stroke: var(--text); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.rep-item b { display: block; font-weight: 420; }
+.rep-item span { color: var(--muted); font-size: 0.875rem; }
+.zoom-mini .rep-ring-fill { animation: rep-ring 900ms cubic-bezier(.2, .8, .2, 1); }
+@keyframes rep-ring { from { stroke-dashoffset: 100; } }
+@media (max-width: 1023px) {
+  .rep-links { display: none; }
+}
+@media (max-width: 640px) {
+  .rep-plan { grid-template-columns: 1fr; }
+  .rep-card { padding: 24px; }
+  .rep-nav { padding-inline: var(--gutter); }
+}

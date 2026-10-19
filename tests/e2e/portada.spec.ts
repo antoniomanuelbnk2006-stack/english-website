@@ -275,8 +275,29 @@ test('sin acercamiento, «Crea tu plan» va en su sitio y lleva paso a paso al r
   expect(errors).toEqual([]);
 });
 
+/** La cookie de la decisión sobre las cookies, ya tomada: `v1.all` o `v1.necessary`. */
+const consent = (value: string) => ({
+  cookies: [
+    {
+      name: 'senal_consent',
+      value,
+      domain: 'localhost',
+      path: '/',
+      expires: -1,
+      httpOnly: false,
+      secure: false,
+      sameSite: 'Lax' as const,
+    },
+  ],
+  origins: [],
+});
+
 test.describe('con el acercamiento', () => {
-  test.use({ contextOptions: { reducedMotion: 'no-preference' } });
+  // «Crea tu plan» es lo que ve quien no ha aceptado las cookies de preferencias.
+  test.use({
+    contextOptions: { reducedMotion: 'no-preference' },
+    storageState: consent('v1.necessary'),
+  });
 
   test('«Crea tu plan» aparece al final y se puede usar; la copia del portátil, no', async ({
     page,
@@ -313,5 +334,44 @@ test.describe('con el acercamiento', () => {
     await expect(page.getByRole('radio', { name: /Français/ })).toBeFocused();
     await expect(app).toHaveClass(/is-live/);
     expect(errors).toEqual([]);
+  });
+});
+
+test.describe('con el acercamiento, a quien ya usa Señal', () => {
+  // Con las cookies de preferencias aceptadas, el portátil enseña «Hoy» y se entra en la app.
+  test.use({ contextOptions: { reducedMotion: 'no-preference' }, storageState: consent('v1.all') });
+
+  const scrollTo = (page: Page, share: number) =>
+    page.evaluate((at) => {
+      const hero = document.querySelector<HTMLElement>('.zoom-hero')!;
+      window.scrollTo(0, hero.offsetTop + (hero.offsetHeight - window.innerHeight) * at);
+    }, share);
+
+  test('el portátil enseña «Hoy» y, al llenar la pantalla, se entra en la app', async ({
+    page,
+  }) => {
+    const errors = trackErrors(page);
+    await page.goto('/');
+    await expect(page.locator('.zoom-hero')).toHaveClass(/is-ready/);
+    const mini = page.locator('.zoom-mini');
+    await expect(mini.getByText('Plan de hoy')).toBeVisible();
+    await expect(mini.locator('[data-hoy-fecha]')).not.toHaveText('');
+    await expect(mini.getByText('¿Qué idioma quieres aprender?')).toHaveCount(0);
+    // «Crea tu plan» no está en el camino del tabulador.
+    await expect(page.locator('.zoom-app')).toHaveAttribute('inert', '');
+
+    await scrollTo(page, 0.3);
+    await scrollTo(page, 0.9);
+    // Sin sesión, «Hoy» pide entrar primero.
+    await expect(page).toHaveURL(/\/login$/);
+    expect(errors.filter((message) => !message.includes('401'))).toEqual([]);
+  });
+
+  test('saltar a otra parte de la portada no saca de ella', async ({ page }) => {
+    await page.goto('/landing/index.html#secciones');
+    await page.waitForTimeout(500);
+    await scrollTo(page, 1.5);
+    await page.waitForTimeout(500);
+    await expect(page).toHaveURL(/\/landing\/index\.html#secciones$/);
   });
 });

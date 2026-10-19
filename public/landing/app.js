@@ -604,8 +604,10 @@ if (form && contact) {
 }
 
 // Portada: acercamiento al portátil con el scroll (design-system/senal/pages/portada.md, «Hero»).
-// La escena se acerca a la pantalla del portátil hasta que la copia de «Hoy» que lleva dentro
-// ocupa la ventana; en ese momento se cambia por la misma pantalla a tamaño real, que se ve nítida.
+// La escena se acerca a la pantalla del portátil hasta que la copia que lleva dentro ocupa la
+// ventana; en ese momento se cambia por la misma pantalla a tamaño real, que se ve nítida: «Crea tu
+// plan». A quien ya usa Señal (cookies de preferencias aceptadas) el portátil le enseña «Hoy» y, al
+// llenar la ventana, la portada entra en la app (/hoy; sin sesión, la app pide entrar).
 // Solo se tocan propiedades del CSSOM (transform, opacity…): la CSP de la portada no admite
 // atributos style="…", pero sí esto.
 {
@@ -624,9 +626,26 @@ if (form && contact) {
     const copy = hero.querySelector('.zoom-copy');
     const hint = hero.querySelector('.zoom-hint');
 
-    // En el portátil va una copia de «Crea tu plan», como una imagen: sin ids ni nombres (no pueden
-    // repetirse en la página) y en un contenedor `inert`, así que no se puede tocar.
-    const replica = app.querySelector('.app-screen')?.cloneNode(true);
+    const returning = document.cookie
+      .split(';')
+      .some((pair) => pair.trim() === 'senal_consent=v1.all');
+    const today = document.querySelector('#pantalla-hoy');
+
+    // En el portátil va una copia de «Crea tu plan» (o de «Hoy»), como una imagen: sin ids ni
+    // nombres (no pueden repetirse en la página) y en un contenedor `inert`, así que no se puede tocar.
+    if (returning && today) {
+      const copyOfToday = today.content.cloneNode(true);
+      const date = copyOfToday.querySelector('[data-hoy-fecha]');
+      if (date) {
+        date.textContent = new Intl.DateTimeFormat('es-ES', {
+          weekday: 'long',
+          day: 'numeric',
+          month: 'long',
+        }).format(new Date());
+      }
+      mini.append(copyOfToday);
+    }
+    const replica = returning && today ? null : app.querySelector('.app-screen')?.cloneNode(true);
     if (replica) {
       for (const el of [replica, ...replica.querySelectorAll('*')]) {
         for (const attr of ['id', 'for', 'name', 'role', 'aria-live', 'aria-labelledby']) {
@@ -682,6 +701,9 @@ if (form && contact) {
 
       const pinned = fits && !reduced.matches;
       hero.classList.toggle('is-ready', pinned);
+      // A quien entra en «Hoy», «Crea tu plan» no le sale en el acercamiento: no se puede llegar a
+      // él con el tabulador. Sin acercamiento va en su sitio, como siempre.
+      app.inert = Boolean(returning && today && pinned);
       if (!pinned) {
         // Sin acercamiento el titular va antes que la escena: se le guarda al portátil su alto,
         // y si los dos no caben en una pantalla, la portada sigue hacia abajo.
@@ -707,10 +729,33 @@ if (form && contact) {
       geo = { w: s.width, h: s.height, cx, cy, end: 1 / k };
     };
 
-    const progress = () => {
+    // Sin recortar: por encima de 1 ya se ha pasado la portada (un enlace a #secciones, por ejemplo).
+    const rawProgress = () => {
       const r = hero.getBoundingClientRect();
-      return clamp(-r.top / (r.height - window.innerHeight));
+      return -r.top / (r.height - window.innerHeight);
     };
+    const progress = () => clamp(rawProgress());
+
+    // Entrar en «Hoy»: solo si se ha llegado al final del acercamiento bajando desde antes, en esta
+    // misma visita. Así, al volver con «Atrás» (el navegador deja el scroll abajo) o al saltar a
+    // otra parte de la portada con un enlace, no se vuelve a salir de ella.
+    let armed = false;
+    let leaving = false;
+    const watchEntry = () => {
+      if (!returning || !geo || leaving) return;
+      const raw = rawProgress();
+      if (raw < ZOOM_END - 0.05) armed = true;
+      else if (armed && raw >= ZOOM_END && raw < 1) {
+        leaving = true;
+        window.location.assign('/hoy');
+      }
+    };
+    window.addEventListener('pageshow', (event) => {
+      if (!event.persisted) return;
+      armed = false;
+      leaving = false;
+      watchEntry();
+    });
 
     let target = 0;
     let current = 0;
@@ -731,6 +776,8 @@ if (form && contact) {
       copy.style.visibility = t >= 1 ? 'hidden' : 'visible'; // fuera del orden del tabulador
       hint.style.opacity = String(1 - between(p, 0, 0.06));
 
+      // A quien entra en «Hoy» no se le cambia la copia por «Crea tu plan».
+      if (returning && today) return;
       const swap = between(p, ZOOM_END - 0.015, ZOOM_END);
       app.style.opacity = String(swap);
       app.classList.toggle('is-on', swap > 0);
@@ -751,6 +798,7 @@ if (form && contact) {
       if (!geo) return;
       target = progress();
       if (!frame) frame = requestAnimationFrame(loop);
+      watchEntry();
     };
 
     // Al cargar y cada vez que cambia lo que cabe: el tamaño de la ventana, las fuentes (el
@@ -760,6 +808,7 @@ if (form && contact) {
       if (!geo) return;
       current = target = progress();
       render(current);
+      if (rawProgress() < ZOOM_END - 0.05) armed = true;
     };
 
     // Con el teclado o un lector de pantalla se puede llegar a «Crea tu plan» antes de que se vea:
