@@ -222,7 +222,7 @@ test('sin acercamiento, «Crea tu plan» va en su sitio y lleva paso a paso al r
     'Tu primer simulacro del JLPT N5',
   ]);
   await expect(said('nota')).toHaveText(
-    'Estamos preparando las lecciones de japonés. De momento, en Señal están las de inglés.',
+    'Estamos preparando las lecciones de japonés. De momento, en Señal están las de inglés y español.',
   );
   await expect(summary.getByRole('link', { name: 'Empezar a estudiar' })).toHaveAttribute(
     'href',

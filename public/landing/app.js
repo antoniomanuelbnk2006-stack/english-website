@@ -473,10 +473,13 @@ if (form && contact) {
             ];
       list(out('pasos'), steps);
 
+      const NOTES = {
+        en: 'Las lecciones, los repasos y los simulacros de Cambridge de inglés ya están en Señal.',
+        es: 'Las lecciones, los repasos y los simulacros del DELE de español ya están en Señal.',
+      };
       out('nota').textContent =
-        code === 'en'
-          ? 'Las lecciones, los repasos y los simulacros de Cambridge de inglés ya están en Señal.'
-          : `Estamos preparando las lecciones de ${language.name}. De momento, en Señal están las de inglés.`;
+        NOTES[code] ??
+        `Estamos preparando las lecciones de ${language.name}. De momento, en Señal están las de inglés y español.`;
     };
 
     // --- Los pasos ---
