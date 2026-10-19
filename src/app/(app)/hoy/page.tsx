@@ -1,78 +1,31 @@
-import {
-  BookOpen,
-  GraduationCap,
-  Headphones,
-  Layers,
-  NotebookPen,
-  PencilRuler,
-  type LucideIcon,
-} from 'lucide-react';
-import type { Metadata, Route } from 'next';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { PageContainer, PageHeader, PageSections } from '@/components/ui/page';
 import { Panel, PanelTitle } from '@/components/ui/panel';
 import { RingProgress } from '@/components/ui/ring-progress';
 import { QuickLog } from '@/features/journal/components/quick-log';
-import { getMinutesOn } from '@/features/journal/server/queries';
 import { LevelMeter } from '@/features/level/components/level-meter';
 import { getSkillRatings } from '@/features/level/server/queries';
-import { getProfile } from '@/features/profile/server/queries';
-import { getDueCount } from '@/features/srs/server/queries';
+import { TODAY_SHORTCUTS } from '@/features/today/lib/shortcuts';
+import { getToday } from '@/features/today/server/today';
 import { getSessionOrRedirect } from '@/lib/auth';
-import { APP_TIME_ZONE, todayMadrid } from '@/lib/dates';
-import { intlLocale, type TranslationKey } from '@/lib/i18n';
-import { getLocale, getT } from '@/lib/i18n/server';
+import { getT } from '@/lib/i18n/server';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getT())('nav.today') };
 }
 
-const SHORTCUTS: { href: Route; icon: LucideIcon; title: TranslationKey; hint?: TranslationKey }[] =
-  [
-    { href: '/escuchar', icon: Headphones, title: 'today.listenCta', hint: 'today.listenHint' },
-    { href: '/leer', icon: BookOpen, title: 'today.readCta', hint: 'today.readHint' },
-    // El texto del repaso depende de cuántas tarjetas toquen ahora.
-    { href: '/repasar', icon: Layers, title: 'today.reviewCta' },
-    {
-      href: '/use-of-english',
-      icon: GraduationCap,
-      title: 'today.uoeCta',
-      hint: 'today.uoeHint',
-    },
-    { href: '/gramatica', icon: PencilRuler, title: 'today.grammarCta', hint: 'today.grammarHint' },
-    { href: '/diario', icon: NotebookPen, title: 'today.journalCta', hint: 'today.journalHint' },
-  ];
-
+// La portada enseña una copia de esta pantalla dentro del portátil (src/features/today/lib/preview.ts):
+// lo que cambie aquí, cámbialo también allí.
 export default async function TodayPage() {
   await getSessionOrRedirect();
-  const today = todayMadrid();
-  const [t, locale, profile, ratings, minutes, due] = await Promise.all([
-    getT(),
-    getLocale(),
-    getProfile(),
+  const [{ t, level, done, goal, dateLabel, reviewHint }, ratings] = await Promise.all([
+    getToday(),
     getSkillRatings(),
-    getMinutesOn(today),
-    getDueCount(),
   ]);
   // Lo primero es saber el nivel: de él depende lo que se enseña en cada sección.
-  if (!profile.declaredLevel) redirect('/nivel');
-
-  const reviewHint =
-    due === 0
-      ? t('today.reviewNone')
-      : due === 1
-        ? t('today.reviewDueOne')
-        : t('today.reviewDue', { n: due });
-
-  const done = Math.round(minutes);
-  const goal = profile.dailyGoalMin;
-  const dateLabel = new Intl.DateTimeFormat(intlLocale(locale), {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-    timeZone: APP_TIME_ZONE,
-  }).format(new Date());
+  if (!level) redirect('/nivel');
 
   return (
     <PageContainer>
@@ -82,10 +35,10 @@ export default async function TodayPage() {
         actions={
           <Link
             href="/nivel"
-            aria-label={`${t('today.yourLevel', { level: profile.declaredLevel })}. ${t('today.changeLevel')}`}
+            aria-label={`${t('today.yourLevel', { level })}. ${t('today.changeLevel')}`}
             className="btn btn-ghost tabular-nums"
           >
-            {t('today.yourLevel', { level: profile.declaredLevel })}
+            {t('today.yourLevel', { level })}
           </Link>
         }
       />
@@ -116,7 +69,7 @@ export default async function TodayPage() {
           <PanelTitle>{t('today.planTitle')}</PanelTitle>
           <p className="mt-2 text-body-sm text-muted">{t('today.planPending')}</p>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-            {SHORTCUTS.map(({ href, icon: Icon, title, hint }) => (
+            {TODAY_SHORTCUTS.map(({ href, icon: Icon, title, hint }) => (
               <li key={href}>
                 <Link
                   href={href}

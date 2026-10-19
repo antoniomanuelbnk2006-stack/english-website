@@ -31,8 +31,8 @@
 <main id="contenido">
   <!-- Portada con acercamiento al portátil (design-system/senal/pages/portada.md, «Hero»).
        Al hacer scroll la escena se acerca a la pantalla del portátil hasta que la pantalla ocupa
-       la ventana y se cambia por «Crea tu plan», un formulario de verdad. Con las cookies de
-       preferencias aceptadas, en cambio, el portátil enseña «Hoy» y se entra en la app. Lo mueve
+       la ventana y se cambia por «Crea tu plan», un formulario de verdad. A quien tiene la sesión
+       abierta, en cambio, el portátil le enseña su «Hoy» y se entra en la app. Lo mueve
        /landing/app.js. -->
   <section class="zoom-hero" aria-labelledby="titulo-portada">
     <div class="zoom-stage">
@@ -73,35 +73,39 @@
       </div>
       <p class="zoom-hint" aria-hidden="true">Desliza para entrar</p>
 
-      <!-- Lo que enseña el portátil a quien ya usa Señal (cookies de preferencias aceptadas): una
-           copia de «Hoy». Al llenar la ventana, la portada entra en la app (/hoy). Lo pone app.js. -->
+      <!-- Lo que enseña el portátil a quien tiene la sesión abierta: una copia de su «Hoy», con sus
+           datos y en su idioma (app.js los pide a /api/portada/hoy). Al llenar la ventana, la
+           portada entra en la app. Es src/app/(app)/hoy/page.tsx: lo que cambie allí, cámbialo aquí. -->
       <template id="pantalla-hoy">
         <div class="rep">
-          <div class="rep-nav">
+          <div class="rep-top">
             <img src="/landing/logo.png" alt="" width="114" height="35">
-            <div class="rep-links"><span class="is-on">Hoy</span><span>Escuchar</span><span>Leer</span><span>Repasar</span><span>Más</span></div>
-            <div class="rep-level"><span class="rep-bars"><i></i><i></i><i></i><i></i><i></i></span>B1</div>
+            <div class="rep-links" data-slot="links"></div>
+            <span class="rep-signal"><span class="rep-bars"><i></i><i></i><i></i><i></i><i></i><i></i></span><span data-slot="level"></span></span>
           </div>
-          <div class="rep-body">
+          <div class="rep-page">
             <div class="rep-head">
-              <div><p class="rep-title">Hoy</p><p class="rep-date" data-hoy-fecha></p></div>
-              <span class="rep-pill">Tu nivel: B1</span>
+              <div><p class="rep-title" data-slot="title"></p><p class="rep-date" data-slot="date"></p></div>
+              <span class="rep-pill" data-slot="levelPill"></span>
             </div>
-            <div class="rep-card rep-goal">
-              <svg class="rep-ring" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44"/><circle class="rep-ring-fill" cx="50" cy="50" r="44" pathLength="100"/><text x="50" y="57">20</text></svg>
-              <div><p class="rep-sub">Objetivo 45 min</p><p class="rep-big">20 de 45 min</p></div>
-            </div>
-            <div class="rep-card">
-              <p class="rep-sub">Plan de hoy</p>
-              <p class="rep-note">Lo que toca hoy, en el orden en que conviene hacerlo.</p>
-              <div class="rep-plan">
-                <div class="rep-item"><svg viewBox="0 0 24 24"><path d="M3 14v-2a9 9 0 0 1 18 0v2M3 14h3v6H3zM18 14h3v6h-3z"/></svg><div><b>Escucha intensiva</b><span>Ciclo completo con dictado diagnóstico</span></div></div>
-                <div class="rep-item"><svg viewBox="0 0 24 24"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg><div><b>Lectura</b><span>Texto con preguntas y velocidad lectora</span></div></div>
-                <div class="rep-item"><svg viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5zM2 13l10 5 10-5"/></svg><div><b>Repaso</b><span>12 tarjetas pendientes</span></div></div>
-                <div class="rep-item"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5zM6 12v5c3 2 9 2 12 0v-5"/></svg><div><b>Use of English</b><span>Práctica en formato de examen</span></div></div>
+            <div class="rep-sections">
+              <div class="rep-card rep-goal">
+                <span class="rep-ring"><svg viewBox="0 0 96 96"><circle cx="48" cy="48" r="44"/><circle class="rep-ring-fill" cx="48" cy="48" r="44" pathLength="100"/></svg><span data-slot="done"></span></span>
+                <div><p class="rep-sub" data-slot="goalTitle"></p><p class="rep-big" data-slot="goalProgress"></p><p class="rep-met" data-slot="goalMet"></p></div>
+              </div>
+              <div class="rep-card">
+                <p class="rep-sub" data-slot="quickTitle"></p>
+                <p class="rep-note" data-slot="quickHint"></p>
+                <div class="rep-quick" data-slot="quick"></div>
+              </div>
+              <div class="rep-card">
+                <p class="rep-sub" data-slot="planTitle"></p>
+                <p class="rep-note" data-slot="planNote"></p>
+                <div class="rep-plan" data-slot="plan"></div>
               </div>
             </div>
           </div>
+          <div class="rep-tabs" data-slot="tabs"></div>
         </div>
       </template>
 

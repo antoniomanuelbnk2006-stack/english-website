@@ -609,8 +609,8 @@ if (form && contact) {
 // Portada: acercamiento al portátil con el scroll (design-system/senal/pages/portada.md, «Hero»).
 // La escena se acerca a la pantalla del portátil hasta que la copia que lleva dentro ocupa la
 // ventana; en ese momento se cambia por la misma pantalla a tamaño real, que se ve nítida: «Crea tu
-// plan». A quien ya usa Señal (cookies de preferencias aceptadas) el portátil le enseña «Hoy» y, al
-// llenar la ventana, la portada entra en la app (/hoy; sin sesión, la app pide entrar).
+// plan». A quien tiene la sesión abierta el portátil le enseña su «Hoy» —con sus datos y en su
+// idioma— y, al llenar la ventana, la portada entra en la app (/hoy).
 // Solo se tocan propiedades del CSSOM (transform, opacity…): la CSP de la portada no admite
 // atributos style="…", pero sí esto.
 {
@@ -629,26 +629,10 @@ if (form && contact) {
     const copy = hero.querySelector('.zoom-copy');
     const hint = hero.querySelector('.zoom-hint');
 
-    const returning = document.cookie
-      .split(';')
-      .some((pair) => pair.trim() === 'senal_consent=v1.all');
-    const today = document.querySelector('#pantalla-hoy');
-
-    // En el portátil va una copia de «Crea tu plan» (o de «Hoy»), como una imagen: sin ids ni
-    // nombres (no pueden repetirse en la página) y en un contenedor `inert`, así que no se puede tocar.
-    if (returning && today) {
-      const copyOfToday = today.content.cloneNode(true);
-      const date = copyOfToday.querySelector('[data-hoy-fecha]');
-      if (date) {
-        date.textContent = new Intl.DateTimeFormat('es-ES', {
-          weekday: 'long',
-          day: 'numeric',
-          month: 'long',
-        }).format(new Date());
-      }
-      mini.append(copyOfToday);
-    }
-    const replica = returning && today ? null : app.querySelector('.app-screen')?.cloneNode(true);
+    // En el portátil va una copia de «Crea tu plan» (o de «Hoy», más abajo), como una imagen: sin
+    // ids ni nombres (no pueden repetirse en la página) y en un contenedor `inert`, así que no se
+    // puede tocar.
+    const replica = app.querySelector('.app-screen')?.cloneNode(true);
     if (replica) {
       for (const el of [replica, ...replica.querySelectorAll('*')]) {
         for (const attr of ['id', 'for', 'name', 'role', 'aria-live', 'aria-labelledby']) {
@@ -668,6 +652,8 @@ if (form && contact) {
     // Lo que hace falta para pintar un punto del recorrido; `null` si no hay acercamiento
     // (movimiento reducido, o el titular y el portátil no caben en una pantalla).
     let geo = null;
+    // Si el portátil enseña «Hoy» y el acercamiento acaba entrando en la app (ver más abajo).
+    let entering = false;
 
     // Deja la portada como la pinta la hoja de estilos, sin nada de un fotograma anterior.
     const clear = () => {
@@ -706,7 +692,7 @@ if (form && contact) {
       hero.classList.toggle('is-ready', pinned);
       // A quien entra en «Hoy», «Crea tu plan» no le sale en el acercamiento: no se puede llegar a
       // él con el tabulador. Sin acercamiento va en su sitio, como siempre.
-      app.inert = Boolean(returning && today && pinned);
+      app.inert = entering && pinned;
       if (!pinned) {
         // Sin acercamiento el titular va antes que la escena: se le guarda al portátil su alto,
         // y si los dos no caben en una pantalla, la portada sigue hacia abajo.
@@ -745,7 +731,7 @@ if (form && contact) {
     let armed = false;
     let leaving = false;
     const watchEntry = () => {
-      if (!returning || !geo || leaving) return;
+      if (!entering || !geo || leaving) return;
       const raw = rawProgress();
       if (raw < ZOOM_END - 0.05) armed = true;
       else if (armed && raw >= ZOOM_END && raw < 1) {
@@ -780,7 +766,7 @@ if (form && contact) {
       hint.style.opacity = String(1 - between(p, 0, 0.06));
 
       // A quien entra en «Hoy» no se le cambia la copia por «Crea tu plan».
-      if (returning && today) return;
+      if (entering) return;
       const swap = between(p, ZOOM_END - 0.015, ZOOM_END);
       app.style.opacity = String(swap);
       app.classList.toggle('is-on', swap > 0);
@@ -822,6 +808,130 @@ if (form && contact) {
       const top = window.scrollY + r.top + (ZOOM_END + 0.05) * (r.height - window.innerHeight);
       window.scrollTo({ top, behavior: 'instant' });
     });
+
+    // --- «Hoy», para quien tiene la sesión abierta ---
+    // La sesión no se puede leer desde aquí (sus cookies son httpOnly): se pide la copia de «Hoy»
+    // a la app, que la da con los datos y en el idioma de quien ha entrado, y sin sesión responde
+    // 204, sin nada. Mientras llega, la pantalla del portátil se queda apagada; si no llega, sigue
+    // «Crea tu plan». La copia es la de src/app/(app)/hoy/page.tsx (plantilla #pantalla-hoy).
+    const SVG = 'http://www.w3.org/2000/svg';
+    // Los iconos de la app (lucide), por destino.
+    const ICONS = {
+      '/hoy': [['path', { d: 'M8 2v3' }], ['path', { d: 'M16 2v3' }], ['rect', { x: '3', y: '3', width: '18', height: '18', rx: '2' }], ['path', { d: 'M3 9h18' }], ['path', { d: 'M8 13h.01' }], ['path', { d: 'M12 13h.01' }], ['path', { d: 'M16 13h.01' }], ['path', { d: 'M8 17h.01' }], ['path', { d: 'M12 17h.01' }], ['path', { d: 'M16 17h.01' }]],
+      '/escuchar': [['path', { d: 'M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3' }]],
+      '/leer': [['path', { d: 'M12 5v16' }], ['path', { d: 'M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z' }]],
+      '/repasar': [['path', { d: 'M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z' }], ['path', { d: 'M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12' }], ['path', { d: 'M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17' }]],
+      '/use-of-english': [['path', { d: 'M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z' }], ['path', { d: 'M22 10v6' }], ['path', { d: 'M6 12.5V16a6 3 0 0 0 12 0v-3.5' }]],
+      '/gramatica': [['path', { d: 'M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13' }], ['path', { d: 'm8 6 2-2' }], ['path', { d: 'm18 16 2-2' }], ['path', { d: 'm17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17' }], ['path', { d: 'M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z' }], ['path', { d: 'm15 5 4 4' }]],
+      '/diario': [['path', { d: 'M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4' }], ['path', { d: 'M2 6h4' }], ['path', { d: 'M2 10h4' }], ['path', { d: 'M2 14h4' }], ['path', { d: 'M2 18h4' }], ['path', { d: 'M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z' }]],
+      mas: [['circle', { cx: '12', cy: '12', r: '1' }], ['circle', { cx: '19', cy: '12', r: '1' }], ['circle', { cx: '5', cy: '12', r: '1' }]],
+    };
+    const NAV = ['/hoy', '/escuchar', '/leer', '/repasar'];
+    const icon = (name, className) => {
+      const svg = document.createElementNS(SVG, 'svg');
+      svg.setAttribute('viewBox', '0 0 24 24');
+      svg.setAttribute('class', className);
+      for (const [tag, attrs] of ICONS[name] ?? []) {
+        const shape = document.createElementNS(SVG, tag);
+        for (const [key, value] of Object.entries(attrs)) shape.setAttribute(key, value);
+        svg.append(shape);
+      }
+      return svg;
+    };
+    const node = (tag, className, text) => {
+      const el = document.createElement(tag);
+      if (className) el.className = className;
+      if (text !== undefined) el.textContent = String(text);
+      return el;
+    };
+    const textOf = (value) => (typeof value === 'string' || typeof value === 'number' ? String(value) : '');
+
+    // La copia, rellena solo con texto (`textContent`): nada de lo que llega se lee como HTML.
+    const buildToday = (data) => {
+      const template = document.querySelector('#pantalla-hoy');
+      const screen = template?.content.firstElementChild?.cloneNode(true);
+      if (!screen) return null;
+      const slot = (name) => screen.querySelector(`[data-slot="${name}"]`);
+      screen.lang = textOf(data.lang);
+      for (const name of ['level', 'title', 'date', 'levelPill', 'done', 'goalTitle', 'goalProgress', 'goalMet', 'quickTitle', 'quickHint', 'planTitle', 'planNote']) {
+        slot(name).textContent = textOf(data[name]);
+      }
+      screen.querySelectorAll('.rep-bars i').forEach((bar, index) => {
+        bar.classList.toggle('is-on', index < Number(data.bars));
+      });
+
+      const labels = [...data.nav.map(textOf), textOf(data.more)];
+      labels.forEach((label, index) => {
+        slot('links').append(node('span', index === 0 ? 'is-on' : '', label));
+        const tab = node('span', index === 0 ? 'rep-tab is-on' : 'rep-tab');
+        tab.append(icon(NAV[index] ?? 'mas', 'rep-tab-icon'), node('span', '', label));
+        slot('tabs').append(tab);
+      });
+
+      const quickIcons = ['/escuchar', '/leer'];
+      data.quickRows.forEach((label, index) => {
+        const row = node('div', 'rep-quick-row');
+        const name = node('span', 'rep-quick-label');
+        name.append(icon(quickIcons[index], 'rep-icon'), textOf(label));
+        // Los botones van en su propio bloque: si no caben al lado, bajan todos juntos.
+        const buttons = node('div', 'rep-mins');
+        for (const minutes of data.quickMinutes) {
+          buttons.append(node('span', 'rep-min', textOf(minutes)));
+        }
+        row.append(name, buttons);
+        slot('quick').append(row);
+      });
+
+      for (const item of data.plan) {
+        const card = node('div', 'rep-item');
+        const words = node('div');
+        words.append(node('b', '', textOf(item.title)), node('span', '', textOf(item.hint)));
+        card.append(icon(textOf(item.href), 'rep-icon'), words);
+        slot('plan').append(card);
+      }
+
+      const done = Number(data.done) || 0;
+      const goal = Number(data.goal) || 0;
+      const ratio = goal > 0 ? clamp(done / goal) : 0;
+      screen.querySelector('.rep-ring').classList.toggle('is-met', ratio >= 1);
+      return { screen, ring: screen.querySelector('.rep-ring-fill'), ratio };
+    };
+
+    const looksRight = (data) =>
+      data &&
+      typeof data.title === 'string' &&
+      ['nav', 'quickRows', 'quickMinutes', 'plan'].every((key) => Array.isArray(data[key]));
+
+    mini.classList.add('is-waiting');
+    const wake = () => mini.classList.remove('is-waiting');
+    const patience = window.setTimeout(wake, 1500);
+    fetch('/api/portada/hoy', {
+      credentials: 'same-origin',
+      cache: 'no-store',
+      headers: { Accept: 'application/json' },
+    })
+      .then((response) => (response.status === 200 ? response.json() : null))
+      .then((data) => {
+        if (!looksRight(data)) return;
+        const today = buildToday(data);
+        if (!today) return;
+        replica?.remove();
+        mini.append(today.screen);
+        // El anillo se llena al aparecer, como en la app.
+        requestAnimationFrame(() => {
+          today.ring.style.strokeDashoffset = String(100 * (1 - today.ratio));
+        });
+        entering = true;
+        app.classList.remove('is-on', 'is-live');
+        layout();
+      })
+      .catch(() => {
+        // Sin respuesta, la portada sigue con «Crea tu plan».
+      })
+      .finally(() => {
+        window.clearTimeout(patience);
+        wake();
+      });
 
     layout();
     window.addEventListener('scroll', onScroll, { passive: true });

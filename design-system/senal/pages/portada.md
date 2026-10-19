@@ -81,11 +81,16 @@ estudio de ese idioma, con sus tareas y su examen.
   - **La semana** (lunes a viernes la rutina, el sábado lo propio del objetivo —un simulacro si es
     para el examen—, el domingo libre) y **por dónde empezar** (semanas 1 y 2, primer mes, tercer
     mes: kana en japonés, pinyin y tonos en chino, sonidos y palabras frecuentes en los demás).
-- **Quien ya usa Señal entra en «Hoy».** Con las cookies de preferencias aceptadas, el portátil
-  enseña una copia de «Hoy» (con la fecha del día) en lugar de «Crea tu plan» y, cuando llena la
-  ventana, la portada entra en la app (`/hoy`; sin sesión, la app pide entrar). Solo si se ha
-  llegado bajando en la misma visita: al volver con «Atrás» o al saltar a #secciones no se sale.
-  Sin acercamiento (pantalla pequeña o movimiento reducido), «Crea tu plan» sigue en su sitio.
+- **Con la sesión abierta, se entra en tu «Hoy».** El portátil enseña una copia del «Hoy» de quien
+  ha entrado, con sus datos (nivel, minutos del día, objetivo, repaso pendiente) y en el idioma de
+  su interfaz, en lugar de «Crea tu plan»; cuando llena la ventana, la portada entra en la app
+  (`/hoy`). Los datos los da `/api/portada/hoy` (sin sesión responde 204 y sigue «Crea tu plan»);
+  la portada no puede leer la sesión porque sus cookies son httpOnly. La copia se monta con la
+  plantilla `#pantalla-hoy` y es la de `src/app/(app)/hoy/page.tsx`: lo que cambie allí, se cambia
+  aquí. No se incrusta la página real: la app no se deja enmarcar (`frame-ancestors 'none'`). Solo
+  se entra si se ha llegado bajando en la misma visita: al volver con «Atrás» o al saltar a
+  #secciones no se sale. Sin acercamiento (pantalla pequeña o movimiento reducido), «Crea tu plan»
+  sigue en su sitio.
 - **Se recuerda con las cookies de preferencias aceptadas.** Las respuestas y el paso se guardan
   en este navegador (`senal:plan`, en `localStorage`): al volver, el acercamiento acaba donde se
   dejó —la pregunta por la que se iba o el plan ya hecho— y no en la primera pregunta. Sin aceptar

@@ -1,6 +1,7 @@
 import { createServerClient } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
 import { CONFIRM_PATH } from '@/features/auth/lib/confirm';
+import { TODAY_PREVIEW_PATH } from '@/features/today/lib/paths';
 import { CONSENT_COOKIE, parseConsent, remembersSession } from '@/lib/consent';
 import { env } from '@/lib/env';
 import { SESSION_COOKIE_OPTIONS, sessionCookieOptions } from './cookies';
@@ -59,6 +60,15 @@ export async function updateSession(
   }
   // Sin sesión solo se ven la pantalla de acceso y la llegada desde el enlace del correo.
   if (!allowed && (isLogin || pathname === CONFIRM_PATH)) return response;
+
+  // La portada pregunta por la copia de «Hoy» a cualquiera que la visite: sin sesión no hay nada
+  // que dar, pero tampoco es un error (un 401 saldría en su consola).
+  if (!allowed && pathname === TODAY_PREVIEW_PATH) {
+    return withSessionCookies(
+      response,
+      new NextResponse(null, { status: 204, headers: { 'Cache-Control': 'private, no-store' } }),
+    );
+  }
 
   if (!allowed && pathname.startsWith('/api/')) {
     return withSessionCookies(

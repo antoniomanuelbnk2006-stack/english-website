@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 import { expectAccessible } from './axe';
-import { trackErrors } from './session';
+import { resetDatabase, signIn, trackErrors } from './session';
 
 // El titular de la portada: la palabra se escribe y se borra, un idioma tras otro
 // (design-system/senal/pages/portada.md, «Titular: la palabra que se escribe»).
@@ -275,29 +275,9 @@ test('sin acercamiento, «Crea tu plan» va en su sitio y lleva paso a paso al r
   expect(errors).toEqual([]);
 });
 
-/** La cookie de la decisión sobre las cookies, ya tomada: `v1.all` o `v1.necessary`. */
-const consent = (value: string) => ({
-  cookies: [
-    {
-      name: 'senal_consent',
-      value,
-      domain: 'localhost',
-      path: '/',
-      expires: -1,
-      httpOnly: false,
-      secure: false,
-      sameSite: 'Lax' as const,
-    },
-  ],
-  origins: [],
-});
-
 test.describe('con el acercamiento', () => {
-  // «Crea tu plan» es lo que ve quien no ha aceptado las cookies de preferencias.
-  test.use({
-    contextOptions: { reducedMotion: 'no-preference' },
-    storageState: consent('v1.necessary'),
-  });
+  // «Crea tu plan» es lo que ve quien no tiene la sesión abierta, aunque haya aceptado las cookies.
+  test.use({ contextOptions: { reducedMotion: 'no-preference' } });
 
   test('«Crea tu plan» aparece al final y se puede usar; la copia del portátil, no', async ({
     page,
@@ -313,8 +293,9 @@ test.describe('con el acercamiento', () => {
     await expect(mini).toHaveAttribute('inert', '');
     await expect(mini.getByText('¿Qué idioma quieres aprender?')).toHaveCount(1);
     await expect(mini.locator('[id]')).toHaveCount(0);
+    await expect(mini.locator('.rep')).toHaveCount(0);
 
-    // Al final del acercamiento está a la vista y responde.
+    // Al final del acercamiento está a la vista y responde, sin salir de la portada.
     await page.evaluate(() => {
       const hero = document.querySelector<HTMLElement>('.zoom-hero')!;
       window.scrollTo(0, hero.offsetTop + (hero.offsetHeight - window.innerHeight) * 0.9);
@@ -324,6 +305,7 @@ test.describe('con el acercamiento', () => {
     await expect(page.getByRole('radio', { name: /Français/ })).toBeChecked();
     // El examen del paso 3 ya es el del francés.
     await expect(page.locator('.zoom-app [data-exam]')).toHaveText('DELF y DALF');
+    await expect(page).toHaveURL(/\/$/);
 
     // Con el teclado se llega antes de verla: desde el último botón del titular, el tabulador
     // entra en el formulario y el recorrido avanza solo hasta que se ve.
@@ -337,9 +319,12 @@ test.describe('con el acercamiento', () => {
   });
 });
 
-test.describe('con el acercamiento, a quien ya usa Señal', () => {
-  // Con las cookies de preferencias aceptadas, el portátil enseña «Hoy» y se entra en la app.
-  test.use({ contextOptions: { reducedMotion: 'no-preference' }, storageState: consent('v1.all') });
+test.describe('con el acercamiento y la sesión abierta', () => {
+  // El portátil enseña el «Hoy» de quien ha entrado, con sus datos, y se entra en la app.
+  test.use({ contextOptions: { reducedMotion: 'no-preference' } });
+  test.beforeEach(async ({ request }) => {
+    await resetDatabase(request);
+  });
 
   const scrollTo = (page: Page, share: number) =>
     page.evaluate((at) => {
@@ -347,29 +332,38 @@ test.describe('con el acercamiento, a quien ya usa Señal', () => {
       window.scrollTo(0, hero.offsetTop + (hero.offsetHeight - window.innerHeight) * at);
     }, share);
 
-  test('el portátil enseña «Hoy» y, al llenar la pantalla, se entra en la app', async ({
+  test('el portátil enseña tu «Hoy», igual que la app, y al llenar la pantalla se entra en él', async ({
     page,
   }) => {
+    await signIn(page);
+    // Lo que dice «Hoy» de verdad: el nivel elegido y los minutos del día.
+    const level = (await page.locator('main a[href="/nivel"]').textContent())!.trim();
+    const minutes = (await page.getByText(/^\d+ de \d+ min$/).textContent())!.trim();
+
     const errors = trackErrors(page);
-    await page.goto('/');
+    await page.goto('/landing/index.html');
     await expect(page.locator('.zoom-hero')).toHaveClass(/is-ready/);
     const mini = page.locator('.zoom-mini');
-    await expect(mini.getByText('Plan de hoy')).toBeVisible();
-    await expect(mini.locator('[data-hoy-fecha]')).not.toHaveText('');
+    await expect(mini.locator('.rep-pill')).toHaveText(level);
+    await expect(mini.locator('.rep-big')).toHaveText(minutes);
+    await expect(mini.locator('.rep-signal')).toContainText(level.slice(-2));
+    await expect(mini.getByText('Registro rápido')).toHaveCount(1);
+    await expect(mini.locator('.rep-item')).toHaveCount(6);
+    await expect(mini.locator('[id]')).toHaveCount(0);
     await expect(mini.getByText('¿Qué idioma quieres aprender?')).toHaveCount(0);
     // «Crea tu plan» no está en el camino del tabulador.
     await expect(page.locator('.zoom-app')).toHaveAttribute('inert', '');
 
     await scrollTo(page, 0.3);
     await scrollTo(page, 0.9);
-    // Sin sesión, «Hoy» pide entrar primero.
-    await expect(page).toHaveURL(/\/login$/);
-    expect(errors.filter((message) => !message.includes('401'))).toEqual([]);
+    await expect(page).toHaveURL(/\/hoy$/);
+    expect(errors).toEqual([]);
   });
 
   test('saltar a otra parte de la portada no saca de ella', async ({ page }) => {
+    await signIn(page);
     await page.goto('/landing/index.html#secciones');
-    await page.waitForTimeout(500);
+    await expect(page.locator('.zoom-mini .rep')).toHaveCount(1);
     await scrollTo(page, 1.5);
     await page.waitForTimeout(500);
     await expect(page).toHaveURL(/\/landing\/index\.html#secciones$/);
