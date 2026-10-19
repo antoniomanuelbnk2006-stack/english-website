@@ -374,7 +374,7 @@
         { "t": "árboles", "l": "árbol", "p": "NOUN", "w": true, "sp": true, "s": 80.2, "e": 80.805 },
         { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 80.805, "e": 81.108 },
         { "t": "todas", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 81.108, "e": 81.562 },
-        { "t": "partes", "l": "parte", "p": "NOUN", "w": true, "s": 81.561, "e": 82.091 },
+        { "t": "partes", "l": "partir", "p": "VERB", "w": true, "s": 81.561, "e": 82.091 },
         { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
         { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 82.331, "e": 82.571 },
         { "t": "exactamente", "l": "exactamente", "p": "ADV", "w": true, "s": 82.571, "e": 83.531 },
@@ -986,7 +986,7 @@
         { "t": "estos", "l": "este", "p": "DET", "w": true, "sp": true, "s": 213.1, "e": 213.509 },
         { "t": "proyectos", "l": "proyecto", "p": "NOUN", "w": true, "sp": true, "s": 213.509, "e": 214.191 },
         { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 214.191, "e": 214.464 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 214.464, "e": 214.873 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 214.464, "e": 214.873 },
         { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 214.873, "e": 215.146 },
         { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true, "sp": true, "s": 215.146, "e": 215.623 },
         { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 215.623, "e": 215.896 },
@@ -1307,7 +1307,7 @@
     "iniciativa", "inmobiliario", "insecto", "interesante", "isla", "justo", "limitar", "llamarse", "local",
     "lugar", "lujo", "mantener", "mantenimiento", "mayor", "mejor", "mejorar", "menos", "metro", "miles",
     "modelo", "morir", "mucho", "más", "natural", "naturalmente", "necesidad", "necesitar", "no", "nuestro",
-    "observar", "obstáculo", "ocupar", "otro", "paciente", "pagar", "para", "parque", "parte", "pequeño",
+    "observar", "obstáculo", "ocupar", "otro", "paciente", "pagar", "para", "parque", "partir", "pequeño",
     "pero", "persona", "planificar", "plantar", "poco", "poder", "por", "porque", "pregunta", "preparar",
     "presión", "presupuesto", "primavera", "principal", "principalmente", "propio", "proteger", "proyecto",
     "que", "querer", "recomendar", "recuperar", "reducir", "refrescar", "refugio", "resultado", "rodear",
@@ -1319,11 +1319,11 @@
   ],
   "difficulty": 1430,
   "qa": {
-    "coverage_by_level": { "A1": 0.5756, "A2": 0.688, "B1": 0.8314, "B2": 0.876, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5775, "A2": 0.7171, "B1": 0.8566, "B2": 0.9341, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 12.4,
     "flesch_reading_ease": 66.1,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/c1/es-c1-lis-002/v1.m4a",

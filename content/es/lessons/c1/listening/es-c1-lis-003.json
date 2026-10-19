@@ -1270,16 +1270,13 @@
     "tener", "terminar", "tiempo", "todo", "tomar", "total", "totalmente", "un", "usar", "usted", "varios",
     "ver", "vida", "y", "yo", "él", "último"
   ],
-  "difficulty": 1461,
+  "difficulty": 1448,
   "qa": {
-    "coverage_by_level": { "A1": 0.6053, "A2": 0.7035, "B1": 0.865, "B2": 0.9039, "C1": 0.9693, "C2": 1 },
-    "off_level_lemmas": [
-      "corregir", "criterio", "diccionario", "dividir", "explicación", "fingir", "margen", "matiz", "medir",
-      "mover", "norma", "permiso", "seguridad"
-    ],
+    "coverage_by_level": { "A1": 0.6094, "A2": 0.771, "B1": 0.9059, "B2": 0.9407, "C1": 0.9816, "C2": 1 },
+    "off_level_lemmas": ["criterio", "diccionario", "explicación", "fingir", "margen", "matiz", "medir", "permiso", "seguridad"],
     "avg_sentence_words": 10.5,
     "flesch_reading_ease": 73.2,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/c1/es-c1-lis-003/v1.m4a",

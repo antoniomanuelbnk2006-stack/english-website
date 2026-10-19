@@ -108,7 +108,7 @@
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
             { "t": "buena", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
-            { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true },
             { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
             { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
             { "t": "avances", "l": "avanzar", "p": "VERB", "w": true, "sp": true },
@@ -166,7 +166,7 @@
             { "t": "debió", "l": "deber", "p": "VERB", "w": true },
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
-            { "t": "parte", "l": "parte", "p": "NOUN", "w": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true },
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
             { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
@@ -1195,7 +1195,7 @@
             { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
             { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true },
             { "t": "formó", "l": "formar", "p": "VERB", "w": true, "sp": true },
-            { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true },
             { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
             { "t": "nuestro", "l": "nuestro", "p": "DET", "w": true, "sp": true },
             { "t": "camino", "l": "caminar", "p": "VERB", "w": true },
@@ -1591,7 +1591,7 @@
     "mucho", "mundo", "muy", "más", "músico", "nacer", "naturalidad", "negligencia", "niño", "no", "noche",
     "nosotros", "notar", "nuestro", "nunca", "o", "objetar", "obra", "oculto", "ocurrir", "ofrecer",
     "oportunidad", "organización", "organizar", "otro", "padre", "palabra", "para", "paradoja", "parecer",
-    "parte", "pasar", "pedir", "penicilina", "pensamiento", "perder", "perfección", "periódico", "permanecer",
+    "partir", "pasar", "pedir", "penicilina", "pensamiento", "perder", "perfección", "periódico", "permanecer",
     "permitir", "pero", "persistir", "persona", "pesar", "piloto", "pintor", "plantear", "poder", "política",
     "poner", "por", "porque", "posible", "posterior", "practicar", "precisamente", "predicar", "pregunta",
     "preparar", "presentar", "probablemente", "probar", "productivo", "profesional", "pronunciarse", "propio",
@@ -1606,10 +1606,10 @@
   ],
   "difficulty": 1657,
   "qa": {
-    "coverage_by_level": { "A1": 0.5727, "A2": 0.6388, "B1": 0.8095, "B2": 0.8667, "C1": 0.9042, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5727, "A2": 0.6685, "B1": 0.826, "B2": 0.891, "C1": 0.9152, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 21.8,
     "flesch_reading_ease": 59.2,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   }
 }

@@ -1,0 +1,332 @@
+{
+  "id": "es-a1-rea-015",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u06",
+  "series": "es-a1-u06-postal",
+  "skill": "reading",
+  "genre": "email",
+  "title": "Una postal desde Granada",
+  "summary_es": {
+    "en": "A woman writes to her friend from Granada about the weather, the hotel and what she visits.",
+    "fr": "Une femme écrit à son amie depuis Grenade : la météo, l’hôtel et ses visites.",
+    "zh": "一位女士从格拉纳达写信给朋友，讲天气、酒店和参观的地方。",
+    "ja": "女性がグラナダから友人に、天気やホテル、訪れた場所について書きます。"
+  },
+  "topic": "travel",
+  "tags": ["viaje", "postal", "tiempo"],
+  "can_do": ["R-A1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["viaje", "hotel", "calor", "visitar"],
+  "est_minutes": 4,
+  "prediction_prompt": "¿Qué escribes en una postal?",
+  "pre_teach": ["hotel", "Alhambra"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Hola, Clara:",
+          "tokens": [
+            { "t": "Hola", "l": "hola", "p": "INTJ", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Clara", "l": "clara", "p": "PROPN", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "¡Estoy en Granada con mi hermano!",
+          "tokens": [
+            { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+            { "t": "Estoy", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "Granada", "l": "granada", "p": "PROPN", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "hermano", "l": "hermano", "p": "NOUN", "w": true },
+            { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Hace mucho calor y mucho sol.",
+          "tokens": [
+            { "t": "Hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "calor", "l": "calor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "sol", "l": "sol", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "El hotel es pequeño y está en el centro.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "hotel", "l": "hotel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "pequeño", "l": "pequeño", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "centro", "l": "centro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Hoy visitamos la Alhambra.",
+          "tokens": [
+            { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "visitamos", "l": "visitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "Alhambra", "l": "alhambra", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Es muy grande y muy bonita.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "grande", "l": "grande", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "bonita", "l": "bonito", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Mañana vamos a un restaurante típico.",
+          "tokens": [
+            { "t": "Mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "vamos", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "restaurante", "l": "restaurante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "típico", "l": "típico", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "El restaurante está cerca del hotel.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "restaurante", "l": "restaurante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "hotel", "l": "hotel", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s5",
+          "text": "La comida es muy buena.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "comida", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "buena", "l": "bueno", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Vuelvo a casa el domingo.",
+          "tokens": [
+            { "t": "Vuelvo", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "domingo", "l": "domingo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Un abrazo,",
+          "tokens": [
+            { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "abrazo", "l": "abrazo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Marta",
+          "tokens": [
+            { "t": "Marta", "l": "marta", "p": "PROPN", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Hace calor: weather with hacer",
+        "fr": "Hace calor : la météo avec hacer",
+        "zh": "hace calor：用 hacer 说天气",
+        "ja": "hace calor：hacer で天気を言う"
+      },
+      "explanation_es": { "en": "For the weather Spanish uses *hacer*: *Hace calor*, *Hace sol*." },
+      "refs": ["p2s1"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "hotel",
+      "surface": "hotel",
+      "pos": "noun",
+      "def_en": "lugar para dormir en un viaje",
+      "def_es": { "en": "hotel", "fr": "hôtel", "zh": "酒店", "ja": "ホテル" },
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "típico",
+      "surface": "típico",
+      "pos": "adjective",
+      "def_en": "normal en un lugar",
+      "def_es": { "en": "typical, traditional", "fr": "typique", "zh": "传统的", "ja": "伝統的な" },
+      "ref": "p3s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Por qué escribe Marta?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "She is travelling in Granada." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Busca trabajo en un hotel" },
+        { "id": "b", "text": "Está de viaje en Granada" },
+        { "id": "c", "text": "Quiere visitar a Clara" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Con quién está Marta?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "*Con mi hermano*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Con su amiga Clara" },
+        { "id": "b", "text": "Con su madre y su padre" },
+        { "id": "c", "text": "Con su hermano" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué tiempo hace?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "Hot and sunny." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Calor y sol" },
+        { "id": "b", "text": "Frío y lluvia" },
+        { "id": "c", "text": "Mucho viento" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "El hotel está lejos del centro.",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "It is in the centre." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué hacen mañana?",
+      "evidence": ["p3s3"],
+      "rationale_es": { "en": "A typical restaurant." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Visitan el centro con Clara" },
+        { "id": "b", "text": "Van a un restaurante" },
+        { "id": "c", "text": "Vuelven a casa en tren" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p4s1"],
+      "rationale_es": { "en": "*El domingo*." },
+      "type": "gap_fill",
+      "text": "Marta vuelve a casa el {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["domingo"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 58,
+  "lemmas": [
+    "a", "abrazo", "bonito", "bueno", "calor", "casa", "centro", "cerca", "comer", "con", "de", "domingo",
+    "el", "en", "estar", "grande", "hacer", "hermano", "hotel", "hoy", "ir", "mañana", "mi", "mucho", "muy",
+    "pequeño", "restaurante", "ser", "sol", "típico", "un", "visitar", "volver", "y"
+  ],
+  "difficulty": 661,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 4.8,
+    "flesch_reading_ease": 92.3,
+    "checked_at": "2026-10-19T13:04:11.667Z"
+  }
+}

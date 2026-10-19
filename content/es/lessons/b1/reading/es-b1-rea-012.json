@@ -1,0 +1,722 @@
+{
+  "id": "es-b1-rea-012",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u01",
+  "series": "es-b1-u01-companeros-piso",
+  "skill": "reading",
+  "genre": "opinion",
+  "title": "Vivir con compañeros de piso",
+  "summary_es": {
+    "en": "An opinion piece on the advantages and problems of sharing a flat.",
+    "fr": "Un texte d’opinion sur les avantages et les problèmes de la colocation.",
+    "zh": "一篇关于合租利弊的评论。",
+    "ja": "シェアハウスの良い点と問題点についての意見記事です。"
+  },
+  "topic": "city-housing",
+  "tags": ["vivienda", "convivencia", "opinión"],
+  "can_do": ["R-B1-01"],
+  "grammar_focus": ["es.b1.subjuntivo-presente"],
+  "vocab_focus": ["compartir", "alquiler", "convivencia", "norma"],
+  "est_minutes": 10,
+  "prediction_prompt": "¿Has compartido piso alguna vez? ¿Qué tal fue?",
+  "pre_teach": ["convivencia", "turno"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "En las grandes ciudades, compartir piso ya no es solo cosa de estudiantes.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "grandes", "l": "grande", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "compartir", "l": "compartir", "p": "VERB", "w": true, "sp": true },
+            { "t": "piso", "l": "piso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "cosa", "l": "cosa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "estudiantes", "l": "estudiante", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Con los alquileres tan altos, cada vez más personas de treinta o cuarenta años viven con desconocidos.",
+          "tokens": [
+            { "t": "Con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "alquileres", "l": "alquiler", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true },
+            { "t": "altos", "l": "alto", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "cuarenta", "l": "cuarenta", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "viven", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "desconocidos", "l": "desconocido", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Yo llevo cinco años haciéndolo y creo que tiene más ventajas de lo que parece.",
+          "tokens": [
+            { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "llevo", "l": "llevar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "haciéndolo", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "creo", "l": "creer", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "ventajas", "l": "ventaja", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "parece", "l": "parecer", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "La primera es evidente: el dinero.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "evidente", "l": "evidente", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Pago la mitad de lo que pagaría por un estudio, y vivo en un barrio que me gusta.",
+          "tokens": [
+            { "t": "Pago", "l": "pagar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mitad", "l": "mitad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "pagaría", "l": "pagar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "estudio", "l": "estudiar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "vivo", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "gusta", "l": "gustar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Además, gastamos menos en luz, internet y productos de limpieza.",
+          "tokens": [
+            { "t": "Además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "gastamos", "l": "gastar", "p": "VERB", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "luz", "l": "luz", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "internet", "l": "internet", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "productos", "l": "producto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "limpieza", "l": "limpieza", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "La segunda ventaja es la compañía.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "segunda", "l": "segundo", "p": "NUM", "w": false, "sp": true },
+            { "t": "ventaja", "l": "ventaja", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "compañía", "l": "compañía", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Después de un mal día en el trabajo, es agradable llegar a casa y encontrar a alguien con quien hablar.",
+          "tokens": [
+            { "t": "Después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "mal", "l": "mal", "p": "ADV", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "agradable", "l": "agradable", "p": "ADJ", "w": true, "sp": true },
+            { "t": "llegar", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "encontrar", "l": "encontrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "alguien", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true },
+            { "t": "hablar", "l": "hablar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Con algunos de mis compañeros he hecho amistades que duran todavía.",
+          "tokens": [
+            { "t": "Con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "compañeros", "l": "compañero", "p": "NOUN", "w": true, "sp": true },
+            { "t": "he", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "hecho", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "amistades", "l": "amistad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "duran", "l": "durar", "p": "VERB", "w": true, "sp": true },
+            { "t": "todavía", "l": "todavía", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Claro que no todo es fácil.",
+          "tokens": [
+            { "t": "Claro", "l": "claro", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "fácil", "l": "fácil", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "La convivencia exige paciencia y mucha comunicación.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "convivencia", "l": "convivencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "exige", "l": "exigir", "p": "VERB", "w": true, "sp": true },
+            { "t": "paciencia", "l": "paciencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "mucha", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "comunicación", "l": "comunicación", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Los problemas más comunes son siempre los mismos: la limpieza, el ruido y las visitas.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "problemas", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "comunes", "l": "común", "p": "ADJ", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mismos", "l": "mismo", "p": "DET", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "limpieza", "l": "limpieza", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ruido", "l": "ruido", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "visitas", "l": "visitar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Por eso es importante que todos acepten unas normas desde el primer día.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "importante", "l": "importante", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "acepten", "l": "aceptar", "p": "VERB", "w": true, "sp": true },
+            { "t": "unas", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "normas", "l": "norma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "En mi piso tenemos un calendario en la nevera con los turnos de limpieza.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "piso", "l": "piso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tenemos", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "calendario", "l": "calendario", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "nevera", "l": "nevera", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "turnos", "l": "turno", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "limpieza", "l": "limpieza", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "También hemos decidido que las visitas que se quedan a dormir no pueden repetirse más de dos noches por semana.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "hemos", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "decidido", "l": "decidir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "visitas", "l": "visitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "quedan", "l": "quedar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "dormir", "l": "dormir", "p": "VERB", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "repetirse", "l": "repetir", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "noches", "l": "noche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Puede parecer exagerado, pero evita muchas discusiones.",
+          "tokens": [
+            { "t": "Puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "parecer", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "exagerado", "l": "exagerar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "evita", "l": "evitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "discusiones", "l": "discusión", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Otra clave es el dinero común.",
+          "tokens": [
+            { "t": "Otra", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "clave", "l": "clave", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true, "sp": true },
+            { "t": "común", "l": "común", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Nosotros tenemos una caja en la cocina donde cada uno pone veinte euros al mes para comprar papel, jabón o aceite.",
+          "tokens": [
+            { "t": "Nosotros", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "tenemos", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "caja", "l": "caja", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cocina", "l": "cocina", "p": "NOUN", "w": true, "sp": true },
+            { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "uno", "l": "uno", "p": "NUM", "w": false, "sp": true },
+            { "t": "pone", "l": "poner", "p": "VERB", "w": true, "sp": true },
+            { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true },
+            { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "mes", "l": "mes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "comprar", "l": "comprar", "p": "VERB", "w": true, "sp": true },
+            { "t": "papel", "l": "papel", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "jabón", "l": "jabón", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "aceite", "l": "aceite", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Así nadie tiene que hacer cuentas cada vez que se acaba algo.",
+          "tokens": [
+            { "t": "Así", "l": "así", "p": "ADV", "w": true, "sp": true },
+            { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "cuentas", "l": "contar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "acaba", "l": "acabar", "p": "VERB", "w": true, "sp": true },
+            { "t": "algo", "l": "algo", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "Y una vez al mes cenamos juntos para hablar de cómo va todo, sin prisas y con buen humor.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "mes", "l": "mes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cenamos", "l": "cenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "juntos", "l": "junto", "p": "ADJ", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "hablar", "l": "hablar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true },
+            { "t": "va", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "prisas", "l": "prisa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "humor", "l": "humor", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s5",
+          "text": "Esas cenas se han convertido en una tradición.",
+          "tokens": [
+            { "t": "Esas", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "cenas", "l": "cenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "convertido", "l": "convertir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "tradición", "l": "tradición", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "Mi consejo para quien empiece es sencillo: antes de entrar en un piso, habla con las personas que viven allí y pregúntales cómo se organizan.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "consejo", "l": "consejo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true },
+            { "t": "empiece", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "sencillo", "l": "sencillo", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "entrar", "l": "entrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "piso", "l": "piso", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "habla", "l": "hablar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "viven", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "allí", "l": "allí", "p": "ADV", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "pregúntales", "l": "preguntar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "organizan", "l": "organizar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Es mejor que haya normas claras desde el principio que tener que inventarlas cuando ya hay un conflicto.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "haya", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "normas", "l": "norma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "claras", "l": "claro", "p": "ADJ", "w": true, "sp": true },
+            { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "tener", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "inventarlas", "l": "inventar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "conflicto", "l": "conflicto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Es importante que + subjunctive",
+        "fr": "Es importante que + subjonctif",
+        "zh": "es importante que + 虚拟式",
+        "ja": "es importante que + 接続法"
+      },
+      "explanation_es": {
+        "en": "After expressions like *es importante que* or *es mejor que* the verb goes in the subjunctive: *que todos acepten*, *que haya normas*."
+      },
+      "refs": ["p4s4", "p7s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "convivencia",
+      "surface": "convivencia",
+      "pos": "noun",
+      "def_en": "vivir juntos en el mismo lugar",
+      "def_es": { "en": "living together", "fr": "vie commune", "zh": "共同生活", "ja": "共同生活" },
+      "ref": "p4s2"
+    },
+    {
+      "lemma": "turno",
+      "surface": "turnos",
+      "pos": "noun",
+      "def_en": "momento en que le toca a cada persona",
+      "def_es": { "en": "turns, rota", "fr": "tours", "zh": "轮流", "ja": "当番" },
+      "ref": "p5s1"
+    },
+    {
+      "lemma": "exagerado",
+      "surface": "exagerado",
+      "pos": "adjective",
+      "def_en": "excesivo, más de lo normal",
+      "def_es": { "en": "excessive", "fr": "exagéré", "zh": "过分的", "ja": "大げさな" },
+      "ref": "p5s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Cuál es la opinión del autor sobre compartir piso?",
+      "evidence": ["p1s3"],
+      "rationale_es": { "en": "More advantages than it seems." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Es solo para estudiantes jóvenes sin dinero" },
+        { "id": "b", "text": "La valora de forma positiva" },
+        { "id": "c", "text": "Es una experiencia que no recomienda" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Por qué comparten piso personas de más edad?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "Rents are high." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque no quieren vivir con su familia" },
+        { "id": "b", "text": "Porque trabajan en la misma empresa" },
+        { "id": "c", "text": "Por lo caros que son los alquileres" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "attitude_opinion",
+      "phase": "read",
+      "prompt": "¿Qué valora el autor, además del ahorro?",
+      "evidence": ["p3s1"],
+      "rationale_es": { "en": "Company." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tener con quien hablar" },
+        { "id": "b", "text": "Vivir más cerca de la oficina" },
+        { "id": "c", "text": "No tener que limpiar la casa" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuáles son los problemas más comunes?",
+      "evidence": ["p4s3"],
+      "rationale_es": { "en": "Cleaning, noise and visitors." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "El dinero, la comida y los animales de compañía" },
+        { "id": "b", "text": "Tareas de casa, ruido y gente de fuera" },
+        { "id": "c", "text": "Los horarios, la música alta y la calefacción" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "En su piso las visitas pueden quedarse a dormir todas las noches.",
+      "evidence": ["p5s2"],
+      "rationale_es": { "en": "Two nights a week maximum." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué aconseja a quien vaya a compartir piso?",
+      "evidence": ["p7s1"],
+      "rationale_es": { "en": "Ask how they organise." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Buscar compañeros que tengan su misma edad" },
+        { "id": "b", "text": "Firmar un contrato aparte con cada compañero" },
+        { "id": "c", "text": "Informarse bien de las reglas de la casa" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p5s1"],
+      "rationale_es": { "en": "*En la nevera*." },
+      "type": "gap_fill",
+      "text": "Tienen un calendario en la {{1}} con los turnos.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["nevera"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 307,
+  "lemmas": [
+    "a", "acabar", "aceite", "aceptar", "además", "agradable", "algo", "algún", "allí", "alquiler", "alto",
+    "amistad", "antes", "así", "año", "barrio", "bueno", "cada", "caja", "calendario", "casa", "cenar",
+    "ciudad", "claro", "clave", "cocina", "compartir", "compañero", "compañía", "comprar", "comunicación",
+    "común", "con", "conflicto", "consejo", "contar", "convertir", "convivencia", "cosa", "creer", "cuando",
+    "cómo", "de", "decidir", "desconocido", "desde", "después", "dinero", "discusión", "donde", "dormir",
+    "durar", "día", "el", "empezar", "en", "encontrar", "entrar", "ese", "esto", "estudiante", "estudiar",
+    "euro", "evidente", "evitar", "exagerar", "exigir", "fácil", "gastar", "grande", "gustar", "haber",
+    "hablar", "hacer", "humor", "importante", "internet", "inventar", "ir", "jabón", "junto", "limpieza",
+    "llegar", "llevar", "luz", "mal", "mejor", "menos", "mes", "mi", "mismo", "mitad", "mucho", "más",
+    "nevera", "no", "noche", "norma", "nosotros", "o", "organizar", "otro", "paciencia", "pagar", "papel",
+    "para", "parecer", "pero", "persona", "piso", "poder", "poner", "por", "preguntar", "principio", "prisa",
+    "problema", "producto", "que", "quedar", "quien", "repetir", "ruido", "se", "semana", "sencillo", "ser",
+    "siempre", "sin", "solo", "también", "tan", "tener", "todavía", "todo", "trabajar", "tradición", "turno",
+    "un", "ventaja", "vez", "visitar", "vivir", "y", "ya", "yo", "él"
+  ],
+  "difficulty": 1067,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6812, "A2": 0.8926, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 13.3,
+    "flesch_reading_ease": 81,
+    "checked_at": "2026-10-19T13:16:14.675Z"
+  }
+}

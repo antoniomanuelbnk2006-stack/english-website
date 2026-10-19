@@ -316,7 +316,7 @@
       "tokens": [
         { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 63.888, "e": 64.166 },
         { "t": "gran", "l": "grande", "p": "ADJ", "w": true, "sp": true, "s": 64.166, "e": 64.513 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 64.512, "e": 64.928 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 64.512, "e": 64.928 },
         { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 64.929, "e": 65.137 },
         { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 65.137, "e": 65.345 },
         { "t": "ropa", "l": "ropa", "p": "NOUN", "w": true, "sp": true, "s": 65.345, "e": 65.692 },
@@ -1273,7 +1273,7 @@
     "implícito", "importante", "impuesto", "inagotable", "incentivo", "inmediato", "innecesario", "ir",
     "largo", "lema", "lento", "ley", "lineal", "lugar", "materia", "material", "mañana", "menos", "metal",
     "millón", "mitad", "moda", "modelo", "mucho", "mágico", "más", "móvil", "necesitar", "negocio", "ningún",
-    "no", "nosotros", "nuevo", "objetivo", "obligar", "ofrecer", "otro", "papel", "para", "parte", "pasado",
+    "no", "nosotros", "nuevo", "objetivo", "obligar", "ofrecer", "otro", "papel", "para", "partir", "pasado",
     "pasar", "país", "pero", "persona", "plantear", "plazo", "plástico", "poder", "por", "poseer", "pregunta",
     "preguntarse", "premiar", "premisa", "prenda", "prima", "producir", "producto", "proponer", "práctico",
     "próximo", "que", "querer", "qué", "reciclaje", "reciclar", "recurso", "red", "reducir", "referirse",
@@ -1284,13 +1284,13 @@
     "tonelada", "tras", "técnico", "un", "urbano", "usar", "valioso", "varios", "venta", "ver", "vez", "vida",
     "virgen", "y", "ya", "yo", "él"
   ],
-  "difficulty": 1442,
+  "difficulty": 1440,
   "qa": {
-    "coverage_by_level": { "A1": 0.5502, "A2": 0.6446, "B1": 0.8193, "B2": 0.8675, "C1": 0.988, "C2": 1 },
-    "off_level_lemmas": ["extraer", "implicar", "premiar", "recurso", "subrayar", "teoría"],
+    "coverage_by_level": { "A1": 0.5562, "A2": 0.6948, "B1": 0.8554, "B2": 0.9116, "C1": 0.99, "C2": 1 },
+    "off_level_lemmas": ["extraer", "implicar", "recurso", "subrayar", "teoría"],
     "avg_sentence_words": 11.7,
     "flesch_reading_ease": 67.7,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/c1/es-c1-lis-005/v1.m4a",

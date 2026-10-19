@@ -1,0 +1,1315 @@
+{
+  "id": "es-c1-rea-007",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "unit": "es-c1-u01",
+  "series": "es-c1-u01-periodismo-lento",
+  "skill": "reading",
+  "genre": "opinion",
+  "title": "Elogio del periodismo lento",
+  "summary_es": {
+    "en": "A journalist argues for slower, deeper reporting in an age of instant news.",
+    "fr": "Une journaliste plaide pour un journalisme plus lent et plus approfondi à l’ère de l’information instantanée.",
+    "zh": "一位记者主张在即时新闻时代做更慢、更深入的报道。",
+    "ja": "即時ニュースの時代に、より遅く深い報道を擁護する記者の論考です。"
+  },
+  "topic": "media",
+  "tags": ["medios", "periodismo", "opinión"],
+  "can_do": ["R-C1-01"],
+  "grammar_focus": ["es.c1.concesivas-y-finalidad"],
+  "vocab_focus": ["inmediatez", "rigor", "suscriptor", "reportaje"],
+  "est_minutes": 18,
+  "prediction_prompt": "¿Prefieres leer noticias al momento o con calma y más análisis?",
+  "pre_teach": ["inmediatez", "rigor"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Hace unos meses, una noticia falsa sobre la dimisión de un ministro dio la vuelta al país en menos de una hora.",
+          "tokens": [
+            { "t": "Hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "meses", "l": "mes", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "noticia", "l": "noticia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "falsa", "l": "falso", "p": "ADJ", "w": true, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "dimisión", "l": "dimisión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "ministro", "l": "ministro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "dio", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vuelta", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "país", "l": "país", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "hora", "l": "hora", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Varios medios la publicaron casi al mismo tiempo, citándose unos a otros, sin que nadie hubiera llamado al ministerio para confirmarla.",
+          "tokens": [
+            { "t": "Varios", "l": "varios", "p": "DET", "w": true, "sp": true },
+            { "t": "medios", "l": "medio", "p": "ADJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "publicaron", "l": "publicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "citándose", "l": "citarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "otros", "l": "otro", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "hubiera", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "llamado", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "ministerio", "l": "ministerio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "confirmarla", "l": "confirmar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Cuando llegó el desmentido, la información ya había sido compartida cientos de miles de veces.",
+          "tokens": [
+            { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "llegó", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "desmentido", "l": "desmentido", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "información", "l": "información", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "sido", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "compartida", "l": "compartir", "p": "VERB", "w": true, "sp": true },
+            { "t": "cientos", "l": "ciento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "miles", "l": "miles", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "veces", "l": "vez", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "El episodio, uno más entre muchos, resume bien la enfermedad que padece buena parte del periodismo actual: la obsesión por la inmediatez.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "episodio", "l": "episodio", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "uno", "l": "uno", "p": "NUM", "w": false, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "resume", "l": "resumir", "p": "VERB", "w": true, "sp": true },
+            { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "enfermedad", "l": "enfermedad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "padece", "l": "padecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "buena", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "periodismo", "l": "periodismo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "actual", "l": "actual", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "obsesión", "l": "obsesión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "inmediatez", "l": "inmediatez", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "La lógica es comprensible.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "lógica", "l": "lógica", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "comprensible", "l": "comprensible", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "En internet, quien publica primero se lleva las visitas, y las visitas se traducen en publicidad.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "internet", "l": "internet", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true },
+            { "t": "publica", "l": "publicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "primero", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "lleva", "l": "llevar", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "visitas", "l": "visitar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "visitas", "l": "visitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "traducen", "l": "traducir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "publicidad", "l": "publicidad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Las redacciones, cada vez más reducidas, compiten contra el reloj y contra millones de usuarios que difunden lo que ocurre en tiempo real desde sus teléfonos.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "redacciones", "l": "redacción", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "reducidas", "l": "reducir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "compiten", "l": "competir", "p": "VERB", "w": true, "sp": true },
+            { "t": "contra", "l": "contra", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "reloj", "l": "reloj", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "contra", "l": "contra", "p": "ADP", "w": true, "sp": true },
+            { "t": "millones", "l": "millón", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "usuarios", "l": "usuario", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "difunden", "l": "difundir", "p": "VERB", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "ocurre", "l": "ocurrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "real", "l": "real", "p": "ADJ", "w": true, "sp": true },
+            { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "teléfonos", "l": "teléfono", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "En ese contexto, detenerse a comprobar un dato parece un lujo que pocos medios pueden permitirse.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "contexto", "l": "contexto", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "detenerse", "l": "detener", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "comprobar", "l": "comprobar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "dato", "l": "dato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "lujo", "l": "lujo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "pocos", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "medios", "l": "medio", "p": "ADJ", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "permitirse", "l": "permitir", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Sin embargo, el precio de esa carrera es alto.",
+          "tokens": [
+            { "t": "Sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "embargo", "l": "embargo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "precio", "l": "precio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "carrera", "l": "carrera", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "alto", "l": "alto", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "No solo aumentan los errores, sino que se empobrece el contenido.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "aumentan", "l": "aumentar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "errores", "l": "error", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "empobrece", "l": "empobrecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "contenido", "l": "contenido", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Abundan los artículos de cinco párrafos que repiten lo que ya han dicho otros, las crónicas escritas a partir de un único comunicado de prensa y los titulares diseñados para provocar un clic más que para informar.",
+          "tokens": [
+            { "t": "Abundan", "l": "abundar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "artículos", "l": "artículo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true },
+            { "t": "párrafos", "l": "párrafo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "repiten", "l": "repetir", "p": "VERB", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "dicho", "l": "decir", "p": "VERB", "w": true, "sp": true },
+            { "t": "otros", "l": "otro", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "crónicas", "l": "crónico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "escritas", "l": "escribir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "partir", "l": "partir", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "único", "l": "único", "p": "ADJ", "w": true, "sp": true },
+            { "t": "comunicado", "l": "comunicarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "prensa", "l": "prensa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "titulares", "l": "titular", "p": "NOUN", "w": true, "sp": true },
+            { "t": "diseñados", "l": "diseñar", "p": "VERB", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "provocar", "l": "provocar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "clic", "l": "clic", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "informar", "l": "informar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "El lector termina saturado de noticias y, paradójicamente, peor informado.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "lector", "l": "lector", "p": "NOUN", "w": true, "sp": true },
+            { "t": "termina", "l": "terminar", "p": "VERB", "w": true, "sp": true },
+            { "t": "saturado", "l": "saturado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "noticias", "l": "noticia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "paradójicamente", "l": "paradójicamente", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "peor", "l": "peor", "p": "ADV", "w": true, "sp": true },
+            { "t": "informado", "l": "informar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "La precariedad de las redacciones agrava el problema.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "precariedad", "l": "precariedad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "redacciones", "l": "redacción", "p": "NOUN", "w": true, "sp": true },
+            { "t": "agrava", "l": "agravar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "problema", "l": "problema", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Muchos periodistas jóvenes trabajan con contratos temporales, cobran por pieza publicada y deben escribir varias noticias al día sobre temas que no conocen.",
+          "tokens": [
+            { "t": "Muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "periodistas", "l": "periodista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "jóvenes", "l": "joven", "p": "NOUN", "w": true, "sp": true },
+            { "t": "trabajan", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "contratos", "l": "contrato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "temporales", "l": "temporal", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cobran", "l": "cobrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "pieza", "l": "pieza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "publicada", "l": "publicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "deben", "l": "deber", "p": "VERB", "w": true, "sp": true },
+            { "t": "escribir", "l": "escribir", "p": "VERB", "w": true, "sp": true },
+            { "t": "varias", "l": "varios", "p": "DET", "w": true, "sp": true },
+            { "t": "noticias", "l": "noticia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "temas", "l": "tema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "conocen", "l": "conocer", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "En esas condiciones, es casi imposible salir a la calle, hacer llamadas o leer documentos con calma.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "esas", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "condiciones", "l": "condición", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "imposible", "l": "imposible", "p": "ADJ", "w": true, "sp": true },
+            { "t": "salir", "l": "salir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "calle", "l": "calle", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "llamadas", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "leer", "l": "leer", "p": "VERB", "w": true, "sp": true },
+            { "t": "documentos", "l": "documento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "calma", "l": "calma", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "El periodismo se convierte en una cadena de montaje.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "periodismo", "l": "periodismo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "convierte", "l": "convertirse", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cadena", "l": "cadena", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "montaje", "l": "montaje", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s5",
+          "text": "Nadie aprende así el oficio.",
+          "tokens": [
+            { "t": "Nadie", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "aprende", "l": "aprender", "p": "VERB", "w": true, "sp": true },
+            { "t": "así", "l": "así", "p": "ADV", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "oficio", "l": "oficio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Frente a esta tendencia ha surgido en distintos países lo que algunos llaman periodismo lento.",
+          "tokens": [
+            { "t": "Frente", "l": "frente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "tendencia", "l": "tendencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "surgido", "l": "surgir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "distintos", "l": "distinto", "p": "ADJ", "w": true, "sp": true },
+            { "t": "países", "l": "país", "p": "NOUN", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "llaman", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "periodismo", "l": "periodismo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "lento", "l": "lento", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Sus impulsores no reniegan de la actualidad, pero reivindican el tiempo necesario para investigar, contrastar fuentes y explicar el contexto.",
+          "tokens": [
+            { "t": "Sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "impulsores", "l": "impulsor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "reniegan", "l": "renegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "actualidad", "l": "actualidad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "reivindican", "l": "reivindicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "necesario", "l": "necesario", "p": "ADJ", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "investigar", "l": "investigar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "contrastar", "l": "contrastar", "p": "VERB", "w": true, "sp": true },
+            { "t": "fuentes", "l": "fuente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "explicar", "l": "explicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "contexto", "l": "contexto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Prefieren publicar menos piezas, pero más trabajadas: reportajes de largo recorrido, análisis que se actualizan a medida que avanza una historia o investigaciones que pueden tardar meses en ver la luz.",
+          "tokens": [
+            { "t": "Prefieren", "l": "preferir", "p": "VERB", "w": true, "sp": true },
+            { "t": "publicar", "l": "publicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "piezas", "l": "pieza", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "trabajadas", "l": "trabajar", "p": "VERB", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "reportajes", "l": "reportaje", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "largo", "l": "largo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "recorrido", "l": "recorrer", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "análisis", "l": "análisis", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "actualizan", "l": "actualizar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "medida", "l": "medida", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "avanza", "l": "avanzar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "historia", "l": "historia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "investigaciones", "l": "investigación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "tardar", "l": "tardar", "p": "VERB", "w": true, "sp": true },
+            { "t": "meses", "l": "mes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "ver", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "luz", "l": "luz", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Algunos de estos proyectos han demostrado que el modelo puede ser viable.",
+          "tokens": [
+            { "t": "Algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "estos", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "proyectos", "l": "proyecto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "demostrado", "l": "demostrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "modelo", "l": "modelo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "viable", "l": "viable", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Revistas que publican cuatro números al año, boletines que llegan por correo electrónico una vez por semana o medios digitales sostenidos por las cuotas de sus socios han conseguido miles de suscriptores dispuestos a pagar por un contenido que no encuentran en otro sitio.",
+          "tokens": [
+            { "t": "Revistas", "l": "revista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "publican", "l": "publicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "sp": true },
+            { "t": "números", "l": "número", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "año", "l": "año", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "boletines", "l": "boletín", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "llegan", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "correo", "l": "correo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "electrónico", "l": "electrónico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "medios", "l": "medio", "p": "ADJ", "w": true, "sp": true },
+            { "t": "digitales", "l": "digital", "p": "ADJ", "w": true, "sp": true },
+            { "t": "sostenidos", "l": "sostener", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cuotas", "l": "cuota", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "socios", "l": "socio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "conseguido", "l": "conseguir", "p": "VERB", "w": true, "sp": true },
+            { "t": "miles", "l": "miles", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "suscriptores", "l": "suscriptor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "dispuestos", "l": "dispuesto", "p": "ADJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "pagar", "l": "pagar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "contenido", "l": "contenido", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "encuentran", "l": "encontrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "sitio", "l": "sitio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Su principal activo no es la rapidez, sino la confianza.",
+          "tokens": [
+            { "t": "Su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "principal", "l": "principal", "p": "ADJ", "w": true, "sp": true },
+            { "t": "activo", "l": "activo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "rapidez", "l": "rapidez", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "confianza", "l": "confianza", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "Uno de los ejemplos más citados es una revista que dedicó dos años a investigar las condiciones de los trabajadores del campo en el sur de Europa.",
+          "tokens": [
+            { "t": "Uno", "l": "uno", "p": "NUM", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ejemplos", "l": "ejemplo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "citados", "l": "citar", "p": "VERB", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "revista", "l": "revista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "dedicó", "l": "dedicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "investigar", "l": "investigar", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "condiciones", "l": "condición", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "trabajadores", "l": "trabajador", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "campo", "l": "campo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sur", "l": "sur", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Europa", "l": "europa", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "El reportaje final, de más de cincuenta páginas, obligó a varias empresas a revisar sus contratos y fue traducido a cuatro idiomas.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "reportaje", "l": "reportaje", "p": "NOUN", "w": true, "sp": true },
+            { "t": "final", "l": "final", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cincuenta", "l": "cincuenta", "p": "NUM", "w": false, "sp": true },
+            { "t": "páginas", "l": "página", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "obligó", "l": "obligar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "varias", "l": "varios", "p": "DET", "w": true, "sp": true },
+            { "t": "empresas", "l": "empresa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "revisar", "l": "revisar", "p": "VERB", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "contratos", "l": "contrato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "traducido", "l": "traducir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "sp": true },
+            { "t": "idiomas", "l": "idioma", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Sus autores recibieron varios premios internacionales.",
+          "tokens": [
+            { "t": "Sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "autores", "l": "autor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "recibieron", "l": "recibir", "p": "VERB", "w": true, "sp": true },
+            { "t": "varios", "l": "varios", "p": "DET", "w": true, "sp": true },
+            { "t": "premios", "l": "premio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "internacionales", "l": "internacional", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s4",
+          "text": "Ninguna noticia de quinientas palabras habría conseguido un efecto parecido.",
+          "tokens": [
+            { "t": "Ninguna", "l": "ningún", "p": "DET", "w": true, "sp": true },
+            { "t": "noticia", "l": "noticia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "quinientas", "l": "quinientos", "p": "NUM", "w": false, "sp": true },
+            { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "sp": true },
+            { "t": "habría", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "conseguido", "l": "conseguir", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "efecto", "l": "efecto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "parecido", "l": "parecer", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "sentences": [
+        {
+          "id": "p8s1",
+          "text": "Conviene, no obstante, no idealizar.",
+          "tokens": [
+            { "t": "Conviene", "l": "convenir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "obstante", "l": "obstante", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "idealizar", "l": "idealizar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s2",
+          "text": "El periodismo lento corre el riesgo de convertirse en un producto para minorías con tiempo y dinero, mientras el resto de la población se informa a través de las redes sociales.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "periodismo", "l": "periodismo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "lento", "l": "lento", "p": "ADJ", "w": true, "sp": true },
+            { "t": "corre", "l": "correr", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "riesgo", "l": "riesgo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "convertirse", "l": "convertir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "producto", "l": "producto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "minorías", "l": "minoría", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "mientras", "l": "mientras", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "resto", "l": "resto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "población", "l": "población", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "informa", "l": "informar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "través", "l": "través", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "redes", "l": "red", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sociales", "l": "social", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s3",
+          "text": "Además, hay acontecimientos que exigen una respuesta inmediata: ante una catástrofe natural, por ejemplo, la información rápida y fiable puede salvar vidas.",
+          "tokens": [
+            { "t": "Además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "acontecimientos", "l": "acontecimiento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "exigen", "l": "exigir", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "respuesta", "l": "respuesta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "inmediata", "l": "inmediato", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "ante", "l": "ante", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "catástrofe", "l": "catástrofe", "p": "NOUN", "w": true, "sp": true },
+            { "t": "natural", "l": "natural", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "ejemplo", "l": "ejemplo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "información", "l": "información", "p": "NOUN", "w": true, "sp": true },
+            { "t": "rápida", "l": "rápido", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "fiable", "l": "fiable", "p": "ADJ", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "salvar", "l": "salvar", "p": "VERB", "w": true, "sp": true },
+            { "t": "vidas", "l": "vida", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s4",
+          "text": "Y no todos los temas necesitan meses de investigación.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "temas", "l": "tema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "necesitan", "l": "necesitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "meses", "l": "mes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "investigación", "l": "investigación", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "sentences": [
+        {
+          "id": "p9s1",
+          "text": "Por eso creo que la cuestión no es elegir entre rapidez y profundidad, sino recuperar una jerarquía de valores.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true },
+            { "t": "creo", "l": "creer", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cuestión", "l": "cuestión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "elegir", "l": "elegir", "p": "VERB", "w": true, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "rapidez", "l": "rapidez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "profundidad", "l": "profundidad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "recuperar", "l": "recuperar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "jerarquía", "l": "jerarquía", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "valores", "l": "valor", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p9s2",
+          "text": "Un medio puede y debe dar las noticias urgentes, siempre que distinga con claridad lo confirmado de lo que todavía no lo está.",
+          "tokens": [
+            { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "medio", "l": "medio", "p": "ADJ", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "debe", "l": "deber", "p": "VERB", "w": true, "sp": true },
+            { "t": "dar", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "noticias", "l": "noticia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "urgentes", "l": "urgente", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "distinga", "l": "distinguir", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "claridad", "l": "claridad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "confirmado", "l": "confirmar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "todavía", "l": "todavía", "p": "ADV", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p9s3",
+          "text": "Y debe reservar recursos para lo que solo él puede hacer: ir a los lugares, hablar con las personas, revisar documentos y contar historias que nadie más está contando.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "debe", "l": "deber", "p": "VERB", "w": true, "sp": true },
+            { "t": "reservar", "l": "reservar", "p": "VERB", "w": true, "sp": true },
+            { "t": "recursos", "l": "recurso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "él", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "lugares", "l": "lugar", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "hablar", "l": "hablar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "revisar", "l": "revisar", "p": "VERB", "w": true, "sp": true },
+            { "t": "documentos", "l": "documento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "contar", "l": "contar", "p": "VERB", "w": true, "sp": true },
+            { "t": "historias", "l": "historia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "contando", "l": "contar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "sentences": [
+        {
+          "id": "p10s1",
+          "text": "Los lectores también tenemos nuestra parte de responsabilidad.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "lectores", "l": "lector", "p": "NOUN", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "tenemos", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "nuestra", "l": "nuestro", "p": "DET", "w": true, "sp": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "responsabilidad", "l": "responsabilidad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p10s2",
+          "text": "Cada vez que compartimos un titular sin leer el artículo, o que preferimos el contenido gratuito y escandaloso al trabajo serio, estamos votando por un tipo de periodismo.",
+          "tokens": [
+            { "t": "Cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "compartimos", "l": "compartir", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "titular", "l": "titular", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "leer", "l": "leer", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "artículo", "l": "artículo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "preferimos", "l": "preferir", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "contenido", "l": "contenido", "p": "NOUN", "w": true, "sp": true },
+            { "t": "gratuito", "l": "gratuito", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "escandaloso", "l": "escandaloso", "p": "ADJ", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "serio", "l": "serio", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "estamos", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "votando", "l": "votar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "tipo", "l": "tipo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "periodismo", "l": "periodismo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p10s3",
+          "text": "Si queremos información de calidad, tendremos que estar dispuestos a dedicarle atención y, en muchos casos, a pagar por ella.",
+          "tokens": [
+            { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "queremos", "l": "querer", "p": "VERB", "w": true, "sp": true },
+            { "t": "información", "l": "información", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "calidad", "l": "calidad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "tendremos", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "estar", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "dispuestos", "l": "dispuesto", "p": "ADJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "dedicarle", "l": "dedicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "atención", "l": "atención", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "casos", "l": "caso", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "pagar", "l": "pagar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "ella", "l": "ella", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "sentences": [
+        {
+          "id": "p11s1",
+          "text": "El periodismo lento no es una moda nostálgica, sino una recuperación de lo esencial del oficio.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "periodismo", "l": "periodismo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "lento", "l": "lento", "p": "ADJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "moda", "l": "moda", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nostálgica", "l": "nostálgico", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "recuperación", "l": "recuperación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "esencial", "l": "esencial", "p": "ADJ", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "oficio", "l": "oficio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p11s2",
+          "text": "Al fin y al cabo, la primera obligación de un periodista no es ser el primero, sino tener razón.",
+          "tokens": [
+            { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "fin", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "cabo", "l": "cabo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "obligación", "l": "obligación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "periodista", "l": "periodista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primero", "l": "primero", "p": "NUM", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "tener", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "razón", "l": "razón", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p11s3",
+          "text": "Y para tener razón, casi siempre, hace falta tiempo.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "tener", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "razón", "l": "razón", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "siempre", "l": "siempre", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "falta", "l": "falta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Concession and condition: siempre que, aunque",
+        "fr": "Concession et condition : siempre que, aunque",
+        "zh": "让步和条件：siempre que, aunque",
+        "ja": "譲歩と条件：siempre que, aunque"
+      },
+      "explanation_es": {
+        "en": "*Siempre que* + subjunctive sets a condition (*siempre que distinga…*); *no solo… sino que* adds a stronger point."
+      },
+      "refs": ["p9s2", "p3s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "desmentido",
+      "surface": "desmentido",
+      "pos": "noun",
+      "def_en": "declaración que niega una información",
+      "def_es": { "en": "denial", "fr": "démenti", "zh": "辟谣", "ja": "否定声明" },
+      "ref": "p1s3"
+    },
+    {
+      "lemma": "redacción",
+      "surface": "redacciones",
+      "pos": "noun",
+      "def_en": "equipo de periodistas de un medio",
+      "def_es": { "en": "newsrooms", "fr": "rédactions", "zh": "编辑部", "ja": "編集部" },
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "renegar",
+      "surface": "reniegan",
+      "pos": "verb",
+      "def_en": "rechazar algo que antes se aceptaba",
+      "def_es": { "en": "to reject, to disown", "fr": "renier", "zh": "否认，摒弃", "ja": "否定する" },
+      "ref": "p5s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Qué defiende la autora?",
+      "evidence": ["p5s1"],
+      "rationale_es": { "en": "Slower journalism." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La desaparición de los medios digitales" },
+        { "id": "b", "text": "Un periodismo que se tome su tiempo" },
+        { "id": "c", "text": "Que solo se publiquen noticias urgentes" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué ilustra la anécdota de la dimisión falsa?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "The danger of not checking." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La rapidez del Gobierno al responder" },
+        { "id": "b", "text": "La honradez de los ministros españoles" },
+        { "id": "c", "text": "Los riesgos de publicar sin comprobar" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Por qué tienen prisa los medios por publicar?",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "Visits mean ad revenue." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Las visitas generan ingresos publicitarios" },
+        { "id": "b", "text": "Los lectores pagan bastante más por la rapidez" },
+        { "id": "c", "text": "Las leyes obligan a publicar enseguida" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Qué paradoja señala la autora?",
+      "evidence": ["p3s4"],
+      "rationale_es": { "en": "More news, less informed." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Hay menos medios, pero más periodistas" },
+        { "id": "b", "text": "Sobra información y falta comprensión" },
+        { "id": "c", "text": "Las noticias son gratis, pero cuestan más" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuál es el principal valor de los proyectos de periodismo lento?",
+      "evidence": ["p6s3"],
+      "rationale_es": { "en": "Trust." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La velocidad con que publican sus noticias" },
+        { "id": "b", "text": "La publicidad que consiguen" },
+        { "id": "c", "text": "La confianza de sus lectores" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "La autora cree que el periodismo lento no tiene ningún inconveniente.",
+      "evidence": ["p8s1"],
+      "rationale_es": { "en": "She warns against idealising it." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q7",
+      "focus": "attitude_opinion",
+      "phase": "read",
+      "prompt": "¿Qué responsabilidad atribuye a los lectores?",
+      "evidence": ["p10s2"],
+      "rationale_es": { "en": "Their habits shape journalism." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Su forma de consumir noticias influye en el periodismo" },
+        { "id": "b", "text": "Deben escribir cartas a los periódicos cada semana" },
+        { "id": "c", "text": "No tienen ninguna responsabilidad en el problema" }
+      ],
+      "answer": "a"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 706,
+  "lemmas": [
+    "a", "abundar", "acontecimiento", "activo", "actual", "actualidad", "actualizar", "además", "agravar",
+    "algo", "algún", "alto", "ante", "análisis", "aprender", "artículo", "así", "atención", "aumentar",
+    "autor", "avanzar", "año", "bien", "boletín", "bueno", "cabo", "cada", "cadena", "calidad", "calle",
+    "calma", "campo", "carrera", "casi", "caso", "catástrofe", "ciento", "citar", "citarse", "claridad",
+    "clic", "cobrar", "compartir", "competir", "comprensible", "comprobar", "comunicarse", "con", "condición",
+    "confianza", "confirmar", "conocer", "conseguir", "contar", "contenido", "contexto", "contra",
+    "contrastar", "contrato", "convenir", "convertir", "convertirse", "correo", "correr", "creer", "crónico",
+    "cuando", "cuestión", "cuota", "dar", "dato", "de", "deber", "decir", "dedicar", "demostrar", "desde",
+    "desmentido", "detener", "difundir", "digital", "dimisión", "dinero", "diseñar", "dispuesto", "distinguir",
+    "distinto", "documento", "día", "efecto", "ejemplo", "el", "electrónico", "elegir", "ella", "embargo",
+    "empobrecer", "empresa", "en", "encontrar", "enfermedad", "entre", "episodio", "error", "escandaloso",
+    "escribir", "ese", "esencial", "estar", "este", "esto", "exigir", "explicar", "falso", "falta", "fiable",
+    "fin", "final", "frente", "fuente", "gratuito", "haber", "hablar", "hacer", "historia", "hora",
+    "idealizar", "idioma", "imposible", "impulsor", "información", "informar", "inmediatez", "inmediato",
+    "internacional", "internet", "investigación", "investigar", "ir", "jerarquía", "joven", "largo", "lector",
+    "leer", "lento", "llamarse", "llegar", "llevar", "lugar", "lujo", "luz", "lógica", "medida", "medio",
+    "menos", "mes", "mientras", "miles", "millón", "ministerio", "ministro", "minoría", "mismo", "moda",
+    "modelo", "montaje", "mucho", "más", "natural", "necesario", "necesitar", "ningún", "no", "nostálgico",
+    "noticia", "nuestro", "número", "o", "obligación", "obligar", "obsesión", "obstante", "ocurrir", "oficio",
+    "otro", "padecer", "pagar", "palabra", "para", "paradójicamente", "parecer", "partir", "país", "peor",
+    "periodismo", "periodista", "permitir", "pero", "persona", "pieza", "población", "poco", "poder", "por",
+    "precariedad", "precio", "preferir", "premio", "prensa", "principal", "problema", "producto",
+    "profundidad", "provocar", "proyecto", "publicar", "publicidad", "página", "párrafo", "que", "querer",
+    "quien", "rapidez", "razón", "real", "recibir", "recorrer", "recuperación", "recuperar", "recurso", "red",
+    "redacción", "reducir", "reivindicar", "reloj", "renegar", "repetir", "reportaje", "reservar",
+    "responsabilidad", "respuesta", "resto", "resumir", "revisar", "revista", "riesgo", "rápido", "salir",
+    "salvar", "saturado", "se", "semana", "ser", "serio", "si", "siempre", "sin", "sino", "sitio", "sobre",
+    "social", "socio", "solo", "sostener", "su", "sur", "surgir", "suscriptor", "también", "tardar",
+    "teléfono", "tema", "temporal", "tendencia", "tener", "terminar", "tiempo", "tipo", "titular", "todavía",
+    "todo", "trabajador", "trabajar", "traducir", "través", "un", "urgente", "usuario", "valor", "varios",
+    "ver", "vez", "viable", "vida", "visitar", "volver", "votar", "y", "ya", "él", "único"
+  ],
+  "difficulty": 1474,
+  "qa": {
+    "coverage_by_level": { "A1": 0.5706, "A2": 0.6974, "B1": 0.8991, "B2": 0.9395, "C1": 0.9784, "C2": 1 },
+    "off_level_lemmas": [
+      "desmentido", "difundir", "dimisión", "inmediatez", "investigar", "nostálgico", "obsesión", "rapidez",
+      "recurso", "redacción", "reivindicar", "sostener"
+    ],
+    "avg_sentence_words": 17.6,
+    "flesch_reading_ease": 63.1,
+    "checked_at": "2026-10-19T13:37:43.885Z"
+  }
+}

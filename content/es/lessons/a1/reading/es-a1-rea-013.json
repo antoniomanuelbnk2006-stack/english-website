@@ -1,0 +1,316 @@
+{
+  "id": "es-a1-rea-013",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u04",
+  "series": "es-a1-u04-cafeteria",
+  "skill": "reading",
+  "genre": "notice",
+  "title": "Cafetería Sol",
+  "summary_es": {
+    "en": "A café notice with opening hours, breakfast prices and a special offer.",
+    "fr": "L’affiche d’un café avec ses horaires, le prix du petit-déjeuner et une offre.",
+    "zh": "一家咖啡馆的告示：营业时间、早餐价格和一项优惠。",
+    "ja": "カフェの案内：営業時間、朝食の値段、お得なセット。"
+  },
+  "topic": "food",
+  "tags": ["cafetería", "horario", "precios"],
+  "can_do": ["R-A1-01"],
+  "grammar_focus": ["es.a1.numeros-y-hora"],
+  "vocab_focus": ["desayuno", "abrir", "precio", "zumo"],
+  "est_minutes": 4,
+  "prediction_prompt": "¿Qué información hay en el cartel de una cafetería?",
+  "pre_teach": ["desayuno", "zumo"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Cafetería Sol",
+          "tokens": [
+            { "t": "Cafetería", "l": "cafetería", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Sol", "l": "sol", "p": "NOUN", "w": true }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Abrimos de lunes a sábado.",
+          "tokens": [
+            { "t": "Abrimos", "l": "abrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "lunes", "l": "lunes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "El horario es de ocho a ocho.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "horario", "l": "horario", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "El domingo está cerrado.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "domingo", "l": "domingo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "cerrado", "l": "cerrar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Desayuno: café con leche y tostada.",
+          "tokens": [
+            { "t": "Desayuno", "l": "desayunar", "p": "VERB", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "café", "l": "café", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "leche", "l": "leche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "tostada", "l": "tostada", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "El desayuno cuesta tres euros.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "desayuno", "l": "desayunar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cuesta", "l": "costar", "p": "VERB", "w": true, "sp": true },
+            { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true },
+            { "t": "euros", "l": "euro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Con zumo de naranja, cuatro euros.",
+          "tokens": [
+            { "t": "Con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "zumo", "l": "zumo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "naranja", "l": "naranja", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "sp": true },
+            { "t": "euros", "l": "euro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Menú del día: dos platos y postre.",
+          "tokens": [
+            { "t": "Menú", "l": "menú", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "platos", "l": "plato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "postre", "l": "postre", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Cuesta doce euros.",
+          "tokens": [
+            { "t": "Cuesta", "l": "costar", "p": "VERB", "w": true, "sp": true },
+            { "t": "doce", "l": "doce", "p": "NUM", "w": false, "sp": true },
+            { "t": "euros", "l": "euro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "¡Los niños comen gratis los sábados!",
+          "tokens": [
+            { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "niños", "l": "niño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "comen", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "gratis", "l": "gratis", "p": "ADV", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sábados", "l": "sábado", "p": "NOUN", "w": true },
+            { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": { "en": "Prices and times", "fr": "Les prix et les heures", "zh": "价格和时间", "ja": "値段と時間" },
+      "explanation_es": { "en": "*de ocho a ocho*: from eight to eight. *Cuesta tres euros*: it costs three euros." },
+      "refs": ["p1s3", "p2s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "desayuno",
+      "surface": "Desayuno",
+      "pos": "noun",
+      "def_en": "la comida de la mañana",
+      "def_es": { "en": "breakfast", "fr": "petit-déjeuner", "zh": "早餐", "ja": "朝食" },
+      "ref": "p2s1"
+    },
+    {
+      "lemma": "tostada",
+      "surface": "tostada",
+      "pos": "noun",
+      "def_en": "pan caliente",
+      "def_es": { "en": "toast", "fr": "tartine grillée", "zh": "烤面包片", "ja": "トースト" },
+      "ref": "p2s1"
+    },
+    {
+      "lemma": "cerrado",
+      "surface": "cerrado",
+      "pos": "adjective",
+      "def_en": "no abierto",
+      "def_es": { "en": "closed", "fr": "fermé", "zh": "关门的", "ja": "閉まっている" },
+      "ref": "p1s4"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Qué es este texto?",
+      "evidence": ["p1s1"],
+      "rationale_es": { "en": "It is a café notice." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un correo de un amigo de Pablo" },
+        { "id": "b", "text": "Un cartel de una cafetería" },
+        { "id": "c", "text": "Una página de un libro de cocina" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué día está cerrada la cafetería?",
+      "evidence": ["p1s4"],
+      "rationale_es": { "en": "*El domingo está cerrado*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "El lunes por la tarde" },
+        { "id": "b", "text": "El sábado por la noche" },
+        { "id": "c", "text": "El domingo" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuánto cuesta el desayuno con zumo?",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "With orange juice, four euros." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cuatro euros" },
+        { "id": "b", "text": "Tres euros y medio" },
+        { "id": "c", "text": "Doce euros con café" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "El menú del día tiene postre.",
+      "evidence": ["p3s1"],
+      "rationale_es": { "en": "Two courses and dessert." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Quién come gratis los sábados?",
+      "evidence": ["p4s1"],
+      "rationale_es": { "en": "Children eat free on Saturdays." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Los profesores" },
+        { "id": "b", "text": "Los niños" },
+        { "id": "c", "text": "Los padres" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p1s3"],
+      "rationale_es": { "en": "From eight." },
+      "type": "gap_fill",
+      "text": "La cafetería abre a las {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["ocho"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 51,
+  "lemmas": [
+    "a", "abrir", "cafetería", "café", "cerrar", "comer", "con", "costar", "de", "desayunar", "domingo", "día",
+    "el", "estar", "euro", "gratis", "horario", "leche", "lunes", "menú", "naranja", "niño", "plato", "postre",
+    "ser", "sol", "sábado", "tostada", "y", "zumo"
+  ],
+  "difficulty": 662,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 5.1,
+    "flesch_reading_ease": 86.3,
+    "checked_at": "2026-10-19T13:04:11.667Z"
+  }
+}

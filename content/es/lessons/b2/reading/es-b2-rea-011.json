@@ -1,0 +1,1021 @@
+{
+  "id": "es-b2-rea-011",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u02",
+  "series": "es-b2-u02-km0",
+  "skill": "reading",
+  "genre": "review",
+  "title": "Reseña: El Huerto de Lola, cocina de kilómetro cero",
+  "summary_es": {
+    "en": "A restaurant review of a small place that only cooks with local produce.",
+    "fr": "La critique d’un petit restaurant qui ne cuisine que des produits locaux.",
+    "zh": "一篇关于一家只用本地食材的小餐馆的评论。",
+    "ja": "地元の食材だけで料理する小さなレストランのレビューです。"
+  },
+  "topic": "food",
+  "tags": ["comida", "reseña", "consumo local"],
+  "can_do": ["R-B2-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["producto local", "temporada", "menú", "productor"],
+  "est_minutes": 14,
+  "prediction_prompt": "¿Te importa de dónde vienen los alimentos que comes?",
+  "pre_teach": ["kilómetro cero", "temporada"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Hay restaurantes que presumen de su producto local y otros que simplemente lo practican sin hacer ruido.",
+          "tokens": [
+            { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "restaurantes", "l": "restaurante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "presumen", "l": "presumir", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "producto", "l": "producto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "local", "l": "local", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "otros", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "simplemente", "l": "simplemente", "p": "ADV", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "practican", "l": "practicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "ruido", "l": "ruido", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "El Huerto de Lola, abierto hace dos años en una antigua casa de labranza a las afueras de Logroño, pertenece claramente al segundo grupo.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "Huerto", "l": "huerto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Lola", "l": "lola", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "abierto", "l": "abrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "antigua", "l": "antiguo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "labranza", "l": "labranza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "afueras", "l": "afueras", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Logroño", "l": "logroño", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pertenece", "l": "pertenecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "claramente", "l": "claramente", "p": "ADV", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "segundo", "l": "segundo", "p": "NUM", "w": false, "sp": true },
+            { "t": "grupo", "l": "grupo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "La propuesta es sencilla: todo lo que llega a la mesa procede de un radio de menos de cien kilómetros.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "propuesta", "l": "propuesta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "sencilla", "l": "sencillo", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "llega", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mesa", "l": "mesa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "procede", "l": "proceder", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "radio", "l": "radio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cien", "l": "cien", "p": "NUM", "w": false, "sp": true },
+            { "t": "kilómetros", "l": "kilómetro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Las verduras salen del huerto que la propia cocinera, Lola Sáenz, cultiva detrás del comedor; la carne la proporcionan dos ganaderos del valle, y el vino, naturalmente, es de la zona.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "verduras", "l": "verdura", "p": "NOUN", "w": true, "sp": true },
+            { "t": "salen", "l": "salir", "p": "VERB", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "huerto", "l": "huerto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "propia", "l": "propio", "p": "ADJ", "w": true, "sp": true },
+            { "t": "cocinera", "l": "cocinero", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Lola", "l": "lola", "p": "PROPN", "w": false, "sp": true },
+            { "t": "Sáenz", "l": "sáenz", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cultiva", "l": "cultivar", "p": "VERB", "w": true, "sp": true },
+            { "t": "detrás", "l": "detrás", "p": "ADV", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "comedor", "l": "comedor", "p": "NOUN", "w": true },
+            { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "carne", "l": "carne", "p": "NOUN", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "proporcionan", "l": "proporcionar", "p": "VERB", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "ganaderos", "l": "ganadero", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "valle", "l": "valle", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vino", "l": "venir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "naturalmente", "l": "naturalmente", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "zona", "l": "zona", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "No hay carta: cada día se ofrece un único menú que cambia según lo que haya en el mercado y en el huerto.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "carta", "l": "carta", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "ofrece", "l": "ofrecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "único", "l": "único", "p": "ADJ", "w": true, "sp": true },
+            { "t": "menú", "l": "menú", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "cambia", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "según", "l": "según", "p": "ADP", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "haya", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mercado", "l": "mercado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "huerto", "l": "huerto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "El local es pequeño, con solo ocho mesas de madera y unas vistas preciosas a los viñedos.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "local", "l": "local", "p": "ADJ", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "pequeño", "l": "pequeño", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "mesas", "l": "mesa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "madera", "l": "madera", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "unas", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "vistas", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "preciosas", "l": "precioso", "p": "ADJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "viñedos", "l": "viñedo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "La decoración es sobria, casi austera, pero muy acogedora: paredes de piedra, flores frescas y una enorme chimenea que en invierno se agradece.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "decoración", "l": "decoración", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "sobria", "l": "sobrio", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "austera", "l": "austero", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "acogedora", "l": "acogedor", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "paredes", "l": "pared", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "piedra", "l": "piedra", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "flores", "l": "flor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "frescas", "l": "fresco", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "enorme", "l": "enorme", "p": "ADJ", "w": true, "sp": true },
+            { "t": "chimenea", "l": "chimenea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "invierno", "l": "invierno", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "agradece", "l": "agradecer", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "La cocinera, Lola Sáenz, trabajó durante diez años en restaurantes de Madrid y San Sebastián antes de volver a su tierra.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cocinera", "l": "cocinero", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Lola", "l": "lola", "p": "PROPN", "w": false, "sp": true },
+            { "t": "Sáenz", "l": "sáenz", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "trabajó", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "restaurantes", "l": "restaurante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Madrid", "l": "madrid", "p": "PROPN", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "San", "l": "san", "p": "PROPN", "w": false, "sp": true },
+            { "t": "Sebastián", "l": "sebastián", "p": "PROPN", "w": false, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "volver", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "tierra", "l": "tierra", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Cuenta que se cansó de cocinar con productos que llegaban de la otra punta del mundo y que quería recuperar los sabores de su infancia.",
+          "tokens": [
+            { "t": "Cuenta", "l": "contar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "cansó", "l": "cansar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cocinar", "l": "cocinar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "productos", "l": "producto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "llegaban", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "otra", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "punta", "l": "punta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "mundo", "l": "mundo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "quería", "l": "querer", "p": "VERB", "w": true, "sp": true },
+            { "t": "recuperar", "l": "recuperar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sabores", "l": "sabor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "infancia", "l": "infancia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Su cocina es tradicional en la base, pero con pequeños toques modernos que no resultan nunca forzados.",
+          "tokens": [
+            { "t": "Su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "cocina", "l": "cocina", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "tradicional", "l": "tradicional", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "base", "l": "basar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "pequeños", "l": "pequeño", "p": "ADJ", "w": true, "sp": true },
+            { "t": "toques", "l": "tocar", "p": "VERB", "w": true, "sp": true },
+            { "t": "modernos", "l": "moderno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "resultan", "l": "resultar", "p": "VERB", "w": true, "sp": true },
+            { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true },
+            { "t": "forzados", "l": "forzado", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Visitamos el restaurante un jueves de octubre.",
+          "tokens": [
+            { "t": "Visitamos", "l": "visitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "restaurante", "l": "restaurante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "jueves", "l": "jueves", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "octubre", "l": "octubre", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "El menú empezó con una crema de calabaza asada con aceite de avellana, suave y sorprendente.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "menú", "l": "menú", "p": "NOUN", "w": true, "sp": true },
+            { "t": "empezó", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "crema", "l": "crema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "calabaza", "l": "calabaza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "asada", "l": "asado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "aceite", "l": "aceite", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "avellana", "l": "avellana", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "suave", "l": "suave", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "sorprendente", "l": "sorprendente", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Siguió un plato de pochas, las alubias blancas típicas de La Rioja, guisadas con verduras de temporada, que justificarían por sí solas el viaje.",
+          "tokens": [
+            { "t": "Siguió", "l": "seguir", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "plato", "l": "plato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "pochas", "l": "pocha", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "alubias", "l": "alubia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "blancas", "l": "blanco", "p": "ADJ", "w": true, "sp": true },
+            { "t": "típicas", "l": "típico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "Rioja", "l": "rioja", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "guisadas", "l": "guisar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "verduras", "l": "verdura", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "temporada", "l": "temporada", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "justificarían", "l": "justificar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "sp": true },
+            { "t": "solas", "l": "soler", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "viaje", "l": "viajar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "De segundo, un cordero lechal asado lentamente, jugoso y bien acompañado de patatas del huerto.",
+          "tokens": [
+            { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "segundo", "l": "segundo", "p": "NUM", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cordero", "l": "cordero", "p": "NOUN", "w": true, "sp": true },
+            { "t": "lechal", "l": "lechal", "p": "ADJ", "w": true, "sp": true },
+            { "t": "asado", "l": "asado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "lentamente", "l": "lentamente", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "jugoso", "l": "jugoso", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true },
+            { "t": "acompañado", "l": "acompañar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "patatas", "l": "patata", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "huerto", "l": "huerto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "El postre fue el único punto débil: una tarta de manzana correcta, pero sin la personalidad del resto del menú.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "postre", "l": "postre", "p": "NOUN", "w": true, "sp": true },
+            { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "único", "l": "único", "p": "ADJ", "w": true, "sp": true },
+            { "t": "punto", "l": "punto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "débil", "l": "débil", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "tarta", "l": "tarta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "manzana", "l": "manzana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "correcta", "l": "correcto", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "personalidad", "l": "personalidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "resto", "l": "resto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "menú", "l": "menú", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Quizá se notaba que la cocina estaba a pleno rendimiento y que Lola, que lo hace prácticamente todo, había llegado al límite de sus fuerzas.",
+          "tokens": [
+            { "t": "Quizá", "l": "quizá", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "notaba", "l": "notar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cocina", "l": "cocina", "p": "NOUN", "w": true, "sp": true },
+            { "t": "estaba", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "pleno", "l": "pleno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "rendimiento", "l": "rendimiento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "Lola", "l": "lola", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "prácticamente", "l": "prácticamente", "p": "ADV", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "llegado", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "límite", "l": "límite", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "fuerzas", "l": "fuerza", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "El servicio, a cargo del hermano de la cocinera, es amable y cercano.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "servicio", "l": "servicio", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "cargo", "l": "cargar", "p": "VERB", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "hermano", "l": "hermano", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cocinera", "l": "cocinero", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "amable", "l": "amable", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "cercano", "l": "cercano", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Explica con entusiasmo el origen de cada producto y recomienda vinos de pequeñas bodegas que difícilmente se encuentran en otros sitios.",
+          "tokens": [
+            { "t": "Explica", "l": "explicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "entusiasmo", "l": "entusiasmo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "origen", "l": "origen", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "producto", "l": "producto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "recomienda", "l": "recomendar", "p": "VERB", "w": true, "sp": true },
+            { "t": "vinos", "l": "vino", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "pequeñas", "l": "pequeño", "p": "ADJ", "w": true, "sp": true },
+            { "t": "bodegas", "l": "bodega", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "difícilmente", "l": "difícilmente", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "encuentran", "l": "encontrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "otros", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "sitios", "l": "sitio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Eso sí, conviene no tener prisa: entre plato y plato pueden pasar veinte minutos.",
+          "tokens": [
+            { "t": "Eso", "l": "esto", "p": "PRON", "w": true, "sp": true },
+            { "t": "sí", "l": "sí", "p": "INTJ", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "conviene", "l": "convenir", "p": "VERB", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "tener", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "prisa", "l": "prisa", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "plato", "l": "plato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "plato", "l": "plato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "pasar", "l": "pasar", "p": "VERB", "w": true, "sp": true },
+            { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true },
+            { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "sentences": [
+        {
+          "id": "p8s1",
+          "text": "El restaurante también organiza, una vez al mes, una comida con los productores que le venden sus alimentos.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "restaurante", "l": "restaurante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "organiza", "l": "organizar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "mes", "l": "mes", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "comida", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "productores", "l": "productor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "venden", "l": "vender", "p": "VERB", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "alimentos", "l": "alimento", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s2",
+          "text": "Los clientes pueden conocer a los ganaderos y a los agricultores, preguntarles por su trabajo y comprar directamente sus productos.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "clientes", "l": "cliente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "conocer", "l": "conocer", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ganaderos", "l": "ganadero", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "agricultores", "l": "agricultor", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "preguntarles", "l": "preguntar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "comprar", "l": "comprar", "p": "VERB", "w": true, "sp": true },
+            { "t": "directamente", "l": "directamente", "p": "ADV", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "productos", "l": "producto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s3",
+          "text": "Es una iniciativa original que refuerza la idea central del proyecto.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "iniciativa", "l": "iniciativa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "original", "l": "original", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "refuerza", "l": "reforzar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "central", "l": "central", "p": "ADJ", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "proyecto", "l": "proyecto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "sentences": [
+        {
+          "id": "p9s1",
+          "text": "El precio, treinta y ocho euros con bebida incluida, nos pareció razonable para la calidad de la materia prima y el cuidado de la elaboración.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "precio", "l": "precio", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "bebida", "l": "beber", "p": "VERB", "w": true, "sp": true },
+            { "t": "incluida", "l": "incluir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "pareció", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "razonable", "l": "razonable", "p": "ADJ", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "calidad", "l": "calidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "materia", "l": "materia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "prima", "l": "prima", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cuidado", "l": "cuidar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "elaboración", "l": "elaboración", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p9s2",
+          "text": "Es imprescindible reservar con antelación, sobre todo los fines de semana, y hay que tener en cuenta que solo abre a mediodía, salvo los viernes y los sábados.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "imprescindible", "l": "imprescindible", "p": "ADJ", "w": true, "sp": true },
+            { "t": "reservar", "l": "reservar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "antelación", "l": "antelación", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fines", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "tener", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "cuenta", "l": "contar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "abre", "l": "abrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "mediodía", "l": "mediodía", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "salvo", "l": "salvar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "viernes", "l": "viernes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sábados", "l": "sábado", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "sentences": [
+        {
+          "id": "p10s1",
+          "text": "En resumen, El Huerto de Lola demuestra que la cocina de kilómetro cero no es una moda, sino una forma coherente de entender la gastronomía y la relación con el territorio.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "resumen", "l": "resumen", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "Huerto", "l": "huerto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Lola", "l": "lola", "p": "PROPN", "w": false, "sp": true },
+            { "t": "demuestra", "l": "demostrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cocina", "l": "cocina", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "kilómetro", "l": "kilómetro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cero", "l": "cero", "p": "NUM", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "moda", "l": "moda", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "forma", "l": "forma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "coherente", "l": "coherente", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "entender", "l": "entender", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "gastronomía", "l": "gastronomía", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "relación", "l": "relación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "territorio", "l": "territorio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p10s2",
+          "text": "Volveremos en primavera para ver cómo cambia el menú con las nuevas verduras.",
+          "tokens": [
+            { "t": "Volveremos", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "primavera", "l": "primavera", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "ver", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true },
+            { "t": "cambia", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "menú", "l": "menú", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "nuevas", "l": "nuevo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "verduras", "l": "verdura", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p10s3",
+          "text": "Nuestra valoración: ocho sobre diez.",
+          "tokens": [
+            { "t": "Nuestra", "l": "nuestro", "p": "DET", "w": true, "sp": true },
+            { "t": "valoración", "l": "valoración", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "diez", "l": "diez", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Evaluating in a review",
+        "fr": "Évaluer dans une critique",
+        "zh": "在评论中作出评价",
+        "ja": "レビューで評価する"
+      },
+      "explanation_es": {
+        "en": "Reviews mix praise and criticism with precise adjectives (*sorprendente*, *jugoso*, *correcta*) and connectors such as *Eso sí* or *En resumen*."
+      },
+      "refs": ["p6s1", "p7s3"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "casa de labranza",
+      "surface": "casa de labranza",
+      "pos": "phrase",
+      "def_en": "casa de campo para trabajar la tierra",
+      "def_es": { "en": "farmhouse", "fr": "ferme", "zh": "农舍", "ja": "農家" },
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "viñedo",
+      "surface": "viñedos",
+      "pos": "noun",
+      "def_en": "terreno con plantas de uva",
+      "def_es": { "en": "vineyards", "fr": "vignobles", "zh": "葡萄园", "ja": "ぶどう畑" },
+      "ref": "p3s1"
+    },
+    {
+      "lemma": "materia prima",
+      "surface": "materia prima",
+      "pos": "phrase",
+      "def_en": "producto con el que se cocina o se fabrica algo",
+      "def_es": { "en": "raw ingredients", "fr": "matière première", "zh": "原料", "ja": "素材" },
+      "ref": "p9s1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Qué se valora en esta reseña?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "A local-produce restaurant." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una tienda de vinos del centro de Logroño" },
+        { "id": "b", "text": "Un restaurante que cocina con productos de la zona" },
+        { "id": "c", "text": "Un libro de recetas tradicionales de La Rioja" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cómo funciona la carta del restaurante?",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "A daily menu." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Se puede elegir entre veinte platos" },
+        { "id": "b", "text": "Solo se sirven platos de carne" },
+        { "id": "c", "text": "Ofrece platos distintos a diario" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué plato le gustó más al crítico?",
+      "evidence": ["p5s3"],
+      "rationale_es": { "en": "The pochas." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Las pochas con verduras" },
+        { "id": "b", "text": "La tarta de manzana" },
+        { "id": "c", "text": "La crema de calabaza" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Por qué cree el crítico que el postre fue más flojo?",
+      "evidence": ["p6s2"],
+      "rationale_es": { "en": "The cook was exhausted." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Las manzanas no eran de la zona" },
+        { "id": "b", "text": "La cocinera estaba agotada" },
+        { "id": "c", "text": "El postre se compró hecho" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "El servicio es rápido y no hay que esperar entre platos.",
+      "evidence": ["p7s3"],
+      "rationale_es": { "en": "It is slow." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "read",
+      "prompt": "¿Qué opina el crítico del precio?",
+      "evidence": ["p9s1"],
+      "rationale_es": { "en": "Reasonable." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que es demasiado caro para la zona" },
+        { "id": "b", "text": "Que es sorprendentemente barato" },
+        { "id": "c", "text": "Que es adecuado para lo que ofrece" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p9s2"],
+      "rationale_es": { "en": "*A mediodía*." },
+      "type": "gap_fill",
+      "text": "El restaurante solo abre a {{1}}, salvo viernes y sábados.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["mediodía"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 524,
+  "lemmas": [
+    "a", "abrir", "aceite", "acogedor", "acompañar", "afueras", "agradecer", "agricultor", "alimento",
+    "alubia", "amable", "antelación", "antes", "antiguo", "asado", "austero", "avellana", "año", "basar",
+    "beber", "bien", "blanco", "bodega", "cada", "calabaza", "calidad", "cambiar", "cansar", "cargar", "carne",
+    "carta", "casa", "casi", "central", "cercano", "chimenea", "claramente", "cliente", "cocina", "cocinar",
+    "cocinero", "coherente", "comedor", "comer", "comprar", "con", "conocer", "contar", "convenir", "cordero",
+    "correcto", "crema", "cuidar", "cultivar", "cómo", "de", "decoración", "demostrar", "detrás",
+    "difícilmente", "directamente", "durante", "débil", "día", "el", "elaboración", "empezar", "en",
+    "encontrar", "enorme", "entender", "entre", "entusiasmo", "estar", "esto", "euro", "explicar", "fin",
+    "flor", "forma", "forzado", "fresco", "fuerza", "ganadero", "gastronomía", "grupo", "guisar", "haber",
+    "hacer", "hermano", "huerto", "idea", "imprescindible", "incluir", "infancia", "iniciativa", "invierno",
+    "jueves", "jugoso", "justificar", "kilómetro", "labranza", "lechal", "lentamente", "llegar", "local",
+    "límite", "madera", "manzana", "materia", "mediodía", "menos", "menú", "mercado", "mes", "mesa", "minuto",
+    "moda", "moderno", "mundo", "muy", "naturalmente", "no", "nosotros", "notar", "nuestro", "nuevo", "nunca",
+    "octubre", "ofrecer", "organizar", "origen", "original", "otro", "para", "parecer", "pared", "pasar",
+    "patata", "pequeño", "pero", "personalidad", "pertenecer", "piedra", "plato", "pleno", "pocha", "poder",
+    "por", "postre", "practicar", "precio", "precioso", "preguntar", "presumir", "prima", "primavera", "prisa",
+    "proceder", "producto", "productor", "propio", "proporcionar", "propuesta", "proyecto", "prácticamente",
+    "punta", "punto", "que", "querer", "quizá", "radio", "razonable", "recomendar", "recuperar", "reforzar",
+    "relación", "rendimiento", "reservar", "restaurante", "resto", "resultar", "resumen", "ruido", "sabor",
+    "salir", "salvar", "se", "seguir", "según", "semana", "sencillo", "ser", "servicio", "simplemente", "sin",
+    "sino", "sitio", "sobre", "sobrio", "soler", "solo", "sorprendente", "su", "suave", "sábado", "también",
+    "tarta", "temporada", "tener", "territorio", "tierra", "tocar", "todo", "trabajar", "tradicional",
+    "típico", "un", "valle", "valoración", "vender", "venir", "ver", "verdura", "vez", "viajar", "viernes",
+    "vino", "visitar", "viñedo", "volver", "y", "zona", "él", "único"
+  ],
+  "difficulty": 1276,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6358, "A2": 0.7626, "B1": 0.8853, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 19.4,
+    "flesch_reading_ease": 68,
+    "checked_at": "2026-10-19T13:22:45.133Z"
+  }
+}

@@ -165,7 +165,7 @@
       "tokens": [
         { "t": "Según", "l": "según", "p": "ADP", "w": true, "sp": true, "s": 27.209, "e": 27.592 },
         { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 27.592, "e": 27.784 },
-        { "t": "informe", "l": "informar", "p": "VERB", "w": true, "sp": true, "s": 27.784, "e": 28.295 },
+        { "t": "informe", "l": "informe", "p": "NOUN", "w": true, "sp": true, "s": 27.784, "e": 28.295 },
         { "t": "publicado", "l": "publicar", "p": "VERB", "w": true, "sp": true, "s": 28.295, "e": 28.934 },
         { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "s": 28.934, "e": 29.189 },
         { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
@@ -551,7 +551,7 @@
         { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
         { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 105.055, "e": 105.28 },
         { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 105.28, "e": 105.448 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "s": 105.448, "e": 105.785 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "s": 105.448, "e": 105.785 },
         { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
         { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 106.135, "e": 106.318 },
         { "t": "anunciado", "l": "anunciar", "p": "VERB", "w": true, "sp": true, "s": 106.318, "e": 106.928 },
@@ -900,10 +900,10 @@
     "contrato", "dato", "de", "debatir", "decir", "dedicar", "diferencia", "dinero", "donde", "doscientos",
     "echar", "economista", "edad", "ejemplo", "el", "ellos", "embargo", "en", "enfermero", "entrar", "ese",
     "espacio", "español", "este", "euro", "experto", "explicar", "falta", "familia", "forma", "gobierno",
-    "haber", "hablar", "hacer", "hoy", "independizarse", "información", "informar", "informativo",
+    "haber", "hablar", "hacer", "hoy", "independizarse", "información", "informativo", "informe",
     "informático", "internacional", "intimidad", "ir", "joven", "mayoría", "medio", "menor", "menos", "mes",
     "miles", "mitad", "mucho", "más", "no", "noche", "o", "optar", "otro", "padre", "pagar", "para", "parecer",
-    "parte", "pasar", "país", "pero", "piso", "poco", "poder", "poner", "por", "porque", "precio",
+    "partir", "pasar", "país", "pero", "piso", "poco", "poder", "poner", "por", "porque", "precio",
     "preocuparse", "principal", "propietario", "propio", "proponer", "publicar", "que", "querer", "qué",
     "razonable", "reconocer", "riesgo", "salario", "se", "seguir", "según", "ser", "si", "sin", "solo", "su",
     "subir", "sueldo", "tanto", "temporal", "tener", "tiempo", "tirar", "todavía", "trabajar", "un", "vez",
@@ -911,11 +911,11 @@
   ],
   "difficulty": 1253,
   "qa": {
-    "coverage_by_level": { "A1": 0.6551, "A2": 0.8084, "B1": 0.9477, "B2": 0.9965, "C1": 0.9965, "C2": 1 },
+    "coverage_by_level": { "A1": 0.6551, "A2": 0.8502, "B1": 0.9756, "B2": 0.9965, "C1": 0.9965, "C2": 1 },
     "off_level_lemmas": ["intimidad"],
     "avg_sentence_words": 11,
     "flesch_reading_ease": 79.5,
-    "checked_at": "2026-10-19T07:51:54.858Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/b2/es-b2-lis-010/v1.m4a",

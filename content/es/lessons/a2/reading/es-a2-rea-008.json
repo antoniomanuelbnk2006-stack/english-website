@@ -1,0 +1,503 @@
+{
+  "id": "es-a2-rea-008",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u04",
+  "series": "es-a2-u04-dormir",
+  "skill": "reading",
+  "genre": "article",
+  "title": "Consejos para dormir bien",
+  "summary_es": {
+    "en": "An article with simple advice for sleeping better.",
+    "fr": "Un article avec des conseils simples pour mieux dormir.",
+    "zh": "一篇提供改善睡眠的简单建议的文章。",
+    "ja": "よく眠るための簡単なアドバイスの記事です。"
+  },
+  "topic": "health",
+  "tags": ["salud", "dormir", "consejos"],
+  "can_do": ["R-A2-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["dormir", "cansado", "pantalla", "descansar"],
+  "est_minutes": 6,
+  "prediction_prompt": "¿Duermes bien? ¿Cuántas horas duermes?",
+  "pre_teach": ["pantalla", "relajarse"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Muchas personas duermen mal y se levantan cansadas.",
+          "tokens": [
+            { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "duermen", "l": "dormir", "p": "VERB", "w": true, "sp": true },
+            { "t": "mal", "l": "mal", "p": "ADV", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "levantan", "l": "levantarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "cansadas", "l": "cansado", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Los médicos dicen que un adulto necesita entre siete y ocho horas de sueño.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "médicos", "l": "médico", "p": "NOUN", "w": true, "sp": true },
+            { "t": "dicen", "l": "decir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "adulto", "l": "adulto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "necesita", "l": "necesitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "siete", "l": "siete", "p": "NUM", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "sueño", "l": "sueño", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Aquí tienes algunos consejos sencillos.",
+          "tokens": [
+            { "t": "Aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true },
+            { "t": "tienes", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "consejos", "l": "consejo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sencillos", "l": "sencillo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Primero, intenta acostarte y levantarte siempre a la misma hora, también los fines de semana.",
+          "tokens": [
+            { "t": "Primero", "l": "primero", "p": "NUM", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "intenta", "l": "intentar", "p": "VERB", "w": true, "sp": true },
+            { "t": "acostarte", "l": "acostarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "levantarte", "l": "levantarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "misma", "l": "mismo", "p": "DET", "w": true, "sp": true },
+            { "t": "hora", "l": "hora", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fines", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Así tu cuerpo se acostumbra a un horario.",
+          "tokens": [
+            { "t": "Así", "l": "así", "p": "ADV", "w": true, "sp": true },
+            { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true },
+            { "t": "cuerpo", "l": "cuerpo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "acostumbra", "l": "acostumbrarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "horario", "l": "horario", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Segundo, no tomes café después de las cinco de la tarde.",
+          "tokens": [
+            { "t": "Segundo", "l": "segundo", "p": "NUM", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "tomes", "l": "tomar", "p": "VERB", "w": true, "sp": true },
+            { "t": "café", "l": "café", "p": "NOUN", "w": true, "sp": true },
+            { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Tampoco es buena idea cenar mucho antes de dormir.",
+          "tokens": [
+            { "t": "Tampoco", "l": "tampoco", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "buena", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cenar", "l": "cenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "dormir", "l": "dormir", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Es mejor una cena ligera, por ejemplo, una sopa o una ensalada.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cena", "l": "cenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "ligera", "l": "ligero", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "ejemplo", "l": "ejemplo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "sopa", "l": "sopa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "ensalada", "l": "ensalada", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Tercero, deja el móvil una hora antes de acostarte.",
+          "tokens": [
+            { "t": "Tercero", "l": "tercero", "p": "NUM", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "deja", "l": "dejar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "móvil", "l": "móvil", "p": "NOUN", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "acostarte", "l": "acostarse", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "La luz de las pantallas no deja descansar al cerebro.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "luz", "l": "luz", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pantallas", "l": "pantalla", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "deja", "l": "dejar", "p": "VERB", "w": true, "sp": true },
+            { "t": "descansar", "l": "descansar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "cerebro", "l": "cerebro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Puedes leer un libro o escuchar música tranquila para relajarte.",
+          "tokens": [
+            { "t": "Puedes", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "leer", "l": "leer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "libro", "l": "libro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "escuchar", "l": "escuchar", "p": "VERB", "w": true, "sp": true },
+            { "t": "música", "l": "música", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tranquila", "l": "tranquilo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "relajarte", "l": "relajarse", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Con estos cambios, en pocos días vas a notar la diferencia.",
+          "tokens": [
+            { "t": "Con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "estos", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "cambios", "l": "cambio", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "pocos", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "días", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "vas", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "notar", "l": "notar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "diferencia", "l": "diferencia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "También es importante hacer deporte, pero no por la noche.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "importante", "l": "importante", "p": "ADJ", "w": true, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "deporte", "l": "deporte", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "noche", "l": "noche", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Lo mejor es caminar o nadar por la mañana o por la tarde.",
+          "tokens": [
+            { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "caminar", "l": "caminar", "p": "VERB", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "nadar", "l": "nadar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Y si no puedes dormir, no mires el reloj.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "puedes", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "dormir", "l": "dormir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "mires", "l": "mirar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "reloj", "l": "reloj", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Levántate, lee un poco y vuelve a la cama.",
+          "tokens": [
+            { "t": "Levántate", "l": "levantarse", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "lee", "l": "leer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "vuelve", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cama", "l": "cama", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": { "en": "Giving advice", "fr": "Donner des conseils", "zh": "提建议", "ja": "アドバイスをする" },
+      "explanation_es": { "en": "Advice uses *intenta* (try), *no tomes* (don’t drink) and *es mejor* + noun or infinitive." },
+      "refs": ["p3s1", "p3s3"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "sueño",
+      "surface": "sueño",
+      "pos": "noun",
+      "def_en": "el acto de dormir",
+      "def_es": { "en": "sleep", "fr": "sommeil", "zh": "睡眠", "ja": "睡眠" },
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "ligero",
+      "surface": "ligera",
+      "pos": "adjective",
+      "def_en": "que no pesa mucho, fácil de digerir",
+      "def_es": { "en": "light", "fr": "léger", "zh": "清淡的", "ja": "軽い" },
+      "ref": "p3s3"
+    },
+    {
+      "lemma": "relajarse",
+      "surface": "relajarte",
+      "pos": "verb",
+      "def_en": "descansar y estar tranquilo",
+      "def_es": { "en": "to relax", "fr": "se détendre", "zh": "放松", "ja": "リラックスする" },
+      "ref": "p4s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Cuál es el tema del artículo?",
+      "evidence": ["p1s3"],
+      "rationale_es": { "en": "Advice for sleeping better." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Qué comer en el desayuno cada día" },
+        { "id": "b", "text": "Cómo descansar mejor por la noche" },
+        { "id": "c", "text": "Cómo usar menos el coche" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuántas horas necesita dormir un adulto?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "Seven to eight hours." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Entre cinco y seis" },
+        { "id": "b", "text": "Más de diez" },
+        { "id": "c", "text": "Entre siete y ocho" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué dice el primer consejo?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "Keep the same schedule." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tener siempre el mismo horario" },
+        { "id": "b", "text": "Dormir más los domingos" },
+        { "id": "c", "text": "Hacer deporte por la noche antes de cenar" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Se puede tomar café a las ocho de la tarde.",
+      "evidence": ["p3s1"],
+      "rationale_es": { "en": "No coffee after five." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué cena recomienda el artículo?",
+      "evidence": ["p3s3"],
+      "rationale_es": { "en": "A light dinner." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una pizza grande" },
+        { "id": "b", "text": "Una sopa o una ensalada" },
+        { "id": "c", "text": "Carne con patatas fritas y pan" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Por qué hay que dejar el móvil antes de dormir?",
+      "evidence": ["p4s2"],
+      "rationale_es": { "en": "Screen light." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Gasta mucho dinero cada mes" },
+        { "id": "b", "text": "Hace mucho ruido por la noche" },
+        { "id": "c", "text": "No ayuda a dormir bien" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p4s3"],
+      "rationale_es": { "en": "*Leer un libro*." },
+      "type": "gap_fill",
+      "text": "Antes de dormir puedes leer un {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["libro"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 163,
+  "lemmas": [
+    "a", "acostarse", "acostumbrarse", "adulto", "algún", "antes", "aquí", "así", "bueno", "café", "cama",
+    "cambio", "caminar", "cansado", "cenar", "cerebro", "con", "consejo", "cuerpo", "de", "decir", "dejar",
+    "deporte", "descansar", "después", "diferencia", "dormir", "día", "ejemplo", "el", "en", "ensalada",
+    "entre", "escuchar", "este", "fin", "hacer", "hora", "horario", "idea", "importante", "intentar", "ir",
+    "leer", "levantarse", "libro", "ligero", "luz", "mal", "mañana", "mejor", "mirar", "mismo", "mucho",
+    "médico", "móvil", "música", "nadar", "necesitar", "no", "noche", "notar", "o", "pantalla", "para", "pero",
+    "persona", "poco", "poder", "por", "que", "relajarse", "reloj", "se", "semana", "sencillo", "ser", "si",
+    "siempre", "sopa", "sueño", "también", "tampoco", "tarde", "tener", "tomar", "tranquilo", "tu", "un",
+    "volver", "y", "él"
+  ],
+  "difficulty": 877,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7516, "A2": 0.9936, "B1": 0.9936, "B2": 0.9936, "C1": 0.9936, "C2": 1 },
+    "off_level_lemmas": ["relajarse"],
+    "avg_sentence_words": 10.2,
+    "flesch_reading_ease": 82.3,
+    "checked_at": "2026-10-19T13:10:22.522Z"
+  }
+}

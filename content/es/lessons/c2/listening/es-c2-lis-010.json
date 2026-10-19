@@ -392,7 +392,7 @@
       "text": "La Reforma protestante no se entiende sin la imprenta.",
       "tokens": [
         { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 62.82, "e": 62.995 },
-        { "t": "Reforma", "l": "reforma", "p": "PROPN", "w": false, "sp": true, "s": 62.995, "e": 63.462 },
+        { "t": "Reforma", "l": "reformar", "p": "VERB", "w": true, "sp": true, "s": 62.995, "e": 63.462 },
         {
           "t": "protestante",
           "l": "protestante",
@@ -1289,20 +1289,20 @@
     "paralelismo", "parecer", "país", "perfeccionar", "permitir", "pero", "plazo", "poco", "poder", "política",
     "por", "porque", "prematuro", "prensa", "presentar", "prestigio", "probablemente", "producir", "profecía",
     "profesional", "prohibición", "prohibir", "protestante", "próximo", "página", "pánico", "público", "que",
-    "quejarse", "quizá", "qué", "reacción", "referirse", "relativamente", "religioso", "reproducir",
-    "reservar", "responder", "resultar", "revisar", "revista", "rodear", "rumor", "rápido", "saber", "se",
-    "semana", "ser", "sesión", "si", "siglo", "sin", "sino", "sistema", "sociedad", "solo", "sonar", "su",
-    "sugerir", "superficial", "también", "tardar", "tarde", "tarea", "tecnología", "tender", "terminar",
-    "texto", "tipo", "todavía", "todo", "un", "universidad", "varios", "velocidad", "ver", "vez", "viajar",
-    "viral", "volver", "y", "yo", "él", "época"
+    "quejarse", "quizá", "qué", "reacción", "referirse", "reformar", "relativamente", "religioso",
+    "reproducir", "reservar", "responder", "resultar", "revisar", "revista", "rodear", "rumor", "rápido",
+    "saber", "se", "semana", "ser", "sesión", "si", "siglo", "sin", "sino", "sistema", "sociedad", "solo",
+    "sonar", "su", "sugerir", "superficial", "también", "tardar", "tarde", "tarea", "tecnología", "tender",
+    "terminar", "texto", "tipo", "todavía", "todo", "un", "universidad", "varios", "velocidad", "ver", "vez",
+    "viajar", "viral", "volver", "y", "yo", "él", "época"
   ],
   "difficulty": 1630,
   "qa": {
-    "coverage_by_level": { "A1": 0.5933, "A2": 0.6699, "B1": 0.8038, "B2": 0.8445, "C1": 0.9091, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5919, "A2": 0.6874, "B1": 0.8258, "B2": 0.8759, "C1": 0.9141, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 11.4,
     "flesch_reading_ease": 63,
-    "checked_at": "2026-10-19T07:53:05.544Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/c2/es-c2-lis-010/v1.m4a",

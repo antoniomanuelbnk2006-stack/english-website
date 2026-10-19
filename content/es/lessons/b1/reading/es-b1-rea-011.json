@@ -1,0 +1,725 @@
+{
+  "id": "es-b1-rea-011",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u07",
+  "series": "es-b1-u07-critica",
+  "skill": "reading",
+  "genre": "review",
+  "title": "Crítica: «El último verano»",
+  "summary_es": {
+    "en": "A film review of a family drama set in a village during one summer.",
+    "fr": "La critique d’un drame familial qui se déroule dans un village pendant un été.",
+    "zh": "一部以一个夏天的乡村为背景的家庭剧的影评。",
+    "ja": "ある夏の村を舞台にした家族ドラマの映画評です。"
+  },
+  "topic": "culture",
+  "tags": ["cine", "opinión", "cultura"],
+  "can_do": ["R-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["película", "director", "actriz", "guion"],
+  "est_minutes": 10,
+  "prediction_prompt": "¿Qué te parece importante en una buena película?",
+  "pre_teach": ["guion", "reparto"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "«El último verano», la segunda película de la directora gallega Marta Lois, llega a los cines después de ganar el premio del público en el festival de Málaga.",
+          "tokens": [
+            { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "último", "l": "último", "p": "ADJ", "w": true, "sp": true },
+            { "t": "verano", "l": "verano", "p": "NOUN", "w": true },
+            { "t": "»", "l": "»", "p": "PUNCT", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "segunda", "l": "segundo", "p": "NUM", "w": false, "sp": true },
+            { "t": "película", "l": "película", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "directora", "l": "director", "p": "NOUN", "w": true, "sp": true },
+            { "t": "gallega", "l": "gallego", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "sp": true },
+            { "t": "Lois", "l": "lois", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "llega", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cines", "l": "cine", "p": "NOUN", "w": true, "sp": true },
+            { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "ganar", "l": "ganar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "premio", "l": "premiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "público", "l": "público", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "festival", "l": "festival", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Málaga", "l": "málaga", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Y no es difícil entender por qué.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "difícil", "l": "difícil", "p": "ADJ", "w": true, "sp": true },
+            { "t": "entender", "l": "entender", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "qué", "l": "qué", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "La historia es sencilla.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "historia", "l": "historia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "sencilla", "l": "sencillo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Tres hermanos que no se ven desde hace años vuelven a la casa de su abuela, en un pueblo de Galicia, para venderla después de su muerte.",
+          "tokens": [
+            { "t": "Tres", "l": "tres", "p": "NUM", "w": false, "sp": true },
+            { "t": "hermanos", "l": "hermano", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "ven", "l": "venir", "p": "VERB", "w": true, "sp": true },
+            { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "vuelven", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "abuela", "l": "abuelo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pueblo", "l": "pueblo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Galicia", "l": "galicia", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "venderla", "l": "vender", "p": "VERB", "w": true, "sp": true },
+            { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "muerte", "l": "muerte", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Durante una semana tienen que vaciar la casa, y con cada caja que abren aparecen recuerdos, secretos y viejas discusiones.",
+          "tokens": [
+            { "t": "Durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "vaciar", "l": "vaciar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "caja", "l": "caja", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "abren", "l": "abrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "aparecen", "l": "aparecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "recuerdos", "l": "recuerdo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "secretos", "l": "secreto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "viejas", "l": "viejo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "discusiones", "l": "discusión", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Lo mejor de la película es el reparto.",
+          "tokens": [
+            { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "película", "l": "película", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "reparto", "l": "reparto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Los tres actores principales están magníficos, especialmente Laia Costa en el papel de la hermana mayor, una mujer que intenta controlarlo todo.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true },
+            { "t": "actores", "l": "actor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "principales", "l": "principal", "p": "ADJ", "w": true, "sp": true },
+            { "t": "están", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "magníficos", "l": "magnífico", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "especialmente", "l": "especialmente", "p": "ADV", "w": true, "sp": true },
+            { "t": "Laia", "l": "laia", "p": "PROPN", "w": false, "sp": true },
+            { "t": "Costa", "l": "costa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "papel", "l": "papel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "hermana", "l": "hermana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "mayor", "l": "mayor", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "mujer", "l": "mujer", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "intenta", "l": "intentar", "p": "VERB", "w": true, "sp": true },
+            { "t": "controlarlo", "l": "controlar", "p": "VERB", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Las escenas de la cena familiar, con risas y gritos al mismo tiempo, son de lo más auténtico que he visto este año.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "escenas", "l": "escena", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cena", "l": "cenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "familiar", "l": "familiar", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "risas", "l": "risa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "gritos", "l": "grito", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "auténtico", "l": "auténtico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "he", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "visto", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "año", "l": "año", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "La fotografía también merece un aplauso.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fotografía", "l": "fotografía", "p": "NOUN", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "merece", "l": "merecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "aplauso", "l": "aplauso", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Los paisajes verdes, la lluvia y la luz de las tardes de verano crean un ambiente melancólico pero bonito.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "paisajes", "l": "paisaje", "p": "NOUN", "w": true, "sp": true },
+            { "t": "verdes", "l": "verde", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "lluvia", "l": "lluvia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "luz", "l": "luz", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tardes", "l": "tarde", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "verano", "l": "verano", "p": "NOUN", "w": true, "sp": true },
+            { "t": "crean", "l": "creer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "ambiente", "l": "ambiente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "melancólico", "l": "melancólico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "bonito", "l": "bonito", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "La música, compuesta por un joven pianista de Vigo, acompaña muy bien la historia sin llamar demasiado la atención.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "música", "l": "música", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "compuesta", "l": "componer", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "joven", "l": "joven", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pianista", "l": "pianista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Vigo", "l": "vigo", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "acompaña", "l": "acompañar", "p": "VERB", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "historia", "l": "historia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "llamar", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "demasiado", "l": "demasiado", "p": "ADV", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "atención", "l": "atención", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Hay canciones populares gallegas que los personajes cantan en la cocina, y esos momentos son de los más bonitos.",
+          "tokens": [
+            { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "canciones", "l": "canción", "p": "NOUN", "w": true, "sp": true },
+            { "t": "populares", "l": "popular", "p": "ADJ", "w": true, "sp": true },
+            { "t": "gallegas", "l": "gallego", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "personajes", "l": "personaje", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cantan", "l": "cantar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cocina", "l": "cocina", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "esos", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "momentos", "l": "momento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "bonitos", "l": "bonito", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "El guion tiene diálogos muy naturales, con humor, que suenan como conversaciones reales entre hermanos.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "guion", "l": "guion", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "diálogos", "l": "diálogo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "naturales", "l": "natural", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "humor", "l": "humor", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "suenan", "l": "sonar", "p": "VERB", "w": true, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "conversaciones", "l": "conversación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "reales", "l": "real", "p": "ADJ", "w": true, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "hermanos", "l": "hermano", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Se nota que la directora conoce bien ese mundo, porque ella misma creció en un pueblo parecido.",
+          "tokens": [
+            { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "nota", "l": "notar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "directora", "l": "director", "p": "NOUN", "w": true, "sp": true },
+            { "t": "conoce", "l": "conocer", "p": "VERB", "w": true, "sp": true },
+            { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true },
+            { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "mundo", "l": "mundo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "ella", "l": "ella", "p": "PRON", "w": true, "sp": true },
+            { "t": "misma", "l": "mismo", "p": "DET", "w": true, "sp": true },
+            { "t": "creció", "l": "crecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pueblo", "l": "pueblo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "parecido", "l": "parecer", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s5",
+          "text": "Es su película más personal.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "película", "l": "película", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "personal", "l": "personal", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Sin embargo, la película no es perfecta.",
+          "tokens": [
+            { "t": "Sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "embargo", "l": "embargo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "película", "l": "película", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "perfecta", "l": "perfecto", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "La segunda parte es demasiado lenta y algunos personajes secundarios apenas tienen importancia.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "segunda", "l": "segundo", "p": "NUM", "w": false, "sp": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "demasiado", "l": "demasiado", "p": "ADV", "w": true, "sp": true },
+            { "t": "lenta", "l": "lento", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "personajes", "l": "personaje", "p": "NOUN", "w": true, "sp": true },
+            { "t": "secundarios", "l": "secundario", "p": "ADJ", "w": true, "sp": true },
+            { "t": "apenas", "l": "apenas", "p": "ADV", "w": true, "sp": true },
+            { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "importancia", "l": "importancia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Además, el final es bastante previsible.",
+          "tokens": [
+            { "t": "Además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "final", "l": "final", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "bastante", "l": "bastante", "p": "ADV", "w": true, "sp": true },
+            { "t": "previsible", "l": "previsible", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "La película dura dos horas, quizá veinte minutos más de lo necesario.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "película", "l": "película", "p": "NOUN", "w": true, "sp": true },
+            { "t": "dura", "l": "durar", "p": "VERB", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "horas", "l": "hora", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "quizá", "l": "quizá", "p": "ADV", "w": true, "sp": true },
+            { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true },
+            { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "necesario", "l": "necesario", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "Aun así, «El último verano» es una película honesta y emocionante, de esas que te hacen pensar en tu propia familia al salir del cine.",
+          "tokens": [
+            { "t": "Aun", "l": "aun", "p": "ADV", "w": true, "sp": true },
+            { "t": "así", "l": "así", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "último", "l": "último", "p": "ADJ", "w": true, "sp": true },
+            { "t": "verano", "l": "verano", "p": "NOUN", "w": true },
+            { "t": "»", "l": "»", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "película", "l": "película", "p": "NOUN", "w": true, "sp": true },
+            { "t": "honesta", "l": "honesto", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "emocionante", "l": "emocionante", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "esas", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true },
+            { "t": "hacen", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "pensar", "l": "pensar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true },
+            { "t": "propia", "l": "propio", "p": "ADJ", "w": true, "sp": true },
+            { "t": "familia", "l": "familia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "salir", "l": "salir", "p": "VERB", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cine", "l": "cine", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Mi nota: siete y medio sobre diez.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "nota", "l": "notar", "p": "VERB", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "siete", "l": "siete", "p": "NUM", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "medio", "l": "medio", "p": "ADJ", "w": true, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "diez", "l": "diez", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Giving opinions in a review",
+        "fr": "Donner son avis dans une critique",
+        "zh": "在影评中表达观点",
+        "ja": "レビューで意見を述べる"
+      },
+      "explanation_es": {
+        "en": "Reviews balance good and bad points: *Lo mejor de la película es…*, *Sin embargo…*, *Aun así…*"
+      },
+      "refs": ["p3s1", "p6s1"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "reparto",
+      "surface": "reparto",
+      "pos": "noun",
+      "def_en": "conjunto de actores de una película",
+      "def_es": { "en": "cast", "fr": "distribution (acteurs)", "zh": "演员阵容", "ja": "キャスト" },
+      "ref": "p3s1"
+    },
+    {
+      "lemma": "vaciar",
+      "surface": "vaciar",
+      "pos": "verb",
+      "def_en": "sacar todo lo que hay dentro",
+      "def_es": { "en": "to empty", "fr": "vider", "zh": "清空", "ja": "空にする" },
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "previsible",
+      "surface": "previsible",
+      "pos": "adjective",
+      "def_en": "que se sabe antes de que pase",
+      "def_es": { "en": "predictable", "fr": "prévisible", "zh": "可预料的", "ja": "予想できる" },
+      "ref": "p6s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Qué tipo de texto es?",
+      "evidence": ["p7s2"],
+      "rationale_es": { "en": "A film review." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una entrevista a una actriz de cine gallega" },
+        { "id": "b", "text": "La crítica de una película" },
+        { "id": "c", "text": "Un anuncio de un festival de Málaga" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Por qué vuelven los hermanos al pueblo?",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "To sell their grandmother’s house." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para celebrar el cumpleaños de la abuela" },
+        { "id": "b", "text": "Para pasar las vacaciones de Navidad" },
+        { "id": "c", "text": "Para poner en venta una vivienda" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué es lo que más le gusta al crítico?",
+      "evidence": ["p3s1"],
+      "rationale_es": { "en": "The cast." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Los actores" },
+        { "id": "b", "text": "La música" },
+        { "id": "c", "text": "El final" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cómo es el personaje de Laia Costa?",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "Controlling." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Es la hermana más tímida y callada" },
+        { "id": "b", "text": "Quiere tenerlo todo bajo control" },
+        { "id": "c", "text": "No quiere vender la casa nunca" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Al crítico le parece que el final sorprende mucho.",
+      "evidence": ["p6s3"],
+      "rationale_es": { "en": "It is predictable." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "read",
+      "prompt": "¿Cuál es la opinión general del crítico?",
+      "evidence": ["p7s1"],
+      "rationale_es": { "en": "Positive overall." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Muy negativa" },
+        { "id": "b", "text": "Indiferente" },
+        { "id": "c", "text": "Positiva, con algunos defectos" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p1s1"],
+      "rationale_es": { "en": "*Premio del público*." },
+      "type": "gap_fill",
+      "text": "La película ganó el premio del {{1}} en Málaga.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["público"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 309,
+  "lemmas": [
+    "a", "abrir", "abuelo", "acompañar", "actor", "además", "algún", "ambiente", "aparecer", "apenas",
+    "aplauso", "así", "atención", "aun", "auténtico", "año", "bastante", "bien", "bonito", "cada", "caja",
+    "canción", "cantar", "casa", "cenar", "cine", "cocina", "comer", "componer", "con", "conocer", "controlar",
+    "conversación", "costa", "crecer", "creer", "de", "demasiado", "desde", "después", "difícil", "director",
+    "discusión", "diálogo", "durante", "durar", "el", "ella", "embargo", "emocionante", "en", "entender",
+    "entre", "escena", "ese", "especialmente", "estar", "este", "familia", "familiar", "festival", "final",
+    "fotografía", "gallego", "ganar", "grito", "guion", "haber", "hacer", "hermana", "hermano", "historia",
+    "honesto", "hora", "humor", "importancia", "intentar", "joven", "lento", "llamarse", "llegar", "lluvia",
+    "luz", "magnífico", "mayor", "medio", "mejor", "melancólico", "merecer", "mi", "minuto", "mismo",
+    "momento", "muerte", "mujer", "mundo", "muy", "más", "música", "natural", "necesario", "no", "notar",
+    "paisaje", "papel", "para", "parecer", "partir", "película", "pensar", "perfecto", "pero", "personaje",
+    "personal", "pianista", "popular", "por", "porque", "premiar", "previsible", "principal", "propio",
+    "pueblo", "público", "que", "quizá", "qué", "real", "recuerdo", "reparto", "risa", "salir", "se",
+    "secreto", "secundario", "semana", "sencillo", "ser", "sin", "sobre", "sonar", "su", "también", "tarde",
+    "tener", "tiempo", "todo", "tu", "tú", "un", "vaciar", "vender", "venir", "ver", "verano", "verde",
+    "viejo", "volver", "y", "él", "último"
+  ],
+  "difficulty": 1076,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6441, "A2": 0.8034, "B1": 0.9966, "B2": 0.9966, "C1": 0.9966, "C2": 1 },
+    "off_level_lemmas": ["guion"],
+    "avg_sentence_words": 14.7,
+    "flesch_reading_ease": 74.2,
+    "checked_at": "2026-10-19T13:37:43.885Z"
+  }
+}

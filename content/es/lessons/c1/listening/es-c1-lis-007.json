@@ -532,7 +532,7 @@
         { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 100.679, "e": 101.035 },
         { "t": "escribir", "l": "escribir", "p": "VERB", "w": true, "sp": true, "s": 101.035, "e": 101.676 },
         { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 101.676, "e": 101.89 },
-        { "t": "informe", "l": "informar", "p": "VERB", "w": true, "sp": true, "s": 101.889, "e": 102.459 },
+        { "t": "informe", "l": "informe", "p": "NOUN", "w": true, "sp": true, "s": 101.889, "e": 102.459 },
         { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 102.459, "e": 102.601 },
         { "t": "programar", "l": "programar", "p": "VERB", "w": true, "s": 102.601, "e": 103.313 },
         { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
@@ -773,7 +773,7 @@
       "text": "En parte.",
       "tokens": [
         { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 150.081, "e": 150.328 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "s": 150.328, "e": 150.821 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "s": 150.328, "e": 150.821 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
       ],
       "start": 150.071,
@@ -1377,10 +1377,10 @@
     "escuela", "ese", "estar", "esto", "estudiar", "evitar", "exigir", "extender", "falta", "familia",
     "familiar", "flexible", "forma", "formación", "frontera", "funcionar", "gente", "golpe", "grande", "haber",
     "hablar", "hacer", "hijo", "hora", "idea", "igual", "imaginar", "impuesto", "incluso", "inconveniente",
-    "informal", "informar", "instalarse", "inteligente", "internet", "interrumpir", "jefe", "joven", "laboral",
+    "informal", "informe", "instalarse", "inteligente", "internet", "interrumpir", "jefe", "joven", "laboral",
     "llevar", "lunes", "masivo", "mayoría", "mejorar", "menor", "menos", "menudo", "mesa", "mixto", "modelo",
     "morir", "mucho", "muy", "más", "necesario", "necesitar", "no", "noche", "nosotros", "notar", "nuestro",
-    "nuevo", "o", "obligar", "oficina", "ordenador", "otro", "para", "parecer", "parte", "pasado", "pasar",
+    "nuevo", "o", "obligar", "oficina", "ordenador", "otro", "para", "parecer", "partir", "pasado", "pasar",
     "pensar", "peor", "pero", "persona", "poder", "por", "porque", "principal", "principio", "privilegio",
     "problema", "producir", "productividad", "profesional", "programar", "proyecto", "pueblo", "que", "quien",
     "qué", "razón", "realmente", "recibir", "reconocer", "recuperar", "reflexión", "rendir", "reservar",
@@ -1390,17 +1390,16 @@
     "tiempo", "todo", "trabajador", "trabajar", "transporte", "un", "vacío", "valorar", "vecino", "ventaja",
     "vida", "viernes", "vivienda", "vivir", "volver", "y", "ya", "zona", "él", "éxodo"
   ],
-  "difficulty": 1465,
+  "difficulty": 1452,
   "qa": {
-    "coverage_by_level": { "A1": 0.6543, "A2": 0.752, "B1": 0.8984, "B2": 0.9453, "C1": 0.9648, "C2": 1 },
+    "coverage_by_level": { "A1": 0.6602, "A2": 0.7891, "B1": 0.9238, "B2": 0.9668, "C1": 0.9785, "C2": 1 },
     "off_level_lemmas": [
-      "conciliar", "conexión", "constantemente", "creativo", "despoblación", "distancia", "instalarse",
-      "interrumpir", "necesario", "privilegio", "realmente", "reflexión", "reto", "sociólogo", "valorar",
-      "éxodo"
+      "conciliar", "conexión", "constantemente", "creativo", "despoblación", "distancia", "interrumpir",
+      "privilegio", "sociólogo", "éxodo"
     ],
     "avg_sentence_words": 10.9,
     "flesch_reading_ease": 76.2,
-    "checked_at": "2026-10-19T07:48:30.244Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/c1/es-c1-lis-007/v1.m4a",

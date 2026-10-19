@@ -276,7 +276,7 @@
             { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
             { "t": "colección", "l": "colección", "p": "NOUN", "w": true, "sp": true },
             { "t": "igualmente", "l": "igualmente", "p": "ADV", "w": true, "sp": true },
-            { "t": "nutrida", "l": "nutrido", "p": "ADJ", "w": true, "sp": true },
+            { "t": "nutrida", "l": "nutrirse", "p": "VERB", "w": true, "sp": true },
             { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
             { "t": "contraejemplos", "l": "contraejemplo", "p": "NOUN", "w": true },
             { "t": ".", "l": ".", "p": "PUNCT", "w": false }
@@ -428,7 +428,7 @@
             { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
             { "t": "hormigón", "l": "hormigón", "p": "NOUN", "w": true, "sp": true },
             { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
-            { "t": "mediados", "l": "mediados", "p": "NOUN", "w": true, "sp": true },
+            { "t": "mediados", "l": "mediar", "p": "VERB", "w": true, "sp": true },
             { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
             { "t": "siglo", "l": "siglo", "p": "NOUN", "w": true, "sp": true },
             { "t": "veinte", "l": "veinte", "p": "NUM", "w": false },
@@ -872,7 +872,7 @@
             { "t": "es", "l": "ser", "p": "AUX", "w": true },
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
-            { "t": "parte", "l": "parte", "p": "NOUN", "w": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true },
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "decir", "l": "decir", "p": "VERB", "w": true, "sp": true },
             { "t": "quiénes", "l": "qué", "p": "PRON", "w": true, "sp": true },
@@ -1535,11 +1535,11 @@
     "hacia", "hasta", "historia", "homogeneizar", "hormigón", "hoy", "humanista", "humano", "idea", "ideal",
     "ignorar", "igualmente", "imagen", "imitar", "imponerse", "impresión", "inacabable", "inclinación",
     "incluso", "indicar", "indiferente", "infinito", "intentar", "intermedio", "intervalo", "juicio", "latido",
-    "lengua", "lenguaje", "luto", "maestro", "manera", "masculino", "mediados", "medir", "mezclar", "milenio",
+    "lengua", "lenguaje", "luto", "maestro", "manera", "masculino", "mediar", "medir", "mezclar", "milenio",
     "millón", "minoritario", "mirar", "mismo", "modelar", "mostrar", "museo", "muy", "más", "música", "nacer",
-    "narrar", "natural", "necesidad", "negar", "ni", "no", "nosotros", "nuestro", "nuevo", "nutrido", "o",
+    "narrar", "natural", "necesidad", "negar", "ni", "no", "nosotros", "nuestro", "nuevo", "nutrirse", "o",
     "objetivo", "obra", "occidental", "octava", "ocupar", "ocurrir", "ofrecer", "opinión", "orden", "origen",
-    "oscilar", "otro", "oír", "paisaje", "para", "parecer", "parte", "pasar", "pasear", "percibir",
+    "oscilar", "otro", "oír", "paisaje", "para", "parecer", "partir", "pasar", "pasear", "percibir",
     "perfectamente", "permitir", "pero", "persona", "personal", "pertenecer", "planetario", "plantear",
     "plataforma", "pluralidad", "poco", "poder", "polifonía", "polo", "por", "posición", "predisposición",
     "preferencia", "preferir", "pregunta", "preguntar", "prestigioso", "principio", "privilegiado", "proceso",
@@ -1557,10 +1557,10 @@
   ],
   "difficulty": 1663,
   "qa": {
-    "coverage_by_level": { "A1": 0.5423, "A2": 0.6269, "B1": 0.7873, "B2": 0.8396, "C1": 0.8942, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5434, "A2": 0.657, "B1": 0.8163, "B2": 0.8808, "C1": 0.9109, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 23.2,
     "flesch_reading_ease": 54.3,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   }
 }

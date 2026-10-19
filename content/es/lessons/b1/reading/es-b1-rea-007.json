@@ -1,0 +1,744 @@
+{
+  "id": "es-b1-rea-007",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u03",
+  "series": "es-b1-u03-podcast",
+  "skill": "reading",
+  "genre": "article",
+  "title": "Los pódcast, la radio de nuestro tiempo",
+  "summary_es": {
+    "en": "An article on why podcasts have become so popular and how people listen to them.",
+    "fr": "Un article sur les raisons du succès des podcasts et la façon dont on les écoute.",
+    "zh": "一篇关于播客为何如此流行以及人们如何收听的文章。",
+    "ja": "ポッドキャストが人気になった理由と、その聞かれ方についての記事です。"
+  },
+  "topic": "media",
+  "tags": ["medios", "tecnología", "ocio"],
+  "can_do": ["R-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["pódcast", "episodio", "oyente", "escuchar"],
+  "est_minutes": 10,
+  "prediction_prompt": "¿Escuchas pódcast? ¿Sobre qué temas?",
+  "pre_teach": ["episodio", "oyente"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Hace unos años casi nadie sabía qué era un pódcast.",
+          "tokens": [
+            { "t": "Hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "sabía", "l": "saber", "p": "VERB", "w": true, "sp": true },
+            { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "era", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pódcast", "l": "pódcast", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Hoy millones de personas los escuchan cada día mientras van al trabajo, cocinan o hacen deporte.",
+          "tokens": [
+            { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "millones", "l": "millón", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "escuchan", "l": "escuchar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "mientras", "l": "mientras", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "van", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cocinan", "l": "cocinar", "p": "VERB", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "hacen", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "deporte", "l": "deporte", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Para muchos expertos, el pódcast es la radio de nuestro tiempo.",
+          "tokens": [
+            { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "expertos", "l": "experto", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pódcast", "l": "pódcast", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "radio", "l": "radio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "nuestro", "l": "nuestro", "p": "DET", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Un pódcast es un programa de audio que se puede escuchar en cualquier momento.",
+          "tokens": [
+            { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pódcast", "l": "pódcast", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "programa", "l": "programa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "audio", "l": "audio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "escuchar", "l": "escuchar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "cualquier", "l": "cualquier", "p": "ADJ", "w": true, "sp": true },
+            { "t": "momento", "l": "momento", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "A diferencia de la radio tradicional, no hay que estar delante del aparato a una hora concreta.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "diferencia", "l": "diferencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "radio", "l": "radio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tradicional", "l": "tradicional", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "estar", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "delante", "l": "delante", "p": "ADV", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "aparato", "l": "aparato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "concreta", "l": "concreto", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "El oyente decide cuándo, dónde y cuánto escucha.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "oyente", "l": "oyente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "decide", "l": "decidir", "p": "VERB", "w": true, "sp": true },
+            { "t": "cuándo", "l": "cuándo", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "dónde", "l": "dónde", "p": "ADV", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "cuánto", "l": "cuánto", "p": "PRON", "w": true, "sp": true },
+            { "t": "escucha", "l": "escuchar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Además, puede parar un episodio y continuarlo más tarde.",
+          "tokens": [
+            { "t": "Además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "parar", "l": "parar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "episodio", "l": "episodio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "continuarlo", "l": "continuar", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "La variedad de temas es enorme.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "variedad", "l": "variedad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "temas", "l": "tema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "enorme", "l": "enorme", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Hay pódcast de historia, de ciencia, de cocina, de idiomas y hasta de misterios sin resolver.",
+          "tokens": [
+            { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "pódcast", "l": "pódcast", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "historia", "l": "historia", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "ciencia", "l": "ciencia", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cocina", "l": "cocina", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "idiomas", "l": "idioma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "misterios", "l": "misterio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "resolver", "l": "resolver", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Algunos los hacen grandes empresas de comunicación, pero muchos otros los graban personas normales desde su casa, con un micrófono y un ordenador.",
+          "tokens": [
+            { "t": "Algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "hacen", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "grandes", "l": "grande", "p": "ADJ", "w": true, "sp": true },
+            { "t": "empresas", "l": "empresa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "comunicación", "l": "comunicación", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "otros", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "graban", "l": "grabar", "p": "VERB", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "normales", "l": "normal", "p": "ADJ", "w": true, "sp": true },
+            { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "micrófono", "l": "micrófono", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "ordenador", "l": "ordenador", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Grabar un pódcast tampoco es caro.",
+          "tokens": [
+            { "t": "Grabar", "l": "grabar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pódcast", "l": "pódcast", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tampoco", "l": "tampoco", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "caro", "l": "caro", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Con un buen micrófono y un programa gratuito se puede empezar desde la habitación de casa.",
+          "tokens": [
+            { "t": "Con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "micrófono", "l": "micrófono", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "programa", "l": "programa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "gratuito", "l": "gratuito", "p": "ADJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "empezar", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "habitación", "l": "habitación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Muchos de los programas más escuchados nacieron así, como una afición entre amigos.",
+          "tokens": [
+            { "t": "Muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "programas", "l": "programa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "escuchados", "l": "escuchar", "p": "VERB", "w": true, "sp": true },
+            { "t": "nacieron", "l": "nacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "así", "l": "así", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "afición", "l": "afición", "p": "NOUN", "w": true, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Con el tiempo, algunos han conseguido miles de oyentes y hasta anunciantes que pagan por aparecer en ellos.",
+          "tokens": [
+            { "t": "Con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "conseguido", "l": "conseguir", "p": "VERB", "w": true, "sp": true },
+            { "t": "miles", "l": "miles", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "oyentes", "l": "oyente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true },
+            { "t": "anunciantes", "l": "anunciante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "pagan", "l": "pagar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "aparecer", "l": "aparecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "ellos", "l": "ellos", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s5",
+          "text": "Hoy algunos de sus creadores viven de ello.",
+          "tokens": [
+            { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "creadores", "l": "creador", "p": "NOUN", "w": true, "sp": true },
+            { "t": "viven", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "ello", "l": "ello", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "¿Por qué tienen tanto éxito?",
+          "tokens": [
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "tanto", "l": "tanto", "p": "ADV", "w": true, "sp": true },
+            { "t": "éxito", "l": "éxito", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Según una encuesta reciente, la mayoría de los oyentes dice que los pódcast le hacen compañía.",
+          "tokens": [
+            { "t": "Según", "l": "según", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "encuesta", "l": "encuesta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "reciente", "l": "reciente", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mayoría", "l": "mayoría", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "oyentes", "l": "oyente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "dice", "l": "decir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pódcast", "l": "pódcast", "p": "NOUN", "w": true, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "hacen", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "compañía", "l": "compañía", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Escuchar una voz que habla con calma, como un amigo, resulta muy agradable en un mundo lleno de imágenes y prisas.",
+          "tokens": [
+            { "t": "Escuchar", "l": "escuchar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "voz", "l": "voz", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "habla", "l": "hablar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "calma", "l": "calma", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "amigo", "l": "amigo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "resulta", "l": "resultar", "p": "VERB", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "agradable", "l": "agradable", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "mundo", "l": "mundo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "lleno", "l": "lleno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "imágenes", "l": "imagen", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "prisas", "l": "prisa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Otros los usan para aprender algo nuevo sin tener que mirar una pantalla.",
+          "tokens": [
+            { "t": "Otros", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "usan", "l": "usar", "p": "VERB", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "aprender", "l": "aprender", "p": "VERB", "w": true, "sp": true },
+            { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "tener", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "mirar", "l": "mirar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pantalla", "l": "pantalla", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "También hay críticas.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "críticas", "l": "crítico", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Algunos psicólogos advierten de que muchas personas escuchan pódcast a todas horas y ya no saben estar en silencio.",
+          "tokens": [
+            { "t": "Algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "psicólogos", "l": "psicólogo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "advierten", "l": "advertir", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "escuchan", "l": "escuchar", "p": "VERB", "w": true, "sp": true },
+            { "t": "pódcast", "l": "pódcast", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "todas", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "saben", "l": "saber", "p": "VERB", "w": true, "sp": true },
+            { "t": "estar", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "silencio", "l": "silencio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Recomiendan dejar momentos sin auriculares para pensar con tranquilidad.",
+          "tokens": [
+            { "t": "Recomiendan", "l": "recomendar", "p": "VERB", "w": true, "sp": true },
+            { "t": "dejar", "l": "dejar", "p": "VERB", "w": true, "sp": true },
+            { "t": "momentos", "l": "momento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "auriculares", "l": "auricular", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "pensar", "l": "pensar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "tranquilidad", "l": "tranquilidad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "Sea como sea, el fenómeno no para de crecer.",
+          "tokens": [
+            { "t": "Sea", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "sea", "l": "ser", "p": "AUX", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fenómeno", "l": "fenómeno", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "crecer", "l": "crecer", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Cada mes aparecen miles de programas nuevos.",
+          "tokens": [
+            { "t": "Cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "mes", "l": "mes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "aparecen", "l": "aparecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "miles", "l": "miles", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "programas", "l": "programa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nuevos", "l": "nuevo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Quizá dentro de unos años nos parezca extraño que antes la radio solo sonara a una hora fija.",
+          "tokens": [
+            { "t": "Quizá", "l": "quizá", "p": "ADV", "w": true, "sp": true },
+            { "t": "dentro", "l": "dentro", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "parezca", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "extraño", "l": "extrañar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "radio", "l": "radio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "sonara", "l": "sonar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "fija", "l": "fijo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Contrast: a diferencia de, sin embargo",
+        "fr": "Contraste : a diferencia de, sin embargo",
+        "zh": "对比：a diferencia de, sin embargo",
+        "ja": "対比：a diferencia de, sin embargo"
+      },
+      "explanation_es": {
+        "en": "*A diferencia de* + noun introduces a contrast between two things: *A diferencia de la radio tradicional…*"
+      },
+      "refs": ["p2s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "episodio",
+      "surface": "episodio",
+      "pos": "noun",
+      "def_en": "cada parte de un programa o serie",
+      "def_es": { "en": "episode", "fr": "épisode", "zh": "一集", "ja": "エピソード" },
+      "ref": "p2s4"
+    },
+    {
+      "lemma": "oyente",
+      "surface": "oyente",
+      "pos": "noun",
+      "def_en": "persona que escucha",
+      "def_es": { "en": "listener", "fr": "auditeur", "zh": "听众", "ja": "リスナー" },
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "auricular",
+      "surface": "auriculares",
+      "pos": "noun",
+      "def_en": "aparato para escuchar en los oídos",
+      "def_es": { "en": "headphones", "fr": "écouteurs", "zh": "耳机", "ja": "イヤホン" },
+      "ref": "p6s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Cuál es el tema del artículo?",
+      "evidence": ["p1s3"],
+      "rationale_es": { "en": "The success of podcasts." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La historia de la radio en España desde sus inicios" },
+        { "id": "b", "text": "El éxito de los pódcast" },
+        { "id": "c", "text": "Cómo grabar música en casa con poco dinero" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué ventaja tiene el pódcast frente a la radio tradicional?",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "You choose when to listen." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tiene mejor calidad de sonido que cualquier radio" },
+        { "id": "b", "text": "Es gratis para todas las personas" },
+        { "id": "c", "text": "Se escucha cuando uno quiere" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Quién hace los pódcast, según el texto?",
+      "evidence": ["p3s3"],
+      "rationale_es": { "en": "Companies and ordinary people." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Empresas y también particulares" },
+        { "id": "b", "text": "Solo las grandes cadenas de radio del país" },
+        { "id": "c", "text": "Solo profesores de universidad" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Por qué los escucha la mayoría de los oyentes?",
+      "evidence": ["p5s2"],
+      "rationale_es": { "en": "They keep them company." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque son más cortos que las películas" },
+        { "id": "b", "text": "Porque les hacen compañía" },
+        { "id": "c", "text": "Porque se lo piden en el trabajo" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Los psicólogos recomiendan escuchar pódcast todo el día.",
+      "evidence": ["p6s3"],
+      "rationale_es": { "en": "They recommend time without headphones." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Qué piensa el autor sobre el futuro de los pódcast?",
+      "evidence": ["p7s1"],
+      "rationale_es": { "en": "They keep growing." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Desaparecerán muy pronto" },
+        { "id": "b", "text": "Solo los escucharán los jóvenes" },
+        { "id": "c", "text": "Seguirán creciendo" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p3s3"],
+      "rationale_es": { "en": "*Un ordenador*." },
+      "type": "gap_fill",
+      "text": "Muchos pódcast se graban con un micrófono y un {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["ordenador"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 311,
+  "lemmas": [
+    "a", "además", "advertir", "afición", "agradable", "algo", "algún", "amigo", "antes", "anunciante",
+    "aparato", "aparecer", "aprender", "así", "audio", "auricular", "año", "bueno", "cada", "calma", "caro",
+    "casa", "casi", "ciencia", "cocina", "cocinar", "comer", "compañía", "comunicación", "con", "concreto",
+    "conseguir", "continuar", "creador", "crecer", "crítico", "cualquier", "cuándo", "cuánto", "de", "decidir",
+    "decir", "dejar", "delante", "dentro", "deporte", "desde", "diferencia", "día", "dónde", "el", "ello",
+    "ellos", "empezar", "empresa", "en", "encuesta", "enorme", "entre", "episodio", "escuchar", "estar",
+    "experto", "extrañar", "fenómeno", "fijo", "grabar", "grande", "gratuito", "haber", "habitación", "hablar",
+    "hacer", "hasta", "historia", "hora", "hoy", "idioma", "imagen", "ir", "lleno", "mayoría", "mes",
+    "micrófono", "mientras", "miles", "millón", "mirar", "misterio", "momento", "mucho", "mundo", "muy", "más",
+    "nacer", "no", "normal", "nosotros", "nuestro", "nuevo", "o", "ordenador", "otro", "oyente", "pagar",
+    "pantalla", "para", "parar", "parecer", "pensar", "pero", "persona", "poder", "por", "prisa", "programa",
+    "psicólogo", "pódcast", "que", "quizá", "qué", "radio", "reciente", "recomendar", "resolver", "resultar",
+    "saber", "se", "según", "ser", "silencio", "sin", "solo", "sonar", "su", "también", "tampoco", "tanto",
+    "tarde", "tema", "tener", "tiempo", "todo", "trabajar", "tradicional", "tranquilidad", "un", "usar",
+    "variedad", "vivir", "voz", "y", "ya", "él", "éxito"
+  ],
+  "difficulty": 1064,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6206, "A2": 0.7942, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 12.4,
+    "flesch_reading_ease": 75.1,
+    "checked_at": "2026-10-19T13:16:43.897Z"
+  }
+}

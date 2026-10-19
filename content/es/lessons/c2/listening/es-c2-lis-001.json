@@ -230,7 +230,7 @@
         { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 43.509, "e": 43.708 },
         { "t": "cumplen", "l": "cumplir", "p": "VERB", "w": true, "sp": true, "s": 43.708, "e": 44.24 },
         { "t": "buena", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 44.24, "e": 44.639 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 44.638, "e": 45.037 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 44.638, "e": 45.037 },
         { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 45.037, "e": 45.303 },
         { "t": "requisito", "l": "requisito", "p": "NOUN", "w": true, "s": 45.303, "e": 45.967 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
@@ -388,7 +388,7 @@
         { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 80.798, "e": 81.014 },
         { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "s": 81.014, "e": 81.176 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
-        { "t": "Parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 81.706, "e": 82.03 },
+        { "t": "Parte", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 81.706, "e": 82.03 },
         { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 82.03, "e": 82.246 },
         { "t": "valor", "l": "valor", "p": "NOUN", "w": true, "sp": true, "s": 82.245, "e": 82.569 },
         { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 82.569, "e": 82.731 },
@@ -1334,7 +1334,7 @@
     "irresponsable", "leer", "legítimo", "mantener", "matiz", "mecanismo", "mediocre", "melodía", "mente",
     "mercado", "merecer", "miles", "millón", "mirar", "momento", "mucho", "muchísimo", "muy", "máquina", "más",
     "mínimo", "nacer", "necesidad", "necesitar", "negar", "no", "norma", "nosotros", "novela", "novelista",
-    "nuevo", "o", "obra", "ocurrir", "oficio", "ojalá", "original", "otro", "para", "parte", "pasar", "pedir",
+    "nuevo", "o", "obra", "ocurrir", "oficio", "ojalá", "original", "otro", "para", "partir", "pasar", "pedir",
     "pena", "permiso", "permitir", "pero", "plantear", "plenamente", "poco", "poder", "poema", "por", "porque",
     "pregunta", "preocupación", "prever", "problema", "proceso", "producir", "profundamente", "proponer",
     "protección", "práctico", "pues", "público", "que", "quien", "quizá", "qué", "razón", "reconocer",
@@ -1346,11 +1346,11 @@
   ],
   "difficulty": 1630,
   "qa": {
-    "coverage_by_level": { "A1": 0.5684, "A2": 0.6699, "B1": 0.7891, "B2": 0.8457, "C1": 0.873, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5684, "A2": 0.6992, "B1": 0.8145, "B2": 0.8809, "C1": 0.8926, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 9.2,
     "flesch_reading_ease": 67.2,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/c2/es-c2-lis-001/v1.m4a",

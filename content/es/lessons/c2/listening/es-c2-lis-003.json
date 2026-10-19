@@ -477,7 +477,7 @@
         { "t": "final", "l": "final", "p": "NOUN", "w": true, "sp": true, "s": 103.994, "e": 104.448 },
         { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 104.448, "e": 104.675 },
         { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 104.675, "e": 104.902 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 104.901, "e": 105.355 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 104.901, "e": 105.355 },
         { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 105.355, "e": 105.658 },
         { "t": "lenta", "l": "lento", "p": "ADJ", "w": true, "sp": true, "s": 105.658, "e": 106.112 },
         { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 106.112, "e": 106.263 },
@@ -1116,7 +1116,7 @@
     "lector", "leer", "lengua", "lento", "letra", "libro", "literario", "llegar", "llevar", "lujo", "línea",
     "materno", "matizar", "mayor", "mecánico", "mes", "mi", "mirar", "momento", "mucho", "más", "natural",
     "no", "nombre", "nosotros", "notar", "novela", "nuevo", "o", "objetivo", "oficio", "original", "otro",
-    "paciente", "palabra", "papel", "para", "parte", "pasar", "pequeño", "pero", "plano", "poco", "por",
+    "paciente", "palabra", "papel", "para", "partir", "pasar", "pequeño", "pero", "plano", "poco", "por",
     "portada", "posible", "precisamente", "proceso", "producir", "programa", "propio", "publicar", "que",
     "querer", "quien", "qué", "raro", "reposar", "revisión", "reír", "ritmo", "ruego", "rápido", "se",
     "semana", "sentir", "ser", "si", "siempre", "sin", "sino", "sobre", "soledad", "soler", "solo", "sonar",
@@ -1126,11 +1126,11 @@
   ],
   "difficulty": 1630,
   "qa": {
-    "coverage_by_level": { "A1": 0.6429, "A2": 0.7357, "B1": 0.8833, "B2": 0.9333, "C1": 0.9548, "C2": 1 },
+    "coverage_by_level": { "A1": 0.6429, "A2": 0.769, "B1": 0.9024, "B2": 0.9524, "C1": 0.9643, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 10.1,
     "flesch_reading_ease": 82.6,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/c2/es-c2-lis-003/v1.m4a",

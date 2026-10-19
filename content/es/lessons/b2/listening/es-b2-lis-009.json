@@ -383,7 +383,7 @@
         { "t": "Cuál", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 68.36, "e": 68.725 },
         { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 68.725, "e": 69.017 },
         { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 69.017, "e": 69.236 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 69.236, "e": 69.674 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 69.236, "e": 69.674 },
         { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 69.674, "e": 69.966 },
         { "t": "difícil", "l": "difícil", "p": "ADJ", "w": true, "s": 69.966, "e": 70.55 },
         { "t": "?", "l": "?", "p": "PUNCT", "w": false }
@@ -459,7 +459,7 @@
         { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
         { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 82.305, "e": 82.456 },
         { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 82.456, "e": 82.683 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 82.684, "e": 83.138 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 82.684, "e": 83.138 },
         { "t": "económica", "l": "económico", "p": "ADJ", "w": true, "s": 83.138, "e": 83.895 },
         { "t": "?", "l": "?", "p": "PUNCT", "w": false }
       ],
@@ -934,7 +934,7 @@
     "gente", "gustar", "haber", "hacer", "hijo", "horario", "idea", "indemnización", "inmediatamente", "ir",
     "levantarse", "libertad", "llevar", "madre", "mano", "masa", "mañana", "mes", "mi", "mismo", "momento",
     "mucho", "muy", "más", "negocio", "ni", "no", "nosotros", "o", "oficina", "otro", "pan", "panadería",
-    "para", "parte", "pedir", "pensar", "peor", "pequeño", "perder", "pero", "poco", "por", "porque",
+    "para", "partir", "pedir", "pensar", "peor", "pequeño", "perder", "pero", "poco", "por", "porque",
     "preparar", "profesional", "propio", "proyecto", "préstamo", "que", "querer", "qué", "recomendar", "saber",
     "salvar", "se", "seguro", "semana", "ser", "siempre", "sin", "socio", "solo", "surgir", "también", "tarde",
     "tener", "todo", "tomar", "trabajar", "tu", "tú", "un", "unir", "usar", "vacaciones", "vecino", "venir",
@@ -942,11 +942,11 @@
   ],
   "difficulty": 1243,
   "qa": {
-    "coverage_by_level": { "A1": 0.7075, "A2": 0.8231, "B1": 0.9592, "B2": 1, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.7143, "A2": 0.8571, "B1": 0.9728, "B2": 1, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 9.2,
     "flesch_reading_ease": 81.4,
-    "checked_at": "2026-10-19T07:42:35.028Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/b2/es-b2-lis-009/v1.m4a",

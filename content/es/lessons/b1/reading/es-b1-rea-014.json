@@ -1,0 +1,763 @@
+{
+  "id": "es-b1-rea-014",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u03",
+  "series": "es-b1-u03-videojuegos",
+  "skill": "reading",
+  "genre": "forum",
+  "title": "¿Son buenos los videojuegos?",
+  "summary_es": {
+    "en": "Forum posts from parents and players discussing whether video games are good or bad.",
+    "fr": "Messages d’un forum où des parents et des joueurs discutent des jeux vidéo.",
+    "zh": "论坛上家长和玩家讨论电子游戏的好坏。",
+    "ja": "親とゲーム好きがゲームの良し悪しを話し合う掲示板の投稿です。"
+  },
+  "topic": "games",
+  "tags": ["videojuegos", "opinión", "familia"],
+  "can_do": ["R-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["videojuego", "consola", "límite", "adicción"],
+  "est_minutes": 10,
+  "prediction_prompt": "¿Juegas a videojuegos? ¿Cuántas horas a la semana?",
+  "pre_teach": ["consola", "adicción"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Pregunta de LauraM: Mi hijo de doce años pasa casi tres horas al día jugando a la consola.",
+          "tokens": [
+            { "t": "Pregunta", "l": "pregunta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "LauraM", "l": "lauram", "p": "PROPN", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "hijo", "l": "hijo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "doce", "l": "doce", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pasa", "l": "pasar", "p": "VERB", "w": true, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true },
+            { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "jugando", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "consola", "l": "consola", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Me preocupa que se esté volviendo adicto.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "preocupa", "l": "preocuparse", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "esté", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "volviendo", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "adicto", "l": "adicto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "¿Qué hacéis vosotros en casa?",
+          "tokens": [
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "hacéis", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "vosotros", "l": "vosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "¿Ponéis límites?",
+          "tokens": [
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Ponéis", "l": "poner", "p": "VERB", "w": true, "sp": true },
+            { "t": "límites", "l": "límite", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Respuesta de Javi_77: Yo tengo dos hijas y en casa la regla es clara: entre semana, una hora; el fin de semana, dos.",
+          "tokens": [
+            { "t": "Respuesta", "l": "respuesta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Javi", "l": "javi", "p": "PROPN", "w": false },
+            { "t": "_", "l": "_", "p": "PUNCT", "w": false },
+            { "t": "77", "l": "77", "p": "NUM", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "tengo", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "hijas", "l": "hijo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "regla", "l": "regla", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "clara", "l": "clara", "p": "PROPN", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "hora", "l": "hora", "p": "NOUN", "w": true },
+            { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fin", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Al principio protestaban, pero ya se han acostumbrado.",
+          "tokens": [
+            { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "protestaban", "l": "protestar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "acostumbrado", "l": "acostumbrarse", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Lo importante es que lo cumplan también los padres con el móvil.",
+          "tokens": [
+            { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "importante", "l": "importante", "p": "ADJ", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "cumplan", "l": "cumplir", "p": "VERB", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "padres", "l": "padre", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "móvil", "l": "móvil", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Respuesta de Gamer_Ana: Tengo veinticinco años y juego desde pequeña.",
+          "tokens": [
+            { "t": "Respuesta", "l": "respuesta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Gamer", "l": "gamer", "p": "PROPN", "w": false },
+            { "t": "_", "l": "_", "p": "PUNCT", "w": false },
+            { "t": "Ana", "l": "ana", "p": "PROPN", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "veinticinco", "l": "veinticinco", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "juego", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Gracias a los videojuegos aprendí inglés y hoy trabajo como programadora.",
+          "tokens": [
+            { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "videojuegos", "l": "videojuego", "p": "NOUN", "w": true, "sp": true },
+            { "t": "aprendí", "l": "aprender", "p": "VERB", "w": true, "sp": true },
+            { "t": "inglés", "l": "inglés", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "programadora", "l": "programador", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "No todos los juegos son iguales: hay muchos que enseñan a resolver problemas o a trabajar en equipo.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "juegos", "l": "juego", "p": "NOUN", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "iguales", "l": "igual", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "enseñan", "l": "enseñar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "resolver", "l": "resolver", "p": "VERB", "w": true, "sp": true },
+            { "t": "problemas", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "trabajar", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "equipo", "l": "equipo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "En mi opinión, en lugar de prohibir, los padres deberían jugar alguna vez con sus hijos.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "opinión", "l": "opinión", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "lugar", "l": "lugar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "prohibir", "l": "prohibir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "padres", "l": "padre", "p": "NOUN", "w": true, "sp": true },
+            { "t": "deberían", "l": "deber", "p": "VERB", "w": true, "sp": true },
+            { "t": "jugar", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "alguna", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "hijos", "l": "hijo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Respuesta de PedroProfe: Soy profesor de secundaria y veo a diario alumnos que llegan cansados porque juegan hasta tarde.",
+          "tokens": [
+            { "t": "Respuesta", "l": "respuesta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "PedroProfe", "l": "pedroprofe", "p": "PROPN", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Soy", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "profesor", "l": "profesor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "secundaria", "l": "secundario", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "veo", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "diario", "l": "diario", "p": "ADJ", "w": true, "sp": true },
+            { "t": "alumnos", "l": "alumno", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "llegan", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cansados", "l": "cansado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "juegan", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "El problema no es el juego, sino quitar horas al sueño.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "juego", "l": "jugar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "quitar", "l": "quitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "sueño", "l": "sueño", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Recomiendo que la consola no esté en la habitación.",
+          "tokens": [
+            { "t": "Recomiendo", "l": "recomendar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "consola", "l": "consola", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "esté", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "habitación", "l": "habitación", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Respuesta de LauraM: Muchas gracias a todos.",
+          "tokens": [
+            { "t": "Respuesta", "l": "respuesta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "LauraM", "l": "lauram", "p": "PROPN", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "todos", "l": "todo", "p": "DET", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Creo que voy a probar lo del horario y, sobre todo, a preguntarle a mi hijo qué le gusta de sus juegos.",
+          "tokens": [
+            { "t": "Creo", "l": "creer", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "probar", "l": "probar", "p": "VERB", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "horario", "l": "horario", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "preguntarle", "l": "preguntar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "hijo", "l": "hijo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "juegos", "l": "juego", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Quizás me sorprenda.",
+          "tokens": [
+            { "t": "Quizás", "l": "quizás", "p": "ADV", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "sorprenda", "l": "sorprender", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Respuesta de Lucas_15: Tengo quince años y juego bastante, pero también saco buenas notas.",
+          "tokens": [
+            { "t": "Respuesta", "l": "respuesta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Lucas", "l": "lucas", "p": "PROPN", "w": false },
+            { "t": "_", "l": "_", "p": "PUNCT", "w": false },
+            { "t": "15", "l": "15", "p": "NUM", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "quince", "l": "quince", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "juego", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "bastante", "l": "bastante", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "saco", "l": "sacar", "p": "VERB", "w": true, "sp": true },
+            { "t": "buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "notas", "l": "notar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Creo que muchos adultos piensan que todos los juegos son violentos, y no es verdad.",
+          "tokens": [
+            { "t": "Creo", "l": "creer", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "adultos", "l": "adulto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "piensan", "l": "pensar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "juegos", "l": "juego", "p": "NOUN", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "violentos", "l": "violento", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "verdad", "l": "verdad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Mi favorito es un juego de construir ciudades: hay que pensar en el transporte, en la energía y en el medio ambiente.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "favorito", "l": "favorito", "p": "ADJ", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "juego", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "construir", "l": "construir", "p": "VERB", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "pensar", "l": "pensar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "transporte", "l": "transporte", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "energía", "l": "energía", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "medio", "l": "medio", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ambiente", "l": "ambiente", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "Mis padres al principio no lo entendían, pero ahora a veces juegan conmigo.",
+          "tokens": [
+            { "t": "Mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "padres", "l": "padre", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "entendían", "l": "entender", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "juegan", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "conmigo", "l": "yo", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s5",
+          "text": "Lo que más me molesta es cuando me quitan la consola sin explicarme por qué.",
+          "tokens": [
+            { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "molesta", "l": "molestar", "p": "VERB", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "quitan", "l": "quitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "consola", "l": "consola", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "explicarme", "l": "explicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "qué", "l": "qué", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s6",
+          "text": "Prefiero que hablemos.",
+          "tokens": [
+            { "t": "Prefiero", "l": "preferir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "hablemos", "l": "hablar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "Respuesta de Marta_34: Una idea más: nosotros usamos los juegos como premio.",
+          "tokens": [
+            { "t": "Respuesta", "l": "respuesta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Marta", "l": "marta", "p": "PROPN", "w": false },
+            { "t": "_", "l": "_", "p": "PUNCT", "w": false },
+            { "t": "34", "l": "34", "p": "NUM", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "nosotros", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "usamos", "l": "usar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "juegos", "l": "juego", "p": "NOUN", "w": true, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "premio", "l": "premiar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Primero los deberes y el deporte; luego, la consola.",
+          "tokens": [
+            { "t": "Primero", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "deberes", "l": "deberes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "deporte", "l": "deporte", "p": "NOUN", "w": true },
+            { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "luego", "l": "luego", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "consola", "l": "consola", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Así no hay discusiones.",
+          "tokens": [
+            { "t": "Así", "l": "así", "p": "ADV", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "discusiones", "l": "discusión", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Giving opinions in a forum",
+        "fr": "Donner son avis sur un forum",
+        "zh": "在论坛上发表意见",
+        "ja": "掲示板で意見を述べる"
+      },
+      "explanation_es": { "en": "Useful phrases: *En mi opinión…*, *El problema no es… sino…*, *en lugar de* + infinitive." },
+      "refs": ["p3s4", "p4s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "adicto",
+      "surface": "adicto",
+      "pos": "adjective",
+      "def_en": "que no puede dejar algo",
+      "def_es": { "en": "addicted", "fr": "accro", "zh": "上瘾的", "ja": "依存した" },
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "programador",
+      "surface": "programadora",
+      "pos": "noun",
+      "def_en": "persona que crea programas de ordenador",
+      "def_es": { "en": "programmer", "fr": "programmeuse", "zh": "程序员", "ja": "プログラマー" },
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "deberes",
+      "surface": "deberes",
+      "pos": "noun",
+      "def_en": "tareas del colegio para hacer en casa",
+      "def_es": { "en": "homework", "fr": "devoirs", "zh": "家庭作业", "ja": "宿題" },
+      "ref": "p7s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Sobre qué discuten en el foro?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "Video games and children." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Sobre los mejores colegios de la ciudad" },
+        { "id": "b", "text": "Sobre los videojuegos y los niños" },
+        { "id": "c", "text": "Sobre cómo encontrar trabajo de programador" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué preocupa a LauraM?",
+      "evidence": ["p1s1"],
+      "rationale_es": { "en": "Too much gaming." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que su hijo saque malas notas en inglés" },
+        { "id": "b", "text": "Que la consola sea muy cara" },
+        { "id": "c", "text": "Que su hijo juegue demasiado" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuánto pueden jugar las hijas de Javi entre semana?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "One hour." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una hora" },
+        { "id": "b", "text": "Dos horas" },
+        { "id": "c", "text": "Tres horas" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "attitude_opinion",
+      "phase": "read",
+      "prompt": "¿Qué propone Gamer_Ana a los padres?",
+      "evidence": ["p3s4"],
+      "rationale_es": { "en": "Play with them." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Prohibir todos los juegos violentos en casa" },
+        { "id": "b", "text": "Compartir ese tiempo de juego" },
+        { "id": "c", "text": "Comprar solo juegos educativos" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Según el profesor, el problema es que los alumnos duermen poco.",
+      "evidence": ["p4s2"],
+      "rationale_es": { "en": "Lost sleep." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué va a hacer LauraM?",
+      "evidence": ["p5s2"],
+      "rationale_es": { "en": "Try a schedule and talk." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Vender la consola de su hijo por internet" },
+        { "id": "b", "text": "Llevar a su hijo a un psicólogo infantil" },
+        { "id": "c", "text": "Poner horas fijas y escuchar a su hijo" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p7s1"],
+      "rationale_es": { "en": "*Como premio*." },
+      "type": "gap_fill",
+      "text": "Marta usa los juegos como {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["premio"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 312,
+  "lemmas": [
+    "a", "acostumbrarse", "adicto", "adulto", "ahora", "algún", "alumno", "ambiente", "aprender", "así", "año",
+    "bastante", "bueno", "cansado", "casa", "casi", "ciudad", "comer", "con", "consola", "construir", "creer",
+    "cuando", "cumplir", "de", "deber", "deberes", "deporte", "desde", "diario", "discusión", "día", "el",
+    "en", "energía", "enseñar", "entender", "entre", "equipo", "estar", "explicar", "favorito", "fin",
+    "gustar", "haber", "habitación", "hablar", "hacer", "hasta", "hijo", "hora", "horario", "hoy", "idea",
+    "igual", "importante", "inglés", "ir", "juego", "jugar", "llegar", "luego", "lugar", "límite", "medio",
+    "mi", "molestar", "mucho", "más", "móvil", "no", "nosotros", "notar", "o", "opinión", "padre", "pasar",
+    "pensar", "pequeño", "pero", "poner", "por", "porque", "preferir", "pregunta", "preguntar", "premiar",
+    "preocuparse", "principio", "probar", "problema", "profesor", "programador", "prohibir", "protestar",
+    "que", "quitar", "quizás", "qué", "recomendar", "regla", "resolver", "respuesta", "sacar", "se",
+    "secundario", "semana", "ser", "sin", "sino", "sobre", "sorprender", "su", "sueño", "también", "tarde",
+    "tener", "todo", "trabajar", "transporte", "un", "usar", "ver", "verdad", "vez", "videojuego", "violento",
+    "volver", "vosotros", "y", "ya", "yo", "él"
+  ],
+  "difficulty": 1079,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7251, "A2": 0.8557, "B1": 0.9828, "B2": 0.9828, "C1": 0.9828, "C2": 1 },
+    "off_level_lemmas": ["adicto", "consola"],
+    "avg_sentence_words": 12,
+    "flesch_reading_ease": 82.9,
+    "checked_at": "2026-10-19T13:37:43.885Z"
+  }
+}

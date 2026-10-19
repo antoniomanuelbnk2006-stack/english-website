@@ -970,7 +970,7 @@
             { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
             { "t": "precariedad", "l": "precariedad", "p": "NOUN", "w": true, "sp": true },
             { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
-            { "t": "razones", "l": "razón", "p": "NOUN", "w": true, "sp": true },
+            { "t": "razones", "l": "razonar", "p": "VERB", "w": true, "sp": true },
             { "t": "ajenas", "l": "ajeno", "p": "ADJ", "w": true, "sp": true },
             { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
             { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
@@ -1299,7 +1299,7 @@
     "postura", "precariedad", "precedente", "pregunta", "preguntar", "prejuicio", "preparar", "presionar",
     "prioridad", "problema", "productivo", "profesional", "profesión", "programa", "proponer", "prosperidad",
     "protección", "próximo", "punto", "que", "quedar", "querer", "quien", "quitar", "quizá", "qué",
-    "radiólogo", "razón", "realizar", "reciclar", "recordar", "recurrir", "recurso", "redactar", "reducción",
+    "radiólogo", "razonar", "realizar", "reciclar", "recordar", "recurrir", "recurso", "redactar", "reducción",
     "reducir", "región", "reorganizar", "repartir", "repetir", "repetitivo", "reproducir", "resolver",
     "responsable", "respuesta", "resultado", "resumir", "revisar", "revés", "riesgo", "ruidoso", "saber", "se",
     "según", "sencillo", "sentir", "separar", "ser", "servicio", "señalar", "si", "sin", "sino", "sistema",
@@ -1309,16 +1309,15 @@
     "transformar", "transparencia", "un", "utilidad", "utilizar", "varios", "velocidad", "ver", "vez", "vivir",
     "voluntad", "y", "ya", "él", "ético", "último", "únicamente"
   ],
-  "difficulty": 1497,
+  "difficulty": 1493,
   "qa": {
-    "coverage_by_level": { "A1": 0.5501, "A2": 0.6379, "B1": 0.7841, "B2": 0.8426, "C1": 0.968, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5515, "A2": 0.6588, "B1": 0.8008, "B2": 0.8747, "C1": 0.9721, "C2": 1 },
     "off_level_lemmas": [
-      "adaptación", "ajeno", "argumentar", "artificial", "automático", "caer", "continuar", "corregir",
-      "definir", "desigualdad", "inteligencia", "irresponsable", "lección", "pertenecer", "recurso",
-      "reproducir", "sostener", "tender"
+      "adaptación", "ajeno", "argumentar", "artificial", "automático", "caer", "definir", "desigualdad",
+      "inteligencia", "irresponsable", "lección", "recurso", "reproducir", "sostener", "tender"
     ],
     "avg_sentence_words": 20.7,
     "flesch_reading_ease": 50.9,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   }
 }

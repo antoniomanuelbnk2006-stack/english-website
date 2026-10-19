@@ -76,7 +76,7 @@
         { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
         { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 12.685, "e": 12.833 },
         { "t": "gran", "l": "grande", "p": "ADJ", "w": true, "sp": true, "s": 12.833, "e": 13.204 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 13.204, "e": 13.649 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 13.204, "e": 13.649 },
         { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 13.649, "e": 13.871 },
         { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 13.871, "e": 14.168 },
         { "t": "basura", "l": "basura", "p": "NOUN", "w": true, "sp": true, "s": 14.168, "e": 14.687 },
@@ -627,7 +627,7 @@
     "diferente", "dudar", "día", "el", "en", "energía", "enorme", "envase", "escuchar", "ese", "esfuerzo",
     "español", "especial", "farmacia", "frasco", "fruta", "grande", "guardar", "haber", "hablar", "hacer",
     "hasta", "hoy", "hábito", "importante", "ir", "kilo", "lata", "llevar", "marrón", "mañana", "medicina",
-    "mucho", "muy", "necesitar", "ningún", "no", "normal", "o", "otro", "oyente", "papel", "para", "parte",
+    "mucho", "muy", "necesitar", "ningún", "no", "normal", "o", "otro", "oyente", "papel", "para", "partir",
     "pequeño", "pero", "persona", "pila", "plástico", "poco", "poder", "por", "producir", "propio", "que",
     "querer", "qué", "reciclaje", "reciclar", "reducir", "regalar", "residuo", "resto", "resultado",
     "reutilizar", "ropa", "río", "se", "semana", "separar", "ser", "si", "sobre", "supermercado", "también",
@@ -635,11 +635,11 @@
   ],
   "difficulty": 1075,
   "qa": {
-    "coverage_by_level": { "A1": 0.662, "A2": 0.7183, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.6667, "A2": 0.7981, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 12.1,
     "flesch_reading_ease": 80.6,
-    "checked_at": "2026-10-18T22:29:03.857Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/b1/es-b1-lis-003/v1.m4a",

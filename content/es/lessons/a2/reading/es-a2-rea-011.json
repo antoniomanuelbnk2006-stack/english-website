@@ -1,0 +1,497 @@
+{
+  "id": "es-a2-rea-011",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u06",
+  "series": "es-a2-u06-normas",
+  "skill": "reading",
+  "genre": "notice",
+  "title": "Normas del edificio",
+  "summary_es": {
+    "en": "A notice from a building’s residents’ association with rules for neighbours.",
+    "fr": "Un avis de la copropriété avec les règles pour les voisins.",
+    "zh": "一栋楼的业主委员会发布的邻里规定通知。",
+    "ja": "マンションの管理組合からの、住民向けルールのお知らせです。"
+  },
+  "topic": "city-housing",
+  "tags": ["vecinos", "normas", "casa"],
+  "can_do": ["R-A2-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["vecino", "basura", "ruido", "ascensor"],
+  "est_minutes": 6,
+  "prediction_prompt": "¿Qué normas hay en tu edificio o en tu casa?",
+  "pre_teach": ["basura", "portal"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Estimados vecinos:",
+          "tokens": [
+            { "t": "Estimados", "l": "estimado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "En la última reunión decidimos recordar algunas normas para vivir mejor todos juntos.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "última", "l": "último", "p": "ADJ", "w": true, "sp": true },
+            { "t": "reunión", "l": "reunión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "decidimos", "l": "decidir", "p": "VERB", "w": true, "sp": true },
+            { "t": "recordar", "l": "recordar", "p": "VERB", "w": true, "sp": true },
+            { "t": "algunas", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "normas", "l": "norma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "vivir", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true },
+            { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "juntos", "l": "junto", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Basura: hay que bajar la basura por la noche, entre las ocho y las once.",
+          "tokens": [
+            { "t": "Basura", "l": "basura", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "bajar", "l": "bajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "basura", "l": "basura", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "noche", "l": "noche", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "once", "l": "once", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Los contenedores están en la calle, al lado del portal.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "contenedores", "l": "contenedor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "están", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "calle", "l": "calle", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "lado", "l": "lado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "portal", "l": "portal", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Por favor, separad el papel, el plástico y el vidrio.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "favor", "l": "favor", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "separad", "l": "separar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "papel", "l": "papel", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "plástico", "l": "plástico", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vidrio", "l": "vidrio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Ruido: después de las diez de la noche no se puede poner la música alta.",
+          "tokens": [
+            { "t": "Ruido", "l": "ruido", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "poner", "l": "poner", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "música", "l": "música", "p": "NOUN", "w": true, "sp": true },
+            { "t": "alta", "l": "alto", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Tampoco se pueden hacer obras los domingos.",
+          "tokens": [
+            { "t": "Tampoco", "l": "tampoco", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "obras", "l": "obra", "p": "NOUN", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "domingos", "l": "domingo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Si vais a hacer una fiesta, avisad a los vecinos antes.",
+          "tokens": [
+            { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "vais", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "fiesta", "l": "fiesta", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "avisad", "l": "avisar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Ascensor: los niños menores de doce años deben usarlo con un adulto.",
+          "tokens": [
+            { "t": "Ascensor", "l": "ascensor", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "niños", "l": "niño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "menores", "l": "menor", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "doce", "l": "doce", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "deben", "l": "deber", "p": "VERB", "w": true, "sp": true },
+            { "t": "usarlo", "l": "usar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "adulto", "l": "adulto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Bicicletas: no se pueden dejar en el portal, hay un cuarto para ellas en el sótano.",
+          "tokens": [
+            { "t": "Bicicletas", "l": "bicicleta", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "dejar", "l": "dejar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "portal", "l": "portal", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cuarto", "l": "cuarto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "ellas", "l": "ellos", "p": "PRON", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sótano", "l": "sótano", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Muchas gracias por vuestra ayuda.",
+          "tokens": [
+            { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "vuestra", "l": "vuestro", "p": "DET", "w": true, "sp": true },
+            { "t": "ayuda", "l": "ayudar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "La comunidad de vecinos",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "comunidad", "l": "comunidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Perros: no pueden estar solos en el balcón ni en las escaleras.",
+          "tokens": [
+            { "t": "Perros", "l": "perro", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "estar", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "solos", "l": "solo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "balcón", "l": "balcón", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "escaleras", "l": "escalera", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Si tienes un problema, puedes hablar con el presidente de la comunidad.",
+          "tokens": [
+            { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "tienes", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "problema", "l": "problema", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "puedes", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "hablar", "l": "hablar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "presidente", "l": "presidente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "comunidad", "l": "comunidad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "La próxima reunión es el día 15 a las ocho de la tarde.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "próxima", "l": "próximo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "reunión", "l": "reunión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "15", "l": "15", "p": "NUM", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Rules: hay que, no se puede",
+        "fr": "Règles : hay que, no se puede",
+        "zh": "规定：hay que, no se puede",
+        "ja": "ルール：hay que, no se puede"
+      },
+      "explanation_es": {
+        "en": "*Hay que* + infinitive means it is necessary; *no se puede* + infinitive means it is not allowed."
+      },
+      "refs": ["p2s1", "p3s1"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "contenedor",
+      "surface": "contenedores",
+      "pos": "noun",
+      "def_en": "recipiente grande para la basura",
+      "def_es": { "en": "bins, containers", "fr": "conteneurs", "zh": "垃圾箱", "ja": "ごみ収集容器" },
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "obra",
+      "surface": "obras",
+      "pos": "noun",
+      "def_en": "trabajos para arreglar una casa",
+      "def_es": { "en": "building work", "fr": "travaux", "zh": "施工", "ja": "工事" },
+      "ref": "p3s2"
+    },
+    {
+      "lemma": "sótano",
+      "surface": "sótano",
+      "pos": "noun",
+      "def_en": "parte del edificio bajo el suelo",
+      "def_es": { "en": "basement", "fr": "sous-sol", "zh": "地下室", "ja": "地下室" },
+      "ref": "p4s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Quién escribe este texto?",
+      "evidence": ["p4s4"],
+      "rationale_es": { "en": "The residents’ association." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un vecino enfadado" },
+        { "id": "b", "text": "La comunidad de vecinos" },
+        { "id": "c", "text": "El ayuntamiento de la ciudad" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuándo hay que bajar la basura?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "Between 8 and 11 p.m." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Por la mañana temprano, antes de las nueve" },
+        { "id": "b", "text": "Solo los domingos por la tarde" },
+        { "id": "c", "text": "Entre las ocho y las once de la noche" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué hay que separar?",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "Paper, plastic and glass." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cada tipo de basura en su sitio" },
+        { "id": "b", "text": "La ropa vieja y los zapatos usados" },
+        { "id": "c", "text": "Las bicicletas y los coches del garaje" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Se pueden hacer obras los domingos.",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "Not on Sundays." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué hay que hacer antes de una fiesta?",
+      "evidence": ["p3s3"],
+      "rationale_es": { "en": "Tell the neighbours." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Pedir permiso al ayuntamiento" },
+        { "id": "b", "text": "Avisar a los vecinos" },
+        { "id": "c", "text": "Pagar una multa" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Dónde se dejan las bicicletas?",
+      "evidence": ["p4s2"],
+      "rationale_es": { "en": "In a basement room." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En el portal, al lado de la puerta" },
+        { "id": "b", "text": "En el ascensor" },
+        { "id": "c", "text": "En un cuarto del sótano" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p4s1"],
+      "rationale_es": { "en": "*Con un adulto*." },
+      "type": "gap_fill",
+      "text": "Los niños pequeños usan el ascensor con un {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["adulto"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 157,
+  "lemmas": [
+    "a", "adulto", "algún", "alto", "antes", "ascensor", "avisar", "ayudar", "año", "bajar", "balcón",
+    "basura", "bicicleta", "calle", "comunidad", "con", "contenedor", "cuarto", "de", "deber", "decidir",
+    "dejar", "después", "domingo", "día", "el", "ellos", "en", "entre", "escalera", "estar", "estimado",
+    "favor", "fiesta", "haber", "hablar", "hacer", "ir", "junto", "lado", "mejor", "menor", "mucho", "música",
+    "ni", "niño", "no", "noche", "norma", "obra", "papel", "para", "perro", "plástico", "poder", "poner",
+    "por", "portal", "presidente", "problema", "próximo", "que", "recordar", "reunión", "ruido", "se",
+    "separar", "ser", "si", "solo", "sótano", "tampoco", "tarde", "tener", "todo", "un", "usar", "vecino",
+    "vidrio", "vivir", "vuestro", "y", "último"
+  ],
+  "difficulty": 872,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6733, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 10.5,
+    "flesch_reading_ease": 87.8,
+    "checked_at": "2026-10-19T13:10:22.522Z"
+  }
+}

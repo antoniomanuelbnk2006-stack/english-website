@@ -1,0 +1,328 @@
+{
+  "id": "es-a1-rea-014",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u05",
+  "series": "es-a1-u05-habitacion",
+  "skill": "reading",
+  "genre": "blog",
+  "title": "Mi habitación",
+  "summary_es": {
+    "en": "A girl describes her bedroom: furniture, colours and her favourite place.",
+    "fr": "Une fille décrit sa chambre : les meubles, les couleurs et son coin préféré.",
+    "zh": "一个女孩介绍她的卧室：家具、颜色和她最喜欢的地方。",
+    "ja": "女の子が自分の部屋の家具や色、お気に入りの場所を紹介します。"
+  },
+  "topic": "city-housing",
+  "tags": ["casa", "habitación", "hay"],
+  "can_do": ["R-A1-01"],
+  "grammar_focus": ["es.a1.tener-y-hay"],
+  "vocab_focus": ["habitación", "cama", "ventana", "mesa"],
+  "est_minutes": 4,
+  "prediction_prompt": "¿Cómo es tu habitación?",
+  "pre_teach": ["cama", "armario"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Mi habitación es pequeña, pero bonita.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "habitación", "l": "habitación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "bonita", "l": "bonito", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Las paredes son azules.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "paredes", "l": "pared", "p": "NOUN", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "azules", "l": "azul", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Hay una cama, una mesa y una silla.",
+          "tokens": [
+            { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cama", "l": "cama", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "mesa", "l": "mesa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "silla", "l": "silla", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "También hay un armario blanco.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "armario", "l": "armario", "p": "NOUN", "w": true, "sp": true },
+            { "t": "blanco", "l": "blanco", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Al lado de la cama hay una lámpara.",
+          "tokens": [
+            { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "lado", "l": "lado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cama", "l": "cama", "p": "NOUN", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "lámpara", "l": "lámpara", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "La ventana es grande.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ventana", "l": "ventana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "grande", "l": "grande", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Desde la ventana veo el parque.",
+          "tokens": [
+            { "t": "Desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ventana", "l": "ventana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "veo", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "parque", "l": "parque", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "En la mesa estudio y leo libros.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mesa", "l": "mesa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "estudio", "l": "estudiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "leo", "l": "leer", "p": "VERB", "w": true, "sp": true },
+            { "t": "libros", "l": "libro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Mi gato duerme en la cama.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "gato", "l": "gato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "duerme", "l": "dormir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cama", "l": "cama", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Es mi lugar favorito de la casa.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "lugar", "l": "lugar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "favorito", "l": "favorito", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": { "en": "Hay: there is, there are", "fr": "Hay : il y a", "zh": "hay：有", "ja": "hay：〜がある" },
+      "explanation_es": {
+        "en": "*Hay* is used for what there is in a place, for one or many things: *Hay una cama*, *Hay dos sillas*."
+      },
+      "refs": ["p2s1"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "cama",
+      "surface": "cama",
+      "pos": "noun",
+      "def_en": "mueble para dormir",
+      "def_es": { "en": "bed", "fr": "lit", "zh": "床", "ja": "ベッド" },
+      "ref": "p2s1"
+    },
+    {
+      "lemma": "armario",
+      "surface": "armario",
+      "pos": "noun",
+      "def_en": "mueble para la ropa",
+      "def_es": { "en": "wardrobe", "fr": "armoire", "zh": "衣柜", "ja": "クローゼット" },
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "lámpara",
+      "surface": "lámpara",
+      "pos": "noun",
+      "def_en": "objeto que da luz",
+      "def_es": { "en": "lamp", "fr": "lampe", "zh": "灯", "ja": "ランプ" },
+      "ref": "p2s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿De qué habla el texto?",
+      "evidence": ["p1s1"],
+      "rationale_es": { "en": "She describes her bedroom." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De un parque de la ciudad" },
+        { "id": "b", "text": "De una habitación" },
+        { "id": "c", "text": "De una tienda de muebles" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿De qué color son las paredes?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "*Las paredes son azules*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Blancas" },
+        { "id": "b", "text": "Rojas" },
+        { "id": "c", "text": "Azules" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué hay al lado de la cama?",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "A lamp." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una lámpara" },
+        { "id": "b", "text": "Un armario" },
+        { "id": "c", "text": "Una silla" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Desde la ventana ve el parque.",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "*Veo el parque*." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Dónde duerme el gato?",
+      "evidence": ["p4s2"],
+      "rationale_es": { "en": "*Duerme en la cama*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En la mesa" },
+        { "id": "b", "text": "En la cama" },
+        { "id": "c", "text": "En el armario" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "*Un armario blanco*." },
+      "type": "gap_fill",
+      "text": "El armario es de color {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["blanco"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 61,
+  "lemmas": [
+    "a", "armario", "azul", "blanco", "bonito", "cama", "casa", "de", "desde", "dormir", "el", "en",
+    "estudiar", "favorito", "gato", "grande", "haber", "habitación", "lado", "leer", "libro", "lugar",
+    "lámpara", "mesa", "mi", "pared", "parque", "pequeño", "pero", "ser", "silla", "también", "un", "ventana",
+    "ver", "y"
+  ],
+  "difficulty": 666,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 6.1,
+    "flesch_reading_ease": 93.4,
+    "checked_at": "2026-10-19T13:04:11.667Z"
+  }
+}

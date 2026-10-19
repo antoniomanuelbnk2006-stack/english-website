@@ -324,7 +324,7 @@
             { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
             { "t": "llamados", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
             { "t": "«", "l": "«", "p": "PUNCT", "w": false },
-            { "t": "influencers", "l": "influencer", "p": "NOUN", "w": true },
+            { "t": "influencers", "l": "influencers", "p": "PROPN", "w": false },
             { "t": "»", "l": "»", "p": "PUNCT", "w": false },
             { "t": ".", "l": ".", "p": "PUNCT", "w": false }
           ]
@@ -1002,27 +1002,27 @@
     "dirigir", "distinguir", "divertir", "dudar", "dueño", "durante", "década", "día", "efecto", "eficaz",
     "ejemplo", "el", "ellos", "embargo", "emitir", "emocionar", "emoción", "en", "engañar", "ese", "esperar",
     "este", "esto", "existir", "extender", "forma", "funcionar", "gente", "gustar", "haber", "habitual",
-    "hablar", "hacer", "hombre", "hora", "hoy", "hábito", "idea", "imagen", "imposible", "incluso",
-    "influencer", "influir", "información", "informar", "inseguridad", "intentar", "interés", "invitar",
-    "leer", "legislación", "ley", "libertad", "libre", "limpiar", "llamarse", "llegar", "malo", "manera",
-    "marcar", "mecanismo", "medida", "menos", "mensaje", "mercado", "mes", "mezclar", "mirar", "mismo",
-    "mostrar", "mucho", "mujer", "mundo", "más", "necesariamente", "necesitar", "ni", "ningún", "niño", "no",
-    "normal", "nosotros", "nuestro", "nunca", "o", "ojo", "opinión", "pagar", "para", "parar", "parecer",
-    "pasar", "país", "perfume", "pero", "persona", "persuasión", "poder", "por", "porque", "precio",
-    "preguntar", "problema", "producto", "promesa", "prometer", "proteger", "provocar", "publicidad",
-    "publicista", "que", "querer", "quizá", "qué", "real", "realidad", "reciclar", "recomendación",
-    "recomendar", "reconocer", "red", "reforzar", "regulador", "resultado", "saber", "salir", "se",
-    "seducción", "seguidor", "sencillo", "ser", "si", "siempre", "significar", "sin", "sino", "social",
-    "sociedad", "solo", "sustancia", "también", "tan", "tarde", "tecnología", "televisión", "tener", "tiempo",
-    "tienda", "todo", "tomar", "transformar", "tratar", "técnico", "un", "urgente", "usuario", "varios",
-    "vender", "ver", "verdad", "vez", "vulnerable", "vídeo", "y", "él", "éxito"
+    "hablar", "hacer", "hombre", "hora", "hoy", "hábito", "idea", "imagen", "imposible", "incluso", "influir",
+    "información", "informar", "inseguridad", "intentar", "interés", "invitar", "leer", "legislación", "ley",
+    "libertad", "libre", "limpiar", "llamarse", "llegar", "malo", "manera", "marcar", "mecanismo", "medida",
+    "menos", "mensaje", "mercado", "mes", "mezclar", "mirar", "mismo", "mostrar", "mucho", "mujer", "mundo",
+    "más", "necesariamente", "necesitar", "ni", "ningún", "niño", "no", "normal", "nosotros", "nuestro",
+    "nunca", "o", "ojo", "opinión", "pagar", "para", "parar", "parecer", "pasar", "país", "perfume", "pero",
+    "persona", "persuasión", "poder", "por", "porque", "precio", "preguntar", "problema", "producto",
+    "promesa", "prometer", "proteger", "provocar", "publicidad", "publicista", "que", "querer", "quizá", "qué",
+    "real", "realidad", "reciclar", "recomendación", "recomendar", "reconocer", "red", "reforzar", "regulador",
+    "resultado", "saber", "salir", "se", "seducción", "seguidor", "sencillo", "ser", "si", "siempre",
+    "significar", "sin", "sino", "social", "sociedad", "solo", "sustancia", "también", "tan", "tarde",
+    "tecnología", "televisión", "tener", "tiempo", "tienda", "todo", "tomar", "transformar", "tratar",
+    "técnico", "un", "urgente", "usuario", "varios", "vender", "ver", "verdad", "vez", "vulnerable", "vídeo",
+    "y", "él", "éxito"
   ],
   "difficulty": 1263,
   "qa": {
-    "coverage_by_level": { "A1": 0.6188, "A2": 0.7226, "B1": 0.9142, "B2": 1, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.62, "A2": 0.75, "B1": 0.93, "B2": 1, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 16.3,
     "flesch_reading_ease": 67.4,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   }
 }

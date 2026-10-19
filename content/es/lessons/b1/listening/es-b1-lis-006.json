@@ -323,7 +323,7 @@
         { "t": "dijo", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 62.618, "e": 62.976 },
         { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 62.976, "e": 63.262 },
         { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 63.262, "e": 63.477 },
-        { "t": "partido", "l": "partido", "p": "NOUN", "w": true, "sp": true, "s": 63.477, "e": 64.05 },
+        { "t": "partido", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 63.477, "e": 64.05 },
         { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 64.05, "e": 64.479 },
         { "t": "sido", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 64.479, "e": 64.837 },
         { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 64.837, "e": 65.123 },
@@ -631,18 +631,18 @@
     "en", "entrenador", "equipo", "esperar", "este", "euro", "ferroviario", "ganar", "gol", "grado", "haber",
     "huelga", "información", "informar", "juego", "jugador", "lluvia", "local", "lunes", "líder", "línea",
     "mañana", "mejorar", "mes", "millón", "mucho", "muy", "más", "niño", "no", "noticia", "nube", "nuevo",
-    "obra", "olvidar", "orden", "otro", "para", "paraguas", "parque", "partido", "pasar", "pero", "por",
+    "obra", "olvidar", "orden", "otro", "para", "paraguas", "parque", "partir", "pasar", "pero", "por",
     "próximo", "página", "que", "reclamar", "recomendar", "reducir", "rendirse", "retraso", "ruido", "salario",
     "salir", "se", "según", "ser", "su", "tarde", "temperatura", "tener", "terminar", "tiempo", "trabajador",
     "un", "varios", "vecino", "viajero", "web", "y", "zona", "árbol"
   ],
   "difficulty": 1073,
   "qa": {
-    "coverage_by_level": { "A1": 0.6383, "A2": 0.766, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.6436, "A2": 0.7979, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 11.6,
     "flesch_reading_ease": 79.9,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/b1/es-b1-lis-006/v1.m4a",

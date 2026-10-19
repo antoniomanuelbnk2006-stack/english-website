@@ -576,7 +576,7 @@
         { "t": "trayecto", "l": "trayecto", "p": "NOUN", "w": true, "sp": true, "s": 108.258, "e": 108.834 },
         { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 108.834, "e": 109.218 },
         { "t": "formar", "l": "formar", "p": "VERB", "w": true, "sp": true, "s": 109.218, "e": 109.666 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 109.666, "e": 110.05 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 109.666, "e": 110.05 },
         { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 110.049, "e": 110.305 },
         { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "s": 110.305, "e": 110.689 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
@@ -1369,7 +1369,7 @@
     "importar", "improvisar", "intentar", "interesar", "ir", "itinerario", "justo", "lado", "legal", "lento",
     "local", "lugar", "luz", "maleta", "masificación", "masivo", "medio", "mejorar", "menos", "mercado", "mes",
     "mi", "minuto", "mismo", "monumento", "moral", "mucho", "museo", "más", "ningún", "no", "nuestro", "nuevo",
-    "nunca", "o", "obligación", "opción", "otro", "paisaje", "para", "parecer", "parte", "pasado", "pasar",
+    "nunca", "o", "obligación", "opción", "otro", "paisaje", "para", "parecer", "partir", "pasado", "pasar",
     "pequeño", "perfecto", "permitir", "pero", "piso", "planificar", "población", "poco", "poder", "por",
     "practicar", "precio", "preferir", "presentar", "problema", "propio", "próximo", "pues", "que", "quedar",
     "querer", "quien", "qué", "realista", "recordar", "recorrer", "recuerdo", "red", "relación", "residente",
@@ -1380,16 +1380,13 @@
     "varios", "vecino", "ver", "verano", "verdad", "vez", "viajar", "viajero", "vida", "visitar", "volver",
     "y", "yo", "él"
   ],
-  "difficulty": 1453,
+  "difficulty": 1444,
   "qa": {
-    "coverage_by_level": { "A1": 0.6504, "A2": 0.7988, "B1": 0.916, "B2": 0.957, "C1": 0.9766, "C2": 1 },
-    "off_level_lemmas": [
-      "aspecto", "despacio", "hueco", "huella", "improvisar", "masificación", "paisaje", "relación", "ritmo",
-      "trayecto"
-    ],
+    "coverage_by_level": { "A1": 0.6582, "A2": 0.8418, "B1": 0.9434, "B2": 0.9727, "C1": 0.9863, "C2": 1 },
+    "off_level_lemmas": ["aspecto", "despacio", "hueco", "huella", "improvisar", "masificación"],
     "avg_sentence_words": 11.2,
     "flesch_reading_ease": 80.7,
-    "checked_at": "2026-10-19T07:48:30.244Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/c1/es-c1-lis-009/v1.m4a",

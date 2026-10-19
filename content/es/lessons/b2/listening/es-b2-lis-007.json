@@ -275,7 +275,7 @@
         { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 46.818, "e": 47.086 },
         { "t": "furgonetas", "l": "furgoneta", "p": "NOUN", "w": true, "sp": true, "s": 47.087, "e": 47.825 },
         { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 47.825, "e": 48.026 },
-        { "t": "reparto", "l": "repartir", "p": "VERB", "w": true, "sp": true, "s": 48.026, "e": 48.563 },
+        { "t": "reparto", "l": "reparto", "p": "NOUN", "w": true, "sp": true, "s": 48.026, "e": 48.563 },
         { "t": "entren", "l": "entrar", "p": "VERB", "w": true, "sp": true, "s": 48.563, "e": 49.033 },
         { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 49.033, "e": 49.301 },
         { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 49.301, "e": 49.502 },
@@ -964,18 +964,18 @@
     "miedo", "mismo", "mucho", "mueble", "más", "ni", "no", "nosotros", "otro", "parecer", "partir", "pasado",
     "pasar", "pedir", "peligroso", "pensar", "perfecto", "permitir", "pero", "persona", "plan", "poder", "por",
     "porque", "preguntar", "preocupación", "preocuparse", "problema", "propio", "proponer", "propuesta",
-    "pues", "que", "querer", "qué", "razón", "repartir", "responder", "reunión", "ruido", "saber", "se",
-    "semana", "ser", "si", "siempre", "sin", "sobre", "sofá", "solo", "solución", "superar", "también", "tan",
-    "tarde", "temprano", "tener", "tienda", "todo", "trabajar", "tu", "un", "vecino", "vender", "venir", "ver",
-    "vivir", "vosotros", "y", "ya", "yo", "zona", "él"
+    "pues", "que", "querer", "qué", "razón", "repartir", "reparto", "responder", "reunión", "ruido", "saber",
+    "se", "semana", "ser", "si", "siempre", "sin", "sobre", "sofá", "solo", "solución", "superar", "también",
+    "tan", "tarde", "temprano", "tener", "tienda", "todo", "trabajar", "tu", "un", "vecino", "vender", "venir",
+    "ver", "vivir", "vosotros", "y", "ya", "yo", "zona", "él"
   ],
   "difficulty": 1252,
   "qa": {
-    "coverage_by_level": { "A1": 0.6943, "A2": 0.8439, "B1": 0.9427, "B2": 1, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.7006, "A2": 0.879, "B1": 0.965, "B2": 1, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 8.9,
     "flesch_reading_ease": 87,
-    "checked_at": "2026-10-19T07:42:35.028Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/b2/es-b2-lis-007/v1.m4a",

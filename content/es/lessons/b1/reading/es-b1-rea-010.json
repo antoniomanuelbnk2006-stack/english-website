@@ -1,0 +1,773 @@
+{
+  "id": "es-b1-rea-010",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u06",
+  "series": "es-b1-u06-entrenadora",
+  "skill": "reading",
+  "genre": "interview",
+  "title": "Entrevista a una entrenadora de fútbol",
+  "summary_es": {
+    "en": "An interview with a coach who trains a girls’ football team in her town.",
+    "fr": "Une interview avec une entraîneuse qui dirige une équipe de football féminine dans sa ville.",
+    "zh": "采访一位在家乡训练女子足球队的教练。",
+    "ja": "地元で女子サッカーチームを指導するコーチへのインタビューです。"
+  },
+  "topic": "sports",
+  "tags": ["deporte", "entrevista", "igualdad"],
+  "can_do": ["R-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["entrenadora", "equipo", "partido", "entrenar"],
+  "est_minutes": 10,
+  "prediction_prompt": "¿Qué crees que es lo más difícil de entrenar a un equipo?",
+  "pre_teach": ["entrenadora", "liga"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Carmen Ruiz tiene treinta y cuatro años y entrena desde hace seis al equipo femenino infantil de su pueblo, en Jaén.",
+          "tokens": [
+            { "t": "Carmen", "l": "carmen", "p": "PROPN", "w": false, "sp": true },
+            { "t": "Ruiz", "l": "ruiz", "p": "PROPN", "w": false, "sp": true },
+            { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "entrena", "l": "entrenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "seis", "l": "seis", "p": "NUM", "w": false, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "equipo", "l": "equipo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "femenino", "l": "femenino", "p": "ADJ", "w": true, "sp": true },
+            { "t": "infantil", "l": "infantil", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "pueblo", "l": "pueblo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "Jaén", "l": "jaén", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Este año las chicas han ganado la liga provincial.",
+          "tokens": [
+            { "t": "Este", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "chicas", "l": "chico", "p": "NOUN", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "ganado", "l": "ganar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "liga", "l": "liga", "p": "NOUN", "w": true, "sp": true },
+            { "t": "provincial", "l": "provincial", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Hablamos con ella después de un entrenamiento.",
+          "tokens": [
+            { "t": "Hablamos", "l": "hablar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "ella", "l": "ella", "p": "PRON", "w": true, "sp": true },
+            { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "entrenamiento", "l": "entrenamiento", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "—¿Cómo empezó todo?",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true },
+            { "t": "empezó", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "—Yo jugaba al fútbol de pequeña, pero en mi pueblo no había equipo de chicas y tenía que jugar con los chicos.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "jugaba", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "fútbol", "l": "fútbol", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "pueblo", "l": "pueblo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "equipo", "l": "equipo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "chicas", "l": "chico", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "tenía", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "jugar", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "chicos", "l": "chico", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Cuando volví después de estudiar, propuse al ayuntamiento crear un equipo femenino.",
+          "tokens": [
+            { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "volví", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "estudiar", "l": "estudiar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "propuse", "l": "proponer", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "ayuntamiento", "l": "ayuntamiento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "crear", "l": "crear", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "equipo", "l": "equipo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "femenino", "l": "femenino", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Al principio solo vinieron cuatro niñas.",
+          "tokens": [
+            { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "vinieron", "l": "venir", "p": "VERB", "w": true, "sp": true },
+            { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "sp": true },
+            { "t": "niñas", "l": "niño", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "—¿Y ahora?",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "ahora", "l": "ahora", "p": "ADV", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "—Ahora tenemos treinta jugadoras de entre nueve y catorce años.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true },
+            { "t": "tenemos", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true },
+            { "t": "jugadoras", "l": "jugador", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "nueve", "l": "nueve", "p": "NUM", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "catorce", "l": "catorce", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Entrenamos tres tardes a la semana y jugamos los sábados.",
+          "tokens": [
+            { "t": "Entrenamos", "l": "entrenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true },
+            { "t": "tardes", "l": "tarde", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "jugamos", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sábados", "l": "sábado", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Muchas familias nos acompañan a los partidos, aunque sean lejos.",
+          "tokens": [
+            { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "familias", "l": "familia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "acompañan", "l": "acompañar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "partidos", "l": "partir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "sean", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "lejos", "l": "lejos", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "—¿Qué es lo más difícil de su trabajo?",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "difícil", "l": "difícil", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "—Sin duda, la falta de medios.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "duda", "l": "dudar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "falta", "l": "falta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "medios", "l": "medio", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "No tenemos un campo propio y a veces entrenamos en el patio del colegio.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "tenemos", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "campo", "l": "campo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "propio", "l": "propio", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "entrenamos", "l": "entrenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "patio", "l": "patio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "colegio", "l": "colegio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Las camisetas las pagamos con una rifa que organizamos cada Navidad.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "camisetas", "l": "camiseta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pagamos", "l": "pagar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "rifa", "l": "rifa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "organizamos", "l": "organizar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "Navidad", "l": "navidad", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "—¿Qué les enseña a las niñas, además de fútbol?",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "les", "l": "ellos", "p": "PRON", "w": true, "sp": true },
+            { "t": "enseña", "l": "enseñar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "niñas", "l": "niño", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "además", "l": "además", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "fútbol", "l": "fútbol", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "—Sobre todo, a trabajar en equipo y a no rendirse.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "trabajar", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "equipo", "l": "equipo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "rendirse", "l": "rendirse", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "También insisto mucho en que estudien.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "insisto", "l": "insistir", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "estudien", "l": "estudiar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "El fútbol es muy bonito, pero solo unas pocas llegan a ser profesionales.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fútbol", "l": "fútbol", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "bonito", "l": "bonito", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "unas", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pocas", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "llegan", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "profesionales", "l": "profesional", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "—¿Ha notado cambios en el pueblo desde que existe el equipo?",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "notado", "l": "notar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cambios", "l": "cambio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pueblo", "l": "pueblo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "existe", "l": "existir", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "equipo", "l": "equipo", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "—Muchísimos.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Muchísimos", "l": "muchísimo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Antes, por la tarde, las niñas se quedaban en casa o miraban jugar a los chicos.",
+          "tokens": [
+            { "t": "Antes", "l": "antes", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "niñas", "l": "niño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "quedaban", "l": "quedar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "miraban", "l": "mirar", "p": "VERB", "w": true, "sp": true },
+            { "t": "jugar", "l": "jugar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "chicos", "l": "chico", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "Ahora el campo está lleno de familias los sábados, y los chicos también vienen a animarlas.",
+          "tokens": [
+            { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "campo", "l": "campo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "lleno", "l": "lleno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "familias", "l": "familia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sábados", "l": "sábado", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "chicos", "l": "chico", "p": "NOUN", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "vienen", "l": "venir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "animarlas", "l": "animar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s5",
+          "text": "Incluso el bar de la plaza pone los partidos en la televisión.",
+          "tokens": [
+            { "t": "Incluso", "l": "incluso", "p": "ADV", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "bar", "l": "bar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "plaza", "l": "plaza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pone", "l": "poner", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "partidos", "l": "partir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "televisión", "l": "televisión", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s6",
+          "text": "Para un pueblo de tres mil habitantes, eso es una pequeña revolución.",
+          "tokens": [
+            { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pueblo", "l": "pueblo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true },
+            { "t": "mil", "l": "mil", "p": "NUM", "w": false, "sp": true },
+            { "t": "habitantes", "l": "habitante", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true, "sp": true },
+            { "t": "revolución", "l": "revolución", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s7",
+          "text": "Y lo mejor es que las niñas ya no piensan que el fútbol es cosa de chicos.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "niñas", "l": "niño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "piensan", "l": "pensar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fútbol", "l": "fútbol", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "cosa", "l": "cosa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "chicos", "l": "chico", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "—¿Qué le gustaría conseguir en el futuro?",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "gustaría", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "conseguir", "l": "conseguir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "futuro", "l": "futuro", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "—Me encantaría que dentro de unos años alguna de mis jugadoras entrenara a otro equipo de chicas.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "encantaría", "l": "encantar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "dentro", "l": "dentro", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "alguna", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "jugadoras", "l": "jugador", "p": "NOUN", "w": true, "sp": true },
+            { "t": "entrenara", "l": "entrenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "equipo", "l": "equipo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "chicas", "l": "chico", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Eso significaría que lo que empezamos aquí continúa.",
+          "tokens": [
+            { "t": "Eso", "l": "esto", "p": "PRON", "w": true, "sp": true },
+            { "t": "significaría", "l": "significar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "empezamos", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true },
+            { "t": "continúa", "l": "continuar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": { "en": "Wishes with subjunctive", "fr": "Souhaits au subjonctif", "zh": "用虚拟式表达愿望", "ja": "接続法で願望を言う" },
+      "explanation_es": {
+        "en": "*Me encantaría que* + imperfect subjunctive expresses a wish: *Me encantaría que… entrenara a otro equipo*."
+      },
+      "refs": ["p7s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "liga",
+      "surface": "liga",
+      "pos": "noun",
+      "def_en": "competición entre varios equipos",
+      "def_es": { "en": "league", "fr": "championnat", "zh": "联赛", "ja": "リーグ" },
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "rifa",
+      "surface": "rifa",
+      "pos": "noun",
+      "def_en": "sorteo con números para ganar algo",
+      "def_es": { "en": "raffle", "fr": "tombola", "zh": "抽奖", "ja": "くじ引き" },
+      "ref": "p4s4"
+    },
+    {
+      "lemma": "rendirse",
+      "surface": "rendirse",
+      "pos": "verb",
+      "def_en": "dejar de intentar algo",
+      "def_es": { "en": "to give up", "fr": "abandonner", "zh": "放弃", "ja": "諦める" },
+      "ref": "p5s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿De qué trata la entrevista?",
+      "evidence": ["p1s1"],
+      "rationale_es": { "en": "The girls’ team she coaches." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De la carrera de una futbolista profesional famosa" },
+        { "id": "b", "text": "De cómo Carmen forma a jóvenes futbolistas" },
+        { "id": "c", "text": "De un nuevo estadio en Jaén" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Por qué jugaba Carmen con chicos de pequeña?",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "There was no girls’ team." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Sus amigas no querían jugar al fútbol" },
+        { "id": "b", "text": "Era la mejor jugadora del pueblo" },
+        { "id": "c", "text": "Solo existía un equipo masculino" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuántas niñas fueron al principio?",
+      "evidence": ["p2s4"],
+      "rationale_es": { "en": "Four." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cuatro" },
+        { "id": "b", "text": "Treinta" },
+        { "id": "c", "text": "Catorce" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuál es el mayor problema del equipo?",
+      "evidence": ["p4s2"],
+      "rationale_es": { "en": "Lack of resources." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La falta de jugadoras en los partidos" },
+        { "id": "b", "text": "La falta de medios" },
+        { "id": "c", "text": "El mal tiempo de los sábados" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "El equipo paga las camisetas con una rifa.",
+      "evidence": ["p4s4"],
+      "rationale_es": { "en": "With a raffle." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "read",
+      "prompt": "¿Qué opina Carmen sobre los estudios de las niñas?",
+      "evidence": ["p5s3"],
+      "rationale_es": { "en": "Studying matters a lot." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que el fútbol es más importante" },
+        { "id": "b", "text": "Que no tienen tiempo para estudiar" },
+        { "id": "c", "text": "Que son muy importantes" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "*La liga*." },
+      "type": "gap_fill",
+      "text": "Este año las chicas han ganado la {{1}} provincial.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["liga"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 306,
+  "lemmas": [
+    "a", "acompañar", "además", "ahora", "algún", "animar", "antes", "aquí", "aunque", "ayuntamiento", "año",
+    "bar", "bonito", "cada", "cambio", "camiseta", "campo", "casa", "chico", "colegio", "con", "conseguir",
+    "continuar", "cosa", "crear", "cuando", "cómo", "de", "dentro", "desde", "después", "difícil", "dudar",
+    "el", "ella", "ellos", "empezar", "en", "encantar", "enseñar", "entre", "entrenamiento", "entrenar",
+    "equipo", "estar", "este", "esto", "estudiar", "existir", "falta", "familia", "femenino", "futuro",
+    "fútbol", "ganar", "gustar", "haber", "habitante", "hablar", "hacer", "incluso", "infantil", "insistir",
+    "jugador", "jugar", "lejos", "liga", "llegar", "lleno", "medio", "mejor", "mi", "mirar", "mucho",
+    "muchísimo", "muy", "más", "niño", "no", "nosotros", "notar", "o", "organizar", "otro", "pagar", "para",
+    "partir", "patio", "pensar", "pequeño", "pero", "plaza", "poco", "poner", "por", "principio",
+    "profesional", "propio", "proponer", "provincial", "pueblo", "que", "quedar", "qué", "rendirse",
+    "revolución", "rifa", "se", "semana", "ser", "significar", "sin", "sobre", "solo", "su", "sábado",
+    "también", "tarde", "televisión", "tener", "todo", "trabajar", "un", "venir", "vez", "volver", "y", "ya",
+    "yo", "él"
+  ],
+  "difficulty": 1060,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7226, "A2": 0.8356, "B1": 0.9966, "B2": 0.9966, "C1": 0.9966, "C2": 1 },
+    "off_level_lemmas": ["rifa"],
+    "avg_sentence_words": 10.6,
+    "flesch_reading_ease": 81,
+    "checked_at": "2026-10-19T13:16:14.675Z"
+  }
+}

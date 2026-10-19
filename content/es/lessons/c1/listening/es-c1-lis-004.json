@@ -990,15 +990,7 @@
         },
         { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true, "s": 204.639, "e": 205.024 },
         { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 205.024, "e": 205.281 },
-        {
-          "t": "relaciones",
-          "l": "relacionar",
-          "p": "VERB",
-          "w": true,
-          "sp": true,
-          "s": 205.28,
-          "e": 205.986
-        },
+        { "t": "relaciones", "l": "relación", "p": "NOUN", "w": true, "sp": true, "s": 205.28, "e": 205.986 },
         { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true, "s": 205.986, "e": 206.371 },
         { "t": "ideas", "l": "idea", "p": "NOUN", "w": true, "s": 206.371, "e": 206.756 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
@@ -1317,19 +1309,19 @@
     "método", "neurocientífico", "nivel", "no", "noche", "nosotros", "nuestro", "nuevo", "o", "olvidar",
     "opinar", "otro", "oyente", "papel", "para", "parecer", "pasear", "pausa", "pensar", "perder", "pero",
     "persona", "picado", "poco", "poder", "por", "practicar", "problema", "proteger", "prácticamente",
-    "pódcast", "que", "querer", "quien", "qué", "recordar", "recuperación", "región", "relacionar", "rendir",
+    "pódcast", "que", "querer", "quien", "qué", "recordar", "recuperación", "región", "relación", "rendir",
     "repasar", "repetición", "resolver", "resultado", "retener", "rápidamente", "río", "se", "seguir",
     "semana", "ser", "sesión", "si", "simplemente", "sin", "sino", "soler", "solo", "sorprender", "subestimar",
     "sueño", "suficiente", "tan", "tardar", "tarea", "tema", "terminar", "tiempo", "tocar", "todo", "traducir",
     "tratar", "tú", "un", "usar", "valor", "varios", "venir", "vez", "virtud", "y", "yo", "zona", "él"
   ],
-  "difficulty": 1448,
+  "difficulty": 1446,
   "qa": {
-    "coverage_by_level": { "A1": 0.5764, "A2": 0.7006, "B1": 0.8391, "B2": 0.89, "C1": 0.9817, "C2": 1 },
-    "off_level_lemmas": ["caer", "conversar", "despacio", "huella", "instrumento", "mental", "pausa", "retener", "virtud"],
+    "coverage_by_level": { "A1": 0.5764, "A2": 0.7515, "B1": 0.8839, "B2": 0.9246, "C1": 0.9837, "C2": 1 },
+    "off_level_lemmas": ["caer", "despacio", "huella", "instrumento", "mental", "pausa", "retener", "virtud"],
     "avg_sentence_words": 9.7,
     "flesch_reading_ease": 73,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/c1/es-c1-lis-004/v1.m4a",

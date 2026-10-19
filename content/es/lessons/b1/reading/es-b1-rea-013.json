@@ -1,0 +1,717 @@
+{
+  "id": "es-b1-rea-013",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u02",
+  "series": "es-b1-u02-carta-presentacion",
+  "skill": "reading",
+  "genre": "email",
+  "title": "Una carta de presentación",
+  "summary_es": {
+    "en": "A cover letter from a young woman applying for a job as a hotel receptionist.",
+    "fr": "La lettre de motivation d’une jeune femme qui postule comme réceptionniste d’hôtel.",
+    "zh": "一位年轻女士申请酒店前台工作的求职信。",
+    "ja": "ホテルの受付係に応募する若い女性の志望動機書です。"
+  },
+  "topic": "work-tech",
+  "tags": ["trabajo", "correo formal", "experiencia"],
+  "can_do": ["R-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["puesto", "experiencia", "currículum", "disponibilidad"],
+  "est_minutes": 10,
+  "prediction_prompt": "¿Qué escribirías en una carta para pedir un trabajo?",
+  "pre_teach": ["puesto", "currículum"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Estimada señora Álvarez:",
+          "tokens": [
+            { "t": "Estimada", "l": "estimado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "señora", "l": "señor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Álvarez", "l": "álvarez", "p": "PROPN", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Le escribo para presentar mi candidatura al puesto de recepcionista que han publicado en su página web.",
+          "tokens": [
+            { "t": "Le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "escribo", "l": "escribir", "p": "VERB", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "presentar", "l": "presentar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "candidatura", "l": "candidatura", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "puesto", "l": "poner", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "recepcionista", "l": "recepcionista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "publicado", "l": "publicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "página", "l": "página", "p": "NOUN", "w": true, "sp": true },
+            { "t": "web", "l": "web", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Le adjunto mi currículum.",
+          "tokens": [
+            { "t": "Le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "adjunto", "l": "adjuntar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "currículum", "l": "currículum", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Me llamo Irene Castro, tengo veinticuatro años y terminé el año pasado el grado en Turismo en la Universidad de Granada.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "Irene", "l": "irene", "p": "PROPN", "w": false, "sp": true },
+            { "t": "Castro", "l": "castro", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "tengo", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "veinticuatro", "l": "veinticuatro", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "terminé", "l": "terminar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "grado", "l": "grado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "Turismo", "l": "turismo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "Universidad", "l": "universidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Granada", "l": "granada", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Durante la carrera hice unas prácticas de seis meses en un hotel de la costa, donde atendía a los clientes y gestionaba las reservas.",
+          "tokens": [
+            { "t": "Durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "carrera", "l": "carrera", "p": "NOUN", "w": true, "sp": true },
+            { "t": "hice", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "unas", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "prácticas", "l": "práctico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "seis", "l": "seis", "p": "NUM", "w": false, "sp": true },
+            { "t": "meses", "l": "mes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "hotel", "l": "hotel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "costa", "l": "costa", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "atendía", "l": "atender", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "clientes", "l": "cliente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "gestionaba", "l": "gestionar", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "reservas", "l": "reservar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Desde entonces trabajo en una agencia de viajes, pero me gustaría volver al sector hotelero, que es lo que más me gusta.",
+          "tokens": [
+            { "t": "Desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "agencia", "l": "agencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "viajes", "l": "viajar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "gustaría", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "volver", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "sector", "l": "sector", "p": "NOUN", "w": true, "sp": true },
+            { "t": "hotelero", "l": "hotelero", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "gusta", "l": "gustar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Disfruto mucho del trato con las personas y sé mantener la calma en situaciones difíciles.",
+          "tokens": [
+            { "t": "Disfruto", "l": "disfrutar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "trato", "l": "tratar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "sé", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "mantener", "l": "mantener", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "calma", "l": "calma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "situaciones", "l": "situación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "difíciles", "l": "difícil", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "En la agencia he aprendido a resolver problemas de última hora, como vuelos cancelados o reservas perdidas.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "agencia", "l": "agencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "he", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "aprendido", "l": "aprender", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "resolver", "l": "resolver", "p": "VERB", "w": true, "sp": true },
+            { "t": "problemas", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "última", "l": "último", "p": "ADJ", "w": true, "sp": true },
+            { "t": "hora", "l": "hora", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "vuelos", "l": "vuelo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cancelados", "l": "cancelar", "p": "VERB", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "reservas", "l": "reservar", "p": "VERB", "w": true, "sp": true },
+            { "t": "perdidas", "l": "perder", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Muchas veces tengo que encontrar una solución en pocos minutos y con el cliente delante.",
+          "tokens": [
+            { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tengo", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "encontrar", "l": "encontrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "solución", "l": "solución", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "pocos", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cliente", "l": "cliente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "delante", "l": "delante", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Esa experiencia me ha enseñado a trabajar bajo presión y a no perder nunca la sonrisa.",
+          "tokens": [
+            { "t": "Esa", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "experiencia", "l": "experiencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "enseñado", "l": "enseñar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "trabajar", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "bajo", "l": "bajo", "p": "ADP", "w": true, "sp": true },
+            { "t": "presión", "l": "presión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "perder", "l": "perder", "p": "VERB", "w": true, "sp": true },
+            { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sonrisa", "l": "sonrisa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Hablo inglés con fluidez y tengo un buen nivel de francés, porque viví un año en Lyon con una beca de estudios.",
+          "tokens": [
+            { "t": "Hablo", "l": "hablar", "p": "VERB", "w": true, "sp": true },
+            { "t": "inglés", "l": "inglés", "p": "ADJ", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "fluidez", "l": "fluidez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "tengo", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "nivel", "l": "nivel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "francés", "l": "francés", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "viví", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "Lyon", "l": "lyon", "p": "PROPN", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "beca", "l": "beca", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "estudios", "l": "estudio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "También manejo los programas de reservas más habituales.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "manejo", "l": "manejar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "programas", "l": "programa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "reservas", "l": "reservar", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "habituales", "l": "habitual", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Tengo disponibilidad inmediata y no me importa trabajar en turnos de noche o los fines de semana.",
+          "tokens": [
+            { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "disponibilidad", "l": "disponibilidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "inmediata", "l": "inmediato", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "importa", "l": "importar", "p": "VERB", "w": true, "sp": true },
+            { "t": "trabajar", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "turnos", "l": "turno", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fines", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Además, estoy dispuesta a cambiar de ciudad si es necesario.",
+          "tokens": [
+            { "t": "Además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "estoy", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "dispuesta", "l": "dispuesto", "p": "ADJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "cambiar", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "necesario", "l": "necesario", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "Conozco bien su hotel, porque lo visité el verano pasado con mi familia.",
+          "tokens": [
+            { "t": "Conozco", "l": "conocer", "p": "VERB", "w": true, "sp": true },
+            { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "hotel", "l": "hotel", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "visité", "l": "visitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "verano", "l": "verano", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "familia", "l": "familia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Me gustó especialmente la atención del personal y el ambiente tranquilo del edificio.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "gustó", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "especialmente", "l": "especialmente", "p": "ADV", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "atención", "l": "atención", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "personal", "l": "personal", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ambiente", "l": "ambiente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tranquilo", "l": "tranquilo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "edificio", "l": "edificio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Por eso me haría mucha ilusión formar parte de su equipo y aportar mis ganas de aprender.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "haría", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucha", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "ilusión", "l": "ilusión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "formar", "l": "formar", "p": "VERB", "w": true, "sp": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "equipo", "l": "equipo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "aportar", "l": "aportar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "ganas", "l": "ganar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "aprender", "l": "aprender", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s4",
+          "text": "Además, me interesa mucho el turismo sostenible, un tema al que dediqué mi trabajo de fin de grado.",
+          "tokens": [
+            { "t": "Además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "interesa", "l": "interesar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "turismo", "l": "turismo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sostenible", "l": "sostenible", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "tema", "l": "tema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "dediqué", "l": "dedicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "fin", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "grado", "l": "grado", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s5",
+          "text": "Creo que puedo aportar ideas nuevas en este campo.",
+          "tokens": [
+            { "t": "Creo", "l": "creer", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "puedo", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "aportar", "l": "aportar", "p": "VERB", "w": true, "sp": true },
+            { "t": "ideas", "l": "idea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nuevas", "l": "nuevo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "campo", "l": "campo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "sentences": [
+        {
+          "id": "p8s1",
+          "text": "Le agradecería mucho la oportunidad de tener una entrevista para explicarle mejor mi experiencia.",
+          "tokens": [
+            { "t": "Le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "agradecería", "l": "agradecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "oportunidad", "l": "oportunidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "tener", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "entrevista", "l": "entrevista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "explicarle", "l": "explicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "experiencia", "l": "experiencia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s2",
+          "text": "Quedo a su disposición para cualquier información.",
+          "tokens": [
+            { "t": "Quedo", "l": "quedar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "disposición", "l": "disposición", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "cualquier", "l": "cualquier", "p": "ADJ", "w": true, "sp": true },
+            { "t": "información", "l": "información", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s3",
+          "text": "Atentamente,",
+          "tokens": [
+            { "t": "Atentamente", "l": "atentamente", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s4",
+          "text": "Irene Castro",
+          "tokens": [
+            { "t": "Irene", "l": "irene", "p": "PROPN", "w": false, "sp": true },
+            { "t": "Castro", "l": "castro", "p": "PROPN", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": { "en": "Formal letters", "fr": "Lettres formelles", "zh": "正式信函", "ja": "改まった手紙" },
+      "explanation_es": {
+        "en": "Formal letters use *usted* forms (*Le escribo*, *Le adjunto*) and set phrases: *Le agradecería…*, *Quedo a su disposición*, *Atentamente*."
+      },
+      "refs": ["p1s2", "p8s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "candidatura",
+      "surface": "candidatura",
+      "pos": "noun",
+      "def_en": "acción de presentarse para un puesto",
+      "def_es": { "en": "application", "fr": "candidature", "zh": "申请", "ja": "応募" },
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "adjuntar",
+      "surface": "adjunto",
+      "pos": "verb",
+      "def_en": "enviar un documento con un mensaje",
+      "def_es": { "en": "to attach", "fr": "joindre", "zh": "附上", "ja": "添付する" },
+      "ref": "p1s3"
+    },
+    {
+      "lemma": "prácticas",
+      "surface": "prácticas",
+      "pos": "noun",
+      "def_en": "trabajo para aprender durante los estudios",
+      "def_es": { "en": "internship", "fr": "stage", "zh": "实习", "ja": "研修" },
+      "ref": "p2s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Para qué escribe Irene?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "To apply for a job." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para reservar una habitación en el hotel" },
+        { "id": "b", "text": "Para pedir un puesto de trabajo" },
+        { "id": "c", "text": "Para quejarse de un servicio de la agencia" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué estudió Irene?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "Tourism." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Francés" },
+        { "id": "b", "text": "Economía" },
+        { "id": "c", "text": "Turismo" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué hacía durante las prácticas?",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "Guests and bookings." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Trabajaba en la recepción con el público" },
+        { "id": "b", "text": "Limpiaba todas las habitaciones del hotel cada día" },
+        { "id": "c", "text": "Organizaba las excursiones" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Dónde trabaja ahora?",
+      "evidence": ["p3s1"],
+      "rationale_es": { "en": "A travel agency." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En un hotel de la costa" },
+        { "id": "b", "text": "En una agencia de viajes" },
+        { "id": "c", "text": "En la universidad" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Irene aprendió francés viviendo en Francia.",
+      "evidence": ["p5s1"],
+      "rationale_es": { "en": "She lived in Lyon." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Qué se deduce de lo que dice sobre los horarios?",
+      "evidence": ["p6s1"],
+      "rationale_es": { "en": "Nights and weekends are fine." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Solo quiere trabajar por las mañanas, nunca de noche" },
+        { "id": "b", "text": "Prefiere no trabajar los domingos" },
+        { "id": "c", "text": "No le importan los horarios difíciles" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p6s1"],
+      "rationale_es": { "en": "*Disponibilidad inmediata*." },
+      "type": "gap_fill",
+      "text": "Irene tiene disponibilidad {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["inmediata"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 305,
+  "lemmas": [
+    "a", "además", "adjuntar", "agencia", "agradecer", "ambiente", "aportar", "aprender", "atención",
+    "atender", "atentamente", "año", "bajo", "beca", "bien", "bueno", "calma", "cambiar", "campo", "cancelar",
+    "candidatura", "carrera", "ciudad", "cliente", "comer", "con", "conocer", "costa", "creer", "cualquier",
+    "currículum", "de", "dedicar", "delante", "desde", "difícil", "disfrutar", "disponibilidad", "disposición",
+    "dispuesto", "donde", "durante", "edificio", "el", "en", "encontrar", "enseñar", "entonces", "entrevista",
+    "equipo", "escribir", "ese", "especialmente", "estar", "este", "estimado", "esto", "estudio",
+    "experiencia", "explicar", "familia", "fin", "fluidez", "formar", "francés", "ganar", "gestionar", "grado",
+    "gustar", "haber", "habitual", "hablar", "hacer", "hora", "hotel", "hotelero", "idea", "ilusión",
+    "importar", "información", "inglés", "inmediato", "interesar", "llamarse", "manejar", "mantener", "mejor",
+    "mes", "mi", "minuto", "mucho", "más", "necesario", "nivel", "no", "noche", "nuevo", "nunca", "o",
+    "oportunidad", "para", "partir", "pasado", "perder", "pero", "persona", "personal", "poco", "poder",
+    "poner", "por", "porque", "presentar", "presión", "problema", "programa", "práctico", "publicar", "página",
+    "que", "quedar", "recepcionista", "reservar", "resolver", "sector", "semana", "ser", "señor", "si",
+    "situación", "solución", "sonrisa", "sostenible", "su", "también", "tema", "tener", "terminar", "trabajar",
+    "tranquilo", "tratar", "turismo", "turno", "un", "universidad", "verano", "vez", "viajar", "visitar",
+    "vivir", "volver", "vuelo", "web", "y", "yo", "él", "último"
+  ],
+  "difficulty": 1077,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6351, "A2": 0.7804, "B1": 0.9899, "B2": 0.9899, "C1": 0.9899, "C2": 1 },
+    "off_level_lemmas": ["adjuntar", "candidatura", "currículum"],
+    "avg_sentence_words": 13.3,
+    "flesch_reading_ease": 70.8,
+    "checked_at": "2026-10-19T13:16:14.675Z"
+  }
+}

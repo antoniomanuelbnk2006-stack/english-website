@@ -181,7 +181,7 @@
         { "t": "menos", "l": "menos", "p": "ADV", "w": true, "s": 22.514, "e": 22.955 },
         { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
         { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 22.955, "e": 23.322 },
-        { "t": "razones", "l": "razón", "p": "NOUN", "w": true, "s": 23.322, "e": 23.91 },
+        { "t": "razones", "l": "razonar", "p": "VERB", "w": true, "s": 23.322, "e": 23.91 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
       ],
       "start": 21.97,
@@ -207,7 +207,7 @@
       "text": "Gran parte del humor se basa en juegos de palabras.",
       "tokens": [
         { "t": "Gran", "l": "grande", "p": "ADJ", "w": true, "sp": true, "s": 26.427, "e": 26.749 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 26.749, "e": 27.135 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 26.749, "e": 27.135 },
         { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 27.134, "e": 27.391 },
         { "t": "humor", "l": "humor", "p": "NOUN", "w": true, "sp": true, "s": 27.392, "e": 27.778 },
         { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 27.778, "e": 27.971 },
@@ -758,7 +758,7 @@
         { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 136.44, "e": 136.64 },
         { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 136.64, "e": 136.974 },
         { "t": "todas", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 136.974, "e": 137.374 },
-        { "t": "partes", "l": "parte", "p": "NOUN", "w": true, "s": 137.374, "e": 137.841 },
+        { "t": "partes", "l": "partir", "p": "VERB", "w": true, "s": 137.374, "e": 137.841 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
       ],
       "start": 134.371,
@@ -1359,22 +1359,22 @@
     "inesperado", "interesante", "inventar", "ironía", "japonés", "juego", "lengua", "lingüístico",
     "malentendido", "menos", "menudo", "mes", "mi", "miedo", "mismo", "mucho", "mudarse", "muerte", "mundo",
     "más", "necesitar", "niño", "no", "normal", "nosotros", "nuevo", "o", "ocurrir", "ofensivo", "otro",
-    "palabra", "para", "parecer", "parte", "pasar", "país", "pedir", "pelo", "película", "pensar", "personaje",
-    "pertenecer", "plan", "poder", "política", "por", "porque", "pregunta", "principio", "programa", "propio",
-    "propósito", "provocar", "psicólogo", "que", "querer", "quien", "quizá", "qué", "razón", "real",
-    "realidad", "referencia", "regla", "religión", "resbalarse", "resultar", "revés", "reír", "romper",
-    "saber", "salir", "se", "seguir", "semana", "sentir", "ser", "serie", "serio", "si", "siglo", "significar",
-    "sin", "situación", "sobre", "solo", "soltura", "sonar", "su", "subjuntivo", "tabú", "también", "tarde",
-    "televisión", "tema", "tener", "todo", "tomar", "trabajar", "traducción", "traducir", "traductor",
-    "través", "un", "universal", "usted", "venir", "vivir", "y", "yo", "él", "último"
+    "palabra", "para", "parecer", "partir", "pasar", "país", "pedir", "pelo", "película", "pensar",
+    "personaje", "pertenecer", "plan", "poder", "política", "por", "porque", "pregunta", "principio",
+    "programa", "propio", "propósito", "provocar", "psicólogo", "que", "querer", "quien", "quizá", "qué",
+    "razonar", "razón", "real", "realidad", "referencia", "regla", "religión", "resbalarse", "resultar",
+    "revés", "reír", "romper", "saber", "salir", "se", "seguir", "semana", "sentir", "ser", "serie", "serio",
+    "si", "siglo", "significar", "sin", "situación", "sobre", "solo", "soltura", "sonar", "su", "subjuntivo",
+    "tabú", "también", "tarde", "televisión", "tema", "tener", "todo", "tomar", "trabajar", "traducción",
+    "traducir", "traductor", "través", "un", "universal", "usted", "venir", "vivir", "y", "yo", "él", "último"
   ],
-  "difficulty": 1449,
+  "difficulty": 1443,
   "qa": {
-    "coverage_by_level": { "A1": 0.6263, "A2": 0.7333, "B1": 0.9152, "B2": 0.9434, "C1": 0.9838, "C2": 1 },
-    "off_level_lemmas": ["chiste", "ironía", "pelo", "pertenecer", "romper"],
+    "coverage_by_level": { "A1": 0.6263, "A2": 0.7616, "B1": 0.9273, "B2": 0.9657, "C1": 0.9899, "C2": 1 },
+    "off_level_lemmas": ["chiste", "pelo"],
     "avg_sentence_words": 11.5,
     "flesch_reading_ease": 79.2,
-    "checked_at": "2026-10-19T07:48:30.244Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/c1/es-c1-lis-008/v1.m4a",

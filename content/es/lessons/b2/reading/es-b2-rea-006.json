@@ -1,0 +1,989 @@
+{
+  "id": "es-b2-rea-006",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u02",
+  "series": "es-b2-u02-colaborativa",
+  "skill": "reading",
+  "genre": "article",
+  "title": "La economía colaborativa: compartir en lugar de comprar",
+  "summary_es": {
+    "en": "An article on platforms for sharing cars, flats and tools, and the debate they have opened.",
+    "fr": "Un article sur les plateformes de partage de voitures, de logements et d’outils, et le débat qu’elles suscitent.",
+    "zh": "一篇关于汽车、住房和工具共享平台及其引发争议的文章。",
+    "ja": "車や住まい、道具を共有するプラットフォームと、それが生んだ議論についての記事です。"
+  },
+  "topic": "money",
+  "tags": ["economía", "consumo", "tecnología"],
+  "can_do": ["R-B2-01"],
+  "grammar_focus": ["es.b2.pasiva-y-se"],
+  "vocab_focus": ["compartir", "plataforma", "usuario", "regulación"],
+  "est_minutes": 14,
+  "prediction_prompt": "¿Has usado alguna aplicación para compartir coche, casa u objetos?",
+  "pre_teach": ["plataforma", "regulación"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Hace apenas quince años, a casi nadie se le ocurría dormir en casa de un desconocido durante las vacaciones o subir al coche de alguien que no conocía para hacer un viaje largo.",
+          "tokens": [
+            { "t": "Hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "apenas", "l": "apenas", "p": "ADV", "w": true, "sp": true },
+            { "t": "quince", "l": "quince", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "ocurría", "l": "ocurrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "dormir", "l": "dormir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "desconocido", "l": "desconocido", "p": "ADJ", "w": true, "sp": true },
+            { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vacaciones", "l": "vacaciones", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "subir", "l": "subir", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "coche", "l": "coche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "alguien", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "conocía", "l": "conocer", "p": "VERB", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "largo", "l": "largo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Hoy millones de personas lo hacen cada semana gracias a las plataformas digitales de la llamada economía colaborativa.",
+          "tokens": [
+            { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "millones", "l": "millón", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "hacen", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "plataformas", "l": "plataforma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "digitales", "l": "digital", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "llamada", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "economía", "l": "economía", "p": "NOUN", "w": true, "sp": true },
+            { "t": "colaborativa", "l": "colaborativo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "La idea de fondo es muy antigua.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "fondo", "l": "fondo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "antigua", "l": "antiguo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Nuestros abuelos ya se prestaban herramientas entre vecinos o compartían el coche para ir a trabajar.",
+          "tokens": [
+            { "t": "Nuestros", "l": "nuestro", "p": "DET", "w": true, "sp": true },
+            { "t": "abuelos", "l": "abuelo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "prestaban", "l": "prestar", "p": "VERB", "w": true, "sp": true },
+            { "t": "herramientas", "l": "herramienta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "compartían", "l": "compartir", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "coche", "l": "coche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "trabajar", "l": "trabajar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Lo que ha cambiado es la escala.",
+          "tokens": [
+            { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "cambiado", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "escala", "l": "escala", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Internet permite poner en contacto a personas que no se conocen y que viven en lugares distintos, y las valoraciones de otros usuarios generan la confianza necesaria para que el intercambio funcione.",
+          "tokens": [
+            { "t": "Internet", "l": "internet", "p": "NOUN", "w": true, "sp": true },
+            { "t": "permite", "l": "permitir", "p": "VERB", "w": true, "sp": true },
+            { "t": "poner", "l": "poner", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "contacto", "l": "contacto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "conocen", "l": "conocer", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "viven", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "lugares", "l": "lugar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "distintos", "l": "distinto", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "valoraciones", "l": "valoración", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "otros", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "usuarios", "l": "usuario", "p": "NOUN", "w": true, "sp": true },
+            { "t": "generan", "l": "generar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "confianza", "l": "confianza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "necesaria", "l": "necesario", "p": "ADJ", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "intercambio", "l": "intercambio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "funcione", "l": "funcionar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Las ventajas parecen evidentes.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ventajas", "l": "ventaja", "p": "NOUN", "w": true, "sp": true },
+            { "t": "parecen", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "evidentes", "l": "evidente", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Quien comparte su coche en un trayecto entre ciudades reduce gastos y contamina menos.",
+          "tokens": [
+            { "t": "Quien", "l": "quien", "p": "PRON", "w": true, "sp": true },
+            { "t": "comparte", "l": "compartir", "p": "VERB", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "coche", "l": "coche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "trayecto", "l": "trayecto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "reduce", "l": "reducir", "p": "VERB", "w": true, "sp": true },
+            { "t": "gastos", "l": "gasto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "contamina", "l": "contaminar", "p": "VERB", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Quien alquila una habitación libre obtiene un dinero extra que, en muchos casos, le ayuda a pagar la hipoteca.",
+          "tokens": [
+            { "t": "Quien", "l": "quien", "p": "PRON", "w": true, "sp": true },
+            { "t": "alquila", "l": "alquilar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "habitación", "l": "habitación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "libre", "l": "libre", "p": "ADJ", "w": true, "sp": true },
+            { "t": "obtiene", "l": "obtener", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true, "sp": true },
+            { "t": "extra", "l": "extra", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "casos", "l": "caso", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "ayuda", "l": "ayudar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "pagar", "l": "pagar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "hipoteca", "l": "hipoteca", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Y quien necesita un taladro una vez al año no tiene por qué comprarlo: basta con pedirlo prestado a través de una aplicación de su barrio.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true },
+            { "t": "necesita", "l": "necesitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "taladro", "l": "taladro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "comprarlo", "l": "comprar", "p": "VERB", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "basta", "l": "bastar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "pedirlo", "l": "pedir", "p": "VERB", "w": true, "sp": true },
+            { "t": "prestado", "l": "prestado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "través", "l": "través", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "aplicación", "l": "aplicación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Para muchos defensores, este modelo representa además un cambio de mentalidad.",
+          "tokens": [
+            { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "defensores", "l": "defensor", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "modelo", "l": "modelo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "representa", "l": "representar", "p": "VERB", "w": true, "sp": true },
+            { "t": "además", "l": "además", "p": "ADV", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cambio", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "mentalidad", "l": "mentalidad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "En lugar de acumular objetos que usamos poco, se trataría de valorar el acceso por encima de la propiedad.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "lugar", "l": "lugar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "acumular", "l": "acumular", "p": "VERB", "w": true, "sp": true },
+            { "t": "objetos", "l": "objeto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "usamos", "l": "usar", "p": "VERB", "w": true, "sp": true },
+            { "t": "poco", "l": "poco", "p": "DET", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "trataría", "l": "tratar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "valorar", "l": "valorar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "acceso", "l": "acceso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "encima", "l": "encima", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "propiedad", "l": "propiedad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Algunos estudios calculan que un coche privado pasa más del noventa por ciento del tiempo aparcado, y que un taladro doméstico se utiliza, de media, unos pocos minutos en toda su vida útil.",
+          "tokens": [
+            { "t": "Algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "estudios", "l": "estudio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "calculan", "l": "calcular", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "coche", "l": "coche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "privado", "l": "privado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "pasa", "l": "pasar", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "noventa", "l": "noventa", "p": "NUM", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "ciento", "l": "cien", "p": "NUM", "w": false, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "aparcado", "l": "aparcar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "taladro", "l": "taladro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "doméstico", "l": "doméstico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "utiliza", "l": "utilizar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "media", "l": "medio", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pocos", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "toda", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "vida", "l": "vida", "p": "NOUN", "w": true, "sp": true },
+            { "t": "útil", "l": "útil", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Sin embargo, no todo es tan idílico como prometían sus primeros entusiastas.",
+          "tokens": [
+            { "t": "Sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "embargo", "l": "embargo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true },
+            { "t": "idílico", "l": "idílico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "como", "l": "como", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "prometían", "l": "prometer", "p": "VERB", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "primeros", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "entusiastas", "l": "entusiasta", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "En algunas ciudades, el alquiler de pisos a turistas a través de estas plataformas ha reducido la oferta de vivienda para los residentes y ha hecho subir los precios.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "algunas", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "alquiler", "l": "alquiler", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "pisos", "l": "piso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "turistas", "l": "turista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "través", "l": "través", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "estas", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "plataformas", "l": "plataforma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "reducido", "l": "reducir", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "oferta", "l": "oferta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "vivienda", "l": "vivienda", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "residentes", "l": "residente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "hecho", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "subir", "l": "subir", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "precios", "l": "precio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "En el sector del transporte, los taxistas denuncian una competencia desleal, porque los conductores de las aplicaciones no siempre tienen que cumplir las mismas normas ni pagar los mismos impuestos.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sector", "l": "sector", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "transporte", "l": "transporte", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "taxistas", "l": "taxista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "denuncian", "l": "denunciar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "competencia", "l": "competencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "desleal", "l": "desleal", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "conductores", "l": "conductor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "aplicaciones", "l": "aplicación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true },
+            { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "cumplir", "l": "cumplir", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mismas", "l": "mismo", "p": "DET", "w": true, "sp": true },
+            { "t": "normas", "l": "norma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "pagar", "l": "pagar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mismos", "l": "mismo", "p": "DET", "w": true, "sp": true },
+            { "t": "impuestos", "l": "impuesto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "También se ha cuestionado que algunas de estas empresas sean realmente colaborativas.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "cuestionado", "l": "cuestionar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "algunas", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "estas", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "empresas", "l": "empresa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sean", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "realmente", "l": "realmente", "p": "ADV", "w": true, "sp": true },
+            { "t": "colaborativas", "l": "colaborativo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Muchas funcionan como grandes compañías tecnológicas que se quedan con una parte importante de cada transacción, mientras que los trabajadores que prestan el servicio carecen de contrato y de protección social.",
+          "tokens": [
+            { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "funcionan", "l": "funcionar", "p": "VERB", "w": true, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "grandes", "l": "grande", "p": "ADJ", "w": true, "sp": true },
+            { "t": "compañías", "l": "compañía", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tecnológicas", "l": "tecnológico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "quedan", "l": "quedar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true },
+            { "t": "importante", "l": "importante", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "transacción", "l": "transacción", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "mientras", "l": "mientras", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "trabajadores", "l": "trabajador", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "prestan", "l": "prestar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "servicio", "l": "servicio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "carecen", "l": "carecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "contrato", "l": "contrato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "protección", "l": "protección", "p": "NOUN", "w": true, "sp": true },
+            { "t": "social", "l": "social", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Para sus críticos, se trata más bien de una economía de plataformas que de una economía de compartir.",
+          "tokens": [
+            { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "críticos", "l": "crítico", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "trata", "l": "tratar", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "economía", "l": "economía", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "plataformas", "l": "plataforma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "economía", "l": "economía", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "compartir", "l": "compartir", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "Ante esta situación, los gobiernos han empezado a intervenir.",
+          "tokens": [
+            { "t": "Ante", "l": "ante", "p": "ADP", "w": true, "sp": true },
+            { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "situación", "l": "situación", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "gobiernos", "l": "gobierno", "p": "NOUN", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "empezado", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "intervenir", "l": "intervenir", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Varias ciudades europeas han limitado el número de días al año que se puede alquilar un piso a turistas, y otras exigen que los anfitriones se registren y paguen impuestos.",
+          "tokens": [
+            { "t": "Varias", "l": "varios", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "europeas", "l": "europeo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "limitado", "l": "limitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "número", "l": "número", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "días", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "alquilar", "l": "alquilar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "piso", "l": "piso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "turistas", "l": "turista", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "otras", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "exigen", "l": "exigir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "anfitriones", "l": "anfitrión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "registren", "l": "registrarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "paguen", "l": "pagar", "p": "VERB", "w": true, "sp": true },
+            { "t": "impuestos", "l": "impuesto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "En el caso del transporte, algunos países han obligado a las empresas a considerar a sus conductores como empleados.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "caso", "l": "caso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "transporte", "l": "transporte", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "países", "l": "país", "p": "NOUN", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "obligado", "l": "obligar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "empresas", "l": "empresa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "considerar", "l": "considerar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "conductores", "l": "conductor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "empleados", "l": "empleado", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "sentences": [
+        {
+          "id": "p8s1",
+          "text": "El debate sigue abierto.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "debate", "l": "debatir", "p": "VERB", "w": true, "sp": true },
+            { "t": "sigue", "l": "seguir", "p": "VERB", "w": true, "sp": true },
+            { "t": "abierto", "l": "abrir", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s2",
+          "text": "Lo que parece claro es que la economía colaborativa no va a desaparecer, porque responde a necesidades reales y a una nueva forma de entender el consumo.",
+          "tokens": [
+            { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "claro", "l": "claro", "p": "ADJ", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "economía", "l": "economía", "p": "NOUN", "w": true, "sp": true },
+            { "t": "colaborativa", "l": "colaborativo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "va", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "desaparecer", "l": "desaparecer", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "responde", "l": "responder", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "necesidades", "l": "necesidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "reales", "l": "real", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "nueva", "l": "nuevo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "forma", "l": "forma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "entender", "l": "entender", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "consumo", "l": "consumir", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s3",
+          "text": "En España, algunas comunidades autónomas ya han aprobado leyes específicas sobre los pisos turísticos, y se discute cómo deben tributar los ingresos que obtienen los particulares.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "España", "l": "españa", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "algunas", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "comunidades", "l": "comunidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "autónomas", "l": "autónomo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "aprobado", "l": "aprobar", "p": "VERB", "w": true, "sp": true },
+            { "t": "leyes", "l": "ley", "p": "NOUN", "w": true, "sp": true },
+            { "t": "específicas", "l": "específico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pisos", "l": "piso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "turísticos", "l": "turístico", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "discute", "l": "discutir", "p": "VERB", "w": true, "sp": true },
+            { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true },
+            { "t": "deben", "l": "deber", "p": "VERB", "w": true, "sp": true },
+            { "t": "tributar", "l": "tributar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ingresos", "l": "ingreso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "obtienen", "l": "obtener", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "particulares", "l": "particular", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s4",
+          "text": "El reto consiste en aprovechar sus ventajas sin que los costes recaigan sobre los vecinos, los trabajadores o las arcas públicas.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "reto", "l": "reto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "consiste", "l": "consistir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "aprovechar", "l": "aprovechar", "p": "VERB", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "ventajas", "l": "ventaja", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "costes", "l": "coste", "p": "NOUN", "w": true, "sp": true },
+            { "t": "recaigan", "l": "recaer", "p": "VERB", "w": true, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "trabajadores", "l": "trabajador", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "arcas", "l": "arcas", "p": "NOUN", "w": true, "sp": true },
+            { "t": "públicas", "l": "público", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s5",
+          "text": "Como suele ocurrir con las innovaciones, la pregunta no es si la queremos, sino con qué reglas.",
+          "tokens": [
+            { "t": "Como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "suele", "l": "soler", "p": "VERB", "w": true, "sp": true },
+            { "t": "ocurrir", "l": "ocurrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "innovaciones", "l": "innovación", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pregunta", "l": "pregunta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "queremos", "l": "querer", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "reglas", "l": "regla", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": { "en": "Impersonal se", "fr": "Le se impersonnel", "zh": "无人称 se", "ja": "不定人称の se" },
+      "explanation_es": {
+        "en": "*Se* with a verb in the third person presents an action without saying who does it: *se puede alquilar*, *se ha cuestionado*."
+      },
+      "refs": ["p7s2", "p6s1"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "taladro",
+      "surface": "taladro",
+      "pos": "noun",
+      "def_en": "herramienta para hacer agujeros",
+      "def_es": { "en": "drill", "fr": "perceuse", "zh": "电钻", "ja": "ドリル" },
+      "ref": "p3s4"
+    },
+    {
+      "lemma": "competencia desleal",
+      "surface": "competencia desleal",
+      "pos": "phrase",
+      "def_en": "competir sin respetar las mismas reglas",
+      "def_es": { "en": "unfair competition", "fr": "concurrence déloyale", "zh": "不正当竞争", "ja": "不公正な競争" },
+      "ref": "p5s3"
+    },
+    {
+      "lemma": "anfitrión",
+      "surface": "anfitriones",
+      "pos": "noun",
+      "def_en": "persona que recibe a otros en su casa",
+      "def_es": { "en": "hosts", "fr": "hôtes", "zh": "房东，接待者", "ja": "ホスト" },
+      "ref": "p7s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Cuál es el objetivo principal del artículo?",
+      "evidence": ["p8s1"],
+      "rationale_es": { "en": "It weighs advantages and problems." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Explicar cómo ganar mucho dinero alquilando una habitación" },
+        { "id": "b", "text": "Presentar ventajas y problemas de compartir mediante plataformas" },
+        { "id": "c", "text": "Defender que se prohíban todas las aplicaciones de transporte" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué ha cambiado respecto a la época de nuestros abuelos?",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "The scale." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que antes nadie compartía nada con nadie" },
+        { "id": "b", "text": "Que ahora todo se hace sin dinero" },
+        { "id": "c", "text": "El alcance de los intercambios" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué genera la confianza entre desconocidos?",
+      "evidence": ["p2s4"],
+      "rationale_es": { "en": "Ratings from other users." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Lo que dicen quienes ya lo usaron" },
+        { "id": "b", "text": "Los contratos firmados ante notario" },
+        { "id": "c", "text": "Las fotos de los perfiles personales" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Para qué menciona el autor el ejemplo del taladro?",
+      "evidence": ["p4s3"],
+      "rationale_es": { "en": "Many objects are barely used." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para explicar cómo funcionan las herramientas modernas" },
+        { "id": "b", "text": "Para mostrar que muchos objetos se usan muy poco" },
+        { "id": "c", "text": "Para recomendar una marca de herramientas barata" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Según los taxistas, compiten en las mismas condiciones que las aplicaciones.",
+      "evidence": ["p5s3"],
+      "rationale_es": { "en": "They denounce unfair competition." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "read",
+      "prompt": "¿Qué opinan los críticos de algunas de estas empresas?",
+      "evidence": ["p6s3"],
+      "rationale_es": { "en": "Not as collaborative as claimed." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que pagan demasiado a sus trabajadores" },
+        { "id": "b", "text": "Que deberían ser propiedad del Estado" },
+        { "id": "c", "text": "Que no son tan colaborativas como dicen" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p8s5"],
+      "rationale_es": { "en": "*Con qué reglas*." },
+      "type": "gap_fill",
+      "text": "Según el autor, la cuestión es con qué {{1}} queremos la economía colaborativa.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["reglas"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 524,
+  "lemmas": [
+    "a", "abrir", "abuelo", "acceso", "acumular", "además", "algo", "algún", "alquilar", "alquiler",
+    "anfitrión", "ante", "antiguo", "aparcar", "apenas", "aplicación", "aprobar", "aprovechar", "arcas",
+    "autónomo", "ayudar", "año", "barrio", "bastar", "bien", "cada", "calcular", "cambiar", "carecer", "casa",
+    "casi", "caso", "ciudad", "claro", "coche", "colaborativo", "comer", "como", "compartir", "compañía",
+    "competencia", "comprar", "comunidad", "con", "conductor", "confianza", "conocer", "considerar",
+    "consistir", "consumir", "contacto", "contaminar", "contrato", "coste", "crítico", "cuestionar", "cumplir",
+    "cómo", "de", "debatir", "deber", "defensor", "denunciar", "desaparecer", "desconocido", "desleal",
+    "digital", "dinero", "discutir", "distinto", "doméstico", "dormir", "durante", "día", "economía", "el",
+    "embargo", "empezar", "empleado", "empresa", "en", "encima", "entender", "entre", "entusiasta", "escala",
+    "específico", "este", "estudio", "europeo", "evidente", "exigir", "extra", "fondo", "forma", "funcionar",
+    "gasto", "generar", "gobierno", "grande", "haber", "habitación", "hacer", "herramienta", "hipoteca", "hoy",
+    "idea", "idílico", "importante", "impuesto", "ingreso", "innovación", "intercambio", "internet",
+    "intervenir", "ir", "largo", "ley", "libre", "limitar", "llamarse", "lugar", "medio", "menos",
+    "mentalidad", "mientras", "millón", "minuto", "mismo", "modelo", "mucho", "muy", "más", "necesario",
+    "necesidad", "necesitar", "ni", "no", "norma", "nuestro", "nuevo", "número", "o", "objeto", "obligar",
+    "obtener", "ocurrir", "oferta", "otro", "pagar", "para", "parecer", "particular", "partir", "pasar",
+    "país", "pedir", "permitir", "persona", "piso", "plataforma", "poco", "poder", "poner", "por", "porque",
+    "precio", "pregunta", "prestado", "prestar", "privado", "prometer", "propiedad", "protección", "público",
+    "que", "quedar", "querer", "quien", "qué", "real", "realmente", "recaer", "reducir", "registrarse",
+    "regla", "representar", "residente", "responder", "reto", "se", "sector", "seguir", "semana", "ser",
+    "servicio", "si", "siempre", "sin", "sino", "situación", "sobre", "social", "soler", "su", "subir",
+    "taladro", "también", "tan", "taxista", "tecnológico", "tener", "tiempo", "todo", "trabajador", "trabajar",
+    "transacción", "transporte", "tratar", "través", "trayecto", "tributar", "turista", "turístico", "un",
+    "usar", "usuario", "utilizar", "vacaciones", "valoración", "valorar", "varios", "vecino", "ventaja", "vez",
+    "viajar", "vida", "vivienda", "vivir", "y", "ya", "él", "útil"
+  ],
+  "difficulty": 1276,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6023, "A2": 0.7432, "B1": 0.8707, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 19.4,
+    "flesch_reading_ease": 61.4,
+    "checked_at": "2026-10-19T13:22:45.133Z"
+  }
+}

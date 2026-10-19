@@ -408,7 +408,7 @@
             { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
             { "t": "fallos", "l": "fallo", "p": "NOUN", "w": true, "sp": true },
             { "t": "forman", "l": "formar", "p": "VERB", "w": true, "sp": true },
-            { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true },
             { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
             { "t": "proceso", "l": "proceso", "p": "NOUN", "w": true },
             { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
@@ -1026,7 +1026,7 @@
     "memoria", "mente", "mes", "miedo", "minuto", "mostrar", "motivación", "mucho", "mundo", "muy", "mágico",
     "más", "método", "música", "nativo", "natural", "nivel", "niño", "no", "noche", "nosotros", "notar",
     "nuevo", "nunca", "o", "objetivo", "obligación", "obstáculo", "otro", "oír", "paciencia", "palabra",
-    "para", "parte", "pasado", "país", "pequeño", "pero", "persona", "poder", "por", "porque", "poseer",
+    "para", "partir", "pasado", "país", "pequeño", "pero", "persona", "poder", "por", "porque", "poseer",
     "posible", "practicar", "preferir", "principio", "probable", "probablemente", "proceso", "pronunciación",
     "publicar", "puerta", "pódcast", "que", "quedar", "querer", "quien", "qué", "realidad", "reciente",
     "recordar", "regularidad", "relacionar", "respetar", "resultado", "resumen", "rápido", "saber", "se",
@@ -1036,10 +1036,10 @@
   ],
   "difficulty": 1256,
   "qa": {
-    "coverage_by_level": { "A1": 0.6091, "A2": 0.7103, "B1": 0.8452, "B2": 1, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.6111, "A2": 0.756, "B1": 0.8988, "B2": 1, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 14.6,
     "flesch_reading_ease": 71.3,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   }
 }

@@ -1,0 +1,1076 @@
+{
+  "id": "es-b2-rea-012",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u04",
+  "series": "es-b2-u04-bioclimatica",
+  "skill": "reading",
+  "genre": "interview",
+  "title": "Entrevista a una arquitecta bioclimática",
+  "summary_es": {
+    "en": "An architect explains how buildings can stay cool or warm almost without spending energy.",
+    "fr": "Une architecte explique comment les bâtiments peuvent rester frais ou chauds presque sans dépenser d’énergie.",
+    "zh": "一位建筑师讲解建筑如何几乎不耗能就保持凉爽或温暖。",
+    "ja": "建築家が、ほとんどエネルギーを使わずに建物を涼しく、または暖かく保つ方法を説明します。"
+  },
+  "topic": "city-housing",
+  "tags": ["arquitectura", "energía", "entrevista"],
+  "can_do": ["R-B2-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["bioclimático", "aislamiento", "orientación", "eficiencia"],
+  "est_minutes": 14,
+  "prediction_prompt": "¿Cómo es tu casa en verano y en invierno? ¿Pasas frío o calor?",
+  "pre_teach": ["bioclimático", "orientación"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Marta Ibarra dirige un pequeño estudio de arquitectura en Pamplona especializado en construcción bioclimática.",
+          "tokens": [
+            { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "sp": true },
+            { "t": "Ibarra", "l": "ibarra", "p": "PROPN", "w": false, "sp": true },
+            { "t": "dirige", "l": "dirigir", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pequeño", "l": "pequeño", "p": "ADJ", "w": true, "sp": true },
+            { "t": "estudio", "l": "estudiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "arquitectura", "l": "arquitectura", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "Pamplona", "l": "pamplona", "p": "PROPN", "w": false, "sp": true },
+            { "t": "especializado", "l": "especializar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "construcción", "l": "construcción", "p": "NOUN", "w": true, "sp": true },
+            { "t": "bioclimática", "l": "bioclimático", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Sus edificios consumen hasta un setenta por ciento menos de energía que una vivienda convencional.",
+          "tokens": [
+            { "t": "Sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "edificios", "l": "edificio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "consumen", "l": "consumir", "p": "VERB", "w": true, "sp": true },
+            { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "setenta", "l": "setenta", "p": "NUM", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "ciento", "l": "cien", "p": "NUM", "w": false, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "energía", "l": "energía", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "vivienda", "l": "vivienda", "p": "NOUN", "w": true, "sp": true },
+            { "t": "convencional", "l": "convencional", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Hablamos con ella sobre cómo vivir mejor gastando menos.",
+          "tokens": [
+            { "t": "Hablamos", "l": "hablar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "ella", "l": "ella", "p": "PRON", "w": true, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true },
+            { "t": "vivir", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true },
+            { "t": "gastando", "l": "gastar", "p": "VERB", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "—¿Qué significa exactamente que un edificio sea bioclimático?",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "significa", "l": "significar", "p": "VERB", "w": true, "sp": true },
+            { "t": "exactamente", "l": "exactamente", "p": "ADV", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "edificio", "l": "edificio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sea", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "bioclimático", "l": "bioclimático", "p": "ADJ", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "—Que aprovecha las condiciones del lugar, el sol, el viento, la vegetación, para mantener una temperatura agradable con el mínimo gasto de energía.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "aprovecha", "l": "aprovechar", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "condiciones", "l": "condición", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "lugar", "l": "lugar", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sol", "l": "sol", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "viento", "l": "viento", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vegetación", "l": "vegetación", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "mantener", "l": "mantener", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "temperatura", "l": "temperatura", "p": "NOUN", "w": true, "sp": true },
+            { "t": "agradable", "l": "agradable", "p": "ADJ", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mínimo", "l": "mínimo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "gasto", "l": "gastar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "energía", "l": "energía", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "No es una invención moderna.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "invención", "l": "invención", "p": "NOUN", "w": true, "sp": true },
+            { "t": "moderna", "l": "moderno", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Las casas tradicionales de cada región ya lo hacían: los muros gruesos de los pueblos de Castilla, los patios andaluces o las casas blancas de las islas responden a un clima concreto.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "casas", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tradicionales", "l": "tradicional", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "región", "l": "región", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "hacían", "l": "hacer", "p": "VERB", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "muros", "l": "muro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "gruesos", "l": "grueso", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pueblos", "l": "pueblo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Castilla", "l": "castilla", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "patios", "l": "patio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "andaluces", "l": "andaluz", "p": "ADJ", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "casas", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "blancas", "l": "blanco", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "islas", "l": "isla", "p": "NOUN", "w": true, "sp": true },
+            { "t": "responden", "l": "responder", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "clima", "l": "clima", "p": "NOUN", "w": true, "sp": true },
+            { "t": "concreto", "l": "concreto", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "—Entonces, ¿por qué se olvidó ese conocimiento?",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "olvidó", "l": "olvidar", "p": "VERB", "w": true, "sp": true },
+            { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "conocimiento", "l": "conocimiento", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "—Porque durante décadas la energía fue barata y pensamos que la técnica lo resolvería todo.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "décadas", "l": "década", "p": "NOUN", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "energía", "l": "energía", "p": "NOUN", "w": true, "sp": true },
+            { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "barata", "l": "barato", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "pensamos", "l": "pensar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "técnica", "l": "técnico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "resolvería", "l": "resolver", "p": "VERB", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Se construyeron bloques idénticos en Sevilla y en Bilbao, con grandes ventanales orientados hacia cualquier sitio, y luego se instalaba un aire acondicionado potente.",
+          "tokens": [
+            { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "construyeron", "l": "construir", "p": "VERB", "w": true, "sp": true },
+            { "t": "bloques", "l": "bloque", "p": "NOUN", "w": true, "sp": true },
+            { "t": "idénticos", "l": "idéntico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "Sevilla", "l": "sevilla", "p": "PROPN", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "Bilbao", "l": "bilbao", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "grandes", "l": "grande", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ventanales", "l": "ventanal", "p": "NOUN", "w": true, "sp": true },
+            { "t": "orientados", "l": "orientar", "p": "VERB", "w": true, "sp": true },
+            { "t": "hacia", "l": "hacia", "p": "ADP", "w": true, "sp": true },
+            { "t": "cualquier", "l": "cualquier", "p": "ADJ", "w": true, "sp": true },
+            { "t": "sitio", "l": "sitio", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "luego", "l": "luego", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "instalaba", "l": "instalarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "aire", "l": "aire", "p": "NOUN", "w": true, "sp": true },
+            { "t": "acondicionado", "l": "acondicionado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "potente", "l": "potente", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "El resultado son edificios que en verano son hornos y en invierno, neveras.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "resultado", "l": "resultado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "edificios", "l": "edificio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "verano", "l": "verano", "p": "NOUN", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "hornos", "l": "horno", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "invierno", "l": "invierno", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "neveras", "l": "nevera", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "—¿Cuáles son los principios básicos?",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Cuáles", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "principios", "l": "principio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "básicos", "l": "básico", "p": "ADJ", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "—El primero es la orientación.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primero", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "orientación", "l": "orientación", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "En nuestro clima, la fachada principal debe mirar al sur, con aleros que den sombra en verano, cuando el sol está alto, y dejen pasar la luz en invierno, cuando está bajo.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "nuestro", "l": "nuestro", "p": "DET", "w": true, "sp": true },
+            { "t": "clima", "l": "clima", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fachada", "l": "fachada", "p": "NOUN", "w": true, "sp": true },
+            { "t": "principal", "l": "principal", "p": "ADJ", "w": true, "sp": true },
+            { "t": "debe", "l": "deber", "p": "VERB", "w": true, "sp": true },
+            { "t": "mirar", "l": "mirar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "sur", "l": "sur", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "aleros", "l": "alero", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "den", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "sombra", "l": "sombra", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "verano", "l": "verano", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sol", "l": "sol", "p": "NOUN", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "alto", "l": "alto", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "dejen", "l": "dejar", "p": "VERB", "w": true, "sp": true },
+            { "t": "pasar", "l": "pasar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "luz", "l": "luz", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "invierno", "l": "invierno", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "bajo", "l": "bajo", "p": "ADP", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "El segundo es un buen aislamiento: si la casa está bien protegida, el calor no se escapa.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "segundo", "l": "segundo", "p": "NUM", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "aislamiento", "l": "aislamiento", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true },
+            { "t": "protegida", "l": "proteger", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "calor", "l": "calor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "escapa", "l": "escaparse", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s5",
+          "text": "Y el tercero es la ventilación cruzada, que permite refrescar la vivienda por la noche abriendo ventanas en fachadas opuestas.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tercero", "l": "tercero", "p": "NUM", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ventilación", "l": "ventilación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cruzada", "l": "cruzar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "permite", "l": "permitir", "p": "VERB", "w": true, "sp": true },
+            { "t": "refrescar", "l": "refrescar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vivienda", "l": "vivienda", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "abriendo", "l": "abrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "ventanas", "l": "ventana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "fachadas", "l": "fachada", "p": "NOUN", "w": true, "sp": true },
+            { "t": "opuestas", "l": "opuesto", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "—¿Es más cara una casa así?",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "cara", "l": "caro", "p": "ADJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "así", "l": "así", "p": "ADV", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "—Construirla puede costar entre un cinco y un diez por ciento más, sobre todo por los materiales de aislamiento y las ventanas de calidad.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Construirla", "l": "construir", "p": "VERB", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "costar", "l": "costar", "p": "VERB", "w": true, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "ciento", "l": "cien", "p": "NUM", "w": false, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "materiales", "l": "material", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "aislamiento", "l": "aislamiento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ventanas", "l": "ventana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "calidad", "l": "calidad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Pero esa inversión se recupera en pocos años con el ahorro en las facturas.",
+          "tokens": [
+            { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "inversión", "l": "inversión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "recupera", "l": "recuperar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "pocos", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ahorro", "l": "ahorrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "facturas", "l": "factura", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "También hay ayudas públicas para la rehabilitación energética de viviendas, que pueden cubrir hasta la mitad de la inversión.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "ayudas", "l": "ayudar", "p": "VERB", "w": true, "sp": true },
+            { "t": "públicas", "l": "público", "p": "ADJ", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "rehabilitación", "l": "rehabilitación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "energética", "l": "energético", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "viviendas", "l": "vivienda", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "cubrir", "l": "cubrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mitad", "l": "mitad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "inversión", "l": "inversión", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s5",
+          "text": "Además, el confort es incomparable: no hay corrientes de aire, ni humedades, ni ese ruido constante de las máquinas.",
+          "tokens": [
+            { "t": "Además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "confort", "l": "confort", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "incomparable", "l": "incomparable", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "corrientes", "l": "corriente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "aire", "l": "aire", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "humedades", "l": "humedad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "ruido", "l": "ruido", "p": "NOUN", "w": true, "sp": true },
+            { "t": "constante", "l": "constante", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "máquinas", "l": "máquina", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "—¿Y quien ya vive en un piso antiguo?",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "vive", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "piso", "l": "piso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "antiguo", "l": "antiguo", "p": "ADJ", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "—Puede hacer mucho.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Cambiar las ventanas, poner toldos en las que dan al oeste, aislar el techo si es el último piso o plantar árboles de hoja caduca delante de la fachada.",
+          "tokens": [
+            { "t": "Cambiar", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ventanas", "l": "ventana", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "poner", "l": "poner", "p": "VERB", "w": true, "sp": true },
+            { "t": "toldos", "l": "toldo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "dan", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "oeste", "l": "oeste", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "aislar", "l": "aislar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "techo", "l": "techo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "último", "l": "último", "p": "ADJ", "w": true, "sp": true },
+            { "t": "piso", "l": "piso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "plantar", "l": "plantar", "p": "VERB", "w": true, "sp": true },
+            { "t": "árboles", "l": "árbol", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "hoja", "l": "hoja", "p": "NOUN", "w": true, "sp": true },
+            { "t": "caduca", "l": "caducar", "p": "VERB", "w": true, "sp": true },
+            { "t": "delante", "l": "delante", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "fachada", "l": "fachada", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s4",
+          "text": "En verano dan sombra y en invierno, cuando pierden las hojas, dejan pasar el sol.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "verano", "l": "verano", "p": "NOUN", "w": true, "sp": true },
+            { "t": "dan", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "sombra", "l": "sombra", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "invierno", "l": "invierno", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "pierden", "l": "perder", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "hojas", "l": "hoja", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "dejan", "l": "dejar", "p": "VERB", "w": true, "sp": true },
+            { "t": "pasar", "l": "pasar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sol", "l": "sol", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s5",
+          "text": "Son medidas sencillas que cambian la vida de una familia.",
+          "tokens": [
+            { "t": "Son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "medidas", "l": "medida", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sencillas", "l": "sencillo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "cambian", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vida", "l": "vida", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "familia", "l": "familia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "—¿Qué papel tienen las ciudades?",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "papel", "l": "papel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "—Fundamental.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Fundamental", "l": "fundamental", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Una casa bioclimática en una calle sin un solo árbol, rodeada de asfalto, no puede hacer milagros.",
+          "tokens": [
+            { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "bioclimática", "l": "bioclimático", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "calle", "l": "calle", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "árbol", "l": "árbol", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "rodeada", "l": "rodear", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "asfalto", "l": "asfalto", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "milagros", "l": "milagro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s4",
+          "text": "Necesitamos más vegetación, más superficies que no acumulen calor y menos coches.",
+          "tokens": [
+            { "t": "Necesitamos", "l": "necesitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "vegetación", "l": "vegetación", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "superficies", "l": "superficie", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "acumulen", "l": "acumular", "p": "VERB", "w": true, "sp": true },
+            { "t": "calor", "l": "calor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "coches", "l": "coche", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s5",
+          "text": "Las olas de calor serán cada vez más frecuentes, y adaptar los edificios y las calles ya no es una opción: es una necesidad.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "olas", "l": "oler", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "calor", "l": "calor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "serán", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "frecuentes", "l": "frecuente", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "adaptar", "l": "adaptar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "edificios", "l": "edificio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "calles", "l": "calle", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "opción", "l": "opción", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "necesidad", "l": "necesidad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "sentences": [
+        {
+          "id": "p8s1",
+          "text": "—Un último consejo para nuestros lectores.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "último", "l": "último", "p": "ADJ", "w": true, "sp": true },
+            { "t": "consejo", "l": "consejo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "nuestros", "l": "nuestro", "p": "DET", "w": true, "sp": true },
+            { "t": "lectores", "l": "lector", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s2",
+          "text": "—Que observen su casa.",
+          "tokens": [
+            { "t": "—", "l": "—", "p": "PUNCT", "w": false },
+            { "t": "Que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "observen", "l": "observar", "p": "VERB", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s3",
+          "text": "Que se fijen en qué habitaciones reciben el sol de la mañana o de la tarde, por dónde entra el aire y dónde se acumula el calor.",
+          "tokens": [
+            { "t": "Que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "fijen", "l": "fijar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "habitaciones", "l": "habitación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "reciben", "l": "recibir", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sol", "l": "sol", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "dónde", "l": "dónde", "p": "ADV", "w": true, "sp": true },
+            { "t": "entra", "l": "entrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "aire", "l": "aire", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "dónde", "l": "dónde", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "acumula", "l": "acumular", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "calor", "l": "calor", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s4",
+          "text": "Entender cómo funciona el lugar donde vivimos es el primer paso para vivir mejor en él.",
+          "tokens": [
+            { "t": "Entender", "l": "entender", "p": "VERB", "w": true, "sp": true },
+            { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true },
+            { "t": "funciona", "l": "funcionar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "lugar", "l": "lugar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "vivimos", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "paso", "l": "pasar", "p": "VERB", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "vivir", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "él", "l": "él", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s5",
+          "text": "Y también ser pacientes: los cambios no se notan en un día.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "pacientes", "l": "paciente", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cambios", "l": "cambio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "notan", "l": "notar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Purpose and condition with que + subjunctive",
+        "fr": "But et condition avec que + subjonctif",
+        "zh": "用 que + 虚拟式表达目的和条件",
+        "ja": "que + 接続法で目的と条件を表す"
+      },
+      "explanation_es": {
+        "en": "After verbs of wishing or advising the subjunctive appears: *Que observen su casa*, *Que se fijen…*; also in relative clauses about a desired thing: *aleros que den sombra*."
+      },
+      "refs": ["p4s3", "p8s3"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "alero",
+      "surface": "aleros",
+      "pos": "noun",
+      "def_en": "parte del tejado que sale fuera de la pared",
+      "def_es": { "en": "eaves", "fr": "avant-toits", "zh": "屋檐", "ja": "軒" },
+      "ref": "p4s3"
+    },
+    {
+      "lemma": "toldo",
+      "surface": "toldos",
+      "pos": "noun",
+      "def_en": "tela que se pone en las ventanas para dar sombra",
+      "def_es": { "en": "awnings", "fr": "stores", "zh": "遮阳篷", "ja": "日よけ" },
+      "ref": "p6s3"
+    },
+    {
+      "lemma": "de hoja caduca",
+      "surface": "de hoja caduca",
+      "pos": "phrase",
+      "def_en": "que pierde las hojas en otoño",
+      "def_es": { "en": "deciduous", "fr": "à feuilles caduques", "zh": "落叶的", "ja": "落葉性の" },
+      "ref": "p6s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿De qué habla la arquitecta?",
+      "evidence": ["p1s3"],
+      "rationale_es": { "en": "Low-energy buildings." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De la historia de los edificios más altos de España" },
+        { "id": "b", "text": "De cómo construir casas que gasten poca energía" },
+        { "id": "c", "text": "De cómo decorar una casa con poco dinero" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué dice de las casas tradicionales?",
+      "evidence": ["p2s4"],
+      "rationale_es": { "en": "They suited local climates." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Eran más incómodas que las modernas" },
+        { "id": "b", "text": "Gastaban mucha más energía que hoy" },
+        { "id": "c", "text": "Ya se adaptaban al clima de cada lugar" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Por qué se olvidó ese conocimiento?",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "Cheap energy." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Gastar en calefacción no preocupaba" },
+        { "id": "b", "text": "Los arquitectos no estudiaban historia" },
+        { "id": "c", "text": "Las leyes prohibían esas casas" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Para qué sirve la ventilación cruzada?",
+      "evidence": ["p4s5"],
+      "rationale_es": { "en": "To cool the house at night." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para calentar las habitaciones" },
+        { "id": "b", "text": "Para enfriar la casa por la noche" },
+        { "id": "c", "text": "Para reducir el ruido que viene de la calle" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Una casa bioclimática cuesta el doble que una normal.",
+      "evidence": ["p5s2"],
+      "rationale_es": { "en": "Five to ten per cent more." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Por qué recomienda árboles de hoja caduca?",
+      "evidence": ["p6s4"],
+      "rationale_es": { "en": "Shade in summer, sun in winter." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Son más baratos que los toldos de tela" },
+        { "id": "b", "text": "Crecen más deprisa que los demás" },
+        { "id": "c", "text": "Protegen del calor sin quitar luz en los meses fríos" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p4s2"],
+      "rationale_es": { "en": "*La orientación*." },
+      "type": "gap_fill",
+      "text": "Según la arquitecta, el primer principio es la {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["orientación"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 515,
+  "lemmas": [
+    "a", "abrir", "acondicionado", "acumular", "adaptar", "además", "agradable", "ahorrar", "aire",
+    "aislamiento", "aislar", "alero", "alto", "andaluz", "antiguo", "aprovechar", "arquitectura", "asfalto",
+    "así", "ayudar", "año", "bajo", "barato", "bien", "bioclimático", "blanco", "bloque", "bueno", "básico",
+    "cada", "caducar", "calidad", "calle", "calor", "cambiar", "cambio", "caro", "casa", "ciudad", "clima",
+    "coche", "con", "concreto", "condición", "confort", "conocimiento", "consejo", "constante", "construcción",
+    "construir", "consumir", "convencional", "corriente", "costar", "cruzar", "cualquier", "cuando", "cubrir",
+    "cómo", "dar", "de", "deber", "dejar", "delante", "dirigir", "donde", "durante", "década", "día", "dónde",
+    "edificio", "el", "ella", "en", "energético", "energía", "entender", "entonces", "entrar", "entre",
+    "escaparse", "ese", "especializar", "estar", "estudiar", "exactamente", "fachada", "factura", "familia",
+    "fijar", "frecuente", "funcionar", "fundamental", "gastar", "grande", "grueso", "haber", "habitación",
+    "hablar", "hacer", "hacia", "hasta", "hoja", "horno", "humedad", "idéntico", "incomparable", "instalarse",
+    "invención", "inversión", "invierno", "isla", "lector", "luego", "lugar", "luz", "mantener", "material",
+    "mañana", "medida", "mejor", "menos", "milagro", "mirar", "mitad", "moderno", "mucho", "muro", "máquina",
+    "más", "mínimo", "necesidad", "necesitar", "nevera", "ni", "no", "noche", "notar", "nuestro", "o",
+    "observar", "oeste", "oler", "olvidar", "opción", "opuesto", "orientación", "orientar", "paciente",
+    "papel", "para", "pasar", "patio", "pensar", "pequeño", "perder", "permitir", "pero", "piso", "plantar",
+    "poco", "poder", "poner", "por", "porque", "potente", "principal", "principio", "proteger", "pueblo",
+    "público", "que", "quien", "qué", "recibir", "recuperar", "refrescar", "región", "rehabilitación",
+    "resolver", "responder", "resultado", "rodear", "ruido", "se", "sencillo", "ser", "si", "significar",
+    "sin", "sitio", "sobre", "sol", "solo", "sombra", "su", "superficie", "sur", "también", "tarde", "techo",
+    "temperatura", "tener", "todo", "toldo", "tradicional", "técnico", "un", "vegetación", "ventana",
+    "ventanal", "ventilación", "verano", "vez", "vida", "viento", "vivienda", "vivir", "y", "ya", "árbol",
+    "él", "último"
+  ],
+  "difficulty": 1255,
+  "qa": {
+    "coverage_by_level": { "A1": 0.624, "A2": 0.794, "B1": 0.906, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 14.3,
+    "flesch_reading_ease": 73.3,
+    "checked_at": "2026-10-19T13:22:45.133Z"
+  }
+}

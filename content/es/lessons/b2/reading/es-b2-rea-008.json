@@ -1,0 +1,1046 @@
+{
+  "id": "es-b2-rea-008",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u05",
+  "series": "es-b2-u05-carta",
+  "skill": "reading",
+  "genre": "story",
+  "title": "La carta que nunca envié",
+  "summary_es": {
+    "en": "A woman finds an old letter she wrote at nineteen and decides, years later, what to do with it.",
+    "fr": "Une femme retrouve une vieille lettre écrite à dix-neuf ans et décide, des années plus tard, quoi en faire.",
+    "zh": "一位女士找到自己十九岁时写的旧信，多年后决定如何处理它。",
+    "ja": "女性が19歳の時に書いた古い手紙を見つけ、何年も後にそれをどうするか決めます。"
+  },
+  "topic": "relationships",
+  "tags": ["recuerdos", "amistad", "relato"],
+  "can_do": ["R-B2-01"],
+  "grammar_focus": ["es.b1.imperfecto-vs-indefinido"],
+  "vocab_focus": ["carta", "sobre", "arrepentirse", "reconciliarse"],
+  "est_minutes": 14,
+  "prediction_prompt": "¿Has escrito alguna vez algo que nunca te atreviste a enviar?",
+  "pre_teach": ["sobre", "atreverse"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "La encontré un domingo de marzo, mientras vaciaba los cajones del escritorio de mis padres antes de vender la casa.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "encontré", "l": "encontrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "domingo", "l": "domingo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "marzo", "l": "marzo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "mientras", "l": "mientras", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "vaciaba", "l": "vaciar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cajones", "l": "cajón", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "escritorio", "l": "escritorio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "padres", "l": "padre", "p": "NOUN", "w": true, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "vender", "l": "vender", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "casa", "l": "casa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Estaba dentro de un libro de poemas que no abría desde el instituto: un sobre azul, con el sello sin matasellos y una dirección de Salamanca escrita con mi letra de entonces, redonda e insegura.",
+          "tokens": [
+            { "t": "Estaba", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "dentro", "l": "dentro", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "libro", "l": "libro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "poemas", "l": "poema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "abría", "l": "abrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "instituto", "l": "instituto", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "azul", "l": "azul", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sello", "l": "sello", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "matasellos", "l": "matasellos", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "dirección", "l": "dirección", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Salamanca", "l": "salamanca", "p": "PROPN", "w": false, "sp": true },
+            { "t": "escrita", "l": "escribir", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "letra", "l": "letra", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "entonces", "l": "entonces", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "redonda", "l": "redondo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "e", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "insegura", "l": "inseguro", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "No necesité abrirla para saber qué decía.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "necesité", "l": "necesitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "abrirla", "l": "abrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "saber", "l": "saber", "p": "VERB", "w": true, "sp": true },
+            { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "decía", "l": "decir", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Era la carta que le había escrito a Elena el verano en que dejamos de hablarnos.",
+          "tokens": [
+            { "t": "Era", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "carta", "l": "carta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "escrito", "l": "escribir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "Elena", "l": "elena", "p": "PROPN", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "verano", "l": "verano", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "dejamos", "l": "dejar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "hablarnos", "l": "hablar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Teníamos diecinueve años y habíamos sido inseparables desde los seis.",
+          "tokens": [
+            { "t": "Teníamos", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "diecinueve", "l": "diecinueve", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "habíamos", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "sido", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "inseparables", "l": "inseparable", "p": "ADJ", "w": true, "sp": true },
+            { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "seis", "l": "seis", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Habíamos compartido pupitre, secretos, la primera borrachera y el primer viaje sin nuestros padres.",
+          "tokens": [
+            { "t": "Habíamos", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "compartido", "l": "compartir", "p": "VERB", "w": true, "sp": true },
+            { "t": "pupitre", "l": "pupitre", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "secretos", "l": "secreto", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "borrachera", "l": "borrachera", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "nuestros", "l": "nuestro", "p": "DET", "w": true, "sp": true },
+            { "t": "padres", "l": "padre", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s5",
+          "text": "Y de repente, por una tontería que ya ni siquiera recuerdo bien, todo se rompió.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "repente", "l": "repente", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "tontería", "l": "tontería", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "siquiera", "l": "siquiera", "p": "ADV", "w": true, "sp": true },
+            { "t": "recuerdo", "l": "recordar", "p": "VERB", "w": true, "sp": true },
+            { "t": "bien", "l": "bien", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "rompió", "l": "romper", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Creo que fue por un chico, o por un comentario cruel que alguna de las dos hizo delante de los demás.",
+          "tokens": [
+            { "t": "Creo", "l": "creer", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "chico", "l": "chico", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "comentario", "l": "comentario", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cruel", "l": "cruel", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "alguna", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "hizo", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "delante", "l": "delante", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "demás", "l": "demás", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Lo que sí recuerdo es el orgullo.",
+          "tokens": [
+            { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "sp": true },
+            { "t": "recuerdo", "l": "recordar", "p": "VERB", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "orgullo", "l": "orgullo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Ninguna quería dar el primer paso.",
+          "tokens": [
+            { "t": "Ninguna", "l": "ningún", "p": "DET", "w": true, "sp": true },
+            { "t": "quería", "l": "querer", "p": "VERB", "w": true, "sp": true },
+            { "t": "dar", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "paso", "l": "pasar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Pasaron las semanas, ella se fue a estudiar a Salamanca y yo me quedé en Valladolid, y el silencio se fue volviendo cada vez más difícil de romper.",
+          "tokens": [
+            { "t": "Pasaron", "l": "pasar", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "semanas", "l": "semana", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "ella", "l": "ella", "p": "PRON", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "estudiar", "l": "estudiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "Salamanca", "l": "salamanca", "p": "PROPN", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "quedé", "l": "quedar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "Valladolid", "l": "valladolid", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "silencio", "l": "silencio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "volviendo", "l": "volver", "p": "VERB", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "difícil", "l": "difícil", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "romper", "l": "romper", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Una noche de agosto escribí aquella carta.",
+          "tokens": [
+            { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "agosto", "l": "agosto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "escribí", "l": "escribir", "p": "VERB", "w": true, "sp": true },
+            { "t": "aquella", "l": "aquel", "p": "DET", "w": true, "sp": true },
+            { "t": "carta", "l": "carta", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Le pedía perdón, le decía que la echaba de menos y le proponía vernos en la cafetería de siempre antes de que empezara el curso.",
+          "tokens": [
+            { "t": "Le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "pedía", "l": "pedir", "p": "VERB", "w": true, "sp": true },
+            { "t": "perdón", "l": "perdón", "p": "INTJ", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "decía", "l": "decir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "echaba", "l": "echar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "proponía", "l": "proponer", "p": "VERB", "w": true, "sp": true },
+            { "t": "vernos", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cafetería", "l": "cafetería", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "empezara", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "curso", "l": "curso", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "La cerré, le puse el sello y la dejé encima de la mesa para enviarla al día siguiente.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cerré", "l": "cerrar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "puse", "l": "poner", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sello", "l": "sello", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "dejé", "l": "dejar", "p": "VERB", "w": true, "sp": true },
+            { "t": "encima", "l": "encima", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mesa", "l": "mesa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "enviarla", "l": "enviar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "siguiente", "l": "siguiente", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Pero por la mañana me pareció ridícula, demasiado sentimental, y la escondí en el primer libro que encontré.",
+          "tokens": [
+            { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "pareció", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "ridícula", "l": "ridículo", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "demasiado", "l": "demasiado", "p": "ADV", "w": true, "sp": true },
+            { "t": "sentimental", "l": "sentimental", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "escondí", "l": "esconder", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "libro", "l": "libro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "encontré", "l": "encontrar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Veinte años después, sentada en el suelo de aquella habitación vacía, la abrí.",
+          "tokens": [
+            { "t": "Veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "después", "l": "después", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sentada", "l": "sentarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "suelo", "l": "suelo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "aquella", "l": "aquel", "p": "DET", "w": true, "sp": true },
+            { "t": "habitación", "l": "habitación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "vacía", "l": "vacío", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "abrí", "l": "abrir", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Me sorprendió la sinceridad de aquella chica que fui yo.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "sorprendió", "l": "sorprender", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sinceridad", "l": "sinceridad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "aquella", "l": "aquel", "p": "DET", "w": true, "sp": true },
+            { "t": "chica", "l": "chico", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "fui", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "yo", "l": "yo", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "No había ni rastro del orgullo que yo recordaba: solo tristeza y muchas ganas de arreglar las cosas.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "rastro", "l": "rastro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "orgullo", "l": "orgullo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "recordaba", "l": "recordar", "p": "VERB", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "tristeza", "l": "tristeza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "ganas", "l": "ganar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "arreglar", "l": "arreglar", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cosas", "l": "cosa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Pensé en todo lo que nos habíamos perdido: bodas, mudanzas, hijos, pérdidas.",
+          "tokens": [
+            { "t": "Pensé", "l": "pensar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "habíamos", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "perdido", "l": "perder", "p": "VERB", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "bodas", "l": "boda", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "mudanzas", "l": "mudanza", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "hijos", "l": "hijo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pérdidas", "l": "pérdida", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Esa misma noche busqué a Elena en internet.",
+          "tokens": [
+            { "t": "Esa", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "misma", "l": "mismo", "p": "DET", "w": true, "sp": true },
+            { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "sp": true },
+            { "t": "busqué", "l": "buscar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "Elena", "l": "elena", "p": "PROPN", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "internet", "l": "internet", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "No fue difícil encontrarla: era profesora de biología en un instituto de Salamanca y tenía un perfil con una foto en la que sonreía igual que a los diez años.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "difícil", "l": "difícil", "p": "ADJ", "w": true, "sp": true },
+            { "t": "encontrarla", "l": "encontrar", "p": "VERB", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "era", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "profesora", "l": "profesor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "biología", "l": "biología", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "instituto", "l": "instituto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Salamanca", "l": "salamanca", "p": "PROPN", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "tenía", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "perfil", "l": "perfil", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "foto", "l": "foto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "sonreía", "l": "sonreír", "p": "VERB", "w": true, "sp": true },
+            { "t": "igual", "l": "igual", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Estuve más de una hora delante del ordenador sin atreverme a escribir.",
+          "tokens": [
+            { "t": "Estuve", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "delante", "l": "delante", "p": "ADV", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "ordenador", "l": "ordenador", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "atreverme", "l": "atreverse", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "escribir", "l": "escribir", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "Escribí y borré varios mensajes.",
+          "tokens": [
+            { "t": "Escribí", "l": "escribir", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "borré", "l": "borrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "varios", "l": "varios", "p": "DET", "w": true, "sp": true },
+            { "t": "mensajes", "l": "mensaje", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Ninguno me parecía adecuado: unos eran demasiado formales, otros demasiado alegres, como si nada hubiera pasado.",
+          "tokens": [
+            { "t": "Ninguno", "l": "ningún", "p": "DET", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "parecía", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "adecuado", "l": "adecuado", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "eran", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "demasiado", "l": "demasiado", "p": "ADV", "w": true, "sp": true },
+            { "t": "formales", "l": "formal", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "otros", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "demasiado", "l": "demasiado", "p": "ADV", "w": true, "sp": true },
+            { "t": "alegres", "l": "alegre", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "nada", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "hubiera", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Me daba miedo que no se acordara de mí, o, peor aún, que se acordara perfectamente y no quisiera saber nada.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "daba", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "miedo", "l": "miedo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "acordara", "l": "acordar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "mí", "l": "yo", "p": "PRON", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "peor", "l": "peor", "p": "ADV", "w": true, "sp": true },
+            { "t": "aún", "l": "todavía", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "acordara", "l": "acordar", "p": "VERB", "w": true, "sp": true },
+            { "t": "perfectamente", "l": "perfectamente", "p": "ADV", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "quisiera", "l": "querer", "p": "VERB", "w": true, "sp": true },
+            { "t": "saber", "l": "saber", "p": "VERB", "w": true, "sp": true },
+            { "t": "nada", "l": "algo", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s4",
+          "text": "Al final apagué el ordenador y me fui a dormir sin decidir nada.",
+          "tokens": [
+            { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "final", "l": "final", "p": "NOUN", "w": true, "sp": true },
+            { "t": "apagué", "l": "apagar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ordenador", "l": "ordenador", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "fui", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "dormir", "l": "dormir", "p": "VERB", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "decidir", "l": "decidir", "p": "VERB", "w": true, "sp": true },
+            { "t": "nada", "l": "algo", "p": "PRON", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "sentences": [
+        {
+          "id": "p8s1",
+          "text": "Al final no le mandé un mensaje.",
+          "tokens": [
+            { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "final", "l": "final", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "mandé", "l": "mandar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "mensaje", "l": "mensaje", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s2",
+          "text": "Hice algo que me pareció más justo: metí la carta antigua en un sobre nuevo, junto con una nota breve en la que le explicaba cómo la había encontrado, y la envié por correo a su instituto.",
+          "tokens": [
+            { "t": "Hice", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "pareció", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "justo", "l": "justo", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "metí", "l": "meter", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "carta", "l": "carta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "antigua", "l": "antiguo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "junto", "l": "junto", "p": "ADJ", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "nota", "l": "notar", "p": "VERB", "w": true, "sp": true },
+            { "t": "breve", "l": "breve", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "explicaba", "l": "explicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "encontrado", "l": "encontrar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "envié", "l": "enviar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "correo", "l": "correo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "instituto", "l": "instituto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s3",
+          "text": "Esta vez no me dio tiempo a arrepentirme.",
+          "tokens": [
+            { "t": "Esta", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "dio", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "arrepentirme", "l": "arrepentirse", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "sentences": [
+        {
+          "id": "p9s1",
+          "text": "Su respuesta llegó once días después.",
+          "tokens": [
+            { "t": "Su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "respuesta", "l": "respuesta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "llegó", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "once", "l": "once", "p": "NUM", "w": false, "sp": true },
+            { "t": "días", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "después", "l": "después", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p9s2",
+          "text": "Era una postal de la Plaza Mayor de Salamanca con tres palabras escritas a mano: «Yo también. ¿Cuándo?».",
+          "tokens": [
+            { "t": "Era", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "postal", "l": "postal", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "Plaza", "l": "plaza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Mayor", "l": "mayor", "p": "PROPN", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Salamanca", "l": "salamanca", "p": "PROPN", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true },
+            { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "sp": true },
+            { "t": "escritas", "l": "escribir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "mano", "l": "mano", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+            { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Cuándo", "l": "cuándo", "p": "ADV", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false },
+            { "t": "»", "l": "»", "p": "PUNCT", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p9s3",
+          "text": "Nos vimos el mes siguiente, en una cafetería que ya no era la de siempre, y hablamos hasta que cerraron.",
+          "tokens": [
+            { "t": "Nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "vimos", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mes", "l": "mes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "siguiente", "l": "siguiente", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cafetería", "l": "cafetería", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "era", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "siempre", "l": "siempre", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "hablamos", "l": "hablar", "p": "VERB", "w": true, "sp": true },
+            { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "cerraron", "l": "cerrar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p9s4",
+          "text": "A veces pienso que aquella carta tardó veinte años en llegar, pero llegó exactamente cuando hacía falta.",
+          "tokens": [
+            { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pienso", "l": "pensar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "aquella", "l": "aquel", "p": "DET", "w": true, "sp": true },
+            { "t": "carta", "l": "carta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tardó", "l": "tardar", "p": "VERB", "w": true, "sp": true },
+            { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "llegar", "l": "llegar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "llegó", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "exactamente", "l": "exactamente", "p": "ADV", "w": true, "sp": true },
+            { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "hacía", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "falta", "l": "falta", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Pluperfect for earlier events",
+        "fr": "Plus-que-parfait pour l’antériorité",
+        "zh": "用过去完成时表示更早的事",
+        "ja": "過去完了で、それ以前の出来事を表す"
+      },
+      "explanation_es": {
+        "en": "The *pluscuamperfecto* (*había escrito*, *habíamos sido*) places an event before another past moment."
+      },
+      "refs": ["p2s2", "p2s3"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "matasellos",
+      "surface": "matasellos",
+      "pos": "noun",
+      "def_en": "marca de correos sobre el sello",
+      "def_es": { "en": "postmark", "fr": "cachet de la poste", "zh": "邮戳", "ja": "消印" },
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "pupitre",
+      "surface": "pupitre",
+      "pos": "noun",
+      "def_en": "mesa de un alumno en clase",
+      "def_es": { "en": "school desk", "fr": "pupitre", "zh": "课桌", "ja": "学校の机" },
+      "ref": "p2s4"
+    },
+    {
+      "lemma": "rastro",
+      "surface": "rastro",
+      "pos": "noun",
+      "def_en": "señal que queda de algo",
+      "def_es": { "en": "trace", "fr": "trace", "zh": "痕迹", "ja": "痕跡" },
+      "ref": "p5s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿De qué trata el relato?",
+      "evidence": ["p9s3"],
+      "rationale_es": { "en": "An old letter reunites two friends." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De una mujer que vende la casa de sus padres por dinero" },
+        { "id": "b", "text": "De cómo una carta antigua reunió a dos amigas" },
+        { "id": "c", "text": "De una profesora de biología y sus alumnos" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Dónde estaba la carta?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "Inside a poetry book." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En una caja de fotos antiguas" },
+        { "id": "b", "text": "En el buzón de la casa" },
+        { "id": "c", "text": "Entre las páginas de un libro" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Por qué dejaron de hablarse, según la narradora?",
+      "evidence": ["p2s5"],
+      "rationale_es": { "en": "She does not remember clearly." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "No lo recuerda con claridad" },
+        { "id": "b", "text": "Elena se mudó a otro país" },
+        { "id": "c", "text": "Sus padres se lo prohibieron" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Por qué no envió la carta en su momento?",
+      "evidence": ["p4s4"],
+      "rationale_es": { "en": "She was embarrassed." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "No tenía la dirección de Elena" },
+        { "id": "b", "text": "Le dio vergüenza lo que había escrito" },
+        { "id": "c", "text": "Se le olvidó por completo" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "La narradora escribió a Elena por internet.",
+      "evidence": ["p8s1"],
+      "rationale_es": { "en": "She sent it by post." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "read",
+      "prompt": "¿Cómo interpreta la narradora el retraso de la carta al final?",
+      "evidence": ["p9s4"],
+      "rationale_es": { "en": "It arrived just when needed." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Fue un error imposible de arreglar" },
+        { "id": "b", "text": "Fue culpa de Elena" },
+        { "id": "c", "text": "Llegó en el momento justo" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p9s2"],
+      "rationale_es": { "en": "*Una postal*." },
+      "type": "gap_fill",
+      "text": "La respuesta de Elena fue una {{1}} de la Plaza Mayor.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["postal"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 518,
+  "lemmas": [
+    "a", "abrir", "acordar", "adecuado", "agosto", "alegre", "algo", "algún", "antes", "antiguo", "apagar",
+    "aquel", "arreglar", "arrepentirse", "atreverse", "azul", "año", "bien", "biología", "boda", "borrachera",
+    "borrar", "breve", "buscar", "cada", "cafetería", "cajón", "carta", "casa", "cerrar", "chico",
+    "comentario", "comer", "compartir", "con", "correo", "cosa", "creer", "cruel", "cuando", "curso", "cuándo",
+    "cómo", "dar", "de", "decidir", "decir", "dejar", "delante", "demasiado", "demás", "dentro", "desde",
+    "después", "difícil", "dirección", "domingo", "dormir", "día", "echar", "el", "ella", "empezar", "en",
+    "encima", "encontrar", "entonces", "enviar", "esconder", "escribir", "escritorio", "ese", "estar", "este",
+    "estudiar", "exactamente", "explicar", "falta", "final", "formal", "foto", "ganar", "haber", "habitación",
+    "hablar", "hacer", "hasta", "hijo", "hora", "igual", "inseguro", "inseparable", "instituto", "internet",
+    "junto", "justo", "letra", "libro", "llegar", "mandar", "mano", "marzo", "matasellos", "mañana", "menos",
+    "mensaje", "mes", "mesa", "meter", "mi", "miedo", "mientras", "mismo", "mucho", "mudanza", "más",
+    "necesitar", "ni", "ningún", "no", "noche", "nosotros", "notar", "nuestro", "nuevo", "o", "ordenador",
+    "orgullo", "otro", "padre", "palabra", "para", "parecer", "pasado", "pasar", "pedir", "pensar", "peor",
+    "perder", "perfectamente", "perfil", "pero", "plaza", "poema", "poner", "por", "postal", "profesor",
+    "proponer", "pupitre", "pérdida", "que", "quedar", "querer", "qué", "rastro", "recordar", "redondo",
+    "repente", "respuesta", "ridículo", "romper", "saber", "se", "secreto", "sello", "semana", "sentarse",
+    "sentimental", "ser", "si", "siempre", "siguiente", "silencio", "sin", "sinceridad", "siquiera", "sobre",
+    "solo", "sonreír", "sorprender", "su", "suelo", "también", "tardar", "tener", "tiempo", "todavía", "todo",
+    "tontería", "tristeza", "un", "vaciar", "vacío", "varios", "vender", "ver", "verano", "vez", "viajar",
+    "volver", "y", "ya", "yo", "él"
+  ],
+  "difficulty": 1265,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6895, "A2": 0.8548, "B1": 0.9536, "B2": 0.994, "C1": 0.994, "C2": 1 },
+    "off_level_lemmas": ["atreverse", "matasellos", "pupitre"],
+    "avg_sentence_words": 15.2,
+    "flesch_reading_ease": 75.1,
+    "checked_at": "2026-10-19T13:37:43.885Z"
+  }
+}

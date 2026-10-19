@@ -1,0 +1,1011 @@
+{
+  "id": "es-b2-rea-010",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u01",
+  "series": "es-b2-u01-soledad",
+  "skill": "reading",
+  "genre": "article",
+  "title": "La soledad no deseada",
+  "summary_es": {
+    "en": "An article on unwanted loneliness, who suffers it and what cities are doing about it.",
+    "fr": "Un article sur la solitude non choisie : qui en souffre et ce que font les villes.",
+    "zh": "一篇关于非自愿孤独的文章：谁在承受它，城市又在做什么。",
+    "ja": "望まない孤独について、誰が苦しみ、都市が何をしているかを伝える記事です。"
+  },
+  "topic": "society",
+  "tags": ["sociedad", "salud", "ciudades"],
+  "can_do": ["R-B2-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["soledad", "aislamiento", "red", "iniciativa"],
+  "est_minutes": 14,
+  "prediction_prompt": "¿Crees que la soledad es un problema de las personas mayores solamente?",
+  "pre_teach": ["aislamiento", "red de apoyo"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Vivimos más conectados que nunca y, sin embargo, cada vez más personas dicen sentirse solas.",
+          "tokens": [
+            { "t": "Vivimos", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "conectados", "l": "conectar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "embargo", "l": "embargo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "dicen", "l": "decir", "p": "VERB", "w": true, "sp": true },
+            { "t": "sentirse", "l": "sentir", "p": "VERB", "w": true, "sp": true },
+            { "t": "solas", "l": "soler", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Según una encuesta reciente, uno de cada cinco adultos en España reconoce sentir soledad con frecuencia.",
+          "tokens": [
+            { "t": "Según", "l": "según", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "encuesta", "l": "encuesta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "reciente", "l": "reciente", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "uno", "l": "uno", "p": "NUM", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true },
+            { "t": "adultos", "l": "adulto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "España", "l": "españa", "p": "PROPN", "w": false, "sp": true },
+            { "t": "reconoce", "l": "reconocer", "p": "VERB", "w": true, "sp": true },
+            { "t": "sentir", "l": "sentir", "p": "VERB", "w": true, "sp": true },
+            { "t": "soledad", "l": "soledad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "frecuencia", "l": "frecuencia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Los expertos insisten en una distinción importante: no es lo mismo estar solo que sentirse solo.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "expertos", "l": "experto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "insisten", "l": "insistir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "distinción", "l": "distinción", "p": "NOUN", "w": true, "sp": true },
+            { "t": "importante", "l": "importante", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "sp": true },
+            { "t": "estar", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "sentirse", "l": "sentir", "p": "VERB", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s4",
+          "text": "Hay quien vive solo y está satisfecho con su vida, y hay quien está rodeado de gente y, aun así, se siente aislado.",
+          "tokens": [
+            { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true },
+            { "t": "vive", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "satisfecho", "l": "satisfecho", "p": "ADJ", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "vida", "l": "vida", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "rodeado", "l": "rodear", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "aun", "l": "aun", "p": "ADV", "w": true, "sp": true },
+            { "t": "así", "l": "así", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "siente", "l": "sentir", "p": "VERB", "w": true, "sp": true },
+            { "t": "aislado", "l": "aislado", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "La llamada soledad no deseada es la que no se elige.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "llamada", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "soledad", "l": "soledad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "deseada", "l": "desear", "p": "VERB", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "elige", "l": "elegir", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Aparece cuando una persona siente que sus relaciones no son suficientes o no le dan el apoyo que necesita.",
+          "tokens": [
+            { "t": "Aparece", "l": "aparecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "persona", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "siente", "l": "sentir", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "relaciones", "l": "relación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "suficientes", "l": "suficiente", "p": "ADJ", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "dan", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "apoyo", "l": "apoyar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "necesita", "l": "necesitar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Durante mucho tiempo se consideró un problema privado, casi una cuestión de carácter.",
+          "tokens": [
+            { "t": "Durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "consideró", "l": "considerar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "privado", "l": "privado", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "cuestión", "l": "cuestión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "carácter", "l": "carácter", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Hoy los investigadores la tratan como un problema de salud pública.",
+          "tokens": [
+            { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "investigadores", "l": "investigador", "p": "NOUN", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tratan", "l": "tratar", "p": "VERB", "w": true, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "salud", "l": "salud", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pública", "l": "público", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Las razones son contundentes.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "razones", "l": "razonar", "p": "VERB", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "contundentes", "l": "contundente", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Diversos estudios han relacionado la soledad prolongada con un mayor riesgo de depresión, de enfermedades cardiovasculares e incluso de deterioro cognitivo.",
+          "tokens": [
+            { "t": "Diversos", "l": "diverso", "p": "ADJ", "w": true, "sp": true },
+            { "t": "estudios", "l": "estudio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "relacionado", "l": "relacionar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "soledad", "l": "soledad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "prolongada", "l": "prolongar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "mayor", "l": "mayor", "p": "ADJ", "w": true, "sp": true },
+            { "t": "riesgo", "l": "riesgo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "depresión", "l": "depresión", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "enfermedades", "l": "enfermedad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cardiovasculares", "l": "cardiovascular", "p": "ADJ", "w": true, "sp": true },
+            { "t": "e", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "incluso", "l": "incluso", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "deterioro", "l": "deterioro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cognitivo", "l": "cognitivo", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Algunos médicos la comparan, por sus efectos sobre la salud, con fumar casi un paquete de cigarrillos al día.",
+          "tokens": [
+            { "t": "Algunos", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "médicos", "l": "médico", "p": "NOUN", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "comparan", "l": "comparar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "efectos", "l": "efecto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "salud", "l": "salud", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "fumar", "l": "fumar", "p": "VERB", "w": true, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "paquete", "l": "paquete", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "cigarrillos", "l": "cigarrillo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Aunque solemos asociarla con la vejez, la soledad no deseada afecta a todas las edades.",
+          "tokens": [
+            { "t": "Aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "solemos", "l": "soler", "p": "VERB", "w": true, "sp": true },
+            { "t": "asociarla", "l": "asociar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "vejez", "l": "vejez", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "soledad", "l": "soledad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "deseada", "l": "desear", "p": "VERB", "w": true, "sp": true },
+            { "t": "afecta", "l": "afectar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "todas", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "edades", "l": "edad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Las personas mayores que han perdido a su pareja o cuyos hijos viven lejos son especialmente vulnerables, pero los datos muestran que los jóvenes de entre dieciocho y veinticinco años son el grupo que más soledad declara.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "mayores", "l": "mayor", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "perdido", "l": "perder", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "pareja", "l": "pareja", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "cuyos", "l": "cuyo", "p": "DET", "w": true, "sp": true },
+            { "t": "hijos", "l": "hijo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "viven", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "lejos", "l": "lejos", "p": "ADV", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "especialmente", "l": "especialmente", "p": "ADV", "w": true, "sp": true },
+            { "t": "vulnerables", "l": "vulnerable", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "datos", "l": "dato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "muestran", "l": "mostrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "jóvenes", "l": "joven", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "dieciocho", "l": "dieciocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "veinticinco", "l": "veinticinco", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "grupo", "l": "grupo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "soledad", "l": "soledad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "declara", "l": "declarar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Los cambios de ciudad por estudios, la precariedad laboral y unas relaciones cada vez más mediadas por las pantallas explican, en parte, este fenómeno.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cambios", "l": "cambio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "estudios", "l": "estudio", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "precariedad", "l": "precariedad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "laboral", "l": "laboral", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "unas", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "relaciones", "l": "relación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "mediadas", "l": "mediar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pantallas", "l": "pantalla", "p": "NOUN", "w": true, "sp": true },
+            { "t": "explican", "l": "explicar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "fenómeno", "l": "fenómeno", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "También influye la forma en que están diseñadas nuestras ciudades.",
+          "tokens": [
+            { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "influye", "l": "influir", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "forma", "l": "forma", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "están", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "diseñadas", "l": "diseñar", "p": "VERB", "w": true, "sp": true },
+            { "t": "nuestras", "l": "nuestro", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Los barrios donde desaparecen los comercios de proximidad, las plazas con bancos y los espacios públicos de encuentro favorecen el aislamiento.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "barrios", "l": "barrio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "desaparecen", "l": "desaparecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "comercios", "l": "comercio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "proximidad", "l": "proximidad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "plazas", "l": "plaza", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "bancos", "l": "banco", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "espacios", "l": "espacio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "públicos", "l": "público", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "encuentro", "l": "encontrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "favorecen", "l": "favorecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "aislamiento", "l": "aislamiento", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "En cambio, un mercado, una biblioteca o un parque con bancos a la sombra pueden ser lugares donde se crean vínculos casi sin darse cuenta.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "cambio", "l": "cambiar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "mercado", "l": "mercado", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "biblioteca", "l": "biblioteca", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "bancos", "l": "banco", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sombra", "l": "sombra", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "lugares", "l": "lugar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "crean", "l": "creer", "p": "VERB", "w": true, "sp": true },
+            { "t": "vínculos", "l": "vínculo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "darse", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cuenta", "l": "contar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "Ante esta realidad, han surgido numerosas iniciativas.",
+          "tokens": [
+            { "t": "Ante", "l": "ante", "p": "ADP", "w": true, "sp": true },
+            { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "realidad", "l": "realidad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "surgido", "l": "surgir", "p": "VERB", "w": true, "sp": true },
+            { "t": "numerosas", "l": "numeroso", "p": "ADJ", "w": true, "sp": true },
+            { "t": "iniciativas", "l": "iniciativa", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "En varias ciudades españolas funcionan programas que ponen en contacto a estudiantes que buscan alojamiento con personas mayores que viven solas: el joven paga un alquiler muy bajo a cambio de compartir tiempo y pequeñas tareas.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "varias", "l": "varios", "p": "DET", "w": true, "sp": true },
+            { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "españolas", "l": "español", "p": "ADJ", "w": true, "sp": true },
+            { "t": "funcionan", "l": "funcionar", "p": "VERB", "w": true, "sp": true },
+            { "t": "programas", "l": "programa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "ponen", "l": "poner", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "contacto", "l": "contacto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "estudiantes", "l": "estudiante", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "buscan", "l": "buscar", "p": "VERB", "w": true, "sp": true },
+            { "t": "alojamiento", "l": "alojamiento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true },
+            { "t": "mayores", "l": "mayor", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "viven", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "solas", "l": "soler", "p": "VERB", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "joven", "l": "joven", "p": "NOUN", "w": true, "sp": true },
+            { "t": "paga", "l": "pagar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "alquiler", "l": "alquiler", "p": "NOUN", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "bajo", "l": "bajo", "p": "ADP", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "cambio", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "compartir", "l": "compartir", "p": "VERB", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "pequeñas", "l": "pequeño", "p": "ADJ", "w": true, "sp": true },
+            { "t": "tareas", "l": "tarea", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Otros proyectos forman a farmacéuticos, carteros o dependientes de comercios para detectar a vecinos que podrían estar aislados.",
+          "tokens": [
+            { "t": "Otros", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "proyectos", "l": "proyecto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "forman", "l": "formar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "farmacéuticos", "l": "farmacéutico", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "carteros", "l": "cartero", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "dependientes", "l": "dependiente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "comercios", "l": "comercio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "detectar", "l": "detectar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "podrían", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "estar", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "aislados", "l": "aislado", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "Las nuevas tecnologías también pueden ayudar, aunque no sustituyen al contacto en persona.",
+          "tokens": [
+            { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "nuevas", "l": "nuevo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "tecnologías", "l": "tecnología", "p": "NOUN", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "ayudar", "l": "ayudar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "sustituyen", "l": "sustituir", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "contacto", "l": "contacto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "persona", "l": "persona", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Algunas aplicaciones conectan a vecinos de un mismo edificio para ayudarse con la compra o compartir una comida.",
+          "tokens": [
+            { "t": "Algunas", "l": "algún", "p": "DET", "w": true, "sp": true },
+            { "t": "aplicaciones", "l": "aplicación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "conectan", "l": "conectar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "sp": true },
+            { "t": "edificio", "l": "edificio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "ayudarse", "l": "ayudar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "compra", "l": "comprar", "p": "VERB", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "compartir", "l": "compartir", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "comida", "l": "comer", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Y hay residencias que organizan videollamadas semanales entre sus residentes y alumnos de colegios cercanos.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "residencias", "l": "residencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "organizan", "l": "organizar", "p": "VERB", "w": true, "sp": true },
+            { "t": "videollamadas", "l": "videollamada", "p": "NOUN", "w": true, "sp": true },
+            { "t": "semanales", "l": "semanal", "p": "ADJ", "w": true, "sp": true },
+            { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "residentes", "l": "residente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "alumnos", "l": "alumno", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "colegios", "l": "colegio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cercanos", "l": "cercano", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "sentences": [
+        {
+          "id": "p8s1",
+          "text": "Reino Unido fue más lejos y en 2018 nombró un ministro de la Soledad, una iniciativa que después imitó Japón.",
+          "tokens": [
+            { "t": "Reino", "l": "reino", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Unido", "l": "unir", "p": "VERB", "w": true, "sp": true },
+            { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "lejos", "l": "lejos", "p": "ADV", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "2018", "l": "2018", "p": "NUM", "w": false, "sp": true },
+            { "t": "nombró", "l": "nombrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "ministro", "l": "ministro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "Soledad", "l": "soledad", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "iniciativa", "l": "iniciativa", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "imitó", "l": "imitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "Japón", "l": "japón", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s2",
+          "text": "Aunque la medida generó cierta ironía en su momento, sirvió para colocar el tema en la agenda política y para destinar fondos a proyectos comunitarios.",
+          "tokens": [
+            { "t": "Aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "medida", "l": "medida", "p": "NOUN", "w": true, "sp": true },
+            { "t": "generó", "l": "generar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cierta", "l": "cierto", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ironía", "l": "ironía", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "momento", "l": "momento", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sirvió", "l": "servir", "p": "VERB", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "colocar", "l": "colocar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tema", "l": "tema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "agenda", "l": "agenda", "p": "NOUN", "w": true, "sp": true },
+            { "t": "política", "l": "política", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "destinar", "l": "destinar", "p": "VERB", "w": true, "sp": true },
+            { "t": "fondos", "l": "fondo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "proyectos", "l": "proyecto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "comunitarios", "l": "comunitario", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "sentences": [
+        {
+          "id": "p9s1",
+          "text": "Los especialistas coinciden en que no existen soluciones mágicas.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "especialistas", "l": "especialista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "coinciden", "l": "coincidir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "existen", "l": "existir", "p": "VERB", "w": true, "sp": true },
+            { "t": "soluciones", "l": "solución", "p": "NOUN", "w": true, "sp": true },
+            { "t": "mágicas", "l": "mágico", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p9s2",
+          "text": "Lo que funciona, dicen, es una combinación de pequeños gestos cotidianos y de políticas a largo plazo.",
+          "tokens": [
+            { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "funciona", "l": "funcionar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "dicen", "l": "decir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "combinación", "l": "combinación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "pequeños", "l": "pequeño", "p": "ADJ", "w": true, "sp": true },
+            { "t": "gestos", "l": "gesto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cotidianos", "l": "cotidiano", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "políticas", "l": "política", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "largo", "l": "largo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "plazo", "l": "plazo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p9s3",
+          "text": "Saludar al vecino, preguntar a un compañero cómo está o llamar a un amigo al que hace tiempo que no vemos parecen detalles sin importancia.",
+          "tokens": [
+            { "t": "Saludar", "l": "saludar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "vecino", "l": "vecino", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "preguntar", "l": "preguntar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "compañero", "l": "compañero", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "llamar", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "amigo", "l": "amigo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "vemos", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "parecen", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "detalles", "l": "detalle", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "importancia", "l": "importancia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p9s4",
+          "text": "Pero, multiplicados por millones, son precisamente lo que mantiene unida a una sociedad.",
+          "tokens": [
+            { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "multiplicados", "l": "multiplicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "millones", "l": "millón", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "precisamente", "l": "precisamente", "p": "ADV", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "mantiene", "l": "mantener", "p": "VERB", "w": true, "sp": true },
+            { "t": "unida", "l": "unir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "sociedad", "l": "sociedad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Concession: aunque, aun así, sin embargo",
+        "fr": "Concession : aunque, aun así, sin embargo",
+        "zh": "让步：aunque, aun así, sin embargo",
+        "ja": "譲歩：aunque, aun así, sin embargo"
+      },
+      "explanation_es": {
+        "en": "Concessive connectors admit one idea and then contrast it: *Aunque solemos asociarla con la vejez, … afecta a todas las edades*."
+      },
+      "refs": ["p4s1", "p1s1"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "contundente",
+      "surface": "contundentes",
+      "pos": "adjective",
+      "def_en": "que convence sin dejar dudas",
+      "def_es": { "en": "compelling", "fr": "convaincant", "zh": "有说服力的", "ja": "説得力のある" },
+      "ref": "p3s1"
+    },
+    {
+      "lemma": "precariedad",
+      "surface": "precariedad",
+      "pos": "noun",
+      "def_en": "falta de estabilidad en el trabajo o la economía",
+      "def_es": { "en": "job insecurity", "fr": "précarité", "zh": "不稳定", "ja": "不安定" },
+      "ref": "p4s3"
+    },
+    {
+      "lemma": "vínculo",
+      "surface": "vínculos",
+      "pos": "noun",
+      "def_en": "relación que une a las personas",
+      "def_es": { "en": "bonds, ties", "fr": "liens", "zh": "纽带", "ja": "絆" },
+      "ref": "p5s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Cuál es el tema central del artículo?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "Unwanted loneliness." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Las ventajas de vivir solo en una gran ciudad" },
+        { "id": "b", "text": "La soledad que no se elige y cómo combatirla" },
+        { "id": "c", "text": "La historia de los ministerios en el Reino Unido" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué distinción subrayan los expertos?",
+      "evidence": ["p1s3"],
+      "rationale_es": { "en": "Being alone vs feeling lonely." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Entre la soledad de hombres y mujeres" },
+        { "id": "b", "text": "Entre ciudades grandes y pueblos pequeños" },
+        { "id": "c", "text": "Entre una situación y un sentimiento" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Con qué comparan algunos médicos los efectos de la soledad?",
+      "evidence": ["p3s3"],
+      "rationale_es": { "en": "With heavy smoking." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Con fumar mucho cada día" },
+        { "id": "b", "text": "Con no dormir durante varios días" },
+        { "id": "c", "text": "Con comer demasiado azúcar" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Según los datos, las personas mayores son el grupo que más soledad declara.",
+      "evidence": ["p4s2"],
+      "rationale_es": { "en": "Young adults declare most." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Qué relación establece el texto entre urbanismo y soledad?",
+      "evidence": ["p5s2", "p5s3"],
+      "rationale_es": { "en": "Urban design matters." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Las ciudades modernas han acabado con la soledad" },
+        { "id": "b", "text": "El diseño de los barrios puede favorecer o evitar el aislamiento" },
+        { "id": "c", "text": "Solo los pueblos tienen espacios de encuentro" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿En qué consiste el programa entre estudiantes y mayores?",
+      "evidence": ["p6s2"],
+      "rationale_es": { "en": "Shared housing for low rent." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Visitar residencias una vez al mes" },
+        { "id": "b", "text": "Dar clases de informática gratuitas" },
+        { "id": "c", "text": "Convivir a cambio de un alquiler barato" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p8s1"],
+      "rationale_es": { "en": "*Un ministro*." },
+      "type": "gap_fill",
+      "text": "En 2018 el Reino Unido nombró un {{1}} de la Soledad.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["ministro"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 516,
+  "lemmas": [
+    "a", "adulto", "afectar", "agenda", "aislado", "aislamiento", "algún", "alojamiento", "alquiler", "alumno",
+    "amigo", "ante", "aparecer", "aplicación", "apoyar", "asociar", "así", "aun", "aunque", "ayudar", "año",
+    "bajo", "banco", "barrio", "biblioteca", "buscar", "cada", "cambiar", "cambio", "cardiovascular",
+    "cartero", "carácter", "casi", "cercano", "cierto", "cigarrillo", "ciudad", "cognitivo", "coincidir",
+    "colegio", "colocar", "combinación", "comer", "comercio", "comparar", "compartir", "compañero", "comprar",
+    "comunitario", "con", "conectar", "considerar", "contacto", "contar", "contundente", "cotidiano", "creer",
+    "cuando", "cuestión", "cuyo", "cómo", "dar", "dato", "de", "decir", "declarar", "dependiente", "depresión",
+    "desaparecer", "desear", "después", "destinar", "detalle", "detectar", "deterioro", "diseñar",
+    "distinción", "diverso", "donde", "durante", "día", "edad", "edificio", "efecto", "el", "elegir",
+    "embargo", "en", "encontrar", "encuesta", "enfermedad", "entre", "espacio", "español", "especialista",
+    "especialmente", "estar", "este", "estudiante", "estudio", "existir", "experto", "explicar",
+    "farmacéutico", "favorecer", "fenómeno", "fondo", "forma", "formar", "frecuencia", "fumar", "funcionar",
+    "generar", "gente", "gesto", "grupo", "haber", "hacer", "hijo", "hoy", "imitar", "importancia",
+    "importante", "incluso", "influir", "iniciativa", "insistir", "investigador", "ironía", "joven", "laboral",
+    "largo", "lejos", "llamarse", "lugar", "mantener", "mayor", "mediar", "medida", "mercado", "millón",
+    "ministro", "mismo", "momento", "mostrar", "mucho", "multiplicar", "muy", "mágico", "más", "médico",
+    "necesitar", "no", "nombrar", "nuestro", "nuevo", "numeroso", "nunca", "o", "organizar", "otro", "pagar",
+    "pantalla", "paquete", "para", "parecer", "pareja", "parque", "partir", "pequeño", "perder", "pero",
+    "persona", "plaza", "plazo", "poder", "política", "poner", "por", "precariedad", "precisamente",
+    "preguntar", "privado", "problema", "programa", "prolongar", "proximidad", "proyecto", "público", "que",
+    "quien", "razonar", "realidad", "reciente", "reconocer", "reino", "relacionar", "relación", "residencia",
+    "residente", "riesgo", "rodear", "salud", "saludar", "satisfecho", "se", "según", "semanal", "sentir",
+    "ser", "servir", "sin", "sobre", "sociedad", "soledad", "soler", "solo", "solución", "sombra", "su",
+    "suficiente", "surgir", "sustituir", "también", "tarea", "tecnología", "tema", "tiempo", "todo", "tratar",
+    "un", "unir", "varios", "vecino", "vejez", "ver", "vez", "vida", "videollamada", "vivir", "vulnerable",
+    "vínculo", "y", "él"
+  ],
+  "difficulty": 1269,
+  "qa": {
+    "coverage_by_level": { "A1": 0.5697, "A2": 0.7348, "B1": 0.8919, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 17.8,
+    "flesch_reading_ease": 61,
+    "checked_at": "2026-10-19T13:22:45.133Z"
+  }
+}

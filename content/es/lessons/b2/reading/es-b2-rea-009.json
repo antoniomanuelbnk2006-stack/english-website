@@ -1,0 +1,1030 @@
+{
+  "id": "es-b2-rea-009",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u03",
+  "series": "es-b2-u03-programar",
+  "skill": "reading",
+  "genre": "opinion",
+  "title": "¿Deben los niños aprender a programar?",
+  "summary_es": {
+    "en": "An opinion piece on whether coding should be a compulsory school subject.",
+    "fr": "Un texte d’opinion pour savoir si la programmation doit être une matière obligatoire.",
+    "zh": "一篇讨论编程是否应成为学校必修课的评论文章。",
+    "ja": "プログラミングを学校の必修科目にすべきかについての意見記事です。"
+  },
+  "topic": "education",
+  "tags": ["educación", "tecnología", "opinión"],
+  "can_do": ["R-B2-01"],
+  "grammar_focus": ["es.b2.condicional-y-si"],
+  "vocab_focus": ["programar", "asignatura", "pensamiento", "habilidad"],
+  "est_minutes": 14,
+  "prediction_prompt": "¿Crees que todos los niños deberían aprender a programar?",
+  "pre_teach": ["pensamiento computacional", "código"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Cada vez que se habla de reformar la educación, aparece la misma propuesta: hay que enseñar a programar desde primaria.",
+          "tokens": [
+            { "t": "Cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "habla", "l": "hablar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "reformar", "l": "reformar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "educación", "l": "educación", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "aparece", "l": "aparecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "misma", "l": "mismo", "p": "DET", "w": true, "sp": true },
+            { "t": "propuesta", "l": "propuesta", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "enseñar", "l": "enseñar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "programar", "l": "programar", "p": "VERB", "w": true, "sp": true },
+            { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "primaria", "l": "primaria", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Los defensores de esta idea recuerdan que los niños de hoy vivirán rodeados de algoritmos y que, si no entienden cómo funcionan, serán meros consumidores de una tecnología que otros diseñan.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "defensores", "l": "defensor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "recuerdan", "l": "recordar", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "niños", "l": "niño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "vivirán", "l": "vivir", "p": "VERB", "w": true, "sp": true },
+            { "t": "rodeados", "l": "rodear", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "algoritmos", "l": "algoritmo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "entienden", "l": "entender", "p": "VERB", "w": true, "sp": true },
+            { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true },
+            { "t": "funcionan", "l": "funcionar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "serán", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "meros", "l": "mero", "p": "ADJ", "w": true, "sp": true },
+            { "t": "consumidores", "l": "consumidor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "tecnología", "l": "tecnología", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "otros", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "diseñan", "l": "diseñar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "El argumento es atractivo, pero merece un análisis más detenido.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "argumento", "l": "argumento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "atractivo", "l": "atractivo", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "merece", "l": "merecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "análisis", "l": "análisis", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "detenido", "l": "detener", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Empecemos por lo que tiene de razonable.",
+          "tokens": [
+            { "t": "Empecemos", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "razonable", "l": "razonable", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Programar no consiste solo en escribir código.",
+          "tokens": [
+            { "t": "Programar", "l": "programar", "p": "VERB", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "consiste", "l": "consistir", "p": "VERB", "w": true, "sp": true },
+            { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "escribir", "l": "escribir", "p": "VERB", "w": true, "sp": true },
+            { "t": "código", "l": "código", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Exige dividir un problema grande en pasos pequeños, anticipar errores y corregirlos con paciencia.",
+          "tokens": [
+            { "t": "Exige", "l": "exigir", "p": "VERB", "w": true, "sp": true },
+            { "t": "dividir", "l": "dividir", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "grande", "l": "grande", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "pasos", "l": "paso", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pequeños", "l": "pequeño", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "anticipar", "l": "anticipar", "p": "VERB", "w": true, "sp": true },
+            { "t": "errores", "l": "error", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "corregirlos", "l": "corregir", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "paciencia", "l": "paciencia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s4",
+          "text": "Es lo que los especialistas llaman pensamiento computacional, y es una habilidad útil mucho más allá de la informática: sirve para organizar un trabajo de clase, para resolver un problema de matemáticas o incluso para planificar un viaje.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "especialistas", "l": "especialista", "p": "NOUN", "w": true, "sp": true },
+            { "t": "llaman", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "pensamiento", "l": "pensamiento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "computacional", "l": "computacional", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "habilidad", "l": "habilidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "útil", "l": "útil", "p": "ADJ", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "allá", "l": "allí", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "informática", "l": "informática", "p": "NOUN", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sirve", "l": "servir", "p": "VERB", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "organizar", "l": "organizar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "clase", "l": "clase", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "resolver", "l": "resolver", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "matemáticas", "l": "matemáticas", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "incluso", "l": "incluso", "p": "ADV", "w": true, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "planificar", "l": "planificar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "viaje", "l": "viajar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Además, aprender a programar puede despertar vocaciones que de otro modo nunca aparecerían.",
+          "tokens": [
+            { "t": "Además", "l": "además", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "aprender", "l": "aprender", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "programar", "l": "programar", "p": "VERB", "w": true, "sp": true },
+            { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "despertar", "l": "despertarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "vocaciones", "l": "vocación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "modo", "l": "modo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true },
+            { "t": "aparecerían", "l": "aparecer", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "En muchos países, las chicas siguen eligiendo muy poco las carreras tecnológicas, en parte porque nunca han tenido la oportunidad de probar.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "países", "l": "país", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "chicas", "l": "chico", "p": "NOUN", "w": true, "sp": true },
+            { "t": "siguen", "l": "seguir", "p": "VERB", "w": true, "sp": true },
+            { "t": "eligiendo", "l": "elegir", "p": "VERB", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "carreras", "l": "carrera", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tecnológicas", "l": "tecnológico", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true },
+            { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "tenido", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "oportunidad", "l": "oportunidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "probar", "l": "probar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Una asignatura obligatoria en el colegio podría corregir, al menos en parte, ese desequilibrio.",
+          "tokens": [
+            { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "asignatura", "l": "asignatura", "p": "NOUN", "w": true, "sp": true },
+            { "t": "obligatoria", "l": "obligatorio", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "colegio", "l": "colegio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "podría", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "corregir", "l": "corregir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "desequilibrio", "l": "desequilibrio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Hay también experiencias interesantes en otros países.",
+          "tokens": [
+            { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "experiencias", "l": "experiencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "interesantes", "l": "interesante", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "otros", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "países", "l": "país", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "En Estonia, por ejemplo, los niños empiezan a programar con juegos sencillos a los siete años, y el país se ha convertido en un referente tecnológico en Europa.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "Estonia", "l": "estonia", "p": "PROPN", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "ejemplo", "l": "ejemplo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "niños", "l": "niño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "empiezan", "l": "empezar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "programar", "l": "programar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "juegos", "l": "juego", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sencillos", "l": "sencillo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "siete", "l": "siete", "p": "NUM", "w": false, "sp": true },
+            { "t": "años", "l": "año", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "país", "l": "país", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "convertido", "l": "convertir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "referente", "l": "referente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tecnológico", "l": "tecnológico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "Europa", "l": "europa", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Pero conviene no sacar conclusiones demasiado rápidas: Estonia es un país pequeño, con una situación muy particular.",
+          "tokens": [
+            { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "conviene", "l": "convenir", "p": "VERB", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "sacar", "l": "sacar", "p": "VERB", "w": true, "sp": true },
+            { "t": "conclusiones", "l": "conclusión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "demasiado", "l": "demasiado", "p": "ADV", "w": true, "sp": true },
+            { "t": "rápidas", "l": "rápido", "p": "ADJ", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Estonia", "l": "estonia", "p": "PROPN", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "país", "l": "país", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pequeño", "l": "pequeño", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "situación", "l": "situación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "particular", "l": "particular", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Ahora bien, convertir la programación en una asignatura más plantea problemas serios.",
+          "tokens": [
+            { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true },
+            { "t": "bien", "l": "bien", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "convertir", "l": "convertir", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "programación", "l": "programación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "asignatura", "l": "asignatura", "p": "NOUN", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "plantea", "l": "plantear", "p": "VERB", "w": true, "sp": true },
+            { "t": "problemas", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "serios", "l": "serio", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "El primero es el tiempo.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "primero", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "El horario escolar ya está lleno, y cada hora que se dedique a programar habrá que quitarla de otra materia.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "horario", "l": "horario", "p": "NOUN", "w": true, "sp": true },
+            { "t": "escolar", "l": "escolar", "p": "ADJ", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "lleno", "l": "lleno", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
+            { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "dedique", "l": "dedicar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "programar", "l": "programar", "p": "VERB", "w": true, "sp": true },
+            { "t": "habrá", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "quitarla", "l": "quitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "otra", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "materia", "l": "materia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "¿Renunciaríamos a la música, a la educación física o a la literatura?",
+          "tokens": [
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Renunciaríamos", "l": "renunciar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "música", "l": "música", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "educación", "l": "educación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "física", "l": "físico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "literatura", "l": "literatura", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s5",
+          "text": "No parece una buena idea en un momento en que los niños pasan demasiadas horas sentados delante de una pantalla.",
+          "tokens": [
+            { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "buena", "l": "bueno", "p": "ADJ", "w": true, "sp": true },
+            { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "momento", "l": "momento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "niños", "l": "niño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pasan", "l": "pasar", "p": "VERB", "w": true, "sp": true },
+            { "t": "demasiadas", "l": "demasiado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sentados", "l": "sentarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "delante", "l": "delante", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "pantalla", "l": "pantalla", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "sentences": [
+        {
+          "id": "p6s1",
+          "text": "El segundo problema es la formación del profesorado.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "segundo", "l": "segundo", "p": "NUM", "w": false, "sp": true },
+            { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "formación", "l": "formación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "profesorado", "l": "profesorado", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s2",
+          "text": "Enseñar a programar exige conocimientos que la mayoría de los maestros no recibió durante sus estudios.",
+          "tokens": [
+            { "t": "Enseñar", "l": "enseñar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "programar", "l": "programar", "p": "VERB", "w": true, "sp": true },
+            { "t": "exige", "l": "exigir", "p": "VERB", "w": true, "sp": true },
+            { "t": "conocimientos", "l": "conocimiento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mayoría", "l": "mayoría", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "maestros", "l": "maestro", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "recibió", "l": "recibir", "p": "VERB", "w": true, "sp": true },
+            { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true },
+            { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true },
+            { "t": "estudios", "l": "estudio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p6s3",
+          "text": "Si se introduce la asignatura sin una formación adecuada, corremos el riesgo de que se convierta en una serie de ejercicios mecánicos que aburran a los alumnos y no les enseñen a pensar.",
+          "tokens": [
+            { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "introduce", "l": "introducir", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "asignatura", "l": "asignatura", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "formación", "l": "formación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "adecuada", "l": "adecuado", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "corremos", "l": "correr", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "riesgo", "l": "riesgo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "convierta", "l": "convertir", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "serie", "l": "serie", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "ejercicios", "l": "ejercicio", "p": "NOUN", "w": true, "sp": true },
+            { "t": "mecánicos", "l": "mecánico", "p": "ADJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "aburran", "l": "aburrir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "alumnos", "l": "alumno", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "les", "l": "ellos", "p": "PRON", "w": true, "sp": true },
+            { "t": "enseñen", "l": "enseñar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "pensar", "l": "pensar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p7",
+      "sentences": [
+        {
+          "id": "p7s1",
+          "text": "Hay, por último, un argumento de fondo.",
+          "tokens": [
+            { "t": "Hay", "l": "haber", "p": "AUX", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "último", "l": "último", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "argumento", "l": "argumento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "fondo", "l": "fondo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s2",
+          "text": "Los lenguajes de programación cambian muy deprisa.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "lenguajes", "l": "lenguaje", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "programación", "l": "programación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "cambian", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "deprisa", "l": "deprisa", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s3",
+          "text": "Lo que un niño aprenda hoy será probablemente obsoleto cuando termine la universidad.",
+          "tokens": [
+            { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "niño", "l": "niño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "aprenda", "l": "aprender", "p": "VERB", "w": true, "sp": true },
+            { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "será", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "probablemente", "l": "probablemente", "p": "ADV", "w": true, "sp": true },
+            { "t": "obsoleto", "l": "obsoleto", "p": "ADJ", "w": true, "sp": true },
+            { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "termine", "l": "terminar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "universidad", "l": "universidad", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p7s4",
+          "text": "En cambio, la capacidad de leer con atención, de expresarse con claridad o de razonar con lógica no caduca nunca.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "cambio", "l": "cambiar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "capacidad", "l": "capacidad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "leer", "l": "leer", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "atención", "l": "atención", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "expresarse", "l": "expresar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "claridad", "l": "claridad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "razonar", "l": "razonar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "lógica", "l": "lógica", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "caduca", "l": "caducar", "p": "VERB", "w": true, "sp": true },
+            { "t": "nunca", "l": "nunca", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p8",
+      "sentences": [
+        {
+          "id": "p8s1",
+          "text": "Mi propuesta es intermedia.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "propuesta", "l": "propuesta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "intermedia", "l": "intermedio", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s2",
+          "text": "En lugar de crear una asignatura nueva, sería más sensato integrar el pensamiento computacional en las materias que ya existen: en matemáticas, mediante problemas de lógica; en ciencias, mediante pequeños proyectos con robots sencillos; en lengua, analizando cómo las instrucciones deben ser claras y precisas.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "lugar", "l": "lugar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "crear", "l": "crear", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "asignatura", "l": "asignatura", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nueva", "l": "nuevo", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sería", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "sensato", "l": "sensato", "p": "ADJ", "w": true, "sp": true },
+            { "t": "integrar", "l": "integrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "pensamiento", "l": "pensamiento", "p": "NOUN", "w": true, "sp": true },
+            { "t": "computacional", "l": "computacional", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "materias", "l": "materia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "existen", "l": "existir", "p": "VERB", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "matemáticas", "l": "matemáticas", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "mediante", "l": "mediante", "p": "ADV", "w": true, "sp": true },
+            { "t": "problemas", "l": "problema", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "lógica", "l": "lógica", "p": "NOUN", "w": true },
+            { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "ciencias", "l": "ciencia", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "mediante", "l": "mediante", "p": "ADV", "w": true, "sp": true },
+            { "t": "pequeños", "l": "pequeño", "p": "ADJ", "w": true, "sp": true },
+            { "t": "proyectos", "l": "proyecto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "robots", "l": "robot", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sencillos", "l": "sencillo", "p": "ADJ", "w": true },
+            { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "lengua", "l": "lengua", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "analizando", "l": "analizar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "instrucciones", "l": "instrucción", "p": "NOUN", "w": true, "sp": true },
+            { "t": "deben", "l": "deber", "p": "VERB", "w": true, "sp": true },
+            { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "claras", "l": "claro", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "precisas", "l": "preciso", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p8s3",
+          "text": "Y, para quienes muestren un interés especial, ofrecer talleres optativos de programación por las tardes.",
+          "tokens": [
+            { "t": "Y", "l": "y", "p": "CCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
+            { "t": "quienes", "l": "quien", "p": "PRON", "w": true, "sp": true },
+            { "t": "muestren", "l": "mostrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "interés", "l": "interés", "p": "NOUN", "w": true, "sp": true },
+            { "t": "especial", "l": "especial", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "ofrecer", "l": "ofrecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "talleres", "l": "taller", "p": "NOUN", "w": true, "sp": true },
+            { "t": "optativos", "l": "optativo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "programación", "l": "programación", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tardes", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9",
+      "sentences": [
+        {
+          "id": "p9s1",
+          "text": "Si de verdad queremos que los niños no sean simples consumidores de tecnología, lo más importante no es que sepan escribir código, sino que aprendan a hacerse preguntas sobre ella: quién la diseña, con qué fin y qué consecuencias tiene.",
+          "tokens": [
+            { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "verdad", "l": "verdad", "p": "NOUN", "w": true, "sp": true },
+            { "t": "queremos", "l": "querer", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "niños", "l": "niño", "p": "NOUN", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "sean", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "simples", "l": "simple", "p": "ADJ", "w": true, "sp": true },
+            { "t": "consumidores", "l": "consumidor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "tecnología", "l": "tecnología", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "importante", "l": "importante", "p": "ADJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "sepan", "l": "saber", "p": "VERB", "w": true, "sp": true },
+            { "t": "escribir", "l": "escribir", "p": "VERB", "w": true, "sp": true },
+            { "t": "código", "l": "código", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "aprendan", "l": "aprender", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "hacerse", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "preguntas", "l": "pregunta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true },
+            { "t": "ella", "l": "ella", "p": "PRON", "w": true },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "quién", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "diseña", "l": "diseñar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "fin", "l": "fin", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true },
+            { "t": "consecuencias", "l": "consecuencia", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tiene", "l": "tener", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p9s2",
+          "text": "Esa reflexión, me temo, no la enseña ningún lenguaje de programación.",
+          "tokens": [
+            { "t": "Esa", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "reflexión", "l": "reflexión", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "temo", "l": "temer", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "enseña", "l": "enseñar", "p": "VERB", "w": true, "sp": true },
+            { "t": "ningún", "l": "ningún", "p": "DET", "w": true, "sp": true },
+            { "t": "lenguaje", "l": "lenguaje", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "programación", "l": "programación", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Hypotheses with si and the conditional",
+        "fr": "Hypothèses avec si et le conditionnel",
+        "zh": "用 si 和条件式表达假设",
+        "ja": "si と条件法で仮定を述べる"
+      },
+      "explanation_es": {
+        "en": "Real conditions use *si* + present (*Si se introduce…, corremos el riesgo*); hypothetical ones use the conditional (*sería más sensato*, *Renunciaríamos*)."
+      },
+      "refs": ["p6s3", "p8s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "algoritmo",
+      "surface": "algoritmos",
+      "pos": "noun",
+      "def_en": "conjunto de instrucciones que sigue un programa",
+      "def_es": { "en": "algorithms", "fr": "algorithmes", "zh": "算法", "ja": "アルゴリズム" },
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "obsoleto",
+      "surface": "obsoleto",
+      "pos": "adjective",
+      "def_en": "que ya no sirve porque ha quedado antiguo",
+      "def_es": { "en": "obsolete", "fr": "obsolète", "zh": "过时的", "ja": "時代遅れの" },
+      "ref": "p7s3"
+    },
+    {
+      "lemma": "optativo",
+      "surface": "optativos",
+      "pos": "adjective",
+      "def_en": "que se puede elegir, no obligatorio",
+      "def_es": { "en": "optional", "fr": "optionnel", "zh": "选修的", "ja": "選択の" },
+      "ref": "p8s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Cuál es la postura del autor?",
+      "evidence": ["p8s1"],
+      "rationale_es": { "en": "An intermediate position." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Quiere que se prohíba la informática en los colegios" },
+        { "id": "b", "text": "Prefiere integrar la programación en otras materias" },
+        { "id": "c", "text": "Pide más horas de programación en todos los cursos" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué es el pensamiento computacional, según el texto?",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "Breaking problems down." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Saber usar el ordenador muy rápido" },
+        { "id": "b", "text": "Conocer muchos lenguajes informáticos diferentes" },
+        { "id": "c", "text": "Saber descomponer y resolver problemas" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué ventaja tendría la asignatura para las chicas?",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "It could open technical careers." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Las animaría a estudiar tecnología" },
+        { "id": "b", "text": "Les daría mejores notas en matemáticas" },
+        { "id": "c", "text": "Les permitiría trabajar antes" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuál es el primer problema de crear la asignatura?",
+      "evidence": ["p5s2"],
+      "rationale_es": { "en": "Time." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Los ordenadores son muy caros" },
+        { "id": "b", "text": "No hay tiempo libre en el horario" },
+        { "id": "c", "text": "Los padres no están de acuerdo" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Según el autor, la mayoría de los maestros ya sabe programar.",
+      "evidence": ["p6s2"],
+      "rationale_es": { "en": "Most did not learn it." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Por qué menciona el autor que los lenguajes cambian deprisa?",
+      "evidence": ["p7s4"],
+      "rationale_es": { "en": "Lasting skills matter more." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para recomendar aprender varios lenguajes a la vez" },
+        { "id": "b", "text": "Para criticar a las empresas tecnológicas" },
+        { "id": "c", "text": "Para destacar lo que no pierde valor con el tiempo" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p8s3"],
+      "rationale_es": { "en": "*Talleres optativos*." },
+      "type": "gap_fill",
+      "text": "El autor propone talleres {{1}} por las tardes.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["optativos"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 516,
+  "lemmas": [
+    "a", "aburrir", "adecuado", "además", "ahora", "algoritmo", "allí", "alumno", "analizar", "anticipar",
+    "análisis", "aparecer", "aprender", "argumento", "asignatura", "atención", "atractivo", "año", "bien",
+    "bueno", "cada", "caducar", "cambiar", "capacidad", "carrera", "chico", "ciencia", "claridad", "claro",
+    "clase", "colegio", "computacional", "con", "conclusión", "conocimiento", "consecuencia", "consistir",
+    "consumidor", "convenir", "convertir", "corregir", "correr", "crear", "cuando", "código", "cómo", "de",
+    "deber", "dedicar", "defensor", "delante", "demasiado", "deprisa", "desde", "desequilibrio", "despertarse",
+    "detener", "diseñar", "dividir", "durante", "educación", "ejemplo", "ejercicio", "el", "elegir", "ella",
+    "ellos", "empezar", "en", "enseñar", "entender", "error", "escolar", "escribir", "ese", "especial",
+    "especialista", "estar", "este", "estudio", "exigir", "existir", "experiencia", "expresar", "fin", "fondo",
+    "formación", "funcionar", "físico", "grande", "haber", "habilidad", "hablar", "hacer", "hora", "horario",
+    "hoy", "idea", "importante", "incluso", "informática", "instrucción", "integrar", "interesante",
+    "intermedio", "interés", "introducir", "juego", "leer", "lengua", "lenguaje", "literatura", "llamarse",
+    "lleno", "lugar", "lógica", "maestro", "matemáticas", "materia", "mayoría", "mecánico", "mediante",
+    "menos", "merecer", "mero", "mi", "mismo", "modo", "momento", "mostrar", "mucho", "muy", "más", "música",
+    "ningún", "niño", "no", "nuevo", "nunca", "o", "obligatorio", "obsoleto", "ofrecer", "oportunidad",
+    "optativo", "organizar", "otro", "paciencia", "pantalla", "para", "parecer", "particular", "partir",
+    "pasar", "paso", "país", "pensamiento", "pensar", "pequeño", "pero", "planificar", "plantear", "poco",
+    "poder", "por", "porque", "preciso", "pregunta", "primaria", "probablemente", "probar", "problema",
+    "profesorado", "programación", "programar", "propuesta", "proyecto", "que", "querer", "quien", "quitar",
+    "qué", "razonable", "razonar", "recibir", "recordar", "referente", "reflexión", "reformar", "renunciar",
+    "resolver", "riesgo", "robot", "rodear", "rápido", "saber", "sacar", "se", "seguir", "sencillo", "sensato",
+    "sentarse", "ser", "serie", "serio", "servir", "si", "simple", "sin", "sino", "situación", "sobre", "solo",
+    "su", "taller", "también", "tarde", "tecnología", "tecnológico", "temer", "tener", "terminar", "tiempo",
+    "trabajar", "un", "universidad", "verdad", "vez", "viajar", "vivir", "vocación", "y", "ya", "yo", "él",
+    "último", "útil"
+  ],
+  "difficulty": 1267,
+  "qa": {
+    "coverage_by_level": { "A1": 0.5843, "A2": 0.7039, "B1": 0.8902, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 17.2,
+    "flesch_reading_ease": 59.3,
+    "checked_at": "2026-10-19T13:22:45.133Z"
+  }
+}

@@ -659,7 +659,12 @@ const NAMES = `ana einstein newton ámsterdam copenhague pontevedra rafael oslo 
   laura david paula andrés diego irene sara jorge pedro maría josé tomás emma lucy
   madrid sevilla valencia barcelona españa méxico colombia argentina chile perú lima bogotá
   granada bilbao córdoba málaga toledo zaragoza salamanca europa américa
-  inés clara nuria ricardo antonio cádiz viena suecia dinamarca oporto lisboa`.split(/\s+/);
+  inés clara nuria ricardo antonio cádiz viena suecia dinamarca oporto lisboa
+  alhambra emma londres china italia rocío hugo nuria marisol asturias tenerife gràcia
+  estonia logroño rioja pamplona castilla isidro lola sáenz ibarra elena
+  osaka junot díaz sandra cisneros gibraltar uruguay brasil josep pla camilo josé cela emilia pardo bazán venecia
+  japón call back told her
+  scholé tomato email marketing streaming influencers feedback deadline schokolade cervantes nuccio ordine helsinki borges jorge luis paul ricoeur pedro ponce león juan pablo bonet milán lse filipinas`.split(/\s+/);
 
 /** Los nombres de pila y lugares que más salen (en minúsculas). */
 export const SPANISH_NAMES: ReadonlySet<string> = new Set(NAMES);

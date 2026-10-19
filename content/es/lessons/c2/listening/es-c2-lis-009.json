@@ -237,7 +237,7 @@
         { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
         { "t": "ocurrió", "l": "ocurrir", "p": "VERB", "w": true, "sp": true, "s": 32.791, "e": 33.36 },
         { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 33.36, "e": 33.716 },
-        { "t": "extraño", "l": "extraño", "p": "ADJ", "w": true, "s": 33.716, "e": 34.285 },
+        { "t": "extraño", "l": "extrañar", "p": "VERB", "w": true, "s": 33.716, "e": 34.285 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
       ],
       "start": 31.215,
@@ -775,7 +775,7 @@
         { "t": "propongo", "l": "proponer", "p": "VERB", "w": true, "sp": true, "s": 130.117, "e": 130.643 },
         { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 130.643, "e": 130.818 },
         { "t": "pequeño", "l": "pequeño", "p": "ADJ", "w": true, "sp": true, "s": 130.818, "e": 131.285 },
-        { "t": "experimento", "l": "experimentar", "p": "VERB", "w": true, "s": 131.285, "e": 131.986 },
+        { "t": "experimento", "l": "experimento", "p": "NOUN", "w": true, "s": 131.285, "e": 131.986 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
       ],
       "start": 129.406,
@@ -1099,12 +1099,12 @@
     "descansar", "descargado", "descubrir", "desde", "después", "destruir", "divagar", "dudar", "durante",
     "el", "elegir", "eliminar", "ellos", "empezar", "en", "encontrar", "enjaulado", "ensimismarse",
     "escapatoria", "ese", "especie", "esperar", "estar", "este", "estimulación", "estudiar", "estímulo",
-    "exigir", "experimentar", "experimento", "explicación", "externo", "extraño", "fama", "fenómeno", "haber",
-    "hacer", "hasta", "hermana", "hora", "hueco", "idea", "idealizar", "incluso", "inesperado", "infancia",
-    "inglés", "iniciativa", "insoportable", "internet", "inventar", "juego", "junto", "lejano", "lista",
-    "llegar", "llevar", "luz", "malo", "memoria", "mente", "mes", "mi", "minuto", "mirar", "momento", "morir",
-    "mostrar", "mucho", "muy", "más", "móvil", "música", "niño", "no", "nunca", "número", "o", "obligar",
-    "ocupar", "ocurrir", "otro", "padre", "pantalla", "par", "para", "parecer", "pasar", "pendiente", "pensar",
+    "exigir", "experimento", "explicación", "externo", "extrañar", "fama", "fenómeno", "haber", "hacer",
+    "hasta", "hermana", "hora", "hueco", "idea", "idealizar", "incluso", "inesperado", "infancia", "inglés",
+    "iniciativa", "insoportable", "internet", "inventar", "juego", "junto", "lejano", "lista", "llegar",
+    "llevar", "luz", "malo", "memoria", "mente", "mes", "mi", "minuto", "mirar", "momento", "morir", "mostrar",
+    "mucho", "muy", "más", "móvil", "música", "niño", "no", "nunca", "número", "o", "obligar", "ocupar",
+    "ocurrir", "otro", "padre", "pantalla", "par", "para", "parecer", "pasar", "pendiente", "pensar",
     "pequeño", "permanente", "pero", "persona", "poco", "por", "problema", "productividad", "propio",
     "proponer", "próximo", "psicólogo", "que", "querer", "quien", "quizá", "rato", "realizar", "recibir",
     "recordar", "recuerdo", "referirse", "relato", "rellenar", "rutina", "sacar", "se", "semana", "semáforo",
@@ -1114,11 +1114,11 @@
   ],
   "difficulty": 1630,
   "qa": {
-    "coverage_by_level": { "A1": 0.6032, "A2": 0.7346, "B1": 0.8579, "B2": 0.9196, "C1": 0.9598, "C2": 1 },
+    "coverage_by_level": { "A1": 0.6032, "A2": 0.7614, "B1": 0.874, "B2": 0.933, "C1": 0.9598, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 9.4,
     "flesch_reading_ease": 71.2,
-    "checked_at": "2026-10-19T07:53:05.544Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/c2/es-c2-lis-009/v1.m4a",

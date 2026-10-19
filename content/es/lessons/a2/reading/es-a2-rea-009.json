@@ -1,0 +1,517 @@
+{
+  "id": "es-a2-rea-009",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u05",
+  "series": "es-a2-u05-avion",
+  "skill": "reading",
+  "genre": "blog",
+  "title": "Mi primer viaje en avión",
+  "summary_es": {
+    "en": "A blogger tells how her first plane journey went, from the airport to her arrival.",
+    "fr": "Une blogueuse raconte son premier voyage en avion, de l’aéroport à l’arrivée.",
+    "zh": "一位博主讲述她第一次坐飞机的经历，从机场到抵达。",
+    "ja": "ブロガーが初めての飛行機の旅を、空港から到着まで語ります。"
+  },
+  "topic": "travel",
+  "tags": ["viaje", "avión", "pasado"],
+  "can_do": ["R-A2-01"],
+  "grammar_focus": ["es.a2.preterito-indefinido"],
+  "vocab_focus": ["avión", "aeropuerto", "maleta", "ventanilla"],
+  "est_minutes": 6,
+  "prediction_prompt": "¿Recuerdas tu primer viaje en avión?",
+  "pre_teach": ["aeropuerto", "maleta"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "El verano pasado viajé en avión por primera vez.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "verano", "l": "verano", "p": "NOUN", "w": true, "sp": true },
+            { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "viajé", "l": "viajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "avión", "l": "avión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Fui a Tenerife con mi amiga Rocío.",
+          "tokens": [
+            { "t": "Fui", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "Tenerife", "l": "tenerife", "p": "PROPN", "w": false, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "amiga", "l": "amigo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "Rocío", "l": "rocío", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Estaba un poco nerviosa, pero también muy contenta.",
+          "tokens": [
+            { "t": "Estaba", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true },
+            { "t": "nerviosa", "l": "nervioso", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "contenta", "l": "contento", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Llegamos al aeropuerto dos horas antes.",
+          "tokens": [
+            { "t": "Llegamos", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "aeropuerto", "l": "aeropuerto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Primero dejamos las maletas y después pasamos el control.",
+          "tokens": [
+            { "t": "Primero", "l": "primero", "p": "NUM", "w": false, "sp": true },
+            { "t": "dejamos", "l": "dejar", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "maletas", "l": "maleta", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "pasamos", "l": "pasar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "control", "l": "control", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Allí tuve que quitarme el cinturón y los zapatos.",
+          "tokens": [
+            { "t": "Allí", "l": "allí", "p": "ADV", "w": true, "sp": true },
+            { "t": "tuve", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "quitarme", "l": "quitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cinturón", "l": "cinturón", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "zapatos", "l": "zapato", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "El avión salió a las once en punto.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "avión", "l": "avión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "salió", "l": "salir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "once", "l": "once", "p": "NUM", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "punto", "l": "punto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Me senté al lado de la ventanilla y vi las nubes desde arriba.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "senté", "l": "sentarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "lado", "l": "lado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ventanilla", "l": "ventanilla", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "vi", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "nubes", "l": "nube", "p": "NOUN", "w": true, "sp": true },
+            { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true },
+            { "t": "arriba", "l": "arriba", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Fue increíble.",
+          "tokens": [
+            { "t": "Fue", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "increíble", "l": "increíble", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s4",
+          "text": "Rocío durmió todo el viaje, pero yo no cerré los ojos ni un minuto.",
+          "tokens": [
+            { "t": "Rocío", "l": "rocío", "p": "PROPN", "w": false, "sp": true },
+            { "t": "durmió", "l": "dormir", "p": "VERB", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "viaje", "l": "viajar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "cerré", "l": "cerrar", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "ojos", "l": "ojo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "minuto", "l": "minuto", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Llegamos a Tenerife después de dos horas y media.",
+          "tokens": [
+            { "t": "Llegamos", "l": "llegar", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "Tenerife", "l": "tenerife", "p": "PROPN", "w": false, "sp": true },
+            { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true },
+            { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "media", "l": "medio", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Hacía sol y veinticinco grados.",
+          "tokens": [
+            { "t": "Hacía", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "sol", "l": "sol", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "veinticinco", "l": "veinticinco", "p": "NUM", "w": false, "sp": true },
+            { "t": "grados", "l": "grado", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Ahora ya no tengo miedo de volar.",
+          "tokens": [
+            { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true },
+            { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "tengo", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "miedo", "l": "miedo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "volar", "l": "volar", "p": "VERB", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "El próximo viaje quiero ir más lejos, quizás a México.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "próximo", "l": "próximo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "quiero", "l": "querer", "p": "VERB", "w": true, "sp": true },
+            { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "lejos", "l": "lejos", "p": "ADV", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "quizás", "l": "quizás", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "México", "l": "méxico", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "En el avión nos dieron un zumo y unas galletas.",
+          "tokens": [
+            { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "avión", "l": "avión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "dieron", "l": "dar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "zumo", "l": "zumo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "unas", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "galletas", "l": "galleta", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Al llegar, cogimos un taxi hasta el hotel.",
+          "tokens": [
+            { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "llegar", "l": "llegar", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "cogimos", "l": "coger", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "taxi", "l": "taxi", "p": "NOUN", "w": true, "sp": true },
+            { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "hotel", "l": "hotel", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "El hotel era pequeño, pero muy limpio y agradable.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "hotel", "l": "hotel", "p": "NOUN", "w": true, "sp": true },
+            { "t": "era", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "pequeño", "l": "pequeño", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "limpio", "l": "limpiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "agradable", "l": "agradable", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Esa tarde nos bañamos en el mar y cenamos pescado.",
+          "tokens": [
+            { "t": "Esa", "l": "ese", "p": "DET", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true },
+            { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true },
+            { "t": "bañamos", "l": "bañar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "mar", "l": "mar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "cenamos", "l": "cenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "pescado", "l": "pescado", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s5",
+          "text": "Fue un viaje perfecto.",
+          "tokens": [
+            { "t": "Fue", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "perfecto", "l": "perfecto", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Telling a trip in the past",
+        "fr": "Raconter un voyage au passé",
+        "zh": "用过去时讲述旅行",
+        "ja": "旅行を過去形で語る"
+      },
+      "explanation_es": { "en": "Finished actions go in the *pretérito indefinido*: *viajé*, *fui*, *llegamos*, *vi*." },
+      "refs": ["p1s1", "p2s1"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "control",
+      "surface": "control",
+      "pos": "noun",
+      "def_en": "lugar del aeropuerto donde revisan a los viajeros",
+      "def_es": { "en": "security check", "fr": "contrôle", "zh": "安检", "ja": "保安検査" },
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "cinturón",
+      "surface": "cinturón",
+      "pos": "noun",
+      "def_en": "tira que se lleva en el pantalón",
+      "def_es": { "en": "belt", "fr": "ceinture", "zh": "腰带", "ja": "ベルト" },
+      "ref": "p2s3"
+    },
+    {
+      "lemma": "nube",
+      "surface": "nubes",
+      "pos": "noun",
+      "def_en": "masa blanca o gris en el cielo",
+      "def_es": { "en": "clouds", "fr": "nuages", "zh": "云", "ja": "雲" },
+      "ref": "p3s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿De qué habla la autora?",
+      "evidence": ["p1s1"],
+      "rationale_es": { "en": "Her first flight." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De su trabajo en un aeropuerto" },
+        { "id": "b", "text": "De su primera vez en avión" },
+        { "id": "c", "text": "De un viaje en tren por México" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cómo se sentía antes del viaje?",
+      "evidence": ["p1s3"],
+      "rationale_es": { "en": "Nervous but happy." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Triste y cansada" },
+        { "id": "b", "text": "Tranquila y aburrida" },
+        { "id": "c", "text": "Nerviosa y contenta" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué tuvo que hacer en el control?",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "Take off belt and shoes." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Quitarse los zapatos" },
+        { "id": "b", "text": "Comprar un billete" },
+        { "id": "c", "text": "Abrir la maleta" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Rocío no durmió en el avión.",
+      "evidence": ["p3s4"],
+      "rationale_es": { "en": "Rocío slept the whole flight." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuánto duró el vuelo?",
+      "evidence": ["p4s1"],
+      "rationale_es": { "en": "Two and a half hours." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una hora" },
+        { "id": "b", "text": "Dos horas y media" },
+        { "id": "c", "text": "Cinco horas" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "read",
+      "prompt": "¿Cómo se siente ahora la autora con los aviones?",
+      "evidence": ["p4s3"],
+      "rationale_es": { "en": "No longer afraid." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "No quiere volar más" },
+        { "id": "b", "text": "Prefiere el barco" },
+        { "id": "c", "text": "Ya no le dan miedo" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "*Las nubes*." },
+      "type": "gap_fill",
+      "text": "Desde la ventanilla vio las {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["nubes"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 157,
+  "lemmas": [
+    "a", "aeropuerto", "agradable", "ahora", "allí", "amigo", "antes", "arriba", "avión", "bañar", "cenar",
+    "cerrar", "cinturón", "coger", "con", "contento", "control", "dar", "de", "dejar", "desde", "después",
+    "dormir", "el", "en", "ese", "estar", "galleta", "grado", "hacer", "hasta", "hora", "hotel", "increíble",
+    "ir", "lado", "lejos", "limpiar", "llegar", "maleta", "mar", "medio", "mi", "miedo", "minuto", "muy",
+    "más", "nervioso", "ni", "no", "nosotros", "nube", "ojo", "pasado", "pasar", "pequeño", "perfecto", "pero",
+    "pescado", "poco", "por", "próximo", "punto", "que", "querer", "quitar", "quizás", "salir", "sentarse",
+    "ser", "sol", "también", "tarde", "taxi", "tener", "todo", "un", "ventanilla", "ver", "verano", "vez",
+    "viajar", "volar", "y", "ya", "yo", "zapato", "zumo"
+  ],
+  "difficulty": 863,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7329, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 8.3,
+    "flesch_reading_ease": 86.8,
+    "checked_at": "2026-10-19T13:09:45.755Z"
+  }
+}

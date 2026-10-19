@@ -708,7 +708,7 @@
             { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
             { "t": "menudo", "l": "menudo", "p": "ADJ", "w": true, "sp": true },
             { "t": "formo", "l": "formar", "p": "VERB", "w": true, "sp": true },
-            { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true },
             { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
             { "t": "problema", "l": "problema", "p": "NOUN", "w": true },
             { "t": ".", "l": ".", "p": "PUNCT", "w": false }
@@ -1011,23 +1011,23 @@
     "llenar", "lograr", "lugar", "madrugada", "maleta", "mantener", "marcharse", "medida", "mejor", "mejorar",
     "menos", "menudo", "mi", "miles", "millón", "modo", "momento", "monumento", "mucho", "multiplicar",
     "mundo", "museo", "muy", "más", "negocio", "no", "noche", "nuestro", "nuevo", "número", "o", "obligar",
-    "océano", "oportunidad", "otoño", "otro", "para", "parar", "parte", "pasar", "país", "pequeño", "permitir",
-    "pero", "persona", "piso", "poder", "popular", "por", "porque", "precio", "preferir", "preguntar",
-    "presión", "primavera", "problema", "producto", "prohibir", "promocionar", "propietario", "que",
-    "quejarse", "quien", "razonable", "recibir", "reconocer", "recordar", "recuerdo", "reducir", "región",
-    "repartir", "reservar", "residente", "respetar", "responsable", "restaurante", "resultado", "riqueza",
-    "ruido", "ruta", "se", "semana", "ser", "si", "siempre", "sin", "sino", "sitio", "sobre", "soportar", "su",
-    "subir", "suficiente", "sugerir", "supermercado", "también", "tasa", "temporada", "tener", "tienda",
-    "todo", "transporte", "turismo", "turista", "turístico", "un", "vacío", "varios", "vecino", "vender",
-    "venir", "viajar", "viajero", "vida", "visitante", "visitar", "vivir", "y", "ya", "yo", "zona", "él",
-    "último"
+    "océano", "oportunidad", "otoño", "otro", "para", "parar", "partir", "pasar", "país", "pequeño",
+    "permitir", "pero", "persona", "piso", "poder", "popular", "por", "porque", "precio", "preferir",
+    "preguntar", "presión", "primavera", "problema", "producto", "prohibir", "promocionar", "propietario",
+    "que", "quejarse", "quien", "razonable", "recibir", "reconocer", "recordar", "recuerdo", "reducir",
+    "región", "repartir", "reservar", "residente", "respetar", "responsable", "restaurante", "resultado",
+    "riqueza", "ruido", "ruta", "se", "semana", "ser", "si", "siempre", "sin", "sino", "sitio", "sobre",
+    "soportar", "su", "subir", "suficiente", "sugerir", "supermercado", "también", "tasa", "temporada",
+    "tener", "tienda", "todo", "transporte", "turismo", "turista", "turístico", "un", "vacío", "varios",
+    "vecino", "vender", "venir", "viajar", "viajero", "vida", "visitante", "visitar", "vivir", "y", "ya", "yo",
+    "zona", "él", "último"
   ],
   "difficulty": 1266,
   "qa": {
-    "coverage_by_level": { "A1": 0.6335, "A2": 0.7602, "B1": 0.8674, "B2": 1, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.6433, "A2": 0.7895, "B1": 0.9103, "B2": 1, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 16.9,
     "flesch_reading_ease": 63.8,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   }
 }

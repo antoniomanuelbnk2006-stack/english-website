@@ -452,7 +452,7 @@
       "text": "En parte. La luz azul retrasa la producción de melatonina, la hormona que nos prepara para dormir.",
       "tokens": [
         { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 99.848, "e": 100.056 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "s": 100.056, "e": 100.473 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "s": 100.056, "e": 100.473 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
         { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 100.473, "e": 100.681 },
         { "t": "luz", "l": "luz", "p": "NOUN", "w": true, "sp": true, "s": 100.682, "e": 100.96 },
@@ -992,7 +992,7 @@
         { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
         { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 215.649, "e": 215.949 },
         { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 215.949, "e": 216.189 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 216.189, "e": 216.549 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 216.189, "e": 216.549 },
         { "t": "esencial", "l": "esencial", "p": "ADJ", "w": true, "sp": true, "s": 216.549, "e": 217.089 },
         { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 217.089, "e": 217.269 },
         { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 217.269, "e": 217.449 },
@@ -1322,7 +1322,7 @@
     "llegar", "llevar", "lugar", "luz", "mantener", "mayor", "mayoría", "medida", "mejor", "mejorar",
     "melatonina", "memoria", "menos", "mensaje", "mientras", "minuto", "mucho", "muy", "más", "móvil",
     "necesitar", "neurólogo", "no", "noche", "nocturno", "nosotros", "notar", "noticia", "nuestro", "nunca",
-    "o", "ocurrir", "opinar", "ordenar", "oscuro", "oyente", "pantalla", "para", "parte", "país", "pelear",
+    "o", "ocurrir", "opinar", "ordenar", "oscuro", "oyente", "pantalla", "para", "partir", "país", "pelear",
     "pensar", "pequeño", "pero", "persona", "placer", "plazo", "población", "poder", "por", "preocuparse",
     "preparar", "problema", "producción", "pronto", "proponer", "próximo", "que", "quedar", "quien", "qué",
     "radio", "recuerdo", "recuperar", "recurrir", "red", "regular", "reloj", "reparar", "residuo", "retrasar",
@@ -1334,11 +1334,11 @@
   ],
   "difficulty": 1430,
   "qa": {
-    "coverage_by_level": { "A1": 0.6188, "A2": 0.7356, "B1": 0.8793, "B2": 0.9061, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.6303, "A2": 0.7835, "B1": 0.9004, "B2": 0.9253, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 9.3,
     "flesch_reading_ease": 75,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/c1/es-c1-lis-001/v1.m4a",

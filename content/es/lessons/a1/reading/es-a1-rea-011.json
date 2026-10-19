@@ -1,0 +1,327 @@
+{
+  "id": "es-a1-rea-011",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u01",
+  "series": "es-a1-u01-clase",
+  "skill": "reading",
+  "genre": "blog",
+  "title": "Mi clase de español",
+  "summary_es": {
+    "en": "A student describes her Spanish class, her teacher and her classmates.",
+    "fr": "Une étudiante décrit son cours d’espagnol, son professeur et ses camarades.",
+    "zh": "一名学生介绍她的西班牙语课、老师和同学。",
+    "ja": "学生がスペイン語のクラスと先生、クラスメートを紹介します。"
+  },
+  "topic": "education",
+  "tags": ["clase", "presentación", "ser"],
+  "can_do": ["R-A1-01"],
+  "grammar_focus": ["es.a1.ser-estar"],
+  "vocab_focus": ["clase", "profesor", "compañero", "escuela"],
+  "est_minutes": 4,
+  "prediction_prompt": "¿Estudias en una clase? ¿Cómo es?",
+  "pre_teach": ["compañero", "escuela"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Me llamo Emma y soy de Londres.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "Emma", "l": "emma", "p": "PROPN", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "soy", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Londres", "l": "londres", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Estudio español en una escuela.",
+          "tokens": [
+            { "t": "Estudio", "l": "estudiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "español", "l": "español", "p": "ADJ", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "escuela", "l": "escuela", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "La escuela está en el centro.",
+          "tokens": [
+            { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "escuela", "l": "escuela", "p": "NOUN", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "centro", "l": "centro", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Mi clase es pequeña.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "clase", "l": "clase", "p": "NOUN", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Somos ocho compañeros.",
+          "tokens": [
+            { "t": "Somos", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true },
+            { "t": "compañeros", "l": "compañero", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Hay chicos de Italia y de China.",
+          "tokens": [
+            { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true },
+            { "t": "chicos", "l": "chico", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Italia", "l": "italia", "p": "PROPN", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "China", "l": "china", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "El profesor se llama Pablo.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "profesor", "l": "profesor", "p": "NOUN", "w": true, "sp": true },
+            { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
+            { "t": "llama", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "Pablo", "l": "pablo", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Es de Madrid y es muy simpático.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Madrid", "l": "madrid", "p": "PROPN", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "simpático", "l": "simpático", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Hablamos mucho en clase.",
+          "tokens": [
+            { "t": "Hablamos", "l": "hablar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "clase", "l": "clase", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Después de clase tomamos un café.",
+          "tokens": [
+            { "t": "Después", "l": "después", "p": "ADV", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "clase", "l": "clase", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tomamos", "l": "tomar", "p": "VERB", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "café", "l": "café", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Me gusta mucho mi clase.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "clase", "l": "clase", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Ser for origin, estar for place",
+        "fr": "Ser pour l’origine, estar pour le lieu",
+        "zh": "ser 表示来源，estar 表示位置",
+        "ja": "出身は ser、場所は estar"
+      },
+      "explanation_es": {
+        "en": "*Soy de Londres*: where you are from, with *ser*. *La escuela está en el centro*: where something is, with *estar*."
+      },
+      "refs": ["p1s1", "p1s3"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "compañero",
+      "surface": "compañeros",
+      "pos": "noun",
+      "def_en": "persona de tu clase o trabajo",
+      "def_es": { "en": "classmates", "fr": "camarades", "zh": "同学", "ja": "クラスメート" },
+      "ref": "p2s2"
+    },
+    {
+      "lemma": "chico",
+      "surface": "chicos",
+      "pos": "noun",
+      "def_en": "persona joven",
+      "def_es": { "en": "young people, guys", "fr": "jeunes", "zh": "年轻人", "ja": "若者" },
+      "ref": "p2s3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿De qué habla Emma?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "She talks about her Spanish class." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De su casa en Londres" },
+        { "id": "b", "text": "De su clase de español" },
+        { "id": "c", "text": "De su trabajo en Madrid" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿De dónde es Emma?",
+      "evidence": ["p1s1"],
+      "rationale_es": { "en": "*Soy de Londres*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De Madrid" },
+        { "id": "b", "text": "De Italia" },
+        { "id": "c", "text": "De Londres" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuántos compañeros son?",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "*Somos ocho compañeros*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Ocho" },
+        { "id": "b", "text": "Cinco" },
+        { "id": "c", "text": "Diez" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "El profesor es de Madrid.",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "*Es de Madrid y es muy simpático*." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué hacen después de clase?",
+      "evidence": ["p4s1"],
+      "rationale_es": { "en": "*Tomamos un café*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Juegan al tenis" },
+        { "id": "b", "text": "Toman un café" },
+        { "id": "c", "text": "Comen paella" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p1s3"],
+      "rationale_es": { "en": "*En el centro*." },
+      "type": "gap_fill",
+      "text": "La escuela está en el {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["centro"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 59,
+  "lemmas": [
+    "café", "centro", "chico", "clase", "compañero", "de", "después", "el", "en", "escuela", "español",
+    "estar", "estudiar", "gustar", "haber", "hablar", "llamarse", "mi", "mucho", "muy", "pequeño", "profesor",
+    "se", "ser", "simpático", "tomar", "un", "y", "yo"
+  ],
+  "difficulty": 664,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 5.4,
+    "flesch_reading_ease": 94.6,
+    "checked_at": "2026-10-19T13:04:11.667Z"
+  }
+}

@@ -482,7 +482,7 @@
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
             { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true },
-            { "t": "parte", "l": "parte", "p": "NOUN", "w": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true },
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true },
             { "t": "opiniones", "l": "opinión", "p": "NOUN", "w": true, "sp": true },
@@ -1300,7 +1300,7 @@
     "manera", "mano", "masivo", "mayor", "medida", "mejor", "memorable", "mercado", "mesa", "mismo", "modelo",
     "modo", "momento", "montaña", "monumento", "mucho", "más", "ni", "ningún", "no", "nuevo", "o", "obligar",
     "observar", "ocurrir", "oficio", "ofrecer", "opinión", "ordenar", "otro", "para", "paradoja", "paraguas",
-    "parecer", "parte", "participar", "pasado", "pasar", "patio", "pequeño", "perder", "periodo", "pero",
+    "parecer", "participar", "partir", "pasado", "pasar", "patio", "pequeño", "perder", "periodo", "pero",
     "persona", "personal", "planeta", "plano", "plato", "poder", "por", "porque", "posibilidad", "practicar",
     "precio", "precisamente", "preferir", "preguntar", "presencia", "pretender", "prioridad", "probablemente",
     "problema", "producto", "prometer", "propio", "propuesta", "práctico", "pueblo", "que", "querer", "quien",
@@ -1313,15 +1313,12 @@
     "valor", "variedad", "vecino", "ver", "verdad", "vez", "viajar", "viajero", "vida", "visitante", "visitar",
     "vivir", "voluntad", "y", "ya", "él", "último"
   ],
-  "difficulty": 1482,
+  "difficulty": 1475,
   "qa": {
-    "coverage_by_level": { "A1": 0.5997, "A2": 0.6864, "B1": 0.8267, "B2": 0.8886, "C1": 0.9835, "C2": 1 },
-    "off_level_lemmas": [
-      "auténtico", "carecer", "extraordinario", "huella", "legítimo", "paradoja", "presencia", "realmente",
-      "rincón", "sensación", "trayecto", "variedad"
-    ],
+    "coverage_by_level": { "A1": 0.608, "A2": 0.718, "B1": 0.8569, "B2": 0.9216, "C1": 0.9904, "C2": 1 },
+    "off_level_lemmas": ["extraordinario", "huella", "legítimo", "paradoja", "presencia", "rincón", "sensación"],
     "avg_sentence_words": 20.8,
     "flesch_reading_ease": 59.3,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   }
 }

@@ -1,0 +1,321 @@
+{
+  "id": "es-a1-rea-012",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u03",
+  "series": "es-a1-u03-semana",
+  "skill": "reading",
+  "genre": "blog",
+  "title": "Mi semana",
+  "summary_es": {
+    "en": "A young man tells what he does on each day of the week.",
+    "fr": "Un jeune homme raconte ce qu’il fait chaque jour de la semaine.",
+    "zh": "一个年轻人讲述他一周每天做什么。",
+    "ja": "若い男性が、1週間の毎日の過ごし方を話します。"
+  },
+  "topic": "daily-life",
+  "tags": ["semana", "días", "rutina"],
+  "can_do": ["R-A1-01"],
+  "grammar_focus": ["es.a1.presente-regulares"],
+  "vocab_focus": ["lunes", "martes", "viernes", "trabajar"],
+  "est_minutes": 4,
+  "prediction_prompt": "¿Qué haces los lunes? ¿Y los sábados?",
+  "pre_teach": ["lunes", "viernes"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Me llamo Javier y trabajo en una oficina.",
+          "tokens": [
+            { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true },
+            { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true },
+            { "t": "Javier", "l": "javier", "p": "PROPN", "w": false, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "De lunes a viernes trabajo mucho.",
+          "tokens": [
+            { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "lunes", "l": "lunes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "viernes", "l": "viernes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Los lunes y los miércoles voy al gimnasio.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "lunes", "l": "lunes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "miércoles", "l": "miércoles", "p": "NOUN", "w": true, "sp": true },
+            { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "gimnasio", "l": "gimnasio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Los martes estudio inglés.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "martes", "l": "martes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "estudio", "l": "estudiar", "p": "VERB", "w": true, "sp": true },
+            { "t": "inglés", "l": "inglés", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s3",
+          "text": "Los jueves ceno con mi hermana.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "jueves", "l": "jueves", "p": "NOUN", "w": true, "sp": true },
+            { "t": "ceno", "l": "cenar", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "hermana", "l": "hermana", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "Los viernes salgo con mis amigos.",
+          "tokens": [
+            { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "viernes", "l": "viernes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "salgo", "l": "salir", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Vamos a un bar del barrio.",
+          "tokens": [
+            { "t": "Vamos", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "bar", "l": "bar", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "El sábado duermo hasta tarde.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "sp": true },
+            { "t": "duermo", "l": "dormir", "p": "VERB", "w": true, "sp": true },
+            { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "El domingo como con mis padres.",
+          "tokens": [
+            { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "domingo", "l": "domingo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "padres", "l": "padre", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Es mi día favorito.",
+          "tokens": [
+            { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true },
+            { "t": "favorito", "l": "favorito", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": {
+        "en": "Los lunes: every Monday",
+        "fr": "Los lunes : tous les lundis",
+        "zh": "los lunes：每个星期一",
+        "ja": "los lunes：毎週月曜日"
+      },
+      "explanation_es": {
+        "en": "*Los lunes* means every Monday (a habit). *El sábado* talks about this Saturday or Saturdays in general."
+      },
+      "refs": ["p2s2", "p4s1"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "gimnasio",
+      "surface": "gimnasio",
+      "pos": "noun",
+      "def_en": "lugar para hacer deporte",
+      "def_es": { "en": "gym", "fr": "salle de sport", "zh": "健身房", "ja": "ジム" },
+      "ref": "p2s1"
+    },
+    {
+      "lemma": "hasta",
+      "surface": "hasta tarde",
+      "pos": "phrase",
+      "def_en": "hasta una hora tarde",
+      "def_es": { "en": "until late", "fr": "jusqu’à tard", "zh": "睡到很晚", "ja": "遅くまで" },
+      "ref": "p4s1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿De qué habla el texto?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "He describes his week." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De un viaje a Madrid" },
+        { "id": "b", "text": "De la semana de Javier" },
+        { "id": "c", "text": "De la familia de un amigo" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué hace Javier los martes?",
+      "evidence": ["p2s2"],
+      "rationale_es": { "en": "*Los martes estudio inglés*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Va al gimnasio" },
+        { "id": "b", "text": "Cena con su hermana" },
+        { "id": "c", "text": "Estudia inglés" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Con quién cena los jueves?",
+      "evidence": ["p2s3"],
+      "rationale_es": { "en": "*Ceno con mi hermana*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Con su hermana" },
+        { "id": "b", "text": "Con sus padres" },
+        { "id": "c", "text": "Con sus amigos" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "Los viernes Javier se queda en casa.",
+      "evidence": ["p3s1"],
+      "rationale_es": { "en": "He goes out with friends." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cuál es su día favorito?",
+      "evidence": ["p4s2", "p4s3"],
+      "rationale_es": { "en": "Sunday is his favourite day." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "El sábado" },
+        { "id": "b", "text": "El domingo" },
+        { "id": "c", "text": "El viernes" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p4s1"],
+      "rationale_es": { "en": "*Hasta tarde*." },
+      "type": "gap_fill",
+      "text": "El sábado duerme hasta {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["tarde"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 59,
+  "lemmas": [
+    "a", "amigo", "bar", "barrio", "cenar", "comer", "con", "de", "domingo", "dormir", "día", "el", "en",
+    "estudiar", "favorito", "gimnasio", "hasta", "hermana", "inglés", "ir", "jueves", "llamarse", "lunes",
+    "martes", "mi", "miércoles", "mucho", "oficina", "padre", "salir", "ser", "sábado", "tarde", "trabajar",
+    "un", "viernes", "y", "yo"
+  ],
+  "difficulty": 666,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 5.9,
+    "flesch_reading_ease": 95.1,
+    "checked_at": "2026-10-19T13:04:11.667Z"
+  }
+}

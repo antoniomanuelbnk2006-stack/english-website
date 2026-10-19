@@ -356,7 +356,7 @@
             { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
             { "t": "ella", "l": "ella", "p": "PRON", "w": true, "sp": true },
             { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
-            { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true },
+            { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true },
             { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
             { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true },
             { "t": "patrimonio", "l": "patrimonio", "p": "NOUN", "w": true },
@@ -1031,7 +1031,7 @@
             { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
             { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
             { "t": "mismas", "l": "mismo", "p": "DET", "w": true, "sp": true },
-            { "t": "razones", "l": "razón", "p": "NOUN", "w": true, "sp": true },
+            { "t": "razones", "l": "razonar", "p": "VERB", "w": true, "sp": true },
             { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
             { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
             { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
@@ -1287,23 +1287,23 @@
     "montaña", "morir", "mostrar", "mucho", "mundo", "más", "móvil", "música", "negativo", "ni", "ningún",
     "niño", "no", "nombre", "nosotros", "noticia", "nunca", "o", "obstante", "obstáculo", "ocio", "ocurrir",
     "oficio", "ofrecer", "olvidar", "opción", "organizar", "orgullo", "otro", "padre", "palabra", "panorama",
-    "papel", "para", "parecer", "parte", "pasado", "pasar", "patrimonio", "pequeño", "percibir", "perder",
+    "papel", "para", "parecer", "partir", "pasado", "pasar", "patrimonio", "pequeño", "percibir", "perder",
     "pero", "persona", "planta", "pobreza", "poco", "poder", "política", "por", "porque", "posible", "presión",
     "proceso", "producir", "programa", "prohibición", "prohibir", "propio", "protección", "proteger", "puerta",
-    "pérdida", "que", "querer", "quien", "qué", "razón", "recuperación", "recuperar", "rentable", "resultado",
-    "resultar", "revitalización", "rumbo", "rural", "río", "se", "según", "semana", "sentir", "ser", "si",
-    "siempre", "siglo", "significar", "silencio", "simplemente", "sin", "sino", "siquiera", "sobre", "social",
-    "soler", "solo", "su", "símbolo", "también", "tampoco", "tan", "tarde", "tecnología", "tener", "terminar",
-    "territorio", "todo", "topónimo", "trabajar", "tradicional", "traducción", "traducir", "transmitir", "un",
-    "usar", "utilizar", "valioso", "valle", "variado", "varios", "vasco", "vez", "vida", "videojuego", "vivir",
-    "vocabulario", "voluntad", "y", "ya", "él", "éxito", "último", "único", "útil"
+    "pérdida", "que", "querer", "quien", "qué", "razonar", "recuperación", "recuperar", "rentable",
+    "resultado", "resultar", "revitalización", "rumbo", "rural", "río", "se", "según", "semana", "sentir",
+    "ser", "si", "siempre", "siglo", "significar", "silencio", "simplemente", "sin", "sino", "siquiera",
+    "sobre", "social", "soler", "solo", "su", "símbolo", "también", "tampoco", "tan", "tarde", "tecnología",
+    "tener", "terminar", "territorio", "todo", "topónimo", "trabajar", "tradicional", "traducción", "traducir",
+    "transmitir", "un", "usar", "utilizar", "valioso", "valle", "variado", "varios", "vasco", "vez", "vida",
+    "videojuego", "vivir", "vocabulario", "voluntad", "y", "ya", "él", "éxito", "último", "único", "útil"
   ],
   "difficulty": 1463,
   "qa": {
-    "coverage_by_level": { "A1": 0.5823, "A2": 0.675, "B1": 0.8257, "B2": 0.8617, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5823, "A2": 0.6943, "B1": 0.8492, "B2": 0.9059, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 20.3,
     "flesch_reading_ease": 61.1,
-    "checked_at": "2026-10-19T08:13:23.410Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   }
 }

@@ -363,7 +363,7 @@
       "tokens": [
         { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 66.058, "e": 66.227 },
         { "t": "gran", "l": "grande", "p": "ADJ", "w": true, "sp": true, "s": 66.227, "e": 66.509 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "s": 66.51, "e": 66.849 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "s": 66.51, "e": 66.849 },
         { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
         { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "s": 66.849, "e": 67.018 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
@@ -518,7 +518,7 @@
         { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 96.524, "e": 97.053 },
         { "t": "tenemos", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 97.054, "e": 97.583 },
         { "t": "nuestra", "l": "nuestro", "p": "DET", "w": true, "sp": true, "s": 97.583, "e": 98.112 },
-        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 98.112, "e": 98.509 },
+        { "t": "parte", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 98.112, "e": 98.509 },
         { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 98.509, "e": 98.707 },
         { "t": "responsabilidad", "l": "responsabilidad", "p": "NOUN", "w": true, "s": 98.708, "e": 99.766 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
@@ -1424,7 +1424,7 @@
     "hacia", "hoy", "imagen", "impactante", "indignación", "informar", "informático", "ingeniero", "instituto",
     "intenso", "internet", "joven", "justo", "leer", "libertad", "limitar", "llegar", "luego", "mayoría",
     "mañana", "medio", "menos", "mi", "miedo", "mismo", "mostrar", "mucho", "más", "máximo", "negocio", "no",
-    "noticia", "nuestro", "nunca", "o", "obligar", "otro", "para", "parecer", "parte", "pasar", "pedir",
+    "noticia", "nuestro", "nunca", "o", "obligar", "otro", "para", "parecer", "partir", "pasar", "pedir",
     "pensar", "periodista", "periódico", "pero", "plataforma", "poco", "poder", "por", "porque", "posible",
     "precisamente", "preferir", "pregunta", "preguntar", "premiar", "principio", "prisa", "problema",
     "profesor", "proponer", "provocar", "publicar", "que", "quedar", "quien", "qué", "reacción", "real",
@@ -1435,16 +1435,13 @@
     "técnico", "un", "velocidad", "ver", "verdad", "verdadero", "verificar", "vez", "vicioso", "vulnerable",
     "vía", "vídeo", "y", "ya", "yo", "él"
   ],
-  "difficulty": 1449,
+  "difficulty": 1446,
   "qa": {
-    "coverage_by_level": { "A1": 0.5981, "A2": 0.7165, "B1": 0.8854, "B2": 0.9184, "C1": 0.9806, "C2": 1 },
-    "off_level_lemmas": [
-      "alimentar", "círculo", "desconfianza", "difundir", "expresión", "ingeniero", "premiar", "reflexión",
-      "verdadero", "vicioso"
-    ],
+    "coverage_by_level": { "A1": 0.6, "A2": 0.7398, "B1": 0.9049, "B2": 0.9379, "C1": 0.9845, "C2": 1 },
+    "off_level_lemmas": ["alimentar", "círculo", "desconfianza", "difundir", "expresión", "ingeniero", "verdadero", "vicioso"],
     "avg_sentence_words": 10.7,
     "flesch_reading_ease": 76,
-    "checked_at": "2026-10-19T07:48:30.244Z"
+    "checked_at": "2026-10-19T13:37:43.885Z"
   },
   "audio": {
     "src": "audio/c1/es-c1-lis-006/v1.m4a",

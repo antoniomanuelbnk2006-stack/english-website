@@ -1,0 +1,510 @@
+{
+  "id": "es-a2-rea-014",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u02",
+  "series": "es-a2-u02-cambio-planes",
+  "skill": "reading",
+  "genre": "email",
+  "title": "Cambio de planes",
+  "summary_es": {
+    "en": "An email to cancel a meeting and suggest another day and time.",
+    "fr": "Un courriel pour annuler une réunion et proposer un autre jour et une autre heure.",
+    "zh": "一封取消会议并提出改期的邮件。",
+    "ja": "会議を取り消し、別の日時を提案するメールです。"
+  },
+  "topic": "work-tech",
+  "tags": ["correo", "trabajo", "citas"],
+  "can_do": ["R-A2-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["reunión", "cancelar", "proponer", "disculpa"],
+  "est_minutes": 6,
+  "prediction_prompt": "¿Cómo escribes un correo para cambiar una cita?",
+  "pre_teach": ["reunión", "cancelar"],
+  "paragraphs": [
+    {
+      "id": "p1",
+      "sentences": [
+        {
+          "id": "p1s1",
+          "text": "Hola, Andrés:",
+          "tokens": [
+            { "t": "Hola", "l": "hola", "p": "INTJ", "w": false },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "Andrés", "l": "andrés", "p": "PROPN", "w": false },
+            { "t": ":", "l": ":", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s2",
+          "text": "Te escribo porque tengo que cancelar la reunión del jueves a las diez.",
+          "tokens": [
+            { "t": "Te", "l": "tú", "p": "PRON", "w": true, "sp": true },
+            { "t": "escribo", "l": "escribir", "p": "VERB", "w": true, "sp": true },
+            { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "tengo", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "cancelar", "l": "cancelar", "p": "VERB", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "reunión", "l": "reunión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "jueves", "l": "jueves", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "diez", "l": "diez", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p1s3",
+          "text": "Lo siento mucho.",
+          "tokens": [
+            { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true },
+            { "t": "siento", "l": "sentir", "p": "VERB", "w": true, "sp": true },
+            { "t": "mucho", "l": "mucho", "p": "DET", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "sentences": [
+        {
+          "id": "p2s1",
+          "text": "Mi hijo está enfermo y mañana tengo que llevarlo al médico.",
+          "tokens": [
+            { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "hijo", "l": "hijo", "p": "NOUN", "w": true, "sp": true },
+            { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "enfermo", "l": "enfermo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true },
+            { "t": "tengo", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "llevarlo", "l": "llevar", "p": "VERB", "w": true, "sp": true },
+            { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "médico", "l": "médico", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p2s2",
+          "text": "Por eso no voy a poder ir a la oficina en todo el día.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "poder", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "día", "l": "día", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "sentences": [
+        {
+          "id": "p3s1",
+          "text": "¿Te parece bien el viernes a la misma hora?",
+          "tokens": [
+            { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+            { "t": "Te", "l": "tú", "p": "PRON", "w": true, "sp": true },
+            { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true },
+            { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "viernes", "l": "viernes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "misma", "l": "mismo", "p": "DET", "w": true, "sp": true },
+            { "t": "hora", "l": "hora", "p": "NOUN", "w": true },
+            { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s2",
+          "text": "Si no puedes, también estoy libre el lunes por la tarde, a partir de las cuatro.",
+          "tokens": [
+            { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true },
+            { "t": "puedes", "l": "poder", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "estoy", "l": "estar", "p": "AUX", "w": true, "sp": true },
+            { "t": "libre", "l": "libre", "p": "ADJ", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "lunes", "l": "lunes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "partir", "l": "partir", "p": "VERB", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p3s3",
+          "text": "Podemos vernos en mi oficina o, si prefieres, hacer una videollamada.",
+          "tokens": [
+            { "t": "Podemos", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "vernos", "l": "ver", "p": "VERB", "w": true, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true },
+            { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "prefieres", "l": "preferir", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "videollamada", "l": "videollamada", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "sentences": [
+        {
+          "id": "p4s1",
+          "text": "Te envío el informe hoy por la tarde, así puedes leerlo antes.",
+          "tokens": [
+            { "t": "Te", "l": "tú", "p": "PRON", "w": true, "sp": true },
+            { "t": "envío", "l": "enviar", "p": "VERB", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "informe", "l": "informe", "p": "NOUN", "w": true, "sp": true },
+            { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "así", "l": "así", "p": "ADV", "w": true, "sp": true },
+            { "t": "puedes", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "leerlo", "l": "leer", "p": "VERB", "w": true, "sp": true },
+            { "t": "antes", "l": "antes", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s2",
+          "text": "Perdona otra vez por las molestias.",
+          "tokens": [
+            { "t": "Perdona", "l": "perdonar", "p": "VERB", "w": true, "sp": true },
+            { "t": "otra", "l": "otro", "p": "DET", "w": true, "sp": true },
+            { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "molestias", "l": "molestia", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s3",
+          "text": "Un saludo,",
+          "tokens": [
+            { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "saludo", "l": "saludo", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p4s4",
+          "text": "Sara",
+          "tokens": [
+            { "t": "Sara", "l": "sara", "p": "PROPN", "w": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "sentences": [
+        {
+          "id": "p5s1",
+          "text": "Por cierto, en la reunión quiero hablar del nuevo proyecto con el cliente de Valencia.",
+          "tokens": [
+            { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "cierto", "l": "cierto", "p": "ADJ", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
+            { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "reunión", "l": "reunión", "p": "NOUN", "w": true, "sp": true },
+            { "t": "quiero", "l": "querer", "p": "VERB", "w": true, "sp": true },
+            { "t": "hablar", "l": "hablar", "p": "VERB", "w": true, "sp": true },
+            { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true, "sp": true },
+            { "t": "proyecto", "l": "proyecto", "p": "NOUN", "w": true, "sp": true },
+            { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
+            { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "cliente", "l": "cliente", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "Valencia", "l": "valencia", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s2",
+          "text": "Creo que necesitamos una hora, más o menos.",
+          "tokens": [
+            { "t": "Creo", "l": "creer", "p": "VERB", "w": true, "sp": true },
+            { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "necesitamos", "l": "necesitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
+            { "t": "hora", "l": "hora", "p": "NOUN", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true },
+            { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "menos", "l": "menos", "p": "ADV", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s3",
+          "text": "Si quieres, puedo invitar también a Marta.",
+          "tokens": [
+            { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "quieres", "l": "querer", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "puedo", "l": "poder", "p": "VERB", "w": true, "sp": true },
+            { "t": "invitar", "l": "invitar", "p": "VERB", "w": true, "sp": true },
+            { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "Marta", "l": "marta", "p": "PROPN", "w": false },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s4",
+          "text": "Ella conoce muy bien a este cliente.",
+          "tokens": [
+            { "t": "Ella", "l": "ella", "p": "PRON", "w": true, "sp": true },
+            { "t": "conoce", "l": "conocer", "p": "VERB", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true },
+            { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
+            { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true },
+            { "t": "cliente", "l": "cliente", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s5",
+          "text": "Ya tengo los datos de los últimos tres meses y son muy buenos.",
+          "tokens": [
+            { "t": "Ya", "l": "ya", "p": "ADV", "w": true, "sp": true },
+            { "t": "tengo", "l": "tener", "p": "VERB", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "datos", "l": "dato", "p": "NOUN", "w": true, "sp": true },
+            { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
+            { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true },
+            { "t": "últimos", "l": "último", "p": "ADJ", "w": true, "sp": true },
+            { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true },
+            { "t": "meses", "l": "mes", "p": "NOUN", "w": true, "sp": true },
+            { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
+            { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true },
+            { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true },
+            { "t": "buenos", "l": "bueno", "p": "ADJ", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        },
+        {
+          "id": "p5s6",
+          "text": "Avísame cuando puedas, por favor.",
+          "tokens": [
+            { "t": "Avísame", "l": "avisar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true },
+            { "t": "puedas", "l": "poder", "p": "VERB", "w": true },
+            { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+            { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
+            { "t": "favor", "l": "favor", "p": "NOUN", "w": true },
+            { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_focus": [
+    {
+      "title_es": { "en": "Polite proposals", "fr": "Propositions polies", "zh": "礼貌的提议", "ja": "丁寧な提案" },
+      "explanation_es": {
+        "en": "To propose politely: *¿Te parece bien…?* To apologise: *Lo siento mucho*, *Perdona por las molestias*."
+      },
+      "refs": ["p3s1", "p4s2"]
+    }
+  ],
+  "with_audio": false,
+  "glossary": [
+    {
+      "lemma": "cancelar",
+      "surface": "cancelar",
+      "pos": "verb",
+      "def_en": "decir que algo no se va a hacer",
+      "def_es": { "en": "to cancel", "fr": "annuler", "zh": "取消", "ja": "キャンセルする" },
+      "ref": "p1s2"
+    },
+    {
+      "lemma": "informe",
+      "surface": "informe",
+      "pos": "noun",
+      "def_en": "documento con información de trabajo",
+      "def_es": { "en": "report", "fr": "rapport", "zh": "报告", "ja": "報告書" },
+      "ref": "p4s1"
+    },
+    {
+      "lemma": "molestia",
+      "surface": "molestias",
+      "pos": "noun",
+      "def_en": "problema pequeño para otra persona",
+      "def_es": { "en": "inconvenience", "fr": "dérangement", "zh": "麻烦", "ja": "迷惑" },
+      "ref": "p4s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "skim",
+      "prompt": "¿Para qué escribe Sara?",
+      "evidence": ["p1s2"],
+      "rationale_es": { "en": "To reschedule a meeting." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para pedir trabajo a Andrés" },
+        { "id": "b", "text": "Para cambiar la fecha de una reunión" },
+        { "id": "c", "text": "Para invitar a Andrés a cenar" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Por qué no puede ir a la reunión?",
+      "evidence": ["p2s1"],
+      "rationale_es": { "en": "Her son is ill." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tiene un viaje de trabajo" },
+        { "id": "b", "text": "Su coche no funciona" },
+        { "id": "c", "text": "Su hijo está enfermo" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué día propone primero?",
+      "evidence": ["p3s1"],
+      "rationale_es": { "en": "Friday." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "El viernes" },
+        { "id": "b", "text": "El lunes" },
+        { "id": "c", "text": "El jueves" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "El lunes Sara está libre por la mañana.",
+      "evidence": ["p3s2"],
+      "rationale_es": { "en": "Monday afternoon." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Cómo pueden verse, además de en la oficina?",
+      "evidence": ["p3s3"],
+      "rationale_es": { "en": "Video call." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En un café" },
+        { "id": "b", "text": "Por videollamada" },
+        { "id": "c", "text": "En casa de Andrés" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "read",
+      "prompt": "¿Qué va a enviar Sara hoy?",
+      "evidence": ["p4s1"],
+      "rationale_es": { "en": "The report." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una factura" },
+        { "id": "b", "text": "Unas fotos" },
+        { "id": "c", "text": "Un informe" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["p4s2"],
+      "rationale_es": { "en": "*Las molestias*." },
+      "type": "gap_fill",
+      "text": "Sara pide perdón por las {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["molestias"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "word_count": 155,
+  "lemmas": [
+    "a", "antes", "así", "avisar", "bien", "bueno", "cancelar", "cierto", "cliente", "con", "conocer", "creer",
+    "cuando", "dato", "de", "día", "el", "ella", "en", "enfermo", "enviar", "escribir", "estar", "este",
+    "esto", "favor", "hablar", "hacer", "hijo", "hora", "hoy", "informe", "invitar", "ir", "jueves", "leer",
+    "libre", "llevar", "lunes", "mañana", "menos", "mes", "mi", "mismo", "molestia", "mucho", "muy", "más",
+    "médico", "necesitar", "no", "nuevo", "o", "oficina", "otro", "parecer", "partir", "perdonar", "poder",
+    "por", "porque", "preferir", "proyecto", "que", "querer", "reunión", "saludo", "sentir", "ser", "si",
+    "también", "tarde", "tener", "todo", "tú", "un", "ver", "vez", "videollamada", "viernes", "y", "ya", "él",
+    "último"
+  ],
+  "difficulty": 864,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8163, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 8.6,
+    "flesch_reading_ease": 92.8,
+    "checked_at": "2026-10-19T13:10:22.522Z"
+  }
+}
