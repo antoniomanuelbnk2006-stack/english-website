@@ -1,0 +1,582 @@
+{
+  "id": "es-b1-lis-014",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u04",
+  "series": "es-b1-u04-sevilla",
+  "skill": "listening",
+  "genre": "podcast",
+  "title": "Tres días en Sevilla",
+  "summary_es": {
+    "en": "A travel podcast suggests a three-day plan for Seville with tips for each day.",
+    "fr": "Un podcast de voyage propose un programme de trois jours à Séville avec des conseils pour chaque jour.",
+    "zh": "一档旅行播客为塞维利亚推荐三天行程，并给出每天的建议。",
+    "ja": "旅行ポッドキャストが、セビリアの3日間の計画と各日のコツを紹介します。"
+  },
+  "topic": "travel",
+  "tags": ["viajes", "ciudad", "consejos"],
+  "can_do": ["L-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["catedral", "taller", "antelación", "espectáculo"],
+  "est_minutes": 8,
+  "prediction_prompt": "Tienes tres días en una ciudad nueva. ¿Qué te gustaría visitar?",
+  "pre_teach": ["taller", "antelación"],
+  "speakers": [
+    { "id": "nuria", "name": "Nuria", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "nuria",
+      "text": "Bienvenidos a «Rutas con mochila».",
+      "tokens": [
+        { "t": "Bienvenidos", "l": "bienvenido", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.873 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 0.873, "e": 1.017 },
+        { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+        { "t": "Rutas", "l": "ruta", "p": "NOUN", "w": true, "sp": true, "s": 1.016, "e": 1.447 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 1.448, "e": 1.736 },
+        { "t": "mochila", "l": "mochila", "p": "NOUN", "w": true, "s": 1.735, "e": 2.31 },
+        { "t": "»", "l": "»", "p": "PUNCT", "w": false },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.374
+    },
+    {
+      "id": "s2",
+      "speaker": "nuria",
+      "text": "Hoy os propongo un fin de semana largo en Sevilla.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 2.624, "e": 2.888 },
+        { "t": "os", "l": "vosotros", "p": "PRON", "w": true, "sp": true, "s": 2.888, "e": 3.086 },
+        { "t": "propongo", "l": "proponer", "p": "VERB", "w": true, "sp": true, "s": 3.086, "e": 3.68 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 3.68, "e": 3.878 },
+        { "t": "fin", "l": "fin", "p": "NOUN", "w": true, "sp": true, "s": 3.878, "e": 4.142 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 4.142, "e": 4.34 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true, "s": 4.34, "e": 4.802 },
+        { "t": "largo", "l": "largo", "p": "ADJ", "w": true, "sp": true, "s": 4.802, "e": 5.198 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 5.198, "e": 5.396 },
+        { "t": "Sevilla", "l": "sevilla", "p": "PROPN", "w": false, "s": 5.396, "e": 5.924 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 2.624,
+      "end": 6.002
+    },
+    {
+      "id": "s3",
+      "speaker": "nuria",
+      "text": "El primer día os recomiendo empezar por el centro histórico.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 6.262, "e": 6.455 },
+        { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 6.455, "e": 6.905 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 6.905, "e": 7.162 },
+        { "t": "os", "l": "vosotros", "p": "PRON", "w": true, "sp": true, "s": 7.163, "e": 7.356 },
+        { "t": "recomiendo", "l": "recomendar", "p": "VERB", "w": true, "sp": true, "s": 7.356, "e": 8.064 },
+        { "t": "empezar", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 8.063, "e": 8.578 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 8.578, "e": 8.835 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.835, "e": 9.028 },
+        { "t": "centro", "l": "centro", "p": "NOUN", "w": true, "sp": true, "s": 9.028, "e": 9.478 },
+        { "t": "histórico", "l": "histórico", "p": "ADJ", "w": true, "s": 9.479, "e": 10.122 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.252,
+      "end": 10.194
+    },
+    {
+      "id": "s4",
+      "speaker": "nuria",
+      "text": "Visitad la catedral y subid a la Giralda para ver toda la ciudad desde arriba.",
+      "tokens": [
+        { "t": "Visitad", "l": "visitar", "p": "VERB", "w": true, "sp": true, "s": 10.454, "e": 10.986 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 10.986, "e": 11.186 },
+        { "t": "catedral", "l": "catedral", "p": "NOUN", "w": true, "sp": true, "s": 11.186, "e": 11.785 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 11.785, "e": 11.918 },
+        { "t": "subid", "l": "subir", "p": "VERB", "w": true, "sp": true, "s": 11.918, "e": 12.317 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 12.317, "e": 12.45 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 12.45, "e": 12.65 },
+        { "t": "Giralda", "l": "giralda", "p": "PROPN", "w": false, "sp": true, "s": 12.65, "e": 13.182 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 13.182, "e": 13.515 },
+        { "t": "ver", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 13.515, "e": 13.781 },
+        { "t": "toda", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 13.781, "e": 14.114 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 14.114, "e": 14.314 },
+        { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true, "s": 14.313, "e": 14.779 },
+        { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 14.779, "e": 15.178 },
+        { "t": "arriba", "l": "arriba", "p": "ADV", "w": true, "s": 15.178, "e": 15.644 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.444,
+      "end": 15.72
+    },
+    {
+      "id": "s5",
+      "speaker": "nuria",
+      "text": "Es mejor ir a primera hora, porque después hay mucha cola.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 15.98, "e": 16.18 },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true, "s": 16.18, "e": 16.58 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 16.58, "e": 16.78 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 16.78, "e": 16.913 },
+        { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 16.913, "e": 17.446 },
+        { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "s": 17.447, "e": 17.78 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 17.78, "e": 18.247 },
+        { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true, "s": 18.247, "e": 18.78 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 18.78, "e": 19.047 },
+        { "t": "mucha", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 19.047, "e": 19.447 },
+        { "t": "cola", "l": "cola", "p": "NOUN", "w": true, "s": 19.447, "e": 19.78 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.97,
+      "end": 19.854
+    },
+    {
+      "id": "s6",
+      "speaker": "nuria",
+      "text": "A mediodía podéis comer tapas en el barrio de Santa Cruz, donde hay muchos bares pequeños y precios razonables.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 20.114, "e": 20.26 },
+        { "t": "mediodía", "l": "mediodía", "p": "NOUN", "w": true, "sp": true, "s": 20.26, "e": 20.915 },
+        { "t": "podéis", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 20.915, "e": 21.425 },
+        { "t": "comer", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 21.425, "e": 21.862 },
+        { "t": "tapas", "l": "tapa", "p": "NOUN", "w": true, "sp": true, "s": 21.862, "e": 22.299 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 22.299, "e": 22.517 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 22.517, "e": 22.735 },
+        { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "sp": true, "s": 22.735, "e": 23.245 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 23.245, "e": 23.463 },
+        { "t": "Santa", "l": "santa", "p": "PROPN", "w": false, "sp": true, "s": 23.464, "e": 23.901 },
+        { "t": "Cruz", "l": "cruz", "p": "PROPN", "w": false, "s": 23.901, "e": 24.265 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true, "s": 24.265, "e": 24.702 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 24.702, "e": 24.993 },
+        { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 24.993, "e": 25.503 },
+        { "t": "bares", "l": "bar", "p": "NOUN", "w": true, "sp": true, "s": 25.503, "e": 25.94 },
+        { "t": "pequeños", "l": "pequeño", "p": "ADJ", "w": true, "sp": true, "s": 25.939, "e": 26.594 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 26.595, "e": 26.741 },
+        { "t": "precios", "l": "precio", "p": "NOUN", "w": true, "sp": true, "s": 26.74, "e": 27.323 },
+        { "t": "razonables", "l": "razonable", "p": "ADJ", "w": true, "s": 27.323, "e": 28.124 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.104,
+      "end": 28.188
+    },
+    {
+      "id": "s7",
+      "speaker": "nuria",
+      "text": "Por la tarde, pasead por el parque de María Luisa y alquilad una barca en la plaza de España.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 28.448, "e": 28.691 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 28.691, "e": 28.873 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "s": 28.873, "e": 29.238 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pasead", "l": "pasear", "p": "VERB", "w": true, "sp": true, "s": 29.458, "e": 29.95 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 29.95, "e": 30.231 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 30.231, "e": 30.442 },
+        { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "sp": true, "s": 30.442, "e": 30.934 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 30.933, "e": 31.144 },
+        { "t": "María", "l": "maría", "p": "PROPN", "w": false, "sp": true, "s": 31.144, "e": 31.566 },
+        { "t": "Luisa", "l": "luisa", "p": "PROPN", "w": false, "sp": true, "s": 31.566, "e": 31.988 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 31.987, "e": 32.128 },
+        { "t": "alquilad", "l": "alquilar", "p": "VERB", "w": true, "sp": true, "s": 32.128, "e": 32.76 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 32.76, "e": 33.041 },
+        { "t": "barca", "l": "barca", "p": "NOUN", "w": true, "sp": true, "s": 33.041, "e": 33.463 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 33.462, "e": 33.673 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 33.673, "e": 33.884 },
+        { "t": "plaza", "l": "plaza", "p": "NOUN", "w": true, "sp": true, "s": 33.884, "e": 34.306 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 34.305, "e": 34.516 },
+        { "t": "España", "l": "españa", "p": "PROPN", "w": false, "s": 34.516, "e": 35.008 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.438,
+      "end": 35.115
+    },
+    {
+      "id": "s8",
+      "speaker": "nuria",
+      "text": "El segundo día es ideal para conocer el barrio de Triana, al otro lado del río.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 35.375, "e": 35.593 },
+        { "t": "segundo", "l": "segundo", "p": "NUM", "w": false, "sp": true, "s": 35.593, "e": 36.175 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 36.175, "e": 36.466 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 36.465, "e": 36.683 },
+        { "t": "ideal", "l": "ideal", "p": "ADJ", "w": true, "sp": true, "s": 36.683, "e": 37.119 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 37.12, "e": 37.483 },
+        { "t": "conocer", "l": "conocer", "p": "VERB", "w": true, "sp": true, "s": 37.483, "e": 38.065 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 38.065, "e": 38.283 },
+        { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "sp": true, "s": 38.283, "e": 38.792 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 38.792, "e": 39.01 },
+        { "t": "Triana", "l": "triana", "p": "PROPN", "w": false, "s": 39.01, "e": 39.519 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 39.518, "e": 39.736 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 39.737, "e": 40.1 },
+        { "t": "lado", "l": "lado", "p": "NOUN", "w": true, "sp": true, "s": 40.1, "e": 40.463 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 40.463, "e": 40.754 },
+        { "t": "río", "l": "río", "p": "NOUN", "w": true, "s": 40.754, "e": 41.045 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.365,
+      "end": 41.122
+    },
+    {
+      "id": "s9",
+      "speaker": "nuria",
+      "text": "Allí encontraréis tiendas de cerámica y varios talleres donde se puede ver cómo trabajan los artesanos.",
+      "tokens": [
+        { "t": "Allí", "l": "allí", "p": "ADV", "w": true, "sp": true, "s": 41.392, "e": 41.725 },
+        {
+          "t": "encontraréis",
+          "l": "encontrar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 41.725,
+          "e": 42.592
+        },
+        { "t": "tiendas", "l": "tienda", "p": "NOUN", "w": true, "sp": true, "s": 42.593, "e": 43.127 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 43.126, "e": 43.326 },
+        { "t": "cerámica", "l": "cerámica", "p": "NOUN", "w": true, "sp": true, "s": 43.326, "e": 43.926 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 43.927, "e": 44.06 },
+        { "t": "varios", "l": "varios", "p": "DET", "w": true, "sp": true, "s": 44.06, "e": 44.527 },
+        { "t": "talleres", "l": "taller", "p": "NOUN", "w": true, "sp": true, "s": 44.527, "e": 45.127 },
+        { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true, "s": 45.127, "e": 45.527 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 45.527, "e": 45.727 },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 45.727, "e": 46.127 },
+        { "t": "ver", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 46.128, "e": 46.395 },
+        { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 46.394, "e": 46.727 },
+        { "t": "trabajan", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 46.728, "e": 47.328 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 47.328, "e": 47.595 },
+        { "t": "artesanos", "l": "artesano", "p": "NOUN", "w": true, "s": 47.595, "e": 48.262 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 41.372,
+      "end": 48.38
+    },
+    {
+      "id": "s10",
+      "speaker": "nuria",
+      "text": "Por la noche, no os perdáis un espectáculo de flamenco en una sala pequeña.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 48.64, "e": 48.908 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 48.908, "e": 49.109 },
+        { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "s": 49.108, "e": 49.51 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 49.76, "e": 49.964 },
+        { "t": "os", "l": "vosotros", "p": "PRON", "w": true, "sp": true, "s": 49.964, "e": 50.168 },
+        { "t": "perdáis", "l": "perder", "p": "VERB", "w": true, "sp": true, "s": 50.168, "e": 50.712 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 50.712, "e": 50.916 },
+        {
+          "t": "espectáculo",
+          "l": "espectáculo",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 50.917,
+          "e": 51.733
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 51.733, "e": 51.937 },
+        { "t": "flamenco", "l": "flamenco", "p": "NOUN", "w": true, "sp": true, "s": 51.937, "e": 52.549 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 52.549, "e": 52.753 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 52.753, "e": 53.025 },
+        { "t": "sala", "l": "sala", "p": "NOUN", "w": true, "sp": true, "s": 53.026, "e": 53.366 },
+        { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true, "s": 53.366, "e": 53.91 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 48.63,
+      "end": 54
+    },
+    {
+      "id": "s11",
+      "speaker": "nuria",
+      "text": "Las entradas cuestan unos veinte euros, pero la experiencia es inolvidable.",
+      "tokens": [
+        { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 54.26, "e": 54.531 },
+        { "t": "entradas", "l": "entrar", "p": "VERB", "w": true, "sp": true, "s": 54.531, "e": 55.14 },
+        { "t": "cuestan", "l": "costar", "p": "VERB", "w": true, "sp": true, "s": 55.14, "e": 55.682 },
+        { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true, "s": 55.682, "e": 56.02 },
+        { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true, "s": 56.02, "e": 56.494 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "s": 56.494, "e": 56.9 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 57.04, "e": 57.434 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 57.434, "e": 57.671 },
+        {
+          "t": "experiencia",
+          "l": "experiencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 57.671,
+          "e": 58.617
+        },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 58.617, "e": 58.854 },
+        { "t": "inolvidable", "l": "inolvidable", "p": "ADJ", "w": true, "s": 58.854, "e": 59.8 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 54.25,
+      "end": 59.946
+    },
+    {
+      "id": "s12",
+      "speaker": "nuria",
+      "text": "El último día, si todavía tenéis energía, podéis visitar el Alcázar.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 60.206, "e": 60.451 },
+        { "t": "último", "l": "último", "p": "ADJ", "w": true, "sp": true, "s": 60.451, "e": 61.024 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "s": 61.024, "e": 61.351 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 61.351, "e": 61.596 },
+        { "t": "todavía", "l": "todavía", "p": "ADV", "w": true, "sp": true, "s": 61.597, "e": 62.252 },
+        { "t": "tenéis", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 62.251, "e": 62.824 },
+        { "t": "energía", "l": "energía", "p": "NOUN", "w": true, "s": 62.824, "e": 63.479 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "podéis", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 63.479, "e": 64.052 },
+        { "t": "visitar", "l": "visitar", "p": "VERB", "w": true, "sp": true, "s": 64.051, "e": 64.706 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 64.706, "e": 64.951 },
+        { "t": "Alcázar", "l": "alcázar", "p": "PROPN", "w": false, "s": 64.951, "e": 65.606 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 60.196,
+      "end": 65.7
+    },
+    {
+      "id": "s13",
+      "speaker": "nuria",
+      "text": "Reservad las entradas por internet con antelación.",
+      "tokens": [
+        { "t": "Reservad", "l": "reservar", "p": "VERB", "w": true, "sp": true, "s": 65.97, "e": 66.645 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 66.645, "e": 66.945 },
+        { "t": "entradas", "l": "entrar", "p": "VERB", "w": true, "sp": true, "s": 66.945, "e": 67.62 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 67.62, "e": 67.92 },
+        { "t": "internet", "l": "internet", "p": "NOUN", "w": true, "sp": true, "s": 67.92, "e": 68.595 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 68.595, "e": 68.895 },
+        { "t": "antelación", "l": "antelación", "p": "NOUN", "w": true, "s": 68.895, "e": 69.72 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 65.95,
+      "end": 69.793
+    },
+    {
+      "id": "s14",
+      "speaker": "nuria",
+      "text": "Un último consejo: evitad viajar en agosto, porque hace muchísimo calor.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 70.043, "e": 70.271 },
+        { "t": "último", "l": "último", "p": "ADJ", "w": true, "sp": true, "s": 70.271, "e": 70.804 },
+        { "t": "consejo", "l": "consejo", "p": "NOUN", "w": true, "s": 70.804, "e": 71.413 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "evitad", "l": "evitar", "p": "VERB", "w": true, "sp": true, "s": 71.414, "e": 71.947 },
+        { "t": "viajar", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 71.947, "e": 72.48 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 72.48, "e": 72.708 },
+        { "t": "agosto", "l": "agosto", "p": "NOUN", "w": true, "s": 72.708, "e": 73.241 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 73.241, "e": 73.774 },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 73.774, "e": 74.155 },
+        { "t": "muchísimo", "l": "muchísimo", "p": "ADV", "w": true, "sp": true, "s": 74.155, "e": 74.916 },
+        { "t": "calor", "l": "calor", "p": "NOUN", "w": true, "s": 74.916, "e": 75.373 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 70.043,
+      "end": 75.541
+    },
+    {
+      "id": "s15",
+      "speaker": "nuria",
+      "text": "La primavera y el otoño son las mejores épocas.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 75.801, "e": 76.024 },
+        { "t": "primavera", "l": "primavera", "p": "NOUN", "w": true, "sp": true, "s": 76.024, "e": 76.767 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 76.766, "e": 76.915 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 76.915, "e": 77.138 },
+        { "t": "otoño", "l": "otoño", "p": "NOUN", "w": true, "sp": true, "s": 77.138, "e": 77.584 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 77.583, "e": 77.88 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 77.88, "e": 78.177 },
+        { "t": "mejores", "l": "mejorar", "p": "VERB", "w": true, "sp": true, "s": 78.177, "e": 78.771 },
+        { "t": "épocas", "l": "época", "p": "NOUN", "w": true, "s": 78.771, "e": 79.291 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 75.791,
+      "end": 79.339
+    },
+    {
+      "id": "s16",
+      "speaker": "nuria",
+      "text": "¡Buen viaje!",
+      "tokens": [
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 79.599, "e": 79.981 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "s": 79.981, "e": 80.439 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 79.589,
+      "end": 80.488
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "taller",
+      "surface": "talleres",
+      "pos": "noun",
+      "def_en": "lugar donde se trabaja con las manos",
+      "def_es": { "en": "workshop", "fr": "atelier", "zh": "作坊", "ja": "工房" },
+      "ref": "s9"
+    },
+    {
+      "lemma": "antelación",
+      "surface": "antelación",
+      "pos": "noun",
+      "def_en": "tiempo de aviso antes de algo",
+      "def_es": { "en": "advance notice", "fr": "à l’avance", "zh": "提前", "ja": "前もって" },
+      "ref": "s13"
+    },
+    {
+      "lemma": "espectáculo",
+      "surface": "espectáculo",
+      "pos": "noun",
+      "def_en": "función de teatro, música o baile",
+      "def_es": { "en": "show", "fr": "spectacle", "zh": "演出", "ja": "ショー" },
+      "ref": "s10"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué propone Nuria en el programa?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "A three-day plan for Seville." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un curso de cocina andaluza en verano" },
+        { "id": "b", "text": "Un plan de tres días en Sevilla" },
+        { "id": "c", "text": "Una semana de excursiones por la montaña" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué conviene subir a la Giralda temprano?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "Queues build up later." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque cierra a mediodía" },
+        { "id": "b", "text": "Porque hace menos calor arriba" },
+        { "id": "c", "text": "Porque luego hay mucha gente" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué se puede ver en Triana?",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "Ceramics shops and workshops." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Gente que hace objetos a mano" },
+        { "id": "b", "text": "Varios museos de arte muy modernos" },
+        { "id": "c", "text": "Grandes centros comerciales nuevos" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "El espectáculo de flamenco es gratis.",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "Tickets cost about twenty euros." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Cuándo es mejor viajar a Sevilla según Nuria?",
+      "evidence": ["s15"],
+      "rationale_es": { "en": "Spring and autumn." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En pleno verano, en agosto" },
+        { "id": "b", "text": "En primavera o en otoño" },
+        { "id": "c", "text": "En invierno, cuando llueve más" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "*Con antelación*: in advance." },
+      "type": "gap_fill",
+      "text": "Hay que reservar las entradas del Alcázar con {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["antelación"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "agosto", "allí", "alquilar", "antelación", "arriba", "artesano", "bar", "barca", "barrio",
+    "bienvenido", "bueno", "calor", "catedral", "centro", "cerámica", "ciudad", "cola", "comer", "con",
+    "conocer", "consejo", "costar", "cómo", "de", "desde", "después", "donde", "día", "el", "empezar", "en",
+    "encontrar", "energía", "entrar", "espectáculo", "euro", "evitar", "experiencia", "fin", "flamenco",
+    "haber", "hacer", "histórico", "hora", "hoy", "ideal", "inolvidable", "internet", "ir", "lado", "largo",
+    "mediodía", "mejor", "mejorar", "mochila", "mucho", "muchísimo", "no", "noche", "otoño", "otro", "para",
+    "parque", "pasear", "pequeño", "perder", "pero", "plaza", "poder", "por", "porque", "precio", "primavera",
+    "proponer", "razonable", "recomendar", "reservar", "ruta", "río", "sala", "se", "semana", "ser", "si",
+    "subir", "taller", "tapa", "tarde", "tener", "tienda", "todavía", "todo", "trabajar", "un", "varios",
+    "ver", "viajar", "visitar", "vosotros", "y", "época", "último"
+  ],
+  "difficulty": 1076,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7052, "A2": 0.8439, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 11.6,
+    "flesch_reading_ease": 76,
+    "checked_at": "2026-10-19T07:35:31.655Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-014/v1.m4a",
+    "duration_s": 80.488,
+    "wpm": 139,
+    "provider": "piper",
+    "voices": { "nuria": "sharvard-f" },
+    "loudness_lufs": -16,
+    "peaks": [
+      0.95, 1, 0.81, 0.66, 0.61, 0.45, 0.54, 0.7, 1, 0.59, 0.82, 0.6, 0.61, 0.7, 1, 0.73, 0.44, 0.19, 0.45,
+      0.87, 0.95, 0.73, 0.56, 0.84, 0.63, 1, 0.7, 0.66, 0.67, 0.62, 0.09, 0.72, 0.74, 0.8, 0.84, 0.69, 0.58,
+      0.94, 1, 0.88, 0.8, 0.84, 0.89, 0.94, 0.79, 0.6, 0.3, 0.48, 0.8, 0.8, 0.76, 1, 0.89, 0.96, 0.62, 0.72,
+      0.64, 0.62, 0.62, 0.07, 0.48, 0.62, 0.62, 0.55, 0.5, 0.89, 0.56, 1, 0.68, 0.51, 0.54, 0.48, 0.5, 0.45,
+      0.44, 0.79, 0.44, 0.52, 0.43, 0.62, 0.88, 0.54, 0.4, 0.19, 0.74, 0.81, 0.69, 0.61, 0.75, 0.6, 0.86, 0.53,
+      0.54, 0.66, 0.58, 0.43, 0.51, 0.68, 1, 0.9, 0.59, 0.85, 0.58, 0.69, 0.16, 0.6, 0.61, 0.53, 0.85, 0.55,
+      0.75, 0.67, 0.49, 0.57, 1, 0.65, 0.72, 0.53, 0.57, 0.89, 0.61, 0.42, 0.18, 0.65, 0.72, 0.55, 0.55, 0.58,
+      0.7, 0.69, 0.53, 0.89, 0.59, 0.95, 1, 0.72, 0.64, 0.73, 0.69, 0.72, 0.59, 0.66, 0.44, 0.19, 0.02, 1,
+      0.49, 0.39, 0.44, 0.68, 0.79, 0.53, 0.55, 0.99, 0.63, 0.58, 0.72, 0.71, 0.68, 0.57, 0.46, 0.5, 0.74, 1,
+      0.87, 0.66, 0.87, 0.64, 0.85, 0.64, 0.88, 0.69, 0.73, 0.75, 0.84, 0.46, 0.65, 0.71, 0.27, 0.51, 0.83,
+      0.74, 0.77, 0.75, 0.8, 0.79, 0.78, 0.57, 0.6, 0.78, 0.76, 0.73, 0.93, 1, 0.78, 0.47, 0.72, 0.82, 1, 0.76,
+      0.87, 0.83, 0.75, 0.65, 0.6, 0.81, 0.62, 0.28, 0.43, 1, 0.62, 0.5, 0.55, 0.71, 0.83, 0.76, 0.7, 0.66,
+      0.67, 0.84, 0.75, 0.54, 0.76, 0.76, 0.41, 0.01, 0.72, 0.69, 0.84, 0.62, 0.76, 0.9, 0.46, 1, 0.56, 0.28,
+      0.14, 0.9, 1, 0.17
+    ]
+  }
+}

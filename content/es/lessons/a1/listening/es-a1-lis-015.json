@@ -1,0 +1,358 @@
+{
+  "id": "es-a1-lis-015",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u04",
+  "series": "es-a1-u04-panaderia",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "En la panadería",
+  "summary_es": {
+    "en": "Daniel buys bread and a cake in the bakery.",
+    "fr": "Daniel achète du pain et un gâteau à la boulangerie.",
+    "zh": "Daniel 在面包店买了面包和蛋糕。",
+    "ja": "ダニエルはパン屋でパンとケーキを買います。"
+  },
+  "topic": "food",
+  "tags": ["panadería", "comprar", "precio"],
+  "can_do": ["L-A1-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["pan", "pastel", "euro", "cuánto"],
+  "est_minutes": 4,
+  "prediction_prompt": "Una persona compra pan. ¿Qué dice?",
+  "pre_teach": ["barra de pan", "cambio"],
+  "speakers": [
+    { "id": "carla", "name": "Carla", "accent": "es-ES", "gender": "female" },
+    { "id": "dani", "name": "Daniel", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "carla",
+      "text": "Buenos días. ¿Qué quiere?",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.541 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 0.541, "e": 0.92 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 1.14, "e": 1.362 },
+        { "t": "quiere", "l": "querer", "p": "VERB", "w": true, "s": 1.362, "e": 1.75 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.797
+    },
+    {
+      "id": "s2",
+      "speaker": "dani",
+      "text": "Un pan, por favor.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 2.517, "e": 2.688 },
+        { "t": "pan", "l": "pan", "p": "NOUN", "w": true, "s": 2.688, "e": 2.916 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 2.916, "e": 3.144 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 3.145, "e": 3.487 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 2.497,
+      "end": 3.615
+    },
+    {
+      "id": "s3",
+      "speaker": "carla",
+      "text": "Aquí tiene. Hoy hay pan nuevo.",
+      "tokens": [
+        { "t": "Aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 4.325, "e": 4.693 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "s": 4.693, "e": 5.135 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 5.385, "e": 5.647 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 5.647, "e": 5.909 },
+        { "t": "pan", "l": "pan", "p": "NOUN", "w": true, "sp": true, "s": 5.909, "e": 6.171 },
+        { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true, "s": 6.172, "e": 6.565 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.315,
+      "end": 6.651
+    },
+    {
+      "id": "s4",
+      "speaker": "dani",
+      "text": "¡Qué bien! Me gusta el pan.",
+      "tokens": [
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 7.361, "e": 7.597 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 7.597, "e": 7.891 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 8.311, "e": 8.497 },
+        { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true, "s": 8.497, "e": 8.868 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.868, "e": 9.054 },
+        { "t": "pan", "l": "pan", "p": "NOUN", "w": true, "s": 9.054, "e": 9.302 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.351,
+      "end": 9.377
+    },
+    {
+      "id": "s5",
+      "speaker": "carla",
+      "text": "¿Algo más?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 10.087, "e": 10.509 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "s": 10.509, "e": 10.847 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.077,
+      "end": 10.885
+    },
+    {
+      "id": "s6",
+      "speaker": "dani",
+      "text": "Sí. ¿Tiene pasteles?",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 11.585, "e": 11.835 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 12.285, "e": 12.649 },
+        { "t": "pasteles", "l": "pastel", "p": "NOUN", "w": true, "s": 12.649, "e": 13.195 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.585,
+      "end": 13.266
+    },
+    {
+      "id": "s7",
+      "speaker": "carla",
+      "text": "Sí. Hay de chocolate y de manzana.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 13.976, "e": 14.456 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 14.706, "e": 14.989 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 14.989, "e": 15.201 },
+        { "t": "chocolate", "l": "chocolate", "p": "NOUN", "w": true, "sp": true, "s": 15.201, "e": 15.908 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 15.907, "e": 16.048 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 16.049, "e": 16.261 },
+        { "t": "manzana", "l": "manzana", "p": "NOUN", "w": true, "s": 16.261, "e": 16.826 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.966,
+      "end": 16.907
+    },
+    {
+      "id": "s8",
+      "speaker": "dani",
+      "text": "Uno de manzana, por favor.",
+      "tokens": [
+        { "t": "Uno", "l": "uno", "p": "NUM", "w": false, "sp": true, "s": 17.642, "e": 17.872 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 17.872, "e": 18.045 },
+        { "t": "manzana", "l": "manzana", "p": "NOUN", "w": true, "s": 18.045, "e": 18.506 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 18.506, "e": 18.736 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 18.736, "e": 19.082 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.607,
+      "end": 19.176
+    },
+    {
+      "id": "s9",
+      "speaker": "carla",
+      "text": "Son tres euros.",
+      "tokens": [
+        { "t": "Son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 19.896, "e": 20.224 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 20.224, "e": 20.634 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "s": 20.634, "e": 21.126 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.876,
+      "end": 21.193
+    },
+    {
+      "id": "s10",
+      "speaker": "dani",
+      "text": "Aquí tiene.",
+      "tokens": [
+        { "t": "Aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 21.893, "e": 22.161 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "s": 22.161, "e": 22.483 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.893,
+      "end": 22.756
+    },
+    {
+      "id": "s11",
+      "speaker": "carla",
+      "text": "Gracias. Hasta mañana.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 23.466, "e": 24.276 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 24.516, "e": 24.954 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "s": 24.954, "e": 25.466 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.456,
+      "end": 25.554
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "aquí tiene",
+      "surface": "Aquí tiene",
+      "pos": "phrase",
+      "def_en": "se dice al dar algo a otra persona",
+      "def_es": { "en": "here you are", "fr": "voici", "zh": "给您", "ja": "どうぞ" },
+      "ref": "s3"
+    },
+    {
+      "lemma": "chocolate",
+      "surface": "chocolate",
+      "pos": "noun",
+      "def_en": "dulce marrón hecho de cacao",
+      "def_es": { "en": "chocolate", "fr": "chocolat", "zh": "巧克力", "ja": "チョコレート" },
+      "ref": "s7"
+    },
+    {
+      "lemma": "barra",
+      "surface": "pan",
+      "pos": "noun",
+      "def_en": "comida básica que se hace con harina",
+      "def_es": { "en": "bread", "fr": "pain", "zh": "面包", "ja": "パン" },
+      "ref": "s2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Dónde está Daniel?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "He buys bread: a bakery." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En una librería" },
+        { "id": "b", "text": "En una panadería" },
+        { "id": "c", "text": "En una escuela" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué compra primero?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "Bread first." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un pastel" },
+        { "id": "b", "text": "Una manzana" },
+        { "id": "c", "text": "Un pan" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué pastel elige?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "Apple." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De manzana" },
+        { "id": "b", "text": "De chocolate" },
+        { "id": "c", "text": "De queso" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Todo cuesta cinco euros.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "It costs three euros." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con un número.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "*Tres euros*." },
+      "type": "gap_fill",
+      "text": "Daniel paga {{1}} euros.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["tres", "3"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué dice Carla al final?",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "See you tomorrow." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Buenas noches" },
+        { "id": "b", "text": "Hasta mañana" },
+        { "id": "c", "text": "Buen viaje" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "algo", "aquí", "bien", "bueno", "chocolate", "de", "día", "el", "euro", "favor", "gustar", "haber",
+    "hasta", "hoy", "manzana", "mañana", "más", "nuevo", "pan", "pastel", "por", "querer", "qué", "ser",
+    "tener", "un", "y", "yo"
+  ],
+  "difficulty": 679,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 2.6,
+    "flesch_reading_ease": 106.8,
+    "checked_at": "2026-10-19T07:26:48.323Z"
+  },
+  "audio": {
+    "src": "audio/a1/es-a1-lis-015/v1.m4a",
+    "duration_s": 25.554,
+    "wpm": 106,
+    "provider": "piper",
+    "voices": { "carla": "sharvard-f", "dani": "davefx-m" },
+    "loudness_lufs": -16,
+    "peaks": [
+      0.72, 1, 0.89, 0.36, 0.64, 0.42, 0.15, 0.19, 0.13, 0, 0.32, 1, 0.54, 0.92, 0.83, 0.37, 0.1, 0, 0, 0, 0,
+      0, 0, 0.86, 0.97, 0.97, 1, 0.42, 0.69, 0.39, 0.91, 0.62, 0.1, 0.01, 0, 0, 0, 0, 0, 0, 0.61, 0.75, 0.61,
+      0.75, 0.55, 1, 0.52, 0.42, 0.06, 0, 0.59, 0.89, 1, 0.98, 0.94, 0.92, 0.92, 0.61, 0.62, 0.46, 0.19, 0.11,
+      0.01, 0, 0, 0, 0, 0, 0, 1, 0.84, 0.97, 0.26, 0.13, 0.03, 0, 0, 0, 0.88, 1, 0.57, 0.28, 0.96, 0.73, 0.64,
+      0.81, 0.18, 0.07, 0, 0, 0, 0, 0, 0, 0.86, 1, 0.91, 0.91, 0.73, 0.42, 0.41, 0.17, 0, 0, 0, 0, 0, 0, 0.17,
+      1, 0.18, 0.05, 0.01, 0, 0, 0.92, 1, 1, 0.87, 0.85, 0.78, 0.65, 0.21, 0.16, 0.02, 0, 0, 0, 0, 0, 0, 0.41,
+      0.63, 1, 0.95, 0.34, 0.02, 0, 0.57, 0.6, 1, 0.44, 0.53, 0.4, 0.65, 0.76, 0.35, 0.81, 0.34, 0.31, 0.4,
+      0.48, 0.49, 0.32, 0.11, 0.44, 0.27, 0.19, 0.07, 0, 0, 0, 0, 0, 0, 0.39, 0.98, 0.97, 0.9, 0.82, 0.48, 1,
+      0.86, 0.8, 0.8, 0.24, 0.86, 0.63, 0.61, 0.04, 0, 0, 0, 0, 0, 0, 0.05, 0.35, 0.87, 0.71, 0.89, 1, 0.49,
+      0.76, 0.47, 0.32, 0.23, 0.13, 0.07, 0, 0, 0, 0, 0, 0, 0.99, 0.72, 0.57, 0.95, 1, 0.33, 0.05, 0, 0.01, 0,
+      0, 0, 0, 0, 0, 0.36, 1, 0.52, 0.09, 0.3, 0.25, 0.15, 0.18, 0.03, 0, 0.7, 0.75, 0.88, 0.83, 0.79, 1, 0.92,
+      0.49, 0.39, 0.04
+    ]
+  }
+}

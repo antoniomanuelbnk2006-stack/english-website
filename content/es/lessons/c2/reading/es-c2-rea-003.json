@@ -170,10 +170,10 @@
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true },
             { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
-            { "t": "cultivo", "l": "cultivar", "p": "VERB", "w": true, "sp": true },
+            { "t": "cultivo", "l": "cultivo", "p": "NOUN", "w": true, "sp": true },
             { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
             { "t": "bacterias", "l": "bacteria", "p": "NOUN", "w": true, "sp": true },
-            { "t": "contaminado", "l": "contaminado", "p": "ADJ", "w": true, "sp": true },
+            { "t": "contaminado", "l": "contaminar", "p": "VERB", "w": true, "sp": true },
             { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true },
             { "t": "casualidad", "l": "casualidad", "p": "NOUN", "w": true },
             { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
@@ -379,7 +379,7 @@
             { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true },
             { "t": "convicción", "l": "convicción", "p": "NOUN", "w": true, "sp": true },
             { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true },
-            { "t": "convertirse", "l": "convertirse", "p": "VERB", "w": true, "sp": true },
+            { "t": "convertirse", "l": "convertir", "p": "VERB", "w": true, "sp": true },
             { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
             { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
             { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true },
@@ -1571,8 +1571,8 @@
     "carrera", "casi", "caso", "castigar", "casualidad", "celebrar", "ciencia", "científico", "cierto",
     "civil", "claridad", "claro", "comer", "cometer", "compartir", "complacencia", "comprensivo", "comprobar",
     "con", "condena", "condenar", "condicionar", "conocimiento", "consecuencia", "constantemente",
-    "contaminado", "contener", "contexto", "convenir", "convertirse", "convicción", "corregir", "costar",
-    "cotidiano", "crear", "cualidad", "cuando", "cuestión", "culpable", "cultivar", "cultura", "cómo", "de",
+    "contaminar", "contener", "contexto", "convenir", "convertir", "convicción", "corregir", "costar",
+    "cotidiano", "crear", "cualidad", "cuando", "cuestión", "culpable", "cultivo", "cultura", "cómo", "de",
     "deber", "decir", "decisión", "definitivo", "dejar", "delicado", "demanda", "demás", "depender",
     "derrumbarse", "descubrimiento", "descubrir", "descuido", "después", "detrás", "difícil", "dimensión",
     "dimisión", "distancia", "distinguir", "distinto", "documentar", "dominar", "donde", "dosificar",
@@ -1606,10 +1606,10 @@
   ],
   "difficulty": 1657,
   "qa": {
-    "coverage_by_level": { "A1": 0.5694, "A2": 0.6311, "B1": 0.7985, "B2": 0.8634, "C1": 0.902, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5727, "A2": 0.6388, "B1": 0.8095, "B2": 0.8667, "C1": 0.9042, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 21.8,
     "flesch_reading_ease": 59.2,
-    "checked_at": "2026-10-18T22:29:27.861Z"
+    "checked_at": "2026-10-19T08:13:23.410Z"
   }
 }

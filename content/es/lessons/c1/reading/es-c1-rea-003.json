@@ -106,7 +106,7 @@
             { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true },
             { "t": "intensificado", "l": "intensificar", "p": "VERB", "w": true, "sp": true },
             { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
-            { "t": "debate", "l": "debate", "p": "NOUN", "w": true, "sp": true },
+            { "t": "debate", "l": "debatir", "p": "VERB", "w": true, "sp": true },
             { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true },
             { "t": "pocas", "l": "poco", "p": "DET", "w": true, "sp": true },
             { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true },
@@ -891,7 +891,7 @@
             { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true },
             { "t": "regiones", "l": "región", "p": "NOUN", "w": true, "sp": true },
             { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
-            { "t": "convertirse", "l": "convertirse", "p": "VERB", "w": true, "sp": true },
+            { "t": "convertirse", "l": "convertir", "p": "VERB", "w": true, "sp": true },
             { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
             { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true },
             { "t": "nueva", "l": "nuevo", "p": "ADJ", "w": true, "sp": true },
@@ -1278,8 +1278,8 @@
     "automatizable", "automatizar", "automático", "avanzar", "beneficio", "brecha", "bueno", "cada", "caer",
     "cambiar", "cambio", "campo", "capacidad", "ciclo", "coincidir", "colectivo", "combinación", "comer",
     "cometer", "comodidad", "competencia", "complejo", "con", "concentrarse", "concreto", "conservar",
-    "consistir", "contenido", "continuar", "convenir", "convertirse", "corregir", "correo", "correr", "coste",
-    "crear", "cuando", "cuidar", "cuyo", "cuándo", "cuánto", "código", "cómo", "dato", "de", "debate",
+    "consistir", "contenido", "continuar", "convenir", "convertir", "corregir", "correo", "correr", "coste",
+    "crear", "cuando", "cuidar", "cuyo", "cuándo", "cuánto", "código", "cómo", "dato", "de", "debatir",
     "decidir", "decisión", "dedicar", "definir", "dejar", "delegar", "demasiado", "demás", "dentro",
     "depender", "desafío", "desaparecer", "desde", "desequilibrio", "desigualdad", "después", "determinar",
     "diagnosticar", "diagnóstico", "digital", "dignidad", "dimensión", "documento", "década", "economista",
@@ -1309,16 +1309,16 @@
     "transformar", "transparencia", "un", "utilidad", "utilizar", "varios", "velocidad", "ver", "vez", "vivir",
     "voluntad", "y", "ya", "él", "ético", "último", "únicamente"
   ],
-  "difficulty": 1500,
+  "difficulty": 1497,
   "qa": {
-    "coverage_by_level": { "A1": 0.5487, "A2": 0.6198, "B1": 0.7618, "B2": 0.8259, "C1": 0.9652, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5501, "A2": 0.6379, "B1": 0.7841, "B2": 0.8426, "C1": 0.968, "C2": 1 },
     "off_level_lemmas": [
-      "adaptación", "ajeno", "ampliar", "argumentar", "artificial", "automático", "caer", "continuar",
-      "corregir", "definir", "desigualdad", "inteligencia", "internacional", "irresponsable", "lección",
-      "pertenecer", "recurso", "reproducir", "sostener", "tender"
+      "adaptación", "ajeno", "argumentar", "artificial", "automático", "caer", "continuar", "corregir",
+      "definir", "desigualdad", "inteligencia", "irresponsable", "lección", "pertenecer", "recurso",
+      "reproducir", "sostener", "tender"
     ],
     "avg_sentence_words": 20.7,
     "flesch_reading_ease": 50.9,
-    "checked_at": "2026-10-18T22:11:35.202Z"
+    "checked_at": "2026-10-19T08:13:23.410Z"
   }
 }

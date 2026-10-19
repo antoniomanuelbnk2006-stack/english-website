@@ -469,7 +469,7 @@
             { "t": "privilegiado", "l": "privilegiado", "p": "ADJ", "w": true, "sp": true },
             { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true },
             { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
-            { "t": "debate", "l": "debate", "p": "NOUN", "w": true },
+            { "t": "debate", "l": "debatir", "p": "VERB", "w": true },
             { "t": ".", "l": ".", "p": "PUNCT", "w": false }
           ]
         },
@@ -1055,7 +1055,7 @@
             { "t": "paso", "l": "pasar", "p": "VERB", "w": true, "sp": true },
             { "t": "hacia", "l": "hacia", "p": "ADP", "w": true, "sp": true },
             { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true },
-            { "t": "aprecio", "l": "aprecio", "p": "NOUN", "w": true },
+            { "t": "aprecio", "l": "apreciar", "p": "VERB", "w": true },
             { "t": ".", "l": ".", "p": "PUNCT", "w": false }
           ]
         }
@@ -1514,7 +1514,7 @@
   "lemmas": [
     "a", "abrir", "abundancia", "acabar", "acelerar", "aceptar", "actividad", "actual", "acuerdo", "además",
     "admirar", "adornar", "afirmar", "agotar", "agradable", "agua", "algo", "algún", "alternativo", "alto",
-    "alumno", "ambos", "ante", "antes", "aparecer", "aprecio", "aprender", "arbitrario", "argumento",
+    "alumno", "ambos", "ante", "antes", "aparecer", "apreciar", "aprender", "arbitrario", "argumento",
     "armónico", "arquitecto", "arquitectura", "arte", "artístico", "asociar", "atractivo", "atraer",
     "automáticamente", "bailar", "basar", "bastante", "belleza", "bello", "biológico", "biólogo", "blanco",
     "bueno", "bárbaro", "caber", "cambiar", "canción", "canon", "cantar", "capacidad", "casa", "casi",
@@ -1523,7 +1523,7 @@
     "confirmar", "conmover", "conocer", "conocimiento", "considerar", "consonancia", "contemplar",
     "continente", "contraejemplo", "convenir", "conversación", "convertirse", "corazón", "corporal",
     "correcto", "corregir", "correr", "cosa", "costumbre", "crecer", "creer", "criterio", "crítico", "cuadro",
-    "cualquier", "cuando", "cuerpo", "cultura", "curioso", "cómo", "de", "debate", "decir", "decisivo",
+    "cualquier", "cuando", "cuerpo", "cultura", "curioso", "cómo", "de", "debatir", "decir", "decisivo",
     "decorar", "defender", "defensor", "dejar", "depender", "descubrir", "desde", "después", "difundir",
     "dimensión", "discusión", "discutir", "disonante", "dispuesto", "distinción", "distinto", "diversidad",
     "dogmático", "durante", "década", "dónde", "edificio", "educación", "educar", "ejemplo", "el", "elegante",
@@ -1557,10 +1557,10 @@
   ],
   "difficulty": 1663,
   "qa": {
-    "coverage_by_level": { "A1": 0.5412, "A2": 0.6125, "B1": 0.7695, "B2": 0.8263, "C1": 0.8831, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5423, "A2": 0.6269, "B1": 0.7873, "B2": 0.8396, "C1": 0.8942, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 23.2,
     "flesch_reading_ease": 54.3,
-    "checked_at": "2026-10-18T22:29:27.861Z"
+    "checked_at": "2026-10-19T08:13:23.410Z"
   }
 }

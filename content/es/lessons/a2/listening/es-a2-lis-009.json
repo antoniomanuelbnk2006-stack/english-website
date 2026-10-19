@@ -1,0 +1,400 @@
+{
+  "id": "es-a2-lis-009",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u03",
+  "series": "es-a2-u03-ropa",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "En la tienda de ropa",
+  "summary_es": {
+    "en": "A customer tries on a jacket and asks about the size and the price.",
+    "fr": "Une cliente essaie une veste et demande la taille et le prix.",
+    "zh": "一位顾客试穿夹克，询问尺码和价格。",
+    "ja": "客が上着を試着し、サイズと値段をたずねます。"
+  },
+  "topic": "money",
+  "tags": ["ropa", "compras", "talla"],
+  "can_do": ["L-A2-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["chaqueta", "talla", "probador", "precio"],
+  "est_minutes": 6,
+  "prediction_prompt": "Quieres comprar una chaqueta. ¿Qué preguntas haces?",
+  "pre_teach": ["probador", "talla"],
+  "speakers": [
+    { "id": "carla", "name": "Carla", "accent": "es-ES", "gender": "female" },
+    { "id": "dani", "name": "Daniel", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 110,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "dani",
+      "text": "Hola, buenas tardes. ¿Puedo ayudarle?",
+      "tokens": [
+        { "t": "Hola", "l": "hola", "p": "INTJ", "w": false, "s": 0.033, "e": 0.373 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.373, "e": 0.849 },
+        { "t": "tardes", "l": "tarde", "p": "NOUN", "w": true, "s": 0.848, "e": 1.324 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Puedo", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 1.324, "e": 1.732 },
+        { "t": "ayudarle", "l": "ayudar", "p": "VERB", "w": true, "s": 1.732, "e": 2.343 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.434
+    },
+    {
+      "id": "s2",
+      "speaker": "carla",
+      "text": "Sí, busco una chaqueta negra.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 3.154, "e": 3.379 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "busco", "l": "buscar", "p": "VERB", "w": true, "sp": true, "s": 3.379, "e": 3.829 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 3.829, "e": 4.129 },
+        { "t": "chaqueta", "l": "chaqueta", "p": "NOUN", "w": true, "sp": true, "s": 4.129, "e": 4.804 },
+        { "t": "negra", "l": "negro", "p": "ADJ", "w": true, "s": 4.804, "e": 5.254 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.134,
+      "end": 5.311
+    },
+    {
+      "id": "s3",
+      "speaker": "dani",
+      "text": "Tenemos esta, que es muy bonita.",
+      "tokens": [
+        { "t": "Tenemos", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 6.031, "e": 6.459 },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "s": 6.459, "e": 6.727 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 6.727, "e": 6.941 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 6.941, "e": 7.102 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 7.102, "e": 7.316 },
+        { "t": "bonita", "l": "bonito", "p": "ADJ", "w": true, "s": 7.316, "e": 7.691 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.011,
+      "end": 7.774
+    },
+    {
+      "id": "s4",
+      "speaker": "carla",
+      "text": "¿Tiene la talla mediana?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 8.484, "e": 8.865 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.865, "e": 9.055 },
+        { "t": "talla", "l": "talla", "p": "NOUN", "w": true, "sp": true, "s": 9.055, "e": 9.436 },
+        { "t": "mediana", "l": "mediano", "p": "ADJ", "w": true, "s": 9.436, "e": 9.944 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.474,
+      "end": 10.018
+    },
+    {
+      "id": "s5",
+      "speaker": "dani",
+      "text": "Sí, aquí está. El probador está al fondo.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 10.718, "e": 10.974 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 10.974, "e": 11.401 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "s": 11.401, "e": 11.828 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.828, "e": 12.084 },
+        { "t": "probador", "l": "probador", "p": "NOUN", "w": true, "sp": true, "s": 12.084, "e": 12.852 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 12.853, "e": 13.28 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 13.28, "e": 13.536 },
+        { "t": "fondo", "l": "fondo", "p": "NOUN", "w": true, "s": 13.536, "e": 14.048 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.718,
+      "end": 14.129
+    },
+    {
+      "id": "s6",
+      "speaker": "carla",
+      "text": "Gracias. Voy a probármela.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 14.839, "e": 15.629 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 15.859, "e": 16.155 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 16.155, "e": 16.303 },
+        { "t": "probármela", "l": "probar", "p": "VERB", "w": true, "s": 16.304, "e": 17.119 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 14.829,
+      "end": 17.181
+    },
+    {
+      "id": "s7",
+      "speaker": "carla",
+      "text": "Me queda un poco grande. ¿Tiene una más pequeña?",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 17.691, "e": 17.882 },
+        { "t": "queda", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 17.882, "e": 18.265 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 18.265, "e": 18.456 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 18.456, "e": 18.775 },
+        { "t": "grande", "l": "grande", "p": "ADJ", "w": true, "s": 18.775, "e": 19.221 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 19.531, "e": 19.864 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 19.864, "e": 20.086 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 20.086, "e": 20.308 },
+        { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true, "s": 20.307, "e": 20.751 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.681,
+      "end": 20.818
+    },
+    {
+      "id": "s8",
+      "speaker": "dani",
+      "text": "Claro, esta es la talla pequeña.",
+      "tokens": [
+        { "t": "Claro", "l": "claro", "p": "ADJ", "w": true, "s": 21.538, "e": 21.968 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 22.148, "e": 22.424 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 22.424, "e": 22.59 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 22.59, "e": 22.756 },
+        { "t": "talla", "l": "talla", "p": "NOUN", "w": true, "sp": true, "s": 22.755, "e": 23.086 },
+        { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true, "s": 23.086, "e": 23.528 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.518,
+      "end": 23.595
+    },
+    {
+      "id": "s9",
+      "speaker": "carla",
+      "text": "Perfecto, esta me queda bien. ¿Cuánto cuesta?",
+      "tokens": [
+        { "t": "Perfecto", "l": "perfecto", "p": "ADJ", "w": true, "s": 24.305, "e": 25.025 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 25.185, "e": 25.485 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 25.485, "e": 25.665 },
+        { "t": "queda", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 25.665, "e": 26.025 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 26.025, "e": 26.325 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuánto", "l": "cuánto", "p": "PRON", "w": true, "sp": true, "s": 26.595, "e": 27.115 },
+        { "t": "cuesta", "l": "costar", "p": "VERB", "w": true, "s": 27.115, "e": 27.635 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.295,
+      "end": 27.711
+    },
+    {
+      "id": "s10",
+      "speaker": "dani",
+      "text": "Cuesta cuarenta euros, pero hoy tiene descuento.",
+      "tokens": [
+        { "t": "Cuesta", "l": "costar", "p": "VERB", "w": true, "sp": true, "s": 28.431, "e": 28.751 },
+        { "t": "cuarenta", "l": "cuarenta", "p": "NUM", "w": false, "sp": true, "s": 28.751, "e": 29.163 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "s": 29.163, "e": 29.437 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 29.437, "e": 29.666 },
+        { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 29.666, "e": 29.849 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 29.849, "e": 30.123 },
+        { "t": "descuento", "l": "descuento", "p": "NOUN", "w": true, "s": 30.124, "e": 30.581 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.411,
+      "end": 30.653
+    },
+    {
+      "id": "s11",
+      "speaker": "carla",
+      "text": "Entonces la compro. ¿Puedo pagar con tarjeta?",
+      "tokens": [
+        { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true, "s": 31.363, "e": 31.988 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 31.988, "e": 32.196 },
+        { "t": "compro", "l": "comprar", "p": "VERB", "w": true, "s": 32.197, "e": 32.683 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Puedo", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 32.913, "e": 33.308 },
+        { "t": "pagar", "l": "pagar", "p": "VERB", "w": true, "sp": true, "s": 33.308, "e": 33.703 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 33.703, "e": 33.966 },
+        { "t": "tarjeta", "l": "tarjeta", "p": "NOUN", "w": true, "s": 33.966, "e": 34.493 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.353,
+      "end": 34.584
+    },
+    {
+      "id": "s12",
+      "speaker": "dani",
+      "text": "Por supuesto.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 35.306, "e": 35.558 },
+        { "t": "supuesto", "l": "supuesto", "p": "ADJ", "w": true, "s": 35.558, "e": 36.126 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.284,
+      "end": 36.203
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "talla",
+      "surface": "talla",
+      "pos": "noun",
+      "def_en": "tamaño de una prenda de ropa",
+      "def_es": { "en": "size (clothes)", "fr": "taille (vêtements)", "zh": "尺码", "ja": "サイズ" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "probador",
+      "surface": "probador",
+      "pos": "noun",
+      "def_en": "lugar de la tienda para probarse la ropa",
+      "def_es": { "en": "fitting room", "fr": "cabine d’essayage", "zh": "试衣间", "ja": "試着室" },
+      "ref": "s5"
+    },
+    {
+      "lemma": "descuento",
+      "surface": "descuento",
+      "pos": "noun",
+      "def_en": "precio más bajo de lo normal",
+      "def_es": { "en": "discount", "fr": "réduction", "zh": "折扣", "ja": "割引" },
+      "ref": "s10"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué quiere comprar la clienta?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "A jacket." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un par de zapatos de piel" },
+        { "id": "b", "text": "Una chaqueta" },
+        { "id": "c", "text": "Una camiseta blanca" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué problema tiene con la primera chaqueta?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "It is a bit big." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Es demasiado cara" },
+        { "id": "b", "text": "No le gusta el color" },
+        { "id": "c", "text": "Le queda grande" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué talla se lleva?",
+      "evidence": ["s8", "s9"],
+      "rationale_es": { "en": "The small one." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La pequeña" },
+        { "id": "b", "text": "La mediana" },
+        { "id": "c", "text": "La grande" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Hoy la chaqueta tiene descuento.",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "It has a discount today." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con un número.",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "*Cuarenta euros*." },
+      "type": "gap_fill",
+      "text": "Normalmente la chaqueta cuesta {{1}} euros.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["cuarenta", "40"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Cómo quiere pagar?",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "By card." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En efectivo" },
+        { "id": "b", "text": "Con tarjeta" },
+        { "id": "c", "text": "Por internet más tarde" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "aquí", "ayudar", "bien", "bonito", "bueno", "buscar", "chaqueta", "claro", "comprar", "con",
+    "costar", "cuánto", "descuento", "el", "entonces", "estar", "este", "euro", "fondo", "grande", "hoy", "ir",
+    "mediano", "muy", "más", "negro", "pagar", "pequeño", "perfecto", "pero", "poco", "poder", "por",
+    "probador", "probar", "que", "quedar", "ser", "supuesto", "talla", "tarde", "tarjeta", "tener", "un", "yo"
+  ],
+  "difficulty": 872,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7385, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 3.9,
+    "flesch_reading_ease": 86.3,
+    "checked_at": "2026-10-18T23:12:58.318Z"
+  },
+  "audio": {
+    "src": "audio/a2/es-a2-lis-009/v1.m4a",
+    "duration_s": 36.203,
+    "wpm": 116,
+    "provider": "piper",
+    "voices": { "carla": "sharvard-f", "dani": "davefx-m" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      0.89, 1, 0.94, 0.56, 0.98, 0.42, 0.16, 0.13, 0, 0, 0, 0.95, 0.99, 0.95, 1, 0.33, 0.01, 0, 0, 0, 0.06,
+      0.48, 0.53, 0.17, 0.65, 0.39, 1, 0.6, 0.54, 0.5, 0.71, 0.78, 0.47, 0.21, 0.19, 0.01, 0, 0, 0, 0.01, 1,
+      0.95, 0.75, 0.55, 0.76, 0.78, 0.18, 0.78, 0.49, 0.24, 0.37, 0.02, 0, 0, 0, 0, 1, 0.82, 0.73, 0.59, 0.71,
+      0.6, 0.48, 0.44, 0.33, 0.18, 0.02, 0, 0, 0, 0, 1, 0.43, 0.49, 0.41, 0.74, 0.28, 0.66, 0.01, 0.01, 0,
+      0.94, 0.73, 0.99, 0.96, 0.89, 0.7, 0.24, 1, 0.94, 0.75, 0.8, 0.24, 0.05, 0, 0, 0, 0, 0.45, 1, 0.1, 0.27,
+      0.13, 0.14, 0, 0.58, 0.73, 0.71, 0.65, 0.97, 1, 0.54, 0.32, 0.14, 0, 0, 0, 0.58, 0.57, 0.75, 0.76, 0.45,
+      1, 0.78, 0.66, 0.53, 0.22, 0.11, 0, 0.7, 1, 0.8, 0.65, 0.47, 0.6, 0.49, 0.29, 0.13, 0, 0, 0, 0, 0.29, 1,
+      0.72, 0.31, 0.81, 0.95, 1, 0.89, 0.61, 0.88, 0.95, 0.91, 0.76, 0.14, 0.02, 0, 0, 0, 0, 1, 0.73, 0.85,
+      0.5, 0.63, 0.01, 0.81, 0.85, 0.86, 0.68, 0.91, 0.61, 0.62, 0.18, 0, 1, 0.75, 0.75, 0.6, 0.53, 0.32, 0.29,
+      0.06, 0, 0, 0, 0, 0.87, 1, 0.7, 0.97, 0.8, 0.85, 0.53, 0.8, 0.95, 1, 0.87, 0.69, 0.53, 0.38, 0.25, 0.01,
+      0, 0, 0, 0.4, 0.45, 0.86, 0.74, 0.94, 1, 0.83, 0.49, 0.37, 0.26, 0, 0.8, 1, 0.86, 0.98, 0.86, 0.57, 0.65,
+      0.74, 0.36, 0.29, 0.25, 0.01, 0, 0, 0, 0, 1, 0.79, 0.89, 0.97, 0.37, 0.41
+    ]
+  }
+}

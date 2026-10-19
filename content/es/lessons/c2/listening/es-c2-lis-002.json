@@ -745,7 +745,7 @@
         { "t": "español", "l": "español", "p": "ADJ", "w": true, "sp": true, "s": 153.047, "e": 153.579 },
         { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 153.579, "e": 153.778 },
         { "t": "Estados", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 153.778, "e": 154.31 },
-        { "t": "Unidos", "l": "unidos", "p": "PROPN", "w": false, "s": 154.31, "e": 154.775 },
+        { "t": "Unidos", "l": "unir", "p": "VERB", "w": true, "s": 154.31, "e": 154.775 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
       ],
       "start": 147.065,
@@ -1269,16 +1269,16 @@
     "rey", "rincón", "río", "se", "seguir", "sentir", "ser", "siempre", "siglo", "sin", "sino", "sobrevivir",
     "social", "solo", "su", "subrayar", "surgir", "también", "tarde", "teclado", "tecnología", "temor",
     "tener", "terminar", "texto", "tiempo", "todavía", "todo", "tomate", "trabajar", "traductor",
-    "transformar", "un", "unidad", "usar", "variedad", "varios", "vasco", "venir", "verdaderamente", "vez",
-    "viajar", "visible", "vitalidad", "vocabulario", "y", "ya", "yo", "árabe", "él", "único"
+    "transformar", "un", "unidad", "unir", "usar", "variedad", "varios", "vasco", "venir", "verdaderamente",
+    "vez", "viajar", "visible", "vitalidad", "vocabulario", "y", "ya", "yo", "árabe", "él", "único"
   ],
   "difficulty": 1630,
   "qa": {
-    "coverage_by_level": { "A1": 0.5799, "A2": 0.6475, "B1": 0.7787, "B2": 0.8156, "C1": 0.8504, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5849, "A2": 0.6564, "B1": 0.7914, "B2": 0.8425, "C1": 0.8712, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 13.6,
     "flesch_reading_ease": 68,
-    "checked_at": "2026-10-18T22:29:03.857Z"
+    "checked_at": "2026-10-19T08:13:23.410Z"
   },
   "audio": {
     "src": "audio/c2/es-c2-lis-002/v1.m4a",

@@ -42,7 +42,7 @@
         { "t": "«", "l": "«", "p": "PUNCT", "w": false },
         { "t": "Mesa", "l": "mesa", "p": "NOUN", "w": true, "sp": true, "s": 2.153, "e": 2.512 },
         { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 2.512, "e": 2.727 },
-        { "t": "debate", "l": "debate", "p": "NOUN", "w": true, "s": 2.728, "e": 3.23 },
+        { "t": "debate", "l": "debatir", "p": "VERB", "w": true, "s": 2.728, "e": 3.23 },
         { "t": "»", "l": "»", "p": "PUNCT", "w": false },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
       ],
@@ -794,7 +794,7 @@
         { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 170.798, "e": 171.007 },
         { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true, "s": 171.007, "e": 171.355 },
         { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 171.355, "e": 171.773 },
-        { "t": "suelta", "l": "soltar", "p": "VERB", "w": true, "sp": true, "s": 171.772, "e": 172.259 },
+        { "t": "suelta", "l": "suelto", "p": "ADJ", "w": true, "sp": true, "s": 171.772, "e": 172.259 },
         { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 172.26, "e": 172.469 },
         { "t": "teléfono", "l": "teléfono", "p": "NOUN", "w": true, "sp": true, "s": 172.469, "e": 173.096 },
         { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 173.095, "e": 173.652 },
@@ -847,7 +847,7 @@
       "text": "Un debate que, como vemos, tiene más matices de los que parecía.",
       "tokens": [
         { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 183.843, "e": 184.045 },
-        { "t": "debate", "l": "debate", "p": "NOUN", "w": true, "sp": true, "s": 184.045, "e": 184.516 },
+        { "t": "debate", "l": "debatir", "p": "VERB", "w": true, "sp": true, "s": 184.045, "e": 184.516 },
         { "t": "que", "l": "que", "p": "SCONJ", "w": true, "s": 184.516, "e": 184.785 },
         { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
         { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 184.785, "e": 185.121 },
@@ -1190,7 +1190,7 @@
     "bienvenido", "bueno", "cada", "casa", "casi", "cenar", "centro", "chico", "claridad", "claro", "clase",
     "clave", "coincidir", "comer", "común", "con", "concreto", "conectar", "confusión", "conocer",
     "consecuencia", "consultar", "contexto", "control", "convenir", "copiar", "corregir", "creer", "criterio",
-    "cuando", "cuestión", "cultural", "cumplir", "dato", "dañar", "de", "debate", "deber", "decena", "decir",
+    "cuando", "cuestión", "cultural", "cumplir", "dato", "dañar", "de", "debatir", "deber", "decena", "decir",
     "dejar", "diccionario", "diferencia", "dificultad", "difícil", "discutir", "dispar", "distinto",
     "distraer", "dividir", "donde", "durante", "día", "educar", "ejemplo", "el", "en", "enemigo", "enseñar",
     "entender", "entonces", "entre", "escuchar", "escuela", "ese", "estar", "esto", "estudio", "evaluar",
@@ -1205,20 +1205,20 @@
     "prohibición", "prohibir", "propio", "que", "querer", "qué", "razonable", "real", "reclamar", "recreo",
     "relacionar", "rendimiento", "representar", "respuesta", "restringir", "resultado", "resultar", "riesgo",
     "sacar", "se", "secundario", "seguir", "seguridad", "sencillo", "sentarse", "ser", "servir", "si",
-    "siempre", "silencio", "sin", "sobre", "soltar", "su", "también", "tarde", "tecnología", "teléfono",
+    "siempre", "silencio", "sin", "sobre", "su", "suelto", "también", "tarde", "tecnología", "teléfono",
     "tener", "terminar", "tiempo", "todo", "tomar", "total", "totalmente", "un", "usar", "usted", "varios",
     "ver", "vida", "y", "yo", "él", "último"
   ],
-  "difficulty": 1473,
+  "difficulty": 1461,
   "qa": {
-    "coverage_by_level": { "A1": 0.5951, "A2": 0.6769, "B1": 0.8221, "B2": 0.8753, "C1": 0.9571, "C2": 1 },
+    "coverage_by_level": { "A1": 0.6053, "A2": 0.7035, "B1": 0.865, "B2": 0.9039, "C1": 0.9693, "C2": 1 },
     "off_level_lemmas": [
-      "común", "corregir", "criterio", "diccionario", "dividir", "explicación", "fingir", "internacional",
-      "margen", "matiz", "medir", "mover", "norma", "permiso", "preocupación", "seguridad", "servir"
+      "corregir", "criterio", "diccionario", "dividir", "explicación", "fingir", "margen", "matiz", "medir",
+      "mover", "norma", "permiso", "seguridad"
     ],
     "avg_sentence_words": 10.5,
     "flesch_reading_ease": 73.2,
-    "checked_at": "2026-10-18T22:11:35.202Z"
+    "checked_at": "2026-10-19T08:13:23.410Z"
   },
   "audio": {
     "src": "audio/c1/es-c1-lis-003/v1.m4a",

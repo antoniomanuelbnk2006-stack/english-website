@@ -1,0 +1,1409 @@
+{
+  "id": "es-c1-lis-006",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "unit": "es-c1-u01",
+  "series": "es-c1-u01-bulos",
+  "skill": "listening",
+  "genre": "discussion",
+  "title": "Bulos: ¿quién tiene la culpa?",
+  "summary_es": {
+    "en": "A journalist, a teacher and a software engineer debate who is responsible for the spread of fake news.",
+    "fr": "Une journaliste, un enseignant et un ingénieur débattent de la responsabilité dans la diffusion des fausses informations.",
+    "zh": "一位记者、一位教师和一位软件工程师讨论谁应为假新闻的传播负责。",
+    "ja": "記者、教師、ソフトウェア技術者が、偽情報の拡散の責任は誰にあるのかを議論します。"
+  },
+  "topic": "media",
+  "tags": ["medios", "redes sociales", "debate"],
+  "can_do": ["L-C1-01"],
+  "grammar_focus": ["es.c1.concesivas-y-finalidad"],
+  "vocab_focus": ["bulo", "difundir", "algoritmo", "verificar"],
+  "est_minutes": 12,
+  "prediction_prompt": "¿Alguna vez has compartido una noticia que luego resultó ser falsa?",
+  "pre_teach": ["bulo", "algoritmo"],
+  "speakers": [
+    { "id": "lucia", "name": "Lucía", "accent": "es-ES", "gender": "female" },
+    { "id": "andres", "name": "Andrés", "accent": "es-ES", "gender": "male" },
+    { "id": "carlos", "name": "Carlos", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 140,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "lucia",
+      "text": "Buenas tardes.",
+      "tokens": [
+        { "t": "Buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.55 },
+        { "t": "tardes", "l": "tarde", "p": "NOUN", "w": true, "s": 0.55, "e": 1.09 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.156
+    },
+    {
+      "id": "s2",
+      "speaker": "lucia",
+      "text": "Hoy debatimos sobre un problema que afecta a todos: los bulos.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 1.416, "e": 1.683 },
+        { "t": "debatimos", "l": "debatir", "p": "VERB", "w": true, "sp": true, "s": 1.683, "e": 2.35 },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 2.35, "e": 2.75 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 2.75, "e": 2.95 },
+        { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true, "s": 2.951, "e": 3.551 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 3.551, "e": 3.818 },
+        { "t": "afecta", "l": "afectar", "p": "VERB", "w": true, "sp": true, "s": 3.818, "e": 4.285 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 4.285, "e": 4.418 },
+        { "t": "todos", "l": "todo", "p": "DET", "w": true, "s": 4.418, "e": 4.818 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 4.819, "e": 5.086 },
+        { "t": "bulos", "l": "bulo", "p": "NOUN", "w": true, "s": 5.086, "e": 5.486 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.406,
+      "end": 5.58
+    },
+    {
+      "id": "s3",
+      "speaker": "lucia",
+      "text": "Me acompañan Andrés, profesor de secundaria, y Carlos, ingeniero informático.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 5.84, "e": 6.07 },
+        { "t": "acompañan", "l": "acompañar", "p": "VERB", "w": true, "sp": true, "s": 6.07, "e": 6.836 },
+        { "t": "Andrés", "l": "andrés", "p": "PROPN", "w": false, "s": 6.836, "e": 7.372 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "profesor", "l": "profesor", "p": "NOUN", "w": true, "sp": true, "s": 7.372, "e": 8.062 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 8.062, "e": 8.292 },
+        { "t": "secundaria", "l": "secundario", "p": "ADJ", "w": true, "s": 8.292, "e": 9.135 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 9.135, "e": 9.288 },
+        { "t": "Carlos", "l": "carlos", "p": "PROPN", "w": false, "s": 9.288, "e": 9.824 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ingeniero", "l": "ingeniero", "p": "NOUN", "w": true, "sp": true, "s": 9.824, "e": 10.59 },
+        { "t": "informático", "l": "informático", "p": "NOUN", "w": true, "s": 10.591, "e": 11.51 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.83,
+      "end": 11.57
+    },
+    {
+      "id": "s4",
+      "speaker": "lucia",
+      "text": "Yo trabajo como periodista desde hace quince años, y nunca había visto tantas noticias falsas como ahora.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 11.83, "e": 12.015 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 12.015, "e": 12.509 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 12.51, "e": 12.819 },
+        { "t": "periodista", "l": "periodista", "p": "NOUN", "w": true, "sp": true, "s": 12.819, "e": 13.499 },
+        { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 13.499, "e": 13.87 },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 13.869, "e": 14.178 },
+        { "t": "quince", "l": "quince", "p": "NUM", "w": false, "sp": true, "s": 14.178, "e": 14.611 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 14.611, "e": 14.92 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 15.06, "e": 15.191 },
+        { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true, "s": 15.191, "e": 15.583 },
+        { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 15.583, "e": 15.975 },
+        { "t": "visto", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 15.975, "e": 16.367 },
+        { "t": "tantas", "l": "tanto", "p": "ADV", "w": true, "sp": true, "s": 16.367, "e": 16.825 },
+        { "t": "noticias", "l": "noticia", "p": "NOUN", "w": true, "sp": true, "s": 16.825, "e": 17.413 },
+        { "t": "falsas", "l": "falso", "p": "ADJ", "w": true, "sp": true, "s": 17.413, "e": 17.871 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 17.871, "e": 18.198 },
+        { "t": "ahora", "l": "ahora", "p": "ADV", "w": true, "s": 18.198, "e": 18.59 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.82,
+      "end": 18.675
+    },
+    {
+      "id": "s5",
+      "speaker": "lucia",
+      "text": "Andrés, ¿por qué crees que se difunden tan deprisa?",
+      "tokens": [
+        { "t": "Andrés", "l": "andrés", "p": "PROPN", "w": false, "s": 18.935, "e": 19.372 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 19.372, "e": 19.622 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 19.622, "e": 19.872 },
+        { "t": "crees", "l": "creer", "p": "VERB", "w": true, "sp": true, "s": 19.872, "e": 20.247 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 20.246, "e": 20.496 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 20.496, "e": 20.683 },
+        { "t": "difunden", "l": "difundir", "p": "VERB", "w": true, "sp": true, "s": 20.684, "e": 21.246 },
+        { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true, "s": 21.246, "e": 21.496 },
+        { "t": "deprisa", "l": "deprisa", "p": "ADV", "w": true, "s": 21.495, "e": 21.995 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.925,
+      "end": 22.094
+    },
+    {
+      "id": "s6",
+      "speaker": "andres",
+      "text": "Porque apelan a las emociones.",
+      "tokens": [
+        { "t": "Porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 22.504, "e": 22.922 },
+        { "t": "apelan", "l": "apelar", "p": "VERB", "w": true, "sp": true, "s": 22.922, "e": 23.34 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 23.339, "e": 23.458 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 23.459, "e": 23.698 },
+        { "t": "emociones", "l": "emoción", "p": "NOUN", "w": true, "s": 23.697, "e": 24.294 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.494,
+      "end": 24.334
+    },
+    {
+      "id": "s7",
+      "speaker": "andres",
+      "text": "Un bulo suele provocar miedo o indignación, y cuando sentimos algo intenso compartimos sin pensar.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 24.584, "e": 24.779 },
+        { "t": "bulo", "l": "bulo", "p": "NOUN", "w": true, "sp": true, "s": 24.779, "e": 25.103 },
+        { "t": "suele", "l": "soler", "p": "VERB", "w": true, "sp": true, "s": 25.103, "e": 25.492 },
+        { "t": "provocar", "l": "provocar", "p": "VERB", "w": true, "sp": true, "s": 25.492, "e": 26.076 },
+        { "t": "miedo", "l": "miedo", "p": "NOUN", "w": true, "sp": true, "s": 26.076, "e": 26.465 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 26.466, "e": 26.596 },
+        { "t": "indignación", "l": "indignación", "p": "NOUN", "w": true, "s": 26.595, "e": 27.374 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 27.564, "e": 27.704 },
+        { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 27.704, "e": 28.193 },
+        { "t": "sentimos", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 28.192, "e": 28.82 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 28.821, "e": 29.17 },
+        { "t": "intenso", "l": "intenso", "p": "ADJ", "w": true, "sp": true, "s": 29.17, "e": 29.729 },
+        { "t": "compartimos", "l": "compartir", "p": "VERB", "w": true, "sp": true, "s": 29.728, "e": 30.566 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 30.566, "e": 30.845 },
+        { "t": "pensar", "l": "pensar", "p": "VERB", "w": true, "s": 30.845, "e": 31.334 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.584,
+      "end": 31.423
+    },
+    {
+      "id": "s8",
+      "speaker": "andres",
+      "text": "Lo veo a diario con mis alumnos.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 31.683, "e": 31.901 },
+        { "t": "veo", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 31.901, "e": 32.192 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 32.193, "e": 32.339 },
+        { "t": "diario", "l": "diario", "p": "ADJ", "w": true, "sp": true, "s": 32.338, "e": 32.848 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 32.848, "e": 33.139 },
+        { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 33.139, "e": 33.43 },
+        { "t": "alumnos", "l": "alumno", "p": "NOUN", "w": true, "s": 33.431, "e": 34.014 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.673,
+      "end": 34.071
+    },
+    {
+      "id": "s9",
+      "speaker": "andres",
+      "text": "Reciben un vídeo impactante y, antes de preguntarse quién lo ha grabado, ya lo han reenviado a todos sus grupos.",
+      "tokens": [
+        { "t": "Reciben", "l": "recibir", "p": "VERB", "w": true, "sp": true, "s": 34.351, "e": 34.986 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 34.986, "e": 35.224 },
+        { "t": "vídeo", "l": "vídeo", "p": "NOUN", "w": true, "sp": true, "s": 35.224, "e": 35.7 },
+        { "t": "impactante", "l": "impactante", "p": "ADJ", "w": true, "sp": true, "s": 35.7, "e": 36.573 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "s": 36.572, "e": 36.731 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true, "s": 37.001, "e": 37.368 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 37.368, "e": 37.552 },
+        { "t": "preguntarse", "l": "preguntar", "p": "VERB", "w": true, "sp": true, "s": 37.552, "e": 38.287 },
+        { "t": "quién", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 38.287, "e": 38.654 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 38.654, "e": 38.838 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 38.838, "e": 39.022 },
+        { "t": "grabado", "l": "grabar", "p": "VERB", "w": true, "s": 39.021, "e": 39.511 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 39.701, "e": 39.888 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 39.888, "e": 40.075 },
+        { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 40.075, "e": 40.324 },
+        { "t": "reenviado", "l": "reenviar", "p": "VERB", "w": true, "sp": true, "s": 40.324, "e": 40.947 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 40.947, "e": 41.072 },
+        { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 41.072, "e": 41.446 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 41.446, "e": 41.695 },
+        { "t": "grupos", "l": "grupo", "p": "NOUN", "w": true, "s": 41.695, "e": 42.131 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.321,
+      "end": 42.201
+    },
+    {
+      "id": "s10",
+      "speaker": "carlos",
+      "text": "Estoy de acuerdo, pero hay que añadir un factor técnico.",
+      "tokens": [
+        { "t": "Estoy", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 42.631, "e": 42.926 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 42.926, "e": 43.073 },
+        { "t": "acuerdo", "l": "acuerdo", "p": "NOUN", "w": true, "s": 43.073, "e": 43.466 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 43.466, "e": 43.711 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 43.711, "e": 43.907 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 43.907, "e": 44.103 },
+        { "t": "añadir", "l": "añadir", "p": "VERB", "w": true, "sp": true, "s": 44.104, "e": 44.448 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 44.447, "e": 44.594 },
+        { "t": "factor", "l": "factor", "p": "NOUN", "w": true, "sp": true, "s": 44.595, "e": 44.939 },
+        { "t": "técnico", "l": "técnico", "p": "ADJ", "w": true, "s": 44.938, "e": 45.331 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 42.601,
+      "end": 45.412
+    },
+    {
+      "id": "s11",
+      "speaker": "carlos",
+      "text": "Las plataformas funcionan con algoritmos que premian lo que genera más reacciones.",
+      "tokens": [
+        { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 45.695, "e": 45.931 },
+        {
+          "t": "plataformas",
+          "l": "plataforma",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 45.931,
+          "e": 46.639
+        },
+        { "t": "funcionan", "l": "funcionar", "p": "VERB", "w": true, "sp": true, "s": 46.639, "e": 47.229 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 47.23, "e": 47.466 },
+        { "t": "algoritmos", "l": "algoritmo", "p": "NOUN", "w": true, "sp": true, "s": 47.466, "e": 48.115 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 48.115, "e": 48.351 },
+        { "t": "premian", "l": "premiar", "p": "VERB", "w": true, "sp": true, "s": 48.351, "e": 48.823 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 48.823, "e": 49 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 49, "e": 49.236 },
+        { "t": "genera", "l": "generar", "p": "VERB", "w": true, "sp": true, "s": 49.236, "e": 49.649 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 49.65, "e": 49.886 },
+        { "t": "reacciones", "l": "reacción", "p": "NOUN", "w": true, "s": 49.886, "e": 50.535 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 45.662,
+      "end": 50.608
+    },
+    {
+      "id": "s12",
+      "speaker": "carlos",
+      "text": "Y, por desgracia, lo falso y lo escandaloso genera muchas más reacciones que lo verdadero.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "s": 50.888, "e": 51.888 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 52.088, "e": 52.288 },
+        { "t": "desgracia", "l": "desgracia", "p": "NOUN", "w": true, "s": 52.288, "e": 52.788 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 52.948, "e": 53.089 },
+        { "t": "falso", "l": "falso", "p": "ADJ", "w": true, "sp": true, "s": 53.089, "e": 53.372 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 53.372, "e": 53.466 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 53.466, "e": 53.607 },
+        {
+          "t": "escandaloso",
+          "l": "escandaloso",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 53.607,
+          "e": 54.172
+        },
+        { "t": "genera", "l": "generar", "p": "VERB", "w": true, "sp": true, "s": 54.172, "e": 54.502 },
+        { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 54.502, "e": 54.832 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 54.831, "e": 55.019 },
+        { "t": "reacciones", "l": "reacción", "p": "NOUN", "w": true, "sp": true, "s": 55.02, "e": 55.538 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 55.538, "e": 55.726 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 55.726, "e": 55.867 },
+        { "t": "verdadero", "l": "verdadero", "p": "ADJ", "w": true, "s": 55.867, "e": 56.338 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 50.858,
+      "end": 56.412
+    },
+    {
+      "id": "s13",
+      "speaker": "carlos",
+      "text": "Un estudio reciente mostró que las noticias falsas llegan a más gente y en menos tiempo.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 56.696, "e": 56.87 },
+        { "t": "estudio", "l": "estudiar", "p": "VERB", "w": true, "sp": true, "s": 56.87, "e": 57.335 },
+        { "t": "reciente", "l": "reciente", "p": "ADJ", "w": true, "sp": true, "s": 57.335, "e": 57.858 },
+        { "t": "mostró", "l": "mostrar", "p": "VERB", "w": true, "sp": true, "s": 57.857, "e": 58.263 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 58.264, "e": 58.496 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 58.496, "e": 58.728 },
+        { "t": "noticias", "l": "noticia", "p": "NOUN", "w": true, "sp": true, "s": 58.728, "e": 59.251 },
+        { "t": "falsas", "l": "falso", "p": "ADJ", "w": true, "sp": true, "s": 59.251, "e": 59.657 },
+        { "t": "llegan", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 59.657, "e": 60.063 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 60.064, "e": 60.18 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 60.18, "e": 60.412 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 60.412, "e": 60.76 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 60.761, "e": 60.877 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 60.877, "e": 61.051 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 61.051, "e": 61.399 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "s": 61.4, "e": 61.806 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.662,
+      "end": 61.864
+    },
+    {
+      "id": "s14",
+      "speaker": "lucia",
+      "text": "Entonces, ¿la culpa es de las plataformas?",
+      "tokens": [
+        { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true, "s": 62.274, "e": 63.017 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 63.017, "e": 63.265 },
+        { "t": "culpa", "l": "culpa", "p": "NOUN", "w": true, "sp": true, "s": 63.264, "e": 63.759 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 63.759, "e": 64.007 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 64.007, "e": 64.255 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 64.254, "e": 64.584 },
+        { "t": "plataformas", "l": "plataforma", "p": "NOUN", "w": true, "s": 64.584, "e": 65.574 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.264,
+      "end": 65.626
+    },
+    {
+      "id": "s15",
+      "speaker": "carlos",
+      "text": "En gran parte, sí.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 66.058, "e": 66.227 },
+        { "t": "gran", "l": "grande", "p": "ADJ", "w": true, "sp": true, "s": 66.227, "e": 66.509 },
+        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "s": 66.51, "e": 66.849 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "s": 66.849, "e": 67.018 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 66.026,
+      "end": 67.113
+    },
+    {
+      "id": "s16",
+      "speaker": "carlos",
+      "text": "Podrían cambiar sus algoritmos mañana mismo.",
+      "tokens": [
+        { "t": "Podrían", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 67.392, "e": 67.859 },
+        { "t": "cambiar", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 67.859, "e": 68.326 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 68.327, "e": 68.561 },
+        { "t": "algoritmos", "l": "algoritmo", "p": "NOUN", "w": true, "sp": true, "s": 68.56, "e": 69.203 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 69.203, "e": 69.612 },
+        { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "s": 69.612, "e": 69.962 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 67.363,
+      "end": 70.056
+    },
+    {
+      "id": "s17",
+      "speaker": "carlos",
+      "text": "Si no lo hacen, es porque su negocio depende de que pasemos el máximo tiempo posible conectados.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 70.306, "e": 70.474 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 70.474, "e": 70.642 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 70.642, "e": 70.81 },
+        { "t": "hacen", "l": "hacer", "p": "VERB", "w": true, "s": 70.81, "e": 71.146 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 71.596, "e": 71.776 },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 71.776, "e": 72.195 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 72.195, "e": 72.375 },
+        { "t": "negocio", "l": "negocio", "p": "NOUN", "w": true, "sp": true, "s": 72.374, "e": 72.853 },
+        { "t": "depende", "l": "depender", "p": "VERB", "w": true, "sp": true, "s": 72.853, "e": 73.332 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 73.332, "e": 73.512 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 73.512, "e": 73.752 },
+        { "t": "pasemos", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 73.752, "e": 74.231 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 74.231, "e": 74.411 },
+        { "t": "máximo", "l": "máximo", "p": "ADJ", "w": true, "sp": true, "s": 74.41, "e": 74.829 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true, "s": 74.829, "e": 75.248 },
+        { "t": "posible", "l": "posible", "p": "ADJ", "w": true, "sp": true, "s": 75.248, "e": 75.727 },
+        { "t": "conectados", "l": "conectar", "p": "VERB", "w": true, "s": 75.727, "e": 76.386 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 70.306,
+      "end": 76.474
+    },
+    {
+      "id": "s18",
+      "speaker": "andres",
+      "text": "No me parece justo echar toda la culpa a las empresas.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 76.894, "e": 77.094 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 77.094, "e": 77.294 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 77.294, "e": 77.761 },
+        { "t": "justo", "l": "justo", "p": "ADJ", "w": true, "sp": true, "s": 77.761, "e": 78.161 },
+        { "t": "echar", "l": "echar", "p": "VERB", "w": true, "sp": true, "s": 78.161, "e": 78.561 },
+        { "t": "toda", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 78.561, "e": 78.894 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 78.894, "e": 79.094 },
+        { "t": "culpa", "l": "culpa", "p": "NOUN", "w": true, "sp": true, "s": 79.094, "e": 79.494 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 79.494, "e": 79.627 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 79.627, "e": 79.894 },
+        { "t": "empresas", "l": "empresa", "p": "NOUN", "w": true, "s": 79.894, "e": 80.494 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 76.874,
+      "end": 80.549
+    },
+    {
+      "id": "s19",
+      "speaker": "andres",
+      "text": "Por mucho que cambien sus sistemas, si los ciudadanos no tienen sentido crítico, los bulos encontrarán otro camino.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 80.809, "e": 81.424 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 81.424, "e": 82.346 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 82.346, "e": 82.961 },
+        { "t": "cambien", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 82.961, "e": 84.191 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 84.191, "e": 84.806 },
+        { "t": "sistemas", "l": "sistema", "p": "NOUN", "w": true, "s": 84.806, "e": 86.189 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 86.369, "e": 86.426 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 86.426, "e": 86.502 },
+        { "t": "ciudadanos", "l": "ciudadano", "p": "NOUN", "w": true, "sp": true, "s": 86.503, "e": 86.713 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 86.713, "e": 86.77 },
+        { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 86.77, "e": 86.904 },
+        { "t": "sentido", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 86.904, "e": 87.057 },
+        { "t": "crítico", "l": "crítico", "p": "ADJ", "w": true, "s": 87.056, "e": 87.209 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 87.439, "e": 87.634 },
+        { "t": "bulos", "l": "bulo", "p": "NOUN", "w": true, "sp": true, "s": 87.634, "e": 87.927 },
+        { "t": "encontrarán", "l": "encontrar", "p": "VERB", "w": true, "sp": true, "s": 87.927, "e": 88.513 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 88.513, "e": 88.757 },
+        { "t": "camino", "l": "caminar", "p": "VERB", "w": true, "s": 88.757, "e": 89.099 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 80.799,
+      "end": 89.209
+    },
+    {
+      "id": "s20",
+      "speaker": "andres",
+      "text": "Antes de internet ya existían los rumores.",
+      "tokens": [
+        { "t": "Antes", "l": "antes", "p": "ADV", "w": true, "sp": true, "s": 89.469, "e": 89.919 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 89.919, "e": 90.144 },
+        { "t": "internet", "l": "internet", "p": "NOUN", "w": true, "sp": true, "s": 90.144, "e": 90.819 },
+        { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 90.819, "e": 91.044 },
+        { "t": "existían", "l": "existir", "p": "VERB", "w": true, "sp": true, "s": 91.044, "e": 91.719 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 91.719, "e": 92.019 },
+        { "t": "rumores", "l": "rumor", "p": "NOUN", "w": true, "s": 92.019, "e": 92.619 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 89.459,
+      "end": 92.694
+    },
+    {
+      "id": "s21",
+      "speaker": "andres",
+      "text": "Lo que ha cambiado es la velocidad.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 92.954, "e": 93.125 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 93.125, "e": 93.354 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 93.354, "e": 93.525 },
+        { "t": "cambiado", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 93.525, "e": 94.039 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 94.04, "e": 94.211 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 94.211, "e": 94.382 },
+        { "t": "velocidad", "l": "velocidad", "p": "NOUN", "w": true, "s": 94.383, "e": 94.954 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 92.944,
+      "end": 95.066
+    },
+    {
+      "id": "s22",
+      "speaker": "lucia",
+      "text": "Los periodistas también tenemos nuestra parte de responsabilidad.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 95.466, "e": 95.731 },
+        {
+          "t": "periodistas",
+          "l": "periodista",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 95.731,
+          "e": 96.525
+        },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 96.524, "e": 97.053 },
+        { "t": "tenemos", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 97.054, "e": 97.583 },
+        { "t": "nuestra", "l": "nuestro", "p": "DET", "w": true, "sp": true, "s": 97.583, "e": 98.112 },
+        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 98.112, "e": 98.509 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 98.509, "e": 98.707 },
+        { "t": "responsabilidad", "l": "responsabilidad", "p": "NOUN", "w": true, "s": 98.708, "e": 99.766 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 95.466,
+      "end": 99.862
+    },
+    {
+      "id": "s23",
+      "speaker": "lucia",
+      "text": "A veces, con la prisa por publicar antes que nadie, no verificamos lo suficiente.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 100.122, "e": 100.26 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "s": 100.26, "e": 100.673 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 100.673, "e": 100.948 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 100.948, "e": 101.155 },
+        { "t": "prisa", "l": "prisa", "p": "NOUN", "w": true, "sp": true, "s": 101.155, "e": 101.568 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 101.568, "e": 101.843 },
+        { "t": "publicar", "l": "publicar", "p": "VERB", "w": true, "sp": true, "s": 101.844, "e": 102.464 },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true, "s": 102.463, "e": 102.876 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 102.876, "e": 103.151 },
+        { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "s": 103.152, "e": 103.565 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 103.565, "e": 103.772 },
+        {
+          "t": "verificamos",
+          "l": "verificar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 103.772,
+          "e": 104.598
+        },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 104.598, "e": 104.805 },
+        { "t": "suficiente", "l": "suficiente", "p": "ADJ", "w": true, "s": 104.805, "e": 105.562 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 100.112,
+      "end": 105.621
+    },
+    {
+      "id": "s24",
+      "speaker": "lucia",
+      "text": "Y cada error nuestro alimenta la desconfianza hacia los medios.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 105.881, "e": 106.004 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 106.004, "e": 106.313 },
+        { "t": "error", "l": "error", "p": "NOUN", "w": true, "sp": true, "s": 106.313, "e": 106.683 },
+        { "t": "nuestro", "l": "nuestro", "p": "DET", "w": true, "sp": true, "s": 106.684, "e": 107.178 },
+        { "t": "alimenta", "l": "alimentar", "p": "VERB", "w": true, "sp": true, "s": 107.178, "e": 107.734 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 107.733, "e": 107.918 },
+        {
+          "t": "desconfianza",
+          "l": "desconfianza",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 107.919,
+          "e": 108.722
+        },
+        { "t": "hacia", "l": "hacia", "p": "ADP", "w": true, "sp": true, "s": 108.721, "e": 109.091 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 109.092, "e": 109.339 },
+        { "t": "medios", "l": "medio", "p": "ADJ", "w": true, "s": 109.339, "e": 109.771 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 105.871,
+      "end": 109.882
+    },
+    {
+      "id": "s25",
+      "speaker": "lucia",
+      "text": "Eso hace que la gente prefiera informarse por otras vías menos fiables.",
+      "tokens": [
+        { "t": "Eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 110.142, "e": 110.426 },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 110.426, "e": 110.781 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 110.781, "e": 111.065 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 111.065, "e": 111.278 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 111.278, "e": 111.704 },
+        { "t": "prefiera", "l": "preferir", "p": "VERB", "w": true, "sp": true, "s": 111.704, "e": 112.343 },
+        { "t": "informarse", "l": "informar", "p": "VERB", "w": true, "sp": true, "s": 112.343, "e": 113.124 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 113.123, "e": 113.407 },
+        { "t": "otras", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 113.407, "e": 113.833 },
+        { "t": "vías", "l": "vía", "p": "NOUN", "w": true, "sp": true, "s": 113.833, "e": 114.188 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 114.188, "e": 114.614 },
+        { "t": "fiables", "l": "fiable", "p": "ADJ", "w": true, "s": 114.614, "e": 115.182 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 110.132,
+      "end": 115.24
+    },
+    {
+      "id": "s26",
+      "speaker": "carlos",
+      "text": "Es un círculo vicioso.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 115.665, "e": 115.846 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 115.846, "e": 116.027 },
+        { "t": "círculo", "l": "círculo", "p": "NOUN", "w": true, "sp": true, "s": 116.028, "e": 116.512 },
+        { "t": "vicioso", "l": "vicioso", "p": "NOUN", "w": true, "s": 116.511, "e": 116.995 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 115.64,
+      "end": 117.058
+    },
+    {
+      "id": "s27",
+      "speaker": "carlos",
+      "text": "Cuanta menos confianza hay en los medios tradicionales, más espacio queda para los bulos.",
+      "tokens": [
+        { "t": "Cuanta", "l": "cuanto", "p": "DET", "w": true, "sp": true, "s": 117.328, "e": 117.678 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 117.678, "e": 117.978 },
+        { "t": "confianza", "l": "confianza", "p": "NOUN", "w": true, "sp": true, "s": 117.978, "e": 118.478 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 118.478, "e": 118.678 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 118.678, "e": 118.828 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 118.828, "e": 119.028 },
+        { "t": "medios", "l": "medio", "p": "ADJ", "w": true, "sp": true, "s": 119.028, "e": 119.378 },
+        { "t": "tradicionales", "l": "tradicional", "p": "ADJ", "w": true, "s": 119.378, "e": 120.078 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 120.428, "e": 120.628 },
+        { "t": "espacio", "l": "espacio", "p": "NOUN", "w": true, "sp": true, "s": 120.628, "e": 121.028 },
+        { "t": "queda", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 121.028, "e": 121.328 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 121.328, "e": 121.578 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 121.578, "e": 121.778 },
+        { "t": "bulos", "l": "bulo", "p": "NOUN", "w": true, "s": 121.778, "e": 122.078 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 117.308,
+      "end": 122.17
+    },
+    {
+      "id": "s28",
+      "speaker": "andres",
+      "text": "Y los jóvenes son los más expuestos.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 122.58, "e": 122.713 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 122.713, "e": 122.979 },
+        { "t": "jóvenes", "l": "joven", "p": "NOUN", "w": true, "sp": true, "s": 122.978, "e": 123.509 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 123.509, "e": 123.775 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 123.775, "e": 124.041 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 124.041, "e": 124.307 },
+        { "t": "expuestos", "l": "expuesto", "p": "ADJ", "w": true, "s": 124.306, "e": 124.97 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 122.57,
+      "end": 125.041
+    },
+    {
+      "id": "s29",
+      "speaker": "andres",
+      "text": "Muchos de mis alumnos no leen nunca un periódico; se informan solo a través de vídeos cortos.",
+      "tokens": [
+        { "t": "Muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 125.301, "e": 125.754 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 125.754, "e": 125.948 },
+        { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 125.948, "e": 126.207 },
+        { "t": "alumnos", "l": "alumno", "p": "NOUN", "w": true, "sp": true, "s": 126.207, "e": 126.725 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 126.724, "e": 126.918 },
+        { "t": "leen", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 126.918, "e": 127.241 },
+        { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true, "s": 127.242, "e": 127.63 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 127.63, "e": 127.824 },
+        { "t": "periódico", "l": "periódico", "p": "NOUN", "w": true, "s": 127.824, "e": 128.471 },
+        { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 128.661, "e": 128.868 },
+        { "t": "informan", "l": "informar", "p": "VERB", "w": true, "sp": true, "s": 128.868, "e": 129.49 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 129.49, "e": 129.835 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 129.835, "e": 129.973 },
+        { "t": "través", "l": "través", "p": "NOUN", "w": true, "sp": true, "s": 129.973, "e": 130.456 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 130.457, "e": 130.664 },
+        { "t": "vídeos", "l": "vídeo", "p": "NOUN", "w": true, "sp": true, "s": 130.664, "e": 131.147 },
+        { "t": "cortos", "l": "corto", "p": "ADJ", "w": true, "s": 131.148, "e": 131.631 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 125.291,
+      "end": 131.686
+    },
+    {
+      "id": "s30",
+      "speaker": "lucia",
+      "text": "Lo curioso es que, cuando les preguntas, la mayoría está convencida de que sabe distinguir una noticia falsa.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 132.096, "e": 132.294 },
+        { "t": "curioso", "l": "curioso", "p": "ADJ", "w": true, "sp": true, "s": 132.294, "e": 132.821 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 132.821, "e": 133.019 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "s": 133.018, "e": 133.282 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 133.282, "e": 133.743 },
+        { "t": "les", "l": "ellos", "p": "PRON", "w": true, "sp": true, "s": 133.743, "e": 134.007 },
+        { "t": "preguntas", "l": "pregunta", "p": "NOUN", "w": true, "s": 134.007, "e": 134.666 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 134.666, "e": 134.864 },
+        { "t": "mayoría", "l": "mayoría", "p": "NOUN", "w": true, "sp": true, "s": 134.863, "e": 135.39 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 135.39, "e": 135.719 },
+        { "t": "convencida", "l": "convencer", "p": "VERB", "w": true, "sp": true, "s": 135.72, "e": 136.445 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 136.445, "e": 136.643 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 136.642, "e": 136.906 },
+        { "t": "sabe", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 136.906, "e": 137.235 },
+        {
+          "t": "distinguir",
+          "l": "distinguir",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 137.235,
+          "e": 137.96
+        },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 137.96, "e": 138.224 },
+        { "t": "noticia", "l": "noticia", "p": "NOUN", "w": true, "sp": true, "s": 138.224, "e": 138.751 },
+        { "t": "falsa", "l": "falso", "p": "ADJ", "w": true, "s": 138.751, "e": 139.146 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 132.086,
+      "end": 139.221
+    },
+    {
+      "id": "s31",
+      "speaker": "andres",
+      "text": "Exacto, y esa confianza excesiva es precisamente lo que los hace vulnerables.",
+      "tokens": [
+        { "t": "Exacto", "l": "exacto", "p": "ADJ", "w": true, "s": 139.631, "e": 140.311 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 140.571, "e": 140.699 },
+        { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 140.699, "e": 140.955 },
+        { "t": "confianza", "l": "confianza", "p": "NOUN", "w": true, "sp": true, "s": 140.955, "e": 141.596 },
+        { "t": "excesiva", "l": "excesivo", "p": "ADJ", "w": true, "sp": true, "s": 141.596, "e": 142.173 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 142.172, "e": 142.364 },
+        {
+          "t": "precisamente",
+          "l": "precisamente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 142.365,
+          "e": 143.198
+        },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 143.197, "e": 143.389 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 143.39, "e": 143.646 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 143.646, "e": 143.902 },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 143.902, "e": 144.222 },
+        { "t": "vulnerables", "l": "vulnerable", "p": "ADJ", "w": true, "s": 144.222, "e": 144.991 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 139.621,
+      "end": 145.05
+    },
+    {
+      "id": "s32",
+      "speaker": "lucia",
+      "text": "¿Qué soluciones proponéis?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 145.46, "e": 145.756 },
+        { "t": "soluciones", "l": "solución", "p": "NOUN", "w": true, "sp": true, "s": 145.756, "e": 146.57 },
+        { "t": "proponéis", "l": "proponer", "p": "VERB", "w": true, "s": 146.57, "e": 147.31 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 145.45,
+      "end": 147.357
+    },
+    {
+      "id": "s33",
+      "speaker": "andres",
+      "text": "Para mí, la clave está en la educación.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 147.777, "e": 148.09 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "s": 148.09, "e": 148.278 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 148.467, "e": 148.658 },
+        { "t": "clave", "l": "clave", "p": "NOUN", "w": true, "sp": true, "s": 148.658, "e": 149.04 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 149.04, "e": 149.358 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 149.358, "e": 149.549 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 149.549, "e": 149.74 },
+        { "t": "educación", "l": "educación", "p": "NOUN", "w": true, "s": 149.74, "e": 150.377 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 147.757,
+      "end": 150.504
+    },
+    {
+      "id": "s34",
+      "speaker": "andres",
+      "text": "En mi instituto hemos creado un taller en el que los alumnos aprenden a comprobar fuentes.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 150.764, "e": 150.96 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 150.96, "e": 151.156 },
+        { "t": "instituto", "l": "instituto", "p": "NOUN", "w": true, "sp": true, "s": 151.156, "e": 151.809 },
+        { "t": "hemos", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 151.809, "e": 152.201 },
+        { "t": "creado", "l": "crear", "p": "VERB", "w": true, "sp": true, "s": 152.201, "e": 152.658 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 152.659, "e": 152.855 },
+        { "t": "taller", "l": "taller", "p": "NOUN", "w": true, "sp": true, "s": 152.855, "e": 153.312 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 153.312, "e": 153.508 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 153.508, "e": 153.704 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 153.704, "e": 153.965 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 153.965, "e": 154.226 },
+        { "t": "alumnos", "l": "alumno", "p": "NOUN", "w": true, "sp": true, "s": 154.227, "e": 154.75 },
+        { "t": "aprenden", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 154.749, "e": 155.337 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 155.337, "e": 155.468 },
+        { "t": "comprobar", "l": "comprobar", "p": "VERB", "w": true, "sp": true, "s": 155.468, "e": 156.121 },
+        { "t": "fuentes", "l": "fuente", "p": "NOUN", "w": true, "s": 156.121, "e": 156.644 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 150.754,
+      "end": 156.697
+    },
+    {
+      "id": "s35",
+      "speaker": "andres",
+      "text": "Les enseñamos a buscar una imagen en internet para ver si es antigua, o a leer más allá del titular.",
+      "tokens": [
+        { "t": "Les", "l": "ellos", "p": "PRON", "w": true, "sp": true, "s": 156.957, "e": 157.233 },
+        { "t": "enseñamos", "l": "enseñar", "p": "VERB", "w": true, "sp": true, "s": 157.233, "e": 157.923 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 157.923, "e": 158.061 },
+        { "t": "buscar", "l": "buscar", "p": "VERB", "w": true, "sp": true, "s": 158.061, "e": 158.544 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 158.544, "e": 158.82 },
+        { "t": "imagen", "l": "imagen", "p": "NOUN", "w": true, "sp": true, "s": 158.82, "e": 159.303 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 159.303, "e": 159.51 },
+        { "t": "internet", "l": "internet", "p": "NOUN", "w": true, "sp": true, "s": 159.509, "e": 160.13 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 160.13, "e": 160.475 },
+        { "t": "ver", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 160.475, "e": 160.751 },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 160.751, "e": 160.958 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 160.958, "e": 161.165 },
+        { "t": "antigua", "l": "antiguo", "p": "ADJ", "w": true, "s": 161.165, "e": 161.717 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 161.867, "e": 161.984 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 161.984, "e": 162.101 },
+        { "t": "leer", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 162.102, "e": 162.395 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 162.395, "e": 162.63 },
+        { "t": "allá", "l": "allí", "p": "ADV", "w": true, "sp": true, "s": 162.63, "e": 162.923 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 162.923, "e": 163.158 },
+        { "t": "titular", "l": "titular", "p": "NOUN", "w": true, "s": 163.158, "e": 163.627 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 156.947,
+      "end": 163.78
+    },
+    {
+      "id": "s36",
+      "speaker": "andres",
+      "text": "Al principio se aburren, pero luego les encanta descubrir engaños.",
+      "tokens": [
+        { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 164.04, "e": 164.224 },
+        { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "sp": true, "s": 164.224, "e": 164.837 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 164.836, "e": 165.02 },
+        { "t": "aburren", "l": "aburrir", "p": "VERB", "w": true, "s": 165.02, "e": 165.51 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 165.72, "e": 166.041 },
+        { "t": "luego", "l": "luego", "p": "ADV", "w": true, "sp": true, "s": 166.041, "e": 166.426 },
+        { "t": "les", "l": "ellos", "p": "PRON", "w": true, "sp": true, "s": 166.426, "e": 166.683 },
+        { "t": "encanta", "l": "encantar", "p": "VERB", "w": true, "sp": true, "s": 166.682, "e": 167.195 },
+        { "t": "descubrir", "l": "descubrir", "p": "VERB", "w": true, "sp": true, "s": 167.195, "e": 167.836 },
+        { "t": "engaños", "l": "engaño", "p": "NOUN", "w": true, "s": 167.837, "e": 168.35 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 164.03,
+      "end": 168.399
+    },
+    {
+      "id": "s37",
+      "speaker": "carlos",
+      "text": "Me parece fundamental, aunque no basta.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 168.835, "e": 169.019 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 169.019, "e": 169.449 },
+        { "t": "fundamental", "l": "fundamental", "p": "ADJ", "w": true, "s": 169.449, "e": 170.185 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true, "s": 170.355, "e": 170.784 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 170.784, "e": 170.968 },
+        { "t": "basta", "l": "bastar", "p": "VERB", "w": true, "s": 170.968, "e": 171.336 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 168.799,
+      "end": 171.4
+    },
+    {
+      "id": "s38",
+      "speaker": "carlos",
+      "text": "También haría falta una regulación que obligue a las plataformas a ser transparentes con sus algoritmos.",
+      "tokens": [
+        { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 171.65, "e": 172.142 },
+        { "t": "haría", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 172.142, "e": 172.511 },
+        { "t": "falta", "l": "falta", "p": "NOUN", "w": true, "sp": true, "s": 172.512, "e": 172.881 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 172.881, "e": 173.127 },
+        {
+          "t": "regulación",
+          "l": "regulación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 173.127,
+          "e": 173.804
+        },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 173.804, "e": 174.05 },
+        { "t": "obligue", "l": "obligar", "p": "VERB", "w": true, "sp": true, "s": 174.05, "e": 174.542 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 174.542, "e": 174.665 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 174.665, "e": 174.911 },
+        {
+          "t": "plataformas",
+          "l": "plataforma",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 174.912,
+          "e": 175.65
+        },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 175.65, "e": 175.773 },
+        { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 175.773, "e": 176.019 },
+        {
+          "t": "transparentes",
+          "l": "transparente",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 176.019,
+          "e": 176.881
+        },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 176.881, "e": 177.127 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 177.127, "e": 177.373 },
+        { "t": "algoritmos", "l": "algoritmo", "p": "NOUN", "w": true, "s": 177.373, "e": 178.05 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 171.65,
+      "end": 178.12
+    },
+    {
+      "id": "s39",
+      "speaker": "carlos",
+      "text": "Ahora mismo nadie sabe con exactitud por qué vemos unos contenidos y no otros.",
+      "tokens": [
+        { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 178.37, "e": 178.732 },
+        { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "sp": true, "s": 178.732, "e": 179.094 },
+        { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 179.095, "e": 179.457 },
+        { "t": "sabe", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 179.457, "e": 179.759 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 179.759, "e": 180.001 },
+        { "t": "exactitud", "l": "exactitud", "p": "NOUN", "w": true, "sp": true, "s": 180, "e": 180.604 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 180.604, "e": 180.846 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 180.846, "e": 181.088 },
+        { "t": "vemos", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 181.087, "e": 181.449 },
+        { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true, "s": 181.45, "e": 181.752 },
+        {
+          "t": "contenidos",
+          "l": "contenido",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 181.752,
+          "e": 182.416
+        },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 182.416, "e": 182.537 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 182.537, "e": 182.718 },
+        { "t": "otros", "l": "otro", "p": "DET", "w": true, "s": 182.718, "e": 183.08 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 178.37,
+      "end": 183.164
+    },
+    {
+      "id": "s40",
+      "speaker": "lucia",
+      "text": "Hay quien teme que esa regulación acabe limitando la libertad de expresión.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 183.574, "e": 183.825 },
+        { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true, "s": 183.825, "e": 184.202 },
+        { "t": "teme", "l": "temer", "p": "VERB", "w": true, "sp": true, "s": 184.202, "e": 184.516 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 184.516, "e": 184.767 },
+        { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 184.767, "e": 185.018 },
+        {
+          "t": "regulación",
+          "l": "regulación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 185.018,
+          "e": 185.709
+        },
+        { "t": "acabe", "l": "acabar", "p": "VERB", "w": true, "sp": true, "s": 185.709, "e": 186.086 },
+        { "t": "limitando", "l": "limitar", "p": "VERB", "w": true, "sp": true, "s": 186.086, "e": 186.714 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 186.714, "e": 186.902 },
+        { "t": "libertad", "l": "libertad", "p": "NOUN", "w": true, "sp": true, "s": 186.902, "e": 187.467 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 187.468, "e": 187.656 },
+        { "t": "expresión", "l": "expresión", "p": "NOUN", "w": true, "s": 187.656, "e": 188.284 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 183.564,
+      "end": 188.382
+    },
+    {
+      "id": "s41",
+      "speaker": "carlos",
+      "text": "Es un riesgo real, por eso no defiendo que los gobiernos decidan qué es verdad.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 188.811, "e": 189.004 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 189.004, "e": 189.197 },
+        { "t": "riesgo", "l": "riesgo", "p": "NOUN", "w": true, "sp": true, "s": 189.198, "e": 189.649 },
+        { "t": "real", "l": "real", "p": "ADJ", "w": true, "s": 189.649, "e": 189.971 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 190.431, "e": 190.63 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 190.63, "e": 190.829 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 190.828, "e": 190.977 },
+        { "t": "defiendo", "l": "defender", "p": "VERB", "w": true, "sp": true, "s": 190.977, "e": 191.424 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 191.424, "e": 191.623 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 191.623, "e": 191.822 },
+        { "t": "gobiernos", "l": "gobierno", "p": "NOUN", "w": true, "sp": true, "s": 191.822, "e": 192.319 },
+        { "t": "decidan", "l": "decidir", "p": "VERB", "w": true, "sp": true, "s": 192.318, "e": 192.715 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 192.716, "e": 192.915 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 192.914, "e": 193.063 },
+        { "t": "verdad", "l": "verdad", "p": "NOUN", "w": true, "s": 193.063, "e": 193.411 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 188.782,
+      "end": 193.506
+    },
+    {
+      "id": "s42",
+      "speaker": "carlos",
+      "text": "Lo que pido es transparencia, no censura.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 193.776, "e": 193.943 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 193.943, "e": 194.166 },
+        { "t": "pido", "l": "pedir", "p": "VERB", "w": true, "sp": true, "s": 194.166, "e": 194.445 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 194.445, "e": 194.612 },
+        { "t": "transparencia", "l": "transparencia", "p": "NOUN", "w": true, "s": 194.612, "e": 195.393 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 195.393, "e": 195.56 },
+        { "t": "censura", "l": "censura", "p": "NOUN", "w": true, "s": 195.56, "e": 196.006 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 193.756,
+      "end": 196.078
+    },
+    {
+      "id": "s43",
+      "speaker": "andres",
+      "text": "En eso coincidimos.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 196.488, "e": 196.709 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 196.709, "e": 197.004 },
+        { "t": "coincidimos", "l": "coincidir", "p": "VERB", "w": true, "s": 197.004, "e": 197.888 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 196.478,
+      "end": 197.952
+    },
+    {
+      "id": "s44",
+      "speaker": "andres",
+      "text": "Y añadiría algo sencillo que cualquiera puede hacer: esperar diez segundos antes de compartir.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 198.222, "e": 198.34 },
+        { "t": "añadiría", "l": "añadir", "p": "VERB", "w": true, "sp": true, "s": 198.34, "e": 198.87 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 198.869, "e": 199.163 },
+        { "t": "sencillo", "l": "sencillo", "p": "ADJ", "w": true, "sp": true, "s": 199.164, "e": 199.694 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 199.693, "e": 199.928 },
+        {
+          "t": "cualquiera",
+          "l": "cualquiera",
+          "p": "PRON",
+          "w": true,
+          "sp": true,
+          "s": 199.929,
+          "e": 200.576
+        },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 200.576, "e": 200.929 },
+        { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "s": 200.929, "e": 201.282 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "esperar", "l": "esperar", "p": "VERB", "w": true, "sp": true, "s": 201.542, "e": 202.09 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true, "s": 202.09, "e": 202.433 },
+        { "t": "segundos", "l": "segundo", "p": "NOUN", "w": true, "sp": true, "s": 202.433, "e": 203.05 },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true, "s": 203.05, "e": 203.461 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 203.461, "e": 203.667 },
+        { "t": "compartir", "l": "compartir", "p": "VERB", "w": true, "s": 203.667, "e": 204.352 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 198.202,
+      "end": 204.509
+    },
+    {
+      "id": "s45",
+      "speaker": "andres",
+      "text": "Preguntarse quién lo dice, cuándo lo dijo y por qué me llega a mí.",
+      "tokens": [
+        {
+          "t": "Preguntarse",
+          "l": "preguntar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 204.769,
+          "e": 205.498
+        },
+        { "t": "quién", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 205.498, "e": 205.863 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 205.863, "e": 206.045 },
+        { "t": "dice", "l": "decir", "p": "VERB", "w": true, "s": 206.045, "e": 206.349 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "cuándo", "l": "cuándo", "p": "ADV", "w": true, "sp": true, "s": 206.609, "e": 207.099 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 207.099, "e": 207.309 },
+        { "t": "dijo", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 207.309, "e": 207.659 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 207.659, "e": 207.799 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 207.799, "e": 208.079 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 208.079, "e": 208.359 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 208.359, "e": 208.569 },
+        { "t": "llega", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 208.569, "e": 208.989 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 208.989, "e": 209.129 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "s": 209.129, "e": 209.339 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 204.759,
+      "end": 209.456
+    },
+    {
+      "id": "s46",
+      "speaker": "andres",
+      "text": "Parece poco, pero evitaría muchos disgustos.",
+      "tokens": [
+        { "t": "Parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 209.716, "e": 210.241 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "s": 210.241, "e": 210.616 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 210.856, "e": 211.183 },
+        { "t": "evitaría", "l": "evitar", "p": "VERB", "w": true, "sp": true, "s": 211.183, "e": 211.772 },
+        { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 211.773, "e": 212.231 },
+        { "t": "disgustos", "l": "disgusto", "p": "NOUN", "w": true, "s": 212.231, "e": 212.886 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 209.706,
+      "end": 212.943
+    },
+    {
+      "id": "s47",
+      "speaker": "lucia",
+      "text": "Diez segundos de reflexión.",
+      "tokens": [
+        { "t": "Diez", "l": "diez", "p": "NUM", "w": false, "sp": true, "s": 213.353, "e": 213.734 },
+        { "t": "segundos", "l": "segundo", "p": "NOUN", "w": true, "sp": true, "s": 213.734, "e": 214.421 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 214.421, "e": 214.65 },
+        { "t": "reflexión", "l": "reflexión", "p": "NOUN", "w": true, "s": 214.65, "e": 215.413 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 213.343,
+      "end": 215.476
+    },
+    {
+      "id": "s48",
+      "speaker": "lucia",
+      "text": "Me parece un buen consejo para cerrar el debate.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 215.736, "e": 215.92 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 215.92, "e": 216.35 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 216.351, "e": 216.535 },
+        { "t": "buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 216.535, "e": 216.842 },
+        { "t": "consejo", "l": "consejo", "p": "NOUN", "w": true, "sp": true, "s": 216.842, "e": 217.334 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 217.334, "e": 217.641 },
+        { "t": "cerrar", "l": "cerrar", "p": "VERB", "w": true, "sp": true, "s": 217.641, "e": 218.071 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 218.071, "e": 218.255 },
+        { "t": "debate", "l": "debatir", "p": "VERB", "w": true, "s": 218.256, "e": 218.686 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 215.726,
+      "end": 218.75
+    },
+    {
+      "id": "s49",
+      "speaker": "lucia",
+      "text": "Muchas gracias a los dos.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 219.01, "e": 219.475 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 219.475, "e": 220.006 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 220.006, "e": 220.139 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 220.139, "e": 220.405 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "s": 220.404, "e": 220.67 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 219,
+      "end": 220.746
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "bulo",
+      "surface": "bulos",
+      "pos": "noun",
+      "def_en": "noticia falsa que se difunde con algún fin",
+      "def_es": { "en": "hoax, fake news", "fr": "canular, fausse information", "zh": "谣言", "ja": "デマ" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "algoritmo",
+      "surface": "algoritmos",
+      "pos": "noun",
+      "def_en": "conjunto de reglas que sigue un programa",
+      "def_es": { "en": "algorithm", "fr": "algorithme", "zh": "算法", "ja": "アルゴリズム" },
+      "ref": "s11"
+    },
+    {
+      "lemma": "círculo vicioso",
+      "surface": "círculo vicioso",
+      "pos": "phrase",
+      "def_en": "situación en la que un problema produce otro que agrava el primero",
+      "def_es": { "en": "vicious circle", "fr": "cercle vicieux", "zh": "恶性循环", "ja": "悪循環" },
+      "ref": "s26"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Cuál es el tema principal del debate?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "Who is responsible for fake news." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cómo se forman hoy los periodistas en las universidades" },
+        { "id": "b", "text": "Quién es responsable de que circulen noticias falsas" },
+        { "id": "c", "text": "Qué aplicaciones usan más los adolescentes españoles" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué se difunden los bulos tan rápido, según Andrés?",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "They appeal to emotions." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque los escriben expertos en tecnología" },
+        { "id": "b", "text": "Porque los medios tradicionales los publican" },
+        { "id": "c", "text": "Porque despiertan sentimientos fuertes" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué critica Carlos de las plataformas?",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "Their algorithms reward what gets reactions." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que dan prioridad a lo que provoca reacciones" },
+        { "id": "b", "text": "Que cobran demasiado dinero a los usuarios por usarlas" },
+        { "id": "c", "text": "Que prohíben compartir vídeos largos" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Qué piensa Andrés sobre culpar solo a las empresas?",
+      "evidence": ["s18"],
+      "rationale_es": { "en": "Unfair: citizens also lack critical thinking." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que es la única explicación posible del problema" },
+        { "id": "b", "text": "Que es injusto, porque falta espíritu crítico" },
+        { "id": "c", "text": "Que los gobiernos deben cerrarlas" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Lucía reconoce que los periodistas también cometen errores por las prisas.",
+      "evidence": ["s23"],
+      "rationale_es": { "en": "She admits journalists rush." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué aprenden los alumnos en el taller de Andrés?",
+      "evidence": ["s34"],
+      "rationale_es": { "en": "To check sources." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "A escribir titulares que llamen la atención" },
+        { "id": "b", "text": "A programar sus propias aplicaciones" },
+        { "id": "c", "text": "A comprobar de dónde viene una información" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué matiza Carlos sobre la regulación?",
+      "evidence": ["s42"],
+      "rationale_es": { "en": "Transparency, not censorship." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Pide claridad, no control de los contenidos" },
+        { "id": "b", "text": "Quiere que el Estado decida qué es cierto y qué no" },
+        { "id": "c", "text": "Cree que no serviría para nada" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q8",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s44"],
+      "rationale_es": { "en": "*Diez segundos*." },
+      "type": "gap_fill",
+      "text": "Andrés propone esperar diez {{1}} antes de compartir.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["segundos"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "aburrir", "acabar", "acompañar", "acuerdo", "afectar", "ahora", "algo", "algoritmo", "alimentar",
+    "allí", "alumno", "antes", "antiguo", "apelar", "aprender", "aunque", "añadir", "año", "bastar", "bueno",
+    "bulo", "buscar", "cada", "cambiar", "caminar", "censura", "cerrar", "ciudadano", "clave", "coincidir",
+    "comer", "compartir", "comprobar", "con", "conectar", "confianza", "consejo", "contenido", "convencer",
+    "corto", "crear", "creer", "crítico", "cualquiera", "cuando", "cuanto", "culpa", "curioso", "cuándo",
+    "círculo", "de", "debatir", "decidir", "decir", "defender", "depender", "deprisa", "desconfianza",
+    "descubrir", "desde", "desgracia", "diario", "difundir", "disgusto", "distinguir", "echar", "educación",
+    "el", "ellos", "emoción", "empresa", "en", "encantar", "encontrar", "engaño", "enseñar", "entonces",
+    "error", "escandaloso", "ese", "espacio", "esperar", "estar", "esto", "estudiar", "evitar", "exactitud",
+    "exacto", "excesivo", "existir", "expresión", "expuesto", "factor", "falso", "falta", "fiable", "fuente",
+    "funcionar", "fundamental", "generar", "gente", "gobierno", "grabar", "grande", "grupo", "haber", "hacer",
+    "hacia", "hoy", "imagen", "impactante", "indignación", "informar", "informático", "ingeniero", "instituto",
+    "intenso", "internet", "joven", "justo", "leer", "libertad", "limitar", "llegar", "luego", "mayoría",
+    "mañana", "medio", "menos", "mi", "miedo", "mismo", "mostrar", "mucho", "más", "máximo", "negocio", "no",
+    "noticia", "nuestro", "nunca", "o", "obligar", "otro", "para", "parecer", "parte", "pasar", "pedir",
+    "pensar", "periodista", "periódico", "pero", "plataforma", "poco", "poder", "por", "porque", "posible",
+    "precisamente", "preferir", "pregunta", "preguntar", "premiar", "principio", "prisa", "problema",
+    "profesor", "proponer", "provocar", "publicar", "que", "quedar", "quien", "qué", "reacción", "real",
+    "recibir", "reciente", "reenviar", "reflexión", "regulación", "responsabilidad", "riesgo", "rumor",
+    "saber", "se", "secundario", "segundo", "sencillo", "sentir", "ser", "si", "sin", "sistema", "sobre",
+    "soler", "solo", "solución", "su", "suficiente", "taller", "también", "tan", "tanto", "tarde", "temer",
+    "tener", "tiempo", "titular", "todo", "trabajar", "tradicional", "transparencia", "transparente", "través",
+    "técnico", "un", "velocidad", "ver", "verdad", "verdadero", "verificar", "vez", "vicioso", "vulnerable",
+    "vía", "vídeo", "y", "ya", "yo", "él"
+  ],
+  "difficulty": 1449,
+  "qa": {
+    "coverage_by_level": { "A1": 0.5981, "A2": 0.7165, "B1": 0.8854, "B2": 0.9184, "C1": 0.9806, "C2": 1 },
+    "off_level_lemmas": [
+      "alimentar", "círculo", "desconfianza", "difundir", "expresión", "ingeniero", "premiar", "reflexión",
+      "verdadero", "vicioso"
+    ],
+    "avg_sentence_words": 10.7,
+    "flesch_reading_ease": 76,
+    "checked_at": "2026-10-19T07:48:30.244Z"
+  },
+  "audio": {
+    "src": "audio/c1/es-c1-lis-006/v1.m4a",
+    "duration_s": 220.746,
+    "wpm": 142,
+    "provider": "piper",
+    "voices": { "lucia": "sharvard-f", "andres": "sharvard-m", "carlos": "davefx-m" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      1, 1, 0.76, 0.84, 0.75, 0.55, 0.89, 1, 0.75, 0.94, 0.72, 0.99, 0.71, 1, 0.67, 0.58, 0.77, 0.85, 0.92,
+      0.64, 0.96, 0.93, 1, 0.98, 1, 0.73, 0.68, 0.77, 1, 0.54, 0.75, 0.73, 0.69, 0.65, 1, 0.91, 0.64, 0.66,
+      0.78, 0.84, 0.75, 0.83, 0.96, 1, 0.86, 0.39, 1, 1, 0.95, 1, 0.97, 0.96, 0.98, 0.89, 0.92, 0.98, 0.97, 1,
+      1, 0.98, 0.99, 0.88, 0.91, 0.94, 1, 0.93, 0.91, 0.66, 1, 0.67, 0.8, 0.83, 1, 0.98, 1, 0.94, 1, 0.86,
+      0.98, 0.86, 0.94, 0.87, 0.89, 0.93, 0.87, 0.95, 1, 1, 0.93, 0.62, 0.44, 0.8, 0.57, 0.73, 0.82, 0.86,
+      0.73, 1, 0.77, 0.66, 0.42, 1, 0.88, 0.73, 0.9, 0.99, 1, 0.92, 0.86, 0.88, 0.66, 1, 0.75, 0.75, 0.42, 1,
+      0.92, 0.95, 0.65, 0.71, 0.91, 1, 0.73, 0.88, 0.76, 0.95, 1, 0.91, 1, 0.86, 0.57, 0.99, 0.71, 1, 1, 0.59,
+      0.67, 0.8, 0.77, 0.68, 1, 0.84, 0.69, 0.69, 0.81, 0.81, 0.87, 1, 0.93, 0.8, 0.78, 0.5, 1, 0.7, 0.58,
+      0.71, 0.71, 0.88, 1, 0.88, 0.98, 1, 0.71, 0.53, 0.66, 0.74, 0.87, 0.52, 0.71, 1, 0.77, 0.73, 0.97, 0.72,
+      0.88, 0.72, 1, 0.72, 0.87, 0.66, 1, 0.58, 0.88, 1, 0.96, 0.98, 0.98, 1, 0.86, 0.98, 0.93, 0.93, 0.83,
+      0.94, 1, 0.99, 0.99, 0.76, 0.9, 0.77, 0.71, 0.87, 1, 0.81, 0.55, 0.97, 0.95, 1, 0.99, 0.94, 1, 0.93,
+      0.96, 0.85, 1, 0.76, 0.85, 0.8, 0.78, 1, 0.75, 0.63, 0.76, 0.69, 0.85, 0.61, 0.76, 1, 1, 0.62, 0.62,
+      0.22, 1, 0.73, 1, 0.71, 0.82, 0.81, 1, 0.57
+    ]
+  }
+}

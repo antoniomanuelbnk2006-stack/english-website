@@ -1,0 +1,1341 @@
+{
+  "id": "es-c1-lis-008",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "unit": "es-c1-u02",
+  "series": "es-c1-u02-humor",
+  "skill": "listening",
+  "genre": "lecture",
+  "title": "El humor entre culturas",
+  "summary_es": {
+    "en": "A lecturer explains why humour is so hard to translate and what it reveals about each culture.",
+    "fr": "Un conférencier explique pourquoi l’humour est si difficile à traduire et ce qu’il révèle de chaque culture.",
+    "zh": "一位讲师解释为什么幽默如此难以翻译，以及它揭示了每种文化的什么特点。",
+    "ja": "講師が、ユーモアの翻訳がなぜ難しいのか、そしてそれが各文化について何を示すのかを説明します。"
+  },
+  "topic": "culture",
+  "tags": ["cultura", "lengua", "humor"],
+  "can_do": ["L-C1-03"],
+  "grammar_focus": [],
+  "vocab_focus": ["ironía", "juego de palabras", "malentendido", "tabú"],
+  "est_minutes": 12,
+  "prediction_prompt": "¿Has entendido alguna vez un chiste en otro idioma? ¿Qué fue lo más difícil?",
+  "pre_teach": ["ironía", "juego de palabras"],
+  "speakers": [
+    { "id": "ortiz", "name": "Profesor Ortiz", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 140,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "ortiz",
+      "text": "Buenas tardes.",
+      "tokens": [
+        { "t": "Buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.02, "e": 0.505 },
+        { "t": "tardes", "l": "tarde", "p": "NOUN", "w": true, "s": 0.505, "e": 0.99 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.06
+    },
+    {
+      "id": "s2",
+      "speaker": "ortiz",
+      "text": "Hoy quiero empezar con una pregunta.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 1.34, "e": 1.578 },
+        { "t": "quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 1.578, "e": 1.994 },
+        { "t": "empezar", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 1.994, "e": 2.47 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 2.469, "e": 2.707 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 2.707, "e": 2.945 },
+        { "t": "pregunta", "l": "pregunta", "p": "NOUN", "w": true, "s": 2.945, "e": 3.48 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.31,
+      "end": 3.557
+    },
+    {
+      "id": "s3",
+      "speaker": "ortiz",
+      "text": "¿Qué es lo último que se aprende en un idioma extranjero?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 3.817, "e": 4.009 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 4.009, "e": 4.153 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 4.153, "e": 4.297 },
+        { "t": "último", "l": "último", "p": "ADJ", "w": true, "sp": true, "s": 4.297, "e": 4.633 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 4.634, "e": 4.826 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 4.826, "e": 4.97 },
+        { "t": "aprende", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 4.97, "e": 5.354 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 5.354, "e": 5.498 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 5.498, "e": 5.642 },
+        { "t": "idioma", "l": "idioma", "p": "NOUN", "w": true, "sp": true, "s": 5.642, "e": 5.978 },
+        { "t": "extranjero", "l": "extranjero", "p": "ADJ", "w": true, "s": 5.979, "e": 6.507 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.807,
+      "end": 6.572
+    },
+    {
+      "id": "s4",
+      "speaker": "ortiz",
+      "text": "Muchos de ustedes dirían que el subjuntivo.",
+      "tokens": [
+        { "t": "Muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 6.853, "e": 7.26 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 7.26, "e": 7.434 },
+        { "t": "ustedes", "l": "usted", "p": "PRON", "w": true, "sp": true, "s": 7.434, "e": 7.899 },
+        { "t": "dirían", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 7.9, "e": 8.307 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 8.306, "e": 8.539 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.539, "e": 8.713 },
+        { "t": "subjuntivo", "l": "subjuntivo", "p": "NOUN", "w": true, "s": 8.713, "e": 9.353 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.822,
+      "end": 9.43
+    },
+    {
+      "id": "s5",
+      "speaker": "ortiz",
+      "text": "Yo creo que es el humor.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 9.68, "e": 9.905 },
+        { "t": "creo", "l": "creer", "p": "VERB", "w": true, "sp": true, "s": 9.905, "e": 10.28 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 10.28, "e": 10.58 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 10.58, "e": 10.805 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 10.805, "e": 11.03 },
+        { "t": "humor", "l": "humor", "p": "NOUN", "w": true, "s": 11.03, "e": 11.48 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.68,
+      "end": 11.594
+    },
+    {
+      "id": "s6",
+      "speaker": "ortiz",
+      "text": "Pueden pasar años viviendo en otro país y hablando con soltura.",
+      "tokens": [
+        { "t": "Pueden", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 11.879, "e": 12.323 },
+        { "t": "pasar", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 12.323, "e": 12.704 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 12.704, "e": 13.021 },
+        { "t": "viviendo", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 13.022, "e": 13.593 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 13.593, "e": 13.783 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 13.784, "e": 14.101 },
+        { "t": "país", "l": "país", "p": "NOUN", "w": true, "sp": true, "s": 14.101, "e": 14.418 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 14.419, "e": 14.546 },
+        { "t": "hablando", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 14.546, "e": 15.117 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 15.117, "e": 15.371 },
+        { "t": "soltura", "l": "soltura", "p": "NOUN", "w": true, "s": 15.371, "e": 15.879 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.844,
+      "end": 15.962
+    },
+    {
+      "id": "s7",
+      "speaker": "ortiz",
+      "text": "Y, aun así, seguir sin entender por qué se ríen sus compañeros.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "s": 16.24, "e": 16.375 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aun", "l": "aun", "p": "ADV", "w": true, "sp": true, "s": 16.375, "e": 16.645 },
+        { "t": "así", "l": "así", "p": "ADV", "w": true, "s": 16.644, "e": 16.914 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "seguir", "l": "seguir", "p": "VERB", "w": true, "sp": true, "s": 16.914, "e": 17.386 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 17.385, "e": 17.655 },
+        { "t": "entender", "l": "entender", "p": "VERB", "w": true, "sp": true, "s": 17.655, "e": 18.261 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 18.261, "e": 18.531 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 18.531, "e": 18.801 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 18.8, "e": 19.002 },
+        { "t": "ríen", "l": "reír", "p": "VERB", "w": true, "sp": true, "s": 19.002, "e": 19.339 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 19.339, "e": 19.609 },
+        { "t": "compañeros", "l": "compañero", "p": "NOUN", "w": true, "s": 19.609, "e": 20.35 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.212,
+      "end": 20.432
+    },
+    {
+      "id": "s8",
+      "speaker": "ortiz",
+      "text": "¿Por qué ocurre esto?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 20.692, "e": 20.884 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 20.884, "e": 21.076 },
+        { "t": "ocurre", "l": "ocurrir", "p": "VERB", "w": true, "sp": true, "s": 21.076, "e": 21.412 },
+        { "t": "esto", "l": "esto", "p": "PRON", "w": true, "s": 21.412, "e": 21.652 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.682,
+      "end": 21.72
+    },
+    {
+      "id": "s9",
+      "speaker": "ortiz",
+      "text": "Hay, al menos, tres razones.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "s": 22, "e": 22.294 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 22.294, "e": 22.514 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "s": 22.514, "e": 22.955 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 22.955, "e": 23.322 },
+        { "t": "razones", "l": "razón", "p": "NOUN", "w": true, "s": 23.322, "e": 23.91 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.97,
+      "end": 23.983
+    },
+    {
+      "id": "s10",
+      "speaker": "ortiz",
+      "text": "La primera es lingüística.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 24.26, "e": 24.468 },
+        { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 24.468, "e": 25.022 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 25.022, "e": 25.23 },
+        { "t": "lingüística", "l": "lingüístico", "p": "ADJ", "w": true, "s": 25.229, "e": 26.06 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.233,
+      "end": 26.145
+    },
+    {
+      "id": "s11",
+      "speaker": "ortiz",
+      "text": "Gran parte del humor se basa en juegos de palabras.",
+      "tokens": [
+        { "t": "Gran", "l": "grande", "p": "ADJ", "w": true, "sp": true, "s": 26.427, "e": 26.749 },
+        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 26.749, "e": 27.135 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 27.134, "e": 27.391 },
+        { "t": "humor", "l": "humor", "p": "NOUN", "w": true, "sp": true, "s": 27.392, "e": 27.778 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 27.778, "e": 27.971 },
+        { "t": "basa", "l": "basar", "p": "VERB", "w": true, "sp": true, "s": 27.971, "e": 28.293 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 28.292, "e": 28.485 },
+        { "t": "juegos", "l": "juego", "p": "NOUN", "w": true, "sp": true, "s": 28.485, "e": 28.935 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 28.935, "e": 29.128 },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "s": 29.128, "e": 29.707 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.395,
+      "end": 29.776
+    },
+    {
+      "id": "s12",
+      "speaker": "ortiz",
+      "text": "Es decir, en palabras que tienen dos significados o que suenan igual que otras.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 30.046, "e": 30.263 },
+        { "t": "decir", "l": "decir", "p": "VERB", "w": true, "s": 30.263, "e": 30.696 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 31.196, "e": 31.382 },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 31.382, "e": 31.94 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 31.94, "e": 32.188 },
+        { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 32.188, "e": 32.622 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 32.623, "e": 32.871 },
+        {
+          "t": "significados",
+          "l": "significar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 32.871,
+          "e": 33.677
+        },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 33.677, "e": 33.801 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 33.801, "e": 34.049 },
+        { "t": "suenan", "l": "sonar", "p": "VERB", "w": true, "sp": true, "s": 34.049, "e": 34.483 },
+        { "t": "igual", "l": "igual", "p": "ADJ", "w": true, "sp": true, "s": 34.484, "e": 34.856 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 34.856, "e": 35.104 },
+        { "t": "otras", "l": "otro", "p": "DET", "w": true, "s": 35.104, "e": 35.476 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 30.026,
+      "end": 35.55
+    },
+    {
+      "id": "s13",
+      "speaker": "ortiz",
+      "text": "Estos chistes son casi imposibles de traducir, porque el doble sentido solo existe en una lengua.",
+      "tokens": [
+        { "t": "Estos", "l": "este", "p": "DET", "w": true, "sp": true, "s": 35.826, "e": 36.228 },
+        { "t": "chistes", "l": "chiste", "p": "NOUN", "w": true, "sp": true, "s": 36.228, "e": 36.764 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 36.763, "e": 37.031 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 37.031, "e": 37.366 },
+        { "t": "imposibles", "l": "imposible", "p": "ADJ", "w": true, "sp": true, "s": 37.366, "e": 38.103 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 38.103, "e": 38.304 },
+        { "t": "traducir", "l": "traducir", "p": "VERB", "w": true, "s": 38.303, "e": 38.906 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 39.526, "e": 39.952 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 39.952, "e": 40.134 },
+        { "t": "doble", "l": "doble", "p": "ADJ", "w": true, "sp": true, "s": 40.134, "e": 40.499 },
+        { "t": "sentido", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 40.499, "e": 40.985 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 40.985, "e": 41.289 },
+        { "t": "existe", "l": "existir", "p": "VERB", "w": true, "sp": true, "s": 41.289, "e": 41.715 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 41.715, "e": 41.897 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 41.897, "e": 42.14 },
+        { "t": "lengua", "l": "lengua", "p": "NOUN", "w": true, "s": 42.14, "e": 42.566 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.8,
+      "end": 42.646
+    },
+    {
+      "id": "s14",
+      "speaker": "ortiz",
+      "text": "Los traductores de cómics y de películas lo saben bien.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 42.931, "e": 43.181 },
+        { "t": "traductores", "l": "traductor", "p": "NOUN", "w": true, "sp": true, "s": 43.181, "e": 43.932 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 43.932, "e": 44.12 },
+        { "t": "cómics", "l": "cómic", "p": "NOUN", "w": true, "sp": true, "s": 44.119, "e": 44.557 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 44.557, "e": 44.682 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 44.682, "e": 44.87 },
+        { "t": "películas", "l": "película", "p": "NOUN", "w": true, "sp": true, "s": 44.87, "e": 45.495 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 45.495, "e": 45.683 },
+        { "t": "saben", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 45.683, "e": 46.058 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 46.058, "e": 46.371 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 42.897,
+      "end": 46.468
+    },
+    {
+      "id": "s15",
+      "speaker": "ortiz",
+      "text": "A menudo tienen que inventar un chiste completamente nuevo para conservar, al menos, el efecto de la escena.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 46.718, "e": 46.851 },
+        { "t": "menudo", "l": "menudo", "p": "ADJ", "w": true, "sp": true, "s": 46.851, "e": 47.317 },
+        { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 47.317, "e": 47.783 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 47.782, "e": 48.048 },
+        { "t": "inventar", "l": "inventar", "p": "VERB", "w": true, "sp": true, "s": 48.048, "e": 48.647 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 48.647, "e": 48.847 },
+        { "t": "chiste", "l": "chiste", "p": "NOUN", "w": true, "sp": true, "s": 48.846, "e": 49.312 },
+        {
+          "t": "completamente",
+          "l": "completamente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 49.312,
+          "e": 50.243
+        },
+        { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 50.243, "e": 50.642 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 50.642, "e": 50.975 },
+        { "t": "conservar", "l": "conservar", "p": "VERB", "w": true, "s": 50.975, "e": 51.64 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 51.64, "e": 51.84 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "s": 51.839, "e": 52.238 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 52.238, "e": 52.438 },
+        { "t": "efecto", "l": "efecto", "p": "NOUN", "w": true, "sp": true, "s": 52.438, "e": 52.904 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 52.903, "e": 53.103 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 53.103, "e": 53.303 },
+        { "t": "escena", "l": "escena", "p": "NOUN", "w": true, "s": 53.302, "e": 53.768 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.718,
+      "end": 53.847
+    },
+    {
+      "id": "s16",
+      "speaker": "ortiz",
+      "text": "La segunda razón es cultural.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 54.129, "e": 54.33 },
+        { "t": "segunda", "l": "segundo", "p": "NUM", "w": false, "sp": true, "s": 54.33, "e": 54.865 },
+        { "t": "razón", "l": "razón", "p": "NOUN", "w": true, "sp": true, "s": 54.865, "e": 55.266 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 55.266, "e": 55.467 },
+        { "t": "cultural", "l": "cultural", "p": "ADJ", "w": true, "s": 55.467, "e": 56.069 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 54.097,
+      "end": 56.137
+    },
+    {
+      "id": "s17",
+      "speaker": "ortiz",
+      "text": "Muchos chistes hacen referencia a personajes, programas de televisión o costumbres que todo el mundo conoce en un país.",
+      "tokens": [
+        { "t": "Muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 56.421, "e": 56.903 },
+        { "t": "chistes", "l": "chiste", "p": "NOUN", "w": true, "sp": true, "s": 56.903, "e": 57.454 },
+        { "t": "hacen", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 57.454, "e": 57.867 },
+        { "t": "referencia", "l": "referencia", "p": "NOUN", "w": true, "sp": true, "s": 57.868, "e": 58.626 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 58.625, "e": 58.763 },
+        { "t": "personajes", "l": "personaje", "p": "NOUN", "w": true, "s": 58.763, "e": 59.521 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "programas", "l": "programa", "p": "NOUN", "w": true, "sp": true, "s": 59.831, "e": 60.438 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 60.438, "e": 60.62 },
+        { "t": "televisión", "l": "televisión", "p": "NOUN", "w": true, "sp": true, "s": 60.62, "e": 61.288 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 61.287, "e": 61.408 },
+        { "t": "costumbres", "l": "costumbre", "p": "NOUN", "w": true, "sp": true, "s": 61.409, "e": 62.077 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 62.076, "e": 62.319 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 62.319, "e": 62.622 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 62.623, "e": 62.805 },
+        { "t": "mundo", "l": "mundo", "p": "NOUN", "w": true, "sp": true, "s": 62.805, "e": 63.169 },
+        { "t": "conoce", "l": "conocer", "p": "VERB", "w": true, "sp": true, "s": 63.169, "e": 63.594 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 63.593, "e": 63.775 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 63.776, "e": 63.958 },
+        { "t": "país", "l": "país", "p": "NOUN", "w": true, "s": 63.958, "e": 64.261 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.387,
+      "end": 64.344
+    },
+    {
+      "id": "s18",
+      "speaker": "ortiz",
+      "text": "Fuera de él, no significan nada.",
+      "tokens": [
+        { "t": "Fuera", "l": "fuera", "p": "ADV", "w": true, "sp": true, "s": 64.604, "e": 65.018 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 65.018, "e": 65.225 },
+        { "t": "él", "l": "él", "p": "PRON", "w": true, "s": 65.225, "e": 65.432 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 65.432, "e": 65.639 },
+        { "t": "significan", "l": "significar", "p": "VERB", "w": true, "sp": true, "s": 65.639, "e": 66.398 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 66.399, "e": 66.744 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 64.594,
+      "end": 66.827
+    },
+    {
+      "id": "s19",
+      "speaker": "ortiz",
+      "text": "Para entender una broma sobre una serie de los años noventa, hay que haber vivido allí.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 67.077, "e": 67.398 },
+        { "t": "entender", "l": "entender", "p": "VERB", "w": true, "sp": true, "s": 67.398, "e": 67.976 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 67.975, "e": 68.232 },
+        { "t": "broma", "l": "broma", "p": "NOUN", "w": true, "sp": true, "s": 68.232, "e": 68.617 },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 68.617, "e": 69.002 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 69.002, "e": 69.259 },
+        { "t": "serie", "l": "serie", "p": "NOUN", "w": true, "sp": true, "s": 69.259, "e": 69.644 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 69.644, "e": 69.837 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 69.836, "e": 70.093 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 70.093, "e": 70.414 },
+        { "t": "noventa", "l": "noventa", "p": "NUM", "w": false, "s": 70.414, "e": 70.927 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 71.367, "e": 71.579 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 71.579, "e": 71.791 },
+        { "t": "haber", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 71.792, "e": 72.11 },
+        { "t": "vivido", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 72.11, "e": 72.482 },
+        { "t": "allí", "l": "allí", "p": "ADV", "w": true, "s": 72.482, "e": 72.747 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 67.077,
+      "end": 72.834
+    },
+    {
+      "id": "s20",
+      "speaker": "ortiz",
+      "text": "El humor, en ese sentido, es una especie de contraseña: demuestra que perteneces al grupo.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 73.104, "e": 73.317 },
+        { "t": "humor", "l": "humor", "p": "NOUN", "w": true, "s": 73.317, "e": 73.744 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 73.924, "e": 74.144 },
+        { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 74.144, "e": 74.437 },
+        { "t": "sentido", "l": "sentir", "p": "VERB", "w": true, "s": 74.437, "e": 75.024 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 75.174, "e": 75.36 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 75.36, "e": 75.608 },
+        { "t": "especie", "l": "especie", "p": "NOUN", "w": true, "sp": true, "s": 75.608, "e": 76.105 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 76.105, "e": 76.291 },
+        { "t": "contraseña", "l": "contraseña", "p": "NOUN", "w": true, "s": 76.291, "e": 76.974 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "demuestra", "l": "demostrar", "p": "VERB", "w": true, "sp": true, "s": 77.184, "e": 77.787 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 77.787, "e": 78.028 },
+        { "t": "perteneces", "l": "pertenecer", "p": "VERB", "w": true, "sp": true, "s": 78.028, "e": 78.691 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 78.691, "e": 78.872 },
+        { "t": "grupo", "l": "grupo", "p": "NOUN", "w": true, "s": 78.872, "e": 79.234 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 73.084,
+      "end": 79.317
+    },
+    {
+      "id": "s21",
+      "speaker": "ortiz",
+      "text": "La tercera razón es quizá la más interesante.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 79.594, "e": 79.777 },
+        { "t": "tercera", "l": "tercero", "p": "NUM", "w": false, "sp": true, "s": 79.777, "e": 80.266 },
+        { "t": "razón", "l": "razón", "p": "NOUN", "w": true, "sp": true, "s": 80.266, "e": 80.633 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 80.633, "e": 80.816 },
+        { "t": "quizá", "l": "quizá", "p": "ADV", "w": true, "sp": true, "s": 80.816, "e": 81.183 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 81.183, "e": 81.366 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 81.366, "e": 81.61 },
+        { "t": "interesante", "l": "interesante", "p": "ADJ", "w": true, "s": 81.611, "e": 82.344 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 79.567,
+      "end": 82.419
+    },
+    {
+      "id": "s22",
+      "speaker": "ortiz",
+      "text": "Cada cultura tiene sus propias reglas sobre de qué se puede reír y cuándo.",
+      "tokens": [
+        { "t": "Cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 82.679, "e": 82.984 },
+        { "t": "cultura", "l": "cultura", "p": "NOUN", "w": true, "sp": true, "s": 82.984, "e": 83.472 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 83.471, "e": 83.837 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 83.837, "e": 84.081 },
+        { "t": "propias", "l": "propio", "p": "ADJ", "w": true, "sp": true, "s": 84.081, "e": 84.569 },
+        { "t": "reglas", "l": "regla", "p": "NOUN", "w": true, "sp": true, "s": 84.568, "e": 84.995 },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 84.995, "e": 85.361 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 85.361, "e": 85.544 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 85.543, "e": 85.787 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 85.787, "e": 85.97 },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 85.97, "e": 86.336 },
+        { "t": "reír", "l": "reír", "p": "VERB", "w": true, "sp": true, "s": 86.336, "e": 86.641 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 86.64, "e": 86.762 },
+        { "t": "cuándo", "l": "cuándo", "p": "ADV", "w": true, "s": 86.762, "e": 87.189 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 82.669,
+      "end": 87.256
+    },
+    {
+      "id": "s23",
+      "speaker": "ortiz",
+      "text": "En algunos países, la ironía es constante, incluso en el trabajo.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 87.55, "e": 87.767 },
+        { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 87.767, "e": 88.345 },
+        { "t": "países", "l": "país", "p": "NOUN", "w": true, "s": 88.344, "e": 88.85 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 89.1, "e": 89.305 },
+        { "t": "ironía", "l": "ironía", "p": "NOUN", "w": true, "sp": true, "s": 89.305, "e": 89.783 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 89.783, "e": 89.988 },
+        { "t": "constante", "l": "constante", "p": "ADJ", "w": true, "s": 89.987, "e": 90.67 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "incluso", "l": "incluso", "p": "ADV", "w": true, "sp": true, "s": 90.95, "e": 91.474 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 91.474, "e": 91.67 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 91.67, "e": 91.866 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "s": 91.866, "e": 92.39 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 87.506,
+      "end": 92.49
+    },
+    {
+      "id": "s24",
+      "speaker": "ortiz",
+      "text": "Se dice exactamente lo contrario de lo que se piensa, y se espera que el otro lo entienda.",
+      "tokens": [
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 92.74, "e": 92.935 },
+        { "t": "dice", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 92.935, "e": 93.26 },
+        {
+          "t": "exactamente",
+          "l": "exactamente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 93.259,
+          "e": 94.038
+        },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 94.038, "e": 94.233 },
+        { "t": "contrario", "l": "contrario", "p": "ADJ", "w": true, "sp": true, "s": 94.233, "e": 94.882 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 94.882, "e": 95.077 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 95.077, "e": 95.272 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 95.271, "e": 95.531 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 95.531, "e": 95.726 },
+        { "t": "piensa", "l": "pensar", "p": "VERB", "w": true, "s": 95.726, "e": 96.18 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 96.67, "e": 96.769 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 96.769, "e": 96.917 },
+        { "t": "espera", "l": "esperar", "p": "VERB", "w": true, "sp": true, "s": 96.917, "e": 97.263 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 97.263, "e": 97.461 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 97.461, "e": 97.609 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 97.609, "e": 97.856 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 97.857, "e": 98.005 },
+        { "t": "entienda", "l": "entender", "p": "VERB", "w": true, "s": 98.005, "e": 98.45 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 92.74,
+      "end": 98.519
+    },
+    {
+      "id": "s25",
+      "speaker": "ortiz",
+      "text": "Para alguien que no está acostumbrado, esto puede provocar malentendidos serios.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 98.769, "e": 99.008 },
+        { "t": "alguien", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 99.008, "e": 99.391 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 99.392, "e": 99.584 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 99.583, "e": 99.727 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 99.727, "e": 99.966 },
+        { "t": "acostumbrado", "l": "acostumbrarse", "p": "VERB", "w": true, "s": 99.966, "e": 100.589 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "esto", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 100.759, "e": 101.115 },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 101.115, "e": 101.542 },
+        { "t": "provocar", "l": "provocar", "p": "VERB", "w": true, "sp": true, "s": 101.542, "e": 102.183 },
+        {
+          "t": "malentendidos",
+          "l": "malentendido",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 102.183,
+          "e": 103.18
+        },
+        { "t": "serios", "l": "serio", "p": "ADJ", "w": true, "s": 103.18, "e": 103.679 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 98.769,
+      "end": 103.747
+    },
+    {
+      "id": "s26",
+      "speaker": "ortiz",
+      "text": "Un estudiante japonés me contó que, durante su primer mes en Madrid, creyó que su casero estaba enfadado con él.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 104.029, "e": 104.237 },
+        {
+          "t": "estudiante",
+          "l": "estudiante",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 104.237,
+          "e": 105.001
+        },
+        { "t": "japonés", "l": "japonés", "p": "ADJ", "w": true, "sp": true, "s": 105.001, "e": 105.556 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 105.556, "e": 105.764 },
+        { "t": "contó", "l": "contar", "p": "VERB", "w": true, "sp": true, "s": 105.765, "e": 106.182 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "s": 106.181, "e": 106.459 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 106.629, "e": 107.132 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 107.132, "e": 107.32 },
+        { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 107.32, "e": 107.76 },
+        { "t": "mes", "l": "mes", "p": "NOUN", "w": true, "sp": true, "s": 107.76, "e": 108.011 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 108.011, "e": 108.199 },
+        { "t": "Madrid", "l": "madrid", "p": "PROPN", "w": false, "s": 108.199, "e": 108.639 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "creyó", "l": "creer", "p": "VERB", "w": true, "sp": true, "s": 109.189, "e": 109.581 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 109.581, "e": 109.842 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 109.842, "e": 110.038 },
+        { "t": "casero", "l": "casero", "p": "NOUN", "w": true, "sp": true, "s": 110.039, "e": 110.496 },
+        { "t": "estaba", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 110.496, "e": 110.953 },
+        { "t": "enfadado", "l": "enfadado", "p": "ADJ", "w": true, "sp": true, "s": 110.953, "e": 111.541 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 111.542, "e": 111.803 },
+        { "t": "él", "l": "él", "p": "PRON", "w": true, "s": 111.803, "e": 111.999 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 103.997,
+      "end": 112.057
+    },
+    {
+      "id": "s27",
+      "speaker": "ortiz",
+      "text": "En realidad, solo le estaba tomando el pelo con cariño.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 112.337, "e": 112.552 },
+        { "t": "realidad", "l": "realidad", "p": "NOUN", "w": true, "s": 112.552, "e": 113.197 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 113.387, "e": 113.724 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 113.724, "e": 113.926 },
+        { "t": "estaba", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 113.926, "e": 114.398 },
+        { "t": "tomando", "l": "tomar", "p": "VERB", "w": true, "sp": true, "s": 114.398, "e": 114.937 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 114.937, "e": 115.139 },
+        { "t": "pelo", "l": "pelo", "p": "NOUN", "w": true, "sp": true, "s": 115.139, "e": 115.476 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 115.476, "e": 115.746 },
+        { "t": "cariño", "l": "cariño", "p": "NOUN", "w": true, "s": 115.745, "e": 116.217 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 112.307,
+      "end": 116.313
+    },
+    {
+      "id": "s28",
+      "speaker": "ortiz",
+      "text": "También cambian los temas tabú.",
+      "tokens": [
+        { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 116.563, "e": 116.968 },
+        { "t": "cambian", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 116.968, "e": 117.373 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 117.373, "e": 117.576 },
+        { "t": "temas", "l": "tema", "p": "NOUN", "w": true, "sp": true, "s": 117.576, "e": 117.88 },
+        { "t": "tabú", "l": "tabú", "p": "ADJ", "w": true, "s": 117.88, "e": 118.133 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 116.563,
+      "end": 118.217
+    },
+    {
+      "id": "s29",
+      "speaker": "ortiz",
+      "text": "En una cultura, reírse de la propia familia es normal; en otra, resulta ofensivo.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 118.506, "e": 118.739 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 118.739, "e": 119.05 },
+        { "t": "cultura", "l": "cultura", "p": "NOUN", "w": true, "s": 119.05, "e": 119.672 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "reírse", "l": "reír", "p": "VERB", "w": true, "sp": true, "s": 119.671, "e": 120.215 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 120.215, "e": 120.448 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 120.448, "e": 120.681 },
+        { "t": "propia", "l": "propio", "p": "ADJ", "w": true, "sp": true, "s": 120.681, "e": 121.225 },
+        { "t": "familia", "l": "familia", "p": "NOUN", "w": true, "sp": true, "s": 121.225, "e": 121.847 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 121.847, "e": 122.08 },
+        { "t": "normal", "l": "normal", "p": "ADJ", "w": true, "s": 122.08, "e": 122.624 },
+        { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 122.624, "e": 122.857 },
+        { "t": "otra", "l": "otro", "p": "DET", "w": true, "s": 122.857, "e": 123.245 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "resulta", "l": "resultar", "p": "VERB", "w": true, "sp": true, "s": 123.245, "e": 123.867 },
+        { "t": "ofensivo", "l": "ofensivo", "p": "ADJ", "w": true, "s": 123.867, "e": 124.566 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 118.467,
+      "end": 124.645
+    },
+    {
+      "id": "s30",
+      "speaker": "ortiz",
+      "text": "Lo mismo ocurre con la religión, la política o la muerte.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 124.925, "e": 125.12 },
+        { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "sp": true, "s": 125.12, "e": 125.51 },
+        { "t": "ocurre", "l": "ocurrir", "p": "VERB", "w": true, "sp": true, "s": 125.51, "e": 125.965 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 125.965, "e": 126.225 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 126.225, "e": 126.42 },
+        { "t": "religión", "l": "religión", "p": "NOUN", "w": true, "s": 126.42, "e": 127.005 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 127.445, "e": 127.659 },
+        { "t": "política", "l": "política", "p": "NOUN", "w": true, "sp": true, "s": 127.659, "e": 128.3 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 128.3, "e": 128.443 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 128.443, "e": 128.657 },
+        { "t": "muerte", "l": "muerte", "p": "NOUN", "w": true, "s": 128.656, "e": 129.155 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 124.895,
+      "end": 129.253
+    },
+    {
+      "id": "s31",
+      "speaker": "ortiz",
+      "text": "Ahora bien, no todo el humor depende de la lengua y la cultura.",
+      "tokens": [
+        { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 129.513, "e": 129.955 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 129.955, "e": 130.323 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 130.813, "e": 131.003 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 131.003, "e": 131.32 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 131.32, "e": 131.51 },
+        { "t": "humor", "l": "humor", "p": "NOUN", "w": true, "sp": true, "s": 131.51, "e": 131.89 },
+        { "t": "depende", "l": "depender", "p": "VERB", "w": true, "sp": true, "s": 131.89, "e": 132.397 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 132.396, "e": 132.586 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 132.586, "e": 132.776 },
+        { "t": "lengua", "l": "lengua", "p": "NOUN", "w": true, "sp": true, "s": 132.776, "e": 133.219 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 133.22, "e": 133.347 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 133.346, "e": 133.536 },
+        { "t": "cultura", "l": "cultura", "p": "NOUN", "w": true, "s": 133.536, "e": 134.043 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 129.503,
+      "end": 134.121
+    },
+    {
+      "id": "s32",
+      "speaker": "ortiz",
+      "text": "Hay situaciones que hacen reír en casi todas partes.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 134.371, "e": 134.638 },
+        {
+          "t": "situaciones",
+          "l": "situación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 134.638,
+          "e": 135.439
+        },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 135.439, "e": 135.706 },
+        { "t": "hacen", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 135.706, "e": 136.106 },
+        { "t": "reír", "l": "reír", "p": "VERB", "w": true, "sp": true, "s": 136.106, "e": 136.44 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 136.44, "e": 136.64 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 136.64, "e": 136.974 },
+        { "t": "todas", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 136.974, "e": 137.374 },
+        { "t": "partes", "l": "parte", "p": "NOUN", "w": true, "s": 137.374, "e": 137.841 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 134.371,
+      "end": 137.908
+    },
+    {
+      "id": "s33",
+      "speaker": "ortiz",
+      "text": "Por ejemplo, alguien que se resbala, un niño que imita a un adulto o un plan que sale al revés.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 138.184, "e": 138.431 },
+        { "t": "ejemplo", "l": "ejemplo", "p": "NOUN", "w": true, "s": 138.431, "e": 138.924 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "alguien", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 139.104, "e": 139.546 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 139.546, "e": 139.767 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 139.767, "e": 139.933 },
+        { "t": "resbala", "l": "resbalarse", "p": "VERB", "w": true, "s": 139.932, "e": 140.374 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 140.594, "e": 140.797 },
+        { "t": "niño", "l": "niño", "p": "NOUN", "w": true, "sp": true, "s": 140.797, "e": 141.136 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 141.136, "e": 141.407 },
+        { "t": "imita", "l": "imitar", "p": "VERB", "w": true, "sp": true, "s": 141.407, "e": 141.814 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 141.814, "e": 141.95 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 141.949, "e": 142.152 },
+        { "t": "adulto", "l": "adulto", "p": "NOUN", "w": true, "sp": true, "s": 142.152, "e": 142.626 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 142.627, "e": 142.763 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 142.762, "e": 142.965 },
+        { "t": "plan", "l": "plan", "p": "NOUN", "w": true, "sp": true, "s": 142.966, "e": 143.305 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 143.304, "e": 143.575 },
+        { "t": "sale", "l": "salir", "p": "VERB", "w": true, "sp": true, "s": 143.575, "e": 143.914 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 143.914, "e": 144.117 },
+        { "t": "revés", "l": "revés", "p": "NOUN", "w": true, "s": 144.117, "e": 144.524 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 138.158,
+      "end": 144.609
+    },
+    {
+      "id": "s34",
+      "speaker": "ortiz",
+      "text": "Por eso el cine mudo de Charles Chaplin sigue funcionando en cualquier país un siglo después.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 144.89, "e": 145.123 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 145.123, "e": 145.356 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 145.356, "e": 145.531 },
+        { "t": "cine", "l": "cine", "p": "NOUN", "w": true, "sp": true, "s": 145.531, "e": 145.822 },
+        { "t": "mudo", "l": "mudarse", "p": "VERB", "w": true, "sp": true, "s": 145.822, "e": 146.113 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 146.114, "e": 146.289 },
+        { "t": "Charles", "l": "charlar", "p": "VERB", "w": true, "sp": true, "s": 146.289, "e": 146.755 },
+        { "t": "Chaplin", "l": "chaplin", "p": "PROPN", "w": false, "sp": true, "s": 146.755, "e": 147.221 },
+        { "t": "sigue", "l": "seguir", "p": "VERB", "w": true, "sp": true, "s": 147.221, "e": 147.571 },
+        {
+          "t": "funcionando",
+          "l": "funcionar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 147.571,
+          "e": 148.27
+        },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 148.27, "e": 148.445 },
+        { "t": "cualquier", "l": "cualquier", "p": "ADJ", "w": true, "sp": true, "s": 148.445, "e": 149.028 },
+        { "t": "país", "l": "país", "p": "NOUN", "w": true, "sp": true, "s": 149.028, "e": 149.319 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 149.319, "e": 149.494 },
+        { "t": "siglo", "l": "siglo", "p": "NOUN", "w": true, "sp": true, "s": 149.494, "e": 149.844 },
+        { "t": "después", "l": "después", "p": "ADV", "w": true, "s": 149.844, "e": 150.31 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 144.859,
+      "end": 150.389
+    },
+    {
+      "id": "s35",
+      "speaker": "ortiz",
+      "text": "Sus películas no necesitan traducción, porque todo se entiende a través de los gestos y las situaciones.",
+      "tokens": [
+        { "t": "Sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 150.639, "e": 150.915 },
+        { "t": "películas", "l": "película", "p": "NOUN", "w": true, "sp": true, "s": 150.915, "e": 151.604 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 151.604, "e": 151.811 },
+        { "t": "necesitan", "l": "necesitar", "p": "VERB", "w": true, "sp": true, "s": 151.811, "e": 152.5 },
+        { "t": "traducción", "l": "traducción", "p": "NOUN", "w": true, "s": 152.501, "e": 153.259 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 153.719, "e": 154.124 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 154.124, "e": 154.413 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 154.413, "e": 154.587 },
+        { "t": "entiende", "l": "entender", "p": "VERB", "w": true, "sp": true, "s": 154.587, "e": 155.108 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 155.107, "e": 155.223 },
+        { "t": "través", "l": "través", "p": "NOUN", "w": true, "sp": true, "s": 155.223, "e": 155.628 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 155.628, "e": 155.802 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 155.801, "e": 156.032 },
+        { "t": "gestos", "l": "gesto", "p": "NOUN", "w": true, "sp": true, "s": 156.033, "e": 156.438 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 156.438, "e": 156.554 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 156.553, "e": 156.784 },
+        { "t": "situaciones", "l": "situación", "p": "NOUN", "w": true, "s": 156.785, "e": 157.479 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 150.639,
+      "end": 157.559
+    },
+    {
+      "id": "s36",
+      "speaker": "ortiz",
+      "text": "Los psicólogos explican que nos reímos ante lo inesperado, cuando algo rompe una expectativa sin causar un daño real.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 157.839, "e": 158.086 },
+        {
+          "t": "psicólogos",
+          "l": "psicólogo",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 158.086,
+          "e": 158.765
+        },
+        { "t": "explican", "l": "explicar", "p": "VERB", "w": true, "sp": true, "s": 158.765, "e": 159.321 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 159.32, "e": 159.567 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 159.567, "e": 159.814 },
+        { "t": "reímos", "l": "reír", "p": "VERB", "w": true, "sp": true, "s": 159.814, "e": 160.246 },
+        { "t": "ante", "l": "ante", "p": "ADP", "w": true, "sp": true, "s": 160.246, "e": 160.555 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 160.555, "e": 160.74 },
+        { "t": "inesperado", "l": "inesperado", "p": "ADJ", "w": true, "s": 160.74, "e": 161.419 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 161.869, "e": 162.313 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 162.313, "e": 162.63 },
+        { "t": "rompe", "l": "romper", "p": "VERB", "w": true, "sp": true, "s": 162.63, "e": 163.011 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 163.011, "e": 163.265 },
+        {
+          "t": "expectativa",
+          "l": "expectativa",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 163.265,
+          "e": 164.026
+        },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 164.026, "e": 164.28 },
+        { "t": "causar", "l": "causar", "p": "VERB", "w": true, "sp": true, "s": 164.28, "e": 164.724 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 164.724, "e": 164.914 },
+        { "t": "daño", "l": "dañar", "p": "VERB", "w": true, "sp": true, "s": 164.915, "e": 165.232 },
+        { "t": "real", "l": "real", "p": "ADJ", "w": true, "s": 165.232, "e": 165.549 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 157.809,
+      "end": 165.621
+    },
+    {
+      "id": "s37",
+      "speaker": "ortiz",
+      "text": "Esa estructura parece universal; lo que cambia es qué consideramos inesperado.",
+      "tokens": [
+        { "t": "Esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 165.911, "e": 166.177 },
+        {
+          "t": "estructura",
+          "l": "estructura",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 166.177,
+          "e": 166.909
+        },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 166.909, "e": 167.375 },
+        { "t": "universal", "l": "universal", "p": "ADJ", "w": true, "s": 167.375, "e": 168.041 },
+        { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 168.521, "e": 168.696 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 168.696, "e": 168.93 },
+        { "t": "cambia", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 168.93, "e": 169.339 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 169.339, "e": 169.514 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 169.515, "e": 169.749 },
+        {
+          "t": "consideramos",
+          "l": "considerar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 169.748,
+          "e": 170.508
+        },
+        { "t": "inesperado", "l": "inesperado", "p": "ADJ", "w": true, "s": 170.508, "e": 171.151 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 165.871,
+      "end": 171.23
+    },
+    {
+      "id": "s38",
+      "speaker": "ortiz",
+      "text": "¿Qué consecuencias tiene todo esto para quien aprende una lengua?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 171.51, "e": 171.707 },
+        {
+          "t": "consecuencias",
+          "l": "consecuencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 171.707,
+          "e": 172.396
+        },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 172.396, "e": 172.691 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 172.691, "e": 172.937 },
+        { "t": "esto", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 172.937, "e": 173.183 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 173.183, "e": 173.429 },
+        { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true, "s": 173.43, "e": 173.725 },
+        { "t": "aprende", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 173.725, "e": 174.119 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 174.119, "e": 174.316 },
+        { "t": "lengua", "l": "lengua", "p": "NOUN", "w": true, "s": 174.315, "e": 174.66 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 171.48,
+      "end": 174.749
+    },
+    {
+      "id": "s39",
+      "speaker": "ortiz",
+      "text": "Mi consejo es que no se desanimen si no entienden los chistes al principio.",
+      "tokens": [
+        { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 175.025, "e": 175.207 },
+        { "t": "consejo", "l": "consejo", "p": "NOUN", "w": true, "sp": true, "s": 175.207, "e": 175.691 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 175.691, "e": 175.873 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 175.872, "e": 176.114 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 176.115, "e": 176.297 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 176.296, "e": 176.478 },
+        {
+          "t": "desanimen",
+          "l": "desanimarse",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 176.478,
+          "e": 177.083
+        },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 177.083, "e": 177.265 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 177.265, "e": 177.447 },
+        { "t": "entienden", "l": "entender", "p": "VERB", "w": true, "sp": true, "s": 177.446, "e": 178.051 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 178.052, "e": 178.294 },
+        { "t": "chistes", "l": "chiste", "p": "NOUN", "w": true, "sp": true, "s": 178.294, "e": 178.778 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 178.778, "e": 178.96 },
+        { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "s": 178.96, "e": 179.565 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 174.999,
+      "end": 179.655
+    },
+    {
+      "id": "s40",
+      "speaker": "ortiz",
+      "text": "Es normal.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 179.915, "e": 180.143 },
+        { "t": "normal", "l": "normal", "p": "ADJ", "w": true, "s": 180.143, "e": 180.675 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 179.905,
+      "end": 180.762
+    },
+    {
+      "id": "s41",
+      "speaker": "ortiz",
+      "text": "Escuchen programas de humor y pidan que les expliquen las bromas.",
+      "tokens": [
+        { "t": "Escuchen", "l": "escuchar", "p": "VERB", "w": true, "sp": true, "s": 181.046, "e": 181.593 },
+        { "t": "programas", "l": "programa", "p": "NOUN", "w": true, "sp": true, "s": 181.593, "e": 182.201 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 182.201, "e": 182.383 },
+        { "t": "humor", "l": "humor", "p": "NOUN", "w": true, "sp": true, "s": 182.383, "e": 182.748 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 182.748, "e": 182.87 },
+        { "t": "pidan", "l": "pedir", "p": "VERB", "w": true, "sp": true, "s": 182.869, "e": 183.234 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 183.234, "e": 183.477 },
+        { "t": "les", "l": "ellos", "p": "PRON", "w": true, "sp": true, "s": 183.477, "e": 183.72 },
+        { "t": "expliquen", "l": "explicar", "p": "VERB", "w": true, "sp": true, "s": 183.72, "e": 184.328 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 184.328, "e": 184.571 },
+        { "t": "bromas", "l": "broma", "p": "NOUN", "w": true, "s": 184.571, "e": 184.996 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 181.012,
+      "end": 185.07
+    },
+    {
+      "id": "s42",
+      "speaker": "ortiz",
+      "text": "Y, sobre todo, no tengan miedo de reírse de sus propios errores.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "s": 185.354, "e": 185.488 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 185.488, "e": 185.89 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "s": 185.889, "e": 186.224 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 186.224, "e": 186.425 },
+        { "t": "tengan", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 186.425, "e": 186.894 },
+        { "t": "miedo", "l": "miedo", "p": "NOUN", "w": true, "sp": true, "s": 186.894, "e": 187.296 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 187.295, "e": 187.496 },
+        { "t": "reírse", "l": "reír", "p": "VERB", "w": true, "sp": true, "s": 187.496, "e": 187.965 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 187.964, "e": 188.165 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 188.165, "e": 188.433 },
+        { "t": "propios", "l": "propio", "p": "ADJ", "w": true, "sp": true, "s": 188.433, "e": 188.968 },
+        { "t": "errores", "l": "error", "p": "NOUN", "w": true, "s": 188.969, "e": 189.504 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 185.32,
+      "end": 189.578
+    },
+    {
+      "id": "s43",
+      "speaker": "ortiz",
+      "text": "El día que hagan reír a alguien en otro idioma, a propósito, sabrán que han dado un paso enorme.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 189.85, "e": 190.038 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 190.038, "e": 190.289 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 190.289, "e": 190.54 },
+        { "t": "hagan", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 190.539, "e": 190.915 },
+        { "t": "reír", "l": "reír", "p": "VERB", "w": true, "sp": true, "s": 190.915, "e": 191.228 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 191.229, "e": 191.354 },
+        { "t": "alguien", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 191.354, "e": 191.855 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 191.855, "e": 192.043 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 192.043, "e": 192.356 },
+        { "t": "idioma", "l": "idioma", "p": "NOUN", "w": true, "s": 192.356, "e": 192.795 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 192.795, "e": 192.92 },
+        { "t": "propósito", "l": "propósito", "p": "NOUN", "w": true, "s": 192.92, "e": 193.547 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sabrán", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 193.547, "e": 193.986 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 193.986, "e": 194.237 },
+        { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 194.236, "e": 194.487 },
+        { "t": "dado", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 194.487, "e": 194.8 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 194.8, "e": 194.988 },
+        { "t": "paso", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 194.988, "e": 195.301 },
+        { "t": "enorme", "l": "enorme", "p": "ADJ", "w": true, "s": 195.301, "e": 195.74 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 189.828,
+      "end": 195.815
+    },
+    {
+      "id": "s44",
+      "speaker": "ortiz",
+      "text": "La semana que viene analizaremos algunos ejemplos concretos de traducción de comedias.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 196.095, "e": 196.296 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true, "s": 196.296, "e": 196.766 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 196.766, "e": 197.034 },
+        { "t": "viene", "l": "venir", "p": "VERB", "w": true, "sp": true, "s": 197.034, "e": 197.437 },
+        {
+          "t": "analizaremos",
+          "l": "analizar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 197.437,
+          "e": 198.309
+        },
+        { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 198.309, "e": 198.846 },
+        { "t": "ejemplos", "l": "ejemplo", "p": "NOUN", "w": true, "sp": true, "s": 198.846, "e": 199.45 },
+        { "t": "concretos", "l": "concreto", "p": "ADJ", "w": true, "sp": true, "s": 199.45, "e": 200.121 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 200.121, "e": 200.322 },
+        {
+          "t": "traducción",
+          "l": "traducción",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 200.322,
+          "e": 201.06
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 201.06, "e": 201.261 },
+        { "t": "comedias", "l": "comedia", "p": "NOUN", "w": true, "s": 201.261, "e": 201.865 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 196.065,
+      "end": 201.924
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "juego de palabras",
+      "surface": "juegos de palabras",
+      "pos": "phrase",
+      "def_en": "uso gracioso de palabras con dos sentidos",
+      "def_es": { "en": "pun, wordplay", "fr": "jeu de mots", "zh": "双关语", "ja": "しゃれ" },
+      "ref": "s11"
+    },
+    {
+      "lemma": "tomar el pelo",
+      "surface": "tomando el pelo",
+      "pos": "phrase",
+      "def_en": "burlarse de alguien de forma amistosa",
+      "def_es": { "en": "to pull someone’s leg", "fr": "faire marcher quelqu’un", "zh": "开玩笑", "ja": "からかう" },
+      "ref": "s27"
+    },
+    {
+      "lemma": "malentendido",
+      "surface": "malentendidos",
+      "pos": "noun",
+      "def_en": "error al interpretar lo que alguien dice",
+      "def_es": { "en": "misunderstanding", "fr": "malentendu", "zh": "误会", "ja": "誤解" },
+      "ref": "s25"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Cuál es la idea central de la conferencia?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "Humour is hard to grasp across languages for several reasons." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "El humor japonés y el español son prácticamente iguales" },
+        { "id": "b", "text": "Entender el humor ajeno es difícil por varias razones" },
+        { "id": "c", "text": "Las comedias deberían verse siempre en versión original" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué son difíciles de traducir los juegos de palabras?",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "Double meaning exists only in one language." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Los traductores no conocen bien el humor de cada país" },
+        { "id": "b", "text": "Las películas no tienen subtítulos" },
+        { "id": "c", "text": "Su gracia se pierde al pasar a otro idioma" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué compara el profesor con una contraseña?",
+      "evidence": ["s20"],
+      "rationale_es": { "en": "Getting local jokes shows you belong." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Entender las bromas locales de un grupo" },
+        { "id": "b", "text": "Aprender de memoria todas las formas del subjuntivo" },
+        { "id": "c", "text": "Ver series extranjeras con amigos" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué le pasó al estudiante japonés?",
+      "evidence": ["s27"],
+      "rationale_es": { "en": "He misread his landlord’s teasing." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tuvo un problema serio con la policía" },
+        { "id": "b", "text": "Interpretó mal las bromas de su casero" },
+        { "id": "c", "text": "Su casero lo echó del piso por el ruido" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Según el profesor, los temas tabú son los mismos en todas las culturas.",
+      "evidence": ["s28"],
+      "rationale_es": { "en": "Taboo topics vary." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué sigue haciendo reír el cine de Chaplin?",
+      "evidence": ["s32"],
+      "rationale_es": { "en": "Its situations are near-universal." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Se ha doblado a casi todos los idiomas del mundo" },
+        { "id": "b", "text": "Trata temas políticos actuales" },
+        { "id": "c", "text": "Se basa en situaciones casi universales" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "attitude_opinion",
+      "phase": "post",
+      "prompt": "¿Qué aconseja el profesor a los estudiantes?",
+      "evidence": ["s42"],
+      "rationale_es": { "en": "Be patient and laugh at your own mistakes." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tomárselo con calma y aprender a reírse de sí mismos" },
+        { "id": "b", "text": "Evitar los programas de humor hasta tener un nivel alto" },
+        { "id": "c", "text": "Memorizar una lista de chistes famosos del país" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q8",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s36"],
+      "rationale_es": { "en": "*Lo inesperado*: the unexpected." },
+      "type": "gap_fill",
+      "text": "Nos reímos ante lo {{1}}, cuando algo rompe una expectativa.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["inesperado"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "acostumbrarse", "adulto", "ahora", "algo", "algún", "allí", "analizar", "ante", "aprender", "así",
+    "aun", "año", "basar", "bien", "broma", "bueno", "cada", "cambiar", "cariño", "casero", "casi", "causar",
+    "charlar", "chiste", "cine", "comedia", "compañero", "completamente", "con", "concreto", "conocer",
+    "consecuencia", "consejo", "conservar", "considerar", "constante", "contar", "contrario", "contraseña",
+    "costumbre", "creer", "cualquier", "cuando", "cultura", "cultural", "cuándo", "cómic", "dar", "dañar",
+    "de", "decir", "demostrar", "depender", "desanimarse", "después", "doble", "durante", "día", "efecto",
+    "ejemplo", "el", "ellos", "empezar", "en", "enfadado", "enorme", "entender", "error", "escena", "escuchar",
+    "ese", "especie", "esperar", "estar", "este", "esto", "estructura", "estudiante", "exactamente", "existir",
+    "expectativa", "explicar", "extranjero", "familia", "fuera", "funcionar", "gesto", "grande", "grupo",
+    "haber", "hablar", "hacer", "hoy", "humor", "idioma", "igual", "imitar", "imposible", "incluso",
+    "inesperado", "interesante", "inventar", "ironía", "japonés", "juego", "lengua", "lingüístico",
+    "malentendido", "menos", "menudo", "mes", "mi", "miedo", "mismo", "mucho", "mudarse", "muerte", "mundo",
+    "más", "necesitar", "niño", "no", "normal", "nosotros", "nuevo", "o", "ocurrir", "ofensivo", "otro",
+    "palabra", "para", "parecer", "parte", "pasar", "país", "pedir", "pelo", "película", "pensar", "personaje",
+    "pertenecer", "plan", "poder", "política", "por", "porque", "pregunta", "principio", "programa", "propio",
+    "propósito", "provocar", "psicólogo", "que", "querer", "quien", "quizá", "qué", "razón", "real",
+    "realidad", "referencia", "regla", "religión", "resbalarse", "resultar", "revés", "reír", "romper",
+    "saber", "salir", "se", "seguir", "semana", "sentir", "ser", "serie", "serio", "si", "siglo", "significar",
+    "sin", "situación", "sobre", "solo", "soltura", "sonar", "su", "subjuntivo", "tabú", "también", "tarde",
+    "televisión", "tema", "tener", "todo", "tomar", "trabajar", "traducción", "traducir", "traductor",
+    "través", "un", "universal", "usted", "venir", "vivir", "y", "yo", "él", "último"
+  ],
+  "difficulty": 1449,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6263, "A2": 0.7333, "B1": 0.9152, "B2": 0.9434, "C1": 0.9838, "C2": 1 },
+    "off_level_lemmas": ["chiste", "ironía", "pelo", "pertenecer", "romper"],
+    "avg_sentence_words": 11.5,
+    "flesch_reading_ease": 79.2,
+    "checked_at": "2026-10-19T07:48:30.244Z"
+  },
+  "audio": {
+    "src": "audio/c1/es-c1-lis-008/v1.m4a",
+    "duration_s": 201.924,
+    "wpm": 150,
+    "provider": "piper",
+    "voices": { "ortiz": "davefx-m" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      1, 0.99, 1, 0.96, 1, 0.99, 0.88, 0.82, 1, 0.99, 0.95, 1, 0.98, 0.56, 1, 0.92, 0.85, 0.96, 0.45, 0.96,
+      0.95, 0.98, 1, 0.76, 1, 0.98, 1, 0.94, 0.97, 1, 0.69, 1, 0.9, 0.95, 0.96, 1, 0.95, 0.99, 0.91, 0.98,
+      0.72, 0.97, 1, 0.92, 0.94, 0.81, 0.88, 0.95, 0.87, 1, 0.89, 0.98, 0.94, 0.88, 1, 0.99, 0.93, 0.98, 0.98,
+      0.98, 0.83, 0.95, 1, 0.77, 1, 0.96, 0.97, 1, 0.97, 0.97, 0.88, 1, 0.8, 0.86, 0.9, 0.88, 1, 0.99, 0.96,
+      0.98, 0.9, 0.88, 0.9, 0.72, 0.98, 1, 0.87, 0.94, 0.97, 0.98, 1, 0.97, 0.98, 0.94, 1, 0.97, 0.99, 0.97, 1,
+      0.76, 0.96, 0.98, 0.98, 0.43, 0.98, 0.66, 0.94, 1, 0.77, 0.73, 0.95, 1, 0.98, 0.77, 0.59, 1, 0.73, 1,
+      0.94, 0.85, 0.96, 1, 0.86, 0.95, 0.92, 0.72, 1, 0.96, 0.97, 0.8, 0.96, 0.96, 0.94, 0.99, 1, 1, 0.92, 0.9,
+      1, 0.98, 0.69, 0.98, 0.97, 1, 0.98, 0.83, 0.85, 0.89, 0.91, 1, 0.57, 0.91, 0.96, 0.59, 1, 0.95, 0.84,
+      0.93, 0.96, 0.99, 0.96, 1, 0.83, 0.99, 0.95, 0.98, 0.95, 0.74, 0.98, 0.82, 1, 0.53, 1, 0.95, 0.99, 0.93,
+      0.98, 0.93, 0.37, 0.91, 0.78, 0.99, 0.83, 0.99, 0.96, 1, 0.77, 0.83, 0.96, 0.93, 0.94, 0.89, 1, 0.86,
+      0.93, 0.99, 0.96, 1, 0.82, 0.97, 0.98, 1, 0.83, 0.95, 0.93, 0.94, 1, 0.96, 1, 0.97, 0.88, 1, 0.9, 1,
+      0.92, 0.96, 1, 0.98, 0.97, 0.9, 0.89, 0.99, 1, 0.97, 0.93, 0.93, 0.99, 0.96, 0.9, 0.97, 0.99, 1, 0.52, 1,
+      0.99, 0.89, 0.99, 0.96, 0.91, 0.82
+    ]
+  }
+}

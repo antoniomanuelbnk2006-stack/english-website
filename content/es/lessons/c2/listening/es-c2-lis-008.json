@@ -1,0 +1,1170 @@
+{
+  "id": "es-c2-lis-008",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "unit": "es-c2-u04",
+  "series": "es-c2-u04-papel-pantalla",
+  "skill": "listening",
+  "genre": "podcast",
+  "title": "Leer en papel o en pantalla",
+  "summary_es": {
+    "en": "A podcast reviews research on how reading on paper and on screens affects understanding and attention.",
+    "fr": "Un podcast passe en revue les recherches sur l’effet de la lecture sur papier et sur écran sur la compréhension et l’attention.",
+    "zh": "一档播客回顾了关于纸质阅读与屏幕阅读如何影响理解力和注意力的研究。",
+    "ja": "ポッドキャストが、紙と画面での読書が理解力と集中力にどう影響するかについての研究を紹介します。"
+  },
+  "topic": "education",
+  "tags": ["lectura", "educación", "tecnología"],
+  "can_do": ["L-C2-03"],
+  "grammar_focus": [],
+  "vocab_focus": ["comprensión", "hojear", "distracción", "soporte"],
+  "est_minutes": 12,
+  "prediction_prompt": "¿Entiendes mejor un texto largo en papel o en pantalla? ¿Por qué crees que es así?",
+  "pre_teach": ["soporte", "hojear"],
+  "speakers": [
+    { "id": "sara", "name": "Sara", "accent": "es-ES", "gender": "female" },
+    { "id": "david", "name": "David", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 145,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "sara",
+      "text": "Hola de nuevo.",
+      "tokens": [
+        { "t": "Hola", "l": "hola", "p": "INTJ", "w": false, "sp": true, "s": 0.01, "e": 0.285 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 0.285, "e": 0.45 },
+        { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true, "s": 0.45, "e": 0.78 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 0.859
+    },
+    {
+      "id": "s2",
+      "speaker": "sara",
+      "text": "Hoy abordamos una pregunta que nos hacen a menudo: ¿da igual leer en papel que en una pantalla?",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 1.119, "e": 1.335 },
+        { "t": "abordamos", "l": "abordar", "p": "VERB", "w": true, "sp": true, "s": 1.335, "e": 1.876 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 1.876, "e": 2.092 },
+        { "t": "pregunta", "l": "pregunta", "p": "NOUN", "w": true, "sp": true, "s": 2.093, "e": 2.58 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 2.579, "e": 2.795 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 2.796, "e": 3.012 },
+        { "t": "hacen", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 3.012, "e": 3.337 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 3.337, "e": 3.445 },
+        { "t": "menudo", "l": "menudo", "p": "ADJ", "w": true, "s": 3.445, "e": 3.824 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "da", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 3.823, "e": 3.985 },
+        { "t": "igual", "l": "igual", "p": "ADJ", "w": true, "sp": true, "s": 3.986, "e": 4.311 },
+        { "t": "leer", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 4.31, "e": 4.58 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 4.581, "e": 4.743 },
+        { "t": "papel", "l": "papel", "p": "NOUN", "w": true, "sp": true, "s": 4.743, "e": 5.068 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 5.067, "e": 5.283 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 5.284, "e": 5.446 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 5.446, "e": 5.662 },
+        { "t": "pantalla", "l": "pantalla", "p": "NOUN", "w": true, "s": 5.662, "e": 6.149 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.109,
+      "end": 6.23
+    },
+    {
+      "id": "s3",
+      "speaker": "sara",
+      "text": "David ha estado revisando la investigación más reciente.",
+      "tokens": [
+        { "t": "David", "l": "david", "p": "PROPN", "w": false, "sp": true, "s": 6.49, "e": 6.858 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 6.858, "e": 7.042 },
+        { "t": "estado", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 7.041, "e": 7.47 },
+        { "t": "revisando", "l": "revisar", "p": "VERB", "w": true, "sp": true, "s": 7.47, "e": 8.083 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.083, "e": 8.267 },
+        {
+          "t": "investigación",
+          "l": "investigación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 8.266,
+          "e": 9.124
+        },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 9.124, "e": 9.369 },
+        { "t": "reciente", "l": "reciente", "p": "ADJ", "w": true, "s": 9.369, "e": 9.92 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.48,
+      "end": 9.968
+    },
+    {
+      "id": "s4",
+      "speaker": "david",
+      "text": "Así es, y adelanto la conclusión: no da igual, aunque tampoco es tan sencillo como dicen los nostálgicos del papel.",
+      "tokens": [
+        { "t": "Así", "l": "así", "p": "ADV", "w": true, "sp": true, "s": 10.378, "e": 10.614 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "s": 10.614, "e": 10.791 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 10.791, "e": 10.909 },
+        { "t": "adelanto", "l": "adelantar", "p": "VERB", "w": true, "sp": true, "s": 10.908, "e": 11.438 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.439, "e": 11.616 },
+        { "t": "conclusión", "l": "conclusión", "p": "NOUN", "w": true, "s": 11.616, "e": 12.264 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 12.264, "e": 12.441 },
+        { "t": "da", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 12.441, "e": 12.618 },
+        { "t": "igual", "l": "igual", "p": "ADJ", "w": true, "s": 12.617, "e": 12.971 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true, "s": 12.971, "e": 13.384 },
+        { "t": "tampoco", "l": "tampoco", "p": "ADV", "w": true, "sp": true, "s": 13.383, "e": 13.854 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 13.855, "e": 14.032 },
+        { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true, "s": 14.032, "e": 14.268 },
+        { "t": "sencillo", "l": "sencillo", "p": "ADJ", "w": true, "sp": true, "s": 14.267, "e": 14.797 },
+        { "t": "como", "l": "como", "p": "SCONJ", "w": true, "sp": true, "s": 14.798, "e": 15.093 },
+        { "t": "dicen", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 15.092, "e": 15.446 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 15.446, "e": 15.682 },
+        {
+          "t": "nostálgicos",
+          "l": "nostálgico",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 15.682,
+          "e": 16.389
+        },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 16.389, "e": 16.625 },
+        { "t": "papel", "l": "papel", "p": "NOUN", "w": true, "s": 16.624, "e": 16.978 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.368,
+      "end": 17.065
+    },
+    {
+      "id": "s5",
+      "speaker": "sara",
+      "text": "Empecemos por lo que sí parece claro.",
+      "tokens": [
+        { "t": "Empecemos", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 17.475, "e": 18.067 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 18.067, "e": 18.304 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 18.304, "e": 18.482 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 18.481, "e": 18.718 },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "sp": true, "s": 18.718, "e": 18.896 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 18.896, "e": 19.31 },
+        { "t": "claro", "l": "claro", "p": "ADJ", "w": true, "s": 19.31, "e": 19.665 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.465,
+      "end": 19.734
+    },
+    {
+      "id": "s6",
+      "speaker": "david",
+      "text": "Varios análisis que reúnen decenas de estudios coinciden en algo.",
+      "tokens": [
+        { "t": "Varios", "l": "varios", "p": "DET", "w": true, "sp": true, "s": 20.134, "e": 20.526 },
+        { "t": "análisis", "l": "análisis", "p": "NOUN", "w": true, "sp": true, "s": 20.526, "e": 21.03 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 21.03, "e": 21.254 },
+        { "t": "reúnen", "l": "reunir", "p": "VERB", "w": true, "sp": true, "s": 21.254, "e": 21.646 },
+        { "t": "decenas", "l": "decena", "p": "NOUN", "w": true, "sp": true, "s": 21.646, "e": 22.094 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 22.094, "e": 22.262 },
+        { "t": "estudios", "l": "estudio", "p": "NOUN", "w": true, "sp": true, "s": 22.262, "e": 22.766 },
+        { "t": "coinciden", "l": "coincidir", "p": "VERB", "w": true, "sp": true, "s": 22.766, "e": 23.326 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 23.326, "e": 23.494 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "s": 23.494, "e": 23.774 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.134,
+      "end": 23.884
+    },
+    {
+      "id": "s7",
+      "speaker": "david",
+      "text": "Cuando se trata de textos largos y complejos, la comprensión suele ser algo mejor en papel.",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 24.184, "e": 24.593 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 24.593, "e": 24.768 },
+        { "t": "trata", "l": "tratar", "p": "VERB", "w": true, "sp": true, "s": 24.768, "e": 25.119 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 25.119, "e": 25.294 },
+        { "t": "textos", "l": "texto", "p": "NOUN", "w": true, "sp": true, "s": 25.294, "e": 25.703 },
+        { "t": "largos", "l": "largo", "p": "ADJ", "w": true, "sp": true, "s": 25.704, "e": 26.113 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 26.113, "e": 26.23 },
+        { "t": "complejos", "l": "complejo", "p": "ADJ", "w": true, "s": 26.23, "e": 26.814 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 27.014, "e": 27.185 },
+        {
+          "t": "comprensión",
+          "l": "comprensión",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 27.185,
+          "e": 27.87
+        },
+        { "t": "suele", "l": "soler", "p": "VERB", "w": true, "sp": true, "s": 27.871, "e": 28.214 },
+        { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 28.213, "e": 28.441 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 28.442, "e": 28.728 },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true, "s": 28.727, "e": 29.07 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 29.07, "e": 29.241 },
+        { "t": "papel", "l": "papel", "p": "NOUN", "w": true, "s": 29.241, "e": 29.584 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.134,
+      "end": 29.667
+    },
+    {
+      "id": "s8",
+      "speaker": "david",
+      "text": "La diferencia no es enorme, pero es constante.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 29.927, "e": 30.101 },
+        { "t": "diferencia", "l": "diferencia", "p": "NOUN", "w": true, "sp": true, "s": 30.101, "e": 30.741 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 30.741, "e": 30.915 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 30.916, "e": 31.09 },
+        { "t": "enorme", "l": "enorme", "p": "ADJ", "w": true, "s": 31.09, "e": 31.497 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 31.727, "e": 31.971 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 31.971, "e": 32.118 },
+        { "t": "constante", "l": "constante", "p": "ADJ", "w": true, "s": 32.118, "e": 32.607 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 29.917,
+      "end": 32.707
+    },
+    {
+      "id": "s9",
+      "speaker": "david",
+      "text": "Y, curiosamente, se ha hecho mayor con los años, no menor.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "s": 32.977, "e": 33.105 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "curiosamente", "l": "curiosamente", "p": "ADV", "w": true, "s": 33.105, "e": 33.939 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 33.94, "e": 34.133 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 34.132, "e": 34.325 },
+        { "t": "hecho", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 34.325, "e": 34.71 },
+        { "t": "mayor", "l": "mayor", "p": "ADJ", "w": true, "sp": true, "s": 34.71, "e": 35.095 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 35.095, "e": 35.352 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 35.352, "e": 35.609 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 35.608, "e": 35.929 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 35.929, "e": 36.122 },
+        { "t": "menor", "l": "menor", "p": "ADJ", "w": true, "s": 36.122, "e": 36.507 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.957,
+      "end": 36.574
+    },
+    {
+      "id": "s10",
+      "speaker": "sara",
+      "text": "Eso contradice la idea de que las nuevas generaciones, acostumbradas a las pantallas, leerían igual de bien en ellas.",
+      "tokens": [
+        { "t": "Eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 36.984, "e": 37.215 },
+        {
+          "t": "contradice",
+          "l": "contradecir",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 37.215,
+          "e": 37.849
+        },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 37.849, "e": 38.022 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true, "s": 38.022, "e": 38.31 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 38.31, "e": 38.483 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 38.483, "e": 38.714 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 38.714, "e": 38.945 },
+        { "t": "nuevas", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 38.944, "e": 39.348 },
+        { "t": "generaciones", "l": "generación", "p": "NOUN", "w": true, "s": 39.348, "e": 40.097 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        {
+          "t": "acostumbradas",
+          "l": "acostumbrarse",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 40.097,
+          "e": 40.904
+        },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 40.904, "e": 41.019 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 41.02, "e": 41.251 },
+        { "t": "pantallas", "l": "pantalla", "p": "NOUN", "w": true, "s": 41.25, "e": 41.827 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "leerían", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 41.827, "e": 42.288 },
+        { "t": "igual", "l": "igual", "p": "ADJ", "w": true, "sp": true, "s": 42.288, "e": 42.634 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 42.634, "e": 42.807 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true, "s": 42.807, "e": 43.095 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 43.095, "e": 43.268 },
+        { "t": "ellas", "l": "ellos", "p": "PRON", "w": true, "s": 43.268, "e": 43.614 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 36.974,
+      "end": 43.668
+    },
+    {
+      "id": "s11",
+      "speaker": "david",
+      "text": "Exacto.",
+      "tokens": [
+        { "t": "Exacto", "l": "exacto", "p": "ADJ", "w": true, "s": 44.068, "e": 44.668 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.068,
+      "end": 44.72
+    },
+    {
+      "id": "s12",
+      "speaker": "david",
+      "text": "Una de las hipótesis más aceptadas es que la pantalla nos predispone a un tipo de lectura superficial.",
+      "tokens": [
+        { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 44.97, "e": 45.205 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 45.205, "e": 45.381 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 45.381, "e": 45.616 },
+        { "t": "hipótesis", "l": "hipótesis", "p": "NOUN", "w": true, "sp": true, "s": 45.616, "e": 46.203 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 46.203, "e": 46.438 },
+        { "t": "aceptadas", "l": "aceptar", "p": "VERB", "w": true, "sp": true, "s": 46.438, "e": 47.025 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 47.025, "e": 47.201 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 47.202, "e": 47.437 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 47.436, "e": 47.612 },
+        { "t": "pantalla", "l": "pantalla", "p": "NOUN", "w": true, "sp": true, "s": 47.613, "e": 48.142 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 48.141, "e": 48.376 },
+        {
+          "t": "predispone",
+          "l": "predisponer",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 48.376,
+          "e": 49.022
+        },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 49.022, "e": 49.139 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 49.14, "e": 49.316 },
+        { "t": "tipo", "l": "tipo", "p": "NOUN", "w": true, "sp": true, "s": 49.316, "e": 49.61 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 49.609, "e": 49.785 },
+        { "t": "lectura", "l": "lectura", "p": "NOUN", "w": true, "sp": true, "s": 49.785, "e": 50.255 },
+        { "t": "superficial", "l": "superficial", "p": "ADJ", "w": true, "s": 50.255, "e": 50.96 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.97,
+      "end": 51.046
+    },
+    {
+      "id": "s13",
+      "speaker": "david",
+      "text": "Estamos habituados a usarla para mensajes breves y noticias rápidas, así que trasladamos ese hábito a cualquier texto.",
+      "tokens": [
+        { "t": "Estamos", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 51.306, "e": 51.762 },
+        { "t": "habituados", "l": "habituado", "p": "ADJ", "w": true, "sp": true, "s": 51.762, "e": 52.39 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 52.39, "e": 52.504 },
+        { "t": "usarla", "l": "usar", "p": "VERB", "w": true, "sp": true, "s": 52.504, "e": 52.903 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 52.904, "e": 53.189 },
+        { "t": "mensajes", "l": "mensaje", "p": "NOUN", "w": true, "sp": true, "s": 53.189, "e": 53.703 },
+        { "t": "breves", "l": "breve", "p": "ADJ", "w": true, "sp": true, "s": 53.702, "e": 54.101 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 54.102, "e": 54.216 },
+        { "t": "noticias", "l": "noticia", "p": "NOUN", "w": true, "sp": true, "s": 54.216, "e": 54.73 },
+        { "t": "rápidas", "l": "rápido", "p": "ADJ", "w": true, "s": 54.73, "e": 55.186 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "así", "l": "así", "p": "ADV", "w": true, "sp": true, "s": 55.376, "e": 55.6 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 55.6, "e": 55.824 },
+        { "t": "trasladamos", "l": "trasladar", "p": "VERB", "w": true, "sp": true, "s": 55.825, "e": 56.498 },
+        { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 56.498, "e": 56.722 },
+        { "t": "hábito", "l": "hábito", "p": "NOUN", "w": true, "sp": true, "s": 56.723, "e": 57.116 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 57.116, "e": 57.228 },
+        { "t": "cualquier", "l": "cualquier", "p": "ADJ", "w": true, "sp": true, "s": 57.228, "e": 57.789 },
+        { "t": "texto", "l": "texto", "p": "NOUN", "w": true, "s": 57.789, "e": 58.126 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 51.296,
+      "end": 58.222
+    },
+    {
+      "id": "s14",
+      "speaker": "david",
+      "text": "Leemos en diagonal, saltamos párrafos, buscamos palabras clave.",
+      "tokens": [
+        { "t": "Leemos", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 58.472, "e": 58.93 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 58.93, "e": 59.126 },
+        { "t": "diagonal", "l": "diagonal", "p": "NOUN", "w": true, "s": 59.126, "e": 59.715 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "saltamos", "l": "saltar", "p": "VERB", "w": true, "sp": true, "s": 59.715, "e": 60.304 },
+        { "t": "párrafos", "l": "párrafo", "p": "NOUN", "w": true, "s": 60.303, "e": 60.892 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "buscamos", "l": "buscar", "p": "VERB", "w": true, "sp": true, "s": 60.892, "e": 61.481 },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 61.481, "e": 62.07 },
+        { "t": "clave", "l": "clave", "p": "NOUN", "w": true, "s": 62.07, "e": 62.462 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 58.472,
+      "end": 62.551
+    },
+    {
+      "id": "s15",
+      "speaker": "sara",
+      "text": "Y luego está el exceso de confianza.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 62.961, "e": 63.08 },
+        { "t": "luego", "l": "luego", "p": "ADV", "w": true, "sp": true, "s": 63.08, "e": 63.438 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 63.439, "e": 63.738 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 63.737, "e": 63.916 },
+        { "t": "exceso", "l": "exceso", "p": "NOUN", "w": true, "sp": true, "s": 63.917, "e": 64.335 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 64.335, "e": 64.514 },
+        { "t": "confianza", "l": "confianza", "p": "NOUN", "w": true, "s": 64.514, "e": 65.111 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.951,
+      "end": 65.173
+    },
+    {
+      "id": "s16",
+      "speaker": "david",
+      "text": "Sí, es un hallazgo muy interesante.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 65.583, "e": 65.953 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 66.113, "e": 66.297 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 66.297, "e": 66.481 },
+        { "t": "hallazgo", "l": "hallazgo", "p": "NOUN", "w": true, "sp": true, "s": 66.481, "e": 67.033 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 67.032, "e": 67.277 },
+        { "t": "interesante", "l": "interesante", "p": "ADJ", "w": true, "s": 67.278, "e": 68.013 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 65.573,
+      "end": 68.103
+    },
+    {
+      "id": "s17",
+      "speaker": "david",
+      "text": "Quienes leen en pantalla tienden a sobrestimar lo que han entendido.",
+      "tokens": [
+        { "t": "Quienes", "l": "quien", "p": "PRON", "w": true, "sp": true, "s": 68.363, "e": 68.77 },
+        { "t": "leen", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 68.77, "e": 69.024 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 69.024, "e": 69.177 },
+        { "t": "pantalla", "l": "pantalla", "p": "NOUN", "w": true, "sp": true, "s": 69.177, "e": 69.635 },
+        { "t": "tienden", "l": "tender", "p": "VERB", "w": true, "sp": true, "s": 69.635, "e": 70.042 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 70.042, "e": 70.144 },
+        {
+          "t": "sobrestimar",
+          "l": "sobrestimar",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 70.144,
+          "e": 70.755
+        },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 70.754, "e": 70.907 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 70.907, "e": 71.111 },
+        { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 71.111, "e": 71.315 },
+        { "t": "entendido", "l": "entender", "p": "VERB", "w": true, "s": 71.314, "e": 71.823 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 68.353,
+      "end": 71.929
+    },
+    {
+      "id": "s18",
+      "speaker": "david",
+      "text": "Terminan antes y se sienten más seguros, pero responden peor a las preguntas.",
+      "tokens": [
+        { "t": "Terminan", "l": "terminar", "p": "VERB", "w": true, "sp": true, "s": 72.189, "e": 72.403 },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true, "s": 72.403, "e": 72.546 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 72.545, "e": 72.593 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 72.593, "e": 72.664 },
+        { "t": "sienten", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 72.664, "e": 72.854 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 72.854, "e": 72.949 },
+        { "t": "seguros", "l": "seguro", "p": "ADJ", "w": true, "s": 72.949, "e": 73.139 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 73.359, "e": 73.892 },
+        { "t": "responden", "l": "responder", "p": "VERB", "w": true, "sp": true, "s": 73.892, "e": 74.959 },
+        { "t": "peor", "l": "peor", "p": "ADV", "w": true, "sp": true, "s": 74.959, "e": 75.492 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 75.492, "e": 75.705 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 75.706, "e": 76.133 },
+        { "t": "preguntas", "l": "pregunta", "p": "NOUN", "w": true, "s": 76.132, "e": 77.199 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 72.179,
+      "end": 77.25
+    },
+    {
+      "id": "s19",
+      "speaker": "sara",
+      "text": "¿Influye también el propio objeto?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Influye", "l": "influir", "p": "VERB", "w": true, "sp": true, "s": 77.66, "e": 78.159 },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 78.159, "e": 78.658 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 78.659, "e": 78.846 },
+        { "t": "propio", "l": "propio", "p": "ADJ", "w": true, "sp": true, "s": 78.846, "e": 79.283 },
+        { "t": "objeto", "l": "objeto", "p": "NOUN", "w": true, "s": 79.283, "e": 79.72 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 77.65,
+      "end": 79.786
+    },
+    {
+      "id": "s20",
+      "speaker": "david",
+      "text": "Parece que sí.",
+      "tokens": [
+        { "t": "Parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 80.196, "e": 80.591 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 80.591, "e": 80.817 },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "s": 80.817, "e": 80.986 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 80.186,
+      "end": 81.052
+    },
+    {
+      "id": "s21",
+      "speaker": "david",
+      "text": "Con un libro, la mano sabe si estamos al principio o al final.",
+      "tokens": [
+        { "t": "Con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 81.312, "e": 81.509 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 81.509, "e": 81.657 },
+        { "t": "libro", "l": "libro", "p": "NOUN", "w": true, "s": 81.657, "e": 81.952 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 82.102, "e": 82.276 },
+        { "t": "mano", "l": "mano", "p": "NOUN", "w": true, "sp": true, "s": 82.276, "e": 82.566 },
+        { "t": "sabe", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 82.565, "e": 82.855 },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 82.855, "e": 83.029 },
+        { "t": "estamos", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 83.029, "e": 83.492 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 83.492, "e": 83.666 },
+        { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "sp": true, "s": 83.666, "e": 84.245 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 84.245, "e": 84.361 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 84.361, "e": 84.535 },
+        { "t": "final", "l": "final", "p": "NOUN", "w": true, "s": 84.535, "e": 84.883 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 81.302,
+      "end": 84.974
+    },
+    {
+      "id": "s22",
+      "speaker": "david",
+      "text": "Y recordamos que un dato aparecía arriba, en una página de la izquierda.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 85.234, "e": 85.35 },
+        { "t": "recordamos", "l": "recordar", "p": "VERB", "w": true, "sp": true, "s": 85.35, "e": 85.989 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 85.989, "e": 86.221 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 86.221, "e": 86.395 },
+        { "t": "dato", "l": "dato", "p": "NOUN", "w": true, "sp": true, "s": 86.395, "e": 86.685 },
+        { "t": "aparecía", "l": "aparecer", "p": "VERB", "w": true, "sp": true, "s": 86.685, "e": 87.207 },
+        { "t": "arriba", "l": "arriba", "p": "ADV", "w": true, "s": 87.208, "e": 87.614 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 87.784, "e": 87.945 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 87.945, "e": 88.16 },
+        { "t": "página", "l": "página", "p": "NOUN", "w": true, "sp": true, "s": 88.16, "e": 88.536 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 88.535, "e": 88.696 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 88.696, "e": 88.857 },
+        { "t": "izquierda", "l": "izquierda", "p": "NOUN", "w": true, "s": 88.857, "e": 89.394 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 85.224,
+      "end": 89.488
+    },
+    {
+      "id": "s23",
+      "speaker": "david",
+      "text": "Esa especie de mapa físico ayuda a la memoria.",
+      "tokens": [
+        { "t": "Esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 89.748, "e": 89.985 },
+        { "t": "especie", "l": "especie", "p": "NOUN", "w": true, "sp": true, "s": 89.985, "e": 90.458 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 90.458, "e": 90.635 },
+        { "t": "mapa", "l": "mapa", "p": "NOUN", "w": true, "sp": true, "s": 90.635, "e": 90.931 },
+        { "t": "físico", "l": "físico", "p": "ADJ", "w": true, "sp": true, "s": 90.931, "e": 91.345 },
+        { "t": "ayuda", "l": "ayudar", "p": "VERB", "w": true, "sp": true, "s": 91.345, "e": 91.7 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 91.699, "e": 91.817 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 91.818, "e": 91.995 },
+        { "t": "memoria", "l": "memoria", "p": "NOUN", "w": true, "s": 91.995, "e": 92.468 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 89.738,
+      "end": 92.55
+    },
+    {
+      "id": "s24",
+      "speaker": "david",
+      "text": "En una pantalla que se desliza sin fin, esas referencias desaparecen.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 92.81, "e": 92.988 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 92.988, "e": 93.225 },
+        { "t": "pantalla", "l": "pantalla", "p": "NOUN", "w": true, "sp": true, "s": 93.225, "e": 93.758 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 93.758, "e": 93.995 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 93.995, "e": 94.173 },
+        { "t": "desliza", "l": "deslizarse", "p": "VERB", "w": true, "sp": true, "s": 94.172, "e": 94.646 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 94.646, "e": 94.883 },
+        { "t": "fin", "l": "fin", "p": "NOUN", "w": true, "s": 94.883, "e": 95.12 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "esas", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 95.32, "e": 95.618 },
+        {
+          "t": "referencias",
+          "l": "referencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 95.618,
+          "e": 96.334
+        },
+        { "t": "desaparecen", "l": "desaparecer", "p": "VERB", "w": true, "s": 96.334, "e": 97.05 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 92.8,
+      "end": 97.149
+    },
+    {
+      "id": "s25",
+      "speaker": "sara",
+      "text": "Ahora bien, no conviene demonizar las pantallas.",
+      "tokens": [
+        { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 97.559, "e": 97.864 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 97.864, "e": 98.119 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 98.259, "e": 98.452 },
+        { "t": "conviene", "l": "convenir", "p": "VERB", "w": true, "sp": true, "s": 98.452, "e": 99.03 },
+        { "t": "demonizar", "l": "demonizar", "p": "VERB", "w": true, "sp": true, "s": 99.029, "e": 99.671 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 99.671, "e": 99.928 },
+        { "t": "pantallas", "l": "pantalla", "p": "NOUN", "w": true, "s": 99.927, "e": 100.569 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 97.549,
+      "end": 100.62
+    },
+    {
+      "id": "s26",
+      "speaker": "david",
+      "text": "En absoluto.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 101.03, "e": 101.208 },
+        { "t": "absoluto", "l": "absoluto", "p": "ADJ", "w": true, "s": 101.208, "e": 101.741 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 101.02,
+      "end": 101.863
+    },
+    {
+      "id": "s27",
+      "speaker": "david",
+      "text": "Para textos breves o informativos, las diferencias prácticamente desaparecen.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 102.123, "e": 102.422 },
+        { "t": "textos", "l": "texto", "p": "NOUN", "w": true, "sp": true, "s": 102.422, "e": 102.84 },
+        { "t": "breves", "l": "breve", "p": "ADJ", "w": true, "sp": true, "s": 102.84, "e": 103.258 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 103.258, "e": 103.377 },
+        { "t": "informativos", "l": "informativo", "p": "ADJ", "w": true, "s": 103.377, "e": 104.154 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 104.154, "e": 104.393 },
+        {
+          "t": "diferencias",
+          "l": "diferencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 104.393,
+          "e": 105.11
+        },
+        {
+          "t": "prácticamente",
+          "l": "prácticamente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 105.11,
+          "e": 105.946
+        },
+        { "t": "desaparecen", "l": "desaparecer", "p": "VERB", "w": true, "s": 105.946, "e": 106.663 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 102.113,
+      "end": 106.775
+    },
+    {
+      "id": "s28",
+      "speaker": "david",
+      "text": "Y los dispositivos digitales tienen ventajas enormes.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 107.035, "e": 107.156 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 107.156, "e": 107.398 },
+        {
+          "t": "dispositivos",
+          "l": "dispositivo",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 107.398,
+          "e": 108.185
+        },
+        { "t": "digitales", "l": "digital", "p": "ADJ", "w": true, "sp": true, "s": 108.186, "e": 108.792 },
+        { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 108.791, "e": 109.215 },
+        { "t": "ventajas", "l": "ventaja", "p": "NOUN", "w": true, "sp": true, "s": 109.215, "e": 109.76 },
+        { "t": "enormes", "l": "enorme", "p": "ADJ", "w": true, "s": 109.76, "e": 110.245 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 107.025,
+      "end": 110.292
+    },
+    {
+      "id": "s29",
+      "speaker": "david",
+      "text": "Permiten ampliar la letra, buscar una palabra o llevar mil libros en el bolsillo.",
+      "tokens": [
+        { "t": "Permiten", "l": "permitir", "p": "VERB", "w": true, "sp": true, "s": 110.552, "e": 111.078 },
+        { "t": "ampliar", "l": "ampliar", "p": "VERB", "w": true, "sp": true, "s": 111.078, "e": 111.546 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 111.546, "e": 111.721 },
+        { "t": "letra", "l": "letra", "p": "NOUN", "w": true, "s": 111.721, "e": 112.072 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "buscar", "l": "buscar", "p": "VERB", "w": true, "sp": true, "s": 112.242, "e": 112.617 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 112.617, "e": 112.831 },
+        { "t": "palabra", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 112.831, "e": 113.259 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 113.259, "e": 113.366 },
+        { "t": "llevar", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 113.366, "e": 113.741 },
+        { "t": "mil", "l": "mil", "p": "NUM", "w": false, "sp": true, "s": 113.741, "e": 113.955 },
+        { "t": "libros", "l": "libro", "p": "NOUN", "w": true, "sp": true, "s": 113.955, "e": 114.33 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 114.329, "e": 114.49 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 114.49, "e": 114.651 },
+        { "t": "bolsillo", "l": "bolsillo", "p": "NOUN", "w": true, "s": 114.65, "e": 115.132 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 110.542,
+      "end": 115.204
+    },
+    {
+      "id": "s30",
+      "speaker": "david",
+      "text": "Para muchas personas con dificultades visuales o de lectura, son una auténtica liberación.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 115.464, "e": 115.75 },
+        { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 115.75, "e": 116.15 },
+        { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true, "s": 116.15, "e": 116.665 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 116.665, "e": 116.894 },
+        {
+          "t": "dificultades",
+          "l": "dificultad",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 116.893,
+          "e": 117.636
+        },
+        { "t": "visuales", "l": "visual", "p": "ADJ", "w": true, "sp": true, "s": 117.636, "e": 118.151 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 118.151, "e": 118.265 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 118.265, "e": 118.437 },
+        { "t": "lectura", "l": "lectura", "p": "NOUN", "w": true, "s": 118.437, "e": 118.894 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 119.064, "e": 119.314 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 119.314, "e": 119.564 },
+        { "t": "auténtica", "l": "auténtico", "p": "ADJ", "w": true, "sp": true, "s": 119.563, "e": 120.187 },
+        { "t": "liberación", "l": "liberación", "p": "NOUN", "w": true, "s": 120.187, "e": 120.874 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 115.454,
+      "end": 120.964
+    },
+    {
+      "id": "s31",
+      "speaker": "sara",
+      "text": "Entonces, ¿qué recomendarías a quien estudia?",
+      "tokens": [
+        { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true, "s": 121.374, "e": 121.914 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 121.914, "e": 122.154 },
+        {
+          "t": "recomendarías",
+          "l": "recomendar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 122.154,
+          "e": 122.994
+        },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 122.994, "e": 123.114 },
+        { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true, "s": 123.114, "e": 123.474 },
+        { "t": "estudia", "l": "estudiar", "p": "VERB", "w": true, "s": 123.474, "e": 123.954 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 121.364,
+      "end": 124.03
+    },
+    {
+      "id": "s32",
+      "speaker": "david",
+      "text": "Elegir el soporte según el objetivo.",
+      "tokens": [
+        { "t": "Elegir", "l": "elegir", "p": "VERB", "w": true, "sp": true, "s": 124.44, "e": 124.844 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 124.844, "e": 125.017 },
+        { "t": "soporte", "l": "soportar", "p": "VERB", "w": true, "sp": true, "s": 125.018, "e": 125.48 },
+        { "t": "según", "l": "según", "p": "ADP", "w": true, "sp": true, "s": 125.48, "e": 125.827 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 125.827, "e": 126 },
+        { "t": "objetivo", "l": "objetivo", "p": "NOUN", "w": true, "s": 126, "e": 126.52 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 124.43,
+      "end": 126.584
+    },
+    {
+      "id": "s33",
+      "speaker": "david",
+      "text": "Para hojear o consultar algo rápido, la pantalla va muy bien.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 126.844, "e": 127.126 },
+        { "t": "hojear", "l": "hojear", "p": "NOUN", "w": true, "sp": true, "s": 127.126, "e": 127.521 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 127.521, "e": 127.634 },
+        { "t": "consultar", "l": "consultar", "p": "VERB", "w": true, "sp": true, "s": 127.633, "e": 128.197 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 128.197, "e": 128.479 },
+        { "t": "rápido", "l": "rápido", "p": "ADJ", "w": true, "s": 128.479, "e": 128.874 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 129.024, "e": 129.222 },
+        { "t": "pantalla", "l": "pantalla", "p": "NOUN", "w": true, "sp": true, "s": 129.222, "e": 129.815 },
+        { "t": "va", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 129.814, "e": 130.012 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 130.012, "e": 130.275 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 130.275, "e": 130.604 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 126.834,
+      "end": 130.695
+    },
+    {
+      "id": "s34",
+      "speaker": "david",
+      "text": "Para estudiar un tema a fondo, el papel sigue teniendo ventaja.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 130.955, "e": 131.222 },
+        { "t": "estudiar", "l": "estudiar", "p": "VERB", "w": true, "sp": true, "s": 131.222, "e": 131.702 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 131.702, "e": 131.862 },
+        { "t": "tema", "l": "tema", "p": "NOUN", "w": true, "sp": true, "s": 131.862, "e": 132.129 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 132.128, "e": 132.235 },
+        { "t": "fondo", "l": "fondo", "p": "NOUN", "w": true, "s": 132.235, "e": 132.555 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 132.775, "e": 132.951 },
+        { "t": "papel", "l": "papel", "p": "NOUN", "w": true, "sp": true, "s": 132.951, "e": 133.304 },
+        { "t": "sigue", "l": "seguir", "p": "VERB", "w": true, "sp": true, "s": 133.304, "e": 133.657 },
+        { "t": "teniendo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 133.656, "e": 134.185 },
+        { "t": "ventaja", "l": "ventaja", "p": "NOUN", "w": true, "s": 134.185, "e": 134.655 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 130.945,
+      "end": 134.752
+    },
+    {
+      "id": "s35",
+      "speaker": "david",
+      "text": "Y, si hay que leer en pantalla, conviene hacerlo despacio, sin notificaciones, y tomar notas a mano.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "s": 135.022, "e": 135.145 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 135.145, "e": 135.33 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 135.33, "e": 135.577 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 135.577, "e": 135.824 },
+        { "t": "leer", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 135.824, "e": 136.132 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 136.132, "e": 136.317 },
+        { "t": "pantalla", "l": "pantalla", "p": "NOUN", "w": true, "s": 136.317, "e": 136.872 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "conviene", "l": "convenir", "p": "VERB", "w": true, "sp": true, "s": 136.872, "e": 137.427 },
+        { "t": "hacerlo", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 137.427, "e": 137.92 },
+        { "t": "despacio", "l": "despacio", "p": "ADV", "w": true, "s": 137.92, "e": 138.475 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 138.475, "e": 138.722 },
+        { "t": "notificaciones", "l": "notificación", "p": "NOUN", "w": true, "s": 138.722, "e": 139.647 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 139.647, "e": 139.77 },
+        { "t": "tomar", "l": "tomar", "p": "VERB", "w": true, "sp": true, "s": 139.77, "e": 140.14 },
+        { "t": "notas", "l": "notar", "p": "VERB", "w": true, "sp": true, "s": 140.14, "e": 140.51 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 140.51, "e": 140.633 },
+        { "t": "mano", "l": "mano", "p": "NOUN", "w": true, "s": 140.634, "e": 140.942 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 135.002,
+      "end": 141
+    },
+    {
+      "id": "s36",
+      "speaker": "sara",
+      "text": "O sea, que lo importante no es tanto el soporte como la actitud con la que leemos.",
+      "tokens": [
+        { "t": "O", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 141.41, "e": 141.519 },
+        { "t": "sea", "l": "ser", "p": "AUX", "w": true, "s": 141.519, "e": 141.737 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 141.737, "e": 141.955 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 141.954, "e": 142.117 },
+        {
+          "t": "importante",
+          "l": "importante",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 142.118,
+          "e": 142.717
+        },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 142.717, "e": 142.88 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 142.88, "e": 143.043 },
+        { "t": "tanto", "l": "tanto", "p": "ADV", "w": true, "sp": true, "s": 143.043, "e": 143.37 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 143.37, "e": 143.533 },
+        { "t": "soporte", "l": "soportar", "p": "VERB", "w": true, "sp": true, "s": 143.533, "e": 143.969 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 143.969, "e": 144.241 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 144.241, "e": 144.404 },
+        { "t": "actitud", "l": "actitud", "p": "NOUN", "w": true, "sp": true, "s": 144.404, "e": 144.84 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 144.84, "e": 145.058 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 145.058, "e": 145.221 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 145.221, "e": 145.439 },
+        { "t": "leemos", "l": "leer", "p": "VERB", "w": true, "s": 145.439, "e": 145.82 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 141.4,
+      "end": 145.9
+    },
+    {
+      "id": "s37",
+      "speaker": "david",
+      "text": "Esa sería la lección principal.",
+      "tokens": [
+        { "t": "Esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 146.31, "e": 146.555 },
+        { "t": "sería", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 146.555, "e": 146.923 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 146.923, "e": 147.107 },
+        { "t": "lección", "l": "lección", "p": "NOUN", "w": true, "sp": true, "s": 147.107, "e": 147.597 },
+        { "t": "principal", "l": "principal", "p": "ADJ", "w": true, "s": 147.597, "e": 148.21 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 146.3,
+      "end": 148.287
+    },
+    {
+      "id": "s38",
+      "speaker": "david",
+      "text": "La pantalla no nos vuelve peores lectores por sí sola.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 148.547, "e": 148.734 },
+        { "t": "pantalla", "l": "pantalla", "p": "NOUN", "w": true, "sp": true, "s": 148.734, "e": 149.296 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 149.296, "e": 149.483 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 149.483, "e": 149.733 },
+        { "t": "vuelve", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 149.733, "e": 150.17 },
+        { "t": "peores", "l": "peor", "p": "ADJ", "w": true, "sp": true, "s": 150.17, "e": 150.607 },
+        { "t": "lectores", "l": "lector", "p": "NOUN", "w": true, "sp": true, "s": 150.606, "e": 151.168 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 151.168, "e": 151.418 },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "sp": true, "s": 151.418, "e": 151.605 },
+        { "t": "sola", "l": "soler", "p": "VERB", "w": true, "s": 151.605, "e": 151.917 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 148.537,
+      "end": 152.013
+    },
+    {
+      "id": "s39",
+      "speaker": "david",
+      "text": "Lo que nos perjudica es la prisa que asociamos a ella.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 152.273, "e": 152.43 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 152.43, "e": 152.64 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 152.64, "e": 152.85 },
+        {
+          "t": "perjudica",
+          "l": "perjudicar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 152.849,
+          "e": 153.373
+        },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 153.374, "e": 153.531 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 153.531, "e": 153.688 },
+        { "t": "prisa", "l": "prisa", "p": "NOUN", "w": true, "sp": true, "s": 153.688, "e": 154.002 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 154.002, "e": 154.212 },
+        { "t": "asociamos", "l": "asociar", "p": "VERB", "w": true, "sp": true, "s": 154.212, "e": 154.736 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 154.736, "e": 154.841 },
+        { "t": "ella", "l": "ella", "p": "PRON", "w": true, "s": 154.841, "e": 155.103 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 152.263,
+      "end": 155.193
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "soporte",
+      "surface": "soporte",
+      "pos": "noun",
+      "def_en": "medio material en el que se presenta un texto",
+      "def_es": { "en": "medium, format", "fr": "support", "zh": "载体", "ja": "媒体" },
+      "ref": "s32"
+    },
+    {
+      "lemma": "leer en diagonal",
+      "surface": "Leemos en diagonal",
+      "pos": "phrase",
+      "def_en": "leer muy deprisa, sin detenerse",
+      "def_es": { "en": "to skim", "fr": "lire en diagonale", "zh": "粗略浏览", "ja": "斜め読みする" },
+      "ref": "s14"
+    },
+    {
+      "lemma": "sobrestimar",
+      "surface": "sobrestimar",
+      "pos": "verb",
+      "def_en": "creer que algo es mayor de lo que es",
+      "def_es": { "en": "to overestimate", "fr": "surestimer", "zh": "高估", "ja": "過大評価する" },
+      "ref": "s17"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Cuál es la conclusión general de David?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "It matters, but with nuances." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Leer en pantalla es siempre mucho peor que en papel" },
+        { "id": "b", "text": "El soporte influye, pero de forma matizada" },
+        { "id": "c", "text": "No existe ninguna diferencia entre los dos formatos" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿En qué tipo de textos se nota más la diferencia?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "Long, complex texts." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En los mensajes cortos que se mandan entre amigos" },
+        { "id": "b", "text": "En las noticias deportivas de los periódicos" },
+        { "id": "c", "text": "En los extensos y difíciles" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué ha ocurrido con la diferencia a lo largo del tiempo?",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "It has grown." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Ha aumentado en lugar de reducirse" },
+        { "id": "b", "text": "Ha desaparecido por completo entre los más jóvenes" },
+        { "id": "c", "text": "Se ha mantenido igual desde hace décadas" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Los lectores de pantalla suelen creer que han entendido menos de lo que realmente entienden.",
+      "evidence": ["s17"],
+      "rationale_es": { "en": "They overestimate." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Por qué ayuda el libro en papel a recordar?",
+      "evidence": ["s23"],
+      "rationale_es": { "en": "It gives a physical map." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tiene la letra más grande que la de los móviles" },
+        { "id": "b", "text": "Ofrece una referencia física de la información" },
+        { "id": "c", "text": "Obliga a leer siempre en voz alta" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Qué ventaja de lo digital destaca David?",
+      "evidence": ["s30"],
+      "rationale_es": { "en": "It helps people with reading or visual difficulties." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Hace que los estudiantes saquen mejores notas" },
+        { "id": "b", "text": "Es mucho más barato fabricar libros electrónicos" },
+        { "id": "c", "text": "Ayuda a quien tiene problemas para leer" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s39"],
+      "rationale_es": { "en": "*Prisa*: haste." },
+      "type": "gap_fill",
+      "text": "Según David, lo que nos perjudica es la {{1}} que asociamos a la pantalla.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["prisa"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abordar", "absoluto", "aceptar", "acostumbrarse", "actitud", "adelantar", "ahora", "algo", "ampliar",
+    "antes", "análisis", "aparecer", "arriba", "asociar", "así", "aunque", "auténtico", "ayudar", "año",
+    "bien", "bolsillo", "breve", "buscar", "claro", "clave", "coincidir", "comer", "como", "complejo",
+    "comprensión", "con", "conclusión", "confianza", "constante", "consultar", "contradecir", "convenir",
+    "cualquier", "cuando", "curiosamente", "dar", "dato", "de", "decena", "decir", "demonizar", "desaparecer",
+    "deslizarse", "despacio", "diagonal", "diferencia", "dificultad", "digital", "dispositivo", "el", "elegir",
+    "ella", "ellos", "empezar", "en", "enorme", "entender", "entonces", "ese", "especie", "estar", "esto",
+    "estudiar", "estudio", "exacto", "exceso", "fin", "final", "fondo", "físico", "generación", "haber",
+    "habituado", "hacer", "hallazgo", "hipótesis", "hojear", "hoy", "hábito", "idea", "igual", "importante",
+    "influir", "informativo", "interesante", "investigación", "ir", "izquierda", "largo", "lección", "lector",
+    "lectura", "leer", "letra", "liberación", "libro", "llevar", "luego", "mano", "mapa", "mayor", "mejor",
+    "memoria", "menor", "mensaje", "menudo", "mucho", "muy", "más", "no", "nosotros", "nostálgico", "notar",
+    "noticia", "notificación", "nuevo", "o", "objetivo", "objeto", "palabra", "pantalla", "papel", "para",
+    "parecer", "peor", "perjudicar", "permitir", "pero", "persona", "por", "predisponer", "pregunta",
+    "principal", "principio", "prisa", "propio", "prácticamente", "página", "párrafo", "que", "quien", "qué",
+    "reciente", "recomendar", "recordar", "referencia", "responder", "reunir", "revisar", "rápido", "saber",
+    "saltar", "se", "seguir", "seguro", "según", "sencillo", "sentir", "ser", "si", "sin", "sobrestimar",
+    "soler", "soportar", "superficial", "también", "tampoco", "tan", "tanto", "tema", "tender", "tener",
+    "terminar", "texto", "tipo", "tomar", "trasladar", "tratar", "un", "usar", "varios", "ventaja", "visual",
+    "volver", "y", "él"
+  ],
+  "difficulty": 1630,
+  "qa": {
+    "coverage_by_level": { "A1": 0.5772, "A2": 0.6911, "B1": 0.8582, "B2": 0.919, "C1": 0.9468, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 10.3,
+    "flesch_reading_ease": 73,
+    "checked_at": "2026-10-19T07:53:05.544Z"
+  },
+  "audio": {
+    "src": "audio/c2/es-c2-lis-008/v1.m4a",
+    "duration_s": 155.193,
+    "wpm": 155,
+    "provider": "piper",
+    "voices": { "sara": "sharvard-f", "david": "sharvard-m" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      1, 0.73, 0.81, 0.69, 0.64, 0.6, 1, 0.81, 0.62, 0.6, 0.86, 0.84, 0.99, 0.74, 1, 0.33, 0.76, 0.73, 0.94,
+      0.96, 0.91, 0.69, 0.68, 0.63, 1, 0.5, 0.26, 0.8, 0.7, 1, 0.44, 1, 0.47, 0.46, 0.42, 0.57, 0.56, 0.74,
+      0.49, 0.98, 0.73, 0.72, 0.55, 1, 0.82, 0.37, 1, 0.71, 0.61, 0.58, 0.51, 0.75, 0.67, 1, 0.77, 0.76, 0.74,
+      0.76, 0.63, 0.57, 0.68, 0.69, 0.76, 0.59, 0.63, 1, 0.56, 0.14, 1, 0.78, 0.96, 0.84, 0.6, 1, 0.77, 0.86,
+      0.71, 0.96, 0.52, 0.87, 0.73, 1, 0.56, 0.83, 0.72, 0.64, 0.72, 0.86, 0.95, 0.88, 0.75, 0.71, 0.88, 1,
+      0.87, 0.92, 0.95, 0.93, 1, 0.57, 0.31, 0.79, 0.9, 1, 0.7, 1, 0.75, 0.73, 0.7, 0.99, 0.84, 1, 0.72, 0.38,
+      0.75, 0.42, 0.66, 0.85, 0.77, 0.17, 1, 0.84, 0.92, 0.26, 1, 0.57, 0.49, 1, 0.75, 0.4, 0.74, 0.43, 0.84,
+      0.88, 1, 0.67, 0.68, 0.67, 0.69, 0.79, 0.82, 1, 0.84, 0.85, 1, 0.89, 0.61, 0.63, 0.77, 0.57, 0.75, 0.83,
+      1, 0.95, 0.74, 0.23, 1, 0.87, 1, 0.76, 0.56, 0.72, 0.72, 0.72, 0.58, 0.72, 0.69, 1, 0.96, 0.96, 0.5,
+      0.73, 1, 0.49, 0.96, 0.7, 0.62, 0.42, 1, 0.5, 0.51, 0.65, 0.74, 0.53, 0.78, 0.65, 0.44, 0.5, 0.9, 1, 0.9,
+      0.73, 0.92, 1, 0.92, 0.66, 0.81, 0.75, 1, 0.64, 0.69, 0.62, 1, 0.65, 0.59, 0.62, 0.49, 0.52, 0.35, 0.91,
+      0.84, 0.69, 0.89, 0.98, 0.5, 0.83, 1, 0.74, 0.62, 0.96, 0.95, 1, 0.99, 0.73, 0.96, 0.24, 0.71, 1, 0.89,
+      1, 0.94, 0.88, 0.99, 0.96, 0.73, 0.73, 0.8, 0.98, 1, 0.88
+    ]
+  }
+}

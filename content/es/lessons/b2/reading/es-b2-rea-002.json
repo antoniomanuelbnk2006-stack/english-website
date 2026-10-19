@@ -805,7 +805,7 @@
           "text": "Si fijas un horario sencillo y lo respetas durante unos meses, notarás los primeros resultados mucho antes de lo que imaginas.",
           "tokens": [
             { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true },
-            { "t": "fijas", "l": "fijar", "p": "VERB", "w": true, "sp": true },
+            { "t": "fijas", "l": "fijo", "p": "ADJ", "w": true, "sp": true },
             { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
             { "t": "horario", "l": "horario", "p": "NOUN", "w": true, "sp": true },
             { "t": "sencillo", "l": "sencillo", "p": "ADJ", "w": true, "sp": true },
@@ -1019,7 +1019,7 @@
     "de", "decisivo", "dedicar", "delante", "demostrar", "desanimarse", "desaparecer", "descubrir", "después",
     "diario", "diferente", "divertir", "domingo", "durante", "día", "edad", "el", "elegir", "ellos", "embargo",
     "empezar", "en", "enseñar", "entender", "entre", "equivocarse", "error", "escribir", "escuchar", "esto",
-    "estudiar", "estudio", "existir", "experto", "extranjero", "fallo", "falta", "fijar", "forma", "formar",
+    "estudiar", "estudio", "existir", "experto", "extranjero", "fallo", "falta", "fijo", "forma", "formar",
     "frase", "frecuente", "funcionar", "fórmula", "ganar", "gramática", "gustar", "hablar", "hacer",
     "herramienta", "hora", "horario", "idea", "idioma", "imaginar", "imposible", "inesperado", "interesar",
     "investigación", "ir", "leer", "lengua", "libro", "mal", "mantener", "mayor", "mejor", "mejorar",
@@ -1036,10 +1036,10 @@
   ],
   "difficulty": 1256,
   "qa": {
-    "coverage_by_level": { "A1": 0.6091, "A2": 0.6984, "B1": 0.8313, "B2": 1, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.6091, "A2": 0.7103, "B1": 0.8452, "B2": 1, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 14.6,
     "flesch_reading_ease": 71.3,
-    "checked_at": "2026-10-18T22:29:03.857Z"
+    "checked_at": "2026-10-19T08:13:23.410Z"
   }
 }

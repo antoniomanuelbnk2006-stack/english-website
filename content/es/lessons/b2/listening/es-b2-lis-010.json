@@ -1,0 +1,882 @@
+{
+  "id": "es-b2-lis-010",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u01",
+  "series": "es-b2-u01-vivienda-jovenes",
+  "skill": "listening",
+  "genre": "news",
+  "title": "Los jóvenes y la vivienda",
+  "summary_es": {
+    "en": "A news report on why young people leave home later and what solutions are being discussed.",
+    "fr": "Un reportage sur les raisons pour lesquelles les jeunes quittent le foyer plus tard et les solutions envisagées.",
+    "zh": "一则新闻报道：年轻人为何越来越晚离家，以及正在讨论的解决办法。",
+    "ja": "若者が実家を出るのが遅くなっている理由と、議論されている対策についてのニュースです。"
+  },
+  "topic": "society",
+  "tags": ["vivienda", "jóvenes", "sociedad"],
+  "can_do": ["L-B2-03"],
+  "grammar_focus": [],
+  "vocab_focus": ["emancipación", "salario", "alquiler", "ayuda"],
+  "est_minutes": 10,
+  "prediction_prompt": "¿A qué edad crees que se van los jóvenes de casa de sus padres en tu país?",
+  "pre_teach": ["emanciparse", "precariedad"],
+  "speakers": [
+    { "id": "lucia", "name": "Lucía", "accent": "es-ES", "gender": "female" },
+    { "id": "andres", "name": "Andrés", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 135,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "lucia",
+      "text": "Buenas noches.",
+      "tokens": [
+        { "t": "Buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.6 },
+        { "t": "noches", "l": "noche", "p": "NOUN", "w": true, "s": 0.6, "e": 1.19 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.261
+    },
+    {
+      "id": "s2",
+      "speaker": "lucia",
+      "text": "Abrimos el informativo con un dato que preocupa a muchas familias.",
+      "tokens": [
+        { "t": "Abrimos", "l": "abrir", "p": "VERB", "w": true, "sp": true, "s": 1.521, "e": 2.115 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 2.115, "e": 2.338 },
+        { "t": "informativo", "l": "informativo", "p": "ADJ", "w": true, "sp": true, "s": 2.338, "e": 3.229 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 3.229, "e": 3.526 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 3.526, "e": 3.749 },
+        { "t": "dato", "l": "dato", "p": "NOUN", "w": true, "sp": true, "s": 3.748, "e": 4.119 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 4.119, "e": 4.416 },
+        { "t": "preocupa", "l": "preocuparse", "p": "VERB", "w": true, "sp": true, "s": 4.416, "e": 5.084 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 5.085, "e": 5.233 },
+        { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 5.233, "e": 5.753 },
+        { "t": "familias", "l": "familia", "p": "NOUN", "w": true, "s": 5.753, "e": 6.421 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.511,
+      "end": 6.474
+    },
+    {
+      "id": "s3",
+      "speaker": "lucia",
+      "text": "Los jóvenes españoles se van de casa de sus padres, de media, a los treinta años.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 6.724, "e": 7.033 },
+        { "t": "jóvenes", "l": "joven", "p": "NOUN", "w": true, "sp": true, "s": 7.033, "e": 7.652 },
+        { "t": "españoles", "l": "español", "p": "ADJ", "w": true, "sp": true, "s": 7.652, "e": 8.425 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 8.426, "e": 8.658 },
+        { "t": "van", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 8.658, "e": 8.967 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 8.967, "e": 9.199 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true, "s": 9.199, "e": 9.586 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 9.586, "e": 9.818 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 9.818, "e": 10.127 },
+        { "t": "padres", "l": "padre", "p": "NOUN", "w": true, "s": 10.127, "e": 10.668 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 10.668, "e": 10.9 },
+        { "t": "media", "l": "medio", "p": "ADJ", "w": true, "s": 10.9, "e": 11.364 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 11.365, "e": 11.52 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.519, "e": 11.828 },
+        { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true, "s": 11.829, "e": 12.448 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 12.447, "e": 12.834 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.724,
+      "end": 12.942
+    },
+    {
+      "id": "s4",
+      "speaker": "lucia",
+      "text": "Es una de las edades más altas de Europa.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 13.202, "e": 13.434 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 13.434, "e": 13.743 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 13.743, "e": 13.975 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 13.975, "e": 14.284 },
+        { "t": "edades", "l": "edad", "p": "NOUN", "w": true, "sp": true, "s": 14.284, "e": 14.825 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 14.826, "e": 15.135 },
+        { "t": "altas", "l": "alto", "p": "ADJ", "w": true, "sp": true, "s": 15.135, "e": 15.599 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 15.599, "e": 15.831 },
+        { "t": "Europa", "l": "europa", "p": "PROPN", "w": false, "s": 15.831, "e": 16.372 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.192,
+      "end": 16.437
+    },
+    {
+      "id": "s5",
+      "speaker": "lucia",
+      "text": "En países como Suecia o Dinamarca, la mayoría se independiza antes de los veintidós.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 16.697, "e": 16.931 },
+        { "t": "países", "l": "país", "p": "NOUN", "w": true, "sp": true, "s": 16.931, "e": 17.477 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 17.476, "e": 17.866 },
+        { "t": "Suecia", "l": "suecia", "p": "PROPN", "w": false, "sp": true, "s": 17.866, "e": 18.412 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 18.412, "e": 18.568 },
+        { "t": "Dinamarca", "l": "dinamarca", "p": "PROPN", "w": false, "s": 18.568, "e": 19.347 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 19.567, "e": 19.8 },
+        { "t": "mayoría", "l": "mayoría", "p": "NOUN", "w": true, "sp": true, "s": 19.8, "e": 20.42 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 20.42, "e": 20.653 },
+        {
+          "t": "independiza",
+          "l": "independizarse",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 20.653,
+          "e": 21.584
+        },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true, "s": 21.583, "e": 22.048 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 22.049, "e": 22.282 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 22.281, "e": 22.591 },
+        { "t": "veintidós", "l": "veintidós", "p": "NUM", "w": false, "s": 22.591, "e": 23.367 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.687,
+      "end": 23.462
+    },
+    {
+      "id": "s6",
+      "speaker": "lucia",
+      "text": "Andrés, ¿qué explica esta diferencia?",
+      "tokens": [
+        { "t": "Andrés", "l": "andrés", "p": "PROPN", "w": false, "s": 23.722, "e": 24.322 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 24.322, "e": 24.665 },
+        { "t": "explica", "l": "explicar", "p": "VERB", "w": true, "sp": true, "s": 24.665, "e": 25.351 },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 25.351, "e": 25.78 },
+        { "t": "diferencia", "l": "diferencia", "p": "NOUN", "w": true, "s": 25.779, "e": 26.722 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.712,
+      "end": 26.809
+    },
+    {
+      "id": "s7",
+      "speaker": "andres",
+      "text": "Según el informe publicado hoy, hay dos causas principales.",
+      "tokens": [
+        { "t": "Según", "l": "según", "p": "ADP", "w": true, "sp": true, "s": 27.209, "e": 27.592 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 27.592, "e": 27.784 },
+        { "t": "informe", "l": "informar", "p": "VERB", "w": true, "sp": true, "s": 27.784, "e": 28.295 },
+        { "t": "publicado", "l": "publicar", "p": "VERB", "w": true, "sp": true, "s": 28.295, "e": 28.934 },
+        { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "s": 28.934, "e": 29.189 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 29.339, "e": 29.618 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 29.618, "e": 29.897 },
+        { "t": "causas", "l": "causar", "p": "VERB", "w": true, "sp": true, "s": 29.896, "e": 30.383 },
+        { "t": "principales", "l": "principal", "p": "ADJ", "w": true, "s": 30.383, "e": 31.219 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 27.209,
+      "end": 31.3
+    },
+    {
+      "id": "s8",
+      "speaker": "andres",
+      "text": "La primera es el precio del alquiler, que ha subido casi un cuarenta por ciento en diez años.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 31.585, "e": 31.746 },
+        { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 31.746, "e": 32.174 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 32.174, "e": 32.335 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 32.334, "e": 32.495 },
+        { "t": "precio", "l": "precio", "p": "NOUN", "w": true, "sp": true, "s": 32.495, "e": 32.87 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 32.869, "e": 33.083 },
+        { "t": "alquiler", "l": "alquiler", "p": "NOUN", "w": true, "s": 33.083, "e": 33.565 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 33.965, "e": 34.196 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 34.196, "e": 34.369 },
+        { "t": "subido", "l": "subir", "p": "VERB", "w": true, "sp": true, "s": 34.37, "e": 34.775 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 34.774, "e": 35.063 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 35.064, "e": 35.237 },
+        { "t": "cuarenta", "l": "cuarenta", "p": "NUM", "w": false, "sp": true, "s": 35.237, "e": 35.757 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 35.757, "e": 35.988 },
+        { "t": "ciento", "l": "cien", "p": "NUM", "w": false, "sp": true, "s": 35.989, "e": 36.394 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 36.393, "e": 36.566 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true, "s": 36.567, "e": 36.856 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 36.856, "e": 37.145 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.55,
+      "end": 37.218
+    },
+    {
+      "id": "s9",
+      "speaker": "andres",
+      "text": "La segunda son los salarios.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 37.5, "e": 37.716 },
+        { "t": "segunda", "l": "segundo", "p": "NUM", "w": false, "sp": true, "s": 37.716, "e": 38.293 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 38.294, "e": 38.583 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 38.582, "e": 38.871 },
+        { "t": "salarios", "l": "salario", "p": "NOUN", "w": true, "s": 38.871, "e": 39.52 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 37.468,
+      "end": 39.586
+    },
+    {
+      "id": "s10",
+      "speaker": "andres",
+      "text": "Muchos jóvenes tienen contratos temporales y cobran poco.",
+      "tokens": [
+        { "t": "Muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 39.856, "e": 40.302 },
+        { "t": "jóvenes", "l": "joven", "p": "NOUN", "w": true, "sp": true, "s": 40.302, "e": 40.811 },
+        { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 40.811, "e": 41.257 },
+        { "t": "contratos", "l": "contrato", "p": "NOUN", "w": true, "sp": true, "s": 41.257, "e": 41.894 },
+        { "t": "temporales", "l": "temporal", "p": "ADJ", "w": true, "sp": true, "s": 41.894, "e": 42.595 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 42.594, "e": 42.721 },
+        { "t": "cobran", "l": "cobrar", "p": "VERB", "w": true, "sp": true, "s": 42.722, "e": 43.168 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "s": 43.168, "e": 43.486 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 39.836,
+      "end": 43.566
+    },
+    {
+      "id": "s11",
+      "speaker": "andres",
+      "text": "Un joven que vive solo tendría que dedicar más de la mitad de su sueldo al alquiler.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 43.851, "e": 44.036 },
+        { "t": "joven", "l": "joven", "p": "NOUN", "w": true, "sp": true, "s": 44.036, "e": 44.405 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 44.405, "e": 44.651 },
+        { "t": "vive", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 44.651, "e": 44.959 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 44.959, "e": 45.267 },
+        { "t": "tendría", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 45.267, "e": 45.759 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 45.759, "e": 46.005 },
+        { "t": "dedicar", "l": "dedicar", "p": "VERB", "w": true, "sp": true, "s": 46.005, "e": 46.497 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 46.498, "e": 46.744 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 46.744, "e": 46.929 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 46.928, "e": 47.113 },
+        { "t": "mitad", "l": "mitad", "p": "NOUN", "w": true, "sp": true, "s": 47.113, "e": 47.482 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 47.482, "e": 47.667 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 47.667, "e": 47.852 },
+        { "t": "sueldo", "l": "sueldo", "p": "NOUN", "w": true, "sp": true, "s": 47.852, "e": 48.283 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 48.282, "e": 48.467 },
+        { "t": "alquiler", "l": "alquiler", "p": "NOUN", "w": true, "s": 48.467, "e": 49.021 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 43.816,
+      "end": 49.163
+    },
+    {
+      "id": "s12",
+      "speaker": "lucia",
+      "text": "Hemos hablado con algunos de ellos en las calles de Madrid.",
+      "tokens": [
+        { "t": "Hemos", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 49.573, "e": 49.959 },
+        { "t": "hablado", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 49.959, "e": 50.474 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 50.475, "e": 50.733 },
+        { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 50.732, "e": 51.247 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 51.248, "e": 51.441 },
+        { "t": "ellos", "l": "ellos", "p": "PRON", "w": true, "sp": true, "s": 51.441, "e": 51.827 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 51.827, "e": 52.02 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 52.02, "e": 52.278 },
+        { "t": "calles", "l": "calle", "p": "NOUN", "w": true, "sp": true, "s": 52.278, "e": 52.729 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 52.729, "e": 52.922 },
+        { "t": "Madrid", "l": "madrid", "p": "PROPN", "w": false, "s": 52.922, "e": 53.373 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 49.563,
+      "end": 53.447
+    },
+    {
+      "id": "s13",
+      "speaker": "andres",
+      "text": "Clara tiene veintiocho años y es enfermera.",
+      "tokens": [
+        { "t": "Clara", "l": "clara", "p": "PROPN", "w": false, "sp": true, "s": 53.847, "e": 54.232 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 54.232, "e": 54.617 },
+        { "t": "veintiocho", "l": "veintiocho", "p": "NUM", "w": false, "sp": true, "s": 54.617, "e": 55.323 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 55.323, "e": 55.644 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 55.644, "e": 55.772 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 55.773, "e": 55.966 },
+        { "t": "enfermera", "l": "enfermero", "p": "NOUN", "w": true, "s": 55.965, "e": 56.607 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 53.847,
+      "end": 56.685
+    },
+    {
+      "id": "s14",
+      "speaker": "andres",
+      "text": "Trabaja a tiempo completo, pero sigue viviendo con sus padres.",
+      "tokens": [
+        { "t": "Trabaja", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 56.945, "e": 57.477 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 57.477, "e": 57.61 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true, "s": 57.61, "e": 58.076 },
+        { "t": "completo", "l": "completo", "p": "ADJ", "w": true, "s": 58.076, "e": 58.675 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 58.895, "e": 59.195 },
+        { "t": "sigue", "l": "seguir", "p": "VERB", "w": true, "sp": true, "s": 59.195, "e": 59.555 },
+        { "t": "viviendo", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 59.555, "e": 60.095 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 60.095, "e": 60.335 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 60.335, "e": 60.575 },
+        { "t": "padres", "l": "padre", "p": "NOUN", "w": true, "s": 60.575, "e": 60.995 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.935,
+      "end": 61.057
+    },
+    {
+      "id": "s15",
+      "speaker": "andres",
+      "text": "Dice que quiere ahorrar para la entrada de un piso, porque pagar un alquiler le parece tirar el dinero.",
+      "tokens": [
+        { "t": "Dice", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 61.347, "e": 61.633 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 61.633, "e": 61.862 },
+        { "t": "quiere", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 61.861, "e": 62.261 },
+        { "t": "ahorrar", "l": "ahorrar", "p": "VERB", "w": true, "sp": true, "s": 62.262, "e": 62.719 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 62.719, "e": 63.005 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 63.005, "e": 63.176 },
+        { "t": "entrada", "l": "entrar", "p": "VERB", "w": true, "sp": true, "s": 63.176, "e": 63.633 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 63.633, "e": 63.804 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 63.805, "e": 63.976 },
+        { "t": "piso", "l": "piso", "p": "NOUN", "w": true, "s": 63.976, "e": 64.262 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 64.262, "e": 64.662 },
+        { "t": "pagar", "l": "pagar", "p": "VERB", "w": true, "sp": true, "s": 64.662, "e": 65.005 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 65.005, "e": 65.176 },
+        { "t": "alquiler", "l": "alquiler", "p": "NOUN", "w": true, "sp": true, "s": 65.177, "e": 65.691 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 65.691, "e": 65.862 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 65.862, "e": 66.262 },
+        { "t": "tirar", "l": "tirar", "p": "VERB", "w": true, "sp": true, "s": 66.262, "e": 66.605 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 66.605, "e": 66.776 },
+        { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true, "s": 66.777, "e": 67.177 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 61.307,
+      "end": 67.256
+    },
+    {
+      "id": "s16",
+      "speaker": "andres",
+      "text": "Sus padres la apoyan, pero reconoce que a veces echa de menos tener su propio espacio.",
+      "tokens": [
+        { "t": "Sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 67.506, "e": 67.801 },
+        { "t": "padres", "l": "padre", "p": "NOUN", "w": true, "sp": true, "s": 67.801, "e": 68.318 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 68.318, "e": 68.539 },
+        { "t": "apoyan", "l": "apoyar", "p": "VERB", "w": true, "s": 68.539, "e": 69.056 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 69.466, "e": 69.779 },
+        { "t": "reconoce", "l": "reconocer", "p": "VERB", "w": true, "sp": true, "s": 69.779, "e": 70.343 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 70.343, "e": 70.594 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 70.594, "e": 70.719 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 70.719, "e": 71.095 },
+        { "t": "echa", "l": "echar", "p": "VERB", "w": true, "sp": true, "s": 71.095, "e": 71.408 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 71.408, "e": 71.596 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 71.596, "e": 71.972 },
+        { "t": "tener", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 71.972, "e": 72.348 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 72.348, "e": 72.536 },
+        { "t": "propio", "l": "propio", "p": "ADJ", "w": true, "sp": true, "s": 72.536, "e": 72.975 },
+        { "t": "espacio", "l": "espacio", "p": "NOUN", "w": true, "s": 72.975, "e": 73.476 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 67.506,
+      "end": 73.549
+    },
+    {
+      "id": "s17",
+      "speaker": "andres",
+      "text": "Otros optan por compartir piso.",
+      "tokens": [
+        { "t": "Otros", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 73.824, "e": 74.244 },
+        { "t": "optan", "l": "optar", "p": "VERB", "w": true, "sp": true, "s": 74.244, "e": 74.664 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 74.664, "e": 74.944 },
+        { "t": "compartir", "l": "compartir", "p": "VERB", "w": true, "sp": true, "s": 74.944, "e": 75.644 },
+        { "t": "piso", "l": "piso", "p": "NOUN", "w": true, "s": 75.644, "e": 75.994 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 73.799,
+      "end": 76.064
+    },
+    {
+      "id": "s18",
+      "speaker": "andres",
+      "text": "Es el caso de Daniel, un informático que vive con tres compañeros.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 76.345, "e": 76.538 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 76.538, "e": 76.731 },
+        { "t": "caso", "l": "caso", "p": "NOUN", "w": true, "sp": true, "s": 76.731, "e": 77.052 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 77.052, "e": 77.245 },
+        { "t": "Daniel", "l": "daniel", "p": "PROPN", "w": false, "s": 77.245, "e": 77.695 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 77.885, "e": 78.064 },
+        {
+          "t": "informático",
+          "l": "informático",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 78.064,
+          "e": 78.779
+        },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 78.778, "e": 79.016 },
+        { "t": "vive", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 79.016, "e": 79.314 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 79.314, "e": 79.552 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 79.552, "e": 79.85 },
+        { "t": "compañeros", "l": "compañero", "p": "NOUN", "w": true, "s": 79.85, "e": 80.505 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 76.315,
+      "end": 80.584
+    },
+    {
+      "id": "s19",
+      "speaker": "andres",
+      "text": "Reconoce que tiene poca intimidad, pero asegura que es la única forma de vivir en el centro.",
+      "tokens": [
+        { "t": "Reconoce", "l": "reconocer", "p": "VERB", "w": true, "sp": true, "s": 80.834, "e": 81.408 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 81.408, "e": 81.663 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 81.664, "e": 82.047 },
+        { "t": "poca", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 82.047, "e": 82.366 },
+        { "t": "intimidad", "l": "intimidad", "p": "NOUN", "w": true, "s": 82.366, "e": 83.004 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 83.534, "e": 83.83 },
+        { "t": "asegura", "l": "asegurar", "p": "VERB", "w": true, "sp": true, "s": 83.83, "e": 84.303 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 84.303, "e": 84.539 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 84.539, "e": 84.716 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 84.716, "e": 84.893 },
+        { "t": "única", "l": "único", "p": "ADJ", "w": true, "sp": true, "s": 84.894, "e": 85.249 },
+        { "t": "forma", "l": "forma", "p": "NOUN", "w": true, "sp": true, "s": 85.249, "e": 85.604 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 85.603, "e": 85.78 },
+        { "t": "vivir", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 85.781, "e": 86.136 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 86.135, "e": 86.312 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 86.313, "e": 86.49 },
+        { "t": "centro", "l": "centro", "p": "NOUN", "w": true, "s": 86.49, "e": 86.904 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 80.834,
+      "end": 86.981
+    },
+    {
+      "id": "s20",
+      "speaker": "lucia",
+      "text": "¿Y qué proponen los expertos?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 87.391, "e": 87.553 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 87.553, "e": 87.877 },
+        { "t": "proponen", "l": "proponer", "p": "VERB", "w": true, "sp": true, "s": 87.877, "e": 88.607 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 88.607, "e": 88.931 },
+        { "t": "expertos", "l": "experto", "p": "NOUN", "w": true, "s": 88.931, "e": 89.661 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 87.381,
+      "end": 89.756
+    },
+    {
+      "id": "s21",
+      "speaker": "andres",
+      "text": "Coinciden en que hacen falta más viviendas de alquiler a precios razonables.",
+      "tokens": [
+        { "t": "Coinciden", "l": "coincidir", "p": "VERB", "w": true, "sp": true, "s": 90.179, "e": 90.78 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 90.78, "e": 90.96 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 90.961, "e": 91.202 },
+        { "t": "hacen", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 91.201, "e": 91.562 },
+        { "t": "falta", "l": "falta", "p": "NOUN", "w": true, "sp": true, "s": 91.562, "e": 91.923 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 91.923, "e": 92.164 },
+        { "t": "viviendas", "l": "vivienda", "p": "NOUN", "w": true, "sp": true, "s": 92.163, "e": 92.764 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 92.765, "e": 92.945 },
+        { "t": "alquiler", "l": "alquiler", "p": "NOUN", "w": true, "sp": true, "s": 92.945, "e": 93.486 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 93.486, "e": 93.606 },
+        { "t": "precios", "l": "precio", "p": "NOUN", "w": true, "sp": true, "s": 93.607, "e": 94.088 },
+        { "t": "razonables", "l": "razonable", "p": "ADJ", "w": true, "s": 94.088, "e": 94.749 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 90.156,
+      "end": 94.82
+    },
+    {
+      "id": "s22",
+      "speaker": "andres",
+      "text": "Ponen como ejemplo Viena, donde el ayuntamiento es propietario de miles de pisos y los alquila a precios bajos.",
+      "tokens": [
+        { "t": "Ponen", "l": "poner", "p": "VERB", "w": true, "sp": true, "s": 95.099, "e": 95.495 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 95.495, "e": 95.825 },
+        { "t": "ejemplo", "l": "ejemplo", "p": "NOUN", "w": true, "sp": true, "s": 95.825, "e": 96.353 },
+        { "t": "Viena", "l": "viena", "p": "PROPN", "w": false, "s": 96.353, "e": 96.749 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true, "s": 97.199, "e": 97.659 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 97.659, "e": 97.889 },
+        {
+          "t": "ayuntamiento",
+          "l": "ayuntamiento",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 97.888,
+          "e": 98.884
+        },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 98.884, "e": 99.114 },
+        {
+          "t": "propietario",
+          "l": "propietario",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 99.114,
+          "e": 100.033
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 100.033, "e": 100.263 },
+        { "t": "miles", "l": "miles", "p": "NOUN", "w": true, "sp": true, "s": 100.263, "e": 100.723 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 100.722, "e": 100.952 },
+        { "t": "pisos", "l": "piso", "p": "NOUN", "w": true, "sp": true, "s": 100.952, "e": 101.412 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 101.411, "e": 101.564 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 101.565, "e": 101.871 },
+        { "t": "alquila", "l": "alquilar", "p": "VERB", "w": true, "sp": true, "s": 101.871, "e": 102.484 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 102.484, "e": 102.637 },
+        { "t": "precios", "l": "precio", "p": "NOUN", "w": true, "sp": true, "s": 102.637, "e": 103.25 },
+        { "t": "bajos", "l": "bajo", "p": "ADJ", "w": true, "s": 103.249, "e": 103.709 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 95.07,
+      "end": 103.789
+    },
+    {
+      "id": "s23",
+      "speaker": "andres",
+      "text": "El Gobierno, por su parte, ha anunciado una ayuda de doscientos cincuenta euros al mes.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 104.075, "e": 104.255 },
+        { "t": "Gobierno", "l": "gobierno", "p": "NOUN", "w": true, "s": 104.255, "e": 104.795 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 105.055, "e": 105.28 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 105.28, "e": 105.448 },
+        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "s": 105.448, "e": 105.785 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 106.135, "e": 106.318 },
+        { "t": "anunciado", "l": "anunciar", "p": "VERB", "w": true, "sp": true, "s": 106.318, "e": 106.928 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 106.928, "e": 107.172 },
+        { "t": "ayuda", "l": "ayudar", "p": "VERB", "w": true, "sp": true, "s": 107.172, "e": 107.538 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 107.538, "e": 107.721 },
+        {
+          "t": "doscientos",
+          "l": "doscientos",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 107.721,
+          "e": 108.392
+        },
+        { "t": "cincuenta", "l": "cincuenta", "p": "NUM", "w": false, "sp": true, "s": 108.392, "e": 109.002 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "sp": true, "s": 109.002, "e": 109.368 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 109.368, "e": 109.551 },
+        { "t": "mes", "l": "mes", "p": "NOUN", "w": true, "s": 109.551, "e": 109.795 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 104.039,
+      "end": 109.861
+    },
+    {
+      "id": "s24",
+      "speaker": "andres",
+      "text": "Será para los menores de treinta y cinco años.",
+      "tokens": [
+        { "t": "Será", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 110.111, "e": 110.433 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 110.433, "e": 110.755 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 110.754, "e": 111.011 },
+        { "t": "menores", "l": "menor", "p": "ADJ", "w": true, "sp": true, "s": 111.012, "e": 111.527 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 111.527, "e": 111.72 },
+        { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true, "s": 111.72, "e": 112.235 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 112.234, "e": 112.363 },
+        { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true, "s": 112.363, "e": 112.749 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 112.749, "e": 113.071 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 110.111,
+      "end": 113.141
+    },
+    {
+      "id": "s25",
+      "speaker": "andres",
+      "text": "Sin embargo, algunos economistas advierten de un riesgo.",
+      "tokens": [
+        { "t": "Sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 113.391, "e": 113.648 },
+        { "t": "embargo", "l": "embargo", "p": "NOUN", "w": true, "s": 113.648, "e": 114.161 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 114.331, "e": 114.837 },
+        {
+          "t": "economistas",
+          "l": "economista",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 114.837,
+          "e": 115.596
+        },
+        { "t": "advierten", "l": "advertir", "p": "VERB", "w": true, "sp": true, "s": 115.596, "e": 116.229 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 116.229, "e": 116.419 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 116.418, "e": 116.608 },
+        { "t": "riesgo", "l": "riesgo", "p": "NOUN", "w": true, "s": 116.608, "e": 117.051 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 113.391,
+      "end": 117.134
+    },
+    {
+      "id": "s26",
+      "speaker": "andres",
+      "text": "Si no hay más pisos, esas ayudas pueden hacer que los precios suban todavía más.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 117.384, "e": 117.578 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 117.578, "e": 117.772 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 117.771, "e": 118.029 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 118.029, "e": 118.287 },
+        { "t": "pisos", "l": "piso", "p": "NOUN", "w": true, "s": 118.287, "e": 118.674 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "esas", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 119.114, "e": 119.452 },
+        { "t": "ayudas", "l": "ayudar", "p": "VERB", "w": true, "sp": true, "s": 119.452, "e": 119.925 },
+        { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 119.926, "e": 120.399 },
+        { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 120.399, "e": 120.805 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 120.805, "e": 121.076 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 121.075, "e": 121.346 },
+        { "t": "precios", "l": "precio", "p": "NOUN", "w": true, "sp": true, "s": 121.346, "e": 121.887 },
+        { "t": "suban", "l": "subir", "p": "VERB", "w": true, "sp": true, "s": 121.887, "e": 122.293 },
+        { "t": "todavía", "l": "todavía", "p": "ADV", "w": true, "sp": true, "s": 122.292, "e": 122.833 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "s": 122.833, "e": 123.104 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 117.384,
+      "end": 123.173
+    },
+    {
+      "id": "s27",
+      "speaker": "lucia",
+      "text": "Un debate, por tanto, que seguirá abierto.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 123.583, "e": 124.042 },
+        { "t": "debate", "l": "debatir", "p": "VERB", "w": true, "s": 124.042, "e": 125.113 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 125.253, "e": 125.669 },
+        { "t": "tanto", "l": "tanto", "p": "ADV", "w": true, "s": 125.669, "e": 126.293 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 126.483, "e": 126.513 },
+        { "t": "seguirá", "l": "seguir", "p": "VERB", "w": true, "sp": true, "s": 126.513, "e": 126.573 },
+        { "t": "abierto", "l": "abrir", "p": "VERB", "w": true, "s": 126.573, "e": 126.633 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 123.573,
+      "end": 126.743
+    },
+    {
+      "id": "s28",
+      "speaker": "lucia",
+      "text": "Y ahora pasamos a la información internacional.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 127.004, "e": 127.165 },
+        { "t": "ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 127.165, "e": 127.649 },
+        { "t": "pasamos", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 127.649, "e": 128.294 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 128.294, "e": 128.455 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 128.455, "e": 128.697 },
+        {
+          "t": "información",
+          "l": "información",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 128.697,
+          "e": 129.665
+        },
+        { "t": "internacional", "l": "internacional", "p": "ADJ", "w": true, "s": 129.665, "e": 130.794 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 126.994,
+      "end": 130.878
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "independizarse",
+      "surface": "independiza",
+      "pos": "verb",
+      "def_en": "empezar a vivir sin depender de los padres",
+      "def_es": { "en": "to become independent, to leave home", "fr": "s’émanciper", "zh": "独立生活", "ja": "自立する" },
+      "ref": "s5"
+    },
+    {
+      "lemma": "intimidad",
+      "surface": "intimidad",
+      "pos": "noun",
+      "def_en": "vida privada, espacio propio",
+      "def_es": { "en": "privacy", "fr": "intimité", "zh": "隐私", "ja": "プライバシー" },
+      "ref": "s19"
+    },
+    {
+      "lemma": "advertir",
+      "surface": "advierten",
+      "pos": "verb",
+      "def_en": "avisar de un posible problema",
+      "def_es": { "en": "to warn", "fr": "avertir", "zh": "警告", "ja": "警告する" },
+      "ref": "s25"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Cuál es el tema de la noticia?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "Why young people leave home late." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cómo encontrar trabajo en el extranjero" },
+        { "id": "b", "text": "Por qué los jóvenes tardan en irse de casa" },
+        { "id": "c", "text": "Qué estudian los jóvenes en la universidad" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuánto ha subido el alquiler en diez años?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "Almost forty per cent." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Más o menos un diez por ciento al año" },
+        { "id": "b", "text": "Alrededor del cien por cien en total" },
+        { "id": "c", "text": "Cerca de un cuarenta por ciento" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué sigue Clara en casa de sus padres?",
+      "evidence": ["s15"],
+      "rationale_es": { "en": "She is saving to buy a flat." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Quiere juntar dinero para comprar" },
+        { "id": "b", "text": "No ha encontrado ningún trabajo estable" },
+        { "id": "c", "text": "Sus padres necesitan su ayuda en casa" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Daniel vive solo en un piso del centro.",
+      "evidence": ["s18"],
+      "rationale_es": { "en": "He shares with three flatmates." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué ejemplo dan los expertos sobre Viena?",
+      "evidence": ["s22"],
+      "rationale_es": { "en": "The city rents out many cheap flats." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Allí los jóvenes menores de treinta no pagan impuestos" },
+        { "id": "b", "text": "La ciudad alquila muchas viviendas baratas" },
+        { "id": "c", "text": "Allí está prohibido comprar pisos para alquilarlos" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "post",
+      "prompt": "¿Qué temen algunos economistas?",
+      "evidence": ["s26"],
+      "rationale_es": { "en": "That the aid could push prices up." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que los jóvenes dejen de estudiar en la universidad" },
+        { "id": "b", "text": "Que se construyan demasiados pisos en las afueras" },
+        { "id": "c", "text": "Que la ayuda haga subir los precios" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s23"],
+      "rationale_es": { "en": "*Ayuda*: allowance, aid." },
+      "type": "gap_fill",
+      "text": "El Gobierno ofrecerá una {{1}} de doscientos cincuenta euros al mes.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["ayuda"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abrir", "advertir", "ahora", "ahorrar", "algún", "alquilar", "alquiler", "alto", "antes", "anunciar",
+    "apoyar", "asegurar", "ayudar", "ayuntamiento", "año", "bajo", "bueno", "calle", "casa", "casi", "caso",
+    "causar", "centro", "cobrar", "coincidir", "comer", "compartir", "compañero", "completo", "con",
+    "contrato", "dato", "de", "debatir", "decir", "dedicar", "diferencia", "dinero", "donde", "doscientos",
+    "echar", "economista", "edad", "ejemplo", "el", "ellos", "embargo", "en", "enfermero", "entrar", "ese",
+    "espacio", "español", "este", "euro", "experto", "explicar", "falta", "familia", "forma", "gobierno",
+    "haber", "hablar", "hacer", "hoy", "independizarse", "información", "informar", "informativo",
+    "informático", "internacional", "intimidad", "ir", "joven", "mayoría", "medio", "menor", "menos", "mes",
+    "miles", "mitad", "mucho", "más", "no", "noche", "o", "optar", "otro", "padre", "pagar", "para", "parecer",
+    "parte", "pasar", "país", "pero", "piso", "poco", "poder", "poner", "por", "porque", "precio",
+    "preocuparse", "principal", "propietario", "propio", "proponer", "publicar", "que", "querer", "qué",
+    "razonable", "reconocer", "riesgo", "salario", "se", "seguir", "según", "ser", "si", "sin", "solo", "su",
+    "subir", "sueldo", "tanto", "temporal", "tener", "tiempo", "tirar", "todavía", "trabajar", "un", "vez",
+    "vivienda", "vivir", "y", "él", "único"
+  ],
+  "difficulty": 1253,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6551, "A2": 0.8084, "B1": 0.9477, "B2": 0.9965, "C1": 0.9965, "C2": 1 },
+    "off_level_lemmas": ["intimidad"],
+    "avg_sentence_words": 11,
+    "flesch_reading_ease": 79.5,
+    "checked_at": "2026-10-19T07:51:54.858Z"
+  },
+  "audio": {
+    "src": "audio/b2/es-b2-lis-010/v1.m4a",
+    "duration_s": 130.878,
+    "wpm": 141,
+    "provider": "piper",
+    "voices": { "lucia": "sharvard-f", "andres": "davefx-m" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.7, 0.58, 0.66, 0.62, 0.54, 1, 0.9, 0.67, 0.79, 0.57, 0.24, 0.7, 0.83, 0.76, 0.83, 1, 0.57, 0.98,
+      0.69, 0.61, 0.72, 0.62, 0.13, 0.95, 1, 0.91, 0.97, 0.91, 0.96, 0.49, 0.96, 0.56, 1, 0.73, 0.63, 0.88,
+      0.81, 0.74, 0.73, 1, 0.75, 0.51, 0.79, 0.99, 0.79, 1, 0.87, 0.45, 0.64, 0.99, 0.97, 0.97, 0.98, 1, 0.88,
+      0.58, 0.34, 1, 0.94, 0.85, 0.83, 0.96, 0.84, 0.99, 0.99, 0.76, 0.73, 0.99, 0.92, 0.86, 1, 0.1, 0.98, 1,
+      0.89, 0.99, 0.99, 0.8, 0.67, 0.95, 0.98, 0.91, 1, 0.96, 0.96, 0.86, 0.95, 0.94, 0.88, 0.47, 1, 0.96,
+      0.61, 0.9, 0.77, 0.87, 0.34, 1, 0.93, 0.82, 0.89, 0.72, 0.6, 1, 1, 0.93, 0.94, 0.97, 0.95, 1, 0.39, 0.98,
+      0.99, 0.97, 0.77, 0.92, 0.88, 0.94, 0.88, 0.93, 1, 0.6, 0.85, 0.98, 0.91, 0.74, 1, 0.81, 0.96, 0.91,
+      0.87, 0.9, 0.95, 0.6, 1, 0.97, 1, 0.96, 0.21, 1, 0.76, 0.96, 0.95, 0.91, 0.93, 0.67, 0.29, 0.99, 0.91,
+      0.88, 0.81, 0.86, 1, 0.97, 0.99, 0.99, 0.8, 0.57, 0.21, 0.9, 1, 0.69, 0.7, 0.13, 0.95, 0.98, 0.95, 0.98,
+      1, 0.99, 0.86, 0.52, 0.2, 1, 0.74, 0.91, 0.78, 0.82, 0.95, 0.75, 0.91, 0.96, 0.85, 0.84, 0.21, 0.57,
+      0.92, 0.91, 0.8, 0.83, 0.97, 0.64, 1, 0.97, 0.92, 0.85, 0.9, 0.78, 0.88, 0.49, 0.28, 1, 0.9, 0.97, 0.95,
+      0.5, 0.28, 1, 0.9, 0.76, 0.93, 0.97, 0.96, 0.44, 0.99, 1, 0.61, 0.87, 0.91, 0.81, 0.97, 0.79, 0.84, 0.8,
+      0.41, 1, 1, 0.77, 0.57, 0.9, 0.57, 0.38, 1, 0.73, 0.6, 0.61, 0.64, 0.68, 0.54
+    ]
+  }
+}

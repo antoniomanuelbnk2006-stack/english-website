@@ -1,0 +1,380 @@
+{
+  "id": "es-a1-lis-012",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u04",
+  "series": "es-a1-u04-playa",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Comida en la playa",
+  "summary_es": {
+    "en": "A waiter takes the order of a couple at a beach restaurant.",
+    "fr": "Un serveur prend la commande d’un couple dans un restaurant de plage.",
+    "zh": "服务员在海边餐厅为一对情侣点餐。",
+    "ja": "ビーチのレストランで、ウェイターがカップルの注文を聞きます。"
+  },
+  "topic": "food",
+  "tags": ["restaurante", "pedir", "playa"],
+  "can_do": ["L-A1-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["camarero", "ensalada", "agua", "euro"],
+  "est_minutes": 4,
+  "prediction_prompt": "Una pareja come en un restaurante. ¿Qué pide?",
+  "pre_teach": ["menú", "de postre"],
+  "speakers": [
+    { "id": "rosa", "name": "Elena", "accent": "es-ES", "gender": "female" },
+    { "id": "pedro", "name": "Pedro", "accent": "es-ES", "gender": "male" },
+    { "id": "dani", "name": "Daniel", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "pedro",
+      "text": "Buenas tardes. Aquí tiene el menú.",
+      "tokens": [
+        { "t": "Buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.535 },
+        { "t": "tardes", "l": "tarde", "p": "NOUN", "w": true, "s": 0.535, "e": 1.06 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 1.28, "e": 1.591 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 1.591, "e": 1.964 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 1.963, "e": 2.149 },
+        { "t": "menú", "l": "menú", "p": "NOUN", "w": true, "s": 2.149, "e": 2.46 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.56
+    },
+    {
+      "id": "s2",
+      "speaker": "rosa",
+      "text": "Gracias. Hace mucho calor hoy.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 3.28, "e": 3.98 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 4.21, "e": 4.508 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 4.508, "e": 4.865 },
+        { "t": "calor", "l": "calor", "p": "NOUN", "w": true, "sp": true, "s": 4.865, "e": 5.222 },
+        { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "s": 5.222, "e": 5.46 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.26,
+      "end": 5.51
+    },
+    {
+      "id": "s3",
+      "speaker": "dani",
+      "text": "Sí. Necesitamos agua.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 6.21, "e": 6.44 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Necesitamos", "l": "necesitar", "p": "VERB", "w": true, "sp": true, "s": 6.87, "e": 7.654 },
+        { "t": "agua", "l": "agua", "p": "NOUN", "w": true, "s": 7.654, "e": 7.98 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.21,
+      "end": 8.048
+    },
+    {
+      "id": "s4",
+      "speaker": "pedro",
+      "text": "¿Qué quieren?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 8.758, "e": 8.971 },
+        { "t": "quieren", "l": "querer", "p": "VERB", "w": true, "s": 8.971, "e": 9.398 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.748,
+      "end": 9.463
+    },
+    {
+      "id": "s5",
+      "speaker": "rosa",
+      "text": "Una ensalada y agua, por favor.",
+      "tokens": [
+        { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 10.163, "e": 10.478 },
+        { "t": "ensalada", "l": "ensalada", "p": "NOUN", "w": true, "sp": true, "s": 10.478, "e": 11.186 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 11.186, "e": 11.343 },
+        { "t": "agua", "l": "agua", "p": "NOUN", "w": true, "s": 11.343, "e": 11.736 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 11.736, "e": 12.051 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 12.051, "e": 12.523 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.163,
+      "end": 12.663
+    },
+    {
+      "id": "s6",
+      "speaker": "dani",
+      "text": "Para mí, paella.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 13.373, "e": 13.648 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "s": 13.648, "e": 13.813 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "paella", "l": "paella", "p": "NOUN", "w": true, "s": 13.963, "e": 14.313 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.363,
+      "end": 14.389
+    },
+    {
+      "id": "s7",
+      "speaker": "pedro",
+      "text": "Muy bien. ¿Algo más?",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 15.099, "e": 15.419 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 15.419, "e": 15.819 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 16.059, "e": 16.431 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "s": 16.431, "e": 16.729 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.089,
+      "end": 16.773
+    },
+    {
+      "id": "s8",
+      "speaker": "dani",
+      "text": "Sí, una cerveza.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 17.473, "e": 17.689 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 17.689, "e": 17.977 },
+        { "t": "cerveza", "l": "cerveza", "p": "NOUN", "w": true, "s": 17.977, "e": 18.553 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.473,
+      "end": 18.627
+    },
+    {
+      "id": "s9",
+      "speaker": "pedro",
+      "text": "¿Y de postre?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 19.327, "e": 19.46 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 19.46, "e": 19.66 },
+        { "t": "postre", "l": "postre", "p": "NOUN", "w": true, "s": 19.66, "e": 20.127 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.327,
+      "end": 20.23
+    },
+    {
+      "id": "s10",
+      "speaker": "rosa",
+      "text": "Un pastel de manzana.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 20.93, "e": 21.111 },
+        { "t": "pastel", "l": "pastel", "p": "NOUN", "w": true, "sp": true, "s": 21.111, "e": 21.534 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 21.535, "e": 21.716 },
+        { "t": "manzana", "l": "manzana", "p": "NOUN", "w": true, "s": 21.716, "e": 22.2 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.93,
+      "end": 22.259
+    },
+    {
+      "id": "s11",
+      "speaker": "pedro",
+      "text": "Perfecto.",
+      "tokens": [
+        { "t": "Perfecto", "l": "perfecto", "p": "ADJ", "w": true, "s": 22.969, "e": 23.619 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.959,
+      "end": 23.676
+    },
+    {
+      "id": "s12",
+      "speaker": "dani",
+      "text": "Gracias. ¿Cuánto es?",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 24.406, "e": 25.016 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuánto", "l": "cuánto", "p": "PRON", "w": true, "sp": true, "s": 25.496, "e": 25.902 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "s": 25.902, "e": 26.076 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.376,
+      "end": 26.151
+    },
+    {
+      "id": "s13",
+      "speaker": "pedro",
+      "text": "Son veinte euros.",
+      "tokens": [
+        { "t": "Son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 26.861, "e": 27.134 },
+        { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true, "s": 27.134, "e": 27.612 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "s": 27.612, "e": 28.021 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.851,
+      "end": 28.068
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "querer",
+      "surface": "quieren",
+      "pos": "verb",
+      "def_en": "pedir o desear algo",
+      "def_es": { "en": "to want", "fr": "vouloir", "zh": "想要", "ja": "欲しい" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "cerveza",
+      "surface": "cerveza",
+      "pos": "noun",
+      "def_en": "bebida de cebada",
+      "def_es": { "en": "beer", "fr": "bière", "zh": "啤酒", "ja": "ビール" },
+      "ref": "s8"
+    },
+    {
+      "lemma": "pastel",
+      "surface": "pastel",
+      "pos": "noun",
+      "def_en": "dulce que se come de postre",
+      "def_es": { "en": "cake", "fr": "gâteau", "zh": "蛋糕", "ja": "ケーキ" },
+      "ref": "s10"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Dónde están?",
+      "evidence": ["s4", "s13"],
+      "rationale_es": { "en": "They order food: a restaurant." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En una librería del centro" },
+        { "id": "b", "text": "En un restaurante" },
+        { "id": "c", "text": "En una escuela de español" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué pide Elena?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "A salad and water." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una paella" },
+        { "id": "b", "text": "Un bocadillo" },
+        { "id": "c", "text": "Una ensalada" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué bebe Daniel?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "A beer." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una cerveza" },
+        { "id": "b", "text": "Un café con leche" },
+        { "id": "c", "text": "Un té con leche" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Elena pide queso de postre.",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "She asks for an apple cake." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con un número.",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "*Veinte euros*." },
+      "type": "gap_fill",
+      "text": "Pagan {{1}} euros.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["veinte", "20"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Quién pide la cuenta?",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "Daniel asks how much it is." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Elena y Daniel" },
+        { "id": "b", "text": "Daniel" },
+        { "id": "c", "text": "El camarero Pedro" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "agua", "algo", "aquí", "bien", "bueno", "calor", "cerveza", "cuánto", "de", "el", "ensalada", "euro",
+    "favor", "hacer", "hoy", "manzana", "menú", "mucho", "muy", "más", "necesitar", "paella", "para", "pastel",
+    "perfecto", "por", "postre", "querer", "qué", "ser", "tarde", "tener", "un", "y", "yo"
+  ],
+  "difficulty": 667,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 2.6,
+    "flesch_reading_ease": 94.7,
+    "checked_at": "2026-10-19T07:26:48.323Z"
+  },
+  "audio": {
+    "src": "audio/a1/es-a1-lis-012/v1.m4a",
+    "duration_s": 28.068,
+    "wpm": 98,
+    "provider": "piper",
+    "voices": { "rosa": "sharvard-f", "pedro": "sharvard-m", "dani": "davefx-m" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      0.46, 1, 0.7, 0.56, 0.5, 0.66, 0.1, 0.07, 0.1, 0.07, 0.01, 1, 0.09, 0.66, 0.37, 0.75, 0.7, 0.6, 0.45,
+      0.36, 0.25, 0.03, 0, 0, 0, 0, 0, 0.02, 1, 0.98, 0.11, 0.32, 0.27, 0.18, 0.04, 0.03, 0.97, 0.51, 0.74,
+      0.65, 0.66, 0.63, 1, 0.78, 0.77, 0.48, 0.23, 0, 0, 0, 0, 0, 0, 1, 0.8, 0.04, 0, 0, 0.22, 0.94, 0.44,
+      0.66, 1, 0.99, 0.87, 0.96, 0.8, 0.24, 0.06, 0, 0, 0, 0, 0, 0.17, 1, 0.51, 0.81, 0.37, 0.09, 0.05, 0, 0,
+      0, 0, 0, 0.03, 0.76, 0.77, 0.62, 0.58, 0.55, 1, 0.71, 0.59, 0.29, 0.45, 0.78, 0.49, 0.58, 0.28, 0.77,
+      0.58, 0.55, 0.58, 0.37, 0.39, 0.05, 0.01, 0, 0, 0, 0, 0, 0.98, 1, 0.51, 0.59, 0.04, 0.97, 0.58, 0.37,
+      0.06, 0, 0, 0, 0, 0, 0, 0.38, 0.81, 0.86, 1, 0.91, 0.42, 0.06, 0, 0.91, 1, 0.51, 0.7, 0.61, 0.12, 0.04,
+      0, 0, 0, 0, 0, 0.99, 1, 0.07, 0.64, 0.83, 0.45, 0.84, 0.51, 0.46, 0.34, 0.01, 0, 0, 0, 0, 0, 0.96, 1,
+      0.98, 0.97, 0.25, 0.12, 0.15, 0.05, 0, 0, 0, 0, 0, 0.03, 0.74, 0.94, 1, 0.73, 0.79, 0.75, 0.59, 0.16,
+      0.61, 0.4, 0.16, 0.01, 0, 0, 0, 0, 0, 1, 0.8, 0.95, 0.71, 0.09, 0.21, 0.01, 0, 0, 0, 0, 0, 0.98, 1, 0.36,
+      0.51, 0.21, 0.18, 0.02, 0.01, 0, 0.01, 1, 0.69, 0.72, 0.5, 0.24, 0.02, 0, 0, 0, 0, 0, 0.23, 0.84, 1,
+      0.85, 0.76, 0.57, 0.81, 0.54, 0.14, 0.06, 0.06
+    ]
+  }
+}

@@ -105,7 +105,7 @@
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
             { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
-            { "t": "convertido", "l": "convertirse", "p": "VERB", "w": true, "sp": true },
+            { "t": "convertido", "l": "convertir", "p": "VERB", "w": true, "sp": true },
             { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
             { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
             { "t": "trámite", "l": "trámite", "p": "NOUN", "w": true, "sp": true },
@@ -685,7 +685,7 @@
             { "t": "dramatismo", "l": "dramatismo", "p": "NOUN", "w": true, "sp": true },
             { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
             { "t": "evitar", "l": "evitar", "p": "VERB", "w": true, "sp": true },
-            { "t": "convertir", "l": "convertirse", "p": "VERB", "w": true, "sp": true },
+            { "t": "convertir", "l": "convertir", "p": "VERB", "w": true, "sp": true },
             { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true },
             { "t": "desacuerdo", "l": "desacuerdo", "p": "NOUN", "w": true, "sp": true },
             { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
@@ -713,7 +713,7 @@
             { "t": "hábitos", "l": "hábito", "p": "NOUN", "w": true },
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "requieren", "l": "requerir", "p": "VERB", "w": true, "sp": true },
-            { "t": "práctica", "l": "práctica", "p": "NOUN", "w": true, "sp": true },
+            { "t": "práctica", "l": "práctico", "p": "ADJ", "w": true, "sp": true },
             { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
             { "t": "cierta", "l": "cierto", "p": "ADJ", "w": true, "sp": true },
             { "t": "voluntad", "l": "voluntad", "p": "NOUN", "w": true, "sp": true },
@@ -766,7 +766,7 @@
             { "t": "respetuosa", "l": "respetuoso", "p": "ADJ", "w": true, "sp": true },
             { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true },
             { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true },
-            { "t": "convertido", "l": "convertirse", "p": "VERB", "w": true, "sp": true },
+            { "t": "convertido", "l": "convertir", "p": "VERB", "w": true, "sp": true },
             { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true },
             { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true },
             { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true },
@@ -1276,7 +1276,7 @@
     "bajar", "bar", "bastar", "batalla", "bien", "breve", "caber", "cada", "calidad", "cambiar", "caminar",
     "casi", "castigar", "cenar", "charlar", "cierto", "claridad", "cocina", "comer", "como", "compartir",
     "comprender", "comprobar", "comunicación", "con", "conferenciante", "confesar", "confirmar", "conflicto",
-    "conocer", "considerar", "consistir", "consultar", "convenir", "conversación", "conversar", "convertirse",
+    "conocer", "considerar", "consistir", "consultar", "convenir", "conversación", "conversar", "convertir",
     "corregir", "correr", "cortesía", "costar", "creer", "cualquier", "cuando", "cultura", "curiosidad",
     "cómo", "de", "decir", "desacuerdo", "descubrir", "desinterés", "detener", "diferencia", "dificultar",
     "discrepar", "discusión", "dispuesto", "distinto", "donde", "dramatismo", "dudar", "durante", "efecto",
@@ -1295,7 +1295,7 @@
     "origen", "otro", "palabra", "pantalla", "papel", "para", "parecer", "participante", "participar",
     "pasado", "pasear", "pausa", "pensar", "pequeño", "permitir", "pero", "persona", "población", "poco",
     "poder", "por", "practicar", "precisamente", "pregunta", "preguntar", "premiar", "preparar", "presencia",
-    "prisa", "probablemente", "profesor", "propio", "práctica", "psicólogo", "que", "quedar", "quejarse",
+    "prisa", "probablemente", "profesor", "propio", "práctico", "psicólogo", "que", "quedar", "quejarse",
     "quien", "quizá", "qué", "rapidez", "realidad", "realizar", "reconocer", "recordar", "recuperar", "red",
     "redondo", "reducir", "regla", "renunciar", "repetir", "requerir", "reservar", "respetar", "respetuoso",
     "respuesta", "riesgo", "ruido", "réplica", "saber", "salir", "salvar", "salón", "saturado", "se",
@@ -1305,16 +1305,16 @@
     "universitario", "vacío", "valentía", "valioso", "vencer", "venir", "verdad", "vez", "voluntad", "y", "ya",
     "él", "élite", "época"
   ],
-  "difficulty": 1505,
+  "difficulty": 1498,
   "qa": {
-    "coverage_by_level": { "A1": 0.5668, "A2": 0.6596, "B1": 0.8031, "B2": 0.8565, "C1": 0.9564, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5696, "A2": 0.6709, "B1": 0.8284, "B2": 0.8678, "C1": 0.9634, "C2": 1 },
     "off_level_lemmas": [
-      "acto", "aparte", "caber", "conversar", "corregir", "discrepar", "dispuesto", "incómodo", "interrumpir",
-      "justificar", "matiz", "medir", "mención", "objetar", "pausa", "premiar", "presencia", "práctica",
-      "rapidez", "salvar", "surgir", "tertulia", "época"
+      "acto", "aparte", "caber", "conversar", "corregir", "discrepar", "dispuesto", "interrumpir",
+      "justificar", "matiz", "medir", "mención", "objetar", "pausa", "premiar", "presencia", "rapidez",
+      "tertulia"
     ],
     "avg_sentence_words": 19.9,
     "flesch_reading_ease": 59.8,
-    "checked_at": "2026-10-18T22:11:35.202Z"
+    "checked_at": "2026-10-19T08:13:23.410Z"
   }
 }

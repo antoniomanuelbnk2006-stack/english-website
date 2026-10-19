@@ -1,0 +1,913 @@
+{
+  "id": "es-b2-lis-009",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u02",
+  "series": "es-b2-u02-emprender",
+  "skill": "listening",
+  "genre": "interview",
+  "title": "Emprender a los cincuenta",
+  "summary_es": {
+    "en": "A woman who lost her job at fifty explains how she set up her own bakery and what she learned.",
+    "fr": "Une femme qui a perdu son emploi à cinquante ans explique comment elle a ouvert sa boulangerie et ce qu’elle a appris.",
+    "zh": "一位五十岁失业的女士讲述她如何开了自己的面包店以及从中学到的东西。",
+    "ja": "50歳で職を失った女性が、自分のパン屋を開いた経緯と学んだことを語ります。"
+  },
+  "topic": "money",
+  "tags": ["trabajo", "empresa", "cambio"],
+  "can_do": ["L-B2-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["emprender", "despido", "préstamo", "socio"],
+  "est_minutes": 10,
+  "prediction_prompt": "¿Qué dificultades crees que tiene alguien que crea una empresa a los cincuenta años?",
+  "pre_teach": ["emprender", "despido"],
+  "speakers": [
+    { "id": "juan", "name": "Juan", "accent": "es-ES", "gender": "male" },
+    { "id": "marta", "name": "Marta", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 135,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "juan",
+      "text": "Marta, hace tres años perdiste tu trabajo en una empresa de seguros.",
+      "tokens": [
+        { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "s": 0.01, "e": 0.69 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 0.94, "e": 1.323 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 1.323, "e": 1.706 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 1.706, "e": 2.089 },
+        { "t": "perdiste", "l": "perder", "p": "VERB", "w": true, "sp": true, "s": 2.088, "e": 2.777 },
+        { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true, "s": 2.777, "e": 3.007 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 3.007, "e": 3.619 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 3.62, "e": 3.85 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 3.849, "e": 4.155 },
+        { "t": "empresa", "l": "empresa", "p": "NOUN", "w": true, "sp": true, "s": 4.155, "e": 4.767 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 4.768, "e": 4.998 },
+        { "t": "seguros", "l": "seguro", "p": "ADJ", "w": true, "s": 4.998, "e": 5.61 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 5.727
+    },
+    {
+      "id": "s2",
+      "speaker": "juan",
+      "text": "¿Cómo fue ese momento?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 5.997, "e": 6.383 },
+        { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 6.383, "e": 6.692 },
+        { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 6.691, "e": 7 },
+        { "t": "momento", "l": "momento", "p": "NOUN", "w": true, "s": 7, "e": 7.617 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.977,
+      "end": 7.718
+    },
+    {
+      "id": "s3",
+      "speaker": "marta",
+      "text": "Muy duro.",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 8.128, "e": 8.412 },
+        { "t": "duro", "l": "durar", "p": "VERB", "w": true, "s": 8.412, "e": 8.768 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.118,
+      "end": 8.849
+    },
+    {
+      "id": "s4",
+      "speaker": "marta",
+      "text": "Llevaba veintidós años en la misma oficina y, de un día para otro, me comunicaron el despido.",
+      "tokens": [
+        { "t": "Llevaba", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 9.109, "e": 9.713 },
+        { "t": "veintidós", "l": "veintidós", "p": "NUM", "w": false, "sp": true, "s": 9.713, "e": 10.469 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 10.469, "e": 10.847 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 10.847, "e": 11.074 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.073, "e": 11.3 },
+        { "t": "misma", "l": "mismo", "p": "DET", "w": true, "sp": true, "s": 11.3, "e": 11.753 },
+        { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true, "sp": true, "s": 11.753, "e": 12.357 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "s": 12.358, "e": 12.509 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 12.659, "e": 12.85 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 12.85, "e": 13.041 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 13.04, "e": 13.294 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 13.294, "e": 13.612 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "s": 13.612, "e": 13.93 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 14.089, "e": 14.292 },
+        {
+          "t": "comunicaron",
+          "l": "comunicarse",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 14.292,
+          "e": 15.104
+        },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 15.104, "e": 15.307 },
+        { "t": "despido", "l": "despido", "p": "NOUN", "w": true, "s": 15.307, "e": 15.849 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.099,
+      "end": 15.96
+    },
+    {
+      "id": "s5",
+      "speaker": "marta",
+      "text": "Tenía cincuenta y un años y pensaba que nadie me iba a contratar.",
+      "tokens": [
+        { "t": "Tenía", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 16.22, "e": 16.696 },
+        { "t": "cincuenta", "l": "cincuenta", "p": "NUM", "w": false, "sp": true, "s": 16.696, "e": 17.49 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 17.49, "e": 17.649 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 17.649, "e": 17.887 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 17.887, "e": 18.284 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 18.284, "e": 18.443 },
+        { "t": "pensaba", "l": "pensar", "p": "VERB", "w": true, "sp": true, "s": 18.443, "e": 19.078 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 19.078, "e": 19.396 },
+        { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 19.395, "e": 19.871 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 19.872, "e": 20.11 },
+        { "t": "iba", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 20.11, "e": 20.428 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 20.427, "e": 20.586 },
+        { "t": "contratar", "l": "contratar", "p": "VERB", "w": true, "s": 20.586, "e": 21.38 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.21,
+      "end": 21.464
+    },
+    {
+      "id": "s6",
+      "speaker": "juan",
+      "text": "¿Cuándo surgió la idea de la panadería?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuándo", "l": "cuándo", "p": "ADV", "w": true, "sp": true, "s": 21.894, "e": 22.351 },
+        { "t": "surgió", "l": "surgir", "p": "VERB", "w": true, "sp": true, "s": 22.351, "e": 22.808 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 22.808, "e": 23.004 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true, "s": 23.003, "e": 23.329 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 23.33, "e": 23.526 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 23.526, "e": 23.722 },
+        { "t": "panadería", "l": "panadería", "p": "NOUN", "w": true, "s": 23.721, "e": 24.374 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.864,
+      "end": 24.447
+    },
+    {
+      "id": "s7",
+      "speaker": "marta",
+      "text": "Siempre me había gustado hacer pan en casa.",
+      "tokens": [
+        { "t": "Siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true, "s": 24.867, "e": 25.414 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 25.414, "e": 25.619 },
+        { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 25.619, "e": 26.029 },
+        { "t": "gustado", "l": "gustar", "p": "VERB", "w": true, "sp": true, "s": 26.029, "e": 26.576 },
+        { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 26.576, "e": 26.986 },
+        { "t": "pan", "l": "pan", "p": "NOUN", "w": true, "sp": true, "s": 26.987, "e": 27.26 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 27.26, "e": 27.465 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 27.465, "e": 27.807 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.847,
+      "end": 27.861
+    },
+    {
+      "id": "s8",
+      "speaker": "marta",
+      "text": "Los domingos preparaba barras y bollos para toda la familia.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 28.121, "e": 28.412 },
+        { "t": "domingos", "l": "domingo", "p": "NOUN", "w": true, "sp": true, "s": 28.412, "e": 29.066 },
+        { "t": "preparaba", "l": "preparar", "p": "VERB", "w": true, "sp": true, "s": 29.066, "e": 29.793 },
+        { "t": "barras", "l": "barra", "p": "NOUN", "w": true, "sp": true, "s": 29.792, "e": 30.301 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 30.301, "e": 30.446 },
+        { "t": "bollos", "l": "bollo", "p": "NOUN", "w": true, "sp": true, "s": 30.446, "e": 30.955 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 30.955, "e": 31.318 },
+        { "t": "toda", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 31.318, "e": 31.681 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 31.682, "e": 31.9 },
+        { "t": "familia", "l": "familia", "p": "NOUN", "w": true, "s": 31.9, "e": 32.481 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.111,
+      "end": 32.541
+    },
+    {
+      "id": "s9",
+      "speaker": "marta",
+      "text": "Un día mi hija me dijo: «¿Por qué no lo conviertes en tu trabajo?».",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 32.801, "e": 33.012 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 33.012, "e": 33.294 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 33.294, "e": 33.505 },
+        { "t": "hija", "l": "hijo", "p": "NOUN", "w": true, "sp": true, "s": 33.506, "e": 33.858 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 33.858, "e": 34.069 },
+        { "t": "dijo", "l": "decir", "p": "VERB", "w": true, "s": 34.07, "e": 34.422 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 34.422, "e": 34.704 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 34.704, "e": 34.986 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 34.986, "e": 35.197 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 35.197, "e": 35.408 },
+        { "t": "conviertes", "l": "convertir", "p": "VERB", "w": true, "sp": true, "s": 35.409, "e": 36.184 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 36.184, "e": 36.395 },
+        { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true, "s": 36.396, "e": 36.607 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "s": 36.607, "e": 37.171 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false },
+        { "t": "»", "l": "»", "p": "PUNCT", "w": false },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.791,
+      "end": 37.229
+    },
+    {
+      "id": "s10",
+      "speaker": "juan",
+      "text": "Y le hiciste caso.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 37.639, "e": 37.796 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 37.796, "e": 38.031 },
+        { "t": "hiciste", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 38.031, "e": 38.658 },
+        { "t": "caso", "l": "caso", "p": "NOUN", "w": true, "s": 38.657, "e": 39.049 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 37.629,
+      "end": 39.11
+    },
+    {
+      "id": "s11",
+      "speaker": "marta",
+      "text": "No inmediatamente.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 39.52, "e": 39.76 },
+        { "t": "inmediatamente", "l": "inmediatamente", "p": "ADV", "w": true, "s": 39.76, "e": 40.96 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 39.51,
+      "end": 41.047
+    },
+    {
+      "id": "s12",
+      "speaker": "marta",
+      "text": "Primero hice un curso de panadería profesional de seis meses.",
+      "tokens": [
+        { "t": "Primero", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 41.307, "e": 41.909 },
+        { "t": "hice", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 41.909, "e": 42.285 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 42.285, "e": 42.511 },
+        { "t": "curso", "l": "curso", "p": "NOUN", "w": true, "sp": true, "s": 42.511, "e": 42.962 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 42.962, "e": 43.188 },
+        { "t": "panadería", "l": "panadería", "p": "NOUN", "w": true, "sp": true, "s": 43.188, "e": 43.94 },
+        {
+          "t": "profesional",
+          "l": "profesional",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 43.941,
+          "e": 44.844
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 44.844, "e": 45.07 },
+        { "t": "seis", "l": "seis", "p": "NUM", "w": false, "sp": true, "s": 45.069, "e": 45.445 },
+        { "t": "meses", "l": "mes", "p": "NOUN", "w": true, "s": 45.446, "e": 45.897 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 41.297,
+      "end": 45.959
+    },
+    {
+      "id": "s13",
+      "speaker": "marta",
+      "text": "Allí aprendí muchas cosas que no sabía, como trabajar con masas madre o calcular los costes.",
+      "tokens": [
+        { "t": "Allí", "l": "allí", "p": "ADV", "w": true, "sp": true, "s": 46.219, "e": 47.006 },
+        { "t": "aprendí", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 47.006, "e": 48.265 },
+        { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 48.266, "e": 49.368 },
+        { "t": "cosas", "l": "cosa", "p": "NOUN", "w": true, "sp": true, "s": 49.368, "e": 50.313 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 50.312, "e": 50.942 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 50.942, "e": 51.414 },
+        { "t": "sabía", "l": "saber", "p": "VERB", "w": true, "s": 51.414, "e": 52.359 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 52.499, "e": 52.537 },
+        { "t": "trabajar", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 52.537, "e": 52.605 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 52.604, "e": 52.634 },
+        { "t": "masas", "l": "masa", "p": "NOUN", "w": true, "sp": true, "s": 52.634, "e": 52.679 },
+        { "t": "madre", "l": "madre", "p": "NOUN", "w": true, "sp": true, "s": 52.679, "e": 52.724 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 52.724, "e": 52.739 },
+        { "t": "calcular", "l": "calcular", "p": "VERB", "w": true, "sp": true, "s": 52.739, "e": 52.807 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 52.807, "e": 52.837 },
+        { "t": "costes", "l": "coste", "p": "NOUN", "w": true, "s": 52.837, "e": 52.89 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.209,
+      "end": 52.944
+    },
+    {
+      "id": "s14",
+      "speaker": "juan",
+      "text": "¿Cómo conseguiste el dinero para abrir el negocio?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 53.374, "e": 53.716 },
+        { "t": "conseguiste", "l": "conseguir", "p": "VERB", "w": true, "sp": true, "s": 53.716, "e": 54.536 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 54.536, "e": 54.741 },
+        { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true, "sp": true, "s": 54.741, "e": 55.22 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 55.22, "e": 55.562 },
+        { "t": "abrir", "l": "abrir", "p": "VERB", "w": true, "sp": true, "s": 55.562, "e": 55.972 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 55.972, "e": 56.177 },
+        { "t": "negocio", "l": "negocio", "p": "NOUN", "w": true, "s": 56.177, "e": 56.724 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 53.344,
+      "end": 56.862
+    },
+    {
+      "id": "s15",
+      "speaker": "marta",
+      "text": "Usé la indemnización del despido y pedí un préstamo pequeño al banco.",
+      "tokens": [
+        { "t": "Usé", "l": "usar", "p": "VERB", "w": true, "sp": true, "s": 57.262, "e": 57.549 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 57.549, "e": 57.764 },
+        {
+          "t": "indemnización",
+          "l": "indemnización",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 57.764,
+          "e": 58.768
+        },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 58.769, "e": 59.056 },
+        { "t": "despido", "l": "despido", "p": "NOUN", "w": true, "sp": true, "s": 59.055, "e": 59.629 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 59.629, "e": 59.772 },
+        { "t": "pedí", "l": "pedir", "p": "VERB", "w": true, "sp": true, "s": 59.773, "e": 60.132 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 60.132, "e": 60.347 },
+        { "t": "préstamo", "l": "préstamo", "p": "NOUN", "w": true, "sp": true, "s": 60.347, "e": 60.993 },
+        { "t": "pequeño", "l": "pequeño", "p": "ADJ", "w": true, "sp": true, "s": 60.992, "e": 61.566 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 61.566, "e": 61.781 },
+        { "t": "banco", "l": "banco", "p": "NOUN", "w": true, "s": 61.782, "e": 62.212 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 57.262,
+      "end": 62.283
+    },
+    {
+      "id": "s16",
+      "speaker": "marta",
+      "text": "Además, una antigua compañera decidió unirse al proyecto como socia.",
+      "tokens": [
+        { "t": "Además", "l": "además", "p": "ADV", "w": true, "s": 62.543, "e": 63.094 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 63.094, "e": 63.409 },
+        { "t": "antigua", "l": "antiguo", "p": "ADJ", "w": true, "sp": true, "s": 63.408, "e": 64.037 },
+        { "t": "compañera", "l": "compañero", "p": "NOUN", "w": true, "sp": true, "s": 64.037, "e": 64.824 },
+        { "t": "decidió", "l": "decidir", "p": "VERB", "w": true, "sp": true, "s": 64.824, "e": 65.453 },
+        { "t": "unirse", "l": "unir", "p": "VERB", "w": true, "sp": true, "s": 65.453, "e": 66.004 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 66.004, "e": 66.24 },
+        { "t": "proyecto", "l": "proyecto", "p": "NOUN", "w": true, "sp": true, "s": 66.24, "e": 66.948 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 66.948, "e": 67.341 },
+        { "t": "socia", "l": "socio", "p": "NOUN", "w": true, "s": 67.341, "e": 67.813 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.533,
+      "end": 67.92
+    },
+    {
+      "id": "s17",
+      "speaker": "juan",
+      "text": "¿Cuál fue la parte más difícil?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuál", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 68.36, "e": 68.725 },
+        { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 68.725, "e": 69.017 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 69.017, "e": 69.236 },
+        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 69.236, "e": 69.674 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 69.674, "e": 69.966 },
+        { "t": "difícil", "l": "difícil", "p": "ADJ", "w": true, "s": 69.966, "e": 70.55 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 68.32,
+      "end": 70.661
+    },
+    {
+      "id": "s18",
+      "speaker": "marta",
+      "text": "Los horarios, sin duda.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 71.071, "e": 71.384 },
+        { "t": "horarios", "l": "horario", "p": "NOUN", "w": true, "s": 71.384, "e": 72.088 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 72.087, "e": 72.4 },
+        { "t": "duda", "l": "dudar", "p": "VERB", "w": true, "s": 72.4, "e": 72.791 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 71.061,
+      "end": 72.919
+    },
+    {
+      "id": "s19",
+      "speaker": "marta",
+      "text": "Me levanto a las cuatro de la mañana seis días a la semana.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 73.179, "e": 73.371 },
+        { "t": "levanto", "l": "levantarse", "p": "VERB", "w": true, "sp": true, "s": 73.371, "e": 73.884 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 73.884, "e": 74.012 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 74.012, "e": 74.268 },
+        { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "sp": true, "s": 74.268, "e": 74.716 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 74.717, "e": 74.909 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 74.909, "e": 75.101 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 75.101, "e": 75.549 },
+        { "t": "seis", "l": "seis", "p": "NUM", "w": false, "sp": true, "s": 75.55, "e": 75.87 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 75.87, "e": 76.19 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 76.19, "e": 76.318 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 76.318, "e": 76.51 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "s": 76.511, "e": 76.959 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 73.169,
+      "end": 77.046
+    },
+    {
+      "id": "s20",
+      "speaker": "marta",
+      "text": "Durante el primer año no tuvimos ni un solo día de vacaciones.",
+      "tokens": [
+        { "t": "Durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 77.306, "e": 77.891 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 77.891, "e": 78.11 },
+        { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 78.11, "e": 78.621 },
+        { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 78.621, "e": 78.913 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 78.913, "e": 79.132 },
+        { "t": "tuvimos", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 79.133, "e": 79.718 },
+        { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true, "s": 79.717, "e": 79.936 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 79.936, "e": 80.155 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 80.156, "e": 80.521 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 80.521, "e": 80.813 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 80.813, "e": 81.032 },
+        { "t": "vacaciones", "l": "vacaciones", "p": "NOUN", "w": true, "s": 81.032, "e": 81.836 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 77.296,
+      "end": 81.895
+    },
+    {
+      "id": "s21",
+      "speaker": "juan",
+      "text": "¿Y la parte económica?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 82.305, "e": 82.456 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 82.456, "e": 82.683 },
+        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 82.684, "e": 83.138 },
+        { "t": "económica", "l": "económico", "p": "ADJ", "w": true, "s": 83.138, "e": 83.895 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 82.295,
+      "end": 83.996
+    },
+    {
+      "id": "s22",
+      "speaker": "marta",
+      "text": "Los primeros meses perdimos dinero.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 84.396, "e": 84.687 },
+        { "t": "primeros", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 84.687, "e": 85.343 },
+        { "t": "meses", "l": "mes", "p": "NOUN", "w": true, "sp": true, "s": 85.343, "e": 85.78 },
+        { "t": "perdimos", "l": "perder", "p": "VERB", "w": true, "sp": true, "s": 85.78, "e": 86.436 },
+        { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true, "s": 86.436, "e": 86.946 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 84.396,
+      "end": 87.015
+    },
+    {
+      "id": "s23",
+      "speaker": "marta",
+      "text": "Pensé muchas veces en cerrar.",
+      "tokens": [
+        { "t": "Pensé", "l": "pensar", "p": "VERB", "w": true, "sp": true, "s": 87.275, "e": 87.712 },
+        { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 87.712, "e": 88.221 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 88.221, "e": 88.658 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 88.657, "e": 88.875 },
+        { "t": "cerrar", "l": "cerrar", "p": "VERB", "w": true, "s": 88.876, "e": 89.385 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 87.265,
+      "end": 89.472
+    },
+    {
+      "id": "s24",
+      "speaker": "marta",
+      "text": "Pero poco a poco los vecinos empezaron a venir, y ahora tenemos clientes fijos que nos recomiendan.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 89.732, "e": 90.063 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 90.063, "e": 90.394 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 90.394, "e": 90.526 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 90.526, "e": 90.857 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 90.857, "e": 91.122 },
+        { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "sp": true, "s": 91.122, "e": 91.651 },
+        { "t": "empezaron", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 91.651, "e": 92.313 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 92.313, "e": 92.445 },
+        { "t": "venir", "l": "venir", "p": "VERB", "w": true, "s": 92.445, "e": 92.842 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 93.092, "e": 93.233 },
+        { "t": "ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 93.233, "e": 93.657 },
+        { "t": "tenemos", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 93.657, "e": 94.222 },
+        { "t": "clientes", "l": "cliente", "p": "NOUN", "w": true, "sp": true, "s": 94.221, "e": 94.856 },
+        { "t": "fijos", "l": "fijo", "p": "ADJ", "w": true, "sp": true, "s": 94.857, "e": 95.281 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 95.28, "e": 95.562 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 95.563, "e": 95.845 },
+        { "t": "recomiendan", "l": "recomendar", "p": "VERB", "w": true, "s": 95.845, "e": 96.692 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 89.722,
+      "end": 96.775
+    },
+    {
+      "id": "s25",
+      "speaker": "juan",
+      "text": "¿Qué te ha aportado este cambio?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 97.185, "e": 97.437 },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 97.437, "e": 97.626 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 97.625, "e": 97.814 },
+        { "t": "aportado", "l": "aportar", "p": "VERB", "w": true, "sp": true, "s": 97.814, "e": 98.38 },
+        { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true, "s": 98.38, "e": 98.695 },
+        { "t": "cambio", "l": "cambiar", "p": "VERB", "w": true, "s": 98.695, "e": 99.135 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 97.175,
+      "end": 99.26
+    },
+    {
+      "id": "s26",
+      "speaker": "marta",
+      "text": "Libertad.",
+      "tokens": [
+        { "t": "Libertad", "l": "libertad", "p": "NOUN", "w": true, "s": 99.67, "e": 100.39 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 99.66,
+      "end": 100.491
+    },
+    {
+      "id": "s27",
+      "speaker": "marta",
+      "text": "En la oficina hacía lo que otros decidían.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 100.751, "e": 100.964 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 100.964, "e": 101.177 },
+        { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true, "sp": true, "s": 101.177, "e": 101.745 },
+        { "t": "hacía", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 101.744, "e": 102.17 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 102.17, "e": 102.383 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 102.383, "e": 102.667 },
+        { "t": "otros", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 102.667, "e": 103.093 },
+        { "t": "decidían", "l": "decidir", "p": "VERB", "w": true, "s": 103.092, "e": 103.731 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 100.741,
+      "end": 103.83
+    },
+    {
+      "id": "s28",
+      "speaker": "marta",
+      "text": "Ahora tomo mis propias decisiones, me equivoque o no.",
+      "tokens": [
+        { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 104.09, "e": 104.516 },
+        { "t": "tomo", "l": "tomar", "p": "VERB", "w": true, "sp": true, "s": 104.516, "e": 104.871 },
+        { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 104.871, "e": 105.155 },
+        { "t": "propias", "l": "propio", "p": "ADJ", "w": true, "sp": true, "s": 105.154, "e": 105.722 },
+        { "t": "decisiones", "l": "decisión", "p": "NOUN", "w": true, "s": 105.722, "e": 106.503 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 106.503, "e": 106.716 },
+        {
+          "t": "equivoque",
+          "l": "equivocarse",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 106.716,
+          "e": 107.426
+        },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 107.425, "e": 107.567 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "s": 107.567, "e": 107.78 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 104.08,
+      "end": 107.844
+    },
+    {
+      "id": "s29",
+      "speaker": "marta",
+      "text": "Y veo cada día cómo la gente disfruta de algo que yo he hecho con mis manos.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 108.104, "e": 108.249 },
+        { "t": "veo", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 108.249, "e": 108.54 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 108.54, "e": 108.903 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 108.903, "e": 109.194 },
+        { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 109.193, "e": 109.556 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 109.557, "e": 109.775 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 109.775, "e": 110.211 },
+        { "t": "disfruta", "l": "disfrutar", "p": "VERB", "w": true, "sp": true, "s": 110.21, "e": 110.864 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 110.864, "e": 111.082 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 111.082, "e": 111.445 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 111.445, "e": 111.736 },
+        { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 111.736, "e": 111.954 },
+        { "t": "he", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 111.953, "e": 112.171 },
+        { "t": "hecho", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 112.171, "e": 112.607 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 112.607, "e": 112.898 },
+        { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 112.898, "e": 113.189 },
+        { "t": "manos", "l": "mano", "p": "NOUN", "w": true, "s": 113.188, "e": 113.624 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 108.094,
+      "end": 113.723
+    },
+    {
+      "id": "s30",
+      "speaker": "juan",
+      "text": "¿Qué consejo darías a alguien de tu edad que quiera emprender?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 114.133, "e": 114.387 },
+        { "t": "consejo", "l": "consejo", "p": "NOUN", "w": true, "sp": true, "s": 114.387, "e": 114.896 },
+        { "t": "darías", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 114.896, "e": 115.341 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 115.342, "e": 115.469 },
+        { "t": "alguien", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 115.469, "e": 115.978 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 115.978, "e": 116.169 },
+        { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true, "s": 116.168, "e": 116.359 },
+        { "t": "edad", "l": "edad", "p": "NOUN", "w": true, "sp": true, "s": 116.359, "e": 116.677 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 116.677, "e": 116.931 },
+        { "t": "quiera", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 116.932, "e": 117.377 },
+        { "t": "emprender", "l": "emprender", "p": "VERB", "w": true, "s": 117.377, "e": 118.013 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 114.123,
+      "end": 118.17
+    },
+    {
+      "id": "s31",
+      "speaker": "marta",
+      "text": "Que se forme antes de empezar y que no lo haga solo.",
+      "tokens": [
+        { "t": "Que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 118.58, "e": 118.858 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 118.858, "e": 119.067 },
+        { "t": "forme", "l": "formar", "p": "VERB", "w": true, "sp": true, "s": 119.067, "e": 119.485 },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true, "s": 119.485, "e": 119.903 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 119.903, "e": 120.112 },
+        { "t": "empezar", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 120.112, "e": 120.669 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 120.668, "e": 120.807 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 120.808, "e": 121.086 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 121.086, "e": 121.295 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 121.295, "e": 121.504 },
+        { "t": "haga", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 121.504, "e": 121.852 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "s": 121.852, "e": 122.2 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 118.57,
+      "end": 122.311
+    },
+    {
+      "id": "s32",
+      "speaker": "marta",
+      "text": "Tener una socia me ha salvado en los peores momentos.",
+      "tokens": [
+        { "t": "Tener", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 122.571, "e": 123.014 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 123.014, "e": 123.309 },
+        { "t": "socia", "l": "socio", "p": "NOUN", "w": true, "sp": true, "s": 123.309, "e": 123.752 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 123.751, "e": 123.972 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 123.973, "e": 124.194 },
+        { "t": "salvado", "l": "salvar", "p": "VERB", "w": true, "sp": true, "s": 124.194, "e": 124.784 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 124.784, "e": 125.005 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 125.006, "e": 125.301 },
+        { "t": "peores", "l": "peor", "p": "ADJ", "w": true, "sp": true, "s": 125.301, "e": 125.817 },
+        { "t": "momentos", "l": "momento", "p": "NOUN", "w": true, "s": 125.817, "e": 126.481 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 122.561,
+      "end": 126.546
+    },
+    {
+      "id": "s33",
+      "speaker": "marta",
+      "text": "Y que no piense que es demasiado tarde, porque la experiencia también es un capital.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 126.806, "e": 126.945 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 126.945, "e": 127.224 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 127.224, "e": 127.433 },
+        { "t": "piense", "l": "pensar", "p": "VERB", "w": true, "sp": true, "s": 127.433, "e": 127.92 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 127.92, "e": 128.199 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 128.199, "e": 128.408 },
+        { "t": "demasiado", "l": "demasiado", "p": "ADV", "w": true, "sp": true, "s": 128.408, "e": 129.104 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "s": 129.104, "e": 129.522 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 129.522, "e": 130.009 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 130.009, "e": 130.218 },
+        {
+          "t": "experiencia",
+          "l": "experiencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 130.218,
+          "e": 131.054
+        },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 131.054, "e": 131.611 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 131.611, "e": 131.82 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 131.82, "e": 132.029 },
+        { "t": "capital", "l": "capital", "p": "NOUN", "w": true, "s": 132.029, "e": 132.586 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 126.796,
+      "end": 132.734
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "despido",
+      "surface": "despido",
+      "pos": "noun",
+      "def_en": "fin del contrato decidido por la empresa",
+      "def_es": { "en": "dismissal", "fr": "licenciement", "zh": "解雇", "ja": "解雇" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "indemnización",
+      "surface": "indemnización",
+      "pos": "noun",
+      "def_en": "dinero que se recibe como compensación",
+      "def_es": { "en": "severance pay, compensation", "fr": "indemnité", "zh": "赔偿金", "ja": "補償金" },
+      "ref": "s15"
+    },
+    {
+      "lemma": "emprender",
+      "surface": "emprender",
+      "pos": "verb",
+      "def_en": "empezar un negocio o un proyecto propio",
+      "def_es": { "en": "to start a business", "fr": "entreprendre", "zh": "创业", "ja": "起業する" },
+      "ref": "s30"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿De qué trata la entrevista?",
+      "evidence": ["s1", "s6"],
+      "rationale_es": { "en": "How she opened a bakery after losing her job." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De cómo Marta consiguió un ascenso en su empresa" },
+        { "id": "b", "text": "De cómo Marta abrió su negocio tras quedarse sin empleo" },
+        { "id": "c", "text": "De cómo Marta decidió jubilarse antes de tiempo" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Quién le dio la idea de la panadería?",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "Her daughter." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una compañera" },
+        { "id": "b", "text": "Su marido" },
+        { "id": "c", "text": "Su hija" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué hizo Marta antes de abrir la panadería?",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "She took a six-month course." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Se formó durante medio año" },
+        { "id": "b", "text": "Trabajó en un restaurante" },
+        { "id": "c", "text": "Viajó por varios países" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Marta pagó el negocio solo con sus ahorros.",
+      "evidence": ["s15"],
+      "rationale_es": { "en": "She also took a bank loan." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué fue lo más difícil para ella?",
+      "evidence": ["s19"],
+      "rationale_es": { "en": "Getting up very early." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Encontrar un local barato" },
+        { "id": "b", "text": "Madrugar casi todos los días" },
+        { "id": "c", "text": "Aprender a usar el ordenador" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Qué valora más Marta de su nueva vida?",
+      "evidence": ["s28"],
+      "rationale_es": { "en": "Making her own decisions." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Ganar mucho más dinero" },
+        { "id": "b", "text": "Trabajar menos horas" },
+        { "id": "c", "text": "Decidir por sí misma" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s33"],
+      "rationale_es": { "en": "*Capital*: an asset." },
+      "type": "gap_fill",
+      "text": "Según Marta, la experiencia también es un {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["capital"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abrir", "además", "ahora", "algo", "allí", "antes", "antiguo", "aportar", "aprender", "año", "banco",
+    "barra", "bollo", "cada", "calcular", "cambiar", "capital", "casa", "caso", "cerrar", "cliente", "comer",
+    "compañero", "comunicarse", "con", "conseguir", "consejo", "contratar", "convertir", "cosa", "coste",
+    "curso", "cuándo", "cómo", "dar", "de", "decidir", "decir", "decisión", "demasiado", "despido", "difícil",
+    "dinero", "disfrutar", "domingo", "dudar", "durante", "durar", "día", "económico", "edad", "el", "empezar",
+    "emprender", "empresa", "en", "equivocarse", "ese", "este", "experiencia", "familia", "fijo", "formar",
+    "gente", "gustar", "haber", "hacer", "hijo", "horario", "idea", "indemnización", "inmediatamente", "ir",
+    "levantarse", "libertad", "llevar", "madre", "mano", "masa", "mañana", "mes", "mi", "mismo", "momento",
+    "mucho", "muy", "más", "negocio", "ni", "no", "nosotros", "o", "oficina", "otro", "pan", "panadería",
+    "para", "parte", "pedir", "pensar", "peor", "pequeño", "perder", "pero", "poco", "por", "porque",
+    "preparar", "profesional", "propio", "proyecto", "préstamo", "que", "querer", "qué", "recomendar", "saber",
+    "salvar", "se", "seguro", "semana", "ser", "siempre", "sin", "socio", "solo", "surgir", "también", "tarde",
+    "tener", "todo", "tomar", "trabajar", "tu", "tú", "un", "unir", "usar", "vacaciones", "vecino", "venir",
+    "ver", "vez", "y", "yo", "él"
+  ],
+  "difficulty": 1243,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7075, "A2": 0.8231, "B1": 0.9592, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 9.2,
+    "flesch_reading_ease": 81.4,
+    "checked_at": "2026-10-19T07:42:35.028Z"
+  },
+  "audio": {
+    "src": "audio/b2/es-b2-lis-009/v1.m4a",
+    "duration_s": 132.734,
+    "wpm": 137,
+    "provider": "piper",
+    "voices": { "juan": "sharvard-m", "marta": "sharvard-f" },
+    "loudness_lufs": -16,
+    "peaks": [
+      1, 0.44, 0.61, 0.44, 0.44, 0.39, 0.57, 0.58, 0.4, 0.31, 1, 0.95, 0.63, 0.41, 0.94, 1, 0.93, 1, 0.56,
+      0.67, 0.59, 0.53, 0.49, 0.57, 0.66, 0.41, 0.6, 0.53, 0.29, 0.79, 0.81, 0.63, 0.77, 0.57, 1, 0.85, 0.91,
+      0.86, 0.51, 1, 0.43, 0.48, 0.47, 0.27, 0.1, 1, 0.78, 0.78, 0.82, 0.57, 0.38, 0.55, 0.56, 1, 0.61, 0.77,
+      0.64, 0.77, 0.42, 0.99, 0.55, 0.62, 0.85, 0.89, 0.93, 0.94, 1, 0.27, 0.77, 1, 0.74, 1, 0.9, 0.77, 0.52,
+      0.91, 0.61, 0.79, 0.8, 0.88, 1, 0.74, 0.5, 0.63, 0.84, 0.69, 0.79, 0.63, 0.73, 0.84, 1, 0.64, 0.81, 0.97,
+      0.76, 0.23, 1, 0.74, 0.64, 0.77, 0.76, 0.55, 0.27, 0.43, 0.81, 0.5, 0.7, 1, 0.77, 0.55, 0.65, 0.73, 0.23,
+      0.69, 0.71, 0.94, 1, 0.66, 0.82, 0.61, 0.63, 0.46, 0.19, 1, 0.87, 0.63, 0.46, 0.15, 0.61, 1, 0.58, 0.61,
+      0.69, 0.77, 1, 0.61, 0.59, 0.72, 0.39, 0.37, 1, 0.91, 0.76, 0.71, 0.67, 0.94, 0.84, 0.35, 0.57, 1, 0.67,
+      0.54, 0.68, 0.9, 1, 0.87, 0.66, 1, 0.83, 0.99, 0.65, 0.68, 0.96, 1, 0.69, 0.62, 0.93, 0.59, 0.87, 0.77,
+      0.72, 0.83, 0.62, 0.68, 0.4, 1, 0.99, 0.82, 0.94, 0.09, 1, 0.55, 0.99, 0.66, 1, 0.84, 0.88, 0.44, 0.98,
+      0.74, 1, 0.69, 0.54, 0.77, 0.75, 0.74, 1, 0.88, 0.57, 0.9, 0.89, 0.84, 0.5, 0.62, 0.55, 0.11, 1, 0.68,
+      0.79, 0.56, 0.61, 0.7, 0.51, 0.34, 0.56, 0.89, 0.81, 0.83, 0.48, 1, 0.52, 0.71, 0.78, 0.69, 0.64, 1, 0.8,
+      0.51, 0.29, 0.65, 0.76, 0.63, 0.77, 0.88, 0.8, 0.52, 0.65, 0.76, 1, 0.55
+    ]
+  }
+}

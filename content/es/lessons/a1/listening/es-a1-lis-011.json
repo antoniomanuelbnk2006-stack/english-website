@@ -1,0 +1,370 @@
+{
+  "id": "es-a1-lis-011",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u04",
+  "series": "es-a1-u04-cena",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Una invitación a cenar",
+  "summary_es": {
+    "en": "Marta invites Leo to have dinner at her house on Saturday.",
+    "fr": "Marta invite Leo à dîner chez elle samedi.",
+    "zh": "Marta 邀请 Leo 周六来她家吃晚饭。",
+    "ja": "マルタはレオを土曜日の夕食に招待します。"
+  },
+  "topic": "food",
+  "tags": ["invitación", "cenar", "comida"],
+  "can_do": ["L-A1-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["cenar", "sábado", "paella", "postre"],
+  "est_minutes": 4,
+  "prediction_prompt": "Una amiga te invita a cenar. ¿Qué dices?",
+  "pre_teach": ["invitar", "traer"],
+  "speakers": [
+    { "id": "marta", "name": "Marta", "accent": "es-ES", "gender": "female" },
+    { "id": "leo", "name": "Leo", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "marta",
+      "text": "Leo, ¿cenas conmigo el sábado?",
+      "tokens": [
+        { "t": "Leo", "l": "leo", "p": "PROPN", "w": false, "s": 0.01, "e": 0.43 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "cenas", "l": "cenar", "p": "VERB", "w": true, "sp": true, "s": 0.63, "e": 1.033 },
+        { "t": "conmigo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 1.033, "e": 1.57 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 1.569, "e": 1.77 },
+        { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "s": 1.77, "e": 2.24 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.314
+    },
+    {
+      "id": "s2",
+      "speaker": "leo",
+      "text": "¡Sí! ¿Dónde?",
+      "tokens": [
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 3.014, "e": 3.284 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Dónde", "l": "dónde", "p": "ADV", "w": true, "s": 3.734, "e": 4.144 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.014,
+      "end": 4.196
+    },
+    {
+      "id": "s3",
+      "speaker": "marta",
+      "text": "En mi casa.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 4.906, "e": 5.13 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 5.13, "e": 5.354 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 5.353, "e": 5.726 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.896,
+      "end": 5.792
+    },
+    {
+      "id": "s4",
+      "speaker": "marta",
+      "text": "Hago paella.",
+      "tokens": [
+        { "t": "Hago", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 6.302, "e": 6.623 },
+        { "t": "paella", "l": "paella", "p": "NOUN", "w": true, "s": 6.623, "e": 7.072 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.292,
+      "end": 7.139
+    },
+    {
+      "id": "s5",
+      "speaker": "leo",
+      "text": "Me gusta mucho la paella.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 7.859, "e": 8.019 },
+        { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true, "s": 8.019, "e": 8.338 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 8.338, "e": 8.657 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.657, "e": 8.817 },
+        { "t": "paella", "l": "paella", "p": "NOUN", "w": true, "s": 8.817, "e": 9.189 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.839,
+      "end": 9.266
+    },
+    {
+      "id": "s6",
+      "speaker": "leo",
+      "text": "¿Llevo algo?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Llevo", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 9.796, "e": 10.14 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "s": 10.14, "e": 10.426 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.766,
+      "end": 10.507
+    },
+    {
+      "id": "s7",
+      "speaker": "marta",
+      "text": "Sí, el postre, por favor.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 11.217, "e": 11.587 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.767, "e": 11.971 },
+        { "t": "postre", "l": "postre", "p": "NOUN", "w": true, "s": 11.971, "e": 12.447 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 12.597, "e": 12.877 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 12.877, "e": 13.297 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.207,
+      "end": 13.42
+    },
+    {
+      "id": "s8",
+      "speaker": "leo",
+      "text": "Muy bien. Llevo un pastel.",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 14.15, "e": 14.372 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 14.372, "e": 14.65 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Llevo", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 15.13, "e": 15.483 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 15.483, "e": 15.659 },
+        { "t": "pastel", "l": "pastel", "p": "NOUN", "w": true, "s": 15.659, "e": 16.07 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 14.12,
+      "end": 16.153
+    },
+    {
+      "id": "s9",
+      "speaker": "marta",
+      "text": "También hay ensalada y pan.",
+      "tokens": [
+        { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 16.863, "e": 17.408 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 17.408, "e": 17.681 },
+        { "t": "ensalada", "l": "ensalada", "p": "NOUN", "w": true, "sp": true, "s": 17.681, "e": 18.294 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 18.294, "e": 18.43 },
+        { "t": "pan", "l": "pan", "p": "NOUN", "w": true, "s": 18.43, "e": 18.703 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.853,
+      "end": 18.799
+    },
+    {
+      "id": "s10",
+      "speaker": "leo",
+      "text": "¡Qué bien! Gracias, Marta.",
+      "tokens": [
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 19.499, "e": 19.849 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 19.849, "e": 20.286 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 20.286, "e": 20.985 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "s": 20.985, "e": 21.509 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.499,
+      "end": 21.602
+    },
+    {
+      "id": "s11",
+      "speaker": "marta",
+      "text": "¿A las nueve?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 22.322, "e": 22.467 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 22.467, "e": 22.757 },
+        { "t": "nueve", "l": "nueve", "p": "NUM", "w": false, "s": 22.757, "e": 23.192 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.302,
+      "end": 23.255
+    },
+    {
+      "id": "s12",
+      "speaker": "leo",
+      "text": "Perfecto. Hasta el sábado.",
+      "tokens": [
+        { "t": "Perfecto", "l": "perfecto", "p": "ADJ", "w": true, "s": 23.955, "e": 24.475 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 24.985, "e": 25.33 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 25.33, "e": 25.503 },
+        { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "s": 25.503, "e": 25.906 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.955,
+      "end": 25.963
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "cenar",
+      "surface": "cenas",
+      "pos": "verb",
+      "def_en": "comer por la noche",
+      "def_es": { "en": "to have dinner", "fr": "dîner", "zh": "吃晚饭", "ja": "夕食をとる" },
+      "ref": "s1"
+    },
+    {
+      "lemma": "paella",
+      "surface": "paella",
+      "pos": "noun",
+      "def_en": "plato de arroz típico de España",
+      "def_es": { "en": "paella", "fr": "paella", "zh": "西班牙海鲜饭", "ja": "パエリア" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "postre",
+      "surface": "postre",
+      "pos": "noun",
+      "def_en": "comida dulce al final",
+      "def_es": { "en": "dessert", "fr": "dessert", "zh": "甜点", "ja": "デザート" },
+      "ref": "s7"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué hace Marta?",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "She invites him to dinner." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Pide un café con leche en la cafetería" },
+        { "id": "b", "text": "Invita a Leo a cenar" },
+        { "id": "c", "text": "Compra pan y leche en la tienda" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Dónde cenan?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "At Marta’s house." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En un restaurante del centro" },
+        { "id": "b", "text": "En casa de Leo" },
+        { "id": "c", "text": "En casa de Marta" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué comida hace Marta?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "She makes paella." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Paella" },
+        { "id": "b", "text": "Una ensalada grande" },
+        { "id": "c", "text": "Una tortilla de queso" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Leo lleva el postre.",
+      "evidence": ["s7", "s8"],
+      "rationale_es": { "en": "Leo brings a cake." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con un número.",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "*A las nueve*." },
+      "type": "gap_fill",
+      "text": "Quedan a las {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["nueve", "9"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué dice Leo al final?",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "See you Saturday." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Buen provecho en tu casa" },
+        { "id": "b", "text": "Hasta el sábado" },
+        { "id": "c", "text": "Buenas noches y adiós" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "algo", "bien", "casa", "cenar", "dónde", "el", "en", "ensalada", "favor", "gustar", "haber", "hacer",
+    "hasta", "llevar", "mi", "mucho", "muy", "paella", "pan", "pastel", "perfecto", "por", "postre", "qué",
+    "sábado", "también", "un", "y", "yo"
+  ],
+  "difficulty": 676,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 2.8,
+    "flesch_reading_ease": 100,
+    "checked_at": "2026-10-19T07:26:48.323Z"
+  },
+  "audio": {
+    "src": "audio/a1/es-a1-lis-011/v1.m4a",
+    "duration_s": 25.963,
+    "wpm": 104,
+    "provider": "piper",
+    "voices": { "marta": "sharvard-f", "leo": "davefx-m" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      0.5, 0.78, 0.82, 0.73, 0.03, 0.03, 0.65, 0.75, 0.69, 0.67, 0.7, 0.79, 0.65, 0.71, 0.7, 0.58, 0.79, 1, 1,
+      0.29, 0.18, 0.01, 0, 0, 0, 0, 0, 0.24, 1, 0.94, 0.06, 0, 0, 0, 0.95, 1, 0.66, 0.48, 0.07, 0, 0, 0, 0, 0,
+      0, 0.77, 0.9, 0.96, 0.57, 1, 0.97, 0.38, 0.28, 0.03, 0, 0, 0, 0, 0.83, 0.8, 0.2, 1, 0.66, 0.18, 0.17,
+      0.07, 0, 0, 0, 0, 0, 0, 0.32, 0.97, 0.85, 0.55, 1, 0.65, 0.53, 0.8, 0.88, 0.82, 0.72, 0.26, 0.36, 0.03,
+      0, 0, 0, 0, 0.67, 1, 0.84, 0.93, 0.51, 0.18, 0.14, 0, 0, 0, 0, 0, 0, 0.1, 0.54, 0.87, 0.72, 0.06, 0.14,
+      0.86, 0.41, 0.8, 0.84, 0.8, 0.75, 0.04, 0.96, 0.81, 0.14, 1, 0.52, 0.56, 0.24, 0.02, 0, 0, 0, 0, 0, 0,
+      0.32, 1, 0.87, 0.65, 0.23, 0.07, 0.01, 0.01, 0, 0.03, 1, 0.93, 0.53, 0.3, 0.86, 0.25, 0.47, 0.5, 0.16,
+      0.01, 0, 0, 0, 0, 0, 0.26, 0.92, 0.45, 0.7, 1, 0.81, 0.76, 0.69, 0.49, 0.67, 0.89, 0.71, 0.66, 0.48,
+      0.26, 0.47, 0.41, 0.16, 0.02, 0, 0, 0, 0, 0, 0, 1, 0.94, 0.95, 0.79, 0.13, 0.05, 0, 0, 0, 0.07, 1, 0.97,
+      0.95, 0.81, 0.18, 0.81, 0.74, 0.54, 0.67, 0.02, 0, 0, 0, 0, 0, 0, 1, 0.92, 0.95, 0.8, 0.86, 0.97, 0.7,
+      0.4, 0.06, 0, 0, 0, 0, 0, 0, 1, 0.6, 1, 0.12, 0.22, 0.04, 0, 0, 0, 0, 0.36, 1, 0.83, 0.28, 0.98, 0.93,
+      0.51, 0.2, 0.1
+    ]
+  }
+}

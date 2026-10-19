@@ -1,0 +1,913 @@
+{
+  "id": "es-b2-lis-011",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u03",
+  "series": "es-b2-u03-lenguas-espana",
+  "skill": "listening",
+  "genre": "lecture",
+  "title": "Las lenguas de España",
+  "summary_es": {
+    "en": "A teacher explains which languages are spoken in Spain, where, and how they coexist with Spanish.",
+    "fr": "Une professeure explique quelles langues sont parlées en Espagne, où, et comment elles coexistent avec l’espagnol.",
+    "zh": "一位老师讲解西班牙使用哪些语言、在哪里使用，以及它们如何与西班牙语共存。",
+    "ja": "教師が、スペインで話されている言語とその地域、スペイン語との共存について説明します。"
+  },
+  "topic": "language",
+  "tags": ["lenguas", "cultura", "historia"],
+  "can_do": ["L-B2-03"],
+  "grammar_focus": [],
+  "vocab_focus": ["cooficial", "bilingüe", "origen", "hablante"],
+  "est_minutes": 10,
+  "prediction_prompt": "¿Sabes cuántas lenguas se hablan en España además del español?",
+  "pre_teach": ["cooficial", "bilingüe"],
+  "speakers": [
+    { "id": "ramos", "name": "Profesora Ramos", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 135,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "ramos",
+      "text": "Buenos días a todos.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.518 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 0.518, "e": 0.881 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 0.88, "e": 1.025 },
+        { "t": "todos", "l": "todo", "p": "DET", "w": true, "s": 1.025, "e": 1.46 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.56
+    },
+    {
+      "id": "s2",
+      "speaker": "ramos",
+      "text": "Hoy vamos a hablar de un tema que sorprende a muchos estudiantes extranjeros: en España no se habla solo español.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 1.82, "e": 2.088 },
+        { "t": "vamos", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 2.088, "e": 2.49 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 2.491, "e": 2.625 },
+        { "t": "hablar", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 2.625, "e": 3.094 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 3.094, "e": 3.295 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 3.295, "e": 3.496 },
+        { "t": "tema", "l": "tema", "p": "NOUN", "w": true, "sp": true, "s": 3.496, "e": 3.831 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 3.832, "e": 4.1 },
+        { "t": "sorprende", "l": "sorprender", "p": "VERB", "w": true, "sp": true, "s": 4.1, "e": 4.771 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 4.77, "e": 4.904 },
+        { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 4.904, "e": 5.373 },
+        { "t": "estudiantes", "l": "estudiante", "p": "NOUN", "w": true, "sp": true, "s": 5.374, "e": 6.179 },
+        { "t": "extranjeros", "l": "extranjero", "p": "ADJ", "w": true, "s": 6.178, "e": 6.983 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 6.983, "e": 7.184 },
+        { "t": "España", "l": "españa", "p": "PROPN", "w": false, "sp": true, "s": 7.184, "e": 7.653 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 7.654, "e": 7.855 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 7.855, "e": 8.056 },
+        { "t": "habla", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 8.056, "e": 8.458 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 8.458, "e": 8.793 },
+        { "t": "español", "l": "español", "p": "ADJ", "w": true, "s": 8.794, "e": 9.33 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.81,
+      "end": 9.423
+    },
+    {
+      "id": "s3",
+      "speaker": "ramos",
+      "text": "Además del castellano, como también se llama al español, hay varias lenguas cooficiales en sus comunidades.",
+      "tokens": [
+        { "t": "Además", "l": "además", "p": "ADV", "w": true, "sp": true, "s": 9.683, "e": 10.155 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 10.155, "e": 10.425 },
+        { "t": "castellano", "l": "castellano", "p": "NOUN", "w": true, "s": 10.425, "e": 11.167 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 11.166, "e": 11.503 },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 11.504, "e": 12.043 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 12.043, "e": 12.245 },
+        { "t": "llama", "l": "llamarse", "p": "VERB", "w": true, "sp": true, "s": 12.245, "e": 12.65 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 12.65, "e": 12.852 },
+        { "t": "español", "l": "español", "p": "ADJ", "w": true, "s": 12.852, "e": 13.391 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 13.392, "e": 13.662 },
+        { "t": "varias", "l": "varios", "p": "DET", "w": true, "sp": true, "s": 13.661, "e": 14.133 },
+        { "t": "lenguas", "l": "lengua", "p": "NOUN", "w": true, "sp": true, "s": 14.133, "e": 14.672 },
+        { "t": "cooficiales", "l": "cooficial", "p": "ADJ", "w": true, "sp": true, "s": 14.673, "e": 15.482 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 15.482, "e": 15.684 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 15.684, "e": 15.954 },
+        { "t": "comunidades", "l": "comunidad", "p": "NOUN", "w": true, "s": 15.954, "e": 16.763 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.673,
+      "end": 16.827
+    },
+    {
+      "id": "s4",
+      "speaker": "ramos",
+      "text": "Las principales son el catalán, el gallego y el euskera.",
+      "tokens": [
+        { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 17.087, "e": 17.361 },
+        { "t": "principales", "l": "principal", "p": "ADJ", "w": true, "sp": true, "s": 17.361, "e": 18.182 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 18.181, "e": 18.455 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 18.455, "e": 18.66 },
+        { "t": "catalán", "l": "catalán", "p": "NOUN", "w": true, "s": 18.66, "e": 19.207 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 19.457, "e": 19.663 },
+        { "t": "gallego", "l": "gallego", "p": "NOUN", "w": true, "sp": true, "s": 19.663, "e": 20.213 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 20.213, "e": 20.351 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 20.351, "e": 20.557 },
+        { "t": "euskera", "l": "euskera", "p": "NOUN", "w": true, "s": 20.557, "e": 21.107 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.077,
+      "end": 21.188
+    },
+    {
+      "id": "s5",
+      "speaker": "ramos",
+      "text": "Empecemos por el catalán.",
+      "tokens": [
+        { "t": "Empecemos", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 21.448, "e": 22.14 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 22.14, "e": 22.417 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 22.417, "e": 22.625 },
+        { "t": "catalán", "l": "catalán", "p": "NOUN", "w": true, "s": 22.624, "e": 23.178 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.438,
+      "end": 23.272
+    },
+    {
+      "id": "s6",
+      "speaker": "ramos",
+      "text": "Se habla en Cataluña, en las islas Baleares y, con el nombre de valenciano, en la Comunidad Valenciana.",
+      "tokens": [
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 23.542, "e": 23.746 },
+        { "t": "habla", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 23.746, "e": 24.155 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 24.155, "e": 24.359 },
+        { "t": "Cataluña", "l": "cataluña", "p": "PROPN", "w": false, "s": 24.359, "e": 24.972 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 24.972, "e": 25.176 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 25.176, "e": 25.448 },
+        { "t": "islas", "l": "isla", "p": "NOUN", "w": true, "sp": true, "s": 25.449, "e": 25.858 },
+        { "t": "Baleares", "l": "baleares", "p": "PROPN", "w": false, "sp": true, "s": 25.857, "e": 26.47 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "s": 26.47, "e": 26.606 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 26.606, "e": 26.878 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 26.879, "e": 27.083 },
+        { "t": "nombre", "l": "nombre", "p": "NOUN", "w": true, "sp": true, "s": 27.083, "e": 27.56 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 27.56, "e": 27.764 },
+        { "t": "valenciano", "l": "valenciano", "p": "NOUN", "w": true, "s": 27.764, "e": 28.513 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 28.513, "e": 28.717 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 28.718, "e": 28.922 },
+        { "t": "Comunidad", "l": "comunidad", "p": "NOUN", "w": true, "sp": true, "s": 28.922, "e": 29.603 },
+        { "t": "Valenciana", "l": "valenciana", "p": "PROPN", "w": false, "s": 29.603, "e": 30.352 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.522,
+      "end": 30.447
+    },
+    {
+      "id": "s7",
+      "speaker": "ramos",
+      "text": "Lo hablan alrededor de diez millones de personas.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 30.707, "e": 30.904 },
+        { "t": "hablan", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 30.904, "e": 31.363 },
+        { "t": "alrededor", "l": "alrededor", "p": "ADV", "w": true, "sp": true, "s": 31.362, "e": 32.017 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 32.017, "e": 32.214 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true, "s": 32.214, "e": 32.542 },
+        { "t": "millones", "l": "millón", "p": "NOUN", "w": true, "sp": true, "s": 32.541, "e": 33.131 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 33.131, "e": 33.328 },
+        { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "s": 33.327, "e": 33.917 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 30.697,
+      "end": 33.967
+    },
+    {
+      "id": "s8",
+      "speaker": "ramos",
+      "text": "El gallego se habla en Galicia, en el noroeste del país.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 34.227, "e": 34.437 },
+        { "t": "gallego", "l": "gallego", "p": "NOUN", "w": true, "sp": true, "s": 34.437, "e": 34.997 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 34.997, "e": 35.207 },
+        { "t": "habla", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 35.207, "e": 35.627 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 35.627, "e": 35.837 },
+        { "t": "Galicia", "l": "galicia", "p": "PROPN", "w": false, "s": 35.837, "e": 36.397 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 36.547, "e": 36.753 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 36.753, "e": 36.959 },
+        { "t": "noroeste", "l": "noroeste", "p": "NOUN", "w": true, "sp": true, "s": 36.96, "e": 37.579 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 37.578, "e": 37.853 },
+        { "t": "país", "l": "país", "p": "NOUN", "w": true, "s": 37.853, "e": 38.197 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.217,
+      "end": 38.25
+    },
+    {
+      "id": "s9",
+      "speaker": "ramos",
+      "text": "Es una lengua muy cercana al portugués.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 38.51, "e": 38.735 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 38.735, "e": 39.036 },
+        { "t": "lengua", "l": "lengua", "p": "NOUN", "w": true, "sp": true, "s": 39.036, "e": 39.562 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 39.562, "e": 39.863 },
+        { "t": "cercana", "l": "cercano", "p": "ADJ", "w": true, "sp": true, "s": 39.862, "e": 40.463 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 40.463, "e": 40.688 },
+        { "t": "portugués", "l": "portugués", "p": "NOUN", "w": true, "s": 40.689, "e": 41.44 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 38.5,
+      "end": 41.49
+    },
+    {
+      "id": "s10",
+      "speaker": "ramos",
+      "text": "De hecho, en la Edad Media eran prácticamente la misma lengua.",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 41.75, "e": 42.02 },
+        { "t": "hecho", "l": "hacer", "p": "VERB", "w": true, "s": 42.02, "e": 42.56 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 42.77, "e": 42.965 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 42.965, "e": 43.16 },
+        { "t": "Edad", "l": "edad", "p": "NOUN", "w": true, "sp": true, "s": 43.16, "e": 43.485 },
+        { "t": "Media", "l": "medio", "p": "ADJ", "w": true, "sp": true, "s": 43.485, "e": 43.875 },
+        { "t": "eran", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 43.875, "e": 44.2 },
+        {
+          "t": "prácticamente",
+          "l": "prácticamente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 44.2,
+          "e": 45.11
+        },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 45.11, "e": 45.305 },
+        { "t": "misma", "l": "mismo", "p": "DET", "w": true, "sp": true, "s": 45.305, "e": 45.695 },
+        { "t": "lengua", "l": "lengua", "p": "NOUN", "w": true, "s": 45.695, "e": 46.15 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 41.74,
+      "end": 46.227
+    },
+    {
+      "id": "s11",
+      "speaker": "ramos",
+      "text": "El caso del euskera, la lengua del País Vasco, es diferente.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 46.497, "e": 46.72 },
+        { "t": "caso", "l": "caso", "p": "NOUN", "w": true, "sp": true, "s": 46.72, "e": 47.092 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 47.091, "e": 47.388 },
+        { "t": "euskera", "l": "euskera", "p": "NOUN", "w": true, "s": 47.389, "e": 47.983 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 47.983, "e": 48.206 },
+        { "t": "lengua", "l": "lengua", "p": "NOUN", "w": true, "sp": true, "s": 48.206, "e": 48.726 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 48.726, "e": 49.023 },
+        { "t": "País", "l": "país", "p": "NOUN", "w": true, "sp": true, "s": 49.024, "e": 49.396 },
+        { "t": "Vasco", "l": "vasco", "p": "NOUN", "w": true, "s": 49.395, "e": 49.841 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 49.841, "e": 50.064 },
+        { "t": "diferente", "l": "diferente", "p": "ADJ", "w": true, "s": 50.064, "e": 50.807 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.477,
+      "end": 50.888
+    },
+    {
+      "id": "s12",
+      "speaker": "ramos",
+      "text": "Mientras que el castellano, el catalán y el gallego vienen del latín, el euskera tiene un origen desconocido.",
+      "tokens": [
+        { "t": "Mientras", "l": "mientras", "p": "SCONJ", "w": true, "sp": true, "s": 51.148, "e": 51.759 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 51.759, "e": 52.03 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 52.03, "e": 52.234 },
+        { "t": "castellano", "l": "castellano", "p": "NOUN", "w": true, "s": 52.234, "e": 52.98 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 52.98, "e": 53.184 },
+        { "t": "catalán", "l": "catalán", "p": "NOUN", "w": true, "sp": true, "s": 53.184, "e": 53.727 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 53.726, "e": 53.862 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 53.862, "e": 54.066 },
+        { "t": "gallego", "l": "gallego", "p": "NOUN", "w": true, "sp": true, "s": 54.066, "e": 54.609 },
+        { "t": "vienen", "l": "venir", "p": "VERB", "w": true, "sp": true, "s": 54.608, "e": 55.083 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 55.083, "e": 55.354 },
+        { "t": "latín", "l": "latín", "p": "NOUN", "w": true, "s": 55.355, "e": 55.762 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 55.762, "e": 55.966 },
+        { "t": "euskera", "l": "euskera", "p": "NOUN", "w": true, "sp": true, "s": 55.965, "e": 56.508 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 56.508, "e": 56.915 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 56.915, "e": 57.119 },
+        { "t": "origen", "l": "origen", "p": "NOUN", "w": true, "sp": true, "s": 57.119, "e": 57.594 },
+        { "t": "desconocido", "l": "desconocido", "p": "ADJ", "w": true, "s": 57.594, "e": 58.408 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 51.138,
+      "end": 58.507
+    },
+    {
+      "id": "s13",
+      "speaker": "ramos",
+      "text": "Se cree que ya se hablaba antes de la llegada de los romanos.",
+      "tokens": [
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 58.767, "e": 58.963 },
+        { "t": "cree", "l": "creer", "p": "VERB", "w": true, "sp": true, "s": 58.963, "e": 59.29 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 59.29, "e": 59.552 },
+        { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 59.552, "e": 59.748 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 59.748, "e": 59.944 },
+        { "t": "hablaba", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 59.944, "e": 60.467 },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true, "s": 60.468, "e": 60.86 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 60.86, "e": 61.056 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 61.056, "e": 61.252 },
+        { "t": "llegada", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 61.253, "e": 61.776 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 61.776, "e": 61.972 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 61.972, "e": 62.234 },
+        { "t": "romanos", "l": "romano", "p": "NOUN", "w": true, "s": 62.234, "e": 62.757 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 58.757,
+      "end": 62.846
+    },
+    {
+      "id": "s14",
+      "speaker": "ramos",
+      "text": "Por eso es una de las lenguas más antiguas de Europa.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 63.106, "e": 63.372 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 63.372, "e": 63.638 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 63.637, "e": 63.836 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 63.837, "e": 64.103 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 64.102, "e": 64.301 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 64.301, "e": 64.567 },
+        { "t": "lenguas", "l": "lengua", "p": "NOUN", "w": true, "sp": true, "s": 64.567, "e": 65.098 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 65.098, "e": 65.364 },
+        { "t": "antiguas", "l": "antiguo", "p": "ADJ", "w": true, "sp": true, "s": 65.364, "e": 65.962 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 65.962, "e": 66.161 },
+        { "t": "Europa", "l": "europa", "p": "PROPN", "w": false, "s": 66.161, "e": 66.626 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 63.096,
+      "end": 66.675
+    },
+    {
+      "id": "s15",
+      "speaker": "ramos",
+      "text": "¿Y cómo conviven estas lenguas con el castellano?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 66.945, "e": 67.078 },
+        { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 67.078, "e": 67.41 },
+        { "t": "conviven", "l": "convivir", "p": "VERB", "w": true, "sp": true, "s": 67.41, "e": 68.008 },
+        { "t": "estas", "l": "este", "p": "DET", "w": true, "sp": true, "s": 68.008, "e": 68.407 },
+        { "t": "lenguas", "l": "lengua", "p": "NOUN", "w": true, "sp": true, "s": 68.407, "e": 68.939 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 68.939, "e": 69.205 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 69.205, "e": 69.404 },
+        { "t": "castellano", "l": "castellano", "p": "NOUN", "w": true, "s": 69.404, "e": 70.135 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 66.925,
+      "end": 70.204
+    },
+    {
+      "id": "s16",
+      "speaker": "ramos",
+      "text": "En estas comunidades, la mayoría de la gente es bilingüe.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 70.464, "e": 70.672 },
+        { "t": "estas", "l": "este", "p": "DET", "w": true, "sp": true, "s": 70.672, "e": 71.088 },
+        { "t": "comunidades", "l": "comunidad", "p": "NOUN", "w": true, "s": 71.088, "e": 71.919 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 71.919, "e": 72.127 },
+        { "t": "mayoría", "l": "mayoría", "p": "NOUN", "w": true, "sp": true, "s": 72.127, "e": 72.681 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 72.681, "e": 72.889 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 72.889, "e": 73.097 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 73.097, "e": 73.513 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 73.513, "e": 73.721 },
+        { "t": "bilingüe", "l": "bilingüe", "p": "ADJ", "w": true, "s": 73.72, "e": 74.344 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 70.454,
+      "end": 74.436
+    },
+    {
+      "id": "s17",
+      "speaker": "ramos",
+      "text": "En los colegios se enseñan las dos lenguas, y los documentos oficiales suelen estar en ambas.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 74.696, "e": 74.894 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 74.894, "e": 75.157 },
+        { "t": "colegios", "l": "colegio", "p": "NOUN", "w": true, "sp": true, "s": 75.157, "e": 75.75 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 75.75, "e": 75.948 },
+        { "t": "enseñan", "l": "enseñar", "p": "VERB", "w": true, "sp": true, "s": 75.948, "e": 76.475 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 76.474, "e": 76.737 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 76.738, "e": 77.001 },
+        { "t": "lenguas", "l": "lengua", "p": "NOUN", "w": true, "s": 77.001, "e": 77.528 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 77.528, "e": 77.66 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 77.66, "e": 77.923 },
+        { "t": "documentos", "l": "documento", "p": "NOUN", "w": true, "sp": true, "s": 77.924, "e": 78.649 },
+        { "t": "oficiales", "l": "oficial", "p": "ADJ", "w": true, "sp": true, "s": 78.648, "e": 79.307 },
+        { "t": "suelen", "l": "soler", "p": "VERB", "w": true, "sp": true, "s": 79.307, "e": 79.768 },
+        { "t": "estar", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 79.768, "e": 80.163 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 80.163, "e": 80.361 },
+        { "t": "ambas", "l": "ambos", "p": "ADJ", "w": true, "s": 80.361, "e": 80.756 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 74.686,
+      "end": 80.823
+    },
+    {
+      "id": "s18",
+      "speaker": "ramos",
+      "text": "No siempre ha sido así.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 81.083, "e": 81.303 },
+        { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true, "s": 81.303, "e": 81.891 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 81.891, "e": 82.111 },
+        { "t": "sido", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 82.112, "e": 82.479 },
+        { "t": "así", "l": "así", "p": "ADV", "w": true, "s": 82.479, "e": 82.773 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 81.073,
+      "end": 82.847
+    },
+    {
+      "id": "s19",
+      "speaker": "ramos",
+      "text": "Durante la dictadura, entre 1939 y 1975, estas lenguas estuvieron muy limitadas en la vida pública.",
+      "tokens": [
+        { "t": "Durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 83.107, "e": 83.939 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 83.939, "e": 84.251 },
+        { "t": "dictadura", "l": "dictadura", "p": "NOUN", "w": true, "s": 84.251, "e": 85.291 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true, "s": 85.291, "e": 85.915 },
+        { "t": "1939", "l": "1939", "p": "NUM", "w": false, "sp": true, "s": 85.916, "e": 86.436 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 86.436, "e": 86.644 },
+        { "t": "1975", "l": "1975", "p": "NUM", "w": false, "s": 86.644, "e": 87.164 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "estas", "l": "este", "p": "DET", "w": true, "sp": true, "s": 87.164, "e": 87.788 },
+        { "t": "lenguas", "l": "lengua", "p": "NOUN", "w": true, "sp": true, "s": 87.788, "e": 88.62 },
+        { "t": "estuvieron", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 88.62, "e": 89.764 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 89.764, "e": 90.18 },
+        { "t": "limitadas", "l": "limitar", "p": "VERB", "w": true, "sp": true, "s": 90.18, "e": 91.22 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 91.221, "e": 91.533 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 91.533, "e": 91.845 },
+        { "t": "vida", "l": "vida", "p": "NOUN", "w": true, "sp": true, "s": 91.845, "e": 92.365 },
+        { "t": "pública", "l": "público", "p": "ADJ", "w": true, "s": 92.365, "e": 93.197 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 83.097,
+      "end": 93.291
+    },
+    {
+      "id": "s20",
+      "speaker": "ramos",
+      "text": "Muchas familias dejaron de transmitirlas a sus hijos.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 93.551, "e": 94.024 },
+        { "t": "familias", "l": "familia", "p": "NOUN", "w": true, "sp": true, "s": 94.024, "e": 94.632 },
+        { "t": "dejaron", "l": "dejar", "p": "VERB", "w": true, "sp": true, "s": 94.632, "e": 95.172 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 95.172, "e": 95.375 },
+        {
+          "t": "transmitirlas",
+          "l": "transmitir",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 95.375,
+          "e": 96.321
+        },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 96.32, "e": 96.455 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 96.456, "e": 96.726 },
+        { "t": "hijos", "l": "hijo", "p": "NOUN", "w": true, "s": 96.726, "e": 97.131 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 93.541,
+      "end": 97.193
+    },
+    {
+      "id": "s21",
+      "speaker": "ramos",
+      "text": "Con la democracia, la Constitución de 1978 reconoció su carácter oficial.",
+      "tokens": [
+        { "t": "Con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 97.453, "e": 97.702 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 97.702, "e": 97.889 },
+        { "t": "democracia", "l": "democracia", "p": "NOUN", "w": true, "s": 97.889, "e": 98.573 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 98.773, "e": 99.077 },
+        {
+          "t": "Constitución",
+          "l": "constitución",
+          "p": "PROPN",
+          "w": false,
+          "sp": true,
+          "s": 99.077,
+          "e": 100.394
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 100.394, "e": 100.698 },
+        { "t": "1978", "l": "1978", "p": "NUM", "w": false, "sp": true, "s": 100.698, "e": 101.204 },
+        { "t": "reconoció", "l": "reconocer", "p": "VERB", "w": true, "sp": true, "s": 101.204, "e": 102.217 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 102.217, "e": 102.521 },
+        { "t": "carácter", "l": "carácter", "p": "NOUN", "w": true, "sp": true, "s": 102.521, "e": 103.433 },
+        { "t": "oficial", "l": "oficial", "p": "ADJ", "w": true, "s": 103.433, "e": 104.243 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 97.443,
+      "end": 104.325
+    },
+    {
+      "id": "s22",
+      "speaker": "ramos",
+      "text": "Desde entonces, el número de hablantes jóvenes ha aumentado en varias regiones.",
+      "tokens": [
+        { "t": "Desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 104.575, "e": 104.966 },
+        { "t": "entonces", "l": "entonces", "p": "ADV", "w": true, "s": 104.966, "e": 105.552 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 105.552, "e": 105.747 },
+        { "t": "número", "l": "número", "p": "NOUN", "w": true, "sp": true, "s": 105.747, "e": 106.203 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 106.203, "e": 106.398 },
+        { "t": "hablantes", "l": "hablante", "p": "NOUN", "w": true, "sp": true, "s": 106.399, "e": 107.05 },
+        { "t": "jóvenes", "l": "joven", "p": "NOUN", "w": true, "sp": true, "s": 107.05, "e": 107.571 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 107.571, "e": 107.766 },
+        { "t": "aumentado", "l": "aumentar", "p": "VERB", "w": true, "sp": true, "s": 107.766, "e": 108.417 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 108.418, "e": 108.613 },
+        { "t": "varias", "l": "varios", "p": "DET", "w": true, "sp": true, "s": 108.613, "e": 109.069 },
+        { "t": "regiones", "l": "región", "p": "NOUN", "w": true, "s": 109.069, "e": 109.655 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 104.575,
+      "end": 109.702
+    },
+    {
+      "id": "s23",
+      "speaker": "ramos",
+      "text": "Hoy en día, estas lenguas tienen periódicos, cadenas de televisión y una literatura muy rica.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 109.962, "e": 110.231 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 110.231, "e": 110.433 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "s": 110.433, "e": 110.702 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "estas", "l": "este", "p": "DET", "w": true, "sp": true, "s": 110.702, "e": 111.106 },
+        { "t": "lenguas", "l": "lengua", "p": "NOUN", "w": true, "sp": true, "s": 111.105, "e": 111.643 },
+        { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 111.643, "e": 112.114 },
+        { "t": "periódicos", "l": "periódico", "p": "NOUN", "w": true, "s": 112.114, "e": 112.854 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "cadenas", "l": "cadena", "p": "NOUN", "w": true, "sp": true, "s": 112.854, "e": 113.392 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 113.392, "e": 113.594 },
+        {
+          "t": "televisión",
+          "l": "televisión",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 113.594,
+          "e": 114.334
+        },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 114.333, "e": 114.468 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 114.468, "e": 114.737 },
+        {
+          "t": "literatura",
+          "l": "literatura",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 114.737,
+          "e": 115.477
+        },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 115.477, "e": 115.746 },
+        { "t": "rica", "l": "rico", "p": "ADJ", "w": true, "s": 115.746, "e": 116.082 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 109.952,
+      "end": 116.157
+    },
+    {
+      "id": "s24",
+      "speaker": "ramos",
+      "text": "Sin embargo, siguen existiendo debates, por ejemplo sobre cuántas horas de clase debe haber en cada lengua.",
+      "tokens": [
+        { "t": "Sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 116.417, "e": 116.675 },
+        { "t": "embargo", "l": "embargo", "p": "NOUN", "w": true, "s": 116.675, "e": 117.191 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "siguen", "l": "seguir", "p": "VERB", "w": true, "sp": true, "s": 117.191, "e": 117.642 },
+        { "t": "existiendo", "l": "existir", "p": "VERB", "w": true, "sp": true, "s": 117.642, "e": 118.351 },
+        { "t": "debates", "l": "debatir", "p": "VERB", "w": true, "s": 118.351, "e": 118.867 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 118.867, "e": 119.125 },
+        { "t": "ejemplo", "l": "ejemplo", "p": "NOUN", "w": true, "sp": true, "s": 119.125, "e": 119.641 },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 119.641, "e": 120.028 },
+        { "t": "cuántas", "l": "cuánto", "p": "PRON", "w": true, "sp": true, "s": 120.028, "e": 120.544 },
+        { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 120.543, "e": 120.93 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 120.93, "e": 121.123 },
+        { "t": "clase", "l": "clase", "p": "NOUN", "w": true, "sp": true, "s": 121.124, "e": 121.511 },
+        { "t": "debe", "l": "deber", "p": "VERB", "w": true, "sp": true, "s": 121.511, "e": 121.833 },
+        { "t": "haber", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 121.833, "e": 122.22 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 122.22, "e": 122.413 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 122.413, "e": 122.735 },
+        { "t": "lengua", "l": "lengua", "p": "NOUN", "w": true, "s": 122.736, "e": 123.187 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 116.407,
+      "end": 123.27
+    },
+    {
+      "id": "s25",
+      "speaker": "ramos",
+      "text": "Para terminar, un consejo práctico.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 123.53, "e": 123.896 },
+        { "t": "terminar", "l": "terminar", "p": "VERB", "w": true, "s": 123.896, "e": 124.555 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 124.555, "e": 124.775 },
+        { "t": "consejo", "l": "consejo", "p": "NOUN", "w": true, "sp": true, "s": 124.775, "e": 125.361 },
+        { "t": "práctico", "l": "práctico", "p": "ADJ", "w": true, "s": 125.361, "e": 126.02 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 123.52,
+      "end": 126.1
+    },
+    {
+      "id": "s26",
+      "speaker": "ramos",
+      "text": "Si viajáis a Barcelona, Santiago o Bilbao, aprended a decir al menos «gracias» en la lengua local.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 126.37, "e": 126.58 },
+        { "t": "viajáis", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 126.58, "e": 127.139 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 127.139, "e": 127.279 },
+        { "t": "Barcelona", "l": "barcelona", "p": "PROPN", "w": false, "s": 127.279, "e": 127.978 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Santiago", "l": "santiago", "p": "PROPN", "w": false, "sp": true, "s": 127.978, "e": 128.607 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 128.607, "e": 128.747 },
+        { "t": "Bilbao", "l": "bilbao", "p": "PROPN", "w": false, "s": 128.746, "e": 129.235 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aprended", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 129.236, "e": 129.865 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 129.865, "e": 130.005 },
+        { "t": "decir", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 130.004, "e": 130.423 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 130.424, "e": 130.634 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 130.634, "e": 131.053 },
+        { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 131.053, "e": 131.612 },
+        { "t": "»", "l": "»", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 131.612, "e": 131.822 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 131.822, "e": 132.032 },
+        { "t": "lengua", "l": "lengua", "p": "NOUN", "w": true, "sp": true, "s": 132.031, "e": 132.52 },
+        { "t": "local", "l": "local", "p": "ADJ", "w": true, "s": 132.521, "e": 132.94 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 126.35,
+      "end": 133.054
+    },
+    {
+      "id": "s27",
+      "speaker": "ramos",
+      "text": "Es un pequeño gesto que la gente agradece mucho.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 133.314, "e": 133.508 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 133.508, "e": 133.702 },
+        { "t": "pequeño", "l": "pequeño", "p": "ADJ", "w": true, "sp": true, "s": 133.703, "e": 134.221 },
+        { "t": "gesto", "l": "gesto", "p": "NOUN", "w": true, "sp": true, "s": 134.221, "e": 134.61 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 134.61, "e": 134.869 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 134.869, "e": 135.063 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 135.063, "e": 135.452 },
+        { "t": "agradece", "l": "agradecer", "p": "VERB", "w": true, "sp": true, "s": 135.452, "e": 136.035 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "s": 136.035, "e": 136.424 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 133.304,
+      "end": 136.492
+    },
+    {
+      "id": "s28",
+      "speaker": "ramos",
+      "text": "En la próxima clase veremos algunas palabras que el castellano ha tomado de estas lenguas.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 136.752, "e": 136.958 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 136.958, "e": 137.164 },
+        { "t": "próxima", "l": "próximo", "p": "ADJ", "w": true, "sp": true, "s": 137.165, "e": 137.715 },
+        { "t": "clase", "l": "clase", "p": "NOUN", "w": true, "sp": true, "s": 137.715, "e": 138.128 },
+        { "t": "veremos", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 138.128, "e": 138.678 },
+        { "t": "algunas", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 138.678, "e": 139.228 },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 139.228, "e": 139.847 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 139.847, "e": 140.122 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 140.122, "e": 140.328 },
+        {
+          "t": "castellano",
+          "l": "castellano",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 140.328,
+          "e": 141.085
+        },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 141.085, "e": 141.291 },
+        { "t": "tomado", "l": "tomar", "p": "VERB", "w": true, "sp": true, "s": 141.291, "e": 141.772 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 141.773, "e": 141.979 },
+        { "t": "estas", "l": "este", "p": "DET", "w": true, "sp": true, "s": 141.979, "e": 142.392 },
+        { "t": "lenguas", "l": "lengua", "p": "NOUN", "w": true, "s": 142.392, "e": 142.942 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 136.742,
+      "end": 143.002
+    },
+    {
+      "id": "s29",
+      "speaker": "ramos",
+      "text": "Hasta el jueves.",
+      "tokens": [
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 143.262, "e": 143.693 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 143.693, "e": 143.909 },
+        { "t": "jueves", "l": "jueves", "p": "NOUN", "w": true, "s": 143.909, "e": 144.412 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 143.252,
+      "end": 144.45
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "cooficial",
+      "surface": "cooficiales",
+      "pos": "adjective",
+      "def_en": "oficial al mismo tiempo que otra lengua",
+      "def_es": { "en": "co-official", "fr": "coofficiel", "zh": "同为官方的", "ja": "併用公用の" },
+      "ref": "s3"
+    },
+    {
+      "lemma": "bilingüe",
+      "surface": "bilingüe",
+      "pos": "adjective",
+      "def_en": "que habla dos lenguas",
+      "def_es": { "en": "bilingual", "fr": "bilingue", "zh": "双语的", "ja": "バイリンガルの" },
+      "ref": "s16"
+    },
+    {
+      "lemma": "transmitir",
+      "surface": "transmitirlas",
+      "pos": "verb",
+      "def_en": "pasar algo a otras personas",
+      "def_es": { "en": "to pass on", "fr": "transmettre", "zh": "传承", "ja": "伝える" },
+      "ref": "s20"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Cuál es el tema de la clase?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "The other languages of Spain." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La historia de los romanos en España" },
+        { "id": "b", "text": "Las otras lenguas oficiales de España" },
+        { "id": "c", "text": "Cómo aprender portugués rápidamente" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Dónde se habla gallego?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "In the north-west." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En las islas Baleares" },
+        { "id": "b", "text": "En el País Vasco" },
+        { "id": "c", "text": "En el noroeste del país" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué tiene de especial el euskera?",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "Its origin is unknown." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "No se sabe de dónde viene" },
+        { "id": "b", "text": "Es la lengua más hablada" },
+        { "id": "c", "text": "Es igual que el portugués" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Durante la dictadura, estas lenguas se usaban libremente en la vida pública.",
+      "evidence": ["s19"],
+      "rationale_es": { "en": "They were very restricted." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué cambió con la Constitución de 1978?",
+      "evidence": ["s21"],
+      "rationale_es": { "en": "It recognised them as official." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Se prohibieron en los colegios" },
+        { "id": "b", "text": "La ley empezó a protegerlas" },
+        { "id": "c", "text": "Se unieron en una sola lengua" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "post",
+      "prompt": "¿Qué recomienda la profesora a quien viaje a esas ciudades?",
+      "evidence": ["s26"],
+      "rationale_es": { "en": "Learn a word in the local language." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Hablar siempre en inglés para evitar problemas" },
+        { "id": "b", "text": "Llevar un diccionario de latín en la mochila" },
+        { "id": "c", "text": "Aprender alguna palabra en la lengua del lugar" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s16"],
+      "rationale_es": { "en": "*Bilingüe*: bilingual." },
+      "type": "gap_fill",
+      "text": "En esas comunidades, la mayoría de la gente es {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["bilingüe"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "además", "agradecer", "algún", "alrededor", "ambos", "antes", "antiguo", "aprender", "así",
+    "aumentar", "bilingüe", "bueno", "cada", "cadena", "carácter", "caso", "castellano", "catalán", "cercano",
+    "clase", "colegio", "comer", "comunidad", "con", "consejo", "convivir", "cooficial", "creer", "cuánto",
+    "cómo", "de", "debatir", "deber", "decir", "dejar", "democracia", "desconocido", "desde", "dictadura",
+    "diferente", "documento", "durante", "día", "edad", "ejemplo", "el", "embargo", "empezar", "en", "enseñar",
+    "entonces", "entre", "español", "estar", "este", "esto", "estudiante", "euskera", "existir", "extranjero",
+    "familia", "gallego", "gente", "gesto", "haber", "hablante", "hablar", "hacer", "hasta", "hijo", "hora",
+    "hoy", "ir", "isla", "joven", "jueves", "latín", "lengua", "limitar", "literatura", "llamarse", "llegar",
+    "local", "mayoría", "medio", "menos", "mientras", "millón", "mismo", "mucho", "muy", "más", "no", "nombre",
+    "noroeste", "número", "o", "oficial", "origen", "palabra", "para", "país", "pequeño", "periódico",
+    "persona", "por", "portugués", "principal", "prácticamente", "práctico", "próximo", "público", "que",
+    "reconocer", "región", "rico", "romano", "se", "seguir", "ser", "si", "siempre", "sin", "sobre", "soler",
+    "solo", "sorprender", "su", "también", "televisión", "tema", "tener", "terminar", "todo", "tomar",
+    "transmitir", "un", "valenciano", "varios", "vasco", "venir", "ver", "viajar", "vida", "y", "ya", "él"
+  ],
+  "difficulty": 1246,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6518, "A2": 0.7348, "B1": 0.9105, "B2": 0.9968, "C1": 1, "C2": 1 },
+    "off_level_lemmas": ["transmitir"],
+    "avg_sentence_words": 11.3,
+    "flesch_reading_ease": 75.9,
+    "checked_at": "2026-10-19T07:52:02.896Z"
+  },
+  "audio": {
+    "src": "audio/b2/es-b2-lis-011/v1.m4a",
+    "duration_s": 144.45,
+    "wpm": 137,
+    "provider": "piper",
+    "voices": { "ramos": "sharvard-f" },
+    "loudness_lufs": -16,
+    "peaks": [
+      1, 0.7, 0.14, 1, 0.66, 0.5, 0.58, 0.44, 0.51, 0.71, 0.52, 0.42, 0.62, 0.72, 0.52, 0.26, 0.55, 0.65, 0.5,
+      0.71, 0.71, 0.52, 0.86, 1, 0.6, 0.93, 0.5, 0.54, 0.62, 1, 0.72, 0.8, 0.69, 0.74, 0.6, 0.76, 1, 0.93,
+      0.56, 1, 0.62, 0.56, 0.57, 0.68, 0.52, 0.62, 0.68, 0.59, 0.67, 0.59, 0.39, 1, 0.74, 0.8, 0.87, 0.58,
+      0.51, 0.98, 1, 0.76, 0.64, 0.56, 0.74, 0.23, 0.87, 0.98, 0.84, 1, 0.51, 0.63, 0.52, 0.84, 0.74, 1, 0.71,
+      0.83, 0.66, 0.94, 0.66, 0.6, 1, 0.86, 0.49, 0.47, 0.29, 0.75, 0.86, 0.75, 1, 0.88, 0.91, 0.83, 0.7, 0.81,
+      0.88, 0.66, 0.51, 0.67, 0.75, 1, 0.65, 0.91, 0.89, 0.56, 0.98, 0.9, 0.73, 0.84, 0.69, 1, 0.74, 1, 0.97,
+      0.8, 0.96, 0.8, 0.47, 0.83, 0.93, 1, 0.97, 0.98, 0.98, 0.38, 0.87, 0.87, 0.83, 0.84, 0.73, 0.87, 0.63, 1,
+      0.94, 0.7, 0.73, 1, 0.95, 0.52, 0.84, 0.6, 0.63, 0.61, 0.68, 0.56, 0.73, 0.69, 0.72, 0.5, 0.82, 0.68, 1,
+      0.7, 0.79, 0.77, 0.53, 0.75, 0.98, 0.97, 0.89, 1, 0.54, 0.67, 0.92, 1, 0.8, 0.6, 0.71, 0.62, 0.58, 0.57,
+      0.6, 0.89, 0.6, 0.85, 0.88, 0.86, 0.82, 0.95, 1, 0.98, 0.96, 0.38, 0.7, 0.92, 0.62, 1, 0.66, 0.61, 0.65,
+      0.64, 0.72, 0.71, 0.5, 0.53, 0.94, 0.62, 0.63, 0.81, 0.64, 0.61, 0.71, 1, 0.83, 0.72, 0.5, 0.64, 0.47,
+      0.48, 1, 0.16, 0.66, 0.78, 0.69, 0.69, 0.85, 0.76, 0.55, 0.74, 0.94, 0.61, 1, 1, 0.88, 0.85, 0.9, 0.86,
+      0.44, 0.88, 0.94, 0.74, 0.68, 0.93, 1, 0.85, 0.71, 0.72, 0.78, 0.21, 1, 1
+    ]
+  }
+}

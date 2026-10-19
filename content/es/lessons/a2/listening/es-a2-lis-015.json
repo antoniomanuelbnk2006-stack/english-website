@@ -1,0 +1,385 @@
+{
+  "id": "es-a2-lis-015",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u03",
+  "series": "es-a2-u03-devolucion",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Cambiar un producto",
+  "summary_es": {
+    "en": "A customer returns a shirt that is too small and chooses another.",
+    "fr": "Un client rend une chemise trop petite et en choisit une autre.",
+    "zh": "一位顾客退换太小的衬衫并选了另一件。",
+    "ja": "客が小さすぎるシャツを返品し、別のものを選びます。"
+  },
+  "topic": "money",
+  "tags": ["compras", "devolver", "ticket"],
+  "can_do": ["L-A2-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["camiseta", "talla", "cambiar", "tarjeta"],
+  "est_minutes": 6,
+  "prediction_prompt": "Compraste algo que no te queda bien. ¿Qué dices en la tienda?",
+  "pre_teach": ["ticket", "devolver"],
+  "speakers": [
+    { "id": "luis", "name": "Luis", "accent": "es-ES", "gender": "male" },
+    { "id": "rosa", "name": "Rosa", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 120,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "luis",
+      "text": "Buenos días. Compré esta camiseta ayer, pero me queda pequeña.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.02, "e": 0.489 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 0.489, "e": 0.824 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Compré", "l": "comprar", "p": "VERB", "w": true, "sp": true, "s": 0.824, "e": 1.293 },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 1.293, "e": 1.628 },
+        { "t": "camiseta", "l": "camiseta", "p": "NOUN", "w": true, "sp": true, "s": 1.628, "e": 2.231 },
+        { "t": "ayer", "l": "ayer", "p": "ADV", "w": true, "s": 2.231, "e": 2.566 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 2.566, "e": 2.901 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 2.901, "e": 3.102 },
+        { "t": "queda", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 3.102, "e": 3.504 },
+        { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true, "s": 3.504, "e": 4.04 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 4.128
+    },
+    {
+      "id": "s2",
+      "speaker": "rosa",
+      "text": "¿Tiene el ticket de compra?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 4.838, "e": 5.21 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 5.21, "e": 5.396 },
+        { "t": "ticket", "l": "ticket", "p": "NOUN", "w": true, "sp": true, "s": 5.395, "e": 5.828 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 5.829, "e": 6.015 },
+        { "t": "compra", "l": "comprar", "p": "VERB", "w": true, "s": 6.015, "e": 6.448 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.828,
+      "end": 6.535
+    },
+    {
+      "id": "s3",
+      "speaker": "luis",
+      "text": "Sí, aquí está.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 7.235, "e": 7.491 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 7.491, "e": 7.918 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "s": 7.918, "e": 8.345 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.235,
+      "end": 8.42
+    },
+    {
+      "id": "s4",
+      "speaker": "rosa",
+      "text": "Perfecto. ¿Quiere cambiarla o prefiere el dinero?",
+      "tokens": [
+        { "t": "Perfecto", "l": "perfecto", "p": "ADJ", "w": true, "s": 9.12, "e": 9.89 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Quiere", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 10.14, "e": 10.534 },
+        { "t": "cambiarla", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 10.534, "e": 11.097 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 11.097, "e": 11.21 },
+        { "t": "prefiere", "l": "preferir", "p": "VERB", "w": true, "sp": true, "s": 11.21, "e": 11.717 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.717, "e": 11.886 },
+        { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true, "s": 11.886, "e": 12.28 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.12,
+      "end": 12.333
+    },
+    {
+      "id": "s5",
+      "speaker": "luis",
+      "text": "Prefiero cambiarla por una talla más grande.",
+      "tokens": [
+        { "t": "Prefiero", "l": "preferir", "p": "VERB", "w": true, "sp": true, "s": 13.063, "e": 13.574 },
+        { "t": "cambiarla", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 13.574, "e": 14.142 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 14.143, "e": 14.37 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 14.37, "e": 14.597 },
+        { "t": "talla", "l": "talla", "p": "NOUN", "w": true, "sp": true, "s": 14.597, "e": 14.938 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 14.938, "e": 15.165 },
+        { "t": "grande", "l": "grande", "p": "ADJ", "w": true, "s": 15.165, "e": 15.563 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.033,
+      "end": 15.619
+    },
+    {
+      "id": "s6",
+      "speaker": "rosa",
+      "text": "Ahora mismo miro si la tenemos.",
+      "tokens": [
+        { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 16.329, "e": 16.747 },
+        { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "sp": true, "s": 16.747, "e": 17.165 },
+        { "t": "miro", "l": "mirar", "p": "VERB", "w": true, "sp": true, "s": 17.165, "e": 17.513 },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 17.514, "e": 17.723 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 17.723, "e": 17.932 },
+        { "t": "tenemos", "l": "tener", "p": "VERB", "w": true, "s": 17.932, "e": 18.489 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.319,
+      "end": 18.543
+    },
+    {
+      "id": "s7",
+      "speaker": "rosa",
+      "text": "Sí, queda una talla grande, pero solo en azul.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 19.053, "e": 19.276 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "queda", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 19.276, "e": 19.722 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 19.722, "e": 20.019 },
+        { "t": "talla", "l": "talla", "p": "NOUN", "w": true, "sp": true, "s": 20.019, "e": 20.465 },
+        { "t": "grande", "l": "grande", "p": "ADJ", "w": true, "s": 20.465, "e": 20.985 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 20.985, "e": 21.357 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 21.357, "e": 21.729 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 21.728, "e": 21.951 },
+        { "t": "azul", "l": "azul", "p": "ADJ", "w": true, "s": 21.951, "e": 22.323 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.043,
+      "end": 22.396
+    },
+    {
+      "id": "s8",
+      "speaker": "luis",
+      "text": "Vale, me gusta el azul también.",
+      "tokens": [
+        { "t": "Vale", "l": "vale", "p": "INTJ", "w": false, "s": 23.096, "e": 23.349 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 23.349, "e": 23.501 },
+        { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true, "s": 23.501, "e": 23.805 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 23.805, "e": 23.957 },
+        { "t": "azul", "l": "azul", "p": "ADJ", "w": true, "sp": true, "s": 23.957, "e": 24.21 },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "s": 24.211, "e": 24.616 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.096,
+      "end": 24.717
+    },
+    {
+      "id": "s9",
+      "speaker": "rosa",
+      "text": "Entonces no hay que pagar nada.",
+      "tokens": [
+        { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true, "s": 25.427, "e": 26.072 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 26.072, "e": 26.287 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 26.286, "e": 26.572 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 26.573, "e": 26.859 },
+        { "t": "pagar", "l": "pagar", "p": "VERB", "w": true, "sp": true, "s": 26.859, "e": 27.289 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 27.289, "e": 27.647 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.417,
+      "end": 27.737
+    },
+    {
+      "id": "s10",
+      "speaker": "luis",
+      "text": "Muchas gracias por su ayuda.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 28.468, "e": 28.841 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 28.841, "e": 29.267 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 29.266, "e": 29.479 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 29.479, "e": 29.639 },
+        { "t": "ayuda", "l": "ayudar", "p": "VERB", "w": true, "s": 29.639, "e": 29.958 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.437,
+      "end": 30.022
+    },
+    {
+      "id": "s11",
+      "speaker": "rosa",
+      "text": "A usted. ¡Que tenga un buen día!",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 30.732, "e": 30.895 },
+        { "t": "usted", "l": "usted", "p": "PRON", "w": true, "s": 30.895, "e": 31.383 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 31.662, "e": 31.884 },
+        { "t": "tenga", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 31.884, "e": 32.217 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 32.217, "e": 32.383 },
+        { "t": "buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 32.383, "e": 32.66 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "s": 32.66, "e": 32.882 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 30.722,
+      "end": 33
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "ticket",
+      "surface": "ticket",
+      "pos": "noun",
+      "def_en": "papel que prueba que has comprado algo",
+      "def_es": { "en": "receipt", "fr": "ticket de caisse", "zh": "购物小票", "ja": "レシート" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "cambiar",
+      "surface": "cambiarla",
+      "pos": "verb",
+      "def_en": "dar una cosa y recibir otra",
+      "def_es": { "en": "to exchange", "fr": "échanger", "zh": "更换", "ja": "交換する" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "quedar",
+      "surface": "queda",
+      "pos": "verb",
+      "def_en": "ser la ropa de una talla o forma",
+      "def_es": { "en": "to fit", "fr": "aller (vêtement)", "zh": "合身", "ja": "合う" },
+      "ref": "s1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué quiere hacer el cliente?",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "Exchange a T-shirt." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Comprar unos zapatos" },
+        { "id": "b", "text": "Cambiar una camiseta" },
+        { "id": "c", "text": "Pedir un descuento" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué quiere cambiarla?",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "It is too small." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque no le gusta el color" },
+        { "id": "b", "text": "Porque está rota" },
+        { "id": "c", "text": "Porque le queda pequeña" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué prefiere: el dinero o cambiarla?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "Exchange it." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cambiarla" },
+        { "id": "b", "text": "El dinero" },
+        { "id": "c", "text": "Las dos cosas" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "La camiseta grande está en rojo.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "It is only in blue." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "*No hay que pagar nada*." },
+      "type": "gap_fill",
+      "text": "El cliente no tiene que {{1}} nada.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["pagar"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué le desea Rosa al final?",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "A good day." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un buen viaje" },
+        { "id": "b", "text": "Un buen día" },
+        { "id": "c", "text": "Un buen provecho" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "ahora", "algo", "aquí", "ayer", "ayudar", "azul", "bueno", "cambiar", "camiseta", "comprar", "de",
+    "dinero", "día", "el", "en", "entonces", "estar", "este", "grande", "gustar", "haber", "mirar", "mismo",
+    "mucho", "más", "no", "o", "pagar", "pequeño", "perfecto", "pero", "por", "preferir", "que", "quedar",
+    "querer", "si", "solo", "su", "talla", "también", "tener", "ticket", "un", "usted", "yo"
+  ],
+  "difficulty": 891,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7313, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 5.1,
+    "flesch_reading_ease": 90.1,
+    "checked_at": "2026-10-18T23:12:58.318Z"
+  },
+  "audio": {
+    "src": "audio/a2/es-a2-lis-015/v1.m4a",
+    "duration_s": 33,
+    "wpm": 129,
+    "provider": "piper",
+    "voices": { "luis": "davefx-m", "rosa": "sharvard-f" },
+    "loudness_lufs": -16,
+    "peaks": [
+      1, 0.83, 0.59, 0.63, 0.14, 0.18, 0.01, 0.01, 0, 0, 0.88, 0.65, 1, 0.94, 0.97, 0.76, 0.89, 0.85, 0.92,
+      0.97, 0.27, 0.86, 0.87, 0.6, 0.89, 0.93, 0.93, 0.91, 0.44, 0.32, 0, 0, 0, 0, 0, 0.75, 1, 0.68, 0.48,
+      0.39, 0.61, 0.69, 0.57, 0.74, 0.41, 0.28, 0.23, 0.01, 0, 0, 0, 0, 0.74, 1, 0.26, 0.37, 0.54, 0.66, 0.54,
+      0.46, 0.55, 0.01, 0, 0, 0, 0, 0.97, 0.56, 1, 0.39, 0.29, 0.32, 0.02, 0.13, 0.89, 1, 0.61, 0.43, 0.8,
+      0.84, 0.85, 0.57, 0.26, 0.69, 0.61, 0.63, 0.42, 0.5, 0.39, 0.07, 0, 0, 0, 0, 0.02, 0.99, 1, 0.94, 0.95,
+      0.73, 0.97, 0.78, 0.96, 0.77, 0.34, 0.53, 0.94, 0.95, 0.97, 0.72, 0.63, 0.42, 0.15, 0.07, 0, 0, 0, 0,
+      0.3, 0.83, 0.83, 0.72, 0.64, 0.54, 0.74, 1, 0.43, 0.73, 0.78, 0.83, 0.6, 0.41, 0.27, 0.13, 0.08, 0, 0, 0,
+      0.23, 0.65, 0.83, 0.72, 0.77, 0.98, 0.85, 0.86, 1, 0.98, 0.91, 0.82, 0.5, 0.58, 0.03, 0.83, 0.78, 0.58,
+      0.74, 0.8, 0.6, 0.34, 0.43, 0.37, 0.04, 0, 0, 0, 0, 0.09, 1, 0.61, 0.67, 0.33, 1, 0.65, 0.37, 0.53, 0.69,
+      0.91, 0.62, 0.03, 0, 0, 0, 0, 0.14, 0.48, 0.84, 0.77, 0.84, 0.88, 0.73, 0.74, 0.65, 0.79, 0.81, 1, 0.93,
+      0.98, 0.48, 0.44, 0.16, 0.05, 0, 0, 0, 0, 0, 0.95, 1, 0.93, 0.98, 0.96, 0.86, 0.58, 0.62, 0.83, 0.57,
+      0.46, 0.01, 0, 0, 0, 0, 1, 0.98, 0.55, 0.99, 0.68, 0.07, 0, 0.86, 0.92, 0.89, 0.94, 0.84, 1, 0.69, 0.6,
+      0.49, 0.03
+    ]
+  }
+}

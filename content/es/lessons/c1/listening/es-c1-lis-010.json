@@ -1,0 +1,1331 @@
+{
+  "id": "es-c1-lis-010",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "unit": "es-c1-u03",
+  "series": "es-c1-u03-lobo",
+  "skill": "listening",
+  "genre": "news",
+  "title": "El regreso del lobo",
+  "summary_es": {
+    "en": "A radio report on the return of wolves to parts of Spain and the conflict between farmers and conservationists.",
+    "fr": "Un reportage radio sur le retour du loup dans certaines régions d’Espagne et le conflit entre éleveurs et défenseurs de la nature.",
+    "zh": "一则电台报道：狼重新出现在西班牙部分地区，以及牧民与环保人士之间的冲突。",
+    "ja": "スペインの一部地域へのオオカミの復活と、牧畜業者と自然保護派の対立を伝えるラジオ報道です。"
+  },
+  "topic": "nature",
+  "tags": ["naturaleza", "campo", "conflicto"],
+  "can_do": ["L-C1-03"],
+  "grammar_focus": [],
+  "vocab_focus": ["ganadero", "especie", "ataque", "convivencia"],
+  "est_minutes": 12,
+  "prediction_prompt": "¿Crees que los animales salvajes y la ganadería pueden convivir? ¿Cómo?",
+  "pre_teach": ["ganadero", "rebaño"],
+  "speakers": [
+    { "id": "elena", "name": "Elena", "accent": "es-ES", "gender": "female" },
+    { "id": "miguel", "name": "Miguel", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 140,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "elena",
+      "text": "Buenos días.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.617 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 0.617, "e": 1.05 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.095
+    },
+    {
+      "id": "s2",
+      "speaker": "elena",
+      "text": "En nuestro reportaje de hoy viajamos a la sierra.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 1.355, "e": 1.568 },
+        { "t": "nuestro", "l": "nuestro", "p": "DET", "w": true, "sp": true, "s": 1.568, "e": 2.136 },
+        { "t": "reportaje", "l": "reportaje", "p": "NOUN", "w": true, "sp": true, "s": 2.136, "e": 2.846 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 2.846, "e": 3.059 },
+        { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 3.059, "e": 3.343 },
+        { "t": "viajamos", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 3.344, "e": 3.983 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 3.983, "e": 4.125 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 4.125, "e": 4.338 },
+        { "t": "sierra", "l": "sierra", "p": "NOUN", "w": true, "s": 4.338, "e": 4.835 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.345,
+      "end": 4.911
+    },
+    {
+      "id": "s3",
+      "speaker": "elena",
+      "text": "Allí, una especie que estuvo a punto de desaparecer vuelve a provocar debate: el lobo.",
+      "tokens": [
+        { "t": "Allí", "l": "allí", "p": "ADV", "w": true, "s": 5.171, "e": 5.691 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 5.871, "e": 6.134 },
+        { "t": "especie", "l": "especie", "p": "NOUN", "w": true, "sp": true, "s": 6.134, "e": 6.66 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 6.66, "e": 6.923 },
+        { "t": "estuvo", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 6.923, "e": 7.383 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 7.384, "e": 7.516 },
+        { "t": "punto", "l": "punto", "p": "NOUN", "w": true, "sp": true, "s": 7.515, "e": 7.91 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 7.91, "e": 8.107 },
+        { "t": "desaparecer", "l": "desaparecer", "p": "VERB", "w": true, "sp": true, "s": 8.107, "e": 8.896 },
+        { "t": "vuelve", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 8.897, "e": 9.357 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 9.357, "e": 9.489 },
+        { "t": "provocar", "l": "provocar", "p": "VERB", "w": true, "sp": true, "s": 9.489, "e": 10.081 },
+        { "t": "debate", "l": "debatir", "p": "VERB", "w": true, "s": 10.081, "e": 10.541 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 10.691, "e": 10.954 },
+        { "t": "lobo", "l": "lobo", "p": "NOUN", "w": true, "s": 10.954, "e": 11.392 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.161,
+      "end": 11.476
+    },
+    {
+      "id": "s4",
+      "speaker": "elena",
+      "text": "Nuestro compañero Miguel ha pasado una semana en la zona.",
+      "tokens": [
+        { "t": "Nuestro", "l": "nuestro", "p": "DET", "w": true, "sp": true, "s": 11.736, "e": 12.267 },
+        { "t": "compañero", "l": "compañero", "p": "NOUN", "w": true, "sp": true, "s": 12.267, "e": 12.93 },
+        { "t": "Miguel", "l": "miguel", "p": "PROPN", "w": false, "sp": true, "s": 12.93, "e": 13.394 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 13.394, "e": 13.593 },
+        { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "sp": true, "s": 13.593, "e": 14.057 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 14.057, "e": 14.322 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true, "s": 14.322, "e": 14.786 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 14.787, "e": 14.986 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 14.985, "e": 15.184 },
+        { "t": "zona", "l": "zona", "p": "NOUN", "w": true, "s": 15.184, "e": 15.516 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.726,
+      "end": 15.611
+    },
+    {
+      "id": "s5",
+      "speaker": "miguel",
+      "text": "Gracias, Elena.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 16.042, "e": 16.756 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Elena", "l": "elena", "p": "PROPN", "w": false, "s": 16.756, "e": 17.292 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.011,
+      "end": 17.353
+    },
+    {
+      "id": "s6",
+      "speaker": "miguel",
+      "text": "Hace cincuenta años, el lobo ibérico estaba al borde de la extinción.",
+      "tokens": [
+        { "t": "Hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 17.603, "e": 17.916 },
+        { "t": "cincuenta", "l": "cincuenta", "p": "NUM", "w": false, "sp": true, "s": 17.916, "e": 18.541 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 18.541, "e": 18.854 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 19.283, "e": 19.454 },
+        { "t": "lobo", "l": "lobo", "p": "NOUN", "w": true, "sp": true, "s": 19.454, "e": 19.739 },
+        { "t": "ibérico", "l": "ibérico", "p": "ADJ", "w": true, "sp": true, "s": 19.74, "e": 20.197 },
+        { "t": "estaba", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 20.196, "e": 20.596 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 20.596, "e": 20.767 },
+        { "t": "borde", "l": "borde", "p": "NOUN", "w": true, "sp": true, "s": 20.767, "e": 21.11 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 21.11, "e": 21.281 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 21.281, "e": 21.452 },
+        { "t": "extinción", "l": "extinción", "p": "NOUN", "w": true, "s": 21.452, "e": 22.023 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.603,
+      "end": 22.109
+    },
+    {
+      "id": "s7",
+      "speaker": "miguel",
+      "text": "Se le cazaba sin control y quedaban apenas unos cientos de ejemplares en el noroeste del país.",
+      "tokens": [
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 22.359, "e": 22.561 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 22.561, "e": 22.763 },
+        { "t": "cazaba", "l": "cazar", "p": "VERB", "w": true, "sp": true, "s": 22.764, "e": 23.236 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 23.236, "e": 23.506 },
+        { "t": "control", "l": "control", "p": "NOUN", "w": true, "sp": true, "s": 23.506, "e": 24.046 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 24.045, "e": 24.18 },
+        { "t": "quedaban", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 24.18, "e": 24.787 },
+        { "t": "apenas", "l": "apenas", "p": "ADV", "w": true, "sp": true, "s": 24.787, "e": 25.259 },
+        { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true, "s": 25.259, "e": 25.596 },
+        { "t": "cientos", "l": "ciento", "p": "NOUN", "w": true, "sp": true, "s": 25.596, "e": 26.136 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 26.136, "e": 26.338 },
+        { "t": "ejemplares", "l": "ejemplar", "p": "NOUN", "w": true, "sp": true, "s": 26.338, "e": 27.08 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 27.08, "e": 27.282 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 27.283, "e": 27.485 },
+        { "t": "noroeste", "l": "noroeste", "p": "NOUN", "w": true, "sp": true, "s": 27.485, "e": 28.092 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 28.092, "e": 28.362 },
+        { "t": "país", "l": "país", "p": "NOUN", "w": true, "s": 28.362, "e": 28.699 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.359,
+      "end": 28.773
+    },
+    {
+      "id": "s8",
+      "speaker": "miguel",
+      "text": "Hoy, gracias a las leyes de protección, se calcula que hay más de trescientas manadas.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "s": 29.033, "e": 29.291 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 29.291, "e": 29.807 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 29.807, "e": 29.936 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 29.936, "e": 30.194 },
+        { "t": "leyes", "l": "ley", "p": "NOUN", "w": true, "sp": true, "s": 30.194, "e": 30.581 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 30.582, "e": 30.776 },
+        { "t": "protección", "l": "protección", "p": "NOUN", "w": true, "s": 30.775, "e": 31.485 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 31.485, "e": 31.679 },
+        { "t": "calcula", "l": "calcular", "p": "VERB", "w": true, "sp": true, "s": 31.678, "e": 32.194 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 32.195, "e": 32.453 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 32.453, "e": 32.711 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 32.711, "e": 32.969 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 32.969, "e": 33.163 },
+        {
+          "t": "trescientas",
+          "l": "trescientos",
+          "p": "NUM",
+          "w": false,
+          "sp": true,
+          "s": 33.163,
+          "e": 33.937
+        },
+        { "t": "manadas", "l": "manada", "p": "NOUN", "w": true, "s": 33.937, "e": 34.453 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 29.023,
+      "end": 34.521
+    },
+    {
+      "id": "s9",
+      "speaker": "miguel",
+      "text": "Y no solo han aumentado en número: están volviendo a zonas donde no se veían desde hacía décadas.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 34.804, "e": 34.94 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 34.94, "e": 35.144 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 35.144, "e": 35.484 },
+        { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 35.483, "e": 35.755 },
+        { "t": "aumentado", "l": "aumentar", "p": "VERB", "w": true, "sp": true, "s": 35.755, "e": 36.434 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 36.435, "e": 36.639 },
+        { "t": "número", "l": "número", "p": "NOUN", "w": true, "s": 36.638, "e": 37.114 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "están", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 37.444, "e": 37.824 },
+        { "t": "volviendo", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 37.824, "e": 38.458 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 38.458, "e": 38.585 },
+        { "t": "zonas", "l": "zona", "p": "NOUN", "w": true, "sp": true, "s": 38.585, "e": 38.965 },
+        { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true, "s": 38.965, "e": 39.345 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 39.346, "e": 39.536 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 39.536, "e": 39.726 },
+        { "t": "veían", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 39.726, "e": 40.106 },
+        { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 40.106, "e": 40.486 },
+        { "t": "hacía", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 40.487, "e": 40.867 },
+        { "t": "décadas", "l": "década", "p": "NOUN", "w": true, "s": 40.867, "e": 41.374 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.771,
+      "end": 41.456
+    },
+    {
+      "id": "s10",
+      "speaker": "elena",
+      "text": "Una buena noticia para la naturaleza, pero no para todos.",
+      "tokens": [
+        { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 41.856, "e": 42.136 },
+        { "t": "buena", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 42.136, "e": 42.556 },
+        { "t": "noticia", "l": "noticia", "p": "NOUN", "w": true, "sp": true, "s": 42.556, "e": 43.116 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 43.116, "e": 43.466 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 43.466, "e": 43.676 },
+        { "t": "naturaleza", "l": "naturaleza", "p": "NOUN", "w": true, "s": 43.676, "e": 44.446 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 44.676, "e": 45.044 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 45.044, "e": 45.265 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 45.265, "e": 45.633 },
+        { "t": "todos", "l": "todo", "p": "DET", "w": true, "s": 45.634, "e": 46.076 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 41.856,
+      "end": 46.179
+    },
+    {
+      "id": "s11",
+      "speaker": "miguel",
+      "text": "Exacto.",
+      "tokens": [
+        { "t": "Exacto", "l": "exacto", "p": "ADJ", "w": true, "s": 46.579, "e": 47.169 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.579,
+      "end": 47.52
+    },
+    {
+      "id": "s12",
+      "speaker": "miguel",
+      "text": "Para los ganaderos, el regreso del lobo es un quebradero de cabeza.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 47.77, "e": 48.088 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 48.088, "e": 48.343 },
+        { "t": "ganaderos", "l": "ganadero", "p": "NOUN", "w": true, "s": 48.343, "e": 48.98 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 49.34, "e": 49.533 },
+        { "t": "regreso", "l": "regresar", "p": "VERB", "w": true, "sp": true, "s": 49.533, "e": 50.049 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 50.049, "e": 50.307 },
+        { "t": "lobo", "l": "lobo", "p": "NOUN", "w": true, "sp": true, "s": 50.307, "e": 50.629 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 50.629, "e": 50.822 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 50.823, "e": 51.016 },
+        { "t": "quebradero", "l": "quebradero", "p": "NOUN", "w": true, "sp": true, "s": 51.016, "e": 51.725 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 51.725, "e": 51.918 },
+        { "t": "cabeza", "l": "cabeza", "p": "NOUN", "w": true, "s": 51.919, "e": 52.37 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 47.77,
+      "end": 52.452
+    },
+    {
+      "id": "s13",
+      "speaker": "miguel",
+      "text": "Hablé con Antonio, que tiene un rebaño de cuatrocientas ovejas.",
+      "tokens": [
+        { "t": "Hablé", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 52.702, "e": 53.019 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 53.019, "e": 53.23 },
+        { "t": "Antonio", "l": "antonio", "p": "PROPN", "w": false, "s": 53.23, "e": 53.652 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 53.852, "e": 54.087 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 54.087, "e": 54.44 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 54.441, "e": 54.618 },
+        { "t": "rebaño", "l": "rebaño", "p": "NOUN", "w": true, "sp": true, "s": 54.617, "e": 55.029 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 55.029, "e": 55.206 },
+        {
+          "t": "cuatrocientas",
+          "l": "cuatrocientos",
+          "p": "NUM",
+          "w": false,
+          "sp": true,
+          "s": 55.206,
+          "e": 56.03
+        },
+        { "t": "ovejas", "l": "oveja", "p": "NOUN", "w": true, "s": 56.03, "e": 56.442 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 52.702,
+      "end": 56.513
+    },
+    {
+      "id": "s14",
+      "speaker": "miguel",
+      "text": "En el último año ha perdido más de treinta animales por ataques.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 56.803, "e": 57.003 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 57.003, "e": 57.203 },
+        { "t": "último", "l": "último", "p": "ADJ", "w": true, "sp": true, "s": 57.202, "e": 57.668 },
+        { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 57.668, "e": 57.934 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 57.935, "e": 58.135 },
+        { "t": "perdido", "l": "perder", "p": "VERB", "w": true, "sp": true, "s": 58.134, "e": 58.667 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 58.667, "e": 58.933 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 58.933, "e": 59.133 },
+        { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true, "s": 59.133, "e": 59.666 },
+        { "t": "animales", "l": "animal", "p": "NOUN", "w": true, "sp": true, "s": 59.665, "e": 60.264 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 60.264, "e": 60.53 },
+        { "t": "ataques", "l": "ataque", "p": "NOUN", "w": true, "s": 60.531, "e": 61.064 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.763,
+      "end": 61.142
+    },
+    {
+      "id": "s15",
+      "speaker": "miguel",
+      "text": "Me enseñó las fotos y, la verdad, impresionan.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 61.412, "e": 61.622 },
+        { "t": "enseñó", "l": "enseñar", "p": "VERB", "w": true, "sp": true, "s": 61.622, "e": 62.112 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 62.112, "e": 62.392 },
+        { "t": "fotos", "l": "foto", "p": "NOUN", "w": true, "sp": true, "s": 62.392, "e": 62.812 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "s": 62.812, "e": 62.952 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 62.952, "e": 63.162 },
+        { "t": "verdad", "l": "verdad", "p": "NOUN", "w": true, "s": 63.162, "e": 63.652 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "impresionan", "l": "impresionar", "p": "VERB", "w": true, "s": 63.652, "e": 64.492 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 61.392,
+      "end": 64.551
+    },
+    {
+      "id": "s16",
+      "speaker": "miguel",
+      "text": "Me dijo que las ayudas llegan tarde y que no compensan el trabajo de toda una vida.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 64.836, "e": 65.02 },
+        { "t": "dijo", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 65.02, "e": 65.327 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 65.328, "e": 65.574 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 65.573, "e": 65.819 },
+        { "t": "ayudas", "l": "ayudar", "p": "VERB", "w": true, "sp": true, "s": 65.819, "e": 66.249 },
+        { "t": "llegan", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 66.249, "e": 66.679 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true, "s": 66.679, "e": 67.048 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 67.048, "e": 67.171 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 67.171, "e": 67.417 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 67.417, "e": 67.601 },
+        { "t": "compensan", "l": "compensar", "p": "VERB", "w": true, "sp": true, "s": 67.601, "e": 68.215 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 68.216, "e": 68.4 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 68.4, "e": 68.892 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 68.891, "e": 69.075 },
+        { "t": "toda", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 69.076, "e": 69.383 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 69.383, "e": 69.629 },
+        { "t": "vida", "l": "vida", "p": "NOUN", "w": true, "s": 69.629, "e": 69.936 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 64.801,
+      "end": 70.015
+    },
+    {
+      "id": "s17",
+      "speaker": "miguel",
+      "text": "Muchos ganaderos sienten que en la ciudad se toman las decisiones sin conocer la realidad del campo.",
+      "tokens": [
+        { "t": "Muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 70.289, "e": 70.682 },
+        { "t": "ganaderos", "l": "ganadero", "p": "NOUN", "w": true, "sp": true, "s": 70.682, "e": 71.244 },
+        { "t": "sienten", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 71.244, "e": 71.694 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 71.694, "e": 71.919 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 71.919, "e": 72.088 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 72.087, "e": 72.256 },
+        { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true, "s": 72.256, "e": 72.649 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 72.649, "e": 72.818 },
+        { "t": "toman", "l": "tomar", "p": "VERB", "w": true, "sp": true, "s": 72.818, "e": 73.155 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 73.155, "e": 73.38 },
+        { "t": "decisiones", "l": "decisión", "p": "NOUN", "w": true, "sp": true, "s": 73.38, "e": 73.998 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 73.998, "e": 74.223 },
+        { "t": "conocer", "l": "conocer", "p": "VERB", "w": true, "sp": true, "s": 74.223, "e": 74.673 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 74.673, "e": 74.842 },
+        { "t": "realidad", "l": "realidad", "p": "NOUN", "w": true, "sp": true, "s": 74.841, "e": 75.347 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 75.347, "e": 75.572 },
+        { "t": "campo", "l": "campo", "p": "NOUN", "w": true, "s": 75.572, "e": 75.909 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 70.265,
+      "end": 75.967
+    },
+    {
+      "id": "s18",
+      "speaker": "miguel",
+      "text": "«Es muy fácil defender al lobo desde un despacho», me dijo Antonio.",
+      "tokens": [
+        { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 76.237, "e": 76.426 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 76.426, "e": 76.678 },
+        { "t": "fácil", "l": "fácil", "p": "ADJ", "w": true, "sp": true, "s": 76.678, "e": 77.056 },
+        { "t": "defender", "l": "defender", "p": "VERB", "w": true, "sp": true, "s": 77.056, "e": 77.623 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 77.622, "e": 77.811 },
+        { "t": "lobo", "l": "lobo", "p": "NOUN", "w": true, "sp": true, "s": 77.811, "e": 78.126 },
+        { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 78.126, "e": 78.504 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 78.504, "e": 78.693 },
+        { "t": "despacho", "l": "despacho", "p": "NOUN", "w": true, "s": 78.693, "e": 79.26 },
+        { "t": "»", "l": "»", "p": "PUNCT", "w": false },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 79.26, "e": 79.449 },
+        { "t": "dijo", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 79.448, "e": 79.763 },
+        { "t": "Antonio", "l": "antonio", "p": "PROPN", "w": false, "s": 79.763, "e": 80.267 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 76.217,
+      "end": 80.347
+    },
+    {
+      "id": "s19",
+      "speaker": "miguel",
+      "text": "Antonio lleva cuarenta años cuidando ovejas, igual que su padre y su abuelo.",
+      "tokens": [
+        { "t": "Antonio", "l": "antonio", "p": "PROPN", "w": false, "sp": true, "s": 80.597, "e": 81.119 },
+        { "t": "lleva", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 81.119, "e": 81.51 },
+        { "t": "cuarenta", "l": "cuarenta", "p": "NUM", "w": false, "sp": true, "s": 81.51, "e": 82.097 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 82.097, "e": 82.423 },
+        { "t": "cuidando", "l": "cuidar", "p": "VERB", "w": true, "sp": true, "s": 82.423, "e": 83.01 },
+        { "t": "ovejas", "l": "oveja", "p": "NOUN", "w": true, "s": 83.01, "e": 83.467 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "igual", "l": "igual", "p": "ADJ", "w": true, "sp": true, "s": 83.897, "e": 84.201 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 84.201, "e": 84.404 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 84.403, "e": 84.555 },
+        { "t": "padre", "l": "padre", "p": "NOUN", "w": true, "sp": true, "s": 84.555, "e": 84.859 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 84.859, "e": 84.96 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 84.961, "e": 85.113 },
+        { "t": "abuelo", "l": "abuelo", "p": "NOUN", "w": true, "s": 85.112, "e": 85.467 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 80.597,
+      "end": 85.547
+    },
+    {
+      "id": "s20",
+      "speaker": "miguel",
+      "text": "Dice que nunca había pasado tantas noches sin dormir.",
+      "tokens": [
+        { "t": "Dice", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 85.831, "e": 86.153 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 86.153, "e": 86.41 },
+        { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true, "s": 86.41, "e": 86.796 },
+        { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 86.796, "e": 87.182 },
+        { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "sp": true, "s": 87.182, "e": 87.632 },
+        { "t": "tantas", "l": "tanto", "p": "ADV", "w": true, "sp": true, "s": 87.633, "e": 88.083 },
+        { "t": "noches", "l": "noche", "p": "NOUN", "w": true, "sp": true, "s": 88.083, "e": 88.533 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 88.533, "e": 88.79 },
+        { "t": "dormir", "l": "dormir", "p": "VERB", "w": true, "s": 88.791, "e": 89.241 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 85.797,
+      "end": 89.344
+    },
+    {
+      "id": "s21",
+      "speaker": "elena",
+      "text": "¿Y qué dicen los conservacionistas?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 89.754, "e": 89.909 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 89.909, "e": 90.22 },
+        { "t": "dicen", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 90.22, "e": 90.686 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 90.686, "e": 90.997 },
+        {
+          "t": "conservacionistas",
+          "l": "conservacionista",
+          "p": "NOUN",
+          "w": true,
+          "s": 90.996,
+          "e": 92.394
+        },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 89.744,
+      "end": 92.444
+    },
+    {
+      "id": "s22",
+      "speaker": "miguel",
+      "text": "Hablé con Laura, bióloga de una asociación ecologista.",
+      "tokens": [
+        { "t": "Hablé", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 92.864, "e": 93.194 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 93.194, "e": 93.414 },
+        { "t": "Laura", "l": "laura", "p": "PROPN", "w": false, "s": 93.414, "e": 93.744 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "bióloga", "l": "biólogo", "p": "NOUN", "w": true, "sp": true, "s": 94.034, "e": 94.516 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 94.516, "e": 94.697 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 94.697, "e": 94.938 },
+        { "t": "asociación", "l": "asociación", "p": "NOUN", "w": true, "sp": true, "s": 94.938, "e": 95.601 },
+        { "t": "ecologista", "l": "ecologista", "p": "NOUN", "w": true, "s": 95.601, "e": 96.264 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 92.844,
+      "end": 96.361
+    },
+    {
+      "id": "s23",
+      "speaker": "miguel",
+      "text": "Ella reconoce que los daños son reales, pero recuerda que el lobo cumple una función importante en el ecosistema.",
+      "tokens": [
+        { "t": "Ella", "l": "ella", "p": "PRON", "w": true, "sp": true, "s": 96.611, "e": 96.906 },
+        { "t": "reconoce", "l": "reconocer", "p": "VERB", "w": true, "sp": true, "s": 96.906, "e": 97.437 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 97.437, "e": 97.673 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 97.673, "e": 97.909 },
+        { "t": "daños", "l": "daño", "p": "NOUN", "w": true, "sp": true, "s": 97.908, "e": 98.262 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 98.262, "e": 98.498 },
+        { "t": "reales", "l": "real", "p": "ADJ", "w": true, "s": 98.498, "e": 98.911 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 99.401, "e": 99.692 },
+        { "t": "recuerda", "l": "recordar", "p": "VERB", "w": true, "sp": true, "s": 99.692, "e": 100.216 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 100.216, "e": 100.449 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 100.449, "e": 100.624 },
+        { "t": "lobo", "l": "lobo", "p": "NOUN", "w": true, "sp": true, "s": 100.624, "e": 100.915 },
+        { "t": "cumple", "l": "cumplir", "p": "VERB", "w": true, "sp": true, "s": 100.915, "e": 101.323 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 101.322, "e": 101.555 },
+        { "t": "función", "l": "función", "p": "NOUN", "w": true, "sp": true, "s": 101.555, "e": 102.021 },
+        {
+          "t": "importante",
+          "l": "importante",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 102.021,
+          "e": 102.661
+        },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 102.661, "e": 102.836 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 102.836, "e": 103.011 },
+        { "t": "ecosistema", "l": "ecosistema", "p": "NOUN", "w": true, "s": 103.011, "e": 103.651 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 96.611,
+      "end": 103.729
+    },
+    {
+      "id": "s24",
+      "speaker": "miguel",
+      "text": "Al cazar ciervos y jabalíes, controla sus poblaciones.",
+      "tokens": [
+        { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 103.979, "e": 104.189 },
+        { "t": "cazar", "l": "cazar", "p": "VERB", "w": true, "sp": true, "s": 104.189, "e": 104.609 },
+        { "t": "ciervos", "l": "ciervo", "p": "NOUN", "w": true, "sp": true, "s": 104.609, "e": 105.169 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 105.169, "e": 105.309 },
+        { "t": "jabalíes", "l": "jabalí", "p": "NOUN", "w": true, "s": 105.309, "e": 105.939 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "controla", "l": "controlar", "p": "VERB", "w": true, "sp": true, "s": 105.939, "e": 106.569 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 106.569, "e": 106.849 },
+        { "t": "poblaciones", "l": "población", "p": "NOUN", "w": true, "s": 106.849, "e": 107.689 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 103.979,
+      "end": 107.768
+    },
+    {
+      "id": "s25",
+      "speaker": "miguel",
+      "text": "Cuando esos animales se multiplican demasiado, destrozan cultivos y provocan accidentes de tráfico.",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 108.054, "e": 108.518 },
+        { "t": "esos", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 108.518, "e": 108.85 },
+        { "t": "animales", "l": "animal", "p": "NOUN", "w": true, "sp": true, "s": 108.85, "e": 109.447 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 109.446, "e": 109.645 },
+        {
+          "t": "multiplican",
+          "l": "multiplicar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 109.645,
+          "e": 110.441
+        },
+        { "t": "demasiado", "l": "demasiado", "p": "ADV", "w": true, "s": 110.441, "e": 111.104 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "destrozan", "l": "destrozar", "p": "VERB", "w": true, "sp": true, "s": 111.534, "e": 112.236 },
+        { "t": "cultivos", "l": "cultivo", "p": "NOUN", "w": true, "sp": true, "s": 112.236, "e": 112.868 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 112.868, "e": 113.008 },
+        { "t": "provocan", "l": "provocar", "p": "VERB", "w": true, "sp": true, "s": 113.008, "e": 113.64 },
+        { "t": "accidentes", "l": "accidente", "p": "NOUN", "w": true, "sp": true, "s": 113.64, "e": 114.412 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 114.412, "e": 114.623 },
+        { "t": "tráfico", "l": "tráfico", "p": "NOUN", "w": true, "s": 114.622, "e": 115.184 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 108.018,
+      "end": 115.251
+    },
+    {
+      "id": "s26",
+      "speaker": "miguel",
+      "text": "Según Laura, el problema no es el lobo, sino cómo nos protegemos de él.",
+      "tokens": [
+        { "t": "Según", "l": "según", "p": "ADP", "w": true, "sp": true, "s": 115.501, "e": 115.918 },
+        { "t": "Laura", "l": "laura", "p": "PROPN", "w": false, "s": 115.918, "e": 116.335 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 116.334, "e": 116.542 },
+        { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true, "s": 116.542, "e": 117.167 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 117.167, "e": 117.375 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 117.375, "e": 117.583 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 117.584, "e": 117.792 },
+        { "t": "lobo", "l": "lobo", "p": "NOUN", "w": true, "s": 117.792, "e": 118.139 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true, "s": 118.139, "e": 118.486 },
+        { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 118.486, "e": 118.833 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 118.833, "e": 119.111 },
+        { "t": "protegemos", "l": "proteger", "p": "VERB", "w": true, "sp": true, "s": 119.111, "e": 119.875 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 119.874, "e": 120.082 },
+        { "t": "él", "l": "él", "p": "PRON", "w": true, "s": 120.083, "e": 120.291 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 115.501,
+      "end": 120.361
+    },
+    {
+      "id": "s27",
+      "speaker": "miguel",
+      "text": "Hay soluciones que funcionan, como los perros mastines, las vallas eléctricas o recoger el ganado por la noche.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 120.611, "e": 120.819 },
+        { "t": "soluciones", "l": "solución", "p": "NOUN", "w": true, "sp": true, "s": 120.819, "e": 121.392 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 121.392, "e": 121.6 },
+        { "t": "funcionan", "l": "funcionar", "p": "VERB", "w": true, "s": 121.6, "e": 122.121 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 122.571, "e": 122.863 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 122.863, "e": 123.097 },
+        { "t": "perros", "l": "perro", "p": "NOUN", "w": true, "sp": true, "s": 123.097, "e": 123.506 },
+        { "t": "mastines", "l": "mastín", "p": "NOUN", "w": true, "s": 123.505, "e": 124.031 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 124.431, "e": 124.685 },
+        { "t": "vallas", "l": "valla", "p": "NOUN", "w": true, "sp": true, "s": 124.685, "e": 125.129 },
+        { "t": "eléctricas", "l": "eléctrico", "p": "ADJ", "w": true, "sp": true, "s": 125.129, "e": 125.827 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 125.827, "e": 125.954 },
+        { "t": "recoger", "l": "recoger", "p": "VERB", "w": true, "sp": true, "s": 125.954, "e": 126.462 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 126.462, "e": 126.652 },
+        { "t": "ganado", "l": "ganar", "p": "VERB", "w": true, "sp": true, "s": 126.652, "e": 127.096 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 127.096, "e": 127.35 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 127.35, "e": 127.54 },
+        { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "s": 127.54, "e": 127.921 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 120.611,
+      "end": 128.014
+    },
+    {
+      "id": "s28",
+      "speaker": "elena",
+      "text": "¿Y son eficaces esas medidas?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 128.424, "e": 128.607 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 128.607, "e": 128.973 },
+        { "t": "eficaces", "l": "eficaz", "p": "ADJ", "w": true, "sp": true, "s": 128.973, "e": 129.796 },
+        { "t": "esas", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 129.795, "e": 130.252 },
+        { "t": "medidas", "l": "medida", "p": "NOUN", "w": true, "s": 130.253, "e": 130.984 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 128.414,
+      "end": 131.077
+    },
+    {
+      "id": "s29",
+      "speaker": "miguel",
+      "text": "Donde se aplican bien, los ataques bajan de forma notable.",
+      "tokens": [
+        { "t": "Donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true, "s": 131.507, "e": 131.84 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 131.84, "e": 132.006 },
+        { "t": "aplican", "l": "aplicar", "p": "VERB", "w": true, "sp": true, "s": 132.006, "e": 132.45 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 132.45, "e": 132.727 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 133.077, "e": 133.319 },
+        { "t": "ataques", "l": "ataque", "p": "NOUN", "w": true, "sp": true, "s": 133.319, "e": 133.804 },
+        { "t": "bajan", "l": "bajar", "p": "VERB", "w": true, "sp": true, "s": 133.804, "e": 134.167 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 134.167, "e": 134.349 },
+        { "t": "forma", "l": "forma", "p": "NOUN", "w": true, "sp": true, "s": 134.349, "e": 134.712 },
+        { "t": "notable", "l": "notable", "p": "ADJ", "w": true, "s": 134.712, "e": 135.197 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 131.477,
+      "end": 135.274
+    },
+    {
+      "id": "s30",
+      "speaker": "miguel",
+      "text": "Visité una explotación que, desde que tiene seis mastines, no ha sufrido ni un solo ataque en tres años.",
+      "tokens": [
+        { "t": "Visité", "l": "visitar", "p": "VERB", "w": true, "sp": true, "s": 135.574, "e": 136.041 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 136.041, "e": 136.308 },
+        {
+          "t": "explotación",
+          "l": "explotación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 136.307,
+          "e": 137.107
+        },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "s": 137.107, "e": 137.374 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 137.554, "e": 137.928 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 137.928, "e": 138.177 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 138.177, "e": 138.551 },
+        { "t": "seis", "l": "seis", "p": "NUM", "w": false, "sp": true, "s": 138.551, "e": 138.863 },
+        { "t": "mastines", "l": "mastín", "p": "NOUN", "w": true, "s": 138.863, "e": 139.424 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 139.814, "e": 140.007 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 140.007, "e": 140.2 },
+        { "t": "sufrido", "l": "sufrir", "p": "VERB", "w": true, "sp": true, "s": 140.201, "e": 140.717 },
+        { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true, "s": 140.716, "e": 140.909 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 140.91, "e": 141.103 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 141.103, "e": 141.425 },
+        { "t": "ataque", "l": "ataque", "p": "NOUN", "w": true, "sp": true, "s": 141.425, "e": 141.876 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 141.876, "e": 142.069 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 142.07, "e": 142.392 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 142.392, "e": 142.714 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 135.524,
+      "end": 142.797
+    },
+    {
+      "id": "s31",
+      "speaker": "miguel",
+      "text": "El problema es que estas medidas cuestan dinero y exigen más horas de trabajo.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 143.077, "e": 143.289 },
+        { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true, "s": 143.289, "e": 143.925 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 143.925, "e": 144.137 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 144.137, "e": 144.42 },
+        { "t": "estas", "l": "este", "p": "DET", "w": true, "sp": true, "s": 144.419, "e": 144.843 },
+        { "t": "medidas", "l": "medida", "p": "NOUN", "w": true, "sp": true, "s": 144.843, "e": 145.408 },
+        { "t": "cuestan", "l": "costar", "p": "VERB", "w": true, "sp": true, "s": 145.408, "e": 145.973 },
+        { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true, "sp": true, "s": 145.973, "e": 146.467 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 146.468, "e": 146.609 },
+        { "t": "exigen", "l": "exigir", "p": "VERB", "w": true, "sp": true, "s": 146.609, "e": 147.103 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 147.104, "e": 147.387 },
+        { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 147.386, "e": 147.81 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 147.81, "e": 148.022 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "s": 148.022, "e": 148.587 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 143.047,
+      "end": 148.671
+    },
+    {
+      "id": "s32",
+      "speaker": "miguel",
+      "text": "Un mastín bien entrenado, por ejemplo, necesita cuidados y comida durante todo el año.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 148.951, "e": 149.138 },
+        { "t": "mastín", "l": "mastín", "p": "NOUN", "w": true, "sp": true, "s": 149.138, "e": 149.574 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true, "s": 149.574, "e": 149.885 },
+        { "t": "entrenado", "l": "entrenar", "p": "VERB", "w": true, "s": 149.885, "e": 150.508 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 150.508, "e": 150.757 },
+        { "t": "ejemplo", "l": "ejemplo", "p": "NOUN", "w": true, "s": 150.757, "e": 151.255 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "necesita", "l": "necesitar", "p": "VERB", "w": true, "sp": true, "s": 151.255, "e": 151.815 },
+        { "t": "cuidados", "l": "cuidar", "p": "VERB", "w": true, "sp": true, "s": 151.815, "e": 152.375 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 152.375, "e": 152.5 },
+        { "t": "comida", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 152.5, "e": 152.936 },
+        { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 152.936, "e": 153.434 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 153.434, "e": 153.745 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 153.745, "e": 153.932 },
+        { "t": "año", "l": "año", "p": "NOUN", "w": true, "s": 153.932, "e": 154.181 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 148.921,
+      "end": 154.283
+    },
+    {
+      "id": "s33",
+      "speaker": "elena",
+      "text": "¿Hay alguna salida a este conflicto?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 154.693, "e": 155.002 },
+        { "t": "alguna", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 155.002, "e": 155.542 },
+        { "t": "salida", "l": "salir", "p": "VERB", "w": true, "sp": true, "s": 155.542, "e": 156.082 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 156.082, "e": 156.236 },
+        { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true, "s": 156.236, "e": 156.622 },
+        { "t": "conflicto", "l": "conflicto", "p": "NOUN", "w": true, "s": 156.622, "e": 157.393 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 154.683,
+      "end": 157.46
+    },
+    {
+      "id": "s34",
+      "speaker": "miguel",
+      "text": "Lo que me repitieron casi todos es que hace falta diálogo.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 157.89, "e": 158.058 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 158.058, "e": 158.282 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 158.282, "e": 158.45 },
+        { "t": "repitieron", "l": "repetir", "p": "VERB", "w": true, "sp": true, "s": 158.45, "e": 159.066 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 159.067, "e": 159.347 },
+        { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 159.347, "e": 159.683 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 159.683, "e": 159.851 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 159.851, "e": 160.075 },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 160.075, "e": 160.355 },
+        { "t": "falta", "l": "falta", "p": "NOUN", "w": true, "sp": true, "s": 160.356, "e": 160.692 },
+        { "t": "diálogo", "l": "diálogo", "p": "NOUN", "w": true, "s": 160.692, "e": 161.14 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 157.86,
+      "end": 161.212
+    },
+    {
+      "id": "s35",
+      "speaker": "miguel",
+      "text": "Ganaderos y ecologistas comparten más de lo que parece.",
+      "tokens": [
+        { "t": "Ganaderos", "l": "ganadero", "p": "NOUN", "w": true, "sp": true, "s": 161.487, "e": 162.154 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 162.154, "e": 162.287 },
+        {
+          "t": "ecologistas",
+          "l": "ecologista",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 162.288,
+          "e": 163.089
+        },
+        { "t": "comparten", "l": "compartir", "p": "VERB", "w": true, "sp": true, "s": 163.088, "e": 163.755 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 163.756, "e": 164.023 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 164.023, "e": 164.223 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 164.223, "e": 164.423 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 164.423, "e": 164.69 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "s": 164.69, "e": 165.157 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 161.462,
+      "end": 165.225
+    },
+    {
+      "id": "s36",
+      "speaker": "miguel",
+      "text": "Ambos quieren que los pueblos sigan vivos y que el monte esté bien cuidado.",
+      "tokens": [
+        { "t": "Ambos", "l": "ambos", "p": "ADJ", "w": true, "sp": true, "s": 165.475, "e": 165.766 },
+        { "t": "quieren", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 165.766, "e": 166.154 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 166.154, "e": 166.348 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 166.349, "e": 166.543 },
+        { "t": "pueblos", "l": "pueblo", "p": "NOUN", "w": true, "sp": true, "s": 166.543, "e": 166.931 },
+        { "t": "sigan", "l": "seguir", "p": "VERB", "w": true, "sp": true, "s": 166.931, "e": 167.222 },
+        { "t": "vivos", "l": "vivo", "p": "ADJ", "w": true, "sp": true, "s": 167.222, "e": 167.513 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 167.513, "e": 167.61 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 167.61, "e": 167.804 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 167.805, "e": 167.951 },
+        { "t": "monte", "l": "monte", "p": "NOUN", "w": true, "sp": true, "s": 167.95, "e": 168.241 },
+        { "t": "esté", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 168.241, "e": 168.484 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true, "s": 168.484, "e": 168.727 },
+        { "t": "cuidado", "l": "cuidar", "p": "VERB", "w": true, "s": 168.727, "e": 169.115 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 165.475,
+      "end": 169.185
+    },
+    {
+      "id": "s37",
+      "speaker": "miguel",
+      "text": "Algunas comarcas han empezado a probar un modelo distinto.",
+      "tokens": [
+        { "t": "Algunas", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 169.455, "e": 169.989 },
+        { "t": "comarcas", "l": "comarca", "p": "NOUN", "w": true, "sp": true, "s": 169.989, "e": 170.59 },
+        { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 170.589, "e": 170.856 },
+        { "t": "empezado", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 170.856, "e": 171.457 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 171.457, "e": 171.59 },
+        { "t": "probar", "l": "probar", "p": "VERB", "w": true, "sp": true, "s": 171.59, "e": 172.057 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 172.057, "e": 172.257 },
+        { "t": "modelo", "l": "modelo", "p": "NOUN", "w": true, "sp": true, "s": 172.257, "e": 172.724 },
+        { "t": "distinto", "l": "distinto", "p": "ADJ", "w": true, "s": 172.724, "e": 173.325 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 169.435,
+      "end": 173.393
+    },
+    {
+      "id": "s38",
+      "speaker": "miguel",
+      "text": "En lugar de pagar solo después de un ataque, la administración financia la prevención desde el principio.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 173.643, "e": 173.815 },
+        { "t": "lugar", "l": "lugar", "p": "NOUN", "w": true, "sp": true, "s": 173.815, "e": 174.159 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 174.158, "e": 174.33 },
+        { "t": "pagar", "l": "pagar", "p": "VERB", "w": true, "sp": true, "s": 174.33, "e": 174.674 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 174.674, "e": 174.96 },
+        { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true, "s": 174.96, "e": 175.418 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 175.418, "e": 175.59 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 175.59, "e": 175.762 },
+        { "t": "ataque", "l": "ataque", "p": "NOUN", "w": true, "s": 175.762, "e": 176.163 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 176.563, "e": 176.732 },
+        {
+          "t": "administración",
+          "l": "administración",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 176.732,
+          "e": 177.575
+        },
+        { "t": "financia", "l": "financiar", "p": "VERB", "w": true, "sp": true, "s": 177.574, "e": 178.08 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 178.08, "e": 178.249 },
+        {
+          "t": "prevención",
+          "l": "prevención",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 178.248,
+          "e": 178.866
+        },
+        { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 178.866, "e": 179.203 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 179.203, "e": 179.372 },
+        { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "s": 179.371, "e": 179.933 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 173.643,
+      "end": 180.025
+    },
+    {
+      "id": "s39",
+      "speaker": "miguel",
+      "text": "Y ofrece una ayuda a quienes conviven con el lobo sin sufrir daños.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 180.304, "e": 180.429 },
+        { "t": "ofrece", "l": "ofrecer", "p": "VERB", "w": true, "sp": true, "s": 180.429, "e": 180.867 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 180.867, "e": 181.117 },
+        { "t": "ayuda", "l": "ayudar", "p": "VERB", "w": true, "sp": true, "s": 181.117, "e": 181.492 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 181.492, "e": 181.617 },
+        { "t": "quienes", "l": "quien", "p": "PRON", "w": true, "sp": true, "s": 181.617, "e": 182.117 },
+        { "t": "conviven", "l": "convivir", "p": "VERB", "w": true, "sp": true, "s": 182.118, "e": 182.681 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 182.68, "e": 182.93 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 182.931, "e": 183.119 },
+        { "t": "lobo", "l": "lobo", "p": "NOUN", "w": true, "sp": true, "s": 183.118, "e": 183.431 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 183.431, "e": 183.681 },
+        { "t": "sufrir", "l": "sufrir", "p": "VERB", "w": true, "sp": true, "s": 183.681, "e": 184.119 },
+        { "t": "daños", "l": "daño", "p": "NOUN", "w": true, "s": 184.119, "e": 184.494 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 180.275,
+      "end": 184.574
+    },
+    {
+      "id": "s40",
+      "speaker": "elena",
+      "text": "Un enfoque que premia la convivencia en lugar de castigar la pérdida.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 184.974, "e": 185.167 },
+        { "t": "enfoque", "l": "enfoque", "p": "NOUN", "w": true, "sp": true, "s": 185.167, "e": 185.682 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 185.682, "e": 185.939 },
+        { "t": "premia", "l": "premiar", "p": "VERB", "w": true, "sp": true, "s": 185.939, "e": 186.389 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 186.39, "e": 186.583 },
+        {
+          "t": "convivencia",
+          "l": "convivencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 186.583,
+          "e": 187.355
+        },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 187.355, "e": 187.548 },
+        { "t": "lugar", "l": "lugar", "p": "NOUN", "w": true, "sp": true, "s": 187.548, "e": 187.934 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 187.934, "e": 188.127 },
+        { "t": "castigar", "l": "castigar", "p": "VERB", "w": true, "sp": true, "s": 188.127, "e": 188.706 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 188.706, "e": 188.899 },
+        { "t": "pérdida", "l": "pérdida", "p": "NOUN", "w": true, "s": 188.899, "e": 189.414 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 184.974,
+      "end": 189.517
+    },
+    {
+      "id": "s41",
+      "speaker": "miguel",
+      "text": "Exacto.",
+      "tokens": [
+        { "t": "Exacto", "l": "exacto", "p": "ADJ", "w": true, "s": 189.917, "e": 190.507 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 189.917,
+      "end": 190.857
+    },
+    {
+      "id": "s42",
+      "speaker": "miguel",
+      "text": "Todavía es pronto para saber si funcionará, pero en la zona se respira un cierto optimismo.",
+      "tokens": [
+        { "t": "Todavía", "l": "todavía", "p": "ADV", "w": true, "sp": true, "s": 191.127, "e": 191.618 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 191.618, "e": 191.802 },
+        { "t": "pronto", "l": "pronto", "p": "ADV", "w": true, "sp": true, "s": 191.802, "e": 192.232 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 192.232, "e": 192.539 },
+        { "t": "saber", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 192.539, "e": 192.907 },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 192.907, "e": 193.091 },
+        { "t": "funcionará", "l": "funcionar", "p": "VERB", "w": true, "s": 193.092, "e": 193.767 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 194.087, "e": 194.38 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 194.38, "e": 194.556 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 194.555, "e": 194.731 },
+        { "t": "zona", "l": "zona", "p": "NOUN", "w": true, "sp": true, "s": 194.731, "e": 195.024 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 195.023, "e": 195.199 },
+        { "t": "respira", "l": "respirar", "p": "VERB", "w": true, "sp": true, "s": 195.199, "e": 195.667 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 195.667, "e": 195.843 },
+        { "t": "cierto", "l": "cierto", "p": "ADJ", "w": true, "sp": true, "s": 195.842, "e": 196.252 },
+        { "t": "optimismo", "l": "optimismo", "p": "NOUN", "w": true, "s": 196.252, "e": 196.837 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 191.107,
+      "end": 196.926
+    },
+    {
+      "id": "s43",
+      "speaker": "miguel",
+      "text": "Como me dijo Antonio al despedirnos: «Si me ayudan de verdad, yo no quiero que el lobo desaparezca.",
+      "tokens": [
+        { "t": "Como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 197.196, "e": 197.547 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 197.547, "e": 197.758 },
+        { "t": "dijo", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 197.758, "e": 198.109 },
+        { "t": "Antonio", "l": "antonio", "p": "PROPN", "w": false, "sp": true, "s": 198.11, "e": 198.672 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 198.672, "e": 198.883 },
+        { "t": "despedirnos", "l": "despedirse", "p": "VERB", "w": true, "s": 198.883, "e": 199.726 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 200.106, "e": 200.285 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 200.285, "e": 200.464 },
+        { "t": "ayudan", "l": "ayudar", "p": "VERB", "w": true, "sp": true, "s": 200.463, "e": 200.88 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 200.88, "e": 201.059 },
+        { "t": "verdad", "l": "verdad", "p": "NOUN", "w": true, "s": 201.059, "e": 201.476 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 201.936, "e": 202.092 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 202.092, "e": 202.248 },
+        { "t": "quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 202.249, "e": 202.614 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 202.614, "e": 202.823 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 202.823, "e": 202.979 },
+        { "t": "lobo", "l": "lobo", "p": "NOUN", "w": true, "sp": true, "s": 202.979, "e": 203.24 },
+        { "t": "desaparezca", "l": "desaparecer", "p": "VERB", "w": true, "s": 203.24, "e": 203.866 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 197.176,
+      "end": 203.968
+    },
+    {
+      "id": "s44",
+      "speaker": "miguel",
+      "text": "Solo quiero poder seguir trabajando».",
+      "tokens": [
+        { "t": "Solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 204.218, "e": 204.529 },
+        { "t": "quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 204.529, "e": 204.965 },
+        { "t": "poder", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 204.965, "e": 205.338 },
+        { "t": "seguir", "l": "seguir", "p": "VERB", "w": true, "sp": true, "s": 205.338, "e": 205.774 },
+        { "t": "trabajando", "l": "trabajar", "p": "VERB", "w": true, "s": 205.774, "e": 206.458 },
+        { "t": "»", "l": "»", "p": "PUNCT", "w": false },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 204.218,
+      "end": 206.53
+    },
+    {
+      "id": "s45",
+      "speaker": "elena",
+      "text": "Gracias, Miguel.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 206.94, "e": 207.601 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Miguel", "l": "miguel", "p": "PROPN", "w": false, "s": 207.601, "e": 208.18 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 206.93,
+      "end": 208.316
+    },
+    {
+      "id": "s46",
+      "speaker": "elena",
+      "text": "Tras la pausa, seguimos con el resto de la actualidad.",
+      "tokens": [
+        { "t": "Tras", "l": "tras", "p": "ADP", "w": true, "sp": true, "s": 208.586, "e": 208.95 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 208.95, "e": 209.169 },
+        { "t": "pausa", "l": "pausa", "p": "NOUN", "w": true, "s": 209.169, "e": 209.606 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "seguimos", "l": "seguir", "p": "VERB", "w": true, "sp": true, "s": 209.816, "e": 210.458 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 210.458, "e": 210.743 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 210.743, "e": 210.957 },
+        { "t": "resto", "l": "resto", "p": "NOUN", "w": true, "sp": true, "s": 210.957, "e": 211.385 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 211.384, "e": 211.598 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 211.598, "e": 211.812 },
+        { "t": "actualidad", "l": "actualidad", "p": "NOUN", "w": true, "s": 211.812, "e": 212.596 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 208.566,
+      "end": 212.715
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "ganadero",
+      "surface": "ganaderos",
+      "pos": "noun",
+      "def_en": "persona que cría animales como vacas u ovejas",
+      "def_es": { "en": "livestock farmer", "fr": "éleveur", "zh": "牧民", "ja": "牧畜業者" },
+      "ref": "s12"
+    },
+    {
+      "lemma": "rebaño",
+      "surface": "rebaño",
+      "pos": "noun",
+      "def_en": "grupo de ovejas o cabras",
+      "def_es": { "en": "flock", "fr": "troupeau", "zh": "羊群", "ja": "群れ" },
+      "ref": "s13"
+    },
+    {
+      "lemma": "quebradero de cabeza",
+      "surface": "quebradero de cabeza",
+      "pos": "phrase",
+      "def_en": "problema que preocupa mucho",
+      "def_es": { "en": "headache (problem)", "fr": "casse-tête", "zh": "令人头疼的事", "ja": "頭痛の種" },
+      "ref": "s12"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Sobre qué trata el reportaje?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "The conflict over the wolf’s return." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La desaparición definitiva del lobo en España" },
+        { "id": "b", "text": "El conflicto que provoca la vuelta del lobo" },
+        { "id": "c", "text": "Un nuevo parque nacional en la sierra" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué ha aumentado el número de lobos?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "Thanks to protection laws." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque hay menos ganado en el campo" },
+        { "id": "b", "text": "Porque los han traído de otros países de Europa" },
+        { "id": "c", "text": "Gracias a las normas que los protegen" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Cómo se sienten muchos ganaderos?",
+      "evidence": ["s18"],
+      "rationale_es": { "en": "Misunderstood by city decision-makers." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Incomprendidos por quienes deciden en la ciudad" },
+        { "id": "b", "text": "Satisfechos con todas las ayudas públicas que reciben" },
+        { "id": "c", "text": "Indiferentes ante los ataques" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué beneficio del lobo destaca la bióloga?",
+      "evidence": ["s24"],
+      "rationale_es": { "en": "It controls deer and boar." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Atrae a muchos turistas a los pueblos de la sierra" },
+        { "id": "b", "text": "Evita que haya demasiados animales salvajes" },
+        { "id": "c", "text": "Protege a las ovejas de otros animales" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "La explotación con seis mastines ha sufrido varios ataques en tres años.",
+      "evidence": ["s30"],
+      "rationale_es": { "en": "No attacks at all." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué inconveniente tienen las medidas de protección?",
+      "evidence": ["s31"],
+      "rationale_es": { "en": "They cost money and time." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Están prohibidas en muchas zonas del país" },
+        { "id": "b", "text": "Asustan a los turistas del monte" },
+        { "id": "c", "text": "Son caras y requieren más tiempo" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "inference",
+      "phase": "post",
+      "prompt": "¿Qué tiene de nuevo el modelo de algunas comarcas?",
+      "evidence": ["s38"],
+      "rationale_es": { "en": "It funds prevention." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Paga por prevenir, no solo por los daños" },
+        { "id": "b", "text": "Permite cazar lobos durante todo el año sin límite" },
+        { "id": "c", "text": "Traslada los rebaños a otras regiones" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q8",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s34"],
+      "rationale_es": { "en": "*Diálogo*: dialogue." },
+      "type": "gap_fill",
+      "text": "Ganaderos y ecologistas coinciden en que hace falta {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["diálogo"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abuelo", "accidente", "actualidad", "administración", "algún", "allí", "ambos", "animal", "apenas",
+    "aplicar", "asociación", "ataque", "aumentar", "ayudar", "año", "bajar", "bien", "biólogo", "borde",
+    "bueno", "cabeza", "calcular", "campo", "casi", "castigar", "cazar", "ciento", "cierto", "ciervo",
+    "ciudad", "comarca", "comer", "compartir", "compañero", "compensar", "con", "conflicto", "conocer",
+    "conservacionista", "control", "controlar", "convivencia", "convivir", "costar", "cuando", "cuidar",
+    "cultivo", "cumplir", "cómo", "daño", "de", "debatir", "decir", "decisión", "defender", "demasiado",
+    "desaparecer", "desde", "despacho", "despedirse", "después", "destrozar", "dinero", "distinto", "diálogo",
+    "donde", "dormir", "durante", "década", "día", "ecologista", "ecosistema", "eficaz", "ejemplar", "ejemplo",
+    "el", "ella", "eléctrico", "empezar", "en", "enfoque", "enseñar", "entrenar", "ese", "especie", "estar",
+    "este", "exacto", "exigir", "explotación", "extinción", "falta", "financiar", "forma", "foto", "funcionar",
+    "función", "fácil", "ganadero", "ganar", "haber", "hablar", "hacer", "hora", "hoy", "ibérico", "igual",
+    "importante", "impresionar", "jabalí", "ley", "llegar", "llevar", "lobo", "lugar", "manada", "mastín",
+    "medida", "modelo", "monte", "mucho", "multiplicar", "muy", "más", "naturaleza", "necesitar", "ni", "no",
+    "noche", "noroeste", "nosotros", "notable", "noticia", "nuestro", "nunca", "número", "o", "ofrecer",
+    "optimismo", "oveja", "padre", "pagar", "para", "parecer", "pasado", "pausa", "país", "perder", "pero",
+    "perro", "población", "poder", "por", "premiar", "prevención", "principio", "probar", "problema", "pronto",
+    "protección", "proteger", "provocar", "pueblo", "punto", "pérdida", "que", "quebradero", "quedar",
+    "querer", "quien", "qué", "real", "realidad", "rebaño", "recoger", "reconocer", "recordar", "regresar",
+    "repetir", "reportaje", "respirar", "resto", "saber", "salir", "se", "seguir", "según", "semana", "sentir",
+    "ser", "si", "sierra", "sin", "sino", "solo", "solución", "su", "sufrir", "tanto", "tarde", "tener",
+    "todavía", "todo", "tomar", "trabajar", "tras", "tráfico", "un", "valla", "ver", "verdad", "viajar",
+    "vida", "visitar", "vivo", "volver", "y", "yo", "zona", "él", "último"
+  ],
+  "difficulty": 1452,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6199, "A2": 0.7378, "B1": 0.8923, "B2": 0.9268, "C1": 0.9776, "C2": 1 },
+    "off_level_lemmas": ["biólogo", "daño", "ganadero", "pausa", "premiar", "quebradero", "rebaño", "vivo"],
+    "avg_sentence_words": 11.1,
+    "flesch_reading_ease": 75.5,
+    "checked_at": "2026-10-19T07:48:30.244Z"
+  },
+  "audio": {
+    "src": "audio/c1/es-c1-lis-010/v1.m4a",
+    "duration_s": 212.715,
+    "wpm": 144,
+    "provider": "piper",
+    "voices": { "elena": "sharvard-f", "miguel": "davefx-m" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      1, 0.78, 0.99, 0.95, 1, 0.64, 0.77, 0.51, 0.9, 0.74, 0.79, 1, 0.59, 0.63, 0.84, 1, 0.63, 0.43, 1, 0.79,
+      0.97, 0.76, 1, 0.99, 0.65, 1, 0.8, 0.99, 0.99, 0.88, 0.96, 0.68, 0.93, 0.98, 0.89, 0.98, 1, 0.96, 0.62,
+      0.99, 0.97, 0.82, 1, 0.93, 0.95, 0.96, 0.56, 1, 0.74, 0.8, 0.78, 0.61, 1, 0.94, 1, 0.97, 0.98, 0.86,
+      0.97, 1, 0.93, 0.94, 0.92, 0.61, 0.9, 0.97, 0.98, 0.98, 1, 0.96, 0.97, 1, 0.9, 0.99, 1, 0.99, 0.88, 0.79,
+      0.87, 0.91, 0.96, 0.98, 0.94, 0.85, 1, 0.63, 0.99, 0.99, 1, 0.83, 0.39, 1, 0.89, 0.95, 0.95, 0.94, 1, 1,
+      1, 0.97, 0.65, 0.77, 0.75, 1, 0.96, 1, 0.96, 0.92, 0.85, 1, 0.92, 0.94, 0.98, 0.89, 0.83, 0.93, 0.8,
+      0.99, 1, 0.81, 0.9, 1, 0.95, 0.77, 0.81, 0.79, 0.85, 0.74, 0.84, 0.62, 1, 0.97, 0.84, 0.96, 0.97, 0.68,
+      0.97, 0.89, 0.94, 0.74, 1, 0.96, 0.94, 0.92, 0.38, 1, 0.7, 0.41, 0.98, 1, 0.96, 0.96, 0.89, 0.95, 0.96,
+      0.91, 0.96, 0.97, 0.85, 1, 0.96, 1, 0.98, 0.97, 0.96, 0.96, 1, 0.86, 1, 0.82, 0.87, 0.89, 0.7, 0.94, 1,
+      0.82, 0.74, 0.52, 0.94, 0.97, 1, 1, 1, 0.8, 0.99, 0.96, 0.98, 1, 0.98, 0.98, 0.99, 0.98, 1, 0.94, 0.93,
+      0.6, 0.98, 0.91, 0.98, 1, 0.97, 0.94, 0.81, 1, 0.97, 0.98, 0.9, 0.99, 0.75, 0.75, 0.89, 1, 0.86, 0.86, 1,
+      0.98, 0.99, 0.94, 0.55, 0.97, 1, 0.67, 0.99, 1, 0.95, 0.8, 0.95, 0.88, 1, 0.81, 1, 0.95, 0.99, 1, 0.62,
+      1, 0.93, 0.66, 0.79, 0.68
+    ]
+  }
+}

@@ -1,0 +1,569 @@
+{
+  "id": "es-b1-lis-009",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u05",
+  "series": "es-b1-u05-sequia-parque",
+  "skill": "listening",
+  "genre": "news",
+  "title": "Sequía y un parque nuevo",
+  "summary_es": {
+    "en": "A news bulletin reports on the drought, a new city park and a basketball result.",
+    "fr": "Un bulletin d’information sur la sécheresse, un nouveau parc urbain et un résultat de basket.",
+    "zh": "一则新闻播报，内容涉及干旱、一座新的城市公园和一场篮球比赛的结果。",
+    "ja": "干ばつ、新しい公園、バスケットボールの結果を伝えるニュースです。"
+  },
+  "topic": "environment",
+  "tags": ["noticias", "agua", "ciudad"],
+  "can_do": ["L-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["sequía", "embalse", "ahorrar", "inaugurar"],
+  "est_minutes": 8,
+  "prediction_prompt": "Es el informativo de la tarde. ¿Qué noticias locales esperas oír?",
+  "pre_teach": ["embalse", "inaugurar"],
+  "speakers": [
+    { "id": "lucia", "name": "Lucía", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "lucia",
+      "text": "Buenas tardes.",
+      "tokens": [
+        { "t": "Buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0, "e": 0.565 },
+        { "t": "tardes", "l": "tarde", "p": "NOUN", "w": true, "s": 0.565, "e": 1.13 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.173
+    },
+    {
+      "id": "s2",
+      "speaker": "lucia",
+      "text": "Estas son las noticias más importantes de hoy.",
+      "tokens": [
+        { "t": "Estas", "l": "este", "p": "DET", "w": true, "sp": true, "s": 1.433, "e": 1.869 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 1.869, "e": 2.159 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 2.159, "e": 2.449 },
+        { "t": "noticias", "l": "noticia", "p": "NOUN", "w": true, "sp": true, "s": 2.45, "e": 3.103 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 3.103, "e": 3.393 },
+        { "t": "importantes", "l": "importante", "p": "ADJ", "w": true, "sp": true, "s": 3.393, "e": 4.264 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 4.265, "e": 4.483 },
+        { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "s": 4.483, "e": 4.773 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.423,
+      "end": 4.843
+    },
+    {
+      "id": "s3",
+      "speaker": "lucia",
+      "text": "La sequía preocupa a los agricultores del sur.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 5.093, "e": 5.288 },
+        { "t": "sequía", "l": "sequía", "p": "NOUN", "w": true, "sp": true, "s": 5.288, "e": 5.743 },
+        { "t": "preocupa", "l": "preocuparse", "p": "VERB", "w": true, "sp": true, "s": 5.743, "e": 6.328 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 6.328, "e": 6.458 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 6.458, "e": 6.718 },
+        { "t": "agricultores", "l": "agricultor", "p": "NOUN", "w": true, "sp": true, "s": 6.718, "e": 7.563 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 7.563, "e": 7.823 },
+        { "t": "sur", "l": "sur", "p": "NOUN", "w": true, "s": 7.823, "e": 8.083 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.093,
+      "end": 8.2
+    },
+    {
+      "id": "s4",
+      "speaker": "lucia",
+      "text": "Según el servicio meteorológico, este ha sido el otoño más seco de los últimos treinta años.",
+      "tokens": [
+        { "t": "Según", "l": "según", "p": "ADP", "w": true, "sp": true, "s": 8.47, "e": 8.929 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.929, "e": 9.159 },
+        { "t": "servicio", "l": "servicio", "p": "NOUN", "w": true, "sp": true, "s": 9.159, "e": 9.848 },
+        { "t": "meteorológico", "l": "meteorológico", "p": "ADJ", "w": true, "s": 9.848, "e": 10.92 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true, "s": 11.06, "e": 11.422 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 11.422, "e": 11.639 },
+        { "t": "sido", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 11.639, "e": 12.001 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 12.001, "e": 12.218 },
+        { "t": "otoño", "l": "otoño", "p": "NOUN", "w": true, "sp": true, "s": 12.218, "e": 12.652 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 12.652, "e": 12.941 },
+        { "t": "seco", "l": "seco", "p": "ADJ", "w": true, "sp": true, "s": 12.942, "e": 13.304 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 13.304, "e": 13.521 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 13.521, "e": 13.81 },
+        { "t": "últimos", "l": "último", "p": "ADJ", "w": true, "sp": true, "s": 13.81, "e": 14.389 },
+        { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true, "s": 14.389, "e": 14.968 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 14.968, "e": 15.33 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.45,
+      "end": 15.41
+    },
+    {
+      "id": "s5",
+      "speaker": "lucia",
+      "text": "Los embalses de la región están al treinta por ciento de su capacidad.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 15.67, "e": 15.948 },
+        { "t": "embalses", "l": "embalse", "p": "NOUN", "w": true, "sp": true, "s": 15.948, "e": 16.573 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 16.573, "e": 16.781 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 16.781, "e": 16.989 },
+        { "t": "región", "l": "región", "p": "NOUN", "w": true, "sp": true, "s": 16.989, "e": 17.475 },
+        { "t": "están", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 17.475, "e": 17.892 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 17.892, "e": 18.1 },
+        { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true, "s": 18.1, "e": 18.655 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 18.655, "e": 18.933 },
+        { "t": "ciento", "l": "cien", "p": "NUM", "w": false, "sp": true, "s": 18.933, "e": 19.419 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 19.419, "e": 19.627 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 19.627, "e": 19.835 },
+        { "t": "capacidad", "l": "capacidad", "p": "NOUN", "w": true, "s": 19.836, "e": 20.53 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.66,
+      "end": 20.648
+    },
+    {
+      "id": "s6",
+      "speaker": "lucia",
+      "text": "Por eso, el ayuntamiento ha pedido a los vecinos que ahorren agua.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 20.908, "e": 21.283 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "s": 21.283, "e": 21.658 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 21.838, "e": 22.019 },
+        {
+          "t": "ayuntamiento",
+          "l": "ayuntamiento",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 22.019,
+          "e": 22.801
+        },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 22.801, "e": 22.982 },
+        { "t": "pedido", "l": "pedir", "p": "VERB", "w": true, "sp": true, "s": 22.981, "e": 23.402 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 23.403, "e": 23.523 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 23.523, "e": 23.764 },
+        { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "sp": true, "s": 23.764, "e": 24.245 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 24.245, "e": 24.486 },
+        { "t": "ahorren", "l": "ahorrar", "p": "VERB", "w": true, "sp": true, "s": 24.486, "e": 24.967 },
+        { "t": "agua", "l": "agua", "p": "NOUN", "w": true, "s": 24.967, "e": 25.268 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.898,
+      "end": 25.372
+    },
+    {
+      "id": "s7",
+      "speaker": "lucia",
+      "text": "Se recomienda ducharse en menos de cinco minutos y no regar el jardín durante el día.",
+      "tokens": [
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 25.632, "e": 25.837 },
+        { "t": "recomienda", "l": "recomendar", "p": "VERB", "w": true, "sp": true, "s": 25.837, "e": 26.588 },
+        { "t": "ducharse", "l": "ducharse", "p": "VERB", "w": true, "sp": true, "s": 26.587, "e": 27.201 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 27.201, "e": 27.406 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 27.406, "e": 27.815 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 27.816, "e": 28.021 },
+        { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true, "s": 28.02, "e": 28.429 },
+        { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true, "sp": true, "s": 28.43, "e": 28.976 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 28.976, "e": 29.112 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 29.112, "e": 29.317 },
+        { "t": "regar", "l": "regar", "p": "VERB", "w": true, "sp": true, "s": 29.317, "e": 29.726 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 29.726, "e": 29.931 },
+        { "t": "jardín", "l": "jardín", "p": "NOUN", "w": true, "sp": true, "s": 29.931, "e": 30.409 },
+        { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 30.408, "e": 30.954 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 30.954, "e": 31.159 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "s": 31.159, "e": 31.432 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.622,
+      "end": 31.496
+    },
+    {
+      "id": "s8",
+      "speaker": "lucia",
+      "text": "Cambiamos de tema.",
+      "tokens": [
+        { "t": "Cambiamos", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 31.756, "e": 32.473 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 32.473, "e": 32.688 },
+        { "t": "tema", "l": "tema", "p": "NOUN", "w": true, "s": 32.688, "e": 33.046 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.746,
+      "end": 33.096
+    },
+    {
+      "id": "s9",
+      "speaker": "lucia",
+      "text": "Hoy se ha inaugurado un nuevo parque en el barrio de San Roque.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 33.366, "e": 33.63 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 33.63, "e": 33.828 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 33.828, "e": 34.026 },
+        { "t": "inaugurado", "l": "inaugurar", "p": "VERB", "w": true, "sp": true, "s": 34.026, "e": 34.752 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 34.753, "e": 34.951 },
+        { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 34.951, "e": 35.347 },
+        { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "sp": true, "s": 35.347, "e": 35.809 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 35.809, "e": 36.007 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 36.007, "e": 36.205 },
+        { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "sp": true, "s": 36.205, "e": 36.667 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 36.668, "e": 36.866 },
+        { "t": "San", "l": "san", "p": "PROPN", "w": false, "sp": true, "s": 36.866, "e": 37.13 },
+        { "t": "Roque", "l": "roque", "p": "PROPN", "w": false, "s": 37.13, "e": 37.526 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 33.346,
+      "end": 37.601
+    },
+    {
+      "id": "s10",
+      "speaker": "lucia",
+      "text": "El proyecto ha costado dos millones de euros.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 37.861, "e": 38.084 },
+        { "t": "proyecto", "l": "proyecto", "p": "NOUN", "w": true, "sp": true, "s": 38.084, "e": 38.752 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 38.752, "e": 38.975 },
+        { "t": "costado", "l": "costar", "p": "VERB", "w": true, "sp": true, "s": 38.974, "e": 39.568 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 39.568, "e": 39.865 },
+        { "t": "millones", "l": "millón", "p": "NOUN", "w": true, "sp": true, "s": 39.865, "e": 40.533 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 40.533, "e": 40.756 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "s": 40.756, "e": 41.201 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 37.851,
+      "end": 41.305
+    },
+    {
+      "id": "s11",
+      "speaker": "lucia",
+      "text": "Tiene más de mil árboles, un lago pequeño y un carril para bicicletas.",
+      "tokens": [
+        { "t": "Tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 41.565, "e": 41.982 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 41.982, "e": 42.26 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 42.261, "e": 42.47 },
+        { "t": "mil", "l": "mil", "p": "NUM", "w": false, "sp": true, "s": 42.469, "e": 42.747 },
+        { "t": "árboles", "l": "árbol", "p": "NOUN", "w": true, "s": 42.748, "e": 43.305 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 43.304, "e": 43.513 },
+        { "t": "lago", "l": "lago", "p": "NOUN", "w": true, "sp": true, "s": 43.513, "e": 43.861 },
+        { "t": "pequeño", "l": "pequeño", "p": "ADJ", "w": true, "sp": true, "s": 43.861, "e": 44.418 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 44.417, "e": 44.556 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 44.556, "e": 44.765 },
+        { "t": "carril", "l": "carril", "p": "NOUN", "w": true, "sp": true, "s": 44.765, "e": 45.252 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 45.252, "e": 45.6 },
+        { "t": "bicicletas", "l": "bicicleta", "p": "NOUN", "w": true, "s": 45.6, "e": 46.365 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 41.555,
+      "end": 46.422
+    },
+    {
+      "id": "s12",
+      "speaker": "lucia",
+      "text": "La alcaldesa ha dicho que quiere un barrio más verde y con menos coches.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 46.682, "e": 46.876 },
+        { "t": "alcaldesa", "l": "alcalde", "p": "NOUN", "w": true, "sp": true, "s": 46.876, "e": 47.522 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 47.522, "e": 47.716 },
+        { "t": "dicho", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 47.715, "e": 48.103 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 48.103, "e": 48.361 },
+        { "t": "quiere", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 48.361, "e": 48.813 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 48.813, "e": 49.007 },
+        { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "sp": true, "s": 49.007, "e": 49.459 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 49.459, "e": 49.717 },
+        { "t": "verde", "l": "verde", "p": "ADJ", "w": true, "sp": true, "s": 49.717, "e": 50.105 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 50.105, "e": 50.234 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 50.234, "e": 50.492 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 50.492, "e": 50.88 },
+        { "t": "coches", "l": "coche", "p": "NOUN", "w": true, "s": 50.88, "e": 51.332 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.672,
+      "end": 51.395
+    },
+    {
+      "id": "s13",
+      "speaker": "lucia",
+      "text": "Los vecinos están contentos, aunque algunos se quejan de que no hay suficientes bancos para sentarse.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 51.655, "e": 51.923 },
+        { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "sp": true, "s": 51.923, "e": 52.458 },
+        { "t": "están", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 52.458, "e": 52.859 },
+        { "t": "contentos", "l": "contento", "p": "ADJ", "w": true, "s": 52.859, "e": 53.528 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true, "s": 53.528, "e": 53.996 },
+        { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 53.997, "e": 54.532 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 54.532, "e": 54.733 },
+        { "t": "quejan", "l": "quejarse", "p": "VERB", "w": true, "sp": true, "s": 54.732, "e": 55.2 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 55.201, "e": 55.402 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 55.401, "e": 55.669 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 55.669, "e": 55.87 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 55.87, "e": 56.138 },
+        { "t": "suficientes", "l": "suficiente", "p": "ADJ", "w": true, "sp": true, "s": 56.137, "e": 56.94 },
+        { "t": "bancos", "l": "banco", "p": "NOUN", "w": true, "sp": true, "s": 56.94, "e": 57.408 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 57.408, "e": 57.743 },
+        { "t": "sentarse", "l": "sentarse", "p": "VERB", "w": true, "s": 57.743, "e": 58.345 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 51.645,
+      "end": 58.432
+    },
+    {
+      "id": "s14",
+      "speaker": "lucia",
+      "text": "Terminamos con el deporte.",
+      "tokens": [
+        { "t": "Terminamos", "l": "terminar", "p": "VERB", "w": true, "sp": true, "s": 58.692, "e": 59.525 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 59.525, "e": 59.828 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 59.829, "e": 60.056 },
+        { "t": "deporte", "l": "deporte", "p": "NOUN", "w": true, "s": 60.056, "e": 60.662 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 58.682,
+      "end": 60.742
+    },
+    {
+      "id": "s15",
+      "speaker": "lucia",
+      "text": "El equipo de baloncesto de la ciudad ganó anoche por cuarenta puntos.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 61.002, "e": 61.211 },
+        { "t": "equipo", "l": "equipo", "p": "NOUN", "w": true, "sp": true, "s": 61.211, "e": 61.699 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 61.699, "e": 61.908 },
+        { "t": "baloncesto", "l": "baloncesto", "p": "NOUN", "w": true, "sp": true, "s": 61.908, "e": 62.675 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 62.675, "e": 62.884 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 62.884, "e": 63.093 },
+        { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true, "s": 63.093, "e": 63.581 },
+        { "t": "ganó", "l": "ganar", "p": "VERB", "w": true, "sp": true, "s": 63.581, "e": 63.93 },
+        { "t": "anoche", "l": "anoche", "p": "ADV", "w": true, "sp": true, "s": 63.93, "e": 64.418 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 64.418, "e": 64.697 },
+        { "t": "cuarenta", "l": "cuarenta", "p": "NUM", "w": false, "sp": true, "s": 64.697, "e": 65.324 },
+        { "t": "puntos", "l": "punto", "p": "NOUN", "w": true, "s": 65.324, "e": 65.812 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 60.992,
+      "end": 65.874
+    },
+    {
+      "id": "s16",
+      "speaker": "lucia",
+      "text": "El entrenador pidió calma, porque todavía quedan muchos partidos.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 66.134, "e": 66.574 },
+        { "t": "entrenador", "l": "entrenador", "p": "NOUN", "w": true, "sp": true, "s": 66.574, "e": 68.186 },
+        { "t": "pidió", "l": "pedir", "p": "VERB", "w": true, "sp": true, "s": 68.186, "e": 69.065 },
+        { "t": "calma", "l": "calma", "p": "NOUN", "w": true, "s": 69.065, "e": 69.944 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 70.094, "e": 70.205 },
+        { "t": "todavía", "l": "todavía", "p": "ADV", "w": true, "sp": true, "s": 70.205, "e": 70.331 },
+        { "t": "quedan", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 70.331, "e": 70.442 },
+        { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 70.441, "e": 70.552 },
+        { "t": "partidos", "l": "partido", "p": "NOUN", "w": true, "s": 70.552, "e": 70.694 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 66.124,
+      "end": 70.796
+    },
+    {
+      "id": "s17",
+      "speaker": "lucia",
+      "text": "Mañana volveremos con más información.",
+      "tokens": [
+        { "t": "Mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 71.056, "e": 71.594 },
+        { "t": "volveremos", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 71.594, "e": 72.439 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 72.439, "e": 72.746 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 72.747, "e": 73.054 },
+        { "t": "información", "l": "información", "p": "NOUN", "w": true, "s": 73.054, "e": 73.976 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 71.046,
+      "end": 74.05
+    },
+    {
+      "id": "s18",
+      "speaker": "lucia",
+      "text": "Que pasen una buena tarde.",
+      "tokens": [
+        { "t": "Que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 74.31, "e": 74.564 },
+        { "t": "pasen", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 74.564, "e": 74.945 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 74.945, "e": 75.199 },
+        { "t": "buena", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 75.198, "e": 75.579 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "s": 75.579, "e": 75.96 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 74.3,
+      "end": 76.046
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "embalse",
+      "surface": "embalses",
+      "pos": "noun",
+      "def_en": "lago artificial donde se guarda el agua",
+      "def_es": { "en": "reservoir", "fr": "barrage-réservoir", "zh": "水库", "ja": "貯水池" },
+      "ref": "s5"
+    },
+    {
+      "lemma": "ahorrar",
+      "surface": "ahorren",
+      "pos": "verb",
+      "def_en": "gastar menos de algo",
+      "def_es": { "en": "to save", "fr": "économiser", "zh": "节约", "ja": "節約する" },
+      "ref": "s6"
+    },
+    {
+      "lemma": "inaugurar",
+      "surface": "inaugurado",
+      "pos": "verb",
+      "def_en": "abrir un lugar nuevo con un acto oficial",
+      "def_es": { "en": "to open officially", "fr": "inaugurer", "zh": "落成启用", "ja": "開業する" },
+      "ref": "s9"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿De qué trata la primera noticia?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "The lack of rain in the south." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De un incendio en un bosque del norte" },
+        { "id": "b", "text": "De la falta de lluvia en el sur" },
+        { "id": "c", "text": "De una inundación en la costa este" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuánta agua hay en los embalses?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "Thirty per cent." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "El sesenta por ciento" },
+        { "id": "b", "text": "El noventa por ciento" },
+        { "id": "c", "text": "El treinta por ciento" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "El parque nuevo no tiene carril para bicicletas.",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "It does have a cycle lane." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿De qué se quejan algunos vecinos?",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "There are not enough benches." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De que faltan sitios para sentarse" },
+        { "id": "b", "text": "De que el parque queda demasiado lejos del centro" },
+        { "id": "c", "text": "De que todavía hay demasiados coches cerca" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué quiere conseguir la alcaldesa?",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "A greener district." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Más tráfico en el centro" },
+        { "id": "b", "text": "Un barrio más verde" },
+        { "id": "c", "text": "Un estadio más grande" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s16"],
+      "rationale_es": { "en": "*Calma*: calm." },
+      "type": "gap_fill",
+      "text": "El entrenador pidió {{1}} a los aficionados.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["calma"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "agricultor", "agua", "ahorrar", "alcalde", "algún", "anoche", "aunque", "ayuntamiento", "año",
+    "baloncesto", "banco", "barrio", "bicicleta", "bueno", "calma", "cambiar", "capacidad", "carril", "ciudad",
+    "coche", "con", "contento", "costar", "de", "decir", "deporte", "ducharse", "durante", "día", "el",
+    "embalse", "en", "entrenador", "equipo", "estar", "este", "esto", "euro", "ganar", "haber", "hoy",
+    "importante", "inaugurar", "información", "jardín", "lago", "mañana", "menos", "meteorológico", "millón",
+    "minuto", "mucho", "más", "no", "noticia", "nuevo", "otoño", "para", "parque", "partido", "pasar", "pedir",
+    "pequeño", "por", "porque", "preocuparse", "proyecto", "punto", "que", "quedar", "quejarse", "querer",
+    "recomendar", "regar", "región", "se", "seco", "según", "sentarse", "sequía", "ser", "servicio", "su",
+    "suficiente", "sur", "tarde", "tema", "tener", "terminar", "todavía", "un", "vecino", "verde", "volver",
+    "y", "árbol", "último"
+  ],
+  "difficulty": 1078,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6607, "A2": 0.8333, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 9.8,
+    "flesch_reading_ease": 80.5,
+    "checked_at": "2026-10-19T07:35:31.655Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-009/v1.m4a",
+    "duration_s": 76.046,
+    "wpm": 140,
+    "provider": "piper",
+    "voices": { "lucia": "sharvard-f" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.91, 0.56, 0.17, 0.83, 0.93, 0.93, 0.68, 0.96, 0.88, 0.91, 0.74, 0.99, 1, 0.59, 0.07, 0.64, 0.97,
+      0.74, 0.91, 1, 0.64, 0.46, 0.81, 0.7, 0.32, 0.53, 0.73, 0.62, 0.6, 0.99, 0.48, 0.8, 0.42, 0.64, 0.66,
+      0.7, 1, 0.61, 0.58, 0.52, 0.66, 0.69, 0.64, 0.51, 0.74, 0.58, 0.23, 0.09, 0.67, 0.82, 0.98, 1, 0.65,
+      0.78, 0.71, 0.8, 0.82, 0.86, 0.9, 0.72, 0.71, 0.93, 0.51, 0.51, 0.05, 1, 0.6, 0.49, 0.68, 0.72, 0.78,
+      0.86, 0.76, 0.81, 0.77, 0.65, 0.88, 0.63, 0.2, 0.15, 0.81, 0.74, 0.84, 0.73, 0.86, 0.74, 0.71, 0.78,
+      0.56, 0.94, 0.97, 0.85, 0.84, 0.72, 0.67, 0.83, 1, 0.4, 0.13, 0.92, 1, 0.68, 0.63, 0.11, 0.77, 0.63,
+      0.72, 0.51, 0.65, 0.52, 0.71, 1, 0.7, 0.89, 0.66, 0.72, 0.73, 0.19, 0.61, 0.76, 0.85, 1, 0.72, 0.62,
+      0.62, 0.94, 0.71, 0.75, 0.3, 0.03, 0.78, 0.55, 0.65, 0.68, 0.61, 0.45, 1, 0.57, 0.57, 0.61, 0.54, 0.61,
+      0.34, 0.46, 0.27, 0.19, 0.95, 0.93, 0.7, 0.83, 0.59, 0.73, 0.87, 0.96, 0.86, 1, 0.98, 0.68, 0.73, 0.71,
+      0.24, 0.03, 0.57, 0.61, 0.59, 0.51, 0.38, 0.74, 0.31, 0.55, 0.78, 0.51, 0.54, 0.57, 0.69, 0.69, 0.62,
+      0.58, 1, 0.56, 0.53, 0.47, 0.29, 0.17, 0.99, 0.95, 0.91, 0.75, 1, 0.91, 0.26, 0.48, 0.68, 1, 0.88, 0.61,
+      0.67, 0.86, 0.84, 0.67, 0.7, 0.86, 0.88, 0.62, 0.61, 0.27, 0.12, 0.49, 0.57, 0.61, 0.55, 0.73, 1, 0.8,
+      0.51, 0.59, 0.8, 0.6, 0.51, 0.55, 0.35, 0.23, 0.07, 0.5, 0.7, 1, 0.79, 0.66, 0.5, 0.47, 0.7, 0.28, 0.18,
+      0.73, 1, 0.82, 0.69, 0.58, 0.26
+    ]
+  }
+}

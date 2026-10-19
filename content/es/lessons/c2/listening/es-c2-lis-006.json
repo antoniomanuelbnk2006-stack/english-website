@@ -1,0 +1,1083 @@
+{
+  "id": "es-c2-lis-006",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "unit": "es-c2-u01",
+  "series": "es-c2-u01-nostalgia",
+  "skill": "listening",
+  "genre": "discussion",
+  "title": "La nostalgia como negocio",
+  "summary_es": {
+    "en": "Three guests discuss why remakes, vinyl and retro products sell so well, and what that says about us.",
+    "fr": "Trois invités se demandent pourquoi les remakes, le vinyle et les produits rétro se vendent si bien, et ce que cela dit de nous.",
+    "zh": "三位嘉宾讨论翻拍作品、黑胶唱片和复古商品为何如此畅销，以及这反映了我们怎样的心态。",
+    "ja": "3人のゲストが、リメイクやレコード、レトロ商品がなぜよく売れるのか、それが私たちについて何を物語るのかを話し合います。"
+  },
+  "topic": "society",
+  "tags": ["sociedad", "consumo", "cultura"],
+  "can_do": ["L-C2-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["nostalgia", "idealizar", "mercadotecnia", "refugio"],
+  "est_minutes": 12,
+  "prediction_prompt": "¿Hay algo de tu infancia que te gustaría recuperar? ¿Pagarías por ello?",
+  "pre_teach": ["idealizar", "refugio"],
+  "speakers": [
+    { "id": "beatriz", "name": "Beatriz", "accent": "es-ES", "gender": "female" },
+    { "id": "gonzalo", "name": "Gonzalo", "accent": "es-ES", "gender": "male" },
+    { "id": "ismael", "name": "Ismael", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 145,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "beatriz",
+      "text": "Bienvenidos.",
+      "tokens": [
+        { "t": "Bienvenidos", "l": "bienvenido", "p": "ADJ", "w": true, "s": 0.01, "e": 0.87 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 0.933
+    },
+    {
+      "id": "s2",
+      "speaker": "beatriz",
+      "text": "Basta con mirar la cartelera para comprobarlo: secuelas, versiones nuevas de clásicos, series ambientadas en los ochenta.",
+      "tokens": [
+        { "t": "Basta", "l": "bastar", "p": "VERB", "w": true, "sp": true, "s": 1.193, "e": 1.56 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 1.56, "e": 1.805 },
+        { "t": "mirar", "l": "mirar", "p": "VERB", "w": true, "sp": true, "s": 1.805, "e": 2.172 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 2.172, "e": 2.356 },
+        { "t": "cartelera", "l": "cartelera", "p": "NOUN", "w": true, "sp": true, "s": 2.356, "e": 2.968 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 2.967, "e": 3.273 },
+        { "t": "comprobarlo", "l": "comprobar", "p": "VERB", "w": true, "s": 3.273, "e": 4.007 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "secuelas", "l": "secuela", "p": "NOUN", "w": true, "s": 4.008, "e": 4.559 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "versiones", "l": "versión", "p": "NOUN", "w": true, "sp": true, "s": 4.558, "e": 5.17 },
+        { "t": "nuevas", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 5.17, "e": 5.598 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 5.598, "e": 5.782 },
+        { "t": "clásicos", "l": "clásico", "p": "ADJ", "w": true, "s": 5.782, "e": 6.333 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "series", "l": "serie", "p": "NOUN", "w": true, "sp": true, "s": 6.333, "e": 6.761 },
+        { "t": "ambientadas", "l": "ambientado", "p": "ADJ", "w": true, "sp": true, "s": 6.761, "e": 7.495 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 7.495, "e": 7.679 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 7.679, "e": 7.924 },
+        { "t": "ochenta", "l": "ochenta", "p": "NUM", "w": false, "s": 7.924, "e": 8.413 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.183,
+      "end": 8.488
+    },
+    {
+      "id": "s3",
+      "speaker": "beatriz",
+      "text": "Gonzalo, ¿estamos atrapados en el pasado?",
+      "tokens": [
+        { "t": "Gonzalo", "l": "gonzalo", "p": "PROPN", "w": false, "s": 8.748, "e": 9.306 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "estamos", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 9.306, "e": 9.864 },
+        { "t": "atrapados", "l": "atrapar", "p": "VERB", "w": true, "sp": true, "s": 9.864, "e": 10.561 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 10.561, "e": 10.77 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 10.771, "e": 10.98 },
+        { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "s": 10.98, "e": 11.468 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.738,
+      "end": 11.55
+    },
+    {
+      "id": "s4",
+      "speaker": "gonzalo",
+      "text": "Atrapados quizá no, pero sí muy cómodos en él.",
+      "tokens": [
+        { "t": "Atrapados", "l": "atrapar", "p": "VERB", "w": true, "sp": true, "s": 11.96, "e": 12.618 },
+        { "t": "quizá", "l": "quizá", "p": "ADV", "w": true, "sp": true, "s": 12.618, "e": 13.013 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "s": 13.013, "e": 13.21 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 13.39, "e": 13.694 },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "sp": true, "s": 13.694, "e": 13.876 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 13.876, "e": 14.119 },
+        { "t": "cómodos", "l": "cómodo", "p": "ADJ", "w": true, "sp": true, "s": 14.119, "e": 14.605 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 14.605, "e": 14.787 },
+        { "t": "él", "l": "él", "p": "PRON", "w": true, "s": 14.788, "e": 14.97 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.95,
+      "end": 15.065
+    },
+    {
+      "id": "s5",
+      "speaker": "gonzalo",
+      "text": "La nostalgia se ha convertido en una de las estrategias comerciales más rentables.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 15.335, "e": 15.531 },
+        { "t": "nostalgia", "l": "nostalgia", "p": "NOUN", "w": true, "sp": true, "s": 15.531, "e": 16.186 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 16.186, "e": 16.382 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 16.383, "e": 16.579 },
+        { "t": "convertido", "l": "convertir", "p": "VERB", "w": true, "sp": true, "s": 16.579, "e": 17.299 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 17.3, "e": 17.496 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 17.496, "e": 17.758 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 17.758, "e": 17.954 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 17.955, "e": 18.217 },
+        {
+          "t": "estrategias",
+          "l": "estrategia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 18.216,
+          "e": 19.002
+        },
+        { "t": "comerciales", "l": "comercial", "p": "ADJ", "w": true, "sp": true, "s": 19.002, "e": 19.788 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 19.788, "e": 20.05 },
+        { "t": "rentables", "l": "rentable", "p": "ADJ", "w": true, "s": 20.05, "e": 20.705 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.315,
+      "end": 20.759
+    },
+    {
+      "id": "s6",
+      "speaker": "gonzalo",
+      "text": "Y no es casualidad.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 21.019, "e": 21.13 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 21.13, "e": 21.296 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 21.295, "e": 21.461 },
+        { "t": "casualidad", "l": "casualidad", "p": "NOUN", "w": true, "s": 21.461, "e": 22.069 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.009,
+      "end": 22.168
+    },
+    {
+      "id": "s7",
+      "speaker": "gonzalo",
+      "text": "Para una productora, apostar por algo que el público ya conoce reduce enormemente el riesgo.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 22.428, "e": 22.701 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 22.701, "e": 22.919 },
+        { "t": "productora", "l": "productora", "p": "NOUN", "w": true, "s": 22.919, "e": 23.519 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "apostar", "l": "apostar", "p": "VERB", "w": true, "sp": true, "s": 23.728, "e": 24.205 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 24.205, "e": 24.443 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 24.443, "e": 24.741 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 24.741, "e": 24.979 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 24.979, "e": 25.158 },
+        { "t": "público", "l": "público", "p": "ADJ", "w": true, "sp": true, "s": 25.158, "e": 25.635 },
+        { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 25.634, "e": 25.813 },
+        { "t": "conoce", "l": "conocer", "p": "VERB", "w": true, "sp": true, "s": 25.813, "e": 26.23 },
+        { "t": "reduce", "l": "reducir", "p": "VERB", "w": true, "sp": true, "s": 26.23, "e": 26.647 },
+        {
+          "t": "enormemente",
+          "l": "enormemente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 26.647,
+          "e": 27.362
+        },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 27.362, "e": 27.541 },
+        { "t": "riesgo", "l": "riesgo", "p": "NOUN", "w": true, "s": 27.541, "e": 27.958 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.418,
+      "end": 28.079
+    },
+    {
+      "id": "s8",
+      "speaker": "gonzalo",
+      "text": "El espectador sabe lo que va a encontrar, y eso tranquiliza.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 28.339, "e": 28.502 },
+        { "t": "espectador", "l": "espectador", "p": "NOUN", "w": true, "sp": true, "s": 28.502, "e": 29.1 },
+        { "t": "sabe", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 29.1, "e": 29.372 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 29.372, "e": 29.535 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 29.536, "e": 29.754 },
+        { "t": "va", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 29.753, "e": 29.916 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 29.916, "e": 30.025 },
+        { "t": "encontrar", "l": "encontrar", "p": "VERB", "w": true, "s": 30.025, "e": 30.569 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 30.859, "e": 30.983 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 30.983, "e": 31.232 },
+        { "t": "tranquiliza", "l": "tranquilizar", "p": "VERB", "w": true, "s": 31.232, "e": 31.979 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.329,
+      "end": 32.078
+    },
+    {
+      "id": "s9",
+      "speaker": "ismael",
+      "text": "Yo matizaría que no todo es cálculo empresarial.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 32.488, "e": 32.636 },
+        { "t": "matizaría", "l": "matizar", "p": "VERB", "w": true, "sp": true, "s": 32.636, "e": 33.13 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 33.13, "e": 33.328 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 33.327, "e": 33.475 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 33.476, "e": 33.723 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 33.722, "e": 33.87 },
+        { "t": "cálculo", "l": "cálculo", "p": "NOUN", "w": true, "sp": true, "s": 33.871, "e": 34.266 },
+        { "t": "empresarial", "l": "empresarial", "p": "ADJ", "w": true, "s": 34.266, "e": 34.859 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.478,
+      "end": 34.939
+    },
+    {
+      "id": "s10",
+      "speaker": "ismael",
+      "text": "La nostalgia responde a una necesidad real.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 35.22, "e": 35.394 },
+        { "t": "nostalgia", "l": "nostalgia", "p": "NOUN", "w": true, "sp": true, "s": 35.394, "e": 35.973 },
+        { "t": "responde", "l": "responder", "p": "VERB", "w": true, "sp": true, "s": 35.973, "e": 36.494 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 36.494, "e": 36.61 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 36.61, "e": 36.842 },
+        { "t": "necesidad", "l": "necesidad", "p": "NOUN", "w": true, "sp": true, "s": 36.841, "e": 37.42 },
+        { "t": "real", "l": "real", "p": "ADJ", "w": true, "s": 37.42, "e": 37.71 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.189,
+      "end": 37.778
+    },
+    {
+      "id": "s11",
+      "speaker": "ismael",
+      "text": "En épocas de incertidumbre, mirar atrás funciona como un refugio emocional.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 38.058, "e": 38.212 },
+        { "t": "épocas", "l": "época", "p": "NOUN", "w": true, "sp": true, "s": 38.212, "e": 38.571 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 38.572, "e": 38.726 },
+        { "t": "incertidumbre", "l": "incertidumbre", "p": "NOUN", "w": true, "s": 38.726, "e": 39.445 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "mirar", "l": "mirar", "p": "VERB", "w": true, "sp": true, "s": 39.444, "e": 39.752 },
+        { "t": "atrás", "l": "atrás", "p": "ADV", "w": true, "sp": true, "s": 39.753, "e": 40.061 },
+        { "t": "funciona", "l": "funcionar", "p": "VERB", "w": true, "sp": true, "s": 40.061, "e": 40.523 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 40.523, "e": 40.78 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 40.78, "e": 40.934 },
+        { "t": "refugio", "l": "refugio", "p": "NOUN", "w": true, "sp": true, "s": 40.934, "e": 41.345 },
+        { "t": "emocional", "l": "emocional", "p": "ADJ", "w": true, "s": 41.344, "e": 41.858 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 38.028,
+      "end": 41.937
+    },
+    {
+      "id": "s12",
+      "speaker": "ismael",
+      "text": "No es casual que la moda retro se dispare justo después de las crisis.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 42.197, "e": 42.358 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 42.358, "e": 42.519 },
+        { "t": "casual", "l": "casual", "p": "ADJ", "w": true, "sp": true, "s": 42.519, "e": 42.895 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 42.895, "e": 43.11 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 43.11, "e": 43.271 },
+        { "t": "moda", "l": "moda", "p": "NOUN", "w": true, "sp": true, "s": 43.271, "e": 43.54 },
+        { "t": "retro", "l": "retro", "p": "ADJ", "w": true, "sp": true, "s": 43.54, "e": 43.862 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 43.862, "e": 44.023 },
+        { "t": "dispare", "l": "dispararse", "p": "VERB", "w": true, "sp": true, "s": 44.023, "e": 44.453 },
+        { "t": "justo", "l": "justo", "p": "ADJ", "w": true, "sp": true, "s": 44.453, "e": 44.775 },
+        { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true, "s": 44.775, "e": 45.205 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 45.205, "e": 45.366 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 45.366, "e": 45.581 },
+        { "t": "crisis", "l": "crisis", "p": "NOUN", "w": true, "s": 45.581, "e": 45.957 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 42.187,
+      "end": 46.029
+    },
+    {
+      "id": "s13",
+      "speaker": "ismael",
+      "text": "Cuando el futuro asusta, el pasado parece un lugar seguro.",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 46.309, "e": 46.697 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 46.697, "e": 46.863 },
+        { "t": "futuro", "l": "futuro", "p": "NOUN", "w": true, "sp": true, "s": 46.863, "e": 47.251 },
+        { "t": "asusta", "l": "asustar", "p": "VERB", "w": true, "s": 47.251, "e": 47.639 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 47.64, "e": 47.806 },
+        { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "sp": true, "s": 47.806, "e": 48.194 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 48.194, "e": 48.582 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 48.582, "e": 48.748 },
+        { "t": "lugar", "l": "lugar", "p": "NOUN", "w": true, "sp": true, "s": 48.748, "e": 49.081 },
+        { "t": "seguro", "l": "seguro", "p": "ADJ", "w": true, "s": 49.081, "e": 49.469 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.279,
+      "end": 49.54
+    },
+    {
+      "id": "s14",
+      "speaker": "beatriz",
+      "text": "Aunque ese pasado sea, en gran medida, inventado.",
+      "tokens": [
+        { "t": "Aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true, "s": 49.95, "e": 50.449 },
+        { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 50.449, "e": 50.734 },
+        { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "sp": true, "s": 50.734, "e": 51.233 },
+        { "t": "sea", "l": "ser", "p": "AUX", "w": true, "s": 51.233, "e": 51.518 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 51.518, "e": 51.732 },
+        { "t": "gran", "l": "grande", "p": "ADJ", "w": true, "sp": true, "s": 51.732, "e": 52.088 },
+        { "t": "medida", "l": "medida", "p": "NOUN", "w": true, "s": 52.088, "e": 52.587 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "inventado", "l": "inventar", "p": "VERB", "w": true, "s": 52.587, "e": 53.3 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 49.94,
+      "end": 53.378
+    },
+    {
+      "id": "s15",
+      "speaker": "ismael",
+      "text": "Totalmente.",
+      "tokens": [
+        { "t": "Totalmente", "l": "totalmente", "p": "ADV", "w": true, "s": 53.778, "e": 54.428 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 53.778,
+      "end": 54.498
+    },
+    {
+      "id": "s16",
+      "speaker": "ismael",
+      "text": "La memoria idealiza.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 54.779, "e": 54.956 },
+        { "t": "memoria", "l": "memoria", "p": "NOUN", "w": true, "sp": true, "s": 54.956, "e": 55.428 },
+        { "t": "idealiza", "l": "idealizar", "p": "VERB", "w": true, "s": 55.428, "e": 55.959 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 54.748,
+      "end": 56.027
+    },
+    {
+      "id": "s17",
+      "speaker": "ismael",
+      "text": "Recordamos los veranos interminables de la infancia, pero olvidamos el aburrimiento, las peleas y las tardes de lluvia.",
+      "tokens": [
+        { "t": "Recordamos", "l": "recordar", "p": "VERB", "w": true, "sp": true, "s": 56.297, "e": 56.877 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 56.877, "e": 57.088 },
+        { "t": "veranos", "l": "verano", "p": "NOUN", "w": true, "sp": true, "s": 57.087, "e": 57.509 },
+        {
+          "t": "interminables",
+          "l": "interminable",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 57.509,
+          "e": 58.247
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 58.247, "e": 58.405 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 58.405, "e": 58.563 },
+        { "t": "infancia", "l": "infancia", "p": "NOUN", "w": true, "s": 58.563, "e": 59.037 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 59.377, "e": 59.637 },
+        { "t": "olvidamos", "l": "olvidar", "p": "VERB", "w": true, "sp": true, "s": 59.637, "e": 60.156 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 60.156, "e": 60.312 },
+        { "t": "aburrimiento", "l": "aburrimiento", "p": "NOUN", "w": true, "s": 60.312, "e": 60.987 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 61.397, "e": 61.623 },
+        { "t": "peleas", "l": "pelear", "p": "VERB", "w": true, "sp": true, "s": 61.623, "e": 62.018 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 62.018, "e": 62.131 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 62.131, "e": 62.357 },
+        { "t": "tardes", "l": "tarde", "p": "NOUN", "w": true, "sp": true, "s": 62.357, "e": 62.752 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 62.752, "e": 62.921 },
+        { "t": "lluvia", "l": "lluvia", "p": "NOUN", "w": true, "s": 62.922, "e": 63.317 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.277,
+      "end": 63.424
+    },
+    {
+      "id": "s18",
+      "speaker": "ismael",
+      "text": "Lo curioso es que la nostalgia ya no se limita a lo vivido.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 63.705, "e": 63.862 },
+        { "t": "curioso", "l": "curioso", "p": "ADJ", "w": true, "sp": true, "s": 63.862, "e": 64.28 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 64.279, "e": 64.436 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 64.436, "e": 64.645 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 64.645, "e": 64.802 },
+        { "t": "nostalgia", "l": "nostalgia", "p": "NOUN", "w": true, "sp": true, "s": 64.801, "e": 65.323 },
+        { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 65.323, "e": 65.48 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 65.48, "e": 65.637 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 65.637, "e": 65.794 },
+        { "t": "limita", "l": "limitar", "p": "VERB", "w": true, "sp": true, "s": 65.793, "e": 66.158 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 66.159, "e": 66.263 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 66.263, "e": 66.42 },
+        { "t": "vivido", "l": "vivir", "p": "VERB", "w": true, "s": 66.42, "e": 66.785 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 63.675,
+      "end": 66.848
+    },
+    {
+      "id": "s19",
+      "speaker": "ismael",
+      "text": "Hay adolescentes que compran discos de vinilo y cámaras de carrete de una época que no conocieron.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 67.098, "e": 67.305 },
+        {
+          "t": "adolescentes",
+          "l": "adolescente",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 67.305,
+          "e": 67.976
+        },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 67.976, "e": 68.183 },
+        { "t": "compran", "l": "comprar", "p": "VERB", "w": true, "sp": true, "s": 68.182, "e": 68.595 },
+        { "t": "discos", "l": "disco", "p": "NOUN", "w": true, "sp": true, "s": 68.595, "e": 68.956 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 68.957, "e": 69.112 },
+        { "t": "vinilo", "l": "vinilo", "p": "NOUN", "w": true, "sp": true, "s": 69.112, "e": 69.473 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 69.473, "e": 69.576 },
+        { "t": "cámaras", "l": "cámara", "p": "NOUN", "w": true, "sp": true, "s": 69.576, "e": 69.989 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 69.989, "e": 70.144 },
+        { "t": "carrete", "l": "carrete", "p": "NOUN", "w": true, "sp": true, "s": 70.144, "e": 70.557 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 70.557, "e": 70.712 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 70.712, "e": 70.919 },
+        { "t": "época", "l": "época", "p": "NOUN", "w": true, "sp": true, "s": 70.919, "e": 71.229 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 71.229, "e": 71.436 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 71.435, "e": 71.59 },
+        { "t": "conocieron", "l": "conocer", "p": "VERB", "w": true, "s": 71.59, "e": 72.158 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 67.098,
+      "end": 72.23
+    },
+    {
+      "id": "s20",
+      "speaker": "gonzalo",
+      "text": "Ahí entra en juego otro factor: el cansancio digital.",
+      "tokens": [
+        { "t": "Ahí", "l": "ahí", "p": "ADV", "w": true, "sp": true, "s": 72.63, "e": 72.866 },
+        { "t": "entra", "l": "entrar", "p": "VERB", "w": true, "sp": true, "s": 72.866, "e": 73.22 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 73.22, "e": 73.397 },
+        { "t": "juego", "l": "jugar", "p": "VERB", "w": true, "sp": true, "s": 73.397, "e": 73.751 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 73.752, "e": 74.047 },
+        { "t": "factor", "l": "factor", "p": "NOUN", "w": true, "s": 74.047, "e": 74.46 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 74.65, "e": 74.831 },
+        { "t": "cansancio", "l": "cansancio", "p": "NOUN", "w": true, "sp": true, "s": 74.831, "e": 75.436 },
+        { "t": "digital", "l": "digital", "p": "ADJ", "w": true, "s": 75.436, "e": 75.92 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 72.63,
+      "end": 76.003
+    },
+    {
+      "id": "s21",
+      "speaker": "gonzalo",
+      "text": "Un vinilo te obliga a escuchar un álbum entero, a levantarte para darle la vuelta.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 76.253, "e": 76.425 },
+        { "t": "vinilo", "l": "vinilo", "p": "NOUN", "w": true, "sp": true, "s": 76.425, "e": 76.826 },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 76.825, "e": 76.997 },
+        { "t": "obliga", "l": "obligar", "p": "VERB", "w": true, "sp": true, "s": 76.997, "e": 77.398 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 77.398, "e": 77.512 },
+        { "t": "escuchar", "l": "escuchar", "p": "VERB", "w": true, "sp": true, "s": 77.512, "e": 78.027 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 78.027, "e": 78.199 },
+        { "t": "álbum", "l": "álbum", "p": "NOUN", "w": true, "sp": true, "s": 78.199, "e": 78.542 },
+        { "t": "entero", "l": "enterarse", "p": "VERB", "w": true, "s": 78.542, "e": 78.943 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 79.143, "e": 79.26 },
+        { "t": "levantarte", "l": "levantarse", "p": "VERB", "w": true, "sp": true, "s": 79.26, "e": 79.904 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 79.904, "e": 80.197 },
+        { "t": "darle", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 80.197, "e": 80.548 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 80.548, "e": 80.724 },
+        { "t": "vuelta", "l": "volver", "p": "VERB", "w": true, "s": 80.723, "e": 81.133 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 76.253,
+      "end": 81.226
+    },
+    {
+      "id": "s22",
+      "speaker": "gonzalo",
+      "text": "En un mundo de listas infinitas, esa limitación resulta casi exótica.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 81.486, "e": 81.669 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 81.669, "e": 81.852 },
+        { "t": "mundo", "l": "mundo", "p": "NOUN", "w": true, "sp": true, "s": 81.852, "e": 82.218 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 82.217, "e": 82.4 },
+        { "t": "listas", "l": "lista", "p": "NOUN", "w": true, "sp": true, "s": 82.4, "e": 82.827 },
+        { "t": "infinitas", "l": "infinito", "p": "ADJ", "w": true, "s": 82.827, "e": 83.436 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 83.626, "e": 83.899 },
+        { "t": "limitación", "l": "limitación", "p": "NOUN", "w": true, "sp": true, "s": 83.899, "e": 84.651 },
+        { "t": "resulta", "l": "resultar", "p": "VERB", "w": true, "sp": true, "s": 84.651, "e": 85.198 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 85.198, "e": 85.54 },
+        { "t": "exótica", "l": "exótico", "p": "ADJ", "w": true, "s": 85.539, "e": 86.086 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 81.476,
+      "end": 86.159
+    },
+    {
+      "id": "s23",
+      "speaker": "gonzalo",
+      "text": "Se paga por recuperar cierta lentitud.",
+      "tokens": [
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 86.419, "e": 86.601 },
+        { "t": "paga", "l": "pagar", "p": "VERB", "w": true, "sp": true, "s": 86.601, "e": 86.905 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 86.905, "e": 87.148 },
+        { "t": "recuperar", "l": "recuperar", "p": "VERB", "w": true, "sp": true, "s": 87.148, "e": 87.756 },
+        { "t": "cierta", "l": "cierto", "p": "ADJ", "w": true, "sp": true, "s": 87.756, "e": 88.182 },
+        { "t": "lentitud", "l": "lentitud", "p": "NOUN", "w": true, "s": 88.182, "e": 88.729 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 86.409,
+      "end": 88.887
+    },
+    {
+      "id": "s24",
+      "speaker": "beatriz",
+      "text": "¿Y no hay algo preocupante en una cultura que recicla constantemente su propio pasado?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 89.297, "e": 89.421 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 89.421, "e": 89.607 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 89.607, "e": 89.855 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 89.855, "e": 90.165 },
+        {
+          "t": "preocupante",
+          "l": "preocupante",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 90.165,
+          "e": 90.909
+        },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 90.909, "e": 91.095 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 91.095, "e": 91.343 },
+        { "t": "cultura", "l": "cultura", "p": "NOUN", "w": true, "sp": true, "s": 91.343, "e": 91.839 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 91.839, "e": 92.087 },
+        { "t": "recicla", "l": "reciclar", "p": "VERB", "w": true, "sp": true, "s": 92.087, "e": 92.583 },
+        {
+          "t": "constantemente",
+          "l": "constantemente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 92.583,
+          "e": 93.513
+        },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 93.513, "e": 93.699 },
+        { "t": "propio", "l": "propio", "p": "ADJ", "w": true, "sp": true, "s": 93.699, "e": 94.133 },
+        { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "s": 94.133, "e": 94.567 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 89.287,
+      "end": 94.634
+    },
+    {
+      "id": "s25",
+      "speaker": "gonzalo",
+      "text": "Ese es mi temor.",
+      "tokens": [
+        { "t": "Ese", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 95.044, "e": 95.272 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 95.272, "e": 95.443 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 95.442, "e": 95.613 },
+        { "t": "temor", "l": "temor", "p": "NOUN", "w": true, "s": 95.613, "e": 95.954 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 95.034,
+      "end": 96.014
+    },
+    {
+      "id": "s26",
+      "speaker": "gonzalo",
+      "text": "Si las grandes empresas solo financian lo que ya ha funcionado, ¿dónde queda espacio para lo verdaderamente nuevo?",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 96.284, "e": 96.46 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 96.46, "e": 96.694 },
+        { "t": "grandes", "l": "grande", "p": "ADJ", "w": true, "sp": true, "s": 96.694, "e": 97.163 },
+        { "t": "empresas", "l": "empresa", "p": "NOUN", "w": true, "sp": true, "s": 97.163, "e": 97.69 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 97.69, "e": 97.983 },
+        { "t": "financian", "l": "financiar", "p": "VERB", "w": true, "sp": true, "s": 97.983, "e": 98.569 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 98.568, "e": 98.744 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 98.744, "e": 98.978 },
+        { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 98.978, "e": 99.154 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 99.154, "e": 99.33 },
+        { "t": "funcionado", "l": "funcionar", "p": "VERB", "w": true, "s": 99.33, "e": 99.974 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "dónde", "l": "dónde", "p": "ADV", "w": true, "sp": true, "s": 99.974, "e": 100.325 },
+        { "t": "queda", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 100.325, "e": 100.676 },
+        { "t": "espacio", "l": "espacio", "p": "NOUN", "w": true, "sp": true, "s": 100.677, "e": 101.146 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 101.145, "e": 101.438 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 101.438, "e": 101.614 },
+        {
+          "t": "verdaderamente",
+          "l": "verdaderamente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 101.614,
+          "e": 102.493
+        },
+        { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true, "s": 102.493, "e": 102.844 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 96.264,
+      "end": 102.935
+    },
+    {
+      "id": "s27",
+      "speaker": "gonzalo",
+      "text": "Los creadores jóvenes lo tienen cada vez más difícil para estrenar historias originales.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 103.195, "e": 103.445 },
+        { "t": "creadores", "l": "creador", "p": "NOUN", "w": true, "sp": true, "s": 103.445, "e": 104.071 },
+        { "t": "jóvenes", "l": "joven", "p": "NOUN", "w": true, "sp": true, "s": 104.072, "e": 104.573 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 104.573, "e": 104.761 },
+        { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 104.76, "e": 105.198 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 105.199, "e": 105.512 },
+        { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 105.512, "e": 105.762 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 105.762, "e": 106.012 },
+        { "t": "difícil", "l": "difícil", "p": "ADJ", "w": true, "sp": true, "s": 106.013, "e": 106.514 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 106.514, "e": 106.827 },
+        { "t": "estrenar", "l": "estrenar", "p": "VERB", "w": true, "sp": true, "s": 106.827, "e": 107.391 },
+        { "t": "historias", "l": "historia", "p": "NOUN", "w": true, "sp": true, "s": 107.39, "e": 108.016 },
+        { "t": "originales", "l": "original", "p": "ADJ", "w": true, "s": 108.016, "e": 108.705 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 103.185,
+      "end": 108.757
+    },
+    {
+      "id": "s28",
+      "speaker": "ismael",
+      "text": "No soy tan pesimista.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 109.186, "e": 109.375 },
+        { "t": "soy", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 109.375, "e": 109.626 },
+        { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true, "s": 109.626, "e": 109.877 },
+        { "t": "pesimista", "l": "pesimista", "p": "ADJ", "w": true, "s": 109.877, "e": 110.506 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 109.157,
+      "end": 110.579
+    },
+    {
+      "id": "s29",
+      "speaker": "ismael",
+      "text": "Muchas veces, lo nuevo surge precisamente de reinterpretar lo viejo.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 110.859, "e": 111.306 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "s": 111.306, "e": 111.689 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 111.879, "e": 112.044 },
+        { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 112.044, "e": 112.374 },
+        { "t": "surge", "l": "surgir", "p": "VERB", "w": true, "sp": true, "s": 112.374, "e": 112.704 },
+        {
+          "t": "precisamente",
+          "l": "precisamente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 112.704,
+          "e": 113.419
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 113.419, "e": 113.584 },
+        {
+          "t": "reinterpretar",
+          "l": "reinterpretar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 113.584,
+          "e": 114.354
+        },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 114.354, "e": 114.519 },
+        { "t": "viejo", "l": "viejo", "p": "ADJ", "w": true, "s": 114.519, "e": 114.849 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 110.829,
+      "end": 114.91
+    },
+    {
+      "id": "s30",
+      "speaker": "ismael",
+      "text": "El rock nació mezclando estilos anteriores.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 115.18, "e": 115.35 },
+        { "t": "rock", "l": "rock", "p": "NOUN", "w": true, "sp": true, "s": 115.35, "e": 115.633 },
+        { "t": "nació", "l": "nacer", "p": "VERB", "w": true, "sp": true, "s": 115.632, "e": 115.971 },
+        { "t": "mezclando", "l": "mezclar", "p": "VERB", "w": true, "sp": true, "s": 115.971, "e": 116.536 },
+        { "t": "estilos", "l": "estilo", "p": "NOUN", "w": true, "sp": true, "s": 116.536, "e": 116.988 },
+        { "t": "anteriores", "l": "anterior", "p": "ADJ", "w": true, "s": 116.988, "e": 117.61 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 115.16,
+      "end": 117.68
+    },
+    {
+      "id": "s31",
+      "speaker": "ismael",
+      "text": "El problema no es mirar atrás, sino hacerlo sin ninguna intención crítica, simplemente para vender lo mismo con otro envoltorio.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 117.958, "e": 118.119 },
+        { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true, "s": 118.119, "e": 118.603 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 118.603, "e": 118.764 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 118.764, "e": 118.925 },
+        { "t": "mirar", "l": "mirar", "p": "VERB", "w": true, "sp": true, "s": 118.925, "e": 119.247 },
+        { "t": "atrás", "l": "atrás", "p": "ADV", "w": true, "s": 119.248, "e": 119.57 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true, "s": 119.57, "e": 119.839 },
+        { "t": "hacerlo", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 119.839, "e": 120.269 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 120.268, "e": 120.483 },
+        { "t": "ninguna", "l": "ningún", "p": "DET", "w": true, "sp": true, "s": 120.483, "e": 120.913 },
+        { "t": "intención", "l": "intención", "p": "NOUN", "w": true, "sp": true, "s": 120.913, "e": 121.45 },
+        { "t": "crítica", "l": "crítico", "p": "ADJ", "w": true, "s": 121.45, "e": 121.88 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        {
+          "t": "simplemente",
+          "l": "simplemente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 121.88,
+          "e": 122.525
+        },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 122.525, "e": 122.794 },
+        { "t": "vender", "l": "vender", "p": "VERB", "w": true, "sp": true, "s": 122.794, "e": 123.17 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 123.17, "e": 123.331 },
+        { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "sp": true, "s": 123.331, "e": 123.653 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 123.653, "e": 123.868 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 123.868, "e": 124.137 },
+        { "t": "envoltorio", "l": "envoltorio", "p": "NOUN", "w": true, "s": 124.137, "e": 124.728 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 117.93,
+      "end": 124.798
+    },
+    {
+      "id": "s32",
+      "speaker": "beatriz",
+      "text": "Es decir, que hay una nostalgia creativa y una nostalgia perezosa.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 125.208, "e": 125.395 },
+        { "t": "decir", "l": "decir", "p": "VERB", "w": true, "s": 125.395, "e": 125.768 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 125.938, "e": 126.184 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 126.184, "e": 126.43 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 126.429, "e": 126.675 },
+        { "t": "nostalgia", "l": "nostalgia", "p": "NOUN", "w": true, "sp": true, "s": 126.675, "e": 127.289 },
+        { "t": "creativa", "l": "creativo", "p": "ADJ", "w": true, "sp": true, "s": 127.289, "e": 127.842 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 127.842, "e": 127.965 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 127.965, "e": 128.211 },
+        { "t": "nostalgia", "l": "nostalgia", "p": "NOUN", "w": true, "sp": true, "s": 128.211, "e": 128.825 },
+        { "t": "perezosa", "l": "perezoso", "p": "ADJ", "w": true, "s": 128.825, "e": 129.378 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 125.198,
+      "end": 129.441
+    },
+    {
+      "id": "s33",
+      "speaker": "ismael",
+      "text": "Exacto.",
+      "tokens": [
+        { "t": "Exacto", "l": "exacto", "p": "ADJ", "w": true, "s": 129.861, "e": 130.311 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 129.841,
+      "end": 130.392
+    },
+    {
+      "id": "s34",
+      "speaker": "ismael",
+      "text": "La primera dialoga con el pasado; la segunda se limita a copiarlo.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 130.668, "e": 130.838 },
+        { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 130.838, "e": 131.291 },
+        { "t": "dialoga", "l": "dialogar", "p": "VERB", "w": true, "sp": true, "s": 131.291, "e": 131.744 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 131.745, "e": 131.972 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 131.971, "e": 132.141 },
+        { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "s": 132.141, "e": 132.538 },
+        { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 132.828, "e": 132.976 },
+        { "t": "segunda", "l": "segundo", "p": "NUM", "w": false, "sp": true, "s": 132.976, "e": 133.371 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 133.371, "e": 133.519 },
+        { "t": "limita", "l": "limitar", "p": "VERB", "w": true, "sp": true, "s": 133.519, "e": 133.865 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 133.865, "e": 133.964 },
+        { "t": "copiarlo", "l": "copiar", "p": "VERB", "w": true, "s": 133.964, "e": 134.408 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 130.642,
+      "end": 134.509
+    },
+    {
+      "id": "s35",
+      "speaker": "gonzalo",
+      "text": "Estoy de acuerdo con esa distinción, aunque me temo que el mercado premia mucho más a la segunda.",
+      "tokens": [
+        { "t": "Estoy", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 134.919, "e": 135.317 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 135.317, "e": 135.516 },
+        { "t": "acuerdo", "l": "acuerdo", "p": "NOUN", "w": true, "sp": true, "s": 135.517, "e": 136.048 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 136.048, "e": 136.314 },
+        { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 136.313, "e": 136.579 },
+        { "t": "distinción", "l": "distinción", "p": "NOUN", "w": true, "s": 136.579, "e": 137.309 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true, "s": 137.499, "e": 137.882 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 137.882, "e": 138.046 },
+        { "t": "temo", "l": "temer", "p": "VERB", "w": true, "sp": true, "s": 138.046, "e": 138.319 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 138.319, "e": 138.538 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 138.538, "e": 138.702 },
+        { "t": "mercado", "l": "mercado", "p": "NOUN", "w": true, "sp": true, "s": 138.702, "e": 139.139 },
+        { "t": "premia", "l": "premiar", "p": "VERB", "w": true, "sp": true, "s": 139.139, "e": 139.522 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 139.522, "e": 139.85 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 139.85, "e": 140.069 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 140.068, "e": 140.177 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 140.178, "e": 140.342 },
+        { "t": "segunda", "l": "segundo", "p": "NUM", "w": false, "s": 140.342, "e": 140.779 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 134.909,
+      "end": 140.894
+    },
+    {
+      "id": "s36",
+      "speaker": "beatriz",
+      "text": "Pues lo dejamos aquí, con esa advertencia.",
+      "tokens": [
+        { "t": "Pues", "l": "pues", "p": "SCONJ", "w": true, "sp": true, "s": 141.304, "e": 141.606 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 141.606, "e": 141.787 },
+        { "t": "dejamos", "l": "dejar", "p": "VERB", "w": true, "sp": true, "s": 141.788, "e": 142.272 },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "s": 142.272, "e": 142.574 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 142.574, "e": 142.816 },
+        { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 142.816, "e": 143.058 },
+        { "t": "advertencia", "l": "advertencia", "p": "NOUN", "w": true, "s": 143.058, "e": 143.784 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 141.294,
+      "end": 143.855
+    },
+    {
+      "id": "s37",
+      "speaker": "beatriz",
+      "text": "Gracias a los dos por esta conversación tan estimulante.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 144.105, "e": 144.582 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 144.582, "e": 144.701 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 144.701, "e": 144.94 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 144.94, "e": 145.179 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 145.179, "e": 145.418 },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 145.417, "e": 145.715 },
+        {
+          "t": "conversación",
+          "l": "conversación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 145.715,
+          "e": 146.49
+        },
+        { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true, "s": 146.491, "e": 146.73 },
+        { "t": "estimulante", "l": "estimulante", "p": "ADJ", "w": true, "s": 146.729, "e": 147.445 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 144.105,
+      "end": 147.512
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "idealizar",
+      "surface": "idealiza",
+      "pos": "verb",
+      "def_en": "ver algo mejor de lo que es en realidad",
+      "def_es": { "en": "to idealise", "fr": "idéaliser", "zh": "理想化", "ja": "理想化する" },
+      "ref": "s16"
+    },
+    {
+      "lemma": "refugio",
+      "surface": "refugio",
+      "pos": "noun",
+      "def_en": "lugar donde uno se siente protegido",
+      "def_es": { "en": "refuge, shelter", "fr": "refuge", "zh": "避风港", "ja": "避難所" },
+      "ref": "s11"
+    },
+    {
+      "lemma": "envoltorio",
+      "surface": "envoltorio",
+      "pos": "noun",
+      "def_en": "lo que cubre un producto por fuera",
+      "def_es": { "en": "wrapping, packaging", "fr": "emballage", "zh": "包装", "ja": "包装" },
+      "ref": "s31"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿De qué tratan los invitados?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "The commercial success of nostalgia." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De la historia del cine español durante los años ochenta" },
+        { "id": "b", "text": "Del éxito comercial de lo retro y sus causas" },
+        { "id": "c", "text": "De cómo se fabrican los discos de vinilo hoy en día" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué prefieren las productoras lo ya conocido, según Gonzalo?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "It reduces risk." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque los actores cobran mucho menos dinero" },
+        { "id": "b", "text": "Porque los críticos siempre lo valoran mejor" },
+        { "id": "c", "text": "Porque supone menos riesgo" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué función tiene la nostalgia para Ismael?",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "An emotional refuge." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Ofrece consuelo cuando el futuro inquieta" },
+        { "id": "b", "text": "Sirve sobre todo para educar a los niños pequeños" },
+        { "id": "c", "text": "Permite ganar dinero vendiendo objetos antiguos" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Ismael afirma que recordamos la infancia de forma fiel y completa.",
+      "evidence": ["s16"],
+      "rationale_es": { "en": "Memory idealises." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué explica el interés de los adolescentes por el vinilo?",
+      "evidence": ["s23"],
+      "rationale_es": { "en": "They seek slowness." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La calidad técnica superior de los discos" },
+        { "id": "b", "text": "El deseo de una experiencia más lenta" },
+        { "id": "c", "text": "La influencia directa de sus abuelos" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Qué teme Gonzalo?",
+      "evidence": ["s26"],
+      "rationale_es": { "en": "That there will be no room for originality." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que los cines cierren por falta de espectadores" },
+        { "id": "b", "text": "Que el público joven deje de escuchar música" },
+        { "id": "c", "text": "Que no haya hueco para propuestas originales" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué diferencia propone Beatriz al final?",
+      "evidence": ["s32"],
+      "rationale_es": { "en": "Creative versus lazy nostalgia." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Entre reinventar el pasado o repetirlo" },
+        { "id": "b", "text": "Entre la nostalgia de los jóvenes y la de los mayores" },
+        { "id": "c", "text": "Entre la música del pasado y el cine actual" }
+      ],
+      "answer": "a"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "aburrimiento", "acuerdo", "adolescente", "advertencia", "ahí", "algo", "ambientado", "anterior",
+    "apostar", "aquí", "asustar", "atrapar", "atrás", "aunque", "bastar", "bienvenido", "cada", "cansancio",
+    "carrete", "cartelera", "casi", "casual", "casualidad", "cierto", "clásico", "comer", "comercial",
+    "comprar", "comprobar", "con", "conocer", "constantemente", "conversación", "convertir", "copiar",
+    "creador", "creativo", "crisis", "crítico", "cuando", "cultura", "curioso", "cálculo", "cámara", "cómodo",
+    "dar", "de", "decir", "dejar", "después", "dialogar", "difícil", "digital", "disco", "dispararse",
+    "distinción", "dónde", "el", "emocional", "empresa", "empresarial", "en", "encontrar", "enormemente",
+    "enterarse", "entrar", "envoltorio", "escuchar", "ese", "espacio", "espectador", "estar", "este", "estilo",
+    "estimulante", "esto", "estrategia", "estrenar", "exacto", "exótico", "factor", "financiar", "funcionar",
+    "futuro", "grande", "haber", "hacer", "historia", "idealizar", "incertidumbre", "infancia", "infinito",
+    "intención", "interminable", "inventar", "ir", "joven", "jugar", "justo", "lentitud", "levantarse",
+    "limitación", "limitar", "lista", "lluvia", "lugar", "matizar", "medida", "memoria", "mercado", "mezclar",
+    "mi", "mirar", "mismo", "moda", "mucho", "mundo", "muy", "más", "nacer", "necesidad", "ningún", "no",
+    "nostalgia", "nuevo", "obligar", "olvidar", "original", "otro", "pagar", "para", "parecer", "pasado",
+    "pelear", "perezoso", "pero", "pesimista", "por", "precisamente", "premiar", "preocupante", "problema",
+    "productora", "propio", "pues", "público", "que", "quedar", "quizá", "real", "reciclar", "recordar",
+    "recuperar", "reducir", "refugio", "reinterpretar", "rentable", "responder", "resultar", "retro", "riesgo",
+    "rock", "saber", "se", "secuela", "seguro", "ser", "serie", "si", "simplemente", "sin", "sino", "solo",
+    "su", "surgir", "tan", "tarde", "temer", "temor", "tener", "todo", "totalmente", "tranquilizar", "tú",
+    "un", "vender", "verano", "verdaderamente", "versión", "vez", "viejo", "vinilo", "vivir", "volver", "y",
+    "ya", "yo", "álbum", "él", "época"
+  ],
+  "difficulty": 1630,
+  "qa": {
+    "coverage_by_level": { "A1": 0.5464, "A2": 0.6831, "B1": 0.8005, "B2": 0.8634, "C1": 0.9044, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 10.1,
+    "flesch_reading_ease": 69.8,
+    "checked_at": "2026-10-19T07:53:05.544Z"
+  },
+  "audio": {
+    "src": "audio/c2/es-c2-lis-006/v1.m4a",
+    "duration_s": 147.512,
+    "wpm": 152,
+    "provider": "piper",
+    "voices": { "beatriz": "sharvard-f", "gonzalo": "sharvard-m", "ismael": "davefx-m" },
+    "loudness_lufs": -16,
+    "peaks": [
+      1, 0.28, 1, 0.63, 0.68, 0.91, 0.69, 0.67, 0.65, 0.62, 0.64, 0.63, 0.47, 0.38, 0.96, 0.68, 1, 0.78, 0.53,
+      1, 0.96, 0.82, 0.66, 0.62, 0.36, 1, 0.96, 0.56, 0.65, 0.77, 0.7, 0.64, 0.74, 0.15, 1, 0.75, 1, 0.8, 0.69,
+      0.77, 0.52, 0.59, 0.53, 0.66, 0.67, 0.51, 0.58, 0.87, 0.9, 1, 0.85, 0.6, 0.96, 0.99, 0.92, 1, 0.71, 1,
+      0.95, 0.91, 0.96, 0.77, 0.98, 0.91, 1, 0.93, 0.9, 0.88, 0.84, 0.97, 0.95, 1, 0.74, 0.81, 0.5, 0.97, 0.8,
+      0.88, 0.94, 1, 0.63, 0.89, 1, 0.75, 0.96, 0.69, 0.62, 1, 0.7, 0.99, 1, 0.97, 0.88, 0.76, 1, 0.85, 0.96,
+      0.99, 0.78, 0.9, 0.97, 0.98, 0.71, 0.98, 0.87, 0.99, 0.95, 1, 0.4, 1, 0.82, 0.74, 0.7, 0.81, 0.84, 0.98,
+      0.99, 0.72, 1, 0.93, 0.97, 0.52, 0.91, 0.55, 0.63, 0.68, 0.59, 0.88, 0.81, 0.59, 0.65, 1, 0.85, 0.89,
+      0.59, 0.44, 0.95, 0.82, 1, 0.58, 0.51, 1, 0.88, 0.62, 0.23, 0.67, 1, 0.82, 0.68, 0.79, 0.82, 0.81, 0.99,
+      0.69, 1, 0.96, 0.4, 0.93, 0.69, 0.69, 0.57, 0.84, 0.58, 0.83, 1, 0.51, 0.73, 0.43, 0.74, 0.81, 0.82, 1,
+      0.59, 0.58, 0.9, 0.65, 0.62, 0.99, 1, 0.4, 1, 0.96, 0.94, 0.94, 0.76, 0.98, 0.76, 0.81, 0.66, 1, 0.79,
+      0.84, 0.95, 1, 1, 0.85, 0.63, 0.89, 0.55, 0.93, 1, 0.56, 0.6, 0.55, 0.8, 0.83, 0.89, 0.8, 1, 0.72, 0.31,
+      1, 0.99, 1, 0.98, 0.88, 0.97, 0.99, 0.8, 0.71, 1, 0.51, 0.61, 0.68, 0.73, 0.57, 0.6, 0.61, 0.46, 0.93, 1,
+      0.95, 1, 0.86, 1, 0.9, 0.87, 0.79, 0.99, 0.56
+    ]
+  }
+}

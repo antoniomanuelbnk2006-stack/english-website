@@ -1,0 +1,317 @@
+{
+  "id": "es-a1-lis-013",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u05",
+  "series": "es-a1-u05-mi-casa",
+  "skill": "listening",
+  "genre": "monologue",
+  "title": "Mi casa nueva",
+  "summary_es": {
+    "en": "A woman describes her new flat: rooms and things she likes.",
+    "fr": "Une femme décrit son nouvel appartement : les pièces et ce qu’elle aime.",
+    "zh": "一位女士介绍她的新家：房间和她喜欢的东西。",
+    "ja": "女性が新居の部屋と気に入っているものを説明します。"
+  },
+  "topic": "city-housing",
+  "tags": ["casa", "habitaciones", "hay"],
+  "can_do": ["L-A1-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["casa", "cocina", "salón", "ventana"],
+  "est_minutes": 4,
+  "prediction_prompt": "Una persona habla de su casa. ¿Qué cuenta?",
+  "pre_teach": ["salón", "cocina"],
+  "speakers": [
+    { "id": "sara", "name": "Sara", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 115,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "sara",
+      "text": "Mi casa nueva es pequeña.",
+      "tokens": [
+        { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 0.01, "e": 0.26 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true, "s": 0.26, "e": 0.676 },
+        { "t": "nueva", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 0.676, "e": 1.175 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 1.175, "e": 1.425 },
+        { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true, "s": 1.424, "e": 2.09 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.147
+    },
+    {
+      "id": "s2",
+      "speaker": "sara",
+      "text": "Tiene tres habitaciones.",
+      "tokens": [
+        { "t": "Tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 2.657, "e": 3.165 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 3.165, "e": 3.588 },
+        { "t": "habitaciones", "l": "habitación", "p": "NOUN", "w": true, "s": 3.587, "e": 4.687 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 2.647,
+      "end": 4.744
+    },
+    {
+      "id": "s3",
+      "speaker": "sara",
+      "text": "Hay un salón con una ventana grande.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 5.254, "e": 5.522 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 5.522, "e": 5.723 },
+        { "t": "salón", "l": "salón", "p": "NOUN", "w": true, "sp": true, "s": 5.723, "e": 6.125 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 6.124, "e": 6.392 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 6.392, "e": 6.66 },
+        { "t": "ventana", "l": "ventana", "p": "NOUN", "w": true, "sp": true, "s": 6.66, "e": 7.196 },
+        { "t": "grande", "l": "grande", "p": "ADJ", "w": true, "s": 7.195, "e": 7.664 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.244,
+      "end": 7.787
+    },
+    {
+      "id": "s4",
+      "speaker": "sara",
+      "text": "También hay una cocina bonita.",
+      "tokens": [
+        { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 8.297, "e": 8.889 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 8.889, "e": 9.185 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 9.185, "e": 9.481 },
+        { "t": "cocina", "l": "cocina", "p": "NOUN", "w": true, "sp": true, "s": 9.481, "e": 9.999 },
+        { "t": "bonita", "l": "bonito", "p": "ADJ", "w": true, "s": 9.999, "e": 10.517 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.287,
+      "end": 10.592
+    },
+    {
+      "id": "s5",
+      "speaker": "sara",
+      "text": "Mi habitación está al lado de la cocina.",
+      "tokens": [
+        { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 11.102, "e": 11.323 },
+        { "t": "habitación", "l": "habitación", "p": "NOUN", "w": true, "sp": true, "s": 11.323, "e": 12.132 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 12.131, "e": 12.499 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 12.499, "e": 12.72 },
+        { "t": "lado", "l": "lado", "p": "NOUN", "w": true, "sp": true, "s": 12.719, "e": 13.087 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 13.087, "e": 13.308 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 13.307, "e": 13.528 },
+        { "t": "cocina", "l": "cocina", "p": "NOUN", "w": true, "s": 13.528, "e": 14.043 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.092,
+      "end": 14.157
+    },
+    {
+      "id": "s6",
+      "speaker": "sara",
+      "text": "Desde la ventana veo un parque.",
+      "tokens": [
+        { "t": "Desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 14.667, "e": 15.072 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 15.072, "e": 15.274 },
+        { "t": "ventana", "l": "ventana", "p": "NOUN", "w": true, "sp": true, "s": 15.274, "e": 15.813 },
+        { "t": "veo", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 15.813, "e": 16.083 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 16.083, "e": 16.285 },
+        { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "s": 16.285, "e": 16.757 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 14.657,
+      "end": 16.822
+    },
+    {
+      "id": "s7",
+      "speaker": "sara",
+      "text": "Cerca hay una panadería y un supermercado.",
+      "tokens": [
+        { "t": "Cerca", "l": "cerca", "p": "ADV", "w": true, "sp": true, "s": 17.432, "e": 17.903 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 17.903, "e": 18.217 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 18.218, "e": 18.532 },
+        { "t": "panadería", "l": "panadería", "p": "NOUN", "w": true, "sp": true, "s": 18.532, "e": 19.318 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 19.318, "e": 19.475 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 19.475, "e": 19.711 },
+        { "t": "supermercado", "l": "supermercado", "p": "NOUN", "w": true, "s": 19.711, "e": 20.732 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.322,
+      "end": 20.806
+    },
+    {
+      "id": "s8",
+      "speaker": "sara",
+      "text": "Me gusta mucho mi casa.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 21.316, "e": 21.533 },
+        { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "sp": true, "s": 21.533, "e": 21.966 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 21.966, "e": 22.399 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 22.399, "e": 22.616 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 22.615, "e": 22.976 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.306,
+      "end": 23.019
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "habitación",
+      "surface": "habitaciones",
+      "pos": "noun",
+      "def_en": "cada espacio de una casa",
+      "def_es": { "en": "room, bedroom", "fr": "pièce, chambre", "zh": "房间", "ja": "部屋" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "salón",
+      "surface": "salón",
+      "pos": "noun",
+      "def_en": "habitación grande para estar con la familia",
+      "def_es": { "en": "living room", "fr": "salon", "zh": "客厅", "ja": "リビング" },
+      "ref": "s3"
+    },
+    {
+      "lemma": "al lado de",
+      "surface": "al lado de",
+      "pos": "phrase",
+      "def_en": "muy cerca de algo",
+      "def_es": { "en": "next to", "fr": "à côté de", "zh": "在……旁边", "ja": "〜のとなり" },
+      "ref": "s5"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿De qué habla Sara?",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "About her new home." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De su familia" },
+        { "id": "b", "text": "De su casa" },
+        { "id": "c", "text": "De su trabajo" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuántas habitaciones tiene?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "Three." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cuatro" },
+        { "id": "b", "text": "Dos" },
+        { "id": "c", "text": "Tres" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué hay en el salón?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "A big window." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una ventana grande" },
+        { "id": "b", "text": "Una mesa pequeña y bonita" },
+        { "id": "c", "text": "Un perro con un gato" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "La casa de Sara es grande.",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "It is small." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "*Veo un parque*." },
+      "type": "gap_fill",
+      "text": "Desde la ventana, Sara ve un {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["parque"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué hay cerca de su casa?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "A bakery." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un hospital grande" },
+        { "id": "b", "text": "Una panadería" },
+        { "id": "c", "text": "Una playa bonita" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "bonito", "casa", "cerca", "cocina", "con", "de", "desde", "el", "estar", "grande", "gustar", "haber",
+    "habitación", "lado", "mi", "mucho", "nuevo", "panadería", "parque", "pequeño", "salón", "ser",
+    "supermercado", "también", "tener", "un", "ventana", "ver", "y", "yo"
+  ],
+  "difficulty": 700,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 5.8,
+    "flesch_reading_ease": 82.3,
+    "checked_at": "2026-10-19T07:26:48.323Z"
+  },
+  "audio": {
+    "src": "audio/a1/es-a1-lis-013/v1.m4a",
+    "duration_s": 23.019,
+    "wpm": 120,
+    "provider": "piper",
+    "voices": { "sara": "sharvard-f" },
+    "loudness_lufs": -16,
+    "peaks": [
+      0.39, 0.48, 0.5, 1, 0.6, 0.41, 0.39, 0.53, 0.58, 0.62, 0.5, 0.45, 0.48, 0.43, 0.38, 0.21, 0.48, 0.44,
+      0.44, 0.28, 0.25, 0.1, 0.01, 0, 0, 0, 0, 0.3, 1, 0.9, 0.85, 0.07, 0.31, 0.62, 0.6, 0.46, 0.74, 0.56,
+      0.38, 0.72, 0.31, 0.13, 0.71, 0.7, 0.35, 0.25, 0.13, 0.16, 0.14, 0.01, 0, 0, 0, 0, 0.05, 0.82, 0.75,
+      0.86, 0.52, 0.58, 0.72, 0.98, 0.72, 0.69, 0.88, 0.57, 0.72, 0.9, 0.71, 0.53, 0.74, 1, 0.7, 0.75, 0.61,
+      0.76, 0.41, 0.23, 0.16, 0.12, 0.03, 0, 0, 0, 0, 0, 0.61, 0.66, 0.35, 0.7, 1, 0.8, 0.71, 0.69, 0.6, 0.77,
+      0.69, 0.71, 0.84, 0.1, 0.57, 0.74, 0.66, 0.63, 0.51, 0.42, 0.43, 0.28, 0.25, 0.13, 0.01, 0, 0, 0, 0,
+      0.07, 0.51, 0.83, 0.81, 0.51, 0.43, 0.86, 0.1, 0.46, 0.79, 0.56, 0.38, 0.44, 0.43, 0.01, 0.7, 0.86, 0.57,
+      0.88, 1, 0.56, 0.65, 0.79, 0.93, 0.34, 0.63, 0.07, 0.46, 0.38, 0.29, 0.23, 0.07, 0.01, 0, 0, 0, 0, 0.1,
+      0.42, 0.66, 0.3, 1, 0.84, 0.62, 0.48, 0.43, 0.78, 0.73, 0.9, 0.68, 0.7, 0.77, 0.49, 0.31, 0.72, 0.52,
+      0.03, 0.57, 0.25, 0.12, 0.01, 0, 0, 0, 0, 0.02, 0.09, 1, 0.76, 0.62, 0.79, 0.75, 0.72, 0.88, 0.83, 0.96,
+      0.93, 0.9, 0.72, 0.93, 0.69, 0.67, 0.79, 0.76, 0.9, 0.95, 0.44, 0.25, 0.64, 0.51, 0.47, 0.54, 0.45, 0.88,
+      0.44, 0.53, 0.37, 0.42, 0.67, 0.3, 0.21, 0.06, 0, 0, 0, 0, 0, 0.61, 1, 0.77, 0.75, 0.54, 0.65, 0.71,
+      0.83, 0.45, 0.67, 0.75, 0.58, 0.4, 0.59, 0.64, 0.41, 0.19, 0.08
+    ]
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "id": "es-a2-lis-014",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u01",
+  "series": "es-a2-u01-cumpleanos",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Una fiesta de cumpleaños",
+  "summary_es": {
+    "en": "Two friends organise a surprise birthday party and share the tasks.",
+    "fr": "Deux amis organisent une fête d’anniversaire surprise et se répartissent les tâches.",
+    "zh": "两个朋友筹备惊喜生日派对并分工。",
+    "ja": "二人がサプライズ誕生日パーティーを計画し、役割を分けます。"
+  },
+  "topic": "relationships",
+  "tags": ["cumpleaños", "fiesta", "organizar"],
+  "can_do": ["L-A2-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["cumpleaños", "pastel", "globo", "regalo"],
+  "est_minutes": 6,
+  "prediction_prompt": "Dos amigos preparan una fiesta sorpresa. ¿Qué tienen que hacer?",
+  "pre_teach": ["sorpresa", "invitar"],
+  "speakers": [
+    { "id": "marta", "name": "Marta", "accent": "es-ES", "gender": "female" },
+    { "id": "javier", "name": "Javier", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 110,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "marta",
+      "text": "Javier, el cumpleaños de Lucía es el sábado.",
+      "tokens": [
+        { "t": "Javier", "l": "javier", "p": "PROPN", "w": false, "s": 0.03, "e": 0.7 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 0.9, "e": 1.127 },
+        { "t": "cumpleaños", "l": "cumpleaños", "p": "NOUN", "w": true, "sp": true, "s": 1.127, "e": 1.958 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 1.958, "e": 2.185 },
+        { "t": "Lucía", "l": "lucía", "p": "PROPN", "w": false, "sp": true, "s": 2.184, "e": 2.637 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 2.638, "e": 2.865 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 2.864, "e": 3.091 },
+        { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "s": 3.091, "e": 3.62 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 3.687
+    },
+    {
+      "id": "s2",
+      "speaker": "javier",
+      "text": "Ya lo sé. Vamos a hacer una fiesta sorpresa.",
+      "tokens": [
+        { "t": "Ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 4.407, "e": 4.627 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 4.627, "e": 4.847 },
+        { "t": "sé", "l": "ser", "p": "AUX", "w": true, "s": 4.847, "e": 5.067 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Vamos", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 5.367, "e": 5.768 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 5.768, "e": 5.902 },
+        { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 5.901, "e": 6.302 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 6.302, "e": 6.569 },
+        { "t": "fiesta", "l": "fiesta", "p": "NOUN", "w": true, "sp": true, "s": 6.569, "e": 7.036 },
+        { "t": "sorpresa", "l": "sorpresa", "p": "NOUN", "w": true, "s": 7.036, "e": 7.637 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.387,
+      "end": 7.77
+    },
+    {
+      "id": "s3",
+      "speaker": "marta",
+      "text": "¡Buena idea! Yo voy a comprar el pastel.",
+      "tokens": [
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Buena", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 8.48, "e": 8.998 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "s": 8.998, "e": 9.43 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 9.65, "e": 9.876 },
+        { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 9.876, "e": 10.177 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 10.176, "e": 10.326 },
+        { "t": "comprar", "l": "comprar", "p": "VERB", "w": true, "sp": true, "s": 10.327, "e": 10.928 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 10.928, "e": 11.154 },
+        { "t": "pastel", "l": "pastel", "p": "NOUN", "w": true, "s": 11.154, "e": 11.68 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.47,
+      "end": 11.773
+    },
+    {
+      "id": "s4",
+      "speaker": "javier",
+      "text": "Y yo los globos y las velas.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 12.483, "e": 12.625 },
+        { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 12.625, "e": 12.838 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 12.838, "e": 13.122 },
+        { "t": "globos", "l": "globo", "p": "NOUN", "w": true, "sp": true, "s": 13.123, "e": 13.621 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 13.62, "e": 13.762 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 13.762, "e": 14.046 },
+        { "t": "velas", "l": "vela", "p": "NOUN", "w": true, "s": 14.047, "e": 14.473 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.473,
+      "end": 14.517
+    },
+    {
+      "id": "s5",
+      "speaker": "marta",
+      "text": "¿Quién va a invitar a los amigos?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Quién", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 15.227, "e": 15.64 },
+        { "t": "va", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 15.64, "e": 15.846 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 15.846, "e": 15.984 },
+        { "t": "invitar", "l": "invitar", "p": "VERB", "w": true, "sp": true, "s": 15.983, "e": 16.533 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 16.533, "e": 16.671 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 16.671, "e": 16.946 },
+        { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true, "s": 16.946, "e": 17.427 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.217,
+      "end": 17.475
+    },
+    {
+      "id": "s6",
+      "speaker": "javier",
+      "text": "Yo les escribo hoy un mensaje.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 18.185, "e": 18.419 },
+        { "t": "les", "l": "ellos", "p": "PRON", "w": true, "sp": true, "s": 18.419, "e": 18.731 },
+        { "t": "escribo", "l": "escribir", "p": "VERB", "w": true, "sp": true, "s": 18.731, "e": 19.355 },
+        { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 19.355, "e": 19.667 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 19.667, "e": 19.901 },
+        { "t": "mensaje", "l": "mensaje", "p": "NOUN", "w": true, "s": 19.901, "e": 20.525 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.175,
+      "end": 20.63
+    },
+    {
+      "id": "s7",
+      "speaker": "marta",
+      "text": "Tenemos que elegir un regalo.",
+      "tokens": [
+        { "t": "Tenemos", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 21.33, "e": 21.862 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 21.862, "e": 22.128 },
+        { "t": "elegir", "l": "elegir", "p": "VERB", "w": true, "sp": true, "s": 22.129, "e": 22.595 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 22.594, "e": 22.794 },
+        { "t": "regalo", "l": "regalo", "p": "NOUN", "w": true, "s": 22.794, "e": 23.26 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.33,
+      "end": 23.327
+    },
+    {
+      "id": "s8",
+      "speaker": "javier",
+      "text": "Podemos comprarle un libro de cocina. Le encanta cocinar.",
+      "tokens": [
+        { "t": "Podemos", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 24.037, "e": 24.56 },
+        { "t": "comprarle", "l": "comprar", "p": "VERB", "w": true, "sp": true, "s": 24.56, "e": 25.214 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 25.214, "e": 25.41 },
+        { "t": "libro", "l": "libro", "p": "NOUN", "w": true, "sp": true, "s": 25.411, "e": 25.803 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 25.803, "e": 25.999 },
+        { "t": "cocina", "l": "cocina", "p": "NOUN", "w": true, "s": 25.999, "e": 26.457 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 26.817, "e": 27.062 },
+        { "t": "encanta", "l": "encantar", "p": "VERB", "w": true, "sp": true, "s": 27.062, "e": 27.715 },
+        { "t": "cocinar", "l": "cocinar", "p": "VERB", "w": true, "s": 27.714, "e": 28.367 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.027,
+      "end": 28.499
+    },
+    {
+      "id": "s9",
+      "speaker": "marta",
+      "text": "Perfecto. ¿Dónde hacemos la fiesta?",
+      "tokens": [
+        { "t": "Perfecto", "l": "perfecto", "p": "ADJ", "w": true, "s": 29.199, "e": 30.049 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Dónde", "l": "dónde", "p": "ADV", "w": true, "sp": true, "s": 30.279, "e": 30.704 },
+        { "t": "hacemos", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 30.704, "e": 31.271 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 31.271, "e": 31.484 },
+        { "t": "fiesta", "l": "fiesta", "p": "NOUN", "w": true, "s": 31.483, "e": 31.979 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 29.199,
+      "end": 32.063
+    },
+    {
+      "id": "s10",
+      "speaker": "javier",
+      "text": "En mi casa. Es grande y tiene jardín.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 32.773, "e": 32.969 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 32.969, "e": 33.165 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 33.166, "e": 33.493 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 33.783, "e": 34.051 },
+        { "t": "grande", "l": "grande", "p": "ADJ", "w": true, "sp": true, "s": 34.051, "e": 34.675 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 34.675, "e": 34.853 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 34.853, "e": 35.388 },
+        { "t": "jardín", "l": "jardín", "p": "NOUN", "w": true, "s": 35.389, "e": 36.013 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.763,
+      "end": 36.154
+    },
+    {
+      "id": "s11",
+      "speaker": "marta",
+      "text": "Genial. A las ocho, entonces.",
+      "tokens": [
+        { "t": "Genial", "l": "genial", "p": "ADJ", "w": true, "s": 36.864, "e": 37.544 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 37.824, "e": 37.979 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 37.979, "e": 38.288 },
+        { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "s": 38.288, "e": 38.674 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "entonces", "l": "entonces", "p": "ADV", "w": true, "s": 38.814, "e": 39.784 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 36.854,
+      "end": 39.847
+    },
+    {
+      "id": "s12",
+      "speaker": "javier",
+      "text": "De acuerdo. Y que no se entere Lucía.",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 40.557, "e": 40.764 },
+        { "t": "acuerdo", "l": "acuerdo", "p": "NOUN", "w": true, "s": 40.764, "e": 41.317 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 41.597, "e": 41.731 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 41.731, "e": 42 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 42, "e": 42.202 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 42.202, "e": 42.404 },
+        { "t": "entere", "l": "enterarse", "p": "VERB", "w": true, "sp": true, "s": 42.403, "e": 42.873 },
+        { "t": "Lucía", "l": "lucía", "p": "PROPN", "w": false, "s": 42.874, "e": 43.277 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 40.547,
+      "end": 43.378
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "sorpresa",
+      "surface": "sorpresa",
+      "pos": "noun",
+      "def_en": "algo que nadie espera",
+      "def_es": { "en": "surprise", "fr": "surprise", "zh": "惊喜", "ja": "サプライズ" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "enterarse",
+      "surface": "entere",
+      "pos": "verb",
+      "def_en": "saber una noticia",
+      "def_es": { "en": "to find out", "fr": "apprendre, être au courant", "zh": "得知", "ja": "知る" },
+      "ref": "s12"
+    },
+    {
+      "lemma": "jardín",
+      "surface": "jardín",
+      "pos": "noun",
+      "def_en": "terreno con plantas junto a una casa",
+      "def_es": { "en": "garden", "fr": "jardin", "zh": "花园", "ja": "庭" },
+      "ref": "s10"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué preparan Marta y Javier?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "A surprise party." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un viaje de fin de curso" },
+        { "id": "b", "text": "Una fiesta sorpresa" },
+        { "id": "c", "text": "Una cena de trabajo" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué va a comprar Marta?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "The cake." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Los globos" },
+        { "id": "b", "text": "El regalo" },
+        { "id": "c", "text": "El pastel" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué regalo eligen?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "A cookbook." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un libro de cocina" },
+        { "id": "b", "text": "Una camiseta azul" },
+        { "id": "c", "text": "Unos zapatos nuevos" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "La fiesta es en casa de Marta.",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "It is at Javier’s house." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con un número.",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "*A las ocho*." },
+      "type": "gap_fill",
+      "text": "La fiesta empieza a las {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["ocho", "8"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "post",
+      "prompt": "¿Qué no quieren que pase?",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "That Lucía finds out." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que los amigos lleguen tarde" },
+        { "id": "b", "text": "Que Lucía lo sepa antes" },
+        { "id": "c", "text": "Que no haya pastel" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "acuerdo", "amigo", "bueno", "casa", "cocina", "cocinar", "comprar", "cumpleaños", "de", "dónde",
+    "el", "elegir", "ellos", "en", "encantar", "enterarse", "entonces", "escribir", "fiesta", "genial",
+    "globo", "grande", "hacer", "hoy", "idea", "invitar", "ir", "jardín", "libro", "mensaje", "mi", "no",
+    "pastel", "perfecto", "poder", "que", "qué", "regalo", "se", "ser", "sorpresa", "sábado", "tener", "un",
+    "vela", "y", "ya", "yo", "él"
+  ],
+  "difficulty": 875,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7778, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 4.5,
+    "flesch_reading_ease": 95.7,
+    "checked_at": "2026-10-18T23:12:58.318Z"
+  },
+  "audio": {
+    "src": "audio/a2/es-a2-lis-014/v1.m4a",
+    "duration_s": 43.378,
+    "wpm": 118,
+    "provider": "piper",
+    "voices": { "marta": "sharvard-f", "javier": "sharvard-m" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      0.77, 0.91, 0.93, 0.62, 0.04, 0.61, 0.55, 0.8, 0.97, 0.67, 0.8, 0.72, 1, 0.56, 0.53, 0.66, 0.59, 0.76,
+      0.69, 0.25, 0.03, 0, 0, 0, 0.12, 1, 0.71, 0.31, 0.03, 0.07, 1, 0.56, 0.45, 0.5, 0.34, 0.43, 0.43, 0.5,
+      0.4, 0.28, 0.23, 0.17, 0.1, 0, 0, 0, 0.16, 1, 0.93, 0.57, 0.88, 0.81, 0.09, 0.68, 1, 1, 0.8, 0.5, 0.43,
+      0.76, 0.62, 0.61, 0.42, 0.46, 0.18, 0.01, 0, 0, 0, 0.36, 1, 0.88, 0.38, 0.7, 0.6, 0.31, 0.55, 0.72, 0.69,
+      0.11, 0.05, 0, 0, 0, 0.72, 1, 0.56, 0.52, 0.53, 0.71, 0.63, 0.45, 0.27, 0.38, 0.16, 0.09, 0.08, 0, 0, 0,
+      0.12, 1, 0.95, 0.27, 0.22, 0.48, 0.6, 0.61, 0.58, 0.64, 0.4, 0.34, 0.46, 0.08, 0, 0, 0, 0, 0.85, 0.88,
+      0.96, 1, 1, 0.59, 0.93, 0.73, 0.78, 0.72, 0.3, 0, 0, 0, 0.02, 0.72, 0.51, 0.45, 0.5, 0.27, 1, 0.5, 0.55,
+      0.67, 0.54, 0.3, 0.29, 0.28, 0.15, 0.01, 0.3, 0.53, 0.56, 1, 0.93, 0.63, 0.44, 0.26, 0.48, 0.03, 0, 0, 0,
+      0.98, 0.82, 1, 0.23, 0.43, 0.06, 0.2, 0.76, 0.94, 0.61, 0.81, 1, 0.66, 0.56, 0.44, 0.29, 0.02, 0, 0, 0,
+      0.34, 0.47, 1, 0.22, 0.14, 0.36, 0.86, 0.85, 1, 0.66, 0.28, 0.52, 0.32, 0.77, 0.61, 0.76, 0.44, 0.15,
+      0.06, 0, 0, 0, 0.11, 1, 0.8, 0.98, 0.52, 0.01, 0.75, 0.96, 0.67, 1, 0.99, 0.18, 0.48, 0.92, 0.6, 0.36,
+      0.2, 0.09, 0, 0, 0, 0.16, 0.95, 1, 0.74, 0.19, 0, 0.89, 1, 0.99, 0.74, 0.57, 0.96, 0.74, 0.53, 0.67,
+      0.26
+    ]
+  }
+}

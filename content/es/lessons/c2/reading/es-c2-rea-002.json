@@ -42,7 +42,7 @@
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true },
             { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
-            { "t": "máxima", "l": "máxima", "p": "NOUN", "w": true },
+            { "t": "máxima", "l": "máximo", "p": "ADJ", "w": true },
             { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
             { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true },
             { "t": "ingeniosa", "l": "ingenioso", "p": "ADJ", "w": true, "sp": true },
@@ -750,7 +750,7 @@
             { "t": "cambiado", "l": "cambiar", "p": "VERB", "w": true, "sp": true },
             { "t": "radicalmente", "l": "radicalmente", "p": "ADV", "w": true, "sp": true },
             { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true },
-            { "t": "práctica", "l": "práctica", "p": "NOUN", "w": true, "sp": true },
+            { "t": "práctica", "l": "práctico", "p": "ADJ", "w": true, "sp": true },
             { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true },
             { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true },
             { "t": "oficio", "l": "oficio", "p": "NOUN", "w": true },
@@ -1579,12 +1579,12 @@
     "lector", "lectura", "leer", "lejos", "lengua", "ligeramente", "lista", "literario", "llegar", "local",
     "longitud", "mal", "manera", "mano", "mantener", "mayor", "medicina", "medio", "mejor", "mención", "menor",
     "menos", "mental", "meramente", "merecer", "mes", "mientras", "milagroso", "mirar", "mismo", "modo",
-    "mucho", "multiplicar", "mundo", "más", "máxima", "música", "necesario", "necesitar", "negociación", "no",
+    "mucho", "multiplicar", "mundo", "más", "máximo", "música", "necesario", "necesitar", "negociación", "no",
     "nosotros", "nuestro", "nuevo", "o", "objetar", "obligar", "obra", "ocurrir", "oficio", "ofrecer",
     "olvidar", "orador", "original", "orilla", "otro", "palabra", "para", "parecer", "parte", "pasar",
     "pensar", "pero", "persona", "plantear", "poco", "poder", "poema", "por", "porque", "posible", "prejuicio",
     "presencia", "presión", "prisa", "probable", "problema", "producir", "profesional", "profesión",
-    "programa", "prolongar", "pronto", "propio", "práctica", "préstamo", "puente", "punto", "página", "que",
+    "programa", "prolongar", "pronto", "propio", "práctico", "préstamo", "puente", "punto", "página", "que",
     "quien", "quizá", "qué", "radicalmente", "rato", "razón", "realidad", "recibir", "reconocer", "recortar",
     "recuperar", "red", "reflejar", "relacionar", "reloj", "remuneración", "renunciar", "reproducir",
     "resolver", "resultado", "resultar", "reír", "riesgo", "ritmo", "romper", "saber", "sabio", "salir",
@@ -1599,10 +1599,10 @@
   ],
   "difficulty": 1656,
   "qa": {
-    "coverage_by_level": { "A1": 0.5603, "A2": 0.646, "B1": 0.7698, "B2": 0.8219, "C1": 0.861, "C2": 1 },
+    "coverage_by_level": { "A1": 0.5635, "A2": 0.6623, "B1": 0.798, "B2": 0.8436, "C1": 0.8784, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 21.6,
     "flesch_reading_ease": 60.4,
-    "checked_at": "2026-10-18T22:29:03.857Z"
+    "checked_at": "2026-10-19T08:13:23.410Z"
   }
 }

@@ -216,7 +216,7 @@
         { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 42.332, "e": 42.494 },
         { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 42.494, "e": 42.737 },
         { "t": "pido", "l": "pedir", "p": "VERB", "w": true, "sp": true, "s": 42.737, "e": 43.142 },
-        { "t": "disculpas", "l": "disculpa", "p": "NOUN", "w": true, "s": 43.142, "e": 43.952 },
+        { "t": "disculpas", "l": "disculpar", "p": "VERB", "w": true, "s": 43.142, "e": 43.952 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
         { "t": "Ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 44.182, "e": 44.366 },
         { "t": "habido", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 44.366, "e": 44.795 },
@@ -785,7 +785,7 @@
     "a", "acordar", "adelante", "ahora", "algo", "algún", "almacén", "antes", "atención", "avisar", "ayudar",
     "bueno", "casa", "claro", "cliente", "completo", "comprar", "con", "condición", "confirmar", "consultar",
     "correo", "cuanto", "dar", "de", "decidir", "dejar", "descuento", "devolver", "dinero", "dirección",
-    "disculpa", "durante", "día", "el", "empresa", "en", "encontrar", "entonces", "entrega", "entregar",
+    "disculpar", "durante", "día", "el", "empresa", "en", "encontrar", "entonces", "entrega", "entregar",
     "enviar", "error", "esperar", "estar", "este", "esto", "estropearse", "favor", "figurar", "guardar",
     "gustar", "haber", "hablar", "hacer", "hora", "instalación", "intentar", "internet", "ir", "justo",
     "lamentar", "lavadora", "llamarse", "llegar", "mandar", "mañana", "mensaje", "mi", "mientras", "mismo",
@@ -798,11 +798,11 @@
   ],
   "difficulty": 1234,
   "qa": {
-    "coverage_by_level": { "A1": 0.6986, "A2": 0.7979, "B1": 0.8664, "B2": 1, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.7089, "A2": 0.8322, "B1": 0.9041, "B2": 1, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 7.5,
     "flesch_reading_ease": 81.5,
-    "checked_at": "2026-10-18T22:29:03.857Z"
+    "checked_at": "2026-10-19T08:13:23.410Z"
   },
   "audio": {
     "src": "audio/b2/es-b2-lis-001/v1.m4a",

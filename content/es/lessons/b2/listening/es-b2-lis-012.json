@@ -1,0 +1,979 @@
+{
+  "id": "es-b2-lis-012",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u02",
+  "series": "es-b2-u02-segunda-mano",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Comprar de segunda mano",
+  "summary_es": {
+    "en": "Two friends discuss the pros and cons of buying second-hand clothes, furniture and phones.",
+    "fr": "Deux amis parlent des avantages et des inconvénients d’acheter des vêtements, des meubles et des téléphones d’occasion.",
+    "zh": "两位朋友讨论买二手衣服、家具和手机的利弊。",
+    "ja": "2人の友人が、古着や中古の家具・スマホを買うことの長所と短所を話します。"
+  },
+  "topic": "money",
+  "tags": ["consumo", "ahorro", "medio ambiente"],
+  "can_do": ["L-B2-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["segunda mano", "garantía", "estafa", "consumo"],
+  "est_minutes": 10,
+  "prediction_prompt": "¿Has comprado alguna vez algo de segunda mano? ¿Qué tal fue?",
+  "pre_teach": ["garantía", "estafa"],
+  "speakers": [
+    { "id": "sofia", "name": "Sofía", "accent": "es-ES", "gender": "female" },
+    { "id": "diego", "name": "Diego", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 135,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "diego",
+      "text": "¡Qué chaqueta tan bonita!",
+      "tokens": [
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 0.01, "e": 0.282 },
+        { "t": "chaqueta", "l": "chaqueta", "p": "NOUN", "w": true, "sp": true, "s": 0.282, "e": 0.893 },
+        { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true, "s": 0.893, "e": 1.165 },
+        { "t": "bonita", "l": "bonito", "p": "ADJ", "w": true, "s": 1.165, "e": 1.64 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.727
+    },
+    {
+      "id": "s2",
+      "speaker": "diego",
+      "text": "¿Es nueva?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 1.987, "e": 2.23 },
+        { "t": "nueva", "l": "nuevo", "p": "ADJ", "w": true, "s": 2.23, "e": 2.717 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.977,
+      "end": 2.816
+    },
+    {
+      "id": "s3",
+      "speaker": "sofia",
+      "text": "Para mí, sí, pero es de segunda mano.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 3.226, "e": 3.564 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "s": 3.564, "e": 3.767 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "s": 3.966, "e": 4.236 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 4.446, "e": 4.748 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 4.748, "e": 4.929 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 4.929, "e": 5.11 },
+        { "t": "segunda", "l": "segundo", "p": "NUM", "w": false, "sp": true, "s": 5.111, "e": 5.594 },
+        { "t": "mano", "l": "mano", "p": "NOUN", "w": true, "s": 5.594, "e": 5.896 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.216,
+      "end": 5.968
+    },
+    {
+      "id": "s4",
+      "speaker": "sofia",
+      "text": "La compré la semana pasada por quince euros en una tienda del barrio.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 6.228, "e": 6.447 },
+        { "t": "compré", "l": "comprar", "p": "VERB", "w": true, "sp": true, "s": 6.447, "e": 6.958 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 6.958, "e": 7.177 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true, "s": 7.178, "e": 7.689 },
+        { "t": "pasada", "l": "pasado", "p": "ADJ", "w": true, "sp": true, "s": 7.689, "e": 8.2 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 8.2, "e": 8.492 },
+        { "t": "quince", "l": "quince", "p": "NUM", "w": false, "sp": true, "s": 8.492, "e": 9.003 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "sp": true, "s": 9.004, "e": 9.442 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 9.442, "e": 9.661 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 9.661, "e": 9.953 },
+        { "t": "tienda", "l": "tienda", "p": "NOUN", "w": true, "sp": true, "s": 9.953, "e": 10.464 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 10.465, "e": 10.757 },
+        { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "s": 10.757, "e": 11.268 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.218,
+      "end": 11.326
+    },
+    {
+      "id": "s5",
+      "speaker": "diego",
+      "text": "¿En serio?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 11.736, "e": 11.993 },
+        { "t": "serio", "l": "serio", "p": "ADJ", "w": true, "s": 11.993, "e": 12.506 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.726,
+      "end": 12.617
+    },
+    {
+      "id": "s6",
+      "speaker": "diego",
+      "text": "Parece recién comprada.",
+      "tokens": [
+        { "t": "Parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 12.877, "e": 13.358 },
+        { "t": "recién", "l": "recién", "p": "ADV", "w": true, "sp": true, "s": 13.358, "e": 13.839 },
+        { "t": "comprada", "l": "comprar", "p": "VERB", "w": true, "s": 13.839, "e": 14.457 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.867,
+      "end": 14.566
+    },
+    {
+      "id": "s7",
+      "speaker": "diego",
+      "text": "Yo nunca he comprado ropa usada.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 14.826, "e": 15.039 },
+        { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true, "s": 15.039, "e": 15.465 },
+        { "t": "he", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 15.464, "e": 15.677 },
+        { "t": "comprado", "l": "comprar", "p": "VERB", "w": true, "sp": true, "s": 15.677, "e": 16.315 },
+        { "t": "ropa", "l": "ropa", "p": "NOUN", "w": true, "sp": true, "s": 16.316, "e": 16.671 },
+        { "t": "usada", "l": "usar", "p": "VERB", "w": true, "s": 16.67, "e": 17.096 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 14.816,
+      "end": 17.18
+    },
+    {
+      "id": "s8",
+      "speaker": "diego",
+      "text": "Me da un poco de reparo.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 17.43, "e": 17.646 },
+        { "t": "da", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 17.646, "e": 17.862 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 17.863, "e": 18.079 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 18.079, "e": 18.439 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 18.439, "e": 18.655 },
+        { "t": "reparo", "l": "reparar", "p": "VERB", "w": true, "s": 18.655, "e": 19.16 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.43,
+      "end": 19.249
+    },
+    {
+      "id": "s9",
+      "speaker": "sofia",
+      "text": "Te entiendo, a mí me pasaba lo mismo.",
+      "tokens": [
+        { "t": "Te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 19.659, "e": 19.878 },
+        { "t": "entiendo", "l": "entender", "p": "VERB", "w": true, "s": 19.878, "e": 20.536 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 20.536, "e": 20.682 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 20.682, "e": 20.901 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 20.901, "e": 21.12 },
+        { "t": "pasaba", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 21.12, "e": 21.631 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 21.632, "e": 21.851 },
+        { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "s": 21.851, "e": 22.289 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.649,
+      "end": 22.335
+    },
+    {
+      "id": "s10",
+      "speaker": "sofia",
+      "text": "Pero en estas tiendas la ropa está limpia y bien revisada.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 22.585, "e": 22.937 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 22.937, "e": 23.148 },
+        { "t": "estas", "l": "este", "p": "DET", "w": true, "sp": true, "s": 23.148, "e": 23.57 },
+        { "t": "tiendas", "l": "tienda", "p": "NOUN", "w": true, "sp": true, "s": 23.57, "e": 24.133 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 24.133, "e": 24.344 },
+        { "t": "ropa", "l": "ropa", "p": "NOUN", "w": true, "sp": true, "s": 24.344, "e": 24.696 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 24.695, "e": 25.047 },
+        { "t": "limpia", "l": "limpiar", "p": "VERB", "w": true, "sp": true, "s": 25.047, "e": 25.539 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 25.539, "e": 25.68 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true, "s": 25.68, "e": 26.032 },
+        { "t": "revisada", "l": "revisar", "p": "VERB", "w": true, "s": 26.032, "e": 26.665 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.585,
+      "end": 26.722
+    },
+    {
+      "id": "s11",
+      "speaker": "sofia",
+      "text": "Además, se ahorra mucho dinero.",
+      "tokens": [
+        { "t": "Además", "l": "además", "p": "ADV", "w": true, "s": 26.982, "e": 27.516 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 27.516, "e": 27.745 },
+        { "t": "ahorra", "l": "ahorrar", "p": "VERB", "w": true, "sp": true, "s": 27.745, "e": 28.279 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 28.28, "e": 28.738 },
+        { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true, "s": 28.738, "e": 29.272 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.972,
+      "end": 29.336
+    },
+    {
+      "id": "s12",
+      "speaker": "diego",
+      "text": "Ya, pero no es solo por el precio, ¿no?",
+      "tokens": [
+        { "t": "Ya", "l": "ya", "p": "ADV", "w": true, "s": 29.746, "e": 29.978 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 29.978, "e": 30.364 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 30.364, "e": 30.596 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 30.595, "e": 30.827 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 30.827, "e": 31.213 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 31.213, "e": 31.522 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 31.522, "e": 31.754 },
+        { "t": "precio", "l": "precio", "p": "NOUN", "w": true, "s": 31.754, "e": 32.295 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "s": 32.294, "e": 32.526 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 29.736,
+      "end": 32.658
+    },
+    {
+      "id": "s13",
+      "speaker": "diego",
+      "text": "Tú siempre hablas del medio ambiente.",
+      "tokens": [
+        { "t": "Tú", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 32.918, "e": 33.122 },
+        { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true, "s": 33.122, "e": 33.665 },
+        { "t": "hablas", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 33.664, "e": 34.139 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 34.139, "e": 34.41 },
+        { "t": "medio", "l": "medio", "p": "ADJ", "w": true, "sp": true, "s": 34.41, "e": 34.817 },
+        { "t": "ambiente", "l": "ambiente", "p": "NOUN", "w": true, "s": 34.817, "e": 35.428 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.908,
+      "end": 35.547
+    },
+    {
+      "id": "s14",
+      "speaker": "sofia",
+      "text": "Exacto.",
+      "tokens": [
+        { "t": "Exacto", "l": "exacto", "p": "ADJ", "w": true, "s": 35.947, "e": 36.807 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.947,
+      "end": 36.887
+    },
+    {
+      "id": "s15",
+      "speaker": "sofia",
+      "text": "Fabricar unos vaqueros necesita miles de litros de agua.",
+      "tokens": [
+        { "t": "Fabricar", "l": "fabricar", "p": "VERB", "w": true, "sp": true, "s": 37.187, "e": 37.803 },
+        { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true, "s": 37.803, "e": 38.145 },
+        { "t": "vaqueros", "l": "vaqueros", "p": "NOUN", "w": true, "sp": true, "s": 38.145, "e": 38.761 },
+        { "t": "necesita", "l": "necesitar", "p": "VERB", "w": true, "sp": true, "s": 38.76, "e": 39.376 },
+        { "t": "miles", "l": "miles", "p": "NOUN", "w": true, "sp": true, "s": 39.376, "e": 39.786 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 39.786, "e": 39.991 },
+        { "t": "litros", "l": "litro", "p": "NOUN", "w": true, "sp": true, "s": 39.991, "e": 40.47 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 40.47, "e": 40.675 },
+        { "t": "agua", "l": "agua", "p": "NOUN", "w": true, "s": 40.675, "e": 41.017 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 37.137,
+      "end": 41.13
+    },
+    {
+      "id": "s16",
+      "speaker": "sofia",
+      "text": "Si alargamos la vida de la ropa, contaminamos menos.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 41.4, "e": 41.624 },
+        { "t": "alargamos", "l": "alargar", "p": "VERB", "w": true, "sp": true, "s": 41.624, "e": 42.371 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 42.371, "e": 42.595 },
+        { "t": "vida", "l": "vida", "p": "NOUN", "w": true, "sp": true, "s": 42.595, "e": 42.969 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 42.969, "e": 43.193 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 43.193, "e": 43.417 },
+        { "t": "ropa", "l": "ropa", "p": "NOUN", "w": true, "s": 43.417, "e": 43.791 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        {
+          "t": "contaminamos",
+          "l": "contaminar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 43.791,
+          "e": 44.762
+        },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "s": 44.762, "e": 45.21 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 41.38,
+      "end": 45.308
+    },
+    {
+      "id": "s17",
+      "speaker": "sofia",
+      "text": "Desde hace un año, casi todo lo que compro es usado.",
+      "tokens": [
+        { "t": "Desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 45.568, "e": 45.977 },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 45.977, "e": 46.318 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 46.319, "e": 46.524 },
+        { "t": "año", "l": "año", "p": "NOUN", "w": true, "s": 46.523, "e": 46.796 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 46.796, "e": 47.137 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 47.137, "e": 47.478 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 47.479, "e": 47.684 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 47.683, "e": 47.956 },
+        { "t": "compro", "l": "comprar", "p": "VERB", "w": true, "sp": true, "s": 47.956, "e": 48.434 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 48.434, "e": 48.639 },
+        { "t": "usado", "l": "usar", "p": "VERB", "w": true, "s": 48.639, "e": 49.048 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 45.558,
+      "end": 49.146
+    },
+    {
+      "id": "s18",
+      "speaker": "diego",
+      "text": "¿Todo?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Todo", "l": "todo", "p": "DET", "w": true, "s": 49.556, "e": 49.876 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 49.546,
+      "end": 49.957
+    },
+    {
+      "id": "s19",
+      "speaker": "diego",
+      "text": "¿También los muebles?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 50.217, "e": 50.781 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 50.781, "e": 51.063 },
+        { "t": "muebles", "l": "mueble", "p": "NOUN", "w": true, "s": 51.063, "e": 51.627 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 50.207,
+      "end": 51.681
+    },
+    {
+      "id": "s20",
+      "speaker": "sofia",
+      "text": "Sí.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 52.101, "e": 52.601 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 52.081,
+      "end": 52.644
+    },
+    {
+      "id": "s21",
+      "speaker": "sofia",
+      "text": "La mesa del salón la encontré en una aplicación de compraventa.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 52.904, "e": 53.106 },
+        { "t": "mesa", "l": "mesa", "p": "NOUN", "w": true, "sp": true, "s": 53.106, "e": 53.443 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 53.444, "e": 53.714 },
+        { "t": "salón", "l": "salón", "p": "NOUN", "w": true, "sp": true, "s": 53.714, "e": 54.119 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 54.118, "e": 54.32 },
+        { "t": "encontré", "l": "encontrar", "p": "VERB", "w": true, "sp": true, "s": 54.321, "e": 54.928 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 54.928, "e": 55.13 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 55.13, "e": 55.4 },
+        { "t": "aplicación", "l": "aplicación", "p": "NOUN", "w": true, "sp": true, "s": 55.4, "e": 56.142 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 56.142, "e": 56.344 },
+        { "t": "compraventa", "l": "compraventa", "p": "NOUN", "w": true, "s": 56.344, "e": 57.154 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 52.894,
+      "end": 57.213
+    },
+    {
+      "id": "s22",
+      "speaker": "sofia",
+      "text": "Era de una señora que se mudaba, y me la dejó a mitad de precio.",
+      "tokens": [
+        { "t": "Era", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 57.473, "e": 57.732 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 57.732, "e": 57.926 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 57.926, "e": 58.185 },
+        { "t": "señora", "l": "señor", "p": "NOUN", "w": true, "sp": true, "s": 58.185, "e": 58.638 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 58.637, "e": 58.896 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 58.896, "e": 59.09 },
+        { "t": "mudaba", "l": "mudarse", "p": "VERB", "w": true, "s": 59.09, "e": 59.543 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 59.763, "e": 59.892 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 59.892, "e": 60.086 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 60.086, "e": 60.28 },
+        { "t": "dejó", "l": "dejar", "p": "VERB", "w": true, "sp": true, "s": 60.279, "e": 60.602 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 60.602, "e": 60.731 },
+        { "t": "mitad", "l": "mitad", "p": "NOUN", "w": true, "sp": true, "s": 60.731, "e": 61.118 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 61.118, "e": 61.312 },
+        { "t": "precio", "l": "precio", "p": "NOUN", "w": true, "s": 61.311, "e": 61.763 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 57.463,
+      "end": 61.811
+    },
+    {
+      "id": "s23",
+      "speaker": "diego",
+      "text": "Yo con las aplicaciones tuve mala suerte.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 62.221, "e": 62.442 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 62.442, "e": 62.737 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 62.737, "e": 63.032 },
+        {
+          "t": "aplicaciones",
+          "l": "aplicación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 63.031,
+          "e": 63.989
+        },
+        { "t": "tuve", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 63.989, "e": 64.357 },
+        { "t": "mala", "l": "malo", "p": "ADJ", "w": true, "sp": true, "s": 64.357, "e": 64.725 },
+        { "t": "suerte", "l": "suerte", "p": "NOUN", "w": true, "s": 64.725, "e": 65.241 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.211,
+      "end": 65.356
+    },
+    {
+      "id": "s24",
+      "speaker": "diego",
+      "text": "Compré un móvil que, según el vendedor, funcionaba perfectamente.",
+      "tokens": [
+        { "t": "Compré", "l": "comprar", "p": "VERB", "w": true, "sp": true, "s": 65.616, "e": 66.061 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 66.061, "e": 66.252 },
+        { "t": "móvil", "l": "móvil", "p": "NOUN", "w": true, "sp": true, "s": 66.251, "e": 66.632 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "s": 66.632, "e": 66.886 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "según", "l": "según", "p": "ADP", "w": true, "sp": true, "s": 67.136, "e": 67.529 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 67.529, "e": 67.726 },
+        { "t": "vendedor", "l": "vendedor", "p": "NOUN", "w": true, "s": 67.726, "e": 68.316 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "funcionaba", "l": "funcionar", "p": "VERB", "w": true, "sp": true, "s": 68.536, "e": 69.359 },
+        { "t": "perfectamente", "l": "perfectamente", "p": "ADV", "w": true, "s": 69.359, "e": 70.406 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 65.606,
+      "end": 70.499
+    },
+    {
+      "id": "s25",
+      "speaker": "diego",
+      "text": "A los dos días dejó de cargar.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 70.759, "e": 70.905 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 70.905, "e": 71.197 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 71.197, "e": 71.489 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 71.489, "e": 71.854 },
+        { "t": "dejó", "l": "dejar", "p": "VERB", "w": true, "sp": true, "s": 71.854, "e": 72.219 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 72.219, "e": 72.438 },
+        { "t": "cargar", "l": "cargar", "p": "VERB", "w": true, "s": 72.438, "e": 72.949 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 70.749,
+      "end": 73.029
+    },
+    {
+      "id": "s26",
+      "speaker": "sofia",
+      "text": "Vaya.",
+      "tokens": [
+        { "t": "Vaya", "l": "ir", "p": "VERB", "w": true, "s": 73.439, "e": 74.029 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 73.429,
+      "end": 74.085
+    },
+    {
+      "id": "s27",
+      "speaker": "sofia",
+      "text": "¿Y qué hiciste?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 74.345, "e": 74.502 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 74.502, "e": 74.816 },
+        { "t": "hiciste", "l": "hacer", "p": "VERB", "w": true, "s": 74.816, "e": 75.445 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 74.335,
+      "end": 75.513
+    },
+    {
+      "id": "s28",
+      "speaker": "diego",
+      "text": "Le escribí, pero ya no contestaba.",
+      "tokens": [
+        { "t": "Le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 75.923, "e": 76.193 },
+        { "t": "escribí", "l": "escribir", "p": "VERB", "w": true, "s": 76.193, "e": 76.913 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 77.213, "e": 77.57 },
+        { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 77.57, "e": 77.784 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 77.784, "e": 77.998 },
+        { "t": "contestaba", "l": "contestar", "p": "VERB", "w": true, "s": 77.998, "e": 78.783 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 75.913,
+      "end": 78.945
+    },
+    {
+      "id": "s29",
+      "speaker": "diego",
+      "text": "Perdí ciento veinte euros.",
+      "tokens": [
+        { "t": "Perdí", "l": "perder", "p": "VERB", "w": true, "sp": true, "s": 79.205, "e": 79.673 },
+        { "t": "ciento", "l": "cien", "p": "NUM", "w": false, "sp": true, "s": 79.673, "e": 80.22 },
+        { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true, "s": 80.22, "e": 80.767 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "s": 80.767, "e": 81.235 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 79.195,
+      "end": 81.278
+    },
+    {
+      "id": "s30",
+      "speaker": "diego",
+      "text": "Desde entonces desconfío de esas compras.",
+      "tokens": [
+        { "t": "Desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 81.528, "e": 81.967 },
+        { "t": "entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true, "s": 81.967, "e": 82.626 },
+        { "t": "desconfío", "l": "desconfiar", "p": "VERB", "w": true, "sp": true, "s": 82.626, "e": 83.358 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 83.357, "e": 83.577 },
+        { "t": "esas", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 83.577, "e": 83.943 },
+        { "t": "compras", "l": "comprar", "p": "VERB", "w": true, "s": 83.943, "e": 84.528 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 81.528,
+      "end": 84.58
+    },
+    {
+      "id": "s31",
+      "speaker": "sofia",
+      "text": "Es que con la electrónica hay que tener mucho cuidado.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 84.99, "e": 85.183 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 85.183, "e": 85.44 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 85.44, "e": 85.697 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 85.697, "e": 85.89 },
+        { "t": "electrónica", "l": "electrónico", "p": "ADJ", "w": true, "sp": true, "s": 85.89, "e": 86.661 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 86.661, "e": 86.918 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 86.918, "e": 87.175 },
+        { "t": "tener", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 87.175, "e": 87.561 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 87.56, "e": 87.946 },
+        { "t": "cuidado", "l": "cuidar", "p": "VERB", "w": true, "s": 87.946, "e": 88.46 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 84.98,
+      "end": 88.567
+    },
+    {
+      "id": "s32",
+      "speaker": "sofia",
+      "text": "Lo mejor es comprarla en tiendas que la reparan y te dan garantía, aunque cueste un poco más.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 88.827, "e": 89.026 },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true, "s": 89.026, "e": 89.423 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 89.423, "e": 89.622 },
+        { "t": "comprarla", "l": "comprar", "p": "VERB", "w": true, "sp": true, "s": 89.622, "e": 90.284 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 90.284, "e": 90.483 },
+        { "t": "tiendas", "l": "tienda", "p": "NOUN", "w": true, "sp": true, "s": 90.482, "e": 91.012 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 91.012, "e": 91.277 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 91.277, "e": 91.476 },
+        { "t": "reparan", "l": "reparar", "p": "VERB", "w": true, "sp": true, "s": 91.475, "e": 92.005 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 92.005, "e": 92.137 },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 92.138, "e": 92.337 },
+        { "t": "dan", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 92.336, "e": 92.601 },
+        { "t": "garantía", "l": "garantía", "p": "NOUN", "w": true, "s": 92.601, "e": 93.197 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true, "s": 93.337, "e": 93.814 },
+        { "t": "cueste", "l": "costar", "p": "VERB", "w": true, "sp": true, "s": 93.814, "e": 94.291 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 94.29, "e": 94.494 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 94.494, "e": 94.834 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "s": 94.835, "e": 95.107 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 88.817,
+      "end": 95.163
+    },
+    {
+      "id": "s33",
+      "speaker": "diego",
+      "text": "No lo sabía.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 95.573, "e": 95.808 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 95.808, "e": 96.043 },
+        { "t": "sabía", "l": "saber", "p": "VERB", "w": true, "s": 96.043, "e": 96.513 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 95.563,
+      "end": 96.611
+    },
+    {
+      "id": "s34",
+      "speaker": "diego",
+      "text": "¿Y cómo sabes que una tienda es seria?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 96.891, "e": 97.028 },
+        { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 97.028, "e": 97.37 },
+        { "t": "sabes", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 97.37, "e": 97.78 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 97.78, "e": 98.054 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 98.053, "e": 98.327 },
+        { "t": "tienda", "l": "tienda", "p": "NOUN", "w": true, "sp": true, "s": 98.327, "e": 98.806 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 98.806, "e": 99.011 },
+        { "t": "seria", "l": "serio", "p": "ADJ", "w": true, "s": 99.011, "e": 99.421 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 96.861,
+      "end": 99.534
+    },
+    {
+      "id": "s35",
+      "speaker": "sofia",
+      "text": "Leo las opiniones de otros clientes y pregunto cuánto dura la garantía.",
+      "tokens": [
+        { "t": "Leo", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 99.944, "e": 100.229 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 100.229, "e": 100.514 },
+        { "t": "opiniones", "l": "opinión", "p": "NOUN", "w": true, "sp": true, "s": 100.514, "e": 101.227 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 101.227, "e": 101.441 },
+        { "t": "otros", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 101.441, "e": 101.869 },
+        { "t": "clientes", "l": "cliente", "p": "NOUN", "w": true, "sp": true, "s": 101.868, "e": 102.509 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 102.51, "e": 102.653 },
+        { "t": "pregunto", "l": "preguntar", "p": "VERB", "w": true, "sp": true, "s": 102.652, "e": 103.293 },
+        { "t": "cuánto", "l": "cuánto", "p": "PRON", "w": true, "sp": true, "s": 103.294, "e": 103.793 },
+        { "t": "dura", "l": "durar", "p": "VERB", "w": true, "sp": true, "s": 103.792, "e": 104.148 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 104.149, "e": 104.363 },
+        { "t": "garantía", "l": "garantía", "p": "NOUN", "w": true, "s": 104.363, "e": 105.004 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 99.934,
+      "end": 105.061
+    },
+    {
+      "id": "s36",
+      "speaker": "sofia",
+      "text": "Si no te la dan por escrito, mejor no comprar.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 105.331, "e": 105.527 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 105.527, "e": 105.723 },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 105.723, "e": 105.919 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 105.919, "e": 106.115 },
+        { "t": "dan", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 106.115, "e": 106.376 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 106.377, "e": 106.638 },
+        { "t": "escrito", "l": "escribir", "p": "VERB", "w": true, "s": 106.638, "e": 107.161 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true, "s": 107.391, "e": 107.871 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 107.871, "e": 108.111 },
+        { "t": "comprar", "l": "comprar", "p": "VERB", "w": true, "s": 108.111, "e": 108.751 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 105.311,
+      "end": 108.847
+    },
+    {
+      "id": "s37",
+      "speaker": "diego",
+      "text": "Pues quizás le dé otra oportunidad.",
+      "tokens": [
+        { "t": "Pues", "l": "pues", "p": "SCONJ", "w": true, "sp": true, "s": 109.257, "e": 109.561 },
+        { "t": "quizás", "l": "quizás", "p": "ADV", "w": true, "sp": true, "s": 109.561, "e": 109.987 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 109.987, "e": 110.17 },
+        { "t": "dé", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 110.17, "e": 110.353 },
+        { "t": "otra", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 110.352, "e": 110.656 },
+        { "t": "oportunidad", "l": "oportunidad", "p": "NOUN", "w": true, "s": 110.657, "e": 111.387 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 109.247,
+      "end": 111.523
+    },
+    {
+      "id": "s38",
+      "speaker": "diego",
+      "text": "Necesito un portátil para el trabajo y uno nuevo es carísimo.",
+      "tokens": [
+        { "t": "Necesito", "l": "necesitar", "p": "VERB", "w": true, "sp": true, "s": 111.783, "e": 112.42 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 112.42, "e": 112.632 },
+        { "t": "portátil", "l": "portátil", "p": "NOUN", "w": true, "sp": true, "s": 112.633, "e": 113.27 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 113.27, "e": 113.624 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 113.624, "e": 113.836 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 113.837, "e": 114.404 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 114.403, "e": 114.545 },
+        { "t": "uno", "l": "uno", "p": "NUM", "w": false, "sp": true, "s": 114.545, "e": 114.828 },
+        { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 114.828, "e": 115.253 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 115.253, "e": 115.465 },
+        { "t": "carísimo", "l": "caro", "p": "ADJ", "w": true, "s": 115.466, "e": 116.103 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 111.773,
+      "end": 116.211
+    },
+    {
+      "id": "s39",
+      "speaker": "sofia",
+      "text": "Si quieres, el sábado te acompaño a una tienda que conozco.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 116.631, "e": 116.848 },
+        { "t": "quieres", "l": "querer", "p": "VERB", "w": true, "s": 116.848, "e": 117.426 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 117.426, "e": 117.643 },
+        { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "sp": true, "s": 117.642, "e": 118.148 },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 118.148, "e": 118.365 },
+        { "t": "acompaño", "l": "acompañar", "p": "VERB", "w": true, "sp": true, "s": 118.365, "e": 119.015 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 119.015, "e": 119.159 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 119.159, "e": 119.448 },
+        { "t": "tienda", "l": "tienda", "p": "NOUN", "w": true, "sp": true, "s": 119.448, "e": 119.954 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 119.954, "e": 120.243 },
+        { "t": "conozco", "l": "conocer", "p": "VERB", "w": true, "s": 120.243, "e": 120.821 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 116.611,
+      "end": 120.934
+    },
+    {
+      "id": "s40",
+      "speaker": "sofia",
+      "text": "Allí compré el mío hace dos años y todavía funciona como el primer día.",
+      "tokens": [
+        { "t": "Allí", "l": "allí", "p": "ADV", "w": true, "sp": true, "s": 121.194, "e": 121.567 },
+        { "t": "compré", "l": "comprar", "p": "VERB", "w": true, "sp": true, "s": 121.567, "e": 122.09 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 122.09, "e": 122.314 },
+        { "t": "mío", "l": "mío", "p": "PRON", "w": true, "sp": true, "s": 122.314, "e": 122.613 },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 122.612, "e": 122.985 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 122.986, "e": 123.285 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 123.284, "e": 123.657 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 123.657, "e": 123.806 },
+        { "t": "todavía", "l": "todavía", "p": "ADV", "w": true, "sp": true, "s": 123.807, "e": 124.404 },
+        { "t": "funciona", "l": "funcionar", "p": "VERB", "w": true, "sp": true, "s": 124.404, "e": 125.076 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 125.076, "e": 125.449 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 125.449, "e": 125.673 },
+        { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 125.673, "e": 126.196 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "s": 126.195, "e": 126.494 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 121.184,
+      "end": 126.553
+    },
+    {
+      "id": "s41",
+      "speaker": "diego",
+      "text": "Trato hecho.",
+      "tokens": [
+        { "t": "Trato", "l": "tratar", "p": "VERB", "w": true, "sp": true, "s": 126.963, "e": 127.348 },
+        { "t": "hecho", "l": "hacer", "p": "VERB", "w": true, "s": 127.348, "e": 127.733 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 126.953,
+      "end": 127.83
+    },
+    {
+      "id": "s42",
+      "speaker": "diego",
+      "text": "Y, de paso, me enseñas esa tienda de ropa.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "s": 128.09, "e": 128.28 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 128.47, "e": 128.71 },
+        { "t": "paso", "l": "pasar", "p": "VERB", "w": true, "s": 128.71, "e": 129.11 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 129.35, "e": 129.559 },
+        { "t": "enseñas", "l": "enseñar", "p": "VERB", "w": true, "sp": true, "s": 129.559, "e": 130.116 },
+        { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 130.116, "e": 130.395 },
+        { "t": "tienda", "l": "tienda", "p": "NOUN", "w": true, "sp": true, "s": 130.395, "e": 130.883 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 130.883, "e": 131.092 },
+        { "t": "ropa", "l": "ropa", "p": "NOUN", "w": true, "s": 131.092, "e": 131.44 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 128.08,
+      "end": 131.551
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "reparo",
+      "surface": "reparo",
+      "pos": "noun",
+      "def_en": "duda o vergüenza que impide hacer algo",
+      "def_es": { "en": "qualm, reluctance", "fr": "réticence", "zh": "顾虑", "ja": "ためらい" },
+      "ref": "s8"
+    },
+    {
+      "lemma": "compraventa",
+      "surface": "compraventa",
+      "pos": "noun",
+      "def_en": "compra y venta entre particulares",
+      "def_es": { "en": "buying and selling", "fr": "achat-vente", "zh": "买卖", "ja": "売買" },
+      "ref": "s21"
+    },
+    {
+      "lemma": "desconfiar",
+      "surface": "desconfío",
+      "pos": "verb",
+      "def_en": "no tener confianza en algo o alguien",
+      "def_es": { "en": "to distrust", "fr": "se méfier", "zh": "不信任", "ja": "疑う" },
+      "ref": "s30"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿De qué hablan Sofía y Diego?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "Pros and risks of buying second-hand." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De dónde encontrar ropa nueva a buen precio" },
+        { "id": "b", "text": "De las ventajas y los riesgos de comprar cosas usadas" },
+        { "id": "c", "text": "De cómo vender muebles viejos por internet" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuánto le costó la chaqueta a Sofía?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "Fifteen euros." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cincuenta euros" },
+        { "id": "b", "text": "Ciento veinte euros" },
+        { "id": "c", "text": "Quince euros" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué otra razón da Sofía, además del dinero?",
+      "evidence": ["s16"],
+      "rationale_es": { "en": "It pollutes less." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que así se contamina menos" },
+        { "id": "b", "text": "Que la ropa usada es más moderna" },
+        { "id": "c", "text": "Que en las tiendas la atienden mejor" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Sofía compró la mesa del salón en una tienda de muebles.",
+      "evidence": ["s21"],
+      "rationale_es": { "en": "She found it on an app." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué le pasó a Diego con el móvil?",
+      "evidence": ["s25"],
+      "rationale_es": { "en": "It stopped charging after two days." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Nunca llegó a recibirlo" },
+        { "id": "b", "text": "Se estropeó a los pocos días" },
+        { "id": "c", "text": "Era mucho más caro de lo dicho" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "post",
+      "prompt": "¿Qué recomienda Sofía para comprar aparatos electrónicos?",
+      "evidence": ["s32"],
+      "rationale_es": { "en": "Buy from shops that repair them and give a warranty." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Comprarlos siempre en una aplicación" },
+        { "id": "b", "text": "Pedir dinero prestado y comprarlos nuevos" },
+        { "id": "c", "text": "Ir a tiendas que los arreglan y aseguran" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s38"],
+      "rationale_es": { "en": "*Portátil*: laptop." },
+      "type": "gap_fill",
+      "text": "Sofía acompañará a Diego a comprar un {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["portátil"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "acompañar", "además", "agua", "ahorrar", "alargar", "allí", "ambiente", "aplicación", "aunque",
+    "año", "barrio", "bien", "bonito", "cargar", "caro", "casi", "chaqueta", "cliente", "comer", "comprar",
+    "compraventa", "con", "conocer", "contaminar", "contestar", "costar", "cuidar", "cuánto", "cómo", "dar",
+    "de", "dejar", "desconfiar", "desde", "dinero", "durar", "día", "el", "electrónico", "en", "encontrar",
+    "enseñar", "entender", "entonces", "escribir", "ese", "estar", "este", "euro", "exacto", "fabricar",
+    "funcionar", "garantía", "haber", "hablar", "hacer", "ir", "leer", "limpiar", "litro", "malo", "mano",
+    "medio", "mejor", "menos", "mesa", "miles", "mismo", "mitad", "mucho", "mudarse", "mueble", "más", "mío",
+    "móvil", "necesitar", "no", "nuevo", "nunca", "opinión", "oportunidad", "otro", "para", "parecer",
+    "pasado", "pasar", "perder", "perfectamente", "pero", "poco", "por", "portátil", "precio", "preguntar",
+    "pues", "que", "querer", "quizás", "qué", "recién", "reparar", "revisar", "ropa", "saber", "salón", "se",
+    "según", "semana", "ser", "serio", "señor", "si", "siempre", "solo", "suerte", "sábado", "también", "tan",
+    "tener", "tienda", "todavía", "todo", "trabajar", "tratar", "tú", "un", "usar", "vaqueros", "vendedor",
+    "vida", "y", "ya", "yo", "él"
+  ],
+  "difficulty": 1250,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7113, "A2": 0.8694, "B1": 0.9828, "B2": 0.9931, "C1": 1, "C2": 1 },
+    "off_level_lemmas": ["garantía"],
+    "avg_sentence_words": 7.2,
+    "flesch_reading_ease": 88.7,
+    "checked_at": "2026-10-19T07:42:35.028Z"
+  },
+  "audio": {
+    "src": "audio/b2/es-b2-lis-012/v1.m4a",
+    "duration_s": 131.551,
+    "wpm": 137,
+    "provider": "piper",
+    "voices": { "sofia": "sharvard-f", "diego": "sharvard-m" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      0.91, 1, 0.66, 1, 0.93, 1, 0.87, 0.66, 0.94, 0.9, 0.68, 1, 0.87, 0.69, 0.97, 0.6, 0.65, 0.82, 0.62, 0.84,
+      0.21, 0.6, 1, 1, 0.48, 0.44, 0.15, 1, 0.71, 0.82, 0.73, 0.25, 1, 0.62, 0.81, 0.69, 0.9, 0.66, 1, 0.9,
+      0.31, 1, 0.65, 0.85, 0.9, 0.72, 0.81, 0.82, 0.49, 0.8, 0.79, 1, 0.52, 0.43, 1, 0.57, 0.7, 0.56, 0.45,
+      0.38, 0.76, 1, 0.61, 0.53, 0.13, 0.61, 1, 0.14, 1, 0.85, 0.79, 0.72, 0.91, 0.6, 0.53, 0.68, 0.98, 0.93,
+      0.75, 1, 0.85, 0.66, 0.18, 0.98, 0.7, 1, 0.93, 0.94, 0.97, 0.41, 1, 1, 0.62, 0.59, 0.05, 1, 1, 0.92,
+      0.91, 0.71, 0.92, 0.67, 0.8, 0.74, 0.54, 0.94, 0.85, 0.71, 1, 0.82, 0.99, 0.71, 0.22, 1, 0.64, 0.67,
+      0.71, 0.74, 0.43, 0.64, 0.9, 0.9, 0.55, 0.91, 0.53, 0.8, 1, 0.68, 0.17, 0.76, 0.62, 0.68, 1, 0.07, 1,
+      0.6, 1, 0.26, 0.84, 0.92, 0.86, 1, 0.88, 0.86, 1, 0.71, 0.63, 0.69, 0.75, 0.9, 0.73, 0.87, 0.8, 1, 0.11,
+      0.88, 0.75, 0.99, 1, 0.94, 0.74, 0.28, 1, 0.89, 1, 0.76, 0.95, 0.87, 0.83, 0.74, 0.67, 0.66, 0.9, 0.26,
+      1, 0.88, 0.48, 1, 0.92, 0.76, 0.53, 0.2, 0.94, 0.63, 0.69, 0.62, 0.63, 0.61, 1, 0.69, 0.64, 0.26, 0.75,
+      1, 0.89, 0.66, 0.87, 0.68, 0.58, 0.97, 0.9, 1, 0.47, 0.68, 0.71, 0.73, 1, 0.54, 0.77, 0.65, 0.9, 0.44,
+      0.49, 0.78, 0.69, 1, 0.82, 0.82, 0.68, 0.63, 0.27, 0.76, 0.82, 0.87, 0.68, 0.65, 1, 0.62, 0.85, 0.72,
+      0.47, 1, 0.65, 0.38, 1, 0.94, 0.71, 0.71, 0.74, 0.51
+    ]
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "id": "es-a1-lis-009",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u03",
+  "series": "es-a1-u03-hora",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "¿Qué hora es?",
+  "summary_es": {
+    "en": "A student asks the time and learns he has half an hour before class.",
+    "fr": "Un étudiant demande l’heure et apprend qu’il lui reste une demi-heure avant le cours.",
+    "zh": "一个学生问现在几点，得知离上课还有半小时。",
+    "ja": "学生が時間をたずね、授業まで30分あることを知ります。"
+  },
+  "topic": "daily-life",
+  "tags": ["hora", "clase", "tiempo"],
+  "can_do": ["L-A1-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["hora", "tarde", "escuela", "autobús"],
+  "est_minutes": 4,
+  "prediction_prompt": "Alguien pregunta la hora. ¿Qué responde?",
+  "pre_teach": ["y media", "llegar tarde"],
+  "speakers": [
+    { "id": "javier", "name": "Javier", "accent": "es-ES", "gender": "male" },
+    { "id": "laura", "name": "Laura", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "javier",
+      "text": "Perdona, ¿qué hora es?",
+      "tokens": [
+        { "t": "Perdona", "l": "perdonar", "p": "VERB", "w": true, "s": 0.02, "e": 0.476 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 0.476, "e": 0.704 },
+        { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 0.704, "e": 0.989 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "s": 0.989, "e": 1.16 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.227
+    },
+    {
+      "id": "s2",
+      "speaker": "laura",
+      "text": "Son las tres.",
+      "tokens": [
+        { "t": "Son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 1.937, "e": 2.288 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 2.288, "e": 2.639 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "s": 2.639, "e": 3.077 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.927,
+      "end": 3.118
+    },
+    {
+      "id": "s3",
+      "speaker": "javier",
+      "text": "¿Las tres? Llego tarde.",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 3.838, "e": 4.189 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "s": 4.189, "e": 4.628 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Llego", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 5.098, "e": 5.413 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "s": 5.413, "e": 5.728 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.818,
+      "end": 5.796
+    },
+    {
+      "id": "s4",
+      "speaker": "laura",
+      "text": "¿A qué hora es tu clase?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 6.506, "e": 6.645 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 6.645, "e": 6.923 },
+        { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 6.923, "e": 7.271 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 7.271, "e": 7.48 },
+        { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true, "s": 7.48, "e": 7.689 },
+        { "t": "clase", "l": "clase", "p": "NOUN", "w": true, "s": 7.689, "e": 8.106 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.496,
+      "end": 8.17
+    },
+    {
+      "id": "s5",
+      "speaker": "javier",
+      "text": "A las tres y media.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 8.87, "e": 9.019 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 9.019, "e": 9.318 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 9.318, "e": 9.692 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 9.692, "e": 9.841 },
+        { "t": "media", "l": "medio", "p": "ADJ", "w": true, "s": 9.842, "e": 10.29 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.87,
+      "end": 10.37
+    },
+    {
+      "id": "s6",
+      "speaker": "laura",
+      "text": "Entonces tienes media hora.",
+      "tokens": [
+        { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true, "s": 11.08, "e": 11.723 },
+        { "t": "tienes", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 11.723, "e": 12.223 },
+        { "t": "media", "l": "medio", "p": "ADJ", "w": true, "sp": true, "s": 12.224, "e": 12.653 },
+        { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "s": 12.653, "e": 13.01 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.07,
+      "end": 13.058
+    },
+    {
+      "id": "s7",
+      "speaker": "javier",
+      "text": "Mi escuela está lejos.",
+      "tokens": [
+        { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 13.788, "e": 13.972 },
+        { "t": "escuela", "l": "escuela", "p": "NOUN", "w": true, "sp": true, "s": 13.972, "e": 14.463 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 14.463, "e": 14.77 },
+        { "t": "lejos", "l": "lejos", "p": "ADV", "w": true, "s": 14.77, "e": 15.138 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.758,
+      "end": 15.214
+    },
+    {
+      "id": "s8",
+      "speaker": "laura",
+      "text": "Toma el autobús. Sale ahora.",
+      "tokens": [
+        { "t": "Toma", "l": "tomar", "p": "VERB", "w": true, "sp": true, "s": 15.924, "e": 16.29 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 16.29, "e": 16.509 },
+        { "t": "autobús", "l": "autobús", "p": "NOUN", "w": true, "s": 16.509, "e": 17.094 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Sale", "l": "salir", "p": "VERB", "w": true, "sp": true, "s": 17.364, "e": 17.773 },
+        { "t": "ahora", "l": "ahora", "p": "ADV", "w": true, "s": 17.773, "e": 18.264 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.914,
+      "end": 18.367
+    },
+    {
+      "id": "s9",
+      "speaker": "javier",
+      "text": "Muchas gracias. Adiós.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 19.101, "e": 19.549 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 19.549, "e": 20.061 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Adiós", "l": "adiós", "p": "INTJ", "w": false, "s": 20.611, "e": 21.141 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.067,
+      "end": 21.216
+    },
+    {
+      "id": "s10",
+      "speaker": "laura",
+      "text": "Hasta luego.",
+      "tokens": [
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 21.926, "e": 22.371 },
+        { "t": "luego", "l": "luego", "p": "ADV", "w": true, "s": 22.371, "e": 22.816 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.916,
+      "end": 22.903
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "y media",
+      "surface": "y media",
+      "pos": "phrase",
+      "def_en": "treinta minutos después de la hora",
+      "def_es": { "en": "half past", "fr": "et demie", "zh": "半", "ja": "半" },
+      "ref": "s5"
+    },
+    {
+      "lemma": "llegar tarde",
+      "surface": "Llego tarde",
+      "pos": "phrase",
+      "def_en": "no llegar a la hora",
+      "def_es": { "en": "to be late", "fr": "être en retard", "zh": "迟到", "ja": "遅れる" },
+      "ref": "s3"
+    },
+    {
+      "lemma": "tomar",
+      "surface": "Toma",
+      "pos": "verb",
+      "def_en": "subir a un autobús o a un tren",
+      "def_es": { "en": "to take (a bus)", "fr": "prendre (un bus)", "zh": "乘坐", "ja": "乗る" },
+      "ref": "s8"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué pregunta Javier?",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "He asks what time it is." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "El camino a casa de su amigo" },
+        { "id": "b", "text": "La hora" },
+        { "id": "c", "text": "El precio de un billete" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué hora es?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "*Son las tres*." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Las cuatro y media" },
+        { "id": "b", "text": "Las doce de la mañana" },
+        { "id": "c", "text": "Las tres" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿A qué hora es su clase?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "Half past three." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "A las tres y media" },
+        { "id": "b", "text": "A las cuatro" },
+        { "id": "c", "text": "A las nueve y media" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "La escuela de Javier está cerca.",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "His school is far." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "*Toma el autobús*." },
+      "type": "gap_fill",
+      "text": "Laura dice: toma el {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["autobús"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Cuánto tiempo tiene Javier?",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "He has half an hour." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Dos horas" },
+        { "id": "b", "text": "Media hora" },
+        { "id": "c", "text": "Diez minutos" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "ahora", "autobús", "clase", "el", "entonces", "escuela", "estar", "hasta", "hora", "lejos", "llegar",
+    "luego", "medio", "mi", "mucho", "perdonar", "qué", "salir", "ser", "tarde", "tener", "tomar", "tu", "y"
+  ],
+  "difficulty": 678,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 3.1,
+    "flesch_reading_ease": 101.7,
+    "checked_at": "2026-10-19T07:26:48.323Z"
+  },
+  "audio": {
+    "src": "audio/a1/es-a1-lis-009/v1.m4a",
+    "duration_s": 22.903,
+    "wpm": 105,
+    "provider": "piper",
+    "voices": { "javier": "davefx-m", "laura": "sharvard-f" },
+    "loudness_lufs": -16,
+    "peaks": [
+      1, 0.57, 0.93, 0.52, 0.59, 0.13, 0.96, 0.89, 0.92, 0.85, 0.22, 0.18, 0.05, 0, 0, 0, 0, 0, 0, 0, 0.18,
+      0.38, 0.64, 0.87, 0.87, 1, 0.66, 0.33, 0.4, 0.43, 0.22, 0.21, 0.12, 0, 0, 0, 0, 0, 0, 0, 1, 0.94, 0.14,
+      0.85, 0.93, 0.5, 0.19, 0.23, 0.15, 0, 0, 0, 0, 0.82, 1, 0.83, 0.61, 0.96, 0.28, 0.33, 0.04, 0, 0, 0, 0,
+      0, 0, 0, 0.96, 0.67, 0.56, 0.87, 1, 0.78, 0.62, 0.64, 0.58, 0.18, 0.5, 0.41, 0.79, 0.86, 0.46, 0.23,
+      0.21, 0.03, 0, 0, 0, 0, 0, 0, 0.06, 0.98, 0.94, 0.78, 0.1, 0.98, 1, 0.9, 0.28, 0.04, 0.44, 0.37, 0.57,
+      0.26, 0.41, 0.41, 0.02, 0, 0, 0, 0, 0, 0, 0, 0.47, 0.44, 0.69, 0.87, 0.78, 0.98, 0.91, 0.44, 0.32, 1,
+      0.7, 0.71, 0.48, 0.74, 0.44, 0.66, 0.68, 0.47, 0.25, 0.18, 0.06, 0, 0, 0, 0, 0, 0, 0, 0.25, 0.95, 0.72,
+      0.1, 0.88, 0.73, 0.34, 0.99, 1, 0.67, 0.14, 0.24, 0.18, 0.13, 0.11, 0.01, 0, 0, 0, 0, 0, 0, 0.33, 0.82,
+      0.83, 0.75, 0.69, 1, 0.43, 0.36, 0.49, 0.36, 0.3, 0.13, 0.12, 0.04, 0, 0.01, 0.4, 0.48, 1, 0.92, 0.99,
+      0.81, 0.68, 0.45, 0.33, 0.09, 0.01, 0, 0, 0, 0, 0, 0, 0, 0.49, 0.95, 1, 0.95, 0.61, 0.95, 0.49, 0.57,
+      0.15, 0.19, 0.06, 0, 0, 0, 0, 0.01, 0.77, 0.98, 1, 0.31, 0.15, 0.09, 0.01, 0, 0, 0, 0, 0, 0, 0.84, 0.6,
+      0.16, 0.97, 0.79, 0.82, 1, 0.51, 0.31, 0.26, 0.05
+    ]
+  }
+}

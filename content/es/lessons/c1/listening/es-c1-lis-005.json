@@ -601,7 +601,7 @@
         { "t": "teoría", "l": "teoría", "p": "NOUN", "w": true, "sp": true, "s": 129.842, "e": 130.259 },
         { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 130.259, "e": 130.378 },
         { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 130.378, "e": 130.557 },
-        { "t": "práctica", "l": "práctica", "p": "NOUN", "w": true, "s": 130.556, "e": 131.092 },
+        { "t": "práctica", "l": "práctico", "p": "ADJ", "w": true, "s": 130.556, "e": 131.092 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
       ],
       "start": 125.212,
@@ -1212,7 +1212,7 @@
     "millón", "mitad", "moda", "modelo", "mucho", "mágico", "más", "móvil", "necesitar", "negocio", "ningún",
     "no", "nosotros", "nuevo", "objetivo", "obligar", "ofrecer", "otro", "papel", "para", "parte", "pasado",
     "pasar", "país", "pero", "persona", "plantear", "plazo", "plástico", "poder", "por", "poseer", "pregunta",
-    "preguntarse", "premiar", "premisa", "prenda", "prima", "producir", "producto", "proponer", "práctica",
+    "preguntarse", "premiar", "premisa", "prenda", "prima", "producir", "producto", "proponer", "práctico",
     "próximo", "que", "querer", "qué", "reciclaje", "reciclar", "recurso", "red", "reducir", "referirse",
     "rentable", "reparación", "reparar", "requerir", "residuo", "responder", "responsabilidad", "respuesta",
     "restaurante", "resultar", "reutilizable", "ropa", "rápido", "saber", "se", "seguir", "según", "sencillo",
@@ -1221,13 +1221,13 @@
     "tonelada", "tras", "técnico", "un", "urbano", "usar", "valioso", "varios", "venta", "ver", "vez", "vida",
     "virgen", "y", "ya", "yo", "él"
   ],
-  "difficulty": 1446,
+  "difficulty": 1442,
   "qa": {
-    "coverage_by_level": { "A1": 0.5502, "A2": 0.6205, "B1": 0.7751, "B2": 0.8293, "C1": 0.9839, "C2": 1 },
-    "off_level_lemmas": ["extraer", "implicar", "premiar", "práctica", "recurso", "servir", "subrayar", "teoría"],
+    "coverage_by_level": { "A1": 0.5502, "A2": 0.6446, "B1": 0.8193, "B2": 0.8675, "C1": 0.988, "C2": 1 },
+    "off_level_lemmas": ["extraer", "implicar", "premiar", "recurso", "subrayar", "teoría"],
     "avg_sentence_words": 11.7,
     "flesch_reading_ease": 67.7,
-    "checked_at": "2026-10-18T22:11:35.202Z"
+    "checked_at": "2026-10-19T08:13:23.410Z"
   },
   "audio": {
     "src": "audio/c1/es-c1-lis-005/v1.m4a",

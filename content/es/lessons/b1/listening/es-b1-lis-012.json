@@ -1,0 +1,666 @@
+{
+  "id": "es-b1-lis-012",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u06",
+  "series": "es-b1-u06-nutricion",
+  "skill": "listening",
+  "genre": "interview",
+  "title": "Una nutricionista responde",
+  "summary_es": {
+    "en": "A nutritionist answers questions about breakfast, fast diets and sugar.",
+    "fr": "Une nutritionniste répond à des questions sur le petit-déjeuner, les régimes rapides et le sucre.",
+    "zh": "一位营养师回答关于早餐、速成减肥法和糖的问题。",
+    "ja": "栄養士が、朝食、急激なダイエット、砂糖について質問に答えます。"
+  },
+  "topic": "health",
+  "tags": ["salud", "comida", "consejos"],
+  "can_do": ["L-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["dieta", "azúcar", "integral", "adelgazar"],
+  "est_minutes": 8,
+  "prediction_prompt": "¿Crees que desayunar es importante? ¿Qué sueles comer por la mañana?",
+  "pre_teach": ["integral", "adelgazar"],
+  "speakers": [
+    { "id": "juan", "name": "Juan", "accent": "es-ES", "gender": "male" },
+    { "id": "beatriz", "name": "Beatriz", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "juan",
+      "text": "Hoy hablamos de alimentación con la nutricionista Beatriz Molina.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 0.036, "e": 0.254 },
+        { "t": "hablamos", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 0.254, "e": 0.744 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 0.744, "e": 0.907 },
+        {
+          "t": "alimentación",
+          "l": "alimentación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 0.907,
+          "e": 1.615
+        },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 1.615, "e": 1.833 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 1.833, "e": 1.996 },
+        {
+          "t": "nutricionista",
+          "l": "nutricionista",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 1.997,
+          "e": 2.759
+        },
+        { "t": "Beatriz", "l": "beatriz", "p": "PROPN", "w": false, "sp": true, "s": 2.759, "e": 3.195 },
+        { "t": "Molina", "l": "molina", "p": "PROPN", "w": false, "s": 3.195, "e": 3.576 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 3.656
+    },
+    {
+      "id": "s2",
+      "speaker": "juan",
+      "text": "Bienvenida.",
+      "tokens": [
+        { "t": "Bienvenida", "l": "bienvenido", "p": "ADJ", "w": true, "s": 3.906, "e": 4.686 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.906,
+      "end": 4.752
+    },
+    {
+      "id": "s3",
+      "speaker": "beatriz",
+      "text": "Gracias por invitarme.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 5.162, "e": 5.715 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 5.715, "e": 5.991 },
+        { "t": "invitarme", "l": "invitar", "p": "VERB", "w": true, "s": 5.991, "e": 6.682 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.152,
+      "end": 6.755
+    },
+    {
+      "id": "s4",
+      "speaker": "juan",
+      "text": "Beatriz, mucha gente dice que el desayuno es la comida más importante.",
+      "tokens": [
+        { "t": "Beatriz", "l": "beatriz", "p": "PROPN", "w": false, "s": 7.155, "e": 7.625 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "mucha", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 7.885, "e": 8.206 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 8.206, "e": 8.527 },
+        { "t": "dice", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 8.526, "e": 8.793 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 8.794, "e": 9.008 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 9.007, "e": 9.167 },
+        { "t": "desayuno", "l": "desayunar", "p": "VERB", "w": true, "sp": true, "s": 9.168, "e": 9.649 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 9.649, "e": 9.809 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 9.809, "e": 9.969 },
+        { "t": "comida", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 9.969, "e": 10.343 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 10.343, "e": 10.557 },
+        { "t": "importante", "l": "importante", "p": "ADJ", "w": true, "s": 10.557, "e": 11.145 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.155,
+      "end": 11.212
+    },
+    {
+      "id": "s5",
+      "speaker": "juan",
+      "text": "¿Es verdad?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 11.462, "e": 11.633 },
+        { "t": "verdad", "l": "verdad", "p": "NOUN", "w": true, "s": 11.633, "e": 12.032 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.462,
+      "end": 12.102
+    },
+    {
+      "id": "s6",
+      "speaker": "beatriz",
+      "text": "En parte.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 12.512, "e": 12.759 },
+        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "s": 12.759, "e": 13.252 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.502,
+      "end": 13.354
+    },
+    {
+      "id": "s7",
+      "speaker": "beatriz",
+      "text": "Lo importante es tomar alimentos de calidad, sea por la mañana o a mediodía.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 13.614, "e": 13.795 },
+        { "t": "importante", "l": "importante", "p": "ADJ", "w": true, "sp": true, "s": 13.795, "e": 14.458 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 14.457, "e": 14.638 },
+        { "t": "tomar", "l": "tomar", "p": "VERB", "w": true, "sp": true, "s": 14.638, "e": 14.999 },
+        { "t": "alimentos", "l": "alimento", "p": "NOUN", "w": true, "sp": true, "s": 14.999, "e": 15.601 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 15.602, "e": 15.783 },
+        { "t": "calidad", "l": "calidad", "p": "NOUN", "w": true, "s": 15.782, "e": 16.264 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sea", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 16.414, "e": 16.662 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 16.662, "e": 16.91 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 16.909, "e": 17.095 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 17.095, "e": 17.529 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 17.529, "e": 17.653 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 17.653, "e": 17.777 },
+        { "t": "mediodía", "l": "mediodía", "p": "NOUN", "w": true, "s": 17.777, "e": 18.334 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.604,
+      "end": 18.427
+    },
+    {
+      "id": "s8",
+      "speaker": "beatriz",
+      "text": "Un buen desayuno puede incluir fruta, pan integral y un poco de proteína, como huevo o yogur.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 18.677, "e": 18.866 },
+        { "t": "buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 18.866, "e": 19.181 },
+        { "t": "desayuno", "l": "desayunar", "p": "VERB", "w": true, "sp": true, "s": 19.182, "e": 19.75 },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 19.749, "e": 20.127 },
+        { "t": "incluir", "l": "incluir", "p": "VERB", "w": true, "sp": true, "s": 20.128, "e": 20.633 },
+        { "t": "fruta", "l": "fruta", "p": "NOUN", "w": true, "s": 20.632, "e": 21.01 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pan", "l": "pan", "p": "NOUN", "w": true, "sp": true, "s": 21.011, "e": 21.263 },
+        { "t": "integral", "l": "integral", "p": "ADJ", "w": true, "sp": true, "s": 21.263, "e": 21.831 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 21.831, "e": 21.957 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 21.957, "e": 22.146 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 22.146, "e": 22.461 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 22.462, "e": 22.651 },
+        { "t": "proteína", "l": "proteína", "p": "NOUN", "w": true, "s": 22.651, "e": 23.219 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 23.219, "e": 23.534 },
+        { "t": "huevo", "l": "huevo", "p": "NOUN", "w": true, "sp": true, "s": 23.534, "e": 23.912 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 23.912, "e": 24.038 },
+        { "t": "yogur", "l": "yogur", "p": "NOUN", "w": true, "s": 24.039, "e": 24.417 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.677,
+      "end": 24.553
+    },
+    {
+      "id": "s9",
+      "speaker": "juan",
+      "text": "¿Qué opina de las dietas para adelgazar rápido?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 24.983, "e": 25.202 },
+        { "t": "opina", "l": "opinar", "p": "VERB", "w": true, "sp": true, "s": 25.202, "e": 25.531 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 25.531, "e": 25.695 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 25.695, "e": 25.914 },
+        { "t": "dietas", "l": "dieta", "p": "NOUN", "w": true, "sp": true, "s": 25.914, "e": 26.297 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 26.298, "e": 26.572 },
+        { "t": "adelgazar", "l": "adelgazar", "p": "VERB", "w": true, "sp": true, "s": 26.572, "e": 27.12 },
+        { "t": "rápido", "l": "rápido", "p": "ADJ", "w": true, "s": 27.12, "e": 27.503 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.953,
+      "end": 27.575
+    },
+    {
+      "id": "s10",
+      "speaker": "beatriz",
+      "text": "No las recomiendo.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 27.985, "e": 28.178 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 28.178, "e": 28.436 },
+        { "t": "recomiendo", "l": "recomendar", "p": "VERB", "w": true, "s": 28.436, "e": 29.145 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 27.975,
+      "end": 29.243
+    },
+    {
+      "id": "s11",
+      "speaker": "beatriz",
+      "text": "Normalmente se pierde peso al principio, pero luego se recupera.",
+      "tokens": [
+        {
+          "t": "Normalmente",
+          "l": "normalmente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 29.503,
+          "e": 30.316
+        },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 30.316, "e": 30.519 },
+        { "t": "pierde", "l": "perder", "p": "VERB", "w": true, "sp": true, "s": 30.519, "e": 30.993 },
+        { "t": "peso", "l": "peso", "p": "NOUN", "w": true, "sp": true, "s": 30.994, "e": 31.333 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 31.332, "e": 31.535 },
+        { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "s": 31.536, "e": 32.214 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 32.423, "e": 32.73 },
+        { "t": "luego", "l": "luego", "p": "ADV", "w": true, "sp": true, "s": 32.73, "e": 33.098 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 33.097, "e": 33.281 },
+        { "t": "recupera", "l": "recuperar", "p": "VERB", "w": true, "s": 33.281, "e": 33.833 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 29.493,
+      "end": 33.91
+    },
+    {
+      "id": "s12",
+      "speaker": "beatriz",
+      "text": "Es mejor cambiar los hábitos poco a poco.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 34.17, "e": 34.373 },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true, "s": 34.373, "e": 34.78 },
+        { "t": "cambiar", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 34.78, "e": 35.322 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 35.323, "e": 35.594 },
+        { "t": "hábitos", "l": "hábito", "p": "NOUN", "w": true, "sp": true, "s": 35.594, "e": 36.136 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 36.136, "e": 36.475 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 36.475, "e": 36.611 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "s": 36.611, "e": 36.95 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.16,
+      "end": 37.01
+    },
+    {
+      "id": "s13",
+      "speaker": "juan",
+      "text": "¿Cuál es el error más común?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuál", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 37.42, "e": 37.677 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 37.677, "e": 37.831 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 37.832, "e": 37.986 },
+        { "t": "error", "l": "error", "p": "NOUN", "w": true, "sp": true, "s": 37.986, "e": 38.295 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 38.295, "e": 38.501 },
+        { "t": "común", "l": "común", "p": "ADJ", "w": true, "s": 38.501, "e": 38.81 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 37.41,
+      "end": 38.877
+    },
+    {
+      "id": "s14",
+      "speaker": "beatriz",
+      "text": "Beber demasiados refrescos y zumos envasados, porque tienen mucho azúcar.",
+      "tokens": [
+        { "t": "Beber", "l": "beber", "p": "VERB", "w": true, "sp": true, "s": 39.287, "e": 39.69 },
+        { "t": "demasiados", "l": "demasiado", "p": "ADV", "w": true, "sp": true, "s": 39.69, "e": 40.428 },
+        { "t": "refrescos", "l": "refresco", "p": "NOUN", "w": true, "sp": true, "s": 40.427, "e": 41.098 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 41.098, "e": 41.232 },
+        { "t": "zumos", "l": "zumo", "p": "NOUN", "w": true, "sp": true, "s": 41.232, "e": 41.635 },
+        { "t": "envasados", "l": "envasado", "p": "ADJ", "w": true, "s": 41.635, "e": 42.306 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 42.306, "e": 42.776 },
+        { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 42.775, "e": 43.245 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 43.245, "e": 43.648 },
+        { "t": "azúcar", "l": "azúcar", "p": "NOUN", "w": true, "s": 43.647, "e": 44.117 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 39.277,
+      "end": 44.228
+    },
+    {
+      "id": "s15",
+      "speaker": "beatriz",
+      "text": "Una lata de refresco puede tener siete cucharaditas de azúcar.",
+      "tokens": [
+        { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 44.488, "e": 44.747 },
+        { "t": "lata", "l": "lata", "p": "NOUN", "w": true, "sp": true, "s": 44.747, "e": 45.071 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 45.072, "e": 45.267 },
+        { "t": "refresco", "l": "refresco", "p": "NOUN", "w": true, "sp": true, "s": 45.266, "e": 45.85 },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 45.85, "e": 46.239 },
+        { "t": "tener", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 46.239, "e": 46.628 },
+        { "t": "siete", "l": "siete", "p": "NUM", "w": false, "sp": true, "s": 46.628, "e": 47.017 },
+        {
+          "t": "cucharaditas",
+          "l": "cucharadita",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 47.017,
+          "e": 47.86
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 47.86, "e": 48.055 },
+        { "t": "azúcar", "l": "azúcar", "p": "NOUN", "w": true, "s": 48.054, "e": 48.508 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.478,
+      "end": 48.613
+    },
+    {
+      "id": "s16",
+      "speaker": "juan",
+      "text": "Vaya, no lo sabía.",
+      "tokens": [
+        { "t": "Vaya", "l": "ir", "p": "VERB", "w": true, "s": 49.013, "e": 49.369 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 49.369, "e": 49.583 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 49.582, "e": 49.796 },
+        { "t": "sabía", "l": "saber", "p": "VERB", "w": true, "s": 49.796, "e": 50.223 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 49.013,
+      "end": 50.301
+    },
+    {
+      "id": "s17",
+      "speaker": "juan",
+      "text": "¿Y qué tal el pescado?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 50.581, "e": 50.693 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 50.693, "e": 50.918 },
+        { "t": "tal", "l": "tal", "p": "ADV", "w": true, "sp": true, "s": 50.918, "e": 51.143 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 51.143, "e": 51.312 },
+        { "t": "pescado", "l": "pescado", "p": "NOUN", "w": true, "s": 51.311, "e": 51.761 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 50.551,
+      "end": 51.835
+    },
+    {
+      "id": "s18",
+      "speaker": "beatriz",
+      "text": "Muy bien.",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 52.245, "e": 52.512 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 52.512, "e": 52.845 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 52.235,
+      "end": 52.954
+    },
+    {
+      "id": "s19",
+      "speaker": "beatriz",
+      "text": "Conviene comerlo dos o tres veces por semana.",
+      "tokens": [
+        { "t": "Conviene", "l": "convenir", "p": "VERB", "w": true, "sp": true, "s": 53.214, "e": 53.788 },
+        { "t": "comerlo", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 53.788, "e": 54.298 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 54.298, "e": 54.553 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 54.553, "e": 54.681 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 54.681, "e": 55 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 55, "e": 55.383 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 55.382, "e": 55.637 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "s": 55.638, "e": 56.084 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 53.204,
+      "end": 56.181
+    },
+    {
+      "id": "s20",
+      "speaker": "beatriz",
+      "text": "Y también hay que beber agua durante todo el día.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 56.441, "e": 56.557 },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 56.557, "e": 57.019 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 57.019, "e": 57.25 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 57.25, "e": 57.481 },
+        { "t": "beber", "l": "beber", "p": "VERB", "w": true, "sp": true, "s": 57.481, "e": 57.828 },
+        { "t": "agua", "l": "agua", "p": "NOUN", "w": true, "sp": true, "s": 57.827, "e": 58.116 },
+        { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 58.116, "e": 58.578 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 58.578, "e": 58.867 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 58.867, "e": 59.04 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "s": 59.04, "e": 59.271 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.431,
+      "end": 59.339
+    },
+    {
+      "id": "s21",
+      "speaker": "juan",
+      "text": "Para terminar, ¿un consejo sencillo?",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 59.739, "e": 60.021 },
+        { "t": "terminar", "l": "terminar", "p": "VERB", "w": true, "s": 60.021, "e": 60.529 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 60.699, "e": 60.875 },
+        { "t": "consejo", "l": "consejo", "p": "NOUN", "w": true, "sp": true, "s": 60.875, "e": 61.343 },
+        { "t": "sencillo", "l": "sencillo", "p": "ADJ", "w": true, "s": 61.343, "e": 61.87 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 59.739,
+      "end": 61.952
+    },
+    {
+      "id": "s22",
+      "speaker": "beatriz",
+      "text": "Cocinar en casa.",
+      "tokens": [
+        { "t": "Cocinar", "l": "cocinar", "p": "VERB", "w": true, "sp": true, "s": 62.362, "e": 62.907 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 62.907, "e": 63.111 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 63.111, "e": 63.452 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.352,
+      "end": 63.496
+    },
+    {
+      "id": "s23",
+      "speaker": "beatriz",
+      "text": "Cuando preparamos nuestra comida, sabemos exactamente lo que comemos.",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 63.746, "e": 64.22 },
+        { "t": "preparamos", "l": "preparar", "p": "VERB", "w": true, "sp": true, "s": 64.22, "e": 64.964 },
+        { "t": "nuestra", "l": "nuestro", "p": "DET", "w": true, "sp": true, "s": 64.964, "e": 65.505 },
+        { "t": "comida", "l": "comer", "p": "VERB", "w": true, "s": 65.505, "e": 65.979 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sabemos", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 65.978, "e": 66.519 },
+        { "t": "exactamente", "l": "exactamente", "p": "ADV", "w": true, "sp": true, "s": 66.52, "e": 67.332 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 67.331, "e": 67.534 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 67.534, "e": 67.805 },
+        { "t": "comemos", "l": "comer", "p": "VERB", "w": true, "s": 67.805, "e": 68.346 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 63.746,
+      "end": 68.432
+    },
+    {
+      "id": "s24",
+      "speaker": "juan",
+      "text": "Muchas gracias, Beatriz.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 68.858, "e": 69.278 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 69.278, "e": 69.758 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Beatriz", "l": "beatriz", "p": "PROPN", "w": false, "s": 69.758, "e": 70.238 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 68.832,
+      "end": 70.354
+    },
+    {
+      "id": "s25",
+      "speaker": "beatriz",
+      "text": "De nada, ha sido un placer.",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 70.764, "e": 70.982 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 70.982, "e": 71.345 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 71.534, "e": 71.734 },
+        { "t": "sido", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 71.734, "e": 72.067 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 72.067, "e": 72.267 },
+        { "t": "placer", "l": "placer", "p": "NOUN", "w": true, "s": 72.267, "e": 72.734 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 70.754,
+      "end": 72.845
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "integral",
+      "surface": "integral",
+      "pos": "adjective",
+      "def_en": "hecho con todo el grano",
+      "def_es": { "en": "wholemeal", "fr": "complet", "zh": "全麦的", "ja": "全粒の" },
+      "ref": "s8"
+    },
+    {
+      "lemma": "adelgazar",
+      "surface": "adelgazar",
+      "pos": "verb",
+      "def_en": "perder peso",
+      "def_es": { "en": "to lose weight", "fr": "maigrir", "zh": "减肥", "ja": "痩せる" },
+      "ref": "s9"
+    },
+    {
+      "lemma": "envasado",
+      "surface": "envasados",
+      "pos": "adjective",
+      "def_en": "vendido dentro de un envase",
+      "def_es": { "en": "packaged, bottled", "fr": "conditionné", "zh": "包装的", "ja": "パック詰めの" },
+      "ref": "s14"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿De qué trata la entrevista?",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "Healthy eating." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De cómo abrir un restaurante" },
+        { "id": "b", "text": "De cómo comer de forma sana" },
+        { "id": "c", "text": "De recetas de cocina italiana" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué alimento con proteína menciona para el desayuno?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "Egg or yoghurt." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "El arroz" },
+        { "id": "b", "text": "La pasta" },
+        { "id": "c", "text": "El yogur" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Beatriz recomienda las dietas para adelgazar rápido.",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "She does not recommend them." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuál es el error más común?",
+      "evidence": ["s14"],
+      "rationale_es": { "en": "Too many sugary drinks." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tomar muchas bebidas con azúcar" },
+        { "id": "b", "text": "Comer demasiada fruta fresca por la tarde" },
+        { "id": "c", "text": "Cenar muy tarde casi todos los días" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Qué piensa Beatriz sobre los cambios en la alimentación?",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "Gradually." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Hay que hacerlos en un solo día" },
+        { "id": "b", "text": "Hay que ir paso a paso" },
+        { "id": "c", "text": "No hace falta hacer ninguno" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s19"],
+      "rationale_es": { "en": "*Por semana*: per week." },
+      "type": "gap_fill",
+      "text": "Conviene comer pescado dos o tres veces por {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["semana"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "adelgazar", "agua", "algo", "alimentación", "alimento", "azúcar", "beber", "bien", "bienvenido",
+    "bueno", "calidad", "cambiar", "casa", "cocinar", "comer", "común", "con", "consejo", "convenir", "cuando",
+    "cucharadita", "de", "decir", "demasiado", "desayunar", "dieta", "durante", "día", "el", "en", "envasado",
+    "error", "exactamente", "fruta", "gente", "haber", "hablar", "hoy", "huevo", "hábito", "importante",
+    "incluir", "integral", "invitar", "ir", "lata", "luego", "mañana", "mediodía", "mejor", "mucho", "muy",
+    "más", "no", "normalmente", "nuestro", "nutricionista", "o", "opinar", "pan", "para", "parte", "perder",
+    "pero", "pescado", "peso", "placer", "poco", "poder", "por", "porque", "preparar", "principio", "proteína",
+    "que", "qué", "recomendar", "recuperar", "refresco", "rápido", "saber", "se", "semana", "sencillo", "ser",
+    "tal", "también", "tener", "terminar", "todo", "tomar", "un", "verdad", "vez", "y", "yogur", "zumo", "él"
+  ],
+  "difficulty": 1078,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6646, "A2": 0.8137, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 6.8,
+    "flesch_reading_ease": 77.4,
+    "checked_at": "2026-10-19T07:35:31.655Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-012/v1.m4a",
+    "duration_s": 72.845,
+    "wpm": 140,
+    "provider": "piper",
+    "voices": { "juan": "davefx-m", "beatriz": "sharvard-f" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.99, 0.82, 0.78, 0.92, 0.57, 0.46, 0.76, 0.81, 0.96, 0.57, 0.3, 0.78, 1, 0.77, 0.6, 0.01, 1, 0.82,
+      0.75, 0.62, 0.41, 0.04, 1, 0.95, 0.07, 0.88, 0.92, 0.9, 0.87, 0.86, 0.96, 0.84, 0.95, 0.86, 0.6, 0.22,
+      0.76, 1, 0.95, 0, 0.56, 1, 0.33, 0.39, 0.68, 0.92, 0.53, 0.82, 0.73, 0.6, 0.66, 0.67, 0.83, 0.82, 0.83,
+      0.77, 1, 0.84, 0.43, 0.28, 0.52, 0.72, 0.72, 0.76, 0.87, 0.83, 0.6, 0.65, 0.8, 0.66, 0.86, 0.43, 0.75,
+      0.84, 0.73, 0.72, 0.65, 1, 0.47, 0.33, 0, 0.91, 0.86, 0.86, 0.96, 0.86, 0.79, 1, 0.92, 0.35, 0, 1, 0.88,
+      0.67, 0.48, 0.04, 0.68, 0.68, 0.83, 0.67, 0.87, 0.69, 0.66, 0.59, 0.73, 0.49, 0.77, 1, 0.73, 0.66, 0.31,
+      0.58, 0.8, 0.82, 0.94, 0.81, 0.84, 0.69, 1, 0.52, 0.23, 0, 1, 0.93, 0.94, 0.82, 0.29, 0.01, 0.86, 0.86,
+      0.69, 0.93, 0.73, 0.8, 0.6, 1, 0.75, 0.89, 0.45, 0.99, 0.9, 0.66, 0.69, 0.41, 0.33, 0.45, 1, 0.66, 0.49,
+      0.72, 0.68, 0.73, 0.73, 0.69, 0.54, 0.53, 0.64, 0.57, 0.3, 0.01, 1, 0.7, 0.96, 0.62, 0.4, 0.57, 1, 0.92,
+      0.98, 0.29, 0, 1, 0.92, 0.08, 0.86, 1, 0.66, 0.7, 0.59, 0.82, 0.91, 0.93, 0.48, 0.27, 0.14, 0.69, 0.75,
+      0.67, 0.71, 1, 0.8, 0.69, 0.57, 0.3, 0.09, 1, 1, 0.78, 0.77, 0.46, 0.95, 0.44, 0.53, 0.01, 0.92, 1, 0.84,
+      0.51, 0.07, 1, 0.91, 0.98, 0.73, 0.75, 0.64, 0.76, 0.79, 0.86, 0.91, 0.82, 0.85, 0.62, 0.59, 0.27, 0.07,
+      0.19, 1, 0.99, 0.53, 0.73, 0.56, 0, 0.48, 0.61, 0.69, 0.6, 1, 0.6, 0.3
+    ]
+  }
+}

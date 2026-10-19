@@ -1,0 +1,942 @@
+{
+  "id": "es-b2-lis-007",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u04",
+  "series": "es-b2-u04-centro-sin-coches",
+  "skill": "listening",
+  "genre": "discussion",
+  "title": "¿Un centro sin coches?",
+  "summary_es": {
+    "en": "Three neighbours debate the town hall’s plan to close the city centre to private cars.",
+    "fr": "Trois voisins débattent du projet de la mairie de fermer le centre-ville aux voitures particulières.",
+    "zh": "三位邻居讨论市政府禁止私家车进入市中心的计划。",
+    "ja": "3人の住民が、市中心部を自家用車通行止めにする市の計画について議論します。"
+  },
+  "topic": "city-housing",
+  "tags": ["ciudad", "tráfico", "debate"],
+  "can_do": ["L-B2-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["peatonal", "comerciante", "contaminación", "propuesta"],
+  "est_minutes": 10,
+  "prediction_prompt": "¿Te gustaría que el centro de tu ciudad fuera solo para peatones? ¿Por qué?",
+  "pre_teach": ["peatonal", "comerciante"],
+  "speakers": [
+    { "id": "beatriz", "name": "Beatriz", "accent": "es-ES", "gender": "female" },
+    { "id": "gonzalo", "name": "Gonzalo", "accent": "es-ES", "gender": "male" },
+    { "id": "ismael", "name": "Ismael", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 135,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "beatriz",
+      "text": "Bueno, ya sabéis que el ayuntamiento quiere cerrar el centro a los coches a partir de enero.",
+      "tokens": [
+        { "t": "Bueno", "l": "bueno", "p": "ADJ", "w": true, "s": 0.01, "e": 0.53 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 0.68, "e": 0.878 },
+        { "t": "sabéis", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 0.878, "e": 1.339 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 1.339, "e": 1.603 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 1.602, "e": 1.8 },
+        { "t": "ayuntamiento", "l": "ayuntamiento", "p": "NOUN", "w": true, "sp": true, "s": 1.8, "e": 2.656 },
+        { "t": "quiere", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 2.656, "e": 3.117 },
+        { "t": "cerrar", "l": "cerrar", "p": "VERB", "w": true, "sp": true, "s": 3.118, "e": 3.579 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 3.579, "e": 3.777 },
+        { "t": "centro", "l": "centro", "p": "NOUN", "w": true, "sp": true, "s": 3.776, "e": 4.237 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 4.238, "e": 4.37 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 4.369, "e": 4.633 },
+        { "t": "coches", "l": "coche", "p": "NOUN", "w": true, "sp": true, "s": 4.633, "e": 5.094 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 5.094, "e": 5.226 },
+        { "t": "partir", "l": "partir", "p": "VERB", "w": true, "sp": true, "s": 5.226, "e": 5.687 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 5.687, "e": 5.885 },
+        { "t": "enero", "l": "enero", "p": "NOUN", "w": true, "s": 5.885, "e": 6.28 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 6.366
+    },
+    {
+      "id": "s2",
+      "speaker": "beatriz",
+      "text": "¿Qué os parece?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 6.626, "e": 6.915 },
+        { "t": "os", "l": "vosotros", "p": "PRON", "w": true, "sp": true, "s": 6.915, "e": 7.131 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "s": 7.131, "e": 7.636 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.616,
+      "end": 7.724
+    },
+    {
+      "id": "s3",
+      "speaker": "gonzalo",
+      "text": "A mí me parece una idea excelente.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 8.134, "e": 8.293 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 8.293, "e": 8.531 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 8.531, "e": 8.769 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 8.769, "e": 9.325 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 9.325, "e": 9.643 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true, "s": 9.643, "e": 10.04 },
+        { "t": "excelente", "l": "excelente", "p": "ADJ", "w": true, "s": 10.04, "e": 10.834 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.124,
+      "end": 10.932
+    },
+    {
+      "id": "s4",
+      "speaker": "gonzalo",
+      "text": "Vivo en la calle Mayor y el ruido es insoportable, sobre todo por la mañana.",
+      "tokens": [
+        { "t": "Vivo", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 11.192, "e": 11.575 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 11.575, "e": 11.805 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.805, "e": 12.035 },
+        { "t": "calle", "l": "calle", "p": "NOUN", "w": true, "sp": true, "s": 12.035, "e": 12.495 },
+        { "t": "Mayor", "l": "mayor", "p": "PROPN", "w": false, "sp": true, "s": 12.494, "e": 12.954 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 12.954, "e": 13.107 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 13.107, "e": 13.337 },
+        { "t": "ruido", "l": "ruido", "p": "NOUN", "w": true, "sp": true, "s": 13.337, "e": 13.797 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 13.796, "e": 14.026 },
+        { "t": "insoportable", "l": "insoportable", "p": "ADJ", "w": true, "s": 14.026, "e": 15.022 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 15.292, "e": 15.71 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 15.71, "e": 16.058 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 16.058, "e": 16.336 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 16.336, "e": 16.545 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "s": 16.545, "e": 17.032 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.182,
+      "end": 17.162
+    },
+    {
+      "id": "s5",
+      "speaker": "ismael",
+      "text": "Pues yo no lo veo tan claro.",
+      "tokens": [
+        { "t": "Pues", "l": "pues", "p": "SCONJ", "w": true, "sp": true, "s": 17.591, "e": 17.912 },
+        { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 17.912, "e": 18.105 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 18.105, "e": 18.298 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 18.298, "e": 18.491 },
+        { "t": "veo", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 18.491, "e": 18.748 },
+        { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true, "s": 18.748, "e": 19.005 },
+        { "t": "claro", "l": "claro", "p": "ADJ", "w": true, "s": 19.005, "e": 19.391 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.562,
+      "end": 19.48
+    },
+    {
+      "id": "s6",
+      "speaker": "ismael",
+      "text": "Tengo una tienda de muebles en esa zona, y muchos clientes vienen en coche.",
+      "tokens": [
+        { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 19.76, "e": 20.093 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 20.093, "e": 20.315 },
+        { "t": "tienda", "l": "tienda", "p": "NOUN", "w": true, "sp": true, "s": 20.315, "e": 20.704 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 20.704, "e": 20.871 },
+        { "t": "muebles", "l": "mueble", "p": "NOUN", "w": true, "sp": true, "s": 20.87, "e": 21.314 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 21.314, "e": 21.481 },
+        { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 21.481, "e": 21.703 },
+        { "t": "zona", "l": "zona", "p": "NOUN", "w": true, "s": 21.703, "e": 21.981 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 22.38, "e": 22.493 },
+        { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 22.493, "e": 22.888 },
+        { "t": "clientes", "l": "cliente", "p": "NOUN", "w": true, "sp": true, "s": 22.888, "e": 23.396 },
+        { "t": "vienen", "l": "venir", "p": "VERB", "w": true, "sp": true, "s": 23.396, "e": 23.791 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 23.792, "e": 23.961 },
+        { "t": "coche", "l": "coche", "p": "NOUN", "w": true, "s": 23.961, "e": 24.3 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.73,
+      "end": 24.37
+    },
+    {
+      "id": "s7",
+      "speaker": "beatriz",
+      "text": "Pero, Ismael, en otras ciudades pasó lo mismo, y al final los comercios vendieron más, ¿no?",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "s": 24.78, "e": 25.197 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Ismael", "l": "ismael", "p": "PROPN", "w": false, "s": 25.197, "e": 25.781 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 25.78, "e": 26.03 },
+        { "t": "otras", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 26.031, "e": 26.531 },
+        { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "sp": true, "s": 26.531, "e": 27.281 },
+        { "t": "pasó", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 27.281, "e": 27.698 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 27.698, "e": 27.948 },
+        { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "s": 27.948, "e": 28.448 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 28.448, "e": 28.615 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 28.615, "e": 28.865 },
+        { "t": "final", "l": "final", "p": "NOUN", "w": true, "sp": true, "s": 28.865, "e": 29.365 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 29.365, "e": 29.698 },
+        { "t": "comercios", "l": "comercio", "p": "NOUN", "w": true, "sp": true, "s": 29.699, "e": 30.533 },
+        { "t": "vendieron", "l": "vender", "p": "VERB", "w": true, "sp": true, "s": 30.533, "e": 31.367 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "s": 31.366, "e": 31.699 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "s": 31.7, "e": 31.95 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.77,
+      "end": 32.027
+    },
+    {
+      "id": "s8",
+      "speaker": "ismael",
+      "text": "En algunas, sí.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 32.469, "e": 32.718 },
+        { "t": "algunas", "l": "algún", "p": "DET", "w": true, "s": 32.718, "e": 33.381 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "s": 33.38, "e": 33.629 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.427,
+      "end": 33.708
+    },
+    {
+      "id": "s9",
+      "speaker": "ismael",
+      "text": "Sin embargo, una persona que compra un sofá no se lo lleva en autobús.",
+      "tokens": [
+        { "t": "Sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 33.958, "e": 34.195 },
+        { "t": "embargo", "l": "embargo", "p": "NOUN", "w": true, "s": 34.195, "e": 34.668 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 34.808, "e": 35.047 },
+        { "t": "persona", "l": "persona", "p": "NOUN", "w": true, "sp": true, "s": 35.047, "e": 35.526 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 35.526, "e": 35.765 },
+        { "t": "compra", "l": "comprar", "p": "VERB", "w": true, "sp": true, "s": 35.765, "e": 36.184 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 36.184, "e": 36.363 },
+        { "t": "sofá", "l": "sofá", "p": "NOUN", "w": true, "sp": true, "s": 36.363, "e": 36.662 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 36.663, "e": 36.842 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 36.842, "e": 37.021 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 37.022, "e": 37.201 },
+        { "t": "lleva", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 37.201, "e": 37.56 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 37.56, "e": 37.739 },
+        { "t": "autobús", "l": "autobús", "p": "NOUN", "w": true, "s": 37.739, "e": 38.218 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 33.958,
+      "end": 38.297
+    },
+    {
+      "id": "s10",
+      "speaker": "ismael",
+      "text": "Si no pueden aparcar cerca, se irán al centro comercial de las afueras.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 38.547, "e": 38.741 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 38.741, "e": 38.935 },
+        { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 38.935, "e": 39.388 },
+        { "t": "aparcar", "l": "aparcar", "p": "VERB", "w": true, "sp": true, "s": 39.388, "e": 39.906 },
+        { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "s": 39.906, "e": 40.294 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 40.294, "e": 40.488 },
+        { "t": "irán", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 40.488, "e": 40.812 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 40.812, "e": 41.006 },
+        { "t": "centro", "l": "centro", "p": "NOUN", "w": true, "sp": true, "s": 41.006, "e": 41.459 },
+        { "t": "comercial", "l": "comercial", "p": "ADJ", "w": true, "sp": true, "s": 41.459, "e": 42.106 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 42.106, "e": 42.3 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 42.3, "e": 42.559 },
+        { "t": "afueras", "l": "afueras", "p": "NOUN", "w": true, "s": 42.559, "e": 43.077 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 38.547,
+      "end": 43.149
+    },
+    {
+      "id": "s11",
+      "speaker": "gonzalo",
+      "text": "Eso tiene solución.",
+      "tokens": [
+        { "t": "Eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 43.559, "e": 43.892 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 43.892, "e": 44.391 },
+        { "t": "solución", "l": "solución", "p": "NOUN", "w": true, "s": 44.391, "e": 45.139 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 43.549,
+      "end": 45.216
+    },
+    {
+      "id": "s12",
+      "speaker": "gonzalo",
+      "text": "El plan permite que las furgonetas de reparto entren por la mañana temprano.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 45.476, "e": 45.677 },
+        { "t": "plan", "l": "plan", "p": "NOUN", "w": true, "sp": true, "s": 45.677, "e": 46.013 },
+        { "t": "permite", "l": "permitir", "p": "VERB", "w": true, "sp": true, "s": 46.013, "e": 46.55 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 46.55, "e": 46.818 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 46.818, "e": 47.086 },
+        { "t": "furgonetas", "l": "furgoneta", "p": "NOUN", "w": true, "sp": true, "s": 47.087, "e": 47.825 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 47.825, "e": 48.026 },
+        { "t": "reparto", "l": "repartir", "p": "VERB", "w": true, "sp": true, "s": 48.026, "e": 48.563 },
+        { "t": "entren", "l": "entrar", "p": "VERB", "w": true, "sp": true, "s": 48.563, "e": 49.033 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 49.033, "e": 49.301 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 49.301, "e": 49.502 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 49.502, "e": 49.972 },
+        { "t": "temprano", "l": "temprano", "p": "ADV", "w": true, "s": 49.972, "e": 50.576 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 45.466,
+      "end": 50.684
+    },
+    {
+      "id": "s13",
+      "speaker": "ismael",
+      "text": "Ya, pero solo hasta las diez.",
+      "tokens": [
+        { "t": "Ya", "l": "ya", "p": "ADV", "w": true, "s": 51.084, "e": 51.404 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 51.654, "e": 51.95 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 51.95, "e": 52.246 },
+        { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 52.246, "e": 52.601 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 52.601, "e": 52.838 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "s": 52.838, "e": 53.134 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 51.084,
+      "end": 53.284
+    },
+    {
+      "id": "s14",
+      "speaker": "ismael",
+      "text": "Y yo hago la mayoría de las entregas por la tarde.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 53.569, "e": 53.689 },
+        { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 53.689, "e": 53.87 },
+        { "t": "hago", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 53.87, "e": 54.171 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 54.171, "e": 54.352 },
+        { "t": "mayoría", "l": "mayoría", "p": "NOUN", "w": true, "sp": true, "s": 54.352, "e": 54.834 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 54.833, "e": 55.014 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 55.014, "e": 55.255 },
+        { "t": "entregas", "l": "entrega", "p": "NOUN", "w": true, "sp": true, "s": 55.255, "e": 55.797 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 55.796, "e": 56.037 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 56.037, "e": 56.218 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "s": 56.218, "e": 56.579 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 53.534,
+      "end": 56.659
+    },
+    {
+      "id": "s15",
+      "speaker": "beatriz",
+      "text": "Entiendo tu preocupación.",
+      "tokens": [
+        { "t": "Entiendo", "l": "entender", "p": "VERB", "w": true, "sp": true, "s": 57.069, "e": 57.757 },
+        { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true, "s": 57.757, "e": 57.986 },
+        { "t": "preocupación", "l": "preocupación", "p": "NOUN", "w": true, "s": 57.986, "e": 58.979 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 57.059,
+      "end": 59.041
+    },
+    {
+      "id": "s16",
+      "speaker": "beatriz",
+      "text": "Aun así, piensa en la contaminación.",
+      "tokens": [
+        { "t": "Aun", "l": "aun", "p": "ADV", "w": true, "sp": true, "s": 59.302, "e": 59.652 },
+        { "t": "así", "l": "así", "p": "ADV", "w": true, "s": 59.652, "e": 60.002 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "piensa", "l": "pensar", "p": "VERB", "w": true, "sp": true, "s": 60.192, "e": 60.682 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 60.682, "e": 60.892 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 60.892, "e": 61.102 },
+        { "t": "contaminación", "l": "contaminación", "p": "NOUN", "w": true, "s": 61.102, "e": 62.082 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 59.292,
+      "end": 62.188
+    },
+    {
+      "id": "s17",
+      "speaker": "beatriz",
+      "text": "El año pasado se superaron los límites del aire casi cuarenta días.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 62.448, "e": 62.673 },
+        { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 62.673, "e": 62.973 },
+        { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "sp": true, "s": 62.972, "e": 63.496 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 63.497, "e": 63.722 },
+        { "t": "superaron", "l": "superar", "p": "VERB", "w": true, "sp": true, "s": 63.722, "e": 64.471 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 64.471, "e": 64.771 },
+        { "t": "límites", "l": "límite", "p": "NOUN", "w": true, "sp": true, "s": 64.771, "e": 65.37 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 65.37, "e": 65.67 },
+        { "t": "aire", "l": "aire", "p": "NOUN", "w": true, "sp": true, "s": 65.67, "e": 66.045 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 66.044, "e": 66.419 },
+        { "t": "cuarenta", "l": "cuarenta", "p": "NUM", "w": false, "sp": true, "s": 66.419, "e": 67.093 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 67.093, "e": 67.468 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.438,
+      "end": 67.518
+    },
+    {
+      "id": "s18",
+      "speaker": "gonzalo",
+      "text": "Exacto.",
+      "tokens": [
+        { "t": "Exacto", "l": "exacto", "p": "ADJ", "w": true, "s": 67.928, "e": 68.718 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 67.918,
+      "end": 68.793
+    },
+    {
+      "id": "s19",
+      "speaker": "gonzalo",
+      "text": "Y no solo es el aire.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 69.053, "e": 69.195 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 69.195, "e": 69.408 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 69.408, "e": 69.763 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 69.763, "e": 69.976 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 69.975, "e": 70.188 },
+        { "t": "aire", "l": "aire", "p": "NOUN", "w": true, "s": 70.188, "e": 70.543 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 69.043,
+      "end": 70.625
+    },
+    {
+      "id": "s20",
+      "speaker": "gonzalo",
+      "text": "Mis hijos no pueden ir solos al colegio porque las calles son peligrosas.",
+      "tokens": [
+        { "t": "Mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 70.885, "e": 71.186 },
+        { "t": "hijos", "l": "hijo", "p": "NOUN", "w": true, "sp": true, "s": 71.186, "e": 71.637 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 71.637, "e": 71.863 },
+        { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 71.863, "e": 72.389 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 72.389, "e": 72.615 },
+        { "t": "solos", "l": "solo", "p": "ADJ", "w": true, "sp": true, "s": 72.615, "e": 73.066 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 73.066, "e": 73.292 },
+        { "t": "colegio", "l": "colegio", "p": "NOUN", "w": true, "sp": true, "s": 73.292, "e": 73.894 },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 73.893, "e": 74.419 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 74.42, "e": 74.721 },
+        { "t": "calles", "l": "calle", "p": "NOUN", "w": true, "sp": true, "s": 74.72, "e": 75.246 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 75.247, "e": 75.548 },
+        { "t": "peligrosas", "l": "peligroso", "p": "ADJ", "w": true, "s": 75.548, "e": 76.375 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 70.875,
+      "end": 76.432
+    },
+    {
+      "id": "s21",
+      "speaker": "beatriz",
+      "text": "Y los mayores también lo agradecerían.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 76.842, "e": 76.985 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 76.985, "e": 77.27 },
+        { "t": "mayores", "l": "mayor", "p": "ADJ", "w": true, "sp": true, "s": 77.27, "e": 77.841 },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 77.84, "e": 78.411 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 78.411, "e": 78.625 },
+        { "t": "agradecerían", "l": "agradecer", "p": "VERB", "w": true, "s": 78.625, "e": 79.552 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 76.832,
+      "end": 79.635
+    },
+    {
+      "id": "s22",
+      "speaker": "beatriz",
+      "text": "Mi madre camina con dificultad y cruzar la avenida le da miedo.",
+      "tokens": [
+        { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 79.895, "e": 80.113 },
+        { "t": "madre", "l": "madre", "p": "NOUN", "w": true, "sp": true, "s": 80.113, "e": 80.548 },
+        { "t": "camina", "l": "caminar", "p": "VERB", "w": true, "sp": true, "s": 80.548, "e": 81.056 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 81.056, "e": 81.346 },
+        { "t": "dificultad", "l": "dificultad", "p": "NOUN", "w": true, "sp": true, "s": 81.346, "e": 82.144 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 82.144, "e": 82.289 },
+        { "t": "cruzar", "l": "cruzar", "p": "VERB", "w": true, "sp": true, "s": 82.289, "e": 82.797 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 82.797, "e": 83.015 },
+        { "t": "avenida", "l": "avenida", "p": "NOUN", "w": true, "sp": true, "s": 83.014, "e": 83.594 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 83.595, "e": 83.813 },
+        { "t": "da", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 83.812, "e": 84.03 },
+        { "t": "miedo", "l": "miedo", "p": "NOUN", "w": true, "s": 84.03, "e": 84.465 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 79.885,
+      "end": 84.534
+    },
+    {
+      "id": "s23",
+      "speaker": "ismael",
+      "text": "Ya lo sé.",
+      "tokens": [
+        { "t": "Ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 84.954, "e": 85.174 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 85.174, "e": 85.394 },
+        { "t": "sé", "l": "ser", "p": "AUX", "w": true, "s": 85.394, "e": 85.614 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 84.934,
+      "end": 85.697
+    },
+    {
+      "id": "s24",
+      "speaker": "ismael",
+      "text": "Mi propia hija va en bicicleta al instituto y siempre estoy preocupado.",
+      "tokens": [
+        { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 85.967, "e": 86.154 },
+        { "t": "propia", "l": "propio", "p": "ADJ", "w": true, "sp": true, "s": 86.154, "e": 86.591 },
+        { "t": "hija", "l": "hijo", "p": "NOUN", "w": true, "sp": true, "s": 86.591, "e": 86.903 },
+        { "t": "va", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 86.903, "e": 87.09 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 87.09, "e": 87.277 },
+        { "t": "bicicleta", "l": "bicicleta", "p": "NOUN", "w": true, "sp": true, "s": 87.277, "e": 87.901 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 87.901, "e": 88.088 },
+        { "t": "instituto", "l": "instituto", "p": "NOUN", "w": true, "sp": true, "s": 88.088, "e": 88.712 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 88.712, "e": 88.837 },
+        { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true, "s": 88.837, "e": 89.336 },
+        { "t": "estoy", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 89.336, "e": 89.71 },
+        { "t": "preocupado", "l": "preocuparse", "p": "VERB", "w": true, "s": 89.711, "e": 90.397 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 85.947,
+      "end": 90.515
+    },
+    {
+      "id": "s25",
+      "speaker": "ismael",
+      "text": "No digo que no haya un problema.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 90.792, "e": 90.96 },
+        { "t": "digo", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 90.96, "e": 91.24 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 91.24, "e": 91.464 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 91.463, "e": 91.631 },
+        { "t": "haya", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 91.631, "e": 91.911 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 91.911, "e": 92.079 },
+        { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "s": 92.079, "e": 92.582 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 90.765,
+      "end": 92.659
+    },
+    {
+      "id": "s26",
+      "speaker": "ismael",
+      "text": "Lo que digo es que la propuesta se ha hecho sin hablar con los comerciantes.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 92.935, "e": 93.075 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 93.075, "e": 93.262 },
+        { "t": "digo", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 93.262, "e": 93.496 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 93.496, "e": 93.636 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 93.636, "e": 93.823 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 93.823, "e": 93.963 },
+        { "t": "propuesta", "l": "propuesta", "p": "NOUN", "w": true, "sp": true, "s": 93.963, "e": 94.43 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 94.43, "e": 94.57 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 94.57, "e": 94.71 },
+        { "t": "hecho", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 94.71, "e": 94.99 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 94.99, "e": 95.177 },
+        { "t": "hablar", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 95.177, "e": 95.504 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 95.504, "e": 95.691 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 95.691, "e": 95.878 },
+        { "t": "comerciantes", "l": "comerciante", "p": "NOUN", "w": true, "s": 95.878, "e": 96.485 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 92.909,
+      "end": 96.56
+    },
+    {
+      "id": "s27",
+      "speaker": "beatriz",
+      "text": "En eso tienes razón.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 96.97, "e": 97.249 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 97.249, "e": 97.621 },
+        { "t": "tienes", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 97.621, "e": 98.272 },
+        { "t": "razón", "l": "razón", "p": "NOUN", "w": true, "s": 98.272, "e": 98.83 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 96.96,
+      "end": 98.934
+    },
+    {
+      "id": "s28",
+      "speaker": "beatriz",
+      "text": "Nadie nos ha preguntado nada, ni a los vecinos ni a las tiendas.",
+      "tokens": [
+        { "t": "Nadie", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 99.194, "e": 99.62 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 99.62, "e": 99.904 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 99.904, "e": 100.117 },
+        {
+          "t": "preguntado",
+          "l": "preguntar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 100.117,
+          "e": 100.898
+        },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 100.899, "e": 101.254 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true, "s": 101.464, "e": 101.694 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 101.694, "e": 101.848 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 101.848, "e": 102.155 },
+        { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "sp": true, "s": 102.155, "e": 102.769 },
+        { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true, "s": 102.769, "e": 102.999 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 102.999, "e": 103.153 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 103.153, "e": 103.46 },
+        { "t": "tiendas", "l": "tienda", "p": "NOUN", "w": true, "s": 103.46, "e": 104.074 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 99.184,
+      "end": 104.136
+    },
+    {
+      "id": "s29",
+      "speaker": "gonzalo",
+      "text": "¿Y si pedimos una reunión con la concejala?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 104.546, "e": 104.691 },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 104.691, "e": 104.908 },
+        { "t": "pedimos", "l": "pedir", "p": "VERB", "w": true, "sp": true, "s": 104.908, "e": 105.487 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 105.487, "e": 105.777 },
+        { "t": "reunión", "l": "reunión", "p": "NOUN", "w": true, "sp": true, "s": 105.776, "e": 106.355 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 106.356, "e": 106.646 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 106.645, "e": 106.862 },
+        { "t": "concejala", "l": "concejal", "p": "NOUN", "w": true, "s": 106.862, "e": 107.586 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 104.536,
+      "end": 107.731
+    },
+    {
+      "id": "s30",
+      "speaker": "gonzalo",
+      "text": "Podríamos proponer un horario de entregas más amplio.",
+      "tokens": [
+        { "t": "Podríamos", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 107.991, "e": 108.704 },
+        { "t": "proponer", "l": "proponer", "p": "VERB", "w": true, "sp": true, "s": 108.704, "e": 109.346 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 109.346, "e": 109.56 },
+        { "t": "horario", "l": "horario", "p": "NOUN", "w": true, "sp": true, "s": 109.56, "e": 110.131 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 110.131, "e": 110.345 },
+        { "t": "entregas", "l": "entrega", "p": "NOUN", "w": true, "sp": true, "s": 110.345, "e": 110.987 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 110.986, "e": 111.271 },
+        { "t": "amplio", "l": "ampliar", "p": "VERB", "w": true, "s": 111.272, "e": 111.771 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 107.981,
+      "end": 111.852
+    },
+    {
+      "id": "s31",
+      "speaker": "ismael",
+      "text": "Me parece bien.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 112.28, "e": 112.478 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 112.478, "e": 112.94 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 112.94, "e": 113.27 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 112.252,
+      "end": 113.332
+    },
+    {
+      "id": "s32",
+      "speaker": "ismael",
+      "text": "Si me permiten repartir hasta las doce y hay un aparcamiento barato cerca, yo también apoyaría la idea.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 113.582, "e": 113.762 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 113.762, "e": 113.942 },
+        { "t": "permiten", "l": "permitir", "p": "VERB", "w": true, "sp": true, "s": 113.941, "e": 114.48 },
+        { "t": "repartir", "l": "repartir", "p": "VERB", "w": true, "sp": true, "s": 114.48, "e": 115.019 },
+        { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 115.019, "e": 115.378 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 115.378, "e": 115.617 },
+        { "t": "doce", "l": "doce", "p": "NUM", "w": false, "sp": true, "s": 115.617, "e": 115.916 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 115.917, "e": 116.037 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 116.036, "e": 116.275 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 116.276, "e": 116.456 },
+        {
+          "t": "aparcamiento",
+          "l": "aparcamiento",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 116.456,
+          "e": 117.234
+        },
+        { "t": "barato", "l": "barato", "p": "ADJ", "w": true, "sp": true, "s": 117.234, "e": 117.653 },
+        { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "s": 117.653, "e": 118.012 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 118.262, "e": 118.469 },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 118.469, "e": 119.02 },
+        { "t": "apoyaría", "l": "apoyar", "p": "VERB", "w": true, "sp": true, "s": 119.02, "e": 119.64 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 119.641, "e": 119.848 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "s": 119.847, "e": 120.192 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 113.582,
+      "end": 120.277
+    },
+    {
+      "id": "s33",
+      "speaker": "beatriz",
+      "text": "Pues decidido.",
+      "tokens": [
+        { "t": "Pues", "l": "pues", "p": "SCONJ", "w": true, "sp": true, "s": 120.707, "e": 121.068 },
+        { "t": "decidido", "l": "decidir", "p": "VERB", "w": true, "s": 121.068, "e": 121.717 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 120.677,
+      "end": 121.783
+    },
+    {
+      "id": "s34",
+      "speaker": "beatriz",
+      "text": "Yo escribo al ayuntamiento esta semana y os aviso en cuanto me respondan.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 122.043, "e": 122.276 },
+        { "t": "escribo", "l": "escribir", "p": "VERB", "w": true, "sp": true, "s": 122.276, "e": 122.898 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 122.899, "e": 123.132 },
+        {
+          "t": "ayuntamiento",
+          "l": "ayuntamiento",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 123.132,
+          "e": 124.144
+        },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 124.144, "e": 124.533 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true, "s": 124.533, "e": 125.078 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 125.078, "e": 125.234 },
+        { "t": "os", "l": "vosotros", "p": "PRON", "w": true, "sp": true, "s": 125.233, "e": 125.466 },
+        { "t": "aviso", "l": "avisar", "p": "VERB", "w": true, "sp": true, "s": 125.467, "e": 125.934 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 125.933, "e": 126.166 },
+        { "t": "cuanto", "l": "cuanto", "p": "ADV", "w": true, "sp": true, "s": 126.167, "e": 126.712 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 126.711, "e": 126.944 },
+        { "t": "respondan", "l": "responder", "p": "VERB", "w": true, "s": 126.945, "e": 127.723 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 122.033,
+      "end": 127.795
+    },
+    {
+      "id": "s35",
+      "speaker": "gonzalo",
+      "text": "Perfecto.",
+      "tokens": [
+        { "t": "Perfecto", "l": "perfecto", "p": "ADJ", "w": true, "s": 128.205, "e": 128.955 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 128.195,
+      "end": 129.066
+    },
+    {
+      "id": "s36",
+      "speaker": "gonzalo",
+      "text": "Al final, todos queremos un barrio donde se pueda vivir y trabajar.",
+      "tokens": [
+        { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 129.326, "e": 130.689 },
+        { "t": "final", "l": "final", "p": "NOUN", "w": true, "s": 130.689, "e": 133.416 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 133.666, "e": 133.751 },
+        { "t": "queremos", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 133.751, "e": 133.879 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 133.879, "e": 133.922 },
+        { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "sp": true, "s": 133.922, "e": 134.021 },
+        { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true, "s": 134.021, "e": 134.106 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 134.107, "e": 134.15 },
+        { "t": "pueda", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 134.149, "e": 134.234 },
+        { "t": "vivir", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 134.234, "e": 134.319 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 134.32, "e": 134.348 },
+        { "t": "trabajar", "l": "trabajar", "p": "VERB", "w": true, "s": 134.348, "e": 134.476 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 129.316,
+      "end": 134.605
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "insoportable",
+      "surface": "insoportable",
+      "pos": "adjective",
+      "def_en": "tan malo que no se puede aguantar",
+      "def_es": { "en": "unbearable", "fr": "insupportable", "zh": "难以忍受的", "ja": "耐えがたい" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "reparto",
+      "surface": "reparto",
+      "pos": "noun",
+      "def_en": "acción de llevar productos a su destino",
+      "def_es": { "en": "delivery", "fr": "livraison", "zh": "配送", "ja": "配達" },
+      "ref": "s12"
+    },
+    {
+      "lemma": "concejal",
+      "surface": "concejala",
+      "pos": "noun",
+      "def_en": "persona que forma parte del gobierno de una ciudad",
+      "def_es": { "en": "councillor", "fr": "conseillère municipale", "zh": "市议员", "ja": "市議会議員" },
+      "ref": "s29"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿De qué hablan los tres vecinos?",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "A plan to close the centre to cars." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De la apertura de un centro comercial nuevo" },
+        { "id": "b", "text": "De una nueva norma sobre el tráfico" },
+        { "id": "c", "text": "De un cambio en el horario de los autobuses" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué le gusta la idea a Gonzalo?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "Because of the noise where he lives." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque así venderá más muebles" },
+        { "id": "b", "text": "Porque trabaja en el ayuntamiento" },
+        { "id": "c", "text": "Porque donde vive hay mucho ruido" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué teme Ismael?",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "That customers will go to the out-of-town mall." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que sus clientes compren en otro sitio" },
+        { "id": "b", "text": "Que le suban mucho el precio del alquiler" },
+        { "id": "c", "text": "Que cierren el colegio de sus dos hijos" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Las furgonetas de reparto podrán entrar durante todo el día.",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "Only until ten." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿En qué están de acuerdo al final Beatriz e Ismael?",
+      "evidence": ["s28"],
+      "rationale_es": { "en": "Nobody asked them." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En que el plan debe cancelarse" },
+        { "id": "b", "text": "En que nadie les ha consultado" },
+        { "id": "c", "text": "En que el ruido no es un problema" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "post",
+      "prompt": "¿Con qué condición apoyaría Ismael la idea?",
+      "evidence": ["s32"],
+      "rationale_es": { "en": "Longer delivery hours and cheap parking." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que el ayuntamiento le pague una parte del alquiler" },
+        { "id": "b", "text": "Que la calle Mayor quede abierta a todos los coches" },
+        { "id": "c", "text": "Más horario de reparto y aparcamiento barato" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s34"],
+      "rationale_es": { "en": "*Ayuntamiento*: town hall." },
+      "type": "gap_fill",
+      "text": "Beatriz va a escribir al {{1}} esta semana.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["ayuntamiento"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "afueras", "agradecer", "aire", "algo", "algún", "ampliar", "aparcamiento", "aparcar", "apoyar",
+    "así", "aun", "autobús", "avenida", "avisar", "ayuntamiento", "año", "barato", "barrio", "bicicleta",
+    "bien", "bueno", "calle", "caminar", "casi", "centro", "cerca", "cerrar", "ciudad", "claro", "cliente",
+    "coche", "colegio", "comercial", "comerciante", "comercio", "comprar", "con", "concejal", "contaminación",
+    "cruzar", "cuanto", "dar", "de", "decidir", "decir", "dificultad", "donde", "día", "el", "embargo", "en",
+    "enero", "entender", "entrar", "entrega", "escribir", "ese", "estar", "este", "esto", "exacto",
+    "excelente", "final", "furgoneta", "haber", "hablar", "hacer", "hasta", "hijo", "horario", "idea",
+    "insoportable", "instituto", "ir", "llevar", "límite", "madre", "mayor", "mayoría", "mañana", "mi",
+    "miedo", "mismo", "mucho", "mueble", "más", "ni", "no", "nosotros", "otro", "parecer", "partir", "pasado",
+    "pasar", "pedir", "peligroso", "pensar", "perfecto", "permitir", "pero", "persona", "plan", "poder", "por",
+    "porque", "preguntar", "preocupación", "preocuparse", "problema", "propio", "proponer", "propuesta",
+    "pues", "que", "querer", "qué", "razón", "repartir", "responder", "reunión", "ruido", "saber", "se",
+    "semana", "ser", "si", "siempre", "sin", "sobre", "sofá", "solo", "solución", "superar", "también", "tan",
+    "tarde", "temprano", "tener", "tienda", "todo", "trabajar", "tu", "un", "vecino", "vender", "venir", "ver",
+    "vivir", "vosotros", "y", "ya", "yo", "zona", "él"
+  ],
+  "difficulty": 1252,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6943, "A2": 0.8439, "B1": 0.9427, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 8.9,
+    "flesch_reading_ease": 87,
+    "checked_at": "2026-10-19T07:42:35.028Z"
+  },
+  "audio": {
+    "src": "audio/b2/es-b2-lis-007/v1.m4a",
+    "duration_s": 134.605,
+    "wpm": 143,
+    "provider": "piper",
+    "voices": { "beatriz": "sharvard-f", "gonzalo": "sharvard-m", "ismael": "davefx-m" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      1, 0.8, 0.69, 0.8, 0.73, 0.86, 0.98, 0.88, 0.78, 0.8, 0.76, 0.72, 1, 0.23, 0.94, 1, 0.79, 0.69, 0.62,
+      0.18, 0.89, 1, 0.77, 0.54, 0.78, 0.57, 0.98, 0.71, 0.86, 0.71, 0.19, 1, 0.92, 0.9, 0.93, 1, 0.92, 0.9,
+      0.94, 0.37, 0.78, 0.85, 0.57, 0.35, 0.93, 0.5, 0.73, 0.68, 1, 0.71, 0.45, 0.58, 0.65, 0.65, 0.68, 0.82,
+      0.43, 0.65, 1, 0.52, 0.94, 1, 1, 0.9, 0.81, 0.98, 0.96, 0.79, 0.95, 0.89, 0.96, 1, 0.95, 0.9, 0.94, 0.63,
+      0.48, 1, 0.91, 0.6, 0.44, 1, 0.44, 0.45, 0.47, 0.6, 0.45, 0.46, 0.43, 0.55, 0.1, 0.96, 0.96, 1, 0.83,
+      0.94, 0.99, 1, 0.96, 0.95, 0.89, 0.4, 1, 0.63, 0.83, 0.67, 0.67, 0.71, 1, 0.66, 0.33, 0.76, 0.89, 0.54,
+      0.87, 0.7, 1, 0.85, 0.77, 0.74, 0.18, 1, 0.21, 1, 0.76, 0.91, 0.51, 0.88, 0.85, 1, 0.64, 0.75, 0.92,
+      0.78, 0.65, 0.53, 0.1, 0.69, 1, 0.81, 0.92, 0.52, 0.71, 1, 0.95, 0.68, 0.9, 0.97, 0.89, 0.9, 0.55, 1,
+      0.7, 0.94, 1, 0.98, 0.95, 0.95, 0.99, 0.93, 0.86, 0.44, 0.95, 1, 0.85, 0.95, 0.99, 0.91, 0.97, 1, 0.66,
+      0.95, 0.48, 1, 0.95, 0.83, 0.45, 1, 0.94, 0.97, 0.65, 0.8, 0.75, 0.65, 0.45, 0.15, 0.45, 0.59, 0.86,
+      0.69, 0.99, 1, 0.66, 0.7, 0.69, 1, 0.61, 0.47, 0.52, 0.12, 1, 0.9, 0.92, 0.97, 0.85, 0.96, 0.94, 0.95,
+      0.86, 0.93, 0.88, 0.98, 0.85, 1, 0.38, 1, 0.62, 1, 0.99, 0.81, 0.69, 0.61, 0.58, 0.61, 0.61, 0.92, 0.78,
+      0.36, 1, 0.9, 0.93, 0.78, 0.81, 0.74, 0.99, 0.68, 1, 0.65, 0.76, 0.7
+    ]
+  }
+}

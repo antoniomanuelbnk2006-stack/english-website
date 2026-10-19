@@ -1,0 +1,356 @@
+{
+  "id": "es-a2-lis-012",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u01",
+  "series": "es-a2-u01-rutina",
+  "skill": "listening",
+  "genre": "monologue",
+  "title": "Mi rutina diaria",
+  "summary_es": {
+    "en": "A woman describes her daily routine using reflexive verbs.",
+    "fr": "Une femme décrit sa routine quotidienne avec des verbes pronominaux.",
+    "zh": "一位女士用反身动词讲述她的日常作息。",
+    "ja": "女性が再帰動詞を使って毎日の習慣を話します。"
+  },
+  "topic": "daily-life",
+  "tags": ["rutina", "reflexivos", "horas"],
+  "can_do": ["L-A2-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["despertarse", "levantarse", "desayunar", "acostarse"],
+  "est_minutes": 6,
+  "prediction_prompt": "Una persona cuenta su día. ¿A qué hora crees que se levanta?",
+  "pre_teach": ["despertarse", "ducharse"],
+  "speakers": [
+    { "id": "sofia", "name": "Sofía", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 145,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "sofia",
+      "text": "Me llamo Sofía y trabajo en una oficina.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 0.01, "e": 0.24 },
+        { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true, "s": 0.24, "e": 0.701 },
+        { "t": "Sofía", "l": "sofía", "p": "PROPN", "w": false, "sp": true, "s": 0.701, "e": 1.162 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 1.161, "e": 1.315 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 1.315, "e": 1.929 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 1.929, "e": 2.159 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 2.159, "e": 2.466 },
+        { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true, "s": 2.466, "e": 3.08 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 3.159
+    },
+    {
+      "id": "s2",
+      "speaker": "sofia",
+      "text": "Me despierto a las siete, pero me levanto a las siete y media.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 3.669, "e": 3.866 },
+        { "t": "despierto", "l": "despertarse", "p": "VERB", "w": true, "sp": true, "s": 3.866, "e": 4.522 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 4.522, "e": 4.653 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 4.653, "e": 4.915 },
+        { "t": "siete", "l": "siete", "p": "NUM", "w": false, "s": 4.915, "e": 5.309 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 5.529, "e": 5.848 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 5.848, "e": 6.04 },
+        { "t": "levanto", "l": "levantarse", "p": "VERB", "w": true, "sp": true, "s": 6.04, "e": 6.551 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 6.551, "e": 6.679 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 6.679, "e": 6.935 },
+        { "t": "siete", "l": "siete", "p": "NUM", "w": false, "sp": true, "s": 6.935, "e": 7.318 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 7.318, "e": 7.446 },
+        { "t": "media", "l": "medio", "p": "ADJ", "w": true, "s": 7.446, "e": 7.829 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.659,
+      "end": 7.891
+    },
+    {
+      "id": "s3",
+      "speaker": "sofia",
+      "text": "Primero me ducho y después desayuno con mi marido.",
+      "tokens": [
+        { "t": "Primero", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 8.401, "e": 8.959 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 8.959, "e": 9.168 },
+        { "t": "ducho", "l": "ducharse", "p": "VERB", "w": true, "sp": true, "s": 9.169, "e": 9.588 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 9.588, "e": 9.728 },
+        { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true, "s": 9.727, "e": 10.285 },
+        { "t": "desayuno", "l": "desayunar", "p": "VERB", "w": true, "sp": true, "s": 10.286, "e": 10.914 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 10.914, "e": 11.193 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 11.193, "e": 11.402 },
+        { "t": "marido", "l": "marido", "p": "NOUN", "w": true, "s": 11.402, "e": 11.891 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.391,
+      "end": 11.966
+    },
+    {
+      "id": "s4",
+      "speaker": "sofia",
+      "text": "A las ocho y media salgo de casa y voy en metro.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 12.476, "e": 12.626 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 12.626, "e": 12.927 },
+        { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true, "s": 12.927, "e": 13.303 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 13.303, "e": 13.453 },
+        { "t": "media", "l": "medio", "p": "ADJ", "w": true, "sp": true, "s": 13.454, "e": 13.905 },
+        { "t": "salgo", "l": "salir", "p": "VERB", "w": true, "sp": true, "s": 13.905, "e": 14.356 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 14.356, "e": 14.582 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true, "s": 14.582, "e": 14.958 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 14.958, "e": 15.108 },
+        { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 15.108, "e": 15.409 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 15.409, "e": 15.635 },
+        { "t": "metro", "l": "metro", "p": "NOUN", "w": true, "s": 15.635, "e": 16.086 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.466,
+      "end": 16.165
+    },
+    {
+      "id": "s5",
+      "speaker": "sofia",
+      "text": "Trabajo de nueve a cinco, con una hora para comer.",
+      "tokens": [
+        { "t": "Trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 16.675, "e": 17.225 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 17.225, "e": 17.431 },
+        { "t": "nueve", "l": "nueve", "p": "NUM", "w": false, "sp": true, "s": 17.432, "e": 17.845 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 17.844, "e": 17.982 },
+        { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "s": 17.982, "e": 18.395 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 18.394, "e": 18.669 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 18.669, "e": 18.944 },
+        { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 18.945, "e": 19.289 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 19.288, "e": 19.632 },
+        { "t": "comer", "l": "comer", "p": "VERB", "w": true, "s": 19.632, "e": 20.045 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.665,
+      "end": 20.161
+    },
+    {
+      "id": "s6",
+      "speaker": "sofia",
+      "text": "Por la tarde, a veces voy al gimnasio.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 20.671, "e": 20.951 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 20.951, "e": 21.161 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "s": 21.161, "e": 21.581 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 21.741, "e": 21.892 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 21.892, "e": 22.345 },
+        { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 22.344, "e": 22.646 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 22.646, "e": 22.872 },
+        { "t": "gimnasio", "l": "gimnasio", "p": "NOUN", "w": true, "s": 22.872, "e": 23.551 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.661,
+      "end": 23.624
+    },
+    {
+      "id": "s7",
+      "speaker": "sofia",
+      "text": "Ceno a las nueve y veo un rato la televisión.",
+      "tokens": [
+        { "t": "Ceno", "l": "cenar", "p": "VERB", "w": true, "sp": true, "s": 24.224, "e": 24.552 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 24.552, "e": 24.683 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 24.683, "e": 24.945 },
+        { "t": "nueve", "l": "nueve", "p": "NUM", "w": false, "sp": true, "s": 24.945, "e": 25.338 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 25.338, "e": 25.469 },
+        { "t": "veo", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 25.47, "e": 25.732 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 25.732, "e": 25.929 },
+        { "t": "rato", "l": "rato", "p": "NOUN", "w": true, "sp": true, "s": 25.928, "e": 26.256 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 26.256, "e": 26.453 },
+        { "t": "televisión", "l": "televisión", "p": "NOUN", "w": true, "s": 26.453, "e": 27.174 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.124,
+      "end": 27.259
+    },
+    {
+      "id": "s8",
+      "speaker": "sofia",
+      "text": "Me acuesto a las once y media y duermo muy bien.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 27.769, "e": 28.014 },
+        { "t": "acuesto", "l": "acostarse", "p": "VERB", "w": true, "sp": true, "s": 28.014, "e": 28.667 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 28.667, "e": 28.83 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 28.831, "e": 29.158 },
+        { "t": "once", "l": "once", "p": "NUM", "w": false, "sp": true, "s": 29.157, "e": 29.565 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 29.566, "e": 29.729 },
+        { "t": "media", "l": "medio", "p": "ADJ", "w": true, "sp": true, "s": 29.729, "e": 30.219 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 30.219, "e": 30.382 },
+        { "t": "duermo", "l": "dormir", "p": "VERB", "w": true, "sp": true, "s": 30.382, "e": 30.954 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 30.954, "e": 31.281 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 31.281, "e": 31.689 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 27.759,
+      "end": 31.787
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "despertarse",
+      "surface": "despierto",
+      "pos": "verb",
+      "def_en": "dejar de dormir",
+      "def_es": { "en": "to wake up", "fr": "se réveiller", "zh": "醒来", "ja": "目が覚める" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "ducharse",
+      "surface": "ducho",
+      "pos": "verb",
+      "def_en": "lavarse con agua bajo la ducha",
+      "def_es": { "en": "to have a shower", "fr": "prendre une douche", "zh": "洗澡", "ja": "シャワーを浴びる" },
+      "ref": "s3"
+    },
+    {
+      "lemma": "a veces",
+      "surface": "a veces",
+      "pos": "phrase",
+      "def_en": "algunas veces, no siempre",
+      "def_es": { "en": "sometimes", "fr": "parfois", "zh": "有时", "ja": "時々" },
+      "ref": "s6"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿De qué habla Sofía?",
+      "evidence": ["s1", "s2"],
+      "rationale_es": { "en": "Her daily routine." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De sus próximas vacaciones" },
+        { "id": "b", "text": "De lo que hace cada día" },
+        { "id": "c", "text": "De un viaje a otra ciudad" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿A qué hora se levanta?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "At seven thirty." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "A las siete" },
+        { "id": "b", "text": "A las ocho y media" },
+        { "id": "c", "text": "A las siete y media" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cómo va al trabajo?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "By underground." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En metro" },
+        { "id": "b", "text": "En autobús" },
+        { "id": "c", "text": "En coche" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Sofía va al gimnasio todos los días.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "Only sometimes." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "*Once y media*." },
+      "type": "gap_fill",
+      "text": "Sofía se acuesta a las once y {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["media"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Con quién desayuna?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "With her husband." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Con sus compañeros" },
+        { "id": "b", "text": "Con su marido" },
+        { "id": "c", "text": "Sola" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "acostarse", "bien", "casa", "cenar", "comer", "con", "de", "desayunar", "despertarse", "después",
+    "dormir", "ducharse", "el", "en", "gimnasio", "hora", "ir", "levantarse", "llamarse", "marido", "medio",
+    "metro", "mi", "muy", "oficina", "para", "pero", "por", "rato", "salir", "tarde", "televisión", "trabajar",
+    "un", "ver", "vez", "y", "yo"
+  ],
+  "difficulty": 910,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8889, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 10.1,
+    "flesch_reading_ease": 95.8,
+    "checked_at": "2026-10-18T23:12:58.318Z"
+  },
+  "audio": {
+    "src": "audio/a2/es-a2-lis-012/v1.m4a",
+    "duration_s": 31.787,
+    "wpm": 153,
+    "provider": "piper",
+    "voices": { "sofia": "sharvard-f" },
+    "loudness_lufs": -16,
+    "peaks": [
+      0.41, 0.59, 1, 0.58, 0.39, 0.46, 0.47, 0.75, 0.34, 0.56, 0.38, 0.71, 0.93, 0.13, 0.48, 0.46, 0.74, 0.9,
+      0.16, 0.52, 0.35, 0.42, 0.26, 0.07, 0, 0, 0, 0.27, 0.63, 0.73, 0.73, 0.9, 0.9, 0.61, 0.86, 0.74, 0.9,
+      0.85, 0.58, 0.57, 0.04, 0.33, 1, 0.78, 0.68, 0.78, 0.88, 0.88, 0.94, 0.89, 0.59, 0.93, 0.94, 0.87, 0.43,
+      0.52, 0.57, 0.22, 0.24, 0.05, 0, 0, 0, 0.71, 0.6, 0.94, 1, 0.65, 0.64, 0.67, 0.68, 0.77, 0.2, 0.39, 0.62,
+      0.25, 0.68, 0.74, 0.56, 0.59, 0.82, 0.86, 0.71, 0.9, 0.48, 0.57, 0.43, 0.43, 0.27, 0.2, 0.01, 0, 0, 0,
+      0.5, 0.9, 0.53, 0.52, 0.5, 0.62, 0.44, 0.41, 0.46, 0.58, 0.81, 0.54, 1, 0.63, 0.63, 0.59, 0.84, 0.54,
+      0.5, 0.6, 0.61, 0.68, 0.92, 0.49, 0.49, 0.3, 0.23, 0.21, 0, 0, 0, 0.13, 0.96, 1, 0.59, 0.83, 0.78, 0.67,
+      0.94, 0.62, 0.1, 0.56, 0.54, 0.64, 0.66, 0.33, 0.55, 0.58, 0.76, 0.85, 0.77, 0.55, 0.66, 0.29, 0.35,
+      0.33, 0.33, 0.03, 0.01, 0, 0, 0.01, 0.92, 0.84, 0.8, 0.98, 0.56, 0.72, 0.61, 0.02, 0.71, 0.57, 0.13,
+      0.77, 0.38, 0.84, 0.97, 1, 0.21, 0.32, 0.55, 0.38, 0.22, 0.2, 0.01, 0, 0, 0, 0.04, 0.71, 0.94, 0.73,
+      0.77, 0.42, 0.77, 0.61, 0.61, 0.56, 0.7, 0.75, 1, 0.98, 0.77, 0.99, 0.51, 0.63, 0.6, 0.38, 0.45, 0.36,
+      0.22, 0.06, 0, 0, 0, 0.34, 1, 0.68, 0.81, 0.6, 0.66, 0.73, 0.7, 0.75, 0.49, 0.52, 0.53, 0.14, 0.75, 0.71,
+      0.57, 0.86, 0.78, 0.86, 0.42, 0.46, 0.53, 0.79, 0.6, 0.74, 0.64, 0.75, 0.32, 0.41, 0.16, 0.09
+    ]
+  }
+}

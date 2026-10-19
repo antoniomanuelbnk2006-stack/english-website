@@ -1,0 +1,421 @@
+{
+  "id": "es-a2-lis-010",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u02",
+  "series": "es-a2-u02-planes",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Planes para el fin de semana",
+  "summary_es": {
+    "en": "Two friends make plans with ir a + infinitive for Saturday and Sunday.",
+    "fr": "Deux amis font des projets avec ir a + infinitif pour samedi et dimanche.",
+    "zh": "两个朋友用 ir a + 动词原形安排周六和周日。",
+    "ja": "二人の友だちが ir a + 不定詞で土日の予定を立てます。"
+  },
+  "topic": "daily-life",
+  "tags": ["planes", "ir a", "fin de semana"],
+  "can_do": ["L-A2-02"],
+  "grammar_focus": ["es.a2.ir-a-infinitivo"],
+  "vocab_focus": ["plan", "museo", "playa", "domingo"],
+  "est_minutes": 6,
+  "prediction_prompt": "Dos amigos hablan del fin de semana. ¿Qué van a hacer?",
+  "pre_teach": ["quedar", "pasear"],
+  "speakers": [
+    { "id": "ana", "name": "Ana", "accent": "es-ES", "gender": "female" },
+    { "id": "leo", "name": "Leo", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 140,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "ana",
+      "text": "Leo, ¿qué vas a hacer este fin de semana?",
+      "tokens": [
+        { "t": "Leo", "l": "leo", "p": "PROPN", "w": false, "s": 0.01, "e": 0.286 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 0.286, "e": 0.562 },
+        { "t": "vas", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 0.562, "e": 0.838 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 0.838, "e": 0.976 },
+        { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 0.976, "e": 1.39 },
+        { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true, "s": 1.389, "e": 1.734 },
+        { "t": "fin", "l": "fin", "p": "NOUN", "w": true, "sp": true, "s": 1.734, "e": 2.01 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 2.01, "e": 2.217 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "s": 2.217, "e": 2.7 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.802
+    },
+    {
+      "id": "s2",
+      "speaker": "leo",
+      "text": "El sábado voy a ir al museo con mi hermana.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 3.526, "e": 3.712 },
+        { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "sp": true, "s": 3.712, "e": 4.145 },
+        { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 4.145, "e": 4.392 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 4.392, "e": 4.516 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 4.516, "e": 4.702 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 4.701, "e": 4.887 },
+        { "t": "museo", "l": "museo", "p": "NOUN", "w": true, "sp": true, "s": 4.887, "e": 5.258 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 5.258, "e": 5.505 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 5.506, "e": 5.692 },
+        { "t": "hermana", "l": "hermana", "p": "NOUN", "w": true, "s": 5.691, "e": 6.186 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.502,
+      "end": 6.275
+    },
+    {
+      "id": "s3",
+      "speaker": "ana",
+      "text": "¿Y por la tarde?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 6.985, "e": 7.122 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 7.122, "e": 7.397 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 7.397, "e": 7.603 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "s": 7.603, "e": 8.015 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.975,
+      "end": 8.112
+    },
+    {
+      "id": "s4",
+      "speaker": "leo",
+      "text": "Por la tarde vamos a pasear por el centro.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 8.832, "e": 9.072 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 9.072, "e": 9.252 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true, "s": 9.252, "e": 9.612 },
+        { "t": "vamos", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 9.612, "e": 9.972 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 9.972, "e": 10.092 },
+        { "t": "pasear", "l": "pasear", "p": "VERB", "w": true, "sp": true, "s": 10.092, "e": 10.512 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 10.512, "e": 10.752 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 10.752, "e": 10.932 },
+        { "t": "centro", "l": "centro", "p": "NOUN", "w": true, "s": 10.932, "e": 11.352 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.812,
+      "end": 11.459
+    },
+    {
+      "id": "s5",
+      "speaker": "leo",
+      "text": "Después vamos a cenar en un restaurante italiano.",
+      "tokens": [
+        { "t": "Después", "l": "después", "p": "ADV", "w": true, "sp": true, "s": 11.959, "e": 12.401 },
+        { "t": "vamos", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 12.401, "e": 12.733 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 12.733, "e": 12.844 },
+        { "t": "cenar", "l": "cenar", "p": "VERB", "w": true, "sp": true, "s": 12.844, "e": 13.176 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 13.176, "e": 13.342 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 13.342, "e": 13.508 },
+        {
+          "t": "restaurante",
+          "l": "restaurante",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 13.508,
+          "e": 14.172
+        },
+        { "t": "italiano", "l": "italiano", "p": "ADJ", "w": true, "s": 14.171, "e": 14.669 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.959,
+      "end": 14.746
+    },
+    {
+      "id": "s6",
+      "speaker": "ana",
+      "text": "¡Qué buen plan! Yo voy a quedarme en casa.",
+      "tokens": [
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 15.456, "e": 15.687 },
+        { "t": "buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 15.687, "e": 15.976 },
+        { "t": "plan", "l": "plan", "p": "NOUN", "w": true, "s": 15.977, "e": 16.266 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 16.556, "e": 16.766 },
+        { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 16.766, "e": 17.046 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 17.046, "e": 17.186 },
+        { "t": "quedarme", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 17.186, "e": 17.816 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 17.816, "e": 18.026 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 18.026, "e": 18.376 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.446,
+      "end": 18.435
+    },
+    {
+      "id": "s7",
+      "speaker": "leo",
+      "text": "¿No vas a salir?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 19.164, "e": 19.32 },
+        { "t": "vas", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 19.32, "e": 19.528 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 19.528, "e": 19.632 },
+        { "t": "salir", "l": "salir", "p": "VERB", "w": true, "s": 19.632, "e": 19.944 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.135,
+      "end": 20.084
+    },
+    {
+      "id": "s8",
+      "speaker": "ana",
+      "text": "El domingo voy a ir a la playa con unos amigos.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 20.794, "e": 21 },
+        { "t": "domingo", "l": "domingo", "p": "NOUN", "w": true, "sp": true, "s": 21, "e": 21.548 },
+        { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 21.548, "e": 21.822 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 21.822, "e": 21.959 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 21.959, "e": 22.165 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 22.164, "e": 22.301 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 22.301, "e": 22.507 },
+        { "t": "playa", "l": "playa", "p": "NOUN", "w": true, "sp": true, "s": 22.507, "e": 22.918 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 22.918, "e": 23.192 },
+        { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true, "s": 23.192, "e": 23.535 },
+        { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true, "s": 23.534, "e": 24.014 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.784,
+      "end": 24.076
+    },
+    {
+      "id": "s9",
+      "speaker": "leo",
+      "text": "Si hace sol, va a ser genial.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 24.776, "e": 24.956 },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 24.956, "e": 25.256 },
+        { "t": "sol", "l": "sol", "p": "NOUN", "w": true, "s": 25.256, "e": 25.496 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "va", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 25.736, "e": 25.901 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 25.901, "e": 26.011 },
+        { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 26.011, "e": 26.231 },
+        { "t": "genial", "l": "genial", "p": "ADJ", "w": true, "s": 26.231, "e": 26.616 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.776,
+      "end": 26.67
+    },
+    {
+      "id": "s10",
+      "speaker": "ana",
+      "text": "Sí. Voy a llevar un bocadillo y mucha agua.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 27.38, "e": 27.82 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 28.06, "e": 28.347 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 28.347, "e": 28.491 },
+        { "t": "llevar", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 28.491, "e": 28.994 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 28.993, "e": 29.208 },
+        { "t": "bocadillo", "l": "bocadillo", "p": "NOUN", "w": true, "sp": true, "s": 29.209, "e": 29.927 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 29.927, "e": 30.071 },
+        { "t": "mucha", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 30.07, "e": 30.501 },
+        { "t": "agua", "l": "agua", "p": "NOUN", "w": true, "s": 30.501, "e": 30.86 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 27.37,
+      "end": 30.941
+    },
+    {
+      "id": "s11",
+      "speaker": "leo",
+      "text": "Entonces el lunes nos contamos todo.",
+      "tokens": [
+        { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true, "s": 31.704, "e": 32.252 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 32.252, "e": 32.435 },
+        { "t": "lunes", "l": "lunes", "p": "NOUN", "w": true, "sp": true, "s": 32.434, "e": 32.799 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 32.799, "e": 33.042 },
+        { "t": "contamos", "l": "contar", "p": "VERB", "w": true, "sp": true, "s": 33.042, "e": 33.59 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "s": 33.59, "e": 33.894 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.641,
+      "end": 33.973
+    },
+    {
+      "id": "s12",
+      "speaker": "ana",
+      "text": "De acuerdo. Hasta el lunes.",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 34.683, "e": 34.879 },
+        { "t": "acuerdo", "l": "acuerdo", "p": "NOUN", "w": true, "s": 34.879, "e": 35.403 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 35.653, "e": 36.109 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 36.109, "e": 36.337 },
+        { "t": "lunes", "l": "lunes", "p": "NOUN", "w": true, "s": 36.337, "e": 36.793 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.673,
+      "end": 36.837
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "quedarse",
+      "surface": "quedarme",
+      "pos": "verb",
+      "def_en": "no salir de un lugar",
+      "def_es": { "en": "to stay", "fr": "rester", "zh": "待在", "ja": "残る" },
+      "ref": "s6"
+    },
+    {
+      "lemma": "pasear",
+      "surface": "pasear",
+      "pos": "verb",
+      "def_en": "andar sin prisa por placer",
+      "def_es": { "en": "to go for a walk", "fr": "se promener", "zh": "散步", "ja": "散歩する" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "de acuerdo",
+      "surface": "De acuerdo",
+      "pos": "phrase",
+      "def_en": "se dice para aceptar una propuesta",
+      "def_es": { "en": "OK, agreed", "fr": "d’accord", "zh": "好的", "ja": "了解" },
+      "ref": "s12"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿De qué hablan Ana y Leo?",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "Their weekend plans." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De su último viaje a Italia con la familia" },
+        { "id": "b", "text": "De sus planes del sábado y domingo" },
+        { "id": "c", "text": "De su trabajo en el museo de la ciudad" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué va a hacer Leo el sábado por la mañana?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "Go to the museum with his sister." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Quedarse en casa para estudiar" },
+        { "id": "b", "text": "Ir a la playa con unos amigos" },
+        { "id": "c", "text": "Visitar un museo con ella" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Dónde van a cenar Leo y su hermana?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "In an Italian restaurant." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En un restaurante italiano" },
+        { "id": "b", "text": "En casa de unos amigos del barrio" },
+        { "id": "c", "text": "En un bar de tapas del centro" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Ana va a trabajar el domingo.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "She is going to the beach." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "*Un bocadillo*." },
+      "type": "gap_fill",
+      "text": "Ana va a llevar un {{1}} y mucha agua.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["bocadillo"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "post",
+      "prompt": "¿Cuándo van a volver a hablar?",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "On Monday." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "El domingo por la noche" },
+        { "id": "b", "text": "El lunes" },
+        { "id": "c", "text": "El viernes" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "acuerdo", "agua", "amigo", "bocadillo", "bueno", "casa", "cenar", "centro", "con", "contar", "de",
+    "después", "domingo", "el", "en", "entonces", "este", "fin", "genial", "hacer", "hasta", "hermana", "ir",
+    "italiano", "llevar", "lunes", "mi", "mucho", "museo", "no", "nosotros", "pasear", "plan", "playa", "por",
+    "quedar", "qué", "restaurante", "salir", "semana", "ser", "si", "sol", "sábado", "tarde", "todo", "un",
+    "y", "yo"
+  ],
+  "difficulty": 910,
+  "qa": {
+    "coverage_by_level": { "A1": 0.8989, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 6.1,
+    "flesch_reading_ease": 105,
+    "checked_at": "2026-10-18T23:12:58.318Z"
+  },
+  "audio": {
+    "src": "audio/a2/es-a2-lis-010/v1.m4a",
+    "duration_s": 36.837,
+    "wpm": 148,
+    "provider": "piper",
+    "voices": { "ana": "sharvard-f", "leo": "davefx-m" },
+    "loudness_lufs": -16,
+    "peaks": [
+      0.73, 0.85, 0.39, 0.66, 1, 0.76, 0.74, 0.26, 0.68, 0.58, 0.43, 0.4, 0.54, 0.6, 0.43, 0.4, 0.35, 0.13,
+      0.01, 0, 0, 0, 0, 0.93, 1, 0.96, 0.77, 0.87, 1, 0.9, 0.97, 0.37, 0.3, 0.97, 0.86, 0.55, 0.44, 0.79, 0.41,
+      0.45, 0.27, 0, 0, 0, 0, 0.59, 0.66, 0.79, 1, 0.83, 0.44, 0.27, 0.08, 0, 0, 0, 0, 1, 0.99, 0.91, 0.97,
+      0.64, 1, 0.94, 0.81, 0.9, 0.94, 0.97, 0.57, 0.65, 0.33, 0.91, 0.22, 0.23, 0.03, 0, 0, 0.04, 0.72, 0.87,
+      1, 0.85, 0.53, 0.89, 1, 0.71, 0.42, 0.85, 0.86, 0.83, 0.86, 0.91, 0.67, 0.5, 0.55, 0.27, 0, 0, 0, 0,
+      0.65, 1, 0.98, 0.25, 0.32, 0.16, 0.02, 0.1, 1, 0.81, 0.86, 0.95, 0.64, 0.88, 0.9, 0.75, 0.32, 0.42, 0.46,
+      0.09, 0, 0, 0, 0, 0.1, 1, 1, 0.48, 0.88, 0.76, 0.02, 0, 0, 0, 0, 0.59, 0.72, 0.55, 0.57, 0.95, 0.85,
+      0.81, 0.66, 0.85, 1, 1, 0.99, 0.74, 0.63, 0.48, 0.49, 0.47, 0.44, 0.48, 0.33, 0.16, 0.11, 0, 0, 0, 0,
+      0.91, 0.98, 0.61, 0.96, 0.87, 0.05, 0.84, 1, 0.95, 0.18, 0.62, 0.46, 0.1, 0, 0, 0, 0, 0.55, 0.95, 1, 0.1,
+      0.16, 0.78, 0.96, 1, 0.71, 0.87, 0.75, 0.69, 0.78, 0.77, 0.57, 0.82, 0.47, 0.42, 0.37, 0.57, 0.61, 0.46,
+      0.27, 0.03, 0, 0, 0, 0, 0.5, 0.39, 1, 0.95, 0.93, 0.61, 0.87, 0.9, 0.88, 0.67, 0.49, 0.97, 0.7, 0.54,
+      0.2, 0.02, 0, 0, 0, 0.08, 1, 0.66, 0.89, 0.62, 0.14, 0, 1, 0.81, 1, 0.91, 0.58, 0.39, 0.17, 0.19
+    ]
+  }
+}

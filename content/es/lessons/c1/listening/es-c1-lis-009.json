@@ -1,0 +1,1356 @@
+{
+  "id": "es-c1-lis-009",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "unit": "es-c1-u05",
+  "series": "es-c1-u05-viajar-despacio",
+  "skill": "listening",
+  "genre": "podcast",
+  "title": "Viajar despacio",
+  "summary_es": {
+    "en": "Two podcast hosts discuss “slow travel”: staying longer in fewer places, by train, and its impact on locals.",
+    "fr": "Deux animateurs de podcast parlent du « voyage lent » : rester plus longtemps dans moins d’endroits, en train, et son effet sur les habitants.",
+    "zh": "两位播客主持人讨论“慢旅行”：在更少的地方停留更久、乘火车出行，以及对当地人的影响。",
+    "ja": "2人のポッドキャスト司会者が「スロートラベル」について話します。少ない場所に長く滞在し、鉄道で移動すること、そして地元への影響です。"
+  },
+  "topic": "travel",
+  "tags": ["viajes", "turismo", "sostenibilidad"],
+  "can_do": ["L-C1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["masificación", "huella", "itinerario", "improvisar"],
+  "est_minutes": 12,
+  "prediction_prompt": "¿Prefieres ver muchos lugares en poco tiempo o pocos lugares con calma?",
+  "pre_teach": ["masificación", "huella de carbono"],
+  "speakers": [
+    { "id": "sara", "name": "Sara", "accent": "es-ES", "gender": "female" },
+    { "id": "david", "name": "David", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 140,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "sara",
+      "text": "Bienvenidos a un nuevo episodio de «Billete de ida».",
+      "tokens": [
+        { "t": "Bienvenidos", "l": "bienvenido", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.771 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 0.771, "e": 0.898 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 0.898, "e": 1.088 },
+        { "t": "nuevo", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 1.088, "e": 1.468 },
+        { "t": "episodio", "l": "episodio", "p": "NOUN", "w": true, "sp": true, "s": 1.468, "e": 2.039 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 2.039, "e": 2.229 },
+        { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+        { "t": "Billete", "l": "billete", "p": "NOUN", "w": true, "sp": true, "s": 2.229, "e": 2.736 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 2.736, "e": 2.926 },
+        { "t": "ida", "l": "ir", "p": "VERB", "w": true, "s": 2.926, "e": 3.18 },
+        { "t": "»", "l": "»", "p": "PUNCT", "w": false },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 3.26
+    },
+    {
+      "id": "s2",
+      "speaker": "sara",
+      "text": "Hoy David y yo vamos a hablar de una tendencia que cada vez tiene más seguidores: el viaje lento.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 3.52, "e": 3.785 },
+        { "t": "David", "l": "david", "p": "PROPN", "w": false, "sp": true, "s": 3.785, "e": 4.183 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 4.183, "e": 4.316 },
+        { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 4.315, "e": 4.514 },
+        { "t": "vamos", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 4.514, "e": 4.912 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 4.911, "e": 5.044 },
+        { "t": "hablar", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 5.044, "e": 5.508 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 5.508, "e": 5.707 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 5.706, "e": 5.971 },
+        { "t": "tendencia", "l": "tendencia", "p": "NOUN", "w": true, "sp": true, "s": 5.971, "e": 6.634 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 6.634, "e": 6.899 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 6.899, "e": 7.23 },
+        { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 7.23, "e": 7.495 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 7.495, "e": 7.893 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 7.893, "e": 8.158 },
+        { "t": "seguidores", "l": "seguidor", "p": "NOUN", "w": true, "s": 8.158, "e": 8.887 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.886, "e": 9.085 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 9.085, "e": 9.483 },
+        { "t": "lento", "l": "lento", "p": "ADJ", "w": true, "s": 9.483, "e": 9.881 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.51,
+      "end": 9.999
+    },
+    {
+      "id": "s3",
+      "speaker": "david",
+      "text": "Así es.",
+      "tokens": [
+        { "t": "Así", "l": "así", "p": "ADV", "w": true, "sp": true, "s": 10.399, "e": 10.828 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "s": 10.828, "e": 11.149 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.399,
+      "end": 11.193
+    },
+    {
+      "id": "s4",
+      "speaker": "david",
+      "text": "Y te confieso que yo era el ejemplo perfecto de lo contrario.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 11.463, "e": 11.593 },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 11.593, "e": 11.787 },
+        { "t": "confieso", "l": "confesar", "p": "VERB", "w": true, "sp": true, "s": 11.787, "e": 12.37 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 12.37, "e": 12.629 },
+        { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 12.629, "e": 12.823 },
+        { "t": "era", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 12.823, "e": 13.082 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 13.082, "e": 13.276 },
+        { "t": "ejemplo", "l": "ejemplo", "p": "NOUN", "w": true, "sp": true, "s": 13.276, "e": 13.794 },
+        { "t": "perfecto", "l": "perfecto", "p": "ADJ", "w": true, "sp": true, "s": 13.794, "e": 14.377 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 14.377, "e": 14.571 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 14.571, "e": 14.765 },
+        { "t": "contrario", "l": "contrario", "p": "ADJ", "w": true, "s": 14.765, "e": 15.413 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.443,
+      "end": 15.518
+    },
+    {
+      "id": "s5",
+      "speaker": "david",
+      "text": "Hace unos años hice un viaje por Europa en el que visité siete ciudades en diez días.",
+      "tokens": [
+        { "t": "Hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 15.778, "e": 16.116 },
+        { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true, "s": 16.116, "e": 16.454 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 16.453, "e": 16.791 },
+        { "t": "hice", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 16.791, "e": 17.129 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 17.129, "e": 17.332 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 17.331, "e": 17.736 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 17.736, "e": 18.006 },
+        { "t": "Europa", "l": "europa", "p": "PROPN", "w": false, "sp": true, "s": 18.006, "e": 18.479 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 18.479, "e": 18.682 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 18.682, "e": 18.885 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 18.884, "e": 19.154 },
+        { "t": "visité", "l": "visitar", "p": "VERB", "w": true, "sp": true, "s": 19.154, "e": 19.627 },
+        { "t": "siete", "l": "siete", "p": "NUM", "w": false, "sp": true, "s": 19.627, "e": 20.032 },
+        { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "sp": true, "s": 20.032, "e": 20.64 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 20.64, "e": 20.843 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true, "s": 20.843, "e": 21.181 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 21.18, "e": 21.518 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 15.768,
+      "end": 21.576
+    },
+    {
+      "id": "s6",
+      "speaker": "sara",
+      "text": "¿Y qué recuerdas de aquel viaje?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 21.986, "e": 22.106 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 22.106, "e": 22.346 },
+        { "t": "recuerdas", "l": "recordar", "p": "VERB", "w": true, "sp": true, "s": 22.346, "e": 22.946 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 22.946, "e": 23.126 },
+        { "t": "aquel", "l": "aquel", "p": "DET", "w": true, "sp": true, "s": 23.126, "e": 23.486 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "s": 23.486, "e": 23.846 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.976,
+      "end": 23.919
+    },
+    {
+      "id": "s7",
+      "speaker": "david",
+      "text": "Sinceramente, poco.",
+      "tokens": [
+        { "t": "Sinceramente", "l": "sinceramente", "p": "ADV", "w": true, "s": 24.339, "e": 25.479 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "s": 25.729, "e": 26.089 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.319,
+      "end": 26.191
+    },
+    {
+      "id": "s8",
+      "speaker": "david",
+      "text": "Recuerdo estaciones, maletas y colas para entrar en museos.",
+      "tokens": [
+        { "t": "Recuerdo", "l": "recordar", "p": "VERB", "w": true, "sp": true, "s": 26.471, "e": 27.538 },
+        { "t": "estaciones", "l": "estación", "p": "NOUN", "w": true, "s": 27.538, "e": 28.842 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "maletas", "l": "maleta", "p": "NOUN", "w": true, "sp": true, "s": 29.061, "e": 29.474 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 29.474, "e": 29.577 },
+        { "t": "colas", "l": "cola", "p": "NOUN", "w": true, "sp": true, "s": 29.577, "e": 29.886 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 29.886, "e": 30.144 },
+        { "t": "entrar", "l": "entrar", "p": "VERB", "w": true, "sp": true, "s": 30.144, "e": 30.505 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 30.505, "e": 30.66 },
+        { "t": "museos", "l": "museo", "p": "NOUN", "w": true, "s": 30.66, "e": 31.021 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.441,
+      "end": 31.129
+    },
+    {
+      "id": "s9",
+      "speaker": "david",
+      "text": "Volví a casa más cansado que cuando me fui.",
+      "tokens": [
+        { "t": "Volví", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 31.389, "e": 31.795 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 31.795, "e": 31.93 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true, "s": 31.93, "e": 32.268 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 32.269, "e": 32.54 },
+        { "t": "cansado", "l": "cansado", "p": "ADJ", "w": true, "sp": true, "s": 32.539, "e": 33.08 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 33.081, "e": 33.352 },
+        { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 33.352, "e": 33.826 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 33.825, "e": 34.028 },
+        { "t": "fui", "l": "ser", "p": "AUX", "w": true, "s": 34.028, "e": 34.299 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.379,
+      "end": 34.424
+    },
+    {
+      "id": "s10",
+      "speaker": "david",
+      "text": "Tengo cientos de fotos de aquel viaje, pero casi ninguna historia que contar.",
+      "tokens": [
+        { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 34.684, "e": 35.066 },
+        { "t": "cientos", "l": "ciento", "p": "NOUN", "w": true, "sp": true, "s": 35.066, "e": 35.575 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 35.576, "e": 35.767 },
+        { "t": "fotos", "l": "foto", "p": "NOUN", "w": true, "sp": true, "s": 35.767, "e": 36.149 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 36.149, "e": 36.34 },
+        { "t": "aquel", "l": "aquel", "p": "DET", "w": true, "sp": true, "s": 36.34, "e": 36.722 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "s": 36.722, "e": 37.104 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 37.444, "e": 37.77 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 37.77, "e": 38.096 },
+        { "t": "ninguna", "l": "ningún", "p": "DET", "w": true, "sp": true, "s": 38.097, "e": 38.619 },
+        { "t": "historia", "l": "historia", "p": "NOUN", "w": true, "sp": true, "s": 38.619, "e": 39.206 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 39.206, "e": 39.467 },
+        { "t": "contar", "l": "contar", "p": "VERB", "w": true, "s": 39.467, "e": 39.924 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.674,
+      "end": 40.03
+    },
+    {
+      "id": "s11",
+      "speaker": "sara",
+      "text": "Creo que a mucha gente le pasa lo mismo.",
+      "tokens": [
+        { "t": "Creo", "l": "creer", "p": "VERB", "w": true, "sp": true, "s": 40.44, "e": 40.741 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 40.741, "e": 40.982 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 40.982, "e": 41.103 },
+        { "t": "mucha", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 41.103, "e": 41.465 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 41.464, "e": 41.826 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 41.826, "e": 42.007 },
+        { "t": "pasa", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 42.007, "e": 42.308 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 42.308, "e": 42.489 },
+        { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "s": 42.489, "e": 42.851 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 40.43,
+      "end": 42.927
+    },
+    {
+      "id": "s12",
+      "speaker": "sara",
+      "text": "Queremos aprovechar cada minuto y acabamos sin disfrutar de ninguno.",
+      "tokens": [
+        { "t": "Queremos", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 43.187, "e": 43.797 },
+        { "t": "aprovechar", "l": "aprovechar", "p": "VERB", "w": true, "sp": true, "s": 43.797, "e": 44.543 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 44.543, "e": 44.882 },
+        { "t": "minuto", "l": "minuto", "p": "NOUN", "w": true, "sp": true, "s": 44.882, "e": 45.357 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 45.356, "e": 45.492 },
+        { "t": "acabamos", "l": "acabar", "p": "VERB", "w": true, "sp": true, "s": 45.492, "e": 46.102 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 46.102, "e": 46.373 },
+        { "t": "disfrutar", "l": "disfrutar", "p": "VERB", "w": true, "sp": true, "s": 46.373, "e": 47.051 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 47.051, "e": 47.254 },
+        { "t": "ninguno", "l": "ningún", "p": "DET", "w": true, "s": 47.255, "e": 47.797 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 43.177,
+      "end": 47.862
+    },
+    {
+      "id": "s13",
+      "speaker": "sara",
+      "text": "Pues eso es justo lo que intenta evitar el viaje lento.",
+      "tokens": [
+        { "t": "Pues", "l": "pues", "p": "SCONJ", "w": true, "sp": true, "s": 48.152, "e": 48.517 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 48.517, "e": 48.809 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 48.81, "e": 49.029 },
+        { "t": "justo", "l": "justo", "p": "ADJ", "w": true, "sp": true, "s": 49.029, "e": 49.468 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 49.468, "e": 49.687 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 49.687, "e": 49.979 },
+        { "t": "intenta", "l": "intentar", "p": "VERB", "w": true, "sp": true, "s": 49.979, "e": 50.564 },
+        { "t": "evitar", "l": "evitar", "p": "VERB", "w": true, "sp": true, "s": 50.564, "e": 51.076 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 51.076, "e": 51.295 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 51.295, "e": 51.734 },
+        { "t": "lento", "l": "lento", "p": "ADJ", "w": true, "s": 51.733, "e": 52.172 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 48.112,
+      "end": 52.258
+    },
+    {
+      "id": "s14",
+      "speaker": "sara",
+      "text": "La idea es sencilla: visitar menos lugares, pero quedarse más tiempo en cada uno.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 52.528, "e": 52.736 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true, "s": 52.736, "e": 53.083 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 53.083, "e": 53.291 },
+        { "t": "sencilla", "l": "sencillo", "p": "ADJ", "w": true, "s": 53.291, "e": 53.915 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "visitar", "l": "visitar", "p": "VERB", "w": true, "sp": true, "s": 53.915, "e": 54.47 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 54.47, "e": 54.886 },
+        { "t": "lugares", "l": "lugar", "p": "NOUN", "w": true, "s": 54.886, "e": 55.441 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 55.441, "e": 55.788 },
+        { "t": "quedarse", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 55.788, "e": 56.412 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 56.413, "e": 56.69 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true, "s": 56.69, "e": 57.176 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 57.176, "e": 57.384 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 57.384, "e": 57.731 },
+        { "t": "uno", "l": "uno", "p": "NUM", "w": false, "s": 57.731, "e": 58.008 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 52.508,
+      "end": 58.086
+    },
+    {
+      "id": "s15",
+      "speaker": "sara",
+      "text": "En vez de ver diez monumentos en un día, alquilas un piso en un barrio.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 58.346, "e": 58.528 },
+        { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 58.528, "e": 58.77 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 58.77, "e": 58.952 },
+        { "t": "ver", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 58.951, "e": 59.193 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true, "s": 59.193, "e": 59.496 },
+        { "t": "monumentos", "l": "monumento", "p": "NOUN", "w": true, "sp": true, "s": 59.496, "e": 60.162 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 60.161, "e": 60.343 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 60.343, "e": 60.525 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "s": 60.524, "e": 60.766 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "alquilas", "l": "alquilar", "p": "VERB", "w": true, "sp": true, "s": 60.916, "e": 61.468 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 61.468, "e": 61.652 },
+        { "t": "piso", "l": "piso", "p": "NOUN", "w": true, "sp": true, "s": 61.652, "e": 61.959 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 61.959, "e": 62.143 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 62.143, "e": 62.327 },
+        { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "s": 62.327, "e": 62.756 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 58.336,
+      "end": 62.857
+    },
+    {
+      "id": "s16",
+      "speaker": "sara",
+      "text": "Compras en el mercado y dejas que la ciudad te sorprenda.",
+      "tokens": [
+        { "t": "Compras", "l": "comprar", "p": "VERB", "w": true, "sp": true, "s": 63.117, "e": 63.646 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 63.646, "e": 63.844 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 63.845, "e": 64.043 },
+        { "t": "mercado", "l": "mercado", "p": "NOUN", "w": true, "sp": true, "s": 64.043, "e": 64.572 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 64.572, "e": 64.704 },
+        { "t": "dejas", "l": "dejar", "p": "VERB", "w": true, "sp": true, "s": 64.704, "e": 65.101 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 65.101, "e": 65.366 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 65.366, "e": 65.564 },
+        { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true, "s": 65.564, "e": 66.027 },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 66.027, "e": 66.225 },
+        { "t": "sorprenda", "l": "sorprender", "p": "VERB", "w": true, "s": 66.226, "e": 66.887 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 63.107,
+      "end": 66.968
+    },
+    {
+      "id": "s17",
+      "speaker": "david",
+      "text": "Y no solo se trata del ritmo, sino también del transporte.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 67.378, "e": 67.524 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 67.524, "e": 67.742 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 67.742, "e": 68.106 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 68.106, "e": 68.324 },
+        { "t": "trata", "l": "tratar", "p": "VERB", "w": true, "sp": true, "s": 68.324, "e": 68.761 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 68.76, "e": 69.051 },
+        { "t": "ritmo", "l": "ritmo", "p": "NOUN", "w": true, "s": 69.051, "e": 69.488 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true, "s": 69.698, "e": 70.052 },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 70.052, "e": 70.618 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 70.617, "e": 70.9 },
+        { "t": "transporte", "l": "transporte", "p": "NOUN", "w": true, "s": 70.9, "e": 71.678 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 67.368,
+      "end": 71.804
+    },
+    {
+      "id": "s18",
+      "speaker": "david",
+      "text": "Quienes practican el viaje lento suelen preferir el tren o el autobús antes que el avión.",
+      "tokens": [
+        { "t": "Quienes", "l": "quien", "p": "PRON", "w": true, "sp": true, "s": 72.064, "e": 72.55 },
+        { "t": "practican", "l": "practicar", "p": "VERB", "w": true, "sp": true, "s": 72.55, "e": 73.158 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 73.158, "e": 73.34 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 73.341, "e": 73.706 },
+        { "t": "lento", "l": "lento", "p": "ADJ", "w": true, "sp": true, "s": 73.705, "e": 74.07 },
+        { "t": "suelen", "l": "soler", "p": "VERB", "w": true, "sp": true, "s": 74.07, "e": 74.496 },
+        { "t": "preferir", "l": "preferir", "p": "VERB", "w": true, "sp": true, "s": 74.495, "e": 75.042 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 75.043, "e": 75.225 },
+        { "t": "tren", "l": "tren", "p": "NOUN", "w": true, "sp": true, "s": 75.225, "e": 75.529 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 75.529, "e": 75.651 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 75.65, "e": 75.832 },
+        { "t": "autobús", "l": "autobús", "p": "NOUN", "w": true, "sp": true, "s": 75.833, "e": 76.319 },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true, "s": 76.319, "e": 76.684 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 76.684, "e": 76.927 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 76.927, "e": 77.109 },
+        { "t": "avión", "l": "avión", "p": "NOUN", "w": true, "s": 77.109, "e": 77.474 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 72.054,
+      "end": 77.529
+    },
+    {
+      "id": "s19",
+      "speaker": "sara",
+      "text": "Por el medio ambiente, sobre todo.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 77.939, "e": 78.204 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 78.204, "e": 78.403 },
+        { "t": "medio", "l": "medio", "p": "ADJ", "w": true, "sp": true, "s": 78.404, "e": 78.802 },
+        { "t": "ambiente", "l": "ambiente", "p": "NOUN", "w": true, "s": 78.802, "e": 79.399 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 79.569, "e": 80.038 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "s": 80.038, "e": 80.429 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 77.929,
+      "end": 80.49
+    },
+    {
+      "id": "s20",
+      "speaker": "sara",
+      "text": "Un trayecto en avión entre Madrid y París emite varias veces más que el mismo recorrido en tren.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 80.74, "e": 80.948 },
+        { "t": "trayecto", "l": "trayecto", "p": "NOUN", "w": true, "sp": true, "s": 80.948, "e": 81.571 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 81.57, "e": 81.778 },
+        { "t": "avión", "l": "avión", "p": "NOUN", "w": true, "sp": true, "s": 81.778, "e": 82.193 },
+        { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true, "s": 82.193, "e": 82.608 },
+        { "t": "Madrid", "l": "madrid", "p": "PROPN", "w": false, "sp": true, "s": 82.608, "e": 83.092 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 83.092, "e": 83.23 },
+        { "t": "París", "l": "parís", "p": "PROPN", "w": false, "sp": true, "s": 83.23, "e": 83.645 },
+        { "t": "emite", "l": "emitir", "p": "VERB", "w": true, "sp": true, "s": 83.645, "e": 84.06 },
+        { "t": "varias", "l": "varios", "p": "DET", "w": true, "sp": true, "s": 84.06, "e": 84.544 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 84.544, "e": 84.959 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 84.959, "e": 85.236 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 85.236, "e": 85.513 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 85.513, "e": 85.721 },
+        { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "sp": true, "s": 85.72, "e": 86.135 },
+        { "t": "recorrido", "l": "recorrer", "p": "VERB", "w": true, "sp": true, "s": 86.135, "e": 86.827 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 86.827, "e": 87.035 },
+        { "t": "tren", "l": "tren", "p": "NOUN", "w": true, "s": 87.034, "e": 87.38 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 80.74,
+      "end": 87.474
+    },
+    {
+      "id": "s21",
+      "speaker": "sara",
+      "text": "Si te importa tu huella de carbono, la diferencia es enorme.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 87.744, "e": 87.967 },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 87.967, "e": 88.19 },
+        { "t": "importa", "l": "importar", "p": "VERB", "w": true, "sp": true, "s": 88.189, "e": 88.783 },
+        { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true, "s": 88.783, "e": 89.006 },
+        { "t": "huella", "l": "huella", "p": "NOUN", "w": true, "sp": true, "s": 89.006, "e": 89.526 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 89.526, "e": 89.749 },
+        { "t": "carbono", "l": "carbono", "p": "NOUN", "w": true, "s": 89.748, "e": 90.342 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 90.342, "e": 90.565 },
+        { "t": "diferencia", "l": "diferencia", "p": "NOUN", "w": true, "sp": true, "s": 90.565, "e": 91.382 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 91.382, "e": 91.605 },
+        { "t": "enorme", "l": "enorme", "p": "ADJ", "w": true, "s": 91.604, "e": 92.124 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 87.724,
+      "end": 92.189
+    },
+    {
+      "id": "s22",
+      "speaker": "david",
+      "text": "Aunque seamos sinceros, el tren no siempre es una opción realista.",
+      "tokens": [
+        { "t": "Aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true, "s": 92.599, "e": 93.107 },
+        { "t": "seamos", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 93.107, "e": 93.615 },
+        { "t": "sinceros", "l": "sincero", "p": "ADJ", "w": true, "s": 93.616, "e": 94.269 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 94.439, "e": 94.649 },
+        { "t": "tren", "l": "tren", "p": "NOUN", "w": true, "sp": true, "s": 94.649, "e": 94.999 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 94.999, "e": 95.209 },
+        { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true, "s": 95.209, "e": 95.769 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 95.769, "e": 95.979 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 95.979, "e": 96.259 },
+        { "t": "opción", "l": "opción", "p": "NOUN", "w": true, "sp": true, "s": 96.259, "e": 96.749 },
+        { "t": "realista", "l": "realista", "p": "ADJ", "w": true, "s": 96.749, "e": 97.379 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 92.589,
+      "end": 97.479
+    },
+    {
+      "id": "s23",
+      "speaker": "david",
+      "text": "A veces cuesta el doble y tarda un día entero.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 97.739, "e": 97.887 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 97.887, "e": 98.332 },
+        { "t": "cuesta", "l": "costar", "p": "VERB", "w": true, "sp": true, "s": 98.332, "e": 98.851 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 98.851, "e": 99.073 },
+        { "t": "doble", "l": "doble", "p": "ADJ", "w": true, "sp": true, "s": 99.073, "e": 99.518 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 99.518, "e": 99.666 },
+        { "t": "tarda", "l": "tardar", "p": "VERB", "w": true, "sp": true, "s": 99.666, "e": 100.111 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 100.111, "e": 100.333 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 100.334, "e": 100.631 },
+        { "t": "entero", "l": "enterarse", "p": "VERB", "w": true, "s": 100.63, "e": 101.149 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 97.729,
+      "end": 101.263
+    },
+    {
+      "id": "s24",
+      "speaker": "sara",
+      "text": "Es verdad, y por eso no creo que haya que convertirlo en una obligación moral.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 101.673, "e": 101.889 },
+        { "t": "verdad", "l": "verdad", "p": "NOUN", "w": true, "s": 101.889, "e": 102.393 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 102.613, "e": 102.741 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 102.741, "e": 102.998 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 102.998, "e": 103.255 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 103.255, "e": 103.448 },
+        { "t": "creo", "l": "creer", "p": "VERB", "w": true, "sp": true, "s": 103.447, "e": 103.768 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 103.768, "e": 104.025 },
+        { "t": "haya", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 104.025, "e": 104.346 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 104.346, "e": 104.603 },
+        {
+          "t": "convertirlo",
+          "l": "convertir",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 104.603,
+          "e": 105.373
+        },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 105.373, "e": 105.566 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 105.565, "e": 105.822 },
+        {
+          "t": "obligación",
+          "l": "obligación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 105.822,
+          "e": 106.528
+        },
+        { "t": "moral", "l": "moral", "p": "ADJ", "w": true, "s": 106.528, "e": 106.913 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 101.663,
+      "end": 107.039
+    },
+    {
+      "id": "s25",
+      "speaker": "sara",
+      "text": "Pero el propio trayecto puede formar parte del viaje.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 107.299, "e": 107.619 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 107.619, "e": 107.811 },
+        { "t": "propio", "l": "propio", "p": "ADJ", "w": true, "sp": true, "s": 107.811, "e": 108.259 },
+        { "t": "trayecto", "l": "trayecto", "p": "NOUN", "w": true, "sp": true, "s": 108.258, "e": 108.834 },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 108.834, "e": 109.218 },
+        { "t": "formar", "l": "formar", "p": "VERB", "w": true, "sp": true, "s": 109.218, "e": 109.666 },
+        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 109.666, "e": 110.05 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 110.049, "e": 110.305 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "s": 110.305, "e": 110.689 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 107.289,
+      "end": 110.754
+    },
+    {
+      "id": "s26",
+      "speaker": "sara",
+      "text": "El verano pasado fui de Barcelona a Lisboa en tren.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 111.014, "e": 111.227 },
+        { "t": "verano", "l": "verano", "p": "NOUN", "w": true, "sp": true, "s": 111.227, "e": 111.724 },
+        { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "sp": true, "s": 111.724, "e": 112.221 },
+        { "t": "fui", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 112.221, "e": 112.505 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 112.505, "e": 112.718 },
+        {
+          "t": "Barcelona",
+          "l": "barcelona",
+          "p": "PROPN",
+          "w": false,
+          "sp": true,
+          "s": 112.718,
+          "e": 113.428
+        },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 113.427, "e": 113.569 },
+        { "t": "Lisboa", "l": "lisboa", "p": "PROPN", "w": false, "sp": true, "s": 113.569, "e": 114.066 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 114.066, "e": 114.279 },
+        { "t": "tren", "l": "tren", "p": "NOUN", "w": true, "s": 114.279, "e": 114.634 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 111.004,
+      "end": 114.707
+    },
+    {
+      "id": "s27",
+      "speaker": "sara",
+      "text": "Tardé casi dos días, pero conocí a gente fascinante y vi paisajes que desde un avión nunca habría visto.",
+      "tokens": [
+        { "t": "Tardé", "l": "tardar", "p": "VERB", "w": true, "sp": true, "s": 114.967, "e": 116.947 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 116.947, "e": 118.597 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 118.597, "e": 119.917 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 119.917, "e": 121.567 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 121.717, "e": 121.725 },
+        { "t": "conocí", "l": "conocer", "p": "VERB", "w": true, "sp": true, "s": 121.725, "e": 121.736 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 121.736, "e": 121.739 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 121.739, "e": 121.748 },
+        {
+          "t": "fascinante",
+          "l": "fascinante",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 121.748,
+          "e": 121.765
+        },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 121.766, "e": 121.769 },
+        { "t": "vi", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 121.769, "e": 121.774 },
+        { "t": "paisajes", "l": "paisaje", "p": "NOUN", "w": true, "sp": true, "s": 121.773, "e": 121.787 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 121.787, "e": 121.793 },
+        { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 121.794, "e": 121.803 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 121.803, "e": 121.808 },
+        { "t": "avión", "l": "avión", "p": "NOUN", "w": true, "sp": true, "s": 121.808, "e": 121.817 },
+        { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true, "s": 121.817, "e": 121.826 },
+        { "t": "habría", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 121.827, "e": 121.838 },
+        { "t": "visto", "l": "ver", "p": "VERB", "w": true, "s": 121.838, "e": 121.847 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 114.957,
+      "end": 121.935
+    },
+    {
+      "id": "s28",
+      "speaker": "david",
+      "text": "Hay otro aspecto que me parece importante: la relación con la población local.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 122.345, "e": 122.625 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 122.625, "e": 122.975 },
+        { "t": "aspecto", "l": "aspecto", "p": "NOUN", "w": true, "sp": true, "s": 122.975, "e": 123.535 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 123.535, "e": 123.815 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 123.815, "e": 124.025 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 124.025, "e": 124.515 },
+        { "t": "importante", "l": "importante", "p": "ADJ", "w": true, "s": 124.515, "e": 125.285 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 125.565, "e": 125.775 },
+        { "t": "relación", "l": "relación", "p": "NOUN", "w": true, "sp": true, "s": 125.775, "e": 126.405 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 126.405, "e": 126.685 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 126.685, "e": 126.895 },
+        { "t": "población", "l": "población", "p": "NOUN", "w": true, "sp": true, "s": 126.895, "e": 127.595 },
+        { "t": "local", "l": "local", "p": "ADJ", "w": true, "s": 127.595, "e": 128.015 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 122.335,
+      "end": 128.121
+    },
+    {
+      "id": "s29",
+      "speaker": "david",
+      "text": "En muchas ciudades, el turismo masivo se ha convertido en un problema.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 128.381, "e": 128.593 },
+        { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 128.593, "e": 129.087 },
+        { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "s": 129.086, "e": 129.721 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 129.901, "e": 130.101 },
+        { "t": "turismo", "l": "turismo", "p": "NOUN", "w": true, "sp": true, "s": 130.101, "e": 130.635 },
+        { "t": "masivo", "l": "masivo", "p": "ADJ", "w": true, "sp": true, "s": 130.636, "e": 131.104 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 131.103, "e": 131.303 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 131.304, "e": 131.504 },
+        {
+          "t": "convertido",
+          "l": "convertir",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 131.504,
+          "e": 132.239
+        },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 132.239, "e": 132.439 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 132.439, "e": 132.639 },
+        { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "s": 132.64, "e": 133.241 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 128.371,
+      "end": 133.333
+    },
+    {
+      "id": "s30",
+      "speaker": "david",
+      "text": "Los alquileres suben, las tiendas de toda la vida cierran y los vecinos se sienten expulsados de su propio barrio.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 133.603, "e": 134.392 },
+        { "t": "alquileres", "l": "alquiler", "p": "NOUN", "w": true, "sp": true, "s": 134.392, "e": 136.561 },
+        { "t": "suben", "l": "subir", "p": "VERB", "w": true, "s": 136.56, "e": 137.743 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 137.973, "e": 138.138 },
+        { "t": "tiendas", "l": "tienda", "p": "NOUN", "w": true, "sp": true, "s": 138.138, "e": 138.468 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 138.469, "e": 138.593 },
+        { "t": "toda", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 138.593, "e": 138.8 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 138.799, "e": 138.923 },
+        { "t": "vida", "l": "vida", "p": "NOUN", "w": true, "sp": true, "s": 138.923, "e": 139.13 },
+        { "t": "cierran", "l": "cerrar", "p": "VERB", "w": true, "sp": true, "s": 139.13, "e": 139.46 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 139.46, "e": 139.543 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 139.543, "e": 139.708 },
+        { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "sp": true, "s": 139.708, "e": 140.038 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 140.038, "e": 140.162 },
+        { "t": "sienten", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 140.162, "e": 140.492 },
+        { "t": "expulsados", "l": "expulsar", "p": "VERB", "w": true, "sp": true, "s": 140.493, "e": 140.947 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 140.947, "e": 141.071 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 141.071, "e": 141.195 },
+        { "t": "propio", "l": "propio", "p": "ADJ", "w": true, "sp": true, "s": 141.195, "e": 141.484 },
+        { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "s": 141.484, "e": 141.773 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 133.583,
+      "end": 141.873
+    },
+    {
+      "id": "s31",
+      "speaker": "sara",
+      "text": "Sí, la masificación es uno de los grandes debates actuales.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 142.293, "e": 142.733 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 142.933, "e": 143.154 },
+        {
+          "t": "masificación",
+          "l": "masificación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 143.154,
+          "e": 144.111
+        },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 144.111, "e": 144.332 },
+        { "t": "uno", "l": "uno", "p": "NUM", "w": false, "sp": true, "s": 144.332, "e": 144.627 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 144.627, "e": 144.848 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 144.848, "e": 145.143 },
+        { "t": "grandes", "l": "grande", "p": "ADJ", "w": true, "sp": true, "s": 145.142, "e": 145.731 },
+        { "t": "debates", "l": "debatir", "p": "VERB", "w": true, "sp": true, "s": 145.731, "e": 146.32 },
+        { "t": "actuales", "l": "actual", "p": "ADJ", "w": true, "s": 146.32, "e": 146.983 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 142.273,
+      "end": 147.052
+    },
+    {
+      "id": "s32",
+      "speaker": "sara",
+      "text": "Y aquí el viaje lento tiene luces y sombras.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 147.312, "e": 147.459 },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 147.459, "e": 147.827 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 147.827, "e": 148.048 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 148.048, "e": 148.49 },
+        { "t": "lento", "l": "lento", "p": "ADJ", "w": true, "sp": true, "s": 148.49, "e": 148.932 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 148.932, "e": 149.374 },
+        { "t": "luces", "l": "luz", "p": "NOUN", "w": true, "sp": true, "s": 149.374, "e": 149.816 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 149.816, "e": 149.963 },
+        { "t": "sombras", "l": "sombra", "p": "NOUN", "w": true, "s": 149.963, "e": 150.552 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 147.302,
+      "end": 150.617
+    },
+    {
+      "id": "s33",
+      "speaker": "sara",
+      "text": "Por un lado, el viajero que se queda un mes gasta en comercios pequeños.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 150.877, "e": 151.117 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 151.117, "e": 151.297 },
+        { "t": "lado", "l": "lado", "p": "NOUN", "w": true, "s": 151.297, "e": 151.597 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 151.847, "e": 152.039 },
+        { "t": "viajero", "l": "viajero", "p": "NOUN", "w": true, "sp": true, "s": 152.039, "e": 152.552 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 152.552, "e": 152.808 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 152.808, "e": 153 },
+        { "t": "queda", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 153, "e": 153.384 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 153.385, "e": 153.577 },
+        { "t": "mes", "l": "mes", "p": "NOUN", "w": true, "sp": true, "s": 153.577, "e": 153.833 },
+        { "t": "gasta", "l": "gastar", "p": "VERB", "w": true, "sp": true, "s": 153.833, "e": 154.217 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 154.218, "e": 154.41 },
+        { "t": "comercios", "l": "comercio", "p": "NOUN", "w": true, "sp": true, "s": 154.41, "e": 155.051 },
+        { "t": "pequeños", "l": "pequeño", "p": "ADJ", "w": true, "s": 155.05, "e": 155.627 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 150.867,
+      "end": 155.692
+    },
+    {
+      "id": "s34",
+      "speaker": "sara",
+      "text": "Además, se interesa por la vida del barrio.",
+      "tokens": [
+        { "t": "Además", "l": "además", "p": "ADV", "w": true, "s": 155.952, "e": 156.45 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 156.45, "e": 156.664 },
+        { "t": "interesa", "l": "interesar", "p": "VERB", "w": true, "sp": true, "s": 156.664, "e": 157.305 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 157.305, "e": 157.59 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 157.589, "e": 157.803 },
+        { "t": "vida", "l": "vida", "p": "NOUN", "w": true, "sp": true, "s": 157.803, "e": 158.159 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 158.159, "e": 158.444 },
+        { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "s": 158.444, "e": 158.942 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 155.942,
+      "end": 159.002
+    },
+    {
+      "id": "s35",
+      "speaker": "sara",
+      "text": "Por otro, si alquila un piso turístico, contribuye a que suban los precios para los residentes.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 159.262, "e": 159.539 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "s": 159.539, "e": 159.885 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 159.885, "e": 160.093 },
+        { "t": "alquila", "l": "alquilar", "p": "VERB", "w": true, "sp": true, "s": 160.093, "e": 160.647 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 160.647, "e": 160.855 },
+        { "t": "piso", "l": "piso", "p": "NOUN", "w": true, "sp": true, "s": 160.855, "e": 161.201 },
+        { "t": "turístico", "l": "turístico", "p": "ADJ", "w": true, "s": 161.201, "e": 161.893 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        {
+          "t": "contribuye",
+          "l": "contribuir",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 161.893,
+          "e": 162.655
+        },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 162.655, "e": 162.793 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 162.794, "e": 163.071 },
+        { "t": "suban", "l": "subir", "p": "VERB", "w": true, "sp": true, "s": 163.071, "e": 163.486 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 163.486, "e": 163.763 },
+        { "t": "precios", "l": "precio", "p": "NOUN", "w": true, "sp": true, "s": 163.763, "e": 164.317 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 164.317, "e": 164.663 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 164.663, "e": 164.94 },
+        { "t": "residentes", "l": "residente", "p": "NOUN", "w": true, "s": 164.94, "e": 165.702 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 159.252,
+      "end": 165.766
+    },
+    {
+      "id": "s36",
+      "speaker": "david",
+      "text": "O sea, que no basta con viajar despacio; también hay que viajar con responsabilidad.",
+      "tokens": [
+        { "t": "O", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 166.176, "e": 166.339 },
+        { "t": "sea", "l": "ser", "p": "AUX", "w": true, "s": 166.339, "e": 166.666 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 166.896, "e": 167.161 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 167.161, "e": 167.36 },
+        { "t": "basta", "l": "bastar", "p": "VERB", "w": true, "sp": true, "s": 167.361, "e": 167.759 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 167.759, "e": 168.024 },
+        { "t": "viajar", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 168.024, "e": 168.489 },
+        { "t": "despacio", "l": "despacio", "p": "ADV", "w": true, "s": 168.489, "e": 169.086 },
+        { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 169.296, "e": 169.774 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 169.774, "e": 170.013 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 170.013, "e": 170.252 },
+        { "t": "viajar", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 170.252, "e": 170.67 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 170.671, "e": 170.91 },
+        { "t": "responsabilidad", "l": "responsabilidad", "p": "NOUN", "w": true, "s": 170.91, "e": 171.866 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 166.166,
+      "end": 171.983
+    },
+    {
+      "id": "s37",
+      "speaker": "sara",
+      "text": "Exacto.",
+      "tokens": [
+        { "t": "Exacto", "l": "exacto", "p": "ADJ", "w": true, "s": 172.393, "e": 173.183 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 172.383,
+      "end": 173.282
+    },
+    {
+      "id": "s38",
+      "speaker": "sara",
+      "text": "Algunos consejos sencillos: elegir alojamientos legales, visitar destinos menos conocidos y viajar fuera de la temporada alta.",
+      "tokens": [
+        { "t": "Algunos", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 173.542, "e": 174.108 },
+        { "t": "consejos", "l": "consejo", "p": "NOUN", "w": true, "sp": true, "s": 174.108, "e": 174.745 },
+        { "t": "sencillos", "l": "sencillo", "p": "ADJ", "w": true, "s": 174.744, "e": 175.451 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "elegir", "l": "elegir", "p": "VERB", "w": true, "sp": true, "s": 175.452, "e": 175.947 },
+        {
+          "t": "alojamientos",
+          "l": "alojamiento",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 175.947,
+          "e": 176.866
+        },
+        { "t": "legales", "l": "legal", "p": "ADJ", "w": true, "s": 176.866, "e": 177.432 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "visitar", "l": "visitar", "p": "VERB", "w": true, "sp": true, "s": 177.432, "e": 177.998 },
+        { "t": "destinos", "l": "destino", "p": "NOUN", "w": true, "sp": true, "s": 177.998, "e": 178.635 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 178.634, "e": 179.058 },
+        { "t": "conocidos", "l": "conocer", "p": "VERB", "w": true, "sp": true, "s": 179.059, "e": 179.766 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 179.766, "e": 179.907 },
+        { "t": "viajar", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 179.907, "e": 180.402 },
+        { "t": "fuera", "l": "fuera", "p": "ADV", "w": true, "sp": true, "s": 180.402, "e": 180.826 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 180.827, "e": 181.039 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 181.039, "e": 181.251 },
+        { "t": "temporada", "l": "temporada", "p": "NOUN", "w": true, "sp": true, "s": 181.251, "e": 181.958 },
+        { "t": "alta", "l": "alto", "p": "ADJ", "w": true, "s": 181.958, "e": 182.312 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 173.532,
+      "end": 182.401
+    },
+    {
+      "id": "s39",
+      "speaker": "david",
+      "text": "Y algo que he aprendido con los años: dejar huecos en el itinerario.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 182.821, "e": 182.946 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 182.946, "e": 183.259 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 183.26, "e": 183.511 },
+        { "t": "he", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 183.511, "e": 183.699 },
+        { "t": "aprendido", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 183.699, "e": 184.326 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 184.325, "e": 184.576 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 184.576, "e": 184.827 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 184.827, "e": 185.14 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "dejar", "l": "dejar", "p": "VERB", "w": true, "sp": true, "s": 185.14, "e": 185.516 },
+        { "t": "huecos", "l": "hueco", "p": "NOUN", "w": true, "sp": true, "s": 185.517, "e": 185.956 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 185.955, "e": 186.143 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 186.143, "e": 186.331 },
+        { "t": "itinerario", "l": "itinerario", "p": "NOUN", "w": true, "s": 186.331, "e": 187.021 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 182.801,
+      "end": 187.136
+    },
+    {
+      "id": "s40",
+      "speaker": "david",
+      "text": "Los mejores recuerdos de mis viajes no estaban planificados.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 187.396, "e": 187.68 },
+        { "t": "mejores", "l": "mejorar", "p": "VERB", "w": true, "sp": true, "s": 187.68, "e": 188.248 },
+        { "t": "recuerdos", "l": "recuerdo", "p": "NOUN", "w": true, "sp": true, "s": 188.248, "e": 188.958 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 188.958, "e": 189.171 },
+        { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 189.171, "e": 189.455 },
+        { "t": "viajes", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 189.455, "e": 189.952 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 189.952, "e": 190.165 },
+        { "t": "estaban", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 190.165, "e": 190.733 },
+        { "t": "planificados", "l": "planificar", "p": "VERB", "w": true, "s": 190.733, "e": 191.656 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 187.386,
+      "end": 191.726
+    },
+    {
+      "id": "s41",
+      "speaker": "david",
+      "text": "Surgieron cuando me permití improvisar.",
+      "tokens": [
+        { "t": "Surgieron", "l": "surgir", "p": "VERB", "w": true, "sp": true, "s": 191.996, "e": 192.688 },
+        { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 192.688, "e": 193.173 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 193.173, "e": 193.381 },
+        { "t": "permití", "l": "permitir", "p": "VERB", "w": true, "sp": true, "s": 193.381, "e": 193.935 },
+        { "t": "improvisar", "l": "improvisar", "p": "NOUN", "w": true, "s": 193.934, "e": 194.696 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 191.976,
+      "end": 194.781
+    },
+    {
+      "id": "s42",
+      "speaker": "david",
+      "text": "Una tarde en Oporto, por ejemplo, acabé cenando en casa de una familia que había conocido en el tren.",
+      "tokens": [
+        { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 195.041, "e": 195.331 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true, "s": 195.331, "e": 195.766 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 195.766, "e": 195.984 },
+        { "t": "Oporto", "l": "oporto", "p": "PROPN", "w": false, "s": 195.984, "e": 196.492 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 196.711, "e": 196.988 },
+        { "t": "ejemplo", "l": "ejemplo", "p": "NOUN", "w": true, "s": 196.988, "e": 197.541 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "acabé", "l": "acabar", "p": "VERB", "w": true, "sp": true, "s": 197.721, "e": 198.103 },
+        { "t": "cenando", "l": "cenar", "p": "VERB", "w": true, "sp": true, "s": 198.103, "e": 198.613 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 198.613, "e": 198.804 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true, "s": 198.804, "e": 199.123 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 199.123, "e": 199.314 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 199.314, "e": 199.569 },
+        { "t": "familia", "l": "familia", "p": "NOUN", "w": true, "sp": true, "s": 199.569, "e": 200.079 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 200.079, "e": 200.334 },
+        { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 200.334, "e": 200.716 },
+        { "t": "conocido", "l": "conocer", "p": "VERB", "w": true, "sp": true, "s": 200.716, "e": 201.29 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 201.29, "e": 201.481 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 201.481, "e": 201.672 },
+        { "t": "tren", "l": "tren", "p": "NOUN", "w": true, "s": 201.672, "e": 201.991 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 195.031,
+      "end": 202.108
+    },
+    {
+      "id": "s43",
+      "speaker": "sara",
+      "text": "Me encanta esa idea.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 202.518, "e": 202.77 },
+        { "t": "encanta", "l": "encantar", "p": "VERB", "w": true, "sp": true, "s": 202.77, "e": 203.442 },
+        { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 203.442, "e": 203.778 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "s": 203.778, "e": 204.198 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 202.508,
+      "end": 204.273
+    },
+    {
+      "id": "s44",
+      "speaker": "sara",
+      "text": "Al final, viajar despacio no es tanto una técnica como una actitud: estar presente en lugar de coleccionar fotos.",
+      "tokens": [
+        { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 204.533, "e": 204.763 },
+        { "t": "final", "l": "final", "p": "NOUN", "w": true, "s": 204.763, "e": 205.223 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "viajar", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 205.393, "e": 205.89 },
+        { "t": "despacio", "l": "despacio", "p": "ADV", "w": true, "sp": true, "s": 205.89, "e": 206.529 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 206.53, "e": 206.743 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 206.743, "e": 206.956 },
+        { "t": "tanto", "l": "tanto", "p": "ADV", "w": true, "sp": true, "s": 206.956, "e": 207.382 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 207.382, "e": 207.666 },
+        { "t": "técnica", "l": "técnico", "p": "ADJ", "w": true, "sp": true, "s": 207.667, "e": 208.235 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 208.235, "e": 208.59 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 208.59, "e": 208.874 },
+        { "t": "actitud", "l": "actitud", "p": "NOUN", "w": true, "s": 208.875, "e": 209.443 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "estar", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 209.593, "e": 210.016 },
+        { "t": "presente", "l": "presentar", "p": "VERB", "w": true, "sp": true, "s": 210.016, "e": 210.65 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 210.65, "e": 210.861 },
+        { "t": "lugar", "l": "lugar", "p": "NOUN", "w": true, "sp": true, "s": 210.861, "e": 211.284 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 211.284, "e": 211.495 },
+        {
+          "t": "coleccionar",
+          "l": "coleccionar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 211.495,
+          "e": 212.34
+        },
+        { "t": "fotos", "l": "foto", "p": "NOUN", "w": true, "s": 212.34, "e": 212.763 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 204.523,
+      "end": 212.889
+    },
+    {
+      "id": "s45",
+      "speaker": "david",
+      "text": "Pues con eso cerramos el episodio.",
+      "tokens": [
+        { "t": "Pues", "l": "pues", "p": "SCONJ", "w": true, "sp": true, "s": 213.309, "e": 213.638 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 213.638, "e": 213.902 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 213.902, "e": 214.166 },
+        { "t": "cerramos", "l": "cerrar", "p": "VERB", "w": true, "sp": true, "s": 214.165, "e": 214.758 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 214.758, "e": 214.956 },
+        { "t": "episodio", "l": "episodio", "p": "NOUN", "w": true, "s": 214.956, "e": 215.549 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 213.289,
+      "end": 215.671
+    },
+    {
+      "id": "s46",
+      "speaker": "david",
+      "text": "Si tenéis experiencias de viaje lento, contádnoslas en nuestras redes.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 215.931, "e": 216.15 },
+        { "t": "tenéis", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 216.15, "e": 216.66 },
+        {
+          "t": "experiencias",
+          "l": "experiencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 216.66,
+          "e": 217.608
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 217.608, "e": 217.827 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 217.826, "e": 218.263 },
+        { "t": "lento", "l": "lento", "p": "ADJ", "w": true, "s": 218.264, "e": 218.701 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "contádnoslas", "l": "contar", "p": "VERB", "w": true, "sp": true, "s": 218.921, "e": 219.844 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 219.844, "e": 220.057 },
+        { "t": "nuestras", "l": "nuestro", "p": "DET", "w": true, "sp": true, "s": 220.056, "e": 220.695 },
+        { "t": "redes", "l": "red", "p": "NOUN", "w": true, "s": 220.695, "e": 221.121 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 215.921,
+      "end": 221.169
+    },
+    {
+      "id": "s47",
+      "speaker": "david",
+      "text": "¡Hasta la próxima!",
+      "tokens": [
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 221.429, "e": 221.828 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 221.828, "e": 222.027 },
+        { "t": "próxima", "l": "próximo", "p": "ADJ", "w": true, "s": 222.027, "e": 222.559 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 221.419,
+      "end": 222.664
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "masificación",
+      "surface": "masificación",
+      "pos": "noun",
+      "def_en": "presencia excesiva de personas en un lugar",
+      "def_es": { "en": "overcrowding", "fr": "surfréquentation", "zh": "人满为患", "ja": "過密化" },
+      "ref": "s31"
+    },
+    {
+      "lemma": "huella de carbono",
+      "surface": "huella de carbono",
+      "pos": "phrase",
+      "def_en": "cantidad de gases contaminantes que produce una actividad",
+      "def_es": { "en": "carbon footprint", "fr": "empreinte carbone", "zh": "碳足迹", "ja": "二酸化炭素排出量" },
+      "ref": "s21"
+    },
+    {
+      "lemma": "improvisar",
+      "surface": "improvisar",
+      "pos": "verb",
+      "def_en": "hacer algo sin haberlo preparado",
+      "def_es": { "en": "to improvise", "fr": "improviser", "zh": "即兴", "ja": "即興で行う" },
+      "ref": "s41"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿De qué trata el episodio?",
+      "evidence": ["s14"],
+      "rationale_es": { "en": "A slower way of travelling." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De cómo conseguir siempre billetes de avión mucho más baratos" },
+        { "id": "b", "text": "De una forma de viajar con más calma y menos destinos" },
+        { "id": "c", "text": "De los mejores museos para visitar en Europa" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué recuerda David de su viaje por Europa?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "Stations, luggage and queues." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Las comidas en los mercados locales de cada ciudad" },
+        { "id": "b", "text": "Las conversaciones con los vecinos" },
+        { "id": "c", "text": "Sobre todo, el cansancio y las prisas" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué prefieren el tren quienes viajan despacio?",
+      "evidence": ["s20"],
+      "rationale_es": { "en": "It pollutes much less." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque contamina mucho menos que el avión" },
+        { "id": "b", "text": "Porque siempre es más barato" },
+        { "id": "c", "text": "Porque es más rápido en las distancias muy largas" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Qué opina Sara sobre usar siempre el tren?",
+      "evidence": ["s24"],
+      "rationale_es": { "en": "It should not be a moral duty." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Debería prohibirse volar en Europa" },
+        { "id": "b", "text": "No debería ser una obligación moral" },
+        { "id": "c", "text": "Es la única forma correcta de viajar" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Sara tardó menos de un día en llegar de Barcelona a Lisboa.",
+      "evidence": ["s27"],
+      "rationale_es": { "en": "Almost two days." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué contradicción señala Sara sobre el viaje lento?",
+      "evidence": ["s35"],
+      "rationale_es": { "en": "Tourist flats can raise rents." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Hace que los comercios pequeños pierdan clientes" },
+        { "id": "b", "text": "Obliga a los vecinos a hablar otros idiomas" },
+        { "id": "c", "text": "Puede encarecer los pisos de los vecinos" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué recomienda David para el itinerario?",
+      "evidence": ["s39"],
+      "rationale_es": { "en": "Leave gaps in the itinerary." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Dejar momentos libres sin planificar" },
+        { "id": "b", "text": "Reservar todas las visitas con meses de antelación" },
+        { "id": "c", "text": "Visitar cada día una ciudad diferente" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q8",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s44"],
+      "rationale_es": { "en": "*Actitud*: attitude." },
+      "type": "gap_fill",
+      "text": "Para Sara, viajar despacio es más una {{1}} que una técnica.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["actitud"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "acabar", "actitud", "actual", "además", "algo", "algún", "alojamiento", "alquilar", "alquiler",
+    "alto", "ambiente", "antes", "aprender", "aprovechar", "aquel", "aquí", "aspecto", "así", "aunque",
+    "autobús", "avión", "año", "barrio", "bastar", "bienvenido", "billete", "cada", "cansado", "carbono",
+    "casa", "casi", "cenar", "cerrar", "ciento", "ciudad", "cola", "coleccionar", "comer", "comercio",
+    "comprar", "con", "confesar", "conocer", "consejo", "contar", "contrario", "contribuir", "convertir",
+    "costar", "creer", "cuando", "de", "debatir", "dejar", "desde", "despacio", "destino", "diferencia",
+    "disfrutar", "doble", "día", "ejemplo", "el", "elegir", "emitir", "en", "encantar", "enorme", "enterarse",
+    "entrar", "entre", "episodio", "ese", "estación", "estar", "esto", "evitar", "exacto", "experiencia",
+    "expulsar", "familia", "fascinante", "final", "formar", "foto", "fuera", "gastar", "gente", "grande",
+    "haber", "hablar", "hacer", "hasta", "historia", "hoy", "hueco", "huella", "idea", "importante",
+    "importar", "improvisar", "intentar", "interesar", "ir", "itinerario", "justo", "lado", "legal", "lento",
+    "local", "lugar", "luz", "maleta", "masificación", "masivo", "medio", "mejorar", "menos", "mercado", "mes",
+    "mi", "minuto", "mismo", "monumento", "moral", "mucho", "museo", "más", "ningún", "no", "nuestro", "nuevo",
+    "nunca", "o", "obligación", "opción", "otro", "paisaje", "para", "parecer", "parte", "pasado", "pasar",
+    "pequeño", "perfecto", "permitir", "pero", "piso", "planificar", "población", "poco", "poder", "por",
+    "practicar", "precio", "preferir", "presentar", "problema", "propio", "próximo", "pues", "que", "quedar",
+    "querer", "quien", "qué", "realista", "recordar", "recorrer", "recuerdo", "red", "relación", "residente",
+    "responsabilidad", "ritmo", "se", "seguidor", "sencillo", "sentir", "ser", "si", "siempre", "sin",
+    "sinceramente", "sincero", "sino", "sobre", "soler", "solo", "sombra", "sorprender", "su", "subir",
+    "surgir", "también", "tanto", "tardar", "tarde", "temporada", "tendencia", "tener", "tiempo", "tienda",
+    "todo", "transporte", "tratar", "trayecto", "tren", "tu", "turismo", "turístico", "técnico", "tú", "un",
+    "varios", "vecino", "ver", "verano", "verdad", "vez", "viajar", "viajero", "vida", "visitar", "volver",
+    "y", "yo", "él"
+  ],
+  "difficulty": 1453,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6504, "A2": 0.7988, "B1": 0.916, "B2": 0.957, "C1": 0.9766, "C2": 1 },
+    "off_level_lemmas": [
+      "aspecto", "despacio", "hueco", "huella", "improvisar", "masificación", "paisaje", "relación", "ritmo",
+      "trayecto"
+    ],
+    "avg_sentence_words": 11.2,
+    "flesch_reading_ease": 80.7,
+    "checked_at": "2026-10-19T07:48:30.244Z"
+  },
+  "audio": {
+    "src": "audio/c1/es-c1-lis-009/v1.m4a",
+    "duration_s": 222.664,
+    "wpm": 142,
+    "provider": "piper",
+    "voices": { "sara": "sharvard-f", "david": "sharvard-m" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      0.8, 1, 0.71, 0.62, 0.65, 1, 0.56, 0.69, 0.72, 0.78, 0.45, 1, 0.61, 1, 0.83, 0.76, 0.97, 1, 0.7, 0.62,
+      0.55, 0.71, 0.6, 0.81, 1, 0.89, 1, 0.69, 1, 0.67, 0.75, 0.92, 0.96, 0.63, 1, 0.82, 0.59, 1, 0.68, 0.94,
+      0.84, 0.63, 0.85, 0.73, 0.59, 1, 0.96, 0.97, 0.84, 1, 0.94, 0.91, 0.87, 0.93, 0.89, 1, 0.53, 0.67, 0.82,
+      0.98, 1, 0.74, 0.66, 1, 0.79, 0.75, 0.84, 0.88, 1, 0.97, 0.97, 0.94, 0.82, 0.86, 0.58, 1, 0.97, 1, 0.65,
+      0.65, 0.76, 0.75, 0.68, 0.7, 1, 0.75, 0.9, 1, 0.84, 0.78, 0.89, 0.83, 0.88, 0.94, 0.66, 0.72, 1, 0.64,
+      0.62, 0.76, 0.79, 0.69, 0.85, 0.96, 1, 1, 0.9, 0.85, 0.86, 0.96, 1, 0.78, 0.99, 0.91, 0.71, 0.86, 1,
+      0.89, 0.82, 0.88, 0.94, 0.91, 1, 0.67, 0.69, 0.57, 0.62, 0.64, 0.57, 0.52, 1, 0.98, 0.88, 0.97, 1, 0.8,
+      0.71, 0.76, 0.75, 0.65, 0.72, 1, 0.78, 0.59, 0.84, 0.52, 0.65, 0.88, 1, 0.47, 0.74, 0.9, 0.92, 0.59,
+      0.82, 0.62, 0.86, 1, 0.82, 0.91, 1, 0.83, 0.91, 1, 0.81, 0.78, 0.92, 0.56, 0.86, 0.82, 1, 1, 0.56, 0.78,
+      0.49, 0.95, 0.67, 0.65, 0.32, 0.63, 0.89, 1, 0.65, 0.65, 0.43, 0.48, 1, 0.57, 0.56, 0.66, 0.97, 1, 0.61,
+      0.95, 0.73, 0.86, 0.68, 1, 0.52, 0.78, 0.48, 0.57, 0.79, 0.8, 0.97, 0.99, 1, 1, 0.62, 0.92, 0.97, 0.6,
+      0.49, 0.71, 1, 0.69, 0.62, 0.3, 1, 0.79, 0.44, 0.77, 0.78, 0.64, 0.71, 0.64, 0.79, 1, 0.6, 0.95, 0.93, 1,
+      0.52, 0.67, 0.83, 1, 0.96, 0.7, 0.71, 1
+    ]
+  }
+}

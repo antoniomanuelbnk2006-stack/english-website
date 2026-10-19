@@ -1,0 +1,654 @@
+{
+  "id": "es-b1-lis-008",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u03",
+  "series": "es-b1-u03-menos-pantallas",
+  "skill": "listening",
+  "genre": "podcast",
+  "title": "Menos pantallas, más vida",
+  "summary_es": {
+    "en": "A man explains on a podcast how he cut down his phone use and what he gained.",
+    "fr": "Un homme explique dans un podcast comment il a réduit son usage du téléphone et ce qu’il y a gagné.",
+    "zh": "一位男士在播客中讲述他如何减少使用手机以及由此得到的好处。",
+    "ja": "男性がポッドキャストで、スマホの使用を減らした方法と得たものを語ります。"
+  },
+  "topic": "media",
+  "tags": ["tecnología", "hábitos", "móvil"],
+  "can_do": ["L-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["notificaciones", "acostumbrarse", "herramienta"],
+  "est_minutes": 8,
+  "prediction_prompt": "¿Cuántas horas al día miras el móvil? ¿Crees que es demasiado?",
+  "pre_teach": ["notificaciones", "de golpe"],
+  "speakers": [
+    { "id": "carmen", "name": "Carmen", "accent": "es-ES", "gender": "female" },
+    { "id": "diego", "name": "Diego", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "carmen",
+      "text": "Bienvenidos a «Vida conectada», el programa sobre tecnología y vida diaria.",
+      "tokens": [
+        { "t": "Bienvenidos", "l": "bienvenido", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.842 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 0.842, "e": 0.981 },
+        { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+        { "t": "Vida", "l": "vida", "p": "NOUN", "w": true, "sp": true, "s": 0.98, "e": 1.327 },
+        { "t": "conectada", "l": "conectar", "p": "VERB", "w": true, "s": 1.327, "e": 2.02 },
+        { "t": "»", "l": "»", "p": "PUNCT", "w": false },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 2.02, "e": 2.228 },
+        { "t": "programa", "l": "programa", "p": "NOUN", "w": true, "sp": true, "s": 2.228, "e": 2.852 },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 2.852, "e": 3.268 },
+        { "t": "tecnología", "l": "tecnología", "p": "NOUN", "w": true, "sp": true, "s": 3.267, "e": 4.029 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 4.03, "e": 4.169 },
+        { "t": "vida", "l": "vida", "p": "NOUN", "w": true, "sp": true, "s": 4.168, "e": 4.515 },
+        { "t": "diaria", "l": "diario", "p": "ADJ", "w": true, "s": 4.515, "e": 5 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 5.086
+    },
+    {
+      "id": "s2",
+      "speaker": "carmen",
+      "text": "Hoy hablamos con Diego, que lleva un año usando menos el móvil.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 5.346, "e": 5.605 },
+        { "t": "hablamos", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 5.605, "e": 6.189 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 6.189, "e": 6.448 },
+        { "t": "Diego", "l": "diego", "p": "PROPN", "w": false, "s": 6.448, "e": 6.837 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 6.837, "e": 7.096 },
+        { "t": "lleva", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 7.097, "e": 7.486 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 7.486, "e": 7.681 },
+        { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 7.68, "e": 7.939 },
+        { "t": "usando", "l": "usar", "p": "VERB", "w": true, "sp": true, "s": 7.94, "e": 8.394 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 8.393, "e": 8.782 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.782, "e": 8.977 },
+        { "t": "móvil", "l": "móvil", "p": "NOUN", "w": true, "s": 8.977, "e": 9.366 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.336,
+      "end": 9.434
+    },
+    {
+      "id": "s3",
+      "speaker": "diego",
+      "text": "Hola, Carmen.",
+      "tokens": [
+        { "t": "Hola", "l": "hola", "p": "INTJ", "w": false, "s": 9.834, "e": 10.154 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Carmen", "l": "carmen", "p": "PROPN", "w": false, "s": 10.344, "e": 10.854 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.834,
+      "end": 10.944
+    },
+    {
+      "id": "s4",
+      "speaker": "diego",
+      "text": "Sí, hace un año descubrí que pasaba casi seis horas al día con el teléfono.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 11.204, "e": 11.544 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 11.744, "e": 12.037 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 12.037, "e": 12.213 },
+        { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 12.213, "e": 12.447 },
+        { "t": "descubrí", "l": "descubrir", "p": "VERB", "w": true, "sp": true, "s": 12.447, "e": 12.974 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 12.974, "e": 13.208 },
+        { "t": "pasaba", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 13.209, "e": 13.619 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 13.619, "e": 13.912 },
+        { "t": "seis", "l": "seis", "p": "NUM", "w": false, "sp": true, "s": 13.912, "e": 14.205 },
+        { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 14.205, "e": 14.557 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 14.556, "e": 14.732 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 14.732, "e": 14.966 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 14.967, "e": 15.201 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 15.201, "e": 15.377 },
+        { "t": "teléfono", "l": "teléfono", "p": "NOUN", "w": true, "s": 15.377, "e": 15.904 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.194,
+      "end": 15.984
+    },
+    {
+      "id": "s5",
+      "speaker": "carmen",
+      "text": "Seis horas es muchísimo.",
+      "tokens": [
+        { "t": "Seis", "l": "seis", "p": "NUM", "w": false, "sp": true, "s": 16.404, "e": 16.771 },
+        { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 16.771, "e": 17.211 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 17.211, "e": 17.431 },
+        { "t": "muchísimo", "l": "muchísimo", "p": "ADV", "w": true, "s": 17.431, "e": 18.164 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.384,
+      "end": 18.23
+    },
+    {
+      "id": "s6",
+      "speaker": "carmen",
+      "text": "¿Cómo te diste cuenta?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 18.49, "e": 18.833 },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 18.833, "e": 19.039 },
+        { "t": "diste", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 19.039, "e": 19.45 },
+        { "t": "cuenta", "l": "contar", "p": "VERB", "w": true, "s": 19.45, "e": 19.93 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.48,
+      "end": 19.988
+    },
+    {
+      "id": "s7",
+      "speaker": "diego",
+      "text": "Una aplicación me mandó un informe semanal.",
+      "tokens": [
+        { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 20.398, "e": 20.706 },
+        { "t": "aplicación", "l": "aplicación", "p": "NOUN", "w": true, "sp": true, "s": 20.706, "e": 21.553 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 21.553, "e": 21.784 },
+        { "t": "mandó", "l": "mandar", "p": "VERB", "w": true, "sp": true, "s": 21.784, "e": 22.246 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 22.245, "e": 22.476 },
+        { "t": "informe", "l": "informar", "p": "VERB", "w": true, "sp": true, "s": 22.476, "e": 23.092 },
+        { "t": "semanal", "l": "semanal", "p": "ADJ", "w": true, "s": 23.092, "e": 23.708 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.388,
+      "end": 23.796
+    },
+    {
+      "id": "s8",
+      "speaker": "diego",
+      "text": "Me quedé sorprendido, porque yo pensaba que lo usaba poco.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 24.056, "e": 24.232 },
+        { "t": "quedé", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 24.232, "e": 24.583 },
+        { "t": "sorprendido", "l": "sorprender", "p": "VERB", "w": true, "s": 24.583, "e": 25.286 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 25.566, "e": 26 },
+        { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 26, "e": 26.186 },
+        { "t": "pensaba", "l": "pensar", "p": "VERB", "w": true, "sp": true, "s": 26.185, "e": 26.681 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 26.681, "e": 26.929 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 26.929, "e": 27.115 },
+        { "t": "usaba", "l": "usar", "p": "VERB", "w": true, "sp": true, "s": 27.115, "e": 27.487 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "s": 27.486, "e": 27.796 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.046,
+      "end": 27.882
+    },
+    {
+      "id": "s9",
+      "speaker": "carmen",
+      "text": "¿Y qué hiciste para cambiar?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 28.292, "e": 28.416 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 28.416, "e": 28.663 },
+        { "t": "hiciste", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 28.663, "e": 29.158 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 29.158, "e": 29.467 },
+        { "t": "cambiar", "l": "cambiar", "p": "VERB", "w": true, "s": 29.467, "e": 29.962 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.282,
+      "end": 30.07
+    },
+    {
+      "id": "s10",
+      "speaker": "diego",
+      "text": "Primero desactivé las notificaciones de las redes sociales.",
+      "tokens": [
+        { "t": "Primero", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 30.48, "e": 31.003 },
+        { "t": "desactivé", "l": "desactivar", "p": "VERB", "w": true, "sp": true, "s": 31.003, "e": 31.657 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 31.658, "e": 31.92 },
+        {
+          "t": "notificaciones",
+          "l": "notificación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 31.919,
+          "e": 32.9
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 32.901, "e": 33.097 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 33.097, "e": 33.359 },
+        { "t": "redes", "l": "red", "p": "NOUN", "w": true, "sp": true, "s": 33.359, "e": 33.752 },
+        { "t": "sociales", "l": "social", "p": "ADJ", "w": true, "s": 33.751, "e": 34.34 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 30.47,
+      "end": 34.383
+    },
+    {
+      "id": "s11",
+      "speaker": "diego",
+      "text": "Después empecé a dejar el móvil en otra habitación durante la cena.",
+      "tokens": [
+        { "t": "Después", "l": "después", "p": "ADV", "w": true, "sp": true, "s": 34.643, "e": 35.135 },
+        { "t": "empecé", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 35.135, "e": 35.565 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 35.565, "e": 35.688 },
+        { "t": "dejar", "l": "dejar", "p": "VERB", "w": true, "sp": true, "s": 35.688, "e": 36.057 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 36.057, "e": 36.241 },
+        { "t": "móvil", "l": "móvil", "p": "NOUN", "w": true, "sp": true, "s": 36.242, "e": 36.611 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 36.611, "e": 36.795 },
+        { "t": "otra", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 36.795, "e": 37.102 },
+        { "t": "habitación", "l": "habitación", "p": "NOUN", "w": true, "sp": true, "s": 37.103, "e": 37.779 },
+        { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 37.779, "e": 38.271 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 38.271, "e": 38.455 },
+        { "t": "cena", "l": "cenar", "p": "VERB", "w": true, "s": 38.456, "e": 38.763 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.633,
+      "end": 38.894
+    },
+    {
+      "id": "s12",
+      "speaker": "carmen",
+      "text": "¿Fue difícil?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Fue", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 39.334, "e": 39.661 },
+        { "t": "difícil", "l": "difícil", "p": "ADJ", "w": true, "s": 39.661, "e": 40.314 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 39.294,
+      "end": 40.386
+    },
+    {
+      "id": "s13",
+      "speaker": "diego",
+      "text": "Los primeros días, sí.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 40.796, "e": 41.067 },
+        { "t": "primeros", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 41.067, "e": 41.677 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 41.677, "e": 42.016 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "s": 42.166, "e": 42.496 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 40.786,
+      "end": 42.593
+    },
+    {
+      "id": "s14",
+      "speaker": "diego",
+      "text": "Sentía ansiedad y miraba el bolsillo cada cinco minutos.",
+      "tokens": [
+        { "t": "Sentía", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 42.863, "e": 43.351 },
+        { "t": "ansiedad", "l": "ansiedad", "p": "NOUN", "w": true, "sp": true, "s": 43.351, "e": 43.978 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 43.977, "e": 44.116 },
+        { "t": "miraba", "l": "mirar", "p": "VERB", "w": true, "sp": true, "s": 44.117, "e": 44.605 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 44.604, "e": 44.813 },
+        { "t": "bolsillo", "l": "bolsillo", "p": "NOUN", "w": true, "sp": true, "s": 44.813, "e": 45.44 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 45.44, "e": 45.788 },
+        { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true, "s": 45.788, "e": 46.206 },
+        { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true, "s": 46.206, "e": 46.763 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 42.843,
+      "end": 46.814
+    },
+    {
+      "id": "s15",
+      "speaker": "diego",
+      "text": "Pero poco a poco me acostumbré.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 47.074, "e": 47.355 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 47.355, "e": 47.636 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 47.635, "e": 47.747 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 47.748, "e": 48.029 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 48.028, "e": 48.196 },
+        { "t": "acostumbré", "l": "acostumbrarse", "p": "VERB", "w": true, "s": 48.197, "e": 48.814 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 47.064,
+      "end": 48.892
+    },
+    {
+      "id": "s16",
+      "speaker": "carmen",
+      "text": "¿Qué has ganado con el cambio?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 49.302, "e": 49.53 },
+        { "t": "has", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 49.53, "e": 49.758 },
+        { "t": "ganado", "l": "ganar", "p": "VERB", "w": true, "sp": true, "s": 49.757, "e": 50.155 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 50.155, "e": 50.383 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 50.383, "e": 50.554 },
+        { "t": "cambio", "l": "cambiar", "p": "VERB", "w": true, "s": 50.554, "e": 50.952 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 49.292,
+      "end": 51.039
+    },
+    {
+      "id": "s17",
+      "speaker": "diego",
+      "text": "Mucho tiempo.",
+      "tokens": [
+        { "t": "Mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 51.449, "e": 51.911 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "s": 51.911, "e": 52.449 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 51.439,
+      "end": 52.537
+    },
+    {
+      "id": "s18",
+      "speaker": "diego",
+      "text": "Ahora leo media hora cada noche, salgo a caminar y hablo más con mi familia.",
+      "tokens": [
+        { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 52.797, "e": 53.135 },
+        { "t": "leo", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 53.135, "e": 53.36 },
+        { "t": "media", "l": "medio", "p": "ADJ", "w": true, "sp": true, "s": 53.36, "e": 53.698 },
+        { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 53.697, "e": 53.978 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 53.978, "e": 54.259 },
+        { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "s": 54.26, "e": 54.598 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "salgo", "l": "salir", "p": "VERB", "w": true, "sp": true, "s": 54.937, "e": 55.349 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 55.349, "e": 55.486 },
+        { "t": "caminar", "l": "caminar", "p": "VERB", "w": true, "sp": true, "s": 55.486, "e": 56.035 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 56.035, "e": 56.172 },
+        { "t": "hablo", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 56.172, "e": 56.584 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 56.584, "e": 56.858 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 56.858, "e": 57.132 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 57.132, "e": 57.338 },
+        { "t": "familia", "l": "familia", "p": "NOUN", "w": true, "s": 57.338, "e": 57.887 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 52.787,
+      "end": 58.029
+    },
+    {
+      "id": "s19",
+      "speaker": "carmen",
+      "text": "¿Qué consejo darías a los oyentes?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 58.439, "e": 58.709 },
+        { "t": "consejo", "l": "consejo", "p": "NOUN", "w": true, "sp": true, "s": 58.709, "e": 59.25 },
+        { "t": "darías", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 59.25, "e": 59.723 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 59.723, "e": 59.858 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 59.858, "e": 60.128 },
+        { "t": "oyentes", "l": "oyente", "p": "NOUN", "w": true, "s": 60.128, "e": 60.669 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 58.429,
+      "end": 60.717
+    },
+    {
+      "id": "s20",
+      "speaker": "diego",
+      "text": "Que no intenten dejarlo todo de golpe.",
+      "tokens": [
+        { "t": "Que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 61.127, "e": 61.412 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 61.412, "e": 61.626 },
+        { "t": "intenten", "l": "intentar", "p": "VERB", "w": true, "sp": true, "s": 61.626, "e": 62.268 },
+        { "t": "dejarlo", "l": "dejar", "p": "VERB", "w": true, "sp": true, "s": 62.268, "e": 62.839 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 62.839, "e": 63.196 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 63.195, "e": 63.409 },
+        { "t": "golpe", "l": "golpe", "p": "NOUN", "w": true, "s": 63.409, "e": 63.837 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 61.117,
+      "end": 63.929
+    },
+    {
+      "id": "s21",
+      "speaker": "diego",
+      "text": "Es mejor empezar con una regla pequeña, por ejemplo, no mirar el móvil durante la primera hora de la mañana.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 64.189, "e": 64.378 },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true, "s": 64.378, "e": 64.757 },
+        { "t": "empezar", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 64.757, "e": 65.262 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 65.262, "e": 65.514 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 65.514, "e": 65.766 },
+        { "t": "regla", "l": "regla", "p": "NOUN", "w": true, "sp": true, "s": 65.767, "e": 66.146 },
+        { "t": "pequeña", "l": "pequeño", "p": "ADJ", "w": true, "s": 66.146, "e": 66.651 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 66.65, "e": 66.902 },
+        { "t": "ejemplo", "l": "ejemplo", "p": "NOUN", "w": true, "s": 66.903, "e": 67.408 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 67.408, "e": 67.597 },
+        { "t": "mirar", "l": "mirar", "p": "VERB", "w": true, "sp": true, "s": 67.597, "e": 67.976 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 67.976, "e": 68.165 },
+        { "t": "móvil", "l": "móvil", "p": "NOUN", "w": true, "sp": true, "s": 68.165, "e": 68.544 },
+        { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 68.544, "e": 69.049 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 69.049, "e": 69.238 },
+        { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 69.238, "e": 69.743 },
+        { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 69.743, "e": 70.059 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 70.059, "e": 70.248 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 70.248, "e": 70.437 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "s": 70.437, "e": 70.879 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 64.179,
+      "end": 70.97
+    },
+    {
+      "id": "s22",
+      "speaker": "carmen",
+      "text": "Muchas gracias, Diego, por compartir tu experiencia.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 71.38, "e": 71.906 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 71.906, "e": 72.508 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Diego", "l": "diego", "p": "PROPN", "w": false, "s": 72.508, "e": 72.959 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 72.959, "e": 73.26 },
+        { "t": "compartir", "l": "compartir", "p": "VERB", "w": true, "sp": true, "s": 73.26, "e": 74.012 },
+        { "t": "tu", "l": "tu", "p": "DET", "w": true, "sp": true, "s": 74.012, "e": 74.238 },
+        { "t": "experiencia", "l": "experiencia", "p": "NOUN", "w": true, "s": 74.238, "e": 75.14 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 71.37,
+      "end": 75.217
+    },
+    {
+      "id": "s23",
+      "speaker": "diego",
+      "text": "Gracias a ti.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 75.637, "e": 76.185 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 76.185, "e": 76.322 },
+        { "t": "ti", "l": "tú", "p": "PRON", "w": true, "s": 76.322, "e": 76.527 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 75.617,
+      "end": 76.646
+    },
+    {
+      "id": "s24",
+      "speaker": "diego",
+      "text": "Y recordad: el móvil es una herramienta, no una obligación.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 76.906, "e": 77.055 },
+        { "t": "recordad", "l": "recordar", "p": "VERB", "w": true, "s": 77.055, "e": 77.726 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 77.906, "e": 78.105 },
+        { "t": "móvil", "l": "móvil", "p": "NOUN", "w": true, "sp": true, "s": 78.105, "e": 78.504 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 78.504, "e": 78.703 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 78.703, "e": 78.969 },
+        { "t": "herramienta", "l": "herramienta", "p": "NOUN", "w": true, "s": 78.969, "e": 79.766 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 79.946, "e": 80.158 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 80.158, "e": 80.44 },
+        { "t": "obligación", "l": "obligación", "p": "NOUN", "w": true, "s": 80.44, "e": 81.216 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 76.896,
+      "end": 81.288
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "notificación",
+      "surface": "notificaciones",
+      "pos": "noun",
+      "def_en": "aviso que manda una aplicación",
+      "def_es": { "en": "notification", "fr": "notification", "zh": "通知", "ja": "通知" },
+      "ref": "s10"
+    },
+    {
+      "lemma": "acostumbrarse",
+      "surface": "acostumbré",
+      "pos": "verb",
+      "def_en": "hacerse a algo nuevo con el tiempo",
+      "def_es": { "en": "to get used to", "fr": "s’habituer", "zh": "习惯", "ja": "慣れる" },
+      "ref": "s15"
+    },
+    {
+      "lemma": "de golpe",
+      "surface": "de golpe",
+      "pos": "phrase",
+      "def_en": "de una sola vez y muy deprisa",
+      "def_es": { "en": "all at once", "fr": "d’un seul coup", "zh": "一下子", "ja": "一度に" },
+      "ref": "s20"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿De qué habla Diego en el programa?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "How he uses his phone less." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De cómo arreglar un teléfono" },
+        { "id": "b", "text": "De cómo usa menos el móvil" },
+        { "id": "c", "text": "De qué aplicaciones comprar" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuánto tiempo pasaba con el móvil?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "Almost six hours a day." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Unas dos horas por la noche" },
+        { "id": "b", "text": "Una hora a la semana" },
+        { "id": "c", "text": "Unas seis horas diarias" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Diego pensaba que usaba mucho el teléfono.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "He thought he used it little." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué cambió primero?",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "He turned off social-media notifications." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Quitó los avisos de las redes" },
+        { "id": "b", "text": "Compró un móvil más sencillo" },
+        { "id": "c", "text": "Borró todas sus cuentas de correo" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Qué consejo da Diego?",
+      "evidence": ["s21"],
+      "rationale_es": { "en": "Start with a small rule." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Dejar el móvil de un día para otro" },
+        { "id": "b", "text": "Proponerse una norma sencilla" },
+        { "id": "c", "text": "Cambiar de teléfono cada año" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s18"],
+      "rationale_es": { "en": "*Cada noche*: every night." },
+      "type": "gap_fill",
+      "text": "Ahora lee media hora cada {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["noche"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "acostumbrarse", "ahora", "ansiedad", "aplicación", "año", "bienvenido", "bolsillo", "cada",
+    "cambiar", "caminar", "casi", "cenar", "compartir", "con", "conectar", "consejo", "contar", "cómo", "dar",
+    "de", "dejar", "desactivar", "descubrir", "después", "diario", "difícil", "durante", "día", "ejemplo",
+    "el", "empezar", "en", "experiencia", "familia", "ganar", "golpe", "haber", "habitación", "hablar",
+    "hacer", "herramienta", "hora", "hoy", "informar", "intentar", "leer", "llevar", "mandar", "mañana",
+    "medio", "mejor", "menos", "mi", "minuto", "mirar", "mucho", "muchísimo", "más", "móvil", "no", "noche",
+    "notificación", "obligación", "otro", "oyente", "para", "pasar", "pensar", "pequeño", "pero", "poco",
+    "por", "porque", "programa", "que", "quedar", "qué", "recordar", "red", "regla", "salir", "semanal",
+    "sentir", "ser", "sobre", "social", "sorprender", "tecnología", "teléfono", "tiempo", "todo", "tu", "tú",
+    "un", "usar", "vida", "y", "yo", "él"
+  ],
+  "difficulty": 1075,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6474, "A2": 0.8092, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 7.8,
+    "flesch_reading_ease": 79.5,
+    "checked_at": "2026-10-19T07:35:31.655Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-008/v1.m4a",
+    "duration_s": 81.288,
+    "wpm": 138,
+    "provider": "piper",
+    "voices": { "carmen": "sharvard-f", "diego": "sharvard-m" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      1, 0.89, 0.67, 0.68, 0.5, 0.73, 0.54, 0.8, 0.53, 0.6, 0.56, 0.98, 0.68, 0.68, 0.28, 0.7, 0.92, 0.89,
+      0.88, 0.85, 0.45, 1, 0.69, 0.53, 0.8, 0.67, 0.62, 0.27, 0, 0.9, 1, 0.18, 0.04, 0.62, 1, 0.65, 0.75, 0.36,
+      0.81, 0.84, 0.78, 0.68, 0.76, 0.58, 0.78, 0.58, 0.55, 0.03, 0.55, 1, 0.73, 0.56, 0.66, 0.39, 0.87, 1,
+      0.92, 0.91, 0.34, 0, 1, 0.92, 0.77, 0.65, 0.83, 0.58, 0.36, 0.85, 0.53, 0.55, 0.03, 0.44, 0.71, 0.44,
+      0.45, 0.66, 0.9, 0.64, 0.98, 0.64, 1, 0.52, 0.04, 0.59, 1, 0.85, 0.84, 0.6, 0.49, 0.09, 0.93, 0.78, 0.96,
+      1, 0.59, 0.95, 0.95, 0.79, 0.9, 0.7, 0.97, 0.19, 0.37, 0.62, 0.28, 0.59, 1, 0.49, 0.47, 0.87, 0.44, 0.56,
+      0.63, 0.37, 0.21, 0, 1, 0.71, 0.24, 0.04, 0.76, 0.69, 1, 0.82, 0.44, 0.63, 0.33, 0.56, 0.77, 0.84, 0.53,
+      1, 0.72, 0.68, 0.93, 0.78, 0.91, 0.17, 0.09, 0.99, 1, 0.85, 0.89, 0.49, 0.07, 0.89, 1, 0.91, 0.67, 0.76,
+      0.26, 0.2, 1, 0.7, 0.29, 0.57, 0.7, 0.53, 0.65, 0.57, 0.36, 0.31, 0.62, 1, 0.48, 0.5, 0.55, 0.65, 0.35,
+      0.36, 0.31, 0.02, 0.78, 0.54, 0.88, 1, 0.67, 0.58, 0.34, 0.06, 0.63, 0.56, 0.26, 0.6, 0.4, 1, 0.78, 0.5,
+      0.13, 1, 0.95, 0.83, 0.93, 0.59, 0.94, 0.96, 0.66, 0.62, 0.69, 0.79, 0.5, 0.67, 0.68, 0.94, 0.7, 0.86,
+      0.88, 0.89, 0.54, 0.19, 0.59, 0.61, 0.9, 0.71, 1, 0.84, 0.74, 0.58, 0.6, 0.45, 0.68, 0.22, 0, 1, 0.38,
+      0.35, 0.02, 0.69, 0.69, 1, 0.63, 0.85, 0.79, 0.8, 0.74, 0.66, 0.92, 0.93, 0.54, 0.45
+    ]
+  }
+}

@@ -1,0 +1,608 @@
+{
+  "id": "es-b1-lis-007",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u04",
+  "series": "es-b1-u04-estacion",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Un tren con retraso",
+  "summary_es": {
+    "en": "A traveller asks at the station what she can do because her train is an hour late.",
+    "fr": "Une voyageuse demande à la gare ce qu’elle peut faire, car son train a une heure de retard.",
+    "zh": "一位旅客因火车晚点一小时，在车站询问可以怎么办。",
+    "ja": "列車が1時間遅れたため、旅行者が駅でどうすればよいか尋ねます。"
+  },
+  "topic": "travel",
+  "tags": ["viajes", "tren", "problemas"],
+  "can_do": ["L-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["retraso", "avería", "justificante", "devolver"],
+  "est_minutes": 8,
+  "prediction_prompt": "Tu tren llega tarde y tienes una reunión. ¿Qué le preguntas al empleado?",
+  "pre_teach": ["avería", "justificante"],
+  "speakers": [
+    { "id": "laura", "name": "Laura", "accent": "es-ES", "gender": "female" },
+    { "id": "jorge", "name": "Jorge", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "laura",
+      "text": "Buenas tardes.",
+      "tokens": [
+        { "t": "Buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.61 },
+        { "t": "tardes", "l": "tarde", "p": "NOUN", "w": true, "s": 0.61, "e": 1.21 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.284
+    },
+    {
+      "id": "s2",
+      "speaker": "laura",
+      "text": "Tengo un billete para el tren de las cinco a Valencia, pero ha salido con retraso.",
+      "tokens": [
+        { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 1.544, "e": 1.897 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 1.897, "e": 2.074 },
+        { "t": "billete", "l": "billete", "p": "NOUN", "w": true, "sp": true, "s": 2.074, "e": 2.545 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 2.545, "e": 2.839 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 2.84, "e": 3.017 },
+        { "t": "tren", "l": "tren", "p": "NOUN", "w": true, "sp": true, "s": 3.016, "e": 3.31 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 3.311, "e": 3.488 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 3.487, "e": 3.723 },
+        { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true, "s": 3.723, "e": 4.076 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 4.076, "e": 4.194 },
+        { "t": "Valencia", "l": "valencia", "p": "PROPN", "w": false, "s": 4.194, "e": 4.724 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 4.884, "e": 5.227 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 5.227, "e": 5.433 },
+        { "t": "salido", "l": "salir", "p": "VERB", "w": true, "sp": true, "s": 5.432, "e": 5.912 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 5.912, "e": 6.186 },
+        { "t": "retraso", "l": "retraso", "p": "NOUN", "w": true, "s": 6.186, "e": 6.734 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.534,
+      "end": 6.829
+    },
+    {
+      "id": "s3",
+      "speaker": "jorge",
+      "text": "Sí, lo sé.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 7.239, "e": 7.649 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 7.819, "e": 8.094 },
+        { "t": "sé", "l": "ser", "p": "AUX", "w": true, "s": 8.094, "e": 8.369 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.229,
+      "end": 8.42
+    },
+    {
+      "id": "s4",
+      "speaker": "jorge",
+      "text": "Hay una avería en la vía y todos los trenes llevan una hora de retraso.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 8.68, "e": 8.944 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 8.944, "e": 9.208 },
+        { "t": "avería", "l": "avería", "p": "NOUN", "w": true, "sp": true, "s": 9.207, "e": 9.668 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 9.669, "e": 9.867 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 9.866, "e": 10.064 },
+        { "t": "vía", "l": "vía", "p": "NOUN", "w": true, "sp": true, "s": 10.064, "e": 10.328 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 10.328, "e": 10.46 },
+        { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 10.46, "e": 10.855 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 10.855, "e": 11.119 },
+        { "t": "trenes", "l": "tren", "p": "NOUN", "w": true, "sp": true, "s": 11.119, "e": 11.58 },
+        { "t": "llevan", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 11.58, "e": 12.041 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 12.042, "e": 12.306 },
+        { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 12.305, "e": 12.635 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 12.635, "e": 12.833 },
+        { "t": "retraso", "l": "retraso", "p": "NOUN", "w": true, "s": 12.833, "e": 13.36 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.67,
+      "end": 13.455
+    },
+    {
+      "id": "s5",
+      "speaker": "laura",
+      "text": "Una hora es demasiado.",
+      "tokens": [
+        { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 13.855, "e": 14.193 },
+        { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 14.193, "e": 14.616 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 14.616, "e": 14.87 },
+        { "t": "demasiado", "l": "demasiado", "p": "ADV", "w": true, "s": 14.87, "e": 15.715 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.855,
+      "end": 15.81
+    },
+    {
+      "id": "s6",
+      "speaker": "laura",
+      "text": "Tengo una reunión a las siete y no voy a llegar a tiempo.",
+      "tokens": [
+        { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 16.07, "e": 16.492 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 16.492, "e": 16.773 },
+        { "t": "reunión", "l": "reunión", "p": "NOUN", "w": true, "sp": true, "s": 16.774, "e": 17.337 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 17.336, "e": 17.477 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 17.477, "e": 17.758 },
+        { "t": "siete", "l": "siete", "p": "NUM", "w": false, "sp": true, "s": 17.758, "e": 18.18 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 18.181, "e": 18.322 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 18.321, "e": 18.532 },
+        { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 18.532, "e": 18.813 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 18.814, "e": 18.955 },
+        { "t": "llegar", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 18.954, "e": 19.446 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 19.447, "e": 19.588 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "s": 19.588, "e": 20.08 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.06,
+      "end": 20.139
+    },
+    {
+      "id": "s7",
+      "speaker": "jorge",
+      "text": "Lo entiendo.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 20.559, "e": 20.819 },
+        { "t": "entiendo", "l": "entender", "p": "VERB", "w": true, "s": 20.819, "e": 21.599 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.539,
+      "end": 21.731
+    },
+    {
+      "id": "s8",
+      "speaker": "jorge",
+      "text": "Puede esperar al tren o cambiar el billete para mañana sin pagar nada.",
+      "tokens": [
+        { "t": "Puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 22.021, "e": 22.441 },
+        { "t": "esperar", "l": "esperar", "p": "VERB", "w": true, "sp": true, "s": 22.441, "e": 23.001 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 23.001, "e": 23.211 },
+        { "t": "tren", "l": "tren", "p": "NOUN", "w": true, "sp": true, "s": 23.211, "e": 23.561 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 23.561, "e": 23.701 },
+        { "t": "cambiar", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 23.701, "e": 24.261 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 24.261, "e": 24.471 },
+        { "t": "billete", "l": "billete", "p": "NOUN", "w": true, "sp": true, "s": 24.471, "e": 25.031 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 25.031, "e": 25.381 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 25.381, "e": 25.871 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 25.871, "e": 26.151 },
+        { "t": "pagar", "l": "pagar", "p": "VERB", "w": true, "sp": true, "s": 26.151, "e": 26.571 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 26.571, "e": 26.921 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.981,
+      "end": 27.039
+    },
+    {
+      "id": "s9",
+      "speaker": "laura",
+      "text": "¿Y si prefiero que me devuelvan el dinero?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 27.449, "e": 27.584 },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 27.584, "e": 27.787 },
+        { "t": "prefiero", "l": "preferir", "p": "VERB", "w": true, "sp": true, "s": 27.787, "e": 28.395 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 28.395, "e": 28.665 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 28.665, "e": 28.868 },
+        { "t": "devuelvan", "l": "devolver", "p": "VERB", "w": true, "sp": true, "s": 28.868, "e": 29.544 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 29.543, "e": 29.746 },
+        { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true, "s": 29.746, "e": 30.219 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 27.439,
+      "end": 30.288
+    },
+    {
+      "id": "s10",
+      "speaker": "jorge",
+      "text": "También es posible.",
+      "tokens": [
+        { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 30.698, "e": 31.287 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 31.287, "e": 31.508 },
+        { "t": "posible", "l": "posible", "p": "ADJ", "w": true, "s": 31.509, "e": 32.098 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 30.688,
+      "end": 32.205
+    },
+    {
+      "id": "s11",
+      "speaker": "jorge",
+      "text": "Solo necesito su billete y su documento de identidad.",
+      "tokens": [
+        { "t": "Solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 32.475, "e": 32.859 },
+        { "t": "necesito", "l": "necesitar", "p": "VERB", "w": true, "sp": true, "s": 32.859, "e": 33.55 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 33.55, "e": 33.78 },
+        { "t": "billete", "l": "billete", "p": "NOUN", "w": true, "sp": true, "s": 33.78, "e": 34.394 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 34.395, "e": 34.549 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 34.548, "e": 34.778 },
+        { "t": "documento", "l": "documento", "p": "NOUN", "w": true, "sp": true, "s": 34.779, "e": 35.547 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 35.547, "e": 35.777 },
+        { "t": "identidad", "l": "identidad", "p": "NOUN", "w": true, "s": 35.777, "e": 36.545 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.455,
+      "end": 36.65
+    },
+    {
+      "id": "s12",
+      "speaker": "laura",
+      "text": "Aquí los tiene.",
+      "tokens": [
+        { "t": "Aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 37.06, "e": 37.433 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 37.433, "e": 37.732 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "s": 37.732, "e": 38.18 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 37.05,
+      "end": 38.241
+    },
+    {
+      "id": "s13",
+      "speaker": "laura",
+      "text": "¿Cuánto tiempo tarda en llegar el dinero a mi cuenta?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuánto", "l": "cuánto", "p": "PRON", "w": true, "sp": true, "s": 38.491, "e": 39.016 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true, "s": 39.016, "e": 39.541 },
+        { "t": "tarda", "l": "tardar", "p": "VERB", "w": true, "sp": true, "s": 39.541, "e": 39.991 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 39.991, "e": 40.216 },
+        { "t": "llegar", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 40.216, "e": 40.741 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 40.741, "e": 40.966 },
+        { "t": "dinero", "l": "dinero", "p": "NOUN", "w": true, "sp": true, "s": 40.966, "e": 41.491 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 41.491, "e": 41.641 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 41.641, "e": 41.866 },
+        { "t": "cuenta", "l": "contar", "p": "VERB", "w": true, "s": 41.866, "e": 42.391 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 38.491,
+      "end": 42.48
+    },
+    {
+      "id": "s14",
+      "speaker": "jorge",
+      "text": "Normalmente, entre cinco y siete días.",
+      "tokens": [
+        { "t": "Normalmente", "l": "normalmente", "p": "ADV", "w": true, "s": 42.89, "e": 44.05 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true, "s": 44.32, "e": 44.879 },
+        { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true, "s": 44.879, "e": 45.438 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 45.438, "e": 45.624 },
+        { "t": "siete", "l": "siete", "p": "NUM", "w": false, "sp": true, "s": 45.625, "e": 46.184 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 46.184, "e": 46.65 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 42.88,
+      "end": 46.732
+    },
+    {
+      "id": "s15",
+      "speaker": "jorge",
+      "text": "Le daré un justificante por si lo necesita en su trabajo.",
+      "tokens": [
+        { "t": "Le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 46.992, "e": 47.205 },
+        { "t": "daré", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 47.205, "e": 47.56 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 47.56, "e": 47.773 },
+        {
+          "t": "justificante",
+          "l": "justificante",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 47.774,
+          "e": 48.698
+        },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 48.697, "e": 48.981 },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 48.981, "e": 49.194 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 49.195, "e": 49.408 },
+        { "t": "necesita", "l": "necesitar", "p": "VERB", "w": true, "sp": true, "s": 49.408, "e": 50.047 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 50.047, "e": 50.26 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 50.26, "e": 50.473 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "s": 50.474, "e": 51.042 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.982,
+      "end": 51.12
+    },
+    {
+      "id": "s16",
+      "speaker": "laura",
+      "text": "Qué amable.",
+      "tokens": [
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 51.54, "e": 51.864 },
+        { "t": "amable", "l": "amable", "p": "ADJ", "w": true, "s": 51.864, "e": 52.43 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 51.52,
+      "end": 52.5
+    },
+    {
+      "id": "s17",
+      "speaker": "laura",
+      "text": "¿Hay algún autobús que salga ahora a Valencia?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 52.76, "e": 53.042 },
+        { "t": "algún", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 53.042, "e": 53.465 },
+        { "t": "autobús", "l": "autobús", "p": "NOUN", "w": true, "sp": true, "s": 53.464, "e": 54.028 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 54.028, "e": 54.31 },
+        { "t": "salga", "l": "salir", "p": "VERB", "w": true, "sp": true, "s": 54.31, "e": 54.733 },
+        { "t": "ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 54.732, "e": 55.155 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 55.155, "e": 55.296 },
+        { "t": "Valencia", "l": "valencia", "p": "PROPN", "w": false, "s": 55.296, "e": 55.93 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 52.75,
+      "end": 56.012
+    },
+    {
+      "id": "s18",
+      "speaker": "jorge",
+      "text": "Sí, hay uno a las seis menos diez, pero está casi lleno.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 56.422, "e": 56.782 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 57.032, "e": 57.267 },
+        { "t": "uno", "l": "uno", "p": "NUM", "w": false, "sp": true, "s": 57.267, "e": 57.502 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 57.501, "e": 57.618 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 57.619, "e": 57.854 },
+        { "t": "seis", "l": "seis", "p": "NUM", "w": false, "sp": true, "s": 57.853, "e": 58.146 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 58.147, "e": 58.499 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "s": 58.499, "e": 58.792 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 59.102, "e": 59.404 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 59.404, "e": 59.706 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 59.707, "e": 60.009 },
+        { "t": "lleno", "l": "lleno", "p": "ADJ", "w": true, "s": 60.009, "e": 60.372 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.412,
+      "end": 60.458
+    },
+    {
+      "id": "s19",
+      "speaker": "jorge",
+      "text": "Le recomiendo que vaya a la parada enseguida.",
+      "tokens": [
+        { "t": "Le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 60.718, "e": 60.928 },
+        { "t": "recomiendo", "l": "recomendar", "p": "VERB", "w": true, "sp": true, "s": 60.928, "e": 61.698 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 61.698, "e": 61.978 },
+        { "t": "vaya", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 61.978, "e": 62.328 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 62.328, "e": 62.468 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 62.468, "e": 62.678 },
+        { "t": "parada", "l": "parar", "p": "VERB", "w": true, "sp": true, "s": 62.678, "e": 63.168 },
+        { "t": "enseguida", "l": "enseguida", "p": "ADV", "w": true, "s": 63.168, "e": 63.868 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 60.708,
+      "end": 63.973
+    },
+    {
+      "id": "s20",
+      "speaker": "laura",
+      "text": "Voy corriendo.",
+      "tokens": [
+        { "t": "Voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 64.383, "e": 64.683 },
+        { "t": "corriendo", "l": "correr", "p": "VERB", "w": true, "s": 64.683, "e": 65.433 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 64.373,
+      "end": 65.51
+    },
+    {
+      "id": "s21",
+      "speaker": "laura",
+      "text": "Muchas gracias por su ayuda.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 65.77, "e": 66.27 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 66.27, "e": 66.841 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 66.841, "e": 67.127 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 67.127, "e": 67.341 },
+        { "t": "ayuda", "l": "ayudar", "p": "VERB", "w": true, "s": 67.341, "e": 67.77 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 65.76,
+      "end": 67.85
+    },
+    {
+      "id": "s22",
+      "speaker": "jorge",
+      "text": "De nada.",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 68.26, "e": 68.481 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 68.481, "e": 68.85 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 68.25,
+      "end": 68.958
+    },
+    {
+      "id": "s23",
+      "speaker": "jorge",
+      "text": "Disculpe las molestias y que tenga buen viaje.",
+      "tokens": [
+        { "t": "Disculpe", "l": "disculpar", "p": "VERB", "w": true, "sp": true, "s": 69.218, "e": 69.871 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 69.871, "e": 70.161 },
+        { "t": "molestias", "l": "molestia", "p": "NOUN", "w": true, "sp": true, "s": 70.162, "e": 70.888 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 70.888, "e": 71.033 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 71.033, "e": 71.323 },
+        { "t": "tenga", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 71.324, "e": 71.76 },
+        { "t": "buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 71.759, "e": 72.122 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "s": 72.122, "e": 72.558 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 69.208,
+      "end": 72.649
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "avería",
+      "surface": "avería",
+      "pos": "noun",
+      "def_en": "fallo de una máquina o de una instalación",
+      "def_es": { "en": "breakdown, fault", "fr": "panne", "zh": "故障", "ja": "故障" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "justificante",
+      "surface": "justificante",
+      "pos": "noun",
+      "def_en": "papel que prueba que algo ha ocurrido",
+      "def_es": { "en": "written proof, note", "fr": "justificatif", "zh": "证明", "ja": "証明書" },
+      "ref": "s15"
+    },
+    {
+      "lemma": "devolver",
+      "surface": "devuelvan",
+      "pos": "verb",
+      "def_en": "dar otra vez algo a quien lo había dado",
+      "def_es": { "en": "to refund, to give back", "fr": "rembourser", "zh": "退还", "ja": "返す" },
+      "ref": "s9"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué problema tiene Laura?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "All trains are an hour late." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Ha perdido el billete en la estación" },
+        { "id": "b", "text": "Su tren sale mucho más tarde" },
+        { "id": "c", "text": "Se ha equivocado de andén" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué hay retraso?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "A breakdown on the track." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Hay una huelga de maquinistas" },
+        { "id": "b", "text": "Hay una tormenta muy fuerte" },
+        { "id": "c", "text": "Hay un fallo en la vía" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Si Laura pide la devolución, recibe el dinero al momento.",
+      "evidence": ["s14"],
+      "rationale_es": { "en": "It takes five to seven days." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué necesita el empleado para devolver el dinero?",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "Her ticket and ID." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un carné y el billete de tren" },
+        { "id": "b", "text": "Una tarjeta del banco y un recibo" },
+        { "id": "c", "text": "Un pasaporte y una fotografía" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué va a hacer Laura al final?",
+      "evidence": ["s19", "s20"],
+      "rationale_es": { "en": "She runs to the bus stop." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Esperar el tren en el andén" },
+        { "id": "b", "text": "Coger el autobús a Valencia" },
+        { "id": "c", "text": "Llamar a su jefe por teléfono" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s15"],
+      "rationale_es": { "en": "*Un justificante*: written proof." },
+      "type": "gap_fill",
+      "text": "El empleado le da un {{1}} para su trabajo.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["justificante"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "ahora", "algo", "algún", "amable", "aquí", "autobús", "avería", "ayudar", "billete", "bueno",
+    "cambiar", "casi", "con", "contar", "correr", "cuánto", "dar", "de", "demasiado", "devolver", "dinero",
+    "disculpar", "documento", "día", "el", "en", "enseguida", "entender", "entre", "esperar", "estar", "haber",
+    "hora", "identidad", "ir", "justificante", "llegar", "lleno", "llevar", "mañana", "menos", "mi",
+    "molestia", "mucho", "necesitar", "no", "normalmente", "o", "pagar", "para", "parar", "pero", "poder",
+    "por", "posible", "preferir", "que", "qué", "recomendar", "retraso", "reunión", "salir", "ser", "si",
+    "sin", "solo", "su", "también", "tardar", "tarde", "tener", "tiempo", "todo", "trabajar", "tren", "un",
+    "viajar", "vía", "y", "yo", "él"
+  ],
+  "difficulty": 1072,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7647, "A2": 0.9281, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 7.2,
+    "flesch_reading_ease": 90.4,
+    "checked_at": "2026-10-19T08:13:23.410Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-007/v1.m4a",
+    "duration_s": 72.649,
+    "wpm": 136,
+    "provider": "piper",
+    "voices": { "laura": "sharvard-f", "jorge": "sharvard-m" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.85, 0.78, 0.2, 0.03, 0.95, 1, 0.8, 0.62, 0.76, 0.76, 0.69, 0.78, 0.77, 0.56, 0.33, 0.72, 0.54, 0.57,
+      0.51, 0.45, 0.28, 0.13, 0.09, 0.78, 0.44, 1, 0.57, 1, 0.76, 1, 0.62, 0.68, 0.6, 0.6, 0.69, 0.53, 0.67,
+      0.62, 0.74, 0.79, 0.61, 0.46, 0.75, 0.08, 0.43, 1, 0.93, 0.77, 0.83, 0.56, 0.5, 0.01, 1, 0.92, 0.73,
+      0.67, 0.77, 0.85, 0.79, 0.65, 0.79, 0.81, 0.86, 0.65, 0.34, 0.21, 0.29, 1, 0.73, 0.83, 0.16, 0.79, 0.8,
+      0.33, 1, 0.63, 0.63, 0.41, 0.62, 0.67, 0.45, 0.53, 0.54, 0.59, 0.31, 0.56, 0.92, 0.39, 0.03, 0.62, 0.77,
+      0.71, 1, 0.74, 0.74, 0.92, 0.93, 0.54, 0.56, 0, 1, 0.72, 0.56, 0.49, 0.37, 0.05, 0.36, 1, 0.76, 0.52,
+      0.61, 0.89, 0.64, 0.41, 0.79, 0.7, 0.88, 0.77, 0.46, 0.34, 0.01, 0.83, 1, 0.77, 0.83, 0.08, 1, 0.79,
+      0.81, 0.85, 0.7, 0.41, 0.57, 0.91, 0.67, 0.65, 0.65, 0.52, 0.35, 0.05, 0.31, 0.59, 1, 0.84, 0.44, 0.5,
+      0.61, 0.52, 0.64, 0.39, 0.75, 0.6, 0.25, 0.05, 0.54, 1, 0.42, 0.34, 0.3, 0.66, 0.53, 0.37, 0.44, 0.43,
+      0.44, 0.46, 0.63, 0.09, 0, 1, 0.99, 0.84, 0.07, 1, 0.83, 0.74, 0.61, 0.5, 0.85, 0.78, 0.75, 0.76, 0.39,
+      0.26, 0, 0.58, 0.51, 1, 0.87, 0.67, 0.87, 0.9, 0.69, 0.18, 0.55, 0.84, 0.75, 0.47, 0.13, 0.42, 0.84, 0.9,
+      0.67, 0.55, 1, 0.89, 0.78, 0.47, 0.45, 0.45, 0.03, 0.71, 1, 0.82, 0.4, 0.1, 0.51, 0.56, 1, 0.65, 0.43,
+      0.5, 0.23, 0.01, 0.61, 1, 0.31, 0.22, 0.46, 0.98, 0.99, 0.74, 0.78, 0.68, 0.48, 0.83, 1, 0.88, 0.14
+    ]
+  }
+}

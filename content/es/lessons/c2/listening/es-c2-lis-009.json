@@ -1,0 +1,1085 @@
+{
+  "id": "es-c2-lis-009",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "unit": "es-c2-u01",
+  "series": "es-c2-u01-aburrimiento",
+  "skill": "listening",
+  "genre": "monologue",
+  "title": "Elogio del aburrimiento",
+  "summary_es": {
+    "en": "A radio columnist defends boredom as a source of creativity in an age of constant stimulation.",
+    "fr": "Une chroniqueuse radio défend l’ennui comme source de créativité à l’ère de la stimulation permanente.",
+    "zh": "一位电台专栏作者为无聊辩护，认为在持续刺激的时代，无聊是创造力的来源。",
+    "ja": "ラジオのコラムニストが、刺激が絶えない時代に、退屈は創造性の源だと擁護します。"
+  },
+  "topic": "society",
+  "tags": ["sociedad", "tecnología", "creatividad"],
+  "can_do": ["L-C2-03"],
+  "grammar_focus": [],
+  "vocab_focus": ["aburrimiento", "estímulo", "ensimismarse", "ocio"],
+  "est_minutes": 12,
+  "prediction_prompt": "¿Cuándo fue la última vez que te aburriste de verdad, sin mirar el móvil?",
+  "pre_teach": ["estímulo", "ensimismarse"],
+  "speakers": [
+    { "id": "carmen", "name": "Carmen", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 145,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "carmen",
+      "text": "Buenas tardes.",
+      "tokens": [
+        { "t": "Buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.48 },
+        { "t": "tardes", "l": "tarde", "p": "NOUN", "w": true, "s": 0.48, "e": 0.95 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.017
+    },
+    {
+      "id": "s2",
+      "speaker": "carmen",
+      "text": "Esta semana quiero defender algo que tiene muy mala fama: el aburrimiento.",
+      "tokens": [
+        { "t": "Esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 1.277, "e": 1.576 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true, "s": 1.576, "e": 1.994 },
+        { "t": "quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 1.994, "e": 2.412 },
+        { "t": "defender", "l": "defender", "p": "VERB", "w": true, "sp": true, "s": 2.412, "e": 2.95 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 2.949, "e": 3.248 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 3.248, "e": 3.487 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 3.487, "e": 3.845 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 3.845, "e": 4.084 },
+        { "t": "mala", "l": "malo", "p": "ADJ", "w": true, "sp": true, "s": 4.084, "e": 4.383 },
+        { "t": "fama", "l": "fama", "p": "NOUN", "w": true, "s": 4.383, "e": 4.682 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 4.681, "e": 4.86 },
+        { "t": "aburrimiento", "l": "aburrimiento", "p": "NOUN", "w": true, "s": 4.861, "e": 5.637 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.267,
+      "end": 5.742
+    },
+    {
+      "id": "s3",
+      "speaker": "carmen",
+      "text": "Hagan memoria.",
+      "tokens": [
+        { "t": "Hagan", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 6.002, "e": 6.353 },
+        { "t": "memoria", "l": "memoria", "p": "NOUN", "w": true, "s": 6.353, "e": 6.822 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.992,
+      "end": 6.889
+    },
+    {
+      "id": "s4",
+      "speaker": "carmen",
+      "text": "¿Cuándo fue la última vez que se aburrieron de verdad?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuándo", "l": "cuándo", "p": "ADV", "w": true, "sp": true, "s": 7.139, "e": 7.502 },
+        { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 7.502, "e": 7.71 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 7.71, "e": 7.866 },
+        { "t": "última", "l": "último", "p": "ADJ", "w": true, "sp": true, "s": 7.865, "e": 8.228 },
+        { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 8.229, "e": 8.437 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 8.436, "e": 8.644 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 8.644, "e": 8.8 },
+        { "t": "aburrieron", "l": "aburrir", "p": "VERB", "w": true, "sp": true, "s": 8.799, "e": 9.37 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 9.37, "e": 9.526 },
+        { "t": "verdad", "l": "verdad", "p": "NOUN", "w": true, "s": 9.526, "e": 9.889 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.139,
+      "end": 10.037
+    },
+    {
+      "id": "s5",
+      "speaker": "carmen",
+      "text": "No me refiero a esperar el autobús mirando el teléfono.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 10.297, "e": 10.464 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 10.464, "e": 10.631 },
+        { "t": "refiero", "l": "referirse", "p": "VERB", "w": true, "sp": true, "s": 10.631, "e": 11.076 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 11.076, "e": 11.187 },
+        { "t": "esperar", "l": "esperar", "p": "VERB", "w": true, "sp": true, "s": 11.187, "e": 11.632 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.632, "e": 11.799 },
+        { "t": "autobús", "l": "autobús", "p": "NOUN", "w": true, "sp": true, "s": 11.799, "e": 12.244 },
+        { "t": "mirando", "l": "mirar", "p": "VERB", "w": true, "sp": true, "s": 12.244, "e": 12.689 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 12.689, "e": 12.856 },
+        { "t": "teléfono", "l": "teléfono", "p": "NOUN", "w": true, "s": 12.856, "e": 13.357 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.287,
+      "end": 13.434
+    },
+    {
+      "id": "s6",
+      "speaker": "carmen",
+      "text": "Me refiero a aburrirse sin escapatoria.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 13.694, "e": 13.868 },
+        { "t": "refiero", "l": "referirse", "p": "VERB", "w": true, "sp": true, "s": 13.868, "e": 14.332 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 14.331, "e": 14.447 },
+        { "t": "aburrirse", "l": "aburrir", "p": "VERB", "w": true, "sp": true, "s": 14.447, "e": 15.026 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 15.027, "e": 15.259 },
+        { "t": "escapatoria", "l": "escapatoria", "p": "NOUN", "w": true, "s": 15.259, "e": 15.954 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.684,
+      "end": 16.042
+    },
+    {
+      "id": "s7",
+      "speaker": "carmen",
+      "text": "A mí me costó recordarlo.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 16.302, "e": 16.428 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 16.428, "e": 16.618 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 16.618, "e": 16.808 },
+        { "t": "costó", "l": "costar", "p": "VERB", "w": true, "sp": true, "s": 16.808, "e": 17.187 },
+        { "t": "recordarlo", "l": "recordar", "p": "VERB", "w": true, "s": 17.187, "e": 17.882 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.292,
+      "end": 17.987
+    },
+    {
+      "id": "s8",
+      "speaker": "carmen",
+      "text": "Creo que fue durante un apagón, hace un par de años.",
+      "tokens": [
+        { "t": "Creo", "l": "creer", "p": "VERB", "w": true, "sp": true, "s": 18.237, "e": 18.538 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 18.538, "e": 18.779 },
+        { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 18.779, "e": 19.02 },
+        { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 19.02, "e": 19.502 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 19.501, "e": 19.682 },
+        { "t": "apagón", "l": "apagón", "p": "NOUN", "w": true, "s": 19.682, "e": 20.103 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 20.103, "e": 20.404 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 20.404, "e": 20.585 },
+        { "t": "par", "l": "par", "p": "NOUN", "w": true, "sp": true, "s": 20.585, "e": 20.826 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 20.825, "e": 21.006 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 21.006, "e": 21.307 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.237,
+      "end": 21.378
+    },
+    {
+      "id": "s9",
+      "speaker": "carmen",
+      "text": "Tres horas sin luz, sin internet y con el móvil descargado.",
+      "tokens": [
+        { "t": "Tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 21.638, "e": 21.935 },
+        { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 21.935, "e": 22.292 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 22.292, "e": 22.53 },
+        { "t": "luz", "l": "luz", "p": "NOUN", "w": true, "s": 22.53, "e": 22.768 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 22.768, "e": 23.006 },
+        { "t": "internet", "l": "internet", "p": "NOUN", "w": true, "sp": true, "s": 23.006, "e": 23.541 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 23.541, "e": 23.66 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 23.66, "e": 23.898 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 23.898, "e": 24.076 },
+        { "t": "móvil", "l": "móvil", "p": "NOUN", "w": true, "sp": true, "s": 24.077, "e": 24.434 },
+        { "t": "descargado", "l": "descargado", "p": "ADJ", "w": true, "s": 24.434, "e": 25.088 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.628,
+      "end": 25.161
+    },
+    {
+      "id": "s10",
+      "speaker": "carmen",
+      "text": "La primera hora fue insoportable.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 25.421, "e": 25.595 },
+        { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 25.595, "e": 26.058 },
+        { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 26.058, "e": 26.347 },
+        { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 26.347, "e": 26.579 },
+        { "t": "insoportable", "l": "insoportable", "p": "ADJ", "w": true, "s": 26.579, "e": 27.331 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.411,
+      "end": 27.413
+    },
+    {
+      "id": "s11",
+      "speaker": "carmen",
+      "text": "Daba vueltas por la casa como un animal enjaulado.",
+      "tokens": [
+        { "t": "Daba", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 27.673, "e": 27.996 },
+        { "t": "vueltas", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 27.996, "e": 28.513 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 28.513, "e": 28.771 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 28.771, "e": 28.965 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true, "s": 28.965, "e": 29.288 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 29.288, "e": 29.611 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 29.611, "e": 29.805 },
+        { "t": "animal", "l": "animal", "p": "NOUN", "w": true, "sp": true, "s": 29.805, "e": 30.257 },
+        { "t": "enjaulado", "l": "enjaulado", "p": "ADJ", "w": true, "s": 30.257, "e": 30.903 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 27.663,
+      "end": 30.965
+    },
+    {
+      "id": "s12",
+      "speaker": "carmen",
+      "text": "Pero, en algún momento, ocurrió algo extraño.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "s": 31.225, "e": 31.581 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 31.581, "e": 31.794 },
+        { "t": "algún", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 31.794, "e": 32.221 },
+        { "t": "momento", "l": "momento", "p": "NOUN", "w": true, "s": 32.221, "e": 32.79 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ocurrió", "l": "ocurrir", "p": "VERB", "w": true, "sp": true, "s": 32.791, "e": 33.36 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 33.36, "e": 33.716 },
+        { "t": "extraño", "l": "extraño", "p": "ADJ", "w": true, "s": 33.716, "e": 34.285 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.215,
+      "end": 34.399
+    },
+    {
+      "id": "s13",
+      "speaker": "carmen",
+      "text": "Me senté junto a la ventana y empecé a pensar en cosas en las que no pensaba desde hacía meses.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 34.659, "e": 34.833 },
+        { "t": "senté", "l": "sentarse", "p": "VERB", "w": true, "sp": true, "s": 34.833, "e": 35.182 },
+        { "t": "junto", "l": "junto", "p": "ADJ", "w": true, "sp": true, "s": 35.182, "e": 35.531 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 35.531, "e": 35.647 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 35.647, "e": 35.821 },
+        { "t": "ventana", "l": "ventana", "p": "NOUN", "w": true, "sp": true, "s": 35.821, "e": 36.286 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 36.286, "e": 36.402 },
+        { "t": "empecé", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 36.402, "e": 36.809 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 36.809, "e": 36.925 },
+        { "t": "pensar", "l": "pensar", "p": "VERB", "w": true, "sp": true, "s": 36.925, "e": 37.332 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 37.332, "e": 37.506 },
+        { "t": "cosas", "l": "cosa", "p": "NOUN", "w": true, "sp": true, "s": 37.506, "e": 37.855 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 37.855, "e": 38.029 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 38.029, "e": 38.261 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 38.262, "e": 38.494 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 38.494, "e": 38.668 },
+        { "t": "pensaba", "l": "pensar", "p": "VERB", "w": true, "sp": true, "s": 38.668, "e": 39.133 },
+        { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 39.133, "e": 39.482 },
+        { "t": "hacía", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 39.482, "e": 39.831 },
+        { "t": "meses", "l": "mes", "p": "NOUN", "w": true, "s": 39.83, "e": 40.179 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.649,
+      "end": 40.252
+    },
+    {
+      "id": "s14",
+      "speaker": "carmen",
+      "text": "Recuerdos de infancia, una idea para un relato, una conversación pendiente con mi hermana.",
+      "tokens": [
+        { "t": "Recuerdos", "l": "recuerdo", "p": "NOUN", "w": true, "sp": true, "s": 40.522, "e": 41.133 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 41.133, "e": 41.316 },
+        { "t": "infancia", "l": "infancia", "p": "NOUN", "w": true, "s": 41.317, "e": 41.867 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 41.867, "e": 42.112 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true, "s": 42.112, "e": 42.418 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 42.417, "e": 42.723 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 42.723, "e": 42.906 },
+        { "t": "relato", "l": "relato", "p": "NOUN", "w": true, "s": 42.906, "e": 43.334 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 43.334, "e": 43.579 },
+        {
+          "t": "conversación",
+          "l": "conversación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 43.579,
+          "e": 44.374
+        },
+        { "t": "pendiente", "l": "pendiente", "p": "ADJ", "w": true, "sp": true, "s": 44.374, "e": 44.985 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 44.985, "e": 45.23 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 45.23, "e": 45.413 },
+        { "t": "hermana", "l": "hermana", "p": "NOUN", "w": true, "s": 45.413, "e": 45.902 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 40.502,
+      "end": 45.972
+    },
+    {
+      "id": "s15",
+      "speaker": "carmen",
+      "text": "Cuando volvió la luz, tenía la sensación de haber estado de viaje.",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 46.222, "e": 46.611 },
+        { "t": "volvió", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 46.611, "e": 47 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 47, "e": 47.167 },
+        { "t": "luz", "l": "luz", "p": "NOUN", "w": true, "s": 47.166, "e": 47.388 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "tenía", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 47.388, "e": 47.721 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 47.722, "e": 47.889 },
+        { "t": "sensación", "l": "sensación", "p": "NOUN", "w": true, "sp": true, "s": 47.888, "e": 48.443 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 48.444, "e": 48.611 },
+        { "t": "haber", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 48.61, "e": 48.943 },
+        { "t": "estado", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 48.943, "e": 49.332 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 49.332, "e": 49.499 },
+        { "t": "viaje", "l": "viajar", "p": "VERB", "w": true, "s": 49.499, "e": 49.832 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.222,
+      "end": 49.886
+    },
+    {
+      "id": "s16",
+      "speaker": "carmen",
+      "text": "Los psicólogos llevan tiempo estudiando este fenómeno.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 50.136, "e": 50.378 },
+        { "t": "psicólogos", "l": "psicólogo", "p": "NOUN", "w": true, "sp": true, "s": 50.378, "e": 51.044 },
+        { "t": "llevan", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 51.044, "e": 51.468 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true, "s": 51.468, "e": 51.892 },
+        { "t": "estudiando", "l": "estudiar", "p": "VERB", "w": true, "sp": true, "s": 51.892, "e": 52.558 },
+        { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true, "s": 52.558, "e": 52.861 },
+        { "t": "fenómeno", "l": "fenómeno", "p": "NOUN", "w": true, "s": 52.861, "e": 53.406 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 50.136,
+      "end": 53.459
+    },
+    {
+      "id": "s17",
+      "speaker": "carmen",
+      "text": "En algunos experimentos, unas personas realizan primero una tarea tediosa, como copiar números de una lista.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 53.719, "e": 53.904 },
+        { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 53.904, "e": 54.397 },
+        { "t": "experimentos", "l": "experimento", "p": "NOUN", "w": true, "s": 54.397, "e": 55.198 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "unas", "l": "un", "p": "DET", "w": true, "sp": true, "s": 55.197, "e": 55.505 },
+        { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true, "s": 55.506, "e": 56.06 },
+        { "t": "realizan", "l": "realizar", "p": "VERB", "w": true, "sp": true, "s": 56.06, "e": 56.614 },
+        { "t": "primero", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 56.614, "e": 57.107 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 57.107, "e": 57.353 },
+        { "t": "tarea", "l": "tarea", "p": "NOUN", "w": true, "sp": true, "s": 57.354, "e": 57.724 },
+        { "t": "tediosa", "l": "tedioso", "p": "ADJ", "w": true, "s": 57.723, "e": 58.216 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 58.216, "e": 58.524 },
+        { "t": "copiar", "l": "copiar", "p": "VERB", "w": true, "sp": true, "s": 58.524, "e": 58.955 },
+        { "t": "números", "l": "número", "p": "NOUN", "w": true, "sp": true, "s": 58.955, "e": 59.448 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 59.448, "e": 59.633 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 59.633, "e": 59.879 },
+        { "t": "lista", "l": "lista", "p": "NOUN", "w": true, "s": 59.879, "e": 60.249 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 53.709,
+      "end": 60.31
+    },
+    {
+      "id": "s18",
+      "speaker": "carmen",
+      "text": "Después, se muestran más creativas.",
+      "tokens": [
+        { "t": "Después", "l": "después", "p": "ADV", "w": true, "s": 60.57, "e": 61.13 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 61.13, "e": 61.34 },
+        { "t": "muestran", "l": "mostrar", "p": "VERB", "w": true, "sp": true, "s": 61.34, "e": 61.97 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 61.97, "e": 62.25 },
+        { "t": "creativas", "l": "creativo", "p": "ADJ", "w": true, "s": 62.25, "e": 62.95 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 60.56,
+      "end": 62.999
+    },
+    {
+      "id": "s19",
+      "speaker": "carmen",
+      "text": "La explicación parece ser que la mente, cuando no recibe estímulos externos, empieza a buscarlos dentro.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 63.259, "e": 63.449 },
+        {
+          "t": "explicación",
+          "l": "explicación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 63.449,
+          "e": 64.208
+        },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 64.208, "e": 64.651 },
+        { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 64.65, "e": 64.903 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 64.903, "e": 65.156 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 65.156, "e": 65.346 },
+        { "t": "mente", "l": "mente", "p": "NOUN", "w": true, "s": 65.346, "e": 65.725 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 65.725, "e": 66.168 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 66.168, "e": 66.358 },
+        { "t": "recibe", "l": "recibir", "p": "VERB", "w": true, "sp": true, "s": 66.358, "e": 66.801 },
+        { "t": "estímulos", "l": "estímulo", "p": "NOUN", "w": true, "sp": true, "s": 66.8, "e": 67.432 },
+        { "t": "externos", "l": "externo", "p": "ADJ", "w": true, "s": 67.433, "e": 68.002 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "empieza", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 68.002, "e": 68.508 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 68.508, "e": 68.634 },
+        { "t": "buscarlos", "l": "buscar", "p": "VERB", "w": true, "sp": true, "s": 68.634, "e": 69.266 },
+        { "t": "dentro", "l": "dentro", "p": "ADV", "w": true, "s": 69.266, "e": 69.709 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 63.249,
+      "end": 69.786
+    },
+    {
+      "id": "s20",
+      "speaker": "carmen",
+      "text": "Divaga, asocia ideas lejanas y, a veces, encuentra soluciones inesperadas.",
+      "tokens": [
+        { "t": "Divaga", "l": "divagar", "p": "VERB", "w": true, "s": 70.046, "e": 70.581 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "asocia", "l": "asociar", "p": "VERB", "w": true, "sp": true, "s": 70.581, "e": 71.116 },
+        { "t": "ideas", "l": "idea", "p": "NOUN", "w": true, "sp": true, "s": 71.117, "e": 71.576 },
+        { "t": "lejanas", "l": "lejano", "p": "ADJ", "w": true, "sp": true, "s": 71.576, "e": 72.188 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "s": 72.187, "e": 72.34 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 72.34, "e": 72.493 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "s": 72.493, "e": 72.952 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "encuentra", "l": "encontrar", "p": "VERB", "w": true, "sp": true, "s": 72.952, "e": 73.717 },
+        { "t": "soluciones", "l": "solución", "p": "NOUN", "w": true, "sp": true, "s": 73.717, "e": 74.558 },
+        { "t": "inesperadas", "l": "inesperado", "p": "ADJ", "w": true, "s": 74.558, "e": 75.476 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 70.036,
+      "end": 75.529
+    },
+    {
+      "id": "s21",
+      "speaker": "carmen",
+      "text": "El problema es que hemos eliminado casi todos esos huecos.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 75.789, "e": 76.001 },
+        { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true, "s": 76.001, "e": 76.636 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 76.635, "e": 76.847 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 76.847, "e": 77.129 },
+        { "t": "hemos", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 77.129, "e": 77.552 },
+        { "t": "eliminado", "l": "eliminar", "p": "VERB", "w": true, "sp": true, "s": 77.552, "e": 78.257 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 78.257, "e": 78.61 },
+        { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 78.61, "e": 79.033 },
+        { "t": "esos", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 79.033, "e": 79.386 },
+        { "t": "huecos", "l": "hueco", "p": "NOUN", "w": true, "s": 79.385, "e": 79.879 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 75.779,
+      "end": 79.953
+    },
+    {
+      "id": "s22",
+      "speaker": "carmen",
+      "text": "Cada minuto muerto lo rellenamos con una pantalla.",
+      "tokens": [
+        { "t": "Cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 80.203, "e": 80.492 },
+        { "t": "minuto", "l": "minuto", "p": "NOUN", "w": true, "sp": true, "s": 80.492, "e": 80.897 },
+        { "t": "muerto", "l": "morir", "p": "VERB", "w": true, "sp": true, "s": 80.897, "e": 81.302 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 81.301, "e": 81.474 },
+        { "t": "rellenamos", "l": "rellenar", "p": "VERB", "w": true, "sp": true, "s": 81.475, "e": 82.111 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 82.11, "e": 82.341 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 82.342, "e": 82.573 },
+        { "t": "pantalla", "l": "pantalla", "p": "NOUN", "w": true, "s": 82.573, "e": 83.093 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 80.203,
+      "end": 83.169
+    },
+    {
+      "id": "s23",
+      "speaker": "carmen",
+      "text": "En la cola del supermercado, en el ascensor, incluso en el semáforo.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 83.429, "e": 83.61 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 83.61, "e": 83.791 },
+        { "t": "cola", "l": "cola", "p": "NOUN", "w": true, "sp": true, "s": 83.791, "e": 84.093 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 84.093, "e": 84.334 },
+        { "t": "supermercado", "l": "supermercado", "p": "NOUN", "w": true, "s": 84.334, "e": 85.119 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 85.289, "e": 85.481 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 85.481, "e": 85.673 },
+        { "t": "ascensor", "l": "ascensor", "p": "NOUN", "w": true, "s": 85.673, "e": 86.249 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "incluso", "l": "incluso", "p": "ADV", "w": true, "sp": true, "s": 86.459, "e": 86.925 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 86.925, "e": 87.1 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 87.1, "e": 87.275 },
+        { "t": "semáforo", "l": "semáforo", "p": "NOUN", "w": true, "s": 87.275, "e": 87.799 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 83.419,
+      "end": 87.89
+    },
+    {
+      "id": "s24",
+      "speaker": "carmen",
+      "text": "Vivimos en una especie de estimulación permanente, y la mente nunca llega a ensimismarse.",
+      "tokens": [
+        { "t": "Vivimos", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 88.14, "e": 88.628 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 88.628, "e": 88.811 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 88.811, "e": 89.055 },
+        { "t": "especie", "l": "especie", "p": "NOUN", "w": true, "sp": true, "s": 89.055, "e": 89.543 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 89.543, "e": 89.726 },
+        {
+          "t": "estimulación",
+          "l": "estimulación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 89.726,
+          "e": 90.519
+        },
+        { "t": "permanente", "l": "permanente", "p": "ADJ", "w": true, "s": 90.519, "e": 91.19 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 91.46, "e": 91.577 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 91.577, "e": 91.752 },
+        { "t": "mente", "l": "mente", "p": "NOUN", "w": true, "sp": true, "s": 91.752, "e": 92.103 },
+        { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true, "s": 92.103, "e": 92.454 },
+        { "t": "llega", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 92.453, "e": 92.804 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 92.804, "e": 92.921 },
+        { "t": "ensimismarse", "l": "ensimismarse", "p": "NOUN", "w": true, "s": 92.921, "e": 93.68 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 88.14,
+      "end": 93.743
+    },
+    {
+      "id": "s25",
+      "speaker": "carmen",
+      "text": "Con los niños ocurre algo parecido.",
+      "tokens": [
+        { "t": "Con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 93.993, "e": 94.232 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 94.232, "e": 94.471 },
+        { "t": "niños", "l": "niño", "p": "NOUN", "w": true, "sp": true, "s": 94.471, "e": 94.829 },
+        { "t": "ocurre", "l": "ocurrir", "p": "VERB", "w": true, "sp": true, "s": 94.829, "e": 95.247 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 95.247, "e": 95.546 },
+        { "t": "parecido", "l": "parecer", "p": "VERB", "w": true, "s": 95.546, "e": 96.083 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 93.993,
+      "end": 96.169
+    },
+    {
+      "id": "s26",
+      "speaker": "carmen",
+      "text": "Muchos padres sienten que deben ocupar cada tarde con actividades: inglés, música, deporte.",
+      "tokens": [
+        { "t": "Muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 96.429, "e": 96.88 },
+        { "t": "padres", "l": "padre", "p": "NOUN", "w": true, "sp": true, "s": 96.88, "e": 97.331 },
+        { "t": "sienten", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 97.331, "e": 97.846 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 97.847, "e": 98.105 },
+        { "t": "deben", "l": "deber", "p": "VERB", "w": true, "sp": true, "s": 98.104, "e": 98.491 },
+        { "t": "ocupar", "l": "ocupar", "p": "VERB", "w": true, "sp": true, "s": 98.491, "e": 98.942 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 98.942, "e": 99.264 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true, "s": 99.264, "e": 99.651 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 99.651, "e": 99.909 },
+        { "t": "actividades", "l": "actividad", "p": "NOUN", "w": true, "s": 99.908, "e": 100.681 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "inglés", "l": "inglés", "p": "ADJ", "w": true, "s": 100.682, "e": 101.133 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "música", "l": "música", "p": "NOUN", "w": true, "s": 101.133, "e": 101.584 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "deporte", "l": "deporte", "p": "NOUN", "w": true, "s": 101.584, "e": 102.099 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 96.419,
+      "end": 102.167
+    },
+    {
+      "id": "s27",
+      "speaker": "carmen",
+      "text": "Todo es valioso, sin duda.",
+      "tokens": [
+        { "t": "Todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 102.427, "e": 102.809 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 102.809, "e": 103.038 },
+        { "t": "valioso", "l": "valioso", "p": "ADJ", "w": true, "s": 103.038, "e": 103.649 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 103.649, "e": 103.955 },
+        { "t": "duda", "l": "dudar", "p": "VERB", "w": true, "s": 103.955, "e": 104.337 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 102.417,
+      "end": 104.392
+    },
+    {
+      "id": "s28",
+      "speaker": "carmen",
+      "text": "Pero un niño que nunca se aburre tampoco aprende a inventar sus propios juegos.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 104.652, "e": 104.929 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 104.929, "e": 105.095 },
+        { "t": "niño", "l": "niño", "p": "NOUN", "w": true, "sp": true, "s": 105.095, "e": 105.372 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 105.371, "e": 105.592 },
+        { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true, "s": 105.592, "e": 105.924 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 105.924, "e": 106.09 },
+        { "t": "aburre", "l": "aburrir", "p": "VERB", "w": true, "sp": true, "s": 106.09, "e": 106.477 },
+        { "t": "tampoco", "l": "tampoco", "p": "ADV", "w": true, "sp": true, "s": 106.477, "e": 106.92 },
+        { "t": "aprende", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 106.92, "e": 107.363 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 107.363, "e": 107.474 },
+        { "t": "inventar", "l": "inventar", "p": "VERB", "w": true, "sp": true, "s": 107.473, "e": 107.971 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 107.971, "e": 108.192 },
+        { "t": "propios", "l": "propio", "p": "ADJ", "w": true, "sp": true, "s": 108.192, "e": 108.635 },
+        { "t": "juegos", "l": "juego", "p": "NOUN", "w": true, "s": 108.635, "e": 109.022 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 104.642,
+      "end": 109.13
+    },
+    {
+      "id": "s29",
+      "speaker": "carmen",
+      "text": "El aburrimiento le obliga a tomar la iniciativa.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 109.39, "e": 109.576 },
+        {
+          "t": "aburrimiento",
+          "l": "aburrimiento",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 109.576,
+          "e": 110.38
+        },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 110.38, "e": 110.566 },
+        { "t": "obliga", "l": "obligar", "p": "VERB", "w": true, "sp": true, "s": 110.566, "e": 110.999 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 110.999, "e": 111.123 },
+        { "t": "tomar", "l": "tomar", "p": "VERB", "w": true, "sp": true, "s": 111.123, "e": 111.494 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 111.494, "e": 111.68 },
+        { "t": "iniciativa", "l": "iniciativa", "p": "NOUN", "w": true, "s": 111.679, "e": 112.36 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 109.38,
+      "end": 112.421
+    },
+    {
+      "id": "s30",
+      "speaker": "carmen",
+      "text": "No quiero idealizarlo.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 112.681, "e": 112.875 },
+        { "t": "quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 112.875, "e": 113.327 },
+        { "t": "idealizarlo", "l": "idealizar", "p": "VERB", "w": true, "s": 113.326, "e": 114.101 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 112.671,
+      "end": 114.168
+    },
+    {
+      "id": "s31",
+      "speaker": "carmen",
+      "text": "Hay un aburrimiento que destruye, el de quien vive atrapado en una rutina que no ha elegido.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 114.428, "e": 114.645 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 114.645, "e": 114.808 },
+        {
+          "t": "aburrimiento",
+          "l": "aburrimiento",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 114.807,
+          "e": 115.511
+        },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 115.512, "e": 115.729 },
+        { "t": "destruye", "l": "destruir", "p": "VERB", "w": true, "s": 115.728, "e": 116.216 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 116.216, "e": 116.379 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 116.378, "e": 116.541 },
+        { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true, "s": 116.541, "e": 116.866 },
+        { "t": "vive", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 116.866, "e": 117.137 },
+        { "t": "atrapado", "l": "atrapar", "p": "VERB", "w": true, "sp": true, "s": 117.137, "e": 117.625 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 117.624, "e": 117.787 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 117.787, "e": 118.004 },
+        { "t": "rutina", "l": "rutina", "p": "NOUN", "w": true, "sp": true, "s": 118.004, "e": 118.383 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 118.383, "e": 118.6 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 118.6, "e": 118.763 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 118.762, "e": 118.925 },
+        { "t": "elegido", "l": "elegir", "p": "VERB", "w": true, "s": 118.925, "e": 119.358 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 114.418,
+      "end": 119.427
+    },
+    {
+      "id": "s32",
+      "speaker": "carmen",
+      "text": "Ese no lo defiendo.",
+      "tokens": [
+        { "t": "Ese", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 119.687, "e": 119.956 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 119.956, "e": 120.158 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 120.159, "e": 120.361 },
+        { "t": "defiendo", "l": "defender", "p": "VERB", "w": true, "s": 120.361, "e": 120.967 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 119.677,
+      "end": 121.04
+    },
+    {
+      "id": "s33",
+      "speaker": "carmen",
+      "text": "Defiendo el otro, el aburrimiento breve y voluntario, ese rato en que dejamos de exigirnos productividad hasta en el descanso.",
+      "tokens": [
+        { "t": "Defiendo", "l": "defender", "p": "VERB", "w": true, "sp": true, "s": 121.3, "e": 121.864 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 121.864, "e": 122.052 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "s": 122.052, "e": 122.365 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 122.365, "e": 122.553 },
+        {
+          "t": "aburrimiento",
+          "l": "aburrimiento",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 122.553,
+          "e": 123.368
+        },
+        { "t": "breve", "l": "breve", "p": "ADJ", "w": true, "sp": true, "s": 123.368, "e": 123.744 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 123.744, "e": 123.869 },
+        { "t": "voluntario", "l": "voluntario", "p": "NOUN", "w": true, "s": 123.869, "e": 124.558 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 124.558, "e": 124.809 },
+        { "t": "rato", "l": "rato", "p": "NOUN", "w": true, "sp": true, "s": 124.809, "e": 125.122 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 125.122, "e": 125.31 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 125.31, "e": 125.561 },
+        { "t": "dejamos", "l": "dejar", "p": "VERB", "w": true, "sp": true, "s": 125.561, "e": 126.062 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 126.062, "e": 126.25 },
+        { "t": "exigirnos", "l": "exigir", "p": "VERB", "w": true, "sp": true, "s": 126.25, "e": 126.877 },
+        {
+          "t": "productividad",
+          "l": "productividad",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 126.877,
+          "e": 127.754
+        },
+        { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 127.754, "e": 128.13 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 128.13, "e": 128.318 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 128.318, "e": 128.506 },
+        { "t": "descanso", "l": "descansar", "p": "VERB", "w": true, "s": 128.506, "e": 129.07 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 121.29,
+      "end": 129.156
+    },
+    {
+      "id": "s34",
+      "speaker": "carmen",
+      "text": "Así que les propongo un pequeño experimento.",
+      "tokens": [
+        { "t": "Así", "l": "así", "p": "ADV", "w": true, "sp": true, "s": 129.416, "e": 129.65 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 129.65, "e": 129.884 },
+        { "t": "les", "l": "ellos", "p": "PRON", "w": true, "sp": true, "s": 129.883, "e": 130.117 },
+        { "t": "propongo", "l": "proponer", "p": "VERB", "w": true, "sp": true, "s": 130.117, "e": 130.643 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 130.643, "e": 130.818 },
+        { "t": "pequeño", "l": "pequeño", "p": "ADJ", "w": true, "sp": true, "s": 130.818, "e": 131.285 },
+        { "t": "experimento", "l": "experimentar", "p": "VERB", "w": true, "s": 131.285, "e": 131.986 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 129.406,
+      "end": 132.046
+    },
+    {
+      "id": "s35",
+      "speaker": "carmen",
+      "text": "Esta semana, la próxima vez que esperen algo, no saquen el móvil.",
+      "tokens": [
+        { "t": "Esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 132.306, "e": 132.648 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "s": 132.648, "e": 133.127 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 133.127, "e": 133.332 },
+        { "t": "próxima", "l": "próximo", "p": "ADJ", "w": true, "sp": true, "s": 133.332, "e": 133.879 },
+        { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 133.879, "e": 134.153 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 134.153, "e": 134.427 },
+        { "t": "esperen", "l": "esperar", "p": "VERB", "w": true, "sp": true, "s": 134.427, "e": 134.974 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "s": 134.974, "e": 135.316 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 135.316, "e": 135.521 },
+        { "t": "saquen", "l": "sacar", "p": "VERB", "w": true, "sp": true, "s": 135.521, "e": 136 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 136, "e": 136.205 },
+        { "t": "móvil", "l": "móvil", "p": "NOUN", "w": true, "s": 136.206, "e": 136.616 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 132.296,
+      "end": 136.691
+    },
+    {
+      "id": "s36",
+      "speaker": "carmen",
+      "text": "Miren alrededor.",
+      "tokens": [
+        { "t": "Miren", "l": "mirar", "p": "VERB", "w": true, "sp": true, "s": 136.951, "e": 137.289 },
+        { "t": "alrededor", "l": "alrededor", "p": "ADV", "w": true, "s": 137.289, "e": 137.852 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 136.941,
+      "end": 137.934
+    },
+    {
+      "id": "s37",
+      "speaker": "carmen",
+      "text": "Abúrranse un poco.",
+      "tokens": [
+        { "t": "Abúrranse", "l": "aburrir", "p": "VERB", "w": true, "sp": true, "s": 138.194, "e": 138.866 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 138.866, "e": 139.068 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "s": 139.068, "e": 139.404 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 138.184,
+      "end": 139.46
+    },
+    {
+      "id": "s38",
+      "speaker": "carmen",
+      "text": "Quizá no pase nada.",
+      "tokens": [
+        { "t": "Quizá", "l": "quizá", "p": "ADV", "w": true, "sp": true, "s": 139.72, "e": 140.099 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 140.099, "e": 140.288 },
+        { "t": "pase", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 140.288, "e": 140.604 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 140.604, "e": 140.92 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 139.71,
+      "end": 140.986
+    },
+    {
+      "id": "s39",
+      "speaker": "carmen",
+      "text": "O quizá, como me ocurrió a mí aquella tarde sin luz, descubran que su cabeza tenía cosas que decirles.",
+      "tokens": [
+        { "t": "O", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 141.246, "e": 141.371 },
+        { "t": "quizá", "l": "quizá", "p": "ADV", "w": true, "s": 141.371, "e": 141.747 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 141.748, "e": 142.062 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 142.061, "e": 142.249 },
+        { "t": "ocurrió", "l": "ocurrir", "p": "VERB", "w": true, "sp": true, "s": 142.249, "e": 142.751 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 142.751, "e": 142.876 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 142.876, "e": 143.064 },
+        { "t": "aquella", "l": "aquel", "p": "DET", "w": true, "sp": true, "s": 143.064, "e": 143.566 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true, "s": 143.566, "e": 143.942 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 143.942, "e": 144.193 },
+        { "t": "luz", "l": "luz", "p": "NOUN", "w": true, "s": 144.193, "e": 144.444 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "descubran", "l": "descubrir", "p": "VERB", "w": true, "sp": true, "s": 144.444, "e": 145.071 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 145.071, "e": 145.322 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 145.322, "e": 145.51 },
+        { "t": "cabeza", "l": "cabeza", "p": "NOUN", "w": true, "sp": true, "s": 145.51, "e": 145.949 },
+        { "t": "tenía", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 145.949, "e": 146.325 },
+        { "t": "cosas", "l": "cosa", "p": "NOUN", "w": true, "sp": true, "s": 146.325, "e": 146.701 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 146.701, "e": 146.952 },
+        { "t": "decirles", "l": "decir", "p": "VERB", "w": true, "s": 146.952, "e": 147.516 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 141.236,
+      "end": 147.571
+    },
+    {
+      "id": "s40",
+      "speaker": "carmen",
+      "text": "Hasta la semana que viene.",
+      "tokens": [
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 147.831, "e": 148.177 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 148.177, "e": 148.35 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true, "s": 148.35, "e": 148.754 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 148.754, "e": 148.985 },
+        { "t": "viene", "l": "venir", "p": "VERB", "w": true, "s": 148.985, "e": 149.331 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 147.821,
+      "end": 149.383
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "apagón",
+      "surface": "apagón",
+      "pos": "noun",
+      "def_en": "corte general de la electricidad",
+      "def_es": { "en": "power cut", "fr": "panne de courant", "zh": "停电", "ja": "停電" },
+      "ref": "s8"
+    },
+    {
+      "lemma": "tedioso",
+      "surface": "tediosa",
+      "pos": "adjective",
+      "def_en": "muy aburrido y pesado",
+      "def_es": { "en": "tedious", "fr": "fastidieux", "zh": "乏味的", "ja": "退屈な" },
+      "ref": "s17"
+    },
+    {
+      "lemma": "divagar",
+      "surface": "Divaga",
+      "pos": "verb",
+      "def_en": "pensar o hablar sin un rumbo fijo",
+      "def_es": { "en": "to wander (mind), to ramble", "fr": "divaguer", "zh": "走神", "ja": "とりとめなく考える" },
+      "ref": "s20"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué defiende Carmen en su columna?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "The value of boredom." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La necesidad de usar menos la electricidad en casa" },
+        { "id": "b", "text": "El valor de aburrirse de vez en cuando" },
+        { "id": "c", "text": "Las ventajas de apuntar a los niños a muchas actividades" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué le pasó durante el apagón, pasada la primera hora?",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "She started thinking about forgotten things." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Se quedó dormida en el sofá durante toda la tarde" },
+        { "id": "b", "text": "Llamó por teléfono a toda su familia" },
+        { "id": "c", "text": "Empezó a pensar en cosas olvidadas" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué muestran algunos experimentos?",
+      "evidence": ["s18"],
+      "rationale_es": { "en": "A dull task can boost creativity." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una tarea monótona puede despertar la creatividad" },
+        { "id": "b", "text": "Copiar números mejora mucho la memoria a largo plazo" },
+        { "id": "c", "text": "Las personas creativas se aburren menos que el resto" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Por qué ya casi no nos aburrimos?",
+      "evidence": ["s22"],
+      "rationale_es": { "en": "We fill every gap with screens." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Trabajamos muchas más horas que nuestros abuelos" },
+        { "id": "b", "text": "Llenamos cada momento libre con pantallas" },
+        { "id": "c", "text": "Las ciudades ofrecen cada vez más espectáculos" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Carmen defiende todo tipo de aburrimiento, incluido el de una rutina impuesta.",
+      "evidence": ["s32"],
+      "rationale_es": { "en": "Not the destructive kind." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "post",
+      "prompt": "¿Qué propone a los oyentes?",
+      "evidence": ["s35"],
+      "rationale_es": { "en": "Wait without taking out the phone." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Apagar la luz de casa una tarde a la semana" },
+        { "id": "b", "text": "Escribir un relato sobre su infancia" },
+        { "id": "c", "text": "Esperar sin sacar el teléfono" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s29"],
+      "rationale_es": { "en": "*Tomar la iniciativa*: take the initiative." },
+      "type": "gap_fill",
+      "text": "Según Carmen, el aburrimiento obliga a los niños a tomar la {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["iniciativa"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "aburrimiento", "aburrir", "actividad", "algo", "algún", "alrededor", "animal", "apagón", "aprender",
+    "aquel", "ascensor", "asociar", "así", "atrapar", "autobús", "año", "breve", "bueno", "buscar", "cabeza",
+    "cada", "casa", "casi", "cola", "comer", "con", "conversación", "copiar", "cosa", "costar", "creativo",
+    "creer", "cuando", "cuándo", "dar", "de", "deber", "decir", "defender", "dejar", "dentro", "deporte",
+    "descansar", "descargado", "descubrir", "desde", "después", "destruir", "divagar", "dudar", "durante",
+    "el", "elegir", "eliminar", "ellos", "empezar", "en", "encontrar", "enjaulado", "ensimismarse",
+    "escapatoria", "ese", "especie", "esperar", "estar", "este", "estimulación", "estudiar", "estímulo",
+    "exigir", "experimentar", "experimento", "explicación", "externo", "extraño", "fama", "fenómeno", "haber",
+    "hacer", "hasta", "hermana", "hora", "hueco", "idea", "idealizar", "incluso", "inesperado", "infancia",
+    "inglés", "iniciativa", "insoportable", "internet", "inventar", "juego", "junto", "lejano", "lista",
+    "llegar", "llevar", "luz", "malo", "memoria", "mente", "mes", "mi", "minuto", "mirar", "momento", "morir",
+    "mostrar", "mucho", "muy", "más", "móvil", "música", "niño", "no", "nunca", "número", "o", "obligar",
+    "ocupar", "ocurrir", "otro", "padre", "pantalla", "par", "para", "parecer", "pasar", "pendiente", "pensar",
+    "pequeño", "permanente", "pero", "persona", "poco", "por", "problema", "productividad", "propio",
+    "proponer", "próximo", "psicólogo", "que", "querer", "quien", "quizá", "rato", "realizar", "recibir",
+    "recordar", "recuerdo", "referirse", "relato", "rellenar", "rutina", "sacar", "se", "semana", "semáforo",
+    "sensación", "sentarse", "sentir", "ser", "sin", "solución", "su", "supermercado", "tampoco", "tarde",
+    "tarea", "tedioso", "teléfono", "tener", "tiempo", "todo", "tomar", "un", "valioso", "venir", "ventana",
+    "verdad", "vez", "viajar", "vivir", "voluntario", "volver", "y", "yo", "él", "último"
+  ],
+  "difficulty": 1630,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6032, "A2": 0.7346, "B1": 0.8579, "B2": 0.9196, "C1": 0.9598, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 9.4,
+    "flesch_reading_ease": 71.2,
+    "checked_at": "2026-10-19T07:53:05.544Z"
+  },
+  "audio": {
+    "src": "audio/c2/es-c2-lis-009/v1.m4a",
+    "duration_s": 149.383,
+    "wpm": 151,
+    "provider": "piper",
+    "voices": { "carmen": "sharvard-f" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.34, 0.68, 0.64, 1, 0.95, 0.69, 0.73, 0.4, 1, 0.91, 0.91, 1, 0.6, 0.79, 0.81, 0.93, 0.8, 1, 0.82,
+      0.81, 0.27, 0.86, 1, 0.74, 0.5, 1, 0.93, 0.92, 0.95, 0.82, 0.87, 0.89, 1, 1, 0.74, 0.69, 0.91, 0.77, 0.8,
+      0.7, 1, 0.9, 0.78, 1, 0.77, 0.8, 0.55, 0.66, 0.6, 0.8, 0.53, 0.68, 1, 0.89, 0.63, 0.75, 0.92, 0.66, 0.98,
+      0.74, 0.74, 1, 0.78, 0.53, 1, 0.6, 0.68, 0.65, 0.69, 0.8, 0.45, 0.62, 0.49, 1, 0.99, 0.8, 0.63, 0.84,
+      0.71, 0.6, 0.95, 1, 0.83, 0.67, 0.53, 0.66, 0.59, 0.6, 0.84, 0.88, 0.88, 0.79, 0.79, 1, 0.92, 0.63, 0.74,
+      1, 0.77, 0.76, 0.66, 0.69, 0.95, 0.8, 0.88, 0.79, 0.86, 0.95, 0.92, 0.89, 1, 1, 0.82, 0.69, 0.61, 0.6,
+      0.36, 0.64, 0.55, 0.48, 0.67, 1, 0.87, 0.84, 0.89, 0.83, 0.86, 0.81, 0.83, 0.79, 0.57, 1, 0.59, 1, 0.92,
+      0.89, 0.6, 0.9, 0.56, 0.51, 0.73, 1, 0.78, 0.91, 0.91, 0.6, 0.84, 0.92, 0.67, 0.62, 0.67, 1, 0.99, 0.38,
+      1, 0.69, 0.9, 0.84, 0.62, 0.8, 0.72, 0.88, 0.6, 1, 0.94, 0.54, 0.41, 0.83, 0.54, 0.75, 1, 0.83, 0.92,
+      0.77, 0.47, 1, 0.82, 0.69, 0.63, 0.39, 1, 0.79, 0.71, 0.72, 0.68, 0.67, 0.83, 1, 0.88, 0.66, 0.45, 0.96,
+      1, 0.34, 0.85, 0.67, 1, 0.77, 0.84, 0.72, 0.89, 0.75, 0.64, 0.98, 0.81, 0.61, 0.74, 1, 0.7, 0.72, 0.57,
+      0.85, 0.76, 1, 0.93, 0.87, 0.68, 0.8, 0.59, 1, 0.67, 1, 0.69, 0.84, 1, 0.66, 0.77, 0.68, 0.98, 1, 0.59,
+      0.89, 0.97, 0.67, 0.63, 0.45, 0.89, 1, 0.7
+    ]
+  }
+}

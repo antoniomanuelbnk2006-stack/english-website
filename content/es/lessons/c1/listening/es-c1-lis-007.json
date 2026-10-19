@@ -1,0 +1,1367 @@
+{
+  "id": "es-c1-lis-007",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "unit": "es-c1-u04",
+  "series": "es-c1-u04-teletrabajo",
+  "skill": "listening",
+  "genre": "interview",
+  "title": "El teletrabajo, cinco años después",
+  "summary_es": {
+    "en": "A sociologist reviews what remote work has changed for workers, companies and cities.",
+    "fr": "Une sociologue fait le bilan de ce que le télétravail a changé pour les salariés, les entreprises et les villes.",
+    "zh": "一位社会学家回顾远程办公为员工、企业和城市带来了哪些变化。",
+    "ja": "社会学者が、在宅勤務が働く人・企業・都市に何をもたらしたかを振り返ります。"
+  },
+  "topic": "work-tech",
+  "tags": ["trabajo", "tecnología", "sociedad"],
+  "can_do": ["L-C1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["teletrabajo", "conciliar", "aislamiento", "productividad"],
+  "est_minutes": 12,
+  "prediction_prompt": "¿Prefieres trabajar o estudiar desde casa o en un lugar compartido? ¿Por qué?",
+  "pre_teach": ["conciliar", "despoblación"],
+  "speakers": [
+    { "id": "javier", "name": "Javier", "accent": "es-ES", "gender": "male" },
+    { "id": "irene", "name": "Irene", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 140,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "javier",
+      "text": "Irene Salas es socióloga y lleva años estudiando cómo trabajamos.",
+      "tokens": [
+        { "t": "Irene", "l": "irene", "p": "PROPN", "w": false, "sp": true, "s": 0.03, "e": 0.383 },
+        { "t": "Salas", "l": "sala", "p": "NOUN", "w": true, "sp": true, "s": 0.383, "e": 0.736 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 0.735, "e": 0.911 },
+        { "t": "socióloga", "l": "sociólogo", "p": "NOUN", "w": true, "sp": true, "s": 0.912, "e": 1.5 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 1.499, "e": 1.617 },
+        { "t": "lleva", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 1.617, "e": 1.97 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 1.969, "e": 2.263 },
+        { "t": "estudiando", "l": "estudiar", "p": "VERB", "w": true, "sp": true, "s": 2.263, "e": 2.909 },
+        { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 2.91, "e": 3.204 },
+        { "t": "trabajamos", "l": "trabajar", "p": "VERB", "w": true, "s": 3.204, "e": 3.85 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 3.939
+    },
+    {
+      "id": "s2",
+      "speaker": "javier",
+      "text": "Irene, cuando el teletrabajo se extendió de golpe, muchos dijeron que la oficina había muerto.",
+      "tokens": [
+        { "t": "Irene", "l": "irene", "p": "PROPN", "w": false, "s": 4.211, "e": 4.621 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 4.971, "e": 5.398 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 5.398, "e": 5.581 },
+        { "t": "teletrabajo", "l": "teletrabajo", "p": "NOUN", "w": true, "sp": true, "s": 5.58, "e": 6.311 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 6.311, "e": 6.494 },
+        { "t": "extendió", "l": "extender", "p": "VERB", "w": true, "sp": true, "s": 6.494, "e": 7.042 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 7.043, "e": 7.226 },
+        { "t": "golpe", "l": "golpe", "p": "NOUN", "w": true, "s": 7.225, "e": 7.591 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 7.881, "e": 8.301 },
+        { "t": "dijeron", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 8.301, "e": 8.781 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 8.781, "e": 9.021 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 9.021, "e": 9.201 },
+        { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true, "sp": true, "s": 9.201, "e": 9.681 },
+        { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 9.681, "e": 10.041 },
+        { "t": "muerto", "l": "morir", "p": "VERB", "w": true, "s": 10.041, "e": 10.461 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.189,
+      "end": 10.55
+    },
+    {
+      "id": "s3",
+      "speaker": "javier",
+      "text": "¿Tenían razón?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Tenían", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 10.83, "e": 11.315 },
+        { "t": "razón", "l": "razón", "p": "NOUN", "w": true, "s": 11.315, "e": 11.73 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.8,
+      "end": 11.822
+    },
+    {
+      "id": "s4",
+      "speaker": "irene",
+      "text": "Se equivocaron, igual que se equivocaron quienes pensaban que todo volvería a ser como antes.",
+      "tokens": [
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 12.242, "e": 12.468 },
+        { "t": "equivocaron", "l": "equivocarse", "p": "VERB", "w": true, "s": 12.468, "e": 13.372 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "igual", "l": "igual", "p": "ADJ", "w": true, "sp": true, "s": 13.542, "e": 13.925 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 13.925, "e": 14.18 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 14.18, "e": 14.371 },
+        {
+          "t": "equivocaron",
+          "l": "equivocarse",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 14.371,
+          "e": 15.136
+        },
+        { "t": "quienes", "l": "quien", "p": "PRON", "w": true, "sp": true, "s": 15.136, "e": 15.646 },
+        { "t": "pensaban", "l": "pensar", "p": "VERB", "w": true, "sp": true, "s": 15.646, "e": 16.22 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 16.22, "e": 16.475 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 16.475, "e": 16.794 },
+        { "t": "volvería", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 16.794, "e": 17.368 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 17.368, "e": 17.496 },
+        { "t": "ser", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 17.496, "e": 17.751 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 17.751, "e": 18.07 },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "s": 18.069, "e": 18.452 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.222,
+      "end": 18.517
+    },
+    {
+      "id": "s5",
+      "speaker": "irene",
+      "text": "Lo que se ha impuesto es un modelo mixto.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 18.777, "e": 18.992 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 18.992, "e": 19.279 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 19.279, "e": 19.494 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 19.494, "e": 19.709 },
+        { "t": "impuesto", "l": "impuesto", "p": "NOUN", "w": true, "sp": true, "s": 19.709, "e": 20.354 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 20.355, "e": 20.57 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 20.57, "e": 20.785 },
+        { "t": "modelo", "l": "modelo", "p": "NOUN", "w": true, "sp": true, "s": 20.785, "e": 21.287 },
+        { "t": "mixto", "l": "mixto", "p": "ADJ", "w": true, "s": 21.287, "e": 21.717 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.767,
+      "end": 21.795
+    },
+    {
+      "id": "s6",
+      "speaker": "irene",
+      "text": "En la mayoría de las empresas que estudiamos, la gente trabaja dos o tres días en casa.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 22.055, "e": 22.25 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 22.25, "e": 22.445 },
+        { "t": "mayoría", "l": "mayoría", "p": "NOUN", "w": true, "sp": true, "s": 22.444, "e": 22.963 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 22.963, "e": 23.158 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 23.158, "e": 23.418 },
+        { "t": "empresas", "l": "empresa", "p": "NOUN", "w": true, "sp": true, "s": 23.418, "e": 24.002 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 24.002, "e": 24.262 },
+        { "t": "estudiamos", "l": "estudiar", "p": "VERB", "w": true, "s": 24.261, "e": 24.975 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 24.975, "e": 25.17 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 25.169, "e": 25.558 },
+        { "t": "trabaja", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 25.559, "e": 26.078 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 26.078, "e": 26.338 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 26.337, "e": 26.467 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 26.467, "e": 26.791 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 26.792, "e": 27.116 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 27.116, "e": 27.311 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 27.311, "e": 27.635 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.045,
+      "end": 27.682
+    },
+    {
+      "id": "s7",
+      "speaker": "irene",
+      "text": "El resto, en la oficina.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 27.942, "e": 28.219 },
+        { "t": "resto", "l": "resto", "p": "NOUN", "w": true, "s": 28.219, "e": 28.772 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 28.922, "e": 29.145 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 29.145, "e": 29.368 },
+        { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true, "s": 29.368, "e": 29.962 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 27.932,
+      "end": 30.034
+    },
+    {
+      "id": "s8",
+      "speaker": "javier",
+      "text": "¿Qué es lo que más valoran los trabajadores?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 30.444, "e": 30.645 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 30.645, "e": 30.796 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 30.796, "e": 30.947 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 30.946, "e": 31.147 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 31.147, "e": 31.348 },
+        { "t": "valoran", "l": "valorar", "p": "VERB", "w": true, "sp": true, "s": 31.348, "e": 31.75 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 31.75, "e": 31.951 },
+        { "t": "trabajadores", "l": "trabajador", "p": "NOUN", "w": true, "s": 31.951, "e": 32.604 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 30.434,
+      "end": 32.671
+    },
+    {
+      "id": "s9",
+      "speaker": "irene",
+      "text": "Sin duda, el tiempo.",
+      "tokens": [
+        { "t": "Sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 33.081, "e": 33.414 },
+        { "t": "duda", "l": "dudar", "p": "VERB", "w": true, "s": 33.414, "e": 33.831 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 33.991, "e": 34.207 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "s": 34.207, "e": 34.711 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 33.071,
+      "end": 34.777
+    },
+    {
+      "id": "s10",
+      "speaker": "irene",
+      "text": "Una persona que vive en las afueras de una gran ciudad puede pasar dos horas diarias en el transporte.",
+      "tokens": [
+        { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 35.037, "e": 35.306 },
+        { "t": "persona", "l": "persona", "p": "NOUN", "w": true, "sp": true, "s": 35.306, "e": 35.843 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 35.843, "e": 36.112 },
+        { "t": "vive", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 36.112, "e": 36.448 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 36.447, "e": 36.648 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 36.649, "e": 36.918 },
+        { "t": "afueras", "l": "afueras", "p": "NOUN", "w": true, "sp": true, "s": 36.917, "e": 37.454 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 37.455, "e": 37.656 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 37.656, "e": 37.925 },
+        { "t": "gran", "l": "grande", "p": "ADJ", "w": true, "sp": true, "s": 37.925, "e": 38.261 },
+        { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true, "s": 38.261, "e": 38.731 },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 38.731, "e": 39.134 },
+        { "t": "pasar", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 39.134, "e": 39.537 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 39.537, "e": 39.806 },
+        { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 39.805, "e": 40.208 },
+        { "t": "diarias", "l": "diario", "p": "ADJ", "w": true, "sp": true, "s": 40.208, "e": 40.745 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 40.745, "e": 40.946 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 40.947, "e": 41.148 },
+        { "t": "transporte", "l": "transporte", "p": "NOUN", "w": true, "s": 41.148, "e": 41.887 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.027,
+      "end": 41.971
+    },
+    {
+      "id": "s11",
+      "speaker": "irene",
+      "text": "Recuperar ese tiempo cambia la vida.",
+      "tokens": [
+        { "t": "Recuperar", "l": "recuperar", "p": "VERB", "w": true, "sp": true, "s": 42.271, "e": 42.89 },
+        { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 42.89, "e": 43.138 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true, "s": 43.138, "e": 43.572 },
+        { "t": "cambia", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 43.572, "e": 44.006 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 44.005, "e": 44.191 },
+        { "t": "vida", "l": "vida", "p": "NOUN", "w": true, "s": 44.191, "e": 44.501 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 42.221,
+      "end": 44.595
+    },
+    {
+      "id": "s12",
+      "speaker": "irene",
+      "text": "Muchos lo dedican a hacer ejercicio, a cocinar o a estar con sus hijos.",
+      "tokens": [
+        { "t": "Muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 44.855, "e": 45.356 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 45.356, "e": 45.571 },
+        { "t": "dedican", "l": "dedicar", "p": "VERB", "w": true, "sp": true, "s": 45.571, "e": 46.144 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 46.143, "e": 46.286 },
+        { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 46.286, "e": 46.715 },
+        { "t": "ejercicio", "l": "ejercicio", "p": "NOUN", "w": true, "s": 46.716, "e": 47.432 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 47.432, "e": 47.575 },
+        { "t": "cocinar", "l": "cocinar", "p": "VERB", "w": true, "sp": true, "s": 47.575, "e": 48.148 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 48.147, "e": 48.29 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 48.29, "e": 48.433 },
+        { "t": "estar", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 48.434, "e": 48.863 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 48.863, "e": 49.149 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 49.149, "e": 49.435 },
+        { "t": "hijos", "l": "hijo", "p": "NOUN", "w": true, "s": 49.436, "e": 49.865 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.845,
+      "end": 49.937
+    },
+    {
+      "id": "s13",
+      "speaker": "irene",
+      "text": "En nuestras encuestas, conciliar la vida laboral y la familiar es la ventaja más citada.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 50.197, "e": 50.405 },
+        { "t": "nuestras", "l": "nuestro", "p": "DET", "w": true, "sp": true, "s": 50.405, "e": 51.028 },
+        { "t": "encuestas", "l": "encuesta", "p": "NOUN", "w": true, "s": 51.027, "e": 51.719 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "conciliar", "l": "conciliar", "p": "NOUN", "w": true, "sp": true, "s": 51.719, "e": 52.411 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 52.411, "e": 52.619 },
+        { "t": "vida", "l": "vida", "p": "NOUN", "w": true, "sp": true, "s": 52.619, "e": 52.965 },
+        { "t": "laboral", "l": "laboral", "p": "ADJ", "w": true, "sp": true, "s": 52.965, "e": 53.519 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 53.518, "e": 53.656 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 53.657, "e": 53.865 },
+        { "t": "familiar", "l": "familiar", "p": "NOUN", "w": true, "sp": true, "s": 53.864, "e": 54.487 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 54.487, "e": 54.695 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 54.695, "e": 54.903 },
+        { "t": "ventaja", "l": "ventaja", "p": "NOUN", "w": true, "sp": true, "s": 54.902, "e": 55.456 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 55.456, "e": 55.733 },
+        { "t": "citada", "l": "citar", "p": "VERB", "w": true, "s": 55.733, "e": 56.217 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 50.187,
+      "end": 56.283
+    },
+    {
+      "id": "s14",
+      "speaker": "javier",
+      "text": "¿Y los inconvenientes?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 56.717, "e": 56.851 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 56.851, "e": 57.12 },
+        { "t": "inconvenientes", "l": "inconveniente", "p": "NOUN", "w": true, "s": 57.12, "e": 58.127 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.683,
+      "end": 58.197
+    },
+    {
+      "id": "s15",
+      "speaker": "irene",
+      "text": "El principal es el aislamiento.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 58.607, "e": 58.832 },
+        { "t": "principal", "l": "principal", "p": "ADJ", "w": true, "sp": true, "s": 58.832, "e": 59.584 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 59.584, "e": 59.809 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 59.81, "e": 60.035 },
+        { "t": "aislamiento", "l": "aislamiento", "p": "NOUN", "w": true, "s": 60.035, "e": 60.937 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 58.597,
+      "end": 61.004
+    },
+    {
+      "id": "s16",
+      "speaker": "irene",
+      "text": "Al principio parecía un detalle menor, pero con el tiempo se ha convertido en un problema serio.",
+      "tokens": [
+        { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 61.264, "e": 61.468 },
+        { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "sp": true, "s": 61.468, "e": 62.15 },
+        { "t": "parecía", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 62.15, "e": 62.695 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 62.695, "e": 62.899 },
+        { "t": "detalle", "l": "detalle", "p": "NOUN", "w": true, "sp": true, "s": 62.9, "e": 63.445 },
+        { "t": "menor", "l": "menor", "p": "ADJ", "w": true, "s": 63.445, "e": 63.854 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 64.004, "e": 64.294 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 64.294, "e": 64.526 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 64.527, "e": 64.701 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true, "s": 64.701, "e": 65.107 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 65.107, "e": 65.281 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 65.282, "e": 65.456 },
+        { "t": "convertido", "l": "convertir", "p": "VERB", "w": true, "sp": true, "s": 65.456, "e": 66.095 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 66.095, "e": 66.269 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 66.269, "e": 66.443 },
+        { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true, "s": 66.443, "e": 66.966 },
+        { "t": "serio", "l": "serio", "p": "ADJ", "w": true, "s": 66.966, "e": 67.314 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 61.254,
+      "end": 67.384
+    },
+    {
+      "id": "s17",
+      "speaker": "irene",
+      "text": "Muchos empleados nos cuentan que se sienten solos.",
+      "tokens": [
+        { "t": "Muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 67.644, "e": 68.126 },
+        { "t": "empleados", "l": "empleado", "p": "NOUN", "w": true, "sp": true, "s": 68.126, "e": 68.814 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 68.814, "e": 69.089 },
+        { "t": "cuentan", "l": "contar", "p": "VERB", "w": true, "sp": true, "s": 69.089, "e": 69.639 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 69.639, "e": 69.914 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 69.914, "e": 70.12 },
+        { "t": "sienten", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 70.121, "e": 70.671 },
+        { "t": "solos", "l": "solo", "p": "ADJ", "w": true, "s": 70.671, "e": 71.084 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 67.634,
+      "end": 71.17
+    },
+    {
+      "id": "s18",
+      "speaker": "irene",
+      "text": "Echan de menos las conversaciones informales del café, que es donde a menudo surgen las mejores ideas.",
+      "tokens": [
+        { "t": "Echan", "l": "echar", "p": "VERB", "w": true, "sp": true, "s": 71.43, "e": 71.827 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 71.827, "e": 72.025 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 72.025, "e": 72.422 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 72.422, "e": 72.687 },
+        {
+          "t": "conversaciones",
+          "l": "conversación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 72.687,
+          "e": 73.679
+        },
+        { "t": "informales", "l": "informal", "p": "ADJ", "w": true, "sp": true, "s": 73.679, "e": 74.407 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 74.406, "e": 74.671 },
+        { "t": "café", "l": "café", "p": "NOUN", "w": true, "s": 74.671, "e": 75.002 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 75.001, "e": 75.266 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 75.266, "e": 75.464 },
+        { "t": "donde", "l": "donde", "p": "SCONJ", "w": true, "sp": true, "s": 75.464, "e": 75.861 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 75.861, "e": 75.993 },
+        { "t": "menudo", "l": "menudo", "p": "ADJ", "w": true, "sp": true, "s": 75.994, "e": 76.457 },
+        { "t": "surgen", "l": "surgir", "p": "VERB", "w": true, "sp": true, "s": 76.457, "e": 76.92 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 76.92, "e": 77.185 },
+        { "t": "mejores", "l": "mejorar", "p": "VERB", "w": true, "sp": true, "s": 77.184, "e": 77.713 },
+        { "t": "ideas", "l": "idea", "p": "NOUN", "w": true, "s": 77.713, "e": 78.11 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 71.42,
+      "end": 78.167
+    },
+    {
+      "id": "s19",
+      "speaker": "irene",
+      "text": "Otro problema es que la frontera entre el trabajo y la casa se ha vuelto muy difusa.",
+      "tokens": [
+        { "t": "Otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 78.427, "e": 78.776 },
+        { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "sp": true, "s": 78.776, "e": 79.405 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 79.405, "e": 79.615 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 79.615, "e": 79.895 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 79.895, "e": 80.105 },
+        { "t": "frontera", "l": "frontera", "p": "NOUN", "w": true, "sp": true, "s": 80.104, "e": 80.733 },
+        { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true, "s": 80.733, "e": 81.152 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 81.152, "e": 81.362 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 81.362, "e": 81.921 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 81.921, "e": 82.061 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 82.061, "e": 82.271 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true, "s": 82.27, "e": 82.619 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 82.62, "e": 82.83 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 82.83, "e": 83.04 },
+        { "t": "vuelto", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 83.039, "e": 83.528 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 83.528, "e": 83.808 },
+        { "t": "difusa", "l": "difuso", "p": "ADJ", "w": true, "s": 83.808, "e": 84.297 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 78.417,
+      "end": 84.362
+    },
+    {
+      "id": "s20",
+      "speaker": "irene",
+      "text": "Hay quien contesta correos a las once de la noche porque el ordenador está siempre en la mesa del salón.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 84.622, "e": 84.864 },
+        { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true, "s": 84.864, "e": 85.227 },
+        { "t": "contesta", "l": "contestar", "p": "VERB", "w": true, "sp": true, "s": 85.228, "e": 85.773 },
+        { "t": "correos", "l": "correo", "p": "NOUN", "w": true, "sp": true, "s": 85.773, "e": 86.258 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 86.258, "e": 86.379 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 86.379, "e": 86.621 },
+        { "t": "once", "l": "once", "p": "NUM", "w": false, "sp": true, "s": 86.621, "e": 86.924 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 86.924, "e": 87.106 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 87.106, "e": 87.288 },
+        { "t": "noche", "l": "noche", "p": "NOUN", "w": true, "sp": true, "s": 87.287, "e": 87.65 },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 87.651, "e": 88.075 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 88.075, "e": 88.257 },
+        { "t": "ordenador", "l": "ordenador", "p": "NOUN", "w": true, "sp": true, "s": 88.257, "e": 88.863 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 88.862, "e": 89.165 },
+        { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true, "s": 89.165, "e": 89.65 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 89.65, "e": 89.832 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 89.832, "e": 90.014 },
+        { "t": "mesa", "l": "mesa", "p": "NOUN", "w": true, "sp": true, "s": 90.013, "e": 90.316 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 90.316, "e": 90.558 },
+        { "t": "salón", "l": "salón", "p": "NOUN", "w": true, "s": 90.559, "e": 90.922 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 84.612,
+      "end": 91.025
+    },
+    {
+      "id": "s21",
+      "speaker": "javier",
+      "text": "¿Ha bajado la productividad, como temían algunos directivos?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 91.425, "e": 91.606 },
+        { "t": "bajado", "l": "bajar", "p": "VERB", "w": true, "sp": true, "s": 91.606, "e": 92.029 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 92.029, "e": 92.21 },
+        { "t": "productividad", "l": "productividad", "p": "NOUN", "w": true, "s": 92.21, "e": 93.055 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 93.425, "e": 93.756 },
+        { "t": "temían", "l": "temer", "p": "VERB", "w": true, "sp": true, "s": 93.756, "e": 94.219 },
+        { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 94.219, "e": 94.748 },
+        { "t": "directivos", "l": "directivo", "p": "NOUN", "w": true, "s": 94.748, "e": 95.475 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 91.425,
+      "end": 95.547
+    },
+    {
+      "id": "s22",
+      "speaker": "irene",
+      "text": "Los datos no lo confirman.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 95.957, "e": 96.249 },
+        { "t": "datos", "l": "dato", "p": "NOUN", "w": true, "sp": true, "s": 96.249, "e": 96.687 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 96.688, "e": 96.907 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 96.907, "e": 97.126 },
+        { "t": "confirman", "l": "confirmar", "p": "VERB", "w": true, "s": 97.126, "e": 97.857 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 95.947,
+      "end": 97.926
+    },
+    {
+      "id": "s23",
+      "speaker": "irene",
+      "text": "En tareas que exigen concentración, como escribir un informe o programar, la gente rinde igual o incluso más en casa.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 98.186, "e": 98.4 },
+        { "t": "tareas", "l": "tarea", "p": "NOUN", "w": true, "sp": true, "s": 98.4, "e": 98.899 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 98.898, "e": 99.183 },
+        { "t": "exigen", "l": "exigir", "p": "VERB", "w": true, "sp": true, "s": 99.183, "e": 99.682 },
+        { "t": "concentración", "l": "concentración", "p": "NOUN", "w": true, "s": 99.682, "e": 100.679 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 100.679, "e": 101.035 },
+        { "t": "escribir", "l": "escribir", "p": "VERB", "w": true, "sp": true, "s": 101.035, "e": 101.676 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 101.676, "e": 101.89 },
+        { "t": "informe", "l": "informar", "p": "VERB", "w": true, "sp": true, "s": 101.889, "e": 102.459 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 102.459, "e": 102.601 },
+        { "t": "programar", "l": "programar", "p": "VERB", "w": true, "s": 102.601, "e": 103.313 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 103.314, "e": 103.528 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 103.527, "e": 103.954 },
+        { "t": "rinde", "l": "rendir", "p": "VERB", "w": true, "sp": true, "s": 103.955, "e": 104.382 },
+        { "t": "igual", "l": "igual", "p": "ADJ", "w": true, "sp": true, "s": 104.382, "e": 104.809 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 104.809, "e": 104.951 },
+        { "t": "incluso", "l": "incluso", "p": "ADV", "w": true, "sp": true, "s": 104.952, "e": 105.522 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 105.521, "e": 105.806 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 105.806, "e": 106.02 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 106.02, "e": 106.376 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 98.176,
+      "end": 106.438
+    },
+    {
+      "id": "s24",
+      "speaker": "irene",
+      "text": "De hecho, muchas personas reconocen que en la oficina las interrumpen constantemente, y que en casa pueden centrarse durante horas.",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 106.698, "e": 106.921 },
+        { "t": "hecho", "l": "hacer", "p": "VERB", "w": true, "s": 106.921, "e": 107.368 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 107.578, "e": 108.046 },
+        { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true, "s": 108.046, "e": 108.647 },
+        { "t": "reconocen", "l": "reconocer", "p": "VERB", "w": true, "sp": true, "s": 108.647, "e": 109.315 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 109.315, "e": 109.582 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 109.582, "e": 109.782 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 109.782, "e": 109.982 },
+        { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true, "sp": true, "s": 109.983, "e": 110.517 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 110.517, "e": 110.784 },
+        {
+          "t": "interrumpen",
+          "l": "interrumpir",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 110.784,
+          "e": 111.586
+        },
+        { "t": "constantemente", "l": "constantemente", "p": "ADV", "w": true, "s": 111.586, "e": 112.588 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 112.818, "e": 112.945 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 112.945, "e": 113.198 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 113.198, "e": 113.388 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true, "s": 113.388, "e": 113.705 },
+        { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 113.705, "e": 114.148 },
+        { "t": "centrarse", "l": "centrarse", "p": "VERB", "w": true, "sp": true, "s": 114.148, "e": 114.781 },
+        { "t": "durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 114.781, "e": 115.288 },
+        { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "s": 115.288, "e": 115.668 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 106.688,
+      "end": 115.735
+    },
+    {
+      "id": "s25",
+      "speaker": "javier",
+      "text": "Supongo que eso también ha obligado a los jefes a cambiar su forma de dirigir.",
+      "tokens": [
+        { "t": "Supongo", "l": "suponer", "p": "VERB", "w": true, "sp": true, "s": 116.135, "e": 116.57 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 116.57, "e": 116.787 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 116.787, "e": 117.004 },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 117.005, "e": 117.44 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 117.44, "e": 117.603 },
+        { "t": "obligado", "l": "obligar", "p": "VERB", "w": true, "sp": true, "s": 117.603, "e": 118.092 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 118.092, "e": 118.201 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 118.201, "e": 118.418 },
+        { "t": "jefes", "l": "jefe", "p": "NOUN", "w": true, "sp": true, "s": 118.418, "e": 118.744 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 118.744, "e": 118.853 },
+        { "t": "cambiar", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 118.853, "e": 119.288 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 119.288, "e": 119.451 },
+        { "t": "forma", "l": "forma", "p": "NOUN", "w": true, "sp": true, "s": 119.451, "e": 119.777 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 119.777, "e": 119.94 },
+        { "t": "dirigir", "l": "dirigir", "p": "VERB", "w": true, "s": 119.94, "e": 120.375 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 116.135,
+      "end": 120.499
+    },
+    {
+      "id": "s26",
+      "speaker": "irene",
+      "text": "Completamente.",
+      "tokens": [
+        { "t": "Completamente", "l": "completamente", "p": "ADV", "w": true, "s": 120.909, "e": 121.989 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 120.899,
+      "end": 122.084
+    },
+    {
+      "id": "s27",
+      "speaker": "irene",
+      "text": "Ya no se puede controlar a la gente por las horas que pasa sentada en su mesa.",
+      "tokens": [
+        { "t": "Ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 122.344, "e": 122.535 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 122.535, "e": 122.726 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 122.726, "e": 122.917 },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 122.916, "e": 123.298 },
+        { "t": "controlar", "l": "controlar", "p": "VERB", "w": true, "sp": true, "s": 123.298, "e": 123.934 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 123.934, "e": 124.061 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 124.061, "e": 124.252 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 124.252, "e": 124.634 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 124.633, "e": 124.887 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 124.888, "e": 125.142 },
+        { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 125.142, "e": 125.524 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 125.523, "e": 125.777 },
+        { "t": "pasa", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 125.778, "e": 126.096 },
+        { "t": "sentada", "l": "sentarse", "p": "VERB", "w": true, "sp": true, "s": 126.096, "e": 126.605 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 126.605, "e": 126.796 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 126.795, "e": 126.986 },
+        { "t": "mesa", "l": "mesa", "p": "NOUN", "w": true, "s": 126.986, "e": 127.304 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 122.334,
+      "end": 127.368
+    },
+    {
+      "id": "s28",
+      "speaker": "irene",
+      "text": "Ahora se valoran más los resultados.",
+      "tokens": [
+        { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 127.628, "e": 128.036 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 128.036, "e": 128.24 },
+        { "t": "valoran", "l": "valorar", "p": "VERB", "w": true, "sp": true, "s": 128.241, "e": 128.785 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 128.785, "e": 129.057 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 129.057, "e": 129.329 },
+        { "t": "resultados", "l": "resultado", "p": "NOUN", "w": true, "s": 129.329, "e": 130.078 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 127.618,
+      "end": 130.174
+    },
+    {
+      "id": "s29",
+      "speaker": "irene",
+      "text": "En cambio, las tareas creativas y de equipo funcionan peor a distancia.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 130.434, "e": 130.65 },
+        { "t": "cambio", "l": "cambiar", "p": "VERB", "w": true, "s": 130.65, "e": 131.154 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 131.294, "e": 131.575 },
+        { "t": "tareas", "l": "tarea", "p": "NOUN", "w": true, "sp": true, "s": 131.575, "e": 132.066 },
+        { "t": "creativas", "l": "creativo", "p": "ADJ", "w": true, "sp": true, "s": 132.066, "e": 132.768 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 132.768, "e": 132.908 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 132.908, "e": 133.119 },
+        { "t": "equipo", "l": "equipo", "p": "NOUN", "w": true, "sp": true, "s": 133.118, "e": 133.609 },
+        { "t": "funcionan", "l": "funcionar", "p": "VERB", "w": true, "sp": true, "s": 133.61, "e": 134.312 },
+        { "t": "peor", "l": "peor", "p": "ADV", "w": true, "sp": true, "s": 134.311, "e": 134.662 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 134.662, "e": 134.802 },
+        { "t": "distancia", "l": "distancia", "p": "NOUN", "w": true, "s": 134.802, "e": 135.504 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 130.424,
+      "end": 135.606
+    },
+    {
+      "id": "s30",
+      "speaker": "irene",
+      "text": "Por eso las empresas más inteligentes reservan los días de oficina para reuniones, formación y proyectos en común.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 135.866, "e": 136.147 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 136.147, "e": 136.428 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 136.427, "e": 136.708 },
+        { "t": "empresas", "l": "empresa", "p": "NOUN", "w": true, "sp": true, "s": 136.708, "e": 137.34 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 137.34, "e": 137.621 },
+        {
+          "t": "inteligentes",
+          "l": "inteligente",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 137.62,
+          "e": 138.532
+        },
+        { "t": "reservan", "l": "reservar", "p": "VERB", "w": true, "sp": true, "s": 138.533, "e": 139.165 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 139.164, "e": 139.445 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 139.445, "e": 139.796 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 139.796, "e": 140.007 },
+        { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true, "sp": true, "s": 140.006, "e": 140.567 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 140.568, "e": 140.919 },
+        { "t": "reuniones", "l": "reunión", "p": "NOUN", "w": true, "s": 140.919, "e": 141.621 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "formación", "l": "formación", "p": "NOUN", "w": true, "sp": true, "s": 141.621, "e": 142.323 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 142.322, "e": 142.462 },
+        { "t": "proyectos", "l": "proyecto", "p": "NOUN", "w": true, "sp": true, "s": 142.463, "e": 143.165 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 143.164, "e": 143.375 },
+        { "t": "común", "l": "común", "p": "ADJ", "w": true, "s": 143.375, "e": 143.796 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 135.856,
+      "end": 143.862
+    },
+    {
+      "id": "s31",
+      "speaker": "javier",
+      "text": "Se ha hablado mucho de un éxodo de las ciudades a los pueblos.",
+      "tokens": [
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 144.262, "e": 144.43 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 144.43, "e": 144.598 },
+        { "t": "hablado", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 144.599, "e": 145.048 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 145.048, "e": 145.385 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 145.385, "e": 145.553 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 145.553, "e": 145.721 },
+        { "t": "éxodo", "l": "éxodo", "p": "NOUN", "w": true, "sp": true, "s": 145.721, "e": 146.058 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 146.058, "e": 146.226 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 146.227, "e": 146.452 },
+        { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "sp": true, "s": 146.451, "e": 146.956 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 146.956, "e": 147.068 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 147.068, "e": 147.293 },
+        { "t": "pueblos", "l": "pueblo", "p": "NOUN", "w": true, "s": 147.293, "e": 147.742 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 144.262,
+      "end": 147.824
+    },
+    {
+      "id": "s32",
+      "speaker": "javier",
+      "text": "¿Se ha producido realmente?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 148.074, "e": 148.249 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 148.249, "e": 148.424 },
+        { "t": "producido", "l": "producir", "p": "VERB", "w": true, "sp": true, "s": 148.425, "e": 149.01 },
+        { "t": "realmente", "l": "realmente", "p": "ADV", "w": true, "s": 149.009, "e": 149.594 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 148.074,
+      "end": 149.671
+    },
+    {
+      "id": "s33",
+      "speaker": "irene",
+      "text": "En parte.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 150.081, "e": 150.328 },
+        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "s": 150.328, "e": 150.821 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 150.071,
+      "end": 150.935
+    },
+    {
+      "id": "s34",
+      "speaker": "irene",
+      "text": "Algunos pueblos que sufrían despoblación han recibido nuevos vecinos, sobre todo familias jóvenes y profesionales del sector tecnológico.",
+      "tokens": [
+        { "t": "Algunos", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 151.195, "e": 151.738 },
+        { "t": "pueblos", "l": "pueblo", "p": "NOUN", "w": true, "sp": true, "s": 151.738, "e": 152.281 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 152.281, "e": 152.552 },
+        { "t": "sufrían", "l": "sufrir", "p": "VERB", "w": true, "sp": true, "s": 152.552, "e": 153.095 },
+        {
+          "t": "despoblación",
+          "l": "despoblación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 153.095,
+          "e": 153.977
+        },
+        { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 153.978, "e": 154.249 },
+        { "t": "recibido", "l": "recibir", "p": "VERB", "w": true, "sp": true, "s": 154.249, "e": 154.86 },
+        { "t": "nuevos", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 154.86, "e": 155.335 },
+        { "t": "vecinos", "l": "vecino", "p": "NOUN", "w": true, "s": 155.335, "e": 155.878 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 155.878, "e": 156.285 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 156.285, "e": 156.624 },
+        { "t": "familias", "l": "familia", "p": "NOUN", "w": true, "sp": true, "s": 156.624, "e": 157.235 },
+        { "t": "jóvenes", "l": "joven", "p": "NOUN", "w": true, "sp": true, "s": 157.235, "e": 157.778 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 157.778, "e": 157.914 },
+        {
+          "t": "profesionales",
+          "l": "profesional",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 157.914,
+          "e": 158.864
+        },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 158.864, "e": 159.135 },
+        { "t": "sector", "l": "sector", "p": "NOUN", "w": true, "sp": true, "s": 159.136, "e": 159.611 },
+        { "t": "tecnológico", "l": "tecnológico", "p": "ADJ", "w": true, "s": 159.611, "e": 160.425 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 151.185,
+      "end": 160.533
+    },
+    {
+      "id": "s35",
+      "speaker": "irene",
+      "text": "Pero no ha sido el éxodo masivo que se anunciaba.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 160.793, "e": 161.108 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 161.108, "e": 161.297 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 161.297, "e": 161.486 },
+        { "t": "sido", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 161.487, "e": 161.802 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 161.802, "e": 161.991 },
+        { "t": "éxodo", "l": "éxodo", "p": "NOUN", "w": true, "sp": true, "s": 161.991, "e": 162.369 },
+        { "t": "masivo", "l": "masivo", "p": "ADJ", "w": true, "sp": true, "s": 162.37, "e": 162.811 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 162.811, "e": 163.063 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 163.063, "e": 163.252 },
+        { "t": "anunciaba", "l": "anunciar", "p": "VERB", "w": true, "s": 163.252, "e": 163.883 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 160.783,
+      "end": 163.964
+    },
+    {
+      "id": "s36",
+      "speaker": "irene",
+      "text": "Para que alguien se instale en un pueblo hace falta mucho más que buena conexión a internet.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 164.225, "e": 164.526 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 164.526, "e": 164.766 },
+        { "t": "alguien", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 164.766, "e": 165.247 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 165.247, "e": 165.427 },
+        { "t": "instale", "l": "instalarse", "p": "VERB", "w": true, "sp": true, "s": 165.427, "e": 165.908 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 165.908, "e": 166.088 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 166.088, "e": 166.268 },
+        { "t": "pueblo", "l": "pueblo", "p": "NOUN", "w": true, "sp": true, "s": 166.269, "e": 166.69 },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 166.689, "e": 166.99 },
+        { "t": "falta", "l": "falta", "p": "NOUN", "w": true, "sp": true, "s": 166.99, "e": 167.351 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 167.351, "e": 167.712 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 167.711, "e": 167.951 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 167.952, "e": 168.192 },
+        { "t": "buena", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 168.192, "e": 168.553 },
+        { "t": "conexión", "l": "conexión", "p": "NOUN", "w": true, "sp": true, "s": 168.553, "e": 169.094 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 169.094, "e": 169.214 },
+        { "t": "internet", "l": "internet", "p": "NOUN", "w": true, "s": 169.214, "e": 169.755 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 164.215,
+      "end": 169.898
+    },
+    {
+      "id": "s37",
+      "speaker": "irene",
+      "text": "Se necesitan escuelas, centros de salud y transporte.",
+      "tokens": [
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 170.158, "e": 170.649 },
+        { "t": "necesitan", "l": "necesitar", "p": "VERB", "w": true, "sp": true, "s": 170.649, "e": 172.285 },
+        { "t": "escuelas", "l": "escuela", "p": "NOUN", "w": true, "s": 172.285, "e": 173.758 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "centros", "l": "centro", "p": "NOUN", "w": true, "sp": true, "s": 173.908, "e": 173.961 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 173.961, "e": 173.981 },
+        { "t": "salud", "l": "salud", "p": "NOUN", "w": true, "sp": true, "s": 173.981, "e": 174.021 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 174.021, "e": 174.034 },
+        { "t": "transporte", "l": "transporte", "p": "NOUN", "w": true, "s": 174.035, "e": 174.108 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 170.148,
+      "end": 174.176
+    },
+    {
+      "id": "s38",
+      "speaker": "javier",
+      "text": "¿Y qué ha pasado con los centros de las ciudades?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 174.604, "e": 174.706 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 174.706, "e": 174.91 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 174.91, "e": 175.063 },
+        { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "sp": true, "s": 175.063, "e": 175.42 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 175.421, "e": 175.625 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 175.625, "e": 175.829 },
+        { "t": "centros", "l": "centro", "p": "NOUN", "w": true, "sp": true, "s": 175.829, "e": 176.237 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 176.237, "e": 176.39 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 176.39, "e": 176.594 },
+        { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "s": 176.595, "e": 177.054 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 174.576,
+      "end": 177.119
+    },
+    {
+      "id": "s39",
+      "speaker": "irene",
+      "text": "Ahí sí se nota el cambio.",
+      "tokens": [
+        { "t": "Ahí", "l": "ahí", "p": "ADV", "w": true, "sp": true, "s": 177.529, "e": 177.793 },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "sp": true, "s": 177.793, "e": 177.991 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 177.991, "e": 178.189 },
+        { "t": "nota", "l": "notar", "p": "VERB", "w": true, "sp": true, "s": 178.189, "e": 178.519 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 178.519, "e": 178.717 },
+        { "t": "cambio", "l": "cambiar", "p": "VERB", "w": true, "s": 178.717, "e": 179.179 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 177.519,
+      "end": 179.249
+    },
+    {
+      "id": "s40",
+      "speaker": "irene",
+      "text": "Los bares y restaurantes de las zonas de oficinas tienen menos clientes de lunes a viernes.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 179.509, "e": 179.791 },
+        { "t": "bares", "l": "bar", "p": "NOUN", "w": true, "sp": true, "s": 179.791, "e": 180.214 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 180.213, "e": 180.354 },
+        {
+          "t": "restaurantes",
+          "l": "restaurante",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 180.354,
+          "e": 181.27
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 181.27, "e": 181.481 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 181.481, "e": 181.763 },
+        { "t": "zonas", "l": "zona", "p": "NOUN", "w": true, "sp": true, "s": 181.763, "e": 182.186 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 182.186, "e": 182.397 },
+        { "t": "oficinas", "l": "oficina", "p": "NOUN", "w": true, "sp": true, "s": 182.397, "e": 183.031 },
+        { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 183.031, "e": 183.524 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 183.524, "e": 183.947 },
+        { "t": "clientes", "l": "cliente", "p": "NOUN", "w": true, "sp": true, "s": 183.947, "e": 184.581 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 184.581, "e": 184.792 },
+        { "t": "lunes", "l": "lunes", "p": "NOUN", "w": true, "sp": true, "s": 184.792, "e": 185.215 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 185.215, "e": 185.356 },
+        { "t": "viernes", "l": "viernes", "p": "NOUN", "w": true, "s": 185.355, "e": 185.919 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 179.499,
+      "end": 185.98
+    },
+    {
+      "id": "s41",
+      "speaker": "irene",
+      "text": "Algunas ciudades ya están pensando en convertir edificios de oficinas vacíos en viviendas.",
+      "tokens": [
+        { "t": "Algunas", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 186.24, "e": 186.837 },
+        { "t": "ciudades", "l": "ciudad", "p": "NOUN", "w": true, "sp": true, "s": 186.837, "e": 187.509 },
+        { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 187.509, "e": 187.733 },
+        { "t": "están", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 187.733, "e": 188.181 },
+        { "t": "pensando", "l": "pensar", "p": "VERB", "w": true, "sp": true, "s": 188.181, "e": 188.853 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 188.853, "e": 189.077 },
+        { "t": "convertir", "l": "convertir", "p": "VERB", "w": true, "sp": true, "s": 189.077, "e": 189.824 },
+        { "t": "edificios", "l": "edificio", "p": "NOUN", "w": true, "sp": true, "s": 189.824, "e": 190.571 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 190.571, "e": 190.795 },
+        { "t": "oficinas", "l": "oficina", "p": "NOUN", "w": true, "sp": true, "s": 190.795, "e": 191.467 },
+        { "t": "vacíos", "l": "vacío", "p": "ADJ", "w": true, "sp": true, "s": 191.467, "e": 191.99 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 191.989, "e": 192.213 },
+        { "t": "viviendas", "l": "vivienda", "p": "NOUN", "w": true, "s": 192.213, "e": 192.96 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 186.23,
+      "end": 193.017
+    },
+    {
+      "id": "s42",
+      "speaker": "javier",
+      "text": "Para terminar, ¿cómo imagina el trabajo dentro de diez años?",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 193.437, "e": 193.726 },
+        { "t": "terminar", "l": "terminar", "p": "VERB", "w": true, "s": 193.726, "e": 194.247 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 194.497, "e": 194.822 },
+        { "t": "imagina", "l": "imaginar", "p": "VERB", "w": true, "sp": true, "s": 194.822, "e": 195.342 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 195.342, "e": 195.537 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 195.537, "e": 196.057 },
+        { "t": "dentro", "l": "dentro", "p": "ADV", "w": true, "sp": true, "s": 196.057, "e": 196.512 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 196.512, "e": 196.707 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true, "s": 196.707, "e": 197.032 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 197.032, "e": 197.357 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 193.417,
+      "end": 197.434
+    },
+    {
+      "id": "s43",
+      "speaker": "irene",
+      "text": "Más flexible, pero también más desigual.",
+      "tokens": [
+        { "t": "Más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 197.844, "e": 198.146 },
+        { "t": "flexible", "l": "flexible", "p": "ADJ", "w": true, "s": 198.146, "e": 198.824 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 198.984, "e": 199.313 },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 199.313, "e": 199.839 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 199.839, "e": 200.102 },
+        { "t": "desigual", "l": "desigual", "p": "ADJ", "w": true, "s": 200.102, "e": 200.694 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 197.834,
+      "end": 200.788
+    },
+    {
+      "id": "s44",
+      "speaker": "irene",
+      "text": "El teletrabajo es un privilegio que no todos pueden disfrutar.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 201.048, "e": 201.247 },
+        {
+          "t": "teletrabajo",
+          "l": "teletrabajo",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 201.247,
+          "e": 202.042
+        },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 202.042, "e": 202.241 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 202.241, "e": 202.44 },
+        {
+          "t": "privilegio",
+          "l": "privilegio",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 202.44,
+          "e": 203.169
+        },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 203.169, "e": 203.434 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 203.434, "e": 203.633 },
+        { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 203.633, "e": 204.031 },
+        { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 204.031, "e": 204.495 },
+        { "t": "disfrutar", "l": "disfrutar", "p": "VERB", "w": true, "s": 204.495, "e": 205.158 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 201.038,
+      "end": 205.24
+    },
+    {
+      "id": "s45",
+      "speaker": "irene",
+      "text": "Una enfermera, un camarero o una conductora de autobús no pueden trabajar desde casa.",
+      "tokens": [
+        { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 205.5, "e": 205.783 },
+        { "t": "enfermera", "l": "enfermero", "p": "NOUN", "w": true, "s": 205.783, "e": 206.49 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 206.66, "e": 206.844 },
+        { "t": "camarero", "l": "camarero", "p": "NOUN", "w": true, "sp": true, "s": 206.844, "e": 207.397 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 207.397, "e": 207.52 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 207.52, "e": 207.766 },
+        {
+          "t": "conductora",
+          "l": "conductor",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 207.766,
+          "e": 208.442
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 208.441, "e": 208.625 },
+        { "t": "autobús", "l": "autobús", "p": "NOUN", "w": true, "sp": true, "s": 208.626, "e": 209.117 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 209.117, "e": 209.301 },
+        { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 209.301, "e": 209.731 },
+        { "t": "trabajar", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 209.731, "e": 210.284 },
+        { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 210.284, "e": 210.653 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 210.653, "e": 210.96 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 205.49,
+      "end": 211.034
+    },
+    {
+      "id": "s46",
+      "speaker": "irene",
+      "text": "El reto será evitar que esa diferencia cree dos clases de trabajadores.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 211.294, "e": 211.519 },
+        { "t": "reto", "l": "reto", "p": "NOUN", "w": true, "sp": true, "s": 211.519, "e": 211.894 },
+        { "t": "será", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 211.895, "e": 212.27 },
+        { "t": "evitar", "l": "evitar", "p": "VERB", "w": true, "sp": true, "s": 212.27, "e": 212.795 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 212.795, "e": 213.095 },
+        { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 213.096, "e": 213.396 },
+        {
+          "t": "diferencia",
+          "l": "diferencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 213.396,
+          "e": 214.222
+        },
+        { "t": "cree", "l": "creer", "p": "VERB", "w": true, "sp": true, "s": 214.222, "e": 214.597 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 214.597, "e": 214.897 },
+        { "t": "clases", "l": "clase", "p": "NOUN", "w": true, "sp": true, "s": 214.897, "e": 215.422 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 215.423, "e": 215.648 },
+        { "t": "trabajadores", "l": "trabajador", "p": "NOUN", "w": true, "s": 215.648, "e": 216.624 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 211.284,
+      "end": 216.7
+    },
+    {
+      "id": "s47",
+      "speaker": "javier",
+      "text": "Una reflexión necesaria.",
+      "tokens": [
+        { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 217.128, "e": 217.396 },
+        { "t": "reflexión", "l": "reflexión", "p": "NOUN", "w": true, "sp": true, "s": 217.396, "e": 218.067 },
+        { "t": "necesaria", "l": "necesario", "p": "ADJ", "w": true, "s": 218.067, "e": 218.738 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 217.1,
+      "end": 218.823
+    },
+    {
+      "id": "s48",
+      "speaker": "javier",
+      "text": "Muchas gracias, Irene.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 219.108, "e": 219.578 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 219.578, "e": 220.115 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Irene", "l": "irene", "p": "PROPN", "w": false, "s": 220.115, "e": 220.518 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 219.073,
+      "end": 220.591
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "conciliar",
+      "surface": "conciliar",
+      "pos": "verb",
+      "def_en": "hacer compatibles el trabajo y la vida familiar",
+      "def_es": { "en": "to balance (work and family)", "fr": "concilier", "zh": "兼顾", "ja": "両立させる" },
+      "ref": "s13"
+    },
+    {
+      "lemma": "difuso",
+      "surface": "difusa",
+      "pos": "adjective",
+      "def_en": "poco claro, sin límites precisos",
+      "def_es": { "en": "blurred, vague", "fr": "flou", "zh": "模糊的", "ja": "曖昧な" },
+      "ref": "s19"
+    },
+    {
+      "lemma": "éxodo",
+      "surface": "éxodo",
+      "pos": "noun",
+      "def_en": "salida de mucha gente de un lugar",
+      "def_es": { "en": "exodus", "fr": "exode", "zh": "大规模迁移", "ja": "大量移住" },
+      "ref": "s31"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Cuál es la conclusión general de Irene sobre el teletrabajo?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "A hybrid model has prevailed." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Las oficinas han desaparecido en casi todas las empresas" },
+        { "id": "b", "text": "Se ha impuesto un sistema que combina casa y oficina" },
+        { "id": "c", "text": "Casi todo el mundo ha vuelto a trabajar como antes" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué ventaja mencionan más los trabajadores?",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "Work-life balance." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cobrar un salario más alto" },
+        { "id": "b", "text": "Tener jefes más comprensivos y cercanos" },
+        { "id": "c", "text": "Poder compaginar trabajo y familia" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué echan de menos muchos empleados?",
+      "evidence": ["s18"],
+      "rationale_es": { "en": "Informal chats." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Las charlas espontáneas con los compañeros" },
+        { "id": "b", "text": "Los ordenadores modernos que tenía la empresa" },
+        { "id": "c", "text": "Las comidas gratuitas en el comedor" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué dicen los datos sobre la productividad?",
+      "evidence": ["s23"],
+      "rationale_es": { "en": "It has not fallen for focused work." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que ha bajado en todas las tareas por igual" },
+        { "id": "b", "text": "Que no es peor cuando hay que concentrarse" },
+        { "id": "c", "text": "Que solo mejora en el trabajo en equipo" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Según Irene, millones de personas se han ido de las ciudades a los pueblos.",
+      "evidence": ["s35"],
+      "rationale_es": { "en": "There was no mass exodus." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Por qué no se instala más gente en los pueblos?",
+      "evidence": ["s36"],
+      "rationale_es": { "en": "Basic services are missing." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Los pueblos no quieren vecinos nuevos" },
+        { "id": "b", "text": "Las casas son mucho más caras que en la ciudad" },
+        { "id": "c", "text": "Faltan servicios básicos, no solo internet" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "attitude_opinion",
+      "phase": "post",
+      "prompt": "¿Qué le preocupa a Irene del futuro?",
+      "evidence": ["s46"],
+      "rationale_es": { "en": "Inequality between workers." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que aumente la desigualdad entre trabajadores" },
+        { "id": "b", "text": "Que las máquinas sustituyan a los médicos de familia" },
+        { "id": "c", "text": "Que las ciudades se queden sin bares" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q8",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s15"],
+      "rationale_es": { "en": "*Aislamiento*: isolation." },
+      "type": "gap_fill",
+      "text": "El principal inconveniente del teletrabajo es el {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["aislamiento"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "afueras", "ahora", "ahí", "aislamiento", "algo", "algún", "antes", "anunciar", "autobús", "año",
+    "bajar", "bar", "bueno", "café", "camarero", "cambiar", "casa", "centrarse", "centro", "citar", "ciudad",
+    "clase", "cliente", "cocinar", "comer", "completamente", "común", "con", "concentración", "conciliar",
+    "conductor", "conexión", "confirmar", "constantemente", "contar", "contestar", "controlar", "conversación",
+    "convertir", "correo", "creativo", "creer", "cuando", "cómo", "dato", "de", "decir", "dedicar", "dentro",
+    "desde", "desigual", "despoblación", "detalle", "diario", "diferencia", "difuso", "directivo", "dirigir",
+    "disfrutar", "distancia", "donde", "dudar", "durante", "día", "echar", "edificio", "ejercicio", "el",
+    "empleado", "empresa", "en", "encuesta", "enfermero", "entre", "equipo", "equivocarse", "escribir",
+    "escuela", "ese", "estar", "esto", "estudiar", "evitar", "exigir", "extender", "falta", "familia",
+    "familiar", "flexible", "forma", "formación", "frontera", "funcionar", "gente", "golpe", "grande", "haber",
+    "hablar", "hacer", "hijo", "hora", "idea", "igual", "imaginar", "impuesto", "incluso", "inconveniente",
+    "informal", "informar", "instalarse", "inteligente", "internet", "interrumpir", "jefe", "joven", "laboral",
+    "llevar", "lunes", "masivo", "mayoría", "mejorar", "menor", "menos", "menudo", "mesa", "mixto", "modelo",
+    "morir", "mucho", "muy", "más", "necesario", "necesitar", "no", "noche", "nosotros", "notar", "nuestro",
+    "nuevo", "o", "obligar", "oficina", "ordenador", "otro", "para", "parecer", "parte", "pasado", "pasar",
+    "pensar", "peor", "pero", "persona", "poder", "por", "porque", "principal", "principio", "privilegio",
+    "problema", "producir", "productividad", "profesional", "programar", "proyecto", "pueblo", "que", "quien",
+    "qué", "razón", "realmente", "recibir", "reconocer", "recuperar", "reflexión", "rendir", "reservar",
+    "restaurante", "resto", "resultado", "reto", "reunión", "sala", "salud", "salón", "se", "sector",
+    "sentarse", "sentir", "ser", "serio", "siempre", "sin", "sobre", "sociólogo", "solo", "su", "sufrir",
+    "suponer", "surgir", "también", "tarea", "tecnológico", "teletrabajo", "temer", "tener", "terminar",
+    "tiempo", "todo", "trabajador", "trabajar", "transporte", "un", "vacío", "valorar", "vecino", "ventaja",
+    "vida", "viernes", "vivienda", "vivir", "volver", "y", "ya", "zona", "él", "éxodo"
+  ],
+  "difficulty": 1465,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6543, "A2": 0.752, "B1": 0.8984, "B2": 0.9453, "C1": 0.9648, "C2": 1 },
+    "off_level_lemmas": [
+      "conciliar", "conexión", "constantemente", "creativo", "despoblación", "distancia", "instalarse",
+      "interrumpir", "necesario", "privilegio", "realmente", "reflexión", "reto", "sociólogo", "valorar",
+      "éxodo"
+    ],
+    "avg_sentence_words": 10.9,
+    "flesch_reading_ease": 76.2,
+    "checked_at": "2026-10-19T07:48:30.244Z"
+  },
+  "audio": {
+    "src": "audio/c1/es-c1-lis-007/v1.m4a",
+    "duration_s": 220.591,
+    "wpm": 142,
+    "provider": "piper",
+    "voices": { "javier": "davefx-m", "irene": "sharvard-f" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.93, 0.93, 0.93, 1, 0.92, 0.87, 0.92, 0.85, 0.9, 0.97, 1, 0.98, 0.61, 1, 0.99, 0.8, 0.86, 0.8, 0.57,
+      0.74, 0.92, 1, 0.55, 0.99, 0.91, 0.74, 1, 1, 0.83, 1, 0.97, 0.63, 1, 0.98, 0.67, 1, 0.68, 0.81, 0.79,
+      0.7, 0.94, 1, 0.8, 0.6, 0.6, 0.86, 1, 0.59, 1, 0.76, 0.87, 0.99, 0.56, 0.61, 0.72, 0.86, 0.9, 0.65, 1,
+      0.84, 1, 0.95, 0.55, 1, 0.87, 0.61, 1, 0.9, 0.81, 0.91, 0.74, 0.84, 0.95, 0.96, 1, 0.95, 0.98, 0.88,
+      0.88, 0.83, 1, 0.85, 0.76, 0.86, 0.92, 0.84, 0.76, 1, 0.95, 0.93, 0.76, 0.86, 0.96, 0.86, 0.85, 0.89, 1,
+      0.9, 1, 0.88, 0.87, 0.9, 0.75, 1, 1, 0.45, 0.71, 0.64, 0.56, 0.59, 0.79, 0.57, 1, 0.89, 0.52, 0.64, 0.69,
+      0.71, 0.61, 0.82, 0.77, 0.68, 1, 0.87, 0.73, 0.94, 1, 0.97, 0.99, 0.62, 1, 0.75, 0.77, 0.71, 0.78, 1,
+      0.98, 0.75, 1, 0.85, 0.79, 0.83, 0.62, 0.57, 1, 0.76, 0.98, 0.82, 0.54, 0.59, 1, 0.65, 0.67, 0.65, 0.65,
+      0.43, 1, 0.94, 0.93, 0.71, 1, 0.98, 1, 0.76, 0.83, 0.85, 0.88, 0.72, 0.7, 0.78, 1, 0.75, 0.69, 0.64,
+      0.87, 0.68, 1, 0.62, 0.81, 0.98, 1, 0.61, 0.6, 0.42, 0.74, 1, 0.85, 0.8, 0.39, 1, 0.8, 0.72, 1, 0.91, 1,
+      0.78, 0.64, 0.63, 0.63, 0.7, 0.52, 0.69, 1, 0.86, 0.67, 0.67, 0.85, 0.93, 0.56, 0.94, 1, 0.92, 0.88,
+      0.94, 0.73, 0.94, 0.92, 1, 1, 0.91, 0.68, 0.73, 0.91, 0.56, 1, 0.65, 0.71, 0.88, 0.66, 1, 1, 0.66, 0.91,
+      0.89, 0.42, 1, 0.99, 1, 0.84
+    ]
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "id": "es-a2-lis-013",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u06",
+  "series": "es-a2-u06-direcciones",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Pedir direcciones",
+  "summary_es": {
+    "en": "A tourist asks for directions to the museum and gets a clear answer.",
+    "fr": "Un touriste demande le chemin du musée et reçoit une réponse claire.",
+    "zh": "一位游客问去博物馆的路，得到清晰的回答。",
+    "ja": "観光客が博物館への道をたずね、わかりやすい答えをもらいます。"
+  },
+  "topic": "city-housing",
+  "tags": ["direcciones", "ciudad", "preguntar"],
+  "can_do": ["L-A2-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["calle", "plaza", "derecha", "izquierda"],
+  "est_minutes": 6,
+  "prediction_prompt": "Estás perdido en una ciudad. ¿Cómo preguntas el camino?",
+  "pre_teach": ["girar", "esquina"],
+  "speakers": [
+    { "id": "tom", "name": "Tomás", "accent": "es-ES", "gender": "male" },
+    { "id": "elena", "name": "Elena", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 110,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "tom",
+      "text": "Perdone, ¿sabe dónde está el museo?",
+      "tokens": [
+        { "t": "Perdone", "l": "perdonar", "p": "VERB", "w": true, "s": 0.01, "e": 0.53 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "sabe", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 0.8, "e": 1.126 },
+        { "t": "dónde", "l": "dónde", "p": "ADV", "w": true, "sp": true, "s": 1.126, "e": 1.517 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 1.517, "e": 1.843 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 1.843, "e": 2.039 },
+        { "t": "museo", "l": "museo", "p": "NOUN", "w": true, "s": 2.039, "e": 2.43 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.48
+    },
+    {
+      "id": "s2",
+      "speaker": "elena",
+      "text": "Sí, está cerca. Siga todo recto por esta calle.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 3.19, "e": 3.56 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 3.7, "e": 4.177 },
+        { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "s": 4.177, "e": 4.75 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Siga", "l": "seguir", "p": "VERB", "w": true, "sp": true, "s": 5.01, "e": 5.366 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 5.366, "e": 5.722 },
+        { "t": "recto", "l": "recto", "p": "ADJ", "w": true, "sp": true, "s": 5.723, "e": 6.151 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 6.151, "e": 6.436 },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 6.436, "e": 6.792 },
+        { "t": "calle", "l": "calle", "p": "NOUN", "w": true, "s": 6.792, "e": 7.22 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.18,
+      "end": 7.299
+    },
+    {
+      "id": "s3",
+      "speaker": "elena",
+      "text": "Al llegar a la plaza, gire a la izquierda.",
+      "tokens": [
+        { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 7.809, "e": 8.009 },
+        { "t": "llegar", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 8.009, "e": 8.476 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 8.476, "e": 8.609 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.609, "e": 8.809 },
+        { "t": "plaza", "l": "plaza", "p": "NOUN", "w": true, "s": 8.809, "e": 9.209 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "gire", "l": "girar", "p": "VERB", "w": true, "sp": true, "s": 9.349, "e": 9.704 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 9.704, "e": 9.846 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 9.846, "e": 10.059 },
+        { "t": "izquierda", "l": "izquierda", "p": "NOUN", "w": true, "s": 10.059, "e": 10.769 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.799,
+      "end": 10.84
+    },
+    {
+      "id": "s4",
+      "speaker": "tom",
+      "text": "¿A la izquierda?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 11.55, "e": 11.695 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.695, "e": 11.913 },
+        { "t": "izquierda", "l": "izquierda", "p": "NOUN", "w": true, "s": 11.913, "e": 12.64 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.54,
+      "end": 12.743
+    },
+    {
+      "id": "s5",
+      "speaker": "elena",
+      "text": "Sí. Verá una iglesia grande.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 13.463, "e": 13.953 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Verá", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 14.193, "e": 14.576 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 14.576, "e": 14.883 },
+        { "t": "iglesia", "l": "iglesia", "p": "NOUN", "w": true, "sp": true, "s": 14.883, "e": 15.496 },
+        { "t": "grande", "l": "grande", "p": "ADJ", "w": true, "s": 15.496, "e": 16.033 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.443,
+      "end": 16.156
+    },
+    {
+      "id": "s6",
+      "speaker": "elena",
+      "text": "El museo está justo detrás, en la esquina.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 16.666, "e": 16.889 },
+        { "t": "museo", "l": "museo", "p": "NOUN", "w": true, "sp": true, "s": 16.889, "e": 17.335 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 17.336, "e": 17.708 },
+        { "t": "justo", "l": "justo", "p": "ADJ", "w": true, "sp": true, "s": 17.707, "e": 18.153 },
+        { "t": "detrás", "l": "detrás", "p": "ADV", "w": true, "s": 18.154, "e": 18.675 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 18.675, "e": 18.898 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 18.898, "e": 19.121 },
+        { "t": "esquina", "l": "esquina", "p": "NOUN", "w": true, "s": 19.121, "e": 19.716 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.656,
+      "end": 19.793
+    },
+    {
+      "id": "s7",
+      "speaker": "tom",
+      "text": "¿Está lejos de aquí?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 20.503, "e": 20.824 },
+        { "t": "lejos", "l": "lejos", "p": "ADV", "w": true, "sp": true, "s": 20.824, "e": 21.209 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 21.209, "e": 21.402 },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "s": 21.402, "e": 21.723 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.493,
+      "end": 21.833
+    },
+    {
+      "id": "s8",
+      "speaker": "elena",
+      "text": "No, a diez minutos andando.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "s": 22.543, "e": 22.81 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 22.81, "e": 22.988 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true, "s": 22.987, "e": 23.431 },
+        { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true, "sp": true, "s": 23.431, "e": 24.142 },
+        { "t": "andando", "l": "andar", "p": "VERB", "w": true, "s": 24.142, "e": 24.853 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.533,
+      "end": 24.928
+    },
+    {
+      "id": "s9",
+      "speaker": "tom",
+      "text": "¿Y está abierto ahora?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 25.638, "e": 25.785 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 25.785, "e": 26.152 },
+        { "t": "abierto", "l": "abrir", "p": "VERB", "w": true, "sp": true, "s": 26.151, "e": 26.738 },
+        { "t": "ahora", "l": "ahora", "p": "ADV", "w": true, "s": 26.738, "e": 27.178 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.628,
+      "end": 27.297
+    },
+    {
+      "id": "s10",
+      "speaker": "elena",
+      "text": "Sí, abre hasta las ocho.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 28.017, "e": 28.24 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "abre", "l": "abrir", "p": "VERB", "w": true, "sp": true, "s": 28.24, "e": 28.612 },
+        { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 28.612, "e": 29.058 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 29.058, "e": 29.355 },
+        { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "s": 29.355, "e": 29.727 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 27.997,
+      "end": 29.807
+    },
+    {
+      "id": "s11",
+      "speaker": "tom",
+      "text": "Muchas gracias por su ayuda.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 30.517, "e": 30.997 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 30.997, "e": 31.546 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 31.546, "e": 31.82 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 31.82, "e": 32.026 },
+        { "t": "ayuda", "l": "ayudar", "p": "VERB", "w": true, "s": 32.026, "e": 32.437 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 30.507,
+      "end": 32.539
+    },
+    {
+      "id": "s12",
+      "speaker": "elena",
+      "text": "De nada. ¡Que lo pase bien!",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 33.249, "e": 33.444 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 33.444, "e": 33.769 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¡", "l": "¡", "p": "PUNCT", "w": false },
+        { "t": "Que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 34.029, "e": 34.29 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 34.29, "e": 34.486 },
+        { "t": "pase", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 34.486, "e": 34.812 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 34.813, "e": 35.139 },
+        { "t": "!", "l": "!", "p": "PUNCT", "w": false }
+      ],
+      "start": 33.239,
+      "end": 35.243
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "todo recto",
+      "surface": "todo recto",
+      "pos": "phrase",
+      "def_en": "sin girar",
+      "def_es": { "en": "straight on", "fr": "tout droit", "zh": "一直走", "ja": "まっすぐ" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "girar",
+      "surface": "gire",
+      "pos": "verb",
+      "def_en": "cambiar de dirección",
+      "def_es": { "en": "to turn", "fr": "tourner", "zh": "转弯", "ja": "曲がる" },
+      "ref": "s3"
+    },
+    {
+      "lemma": "esquina",
+      "surface": "esquina",
+      "pos": "noun",
+      "def_en": "punto donde se juntan dos calles",
+      "def_es": { "en": "corner", "fr": "coin de rue", "zh": "街角", "ja": "角" },
+      "ref": "s6"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué busca el turista?",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "The museum." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una farmacia" },
+        { "id": "b", "text": "El museo" },
+        { "id": "c", "text": "La estación de tren" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Dónde tiene que girar?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "At the square, left." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En la iglesia, a la derecha" },
+        { "id": "b", "text": "En la esquina, a la derecha" },
+        { "id": "c", "text": "En la plaza, a la izquierda" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué verá antes del museo?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "A big church." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Una iglesia grande" },
+        { "id": "b", "text": "Un parque con fuente" },
+        { "id": "c", "text": "Un hospital nuevo" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "El museo está a una hora andando.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "Ten minutes on foot." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con un número.",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "*Hasta las ocho*." },
+      "type": "gap_fill",
+      "text": "El museo abre hasta las {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["ocho", "8"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Qué le desea Elena al final?",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "Have a good time." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que tenga buen viaje" },
+        { "id": "b", "text": "Que lo pase bien" },
+        { "id": "c", "text": "Que descanse esta noche" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abrir", "ahora", "algo", "andar", "aquí", "ayudar", "bien", "calle", "cerca", "de", "detrás",
+    "dónde", "el", "en", "esquina", "estar", "este", "girar", "grande", "hasta", "iglesia", "izquierda",
+    "justo", "lejos", "llegar", "minuto", "mucho", "museo", "no", "pasar", "perdonar", "plaza", "por", "que",
+    "recto", "saber", "seguir", "su", "todo", "un", "ver", "y", "él"
+  ],
+  "difficulty": 873,
+  "qa": {
+    "coverage_by_level": { "A1": 0.746, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 4.6,
+    "flesch_reading_ease": 95.2,
+    "checked_at": "2026-10-18T23:12:58.318Z"
+  },
+  "audio": {
+    "src": "audio/a2/es-a2-lis-013/v1.m4a",
+    "duration_s": 35.243,
+    "wpm": 117,
+    "provider": "piper",
+    "voices": { "tom": "sharvard-m", "elena": "sharvard-f" },
+    "loudness_lufs": -15.9,
+    "peaks": [
+      0.73, 0.7, 0.4, 0.32, 0.01, 0.28, 1, 0.68, 0.59, 0.35, 0.56, 0.21, 0.66, 0.32, 0.3, 0.52, 0.26, 0, 0, 0,
+      0, 0.13, 0.48, 0.54, 0.05, 0.55, 1, 0.94, 0.92, 0.24, 0.33, 0.34, 0.05, 0, 0.45, 0.66, 1, 0.6, 0.82,
+      0.73, 0.17, 0.84, 0.77, 0.68, 0.57, 0.7, 0.58, 0.45, 0.18, 0.06, 0, 0, 0, 0.59, 0.41, 0.66, 1, 0.6, 0.77,
+      1, 0.97, 0.48, 0.42, 0.14, 0.48, 0.92, 0.72, 0.47, 0.37, 0.21, 0.75, 0.39, 0.15, 0.05, 0, 0, 0, 0, 0.69,
+      1, 0.97, 0.66, 0.27, 0.87, 0.36, 0.23, 0.05, 0, 0, 0, 0, 0.16, 0.7, 1, 0.96, 0.03, 0.16, 0.72, 1, 0.41,
+      0.5, 0.24, 0.33, 0.39, 0.43, 0.49, 0.46, 0.35, 0.15, 0.03, 0, 0, 0, 0.62, 0.54, 0.54, 0.76, 0.94, 1,
+      0.82, 0.69, 0.61, 0.61, 0.78, 0.63, 1, 0.54, 0.32, 0.53, 0.83, 0.81, 0.55, 0.67, 0.3, 0.09, 0, 0, 0, 0,
+      0.36, 0.32, 0.91, 1, 0.49, 0.27, 0.53, 0.19, 0.3, 0.02, 0, 0, 0, 0, 0.5, 0.87, 0.84, 0.26, 0.82, 1, 0.83,
+      0.54, 0.58, 0.78, 1, 0.65, 0.76, 0.66, 0.31, 0.37, 0.05, 0, 0, 0, 0, 0.27, 0.46, 0.3, 1, 0.9, 0.85, 0.62,
+      0.5, 0.56, 0.38, 0.15, 0.03, 0, 0, 0, 0, 0.14, 0.47, 0.45, 0.86, 1, 0.68, 0.51, 0.54, 0.54, 0.33, 0.27,
+      0.23, 0.12, 0, 0, 0, 0, 0.07, 0.47, 0.47, 0.47, 0.31, 1, 0.88, 0.42, 0.18, 0.35, 0.27, 0.45, 0.18, 0.08,
+      0.01, 0, 0, 0, 0, 0.65, 1, 0.83, 0.33, 0.03, 0.33, 0.87, 0.91, 1, 0.54, 0.49, 0.42, 0.33, 0.06
+    ]
+  }
+}

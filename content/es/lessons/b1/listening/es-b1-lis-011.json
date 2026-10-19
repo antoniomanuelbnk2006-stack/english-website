@@ -1,0 +1,597 @@
+{
+  "id": "es-b1-lis-011",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u02",
+  "series": "es-b1-u02-primer-curso",
+  "skill": "listening",
+  "genre": "monologue",
+  "title": "Mi primer año en la universidad",
+  "summary_es": {
+    "en": "A student looks back on her first year at university: loneliness, new friends and what she learned.",
+    "fr": "Une étudiante revient sur sa première année à l’université : solitude, nouveaux amis et ce qu’elle a appris.",
+    "zh": "一位学生回顾她的大学第一年：孤独、新朋友以及她的收获。",
+    "ja": "大学1年目を振り返る学生の話：孤独、新しい友人、学んだこと。"
+  },
+  "topic": "education",
+  "tags": ["universidad", "experiencia", "consejos"],
+  "can_do": ["L-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["residencia", "apuntes", "aprobar", "tutora"],
+  "est_minutes": 8,
+  "prediction_prompt": "¿Cómo crees que se siente alguien en su primer año fuera de casa?",
+  "pre_teach": ["apuntes", "tutora"],
+  "speakers": [
+    { "id": "elena", "name": "Elena", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "elena",
+      "text": "Hola a todos.",
+      "tokens": [
+        { "t": "Hola", "l": "hola", "p": "INTJ", "w": false, "sp": true, "s": 0.01, "e": 0.41 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 0.41, "e": 0.57 },
+        { "t": "todos", "l": "todo", "p": "DET", "w": true, "s": 0.57, "e": 1.05 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.143
+    },
+    {
+      "id": "s2",
+      "speaker": "elena",
+      "text": "Me llamo Elena y quiero contaros cómo fue mi primer año en la universidad.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 1.403, "e": 1.615 },
+        { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true, "s": 1.615, "e": 2.039 },
+        { "t": "Elena", "l": "elena", "p": "PROPN", "w": false, "sp": true, "s": 2.039, "e": 2.463 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 2.463, "e": 2.604 },
+        { "t": "quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 2.604, "e": 3.099 },
+        { "t": "contaros", "l": "contar", "p": "VERB", "w": true, "sp": true, "s": 3.099, "e": 3.735 },
+        { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 3.735, "e": 4.088 },
+        { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 4.089, "e": 4.372 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 4.371, "e": 4.583 },
+        { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 4.583, "e": 5.078 },
+        { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 5.078, "e": 5.361 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 5.361, "e": 5.573 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 5.573, "e": 5.785 },
+        { "t": "universidad", "l": "universidad", "p": "NOUN", "w": true, "s": 5.785, "e": 6.633 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.393,
+      "end": 6.75
+    },
+    {
+      "id": "s3",
+      "speaker": "elena",
+      "text": "Cuando llegué a Granada no conocía a nadie.",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 7.04, "e": 7.486 },
+        { "t": "llegué", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 7.486, "e": 7.932 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 7.932, "e": 8.059 },
+        { "t": "Granada", "l": "granada", "p": "PROPN", "w": false, "sp": true, "s": 8.06, "e": 8.57 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 8.569, "e": 8.76 },
+        { "t": "conocía", "l": "conocer", "p": "VERB", "w": true, "sp": true, "s": 8.76, "e": 9.27 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 9.27, "e": 9.397 },
+        { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "s": 9.398, "e": 9.78 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7,
+      "end": 9.849
+    },
+    {
+      "id": "s4",
+      "speaker": "elena",
+      "text": "Vivía en una residencia con otras treinta estudiantes y, al principio, me sentía sola.",
+      "tokens": [
+        { "t": "Vivía", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 10.109, "e": 10.593 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 10.593, "e": 10.835 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 10.834, "e": 11.156 },
+        { "t": "residencia", "l": "residencia", "p": "NOUN", "w": true, "sp": true, "s": 11.157, "e": 12.044 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 12.043, "e": 12.365 },
+        { "t": "otras", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 12.366, "e": 12.85 },
+        { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true, "s": 12.849, "e": 13.494 },
+        {
+          "t": "estudiantes",
+          "l": "estudiante",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 13.494,
+          "e": 14.461
+        },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "s": 14.461, "e": 14.622 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 14.622, "e": 14.864 },
+        { "t": "principio", "l": "principio", "p": "NOUN", "w": true, "s": 14.864, "e": 15.67 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 15.67, "e": 15.912 },
+        { "t": "sentía", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 15.912, "e": 16.476 },
+        { "t": "sola", "l": "soler", "p": "VERB", "w": true, "s": 16.476, "e": 16.879 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.099,
+      "end": 16.99
+    },
+    {
+      "id": "s5",
+      "speaker": "elena",
+      "text": "Echaba de menos a mi familia y a mis amigos del pueblo.",
+      "tokens": [
+        { "t": "Echaba", "l": "echar", "p": "VERB", "w": true, "sp": true, "s": 17.25, "e": 17.806 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 17.806, "e": 18.044 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 18.045, "e": 18.522 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 18.521, "e": 18.68 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 18.68, "e": 18.918 },
+        { "t": "familia", "l": "familia", "p": "NOUN", "w": true, "sp": true, "s": 18.919, "e": 19.555 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 19.554, "e": 19.713 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 19.713, "e": 19.872 },
+        { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 19.872, "e": 20.19 },
+        { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true, "sp": true, "s": 20.19, "e": 20.746 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 20.746, "e": 21.064 },
+        { "t": "pueblo", "l": "pueblo", "p": "NOUN", "w": true, "s": 21.064, "e": 21.62 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.24,
+      "end": 21.71
+    },
+    {
+      "id": "s6",
+      "speaker": "elena",
+      "text": "Las clases eran muy diferentes a las del instituto.",
+      "tokens": [
+        { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 21.97, "e": 22.293 },
+        { "t": "clases", "l": "clase", "p": "NOUN", "w": true, "sp": true, "s": 22.293, "e": 22.858 },
+        { "t": "eran", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 22.859, "e": 23.263 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 23.263, "e": 23.586 },
+        { "t": "diferentes", "l": "diferente", "p": "ADJ", "w": true, "sp": true, "s": 23.586, "e": 24.475 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 24.474, "e": 24.636 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 24.636, "e": 24.959 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 24.959, "e": 25.282 },
+        { "t": "instituto", "l": "instituto", "p": "NOUN", "w": true, "s": 25.282, "e": 26.09 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.96,
+      "end": 26.185
+    },
+    {
+      "id": "s7",
+      "speaker": "elena",
+      "text": "Había cien alumnos en el aula y los profesores hablaban muy rápido.",
+      "tokens": [
+        { "t": "Había", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 26.445, "e": 26.899 },
+        { "t": "cien", "l": "cien", "p": "NUM", "w": false, "sp": true, "s": 26.899, "e": 27.277 },
+        { "t": "alumnos", "l": "alumno", "p": "NOUN", "w": true, "sp": true, "s": 27.277, "e": 27.882 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 27.883, "e": 28.11 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 28.11, "e": 28.337 },
+        { "t": "aula", "l": "aula", "p": "NOUN", "w": true, "sp": true, "s": 28.337, "e": 28.715 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 28.715, "e": 28.866 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 28.866, "e": 29.169 },
+        { "t": "profesores", "l": "profesor", "p": "NOUN", "w": true, "sp": true, "s": 29.169, "e": 30.001 },
+        { "t": "hablaban", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 30.002, "e": 30.683 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 30.683, "e": 30.986 },
+        { "t": "rápido", "l": "rápido", "p": "ADJ", "w": true, "s": 30.985, "e": 31.515 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.435,
+      "end": 31.611
+    },
+    {
+      "id": "s8",
+      "speaker": "elena",
+      "text": "Tomaba apuntes sin parar, pero después no entendía mis propias notas.",
+      "tokens": [
+        { "t": "Tomaba", "l": "tomar", "p": "VERB", "w": true, "sp": true, "s": 31.871, "e": 32.344 },
+        { "t": "apuntes", "l": "apuntarse", "p": "VERB", "w": true, "sp": true, "s": 32.344, "e": 32.885 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 32.885, "e": 33.155 },
+        { "t": "parar", "l": "parar", "p": "VERB", "w": true, "s": 33.155, "e": 33.561 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 33.791, "e": 34.148 },
+        { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true, "s": 34.148, "e": 34.719 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 34.719, "e": 34.933 },
+        { "t": "entendía", "l": "entender", "p": "VERB", "w": true, "sp": true, "s": 34.933, "e": 35.576 },
+        { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 35.576, "e": 35.862 },
+        { "t": "propias", "l": "propio", "p": "ADJ", "w": true, "sp": true, "s": 35.861, "e": 36.432 },
+        { "t": "notas", "l": "notar", "p": "VERB", "w": true, "s": 36.433, "e": 36.861 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.861,
+      "end": 36.923
+    },
+    {
+      "id": "s9",
+      "speaker": "elena",
+      "text": "Un día, una compañera me propuso estudiar juntas en la biblioteca.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 37.183, "e": 37.406 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "s": 37.406, "e": 37.703 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 37.853, "e": 38.135 },
+        { "t": "compañera", "l": "compañero", "p": "NOUN", "w": true, "sp": true, "s": 38.135, "e": 38.84 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 38.84, "e": 39.052 },
+        { "t": "propuso", "l": "proponer", "p": "VERB", "w": true, "sp": true, "s": 39.052, "e": 39.616 },
+        { "t": "estudiar", "l": "estudiar", "p": "VERB", "w": true, "sp": true, "s": 39.616, "e": 40.251 },
+        { "t": "juntas", "l": "junto", "p": "ADJ", "w": true, "sp": true, "s": 40.251, "e": 40.745 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 40.744, "e": 40.956 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 40.956, "e": 41.168 },
+        { "t": "biblioteca", "l": "biblioteca", "p": "NOUN", "w": true, "s": 41.167, "e": 41.943 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 37.173,
+      "end": 42.008
+    },
+    {
+      "id": "s10",
+      "speaker": "elena",
+      "text": "Desde entonces nos reunimos tres veces por semana, y ella se ha convertido en mi mejor amiga.",
+      "tokens": [
+        { "t": "Desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 42.268, "e": 42.688 },
+        { "t": "entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true, "s": 42.688, "e": 43.318 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 43.318, "e": 43.598 },
+        { "t": "reunimos", "l": "reunirse", "p": "VERB", "w": true, "sp": true, "s": 43.598, "e": 44.228 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 44.228, "e": 44.578 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 44.578, "e": 44.998 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 44.998, "e": 45.278 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "s": 45.278, "e": 45.768 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 45.988, "e": 46.118 },
+        { "t": "ella", "l": "ella", "p": "PRON", "w": true, "sp": true, "s": 46.118, "e": 46.442 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 46.441, "e": 46.635 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 46.636, "e": 46.83 },
+        { "t": "convertido", "l": "convertir", "p": "VERB", "w": true, "sp": true, "s": 46.83, "e": 47.542 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 47.542, "e": 47.736 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 47.737, "e": 47.931 },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true, "s": 47.931, "e": 48.32 },
+        { "t": "amiga", "l": "amigo", "p": "NOUN", "w": true, "s": 48.319, "e": 48.708 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 42.258,
+      "end": 48.79
+    },
+    {
+      "id": "s11",
+      "speaker": "elena",
+      "text": "También me apunté a un grupo de teatro.",
+      "tokens": [
+        { "t": "También", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 49.05, "e": 49.641 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 49.641, "e": 49.863 },
+        { "t": "apunté", "l": "apuntarse", "p": "VERB", "w": true, "sp": true, "s": 49.862, "e": 50.379 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 50.379, "e": 50.527 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 50.527, "e": 50.749 },
+        { "t": "grupo", "l": "grupo", "p": "NOUN", "w": true, "sp": true, "s": 50.748, "e": 51.191 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 51.192, "e": 51.414 },
+        { "t": "teatro", "l": "teatro", "p": "NOUN", "w": true, "s": 51.413, "e": 51.93 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 49.04,
+      "end": 51.977
+    },
+    {
+      "id": "s12",
+      "speaker": "elena",
+      "text": "Allí conocí a gente de otras carreras y aprendí a hablar en público sin tanto miedo.",
+      "tokens": [
+        { "t": "Allí", "l": "allí", "p": "ADV", "w": true, "sp": true, "s": 52.237, "e": 52.594 },
+        { "t": "conocí", "l": "conocer", "p": "VERB", "w": true, "sp": true, "s": 52.594, "e": 53.093 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 53.093, "e": 53.236 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 53.235, "e": 53.663 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 53.663, "e": 53.877 },
+        { "t": "otras", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 53.877, "e": 54.305 },
+        { "t": "carreras", "l": "carrera", "p": "NOUN", "w": true, "sp": true, "s": 54.305, "e": 54.947 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 54.947, "e": 55.09 },
+        { "t": "aprendí", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 55.089, "e": 55.659 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 55.66, "e": 55.803 },
+        { "t": "hablar", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 55.802, "e": 56.301 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 56.302, "e": 56.516 },
+        { "t": "público", "l": "público", "p": "ADJ", "w": true, "sp": true, "s": 56.516, "e": 57.086 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 57.086, "e": 57.371 },
+        { "t": "tanto", "l": "tanto", "p": "ADV", "w": true, "sp": true, "s": 57.371, "e": 57.799 },
+        { "t": "miedo", "l": "miedo", "p": "NOUN", "w": true, "s": 57.799, "e": 58.227 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 52.227,
+      "end": 58.303
+    },
+    {
+      "id": "s13",
+      "speaker": "elena",
+      "text": "En los exámenes de enero saqué notas bastante malas, y estuve a punto de abandonar.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 58.563, "e": 58.771 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 58.771, "e": 59.049 },
+        { "t": "exámenes", "l": "examen", "p": "NOUN", "w": true, "sp": true, "s": 59.049, "e": 59.674 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 59.674, "e": 59.882 },
+        { "t": "enero", "l": "enero", "p": "NOUN", "w": true, "sp": true, "s": 59.882, "e": 60.299 },
+        { "t": "saqué", "l": "sacar", "p": "VERB", "w": true, "sp": true, "s": 60.299, "e": 60.716 },
+        { "t": "notas", "l": "notar", "p": "VERB", "w": true, "sp": true, "s": 60.715, "e": 61.132 },
+        { "t": "bastante", "l": "bastante", "p": "ADV", "w": true, "sp": true, "s": 61.132, "e": 61.757 },
+        { "t": "malas", "l": "malo", "p": "ADJ", "w": true, "s": 61.756, "e": 62.173 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 62.323, "e": 62.451 },
+        { "t": "estuve", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 62.451, "e": 62.899 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 62.899, "e": 63.027 },
+        { "t": "punto", "l": "punto", "p": "NOUN", "w": true, "sp": true, "s": 63.027, "e": 63.411 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 63.411, "e": 63.603 },
+        { "t": "abandonar", "l": "abandonar", "p": "VERB", "w": true, "s": 63.603, "e": 64.243 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 58.553,
+      "end": 64.341
+    },
+    {
+      "id": "s14",
+      "speaker": "elena",
+      "text": "Pero hablé con una tutora, que me ayudó a organizar mejor mi tiempo.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 64.591, "e": 64.916 },
+        { "t": "hablé", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 64.916, "e": 65.306 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 65.307, "e": 65.567 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 65.567, "e": 65.827 },
+        { "t": "tutora", "l": "tutora", "p": "NOUN", "w": true, "s": 65.827, "e": 66.283 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 66.283, "e": 66.543 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 66.543, "e": 66.738 },
+        { "t": "ayudó", "l": "ayudar", "p": "VERB", "w": true, "sp": true, "s": 66.738, "e": 67.128 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 67.129, "e": 67.259 },
+        { "t": "organizar", "l": "organizar", "p": "VERB", "w": true, "sp": true, "s": 67.259, "e": 67.91 },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true, "s": 67.91, "e": 68.3 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 68.3, "e": 68.495 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "s": 68.495, "e": 68.951 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 64.591,
+      "end": 69.037
+    },
+    {
+      "id": "s15",
+      "speaker": "elena",
+      "text": "Ahora, al final del curso, he aprobado todas las asignaturas.",
+      "tokens": [
+        { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "s": 69.297, "e": 69.791 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 69.791, "e": 70.038 },
+        { "t": "final", "l": "final", "p": "NOUN", "w": true, "sp": true, "s": 70.038, "e": 70.532 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 70.533, "e": 70.862 },
+        { "t": "curso", "l": "curso", "p": "NOUN", "w": true, "s": 70.862, "e": 71.356 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "he", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 71.356, "e": 71.603 },
+        { "t": "aprobado", "l": "aprobar", "p": "VERB", "w": true, "sp": true, "s": 71.603, "e": 72.344 },
+        { "t": "todas", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 72.345, "e": 72.839 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 72.839, "e": 73.168 },
+        { "t": "asignaturas", "l": "asignatura", "p": "NOUN", "w": true, "s": 73.169, "e": 74.157 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 69.287,
+      "end": 74.213
+    },
+    {
+      "id": "s16",
+      "speaker": "elena",
+      "text": "Mi consejo para los nuevos estudiantes es sencillo: pedid ayuda cuando la necesitéis y no os quedéis solos.",
+      "tokens": [
+        { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 74.473, "e": 74.685 },
+        { "t": "consejo", "l": "consejo", "p": "NOUN", "w": true, "sp": true, "s": 74.685, "e": 75.251 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 75.252, "e": 75.606 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 75.606, "e": 75.889 },
+        { "t": "nuevos", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 75.889, "e": 76.384 },
+        {
+          "t": "estudiantes",
+          "l": "estudiante",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 76.384,
+          "e": 77.233
+        },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 77.234, "e": 77.446 },
+        { "t": "sencillo", "l": "sencillo", "p": "ADJ", "w": true, "s": 77.446, "e": 78.083 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pedid", "l": "pedir", "p": "VERB", "w": true, "sp": true, "s": 78.223, "e": 78.665 },
+        { "t": "ayuda", "l": "ayudar", "p": "VERB", "w": true, "sp": true, "s": 78.665, "e": 79.107 },
+        { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 79.107, "e": 79.622 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 79.622, "e": 79.843 },
+        { "t": "necesitéis", "l": "necesitar", "p": "VERB", "w": true, "sp": true, "s": 79.843, "e": 80.653 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 80.653, "e": 80.8 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 80.8, "e": 81.021 },
+        { "t": "os", "l": "vosotros", "p": "PRON", "w": true, "sp": true, "s": 81.021, "e": 81.242 },
+        { "t": "quedéis", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 81.242, "e": 81.831 },
+        { "t": "solos", "l": "solo", "p": "ADJ", "w": true, "s": 81.831, "e": 82.273 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 74.463,
+      "end": 82.385
+    },
+    {
+      "id": "s17",
+      "speaker": "elena",
+      "text": "Los primeros meses son duros, pero merece la pena.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 82.645, "e": 82.935 },
+        { "t": "primeros", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 82.935, "e": 83.587 },
+        { "t": "meses", "l": "mes", "p": "NOUN", "w": true, "sp": true, "s": 83.587, "e": 84.022 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 84.022, "e": 84.312 },
+        { "t": "duros", "l": "duro", "p": "ADJ", "w": true, "s": 84.311, "e": 84.746 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 84.746, "e": 85.108 },
+        { "t": "merece", "l": "merecer", "p": "VERB", "w": true, "sp": true, "s": 85.108, "e": 85.615 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 85.615, "e": 85.832 },
+        { "t": "pena", "l": "pena", "p": "NOUN", "w": true, "s": 85.833, "e": 86.195 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 82.635,
+      "end": 86.263
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "apuntes",
+      "surface": "apuntes",
+      "pos": "noun",
+      "def_en": "notas que se toman en clase",
+      "def_es": { "en": "class notes", "fr": "notes de cours", "zh": "课堂笔记", "ja": "授業のノート" },
+      "ref": "s8"
+    },
+    {
+      "lemma": "residencia",
+      "surface": "residencia",
+      "pos": "noun",
+      "def_en": "edificio donde viven estudiantes",
+      "def_es": { "en": "hall of residence", "fr": "résidence universitaire", "zh": "学生宿舍", "ja": "学生寮" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "tutor",
+      "surface": "tutora",
+      "pos": "noun",
+      "def_en": "persona que guía y ayuda a un estudiante",
+      "def_es": { "en": "tutor", "fr": "tutrice", "zh": "导师", "ja": "チューター" },
+      "ref": "s14"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿De qué habla Elena?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "Her first year at university." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "De cómo encontró un trabajo nuevo en verano" },
+        { "id": "b", "text": "De cómo le fue al empezar la carrera" },
+        { "id": "c", "text": "De sus vacaciones de verano en Granada" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cómo se sentía al principio?",
+      "evidence": ["s4", "s5"],
+      "rationale_es": { "en": "Alone, missing her family." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Muy contenta y activa" },
+        { "id": "b", "text": "Enfadada con sus profesores" },
+        { "id": "c", "text": "Sola y con nostalgia" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué le ayudó con los estudios?",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "Studying with a classmate." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Estudiar con una compañera" },
+        { "id": "b", "text": "Ir a clases particulares" },
+        { "id": "c", "text": "Grabar las clases en vídeo" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "En los exámenes de enero sacó buenas notas.",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "She got rather bad marks." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué aprendió en el grupo de teatro?",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "To speak in public." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "A escribir poemas de amor" },
+        { "id": "b", "text": "A hablar en público" },
+        { "id": "c", "text": "A cantar canciones en inglés" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s15"],
+      "rationale_es": { "en": "*Aprobar*: to pass." },
+      "type": "gap_fill",
+      "text": "Al final del curso ha {{1}} todas las asignaturas.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["aprobado"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abandonar", "ahora", "algo", "allí", "alumno", "amigo", "aprender", "aprobar", "apuntarse",
+    "asignatura", "aula", "ayudar", "año", "bastante", "biblioteca", "carrera", "clase", "compañero", "con",
+    "conocer", "consejo", "contar", "convertir", "cuando", "curso", "cómo", "de", "desde", "después",
+    "diferente", "duro", "día", "echar", "el", "ella", "en", "enero", "entender", "entonces", "estar",
+    "estudiante", "estudiar", "examen", "familia", "final", "gente", "grupo", "haber", "hablar", "instituto",
+    "junto", "llamarse", "llegar", "malo", "mejor", "menos", "merecer", "mes", "mi", "miedo", "muy",
+    "necesitar", "no", "nosotros", "notar", "nuevo", "organizar", "otro", "para", "parar", "pedir", "pena",
+    "pero", "por", "principio", "profesor", "propio", "proponer", "pueblo", "punto", "público", "que",
+    "quedar", "querer", "residencia", "reunirse", "rápido", "sacar", "se", "semana", "sencillo", "sentir",
+    "ser", "sin", "soler", "solo", "también", "tanto", "teatro", "tiempo", "todo", "tomar", "tutora", "un",
+    "universidad", "vez", "vivir", "vosotros", "y", "yo"
+  ],
+  "difficulty": 1081,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6667, "A2": 0.8229, "B1": 0.9948, "B2": 0.9948, "C1": 0.9948, "C2": 1 },
+    "off_level_lemmas": ["tutora"],
+    "avg_sentence_words": 11.8,
+    "flesch_reading_ease": 76.9,
+    "checked_at": "2026-10-19T07:35:31.655Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-011/v1.m4a",
+    "duration_s": 86.263,
+    "wpm": 139,
+    "provider": "piper",
+    "voices": { "elena": "sharvard-f" },
+    "loudness_lufs": -16,
+    "peaks": [
+      1, 0.84, 0.27, 0.22, 1, 0.88, 0.72, 0.41, 0.92, 0.79, 0.83, 0.62, 0.66, 0.8, 0.87, 0.65, 0.52, 0.41,
+      0.18, 0.98, 0.85, 0.99, 0.8, 0.84, 0.54, 1, 0.5, 0.16, 0.7, 0.97, 0.72, 0.59, 0.6, 0.85, 0.86, 0.87,
+      0.69, 0.63, 1, 0.99, 0.52, 0.64, 0.76, 0.67, 0.66, 0.82, 0.69, 0.03, 0.9, 1, 0.75, 0.55, 0.61, 1, 0.54,
+      0.6, 0.71, 0.83, 0.77, 0.77, 0.09, 0.8, 0.97, 0.94, 0.79, 0.82, 0.74, 1, 0.74, 0.82, 0.47, 0.33, 0.37,
+      0.84, 0.92, 0.63, 0.69, 0.56, 0.93, 0.71, 0.41, 0.66, 0.87, 0.84, 1, 0.69, 0.99, 0.28, 0.94, 0.77, 0.74,
+      1, 0.82, 0.77, 0.69, 0.51, 0.69, 0.76, 0.42, 0.86, 0.82, 0.35, 0.15, 0.73, 0.84, 0.76, 0.8, 1, 0.98,
+      0.64, 0.8, 0.9, 0.52, 0.82, 0.68, 0.61, 0.42, 0.93, 0.95, 0.86, 0.84, 0.62, 0.72, 0.85, 0.89, 0.81, 0.62,
+      0.43, 0.99, 0.65, 1, 0.7, 0.78, 0.51, 0.76, 0.24, 0.96, 0.97, 0.96, 0.56, 0.62, 1, 0.62, 0.5, 0.2, 0.59,
+      0.65, 0.72, 0.6, 0.77, 0.75, 1, 0.7, 0.69, 0.6, 0.8, 0.89, 0.74, 0.58, 0.85, 0.63, 0.51, 0.59, 0.6, 0.78,
+      0.72, 0.79, 0.72, 0.67, 0.76, 0.68, 0.71, 0.62, 0.55, 1, 0.72, 0.76, 0.76, 0.44, 0.91, 1, 0.71, 0.91,
+      0.96, 0.69, 0.7, 0.96, 0.49, 0.76, 0.85, 0.47, 0.3, 0.75, 0.88, 0.51, 0.61, 0.67, 0.62, 0.52, 0.99, 1,
+      0.59, 0.74, 0.58, 0.55, 0.38, 0.2, 0.56, 0.51, 1, 0.6, 0.89, 0.47, 0.84, 0.57, 0.56, 0.37, 0.66, 0.51,
+      0.66, 0.73, 0.66, 0.54, 0.53, 0.46, 0.58, 0.57, 0.47, 0.24, 0.2, 0.53, 0.73, 0.7, 1, 0.69, 0.61, 0.93,
+      0.69, 0.68, 0.5
+    ]
+  }
+}

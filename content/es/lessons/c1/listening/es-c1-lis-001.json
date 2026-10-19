@@ -846,7 +846,7 @@
           "e": 186.353
         },
         { "t": "estar", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 186.353, "e": 186.72 },
-        { "t": "despierto", "l": "despierto", "p": "ADJ", "w": true, "s": 186.72, "e": 187.332 },
+        { "t": "despierto", "l": "despertarse", "p": "VERB", "w": true, "s": 186.72, "e": 187.332 },
         { "t": ".", "l": ".", "p": "PUNCT", "w": false }
       ],
       "start": 179.153,
@@ -1252,7 +1252,7 @@
     "biológico", "breve", "bueno", "básico", "cafeína", "cama", "cambiar", "cansancio", "capacidad", "casi",
     "centro", "cerebro", "ciencia", "cierto", "claro", "clase", "comer", "compensar", "comprobar", "con",
     "concentración", "consejo", "considerar", "contenido", "contrario", "corto", "costar", "creer", "cuerpo",
-    "cuidar", "curioso", "cuánto", "dar", "de", "descansar", "despierto", "deuda", "diferencia", "doctor",
+    "cuidar", "curioso", "cuánto", "dar", "de", "descansar", "despertarse", "deuda", "diferencia", "doctor",
     "dormir", "durante", "durar", "ejercicio", "el", "elegir", "eliminar", "ellos", "embargo", "empeorar",
     "empezar", "en", "engañar", "enorme", "entorno", "entrar", "entre", "error", "ese", "esencial", "estar",
     "este", "esto", "estropearse", "familia", "fin", "forma", "fresco", "frustración", "gente", "gustar",
@@ -1273,11 +1273,11 @@
   ],
   "difficulty": 1430,
   "qa": {
-    "coverage_by_level": { "A1": 0.613, "A2": 0.7261, "B1": 0.8659, "B2": 0.8966, "C1": 1, "C2": 1 },
+    "coverage_by_level": { "A1": 0.6188, "A2": 0.7356, "B1": 0.8793, "B2": 0.9061, "C1": 1, "C2": 1 },
     "off_level_lemmas": [],
     "avg_sentence_words": 9.3,
     "flesch_reading_ease": 75,
-    "checked_at": "2026-10-18T22:29:03.857Z"
+    "checked_at": "2026-10-19T08:13:23.410Z"
   },
   "audio": {
     "src": "audio/c1/es-c1-lis-001/v1.m4a",

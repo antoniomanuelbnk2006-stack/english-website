@@ -1,0 +1,861 @@
+{
+  "id": "es-b2-lis-008",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u05",
+  "series": "es-b2-u05-aprender-a-nadar",
+  "skill": "listening",
+  "genre": "story",
+  "title": "El verano en que aprendí a nadar",
+  "summary_es": {
+    "en": "A man remembers the summer when, at twelve, his grandmother helped him overcome his fear of the sea.",
+    "fr": "Un homme se souvient de l’été où, à douze ans, sa grand-mère l’a aidé à vaincre sa peur de la mer.",
+    "zh": "一位男士回忆十二岁那年夏天，祖母帮他克服了对大海的恐惧。",
+    "ja": "男性が、12歳の夏に祖母のおかげで海への恐怖を克服したことを思い出します。"
+  },
+  "topic": "relationships",
+  "tags": ["recuerdos", "familia", "miedo"],
+  "can_do": ["L-B2-01"],
+  "grammar_focus": ["es.b1.imperfecto-vs-indefinido"],
+  "vocab_focus": ["orilla", "ola", "vergüenza", "paciencia"],
+  "est_minutes": 10,
+  "prediction_prompt": "¿Recuerdas algo que te daba miedo de niño? ¿Cómo lo superaste?",
+  "pre_teach": ["orilla", "flotar"],
+  "speakers": [
+    { "id": "rafael", "name": "Rafael", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 135,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "rafael",
+      "text": "Cuando tenía doce años, todavía no sabía nadar.",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 0.06, "e": 0.603 },
+        { "t": "tenía", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 0.603, "e": 1.069 },
+        { "t": "doce", "l": "doce", "p": "NUM", "w": false, "sp": true, "s": 1.069, "e": 1.457 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 1.457, "e": 1.845 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "todavía", "l": "todavía", "p": "ADV", "w": true, "sp": true, "s": 1.845, "e": 2.466 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 2.466, "e": 2.699 },
+        { "t": "sabía", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 2.699, "e": 3.165 },
+        { "t": "nadar", "l": "nadar", "p": "VERB", "w": true, "s": 3.164, "e": 3.63 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 3.754
+    },
+    {
+      "id": "s2",
+      "speaker": "rafael",
+      "text": "Mis amigos se bañaban en el mar sin problema, y yo me quedaba en la orilla, mirándolos.",
+      "tokens": [
+        { "t": "Mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 4.014, "e": 4.298 },
+        { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true, "sp": true, "s": 4.298, "e": 4.794 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 4.794, "e": 5.007 },
+        { "t": "bañaban", "l": "bañar", "p": "VERB", "w": true, "sp": true, "s": 5.006, "e": 5.573 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 5.574, "e": 5.787 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 5.786, "e": 5.999 },
+        { "t": "mar", "l": "mar", "p": "NOUN", "w": true, "sp": true, "s": 5.999, "e": 6.283 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 6.282, "e": 6.566 },
+        { "t": "problema", "l": "problema", "p": "NOUN", "w": true, "s": 6.566, "e": 7.204 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 7.434, "e": 7.555 },
+        { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 7.555, "e": 7.736 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 7.736, "e": 7.917 },
+        { "t": "quedaba", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 7.917, "e": 8.4 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 8.4, "e": 8.581 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.581, "e": 8.762 },
+        { "t": "orilla", "l": "orilla", "p": "NOUN", "w": true, "s": 8.762, "e": 9.184 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "mirándolos", "l": "mirar", "p": "VERB", "w": true, "s": 9.424, "e": 10.444 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.004,
+      "end": 10.506
+    },
+    {
+      "id": "s3",
+      "speaker": "rafael",
+      "text": "Siempre inventaba una excusa: que el agua estaba fría, que me dolía la cabeza, que acababa de comer.",
+      "tokens": [
+        { "t": "Siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true, "s": 10.766, "e": 11.434 },
+        { "t": "inventaba", "l": "inventar", "p": "VERB", "w": true, "sp": true, "s": 11.434, "e": 12.268 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 12.268, "e": 12.602 },
+        { "t": "excusa", "l": "excusa", "p": "NOUN", "w": true, "s": 12.602, "e": 13.186 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 13.426, "e": 13.678 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 13.678, "e": 13.867 },
+        { "t": "agua", "l": "agua", "p": "NOUN", "w": true, "sp": true, "s": 13.866, "e": 14.181 },
+        { "t": "estaba", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 14.181, "e": 14.621 },
+        { "t": "fría", "l": "frío", "p": "ADJ", "w": true, "s": 14.621, "e": 14.936 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 15.226, "e": 15.492 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 15.492, "e": 15.692 },
+        { "t": "dolía", "l": "doler", "p": "VERB", "w": true, "sp": true, "s": 15.692, "e": 16.091 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 16.091, "e": 16.291 },
+        { "t": "cabeza", "l": "cabeza", "p": "NOUN", "w": true, "s": 16.29, "e": 16.756 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 17.036, "e": 17.261 },
+        { "t": "acababa", "l": "acabar", "p": "VERB", "w": true, "sp": true, "s": 17.261, "e": 17.711 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 17.71, "e": 17.879 },
+        { "t": "comer", "l": "comer", "p": "VERB", "w": true, "s": 17.879, "e": 18.216 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.756,
+      "end": 18.385
+    },
+    {
+      "id": "s4",
+      "speaker": "rafael",
+      "text": "La verdad era que tenía miedo, y me daba muchísima vergüenza reconocerlo.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 18.655, "e": 18.872 },
+        { "t": "verdad", "l": "verdad", "p": "NOUN", "w": true, "sp": true, "s": 18.872, "e": 19.378 },
+        { "t": "era", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 19.378, "e": 19.667 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 19.668, "e": 19.957 },
+        { "t": "tenía", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 19.957, "e": 20.391 },
+        { "t": "miedo", "l": "miedo", "p": "NOUN", "w": true, "s": 20.391, "e": 20.825 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 21.085, "e": 21.243 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 21.243, "e": 21.48 },
+        { "t": "daba", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 21.48, "e": 21.875 },
+        { "t": "muchísima", "l": "muchísimo", "p": "ADJ", "w": true, "sp": true, "s": 21.875, "e": 22.665 },
+        { "t": "vergüenza", "l": "vergüenza", "p": "NOUN", "w": true, "sp": true, "s": 22.666, "e": 23.456 },
+        { "t": "reconocerlo", "l": "reconocer", "p": "VERB", "w": true, "s": 23.456, "e": 24.405 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.635,
+      "end": 24.503
+    },
+    {
+      "id": "s5",
+      "speaker": "rafael",
+      "text": "Ese verano mis padres trabajaban.",
+      "tokens": [
+        { "t": "Ese", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 24.763, "e": 25.068 },
+        { "t": "verano", "l": "verano", "p": "NOUN", "w": true, "sp": true, "s": 25.068, "e": 25.603 },
+        { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 25.603, "e": 25.908 },
+        { "t": "padres", "l": "padre", "p": "NOUN", "w": true, "sp": true, "s": 25.908, "e": 26.443 },
+        { "t": "trabajaban", "l": "trabajar", "p": "VERB", "w": true, "s": 26.443, "e": 27.283 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.753,
+      "end": 27.39
+    },
+    {
+      "id": "s6",
+      "speaker": "rafael",
+      "text": "Por eso me mandaron un mes al pueblo de mi abuela, en la costa de Cádiz.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 27.67, "e": 27.916 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 27.916, "e": 28.162 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 28.163, "e": 28.348 },
+        { "t": "mandaron", "l": "mandar", "p": "VERB", "w": true, "sp": true, "s": 28.348, "e": 28.902 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 28.902, "e": 29.087 },
+        { "t": "mes", "l": "mes", "p": "NOUN", "w": true, "sp": true, "s": 29.087, "e": 29.333 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 29.333, "e": 29.518 },
+        { "t": "pueblo", "l": "pueblo", "p": "NOUN", "w": true, "sp": true, "s": 29.518, "e": 29.949 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 29.949, "e": 30.134 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 30.134, "e": 30.319 },
+        { "t": "abuela", "l": "abuelo", "p": "NOUN", "w": true, "s": 30.319, "e": 30.75 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 30.94, "e": 31.124 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 31.124, "e": 31.308 },
+        { "t": "costa", "l": "costa", "p": "NOUN", "w": true, "sp": true, "s": 31.309, "e": 31.678 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 31.677, "e": 31.861 },
+        { "t": "Cádiz", "l": "cádiz", "p": "PROPN", "w": false, "s": 31.861, "e": 32.23 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 27.64,
+      "end": 32.443
+    },
+    {
+      "id": "s7",
+      "speaker": "rafael",
+      "text": "Mi abuela se llamaba Carmen y tenía setenta años, pero nadaba todas las mañanas.",
+      "tokens": [
+        { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 32.713, "e": 32.964 },
+        { "t": "abuela", "l": "abuelo", "p": "NOUN", "w": true, "sp": true, "s": 32.964, "e": 33.55 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 33.55, "e": 33.801 },
+        { "t": "llamaba", "l": "llamarse", "p": "VERB", "w": true, "sp": true, "s": 33.801, "e": 34.47 },
+        { "t": "Carmen", "l": "carmen", "p": "PROPN", "w": false, "sp": true, "s": 34.47, "e": 35.056 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 35.056, "e": 35.223 },
+        { "t": "tenía", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 35.223, "e": 35.725 },
+        { "t": "setenta", "l": "setenta", "p": "NUM", "w": false, "sp": true, "s": 35.725, "e": 36.394 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 36.395, "e": 36.813 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 37.043, "e": 37.383 },
+        { "t": "nadaba", "l": "nadar", "p": "VERB", "w": true, "sp": true, "s": 37.383, "e": 37.859 },
+        { "t": "todas", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 37.859, "e": 38.267 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 38.267, "e": 38.539 },
+        { "t": "mañanas", "l": "mañana", "p": "NOUN", "w": true, "s": 38.539, "e": 39.083 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.693,
+      "end": 39.137
+    },
+    {
+      "id": "s8",
+      "speaker": "rafael",
+      "text": "El primer día me vio sentado en la arena y no me preguntó nada.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 39.387, "e": 39.601 },
+        { "t": "primer", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 39.601, "e": 40.1 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 40.1, "e": 40.385 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 40.385, "e": 40.599 },
+        { "t": "vio", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 40.599, "e": 40.884 },
+        { "t": "sentado", "l": "sentarse", "p": "VERB", "w": true, "sp": true, "s": 40.884, "e": 41.454 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 41.454, "e": 41.668 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 41.668, "e": 41.882 },
+        { "t": "arena", "l": "arena", "p": "NOUN", "w": true, "sp": true, "s": 41.881, "e": 42.309 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 42.309, "e": 42.452 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 42.452, "e": 42.666 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 42.665, "e": 42.879 },
+        { "t": "preguntó", "l": "preguntar", "p": "VERB", "w": true, "sp": true, "s": 42.879, "e": 43.52 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 43.521, "e": 43.877 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 39.387,
+      "end": 43.954
+    },
+    {
+      "id": "s9",
+      "speaker": "rafael",
+      "text": "Simplemente se sentó a mi lado y me contó que ella tampoco supo nadar hasta los treinta.",
+      "tokens": [
+        {
+          "t": "Simplemente",
+          "l": "simplemente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 44.224,
+          "e": 45.184
+        },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 45.184, "e": 45.424 },
+        { "t": "sentó", "l": "sentarse", "p": "VERB", "w": true, "sp": true, "s": 45.424, "e": 45.904 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 45.904, "e": 46.064 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 46.064, "e": 46.304 },
+        { "t": "lado", "l": "lado", "p": "NOUN", "w": true, "sp": true, "s": 46.304, "e": 46.704 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 46.704, "e": 46.864 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 46.864, "e": 47.104 },
+        { "t": "contó", "l": "contar", "p": "VERB", "w": true, "sp": true, "s": 47.104, "e": 47.584 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 47.584, "e": 47.904 },
+        { "t": "ella", "l": "ella", "p": "PRON", "w": true, "sp": true, "s": 47.904, "e": 48.304 },
+        { "t": "tampoco", "l": "tampoco", "p": "ADV", "w": true, "sp": true, "s": 48.304, "e": 48.944 },
+        { "t": "supo", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 48.944, "e": 49.344 },
+        { "t": "nadar", "l": "nadar", "p": "VERB", "w": true, "sp": true, "s": 49.344, "e": 49.824 },
+        { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 49.824, "e": 50.304 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 50.304, "e": 50.624 },
+        { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "s": 50.624, "e": 51.264 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.204,
+      "end": 51.382
+    },
+    {
+      "id": "s10",
+      "speaker": "rafael",
+      "text": "Me sorprendió muchísimo.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 51.642, "e": 51.887 },
+        { "t": "sorprendió", "l": "sorprender", "p": "VERB", "w": true, "sp": true, "s": 51.887, "e": 52.785 },
+        { "t": "muchísimo", "l": "muchísimo", "p": "ADV", "w": true, "s": 52.785, "e": 53.602 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 51.632,
+      "end": 53.688
+    },
+    {
+      "id": "s11",
+      "speaker": "rafael",
+      "text": "Para mí, mi abuela era la persona más valiente del mundo.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 53.948, "e": 54.292 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "s": 54.292, "e": 54.498 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 54.738, "e": 54.951 },
+        { "t": "abuela", "l": "abuelo", "p": "NOUN", "w": true, "sp": true, "s": 54.951, "e": 55.447 },
+        { "t": "era", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 55.446, "e": 55.729 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 55.73, "e": 55.943 },
+        { "t": "persona", "l": "persona", "p": "NOUN", "w": true, "sp": true, "s": 55.942, "e": 56.509 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 56.509, "e": 56.792 },
+        { "t": "valiente", "l": "valiente", "p": "ADJ", "w": true, "sp": true, "s": 56.792, "e": 57.43 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 57.43, "e": 57.713 },
+        { "t": "mundo", "l": "mundo", "p": "NOUN", "w": true, "s": 57.713, "e": 58.138 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 53.938,
+      "end": 58.216
+    },
+    {
+      "id": "s12",
+      "speaker": "rafael",
+      "text": "A la mañana siguiente me despertó a las siete, cuando la playa estaba vacía.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 58.476, "e": 58.613 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 58.613, "e": 58.818 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 58.818, "e": 59.297 },
+        { "t": "siguiente", "l": "siguiente", "p": "ADJ", "w": true, "sp": true, "s": 59.298, "e": 59.983 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 59.983, "e": 60.188 },
+        { "t": "despertó", "l": "despertarse", "p": "VERB", "w": true, "sp": true, "s": 60.188, "e": 60.804 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 60.804, "e": 60.941 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 60.941, "e": 61.215 },
+        { "t": "siete", "l": "siete", "p": "NUM", "w": false, "s": 61.215, "e": 61.626 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 61.996, "e": 62.459 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 62.459, "e": 62.658 },
+        { "t": "playa", "l": "playa", "p": "NOUN", "w": true, "sp": true, "s": 62.658, "e": 63.055 },
+        { "t": "estaba", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 63.055, "e": 63.518 },
+        { "t": "vacía", "l": "vacío", "p": "ADJ", "w": true, "s": 63.519, "e": 63.916 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 58.466,
+      "end": 64.023
+    },
+    {
+      "id": "s13",
+      "speaker": "rafael",
+      "text": "«Así no te verá nadie», me dijo.",
+      "tokens": [
+        { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+        { "t": "Así", "l": "así", "p": "ADV", "w": true, "sp": true, "s": 64.283, "e": 64.595 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 64.595, "e": 64.829 },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 64.83, "e": 65.064 },
+        { "t": "verá", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 65.064, "e": 65.454 },
+        { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "s": 65.454, "e": 65.923 },
+        { "t": "»", "l": "»", "p": "PUNCT", "w": false },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 66.163, "e": 66.437 },
+        { "t": "dijo", "l": "decir", "p": "VERB", "w": true, "s": 66.437, "e": 66.893 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 64.273,
+      "end": 66.994
+    },
+    {
+      "id": "s14",
+      "speaker": "rafael",
+      "text": "Entramos juntos en el agua, solo hasta las rodillas.",
+      "tokens": [
+        { "t": "Entramos", "l": "entrar", "p": "VERB", "w": true, "sp": true, "s": 67.254, "e": 67.937 },
+        { "t": "juntos", "l": "junto", "p": "ADJ", "w": true, "sp": true, "s": 67.937, "e": 68.468 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 68.469, "e": 68.697 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 68.697, "e": 68.925 },
+        { "t": "agua", "l": "agua", "p": "NOUN", "w": true, "s": 68.924, "e": 69.304 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 69.534, "e": 69.915 },
+        { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 69.915, "e": 70.373 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 70.373, "e": 70.678 },
+        { "t": "rodillas", "l": "rodilla", "p": "NOUN", "w": true, "s": 70.678, "e": 71.364 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 67.244,
+      "end": 71.42
+    },
+    {
+      "id": "s15",
+      "speaker": "rafael",
+      "text": "Durante una semana no hicimos otra cosa.",
+      "tokens": [
+        { "t": "Durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 71.68, "e": 72.386 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 72.386, "e": 72.739 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true, "s": 72.739, "e": 73.357 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 73.357, "e": 73.622 },
+        { "t": "hicimos", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 73.622, "e": 74.328 },
+        { "t": "otra", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 74.328, "e": 74.769 },
+        { "t": "cosa", "l": "cosa", "p": "NOUN", "w": true, "s": 74.769, "e": 75.21 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 71.67,
+      "end": 75.303
+    },
+    {
+      "id": "s16",
+      "speaker": "rafael",
+      "text": "Cada día avanzábamos un poco más.",
+      "tokens": [
+        { "t": "Cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 75.563, "e": 75.937 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 75.937, "e": 76.236 },
+        { "t": "avanzábamos", "l": "avanzar", "p": "VERB", "w": true, "sp": true, "s": 76.237, "e": 77.135 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 77.135, "e": 77.36 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 77.359, "e": 77.733 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "s": 77.734, "e": 78.033 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 75.553,
+      "end": 78.154
+    },
+    {
+      "id": "s17",
+      "speaker": "rafael",
+      "text": "Ella nunca me empujaba ni me obligaba; tenía una paciencia infinita.",
+      "tokens": [
+        { "t": "Ella", "l": "ella", "p": "PRON", "w": true, "sp": true, "s": 78.414, "e": 78.742 },
+        { "t": "nunca", "l": "nunca", "p": "ADV", "w": true, "sp": true, "s": 78.742, "e": 79.135 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 79.135, "e": 79.332 },
+        { "t": "empujaba", "l": "empujar", "p": "VERB", "w": true, "sp": true, "s": 79.331, "e": 79.921 },
+        { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true, "s": 79.921, "e": 80.118 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 80.118, "e": 80.315 },
+        { "t": "obligaba", "l": "obligar", "p": "VERB", "w": true, "s": 80.314, "e": 80.904 },
+        { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "tenía", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 81.184, "e": 81.635 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 81.635, "e": 81.936 },
+        { "t": "paciencia", "l": "paciencia", "p": "NOUN", "w": true, "sp": true, "s": 81.936, "e": 82.688 },
+        { "t": "infinita", "l": "infinito", "p": "ADJ", "w": true, "s": 82.687, "e": 83.364 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 78.404,
+      "end": 83.48
+    },
+    {
+      "id": "s18",
+      "speaker": "rafael",
+      "text": "Después me enseñó a flotar boca arriba.",
+      "tokens": [
+        { "t": "Después", "l": "después", "p": "ADV", "w": true, "sp": true, "s": 83.75, "e": 84.361 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 84.361, "e": 84.59 },
+        { "t": "enseñó", "l": "enseñar", "p": "VERB", "w": true, "sp": true, "s": 84.591, "e": 85.126 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 85.125, "e": 85.278 },
+        { "t": "flotar", "l": "flotar", "p": "VERB", "w": true, "sp": true, "s": 85.278, "e": 85.813 },
+        { "t": "boca", "l": "boca", "p": "NOUN", "w": true, "sp": true, "s": 85.813, "e": 86.195 },
+        { "t": "arriba", "l": "arriba", "p": "ADV", "w": true, "s": 86.195, "e": 86.73 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 83.73,
+      "end": 86.827
+    },
+    {
+      "id": "s19",
+      "speaker": "rafael",
+      "text": "Recuerdo el cielo azul, el ruido de las olas y su mano debajo de mi espalda.",
+      "tokens": [
+        { "t": "Recuerdo", "l": "recordar", "p": "VERB", "w": true, "sp": true, "s": 87.097, "e": 87.762 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 87.762, "e": 87.984 },
+        { "t": "cielo", "l": "cielo", "p": "NOUN", "w": true, "sp": true, "s": 87.984, "e": 88.427 },
+        { "t": "azul", "l": "azul", "p": "ADJ", "w": true, "s": 88.427, "e": 88.797 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 89.217, "e": 89.442 },
+        { "t": "ruido", "l": "ruido", "p": "NOUN", "w": true, "sp": true, "s": 89.442, "e": 89.892 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 89.892, "e": 90.117 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 90.117, "e": 90.417 },
+        { "t": "olas", "l": "oler", "p": "VERB", "w": true, "sp": true, "s": 90.417, "e": 90.792 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 90.792, "e": 90.942 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 90.942, "e": 91.167 },
+        { "t": "mano", "l": "mano", "p": "NOUN", "w": true, "sp": true, "s": 91.167, "e": 91.542 },
+        { "t": "debajo", "l": "debajo", "p": "ADV", "w": true, "sp": true, "s": 91.542, "e": 92.067 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 92.067, "e": 92.292 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 92.292, "e": 92.517 },
+        { "t": "espalda", "l": "espalda", "p": "NOUN", "w": true, "s": 92.517, "e": 93.117 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 87.077,
+      "end": 93.247
+    },
+    {
+      "id": "s20",
+      "speaker": "rafael",
+      "text": "Un día, sin decírmelo, retiró la mano.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 93.497, "e": 93.75 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "s": 93.75, "e": 94.087 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 94.267, "e": 94.621 },
+        { "t": "decírmelo", "l": "decir", "p": "VERB", "w": true, "s": 94.621, "e": 95.507 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "retiró", "l": "retirar", "p": "VERB", "w": true, "sp": true, "s": 95.717, "e": 96.249 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 96.249, "e": 96.477 },
+        { "t": "mano", "l": "mano", "p": "NOUN", "w": true, "s": 96.477, "e": 96.857 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 93.497,
+      "end": 96.953
+    },
+    {
+      "id": "s21",
+      "speaker": "rafael",
+      "text": "Cuando me di cuenta, llevaba casi un minuto flotando solo.",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 97.253, "e": 97.75 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 97.75, "e": 97.963 },
+        { "t": "di", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 97.963, "e": 98.176 },
+        { "t": "cuenta", "l": "contar", "p": "VERB", "w": true, "s": 98.176, "e": 98.673 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "llevaba", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 98.893, "e": 99.472 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 99.472, "e": 99.834 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 99.835, "e": 100.052 },
+        { "t": "minuto", "l": "minuto", "p": "NOUN", "w": true, "sp": true, "s": 100.052, "e": 100.559 },
+        { "t": "flotando", "l": "flotar", "p": "VERB", "w": true, "sp": true, "s": 100.559, "e": 101.211 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "s": 101.211, "e": 101.573 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 97.203,
+      "end": 101.645
+    },
+    {
+      "id": "s22",
+      "speaker": "rafael",
+      "text": "Grité de alegría y tragué un montón de agua salada.",
+      "tokens": [
+        { "t": "Grité", "l": "gritar", "p": "VERB", "w": true, "sp": true, "s": 101.905, "e": 102.399 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 102.399, "e": 102.646 },
+        { "t": "alegría", "l": "alegría", "p": "NOUN", "w": true, "sp": true, "s": 102.646, "e": 103.305 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 103.305, "e": 103.47 },
+        { "t": "tragué", "l": "tragar", "p": "VERB", "w": true, "sp": true, "s": 103.47, "e": 104.046 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 104.046, "e": 104.293 },
+        { "t": "montón", "l": "montón", "p": "NOUN", "w": true, "sp": true, "s": 104.293, "e": 104.869 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 104.87, "e": 105.117 },
+        { "t": "agua", "l": "agua", "p": "NOUN", "w": true, "sp": true, "s": 105.117, "e": 105.529 },
+        { "t": "salada", "l": "salado", "p": "ADJ", "w": true, "s": 105.529, "e": 106.105 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 101.895,
+      "end": 106.25
+    },
+    {
+      "id": "s23",
+      "speaker": "rafael",
+      "text": "Al final del mes ya era capaz de nadar hasta las rocas y volver.",
+      "tokens": [
+        { "t": "Al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 106.51, "e": 106.735 },
+        { "t": "final", "l": "final", "p": "NOUN", "w": true, "sp": true, "s": 106.735, "e": 107.186 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 107.186, "e": 107.487 },
+        { "t": "mes", "l": "mes", "p": "NOUN", "w": true, "sp": true, "s": 107.487, "e": 107.788 },
+        { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 107.788, "e": 108.013 },
+        { "t": "era", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 108.013, "e": 108.314 },
+        { "t": "capaz", "l": "capaz", "p": "ADJ", "w": true, "sp": true, "s": 108.314, "e": 108.765 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 108.765, "e": 108.99 },
+        { "t": "nadar", "l": "nadar", "p": "VERB", "w": true, "sp": true, "s": 108.99, "e": 109.441 },
+        { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 109.441, "e": 109.892 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 109.892, "e": 110.193 },
+        { "t": "rocas", "l": "roca", "p": "NOUN", "w": true, "sp": true, "s": 110.193, "e": 110.644 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 110.644, "e": 110.794 },
+        { "t": "volver", "l": "volver", "p": "VERB", "w": true, "s": 110.794, "e": 111.32 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 106.5,
+      "end": 111.414
+    },
+    {
+      "id": "s24",
+      "speaker": "rafael",
+      "text": "Cuando regresé a casa, lo primero que hice fue ir a la piscina con mis amigos.",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 111.704, "e": 112.2 },
+        { "t": "regresé", "l": "regresar", "p": "VERB", "w": true, "sp": true, "s": 112.2, "e": 112.767 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 112.768, "e": 112.91 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 112.909, "e": 113.264 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 113.534, "e": 113.741 },
+        { "t": "primero", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 113.741, "e": 114.292 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 114.292, "e": 114.568 },
+        { "t": "hice", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 114.568, "e": 114.913 },
+        { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 114.912, "e": 115.188 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 115.188, "e": 115.395 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 115.395, "e": 115.533 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 115.532, "e": 115.739 },
+        { "t": "piscina", "l": "piscina", "p": "NOUN", "w": true, "sp": true, "s": 115.739, "e": 116.29 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 116.29, "e": 116.566 },
+        { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 116.566, "e": 116.842 },
+        { "t": "amigos", "l": "amigo", "p": "NOUN", "w": true, "s": 116.842, "e": 117.324 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 111.664,
+      "end": 117.386
+    },
+    {
+      "id": "s25",
+      "speaker": "rafael",
+      "text": "Nadie se creía que había aprendido en tan poco tiempo.",
+      "tokens": [
+        { "t": "Nadie", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 117.646, "e": 118.074 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 118.074, "e": 118.288 },
+        { "t": "creía", "l": "creer", "p": "VERB", "w": true, "sp": true, "s": 118.288, "e": 118.716 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 118.715, "e": 119 },
+        { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 119.001, "e": 119.429 },
+        { "t": "aprendido", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 119.428, "e": 120.141 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 120.141, "e": 120.355 },
+        { "t": "tan", "l": "tan", "p": "ADV", "w": true, "sp": true, "s": 120.355, "e": 120.64 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 120.64, "e": 120.996 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "s": 120.997, "e": 121.496 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 117.636,
+      "end": 121.602
+    },
+    {
+      "id": "s26",
+      "speaker": "rafael",
+      "text": "Mi abuela murió hace unos años.",
+      "tokens": [
+        { "t": "Mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 121.862, "e": 122.109 },
+        { "t": "abuela", "l": "abuelo", "p": "NOUN", "w": true, "sp": true, "s": 122.109, "e": 122.685 },
+        { "t": "murió", "l": "morir", "p": "VERB", "w": true, "sp": true, "s": 122.685, "e": 123.179 },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 123.178, "e": 123.589 },
+        { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true, "s": 123.589, "e": 124 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 124.001, "e": 124.412 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 121.852,
+      "end": 124.482
+    },
+    {
+      "id": "s27",
+      "speaker": "rafael",
+      "text": "Hoy, cada vez que me baño en el mar, me acuerdo de ella.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "s": 124.742, "e": 125.112 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 125.352, "e": 125.652 },
+        { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 125.652, "e": 125.892 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 125.892, "e": 126.132 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 126.132, "e": 126.312 },
+        { "t": "baño", "l": "bañar", "p": "VERB", "w": true, "sp": true, "s": 126.312, "e": 126.612 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 126.612, "e": 126.792 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 126.792, "e": 126.972 },
+        { "t": "mar", "l": "mar", "p": "NOUN", "w": true, "s": 126.972, "e": 127.212 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 127.442, "e": 127.647 },
+        { "t": "acuerdo", "l": "acuerdo", "p": "NOUN", "w": true, "sp": true, "s": 127.647, "e": 128.194 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 128.195, "e": 128.4 },
+        { "t": "ella", "l": "ella", "p": "PRON", "w": true, "s": 128.4, "e": 128.742 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 124.732,
+      "end": 128.88
+    },
+    {
+      "id": "s28",
+      "speaker": "rafael",
+      "text": "Me enseñó a nadar.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 129.14, "e": 129.37 },
+        { "t": "enseñó", "l": "enseñar", "p": "VERB", "w": true, "sp": true, "s": 129.37, "e": 129.907 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 129.907, "e": 130.06 },
+        { "t": "nadar", "l": "nadar", "p": "VERB", "w": true, "s": 130.06, "e": 130.52 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 129.13,
+      "end": 130.638
+    },
+    {
+      "id": "s29",
+      "speaker": "rafael",
+      "text": "Pero, sobre todo, me enseñó que el miedo se vence poco a poco y con alguien que confía en ti.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "s": 130.898, "e": 131.248 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 131.438, "e": 131.918 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "s": 131.918, "e": 132.318 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 132.558, "e": 132.773 },
+        { "t": "enseñó", "l": "enseñar", "p": "VERB", "w": true, "sp": true, "s": 132.773, "e": 133.275 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 133.275, "e": 133.562 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 133.562, "e": 133.777 },
+        { "t": "miedo", "l": "miedo", "p": "NOUN", "w": true, "sp": true, "s": 133.777, "e": 134.207 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 134.208, "e": 134.423 },
+        { "t": "vence", "l": "vencer", "p": "VERB", "w": true, "sp": true, "s": 134.423, "e": 134.853 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 134.853, "e": 135.212 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 135.212, "e": 135.355 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 135.356, "e": 135.715 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 135.714, "e": 135.857 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 135.858, "e": 136.145 },
+        { "t": "alguien", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 136.145, "e": 136.719 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 136.719, "e": 137.006 },
+        { "t": "confía", "l": "confiar", "p": "VERB", "w": true, "sp": true, "s": 137.005, "e": 137.507 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 137.508, "e": 137.723 },
+        { "t": "ti", "l": "tú", "p": "PRON", "w": true, "s": 137.723, "e": 137.938 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 130.888,
+      "end": 138.078
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "orilla",
+      "surface": "orilla",
+      "pos": "noun",
+      "def_en": "borde del mar, de un río o de un lago",
+      "def_es": { "en": "shore", "fr": "rivage, bord", "zh": "岸边", "ja": "岸" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "flotar",
+      "surface": "flotar",
+      "pos": "verb",
+      "def_en": "mantenerse en la superficie del agua",
+      "def_es": { "en": "to float", "fr": "flotter", "zh": "漂浮", "ja": "浮く" },
+      "ref": "s18"
+    },
+    {
+      "lemma": "tragar",
+      "surface": "tragué",
+      "pos": "verb",
+      "def_en": "hacer pasar algo de la boca al estómago",
+      "def_es": { "en": "to swallow", "fr": "avaler", "zh": "吞下", "ja": "飲み込む" },
+      "ref": "s22"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué cuenta Rafael?",
+      "evidence": ["s29"],
+      "rationale_es": { "en": "How his grandmother helped him overcome his fear." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cómo ganó una carrera de natación cuando tenía doce años" },
+        { "id": "b", "text": "Cómo superó su miedo al agua gracias a su abuela" },
+        { "id": "c", "text": "Cómo se perdió un verano entero en la costa de Cádiz" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué hacía Rafael cuando sus amigos se bañaban?",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "He made excuses and stayed on the shore." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Nadaba hasta las rocas con ellos" },
+        { "id": "b", "text": "Les esperaba jugando al fútbol" },
+        { "id": "c", "text": "Ponía excusas y no entraba" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué le contó la abuela el primer día?",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "She did not learn until she was thirty." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que aprendió a nadar ya de adulta" },
+        { "id": "b", "text": "Que el mar estaba demasiado frío para bañarse" },
+        { "id": "c", "text": "Que sus padres vendrían a buscarlo pronto" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Por qué iban a la playa a las siete?",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "So no one would see him." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque después hacía muchísimo calor en la playa" },
+        { "id": "b", "text": "Para que nadie lo viera practicar" },
+        { "id": "c", "text": "Porque la abuela trabajaba luego en el pueblo" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "La abuela le obligaba a entrar en el agua aunque él no quisiera.",
+      "evidence": ["s17"],
+      "rationale_es": { "en": "She never pushed or forced him." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Qué siente Rafael hoy por su abuela?",
+      "evidence": ["s27"],
+      "rationale_es": { "en": "He remembers her with affection." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Enfado porque lo obligó" },
+        { "id": "b", "text": "Indiferencia total hacia ella" },
+        { "id": "c", "text": "Cariño y agradecimiento" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s17"],
+      "rationale_es": { "en": "*Paciencia*: patience." },
+      "type": "gap_fill",
+      "text": "La abuela tenía una {{1}} infinita.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["paciencia"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abuelo", "acabar", "acuerdo", "agua", "alegría", "algo", "amigo", "aprender", "arena", "arriba",
+    "así", "avanzar", "azul", "año", "bañar", "boca", "cabeza", "cada", "capaz", "casa", "casi", "cielo",
+    "comer", "con", "confiar", "contar", "cosa", "costa", "creer", "cuando", "dar", "de", "debajo", "decir",
+    "despertarse", "después", "doler", "durante", "día", "el", "ella", "empujar", "en", "enseñar", "entrar",
+    "ese", "espalda", "estar", "esto", "excusa", "final", "flotar", "frío", "gritar", "haber", "hacer",
+    "hasta", "hoy", "infinito", "inventar", "ir", "junto", "lado", "llamarse", "llevar", "mandar", "mano",
+    "mar", "mañana", "mes", "mi", "miedo", "minuto", "mirar", "montón", "morir", "muchísimo", "mundo", "más",
+    "nadar", "ni", "no", "nunca", "obligar", "oler", "orilla", "otro", "paciencia", "padre", "para", "pero",
+    "persona", "piscina", "playa", "poco", "por", "preguntar", "problema", "pueblo", "que", "quedar",
+    "reconocer", "recordar", "regresar", "retirar", "roca", "rodilla", "ruido", "saber", "salado", "se",
+    "semana", "sentarse", "ser", "siempre", "siguiente", "simplemente", "sin", "sobre", "solo", "sorprender",
+    "su", "tampoco", "tan", "tener", "tiempo", "todavía", "todo", "trabajar", "tragar", "tú", "un", "vacío",
+    "valiente", "vencer", "ver", "verano", "verdad", "vergüenza", "vez", "volver", "y", "ya", "yo", "él"
+  ],
+  "difficulty": 1251,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6529, "A2": 0.8376, "B1": 0.9586, "B2": 0.9968, "C1": 0.9968, "C2": 1 },
+    "off_level_lemmas": ["orilla"],
+    "avg_sentence_words": 11.1,
+    "flesch_reading_ease": 83.3,
+    "checked_at": "2026-10-19T07:42:35.028Z"
+  },
+  "audio": {
+    "src": "audio/b2/es-b2-lis-008/v1.m4a",
+    "duration_s": 138.078,
+    "wpm": 140,
+    "provider": "piper",
+    "voices": { "rafael": "sharvard-m" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      0.92, 0.99, 1, 0.93, 0.84, 0.96, 0.76, 0.84, 0.77, 0.85, 1, 0.79, 0.82, 0.93, 0.78, 0.96, 0.56, 0.97,
+      0.5, 0.89, 0.77, 0.98, 0.54, 0.91, 0.84, 0.54, 0.65, 1, 0.8, 0.87, 0.84, 0.44, 1, 0.9, 0.8, 0.74, 0.46,
+      0.72, 0.5, 0.75, 0.77, 0.62, 0.11, 0.64, 0.85, 1, 0.71, 0.17, 0.79, 1, 0.69, 0.9, 0.77, 0.82, 0.93, 0.65,
+      0.22, 0.73, 0.56, 1, 0.53, 0.46, 0.53, 0.59, 0.52, 0.74, 0.64, 0.42, 0.59, 0.96, 0.93, 0.84, 1, 0.86,
+      0.69, 0.8, 0.3, 0.8, 0.47, 0.33, 1, 0.56, 0.39, 0.81, 0.62, 0.86, 0.68, 0.45, 0.63, 0.59, 0.7, 1, 0.64,
+      1, 0.82, 0.7, 0.85, 0.57, 0.87, 0.74, 0.33, 0.88, 0.89, 0.54, 0.54, 0.65, 0.6, 0.82, 1, 0.66, 0.61, 0.75,
+      0.95, 1, 0.71, 0.74, 0.42, 1, 0.41, 0.72, 0.53, 0.56, 0.64, 0.3, 0.41, 1, 0.85, 0.6, 0.58, 0.79, 0.35, 1,
+      0.64, 0.58, 0.51, 0.39, 0.84, 0.64, 1, 0.6, 0.79, 0.66, 0.88, 0.59, 0.34, 0.4, 0.69, 0.44, 0.97, 1, 0.46,
+      0.44, 1, 0.65, 0.61, 0.8, 0.65, 0.52, 0.75, 0.62, 0.44, 0.82, 0.62, 0.62, 0.63, 0.98, 0.38, 1, 0.16,
+      0.99, 0.93, 0.85, 1, 0.75, 0.69, 0.92, 0.7, 0.89, 1, 0.65, 0.74, 0.68, 0.75, 0.88, 0.54, 1, 0.88, 0.82,
+      0.88, 0.78, 0.82, 0.9, 0.56, 0.42, 0.73, 0.97, 0.94, 0.56, 0.77, 0.83, 1, 0.76, 0.67, 0.43, 1, 0.8, 0.57,
+      0.81, 0.6, 0.57, 0.46, 0.29, 0.79, 0.86, 1, 0.69, 0.44, 0.77, 1, 0.77, 0.68, 0.7, 0.66, 0.38, 0.81, 0.83,
+      1, 1, 0.63, 0.64, 0.58, 0.58, 0.7, 0.6, 0.72, 0.64, 0.89, 0.81, 0.71, 0.38
+    ]
+  }
+}

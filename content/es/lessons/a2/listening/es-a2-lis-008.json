@@ -1,0 +1,399 @@
+{
+  "id": "es-a2-lis-008",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u04",
+  "series": "es-a2-u04-cita-medico",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Una cita con el médico",
+  "summary_es": {
+    "en": "A man phones the health centre to make an appointment.",
+    "fr": "Un homme appelle le centre de santé pour prendre rendez-vous.",
+    "zh": "一位男士打电话给医疗中心预约。",
+    "ja": "男性が診療所に電話して予約を取ります。"
+  },
+  "topic": "daily-life",
+  "tags": ["cita", "teléfono", "salud"],
+  "can_do": ["L-A2-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["cita", "consulta", "lunes", "martes"],
+  "est_minutes": 6,
+  "prediction_prompt": "Llamas para pedir una cita. ¿Qué información das?",
+  "pre_teach": ["consulta", "recepcionista"],
+  "speakers": [
+    { "id": "marta", "name": "Marta", "accent": "es-ES", "gender": "female" },
+    { "id": "luis", "name": "Luis", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 110,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "marta",
+      "text": "Centro de salud, buenos días.",
+      "tokens": [
+        { "t": "Centro", "l": "centro", "p": "NOUN", "w": true, "sp": true, "s": 0.07, "e": 0.538 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 0.538, "e": 0.739 },
+        { "t": "salud", "l": "salud", "p": "NOUN", "w": true, "s": 0.739, "e": 1.14 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 1.31, "e": 1.963 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 1.963, "e": 2.43 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.48
+    },
+    {
+      "id": "s2",
+      "speaker": "luis",
+      "text": "Buenos días. Quiero pedir una cita con el médico.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 3.19, "e": 3.715 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 3.715, "e": 4.09 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 4.64, "e": 5.054 },
+        { "t": "pedir", "l": "pedir", "p": "VERB", "w": true, "sp": true, "s": 5.054, "e": 5.409 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 5.409, "e": 5.646 },
+        { "t": "cita", "l": "cita", "p": "NOUN", "w": true, "sp": true, "s": 5.646, "e": 5.942 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 5.942, "e": 6.179 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 6.178, "e": 6.356 },
+        { "t": "médico", "l": "médico", "p": "NOUN", "w": true, "s": 6.356, "e": 6.77 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.18,
+      "end": 6.846
+    },
+    {
+      "id": "s3",
+      "speaker": "marta",
+      "text": "¿Para qué día?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 7.556, "e": 7.879 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 7.879, "e": 8.137 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "s": 8.138, "e": 8.396 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.546,
+      "end": 8.521
+    },
+    {
+      "id": "s4",
+      "speaker": "luis",
+      "text": "Para esta semana, si es posible.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 9.221, "e": 9.547 },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 9.547, "e": 9.873 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "s": 9.873, "e": 10.329 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 10.329, "e": 10.524 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 10.524, "e": 10.719 },
+        { "t": "posible", "l": "posible", "p": "ADJ", "w": true, "s": 10.72, "e": 11.241 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.221,
+      "end": 11.318
+    },
+    {
+      "id": "s5",
+      "speaker": "marta",
+      "text": "El lunes no hay citas. ¿Le va bien el martes?",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 12.028, "e": 12.298 },
+        { "t": "lunes", "l": "lunes", "p": "NOUN", "w": true, "sp": true, "s": 12.298, "e": 12.838 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 12.838, "e": 13.108 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 13.108, "e": 13.468 },
+        { "t": "citas", "l": "cita", "p": "NOUN", "w": true, "s": 13.468, "e": 14.008 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 14.248, "e": 14.494 },
+        { "t": "va", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 14.494, "e": 14.74 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true, "s": 14.739, "e": 15.149 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 15.149, "e": 15.395 },
+        { "t": "martes", "l": "martes", "p": "NOUN", "w": true, "s": 15.395, "e": 15.968 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.018,
+      "end": 16.018
+    },
+    {
+      "id": "s6",
+      "speaker": "luis",
+      "text": "Sí, el martes puedo.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 16.718, "e": 16.931 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 16.931, "e": 17.144 },
+        { "t": "martes", "l": "martes", "p": "NOUN", "w": true, "sp": true, "s": 17.144, "e": 17.641 },
+        { "t": "puedo", "l": "poder", "p": "VERB", "w": true, "s": 17.642, "e": 18.068 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.718,
+      "end": 18.149
+    },
+    {
+      "id": "s7",
+      "speaker": "marta",
+      "text": "Hay una cita a las diez o a las cuatro.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 18.859, "e": 19.136 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 19.136, "e": 19.413 },
+        { "t": "cita", "l": "cita", "p": "NOUN", "w": true, "sp": true, "s": 19.413, "e": 19.759 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 19.759, "e": 19.897 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 19.897, "e": 20.174 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true, "s": 20.174, "e": 20.52 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 20.521, "e": 20.659 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 20.659, "e": 20.797 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 20.797, "e": 21.074 },
+        { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "s": 21.074, "e": 21.559 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.849,
+      "end": 21.635
+    },
+    {
+      "id": "s8",
+      "speaker": "luis",
+      "text": "Prefiero por la tarde, a las cuatro.",
+      "tokens": [
+        { "t": "Prefiero", "l": "preferir", "p": "VERB", "w": true, "sp": true, "s": 22.355, "e": 22.921 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 22.921, "e": 23.172 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 23.172, "e": 23.361 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "s": 23.361, "e": 23.738 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 23.738, "e": 23.864 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 23.864, "e": 24.115 },
+        { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "s": 24.115, "e": 24.555 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.335,
+      "end": 24.631
+    },
+    {
+      "id": "s9",
+      "speaker": "marta",
+      "text": "Muy bien. ¿Su nombre?",
+      "tokens": [
+        { "t": "Muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 25.341, "e": 25.63 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 25.63, "e": 25.991 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 26.281, "e": 26.515 },
+        { "t": "nombre", "l": "nombre", "p": "NOUN", "w": true, "s": 26.515, "e": 27.061 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.331,
+      "end": 27.173
+    },
+    {
+      "id": "s10",
+      "speaker": "luis",
+      "text": "Luis Ortega.",
+      "tokens": [
+        { "t": "Luis", "l": "luis", "p": "PROPN", "w": false, "sp": true, "s": 27.91, "e": 28.323 },
+        { "t": "Ortega", "l": "ortega", "p": "PROPN", "w": false, "s": 28.323, "e": 28.901 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 27.873,
+      "end": 29.013
+    },
+    {
+      "id": "s11",
+      "speaker": "marta",
+      "text": "Perfecto. El martes a las cuatro. Llegue diez minutos antes.",
+      "tokens": [
+        { "t": "Perfecto", "l": "perfecto", "p": "ADJ", "w": true, "s": 29.723, "e": 30.573 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 30.833, "e": 31.077 },
+        { "t": "martes", "l": "martes", "p": "NOUN", "w": true, "sp": true, "s": 31.077, "e": 31.646 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 31.646, "e": 31.809 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 31.809, "e": 32.134 },
+        { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "s": 32.134, "e": 32.703 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Llegue", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 32.953, "e": 33.54 },
+        { "t": "diez", "l": "diez", "p": "NUM", "w": false, "sp": true, "s": 33.54, "e": 33.959 },
+        { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true, "sp": true, "s": 33.959, "e": 34.63 },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "s": 34.63, "e": 35.133 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 29.713,
+      "end": 35.192
+    },
+    {
+      "id": "s12",
+      "speaker": "luis",
+      "text": "Gracias. Hasta el martes.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 35.918, "e": 36.678 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 37.228, "e": 37.596 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 37.596, "e": 37.78 },
+        { "t": "martes", "l": "martes", "p": "NOUN", "w": true, "s": 37.779, "e": 38.208 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.892,
+      "end": 38.276
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "cita",
+      "surface": "cita",
+      "pos": "noun",
+      "def_en": "hora fijada para ver a alguien",
+      "def_es": { "en": "appointment", "fr": "rendez-vous", "zh": "预约", "ja": "予約" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "pedir cita",
+      "surface": "pedir una cita",
+      "pos": "phrase",
+      "def_en": "reservar una hora con el médico",
+      "def_es": { "en": "to make an appointment", "fr": "prendre rendez-vous", "zh": "预约", "ja": "予約を取る" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "antes",
+      "surface": "antes",
+      "pos": "adverb",
+      "def_en": "en un momento anterior",
+      "def_es": { "en": "before", "fr": "avant", "zh": "之前", "ja": "前に" },
+      "ref": "s11"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Para qué llama Luis?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "To make an appointment." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para cambiar la dirección de su casa en el barrio" },
+        { "id": "b", "text": "Para reservar hora con el doctor" },
+        { "id": "c", "text": "Para comprar unas pastillas en la farmacia" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué día no hay citas?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "There are none on Monday." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "El martes" },
+        { "id": "b", "text": "El viernes" },
+        { "id": "c", "text": "El lunes" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿A qué hora será la cita?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "At four." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "A las cuatro" },
+        { "id": "b", "text": "A las diez" },
+        { "id": "c", "text": "A las ocho y media" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Luis prefiere ir por la mañana.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "He prefers the afternoon." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "*Diez minutos antes*." },
+      "type": "gap_fill",
+      "text": "Marta le dice que llegue diez {{1}} antes.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["minutos"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Cómo se despide Luis?",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "See you on Tuesday." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Buenas noches" },
+        { "id": "b", "text": "Hasta el martes" },
+        { "id": "c", "text": "Hasta luego, amigo" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "antes", "bien", "bueno", "centro", "cita", "con", "de", "día", "el", "este", "haber", "hasta", "ir",
+    "llegar", "lunes", "martes", "minuto", "muy", "médico", "no", "nombre", "o", "para", "pedir", "perfecto",
+    "poder", "por", "posible", "preferir", "querer", "qué", "salud", "semana", "ser", "si", "su", "tarde",
+    "un", "él"
+  ],
+  "difficulty": 872,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7846, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 4.1,
+    "flesch_reading_ease": 105.3,
+    "checked_at": "2026-10-18T23:12:58.318Z"
+  },
+  "audio": {
+    "src": "audio/a2/es-a2-lis-008/v1.m4a",
+    "duration_s": 38.276,
+    "wpm": 116,
+    "provider": "piper",
+    "voices": { "marta": "sharvard-f", "luis": "davefx-m" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      0.61, 0.78, 1, 0.95, 0.55, 0.57, 0.48, 0.08, 0.68, 0.81, 0.92, 0.55, 0.44, 0.25, 0.2, 0.08, 0, 0, 0,
+      0.01, 1, 0.81, 0.75, 0.62, 0.13, 0.17, 0.01, 0, 0, 1, 0.97, 0.89, 0.87, 0.86, 0.72, 0.98, 0.99, 0.65,
+      0.3, 0.73, 0.32, 0.16, 0.22, 0, 0, 0, 0, 0.84, 1, 0.74, 0.72, 0.69, 0.3, 0.01, 0, 0, 0, 0.75, 1, 0.93,
+      0.92, 0.63, 0.67, 0.51, 0.24, 0.99, 0.85, 0.78, 0.59, 0.38, 0.38, 0, 0, 0, 0, 0.52, 0.62, 0.88, 0.92,
+      0.66, 0.53, 0.82, 1, 0.56, 0.46, 0.23, 0.14, 0.15, 0.01, 0.53, 0.69, 1, 0.5, 0.53, 0.45, 0.56, 0.27,
+      0.28, 0.15, 0.14, 0.1, 0, 0, 0, 0.43, 1, 0.63, 0.9, 0.98, 1, 0.49, 0.4, 0.27, 0.17, 0, 0, 0, 0, 0.77,
+      0.78, 1, 0.86, 0.57, 0.63, 0.68, 0.75, 0.54, 0.87, 0.62, 0.76, 0.62, 0.16, 0.89, 0.28, 0.23, 0.05, 0, 0,
+      0, 0, 1, 0.99, 0.93, 0.81, 0.78, 0.58, 1, 0.49, 0.83, 0.88, 0.89, 0.75, 0.61, 0.33, 0.03, 0, 0, 0, 0.22,
+      1, 0.76, 0.86, 0.44, 0.02, 0.22, 0.5, 1, 0.72, 0.38, 0.21, 0.01, 0, 0, 0, 0.02, 1, 0.99, 0.97, 0.35, 0.9,
+      0.54, 0.08, 0, 0, 0, 0, 1, 0.28, 0.94, 0.48, 0.36, 0.32, 0.01, 0.41, 0.39, 0.9, 0.3, 0.88, 0.42, 0.68,
+      0.75, 0.13, 1, 0.26, 0.23, 0.04, 0.2, 0.93, 1, 0.93, 0.85, 0.47, 0.49, 0.59, 0.54, 0.39, 0.35, 0.3, 0.23,
+      0.18, 0.12, 0, 0, 0, 0, 1, 0.88, 0.42, 0.21, 0.2, 0.02, 0.01, 0, 0.37, 1, 0.5, 0.95, 0.39, 0.27, 0.13
+    ]
+  }
+}

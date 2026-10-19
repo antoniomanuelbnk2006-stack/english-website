@@ -1,0 +1,622 @@
+{
+  "id": "es-b1-lis-010",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u01",
+  "series": "es-b1-u01-buscar-piso",
+  "skill": "listening",
+  "genre": "dialogue",
+  "title": "Visitando un piso",
+  "summary_es": {
+    "en": "A woman visits a flat to rent and asks the agent about price, furniture and the neighbourhood.",
+    "fr": "Une femme visite un appartement à louer et interroge l’agent sur le prix, les meubles et le quartier.",
+    "zh": "一位女士看一套出租公寓，向中介询问价格、家具和周边环境。",
+    "ja": "女性が賃貸の部屋を見学し、家賃や家具、周辺について不動産業者に尋ねます。"
+  },
+  "topic": "city-housing",
+  "tags": ["vivienda", "alquiler", "barrio"],
+  "can_do": ["L-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["alquiler", "amueblado", "ascensor", "propietario"],
+  "est_minutes": 8,
+  "prediction_prompt": "Vas a ver un piso de alquiler. ¿Qué preguntas haces?",
+  "pre_teach": ["amueblado", "gastos de comunidad"],
+  "speakers": [
+    { "id": "sofia", "name": "Sofía", "accent": "es-ES", "gender": "female" },
+    { "id": "mario", "name": "Mario", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "mario",
+      "text": "Buenos días, Sofía.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0.02, "e": 0.506 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 0.506, "e": 0.853 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Sofía", "l": "sofía", "p": "PROPN", "w": false, "s": 0.853, "e": 1.27 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.348
+    },
+    {
+      "id": "s2",
+      "speaker": "mario",
+      "text": "Este es el piso del que le hablé por teléfono.",
+      "tokens": [
+        { "t": "Este", "l": "este", "p": "DET", "w": true, "sp": true, "s": 1.625, "e": 1.926 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 1.926, "e": 2.107 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 2.107, "e": 2.288 },
+        { "t": "piso", "l": "piso", "p": "NOUN", "w": true, "sp": true, "s": 2.287, "e": 2.588 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 2.588, "e": 2.829 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 2.829, "e": 3.07 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 3.07, "e": 3.251 },
+        { "t": "hablé", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 3.251, "e": 3.612 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 3.612, "e": 3.853 },
+        { "t": "teléfono", "l": "teléfono", "p": "NOUN", "w": true, "s": 3.853, "e": 4.395 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.598,
+      "end": 4.454
+    },
+    {
+      "id": "s3",
+      "speaker": "sofia",
+      "text": "Buenos días.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 4.864, "e": 5.442 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 5.442, "e": 5.855 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.854,
+      "end": 5.899
+    },
+    {
+      "id": "s4",
+      "speaker": "sofia",
+      "text": "Es muy luminoso.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 6.169, "e": 6.411 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 6.411, "e": 6.734 },
+        { "t": "luminoso", "l": "luminoso", "p": "ADJ", "w": true, "s": 6.733, "e": 7.459 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.149,
+      "end": 7.547
+    },
+    {
+      "id": "s5",
+      "speaker": "sofia",
+      "text": "¿Cuántos metros tiene?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuántos", "l": "cuánto", "p": "PRON", "w": true, "sp": true, "s": 7.807, "e": 8.39 },
+        { "t": "metros", "l": "metro", "p": "NOUN", "w": true, "sp": true, "s": 8.39, "e": 8.9 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "s": 8.9, "e": 9.337 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.797,
+      "end": 9.4
+    },
+    {
+      "id": "s6",
+      "speaker": "mario",
+      "text": "Setenta metros cuadrados, con dos habitaciones, un baño y una cocina independiente.",
+      "tokens": [
+        { "t": "Setenta", "l": "setenta", "p": "NUM", "w": false, "sp": true, "s": 9.8, "e": 10.376 },
+        { "t": "metros", "l": "metro", "p": "NOUN", "w": true, "sp": true, "s": 10.376, "e": 10.88 },
+        { "t": "cuadrados", "l": "cuadrado", "p": "ADJ", "w": true, "s": 10.88, "e": 11.6 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 12.01, "e": 12.271 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 12.271, "e": 12.532 },
+        { "t": "habitaciones", "l": "habitación", "p": "NOUN", "w": true, "s": 12.532, "e": 13.38 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 13.56, "e": 13.753 },
+        { "t": "baño", "l": "bañar", "p": "VERB", "w": true, "sp": true, "s": 13.753, "e": 14.074 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 14.074, "e": 14.203 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 14.203, "e": 14.46 },
+        { "t": "cocina", "l": "cocina", "p": "NOUN", "w": true, "sp": true, "s": 14.46, "e": 14.91 },
+        { "t": "independiente", "l": "independiente", "p": "ADJ", "w": true, "s": 14.91, "e": 15.81 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.8,
+      "end": 15.897
+    },
+    {
+      "id": "s7",
+      "speaker": "sofia",
+      "text": "¿Está amueblado?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 16.307, "e": 16.704 },
+        { "t": "amueblado", "l": "amueblado", "p": "ADJ", "w": true, "s": 16.704, "e": 17.497 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.297,
+      "end": 17.59
+    },
+    {
+      "id": "s8",
+      "speaker": "mario",
+      "text": "No, pero la cocina tiene nevera y lavadora.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "s": 18.025, "e": 18.265 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 18.475, "e": 18.77 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 18.77, "e": 18.947 },
+        { "t": "cocina", "l": "cocina", "p": "NOUN", "w": true, "sp": true, "s": 18.947, "e": 19.36 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 19.36, "e": 19.714 },
+        { "t": "nevera", "l": "nevera", "p": "NOUN", "w": true, "sp": true, "s": 19.713, "e": 20.126 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 20.126, "e": 20.244 },
+        { "t": "lavadora", "l": "lavadora", "p": "NOUN", "w": true, "s": 20.244, "e": 20.775 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.99,
+      "end": 20.845
+    },
+    {
+      "id": "s9",
+      "speaker": "mario",
+      "text": "El dueño las deja en el piso.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 21.121, "e": 21.326 },
+        { "t": "dueño", "l": "dueño", "p": "NOUN", "w": true, "sp": true, "s": 21.326, "e": 21.736 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 21.735, "e": 22.008 },
+        { "t": "deja", "l": "dejar", "p": "VERB", "w": true, "sp": true, "s": 22.009, "e": 22.35 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 22.35, "e": 22.555 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 22.555, "e": 22.76 },
+        { "t": "piso", "l": "piso", "p": "NOUN", "w": true, "s": 22.76, "e": 23.101 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.095,
+      "end": 23.171
+    },
+    {
+      "id": "s10",
+      "speaker": "sofia",
+      "text": "¿Cuánto cuesta el alquiler?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuánto", "l": "cuánto", "p": "PRON", "w": true, "sp": true, "s": 23.591, "e": 24.051 },
+        { "t": "cuesta", "l": "costar", "p": "VERB", "w": true, "sp": true, "s": 24.051, "e": 24.511 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 24.512, "e": 24.709 },
+        { "t": "alquiler", "l": "alquiler", "p": "NOUN", "w": true, "s": 24.709, "e": 25.301 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.571,
+      "end": 25.457
+    },
+    {
+      "id": "s11",
+      "speaker": "mario",
+      "text": "Ochocientos euros al mes, y los gastos de comunidad están incluidos.",
+      "tokens": [
+        {
+          "t": "Ochocientos",
+          "l": "ochocientos",
+          "p": "NUM",
+          "w": false,
+          "sp": true,
+          "s": 25.886,
+          "e": 26.755
+        },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "sp": true, "s": 26.755, "e": 27.189 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 27.189, "e": 27.406 },
+        { "t": "mes", "l": "mes", "p": "NOUN", "w": true, "s": 27.406, "e": 27.696 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 28.176, "e": 28.31 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 28.31, "e": 28.579 },
+        { "t": "gastos", "l": "gasto", "p": "NOUN", "w": true, "sp": true, "s": 28.579, "e": 29.049 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 29.049, "e": 29.25 },
+        { "t": "comunidad", "l": "comunidad", "p": "NOUN", "w": true, "sp": true, "s": 29.25, "e": 29.921 },
+        { "t": "están", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 29.922, "e": 30.325 },
+        { "t": "incluidos", "l": "incluir", "p": "VERB", "w": true, "s": 30.325, "e": 30.996 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.857,
+      "end": 31.066
+    },
+    {
+      "id": "s12",
+      "speaker": "sofia",
+      "text": "Es un poco caro para mí.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 31.476, "e": 31.706 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 31.706, "e": 31.936 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 31.936, "e": 32.319 },
+        { "t": "caro", "l": "caro", "p": "ADJ", "w": true, "sp": true, "s": 32.319, "e": 32.702 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 32.703, "e": 33.086 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "s": 33.086, "e": 33.316 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 31.466,
+      "end": 33.394
+    },
+    {
+      "id": "s13",
+      "speaker": "sofia",
+      "text": "En mi barrio actual pago setecientos.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 33.654, "e": 33.896 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 33.896, "e": 34.138 },
+        { "t": "barrio", "l": "barrio", "p": "NOUN", "w": true, "sp": true, "s": 34.137, "e": 34.701 },
+        { "t": "actual", "l": "actual", "p": "ADJ", "w": true, "sp": true, "s": 34.701, "e": 35.265 },
+        { "t": "pago", "l": "pagar", "p": "VERB", "w": true, "sp": true, "s": 35.265, "e": 35.668 },
+        { "t": "setecientos", "l": "setecientos", "p": "NUM", "w": false, "s": 35.668, "e": 36.634 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 33.644,
+      "end": 36.704
+    },
+    {
+      "id": "s14",
+      "speaker": "mario",
+      "text": "Pero aquí tiene el metro a cinco minutos, un supermercado en la esquina y una escuela infantil muy cerca.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 37.134, "e": 37.645 },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 37.645, "e": 38.156 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 38.156, "e": 38.769 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 38.769, "e": 39.076 },
+        { "t": "metro", "l": "metro", "p": "NOUN", "w": true, "sp": true, "s": 39.076, "e": 39.689 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 39.689, "e": 39.893 },
+        { "t": "cinco", "l": "cinco", "p": "NUM", "w": false, "sp": true, "s": 39.893, "e": 40.506 },
+        { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true, "s": 40.506, "e": 41.324 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 41.744, "e": 41.836 },
+        {
+          "t": "supermercado",
+          "l": "supermercado",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 41.836,
+          "e": 42.234
+        },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 42.234, "e": 42.326 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 42.326, "e": 42.418 },
+        { "t": "esquina", "l": "esquina", "p": "NOUN", "w": true, "sp": true, "s": 42.418, "e": 42.663 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 42.663, "e": 42.724 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 42.724, "e": 42.847 },
+        { "t": "escuela", "l": "escuela", "p": "NOUN", "w": true, "sp": true, "s": 42.847, "e": 43.092 },
+        { "t": "infantil", "l": "infantil", "p": "ADJ", "w": true, "sp": true, "s": 43.092, "e": 43.368 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 43.368, "e": 43.491 },
+        { "t": "cerca", "l": "cerca", "p": "ADV", "w": true, "s": 43.49, "e": 43.674 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 37.104,
+      "end": 43.75
+    },
+    {
+      "id": "s15",
+      "speaker": "sofia",
+      "text": "Eso es verdad.",
+      "tokens": [
+        { "t": "Eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 44.16, "e": 44.606 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 44.606, "e": 44.94 },
+        { "t": "verdad", "l": "verdad", "p": "NOUN", "w": true, "s": 44.94, "e": 45.72 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.15,
+      "end": 45.78
+    },
+    {
+      "id": "s16",
+      "speaker": "sofia",
+      "text": "¿Hay ascensor?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 46.04, "e": 46.385 },
+        { "t": "ascensor", "l": "ascensor", "p": "NOUN", "w": true, "s": 46.385, "e": 47.16 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.03,
+      "end": 47.271
+    },
+    {
+      "id": "s17",
+      "speaker": "mario",
+      "text": "Sí, y también un pequeño balcón con vistas al parque.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 47.671, "e": 47.845 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 47.845, "e": 47.961 },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 47.961, "e": 48.426 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 48.426, "e": 48.6 },
+        { "t": "pequeño", "l": "pequeño", "p": "ADJ", "w": true, "sp": true, "s": 48.6, "e": 49.065 },
+        { "t": "balcón", "l": "balcón", "p": "NOUN", "w": true, "sp": true, "s": 49.065, "e": 49.472 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 49.471, "e": 49.703 },
+        { "t": "vistas", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 49.704, "e": 50.111 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 50.11, "e": 50.284 },
+        { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "s": 50.284, "e": 50.691 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 47.671,
+      "end": 50.752
+    },
+    {
+      "id": "s18",
+      "speaker": "sofia",
+      "text": "¿Podría pagar menos si firmo por dos años?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Podría", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 51.162, "e": 51.725 },
+        { "t": "pagar", "l": "pagar", "p": "VERB", "w": true, "sp": true, "s": 51.725, "e": 52.208 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 52.208, "e": 52.691 },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 52.691, "e": 52.932 },
+        { "t": "firmo", "l": "firmar", "p": "VERB", "w": true, "sp": true, "s": 52.933, "e": 53.416 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 53.416, "e": 53.738 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 53.738, "e": 54.06 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 54.06, "e": 54.462 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 51.152,
+      "end": 54.547
+    },
+    {
+      "id": "s19",
+      "speaker": "mario",
+      "text": "Voy a hablar con el propietario.",
+      "tokens": [
+        { "t": "Voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 54.984, "e": 55.197 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 55.197, "e": 55.303 },
+        { "t": "hablar", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 55.303, "e": 55.675 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 55.675, "e": 55.888 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 55.887, "e": 56.046 },
+        { "t": "propietario", "l": "propietario", "p": "NOUN", "w": true, "s": 56.047, "e": 56.685 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 54.947,
+      "end": 56.763
+    },
+    {
+      "id": "s20",
+      "speaker": "mario",
+      "text": "Creo que podría bajar el precio unos cincuenta euros.",
+      "tokens": [
+        { "t": "Creo", "l": "creer", "p": "VERB", "w": true, "sp": true, "s": 57.044, "e": 57.39 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 57.39, "e": 57.667 },
+        { "t": "podría", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 57.667, "e": 58.152 },
+        { "t": "bajar", "l": "bajar", "p": "VERB", "w": true, "sp": true, "s": 58.152, "e": 58.567 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 58.567, "e": 58.775 },
+        { "t": "precio", "l": "precio", "p": "NOUN", "w": true, "sp": true, "s": 58.775, "e": 59.26 },
+        { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true, "s": 59.26, "e": 59.606 },
+        { "t": "cincuenta", "l": "cincuenta", "p": "NUM", "w": false, "sp": true, "s": 59.606, "e": 60.298 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "s": 60.299, "e": 60.714 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 57.013,
+      "end": 60.789
+    },
+    {
+      "id": "s21",
+      "speaker": "sofia",
+      "text": "En ese caso me interesa.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 61.199, "e": 61.448 },
+        { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 61.448, "e": 61.78 },
+        { "t": "caso", "l": "caso", "p": "NOUN", "w": true, "sp": true, "s": 61.779, "e": 62.194 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 62.194, "e": 62.443 },
+        { "t": "interesa", "l": "interesar", "p": "VERB", "w": true, "s": 62.443, "e": 63.189 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 61.189,
+      "end": 63.247
+    },
+    {
+      "id": "s22",
+      "speaker": "sofia",
+      "text": "¿Puedo volver mañana con mi marido?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Puedo", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 63.507, "e": 63.916 },
+        { "t": "volver", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 63.916, "e": 64.394 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 64.394, "e": 64.872 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 64.872, "e": 65.145 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 65.145, "e": 65.35 },
+        { "t": "marido", "l": "marido", "p": "NOUN", "w": true, "s": 65.349, "e": 65.827 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 63.497,
+      "end": 65.921
+    },
+    {
+      "id": "s23",
+      "speaker": "mario",
+      "text": "Claro.",
+      "tokens": [
+        { "t": "Claro", "l": "claro", "p": "ADJ", "w": true, "s": 66.341, "e": 66.781 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 66.321,
+      "end": 66.867
+    },
+    {
+      "id": "s24",
+      "speaker": "mario",
+      "text": "Mañana por la tarde le enseño el piso otra vez.",
+      "tokens": [
+        { "t": "Mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 67.127, "e": 67.56 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 67.56, "e": 67.808 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 67.808, "e": 67.994 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true, "s": 67.994, "e": 68.365 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 68.365, "e": 68.551 },
+        { "t": "enseño", "l": "enseñar", "p": "VERB", "w": true, "sp": true, "s": 68.551, "e": 68.984 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 68.984, "e": 69.17 },
+        { "t": "piso", "l": "piso", "p": "NOUN", "w": true, "sp": true, "s": 69.17, "e": 69.48 },
+        { "t": "otra", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 69.48, "e": 69.79 },
+        { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "s": 69.789, "e": 70.037 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 67.117,
+      "end": 70.187
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "amueblado",
+      "surface": "amueblado",
+      "pos": "adjective",
+      "def_en": "con muebles dentro",
+      "def_es": { "en": "furnished", "fr": "meublé", "zh": "带家具的", "ja": "家具付きの" },
+      "ref": "s7"
+    },
+    {
+      "lemma": "gastos de comunidad",
+      "surface": "gastos de comunidad",
+      "pos": "phrase",
+      "def_en": "dinero que se paga por el edificio",
+      "def_es": { "en": "service charges", "fr": "charges de copropriété", "zh": "物业费", "ja": "管理費" },
+      "ref": "s11"
+    },
+    {
+      "lemma": "propietario",
+      "surface": "propietario",
+      "pos": "noun",
+      "def_en": "persona a quien pertenece una casa",
+      "def_es": { "en": "owner", "fr": "propriétaire", "zh": "房东", "ja": "家主" },
+      "ref": "s19"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué hace Sofía en esta conversación?",
+      "evidence": ["s2", "s10"],
+      "rationale_es": { "en": "She is viewing a flat to rent." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Vende su casa a un vecino" },
+        { "id": "b", "text": "Ve un piso para alquilarlo" },
+        { "id": "c", "text": "Pide un préstamo en un banco" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuántas habitaciones tiene el piso?",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "Two bedrooms." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Tres" },
+        { "id": "b", "text": "Cuatro" },
+        { "id": "c", "text": "Dos" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "El piso está completamente amueblado.",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "It is not furnished; only kitchen appliances." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuánto cuesta el alquiler al mes?",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "800 euros." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Ochocientos euros" },
+        { "id": "b", "text": "Setecientos euros" },
+        { "id": "c", "text": "Cincuenta euros" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué ventaja destaca Mario sobre el piso?",
+      "evidence": ["s14"],
+      "rationale_es": { "en": "Metro, shop and school are near." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que no hay ruido de noche" },
+        { "id": "b", "text": "Que está bien comunicado" },
+        { "id": "c", "text": "Que tiene jardín propio" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s19"],
+      "rationale_es": { "en": "*Propietario*: owner." },
+      "type": "gap_fill",
+      "text": "Mario va a hablar con el {{1}} para bajar el precio.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["propietario"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "actual", "alquiler", "amueblado", "aquí", "ascensor", "año", "bajar", "balcón", "barrio", "bañar",
+    "bueno", "caro", "caso", "cerca", "claro", "cocina", "comunidad", "con", "costar", "creer", "cuadrado",
+    "cuánto", "de", "dejar", "dueño", "día", "el", "en", "enseñar", "escuela", "ese", "esquina", "estar",
+    "este", "esto", "euro", "firmar", "gasto", "haber", "habitación", "hablar", "incluir", "independiente",
+    "infantil", "interesar", "ir", "lavadora", "luminoso", "marido", "mañana", "menos", "mes", "metro", "mi",
+    "minuto", "muy", "nevera", "no", "otro", "pagar", "para", "parque", "pequeño", "pero", "piso", "poco",
+    "poder", "por", "precio", "propietario", "que", "ser", "si", "supermercado", "también", "tarde",
+    "teléfono", "tener", "un", "ver", "verdad", "vez", "volver", "y", "yo", "él"
+  ],
+  "difficulty": 1067,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7075, "A2": 0.9116, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 6.5,
+    "flesch_reading_ease": 85.6,
+    "checked_at": "2026-10-19T07:35:31.655Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-010/v1.m4a",
+    "duration_s": 70.187,
+    "wpm": 133,
+    "provider": "piper",
+    "voices": { "sofia": "sharvard-f", "mario": "davefx-m" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.85, 0.59, 0.65, 0.4, 0.98, 0.99, 0.94, 0.79, 0.85, 0.81, 1, 0.92, 0.81, 0.41, 0.03, 1, 0.88, 0.68,
+      0.18, 0.03, 0.61, 1, 0.57, 0.48, 0.21, 0.92, 1, 0.64, 0.89, 0.78, 0.51, 0.01, 0.94, 0.98, 1, 0.85, 0.91,
+      0.72, 0.34, 0.02, 0.62, 0.85, 0.65, 0.92, 0.32, 0.48, 0.99, 0.64, 0.93, 0.91, 0.84, 0.51, 0.58, 0.07,
+      0.5, 0.89, 0.82, 1, 0.45, 0.01, 0.94, 0.85, 1, 0.95, 0.94, 0.97, 0.82, 0.99, 0.97, 0.5, 0.04, 0.89, 0.83,
+      0.85, 1, 0.97, 0.56, 0.46, 0.02, 1, 0.92, 0.57, 0.53, 0.63, 0.31, 0.28, 0, 0.79, 0.92, 0.89, 0.92, 0.64,
+      0.84, 0.68, 0.01, 0.89, 0.98, 0.98, 0.61, 0.81, 1, 0.74, 0.51, 0.37, 0.22, 0.03, 0.46, 0.61, 0.8, 1,
+      0.64, 0.73, 0.39, 0.02, 0.38, 1, 0.87, 0.65, 0.8, 0.93, 0.53, 0.46, 0.54, 0.35, 0.11, 0.08, 1, 0.73,
+      0.97, 0.93, 0.85, 0.48, 0.45, 0.57, 0.45, 0.81, 0.96, 0.92, 0.59, 0.79, 0.45, 0.6, 0.7, 0.87, 0.69, 0.59,
+      0.53, 0.65, 0.39, 0, 0.65, 0.84, 0.66, 1, 0.49, 0.06, 0.88, 1, 0.81, 0.78, 0.06, 0, 1, 0.98, 0.89, 0.96,
+      0.89, 0.87, 0.89, 0.92, 0.57, 0.87, 0.36, 0.06, 0.79, 1, 0.95, 0.6, 0.53, 0.42, 0.58, 0.73, 0.5, 0.34,
+      0.2, 0.07, 0.01, 1, 0.97, 0.47, 0.95, 0.94, 0.73, 0, 1, 0.98, 0.78, 0.96, 0.99, 0.64, 0.96, 0.65, 0.33,
+      0.57, 0.83, 0.26, 0.11, 0, 0.48, 0.89, 1, 0.75, 0.54, 0.74, 0.55, 0.06, 1, 0.9, 0.72, 0.72, 0.7, 0.51,
+      0.58, 0.48, 0.07, 0.12, 1, 0.4, 1, 1, 0.98, 1, 0.99, 0.75, 0.9, 0.73, 0.91, 0.64, 0.45
+    ]
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "id": "es-a1-lis-014",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "unit": "es-a1-u06",
+  "series": "es-a1-u06-mensaje",
+  "skill": "listening",
+  "genre": "voicemail",
+  "title": "Un mensaje de Marta",
+  "summary_es": {
+    "en": "Marta leaves a short voice message: she cannot go to the park today.",
+    "fr": "Marta laisse un court message vocal : elle ne peut pas aller au parc aujourd’hui.",
+    "zh": "Marta 留了一条简短的语音留言：她今天不能去公园。",
+    "ja": "マルタは短い留守電を残します：今日は公園に行けません。"
+  },
+  "topic": "daily-life",
+  "tags": ["mensaje", "hoy", "trabajo"],
+  "can_do": ["L-A1-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["hoy", "trabajar", "parque", "mañana"],
+  "est_minutes": 4,
+  "prediction_prompt": "Una amiga deja un mensaje. ¿Qué te dice?",
+  "pre_teach": ["hasta las", "un abrazo"],
+  "speakers": [
+    { "id": "marta", "name": "Marta", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 100,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "marta",
+      "text": "Hola, Leo. Soy Marta.",
+      "tokens": [
+        { "t": "Hola", "l": "hola", "p": "INTJ", "w": false, "s": 0.01, "e": 0.89 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Leo", "l": "leo", "p": "PROPN", "w": false, "s": 1.17, "e": 1.86 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Soy", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 2.03, "e": 2.114 },
+        { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "s": 2.114, "e": 2.24 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.359
+    },
+    {
+      "id": "s2",
+      "speaker": "marta",
+      "text": "Hoy no puedo ir al parque.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 2.879, "e": 3.153 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 3.153, "e": 3.358 },
+        { "t": "puedo", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 3.358, "e": 3.769 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 3.769, "e": 3.974 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 3.974, "e": 4.179 },
+        { "t": "parque", "l": "parque", "p": "NOUN", "w": true, "s": 4.18, "e": 4.659 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 2.859,
+      "end": 4.744
+    },
+    {
+      "id": "s3",
+      "speaker": "marta",
+      "text": "Estoy en la oficina ahora.",
+      "tokens": [
+        { "t": "Estoy", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 5.254, "e": 5.718 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 5.718, "e": 5.95 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 5.95, "e": 6.182 },
+        { "t": "oficina", "l": "oficina", "p": "NOUN", "w": true, "sp": true, "s": 6.182, "e": 6.8 },
+        { "t": "ahora", "l": "ahora", "p": "ADV", "w": true, "s": 6.8, "e": 7.264 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.244,
+      "end": 7.331
+    },
+    {
+      "id": "s4",
+      "speaker": "marta",
+      "text": "Hoy tengo mucho trabajo.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 7.851, "e": 8.153 },
+        { "t": "tengo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 8.153, "e": 8.606 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 8.605, "e": 9.058 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "s": 9.058, "e": 9.661 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.831,
+      "end": 9.715
+    },
+    {
+      "id": "s5",
+      "speaker": "marta",
+      "text": "Trabajo hasta las seis.",
+      "tokens": [
+        { "t": "Trabajo", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 10.225, "e": 10.813 },
+        { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 10.813, "e": 11.254 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.254, "e": 11.548 },
+        { "t": "seis", "l": "seis", "p": "NUM", "w": false, "s": 11.548, "e": 11.915 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.215,
+      "end": 11.986
+    },
+    {
+      "id": "s6",
+      "speaker": "marta",
+      "text": "Lo siento mucho.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 12.486, "e": 12.728 },
+        { "t": "siento", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 12.728, "e": 13.292 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "s": 13.292, "e": 13.776 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.486,
+      "end": 13.838
+    },
+    {
+      "id": "s7",
+      "speaker": "marta",
+      "text": "¿Vamos mañana por la tarde?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Vamos", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 14.348, "e": 14.777 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 14.777, "e": 15.278 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 15.278, "e": 15.564 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 15.564, "e": 15.779 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "s": 15.779, "e": 16.208 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 14.338,
+      "end": 16.306
+    },
+    {
+      "id": "s8",
+      "speaker": "marta",
+      "text": "Vamos con el perro.",
+      "tokens": [
+        { "t": "Vamos", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 16.816, "e": 17.255 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 17.255, "e": 17.548 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 17.548, "e": 17.767 },
+        { "t": "perro", "l": "perro", "p": "NOUN", "w": true, "s": 17.767, "e": 18.206 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.806,
+      "end": 18.28
+    },
+    {
+      "id": "s9",
+      "speaker": "marta",
+      "text": "Mañana estoy libre.",
+      "tokens": [
+        { "t": "Mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 18.79, "e": 19.442 },
+        { "t": "estoy", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 19.442, "e": 20.001 },
+        { "t": "libre", "l": "libre", "p": "ADJ", "w": true, "s": 20.001, "e": 20.56 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.78,
+      "end": 20.631
+    },
+    {
+      "id": "s10",
+      "speaker": "marta",
+      "text": "Hasta luego. Un abrazo.",
+      "tokens": [
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 21.141, "e": 21.651 },
+        { "t": "luego", "l": "luego", "p": "ADV", "w": true, "s": 21.651, "e": 22.161 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 22.431, "e": 22.707 },
+        { "t": "abrazo", "l": "abrazo", "p": "NOUN", "w": true, "s": 22.707, "e": 23.351 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.131,
+      "end": 23.421
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "lo siento",
+      "surface": "Lo siento",
+      "pos": "phrase",
+      "def_en": "se dice cuando quieres pedir perdón",
+      "def_es": { "en": "I’m sorry", "fr": "je suis désolée", "zh": "对不起", "ja": "ごめんなさい" },
+      "ref": "s6"
+    },
+    {
+      "lemma": "hasta",
+      "surface": "hasta",
+      "pos": "other",
+      "def_en": "indica el límite de un tiempo",
+      "def_es": { "en": "until", "fr": "jusqu’à", "zh": "直到", "ja": "〜まで" },
+      "ref": "s5"
+    },
+    {
+      "lemma": "libre",
+      "surface": "libre",
+      "pos": "adjective",
+      "def_en": "sin nada que hacer",
+      "def_es": { "en": "free", "fr": "libre", "zh": "有空", "ja": "空いている" },
+      "ref": "s9"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Por qué llama Marta?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "She cannot go today." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque quiere un café" },
+        { "id": "b", "text": "Porque hoy no puede ir" },
+        { "id": "c", "text": "Porque necesita un libro" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Hasta qué hora trabaja?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "Until six." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Hasta las nueve" },
+        { "id": "b", "text": "Hasta las dos" },
+        { "id": "c", "text": "Hasta las seis" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuándo propone ir al parque?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "Tomorrow afternoon." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Mañana por la tarde" },
+        { "id": "b", "text": "Hoy por la noche" },
+        { "id": "c", "text": "El sábado por la mañana" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Marta está libre mañana.",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "She is free tomorrow." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "*Lo siento mucho*." },
+      "type": "gap_fill",
+      "text": "Marta dice: «Lo siento {{1}}».",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["mucho"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Cómo termina el mensaje?",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "With a hug." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Con una pregunta" },
+        { "id": "b", "text": "Con un abrazo" },
+        { "id": "c", "text": "Con un adiós largo" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abrazo", "ahora", "con", "el", "en", "estar", "hasta", "hoy", "ir", "libre", "luego", "mañana",
+    "mucho", "no", "oficina", "parque", "perro", "poder", "por", "sentir", "ser", "tarde", "tener", "trabajar",
+    "un", "él"
+  ],
+  "difficulty": 682,
+  "qa": {
+    "coverage_by_level": { "A1": 1, "A2": 1, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 3.5,
+    "flesch_reading_ease": 94.7,
+    "checked_at": "2026-10-19T07:26:48.323Z"
+  },
+  "audio": {
+    "src": "audio/a1/es-a1-lis-014/v1.m4a",
+    "duration_s": 23.421,
+    "wpm": 108,
+    "provider": "piper",
+    "voices": { "marta": "sharvard-f" },
+    "loudness_lufs": -16,
+    "peaks": [
+      0.88, 0.73, 1, 0.38, 0.01, 0.26, 0.42, 0.32, 0.25, 0.03, 0, 0.01, 0.24, 0.43, 0.68, 1, 0.65, 0.93, 0.67,
+      0.04, 0.47, 0.32, 0.16, 0.03, 0, 0, 0, 0, 0, 0.58, 0.9, 0.61, 0.67, 0.66, 0.16, 0.63, 1, 0.97, 0.5, 0.74,
+      0.71, 0.15, 0.75, 0.83, 0.14, 0.44, 0.22, 0.15, 0.02, 0, 0, 0, 0, 0.18, 0.52, 0.44, 0.33, 0.7, 1, 0.96,
+      0.64, 0.78, 0.71, 0.16, 0.6, 0.51, 0.53, 0.69, 0.95, 0.87, 0.62, 0.52, 0.26, 0.15, 0.03, 0, 0, 0, 0, 0,
+      0.91, 0.96, 0.24, 1, 0.7, 0.82, 0.71, 0.59, 0.38, 0.5, 0.54, 0.41, 0.82, 0.91, 0.88, 0.37, 0.08, 0.32,
+      0.22, 0.02, 0, 0, 0, 0, 0.2, 0.85, 1, 0.83, 0.34, 0.74, 0.98, 0.67, 0.64, 0.93, 0.6, 0.43, 0.49, 0.59,
+      0.46, 0.22, 0.27, 0.25, 0.06, 0, 0, 0, 0, 0, 0.51, 0.48, 0.51, 1, 0.66, 0.33, 0.64, 0.44, 0.31, 0.14,
+      0.3, 0.17, 0.14, 0.03, 0, 0, 0, 0, 0.01, 1, 0.94, 0.68, 0.38, 0.59, 0.52, 0.42, 0.5, 0.61, 0.15, 0.58,
+      0.24, 0.42, 0.07, 0.48, 0.45, 0.2, 0.18, 0.15, 0.04, 0, 0, 0, 0, 0, 0.5, 0.96, 0.83, 1, 0.37, 0.19, 0.55,
+      0.48, 0.43, 0.03, 0.76, 0.73, 0.26, 0.31, 0.1, 0.01, 0, 0, 0, 0, 0.28, 0.67, 0.7, 1, 0.95, 0.92, 0.79,
+      0.55, 0.83, 0.76, 0.74, 0.35, 0.94, 0.72, 0.84, 0.84, 0.42, 0.27, 0.12, 0.01, 0, 0, 0, 0, 1, 1, 0.7,
+      0.85, 1, 0.82, 0.94, 0.91, 0.51, 0.38, 0.33, 0.04, 0, 0.06, 0.63, 0.86, 0.88, 0.82, 1, 0.77, 0.08, 0.26,
+      0.25, 0.06
+    ]
+  }
+}

@@ -1,0 +1,956 @@
+{
+  "id": "es-b2-lis-006",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "unit": "es-b2-u03",
+  "series": "es-b2-u03-idiomas-adultos",
+  "skill": "listening",
+  "genre": "podcast",
+  "title": "Aprender idiomas de adulto",
+  "summary_es": {
+    "en": "A language teacher explains on a podcast why adults can learn languages well and how to organise their study.",
+    "fr": "Une professeure de langues explique dans un podcast pourquoi les adultes apprennent bien les langues et comment organiser leur étude.",
+    "zh": "一位语言老师在播客中解释成年人为什么也能学好语言，以及如何安排学习。",
+    "ja": "語学教師がポッドキャストで、大人でも語学をうまく学べる理由と学習の組み立て方を説明します。"
+  },
+  "topic": "education",
+  "tags": ["idiomas", "aprendizaje", "adultos"],
+  "can_do": ["L-B2-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["prejuicio", "constancia", "ventaja", "rutina"],
+  "est_minutes": 10,
+  "prediction_prompt": "¿Crees que es más difícil aprender un idioma después de los treinta años?",
+  "pre_teach": ["prejuicio", "mito"],
+  "speakers": [
+    { "id": "ines", "name": "Inés", "accent": "es-ES", "gender": "female" },
+    { "id": "rafael", "name": "Rafael", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 135,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "rafael",
+      "text": "Bienvenidos a «Mente abierta».",
+      "tokens": [
+        { "t": "Bienvenidos", "l": "bienvenido", "p": "ADJ", "w": true, "sp": true, "s": 0.01, "e": 0.859 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 0.859, "e": 1 },
+        { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+        { "t": "Mente", "l": "mente", "p": "NOUN", "w": true, "sp": true, "s": 1, "e": 1.424 },
+        { "t": "abierta", "l": "abrir", "p": "VERB", "w": true, "s": 1.424, "e": 1.99 },
+        { "t": "»", "l": "»", "p": "PUNCT", "w": false },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.12
+    },
+    {
+      "id": "s2",
+      "speaker": "rafael",
+      "text": "Hoy nos acompaña Inés Navarro, profesora de idiomas desde hace veinte años.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 2.38, "e": 2.665 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 2.665, "e": 2.95 },
+        { "t": "acompaña", "l": "acompañar", "p": "VERB", "w": true, "sp": true, "s": 2.951, "e": 3.593 },
+        { "t": "Inés", "l": "inés", "p": "PROPN", "w": false, "sp": true, "s": 3.593, "e": 3.95 },
+        { "t": "Navarro", "l": "navarro", "p": "PROPN", "w": false, "s": 3.949, "e": 4.52 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "profesora", "l": "profesor", "p": "NOUN", "w": true, "sp": true, "s": 4.79, "e": 5.449 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 5.449, "e": 5.647 },
+        { "t": "idiomas", "l": "idioma", "p": "NOUN", "w": true, "sp": true, "s": 5.647, "e": 6.174 },
+        { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 6.174, "e": 6.569 },
+        { "t": "hace", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 6.57, "e": 6.9 },
+        { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true, "s": 6.899, "e": 7.36 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 7.36, "e": 7.69 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 2.37,
+      "end": 7.779
+    },
+    {
+      "id": "s3",
+      "speaker": "ines",
+      "text": "Hola, Rafael.",
+      "tokens": [
+        { "t": "Hola", "l": "hola", "p": "INTJ", "w": false, "s": 8.189, "e": 8.529 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Rafael", "l": "rafael", "p": "PROPN", "w": false, "s": 8.699, "e": 9.359 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 8.179,
+      "end": 9.412
+    },
+    {
+      "id": "s4",
+      "speaker": "ines",
+      "text": "Gracias por invitarme.",
+      "tokens": [
+        { "t": "Gracias", "l": "gracias", "p": "INTJ", "w": false, "sp": true, "s": 9.672, "e": 10.254 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 10.254, "e": 10.545 },
+        { "t": "invitarme", "l": "invitar", "p": "VERB", "w": true, "s": 10.545, "e": 11.272 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.662,
+      "end": 11.376
+    },
+    {
+      "id": "s5",
+      "speaker": "rafael",
+      "text": "Inés, mucha gente piensa que, después de cierta edad, ya es tarde para aprender un idioma.",
+      "tokens": [
+        { "t": "Inés", "l": "inés", "p": "PROPN", "w": false, "s": 11.786, "e": 12.236 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "mucha", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 12.436, "e": 12.879 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 12.879, "e": 13.322 },
+        { "t": "piensa", "l": "pensar", "p": "VERB", "w": true, "sp": true, "s": 13.323, "e": 13.84 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "s": 13.84, "e": 14.136 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "después", "l": "después", "p": "ADV", "w": true, "sp": true, "s": 14.286, "e": 14.815 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 14.815, "e": 15.013 },
+        { "t": "cierta", "l": "cierto", "p": "ADJ", "w": true, "sp": true, "s": 15.013, "e": 15.476 },
+        { "t": "edad", "l": "edad", "p": "NOUN", "w": true, "s": 15.476, "e": 15.806 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 16.046, "e": 16.249 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 16.249, "e": 16.452 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true, "s": 16.453, "e": 16.86 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 16.859, "e": 17.198 },
+        { "t": "aprender", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 17.198, "e": 17.808 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 17.808, "e": 18.011 },
+        { "t": "idioma", "l": "idioma", "p": "NOUN", "w": true, "s": 18.012, "e": 18.486 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.776,
+      "end": 18.617
+    },
+    {
+      "id": "s6",
+      "speaker": "rafael",
+      "text": "¿Es así?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 18.877, "e": 19.143 },
+        { "t": "así", "l": "así", "p": "ADV", "w": true, "s": 19.143, "e": 19.497 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.867,
+      "end": 19.582
+    },
+    {
+      "id": "s7",
+      "speaker": "ines",
+      "text": "Es uno de los prejuicios más extendidos, y no es del todo cierto.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 19.992, "e": 20.335 },
+        { "t": "uno", "l": "uno", "p": "NUM", "w": false, "sp": true, "s": 20.335, "e": 20.792 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 20.792, "e": 21.135 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 21.135, "e": 21.592 },
+        { "t": "prejuicios", "l": "prejuicio", "p": "NOUN", "w": true, "sp": true, "s": 21.592, "e": 22.849 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 22.848, "e": 23.305 },
+        { "t": "extendidos", "l": "extender", "p": "VERB", "w": true, "s": 23.305, "e": 24.562 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 24.712, "e": 24.726 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 24.726, "e": 24.747 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 24.747, "e": 24.768 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 24.769, "e": 24.797 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 24.797, "e": 24.832 },
+        { "t": "cierto", "l": "cierto", "p": "ADJ", "w": true, "s": 24.832, "e": 24.882 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.982,
+      "end": 24.968
+    },
+    {
+      "id": "s8",
+      "speaker": "ines",
+      "text": "Los niños tienen ventaja con la pronunciación, eso sí.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 25.228, "e": 25.519 },
+        { "t": "niños", "l": "niño", "p": "NOUN", "w": true, "sp": true, "s": 25.519, "e": 25.955 },
+        { "t": "tienen", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 25.954, "e": 26.462 },
+        { "t": "ventaja", "l": "ventaja", "p": "NOUN", "w": true, "sp": true, "s": 26.463, "e": 27.044 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 27.044, "e": 27.335 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 27.335, "e": 27.553 },
+        { "t": "pronunciación", "l": "pronunciación", "p": "NOUN", "w": true, "s": 27.553, "e": 28.57 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 28.57, "e": 28.861 },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "s": 28.86, "e": 29.078 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.218,
+      "end": 29.154
+    },
+    {
+      "id": "s9",
+      "speaker": "ines",
+      "text": "Pero los adultos aprenden la gramática y el vocabulario más deprisa, porque saben organizarse y entienden mejor las reglas.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 29.414, "e": 29.737 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 29.737, "e": 29.995 },
+        { "t": "adultos", "l": "adulto", "p": "NOUN", "w": true, "sp": true, "s": 29.995, "e": 30.511 },
+        { "t": "aprenden", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 30.512, "e": 31.093 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 31.093, "e": 31.287 },
+        { "t": "gramática", "l": "gramática", "p": "NOUN", "w": true, "sp": true, "s": 31.286, "e": 31.932 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 31.932, "e": 32.061 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 32.061, "e": 32.255 },
+        {
+          "t": "vocabulario",
+          "l": "vocabulario",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 32.255,
+          "e": 33.03
+        },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 33.029, "e": 33.287 },
+        { "t": "deprisa", "l": "deprisa", "p": "ADV", "w": true, "s": 33.288, "e": 33.804 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 33.944, "e": 34.415 },
+        { "t": "saben", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 34.415, "e": 34.818 },
+        { "t": "organizarse", "l": "organizar", "p": "VERB", "w": true, "sp": true, "s": 34.818, "e": 35.625 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 35.625, "e": 35.759 },
+        { "t": "entienden", "l": "entender", "p": "VERB", "w": true, "sp": true, "s": 35.759, "e": 36.431 },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true, "s": 36.431, "e": 36.834 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 36.835, "e": 37.104 },
+        { "t": "reglas", "l": "regla", "p": "NOUN", "w": true, "s": 37.103, "e": 37.574 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 29.404,
+      "end": 37.63
+    },
+    {
+      "id": "s10",
+      "speaker": "rafael",
+      "text": "Entonces, ¿por qué tantos adultos abandonan?",
+      "tokens": [
+        { "t": "Entonces", "l": "entonces", "p": "ADV", "w": true, "s": 38.04, "e": 38.84 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 39.1, "e": 39.373 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 39.373, "e": 39.646 },
+        { "t": "tantos", "l": "tanto", "p": "ADV", "w": true, "sp": true, "s": 39.645, "e": 40.122 },
+        { "t": "adultos", "l": "adulto", "p": "NOUN", "w": true, "sp": true, "s": 40.123, "e": 40.668 },
+        { "t": "abandonan", "l": "abandonar", "p": "VERB", "w": true, "s": 40.668, "e": 41.35 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 38.03,
+      "end": 41.452
+    },
+    {
+      "id": "s11",
+      "speaker": "ines",
+      "text": "Sobre todo por falta de tiempo y por miedo a equivocarse.",
+      "tokens": [
+        { "t": "Sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 41.872, "e": 42.277 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 42.277, "e": 42.615 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 42.615, "e": 42.885 },
+        { "t": "falta", "l": "falta", "p": "NOUN", "w": true, "sp": true, "s": 42.885, "e": 43.29 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 43.29, "e": 43.493 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true, "s": 43.493, "e": 43.966 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 43.966, "e": 44.101 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 44.101, "e": 44.371 },
+        { "t": "miedo", "l": "miedo", "p": "NOUN", "w": true, "sp": true, "s": 44.371, "e": 44.776 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 44.776, "e": 44.911 },
+        { "t": "equivocarse", "l": "equivocarse", "p": "VERB", "w": true, "s": 44.911, "e": 45.722 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 41.852,
+      "end": 45.771
+    },
+    {
+      "id": "s12",
+      "speaker": "ines",
+      "text": "Un adulto está acostumbrado a hacer las cosas bien en su trabajo.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 46.031, "e": 46.244 },
+        { "t": "adulto", "l": "adulto", "p": "NOUN", "w": true, "sp": true, "s": 46.244, "e": 46.742 },
+        { "t": "está", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 46.742, "e": 47.097 },
+        {
+          "t": "acostumbrado",
+          "l": "acostumbrarse",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 47.097,
+          "e": 48.021
+        },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 48.021, "e": 48.163 },
+        { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 48.163, "e": 48.589 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 48.59, "e": 48.874 },
+        { "t": "cosas", "l": "cosa", "p": "NOUN", "w": true, "sp": true, "s": 48.874, "e": 49.3 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true, "s": 49.301, "e": 49.656 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 49.656, "e": 49.869 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 49.869, "e": 50.082 },
+        { "t": "trabajo", "l": "trabajar", "p": "VERB", "w": true, "s": 50.082, "e": 50.651 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.021,
+      "end": 50.72
+    },
+    {
+      "id": "s13",
+      "speaker": "ines",
+      "text": "Cuando habla otro idioma, de repente se siente torpe, y eso le resulta incómodo.",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 51, "e": 51.518 },
+        { "t": "habla", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 51.518, "e": 51.962 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 51.962, "e": 52.332 },
+        { "t": "idioma", "l": "idioma", "p": "NOUN", "w": true, "s": 52.332, "e": 52.85 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 52.849, "e": 53.071 },
+        { "t": "repente", "l": "repente", "p": "NOUN", "w": true, "sp": true, "s": 53.071, "e": 53.663 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 53.663, "e": 53.885 },
+        { "t": "siente", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 53.885, "e": 54.403 },
+        { "t": "torpe", "l": "torpe", "p": "ADJ", "w": true, "s": 54.403, "e": 54.847 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 54.847, "e": 54.995 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 54.995, "e": 55.291 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 55.291, "e": 55.513 },
+        { "t": "resulta", "l": "resultar", "p": "VERB", "w": true, "sp": true, "s": 55.512, "e": 56.104 },
+        { "t": "incómodo", "l": "incómodo", "p": "ADJ", "w": true, "s": 56.104, "e": 56.77 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 50.97,
+      "end": 56.828
+    },
+    {
+      "id": "s14",
+      "speaker": "rafael",
+      "text": "¿Y cómo se supera ese miedo?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 57.248, "e": 57.386 },
+        { "t": "cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 57.386, "e": 57.73 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 57.73, "e": 57.937 },
+        { "t": "supera", "l": "superar", "p": "VERB", "w": true, "sp": true, "s": 57.937, "e": 58.419 },
+        { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 58.419, "e": 58.695 },
+        { "t": "miedo", "l": "miedo", "p": "NOUN", "w": true, "s": 58.695, "e": 59.108 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 57.228,
+      "end": 59.206
+    },
+    {
+      "id": "s15",
+      "speaker": "ines",
+      "text": "Aceptando que los errores forman parte del proceso.",
+      "tokens": [
+        { "t": "Aceptando", "l": "aceptar", "p": "VERB", "w": true, "sp": true, "s": 59.616, "e": 60.296 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 60.296, "e": 60.568 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 60.569, "e": 60.841 },
+        { "t": "errores", "l": "error", "p": "NOUN", "w": true, "sp": true, "s": 60.841, "e": 61.385 },
+        { "t": "forman", "l": "formar", "p": "VERB", "w": true, "sp": true, "s": 61.385, "e": 61.861 },
+        { "t": "parte", "l": "parte", "p": "NOUN", "w": true, "sp": true, "s": 61.861, "e": 62.269 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 62.27, "e": 62.542 },
+        { "t": "proceso", "l": "proceso", "p": "NOUN", "w": true, "s": 62.542, "e": 63.086 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 59.606,
+      "end": 63.162
+    },
+    {
+      "id": "s16",
+      "speaker": "ines",
+      "text": "Siempre digo a mis alumnos que, si no se equivocan, es que no están hablando lo suficiente.",
+      "tokens": [
+        { "t": "Siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true, "s": 63.432, "e": 63.961 },
+        { "t": "digo", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 63.961, "e": 64.291 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 64.291, "e": 64.423 },
+        { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 64.423, "e": 64.687 },
+        { "t": "alumnos", "l": "alumno", "p": "NOUN", "w": true, "sp": true, "s": 64.687, "e": 65.216 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "s": 65.216, "e": 65.48 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 65.48, "e": 65.678 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 65.678, "e": 65.876 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 65.876, "e": 66.074 },
+        { "t": "equivocan", "l": "equivocarse", "p": "VERB", "w": true, "s": 66.075, "e": 66.736 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 66.735, "e": 66.933 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 66.934, "e": 67.198 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 67.198, "e": 67.396 },
+        { "t": "están", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 67.396, "e": 67.792 },
+        { "t": "hablando", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 67.792, "e": 68.387 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 68.387, "e": 68.585 },
+        { "t": "suficiente", "l": "suficiente", "p": "ADJ", "w": true, "s": 68.585, "e": 69.312 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 63.412,
+      "end": 69.374
+    },
+    {
+      "id": "s17",
+      "speaker": "rafael",
+      "text": "¿Cuánto tiempo hay que dedicar al día?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cuánto", "l": "cuánto", "p": "PRON", "w": true, "sp": true, "s": 69.824, "e": 70.242 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true, "s": 70.242, "e": 70.66 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 70.66, "e": 70.899 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 70.899, "e": 71.138 },
+        { "t": "dedicar", "l": "dedicar", "p": "VERB", "w": true, "sp": true, "s": 71.138, "e": 71.616 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 71.616, "e": 71.795 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "s": 71.795, "e": 72.034 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 69.774,
+      "end": 72.189
+    },
+    {
+      "id": "s18",
+      "speaker": "ines",
+      "text": "Menos de lo que se cree.",
+      "tokens": [
+        { "t": "Menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 72.599, "e": 72.957 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 72.957, "e": 73.136 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 73.135, "e": 73.314 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 73.314, "e": 73.552 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 73.552, "e": 73.731 },
+        { "t": "cree", "l": "creer", "p": "VERB", "w": true, "s": 73.731, "e": 74.029 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 72.589,
+      "end": 74.1
+    },
+    {
+      "id": "s19",
+      "speaker": "ines",
+      "text": "Es mucho más útil estudiar veinte minutos cada día que tres horas el domingo.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 74.37, "e": 74.589 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 74.589, "e": 75.026 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 75.026, "e": 75.317 },
+        { "t": "útil", "l": "útil", "p": "ADJ", "w": true, "sp": true, "s": 75.317, "e": 75.681 },
+        { "t": "estudiar", "l": "estudiar", "p": "VERB", "w": true, "sp": true, "s": 75.681, "e": 76.337 },
+        { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true, "s": 76.337, "e": 76.847 },
+        { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true, "sp": true, "s": 76.847, "e": 77.43 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 77.43, "e": 77.794 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 77.794, "e": 78.085 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 78.086, "e": 78.377 },
+        { "t": "tres", "l": "tres", "p": "NUM", "w": false, "sp": true, "s": 78.377, "e": 78.741 },
+        { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 78.741, "e": 79.178 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 79.179, "e": 79.398 },
+        { "t": "domingo", "l": "domingo", "p": "NOUN", "w": true, "s": 79.397, "e": 79.98 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 74.35,
+      "end": 80.044
+    },
+    {
+      "id": "s20",
+      "speaker": "ines",
+      "text": "La constancia es más importante que la intensidad.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 80.294, "e": 80.524 },
+        { "t": "constancia", "l": "constancia", "p": "NOUN", "w": true, "sp": true, "s": 80.524, "e": 81.369 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 81.369, "e": 81.599 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 81.6, "e": 81.907 },
+        { "t": "importante", "l": "importante", "p": "ADJ", "w": true, "sp": true, "s": 81.907, "e": 82.752 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 82.752, "e": 83.059 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 83.059, "e": 83.289 },
+        { "t": "intensidad", "l": "intensidad", "p": "NOUN", "w": true, "s": 83.289, "e": 84.134 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 80.294,
+      "end": 84.236
+    },
+    {
+      "id": "s21",
+      "speaker": "rafael",
+      "text": "¿Qué recomiendas hacer en esos veinte minutos?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 84.646, "e": 84.919 },
+        {
+          "t": "recomiendas",
+          "l": "recomendar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 84.919,
+          "e": 85.738
+        },
+        { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 85.738, "e": 86.147 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 86.147, "e": 86.352 },
+        { "t": "esos", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 86.352, "e": 86.693 },
+        { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true, "s": 86.693, "e": 87.171 },
+        { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true, "s": 87.17, "e": 87.716 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 84.636,
+      "end": 87.78
+    },
+    {
+      "id": "s22",
+      "speaker": "ines",
+      "text": "Variar.",
+      "tokens": [
+        { "t": "Variar", "l": "variar", "p": "VERB", "w": true, "s": 88.19, "e": 88.82 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 88.18,
+      "end": 88.906
+    },
+    {
+      "id": "s23",
+      "speaker": "ines",
+      "text": "Un día escuchar un pódcast, otro día leer una noticia corta y otro repasar vocabulario con tarjetas.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 89.166, "e": 89.384 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 89.384, "e": 89.675 },
+        { "t": "escuchar", "l": "escuchar", "p": "VERB", "w": true, "sp": true, "s": 89.676, "e": 90.331 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 90.331, "e": 90.549 },
+        { "t": "pódcast", "l": "pódcast", "p": "NOUN", "w": true, "s": 90.55, "e": 91.133 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 91.132, "e": 91.496 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 91.497, "e": 91.788 },
+        { "t": "leer", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 91.788, "e": 92.152 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 92.152, "e": 92.443 },
+        { "t": "noticia", "l": "noticia", "p": "NOUN", "w": true, "sp": true, "s": 92.443, "e": 93.026 },
+        { "t": "corta", "l": "corto", "p": "ADJ", "w": true, "sp": true, "s": 93.026, "e": 93.463 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 93.463, "e": 93.609 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 93.609, "e": 93.973 },
+        { "t": "repasar", "l": "repasar", "p": "VERB", "w": true, "sp": true, "s": 93.973, "e": 94.556 },
+        {
+          "t": "vocabulario",
+          "l": "vocabulario",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 94.555,
+          "e": 95.429
+        },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 95.429, "e": 95.72 },
+        { "t": "tarjetas", "l": "tarjeta", "p": "NOUN", "w": true, "s": 95.721, "e": 96.376 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 89.156,
+      "end": 96.453
+    },
+    {
+      "id": "s24",
+      "speaker": "ines",
+      "text": "Y, si es posible, hablar una vez por semana con un nativo, aunque sea por videollamada.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "s": 96.713, "e": 96.852 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 96.852, "e": 97.06 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 97.059, "e": 97.267 },
+        { "t": "posible", "l": "posible", "p": "ADJ", "w": true, "s": 97.267, "e": 97.821 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "hablar", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 97.822, "e": 98.307 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 98.307, "e": 98.584 },
+        { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 98.584, "e": 98.861 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 98.861, "e": 99.138 },
+        { "t": "semana", "l": "semana", "p": "NOUN", "w": true, "sp": true, "s": 99.138, "e": 99.623 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 99.623, "e": 99.9 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 99.9, "e": 100.108 },
+        { "t": "nativo", "l": "nativo", "p": "NOUN", "w": true, "s": 100.108, "e": 100.593 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true, "s": 100.593, "e": 101.078 },
+        { "t": "sea", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 101.078, "e": 101.355 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 101.355, "e": 101.632 },
+        { "t": "videollamada", "l": "videollamada", "p": "NOUN", "w": true, "s": 101.632, "e": 102.533 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 96.703,
+      "end": 102.606
+    },
+    {
+      "id": "s25",
+      "speaker": "rafael",
+      "text": "¿Y las aplicaciones para el móvil?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 103.016, "e": 103.137 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 103.137, "e": 103.379 },
+        {
+          "t": "aplicaciones",
+          "l": "aplicación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 103.38,
+          "e": 104.168
+        },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 104.168, "e": 104.471 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 104.471, "e": 104.653 },
+        { "t": "móvil", "l": "móvil", "p": "NOUN", "w": true, "s": 104.652, "e": 105.016 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 103.006,
+      "end": 105.122
+    },
+    {
+      "id": "s26",
+      "speaker": "rafael",
+      "text": "¿Sirven de algo?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Sirven", "l": "servir", "p": "VERB", "w": true, "sp": true, "s": 105.392, "e": 105.929 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 105.929, "e": 106.159 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "s": 106.159, "e": 106.542 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 105.372,
+      "end": 106.644
+    },
+    {
+      "id": "s27",
+      "speaker": "ines",
+      "text": "Son útiles para crear una rutina, pero no son suficientes.",
+      "tokens": [
+        { "t": "Son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 107.054, "e": 107.326 },
+        { "t": "útiles", "l": "útil", "p": "ADJ", "w": true, "sp": true, "s": 107.326, "e": 107.801 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 107.801, "e": 108.14 },
+        { "t": "crear", "l": "crear", "p": "VERB", "w": true, "sp": true, "s": 108.14, "e": 108.547 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 108.547, "e": 108.819 },
+        { "t": "rutina", "l": "rutina", "p": "NOUN", "w": true, "s": 108.819, "e": 109.294 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 109.514, "e": 109.881 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 109.881, "e": 110.101 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 110.101, "e": 110.394 },
+        { "t": "suficientes", "l": "suficiente", "p": "ADJ", "w": true, "s": 110.394, "e": 111.274 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 107.044,
+      "end": 111.334
+    },
+    {
+      "id": "s28",
+      "speaker": "ines",
+      "text": "Te enseñan palabras sueltas, pero no te obligan a construir frases ni a mantener una conversación real.",
+      "tokens": [
+        { "t": "Te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 111.584, "e": 111.792 },
+        { "t": "enseñan", "l": "enseñar", "p": "VERB", "w": true, "sp": true, "s": 111.792, "e": 112.346 },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 112.346, "e": 112.97 },
+        { "t": "sueltas", "l": "suelto", "p": "ADJ", "w": true, "s": 112.97, "e": 113.524 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 113.714, "e": 114.034 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 114.034, "e": 114.226 },
+        { "t": "te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 114.225, "e": 114.417 },
+        { "t": "obligan", "l": "obligar", "p": "VERB", "w": true, "sp": true, "s": 114.417, "e": 114.928 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 114.928, "e": 115.056 },
+        { "t": "construir", "l": "construir", "p": "VERB", "w": true, "sp": true, "s": 115.056, "e": 115.695 },
+        { "t": "frases", "l": "frase", "p": "NOUN", "w": true, "sp": true, "s": 115.695, "e": 116.142 },
+        { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true, "s": 116.143, "e": 116.335 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 116.335, "e": 116.463 },
+        { "t": "mantener", "l": "mantener", "p": "VERB", "w": true, "sp": true, "s": 116.463, "e": 117.038 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 117.038, "e": 117.294 },
+        {
+          "t": "conversación",
+          "l": "conversación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 117.293,
+          "e": 118.124
+        },
+        { "t": "real", "l": "real", "p": "ADJ", "w": true, "s": 118.124, "e": 118.444 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 111.584,
+      "end": 118.55
+    },
+    {
+      "id": "s29",
+      "speaker": "rafael",
+      "text": "Para terminar, ¿qué le dirías a alguien de sesenta años que quiere empezar?",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 118.96, "e": 119.292 },
+        { "t": "terminar", "l": "terminar", "p": "VERB", "w": true, "s": 119.292, "e": 119.89 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 120.17, "e": 120.406 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 120.406, "e": 120.583 },
+        { "t": "dirías", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 120.583, "e": 120.996 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 120.996, "e": 121.114 },
+        { "t": "alguien", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 121.114, "e": 121.586 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 121.586, "e": 121.763 },
+        { "t": "sesenta", "l": "sesenta", "p": "NUM", "w": false, "sp": true, "s": 121.763, "e": 122.235 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 122.234, "e": 122.529 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 122.529, "e": 122.765 },
+        { "t": "quiere", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 122.765, "e": 123.178 },
+        { "t": "empezar", "l": "empezar", "p": "VERB", "w": true, "s": 123.178, "e": 123.65 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 118.95,
+      "end": 123.749
+    },
+    {
+      "id": "s30",
+      "speaker": "ines",
+      "text": "Que lo haga sin dudarlo.",
+      "tokens": [
+        { "t": "Que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 124.159, "e": 124.426 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 124.426, "e": 124.626 },
+        { "t": "haga", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 124.626, "e": 124.959 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 124.959, "e": 125.226 },
+        { "t": "dudarlo", "l": "dudar", "p": "VERB", "w": true, "s": 125.226, "e": 125.759 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 124.149,
+      "end": 125.85
+    },
+    {
+      "id": "s31",
+      "speaker": "ines",
+      "text": "Tengo alumnos jubilados que han llegado a un nivel alto.",
+      "tokens": [
+        { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 126.11, "e": 126.457 },
+        { "t": "alumnos", "l": "alumno", "p": "NOUN", "w": true, "sp": true, "s": 126.457, "e": 126.92 },
+        { "t": "jubilados", "l": "jubilado", "p": "NOUN", "w": true, "sp": true, "s": 126.92, "e": 127.499 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 127.499, "e": 127.73 },
+        { "t": "han", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 127.73, "e": 127.961 },
+        { "t": "llegado", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 127.961, "e": 128.424 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 128.424, "e": 128.54 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 128.54, "e": 128.714 },
+        { "t": "nivel", "l": "nivel", "p": "NOUN", "w": true, "sp": true, "s": 128.714, "e": 129.061 },
+        { "t": "alto", "l": "alto", "p": "ADJ", "w": true, "s": 129.061, "e": 129.35 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 126.1,
+      "end": 129.42
+    },
+    {
+      "id": "s32",
+      "speaker": "ines",
+      "text": "Además, aprender un idioma mantiene la mente activa, y eso es bueno a cualquier edad.",
+      "tokens": [
+        { "t": "Además", "l": "además", "p": "ADV", "w": true, "s": 129.681, "e": 130.15 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aprender", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 130.15, "e": 130.753 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 130.753, "e": 130.954 },
+        { "t": "idioma", "l": "idioma", "p": "NOUN", "w": true, "sp": true, "s": 130.954, "e": 131.423 },
+        { "t": "mantiene", "l": "mantener", "p": "VERB", "w": true, "sp": true, "s": 131.423, "e": 132.026 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 132.026, "e": 132.227 },
+        { "t": "mente", "l": "mente", "p": "NOUN", "w": true, "sp": true, "s": 132.227, "e": 132.629 },
+        { "t": "activa", "l": "activo", "p": "ADJ", "w": true, "s": 132.628, "e": 133.097 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 133.097, "e": 133.231 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 133.231, "e": 133.499 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 133.499, "e": 133.7 },
+        { "t": "bueno", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 133.7, "e": 134.102 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 134.102, "e": 134.236 },
+        { "t": "cualquier", "l": "cualquier", "p": "ADJ", "w": true, "sp": true, "s": 134.236, "e": 134.906 },
+        { "t": "edad", "l": "edad", "p": "NOUN", "w": true, "s": 134.906, "e": 135.241 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 129.671,
+      "end": 135.331
+    },
+    {
+      "id": "s33",
+      "speaker": "rafael",
+      "text": "Muchas gracias, Inés.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 135.751, "e": 136.357 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 136.357, "e": 137.049 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Inés", "l": "inés", "p": "PROPN", "w": false, "s": 137.049, "e": 137.482 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 135.731,
+      "end": 137.527
+    },
+    {
+      "id": "s34",
+      "speaker": "rafael",
+      "text": "Ha sido un placer.",
+      "tokens": [
+        { "t": "Ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 137.787, "e": 137.977 },
+        { "t": "sido", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 137.977, "e": 138.294 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 138.294, "e": 138.484 },
+        { "t": "placer", "l": "placer", "p": "NOUN", "w": true, "s": 138.484, "e": 138.927 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 137.777,
+      "end": 139.031
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "prejuicio",
+      "surface": "prejuicios",
+      "pos": "noun",
+      "def_en": "idea que se tiene sin conocer bien algo",
+      "def_es": { "en": "prejudice, preconception", "fr": "préjugé", "zh": "偏见", "ja": "偏見" },
+      "ref": "s7"
+    },
+    {
+      "lemma": "torpe",
+      "surface": "torpe",
+      "pos": "adjective",
+      "def_en": "que no hace las cosas con facilidad",
+      "def_es": { "en": "clumsy", "fr": "maladroit", "zh": "笨拙的", "ja": "不器用な" },
+      "ref": "s13"
+    },
+    {
+      "lemma": "jubilado",
+      "surface": "jubilados",
+      "pos": "adjective",
+      "def_en": "que ya no trabaja por su edad",
+      "def_es": { "en": "retired", "fr": "retraité", "zh": "退休的", "ja": "退職した" },
+      "ref": "s31"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Cuál es la idea principal de Inés?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "Adults can learn well; the belief is a prejudice." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Solo los niños llegan a hablar como nativos" },
+        { "id": "b", "text": "Los adultos pueden aprender idiomas muy bien" },
+        { "id": "c", "text": "Las aplicaciones bastan para hablar con soltura" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿En qué tienen ventaja los niños, según Inés?",
+      "evidence": ["s8"],
+      "rationale_es": { "en": "In pronunciation." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En aprender reglas de gramática" },
+        { "id": "b", "text": "En organizar su tiempo de estudio" },
+        { "id": "c", "text": "En cómo suenan al hablar" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué abandonan muchos adultos?",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "Lack of time and fear of mistakes." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "No tienen tiempo y temen cometer fallos" },
+        { "id": "b", "text": "Las clases les parecen demasiado caras" },
+        { "id": "c", "text": "Sus profesores no les dan bastante tarea" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Inés aconseja estudiar varias horas seguidas el fin de semana.",
+      "evidence": ["s19"],
+      "rationale_es": { "en": "She prefers twenty minutes a day." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Qué opina Inés de las aplicaciones para el móvil?",
+      "evidence": ["s27"],
+      "rationale_es": { "en": "Useful for routine but not enough." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Son la mejor forma de aprender" },
+        { "id": "b", "text": "Ayudan, pero no son bastante" },
+        { "id": "c", "text": "Hacen perder el tiempo a todos" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué beneficio extra menciona al final?",
+      "evidence": ["s32"],
+      "rationale_es": { "en": "It keeps the mind active." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Ayuda a encontrar un trabajo" },
+        { "id": "b", "text": "Permite viajar más barato" },
+        { "id": "c", "text": "Mantiene el cerebro en forma" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s20"],
+      "rationale_es": { "en": "*Constancia*: consistency." },
+      "type": "gap_fill",
+      "text": "Para Inés, la {{1}} es más importante que la intensidad.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["constancia"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abandonar", "abrir", "aceptar", "acompañar", "acostumbrarse", "activo", "además", "adulto", "algo",
+    "alto", "alumno", "aplicación", "aprender", "así", "aunque", "año", "bien", "bienvenido", "bueno", "cada",
+    "cierto", "con", "constancia", "construir", "conversación", "corto", "cosa", "crear", "creer", "cualquier",
+    "cuando", "cuánto", "cómo", "de", "decir", "dedicar", "deprisa", "desde", "después", "domingo", "dudar",
+    "día", "edad", "el", "empezar", "en", "enseñar", "entender", "entonces", "equivocarse", "error",
+    "escuchar", "ese", "estar", "esto", "estudiar", "extender", "falta", "formar", "frase", "gente",
+    "gramática", "haber", "hablar", "hacer", "hora", "hoy", "idioma", "importante", "incómodo", "intensidad",
+    "invitar", "jubilado", "leer", "llegar", "mantener", "mejor", "menos", "mente", "mi", "miedo", "minuto",
+    "mucho", "más", "móvil", "nativo", "ni", "nivel", "niño", "no", "nosotros", "noticia", "obligar",
+    "organizar", "otro", "palabra", "para", "parte", "pensar", "pero", "placer", "por", "porque", "posible",
+    "prejuicio", "proceso", "profesor", "pronunciación", "pódcast", "que", "querer", "qué", "real",
+    "recomendar", "regla", "repasar", "repente", "resultar", "rutina", "saber", "se", "semana", "sentir",
+    "ser", "servir", "si", "siempre", "sin", "sobre", "su", "suelto", "suficiente", "superar", "tanto",
+    "tarde", "tarjeta", "tener", "terminar", "tiempo", "todo", "torpe", "trabajar", "tú", "un", "variar",
+    "ventaja", "vez", "videollamada", "vocabulario", "y", "ya", "él", "útil"
+  ],
+  "difficulty": 1242,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6346, "A2": 0.7276, "B1": 0.9169, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 9.3,
+    "flesch_reading_ease": 79.6,
+    "checked_at": "2026-10-19T07:42:35.028Z"
+  },
+  "audio": {
+    "src": "audio/b2/es-b2-lis-006/v1.m4a",
+    "duration_s": 139.031,
+    "wpm": 136,
+    "provider": "piper",
+    "voices": { "ines": "sharvard-f", "rafael": "sharvard-m" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.76, 0.68, 0.22, 0.77, 0.98, 0.73, 1, 0.55, 0.69, 0.64, 0.81, 0.74, 0.06, 0.97, 1, 1, 0.98, 0.76,
+      0.23, 0.8, 0.78, 0.9, 0.96, 0.69, 0.8, 0.98, 0.95, 0.88, 0.94, 1, 0.65, 0.78, 1, 0.77, 0.84, 0.78, 0.91,
+      0.7, 0.53, 1, 0.9, 0.46, 0.7, 0.7, 0.76, 1, 0.77, 0.61, 0.87, 0.91, 0.92, 0.81, 0.8, 0.66, 0.77, 1, 0.75,
+      0.79, 0.88, 0.85, 0.58, 0.56, 0.96, 0.44, 0.49, 0.98, 0.63, 1, 0.76, 0.99, 0.44, 0.67, 1, 0.97, 0.91,
+      0.86, 0.78, 0.66, 1, 0.88, 0.82, 0.92, 0.99, 0.73, 0.68, 0.67, 0.2, 0.8, 0.8, 0.84, 0.67, 1, 0.92, 0.65,
+      0.66, 0.72, 0.85, 0.56, 1, 0.96, 0.64, 0.6, 0.83, 0.64, 0.87, 1, 0.79, 0.3, 0.58, 1, 0.58, 0.6, 0.53,
+      0.95, 0.89, 0.7, 0.92, 0.57, 0.43, 1, 0.71, 0.9, 0.88, 0.41, 0.87, 1, 0.52, 0.77, 0.7, 0.76, 0.99, 0.93,
+      0.73, 1, 0.89, 0.9, 0.88, 0.87, 0.64, 0.93, 0.74, 1, 0.64, 0.55, 0.07, 1, 0.68, 0.57, 0.73, 0.5, 0.1, 1,
+      0.6, 1, 0.72, 0.66, 0.67, 0.77, 0.67, 0.72, 0.66, 0.66, 0.91, 0.76, 0.62, 0.18, 0.55, 0.73, 1, 0.84,
+      0.72, 0.72, 0.69, 0.61, 0.69, 0.64, 0.74, 1, 0.96, 0.86, 0.28, 0.73, 1, 0.4, 0.74, 0.83, 1, 0.63, 0.89,
+      0.73, 0.61, 0.94, 0.87, 1, 0.95, 0.89, 0.91, 0.75, 0.93, 0.75, 0.99, 0.82, 0.69, 0.49, 1, 0.6, 0.76,
+      0.84, 0.95, 0.75, 0.66, 0.84, 0.64, 1, 0.94, 0.83, 0.68, 1, 0.78, 0.66, 0.84, 0.62, 0.55, 0.87, 0.81,
+      0.94, 0.89, 0.78, 0.76, 0.93, 1, 0.91, 0.44, 0.61, 1, 0.54, 1, 0.6, 0.64
+    ]
+  }
+}

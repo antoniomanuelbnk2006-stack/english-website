@@ -1,0 +1,546 @@
+{
+  "id": "es-b1-lis-013",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u07",
+  "series": "es-b1-u07-mensaje-concierto",
+  "skill": "listening",
+  "genre": "voicemail",
+  "title": "Un mensaje sobre el concierto",
+  "summary_es": {
+    "en": "A man leaves a voice message: tickets for the concert had sold out, but he may have found two.",
+    "fr": "Un homme laisse un message vocal : les billets du concert étaient épuisés, mais il en a peut-être trouvé deux.",
+    "zh": "一位男士留下语音留言：演唱会门票已售完，但他也许找到了两张。",
+    "ja": "男性が留守電に、コンサートのチケットは売り切れだが2枚手に入るかもしれないと残します。"
+  },
+  "topic": "culture",
+  "tags": ["música", "planes", "amigos"],
+  "can_do": ["L-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["entradas", "agotado", "mudanza", "confirmar"],
+  "est_minutes": 8,
+  "prediction_prompt": "Un amigo te deja un mensaje de voz sobre un concierto. ¿Qué crees que dice?",
+  "pre_teach": ["agotado", "mudanza"],
+  "speakers": [
+    { "id": "ricardo", "name": "Ricardo", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "ricardo",
+      "text": "Hola, Marta, soy Ricardo.",
+      "tokens": [
+        { "t": "Hola", "l": "hola", "p": "INTJ", "w": false, "s": 0.01, "e": 0.36 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Marta", "l": "marta", "p": "PROPN", "w": false, "s": 0.55, "e": 1.23 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "soy", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 1.45, "e": 1.78 },
+        { "t": "Ricardo", "l": "ricardo", "p": "PROPN", "w": false, "s": 1.78, "e": 2.44 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 2.522
+    },
+    {
+      "id": "s2",
+      "speaker": "ricardo",
+      "text": "Te llamo porque tengo noticias sobre el concierto del sábado.",
+      "tokens": [
+        { "t": "Te", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 2.782, "e": 2.99 },
+        { "t": "llamo", "l": "llamarse", "p": "VERB", "w": true, "sp": true, "s": 2.99, "e": 3.406 },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 3.406, "e": 3.891 },
+        { "t": "tengo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 3.892, "e": 4.308 },
+        { "t": "noticias", "l": "noticia", "p": "NOUN", "w": true, "sp": true, "s": 4.308, "e": 4.932 },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 4.932, "e": 5.348 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 5.348, "e": 5.556 },
+        { "t": "concierto", "l": "concierto", "p": "NOUN", "w": true, "sp": true, "s": 5.556, "e": 6.249 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 6.249, "e": 6.526 },
+        { "t": "sábado", "l": "sábado", "p": "NOUN", "w": true, "s": 6.527, "e": 7.012 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 2.772,
+      "end": 7.119
+    },
+    {
+      "id": "s3",
+      "speaker": "ricardo",
+      "text": "¿Recuerdas que queríamos ir a ver a esa banda de rock en la sala del puerto?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Recuerdas", "l": "recordar", "p": "VERB", "w": true, "sp": true, "s": 7.389, "e": 8.053 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 8.053, "e": 8.319 },
+        { "t": "queríamos", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 8.319, "e": 8.983 },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 8.983, "e": 9.182 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 9.182, "e": 9.315 },
+        { "t": "ver", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 9.315, "e": 9.581 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 9.58, "e": 9.713 },
+        { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 9.713, "e": 9.979 },
+        { "t": "banda", "l": "banda", "p": "NOUN", "w": true, "sp": true, "s": 9.979, "e": 10.377 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 10.377, "e": 10.576 },
+        { "t": "rock", "l": "rock", "p": "NOUN", "w": true, "sp": true, "s": 10.576, "e": 10.908 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 10.908, "e": 11.107 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.107, "e": 11.306 },
+        { "t": "sala", "l": "sala", "p": "NOUN", "w": true, "sp": true, "s": 11.307, "e": 11.639 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 11.639, "e": 11.905 },
+        { "t": "puerto", "l": "puerto", "p": "NOUN", "w": true, "s": 11.904, "e": 12.369 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.369,
+      "end": 12.453
+    },
+    {
+      "id": "s4",
+      "speaker": "ricardo",
+      "text": "Pues ayer miré la página web y las entradas se habían agotado.",
+      "tokens": [
+        { "t": "Pues", "l": "pues", "p": "SCONJ", "w": true, "sp": true, "s": 12.723, "e": 13.097 },
+        { "t": "ayer", "l": "ayer", "p": "ADV", "w": true, "sp": true, "s": 13.097, "e": 13.471 },
+        { "t": "miré", "l": "mirar", "p": "VERB", "w": true, "sp": true, "s": 13.471, "e": 13.845 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 13.846, "e": 14.071 },
+        { "t": "página", "l": "página", "p": "NOUN", "w": true, "sp": true, "s": 14.07, "e": 14.594 },
+        { "t": "web", "l": "web", "p": "NOUN", "w": true, "sp": true, "s": 14.594, "e": 14.893 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 14.893, "e": 15.043 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 15.043, "e": 15.342 },
+        { "t": "entradas", "l": "entrar", "p": "VERB", "w": true, "sp": true, "s": 15.342, "e": 16.016 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 16.016, "e": 16.241 },
+        { "t": "habían", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 16.24, "e": 16.764 },
+        { "t": "agotado", "l": "agotar", "p": "VERB", "w": true, "s": 16.764, "e": 17.363 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.703,
+      "end": 17.452
+    },
+    {
+      "id": "s5",
+      "speaker": "ricardo",
+      "text": "Me llevé una desilusión enorme.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 17.712, "e": 17.954 },
+        { "t": "llevé", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 17.954, "e": 18.438 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 18.438, "e": 18.761 },
+        { "t": "desilusión", "l": "desilusión", "p": "NOUN", "w": true, "sp": true, "s": 18.76, "e": 19.647 },
+        { "t": "enorme", "l": "enorme", "p": "ADJ", "w": true, "s": 19.647, "e": 20.212 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.702,
+      "end": 20.353
+    },
+    {
+      "id": "s6",
+      "speaker": "ricardo",
+      "text": "Pero esta mañana he hablado con mi hermano.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 20.613, "e": 20.925 },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 20.925, "e": 21.237 },
+        { "t": "mañana", "l": "mañana", "p": "NOUN", "w": true, "sp": true, "s": 21.236, "e": 21.672 },
+        { "t": "he", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 21.673, "e": 21.86 },
+        { "t": "hablado", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 21.86, "e": 22.359 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 22.358, "e": 22.607 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 22.607, "e": 22.794 },
+        { "t": "hermano", "l": "hermano", "p": "NOUN", "w": true, "s": 22.794, "e": 23.293 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.603,
+      "end": 23.406
+    },
+    {
+      "id": "s7",
+      "speaker": "ricardo",
+      "text": "Su amigo trabaja allí y puede conseguirnos dos entradas por veinte euros cada una.",
+      "tokens": [
+        { "t": "Su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 23.666, "e": 23.903 },
+        { "t": "amigo", "l": "amigo", "p": "NOUN", "w": true, "sp": true, "s": 23.903, "e": 24.376 },
+        { "t": "trabaja", "l": "trabajar", "p": "VERB", "w": true, "sp": true, "s": 24.376, "e": 25.007 },
+        { "t": "allí", "l": "allí", "p": "ADV", "w": true, "sp": true, "s": 25.007, "e": 25.402 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 25.402, "e": 25.56 },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 25.56, "e": 26.033 },
+        {
+          "t": "conseguirnos",
+          "l": "conseguir",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 26.033,
+          "e": 27.059
+        },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 27.059, "e": 27.375 },
+        { "t": "entradas", "l": "entrar", "p": "VERB", "w": true, "sp": true, "s": 27.374, "e": 28.084 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 28.085, "e": 28.401 },
+        { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true, "s": 28.4, "e": 28.952 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "sp": true, "s": 28.952, "e": 29.425 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 29.426, "e": 29.821 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "s": 29.82, "e": 30.136 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.656,
+      "end": 30.276
+    },
+    {
+      "id": "s8",
+      "speaker": "ricardo",
+      "text": "No son baratas, pero creo que merece la pena.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 30.536, "e": 30.8 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 30.8, "e": 31.152 },
+        { "t": "baratas", "l": "barato", "p": "ADJ", "w": true, "s": 31.152, "e": 31.856 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 32.106, "e": 32.418 },
+        { "t": "creo", "l": "creer", "p": "VERB", "w": true, "sp": true, "s": 32.418, "e": 32.73 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 32.73, "e": 32.98 },
+        { "t": "merece", "l": "merecer", "p": "VERB", "w": true, "sp": true, "s": 32.98, "e": 33.417 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 33.417, "e": 33.604 },
+        { "t": "pena", "l": "pena", "p": "NOUN", "w": true, "s": 33.604, "e": 33.916 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 30.526,
+      "end": 34.097
+    },
+    {
+      "id": "s9",
+      "speaker": "ricardo",
+      "text": "El concierto empieza a las nueve, así que podríamos quedar a las ocho en la puerta.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 34.357, "e": 34.567 },
+        { "t": "concierto", "l": "concierto", "p": "NOUN", "w": true, "sp": true, "s": 34.567, "e": 35.267 },
+        { "t": "empieza", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 35.267, "e": 35.827 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 35.827, "e": 35.967 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 35.967, "e": 36.247 },
+        { "t": "nueve", "l": "nueve", "p": "NUM", "w": false, "s": 36.247, "e": 36.667 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "así", "l": "así", "p": "ADV", "w": true, "sp": true, "s": 36.957, "e": 37.228 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 37.228, "e": 37.499 },
+        { "t": "podríamos", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 37.499, "e": 38.177 },
+        { "t": "quedar", "l": "quedar", "p": "VERB", "w": true, "sp": true, "s": 38.177, "e": 38.651 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 38.651, "e": 38.787 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 38.786, "e": 39.057 },
+        { "t": "ocho", "l": "ocho", "p": "NUM", "w": false, "sp": true, "s": 39.057, "e": 39.396 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 39.396, "e": 39.599 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 39.599, "e": 39.802 },
+        { "t": "puerta", "l": "puerta", "p": "NOUN", "w": true, "s": 39.803, "e": 40.277 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.347,
+      "end": 40.425
+    },
+    {
+      "id": "s10",
+      "speaker": "ricardo",
+      "text": "Si quieres, antes podemos cenar algo en el bar de la esquina.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 40.685, "e": 40.922 },
+        { "t": "quieres", "l": "querer", "p": "VERB", "w": true, "s": 40.922, "e": 41.555 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true, "s": 41.785, "e": 42.201 },
+        { "t": "podemos", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 42.201, "e": 42.756 },
+        { "t": "cenar", "l": "cenar", "p": "VERB", "w": true, "sp": true, "s": 42.756, "e": 43.172 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 43.173, "e": 43.52 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 43.52, "e": 43.728 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 43.728, "e": 43.936 },
+        { "t": "bar", "l": "bar", "p": "NOUN", "w": true, "sp": true, "s": 43.936, "e": 44.214 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 44.214, "e": 44.422 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 44.422, "e": 44.63 },
+        { "t": "esquina", "l": "esquina", "p": "NOUN", "w": true, "s": 44.63, "e": 45.185 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 40.675,
+      "end": 45.349
+    },
+    {
+      "id": "s11",
+      "speaker": "ricardo",
+      "text": "Yo invito, porque el mes pasado me ayudaste con la mudanza.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 45.609, "e": 45.894 },
+        { "t": "invito", "l": "invitar", "p": "VERB", "w": true, "s": 45.894, "e": 46.559 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 46.819, "e": 47.283 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 47.283, "e": 47.482 },
+        { "t": "mes", "l": "mes", "p": "NOUN", "w": true, "sp": true, "s": 47.482, "e": 47.747 },
+        { "t": "pasado", "l": "pasado", "p": "ADJ", "w": true, "sp": true, "s": 47.747, "e": 48.211 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 48.21, "e": 48.409 },
+        { "t": "ayudaste", "l": "ayudar", "p": "VERB", "w": true, "sp": true, "s": 48.409, "e": 49.005 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 49.005, "e": 49.27 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 49.27, "e": 49.469 },
+        { "t": "mudanza", "l": "mudanza", "p": "NOUN", "w": true, "s": 49.469, "e": 49.999 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 45.599,
+      "end": 50.129
+    },
+    {
+      "id": "s12",
+      "speaker": "ricardo",
+      "text": "Tengo que confirmar con mi hermano antes de las seis de la tarde.",
+      "tokens": [
+        { "t": "Tengo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 50.389, "e": 50.823 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 50.823, "e": 51.112 },
+        { "t": "confirmar", "l": "confirmar", "p": "VERB", "w": true, "sp": true, "s": 51.112, "e": 51.835 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 51.835, "e": 52.124 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 52.124, "e": 52.341 },
+        { "t": "hermano", "l": "hermano", "p": "NOUN", "w": true, "sp": true, "s": 52.341, "e": 52.919 },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "sp": true, "s": 52.92, "e": 53.354 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 53.354, "e": 53.571 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 53.571, "e": 53.86 },
+        { "t": "seis", "l": "seis", "p": "NUM", "w": false, "sp": true, "s": 53.86, "e": 54.222 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 54.221, "e": 54.438 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 54.438, "e": 54.655 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "s": 54.655, "e": 55.089 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 50.379,
+      "end": 55.236
+    },
+    {
+      "id": "s13",
+      "speaker": "ricardo",
+      "text": "Por favor, llámame cuando escuches este mensaje o mándame un mensaje de texto.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 55.496, "e": 55.74 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 55.74, "e": 56.106 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "llámame", "l": "llamar", "p": "VERB", "w": true, "sp": true, "s": 56.416, "e": 56.981 },
+        { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 56.981, "e": 57.475 },
+        { "t": "escuches", "l": "escuchar", "p": "VERB", "w": true, "sp": true, "s": 57.475, "e": 58.11 },
+        { "t": "este", "l": "este", "p": "DET", "w": true, "sp": true, "s": 58.11, "e": 58.463 },
+        { "t": "mensaje", "l": "mensaje", "p": "NOUN", "w": true, "sp": true, "s": 58.463, "e": 59.028 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 59.028, "e": 59.169 },
+        { "t": "mándame", "l": "mandar", "p": "VERB", "w": true, "sp": true, "s": 59.169, "e": 59.734 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 59.734, "e": 59.946 },
+        { "t": "mensaje", "l": "mensaje", "p": "NOUN", "w": true, "sp": true, "s": 59.946, "e": 60.511 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 60.511, "e": 60.723 },
+        { "t": "texto", "l": "texto", "p": "NOUN", "w": true, "s": 60.722, "e": 61.146 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 55.486,
+      "end": 61.28
+    },
+    {
+      "id": "s14",
+      "speaker": "ricardo",
+      "text": "Si no puedes venir, no pasa nada: se lo ofreceré a otro amigo.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 61.54, "e": 61.766 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 61.766, "e": 61.992 },
+        { "t": "puedes", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 61.992, "e": 62.519 },
+        { "t": "venir", "l": "venir", "p": "VERB", "w": true, "s": 62.518, "e": 62.97 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 63.24, "e": 63.487 },
+        { "t": "pasa", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 63.487, "e": 63.899 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "s": 63.898, "e": 64.31 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 64.56, "e": 64.769 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 64.769, "e": 64.978 },
+        { "t": "ofreceré", "l": "ofrecer", "p": "VERB", "w": true, "sp": true, "s": 64.978, "e": 65.605 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 65.605, "e": 65.744 },
+        { "t": "otro", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 65.744, "e": 66.092 },
+        { "t": "amigo", "l": "amigo", "p": "NOUN", "w": true, "s": 66.092, "e": 66.51 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 61.53,
+      "end": 66.633
+    },
+    {
+      "id": "s15",
+      "speaker": "ricardo",
+      "text": "Espero que estés bien y que podamos vernos pronto.",
+      "tokens": [
+        { "t": "Espero", "l": "esperar", "p": "VERB", "w": true, "sp": true, "s": 66.883, "e": 67.408 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 67.408, "e": 67.708 },
+        { "t": "estés", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 67.708, "e": 68.158 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true, "s": 68.158, "e": 68.533 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 68.533, "e": 68.683 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 68.683, "e": 68.983 },
+        { "t": "podamos", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 68.983, "e": 69.583 },
+        { "t": "vernos", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 69.583, "e": 70.108 },
+        { "t": "pronto", "l": "pronto", "p": "ADV", "w": true, "s": 70.108, "e": 70.633 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 66.883,
+      "end": 70.715
+    },
+    {
+      "id": "s16",
+      "speaker": "ricardo",
+      "text": "Un abrazo y hasta luego.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 70.975, "e": 71.19 },
+        { "t": "abrazo", "l": "abrazo", "p": "NOUN", "w": true, "sp": true, "s": 71.19, "e": 71.692 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 71.692, "e": 71.835 },
+        { "t": "hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 71.835, "e": 72.265 },
+        { "t": "luego", "l": "luego", "p": "ADV", "w": true, "s": 72.265, "e": 72.695 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 70.965,
+      "end": 72.806
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "entrada",
+      "surface": "entradas",
+      "pos": "noun",
+      "def_en": "billete para entrar a un espectáculo",
+      "def_es": { "en": "tickets", "fr": "billets, places", "zh": "门票", "ja": "チケット" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "agotarse",
+      "surface": "agotado",
+      "pos": "verb",
+      "def_en": "venderse todo lo que había",
+      "def_es": { "en": "to sell out", "fr": "être épuisé", "zh": "售罄", "ja": "売り切れる" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "mudanza",
+      "surface": "mudanza",
+      "pos": "noun",
+      "def_en": "cambio de una casa a otra",
+      "def_es": { "en": "move (house)", "fr": "déménagement", "zh": "搬家", "ja": "引っ越し" },
+      "ref": "s11"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Para qué llama Ricardo a Marta?",
+      "evidence": ["s2", "s7"],
+      "rationale_es": { "en": "To propose going to the concert." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para cancelar una cena de trabajo" },
+        { "id": "b", "text": "Para proponerle ir a un concierto" },
+        { "id": "c", "text": "Para pedirle dinero prestado" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuánto cuesta cada entrada?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "Twenty euros each." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Doce euros" },
+        { "id": "b", "text": "Treinta euros" },
+        { "id": "c", "text": "Veinte euros" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿A qué hora quiere quedar Ricardo?",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "At eight." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "A las ocho" },
+        { "id": "b", "text": "A las nueve" },
+        { "id": "c", "text": "A las seis" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Ricardo ya tiene las entradas.",
+      "evidence": ["s12"],
+      "rationale_es": { "en": "He still has to confirm." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Por qué invita Ricardo a cenar?",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "She helped him move." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Porque es su cumpleaños hoy" },
+        { "id": "b", "text": "Porque ella le ayudó antes" },
+        { "id": "c", "text": "Porque ha ganado un premio" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s13"],
+      "rationale_es": { "en": "*Mensaje de texto*: text message." },
+      "type": "gap_fill",
+      "text": "Marta puede llamarle o mandarle un mensaje de {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["texto"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abrazo", "agotar", "algo", "allí", "amigo", "antes", "así", "ayer", "ayudar", "banda", "bar",
+    "barato", "bien", "cada", "cenar", "con", "concierto", "confirmar", "conseguir", "creer", "cuando", "de",
+    "desilusión", "el", "empezar", "en", "enorme", "entrar", "escuchar", "ese", "esperar", "esquina", "estar",
+    "este", "euro", "favor", "haber", "hablar", "hasta", "hermano", "invitar", "ir", "llamar", "llamarse",
+    "llevar", "luego", "mandar", "mañana", "mensaje", "merecer", "mes", "mi", "mirar", "mudanza", "no",
+    "noticia", "o", "ofrecer", "otro", "pasado", "pasar", "pena", "pero", "poder", "por", "porque", "pronto",
+    "puerta", "puerto", "pues", "página", "que", "quedar", "querer", "recordar", "rock", "sala", "se", "ser",
+    "si", "sobre", "su", "sábado", "tarde", "tener", "texto", "trabajar", "tú", "un", "venir", "ver", "web",
+    "y", "yo", "él"
+  ],
+  "difficulty": 1078,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7284, "A2": 0.9198, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 10.6,
+    "flesch_reading_ease": 85.5,
+    "checked_at": "2026-10-19T07:35:31.655Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-013/v1.m4a",
+    "duration_s": 72.806,
+    "wpm": 140,
+    "provider": "piper",
+    "voices": { "ricardo": "sharvard-m" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      0.84, 0.22, 0.75, 0.57, 0.11, 0.6, 0.97, 1, 0.03, 0.62, 1, 0.57, 0.38, 0.53, 0.57, 0.51, 0.45, 0.5, 0.39,
+      0.71, 0.57, 0.72, 0.28, 0.06, 0.73, 0.99, 0.57, 0.54, 1, 0.64, 0.99, 0.87, 0.69, 0.91, 0.83, 0.91, 0.57,
+      1, 0.59, 0.61, 0.15, 0.16, 1, 0.65, 0.58, 0.89, 0.91, 0.77, 0.74, 0.18, 0.62, 0.32, 0.93, 0.56, 0.82,
+      0.79, 0.71, 0.09, 0.43, 0.79, 0.83, 1, 0.42, 0.75, 0.59, 0.5, 0.1, 0.05, 0.7, 0.43, 0.61, 0.47, 1, 0.97,
+      0.48, 0.56, 0.56, 0.01, 0.71, 0.79, 0.86, 1, 0.91, 0.65, 0.28, 0.54, 0.79, 0.83, 0.66, 0.57, 0.81, 0.37,
+      0.72, 0.6, 0.69, 0.65, 0.66, 1, 0.62, 0.2, 0.27, 0.99, 0.55, 1, 0.56, 0.31, 0.56, 0.72, 0.62, 0.48, 0.82,
+      0.53, 0.02, 0.56, 0.6, 0.93, 0.74, 0.87, 0.71, 0.78, 0.61, 0.64, 0.72, 0.8, 0.66, 1, 0.52, 0.95, 0.75,
+      0.57, 0.89, 0.66, 0.25, 0.01, 0.45, 0.92, 0.75, 0.83, 0.93, 0.39, 0.65, 0.55, 0.9, 0.9, 0.45, 1, 0.72,
+      0.27, 0.33, 0.03, 0.94, 1, 0.65, 0.39, 0.68, 0.56, 0.7, 0.8, 0.64, 0.59, 0.39, 0.55, 0.69, 0.68, 0.21,
+      0.01, 1, 0.57, 0.49, 0.37, 0.99, 0.51, 0.49, 0.98, 0.43, 0.63, 0.62, 0.66, 0.66, 0.58, 0.58, 0.1, 0.04,
+      0.72, 0.61, 0.03, 1, 0.57, 0.74, 0.63, 0.47, 0.5, 0.51, 0.49, 0.61, 0.76, 0.57, 0.57, 0.65, 0.61, 0.56,
+      0.11, 0.15, 0.4, 0.7, 0.84, 0.73, 0.42, 0.43, 1, 0.49, 0.79, 0.17, 0.59, 0.52, 0.44, 0.86, 0.68, 0.45,
+      0.07, 0.43, 0.97, 0.51, 0.8, 0.79, 0.92, 0.53, 0.57, 0.95, 0.91, 1, 0.71, 0.15, 0.15, 0.78, 1, 0.45,
+      0.73, 0.43, 0.27
+    ]
+  }
+}

@@ -1,0 +1,627 @@
+{
+  "id": "es-b1-lis-015",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "unit": "es-b1-u07",
+  "series": "es-b1-u07-cine-series",
+  "skill": "listening",
+  "genre": "discussion",
+  "title": "¿Cine o series?",
+  "summary_es": {
+    "en": "Two friends discuss whether it is better to go to the cinema or watch series at home.",
+    "fr": "Deux amis discutent pour savoir s’il vaut mieux aller au cinéma ou regarder des séries chez soi.",
+    "zh": "两位朋友讨论去电影院看电影好还是在家看剧好。",
+    "ja": "2人の友人が、映画館に行くのと家でシリーズを見るのとどちらが良いかを話し合います。"
+  },
+  "topic": "media",
+  "tags": ["ocio", "cine", "opinión"],
+  "can_do": ["L-B1-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["pantalla", "palomitas", "personajes", "alargarse"],
+  "est_minutes": 8,
+  "prediction_prompt": "¿Prefieres el cine o las series? ¿Por qué?",
+  "pre_teach": ["palomitas", "personajes"],
+  "speakers": [
+    { "id": "ana", "name": "Ana", "accent": "es-ES", "gender": "female" },
+    { "id": "pablo", "name": "Pablo", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 130,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "ana",
+      "text": "Pablo, ¿tú qué prefieres, ir al cine o ver series en casa?",
+      "tokens": [
+        { "t": "Pablo", "l": "pablo", "p": "PROPN", "w": false, "s": 0.01, "e": 0.434 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "tú", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 0.434, "e": 0.646 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 0.647, "e": 0.93 },
+        { "t": "prefieres", "l": "preferir", "p": "VERB", "w": true, "s": 0.929, "e": 1.636 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ir", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 1.637, "e": 1.849 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 1.849, "e": 2.061 },
+        { "t": "cine", "l": "cine", "p": "NOUN", "w": true, "sp": true, "s": 2.061, "e": 2.415 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 2.415, "e": 2.556 },
+        { "t": "ver", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 2.556, "e": 2.839 },
+        { "t": "series", "l": "serie", "p": "NOUN", "w": true, "sp": true, "s": 2.839, "e": 3.334 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 3.334, "e": 3.546 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 3.546, "e": 3.9 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 3.974
+    },
+    {
+      "id": "s2",
+      "speaker": "pablo",
+      "text": "Depende.",
+      "tokens": [
+        { "t": "Depende", "l": "depender", "p": "VERB", "w": true, "s": 4.384, "e": 5.044 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.374,
+      "end": 5.167
+    },
+    {
+      "id": "s3",
+      "speaker": "pablo",
+      "text": "Para mí, ver una película en una pantalla grande es una experiencia especial.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 5.427, "e": 5.733 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "s": 5.733, "e": 5.917 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ver", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 6.127, "e": 6.402 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 6.402, "e": 6.677 },
+        { "t": "película", "l": "película", "p": "NOUN", "w": true, "sp": true, "s": 6.676, "e": 7.294 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 7.295, "e": 7.501 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 7.501, "e": 7.776 },
+        { "t": "pantalla", "l": "pantalla", "p": "NOUN", "w": true, "sp": true, "s": 7.775, "e": 8.393 },
+        { "t": "grande", "l": "grande", "p": "ADJ", "w": true, "sp": true, "s": 8.393, "e": 8.874 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 8.874, "e": 9.08 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 9.08, "e": 9.355 },
+        {
+          "t": "experiencia",
+          "l": "experiencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 9.355,
+          "e": 10.179
+        },
+        { "t": "especial", "l": "especial", "p": "ADJ", "w": true, "s": 10.179, "e": 10.797 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 5.417,
+      "end": 10.92
+    },
+    {
+      "id": "s4",
+      "speaker": "ana",
+      "text": "Pues yo prefiero las series.",
+      "tokens": [
+        { "t": "Pues", "l": "pues", "p": "SCONJ", "w": true, "sp": true, "s": 11.33, "e": 11.701 },
+        { "t": "yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 11.701, "e": 11.924 },
+        { "t": "prefiero", "l": "preferir", "p": "VERB", "w": true, "sp": true, "s": 11.924, "e": 12.593 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 12.593, "e": 12.89 },
+        { "t": "series", "l": "serie", "p": "NOUN", "w": true, "s": 12.89, "e": 13.41 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.32,
+      "end": 13.474
+    },
+    {
+      "id": "s5",
+      "speaker": "ana",
+      "text": "Puedo verlas cuando quiero y parar si tengo sueño.",
+      "tokens": [
+        { "t": "Puedo", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 13.734, "e": 14.131 },
+        { "t": "verlas", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 14.131, "e": 14.594 },
+        { "t": "cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 14.595, "e": 15.058 },
+        { "t": "quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 15.058, "e": 15.521 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 15.521, "e": 15.653 },
+        { "t": "parar", "l": "parar", "p": "VERB", "w": true, "sp": true, "s": 15.654, "e": 16.051 },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 16.051, "e": 16.25 },
+        { "t": "tengo", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 16.25, "e": 16.647 },
+        { "t": "sueño", "l": "sueño", "p": "NOUN", "w": true, "s": 16.647, "e": 17.044 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.724,
+      "end": 17.146
+    },
+    {
+      "id": "s6",
+      "speaker": "pablo",
+      "text": "Eso es verdad, pero en casa siempre hay distracciones: el móvil, el correo, un mensaje.",
+      "tokens": [
+        { "t": "Eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 17.556, "e": 17.813 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 17.813, "e": 18.006 },
+        { "t": "verdad", "l": "verdad", "p": "NOUN", "w": true, "s": 18.006, "e": 18.456 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 18.716, "e": 19.048 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 19.048, "e": 19.247 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true, "s": 19.247, "e": 19.579 },
+        { "t": "siempre", "l": "siempre", "p": "ADV", "w": true, "sp": true, "s": 19.579, "e": 20.11 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 20.111, "e": 20.377 },
+        { "t": "distracciones", "l": "distracción", "p": "NOUN", "w": true, "s": 20.376, "e": 21.306 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 21.476, "e": 21.706 },
+        { "t": "móvil", "l": "móvil", "p": "NOUN", "w": true, "s": 21.706, "e": 22.166 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 22.356, "e": 22.587 },
+        { "t": "correo", "l": "correo", "p": "NOUN", "w": true, "s": 22.587, "e": 23.126 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 23.266, "e": 23.487 },
+        { "t": "mensaje", "l": "mensaje", "p": "NOUN", "w": true, "s": 23.487, "e": 24.076 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.546,
+      "end": 24.147
+    },
+    {
+      "id": "s7",
+      "speaker": "ana",
+      "text": "Tienes razón.",
+      "tokens": [
+        { "t": "Tienes", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 24.557, "e": 25.095 },
+        { "t": "razón", "l": "razón", "p": "NOUN", "w": true, "s": 25.095, "e": 25.557 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 24.547,
+      "end": 25.666
+    },
+    {
+      "id": "s8",
+      "speaker": "ana",
+      "text": "Aun así, el cine es muy caro.",
+      "tokens": [
+        { "t": "Aun", "l": "aun", "p": "ADV", "w": true, "sp": true, "s": 25.926, "e": 26.276 },
+        { "t": "así", "l": "así", "p": "ADV", "w": true, "s": 26.276, "e": 26.626 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 26.826, "e": 27.039 },
+        { "t": "cine", "l": "cine", "p": "NOUN", "w": true, "sp": true, "s": 27.039, "e": 27.394 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 27.394, "e": 27.607 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 27.607, "e": 27.891 },
+        { "t": "caro", "l": "caro", "p": "ADJ", "w": true, "s": 27.891, "e": 28.246 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.916,
+      "end": 28.33
+    },
+    {
+      "id": "s9",
+      "speaker": "ana",
+      "text": "Entre la entrada y las palomitas, gastas unos veinte euros.",
+      "tokens": [
+        { "t": "Entre", "l": "entre", "p": "ADP", "w": true, "sp": true, "s": 28.59, "e": 29.001 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 29.001, "e": 29.206 },
+        { "t": "entrada", "l": "entrar", "p": "VERB", "w": true, "sp": true, "s": 29.206, "e": 29.754 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 29.754, "e": 29.891 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 29.891, "e": 30.165 },
+        { "t": "palomitas", "l": "palomitas", "p": "NOUN", "w": true, "s": 30.165, "e": 30.85 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "gastas", "l": "gastar", "p": "VERB", "w": true, "sp": true, "s": 30.99, "e": 31.519 },
+        { "t": "unos", "l": "un", "p": "DET", "w": true, "sp": true, "s": 31.519, "e": 31.897 },
+        { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "sp": true, "s": 31.897, "e": 32.426 },
+        { "t": "euros", "l": "euro", "p": "NOUN", "w": true, "s": 32.426, "e": 32.88 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.58,
+      "end": 32.95
+    },
+    {
+      "id": "s10",
+      "speaker": "pablo",
+      "text": "Sí, no es barato.",
+      "tokens": [
+        { "t": "Sí", "l": "sí", "p": "INTJ", "w": false, "s": 33.36, "e": 33.77 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 33.93, "e": 34.131 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 34.131, "e": 34.332 },
+        { "t": "barato", "l": "barato", "p": "ADJ", "w": true, "s": 34.332, "e": 34.8 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 33.35,
+      "end": 34.895
+    },
+    {
+      "id": "s11",
+      "speaker": "pablo",
+      "text": "Por eso voy solo una vez al mes, y elijo la película con cuidado.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 35.155, "e": 35.44 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 35.44, "e": 35.725 },
+        { "t": "voy", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 35.725, "e": 36.01 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 36.01, "e": 36.366 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 36.366, "e": 36.651 },
+        { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 36.651, "e": 36.936 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 36.936, "e": 37.15 },
+        { "t": "mes", "l": "mes", "p": "NOUN", "w": true, "s": 37.15, "e": 37.435 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 37.585, "e": 37.716 },
+        { "t": "elijo", "l": "elegir", "p": "VERB", "w": true, "sp": true, "s": 37.716, "e": 38.11 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 38.11, "e": 38.307 },
+        { "t": "película", "l": "película", "p": "NOUN", "w": true, "sp": true, "s": 38.307, "e": 38.898 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 38.898, "e": 39.161 },
+        { "t": "cuidado", "l": "cuidar", "p": "VERB", "w": true, "s": 39.16, "e": 39.685 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 35.145,
+      "end": 39.805
+    },
+    {
+      "id": "s12",
+      "speaker": "ana",
+      "text": "A mí me gustan las series porque cuentan historias largas.",
+      "tokens": [
+        { "t": "A", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 40.215, "e": 40.354 },
+        { "t": "mí", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 40.354, "e": 40.563 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 40.563, "e": 40.772 },
+        { "t": "gustan", "l": "gustar", "p": "VERB", "w": true, "sp": true, "s": 40.772, "e": 41.26 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 41.26, "e": 41.539 },
+        { "t": "series", "l": "serie", "p": "NOUN", "w": true, "sp": true, "s": 41.538, "e": 42.026 },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 42.026, "e": 42.514 },
+        { "t": "cuentan", "l": "contar", "p": "VERB", "w": true, "sp": true, "s": 42.514, "e": 43.071 },
+        { "t": "historias", "l": "historia", "p": "NOUN", "w": true, "sp": true, "s": 43.071, "e": 43.768 },
+        { "t": "largas", "l": "largo", "p": "ADJ", "w": true, "s": 43.767, "e": 44.255 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 40.205,
+      "end": 44.307
+    },
+    {
+      "id": "s13",
+      "speaker": "ana",
+      "text": "En una película de dos horas no hay tiempo para conocer bien a los personajes.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 44.567, "e": 44.774 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 44.774, "e": 45.05 },
+        { "t": "película", "l": "película", "p": "NOUN", "w": true, "sp": true, "s": 45.051, "e": 45.673 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 45.673, "e": 45.88 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 45.88, "e": 46.156 },
+        { "t": "horas", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 46.156, "e": 46.571 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 46.571, "e": 46.778 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 46.778, "e": 47.054 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true, "s": 47.055, "e": 47.539 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 47.538, "e": 47.884 },
+        { "t": "conocer", "l": "conocer", "p": "VERB", "w": true, "sp": true, "s": 47.884, "e": 48.437 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true, "s": 48.437, "e": 48.783 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 48.782, "e": 48.92 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 48.92, "e": 49.196 },
+        { "t": "personajes", "l": "personaje", "p": "NOUN", "w": true, "s": 49.197, "e": 49.957 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.557,
+      "end": 50.016
+    },
+    {
+      "id": "s14",
+      "speaker": "pablo",
+      "text": "Sin embargo, una buena película no necesita tanto tiempo.",
+      "tokens": [
+        { "t": "Sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 50.426, "e": 50.729 },
+        { "t": "embargo", "l": "embargo", "p": "NOUN", "w": true, "s": 50.729, "e": 51.336 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 51.596, "e": 51.872 },
+        { "t": "buena", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 51.872, "e": 52.287 },
+        { "t": "película", "l": "película", "p": "NOUN", "w": true, "sp": true, "s": 52.287, "e": 52.909 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 52.909, "e": 53.116 },
+        { "t": "necesita", "l": "necesitar", "p": "VERB", "w": true, "sp": true, "s": 53.116, "e": 53.738 },
+        { "t": "tanto", "l": "tanto", "p": "ADV", "w": true, "sp": true, "s": 53.738, "e": 54.153 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "s": 54.152, "e": 54.636 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 50.416,
+      "end": 54.74
+    },
+    {
+      "id": "s15",
+      "speaker": "pablo",
+      "text": "Muchas series se alargan demasiado y al final se vuelven aburridas.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 55.01, "e": 55.472 },
+        { "t": "series", "l": "serie", "p": "NOUN", "w": true, "sp": true, "s": 55.472, "e": 55.934 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 55.934, "e": 56.132 },
+        { "t": "alargan", "l": "alargar", "p": "VERB", "w": true, "sp": true, "s": 56.131, "e": 56.659 },
+        { "t": "demasiado", "l": "demasiado", "p": "ADV", "w": true, "sp": true, "s": 56.659, "e": 57.319 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 57.319, "e": 57.451 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 57.451, "e": 57.649 },
+        { "t": "final", "l": "final", "p": "NOUN", "w": true, "sp": true, "s": 57.649, "e": 58.045 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 58.045, "e": 58.243 },
+        { "t": "vuelven", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 58.243, "e": 58.771 },
+        { "t": "aburridas", "l": "aburrido", "p": "ADJ", "w": true, "s": 58.77, "e": 59.43 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 54.99,
+      "end": 59.484
+    },
+    {
+      "id": "s16",
+      "speaker": "ana",
+      "text": "Eso también pasa a veces.",
+      "tokens": [
+        { "t": "Eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 59.894, "e": 60.219 },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 60.219, "e": 60.869 },
+        { "t": "pasa", "l": "pasar", "p": "VERB", "w": true, "sp": true, "s": 60.868, "e": 61.274 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 61.274, "e": 61.436 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "s": 61.437, "e": 61.924 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 59.884,
+      "end": 61.97
+    },
+    {
+      "id": "s17",
+      "speaker": "ana",
+      "text": "¿Y si hacemos un plan mixto?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 62.24, "e": 62.379 },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 62.379, "e": 62.587 },
+        { "t": "hacemos", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 62.586, "e": 63.14 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 63.14, "e": 63.348 },
+        { "t": "plan", "l": "plan", "p": "NOUN", "w": true, "sp": true, "s": 63.348, "e": 63.694 },
+        { "t": "mixto", "l": "mixto", "p": "ADJ", "w": true, "s": 63.694, "e": 64.11 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.22,
+      "end": 64.228
+    },
+    {
+      "id": "s18",
+      "speaker": "ana",
+      "text": "El viernes vemos una película en el cine y el domingo, una serie en mi casa.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 64.488, "e": 64.694 },
+        { "t": "viernes", "l": "viernes", "p": "NOUN", "w": true, "sp": true, "s": 64.694, "e": 65.244 },
+        { "t": "vemos", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 65.245, "e": 65.658 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 65.658, "e": 65.933 },
+        { "t": "película", "l": "película", "p": "NOUN", "w": true, "sp": true, "s": 65.933, "e": 66.552 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 66.552, "e": 66.758 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 66.758, "e": 66.964 },
+        { "t": "cine", "l": "cine", "p": "NOUN", "w": true, "sp": true, "s": 66.965, "e": 67.309 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 67.309, "e": 67.447 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 67.446, "e": 67.652 },
+        { "t": "domingo", "l": "domingo", "p": "NOUN", "w": true, "s": 67.653, "e": 68.203 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 68.203, "e": 68.478 },
+        { "t": "serie", "l": "serie", "p": "NOUN", "w": true, "sp": true, "s": 68.478, "e": 68.891 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 68.891, "e": 69.097 },
+        { "t": "mi", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 69.098, "e": 69.304 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "s": 69.304, "e": 69.648 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 64.478,
+      "end": 69.698
+    },
+    {
+      "id": "s19",
+      "speaker": "pablo",
+      "text": "Me parece perfecto.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 70.108, "e": 70.354 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 70.354, "e": 70.929 },
+        { "t": "perfecto", "l": "perfecto", "p": "ADJ", "w": true, "s": 70.929, "e": 71.668 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 70.098,
+      "end": 71.76
+    },
+    {
+      "id": "s20",
+      "speaker": "pablo",
+      "text": "Yo elijo la película, y tú eliges la serie.",
+      "tokens": [
+        { "t": "Yo", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 72.02, "e": 72.24 },
+        { "t": "elijo", "l": "elegir", "p": "VERB", "w": true, "sp": true, "s": 72.24, "e": 72.68 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 72.68, "e": 72.9 },
+        { "t": "película", "l": "película", "p": "NOUN", "w": true, "s": 72.9, "e": 73.56 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 73.76, "e": 73.895 },
+        { "t": "tú", "l": "tú", "p": "PRON", "w": true, "sp": true, "s": 73.895, "e": 74.098 },
+        { "t": "eliges", "l": "elegir", "p": "VERB", "w": true, "sp": true, "s": 74.098, "e": 74.571 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 74.571, "e": 74.774 },
+        { "t": "serie", "l": "serie", "p": "NOUN", "w": true, "s": 74.774, "e": 75.18 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 72.01,
+      "end": 75.349
+    },
+    {
+      "id": "s21",
+      "speaker": "ana",
+      "text": "Trato hecho.",
+      "tokens": [
+        { "t": "Trato", "l": "tratar", "p": "VERB", "w": true, "sp": true, "s": 75.759, "e": 76.164 },
+        { "t": "hecho", "l": "hacer", "p": "VERB", "w": true, "s": 76.164, "e": 76.569 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 75.749,
+      "end": 76.627
+    },
+    {
+      "id": "s22",
+      "speaker": "ana",
+      "text": "Pero la serie, mejor con pizza.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 76.887, "e": 77.183 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 77.183, "e": 77.361 },
+        { "t": "serie", "l": "serie", "p": "NOUN", "w": true, "s": 77.361, "e": 77.717 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true, "s": 77.927, "e": 78.377 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 78.377, "e": 78.677 },
+        { "t": "pizza", "l": "pizza", "p": "NOUN", "w": true, "s": 78.677, "e": 79.127 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 76.877,
+      "end": 79.194
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "palomitas",
+      "surface": "palomitas",
+      "pos": "noun",
+      "def_en": "maíz que se come en el cine",
+      "def_es": { "en": "popcorn", "fr": "pop-corn", "zh": "爆米花", "ja": "ポップコーン" },
+      "ref": "s9"
+    },
+    {
+      "lemma": "personaje",
+      "surface": "personajes",
+      "pos": "noun",
+      "def_en": "persona de una historia inventada",
+      "def_es": { "en": "character", "fr": "personnage", "zh": "角色", "ja": "登場人物" },
+      "ref": "s13"
+    },
+    {
+      "lemma": "alargarse",
+      "surface": "alargan",
+      "pos": "verb",
+      "def_en": "durar más de lo necesario",
+      "def_es": { "en": "to drag on", "fr": "traîner en longueur", "zh": "拖长", "ja": "長引く" },
+      "ref": "s15"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Sobre qué hablan Ana y Pablo?",
+      "evidence": ["s1"],
+      "rationale_es": { "en": "Cinema versus series." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Sobre un viaje de fin de semana" },
+        { "id": "b", "text": "Sobre el cine y la televisión" },
+        { "id": "c", "text": "Sobre un libro que han leído" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué ventaja ve Ana en las series?",
+      "evidence": ["s5"],
+      "rationale_es": { "en": "She can watch whenever she wants." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Son más cortas que las películas" },
+        { "id": "b", "text": "No tienen anuncios en medio" },
+        { "id": "c", "text": "Puede elegir el momento" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuánto se gasta en una salida al cine, según Ana?",
+      "evidence": ["s9"],
+      "rationale_es": { "en": "About twenty euros." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Unos veinte euros" },
+        { "id": "b", "text": "Unos cinco euros" },
+        { "id": "c", "text": "Unos cincuenta euros" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Pablo va al cine todas las semanas.",
+      "evidence": ["s11"],
+      "rationale_es": { "en": "He goes once a month." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Cómo termina la conversación?",
+      "evidence": ["s17", "s21"],
+      "rationale_es": { "en": "They agree on a mixed plan." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Con una discusión sin acuerdo" },
+        { "id": "b", "text": "Con un plan que contenta a los dos" },
+        { "id": "c", "text": "Con la decisión de no salir" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s15"],
+      "rationale_es": { "en": "*Se alargan*: they drag on." },
+      "type": "gap_fill",
+      "text": "Según Pablo, muchas series se {{1}} demasiado.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["alargan"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "aburrido", "alargar", "así", "aun", "barato", "bien", "bueno", "caro", "casa", "cine", "con",
+    "conocer", "contar", "correo", "cuando", "cuidar", "de", "demasiado", "depender", "distracción", "domingo",
+    "el", "elegir", "embargo", "en", "entrar", "entre", "especial", "esto", "euro", "experiencia", "final",
+    "gastar", "grande", "gustar", "haber", "hacer", "historia", "hora", "ir", "largo", "mejor", "mensaje",
+    "mes", "mi", "mixto", "mucho", "muy", "móvil", "necesitar", "no", "o", "palomitas", "pantalla", "para",
+    "parar", "parecer", "pasar", "película", "perfecto", "pero", "personaje", "pizza", "plan", "poder", "por",
+    "porque", "preferir", "pues", "querer", "qué", "razón", "se", "ser", "serie", "si", "siempre", "sin",
+    "solo", "sueño", "también", "tanto", "tener", "tiempo", "tratar", "tú", "un", "ver", "verdad", "vez",
+    "viernes", "volver", "y", "yo"
+  ],
+  "difficulty": 1076,
+  "qa": {
+    "coverage_by_level": { "A1": 0.6611, "A2": 0.8833, "B1": 1, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 8.4,
+    "flesch_reading_ease": 88.4,
+    "checked_at": "2026-10-19T07:35:31.655Z"
+  },
+  "audio": {
+    "src": "audio/b1/es-b1-lis-015/v1.m4a",
+    "duration_s": 79.194,
+    "wpm": 139,
+    "provider": "piper",
+    "voices": { "ana": "sharvard-f", "pablo": "sharvard-m" },
+    "loudness_lufs": -16,
+    "peaks": [
+      1, 0.28, 0.45, 0.4, 0.5, 0.4, 0.52, 0.51, 0.54, 0.47, 0.42, 0.26, 0, 0.49, 1, 0.1, 1, 0.66, 0.66, 0.63,
+      0.59, 0.56, 0.68, 0.64, 0.56, 0.8, 0.48, 0.57, 0.57, 0.66, 0.57, 0.36, 0.41, 0.01, 0.84, 1, 0.79, 0.82,
+      0.68, 0.4, 0.25, 0.77, 1, 0.8, 0.9, 0.83, 0.55, 0.78, 0.77, 0.55, 0.47, 0.2, 0, 0.78, 1, 0.7, 0.55, 0.45,
+      0.54, 0.82, 0.97, 0.46, 0.81, 0.63, 0.13, 0.56, 0.58, 0.37, 0.5, 0.76, 0.46, 0.6, 0.57, 0.03, 1, 0.89,
+      0.62, 0.2, 1, 0.95, 0.63, 0.81, 0.93, 0.8, 0.83, 0.25, 0.63, 0.89, 0.97, 0.79, 0.51, 0.78, 0.72, 0.76, 1,
+      0.71, 0.74, 0.73, 0.49, 0.13, 0, 0.67, 0.44, 0.76, 1, 0.19, 0.59, 0.61, 0.6, 0.69, 0.67, 0.56, 0.4, 0.22,
+      0.49, 0.85, 0.66, 1, 0.5, 0.6, 0.12, 0.37, 0.8, 0.71, 0.74, 0.89, 0.98, 0.92, 0.89, 0.94, 0.71, 0.99, 1,
+      0.36, 0.17, 0.55, 0.86, 0.69, 0.76, 0.84, 0.7, 0.81, 0.73, 1, 0.67, 0.9, 0.86, 0.75, 0.63, 0.49, 0.18,
+      0.15, 0.2, 0.37, 1, 0.42, 0.58, 0.56, 0.72, 0.84, 0.6, 0.47, 0.57, 0.59, 0.58, 0.09, 0.26, 0.67, 0.55,
+      0.69, 1, 0.6, 0.51, 0.74, 0.56, 0.66, 0.67, 0.75, 0.33, 0.24, 0.07, 0.67, 0.82, 0.89, 1, 0.67, 0.18,
+      0.17, 0.44, 0.73, 0.95, 0.85, 1, 0.36, 0.28, 0.49, 1, 0.73, 0.74, 0.77, 0.72, 0.84, 0.71, 0.56, 0.82,
+      0.59, 0.65, 0.78, 0.77, 0.58, 0.5, 0.04, 0.64, 1, 0.78, 0.61, 0.61, 0.07, 1, 0.92, 0.92, 0.59, 0.54,
+      0.39, 0.66, 0.67, 0.89, 0.35, 0.02, 1, 0.91, 0.45, 0.06, 1, 0.7, 0.61, 0.38, 0.71, 0.62, 0.52
+    ]
+  }
+}

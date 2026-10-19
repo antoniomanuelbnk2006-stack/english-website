@@ -1,0 +1,340 @@
+{
+  "id": "es-a2-lis-011",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "unit": "es-a2-u05",
+  "series": "es-a2-u05-anuncio-estacion",
+  "skill": "listening",
+  "genre": "announcement",
+  "title": "Un aviso en la estación",
+  "summary_es": {
+    "en": "A station announcement about a delayed train and a platform change.",
+    "fr": "Une annonce en gare sur un train en retard et un changement de quai.",
+    "zh": "车站广播：火车晚点并更换站台。",
+    "ja": "遅れている電車とホーム変更についての駅のアナウンス。"
+  },
+  "topic": "travel",
+  "tags": ["estación", "aviso", "tren"],
+  "can_do": ["L-A2-02"],
+  "grammar_focus": [],
+  "vocab_focus": ["tren", "andén", "retraso", "billete"],
+  "est_minutes": 6,
+  "prediction_prompt": "Escuchas un aviso en una estación. ¿Qué información da?",
+  "pre_teach": ["retraso", "andén", "fumar"],
+  "speakers": [
+    { "id": "voz", "name": "Megafonía", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 128,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "voz",
+      "text": "Atención, por favor.",
+      "tokens": [
+        { "t": "Atención", "l": "atención", "p": "NOUN", "w": true, "s": 0.01, "e": 0.76 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 0.95, "e": 1.234 },
+        { "t": "favor", "l": "favor", "p": "NOUN", "w": true, "s": 1.234, "e": 1.66 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.776
+    },
+    {
+      "id": "s2",
+      "speaker": "voz",
+      "text": "El tren de Valencia sale con quince minutos de retraso.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 2.286, "e": 2.493 },
+        { "t": "tren", "l": "tren", "p": "NOUN", "w": true, "sp": true, "s": 2.493, "e": 2.838 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 2.837, "e": 3.044 },
+        { "t": "Valencia", "l": "valencia", "p": "PROPN", "w": false, "sp": true, "s": 3.044, "e": 3.664 },
+        { "t": "sale", "l": "salir", "p": "VERB", "w": true, "sp": true, "s": 3.664, "e": 4.009 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 4.009, "e": 4.285 },
+        { "t": "quince", "l": "quince", "p": "NUM", "w": false, "sp": true, "s": 4.284, "e": 4.766 },
+        { "t": "minutos", "l": "minuto", "p": "NOUN", "w": true, "sp": true, "s": 4.767, "e": 5.318 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 5.318, "e": 5.525 },
+        { "t": "retraso", "l": "retraso", "p": "NOUN", "w": true, "s": 5.525, "e": 6.076 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 2.276,
+      "end": 6.188
+    },
+    {
+      "id": "s3",
+      "speaker": "voz",
+      "text": "La nueva hora de salida es a las seis y cuarto.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 6.698, "e": 6.929 },
+        { "t": "nueva", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 6.929, "e": 7.391 },
+        { "t": "hora", "l": "hora", "p": "NOUN", "w": true, "sp": true, "s": 7.391, "e": 7.776 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 7.776, "e": 8.007 },
+        { "t": "salida", "l": "salir", "p": "VERB", "w": true, "sp": true, "s": 8.007, "e": 8.546 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 8.547, "e": 8.778 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 8.778, "e": 8.932 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 8.932, "e": 9.24 },
+        { "t": "seis", "l": "seis", "p": "NUM", "w": false, "sp": true, "s": 9.24, "e": 9.625 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 9.625, "e": 9.779 },
+        { "t": "cuarto", "l": "cuarto", "p": "NOUN", "w": true, "s": 9.779, "e": 10.318 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.688,
+      "end": 10.391
+    },
+    {
+      "id": "s4",
+      "speaker": "voz",
+      "text": "El tren sale ahora desde el andén número cuatro.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 10.901, "e": 11.087 },
+        { "t": "tren", "l": "tren", "p": "NOUN", "w": true, "sp": true, "s": 11.087, "e": 11.397 },
+        { "t": "sale", "l": "salir", "p": "VERB", "w": true, "sp": true, "s": 11.398, "e": 11.708 },
+        { "t": "ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 11.708, "e": 12.081 },
+        { "t": "desde", "l": "desde", "p": "ADP", "w": true, "sp": true, "s": 12.081, "e": 12.454 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 12.453, "e": 12.639 },
+        { "t": "andén", "l": "andén", "p": "NOUN", "w": true, "sp": true, "s": 12.639, "e": 13.012 },
+        { "t": "número", "l": "número", "p": "NOUN", "w": true, "sp": true, "s": 13.012, "e": 13.447 },
+        { "t": "cuatro", "l": "cuatro", "p": "NUM", "w": false, "s": 13.446, "e": 13.881 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 10.891,
+      "end": 13.948
+    },
+    {
+      "id": "s5",
+      "speaker": "voz",
+      "text": "Los viajeros pueden esperar en el bar de la estación.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 14.458, "e": 14.712 },
+        { "t": "viajeros", "l": "viajero", "p": "NOUN", "w": true, "sp": true, "s": 14.712, "e": 15.284 },
+        { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 15.285, "e": 15.73 },
+        { "t": "esperar", "l": "esperar", "p": "VERB", "w": true, "sp": true, "s": 15.73, "e": 16.239 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 16.238, "e": 16.429 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 16.429, "e": 16.62 },
+        { "t": "bar", "l": "bar", "p": "NOUN", "w": true, "sp": true, "s": 16.62, "e": 16.874 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 16.874, "e": 17.065 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 17.065, "e": 17.256 },
+        { "t": "estación", "l": "estación", "p": "NOUN", "w": true, "s": 17.256, "e": 17.828 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 14.448,
+      "end": 17.935
+    },
+    {
+      "id": "s6",
+      "speaker": "voz",
+      "text": "Les recordamos que no se puede fumar en la estación.",
+      "tokens": [
+        { "t": "Les", "l": "ellos", "p": "PRON", "w": true, "sp": true, "s": 18.445, "e": 18.718 },
+        { "t": "recordamos", "l": "recordar", "p": "VERB", "w": true, "sp": true, "s": 18.718, "e": 19.469 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 19.469, "e": 19.742 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 19.742, "e": 19.947 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 19.947, "e": 20.152 },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 20.152, "e": 20.562 },
+        { "t": "fumar", "l": "fumar", "p": "VERB", "w": true, "sp": true, "s": 20.561, "e": 20.971 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 20.971, "e": 21.176 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 21.176, "e": 21.381 },
+        { "t": "estación", "l": "estación", "p": "NOUN", "w": true, "s": 21.381, "e": 21.995 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.435,
+      "end": 22.104
+    },
+    {
+      "id": "s7",
+      "speaker": "voz",
+      "text": "Pueden comprar billetes en las máquinas del centro.",
+      "tokens": [
+        { "t": "Pueden", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 22.614, "e": 23.056 },
+        { "t": "comprar", "l": "comprar", "p": "VERB", "w": true, "sp": true, "s": 23.056, "e": 23.561 },
+        { "t": "billetes", "l": "billete", "p": "NOUN", "w": true, "sp": true, "s": 23.561, "e": 24.129 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 24.129, "e": 24.318 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 24.319, "e": 24.572 },
+        { "t": "máquinas", "l": "máquina", "p": "NOUN", "w": true, "sp": true, "s": 24.571, "e": 25.139 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 25.139, "e": 25.392 },
+        { "t": "centro", "l": "centro", "p": "NOUN", "w": true, "s": 25.392, "e": 25.834 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 22.604,
+      "end": 25.939
+    },
+    {
+      "id": "s8",
+      "speaker": "voz",
+      "text": "Perdonen las molestias. Muchas gracias.",
+      "tokens": [
+        { "t": "Perdonen", "l": "perdonar", "p": "VERB", "w": true, "sp": true, "s": 26.449, "e": 27.11 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 27.11, "e": 27.404 },
+        { "t": "molestias", "l": "molestia", "p": "NOUN", "w": true, "s": 27.404, "e": 28.139 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 28.359, "e": 28.947 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 28.947, "e": 29.619 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.439,
+      "end": 29.665
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "retraso",
+      "surface": "retraso",
+      "pos": "noun",
+      "def_en": "tiempo que se llega o se sale tarde",
+      "def_es": { "en": "delay", "fr": "retard", "zh": "晚点", "ja": "遅れ" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "andén",
+      "surface": "andén",
+      "pos": "noun",
+      "def_en": "lugar de la estación donde espera el tren",
+      "def_es": { "en": "platform", "fr": "quai", "zh": "站台", "ja": "ホーム" },
+      "ref": "s4"
+    },
+    {
+      "lemma": "molestia",
+      "surface": "molestias",
+      "pos": "noun",
+      "def_en": "problema o incomodidad",
+      "def_es": { "en": "inconvenience", "fr": "désagrément", "zh": "不便", "ja": "迷惑" },
+      "ref": "s8"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué anuncian en la estación?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "A delay and a platform change." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La salida de un tren a Madrid por la tarde" },
+        { "id": "b", "text": "Un tren con retraso" },
+        { "id": "c", "text": "Una oferta de billetes baratos en internet" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuánto tarda de más el tren?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "Fifteen minutes." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Media hora más tarde de lo normal" },
+        { "id": "b", "text": "Una hora entera de espera" },
+        { "id": "c", "text": "Quince minutos" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Desde qué andén sale ahora?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "Platform four." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Desde el andén cuatro" },
+        { "id": "b", "text": "Desde el andén número tres" },
+        { "id": "c", "text": "Desde el andén número seis" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Se permite fumar en la estación.",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "Smoking is not allowed." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s3"],
+      "rationale_es": { "en": "*Las seis y cuarto*." },
+      "type": "gap_fill",
+      "text": "La nueva hora de salida es a las seis y {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["cuarto"],
+          "max_words": 1
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "¿Dónde se pueden comprar billetes?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "In the machines in the centre." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "En el andén número cuatro, junto al tren" },
+        { "id": "b", "text": "En las máquinas del centro" },
+        { "id": "c", "text": "En el tren mismo, antes de salir" }
+      ],
+      "answer": "b"
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "ahora", "andén", "atención", "bar", "billete", "centro", "comprar", "con", "cuarto", "de", "desde",
+    "el", "ellos", "en", "esperar", "estación", "favor", "fumar", "hora", "minuto", "molestia", "mucho",
+    "máquina", "no", "nuevo", "número", "perdonar", "poder", "por", "que", "recordar", "retraso", "salir",
+    "se", "ser", "tren", "viajero", "y"
+  ],
+  "difficulty": 913,
+  "qa": {
+    "coverage_by_level": { "A1": 0.7705, "A2": 0.9836, "B1": 0.9836, "B2": 1, "C1": 1, "C2": 1 },
+    "off_level_lemmas": ["fumar"],
+    "avg_sentence_words": 7.3,
+    "flesch_reading_ease": 93,
+    "checked_at": "2026-10-18T23:12:58.318Z"
+  },
+  "audio": {
+    "src": "audio/a2/es-a2-lis-011/v1.m4a",
+    "duration_s": 29.665,
+    "wpm": 133,
+    "provider": "piper",
+    "voices": { "voz": "sharvard-f" },
+    "loudness_lufs": -16,
+    "peaks": [
+      0.6, 0.77, 0.72, 0.44, 1, 0.62, 0.07, 0.35, 0.72, 0.09, 0.74, 0.46, 0.46, 0.06, 0.01, 0, 0, 0, 0.54,
+      0.39, 0.67, 0.93, 0.79, 0.73, 0.81, 0.75, 0.54, 0.17, 0.56, 0.62, 0.95, 0.75, 0.52, 0.55, 0.37, 0.49,
+      0.41, 0.5, 0.48, 0.43, 0.99, 1, 0.93, 0.61, 0.46, 0.47, 0.42, 0.34, 0.17, 0.1, 0, 0, 0, 0, 0.54, 0.65,
+      0.5, 0.58, 1, 0.89, 0.63, 0.57, 0.51, 0.52, 0.55, 0.64, 0.75, 0.69, 0.34, 0.7, 0.52, 0.58, 0.58, 0.46,
+      0.66, 0.53, 0.47, 0.36, 0.53, 0.81, 0.92, 0.08, 0.28, 0.1, 0, 0, 0, 0, 0.65, 0.47, 0.69, 1, 0.65, 0.92,
+      0.82, 0.95, 0.99, 0.81, 0.83, 0.58, 0.87, 0.8, 0.46, 0.9, 0.61, 0.59, 0.63, 0.67, 1, 1, 0.39, 0.25, 0.09,
+      0, 0, 0, 0.04, 0.62, 0.43, 0.78, 0.39, 0.66, 0.88, 0.37, 0.26, 0.68, 0.64, 0.58, 0.22, 0.96, 0.99, 0.55,
+      0.56, 0.68, 1, 0.48, 0.69, 0.65, 0.4, 0.43, 0.47, 0.29, 0.35, 0.25, 0.1, 0, 0, 0, 0, 0.86, 0.8, 0.95,
+      0.91, 0.85, 1, 1, 0.64, 0.52, 0.63, 0.69, 0.73, 0.66, 0.7, 0.73, 0.97, 0.16, 0.47, 0.65, 0.71, 0.65,
+      0.57, 0.7, 0.57, 0.74, 0.6, 0.27, 0.39, 0.25, 0.03, 0, 0, 0, 0.08, 0.82, 0.85, 0.64, 0.66, 0.44, 0.9,
+      0.93, 0.66, 0.64, 0.89, 0.96, 1, 0.45, 0.61, 0.4, 0.64, 0.51, 0.57, 0.61, 0.66, 0.92, 0.11, 0.45, 0.35,
+      0.33, 0.16, 0.03, 0, 0, 0, 0.24, 1, 0.75, 0.94, 0.76, 0.77, 0.38, 0.72, 0.81, 0.87, 0.36, 0.37, 0.3,
+      0.19, 0.13, 0, 0.34, 0.51, 0.72, 0.52, 0.82, 1, 0.08, 0.29, 0.19, 0.14, 0.14
+    ]
+  }
+}

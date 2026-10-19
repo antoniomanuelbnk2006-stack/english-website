@@ -1,0 +1,1269 @@
+{
+  "id": "es-c2-lis-010",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "unit": "es-c2-u02",
+  "series": "es-c2-u02-imprenta",
+  "skill": "listening",
+  "genre": "lecture",
+  "title": "La imprenta, la primera revolución de la información",
+  "summary_es": {
+    "en": "A historian compares the arrival of the printing press with today’s digital revolution.",
+    "fr": "Un historien compare l’arrivée de l’imprimerie avec la révolution numérique actuelle.",
+    "zh": "一位历史学家将印刷术的出现与当今的数字革命进行比较。",
+    "ja": "歴史学者が、印刷術の登場を現代のデジタル革命と比較します。"
+  },
+  "topic": "history",
+  "tags": ["historia", "tecnología", "libros"],
+  "can_do": ["L-C2-03"],
+  "grammar_focus": [],
+  "vocab_focus": ["imprenta", "copista", "difusión", "censura"],
+  "est_minutes": 12,
+  "prediction_prompt": "¿Qué cambios crees que trajo la imprenta a la vida de la gente?",
+  "pre_teach": ["imprenta", "copista"],
+  "speakers": [
+    { "id": "ortiz", "name": "Profesor Ortiz", "accent": "es-ES", "gender": "male" }
+  ],
+  "target_wpm": 145,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "ortiz",
+      "text": "Buenos días.",
+      "tokens": [
+        { "t": "Buenos", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 0, "e": 0.455 },
+        { "t": "días", "l": "día", "p": "NOUN", "w": true, "s": 0.455, "e": 0.78 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 1.071
+    },
+    {
+      "id": "s2",
+      "speaker": "ortiz",
+      "text": "Hoy vamos a viajar al siglo quince, aunque les advierto que hablaremos mucho del presente.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 1.351, "e": 1.549 },
+        { "t": "vamos", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 1.549, "e": 1.846 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 1.845, "e": 1.944 },
+        { "t": "viajar", "l": "viajar", "p": "VERB", "w": true, "sp": true, "s": 1.944, "e": 2.29 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 2.29, "e": 2.438 },
+        { "t": "siglo", "l": "siglo", "p": "NOUN", "w": true, "sp": true, "s": 2.438, "e": 2.735 },
+        { "t": "quince", "l": "quince", "p": "NUM", "w": false, "s": 2.735, "e": 3.081 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true, "s": 3.471, "e": 3.816 },
+        { "t": "les", "l": "ellos", "p": "PRON", "w": true, "sp": true, "s": 3.816, "e": 4.013 },
+        { "t": "advierto", "l": "advertir", "p": "VERB", "w": true, "sp": true, "s": 4.013, "e": 4.456 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 4.456, "e": 4.653 },
+        { "t": "hablaremos", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 4.653, "e": 5.195 },
+        { "t": "mucho", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 5.195, "e": 5.491 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 5.491, "e": 5.688 },
+        { "t": "presente", "l": "presentar", "p": "VERB", "w": true, "s": 5.688, "e": 6.131 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 1.321,
+      "end": 6.206
+    },
+    {
+      "id": "s3",
+      "speaker": "ortiz",
+      "text": "Hacia 1450, en la ciudad alemana de Maguncia, Johannes Gutenberg perfeccionó un sistema de tipos móviles de metal.",
+      "tokens": [
+        { "t": "Hacia", "l": "hacia", "p": "ADP", "w": true, "sp": true, "s": 6.466, "e": 6.849 },
+        { "t": "1450", "l": "1450", "p": "NUM", "w": false, "s": 6.849, "e": 7.168 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 7.167, "e": 7.358 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 7.359, "e": 7.55 },
+        { "t": "ciudad", "l": "ciudad", "p": "NOUN", "w": true, "sp": true, "s": 7.55, "e": 7.996 },
+        { "t": "alemana", "l": "alemán", "p": "ADJ", "w": true, "sp": true, "s": 7.996, "e": 8.506 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 8.506, "e": 8.697 },
+        { "t": "Maguncia", "l": "maguncia", "p": "PROPN", "w": false, "s": 8.697, "e": 9.271 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Johannes", "l": "johannes", "p": "PROPN", "w": false, "sp": true, "s": 9.271, "e": 9.845 },
+        { "t": "Gutenberg", "l": "gutenberg", "p": "PROPN", "w": false, "sp": true, "s": 9.845, "e": 10.483 },
+        {
+          "t": "perfeccionó",
+          "l": "perfeccionar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 10.482,
+          "e": 11.247
+        },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 11.247, "e": 11.438 },
+        { "t": "sistema", "l": "sistema", "p": "NOUN", "w": true, "sp": true, "s": 11.439, "e": 11.949 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 11.949, "e": 12.14 },
+        { "t": "tipos", "l": "tipo", "p": "NOUN", "w": true, "sp": true, "s": 12.14, "e": 12.523 },
+        { "t": "móviles", "l": "móvil", "p": "NOUN", "w": true, "sp": true, "s": 12.522, "e": 13.032 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 13.032, "e": 13.223 },
+        { "t": "metal", "l": "metal", "p": "NOUN", "w": true, "s": 13.224, "e": 13.607 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.456,
+      "end": 13.682
+    },
+    {
+      "id": "s4",
+      "speaker": "ortiz",
+      "text": "Con él se podían imprimir páginas de forma rápida y relativamente barata.",
+      "tokens": [
+        { "t": "Con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 13.942, "e": 14.182 },
+        { "t": "él", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 14.182, "e": 14.362 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 14.362, "e": 14.542 },
+        { "t": "podían", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 14.542, "e": 14.962 },
+        { "t": "imprimir", "l": "imprimir", "p": "VERB", "w": true, "sp": true, "s": 14.962, "e": 15.502 },
+        { "t": "páginas", "l": "página", "p": "NOUN", "w": true, "sp": true, "s": 15.502, "e": 15.982 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 15.982, "e": 16.162 },
+        { "t": "forma", "l": "forma", "p": "NOUN", "w": true, "sp": true, "s": 16.162, "e": 16.522 },
+        { "t": "rápida", "l": "rápido", "p": "ADJ", "w": true, "sp": true, "s": 16.522, "e": 16.942 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 16.942, "e": 17.062 },
+        {
+          "t": "relativamente",
+          "l": "relativamente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 17.062,
+          "e": 17.902
+        },
+        { "t": "barata", "l": "barato", "p": "ADJ", "w": true, "s": 17.902, "e": 18.322 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 13.932,
+      "end": 18.404
+    },
+    {
+      "id": "s5",
+      "speaker": "ortiz",
+      "text": "Hasta entonces, cada libro se copiaba a mano.",
+      "tokens": [
+        { "t": "Hasta", "l": "hasta", "p": "ADP", "w": true, "sp": true, "s": 18.654, "e": 18.999 },
+        { "t": "entonces", "l": "entonces", "p": "ADV", "w": true, "s": 18.999, "e": 19.517 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 19.517, "e": 19.805 },
+        { "t": "libro", "l": "libro", "p": "NOUN", "w": true, "sp": true, "s": 19.804, "e": 20.149 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 20.149, "e": 20.322 },
+        { "t": "copiaba", "l": "copiar", "p": "VERB", "w": true, "sp": true, "s": 20.322, "e": 20.782 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 20.782, "e": 20.897 },
+        { "t": "mano", "l": "mano", "p": "NOUN", "w": true, "s": 20.897, "e": 21.185 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 18.654,
+      "end": 21.245
+    },
+    {
+      "id": "s6",
+      "speaker": "ortiz",
+      "text": "Un copista podía tardar meses en terminar un solo ejemplar.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 21.523, "e": 21.69 },
+        { "t": "copista", "l": "copista", "p": "NOUN", "w": true, "sp": true, "s": 21.69, "e": 22.136 },
+        { "t": "podía", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 22.136, "e": 22.471 },
+        { "t": "tardar", "l": "tardar", "p": "VERB", "w": true, "sp": true, "s": 22.471, "e": 22.861 },
+        { "t": "meses", "l": "mes", "p": "NOUN", "w": true, "sp": true, "s": 22.861, "e": 23.196 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 23.196, "e": 23.363 },
+        { "t": "terminar", "l": "terminar", "p": "VERB", "w": true, "sp": true, "s": 23.363, "e": 23.865 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 23.865, "e": 24.032 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 24.032, "e": 24.311 },
+        { "t": "ejemplar", "l": "ejemplar", "p": "NOUN", "w": true, "s": 24.311, "e": 24.813 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 21.495,
+      "end": 24.933
+    },
+    {
+      "id": "s7",
+      "speaker": "ortiz",
+      "text": "Los libros eran objetos de lujo, reservados a monasterios, universidades y grandes fortunas.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 25.203, "e": 25.449 },
+        { "t": "libros", "l": "libro", "p": "NOUN", "w": true, "sp": true, "s": 25.449, "e": 25.88 },
+        { "t": "eran", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 25.88, "e": 26.188 },
+        { "t": "objetos", "l": "objeto", "p": "NOUN", "w": true, "sp": true, "s": 26.188, "e": 26.681 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 26.681, "e": 26.866 },
+        { "t": "lujo", "l": "lujo", "p": "NOUN", "w": true, "s": 26.865, "e": 27.173 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "reservados", "l": "reservar", "p": "VERB", "w": true, "sp": true, "s": 27.593, "e": 28.288 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 28.288, "e": 28.414 },
+        { "t": "monasterios", "l": "monasterio", "p": "NOUN", "w": true, "s": 28.415, "e": 29.173 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        {
+          "t": "universidades",
+          "l": "universidad",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 29.523,
+          "e": 30.439
+        },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 30.439, "e": 30.57 },
+        { "t": "grandes", "l": "grande", "p": "ADJ", "w": true, "sp": true, "s": 30.57, "e": 31.094 },
+        { "t": "fortunas", "l": "fortuna", "p": "NOUN", "w": true, "s": 31.094, "e": 31.683 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 25.183,
+      "end": 31.762
+    },
+    {
+      "id": "s8",
+      "speaker": "ortiz",
+      "text": "En apenas cincuenta años, las imprentas europeas produjeron millones de libros.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 32.042, "e": 32.221 },
+        { "t": "apenas", "l": "apenas", "p": "ADV", "w": true, "sp": true, "s": 32.221, "e": 32.638 },
+        { "t": "cincuenta", "l": "cincuenta", "p": "NUM", "w": false, "sp": true, "s": 32.638, "e": 33.234 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "s": 33.234, "e": 33.532 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 33.932, "e": 34.158 },
+        { "t": "imprentas", "l": "imprenta", "p": "NOUN", "w": true, "sp": true, "s": 34.158, "e": 34.724 },
+        { "t": "europeas", "l": "europeo", "p": "ADJ", "w": true, "sp": true, "s": 34.724, "e": 35.233 },
+        { "t": "produjeron", "l": "producir", "p": "VERB", "w": true, "sp": true, "s": 35.234, "e": 35.857 },
+        { "t": "millones", "l": "millón", "p": "NOUN", "w": true, "sp": true, "s": 35.857, "e": 36.366 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 36.366, "e": 36.536 },
+        { "t": "libros", "l": "libro", "p": "NOUN", "w": true, "s": 36.536, "e": 36.932 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 32.012,
+      "end": 37.002
+    },
+    {
+      "id": "s9",
+      "speaker": "ortiz",
+      "text": "Para hacernos una idea, probablemente más que todos los copistas del continente en los mil años anteriores.",
+      "tokens": [
+        { "t": "Para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 37.252, "e": 37.476 },
+        { "t": "hacernos", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 37.476, "e": 37.879 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 37.879, "e": 38.058 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "s": 38.058, "e": 38.282 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        {
+          "t": "probablemente",
+          "l": "probablemente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 38.572,
+          "e": 39.309
+        },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 39.309, "e": 39.52 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 39.52, "e": 39.731 },
+        { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 39.73, "e": 40.046 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 40.046, "e": 40.257 },
+        { "t": "copistas", "l": "copista", "p": "NOUN", "w": true, "sp": true, "s": 40.257, "e": 40.731 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 40.731, "e": 40.942 },
+        { "t": "continente", "l": "continente", "p": "NOUN", "w": true, "sp": true, "s": 40.941, "e": 41.52 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 41.52, "e": 41.678 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 41.678, "e": 41.889 },
+        { "t": "mil", "l": "mil", "p": "NUM", "w": false, "sp": true, "s": 41.889, "e": 42.1 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 42.1, "e": 42.363 },
+        { "t": "anteriores", "l": "anterior", "p": "ADJ", "w": true, "s": 42.363, "e": 42.942 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 37.252,
+      "end": 43.015
+    },
+    {
+      "id": "s10",
+      "speaker": "ortiz",
+      "text": "Las consecuencias fueron enormes, aunque no inmediatas.",
+      "tokens": [
+        { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 43.285, "e": 43.507 },
+        {
+          "t": "consecuencias",
+          "l": "consecuencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 43.507,
+          "e": 44.283
+        },
+        { "t": "fueron", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 44.283, "e": 44.671 },
+        { "t": "enormes", "l": "enorme", "p": "ADJ", "w": true, "s": 44.671, "e": 45.115 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "aunque", "l": "aunque", "p": "SCONJ", "w": true, "sp": true, "s": 45.255, "e": 45.648 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 45.648, "e": 45.817 },
+        { "t": "inmediatas", "l": "inmediato", "p": "ADJ", "w": true, "s": 45.817, "e": 46.435 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 43.265,
+      "end": 46.509
+    },
+    {
+      "id": "s11",
+      "speaker": "ortiz",
+      "text": "La primera fue la difusión del conocimiento.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 46.784, "e": 46.932 },
+        { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 46.932, "e": 47.327 },
+        { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 47.327, "e": 47.524 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 47.524, "e": 47.672 },
+        { "t": "difusión", "l": "difusión", "p": "NOUN", "w": true, "sp": true, "s": 47.672, "e": 48.116 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 48.116, "e": 48.313 },
+        { "t": "conocimiento", "l": "conocimiento", "p": "NOUN", "w": true, "s": 48.313, "e": 48.954 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 46.759,
+      "end": 49.021
+    },
+    {
+      "id": "s12",
+      "speaker": "ortiz",
+      "text": "Un descubrimiento científico podía llegar en pocas semanas a lectores de varios países.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 49.302, "e": 49.456 },
+        {
+          "t": "descubrimiento",
+          "l": "descubrimiento",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 49.456,
+          "e": 50.225
+        },
+        { "t": "científico", "l": "científico", "p": "NOUN", "w": true, "sp": true, "s": 50.225, "e": 50.789 },
+        { "t": "podía", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 50.789, "e": 51.097 },
+        { "t": "llegar", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 51.096, "e": 51.455 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 51.455, "e": 51.609 },
+        { "t": "pocas", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 51.609, "e": 51.917 },
+        { "t": "semanas", "l": "semana", "p": "NOUN", "w": true, "sp": true, "s": 51.916, "e": 52.326 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 52.327, "e": 52.43 },
+        { "t": "lectores", "l": "lector", "p": "NOUN", "w": true, "sp": true, "s": 52.429, "e": 52.89 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 52.891, "e": 53.045 },
+        { "t": "varios", "l": "varios", "p": "DET", "w": true, "sp": true, "s": 53.044, "e": 53.403 },
+        { "t": "países", "l": "país", "p": "NOUN", "w": true, "s": 53.403, "e": 53.762 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 49.271,
+      "end": 53.832
+    },
+    {
+      "id": "s13",
+      "speaker": "ortiz",
+      "text": "Los errores también se corregían antes, porque muchos ojos revisaban los mismos textos.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 54.112, "e": 54.35 },
+        { "t": "errores", "l": "error", "p": "NOUN", "w": true, "sp": true, "s": 54.35, "e": 54.826 },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 54.826, "e": 55.302 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 55.302, "e": 55.48 },
+        { "t": "corregían", "l": "corregir", "p": "VERB", "w": true, "sp": true, "s": 55.48, "e": 56.075 },
+        { "t": "antes", "l": "antes", "p": "ADV", "w": true, "s": 56.075, "e": 56.432 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 56.822, "e": 57.254 },
+        { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 57.254, "e": 57.686 },
+        { "t": "ojos", "l": "ojo", "p": "NOUN", "w": true, "sp": true, "s": 57.686, "e": 57.995 },
+        { "t": "revisaban", "l": "revisar", "p": "VERB", "w": true, "sp": true, "s": 57.994, "e": 58.611 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 58.611, "e": 58.858 },
+        { "t": "mismos", "l": "mismo", "p": "DET", "w": true, "sp": true, "s": 58.858, "e": 59.29 },
+        { "t": "textos", "l": "texto", "p": "NOUN", "w": true, "s": 59.29, "e": 59.722 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 54.082,
+      "end": 59.799
+    },
+    {
+      "id": "s14",
+      "speaker": "ortiz",
+      "text": "La segunda consecuencia fue religiosa y política.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 60.083, "e": 60.229 },
+        { "t": "segunda", "l": "segundo", "p": "NUM", "w": false, "sp": true, "s": 60.229, "e": 60.619 },
+        {
+          "t": "consecuencia",
+          "l": "consecuencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 60.62,
+          "e": 61.254
+        },
+        { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 61.254, "e": 61.449 },
+        { "t": "religiosa", "l": "religioso", "p": "ADJ", "w": true, "sp": true, "s": 61.449, "e": 61.937 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 61.936, "e": 62.034 },
+        { "t": "política", "l": "política", "p": "NOUN", "w": true, "s": 62.034, "e": 62.473 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 60.049,
+      "end": 62.544
+    },
+    {
+      "id": "s15",
+      "speaker": "ortiz",
+      "text": "La Reforma protestante no se entiende sin la imprenta.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 62.82, "e": 62.995 },
+        { "t": "Reforma", "l": "reforma", "p": "PROPN", "w": false, "sp": true, "s": 62.995, "e": 63.462 },
+        {
+          "t": "protestante",
+          "l": "protestante",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 63.462,
+          "e": 64.162
+        },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 64.162, "e": 64.337 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 64.337, "e": 64.512 },
+        { "t": "entiende", "l": "entender", "p": "VERB", "w": true, "sp": true, "s": 64.512, "e": 65.037 },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 65.037, "e": 65.27 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 65.27, "e": 65.445 },
+        { "t": "imprenta", "l": "imprenta", "p": "NOUN", "w": true, "s": 65.445, "e": 65.97 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 62.794,
+      "end": 66.031
+    },
+    {
+      "id": "s16",
+      "speaker": "ortiz",
+      "text": "Los folletos de Lutero se reproducían a una velocidad que ninguna autoridad podía controlar.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 66.301, "e": 66.531 },
+        { "t": "folletos", "l": "folleto", "p": "NOUN", "w": true, "sp": true, "s": 66.531, "e": 67.048 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 67.047, "e": 67.219 },
+        { "t": "Lutero", "l": "lutero", "p": "PROPN", "w": false, "sp": true, "s": 67.219, "e": 67.621 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 67.621, "e": 67.793 },
+        {
+          "t": "reproducían",
+          "l": "reproducir",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 67.793,
+          "e": 68.482
+        },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 68.482, "e": 68.597 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 68.597, "e": 68.827 },
+        { "t": "velocidad", "l": "velocidad", "p": "NOUN", "w": true, "sp": true, "s": 68.826, "e": 69.4 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 69.4, "e": 69.63 },
+        { "t": "ninguna", "l": "ningún", "p": "DET", "w": true, "sp": true, "s": 69.63, "e": 70.089 },
+        { "t": "autoridad", "l": "autoridad", "p": "NOUN", "w": true, "sp": true, "s": 70.089, "e": 70.663 },
+        { "t": "podía", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 70.663, "e": 71.007 },
+        { "t": "controlar", "l": "controlar", "p": "VERB", "w": true, "s": 71.007, "e": 71.581 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 66.281,
+      "end": 71.719
+    },
+    {
+      "id": "s17",
+      "speaker": "ortiz",
+      "text": "Por primera vez, una idea podía hacerse viral, si me permiten el anacronismo.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 71.994, "e": 72.213 },
+        { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 72.213, "e": 72.65 },
+        { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "s": 72.65, "e": 72.869 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 72.869, "e": 73.088 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true, "s": 73.087, "e": 73.36 },
+        { "t": "podía", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 73.361, "e": 73.689 },
+        { "t": "hacerse", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 73.689, "e": 74.126 },
+        { "t": "viral", "l": "viral", "p": "ADJ", "w": true, "s": 74.126, "e": 74.454 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 74.454, "e": 74.618 },
+        { "t": "me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 74.618, "e": 74.782 },
+        { "t": "permiten", "l": "permitir", "p": "VERB", "w": true, "sp": true, "s": 74.782, "e": 75.274 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 75.274, "e": 75.438 },
+        { "t": "anacronismo", "l": "anacronismo", "p": "NOUN", "w": true, "s": 75.438, "e": 76.094 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 71.969,
+      "end": 76.169
+    },
+    {
+      "id": "s18",
+      "speaker": "ortiz",
+      "text": "Y aquí aparece el paralelismo con nuestra época.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 76.449, "e": 76.545 },
+        { "t": "aquí", "l": "aquí", "p": "ADV", "w": true, "sp": true, "s": 76.545, "e": 76.785 },
+        { "t": "aparece", "l": "aparecer", "p": "VERB", "w": true, "sp": true, "s": 76.784, "e": 77.167 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 77.168, "e": 77.312 },
+        {
+          "t": "paralelismo",
+          "l": "paralelismo",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 77.312,
+          "e": 77.887
+        },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 77.887, "e": 78.079 },
+        { "t": "nuestra", "l": "nuestro", "p": "DET", "w": true, "sp": true, "s": 78.078, "e": 78.461 },
+        { "t": "época", "l": "época", "p": "NOUN", "w": true, "s": 78.462, "e": 78.75 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 76.419,
+      "end": 78.815
+    },
+    {
+      "id": "s19",
+      "speaker": "ortiz",
+      "text": "La imprenta no solo difundió la ciencia; también difundió panfletos llenos de mentiras, calumnias y profecías apocalípticas.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 79.085, "e": 79.255 },
+        { "t": "imprenta", "l": "imprenta", "p": "NOUN", "w": true, "sp": true, "s": 79.255, "e": 79.764 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 79.763, "e": 79.933 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 79.933, "e": 80.216 },
+        { "t": "difundió", "l": "difundir", "p": "VERB", "w": true, "sp": true, "s": 80.215, "e": 80.724 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 80.724, "e": 80.894 },
+        { "t": "ciencia", "l": "ciencia", "p": "NOUN", "w": true, "s": 80.893, "e": 81.345 },
+        { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 81.795, "e": 82.223 },
+        { "t": "difundió", "l": "difundir", "p": "VERB", "w": true, "sp": true, "s": 82.223, "e": 82.704 },
+        { "t": "panfletos", "l": "panfleto", "p": "NOUN", "w": true, "sp": true, "s": 82.704, "e": 83.239 },
+        { "t": "llenos", "l": "lleno", "p": "ADJ", "w": true, "sp": true, "s": 83.239, "e": 83.613 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 83.613, "e": 83.773 },
+        { "t": "mentiras", "l": "mentira", "p": "NOUN", "w": true, "s": 83.774, "e": 84.255 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "calumnias", "l": "calumnia", "p": "NOUN", "w": true, "sp": true, "s": 84.585, "e": 85.21 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 85.21, "e": 85.335 },
+        { "t": "profecías", "l": "profecía", "p": "NOUN", "w": true, "sp": true, "s": 85.335, "e": 85.96 },
+        { "t": "apocalípticas", "l": "apocalíptico", "p": "ADJ", "w": true, "s": 85.96, "e": 86.835 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 79.065,
+      "end": 86.914
+    },
+    {
+      "id": "s20",
+      "speaker": "ortiz",
+      "text": "Los contemporáneos se quejaban de que había demasiados libros y de que nadie podía leerlo todo.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 87.184, "e": 87.402 },
+        {
+          "t": "contemporáneos",
+          "l": "contemporáneo",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 87.402,
+          "e": 88.22
+        },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 88.22, "e": 88.384 },
+        { "t": "quejaban", "l": "quejarse", "p": "VERB", "w": true, "sp": true, "s": 88.384, "e": 88.875 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 88.874, "e": 89.038 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 89.038, "e": 89.256 },
+        { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 89.256, "e": 89.583 },
+        { "t": "demasiados", "l": "demasiado", "p": "ADV", "w": true, "sp": true, "s": 89.583, "e": 90.183 },
+        { "t": "libros", "l": "libro", "p": "NOUN", "w": true, "sp": true, "s": 90.183, "e": 90.565 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 90.565, "e": 90.674 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 90.674, "e": 90.838 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 90.837, "e": 91.055 },
+        { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 91.055, "e": 91.382 },
+        { "t": "podía", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 91.383, "e": 91.71 },
+        { "t": "leerlo", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 91.71, "e": 92.092 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "s": 92.091, "e": 92.364 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 87.164,
+      "end": 92.424
+    },
+    {
+      "id": "s21",
+      "speaker": "ortiz",
+      "text": "Decían que la gente se estaba volviendo superficial.",
+      "tokens": [
+        { "t": "Decían", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 92.704, "e": 93.047 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 93.047, "e": 93.243 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 93.243, "e": 93.39 },
+        { "t": "gente", "l": "gente", "p": "NOUN", "w": true, "sp": true, "s": 93.391, "e": 93.685 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 93.685, "e": 93.832 },
+        { "t": "estaba", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 93.832, "e": 94.175 },
+        { "t": "volviendo", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 94.175, "e": 94.665 },
+        { "t": "superficial", "l": "superficial", "p": "ADJ", "w": true, "s": 94.666, "e": 95.254 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 92.674,
+      "end": 95.339
+    },
+    {
+      "id": "s22",
+      "speaker": "ortiz",
+      "text": "¿Les suena?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Les", "l": "ellos", "p": "PRON", "w": true, "sp": true, "s": 95.623, "e": 95.847 },
+        { "t": "suena", "l": "sonar", "p": "VERB", "w": true, "s": 95.847, "e": 96.183 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 95.589,
+      "end": 96.25
+    },
+    {
+      "id": "s23",
+      "speaker": "ortiz",
+      "text": "Las autoridades respondieron con la censura.",
+      "tokens": [
+        { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 96.52, "e": 96.728 },
+        { "t": "autoridades", "l": "autoridad", "p": "NOUN", "w": true, "sp": true, "s": 96.728, "e": 97.353 },
+        { "t": "respondieron", "l": "responder", "p": "VERB", "w": true, "sp": true, "s": 97.353, "e": 98.03 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 98.029, "e": 98.237 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 98.238, "e": 98.394 },
+        { "t": "censura", "l": "censura", "p": "NOUN", "w": true, "s": 98.394, "e": 98.81 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 96.5,
+      "end": 98.906
+    },
+    {
+      "id": "s24",
+      "speaker": "ortiz",
+      "text": "Se crearon listas de libros prohibidos y se exigieron licencias para imprimir.",
+      "tokens": [
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 99.156, "e": 99.324 },
+        { "t": "crearon", "l": "crear", "p": "VERB", "w": true, "sp": true, "s": 99.324, "e": 99.772 },
+        { "t": "listas", "l": "lista", "p": "NOUN", "w": true, "sp": true, "s": 99.772, "e": 100.164 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 100.164, "e": 100.332 },
+        { "t": "libros", "l": "libro", "p": "NOUN", "w": true, "sp": true, "s": 100.333, "e": 100.725 },
+        { "t": "prohibidos", "l": "prohibir", "p": "VERB", "w": true, "sp": true, "s": 100.725, "e": 101.341 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 101.341, "e": 101.453 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 101.453, "e": 101.621 },
+        { "t": "exigieron", "l": "exigir", "p": "VERB", "w": true, "sp": true, "s": 101.621, "e": 102.181 },
+        { "t": "licencias", "l": "licencia", "p": "NOUN", "w": true, "sp": true, "s": 102.181, "e": 102.741 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 102.742, "e": 103.022 },
+        { "t": "imprimir", "l": "imprimir", "p": "VERB", "w": true, "s": 103.022, "e": 103.526 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 99.156,
+      "end": 103.607
+    },
+    {
+      "id": "s25",
+      "speaker": "ortiz",
+      "text": "Pero, a largo plazo, el control resultó imposible.",
+      "tokens": [
+        { "t": "Pero", "l": "pero", "p": "CCONJ", "w": true, "s": 103.887, "e": 104.227 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 104.507, "e": 104.638 },
+        { "t": "largo", "l": "largo", "p": "ADJ", "w": true, "sp": true, "s": 104.638, "e": 105.032 },
+        { "t": "plazo", "l": "plazo", "p": "NOUN", "w": true, "s": 105.033, "e": 105.427 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 105.627, "e": 105.8 },
+        { "t": "control", "l": "control", "p": "NOUN", "w": true, "sp": true, "s": 105.8, "e": 106.261 },
+        { "t": "resultó", "l": "resultar", "p": "VERB", "w": true, "sp": true, "s": 106.26, "e": 106.721 },
+        { "t": "imposible", "l": "imposible", "p": "ADJ", "w": true, "s": 106.721, "e": 107.297 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 103.857,
+      "end": 107.365
+    },
+    {
+      "id": "s26",
+      "speaker": "ortiz",
+      "text": "Lo que finalmente ordenó aquel caos no fue la prohibición, sino la aparición de nuevas instituciones.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 107.643, "e": 107.794 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 107.794, "e": 107.995 },
+        {
+          "t": "finalmente",
+          "l": "finalmente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 107.994,
+          "e": 108.546
+        },
+        { "t": "ordenó", "l": "ordenar", "p": "VERB", "w": true, "sp": true, "s": 108.546, "e": 108.897 },
+        { "t": "aquel", "l": "aquel", "p": "DET", "w": true, "sp": true, "s": 108.897, "e": 109.198 },
+        { "t": "caos", "l": "caos", "p": "NOUN", "w": true, "sp": true, "s": 109.198, "e": 109.449 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 109.449, "e": 109.6 },
+        { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 109.6, "e": 109.801 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 109.8, "e": 109.951 },
+        { "t": "prohibición", "l": "prohibición", "p": "NOUN", "w": true, "s": 109.951, "e": 110.553 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sino", "l": "sino", "p": "CCONJ", "w": true, "sp": true, "s": 110.983, "e": 111.24 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 111.24, "e": 111.394 },
+        { "t": "aparición", "l": "aparición", "p": "NOUN", "w": true, "sp": true, "s": 111.394, "e": 111.908 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 111.909, "e": 112.063 },
+        { "t": "nuevas", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 112.063, "e": 112.423 },
+        { "t": "instituciones", "l": "institución", "p": "NOUN", "w": true, "s": 112.423, "e": 113.143 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 107.615,
+      "end": 113.22
+    },
+    {
+      "id": "s27",
+      "speaker": "ortiz",
+      "text": "Me refiero a bibliotecas públicas, revistas científicas y editoriales con prestigio.",
+      "tokens": [
+        { "t": "Me", "l": "yo", "p": "PRON", "w": true, "sp": true, "s": 113.49, "e": 113.677 },
+        { "t": "refiero", "l": "referirse", "p": "VERB", "w": true, "sp": true, "s": 113.677, "e": 114.176 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 114.176, "e": 114.301 },
+        {
+          "t": "bibliotecas",
+          "l": "biblioteca",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 114.301,
+          "e": 115.049
+        },
+        { "t": "públicas", "l": "público", "p": "ADJ", "w": true, "s": 115.049, "e": 115.61 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "revistas", "l": "revista", "p": "NOUN", "w": true, "sp": true, "s": 115.78, "e": 116.355 },
+        {
+          "t": "científicas",
+          "l": "científico",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 116.355,
+          "e": 117.122
+        },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 117.121, "e": 117.249 },
+        {
+          "t": "editoriales",
+          "l": "editorial",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 117.249,
+          "e": 118.016
+        },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 118.016, "e": 118.272 },
+        { "t": "prestigio", "l": "prestigio", "p": "NOUN", "w": true, "s": 118.271, "e": 118.91 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 113.47,
+      "end": 118.991
+    },
+    {
+      "id": "s28",
+      "speaker": "ortiz",
+      "text": "Más tarde llegó la prensa, con sus normas profesionales.",
+      "tokens": [
+        { "t": "Más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 119.241, "e": 119.45 },
+        { "t": "tarde", "l": "tarde", "p": "NOUN", "w": true, "sp": true, "s": 119.45, "e": 119.764 },
+        { "t": "llegó", "l": "llegar", "p": "VERB", "w": true, "sp": true, "s": 119.764, "e": 120.078 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 120.078, "e": 120.235 },
+        { "t": "prensa", "l": "prensa", "p": "NOUN", "w": true, "s": 120.235, "e": 120.601 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 120.851, "e": 121.072 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 121.072, "e": 121.293 },
+        { "t": "normas", "l": "norma", "p": "NOUN", "w": true, "sp": true, "s": 121.292, "e": 121.678 },
+        { "t": "profesionales", "l": "profesional", "p": "NOUN", "w": true, "s": 121.679, "e": 122.451 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 119.241,
+      "end": 122.514
+    },
+    {
+      "id": "s29",
+      "speaker": "ortiz",
+      "text": "Hicieron falta generaciones para que la sociedad aprendiera a distinguir entre fuentes fiables y rumores impresos.",
+      "tokens": [
+        { "t": "Hicieron", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 122.792, "e": 123.338 },
+        { "t": "falta", "l": "falta", "p": "NOUN", "w": true, "sp": true, "s": 123.338, "e": 123.702 },
+        {
+          "t": "generaciones",
+          "l": "generación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 123.701,
+          "e": 124.489
+        },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 124.489, "e": 124.792 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 124.792, "e": 125.034 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 125.035, "e": 125.217 },
+        { "t": "sociedad", "l": "sociedad", "p": "NOUN", "w": true, "sp": true, "s": 125.217, "e": 125.763 },
+        { "t": "aprendiera", "l": "aprender", "p": "VERB", "w": true, "sp": true, "s": 125.762, "e": 126.429 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 126.429, "e": 126.55 },
+        {
+          "t": "distinguir",
+          "l": "distinguir",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 126.55,
+          "e": 127.217
+        },
+        { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true, "s": 127.217, "e": 127.581 },
+        { "t": "fuentes", "l": "fuente", "p": "NOUN", "w": true, "sp": true, "s": 127.581, "e": 128.066 },
+        { "t": "fiables", "l": "fiable", "p": "ADJ", "w": true, "sp": true, "s": 128.065, "e": 128.55 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 128.55, "e": 128.671 },
+        { "t": "rumores", "l": "rumor", "p": "NOUN", "w": true, "sp": true, "s": 128.672, "e": 129.157 },
+        { "t": "impresos", "l": "impreso", "p": "ADJ", "w": true, "s": 129.156, "e": 129.702 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 122.764,
+      "end": 129.768
+    },
+    {
+      "id": "s30",
+      "speaker": "ortiz",
+      "text": "De ahí extraigo una lección para el presente.",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 130.028, "e": 130.175 },
+        { "t": "ahí", "l": "ahí", "p": "ADV", "w": true, "sp": true, "s": 130.175, "e": 130.371 },
+        { "t": "extraigo", "l": "extraer", "p": "VERB", "w": true, "sp": true, "s": 130.37, "e": 130.81 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 130.81, "e": 131.006 },
+        { "t": "lección", "l": "lección", "p": "NOUN", "w": true, "sp": true, "s": 131.006, "e": 131.397 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 131.397, "e": 131.641 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 131.641, "e": 131.788 },
+        { "t": "presente", "l": "presentar", "p": "VERB", "w": true, "s": 131.788, "e": 132.228 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 130.018,
+      "end": 132.309
+    },
+    {
+      "id": "s31",
+      "speaker": "ortiz",
+      "text": "Ante internet, tendemos a oscilar entre el entusiasmo ingenuo y el pánico moral.",
+      "tokens": [
+        { "t": "Ante", "l": "ante", "p": "ADP", "w": true, "sp": true, "s": 132.559, "e": 132.863 },
+        { "t": "internet", "l": "internet", "p": "NOUN", "w": true, "s": 132.863, "e": 133.409 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "tendemos", "l": "tender", "p": "VERB", "w": true, "sp": true, "s": 133.709, "e": 134.184 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 134.184, "e": 134.29 },
+        { "t": "oscilar", "l": "oscilar", "p": "VERB", "w": true, "sp": true, "s": 134.289, "e": 134.711 },
+        { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true, "s": 134.712, "e": 135.029 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 135.028, "e": 135.186 },
+        {
+          "t": "entusiasmo",
+          "l": "entusiasmo",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 135.187,
+          "e": 135.767
+        },
+        { "t": "ingenuo", "l": "ingenuo", "p": "ADJ", "w": true, "sp": true, "s": 135.767, "e": 136.189 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 136.189, "e": 136.295 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 136.295, "e": 136.453 },
+        { "t": "pánico", "l": "pánico", "p": "NOUN", "w": true, "sp": true, "s": 136.453, "e": 136.822 },
+        { "t": "moral", "l": "moral", "p": "ADJ", "w": true, "s": 136.822, "e": 137.139 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 132.559,
+      "end": 137.215
+    },
+    {
+      "id": "s32",
+      "speaker": "ortiz",
+      "text": "La historia de la imprenta sugiere que ambas reacciones son prematuras.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 137.491, "e": 137.651 },
+        { "t": "historia", "l": "historia", "p": "NOUN", "w": true, "sp": true, "s": 137.651, "e": 138.131 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 138.132, "e": 138.292 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 138.292, "e": 138.452 },
+        { "t": "imprenta", "l": "imprenta", "p": "NOUN", "w": true, "sp": true, "s": 138.452, "e": 138.932 },
+        { "t": "sugiere", "l": "sugerir", "p": "VERB", "w": true, "sp": true, "s": 138.932, "e": 139.359 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 139.359, "e": 139.573 },
+        { "t": "ambas", "l": "ambos", "p": "ADJ", "w": true, "sp": true, "s": 139.573, "e": 139.893 },
+        { "t": "reacciones", "l": "reacción", "p": "NOUN", "w": true, "sp": true, "s": 139.893, "e": 140.48 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 140.48, "e": 140.694 },
+        { "t": "prematuras", "l": "prematuro", "p": "ADJ", "w": true, "s": 140.694, "e": 141.281 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 137.465,
+      "end": 141.35
+    },
+    {
+      "id": "s33",
+      "speaker": "ortiz",
+      "text": "Las tecnologías de la información no son buenas ni malas por sí mismas.",
+      "tokens": [
+        { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 141.62, "e": 141.821 },
+        {
+          "t": "tecnologías",
+          "l": "tecnología",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 141.821,
+          "e": 142.423
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 142.422, "e": 142.572 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 142.573, "e": 142.723 },
+        {
+          "t": "información",
+          "l": "información",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 142.723,
+          "e": 143.325
+        },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 143.325, "e": 143.475 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 143.475, "e": 143.676 },
+        { "t": "buenas", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 143.676, "e": 144.027 },
+        { "t": "ni", "l": "ni", "p": "CCONJ", "w": true, "sp": true, "s": 144.027, "e": 144.177 },
+        { "t": "malas", "l": "malo", "p": "ADJ", "w": true, "sp": true, "s": 144.177, "e": 144.478 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 144.478, "e": 144.679 },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "sp": true, "s": 144.679, "e": 144.829 },
+        { "t": "mismas", "l": "mismo", "p": "DET", "w": true, "s": 144.829, "e": 145.18 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 141.6,
+      "end": 145.253
+    },
+    {
+      "id": "s34",
+      "speaker": "ortiz",
+      "text": "Su efecto depende de las instituciones que construimos alrededor de ellas.",
+      "tokens": [
+        { "t": "Su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 145.503, "e": 145.664 },
+        { "t": "efecto", "l": "efecto", "p": "NOUN", "w": true, "sp": true, "s": 145.664, "e": 146.04 },
+        { "t": "depende", "l": "depender", "p": "VERB", "w": true, "sp": true, "s": 146.041, "e": 146.471 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 146.471, "e": 146.632 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 146.632, "e": 146.847 },
+        {
+          "t": "instituciones",
+          "l": "institución",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 146.848,
+          "e": 147.601
+        },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 147.601, "e": 147.816 },
+        {
+          "t": "construimos",
+          "l": "construir",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 147.816,
+          "e": 148.461
+        },
+        { "t": "alrededor", "l": "alrededor", "p": "ADV", "w": true, "sp": true, "s": 148.461, "e": 148.999 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 148.999, "e": 149.16 },
+        { "t": "ellas", "l": "ellos", "p": "PRON", "w": true, "s": 149.16, "e": 149.483 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 145.503,
+      "end": 149.551
+    },
+    {
+      "id": "s35",
+      "speaker": "ortiz",
+      "text": "Quizá estemos todavía en el equivalente al año 1520: rodeados de folletos, sin saber muy bien en cuáles confiar.",
+      "tokens": [
+        { "t": "Quizá", "l": "quizá", "p": "ADV", "w": true, "sp": true, "s": 149.811, "e": 150.214 },
+        { "t": "estemos", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 150.214, "e": 150.751 },
+        { "t": "todavía", "l": "todavía", "p": "ADV", "w": true, "sp": true, "s": 150.751, "e": 151.288 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 151.288, "e": 151.489 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 151.489, "e": 151.69 },
+        {
+          "t": "equivalente",
+          "l": "equivalente",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 151.69,
+          "e": 152.495
+        },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 152.496, "e": 152.697 },
+        { "t": "año", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 152.697, "e": 152.965 },
+        { "t": "1520", "l": "1520", "p": "NUM", "w": false, "s": 152.965, "e": 153.301 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "rodeados", "l": "rodear", "p": "VERB", "w": true, "sp": true, "s": 153.651, "e": 154.161 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 154.161, "e": 154.331 },
+        { "t": "folletos", "l": "folleto", "p": "NOUN", "w": true, "s": 154.331, "e": 154.841 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 155.131, "e": 155.341 },
+        { "t": "saber", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 155.341, "e": 155.656 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 155.655, "e": 155.865 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "sp": true, "s": 155.865, "e": 156.127 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 156.127, "e": 156.284 },
+        { "t": "cuáles", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 156.285, "e": 156.652 },
+        { "t": "confiar", "l": "confiar", "p": "VERB", "w": true, "s": 156.652, "e": 157.071 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 149.801,
+      "end": 157.196
+    },
+    {
+      "id": "s36",
+      "speaker": "ortiz",
+      "text": "La tarea de nuestra generación es inventar las bibliotecas y las editoriales de esta nueva era.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 157.482, "e": 157.658 },
+        { "t": "tarea", "l": "tarea", "p": "NOUN", "w": true, "sp": true, "s": 157.658, "e": 158.01 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 158.011, "e": 158.187 },
+        { "t": "nuestra", "l": "nuestro", "p": "DET", "w": true, "sp": true, "s": 158.187, "e": 158.657 },
+        {
+          "t": "generación",
+          "l": "generación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 158.657,
+          "e": 159.303
+        },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 159.303, "e": 159.479 },
+        { "t": "inventar", "l": "inventar", "p": "VERB", "w": true, "sp": true, "s": 159.479, "e": 160.008 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 160.008, "e": 160.243 },
+        {
+          "t": "bibliotecas",
+          "l": "biblioteca",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 160.243,
+          "e": 160.948
+        },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 160.947, "e": 161.064 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 161.065, "e": 161.3 },
+        { "t": "editoriales", "l": "editorial", "p": "NOUN", "w": true, "sp": true, "s": 161.3, "e": 162.005 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 162.005, "e": 162.181 },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 162.181, "e": 162.475 },
+        { "t": "nueva", "l": "nuevo", "p": "ADJ", "w": true, "sp": true, "s": 162.475, "e": 162.827 },
+        { "t": "era", "l": "ser", "p": "AUX", "w": true, "s": 162.827, "e": 163.062 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 157.446,
+      "end": 163.135
+    },
+    {
+      "id": "s37",
+      "speaker": "ortiz",
+      "text": "En la próxima sesión leeremos algunos textos de la época.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 163.414, "e": 163.574 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 163.574, "e": 163.734 },
+        { "t": "próxima", "l": "próximo", "p": "ADJ", "w": true, "sp": true, "s": 163.734, "e": 164.161 },
+        { "t": "sesión", "l": "sesión", "p": "NOUN", "w": true, "sp": true, "s": 164.161, "e": 164.534 },
+        { "t": "leeremos", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 164.534, "e": 165.014 },
+        { "t": "algunos", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 165.014, "e": 165.441 },
+        { "t": "textos", "l": "texto", "p": "NOUN", "w": true, "sp": true, "s": 165.441, "e": 165.814 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 165.814, "e": 165.974 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 165.974, "e": 166.134 },
+        { "t": "época", "l": "época", "p": "NOUN", "w": true, "s": 166.134, "e": 166.454 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 163.385,
+      "end": 166.528
+    },
+    {
+      "id": "s38",
+      "speaker": "ortiz",
+      "text": "Verán que las quejas de entonces se parecen asombrosamente a las de hoy.",
+      "tokens": [
+        { "t": "Verán", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 166.778, "e": 167.064 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 167.064, "e": 167.255 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 167.254, "e": 167.445 },
+        { "t": "quejas", "l": "quejarse", "p": "VERB", "w": true, "sp": true, "s": 167.445, "e": 167.778 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 167.778, "e": 167.921 },
+        { "t": "entonces", "l": "entonces", "p": "ADV", "w": true, "sp": true, "s": 167.921, "e": 168.35 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 168.35, "e": 168.493 },
+        { "t": "parecen", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 168.493, "e": 168.874 },
+        {
+          "t": "asombrosamente",
+          "l": "asombrosamente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 168.874,
+          "e": 169.589
+        },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 169.589, "e": 169.684 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 169.684, "e": 169.875 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 169.875, "e": 170.018 },
+        { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "s": 170.017, "e": 170.208 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 166.778,
+      "end": 170.289
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "copista",
+      "surface": "copista",
+      "pos": "noun",
+      "def_en": "persona que copiaba libros a mano",
+      "def_es": { "en": "scribe, copyist", "fr": "copiste", "zh": "抄写员", "ja": "写字生" },
+      "ref": "s6"
+    },
+    {
+      "lemma": "folleto",
+      "surface": "folletos",
+      "pos": "noun",
+      "def_en": "impreso breve de pocas páginas",
+      "def_es": { "en": "pamphlet, leaflet", "fr": "brochure, pamphlet", "zh": "小册子", "ja": "パンフレット" },
+      "ref": "s16"
+    },
+    {
+      "lemma": "anacronismo",
+      "surface": "anacronismo",
+      "pos": "noun",
+      "def_en": "algo que no corresponde a la época de la que se habla",
+      "def_es": { "en": "anachronism", "fr": "anachronisme", "zh": "时代错误", "ja": "時代錯誤" },
+      "ref": "s17"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué hace el profesor en esta clase?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "He compares the press with the digital age." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Explica cómo funciona técnicamente una impresora moderna" },
+        { "id": "b", "text": "Compara la llegada de la imprenta con la era digital" },
+        { "id": "c", "text": "Narra la biografía completa de Gutenberg y su familia" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cómo eran los libros antes de la imprenta?",
+      "evidence": ["s7"],
+      "rationale_es": { "en": "Rare luxury objects." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Baratos pero de mala calidad" },
+        { "id": "b", "text": "Frecuentes en todas las casas de las ciudades" },
+        { "id": "c", "text": "Escasos y muy caros" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué relación establece entre Lutero y la imprenta?",
+      "evidence": ["s16"],
+      "rationale_es": { "en": "His pamphlets spread uncontrollably." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Sus textos circularon sin que nadie pudiera frenarlos" },
+        { "id": "b", "text": "Lutero fue el primero en construir una imprenta propia" },
+        { "id": "c", "text": "La imprenta se usó para prohibir los textos de Lutero" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "En aquella época nadie se quejaba del exceso de libros.",
+      "evidence": ["s20"],
+      "rationale_es": { "en": "People complained of too many books." },
+      "type": "true_false_ng",
+      "answer": "F",
+      "allow_ng": false
+    },
+    {
+      "id": "q5",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué acabó poniendo orden en el caos de la imprenta?",
+      "evidence": ["s26"],
+      "rationale_es": { "en": "New trusted institutions." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Las listas de libros prohibidos por las autoridades" },
+        { "id": "b", "text": "El nacimiento de instituciones de confianza" },
+        { "id": "c", "text": "El cierre de la mayoría de las imprentas europeas" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "post",
+      "prompt": "¿Qué postura defiende el profesor ante internet?",
+      "evidence": ["s32"],
+      "rationale_es": { "en": "Neither naive enthusiasm nor panic." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Un optimismo total ante cualquier tecnología nueva" },
+        { "id": "b", "text": "La necesidad urgente de prohibir las redes sociales" },
+        { "id": "c", "text": "Ni entusiasmo ingenuo ni pánico" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s34"],
+      "rationale_es": { "en": "*Instituciones*." },
+      "type": "gap_fill",
+      "text": "Según el profesor, el efecto de una tecnología depende de las {{1}} que la rodean.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["instituciones"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "advertir", "ahí", "alemán", "algo", "algún", "alrededor", "ambos", "anacronismo", "ante", "anterior",
+    "antes", "aparecer", "aparición", "apenas", "apocalíptico", "aprender", "aquel", "aquí", "asombrosamente",
+    "aunque", "autoridad", "año", "barato", "biblioteca", "bien", "bueno", "cada", "calumnia", "caos",
+    "censura", "ciencia", "científico", "ciudad", "con", "confiar", "conocimiento", "consecuencia",
+    "construir", "contemporáneo", "continente", "control", "controlar", "copiar", "copista", "corregir",
+    "crear", "de", "decir", "demasiado", "depender", "descubrimiento", "difundir", "difusión", "distinguir",
+    "día", "editorial", "efecto", "ejemplar", "el", "ellos", "en", "enorme", "entender", "entonces", "entre",
+    "entusiasmo", "equivalente", "error", "estar", "este", "europeo", "exigir", "extraer", "falta", "fiable",
+    "finalmente", "folleto", "forma", "fortuna", "fuente", "generación", "gente", "grande", "haber", "hablar",
+    "hacer", "hacia", "hasta", "historia", "hoy", "idea", "imposible", "imprenta", "impreso", "imprimir",
+    "información", "ingenuo", "inmediato", "institución", "internet", "inventar", "ir", "largo", "lección",
+    "lector", "leer", "libro", "licencia", "lista", "llegar", "lleno", "lujo", "malo", "mano", "mentira",
+    "mes", "metal", "millón", "mismo", "monasterio", "moral", "mucho", "muy", "más", "móvil", "ni", "ningún",
+    "no", "norma", "nuestro", "nuevo", "objeto", "ojo", "ordenar", "oscilar", "panfleto", "para",
+    "paralelismo", "parecer", "país", "perfeccionar", "permitir", "pero", "plazo", "poco", "poder", "política",
+    "por", "porque", "prematuro", "prensa", "presentar", "prestigio", "probablemente", "producir", "profecía",
+    "profesional", "prohibición", "prohibir", "protestante", "próximo", "página", "pánico", "público", "que",
+    "quejarse", "quizá", "qué", "reacción", "referirse", "relativamente", "religioso", "reproducir",
+    "reservar", "responder", "resultar", "revisar", "revista", "rodear", "rumor", "rápido", "saber", "se",
+    "semana", "ser", "sesión", "si", "siglo", "sin", "sino", "sistema", "sociedad", "solo", "sonar", "su",
+    "sugerir", "superficial", "también", "tardar", "tarde", "tarea", "tecnología", "tender", "terminar",
+    "texto", "tipo", "todavía", "todo", "un", "universidad", "varios", "velocidad", "ver", "vez", "viajar",
+    "viral", "volver", "y", "yo", "él", "época"
+  ],
+  "difficulty": 1630,
+  "qa": {
+    "coverage_by_level": { "A1": 0.5933, "A2": 0.6699, "B1": 0.8038, "B2": 0.8445, "C1": 0.9091, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 11.4,
+    "flesch_reading_ease": 63,
+    "checked_at": "2026-10-19T07:53:05.544Z"
+  },
+  "audio": {
+    "src": "audio/c2/es-c2-lis-010/v1.m4a",
+    "duration_s": 170.289,
+    "wpm": 152,
+    "provider": "piper",
+    "voices": { "ortiz": "davefx-m" },
+    "loudness_lufs": -16.2,
+    "peaks": [
+      1, 0.97, 1, 0.96, 0.42, 0.95, 0.97, 0.86, 0.38, 0.95, 0.92, 0.54, 0.94, 0.89, 0.8, 1, 0.92, 0.84, 0.91,
+      1, 0.92, 1, 0.78, 0.66, 0.85, 0.87, 0.96, 0.99, 1, 0.94, 0.98, 1, 0.95, 0.92, 0.95, 0.95, 0.95, 0.96,
+      0.86, 0.98, 0.97, 0.92, 0.97, 1, 0.19, 1, 0.94, 0.94, 0.79, 0.94, 1, 0.84, 1, 0.9, 0.94, 0.89, 0.83,
+      0.75, 0.89, 0.96, 0.38, 1, 0.99, 0.85, 0.99, 0.52, 1, 0.96, 0.61, 0.97, 0.88, 0.91, 1, 0.71, 1, 0.74,
+      0.97, 1, 0.97, 0.8, 0.77, 0.99, 1, 0.89, 0.93, 0.95, 1, 0.88, 1, 0.89, 0.95, 0.89, 0.77, 0.95, 0.87,
+      0.83, 0.96, 0.99, 0.91, 0.88, 1, 0.99, 1, 0.97, 0.93, 0.97, 0.97, 1, 0.98, 0.81, 1, 0.99, 0.98, 0.91,
+      0.8, 0.99, 0.9, 0.86, 0.68, 1, 0.96, 0.94, 0.98, 0.85, 0.99, 1, 0.96, 0.98, 0.98, 0.99, 0.94, 0.95, 1,
+      0.8, 1, 0.93, 1, 0.84, 0.92, 0.95, 1, 0.9, 0.76, 0.98, 0.94, 0.98, 1, 0.98, 0.93, 0.89, 0.7, 1, 0.95,
+      0.96, 1, 0.91, 0.91, 0.81, 0.95, 0.43, 1, 0.92, 0.76, 0.87, 0.91, 0.92, 0.91, 0.94, 1, 0.98, 0.74, 0.83,
+      0.47, 1, 0.96, 0.99, 0.97, 0.96, 0.86, 0.87, 1, 0.8, 0.57, 1, 0.99, 0.95, 0.94, 0.97, 0.85, 0.96, 1,
+      0.93, 0.97, 0.99, 1, 0.86, 0.99, 0.94, 0.78, 0.99, 1, 0.64, 0.99, 0.97, 0.74, 1, 0.93, 0.97, 0.92, 0.97,
+      0.76, 0.98, 0.96, 0.96, 0.85, 0.98, 0.92, 1, 0.74, 0.97, 0.99, 0.63, 1, 0.92, 0.93, 0.91, 0.91, 0.69,
+      0.96, 0.65, 1, 0.84, 0.9, 0.95, 0.7, 1, 0.94, 0.87, 0.72, 0.95
+    ]
+  }
+}

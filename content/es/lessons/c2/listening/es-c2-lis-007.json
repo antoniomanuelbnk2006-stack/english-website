@@ -1,0 +1,1041 @@
+{
+  "id": "es-c2-lis-007",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "unit": "es-c2-u02",
+  "series": "es-c2-u02-palabras-perdidas",
+  "skill": "listening",
+  "genre": "interview",
+  "title": "Las palabras que se pierden",
+  "summary_es": {
+    "en": "A lexicographer explains how words fall out of use, why dictionaries keep them and whether we should worry.",
+    "fr": "Une lexicographe explique comment les mots tombent en désuétude, pourquoi les dictionnaires les conservent et s’il faut s’en inquiéter.",
+    "zh": "一位词典编纂者解释词语如何被淘汰、词典为何仍保留它们，以及我们是否应该为此担忧。",
+    "ja": "辞書編集者が、言葉が使われなくなる仕組み、辞書がそれを残す理由、そして心配すべきかどうかを説明します。"
+  },
+  "topic": "language",
+  "tags": ["lengua", "diccionario", "cambio"],
+  "can_do": ["L-C2-01"],
+  "grammar_focus": [],
+  "vocab_focus": ["desuso", "lexicógrafa", "acepción", "empobrecimiento"],
+  "est_minutes": 12,
+  "prediction_prompt": "¿Conoces alguna palabra que usaban tus abuelos y que ya casi nadie dice?",
+  "pre_teach": ["desuso", "acepción"],
+  "speakers": [
+    { "id": "javier", "name": "Javier", "accent": "es-ES", "gender": "male" },
+    { "id": "irene", "name": "Irene", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 145,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "javier",
+      "text": "Irene, usted ha dedicado treinta años a hacer diccionarios.",
+      "tokens": [
+        { "t": "Irene", "l": "irene", "p": "PROPN", "w": false, "s": 0.01, "e": 0.46 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "usted", "l": "usted", "p": "PRON", "w": true, "sp": true, "s": 0.67, "e": 1.052 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 1.052, "e": 1.243 },
+        { "t": "dedicado", "l": "dedicar", "p": "VERB", "w": true, "sp": true, "s": 1.243, "e": 1.816 },
+        { "t": "treinta", "l": "treinta", "p": "NUM", "w": false, "sp": true, "s": 1.816, "e": 2.325 },
+        { "t": "años", "l": "año", "p": "NOUN", "w": true, "sp": true, "s": 2.325, "e": 2.643 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 2.643, "e": 2.77 },
+        { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 2.771, "e": 3.153 },
+        { "t": "diccionarios", "l": "diccionario", "p": "NOUN", "w": true, "s": 3.153, "e": 3.981 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 4.038
+    },
+    {
+      "id": "s2",
+      "speaker": "javier",
+      "text": "¿Cómo muere una palabra?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Cómo", "l": "cómo", "p": "ADV", "w": true, "sp": true, "s": 4.298, "e": 4.587 },
+        { "t": "muere", "l": "morir", "p": "VERB", "w": true, "sp": true, "s": 4.587, "e": 4.934 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 4.934, "e": 5.165 },
+        { "t": "palabra", "l": "palabra", "p": "NOUN", "w": true, "s": 5.165, "e": 5.628 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 4.288,
+      "end": 5.722
+    },
+    {
+      "id": "s3",
+      "speaker": "irene",
+      "text": "Rara vez de golpe.",
+      "tokens": [
+        { "t": "Rara", "l": "raro", "p": "ADJ", "w": true, "sp": true, "s": 6.132, "e": 6.443 },
+        { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 6.443, "e": 6.692 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 6.692, "e": 6.879 },
+        { "t": "golpe", "l": "golpe", "p": "NOUN", "w": true, "s": 6.879, "e": 7.252 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 6.122,
+      "end": 7.3
+    },
+    {
+      "id": "s4",
+      "speaker": "irene",
+      "text": "Normalmente se va apagando.",
+      "tokens": [
+        { "t": "Normalmente", "l": "normalmente", "p": "ADV", "w": true, "sp": true, "s": 7.56, "e": 8.356 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 8.356, "e": 8.555 },
+        { "t": "va", "l": "ir", "p": "VERB", "w": true, "sp": true, "s": 8.554, "e": 8.753 },
+        { "t": "apagando", "l": "apagar", "p": "VERB", "w": true, "s": 8.753, "e": 9.35 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 7.55,
+      "end": 9.433
+    },
+    {
+      "id": "s5",
+      "speaker": "irene",
+      "text": "Primero deja de usarse entre los jóvenes.",
+      "tokens": [
+        { "t": "Primero", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 9.683, "e": 10.181 },
+        { "t": "deja", "l": "dejar", "p": "VERB", "w": true, "sp": true, "s": 10.181, "e": 10.492 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 10.492, "e": 10.679 },
+        { "t": "usarse", "l": "usar", "p": "VERB", "w": true, "sp": true, "s": 10.678, "e": 11.113 },
+        { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true, "s": 11.113, "e": 11.486 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 11.487, "e": 11.736 },
+        { "t": "jóvenes", "l": "joven", "p": "NOUN", "w": true, "s": 11.735, "e": 12.233 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.683,
+      "end": 12.279
+    },
+    {
+      "id": "s6",
+      "speaker": "irene",
+      "text": "Luego se refugia en ciertos pueblos o familias.",
+      "tokens": [
+        { "t": "Luego", "l": "luego", "p": "ADV", "w": true, "sp": true, "s": 12.539, "e": 12.944 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 12.944, "e": 13.146 },
+        { "t": "refugia", "l": "refugiarse", "p": "VERB", "w": true, "sp": true, "s": 13.146, "e": 13.686 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 13.686, "e": 13.888 },
+        { "t": "ciertos", "l": "cierto", "p": "ADJ", "w": true, "sp": true, "s": 13.888, "e": 14.428 },
+        { "t": "pueblos", "l": "pueblo", "p": "NOUN", "w": true, "sp": true, "s": 14.428, "e": 14.968 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 14.967, "e": 15.102 },
+        { "t": "familias", "l": "familia", "p": "NOUN", "w": true, "s": 15.102, "e": 15.709 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 12.529,
+      "end": 15.762
+    },
+    {
+      "id": "s7",
+      "speaker": "irene",
+      "text": "Y un día descubrimos que solo aparece en los libros.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 16.022, "e": 16.143 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 16.143, "e": 16.325 },
+        { "t": "día", "l": "día", "p": "NOUN", "w": true, "sp": true, "s": 16.325, "e": 16.567 },
+        { "t": "descubrimos", "l": "descubrir", "p": "VERB", "w": true, "sp": true, "s": 16.567, "e": 17.294 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 17.294, "e": 17.536 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 17.536, "e": 17.839 },
+        { "t": "aparece", "l": "aparecer", "p": "VERB", "w": true, "sp": true, "s": 17.839, "e": 18.324 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 18.324, "e": 18.506 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 18.506, "e": 18.748 },
+        { "t": "libros", "l": "libro", "p": "NOUN", "w": true, "s": 18.748, "e": 19.172 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 16.012,
+      "end": 19.258
+    },
+    {
+      "id": "s8",
+      "speaker": "irene",
+      "text": "Piense en «zaguán», el espacio de entrada de las casas antiguas.",
+      "tokens": [
+        { "t": "Piense", "l": "pensar", "p": "VERB", "w": true, "sp": true, "s": 19.518, "e": 20 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 20, "e": 20.206 },
+        { "t": "«", "l": "«", "p": "PUNCT", "w": false },
+        { "t": "zaguán", "l": "zaguán", "p": "NOUN", "w": true, "s": 20.206, "e": 20.688 },
+        { "t": "»", "l": "»", "p": "PUNCT", "w": false },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 20.868, "e": 21.056 },
+        { "t": "espacio", "l": "espacio", "p": "NOUN", "w": true, "sp": true, "s": 21.056, "e": 21.558 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 21.558, "e": 21.746 },
+        { "t": "entrada", "l": "entrar", "p": "VERB", "w": true, "sp": true, "s": 21.746, "e": 22.248 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 22.248, "e": 22.436 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 22.436, "e": 22.687 },
+        { "t": "casas", "l": "casa", "p": "NOUN", "w": true, "sp": true, "s": 22.687, "e": 23.063 },
+        { "t": "antiguas", "l": "antiguo", "p": "ADJ", "w": true, "s": 23.063, "e": 23.628 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 19.508,
+      "end": 23.699
+    },
+    {
+      "id": "s9",
+      "speaker": "irene",
+      "text": "Cuando desaparecen esas casas, la palabra pierde su razón de ser.",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 23.969, "e": 24.415 },
+        {
+          "t": "desaparecen",
+          "l": "desaparecer",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 24.415,
+          "e": 25.18
+        },
+        { "t": "esas", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 25.18, "e": 25.499 },
+        { "t": "casas", "l": "casa", "p": "NOUN", "w": true, "s": 25.499, "e": 25.882 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 25.882, "e": 26.073 },
+        { "t": "palabra", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 26.073, "e": 26.583 },
+        { "t": "pierde", "l": "perder", "p": "VERB", "w": true, "sp": true, "s": 26.583, "e": 27.029 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 27.029, "e": 27.22 },
+        { "t": "razón", "l": "razón", "p": "NOUN", "w": true, "sp": true, "s": 27.22, "e": 27.603 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 27.603, "e": 27.794 },
+        { "t": "ser", "l": "ser", "p": "AUX", "w": true, "s": 27.794, "e": 28.049 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 23.949,
+      "end": 28.154
+    },
+    {
+      "id": "s10",
+      "speaker": "javier",
+      "text": "O sea, que muchas palabras mueren porque muere la cosa que nombran.",
+      "tokens": [
+        { "t": "O", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 28.554, "e": 28.687 },
+        { "t": "sea", "l": "ser", "p": "AUX", "w": true, "s": 28.687, "e": 28.954 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 29.134, "e": 29.369 },
+        { "t": "muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 29.369, "e": 29.781 },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 29.781, "e": 30.311 },
+        { "t": "mueren", "l": "morir", "p": "VERB", "w": true, "sp": true, "s": 30.311, "e": 30.723 },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 30.723, "e": 31.135 },
+        { "t": "muere", "l": "morir", "p": "VERB", "w": true, "sp": true, "s": 31.134, "e": 31.487 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 31.487, "e": 31.664 },
+        { "t": "cosa", "l": "cosa", "p": "NOUN", "w": true, "sp": true, "s": 31.664, "e": 31.958 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 31.958, "e": 32.193 },
+        { "t": "nombran", "l": "nombrar", "p": "VERB", "w": true, "s": 32.193, "e": 32.664 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 28.554,
+      "end": 32.74
+    },
+    {
+      "id": "s11",
+      "speaker": "irene",
+      "text": "Es la causa más frecuente, pero no la única.",
+      "tokens": [
+        { "t": "Es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 33.15, "e": 33.333 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 33.333, "e": 33.516 },
+        { "t": "causa", "l": "causar", "p": "VERB", "w": true, "sp": true, "s": 33.517, "e": 33.884 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 33.884, "e": 34.129 },
+        { "t": "frecuente", "l": "frecuente", "p": "ADJ", "w": true, "s": 34.128, "e": 34.74 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 34.91, "e": 35.189 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 35.189, "e": 35.357 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 35.357, "e": 35.525 },
+        { "t": "única", "l": "único", "p": "ADJ", "w": true, "s": 35.525, "e": 35.86 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 33.14,
+      "end": 35.915
+    },
+    {
+      "id": "s12",
+      "speaker": "irene",
+      "text": "Otras veces una palabra es sustituida por un sinónimo que se pone de moda, a menudo procedente del inglés.",
+      "tokens": [
+        { "t": "Otras", "l": "otro", "p": "DET", "w": true, "sp": true, "s": 36.175, "e": 36.542 },
+        { "t": "veces", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 36.542, "e": 36.909 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 36.909, "e": 37.154 },
+        { "t": "palabra", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 37.153, "e": 37.642 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 37.642, "e": 37.825 },
+        { "t": "sustituida", "l": "sustituir", "p": "VERB", "w": true, "sp": true, "s": 37.826, "e": 38.499 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 38.498, "e": 38.743 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 38.743, "e": 38.926 },
+        { "t": "sinónimo", "l": "sinónimo", "p": "NOUN", "w": true, "sp": true, "s": 38.926, "e": 39.476 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 39.477, "e": 39.722 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 39.721, "e": 39.904 },
+        { "t": "pone", "l": "poner", "p": "VERB", "w": true, "sp": true, "s": 39.905, "e": 40.211 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 40.21, "e": 40.393 },
+        { "t": "moda", "l": "moda", "p": "NOUN", "w": true, "s": 40.394, "e": 40.7 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 40.7, "e": 40.822 },
+        { "t": "menudo", "l": "menudo", "p": "ADJ", "w": true, "sp": true, "s": 40.822, "e": 41.25 },
+        { "t": "procedente", "l": "procedente", "p": "ADJ", "w": true, "sp": true, "s": 41.25, "e": 41.923 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 41.922, "e": 42.167 },
+        { "t": "inglés", "l": "inglés", "p": "ADJ", "w": true, "s": 42.167, "e": 42.595 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 36.165,
+      "end": 42.646
+    },
+    {
+      "id": "s13",
+      "speaker": "irene",
+      "text": "Y hay casos más curiosos, palabras que caen en desuso porque adquieren un sentido ofensivo y los hablantes prefieren evitarlas.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 42.906, "e": 43.024 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 43.024, "e": 43.261 },
+        { "t": "casos", "l": "caso", "p": "NOUN", "w": true, "sp": true, "s": 43.261, "e": 43.616 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 43.616, "e": 43.853 },
+        { "t": "curiosos", "l": "curioso", "p": "ADJ", "w": true, "s": 43.852, "e": 44.384 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 44.384, "e": 44.916 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 44.916, "e": 45.153 },
+        { "t": "caen", "l": "caer", "p": "VERB", "w": true, "sp": true, "s": 45.153, "e": 45.449 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 45.448, "e": 45.625 },
+        { "t": "desuso", "l": "desuso", "p": "NOUN", "w": true, "sp": true, "s": 45.626, "e": 46.04 },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 46.04, "e": 46.454 },
+        { "t": "adquieren", "l": "adquirir", "p": "VERB", "w": true, "sp": true, "s": 46.454, "e": 47.045 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 47.045, "e": 47.222 },
+        { "t": "sentido", "l": "sentir", "p": "VERB", "w": true, "sp": true, "s": 47.222, "e": 47.695 },
+        { "t": "ofensivo", "l": "ofensivo", "p": "ADJ", "w": true, "sp": true, "s": 47.695, "e": 48.227 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 48.227, "e": 48.345 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 48.346, "e": 48.583 },
+        { "t": "hablantes", "l": "hablante", "p": "NOUN", "w": true, "sp": true, "s": 48.582, "e": 49.173 },
+        { "t": "prefieren", "l": "preferir", "p": "VERB", "w": true, "sp": true, "s": 49.173, "e": 49.764 },
+        { "t": "evitarlas", "l": "evitar", "p": "VERB", "w": true, "s": 49.765, "e": 50.356 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 42.896,
+      "end": 50.42
+    },
+    {
+      "id": "s14",
+      "speaker": "javier",
+      "text": "Cuando una palabra deja de usarse, ¿la eliminan del diccionario?",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 50.86, "e": 51.247 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 51.247, "e": 51.468 },
+        { "t": "palabra", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 51.468, "e": 51.91 },
+        { "t": "deja", "l": "dejar", "p": "VERB", "w": true, "sp": true, "s": 51.911, "e": 52.187 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 52.187, "e": 52.353 },
+        { "t": "usarse", "l": "usar", "p": "VERB", "w": true, "s": 52.353, "e": 52.74 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 52.96, "e": 53.142 },
+        { "t": "eliminan", "l": "eliminar", "p": "VERB", "w": true, "sp": true, "s": 53.142, "e": 53.688 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 53.689, "e": 53.932 },
+        { "t": "diccionario", "l": "diccionario", "p": "NOUN", "w": true, "s": 53.931, "e": 54.66 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 50.82,
+      "end": 54.745
+    },
+    {
+      "id": "s15",
+      "speaker": "irene",
+      "text": "Con mucha prudencia.",
+      "tokens": [
+        { "t": "Con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 55.155, "e": 55.391 },
+        { "t": "mucha", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 55.391, "e": 55.745 },
+        { "t": "prudencia", "l": "prudencia", "p": "NOUN", "w": true, "s": 55.745, "e": 56.335 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 55.145,
+      "end": 56.381
+    },
+    {
+      "id": "s16",
+      "speaker": "irene",
+      "text": "Un diccionario no solo sirve para hablar hoy; también sirve para leer a los clásicos.",
+      "tokens": [
+        { "t": "Un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 56.631, "e": 56.805 },
+        {
+          "t": "diccionario",
+          "l": "diccionario",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 56.805,
+          "e": 57.499
+        },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 57.499, "e": 57.673 },
+        { "t": "solo", "l": "solo", "p": "ADV", "w": true, "sp": true, "s": 57.672, "e": 57.961 },
+        { "t": "sirve", "l": "servir", "p": "VERB", "w": true, "sp": true, "s": 57.962, "e": 58.309 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 58.309, "e": 58.598 },
+        { "t": "hablar", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 58.598, "e": 59.003 },
+        { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "s": 59.003, "e": 59.234 },
+        { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 59.235, "e": 59.698 },
+        { "t": "sirve", "l": "servir", "p": "VERB", "w": true, "sp": true, "s": 59.697, "e": 60.044 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 60.045, "e": 60.334 },
+        { "t": "leer", "l": "leer", "p": "VERB", "w": true, "sp": true, "s": 60.334, "e": 60.623 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 60.623, "e": 60.739 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 60.739, "e": 60.97 },
+        { "t": "clásicos", "l": "clásico", "p": "ADJ", "w": true, "s": 60.97, "e": 61.491 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 56.631,
+      "end": 61.559
+    },
+    {
+      "id": "s17",
+      "speaker": "irene",
+      "text": "Si quitáramos las palabras que ya no se oyen en la calle, nadie podría entender una novela del siglo diecinueve.",
+      "tokens": [
+        { "t": "Si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 61.829, "e": 61.997 },
+        { "t": "quitáramos", "l": "quitar", "p": "VERB", "w": true, "sp": true, "s": 61.997, "e": 62.615 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 62.615, "e": 62.84 },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 62.84, "e": 63.345 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 63.345, "e": 63.57 },
+        { "t": "ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 63.569, "e": 63.737 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 63.738, "e": 63.906 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 63.906, "e": 64.074 },
+        { "t": "oyen", "l": "oír", "p": "VERB", "w": true, "sp": true, "s": 64.075, "e": 64.356 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 64.355, "e": 64.523 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 64.524, "e": 64.692 },
+        { "t": "calle", "l": "calle", "p": "NOUN", "w": true, "s": 64.692, "e": 65.029 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "nadie", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 65.269, "e": 65.649 },
+        { "t": "podría", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 65.649, "e": 66.092 },
+        { "t": "entender", "l": "entender", "p": "VERB", "w": true, "sp": true, "s": 66.092, "e": 66.662 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 66.662, "e": 66.915 },
+        { "t": "novela", "l": "novela", "p": "NOUN", "w": true, "sp": true, "s": 66.916, "e": 67.359 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 67.359, "e": 67.612 },
+        { "t": "siglo", "l": "siglo", "p": "NOUN", "w": true, "sp": true, "s": 67.612, "e": 67.992 },
+        { "t": "diecinueve", "l": "diecinueve", "p": "NUM", "w": false, "s": 67.992, "e": 68.689 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 61.809,
+      "end": 68.764
+    },
+    {
+      "id": "s18",
+      "speaker": "irene",
+      "text": "Por eso las marcamos como anticuadas o poco usadas, pero las conservamos.",
+      "tokens": [
+        { "t": "Por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 69.024, "e": 69.275 },
+        { "t": "eso", "l": "esto", "p": "PRON", "w": true, "sp": true, "s": 69.275, "e": 69.526 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 69.526, "e": 69.777 },
+        { "t": "marcamos", "l": "marcar", "p": "VERB", "w": true, "sp": true, "s": 69.777, "e": 70.342 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 70.342, "e": 70.656 },
+        { "t": "anticuadas", "l": "anticuado", "p": "ADJ", "w": true, "sp": true, "s": 70.656, "e": 71.347 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 71.347, "e": 71.473 },
+        { "t": "poco", "l": "poco", "p": "DET", "w": true, "sp": true, "s": 71.472, "e": 71.786 },
+        { "t": "usadas", "l": "usar", "p": "VERB", "w": true, "s": 71.786, "e": 72.225 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 72.226, "e": 72.54 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 72.54, "e": 72.791 },
+        { "t": "conservamos", "l": "conservar", "p": "VERB", "w": true, "s": 72.791, "e": 73.544 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 69.014,
+      "end": 73.628
+    },
+    {
+      "id": "s19",
+      "speaker": "javier",
+      "text": "Hay quien habla de empobrecimiento del idioma.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 74.038, "e": 74.255 },
+        { "t": "quien", "l": "quien", "p": "PRON", "w": true, "sp": true, "s": 74.255, "e": 74.581 },
+        { "t": "habla", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 74.581, "e": 74.907 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 74.908, "e": 75.071 },
+        {
+          "t": "empobrecimiento",
+          "l": "empobrecimiento",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 75.071,
+          "e": 75.941
+        },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 75.94, "e": 76.157 },
+        { "t": "idioma", "l": "idioma", "p": "NOUN", "w": true, "s": 76.158, "e": 76.538 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 74.028,
+      "end": 76.644
+    },
+    {
+      "id": "s20",
+      "speaker": "javier",
+      "text": "Dicen que los jóvenes usan cada vez menos palabras.",
+      "tokens": [
+        { "t": "Dicen", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 76.904, "e": 77.27 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 77.27, "e": 77.514 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 77.514, "e": 77.758 },
+        { "t": "jóvenes", "l": "joven", "p": "NOUN", "w": true, "sp": true, "s": 77.758, "e": 78.246 },
+        { "t": "usan", "l": "usar", "p": "VERB", "w": true, "sp": true, "s": 78.246, "e": 78.551 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 78.55, "e": 78.855 },
+        { "t": "vez", "l": "vez", "p": "NOUN", "w": true, "sp": true, "s": 78.855, "e": 79.099 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "sp": true, "s": 79.099, "e": 79.465 },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "s": 79.465, "e": 80.014 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 76.894,
+      "end": 80.06
+    },
+    {
+      "id": "s21",
+      "speaker": "irene",
+      "text": "Desconfío bastante de ese discurso, que se repite en cada generación.",
+      "tokens": [
+        { "t": "Desconfío", "l": "desconfiar", "p": "VERB", "w": true, "sp": true, "s": 80.46, "e": 81.072 },
+        { "t": "bastante", "l": "bastante", "p": "ADV", "w": true, "sp": true, "s": 81.072, "e": 81.623 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 81.622, "e": 81.806 },
+        { "t": "ese", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 81.806, "e": 82.051 },
+        { "t": "discurso", "l": "discurso", "p": "NOUN", "w": true, "s": 82.051, "e": 82.602 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 82.601, "e": 82.846 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 82.846, "e": 83.03 },
+        { "t": "repite", "l": "repetir", "p": "VERB", "w": true, "sp": true, "s": 83.029, "e": 83.457 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 83.458, "e": 83.642 },
+        { "t": "cada", "l": "cada", "p": "DET", "w": true, "sp": true, "s": 83.641, "e": 83.947 },
+        { "t": "generación", "l": "generación", "p": "NOUN", "w": true, "s": 83.947, "e": 84.62 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 80.46,
+      "end": 84.695
+    },
+    {
+      "id": "s22",
+      "speaker": "irene",
+      "text": "Los jóvenes pierden unas palabras, sí, pero crean otras.",
+      "tokens": [
+        { "t": "Los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 84.945, "e": 85.22 },
+        { "t": "jóvenes", "l": "joven", "p": "NOUN", "w": true, "sp": true, "s": 85.22, "e": 85.77 },
+        { "t": "pierden", "l": "perder", "p": "VERB", "w": true, "sp": true, "s": 85.769, "e": 86.319 },
+        { "t": "unas", "l": "un", "p": "DET", "w": true, "sp": true, "s": 86.319, "e": 86.663 },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "s": 86.663, "e": 87.281 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "s": 87.281, "e": 87.487 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "pero", "l": "pero", "p": "CCONJ", "w": true, "sp": true, "s": 87.487, "e": 87.831 },
+        { "t": "crean", "l": "creer", "p": "VERB", "w": true, "sp": true, "s": 87.831, "e": 88.243 },
+        { "t": "otras", "l": "otro", "p": "DET", "w": true, "s": 88.243, "e": 88.655 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 84.945,
+      "end": 88.714
+    },
+    {
+      "id": "s23",
+      "speaker": "irene",
+      "text": "Tienen un vocabulario riquísimo para hablar de tecnología, de música o de emociones que sus abuelos no sabrían nombrar.",
+      "tokens": [
+        { "t": "Tienen", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 88.974, "e": 89.362 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 89.362, "e": 89.528 },
+        {
+          "t": "vocabulario",
+          "l": "vocabulario",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 89.528,
+          "e": 90.193
+        },
+        { "t": "riquísimo", "l": "rico", "p": "ADJ", "w": true, "sp": true, "s": 90.193, "e": 90.747 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 90.748, "e": 91.025 },
+        { "t": "hablar", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 91.025, "e": 91.413 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 91.413, "e": 91.579 },
+        { "t": "tecnología", "l": "tecnología", "p": "NOUN", "w": true, "s": 91.579, "e": 92.189 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 92.189, "e": 92.355 },
+        { "t": "música", "l": "música", "p": "NOUN", "w": true, "sp": true, "s": 92.355, "e": 92.743 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 92.743, "e": 92.854 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 92.854, "e": 93.02 },
+        { "t": "emociones", "l": "emoción", "p": "NOUN", "w": true, "sp": true, "s": 93.02, "e": 93.574 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 93.574, "e": 93.796 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 93.796, "e": 94.018 },
+        { "t": "abuelos", "l": "abuelo", "p": "NOUN", "w": true, "sp": true, "s": 94.018, "e": 94.461 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 94.461, "e": 94.627 },
+        { "t": "sabrían", "l": "saber", "p": "VERB", "w": true, "sp": true, "s": 94.627, "e": 95.07 },
+        { "t": "nombrar", "l": "nombrar", "p": "VERB", "w": true, "s": 95.071, "e": 95.514 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 88.964,
+      "end": 95.597
+    },
+    {
+      "id": "s24",
+      "speaker": "irene",
+      "text": "Lo que cambia es el repertorio, no necesariamente la riqueza.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 95.857, "e": 96.046 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 96.046, "e": 96.298 },
+        { "t": "cambia", "l": "cambiar", "p": "VERB", "w": true, "sp": true, "s": 96.297, "e": 96.737 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 96.738, "e": 96.927 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 96.926, "e": 97.115 },
+        { "t": "repertorio", "l": "repertorio", "p": "NOUN", "w": true, "s": 97.115, "e": 97.807 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 98.007, "e": 98.204 },
+        {
+          "t": "necesariamente",
+          "l": "necesariamente",
+          "p": "ADV",
+          "w": true,
+          "sp": true,
+          "s": 98.204,
+          "e": 99.187
+        },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 99.186, "e": 99.383 },
+        { "t": "riqueza", "l": "riqueza", "p": "NOUN", "w": true, "s": 99.383, "e": 99.907 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 95.847,
+      "end": 99.984
+    },
+    {
+      "id": "s25",
+      "speaker": "javier",
+      "text": "¿No le da pena, como lexicógrafa, ver desaparecer ciertas palabras?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 100.394, "e": 100.602 },
+        { "t": "le", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 100.602, "e": 100.81 },
+        { "t": "da", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 100.81, "e": 101.018 },
+        { "t": "pena", "l": "pena", "p": "NOUN", "w": true, "s": 101.018, "e": 101.364 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 101.644, "e": 101.973 },
+        { "t": "lexicógrafa", "l": "lexicógrafo", "p": "NOUN", "w": true, "s": 101.973, "e": 102.764 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ver", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 102.934, "e": 103.198 },
+        {
+          "t": "desaparecer",
+          "l": "desaparecer",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 103.198,
+          "e": 103.991
+        },
+        { "t": "ciertas", "l": "cierto", "p": "ADJ", "w": true, "sp": true, "s": 103.991, "e": 104.519 },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "s": 104.519, "e": 105.114 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 100.384,
+      "end": 105.166
+    },
+    {
+      "id": "s26",
+      "speaker": "irene",
+      "text": "Confieso que sí.",
+      "tokens": [
+        { "t": "Confieso", "l": "confesar", "p": "VERB", "w": true, "sp": true, "s": 105.576, "e": 106.139 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 106.139, "e": 106.389 },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "s": 106.389, "e": 106.577 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 105.566,
+      "end": 106.629
+    },
+    {
+      "id": "s27",
+      "speaker": "irene",
+      "text": "Hay palabras que son pequeñas joyas, que condensan una forma de mirar el mundo.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 106.889, "e": 107.107 },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 107.107, "e": 107.597 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 107.597, "e": 107.815 },
+        { "t": "son", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 107.815, "e": 108.033 },
+        { "t": "pequeñas", "l": "pequeño", "p": "ADJ", "w": true, "sp": true, "s": 108.033, "e": 108.523 },
+        { "t": "joyas", "l": "joya", "p": "NOUN", "w": true, "s": 108.524, "e": 108.851 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 108.851, "e": 109.069 },
+        { "t": "condensan", "l": "condensar", "p": "VERB", "w": true, "sp": true, "s": 109.068, "e": 109.613 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 109.613, "e": 109.831 },
+        { "t": "forma", "l": "forma", "p": "NOUN", "w": true, "sp": true, "s": 109.831, "e": 110.158 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 110.158, "e": 110.321 },
+        { "t": "mirar", "l": "mirar", "p": "VERB", "w": true, "sp": true, "s": 110.322, "e": 110.649 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 110.649, "e": 110.812 },
+        { "t": "mundo", "l": "mundo", "p": "NOUN", "w": true, "s": 110.812, "e": 111.139 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 106.879,
+      "end": 111.209
+    },
+    {
+      "id": "s28",
+      "speaker": "irene",
+      "text": "En algunas zonas rurales había un verbo para el olor de la tierra tras la primera lluvia del otoño.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 111.469, "e": 111.634 },
+        { "t": "algunas", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 111.634, "e": 112.074 },
+        { "t": "zonas", "l": "zona", "p": "NOUN", "w": true, "sp": true, "s": 112.073, "e": 112.403 },
+        { "t": "rurales", "l": "rural", "p": "ADJ", "w": true, "sp": true, "s": 112.403, "e": 112.843 },
+        { "t": "había", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 112.843, "e": 113.173 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 113.172, "e": 113.337 },
+        { "t": "verbo", "l": "verbo", "p": "NOUN", "w": true, "sp": true, "s": 113.337, "e": 113.667 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 113.667, "e": 113.942 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 113.942, "e": 114.107 },
+        { "t": "olor", "l": "olor", "p": "NOUN", "w": true, "sp": true, "s": 114.107, "e": 114.382 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 114.381, "e": 114.546 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 114.546, "e": 114.711 },
+        { "t": "tierra", "l": "tierra", "p": "NOUN", "w": true, "sp": true, "s": 114.711, "e": 115.096 },
+        { "t": "tras", "l": "tras", "p": "ADP", "w": true, "sp": true, "s": 115.096, "e": 115.371 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 115.37, "e": 115.535 },
+        { "t": "primera", "l": "primero", "p": "NUM", "w": false, "sp": true, "s": 115.535, "e": 115.975 },
+        { "t": "lluvia", "l": "lluvia", "p": "NOUN", "w": true, "sp": true, "s": 115.975, "e": 116.36 },
+        { "t": "del", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 116.36, "e": 116.58 },
+        { "t": "otoño", "l": "otoño", "p": "NOUN", "w": true, "s": 116.579, "e": 116.909 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 111.459,
+      "end": 116.98
+    },
+    {
+      "id": "s29",
+      "speaker": "irene",
+      "text": "Cuando se pierde una palabra así, se pierde también una sensibilidad.",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 117.24, "e": 117.681 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 117.681, "e": 117.87 },
+        { "t": "pierde", "l": "perder", "p": "VERB", "w": true, "sp": true, "s": 117.869, "e": 118.31 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 118.31, "e": 118.562 },
+        { "t": "palabra", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 118.562, "e": 119.066 },
+        { "t": "así", "l": "así", "p": "ADV", "w": true, "s": 119.065, "e": 119.317 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 119.317, "e": 119.506 },
+        { "t": "pierde", "l": "perder", "p": "VERB", "w": true, "sp": true, "s": 119.506, "e": 119.947 },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 119.946, "e": 120.45 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 120.45, "e": 120.702 },
+        { "t": "sensibilidad", "l": "sensibilidad", "p": "NOUN", "w": true, "s": 120.702, "e": 121.52 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 117.23,
+      "end": 121.611
+    },
+    {
+      "id": "s30",
+      "speaker": "javier",
+      "text": "¿Se puede hacer algo para salvarlas?",
+      "tokens": [
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 122.021, "e": 122.207 },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 122.207, "e": 122.579 },
+        { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 122.579, "e": 122.951 },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 122.951, "e": 123.261 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 123.261, "e": 123.571 },
+        { "t": "salvarlas", "l": "salvar", "p": "VERB", "w": true, "s": 123.571, "e": 124.191 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 122.011,
+      "end": 124.236
+    },
+    {
+      "id": "s31",
+      "speaker": "irene",
+      "text": "Imponerlas no funciona; una lengua no se gobierna por decreto.",
+      "tokens": [
+        {
+          "t": "Imponerlas",
+          "l": "imponerse",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 124.646,
+          "e": 125.346
+        },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 125.346, "e": 125.537 },
+        { "t": "funciona", "l": "funcionar", "p": "VERB", "w": true, "s": 125.536, "e": 126.108 },
+        { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 126.109, "e": 126.363 },
+        { "t": "lengua", "l": "lengua", "p": "NOUN", "w": true, "sp": true, "s": 126.363, "e": 126.808 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 126.809, "e": 127 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 126.999, "e": 127.19 },
+        { "t": "gobierna", "l": "gobernar", "p": "VERB", "w": true, "sp": true, "s": 127.19, "e": 127.762 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 127.763, "e": 128.017 },
+        { "t": "decreto", "l": "decreto", "p": "NOUN", "w": true, "s": 128.017, "e": 128.526 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 124.636,
+      "end": 128.608
+    },
+    {
+      "id": "s32",
+      "speaker": "irene",
+      "text": "Lo que sí se puede hacer es darlas a conocer.",
+      "tokens": [
+        { "t": "Lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 128.858, "e": 129.041 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 129.041, "e": 129.285 },
+        { "t": "sí", "l": "sí", "p": "INTJ", "w": false, "sp": true, "s": 129.286, "e": 129.469 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 129.469, "e": 129.652 },
+        { "t": "puede", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 129.652, "e": 130.019 },
+        { "t": "hacer", "l": "hacer", "p": "VERB", "w": true, "sp": true, "s": 130.019, "e": 130.386 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 130.386, "e": 130.569 },
+        { "t": "darlas", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 130.569, "e": 130.997 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 130.997, "e": 131.119 },
+        { "t": "conocer", "l": "conocer", "p": "VERB", "w": true, "s": 131.119, "e": 131.608 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 128.858,
+      "end": 131.662
+    },
+    {
+      "id": "s33",
+      "speaker": "irene",
+      "text": "Hay escritores que recuperan palabras antiguas en sus novelas, y de repente vuelven a circular.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 131.922, "e": 132.166 },
+        { "t": "escritores", "l": "escritor", "p": "NOUN", "w": true, "sp": true, "s": 132.166, "e": 132.838 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 132.838, "e": 133.082 },
+        { "t": "recuperan", "l": "recuperar", "p": "VERB", "w": true, "sp": true, "s": 133.082, "e": 133.693 },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 133.693, "e": 134.243 },
+        { "t": "antiguas", "l": "antiguo", "p": "ADJ", "w": true, "sp": true, "s": 134.242, "e": 134.792 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 134.792, "e": 134.975 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 134.975, "e": 135.219 },
+        { "t": "novelas", "l": "novela", "p": "NOUN", "w": true, "s": 135.219, "e": 135.708 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 135.708, "e": 135.83 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 135.83, "e": 136.013 },
+        { "t": "repente", "l": "repente", "p": "NOUN", "w": true, "sp": true, "s": 136.013, "e": 136.502 },
+        { "t": "vuelven", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 136.502, "e": 136.991 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 136.99, "e": 137.112 },
+        { "t": "circular", "l": "circular", "p": "ADJ", "w": true, "s": 137.112, "e": 137.662 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 131.912,
+      "end": 137.775
+    },
+    {
+      "id": "s34",
+      "speaker": "irene",
+      "text": "Las palabras viven mientras alguien las necesita o, al menos, mientras alguien disfruta usándolas.",
+      "tokens": [
+        { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 138.035, "e": 138.282 },
+        { "t": "palabras", "l": "palabra", "p": "NOUN", "w": true, "sp": true, "s": 138.282, "e": 138.837 },
+        { "t": "viven", "l": "vivir", "p": "VERB", "w": true, "sp": true, "s": 138.837, "e": 139.207 },
+        { "t": "mientras", "l": "mientras", "p": "SCONJ", "w": true, "sp": true, "s": 139.207, "e": 139.762 },
+        { "t": "alguien", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 139.762, "e": 140.255 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 140.255, "e": 140.502 },
+        { "t": "necesita", "l": "necesitar", "p": "VERB", "w": true, "sp": true, "s": 140.502, "e": 141.057 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "s": 141.057, "e": 141.18 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 141.18, "e": 141.365 },
+        { "t": "menos", "l": "menos", "p": "ADV", "w": true, "s": 141.365, "e": 141.735 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "mientras", "l": "mientras", "p": "SCONJ", "w": true, "sp": true, "s": 141.735, "e": 142.29 },
+        { "t": "alguien", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 142.29, "e": 142.783 },
+        { "t": "disfruta", "l": "disfrutar", "p": "VERB", "w": true, "sp": true, "s": 142.783, "e": 143.338 },
+        { "t": "usándolas", "l": "usar", "p": "VERB", "w": true, "s": 143.338, "e": 143.955 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 138.025,
+      "end": 144.016
+    },
+    {
+      "id": "s35",
+      "speaker": "javier",
+      "text": "Una idea preciosa para terminar.",
+      "tokens": [
+        { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 144.426, "e": 144.662 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "sp": true, "s": 144.662, "e": 144.957 },
+        { "t": "preciosa", "l": "precioso", "p": "ADJ", "w": true, "sp": true, "s": 144.958, "e": 145.49 },
+        { "t": "para", "l": "para", "p": "ADP", "w": true, "sp": true, "s": 145.489, "e": 145.784 },
+        { "t": "terminar", "l": "terminar", "p": "VERB", "w": true, "s": 145.784, "e": 146.316 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 144.416,
+      "end": 146.426
+    },
+    {
+      "id": "s36",
+      "speaker": "javier",
+      "text": "Muchas gracias, Irene.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 146.686, "e": 147.213 },
+        { "t": "gracias", "l": "gracias", "p": "INTJ", "w": false, "s": 147.213, "e": 147.815 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "Irene", "l": "irene", "p": "PROPN", "w": false, "s": 147.815, "e": 148.266 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 146.676,
+      "end": 148.407
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "desuso",
+      "surface": "desuso",
+      "pos": "noun",
+      "def_en": "falta de uso de algo",
+      "def_es": { "en": "disuse", "fr": "désuétude", "zh": "废弃不用", "ja": "廃れ" },
+      "ref": "s13"
+    },
+    {
+      "lemma": "anticuado",
+      "surface": "anticuadas",
+      "pos": "adjective",
+      "def_en": "que ya no se usa o es de otra época",
+      "def_es": { "en": "old-fashioned, obsolete", "fr": "désuet", "zh": "过时的", "ja": "古風な" },
+      "ref": "s18"
+    },
+    {
+      "lemma": "por decreto",
+      "surface": "por decreto",
+      "pos": "phrase",
+      "def_en": "mediante una orden oficial",
+      "def_es": { "en": "by decree", "fr": "par décret", "zh": "以法令方式", "ja": "法令によって" },
+      "ref": "s31"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Cuál es el tema de la entrevista?",
+      "evidence": ["s2"],
+      "rationale_es": { "en": "How and why words fall out of use." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cuántas palabras nuevas entran cada año en el diccionario" },
+        { "id": "b", "text": "Cómo y por qué dejan de usarse las palabras" },
+        { "id": "c", "text": "Por qué el inglés está sustituyendo al español en internet" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cuál es la causa más frecuente de que muera una palabra?",
+      "evidence": ["s10"],
+      "rationale_es": { "en": "The thing it names disappears." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que los académicos deciden prohibirla por escrito" },
+        { "id": "b", "text": "Que resulta demasiado difícil de pronunciar" },
+        { "id": "c", "text": "Que desaparece aquello que designa" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Por qué conservan los diccionarios las palabras poco usadas?",
+      "evidence": ["s16"],
+      "rationale_es": { "en": "To make older texts readable." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Para que se puedan entender los textos antiguos" },
+        { "id": "b", "text": "Para que los diccionarios tengan más páginas y se vendan mejor" },
+        { "id": "c", "text": "Para obligar a los jóvenes a utilizarlas" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Qué opina Irene sobre el supuesto empobrecimiento del idioma?",
+      "evidence": ["s24"],
+      "rationale_es": { "en": "The repertoire changes, not the richness." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cree que es un problema grave y muy reciente" },
+        { "id": "b", "text": "Opina que cambia, pero no disminuye" },
+        { "id": "c", "text": "Cree que los jóvenes apenas saben expresarse" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Irene reconoce que le da pena que se pierdan algunas palabras.",
+      "evidence": ["s26"],
+      "rationale_es": { "en": "She admits it." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué propone para salvar palabras antiguas?",
+      "evidence": ["s32"],
+      "rationale_es": { "en": "Make them known, e.g. in novels." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Aprobar leyes que obliguen a usarlas en la escuela" },
+        { "id": "b", "text": "Eliminarlas para que no confundan a nadie" },
+        { "id": "c", "text": "Difundirlas, por ejemplo, en la literatura" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s31"],
+      "rationale_es": { "en": "*Por decreto*: by decree." },
+      "type": "gap_fill",
+      "text": "Según Irene, una lengua no se gobierna por {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["decreto"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abuelo", "adquirir", "algo", "algún", "anticuado", "antiguo", "apagar", "aparecer", "así", "año",
+    "bastante", "cada", "caer", "calle", "cambiar", "casa", "caso", "causar", "cierto", "circular", "clásico",
+    "comer", "con", "condensar", "confesar", "conocer", "conservar", "cosa", "creer", "cuando", "curioso",
+    "cómo", "dar", "de", "decir", "decreto", "dedicar", "dejar", "desaparecer", "desconfiar", "descubrir",
+    "desuso", "diccionario", "discurso", "disfrutar", "día", "el", "eliminar", "emoción", "empobrecimiento",
+    "en", "entender", "entrar", "entre", "escritor", "ese", "espacio", "esto", "evitar", "familia", "forma",
+    "frecuente", "funcionar", "generación", "gobernar", "golpe", "haber", "hablante", "hablar", "hacer", "hoy",
+    "idea", "idioma", "imponerse", "inglés", "ir", "joven", "joya", "leer", "lengua", "lexicógrafo", "libro",
+    "lluvia", "luego", "marcar", "menos", "menudo", "mientras", "mirar", "moda", "morir", "mucho", "mundo",
+    "más", "música", "necesariamente", "necesitar", "no", "nombrar", "normalmente", "novela", "o", "ofensivo",
+    "olor", "otoño", "otro", "oír", "palabra", "para", "pena", "pensar", "pequeño", "perder", "pero", "poco",
+    "poder", "poner", "por", "porque", "precioso", "preferir", "procedente", "prudencia", "pueblo", "que",
+    "quien", "quitar", "raro", "razón", "recuperar", "refugiarse", "repente", "repertorio", "repetir", "rico",
+    "riqueza", "rural", "saber", "salvar", "se", "sensibilidad", "sentir", "ser", "servir", "si", "siglo",
+    "sinónimo", "solo", "su", "sustituir", "también", "tecnología", "tener", "terminar", "tierra", "tras",
+    "un", "usar", "usted", "ver", "verbo", "vez", "vivir", "vocabulario", "volver", "y", "ya", "zaguán",
+    "zona", "él", "único"
+  ],
+  "difficulty": 1630,
+  "qa": {
+    "coverage_by_level": { "A1": 0.5868, "A2": 0.73, "B1": 0.8815, "B2": 0.9229, "C1": 0.9449, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 10.4,
+    "flesch_reading_ease": 74.5,
+    "checked_at": "2026-10-19T07:53:05.544Z"
+  },
+  "audio": {
+    "src": "audio/c2/es-c2-lis-007/v1.m4a",
+    "duration_s": 148.407,
+    "wpm": 151,
+    "provider": "piper",
+    "voices": { "javier": "sharvard-m", "irene": "sharvard-f" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.96, 0.81, 0.77, 0.77, 0.9, 0.42, 0.96, 1, 0.3, 0.8, 1, 0.74, 0.87, 1, 0.55, 1, 0.92, 0.84, 0.63, 1,
+      0.96, 0.7, 0.86, 0.51, 0.34, 1, 0.95, 0.91, 0.89, 0.49, 1, 0.64, 0.96, 0.7, 0.82, 0.64, 0.56, 0.75, 0.71,
+      0.53, 0.69, 1, 0.92, 0.64, 0.52, 0.74, 0.68, 0.84, 0.81, 1, 0.77, 0.48, 0.97, 1, 0.67, 0.7, 0.85, 0.81,
+      0.83, 1, 0.64, 0.76, 0.55, 0.75, 0.83, 0.81, 0.63, 0.41, 0.99, 0.92, 0.72, 1, 0.7, 0.86, 0.73, 0.86,
+      0.82, 0.69, 0.64, 0.73, 0.22, 0.75, 1, 0.78, 0.63, 0.62, 0.78, 0.12, 0.98, 1, 0.65, 0.85, 0.68, 0.79, 1,
+      0.8, 0.79, 0.72, 0.27, 0.76, 0.77, 1, 0.64, 0.67, 0.56, 0.71, 0.73, 0.74, 0.73, 0.54, 0.98, 0.73, 0.83,
+      1, 0.78, 0.75, 0.82, 0.81, 0.91, 0.99, 0.89, 0.75, 1, 0.78, 0.98, 0.77, 0.92, 1, 0.2, 0.6, 1, 0.75, 0.72,
+      0.84, 0.97, 0.67, 1, 0.85, 0.73, 0.78, 0.79, 0.94, 1, 0.98, 0.94, 0.68, 0.76, 0.67, 0.74, 0.68, 0.71,
+      0.81, 0.74, 0.59, 0.78, 0.85, 1, 0.8, 0.79, 0.78, 0.8, 0.93, 1, 0.6, 0.92, 0.93, 0.89, 0.79, 0.65, 0.67,
+      1, 0.63, 1, 0.55, 0.68, 0.57, 0.55, 0.84, 0.41, 0.53, 0.61, 0.6, 0.65, 1, 0.7, 0.66, 0.66, 0.46, 1, 0.64,
+      0.99, 0.69, 0.73, 0.68, 0.53, 0.44, 0.52, 1, 0.45, 0.71, 0.82, 0.9, 0.64, 0.75, 0.72, 1, 0.6, 0.8, 0.7,
+      0.93, 1, 0.5, 0.64, 0.61, 0.87, 0.89, 0.68, 0.68, 0.76, 0.78, 1, 0.49, 1, 0.92, 0.61, 0.6, 0.78, 0.41,
+      0.64, 0.67, 0.78, 0.49, 0.78, 1, 0.94, 0.48, 0.6, 1, 0.65
+    ]
+  }
+}

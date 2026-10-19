@@ -1,0 +1,1087 @@
+{
+  "id": "es-c2-lis-005",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "unit": "es-c2-u03",
+  "series": "es-c2-u03-gusto",
+  "skill": "listening",
+  "genre": "lecture",
+  "title": "¿Por qué nos gusta lo que nos gusta?",
+  "summary_es": {
+    "en": "A philosopher examines whether taste is personal, cultural or biological, and why it changes over time.",
+    "fr": "Une philosophe se demande si le goût est personnel, culturel ou biologique, et pourquoi il évolue avec le temps.",
+    "zh": "一位哲学家探讨审美是个人的、文化的还是生物的，以及它为何会随时间改变。",
+    "ja": "哲学者が、好みは個人的なものか、文化的か、生物学的か、そしてなぜ時とともに変わるのかを考察します。"
+  },
+  "topic": "culture",
+  "tags": ["estética", "filosofía", "cultura"],
+  "can_do": ["L-C2-03"],
+  "grammar_focus": [],
+  "vocab_focus": ["gusto", "canon", "prestigio", "distinción"],
+  "est_minutes": 12,
+  "prediction_prompt": "¿Crees que hay obras de arte objetivamente mejores que otras?",
+  "pre_teach": ["canon", "distinción"],
+  "speakers": [
+    { "id": "pilar", "name": "Profesora Vidal", "accent": "es-ES", "gender": "female" }
+  ],
+  "target_wpm": 145,
+  "segments": [
+    {
+      "id": "s1",
+      "speaker": "pilar",
+      "text": "Se suele decir que sobre gustos no hay nada escrito.",
+      "tokens": [
+        { "t": "Se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 0.01, "e": 0.184 },
+        { "t": "suele", "l": "soler", "p": "VERB", "w": true, "sp": true, "s": 0.184, "e": 0.532 },
+        { "t": "decir", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 0.533, "e": 0.881 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 0.881, "e": 1.113 },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 1.113, "e": 1.461 },
+        { "t": "gustos", "l": "gusto", "p": "NOUN", "w": true, "sp": true, "s": 1.462, "e": 1.869 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 1.868, "e": 2.042 },
+        { "t": "hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 2.043, "e": 2.275 },
+        { "t": "nada", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 2.275, "e": 2.565 },
+        { "t": "escrito", "l": "escribir", "p": "VERB", "w": true, "s": 2.565, "e": 3.03 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 0,
+      "end": 3.082
+    },
+    {
+      "id": "s2",
+      "speaker": "pilar",
+      "text": "Hoy quiero llevarles la contraria: sobre gustos se ha escrito muchísimo, y casi todo es fascinante.",
+      "tokens": [
+        { "t": "Hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 3.342, "e": 3.573 },
+        { "t": "quiero", "l": "querer", "p": "VERB", "w": true, "sp": true, "s": 3.573, "e": 3.976 },
+        { "t": "llevarles", "l": "llevar", "p": "VERB", "w": true, "sp": true, "s": 3.976, "e": 4.552 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 4.552, "e": 4.725 },
+        { "t": "contraria", "l": "contrario", "p": "ADJ", "w": true, "s": 4.725, "e": 5.301 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 5.301, "e": 5.647 },
+        { "t": "gustos", "l": "gusto", "p": "NOUN", "w": true, "sp": true, "s": 5.647, "e": 6.05 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 6.051, "e": 6.224 },
+        { "t": "ha", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 6.223, "e": 6.396 },
+        { "t": "escrito", "l": "escribir", "p": "VERB", "w": true, "sp": true, "s": 6.396, "e": 6.857 },
+        { "t": "muchísimo", "l": "muchísimo", "p": "ADV", "w": true, "s": 6.857, "e": 7.433 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 7.434, "e": 7.549 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 7.549, "e": 7.837 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 7.837, "e": 8.125 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 8.125, "e": 8.298 },
+        { "t": "fascinante", "l": "fascinante", "p": "ADJ", "w": true, "s": 8.298, "e": 8.932 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 3.332,
+      "end": 9.011
+    },
+    {
+      "id": "s3",
+      "speaker": "pilar",
+      "text": "La pregunta de fondo es antigua.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 9.261, "e": 9.436 },
+        { "t": "pregunta", "l": "pregunta", "p": "NOUN", "w": true, "sp": true, "s": 9.436, "e": 9.962 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 9.962, "e": 10.137 },
+        { "t": "fondo", "l": "fondo", "p": "NOUN", "w": true, "sp": true, "s": 10.138, "e": 10.489 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 10.488, "e": 10.663 },
+        { "t": "antigua", "l": "antiguo", "p": "ADJ", "w": true, "s": 10.664, "e": 11.132 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 9.261,
+      "end": 11.199
+    },
+    {
+      "id": "s4",
+      "speaker": "pilar",
+      "text": "Cuando decimos que un cuadro es bello, ¿estamos describiendo el cuadro o estamos hablando de nosotros mismos?",
+      "tokens": [
+        { "t": "Cuando", "l": "cuando", "p": "SCONJ", "w": true, "sp": true, "s": 11.479, "e": 11.845 },
+        { "t": "decimos", "l": "decir", "p": "VERB", "w": true, "sp": true, "s": 11.845, "e": 12.264 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 12.264, "e": 12.473 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 12.473, "e": 12.63 },
+        { "t": "cuadro", "l": "cuadro", "p": "NOUN", "w": true, "sp": true, "s": 12.63, "e": 12.996 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 12.997, "e": 13.154 },
+        { "t": "bello", "l": "bello", "p": "ADJ", "w": true, "s": 13.154, "e": 13.468 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "¿", "l": "¿", "p": "PUNCT", "w": false },
+        { "t": "estamos", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 13.468, "e": 13.887 },
+        {
+          "t": "describiendo",
+          "l": "describir",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 13.886,
+          "e": 14.566
+        },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 14.567, "e": 14.724 },
+        { "t": "cuadro", "l": "cuadro", "p": "NOUN", "w": true, "sp": true, "s": 14.724, "e": 15.09 },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 15.09, "e": 15.195 },
+        { "t": "estamos", "l": "estar", "p": "AUX", "w": true, "sp": true, "s": 15.195, "e": 15.614 },
+        { "t": "hablando", "l": "hablar", "p": "VERB", "w": true, "sp": true, "s": 15.614, "e": 16.085 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 16.085, "e": 16.242 },
+        { "t": "nosotros", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 16.242, "e": 16.713 },
+        { "t": "mismos", "l": "mismo", "p": "DET", "w": true, "s": 16.713, "e": 17.079 },
+        { "t": "?", "l": "?", "p": "PUNCT", "w": false }
+      ],
+      "start": 11.449,
+      "end": 17.147
+    },
+    {
+      "id": "s5",
+      "speaker": "pilar",
+      "text": "Durante siglos, la respuesta dominante fue la primera.",
+      "tokens": [
+        { "t": "Durante", "l": "durante", "p": "ADP", "w": true, "sp": true, "s": 17.407, "e": 17.875 },
+        { "t": "siglos", "l": "siglo", "p": "NOUN", "w": true, "s": 17.875, "e": 18.284 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 18.284, "e": 18.459 },
+        { "t": "respuesta", "l": "respuesta", "p": "NOUN", "w": true, "sp": true, "s": 18.46, "e": 19.045 },
+        { "t": "dominante", "l": "dominante", "p": "ADJ", "w": true, "sp": true, "s": 19.045, "e": 19.63 },
+        { "t": "fue", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 19.63, "e": 19.864 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 19.864, "e": 20.039 },
+        { "t": "primera", "l": "primero", "p": "NUM", "w": false, "s": 20.039, "e": 20.507 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 17.397,
+      "end": 20.571
+    },
+    {
+      "id": "s6",
+      "speaker": "pilar",
+      "text": "La belleza se consideraba una propiedad objetiva, ligada a la proporción y a la armonía.",
+      "tokens": [
+        { "t": "La", "l": "el", "p": "DET", "w": true, "sp": true, "s": 20.831, "e": 21.004 },
+        { "t": "belleza", "l": "belleza", "p": "NOUN", "w": true, "sp": true, "s": 21.004, "e": 21.466 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 21.466, "e": 21.639 },
+        { "t": "consideraba", "l": "considerar", "p": "VERB", "w": true, "sp": true, "s": 21.64, "e": 22.333 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 22.333, "e": 22.564 },
+        { "t": "propiedad", "l": "propiedad", "p": "NOUN", "w": true, "sp": true, "s": 22.564, "e": 23.142 },
+        { "t": "objetiva", "l": "objetivo", "p": "NOUN", "w": true, "s": 23.141, "e": 23.661 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "ligada", "l": "ligar", "p": "VERB", "w": true, "sp": true, "s": 23.811, "e": 24.216 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 24.216, "e": 24.332 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 24.332, "e": 24.506 },
+        { "t": "proporción", "l": "proporción", "p": "NOUN", "w": true, "sp": true, "s": 24.506, "e": 25.143 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 25.143, "e": 25.259 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 25.258, "e": 25.374 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 25.374, "e": 25.548 },
+        { "t": "armonía", "l": "armonía", "p": "NOUN", "w": true, "s": 25.548, "e": 26.011 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 20.821,
+      "end": 26.075
+    },
+    {
+      "id": "s7",
+      "speaker": "pilar",
+      "text": "Una catedral era hermosa porque sus medidas respondían a un orden.",
+      "tokens": [
+        { "t": "Una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 26.335, "e": 26.565 },
+        { "t": "catedral", "l": "catedral", "p": "NOUN", "w": true, "sp": true, "s": 26.565, "e": 27.083 },
+        { "t": "era", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 27.083, "e": 27.313 },
+        { "t": "hermosa", "l": "hermoso", "p": "ADJ", "w": true, "sp": true, "s": 27.314, "e": 27.775 },
+        { "t": "porque", "l": "porque", "p": "SCONJ", "w": true, "sp": true, "s": 27.774, "e": 28.177 },
+        { "t": "sus", "l": "su", "p": "DET", "w": true, "sp": true, "s": 28.177, "e": 28.407 },
+        { "t": "medidas", "l": "medida", "p": "NOUN", "w": true, "sp": true, "s": 28.408, "e": 28.869 },
+        { "t": "respondían", "l": "responder", "p": "VERB", "w": true, "sp": true, "s": 28.868, "e": 29.501 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 29.502, "e": 29.617 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 29.617, "e": 29.79 },
+        { "t": "orden", "l": "orden", "p": "NOUN", "w": true, "s": 29.79, "e": 30.135 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 26.325,
+      "end": 30.207
+    },
+    {
+      "id": "s8",
+      "speaker": "pilar",
+      "text": "Quien no lo apreciaba, sencillamente, carecía de formación.",
+      "tokens": [
+        { "t": "Quien", "l": "quien", "p": "PRON", "w": true, "sp": true, "s": 30.467, "e": 30.839 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 30.839, "e": 31.025 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 31.024, "e": 31.21 },
+        { "t": "apreciaba", "l": "apreciar", "p": "VERB", "w": true, "s": 31.21, "e": 31.829 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sencillamente", "l": "sencillamente", "p": "ADV", "w": true, "s": 31.829, "e": 32.696 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "carecía", "l": "carecer", "p": "VERB", "w": true, "sp": true, "s": 32.696, "e": 33.191 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 33.192, "e": 33.378 },
+        { "t": "formación", "l": "formación", "p": "NOUN", "w": true, "s": 33.378, "e": 33.997 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 30.457,
+      "end": 34.062
+    },
+    {
+      "id": "s9",
+      "speaker": "pilar",
+      "text": "En el siglo dieciocho, sin embargo, varios filósofos empezaron a desplazar la atención hacia el sujeto.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 34.322, "e": 34.501 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 34.501, "e": 34.68 },
+        { "t": "siglo", "l": "siglo", "p": "NOUN", "w": true, "sp": true, "s": 34.679, "e": 35.036 },
+        { "t": "dieciocho", "l": "dieciocho", "p": "NUM", "w": false, "s": 35.036, "e": 35.631 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sin", "l": "sin", "p": "ADP", "w": true, "sp": true, "s": 35.631, "e": 35.869 },
+        { "t": "embargo", "l": "embargo", "p": "NOUN", "w": true, "s": 35.869, "e": 36.345 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "varios", "l": "varios", "p": "DET", "w": true, "sp": true, "s": 36.345, "e": 36.762 },
+        { "t": "filósofos", "l": "filósofo", "p": "NOUN", "w": true, "sp": true, "s": 36.762, "e": 37.357 },
+        { "t": "empezaron", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 37.357, "e": 37.952 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 37.952, "e": 38.071 },
+        { "t": "desplazar", "l": "desplazar", "p": "VERB", "w": true, "sp": true, "s": 38.071, "e": 38.666 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 38.666, "e": 38.845 },
+        { "t": "atención", "l": "atención", "p": "NOUN", "w": true, "sp": true, "s": 38.844, "e": 39.38 },
+        { "t": "hacia", "l": "hacia", "p": "ADP", "w": true, "sp": true, "s": 39.38, "e": 39.737 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 39.737, "e": 39.916 },
+        { "t": "sujeto", "l": "sujeto", "p": "NOUN", "w": true, "s": 39.915, "e": 40.332 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 34.312,
+      "end": 40.42
+    },
+    {
+      "id": "s10",
+      "speaker": "pilar",
+      "text": "El juicio estético, decían, nace de un sentimiento.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 40.68, "e": 40.873 },
+        { "t": "juicio", "l": "juicio", "p": "NOUN", "w": true, "sp": true, "s": 40.873, "e": 41.323 },
+        { "t": "estético", "l": "estético", "p": "ADJ", "w": true, "s": 41.323, "e": 41.902 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "decían", "l": "decir", "p": "VERB", "w": true, "s": 41.901, "e": 42.351 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "nace", "l": "nacer", "p": "VERB", "w": true, "sp": true, "s": 42.351, "e": 42.672 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 42.673, "e": 42.866 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 42.866, "e": 43.059 },
+        { "t": "sentimiento", "l": "sentimiento", "p": "NOUN", "w": true, "s": 43.059, "e": 43.83 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 40.67,
+      "end": 43.893
+    },
+    {
+      "id": "s11",
+      "speaker": "pilar",
+      "text": "Aun así, se resistían a aceptar que todos los gustos valgan lo mismo.",
+      "tokens": [
+        { "t": "Aun", "l": "aun", "p": "ADV", "w": true, "sp": true, "s": 44.153, "e": 44.448 },
+        { "t": "así", "l": "así", "p": "ADV", "w": true, "s": 44.448, "e": 44.743 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 44.943, "e": 45.109 },
+        { "t": "resistían", "l": "resistirse", "p": "VERB", "w": true, "sp": true, "s": 45.109, "e": 45.662 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 45.662, "e": 45.773 },
+        { "t": "aceptar", "l": "aceptar", "p": "VERB", "w": true, "sp": true, "s": 45.773, "e": 46.216 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 46.216, "e": 46.437 },
+        { "t": "todos", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 46.437, "e": 46.769 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 46.769, "e": 46.99 },
+        { "t": "gustos", "l": "gusto", "p": "NOUN", "w": true, "sp": true, "s": 46.99, "e": 47.377 },
+        { "t": "valgan", "l": "valer", "p": "VERB", "w": true, "sp": true, "s": 47.378, "e": 47.765 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 47.765, "e": 47.931 },
+        { "t": "mismo", "l": "mismo", "p": "DET", "w": true, "s": 47.931, "e": 48.263 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 44.143,
+      "end": 48.334
+    },
+    {
+      "id": "s12",
+      "speaker": "pilar",
+      "text": "Suponían que existía un buen gusto, propio de personas sensibles y entrenadas.",
+      "tokens": [
+        { "t": "Suponían", "l": "suponer", "p": "VERB", "w": true, "sp": true, "s": 48.594, "e": 49.101 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 49.101, "e": 49.326 },
+        { "t": "existía", "l": "existir", "p": "VERB", "w": true, "sp": true, "s": 49.327, "e": 49.778 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 49.778, "e": 49.947 },
+        { "t": "buen", "l": "bueno", "p": "ADJ", "w": true, "sp": true, "s": 49.947, "e": 50.229 },
+        { "t": "gusto", "l": "gustar", "p": "VERB", "w": true, "s": 50.229, "e": 50.567 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "propio", "l": "propio", "p": "ADJ", "w": true, "sp": true, "s": 50.567, "e": 50.962 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 50.961, "e": 51.13 },
+        { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true, "s": 51.13, "e": 51.637 },
+        { "t": "sensibles", "l": "sensible", "p": "ADJ", "w": true, "sp": true, "s": 51.638, "e": 52.202 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 52.201, "e": 52.314 },
+        { "t": "entrenadas", "l": "entrenar", "p": "VERB", "w": true, "s": 52.314, "e": 52.934 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 48.584,
+      "end": 52.985
+    },
+    {
+      "id": "s13",
+      "speaker": "pilar",
+      "text": "Ya en el siglo veinte, la sociología dio una vuelta de tuerca incómoda.",
+      "tokens": [
+        { "t": "Ya", "l": "ya", "p": "ADV", "w": true, "sp": true, "s": 53.246, "e": 53.44 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 53.44, "e": 53.634 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 53.633, "e": 53.827 },
+        { "t": "siglo", "l": "siglo", "p": "NOUN", "w": true, "sp": true, "s": 53.827, "e": 54.214 },
+        { "t": "veinte", "l": "veinte", "p": "NUM", "w": false, "s": 54.214, "e": 54.666 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 54.816, "e": 54.997 },
+        { "t": "sociología", "l": "sociología", "p": "NOUN", "w": true, "sp": true, "s": 54.997, "e": 55.659 },
+        { "t": "dio", "l": "dar", "p": "VERB", "w": true, "sp": true, "s": 55.659, "e": 55.9 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 55.9, "e": 56.141 },
+        { "t": "vuelta", "l": "volver", "p": "VERB", "w": true, "sp": true, "s": 56.141, "e": 56.562 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 56.562, "e": 56.743 },
+        { "t": "tuerca", "l": "tuerca", "p": "NOUN", "w": true, "sp": true, "s": 56.743, "e": 57.164 },
+        { "t": "incómoda", "l": "incómodo", "p": "ADJ", "w": true, "s": 57.164, "e": 57.706 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 53.236,
+      "end": 57.769
+    },
+    {
+      "id": "s14",
+      "speaker": "pilar",
+      "text": "Según esta mirada, el gusto no es inocente: funciona como una marca social.",
+      "tokens": [
+        { "t": "Según", "l": "según", "p": "ADP", "w": true, "sp": true, "s": 58.039, "e": 58.451 },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 58.451, "e": 58.794 },
+        { "t": "mirada", "l": "mirar", "p": "VERB", "w": true, "s": 58.794, "e": 59.274 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 59.274, "e": 59.48 },
+        { "t": "gusto", "l": "gustar", "p": "VERB", "w": true, "sp": true, "s": 59.48, "e": 59.892 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 59.892, "e": 60.098 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 60.098, "e": 60.304 },
+        { "t": "inocente", "l": "inocente", "p": "ADJ", "w": true, "s": 60.304, "e": 60.922 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "funciona", "l": "funcionar", "p": "VERB", "w": true, "sp": true, "s": 60.921, "e": 61.539 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 61.539, "e": 61.882 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 61.882, "e": 62.157 },
+        { "t": "marca", "l": "marcar", "p": "VERB", "w": true, "sp": true, "s": 62.157, "e": 62.569 },
+        { "t": "social", "l": "social", "p": "ADJ", "w": true, "s": 62.569, "e": 63.049 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 58.019,
+      "end": 63.111
+    },
+    {
+      "id": "s15",
+      "speaker": "pilar",
+      "text": "Preferir la ópera al reguetón, o el vino de autor a la cerveza, sería una forma de señalar nuestro grupo.",
+      "tokens": [
+        { "t": "Preferir", "l": "preferir", "p": "VERB", "w": true, "sp": true, "s": 63.361, "e": 63.897 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 63.897, "e": 64.076 },
+        { "t": "ópera", "l": "ópera", "p": "NOUN", "w": true, "sp": true, "s": 64.075, "e": 64.432 },
+        { "t": "al", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 64.432, "e": 64.611 },
+        { "t": "reguetón", "l": "reguetón", "p": "NOUN", "w": true, "s": 64.611, "e": 65.147 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "o", "l": "o", "p": "CCONJ", "w": true, "sp": true, "s": 65.146, "e": 65.265 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 65.265, "e": 65.444 },
+        { "t": "vino", "l": "venir", "p": "VERB", "w": true, "sp": true, "s": 65.444, "e": 65.742 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 65.742, "e": 65.921 },
+        { "t": "autor", "l": "autor", "p": "NOUN", "w": true, "sp": true, "s": 65.92, "e": 66.277 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 66.277, "e": 66.396 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 66.396, "e": 66.575 },
+        { "t": "cerveza", "l": "cerveza", "p": "NOUN", "w": true, "s": 66.575, "e": 67.051 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sería", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 67.051, "e": 67.408 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 67.408, "e": 67.646 },
+        { "t": "forma", "l": "forma", "p": "NOUN", "w": true, "sp": true, "s": 67.646, "e": 68.003 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 68.003, "e": 68.182 },
+        { "t": "señalar", "l": "señalar", "p": "VERB", "w": true, "sp": true, "s": 68.182, "e": 68.658 },
+        { "t": "nuestro", "l": "nuestro", "p": "DET", "w": true, "sp": true, "s": 68.658, "e": 69.134 },
+        { "t": "grupo", "l": "grupo", "p": "NOUN", "w": true, "s": 69.134, "e": 69.491 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 63.361,
+      "end": 69.576
+    },
+    {
+      "id": "s16",
+      "speaker": "pilar",
+      "text": "El gusto, en definitiva, distingue y separa.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 69.836, "e": 70.052 },
+        { "t": "gusto", "l": "gustar", "p": "VERB", "w": true, "s": 70.052, "e": 70.483 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 70.483, "e": 70.699 },
+        { "t": "definitiva", "l": "definitivo", "p": "ADJ", "w": true, "s": 70.699, "e": 71.49 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "distingue", "l": "distinguir", "p": "VERB", "w": true, "sp": true, "s": 71.49, "e": 72.209 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 72.209, "e": 72.353 },
+        { "t": "separa", "l": "separar", "p": "VERB", "w": true, "s": 72.353, "e": 72.856 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 69.826,
+      "end": 72.92
+    },
+    {
+      "id": "s17",
+      "speaker": "pilar",
+      "text": "Hay datos que respaldan esta idea.",
+      "tokens": [
+        { "t": "Hay", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 73.181, "e": 73.408 },
+        { "t": "datos", "l": "dato", "p": "NOUN", "w": true, "sp": true, "s": 73.408, "e": 73.749 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 73.749, "e": 73.976 },
+        { "t": "respaldan", "l": "respaldar", "p": "VERB", "w": true, "sp": true, "s": 73.976, "e": 74.544 },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 74.543, "e": 74.827 },
+        { "t": "idea", "l": "idea", "p": "NOUN", "w": true, "s": 74.827, "e": 75.111 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 73.171,
+      "end": 75.191
+    },
+    {
+      "id": "s18",
+      "speaker": "pilar",
+      "text": "Las preferencias culturales se reparten de forma bastante previsible según el nivel de estudios y los ingresos familiares.",
+      "tokens": [
+        { "t": "Las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 75.451, "e": 75.677 },
+        {
+          "t": "preferencias",
+          "l": "preferencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 75.677,
+          "e": 76.412
+        },
+        { "t": "culturales", "l": "cultural", "p": "ADJ", "w": true, "sp": true, "s": 76.412, "e": 77.034 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 77.035, "e": 77.205 },
+        { "t": "reparten", "l": "repartir", "p": "VERB", "w": true, "sp": true, "s": 77.204, "e": 77.713 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 77.713, "e": 77.883 },
+        { "t": "forma", "l": "forma", "p": "NOUN", "w": true, "sp": true, "s": 77.883, "e": 78.222 },
+        { "t": "bastante", "l": "bastante", "p": "ADV", "w": true, "sp": true, "s": 78.222, "e": 78.731 },
+        { "t": "previsible", "l": "previsible", "p": "ADJ", "w": true, "sp": true, "s": 78.731, "e": 79.353 },
+        { "t": "según", "l": "según", "p": "ADP", "w": true, "sp": true, "s": 79.353, "e": 79.692 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 79.693, "e": 79.863 },
+        { "t": "nivel", "l": "nivel", "p": "NOUN", "w": true, "sp": true, "s": 79.862, "e": 80.201 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 80.202, "e": 80.372 },
+        { "t": "estudios", "l": "estudio", "p": "NOUN", "w": true, "sp": true, "s": 80.371, "e": 80.88 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 80.881, "e": 80.994 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 80.994, "e": 81.22 },
+        { "t": "ingresos", "l": "ingreso", "p": "NOUN", "w": true, "sp": true, "s": 81.22, "e": 81.729 },
+        { "t": "familiares", "l": "familiar", "p": "NOUN", "w": true, "s": 81.729, "e": 82.351 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 75.441,
+      "end": 82.417
+    },
+    {
+      "id": "s19",
+      "speaker": "pilar",
+      "text": "Ahora bien, esta explicación tiene límites.",
+      "tokens": [
+        { "t": "Ahora", "l": "ahora", "p": "ADV", "w": true, "sp": true, "s": 82.677, "e": 83.057 },
+        { "t": "bien", "l": "bien", "p": "ADV", "w": true, "s": 83.057, "e": 83.374 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "esta", "l": "este", "p": "DET", "w": true, "sp": true, "s": 83.374, "e": 83.691 },
+        { "t": "explicación", "l": "explicación", "p": "NOUN", "w": true, "sp": true, "s": 83.69, "e": 84.45 },
+        { "t": "tiene", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 84.45, "e": 84.83 },
+        { "t": "límites", "l": "límite", "p": "NOUN", "w": true, "s": 84.83, "e": 85.337 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 82.667,
+      "end": 85.39
+    },
+    {
+      "id": "s20",
+      "speaker": "pilar",
+      "text": "No explica por qué dos hermanos criados en la misma casa pueden tener gustos opuestos.",
+      "tokens": [
+        { "t": "No", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 85.65, "e": 85.824 },
+        { "t": "explica", "l": "explicar", "p": "VERB", "w": true, "sp": true, "s": 85.824, "e": 86.287 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 86.287, "e": 86.519 },
+        { "t": "qué", "l": "qué", "p": "PRON", "w": true, "sp": true, "s": 86.519, "e": 86.751 },
+        { "t": "dos", "l": "dos", "p": "NUM", "w": false, "sp": true, "s": 86.75, "e": 86.982 },
+        { "t": "hermanos", "l": "hermano", "p": "NOUN", "w": true, "sp": true, "s": 86.982, "e": 87.503 },
+        { "t": "criados", "l": "criar", "p": "VERB", "w": true, "sp": true, "s": 87.503, "e": 87.966 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 87.966, "e": 88.14 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 88.14, "e": 88.314 },
+        { "t": "misma", "l": "mismo", "p": "DET", "w": true, "sp": true, "s": 88.314, "e": 88.661 },
+        { "t": "casa", "l": "casa", "p": "NOUN", "w": true, "sp": true, "s": 88.661, "e": 88.951 },
+        { "t": "pueden", "l": "poder", "p": "VERB", "w": true, "sp": true, "s": 88.951, "e": 89.356 },
+        { "t": "tener", "l": "tener", "p": "VERB", "w": true, "sp": true, "s": 89.356, "e": 89.703 },
+        { "t": "gustos", "l": "gusto", "p": "NOUN", "w": true, "sp": true, "s": 89.703, "e": 90.108 },
+        { "t": "opuestos", "l": "opuesto", "p": "ADJ", "w": true, "s": 90.109, "e": 90.63 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 85.64,
+      "end": 90.695
+    },
+    {
+      "id": "s21",
+      "speaker": "pilar",
+      "text": "Tampoco explica las preferencias que parecen compartidas por casi toda la especie.",
+      "tokens": [
+        { "t": "Tampoco", "l": "tampoco", "p": "ADV", "w": true, "sp": true, "s": 90.955, "e": 91.398 },
+        { "t": "explica", "l": "explicar", "p": "VERB", "w": true, "sp": true, "s": 91.398, "e": 91.841 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 91.841, "e": 92.062 },
+        {
+          "t": "preferencias",
+          "l": "preferencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 92.062,
+          "e": 92.782
+        },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 92.782, "e": 93.003 },
+        { "t": "parecen", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 93.004, "e": 93.447 },
+        { "t": "compartidas", "l": "compartir", "p": "VERB", "w": true, "sp": true, "s": 93.446, "e": 94.11 },
+        { "t": "por", "l": "por", "p": "ADP", "w": true, "sp": true, "s": 94.111, "e": 94.332 },
+        { "t": "casi", "l": "casi", "p": "ADV", "w": true, "sp": true, "s": 94.332, "e": 94.609 },
+        { "t": "toda", "l": "todo", "p": "DET", "w": true, "sp": true, "s": 94.609, "e": 94.886 },
+        { "t": "la", "l": "el", "p": "DET", "w": true, "sp": true, "s": 94.886, "e": 95.052 },
+        { "t": "especie", "l": "especie", "p": "NOUN", "w": true, "s": 95.052, "e": 95.495 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 90.945,
+      "end": 95.56
+    },
+    {
+      "id": "s22",
+      "speaker": "pilar",
+      "text": "En muchos estudios, personas de culturas muy distintas eligen paisajes parecidos: agua, árboles y una vista abierta.",
+      "tokens": [
+        { "t": "En", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 95.82, "e": 96.008 },
+        { "t": "muchos", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 96.008, "e": 96.448 },
+        { "t": "estudios", "l": "estudio", "p": "NOUN", "w": true, "s": 96.448, "e": 97.013 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "personas", "l": "persona", "p": "NOUN", "w": true, "sp": true, "s": 97.014, "e": 97.579 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 97.579, "e": 97.767 },
+        { "t": "culturas", "l": "cultura", "p": "NOUN", "w": true, "sp": true, "s": 97.768, "e": 98.333 },
+        { "t": "muy", "l": "muy", "p": "ADV", "w": true, "sp": true, "s": 98.333, "e": 98.584 },
+        { "t": "distintas", "l": "distinto", "p": "ADJ", "w": true, "sp": true, "s": 98.585, "e": 99.213 },
+        { "t": "eligen", "l": "elegir", "p": "VERB", "w": true, "sp": true, "s": 99.213, "e": 99.653 },
+        { "t": "paisajes", "l": "paisaje", "p": "NOUN", "w": true, "sp": true, "s": 99.653, "e": 100.218 },
+        { "t": "parecidos", "l": "parecer", "p": "VERB", "w": true, "s": 100.218, "e": 100.846 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "agua", "l": "agua", "p": "NOUN", "w": true, "s": 100.847, "e": 101.161 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "árboles", "l": "árbol", "p": "NOUN", "w": true, "sp": true, "s": 101.161, "e": 101.664 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 101.663, "e": 101.789 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 101.789, "e": 102.04 },
+        { "t": "vista", "l": "ver", "p": "VERB", "w": true, "sp": true, "s": 102.04, "e": 102.417 },
+        { "t": "abierta", "l": "abrir", "p": "VERB", "w": true, "s": 102.417, "e": 102.92 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 95.81,
+      "end": 103.01
+    },
+    {
+      "id": "s23",
+      "speaker": "pilar",
+      "text": "Algunos biólogos interpretan esa coincidencia como una herencia evolutiva.",
+      "tokens": [
+        { "t": "Algunos", "l": "algún", "p": "DET", "w": true, "sp": true, "s": 103.27, "e": 103.756 },
+        { "t": "biólogos", "l": "biólogo", "p": "NOUN", "w": true, "sp": true, "s": 103.756, "e": 104.303 },
+        {
+          "t": "interpretan",
+          "l": "interpretar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 104.304,
+          "e": 105.034
+        },
+        { "t": "esa", "l": "ese", "p": "DET", "w": true, "sp": true, "s": 105.034, "e": 105.277 },
+        {
+          "t": "coincidencia",
+          "l": "coincidencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 105.277,
+          "e": 106.068
+        },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 106.067, "e": 106.371 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 106.371, "e": 106.614 },
+        { "t": "herencia", "l": "herencia", "p": "NOUN", "w": true, "sp": true, "s": 106.615, "e": 107.162 },
+        { "t": "evolutiva", "l": "evolutivo", "p": "ADJ", "w": true, "s": 107.162, "e": 107.77 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 103.26,
+      "end": 107.837
+    },
+    {
+      "id": "s24",
+      "speaker": "pilar",
+      "text": "Nuestros antepasados habrían sobrevivido mejor en entornos así.",
+      "tokens": [
+        { "t": "Nuestros", "l": "nuestro", "p": "DET", "w": true, "sp": true, "s": 108.097, "e": 108.611 },
+        {
+          "t": "antepasados",
+          "l": "antepasado",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 108.611,
+          "e": 109.297
+        },
+        { "t": "habrían", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 109.297, "e": 109.754 },
+        {
+          "t": "sobrevivido",
+          "l": "sobrevivir",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 109.754,
+          "e": 110.44
+        },
+        { "t": "mejor", "l": "mejor", "p": "ADV", "w": true, "sp": true, "s": 110.44, "e": 110.783 },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 110.783, "e": 110.954 },
+        { "t": "entornos", "l": "entorno", "p": "NOUN", "w": true, "sp": true, "s": 110.954, "e": 111.468 },
+        { "t": "así", "l": "así", "p": "ADV", "w": true, "s": 111.468, "e": 111.697 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 108.087,
+      "end": 111.774
+    },
+    {
+      "id": "s25",
+      "speaker": "pilar",
+      "text": "Personalmente, desconfío de las explicaciones únicas.",
+      "tokens": [
+        { "t": "Personalmente", "l": "personalmente", "p": "ADV", "w": true, "s": 112.034, "e": 112.904 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "desconfío", "l": "desconfiar", "p": "VERB", "w": true, "sp": true, "s": 113.054, "e": 113.68 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 113.68, "e": 113.868 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 113.868, "e": 114.119 },
+        {
+          "t": "explicaciones",
+          "l": "explicación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 114.119,
+          "e": 114.996
+        },
+        { "t": "únicas", "l": "único", "p": "ADJ", "w": true, "s": 114.996, "e": 115.434 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 112.024,
+      "end": 115.479
+    },
+    {
+      "id": "s26",
+      "speaker": "pilar",
+      "text": "El gusto se parece más a una conversación entre capas: una base biológica, una educación cultural y una biografía individual.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 115.739, "e": 115.915 },
+        { "t": "gusto", "l": "gustar", "p": "VERB", "w": true, "sp": true, "s": 115.915, "e": 116.267 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 116.267, "e": 116.443 },
+        { "t": "parece", "l": "parecer", "p": "VERB", "w": true, "sp": true, "s": 116.442, "e": 116.852 },
+        { "t": "más", "l": "más", "p": "ADV", "w": true, "sp": true, "s": 116.853, "e": 117.087 },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 117.087, "e": 117.204 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 117.204, "e": 117.438 },
+        {
+          "t": "conversación",
+          "l": "conversación",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 117.439,
+          "e": 118.201
+        },
+        { "t": "entre", "l": "entre", "p": "ADP", "w": true, "sp": true, "s": 118.201, "e": 118.553 },
+        { "t": "capas", "l": "capa", "p": "NOUN", "w": true, "s": 118.553, "e": 118.905 },
+        { "t": ":", "l": ":", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 118.904, "e": 119.138 },
+        { "t": "base", "l": "basar", "p": "VERB", "w": true, "sp": true, "s": 119.139, "e": 119.432 },
+        { "t": "biológica", "l": "biológico", "p": "ADJ", "w": true, "s": 119.432, "e": 120.018 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 120.018, "e": 120.252 },
+        { "t": "educación", "l": "educación", "p": "NOUN", "w": true, "sp": true, "s": 120.253, "e": 120.839 },
+        { "t": "cultural", "l": "cultural", "p": "ADJ", "w": true, "sp": true, "s": 120.839, "e": 121.367 },
+        { "t": "y", "l": "y", "p": "CCONJ", "w": true, "sp": true, "s": 121.366, "e": 121.483 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 121.484, "e": 121.718 },
+        { "t": "biografía", "l": "biografía", "p": "NOUN", "w": true, "sp": true, "s": 121.718, "e": 122.304 },
+        { "t": "individual", "l": "individual", "p": "ADJ", "w": true, "s": 122.304, "e": 122.949 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 115.729,
+      "end": 123.038
+    },
+    {
+      "id": "s27",
+      "speaker": "pilar",
+      "text": "Y, sobre todo, el gusto cambia.",
+      "tokens": [
+        { "t": "Y", "l": "y", "p": "CCONJ", "w": true, "s": 123.298, "e": 123.427 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "sobre", "l": "sobre", "p": "ADP", "w": true, "sp": true, "s": 123.427, "e": 123.814 },
+        { "t": "todo", "l": "todo", "p": "DET", "w": true, "s": 123.814, "e": 124.136 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 124.136, "e": 124.329 },
+        { "t": "gusto", "l": "gustar", "p": "VERB", "w": true, "sp": true, "s": 124.33, "e": 124.717 },
+        { "t": "cambia", "l": "cambiar", "p": "VERB", "w": true, "s": 124.717, "e": 125.168 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 123.288,
+      "end": 125.233
+    },
+    {
+      "id": "s28",
+      "speaker": "pilar",
+      "text": "Obras que fueron despreciadas en su época hoy ocupan las salas principales de los museos.",
+      "tokens": [
+        { "t": "Obras", "l": "obra", "p": "NOUN", "w": true, "sp": true, "s": 125.493, "e": 125.808 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 125.808, "e": 126.018 },
+        { "t": "fueron", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 126.018, "e": 126.385 },
+        {
+          "t": "despreciadas",
+          "l": "despreciar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 126.385,
+          "e": 127.067
+        },
+        { "t": "en", "l": "en", "p": "ADP", "w": true, "sp": true, "s": 127.067, "e": 127.224 },
+        { "t": "su", "l": "su", "p": "DET", "w": true, "sp": true, "s": 127.225, "e": 127.382 },
+        { "t": "época", "l": "época", "p": "NOUN", "w": true, "sp": true, "s": 127.382, "e": 127.697 },
+        { "t": "hoy", "l": "hoy", "p": "ADV", "w": true, "sp": true, "s": 127.697, "e": 127.907 },
+        { "t": "ocupan", "l": "ocupar", "p": "VERB", "w": true, "sp": true, "s": 127.907, "e": 128.274 },
+        { "t": "las", "l": "el", "p": "DET", "w": true, "sp": true, "s": 128.274, "e": 128.484 },
+        { "t": "salas", "l": "sala", "p": "NOUN", "w": true, "sp": true, "s": 128.484, "e": 128.799 },
+        {
+          "t": "principales",
+          "l": "principal",
+          "p": "ADJ",
+          "w": true,
+          "sp": true,
+          "s": 128.799,
+          "e": 129.429
+        },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 129.428, "e": 129.585 },
+        { "t": "los", "l": "el", "p": "DET", "w": true, "sp": true, "s": 129.586, "e": 129.796 },
+        { "t": "museos", "l": "museo", "p": "NOUN", "w": true, "s": 129.796, "e": 130.163 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 125.483,
+      "end": 130.227
+    },
+    {
+      "id": "s29",
+      "speaker": "pilar",
+      "text": "El canon no es un monumento; es un acuerdo provisional.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 130.487, "e": 130.666 },
+        { "t": "canon", "l": "canon", "p": "NOUN", "w": true, "sp": true, "s": 130.666, "e": 131.024 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 131.024, "e": 131.203 },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 131.203, "e": 131.382 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 131.381, "e": 131.56 },
+        { "t": "monumento", "l": "monumento", "p": "NOUN", "w": true, "s": 131.56, "e": 132.156 },
+        { "t": ";", "l": ";", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "es", "l": "ser", "p": "AUX", "w": true, "sp": true, "s": 132.157, "e": 132.336 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 132.336, "e": 132.515 },
+        { "t": "acuerdo", "l": "acuerdo", "p": "NOUN", "w": true, "sp": true, "s": 132.514, "e": 132.991 },
+        { "t": "provisional", "l": "provisional", "p": "ADJ", "w": true, "s": 132.991, "e": 133.707 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 130.477,
+      "end": 133.786
+    },
+    {
+      "id": "s30",
+      "speaker": "pilar",
+      "text": "De ahí se deriva una consecuencia práctica.",
+      "tokens": [
+        { "t": "De", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 134.046, "e": 134.213 },
+        { "t": "ahí", "l": "ahí", "p": "ADV", "w": true, "sp": true, "s": 134.213, "e": 134.436 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 134.437, "e": 134.604 },
+        { "t": "deriva", "l": "derivarse", "p": "VERB", "w": true, "sp": true, "s": 134.604, "e": 134.995 },
+        { "t": "una", "l": "un", "p": "DET", "w": true, "sp": true, "s": 134.995, "e": 135.218 },
+        {
+          "t": "consecuencia",
+          "l": "consecuencia",
+          "p": "NOUN",
+          "w": true,
+          "sp": true,
+          "s": 135.218,
+          "e": 135.944
+        },
+        { "t": "práctica", "l": "práctico", "p": "ADJ", "w": true, "s": 135.944, "e": 136.446 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 134.036,
+      "end": 136.491
+    },
+    {
+      "id": "s31",
+      "speaker": "pilar",
+      "text": "Antes de despreciar algo que no nos gusta, quizá convenga preguntarse si lo hemos mirado el tiempo suficiente.",
+      "tokens": [
+        { "t": "Antes", "l": "antes", "p": "ADV", "w": true, "sp": true, "s": 136.751, "e": 137.075 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 137.075, "e": 137.237 },
+        {
+          "t": "despreciar",
+          "l": "despreciar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 137.237,
+          "e": 137.831
+        },
+        { "t": "algo", "l": "algo", "p": "PRON", "w": true, "sp": true, "s": 137.832, "e": 138.102 },
+        { "t": "que", "l": "que", "p": "SCONJ", "w": true, "sp": true, "s": 138.102, "e": 138.318 },
+        { "t": "no", "l": "no", "p": "ADV", "w": true, "sp": true, "s": 138.318, "e": 138.48 },
+        { "t": "nos", "l": "nosotros", "p": "PRON", "w": true, "sp": true, "s": 138.48, "e": 138.696 },
+        { "t": "gusta", "l": "gustar", "p": "VERB", "w": true, "s": 138.696, "e": 139.02 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "quizá", "l": "quizá", "p": "ADV", "w": true, "sp": true, "s": 139.021, "e": 139.345 },
+        { "t": "convenga", "l": "convenir", "p": "VERB", "w": true, "sp": true, "s": 139.345, "e": 139.831 },
+        {
+          "t": "preguntarse",
+          "l": "preguntar",
+          "p": "VERB",
+          "w": true,
+          "sp": true,
+          "s": 139.831,
+          "e": 140.479
+        },
+        { "t": "si", "l": "si", "p": "SCONJ", "w": true, "sp": true, "s": 140.48, "e": 140.642 },
+        { "t": "lo", "l": "él", "p": "PRON", "w": true, "sp": true, "s": 140.642, "e": 140.804 },
+        { "t": "hemos", "l": "haber", "p": "AUX", "w": true, "sp": true, "s": 140.804, "e": 141.128 },
+        { "t": "mirado", "l": "mirar", "p": "VERB", "w": true, "sp": true, "s": 141.128, "e": 141.506 },
+        { "t": "el", "l": "el", "p": "DET", "w": true, "sp": true, "s": 141.506, "e": 141.668 },
+        { "t": "tiempo", "l": "tiempo", "p": "NOUN", "w": true, "sp": true, "s": 141.668, "e": 142.046 },
+        { "t": "suficiente", "l": "suficiente", "p": "ADJ", "w": true, "s": 142.047, "e": 142.641 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 136.741,
+      "end": 142.727
+    },
+    {
+      "id": "s32",
+      "speaker": "pilar",
+      "text": "Muchas de mis pasiones actuales empezaron como un rechazo.",
+      "tokens": [
+        { "t": "Muchas", "l": "mucho", "p": "DET", "w": true, "sp": true, "s": 142.987, "e": 143.39 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 143.39, "e": 143.563 },
+        { "t": "mis", "l": "mi", "p": "DET", "w": true, "sp": true, "s": 143.563, "e": 143.793 },
+        { "t": "pasiones", "l": "pasión", "p": "NOUN", "w": true, "sp": true, "s": 143.793, "e": 144.311 },
+        { "t": "actuales", "l": "actual", "p": "ADJ", "w": true, "sp": true, "s": 144.311, "e": 144.829 },
+        { "t": "empezaron", "l": "empezar", "p": "VERB", "w": true, "sp": true, "s": 144.83, "e": 145.406 },
+        { "t": "como", "l": "comer", "p": "VERB", "w": true, "sp": true, "s": 145.406, "e": 145.694 },
+        { "t": "un", "l": "un", "p": "DET", "w": true, "sp": true, "s": 145.694, "e": 145.867 },
+        { "t": "rechazo", "l": "rechazo", "p": "NOUN", "w": true, "s": 145.866, "e": 146.327 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 142.977,
+      "end": 146.429
+    },
+    {
+      "id": "s33",
+      "speaker": "pilar",
+      "text": "El gusto, a fin de cuentas, también se educa con paciencia.",
+      "tokens": [
+        { "t": "El", "l": "el", "p": "DET", "w": true, "sp": true, "s": 146.689, "e": 146.867 },
+        { "t": "gusto", "l": "gustar", "p": "VERB", "w": true, "s": 146.867, "e": 147.224 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "a", "l": "a", "p": "ADP", "w": true, "sp": true, "s": 147.224, "e": 147.343 },
+        { "t": "fin", "l": "fin", "p": "NOUN", "w": true, "sp": true, "s": 147.343, "e": 147.581 },
+        { "t": "de", "l": "de", "p": "ADP", "w": true, "sp": true, "s": 147.581, "e": 147.759 },
+        { "t": "cuentas", "l": "contar", "p": "VERB", "w": true, "s": 147.76, "e": 148.236 },
+        { "t": ",", "l": ",", "p": "PUNCT", "w": false, "sp": true },
+        { "t": "también", "l": "también", "p": "ADV", "w": true, "sp": true, "s": 148.235, "e": 148.711 },
+        { "t": "se", "l": "se", "p": "PRON", "w": true, "sp": true, "s": 148.711, "e": 148.889 },
+        { "t": "educa", "l": "educar", "p": "VERB", "w": true, "sp": true, "s": 148.89, "e": 149.247 },
+        { "t": "con", "l": "con", "p": "ADP", "w": true, "sp": true, "s": 149.246, "e": 149.484 },
+        { "t": "paciencia", "l": "paciencia", "p": "NOUN", "w": true, "s": 149.484, "e": 150.079 },
+        { "t": ".", "l": ".", "p": "PUNCT", "w": false }
+      ],
+      "start": 146.679,
+      "end": 150.14
+    }
+  ],
+  "connected_speech": [],
+  "glossary": [
+    {
+      "lemma": "llevar la contraria",
+      "surface": "llevarles la contraria",
+      "pos": "phrase",
+      "def_en": "decir o hacer lo opuesto a lo que otro dice",
+      "def_es": { "en": "to contradict", "fr": "contredire", "zh": "唱反调", "ja": "反論する" },
+      "ref": "s2"
+    },
+    {
+      "lemma": "vuelta de tuerca",
+      "surface": "vuelta de tuerca",
+      "pos": "phrase",
+      "def_en": "cambio que lleva una idea un paso más allá",
+      "def_es": { "en": "new twist", "fr": "tour de vis supplémentaire", "zh": "新的转折", "ja": "新たなひねり" },
+      "ref": "s13"
+    },
+    {
+      "lemma": "canon",
+      "surface": "canon",
+      "pos": "noun",
+      "def_en": "conjunto de obras consideradas modelo",
+      "def_es": { "en": "canon", "fr": "canon", "zh": "经典", "ja": "正典" },
+      "ref": "s29"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "q1",
+      "focus": "gist",
+      "phase": "listen_1",
+      "prompt": "¿Qué plantea la profesora?",
+      "evidence": ["s4"],
+      "rationale_es": { "en": "What lies behind aesthetic preferences." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Cómo se organiza la colección de un museo de arte moderno" },
+        { "id": "b", "text": "Qué hay detrás de nuestras preferencias estéticas" },
+        { "id": "c", "text": "Por qué la ópera ha perdido público en las últimas décadas" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q2",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Cómo se entendía la belleza durante siglos?",
+      "evidence": ["s6"],
+      "rationale_es": { "en": "As an objective property." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Como una emoción totalmente privada" },
+        { "id": "b", "text": "Como un invento de los artistas del momento" },
+        { "id": "c", "text": "Como algo que estaba en el objeto" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q3",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "¿Qué aporta la sociología, según la profesora?",
+      "evidence": ["s14"],
+      "rationale_es": { "en": "Taste signals group membership." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "Que el gusto sirve para marcar pertenencia" },
+        { "id": "b", "text": "Que el gusto depende únicamente de la genética familiar" },
+        { "id": "c", "text": "Que todos los gustos tienen exactamente el mismo valor" }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "q4",
+      "focus": "inference",
+      "phase": "listen_2",
+      "prompt": "¿Qué límite ve en la explicación sociológica?",
+      "evidence": ["s20"],
+      "rationale_es": { "en": "It cannot explain siblings with opposite tastes." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "No tiene en cuenta los ingresos de los hogares" },
+        { "id": "b", "text": "No aclara diferencias dentro de una familia" },
+        { "id": "c", "text": "No se apoya en ningún dato estadístico fiable" }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "q5",
+      "focus": "detail",
+      "phase": "listen_2",
+      "prompt": "Según algunos biólogos, la preferencia por ciertos paisajes podría venir de nuestros antepasados.",
+      "evidence": ["s23"],
+      "rationale_es": { "en": "They see it as an evolutionary inheritance." },
+      "type": "true_false_ng",
+      "answer": "T",
+      "allow_ng": false
+    },
+    {
+      "id": "q6",
+      "focus": "attitude_opinion",
+      "phase": "listen_2",
+      "prompt": "¿Cuál es la postura personal de la profesora?",
+      "evidence": ["s25"],
+      "rationale_es": { "en": "Taste has several layers." },
+      "type": "mcq",
+      "options": [
+        { "id": "a", "text": "La biología lo explica todo sobre el gusto" },
+        { "id": "b", "text": "La educación no influye en las preferencias" },
+        { "id": "c", "text": "El gusto combina varios factores" }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "q7",
+      "focus": "detail",
+      "phase": "post",
+      "prompt": "Completa la frase con una palabra.",
+      "evidence": ["s29"],
+      "rationale_es": { "en": "*Provisional*: temporary." },
+      "type": "gap_fill",
+      "text": "Para la profesora, el canon es un acuerdo {{1}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["provisional"],
+          "max_words": 1
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "manual-chat",
+    "created_at": "2026-10-18T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "lemmas": [
+    "a", "abrir", "aceptar", "actual", "acuerdo", "agua", "ahora", "ahí", "algo", "algún", "antepasado",
+    "antes", "antiguo", "apreciar", "armonía", "así", "atención", "aun", "autor", "basar", "bastante",
+    "belleza", "bello", "bien", "biografía", "biológico", "biólogo", "bueno", "cambiar", "canon", "capa",
+    "carecer", "casa", "casi", "catedral", "cerveza", "coincidencia", "comer", "compartir", "con",
+    "consecuencia", "considerar", "contar", "contrario", "convenir", "conversación", "criar", "cuadro",
+    "cuando", "cultura", "cultural", "dar", "dato", "de", "decir", "definitivo", "derivarse", "desconfiar",
+    "describir", "desplazar", "despreciar", "distinguir", "distinto", "dominante", "durante", "educación",
+    "educar", "el", "elegir", "embargo", "empezar", "en", "entorno", "entre", "entrenar", "escribir", "ese",
+    "especie", "estar", "este", "estudio", "estético", "evolutivo", "existir", "explicación", "explicar",
+    "familiar", "fascinante", "filósofo", "fin", "fondo", "forma", "formación", "funcionar", "grupo", "gustar",
+    "gusto", "haber", "hablar", "hacia", "herencia", "hermano", "hermoso", "hoy", "idea", "incómodo",
+    "individual", "ingreso", "inocente", "interpretar", "juicio", "ligar", "llevar", "límite", "marcar",
+    "medida", "mejor", "mi", "mirar", "mismo", "monumento", "mucho", "muchísimo", "museo", "muy", "más",
+    "nacer", "nivel", "no", "nosotros", "nuestro", "o", "objetivo", "obra", "ocupar", "opuesto", "orden",
+    "paciencia", "paisaje", "parecer", "pasión", "persona", "personalmente", "poder", "por", "porque",
+    "preferencia", "preferir", "pregunta", "preguntar", "previsible", "principal", "propiedad", "propio",
+    "proporción", "provisional", "práctico", "que", "querer", "quien", "quizá", "qué", "rechazo", "reguetón",
+    "repartir", "resistirse", "respaldar", "responder", "respuesta", "sala", "se", "según", "sencillamente",
+    "sensible", "sentimiento", "separar", "ser", "señalar", "si", "siglo", "sin", "sobre", "sobrevivir",
+    "social", "sociología", "soler", "su", "suficiente", "sujeto", "suponer", "también", "tampoco", "tener",
+    "tiempo", "todo", "tuerca", "un", "valer", "varios", "venir", "ver", "volver", "y", "ya", "árbol", "él",
+    "época", "ópera", "único"
+  ],
+  "difficulty": 1630,
+  "qa": {
+    "coverage_by_level": { "A1": 0.5707, "A2": 0.6937, "B1": 0.8377, "B2": 0.9005, "C1": 0.9319, "C2": 1 },
+    "off_level_lemmas": [],
+    "avg_sentence_words": 11.7,
+    "flesch_reading_ease": 65.9,
+    "checked_at": "2026-10-19T07:53:05.544Z"
+  },
+  "audio": {
+    "src": "audio/c2/es-c2-lis-005/v1.m4a",
+    "duration_s": 150.14,
+    "wpm": 154,
+    "provider": "piper",
+    "voices": { "pilar": "sharvard-f" },
+    "loudness_lufs": -16.1,
+    "peaks": [
+      1, 0.74, 0.84, 0.9, 0.74, 1, 0.99, 0.96, 0.7, 0.64, 0.75, 0.99, 0.75, 0.48, 1, 0.68, 0.95, 0.69, 0.72,
+      0.42, 1, 0.6, 0.62, 0.9, 0.53, 0.55, 0.45, 0.44, 0.85, 0.6, 0.65, 1, 0.44, 0.83, 0.54, 1, 0.66, 0.75,
+      0.79, 0.68, 0.78, 0.42, 0.97, 1, 0.83, 0.97, 0.83, 0.88, 0.54, 1, 0.83, 0.9, 0.78, 0.55, 0.35, 0.55,
+      0.48, 0.71, 1, 0.65, 0.57, 0.74, 0.63, 0.62, 0.36, 1, 0.71, 0.81, 0.72, 0.58, 1, 0.8, 0.75, 0.9, 0.64,
+      0.81, 0.69, 0.42, 1, 0.87, 0.67, 0.97, 0.84, 0.98, 0.49, 0.9, 0.76, 0.63, 0.97, 0.94, 0.66, 1, 0.63, 1,
+      0.98, 0.73, 0.83, 0.83, 0.92, 0.94, 0.63, 0.73, 0.96, 0.8, 0.93, 0.92, 0.71, 0.94, 0.77, 1, 0.66, 0.64,
+      0.79, 0.98, 1, 0.83, 0.78, 1, 0.98, 0.58, 0.47, 0.74, 1, 0.75, 0.71, 0.67, 0.68, 0.72, 0.84, 0.68, 0.53,
+      0.43, 1, 0.76, 0.97, 0.94, 0.39, 1, 0.81, 0.65, 0.83, 0.83, 0.9, 0.71, 0.62, 1, 0.87, 0.71, 0.63, 0.71,
+      0.84, 0.8, 0.59, 0.56, 0.59, 0.82, 1, 0.69, 0.75, 0.8, 0.65, 0.92, 0.83, 0.75, 0.36, 0.9, 1, 0.79, 0.71,
+      0.65, 0.81, 0.64, 0.65, 0.7, 1, 0.85, 0.96, 0.87, 0.5, 0.94, 0.69, 1, 0.89, 0.83, 0.37, 0.7, 0.79, 0.75,
+      0.72, 0.9, 0.98, 1, 0.82, 1, 0.75, 0.9, 0.42, 0.7, 0.75, 1, 0.91, 0.82, 0.82, 0.63, 0.77, 0.72, 1, 0.41,
+      0.85, 0.89, 0.55, 0.99, 1, 0.5, 0.98, 1, 0.68, 0.85, 0.8, 0.68, 1, 0.59, 0.74, 0.81, 0.88, 0.68, 0.67,
+      0.41, 0.67, 0.82, 1, 0.78, 0.78, 0.82, 0.64, 0.63, 0.74, 0.88, 1, 0.43
+    ]
+  }
+}

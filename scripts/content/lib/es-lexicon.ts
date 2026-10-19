@@ -658,7 +658,8 @@ const PLURAL_OF: Record<string, string> = {
 const NAMES = `ana einstein newton ámsterdam copenhague pontevedra rafael oslo beatriz carlos gonzalo ismael luis marta pablo leo carla daniel juan lucía sofía carmen javier elena miguel
   laura david paula andrés diego irene sara jorge pedro maría josé tomás emma lucy
   madrid sevilla valencia barcelona españa méxico colombia argentina chile perú lima bogotá
-  granada bilbao córdoba málaga toledo zaragoza salamanca europa américa`.split(/\s+/);
+  granada bilbao córdoba málaga toledo zaragoza salamanca europa américa
+  inés clara nuria ricardo antonio cádiz viena suecia dinamarca oporto lisboa`.split(/\s+/);
 
 /** Los nombres de pila y lugares que más salen (en minúsculas). */
 export const SPANISH_NAMES: ReadonlySet<string> = new Set(NAMES);
