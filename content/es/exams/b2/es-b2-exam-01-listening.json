@@ -1,0 +1,604 @@
+{
+  "id": "es-b2-exam-01-listening",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "paper": "listening",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "Va a escuchar seis conversaciones breves. Cada conversación se repite dos veces. Elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r01",
+            "speakers": [
+              { "id": "mujer", "name": "Mujer", "accent": "es-ES", "gender": "female" },
+              { "id": "hombre", "name": "Hombre", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "mujer", "text": "¿Al final te quedaste con el piso de la calle Alcalá?" },
+              {
+                "speaker": "hombre",
+                "text": "Estuve a punto, pero cuando fui a firmar me pidieron seis meses de fianza. Seis meses, ¿te lo puedes creer? Sigo buscando."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/es-b2-exam-01-listening/v1/r01.m4a", "duration_s": 10.021 }
+          },
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "¿Por qué no alquiló el piso el hombre?",
+              "options": [
+                "Estaba lejos de su trabajo", "Le pedían demasiado dinero por adelantado",
+                "El propietario se echó atrás"
+              ],
+              "answer": 1,
+              "explanation_es": { "en": "They asked for six months’ deposit." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r02",
+            "speakers": [
+              { "id": "hombre", "name": "Hombre", "accent": "es-ES", "gender": "male" },
+              { "id": "mujer", "name": "Mujer", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "hombre", "text": "¿Qué tal la entrevista de trabajo?" },
+              {
+                "speaker": "mujer",
+                "text": "Pues no sé qué pensar. Las preguntas fueron fáciles, pero el director apenas me miró. Estaba más pendiente del móvil que de mí."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/es-b2-exam-01-listening/v1/r02.m4a", "duration_s": 9.638 }
+          },
+          "questions": [
+            {
+              "n": 2,
+              "prompt": "¿Qué le molestó a la mujer en la entrevista?",
+              "options": ["La actitud del director", "La dificultad de las preguntas", "La duración de la entrevista"],
+              "answer": 0,
+              "explanation_es": { "en": "The director barely looked at her." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r03",
+            "speakers": [
+              { "id": "mujer", "name": "Mujer", "accent": "es-ES", "gender": "female" },
+              { "id": "hombre", "name": "Hombre", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "mujer",
+                "text": "He visto que te has apuntado al maratón. ¡No sabía que corrieras!"
+              },
+              {
+                "speaker": "hombre",
+                "text": "Y no corro. Es una apuesta con mi hermano. Si lo termino, él deja de fumar. Me quedan tres meses para prepararme."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/es-b2-exam-01-listening/v1/r03.m4a", "duration_s": 11.003 }
+          },
+          "questions": [
+            {
+              "n": 3,
+              "prompt": "¿Por qué va a correr el maratón?",
+              "options": [
+                "Porque es corredor desde hace años", "Para perder peso antes del verano",
+                "Por un acuerdo con su hermano"
+              ],
+              "answer": 2,
+              "explanation_es": { "en": "It is a bet: if he finishes, his brother quits smoking." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r04",
+            "speakers": [
+              { "id": "hombre", "name": "Hombre", "accent": "es-ES", "gender": "male" },
+              { "id": "mujer", "name": "Mujer", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "hombre", "text": "¿Has leído el libro que te presté?" },
+              {
+                "speaker": "mujer",
+                "text": "Lo empecé, pero lo dejé a la mitad. La historia no está mal, pero hay tantos personajes que me perdía todo el rato."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/es-b2-exam-01-listening/v1/r04.m4a", "duration_s": 8.684 }
+          },
+          "questions": [
+            {
+              "n": 4,
+              "prompt": "¿Qué opina la mujer del libro?",
+              "options": ["Que es aburrido", "Que es demasiado corto", "Que es confuso"],
+              "answer": 2,
+              "explanation_es": { "en": "There are so many characters she kept getting lost." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r05",
+            "speakers": [
+              { "id": "mujer", "name": "Mujer", "accent": "es-ES", "gender": "female" },
+              { "id": "hombre", "name": "Hombre", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "mujer", "text": "Este año no vamos a la playa en agosto, ¿verdad?" },
+              {
+                "speaker": "hombre",
+                "text": "No, mejor en septiembre. Hay menos gente, todo es más barato y, con un poco de suerte, todavía hace buen tiempo."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/es-b2-exam-01-listening/v1/r05.m4a", "duration_s": 9.745 }
+          },
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "¿Por qué prefiere el hombre ir en septiembre?",
+              "options": [
+                "Porque en agosto trabaja", "Por los precios y la tranquilidad",
+                "Porque en agosto hace mal tiempo"
+              ],
+              "answer": 1,
+              "explanation_es": { "en": "Fewer people, lower prices, still good weather." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r06",
+            "speakers": [
+              { "id": "hombre", "name": "Hombre", "accent": "es-ES", "gender": "male" },
+              { "id": "mujer", "name": "Mujer", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "hombre", "text": "Me han dicho que dejas la academia de inglés." },
+              {
+                "speaker": "mujer",
+                "text": "Sí, pero no porque no me guste. Me he dado cuenta de que aprendo más con una profesora particular por internet, y además me ahorro el viaje."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/es-b2-exam-01-listening/v1/r06.m4a", "duration_s": 10.613 }
+          },
+          "questions": [
+            {
+              "n": 6,
+              "prompt": "¿Por qué deja la academia?",
+              "options": ["Prefiere clases particulares en línea", "No le gusta el profesor", "Ya no necesita el inglés"],
+              "answer": 0,
+              "explanation_es": { "en": "She learns more with a private online teacher." }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Va a escuchar una conversación entre dos vecinos, Nacho y Elvira, sobre una reunión de la comunidad. La conversación se repite dos veces. Elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r07",
+            "speakers": [
+              { "id": "nacho", "name": "Nacho", "accent": "es-ES", "gender": "male" },
+              { "id": "elvira", "name": "Elvira", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              { "speaker": "nacho", "text": "Elvira, ¿vas a ir a la reunión de vecinos del jueves?" },
+              {
+                "speaker": "elvira",
+                "text": "Claro, no me la pierdo. Quieren aprobar la instalación del ascensor y a mí me interesa muchísimo. Vivo en el cuarto y con la rodilla como la tengo, subir las escaleras es un suplicio."
+              },
+              {
+                "speaker": "nacho",
+                "text": "Ya, te entiendo. Lo malo es el precio. Dicen que cada vecino tendría que pagar unos cuatro mil euros."
+              },
+              {
+                "speaker": "elvira",
+                "text": "Es mucho, sí, pero se puede pagar a plazos. Y además hay ayudas del ayuntamiento para este tipo de obras. Lo he estado mirando."
+              },
+              {
+                "speaker": "nacho",
+                "text": "¿Ah, sí? No tenía ni idea. El problema es que los del bajo dicen que ellos no lo van a usar y que no quieren pagar."
+              },
+              {
+                "speaker": "elvira",
+                "text": "Eso no es justo. El ascensor revaloriza todo el edificio, también sus pisos. Si algún día quieren vender, lo agradecerán."
+              },
+              {
+                "speaker": "nacho",
+                "text": "Visto así, tienes razón. Yo, la verdad, iba a votar en contra, pero me lo voy a pensar."
+              },
+              {
+                "speaker": "elvira",
+                "text": "Piénsalo bien. Y si quieres, te paso la información de las ayudas antes del jueves."
+              },
+              {
+                "speaker": "nacho",
+                "text": "Te lo agradecería. Por cierto, ¿sabes si en la reunión van a hablar también de la fachada?"
+              },
+              {
+                "speaker": "elvira",
+                "text": "Eso lo dejarán para la próxima. Con el ascensor ya tenemos bastante."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/es-b2-exam-01-listening/v1/r07.m4a", "duration_s": 64.524 }
+          },
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "¿Por qué le interesa el ascensor a Elvira?",
+              "options": [
+                "Tiene problemas en una rodilla", "Quiere vender su piso pronto",
+                "Es la presidenta de la comunidad"
+              ],
+              "answer": 0,
+              "explanation_es": { "en": "She lives on the fourth floor and has a bad knee." }
+            },
+            {
+              "n": 8,
+              "prompt": "¿Qué preocupa a Nacho al principio?",
+              "options": ["El ruido de la obra", "El espacio del portal", "El coste de la obra"],
+              "answer": 2,
+              "explanation_es": { "en": "Each neighbour would pay about 4,000 euros." }
+            },
+            {
+              "n": 9,
+              "prompt": "Según Elvira, ¿cómo se puede afrontar el gasto?",
+              "options": [
+                "Vendiendo el local del bajo", "Pagando poco a poco y con ayudas",
+                "Subiendo el alquiler a los inquilinos"
+              ],
+              "answer": 1,
+              "explanation_es": { "en": "Payment by instalments and council grants." }
+            },
+            {
+              "n": 10,
+              "prompt": "¿Qué argumento da Elvira a los vecinos del bajo?",
+              "options": ["Ellos también lo usarán", "Sus pisos también valdrán más", "La ley les obliga a pagar"],
+              "answer": 1,
+              "explanation_es": { "en": "The lift raises the value of the whole building." }
+            },
+            {
+              "n": 11,
+              "prompt": "¿Cómo cambia la postura de Nacho?",
+              "options": [
+                "Decide votar en contra", "Ya estaba a favor desde el principio",
+                "Ya no está seguro de votar en contra"
+              ],
+              "answer": 2,
+              "explanation_es": { "en": "He was going to vote against but will think about it." }
+            },
+            {
+              "n": 12,
+              "prompt": "¿Qué pasará con el tema de la fachada?",
+              "options": ["Se tratará en otra reunión", "Se votará el jueves", "Ya está decidido"],
+              "answer": 0,
+              "explanation_es": { "en": "It will be left for the next meeting." }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Va a escuchar una entrevista con una apicultora. La grabación se repite dos veces. Elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r08",
+            "speakers": [
+              { "id": "periodista", "name": "Periodista", "accent": "es-ES", "gender": "male" },
+              { "id": "maria", "name": "María", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "periodista",
+                "text": "María Ortega cuida más de doscientas colmenas en la sierra de Gredos. María, ¿cómo empezó todo?"
+              },
+              {
+                "speaker": "maria",
+                "text": "Por casualidad. Yo estudié Biología y trabajaba en un laboratorio en Madrid. Un verano ayudé a un tío mío con sus abejas y me enamoré del oficio. Dos años después, me quedé con sus colmenas cuando se jubiló."
+              },
+              {
+                "speaker": "periodista",
+                "text": "Se oye hablar mucho de que las abejas están en peligro. ¿Es así?"
+              },
+              {
+                "speaker": "maria",
+                "text": "Sí, y no es una exageración. Cada invierno perdemos más colmenas que antes. Hay varias causas: algunos pesticidas, un parásito que las debilita y, cada vez más, el cambio climático."
+              },
+              { "speaker": "periodista", "text": "¿Cómo les afecta el clima?" },
+              {
+                "speaker": "maria",
+                "text": "Las flores aparecen antes de tiempo, a veces en pleno febrero, y luego llega una helada y las destruye. Las abejas se quedan sin alimento justo cuando más lo necesitan."
+              },
+              { "speaker": "periodista", "text": "¿Y por qué debería importarnos a quienes no comemos miel?" },
+              {
+                "speaker": "maria",
+                "text": "Porque sin abejas no habría muchas de las frutas y verduras que comemos. Ellas polinizan una gran parte de los cultivos. No es solo una cuestión de miel; es una cuestión de comida."
+              },
+              { "speaker": "periodista", "text": "¿Qué puede hacer una persona normal para ayudar?" },
+              {
+                "speaker": "maria",
+                "text": "Cosas sencillas: plantar flores en el balcón, no usar insecticidas en el jardín y comprar miel de productores locales. Eso ayuda mucho más de lo que parece."
+              },
+              { "speaker": "periodista", "text": "¿Volvería al laboratorio?" },
+              {
+                "speaker": "maria",
+                "text": "Nunca. Gano menos y trabajo más, pero cada mañana, cuando abro una colmena, siento que estoy donde tengo que estar."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/es-b2-exam-01-listening/v1/r08.m4a", "duration_s": 79.466 }
+          },
+          "questions": [
+            {
+              "n": 13,
+              "prompt": "¿Cómo llegó María a ser apicultora?",
+              "options": [
+                "Porque lo estudió en la universidad", "Tras ayudar a un familiar un verano",
+                "Porque heredó una empresa de miel"
+              ],
+              "answer": 1,
+              "explanation_es": { "en": "She helped her uncle one summer and fell in love with the job." }
+            },
+            {
+              "n": 14,
+              "prompt": "Según María, la situación de las abejas…",
+              "options": ["es realmente preocupante", "se ha exagerado mucho", "ha mejorado últimamente"],
+              "answer": 0,
+              "explanation_es": { "en": "She says it is no exaggeration." }
+            },
+            {
+              "n": 15,
+              "prompt": "¿Qué efecto tiene el cambio climático?",
+              "options": [
+                "Hay demasiadas flores en verano", "Las abejas viven menos años",
+                "Las flores salen antes y luego se hielan"
+              ],
+              "answer": 2,
+              "explanation_es": { "en": "Early flowering followed by frost leaves bees without food." }
+            },
+            {
+              "n": 16,
+              "prompt": "¿Por qué deberían preocuparse quienes no comen miel?",
+              "options": [
+                "La miel es cada vez más cara", "Las abejas protegen los bosques del fuego",
+                "Las abejas son necesarias para muchos alimentos"
+              ],
+              "answer": 2,
+              "explanation_es": { "en": "They pollinate many crops." }
+            },
+            {
+              "n": 17,
+              "prompt": "¿Qué aconseja María a la gente?",
+              "options": ["Tener colmenas en casa", "Comprar miel de la zona", "Comer menos fruta importada"],
+              "answer": 1,
+              "explanation_es": { "en": "Plant flowers, avoid insecticides, buy local honey." }
+            },
+            {
+              "n": 18,
+              "prompt": "¿Qué siente María sobre su cambio de vida?",
+              "options": ["Está segura de haber acertado", "A veces se arrepiente", "Quiere volver a la ciudad"],
+              "answer": 0,
+              "explanation_es": { "en": "She would never go back to the lab." }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "Va a escuchar a seis personas que hablan sobre el uso del teléfono móvil. Cada persona habla dos veces. Relacione a cada persona con el enunciado que corresponde (A–H). Hay dos enunciados que no tiene que usar.",
+      "title": "El móvil y yo",
+      "recording": {
+        "id": "r09",
+        "speakers": [
+          { "id": "va", "name": "Voz 1", "accent": "es-ES", "gender": "male" },
+          { "id": "vb", "name": "Voz 2", "accent": "es-ES", "gender": "female" },
+          { "id": "vc", "name": "Voz 3", "accent": "es-ES", "gender": "male" }
+        ],
+        "segments": [
+          {
+            "speaker": "va",
+            "text": "Me di cuenta de que pasaba tres horas al día en las redes. Ahora tengo configurado el teléfono para que, después de una hora, se bloqueen esas aplicaciones. Al principio me costó, pero ya me he acostumbrado.",
+            "pause_after_ms": 1200
+          },
+          {
+            "speaker": "vb",
+            "text": "Mis hijos tienen catorce y dieciséis años y no sueltan el móvil ni para comer. He intentado poner normas, pero es una batalla constante. No sé si estoy haciendo lo correcto.",
+            "pause_after_ms": 1200
+          },
+          {
+            "speaker": "vc",
+            "text": "Hace dos años cambié mi teléfono por uno de los de antes, de los que solo sirven para llamar y enviar mensajes. Mis amigos se ríen de mí, pero yo duermo mejor que nunca.",
+            "pause_after_ms": 1200
+          },
+          {
+            "speaker": "va",
+            "text": "Gracias a una red social encontré a mi mejor amiga del colegio, a la que no veía desde hacía veinte años. Vive en Chile y ahora hablamos cada semana por videollamada.",
+            "pause_after_ms": 1200
+          },
+          {
+            "speaker": "vb",
+            "text": "Antes leía novelas enteras en un fin de semana. Ahora, a los diez minutos, ya estoy mirando el móvil. Siento que he perdido la capacidad de concentrarme.",
+            "pause_after_ms": 1200
+          },
+          {
+            "speaker": "vc",
+            "text": "El verano pasado se me cayó el móvil al mar y estuve una semana sin él. Pensé que sería horrible, pero fue todo lo contrario. Me sentí libre por primera vez en años."
+          }
+        ],
+        "audio": { "src": "audio/exams/b2/es-b2-exam-01-listening/v1/r09.m4a", "duration_s": 64.998 }
+      },
+      "tasks": [
+        {
+          "options": [
+            { "id": "A", "text": "Nunca ha tenido teléfono móvil." },
+            { "id": "B", "text": "Se le rompió el móvil y lo vivió como una liberación." },
+            { "id": "C", "text": "Gracias al móvil ha recuperado el contacto con alguien." },
+            { "id": "D", "text": "Le preocupa el tiempo que sus hijos pasan con el móvil." },
+            { "id": "E", "text": "Usa el móvil sobre todo por trabajo." },
+            { "id": "F", "text": "Cree que el móvil le ha hecho perder concentración." },
+            { "id": "G", "text": "Ha puesto límites de uso en su propio teléfono." },
+            { "id": "H", "text": "Ha decidido no tener teléfono inteligente." }
+          ],
+          "questions": [
+            {
+              "n": 19,
+              "prompt": "Persona 1",
+              "answer": "G",
+              "explanation_es": { "en": "He set a one-hour daily limit for social apps." }
+            },
+            {
+              "n": 20,
+              "prompt": "Persona 2",
+              "answer": "D",
+              "explanation_es": { "en": "Her children spend hours on their phones." }
+            },
+            {
+              "n": 21,
+              "prompt": "Persona 3",
+              "answer": "H",
+              "explanation_es": { "en": "He went back to a basic phone without internet." }
+            },
+            {
+              "n": 22,
+              "prompt": "Persona 4",
+              "answer": "C",
+              "explanation_es": { "en": "She found a childhood friend thanks to the phone." }
+            },
+            {
+              "n": 23,
+              "prompt": "Persona 5",
+              "answer": "F",
+              "explanation_es": { "en": "She can no longer read for more than ten minutes." }
+            },
+            {
+              "n": 24,
+              "prompt": "Persona 6",
+              "answer": "B",
+              "explanation_es": { "en": "His phone broke and he felt free for a week." }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Va a escuchar parte de una conferencia sobre la historia del chocolate. La grabación se repite dos veces. Elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r10",
+            "speakers": [
+              { "id": "profesora", "name": "Profesora", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "profesora",
+                "text": "Buenas tardes. Hoy vamos a hablar de un alimento que todos conocemos, pero cuya historia muy pocos conocen: el chocolate.",
+                "pause_after_ms": 500
+              },
+              {
+                "speaker": "profesora",
+                "text": "El cacao se cultivaba en Mesoamérica desde hace más de tres mil años. Los mayas y los aztecas no lo comían en tabletas, como nosotros, sino que lo tomaban como una bebida amarga, a menudo con chile y sin azúcar.",
+                "pause_after_ms": 500
+              },
+              {
+                "speaker": "profesora",
+                "text": "Para los aztecas, el cacao era tan valioso que sus semillas se usaban como moneda. Con unas cuantas semillas se podía comprar un tomate; con cien, un conejo.",
+                "pause_after_ms": 500
+              },
+              {
+                "speaker": "profesora",
+                "text": "Los españoles conocieron el cacao a principios del siglo dieciséis. Al principio, la bebida no les gustó nada: la encontraban demasiado amarga. El cambio llegó cuando alguien tuvo la idea de añadirle azúcar y canela.",
+                "pause_after_ms": 500
+              },
+              {
+                "speaker": "profesora",
+                "text": "Durante casi un siglo, España guardó la receta casi como un secreto. El chocolate se convirtió en una bebida de lujo para la nobleza y el clero, y desde aquí se extendió poco a poco al resto de Europa.",
+                "pause_after_ms": 500
+              },
+              {
+                "speaker": "profesora",
+                "text": "El chocolate sólido, el que comemos hoy, es mucho más reciente. No apareció hasta el siglo diecinueve, cuando nuevas máquinas permitieron separar la manteca de cacao y mezclarla de nuevo con azúcar.",
+                "pause_after_ms": 500
+              },
+              {
+                "speaker": "profesora",
+                "text": "Hoy, paradójicamente, la mayor parte del cacao no se cultiva en América, sino en África occidental, y muchos de los agricultores que lo producen nunca han probado una tableta de chocolate.",
+                "pause_after_ms": 500
+              },
+              {
+                "speaker": "profesora",
+                "text": "En la próxima clase hablaremos precisamente de eso: de las condiciones de trabajo en las plantaciones y del comercio justo."
+              }
+            ],
+            "audio": { "src": "audio/exams/b2/es-b2-exam-01-listening/v1/r10.m4a", "duration_s": 84.536 }
+          },
+          "questions": [
+            {
+              "n": 25,
+              "prompt": "¿Cómo tomaban el cacao los mayas y los aztecas?",
+              "options": ["Como una bebida amarga", "En tabletas con azúcar", "Mezclado con leche"],
+              "answer": 0,
+              "explanation_es": { "en": "A bitter drink, often with chilli and no sugar." }
+            },
+            {
+              "n": 26,
+              "prompt": "Para los aztecas, las semillas de cacao…",
+              "options": ["eran un regalo para los dioses", "solo las comían los reyes", "servían para pagar"],
+              "answer": 2,
+              "explanation_es": { "en": "They were used as currency." }
+            },
+            {
+              "n": 27,
+              "prompt": "¿Qué opinaron los españoles del cacao al principio?",
+              "options": ["Les pareció demasiado dulce", "No les gustó", "Lo usaron como medicina"],
+              "answer": 1,
+              "explanation_es": { "en": "They found it too bitter." }
+            },
+            {
+              "n": 28,
+              "prompt": "¿Qué hizo España con la receta del chocolate?",
+              "options": ["La vendió a otros países", "La mantuvo casi en secreto", "La prohibió durante un siglo"],
+              "answer": 1,
+              "explanation_es": { "en": "For almost a century it was kept nearly secret." }
+            },
+            {
+              "n": 29,
+              "prompt": "¿Cuándo apareció el chocolate sólido?",
+              "options": ["En el siglo dieciséis", "Hace tres mil años", "En el siglo diecinueve"],
+              "answer": 2,
+              "explanation_es": { "en": "Not until the 19th century, thanks to new machines." }
+            },
+            {
+              "n": 30,
+              "prompt": "¿Qué paradoja menciona la profesora?",
+              "options": [
+                "Muchos productores no han probado el chocolate", "El cacao ya no se cultiva en ningún sitio",
+                "El chocolate es más barato que nunca"
+              ],
+              "answer": 0,
+              "explanation_es": { "en": "Many cocoa farmers have never tasted a chocolate bar." }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

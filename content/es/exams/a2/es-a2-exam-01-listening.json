@@ -1,0 +1,435 @@
+{
+  "id": "es-a2-exam-01-listening",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "paper": "listening",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "Va a escuchar seis anuncios y mensajes. Cada uno se repite dos veces. Elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r01",
+            "speakers": [
+              { "id": "voz", "name": "Megafonía", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "voz",
+                "text": "Señores pasajeros: el vuelo IB 3245 con destino a Lisboa tiene un retraso de cuarenta minutos. La nueva hora de salida es las once y cuarto."
+              }
+            ],
+            "audio": { "src": "audio/exams/a2/es-a2-exam-01-listening/v1/r01.m4a", "duration_s": 10.714 }
+          },
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "¿A qué hora sale ahora el vuelo?",
+              "options": ["A las once menos cuarto", "A las once y cuarto", "A las doce"],
+              "answer": 1,
+              "explanation_es": { "en": "The new departure time is 11:15." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r02",
+            "speakers": [
+              { "id": "andres", "name": "Andrés", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "andres",
+                "text": "Hola, Clara. Soy Andrés. Al final no voy a poder llevarte al aeropuerto mañana, porque tengo el coche en el taller. Lo siento mucho. Te llamo luego."
+              }
+            ],
+            "audio": { "src": "audio/exams/a2/es-a2-exam-01-listening/v1/r02.m4a", "duration_s": 9.157 }
+          },
+          "questions": [
+            {
+              "n": 2,
+              "prompt": "¿Por qué llama Andrés?",
+              "options": ["No puede llevar a Clara", "Ha perdido el vuelo", "Quiere comprar un coche"],
+              "answer": 0,
+              "explanation_es": { "en": "His car is at the garage, so he cannot drive her." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r03",
+            "speakers": [
+              { "id": "voz", "name": "Grandes Almacenes", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "voz",
+                "text": "Estimados clientes: les recordamos que hoy, sábado, la tienda cierra a las nueve. En la tercera planta encontrarán descuentos en ropa de niños."
+              }
+            ],
+            "audio": { "src": "audio/exams/a2/es-a2-exam-01-listening/v1/r03.m4a", "duration_s": 8.798 }
+          },
+          "questions": [
+            {
+              "n": 3,
+              "prompt": "¿Qué hay en la tercera planta?",
+              "options": ["La cafetería", "Ropa de deporte", "Ropa de niños más barata"],
+              "answer": 2,
+              "explanation_es": { "en": "Discounts on children’s clothes." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r04",
+            "speakers": [
+              { "id": "lucia", "name": "Lucía", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "lucia",
+                "text": "Mamá, soy Lucía. He olvidado las llaves en casa. Llego a las seis. ¿Puedes dejarlas a la vecina del segundo, por favor?"
+              }
+            ],
+            "audio": { "src": "audio/exams/a2/es-a2-exam-01-listening/v1/r04.m4a", "duration_s": 8.081 }
+          },
+          "questions": [
+            {
+              "n": 4,
+              "prompt": "¿Qué pide Lucía?",
+              "options": [
+                "Que la esperen en casa a las seis", "Que le compren unas llaves",
+                "Que dejen las llaves a una vecina"
+              ],
+              "answer": 2,
+              "explanation_es": { "en": "She asks her mother to leave the keys with the neighbour." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r05",
+            "speakers": [
+              { "id": "voz", "name": "Radio", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "voz",
+                "text": "Y ahora, el tiempo para mañana: en el norte, lluvia durante todo el día. En el centro y en el sur, sol y temperaturas de hasta treinta grados."
+              }
+            ],
+            "audio": { "src": "audio/exams/a2/es-a2-exam-01-listening/v1/r05.m4a", "duration_s": 9.452 }
+          },
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "¿Qué tiempo hará en el norte?",
+              "options": ["Hará sol", "Lloverá", "Hará mucho calor"],
+              "answer": 1,
+              "explanation_es": { "en": "Rain all day in the north." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r06",
+            "speakers": [
+              { "id": "voz", "name": "Museo", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "voz",
+                "text": "Bienvenidos al Museo de Ciencias. Las visitas guiadas empiezan cada hora en la entrada principal. Está prohibido hacer fotos con flash."
+              }
+            ],
+            "audio": { "src": "audio/exams/a2/es-a2-exam-01-listening/v1/r06.m4a", "duration_s": 8.531 }
+          },
+          "questions": [
+            {
+              "n": 6,
+              "prompt": "¿Qué no se puede hacer en el museo?",
+              "options": ["Hacer fotos con flash", "Entrar con niños", "Hacer visitas guiadas"],
+              "answer": 0,
+              "explanation_es": { "en": "Flash photography is forbidden." }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Va a escuchar parte de un programa de radio sobre una cocinera. La grabación se repite dos veces. Elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r07",
+            "speakers": [
+              { "id": "locutor", "name": "Locutor", "accent": "es-ES", "gender": "male" },
+              { "id": "carmen", "name": "Carmen", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "locutor",
+                "text": "Hoy está con nosotros Carmen Blanco, que tiene un pequeño restaurante en Cádiz. Carmen, ¿cuándo empezaste a cocinar?"
+              },
+              {
+                "speaker": "carmen",
+                "text": "Muy pronto, con ocho o nueve años. Mi abuela tenía un bar en el puerto y yo la ayudaba los veranos."
+              },
+              { "speaker": "locutor", "text": "¿Y estudiaste cocina?" },
+              {
+                "speaker": "carmen",
+                "text": "Sí, pero más tarde. Primero estudié Turismo y trabajé tres años en un hotel. Luego me di cuenta de que lo que me gustaba de verdad era la cocina."
+              },
+              { "speaker": "locutor", "text": "¿Cómo es tu restaurante?" },
+              {
+                "speaker": "carmen",
+                "text": "Es pequeño, solo tiene diez mesas. Cocinamos sobre todo pescado, porque lo compramos cada mañana en el mercado."
+              },
+              { "speaker": "locutor", "text": "¿Cuál es el plato que más piden los clientes?" },
+              { "speaker": "carmen", "text": "El arroz con mariscos. Mucha gente viene solo por ese plato." },
+              { "speaker": "locutor", "text": "¿Y qué es lo más difícil de tu trabajo?" },
+              {
+                "speaker": "carmen",
+                "text": "Los horarios. Trabajo todos los días menos los lunes y casi no tengo tiempo para mi familia."
+              },
+              { "speaker": "locutor", "text": "¿Tienes algún proyecto nuevo?" },
+              {
+                "speaker": "carmen",
+                "text": "Sí, en otoño voy a dar clases de cocina para jóvenes del barrio que buscan trabajo."
+              }
+            ],
+            "audio": { "src": "audio/exams/a2/es-a2-exam-01-listening/v1/r07.m4a", "duration_s": 58.703 }
+          },
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "¿Dónde aprendió a cocinar Carmen de niña?",
+              "options": ["En el bar de su abuela", "En una escuela de cocina", "En un hotel"],
+              "answer": 0,
+              "explanation_es": { "en": "She helped her grandmother at her bar in the summers." }
+            },
+            {
+              "n": 8,
+              "prompt": "¿Qué hizo Carmen antes de dedicarse a la cocina?",
+              "options": ["Vendió pescado en el mercado", "Abrió un bar", "Trabajó en un hotel"],
+              "answer": 2,
+              "explanation_es": { "en": "She studied Tourism and worked in a hotel for three years." }
+            },
+            {
+              "n": 9,
+              "prompt": "¿Cómo es su restaurante?",
+              "options": ["Muy moderno", "Pequeño", "Grande y caro"],
+              "answer": 1,
+              "explanation_es": { "en": "It only has ten tables." }
+            },
+            {
+              "n": 10,
+              "prompt": "¿Por qué cocinan mucho pescado?",
+              "options": ["Es más barato que la carne", "Lo compran fresco cada día", "Es lo único que sabe hacer"],
+              "answer": 1,
+              "explanation_es": { "en": "They buy it every morning at the market." }
+            },
+            {
+              "n": 11,
+              "prompt": "¿Qué es lo más difícil para Carmen?",
+              "options": ["Encontrar clientes", "Cocinar el arroz", "Los horarios de trabajo"],
+              "answer": 2,
+              "explanation_es": { "en": "The working hours: she barely has time for her family." }
+            },
+            {
+              "n": 12,
+              "prompt": "¿Qué va a hacer en otoño?",
+              "options": ["Dar clases a jóvenes", "Abrir otro restaurante", "Cerrar los lunes"],
+              "answer": 0,
+              "explanation_es": { "en": "Cooking classes for young people looking for work." }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "Va a escuchar una conversación entre dos amigos, Hugo y Begoña, sobre los regalos de cumpleaños para su familia. La grabación se repite dos veces. Relacione a cada persona con su regalo (A–H). Hay dos opciones que no tiene que usar.",
+      "title": "Regalos",
+      "recording": {
+        "id": "r08",
+        "speakers": [
+          { "id": "hugo", "name": "Hugo", "accent": "es-ES", "gender": "male" },
+          { "id": "begona", "name": "Begoña", "accent": "es-ES", "gender": "female" }
+        ],
+        "segments": [
+          { "speaker": "begona", "text": "Hugo, ¿ya tienes los regalos para tu familia?" },
+          {
+            "speaker": "hugo",
+            "text": "Casi todos. A mi padre se le rompió el reloj el mes pasado, así que le he comprado uno nuevo."
+          },
+          { "speaker": "begona", "text": "¡Qué buena idea! ¿Y a tu madre?" },
+          {
+            "speaker": "hugo",
+            "text": "A mi madre le encanta el teatro. Le regalo dos entradas para ver una obra en diciembre."
+          },
+          {
+            "speaker": "begona",
+            "text": "Yo todavía no sé qué regalarle a mi hermano. Bueno, sí: me dijo que quería un videojuego nuevo."
+          },
+          { "speaker": "hugo", "text": "¿Y para tu abuela? Siempre es difícil." },
+          {
+            "speaker": "begona",
+            "text": "No, ella es fácil. Pasa todo el día en el balcón con sus flores. Le voy a comprar una planta."
+          },
+          {
+            "speaker": "hugo",
+            "text": "Mi hermana sale a correr todos los días y siempre se queja de su música. Creo que le compraré unos auriculares."
+          },
+          {
+            "speaker": "begona",
+            "text": "Y mi tío ha empezado a cocinar este año. Le regalaré un libro de recetas. ¡A ver si nos invita a comer!"
+          }
+        ],
+        "audio": { "src": "audio/exams/a2/es-a2-exam-01-listening/v1/r08.m4a", "duration_s": 48.458 }
+      },
+      "tasks": [
+        {
+          "options": [
+            { "id": "A", "text": "un reloj" },
+            { "id": "B", "text": "un videojuego" },
+            { "id": "C", "text": "un libro de cocina" },
+            { "id": "D", "text": "una planta" },
+            { "id": "E", "text": "unos auriculares" },
+            { "id": "F", "text": "una cámara de fotos" },
+            { "id": "G", "text": "una bufanda" },
+            { "id": "H", "text": "unas entradas de teatro" }
+          ],
+          "questions": [
+            {
+              "n": 13,
+              "prompt": "El padre de Hugo",
+              "answer": "A",
+              "explanation_es": { "en": "His father’s watch broke, so Hugo buys him a new one." }
+            },
+            {
+              "n": 14,
+              "prompt": "La madre de Hugo",
+              "answer": "H",
+              "explanation_es": { "en": "His mother loves the theatre: tickets." }
+            },
+            {
+              "n": 15,
+              "prompt": "El hermano de Begoña",
+              "answer": "B",
+              "explanation_es": { "en": "Her brother wanted a video game." }
+            },
+            {
+              "n": 16,
+              "prompt": "La abuela de Begoña",
+              "answer": "D",
+              "explanation_es": { "en": "Her grandmother loves her balcony: a plant." }
+            },
+            {
+              "n": 17,
+              "prompt": "La hermana de Hugo",
+              "answer": "E",
+              "explanation_es": { "en": "His sister runs every day and needs headphones." }
+            },
+            {
+              "n": 18,
+              "prompt": "El tío de Begoña",
+              "answer": "C",
+              "explanation_es": { "en": "Her uncle has started cooking: a cookbook." }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "completion",
+      "rubric": "Va a escuchar a un guía que habla de una excursión. La grabación se repite dos veces. Complete las notas con una o dos palabras o un número.",
+      "title": "Excursión a los Picos de Europa",
+      "text": "Día de salida: el {{19}}\nHora de salida del autobús: a las {{20}}\nLugar de salida: delante de la {{21}}\nDuración de la ruta a pie: {{22}} horas\nComida: en un restaurante del {{23}}\nHay que llevar: botas y un {{24}} para la lluvia\nPrecio total: {{25}} euros",
+      "gaps": [
+        {
+          "n": 19,
+          "accept": ["sábado"],
+          "explanation_es": { "en": "They leave on Saturday." }
+        },
+        {
+          "n": 20,
+          "accept": ["7:30", "siete y media", "7.30"],
+          "explanation_es": { "en": "The coach leaves at half past seven." }
+        },
+        {
+          "n": 21,
+          "accept": ["estación", "estación de autobuses"],
+          "explanation_es": { "en": "In front of the bus station." }
+        },
+        {
+          "n": 22,
+          "accept": ["4", "cuatro"],
+          "explanation_es": { "en": "The walk lasts about four hours." }
+        },
+        {
+          "n": 23,
+          "accept": ["pueblo"],
+          "explanation_es": { "en": "Lunch is at a restaurant in the village." }
+        },
+        {
+          "n": 24,
+          "accept": ["chubasquero", "impermeable"],
+          "explanation_es": { "en": "Boots and a raincoat." }
+        },
+        {
+          "n": 25,
+          "accept": ["55", "cincuenta y cinco"],
+          "explanation_es": { "en": "The total price is fifty-five euros." }
+        }
+      ],
+      "recording": {
+        "id": "r09",
+        "speakers": [
+          { "id": "guia", "name": "Guía", "accent": "es-ES", "gender": "male" }
+        ],
+        "segments": [
+          {
+            "speaker": "guia",
+            "text": "Buenas tardes a todos. Os explico cómo será la excursión a los Picos de Europa.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "guia",
+            "text": "Salimos el sábado, no el viernes como dice el folleto. El autobús sale a las siete y media de la mañana, delante de la estación de autobuses.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "guia",
+            "text": "Llegaremos a las diez y empezaremos a caminar. La ruta dura unas cuatro horas, con descansos.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "guia",
+            "text": "A las tres comeremos en un restaurante del pueblo, donde preparan una fabada muy buena.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "guia",
+            "text": "Es importante llevar botas de montaña y un chubasquero, porque allí llueve mucho, incluso en verano.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "guia",
+            "text": "El precio total es de cincuenta y cinco euros, con el autobús y la comida. Volveremos sobre las nueve de la noche."
+          }
+        ],
+        "audio": { "src": "audio/exams/a2/es-a2-exam-01-listening/v1/r09.m4a", "duration_s": 36.991 }
+      }
+    }
+  ]
+}

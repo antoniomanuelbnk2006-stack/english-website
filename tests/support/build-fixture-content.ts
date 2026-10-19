@@ -118,7 +118,7 @@ for (const [level, words] of Object.entries(DICTIONARY)) {
 // Un segundo idioma (ADR-0036): con una ficha de español ya se puede elegir qué se practica. Va
 // con el formato de los idiomas nuevos: ayudas por idioma de interfaz y cuerpo en inglés.
 // El contenido real de español (content/es) no entra entero en los tests: una ficha de prueba,
-// una consigna, un ejercicio de Use of English, uno de pronunciación, el mazo y dos lecciones (una lectura y una escucha), así que añadir contenido
+// una consigna, un ejercicio de Use of English, uno de pronunciación, una prueba de examen (DELE A1), el mazo y dos lecciones (una lectura y una escucha), así que añadir contenido
 // real no cambia lo que ven. La escucha se locuta aquí con tonos, como la de inglés.
 rmSync(path.join(FIXTURE_DIR, 'es'), { recursive: true, force: true });
 for (const file of [
@@ -127,6 +127,7 @@ for (const file of [
   'units.json',
   'use-of-english/a1/es-a1-uoe-001.json',
   'pronunciation/a1/es-a1-pro-002.json',
+  'exams/a1/es-a1-exam-01-reading.json',
   `lessons/a1/reading/${SPANISH_READING}.json`,
   `lessons/a1/listening/${SPANISH_LISTENING}.json`,
 ]) {

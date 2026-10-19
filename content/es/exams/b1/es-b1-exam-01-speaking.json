@@ -1,0 +1,167 @@
+{
+  "id": "es-b1-exam-01-speaking",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "paper": "speaking",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "kind": "long_turn",
+      "about_es": {
+        "en": "Present a topic for two or three minutes, using the notes you prepared. In the real exam you choose between two topics."
+      },
+      "turns": [
+        {
+          "examiner": "Vamos a empezar. Hable durante dos o tres minutos sobre el tema que ha preparado: «Una persona importante en mi vida». Diga quién es, cómo la conoció, cómo es y por qué es importante para usted.",
+          "shown": "Tema: Una persona importante en mi vida",
+          "prompts": [
+            "¿Quién es?",
+            "¿Cómo y cuándo la conoció?",
+            "¿Cómo es?",
+            "Una experiencia juntos",
+            "¿Por qué es importante?"
+          ],
+          "prep_s": 60,
+          "answer_s": 150
+        }
+      ],
+      "useful_language": [
+        "Voy a hablar de…",
+        "La conocí cuando…",
+        "Es una persona muy…",
+        "Recuerdo una vez que…",
+        "Para mí es importante porque…",
+        "En resumen…"
+      ],
+      "tips_es": [
+        {
+          "en": "Combine preterite («la conocí») and imperfect («era muy tímida») when telling the past."
+        },
+        {
+          "en": "Structure your talk: introduction, development, conclusion."
+        },
+        {
+          "en": "Do not read your notes; glance at them and speak."
+        }
+      ]
+    },
+    {
+      "kind": "discussion",
+      "about_es": {
+        "en": "The examiner asks questions about your presentation and the topic."
+      },
+      "turns": [
+        {
+          "examiner": "¿Todavía ve a menudo a esa persona?",
+          "answer_s": 40
+        },
+        {
+          "examiner": "¿Qué cualidades son más importantes para usted en un amigo?",
+          "answer_s": 45
+        },
+        {
+          "examiner": "¿Cree que es más fácil hacer amigos de niño o de adulto? ¿Por qué?",
+          "answer_s": 50
+        },
+        {
+          "examiner": "¿Cómo cree que han cambiado las relaciones con las redes sociales?",
+          "answer_s": 50
+        }
+      ],
+      "useful_language": [
+        "Sí, nos vemos…",
+        "Para mí, lo más importante es que…",
+        "Creo que… porque…",
+        "Por un lado… por otro…",
+        "Depende, porque…",
+        "No estoy seguro, pero…"
+      ],
+      "tips_es": [
+        {
+          "en": "Give opinions with reasons: «Creo que… porque…»."
+        },
+        {
+          "en": "Use «es importante que» + subjunctive: «es importante que sea sincero»."
+        }
+      ]
+    },
+    {
+      "kind": "long_turn",
+      "about_es": {
+        "en": "Describe a photograph and imagine the situation: who the people are, where they are, what they are doing and how they feel."
+      },
+      "turns": [
+        {
+          "examiner": "Ahora le voy a enseñar una fotografía. Descríbala e imagine la situación: quiénes son, dónde están, qué ha pasado antes y qué va a pasar después.",
+          "visuals": [
+            {
+              "label": "Fotografía",
+              "description": "Un grupo de cuatro jóvenes en una cocina pequeña. Una chica lee una receta en una tableta, un chico corta verduras, otra chica remueve algo en una sartén y un chico se ríe mientras abre una caja de huevos. La mesa está llena de ingredientes y platos sucios."
+            }
+          ],
+          "prep_s": 30,
+          "answer_s": 120
+        }
+      ],
+      "useful_language": [
+        "En la foto aparecen…",
+        "Parecen compañeros de piso / amigos…",
+        "Me imagino que…",
+        "Seguramente acaban de…",
+        "Supongo que después van a…",
+        "Se les ve…"
+      ],
+      "tips_es": [
+        {
+          "en": "Use the future of probability («serán estudiantes») or «supongo que» for guesses."
+        },
+        {
+          "en": "Here the photo is described in words; in the exam it is a real photo."
+        }
+      ]
+    },
+    {
+      "kind": "collaborative",
+      "about_es": {
+        "en": "A simulated situation related to the photograph: you talk to the examiner to solve a practical problem."
+      },
+      "turns": [
+        {
+          "examiner": "Ahora imagine que usted organiza una cena con sus compañeros de piso y yo soy uno de ellos. Mañana viene mucha gente y no sabemos qué cocinar. ¿Qué propones?",
+          "shown": "Situación: organiza con un compañero de piso una cena para diez personas. Decidan el menú, quién compra y quién cocina.",
+          "answer_s": 60
+        },
+        {
+          "examiner": "Ya, pero dos de los invitados son vegetarianos y uno no puede comer gluten. ¿Qué hacemos?",
+          "answer_s": 50
+        },
+        {
+          "examiner": "Vale. ¿Y cómo nos repartimos el trabajo? Yo mañana trabajo hasta las seis.",
+          "answer_s": 50
+        }
+      ],
+      "useful_language": [
+        "¿Qué te parece si…?",
+        "Podríamos…",
+        "Yo me encargo de…",
+        "Entonces, tú compras… y yo…",
+        "Vale, de acuerdo.",
+        "Bueno, pues quedamos así."
+      ],
+      "tips_es": [
+        {
+          "en": "Make proposals and react to the examiner’s problems."
+        },
+        {
+          "en": "End by summarising what you have agreed."
+        }
+      ]
+    }
+  ]
+}

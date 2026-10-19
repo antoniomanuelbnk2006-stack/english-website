@@ -2,7 +2,7 @@ import { CircleCheck, CircleX, TriangleAlert } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { Panel } from '@/components/ui/panel';
 import type { ExamItemResult, ExamResult } from '@/features/exams/lib/grade';
-import { BAND_LABEL, SECTION_LABEL } from '@/features/exams/lib/labels';
+import { BAND_LABEL, sectionLabel } from '@/features/exams/lib/labels';
 import { splitCloze } from '@/features/use-of-english/lib/grade';
 import type { ExamFormat } from '@/lib/content/exam-formats';
 import {
@@ -11,6 +11,7 @@ import {
   type ExamRecording,
   type QuestionPaper,
 } from '@/lib/content/exam-schema';
+import { contentLang } from '@/lib/content/language';
 import type { Translate } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
 import { WritingReview } from './writing-review';
@@ -34,11 +35,11 @@ function Mark({ item, t }: { item: ExamItemResult; t: Translate }) {
 }
 
 /** El texto de una parte con cada hueco ya resuelto, para releerlo con la solución puesta. */
-function Solved({ text, fill }: { text: string; fill: (n: number) => string }) {
+function Solved({ text, fill, lang }: { text: string; fill: (n: number) => string; lang: string }) {
   return (
     <>
       {paragraphs(text).map((paragraph, index) => (
-        <p key={index} lang="en" className="prose-reading whitespace-pre-line">
+        <p key={index} lang={lang} className="prose-reading whitespace-pre-line">
           {splitCloze(paragraph).map((piece, pieceIndex) =>
             typeof piece === 'string' ? (
               <span key={pieceIndex}>{piece}</span>
@@ -65,13 +66,13 @@ function Fold({ summary, children }: { summary: string; children: ReactNode }) {
   );
 }
 
-function Transcript({ recording }: { recording: ExamRecording }) {
+function Transcript({ recording, lang }: { recording: ExamRecording; lang: string }) {
   const names = new Map(recording.speakers.map((speaker) => [speaker.id, speaker.name]));
   const several = recording.speakers.length > 1;
   return (
     <div className="flex flex-col gap-2">
       {recording.segments.map((segment, index) => (
-        <p key={index} lang="en" className="prose-reading">
+        <p key={index} lang={lang} className="prose-reading">
           {several ? (
             <span className="tabular-nums mr-2 text-caption text-muted">
               {names.get(segment.speaker)}
@@ -85,7 +86,7 @@ function Transcript({ recording }: { recording: ExamRecording }) {
 }
 
 /** El material de una parte, ya corregida: el texto con la solución y, en Listening, el guion. */
-function Material({ part, t }: { part: ExamPart; t: Translate }) {
+function Material({ part, t, lang }: { part: ExamPart; t: Translate; lang: string }) {
   const recordings = partRecordings(part);
   const transcripts =
     recordings.length > 0 ? (
@@ -97,7 +98,7 @@ function Material({ part, t }: { part: ExamPart; t: Translate }) {
                 {t('exams.recording', { n: index + 1 })}
               </h5>
             ) : null}
-            <Transcript recording={recording} />
+            <Transcript recording={recording} lang={lang} />
           </div>
         ))}
       </Fold>
@@ -113,7 +114,11 @@ function Material({ part, t }: { part: ExamPart; t: Translate }) {
               {texts.map((text, index) => (
                 <div key={index} className="flex flex-col gap-3">
                   {paragraphs(text).map((paragraph, paragraphIndex) => (
-                    <p key={paragraphIndex} lang="en" className="prose-reading whitespace-pre-line">
+                    <p
+                      key={paragraphIndex}
+                      lang={lang}
+                      className="prose-reading whitespace-pre-line"
+                    >
                       {paragraph}
                     </p>
                   ))}
@@ -129,6 +134,7 @@ function Material({ part, t }: { part: ExamPart; t: Translate }) {
       return (
         <Fold summary={t('exams.seeSolvedText')}>
           <Solved
+            lang={lang}
             text={part.text}
             fill={(n) => {
               const gap = part.gaps.find((item) => item.n === n);
@@ -142,6 +148,7 @@ function Material({ part, t }: { part: ExamPart; t: Translate }) {
       return (
         <Fold summary={t('exams.seeSolvedText')}>
           <Solved
+            lang={lang}
             text={part.text}
             fill={(n) => part.gaps.find((gap) => gap.n === n)?.accept[0] ?? ''}
           />
@@ -152,6 +159,7 @@ function Material({ part, t }: { part: ExamPart; t: Translate }) {
         <>
           <Fold summary={t('exams.seeSolvedText')}>
             <Solved
+              lang={lang}
               text={part.text.replace(/\n/g, '\n\n')}
               fill={(n) => part.gaps.find((gap) => gap.n === n)?.accept[0] ?? ''}
             />
@@ -163,6 +171,7 @@ function Material({ part, t }: { part: ExamPart; t: Translate }) {
       return (
         <Fold summary={t('exams.seeSolvedText')}>
           <Solved
+            lang={lang}
             text={part.text}
             fill={(n) => {
               const answer = part.gaps.find((gap) => gap.n === n)?.answer;
@@ -184,10 +193,10 @@ function Material({ part, t }: { part: ExamPart; t: Translate }) {
                   <div key={option.id} className="flex flex-col gap-2">
                     <h5 className="flex items-baseline gap-2">
                       <span className="tabular-nums font-medium text-accent-text">{option.id}</span>
-                      {option.title ? <span lang="en">{option.title}</span> : null}
+                      {option.title ? <span lang={lang}>{option.title}</span> : null}
                     </h5>
                     {paragraphs(option.text).map((paragraph, index) => (
-                      <p key={index} lang="en" className="prose-reading">
+                      <p key={index} lang={lang} className="prose-reading">
                         {paragraph}
                       </p>
                     ))}
@@ -244,6 +253,8 @@ export function ResultReview({
   result: ExamResult;
   t: Translate;
 }) {
+  const lang = contentLang(paper.id);
+  const dele = format.system === 'dele';
   return (
     <div className="flex flex-col gap-6">
       <Panel className="flex flex-col gap-4">
@@ -258,8 +269,8 @@ export function ResultReview({
           {result.sections.map((section) => (
             <li key={section.section} className="flex flex-col gap-0.5">
               <span className="flex flex-wrap items-baseline gap-x-3">
-                <span lang="en" className="font-medium">
-                  {t(SECTION_LABEL[section.section])}
+                <span lang={dele ? undefined : 'en'} className="font-medium">
+                  {t(sectionLabel(section.section, format.system))}
                 </span>
                 <span className="tabular-nums text-body-sm text-muted">
                   {t('exams.marksOf', { marks: section.marks, total: section.total })}
@@ -286,7 +297,7 @@ export function ResultReview({
         <p className="text-caption text-muted">
           {format.pass !== null
             ? t('exams.scaleNote', { exam: format.exam, pass: format.pass })
-            : t('exams.plainNote')}
+            : t(dele ? 'exams.officialNoteDele' : 'exams.plainNote')}
         </p>
       </Panel>
 
@@ -300,7 +311,7 @@ export function ResultReview({
               className="flex flex-wrap items-baseline gap-x-3 text-body-lg font-semibold"
             >
               {t('exams.part', { n: index + 1 })}
-              <span lang="en" className="font-normal text-muted">
+              <span lang={lang} className="font-normal text-muted">
                 {name}
               </span>
               {graded ? (
@@ -312,13 +323,13 @@ export function ResultReview({
 
             {part.type === 'writing' ? (
               <div className="flex flex-col gap-3">
-                <p lang="en" className="prose-reading whitespace-pre-line">
+                <p lang={lang} className="prose-reading whitespace-pre-line">
                   {part.prompt}
                 </p>
                 <WritingReview paperId={paper.id} n={part.n} />
                 <div className="flex flex-col gap-1">
                   <h4 className="text-body-sm font-medium text-muted">{t('exams.writingModel')}</h4>
-                  <p lang="en" className="prose-reading whitespace-pre-line">
+                  <p lang={lang} className="prose-reading whitespace-pre-line">
                     {part.model_answer}
                   </p>
                 </div>
@@ -330,7 +341,7 @@ export function ResultReview({
               </div>
             ) : (
               <>
-                <Material part={part} t={t} />
+                <Material part={part} t={t} lang={lang} />
                 <ol className="flex flex-col gap-3">
                   {graded?.items.map((item) => {
                     const prompt = promptOf(part, item.n);
@@ -346,7 +357,7 @@ export function ResultReview({
                           ) : null}
                         </span>
                         {prompt ? (
-                          <span lang="en" className="line-clamp-3 text-muted">
+                          <span lang={lang} className="line-clamp-3 text-muted">
                             {prompt}
                           </span>
                         ) : null}
@@ -356,7 +367,7 @@ export function ResultReview({
                             {item.given === '' ? (
                               t('uoe.blank')
                             ) : (
-                              <span lang="en" className="text-text">
+                              <span lang={lang} className="text-text">
                                 {item.given}
                               </span>
                             )}
@@ -364,7 +375,7 @@ export function ResultReview({
                         ) : null}
                         <span>
                           {t('tasks.correctAnswer')}:{' '}
-                          <span lang="en" className="font-medium">
+                          <span lang={lang} className="font-medium">
                             {item.answer}
                           </span>
                         </span>

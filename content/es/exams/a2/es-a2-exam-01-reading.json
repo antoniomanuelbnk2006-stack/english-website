@@ -1,0 +1,422 @@
+{
+  "id": "es-a2-exam-01-reading",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "paper": "reading",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "Lea el texto y elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "text": "Mi primer mes en Salamanca\n\nLlegué a Salamanca el 2 de septiembre para estudiar Medicina. Antes vivía con mis padres en un pueblo de Extremadura, así que al principio todo era nuevo para mí.\n\nLos primeros días fueron difíciles. No conocía a nadie y la residencia de estudiantes estaba lejos de la facultad: tardaba cuarenta minutos andando. Por eso, en la segunda semana, me compré una bicicleta de segunda mano. Ahora tardo solo quince minutos.\n\nEn clase conocí a Inés, una chica de Burgos. Estudiamos juntas en la biblioteca casi todas las tardes y los fines de semana salimos con otros compañeros. A Inés le encanta el cine, y los martes vamos a una sala pequeña donde ponen películas antiguas.\n\nLo que más echo de menos es la comida de mi madre. En la residencia la comida no está mal, pero no es igual. Por suerte, mi madre me manda un paquete con chorizo y queso cada mes.\n\nEl próximo mes voy a buscar un trabajo de pocas horas, porque quiero tener mi propio dinero.\n\nMarina",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "¿Para qué fue Marina a Salamanca?",
+              "options": [
+                "Para trabajar en un hospital",
+                "Para estudiar en la universidad",
+                "Para visitar a su familia"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "She went to study Medicine."
+              }
+            },
+            {
+              "n": 2,
+              "prompt": "¿Por qué compró una bicicleta?",
+              "options": [
+                "Porque la facultad estaba lejos",
+                "Porque era muy barata",
+                "Porque Inés tenía una"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "Walking to the faculty took forty minutes."
+              }
+            },
+            {
+              "n": 3,
+              "prompt": "¿Qué hacen Marina e Inés los martes?",
+              "options": [
+                "Estudian en la biblioteca",
+                "Salen con compañeros",
+                "Ven películas antiguas"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "On Tuesdays they go to a small cinema showing old films."
+              }
+            },
+            {
+              "n": 4,
+              "prompt": "¿Qué echa de menos Marina?",
+              "options": [
+                "Su pueblo y sus amigos",
+                "Su antigua bicicleta",
+                "La comida de su madre"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "She misses her mother’s cooking."
+              }
+            },
+            {
+              "n": 5,
+              "prompt": "¿Qué quiere hacer el mes que viene?",
+              "options": [
+                "Cambiar de residencia",
+                "Buscar un trabajo",
+                "Volver a su pueblo"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "She wants a part-time job to have her own money."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Lea los textos y elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "text": "AVISO A LOS VECINOS\nEl lunes 14 no habrá agua en el edificio de 9:00 a 13:00 por obras. Disculpen las molestias.\nLa administración",
+          "questions": [
+            {
+              "n": 6,
+              "prompt": "¿Qué pasará el lunes por la mañana?",
+              "options": [
+                "No habrá agua",
+                "Habrá una reunión",
+                "Cerrarán el edificio"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "There will be no water from 9 to 13."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Hola, Sergio:\nNo puedo ir a la cena del viernes porque tengo que trabajar hasta tarde. ¿Quedamos el domingo para comer? Te invito yo.\nNuria",
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "¿Qué propone Nuria?",
+              "options": [
+                "Comer juntos el domingo",
+                "Cenar el viernes tarde",
+                "Trabajar juntos el domingo"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "She cannot go on Friday and suggests lunch on Sunday."
+              }
+            }
+          ]
+        },
+        {
+          "text": "ESCUELA DE IDIOMAS LINGUA\nCursos de inglés y francés para adultos.\nMatrícula: hasta el 30 de septiembre.\nPrimera clase gratis.",
+          "questions": [
+            {
+              "n": 8,
+              "prompt": "¿Qué ofrece la escuela?",
+              "options": [
+                "Cursos para niños",
+                "Clases de español",
+                "Una clase sin pagar"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "The first class is free."
+              }
+            }
+          ]
+        },
+        {
+          "text": "TIENDA DEPORTES ÁLVAREZ\n¡Rebajas! 30 % de descuento en zapatillas de correr.\nLos cambios solo se aceptan con el ticket de compra.",
+          "questions": [
+            {
+              "n": 9,
+              "prompt": "¿Qué se necesita para cambiar un producto?",
+              "options": [
+                "La tarjeta de la tienda",
+                "El ticket",
+                "La caja original"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "Exchanges only with the receipt."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Querida abuela:\nMuchas gracias por el jersey. Me queda un poco grande, pero me encanta el color. Lo voy a llevar en el viaje a Asturias, porque allí hace frío.\nUn beso, Daniel",
+          "questions": [
+            {
+              "n": 10,
+              "prompt": "¿Qué dice Daniel del jersey?",
+              "options": [
+                "Es demasiado pequeño",
+                "Le gusta, aunque es grande",
+                "No le gusta el color"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "It is a bit big but he loves the colour."
+              }
+            }
+          ]
+        },
+        {
+          "text": "CENTRO CULTURAL\nConcierto de guitarra en el patio.\nSábado, 20:30. Entrada libre hasta completar el aforo.\nSi llueve, el concierto será en el salón de actos.",
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "¿Dónde será el concierto si llueve?",
+              "options": [
+                "En el patio",
+                "En otra fecha",
+                "En el salón de actos"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "If it rains, it moves to the assembly hall."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Hola a todos:\nEl grupo de senderismo sale este domingo a las 8:00 desde la plaza del Ayuntamiento. La ruta dura cinco horas. Traed agua, comida y calzado cómodo.\nJavier",
+          "questions": [
+            {
+              "n": 12,
+              "prompt": "¿Qué deben llevar los del grupo?",
+              "options": [
+                "Agua, comida y buen calzado",
+                "Solo dinero para comer",
+                "Ropa de baño y toalla"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "Water, food and comfortable shoes."
+              }
+            }
+          ]
+        },
+        {
+          "text": "PISCINA MUNICIPAL\nEs obligatorio ducharse antes de entrar en el agua.\nNo se permite comer en la zona de la piscina.\nNiños menores de 10 años: siempre con un adulto.",
+          "questions": [
+            {
+              "n": 13,
+              "prompt": "¿Qué es obligatorio?",
+              "options": [
+                "Llevar gorro de baño",
+                "Ducharse antes de bañarse",
+                "Ir con un adulto siempre"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "You must shower before getting into the water."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "Lea lo que buscan estas personas y los textos. Relacione a cada persona con un texto (A–H). Hay dos textos que no tiene que usar.",
+      "title": "Ofertas de ocio",
+      "tasks": [
+        {
+          "options": [
+            {
+              "id": "A",
+              "title": "Mercado de segunda mano",
+              "text": "Todos los domingos en el parque. Libros, ropa, discos y muebles a buen precio."
+            },
+            {
+              "id": "B",
+              "title": "Yoga en la playa",
+              "text": "Sesiones al amanecer, de 7:00 a 8:00. Trae tu toalla. Gratis."
+            },
+            {
+              "id": "C",
+              "title": "Ruta en kayak",
+              "text": "Excursión de un día por el río. Incluye comida y monitor. No hace falta experiencia."
+            },
+            {
+              "id": "D",
+              "title": "Clases de pintura",
+              "text": "Taller de acuarela para principiantes. Grupos pequeños, los miércoles por la tarde."
+            },
+            {
+              "id": "E",
+              "title": "Club de lectura",
+              "text": "Nos reunimos una vez al mes en la biblioteca para hablar de un libro. Abierto a todos."
+            },
+            {
+              "id": "F",
+              "title": "Cine de verano",
+              "text": "Películas al aire libre en la plaza, de jueves a sábado, a las 22:00."
+            },
+            {
+              "id": "G",
+              "title": "Cocina para niños",
+              "text": "Taller de galletas y pizzas para niños de 6 a 10 años. Los padres pueden esperar en la cafetería."
+            },
+            {
+              "id": "H",
+              "title": "Visita nocturna al castillo",
+              "text": "Recorrido guiado de noche con actores. Duración: una hora y media. A partir de 12 años."
+            }
+          ],
+          "questions": [
+            {
+              "n": 14,
+              "prompt": "Raquel quiere hacer deporte muy temprano, antes de ir al trabajo, y no quiere gastar dinero.",
+              "answer": "B",
+              "explanation_es": {
+                "en": "Free yoga sessions at dawn."
+              }
+            },
+            {
+              "n": 15,
+              "prompt": "Óscar quiere hacer algo con su hijo de ocho años un sábado por la mañana mientras él descansa.",
+              "answer": "G",
+              "explanation_es": {
+                "en": "A cooking workshop for children; parents wait in the café."
+              }
+            },
+            {
+              "n": 16,
+              "prompt": "Alicia busca muebles baratos para su piso nuevo.",
+              "answer": "A",
+              "explanation_es": {
+                "en": "The second-hand market sells furniture at good prices."
+              }
+            },
+            {
+              "n": 17,
+              "prompt": "Marcos nunca ha hecho deporte de aventura, pero quiere probar algo en la naturaleza.",
+              "answer": "C",
+              "explanation_es": {
+                "en": "The kayak trip needs no experience."
+              }
+            },
+            {
+              "n": 18,
+              "prompt": "Lola quiere conocer gente a la que le gusten los libros.",
+              "answer": "E",
+              "explanation_es": {
+                "en": "The reading club meets monthly at the library."
+              }
+            },
+            {
+              "n": 19,
+              "prompt": "Julián quiere aprender a pintar entre semana.",
+              "answer": "D",
+              "explanation_es": {
+                "en": "Watercolour workshop on Wednesday afternoons."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq_cloze",
+      "rubric": "Lea el texto y elija la opción correcta (A, B o C) para cada hueco.",
+      "title": "Un fin de semana en Granada",
+      "text": "El fin de semana pasado {{20}} a Granada con mi novio. Salimos de Madrid el viernes por la tarde y llegamos {{21}} las diez de la noche. El sábado visitamos la Alhambra. Había mucha gente, pero {{22}} merece la pena. Por la tarde paseamos por el Albaicín, un barrio muy bonito {{23}} calles estrechas. El domingo comimos en un restaurante típico y {{24}} unas tapas buenísimas. Volvimos a casa muy cansados, pero muy contentos. Queremos volver en primavera, {{25}} hace menos calor.",
+      "gaps": [
+        {
+          "n": 20,
+          "options": [
+            "fui",
+            "voy",
+            "iba"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "A finished trip last weekend takes the preterite: «fui»."
+          }
+        },
+        {
+          "n": 21,
+          "options": [
+            "en",
+            "de",
+            "a"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "Time: «llegar a las diez»."
+          }
+        },
+        {
+          "n": 22,
+          "options": [
+            "nunca",
+            "tampoco",
+            "de verdad"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "«De verdad merece la pena»: it is really worth it."
+          }
+        },
+        {
+          "n": 23,
+          "options": [
+            "por",
+            "con",
+            "sin"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "A neighbourhood «con calles estrechas»."
+          }
+        },
+        {
+          "n": 24,
+          "options": [
+            "probamos",
+            "probaremos",
+            "probáis"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "Same subject and time as «comimos»: «probamos»."
+          }
+        },
+        {
+          "n": 25,
+          "options": [
+            "cuando",
+            "donde",
+            "como"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "Time clause: in spring, «cuando» it is less hot."
+          }
+        }
+      ]
+    }
+  ]
+}

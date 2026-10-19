@@ -1,0 +1,128 @@
+{
+  "id": "es-c2-exam-01-speaking",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "paper": "speaking",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "kind": "long_turn",
+      "about_es": {
+        "en": "Give a presentation (five to six minutes) on a topic, drawing on several short texts with different viewpoints that you have read beforehand."
+      },
+      "turns": [
+        {
+          "examiner": "Vamos a empezar. Ha leído tres textos breves sobre la conservación de las lenguas minoritarias. Haga una exposición de unos cinco minutos en la que presente las distintas posturas, las relacione y argumente la suya.",
+          "shown": "Texto 1: «Cada lengua que desaparece se lleva consigo una manera única de nombrar el mundo; protegerlas es un deber cultural.» · Texto 2: «Las lenguas nacen y mueren desde siempre; forzar su supervivencia con leyes es artificial y puede limitar oportunidades.» · Texto 3: «Ninguna lengua sobrevive en los museos: sobrevive si sus hablantes la necesitan para vivir, trabajar y soñar.»",
+          "prep_s": 60,
+          "answer_s": 180
+        }
+      ],
+      "useful_language": [
+        "Los textos abordan la cuestión desde perspectivas muy distintas…",
+        "Mientras que el primero sostiene…, el segundo…",
+        "El tercero introduce un matiz decisivo:…",
+        "A mi juicio, ambas posturas pecan de…",
+        "Lo que está en juego, en el fondo, es…",
+        "Cabe concluir que…"
+      ],
+      "tips_es": [
+        {
+          "en": "Relate the texts to each other instead of summarising them one by one."
+        },
+        {
+          "en": "Show a wide register: «no es menos cierto que», «cabe preguntarse», «a todas luces»."
+        },
+        {
+          "en": "Finish with a clear personal position."
+        }
+      ]
+    },
+    {
+      "kind": "discussion",
+      "about_es": {
+        "en": "The examiner challenges your presentation and asks you to defend, nuance or extend your arguments."
+      },
+      "turns": [
+        {
+          "examiner": "Usted ha defendido una postura intermedia. ¿No es eso una forma cómoda de no mojarse?",
+          "answer_s": 60
+        },
+        {
+          "examiner": "¿Qué papel deberían tener los medios de comunicación y las redes en la supervivencia de una lengua?",
+          "answer_s": 60
+        },
+        {
+          "examiner": "Imagine que un gobierno le pide consejo para salvar una lengua con pocos hablantes jóvenes. ¿Qué tres medidas le propondría?",
+          "answer_s": 75
+        }
+      ],
+      "useful_language": [
+        "Entiendo la objeción, pero…",
+        "No se trata de equidistancia, sino de…",
+        "Habría que distinguir entre…",
+        "Sin ánimo de ser exhaustivo, propondría…",
+        "En primer lugar… En segundo lugar…",
+        "Por último, y quizá lo más importante,…"
+      ],
+      "tips_es": [
+        {
+          "en": "Answer challenges calmly and with precise arguments."
+        },
+        {
+          "en": "Use complex structures: conditionals, concessives, passive and impersonal forms."
+        }
+      ]
+    },
+    {
+      "kind": "collaborative",
+      "about_es": {
+        "en": "An informal conversation with the examiner based on several press headlines: react, give your opinion and argue."
+      },
+      "turns": [
+        {
+          "examiner": "Por último, mire estos titulares de prensa. Coméntelos conmigo: ¿cuál le parece más preocupante?, ¿y más esperanzador?",
+          "shown": "Titulares: «Uno de cada tres jóvenes no ha leído un libro en el último año» · «Las ventas de libros en papel vuelven a crecer» · «Una aplicación promete resumir cualquier novela en cinco minutos» · «Las bibliotecas públicas baten récords de usuarios».",
+          "prompts": [
+            "Jóvenes y lectura",
+            "El regreso del papel",
+            "Novelas en cinco minutos",
+            "Récord en las bibliotecas"
+          ],
+          "prep_s": 30,
+          "answer_s": 90
+        },
+        {
+          "examiner": "A mí lo de resumir novelas me parece práctico: no hay tiempo para todo. ¿No está de acuerdo?",
+          "answer_s": 60
+        },
+        {
+          "examiner": "Entonces, ¿cree que la lectura está en crisis o no?",
+          "answer_s": 60
+        }
+      ],
+      "useful_language": [
+        "Lo que más me inquieta es…",
+        "Paradójicamente,…",
+        "No lo veo tan claro:…",
+        "Leer el resumen de una novela es como…",
+        "Yo hablaría más bien de una transformación que de una crisis",
+        "Dicho esto,…"
+      ],
+      "tips_es": [
+        {
+          "en": "Use irony and nuance naturally."
+        },
+        {
+          "en": "Disagree politely but firmly with the examiner."
+        }
+      ]
+    }
+  ]
+}

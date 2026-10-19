@@ -59,6 +59,19 @@ test('se elige en Ajustes y cada sección enseña solo ese idioma', async ({ pag
   // El acento británico/americano es solo del inglés.
   await expect(page.getByText('Acento')).toHaveCount(0);
 
+  // Exámenes: el simulacro de español tiene el formato del DELE, no el de Cambridge.
+  await page.goto('/examenes?nivel=A1');
+  await expect(page.getByRole('heading', { name: 'DELE A1' })).toBeVisible();
+  await expect(page.getByText('A1 (formato A2 Key)')).toHaveCount(0);
+  await page.getByRole('link', { name: /Comprensión de lectura/ }).click();
+  await expect(page).toHaveURL(/\/examenes\/es-a1-exam-01-reading$/);
+  await expect(
+    page.getByRole('heading', { name: 'DELE A1 · Comprensión de lectura' }),
+  ).toBeVisible();
+  await expect(
+    page.locator('[lang="es"]', { hasText: 'Tarea 1: correo o mensaje' }).first(),
+  ).toBeVisible();
+
   await page.goto('/escribir?nivel=A1');
   await expect(page.getByRole('link', { name: /Un mensaje a un compañero nuevo/ })).toBeVisible();
   await expect(page.getByRole('link', { name: /A friend is visiting your city/ })).toHaveCount(0);

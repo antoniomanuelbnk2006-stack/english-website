@@ -19,7 +19,7 @@ import { getProgressByLesson } from '@/features/lessons/server/queries';
 import { getUserLevel } from '@/features/lexicon/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
 import {
-  EXAM_FORMATS,
+  examFormat,
   EXAM_PAPERS,
   paperMarks,
   paperQuestions,
@@ -28,6 +28,7 @@ import {
 } from '@/lib/content/exam-formats';
 import { getExamTests } from '@/lib/content/exams';
 import { getT } from '@/lib/i18n/server';
+import { htmlLang } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
 import { getPracticeLanguage } from '@/features/profile/server/queries';
 
@@ -54,12 +55,18 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
 
   // Sin nivel en la URL se enseña el examen del nivel del usuario.
   const level = CEFR_LEVELS.find((l) => l === first(params.nivel)) ?? userLevel;
-  const format = EXAM_FORMATS[level];
-  const tests = getExamTests(await getPracticeLanguage()).filter((test) => test.level === level);
+  const language = await getPracticeLanguage();
+  const format = examFormat(level, language);
+  const lang = htmlLang(language);
+  const dele = format.system === 'dele';
+  const tests = getExamTests(language).filter((test) => test.level === level);
 
   return (
     <PageContainer>
-      <PageHeader title={t('nav.exams')} subtitle={t('exams.subtitle')} />
+      <PageHeader
+        title={t('nav.exams')}
+        subtitle={t(dele ? 'exams.subtitleDele' : 'exams.subtitle')}
+      />
 
       <nav aria-label={t('library.filtersLabel')} className="flex flex-wrap items-center gap-2">
         <span className="w-14 shrink-0 text-caption text-muted">{t('library.level')}</span>
@@ -85,13 +92,15 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
 
       <section aria-labelledby="exam-name" className="flex flex-col gap-6">
         <div className="flex flex-col gap-1">
-          <h2 id="exam-name" lang="en" className="text-heading-sm">
+          <h2 id="exam-name" lang={lang} className="text-heading-sm">
             {format.exam}
           </h2>
           <p className="text-body-sm text-muted">
-            {format.official
-              ? t('exams.officialNote', { pass: format.pass ?? 0 })
-              : t('exams.unofficialNote')}
+            {dele
+              ? t('exams.officialNoteDele')
+              : format.official
+                ? t('exams.officialNote', { pass: format.pass ?? 0 })
+                : t('exams.unofficialNote')}
           </p>
         </div>
 
@@ -122,7 +131,7 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
                         strokeWidth={1.5}
                       />
                       <div className="flex min-w-48 flex-1 flex-col gap-1.5">
-                        <span lang="en" className="font-medium">
+                        <span lang={lang} className="font-medium">
                           {paper.title}
                         </span>
                         <span className="text-body-sm text-muted">{t(PAPER_HINT[kind])}</span>
@@ -197,15 +206,17 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
               strokeWidth={1.5}
             />
             <div className="flex min-w-48 flex-1 flex-col gap-1.5">
-              <span lang="en" className="font-medium">
+              <span lang={lang} className="font-medium">
                 {format.writing.title}
               </span>
-              <span className="text-body-sm text-muted">{t('exams.writingElsewhere')}</span>
+              <span className="text-body-sm text-muted">
+                {t(dele ? 'exams.writingElsewhereDele' : 'exams.writingElsewhere')}
+              </span>
               <span className="flex flex-wrap gap-1.5">
                 <Chip className="tabular-nums">
                   {t('lesson.minutes', { n: format.writing.minutes })}
                 </Chip>
-                <Chip lang="en">{format.writing.tasks}</Chip>
+                <Chip lang={lang}>{format.writing.tasks}</Chip>
               </span>
             </div>
             <Link
@@ -218,7 +229,9 @@ export default async function ExamsPage({ searchParams }: PageProps<'/examenes'>
         ) : null}
       </section>
 
-      <p className="text-caption text-muted">{t('exams.disclaimer')}</p>
+      <p className="text-caption text-muted">
+        {t(dele ? 'exams.disclaimerDele' : 'exams.disclaimer')}
+      </p>
     </PageContainer>
   );
 }

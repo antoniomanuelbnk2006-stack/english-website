@@ -737,6 +737,28 @@ export const ja: Dictionary = {
       'ケンブリッジ英検（A2 Key、B1 Preliminary、B2 First、C1 Advanced、C2 Proficiency）の形式によるオリジナル問題です。Señal はケンブリッジとは関係ありません。',
   },
   exams: {
+    subtitleDele:
+      'セルバンテス文化センターのスペイン語試験 DELE の科目・課題・時間どおりの模擬試験。本番と同じく、1回の提出で行います。',
+    officialNoteDele: 'DELE の形式（目安）。各科目は25点で、ここでは60％で合格とします。',
+    disclaimerDele:
+      'DELE 試験（A1–C2）の構成（科目、課題、問題数、時間）に沿ったオリジナルの模擬試験です。課題ごとの問題数の配分は目安です。Señal はセルバンテス文化センターとは関係ありません。',
+    writingElsewhereDele:
+      '筆記表現・やり取りのテストは「書く」で、試験モードとカウントダウンを使って行います。',
+    sectionReadingDele: '読解',
+    sectionListeningDele: '聴解',
+    speakingNoVoiceDele:
+      'このブラウザーにはスペイン語の音声がありません。質問は文字で表示されます。',
+    critCoherenceHint: '考えを整理し、接続表現でつないで、分かりやすく話せていますか？',
+    critFluencyHint: '長い間を置かずに自然なペースで話し、楽に理解してもらえますか？',
+    critAccuracyHint:
+      'レベルの文法と語彙を、理解を妨げるような誤りなく、少ない誤りで使えていますか？',
+    critRangeHint: '言いたいことを繰り返しなしで表せる、多様な語彙や構文がありますか？',
+    critHolisticHint: '試験官の全体的な印象：レベルが求める言語で課題をこなせていますか？',
+    critCoherence: 'Coherencia',
+    critFluency: 'Fluidez',
+    critAccuracy: 'Corrección',
+    critRange: 'Alcance',
+    critHolistic: 'Calificación holística',
     subtitle:
       'ケンブリッジ試験の公式の形式、パート、時間による模擬試験。本番と同じく、1 回のテストで提出は 1 回です。',
     officialNote:

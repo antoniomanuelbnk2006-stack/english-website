@@ -1,0 +1,174 @@
+{
+  "id": "es-a2-exam-01-speaking",
+  "version": 1,
+  "status": "published",
+  "level": "A2",
+  "paper": "speaking",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "kind": "long_turn",
+      "about_es": {
+        "en": "A short monologue (two to three minutes) on a topic from your everyday life, prepared in advance."
+      },
+      "turns": [
+        {
+          "examiner": "Vamos a empezar. Hable durante dos o tres minutos sobre este tema: «Mis últimas vacaciones». Diga adónde fue, con quién, qué hizo, qué comió y qué le gustó más.",
+          "shown": "Tema: Mis últimas vacaciones",
+          "prompts": [
+            "¿Adónde y cuándo?",
+            "¿Con quién?",
+            "¿Qué hizo?",
+            "La comida",
+            "Lo mejor y lo peor"
+          ],
+          "prep_s": 60,
+          "answer_s": 150
+        }
+      ],
+      "useful_language": [
+        "El verano pasado fui a…",
+        "Fui con… y estuvimos… días.",
+        "Visitamos… / Nos bañamos en…",
+        "Comimos… y probé…",
+        "Lo que más me gustó fue…",
+        "Lo peor fue que…"
+      ],
+      "tips_es": [
+        {
+          "en": "Tell finished events in the preterite: «fui, visité, comimos»."
+        },
+        {
+          "en": "Use «era / había» to describe the place: «El hotel era pequeño»."
+        },
+        {
+          "en": "Link ideas with «primero, después, al final»."
+        }
+      ]
+    },
+    {
+      "kind": "long_turn",
+      "about_es": {
+        "en": "Describe a photo for one or two minutes: people, place, actions and what you imagine about them."
+      },
+      "turns": [
+        {
+          "examiner": "Ahora le doy una fotografía. Descríbala: quiénes son estas personas, dónde están, qué hacen y qué cree que van a hacer después.",
+          "visuals": [
+            {
+              "label": "Fotografía",
+              "description": "Una familia en una estación de tren. Un padre lleva una maleta grande y mira el panel de horarios. Una madre da un bocadillo a un niño pequeño. Una chica de unos quince años mira su móvil. Al fondo hay un tren azul y mucha gente."
+            }
+          ],
+          "prep_s": 30,
+          "answer_s": 90
+        }
+      ],
+      "useful_language": [
+        "En la foto hay…",
+        "Están en… / Parece que…",
+        "El padre lleva… y mira…",
+        "A la derecha / al fondo se ve…",
+        "Creo que van a…",
+        "Seguramente están…"
+      ],
+      "tips_es": [
+        {
+          "en": "Use «estar + gerundio» for actions: «está mirando»."
+        },
+        {
+          "en": "Use «ir a + infinitivo» for what they will do next."
+        },
+        {
+          "en": "Here the photo is described in words; in the exam it is a real photo."
+        }
+      ]
+    },
+    {
+      "kind": "discussion",
+      "about_es": {
+        "en": "A conversation with the examiner about your monologue and the photo topic."
+      },
+      "turns": [
+        {
+          "examiner": "¿Prefiere viajar en tren, en coche o en avión? ¿Por qué?",
+          "answer_s": 40
+        },
+        {
+          "examiner": "¿Con quién le gusta ir de vacaciones?",
+          "answer_s": 30
+        },
+        {
+          "examiner": "¿Qué hace normalmente en verano?",
+          "answer_s": 40
+        },
+        {
+          "examiner": "¿Adónde quiere viajar en el futuro?",
+          "answer_s": 40
+        },
+        {
+          "examiner": "¿Qué es lo más importante para usted en un viaje?",
+          "answer_s": 40
+        }
+      ],
+      "useful_language": [
+        "Prefiero… porque…",
+        "Normalmente…",
+        "Me gustaría ir a…",
+        "Para mí, lo más importante es…",
+        "Depende de…",
+        "Una vez…"
+      ],
+      "tips_es": [
+        {
+          "en": "Give a reason for every preference."
+        },
+        {
+          "en": "If you need time, say «Pues… a ver…»."
+        }
+      ]
+    },
+    {
+      "kind": "collaborative",
+      "about_es": {
+        "en": "A role-play of an everyday situation: you have to explain a problem, ask for things and reach a solution with the examiner."
+      },
+      "turns": [
+        {
+          "examiner": "Ahora imagine que está en un hotel y su habitación tiene un problema. Yo soy el recepcionista. Buenas noches, ¿en qué puedo ayudarle?",
+          "shown": "Situación: en la recepción de un hotel. El aire acondicionado de su habitación no funciona y hay mucho ruido de la calle. Explique el problema y pida otra solución.",
+          "answer_s": 45
+        },
+        {
+          "examiner": "Lo siento mucho. Ahora mismo el hotel está lleno. ¿Qué le parece si le enviamos un técnico mañana por la mañana?",
+          "answer_s": 40
+        },
+        {
+          "examiner": "Entiendo. Tenemos una habitación libre, pero es más pequeña y no tiene vistas. ¿La quiere?",
+          "answer_s": 40
+        }
+      ],
+      "useful_language": [
+        "Perdone, tengo un problema con…",
+        "No funciona… / Hay mucho ruido.",
+        "¿Podría cambiarme de habitación?",
+        "No me parece bien porque…",
+        "Vale, de acuerdo.",
+        "Muchas gracias por su ayuda."
+      ],
+      "tips_es": [
+        {
+          "en": "Use «¿podría…?» to ask politely."
+        },
+        {
+          "en": "Answer the examiner’s offer: accept it, reject it with a reason or make another proposal."
+        }
+      ]
+    }
+  ]
+}

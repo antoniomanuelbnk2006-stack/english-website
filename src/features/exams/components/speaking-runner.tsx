@@ -10,13 +10,20 @@ import { isPass, scaleBand, toScale, type ScaleBand } from '@/features/exams/lib
 import { saveSpeakingExam } from '@/features/exams/server/actions';
 import { formatClock } from '@/features/lessons/lib/summary';
 import { canSpeak, speakText } from '@/features/pronunciation/lib/speech';
-import type { ScaleTable, SpeakingCriterion, SpeakingKind } from '@/lib/content/exam-formats';
+import { useContentLang, useContentLanguage } from '@/components/content-language';
+import type {
+  ExamSystem,
+  ScaleTable,
+  SpeakingCriterion,
+  SpeakingKind,
+} from '@/lib/content/exam-formats';
 import type { SpeakingPart } from '@/lib/content/exam-schema';
 import type { TranslationKey } from '@/lib/i18n';
 import { useT } from '@/lib/i18n/client';
 import { cn } from '@/lib/utils';
 
 export interface SpeakingFormat {
+  system: ExamSystem;
   exam: string;
   minutes: number;
   parts: { kind: SpeakingKind; name: string; minutes: number }[];
@@ -47,6 +54,11 @@ const CRITERION: Record<SpeakingCriterion, { name: TranslationKey; hint: Transla
   pronunciation: { name: 'exams.critPronunciation', hint: 'exams.critPronunciationHint' },
   interactive_communication: { name: 'exams.critInteraction', hint: 'exams.critInteractionHint' },
   global_achievement: { name: 'exams.critGlobal', hint: 'exams.critGlobalHint' },
+  coherence: { name: 'exams.critCoherence', hint: 'exams.critCoherenceHint' },
+  fluency: { name: 'exams.critFluency', hint: 'exams.critFluencyHint' },
+  accuracy: { name: 'exams.critAccuracy', hint: 'exams.critAccuracyHint' },
+  range: { name: 'exams.critRange', hint: 'exams.critRangeHint' },
+  holistic: { name: 'exams.critHolistic', hint: 'exams.critHolisticHint' },
 };
 
 const BANDS = [0, 1, 2, 3, 4, 5];
@@ -72,6 +84,8 @@ export function SpeakingRunner({
   format: SpeakingFormat;
 }) {
   const t = useT();
+  const language = useContentLanguage();
+  const lang = useContentLang();
   const turns = useMemo(
     () => parts.flatMap((part, partIndex) => part.turns.map((turn) => ({ part: partIndex, turn }))),
     [parts],
@@ -168,7 +182,12 @@ export function SpeakingRunner({
           moved = true;
           enter(turnIndex, turn.prep_s ? 'prep' : 'answer');
         };
-        const spoken = speakText(turn.examiner, { accent: 'en-GB', rate: 0.95, onEnd: go });
+        const spoken = speakText(turn.examiner, {
+          accent: 'en-GB',
+          language,
+          rate: 0.95,
+          onEnd: go,
+        });
         // Sin voz, se deja tiempo para leer; con voz, un margen por si no avisa al terminar.
         timer = window.setTimeout(go, speechMs(turn.examiner) * (spoken ? 2 : 1));
       } else if (next === 'prep') {
@@ -226,7 +245,7 @@ export function SpeakingRunner({
       stream?.getTracks().forEach((track) => track.stop());
       urls.forEach((url) => URL.revokeObjectURL(url));
     };
-  }, [turns]);
+  }, [turns, language]);
 
   useEffect(() => {
     if (stage !== 'running') return;
@@ -287,7 +306,11 @@ export function SpeakingRunner({
           ).map((key) => (
             <li key={key}>{t(key)}</li>
           ))}
-          {speaks ? null : <li className="text-warning">{t('exams.speakingNoVoice')}</li>}
+          {speaks ? null : (
+            <li className="text-warning">
+              {t(format.system === 'dele' ? 'exams.speakingNoVoiceDele' : 'exams.speakingNoVoice')}
+            </li>
+          )}
         </ul>
         <ol className="flex flex-col divide-y divide-border rounded-card bg-surface-2">
           {format.parts.map((part, partIndex) => (
@@ -296,7 +319,7 @@ export function SpeakingRunner({
                 <span className="tabular-nums w-16 shrink-0 text-muted">
                   {t('exams.part', { n: partIndex + 1 })}
                 </span>
-                <span lang="en" className="min-w-0 flex-1 font-medium">
+                <span lang={lang} className="min-w-0 flex-1 font-medium">
                   {part.name}
                 </span>
                 <span className="tabular-nums text-caption text-muted">
@@ -325,7 +348,7 @@ export function SpeakingRunner({
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
           <h2 className="text-subheading">
             {t('exams.part', { n: part + 1 })}
-            <span lang="en" className="ml-2 font-normal text-muted">
+            <span lang={lang} className="ml-2 font-normal text-muted">
               {format.parts[part]?.name}
             </span>
           </h2>
@@ -371,7 +394,7 @@ export function SpeakingRunner({
           </p>
 
           {showText ? (
-            <p lang="en" className="prose-reading">
+            <p lang={lang} className="prose-reading">
               {turn.examiner}
             </p>
           ) : (
@@ -383,7 +406,7 @@ export function SpeakingRunner({
 
           {turn.shown ? (
             <p
-              lang="en"
+              lang={lang}
               className="rounded-card border border-accent bg-surface-2 px-4 py-3 font-medium"
             >
               {turn.shown}
@@ -396,10 +419,10 @@ export function SpeakingRunner({
                   key={visual.label}
                   className="flex flex-col gap-1 rounded-card bg-surface-2 px-4 py-3"
                 >
-                  <span lang="en" className="tabular-nums text-caption text-accent-text">
+                  <span lang={lang} className="tabular-nums text-caption text-accent-text">
                     {visual.label}
                   </span>
-                  <span lang="en">{visual.description}</span>
+                  <span lang={lang}>{visual.description}</span>
                 </li>
               ))}
             </ul>
@@ -407,7 +430,7 @@ export function SpeakingRunner({
           {turn.prompts ? (
             <ul className="flex flex-wrap gap-2">
               {turn.prompts.map((prompt) => (
-                <li key={prompt} lang="en" className="tag min-h-8 px-3 text-body-sm text-text">
+                <li key={prompt} lang={lang} className="tag min-h-8 px-3 text-body-sm text-text">
                   {prompt}
                 </li>
               ))}
@@ -464,7 +487,7 @@ export function SpeakingRunner({
           <Panel key={partIndex} className="flex flex-col gap-4">
             <h3 className="font-medium">
               {t('exams.part', { n: partIndex + 1 })}
-              <span lang="en" className="ml-2 font-normal text-muted">
+              <span lang={lang} className="ml-2 font-normal text-muted">
                 {format.parts[partIndex]?.name}
               </span>
             </h3>
@@ -472,9 +495,9 @@ export function SpeakingRunner({
               {turns.map(({ part: owner, turn }, turnIndex) =>
                 owner === partIndex ? (
                   <li key={turnIndex} className="flex flex-col gap-2">
-                    <p lang="en">{turn.examiner}</p>
+                    <p lang={lang}>{turn.examiner}</p>
                     {turn.shown ? (
-                      <p lang="en" className="text-body-sm font-medium">
+                      <p lang={lang} className="text-body-sm font-medium">
                         {turn.shown}
                       </p>
                     ) : null}
@@ -496,7 +519,7 @@ export function SpeakingRunner({
               <h4 className="text-body-sm font-medium text-muted">{t('exams.usefulLanguage')}</h4>
               <ul className="flex flex-wrap gap-2">
                 {part.useful_language.map((phrase) => (
-                  <li key={phrase} lang="en" className="tag min-h-8 px-3 text-body-sm text-text">
+                  <li key={phrase} lang={lang} className="tag min-h-8 px-3 text-body-sm text-text">
                     {phrase}
                   </li>
                 ))}

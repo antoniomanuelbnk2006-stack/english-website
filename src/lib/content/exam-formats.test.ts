@@ -1,7 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import {
+  DELE_FORMATS,
   EXAM_FORMATS,
   EXAM_LEVELS,
+  examFormat,
   paperMarks,
   paperQuestions,
   partMarks,
@@ -90,5 +92,38 @@ describe('formato oficial de los exámenes', () => {
     expect(EXAM_FORMATS.A1.pass).toBeNull();
     expect(EXAM_FORMATS.A1.reading.parts).toBe(EXAM_FORMATS.A2.reading.parts);
     expect(EXAM_LEVELS.filter((level) => !EXAM_FORMATS[level].official)).toEqual(['A1']);
+  });
+});
+
+describe('formato del DELE (español)', () => {
+  it('cada idioma tiene su examen', () => {
+    expect(examFormat('B2', 'en').exam).toBe('B2 First');
+    expect(examFormat('B2', 'es').exam).toBe('DELE B2');
+    expect(EXAM_LEVELS.every((level) => DELE_FORMATS[level].system === 'dele')).toBe(true);
+    expect(EXAM_LEVELS.every((level) => EXAM_FORMATS[level].system === 'cambridge')).toBe(true);
+  });
+
+  it('tiene los ítems de cada prueba del DELE', () => {
+    expect(EXAM_LEVELS.map((level) => paperQuestions(DELE_FORMATS[level].reading.parts))).toEqual([
+      25, 25, 30, 36, 40, 27,
+    ]);
+    expect(
+      EXAM_LEVELS.map((level) => paperQuestions(DELE_FORMATS[level].listening.parts)),
+    ).toEqual([25, 25, 30, 30, 30, 18]);
+    expect(EXAM_LEVELS.map((level) => DELE_FORMATS[level].reading.minutes)).toEqual([
+      45, 60, 70, 70, 90, 60,
+    ]);
+  });
+
+  it('no tiene escala: cada prueba se aprueba con el 60 % y el oral vale 25 puntos', () => {
+    for (const level of EXAM_LEVELS) {
+      const format = DELE_FORMATS[level];
+      expect(format.pass).toBeNull();
+      expect(format.reading.scale).toEqual({});
+      expect(format.listening.scale).toEqual({});
+      expect(format.speaking.scale).toBeNull();
+      expect(speakingMarks(format)).toBe(25);
+      expect(format.writing).not.toBeNull();
+    }
   });
 });

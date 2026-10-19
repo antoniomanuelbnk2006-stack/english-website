@@ -1,0 +1,147 @@
+{
+  "id": "es-b2-exam-01-speaking",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "paper": "speaking",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "kind": "long_turn",
+      "about_es": {
+        "en": "You are given a problem and several proposals to solve it. Talk for three or four minutes about the advantages and disadvantages of each, then answer the examiner’s questions."
+      },
+      "turns": [
+        {
+          "examiner": "Vamos a empezar. Le presento una situación: en muchas ciudades, los jóvenes no pueden pagar un alquiler y se independizan cada vez más tarde. Aquí tiene algunas propuestas para solucionarlo. Hable de ellas: ¿cuáles le parecen mejores y peores?, ¿por qué?, ¿añadiría alguna?",
+          "shown": "Problema: los jóvenes no pueden independizarse por el precio de la vivienda.",
+          "prompts": [
+            "Limitar el precio de los alquileres",
+            "Construir viviendas públicas de alquiler",
+            "Dar ayudas directas a los jóvenes",
+            "Fomentar que los jóvenes compartan piso con personas mayores",
+            "Poner impuestos a los pisos vacíos"
+          ],
+          "prep_s": 60,
+          "answer_s": 180
+        },
+        {
+          "examiner": "¿Y en su país? ¿Es fácil para un joven independizarse?",
+          "answer_s": 60
+        },
+        {
+          "examiner": "Si usted pudiera aplicar solo una de estas medidas, ¿cuál elegiría?",
+          "answer_s": 50
+        }
+      ],
+      "useful_language": [
+        "A mi modo de ver…",
+        "La propuesta de… me parece acertada porque…",
+        "Lo malo de… es que…",
+        "Por un lado… pero, por otro…",
+        "Yo añadiría que…",
+        "Siempre y cuando…"
+      ],
+      "tips_es": [
+        {
+          "en": "Evaluate every proposal, not only your favourite."
+        },
+        {
+          "en": "Use the subjunctive after opinions in the negative: «No creo que funcione»."
+        },
+        {
+          "en": "Use the conditional to imagine: «Si yo fuera alcalde, construiría…»."
+        }
+      ]
+    },
+    {
+      "kind": "collaborative",
+      "about_es": {
+        "en": "Imagine a situation from a photo and talk about it with the examiner, who will react and ask you to imagine more."
+      },
+      "turns": [
+        {
+          "examiner": "Ahora mire esta fotografía. Imagine la situación: ¿quiénes son?, ¿qué ha pasado?, ¿qué cree que van a hacer?",
+          "visuals": [
+            {
+              "label": "Fotografía",
+              "description": "Una mujer joven y un hombre mayor están sentados en el suelo de un aeropuerto, rodeados de maletas. Detrás, una pantalla muestra muchos vuelos «cancelados». La mujer habla por teléfono con cara de preocupación; el hombre come un bocadillo tranquilamente y sonríe."
+            }
+          ],
+          "prep_s": 30,
+          "answer_s": 120
+        },
+        {
+          "examiner": "¿Le ha pasado alguna vez algo parecido en un viaje? ¿Qué hizo?",
+          "answer_s": 60
+        },
+        {
+          "examiner": "¿Cree que es mejor reaccionar como la mujer o como el hombre? ¿Por qué?",
+          "answer_s": 60
+        }
+      ],
+      "useful_language": [
+        "Parece que…",
+        "Me imagino que les han cancelado…",
+        "Estará llamando a…",
+        "Seguramente él ya…",
+        "A mí me pasó una vez que…",
+        "Yo, en su lugar, …"
+      ],
+      "tips_es": [
+        {
+          "en": "Use future and conditional of probability: «Estarán esperando», «Serían las tres»."
+        },
+        {
+          "en": "React to the examiner as in a real conversation."
+        },
+        {
+          "en": "Here the photo is described in words; in the exam it is a real photo."
+        }
+      ]
+    },
+    {
+      "kind": "discussion",
+      "about_es": {
+        "en": "Comment on the results of a survey: compare them with your own experience and give your opinion."
+      },
+      "turns": [
+        {
+          "examiner": "Por último, le enseño los resultados de una encuesta sobre los hábitos de lectura en España. Coméntelos: ¿qué le llama la atención?, ¿coinciden con su experiencia?",
+          "shown": "Encuesta: ¿Con qué frecuencia lee libros? Todos los días: 30 % · Una o dos veces por semana: 20 % · Alguna vez al mes: 15 % · Casi nunca o nunca: 35 %. Motivo principal para no leer: falta de tiempo (48 %).",
+          "prep_s": 30,
+          "answer_s": 120
+        },
+        {
+          "examiner": "¿Usted lee más en papel o en pantalla?",
+          "answer_s": 45
+        },
+        {
+          "examiner": "¿Qué se podría hacer para que la gente leyera más?",
+          "answer_s": 60
+        }
+      ],
+      "useful_language": [
+        "Me llama la atención que…",
+        "Es curioso que casi un… %…",
+        "Esperaba que…",
+        "En mi caso…",
+        "Coincido con la mayoría en que…",
+        "Se podría…"
+      ],
+      "tips_es": [
+        {
+          "en": "After «Me llama la atención que» use the subjunctive."
+        },
+        {
+          "en": "Compare figures: «más de un tercio», «casi la mitad»."
+        }
+      ]
+    }
+  ]
+}

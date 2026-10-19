@@ -11,7 +11,7 @@ import {
 import { bandCenter, DEFAULT_RATING } from '@/features/level/lib/bands';
 import { fail, ok, type ActionResult } from '@/lib/actions';
 import { requireUser } from '@/lib/auth';
-import { EXAM_FORMATS, SPEAKING_CRITERIA, type ExamSection } from '@/lib/content/exam-formats';
+import { examFormat, SPEAKING_CRITERIA, type ExamSection } from '@/lib/content/exam-formats';
 import { ExamPaperId } from '@/lib/content/exam-schema';
 import { findExamPaper } from '@/lib/content/exams';
 import type { Json } from '@/lib/supabase/database.types';
@@ -157,7 +157,10 @@ export async function saveSpeakingExam(
   if (!paper || paper.paper !== 'speaking') return fail('not_found');
   if (paper.version !== version) return fail('conflict');
 
-  const result = gradeSpeaking(EXAM_FORMATS[paper.level], parsed.data.ratings as SpeakingRatings);
+  const result = gradeSpeaking(
+    examFormat(paper.level, languageOfId(paper.id)),
+    parsed.data.ratings as SpeakingRatings,
+  );
   if (!result) return fail('invalid_input');
 
   const language = languageOfId(paper.id);

@@ -22,6 +22,6 @@ Quien practicaba español veía vacías las secciones de Pronunciación y Use of
 
 ## Consecuencias
 
-- Los **Exámenes** siguen sin español: su formato, sus notas y su conversión a escala son de Cambridge, y un simulacro de español exigiría decidir antes qué modelo imitar (por ejemplo, DELE).
+- Los **Exámenes** siguen sin español: su formato, sus notas y su conversión a escala son de Cambridge, y un simulacro de español exigiría decidir antes qué modelo imitar (por ejemplo, DELE). Resuelto en el [ADR-0040](0040-examenes-de-espanol.md): formato del DELE.
 - La calidad del reconocimiento en español depende del navegador (Chrome y Edge); no se prueba en los tests, que no tienen micrófono.
 - La entrada del menú sigue llamándose «Use of English» aunque el ejercicio sea de español.

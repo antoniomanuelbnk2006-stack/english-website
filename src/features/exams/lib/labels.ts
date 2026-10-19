@@ -1,4 +1,4 @@
-import type { ExamPaperKind, ExamSection } from '@/lib/content/exam-formats';
+import type { ExamPaperKind, ExamSection, ExamSystem } from '@/lib/content/exam-formats';
 import type { TranslationKey } from '@/lib/i18n';
 import type { ScaleBand } from './scale';
 
@@ -18,6 +18,13 @@ export const SECTION_LABEL: Record<ExamSection, TranslationKey> = {
   listening: 'exams.sectionListening',
   writing: 'exams.sectionWriting',
 };
+
+/** Las secciones del DELE llevan su nombre en el idioma de la interfaz; las de Cambridge, en inglés. */
+export function sectionLabel(section: ExamSection, system: ExamSystem): TranslationKey {
+  if (system === 'dele' && section === 'reading') return 'exams.sectionReadingDele';
+  if (system === 'dele' && section === 'listening') return 'exams.sectionListeningDele';
+  return SECTION_LABEL[section];
+}
 
 export const PAPER_HINT: Record<ExamPaperKind, TranslationKey> = {
   reading: 'exams.paperReadingHint',

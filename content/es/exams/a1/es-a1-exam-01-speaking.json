@@ -1,0 +1,182 @@
+{
+  "id": "es-a1-exam-01-speaking",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "paper": "speaking",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "kind": "long_turn",
+      "about_es": {
+        "en": "Introduce yourself for one or two minutes: name, age, nationality, where you live, studies or work, family, hobbies."
+      },
+      "turns": [
+        {
+          "examiner": "Hola, buenos días. Vamos a empezar. Primero, preséntese, por favor. Hable de usted: su nombre, su edad, de dónde es, dónde vive, su trabajo o sus estudios, su familia y lo que le gusta hacer.",
+          "prompts": [
+            "nombre y edad",
+            "nacionalidad y ciudad",
+            "trabajo o estudios",
+            "familia",
+            "gustos y aficiones"
+          ],
+          "prep_s": 30,
+          "answer_s": 90
+        }
+      ],
+      "useful_language": [
+        "Me llamo… y tengo… años.",
+        "Soy de… y vivo en…",
+        "Trabajo en… / Estudio…",
+        "Tengo un hermano / dos hermanas.",
+        "Me gusta mucho… / No me gusta…",
+        "Los fines de semana…"
+      ],
+      "tips_es": [
+        {
+          "en": "Use full sentences, not single words: «Soy de Italia», not just «Italia»."
+        },
+        {
+          "en": "Cover every point on the card in order: it helps you not to forget anything."
+        },
+        {
+          "en": "Speak slowly and clearly; at A1 the examiner values that you can be understood."
+        }
+      ]
+    },
+    {
+      "kind": "long_turn",
+      "about_es": {
+        "en": "Talk for two or three minutes about one topic from a list. In the real exam you choose one of two topics and prepare it beforehand."
+      },
+      "turns": [
+        {
+          "examiner": "Ahora va a hablar de un tema: «Mi casa». Hable de cómo es su casa, cuántas habitaciones tiene, qué hay en su habitación y qué parte de la casa le gusta más.",
+          "shown": "Tema: Mi casa",
+          "prompts": [
+            "¿Dónde está?",
+            "¿Cómo es?",
+            "Las habitaciones",
+            "Mi habitación",
+            "Lo que más me gusta"
+          ],
+          "prep_s": 60,
+          "answer_s": 120
+        }
+      ],
+      "useful_language": [
+        "Vivo en un piso / una casa…",
+        "Está en el centro / cerca de…",
+        "Tiene tres habitaciones, un baño y…",
+        "En mi habitación hay…",
+        "Mi parte favorita es… porque…",
+        "Es pequeño, pero muy bonito."
+      ],
+      "tips_es": [
+        {
+          "en": "Use «hay» for what there is and «está» for where something is."
+        },
+        {
+          "en": "Add simple reasons with «porque»."
+        },
+        {
+          "en": "If you run out of ideas, describe colours, sizes and furniture."
+        }
+      ]
+    },
+    {
+      "kind": "discussion",
+      "about_es": {
+        "en": "The examiner asks you simple questions about the topic you have just presented."
+      },
+      "turns": [
+        {
+          "examiner": "¿Con quién vive usted?",
+          "answer_s": 30
+        },
+        {
+          "examiner": "¿Qué hace en casa los fines de semana?",
+          "answer_s": 30
+        },
+        {
+          "examiner": "¿Cómo es su barrio? ¿Hay tiendas y parques?",
+          "answer_s": 40
+        },
+        {
+          "examiner": "¿Le gusta cocinar? ¿Qué cocina normalmente?",
+          "answer_s": 30
+        },
+        {
+          "examiner": "¿Cómo es la casa de sus sueños?",
+          "answer_s": 40
+        }
+      ],
+      "useful_language": [
+        "Vivo con…",
+        "Normalmente…",
+        "En mi barrio hay…",
+        "Sí, me gusta / No, no me gusta mucho.",
+        "Mi casa ideal es…",
+        "Quiero una casa con…"
+      ],
+      "tips_es": [
+        {
+          "en": "Answer and then add one more detail: «Sí, me gusta. Cocino pasta los domingos»."
+        },
+        {
+          "en": "If you do not understand, ask: «¿Puede repetir, por favor?»."
+        }
+      ]
+    },
+    {
+      "kind": "collaborative",
+      "about_es": {
+        "en": "Short role-plays: the examiner is a shop assistant, a waiter or a stranger and you have to ask for or give simple information."
+      },
+      "turns": [
+        {
+          "examiner": "Ahora vamos a hacer unos diálogos. Usted está en una cafetería y yo soy el camarero. Hola, buenas tardes. ¿Qué desea?",
+          "shown": "Situación: en una cafetería. Pida algo para beber y para comer.",
+          "answer_s": 30
+        },
+        {
+          "examiner": "Ahora está en una tienda de ropa. Yo soy la dependienta. Hola, ¿puedo ayudarle?",
+          "shown": "Situación: en una tienda. Quiere comprar una camiseta. Pregunte por la talla y el precio.",
+          "answer_s": 30
+        },
+        {
+          "examiner": "Ahora está en la calle y busca la estación de tren. Yo soy una persona de la ciudad. ¿Sí? Dígame.",
+          "shown": "Situación: en la calle. Pregunte cómo llegar a la estación.",
+          "answer_s": 30
+        },
+        {
+          "examiner": "Por último, llama por teléfono a un amigo para quedar el fin de semana. Yo soy su amigo. ¿Diga?",
+          "shown": "Situación: por teléfono. Proponga un plan, un día y una hora.",
+          "answer_s": 40
+        }
+      ],
+      "useful_language": [
+        "Quería… / ¿Me pone…, por favor?",
+        "¿Cuánto cuesta?",
+        "¿Tiene la talla M?",
+        "Perdone, ¿dónde está…?",
+        "¿Quedamos el sábado a las…?",
+        "¿Te parece bien?"
+      ],
+      "tips_es": [
+        {
+          "en": "Greet and say thank you: politeness counts."
+        },
+        {
+          "en": "Use «quería» or «¿me pone…?» to ask for things in a shop or café."
+        }
+      ]
+    }
+  ]
+}

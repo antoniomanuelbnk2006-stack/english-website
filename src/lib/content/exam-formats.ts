@@ -1,7 +1,12 @@
-// Formato oficial de los exámenes de Cambridge por nivel (docs/adr/0017-simulacros-de-examen.md):
-// pruebas, partes, número de preguntas, puntos y tiempo. Sale de la página «Exam format» de cada
-// examen en cambridgeenglish.org; la conversión a la escala Cambridge, de su guía «Converting
-// practice test scores to Cambridge English Scale scores» (2023). Datos puros, sin contenido.
+// Formato de los exámenes por idioma y nivel: pruebas, partes, número de preguntas, puntos y
+// tiempo. Datos puros, sin contenido.
+// - Inglés: los de Cambridge (docs/adr/0017-simulacros-de-examen.md), de la página «Exam format»
+//   de cada examen en cambridgeenglish.org; la conversión a la escala Cambridge, de su guía
+//   «Converting practice test scores to Cambridge English Scale scores» (2023).
+// - Español: los del DELE del Instituto Cervantes (docs/adr/0040-examenes-de-espanol.md), con la
+//   estructura publicada de cada nivel (pruebas, tareas, ítems y tiempos). El reparto exacto de
+//   ítems por tarea es orientativo.
+import type { PracticeLanguage } from './language';
 
 export const EXAM_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
 export type ExamLevel = (typeof EXAM_LEVELS)[number];
@@ -56,6 +61,7 @@ export const SPEAKING_KINDS = ['interview', 'long_turn', 'collaborative', 'discu
 export type SpeakingKind = (typeof SPEAKING_KINDS)[number];
 
 export const SPEAKING_CRITERIA = [
+  // Cambridge
   'grammar_vocabulary',
   'grammatical_resource',
   'lexical_resource',
@@ -63,16 +69,26 @@ export const SPEAKING_CRITERIA = [
   'pronunciation',
   'interactive_communication',
   'global_achievement',
+  // DELE: escala analítica (coherencia, fluidez, corrección, alcance) y holística
+  'coherence',
+  'fluency',
+  'accuracy',
+  'range',
+  'holistic',
 ] as const;
 export type SpeakingCriterion = (typeof SPEAKING_CRITERIA)[number];
 
+/** De quién es el formato: cambia los textos de la pantalla y cómo se aprueba. */
+export type ExamSystem = 'cambridge' | 'dele';
+
 export interface ExamFormat {
+  system: ExamSystem;
   level: ExamLevel;
-  /** Nombre del examen: «B2 First». */
+  /** Nombre del examen: «B2 First», «DELE B2». */
   exam: string;
-  /** `false` en A1: Cambridge no tiene examen de A1 para adultos (se usa el formato del A2 Key). */
+  /** `false` en A1 de inglés: Cambridge no tiene examen de A1 para adultos (formato del A2 Key). */
   official: boolean;
-  /** Nota de la escala Cambridge con la que se aprueba; `null` si el examen no tiene escala. */
+  /** Nota de la escala Cambridge con la que se aprueba; `null` si no hay escala (se aprueba con el 60 %). */
   pass: number | null;
   reading: {
     /** Nombre oficial de la prueba. */
@@ -145,8 +161,10 @@ const HIGHER_CRITERIA = [
   { key: 'global_achievement', weight: 5 },
 ] as const;
 
+/** Los exámenes de Cambridge (inglés). */
 export const EXAM_FORMATS: Record<ExamLevel, ExamFormat> = {
   A1: {
+    system: 'cambridge',
     level: 'A1',
     exam: 'A1 (formato A2 Key)',
     official: false,
@@ -157,6 +175,7 @@ export const EXAM_FORMATS: Record<ExamLevel, ExamFormat> = {
     writing: null,
   },
   A2: {
+    system: 'cambridge',
     level: 'A2',
     exam: 'A2 Key',
     official: true,
@@ -181,6 +200,7 @@ export const EXAM_FORMATS: Record<ExamLevel, ExamFormat> = {
     writing: null,
   },
   B1: {
+    system: 'cambridge',
     level: 'B1',
     exam: 'B1 Preliminary',
     official: true,
@@ -231,6 +251,7 @@ export const EXAM_FORMATS: Record<ExamLevel, ExamFormat> = {
     writing: { title: 'Writing', minutes: 45, tasks: 'Email + article or story (about 100 words each)' },
   },
   B2: {
+    system: 'cambridge',
     level: 'B2',
     exam: 'B2 First',
     official: true,
@@ -285,6 +306,7 @@ export const EXAM_FORMATS: Record<ExamLevel, ExamFormat> = {
     writing: { title: 'Writing', minutes: 80, tasks: 'Essay + one of article, email/letter, report or review (140–190 words each)' },
   },
   C1: {
+    system: 'cambridge',
     level: 'C1',
     exam: 'C1 Advanced',
     official: true,
@@ -334,6 +356,7 @@ export const EXAM_FORMATS: Record<ExamLevel, ExamFormat> = {
     writing: { title: 'Writing', minutes: 90, tasks: 'Essay + one of letter/email, proposal, report or review (220–260 words each)' },
   },
   C2: {
+    system: 'cambridge',
     level: 'C2',
     exam: 'C2 Proficiency',
     official: true,
@@ -399,4 +422,262 @@ export function paperMarks(parts: readonly PartFormat[]): number {
 /** Puntos máximos de la prueba de Speaking con los pesos del examen (60 en B2 First). */
 export function speakingMarks(format: ExamFormat): number {
   return format.speaking.criteria.reduce((sum, criterion) => sum + criterion.weight * 5, 0);
+}
+
+// ───────────── DELE (español) ─────────────
+
+const DELE_CRITERIA = [
+  { key: 'coherence', weight: 1 },
+  { key: 'fluency', weight: 1 },
+  { key: 'accuracy', weight: 1 },
+  { key: 'range', weight: 1 },
+  { key: 'holistic', weight: 1 },
+] as const;
+
+/** El DELE puntúa cada prueba sobre 25 y no tiene tabla de conversión: se aprueba con el 60 %. */
+const deleFormat = (
+  level: ExamLevel,
+  reading: ExamFormat['reading'],
+  listening: ExamFormat['listening'],
+  speaking: Pick<ExamFormat['speaking'], 'minutes' | 'parts'>,
+  writing: NonNullable<ExamFormat['writing']>,
+): ExamFormat => ({
+  system: 'dele',
+  level,
+  exam: `DELE ${level}`,
+  official: true,
+  pass: null,
+  reading,
+  listening,
+  speaking: { title: 'Expresión e interacción orales', ...speaking, criteria: DELE_CRITERIA, scale: null },
+  writing,
+});
+
+const READING = 'Comprensión de lectura';
+const LISTENING = 'Comprensión auditiva';
+const WRITING = 'Expresión e interacción escritas';
+
+/** Los exámenes DELE del Instituto Cervantes (español). */
+export const DELE_FORMATS: Record<ExamLevel, ExamFormat> = {
+  A1: deleFormat(
+    'A1',
+    {
+      title: READING,
+      minutes: 45,
+      parts: [
+        { type: 'mcq', name: 'Tarea 1: correo o mensaje', questions: 5, marksEach: 1, section: 'reading', options: 3 },
+        { type: 'mcq', name: 'Tarea 2: textos breves', questions: 6, marksEach: 1, section: 'reading', options: 3 },
+        { type: 'matching', name: 'Tarea 3: anuncios', questions: 6, marksEach: 1, section: 'reading', choices: 8 },
+        { type: 'mcq', name: 'Tarea 4: texto informativo', questions: 8, marksEach: 1, section: 'reading', options: 3 },
+      ],
+      scale: {},
+    },
+    {
+      title: LISTENING,
+      minutes: 20,
+      reviewS: 60,
+      parts: [
+        { type: 'mcq', name: 'Tarea 1: diálogos breves', questions: 5, marksEach: 1, section: 'listening', options: 3, groupPrepS: 8 },
+        { type: 'mcq', name: 'Tarea 2: mensajes y anuncios', questions: 5, marksEach: 1, section: 'listening', options: 3, groupPrepS: 8 },
+        { type: 'matching', name: 'Tarea 3: conversación', questions: 6, marksEach: 1, section: 'listening', choices: 8, prepS: 20 },
+        { type: 'completion', name: 'Tarea 4: completar notas', questions: 9, marksEach: 1, section: 'listening', prepS: 20 },
+      ],
+      scale: {},
+    },
+    {
+      minutes: 15,
+      parts: [
+        { kind: 'long_turn', name: 'Tarea 1: presentación personal', minutes: 2 },
+        { kind: 'long_turn', name: 'Tarea 2: exposición de un tema', minutes: 3 },
+        { kind: 'discussion', name: 'Tarea 3: conversación', minutes: 4 },
+        { kind: 'collaborative', name: 'Tarea 4: diálogos breves', minutes: 4 },
+      ],
+    },
+    { title: WRITING, minutes: 25, tasks: '2 tareas: un formulario y un texto breve (20–30 palabras)' },
+  ),
+  A2: deleFormat(
+    'A2',
+    {
+      title: READING,
+      minutes: 60,
+      parts: [
+        { type: 'mcq', name: 'Tarea 1: texto', questions: 5, marksEach: 1, section: 'reading', options: 3 },
+        { type: 'mcq', name: 'Tarea 2: textos breves', questions: 8, marksEach: 1, section: 'reading', options: 3 },
+        { type: 'matching', name: 'Tarea 3: relacionar personas y textos', questions: 6, marksEach: 1, section: 'reading', choices: 8 },
+        { type: 'mcq_cloze', name: 'Tarea 4: texto con huecos', questions: 6, marksEach: 1, section: 'reading', options: 3 },
+      ],
+      scale: {},
+    },
+    {
+      title: LISTENING,
+      minutes: 35,
+      reviewS: 60,
+      parts: [
+        { type: 'mcq', name: 'Tarea 1: anuncios y mensajes', questions: 6, marksEach: 1, section: 'listening', options: 3, groupPrepS: 8 },
+        { type: 'mcq', name: 'Tarea 2: programa de radio', questions: 6, marksEach: 1, section: 'listening', options: 3, prepS: 30 },
+        { type: 'matching', name: 'Tarea 3: conversación', questions: 6, marksEach: 1, section: 'listening', choices: 8, prepS: 20 },
+        { type: 'completion', name: 'Tarea 4: completar notas', questions: 7, marksEach: 1, section: 'listening', prepS: 20 },
+      ],
+      scale: {},
+    },
+    {
+      minutes: 12,
+      parts: [
+        { kind: 'long_turn', name: 'Tarea 1: monólogo', minutes: 3 },
+        { kind: 'long_turn', name: 'Tarea 2: descripción de una fotografía', minutes: 3 },
+        { kind: 'discussion', name: 'Tarea 3: conversación', minutes: 3 },
+        { kind: 'collaborative', name: 'Tarea 4: diálogo en una situación', minutes: 3 },
+      ],
+    },
+    { title: WRITING, minutes: 45, tasks: '2 tareas: un correo (60–70 palabras) y un texto breve (70–80 palabras)' },
+  ),
+  B1: deleFormat(
+    'B1',
+    {
+      title: READING,
+      minutes: 70,
+      parts: [
+        { type: 'matching', name: 'Tarea 1: personas y textos breves', questions: 6, marksEach: 1, section: 'reading', choices: 8 },
+        { type: 'mcq', name: 'Tarea 2: texto', questions: 6, marksEach: 1, section: 'reading', options: 3 },
+        { type: 'matching', name: 'Tarea 3: tres textos', questions: 6, marksEach: 1, section: 'reading', choices: 3 },
+        { type: 'gapped_text', name: 'Tarea 4: fragmentos', questions: 6, marksEach: 1, section: 'reading', choices: 8 },
+        { type: 'mcq_cloze', name: 'Tarea 5: texto con huecos', questions: 6, marksEach: 1, section: 'reading', options: 3 },
+      ],
+      scale: {},
+    },
+    {
+      title: LISTENING,
+      minutes: 40,
+      reviewS: 120,
+      parts: [
+        { type: 'mcq', name: 'Tarea 1: mensajes breves', questions: 6, marksEach: 1, section: 'listening', options: 3, groupPrepS: 10 },
+        { type: 'mcq', name: 'Tarea 2: monólogo', questions: 6, marksEach: 1, section: 'listening', options: 3, prepS: 30 },
+        { type: 'mcq', name: 'Tarea 3: noticias', questions: 6, marksEach: 1, section: 'listening', options: 3, groupPrepS: 10 },
+        { type: 'matching', name: 'Tarea 4: monólogos breves', questions: 6, marksEach: 1, section: 'listening', choices: 8, prepS: 30 },
+        { type: 'mcq', name: 'Tarea 5: conversación', questions: 6, marksEach: 1, section: 'listening', options: 3, prepS: 30 },
+      ],
+      scale: {},
+    },
+    {
+      minutes: 15,
+      parts: [
+        { kind: 'long_turn', name: 'Tarea 1: presentación de un tema', minutes: 3 },
+        { kind: 'discussion', name: 'Tarea 2: conversación sobre la presentación', minutes: 3 },
+        { kind: 'long_turn', name: 'Tarea 3: descripción de una fotografía', minutes: 3 },
+        { kind: 'collaborative', name: 'Tarea 4: situación simulada', minutes: 3 },
+      ],
+    },
+    { title: WRITING, minutes: 60, tasks: '2 tareas: un correo (100–120 palabras) y una composición (130–150 palabras)' },
+  ),
+  B2: deleFormat(
+    'B2',
+    {
+      title: READING,
+      minutes: 70,
+      parts: [
+        { type: 'mcq', name: 'Tarea 1: texto', questions: 6, marksEach: 1, section: 'reading', options: 3 },
+        { type: 'matching', name: 'Tarea 2: cuatro textos', questions: 10, marksEach: 1, section: 'reading', choices: 4 },
+        { type: 'gapped_text', name: 'Tarea 3: fragmentos', questions: 6, marksEach: 1, section: 'reading', choices: 8 },
+        { type: 'mcq_cloze', name: 'Tarea 4: texto con huecos', questions: 14, marksEach: 1, section: 'reading', options: 3 },
+      ],
+      scale: {},
+    },
+    {
+      title: LISTENING,
+      minutes: 40,
+      reviewS: 120,
+      parts: [
+        { type: 'mcq', name: 'Tarea 1: conversaciones breves', questions: 6, marksEach: 1, section: 'listening', options: 3, groupPrepS: 10 },
+        { type: 'mcq', name: 'Tarea 2: conversación', questions: 6, marksEach: 1, section: 'listening', options: 3, prepS: 30 },
+        { type: 'mcq', name: 'Tarea 3: entrevista', questions: 6, marksEach: 1, section: 'listening', options: 3, prepS: 30 },
+        { type: 'matching', name: 'Tarea 4: monólogos breves', questions: 6, marksEach: 1, section: 'listening', choices: 8, prepS: 30 },
+        { type: 'mcq', name: 'Tarea 5: conferencia', questions: 6, marksEach: 1, section: 'listening', options: 3, prepS: 30 },
+      ],
+      scale: {},
+    },
+    {
+      minutes: 20,
+      parts: [
+        { kind: 'long_turn', name: 'Tarea 1: valorar propuestas', minutes: 6 },
+        { kind: 'collaborative', name: 'Tarea 2: conversar sobre una situación', minutes: 6 },
+        { kind: 'discussion', name: 'Tarea 3: comentar una encuesta', minutes: 4 },
+      ],
+    },
+    { title: WRITING, minutes: 80, tasks: '2 tareas: una carta a partir de una audición y un texto de opinión o un artículo (150–180 palabras cada una)' },
+  ),
+  C1: deleFormat(
+    'C1',
+    {
+      title: 'Comprensión de lectura y uso de la lengua',
+      minutes: 90,
+      parts: [
+        { type: 'mcq', name: 'Tarea 1: texto', questions: 6, marksEach: 1, section: 'reading', options: 3 },
+        { type: 'gapped_text', name: 'Tarea 2: fragmentos', questions: 6, marksEach: 1, section: 'reading', choices: 7 },
+        { type: 'mcq', name: 'Tarea 3: texto', questions: 6, marksEach: 1, section: 'reading', options: 3 },
+        { type: 'matching', name: 'Tarea 4: seis textos breves', questions: 8, marksEach: 1, section: 'reading', choices: 6 },
+        { type: 'mcq_cloze', name: 'Tarea 5: texto con huecos', questions: 14, marksEach: 1, section: 'reading', options: 3 },
+      ],
+      scale: {},
+    },
+    {
+      title: 'Comprensión auditiva y uso de la lengua',
+      minutes: 50,
+      reviewS: 120,
+      parts: [
+        { type: 'completion', name: 'Tarea 1: conferencia', questions: 6, marksEach: 1, section: 'listening', prepS: 45 },
+        { type: 'mcq', name: 'Tarea 2: conversaciones', questions: 6, marksEach: 1, section: 'listening', options: 3, groupPrepS: 20 },
+        { type: 'mcq', name: 'Tarea 3: entrevista', questions: 6, marksEach: 1, section: 'listening', options: 3, prepS: 45 },
+        { type: 'mcq', name: 'Tarea 4: fragmentos breves', questions: 12, marksEach: 1, section: 'listening', options: 3, groupPrepS: 15 },
+      ],
+      scale: {},
+    },
+    {
+      minutes: 20,
+      parts: [
+        { kind: 'long_turn', name: 'Tarea 1: presentación oral', minutes: 5 },
+        { kind: 'discussion', name: 'Tarea 2: conversación sobre la presentación', minutes: 5 },
+        { kind: 'collaborative', name: 'Tarea 3: llegar a un acuerdo', minutes: 6 },
+      ],
+    },
+    { title: WRITING, minutes: 80, tasks: '2 tareas: un texto a partir de una audición (220–250 palabras) y un texto de opinión, crítica o artículo (180–220 palabras)' },
+  ),
+  C2: deleFormat(
+    'C2',
+    {
+      title: 'Uso de la lengua y comprensión de lectura',
+      minutes: 60,
+      parts: [
+        { type: 'mcq_cloze', name: 'Tarea 1: texto con huecos', questions: 6, marksEach: 1, section: 'reading', options: 3 },
+        { type: 'gapped_text', name: 'Tarea 2: fragmentos', questions: 7, marksEach: 1, section: 'reading', choices: 8 },
+        { type: 'matching', name: 'Tarea 3: seis textos', questions: 8, marksEach: 1, section: 'reading', choices: 6 },
+        { type: 'mcq', name: 'Tarea 4: texto', questions: 6, marksEach: 1, section: 'reading', options: 3 },
+      ],
+      scale: {},
+    },
+    {
+      title: LISTENING,
+      minutes: 45,
+      reviewS: 120,
+      parts: [
+        { type: 'completion', name: 'Tarea 5: conferencia', questions: 6, marksEach: 1, section: 'listening', prepS: 45 },
+        { type: 'matching', name: 'Tarea 6: opiniones', questions: 6, marksEach: 1, section: 'listening', choices: 8, prepS: 45 },
+        { type: 'mcq', name: 'Tarea 7: debate', questions: 6, marksEach: 1, section: 'listening', options: 3, prepS: 45 },
+      ],
+      scale: {},
+    },
+    {
+      minutes: 20,
+      parts: [
+        { kind: 'long_turn', name: 'Tarea 1: exposición a partir de textos', minutes: 6 },
+        { kind: 'discussion', name: 'Tarea 2: conversación sobre la exposición', minutes: 6 },
+        { kind: 'collaborative', name: 'Tarea 3: conversación a partir de titulares', minutes: 6 },
+      ],
+    },
+    { title: WRITING, minutes: 150, tasks: '3 tareas: un texto a partir de una audición y unas lecturas (400–450 palabras) y dos textos más breves' },
+  ),
+};
+
+/** El formato del examen de un nivel en el idioma que se practica. */
+export function examFormat(level: ExamLevel, language: PracticeLanguage): ExamFormat {
+  return language === 'es' ? DELE_FORMATS[level] : EXAM_FORMATS[level];
 }

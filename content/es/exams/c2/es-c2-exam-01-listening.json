@@ -1,0 +1,307 @@
+{
+  "id": "es-c2-exam-01-listening",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "paper": "listening",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "completion",
+      "rubric": "Va a escuchar un fragmento de una conferencia sobre la historia de los cafés literarios. La grabación se repite dos veces. Complete las notas con una, dos o tres palabras.",
+      "title": "Los cafés literarios",
+      "text": "En el siglo dieciocho, los cafés de Londres recibían el apodo de «universidades de a {{1}}».\nEn Madrid, la tertulia más célebre se celebraba en el Café de {{2}}.\nLas tertulias funcionaban como un espacio de {{3}} para autores jóvenes.\nMuchos cafés cerraron a mediados del siglo veinte por la {{4}} del suelo en el centro.\nSegún la conferenciante, hoy su función la cumplen en parte los {{5}} y las redes.\nLo que se ha perdido, en su opinión, es la conversación {{6}}.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["penique"],
+          "explanation_es": { "en": "«Penny universities»: universities for a penny." }
+        },
+        {
+          "n": 2,
+          "accept": ["Pombo"],
+          "explanation_es": { "en": "The Café de Pombo, where Ramón Gómez de la Serna presided." }
+        },
+        {
+          "n": 3,
+          "accept": ["aprendizaje", "formación"],
+          "explanation_es": { "en": "Young authors learned there." }
+        },
+        {
+          "n": 4,
+          "accept": ["subida del precio", "revalorización", "especulación"],
+          "explanation_es": { "en": "Rising land prices in city centres." }
+        },
+        {
+          "n": 5,
+          "accept": ["clubes de lectura", "clubs de lectura"],
+          "explanation_es": { "en": "Reading clubs and social networks partly fill the role." }
+        },
+        {
+          "n": 6,
+          "accept": ["cara a cara", "presencial", "en persona"],
+          "explanation_es": { "en": "Face-to-face conversation has been lost." }
+        }
+      ],
+      "recording": {
+        "id": "r01",
+        "speakers": [
+          { "id": "conferenciante", "name": "Conferenciante", "accent": "es-ES", "gender": "female" }
+        ],
+        "segments": [
+          {
+            "speaker": "conferenciante",
+            "text": "Hablar de los cafés literarios es hablar de un fenómeno que, durante casi tres siglos, fue mucho más que un negocio de hostelería.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "conferenciante",
+            "text": "En el Londres del siglo dieciocho, por el precio de una taza, cualquiera podía sentarse a escuchar a comerciantes, científicos y escritores discutir las noticias del día. No es extraño que se los llamara, con cierta ironía, universidades de a penique.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "conferenciante",
+            "text": "En España, la edad de oro llegó algo más tarde, a finales del siglo diecinueve y principios del veinte. El caso más célebre es quizá el del Café de Pombo, en Madrid, donde cada sábado por la noche Ramón Gómez de la Serna presidía una tertulia legendaria.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "conferenciante",
+            "text": "Conviene no idealizarlas: eran espacios casi exclusivamente masculinos y, a menudo, bastante cerrados. Pero cumplían una función que hoy echamos en falta. Para un escritor joven, la tertulia era un lugar de aprendizaje: allí leía sus primeros textos, recibía críticas sin piedad y conocía a editores.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "conferenciante",
+            "text": "¿Por qué desaparecieron? Influyeron muchos factores, desde la censura hasta la llegada de la televisión. Pero el golpe definitivo fue económico. A mediados del siglo veinte, la subida del precio del suelo en el centro de las ciudades hizo que estos locales grandes y poco rentables acabaran convertidos en bancos o tiendas.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "conferenciante",
+            "text": "Hoy se dice a veces que los clubes de lectura y las redes sociales han heredado su papel. En parte es cierto. Sin embargo, creo que algo esencial se ha perdido por el camino: la conversación cara a cara, lenta, con su capacidad de llevarnos a donde no pensábamos ir."
+          }
+        ],
+        "audio": { "src": "audio/exams/c2/es-c2-exam-01-listening/v1/r01.m4a", "duration_s": 86.457 }
+      }
+    },
+    {
+      "type": "matching",
+      "rubric": "Va a escuchar a seis personas que opinan sobre la conveniencia de reducir el turismo en su ciudad. Cada persona habla dos veces. Relacione a cada persona con el enunciado que mejor resume su postura (A–H). Hay dos enunciados que no tiene que usar.",
+      "title": "Opiniones sobre el turismo",
+      "recording": {
+        "id": "r02",
+        "speakers": [
+          { "id": "vb", "name": "Voz 1", "accent": "es-ES", "gender": "female" },
+          { "id": "va", "name": "Voz 2", "accent": "es-ES", "gender": "male" },
+          { "id": "vc", "name": "Voz 3", "accent": "es-ES", "gender": "male" }
+        ],
+        "segments": [
+          {
+            "speaker": "vb",
+            "text": "Mire, yo tengo un restaurante en el casco antiguo y el ochenta por ciento de mis clientes son extranjeros. Si mañana se van, cierro. Así de sencillo. Me molesta que se hable del turismo como si fuera una plaga.",
+            "pause_after_ms": 1200
+          },
+          {
+            "speaker": "va",
+            "text": "Yo nací en este barrio y ya no queda casi nadie de mi infancia. En mi escalera hay seis pisos turísticos y solo dos vecinos. Los comercios de siempre han sido sustituidos por tiendas de recuerdos.",
+            "pause_after_ms": 1200
+          },
+          {
+            "speaker": "vc",
+            "text": "Lo que sobra no son turistas, es que todos van a los mismos cuatro sitios a la misma hora. Si se repartieran mejor por los barrios y a lo largo del año, la ciudad lo absorbería sin problema.",
+            "pause_after_ms": 1200
+          },
+          {
+            "speaker": "vb",
+            "text": "Me preocupa ese discurso de que hay que limitar el turismo. Al final, la consecuencia sería que solo podrían viajar los ricos. Viajar ha sido una conquista de las clases medias y no deberíamos renunciar a ella.",
+            "pause_after_ms": 1200
+          },
+          {
+            "speaker": "va",
+            "text": "Es razonable que quien viene contribuya a mantener lo que usa: la limpieza, el transporte, la seguridad. Una tasa de unos pocos euros por noche no espantaría a nadie y aliviaría mucho las cuentas municipales.",
+            "pause_after_ms": 1200
+          },
+          {
+            "speaker": "vc",
+            "text": "Durante años defendí el turismo sin matices. Trabajaba en una agencia y lo veía todo con buenos ojos. Pero cuando mi hija tuvo que irse del centro porque no podía pagar el alquiler, empecé a verlo de otra manera."
+          }
+        ],
+        "audio": { "src": "audio/exams/c2/es-c2-exam-01-listening/v1/r02.m4a", "duration_s": 73.802 }
+      },
+      "tasks": [
+        {
+          "options": [
+            { "id": "A", "text": "Cree que el problema no es el número de turistas, sino su concentración." },
+            { "id": "B", "text": "Quiere prohibir los cruceros en el puerto." },
+            { "id": "C", "text": "Piensa que limitar el turismo sería una forma de elitismo." },
+            { "id": "D", "text": "Reconoce que antes opinaba lo contrario." },
+            { "id": "E", "text": "Defiende el turismo porque su negocio depende de él." },
+            { "id": "F", "text": "Considera que el turismo ha expulsado a los vecinos del centro." },
+            { "id": "G", "text": "Afirma que el turismo no influye en el precio de la vivienda." },
+            { "id": "H", "text": "Propone que los visitantes paguen por los servicios que usan." }
+          ],
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "Persona 1",
+              "answer": "E",
+              "explanation_es": { "en": "Her restaurant lives on tourism." }
+            },
+            {
+              "n": 8,
+              "prompt": "Persona 2",
+              "answer": "F",
+              "explanation_es": { "en": "Neighbours have been replaced by tourist flats." }
+            },
+            {
+              "n": 9,
+              "prompt": "Persona 3",
+              "answer": "A",
+              "explanation_es": { "en": "Spread visitors across neighbourhoods and seasons." }
+            },
+            {
+              "n": 10,
+              "prompt": "Persona 4",
+              "answer": "C",
+              "explanation_es": { "en": "Only the rich would be able to travel." }
+            },
+            {
+              "n": 11,
+              "prompt": "Persona 5",
+              "answer": "H",
+              "explanation_es": { "en": "A tourist tax to pay for cleaning and transport." }
+            },
+            {
+              "n": 12,
+              "prompt": "Persona 6",
+              "answer": "D",
+              "explanation_es": { "en": "He used to defend tourism without nuance." }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Va a escuchar un debate radiofónico sobre la enseñanza de la escritura a mano. La grabación se repite dos veces. Elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r03",
+            "speakers": [
+              { "id": "moderadora", "name": "Moderadora", "accent": "es-ES", "gender": "female" },
+              { "id": "pedagogo", "name": "Pedagogo", "accent": "es-ES", "gender": "male" },
+              { "id": "ingeniero", "name": "Ingeniero", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "moderadora",
+                "text": "Algunos países han reducido drásticamente las horas dedicadas a la caligrafía en la escuela. ¿Tiene sentido seguir enseñando a escribir a mano en pleno siglo veintiuno?"
+              },
+              {
+                "speaker": "pedagogo",
+                "text": "Rotundamente sí. Y no por nostalgia. Diversos estudios muestran que, cuando los niños escriben a mano, activan zonas del cerebro relacionadas con la memoria y la comprensión que apenas se activan al teclear."
+              },
+              {
+                "speaker": "ingeniero",
+                "text": "No discuto los estudios, pero me temo que se están sobreinterpretando. Que se active una zona del cerebro no significa necesariamente que se aprenda más. Y lo que es indiscutible es que nuestros hijos van a escribir en teclados durante toda su vida laboral."
+              },
+              {
+                "speaker": "pedagogo",
+                "text": "Precisamente por eso la escuela debe ofrecerles lo que el entorno no les dará. Nadie propone prohibir los ordenadores; se trata de no renunciar a una herramienta cognitiva valiosa."
+              },
+              {
+                "speaker": "moderadora",
+                "text": "Hay quien sostiene que el problema no es escribir a mano, sino dedicar horas a perfeccionar una letra bonita."
+              },
+              {
+                "speaker": "ingeniero",
+                "text": "Ahí estoy de acuerdo. Una cosa es escribir con soltura y otra es pasarse tardes enteras copiando cuadernillos. Ese tiempo podría dedicarse a enseñar a programar o a buscar información con criterio."
+              },
+              {
+                "speaker": "pedagogo",
+                "text": "Concedo que la caligrafía como ejercicio estético puede reducirse. Pero cuidado con ese argumento del tiempo: con él se han ido recortando también la música, el arte y la filosofía."
+              },
+              {
+                "speaker": "ingeniero",
+                "text": "No se trata de recortar por recortar. Se trata de decidir qué necesita un niño de hoy, y no de repetir lo que nos enseñaron a nosotros."
+              },
+              { "speaker": "moderadora", "text": "Para terminar, ¿alguna propuesta concreta?" },
+              {
+                "speaker": "pedagogo",
+                "text": "Que se mantenga la escritura a mano en los primeros cursos y que, a partir de cierta edad, conviva con el teclado según la tarea."
+              },
+              {
+                "speaker": "ingeniero",
+                "text": "Con eso podría estar de acuerdo, siempre que se evalúe con datos y no por inercia."
+              }
+            ],
+            "audio": { "src": "audio/exams/c2/es-c2-exam-01-listening/v1/r03.m4a", "duration_s": 97.025 }
+          },
+          "questions": [
+            {
+              "n": 13,
+              "prompt": "¿En qué se basa el pedagogo para defender la escritura a mano?",
+              "options": [
+                "En el valor sentimental de la caligrafía", "En su efecto sobre ciertos procesos cerebrales",
+                "En la tradición escolar del país"
+              ],
+              "answer": 1,
+              "explanation_es": { "en": "Studies show it activates memory and comprehension areas." }
+            },
+            {
+              "n": 14,
+              "prompt": "¿Qué objeta el ingeniero a esos estudios?",
+              "options": ["Que se sacan conclusiones excesivas", "Que están mal hechos", "Que son demasiado antiguos"],
+              "answer": 0,
+              "explanation_es": { "en": "He thinks they are over-interpreted." }
+            },
+            {
+              "n": 15,
+              "prompt": "¿Qué argumento del pedagogo se basa en el entorno de los niños?",
+              "options": [
+                "Los niños ya escriben demasiado a mano en casa", "Las familias prefieren la escritura a mano",
+                "La escuela debe compensar lo que el entorno no ofrece"
+              ],
+              "answer": 2,
+              "explanation_es": { "en": "School should offer what the environment will not." }
+            },
+            {
+              "n": 16,
+              "prompt": "¿En qué punto coinciden ambos invitados?",
+              "options": [
+                "Hay que eliminar la caligrafía por completo", "Hay que prohibir los teclados en primaria",
+                "Se puede reducir el tiempo dedicado a la letra bonita"
+              ],
+              "answer": 2,
+              "explanation_es": { "en": "Calligraphy as an aesthetic exercise can be reduced." }
+            },
+            {
+              "n": 17,
+              "prompt": "¿Qué advierte el pedagogo sobre el argumento del tiempo?",
+              "options": [
+                "Es el más sólido de todo el debate", "Ha servido para recortar otras materias valiosas",
+                "Solo lo usan los ingenieros"
+              ],
+              "answer": 1,
+              "explanation_es": { "en": "Music, art and philosophy have been cut with it." }
+            },
+            {
+              "n": 18,
+              "prompt": "¿Cómo termina el debate?",
+              "options": [
+                "Con un acuerdo con condiciones", "Sin ningún punto de acuerdo",
+                "Con la victoria clara del ingeniero"
+              ],
+              "answer": 0,
+              "explanation_es": { "en": "The engineer could agree, provided it is evaluated with data." }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

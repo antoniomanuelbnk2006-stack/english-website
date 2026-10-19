@@ -1,6 +1,7 @@
 'use client';
 
 import type { ReactNode } from 'react';
+import { useContentLang } from '@/components/content-language';
 import { fieldClasses } from '@/components/ui/input';
 import { splitCloze } from '@/features/use-of-english/lib/grade';
 import type { PartFormat } from '@/lib/content/exam-formats';
@@ -35,10 +36,11 @@ function GapNumber({ n }: { n: number }) {
 
 /** Un texto con huecos: cada `{{n}}` se cambia por lo que devuelva `field`. */
 function GappedProse({ text, field }: { text: string; field: (n: number) => ReactNode }) {
+  const lang = useContentLang();
   return (
     <>
       {paragraphs(text).map((paragraph, index) => (
-        <p key={index} lang="en" className="prose-reading leading-[2.75rem]">
+        <p key={index} lang={lang} className="prose-reading leading-[2.75rem]">
           {splitCloze(paragraph).map((piece, pieceIndex) =>
             typeof piece === 'string' ? (
               <span key={pieceIndex}>{piece}</span>
@@ -56,10 +58,11 @@ function GappedProse({ text, field }: { text: string; field: (n: number) => Reac
 }
 
 function Prose({ text }: { text: string }) {
+  const lang = useContentLang();
   return (
     <>
       {paragraphs(text).map((paragraph, index) => (
-        <p key={index} lang="en" className="prose-reading whitespace-pre-line">
+        <p key={index} lang={lang} className="prose-reading whitespace-pre-line">
           {paragraph}
         </p>
       ))}
@@ -68,10 +71,11 @@ function Prose({ text }: { text: string }) {
 }
 
 function TextBox({ title, children }: { title?: string; children: ReactNode }) {
+  const lang = useContentLang();
   return (
     <div className="card flex flex-col gap-3">
       {title ? (
-        <h3 lang="en" className="text-body-lg font-medium">
+        <h3 lang={lang} className="text-body-lg font-medium">
           {title}
         </h3>
       ) : null}
@@ -85,13 +89,14 @@ function ChoiceQuestion({
   answers,
   onAnswer,
 }: Common & { question: { n: number; prompt?: string; options: string[] } }) {
+  const lang = useContentLang();
   const t = useT();
   const chosen = answers[question.n];
   return (
     <fieldset className="flex flex-col gap-2">
       <legend className="mb-2 flex gap-2">
         <span className="tabular-nums shrink-0 text-body-sm text-muted">{question.n}.</span>
-        <span lang="en" className="font-medium">
+        <span lang={lang} className="font-medium">
           {question.prompt ?? <span lang="es">{t('exams.chooseMeaning')}</span>}
         </span>
       </legend>
@@ -110,7 +115,7 @@ function ChoiceQuestion({
           <span aria-hidden="true" className="tabular-nums mt-0.5 text-caption text-muted">
             {LETTERS[index]}
           </span>
-          <span lang="en" className="min-w-0 flex-1">
+          <span lang={lang} className="min-w-0 flex-1">
             {option}
           </span>
         </label>
@@ -150,11 +155,12 @@ function LetterSelect({
 }
 
 function TextGap({ n, wide, answers, onAnswer }: Common & { n: number; wide?: boolean }) {
+  const lang = useContentLang();
   const t = useT();
   return (
     <input
       type="text"
-      lang="en"
+      lang={lang}
       aria-label={t('exams.question', { n })}
       autoCapitalize="none"
       autoCorrect="off"
@@ -177,6 +183,7 @@ export function PartView({
   answers,
   onAnswer,
 }: Common & { part: PublicExamPart; format: PartFormat }) {
+  const lang = useContentLang();
   const t = useT();
   const common = { answers, onAnswer };
 
@@ -205,7 +212,7 @@ export function PartView({
           {part.groups.map((group, index) => (
             <div key={index} className="flex flex-col gap-4">
               {group.context ? (
-                <p lang="en" className="text-body-sm text-muted">
+                <p lang={lang} className="text-body-sm text-muted">
                   {group.context}
                 </p>
               ) : null}
@@ -233,7 +240,7 @@ export function PartView({
               const chosen = answers[n];
               return (
                 <select
-                  lang="en"
+                  lang={lang}
                   aria-label={t('exams.question', { n })}
                   className={cn(inlineField, 'w-auto pr-7')}
                   value={typeof chosen === 'number' ? String(chosen) : ''}
@@ -283,7 +290,7 @@ export function PartView({
         <TextBox title={part.title}>
           {part.text.split('\n').map((line, index) =>
             line.trim() === '' ? null : (
-              <p key={index} lang="en" className="prose-reading leading-[2.75rem]">
+              <p key={index} lang={lang} className="prose-reading leading-[2.75rem]">
                 {splitCloze(line).map((piece, pieceIndex) =>
                   typeof piece === 'string' ? (
                     <span key={pieceIndex}>{piece}</span>
@@ -311,20 +318,20 @@ export function PartView({
               const words = value.trim() === '' ? 0 : countExamWords(value);
               return (
                 <li key={item.n} className="flex flex-col gap-2">
-                  <p lang="en" className="prose-reading">
+                  <p lang={lang} className="prose-reading">
                     <span lang="es" className="tabular-nums mr-2 text-body-sm text-muted">
                       {item.n}.
                     </span>
                     {item.original}
                   </p>
-                  <p lang="en" className="text-body-sm font-medium text-accent-text tabular-nums">
+                  <p lang={lang} className="text-body-sm font-medium text-accent-text tabular-nums">
                     {item.keyword}
                   </p>
-                  <p lang="en" className="prose-reading leading-[2.75rem]">
+                  <p lang={lang} className="prose-reading leading-[2.75rem]">
                     {item.before}
                     <input
                       type="text"
-                      lang="en"
+                      lang={lang}
                       aria-label={t('exams.question', { n: item.n })}
                       autoCapitalize="none"
                       autoCorrect="off"
@@ -377,7 +384,7 @@ export function PartView({
                   <span className="tabular-nums shrink-0 text-body-sm font-medium text-accent-text">
                     {option.id}
                   </span>
-                  <span lang="en" className="prose-reading whitespace-pre-line">
+                  <span lang={lang} className="prose-reading whitespace-pre-line">
                     {option.text}
                   </span>
                 </li>
@@ -402,7 +409,7 @@ export function PartView({
                     <span className="tabular-nums mt-2 w-7 shrink-0 text-body-sm text-muted">
                       {question.n}.
                     </span>
-                    <span lang="en" className="mt-1.5 min-w-0 flex-1">
+                    <span lang={lang} className="mt-1.5 min-w-0 flex-1">
                       {question.prompt}
                     </span>
                     <LetterSelect n={question.n} ids={ids} {...common} />
@@ -421,7 +428,7 @@ export function PartView({
                             {option.id}
                           </span>
                           {option.title ? (
-                            <span lang="en" className="font-medium">
+                            <span lang={lang} className="font-medium">
                               {option.title}
                             </span>
                           ) : null}
@@ -434,7 +441,7 @@ export function PartView({
                       <span className="tabular-nums shrink-0 font-medium text-accent-text">
                         {option.id}
                       </span>
-                      <span lang="en">{option.text}</span>
+                      <span lang={lang}>{option.text}</span>
                     </li>
                   ),
                 )}
@@ -443,7 +450,7 @@ export function PartView({
             return (
               <section key={index} className="flex flex-col gap-4">
                 {task.heading ? (
-                  <h3 lang="en" className="font-medium">
+                  <h3 lang={lang} className="font-medium">
                     {task.heading}
                   </h3>
                 ) : null}
@@ -452,7 +459,7 @@ export function PartView({
                     <div className="xl:sticky xl:top-52 xl:self-start">{questions}</div>
                     <div>
                       {part.title ? (
-                        <h3 lang="en" className="mb-3 text-body-lg font-medium">
+                        <h3 lang={lang} className="mb-3 text-body-lg font-medium">
                           {part.title}
                         </h3>
                       ) : null}
@@ -480,7 +487,7 @@ export function PartView({
             <Prose text={part.prompt} />
           </TextBox>
           <textarea
-            lang="en"
+            lang={lang}
             aria-label={t('exams.question', { n: part.n })}
             spellCheck={false}
             rows={6}

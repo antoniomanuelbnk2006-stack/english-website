@@ -26,9 +26,9 @@ Con la base hecha (ADR-0034 a 0037) faltaba que hubiera contenido de otro idioma
 
 ## Consecuencias
 
-- Quien elija practicar español ve fichas, lecturas, escuchas, mazo y writings; en Exámenes ve que aún no hay nada (Pronunciación y Use of English de español: ADR-0039).
+- Quien elija practicar español ve fichas, lecturas, escuchas, mazo y writings; también Pronunciación y Use of English (ADR-0039) y Exámenes con el formato del DELE (ADR-0040).
 - **Ampliar español es ampliar el mazo y escribir lecciones**: no hace falta tocar el pipeline mientras el vocabulario salga del mazo. Las formas sueltas o muy irregulares que el generador no deduce se listan en `content/es/wordlists/formas.json`, y `scripts/content/unknown-forms.ts` enseña las que faltan.
 - **La búsqueda de palabras sigue siendo de inglés** (Wiktionary en inglés y su traducción).
 - **La pronunciación** (acentos `en-GB` y `en-US`, reconocimiento de voz en inglés) es de inglés.
 - **Sin revisión de un nativo.** `provenance` lo dice y debe revisarlo el dueño antes de darlo por bueno. Las voces de Piper son buenas, pero son sintéticas y con tiempos por palabra estimados.
-- Falta, en orden: la revisión de un nativo, los cuerpos, las explicaciones y el mazo de A2 a C2 en francés, chino y japonés, el dictado de español y Exámenes de español.
+- Falta, en orden: la revisión de un nativo, los cuerpos, las explicaciones y el mazo de A2 a C2 en francés, chino y japonés, y el dictado de español.

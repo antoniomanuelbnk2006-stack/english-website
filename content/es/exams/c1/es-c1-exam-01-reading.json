@@ -1,0 +1,556 @@
+{
+  "id": "es-c1-exam-01-reading",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "paper": "reading",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "Lea el texto y elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "text": "La memoria de los objetos\n\nEn el desván de casa de mis abuelos había un baúl que nadie abría. Cuando murió mi abuela, mi madre y yo pasamos una tarde entera vaciándolo: cartas atadas con cintas, un vestido de novia amarillento, entradas de cine de los años cincuenta, una muñeca sin un brazo. Ninguno de esos objetos tenía valor económico. Sin embargo, mi madre no fue capaz de tirar ni uno solo.\n\nLa psicología lleva décadas estudiando por qué nos cuesta tanto desprendernos de ciertas cosas. Una de las explicaciones más aceptadas es que los objetos funcionan como extensiones de nuestra identidad: no solo poseemos cosas, sino que, en cierto modo, somos también las cosas que poseemos. Perder un objeto querido, desde este punto de vista, se vive como la pérdida de una pequeña parte de uno mismo.\n\nA esto se suma lo que algunos investigadores llaman «contagio simbólico». Atribuimos a los objetos que pertenecieron a otra persona algo de su esencia, como si la hubieran absorbido. Por eso un jersey viejo de un padre fallecido puede resultar imposible de regalar, aunque ya no lo vaya a usar nadie. Los experimentos lo confirman de forma casi cómica: muchas personas se niegan a ponerse una chaqueta que ha llevado alguien a quien desprecian, aunque esté recién lavada.\n\nEl apego a las cosas, no obstante, tiene una cara menos amable. En el extremo, puede convertirse en un trastorno que llena las casas hasta hacerlas inhabitables. Y, sin llegar a tanto, vivimos en sociedades que acumulan como nunca antes en la historia. No es casual que en los últimos años se hayan multiplicado los libros y los programas que prometen la felicidad a través del orden y la renuncia.\n\nConviene, con todo, desconfiar de las soluciones radicales. Deshacerse de todo lo superfluo puede aliviar, pero también puede borrar huellas que solo descubrimos valiosas con el tiempo. Las cartas del baúl de mi abuela no servían para nada; hoy son el único testimonio que tengo de cómo se enamoró de mi abuelo. Quizá la cuestión no sea cuántas cosas guardamos, sino si sabemos todavía por qué las guardamos.",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "¿Qué ilustra la anécdota del baúl?",
+              "options": [
+                "Que la madre del autor era muy desordenada",
+                "Que el valor de algunos objetos no es económico",
+                "Que los abuelos guardaban objetos caros"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "None of the objects had economic value, yet the mother kept them all."
+              }
+            },
+            {
+              "n": 2,
+              "prompt": "Según una de las explicaciones psicológicas, nos cuesta deshacernos de algunos objetos porque…",
+              "options": [
+                "forman parte de cómo nos vemos",
+                "tememos necesitarlos en el futuro",
+                "nos recuerdan lo que han costado"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "Objects act as extensions of our identity."
+              }
+            },
+            {
+              "n": 3,
+              "prompt": "El llamado «contagio simbólico» consiste en…",
+              "options": [
+                "imitar los gustos de las personas que admiramos",
+                "transmitir enfermedades a través de la ropa",
+                "atribuir a un objeto algo de su antiguo dueño"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "We attribute part of a person’s essence to their objects."
+              }
+            },
+            {
+              "n": 4,
+              "prompt": "¿Para qué menciona el autor el experimento de la chaqueta?",
+              "options": [
+                "Para demostrar que la ropa usada es poco higiénica",
+                "Para criticar la forma de hacer experimentos",
+                "Para mostrar que el efecto también funciona con lo negativo"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "People refuse to wear a jacket of someone they despise, even if washed."
+              }
+            },
+            {
+              "n": 5,
+              "prompt": "¿Qué relación establece el autor entre la acumulación y los libros sobre el orden?",
+              "options": [
+                "Esos libros han provocado la acumulación",
+                "El éxito de esos libros responde a un exceso de cosas",
+                "No ve ninguna relación entre ambos fenómenos"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "It is no coincidence that such books multiply in societies that accumulate."
+              }
+            },
+            {
+              "n": 6,
+              "prompt": "¿Cuál es la conclusión del autor?",
+              "options": [
+                "Lo importante es conocer el sentido de lo que se guarda",
+                "Hay que tirar todo lo que no se utiliza",
+                "Es mejor no guardar recuerdos familiares"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "The question is whether we still know why we keep things."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gapped_text",
+      "rubric": "Lea el texto. Faltan seis párrafos o fragmentos. Después, lea los siete fragmentos (A–G) y decida en qué lugar del texto va cada uno. Hay un fragmento que no tiene que usar.",
+      "title": "Traducir el humor",
+      "text": "Cualquier traductor sabe que hay textos que se resisten más que otros. Los manuales técnicos exigen precisión, la poesía exige oído, pero pocas cosas son tan difíciles de trasladar a otra lengua como un buen chiste. {{7}}\n\nEl primer obstáculo es el lenguaje mismo. Muchos chistes descansan sobre un doble sentido, una palabra que suena igual que otra o una expresión hecha que, tomada al pie de la letra, resulta absurda. {{8}} El traductor se ve entonces obligado a elegir entre explicar el chiste, lo que lo mata, o sustituirlo por otro.\n\nEsta segunda opción es la que suelen preferir los profesionales del doblaje y la subtitulación. {{9}} Lo que importa, defienden, no es la fidelidad a las palabras, sino al efecto: si en el original el público se ríe, en la versión traducida también debería reírse.\n\nEl segundo obstáculo es cultural. {{10}} Una broma sobre un político local, un anuncio de televisión o una costumbre regional puede no significar nada al otro lado de la frontera, por muy bien traducida que esté.\n\n{{11}} Hay culturas en las que la ironía impregna incluso las conversaciones serias, y otras en las que se reserva para la intimidad. Hay temas que en un país se prestan a la broma y en otro se consideran intocables.\n\nPor todo ello, algunos especialistas sostienen que el humor es la prueba definitiva del dominio de una lengua. {{12}} Quizá no haya mejor señal de que se ha aprendido de verdad un idioma que hacer reír a alguien en él a propósito.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ese juego, por definición, rara vez funciona en otra lengua."
+        },
+        {
+          "id": "B",
+          "text": "Gran parte del humor se apoya en referencias compartidas que el espectador extranjero desconoce."
+        },
+        {
+          "id": "C",
+          "text": "Por eso las editoriales prefieren no publicar libros de humor traducidos."
+        },
+        {
+          "id": "D",
+          "text": "Se puede dominar la gramática y el vocabulario y, aun así, quedarse fuera cuando todos ríen."
+        },
+        {
+          "id": "E",
+          "text": "En una comedia, un juego de palabras intraducible puede convertirse en otro completamente distinto, siempre que provoque la misma risa."
+        },
+        {
+          "id": "F",
+          "text": "Pero no se trata solo de referencias: cada cultura tiene sus propias reglas sobre cuándo y de qué se puede reír."
+        },
+        {
+          "id": "G",
+          "text": "Ahí se pone a prueba no solo su conocimiento de dos idiomas, sino de dos maneras de ver el mundo."
+        }
+      ],
+      "gaps": [
+        {
+          "n": 7,
+          "answer": "G",
+          "explanation_es": {
+            "en": "It explains why jokes test the translator: two languages and two worldviews."
+          }
+        },
+        {
+          "n": 8,
+          "answer": "A",
+          "explanation_es": {
+            "en": "«Ese juego» refers to double meanings; it explains why they rarely work elsewhere."
+          }
+        },
+        {
+          "n": 9,
+          "answer": "E",
+          "explanation_es": {
+            "en": "It gives an example of substitution, before «Lo que importa… no es la fidelidad»."
+          }
+        },
+        {
+          "n": 10,
+          "answer": "B",
+          "explanation_es": {
+            "en": "States the cultural obstacle; the following sentence gives examples of local references."
+          }
+        },
+        {
+          "n": 11,
+          "answer": "F",
+          "explanation_es": {
+            "en": "«Pero no se trata solo de referencias» introduces the different rules described next."
+          }
+        },
+        {
+          "n": 12,
+          "answer": "D",
+          "explanation_es": {
+            "en": "It supports the idea that humour is the final test of language mastery."
+          }
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Lea el texto y elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "text": "¿Necesitamos menos trabajo?\n\nEn 1930, el economista John Maynard Keynes hizo una predicción que hoy suena casi ingenua. Calculaba que, gracias al progreso técnico, sus nietos trabajarían unas quince horas a la semana. El problema económico, aventuraba, quedaría resuelto, y el gran reto de la humanidad sería aprender a usar el tiempo libre. Casi un siglo después, la productividad ha crecido incluso más de lo que él imaginaba. La jornada laboral, en cambio, apenas se ha reducido en las últimas décadas.\n\n¿Qué falló? Las explicaciones son variadas. Hay quien señala que el consumo creció al mismo ritmo que la productividad: en lugar de trabajar menos para vivir como nuestros abuelos, preferimos trabajar lo mismo para tener más. Otros apuntan a factores de poder: los beneficios del aumento de la productividad no se han repartido de forma equitativa, y una parte considerable de la población necesita jornadas largas para llegar a fin de mes.\n\nEn los últimos años, sin embargo, la idea de trabajar menos ha vuelto con fuerza al debate público. Diversos países y empresas han probado la semana laboral de cuatro días, manteniendo el sueldo. Los resultados de esos ensayos, aunque deben interpretarse con prudencia, son llamativos: en muchos casos, la productividad se mantuvo e incluso aumentó, mientras que las bajas por enfermedad y el agotamiento de los empleados disminuyeron.\n\nLos escépticos recuerdan que no todos los sectores pueden adaptarse con la misma facilidad. Reducir la jornada en una oficina de diseño no es lo mismo que hacerlo en un hospital o en una escuela, donde menos horas significan, inevitablemente, más personal. Advierten, además, de que los experimentos suelen hacerse con empresas voluntarias, previamente convencidas de las ventajas del modelo, lo que podría distorsionar los resultados.\n\nEl debate, en el fondo, va más allá de la economía. Plantea qué lugar queremos que ocupe el trabajo en nuestras vidas. Para muchas personas, el empleo es una fuente de identidad, de relaciones y de sentido, y no solo un medio para ganar dinero. Para otras, es sobre todo una obligación que les roba el tiempo que querrían dedicar a su familia, a sus aficiones o simplemente a descansar. Probablemente no exista una respuesta única. Lo que sí parece claro es que la pregunta de Keynes, qué hacer con el tiempo libre, sigue esperando a que nos atrevamos a planteárnosla en serio.",
+          "questions": [
+            {
+              "n": 13,
+              "prompt": "¿Qué dice el autor sobre la predicción de Keynes?",
+              "options": [
+                "Acertó en la productividad, pero no en la jornada",
+                "Fue completamente correcta",
+                "Subestimó el crecimiento del tiempo libre"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "Productivity grew even more than expected, but working hours barely fell."
+              }
+            },
+            {
+              "n": 14,
+              "prompt": "Según una de las explicaciones, la jornada no se redujo porque…",
+              "options": [
+                "los trabajadores no quisieron más tiempo libre",
+                "la tecnología no avanzó lo suficiente",
+                "preferimos consumir más a trabajar menos"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "Consumption grew at the same rate as productivity."
+              }
+            },
+            {
+              "n": 15,
+              "prompt": "¿Qué otra causa se menciona?",
+              "options": [
+                "La falta de formación de los trabajadores",
+                "Un reparto desigual de los beneficios",
+                "La competencia con otros países"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "The gains were not shared equitably."
+              }
+            },
+            {
+              "n": 16,
+              "prompt": "Los ensayos de la semana de cuatro días indican que…",
+              "options": [
+                "redujeron mucho los sueldos",
+                "no perjudicaron el rendimiento",
+                "solo funcionaron en hospitales"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "Productivity was maintained or rose, and sick leave fell."
+              }
+            },
+            {
+              "n": 17,
+              "prompt": "¿Qué objeción plantean los escépticos sobre los experimentos?",
+              "options": [
+                "Duraron demasiado poco tiempo",
+                "Se hicieron solo en países pequeños",
+                "Las empresas participantes ya eran partidarias"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "They were usually done with volunteer companies already convinced."
+              }
+            },
+            {
+              "n": 18,
+              "prompt": "En el último párrafo, el autor sugiere que el debate…",
+              "options": [
+                "tiene que ver con el sentido que damos al trabajo",
+                "se resolverá cuando haya más datos económicos",
+                "interesa sobre todo a las empresas"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "It goes beyond economics: what place work should have in our lives."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "Lea los seis textos sobre diferentes experiencias de voluntariado. Después, lea los enunciados y decida a qué texto (A–F) corresponde cada uno. Puede usar un texto más de una vez.",
+      "title": "Voluntarios",
+      "tasks": [
+        {
+          "options": [
+            {
+              "id": "A",
+              "title": "Irene, 29 años",
+              "text": "Doy clases de español a mujeres recién llegadas al país. Muchas tienen estudios universitarios, pero sin el idioma no pueden ejercer su profesión. Ver cómo ganan confianza semana a semana es lo más gratificante que he vivido."
+            },
+            {
+              "id": "B",
+              "title": "Enrique, 34 años",
+              "text": "Soy abogado y dedico unas horas al mes a asesorar gratis a familias que no pueden pagar a un profesional. Al principio pensaba que iba a ayudar con mi experiencia; enseguida me di cuenta de que eran ellas las que me enseñaban cómo funciona realmente el sistema."
+            },
+            {
+              "id": "C",
+              "title": "Samuel, 17 años",
+              "text": "En mi instituto organizamos un grupo para limpiar la playa una vez al mes. Empezamos cinco y ahora somos más de cuarenta. Al ayuntamiento le dio tanta vergüenza ver lo que sacábamos que ha puesto más papeleras."
+            },
+            {
+              "id": "D",
+              "title": "Fernando, 45 años",
+              "text": "Colaboro con un banco de alimentos. Mi tarea consiste en recoger donaciones en los supermercados y clasificarlas. Es un trabajo poco vistoso, pero si falla, todo lo demás falla. Lo que más me frustra es ver que cada año hay más familias que lo necesitan."
+            },
+            {
+              "id": "E",
+              "title": "Noelia, 22 años",
+              "text": "El verano pasado participé en un campo de trabajo para recuperar un sendero en los Pirineos. Fue agotador: cavábamos bajo el sol y dormíamos en tiendas de campaña. Pero me llevé amigos de cinco países y ganas de repetir."
+            },
+            {
+              "id": "F",
+              "title": "Aurora, 68 años",
+              "text": "Desde que me jubilé, dos mañanas por semana acompaño a personas mayores que viven solas. A veces solo charlamos; otras, les ayudo con trámites en internet que les resultan imposibles. Lo que me llevo es mucho más de lo que doy."
+            }
+          ],
+          "questions": [
+            {
+              "n": 19,
+              "prompt": "Esta persona descubrió que aprendía de aquellos a quienes ayudaba.",
+              "answer": "B",
+              "explanation_es": {
+                "en": "Enrique realised the families taught him how the system really works."
+              }
+            },
+            {
+              "n": 20,
+              "prompt": "Su actividad provocó un cambio en la actuación de una institución.",
+              "answer": "C",
+              "explanation_es": {
+                "en": "The council put up more bins."
+              }
+            },
+            {
+              "n": 21,
+              "prompt": "Destaca que su labor no se ve, pero es imprescindible.",
+              "answer": "D",
+              "explanation_es": {
+                "en": "Fernando: «poco vistoso, pero si falla, todo lo demás falla»."
+              }
+            },
+            {
+              "n": 22,
+              "prompt": "Conoció a gente de distintos países.",
+              "answer": "E",
+              "explanation_es": {
+                "en": "Noelia made friends from five countries."
+              }
+            },
+            {
+              "n": 23,
+              "prompt": "Considera que recibe más de lo que aporta.",
+              "answer": "F",
+              "explanation_es": {
+                "en": "Aurora: «me llevo mucho más de lo que doy»."
+              }
+            },
+            {
+              "n": 24,
+              "prompt": "Le preocupa que el problema que intenta paliar esté aumentando.",
+              "answer": "D",
+              "explanation_es": {
+                "en": "More families need the food bank each year."
+              }
+            },
+            {
+              "n": 25,
+              "prompt": "Ayuda a personas con formación a superar una barrera.",
+              "answer": "A",
+              "explanation_es": {
+                "en": "Women with degrees cannot work without the language."
+              }
+            },
+            {
+              "n": 26,
+              "prompt": "La iniciativa ha crecido mucho desde su comienzo.",
+              "answer": "C",
+              "explanation_es": {
+                "en": "They started with five and are now over forty."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq_cloze",
+      "rubric": "Lea el texto y elija la opción correcta (A, B o C) para cada hueco.",
+      "title": "La lentitud como resistencia",
+      "text": "Hace unas décadas nació en Italia el movimiento «slow food», como reacción {{27}} la apertura de un restaurante de comida rápida en pleno centro de Roma. Lo que empezó como una protesta gastronómica no tardó en {{28}} a otros ámbitos: hoy se habla de ciudades lentas, de educación lenta e incluso de ciencia lenta.\n\nLa idea de fondo es sencilla, {{29}} no siempre fácil de practicar: dedicar a cada actividad el tiempo que realmente requiere, en {{30}} de hacerlo todo lo más deprisa posible. Sus defensores no proponen volver a la Edad Media ni renunciar a la tecnología, {{31}} recuperar el control sobre el propio ritmo de vida.\n\nLos críticos, por su parte, consideran que se trata de un lujo {{32}} alcance de muy pocos. Quien tiene dos trabajos para llegar a fin de mes difícilmente puede {{33}} el lujo de cocinar a fuego lento o pasear sin rumbo. {{34}} razón no les falta: la lentitud, convertida en estilo de vida, se ha {{35}} en un producto más, con sus revistas, sus hoteles y sus cursos de pago.\n\nSin embargo, {{36}} injusto reducir el movimiento a una moda. En el fondo, plantea una pregunta incómoda: ¿a quién beneficia la prisa? Si {{37}} detuviéramos un momento a pensarlo, quizá descubriríamos que muchas de las urgencias que nos agobian no son tales. {{38}} sea esa, al final, su principal aportación: no tanto un modo de vida como una forma de mirar. {{39}} el mundo seguirá girando deprisa, nadie nos impide, de vez en cuando, bajarnos un rato de él. Basta con {{40}}.",
+      "gaps": [
+        {
+          "n": 27,
+          "options": [
+            "sobre",
+            "ante",
+            "tras"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "«Como reacción ante algo»: in response to."
+          }
+        },
+        {
+          "n": 28,
+          "options": [
+            "extenderse",
+            "extender",
+            "extendiéndose"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "«No tardó en extenderse»: pronominal infinitive."
+          }
+        },
+        {
+          "n": 29,
+          "options": [
+            "porque",
+            "si",
+            "aunque"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "Concession: simple, although not easy."
+          }
+        },
+        {
+          "n": 30,
+          "options": [
+            "vez",
+            "cambio",
+            "lugar"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "«En lugar de»: instead of."
+          }
+        },
+        {
+          "n": 31,
+          "options": [
+            "pero",
+            "sino",
+            "sin embargo"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "«No… sino…» corrects a negated idea."
+          }
+        },
+        {
+          "n": 32,
+          "options": [
+            "al",
+            "en el",
+            "por el"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "«Al alcance de»: within reach of."
+          }
+        },
+        {
+          "n": 33,
+          "options": [
+            "permitirse",
+            "permitir",
+            "permitiendo"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "«Permitirse el lujo de»: to afford."
+          }
+        },
+        {
+          "n": 34,
+          "options": [
+            "Ni",
+            "O",
+            "Y"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "Concessive emphasis: «Y razón no les falta»."
+          }
+        },
+        {
+          "n": 35,
+          "options": [
+            "vuelto",
+            "convertido",
+            "hecho"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "«Convertirse en» + noun; «volverse» goes with adjectives."
+          }
+        },
+        {
+          "n": 36,
+          "options": [
+            "es",
+            "sería",
+            "fuera"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "Hypothetical judgement: «sería injusto»."
+          }
+        },
+        {
+          "n": 37,
+          "options": [
+            "se",
+            "os",
+            "nos"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "First person plural, matching «descubriríamos»."
+          }
+        },
+        {
+          "n": 38,
+          "options": [
+            "Quizá",
+            "Aunque",
+            "Como"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "«Quizá» + subjunctive: «Quizá sea…»."
+          }
+        },
+        {
+          "n": 39,
+          "options": [
+            "Porque",
+            "Aunque",
+            "Para que"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "Concession with indicative: although the world will keep turning."
+          }
+        },
+        {
+          "n": 40,
+          "options": [
+            "quererlo",
+            "querer",
+            "quiera"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "«Basta con quererlo»: it is enough to want it."
+          }
+        }
+      ]
+    }
+  ]
+}

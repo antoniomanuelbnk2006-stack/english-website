@@ -1,0 +1,477 @@
+{
+  "id": "es-b2-exam-01-reading",
+  "version": 1,
+  "status": "published",
+  "level": "B2",
+  "paper": "reading",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "Lea el texto y elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "text": "La ciudad de los quince minutos\n\nImagine que puede llegar andando o en bicicleta, en menos de un cuarto de hora, a todo lo que necesita en su día a día: el trabajo, el colegio de sus hijos, el centro de salud, el supermercado, un parque y un lugar donde tomar algo con los amigos. Esa es la idea de la llamada «ciudad de los quince minutos», un modelo urbano que en los últimos años ha pasado de los congresos de urbanismo a los programas electorales.\n\nEl concepto lo popularizó el urbanista Carlos Moreno, profesor en una universidad de París, aunque sus raíces son mucho más antiguas. Al fin y al cabo, durante siglos las ciudades se organizaron así por pura necesidad: sin coches, la vida tenía que caber en un radio que se pudiera recorrer a pie. Fue a partir de los años cincuenta cuando muchas ciudades empezaron a separar las funciones: las viviendas en un sitio, las oficinas en otro y los centros comerciales a las afueras, unidos por grandes avenidas.\n\nLos defensores del modelo aseguran que sus ventajas son evidentes. Menos desplazamientos en coche significan menos contaminación y menos ruido, pero también más tiempo libre. Además, cuando la gente camina por su barrio, el comercio local se beneficia y los vecinos se conocen más. Algunos estudios relacionan incluso estos entornos con una menor sensación de soledad entre las personas mayores.\n\nSin embargo, no todo el mundo está convencido. Hay quien advierte de que, si un barrio se vuelve muy atractivo, los precios de la vivienda suben y los vecinos de toda la vida acaban marchándose. Otros señalan que el modelo funciona bien en los centros históricos, densos y bien equipados, pero que es mucho más difícil de aplicar en barrios periféricos donde apenas hay servicios. «No se trata de pintar carriles bici, sino de llevar escuelas, médicos y empleo adonde no los hay», resume una arquitecta madrileña.\n\nTampoco faltan las polémicas más ruidosas. En algunas ciudades europeas, los planes para reducir el tráfico se han interpretado como un intento de limitar la libertad de movimiento, y han provocado protestas. Los responsables municipales insisten en que nadie va a prohibir salir del barrio: el objetivo, dicen, es que salir sea una opción y no una obligación.\n\nPor ahora, más que una receta cerrada, la ciudad de los quince minutos parece una brújula: una manera de preguntarse, ante cada decisión urbanística, si acerca o aleja a la gente de lo que necesita.",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Según el texto, la «ciudad de los quince minutos» es una idea que…",
+              "options": [
+                "solo interesa a los arquitectos",
+                "ha llegado al debate político",
+                "nació en los años cincuenta"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "It has moved from urban-planning conferences into election programmes."
+              }
+            },
+            {
+              "n": 2,
+              "prompt": "¿Qué dice el autor sobre el origen del modelo?",
+              "options": [
+                "Recupera cómo eran las ciudades antes del coche",
+                "Es una invención reciente de un profesor francés",
+                "Se copió de las ciudades de Estados Unidos"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "Cities were organised like that for centuries out of necessity."
+              }
+            },
+            {
+              "n": 3,
+              "prompt": "Entre las ventajas del modelo, el texto menciona que…",
+              "options": [
+                "baja el precio de los alquileres",
+                "atrae a grandes centros comerciales",
+                "puede reducir el aislamiento de los mayores"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "Some studies link it to less loneliness among older people."
+              }
+            },
+            {
+              "n": 4,
+              "prompt": "¿Qué riesgo señalan algunos críticos?",
+              "options": [
+                "Que los comercios pequeños cierren",
+                "Que aumente el tráfico en el centro",
+                "Que los vecinos de siempre tengan que irse"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "If an area becomes attractive, prices rise and long-time residents leave."
+              }
+            },
+            {
+              "n": 5,
+              "prompt": "La arquitecta madrileña piensa que en los barrios periféricos…",
+              "options": [
+                "sobran carriles para bicicletas",
+                "faltan servicios básicos",
+                "el modelo ya funciona bien"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "Schools, doctors and jobs must be brought where there are none."
+              }
+            },
+            {
+              "n": 6,
+              "prompt": "Al final, el autor presenta el modelo como…",
+              "options": [
+                "una orientación para tomar decisiones",
+                "un plan que todas las ciudades deben copiar",
+                "una moda que pronto desaparecerá"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "He calls it a compass, not a closed recipe."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "Lea los cuatro textos en los que cuatro personas cuentan por qué dejaron la ciudad para vivir en un pueblo. Después, lea los enunciados y decida a qué texto (A, B, C o D) corresponde cada uno.",
+      "title": "Del asfalto al campo",
+      "tasks": [
+        {
+          "options": [
+            {
+              "id": "A",
+              "title": "Tomás, jubilado",
+              "text": "Volví al pueblo donde nací después de cuarenta años en Bilbao. Mi mujer y yo arreglamos la casa de mis padres, que estaba casi en ruinas. Aquí la vida es más barata y más tranquila, aunque cuando hay que ir al médico especialista tenemos que viajar a la capital. Lo mejor ha sido reencontrarme con amigos de la infancia que nunca se fueron."
+            },
+            {
+              "id": "B",
+              "title": "Lidia, traductora",
+              "text": "Llevaba diez años en Madrid pagando un alquiler altísimo por un piso interior. Cuando mi empresa me dejó trabajar a distancia, no lo dudé: me fui a un pueblo de Soria con buena conexión a internet. Lo que más me costó fue el invierno: oscurece pronto y hace un frío que no imaginaba. Pero he descubierto el placer de conocer a todos mis vecinos, y el alcalde me ha pedido que dé clases de inglés en la escuela."
+            },
+            {
+              "id": "C",
+              "title": "Rocío y Javier, ganaderos",
+              "text": "Nos fuimos con nuestros dos hijos pequeños porque queríamos que crecieran en contacto con la naturaleza. Compramos unas cabras y ahora hacemos queso. La gente del pueblo nos miró al principio con desconfianza: pensaban que no duraríamos ni un año. Ya llevamos seis. Lo que echamos de menos es el cine y los conciertos; el más cercano está a una hora en coche."
+            },
+            {
+              "id": "D",
+              "title": "Marcos, panadero",
+              "text": "Yo era informático en Barcelona y estaba quemado. Siempre me había gustado hacer pan, así que, cuando vi que el único horno de un pueblo de Teruel iba a cerrar porque el dueño se jubilaba, lo compré. Los primeros meses fueron durísimos: madrugones, cuentas que no salían y un oficio que tuve que aprender casi de cero. Hoy vendo pan en cinco pueblos de la comarca y he contratado a un chico de la zona."
+            }
+          ],
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "Esta persona aprendió un oficio nuevo después de mudarse.",
+              "answer": "D",
+              "explanation_es": {
+                "en": "Marcos had to learn baking almost from scratch."
+              }
+            },
+            {
+              "n": 8,
+              "prompt": "Los vecinos dudaban de que se quedaran mucho tiempo.",
+              "answer": "C",
+              "explanation_es": {
+                "en": "People thought they would not last a year."
+              }
+            },
+            {
+              "n": 9,
+              "prompt": "El clima fue una sorpresa negativa.",
+              "answer": "B",
+              "explanation_es": {
+                "en": "Lidia did not expect the cold and the early darkness."
+              }
+            },
+            {
+              "n": 10,
+              "prompt": "Echan en falta la oferta cultural.",
+              "answer": "C",
+              "explanation_es": {
+                "en": "They miss cinema and concerts, an hour away."
+              }
+            },
+            {
+              "n": 11,
+              "prompt": "Ha creado empleo en la zona.",
+              "answer": "D",
+              "explanation_es": {
+                "en": "Marcos has hired a local young man."
+              }
+            },
+            {
+              "n": 12,
+              "prompt": "Se ha mudado a un lugar que ya conocía.",
+              "answer": "A",
+              "explanation_es": {
+                "en": "Tomás returned to the village where he was born."
+              }
+            },
+            {
+              "n": 13,
+              "prompt": "El acceso a ciertos servicios sanitarios es complicado.",
+              "answer": "A",
+              "explanation_es": {
+                "en": "Specialist doctors are in the provincial capital."
+              }
+            },
+            {
+              "n": 14,
+              "prompt": "Pudo mudarse gracias a un cambio en su forma de trabajar.",
+              "answer": "B",
+              "explanation_es": {
+                "en": "Remote work allowed Lidia to move."
+              }
+            },
+            {
+              "n": 15,
+              "prompt": "Su decisión estuvo pensada en los niños.",
+              "answer": "C",
+              "explanation_es": {
+                "en": "They wanted their children to grow up close to nature."
+              }
+            },
+            {
+              "n": 16,
+              "prompt": "Colabora con la educación del pueblo.",
+              "answer": "B",
+              "explanation_es": {
+                "en": "The mayor asked her to teach English at the school."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gapped_text",
+      "rubric": "Lea el texto. Faltan seis fragmentos. Después, lea los ocho fragmentos (A–H) y decida en qué lugar del texto va cada uno. Hay dos fragmentos que no tiene que usar.",
+      "title": "Elogio de la siesta",
+      "text": "Durante mucho tiempo, la siesta tuvo mala fama fuera de España. Se asociaba con la pereza, con el calor y con una forma de vida poco productiva. {{17}} Hoy, en cambio, cada vez más estudios científicos defienden sus beneficios.\n\nUna investigación con miles de adultos en Grecia, por ejemplo, encontró que quienes dormían una siesta breve varias veces por semana tenían menos problemas de corazón. {{18}} Otros trabajos han observado mejoras en la memoria y en la capacidad de concentración después de un descanso corto a primera hora de la tarde.\n\nAhora bien, no todas las siestas son iguales. {{19}} Si dura más de media hora, el cuerpo entra en un sueño profundo y al despertar nos sentimos aturdidos, peor que antes. Además, una siesta demasiado larga puede dificultar el sueño por la noche.\n\nCuriosamente, la costumbre está desapareciendo en el país que la hizo famosa. {{20}} Con jornadas laborales cada vez más largas y comidas rápidas delante del ordenador, pocas personas pueden permitirse cerrar los ojos un rato después de comer.\n\nAlgunas empresas, sobre todo en Asia y en el sector tecnológico, han tomado nota. {{21}} Sus responsables aseguran que los empleados que descansan cometen menos errores y están de mejor humor.\n\nQuizá haya llegado el momento de dejar de ver la siesta como un lujo. {{22}}",
+      "options": [
+        {
+          "id": "A",
+          "text": "Por eso los médicos recomiendan dormir al menos tres horas después de comer."
+        },
+        {
+          "id": "B",
+          "text": "Tal vez sea, simplemente, una forma inteligente de cuidar la salud."
+        },
+        {
+          "id": "C",
+          "text": "Incluso se usaba como ejemplo para criticar la supuesta falta de seriedad de los españoles."
+        },
+        {
+          "id": "D",
+          "text": "Los investigadores creen que el descanso reduce el estrés, uno de los grandes enemigos del sistema cardiovascular."
+        },
+        {
+          "id": "E",
+          "text": "La clave, según los especialistas, está en la duración: lo ideal son unos veinte minutos."
+        },
+        {
+          "id": "F",
+          "text": "En sus oficinas han instalado salas silenciosas con sillones donde se puede dormir un rato."
+        },
+        {
+          "id": "G",
+          "text": "Según las encuestas, menos de uno de cada cinco españoles duerme la siesta a diario."
+        },
+        {
+          "id": "H",
+          "text": "En Grecia, la siesta está prohibida en la mayoría de los trabajos."
+        }
+      ],
+      "gaps": [
+        {
+          "n": 17,
+          "answer": "C",
+          "explanation_es": {
+            "en": "It develops the bad reputation described before: it was used to criticise Spaniards."
+          }
+        },
+        {
+          "n": 18,
+          "answer": "D",
+          "explanation_es": {
+            "en": "It explains the heart result just mentioned."
+          }
+        },
+        {
+          "n": 19,
+          "answer": "E",
+          "explanation_es": {
+            "en": "Introduces duration, explained next: more than half an hour is too long."
+          }
+        },
+        {
+          "n": 20,
+          "answer": "G",
+          "explanation_es": {
+            "en": "Gives data showing the custom is disappearing in Spain."
+          }
+        },
+        {
+          "n": 21,
+          "answer": "F",
+          "explanation_es": {
+            "en": "Explains what the companies have done, before their managers’ claims."
+          }
+        },
+        {
+          "n": 22,
+          "answer": "B",
+          "explanation_es": {
+            "en": "A conclusion that contrasts with «lujo»."
+          }
+        }
+      ]
+    },
+    {
+      "type": "mcq_cloze",
+      "rubric": "Lea el texto y elija la opción correcta (A, B o C) para cada hueco.",
+      "title": "Carta al director",
+      "text": "Señor director:\n\nLe escribo para expresar mi malestar {{23}} el cierre de la biblioteca de nuestro barrio, anunciado la semana pasada. {{24}} el ayuntamiento justifica la decisión por motivos económicos, creo que se trata de un grave error.\n\nLa biblioteca no es solo un lugar {{25}} se prestan libros. Allí estudian cada tarde decenas de jóvenes que no {{26}} de un espacio tranquilo en casa, y allí acuden muchas personas mayores para leer la prensa o aprender a usar el ordenador. Si finalmente la cierran, los más {{27}} serán precisamente quienes menos recursos tienen.\n\nMe sorprende, además, que nadie {{28}} preguntado a los vecinos. Hace dos años se nos prometió que el edificio se reformaría, y en {{29}} de cumplir esa promesa, ahora se nos anuncia que desaparecerá. No es extraño que mucha gente se {{30}} engañada.\n\nEntiendo que el presupuesto municipal es limitado, pero {{31}} que hay otras formas de ahorrar. Por ejemplo, se podría compartir el edificio con otras actividades culturales, {{32}} ya se hace en otras ciudades.\n\nPor todo ello, pido al ayuntamiento que {{33}} su decisión y que abra un proceso de participación. Los vecinos estamos dispuestos a colaborar, {{34}} que se nos escuche. Si no hay respuesta, nos {{35}} el próximo sábado delante del edificio.\n\nAtentamente,\n\nCelia Moreno, {{36}} de la Asociación de Vecinos del Barrio Norte",
+      "gaps": [
+        {
+          "n": 23,
+          "options": [
+            "por",
+            "para",
+            "sin"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "«Malestar por algo»: the cause of the complaint."
+          }
+        },
+        {
+          "n": 24,
+          "options": [
+            "Porque",
+            "Como",
+            "Aunque"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "Concession: although the council gives economic reasons…"
+          }
+        },
+        {
+          "n": 25,
+          "options": [
+            "cuando",
+            "donde",
+            "quien"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "A place «donde» books are lent."
+          }
+        },
+        {
+          "n": 26,
+          "options": [
+            "cuentan",
+            "disponen",
+            "tienen"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "«Disponer de algo» needs «de»; «tener» and «contar con» do not fit the preposition."
+          }
+        },
+        {
+          "n": 27,
+          "options": [
+            "beneficiados",
+            "interesados",
+            "perjudicados"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "Those who will be harmed by the closure."
+          }
+        },
+        {
+          "n": 28,
+          "options": [
+            "haya",
+            "ha",
+            "había"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "«Me sorprende que…» takes the subjunctive: «haya preguntado»."
+          }
+        },
+        {
+          "n": 29,
+          "options": [
+            "vez",
+            "lugar",
+            "cambio"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "Fixed expression «en lugar de»: instead of."
+          }
+        },
+        {
+          "n": 30,
+          "options": [
+            "sienta",
+            "siente",
+            "sentirá"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "«No es extraño que…» takes the subjunctive."
+          }
+        },
+        {
+          "n": 31,
+          "options": [
+            "dudo de",
+            "no creo",
+            "estoy convencida de"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "«Estoy convencida de que hay…»: indicative after a certainty expression."
+          }
+        },
+        {
+          "n": 32,
+          "options": [
+            "que",
+            "cual",
+            "como"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "«Como ya se hace…»: as is already done."
+          }
+        },
+        {
+          "n": 33,
+          "options": [
+            "reconsidera",
+            "reconsidere",
+            "reconsiderará"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "«Pido que…» takes the subjunctive."
+          }
+        },
+        {
+          "n": 34,
+          "options": [
+            "siempre",
+            "nunca",
+            "pues"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "«Siempre que» + subjunctive: provided that we are listened to."
+          }
+        },
+        {
+          "n": 35,
+          "options": [
+            "concentraremos",
+            "concentramos",
+            "concentraríamos"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "Real condition with «si + presente» → future."
+          }
+        },
+        {
+          "n": 36,
+          "options": [
+            "presidente",
+            "presidencia",
+            "presidenta"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "The writer is a woman: «presidenta»."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -10,9 +10,10 @@ import { gradeExamPaper } from '@/features/exams/lib/grade';
 import { getLastSitting } from '@/features/exams/server/queries';
 import { getSessionOrRedirect } from '@/lib/auth';
 import { APP_TIME_ZONE } from '@/lib/dates';
-import { EXAM_FORMATS } from '@/lib/content/exam-formats';
+import { examFormat } from '@/lib/content/exam-formats';
 import { parsePaperId } from '@/lib/content/exam-schema';
 import { findExamPaper } from '@/lib/content/exams';
+import { contentLang, languageOfId } from '@/lib/content/language';
 import { intlLocale } from '@/lib/i18n';
 import { getLocale, getT } from '@/lib/i18n/server';
 
@@ -32,7 +33,7 @@ export default async function ExamResultPage({ params }: PageProps<'/examenes/[i
   if (!sitting) redirect(`/examenes/${paper.id}` as Route);
 
   const [t, locale] = await Promise.all([getT(), getLocale()]);
-  const format = EXAM_FORMATS[paper.level];
+  const format = examFormat(paper.level, languageOfId(paper.id));
   const answers = Object.fromEntries(
     Object.entries(sitting.answers).map(([n, value]) => [Number(n), value]),
   );
@@ -55,7 +56,7 @@ export default async function ExamResultPage({ params }: PageProps<'/examenes/[i
           {t('exams.backToIndex')}
         </Link>
         <h1 className="text-heading-sm sm:text-heading">{t('exams.resultTitle')}</h1>
-        <p lang="en" className="text-muted">
+        <p lang={contentLang(paper.id)} className="text-muted">
           {format.exam} · {format[paper.paper].title}
         </p>
         <div className="flex flex-wrap items-center gap-1.5">

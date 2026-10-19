@@ -1,7 +1,7 @@
 import { matchesAny } from '@/features/tasks/lib/grade';
 import { gradeTransformation, type UoeNote } from '@/features/use-of-english/lib/grade';
 import {
-  EXAM_FORMATS,
+  examFormat,
   SPEAKING_CRITERIA,
   speakingMarks,
   type ExamFormat,
@@ -10,6 +10,7 @@ import {
   type PartFormat,
   type SpeakingCriterion,
 } from '@/lib/content/exam-formats';
+import { languageOfId } from '@/lib/content/language';
 import type { ExamPart, QuestionPaper } from '@/lib/content/exam-schema';
 import { PASS_RATIO, isPass, scaleBand, toScale, type ScaleBand } from './scale';
 
@@ -191,7 +192,7 @@ function sectionResult(
 }
 
 export function gradeExamPaper(paper: QuestionPaper, answers: ExamAnswers): ExamResult {
-  const format = EXAM_FORMATS[paper.level];
+  const format = examFormat(paper.level, languageOfId(paper.id));
   const formats = format[paper.paper].parts;
 
   const parts: ExamPartResult[] = paper.parts.flatMap((part, index) => {

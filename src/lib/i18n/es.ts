@@ -744,6 +744,31 @@ export const es = {
       'Ejercicios originales con el formato de los exámenes de Cambridge English (A2 Key, B1 Preliminary, B2 First, C1 Advanced y C2 Proficiency). Señal no está afiliada a Cambridge.',
   },
   exams: {
+    subtitleDele:
+      'Simulacros con las pruebas, las tareas y el tiempo del DELE, el examen de español del Instituto Cervantes. Una prueba, una entrega, como el día del examen.',
+    officialNoteDele:
+      'Formato del DELE (orientativo). Cada prueba vale 25 puntos; aquí se da por aprobada con el 60 %.',
+    disclaimerDele:
+      'Simulacros originales con la estructura de los exámenes DELE (A1–C2): pruebas, tareas, número de preguntas y tiempos. El reparto de preguntas por tarea es orientativo. Señal no está afiliada al Instituto Cervantes.',
+    writingElsewhereDele:
+      'La prueba de expresión e interacción escritas se hace en «Escribir», con el modo examen y su cuenta atrás.',
+    sectionReadingDele: 'Comprensión de lectura',
+    sectionListeningDele: 'Comprensión auditiva',
+    speakingNoVoiceDele: 'Este navegador no tiene voz en español: las preguntas saldrán escritas.',
+    critCoherenceHint: '¿Ordenas las ideas y las unes con conectores para que se te siga bien?',
+    critFluencyHint:
+      '¿Hablas con un ritmo natural, sin pausas largas, y se te entiende sin esfuerzo?',
+    critAccuracyHint:
+      '¿Usas la gramática y el vocabulario del nivel con pocos errores, y ninguno que impida entenderte?',
+    critRangeHint:
+      '¿Tienes recursos variados (vocabulario y estructuras) para decir lo que quieres sin repetirte?',
+    critHolisticHint:
+      'Impresión general del examinador: ¿cumples las tareas con la lengua que pide el nivel?',
+    critCoherence: 'Coherencia',
+    critFluency: 'Fluidez',
+    critAccuracy: 'Corrección',
+    critRange: 'Alcance',
+    critHolistic: 'Calificación holística',
     subtitle:
       'Simulacros con el formato, las partes y el tiempo oficial de los exámenes de Cambridge. Una prueba, una entrega, como el día del examen.',
     officialNote:

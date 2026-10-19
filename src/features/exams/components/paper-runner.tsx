@@ -1,5 +1,6 @@
 'use client';
 
+import { useContentLang } from '@/components/content-language';
 import { ArrowLeft, ArrowRight, Clock, Headphones } from 'lucide-react';
 import type { Route } from 'next';
 import Link from 'next/link';
@@ -83,6 +84,7 @@ export function PaperRunner({
   format: RunnerFormat;
   audioBase: string;
 }) {
+  const lang = useContentLang();
   const t = useT();
   const router = useRouter();
   const listening = paper.paper === 'listening';
@@ -263,7 +265,7 @@ export function PaperRunner({
                 <span className="tabular-nums w-16 shrink-0 text-muted">
                   {t('exams.part', { n: index + 1 })}
                 </span>
-                <span lang="en" className="min-w-0 flex-1 font-medium">
+                <span lang={lang} className="min-w-0 flex-1 font-medium">
                   {part.name}
                 </span>
                 <span className="tabular-nums text-caption text-muted">
@@ -432,11 +434,11 @@ export function PaperRunner({
           <header className="flex flex-col gap-1">
             <h2 id="exam-part" className="text-subheading">
               {t('exams.part', { n: current + 1 })}
-              <span lang="en" className="ml-2 font-normal text-muted">
+              <span lang={lang} className="ml-2 font-normal text-muted">
                 {partFormat.name}
               </span>
             </h2>
-            <p lang="en" className="text-body-sm text-muted">
+            <p lang={lang} className="text-body-sm text-muted">
               {part.rubric}
             </p>
           </header>

@@ -41,8 +41,9 @@ Cada ADR recoge **una** decisión: el contexto, lo que se decidió, las alternat
 | [0035](0035-contenido-por-idioma.md) | El contenido de cada idioma, en su carpeta (`content/es/…`) y con el idioma delante del id (`es-a1-rea-001`); el inglés, donde estaba | Aceptada |
 | [0036](0036-idioma-que-practicas.md) | El idioma que practicas: en `profiles.settings`, solo entre los que tienen contenido; cada sección enseña solo ese idioma y el selector aparece cuando hay más de uno | Aceptada |
 | [0037](0037-datos-por-idioma.md) | Los datos del usuario, por idioma: nivel declarado, niveles por destreza, léxico y tarjetas llevan `language` (migración 0009); lo ligado a un contenido lo deduce de su id | Aceptada |
-| [0038](0038-primera-tanda-de-espanol.md) | Español de A1 a C2: el pipeline de lecciones por idioma (léxico generado, sin modelo externo), 70 lecciones con voz de Piper, 25 fichas, 33 consignas y 2 399 palabras | Aceptada |
+| [0038](0038-primera-tanda-de-espanol.md) | Español de A1 a C2: el pipeline de lecciones por idioma (léxico generado, sin modelo externo), 113 lecciones con voz de Piper, 25 fichas, 33 consignas y 2 760 palabras | Aceptada |
 | [0039](0039-pronunciacion-y-use-of-english-por-idioma.md) | Pronunciación y Use of English en otros idiomas: voz y reconocimiento por idioma, tildes que cuentan, 21 + 20 ejercicios de español | Aceptada |
+| [0040](0040-examenes-de-espanol.md) | Simulacros de examen de español con el formato del DELE: `examFormat(nivel, idioma)`, criterios orales del DELE y 18 pruebas con audio | Aceptada |
 
 Plantilla:
 

@@ -1,0 +1,382 @@
+{
+  "id": "es-c2-exam-01-reading",
+  "version": 1,
+  "status": "published",
+  "level": "C2",
+  "paper": "reading",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq_cloze",
+      "rubric": "Lea el texto y elija la opción correcta (A, B o C) para cada hueco.",
+      "title": "El oficio de corregir",
+      "text": "Pocos lectores reparan en ellos, y sin embargo sin su labor muchos libros {{1}} plagados de erratas. Los correctores trabajan en la sombra, con una paciencia que raya en lo obsesivo, y su mayor éxito consiste, paradójicamente, en que nadie {{2}} su existencia. Cuando hacen bien su trabajo, el texto fluye; cuando fallan, el error salta a la vista y la culpa recae, {{3}} injustamente, sobre el autor.\n\nEl oficio ha cambiado mucho en las últimas décadas. Los programas informáticos detectan hoy buena parte de las faltas de ortografía, lo que ha llevado a algunas editoriales a {{4}} de este gasto. Craso error: ninguna máquina distingue todavía, con la finura de un buen profesional, una ambigüedad involuntaria de un juego de palabras deliberado. Un corrector no se {{5}} a enmendar tildes; sopesa cada matiz, {{6}} cuándo una repetición es torpeza y cuándo es estilo.",
+      "gaps": [
+        {
+          "n": 1,
+          "options": [
+            "estarán",
+            "estarían",
+            "estuvieran"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "Hypothetical result of an implicit condition: conditional «estarían»."
+          }
+        },
+        {
+          "n": 2,
+          "options": [
+            "note",
+            "nota",
+            "notará"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "«Consiste en que nadie note…»: subjunctive for a non-real outcome."
+          }
+        },
+        {
+          "n": 3,
+          "options": [
+            "nunca",
+            "a duras penas",
+            "no pocas veces"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "«No pocas veces»: quite often, unfairly."
+          }
+        },
+        {
+          "n": 4,
+          "options": [
+            "privarse",
+            "carecer",
+            "prescindir"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "«Prescindir de algo»: to do without."
+          }
+        },
+        {
+          "n": 5,
+          "options": [
+            "reduce",
+            "limita",
+            "restringe"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "«Limitarse a + infinitive»: to confine oneself to."
+          }
+        },
+        {
+          "n": 6,
+          "options": [
+            "discierne",
+            "disuade",
+            "distrae"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "«Discernir»: to tell apart."
+          }
+        }
+      ]
+    },
+    {
+      "type": "gapped_text",
+      "rubric": "Lea el texto. Faltan siete fragmentos. Después, lea los ocho fragmentos (A–H) y decida en qué lugar del texto va cada uno. Hay un fragmento que no tiene que usar.",
+      "title": "La invención del paisaje",
+      "text": "Solemos creer que el paisaje es algo que está ahí, esperando a ser contemplado. {{7}} Durante siglos, las montañas no inspiraron admiración, sino temor: eran lugares inhóspitos, morada de bandidos y de fieras, que convenía atravesar lo más rápido posible.\n\nLa mirada cambió poco a poco. {{8}} Los pintores empezaron a representar la naturaleza no como mero fondo de escenas religiosas o mitológicas, sino como protagonista. Y los viajeros ilustrados comenzaron a escribir sobre los Alpes con un entusiasmo que habría desconcertado a sus abuelos.\n\n{{9}} Los románticos encontraron en las cumbres nevadas, en los acantilados y en las tormentas una experiencia nueva, a medio camino entre el placer y el miedo, a la que llamaron lo sublime.\n\nEste giro no fue solo estético. {{10}} Los primeros parques nacionales nacieron, en gran medida, del deseo de preservar paisajes que la pintura y la literatura habían convertido en símbolos de la nación.\n\nPero mirar un paisaje no es un acto inocente. {{11}} El campesino que ara una ladera y el turista que la fotografía no ven lo mismo, aunque tengan ante sus ojos idéntica porción de tierra.\n\n{{12}} Hoy, buena parte de los paisajes que consideramos naturales son, en realidad, el resultado de siglos de intervención humana: los prados de montaña, las dehesas o los bancales de olivos no existirían sin quienes los trabajaron.\n\nTal vez por eso la pregunta no sea si debemos proteger el paisaje, sino cuál, y para quién. {{13}}",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fue, sin embargo, en el siglo diecinueve cuando esa fascinación alcanzó su plenitud."
+        },
+        {
+          "id": "B",
+          "text": "Los románticos, en cambio, despreciaron las montañas por considerarlas vulgares."
+        },
+        {
+          "id": "C",
+          "text": "Lo que vemos depende siempre de lo que sabemos, de lo que esperamos y de lo que necesitamos."
+        },
+        {
+          "id": "D",
+          "text": "A partir del Renacimiento, algunos factores fueron preparando el terreno para una nueva sensibilidad."
+        },
+        {
+          "id": "E",
+          "text": "Responder a esa pregunta exige escuchar a quienes lo contemplan, pero también a quienes lo habitan."
+        },
+        {
+          "id": "F",
+          "text": "Tuvo también consecuencias políticas y económicas de largo alcance."
+        },
+        {
+          "id": "G",
+          "text": "Conviene, además, desconfiar de la oposición tajante entre lo natural y lo humano."
+        },
+        {
+          "id": "H",
+          "text": "Nada más lejos de la realidad: el paisaje, como lo entendemos hoy, es una invención relativamente reciente."
+        }
+      ],
+      "gaps": [
+        {
+          "n": 7,
+          "answer": "H",
+          "explanation_es": {
+            "en": "It contradicts the common belief just stated and introduces the thesis."
+          }
+        },
+        {
+          "n": 8,
+          "answer": "D",
+          "explanation_es": {
+            "en": "«La mirada cambió poco a poco»: it introduces the gradual factors described next."
+          }
+        },
+        {
+          "n": 9,
+          "answer": "A",
+          "explanation_es": {
+            "en": "It situates the peak of fascination in the 19th century, before the Romantics."
+          }
+        },
+        {
+          "n": 10,
+          "answer": "F",
+          "explanation_es": {
+            "en": "«Este giro no fue solo estético»: it adds political and economic consequences."
+          }
+        },
+        {
+          "n": 11,
+          "answer": "C",
+          "explanation_es": {
+            "en": "It explains why looking is not innocent, illustrated by the farmer and the tourist."
+          }
+        },
+        {
+          "n": 12,
+          "answer": "G",
+          "explanation_es": {
+            "en": "It introduces the idea that «natural» landscapes are often man-made."
+          }
+        },
+        {
+          "n": 13,
+          "answer": "E",
+          "explanation_es": {
+            "en": "It answers the closing question: listen to those who live there."
+          }
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "Lea los seis fragmentos de reseñas de libros. Después, lea los enunciados y decida a qué reseña (A–F) corresponde cada uno. Puede usar una reseña más de una vez.",
+      "title": "Reseñas",
+      "tasks": [
+        {
+          "options": [
+            {
+              "id": "A",
+              "title": "Reseña 1",
+              "text": "Pocas novelas recientes logran lo que consigue esta: hablar de la enfermedad de una madre sin caer ni una sola vez en el sentimentalismo. La prosa, seca y precisa, apenas concede adjetivos, y es precisamente esa contención la que acaba conmoviendo. Se le puede reprochar un final algo apresurado."
+            },
+            {
+              "id": "B",
+              "title": "Reseña 5",
+              "text": "La traducción de esta novela japonesa era una deuda pendiente con los lectores en español, y la espera ha merecido la pena. La traductora ha sabido encontrar equivalentes para los registros de cada personaje, algo que la versión anterior, hecha a partir del inglés, no lograba en absoluto."
+            },
+            {
+              "id": "C",
+              "title": "Reseña 6",
+              "text": "Con este poemario, su autora confirma que es una de las voces más personales de su generación. Los poemas, breves y aparentemente sencillos, esconden una arquitectura muy cuidada. No es un libro para leer de un tirón, sino para volver a él una y otra vez."
+            },
+            {
+              "id": "D",
+              "title": "Reseña 3",
+              "text": "Estos relatos, ambientados en un barrio obrero de los años setenta, rebosan humor y ternura. Algunos personajes reaparecen de un cuento a otro, de modo que el conjunto puede leerse casi como una novela. Lástima que la editorial no haya cuidado más la edición: las erratas se cuentan por decenas."
+            },
+            {
+              "id": "E",
+              "title": "Reseña 4",
+              "text": "Se presenta como un ensayo sobre la felicidad, pero es, en el fondo, un manual de autoayuda con pretensiones filosóficas. Las citas de Séneca y Spinoza no ocultan la pobreza de las ideas, que se repiten capítulo tras capítulo. Su enorme éxito de ventas dice más de nosotros que del libro."
+            },
+            {
+              "id": "F",
+              "title": "Reseña 2",
+              "text": "El autor se propone desmontar los mitos sobre la conquista de América y, en buena medida, lo consigue. Su erudición es abrumadora; demasiado, quizá, para el lector no especializado, que puede perderse entre notas al pie y referencias a archivos. Un libro imprescindible, pero exigente."
+            }
+          ],
+          "questions": [
+            {
+              "n": 14,
+              "prompt": "La reseña critica la calidad material de la edición.",
+              "answer": "D",
+              "explanation_es": {
+                "en": "Dozens of typos: the publisher did not take care."
+              }
+            },
+            {
+              "n": 15,
+              "prompt": "El reseñista considera que el libro no está al alcance de cualquier lector.",
+              "answer": "F",
+              "explanation_es": {
+                "en": "Too much erudition for a non-specialist reader."
+              }
+            },
+            {
+              "n": 16,
+              "prompt": "Se valora positivamente la sobriedad del estilo.",
+              "answer": "A",
+              "explanation_es": {
+                "en": "Dry, precise prose; restraint moves the reader."
+              }
+            },
+            {
+              "n": 17,
+              "prompt": "El reseñista interpreta el éxito comercial como un síntoma social.",
+              "answer": "E",
+              "explanation_es": {
+                "en": "Its sales say more about us than about the book."
+              }
+            },
+            {
+              "n": 18,
+              "prompt": "Se compara con una versión anterior del mismo texto.",
+              "answer": "B",
+              "explanation_es": {
+                "en": "The earlier translation from English failed."
+              }
+            },
+            {
+              "n": 19,
+              "prompt": "Se señala un defecto en la parte final.",
+              "answer": "A",
+              "explanation_es": {
+                "en": "A somewhat rushed ending."
+              }
+            },
+            {
+              "n": 20,
+              "prompt": "Las piezas del libro están relacionadas entre sí.",
+              "answer": "D",
+              "explanation_es": {
+                "en": "Characters reappear from story to story."
+              }
+            },
+            {
+              "n": 21,
+              "prompt": "El libro invita a una lectura pausada y repetida.",
+              "answer": "C",
+              "explanation_es": {
+                "en": "Not to be read in one go, but returned to."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Lea el texto y elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "text": "Elogio de la duda\n\nVivimos tiempos poco propicios para la duda. En el debate público, admitir que no se tiene una opinión formada sobre un asunto complejo se interpreta como debilidad o, peor aún, como falta de compromiso. Los tertulianos opinan de todo con idéntica rotundidad, y las redes sociales premian la frase contundente sobre el razonamiento matizado. Quien dice «depende» o «no lo sé» pierde la partida antes de empezarla.\n\nY, sin embargo, la duda ha sido el motor de casi todo lo valioso que ha producido el pensamiento humano. La ciencia moderna nació precisamente cuando unos cuantos se atrevieron a sospechar de lo que todos daban por sentado. Montaigne, que hizo de la pregunta «¿qué sé yo?» su divisa, no era un escéptico paralizado, sino un hombre extraordinariamente curioso que se negaba a aceptar verdades por el mero hecho de que fueran antiguas o mayoritarias.\n\nConviene, no obstante, distinguir entre dos clases de duda. Existe una duda perezosa, que consiste en declarar que todo es opinable para no tener que pensar en nada. Es la del que, ante cualquier dato incómodo, replica que «hay estudios para todo». Esta duda no es humildad, sino una forma sofisticada de dogmatismo: la de quien ha decidido de antemano que ninguna prueba podrá hacerle cambiar de opinión.\n\nLa otra duda, la fecunda, es mucho más exigente. Obliga a examinar los argumentos contrarios en su mejor versión, no en su caricatura; a reconocer los propios sesgos; a aceptar que una convicción puede ser firme y, aun así, provisional. Quien duda de este modo no renuncia a actuar: sabe que a menudo hay que decidir sin certeza absoluta, pero lo hace con la mente abierta a la posibilidad de equivocarse.\n\nCultivar esta actitud no es sencillo, porque va contra algunas de nuestras inclinaciones más arraigadas. Nos gusta tener razón y nos incomoda la incertidumbre. Pero una sociedad que desprecia la duda se condena a repetir sus errores con la mayor de las seguridades. Quizá la educación debería dedicar menos esfuerzo a transmitir respuestas y más a enseñar a formular buenas preguntas.",
+          "questions": [
+            {
+              "n": 22,
+              "prompt": "Según el primer párrafo, en el debate público actual…",
+              "options": [
+                "se castiga a quien reconoce no tener una opinión clara",
+                "se valora la capacidad de matizar",
+                "nadie se atreve a opinar con firmeza"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "Admitting you have no formed opinion is seen as weakness."
+              }
+            },
+            {
+              "n": 23,
+              "prompt": "El autor menciona a Montaigne como ejemplo de…",
+              "options": [
+                "un escéptico incapaz de actuar",
+                "un defensor de las verdades tradicionales",
+                "una duda que nace de la curiosidad"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "Not a paralysed sceptic but an extraordinarily curious man."
+              }
+            },
+            {
+              "n": 24,
+              "prompt": "La «duda perezosa» se caracteriza por…",
+              "options": [
+                "llevar a cambiar de opinión con facilidad",
+                "ser en realidad una forma de dogmatismo",
+                "basarse en estudios científicos"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "It is a sophisticated form of dogmatism."
+              }
+            },
+            {
+              "n": 25,
+              "prompt": "¿Qué exige la «duda fecunda»?",
+              "options": [
+                "Renunciar a tomar decisiones importantes",
+                "Considerar los argumentos contrarios en su forma más sólida",
+                "Desconfiar de toda convicción firme"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "Examining opposing arguments in their best version."
+              }
+            },
+            {
+              "n": 26,
+              "prompt": "Según el autor, quien duda de forma fecunda…",
+              "options": [
+                "evita decidir hasta tener certeza",
+                "nunca llega a tener convicciones",
+                "actúa, aunque acepta que puede equivocarse"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "He decides without absolute certainty, open to being wrong."
+              }
+            },
+            {
+              "n": 27,
+              "prompt": "¿Qué propone el autor en la conclusión?",
+              "options": [
+                "Que la educación enseñe a preguntar",
+                "Que se eviten los debates públicos",
+                "Que se limite la libertad de opinión"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "Less effort transmitting answers, more teaching good questions."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

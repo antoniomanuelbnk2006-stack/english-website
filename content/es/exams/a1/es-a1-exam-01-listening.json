@@ -1,0 +1,458 @@
+{
+  "id": "es-a1-exam-01-listening",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "paper": "listening",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "Va a escuchar cinco diálogos breves. Cada diálogo se repite dos veces. Elija la respuesta correcta (A, B o C). En el examen las opciones son imágenes; aquí están escritas.",
+      "groups": [
+        {
+          "recording": {
+            "id": "r01",
+            "speakers": [
+              { "id": "mujer", "name": "Mujer", "accent": "es-ES", "gender": "female" },
+              { "id": "hombre", "name": "Hombre", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "hombre", "text": "Perdone, ¿qué hora es?" },
+              { "speaker": "mujer", "text": "Son las cuatro y media." },
+              { "speaker": "hombre", "text": "¿Las cuatro y media? ¡Mi autobús sale a las cinco!" }
+            ],
+            "audio": { "src": "audio/exams/a1/es-a1-exam-01-listening/v1/r01.m4a", "duration_s": 7.631 }
+          },
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "¿Qué hora es?",
+              "options": ["Las cinco", "Las cuatro y media", "Las cuatro"],
+              "answer": 1,
+              "explanation_es": { "en": "She says it is half past four." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r02",
+            "speakers": [
+              { "id": "dependienta", "name": "Dependienta", "accent": "es-ES", "gender": "female" },
+              { "id": "cliente", "name": "Cliente", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "dependienta", "text": "Hola, ¿qué quiere tomar?" },
+              { "speaker": "cliente", "text": "Un café con leche, por favor. Y una tostada." },
+              { "speaker": "dependienta", "text": "Lo siento, no tenemos tostadas. Tenemos croissants." },
+              { "speaker": "cliente", "text": "Vale, pues un croissant." }
+            ],
+            "audio": { "src": "audio/exams/a1/es-a1-exam-01-listening/v1/r02.m4a", "duration_s": 11.241 }
+          },
+          "questions": [
+            {
+              "n": 2,
+              "prompt": "¿Qué toma el cliente con el café?",
+              "options": ["Un croissant", "Una tostada", "Un zumo"],
+              "answer": 0,
+              "explanation_es": { "en": "There is no toast, so he has a croissant." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r03",
+            "speakers": [
+              { "id": "nina", "name": "Niña", "accent": "es-ES", "gender": "female" },
+              { "id": "padre", "name": "Padre", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "nina", "text": "Papá, ¿dónde están mis zapatos?" },
+              { "speaker": "padre", "text": "¿No están debajo de la cama?" },
+              { "speaker": "nina", "text": "No, no están." },
+              { "speaker": "padre", "text": "Mira en el baño, al lado de la puerta." },
+              { "speaker": "nina", "text": "¡Sí, aquí están!" }
+            ],
+            "audio": { "src": "audio/exams/a1/es-a1-exam-01-listening/v1/r03.m4a", "duration_s": 11.693 }
+          },
+          "questions": [
+            {
+              "n": 3,
+              "prompt": "¿Dónde están los zapatos?",
+              "options": ["Debajo de la cama", "En la cocina", "En el baño"],
+              "answer": 2,
+              "explanation_es": { "en": "She finds them in the bathroom, next to the door." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r04",
+            "speakers": [
+              { "id": "amiga", "name": "Amiga", "accent": "es-ES", "gender": "female" },
+              { "id": "amigo", "name": "Amigo", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "amiga", "text": "¿Vamos al cine el sábado?" },
+              { "speaker": "amigo", "text": "El sábado no puedo, trabajo. ¿El domingo?" },
+              { "speaker": "amiga", "text": "Vale, el domingo por la tarde." }
+            ],
+            "audio": { "src": "audio/exams/a1/es-a1-exam-01-listening/v1/r04.m4a", "duration_s": 8.163 }
+          },
+          "questions": [
+            {
+              "n": 4,
+              "prompt": "¿Qué día van al cine?",
+              "options": ["El sábado", "El viernes", "El domingo"],
+              "answer": 2,
+              "explanation_es": { "en": "He works on Saturday, so they go on Sunday." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r05",
+            "speakers": [
+              { "id": "mujer", "name": "Mujer", "accent": "es-ES", "gender": "female" },
+              { "id": "hombre", "name": "Hombre", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "mujer", "text": "¿Cómo vas al trabajo? ¿En coche?" },
+              {
+                "speaker": "hombre",
+                "text": "No, en coche no. Voy en bicicleta. Es más rápido y no contamina."
+              }
+            ],
+            "audio": { "src": "audio/exams/a1/es-a1-exam-01-listening/v1/r05.m4a", "duration_s": 7.83 }
+          },
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "¿Cómo va el hombre al trabajo?",
+              "options": ["En coche", "En bicicleta", "En autobús"],
+              "answer": 1,
+              "explanation_es": { "en": "He cycles to work." }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Va a escuchar cinco mensajes y anuncios. Cada uno se repite dos veces. Elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r06",
+            "speakers": [
+              { "id": "voz", "name": "Voz", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "voz",
+                "text": "Atención, por favor. El tren con destino a Madrid sale de la vía cuatro. Repito: vía cuatro."
+              }
+            ],
+            "audio": { "src": "audio/exams/a1/es-a1-exam-01-listening/v1/r06.m4a", "duration_s": 6.606 }
+          },
+          "questions": [
+            {
+              "n": 6,
+              "prompt": "¿De qué vía sale el tren a Madrid?",
+              "options": ["De la vía cuatro", "De la vía dos", "De la vía catorce"],
+              "answer": 0,
+              "explanation_es": { "en": "Platform four." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r07",
+            "speakers": [
+              { "id": "pedro", "name": "Pedro", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "pedro",
+                "text": "Hola, Laura, soy Pedro. Estoy en el bar de la plaza. Te espero aquí a las ocho. Hasta luego."
+              }
+            ],
+            "audio": { "src": "audio/exams/a1/es-a1-exam-01-listening/v1/r07.m4a", "duration_s": 6.465 }
+          },
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "¿Dónde está Pedro?",
+              "options": ["En un bar", "En su casa", "En el trabajo"],
+              "answer": 0,
+              "explanation_es": { "en": "He is in the bar in the square." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r08",
+            "speakers": [
+              { "id": "voz", "name": "Voz", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "voz",
+                "text": "Supermercado Ahorro. Hoy, oferta especial: dos kilos de naranjas por tres euros. Solo hoy."
+              }
+            ],
+            "audio": { "src": "audio/exams/a1/es-a1-exam-01-listening/v1/r08.m4a", "duration_s": 6.543 }
+          },
+          "questions": [
+            {
+              "n": 8,
+              "prompt": "¿Qué está en oferta?",
+              "options": ["Las manzanas", "El pan", "Las naranjas"],
+              "answer": 2,
+              "explanation_es": { "en": "Oranges: two kilos for three euros." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r09",
+            "speakers": [
+              { "id": "recepcionista", "name": "Recepcionista", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "recepcionista",
+                "text": "Buenos días, señor Ruiz. Le llamo del centro de salud. Su cita con el médico es el jueves a las once."
+              }
+            ],
+            "audio": { "src": "audio/exams/a1/es-a1-exam-01-listening/v1/r09.m4a", "duration_s": 7.128 }
+          },
+          "questions": [
+            {
+              "n": 9,
+              "prompt": "¿Cuándo es la cita?",
+              "options": ["El martes", "El jueves", "El sábado"],
+              "answer": 1,
+              "explanation_es": { "en": "On Thursday at eleven." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r10",
+            "speakers": [
+              { "id": "profesor", "name": "Profesor", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "profesor",
+                "text": "Chicos, mañana vamos al museo. Necesitáis traer agua y un bocadillo. Salimos a las nueve."
+              }
+            ],
+            "audio": { "src": "audio/exams/a1/es-a1-exam-01-listening/v1/r10.m4a", "duration_s": 6.629 }
+          },
+          "questions": [
+            {
+              "n": 10,
+              "prompt": "¿Qué tienen que llevar los alumnos?",
+              "options": ["Un libro", "Agua y comida", "Dinero"],
+              "answer": 1,
+              "explanation_es": { "en": "Water and a sandwich." }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "Va a escuchar a Rosa hablar con su amigo Miguel sobre su semana. La conversación se repite dos veces. Relacione cada día con lo que hace Rosa (A–H). Hay dos opciones que no tiene que usar.",
+      "title": "La semana de Rosa",
+      "recording": {
+        "id": "r11",
+        "speakers": [
+          { "id": "rosa", "name": "Rosa", "accent": "es-ES", "gender": "female" },
+          { "id": "miguel", "name": "Miguel", "accent": "es-ES", "gender": "male" }
+        ],
+        "segments": [
+          { "speaker": "miguel", "text": "Rosa, ¿quedamos esta semana para tomar algo?" },
+          {
+            "speaker": "rosa",
+            "text": "Uf, tengo una semana muy ocupada. El lunes tengo clase de baile, como siempre."
+          },
+          { "speaker": "miguel", "text": "¿Y el martes?" },
+          { "speaker": "rosa", "text": "El martes voy al dentista a las seis. No me gusta nada." },
+          { "speaker": "miguel", "text": "¿El miércoles?" },
+          {
+            "speaker": "rosa",
+            "text": "El miércoles juego al tenis con mi hermana. Y el jueves ceno con mis compañeros del trabajo."
+          },
+          { "speaker": "miguel", "text": "Entonces, ¿el viernes?" },
+          { "speaker": "rosa", "text": "El viernes estoy muy cansada. Me quedo en casa y veo una película." },
+          { "speaker": "miguel", "text": "¿Y el fin de semana?" },
+          {
+            "speaker": "rosa",
+            "text": "El sábado visito a mi abuela, que vive en un pueblo. Pero el domingo estoy libre."
+          },
+          { "speaker": "miguel", "text": "Perfecto. ¡El domingo, entonces!" }
+        ],
+        "audio": { "src": "audio/exams/a1/es-a1-exam-01-listening/v1/r11.m4a", "duration_s": 41.589 }
+      },
+      "tasks": [
+        {
+          "options": [
+            { "id": "A", "text": "cenar con compañeros del trabajo" },
+            { "id": "B", "text": "ir de compras" },
+            { "id": "C", "text": "ir a clase de baile" },
+            { "id": "D", "text": "ir al dentista" },
+            { "id": "E", "text": "ver una película en casa" },
+            { "id": "F", "text": "ir a la piscina" },
+            { "id": "G", "text": "jugar al tenis" },
+            { "id": "H", "text": "visitar a su abuela" }
+          ],
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "Lunes",
+              "answer": "C",
+              "explanation_es": { "en": "On Monday she has her dance class." }
+            },
+            {
+              "n": 12,
+              "prompt": "Martes",
+              "answer": "D",
+              "explanation_es": { "en": "On Tuesday she goes to the dentist." }
+            },
+            {
+              "n": 13,
+              "prompt": "Miércoles",
+              "answer": "G",
+              "explanation_es": { "en": "On Wednesday she plays tennis with her sister." }
+            },
+            {
+              "n": 14,
+              "prompt": "Jueves",
+              "answer": "A",
+              "explanation_es": { "en": "On Thursday she has dinner with colleagues." }
+            },
+            {
+              "n": 15,
+              "prompt": "Viernes",
+              "answer": "E",
+              "explanation_es": { "en": "On Friday she stays at home and watches a film." }
+            },
+            {
+              "n": 16,
+              "prompt": "Sábado",
+              "answer": "H",
+              "explanation_es": { "en": "On Saturday she visits her grandmother." }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "completion",
+      "rubric": "Va a escuchar un mensaje sobre un curso de verano. El mensaje se repite dos veces. Complete las notas con una palabra o un número.",
+      "title": "Curso de verano",
+      "text": "Nombre del curso: curso de {{17}}\nEmpieza el día: {{18}} de julio\nDías de clase: de lunes a {{19}}\nHora de entrada: a las {{20}}\nLugar: el polideportivo de la calle {{21}}\nPrecio por semana: {{22}} euros\nLos niños tienen que llevar: una gorra y una {{23}}\nTeléfono: 91 456 {{24}}\nNombre de la monitora: {{25}}",
+      "gaps": [
+        {
+          "n": 17,
+          "accept": ["natación", "natacion"],
+          "explanation_es": { "en": "It is a swimming course." }
+        },
+        {
+          "n": 18,
+          "accept": ["1", "uno", "primero"],
+          "explanation_es": { "en": "It starts on the first of July." }
+        },
+        {
+          "n": 19,
+          "accept": ["jueves"],
+          "explanation_es": { "en": "Classes are from Monday to Thursday." }
+        },
+        {
+          "n": 20,
+          "accept": ["10", "diez", "10:00"],
+          "explanation_es": { "en": "Children arrive at ten." }
+        },
+        {
+          "n": 21,
+          "accept": ["Sol", "sol"],
+          "explanation_es": { "en": "The sports centre is on calle Sol." }
+        },
+        {
+          "n": 22,
+          "accept": ["40", "cuarenta"],
+          "explanation_es": { "en": "It costs forty euros a week." }
+        },
+        {
+          "n": 23,
+          "accept": ["toalla"],
+          "explanation_es": { "en": "They need a cap and a towel." }
+        },
+        {
+          "n": 24,
+          "accept": ["789"],
+          "explanation_es": { "en": "The number ends in 789." }
+        },
+        {
+          "n": 25,
+          "accept": ["Elena"],
+          "explanation_es": { "en": "The instructor is called Elena." }
+        }
+      ],
+      "recording": {
+        "id": "r12",
+        "speakers": [
+          { "id": "voz", "name": "Ayuntamiento", "accent": "es-ES", "gender": "female" }
+        ],
+        "segments": [
+          {
+            "speaker": "voz",
+            "text": "Hola, buenos días. Este es el mensaje del ayuntamiento sobre el curso de natación de verano para niños.",
+            "pause_after_ms": 600
+          },
+          {
+            "speaker": "voz",
+            "text": "El curso empieza el uno de julio y termina el treinta y uno.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "voz",
+            "text": "Hay clases de lunes a jueves. Los viernes no hay clase.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "voz",
+            "text": "Los niños entran a las diez de la mañana y salen a la una.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "voz",
+            "text": "Las clases son en el polideportivo de la calle Sol.",
+            "pause_after_ms": 500
+          },
+          { "speaker": "voz", "text": "El precio es de cuarenta euros por semana.", "pause_after_ms": 500 },
+          {
+            "speaker": "voz",
+            "text": "Los niños tienen que llevar una gorra y una toalla.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "voz",
+            "text": "Para más información, llame al noventa y uno, cuatro cinco seis, siete ocho nueve.",
+            "pause_after_ms": 500
+          },
+          { "speaker": "voz", "text": "La monitora del curso se llama Elena. Muchas gracias." }
+        ],
+        "audio": { "src": "audio/exams/a1/es-a1-exam-01-listening/v1/r12.m4a", "duration_s": 41.192 }
+      }
+    }
+  ]
+}

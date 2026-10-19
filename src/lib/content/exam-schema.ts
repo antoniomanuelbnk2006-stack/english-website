@@ -1,20 +1,20 @@
 import { z } from 'zod';
 import {
-  EXAM_FORMATS,
+  examFormat,
   SPEAKING_KINDS,
   type ExamFormat,
   type ExamPaperKind,
   type PartFormat,
 } from './exam-formats';
 import { helpText, type Localized } from './help';
-import { DASH_PREFIX, withoutLanguage } from './language';
+import { DASH_PREFIX, languageOfId, withoutLanguage } from './language';
 import { Cefr, Speaker } from './schema';
 import { countExamWords, fullAnswers, gapNumbers } from './uoe-schema';
 
-// Simulacros de examen de Cambridge (docs/adr/0017-simulacros-de-examen.md). Cada prueba
-// (Reading, Listening o Speaking) es un fichero `content/exams/{nivel}/{id}.json` con las partes
-// y el número de preguntas del examen oficial (`exam-formats.ts`). Textos y guiones originales:
-// nada copiado de exámenes reales.
+// Simulacros de examen (docs/adr/0017-simulacros-de-examen.md; los de español, ADR-0040). Cada
+// prueba (Reading, Listening o Speaking) es un fichero `content/[<idioma>/]exams/{nivel}/{id}.json`
+// con las partes y el número de preguntas del examen de su idioma (`exam-formats.ts`). Textos y
+// guiones originales: nada copiado de exámenes reales.
 
 export const ExamPaperId = z
   .string()
@@ -23,7 +23,7 @@ export const ExamPaperId = z
 /** Letra de una opción en las partes de emparejar y de texto con huecos. */
 const Letter = z.string().regex(/^[A-H]$/);
 const Explanation = helpText();
-/** Las instrucciones de la parte, en inglés, como en el cuadernillo. */
+/** Las instrucciones de la parte, en el idioma del examen, como en el cuadernillo. */
 const Rubric = z.string().min(1);
 const QuestionNumber = z.number().int().positive().max(60);
 
@@ -507,7 +507,7 @@ export function checkExamPaper(
   }
   if (parsed?.paper !== paper.paper) issues.push(`el id debe terminar en «-${paper.paper}»`);
 
-  const format: ExamFormat = EXAM_FORMATS[paper.level];
+  const format: ExamFormat = examFormat(paper.level, languageOfId(paper.id));
 
   if (paper.paper === 'speaking') {
     const kinds = format.speaking.parts.map((part) => part.kind);

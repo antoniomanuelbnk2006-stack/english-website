@@ -1,0 +1,445 @@
+{
+  "id": "es-b1-exam-01-reading",
+  "version": 1,
+  "status": "published",
+  "level": "B1",
+  "paper": "reading",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "matching",
+      "rubric": "Lea lo que buscan estas seis personas y los ocho textos sobre cursos de verano. Relacione a cada persona con un texto (A–H). Hay dos textos que no tiene que usar.",
+      "title": "Cursos de verano",
+      "tasks": [
+        {
+          "options": [
+            {
+              "id": "A",
+              "title": "Primeros auxilios",
+              "text": "Aprende qué hacer en caso de accidente en casa o en la calle. Curso de un fin de semana con certificado oficial. Plazas limitadas."
+            },
+            {
+              "id": "B",
+              "title": "Cocina sin desperdicio",
+              "text": "Recetas fáciles para aprovechar lo que sobra en la nevera y gastar menos en la compra. Dos martes al mes."
+            },
+            {
+              "id": "C",
+              "title": "Natación para mayores",
+              "text": "Clases suaves en la piscina municipal para personas de más de sesenta años. Mañanas de lunes a viernes."
+            },
+            {
+              "id": "D",
+              "title": "Escritura creativa",
+              "text": "Taller online para escribir relatos cortos. Cada semana recibirás comentarios de un escritor profesional."
+            },
+            {
+              "id": "E",
+              "title": "Huerto urbano",
+              "text": "Descubre cómo cultivar tomates, lechugas y hierbas en tu balcón. Clases prácticas en la terraza del centro cívico. Material incluido."
+            },
+            {
+              "id": "F",
+              "title": "Inglés para el trabajo",
+              "text": "Curso intensivo de dos semanas para mejorar el inglés en reuniones, llamadas y correos. Por las tardes, de 18:00 a 21:00. Nivel intermedio."
+            },
+            {
+              "id": "G",
+              "title": "Fotografía con el móvil",
+              "text": "Aprende a sacar fotos profesionales solo con tu teléfono. Tres sábados de julio, en el centro histórico. No necesitas ningún conocimiento previo."
+            },
+            {
+              "id": "H",
+              "title": "Guitarra para principiantes",
+              "text": "Clases en grupo para adultos que nunca han tocado un instrumento. Los lunes por la noche. Se presta la guitarra."
+            }
+          ],
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Begoña tiene que hablar con clientes de otros países y trabaja hasta las cinco.",
+              "answer": "F",
+              "explanation_es": {
+                "en": "Work-oriented English in the evenings, after her work."
+              }
+            },
+            {
+              "n": 2,
+              "prompt": "Fermín quiere aprender a tocar música, pero no tiene instrumento.",
+              "answer": "H",
+              "explanation_es": {
+                "en": "Beginner guitar; the guitar is lent."
+              }
+            },
+            {
+              "n": 3,
+              "prompt": "Rocío vive en un piso pequeño y quiere tener verduras propias.",
+              "answer": "E",
+              "explanation_es": {
+                "en": "Urban vegetable growing on a balcony."
+              }
+            },
+            {
+              "n": 4,
+              "prompt": "Ignacio es monitor de un campamento y necesita un título para saber actuar si un niño se hace daño.",
+              "answer": "A",
+              "explanation_es": {
+                "en": "First aid course with official certificate."
+              }
+            },
+            {
+              "n": 5,
+              "prompt": "Natalia vive en un pueblo sin academias y quiere escribir cuentos.",
+              "answer": "D",
+              "explanation_es": {
+                "en": "An online creative writing workshop."
+              }
+            },
+            {
+              "n": 6,
+              "prompt": "Rubén quiere ahorrar dinero en comida y no tirar tantas cosas.",
+              "answer": "B",
+              "explanation_es": {
+                "en": "Cooking to avoid waste and spend less."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Lea el texto y elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "text": "Una librería que se resiste a cerrar\n\nCuando Teresa Gil abrió su librería en un barrio de Zaragoza hace veinticinco años, en la misma calle había otras dos. Hoy es la única que queda. «Muchos me decían que estaba loca, que internet iba a acabar con las librerías pequeñas», recuerda. Sin embargo, su tienda sigue abierta y, según ella, tiene más clientes que nunca.\n\n¿Cuál es el secreto? Teresa cree que la clave está en el trato personal. «Aquí la gente no viene solo a comprar un libro. Viene a hablar, a pedir consejo, a descubrir algo que no conocía», explica. Ella y sus dos empleados leen casi todos los libros que venden, y por eso pueden recomendar a cada cliente lo que mejor le va.\n\nAdemás, la librería organiza muchas actividades. Los jueves por la tarde hay un club de lectura para adultos, y los sábados por la mañana, cuentacuentos para niños. Una vez al mes, un autor viene a presentar su novela y a firmar ejemplares. «Esas tardes la tienda se llena; a veces no cabe nadie más», cuenta Teresa con una sonrisa.\n\nNo todo es fácil, claro. El alquiler del local ha subido mucho y los beneficios son pequeños. Para mantenerse, la librería ha abierto también una página web, aunque Teresa reconoce que no es lo que más le gusta: «Prefiero ver la cara de la gente». Lo que sí ha funcionado muy bien es el servicio de envío a domicilio para las personas mayores del barrio, que llaman por teléfono y reciben los libros en casa ese mismo día.\n\nTeresa no piensa jubilarse pronto. «Mientras haya alguien que quiera hablar de libros, aquí estaré», dice.",
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "¿Qué pasaba en la calle cuando Teresa abrió la librería?",
+              "options": [
+                "No había tiendas",
+                "Había más librerías",
+                "Iban a cerrar el barrio"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "There were two other bookshops; now hers is the only one."
+              }
+            },
+            {
+              "n": 8,
+              "prompt": "Según Teresa, ¿por qué sigue abierta su librería?",
+              "options": [
+                "Por la relación con los clientes",
+                "Porque sus libros son más baratos",
+                "Porque vende sobre todo por internet"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "She believes the key is personal attention."
+              }
+            },
+            {
+              "n": 9,
+              "prompt": "¿Por qué pueden aconsejar bien a los clientes?",
+              "options": [
+                "Porque preguntan a los autores",
+                "Porque siguen las listas de ventas",
+                "Porque leen los libros que venden"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "They read almost every book they sell."
+              }
+            },
+            {
+              "n": 10,
+              "prompt": "¿Qué ocurre cuando un escritor visita la librería?",
+              "options": [
+                "Se cierra la tienda",
+                "Los libros cuestan menos",
+                "Va muchísima gente"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "On those evenings the shop is packed."
+              }
+            },
+            {
+              "n": 11,
+              "prompt": "¿Qué opina Teresa de la página web?",
+              "options": [
+                "Es lo que más dinero da",
+                "No es lo que más le gusta",
+                "Quiere cerrarla pronto"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "She admits it is not what she likes most."
+              }
+            },
+            {
+              "n": 12,
+              "prompt": "¿Qué servicio ha tenido éxito?",
+              "options": [
+                "Llevar libros a los mayores",
+                "Vender libros usados",
+                "Abrir los domingos"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "Same-day home delivery for older neighbours."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "Lea los tres textos en los que tres personas hablan de su trabajo. Después, lea las frases y decida a qué texto (A, B o C) se refiere cada una.",
+      "title": "Trabajar desde lejos",
+      "tasks": [
+        {
+          "options": [
+            {
+              "id": "A",
+              "title": "Pilar, enfermera rural",
+              "text": "Atiendo a pacientes de cinco pueblos pequeños. Cada día recorro más de cien kilómetros en coche. Conozco a todos mis pacientes por su nombre y sé cómo están sus familias. Es un trabajo muy humano, aunque cansado. Lo que más me preocupa es que cada año hay menos jóvenes en la zona."
+            },
+            {
+              "id": "B",
+              "title": "Álex, guía de montaña",
+              "text": "Mi oficina es el Pirineo. En verano trabajo muchísimo, a veces doce horas al día, pero en invierno tengo menos grupos y aprovecho para formarme y viajar. Nunca he tenido un horario fijo y no lo echo de menos. Eso sí, si llueve o nieva mucho, me quedo sin trabajo y sin dinero."
+            },
+            {
+              "id": "C",
+              "title": "Sonia, diseñadora",
+              "text": "Trabajo desde casa desde hace tres años. Lo mejor es que no pierdo tiempo en el transporte y puedo organizar mi horario. Lo peor es que a veces me siento sola, por eso dos días a la semana voy a un espacio compartido con otros profesionales. Mi jefa vive en Barcelona y solo la he visto en persona dos veces."
+            }
+          ],
+          "questions": [
+            {
+              "n": 13,
+              "prompt": "Esta persona pasa muchas horas conduciendo.",
+              "answer": "A",
+              "explanation_es": {
+                "en": "Pilar drives over a hundred kilometres a day."
+              }
+            },
+            {
+              "n": 14,
+              "prompt": "Esta persona trabaja más en una estación del año que en otra.",
+              "answer": "B",
+              "explanation_es": {
+                "en": "Álex works much more in summer than in winter."
+              }
+            },
+            {
+              "n": 15,
+              "prompt": "Esta persona casi no conoce a su jefa en persona.",
+              "answer": "C",
+              "explanation_es": {
+                "en": "Sonia has only seen her boss twice."
+              }
+            },
+            {
+              "n": 16,
+              "prompt": "El tiempo puede hacer que esta persona no gane dinero.",
+              "answer": "B",
+              "explanation_es": {
+                "en": "Heavy rain or snow leaves Álex without work."
+              }
+            },
+            {
+              "n": 17,
+              "prompt": "A esta persona le preocupa el futuro de la zona donde trabaja.",
+              "answer": "A",
+              "explanation_es": {
+                "en": "Pilar worries that young people are leaving."
+              }
+            },
+            {
+              "n": 18,
+              "prompt": "Esta persona busca compañía algunos días de la semana.",
+              "answer": "C",
+              "explanation_es": {
+                "en": "Sonia goes to a shared workspace twice a week."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gapped_text",
+      "rubric": "Lea el texto. Faltan seis fragmentos. Después, lea los ocho fragmentos (A–H) y decida en qué lugar del texto va cada uno. Hay dos fragmentos que no tiene que usar.",
+      "title": "El verano en que aprendí a montar en bici",
+      "text": "Aprendí a montar en bicicleta a los treinta y dos años. Sí, lo sé, es tarde. De niña vivía en el centro de una gran ciudad, en un piso sin ascensor, y mis padres nunca compraron una bici. {{19}}\n\nTodo cambió cuando me mudé a Sevilla por trabajo. Allí todo el mundo usa la bici: estudiantes, abuelos, gente con traje que va a la oficina. {{20}} Un día mi compañera Lola me preguntó por qué siempre iba andando. Le confesé la verdad, muerta de vergüenza.\n\nLola no se rio. Al contrario, se ofreció a enseñarme. {{21}} Al principio me caía cada dos metros y tenía las rodillas llenas de heridas. Pensé muchas veces en abandonar.\n\n{{22}} Me acuerdo perfectamente de esa sensación: el viento en la cara, el silencio del parque y Lola gritando detrás de mí. Recorrí unos veinte metros y me paré, temblando de emoción.\n\nDesde entonces voy al trabajo en bici todos los días. {{23}} Además, he descubierto rincones de la ciudad que antes no conocía.\n\nAhora, cuando alguien me dice que es demasiado tarde para aprender algo, le cuento mi historia. {{24}}",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tardo la mitad que en autobús y no gasto nada."
+        },
+        {
+          "id": "B",
+          "text": "El problema es que en Sevilla casi no hay carriles para bicicletas."
+        },
+        {
+          "id": "C",
+          "text": "Pero un domingo de abril, sin darme cuenta, Lola soltó el sillín y yo seguí pedaleando sola."
+        },
+        {
+          "id": "D",
+          "text": "Yo los miraba con envidia y siempre ponía alguna excusa para no acompañarlos."
+        },
+        {
+          "id": "E",
+          "text": "Mis padres me regalaron una bicicleta roja por mi cumpleaños."
+        },
+        {
+          "id": "F",
+          "text": "Después, cuando fui mayor, me daba vergüenza reconocer que no sabía."
+        },
+        {
+          "id": "G",
+          "text": "Quedábamos los domingos a las ocho de la mañana en un parque, cuando no había nadie."
+        },
+        {
+          "id": "H",
+          "text": "Nunca es tarde: solo hace falta paciencia y alguien que crea en ti."
+        }
+      ],
+      "gaps": [
+        {
+          "n": 19,
+          "answer": "F",
+          "explanation_es": {
+            "en": "It explains why, as an adult, she never admitted she could not ride."
+          }
+        },
+        {
+          "n": 20,
+          "answer": "D",
+          "explanation_es": {
+            "en": "Everyone cycles in Seville; she watched them and made excuses."
+          }
+        },
+        {
+          "n": 21,
+          "answer": "G",
+          "explanation_es": {
+            "en": "Lola offers to teach her; this sentence says when and where they practised."
+          }
+        },
+        {
+          "n": 22,
+          "answer": "C",
+          "explanation_es": {
+            "en": "The next paragraph describes the feeling of riding alone for the first time."
+          }
+        },
+        {
+          "n": 23,
+          "answer": "A",
+          "explanation_es": {
+            "en": "An advantage of cycling to work, followed by «Además…»."
+          }
+        },
+        {
+          "n": 24,
+          "answer": "H",
+          "explanation_es": {
+            "en": "The moral she tells people who think it is too late."
+          }
+        }
+      ]
+    },
+    {
+      "type": "mcq_cloze",
+      "rubric": "Lea el texto y elija la opción correcta (A, B o C) para cada hueco.",
+      "title": "Querida Elena",
+      "text": "Querida Elena:\n\n¿Qué tal todo por Lima? Perdona que no te {{25}} escrito antes, pero estas semanas han sido una locura. Por fin he encontrado trabajo en una empresa de diseño. Es un puesto temporal, {{26}} estoy muy contenta. Mis compañeros son muy agradables y mi jefe me deja trabajar desde casa los viernes.\n\nLo malo es que el piso donde vivo está bastante lejos de la oficina. Si encuentro algo más cerca, me mudaré {{27}} final de año. Ya he visto un par de pisos, pero eran muy caros.\n\nTe escribo también porque en marzo voy a viajar a Perú. ¿Te parece bien que {{28}} unos días en tu casa? Me encantaría que me {{29}} los lugares que tanto te gustan. Avísame cuando {{30}} tiempo.\n\nUn abrazo muy fuerte,\nMaite",
+      "gaps": [
+        {
+          "n": 25,
+          "options": [
+            "haya",
+            "he",
+            "había"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "«Perdona que…» requires the subjunctive: «no te haya escrito»."
+          }
+        },
+        {
+          "n": 26,
+          "options": [
+            "porque",
+            "si",
+            "pero"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "Contrast: the job is temporary, but she is happy."
+          }
+        },
+        {
+          "n": 27,
+          "options": [
+            "en",
+            "a",
+            "por"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "Fixed expression: «a final de año»."
+          }
+        },
+        {
+          "n": 28,
+          "options": [
+            "me quedo",
+            "me quede",
+            "me quedaré"
+          ],
+          "answer": 1,
+          "explanation_es": {
+            "en": "«¿Te parece bien que…?» takes the subjunctive."
+          }
+        },
+        {
+          "n": 29,
+          "options": [
+            "enseñas",
+            "enseñarás",
+            "enseñaras"
+          ],
+          "answer": 2,
+          "explanation_es": {
+            "en": "«Me encantaría que…» takes the imperfect subjunctive."
+          }
+        },
+        {
+          "n": 30,
+          "options": [
+            "tengas",
+            "tienes",
+            "tendrás"
+          ],
+          "answer": 0,
+          "explanation_es": {
+            "en": "Future time after «cuando» takes the present subjunctive."
+          }
+        }
+      ]
+    }
+  ]
+}

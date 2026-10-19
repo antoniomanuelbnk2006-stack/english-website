@@ -755,6 +755,33 @@ export const fr: Dictionary = {
       'Exercices originaux au format des examens Cambridge English (A2 Key, B1 Preliminary, B2 First, C1 Advanced et C2 Proficiency). Señal n’est pas affiliée à Cambridge.',
   },
   exams: {
+    subtitleDele:
+      'Examens blancs avec les épreuves, les tâches et la durée du DELE, l’examen d’espagnol de l’Instituto Cervantes. Une épreuve, une remise, comme le jour de l’examen.',
+    officialNoteDele:
+      'Format du DELE (indicatif). Chaque épreuve vaut 25 points ; ici, elle est réussie avec 60 %.',
+    disclaimerDele:
+      'Examens blancs originaux suivant la structure des examens DELE (A1–C2) : épreuves, tâches, nombre de questions et durées. La répartition des questions par tâche est indicative. Señal n’est pas affiliée à l’Instituto Cervantes.',
+    writingElsewhereDele:
+      'L’épreuve d’expression et d’interaction écrites se fait dans « Écrire », avec le mode examen et son compte à rebours.',
+    sectionReadingDele: 'Compréhension écrite',
+    sectionListeningDele: 'Compréhension orale',
+    speakingNoVoiceDele:
+      'Ce navigateur n’a pas de voix en espagnol : les questions s’afficheront par écrit.',
+    critCoherenceHint:
+      'Organises-tu tes idées et les relies-tu par des connecteurs pour être facile à suivre ?',
+    critFluencyHint:
+      'Parles-tu à un rythme naturel, sans longues pauses, et te comprend-on sans effort ?',
+    critAccuracyHint:
+      'Utilises-tu la grammaire et le vocabulaire du niveau avec peu d’erreurs, et aucune qui gêne la compréhension ?',
+    critRangeHint:
+      'As-tu des ressources variées (vocabulaire et structures) pour dire ce que tu veux sans te répéter ?',
+    critHolisticHint:
+      'Impression générale de l’examinateur : accomplis-tu les tâches avec la langue qu’exige le niveau ?',
+    critCoherence: 'Coherencia',
+    critFluency: 'Fluidez',
+    critAccuracy: 'Corrección',
+    critRange: 'Alcance',
+    critHolistic: 'Calificación holística',
     subtitle:
       'Examens blancs avec le format, les parties et le temps officiels des examens de Cambridge. Une épreuve, un seul rendu, comme le jour de l’examen.',
     officialNote:

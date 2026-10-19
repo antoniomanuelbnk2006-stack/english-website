@@ -1,0 +1,133 @@
+{
+  "id": "es-c1-exam-01-speaking",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "paper": "speaking",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "kind": "long_turn",
+      "about_es": {
+        "en": "Give a structured presentation (three to five minutes) based on a short text you have read: summarise its position, assess it and give your own view."
+      },
+      "turns": [
+        {
+          "examiner": "Vamos a empezar. Ha leído un texto breve sobre la inteligencia artificial en la educación. Haga una presentación de unos cuatro minutos: resuma las ideas principales, valórelas y dé su opinión.",
+          "shown": "Texto: «Las herramientas de inteligencia artificial pueden convertirse en el mejor tutor particular de la historia: disponibles a cualquier hora, pacientes y adaptadas al ritmo de cada alumno. Sin embargo, si se usan para obtener respuestas en lugar de para pensar, corremos el riesgo de formar estudiantes que sepan buscar soluciones, pero no entenderlas. El reto no es prohibirlas, sino enseñar a usarlas con criterio.»",
+          "prep_s": 60,
+          "answer_s": 180
+        }
+      ],
+      "useful_language": [
+        "El texto plantea que…",
+        "El autor sostiene que… si bien reconoce…",
+        "Comparto en parte su planteamiento, aunque…",
+        "Cabría matizar que…",
+        "Desde mi punto de vista…",
+        "En definitiva…"
+      ],
+      "tips_es": [
+        {
+          "en": "Structure: introduction, summary, evaluation, personal view, conclusion."
+        },
+        {
+          "en": "Do not read the text aloud: rephrase it with your own words."
+        },
+        {
+          "en": "Use connectors of concession and nuance: «si bien», «no obstante», «ahora bien»."
+        }
+      ]
+    },
+    {
+      "kind": "discussion",
+      "about_es": {
+        "en": "The examiner discusses your presentation with you, asking you to develop, justify or defend your ideas."
+      },
+      "turns": [
+        {
+          "examiner": "Usted ha dicho que hay que enseñar a usar estas herramientas con criterio. ¿Cómo se haría eso en la práctica?",
+          "answer_s": 60
+        },
+        {
+          "examiner": "¿No cree que los profesores también deberían formarse? ¿Quién debería encargarse de ello?",
+          "answer_s": 60
+        },
+        {
+          "examiner": "Algunos centros han prohibido el uso de la inteligencia artificial en los trabajos. ¿Le parece una buena medida?",
+          "answer_s": 60
+        },
+        {
+          "examiner": "¿Cómo cree que será la escuela dentro de veinte años?",
+          "answer_s": 60
+        }
+      ],
+      "useful_language": [
+        "En la práctica, se podría…",
+        "Sin duda, y añadiría que…",
+        "Entiendo el argumento, pero…",
+        "Me parece una medida comprensible, aunque…",
+        "Es difícil de prever, pero me atrevería a decir que…",
+        "Todo depende de…"
+      ],
+      "tips_es": [
+        {
+          "en": "Defend your ideas but acknowledge counter-arguments."
+        },
+        {
+          "en": "Use hypothetical structures: «Si se prohibiera…, los alumnos…»."
+        }
+      ]
+    },
+    {
+      "kind": "collaborative",
+      "about_es": {
+        "en": "Negotiate with the examiner to reach an agreement: you each have a different preference and must choose together."
+      },
+      "turns": [
+        {
+          "examiner": "Ahora imagine que formamos parte de la asociación de vecinos y el ayuntamiento nos da dinero para un solo proyecto. Estas son las opciones. Yo prefiero el huerto urbano. ¿Usted cuál elegiría y por qué?",
+          "shown": "Opciones: un huerto urbano comunitario · una biblioteca de objetos para compartir herramientas · un centro para mayores · una pista deportiva para jóvenes · un servicio de bicicletas compartidas.",
+          "prompts": [
+            "Huerto urbano",
+            "Biblioteca de objetos",
+            "Centro para mayores",
+            "Pista deportiva",
+            "Bicicletas compartidas"
+          ],
+          "prep_s": 30,
+          "answer_s": 90
+        },
+        {
+          "examiner": "Entiendo su punto de vista, pero el huerto beneficia a todas las edades y es barato de mantener. ¿No le convence?",
+          "answer_s": 60
+        },
+        {
+          "examiner": "Bueno, tenemos que decidir. ¿Llegamos a algún acuerdo?",
+          "answer_s": 60
+        }
+      ],
+      "useful_language": [
+        "Yo me inclinaría por… ya que…",
+        "No niego que…, pero…",
+        "¿Y si combináramos…?",
+        "Estaría dispuesto a… siempre que…",
+        "Entonces, ¿quedamos en que…?",
+        "Me parece un buen punto de encuentro."
+      ],
+      "tips_es": [
+        {
+          "en": "Negotiate: concede something to get something."
+        },
+        {
+          "en": "Close with a clear agreement."
+        }
+      ]
+    }
+  ]
+}

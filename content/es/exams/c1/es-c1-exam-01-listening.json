@@ -1,0 +1,544 @@
+{
+  "id": "es-c1-exam-01-listening",
+  "version": 1,
+  "status": "published",
+  "level": "C1",
+  "paper": "listening",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "completion",
+      "rubric": "Va a escuchar un fragmento de una conferencia sobre el sueño. La grabación se repite dos veces. Complete las notas con una, dos o tres palabras.",
+      "title": "El sueño y la memoria",
+      "text": "Durante el sueño profundo, el cerebro traslada recuerdos del hipocampo a la {{1}}.\nEn un estudio, quienes durmieron tras aprender recordaron un {{2}} más que los que no durmieron.\nLa fase REM parece ayudar sobre todo a la {{3}}.\nEl consumo de {{4}} por la noche reduce la fase REM.\nLa luz de las pantallas retrasa la producción de {{5}}.\nLa conferenciante recomienda una siesta de unos {{6}} minutos.",
+      "gaps": [
+        {
+          "n": 1,
+          "accept": ["corteza", "corteza cerebral"],
+          "explanation_es": { "en": "Memories move from the hippocampus to the cortex." }
+        },
+        {
+          "n": 2,
+          "accept": ["40 %", "40 por ciento", "cuarenta por ciento"],
+          "explanation_es": { "en": "Those who slept remembered 40% more." }
+        },
+        {
+          "n": 3,
+          "accept": ["creatividad"],
+          "explanation_es": { "en": "REM sleep seems to help creativity." }
+        },
+        {
+          "n": 4,
+          "accept": ["alcohol"],
+          "explanation_es": { "en": "Alcohol at night reduces REM sleep." }
+        },
+        {
+          "n": 5,
+          "accept": ["melatonina"],
+          "explanation_es": { "en": "Screen light delays melatonin." }
+        },
+        {
+          "n": 6,
+          "accept": ["20", "veinte"],
+          "explanation_es": { "en": "A nap of about twenty minutes." }
+        }
+      ],
+      "recording": {
+        "id": "r01",
+        "speakers": [
+          { "id": "conferenciante", "name": "Conferenciante", "accent": "es-ES", "gender": "female" }
+        ],
+        "segments": [
+          {
+            "speaker": "conferenciante",
+            "text": "Durante mucho tiempo se pensó que dormir era simplemente desconectar, una especie de pausa en la que el cerebro descansaba. Hoy sabemos que es todo lo contrario.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "conferenciante",
+            "text": "Mientras dormimos, el cerebro trabaja intensamente para ordenar lo que hemos vivido durante el día. En la fase de sueño profundo, por ejemplo, los recuerdos recientes se trasladan del hipocampo, que funciona como un almacén provisional, a la corteza, donde se guardan a largo plazo.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "conferenciante",
+            "text": "Los experimentos son contundentes. En uno de ellos, dos grupos aprendieron una lista de palabras. Unos durmieron después y otros pasaron la noche despiertos. Al día siguiente, los que habían dormido recordaron un cuarenta por ciento más.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "conferenciante",
+            "text": "La fase REM, la de los sueños más vívidos, cumple otra función. No parece tan importante para memorizar datos como para la creatividad: es en esa fase cuando el cerebro establece conexiones inesperadas entre ideas.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "conferenciante",
+            "text": "Por desgracia, muchos de nuestros hábitos perjudican estas fases. El alcohol, que muchos toman para dormir mejor, reduce de forma notable la fase REM. Y la luz de las pantallas por la noche retrasa la producción de melatonina, la hormona que prepara al cuerpo para el descanso.",
+            "pause_after_ms": 500
+          },
+          {
+            "speaker": "conferenciante",
+            "text": "Termino con una buena noticia para los amantes de la siesta. Una siesta breve, de unos veinte minutos, mejora la atención sin afectar al sueño nocturno. Más allá de la media hora, en cambio, nos despertamos aturdidos."
+          }
+        ],
+        "audio": { "src": "audio/exams/c1/es-c1-exam-01-listening/v1/r01.m4a", "duration_s": 81.871 }
+      }
+    },
+    {
+      "type": "mcq",
+      "rubric": "Va a escuchar tres conversaciones. Cada conversación se repite dos veces. Después de cada una, conteste a dos preguntas. Elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r02",
+            "speakers": [
+              { "id": "lola", "name": "Lola", "accent": "es-ES", "gender": "female" },
+              { "id": "dani", "name": "Dani", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              { "speaker": "lola", "text": "Al final no te presentaste a las oposiciones, ¿no?" },
+              {
+                "speaker": "dani",
+                "text": "No. Llevaba dos años estudiando y, la verdad, ya no podía más. Me ofrecieron un contrato en una empresa privada y lo acepté."
+              },
+              {
+                "speaker": "lola",
+                "text": "¿Y no te arrepientes? Las oposiciones te daban estabilidad para toda la vida."
+              },
+              {
+                "speaker": "dani",
+                "text": "Estabilidad sí, pero también un trabajo que, en el fondo, no me apasionaba. Prefiero arriesgarme ahora que tengo veintiocho años que lamentarlo a los cincuenta."
+              }
+            ],
+            "audio": { "src": "audio/exams/c1/es-c1-exam-01-listening/v1/r02.m4a", "duration_s": 23.724 }
+          },
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "¿Por qué dejó Dani de preparar las oposiciones?",
+              "options": [
+                "Suspendió el examen dos veces", "Estaba agotado y recibió otra oferta",
+                "Le obligaron sus padres"
+              ],
+              "answer": 1,
+              "explanation_es": { "en": "He could not go on and accepted a private-sector contract." }
+            },
+            {
+              "n": 8,
+              "prompt": "¿Qué actitud muestra Dani ante su decisión?",
+              "options": ["La defiende con convicción", "Está arrepentido", "Duda de haber acertado"],
+              "answer": 0,
+              "explanation_es": { "en": "He prefers taking the risk now to regretting it later." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r03",
+            "speakers": [
+              { "id": "jefe", "name": "Jefe", "accent": "es-ES", "gender": "male" },
+              { "id": "empleada", "name": "Empleada", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "jefe",
+                "text": "Raquel, el cliente se ha quejado del informe. Dice que es demasiado largo y que no encuentra las conclusiones."
+              },
+              {
+                "speaker": "empleada",
+                "text": "Me sorprende, porque fue él quien pidió que incluyéramos todos los datos. Pero, si quiere, preparo un resumen de dos páginas al principio."
+              },
+              {
+                "speaker": "jefe",
+                "text": "Sí, hazlo. Y la próxima vez, antes de entregarlo, pásamelo a mí. Así evitamos sorpresas."
+              },
+              {
+                "speaker": "empleada",
+                "text": "De acuerdo, aunque te recuerdo que este lo revisaste tú el martes."
+              }
+            ],
+            "audio": { "src": "audio/exams/c1/es-c1-exam-01-listening/v1/r03.m4a", "duration_s": 25.407 }
+          },
+          "questions": [
+            {
+              "n": 9,
+              "prompt": "¿De qué se queja el cliente?",
+              "options": ["De que el informe llegó tarde", "De que faltan datos", "De que el informe no es claro"],
+              "answer": 2,
+              "explanation_es": { "en": "It is too long and he cannot find the conclusions." }
+            },
+            {
+              "n": 10,
+              "prompt": "¿Qué insinúa la empleada al final?",
+              "options": [
+                "Que el cliente tiene razón", "Que quiere cambiar de proyecto",
+                "Que el jefe también es responsable"
+              ],
+              "answer": 2,
+              "explanation_es": { "en": "She reminds him he reviewed it himself." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r04",
+            "speakers": [
+              { "id": "madre", "name": "Madre", "accent": "es-ES", "gender": "female" },
+              { "id": "hijo", "name": "Hijo", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "madre",
+                "text": "¿De verdad quieres dejar la carrera en tercero? Te queda tan poco…"
+              },
+              {
+                "speaker": "hijo",
+                "text": "Mamá, no la dejo, la aplazo. Quiero trabajar un año en el extranjero y aprender bien inglés. Luego vuelvo y la termino."
+              },
+              { "speaker": "madre", "text": "Eso dicen todos, y luego no vuelven." },
+              {
+                "speaker": "hijo",
+                "text": "Ya he hablado con la universidad y me guardan la plaza. Lo tengo todo pensado."
+              }
+            ],
+            "audio": { "src": "audio/exams/c1/es-c1-exam-01-listening/v1/r04.m4a", "duration_s": 18.556 }
+          },
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "¿Qué quiere hacer el hijo?",
+              "options": [
+                "Abandonar la universidad para siempre", "Interrumpir sus estudios temporalmente",
+                "Cambiarse a otra carrera"
+              ],
+              "answer": 1,
+              "explanation_es": { "en": "He postpones his degree for a year abroad." }
+            },
+            {
+              "n": 12,
+              "prompt": "¿Qué le preocupa a la madre?",
+              "options": ["Que no termine la carrera", "Que no encuentre trabajo fuera", "Que no aprenda inglés"],
+              "answer": 0,
+              "explanation_es": { "en": "She fears he will not come back to finish." }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Va a escuchar una entrevista a un urbanista. La grabación se repite dos veces. Elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r05",
+            "speakers": [
+              { "id": "periodista", "name": "Periodista", "accent": "es-ES", "gender": "female" },
+              { "id": "urbanista", "name": "Urbanista", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "periodista",
+                "text": "Usted lleva años defendiendo que las ciudades deben prepararse para el calor. ¿No es un poco alarmista?"
+              },
+              {
+                "speaker": "urbanista",
+                "text": "Ojalá lo fuera. Los datos son claros: los veranos son cada vez más largos y las olas de calor más intensas. Y las ciudades, con tanto asfalto y tan pocos árboles, multiplican el problema. En algunas calles, la temperatura es seis o siete grados más alta que en un parque a doscientos metros."
+              },
+              { "speaker": "periodista", "text": "¿Qué se puede hacer?" },
+              {
+                "speaker": "urbanista",
+                "text": "Lo más eficaz es también lo más antiguo: sombra y agua. Plantar árboles, pero los adecuados, porque no todos dan buena sombra ni resisten la sequía. Recuperar fuentes. Y usar materiales claros en los suelos y en los tejados, que reflejan el sol en lugar de absorberlo."
+              },
+              { "speaker": "periodista", "text": "Eso suena caro." },
+              {
+                "speaker": "urbanista",
+                "text": "Es mucho más caro no hacerlo. Pensemos en el gasto sanitario de cada ola de calor, o en la energía que consumen millones de aparatos de aire acondicionado, que por cierto expulsan aún más calor a la calle."
+              },
+              { "speaker": "periodista", "text": "¿Hay ciudades que lo estén haciendo bien?" },
+              {
+                "speaker": "urbanista",
+                "text": "Sí, y algunas muy cerca. Hay ciudades del sur que han creado «refugios climáticos»: bibliotecas, museos o escuelas con buena temperatura donde cualquiera puede entrar en las horas de más calor. Es una medida sencilla que salva vidas, sobre todo de personas mayores que viven solas."
+              },
+              { "speaker": "periodista", "text": "¿Y qué papel tienen los ciudadanos?" },
+              {
+                "speaker": "urbanista",
+                "text": "Fundamental. Muchos cambios empiezan con vecinos que piden un árbol en su calle o que se niegan a que se tale uno. La ciudad no es solo de los técnicos: es de quien la vive."
+              }
+            ],
+            "audio": { "src": "audio/exams/c1/es-c1-exam-01-listening/v1/r05.m4a", "duration_s": 83.626 }
+          },
+          "questions": [
+            {
+              "n": 13,
+              "prompt": "¿Cómo responde el urbanista a la acusación de ser alarmista?",
+              "options": [
+                "Desearía estar exagerando, pero no es así", "Reconoce que exagera para llamar la atención",
+                "Dice que los datos no son fiables"
+              ],
+              "answer": 0,
+              "explanation_es": { "en": "«Ojalá lo fuera»: he wishes he were, but the data are clear." }
+            },
+            {
+              "n": 14,
+              "prompt": "¿Qué ejemplo da sobre el efecto de las ciudades?",
+              "options": [
+                "El aumento del número de coches", "La subida del precio de la vivienda",
+                "La diferencia de temperatura con un parque cercano"
+              ],
+              "answer": 2,
+              "explanation_es": { "en": "Six or seven degrees hotter than a park 200 m away." }
+            },
+            {
+              "n": 15,
+              "prompt": "¿Qué dice sobre los árboles?",
+              "options": [
+                "Cualquier árbol es útil", "Hay que elegir bien la especie",
+                "Son menos eficaces que las fuentes"
+              ],
+              "answer": 1,
+              "explanation_es": { "en": "Not all give good shade or resist drought." }
+            },
+            {
+              "n": 16,
+              "prompt": "¿Qué argumento usa frente al coste de las medidas?",
+              "options": [
+                "Las pagan las empresas privadas", "No aplicarlas resulta aún más costoso",
+                "Son gratuitas si las hacen los vecinos"
+              ],
+              "answer": 1,
+              "explanation_es": { "en": "Health costs and air conditioning make inaction more expensive." }
+            },
+            {
+              "n": 17,
+              "prompt": "¿Qué son los «refugios climáticos»?",
+              "options": [
+                "Viviendas nuevas para personas mayores", "Parques con piscinas municipales",
+                "Espacios públicos frescos abiertos a todos"
+              ],
+              "answer": 2,
+              "explanation_es": { "en": "Libraries, museums or schools anyone can enter during the hottest hours." }
+            },
+            {
+              "n": 18,
+              "prompt": "¿Qué opina sobre el papel de los ciudadanos?",
+              "options": [
+                "Pueden impulsar cambios importantes", "Deben dejar las decisiones a los técnicos",
+                "Son los principales culpables del problema"
+              ],
+              "answer": 0,
+              "explanation_es": { "en": "Many changes start with neighbours." }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Va a escuchar seis fragmentos breves. Cada uno se repite dos veces. Después de cada fragmento, conteste a dos preguntas. Elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "recording": {
+            "id": "r06",
+            "speakers": [
+              { "id": "locutor", "name": "Locutor", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "locutor",
+                "text": "La exposición sobre Goya que se inauguró en marzo cerrará sus puertas el domingo tras recibir más de doscientos mil visitantes, una cifra récord para el museo. Debido a la demanda, el último fin de semana el horario se ampliará hasta la medianoche."
+              }
+            ],
+            "audio": { "src": "audio/exams/c1/es-c1-exam-01-listening/v1/r06.m4a", "duration_s": 14.131 }
+          },
+          "questions": [
+            {
+              "n": 19,
+              "prompt": "¿Qué ha ocurrido con la exposición?",
+              "options": [
+                "Ha cerrado antes de lo previsto", "Ha tenido un éxito sin precedentes en el museo",
+                "Ha recibido pocas visitas"
+              ],
+              "answer": 1,
+              "explanation_es": { "en": "Over 200,000 visitors, a record." }
+            },
+            {
+              "n": 20,
+              "prompt": "¿Qué cambio habrá el último fin de semana?",
+              "options": ["Abrirá más horas", "La entrada será gratis", "Se trasladará a otra sala"],
+              "answer": 0,
+              "explanation_es": { "en": "Opening hours extended until midnight." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r07",
+            "speakers": [
+              { "id": "mujer", "name": "Mujer", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "mujer",
+                "text": "Yo no estoy en contra de los exámenes, ¿eh? Lo que critico es que todo se juegue a una sola carta. Un chaval puede haber trabajado todo el curso y tener un mal día. Prefiero una evaluación continua, aunque dé más trabajo a los profesores."
+              }
+            ],
+            "audio": { "src": "audio/exams/c1/es-c1-exam-01-listening/v1/r07.m4a", "duration_s": 13.621 }
+          },
+          "questions": [
+            {
+              "n": 21,
+              "prompt": "¿Qué critica la mujer?",
+              "options": [
+                "Que existan los exámenes", "Que los profesores trabajen poco",
+                "Que la nota dependa de un único examen"
+              ],
+              "answer": 2,
+              "explanation_es": { "en": "Everything depends on one card." }
+            },
+            {
+              "n": 22,
+              "prompt": "¿Qué solución prefiere?",
+              "options": ["Suprimir todas las notas", "Hacer exámenes más fáciles", "La evaluación a lo largo del curso"],
+              "answer": 2,
+              "explanation_es": { "en": "Continuous assessment." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r08",
+            "speakers": [
+              { "id": "hombre", "name": "Hombre", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "hombre",
+                "text": "Lo de mudarme al pueblo lo veía como algo temporal, para pasar la pandemia. Pero se me fue alargando, y ahora ya no me imagino volviendo a la ciudad. Eso sí, si no fuera por internet, no podría mantener mi trabajo."
+              }
+            ],
+            "audio": { "src": "audio/exams/c1/es-c1-exam-01-listening/v1/r08.m4a", "duration_s": 12.376 }
+          },
+          "questions": [
+            {
+              "n": 23,
+              "prompt": "¿Cómo veía al principio su mudanza al pueblo?",
+              "options": ["Como un sueño de toda la vida", "Como algo pasajero", "Como una obligación familiar"],
+              "answer": 1,
+              "explanation_es": { "en": "He saw it as temporary." }
+            },
+            {
+              "n": 24,
+              "prompt": "¿Qué le permite seguir viviendo allí?",
+              "options": ["Poder trabajar a distancia", "Tener a su familia cerca", "El bajo precio de la vivienda"],
+              "answer": 0,
+              "explanation_es": { "en": "Without the internet he could not keep his job." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r09",
+            "speakers": [
+              { "id": "locutora", "name": "Locutora", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "locutora",
+                "text": "Un estudio de la Universidad de Granada concluye que los niños que leen por placer al menos media hora al día obtienen mejores resultados no solo en lengua, sino también en matemáticas. Los autores atribuyen el efecto a una mayor capacidad de concentración."
+              }
+            ],
+            "audio": { "src": "audio/exams/c1/es-c1-exam-01-listening/v1/r09.m4a", "duration_s": 13.742 }
+          },
+          "questions": [
+            {
+              "n": 25,
+              "prompt": "Según el estudio, la lectura por placer mejora…",
+              "options": [
+                "también los resultados en matemáticas", "solo los resultados en lengua",
+                "la relación con los compañeros"
+              ],
+              "answer": 0,
+              "explanation_es": { "en": "Better results in maths as well." }
+            },
+            {
+              "n": 26,
+              "prompt": "¿Cómo explican los autores el resultado?",
+              "options": ["Por el apoyo de las familias", "Por el tipo de libros leídos", "Por una mejor concentración"],
+              "answer": 2,
+              "explanation_es": { "en": "They attribute it to greater concentration." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r10",
+            "speakers": [
+              { "id": "hombre", "name": "Hombre", "accent": "es-ES", "gender": "male" }
+            ],
+            "segments": [
+              {
+                "speaker": "hombre",
+                "text": "Mira, lo del coche eléctrico está muy bien, pero a mí que no me cuenten que es la solución a todo. Si seguimos teniendo un coche por persona, las ciudades seguirán atascadas, por muy limpio que sea el motor."
+              }
+            ],
+            "audio": { "src": "audio/exams/c1/es-c1-exam-01-listening/v1/r10.m4a", "duration_s": 9.86 }
+          },
+          "questions": [
+            {
+              "n": 27,
+              "prompt": "¿Qué opina el hombre del coche eléctrico?",
+              "options": [
+                "Que es la mejor solución", "Que no resuelve todos los problemas",
+                "Que contamina tanto como los demás"
+              ],
+              "answer": 1,
+              "explanation_es": { "en": "It is not the solution to everything." }
+            },
+            {
+              "n": 28,
+              "prompt": "¿Qué problema seguiría existiendo, según él?",
+              "options": ["El ruido", "Los atascos", "El precio de la gasolina"],
+              "answer": 1,
+              "explanation_es": { "en": "Cities would still be congested." }
+            }
+          ]
+        },
+        {
+          "recording": {
+            "id": "r11",
+            "speakers": [
+              { "id": "mujer", "name": "Mujer", "accent": "es-ES", "gender": "female" }
+            ],
+            "segments": [
+              {
+                "speaker": "mujer",
+                "text": "Cuando me ofrecieron el ascenso, lo primero que pensé fue que no estaba preparada. Luego me di cuenta de que a mis compañeros varones nunca les había oído decir eso. Así que acepté, y aprendo sobre la marcha, como todo el mundo."
+              }
+            ],
+            "audio": { "src": "audio/exams/c1/es-c1-exam-01-listening/v1/r11.m4a", "duration_s": 12.69 }
+          },
+          "questions": [
+            {
+              "n": 29,
+              "prompt": "¿Cuál fue su primera reacción ante el ascenso?",
+              "options": ["Lo rechazó", "Pidió más sueldo", "Dudó de su capacidad"],
+              "answer": 2,
+              "explanation_es": { "en": "She thought she was not ready." }
+            },
+            {
+              "n": 30,
+              "prompt": "¿Qué la hizo cambiar de opinión?",
+              "options": ["Compararse con sus compañeros", "El consejo de su jefa", "Un curso de formación"],
+              "answer": 0,
+              "explanation_es": { "en": "She had never heard her male colleagues say that." }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

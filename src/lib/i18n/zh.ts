@@ -707,6 +707,25 @@ export const zh: Dictionary = {
       '采用剑桥英语考试（A2 Key、B1 Preliminary、B2 First、C1 Advanced 和 C2 Proficiency）形式的原创练习。Señal 与剑桥没有隶属关系。',
   },
   exams: {
+    subtitleDele:
+      '按照塞万提斯学院西班牙语考试 DELE 的科目、任务和时间进行模拟考试。一份试卷，一次提交，就像考试当天一样。',
+    officialNoteDele: 'DELE 格式（仅供参考）。每份试卷 25 分；这里得到 60% 即为通过。',
+    disclaimerDele:
+      '按照 DELE 考试（A1–C2）的结构编写的原创模拟考试：科目、任务、题目数量和时间。每项任务的题目分配仅供参考。Señal 与塞万提斯学院没有任何关联。',
+    writingElsewhereDele: '书面表达与互动部分在“写作”中进行，使用考试模式和倒计时。',
+    sectionReadingDele: '阅读理解',
+    sectionListeningDele: '听力理解',
+    speakingNoVoiceDele: '这个浏览器没有西班牙语语音：问题将以文字显示。',
+    critCoherenceHint: '你是否有条理地组织观点，并用连接词把它们连起来，让人容易跟上？',
+    critFluencyHint: '你说话的节奏是否自然、没有长时间停顿，让人轻松听懂？',
+    critAccuracyHint: '你使用该水平的语法和词汇时错误少吗？有没有影响理解的错误？',
+    critRangeHint: '你是否有丰富的表达手段（词汇和结构），能说出想说的话而不重复？',
+    critHolisticHint: '考官的整体印象：你是否用该水平要求的语言完成了任务？',
+    critCoherence: 'Coherencia',
+    critFluency: 'Fluidez',
+    critAccuracy: 'Corrección',
+    critRange: 'Alcance',
+    critHolistic: 'Calificación holística',
     subtitle: '采用剑桥考试官方形式、部分和时间的模拟考试。一场考试只交一次卷，就像考试当天一样。',
     officialNote: '剑桥官方形式。所有考试部分的剑桥量表平均分达到 {pass} 分即为通过。',
     unofficialNote:

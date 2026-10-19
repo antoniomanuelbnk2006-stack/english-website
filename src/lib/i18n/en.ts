@@ -747,6 +747,33 @@ export const en: Dictionary = {
       'Original exercises in the format of the Cambridge English exams (A2 Key, B1 Preliminary, B2 First, C1 Advanced and C2 Proficiency). Señal is not affiliated with Cambridge.',
   },
   exams: {
+    subtitleDele:
+      'Mock tests with the papers, tasks and timing of the DELE, the Spanish exam of the Instituto Cervantes. One paper, one submission, just like exam day.',
+    officialNoteDele:
+      'DELE format (indicative). Each paper is worth 25 points; here you pass with 60%.',
+    disclaimerDele:
+      'Original mock tests following the structure of the DELE exams (A1–C2): papers, tasks, number of questions and timing. The split of questions per task is indicative. Señal is not affiliated with the Instituto Cervantes.',
+    writingElsewhereDele:
+      'The written expression and interaction paper lives in “Write”, with exam mode and its countdown.',
+    sectionReadingDele: 'Reading comprehension',
+    sectionListeningDele: 'Listening comprehension',
+    speakingNoVoiceDele:
+      'This browser has no Spanish voice: the questions will be shown in writing.',
+    critCoherenceHint:
+      'Do you order your ideas and link them with connectors so you are easy to follow?',
+    critFluencyHint:
+      'Do you speak at a natural pace, without long pauses, and are you easy to understand?',
+    critAccuracyHint:
+      'Do you use the grammar and vocabulary of the level with few mistakes, none that block understanding?',
+    critRangeHint:
+      'Do you have varied resources (vocabulary and structures) to say what you want without repeating yourself?',
+    critHolisticHint:
+      'The examiner’s overall impression: do you complete the tasks with the language the level requires?',
+    critCoherence: 'Coherencia',
+    critFluency: 'Fluidez',
+    critAccuracy: 'Corrección',
+    critRange: 'Alcance',
+    critHolistic: 'Calificación holística',
     subtitle:
       'Mock tests with the format, parts and official timing of the Cambridge exams. One paper, one submission, just like exam day.',
     officialNote:

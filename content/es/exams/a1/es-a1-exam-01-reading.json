@@ -1,0 +1,421 @@
+{
+  "id": "es-a1-exam-01-reading",
+  "version": 1,
+  "status": "published",
+  "level": "A1",
+  "paper": "reading",
+  "provenance": {
+    "origin": "ai",
+    "model": "claude-opus-5-5",
+    "created_at": "2026-10-19T00:00:00Z",
+    "reviewed_by": "claude (revisión manual; pendiente de la revisión del dueño)"
+  },
+  "parts": [
+    {
+      "type": "mcq",
+      "rubric": "Lea el correo electrónico y elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "text": "Hola, Marta:\n\n¿Qué tal estás? Yo estoy muy bien en Valencia. Vivo en un piso pequeño cerca de la playa, con dos chicas de Italia. Se llaman Giulia y Sara y son muy simpáticas.\n\nTrabajo en una tienda de ropa de lunes a viernes, de diez a dos. Por las tardes estudio español en una academia. Mi profesor se llama Andrés y es de Sevilla.\n\nLos sábados voy a la playa con mis compañeras y los domingos cocinamos juntas. Ellas hacen pasta y yo hago tortilla de patatas.\n\n¿Cuándo vienes a verme? En mayo hace muy buen tiempo aquí.\n\nUn beso,\nLucía",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "¿Dónde vive Lucía?",
+              "options": [
+                "En el centro de Sevilla",
+                "Cerca de la playa",
+                "En una casa grande"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "She lives in a small flat near the beach in Valencia."
+              }
+            },
+            {
+              "n": 2,
+              "prompt": "¿Con quién vive Lucía?",
+              "options": [
+                "Con dos chicas italianas",
+                "Con su familia",
+                "Con su profesor"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "She lives with Giulia and Sara, two girls from Italy."
+              }
+            },
+            {
+              "n": 3,
+              "prompt": "¿Qué hace Lucía por las tardes?",
+              "options": [
+                "Trabaja en una tienda",
+                "Va a la playa",
+                "Estudia español"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "In the afternoons she studies Spanish at a language school."
+              }
+            },
+            {
+              "n": 4,
+              "prompt": "¿Qué hacen los domingos?",
+              "options": [
+                "Van a la playa",
+                "Visitan Sevilla",
+                "Cocinan juntas"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "On Sundays they cook together."
+              }
+            },
+            {
+              "n": 5,
+              "prompt": "¿Qué dice Lucía de mayo?",
+              "options": [
+                "Que no tiene trabajo",
+                "Que hace buen tiempo",
+                "Que va a Italia"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "She says the weather is very good in May."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Lea los textos y elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "text": "FARMACIA LÓPEZ\nHorario: de lunes a sábado, de 9:00 a 21:00.\nDomingos: cerrado.",
+          "questions": [
+            {
+              "n": 6,
+              "prompt": "¿Cuándo está cerrada la farmacia?",
+              "options": [
+                "El domingo",
+                "El sábado",
+                "Por la tarde"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "It is closed on Sundays."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Pablo:\nHe ido al supermercado. Vuelvo a las siete. Hay pizza en la nevera para la cena.\nMamá",
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "¿Dónde está la madre de Pablo?",
+              "options": [
+                "En el supermercado",
+                "En casa",
+                "En el trabajo"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "She has gone to the supermarket."
+              }
+            }
+          ]
+        },
+        {
+          "text": "SE VENDE BICICLETA\nRoja, casi nueva. 80 euros.\nLlamar a Jorge: 612 345 678 (por la tarde).",
+          "questions": [
+            {
+              "n": 8,
+              "prompt": "¿Cuándo hay que llamar a Jorge?",
+              "options": [
+                "Por la mañana",
+                "Por la noche",
+                "Por la tarde"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "You should call him in the afternoon."
+              }
+            }
+          ]
+        },
+        {
+          "text": "BIBLIOTECA MUNICIPAL\nProhibido comer y beber en la sala de lectura.\nGracias.",
+          "questions": [
+            {
+              "n": 9,
+              "prompt": "¿Qué no se puede hacer en la sala?",
+              "options": [
+                "Leer",
+                "Comer",
+                "Estudiar"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "Eating and drinking are not allowed."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Hola, Ana. La clase de mañana no es en el aula 3. Es en el aula 8, en el segundo piso. Hasta mañana. Carlos",
+          "questions": [
+            {
+              "n": 10,
+              "prompt": "¿Dónde es la clase de mañana?",
+              "options": [
+                "En el aula 3",
+                "En el aula 8",
+                "En el primer piso"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "Tomorrow’s class is in room 8, on the second floor."
+              }
+            }
+          ]
+        },
+        {
+          "text": "RESTAURANTE EL OLIVO\nMenú del día: 12 euros.\nPrimer plato, segundo plato, postre y bebida.",
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "¿Qué incluye el menú?",
+              "options": [
+                "Solo un plato",
+                "Solo la bebida",
+                "También el postre"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "The set menu includes two courses, dessert and a drink."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "rubric": "Lea lo que necesitan estas personas y los anuncios. Relacione a cada persona con un anuncio (A–H). Hay dos anuncios que no tiene que usar.",
+      "title": "Anuncios",
+      "tasks": [
+        {
+          "options": [
+            {
+              "id": "A",
+              "title": "Intercambio de idiomas",
+              "text": "Soy español y quiero practicar inglés. Te ayudo con tu español. Escríbeme."
+            },
+            {
+              "id": "B",
+              "title": "Taller de cocina",
+              "text": "Aprende a cocinar paella y tortilla. Sábados por la mañana."
+            },
+            {
+              "id": "C",
+              "title": "Clases de guitarra",
+              "text": "Profesor de música da clases de guitarra a niños y adultos. Martes y jueves por la tarde."
+            },
+            {
+              "id": "D",
+              "title": "Gimnasio Sol",
+              "text": "Abierto todos los días de 7:00 a 23:00. Clases de yoga y natación."
+            },
+            {
+              "id": "E",
+              "title": "Viajes de fin de semana",
+              "text": "Excursiones en autobús a Toledo y Segovia. Salida el sábado a las 8:00."
+            },
+            {
+              "id": "F",
+              "title": "Venta de muebles",
+              "text": "Vendo mesa, cuatro sillas y un sofá. Buen precio."
+            },
+            {
+              "id": "G",
+              "title": "Cuidamos a tu perro",
+              "text": "Paseamos a tu perro cuando estás en el trabajo. Precios económicos."
+            },
+            {
+              "id": "H",
+              "title": "Piso para estudiantes",
+              "text": "Alquilo habitación en piso compartido, cerca de la universidad. 300 euros al mes."
+            }
+          ],
+          "questions": [
+            {
+              "n": 12,
+              "prompt": "Ana quiere hablar español con una persona de aquí.",
+              "answer": "A",
+              "explanation_es": {
+                "en": "The language exchange offers help with Spanish."
+              }
+            },
+            {
+              "n": 13,
+              "prompt": "Tomás busca una habitación barata para estudiar en la universidad.",
+              "answer": "H",
+              "explanation_es": {
+                "en": "A room in a shared flat near the university."
+              }
+            },
+            {
+              "n": 14,
+              "prompt": "Elena quiere nadar después del trabajo, a las diez de la noche.",
+              "answer": "D",
+              "explanation_es": {
+                "en": "The gym is open until 23:00 and has swimming."
+              }
+            },
+            {
+              "n": 15,
+              "prompt": "Luis trabaja todo el día y no puede pasear a su perro.",
+              "answer": "G",
+              "explanation_es": {
+                "en": "A dog-walking service for people at work."
+              }
+            },
+            {
+              "n": 16,
+              "prompt": "Carmen quiere aprender a hacer comida española.",
+              "answer": "B",
+              "explanation_es": {
+                "en": "The cooking workshop teaches paella and tortilla."
+              }
+            },
+            {
+              "n": 17,
+              "prompt": "Pedro quiere conocer otras ciudades el fin de semana.",
+              "answer": "E",
+              "explanation_es": {
+                "en": "Weekend coach trips to Toledo and Segovia."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "rubric": "Lea el texto y elija la respuesta correcta (A, B o C).",
+      "groups": [
+        {
+          "text": "El Museo del Juguete\n\nEl Museo del Juguete está en el centro de la ciudad, en la calle Mayor, número 15. Es un museo pequeño, pero muy bonito. Tiene juguetes de todo el mundo y de muchas épocas: muñecas, coches, trenes y juegos de mesa.\n\nEl museo abre de martes a domingo, de diez de la mañana a seis de la tarde. Los lunes está cerrado. La entrada cuesta cinco euros. Los niños menores de doce años no pagan.\n\nEn la primera planta hay juguetes antiguos. En la segunda planta hay una sala para jugar. Allí los niños pueden jugar con juguetes de madera.\n\nLos sábados por la mañana hay un taller para hacer juguetes con papel. El taller es gratis, pero hay que reservar por teléfono.\n\nEl museo tiene una cafetería y una tienda. En la tienda puedes comprar libros y juguetes. Para llegar, puedes tomar el autobús número 4 o el metro, en la estación de Plaza Mayor.",
+          "questions": [
+            {
+              "n": 18,
+              "prompt": "¿Dónde está el museo?",
+              "options": [
+                "En el centro de la ciudad",
+                "Cerca de la estación de tren",
+                "Fuera de la ciudad"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "It is in the city centre, on calle Mayor."
+              }
+            },
+            {
+              "n": 19,
+              "prompt": "¿Qué día está cerrado?",
+              "options": [
+                "El martes",
+                "El lunes",
+                "El domingo"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "It is closed on Mondays."
+              }
+            },
+            {
+              "n": 20,
+              "prompt": "¿Cuánto paga un niño de ocho años?",
+              "options": [
+                "Nada",
+                "Cinco euros",
+                "Doce euros"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "Children under twelve do not pay."
+              }
+            },
+            {
+              "n": 21,
+              "prompt": "¿Qué hay en la primera planta?",
+              "options": [
+                "Una sala para jugar",
+                "Una cafetería",
+                "Juguetes antiguos"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "The first floor has old toys."
+              }
+            },
+            {
+              "n": 22,
+              "prompt": "¿Con qué juegan los niños en la segunda planta?",
+              "options": [
+                "Con trenes eléctricos",
+                "Con juegos de ordenador",
+                "Con juguetes de madera"
+              ],
+              "answer": 2,
+              "explanation_es": {
+                "en": "They play with wooden toys."
+              }
+            },
+            {
+              "n": 23,
+              "prompt": "¿Qué hacen en el taller de los sábados?",
+              "options": [
+                "Muñecas de madera",
+                "Juguetes de papel",
+                "Dibujos de coches"
+              ],
+              "answer": 1,
+              "explanation_es": {
+                "en": "They make toys out of paper."
+              }
+            },
+            {
+              "n": 24,
+              "prompt": "¿Qué hay que hacer para ir al taller?",
+              "options": [
+                "Llamar por teléfono",
+                "Pagar cinco euros",
+                "Comprar un libro"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "The workshop is free but you must book by phone."
+              }
+            },
+            {
+              "n": 25,
+              "prompt": "¿Cómo se puede llegar al museo?",
+              "options": [
+                "En autobús o en metro",
+                "Solo en coche",
+                "Solo a pie"
+              ],
+              "answer": 0,
+              "explanation_es": {
+                "en": "Bus number 4 or the metro."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
