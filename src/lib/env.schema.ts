@@ -38,6 +38,9 @@ export const ServerEnv = ClientEnv.extend({
     .url()
     .transform((v) => v.replace(/\/+$/, ''))
     .optional(),
+  // Solo la demo de este ordenador (scripts/demo.ts): entra sola, sin pantalla de acceso. No
+  // vale con un Supabase de verdad (src/lib/supabase/demo.ts).
+  DEMO_AUTO_LOGIN: z.literal('1').optional(),
   AI_DAILY_LIMIT: z.coerce.number().int().positive().default(10),
   AI_MONTHLY_BUDGET_USD: z.coerce.number().positive().default(5),
 });

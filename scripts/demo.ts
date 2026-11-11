@@ -5,6 +5,8 @@
 // Supabase de los tests (ADR-0011), con el contenido real de content/ y el audio local de
 // public/dev-audio/.
 //
+// Entra sola, sin pantalla de acceso (DEMO_AUTO_LOGIN, src/lib/supabase/demo.ts).
+//
 // Los datos (nivel, progreso, repaso, diario) se guardan en .demo-data/ y siguen ahí al
 // volver a arrancar. Aun así no es un entorno de uso real: es un único usuario, en este
 // ordenador y sin copias. Para eso hace falta un proyecto de Supabase y un .env.local
@@ -26,6 +28,7 @@ const env = {
   NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: 'demo',
   NEXT_PUBLIC_AUDIO_BASE_URL: '/dev-audio',
   ALLOWED_EMAIL: EMAIL,
+  DEMO_AUTO_LOGIN: '1',
   EMULATOR_PORT,
   EMULATOR_DATA_DIR: DATA_DIR,
 };
@@ -104,15 +107,15 @@ async function main(): Promise<void> {
   start([tsx, 'tests/support/supabase-emulator.ts']);
   await ready(`http://127.0.0.1:${EMULATOR_PORT}/health`, 'El emulador de Supabase');
   start([next, 'start', '-p', APP_PORT]);
-  await ready(`http://localhost:${APP_PORT}/login`, 'La app');
+  // La portada: /login ya no responde con la pantalla, sino llevando a «Hoy».
+  await ready(`http://localhost:${APP_PORT}/landing/index.html`, 'La app');
 
   console.log(
     [
       '',
       '──────────────────────────────────────────────────────────',
       `  Señal (demostración)   http://localhost:${APP_PORT}`,
-      `  Email:  ${EMAIL}`,
-      '  Código: 123456',
+      '  Entra sola, sin pantalla de acceso.',
       `  Tus datos se guardan en ${path.relative(process.cwd(), DATA_DIR) || DATA_DIR}`,
       '  (para empezar de cero: pnpm demo --reset). Ctrl+C para cerrar.',
       '──────────────────────────────────────────────────────────',

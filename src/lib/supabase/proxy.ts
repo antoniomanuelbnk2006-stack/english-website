@@ -5,6 +5,7 @@ import { TODAY_PREVIEW_PATH } from '@/features/today/lib/paths';
 import { CONSENT_COOKIE, parseConsent, remembersSession } from '@/lib/consent';
 import { env } from '@/lib/env';
 import { SESSION_COOKIE_OPTIONS, sessionCookieOptions } from './cookies';
+import { DEMO_OTP, demoAutoLogin } from './demo';
 import type { Database } from './database.types';
 
 const HOME = '/hoy';
@@ -49,7 +50,18 @@ export async function updateSession(
   const { data } = await supabase.auth.getClaims();
   const claimEmail = data?.claims?.email;
   const email = typeof claimEmail === 'string' ? claimEmail.toLowerCase() : null;
-  const allowed = email !== null && email === env.ALLOWED_EMAIL;
+  let allowed = email !== null && email === env.ALLOWED_EMAIL;
+
+  // La demo de este ordenador entra sola, sin pantalla de acceso; con un Supabase de verdad,
+  // nunca (src/lib/supabase/demo.ts). Las cookies de la sesión las escribe `setAll`.
+  if (!allowed && demoAutoLogin(env.NEXT_PUBLIC_SUPABASE_URL, env.DEMO_AUTO_LOGIN)) {
+    const { error } = await supabase.auth.verifyOtp({
+      email: env.ALLOWED_EMAIL,
+      token: DEMO_OTP,
+      type: 'email',
+    });
+    allowed = !error;
+  }
 
   const { pathname } = request.nextUrl;
   const isLogin = pathname === LOGIN;
